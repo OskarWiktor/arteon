@@ -8,12 +8,10 @@
     "paths": {
       "@/*": ["./*"]
     },
-
     "allowJs": false,
     "noEmit": true,
     "jsx": "preserve",
     "incremental": true,
-
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -22,8 +20,14 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

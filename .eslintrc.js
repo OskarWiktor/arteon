@@ -16,16 +16,15 @@ module.exports = {
     'import',
     'jsx-a11y',
     'sonarjs',
-    'unicorn',
     'security',
     'promise',
+    'prettier',
   ],
   extends: [
     'next/core-web-vitals',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:unicorn/recommended',
     'plugin:sonarjs/recommended',
     'plugin:security/recommended',
     'plugin:promise/recommended',
@@ -47,6 +46,7 @@ module.exports = {
           {
             pattern: '@/**',
             group: 'internal',
+            position: 'after',
           },
         ],
         pathGroupsExcludedImportTypes: ['builtin'],
@@ -58,13 +58,17 @@ module.exports = {
     // === Styl i czytelność ===
     'prefer-const': 'error',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
-    'unicorn/prevent-abbreviations': 'off', // np. props, ref itd.
-    'unicorn/filename-case': 'off', // np. Button.tsx
-    'unicorn/no-null': 'off', // pozwalamy używać `null`
-    'unicorn/no-useless-undefined': 'off',
 
     // === React Hooks ===
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+
+    // === Prettier ===
+    'prettier/prettier': 'error',
   },
-}
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+};

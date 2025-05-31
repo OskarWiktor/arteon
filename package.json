@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "15.3.3",
@@ -25,7 +26,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.33.0",
     "@typescript-eslint/parser": "^8.33.0",
-    "eslint": "^9",
+    "eslint": "^8.57.0",
     "eslint-config-next": "15.3.3",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-import": "^2.31.0",
@@ -34,7 +35,6 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-sonarjs": "^3.0.2",
-    "eslint-plugin-unicorn": "^59.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.12",
