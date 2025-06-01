@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import React from 'react';
 import './globals.css';
 import Navigation from '@/components/ui/navigation';
+import Footer from '@/components/ui/footer';
 
 export const metadata: Metadata = {
   title: 'Arteon',
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className="m-auto w-full max-w-[1220px] font-sans antialiased">
         <Navigation />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
