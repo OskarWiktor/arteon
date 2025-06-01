@@ -1,3 +1,5 @@
+import { RiArrowRightSLine } from "react-icons/ri";
+
 export default function HeroBanner() {
   return (
     <section className="mt-6 flex h-[520px] w-full bg-amber-200">
@@ -6,8 +8,8 @@ export default function HeroBanner() {
         <h1 className="font-serif text-7xl">Lorem Ipsum lorem dasdkj nsjda</h1>
         <p className="mt-6">mdalkjwkd dmnasnd dkawjdawkld ndwkmd mklwdklkwdk nkdnans f efkjfn nkasd dankwndklnad sndklandan wndjawnda and asnd a dn a d</p>
         <div className="mt-10 flex gap-6">
-          <button className="w-fit border-1 border-amber-600 bg-amber-600 pt-1 pr-4 pb-1 pl-4">more info -</button>
-          <button className="w-fit border-1 border-amber-600 pt-1 pr-4 pb-1 pl-4">another info -</button>
+          <button className="flex w-fit items-center border-1 border-amber-600 bg-amber-600 pt-1 pr-4 pb-1 pl-4">more info <RiArrowRightSLine className="w-4 h-4" /></button>
+          <button className="flex w-fit items-center border-1 border-amber-600 pt-1 pr-4 pb-1 pl-4">another info <RiArrowRightSLine className="w-4 h-4" /></button>
         </div>
       </div>
       <div className="mt-8 mr-12 mb-8 flex w-1/2">
