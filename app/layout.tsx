@@ -15,10 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <head>
-      <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css"></link>
-    </head>
-      <body className='font-sans antialiased max-w-[1220px] w-full m-auto'><Navigation /><main>{children}</main></body>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css"></link>
+      </head>
+      <body className="m-auto w-full max-w-[1220px] font-sans antialiased">
+        <Navigation />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

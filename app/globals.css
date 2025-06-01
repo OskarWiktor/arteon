@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-sans: "neue-haas-grotesk-display", sans-serif;
-  --font-serif: "the-seasons", serif;
+  --font-sans: 'neue-haas-grotesk-display', sans-serif;
+  --font-serif: 'the-seasons', serif;
 }
 
 @theme inline {
