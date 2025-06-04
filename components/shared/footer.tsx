@@ -36,7 +36,6 @@ export default function Footer() {
           </Link>
 
           <Link href="/">
-            {' '}
             <RiFacebookFill className="h-8 w-8 rounded-full" />
           </Link>
         </div>
