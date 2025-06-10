@@ -10,11 +10,21 @@ const missionItems = [
   {
     imageAlt: 'ziemia',
     imageSrc: '/assets/ziemia.png',
-    content: 'Ziemia to solidny fundament. Kodujemy szybko, bezpiecznie i z dbałością o każdy detal – bo jakość się liczy.',
+    content: 'Ziemia to struktura. Stabilna, cicha siła działania. Kodujemy z precyzją i dbamy o solidny fundament Twojej obecności w sieci.',
     border: 'border-b-green-100',
   },
-  { imageAlt: 'ogień', imageSrc: '/assets/ogien.png', content: 'Ogień to napęd. Tworzymy projekty, które rozpalają zainteresowanie i prowadzą prosto do działania.', border: 'border-b-red-100' },
-  { imageAlt: 'powietrze', imageSrc: '/assets/powietrze.png', content: 'Powietrze to ruch, pomysł i zasięg. Dzięki contentowi, SEO i kampaniom Twoja marka leci wysoko.', border: 'border-b-sky-100' },
+  {
+    imageAlt: 'ogień',
+    imageSrc: '/assets/ogien.png',
+    content: 'Ogień to intencja. Energia strategii i wizji. Rozpalamy uwagę, kierujemy ruchem, sprawiamy, że marka zaczyna żyć w świadomości odbiorcy.',
+    border: 'border-b-red-100',
+  },
+  {
+    imageAlt: 'powietrze',
+    imageSrc: '/assets/powietrze.png',
+    content: 'Powietrze to przekaz. Lekki, szybki i skuteczny. Budujemy komunikację, która niesie wartość – przez słowo, obraz i zasięg.',
+    border: 'border-b-sky-100',
+  },
 ];
 
 export default function Mission() {
@@ -22,7 +32,7 @@ export default function Mission() {
     <section className="mt-16 flex flex-wrap">
       {missionItems.map(({ imageAlt, imageSrc, content, border }) => {
         return (
-          <div className="flex min-h-72 w-full flex-col items-center justify-center pt-6 pr-4 pb-10 pl-4 md:w-1/2 lg:w-1/4">
+          <div key={imageAlt} className="flex min-h-72 w-full flex-col items-center justify-center pt-6 pr-4 pb-10 pl-4 md:w-1/2 lg:w-1/4">
             <Image src={imageSrc} width={60} height={60} className="mr-auto ml-auto" alt={imageAlt} />
             <h3 className={`mb-4 w-fit border-b-2 text-center text-xl capitalize ${border}`}>{imageAlt}</h3>
             <p className="text-center">{content}</p>
