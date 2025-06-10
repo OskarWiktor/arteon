@@ -1,4 +1,5 @@
 import HeroBanner from '@/components/sections/heroBaner';
+import HowWeWork from '@/components/sections/howWeWork';
 import Mission from '@/components/sections/mission';
 import ProjectsOverview from '@/components/sections/projectsOverview';
 import TechStack from '@/components/sections/techStack';
@@ -11,6 +12,7 @@ export default function Home() {
       <Mission />
       <WhyUs />
       <ProjectsOverview />
+      <HowWeWork />
       <TechStack />
     </>
   );
