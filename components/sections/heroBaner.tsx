@@ -1,24 +1,34 @@
 import { RiArrowRightSLine } from 'react-icons/ri';
 import Button from '../ui/button';
 
-export default function HeroBanner() {
+interface HeroBannerProps {
+  subtitle?: string;
+  title: string;
+  description?: string;
+  buttonAccent?: string;
+  buttonSecond?: string;
+}
+
+export default function HeroBanner({ subtitle, title, description, buttonAccent, buttonSecond }: HeroBannerProps) {
   return (
-    <section className="mt-6 flex h-[520px] w-full bg-amber-200">
-      <div className="mt-auto mb-auto ml-12 flex w-1/2 flex-col">
-        <p className="italic">jdkjkdjasjd kdlaksdj</p>
-        <h1 className="font-serif text-7xl">Lorem Ipsum lorem dasdkj nsjda</h1>
-        <p className="mt-6">mdalkjwkd dmnasnd dkawjdawkld ndwkmd mklwdklkwdk nkdnans f efkjfn nkasd dankwndklnad sndklandan wndjawnda and asnd a dn a d</p>
+    <section className="mt-6 flex h-[520px] w-full">
+      <div className="mt-auto mb-auto flex w-full flex-col items-center">
+        {subtitle && <p className="italic">{subtitle}</p>}
+        <h1 className="font-serif text-7xl">{title}</h1>
+        {description && <p className="mt-6">{description}</p>}
         <div className="mt-10 flex gap-6">
-          <Button variant='accent'>
-            more info <RiArrowRightSLine className="h-4 w-4" />
-          </Button>
-          <Button>
-            another info <RiArrowRightSLine className="h-4 w-4" />
-          </Button>
-        </div>
-      </div>
-      <div className="mt-8 mr-12 mb-8 flex w-1/2">
-        <div className="m-auto h-7/8 w-7/8 bg-amber-700">
+          {buttonAccent && (
+            <Button variant="accent">
+              {buttonAccent}
+              <RiArrowRightSLine className="h-4 w-4" />
+            </Button>
+          )}
+          {buttonSecond && (
+            <Button>
+              {buttonSecond}
+              <RiArrowRightSLine className="h-4 w-4" />
+            </Button>
+          )}
         </div>
       </div>
     </section>
