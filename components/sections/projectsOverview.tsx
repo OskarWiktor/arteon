@@ -1,6 +1,6 @@
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
-import ProjectCard from '../ui/projectCard';
-import Wrapper from '../ui/wrapper';
+import Wrapper from '../ui/Wrapper';
+import ProjectCard from '../ui/ProjectCard';
 
 export default function ProjectsOverview() {
   return (

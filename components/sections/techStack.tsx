@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons';
 import { SiNextdotjs, SiTailwindcss, SiWordpress, SiSass, SiReact, SiWebflow, SiVercel } from 'react-icons/si';
-import Wrapper from '../ui/wrapper';
+import Wrapper from '../ui/Wrapper';
 
 interface TechStackItem {
   label: string;

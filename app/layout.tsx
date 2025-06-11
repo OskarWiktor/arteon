@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import React from 'react';
 
 import './globals.css';
-import Footer from '@/components/shared/footer';
-import Navigation from '@/components/shared/navigation';
+import Footer from '@/components/shared/Footer';
+import Navigation from '@/components/shared/N'avigation';
 
 export const metadata: Metadata = {
   title: 'Arteon',

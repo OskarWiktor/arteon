@@ -1,4 +1,4 @@
-import Wrapper from '../ui/wrapper';
+import Wrapper from '../ui/Wrapper';
 
 const HowWeWorkItems = [
   { number: '1', title: 'Rozmowa i brief', description: 'Zaczynamy od rozmowy. Słuchamy, pytamy, odczytujemy intencję. Szukamy tego, co autentyczne w Twojej marce – i na tym budujemy.' },

@@ -1,9 +1,9 @@
-import HeroBanner from '@/components/sections/heroBaner';
-import HowWeWork from '@/components/sections/howWeWork';
-import Mission from '@/components/sections/mission';
-import ProjectsOverview from '@/components/sections/projectsOverview';
-import TechStack from '@/components/sections/techStack';
-import WhyUs from '@/components/sections/whyUs';
+import HeroBanner from '@/components/sections/HeroBaner';
+import HowWeWork from '@/components/sections/HowWeWork';
+import Mission from '@/components/sections/Mission';
+import ProjectsOverview from '@/components/sections/ProjectsOverview';
+import TechStack from '@/components/sections/TechStack';
+import WhyUs from '@/components/sections/WhyUs';
 
 export default function Home() {
   return (

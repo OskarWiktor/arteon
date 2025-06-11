@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Wrapper from '../ui/wrapper';
+import Wrapper from '../ui/Wrapper';
 
 const missionItems = [
   {

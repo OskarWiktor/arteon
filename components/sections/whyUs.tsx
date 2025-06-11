@@ -1,4 +1,4 @@
-import Wrapper from '../ui/wrapper';
+import Wrapper from '../ui/Wrapper';
 
 export default function WhyUs() {
   return (

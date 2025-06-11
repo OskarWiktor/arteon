@@ -1,5 +1,5 @@
 import { RiArrowRightSLine } from 'react-icons/ri';
-import Button from '../ui/button';
+import Button from '../ui/Button';
 import Link from 'next/link';
 
 interface HeroBannerProps {
