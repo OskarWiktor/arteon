@@ -23,10 +23,10 @@ export default function Button({ children, variant = 'normal', size = 'medium' }
 
   switch (variant) {
     case 'normal':
-      variantClass = 'border-1 border-amber-600';
+      variantClass = 'border-1 border-[#5f9ea0]';
       break;
     case 'accent':
-      variantClass = 'border-1 border-amber-600 bg-amber-600';
+      variantClass = 'border-1 border-[#5f9ea0] bg-[#5f9ea0]';
       break;
   }
 

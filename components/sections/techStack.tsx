@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import { IconType } from 'react-icons';
 import { SiNextdotjs, SiTailwindcss, SiWordpress, SiSass, SiReact, SiWebflow, SiVercel } from 'react-icons/si';
+import Wrapper from '../ui/wrapper';
 
 interface TechStackItem {
   label: string;
@@ -19,13 +19,15 @@ const techStackItems: TechStackItem[] = [
 
 export default function TechStack() {
   return (
-    <section className="mt-12 flex gap-10 overflow-hidden">
-      {techStackItems.map(({ label, icon: Icon }) => (
-        <div className="flex items-center" key={label}>
-          <p className="pr-2 text-2xl">{label}</p>
-          <Icon className="h-auto w-6" />
-        </div>
-      ))}
-    </section>
+    <Wrapper>
+      <section className="mt-16 flex gap-10 overflow-hidden">
+        {techStackItems.map(({ label, icon: Icon }) => (
+          <div className="flex items-center" key={label}>
+            <p className="pr-2 text-2xl">{label}</p>
+            <Icon className="h-auto w-6" />
+          </div>
+        ))}
+      </section>
+    </Wrapper>
   );
 }

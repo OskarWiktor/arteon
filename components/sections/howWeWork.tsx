@@ -1,3 +1,5 @@
+import Wrapper from '../ui/wrapper';
+
 const HowWeWorkItems = [
   { number: '1', title: 'Rozmowa i brief', description: 'Zaczynamy od rozmowy. Słuchamy, pytamy, odczytujemy intencję. Szukamy tego, co autentyczne w Twojej marce – i na tym budujemy.' },
   { number: '2', title: 'Projekt i koncepcja', description: 'Tworzymy wizję, która ma strukturę. Łączymy estetykę z funkcją, intuicję z strategią. Pokazujemy kierunek – a Ty go zatwierdzasz.' },
@@ -11,18 +13,20 @@ const HowWeWorkItems = [
 
 export default function HowWeWork() {
   return (
-    <section className="mt-8 flex">
-      {HowWeWorkItems.map(({ number, title, description }) => {
-        return (
-          <div className="flex min-h-72 w-full flex-col items-center justify-center pt-6 pr-4 pb-10 pl-4 md:w-1/2 lg:w-1/4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-200">
-              <span className="text-2xl">{number}</span>
+    <Wrapper>
+      <section className="mt-30 flex">
+        {HowWeWorkItems.map(({ number, title, description }) => {
+          return (
+            <div key={title} className="flex min-h-72 w-full flex-col items-center pr-4 pl-4 md:w-1/2 lg:w-1/4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200">
+                <span className="text-xl">{number}</span>
+              </div>
+              <h3 className="mt-3 mb-4 w-fit border-b-1 border-b-gray-200 text-center text-xl capitalize">{title}</h3>
+              <p>{description}</p>
             </div>
-            <h3 className="mt-1 mb-4 w-fit text-center text-xl capitalize">{title}</h3>
-            <p>{description}</p>
-          </div>
-        );
-      })}
-    </section>
+          );
+        })}
+      </section>
+    </Wrapper>
   );
 }

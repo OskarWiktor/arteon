@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css"></link>
       </head>
-      <body className="m-auto w-full max-w-[1220px] font-sans antialiased">
+      <body className="font-sans antialiased">
         <Navigation />
         <main>{children}</main>
         <Footer />
