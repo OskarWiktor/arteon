@@ -1,4 +1,4 @@
-import Wrapper from '../ui/Wrapper';
+import SectionFour from '../ui/SectionFour';
 
 const HowWeWorkItems = [
   { number: '1', title: 'Rozmowa i brief', description: 'Zaczynamy od rozmowy. Słuchamy, pytamy, odczytujemy intencję. Szukamy tego, co autentyczne w Twojej marce – i na tym budujemy.' },
@@ -13,20 +13,19 @@ const HowWeWorkItems = [
 
 export default function HowWeWork() {
   return (
-    <Wrapper>
-      <section className="mt-30 flex">
-        {HowWeWorkItems.map(({ number, title, description }) => {
-          return (
-            <div key={title} className="flex min-h-72 w-full flex-col items-center pr-4 pl-4 md:w-1/2 lg:w-1/4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200">
-                <span className="text-xl">{number}</span>
-              </div>
-              <h3 className="mt-3 mb-4 w-fit border-b-1 border-b-gray-200 text-center text-xl capitalize">{title}</h3>
-              <p>{description}</p>
-            </div>
-          );
-        })}
-      </section>
-    </Wrapper>
+    <SectionFour
+      items={HowWeWorkItems}
+      renderItem={({ number, title, description }) => (
+        <>
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200">
+            <span className="text-xl">{number}</span>
+          </div>
+          <h3 className="mt-3 mb-4 w-fit border-b border-b-gray-200 text-center text-xl capitalize">
+            {title}
+          </h3>
+          <p>{description}</p>
+        </>
+      )}
+    />
   );
 }

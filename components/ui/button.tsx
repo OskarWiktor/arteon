@@ -30,5 +30,5 @@ export default function Button({ children, variant = 'normal', size = 'medium' }
       break;
   }
 
-  return <button className={`flex w-fit cursor-pointer items-center ${sizeClass} ${variantClass}`}>{children}</button>;
+  return <button className={`flex w-fit cursor-pointer items-center rounded-md ${sizeClass} ${variantClass}`}>{children}</button>;
 }

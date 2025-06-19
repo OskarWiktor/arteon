@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
+
 import { usePathname } from 'next/navigation';
 
 const navigationItems = [
@@ -33,6 +35,23 @@ export default function Navigation() {
             );
           })}
         </nav>
+
+        <div>
+          <button className='text-xl cursor-pointer text-amber-600'>PL</button>   
+          <span className='text-xl'> / </span> 
+          <button className='text-xl cursor-pointer'>EN</button>
+        </div>
+
+        <div className='flex'>
+          <Link href="/">
+            <RiInstagramLine className="h-8 w-8 rounded-full" />
+          </Link>
+
+          <Link href="/">
+            <RiFacebookFill className="h-8 w-8 rounded-full" />
+          </Link>
+        </div>
+
       </section>
     </div>
   );

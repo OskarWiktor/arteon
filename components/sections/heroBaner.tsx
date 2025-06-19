@@ -15,7 +15,7 @@ interface HeroBannerProps {
 
 export default function HeroBanner({ subtitle, title, description, buttonAccent, buttonAccentLink, buttonSecond, buttonSecondLink, backgroundImage }: HeroBannerProps) {
   return (
-    <section className={`mt-6 flex h-[520px] w-full ${backgroundImage ? 'bg-cover bg-center' : ''}`} style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}>
+    <section className={`flex h-[520px] w-full ${backgroundImage ? 'bg-cover bg-center' : ''}`} style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}>
       <div className="mt-auto mb-auto flex w-full flex-col items-center">
         {subtitle && <p className="italic">{subtitle}</p>}
         <h1 className="font-serif text-7xl">{title}</h1>

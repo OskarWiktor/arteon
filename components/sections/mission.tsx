@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Wrapper from '../ui/Wrapper';
+import SectionFour from '../ui/SectionFour';
 
 const missionItems = [
   {
@@ -30,18 +30,17 @@ const missionItems = [
 
 export default function Mission() {
   return (
-    <Wrapper>
-      <section className="mt-24 flex flex-wrap">
-        {missionItems.map(({ imageAlt, imageSrc, content, border }) => {
-          return (
-            <div key={imageAlt} className="flex min-h-72 w-full flex-col items-center pr-4 pl-4 md:w-1/2 lg:w-1/4">
-              <Image src={imageSrc} width={60} height={60} className="mr-auto ml-auto" alt={imageAlt} />
-              <h3 className={`mb-4 w-fit border-b-2 text-center text-xl capitalize ${border}`}>{imageAlt}</h3>
-              <p className="text-center">{content}</p>
-            </div>
-          );
-        })}
-      </section>
-    </Wrapper>
+    <SectionFour
+      items={missionItems}
+      renderItem={({ imageAlt, imageSrc, content, border }) => (
+        <>
+          <Image src={imageSrc} width={60} height={60} alt={imageAlt} />
+          <h3 className={`mb-4 w-fit border-b-2 text-center text-xl capitalize ${border}`}>
+            {imageAlt}
+          </h3>
+          <p>{content}</p>
+        </>
+      )}
+    />
   );
 }

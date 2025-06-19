@@ -3,7 +3,7 @@ import React from 'react';
 
 import './globals.css';
 import Footer from '@/components/shared/Footer';
-import Navigation from '@/components/shared/N'avigation';
+import Navigation from '@/components/shared/Navigation';
 
 export const metadata: Metadata = {
   title: 'Arteon',
