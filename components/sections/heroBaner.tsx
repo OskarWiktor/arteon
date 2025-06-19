@@ -44,7 +44,7 @@ export default function HeroBanner({
       <div className="mt-auto mb-auto flex w-full flex-col items-center">
         {subtitle && <p className="italic">{subtitle}</p>}
         {buttonTopOne && (
-          <div className='flex gap-6'>
+          <div className="flex gap-6">
             <Button>{buttonTopOneLink ? <Link href={buttonTopOneLink}>{buttonTopOne}</Link> : <p>{buttonTopOne}</p>}</Button>
             {buttonTopTwo && <Button>{buttonTopTwoLink ? <Link href={buttonTopTwoLink}>{buttonTopTwo}</Link> : <p>{buttonTopTwo}</p>}</Button>}
             {buttonTopThree && <Button>{buttonTopThreeLink ? <Link href={buttonTopThreeLink}>{buttonTopThree}</Link> : <p>{buttonTopThree}</p>}</Button>}
