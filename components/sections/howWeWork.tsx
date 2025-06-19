@@ -17,14 +17,20 @@ export default function HowWeWork() {
   return (
     <SectionFour
       items={HowWeWorkItems}
-      renderItem={({ number, title, description }) => (
-        <>
+      renderItem={({ number, title, description }, index) => (
+        <article role="group" aria-labelledby={`step-title-${index}`} aria-describedby={`step-desc-${index}`} tabIndex={0} className="flex flex-col items-center px-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200">
-            <span className="text-xl">{number}</span>
+            <span className="text-xl" aria-hidden="true">
+              {number}
+            </span>
           </div>
-          <h3 className="mt-3 mb-4 w-fit border-b border-b-gray-200 text-center text-xl capitalize">{title}</h3>
-          <p>{description}</p>
-        </>
+          <h3 id={`step-title-${index}`} className="mt-3 mb-4 w-fit border-b border-b-gray-200 text-xl capitalize" tabIndex={0}>
+            {title}
+          </h3>
+          <p id={`step-desc-${index}`} className="max-w-sm" tabIndex={0}>
+            {description}
+          </p>
+        </article>
       )}
     />
   );

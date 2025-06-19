@@ -3,12 +3,7 @@ import HeroBanner from '@/components/sections/HeroBaner';
 export default function Page() {
   return (
     <>
-      <HeroBanner
-       subtitle='jkhjksahd jknansd eeejfij fefe'
-        title="Lorem Ipsum Lorem Ipsum"
-        description="njkbasdka sbdjabsd bjkbsajdb"
-        backgroundImage="/assets/test.jpg"
-      />
+      <HeroBanner subtitle="jkhjksahd jknansd eeejfij fefe" title="Lorem Ipsum Lorem Ipsum" description="njkbasdka sbdjabsd bjkbsajdb" backgroundImage="/assets/test.jpg" />
     </>
   );
 }

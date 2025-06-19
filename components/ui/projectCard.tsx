@@ -1,18 +1,24 @@
+'use client';
+
 import Image from 'next/image';
 
 export default function ProjectCard() {
   return (
-    <section className="h-72 min-w-82 rounded-md bg-gray-100 shadow">
-      <div className="relative flex h-2/3 w-full">
-        <Image src="/assets/projects/meridol.png" fill alt="test" className="object-fill" />
-        <div className="flex h-full w-full items-center justify-center bg-white opacity-0 hover:opacity-80">
-          <Image src="/assets/projects/meridol-logo.png" width={180} height={20} alt="test" />
+    <article className="min-w-82 rounded-md bg-gray-100 shadow focus-within:ring-2 focus-within:ring-black" tabIndex={0} role="group" aria-label="Karta projektu Meridol">
+      <div className="relative h-40 w-full overflow-hidden rounded-t-md sm:h-48">
+        <Image src="/assets/projects/meridol.png" alt="Zrzut ekranu projektu Meridol" fill className="object-cover" priority />
+
+        <div className="absolute inset-0 flex items-center justify-center bg-white opacity-0 transition-opacity focus-within:opacity-80 hover:opacity-80">
+          <Image src="/assets/projects/meridol-logo.png" width={180} height={20} alt="Logo Meridol" />
         </div>
       </div>
+
       <div className="mx-4 my-2 flex flex-col">
-        <h3 className="text-xl">Meridol</h3>
-        <p>Opis projektu asdhjkashd dnajkshdja dnsjkdhaj dadsa</p>
+        <h3 className="text-xl font-semibold" id="project-title-meridol">
+          Meridol
+        </h3>
+        <p aria-describedby="project-title-meridol">Opis projektu: nowoczesny layout i integracja z CMS.</p>
       </div>
-    </section>
+    </article>
   );
 }
