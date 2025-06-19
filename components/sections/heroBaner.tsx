@@ -21,6 +21,7 @@ interface HeroBannerProps {
   buttonSecond?: string;
   buttonSecondLink?: string;
   backgroundImage?: string;
+  variant?: 'left' | 'center' | 'right'
 }
 
 export default function HeroBanner({
@@ -40,23 +41,24 @@ export default function HeroBanner({
   buttonSecond,
   buttonSecondLink,
   backgroundImage,
+  variant = 'center'
 }: HeroBannerProps) {
   return (
     <FadeInOnView>
       <section className={`flex h-[520px] w-full ${backgroundImage ? 'bg-cover bg-center' : ''}`} style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}>
-        <div className="mt-auto mb-auto flex w-full flex-col items-center">
+        <div className="mt-auto mb-auto flex w-full flex-col items-center px-4 md:px-8">
           <SlideInOnView>
-            {subtitle && <p className="italic">{subtitle}</p>}
+            {subtitle && <p className={`italic ${variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left'}`}>{subtitle}</p>}
             {buttonTopOne && (
-              <div className="flex gap-6">
+              <div className={`flex gap-6 ${variant === 'center' ? 'justify-center' : variant === 'right' ? 'justify-end' : 'justify-start'}`}>
                 <Button>{buttonTopOneLink ? <Link href={buttonTopOneLink}>{buttonTopOne}</Link> : <p>{buttonTopOne}</p>}</Button>
                 {buttonTopTwo && <Button>{buttonTopTwoLink ? <Link href={buttonTopTwoLink}>{buttonTopTwo}</Link> : <p>{buttonTopTwo}</p>}</Button>}
                 {buttonTopThree && <Button>{buttonTopThreeLink ? <Link href={buttonTopThreeLink}>{buttonTopThree}</Link> : <p>{buttonTopThree}</p>}</Button>}
                 {buttonTopFour && <Button>{buttonTopFourLink ? <Link href={buttonTopFourLink}>{buttonTopFour}</Link> : <p>{buttonTopFour}</p>}</Button>}
               </div>
             )}
-            <h1 className="font-serif text-7xl">{title}</h1>
-            {description && <p className="mt-6">{description}</p>}
+            <h1 className={`font-serif text-7xl ${variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left'}`}>{title}</h1>
+            {description && <p className={`mt-6 ${variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left'}`}>{description}</p>}
             <div className="mt-10 flex gap-6">
               {buttonAccent && (
                 <Button variant="accent">
