@@ -35,9 +35,7 @@ export default function Mission() {
       renderItem={({ imageAlt, imageSrc, content, border }) => (
         <>
           <Image src={imageSrc} width={60} height={60} alt={imageAlt} />
-          <h3 className={`mb-4 w-fit border-b-2 text-center text-xl capitalize ${border}`}>
-            {imageAlt}
-          </h3>
+          <h3 className={`mb-4 w-fit border-b-2 text-center text-xl capitalize ${border}`}>{imageAlt}</h3>
           <p>{content}</p>
         </>
       )}

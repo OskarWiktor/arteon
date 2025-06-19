@@ -20,9 +20,7 @@ export default function HowWeWork() {
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200">
             <span className="text-xl">{number}</span>
           </div>
-          <h3 className="mt-3 mb-4 w-fit border-b border-b-gray-200 text-center text-xl capitalize">
-            {title}
-          </h3>
+          <h3 className="mt-3 mb-4 w-fit border-b border-b-gray-200 text-center text-xl capitalize">{title}</h3>
           <p>{description}</p>
         </>
       )}

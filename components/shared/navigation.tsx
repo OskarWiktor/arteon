@@ -37,12 +37,12 @@ export default function Navigation() {
         </nav>
 
         <div>
-          <button className='text-xl cursor-pointer text-amber-600'>PL</button>   
-          <span className='text-xl'> / </span> 
-          <button className='text-xl cursor-pointer'>EN</button>
+          <button className="cursor-pointer text-xl text-amber-600">PL</button>
+          <span className="text-xl"> / </span>
+          <button className="cursor-pointer text-xl">EN</button>
         </div>
 
-        <div className='flex'>
+        <div className="flex">
           <Link href="/">
             <RiInstagramLine className="h-8 w-8 rounded-full" />
           </Link>
@@ -51,7 +51,6 @@ export default function Navigation() {
             <RiFacebookFill className="h-8 w-8 rounded-full" />
           </Link>
         </div>
-
       </section>
     </div>
   );
