@@ -1,3 +1,5 @@
+'use client';
+
 import SectionFour from '../ui/SectionFour';
 
 const HowWeWorkItems = [

@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import SectionFour from '../ui/SectionFour';
 
@@ -36,7 +38,7 @@ export default function Mission() {
         <>
           <Image src={imageSrc} width={60} height={60} alt={imageAlt} />
           <h3 className={`mb-4 w-fit border-b-2 text-center text-xl capitalize ${border}`}>{imageAlt}</h3>
-          <p>{content}</p>
+          <p className="text-center">{content}</p>
         </>
       )}
     />
