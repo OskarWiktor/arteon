@@ -8,7 +8,7 @@ import SectionBasic from '@/components/ui/SectionBasic';
 export default function Home() {
   return (
     <>
-      <HeroBanner title="Lorem Ipsum Lorem Ipsum" subtitle="lorem ipsum" description="njkbasdka sbdjabsd bjkbsajdb" buttonAccent="more info" backgroundImage="/assets/test.jpg" />
+      <HeroBanner title="Lorem Ipsum Lorem Ipsum" description="njkbasdka sbdjabsd bjkbsajdb" backgroundImage="/assets/test.jpg" buttonTopOne='test1' buttonTopTwo='test2' buttonTopThree='test3' buttonTopFour='test4'/>
       <Mission />
       <ProjectsOverview />
       <HowWeWork />

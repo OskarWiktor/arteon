@@ -4,7 +4,7 @@ import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
 export default function Footer() {
   return (
-    <footer className="mt-30 flex h-32 w-full justify-between border-t-1 border-t-gray-200 px-4 pt-4 md:px-16">
+    <footer className="mt-30 flex h-32 w-full justify-between border-t-1 border-t-gray-200 px-4 pt-4 md:px-8 lg:px-16">
       <div className="flex w-1/4 justify-between">
         <nav className="flex flex-col gap-2">
           <li className="w-fit list-none">

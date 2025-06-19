@@ -3,6 +3,14 @@ import Button from '../ui/Button';
 import Link from 'next/link';
 
 interface HeroBannerProps {
+  buttonTopOne?: string;
+  buttonTopOneLink?: string;
+  buttonTopTwo?: string;
+  buttonTopTwoLink?: string;
+  buttonTopThree?: string;
+  buttonTopThreeLink?: string;
+  buttonTopFour?: string;
+  buttonTopFourLink?: string;
   subtitle?: string;
   title: string;
   description?: string;
@@ -13,11 +21,36 @@ interface HeroBannerProps {
   backgroundImage?: string;
 }
 
-export default function HeroBanner({ subtitle, title, description, buttonAccent, buttonAccentLink, buttonSecond, buttonSecondLink, backgroundImage }: HeroBannerProps) {
+export default function HeroBanner({
+  buttonTopOne,
+  buttonTopOneLink,
+  buttonTopTwo,
+  buttonTopTwoLink,
+  buttonTopThree,
+  buttonTopThreeLink,
+  buttonTopFour,
+  buttonTopFourLink,
+  subtitle,
+  title,
+  description,
+  buttonAccent,
+  buttonAccentLink,
+  buttonSecond,
+  buttonSecondLink,
+  backgroundImage,
+}: HeroBannerProps) {
   return (
     <section className={`flex h-[520px] w-full ${backgroundImage ? 'bg-cover bg-center' : ''}`} style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}>
       <div className="mt-auto mb-auto flex w-full flex-col items-center">
         {subtitle && <p className="italic">{subtitle}</p>}
+        {buttonTopOne && (
+          <div className='flex gap-6'>
+            <Button>{buttonTopOneLink ? <Link href={buttonTopOneLink}>{buttonTopOne}</Link> : <p>{buttonTopOne}</p>}</Button>
+            {buttonTopTwo && <Button>{buttonTopTwoLink ? <Link href={buttonTopTwoLink}>{buttonTopTwo}</Link> : <p>{buttonTopTwo}</p>}</Button>}
+            {buttonTopThree && <Button>{buttonTopThreeLink ? <Link href={buttonTopThreeLink}>{buttonTopThree}</Link> : <p>{buttonTopThree}</p>}</Button>}
+            {buttonTopFour && <Button>{buttonTopFourLink ? <Link href={buttonTopFourLink}>{buttonTopFour}</Link> : <p>{buttonTopFour}</p>}</Button>}
+          </div>
+        )}
         <h1 className="font-serif text-7xl">{title}</h1>
         {description && <p className="mt-6">{description}</p>}
         <div className="mt-10 flex gap-6">

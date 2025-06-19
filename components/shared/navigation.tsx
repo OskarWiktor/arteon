@@ -19,7 +19,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <div className="sticky w-full border-b-1 border-b-gray-200 px-4 md:px-16">
+    <div className="sticky w-full border-b-1 border-b-gray-200 px-4 md:px-8 lg:px-16">
       <section className="flex h-20 items-center justify-between bg-white">
         <div className="flex items-center">
           <Image src="/assets/arteon-logo.png" width={200} height={50} alt="Arteon company logo" />
