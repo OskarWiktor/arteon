@@ -9,6 +9,8 @@ import { RiInstagramLine, RiFacebookFill, RiMenuLine, RiCloseLine } from 'react-
 
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 
+import Button from '@/components/ui/Button';
+
 const navigationItems = [
   { href: '/', label: 'Home', exact: true },
   { href: '/projects', label: 'Projekty' },
@@ -50,49 +52,47 @@ export default function Navigation() {
         </motion.div>
 
         <nav className="hidden md:flex" aria-label="Główna nawigacja">
-          <ul className="flex gap-6">
-            <LayoutGroup>
+          <LayoutGroup>
+            <ul className="relative flex gap-4 lg:gap-6">
               {navigationItems.map(({ href, label, exact }) => {
                 const isActivePage = exact ? pathname === href : pathname.startsWith(href);
 
-                if (label === 'Kontakt') {
-                  return (
-                    <li key={label} className="list-none">
-                      <Link
-                        href={href}
-                        className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors duration-300 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-black ${isActivePage ? 'bg-gray-400' : 'bg-gray-300 hover:bg-gray-400'}`}
-                        aria-current={isActivePage ? 'page' : undefined}
-                      >
-                        {label}
-                      </Link>
-                    </li>
-                  );
-                }
-
                 return (
                   <li key={label} className="relative list-none">
-                    <Link href={href} className="relative focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" aria-current={isActivePage ? 'page' : undefined}>
-                      {label}
-                      {isActivePage && <motion.div layoutId="underline" className="absolute top-full right-0 left-0 h-0.5 bg-black" transition={{ type: 'spring', stiffness: 500, damping: 30 }} />}
+                    <Link
+                      href={href}
+                      aria-current={isActivePage ? 'page' : undefined}
+                      className={label !== 'Kontakt' ? 'relative font-semibold hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black' : undefined}
+                    >
+                      {label === 'Kontakt' ? (
+                        <Button variant="accent" size="small">
+                          {label}
+                        </Button>
+                      ) : (
+                        <>
+                          {label}
+                          {isActivePage && <motion.div layoutId="underline" className="absolute top-full right-0 left-0 h-0.5 bg-black" transition={{ type: 'spring', stiffness: 500, damping: 30 }} />}
+                        </>
+                      )}
                     </Link>
                   </li>
                 );
               })}
-            </LayoutGroup>
-          </ul>
+            </ul>
+          </LayoutGroup>
         </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
-          <div>
-            <button className="cursor-pointer text-xl text-amber-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">PL</button>
+        <div className="hidden items-center gap-2 md:flex">
+          <div className="mr-4">
+            <button className="cursor-pointer text-xl text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">PL</button>
             <span className="text-xl"> / </span>
             <button className="cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">EN</button>
           </div>
           <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-            <RiInstagramLine className="h-6 w-6" />
+            <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
           </Link>
           <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-            <RiFacebookFill className="h-6 w-6" />
+            <RiFacebookFill className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
           </Link>
         </div>
 
@@ -131,34 +131,50 @@ export default function Navigation() {
               }}
               className="flex flex-col gap-3"
             >
-              {navigationItems.map(({ href, label, exact }) => {
-                const isActivePage = exact ? pathname === href : pathname.startsWith(href);
-                return (
-                  <motion.li key={label} variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
-                    <Link
-                      href={href}
-                      onClick={() => setIsOpen(false)}
-                      className={`text-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${isActivePage ? 'font-semibold underline' : ''}`}
-                      aria-current={isActivePage ? 'page' : undefined}
-                    >
-                      {label}
-                    </Link>
-                  </motion.li>
-                );
-              })}
+              <LayoutGroup>
+                {navigationItems.map(({ href, label, exact }) => {
+                  const isActivePage = exact ? pathname === href : pathname.startsWith(href);
+
+                  if (label === 'Kontakt') {
+                    return (
+                      <motion.li key={label} variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
+                        <Link href={href} onClick={() => setIsOpen(false)}>
+                          <Button variant="accent" size="big">
+                            {label}
+                          </Button>
+                        </Link>
+                      </motion.li>
+                    );
+                  }
+
+                  return (
+                    <motion.li key={label} className="relative" variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
+                      <Link
+                        href={href}
+                        onClick={() => setIsOpen(false)}
+                        className="relative text-base font-semibold hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                        aria-current={isActivePage ? 'page' : undefined}
+                      >
+                        {label}
+                        {isActivePage && <motion.div layoutId="underline" className="absolute top-full right-0 left-0 h-0.5 bg-black" transition={{ type: 'spring', stiffness: 500, damping: 30 }} />}
+                      </Link>
+                    </motion.li>
+                  );
+                })}
+              </LayoutGroup>
 
               <motion.li variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="flex justify-between border-t border-gray-200 pt-4">
                 <div>
-                  <button className="cursor-pointer text-amber-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">PL</button>
-                  <span className="text-gray-600"> / </span>
+                  <button className="cursor-pointer text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">PL</button>
+                  <span className="text-gray-800"> / </span>
                   <button className="cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">EN</button>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-2 lg:gap-4">
                   <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-                    <RiInstagramLine className="h-6 w-6" />
+                    <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
                   </Link>
                   <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-                    <RiFacebookFill className="h-6 w-6" />
+                    <RiFacebookFill className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
                   </Link>
                 </div>
               </motion.li>

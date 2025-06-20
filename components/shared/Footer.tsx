@@ -3,9 +3,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation, LayoutGroup } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import { useInView } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 const footerNavItems = [
   { href: '/', label: 'Home' },
@@ -28,6 +29,7 @@ export default function Footer() {
   const ref = useRef(null);
   const inView = useInView(ref, { amount: 0.2, once: true });
   const controls = useAnimation();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (inView) controls.start('visible');
@@ -39,45 +41,42 @@ export default function Footer() {
       initial="hidden"
       animate={controls}
       variants={{ hidden: {}, visible: {} }}
-      className="mt-30 flex w-full flex-col gap-8 border-t border-t-gray-200 px-4 py-8 md:flex-row md:justify-between md:px-8 lg:gap-0 lg:px-16"
+      className="mt-30 flex w-full flex-col gap-4 border-t border-t-gray-200 px-4 py-8 md:flex-row md:justify-between md:px-8 lg:gap-0 lg:px-16"
       aria-label="Stopka strony"
     >
       <h2 className="sr-only">Nawigacja w stopce</h2>
 
-      <div className="flex w-full flex-wrap gap-6 md:w-2/3 md:flex-nowrap lg:gap-12">
-        <nav className="flex flex-col gap-2" aria-label="Główna nawigacja w stopce">
-          <ul>
-            {footerNavItems.slice(0, 3).map(({ href, label, isButton }, i) => (
-              <motion.li key={label} className="list-none" custom={i} variants={linkVariant}>
-                <Link
-                  href={href}
-                  className={`${isButton ? 'w-fit rounded-md bg-gray-300 px-4 py-1.5 text-sm font-medium transition hover:bg-gray-400' : 'hover:underline'} focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black`}
-                >
-                  {label}
-                </Link>
-              </motion.li>
-            ))}
-          </ul>
-        </nav>
+      <div className="flex w-full flex-wrap gap-2 md:gap-6 md:w-2/3 lg:gap-12">
+        <nav className="flex gap-2" aria-label="Główna nawigacja w stopce">
+          <ul className="flex flex-col gap-1 md:gap-4 md:flex-row">
+            <LayoutGroup>
+              {footerNavItems.map(({ href, label, isButton }, i) => {
+                const isActive = pathname === href;
 
-        <nav className="flex flex-col gap-2" aria-label="Dodatkowa nawigacja w stopce">
-          <ul>
-            {footerNavItems.slice(3).map(({ href, label, isButton }, i) => (
-              <motion.li key={label} className="list-none" custom={i + 3} variants={linkVariant}>
-                <Link
-                  href={href}
-                  className={`${isButton ? 'w-fit rounded-md bg-gray-300 px-4 py-1.5 text-sm font-medium transition hover:bg-gray-400' : 'hover:underline'} focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black`}
-                >
-                  {label}
-                </Link>
-              </motion.li>
-            ))}
+                return (
+                  <motion.li key={label} className="relative list-none" custom={i} variants={linkVariant}>
+                    {isButton ? (
+                      <Link
+                        href={href}
+                        className={`rounded-md px-4 py-1.5 text-sm font-semibold transition-colors duration-300 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-black ${isActive ? 'bg-amber-600' : 'bg-amber-500 hover:bg-amber-600'}`}
+                      >
+                        {label}
+                      </Link>
+                    ) : (
+                      <Link href={href} className="relative text-sm font-semibold hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+                        {label}
+                      </Link>
+                    )}
+                  </motion.li>
+                );
+              })}
+            </LayoutGroup>
           </ul>
         </nav>
       </div>
 
       <motion.div className="flex w-full flex-col md:w-1/3 lg:w-1/6" variants={linkVariant} custom={6}>
-        <div className="flex gap-4">
+        <div className="flex gap-2 justify-center md:justify-start">
           <Link
             href="https://www.instagram.com"
             aria-label="Instagram"
@@ -85,7 +84,7 @@ export default function Footer() {
             target="_blank"
             className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-            <RiInstagramLine className="h-8 w-8 transition hover:text-gray-700" />
+            <RiInstagramLine className="h-8 w-8 text-gray-900 transition hover:text-amber-500" />
           </Link>
           <Link
             href="https://www.facebook.com"
@@ -94,12 +93,12 @@ export default function Footer() {
             target="_blank"
             className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-            <RiFacebookFill className="h-8 w-8 transition hover:text-gray-700" />
+            <RiFacebookFill className="h-8 w-8 text-gray-900 transition hover:text-amber-500" />
           </Link>
         </div>
       </motion.div>
 
-      <motion.div className="flex w-full items-start justify-start md:w-1/3 md:justify-end lg:w-1/6" variants={linkVariant} custom={7}>
+      <motion.div className="flex w-full items-start justify-center md:w-1/3 md:justify-end lg:w-1/6" variants={linkVariant} custom={7}>
         <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Logo firmy Arteon — tworzenie stron internetowych i grafika" className="object-contain" />
       </motion.div>
     </motion.footer>

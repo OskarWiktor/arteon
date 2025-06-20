@@ -84,7 +84,7 @@ export default function HeroBanner({
               </div>
             )}
 
-            <h1 id={titleId} className="mt-6 font-medium text-4xl md:text-6xl" tabIndex={0} aria-label="Nagłówek sekcji">
+            <h1 id={titleId} className="mt-6 text-4xl font-medium md:text-6xl" tabIndex={0} aria-label="Nagłówek sekcji">
               {title}
             </h1>
 

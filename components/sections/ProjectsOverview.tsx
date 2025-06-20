@@ -64,11 +64,11 @@ export default function ProjectsOverview() {
         aria-labelledby="projects-heading"
         role="region"
       >
-        <h2 id="projects-heading" className="font-serif text-4xl">
+        <h2 id="projects-heading" className="text-3xl font-semibold text-gray-900">
           Nasze Projekty
         </h2>
 
-        <div className="relative mt-6">
+        <div className="relative mt-2">
           <button
             onClick={() => scroll('left')}
             className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
@@ -107,7 +107,7 @@ export default function ProjectsOverview() {
                 }
               }}
               className={`h-2 w-2 rounded-full transition duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${
-                i === currentSlide ? 'bg-gray-600' : 'bg-gray-300'
+                i === currentSlide ? 'bg-amber-500' : 'bg-gray-300'
               }`}
             />
           ))}
