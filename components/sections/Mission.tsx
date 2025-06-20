@@ -37,7 +37,7 @@ export default function Mission() {
       renderItem={({ imageAlt, imageSrc, content, border }, index) => (
         <article role="group" aria-labelledby={`mission-title-${index}`} aria-describedby={`mission-desc-${index}`} tabIndex={0} className="flex flex-col items-center px-2">
           <Image src={imageSrc} width={60} height={60} alt={imageAlt} />
-          <h3 id={`mission-title-${index}`} className={`mt-2 mb-4 w-fit border-b-2 text-xl capitalize ${border}`} tabIndex={0}>
+          <h3 id={`mission-title-${index}`} className={`mt-2 mb-4 w-fit border-b-2 font-semibold text-xl capitalize ${border}`} tabIndex={0}>
             {imageAlt}
           </h3>
           <p id={`mission-desc-${index}`} className="max-w-sm" tabIndex={0}>

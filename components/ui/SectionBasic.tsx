@@ -4,6 +4,7 @@ import { ReactNode, useId } from 'react';
 import Image from 'next/image';
 import Wrapper from './Wrapper';
 import SlideInOnView from '../animations/SlideInOnView';
+import Button from './Button';
 
 interface SectionBasicProps {
   title: string;
@@ -12,35 +13,85 @@ interface SectionBasicProps {
   imageAlt?: string;
   variant?: 'left' | 'right';
   children?: ReactNode;
+  ctaText?: string;
+  ctaHref?: string;
+  backgroundClass?: string;
 }
 
-export default function SectionBasic({ title, description, imageSrc, imageAlt = '', variant = 'right', children }: SectionBasicProps) {
+export default function SectionBasic({
+  title,
+  description,
+  imageSrc,
+  imageAlt = '',
+  variant = 'right',
+  children,
+  ctaText,
+  ctaHref,
+  backgroundClass = 'bg-gray-50',
+}: SectionBasicProps) {
   const titleId = useId();
   const descId = useId();
 
   return (
-    <section className="mt-20 w-full bg-gray-300" aria-labelledby={titleId} aria-describedby={description ? descId : undefined} role="region">
-      <Wrapper className={`flex flex-col lg:flex-row ${variant === 'left' ? 'lg:flex-row-reverse' : ''}`}>
+    <section
+      className={`mt-24 w-full ${backgroundClass}`}
+      aria-labelledby={titleId}
+      aria-describedby={description ? descId : undefined}
+      role="region"
+    >
+      <Wrapper
+        className={`flex flex-col items-center gap-8 lg:flex-row lg:items-start ${
+          variant === 'left' ? 'lg:flex-row-reverse' : ''
+        }`}
+      >
         <div className="w-full lg:w-1/2">
           <SlideInOnView direction={variant === 'left' ? 'right' : 'left'}>
-            <div className="flex flex-col">
-              <Image src={imageSrc} alt={imageAlt} className="h-auto w-full" width={1200} height={800} priority />
+            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl shadow-lg">
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </SlideInOnView>
         </div>
 
         <div className="w-full lg:w-1/2">
           <SlideInOnView direction={variant}>
-            <div className="flex flex-col p-4 md:px-8 lg:px-8" role="group" aria-labelledby={titleId} aria-describedby={description ? descId : undefined}>
-              <h3 id={titleId} className="text-4xl font-semibold" tabIndex={0}>
+            <div
+              className="flex flex-col gap-5 p-4 md:px-8 lg:px-10"
+              role="group"
+              aria-labelledby={titleId}
+              aria-describedby={description ? descId : undefined}
+            >
+              <h3
+                id={titleId}
+                className="text-3xl font-semibold text-gray-900 leading-tight"
+                tabIndex={0}
+              >
                 {title}
               </h3>
               {description && (
-                <p id={descId} className="mt-4" tabIndex={0}>
+                <p
+                  id={descId}
+                  className="text-base md:text-lg text-gray-700 leading-relaxed"
+                  tabIndex={0}
+                >
                   {description}
                 </p>
               )}
-              {children}
+              {children && (
+                <div className="prose prose-gray max-w-none text-gray-700">{children}</div>
+              )}
+              {ctaText && ctaHref && (
+                <div className="mt-4">
+                  <Button variant="accent">
+                    <a href={ctaHref}>{ctaText}</a>
+                  </Button>
+                </div>
+              )}
             </div>
           </SlideInOnView>
         </div>

@@ -24,7 +24,7 @@ export default function HowWeWork() {
               {number}
             </span>
           </div>
-          <h3 id={`step-title-${index}`} className="mt-3 mb-4 w-fit border-b border-b-gray-200 text-xl capitalize" tabIndex={0}>
+          <h3 id={`step-title-${index}`} className="mt-3 mb-4 w-fit border-b font-semibold border-b-gray-200 text-xl capitalize" tabIndex={0}>
             {title}
           </h3>
           <p id={`step-desc-${index}`} className="max-w-sm" tabIndex={0}>

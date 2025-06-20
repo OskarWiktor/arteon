@@ -22,11 +22,11 @@ export default function Button({ children, variant = 'normal', size = 'medium' }
   }
 
   switch (variant) {
-    case 'normal':
-      variantClass = 'border-1 border-gray-400 bg-gray-400';
-      break;
+case 'normal':
+  variantClass = 'border border-[#cabfa6] bg-[#f5f0e6] hover:bg-[#ebe4d5] text-black';
+  break;
     case 'accent':
-      variantClass = 'border-1 border-[#5f9ea0] bg-[#5f9ea0]';
+      variantClass = 'border border-[#d4c2ac] bg-[#e7d8c2] hover:bg-[#dfccb4] text-black';
       break;
   }
 

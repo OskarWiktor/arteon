@@ -43,9 +43,9 @@ export default function SectionFour<T>({ items, renderItem, className = '', sect
   return (
     <section className={`mt-24 md:px-4 ${sectionClassName}`} aria-labelledby={titleId} role="region">
       <Wrapper>
-        <h2 id={titleId} className="sr-only">
+        <h4 id={titleId} className="sr-only">
           Lista elementów
-        </h2>
+        </h4>
         <motion.div ref={ref} className={`flex flex-wrap ${className}`} initial="hidden" animate={controls} variants={containerVariants}>
           {items.map((item, index) => (
             <motion.div key={index} variants={childVariants} className="flex w-full flex-col items-center px-4 py-2 md:w-1/2 lg:w-1/4" role="group" aria-label={`Element ${index + 1}`} tabIndex={0}>
