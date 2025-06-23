@@ -7,6 +7,8 @@ import Button from '@/components/ui/Button';
 import projectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
 
+export const dynamicParams = false;
+
 const projects = projectsData.projects as Project[];
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
@@ -15,7 +17,11 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default function ProjectPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const project = projects.find((p) => p.slug === params.slug);
 
   if (!project) return notFound();
@@ -49,4 +55,3 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     </main>
   );
 }
-
