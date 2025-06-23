@@ -19,18 +19,11 @@ export default function Filters({ selectedCategory, onSelectCategory }: Props) {
         <h2 className="mb-4 text-2xl font-semibold md:text-3xl">Filtry:</h2>
         <StaggerChildren>
           <div className="flex flex-wrap gap-2">
-            <Button
-              variant={!selectedCategory ? 'accent' : 'normal'}
-              onClick={() => onSelectCategory(null)}
-            >
+            <Button variant={!selectedCategory ? 'accent' : 'normal'} onClick={() => onSelectCategory(null)}>
               Wszystkie
             </Button>
             {categories.map((category, index) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? 'accent' : 'normal'}
-                onClick={() => onSelectCategory(category)}
-              >
+              <Button key={category} variant={selectedCategory === category ? 'accent' : 'normal'} onClick={() => onSelectCategory(category)}>
                 {categoriesName[index]}
               </Button>
             ))}

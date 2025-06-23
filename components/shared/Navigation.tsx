@@ -88,10 +88,22 @@ export default function Navigation() {
             <span className="text-xl"> / </span>
             <button className="cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">EN</button>
           </div>
-          <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+          <Link
+            href="https://www.instagram.com/arteon.pl"
+            aria-label="Instagram"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
             <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
           </Link>
-          <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+          <Link
+            href="https://www.facebook.com/arteonpl"
+            aria-label="Facebook"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
             <RiFacebookFill className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
           </Link>
         </div>
@@ -170,10 +182,22 @@ export default function Navigation() {
                   <button className="cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">EN</button>
                 </div>
                 <div className="flex gap-2 lg:gap-4">
-                  <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+                  <Link
+                    href="https://www.instagram.com/arteon.pl"
+                    aria-label="Instagram"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  >
                     <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
                   </Link>
-                  <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+                  <Link
+                    href="https://www.facebook.com/arteonpl"
+                    aria-label="Facebook"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  >
                     <RiFacebookFill className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
                   </Link>
                 </div>

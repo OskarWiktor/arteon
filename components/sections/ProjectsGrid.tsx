@@ -25,9 +25,7 @@ const cardVariants = {
 
 export default function ProjectsGrid({ selectedCategory }: Props) {
   const allProjects = projectsData.projects as Project[];
-  const filteredProjects = selectedCategory
-    ? allProjects.filter((p) => p.category === selectedCategory)
-    : allProjects;
+  const filteredProjects = selectedCategory ? allProjects.filter((p) => p.category === selectedCategory) : allProjects;
 
   return (
     <section className="w-full px-4 md:px-8">
@@ -35,14 +33,7 @@ export default function ProjectsGrid({ selectedCategory }: Props) {
         <div className="grid auto-rows-max grid-cols-1 gap-8 pt-8 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="wait" key={selectedCategory ?? 'all'}>
             {filteredProjects.map((project, i) => (
-              <motion.div
-                key={project.slug}
-                variants={cardVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                custom={i}
-              >
+              <motion.div key={project.slug} variants={cardVariants} initial="hidden" animate="visible" exit="exit" custom={i}>
                 <ProjectCard project={project} />
               </motion.div>
             ))}

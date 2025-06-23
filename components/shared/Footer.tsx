@@ -78,7 +78,7 @@ export default function Footer() {
       <motion.div className="flex w-full flex-col md:w-1/3 lg:w-1/6" variants={linkVariant} custom={6}>
         <div className="flex justify-center gap-2 md:justify-start">
           <Link
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/arteon.pl"
             aria-label="Instagram"
             rel="noopener noreferrer"
             target="_blank"
@@ -87,7 +87,7 @@ export default function Footer() {
             <RiInstagramLine className="h-8 w-8 text-gray-900 transition hover:text-amber-500" />
           </Link>
           <Link
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/arteonpl"
             aria-label="Facebook"
             rel="noopener noreferrer"
             target="_blank"

@@ -13,7 +13,7 @@ interface SlideInOnViewProps {
   once?: boolean;
 }
 
-export default function SlideInOnView({ children, direction = 'left', delay = 0.1, duration = 0.4, distance = 40, once = true }: SlideInOnViewProps) {
+export default function SlideInOnView({ children, direction = 'left', delay = 0.1, duration = 0.4, distance = 40, once = false }: SlideInOnViewProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.3 });
   const controls = useAnimation();
