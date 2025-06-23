@@ -23,15 +23,15 @@ export default function Button({ children, variant = 'normal', size = 'medium' }
 
   switch (variant) {
     case 'normal':
-      variantClass = 'border-b border-b-amber-500 hover:text-amber-500 font-semibold bg-white rounded-md ';
+      variantClass = 'border border-amber-500 hover:text-amber-500 font-semibold bg-white bg-white/80 backdrop-blur-sm';
       break;
     case 'accent':
-      variantClass = 'border border-amber-500 bg-amber-500 hover:bg-amber-600 hover:text-white font-semibold rounded-md ';
+      variantClass = 'border border-amber-500 bg-amber-500 hover:bg-amber-600 hover:text-white font-semibold';
       break;
     case 'minimal':
-      variantClass = 'border-b-1 border-b-amber-500 hover:text-amber-500 font-semibold';
+      variantClass = 'border-b-1 border-b-amber-500 hover:text-amber-500 font-semibold bg-white/80 backdrop-blur-sm';
       break;
   }
 
-  return <button className={`flex w-fit cursor-pointer items-center text-sm text-gray-900 md:text-base ${sizeClass} ${variantClass}`}>{children}</button>;
+  return <button className={`flex w-fit cursor-pointer items-center text-sm text-gray-900 md:text-base rounded-md  ${sizeClass} ${variantClass}`}>{children}</button>;
 }

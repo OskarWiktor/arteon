@@ -45,7 +45,7 @@ export default function Navigation() {
   }, [isOpen]);
 
   return (
-    <div className="sticky top-0 z-50 w-full border-b border-b-gray-200 bg-white px-4 md:px-8 lg:px-16">
+    <div className="sticky top-0 z-50 w-full border-b border-b-gray-200 bg-white/80 backdrop-blur-sm px-4 md:px-8 lg:px-16">
       <section className="flex h-16 items-center justify-between lg:h-20">
         <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <Image src="/assets/arteon-logo.png" width={200} height={50} alt="Arteon company logo" />
@@ -65,7 +65,7 @@ export default function Navigation() {
                       className={label !== 'Kontakt' ? 'relative font-semibold hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black' : undefined}
                     >
                       {label === 'Kontakt' ? (
-                        <Button variant="accent" size="small">
+                        <Button variant="normal" size="small">
                           {label}
                         </Button>
                       ) : (

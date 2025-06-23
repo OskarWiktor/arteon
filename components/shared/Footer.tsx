@@ -13,7 +13,7 @@ const footerNavItems = [
   { href: '/projects', label: 'Projekty' },
   { href: '/offer', label: 'Oferta' },
   { href: '/about-us', label: 'O nas' },
-  { href: '/contact', label: 'Skontaktuj się z nami', isButton: true },
+  { href: '/contact', label: 'Skontaktuj się', isButton: true },
 ];
 
 const linkVariant = {
