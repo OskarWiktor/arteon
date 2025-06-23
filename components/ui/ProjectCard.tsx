@@ -14,12 +14,13 @@ export default function ProjectCard() {
       </div>
 
       <div className="mx-4 my-2 flex flex-col">
-        <h3 className="text-xl font-semibold text-gray-900" id="project-title-meridol">
+        <h3 className="text-lg md:text-xl font-semibold text-gray-900" id="project-title-meridol">
           Meridol
         </h3>
-        <p className="text-gray-700" aria-describedby="project-title-meridol">
+        <p className="text-gray-700 text-sm md:text-base" aria-describedby="project-title-meridol">
           Opis projektu: nowoczesny layout i integracja z CMS.
         </p>
+        <button>Szczegóły</button>
       </div>
     </article>
   );

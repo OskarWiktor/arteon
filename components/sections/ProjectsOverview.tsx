@@ -56,7 +56,7 @@ export default function ProjectsOverview() {
   return (
     <Wrapper>
       <motion.section
-        className="mt-16 w-full px-4 md:px-8"
+        className="mt-16 w-full px-4"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -64,14 +64,14 @@ export default function ProjectsOverview() {
         aria-labelledby="projects-heading"
         role="region"
       >
-        <h2 id="projects-heading" className="text-3xl font-semibold text-gray-900">
+        <h2 id="projects-heading" className=" text-2xl md:text-3xl font-semibold text-gray-900">
           Nasze Projekty
         </h2>
 
         <div className="relative mt-2">
           <button
             onClick={() => scroll('left')}
-            className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="hidden md:block absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             aria-label="Przesuń w lewo"
           >
             <RiArrowLeftSLine className="h-6 w-6" />
@@ -87,7 +87,7 @@ export default function ProjectsOverview() {
 
           <button
             onClick={() => scroll('right')}
-            className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="hidden md:block absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             aria-label="Przesuń w prawo"
           >
             <RiArrowRightSLine className="h-6 w-6" />

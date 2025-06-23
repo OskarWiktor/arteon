@@ -27,13 +27,13 @@ export default function SectionBasic({ title, description, imageSrc, imageAlt = 
       <Wrapper className={`flex flex-col items-center gap-8 lg:flex-row lg:items-start ${variant === 'left' ? 'lg:flex-row-reverse' : ''}`}>
         <div className="w-full lg:w-1/2">
           <SlideInOnView direction={variant === 'left' ? 'right' : 'left'}>
-            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl shadow-lg">
+            <div className="relative aspect-[3/2] w-full overflow-hidden shadow-lg">
               <Image src={imageSrc} alt={imageAlt} fill className="object-cover" priority />
             </div>
           </SlideInOnView>
         </div>
 
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 m-auto">
           <SlideInOnView direction={variant}>
             <div className="flex flex-col gap-5 p-4 md:px-8 lg:px-10" role="group" aria-labelledby={titleId} aria-describedby={description ? descId : undefined}>
               <h3 id={titleId} className="text-3xl leading-tight font-semibold text-gray-900" tabIndex={0}>

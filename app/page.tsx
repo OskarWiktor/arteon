@@ -12,10 +12,10 @@ export default function Home() {
         title="Lorem Ipsum Lorem Ipsum"
         description="njkbasdka sbdjabsd bjkbsajdb"
         backgroundImage="/assets/test.jpg"
-        buttonTopOne="test1"
-        buttonTopTwo="test2"
-        buttonTopThree="test3"
-        buttonTopFour="test4"
+        buttonTopOne="Strony i sklepy"
+        buttonTopTwo="Aplikacje"
+        buttonTopThree="Grafika"
+        buttonTopFour="Marketing"
       />
       <Mission />
       <ProjectsOverview />
