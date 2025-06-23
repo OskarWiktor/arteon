@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "slug": "curriculum-vitae",
+      "title": "CV",
+      "short": "Responsywna aplikacja CV z dynamicznym routingiem i trybem ciemnym/jasnym.",
+      "image": "/assets/test.jpg",
+      "link": "https://www.oskarwiktor-cv.pl",
+      "category": "aplikacja"
+    },
+    {
+      "slug": "ar-project",
+      "title": "AR Project",
+      "short": "Aplikacja AR oparta na 8th Wall tworzona z wykorzystaniem React i Material UI.",
+      "image": "/assets/test.jpg",
+      "link": "",
+      "category": "aplikacja"
+    },
+    {
+      "slug": "meridol-accessibility",
+      "title": "Meridol Accessibility",
+      "short": "Dostosowanie strony do standardów WCAG z wykorzystaniem AEM i jQuery.",
+      "image": "/assets/test.jpg",
+      "link": "https://www.meridol.de/",
+      "category": "strona"
+    },
+    {
+      "slug": "elmex-accessibility",
+      "title": "Elmex Accessibility",
+      "short": "Nowe komponenty i poprawki UI zgodne z WCAG w środowisku AEM.",
+      "image": "/assets/test.jpg",
+      "link": "https://www.elmex.de/",
+      "category": "strona"
+    },
+    {
+      "slug": "sanex-accessibility",
+      "title": "Sanex Accessibility",
+      "short": "Implementacja contrast toola i dostępności komponentów w AEM.",
+      "image": "/assets/test.jpg",
+      "link": "https://www.sanex.co.uk/",
+      "category": "strona"
+    },
+    {
+      "slug": "pilka-nozna-pl",
+      "title": "PilkaNożna.pl",
+      "short": "Blog piłkarski oparty na WordPressie i Blade.",
+      "image": "/assets/test.jpg",
+      "link": "https://pilkanozna.pl/",
+      "category": "blog"
+    },
+    {
+      "slug": "trilllizo",
+      "title": "Trillizo",
+      "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
+      "image": "/assets/test.jpg",
+      "link": "https://trilllizo.com",
+      "category": "sklep"
+    }
+  ]
+}
