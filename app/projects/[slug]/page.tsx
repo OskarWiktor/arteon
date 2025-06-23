@@ -7,11 +7,9 @@ import Button from '@/components/ui/Button';
 import projectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
 
-export const dynamicParams = false;
-
 const projects = projectsData.projects as Project[];
 
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
+export async function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
   }));
