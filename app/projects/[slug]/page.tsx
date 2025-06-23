@@ -9,21 +9,13 @@ import type { Project } from '@/types/project';
 
 const projects = projectsData.projects as Project[];
 
-// ⛔️ Next.js wymaga, by to było ASYNC
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return projects.map((project) => ({
     slug: project.slug,
   }));
 }
 
-// ✅ Typ dla propsów
-type ProjectPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
 
   if (!project) return notFound();
@@ -57,3 +49,4 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     </main>
   );
 }
+

@@ -5,6 +5,8 @@ import './globals.css';
 import Footer from '@/components/shared/Footer';
 import Navigation from '@/components/shared/Navigation';
 
+import { Analytics } from "@vercel/analytics/next"
+
 export const metadata: Metadata = {
   title: 'Arteon',
   description: 'Arteon',
@@ -24,6 +26,7 @@ export default function RootLayout({
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
