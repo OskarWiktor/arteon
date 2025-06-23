@@ -1,36 +1,36 @@
 import { notFound } from 'next/navigation';
 import projectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
+import Wrapper from '@/components/ui/Wrapper';
+import Button from '@/components/ui/Button';
 
 const projects = projectsData.projects as Project[];
 
-// ✅ 1. Generujemy ścieżki
 export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
-// ✅ 2. Komponent strony
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
 
   if (!project) return notFound();
 
   return (
-    <main className="px-6 py-8">
-      <h1 className="text-3xl font-bold">{project.title}</h1>
-      <img src={project.image} alt={project.title} className="mt-4 w-full max-w-xl" />
-      <p className="mt-4 text-lg">{project.short}</p>
-      <p className="mt-2 text-sm text-gray-600">Kategoria: {project.category}</p>
-      {project.link && (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-block text-blue-600 underline"
-        >
-          Zobacz stronę
-        </a>
-      )}
+    <main>
+      <img src={project.image} alt={project.title} className="w-full max-h-96 object-cover object-center" />
+      <Wrapper>
+        <h1 className="text-2xl font-semibold text-gray-900 md:text-3xl mt-4">{project.title}</h1>
+        <p className="mt-2 text-sm text-gray-800 capitalize">{project.category}</p>
+
+        <p className="my-4 text-lg">{project.short}</p>
+        {project.link && (
+          <Button variant="minimal">
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              Zobacz stronę
+            </a>
+          </Button>
+        )}
+      </Wrapper>
     </main>
   );
 }

@@ -33,7 +33,7 @@ export default function SectionBasic({ title, description, imageSrc, imageAlt = 
           </SlideInOnView>
         </div>
 
-        <div className="w-full lg:w-1/2 m-auto">
+        <div className="m-auto w-full lg:w-1/2">
           <SlideInOnView direction={variant}>
             <div className="flex flex-col gap-5 p-4 md:px-8 lg:px-10" role="group" aria-labelledby={titleId} aria-describedby={description ? descId : undefined}>
               <h3 id={titleId} className="text-3xl leading-tight font-semibold text-gray-900" tabIndex={0}>

@@ -46,9 +46,9 @@ export default function Footer() {
     >
       <h2 className="sr-only">Nawigacja w stopce</h2>
 
-      <div className="flex w-full flex-wrap gap-2 md:gap-6 md:w-2/3 lg:gap-12">
+      <div className="flex w-full flex-wrap gap-2 md:w-2/3 md:gap-6 lg:gap-12">
         <nav className="flex gap-2" aria-label="Główna nawigacja w stopce">
-          <ul className="flex flex-col gap-1 md:gap-4 md:flex-row">
+          <ul className="flex flex-col gap-1 md:flex-row md:gap-4">
             <LayoutGroup>
               {footerNavItems.map(({ href, label, isButton }, i) => {
                 const isActive = pathname === href;
@@ -76,7 +76,7 @@ export default function Footer() {
       </div>
 
       <motion.div className="flex w-full flex-col md:w-1/3 lg:w-1/6" variants={linkVariant} custom={6}>
-        <div className="flex gap-2 justify-center md:justify-start">
+        <div className="flex justify-center gap-2 md:justify-start">
           <Link
             href="https://www.instagram.com"
             aria-label="Instagram"

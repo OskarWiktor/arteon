@@ -6,7 +6,7 @@ export default function Filters() {
   return (
     <section className="mt-4 w-full px-4 md:px-8">
       <Wrapper className="flex flex-col">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Filtry:</h2>
+        <h2 className="mb-4 text-2xl font-semibold md:text-3xl">Filtry:</h2>
         <StaggerChildren>
           <Button>Strony</Button>
           <Button>Sklepy</Button>

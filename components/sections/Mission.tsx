@@ -40,7 +40,7 @@ export default function Mission() {
           <h3 id={`mission-title-${index}`} className={`mt-2 mb-4 w-fit border-b-2 text-2xl font-semibold text-gray-900 capitalize ${border}`} tabIndex={0}>
             {imageAlt}
           </h3>
-          <p id={`mission-desc-${index}`} className="max-w-sm text-gray-800 text-base md:text-lg" tabIndex={0}>
+          <p id={`mission-desc-${index}`} className="max-w-sm text-base text-gray-800 md:text-lg" tabIndex={0}>
             {content}
           </p>
         </article>

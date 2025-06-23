@@ -18,19 +18,16 @@ const itemVariants = {
 
 export default function StaggerChildrenFlex({ children }: { children: React.ReactNode }) {
   return (
-    <motion.div
-      className="flex gap-3 md:gap-4 flex-wrap"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      {Array.isArray(children)
-        ? children.map((child, i) => (
-            <motion.div key={i} variants={itemVariants}>
-              {child}
-            </motion.div>
-          ))
-        : <motion.div variants={itemVariants}>{children}</motion.div>}
+    <motion.div className="flex flex-wrap gap-3 md:gap-4" variants={containerVariants} initial="hidden" animate="visible">
+      {Array.isArray(children) ? (
+        children.map((child, i) => (
+          <motion.div key={i} variants={itemVariants}>
+            {child}
+          </motion.div>
+        ))
+      ) : (
+        <motion.div variants={itemVariants}>{children}</motion.div>
+      )}
     </motion.div>
   );
 }
