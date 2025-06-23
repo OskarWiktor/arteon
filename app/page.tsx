@@ -12,10 +12,15 @@ export default function Home() {
         description="njkbasdka sbdjabsd bjkbsajdb"
         backgroundImage="/assets/test.jpg"
         buttonTopOne="Strony i sklepy"
+        buttonTopOneLink="#strony-i-sklepy"
         buttonTopTwo="Aplikacje"
+        buttonTopTwoLink="#aplikacje"
         buttonTopThree="Grafika"
+        buttonTopThreeLink="#grafika"
         buttonTopFour="Marketing"
+        buttonTopFourLink="#marketing"
       />
+
       <ProjectsOverview />
       <SectionBasic
         title="Strony internetowe dopasowane do Ciebie"
@@ -24,6 +29,7 @@ export default function Home() {
         imageAlt="Projektowanie stron"
         ctaText="Zobacz ofertę"
         ctaHref="/oferta"
+        id="strony-i-sklepy"
       >
         <ul className="list-disc pl-5 text-gray-700">
           <li>Indywidualny projekt graficzny</li>
@@ -39,6 +45,7 @@ export default function Home() {
         imageAlt="Projektowanie stron"
         ctaText="Zobacz ofertę"
         ctaHref="/oferta"
+        id="aplikacje"
       >
         <ul className="list-disc pl-5 text-gray-700">
           <li>Indywidualny projekt graficzny</li>
@@ -47,13 +54,14 @@ export default function Home() {
         </ul>
       </SectionBasic>
       <HowWeWork />
-            <SectionBasic
+      <SectionBasic
         title="Strony internetowe dopasowane do Ciebie"
         description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
         ctaText="Zobacz ofertę"
         ctaHref="/oferta"
+        id="grafika"
       >
         <ul className="list-disc pl-5 text-gray-700">
           <li>Indywidualny projekt graficzny</li>
@@ -69,6 +77,7 @@ export default function Home() {
         imageAlt="Projektowanie stron"
         ctaText="Zobacz ofertę"
         ctaHref="/oferta"
+        id="marketing"
       >
         <ul className="list-disc pl-5 text-gray-700">
           <li>Indywidualny projekt graficzny</li>

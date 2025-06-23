@@ -73,7 +73,7 @@ export default function ProjectsOverview() {
         aria-labelledby="projects-heading"
         role="region"
       >
-        <SlideInOnView >
+        <SlideInOnView>
           <h2 id="projects-heading" className="text-2xl font-semibold text-gray-900 md:text-3xl">
             Nasze Projekty
           </h2>
@@ -82,7 +82,7 @@ export default function ProjectsOverview() {
         <div className="relative mt-2">
           <button
             onClick={() => scroll('left')}
-            className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-lg border-x-1 border-amber-500 cursor-pointer transition hover:bg-amber-500 hover:scale-105 focus-visible:outline-black md:block"
+            className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
             aria-label="Przesuń w lewo"
           >
             <RiArrowLeftSLine className="h-6 w-6" />
@@ -90,11 +90,7 @@ export default function ProjectsOverview() {
 
           <div ref={scrollRef} className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth py-4" aria-label="Karuzela z projektami" tabIndex={0}>
             {projects.map((project, i) => (
-              <div
-                key={project.slug}
-                ref={i === 0 ? cardRef : null}
-                className="min-w-[300px] md:min-w-[350px]"
-              >
+              <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[300px] md:min-w-[350px]">
                 <ProjectCard project={project} />
               </div>
             ))}
@@ -102,10 +98,10 @@ export default function ProjectsOverview() {
 
           <button
             onClick={() => scroll('right')}
-            className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 rounded-full bg-white border-x-1 border-amber-500 p-2 shadow-lg cursor-pointer transition hover:bg-amber-500 hover:scale-105 focus-visible:outline-black md:block"
+            className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
             aria-label="Przesuń w prawo"
           >
-            <RiArrowRightSLine className="h-6 w-6 " />
+            <RiArrowRightSLine className="h-6 w-6" />
           </button>
         </div>
 
@@ -122,7 +118,7 @@ export default function ProjectsOverview() {
                     scrollRef.current.scrollTo({ left: i * cardWidth, behavior: 'smooth' });
                   }
                 }}
-                className={`h-2 w-2 rounded-full transition duration-300 focus-visible:outline-black cursor-pointer ${i === currentSlide ? 'bg-amber-500 hover:bg-amber-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+                className={`h-2 w-2 cursor-pointer rounded-full transition duration-300 focus-visible:outline-black ${i === currentSlide ? 'bg-amber-500 hover:bg-amber-700' : 'bg-gray-300 hover:bg-gray-500'}`}
               />
             ))}
           </div>

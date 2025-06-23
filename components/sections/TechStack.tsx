@@ -3,15 +3,7 @@
 import { motion, useMotionValue, useAnimationFrame } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { IconType } from 'react-icons';
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiWordpress,
-  SiSass,
-  SiReact,
-  SiWebflow,
-  SiVercel,
-} from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiWordpress, SiSass, SiReact, SiWebflow, SiVercel } from 'react-icons/si';
 import Wrapper from '../ui/Wrapper';
 
 interface TechStackItem {
@@ -45,21 +37,10 @@ export default function TechStack() {
   return (
     <Wrapper>
       <section className="relative mt-16 overflow-hidden">
-        <div
-          ref={containerRef}
-          className="overflow-hidden"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          <motion.div
-            style={{ x }}
-            className="flex gap-2 md:gap-6 lg:gap-10 whitespace-nowrap"
-          >
+        <div ref={containerRef} className="overflow-hidden" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+          <motion.div style={{ x }} className="flex gap-2 whitespace-nowrap md:gap-6 lg:gap-10">
             {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
-              <div
-                key={`${label}-${index}`}
-                className="flex items-center shrink-0 px-4"
-              >
+              <div key={`${label}-${index}`} className="flex shrink-0 items-center px-4">
                 <p className="pr-2 text-2xl">{label}</p>
                 <Icon className="h-auto w-6" />
               </div>

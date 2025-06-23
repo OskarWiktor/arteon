@@ -16,14 +16,15 @@ interface SectionBasicProps {
   ctaText?: string;
   ctaHref?: string;
   backgroundClass?: string;
+  id?: string;
 }
 
-export default function SectionBasic({ title, description, imageSrc, imageAlt = '', variant = 'right', children, ctaText, ctaHref, backgroundClass = 'bg-gray-50' }: SectionBasicProps) {
+export default function SectionBasic({ title, description, imageSrc, imageAlt = '', variant = 'right', children, ctaText, ctaHref, backgroundClass = 'bg-gray-50', id }: SectionBasicProps) {
   const titleId = useId();
   const descId = useId();
 
   return (
-    <section className={`mt-24 w-full ${backgroundClass}`} aria-labelledby={titleId} aria-describedby={description ? descId : undefined} role="region">
+    <section id={id} className={`mt-24 w-full scroll-mt-24 ${backgroundClass}`} aria-labelledby={titleId} aria-describedby={description ? descId : undefined} role="region">
       <Wrapper className={`flex flex-col items-center gap-8 lg:flex-row lg:items-start ${variant === 'left' ? 'lg:flex-row-reverse' : ''}`}>
         <div className="w-full lg:w-1/2">
           <SlideInOnView direction={variant === 'left' ? 'right' : 'left'}>

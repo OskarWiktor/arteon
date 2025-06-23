@@ -4,9 +4,10 @@ interface ButtonProps {
   children: ReactNode;
   variant?: 'normal' | 'accent' | 'minimal';
   size?: 'small' | 'medium' | 'big';
+  onClick?: () => void;
 }
 
-export default function Button({ children, variant = 'normal', size = 'medium' }: ButtonProps) {
+export default function Button({ children, variant = 'normal', size = 'medium', onClick }: ButtonProps) {
   let sizeClass, variantClass;
 
   switch (size) {
@@ -33,5 +34,9 @@ export default function Button({ children, variant = 'normal', size = 'medium' }
       break;
   }
 
-  return <button className={`flex w-fit cursor-pointer items-center text-sm text-gray-900 md:text-base rounded-md  ${sizeClass} ${variantClass}`}>{children}</button>;
+  return (
+    <button onClick={onClick} className={`flex w-fit cursor-pointer items-center rounded-md text-sm text-gray-900 md:text-base ${sizeClass} ${variantClass}`}>
+      {children}
+    </button>
+  );
 }

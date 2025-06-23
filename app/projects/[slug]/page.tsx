@@ -17,9 +17,9 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
-      <img src={project.image} alt={project.title} className="w-full max-h-96 object-cover object-center" />
+      <img src={project.image} alt={project.title} className="max-h-96 w-full object-cover object-center" />
       <Wrapper>
-        <h1 className="text-2xl font-semibold text-gray-900 md:text-3xl mt-4">{project.title}</h1>
+        <h1 className="mt-4 text-2xl font-semibold text-gray-900 md:text-3xl">{project.title}</h1>
         <p className="mt-2 text-sm text-gray-800 capitalize">{project.category}</p>
 
         <p className="my-4 text-lg">{project.short}</p>

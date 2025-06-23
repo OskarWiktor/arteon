@@ -79,7 +79,9 @@ export default function HeroBanner({
                 ]
                   .filter(({ text }) => !!text)
                   .map(({ text, link }, i) => (
-                    <Button variant='minimal' key={i}>{link ? <Link href={link}>{text}</Link> : <span>{text}</span>}</Button>
+                    <Button variant="minimal" key={i}>
+                      {link ? <Link href={link}>{text}</Link> : <span>{text}</span>}
+                    </Button>
                   ))}
               </div>
             )}
