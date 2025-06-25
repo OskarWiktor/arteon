@@ -46,7 +46,7 @@ export default function Navigation() {
   }, [isOpen]);
 
   return (
-    <div className="sticky top-0 z-50 w-full border-b border-b-gray-200 bg-white/80 px-4 backdrop-blur-sm md:px-8 lg:px-16">
+    <div className="sticky top-0 z-50 w-full border-b border-b-gray-200 bg-white/90 md:bg-white/80 px-4 backdrop-blur-sm md:px-8 lg:px-16">
       <Wrapper>
         <section className="flex h-16 items-center justify-between lg:h-20">
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -128,7 +128,7 @@ export default function Navigation() {
               animate={{ opacity: 1, scaleY: 1 }}
               exit={{ opacity: 0, scaleY: 0.95 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="absolute top-16 left-0 z-50 w-full origin-top bg-white px-6 pt-2 pb-6 shadow-md md:hidden"
+              className="absolute top-16 left-0 z-50 w-full origin-top bg-white/90 md:bg-white/80 backdrop-blur-sm px-6 pt-2 pb-6 shadow-md md:hidden"
               ref={menuRef}
               aria-label="Mobilne menu nawigacji"
             >

@@ -41,7 +41,7 @@ export default function SectionFour<T>({ items, renderItem, className = '', sect
   }, [isInView, controls]);
 
   return (
-    <section className={`mt-24 md:px-4 ${sectionClassName}`} aria-labelledby={titleId} role="region">
+    <section className={`mt-12 md:mt-16 md:px-4 lg:mt-24 ${sectionClassName}`} aria-labelledby={titleId} role="region">
       <Wrapper>
         <h4 id={titleId} className="sr-only">
           Lista elementów

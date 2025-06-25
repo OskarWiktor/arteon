@@ -65,7 +65,7 @@ export default function ProjectsOverview() {
   return (
     <Wrapper>
       <motion.section
-        className="mt-16 w-full px-4"
+        className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-8"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -79,7 +79,7 @@ export default function ProjectsOverview() {
           </h2>
         </SlideInOnView>
 
-        <div className="relative mt-2">
+        <div className="relative">
           <button
             onClick={() => scroll('left')}
             className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
@@ -106,7 +106,7 @@ export default function ProjectsOverview() {
         </div>
 
         {maxSlides > 1 && (
-          <div className="mt-4 flex justify-center gap-2" role="tablist" aria-label="Nawigacja karuzeli projektów">
+          <div className="mt-0 flex justify-center gap-2 md:mt-2 lg:mt-4" role="tablist" aria-label="Nawigacja karuzeli projektów">
             {Array.from({ length: maxSlides }).map((_, i) => (
               <button
                 key={i}

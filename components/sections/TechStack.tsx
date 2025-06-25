@@ -36,7 +36,7 @@ export default function TechStack() {
 
   return (
     <Wrapper>
-      <section className="relative mt-16 overflow-hidden">
+      <section className="relative mt-12 overflow-hidden md:mt-16 lg:mt-24">
         <div ref={containerRef} className="overflow-hidden" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <motion.div style={{ x }} className="flex gap-2 whitespace-nowrap md:gap-6 lg:gap-10">
             {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (

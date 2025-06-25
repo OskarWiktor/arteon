@@ -7,7 +7,7 @@ import Wrapper from '../ui/Wrapper';
 import type { Project } from '@/types/project';
 
 type Props = {
-  selectedCategory: string | null;
+  selectedCategory: string[] | null;
 };
 
 const cardVariants = {
@@ -25,10 +25,10 @@ const cardVariants = {
 
 export default function ProjectsGrid({ selectedCategory }: Props) {
   const allProjects = projectsData.projects as Project[];
-  const filteredProjects = selectedCategory ? allProjects.filter((p) => p.category === selectedCategory) : allProjects;
+  const filteredProjects = selectedCategory ? allProjects.filter((p) => p.category.some((cat) => selectedCategory.includes(cat))) : allProjects;
 
   return (
-    <section className="w-full px-4 md:px-8">
+    <section className="w-full px-4 md:px-6">
       <Wrapper>
         <div className="grid auto-rows-max grid-cols-1 gap-8 pt-8 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="wait" key={selectedCategory ?? 'all'}>

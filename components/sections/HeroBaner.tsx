@@ -55,22 +55,22 @@ export default function HeroBanner({
   return (
     <FadeInOnView>
       <section
-        className={`flex h-[520px] w-full ${backgroundImage ? 'bg-cover bg-center' : ''}`}
+        className={`flex h-fit min-h-[320px] w-full md:h-[380px] lg:h-[520px] ${backgroundImage ? 'bg-cover bg-center' : ''}`}
         style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
         aria-labelledby={titleId}
         aria-describedby={description ? descId : undefined}
         role="region"
       >
-        <div className={`mt-auto mb-auto flex w-full flex-col px-4 md:px-8 ${alignmentClass}`} role="group" aria-labelledby={titleId} aria-describedby={description ? descId : undefined}>
+        <div className={`my-auto flex w-full flex-col px-4 md:px-8 ${alignmentClass}`} role="group" aria-labelledby={titleId} aria-describedby={description ? descId : undefined}>
           <SlideInOnView>
             {subtitle && (
-              <p className="text-sm text-gray-700 italic md:text-base" aria-label="Podtytuł" tabIndex={0}>
+              <p className="text-sm text-gray-700 italic md:text-base text-balance" aria-label="Podtytuł" tabIndex={0}>
                 {subtitle}
               </p>
             )}
 
             {(buttonTopOne || buttonTopTwo || buttonTopThree || buttonTopFour) && (
-              <div className={`mt-4 flex flex-wrap gap-4 ${justifyClass}`}>
+              <div className={`mt-4 flex flex-wrap gap-2 md:gap-4 ${justifyClass}`}>
                 {[
                   { text: buttonTopOne, link: buttonTopOneLink },
                   { text: buttonTopTwo, link: buttonTopTwoLink },
@@ -86,18 +86,18 @@ export default function HeroBanner({
               </div>
             )}
 
-            <h1 id={titleId} className="mt-6 text-5xl font-semibold md:text-6xl" tabIndex={0} aria-label="Nagłówek sekcji">
+            <h1 id={titleId} className="mt-4 text-balance text-5xl font-semibold md:text-6xl lg:mt-6" tabIndex={0} aria-label="Nagłówek sekcji">
               {title}
             </h1>
 
             {description && (
-              <p id={descId} className="mt-4 text-base text-gray-800 md:text-xl" aria-label="Opis" tabIndex={0}>
+              <p id={descId} className="my-2 text-balance text-base text-gray-800 md:my-4 md:text-xl" aria-label="Opis" tabIndex={0}>
                 {description}
               </p>
             )}
 
             {(buttonAccent || buttonSecond) && (
-              <div className={`mt-10 flex flex-wrap gap-4 ${justifyClass}`}>
+              <div className={`mt-4 flex flex-wrap gap-4 ${justifyClass}`}>
                 {buttonAccent && (
                   <Button variant="accent">
                     {buttonAccentLink ? <Link href={buttonAccentLink}>{buttonAccent}</Link> : <span>{buttonAccent}</span>}

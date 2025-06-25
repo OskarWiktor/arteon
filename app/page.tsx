@@ -27,8 +27,8 @@ export default function Home() {
         description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
-        ctaText="Zobacz ofertę"
-        ctaHref="/oferta"
+        buttonText="Zobacz ofertę"
+        buttonLink="/oferta"
         id="strony-i-sklepy"
       >
         <ul className="list-disc pl-5 text-gray-700">
@@ -43,11 +43,11 @@ export default function Home() {
         description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
-        ctaText="Zobacz ofertę"
-        ctaHref="/oferta"
+        buttonText="Zobacz ofertę"
+        buttonLink="/oferta"
         id="aplikacje"
       >
-        <ul className="list-disc pl-5 text-gray-700">
+        <ul className="list-disc pl-5 text-gray-800 md:text-lg">
           <li>Indywidualny projekt graficzny</li>
           <li>Pełna optymalizacja SEO i dostępność</li>
           <li>Integracja z CMS lub e-commerce</li>
@@ -59,11 +59,11 @@ export default function Home() {
         description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
-        ctaText="Zobacz ofertę"
-        ctaHref="/oferta"
+        buttonText="Zobacz ofertę"
+        buttonLink="/oferta"
         id="grafika"
       >
-        <ul className="list-disc pl-5 text-gray-700">
+        <ul className="list-disc pl-5 text-gray-800 md:text-lg">
           <li>Indywidualny projekt graficzny</li>
           <li>Pełna optymalizacja SEO i dostępność</li>
           <li>Integracja z CMS lub e-commerce</li>
@@ -75,8 +75,8 @@ export default function Home() {
         description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
-        ctaText="Zobacz ofertę"
-        ctaHref="/oferta"
+        buttonText="Zobacz ofertę"
+        buttonLink="/oferta"
         id="marketing"
       >
         <ul className="list-disc pl-5 text-gray-700">

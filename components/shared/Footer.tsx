@@ -37,7 +37,7 @@ export default function Footer() {
   }, [inView, controls]);
 
   return (
-    <div className="mt-30 border-t border-t-gray-200 px-4 py-8 md:px-8 lg:px-16">
+    <div className="mt-12 border-t border-t-gray-200 px-4 py-8 md:mt-16 md:px-8 lg:mt-24 lg:px-16">
       <Wrapper>
         <motion.footer
           ref={ref}

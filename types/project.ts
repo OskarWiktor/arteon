@@ -6,5 +6,5 @@ export type Project = {
   short: string;
   image: string;
   link: string;
-  category: ProjectCategory;
+  category: ProjectCategory[];
 };
