@@ -7,7 +7,7 @@ import Wrapper from '../ui/Wrapper';
 import type { Project } from '@/types/project';
 
 type Props = {
-  selectedCategory: string[] | null;
+  selectedCategory: string | null;
 };
 
 const cardVariants = {
