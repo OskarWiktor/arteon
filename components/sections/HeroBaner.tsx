@@ -5,7 +5,6 @@ import Button from '../ui/Button';
 import Link from 'next/link';
 import FadeInOnView from '../animations/FadeInOnView';
 import SlideInOnView from '../animations/SlideInOnView';
-import { useId } from 'react';
 
 interface HeroBannerProps {
   buttonTopOne?: string;
@@ -49,22 +48,17 @@ export default function HeroBanner({
   const alignmentClass = variant === 'center' ? 'text-center items-center' : variant === 'right' ? 'text-right items-end' : 'text-left items-start';
   const justifyClass = variant === 'center' ? 'justify-center' : variant === 'right' ? 'justify-end' : 'justify-start';
 
-  const titleId = useId();
-  const descId = useId();
-
   return (
     <FadeInOnView>
       <section
         className={`flex h-fit min-h-[320px] w-full md:h-[380px] lg:h-[520px] ${backgroundImage ? 'bg-cover bg-center' : ''}`}
         style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
-        aria-labelledby={titleId}
-        aria-describedby={description ? descId : undefined}
         role="region"
       >
-        <div className={`my-auto flex w-full flex-col px-4 md:px-8 ${alignmentClass}`} role="group" aria-labelledby={titleId} aria-describedby={description ? descId : undefined}>
+        <div className={`my-auto flex w-full flex-col px-4 md:px-8 ${alignmentClass}`} role="group">
           <SlideInOnView>
             {subtitle && (
-              <p className="text-sm text-gray-700 italic md:text-base text-balance" aria-label="Podtytuł" tabIndex={0}>
+              <p className="text-sm text-balance text-gray-700 italic md:text-base" tabIndex={0}>
                 {subtitle}
               </p>
             )}
@@ -86,12 +80,12 @@ export default function HeroBanner({
               </div>
             )}
 
-            <h1 id={titleId} className="mt-4 text-balance text-5xl font-semibold md:text-6xl lg:mt-6" tabIndex={0} aria-label="Nagłówek sekcji">
+            <h1 className="mt-4 text-5xl font-semibold text-balance md:text-6xl lg:mt-6" tabIndex={0}>
               {title}
             </h1>
 
             {description && (
-              <p id={descId} className="my-2 text-balance text-base text-gray-800 md:my-4 md:text-xl" aria-label="Opis" tabIndex={0}>
+              <p className="my-2 text-base text-balance text-gray-800 md:my-4 md:text-xl" tabIndex={0}>
                 {description}
               </p>
             )}

@@ -70,13 +70,10 @@ export default function ProjectsOverview() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6 }}
-        aria-labelledby="projects-heading"
         role="region"
       >
         <SlideInOnView>
-          <h2 id="projects-heading" className="text-2xl font-semibold text-gray-900 md:text-3xl">
-            Nasze Projekty
-          </h2>
+          <h2 className="text-2xl font-semibold text-gray-900 md:text-3xl">Nasze Projekty</h2>
         </SlideInOnView>
 
         <div className="relative">
@@ -111,8 +108,6 @@ export default function ProjectsOverview() {
               <button
                 key={i}
                 role="tab"
-                aria-selected={i === currentSlide}
-                aria-label={`Pokaż projekt ${i + 1}`}
                 onClick={() => {
                   if (scrollRef.current) {
                     scrollRef.current.scrollTo({ left: i * cardWidth, behavior: 'smooth' });
