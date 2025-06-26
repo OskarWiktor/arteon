@@ -41,7 +41,7 @@ export default function TechStack() {
           <motion.div style={{ x }} className="flex gap-2 whitespace-nowrap md:gap-6 lg:gap-10">
             {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
               <div key={`${label}-${index}`} className="flex shrink-0 items-center px-4">
-                <p className="pr-2 text-2xl">{label}</p>
+                <span className="pr-2 text-2xl">{label}</span>
                 <Icon className="h-auto w-6" />
               </div>
             ))}

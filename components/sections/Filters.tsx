@@ -14,9 +14,9 @@ const categoriesName = ['Strony', 'Sklepy', 'Aplikacje', 'Blogi'];
 
 export default function Filters({ selectedCategory, onSelectCategory }: Props) {
   return (
-    <section className="w-full px-4 md:px-6">
+    <section className="w-full mt-12 md:mt-16 lg:mt-24">
       <Wrapper className="flex flex-col">
-        <h2 className="mb-4 text-2xl font-semibold md:text-3xl">Filtry:</h2>
+        <h2 className="mb-4">Filtry:</h2>
         <StaggerChildren>
           <div className="flex flex-wrap gap-2">
             <Button variant={!selectedCategory ? 'accent' : 'normal'} onClick={() => onSelectCategory(null)}>

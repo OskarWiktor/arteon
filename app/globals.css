@@ -36,3 +36,31 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+p {
+  @apply text-gray-800 text-balance text-base md:text-lg leading-relaxed;
+}
+
+h1 {
+  @apply text-5xl font-semibold text-balance md:text-6xl text-gray-900;
+}
+
+h2 {
+  @apply text-2xl font-semibold text-balance md:text-3xl text-gray-900;
+}
+
+h3 {
+  @apply text-2xl font-semibold text-balance md:text-3xl text-gray-900;
+}
+
+h4 {
+  @apply text-xl font-semibold text-balance md:text-2xl text-gray-900;
+}
+
+h5 {
+  @apply text-lg font-semibold text-balance md:text-xl text-gray-900;
+}
+ 
+h6 {
+  @apply text-base font-semibold text-balance md:text-lg text-gray-900;
+}

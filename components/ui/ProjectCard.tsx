@@ -16,8 +16,8 @@ export default function ProjectCard({ project }: Props) {
       </div>
 
       <div className="mx-4 my-2 flex flex-col">
-        <h3 className="text-lg font-semibold text-gray-900 md:text-xl">{project.title}</h3>
-        <p className="text-sm text-balance text-gray-700 md:text-base">{project.short}</p>
+        <h6>{project.title}</h6>
+        <p>{project.short}</p>
       </div>
     </Link>
   );

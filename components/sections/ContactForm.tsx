@@ -87,7 +87,7 @@ export default function ContactForm() {
         <Button variant="accent">Wyślij</Button>
 
         {formStatus === 'error' && <p className="mt-2 text-red-700">Coś poszło nie tak. Spróbuj ponownie.</p>}
-        {formStatus === 'success' && <p className="mt-2 text-[var(--color-accent)]">Wiadomość wysłana! Dziękuję.</p>}
+        {formStatus === 'success' && <p className="mt-2 text-amber-500">Wiadomość wysłana! Dziękuję.</p>}
       </form>
     </Wrapper>
   );

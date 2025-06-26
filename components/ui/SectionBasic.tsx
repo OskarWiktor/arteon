@@ -33,11 +33,11 @@ export default function SectionBasic({ title, description, imageSrc, imageAlt = 
         <div className="m-auto w-full lg:w-1/2">
           <SlideInOnView direction={variant}>
             <div className={`flex flex-col py-6 md:py-8 lg:py-8 ${variant === 'right' ? 'px-4 md:pl-6' : 'px-4 md:pr-6'}`} role="group">
-              <h3 className="text-3xl leading-tight font-semibold text-balance text-gray-900" tabIndex={0}>
+              <h3 tabIndex={0}>
                 {title}
               </h3>
               {description && (
-                <p className="mt-2 leading-relaxed text-balance text-gray-800 md:mt-4 md:text-lg" tabIndex={0}>
+                <p className="mt-2 md:mt-4 md:text-lg" tabIndex={0}>
                   {description}
                 </p>
               )}

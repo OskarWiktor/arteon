@@ -35,10 +35,10 @@ export default function Page() {
                 {number}
               </span>
             </div>
-            <h3 id={`step-title-${index}`} className="mt-4 mb-4 w-fit border-b border-b-amber-500 text-2xl font-semibold text-balance text-gray-900 capitalize" tabIndex={0}>
+            <h4 id={`step-title-${index}`} className="mt-4 mb-4 w-fit border-b border-b-amber-500 capitalize" tabIndex={0}>
               {title}
-            </h3>
-            <p id={`step-desc-${index}`} className="text-balance text-gray-800 md:text-lg" tabIndex={0}>
+            </h4>
+            <p id={`step-desc-${index}`} tabIndex={0}>
               {description}
             </p>
           </article>

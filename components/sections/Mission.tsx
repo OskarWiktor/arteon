@@ -37,10 +37,10 @@ export default function Mission() {
       renderItem={({ imageAlt, imageSrc, content, border }, index) => (
         <article role="group" aria-labelledby={`mission-title-${index}`} aria-describedby={`mission-desc-${index}`} tabIndex={0} className="flex flex-col py-2">
           <Image src={imageSrc} width={60} height={60} alt={imageAlt} />
-          <h3 id={`mission-title-${index}`} className={`mt-2 mb-4 w-fit border-b-2 text-2xl font-semibold text-balance text-gray-900 capitalize ${border}`} tabIndex={0}>
+          <h4 id={`mission-title-${index}`} className={`mt-2 mb-4 w-fit border-b-2 capitalize ${border}`} tabIndex={0}>
             {imageAlt}
-          </h3>
-          <p id={`mission-desc-${index}`} className="text-balance text-gray-800 md:text-lg" tabIndex={0}>
+          </h4>
+          <p id={`mission-desc-${index}`}  tabIndex={0}>
             {content}
           </p>
         </article>

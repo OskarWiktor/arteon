@@ -58,9 +58,9 @@ export default function HeroBanner({
         <div className={`my-auto flex w-full flex-col px-4 md:px-8 ${alignmentClass}`} role="group">
           <SlideInOnView>
             {subtitle && (
-              <p className="text-sm text-balance text-gray-700 italic md:text-base" tabIndex={0}>
+              <span className="italic" tabIndex={0}>
                 {subtitle}
-              </p>
+              </span>
             )}
 
             {(buttonTopOne || buttonTopTwo || buttonTopThree || buttonTopFour) && (
@@ -80,12 +80,12 @@ export default function HeroBanner({
               </div>
             )}
 
-            <h1 className="mt-4 text-5xl font-semibold text-balance md:text-6xl lg:mt-6" tabIndex={0}>
+            <h1 className="mt-4 lg:mt-6" tabIndex={0}>
               {title}
             </h1>
 
             {description && (
-              <p className="my-2 text-base text-balance text-gray-800 md:my-4 md:text-xl" tabIndex={0}>
+              <p className="my-2 md:my-4" tabIndex={0}>
                 {description}
               </p>
             )}
