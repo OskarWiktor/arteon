@@ -1,25 +1,35 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, useMemo } from 'react';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 
 import Wrapper from '../ui/Wrapper';
 import ProjectCard from '../ui/ProjectCard';
-
-import allProjects from '@/data/projects.json';
+import allProjectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
 import SlideInOnView from '../animations/SlideInOnView';
 
-const projects = [...(allProjects.projects as Project[])].sort(() => Math.random() - 0.5).slice(0, 7);
+type Props = {
+  projects?: Project[];
+  max?: number;
+  title?: string;
+};
 
-export default function ProjectsOverview() {
+export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Projekty' }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [maxSlides, setMaxSlides] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
+  const [isScrollable, setIsScrollable] = useState(false);
+
+  const defaultProjects = useMemo(() => {
+    return [...(allProjectsData.projects as Project[])].sort(() => Math.random() - 0.5).slice(0, max);
+  }, [max]);
+
+  const finalProjects = projects ?? defaultProjects;
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollRef.current || !cardWidth) return;
@@ -38,12 +48,12 @@ export default function ProjectsOverview() {
       const newCardWidth = card.offsetWidth + gap;
 
       setCardWidth(newCardWidth);
-
       const totalWidth = container.scrollWidth;
       const visibleWidth = container.clientWidth;
       const slides = Math.ceil((totalWidth - visibleWidth) / newCardWidth) + 1;
 
       setMaxSlides(slides);
+      setIsScrollable(totalWidth > visibleWidth + 4);
     };
 
     const handleScroll = () => {
@@ -60,12 +70,12 @@ export default function ProjectsOverview() {
       container?.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', update);
     };
-  }, [cardWidth]);
+  }, [cardWidth, finalProjects]);
 
   return (
     <Wrapper>
       <motion.section
-        className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-8"
+        className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -73,36 +83,40 @@ export default function ProjectsOverview() {
         role="region"
       >
         <SlideInOnView>
-          <h2 className="text-2xl font-semibold text-gray-900 md:text-3xl">Nasze Projekty</h2>
+          <h2>{title}</h2>
         </SlideInOnView>
 
         <div className="relative">
-          <button
-            onClick={() => scroll('left')}
-            className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
-            aria-label="Przesuń w lewo"
-          >
-            <RiArrowLeftSLine className="h-6 w-6" />
-          </button>
+          {isScrollable && (
+            <button
+              onClick={() => scroll('left')}
+              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
+              aria-label="Przesuń w lewo"
+            >
+              <RiArrowLeftSLine className="h-6 w-6" />
+            </button>
+          )}
 
           <div ref={scrollRef} className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth py-4" aria-label="Karuzela z projektami" tabIndex={0}>
-            {projects.map((project, i) => (
+            {finalProjects.map((project, i) => (
               <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[300px] md:min-w-[350px]">
                 <ProjectCard project={project} />
               </div>
             ))}
           </div>
 
-          <button
-            onClick={() => scroll('right')}
-            className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
-            aria-label="Przesuń w prawo"
-          >
-            <RiArrowRightSLine className="h-6 w-6" />
-          </button>
+          {isScrollable && (
+            <button
+              onClick={() => scroll('right')}
+              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
+              aria-label="Przesuń w prawo"
+            >
+              <RiArrowRightSLine className="h-6 w-6" />
+            </button>
+          )}
         </div>
 
-        {maxSlides > 1 && (
+        {isScrollable && maxSlides > 1 && (
           <div className="mt-0 flex justify-center gap-2 md:mt-2 lg:mt-4" role="tablist" aria-label="Nawigacja karuzeli projektów">
             {Array.from({ length: maxSlides }).map((_, i) => (
               <button
@@ -113,7 +127,9 @@ export default function ProjectsOverview() {
                     scrollRef.current.scrollTo({ left: i * cardWidth, behavior: 'smooth' });
                   }
                 }}
-                className={`h-2 w-2 cursor-pointer rounded-full transition duration-300 focus-visible:outline-black ${i === currentSlide ? 'bg-amber-500 hover:bg-amber-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+                className={`h-2 w-2 cursor-pointer rounded-full transition duration-300 focus-visible:outline-black ${
+                  i === currentSlide ? 'bg-amber-500 hover:bg-amber-700' : 'bg-gray-300 hover:bg-gray-500'
+                }`}
               />
             ))}
           </div>

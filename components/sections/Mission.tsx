@@ -40,7 +40,7 @@ export default function Mission() {
           <h4 id={`mission-title-${index}`} className={`mt-2 mb-4 w-fit border-b-2 capitalize ${border}`} tabIndex={0}>
             {imageAlt}
           </h4>
-          <p id={`mission-desc-${index}`}  tabIndex={0}>
+          <p id={`mission-desc-${index}`} tabIndex={0}>
             {content}
           </p>
         </article>

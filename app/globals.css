@@ -38,29 +38,29 @@ body {
 }
 
 p {
-  @apply text-gray-800 text-balance text-base md:text-lg leading-relaxed;
+  @apply text-base leading-relaxed text-balance text-gray-800 md:text-lg;
 }
 
 h1 {
-  @apply text-5xl font-semibold text-balance md:text-6xl text-gray-900;
+  @apply text-5xl font-semibold text-balance text-gray-900 md:text-6xl;
 }
 
 h2 {
-  @apply text-2xl font-semibold text-balance md:text-3xl text-gray-900;
+  @apply text-2xl font-semibold text-balance text-gray-900 md:text-3xl;
 }
 
 h3 {
-  @apply text-2xl font-semibold text-balance md:text-3xl text-gray-900;
+  @apply text-2xl font-semibold text-balance text-gray-900 md:text-3xl;
 }
 
 h4 {
-  @apply text-xl font-semibold text-balance md:text-2xl text-gray-900;
+  @apply text-xl font-semibold text-balance text-gray-900 md:text-2xl;
 }
 
 h5 {
-  @apply text-lg font-semibold text-balance md:text-xl text-gray-900;
+  @apply text-lg font-semibold text-balance text-gray-900 md:text-xl;
 }
- 
+
 h6 {
-  @apply text-base font-semibold text-balance md:text-lg text-gray-900;
+  @apply text-base font-semibold text-balance text-gray-900 md:text-lg;
 }

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import ContactForm from '@/components/sections/ContactForm';
 import HeroBaner from '@/components/sections/HeroBaner';
@@ -27,7 +27,7 @@ export default function Page() {
       />
       <SectionFour
         items={HowWeWorkItems}
-        variant='smallMargin'
+        variant="smallMargin"
         renderItem={({ number, title, description }, index) => (
           <article role="group" aria-labelledby={`step-title-${index}`} aria-describedby={`step-desc-${index}`} tabIndex={0} className="flex flex-col py-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200">

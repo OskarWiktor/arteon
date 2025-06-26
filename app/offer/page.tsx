@@ -1,10 +1,20 @@
 'use client';
 
 import HeroBaner from '@/components/sections/HeroBaner';
+import ProjectsOverview from '@/components/sections/ProjectsOverview';
 import SectionFour from '@/components/ui/SectionFour';
 import SectionInfo from '@/components/ui/SectionInfo';
 
 import Image from 'next/image';
+
+import allProjectsData from '@/data/projects.json';
+import type { Project } from '@/types/project';
+
+const allProjects = allProjectsData.projects as Project[];
+
+const selectedSlugs = ['pilka-nozna-pl', 'trilllizo', 'meridol-accessibility'];
+
+const selectedProjects = allProjects.filter((p) => selectedSlugs.includes(p.slug));
 
 const missionItems = [
   {
@@ -61,6 +71,7 @@ export default function Page() {
           </article>
         )}
       />
+      <ProjectsOverview projects={selectedProjects} title="Test projektów wybranych" />
     </>
   );
 }
