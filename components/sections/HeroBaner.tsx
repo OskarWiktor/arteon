@@ -85,9 +85,9 @@ export default function HeroBanner({
             </h1>
 
             {description && (
-              <p className="my-2 md:my-4" tabIndex={0}>
+              <h5 className="my-2 md:my-4" tabIndex={0}>
                 {description}
-              </p>
+              </h5>
             )}
 
             {(buttonAccent || buttonSecond) && (

@@ -12,7 +12,7 @@ import type { Project } from '@/types/project';
 
 const allProjects = allProjectsData.projects as Project[];
 
-const selectedSlugs = ['pilka-nozna-pl', 'trilllizo', 'meridol-accessibility'];
+const selectedSlugs = ['pilka-nozna-pl', 'trilllizo'];
 
 const selectedProjects = allProjects.filter((p) => selectedSlugs.includes(p.slug));
 

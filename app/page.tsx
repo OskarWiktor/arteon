@@ -3,86 +3,100 @@ import HowWeWork from '@/components/sections/HowWeWork';
 import ProjectsOverview from '@/components/sections/ProjectsOverview';
 import TechStack from '@/components/sections/TechStack';
 import SectionBasic from '@/components/ui/SectionBasic';
+import SectionInfo from '@/components/ui/SectionInfo';
 
 export default function Home() {
   return (
     <>
       <HeroBaner
-        title="Lorem Ipsum Lorem Ipsum"
-        description="njkbasdka sbdjabsd bjkbsajdb"
+        title="Zbuduj markę, która rośnie i sprzedaje"
+        description="Od pomysłu do rezultatu — pomagamy firmom działać skutecznie w świecie online."
         backgroundImage="/assets/test.jpg"
-        buttonTopOne="Strony i sklepy"
-        buttonTopOneLink="#strony-i-sklepy"
-        buttonTopTwo="Aplikacje"
-        buttonTopTwoLink="#aplikacje"
-        buttonTopThree="Grafika"
-        buttonTopThreeLink="#grafika"
+        buttonTopOne="WWW"
+        buttonTopOneLink="#www"
+        buttonTopTwo="Treść"
+        buttonTopTwoLink="#tresc"
+        buttonTopThree="Design"
+        buttonTopThreeLink="#design"
         buttonTopFour="Marketing"
         buttonTopFourLink="#marketing"
       />
 
-      <ProjectsOverview />
+      <SectionInfo 
+        title='Arteon — elastyczny partner dla Twojej firmy'
+        description='Budujesz od zera, rozwijasz, skalujesz? Porządkujemy każdy etap. Tworzymy spójny plan, który przyciąga właściwych klientów i pozwala Twojej marce rosnąć.'
+      />
+
+      <ProjectsOverview title='Realizacje'/>
+
       <SectionBasic
-        title="Strony internetowe dopasowane do Ciebie"
-        description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
+        title="Witryna — fundament Twojej obecności"
+        description="Tworzymy strony, sklepy i aplikacje, które prowadzą Twojego klienta krok po kroku — od pierwszego kliknięcia do zakupu."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
-        id="strony-i-sklepy"
+        id="www"
       >
-        <ul className="list-disc pl-5 text-gray-700">
-          <li>Indywidualny projekt graficzny</li>
-          <li>Pełna optymalizacja SEO i dostępność</li>
-          <li>Integracja z CMS lub e-commerce</li>
+        <ul className="list-disc pl-5">
+          <li>Analiza branży i konkurencji w cenie</li>
+          <li>Projekt dopasowany do realnych zachowań klientów</li>
+          <li>Witryna przygotowana na skalowanie i rozwój</li>
+          <li>Stały kontakt i pełna przejrzystość na każdym etapie</li>
         </ul>
       </SectionBasic>
+
       <SectionBasic
         variant="left"
-        title="Strony internetowe dopasowane do Ciebie"
-        description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
+        title="Treść — komunikat, który przyciąga uwagę i sprzedaje"
+        description="Budujemy treści, które pracują dla algorytmów, ale mówią do ludzi. Pomagamy stworzyć przekazać, by Twoja marka żyła nie tylko w Google, ale i w pamięci klientów."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
-        id="aplikacje"
+        id="tresc"
       >
-        <ul className="list-disc pl-5 text-gray-800 md:text-lg">
-          <li>Indywidualny projekt graficzny</li>
-          <li>Pełna optymalizacja SEO i dostępność</li>
-          <li>Integracja z CMS lub e-commerce</li>
+        <ul className="list-disc pl-5">
+          <li>Analiza słów kluczowych i potrzeb klientów</li>
+          <li>Optymalizację tekstów pod wyszukiwarki</li>
+          <li>Gotowe teksty: od artykułów po posty w social media</li>
         </ul>
       </SectionBasic>
+
       <HowWeWork />
+
       <SectionBasic
-        title="Strony internetowe dopasowane do Ciebie"
-        description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
+        title="Design — wygląd, który działa jak magnez"
+        description="Projektujemy system wizualny, który przyciąga właściwych klientów, buduje zaufanie i odróżnia Twoją markę na tle innych. Psychologia, estetyka, spójność — z myślą o długofalowym rozwoju."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
-        id="grafika"
+        id="design"
       >
-        <ul className="list-disc pl-5 text-gray-800 md:text-lg">
-          <li>Indywidualny projekt graficzny</li>
-          <li>Pełna optymalizacja SEO i dostępność</li>
-          <li>Integracja z CMS lub e-commerce</li>
+        <ul className="list-disc pl-5">
+          <li>Indywidualny projekt graficzny (zero szablonów)</li>
+          <li>Pełna identyfikacja: logo, typografia, paleta barw</li>
+          <li>Materiały spójne online i offline</li>
+          <li>Ulepszenia, które zwiększają konwersję</li>
         </ul>
       </SectionBasic>
+
       <SectionBasic
         variant="left"
-        title="Strony internetowe dopasowane do Ciebie"
-        description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
+        title="Marketing — kropla drąży skałę, my wskazujemy jej kierunek"
+        description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdraażamy rozwiązania — krok po kroku."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
         id="marketing"
       >
-        <ul className="list-disc pl-5 text-gray-700">
-          <li>Indywidualny projekt graficzny</li>
-          <li>Pełna optymalizacja SEO i dostępność</li>
-          <li>Integracja z CMS lub e-commerce</li>
+        <ul className="list-disc pl-5">
+          <li>Działania dopasowane do Twojego wymarzonego klienta</li>
+          <li>Kampanie reklamowe w Google i social mediach</li>
+          <li>Prowadzenie i rozwój profili na IG, FB, LinkedIn</li>
+          <li>Analiza wyników i rekomendacje dalszych kroków</li>
         </ul>
       </SectionBasic>
       <TechStack />
