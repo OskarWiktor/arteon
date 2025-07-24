@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 
-import Filters from '@/components/sections/Filters';
-import HeroBaner from '@/components/sections/HeroBaner';
-import ProjectsGrid from '@/components/sections/ProjectsGrid';
+import Filters from '@/components/components/Filters';
+import HeroBaner from '@/components/components/HeroBaner';
+import ProjectsGrid from '@/components/components/ProjectsGrid';
 import SectionBasic from '@/components/ui/SectionBasic';
 
 export default function Page() {
@@ -12,23 +12,17 @@ export default function Page() {
 
   return (
     <>
-      <HeroBaner title="Lorem Ipsum Lorem Ipsum" description="njkbasdka sbdjabsd bjkbsajdb" />
+      <HeroBaner title="Projekty, które rosną razem z marką" />
       <Filters selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
       <ProjectsGrid selectedCategory={selectedCategory} />
       <SectionBasic
-        title="Strony internetowe dopasowane do Ciebie"
-        description="Tworzymy witryny, które działają i wyglądają. Łączymy estetykę, strategię i wydajność, by Twoja marka zyskała nową jakość."
+        title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
+        description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
         imageSrc="/assets/test.jpg"
-        imageAlt="Projektowanie stron"
-        buttonText="Zobacz ofertę"
-        buttonLink="/oferta"
-      >
-        <ul className="list-disc pl-5 text-gray-800 md:text-lg">
-          <li>Indywidualny projekt graficzny</li>
-          <li>Pełna optymalizacja SEO i dostępność</li>
-          <li>Integracja z CMS lub e-commerce</li>
-        </ul>
-      </SectionBasic>
+        imageAlt="Zaproszenie do kontaktu"
+        buttonText="Przejdź do formularza"
+        buttonLink="/kontakt"
+      ></SectionBasic>
     </>
   );
 }

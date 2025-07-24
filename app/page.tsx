@@ -1,7 +1,7 @@
-import HeroBaner from '@/components/sections/HeroBaner';
-import HowWeWork from '@/components/sections/HowWeWork';
-import ProjectsOverview from '@/components/sections/ProjectsOverview';
-import TechStack from '@/components/sections/TechStack';
+import HeroBaner from '@/components/components/HeroBaner';
+import HowWeWork from '@/components/components/HowWeWork';
+import ProjectsOverview from '@/components/components/ProjectsOverview';
+import TechStack from '@/components/components/TechStack';
 import SectionBasic from '@/components/ui/SectionBasic';
 import SectionInfo from '@/components/ui/SectionInfo';
 
@@ -22,12 +22,12 @@ export default function Home() {
         buttonTopFourLink="#marketing"
       />
 
-      <SectionInfo 
-        title='Arteon — elastyczny partner dla Twojej firmy'
-        description='Budujesz od zera, rozwijasz, skalujesz? Porządkujemy każdy etap. Tworzymy spójny plan, który przyciąga właściwych klientów i pozwala Twojej marce rosnąć.'
+      <SectionInfo
+        title="Arteon — elastyczny partner dla Twojej firmy"
+        description="Budujesz od zera, rozwijasz, skalujesz? Porządkujemy każdy etap. Tworzymy spójny plan, który przyciąga właściwych klientów i pozwala Twojej marce rosnąć."
       />
 
-      <ProjectsOverview title='Realizacje'/>
+      <ProjectsOverview title="Realizacje" />
 
       <SectionBasic
         title="Witryna — fundament Twojej obecności"
@@ -49,7 +49,7 @@ export default function Home() {
       <SectionBasic
         variant="left"
         title="Treść — komunikat, który przyciąga uwagę i sprzedaje"
-        description="Budujemy treści, które pracują dla algorytmów, ale mówią do ludzi. Pomagamy stworzyć przekazać, by Twoja marka żyła nie tylko w Google, ale i w pamięci klientów."
+        description="Budujemy treści, które pracują dla algorytmów, ale mówią do ludzi. Pomagamy stworzyć przekaz, by Twoja marka żyła nie tylko w Google, ale i w pamięci klientów."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
         buttonText="Zobacz ofertę"
@@ -62,6 +62,14 @@ export default function Home() {
           <li>Gotowe teksty: od artykułów po posty w social media</li>
         </ul>
       </SectionBasic>
+
+      <SectionInfo title="Dlaczego klienci wybierają Arteon?" description="Bo działamy jak system. Łączymy estetykę z strategią i procesem, który naprawdę działa.">
+        <ul className="list-disc pl-5">
+          <li>Od analizy po marketing — jeden partner</li>
+          <li>Indywidualne podejście — zero szablonów</li>
+          <li>Transparentność, mentoring i zrozumienie</li>
+        </ul>
+      </SectionInfo>
 
       <HowWeWork />
 
@@ -84,8 +92,8 @@ export default function Home() {
 
       <SectionBasic
         variant="left"
-        title="Marketing — kropla drąży skałę, my wskazujemy jej kierunek"
-        description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdraażamy rozwiązania — krok po kroku."
+        title="Marketing — kropla drąży skałę"
+        description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdrażamy rozwiązania — krok po kroku."
         imageSrc="/assets/test.jpg"
         imageAlt="Projektowanie stron"
         buttonText="Zobacz ofertę"
@@ -99,6 +107,7 @@ export default function Home() {
           <li>Analiza wyników i rekomendacje dalszych kroków</li>
         </ul>
       </SectionBasic>
+
       <TechStack />
     </>
   );

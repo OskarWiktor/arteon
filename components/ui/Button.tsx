@@ -5,9 +5,10 @@ interface ButtonProps {
   variant?: 'normal' | 'accent' | 'minimal';
   size?: 'small' | 'medium' | 'big';
   onClick?: () => void;
+  disabled?: boolean;
 }
 
-export default function Button({ children, variant = 'normal', size = 'medium', onClick }: ButtonProps) {
+export default function Button({ children, variant = 'normal', size = 'medium', onClick, disabled }: ButtonProps) {
   let sizeClass, variantClass;
 
   switch (size) {
@@ -35,7 +36,11 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   }
 
   return (
-    <button onClick={onClick} className={`flex w-fit cursor-pointer items-center rounded-md text-sm text-gray-900 md:text-base ${sizeClass} ${variantClass}`}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className={`flex w-fit items-center rounded-md text-sm text-gray-900 md:text-base ${sizeClass} ${variantClass} ${disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'} `}
+    >
       {children}
     </button>
   );

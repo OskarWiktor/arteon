@@ -61,14 +61,16 @@ export default function ContactForm() {
           <label htmlFor="subject" className="font-semibold text-gray-800">
             Temat
           </label>
-          <input
-            id="subject"
-            name="Temat"
-            placeholder="Interesuje mnie strona firmy..."
-            type="text"
-            required
-            className="w-full border-b border-gray-300 bg-transparent px-2 py-1.5 text-gray-700 transition focus:outline-none"
-          />
+          <select id="topic" name="Zakres współpracy" required defaultValue="" className="w-full border-b border-gray-300 bg-transparent px-2 py-1.5 text-gray-700 transition focus:outline-none">
+            <option value="" disabled>
+              Wybierz temat
+            </option>
+            <option value="Strona lub sklep">Strona, sklep, aplikacja</option>
+            <option value="Content i SEO">Treść, artykuły, optymalizacja</option>
+            <option value="Design">Identyfikacja wizualna, grafika</option>
+            <option value="Marketing">Marketing, reklamy, social media</option>
+            <option value="Inne">Inny temat</option>
+          </select>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -86,8 +88,8 @@ export default function ContactForm() {
 
         <Button variant="accent">Wyślij</Button>
 
-        {formStatus === 'error' && <p className="mt-2 text-red-700">Coś poszło nie tak. Spróbuj ponownie.</p>}
-        {formStatus === 'success' && <p className="mt-2 text-amber-500">Wiadomość wysłana! Dziękuję.</p>}
+        {formStatus === 'error' && <span className="text-red-700">Coś poszło nie tak. Sprawdź poprawność danych i próbuj ponownie</span>}
+        {formStatus === 'success' && <span className="text-amber-500">Wiadomość wysłana! Już szykujemy odpowiedź</span>}
       </form>
     </Wrapper>
   );

@@ -1,19 +1,9 @@
 'use client';
 
 import HeroBaner from '@/components/components/HeroBaner';
-import ProjectsOverview from '@/components/components/ProjectsOverview';
 import SectionInfo from '@/components/ui/SectionInfo';
-
-import allProjectsData from '@/data/projects.json';
-import type { Project } from '@/types/project';
-import Mission from '@/components/components/Mission';
+import Calculator from '@/components/components/Calculator';
 import SectionBasic from '@/components/ui/SectionBasic';
-
-const allProjects = allProjectsData.projects as Project[];
-
-const selectedSlugs = ['pilka-nozna-pl', 'trilllizo'];
-
-const selectedProjects = allProjects.filter((p) => selectedSlugs.includes(p.slug));
 
 export default function Page() {
   return (
@@ -28,8 +18,7 @@ export default function Page() {
         buttonTopFour="test4"
       />
       <SectionInfo title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
-      <Mission />
-      <ProjectsOverview projects={selectedProjects} title="Test projektów wybranych" />
+      <Calculator />
       <SectionBasic
         title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
         description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"

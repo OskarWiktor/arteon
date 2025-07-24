@@ -37,7 +37,7 @@ body {
   color: var(--foreground);
 }
 
-p, 
+p,
 li {
   @apply text-base leading-relaxed text-balance text-gray-800 md:text-lg;
 }
