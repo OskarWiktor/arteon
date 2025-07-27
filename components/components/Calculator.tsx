@@ -1,4 +1,3 @@
-// Calculator.tsx
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
@@ -8,7 +7,6 @@ import CalculatorResult from '../ui/CalculatorResult';
 
 import type { Step } from '@/types/calculator';
 import { baseSteps, getStepsByType } from '@/data/calculator';
-import { includedPerPath } from '@/data/calculator/includedPerPath';
 
 export default function Calculator() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -25,38 +23,29 @@ export default function Calculator() {
   const step = activeSteps[currentStep];
   const sel = selections[currentStep] || [];
   const hasSelection = sel.length > 0;
-  const disableNext = Boolean(
-    step?.required &&
-      !hasSelection &&
-      currentStep < activeSteps.length - 1
-  );
+  const disableNext = Boolean(step?.required && !hasSelection && currentStep < activeSteps.length - 1);
 
   useEffect(() => {
     if (!step) return;
     const branches: Step[] = [];
-    ;(selections[currentStep] || []).forEach((val) => {
+    (selections[currentStep] || []).forEach((val) => {
       const opt = step.options.find((o) => o.value === val);
       if (opt?.branches)
         branches.push(
           ...opt.branches.map((b) => ({
             ...b,
             metaBranchParent: `${step.title}-${val}`,
-          }))
+          })),
         );
       if (step.branches?.[val])
         branches.push(
           ...step.branches[val].map((b) => ({
             ...b,
             metaBranchParent: `${step.title}-${val}`,
-          }))
+          })),
         );
     });
-    const filtered = activeSteps.filter(
-      (_, idx) =>
-        idx <= currentStep ||
-        !activeSteps[idx].metaBranchParent
-          ?.startsWith(step.title)
-    );
+    const filtered = activeSteps.filter((_, idx) => idx <= currentStep || !activeSteps[idx].metaBranchParent?.startsWith(step.title));
     if (branches.length) {
       filtered.splice(
         currentStep + 1,
@@ -64,20 +53,17 @@ export default function Calculator() {
         ...branches.map((b) => ({
           ...b,
           title: `BRANCH: ${b.title}`,
-        }))
+        })),
       );
     }
     setActiveSteps(filtered);
   }, [selections, currentStep]);
 
-  const parseInputValue = useCallback(
-    (val: string, key: string): number | null => {
-      if (!val.startsWith(`${key}:`)) return null;
-      const num = parseInt(val.split(':')[1], 10);
-      return isNaN(num) ? 0 : num;
-    },
-    []
-  );
+  const parseInputValue = useCallback((val: string, key: string): number | null => {
+    if (!val.startsWith(`${key}:`)) return null;
+    const num = parseInt(val.split(':')[1], 10);
+    return isNaN(num) ? 0 : num;
+  }, []);
 
   const calculateEstimate = useCallback(() => {
     let nonProductTotal = 0,
@@ -86,61 +72,37 @@ export default function Calculator() {
       variantMultiplier = 1;
 
     activeSteps.forEach((st, idx) => {
-      ;(selections[idx] || []).forEach((val) => {
+      (selections[idx] || []).forEach((val) => {
         if (st.input) {
           const qty = parseInputValue(val, st.input.key);
           if (qty !== null) {
-            if (st.input.key === 'custom-product-amount')
-              productTotal += qty * st.input.unitPrice;
+            if (st.input.key === 'custom-product-amount') productTotal += qty * st.input.unitPrice;
             else nonProductTotal += qty * st.input.unitPrice;
             return;
           }
         }
         const opt = st.options.find((o) => o.value === val);
         if (!opt) return;
-        if (
-          st.input?.key === 'custom-product-amount' &&
-          opt.price
-        )
-          productTotal += opt.price;
-        else if (
-          st.title
-            .toLowerCase()
-            .includes('warianty produktów') &&
-          opt.multiplier
-        )
-          variantMultiplier *= opt.multiplier;
+        if (st.input?.key === 'custom-product-amount' && opt.price) productTotal += opt.price;
+        else if (st.title.toLowerCase().includes('warianty produktów') && opt.multiplier) variantMultiplier *= opt.multiplier;
         else {
           if (opt.price) nonProductTotal += opt.price;
-          if (opt.multiplier)
-            nonProductMultiplier *= opt.multiplier;
+          if (opt.multiplier) nonProductMultiplier *= opt.multiplier;
         }
       });
     });
 
-    setTotalPrice(
-      nonProductTotal * nonProductMultiplier +
-        productTotal * variantMultiplier
-    );
+    setTotalPrice(nonProductTotal * nonProductMultiplier + productTotal * variantMultiplier);
     setShowResult(true);
   }, [activeSteps, selections, parseInputValue]);
 
   const handleOptionClick = (optValue: string) => {
     setError(null);
     const prev = selections[currentStep] || [];
-    const next =
-      step?.type === 'multi'
-        ? prev.includes(optValue)
-          ? prev.filter((v) => v !== optValue)
-          : [...prev, optValue]
-        : [optValue];
+    const next = step?.type === 'multi' ? (prev.includes(optValue) ? prev.filter((v) => v !== optValue) : [...prev, optValue]) : [optValue];
     setSelections((s) => ({ ...s, [currentStep]: next }));
     if (currentStep === 0) {
-      setActiveSteps(
-        next[0]
-          ? [baseSteps[0], ...getStepsByType(next[0])]
-          : baseSteps
-      );
+      setActiveSteps(next[0] ? [baseSteps[0], ...getStepsByType(next[0])] : baseSteps);
     }
   };
 
@@ -149,13 +111,10 @@ export default function Calculator() {
     if (!step?.input) return;
     const key = step.input.key;
     const prev = selections[currentStep] || [];
-    const filtered = prev.filter(
-      (v) => !v.startsWith(`${key}:`)
-    );
+    const filtered = prev.filter((v) => !v.startsWith(`${key}:`));
     setSelections((s) => ({
       ...s,
-      [currentStep]:
-        val === '' ? filtered : [...filtered, `${key}:${val}`],
+      [currentStep]: val === '' ? filtered : [...filtered, `${key}:${val}`],
     }));
   };
 
@@ -179,10 +138,8 @@ export default function Calculator() {
     }
   };
 
-  const pathKey = selections[0]?.[0] as keyof typeof includedPerPath;
-
   return (
-    <Wrapper className="py-8 md:mt-16 lg:mt-24">
+    <Wrapper className="mt-12 px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0">
       {!showResult && step ? (
         <CalculatorSteps
           step={step}
@@ -205,7 +162,6 @@ export default function Calculator() {
             setTotalPrice(0);
             setShowResult(false);
           }}
-          pathKey={pathKey}
         />
       )}
     </Wrapper>

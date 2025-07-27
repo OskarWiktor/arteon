@@ -39,7 +39,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`flex w-fit items-center rounded-md text-sm text-gray-900 md:text-base ${sizeClass} ${variantClass} ${disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'} `}
+      className={`flex w-fit items-center rounded-md text-sm text-gray-900 hover:shadow-lg md:text-base ${sizeClass} ${variantClass} ${disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'} `}
     >
       {children}
     </button>

@@ -1,10 +1,9 @@
-// contentSteps.ts
 import type { Step } from '@/types/calculator';
 
 export const contentSteps: Step[] = [
   {
     title: 'Jakie treści chcesz stworzyć?',
-    tooltip: 'Możesz wybrać więcej niż jeden typ — dopasujemy styl i strukturę.',
+    tooltip: 'Możesz wybrać więcej niż jeden typ',
     required: true,
     type: 'multi',
     options: [
@@ -12,103 +11,86 @@ export const contentSteps: Step[] = [
         label: 'Artykuły blogowe / eksperckie',
         value: 'articles',
         price: 0,
-        tooltip: 'Teksty, które budują widoczność i pozycję eksperta.',
+        icon: 'FiFileText',
       },
       {
         label: 'Teksty na stronę internetową',
         value: 'web-copy',
         price: 0,
-        tooltip: 'Treści do sekcji typu: O nas, oferta, kontakt.',
+        icon: 'FiGlobe',
       },
       {
         label: 'Treści do social mediów',
         value: 'social',
         price: 0,
-        tooltip: 'Posty dopasowane do Twoich kanałów.',
+        icon: 'FiShare2',
       },
       {
         label: 'Opisy produktów',
         value: 'products',
         price: 0,
-        tooltip: 'Zoptymalizowane teksty prezentujące ofertę.',
+        icon: 'FiTag',
       },
     ],
     branches: {
       articles: [
         {
-          title: 'Jaki będzie cel artykułów?',
-          tooltip: 'Określenie celu pozwala dobrać styl i długość treści.',
-          required: true,
-          type: 'multi',
-
-          options: [
-            { label: 'Widoczność w Google', value: 'seo', price: 0, tooltip: 'Treści pisane z myślą o wyszukiwarkach.' },
-            { label: 'Pozycjonowanie marki eksperta', value: 'authority', price: 0, tooltip: 'Treści budujące zaufanie.' },
-            { label: 'Sprzedaż / leady', value: 'sales', price: 0, tooltip: 'Treści kierujące do działania.' },
-            { label: 'Edukacja i storytelling', value: 'education', price: 0, tooltip: 'Dzielenie się wiedzą i historią marki.' },
-            { label: 'Inny cel', value: 'goal-other', price: 0, tooltip: 'Opisz swój własny cel.' },
-          ],
-        },
-        {
           title: 'Ile artykułów potrzebujesz?',
-          tooltip: 'Podaj orientacyjną liczbę lub skorzystaj z opcji dokładnej.',
           required: true,
           options: [
-            { label: '1–3 artykuły', value: 'articles-1-3', price: 250, tooltip: 'Krótka paczka treści.' },
-            { label: '4–10 artykułów', value: 'articles-4-10', price: 800, tooltip: 'Średni pakiet treści.' },
-            { label: '10+ artykułów', value: 'articles-10plus', price: 1500, tooltip: 'Rozbudowany pakiet.' },
+            { label: '1', value: 'articles-1-3', price: 120, icon: 'FiFile' },
+            { label: '2–4', value: 'articles-4-10', price: 480, icon: 'FiFilePlus' },
+            { label: '5–10', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
+            { label: '11–20', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
+            { label: '20+', value: 'articles-60plus', price: 2800, icon: 'FiArchive' },
           ],
           input: {
-            label: 'Dokładna liczba artykułów',
+            label: 'Dokładna liczba',
             key: 'custom-article-amount',
-            unitPrice: 100,
-            tooltip: 'Wpisz dokładną liczbę, jeśli chcesz indywidualną wycenę.',
+            unitPrice: 120,
           },
         },
       ],
       'web-copy': [
         {
-          title: 'Czy potrzebujesz treści na całe strony czy na tylko nowych sekcji',
-          tooltip: '...',
+          title: 'Czy potrzebujesz treści dla całych strony czy sekcji?',
           required: true,
           options: [
-            { label: 'Strony', value: 'website', price: 400, tooltip: '...' },
-            { label: 'Sekcje', value: 'section', price: 0, tooltip: '..' },
+            { label: 'Strony', value: 'website', price: 0, icon: 'FiFileText' },
+            { label: 'Sekcje', value: 'section', price: 0, icon: 'FiLayout' },
           ],
           branches: {
             website: [
               {
-                title: 'Ile stron',
-                tooltip: '...',
+                title: 'Na ile stron potrzebujesz treści?',
                 required: true,
                 options: [
-                  { label: '1', value: 'w1', price: 0, tooltip: '...' },
-                  { label: '2-4', value: 'w24', price: 0, tooltip: '..' },
-                  { label: '5-10', value: 'w510', price: 0, tooltip: '..' },
+                  { label: '1', value: 'website-1', price: 120, icon: 'FiFile' },
+                  { label: '2-3', value: 'website-2-3', price: 360, icon: 'FiFilePlus' },
+                  { label: '4-6', value: 'website-4-6', price: 720, icon: 'FiFolder' },
+                  { label: '7-10', value: 'website-7-10', price: 1200, icon: 'FiFolderPlus' },
                 ],
                 input: {
                   key: 'custom-website-amount',
-                  label: '...',
-                  unitPrice: 40,
-                  tooltip: 'Wpisz dokładną liczbę, jeśli chcesz indywidualną wycenę.',
+                  label: 'Dokładna liczba',
+                  unitPrice: 120,
                 },
               },
             ],
             section: [
               {
-                title: 'Ile sekcji',
-                tooltip: '...',
+                title: 'Do ilu sekcji potrzebujesz treści?',
                 required: true,
                 options: [
-                  { label: '1', value: 'w1', price: 0, tooltip: '...' },
-                  { label: '2-4', value: 'w24', price: 0, tooltip: '..' },
-                  { label: '5-10', value: 'w510', price: 0, tooltip: '..' },
+                  { label: '1', value: 'section-1', price: 40, icon: 'FiFile' },
+                  { label: '2-3', value: 'section-2-3', price: 120, icon: 'FiFilePlus' },
+                  { label: '4-6', value: 'section-4-6', price: 240, icon: 'FiFolder' },
+                  { label: '7-10', value: 'section-7-10', price: 400, icon: 'FiFolderPlus' },
                 ],
                 input: {
                   key: 'custom-section-amount',
-                  label: '...',
+                  label: 'Dokładna liczba',
                   unitPrice: 40,
-                  tooltip: 'Wpisz dokładną liczbę, jeśli chcesz indywidualną wycenę.',
                 },
               },
             ],
@@ -117,49 +99,35 @@ export const contentSteps: Step[] = [
       ],
       social: [
         {
-          title: 'Na jakie platformy potrzebujesz treści?',
-          tooltip: 'Zadbamy o dopasowanie formy i tonu.',
-          required: true,
-          type: 'multi',
-          options: [
-            { label: 'Instagram / Facebook', value: 'ig-fb', price: 0, tooltip: 'Posty z grafikami i opisami.' },
-            { label: 'LinkedIn', value: 'linkedin', price: 0, tooltip: 'Treści dla biznesu i profesjonalnego odbiorcy.' },
-            { label: 'TikTok', value: 'tiktok', price: 0, tooltip: 'Koncepcje i teksty pod krótkie formy video.' },
-            { label: 'Inne', value: 'social-other', price: 0, tooltip: 'Wskaż platformę lub kanał komunikacji.' },
-          ],
-        },
-        {
-          title: 'Ile postów lub zestawów treści?',
-          tooltip: 'Określ objętość materiału.',
+          title: 'Do ilu postów mamy przygotować treści?',
           required: true,
           options: [
-            { label: '3 posty', value: 'posts-3', price: 400, tooltip: 'Podstawowy zestaw treści.' },
-            { label: '5–10 postów', value: 'posts-5-10', price: 900, tooltip: 'Średni zestaw postów.' },
-            { label: '10+ postów', value: 'posts-10plus', price: 1500, tooltip: 'Kompleksowa komunikacja.' },
+            { label: '1', value: 'post-1', price: 60, icon: 'FiMessageSquare' },
+            { label: '2-3', value: 'post-2-3', price: 180, icon: 'FiMessageCircle' },
+            { label: '4-6', value: 'post-4-6', price: 360, icon: 'FiSend' },
+            { label: '7-10', value: 'post-7-10', price: 600, icon: 'FiFeather' },
           ],
           input: {
             label: 'Dokładna liczba postów',
             key: 'custom-post-amount',
-            unitPrice: 100,
-            tooltip: 'Wpisz dokładną liczbę, jeśli chcesz indywidualną wycenę.',
+            unitPrice: 60,
           },
         },
       ],
       products: [
         {
-          title: 'Ile produktów lub usług mamy opisać?',
-          tooltip: 'Teksty dopasowane do Twojej oferty.',
+          title: 'Ile produktów mamy opisać?',
           required: true,
           options: [
-            { label: '1–5 produktów', value: 'products-1-5', price: 400, tooltip: 'Zestaw krótkich opisów.' },
-            { label: '6–15 produktów', value: 'products-6-15', price: 900, tooltip: 'Średni pakiet.' },
-            { label: '15+ produktów', value: 'products-15plus', price: 1500, tooltip: 'Duża paczka treści produktowych.' },
+            { label: '1–10', value: 'few-products', price: 400, icon: 'FiBox' },
+            { label: '11–30', value: 'mid-products', price: 1200, icon: 'FiGrid' },
+            { label: '31–60', value: 'more-products', price: 2400, icon: 'FiLayers' },
+            { label: '60+', value: 'large-products', price: 3200, icon: 'FiPackage' },
           ],
           input: {
-            label: 'Dokładna liczba produktów',
             key: 'custom-product-amount',
-            unitPrice: 80,
-            tooltip: 'Wpisz dokładną liczbę, jeśli chcesz indywidualną wycenę.',
+            label: 'Dokładna liczba produktów',
+            unitPrice: 40,
           },
         },
       ],
@@ -167,11 +135,10 @@ export const contentSteps: Step[] = [
   },
   {
     title: 'W jakich językach mają być treści?',
-    tooltip: 'Możesz wybrać jeden język — angielski podwaja cenę.',
     required: true,
     options: [
-      { label: 'Polski', value: 'lang-pl', price: 0, tooltip: 'Treści w języku polskim.' },
-      { label: 'Angielski', value: 'lang-en', multiplier: 1.2, tooltip: 'Doliczamy +100% do ceny.' },
+      { label: 'Polski', value: 'lang-pl', price: 0, icon: 'FiFlag' },
+      { label: 'Angielski', value: 'lang-en', multiplier: 1.2, icon: 'FiMessageSquare' },
     ],
   },
 ];

@@ -1,16 +1,39 @@
+import type { Metadata } from 'next';
 import HeroBaner from '@/components/components/HeroBaner';
-import HowWeWork from '@/components/components/HowWeWork';
 import ProjectsOverview from '@/components/components/ProjectsOverview';
 import TechStack from '@/components/components/TechStack';
 import SectionBasic from '@/components/ui/SectionBasic';
 import SectionInfo from '@/components/ui/SectionInfo';
+import WorkSteps from '@/components/components/WorkSteps';
+
+export const metadata: Metadata = {
+  title: 'Strony www, branding, marketing | Arteon',
+  description: 'Arteon to kreatywne studio projektowe. Projektujemy responsywne strony internetowe, silne identyfikacje wizualne, angażujące treści oraz skuteczne kampanie marketingowe.',
+  keywords: [
+    'projektowanie stron internetowych',
+    'projektowanie sklepów internetowych',
+    'projektowanie blogów internetowych',
+    'strony internetowe',
+    'sklepu internetowe',
+    'blogi internetowe',
+    'grafika komputerowa',
+    'branding',
+    'identyfikacja wizualna',
+    'tworzenie treści',
+    'content marketing',
+    'kampanie reklamowe',
+    'UX UI design',
+    'social media',
+    'studio projektowe',
+  ],
+};
 
 export default function Home() {
   return (
     <>
       <HeroBaner
         title="Zbuduj markę, która rośnie i sprzedaje"
-        description="Od pomysłu do rezultatu — pomagamy firmom działać skutecznie w świecie online."
+        description="Studio projektowe Arteon – od strategii i brandingu, przez strony WWW, po marketing digital."
         backgroundImage="/assets/test.jpg"
         buttonTopOne="WWW"
         buttonTopOneLink="#www"
@@ -23,20 +46,20 @@ export default function Home() {
       />
 
       <SectionInfo
-        title="Arteon — elastyczny partner dla Twojej firmy"
-        description="Budujesz od zera, rozwijasz, skalujesz? Porządkujemy każdy etap. Tworzymy spójny plan, który przyciąga właściwych klientów i pozwala Twojej marce rosnąć."
+        title="Elastyczny partner dla Twojej marki"
+        description="Od startupu po globalną skalę – łączymy psychologię, design i technologię, aby Twoja firma przyciągała właściwych klientów."
       />
 
-      <ProjectsOverview title="Realizacje" />
+      <ProjectsOverview title="Nasze realizacje" />
 
       <SectionBasic
-        title="Witryna — fundament Twojej obecności"
-        description="Tworzymy strony, sklepy i aplikacje, które prowadzą Twojego klienta krok po kroku — od pierwszego kliknięcia do zakupu."
+        id="www"
+        title="Witryna - fundament Twojej obecności"
+        description="Tworzymy strony, sklepy oraz blogi, które angażują użytkowników i zwiększają konwersje."
         imageSrc="/assets/test.jpg"
-        imageAlt="Projektowanie stron"
+        imageAlt="Responsywne strony WWW"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
-        id="www"
       >
         <ul className="list-disc pl-5">
           <li>Analiza branży i konkurencji w cenie</li>
@@ -47,14 +70,14 @@ export default function Home() {
       </SectionBasic>
 
       <SectionBasic
+        id="tresc"
         variant="left"
-        title="Treść — komunikat, który przyciąga uwagę i sprzedaje"
+        title="Treść — komunikat, który przyciąga uwagę"
         description="Budujemy treści, które pracują dla algorytmów, ale mówią do ludzi. Pomagamy stworzyć przekaz, by Twoja marka żyła nie tylko w Google, ale i w pamięci klientów."
         imageSrc="/assets/test.jpg"
-        imageAlt="Projektowanie stron"
+        imageAlt="Content marketing"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
-        id="tresc"
       >
         <ul className="list-disc pl-5">
           <li>Analiza słów kluczowych i potrzeb klientów</li>
@@ -63,42 +86,41 @@ export default function Home() {
         </ul>
       </SectionBasic>
 
-      <SectionInfo title="Dlaczego klienci wybierają Arteon?" description="Bo działamy jak system. Łączymy estetykę z strategią i procesem, który naprawdę działa.">
+      <SectionInfo title="Dlaczego warto z nami pracować?" description="Działamy jak system: od strategii przez wdrożenie po analizę wyników — wszystko w jednym miejscu.">
         <ul className="list-disc pl-5">
-          <li>Od analizy po marketing — jeden partner</li>
-          <li>Indywidualne podejście — zero szablonów</li>
-          <li>Transparentność, mentoring i zrozumienie</li>
+          <li>Kompleksowe rozwiązania – jeden partner</li>
+          <li>Indywidualne podejście – zero szablonów</li>
+          <li>Pełna transparentność i mentoring</li>
         </ul>
       </SectionInfo>
 
-      <HowWeWork />
+      <WorkSteps />
 
       <SectionBasic
         title="Design — wygląd, który działa jak magnez"
         description="Projektujemy system wizualny, który przyciąga właściwych klientów, buduje zaufanie i odróżnia Twoją markę na tle innych. Psychologia, estetyka, spójność — z myślą o długofalowym rozwoju."
         imageSrc="/assets/test.jpg"
-        imageAlt="Projektowanie stron"
+        imageAlt="Branding i identyfikacja wizualna"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
-        id="design"
       >
         <ul className="list-disc pl-5">
-          <li>Indywidualny projekt graficzny (zero szablonów)</li>
-          <li>Pełna identyfikacja: logo, typografia, paleta barw</li>
-          <li>Materiały spójne online i offline</li>
-          <li>Ulepszenia, które zwiększają konwersję</li>
+          <li>Logo i księga znaku</li>
+          <li>Paleta kolorów i typografia</li>
+          <li>Materiały online i offline</li>
+          <li>Optymalizacja konwersji wizualnej</li>
         </ul>
       </SectionBasic>
 
       <SectionBasic
+        id="marketing"
         variant="left"
-        title="Marketing — kropla drąży skałę"
-        description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdrażamy rozwiązania — krok po kroku."
+        title="Marketing — reklama, która przynosi efekty"
+        description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdrażamy rozwiązania."
         imageSrc="/assets/test.jpg"
-        imageAlt="Projektowanie stron"
+        imageAlt="Marketing cyfrowy"
         buttonText="Zobacz ofertę"
         buttonLink="/oferta"
-        id="marketing"
       >
         <ul className="list-disc pl-5">
           <li>Działania dopasowane do Twojego wymarzonego klienta</li>

@@ -1,28 +1,44 @@
-'use client';
+import type { Metadata } from 'next';
 
-import { useState } from 'react';
-
-import Filters from '@/components/components/Filters';
 import HeroBaner from '@/components/components/HeroBaner';
-import ProjectsGrid from '@/components/components/ProjectsGrid';
 import SectionBasic from '@/components/ui/SectionBasic';
+import ProjectWithFilters from '@/components/components/ProjectsWithFilters';
+
+export const metadata: Metadata = {
+  title: 'Projekty | Arteon',
+  description: 'Zobacz wybrane projekty Arteon: strony internetowe, sklepy, blogi, grafiki i kampanie marketingowe. Tworzymy skuteczne i estetyczne rozwiązania dopasowane do potrzeb klientów.',
+  keywords: [
+    'projekty Arteon',
+    'realizacje stron internetowych',
+    'projekty sklepów internetowych',
+    'projekty blogów',
+    'projekty graficzne',
+    'portfolio agencji kreatywnej',
+    'portfolio web design',
+    'branding i identyfikacja wizualna',
+    'realizacje kampanii marketingowych',
+    'projekty logo i grafiki',
+    'tworzenie nowoczesnych stron',
+    'inspiracje web design',
+    'case studies stron',
+  ],
+};
 
 export default function Page() {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
   return (
     <>
       <HeroBaner title="Projekty, które rosną razem z marką" />
-      <Filters selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
-      <ProjectsGrid selectedCategory={selectedCategory} />
+
+      <ProjectWithFilters />
+
       <SectionBasic
-        title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
-        description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
+        title="Zacznijmy współpracę"
+        description="Masz pytania lub potrzebujesz wyceny niestandardowego projektu? Skontaktuj się z nami, a my przygotujemy ofertę."
         imageSrc="/assets/test.jpg"
-        imageAlt="Zaproszenie do kontaktu"
-        buttonText="Przejdź do formularza"
+        imageAlt="Kontakt z Arteon"
         buttonLink="/kontakt"
-      ></SectionBasic>
+        buttonText="Kontakt"
+      />
     </>
   );
 }

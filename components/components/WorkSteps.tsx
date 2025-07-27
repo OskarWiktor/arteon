@@ -2,29 +2,29 @@
 
 import SectionFour from '../ui/SectionFour';
 
-const HowWeWorkItems = [
-  { number: '1', title: 'Rozmowa i brief', description: 'Zaczynamy od rozmowy. Słuchamy uważnie, zadajemy pytania, odkrywamy prawdziwy potencjał Twojej marki. Na tej podstawie budujemy plan.' },
+const WorkStepsItems = [
+  { number: '1', title: 'Rozmowa', description: 'Opowiadasz nam o swojej marce, celach i wyzwaniach. Zbieramy kluczowe informacje, aby przygotować precyzyjny plan działania.' },
   {
     number: '2',
-    title: 'Projekt i koncepcja',
-    description: 'Budujemy wizję opartą na realnych potrzebach. Łączymy estetykę z funkcją, strategię z emocją. Pokazujemy kierunek, który rozwija Twoją markę.',
+    title: 'Projekt',
+    description: 'Budujemy wizję opartą na realnych potrzebach. Łączymy estetykę z funkcją w spójną wizję Twojej marki.',
   },
   {
     number: '3',
-    title: 'Realizacja i wdrożenie',
-    description: 'Wdrażamy projekt krok po kroku. Kodujemy, testujemy, optymalizujemy. Forma łączy się z treścią, a Twoja strona zaczyna pracować na Twój wynik.',
+    title: 'Realizacja',
+    description: 'Realizujemy projekt od makiet po kod. Testujemy, optymalizujemy i dbamy o płynne działanie, aby witryna angażowała i konwertowała.',
   },
   {
     number: '4',
-    title: 'Rozwój Twojej marki',
+    title: 'Rozwój',
     description: 'Publikacja to początek. Dbamy o wzrost: SEO, social media, analiza. Twoja marka żyje, rozwija się i przyciąga właściwych klientów.',
   },
 ];
 
-export default function HowWeWork() {
+export default function WorkSteps() {
   return (
     <SectionFour
-      items={HowWeWorkItems}
+      items={WorkStepsItems}
       title="Nasz proces pracy"
       renderItem={({ number, title, description }, index) => (
         <article role="group" aria-labelledby={`step-title-${index}`} aria-describedby={`step-desc-${index}`} tabIndex={0} className="flex flex-col py-2">

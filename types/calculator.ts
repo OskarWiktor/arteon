@@ -5,6 +5,7 @@ export interface Option {
   multiplier?: number;
   tooltip?: string;
   branches?: Step[];
+  icon?: string;
 }
 
 export interface OptionInput {
