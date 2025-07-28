@@ -1,189 +1,38 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
+import { RiInstagramLine, RiFacebookFill, RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
-import {
-  RiInstagramLine,
-  RiFacebookFill,
-  RiMenuLine,
-  RiCloseLine,
-  RiArrowDownSLine,
-  RiCodeSSlashFill,
-  RiShoppingCartLine,
-  RiMegaphoneLine,
-  RiArticleLine,
-  RiPaletteLine,
-  RiFileTextLine,
-} from 'react-icons/ri';
-
-import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
-
-import Button from '@/components/ui/Button';
-import Wrapper from '../ui/Wrapper';
-
-const navigationItems = [
-  { href: '/', label: 'Home', exact: true },
-  { href: '/projects', label: 'Projekty' },
-  { href: '/offer', label: 'Oferta' },
-  { href: '/calculator', label: 'Wycena' },
-  { href: '/about-us', label: 'O nas' },
-  { href: '/contact', label: 'Kontakt' },
-];
-
-const offerSubPages = [
-  {
-    href: '/offer/web',
-    icon: <RiCodeSSlashFill className="h-6 w-6 text-amber-500" />,
-    title: 'Strony WWW',
-    desc: 'Strony internetowe',
-  },
-  {
-    href: '/offer/shop',
-    icon: <RiShoppingCartLine className="h-6 w-6 text-amber-500" />,
-    title: 'Sklepy online',
-    desc: 'Sklepy internetowe',
-  },
-  {
-    href: '/offer/blog',
-    icon: <RiArticleLine className="h-6 w-6 text-amber-500" />,
-    title: 'Blogi',
-    desc: 'Systemy blogowe i portale',
-  },
-  {
-    href: '/offer/design',
-    icon: <RiPaletteLine className="h-6 w-6 text-amber-500" />,
-    title: 'Design',
-    desc: 'Identyfikacja wizualna, logo',
-  },
-  {
-    href: '/offer/content',
-    icon: <RiFileTextLine className="h-6 w-6 text-amber-500" />,
-    title: 'Content',
-    desc: 'Teksty, opisy i artykuły',
-  },
-  {
-    href: '/offer/marketing',
-    icon: <RiMegaphoneLine className="h-6 w-6 text-amber-500" />,
-    title: 'Marketing',
-    desc: 'SEO, reklamy i social media',
-  },
-];
+import MobileNavigation from './navigation/MobileNavigation';
+import DesktopNavigation from './navigation/DesktopNavigation';
+import Wrapper from '@/components/ui/Wrapper';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isOfferOpen, setIsOfferOpen] = useState(false);
-  const pathname = usePathname();
-  const menuRef = useRef<HTMLDivElement>(null);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  useEffect(() => {
-    const handleFocusOut = (event: FocusEvent) => {
-      if (isOpen && menuRef.current && event.relatedTarget instanceof Node && !menuRef.current.contains(event.relatedTarget)) {
-        setIsOpen(false);
-      }
-    };
-
-    if (isOpen) {
-      window.addEventListener('focusout', handleFocusOut);
-    } else {
-      window.removeEventListener('focusout', handleFocusOut);
-    }
-
-    return () => {
-      window.removeEventListener('focusout', handleFocusOut);
-    };
-  }, [isOpen]);
-
-  useEffect(() => {
-    setIsOfferOpen(false);
-  }, [pathname]);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <div className="sticky top-0 z-50 w-full bg-white/90 px-4 shadow-xl backdrop-blur-sm md:px-8 lg:px-16">
+    <div className="sticky top-0 z-50 w-full bg-white/90 px-4 shadow-xl backdrop-blur-sm md:px-6 lg:px-0">
       <Wrapper>
         <section className="flex h-16 items-center justify-between lg:h-20">
-          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <Image src="/assets/arteon-logo.png" width={200} height={50} alt="Arteon company logo" />
-          </motion.div>
+          <Image src="/assets/arteon-logo.png" width={200} height={50} alt="Arteon company logo" />
 
-          <nav className="hidden md:flex" aria-label="Główna nawigacja">
-            <LayoutGroup>
-              <ul className="relative flex gap-2 lg:gap-6">
-                {navigationItems.map(({ href, label, exact }) => {
-                  const isActivePage = exact ? pathname === href : pathname.startsWith(href);
-
-                  if (label === 'Oferta') {
-                    return (
-                      <li className="group relative" key={label}>
-                        <button
-                          onClick={() => setIsOfferOpen((prev) => !prev)}
-                          className="flex items-center gap-1 font-semibold hover:cursor-pointer hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-black"
-                        >
-                          {label}
-                          <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                            <RiArrowDownSLine className="h-4 w-4" />
-                          </motion.span>
-                        </button>
-
-                        <AnimatePresence>
-                          {isOfferOpen && (
-                            <motion.div
-                              initial={{ opacity: 0, y: -10 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              exit={{ opacity: 0, y: -10 }}
-                              transition={{ duration: 0.3 }}
-                              className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
-                            >
-                              <Wrapper className="grid grid-cols-3 gap-4">
-                                {offerSubPages.map((item) => (
-                                  <Link key={item.href} href={item.href} className="flex gap-2 rounded-lg border-1 border-gray-50 p-2 transition hover:border-amber-300 hover:shadow-lg">
-                                    <div className="mt-1">{item.icon}</div>
-                                    <div>
-                                      <h6>{item.title}</h6>
-                                      <p>{item.desc}</p>
-                                    </div>
-                                  </Link>
-                                ))}
-                              </Wrapper>
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
-                      </li>
-                    );
-                  }
-
-                  return (
-                    <li key={label} className="relative list-none">
-                      <Link
-                        href={href}
-                        aria-current={isActivePage ? 'page' : undefined}
-                        className={`font-semibold transition hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-black ${isActivePage ? 'font-bold text-amber-600' : ''}`}
-                      >
-                        {label}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </LayoutGroup>
-          </nav>
+          <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
-            <div className="mr-4">
+            <div className="mr-2 lg:mr-4">
               <button className="cursor-pointer text-xl text-amber-500 focus-visible:outline-2 focus-visible:outline-black">PL</button>
               <span className="text-xl"> / </span>
               <button className="cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-black">EN</button>
             </div>
-            <Link href="https://www.instagram.com/arteon.pl" aria-label="Instagram" rel="noopener noreferrer" target="_blank">
+            <a href="https://www.instagram.com/arteon.pl" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="focus-visible:outline-2 focus-visible:outline-black">
               <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
-            </Link>
-            <Link href="https://www.facebook.com/arteonpl" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
+            </a>
+            <a href="https://www.facebook.com/arteonpl" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="focus-visible:outline-2 focus-visible:outline-black">
               <RiFacebookFill className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
-            </Link>
+            </a>
           </div>
 
           <button onClick={toggleMenu} className="block md:hidden" aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}>
@@ -191,126 +40,7 @@ export default function Navigation() {
           </button>
         </section>
 
-        <AnimatePresence>
-          {isOpen && (
-            <motion.nav
-              initial={{ opacity: 0, scaleY: 0.95 }}
-              animate={{ opacity: 1, scaleY: 1 }}
-              exit={{ opacity: 0, scaleY: 0.95 }}
-              transition={{ duration: 0.3 }}
-              className="absolute top-16 left-0 z-50 w-full origin-top bg-white/90 px-6 pt-2 pb-6 shadow-md backdrop-blur-sm md:hidden"
-              ref={menuRef}
-              aria-label="Mobilne menu nawigacji"
-            >
-              <motion.ul
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-                variants={{
-                  hidden: {},
-                  visible: {
-                    transition: {
-                      staggerChildren: 0.08,
-                      delayChildren: 0.1,
-                    },
-                  },
-                }}
-                className="flex flex-col gap-3"
-              >
-                <LayoutGroup>
-                  {navigationItems.map(({ href, label, exact }) => {
-                    const isActivePage = exact ? pathname === href : pathname.startsWith(href);
-
-                    if (label === 'Oferta') {
-                      return (
-                        <div key={label}>
-                          <motion.li className="flex items-center justify-between" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                            <button
-                              onClick={() => setIsOfferOpen((prev) => !prev)}
-                              className="flex w-full items-center justify-between text-left font-semibold hover:cursor-pointer hover:text-amber-500"
-                            >
-                              {label}
-                              <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                                <RiArrowDownSLine className="h-5 w-5" />
-                              </motion.span>
-                            </button>
-                          </motion.li>
-                          <AnimatePresence>
-                            {isOfferOpen && (
-                              <motion.div
-                                initial={{ opacity: 0, y: -6 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -6 }}
-                                transition={{ duration: 0.3 }}
-                                className="mt-2 ml-3 grid grid-cols-1 gap-3"
-                              >
-                                {offerSubPages.map((item) => (
-                                  <Link key={item.href} href={item.href} onClick={() => setIsOpen(false)} className="group flex items-start gap-2 rounded-md hover:text-amber-400">
-                                    <div>{item.icon}</div>
-                                    <div>
-                                      <h6>{item.title}</h6>
-                                    </div>
-                                  </Link>
-                                ))}
-                              </motion.div>
-                            )}
-                          </AnimatePresence>
-                        </div>
-                      );
-                    }
-
-                    if (label === 'Kontakt') {
-                      return (
-                        <motion.li key={label} variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
-                          <Link href={href} onClick={() => setIsOpen(false)}>
-                            <Button variant="accent" size="big">
-                              {label}
-                            </Button>
-                          </Link>
-                        </motion.li>
-                      );
-                    }
-
-                    return (
-                      <motion.li key={label} className="relative" variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
-                        <Link href={href} onClick={() => setIsOpen(false)} className={`text-base font-semibold hover:text-amber-500 ${isActivePage ? 'font-bold text-amber-600' : ''}`}>
-                          {label}
-                        </Link>
-                      </motion.li>
-                    );
-                  })}
-                </LayoutGroup>
-                <motion.li variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="flex justify-between border-t border-gray-200 pt-4">
-                  <div>
-                    <button className="cursor-pointer text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">PL</button>
-                    <span className="text-gray-800"> / </span>
-                    <button className="cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">EN</button>
-                  </div>
-                  <div className="flex gap-2 lg:gap-4">
-                    <Link
-                      href="https://www.instagram.com/arteon.pl"
-                      aria-label="Instagram"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                    >
-                      <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
-                    </Link>
-                    <Link
-                      href="https://www.facebook.com/arteonpl"
-                      aria-label="Facebook"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                    >
-                      <RiFacebookFill className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
-                    </Link>
-                  </div>
-                </motion.li>
-              </motion.ul>
-            </motion.nav>
-          )}
-        </AnimatePresence>
+        <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} />
       </Wrapper>
     </div>
   );

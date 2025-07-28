@@ -2,13 +2,11 @@
 
 import { useRef, useEffect, useState, useMemo } from 'react';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
-import { motion } from 'framer-motion';
 
 import Wrapper from '../../ui/Wrapper';
 import ProjectCard from '../../ui/ProjectCard';
 import allProjectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
-import SlideInOnView from '../../animations/SlideInOnView';
 
 type Props = {
   projects?: Project[];
@@ -74,17 +72,8 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
 
   return (
     <Wrapper>
-      <motion.section
-        className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6 }}
-        role="region"
-      >
-        <SlideInOnView>
-          <h2>{title}</h2>
-        </SlideInOnView>
+      <section className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0" role="region">
+        <h2>{title}</h2>
 
         <div className="relative">
           {isScrollable && (
@@ -134,7 +123,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
             ))}
           </div>
         )}
-      </motion.section>
+      </section>
     </Wrapper>
   );
 }
