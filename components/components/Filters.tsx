@@ -9,12 +9,12 @@ type Props = {
   onSelectCategory: (category: string | null) => void;
 };
 
-const categories = ['strona', 'sklep', 'aplikacja', 'blog'];
-const categoriesName = ['Strony', 'Sklepy', 'Aplikacje', 'Blogi'];
+const categories = ['strona', 'sklep', 'blog'];
+const categoriesName = ['Strony', 'Sklepy', 'Blogi'];
 
 export default function Filters({ selectedCategory, onSelectCategory }: Props) {
   return (
-    <section className="mt-12 w-full md:mt-16 lg:mt-24">
+    <section className="mt-12 w-full md:mt-16 lg:mt-24 px-4 md:px-6 lg:px-0">
       <Wrapper className="flex flex-col">
         <h2 className="mb-4">Filtry:</h2>
         <StaggerChildren>

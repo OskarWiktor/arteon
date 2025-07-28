@@ -38,38 +38,37 @@ const offerSubPages = [
     href: '/offer/web',
     icon: <RiCodeSSlashFill className="h-6 w-6 text-amber-500" />,
     title: 'Strony WWW',
-    desc: 'Nowoczesne, szybkie i responsywne strony.',
+    desc: 'Strony internetowe',
   },
   {
     href: '/offer/shop',
     icon: <RiShoppingCartLine className="h-6 w-6 text-amber-500" />,
     title: 'Sklepy online',
-    desc: 'Sklepy oparte o UX i konwersję.',
+    desc: 'Sklepy internetowe',
   },
   {
     href: '/offer/blog',
     icon: <RiArticleLine className="h-6 w-6 text-amber-500" />,
     title: 'Blogi',
-    desc: 'Systemy blogowe i treściowe.',
+    desc: 'Systemy blogowe i portale',
   },
   {
     href: '/offer/design',
     icon: <RiPaletteLine className="h-6 w-6 text-amber-500" />,
     title: 'Design',
-    desc: 'Identyfikacja wizualna, logo.',
+    desc: 'Identyfikacja wizualna, logo',
   },
-
   {
     href: '/offer/content',
     icon: <RiFileTextLine className="h-6 w-6 text-amber-500" />,
     title: 'Content',
-    desc: 'Teksty, opisy i storytelling.',
+    desc: 'Teksty, opisy i artykuły',
   },
   {
     href: '/offer/marketing',
     icon: <RiMegaphoneLine className="h-6 w-6 text-amber-500" />,
     title: 'Marketing',
-    desc: 'SEO, reklamy i strategia marki.',
+    desc: 'SEO, reklamy i social media',
   },
 ];
 

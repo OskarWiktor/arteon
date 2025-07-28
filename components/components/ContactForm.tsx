@@ -65,8 +65,8 @@ export default function ContactForm() {
             <option value="" disabled>
               Wybierz temat
             </option>
-            <option value="Strona lub sklep">Strona, sklep, aplikacja</option>
-            <option value="Content i SEO">Treść, artykuły, optymalizacja</option>
+            <option value="WWW">Strona, sklep, blog</option>
+            <option value="Content">Treść, artykuły</option>
             <option value="Design">Identyfikacja wizualna, grafika</option>
             <option value="Marketing">Marketing, reklamy, social media</option>
             <option value="Inne">Inny temat</option>
@@ -80,7 +80,7 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="Wiadomość"
-            placeholder="Chciałbym aby na tej stronie..."
+            placeholder="Chciałbym stworzyć stronę..."
             required
             className="h-48 w-full resize-none border border-gray-300 bg-transparent px-2 py-2 text-gray-700 transition focus:outline-none"
           />

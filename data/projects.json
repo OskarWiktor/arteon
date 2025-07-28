@@ -1,14 +1,6 @@
 {
   "projects": [
     {
-      "slug": "ar-project",
-      "title": "AR Project",
-      "short": "Aplikacja AR oparta na 8th Wall tworzona z wykorzystaniem React i Material UI.",
-      "image": "/assets/projects/arteon-baners-meridol.jpg",
-      "link": "",
-      "category": ["aplikacja"]
-    },
-    {
       "slug": "meridol-accessibility",
       "title": "Meridol Accessibility",
       "short": "Dostosowanie strony do standardów WCAG z wykorzystaniem AEM i jQuery.",

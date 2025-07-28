@@ -72,7 +72,7 @@ export default function Home() {
       <SectionBasic
         id="tresc"
         variant="left"
-        title="Treść — komunikat, który przyciąga uwagę"
+        title="Treść - komunikat, który przyciąga uwagę"
         description="Budujemy treści, które pracują dla algorytmów, ale mówią do ludzi. Pomagamy stworzyć przekaz, by Twoja marka żyła nie tylko w Google, ale i w pamięci klientów."
         imageSrc="/assets/test.jpg"
         imageAlt="Content marketing"
@@ -97,7 +97,7 @@ export default function Home() {
       <WorkSteps />
 
       <SectionBasic
-        title="Design — wygląd, który działa jak magnez"
+        title="Design - wygląd, który działa jak magnez"
         description="Projektujemy system wizualny, który przyciąga właściwych klientów, buduje zaufanie i odróżnia Twoją markę na tle innych. Psychologia, estetyka, spójność — z myślą o długofalowym rozwoju."
         imageSrc="/assets/test.jpg"
         imageAlt="Branding i identyfikacja wizualna"
@@ -115,7 +115,7 @@ export default function Home() {
       <SectionBasic
         id="marketing"
         variant="left"
-        title="Marketing — reklama, która przynosi efekty"
+        title="Marketing - reklama, która przynosi efekty"
         description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdrażamy rozwiązania."
         imageSrc="/assets/test.jpg"
         imageAlt="Marketing cyfrowy"
