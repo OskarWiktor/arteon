@@ -1,6 +1,6 @@
 'use client';
 
-import SectionFour from '../ui/SectionFour';
+import SectionSteps from '../../ui/sections/SectionSteps';
 
 const WorkStepsItems = [
   { number: '1', title: 'Rozmowa', description: 'Opowiadasz nam o swojej marce, celach i wyzwaniach. Zbieramy kluczowe informacje, aby przygotować precyzyjny plan działania.' },
@@ -23,7 +23,7 @@ const WorkStepsItems = [
 
 export default function WorkSteps() {
   return (
-    <SectionFour
+    <SectionSteps
       items={WorkStepsItems}
       title="Nasz proces pracy"
       renderItem={({ number, title, description }, index) => (

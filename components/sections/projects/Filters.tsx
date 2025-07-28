@@ -1,8 +1,8 @@
 'use client';
 
-import StaggerChildren from '../animations/StaggerChildrenFlex';
-import Button from '../ui/Button';
-import Wrapper from '../ui/Wrapper';
+import StaggerChildren from '../../animations/StaggerChildrenFlex';
+import Button from '../../ui/Button';
+import Wrapper from '../../ui/Wrapper';
 
 type Props = {
   selectedCategory: string | null;

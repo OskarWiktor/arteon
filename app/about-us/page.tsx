@@ -1,5 +1,5 @@
-import HeroBaner from '@/components/components/HeroBaner';
-import Mission from '@/components/components/Mission';
+import HeroBaner from '@/components/sections/HeroBaner';
+import Mission from '@/components/sections/steps/Mission';
 
 export default function Page() {
   return (

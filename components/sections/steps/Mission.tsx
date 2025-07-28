@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import SectionFour from '../ui/SectionFour';
+import SectionSteps from '../../ui/sections/SectionSteps';
 
 const missionItems = [
   {
@@ -32,7 +32,7 @@ const missionItems = [
 
 export default function Mission() {
   return (
-    <SectionFour
+    <SectionSteps
       items={missionItems}
       renderItem={({ imageAlt, imageSrc, content, border }, index) => (
         <article role="group" aria-labelledby={`mission-title-${index}`} aria-describedby={`mission-desc-${index}`} tabIndex={0} className="flex flex-col py-2">

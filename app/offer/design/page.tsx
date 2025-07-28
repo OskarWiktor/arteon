@@ -1,8 +1,8 @@
-import HeroBaner from '@/components/components/HeroBaner';
-import SectionInfo from '@/components/ui/SectionInfo';
+import HeroBaner from '@/components/sections/HeroBaner';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
 
-import Mission from '@/components/components/Mission';
-import SectionBasic from '@/components/ui/SectionBasic';
+import Mission from '@/components/sections/steps/Mission';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

@@ -1,4 +1,4 @@
-import Wrapper from './Wrapper';
+import Wrapper from '../Wrapper';
 import { ReactNode } from 'react';
 
 interface SectionInfoProps {

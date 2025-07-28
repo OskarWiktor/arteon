@@ -2,9 +2,9 @@
 
 import { ReactNode, useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import Wrapper from './Wrapper';
+import Wrapper from '../Wrapper';
 
-interface SectionFourProps<T> {
+interface SectionStepsProps<T> {
   title?: string;
   items: T[];
   renderItem: (item: T, index: number) => ReactNode;
@@ -25,12 +25,12 @@ const childVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-export default function SectionFour<T>({
+export default function SectionSteps<T>({
   title,
   items,
   renderItem,
   variant = 'basic',
-}: SectionFourProps<T>) {
+}: SectionStepsProps<T>) {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.3, once: true });
   const controls = useAnimation();

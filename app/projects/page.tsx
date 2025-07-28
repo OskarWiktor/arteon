@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
-import HeroBaner from '@/components/components/HeroBaner';
-import SectionBasic from '@/components/ui/SectionBasic';
-import ProjectWithFilters from '@/components/components/ProjectsWithFilters';
+import HeroBaner from '@/components/sections/HeroBaner';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
+import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilters';
 
 export const metadata: Metadata = {
   title: 'Projekty | Arteon',

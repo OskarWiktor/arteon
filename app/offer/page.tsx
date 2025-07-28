@@ -1,9 +1,9 @@
-import HeroBaner from '@/components/components/HeroBaner';
-import SectionInfo from '@/components/ui/SectionInfo';
+import HeroBaner from '@/components/sections/HeroBaner';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
 
-import SectionBasic from '@/components/ui/SectionBasic';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
 import { Metadata } from 'next';
-import OfferSubPages from '@/components/components/OfferSubPages';
+import OfferSubPages from '@/components/sections/OfferSubPages';
 
 export const metadata: Metadata = {
   title: 'Oferta| Arteon',

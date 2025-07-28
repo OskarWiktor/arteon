@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import ContactForm from '@/components/components/ContactForm';
-import HeroBaner from '@/components/components/HeroBaner';
-import SectionInfo from '@/components/ui/SectionInfo';
-import SectionBasic from '@/components/ui/SectionBasic';
-import ContactSteps from '@/components/components/ContactSteps';
+import ContactForm from '@/components/sections/ContactForm';
+import HeroBaner from '@/components/sections/HeroBaner';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
+import ContactSteps from '@/components/sections/steps/ContactSteps';
 
 export const metadata: Metadata = {
   title: 'Kontakt | Arteon',

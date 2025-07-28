@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { includedPerPath } from '@/data/calculator/includedPerPath';
-import Button from './Button';
+import Button from '../Button';
 
 interface CalculatorResultProps {
   totalPrice: number;

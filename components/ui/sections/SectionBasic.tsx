@@ -2,9 +2,9 @@
 
 import { ReactNode } from 'react';
 import Image from 'next/image';
-import Wrapper from './Wrapper';
-import SlideInOnView from '../animations/SlideInOnView';
-import Button from './Button';
+import Wrapper from '../Wrapper';
+import SlideInOnView from '../../animations/SlideInOnView';
+import Button from '../Button';
 
 interface SectionBasicProps {
   title: string;
@@ -24,8 +24,8 @@ export default function SectionBasic({ title, description, imageSrc, imageAlt = 
       <Wrapper className={`items-centers flex flex-col md:gap-4 lg:flex-row lg:items-start lg:gap-8 ${variant === 'left' ? 'lg:flex-row-reverse' : ''}`}>
         <div className="w-full lg:w-1/2">
           <SlideInOnView direction={variant === 'left' ? 'right' : 'left'}>
-            <div className="relative aspect-[3/2] max-h-80 w-full overflow-hidden shadow-lg lg:max-h-full">
-              <Image src={imageSrc} alt={imageAlt} fill className="object-cover" priority />
+            <div className="relative aspect-[3/2] max-h-80 w-full overflow-hidden shadow-md lg:max-h-full">
+              <Image src={imageSrc} alt={imageAlt} fill className="object-cover rounded-md" priority />
             </div>
           </SlideInOnView>
         </div>

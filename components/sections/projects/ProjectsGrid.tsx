@@ -2,8 +2,8 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import projectsData from '@/data/projects.json';
-import ProjectCard from '../ui/ProjectCard';
-import Wrapper from '../ui/Wrapper';
+import ProjectCard from '../../ui/ProjectCard';
+import Wrapper from '../../ui/Wrapper';
 import type { Project } from '@/types/project';
 
 type Props = {

@@ -1,9 +1,9 @@
-import HeroBaner from '@/components/components/HeroBaner';
-import SectionInfo from '@/components/ui/SectionInfo';
+import HeroBaner from '@/components/sections/HeroBaner';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
 
-import Mission from '@/components/components/Mission';
-import SectionBasic from '@/components/ui/SectionBasic';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
 import { Metadata } from 'next';
+import FaqContent from '@/components/sections/faqs/FaqContent';
 
 export const metadata: Metadata = {
   title: 'Tworzenie treści | Arteon',
@@ -40,7 +40,7 @@ export default function Page() {
         buttonTopFour="test4"
       />
       <SectionInfo title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
-      <Mission />
+      <FaqContent />
       <SectionBasic
         title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
         description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"

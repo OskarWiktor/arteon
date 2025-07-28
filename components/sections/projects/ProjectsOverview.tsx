@@ -4,11 +4,11 @@ import { useRef, useEffect, useState, useMemo } from 'react';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 
-import Wrapper from '../ui/Wrapper';
-import ProjectCard from '../ui/ProjectCard';
+import Wrapper from '../../ui/Wrapper';
+import ProjectCard from '../../ui/ProjectCard';
 import allProjectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
-import SlideInOnView from '../animations/SlideInOnView';
+import SlideInOnView from '../../animations/SlideInOnView';
 
 type Props = {
   projects?: Project[];

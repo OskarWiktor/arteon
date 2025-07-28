@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import HeroBaner from '@/components/components/HeroBaner';
-import Calculator from '@/components/components/Calculator';
-import SectionBasic from '@/components/ui/SectionBasic';
+import HeroBaner from '@/components/sections/HeroBaner';
+import Calculator from '@/components/sections/Calculator';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
 
 export const metadata: Metadata = {
   title: 'Kalkulator wycen | Arteon',

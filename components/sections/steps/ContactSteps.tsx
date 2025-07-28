@@ -1,6 +1,6 @@
 'use client';
 
-import SectionFour from '../ui/SectionFour';
+import SectionSteps from '../../ui/sections/SectionSteps';
 
 const ContactStepsItems = [
   {
@@ -11,7 +11,7 @@ const ContactStepsItems = [
   {
     number: '2',
     title: 'Analizujemy potrzeby',
-    description: 'Sprawdzamy Twoją branżę, cele i dopracowujemy szczegóły',
+    description: 'Sprawdzamy Twoją branżę, Steps i dopracowujemy szczegóły',
   },
   {
     number: '3',
@@ -27,7 +27,7 @@ const ContactStepsItems = [
 
 export default function ContactSteps() {
   return (
-    <SectionFour
+    <SectionSteps
       items={ContactStepsItems}
       variant="smallMargin"
       renderItem={({ number, title, description }, index) => (

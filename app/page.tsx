@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import HeroBaner from '@/components/components/HeroBaner';
-import ProjectsOverview from '@/components/components/ProjectsOverview';
-import TechStack from '@/components/components/TechStack';
-import SectionBasic from '@/components/ui/SectionBasic';
-import SectionInfo from '@/components/ui/SectionInfo';
-import WorkSteps from '@/components/components/WorkSteps';
+import HeroBaner from '@/components/sections/HeroBaner';
+import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import TechStack from '@/components/sections/TechStack';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 
 export const metadata: Metadata = {
   title: 'Strony www, branding, marketing | Arteon',
