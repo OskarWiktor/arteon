@@ -54,7 +54,11 @@ export default function Home() {
 
       <SectionBasic
         id="www"
-        title="Witryna - fundament Twojej obecności"
+        title={
+          <>
+            <span className="text-amber-500">Witryna</span> - fundament Twojej obecności
+          </>
+        }
         description="Tworzymy strony, sklepy oraz blogi, które angażują użytkowników i zwiększają konwersje."
         imageSrc="/assets/test.jpg"
         imageAlt="Responsywne strony WWW"

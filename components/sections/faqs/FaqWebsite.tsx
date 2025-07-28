@@ -1,10 +1,11 @@
-import FaqPanels from "../../ui/FaqPanels";
-import Wrapper from "../../ui/Wrapper";
+import FaqPanels from '../../ui/FaqPanels';
+import Wrapper from '../../ui/Wrapper';
 
 const faqItems = [
   {
     question: 'Ile kosztuje stworzenie strony internetowej?',
-    answer: 'Cena zależy od zakresu projektu. Proste strony typu one-page zaczynają się od 1200 zł, a rozbudowane serwisy mogą kosztować kilka tysięcy. Skorzystaj z kalkulatora na stronie głównej, aby otrzymać orientacyjną wycenę.',
+    answer:
+      'Cena zależy od zakresu projektu. Proste strony typu one-page zaczynają się od 1200 zł, a rozbudowane serwisy mogą kosztować kilka tysięcy. Skorzystaj z kalkulatora na stronie głównej, aby otrzymać orientacyjną wycenę.',
   },
   {
     question: 'Jak długo trwa stworzenie strony?',
@@ -50,8 +51,8 @@ const faqItems = [
 
 export default function FaqWebsite() {
   return (
-    <Wrapper className="mt-12 md:mt-16 lg:mt-24 px-4 md:px-6 lg:px-0">
-      <h2 className="text-xl font-semibold mb-6">Najczęstsze pytania</h2>
+    <Wrapper className="mt-12 px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0">
+      <h2 className="mb-6 text-xl font-semibold">Najczęstsze pytania</h2>
       <FaqPanels items={faqItems} />
     </Wrapper>
   );

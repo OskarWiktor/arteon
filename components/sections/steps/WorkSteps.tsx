@@ -3,44 +3,32 @@
 import SectionSteps from '../../ui/sections/SectionSteps';
 
 const WorkStepsItems = [
-  { number: '1', title: 'Rozmowa', description: 'Opowiadasz nam o swojej marce, celach i wyzwaniach. Zbieramy kluczowe informacje, aby przygotować precyzyjny plan działania.' },
   {
-    number: '2',
+    icon: <span className="text-xl font-medium">1</span>,
+    title: 'Rozmowa',
+    borderClassName: 'border-b-amber-500',
+    description: <>Opowiadasz nam o swojej marce, celach i wyzwaniach. Zbieramy kluczowe informacje, aby przygotować precyzyjny plan działania.</>,
+  },
+  {
+    icon: <span className="text-xl font-medium">2</span>,
     title: 'Projekt',
-    description: 'Budujemy wizję opartą na realnych potrzebach. Łączymy estetykę z funkcją w spójną wizję Twojej marki.',
+    borderClassName: 'border-b-amber-500',
+    description: <>Budujemy wizję opartą na realnych potrzebach. Łączymy estetykę z funkcją w spójną wizję Twojej marki.</>,
   },
   {
-    number: '3',
+    icon: <span className="text-xl font-medium">3</span>,
     title: 'Realizacja',
-    description: 'Realizujemy projekt od makiet po kod. Testujemy, optymalizujemy i dbamy o płynne działanie, aby witryna angażowała i konwertowała.',
+    borderClassName: 'border-b-amber-500',
+    description: <>Realizujemy projekt od makiet po kod. Testujemy, optymalizujemy i dbamy o płynne działanie, aby witryna angażowała i konwertowała.</>,
   },
   {
-    number: '4',
+    icon: <span className="text-xl font-medium">4</span>,
     title: 'Rozwój',
-    description: 'Publikacja to początek. Dbamy o wzrost: SEO, social media, analiza. Twoja marka żyje, rozwija się i przyciąga właściwych klientów.',
+    borderClassName: 'border-b-amber-500',
+    description: <>Publikacja to początek. Dbamy o wzrost: SEO, social media, analiza. Twoja marka żyje, rozwija się i przyciąga właściwych klientów.</>,
   },
 ];
 
 export default function WorkSteps() {
-  return (
-    <SectionSteps
-      items={WorkStepsItems}
-      title="Nasz proces pracy"
-      renderItem={({ number, title, description }, index) => (
-        <article role="group" aria-labelledby={`step-title-${index}`} aria-describedby={`step-desc-${index}`} tabIndex={0} className="flex flex-col py-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200">
-            <span className="text-xl" aria-hidden="true">
-              {number}
-            </span>
-          </div>
-          <h5 id={`step-title-${index}`} className="mt-2 mb-4 w-fit border-b border-b-amber-500" tabIndex={0}>
-            {title}
-          </h5>
-          <p id={`step-desc-${index}`} tabIndex={0}>
-            {description}
-          </p>
-        </article>
-      )}
-    />
-  );
+  return <SectionSteps items={WorkStepsItems} title="Nasz proces pracy" />;
 }

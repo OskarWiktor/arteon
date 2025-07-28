@@ -5,6 +5,7 @@ import Button from '../ui/Button';
 import Link from 'next/link';
 import FadeInOnView from '../animations/FadeInOnView';
 import SlideInOnView from '../animations/SlideInOnView';
+import { ReactNode } from 'react';
 
 interface HeroBannerProps {
   buttonTopOne?: string;
@@ -15,9 +16,9 @@ interface HeroBannerProps {
   buttonTopThreeLink?: string;
   buttonTopFour?: string;
   buttonTopFourLink?: string;
-  subtitle?: string;
-  title: string;
-  description?: string;
+  subtitle?: ReactNode;
+  title: ReactNode;
+  description?: ReactNode;
   buttonAccent?: string;
   buttonAccentLink?: string;
   buttonSecond?: string;

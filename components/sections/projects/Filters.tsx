@@ -14,7 +14,7 @@ const categoriesName = ['Strony', 'Sklepy', 'Blogi'];
 
 export default function Filters({ selectedCategory, onSelectCategory }: Props) {
   return (
-    <section className="mt-12 w-full md:mt-16 lg:mt-24 px-4 md:px-6 lg:px-0">
+    <section className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0">
       <Wrapper className="flex flex-col">
         <h2 className="mb-4">Filtry:</h2>
         <StaggerChildren>

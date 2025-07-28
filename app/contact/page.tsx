@@ -31,8 +31,6 @@ export default function Page() {
     <>
       <HeroBaner title="Porozmawiajmy o Twojej firmie" description="Skontaktuj się z nami — przygotujemy ofertę i plan działania szyty na miarę" backgroundImage="/assets/test.jpg" />
 
-      <SectionInfo title="Jak przebiega kontakt?" />
-
       <ContactSteps />
 
       <ContactForm />

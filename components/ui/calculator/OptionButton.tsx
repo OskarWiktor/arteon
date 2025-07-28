@@ -32,10 +32,10 @@ export default function OptionButton({ optValue, label, tooltip, selected, onCli
         selected ? 'border-amber-400 bg-amber-50' : 'border-gray-100 hover:border-amber-300 hover:shadow-lg'
       }`}
     >
-      {IconComponent && <IconComponent className="mt-0.5 text-2xl text-amber-500" />}
+      {IconComponent && <IconComponent className="mt-1 text-2xl text-amber-500" />}
       <div>
         <h6 className="text-base font-medium">{label}</h6>
-        {tooltip && <span className="block text-sm text-gray-700">{tooltip}</span>}
+        {tooltip && <span className="block text-gray-800">{tooltip}</span>}
       </div>
     </button>
   );

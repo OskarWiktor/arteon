@@ -1,5 +1,5 @@
-import FaqPanels from "../../ui/FaqPanels";
-import Wrapper from "../../ui/Wrapper";
+import FaqPanels from '../../ui/FaqPanels';
+import Wrapper from '../../ui/Wrapper';
 
 const faqItems = [
   {
@@ -62,8 +62,8 @@ const faqItems = [
 
 export default function FaqStore() {
   return (
-    <Wrapper className="mt-12 md:mt-16 lg:mt-24 px-4 md:px-6 lg:px-0">
-      <h2 className="text-xl font-semibold mb-6">Najczęstsze pytania</h2>
+    <Wrapper className="mt-12 px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0">
+      <h2 className="mb-6 text-xl font-semibold">Najczęstsze pytania</h2>
       <FaqPanels items={faqItems} />
     </Wrapper>
   );

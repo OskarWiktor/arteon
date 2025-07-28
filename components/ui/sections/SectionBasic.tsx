@@ -7,8 +7,8 @@ import SlideInOnView from '../../animations/SlideInOnView';
 import Button from '../Button';
 
 interface SectionBasicProps {
-  title: string;
-  description?: string;
+  title: ReactNode;
+  description?: ReactNode;
   imageSrc: string;
   imageAlt?: string;
   variant?: 'left' | 'right';
@@ -25,7 +25,7 @@ export default function SectionBasic({ title, description, imageSrc, imageAlt = 
         <div className="w-full lg:w-1/2">
           <SlideInOnView direction={variant === 'left' ? 'right' : 'left'}>
             <div className="relative aspect-[3/2] max-h-80 w-full overflow-hidden shadow-md lg:max-h-full">
-              <Image src={imageSrc} alt={imageAlt} fill className="object-cover rounded-md" priority />
+              <Image src={imageSrc} alt={imageAlt} fill className="rounded-md object-cover" priority />
             </div>
           </SlideInOnView>
         </div>
