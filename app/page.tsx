@@ -1,6 +1,4 @@
-import { getPageMetadata } from '@/data/seo';
-import type { Metadata } from 'next';
-import { headers } from 'next/headers';
+import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -9,12 +7,8 @@ import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 
-export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const host = headersList.get('host') || '';
-  const locale = host.endsWith('.pl') ? 'pl' : 'en';
-
-  return getPageMetadata('home', locale);
+export async function generateMetadata() {
+  return generatePageMetadata('home');
 }
 
 export default function Home() {

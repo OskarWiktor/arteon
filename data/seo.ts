@@ -1,18 +1,4 @@
-import type { Metadata } from 'next';
-
-type SupportedLocale = 'pl' | 'en';
-
-type MetadataContent = {
-  title: string;
-  description: string;
-  keywords?: string[];
-};
-
-type MetadataMap = {
-  [slug: string]: {
-    [locale in SupportedLocale]: MetadataContent;
-  };
-};
+import { Metadata } from 'next';
 
 const metadataMap: MetadataMap = {
   calculator: {
@@ -518,3 +504,19 @@ export function getPageMetadata(slug: keyof typeof metadataMap, locale: Supporte
     keywords: page.keywords,
   };
 }
+
+export type SupportedLocale = 'pl' | 'en';
+
+export type SupportedSlug = keyof typeof metadataMap;
+
+export type MetadataContent = {
+  title: string;
+  description: string;
+  keywords?: string[];
+};
+
+export type MetadataMap = {
+  [slug: string]: {
+    [locale in SupportedLocale]: MetadataContent;
+  };
+};

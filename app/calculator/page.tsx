@@ -1,17 +1,11 @@
-import { getPageMetadata } from '@/data/seo';
-import type { Metadata } from 'next';
-import { headers } from 'next/headers';
+import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 import HeroBaner from '@/components/sections/HeroBaner';
 import Calculator from '@/components/sections/Calculator';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 
-export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const host = headersList.get('host') || '';
-  const locale = host.endsWith('.pl') ? 'pl' : 'en';
-
-  return getPageMetadata('calculator', locale);
+export async function generateMetadata() {
+  return generatePageMetadata('calculator');
 }
 
 export default function Page() {

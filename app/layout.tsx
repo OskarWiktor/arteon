@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import React from 'react';
+import { headers } from 'next/headers';
 
 import './globals.css';
 import Footer from '@/components/shared/Footer';
@@ -12,15 +13,15 @@ export const metadata: Metadata = {
   description: 'Arteon',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css"></link>
+        <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css" />
       </head>
       <body className="font-sans antialiased">
         <Navigation />

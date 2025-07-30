@@ -1,18 +1,12 @@
-import { getPageMetadata } from '@/data/seo';
-import type { Metadata } from 'next';
-import { headers } from 'next/headers';
+import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import FaqWebsite from '@/components/sections/faqs/FaqWebsite';
 
-export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const host = headersList.get('host') || '';
-  const locale = host.endsWith('.pl') ? 'pl' : 'en';
-
-  return getPageMetadata('websites', locale);
+export async function generateMetadata() {
+  return generatePageMetadata('websites');
 }
 
 export default function Page() {
