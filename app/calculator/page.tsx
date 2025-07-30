@@ -1,29 +1,17 @@
+import { getPageMetadata } from '@/data/seo';
 import type { Metadata } from 'next';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import Calculator from '@/components/sections/Calculator';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 
-export const metadata: Metadata = {
-  title: 'Kalkulator wycen | Arteon',
-  description: 'Skorzystaj z kalkulatora Arteon i sprawdź koszt stworzenia lub przebudowy strony, sklepu, bloga, grafiki, treści oraz działań marketingowych online.',
-  keywords: [
-    'kalkulator wycen',
-    'wycena projektu',
-    'wycena strony internetowej',
-    'wycena sklepu internetowego',
-    'wycena bloga',
-    'koszt rozbudowy strony',
-    'koszt przebudowy strony',
-    'wycena tworzenia treści',
-    'wycena artykułu',
-    'copywriting na stronę',
-    'wycena reklamy w Google',
-    'wycena pozycjonowania SEO',
-    'wycena grafik na zamówienie',
-    'projekt graficzny wycena',
-    'koszt marketingu online',
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: 'pl' | 'en' };
+}): Promise<Metadata> {
+  return getPageMetadata('calculator', params.locale);
+}
 
 export default function Page() {
   return (
