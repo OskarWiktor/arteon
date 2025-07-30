@@ -1,4 +1,5 @@
-import { Metadata } from 'next';
+// lib/getPageMetadata.ts lub data/seo.ts
+import type { Metadata } from 'next';
 
 type SupportedLocale = 'pl' | 'en';
 
@@ -41,7 +42,7 @@ const metadataMap: MetadataMap = {
     en: {
       title: 'Pricing calculator | Arteon',
       description:
-        'Use Arteon\'s calculator to check the cost of creating or redesigning a website, store, blog, content, or online marketing campaign.',
+        "Use Arteon's calculator to check the cost of creating or redesigning a website, store, blog, content, or online marketing campaign.",
       keywords: [
         'pricing calculator',
         'project quote',
@@ -59,7 +60,6 @@ const metadataMap: MetadataMap = {
       ],
     },
   },
-
 };
 
 export function getPageMetadata(
@@ -67,6 +67,7 @@ export function getPageMetadata(
   locale: SupportedLocale
 ): Metadata {
   const page = metadataMap[slug][locale];
+
   return {
     title: page.title,
     description: page.description,
