@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import projectsData from '@/data/projects.json';
+import projectsData from '@/data/pl/projects.json';
 import ProjectCard from '../../ui/ProjectCard';
 import Wrapper from '../../ui/Wrapper';
 import type { Project } from '@/types/project';
