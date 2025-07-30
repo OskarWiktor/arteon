@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Wrapper from '@/components/ui/Wrapper';
 import Button from '@/components/ui/Button';
 
-import projectsData from '@/data/projects.json';
+import projectsData from '@/data/pl/projects.json';
 import type { Project } from '@/types/project';
 
 const projects = projectsData.projects as Project[];
