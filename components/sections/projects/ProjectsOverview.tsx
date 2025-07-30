@@ -5,7 +5,7 @@ import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 
 import Wrapper from '../../ui/Wrapper';
 import ProjectCard from '../../ui/ProjectCard';
-import allProjectsData from '@/data/projects.json';
+import allProjectsData from '@/data/pl/projects.json';
 import type { Project } from '@/types/project';
 
 type Props = {
@@ -80,13 +80,13 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
             <button
               onClick={() => scroll('left')}
               className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
-              aria-label="Przesuń w lewo"
+              aria-label="Go left"
             >
               <RiArrowLeftSLine className="h-6 w-6" />
             </button>
           )}
 
-          <div ref={scrollRef} className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth py-4" aria-label="Karuzela z projektami" tabIndex={0}>
+          <div ref={scrollRef} className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth py-4" aria-label="Carousel with projects" tabIndex={0}>
             {finalProjects.map((project, i) => (
               <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[300px] md:min-w-[350px]">
                 <ProjectCard project={project} />
@@ -98,7 +98,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
             <button
               onClick={() => scroll('right')}
               className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
-              aria-label="Przesuń w prawo"
+              aria-label="Go right"
             >
               <RiArrowRightSLine className="h-6 w-6" />
             </button>
@@ -106,7 +106,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
         </div>
 
         {isScrollable && maxSlides > 1 && (
-          <div className="mt-0 flex justify-center gap-2 md:mt-2 lg:mt-4" role="tablist" aria-label="Nawigacja karuzeli projektów">
+          <div className="mt-0 flex justify-center gap-2 md:mt-2 lg:mt-4" role="tablist" aria-label="Navigation of projects carousel">
             {Array.from({ length: maxSlides }).map((_, i) => (
               <button
                 key={i}

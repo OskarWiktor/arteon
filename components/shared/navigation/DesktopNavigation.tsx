@@ -31,7 +31,7 @@ export default function DesktopNavigation() {
   const [isOfferOpen, setIsOfferOpen] = useState(false);
 
   return (
-    <nav className="hidden md:flex" aria-label="Główna nawigacja">
+    <nav className="hidden md:flex" aria-label="Main navigation">
       <LayoutGroup>
         <ul className="relative flex gap-3 lg:gap-6">
           {navigationItems.map(({ href, label, exact }) => {

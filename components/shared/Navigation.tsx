@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useState as useClientState } from 'react';
+import { usePathname } from 'next/navigation';
 import { RiInstagramLine, RiFacebookFill, RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
 
@@ -9,7 +10,23 @@ import DesktopNavigation from './navigation/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useClientState(false);
+  const pathname = usePathname();
+  const [host, setHost] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setHost(window.location.hostname);
+    }
+  }, []);
+
+  const isPL = host?.includes('.pl');
+  const isEN = host?.includes('.com');
+
+  const getTargetDomain = (target: 'pl' | 'en') => {
+    if (target === 'pl') return 'https://www.arteonagency.pl';
+    return 'https://www.arteonagency.com';
+  };
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -23,10 +40,15 @@ export default function Navigation() {
 
           <div className="hidden items-center gap-2 md:flex">
             <div className="mr-2 lg:mr-4">
-              <button className="cursor-pointer text-xl text-amber-500 focus-visible:outline-2 focus-visible:outline-black">PL</button>
+              <a href={`${getTargetDomain('pl')}${pathname}`}>
+                <button className={`cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-amber-500' : 'text-black'}`}>PL</button>
+              </a>
               <span className="text-xl"> / </span>
-              <button className="cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-black">EN</button>
+              <a href={`${getTargetDomain('en')}${pathname}`}>
+                <button className={`cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-amber-500' : 'text-black'}`}>EN</button>
+              </a>
             </div>
+
             <a href="https://www.instagram.com/arteon.pl" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="focus-visible:outline-2 focus-visible:outline-black">
               <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
             </a>
@@ -35,7 +57,7 @@ export default function Navigation() {
             </a>
           </div>
 
-          <button onClick={toggleMenu} className="block md:hidden" aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}>
+          <button onClick={toggleMenu} className="block md:hidden" aria-label={isOpen ? 'Close menu' : 'Open menu'}>
             {isOpen ? <RiCloseLine size={28} /> : <RiMenuLine size={28} />}
           </button>
         </section>

@@ -63,7 +63,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
           transition={{ duration: 0.3 }}
           className="absolute top-16 left-0 z-50 w-full origin-top bg-white/90 px-6 pt-2 pb-6 shadow-md backdrop-blur-sm md:hidden"
           ref={menuRef}
-          aria-label="Mobilne menu nawigacji"
+          aria-label="Mobile navigation menu"
         >
           <motion.ul
             initial="hidden"

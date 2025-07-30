@@ -28,9 +28,7 @@ export default function Footer() {
   return (
     <div className="mt-12 border-t border-t-gray-200 px-4 py-8 md:mt-16 md:px-8 lg:mt-24 lg:px-16">
       <Wrapper>
-        <footer className="flex w-full flex-col gap-8" aria-label="Stopka strony">
-          <h2 className="sr-only">Nawigacja w stopce</h2>
-
+        <footer className="flex w-full flex-col gap-8" aria-label="Website Footer">
           <div className="flex flex-col items-center justify-between gap-4 md:hidden">
             <div className="flex w-full items-center justify-between">
               <Image src="/assets/arteon-logo.png" width={140} height={40} alt="Logo firmy Arteon" className="object-contain" />
@@ -49,7 +47,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-            <nav className="w-full md:w-1/4" aria-label="Oferta">
+            <nav className="w-full md:w-1/4">
               <ul className="flex flex-col gap-1 text-sm font-semibold">
                 {offerLinks.map(({ href, title }) => (
                   <li key={title}>
@@ -61,7 +59,7 @@ export default function Footer() {
               </ul>
             </nav>
 
-            <nav className="w-full md:w-1/4" aria-label="Nawigacja">
+            <nav className="w-full md:w-1/4">
               <ul className="flex flex-col items-start gap-1 text-sm font-semibold">
                 {navLinks.map(({ href, label }) => {
                   const isActive = pathname === href;

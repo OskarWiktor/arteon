@@ -6,7 +6,7 @@ import CalculatorSteps, { Selections } from '../ui/calculator/CalculatorSteps';
 import CalculatorResult from '../ui/calculator/CalculatorResult';
 
 import type { Step } from '@/types/calculator';
-import { baseSteps, getStepsByType } from '@/data/calculator';
+import { baseSteps, getStepsByType } from '@/data/pl/calculator';
 
 export default function Calculator() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -155,7 +155,14 @@ export default function Calculator() {
         />
       ) : (
         <CalculatorResult
+          title="Szacunkowy koszt"
+          disclaimer="* Końcowa wycena jest zależna od indywidualnych potrzeb"
+          inPrice="Co jest w cenie:"
           totalPrice={totalPrice}
+          startAgain="Zacznij od nowa"
+          from="od"
+          to="do"
+          currency="zł brutto"
           onReset={() => {
             setCurrentStep(0);
             setSelections({});
