@@ -1,33 +1,19 @@
+import { getPageMetadata } from '@/data/seo';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import { Metadata } from 'next';
 import FaqMarketing from '@/components/sections/faqs/FaqMarketing';
 
-export const metadata: Metadata = {
-  title: 'Marketing internetowy | Arteon',
-  description:
-    'Skuteczne strategie marketingu internetowego i reklamy online, które zwiększają widoczność Twojej marki i generują więcej klientów. Kompleksowa obsługa SEO, Google Ads, social media i więcej.',
-  keywords: [
-    'marketing internetowy Arteon',
-    'marketing internetowy',
-    'reklama online',
-    'kampanie Google Ads',
-    'pozycjonowanie SEO',
-    'pozycjonowanie stron internetowych',
-    'marketing w social media',
-    'zarządzanie reklamami',
-    'strategia marketingowa online',
-    'content marketing',
-    'email marketing',
-    'analiza i optymalizacja kampanii',
-    'marketing dla firm',
-    'kampanie reklamowe online',
-    'remarketing',
-    'marketing dla e-commerce',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('marketing', locale);
+}
 
 export default function Page() {
   return (

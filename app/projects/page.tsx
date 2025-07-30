@@ -1,28 +1,18 @@
+import { getPageMetadata } from '@/data/seo';
 import type { Metadata } from 'next';
+import { headers } from 'next/headers';
 
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilters';
 
-export const metadata: Metadata = {
-  title: 'Projekty | Arteon',
-  description: 'Zobacz wybrane projekty Arteon: strony internetowe, sklepy, blogi, grafiki i kampanie marketingowe. Tworzymy skuteczne i estetyczne rozwiązania dopasowane do potrzeb klientów.',
-  keywords: [
-    'projekty Arteon',
-    'realizacje stron internetowych',
-    'projekty sklepów internetowych',
-    'projekty blogów',
-    'projekty graficzne',
-    'portfolio agencji kreatywnej',
-    'portfolio web design',
-    'branding i identyfikacja wizualna',
-    'realizacje kampanii marketingowych',
-    'projekty logo i grafiki',
-    'tworzenie nowoczesnych stron',
-    'inspiracje web design',
-    'case studies stron',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('home', locale);
+}
 
 export default function Page() {
   return (

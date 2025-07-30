@@ -1,30 +1,19 @@
+import { getPageMetadata } from '@/data/seo';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-
 import Mission from '@/components/sections/steps/Mission';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Grafika komputerowa | Arteon',
-  description:
-    'Profesjonalne usługi grafiki komputerowej online i offline: projektowanie logo, identyfikacji wizualnej, materiałów reklamowych oraz grafik na potrzeby stron i mediów społecznościowych.',
-  keywords: [
-    'grafika komputerowa Arteon',
-    'grafika komputerowa',
-    'projektowanie logo',
-    'identyfikacja wizualna',
-    'grafika na strony internetowe',
-    'grafika na social media',
-    'projekty materiałów reklamowych',
-    'drukowane materiały reklamowe',
-    'branding',
-    'projektowanie wizytówek',
-    'grafika reklamowa online',
-    'grafika reklamowa offline',
-    'grafika wektorowa',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('design', locale);
+}
 
 export default function Page() {
   return (

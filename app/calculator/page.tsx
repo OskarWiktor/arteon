@@ -17,11 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Page() {
   return (
     <>
-      <HeroBaner
-        title="Kalkulator wycen"
-        description="Sprawdź, ile kosztuje Twój wymarzony projekt w kilka sekund"
-        backgroundImage="/assets/test.jpg"
-      />
+      <HeroBaner title="Kalkulator wycen" description="Sprawdź, ile kosztuje Twój wymarzony projekt w kilka sekund" backgroundImage="/assets/test.jpg" />
 
       <Calculator />
 

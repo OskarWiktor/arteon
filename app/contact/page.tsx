@@ -1,29 +1,19 @@
 import type { Metadata } from 'next';
+import { headers } from 'next/dist/server/request/headers';
+import { getPageMetadata } from '@/data/seo';
+
 import ContactForm from '@/components/sections/ContactForm';
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import ContactSteps from '@/components/sections/steps/ContactSteps';
 
-export const metadata: Metadata = {
-  title: 'Kontakt | Arteon',
-  description: 'Skontaktuj się z Arteon i opisz swój projekt strony, sklepu lub bloga. Szybko przygotujemy ofertę i plan działania dopasowany do Twoich potrzeb.',
-  keywords: [
-    'kontakt Arteon',
-    'studio kreatywne',
-    'tworzenie stron internetowych',
-    'projektowanie sklepów internetowych',
-    'tworzenie blogów',
-    'grafika komputerowa',
-    'identyfikacja wizualna',
-    'marketing internetowy',
-    'reklamy online',
-    'oferta strony internetowej',
-    'nowa strona firmowa',
-    'branding i design',
-    'seo i reklama',
-    'projekt graficzny',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('contact', locale);
+}
 
 export default function Page() {
   return (

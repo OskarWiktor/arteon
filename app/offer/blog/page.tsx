@@ -1,30 +1,19 @@
+import { getPageMetadata } from '@/data/seo';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import { Metadata } from 'next';
 import FaqBlog from '@/components/sections/faqs/FaqBlog';
 
-export const metadata: Metadata = {
-  title: 'Blogi internetowe | Arteon',
-  description: 'Tworzymy funkcjonalne i estetyczne blogi internetowe, które przyciągają czytelników i wspierają Twoją markę. Profesjonalna budowa bloga dostosowana do Twoich potrzeb.',
-  keywords: [
-    'blogi internetowe Arteon',
-    'blogi internetowe',
-    'tworzenie blogów',
-    'projektowanie blogów internetowych',
-    'blog na zamówienie',
-    'platforma blogowa',
-    'blog WordPress',
-    'blog z indywidualnym designem',
-    'blog firmowy',
-    'optymalizacja bloga',
-    'blog responsywny',
-    'zarządzanie blogiem',
-    'blog SEO',
-    'blog dla marki osobistej',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('blog', locale);
+}
 
 export default function Page() {
   return (

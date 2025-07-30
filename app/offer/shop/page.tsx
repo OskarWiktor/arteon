@@ -1,31 +1,19 @@
+import { getPageMetadata } from '@/data/seo';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import { Metadata } from 'next';
 import FaqShop from '@/components/sections/faqs/FaqShop';
 
-export const metadata: Metadata = {
-  title: 'Sklepy internetowe | Arteon',
-  description: 'Projektujemy funkcjonalne i atrakcyjne sklepy internetowe, które zwiększają sprzedaż i ułatwiają zarządzanie. Arteon – Twój partner w e-commerce.',
-  keywords: [
-    'sklepy internetowe Arteon',
-    'sklepy internetowe',
-    'tworzenie sklepów online',
-    'projektowanie sklepów internetowych',
-    'sklep internetowy na zamówienie',
-    'platforma e-commerce',
-    'sklep WooCommerce',
-    'sklep Webflow',
-    'sklep Next',
-    'sklep z integracją płatności',
-    'responsywny sklep internetowy',
-    'optymalizacja sklepu online',
-    'projekt UX dla sklepu',
-    'sklep internetowy z obsługą',
-    'zwiększenie sprzedaży online',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('ecommerce', locale);
+}
 
 export default function Page() {
   return (

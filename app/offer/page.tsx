@@ -1,32 +1,19 @@
+import { getPageMetadata } from '@/data/seo';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import { Metadata } from 'next';
 import OfferSubPages from '@/components/sections/OfferSubPages';
 
-export const metadata: Metadata = {
-  title: 'Oferta| Arteon',
-  description: 'Poznaj pełną ofertę Arteon: tworzenie stron i sklepów internetowych, projektowanie graficzne, content marketing, kampanie reklamowe i kompleksowy branding.',
-  keywords: [
-    'oferta Arteon',
-    'usługi kreatywne',
-    'tworzenie stron internetowych',
-    'strony internetowe',
-    'sklepy internetowe',
-    'tworzenie sklepów internetowych',
-    'tworzenie blogów internetowych',
-    'grafika komputerowa',
-    'branding i identyfikacja wizualna',
-    'copywriting i content marketing',
-    'reklamy Google Ads',
-    'social media marketing',
-    'projektowanie logo',
-    'tworzenie treści na strony',
-    'kompleksowa oferta marketingowa',
-    'agencja kreatywna',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('offer', locale);
+}
 
 export default function Page() {
   return (

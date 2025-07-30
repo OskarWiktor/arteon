@@ -1,31 +1,19 @@
+import { getPageMetadata } from '@/data/seo';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import { Metadata } from 'next';
 import FaqContent from '@/components/sections/faqs/FaqContent';
 
-export const metadata: Metadata = {
-  title: 'Tworzenie treści | Arteon',
-  description: 'Tworzenie treści dla stron internetowych, sklepów, blogów i mediów społecznościowych. Skuteczny content, który angażuje, sprzedaje i wzmacnia Twoją markę online.',
-  keywords: [
-    'tworzenie treści Arteon',
-    'tworzenie treści',
-    'content marketing',
-    'teksty na stronę internetową',
-    'opisy produktów do sklepu',
-    'artykuły blogowe',
-    'copywriting SEO',
-    'treści do social mediów',
-    'pisanie postów na Facebooka i Instagrama',
-    'strategie contentowe',
-    'pisanie tekstów sprzedażowych',
-    'opisy usług',
-    'redakcja i korekta treści',
-    'treści na landing page',
-    'kompleksowy content dla firm',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('content', locale);
+}
 
 export default function Page() {
   return (

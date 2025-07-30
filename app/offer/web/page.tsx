@@ -1,34 +1,19 @@
+import { getPageMetadata } from '@/data/seo';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import { Metadata } from 'next';
 import FaqWebsite from '@/components/sections/faqs/FaqWebsite';
 
-export const metadata: Metadata = {
-  title: 'Strony internetowe | Arteon',
-  description: 'Tworzymy nowoczesne, szybkie i responsywne strony internetowe dopasowane do Twoich potrzeb. Arteon to połączenie estetyki, funkcjonalności i skuteczności',
-  keywords: [
-    'strony internetowe Arteon',
-    'strony internetowe',
-    'tworzenie stron internetowych',
-    'projektowanie stron www',
-    'nowoczesne strony internetowe',
-    'responsywna strona internetowa',
-    'strona firmowa',
-    'landing page',
-    'projekt strony internetowej',
-    'oferta tworzenia stron',
-    'agencja web design',
-    'web development',
-    'projekt UX UI',
-    'optymalizacja strony www',
-    'strony WordPress',
-    'strony Webflow',
-    'strony Custom Code',
-    'strony bez szablonów',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('websites', locale);
+}
 
 export default function Page() {
   return (

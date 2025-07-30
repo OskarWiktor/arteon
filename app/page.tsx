@@ -1,4 +1,7 @@
+import { getPageMetadata } from '@/data/seo';
 import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import TechStack from '@/components/sections/TechStack';
@@ -6,27 +9,13 @@ import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 
-export const metadata: Metadata = {
-  title: 'Strony www, branding, marketing | Arteon',
-  description: 'Arteon to kreatywne studio projektowe. Projektujemy responsywne strony internetowe, silne identyfikacje wizualne, angażujące treści oraz skuteczne kampanie marketingowe.',
-  keywords: [
-    'projektowanie stron internetowych',
-    'projektowanie sklepów internetowych',
-    'projektowanie blogów internetowych',
-    'strony internetowe',
-    'sklepu internetowe',
-    'blogi internetowe',
-    'grafika komputerowa',
-    'branding',
-    'identyfikacja wizualna',
-    'tworzenie treści',
-    'content marketing',
-    'kampanie reklamowe',
-    'UX UI design',
-    'social media',
-    'studio projektowe',
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+
+  return getPageMetadata('home', locale);
+}
 
 export default function Home() {
   return (
