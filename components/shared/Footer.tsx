@@ -19,7 +19,6 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projekty' },
   { href: '/calculator', label: 'Wycena' },
-  { href: '/about-us', label: 'O nas' },
 ];
 
 export default function Footer() {

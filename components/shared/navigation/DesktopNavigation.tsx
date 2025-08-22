@@ -13,7 +13,6 @@ const navigationItems = [
   { href: '/projects', label: 'Projekty' },
   { href: '/offer', label: 'Oferta' },
   { href: '/calculator', label: 'Wycena' },
-  { href: '/about-us', label: 'O nas' },
   { href: '/contact', label: 'Kontakt' },
 ];
 

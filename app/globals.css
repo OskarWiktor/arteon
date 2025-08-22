@@ -59,7 +59,7 @@ h4 {
 }
 
 h5 {
-  @apply text-lxl font-semibold text-balance text-gray-900 md:text-2xl;
+  @apply text-xl font-semibold text-balance text-gray-900 md:text-2xl;
 }
 
 h6 {
