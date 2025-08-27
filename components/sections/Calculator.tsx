@@ -99,8 +99,11 @@ export default function Calculator() {
   const handleOptionClick = (optValue: string) => {
     setError(null);
     const prev = selections[currentStep] || [];
-    const next = step?.type === 'multi' ? (prev.includes(optValue) ? prev.filter((v) => v !== optValue) : [...prev, optValue]) : [optValue];
+
+    const next = step?.type === 'multi' ? (prev.includes(optValue) ? prev.filter((v) => v !== optValue) : [...prev, optValue]) : prev[0] === optValue ? [] : [optValue];
+
     setSelections((s) => ({ ...s, [currentStep]: next }));
+
     if (currentStep === 0) {
       setActiveSteps(next[0] ? [baseSteps[0], ...getStepsByType(next[0])] : baseSteps);
     }
@@ -139,7 +142,7 @@ export default function Calculator() {
   };
 
   return (
-    <Wrapper className="mt-12 px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0">
+    <Wrapper className="mt-18 md:mt-26 lg:mt-32">
       {!showResult && step ? (
         <CalculatorSteps
           step={step}

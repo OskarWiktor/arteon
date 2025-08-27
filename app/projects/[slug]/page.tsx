@@ -27,7 +27,7 @@ export default function ProjectPage({ params }: PageProps) {
   return (
     <>
       <Image src={project.image} alt={project.title} className="max-h-96 w-full object-cover object-center" width={1920} height={1080} />
-      <Wrapper className="px-4 md:px-6">
+      <Wrapper className="md:">
         <h1 className="mt-8">{project.title}</h1>
         <h6 className="mt-2 text-sm capitalize">{project.category}</h6>
         <p className="my-4">{project.short}</p>

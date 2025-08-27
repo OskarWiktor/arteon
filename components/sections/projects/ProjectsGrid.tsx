@@ -28,9 +28,9 @@ export default function ProjectsGrid({ selectedCategory }: Props) {
   const filteredProjects = selectedCategory ? allProjects.filter((p) => p.category.some((cat) => selectedCategory.includes(cat))) : allProjects;
 
   return (
-    <section className="w-full px-4 md:px-6">
+    <section className="md: w-full">
       <Wrapper>
-        <div className="grid auto-rows-max grid-cols-1 gap-8 pt-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid auto-rows-max grid-cols-1 gap-8 pt-8 md:grid-cols-2">
           <AnimatePresence mode="wait" key={selectedCategory ?? 'all'}>
             {filteredProjects.map((project, i) => (
               <motion.div key={project.slug} variants={cardVariants} initial="hidden" animate="visible" exit="exit" custom={i}>

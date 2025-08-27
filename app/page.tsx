@@ -39,7 +39,10 @@ export default function Home() {
         id="www"
         title={
           <>
-            <span className="text-amber-500">Witryna</span> - fundament Twojej obecności
+            <span className="marker-after">
+              <span>Witryna</span>
+            </span>
+            <span> - fundament Twojej obecności</span>
           </>
         }
         description="Tworzymy strony, sklepy oraz blogi, które angażują użytkowników i zwiększają konwersje."

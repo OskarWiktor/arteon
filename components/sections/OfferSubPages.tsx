@@ -44,8 +44,8 @@ const offerSubPages = [
 
 export default function OfferSubPages() {
   return (
-    <section className="mt-12 w-full md:mt-16 lg:mt-24">
-      <Wrapper className="px-4 md:px-6 lg:px-0">
+    <section className="mt-18 w-full md:mt-30 lg:mt-38">
+      <Wrapper className=" ">
         <div className="grid auto-rows-max grid-cols-1 gap-8 pt-8 md:grid-cols-2 lg:grid-cols-3">
           {offerSubPages.map(({ href, title, desc, image }) => (
             <Link key={href} href={href} className="group relative overflow-hidden" aria-label={title}>
@@ -53,7 +53,7 @@ export default function OfferSubPages() {
                 <img src={image} alt={title} className="object-cover" />
               </div>
               <div className="p-4">
-                <h5 className="text-lg font-semibold">{title}</h5>
+                <h5 className="text-lg">{title}</h5>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">{desc}</p>
               </div>
             </Link>

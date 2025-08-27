@@ -10,14 +10,14 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <Link href={`/projects/${project.slug}`} className="min-w-82 rounded-md shadow" role="group" aria-label={`Project card ${project.title}`}>
-      <div className="relative h-40 w-full overflow-hidden rounded-md shadow-md transition-shadow hover:shadow-xl sm:h-48">
+    <Link href={`/projects/${project.slug}`} className="min-w-82" role="group" aria-label={`Project card ${project.title}`}>
+      <div className="relative h-80 w-full overflow-hidden shadow-md transition-shadow hover:shadow-xl">
         <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" priority />
       </div>
 
-      <div className="mx-4 my-2 flex flex-col">
-        <h6>{project.title}</h6>
-        <p>{project.short}</p>
+      <div className="flex flex-col md:mx-4 md:my-2">
+        <h4 className="mt-4">{project.title}</h4>
+        <p className="md:mt-2">{project.short}</p>
       </div>
     </Link>
   );

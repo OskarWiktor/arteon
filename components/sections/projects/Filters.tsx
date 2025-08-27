@@ -13,15 +13,15 @@ const categoriesName = ['Strony', 'Sklepy', 'Blogi'];
 
 export default function Filters({ selectedCategory, onSelectCategory }: Props) {
   return (
-    <section className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0">
+    <section className="mt-18 w-full md:mt-26 lg:mt-32">
       <Wrapper className="flex flex-col">
         <h2 className="mb-4">Filtry:</h2>
         <div className="flex flex-wrap gap-2">
-          <Button variant={!selectedCategory ? 'accent' : 'normal'} onClick={() => onSelectCategory(null)}>
+          <Button variant={!selectedCategory ? 'accent' : 'normal'} size="small" onClick={() => onSelectCategory(null)}>
             Wszystkie
           </Button>
           {categories.map((category, index) => (
-            <Button key={category} variant={selectedCategory === category ? 'accent' : 'normal'} onClick={() => onSelectCategory(category)}>
+            <Button key={category} variant={selectedCategory === category ? 'accent' : 'normal'} size="small" onClick={() => onSelectCategory(category)}>
               {categoriesName[index]}
             </Button>
           ))}

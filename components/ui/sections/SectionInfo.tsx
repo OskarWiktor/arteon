@@ -10,10 +10,10 @@ interface SectionInfoProps {
 
 export default function SectionInfo({ id, title, description, children }: SectionInfoProps) {
   return (
-    <section id={id} className="mt-12 w-full scroll-mt-24 md:mt-16 lg:mt-24" role="region">
-      <Wrapper className="flex flex-col px-4 md:px-6 lg:px-0">
-        <h2>{title}</h2>
-        {description && <p className="mt-2 md:mt-4">{description}</p>}
+    <section id={id} className="mt-18 w-full scroll-mt-24 md:mt-30 lg:mt-38" role="region">
+      <Wrapper className="flex flex-col">
+        <h2 className="mb-4">{title}</h2>
+        {description && <p>{description}</p>}
         {children}
       </Wrapper>
     </section>

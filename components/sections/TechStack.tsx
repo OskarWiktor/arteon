@@ -36,12 +36,12 @@ export default function TechStack() {
 
   return (
     <Wrapper>
-      <section className="relative mt-12 overflow-hidden md:mt-16 lg:mt-24">
+      <section className="relative mt-18 overflow-hidden md:mt-30 lg:mt-38">
         <h4>Czego używamy?</h4>
         <div ref={containerRef} className="mt-4 overflow-hidden" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <motion.div style={{ x }} className="flex gap-2 whitespace-nowrap md:gap-6 lg:gap-10">
             {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
-              <div key={`${label}-${index}`} className="flex shrink-0 items-center px-4">
+              <div key={`${label}-${index}`} className="flex shrink-0 items-center">
                 <span className="pr-2 text-2xl">{label}</span>
                 <Icon className="h-auto w-6" />
               </div>

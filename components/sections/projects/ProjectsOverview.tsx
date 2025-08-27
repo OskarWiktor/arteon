@@ -72,23 +72,23 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
 
   return (
     <Wrapper>
-      <section className="mt-12 w-full px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0" role="region">
-        <h2>{title}</h2>
+      <section className="mt-18 w-full md:mt-26 lg:mt-32" role="region">
+        <h2 className="md:mb-2">{title}</h2>
 
         <div className="relative">
           {isScrollable && (
             <button
               onClick={() => scroll('left')}
-              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
+              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
               aria-label="Go left"
             >
-              <RiArrowLeftSLine className="h-6 w-6" />
+              <RiArrowLeftSLine className="h-8 w-8" />
             </button>
           )}
 
-          <div ref={scrollRef} className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth py-4" aria-label="Carousel with projects" tabIndex={0}>
+          <div ref={scrollRef} className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth pt-4 pb-6" aria-label="Carousel with projects" tabIndex={0}>
             {finalProjects.map((project, i) => (
-              <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[300px] md:min-w-[350px]">
+              <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[340px] md:min-w-[420px] lg:min-w-[520px]">
                 <ProjectCard project={project} />
               </div>
             ))}
@@ -97,10 +97,10 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
           {isScrollable && (
             <button
               onClick={() => scroll('right')}
-              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border-x-1 border-amber-500 bg-white p-2 shadow-lg transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
+              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
               aria-label="Go right"
             >
-              <RiArrowRightSLine className="h-6 w-6" />
+              <RiArrowRightSLine className="h-8 w-8" />
             </button>
           )}
         </div>

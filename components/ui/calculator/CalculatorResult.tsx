@@ -25,8 +25,8 @@ export default function CalculatorResult({ totalPrice, onReset, pathKey, title, 
       <span className="text-xs text-gray-700">{disclaimer}</span>
 
       {pathKey && (
-        <div className="mt-6 text-left text-gray-700">
-          <h4 className="mb-2 font-semibold">{inPrice}</h4>
+        <div className="mt-6 text-left text-gray-800">
+          <h4 className="mb-2">{inPrice}</h4>
           <ul className="list-disc pl-6">
             {includedPerPath[pathKey].map((item, i) => (
               <li key={i}>{item}</li>

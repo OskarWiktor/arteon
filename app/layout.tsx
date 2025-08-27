@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Script from "next/script";
+import Script from 'next/script';
 import React from 'react';
 import { headers } from 'next/headers';
 
@@ -23,10 +23,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang={locale}>
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css" />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-89KYXWSGYS"
-          strategy="afterInteractive"
-        />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-89KYXWSGYS" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];

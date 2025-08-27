@@ -28,40 +28,20 @@ export default function ContactForm() {
 
   return (
     <Wrapper>
-      <form className="mt-12 flex w-full flex-col gap-6 px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0" action="https://formspree.io/f/xldnokbw" method="POST" onSubmit={handleSubmit}>
+      <form className="mt-18 flex w-full flex-col gap-6 md:mt-26 lg:mt-32" action="https://formspree.io/f/xldnokbw" method="POST" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="font-semibold text-gray-800">
-            Imię i nazwisko
-          </label>
-          <input
-            id="name"
-            name="Imię i Nazwisko"
-            placeholder="Jan Kowalski"
-            type="text"
-            required
-            className="w-full border-b border-gray-300 bg-transparent px-2 py-1.5 text-gray-700 transition focus:outline-none"
-          />
+          <label htmlFor="name">Imię i nazwisko</label>
+          <input id="name" name="Imię i Nazwisko" placeholder="Jan Kowalski" type="text" required />
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="font-semibold text-gray-800">
-            Email
-          </label>
-          <input
-            id="email"
-            name="Email"
-            placeholder="jan.kowalski@gmail.com"
-            type="email"
-            required
-            className="w-full border-b border-gray-300 bg-transparent px-2 py-1.5 text-gray-700 transition focus:outline-none"
-          />
+          <label htmlFor="email">Email</label>
+          <input id="email" name="Email" placeholder="jan.kowalski@gmail.com" type="email" required />
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="subject" className="font-semibold text-gray-800">
-            Temat
-          </label>
-          <select id="topic" name="Zakres współpracy" required defaultValue="" className="w-full border-b border-gray-300 bg-transparent px-2 py-1.5 text-gray-700 transition focus:outline-none">
+          <label htmlFor="subject">Temat</label>
+          <select id="topic" name="Zakres współpracy" required defaultValue="">
             <option value="" disabled>
               Wybierz temat
             </option>
@@ -74,9 +54,7 @@ export default function ContactForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="font-semibold text-gray-800">
-            Wiadomość
-          </label>
+          <label htmlFor="message">Wiadomość</label>
           <textarea
             id="message"
             name="Wiadomość"
@@ -86,7 +64,9 @@ export default function ContactForm() {
           />
         </div>
 
-        <Button variant="accent">Wyślij</Button>
+        <Button variant="dark" arrow>
+          Wyślij
+        </Button>
 
         {formStatus === 'error' && <span className="text-red-700">Coś poszło nie tak. Sprawdź poprawność danych i próbuj ponownie</span>}
         {formStatus === 'success' && <span className="text-amber-500">Wiadomość wysłana! Już szykujemy odpowiedź</span>}

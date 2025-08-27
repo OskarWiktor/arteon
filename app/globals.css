@@ -1,10 +1,10 @@
 @import 'tailwindcss';
+@import '@fontsource-variable/instrument-sans/index.css';
 
 :root {
-  --background: #ffffff;
+  --background: #f1f1f1;
   --foreground: #171717;
-  --font-sans: 'neue-haas-grotesk-display', sans-serif;
-  --font-serif: 'the-seasons', serif;
+  --font-sans: 'Instrument Sans Variable';
 }
 
 @theme inline {
@@ -37,31 +37,127 @@ body {
   color: var(--foreground);
 }
 
+/*    SCROLLBAR    */
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.gray.100');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.amber.500');
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.amber.500');
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.amber.500') theme('colors.gray.100');
+}
+
+/*    TEXT    */
+
+.text-light {
+  @apply text-[#868686];
+}
+.text-mid {
+  @apply text-[#2B2B2B];
+}
+.text-dark {
+  @apply text-[#080808];
+}
+
 p,
 li {
-  @apply text-base leading-relaxed font-medium text-balance text-gray-800 md:text-lg;
+  @apply leading-relaxed font-normal text-balance;
+  font-size: clamp(16px, calc(16px + 4 * ((100vw - 360px) / 1080)), 20px);
 }
 
-h1 {
-  @apply text-5xl font-semibold text-balance text-gray-900 md:text-7xl;
-}
-
-h2 {
-  @apply text-3xl font-semibold text-balance text-gray-900 md:text-4xl;
-}
-
-h3 {
-  @apply text-3xl font-semibold text-balance text-gray-900 md:text-4xl;
-}
-
-h4 {
-  @apply text-2xl font-semibold text-balance text-gray-900 md:text-3xl;
-}
-
-h5 {
-  @apply text-xl font-semibold text-balance text-gray-900 md:text-2xl;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  @apply text-base font-semibold text-balance text-gray-900 md:text-lg;
+  @apply font-medium text-balance text-[#080808];
+}
+
+h1,
+.h1 {
+  @apply text-5xl font-bold md:text-7xl;
+}
+
+h2,
+.h2 {
+  @apply text-4xl font-bold md:text-5xl;
+}
+
+h3,
+.h3 {
+  @apply text-4xl font-bold md:text-5xl;
+}
+
+h4,
+.h4 {
+  @apply text-2xl font-semibold md:text-4xl;
+}
+
+h5,
+.h5 {
+  @apply text-2xl font-semibold md:text-3xl;
+}
+
+h6,
+.h6 {
+  @apply text-lg font-semibold md:text-xl;
+}
+
+/*    FORMS    */
+
+label {
+  @apply text-xl font-medium text-[#2B2B2B] md:text-2xl;
+}
+
+input,
+select,
+textarea {
+  @apply w-full rounded border border-gray-300 bg-transparent px-2 py-3 text-lg text-[#2B2B2B] transition focus:outline-none;
+}
+
+@layer base {
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    @apply bg-amber-100 text-[#2B2B2B];
+    -webkit-box-shadow: 0 0 0px 1000px theme('colors.amber.100') inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+@layer base {
+  select option:checked,
+  select option:focus,
+  select option:hover {
+    @apply bg-amber-100 text-[#2B2B2B];
+  }
+}
+
+/*    CUSTOM    */
+
+.marker-after {
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
+  p,
+  span {
+    @apply relative z-10;
+  }
+}
+
+.marker-before {
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
 }

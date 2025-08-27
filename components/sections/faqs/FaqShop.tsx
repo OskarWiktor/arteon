@@ -62,8 +62,8 @@ const faqItems = [
 
 export default function FaqStore() {
   return (
-    <Wrapper className="mt-12 px-4 md:mt-16 md:px-6 lg:mt-24 lg:px-0">
-      <h2 className="mb-6 text-xl font-semibold">Najczęstsze pytania</h2>
+    <Wrapper className="mt-18 md:mt-26 lg:mt-32">
+      <h2 className="mb-6">Najczęstsze pytania</h2>
       <FaqPanels items={faqItems} />
     </Wrapper>
   );

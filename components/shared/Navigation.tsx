@@ -31,29 +31,29 @@ export default function Navigation() {
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <div className="sticky top-0 z-50 w-full bg-white/90 px-4 shadow-xl backdrop-blur-sm md:px-6 lg:px-0">
+    <div className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
       <Wrapper>
-        <section className="flex h-16 items-center justify-between lg:h-20">
-          <Image src="/assets/arteon-logo.png" width={200} height={50} alt="Arteon company logo" />
+        <section className="flex h-16 items-center justify-between lg:h-18">
+          <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon company logo" />
 
           <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
             <div className="mr-2 lg:mr-4">
               <a href={`${getTargetDomain('pl')}${pathname}`}>
-                <button className={`cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-amber-500' : 'text-black'}`}>PL</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>PL</button>
               </a>
-              <span className="text-xl"> / </span>
+              <span className="text-lg text-[#2B2B2B]"> / </span>
               <a href={`${getTargetDomain('en')}${pathname}`}>
-                <button className={`cursor-pointer text-xl focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-amber-500' : 'text-black'}`}>EN</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>EN</button>
               </a>
             </div>
 
             <a href="https://www.instagram.com/arteon.pl" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="focus-visible:outline-2 focus-visible:outline-black">
-              <RiInstagramLine className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
+              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" />
             </a>
             <a href="https://www.facebook.com/arteonpl" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="focus-visible:outline-2 focus-visible:outline-black">
-              <RiFacebookFill className="h-6 w-6 text-gray-900 transition hover:text-amber-500" />
+              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" />
             </a>
           </div>
 

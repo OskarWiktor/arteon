@@ -49,11 +49,11 @@ export default function HeroBanner({
 
   return (
     <section
-      className={`flex h-fit min-h-[320px] w-full md:h-[380px] lg:h-[520px] ${backgroundImage ? 'bg-cover bg-center' : ''}`}
+      className={`flex h-fit min-h-[420px] w-full md:h-[480px] lg:h-[620px] ${backgroundImage ? 'bg-cover bg-center' : ''}`}
       style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       role="region"
     >
-      <div className={`my-auto flex w-full flex-col px-4 md:px-8 ${alignmentClass}`} role="group">
+      <div className={`m-auto flex w-full max-w-[820px] flex-col md:px-8 ${alignmentClass}`} role="group">
         {subtitle && (
           <span className="italic" tabIndex={0}>
             {subtitle}
@@ -82,9 +82,9 @@ export default function HeroBanner({
         </h1>
 
         {description && (
-          <h5 className="my-2 md:my-4" tabIndex={0}>
+          <p className="my-2 md:my-4" tabIndex={0}>
             {description}
-          </h5>
+          </p>
         )}
 
         {(buttonAccent || buttonSecond) && (
