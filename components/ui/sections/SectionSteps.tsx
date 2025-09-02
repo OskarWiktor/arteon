@@ -67,7 +67,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative z-10 pb-8">
-        {subtitle && <span className="text-xl tracking-widest text-[#868686] uppercase">{subtitle}</span>}
+        {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
         {title && <h3 className={toneTextClass}>{title}</h3>}
         {description && <p className={`max-w-2xl md:mt-3 ${toneMutedClass}`}>{description}</p>}
 
@@ -91,7 +91,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
                 <h4 id={`step-title-${index}`} className="z-10" tabIndex={0}>
                   {title}
                 </h4>
-                {subtitle && <span className="text-[#868686]">{subtitle}</span>}
+                {subtitle && <span className="text-[#5e5e5e]">{subtitle}</span>}
 
                 <div id={`step-desc-${index}`} tabIndex={0} className="z-10 mt-2">
                   {description}

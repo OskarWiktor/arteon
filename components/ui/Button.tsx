@@ -52,7 +52,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
 
   const baseClass =
     `transition w-fit focus:outline-none focus-visible:ring-2 hover:translate-y-[-2px] ` +
-    `inline-flex rounded-md items-center font-medium shadow-md hover:shadow-xl md:text-lg ` +
+    `inline-flex rounded-md items-center font-medium shadow-md hover:shadow-xl text-base ` +
     `${sizeClass} ${variantClass} ` +
     `${disabled ? 'cursor-not-allowed opacity-50 pointer-events-none' : 'cursor-pointer'}`;
 

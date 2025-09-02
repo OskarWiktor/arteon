@@ -24,7 +24,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
 
   return (
     <div>
-      {subtitle && <span className="text-xl tracking-widest text-[#868686] uppercase">{subtitle}</span>}
+      {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
       <h2>{title}</h2>
       {items.map((item, index) => {
         const isOpen = index === activeIndex;

@@ -19,7 +19,7 @@ export default function FeatureGrid({ title, subtitle, description, items }: Fea
     <section>
       <Wrapper>
         <div>
-          {subtitle && <span className="text-xl tracking-widest text-[#868686] uppercase">{subtitle}</span>}
+          {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
           <h2 className="md:mt-2">{title}</h2>
           {description && <p className="mt-3">{description}</p>}
 

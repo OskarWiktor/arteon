@@ -11,7 +11,7 @@ function Section({ id, title, children, subtitle }: { id: string; title: string;
   return (
     <section id={id} aria-labelledby={`${id}-title`} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-8">
-        {subtitle ? <p className="text-sm tracking-widest text-[#868686] uppercase">{subtitle}</p> : null}
+        {subtitle ? <p className="text-sm tracking-widest text-[#5e5e5e] uppercase">{subtitle}</p> : null}
         <h2 id={`${id}-title`} className="text-2xl leading-tight font-semibold text-[#080808]">
           {title}
         </h2>
@@ -38,7 +38,7 @@ function CTA({ href, label, variant = 'primary', ariaLabel }: { href: string; la
 }
 
 function Pill({ children }: { children: React.ReactNode }) {
-  return <span className="rounded-md-full border border-neutral-200 bg-white px-3 py-1 text-xs font-medium text-[#868686]">{children}</span>;
+  return <span className="rounded-md-full border border-neutral-200 bg-white px-3 py-1 text-xs font-medium text-[#5e5e5e]">{children}</span>;
 }
 
 export default function Page() {
@@ -51,7 +51,7 @@ export default function Page() {
             <h1 id="hero-title" className="text-4xl font-semibold tracking-tight sm:text-5xl">
               Strony, które sprzedają i rosną.
             </h1>
-            <p className="mt-4 text-lg text-[#868686]">SEO, WCAG, treść i technologia w standardzie. Minimalizm. Prestiż. Efekt.</p>
+            <p className="mt-4 text-lg text-[#5e5e5e]">SEO, WCAG, treść i technologia w standardzie. Minimalizm. Prestiż. Efekt.</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <CTA href="/kontakt" label="Wyceń projekt" ariaLabel="Wyceń projekt — formularz kontaktowy" />
               <CTA href="/kontakt" label="Umów rozmowę" variant="secondary" />
@@ -75,7 +75,7 @@ export default function Page() {
                     <span className="inline-block h-3 w-3 rotate-180 border-t-[8px] border-l-8 border-t-transparent border-l-neutral-900"></span>
                     <span className="text-sm font-semibold">Woda</span>
                   </div>
-                  <p className="text-xs text-[#868686]">Płynność UX.</p>
+                  <p className="text-xs text-[#5e5e5e]">Płynność UX.</p>
                 </div>
                 {/* Ziemia – SEO */}
                 <div className="rounded-md-lg border border-neutral-200 p-4">
@@ -83,7 +83,7 @@ export default function Page() {
                     <span className="inline-block h-3 w-3 bg-neutral-900"></span>
                     <span className="text-sm font-semibold">Ziemia</span>
                   </div>
-                  <p className="text-xs text-[#868686]">Fundamenty SEO.</p>
+                  <p className="text-xs text-[#5e5e5e]">Fundamenty SEO.</p>
                 </div>
                 {/* Powietrze – Treść */}
                 <div className="rounded-md-lg border border-neutral-200 p-4">
@@ -91,7 +91,7 @@ export default function Page() {
                     <span className="rounded-md-full inline-block h-3 w-3 bg-neutral-900"></span>
                     <span className="text-sm font-semibold">Powietrze</span>
                   </div>
-                  <p className="text-xs text-[#868686]">Klarowna treść.</p>
+                  <p className="text-xs text-[#5e5e5e]">Klarowna treść.</p>
                 </div>
                 {/* Ogień – Marketing */}
                 <div className="rounded-md-lg border border-neutral-200 p-4">
@@ -99,10 +99,10 @@ export default function Page() {
                     <span className="inline-block h-3 w-3 border-r-[8px] border-b-[8px] border-l-[8px] border-r-transparent border-b-neutral-900 border-l-transparent"></span>
                     <span className="text-sm font-semibold">Ogień</span>
                   </div>
-                  <p className="text-xs text-[#868686]">Energia sprzedaży.</p>
+                  <p className="text-xs text-[#5e5e5e]">Energia sprzedaży.</p>
                 </div>
               </div>
-              <div className="absolute top-6 right-6 text-xs font-medium text-[#868686]">System Arteon</div>
+              <div className="absolute top-6 right-6 text-xs font-medium text-[#5e5e5e]">System Arteon</div>
             </div>
           </div>
         </div>
@@ -134,15 +134,15 @@ export default function Page() {
         <div className="grid gap-6 md:grid-cols-3">
           <div className="rounded-md bg-white p-6 ring-1 ring-neutral-200">
             <h3 className="text-base font-semibold">WordPress</h3>
-            <p className="mt-2 text-sm text-[#868686]">Budżetowy start i prosta edycja. Dobre dla one-pagerów i stron 5–10 podstron. Dodatkowe zabezpieczenia i optymalizacje w cenie.</p>
+            <p className="mt-2 text-sm text-[#5e5e5e]">Budżetowy start i prosta edycja. Dobre dla one-pagerów i stron 5–10 podstron. Dodatkowe zabezpieczenia i optymalizacje w cenie.</p>
           </div>
           <div className="rounded-md bg-white p-6 ring-1 ring-neutral-200">
             <h3 className="text-base font-semibold">Webflow</h3>
-            <p className="mt-2 text-sm text-[#868686]">Prestiż, animacje, CMS i zgodność z WCAG. Idealne dla marek, które stawiają na wizerunek i wygodę edycji.</p>
+            <p className="mt-2 text-sm text-[#5e5e5e]">Prestiż, animacje, CMS i zgodność z WCAG. Idealne dla marek, które stawiają na wizerunek i wygodę edycji.</p>
           </div>
           <div className="rounded-md bg-white p-6 ring-1 ring-neutral-200">
             <h3 className="text-base font-semibold">Next.js</h3>
-            <p className="mt-2 text-sm text-[#868686]">Wydajność i skalowalność klasy produktowej. Gdy potrzebujesz niestandardowych funkcji, integracji i logiki biznesowej.</p>
+            <p className="mt-2 text-sm text-[#5e5e5e]">Wydajność i skalowalność klasy produktowej. Gdy potrzebujesz niestandardowych funkcji, integracji i logiki biznesowej.</p>
           </div>
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
@@ -153,7 +153,7 @@ export default function Page() {
 
       {/* Dostępność i prawo */}
       <Section id="a11y" title="Dostępność i prawo" subtitle="WCAG/EAA">
-        <p className="text-[#868686]">
+        <p className="text-[#5e5e5e]">
           Buduję serwisy zgodne z WCAG 2.1 AA. Pomagam w politykach i regulaminach. Wystawiam Deklarację Dostępności. Tworzę projekty na rynki międzynarodowe z uwzględnieniem lokalnych wymogów.
         </p>
         <div className="mt-6">
@@ -163,12 +163,12 @@ export default function Page() {
 
       {/* CMS i własność */}
       <Section id="cms" title="CMS i pełna kontrola" subtitle="Własność">
-        <p className="text-[#868686]">Edytujesz treści i media samodzielnie. Na życzenie eksportuję kod i wdrażam na Twoim serwerze. Dostajesz szkolenie PDF i krótkie wideo z obsługi.</p>
+        <p className="text-[#5e5e5e]">Edytujesz treści i media samodzielnie. Na życzenie eksportuję kod i wdrażam na Twoim serwerze. Dostajesz szkolenie PDF i krótkie wideo z obsługi.</p>
       </Section>
 
       {/* Migracje i redesign */}
       <Section id="migrations" title="Migracje i redesign" subtitle="Upgrade">
-        <p className="text-[#868686]">Migruję z WP/Elementor do Webflow, by spełnić WCAG i podnieść jakość. Redesign obejmuje serwis, brand i materiały. Minimalizm. Porządek. Wynik.</p>
+        <p className="text-[#5e5e5e]">Migruję z WP/Elementor do Webflow, by spełnić WCAG i podnieść jakość. Redesign obejmuje serwis, brand i materiały. Minimalizm. Porządek. Wynik.</p>
         <div className="mt-6">
           <CTA href="/kontakt" label="Przenieś stronę" />
         </div>
@@ -198,11 +198,11 @@ export default function Page() {
           {/* 1. Landing One Page — WordPress */}
           <div className="flex flex-col rounded-md bg-white p-6 ring-1 ring-neutral-200">
             <h3 className="text-base font-semibold">Landing One-Page</h3>
-            <p className="mt-1 text-sm text-[#868686]">WordPress</p>
+            <p className="mt-1 text-sm text-[#5e5e5e]">WordPress</p>
             <p className="mt-4 text-3xl font-semibold">
-              4 900–7 900&nbsp;zł <span className="text-sm font-normal text-[#868686]">netto</span>
+              4 900–7 900&nbsp;zł <span className="text-sm font-normal text-[#5e5e5e]">netto</span>
             </p>
-            <p className="mt-2 text-sm text-[#868686]">Start, szybkie wdrożenie, pełen standard jakości.</p>
+            <p className="mt-2 text-sm text-[#5e5e5e]">Start, szybkie wdrożenie, pełen standard jakości.</p>
             <ul className="mt-4 space-y-2 text-sm">
               {[
                 '1 strona z sekcjami (one-page).',
@@ -227,11 +227,11 @@ export default function Page() {
           {/* 2. Strona firmowa 5–10 — WordPress */}
           <div className="flex flex-col rounded-md bg-white p-6 ring-1 ring-neutral-200">
             <h3 className="text-base font-semibold">Strona firmowa 5–10</h3>
-            <p className="mt-1 text-sm text-[#868686]">WordPress</p>
+            <p className="mt-1 text-sm text-[#5e5e5e]">WordPress</p>
             <p className="mt-4 text-3xl font-semibold">
-              9 900–15 900&nbsp;zł <span className="text-sm font-normal text-[#868686]">netto</span>
+              9 900–15 900&nbsp;zł <span className="text-sm font-normal text-[#5e5e5e]">netto</span>
             </p>
-            <p className="mt-2 text-sm text-[#868686]">Rozwój, blog, portfolio, więcej sekcji i integracji.</p>
+            <p className="mt-2 text-sm text-[#5e5e5e]">Rozwój, blog, portfolio, więcej sekcji i integracji.</p>
             <ul className="mt-4 space-y-2 text-sm">
               {[
                 '5–10 podstron + blog/aktualności.',
@@ -260,11 +260,11 @@ export default function Page() {
               <span className="text-xs font-semibold tracking-wider text-[#080808]">Polecane</span>
             </div>
             <h3 className="text-base font-semibold">Prestiżowa strona</h3>
-            <p className="mt-1 text-sm text-[#868686]">Webflow</p>
+            <p className="mt-1 text-sm text-[#5e5e5e]">Webflow</p>
             <p className="mt-4 text-3xl font-semibold">
-              17 900–29 900&nbsp;zł <span className="text-sm font-normal text-[#868686]">netto</span>
+              17 900–29 900&nbsp;zł <span className="text-sm font-normal text-[#5e5e5e]">netto</span>
             </p>
-            <p className="mt-2 text-sm text-[#868686]">Luksus UX, animacje, CMS i perfekcyjny detal.</p>
+            <p className="mt-2 text-sm text-[#5e5e5e]">Luksus UX, animacje, CMS i perfekcyjny detal.</p>
             <ul className="mt-4 space-y-2 text-sm">
               {[
                 'Projekt premium, mikro-interakcje i animacje.',
@@ -289,7 +289,7 @@ export default function Page() {
 
         {/* Notka o Next.js – liga aplikacji */}
         <div className="mt-8 rounded-md bg-white p-6 ring-1 ring-neutral-200">
-          <p className="text-sm text-[#868686]">
+          <p className="text-sm text-[#5e5e5e]">
             <strong>Potrzebujesz funkcji niestandardowych?</strong> Liga Next.js obsłuży aplikacje, panele, integracje i logikę biznesową. <em>Wycena indywidualna</em> po warsztacie celów.
           </p>
           <div className="mt-4">
@@ -298,7 +298,7 @@ export default function Page() {
         </div>
 
         {/* Uwaga prawna do cen */}
-        <p className="mt-6 text-xs text-[#868686]">Ceny orientacyjne. Zakres prac potwierdzamy po krótkim warsztacie. Kwoty nie obejmują opłat zewnętrznych (domena, hosting, licencje).</p>
+        <p className="mt-6 text-xs text-[#5e5e5e]">Ceny orientacyjne. Zakres prac potwierdzamy po krótkim warsztacie. Kwoty nie obejmują opłat zewnętrznych (domena, hosting, licencje).</p>
       </Section>
 
       {/* Płatności i gwarancja */}
@@ -308,7 +308,7 @@ export default function Page() {
             <li key={rule} className="rounded-md-md bg-white p-4 text-sm text-neutral-800 ring-1 ring-neutral-200" dangerouslySetInnerHTML={{ __html: rule }} />
           ))}
         </ul>
-        <p className="mt-6 text-sm text-[#868686]">Transparentność na każdym etapie. Aktualizacje tygodniowe. Możliwa zmiana koncepcji w trakcie — priorytetem jest efekt.</p>
+        <p className="mt-6 text-sm text-[#5e5e5e]">Transparentność na każdym etapie. Aktualizacje tygodniowe. Możliwa zmiana koncepcji w trakcie — priorytetem jest efekt.</p>
       </Section>
 
       {/* FAQ */}
@@ -338,7 +338,7 @@ export default function Page() {
           ].map(({ q, a }) => (
             <div key={q} className="rounded-md bg-white p-6 ring-1 ring-neutral-200">
               <h3 className="text-sm font-semibold">{q}</h3>
-              <p className="mt-2 text-sm text-[#868686]">{a}</p>
+              <p className="mt-2 text-sm text-[#5e5e5e]">{a}</p>
             </div>
           ))}
         </div>

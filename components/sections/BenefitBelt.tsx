@@ -36,7 +36,7 @@ export default function BenefitBelt({ items, ariaLabel = 'Kluczowe benefity', cl
   return (
     <section className={`relative bg-white ${className}`} aria-label="Pasek benefitów">
       <Wrapper className="py-2 md:py-3">
-        <ul aria-label={ariaLabel} className="grid grid-cols-2 gap-x-3 gap-y-2 text-[#868686] md:flex md:flex-nowrap md:items-center md:gap-0 md:divide-x md:divide-slate-200">
+        <ul aria-label={ariaLabel} className="grid grid-cols-2 gap-x-3 gap-y-2 text-[#5e5e5e] md:flex md:flex-nowrap md:items-center md:gap-0 md:divide-x md:divide-slate-200">
           {data.map((item, i) => (
             <li key={i} className="flex items-center gap-2 py-2 md:flex-1 md:justify-center md:px-4 md:first:pl-0 md:last:pr-0">
               <span className="shrink-0">{sizedIcon(item.icon)}</span>

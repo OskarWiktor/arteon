@@ -74,7 +74,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
   return (
     <Wrapper>
       <section role="region">
-        {subtitle && <span className="text-xl tracking-widest text-[#868686] uppercase">{subtitle}</span>}
+        {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
         <h2 className="md:mb-2">{title}</h2>
 
         <div className="relative">

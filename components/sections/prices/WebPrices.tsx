@@ -61,8 +61,9 @@ const WebPlans: SectionPricesPlan[] = [
 
 const WebPlansNote: Note = {
   text: (
-    <p className="text-[#868686]">
-      <strong className='text-[#080808]'>Potrzebujesz funkcji niestandardowych?</strong> Liga Next.js obsłuży aplikacje, panele, integracje i logikę biznesową. <em>Wycena indywidualna</em> po warsztacie celów.
+    <p className="text-[#5e5e5e]">
+      <strong className="text-[#080808]">Potrzebujesz funkcji niestandardowych?</strong> Liga Next.js obsłuży aplikacje, panele, integracje i logikę biznesową. <em>Wycena indywidualna</em> po
+      warsztacie celów.
     </p>
   ),
   ctaLabel: 'Porozmawiaj o Next.js',
