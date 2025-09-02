@@ -6,6 +6,7 @@ import Button from '@/components/ui/Button';
 
 import projectsData from '@/data/pl/projects.json';
 import type { Project } from '@/types/project';
+import Gap from '@/components/ui/Gap';
 
 const projects = projectsData.projects as Project[];
 
@@ -27,17 +28,16 @@ export default function ProjectPage({ params }: PageProps) {
   return (
     <>
       <Image src={project.image} alt={project.title} className="max-h-96 w-full object-cover object-center" width={1920} height={1080} />
-      <Wrapper className="md:">
-        <h1 className="mt-8">{project.title}</h1>
+      <Wrapper>
+        <h1 className="mt-6 md:mt-8 lg:mt-12">{project.title}</h1>
         <h6 className="mt-2 text-sm capitalize">{project.category}</h6>
         <p className="my-4">{project.short}</p>
         {project.link && (
-          <Button variant="minimal">
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              Zobacz stronę
-            </a>
+          <Button variant="minimal" link={project.link}>
+            Zobacz stronę
           </Button>
         )}
+        <Gap />
       </Wrapper>
     </>
   );

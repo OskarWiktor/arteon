@@ -12,7 +12,12 @@ export async function generateMetadata() {
 export default function Page() {
   return (
     <>
-      <HeroBaner title="Porozmawiajmy o Twojej firmie" description="Skontaktuj się z nami — przygotujemy ofertę i plan działania szyty na miarę" backgroundImage="/assets/test.jpg" />
+      <HeroBaner
+        title="Porozmawiajmy o Twojej firmie"
+        description="Skontaktuj się z nami — przygotujemy ofertę i plan działania szyty na miarę"
+        backgroundImage="/assets/bg/abstract-bg12.jpg"
+        overlay="black"
+      />
 
       <ContactSteps />
 
@@ -23,8 +28,8 @@ export default function Page() {
         description="Zastanawiasz się jaki może być potencjalny koszt Twojego projektu? Kliknij i przejdź do naszego bezpłatnego kalkulatora!"
         imageSrc="/assets/test.jpg"
         imageAlt="Kalkulator"
-        buttonLink="/calculator"
-        buttonText="Kalkulator"
+        btnOneLink="/calculator"
+        btnOne="Kalkulator"
       />
     </>
   );

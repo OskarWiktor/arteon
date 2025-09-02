@@ -26,7 +26,7 @@ export default function Footer() {
   const pathname = usePathname();
 
   return (
-    <div className="mt-18 border-t border-t-gray-200 py-8 md:mt-26 md:px-8 lg:mt-32 lg:px-16">
+    <div className="border-t border-t-gray-200 py-8 md:px-8 lg:px-16">
       <Wrapper>
         <footer className="flex w-full flex-col gap-8" aria-label="Website Footer">
           <div className="flex flex-col items-center justify-between gap-4 md:hidden">
@@ -35,10 +35,10 @@ export default function Footer() {
               <div className="flex flex-col items-end gap-1">
                 <div className="flex gap-2">
                   <Link href="https://www.instagram.com/arteon.pl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <RiInstagramLine className="h-7 w-7 text-gray-800 transition hover:text-amber-500" />
+                    <RiInstagramLine className="h-7 w-7 text-gray-800 transition hover:text-indigo-800" />
                   </Link>
                   <Link href="https://www.facebook.com/arteonpl" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <RiFacebookFill className="h-7 w-7 text-gray-800 transition hover:text-amber-500" />
+                    <RiFacebookFill className="h-7 w-7 text-gray-800 transition hover:text-indigo-800" />
                   </Link>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-1 text-sm">
                 {offerLinks.map(({ href, title }) => (
                   <li key={title}>
-                    <Link href={href} className="text-gray-800 hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+                    <Link href={href} className="text-gray-800 hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
                       {title}
                     </Link>
                   </li>
@@ -66,7 +66,7 @@ export default function Footer() {
                     <li key={label}>
                       <Link
                         href={href}
-                        className={`text-gray-800 hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${isActive ? 'text-amber-600' : ''}`}
+                        className={`text-gray-800 hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${isActive ? 'text-indigo-800' : ''}`}
                       >
                         {label}
                       </Link>
@@ -83,10 +83,10 @@ export default function Footer() {
 
               <div className="mt-4 flex gap-2">
                 <Link href="https://www.instagram.com/arteon.pl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                  <RiInstagramLine className="h-7 w-7 text-gray-800 transition hover:text-amber-500" />
+                  <RiInstagramLine className="h-7 w-7 text-gray-800 transition hover:text-indigo-800" />
                 </Link>
                 <Link href="https://www.facebook.com/arteonpl" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                  <RiFacebookFill className="h-7 w-7 text-gray-800 transition hover:text-amber-500" />
+                  <RiFacebookFill className="h-7 w-7 text-gray-800 transition hover:text-indigo-800" />
                 </Link>
               </div>
             </div>

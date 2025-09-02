@@ -15,7 +15,8 @@ export default function Page() {
       <HeroBaner
         title="Lorem Ipsum Lorem Ipsum"
         description="njkbasdka sbdjabsd bjkbsajdb"
-        backgroundImage="/assets/test.jpg"
+        backgroundImage="/assets/bg/abstract-bg12.jpg"
+        overlay="black"
         buttonTopOne="test1"
         buttonTopTwo="test2"
         buttonTopThree="test3"
@@ -28,8 +29,8 @@ export default function Page() {
         description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
         imageSrc="/assets/test.jpg"
         imageAlt="Zaproszenie do kontaktu"
-        buttonText="Przejdź do formularza"
-        buttonLink="/kontakt"
+        btnOne="Przejdź do formularza"
+        btnOneLink="/kontakt"
       ></SectionBasic>
     </>
   );

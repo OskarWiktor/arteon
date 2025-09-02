@@ -142,7 +142,7 @@ export default function Calculator() {
   };
 
   return (
-    <Wrapper className="mt-18 md:mt-26 lg:mt-32">
+    <Wrapper>
       {!showResult && step ? (
         <CalculatorSteps
           step={step}

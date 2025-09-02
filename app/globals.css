@@ -3,7 +3,7 @@
 
 :root {
   --background: #f1f1f1;
-  --foreground: #171717;
+  --foreground: #080808;
   --font-sans: 'Instrument Sans Variable';
 }
 
@@ -48,17 +48,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: theme('colors.amber.500');
+  background: theme('colors.indigo.500');
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.amber.500');
+  background: theme('colors.indigo.500');
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: theme('colors.amber.500') theme('colors.gray.100');
+  scrollbar-color: theme('colors.indigo.500') theme('colors.gray.100');
 }
 
 /*    TEXT    */
@@ -76,7 +76,7 @@ body {
 p,
 li {
   @apply leading-relaxed font-normal text-balance;
-  font-size: clamp(16px, calc(16px + 4 * ((100vw - 360px) / 1080)), 20px);
+  font-size: clamp(16px, calc(16px + 2 * ((100vw - 360px) / 1080)), 18px);
 }
 
 h1,
@@ -85,37 +85,43 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-medium text-balance text-[#080808];
+  @apply leading-tight font-medium text-balance;
 }
 
 h1,
 .h1 {
-  @apply text-5xl font-bold md:text-7xl;
+  font-weight: 700;
+  font-size: clamp(48px, calc(48px + 24 * ((100vw - 360px) / 1080)), 72px);
 }
 
 h2,
 .h2 {
-  @apply text-4xl font-bold md:text-5xl;
+  font-weight: 700;
+  font-size: clamp(36px, calc(36px + 12 * ((100vw - 360px) / 1080)), 48px);
 }
 
 h3,
 .h3 {
-  @apply text-4xl font-bold md:text-5xl;
+  font-weight: 700;
+  font-size: clamp(36px, calc(36px + 12 * ((100vw - 360px) / 1080)), 48px);
 }
 
 h4,
 .h4 {
-  @apply text-2xl font-semibold md:text-4xl;
+  font-weight: 600;
+  font-size: clamp(24px, calc(24px + 12 * ((100vw - 360px) / 1080)), 36px);
 }
 
 h5,
 .h5 {
-  @apply text-2xl font-semibold md:text-3xl;
+  font-weight: 600;
+  font-size: clamp(20px, calc(20px + 4 * ((100vw - 360px) / 1080)), 24px);
 }
 
 h6,
 .h6 {
-  @apply text-lg font-semibold md:text-xl;
+  font-weight: 600;
+  font-size: clamp(18px, calc(18px + 2 * ((100vw - 360px) / 1080)), 20px);
 }
 
 /*    FORMS    */
@@ -127,14 +133,14 @@ label {
 input,
 select,
 textarea {
-  @apply w-full rounded border border-gray-300 bg-transparent px-2 py-3 text-lg text-[#2B2B2B] transition focus:outline-none;
+  @apply w-full rounded-md border border-gray-300 bg-transparent px-2 py-3 text-lg text-[#2B2B2B] transition focus:outline-none;
 }
 
 @layer base {
   input:-webkit-autofill,
   textarea:-webkit-autofill,
   select:-webkit-autofill {
-    @apply bg-amber-100 text-[#2B2B2B];
+    @apply bg-indigo-100 text-[#2B2B2B];
     -webkit-box-shadow: 0 0 0px 1000px theme('colors.amber.100') inset;
     transition: background-color 5000s ease-in-out 0s;
   }
@@ -144,14 +150,14 @@ textarea {
   select option:checked,
   select option:focus,
   select option:hover {
-    @apply bg-amber-100 text-[#2B2B2B];
+    @apply bg-indigo-100 text-[#2B2B2B];
   }
 }
 
 /*    CUSTOM    */
 
 .marker-after {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-indigo-800 before:blur-[0.5px] before:content-[''];
   p,
   span {
     @apply relative z-10;
@@ -159,5 +165,5 @@ textarea {
 }
 
 .marker-before {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-indigo-800 before:blur-[0.5px] before:content-[''];
 }

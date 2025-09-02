@@ -6,6 +6,7 @@ import TechStack from '@/components/sections/TechStack';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
+import Gap from '@/components/ui/Gap';
 
 export async function generateMetadata() {
   return generatePageMetadata('home');
@@ -17,7 +18,8 @@ export default function Home() {
       <HeroBaner
         title="Zbuduj markę, która rośnie i sprzedaje"
         description="Studio projektowe Arteon – od strategii i brandingu, przez strony WWW, po marketing digital."
-        backgroundImage="/assets/test.jpg"
+        backgroundImage="/assets/bg/abstract-bg12.jpg"
+        overlay="black"
         buttonTopOne="WWW"
         buttonTopOneLink="#www"
         buttonTopTwo="Treść"
@@ -26,14 +28,21 @@ export default function Home() {
         buttonTopThreeLink="#design"
         buttonTopFour="Marketing"
         buttonTopFourLink="#marketing"
+        variant="center"
       />
+
+      <Gap />
 
       <SectionInfo
         title="Elastyczny partner dla Twojej marki"
         description="Od startupu po globalną skalę – łączymy psychologię, design i technologię, aby Twoja firma przyciągała właściwych klientów."
       />
 
+      <Gap />
+
       <ProjectsOverview title="Nasze realizacje" />
+
+      <Gap />
 
       <SectionBasic
         id="www"
@@ -48,8 +57,8 @@ export default function Home() {
         description="Tworzymy strony, sklepy oraz blogi, które angażują użytkowników i zwiększają konwersje."
         imageSrc="/assets/test.jpg"
         imageAlt="Responsywne strony WWW"
-        buttonText="Zobacz ofertę"
-        buttonLink="/oferta"
+        btnOne="Zobacz ofertę"
+        btnOneLink="/oferta"
       >
         <ul className="list-disc pl-5">
           <li>Analiza branży i konkurencji w cenie</li>
@@ -59,6 +68,8 @@ export default function Home() {
         </ul>
       </SectionBasic>
 
+      <Gap />
+
       <SectionBasic
         id="tresc"
         variant="left"
@@ -66,8 +77,8 @@ export default function Home() {
         description="Budujemy treści, które pracują dla algorytmów, ale mówią do ludzi. Pomagamy stworzyć przekaz, by Twoja marka żyła nie tylko w Google, ale i w pamięci klientów."
         imageSrc="/assets/test.jpg"
         imageAlt="Content marketing"
-        buttonText="Zobacz ofertę"
-        buttonLink="/oferta"
+        btnOne="Zobacz ofertę"
+        btnOneLink="/oferta"
       >
         <ul className="list-disc pl-5">
           <li>Analiza słów kluczowych i potrzeb klientów</li>
@@ -75,6 +86,8 @@ export default function Home() {
           <li>Gotowe teksty: od artykułów po posty w social media</li>
         </ul>
       </SectionBasic>
+
+      <Gap />
 
       <SectionInfo title="Dlaczego warto z nami pracować?" description="Działamy jak system: od strategii przez wdrożenie po analizę wyników — wszystko w jednym miejscu.">
         <ul className="list-disc pl-5">
@@ -84,15 +97,19 @@ export default function Home() {
         </ul>
       </SectionInfo>
 
+      <Gap />
+
       <WorkSteps />
+
+      <Gap />
 
       <SectionBasic
         title="Design - wygląd, który działa jak magnez"
         description="Projektujemy system wizualny, który przyciąga właściwych klientów, buduje zaufanie i odróżnia Twoją markę na tle innych. Psychologia, estetyka, spójność — z myślą o długofalowym rozwoju."
         imageSrc="/assets/test.jpg"
         imageAlt="Branding i identyfikacja wizualna"
-        buttonText="Zobacz ofertę"
-        buttonLink="/oferta"
+        btnOne="Zobacz ofertę"
+        btnOneLink="/oferta"
       >
         <ul className="list-disc pl-5">
           <li>Logo i księga znaku</li>
@@ -102,6 +119,8 @@ export default function Home() {
         </ul>
       </SectionBasic>
 
+      <Gap />
+
       <SectionBasic
         id="marketing"
         variant="left"
@@ -109,8 +128,8 @@ export default function Home() {
         description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdrażamy rozwiązania."
         imageSrc="/assets/test.jpg"
         imageAlt="Marketing cyfrowy"
-        buttonText="Zobacz ofertę"
-        buttonLink="/oferta"
+        btnOne="Zobacz ofertę"
+        btnOneLink="/oferta"
       >
         <ul className="list-disc pl-5">
           <li>Działania dopasowane do Twojego wymarzonego klienta</li>
@@ -119,6 +138,8 @@ export default function Home() {
           <li>Analiza wyników i rekomendacje dalszych kroków</li>
         </ul>
       </SectionBasic>
+
+      <Gap />
 
       <TechStack />
     </>

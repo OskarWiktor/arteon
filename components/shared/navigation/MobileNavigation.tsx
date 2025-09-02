@@ -10,7 +10,6 @@ const navigationItems = [
   { href: '/', label: 'Home', exact: true },
   { href: '/projects', label: 'Projekty' },
   { href: '/offer', label: 'Oferta' },
-  { href: '/calculator', label: 'Wycena' },
   { href: '/contact', label: 'Kontakt' },
 ];
 
@@ -85,7 +84,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   return (
                     <div key={label}>
                       <motion.li className="flex items-center justify-between" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                        <button onClick={() => setIsOfferOpen((prev) => !prev)} className="flex w-full items-center text-left hover:text-amber-500">
+                        <button onClick={() => setIsOfferOpen((prev) => !prev)} className="flex w-full items-center text-left hover:text-indigo-800">
                           {label}
                           <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
                             <RiArrowDownSLine className="h-5 w-5" />
@@ -99,10 +98,10 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -6 }}
                             transition={{ duration: 0.3 }}
-                            className="ml-1 mt-2 grid grid-cols-2 gap-3"
+                            className="mt-2 ml-1 grid grid-cols-2 gap-3"
                           >
                             {offerSubPages.map((item) => (
-                              <Link key={item.href} href={item.href} onClick={() => setIsOpen(false)} className="group flex items-center gap-2 rounded-md hover:text-amber-500">
+                              <Link key={item.href} href={item.href} onClick={() => setIsOpen(false)} className="group rounded-md-md flex items-center gap-2 hover:text-indigo-800">
                                 <div>{item.icon}</div>
                                 <div>
                                   <p>{item.title}</p>
@@ -118,7 +117,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
                 return (
                   <motion.li key={label} className="relative" variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
-                    <Link href={href} onClick={() => setIsOpen(false)} className={`hover:text-amber-500 ${isActivePage ? 'font-semibold text-[#2B2B2B]' : ''}`}>
+                    <Link href={href} onClick={() => setIsOpen(false)} className={`hover:text-indigo-800 ${isActivePage ? 'font-semibold text-[#2B2B2B]' : ''}`}>
                       {label}
                     </Link>
                   </motion.li>
@@ -126,18 +125,21 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               })}
             </LayoutGroup>
 
-            <motion.li variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="flex justify-between border-t border-gray-200 pt-4">
-              <div>
-                <button className="cursor-pointer text-lg text-amber-500 focus-visible:outline-2 focus-visible:outline-black">PL</button>
+            <motion.li variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="flex justify-between border-t border-gray-300 pt-4">
+              {/* 
+                           <div>
+                <button className="cursor-pointer text-lg text-indigo-800 focus-visible:outline-2 focus-visible:outline-black">PL</button>
                 <span className="text-lg text-[#2B2B2B]"> / </span>
                 <button className="cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black">EN</button>
-              </div>
+              </div> 
+              
+              */}
               <div className="flex gap-2">
                 <Link href="https://www.instagram.com/arteon.pl" target="_blank" aria-label="Instagram">
-                  <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" />
+                  <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
                 </Link>
                 <Link href="https://www.facebook.com/arteonpl" target="_blank" aria-label="Facebook">
-                  <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" />
+                  <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
                 </Link>
               </div>
             </motion.li>

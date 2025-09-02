@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useState as useClientState } from 'react';
+import { useState as useClientState } from 'react';
 import { usePathname } from 'next/navigation';
 import { RiInstagramLine, RiFacebookFill, RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
@@ -11,8 +11,10 @@ import Wrapper from '@/components/ui/Wrapper';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useClientState(false);
-  const pathname = usePathname();
+
+  /*
   const [host, setHost] = useState<string | null>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -27,6 +29,7 @@ export default function Navigation() {
     if (target === 'pl') return 'https://www.arteonagency.pl';
     return 'https://www.arteonagency.com';
   };
+  */
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -37,23 +40,25 @@ export default function Navigation() {
           <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon company logo" />
 
           <DesktopNavigation />
-
           <div className="hidden items-center gap-2 md:flex">
+            {/* 
+// TO DO in Arteon v.1.2
             <div className="mr-2 lg:mr-4">
               <a href={`${getTargetDomain('pl')}${pathname}`}>
-                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>PL</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-indigo-800' : 'text-[#2B2B2B] hover:text-indigo-800'}`}>PL</button>
               </a>
               <span className="text-lg text-[#2B2B2B]"> / </span>
               <a href={`${getTargetDomain('en')}${pathname}`}>
-                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>EN</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-indigo-800' : 'text-[#2B2B2B] hover:text-indigo-800'}`}>EN</button>
               </a>
             </div>
+*/}
 
             <a href="https://www.instagram.com/arteon.pl" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="focus-visible:outline-2 focus-visible:outline-black">
-              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" />
+              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
             </a>
             <a href="https://www.facebook.com/arteonpl" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="focus-visible:outline-2 focus-visible:outline-black">
-              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" />
+              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
             </a>
           </div>
 

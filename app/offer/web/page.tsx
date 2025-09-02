@@ -1,38 +1,78 @@
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
-
-import HeroBaner from '@/components/sections/HeroBaner';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionBasic from '@/components/ui/sections/SectionBasic';
+import React from 'react';
+import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
 import FaqWebsite from '@/components/sections/faqs/FaqWebsite';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
+import HeroBanner from '@/components/sections/HeroBaner';
+import BenefitBelt from '@/components/sections/BenefitBelt';
+import Mission from '@/components/sections/steps/Mission';
+import CTABaner from '@/components/sections/CTABaner';
+import WebFeatures from '@/components/sections/features/WebFeatures';
+import Gap from '@/components/ui/Gap';
+import WebPrices from '@/components/sections/prices/WebPrices';
 
-export async function generateMetadata() {
-  return generatePageMetadata('websites');
-}
+/**
+ * Strona ofertowa: "Strony" – Arteon v2
+ * Styl: Minimalizm. Prestiż. Efekt.
+ * Założenia: krótkie zdania, WCAG 2.2 AA, układ czytelny, białe przestrzenie.
+ * Tech-neutral: Next.js + React + TS + Tailwind (impl. docelowa po stronie projektu).
+ */
 
-export default function Page() {
+export default function OfferWebPage() {
   return (
     <>
-      <HeroBaner
-        title="Lorem Ipsum Lorem Ipsum"
-        description="njkbasdka sbdjabsd bjkbsajdb"
-        backgroundImage="/assets/test.jpg"
-        buttonTopOne="test1"
-        buttonTopTwo="test2"
-        buttonTopThree="test3"
-        buttonTopFour="test4"
+      <HeroBanner
+        title="Strony internetowe"
+        description="SEO, WCAG, treść, sprawdzona technologia. Indywidualne projekty dla Twoich celów"
+        buttonAccent="Wyceń projekt"
+        buttonAccentLink="/contact"
+        buttonSecond="Sprawdź realizacje"
+        buttonSecondLink="/portfolio"
+        variant="left"
+        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        overlay="black"
       />
-      <SectionInfo title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
+
+      <BenefitBelt
+        items={[
+          { icon: <RiShieldCheckLine />, label: 'Zgodność z prawem' },
+          { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
+          { icon: <RiCodeSSlashFill />, label: 'Sprawdzone technologie' },
+          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
+        ]}
+      />
+
+      <Gap size="sm" />
+
+      <WebFeatures />
+
+      <Gap />
+
+      <Mission />
+
+      <Gap />
+
+      <WorkSteps />
+
+      <Gap />
+
+      <WebPrices />
+
+      <Gap />
 
       <FaqWebsite />
 
-      <SectionBasic
-        title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
-        description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
-        imageSrc="/assets/test.jpg"
-        imageAlt="Zaproszenie do kontaktu"
-        buttonText="Przejdź do formularza"
-        buttonLink="/kontakt"
-      ></SectionBasic>
+      <Gap />
+
+      <CTABaner
+        title="Zbudujmy stronę, która pracuje na markę"
+        description="Minimum formy. Maksimum efektu. Jasny plan i odpowiedzialność po naszej stronie."
+        primaryLabel="Wyceń projekt"
+        primaryLink="/calculator"
+        secondaryLabel="Zapytaj o termin"
+        secondaryLink="/contact"
+        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        overlay="black"
+      />
     </>
   );
 }

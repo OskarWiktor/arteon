@@ -15,7 +15,7 @@ export default function Filters({ selectedCategory, onSelectCategory }: Props) {
   return (
     <section className="mt-18 w-full md:mt-26 lg:mt-32">
       <Wrapper className="flex flex-col">
-        <h2 className="mb-4">Filtry:</h2>
+        <h2 className="mb-2 lg:mb-4">Filtry:</h2>
         <div className="flex flex-wrap gap-2">
           <Button variant={!selectedCategory ? 'accent' : 'normal'} size="small" onClick={() => onSelectCategory(null)}>
             Wszystkie

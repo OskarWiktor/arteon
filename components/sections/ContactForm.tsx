@@ -28,7 +28,7 @@ export default function ContactForm() {
 
   return (
     <Wrapper>
-      <form className="mt-18 flex w-full flex-col gap-6 md:mt-26 lg:mt-32" action="https://formspree.io/f/xldnokbw" method="POST" onSubmit={handleSubmit}>
+      <form className="flex w-full flex-col gap-6" action="https://formspree.io/f/xldnokbw" method="POST" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2">
           <label htmlFor="name">Imię i nazwisko</label>
           <input id="name" name="Imię i Nazwisko" placeholder="Jan Kowalski" type="text" required />
@@ -69,7 +69,7 @@ export default function ContactForm() {
         </Button>
 
         {formStatus === 'error' && <span className="text-red-700">Coś poszło nie tak. Sprawdź poprawność danych i próbuj ponownie</span>}
-        {formStatus === 'success' && <span className="text-amber-500">Wiadomość wysłana! Już szykujemy odpowiedź</span>}
+        {formStatus === 'success' && <span className="text-indigo-800">Wiadomość wysłana! Już szykujemy odpowiedź</span>}
       </form>
     </Wrapper>
   );

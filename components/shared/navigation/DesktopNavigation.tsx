@@ -38,17 +38,16 @@ export default function DesktopNavigation() {
     { href: '/', label: 'Home', exact: true },
     { href: '/projects', label: 'Projekty' },
     { href: '/offer', label: 'Oferta' },
-    { href: '/calculator', label: 'Wycena' },
     { href: '/contact', label: 'Kontakt' },
   ];
 
   const offerSubPages = [
-    { href: '/offer/web', icon: <RiCodeSSlashFill className="h-8 w-8 text-amber-500" />, title: 'Strony', desc: 'WCAG 2.2 - Indywidualny projekt - Migracje' },
-    { href: '/offer/shop', icon: <RiShoppingCartLine className="h-8 w-8 text-amber-500" />, title: 'Sklepy online', desc: 'Płatności - Integracje - Automatyzacje' },
-    { href: '/offer/blog', icon: <RiArticleLine className="h-8 w-8 text-amber-500" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
-    { href: '/offer/design', icon: <RiPaletteLine className="h-8 w-8 text-amber-500" />, title: 'Design', desc: 'Systemy marek - Loga - Do druku' },
-    { href: '/offer/content', icon: <RiFileTextLine className="h-8 w-8 text-amber-500" />, title: 'Content', desc: 'Teksty - Artykuły - Opisy' },
-    { href: '/offer/marketing', icon: <RiMegaphoneLine className="h-8 w-8 text-amber-500" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
+    { href: '/offer/web', icon: <RiCodeSSlashFill className="h-6 w-6 text-indigo-800" />, title: 'Strony', desc: 'WCAG 2.2 - Indywidualny projekt - Migracje' },
+    { href: '/offer/shop', icon: <RiShoppingCartLine className="h-6 w-6 text-indigo-800" />, title: 'Sklepy online', desc: 'Płatności - Integracje - Automatyzacje' },
+    { href: '/offer/blog', icon: <RiArticleLine className="h-6 w-6 text-indigo-800" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
+    { href: '/offer/design', icon: <RiPaletteLine className="h-6 w-6 text-indigo-800" />, title: 'Design', desc: 'Systemy marek - Loga - Do druku' },
+    { href: '/offer/content', icon: <RiFileTextLine className="h-6 w-6 text-indigo-800" />, title: 'Content', desc: 'Teksty - Artykuły - Opisy' },
+    { href: '/offer/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-[#2B2B2B]" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
   ];
 
   return (
@@ -60,12 +59,12 @@ export default function DesktopNavigation() {
 
             if (label === 'Oferta') {
               return (
-                <li ref={offerRef} className="group relative flex" key={label}>
+                <li ref={offerRef} className="group relative flex cursor-pointer" key={label}>
                   <button
                     onClick={() => setIsOfferOpen((p) => !p)}
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
-                    className="mr-[-10px] flex items-center gap-1 text-base text-[#2B2B2B] hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-black"
+                    className="mr-[-10px] flex items-center gap-1 text-base text-[#2B2B2B] hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-black"
                   >
                     {label}
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -91,11 +90,13 @@ export default function DesktopNavigation() {
                               key={item.href}
                               href={item.href}
                               role="menuitem"
-                              className="flex gap-4 rounded border border-gray-100 p-2 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-black"
+                              className="flex gap-4 rounded-md border border-gray-100 px-4 py-2 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-black"
                             >
-                              <div className="flex items-center">{item.icon}</div>
                               <div className="leading-tight">
-                                <span className="block text-base font-semibold text-[#2B2B2B]">{item.title}</span>
+                                <div className="flex items-center gap-2">
+                                  {item.icon}
+                                  <span className="block text-base font-semibold text-[#2B2B2B]">{item.title}</span>
+                                </div>
                                 <span className="text-sm">{item.desc}</span>
                               </div>
                             </Link>
@@ -113,7 +114,7 @@ export default function DesktopNavigation() {
                 <Link
                   href={href}
                   aria-current={isActivePage ? 'page' : undefined}
-                  className={`text-base text-[#2B2B2B] hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-black ${isActivePage ? 'font-semibold text-[#080808]' : ''}`}
+                  className={`text-base text-[#2B2B2B] hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-black ${isActivePage ? 'font-semibold text-[#080808]' : ''}`}
                 >
                   {label}
                 </Link>

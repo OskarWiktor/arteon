@@ -12,9 +12,10 @@ type Props = {
   projects?: Project[];
   max?: number;
   title?: string;
+  subtitle?: string;
 };
 
-export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Projekty' }: Props) {
+export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Projekty', subtitle }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -72,14 +73,15 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
 
   return (
     <Wrapper>
-      <section className="mt-18 w-full md:mt-26 lg:mt-32" role="region">
+      <section role="region">
+        {subtitle && <span className="text-xl tracking-widest text-[#868686] uppercase">{subtitle}</span>}
         <h2 className="md:mb-2">{title}</h2>
 
         <div className="relative">
           {isScrollable && (
             <button
               onClick={() => scroll('left')}
-              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
+              className="rounded-md-full absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer border border-indigo-800 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-indigo-800 focus-visible:outline-black md:block"
               aria-label="Go left"
             >
               <RiArrowLeftSLine className="h-8 w-8" />
@@ -97,7 +99,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
           {isScrollable && (
             <button
               onClick={() => scroll('right')}
-              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus-visible:outline-black md:block"
+              className="rounded-md-full absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer border border-indigo-800 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-indigo-800 focus-visible:outline-black md:block"
               aria-label="Go right"
             >
               <RiArrowRightSLine className="h-8 w-8" />
@@ -116,8 +118,8 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
                     scrollRef.current.scrollTo({ left: i * cardWidth, behavior: 'smooth' });
                   }
                 }}
-                className={`h-2 w-2 cursor-pointer rounded-full transition duration-300 focus-visible:outline-black ${
-                  i === currentSlide ? 'bg-amber-500 hover:bg-amber-700' : 'bg-gray-300 hover:bg-gray-500'
+                className={`rounded-md-full h-2 w-2 cursor-pointer transition duration-300 focus-visible:outline-black ${
+                  i === currentSlide ? 'bg-indigo-800 hover:bg-indigo-700' : 'bg-gray-300 hover:bg-gray-500'
                 }`}
               />
             ))}

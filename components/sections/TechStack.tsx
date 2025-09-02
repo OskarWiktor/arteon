@@ -36,7 +36,7 @@ export default function TechStack() {
 
   return (
     <Wrapper>
-      <section className="relative mt-18 overflow-hidden md:mt-30 lg:mt-38">
+      <section className="relative overflow-hidden">
         <h4>Czego używamy?</h4>
         <div ref={containerRef} className="mt-4 overflow-hidden" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <motion.div style={{ x }} className="flex gap-2 whitespace-nowrap md:gap-6 lg:gap-10">

@@ -48,9 +48,8 @@ const faqItems = [
 
 export default function FaqBlog() {
   return (
-    <Wrapper className="mt-18 md:mt-26 lg:mt-32">
-      <h2 className="mb-6">Najczęstsze pytania</h2>
-      <FaqPanels items={faqItems} />
+    <Wrapper>
+      <FaqPanels subtitle="FAQ" title="Najczęstsze pytania" items={faqItems} />
     </Wrapper>
   );
 }

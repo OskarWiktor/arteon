@@ -12,7 +12,7 @@ export async function generateMetadata() {
 export default function Page() {
   return (
     <>
-      <HeroBaner title="Lorem Ipsum Lorem Ipsum" description="njkbasdka sbdjabsd bjkbsajdb" backgroundImage="/assets/test.jpg" />
+      <HeroBaner backgroundImage="/assets/bg/abstract-bg12.jpg" overlay="black" title="Lorem Ipsum Lorem Ipsum" description="njkbasdka sbdjabsd bjkbsajdb asdfasdas asf fawef eaf esf" />
       <SectionInfo title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
 
       <OfferSubPages />
@@ -22,8 +22,8 @@ export default function Page() {
         description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
         imageSrc="/assets/test.jpg"
         imageAlt="Zaproszenie do kontaktu"
-        buttonText="Przejdź do formularza"
-        buttonLink="/kontakt"
+        btnOne="Przejdź do formularza"
+        btnOneLink="/kontakt"
       ></SectionBasic>
     </>
   );

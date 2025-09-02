@@ -1,35 +1,62 @@
 'use client';
 
-import Image from 'next/image';
 import SectionSteps from '../../ui/sections/SectionSteps';
 
 const missionItems = [
   {
-    icon: <Image src="/assets/woda.png" width={60} height={60} alt="Woda" />,
+    imageSrc: '/assets/woda.png',
+    imageAlt: 'Woda',
     title: 'Woda',
-    borderClassName: 'border-b-[#5f9ea0]',
-    description: <>Woda to płynność formy i głębia przekazu. Projektujemy strony, które poruszają zmysły i zostają w pamięci.</>,
+    subtitle: 'UX i płynność',
+    description: (
+      <ul className="list-disc space-y-1 pl-5">
+        <li>Przejrzyste ścieżki</li>
+        <li>Czytelne stany</li>
+        <li>Zero tarcia</li>
+      </ul>
+    ),
   },
   {
-    icon: <Image src="/assets/ziemia.png" width={60} height={60} alt="Ziemia" />,
+    imageSrc: '/assets/ziemia.png',
+    imageAlt: 'Ziemia',
     title: 'Ziemia',
-    borderClassName: 'border-b-[#bdb76b]',
-    description: <>Ziemia to struktura. Stabilna, cicha siła działania. Kodujemy z precyzją i dbamy o solidny fundament Twojej obecności w sieci.</>,
+    subtitle: 'SEO i fundamenty',
+    description: (
+      <ul className="list-disc space-y-1 pl-5">
+        <li>Semantyka HTML</li>
+        <li>Struktura danych</li>
+        <li>Szybkie serwowanie</li>
+      </ul>
+    ),
   },
   {
-    icon: <Image src="/assets/ogien.png" width={60} height={60} alt="Ogień" />,
+    imageSrc: '/assets/ogien.png',
+    imageAlt: 'Ogień',
     title: 'Ogień',
-    borderClassName: 'border-b-[#a52a2a]',
-    description: <>Ogień to intencja. Energia strategii i wizji. Rozpalamy uwagę, kierujemy ruchem, sprawiamy, że marka zaczyna żyć w świadomości odbiorcy.</>,
+    subtitle: 'Marketing i energia',
+    description: (
+      <ul className="list-disc space-y-1 pl-5">
+        <li>Analityka</li>
+        <li>Piksele kampanii</li>
+        <li>Automatyzacje</li>
+      </ul>
+    ),
   },
   {
-    icon: <Image src="/assets/powietrze.png" width={60} height={60} alt="Powietrze" />,
+    imageSrc: '/assets/powietrze.png',
+    imageAlt: 'Powietrze',
     title: 'Powietrze',
-    borderClassName: 'border-b-[#778899]',
-    description: <>Powietrze to przekaz. Lekki, szybki i skuteczny. Budujemy komunikację, która niesie wartość – przez słowo, obraz i zasięg.</>,
+    subtitle: 'Treść i klarowność',
+    description: (
+      <ul className="list-disc space-y-1 pl-5">
+        <li>Ton marki</li>
+        <li>Hierarchia nagłówków</li>
+        <li>Mikrocopy</li>
+      </ul>
+    ),
   },
 ];
 
 export default function Mission() {
-  return <SectionSteps items={missionItems} />;
+  return <SectionSteps title="Cztery filary jakości" description="Żywioły jako narzędzie porządku. Technologia służy idei." items={missionItems} />;
 }

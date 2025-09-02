@@ -11,7 +11,7 @@ export async function generateMetadata() {
 export default function Page() {
   return (
     <>
-      <HeroBaner title="Projekty, które rosną razem z marką" />
+      <HeroBaner title="Projekty, które rosną razem z marką" backgroundImage="/assets/bg/abstract-bg12.jpg" overlay="black" />
 
       <ProjectWithFilters />
 
@@ -20,8 +20,8 @@ export default function Page() {
         description="Masz pytania lub potrzebujesz wyceny niestandardowego projektu? Skontaktuj się z nami, a my przygotujemy ofertę."
         imageSrc="/assets/test.jpg"
         imageAlt="Kontakt z Arteon"
-        buttonLink="/kontakt"
-        buttonText="Kontakt"
+        btnOneLink="/kontakt"
+        btnOne="Kontakt"
       />
     </>
   );

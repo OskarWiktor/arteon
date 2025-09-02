@@ -1,9 +1,8 @@
 'use client';
 
-import { RiArrowRightSLine } from 'react-icons/ri';
 import Button from '../ui/Button';
-import Link from 'next/link';
 import { ReactNode } from 'react';
+import Wrapper from '../ui/Wrapper';
 
 interface HeroBannerProps {
   buttonTopOne?: string;
@@ -23,6 +22,8 @@ interface HeroBannerProps {
   buttonSecondLink?: string;
   backgroundImage?: string;
   variant?: 'left' | 'center' | 'right';
+  overlay?: 'none' | 'black' | 'white';
+  contentMaxWidthClass?: string;
 }
 
 export default function HeroBanner({
@@ -42,68 +43,82 @@ export default function HeroBanner({
   buttonSecond,
   buttonSecondLink,
   backgroundImage,
-  variant = 'center',
+  variant = 'left',
+  overlay = 'none',
 }: HeroBannerProps) {
-  const alignmentClass = variant === 'center' ? 'text-center items-center' : variant === 'right' ? 'text-right items-end' : 'text-left items-start';
-  const justifyClass = variant === 'center' ? 'justify-center' : variant === 'right' ? 'justify-end' : 'justify-start';
+  const hasBg = Boolean(backgroundImage);
+
+  const overlayClass = overlay === 'black' ? 'bg-black/55' : overlay === 'white' ? 'bg-white/65' : '';
+
+  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
+  const toneMutedClass = overlay === 'black' ? 'text-white/90' : 'text-[#080808]/70';
+
+  const textAlign = variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left';
+
+  const justify = variant === 'center' ? 'justify-center' : variant === 'right' ? 'justify-end' : 'justify-start';
+
+  const contentAnchor = variant === 'right' ? 'ml-auto' : variant === 'center' ? 'mx-auto' : '';
+
+  const topButtons = [
+    { text: buttonTopOne, link: buttonTopOneLink },
+    { text: buttonTopTwo, link: buttonTopTwoLink },
+    { text: buttonTopThree, link: buttonTopThreeLink },
+    { text: buttonTopFour, link: buttonTopFourLink },
+  ].filter(({ text }) => Boolean(text));
 
   return (
     <section
-      className={`flex h-fit min-h-[420px] w-full md:h-[480px] lg:h-[620px] ${backgroundImage ? 'bg-cover bg-center' : ''}`}
-      style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
-      role="region"
+      id="hero"
+      aria-labelledby="hero-title"
+      aria-describedby={description ? 'hero-description' : undefined}
+      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} flex h-[540px] items-center overflow-hidden`}
+      style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
     >
-      <div className={`m-auto flex w-full max-w-[820px] flex-col md:px-8 ${alignmentClass}`} role="group">
-        {subtitle && (
-          <span className="italic" tabIndex={0}>
-            {subtitle}
-          </span>
-        )}
+      {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
+      <Wrapper className="relative flex h-[540px] items-center">
+        <div className={`md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass}`}>
+          {subtitle && <p className={`text-xl tracking-widest uppercase ${toneMutedClass}`}>{subtitle}</p>}
 
-        {(buttonTopOne || buttonTopTwo || buttonTopThree || buttonTopFour) && (
-          <div className={`mt-4 flex flex-wrap gap-2 md:gap-4 ${justifyClass}`}>
-            {[
-              { text: buttonTopOne, link: buttonTopOneLink },
-              { text: buttonTopTwo, link: buttonTopTwoLink },
-              { text: buttonTopThree, link: buttonTopThreeLink },
-              { text: buttonTopFour, link: buttonTopFourLink },
-            ]
-              .filter(({ text }) => !!text)
-              .map(({ text, link }, i) => (
-                <Button variant="minimal" key={i}>
-                  {link ? <Link href={link}>{text}</Link> : <span>{text}</span>}
+          {topButtons.length > 0 && (
+            <nav aria-label="Szybkie linki" className="mt-4">
+              <ul className={`flex flex-wrap gap-2 md:gap-3 ${justify}`}>
+                {topButtons.map(({ text, link }, i) => (
+                  <li key={i}>
+                    <Button variant="minimal" size="small" link={link}>
+                      {text as ReactNode}
+                    </Button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+
+          <h1 id="hero-title" className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
+            {title}
+          </h1>
+
+          {description && (
+            <p id="hero-description" className={`mt-5 text-lg leading-relaxed ${toneMutedClass}`}>
+              {description}
+            </p>
+          )}
+
+          {(buttonAccent || buttonSecond) && (
+            <div className={`mt-8 flex flex-wrap gap-3 ${justify}`}>
+              {buttonAccent && (
+                <Button arrow variant="accent" link={buttonAccentLink}>
+                  {buttonAccent}
                 </Button>
-              ))}
-          </div>
-        )}
-
-        <h1 className="mt-4 lg:mt-6" tabIndex={0}>
-          {title}
-        </h1>
-
-        {description && (
-          <p className="my-2 md:my-4" tabIndex={0}>
-            {description}
-          </p>
-        )}
-
-        {(buttonAccent || buttonSecond) && (
-          <div className={`mt-4 flex flex-wrap gap-4 ${justifyClass}`}>
-            {buttonAccent && (
-              <Button variant="accent">
-                {buttonAccentLink ? <Link href={buttonAccentLink}>{buttonAccent}</Link> : <span>{buttonAccent}</span>}
-                <RiArrowRightSLine className="h-4 w-4" />
-              </Button>
-            )}
-            {buttonSecond && (
-              <Button>
-                {buttonSecondLink ? <Link href={buttonSecondLink}>{buttonSecond}</Link> : <span>{buttonSecond}</span>}
-                <RiArrowRightSLine className="h-4 w-4" />
-              </Button>
-            )}
-          </div>
-        )}
-      </div>
+              )}
+              {buttonSecond && (
+                <Button arrow link={buttonSecondLink}>
+                  {buttonSecond}
+                </Button>
+              )}
+            </div>
+          )}
+        </div>
+      </Wrapper>
     </section>
   );
 }
