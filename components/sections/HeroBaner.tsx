@@ -71,7 +71,7 @@ export default function HeroBanner({
       id="hero"
       aria-labelledby="hero-title"
       aria-describedby={description ? 'hero-description' : undefined}
-      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} flex h-[540px] items-center overflow-hidden`}
+      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${overlay === 'black' ? 'bg-black' : 'bg-white'} flex h-[540px] items-center overflow-hidden`}
       style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
     >
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
@@ -84,7 +84,7 @@ export default function HeroBanner({
               <ul className={`flex flex-wrap gap-2 md:gap-3 ${justify}`}>
                 {topButtons.map(({ text, link }, i) => (
                   <li key={i}>
-                    <Button variant="minimal" size="small" link={link}>
+                    <Button variant="glass" size="small" link={link}>
                       {text as ReactNode}
                     </Button>
                   </li>
@@ -93,7 +93,7 @@ export default function HeroBanner({
             </nav>
           )}
 
-          <h1 id="hero-title" className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
+          <h1 id="hero-title">
             {title}
           </h1>
 

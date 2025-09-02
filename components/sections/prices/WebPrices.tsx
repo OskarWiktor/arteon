@@ -54,7 +54,7 @@ const WebPlans: SectionPricesPlan[] = [
     btnOneLink: '/kontakt',
     btnTwo: 'Zobacz technologię',
     btnTwoLink: '#tech',
-    featured: true,
+    lastPlan: true,
     badgeLabel: 'Polecane',
   },
 ];

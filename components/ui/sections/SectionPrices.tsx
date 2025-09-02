@@ -8,7 +8,7 @@ export type SectionPricesPlan = {
   price: string;
   description: string;
   features: string[];
-  featured?: boolean;
+  lastPlan?: boolean;
   badgeLabel?: string;
   btnOne?: string;
   btnOneLink?: string;
@@ -39,76 +39,106 @@ export default function SectionPrices({
   note,
   legalNote = 'Ceny orientacyjne. Dokładne ceny ustalamy po zapoznaniu sie z indywidualnymi potrzebami',
 }: SectionPricesProps) {
+  const headingId = `${id}-heading`;
+  const subtitleId = subtitle ? `${id}-subtitle` : undefined;
+  const describedBy = subtitleId || undefined;
+
   return (
-    <Wrapper>
-      <div className="mb-8">
-        {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
-        {title && <h3>{title}</h3>}
-      </div>
-
-      <div id={id} className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        {(plans ?? []).map((plan, idx) => (
-          <article key={`${plan.name}-${idx}`} className={`flex flex-col justify-between rounded-md bg-white p-6 ${plan.featured ? 'ring-2 ring-neutral-900' : 'ring-1 ring-neutral-200'}`}>
-            <div>
-              {plan.badgeLabel && (
-                <div className="mb-2 inline-flex items-center gap-2">
-                  <span aria-hidden className="h-2 w-2 border-r-[8px] border-b-[8px] border-l-[8px] border-r-transparent border-b-neutral-900 border-l-transparent" />
-                  <span className="text-xs font-semibold tracking-wider text-[#080808]">{plan.badgeLabel}</span>
-                </div>
-              )}
-
-              <h4>{plan.name}</h4>
-
-              {plan.platform && <span className="mt-1 text-base text-[#5e5e5e]">{plan.platform}</span>}
-
-              <p className="mt-4">
-                {plan.price} <span className="text-sm font-normal text-[#5e5e5e]">brutto</span>
-              </p>
-
-              <span className="mt-2 text-base text-[#5e5e5e]">{plan.description}</span>
-
-              <ul className="mt-6 space-y-2 text-sm">
-                {(plan.features ?? []).map((f, i) => (
-                  <li key={`${plan.name}-f-${i}`} className="flex items-start gap-2">
-                    <span aria-hidden className="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900" />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {(plan.btnOne && plan.btnOneLink) || (plan.btnTwo && plan.btnTwoLink) ? (
-              <div className="mt-6 flex flex-wrap gap-2">
-                {plan.btnOne && plan.btnOneLink && (
-                  <Button link={plan.btnOneLink} variant="accent" arrow aria-label={plan.btnOne}>
-                    {plan.btnOne}
-                  </Button>
-                )}
-                {plan.btnTwo && plan.btnTwoLink && (
-                  <Button link={plan.btnTwoLink} variant="normal" arrow aria-label={plan.btnTwo}>
-                    {plan.btnTwo}
-                  </Button>
-                )}
-              </div>
-            ) : null}
-          </article>
-        ))}
-      </div>
-
-      {note && (
-        <div className="mt-8 mb-4 rounded-md bg-white p-6 ring-1 ring-neutral-200">
-          {note.text}
-          {note.ctaLink && note.ctaLabel && (
-            <div className="mt-4">
-              <Button link={note.ctaLink} variant="accent" arrow aria-label={note.ctaLabel}>
-                {note.ctaLabel}
-              </Button>
-            </div>
+    <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className="w-full">
+      <Wrapper>
+        <div className="mb-8">
+          {subtitle && (
+            <span id={subtitleId} className="text-xl tracking-widest text-[#5e5e5e] uppercase">
+              {subtitle}
+            </span>
           )}
+          {title && <h3 id={headingId}>{title}</h3>}
         </div>
-      )}
 
-      {legalNote && <span className="text-[#5e5e5e]">{legalNote}</span>}
-    </Wrapper>
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          {(plans ?? []).map((plan, idx) => {
+            const itemId = `${id}-plan-${idx}`;
+            const itemHeadingId = `${itemId}-heading`;
+            const itemPlatformId = plan.platform ? `${itemId}-platform` : undefined;
+            const itemPriceId = `${itemId}-price`;
+            const itemDescId = `${itemId}-desc`;
+            const itemDescribedBy = [itemPlatformId, itemPriceId, itemDescId].filter(Boolean).join(' ') || undefined;
+
+            return (
+              <article
+                key={itemId}
+                aria-labelledby={itemHeadingId}
+                aria-describedby={itemDescribedBy}
+                className={`flex flex-col justify-between rounded-md bg-white p-6 ${plan.lastPlan ? 'ring-2 ring-neutral-900' : 'ring-1 ring-neutral-200'}`}
+              >
+                <div>
+                  {plan.badgeLabel && (
+                    <div className="mb-2 inline-flex items-center gap-2">
+                      <span aria-hidden="true" className="h-2 w-2 border-r-[8px] border-b-[8px] border-l-[8px] border-r-transparent border-b-neutral-900 border-l-transparent" />
+                      <span className="text-xs font-semibold tracking-wider text-[#080808]">{plan.badgeLabel}</span>
+                    </div>
+                  )}
+
+                  <h4 id={itemHeadingId}>{plan.name}</h4>
+
+                  {plan.platform && (
+                    <span id={itemPlatformId} className="mt-1 text-base text-[#5e5e5e]">
+                      {plan.platform}
+                    </span>
+                  )}
+
+                  <p id={itemPriceId} className="mt-4">
+                    {plan.price} <span className="text-sm font-normal text-[#5e5e5e]">brutto</span>
+                  </p>
+
+                  <span id={itemDescId} className="mt-2 text-base text-[#5e5e5e]">
+                    {plan.description}
+                  </span>
+
+                  <ul className="mt-6 space-y-2 text-sm">
+                    {(plan.features ?? []).map((f, i) => (
+                      <li key={`${itemId}-f-${i}`} className="flex items-start gap-2">
+                        <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900" />
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {(plan.btnOne && plan.btnOneLink) || (plan.btnTwo && plan.btnTwoLink) ? (
+                  <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label={`Działania planu: ${plan.name}`}>
+                    {plan.btnOne && plan.btnOneLink && (
+                      <Button link={plan.btnOneLink} variant="accent" arrow>
+                        {plan.btnOne}
+                      </Button>
+                    )}
+                    {plan.btnTwo && plan.btnTwoLink && (
+                      <Button link={plan.btnTwoLink} variant="normal" arrow>
+                        {plan.btnTwo}
+                      </Button>
+                    )}
+                  </div>
+                ) : null}
+              </article>
+            );
+          })}
+        </div>
+
+        {note && (
+          <aside className="mt-8 mb-4 rounded-md bg-white p-6 ring-1 ring-neutral-200" role="note" aria-label="Informacja">
+            {note.text}
+            {note.ctaLink && note.ctaLabel && (
+              <div className="mt-4">
+                <Button link={note.ctaLink} variant="accent" arrow>
+                  {note.ctaLabel}
+                </Button>
+              </div>
+            )}
+          </aside>
+        )}
+
+        {legalNote && <p className="text-[#5e5e5e]">{legalNote}</p>}
+      </Wrapper>
+    </section>
   );
 }

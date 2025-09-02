@@ -1,4 +1,3 @@
-// app/oferta/strony-www/page.tsx
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -12,7 +11,7 @@ function Section({ id, title, children, subtitle }: { id: string; title: string;
     <section id={id} aria-labelledby={`${id}-title`} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-8">
         {subtitle ? <p className="text-sm tracking-widest text-[#5e5e5e] uppercase">{subtitle}</p> : null}
-        <h2 id={`${id}-title`} className="text-2xl leading-tight font-semibold text-[#080808]">
+        <h2 id={`${id}-title`}>
           {title}
         </h2>
       </div>
@@ -38,7 +37,7 @@ function CTA({ href, label, variant = 'primary', ariaLabel }: { href: string; la
 }
 
 function Pill({ children }: { children: React.ReactNode }) {
-  return <span className="rounded-md-full border border-neutral-200 bg-white px-3 py-1 text-xs font-medium text-[#5e5e5e]">{children}</span>;
+  return <span className="rounded-md border border-neutral-200 bg-white px-3 py-1 text-xs font-medium text-[#5e5e5e]">{children}</span>;
 }
 
 export default function Page() {
@@ -51,7 +50,7 @@ export default function Page() {
             <h1 id="hero-title" className="text-4xl font-semibold tracking-tight sm:text-5xl">
               Strony, które sprzedają i rosną.
             </h1>
-            <p className="mt-4 text-lg text-[#5e5e5e]">SEO, WCAG, treść i technologia w standardzie. Minimalizm. Prestiż. Efekt.</p>
+            <p className="mt-4 text-lg text-[#5e5e5e]">SEO, WCAG, treść i technologia w standardzie. glassizm. Prestiż. Efekt.</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <CTA href="/kontakt" label="Wyceń projekt" ariaLabel="Wyceń projekt — formularz kontaktowy" />
               <CTA href="/kontakt" label="Umów rozmowę" variant="secondary" />
@@ -88,7 +87,7 @@ export default function Page() {
                 {/* Powietrze – Treść */}
                 <div className="rounded-md-lg border border-neutral-200 p-4">
                   <div className="mb-2 flex items-center gap-2">
-                    <span className="rounded-md-full inline-block h-3 w-3 bg-neutral-900"></span>
+                    <span className="inline-block h-3 w-3 rounded-md bg-neutral-900"></span>
                     <span className="text-sm font-semibold">Powietrze</span>
                   </div>
                   <p className="text-xs text-[#5e5e5e]">Klarowna treść.</p>
@@ -122,7 +121,7 @@ export default function Page() {
             'Audyty: wydajność, dostępność, prawo.',
           ].map((item) => (
             <li key={item} className="rounded-md-md flex items-start gap-3 bg-white p-4 ring-1 ring-neutral-200">
-              <span aria-hidden className="rounded-md-full mt-1 inline-block h-2 w-2 bg-neutral-900" />
+              <span aria-hidden className="mt-1 inline-block h-2 w-2 rounded-md bg-neutral-900" />
               <span className="text-sm text-neutral-800">{item}</span>
             </li>
           ))}
@@ -168,7 +167,7 @@ export default function Page() {
 
       {/* Migracje i redesign */}
       <Section id="migrations" title="Migracje i redesign" subtitle="Upgrade">
-        <p className="text-[#5e5e5e]">Migruję z WP/Elementor do Webflow, by spełnić WCAG i podnieść jakość. Redesign obejmuje serwis, brand i materiały. Minimalizm. Porządek. Wynik.</p>
+        <p className="text-[#5e5e5e]">Migruję z WP/Elementor do Webflow, by spełnić WCAG i podnieść jakość. Redesign obejmuje serwis, brand i materiały. glassizm. Porządek. Wynik.</p>
         <div className="mt-6">
           <CTA href="/kontakt" label="Przenieś stronę" />
         </div>
@@ -213,7 +212,7 @@ export default function Page() {
                 'CMS + szkolenie PDF.',
               ].map((f) => (
                 <li key={f} className="flex items-start gap-2">
-                  <span aria-hidden className="rounded-md-full mt-2 h-1.5 w-1.5 bg-neutral-900" />
+                  <span aria-hidden className="mt-2 h-1.5 w-1.5 rounded-md bg-neutral-900" />
                   <span>{f}</span>
                 </li>
               ))}
@@ -242,7 +241,7 @@ export default function Page() {
                 'CMS + szkolenie PDF i wideo.',
               ].map((f) => (
                 <li key={f} className="flex items-start gap-2">
-                  <span aria-hidden className="rounded-md-full mt-2 h-1.5 w-1.5 bg-neutral-900" />
+                  <span aria-hidden className="mt-2 h-1.5 w-1.5 rounded-md bg-neutral-900" />
                   <span>{f}</span>
                 </li>
               ))}
@@ -275,7 +274,7 @@ export default function Page() {
                 'Szkolenie PDF + wideo, dokumentacja edycji.',
               ].map((f) => (
                 <li key={f} className="flex items-start gap-2">
-                  <span aria-hidden className="rounded-md-full mt-2 h-1.5 w-1.5 bg-neutral-900" />
+                  <span aria-hidden className="mt-2 h-1.5 w-1.5 rounded-md bg-neutral-900" />
                   <span>{f}</span>
                 </li>
               ))}

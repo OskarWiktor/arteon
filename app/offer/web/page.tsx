@@ -10,13 +10,6 @@ import WebFeatures from '@/components/sections/features/WebFeatures';
 import Gap from '@/components/ui/Gap';
 import WebPrices from '@/components/sections/prices/WebPrices';
 
-/**
- * Strona ofertowa: "Strony" – Arteon v2
- * Styl: Minimalizm. Prestiż. Efekt.
- * Założenia: krótkie zdania, WCAG 2.2 AA, układ czytelny, białe przestrzenie.
- * Tech-neutral: Next.js + React + TS + Tailwind (impl. docelowa po stronie projektu).
- */
-
 export default function OfferWebPage() {
   return (
     <>

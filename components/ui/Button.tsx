@@ -6,7 +6,7 @@ import { RiArrowRightUpLine } from 'react-icons/ri';
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: 'normal' | 'accent' | 'minimal' | 'dark';
+  variant?: 'normal' | 'accent' | 'glass' | 'dark' | 'minimal';
   size?: 'small' | 'medium' | 'big';
   onClick?: () => void;
   disabled?: boolean;
@@ -37,37 +37,46 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
 
   switch (variant) {
     case 'normal':
-      variantClass = 'border border-black/10 bg-white text-[#080808] focus-visible:ring-black/20';
+      variantClass =
+        'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] ' +
+        'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
       break;
     case 'accent':
-      variantClass = 'bg-indigo-800 text-white focus-visible:ring-indigo-800';
+      variantClass = 'hover:translate-y-[-2px] shadow-md hover:shadow-xl bg-indigo-800 text-white ' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
       break;
     case 'dark':
-      variantClass = 'border border-[#2B2B2B] bg-[#2B2B2B] hover:border-indigo-800 hover:bg-indigo-800 text-[#f1f1f1]';
+      variantClass =
+        'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-[#2B2B2B] bg-[#2B2B2B] hover:border-indigo-800 hover:bg-indigo-800 text-[#f1f1f1] ' +
+        'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#2B2B2B]';
+      break;
+    case 'glass':
+      variantClass =
+        'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-gray-100 hover:bg-indigo-800/60 backdrop-blur-sm bg-white/60 ' +
+        'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
       break;
     case 'minimal':
-      variantClass = 'border border-gray-100 hover:bg-indigo-800/60 backdrop-blur-sm bg-white/60';
+      variantClass = 'bg-white text-[#080808] ' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
       break;
   }
 
   const baseClass =
-    `transition w-fit focus:outline-none focus-visible:ring-2 hover:translate-y-[-2px] ` +
-    `inline-flex rounded-md items-center font-medium shadow-md hover:shadow-xl text-base ` +
+    `transition w-fit focus:outline-none focus-visible:outline-none focus-visible:ring-2 ` +
+    ` inline-flex rounded-md items-center font-medium text-base ` +
     `${sizeClass} ${variantClass} ` +
     `${disabled ? 'cursor-not-allowed opacity-50 pointer-events-none' : 'cursor-pointer'}`;
 
   const Arrow = arrow ? (
-    <span className="flex h-5 w-5 items-center justify-center" aria-hidden="true">
+    <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">
       <RiArrowRightUpLine className="text-current" />
     </span>
   ) : null;
 
   if (disabled) {
     return (
-      <span aria-disabled="true" className={baseClass}>
+      <button type="button" disabled aria-disabled="true" className={baseClass}>
         <span>{children}</span>
         {Arrow}
-      </span>
+      </button>
     );
   }
 

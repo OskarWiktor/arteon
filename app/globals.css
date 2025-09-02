@@ -66,9 +66,6 @@ body {
 .text-light {
   @apply text-[#5e5e5e];
 }
-.text-light {
-  @apply text-[#5e5e5e];
-}
 .text-mid {
   @apply text-[#2B2B2B];
 }

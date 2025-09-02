@@ -16,19 +16,19 @@ export const metadata: Metadata = {
   description: 'Arteon',
 };
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // ustaw w .env.local
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const headersList = await headers();
   const host = headersList.get('host') || '';
-  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+  const locale = host.endsWith('.com') ? 'en' : 'pl';
+
 
   return (
     <html lang={locale}>
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css" />
 
-        {/* 1) TYLKO domyślna odmowa + stub gtag (bez ładowania gtag/js) */}
         <Script id="ga-consent-default" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -43,7 +43,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           `}
         </Script>
 
-        {/* 2) Przekazanie GA_ID do client-side + helper do otwierania panelu */}
         <Script id="arteon-globals" strategy="afterInteractive">
           {`
             window.__GA_ID = ${GA_ID ? JSON.stringify(GA_ID) : 'undefined'};
@@ -59,7 +58,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main>{children}</main>
         <Footer />
 
-        {/* Vercel Analytics i SpeedInsights są cookieless — mogą być przed zgodą */}
         <Analytics />
         <SpeedInsights />
 

@@ -36,7 +36,7 @@ export default function CalculatorSteps({ step, currentStep, activeSteps, select
     <>
       {currentStep > 0 && <ProgressBar currentStep={currentStep} totalSteps={activeSteps.length} />}
 
-      <h3 className="text-xl">{step.title.replace(/^BRANCH:\s*/, '')}</h3>
+      <h3>{step.title.replace(/^BRANCH:\s*/, '')}</h3>
       {step.tooltip && <p className="text-gray-600">{step.tooltip}</p>}
       {error && <p className="mt-2 text-red-600">{error}</p>}
 
@@ -52,7 +52,7 @@ export default function CalculatorSteps({ step, currentStep, activeSteps, select
       {(currentStep > 0 || hasSelection) && (
         <div className="mt-8 flex gap-6">
           {currentStep > 0 && (
-            <Button onClick={onPrev} variant="minimal">
+            <Button onClick={onPrev} variant="glass">
               Wstecz
             </Button>
           )}

@@ -1,6 +1,4 @@
-'use client';
-
-import { ReactNode, isValidElement, cloneElement } from 'react';
+import { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 
 type BenefitItem = {
@@ -14,32 +12,28 @@ interface BenefitBeltProps {
   className?: string;
 }
 
-export default function BenefitBelt({ items, ariaLabel = 'Kluczowe benefity', className = '' }: BenefitBeltProps) {
+export default function BenefitBelt({
+  items,
+  ariaLabel = 'Kluczowe benefity',
+  className = '',
+}: BenefitBeltProps) {
   const data = (items ?? []).slice(0, 6);
-  const ICON_SIZE_CLASS = 'h-6 w-6';
-
-  const sizedIcon = (node: ReactNode) => {
-    if (isValidElement(node)) {
-      const prev = (node.props as any)?.className ?? '';
-      return cloneElement(node as any, {
-        className: `${prev} ${ICON_SIZE_CLASS}`.trim(),
-        'aria-hidden': true,
-      });
-    }
-    return (
-      <span aria-hidden="true" className={ICON_SIZE_CLASS}>
-        {node}
-      </span>
-    );
-  };
 
   return (
-    <section className={`relative bg-white ${className}`} aria-label="Pasek benefitów">
+    <section className={`relative bg-white ${className}`} aria-label={ariaLabel}>
       <Wrapper className="py-2 md:py-3">
-        <ul aria-label={ariaLabel} className="grid grid-cols-2 gap-x-3 gap-y-2 text-[#5e5e5e] md:flex md:flex-nowrap md:items-center md:gap-0 md:divide-x md:divide-slate-200">
+        <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-[#5e5e5e] md:flex md:flex-nowrap md:items-center md:gap-0 md:divide-x md:divide-slate-200">
           {data.map((item, i) => (
-            <li key={i} className="flex items-center gap-2 py-2 md:flex-1 md:justify-center md:px-4 md:first:pl-0 md:last:pr-0">
-              <span className="shrink-0">{sizedIcon(item.icon)}</span>
+            <li
+              key={i}
+              className="flex items-center gap-2 py-2 md:flex-1 md:justify-center md:px-4 md:first:pl-0 md:last:pr-0"
+            >
+              <span
+                aria-hidden="true"
+                className="shrink-0 [&_svg]:h-6 [&_svg]:w-6"
+              >
+                {item.icon}
+              </span>
               <span>{item.label}</span>
             </li>
           ))}

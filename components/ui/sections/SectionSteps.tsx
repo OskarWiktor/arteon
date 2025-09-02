@@ -1,5 +1,3 @@
-'use client';
-
 import { ReactNode } from 'react';
 import Image from 'next/image';
 import Wrapper from '../Wrapper';
@@ -63,46 +61,57 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
   }
 
   return (
-    <section role="region" className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`} style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined} data-section="steps">
-      {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
+    <section className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`} style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined} data-section="steps">
+      {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative z-10 pb-8">
         {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
         {title && <h3 className={toneTextClass}>{title}</h3>}
         {description && <p className={`max-w-2xl md:mt-3 ${toneMutedClass}`}>{description}</p>}
 
-        <div className={`mt-6 grid auto-rows-fr grid-cols-1 gap-4 md:mt-8 lg:mt-10 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
-          {items.map(({ icon, imageSrc, imageAlt, title, description, subtitle }, index) => (
-            <div key={index} className="flex flex-col items-stretch" role="group" tabIndex={0}>
-              <article
-                role="group"
-                aria-labelledby={`step-title-${index}`}
-                aria-describedby={`step-desc-${index}`}
-                className="relative flex h-full w-full flex-col rounded-md border-gray-300 bg-white px-6 py-8 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
-              >
-                {imageSrc ? (
-                  <Image src={imageSrc} alt={imageAlt ?? ''} width={128} height={128} className="pointer-events-none absolute top-[-8px] left-2 opacity-10 select-none" aria-hidden />
-                ) : (
-                  <span className="absolute top-[-8px] left-2 text-9xl font-bold text-gray-800/10" aria-hidden>
-                    {icon}
-                  </span>
-                )}
+        <ol className={`mt-6 grid auto-rows-fr grid-cols-1 gap-4 md:mt-8 lg:mt-10 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
+          {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
+            const titleId = `step-title-${index}`;
+            const descId = `step-desc-${index}`;
 
-                <h4 id={`step-title-${index}`} className="z-10" tabIndex={0}>
-                  {title}
-                </h4>
-                {subtitle && <span className="text-[#5e5e5e]">{subtitle}</span>}
+            return (
+              <li key={index} className="flex flex-col items-stretch">
+                <article
+                  aria-labelledby={titleId}
+                  aria-describedby={descId}
+                  className="relative flex h-full w-full flex-col rounded-md border-gray-300 bg-white px-6 py-8 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
+                >
+                  {imageSrc ? (
+                    <Image
+                      src={imageSrc}
+                      alt={imageAlt ?? ''}
+                      width={128}
+                      height={128}
+                      className="pointer-events-none absolute top-[-8px] left-2 opacity-10 select-none"
+                      aria-hidden={imageAlt ? undefined : true}
+                    />
+                  ) : (
+                    <span className="absolute top-[-8px] left-2 text-9xl font-bold text-[#080808]/10" aria-hidden={true}>
+                      {icon}
+                    </span>
+                  )}
 
-                <div id={`step-desc-${index}`} tabIndex={0} className="z-10 mt-2">
-                  {description}
-                </div>
-              </article>
-            </div>
-          ))}
-        </div>
+                  <h4 id={titleId} className="z-10">
+                    {itemTitle}
+                  </h4>
+                  {itemSubtitle && <span className="text-[#5e5e5e]">{itemSubtitle}</span>}
 
-        {btnOne && (
-          <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10">
+                  <div id={descId} className="z-10 mt-2">
+                    {itemDesc}
+                  </div>
+                </article>
+              </li>
+            );
+          })}
+        </ol>
+
+        {(btnOne || btnTwo) && (
+          <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" role="group" aria-label="Działania sekcji">
             {btnOne && (
               <Button arrow variant="accent" link={btnOneLink}>
                 {btnOne}

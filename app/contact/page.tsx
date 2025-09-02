@@ -4,6 +4,7 @@ import ContactForm from '@/components/sections/ContactForm';
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import ContactSteps from '@/components/sections/steps/ContactSteps';
+import Gap from '@/components/ui/Gap';
 
 export async function generateMetadata() {
   return generatePageMetadata('contact');
@@ -19,9 +20,15 @@ export default function Page() {
         overlay="black"
       />
 
+      <Gap size="sm" />
+
       <ContactSteps />
 
+      <Gap />
+
       <ContactForm />
+
+      <Gap />
 
       <SectionBasic
         title="Szybka wycena"
@@ -30,7 +37,10 @@ export default function Page() {
         imageAlt="Kalkulator"
         btnOneLink="/calculator"
         btnOne="Kalkulator"
+        id="contact"
       />
+
+      <Gap size="sm" />
     </>
   );
 }

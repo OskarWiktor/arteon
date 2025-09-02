@@ -1,24 +1,38 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Project } from '@/types/project';
+import Button from './Button';
 
-type Props = {
-  project: Project;
-};
+type Props = { project: Project; size?: 'small' | 'normal' };
 
-export default function ProjectCard({ project }: Props) {
+export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
+  const sizeClass = size === 'normal' ? 'aspect-[5/3]' : 'aspect-[2/1]';
+
   return (
-    <Link href={`/projects/${project.slug}`} className="min-w-82" role="group" aria-label={`Project card ${project.title}`}>
-      <div className="relative h-80 w-full overflow-hidden shadow-md transition-shadow hover:shadow-xl">
-        <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" priority />
-      </div>
+    <Link
+      href={`/projects/${project.slug}`}
+      className="group block h-full rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+    >
+      <article className="overflow-hidden rounded-xl bg-white shadow-md transition hover:-translate-y-0.5 hover:shadow-xl">
+        <div className={`relative ${sizeClass} w-full`}>
+          <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" quality={100} />
+        </div>
 
-      <div className="flex flex-col md:mx-4 md:my-2">
-        <h4 className="mt-4">{project.title}</h4>
-        <p className="md:mt-2">{project.short}</p>
-      </div>
+        <div className="px-6 py-4 md:px-7 md:py-5">
+          <h4>{project.title}</h4>
+          <p className="mt-2 text-[#5e5e5e]">{project.short}</p>
+
+          {size === 'normal' ? (
+            <>
+              <div className="mt-4 mb-2 h-px w-full bg-gray-200" aria-hidden="true" />
+
+              <Button variant="minimal" size="small" arrow>
+                Szczegóły projektu
+              </Button>
+            </>
+          ) : null}
+        </div>
+      </article>
     </Link>
   );
 }

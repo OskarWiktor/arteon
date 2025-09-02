@@ -20,12 +20,12 @@ interface CalculatorResultProps {
 export default function CalculatorResult({ totalPrice, onReset, pathKey, title, disclaimer, inPrice, startAgain, from, to, currency }: CalculatorResultProps) {
   return (
     <div className="space-y-4">
-      <h3 className="inline border-b-2 border-b-indigo-400 text-xl">{title}</h3>
+      <h3 className="inline border-b-2 border-b-indigo-400">{title}</h3>
       <p className="pt-8 text-2xl">{`${from} ${Math.round(totalPrice * 0.8)} ${to} ${Math.round(totalPrice * 1.2)} ${currency}`}</p>
       <span className="text-xs text-gray-700">{disclaimer}</span>
 
       {pathKey && (
-        <div className="mt-6 text-left text-gray-800">
+        <div className="mt-6 text-left text-[#080808]">
           <h4 className="mb-2">{inPrice}</h4>
           <ul className="list-disc pl-6">
             {includedPerPath[pathKey].map((item, i) => (
@@ -36,7 +36,7 @@ export default function CalculatorResult({ totalPrice, onReset, pathKey, title, 
       )}
 
       <div className="mt-8">
-        <Button onClick={onReset} variant="minimal">
+        <Button onClick={onReset} variant="glass">
           {startAgain}
         </Button>
       </div>

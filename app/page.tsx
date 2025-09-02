@@ -31,9 +31,10 @@ export default function Home() {
         variant="center"
       />
 
-      <Gap />
+      <Gap size="sm" />
 
       <SectionInfo
+        id="mkjiohh"
         title="Elastyczny partner dla Twojej marki"
         description="Od startupu po globalną skalę – łączymy psychologię, design i technologię, aby Twoja firma przyciągała właściwych klientów."
       />
@@ -89,7 +90,7 @@ export default function Home() {
 
       <Gap />
 
-      <SectionInfo title="Dlaczego warto z nami pracować?" description="Działamy jak system: od strategii przez wdrożenie po analizę wyników — wszystko w jednym miejscu.">
+      <SectionInfo id="klnjknjnj" title="Dlaczego warto z nami pracować?" description="Działamy jak system: od strategii przez wdrożenie po analizę wyników — wszystko w jednym miejscu.">
         <ul className="list-disc pl-5">
           <li>Kompleksowe rozwiązania – jeden partner</li>
           <li>Indywidualne podejście – zero szablonów</li>
@@ -104,6 +105,7 @@ export default function Home() {
       <Gap />
 
       <SectionBasic
+        id="design"
         title="Design - wygląd, który działa jak magnez"
         description="Projektujemy system wizualny, który przyciąga właściwych klientów, buduje zaufanie i odróżnia Twoją markę na tle innych. Psychologia, estetyka, spójność — z myślą o długofalowym rozwoju."
         imageSrc="/assets/test.jpg"
@@ -142,6 +144,8 @@ export default function Home() {
       <Gap />
 
       <TechStack />
+
+      <Gap size="sm" />
     </>
   );
 }

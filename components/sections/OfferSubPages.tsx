@@ -53,8 +53,8 @@ export default function OfferSubPages() {
                 <img src={image} alt={title} className="object-cover" />
               </div>
               <div className="p-4">
-                <h5 className="text-lg">{title}</h5>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">{desc}</p>
+                <h5>{title}</h5>
+                <p>{desc}</p>
               </div>
             </Link>
           ))}

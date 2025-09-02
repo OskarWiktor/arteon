@@ -4,19 +4,32 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
-import { RiArrowDownSLine, RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
+import {
+  RiArrowDownSLine,
+  RiCodeSSlashFill,
+  RiShoppingCartLine,
+  RiArticleLine,
+  RiPaletteLine,
+  RiFileTextLine,
+  RiMegaphoneLine,
+} from 'react-icons/ri';
 import Wrapper from '@/components/ui/Wrapper';
 
 export default function DesktopNavigation() {
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
-  const offerRef = useRef<HTMLLIElement>(null);
+
+  const offerLiRef = useRef<HTMLLIElement>(null);
+  const offerBtnRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const buttonId = 'offer-button';
   const menuId = 'offer-submenu';
 
   useEffect(() => {
     const onPointerDown = (e: MouseEvent | TouchEvent) => {
-      if (!offerRef.current) return;
-      if (!offerRef.current.contains(e.target as Node)) setIsOfferOpen(false);
+      if (!offerLiRef.current) return;
+      if (!offerLiRef.current.contains(e.target as Node)) setIsOfferOpen(false);
     };
     document.addEventListener('mousedown', onPointerDown);
     document.addEventListener('touchstart', onPointerDown);
@@ -27,7 +40,12 @@ export default function DesktopNavigation() {
   }, []);
 
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setIsOfferOpen(false);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsOfferOpen(false);
+        offerBtnRef.current?.focus();
+      }
+    };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
   }, []);
@@ -42,16 +60,51 @@ export default function DesktopNavigation() {
   ];
 
   const offerSubPages = [
-    { href: '/offer/web', icon: <RiCodeSSlashFill className="h-6 w-6 text-indigo-800" />, title: 'Strony', desc: 'WCAG 2.2 - Indywidualny projekt - Migracje' },
-    { href: '/offer/shop', icon: <RiShoppingCartLine className="h-6 w-6 text-indigo-800" />, title: 'Sklepy online', desc: 'Płatności - Integracje - Automatyzacje' },
-    { href: '/offer/blog', icon: <RiArticleLine className="h-6 w-6 text-indigo-800" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
-    { href: '/offer/design', icon: <RiPaletteLine className="h-6 w-6 text-indigo-800" />, title: 'Design', desc: 'Systemy marek - Loga - Do druku' },
-    { href: '/offer/content', icon: <RiFileTextLine className="h-6 w-6 text-indigo-800" />, title: 'Content', desc: 'Teksty - Artykuły - Opisy' },
-    { href: '/offer/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-[#2B2B2B]" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
+    { href: '/offer/web', icon: <RiCodeSSlashFill className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Strony', desc: 'WCAG 2.2 - Indywidualny projekt - Migracje' },
+    { href: '/offer/shop', icon: <RiShoppingCartLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Sklepy online', desc: 'Płatności - Integracje - Automatyzacje' },
+    { href: '/offer/blog', icon: <RiArticleLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
+    { href: '/offer/design', icon: <RiPaletteLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Design', desc: 'Systemy marek - Loga - Do druku' },
+    { href: '/offer/content', icon: <RiFileTextLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Content', desc: 'Teksty - Artykuły - Opisy' },
+    { href: '/offer/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-[#2B2B2B]" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
   ];
 
+  const focusMenuItem = (idx: number) => {
+    const items = menuRef.current?.querySelectorAll<HTMLAnchorElement>('a[href]');
+    if (!items || items.length === 0) return;
+    const i = Math.max(0, Math.min(idx, items.length - 1));
+    items[i].focus();
+  };
+
+  const handleOfferButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (!isOfferOpen) setIsOfferOpen(true);
+      requestAnimationFrame(() => focusMenuItem(0));
+    }
+  };
+
+  const handleMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    const items = menuRef.current?.querySelectorAll<HTMLAnchorElement>('a[href]');
+    if (!items || items.length === 0) return;
+    const currentIndex = Array.from(items).findIndex((el) => el === document.activeElement);
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      focusMenuItem(currentIndex < 0 ? 0 : currentIndex + 1);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      focusMenuItem(currentIndex <= 0 ? 0 : currentIndex - 1);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      focusMenuItem(0);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      focusMenuItem(items.length - 1);
+    }
+  };
+
   return (
-    <nav className="hidden md:flex" aria-label="Main navigation">
+    <div className="hidden md:flex">
       <LayoutGroup>
         <ul className="relative flex gap-4 lg:gap-6">
           {navigationItems.map(({ href, label, exact }) => {
@@ -59,16 +112,21 @@ export default function DesktopNavigation() {
 
             if (label === 'Oferta') {
               return (
-                <li ref={offerRef} className="group relative flex cursor-pointer" key={label}>
+                <li ref={offerLiRef} className="group relative flex" key={label}>
                   <button
+                    id={buttonId}
+                    type="button"
                     onClick={() => setIsOfferOpen((p) => !p)}
+                    onKeyDown={handleOfferButtonKeyDown}
+                    aria-haspopup="menu"
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
-                    className="mr-[-10px] flex items-center gap-1 text-base text-[#2B2B2B] hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-black"
+                    ref={offerBtnRef}
+                    className="rounded mr-[-10px] flex items-center gap-1 text-base text-[#2B2B2B] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                      <RiArrowDownSLine className="h-4 w-4" />
+                      <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
                   </button>
 
@@ -76,31 +134,37 @@ export default function DesktopNavigation() {
                     {isOfferOpen && (
                       <motion.div
                         id={menuId}
-                        role="menu"
-                        aria-label="Podstrony oferty"
+                        aria-labelledby={buttonId}
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="fixed top-full left-0 z-50 w-full bg-white p-4 shadow-xl"
+                        className="fixed left-0 top-full z-50 w-full bg-white p-4 shadow-xl"
                       >
-                        <Wrapper className="grid grid-cols-3 gap-4">
-                          {offerSubPages.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              role="menuitem"
-                              className="flex gap-4 rounded-md border border-gray-100 px-4 py-2 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-black"
-                            >
-                              <div className="leading-tight">
-                                <div className="flex items-center gap-2">
-                                  {item.icon}
-                                  <span className="block text-base font-semibold text-[#2B2B2B]">{item.title}</span>
+                        <Wrapper>
+                          <div
+                            ref={menuRef}
+                            onKeyDown={handleMenuKeyDown}
+                            className="grid grid-cols-3 gap-4"
+                          >
+                            {offerSubPages.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="flex gap-4 rounded-md border border-gray-100 px-4 py-2 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                              >
+                                <div className="leading-tight">
+                                  <div className="flex items-center gap-2">
+                                    {item.icon}
+                                    <span className="block text-base font-semibold text-[#2B2B2B]">
+                                      {item.title}
+                                    </span>
+                                  </div>
+                                  <span className="text-sm">{item.desc}</span>
                                 </div>
-                                <span className="text-sm">{item.desc}</span>
-                              </div>
-                            </Link>
-                          ))}
+                              </Link>
+                            ))}
+                          </div>
                         </Wrapper>
                       </motion.div>
                     )}
@@ -114,7 +178,9 @@ export default function DesktopNavigation() {
                 <Link
                   href={href}
                   aria-current={isActivePage ? 'page' : undefined}
-                  className={`text-base text-[#2B2B2B] hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-black ${isActivePage ? 'font-semibold text-[#080808]' : ''}`}
+                  className={`rounded text-base text-[#2B2B2B] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
+                    isActivePage ? 'font-semibold text-[#080808]' : ''
+                  }`}
                 >
                   {label}
                 </Link>
@@ -123,6 +189,6 @@ export default function DesktopNavigation() {
           })}
         </ul>
       </LayoutGroup>
-    </nav>
+    </div>
   );
 }

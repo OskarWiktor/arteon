@@ -23,36 +23,50 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
   };
 
   return (
-    <div>
+    <section aria-labelledby="faq-heading">
       {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2>{title}</h2>
+      <h2 id="faq-heading">{title}</h2>
+
       {items.map((item, index) => {
         const isOpen = index === activeIndex;
+        const buttonId = `faq-q-${index}`;
+        const panelId = `faq-a-${index}`;
+
         return (
-          <div
-            key={index}
-            className={`my-4 cursor-pointer overflow-hidden rounded-md border-1 px-6 py-4 hover:border-indigo-300 hover:shadow-md md:my-6 md:py-6 ${isOpen ? 'border-indigo-300' : 'border-gray-300'}`}
-          >
-            <button onClick={() => toggle(index)} className="flex w-full cursor-pointer items-center justify-between text-left transition" aria-expanded={isOpen}>
+          <div key={index} className={`my-4 overflow-hidden rounded-md border px-6 py-4 hover:border-indigo-300 hover:shadow-md md:my-6 md:py-6 ${isOpen ? 'border-indigo-300' : 'border-gray-300'}`}>
+            <button
+              id={buttonId}
+              type="button"
+              onClick={() => toggle(index)}
+              className="flex w-full items-center justify-between text-left transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              aria-expanded={isOpen}
+              aria-controls={panelId}
+            >
               <span className="h6">{item.question}</span>
-              <span className="ml-2">{isOpen ? <FiMinus /> : <FiPlus />}</span>
+              <span className="ml-2" aria-hidden="true">
+                {isOpen ? <FiMinus /> : <FiPlus />}
+              </span>
             </button>
+
             <AnimatePresence initial={false}>
               {isOpen && (
                 <motion.div
                   key="content"
+                  id={panelId}
+                  role="region"
+                  aria-labelledby={buttonId}
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3, ease: 'easeInOut' }}
                 >
-                  <p className="pt-4"> {item.answer}</p>
+                  <p className="pt-4">{item.answer}</p>
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
         );
       })}
-    </div>
+    </section>
   );
 }

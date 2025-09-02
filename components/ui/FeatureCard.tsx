@@ -1,25 +1,31 @@
-'use client';
+type FeatureCardProps = {
+  title: string;
+  points?: string[];
+};
 
-export default function FeatureCard({ title, points }: { title: string; points?: string[] }) {
-  const id = `feature-${String(title)
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/gi, '-')}`;
+export default function FeatureCard({ title, points }: FeatureCardProps) {
+  const id = `feature-${String(title).toLowerCase().replace(/[^a-z0-9]+/gi, '-')}`;
 
   return (
-    <article aria-labelledby={id} className="rounded-md bg-white px-6 py-4 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md">
+    <article
+      aria-labelledby={id}
+      className="rounded-md bg-white px-6 py-4 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md"
+    >
       <header className="flex items-center gap-2">
-        <span aria-hidden className="inline-block h-2 w-2 rounded-[2px] bg-black" />
-        <p>{title}</p>
+        <span aria-hidden="true" className="inline-block h-2 w-2 rounded-[2px] bg-black" />
+        <p id={id} role="heading" aria-level={3}>
+          {title}
+        </p>
       </header>
 
-      {points && (
-        <div className="mt-2 space-y-2" role="list">
+      {Array.isArray(points) && points.length > 0 && (
+        <ul className="mt-2 space-y-2">
           {points.map((pt, i) => (
-            <span key={i} className="flex items-start gap-1 text-base text-[#080808]/70" role="listitem">
+            <li key={i} className="flex items-start gap-1 text-base text-[#080808]/70">
               {pt}
-            </span>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </article>
   );

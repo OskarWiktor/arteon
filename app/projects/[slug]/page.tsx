@@ -28,12 +28,15 @@ export default function ProjectPage({ params }: PageProps) {
   return (
     <>
       <Image src={project.image} alt={project.title} className="max-h-96 w-full object-cover object-center" width={1920} height={1080} />
+
+      <Gap size="sm" />
+
       <Wrapper>
-        <h1 className="mt-6 md:mt-8 lg:mt-12">{project.title}</h1>
+        <h1>{project.title}</h1>
         <h6 className="mt-2 text-sm capitalize">{project.category}</h6>
         <p className="my-4">{project.short}</p>
         {project.link && (
-          <Button variant="minimal" link={project.link}>
+          <Button variant="glass" link={project.link}>
             Zobacz stronę
           </Button>
         )}

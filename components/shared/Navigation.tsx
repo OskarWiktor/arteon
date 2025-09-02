@@ -1,6 +1,6 @@
 'use client';
 
-import { useState as useClientState } from 'react';
+import { useEffect, useState } from 'react';
 import { RiInstagramLine, RiFacebookFill, RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
 
@@ -9,7 +9,7 @@ import DesktopNavigation from './navigation/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useClientState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   /*
   const [host, setHost] = useState<string | null>(null);
@@ -32,13 +32,32 @@ export default function Navigation() {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isOpen]);
+
   return (
-    <div className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
       <Wrapper>
-        <section className="flex h-16 items-center justify-between lg:h-18">
-          <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon company logo" />
+        <nav
+          className="flex h-16 items-center justify-between lg:h-18"
+          aria-label="Nawigacja główna"
+        >
+          <Image
+            src="/assets/arteon-logo.png"
+            width={160}
+            height={50}
+            alt="Arteon — logo firmy"
+            priority
+          />
 
           <DesktopNavigation />
+
           <div className="hidden items-center gap-2 md:flex">
             {/* 
 // TO DO in Arteon v.1.2
@@ -53,21 +72,42 @@ export default function Navigation() {
             </div>
 */}
 
-            <a href="https://www.instagram.com/arteon.pl" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="focus-visible:outline-2 focus-visible:outline-black">
-              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
+            <span className="mr-3 text-sm font-normal text-[#5e5e5e] italic">#MadeWithNext</span>
+
+            <a
+              href="https://www.instagram.com/arteon.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >
+              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
             </a>
-            <a href="https://www.facebook.com/arteonpl" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="focus-visible:outline-2 focus-visible:outline-black">
-              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
+            <a
+              href="https://www.facebook.com/arteonpl"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >
+              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
             </a>
           </div>
 
-          <button onClick={toggleMenu} className="block md:hidden" aria-label={isOpen ? 'Close menu' : 'Open menu'}>
-            {isOpen ? <RiCloseLine size={28} /> : <RiMenuLine size={28} />}
+          <button
+            type="button"
+            onClick={toggleMenu}
+            className="block rounded p-1 md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
+            aria-expanded={isOpen}
+          >
+            {isOpen ? <RiCloseLine size={28} aria-hidden="true" /> : <RiMenuLine size={28} aria-hidden="true" />}
           </button>
-        </section>
+        </nav>
 
+        {/* Mobile nav (API bez zmian) */}
         <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} />
       </Wrapper>
-    </div>
+    </header>
   );
 }

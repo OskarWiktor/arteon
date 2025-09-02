@@ -4,7 +4,17 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
-import { RiArrowDownSLine, RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
+import {
+  RiArrowDownSLine,
+  RiCodeSSlashFill,
+  RiShoppingCartLine,
+  RiArticleLine,
+  RiPaletteLine,
+  RiFileTextLine,
+  RiMegaphoneLine,
+  RiInstagramLine,
+  RiFacebookFill,
+} from 'react-icons/ri';
 
 const navigationItems = [
   { href: '/', label: 'Home', exact: true },
@@ -14,18 +24,30 @@ const navigationItems = [
 ];
 
 const offerSubPages = [
-  { href: '/offer/web', icon: <RiCodeSSlashFill />, title: 'Strony WWW' },
-  { href: '/offer/shop', icon: <RiShoppingCartLine />, title: 'Sklepy online' },
-  { href: '/offer/blog', icon: <RiArticleLine />, title: 'Blogi' },
-  { href: '/offer/design', icon: <RiPaletteLine />, title: 'Design' },
-  { href: '/offer/content', icon: <RiFileTextLine />, title: 'Content' },
-  { href: '/offer/marketing', icon: <RiMegaphoneLine />, title: 'Marketing' },
+  { href: '/offer/web', icon: <RiCodeSSlashFill aria-hidden="true" />, title: 'Strony WWW' },
+  { href: '/offer/shop', icon: <RiShoppingCartLine aria-hidden="true" />, title: 'Sklepy online' },
+  { href: '/offer/blog', icon: <RiArticleLine aria-hidden="true" />, title: 'Blogi' },
+  { href: '/offer/design', icon: <RiPaletteLine aria-hidden="true" />, title: 'Design' },
+  { href: '/offer/content', icon: <RiFileTextLine aria-hidden="true" />, title: 'Content' },
+  { href: '/offer/marketing', icon: <RiMegaphoneLine aria-hidden="true" />, title: 'Marketing' },
 ];
 
-export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
+export default function MobileNavigation({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: (val: boolean) => void;
+}) {
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
+
   const menuRef = useRef<HTMLDivElement>(null);
+  const offerBtnRef = useRef<HTMLButtonElement>(null);
+  const submenuRef = useRef<HTMLDivElement>(null);
+
+  const offerButtonId = 'mobile-offer-button';
+  const submenuId = 'mobile-offer-submenu';
 
   useEffect(() => {
     const handleFocusOut = (event: FocusEvent) => {
@@ -33,21 +55,62 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
         setIsOpen(false);
       }
     };
-
     if (isOpen) {
       window.addEventListener('focusout', handleFocusOut);
     } else {
       window.removeEventListener('focusout', handleFocusOut);
     }
+    return () => window.removeEventListener('focusout', handleFocusOut);
+  }, [isOpen, setIsOpen]);
 
-    return () => {
-      window.removeEventListener('focusout', handleFocusOut);
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+      }
     };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
   }, [isOpen, setIsOpen]);
 
   useEffect(() => {
     setIsOfferOpen(false);
   }, [pathname]);
+
+  const handleOfferKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setIsOfferOpen((p) => !p);
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (!isOfferOpen) setIsOfferOpen(true);
+      requestAnimationFrame(() => {
+        const first = submenuRef.current?.querySelector<HTMLAnchorElement>('a[href]');
+        first?.focus();
+      });
+    }
+  };
+
+  const handleSubmenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    const items = submenuRef.current?.querySelectorAll<HTMLAnchorElement>('a[href]');
+    if (!items || items.length === 0) return;
+    const list = Array.from(items);
+    const idx = list.findIndex((el) => el === document.activeElement);
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      list[Math.min(idx + 1, list.length - 1)]?.focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      list[Math.max(idx - 1, 0)]?.focus();
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      list[0]?.focus();
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      list[list.length - 1]?.focus();
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -57,7 +120,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
           animate={{ opacity: 1, scaleY: 1 }}
           exit={{ opacity: 0, scaleY: 0.95 }}
           transition={{ duration: 0.3 }}
-          className="absolute top-16 left-0 z-50 w-full origin-top bg-white pt-2 pb-6 shadow-lg md:hidden"
+          className="absolute left-0 top-16 z-50 w-full origin-top bg-white pt-2 pb-6 shadow-lg md:hidden"
           ref={menuRef}
           aria-label="Mobile navigation menu"
         >
@@ -68,10 +131,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             variants={{
               hidden: {},
               visible: {
-                transition: {
-                  staggerChildren: 0.08,
-                  delayChildren: 0.1,
-                },
+                transition: { staggerChildren: 0.08, delayChildren: 0.1 },
               },
             }}
             className="m-auto flex w-[90%] max-w-[1280px] flex-col gap-3"
@@ -82,42 +142,80 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
                 if (label === 'Oferta') {
                   return (
-                    <div key={label}>
-                      <motion.li className="flex items-center justify-between" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                        <button onClick={() => setIsOfferOpen((prev) => !prev)} className="flex w-full items-center text-left hover:text-indigo-800">
-                          {label}
-                          <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                            <RiArrowDownSLine className="h-5 w-5" />
-                          </motion.span>
-                        </button>
-                      </motion.li>
+                    <motion.li
+                      key={label}
+                      className="flex flex-col"
+                      variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+                    >
+                      <button
+                        id={offerButtonId}
+                        ref={offerBtnRef}
+                        type="button"
+                        aria-haspopup="listbox"
+                        aria-expanded={isOfferOpen}
+                        aria-controls={submenuId}
+                        onClick={() => setIsOfferOpen((prev) => !prev)}
+                        onKeyDown={handleOfferKeyDown}
+                        className="flex w-full items-center justify-between text-left hover:text-indigo-800 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                      >
+                        <span>{label}</span>
+                        <motion.span
+                          aria-hidden="true"
+                          animate={{ rotate: isOfferOpen ? 180 : 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="inline-flex"
+                        >
+                          <RiArrowDownSLine className="h-5 w-5" />
+                        </motion.span>
+                      </button>
+
                       <AnimatePresence>
                         {isOfferOpen && (
                           <motion.div
+                            id={submenuId}
+                            aria-labelledby={offerButtonId}
                             initial={{ opacity: 0, y: -6 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -6 }}
                             transition={{ duration: 0.3 }}
                             className="mt-2 ml-1 grid grid-cols-2 gap-3"
+                            ref={submenuRef}
+                            onKeyDown={handleSubmenuKeyDown}
                           >
                             {offerSubPages.map((item) => (
-                              <Link key={item.href} href={item.href} onClick={() => setIsOpen(false)} className="group rounded-md-md flex items-center gap-2 hover:text-indigo-800">
-                                <div>{item.icon}</div>
-                                <div>
-                                  <p>{item.title}</p>
-                                </div>
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setIsOpen(false)}
+                                className="group flex items-center gap-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white hover:text-indigo-800"
+                              >
+                                <span className="[&_svg]:h-5 [&_svg]:w-5" aria-hidden="true">
+                                  {item.icon}
+                                </span>
+                                <span>{item.title}</span>
                               </Link>
                             ))}
                           </motion.div>
                         )}
                       </AnimatePresence>
-                    </div>
+                    </motion.li>
                   );
                 }
 
                 return (
-                  <motion.li key={label} className="relative" variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
-                    <Link href={href} onClick={() => setIsOpen(false)} className={`hover:text-indigo-800 ${isActivePage ? 'font-semibold text-[#2B2B2B]' : ''}`}>
+                  <motion.li
+                    key={label}
+                    className="relative"
+                    variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}
+                  >
+                    <Link
+                      href={href}
+                      onClick={() => setIsOpen(false)}
+                      aria-current={isActivePage ? 'page' : undefined}
+                      className={`rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white hover:text-indigo-800 ${
+                        isActivePage ? 'font-semibold text-[#2B2B2B]' : ''
+                      }`}
+                    >
                       {label}
                     </Link>
                   </motion.li>
@@ -125,7 +223,10 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               })}
             </LayoutGroup>
 
-            <motion.li variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="flex justify-between border-t border-gray-300 pt-4">
+            <motion.li
+              variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+              className="flex justify-between border-t border-gray-300 pt-4"
+            >
               {/* 
                            <div>
                 <button className="cursor-pointer text-lg text-indigo-800 focus-visible:outline-2 focus-visible:outline-black">PL</button>
@@ -134,13 +235,25 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               </div> 
               
               */}
-              <div className="flex gap-2">
-                <Link href="https://www.instagram.com/arteon.pl" target="_blank" aria-label="Instagram">
-                  <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
-                </Link>
-                <Link href="https://www.facebook.com/arteonpl" target="_blank" aria-label="Facebook">
-                  <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" />
-                </Link>
+              <div className="flex gap-2" role="group" aria-label="Social media">
+                <a
+                  href="https://www.instagram.com/arteon.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
+                </a>
+                <a
+                  href="https://www.facebook.com/arteonpl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
+                </a>
               </div>
             </motion.li>
           </motion.ul>
