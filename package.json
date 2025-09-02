@@ -13,6 +13,7 @@
   "dependencies": {
     "@fontsource-variable/instrument-sans": "^5.2.6",
     "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^12.18.1",
     "next": "15.3.3",
     "react": "^19.0.0",

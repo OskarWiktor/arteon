@@ -8,6 +8,7 @@ import Footer from '@/components/shared/Footer';
 import Navigation from '@/components/shared/Navigation';
 
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: 'Arteon',
@@ -38,6 +39,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );
