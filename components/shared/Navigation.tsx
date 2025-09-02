@@ -1,7 +1,6 @@
 'use client';
 
 import { useState as useClientState } from 'react';
-import { usePathname } from 'next/navigation';
 import { RiInstagramLine, RiFacebookFill, RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
 

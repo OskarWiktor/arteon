@@ -18,7 +18,6 @@ const offerLinks = [
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projekty' },
-  { href: '/calculator', label: 'Wycena' },
   { href: '/contact', label: 'Kontakt' },
 ];
 
