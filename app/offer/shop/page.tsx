@@ -52,8 +52,8 @@ export default function Page() {
             </h1>
             <p className="mt-4 text-lg text-[#5e5e5e]">SEO, WCAG, treść i technologia w standardzie. glassizm. Prestiż. Efekt.</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <CTA href="/kontakt" label="Wyceń projekt" ariaLabel="Wyceń projekt — formularz kontaktowy" />
-              <CTA href="/kontakt" label="Umów rozmowę" variant="secondary" />
+              <CTA href="/contact" label="Wyceń projekt" ariaLabel="Wyceń projekt — formularz kontaktowy" />
+              <CTA href="/contact" label="Umów rozmowę" variant="secondary" />
             </div>
 
             <div className="mt-8 flex flex-wrap gap-2">
@@ -145,7 +145,7 @@ export default function Page() {
           </div>
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
-          <CTA href="/kontakt" label="Dobierz stack" />
+          <CTA href="/contact" label="Dobierz stack" />
           <CTA href="#pricing" label="Zobacz ceny" variant="secondary" />
         </div>
       </Section>
@@ -156,7 +156,7 @@ export default function Page() {
           Buduję serwisy zgodne z WCAG 2.1 AA. Pomagam w politykach i regulaminach. Wystawiam Deklarację Dostępności. Tworzę projekty na rynki międzynarodowe z uwzględnieniem lokalnych wymogów.
         </p>
         <div className="mt-6">
-          <CTA href="/kontakt" label="Zapytaj o WCAG" />
+          <CTA href="/contact" label="Zapytaj o WCAG" />
         </div>
       </Section>
 
@@ -169,7 +169,7 @@ export default function Page() {
       <Section id="migrations" title="Migracje i redesign" subtitle="Upgrade">
         <p className="text-[#5e5e5e]">Migruję z WP/Elementor do Webflow, by spełnić WCAG i podnieść jakość. Redesign obejmuje serwis, brand i materiały. glassizm. Porządek. Wynik.</p>
         <div className="mt-6">
-          <CTA href="/kontakt" label="Przenieś stronę" />
+          <CTA href="/contact" label="Przenieś stronę" />
         </div>
       </Section>
 
@@ -218,7 +218,7 @@ export default function Page() {
               ))}
             </ul>
             <div className="mt-6 space-x-2">
-              <CTA href="/kontakt" label="Zamów landing" />
+              <CTA href="/contact" label="Zamów landing" />
               <CTA href="#tech" label="Dobierz stack" variant="secondary" />
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function Page() {
               ))}
             </ul>
             <div className="mt-6 space-x-2">
-              <CTA href="/kontakt" label="Zamów stronę" />
+              <CTA href="/contact" label="Zamów stronę" />
               <CTA href="#value" label="Co w cenie" variant="secondary" />
             </div>
           </div>
@@ -280,7 +280,7 @@ export default function Page() {
               ))}
             </ul>
             <div className="mt-6 space-x-2">
-              <CTA href="/kontakt" label="Zamów prestiż" />
+              <CTA href="/contact" label="Zamów prestiż" />
               <CTA href="#tech" label="Zobacz technologię" variant="secondary" />
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function Page() {
             <strong>Potrzebujesz funkcji niestandardowych?</strong> Liga Next.js obsłuży aplikacje, panele, integracje i logikę biznesową. <em>Wycena indywidualna</em> po warsztacie celów.
           </p>
           <div className="mt-4">
-            <CTA href="/kontakt" label="Porozmawiaj o Next.js" />
+            <CTA href="/contact" label="Porozmawiaj o Next.js" />
           </div>
         </div>
 
@@ -351,8 +351,8 @@ export default function Page() {
           </h2>
           <p className="mt-2 text-sm text-neutral-200">Dobierzemy poziom i technologię do Twojego celu. Prosto i skutecznie.</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <CTA href="/kontakt" label="Wyceń projekt" variant="secondary" />
-            <CTA href="/kontakt" label="Umów rozmowę" />
+            <CTA href="/contact" label="Wyceń projekt" variant="secondary" />
+            <CTA href="/contact" label="Umów rozmowę" />
           </div>
         </div>
       </section>

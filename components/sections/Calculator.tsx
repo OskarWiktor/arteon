@@ -2,11 +2,11 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Wrapper from '../ui/Wrapper';
-import CalculatorSteps, { Selections } from '../ui/calculator/CalculatorSteps';
-import CalculatorResult from '../ui/calculator/CalculatorResult';
+import CalculatorSteps, { Selections } from '../ui/contact/contactSteps';
+import CalculatorResult from '../ui/contact/contactResult';
 
-import type { Step } from '@/types/calculator';
-import { baseSteps, getStepsByType } from '@/data/pl/calculator';
+import type { Step } from '@/types/contact';
+import { baseSteps, getStepsByType } from '@/data/pl/contact';
 
 export default function Calculator() {
   const [currentStep, setCurrentStep] = useState(0);

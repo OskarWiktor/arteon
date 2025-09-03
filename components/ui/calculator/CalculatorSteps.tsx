@@ -5,7 +5,7 @@ import ProgressBar from './ProgressBar';
 import OptionButton from './OptionButton';
 import OptionInput from './OptionInput';
 import Button from '../../ui/Button';
-import type { Step } from '@/types/calculator';
+import type { Step } from '@/types/contact';
 
 export type Selections = Record<number, string[]>;
 

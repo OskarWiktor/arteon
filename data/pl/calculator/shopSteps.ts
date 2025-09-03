@@ -1,4 +1,4 @@
-import type { Step } from '@/types/calculator';
+import type { Step } from '@/types/contact';
 
 export const shopSteps: Step[] = [
   {

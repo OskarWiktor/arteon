@@ -15,7 +15,7 @@ const WebPlans: SectionPricesPlan[] = [
       'CMS + szkolenie PDF.',
     ],
     btnOne: 'Zamów landing',
-    btnOneLink: '/kontakt',
+    btnOneLink: '/contact',
     btnTwo: 'Dobierz stack',
     btnTwoLink: '#tech',
   },
@@ -33,7 +33,7 @@ const WebPlans: SectionPricesPlan[] = [
       'CMS + szkolenie PDF i wideo.',
     ],
     btnOne: 'Zamów stronę',
-    btnOneLink: '/kontakt',
+    btnOneLink: '/contact',
     btnTwo: 'Co w cenie',
     btnTwoLink: '#value',
   },
@@ -51,7 +51,7 @@ const WebPlans: SectionPricesPlan[] = [
       'Szkolenie PDF + wideo, dokumentacja edycji.',
     ],
     btnOne: 'Zamów prestiż',
-    btnOneLink: '/kontakt',
+    btnOneLink: '/contact',
     btnTwo: 'Zobacz technologię',
     btnTwoLink: '#tech',
     lastPlan: true,
@@ -67,7 +67,7 @@ const WebPlansNote: Note = {
     </p>
   ),
   ctaLabel: 'Porozmawiaj o Next.js',
-  ctaLink: '/kontakt',
+  ctaLink: '/contact',
 };
 
 export default function WebPrices() {

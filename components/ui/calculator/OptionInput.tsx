@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import type { Step } from '@/types/calculator';
+import type { Step } from '@/types/contact';
 
 interface OptionInputProps {
   input: Step['input'];

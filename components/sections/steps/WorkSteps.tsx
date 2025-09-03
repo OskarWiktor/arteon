@@ -36,7 +36,7 @@ export default function WorkSteps() {
       title="Proces"
       description="Transparentny. Iteracyjny. Skuteczny."
       btnOne="Rozpocznij wycenę"
-      btnOneLink="/calculator"
+      btnOneLink="/contact"
       btnTwo="Porozmawiajmy"
       btnTwoLink="/contact"
       backgroundImage="/assets/bg/abstract-bg12.jpg"

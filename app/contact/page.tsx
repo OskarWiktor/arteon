@@ -35,7 +35,7 @@ export default function Page() {
         description="Zastanawiasz się jaki może być potencjalny koszt Twojego projektu? Kliknij i przejdź do naszego bezpłatnego kalkulatora!"
         imageSrc="/assets/test.jpg"
         imageAlt="Kalkulator"
-        btnOneLink="/calculator"
+        btnOneLink="/contact"
         btnOne="Kalkulator"
         id="contact"
       />

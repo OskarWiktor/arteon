@@ -59,7 +59,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Responsywne strony WWW"
         btnOne="Zobacz ofertę"
-        btnOneLink="/oferta"
+        btnOneLink="/offer"
       >
         <ul className="list-disc pl-5">
           <li>Analiza branży i konkurencji w cenie</li>
@@ -79,7 +79,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Content marketing"
         btnOne="Zobacz ofertę"
-        btnOneLink="/oferta"
+        btnOneLink="/offer"
       >
         <ul className="list-disc pl-5">
           <li>Analiza słów kluczowych i potrzeb klientów</li>
@@ -111,7 +111,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Branding i identyfikacja wizualna"
         btnOne="Zobacz ofertę"
-        btnOneLink="/oferta"
+        btnOneLink="/offer"
       >
         <ul className="list-disc pl-5">
           <li>Logo i księga znaku</li>
@@ -131,7 +131,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Marketing cyfrowy"
         btnOne="Zobacz ofertę"
-        btnOneLink="/oferta"
+        btnOneLink="/offer"
       >
         <ul className="list-disc pl-5">
           <li>Działania dopasowane do Twojego wymarzonego klienta</li>

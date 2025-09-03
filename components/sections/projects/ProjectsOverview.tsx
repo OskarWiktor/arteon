@@ -24,9 +24,11 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
   const [cardWidth, setCardWidth] = useState(0);
   const [isScrollable, setIsScrollable] = useState(false);
 
-  const defaultProjects = useMemo(() => {
-    return [...(allProjectsData.projects as Project[])].sort(() => Math.random() - 0.5).slice(0, max);
-  }, [max]);
+const defaultProjects = useMemo(() => {
+  return [...(allProjectsData.projects as Project[])]
+    .slice(0, max);
+}, [max]);
+
 
   const finalProjects = projects ?? defaultProjects;
 

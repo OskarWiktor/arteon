@@ -26,7 +26,7 @@ export default function Page() {
         description="Masz pytania lub potrzebujesz wyceny niestandardowego projektu? Skontaktuj się z nami, a my przygotujemy ofertę."
         imageSrc="/assets/test.jpg"
         imageAlt="Kontakt z Arteon"
-        btnOneLink="/kontakt"
+        btnOneLink="/contact"
         btnOne="Kontakt"
       />
 

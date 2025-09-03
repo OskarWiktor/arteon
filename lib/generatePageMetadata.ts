@@ -6,7 +6,7 @@ import type { SupportedSlug } from '@/data/seo';
 export async function generatePageMetadata(slug: SupportedSlug): Promise<Metadata> {
   const headersList = await headers();
   const host = headersList.get('host') || '';
-  const locale = host.endsWith('.pl') ? 'pl' : 'en';
+  const locale = host.endsWith('com') ? 'en' : 'pl';
 
   return getPageMetadata(slug, locale);
 }

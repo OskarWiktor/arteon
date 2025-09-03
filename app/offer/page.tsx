@@ -32,7 +32,7 @@ export default function Page() {
         imageSrc="/assets/test.jpg"
         imageAlt="Zaproszenie do kontaktu"
         btnOne="Przejdź do formularza"
-        btnOneLink="/kontakt"
+        btnOneLink="/contact"
       ></SectionBasic>
 
       <Gap size="sm" />
