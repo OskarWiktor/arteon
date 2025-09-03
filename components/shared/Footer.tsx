@@ -24,13 +24,7 @@ export default function Footer() {
       <Wrapper>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="flex flex-col items-start gap-4">
-            <Image
-              src="/assets/arteon-logo.png"
-              width={200}
-              height={64}
-              alt="Arteon — logo firmy"
-              className="object-contain"
-            />
+            <Image src="/assets/arteon-logo.png" width={200} height={64} alt="Arteon — logo firmy" className="object-contain" />
             <div className="flex items-center gap-2" role="group" aria-label="Social media">
               <a
                 href="https://www.instagram.com/arteon.pl"

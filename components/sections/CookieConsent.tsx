@@ -149,9 +149,7 @@ export default function CookieConsent() {
           </div>
         ) : (
           <div id="cookie-preferences" className="space-y-4">
-            <h5 id="cookie-title">
-              Preferencje prywatności
-            </h5>
+            <h5 id="cookie-title">Preferencje prywatności</h5>
 
             <fieldset className="space-y-2">
               <legend className="sr-only">Kategorie</legend>

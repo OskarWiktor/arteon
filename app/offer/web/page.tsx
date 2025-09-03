@@ -9,7 +9,6 @@ import WebPrices from '@/components/sections/prices/WebPrices';
 import Mission from '@/components/sections/steps/Mission';
 import Gap from '@/components/ui/Gap';
 
-
 export default function OfferWebPage() {
   return (
     <>

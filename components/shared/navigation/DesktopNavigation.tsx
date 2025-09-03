@@ -4,15 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
-import {
-  RiArrowDownSLine,
-  RiCodeSSlashFill,
-  RiShoppingCartLine,
-  RiArticleLine,
-  RiPaletteLine,
-  RiFileTextLine,
-  RiMegaphoneLine,
-} from 'react-icons/ri';
+import { RiArrowDownSLine, RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 import Wrapper from '@/components/ui/Wrapper';
 
 export default function DesktopNavigation() {
@@ -122,7 +114,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="rounded mr-[-10px] flex items-center gap-1 text-base text-[#2B2B2B] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-10px] flex items-center gap-1 rounded text-base text-[#2B2B2B] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -139,14 +131,10 @@ export default function DesktopNavigation() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="fixed left-0 top-full z-50 w-full bg-white p-4 shadow-xl"
+                        className="fixed top-full left-0 z-50 w-full bg-white p-4 shadow-xl"
                       >
                         <Wrapper>
-                          <div
-                            ref={menuRef}
-                            onKeyDown={handleMenuKeyDown}
-                            className="grid grid-cols-3 gap-4"
-                          >
+                          <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="grid grid-cols-3 gap-4">
                             {offerSubPages.map((item) => (
                               <Link
                                 key={item.href}
@@ -156,9 +144,7 @@ export default function DesktopNavigation() {
                                 <div className="leading-tight">
                                   <div className="flex items-center gap-2">
                                     {item.icon}
-                                    <span className="block text-base font-semibold text-[#2B2B2B]">
-                                      {item.title}
-                                    </span>
+                                    <span className="block text-base font-semibold text-[#2B2B2B]">{item.title}</span>
                                   </div>
                                   <span className="text-sm">{item.desc}</span>
                                 </div>

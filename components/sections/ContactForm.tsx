@@ -37,62 +37,25 @@ export default function ContactForm() {
 
   return (
     <Wrapper>
-      <form
-        ref={formRef}
-        className="flex w-full flex-col gap-6"
-        action="https://formspree.io/f/xldnokbw"
-        method="POST"
-        onSubmit={handleSubmit}
-        aria-describedby="form-status"
-      >
+      <form ref={formRef} className="flex w-full flex-col gap-6" action="https://formspree.io/f/xldnokbw" method="POST" onSubmit={handleSubmit} aria-describedby="form-status">
         <div className="flex flex-col gap-2">
           <label htmlFor="name">Imię i nazwisko</label>
-          <input
-            id="name"
-            name="Imię i Nazwisko"
-            placeholder="Jan Kowalski"
-            type="text"
-            autoComplete="name"
-            required
-            className={fieldClass}
-          />
+          <input id="name" name="Imię i Nazwisko" placeholder="Jan Kowalski" type="text" autoComplete="name" required className={fieldClass} />
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="email">Email</label>
-          <input
-            id="email"
-            name="Email"
-            placeholder="jan.kowalski@gmail.com"
-            type="email"
-            autoComplete="email"
-            required
-            className={fieldClass}
-          />
+          <input id="email" name="Email" placeholder="jan.kowalski@gmail.com" type="email" autoComplete="email" required className={fieldClass} />
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="subject">Temat</label>
-          <input
-            id="subject"
-            name="Zakres współpracy"
-            placeholder="np. Strona | Sklep | Social Media | Logo"
-            type="text"
-            required
-            className={fieldClass}
-          >
-          </input>
+          <input id="subject" name="Zakres współpracy" placeholder="np. Strona | Sklep | Social Media | Logo" type="text" required className={fieldClass}></input>
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="message">Wiadomość</label>
-          <textarea
-            id="message"
-            name="Wiadomość"
-            placeholder="Prowadzę firmę zajmującą się... chciałbym stworzyć..."
-            required
-            className={fieldClass + ' h-48 resize-none'}
-          />
+          <textarea id="message" name="Wiadomość" placeholder="Prowadzę firmę zajmującą się... chciałbym stworzyć..." required className={fieldClass + ' h-48 resize-none'} />
         </div>
 
         <Button variant="dark" arrow onClick={() => formRef.current?.requestSubmit()}>

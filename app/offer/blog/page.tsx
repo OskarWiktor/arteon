@@ -22,10 +22,10 @@ export default function Page() {
         buttonTopThree="test3"
         buttonTopFour="test4"
       />
-      <SectionInfo id='asdasd' title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
+      <SectionInfo id="asdasd" title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
       <FaqBlog />
       <SectionBasic
-      id='nansjhdkahs'
+        id="nansjhdkahs"
         title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
         description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
         imageSrc="/assets/test.jpg"

@@ -48,10 +48,13 @@ export default function HeroBanner({
 }: HeroBannerProps) {
   const hasBg = Boolean(backgroundImage);
 
-  const overlayClass = overlay === 'black' ? 'bg-black/55' : overlay === 'white' ? 'bg-white/65' : '';
+  const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
 
   const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
-  const toneMutedClass = overlay === 'black' ? 'text-white/90' : 'text-[#080808]/70';
+  const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#080808]/80';
+
+  const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
+  const contentBgClass = overlay === 'black' ? 'bg-black/60' : overlay === 'white' ? 'bg-white/80' : '';
 
   const textAlign = variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left';
 
@@ -71,14 +74,14 @@ export default function HeroBanner({
       id="hero"
       aria-labelledby="hero-title"
       aria-describedby={description ? 'hero-description' : undefined}
-      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${overlay === 'black' ? 'bg-black' : 'bg-white'} flex h-[540px] items-center overflow-hidden`}
+      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-[540px] items-center overflow-hidden`}
       style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
     >
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
       <Wrapper className="relative flex h-[540px] items-center">
-        <div className={`md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass}`}>
+        <div className={`md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass}`}>
+          {' '}
           {subtitle && <p className={`text-xl tracking-widest uppercase ${toneMutedClass}`}>{subtitle}</p>}
-
           {topButtons.length > 0 && (
             <nav aria-label="Szybkie linki" className="mt-4">
               <ul className={`flex flex-wrap gap-2 md:gap-3 ${justify}`}>
@@ -92,17 +95,12 @@ export default function HeroBanner({
               </ul>
             </nav>
           )}
-
-          <h1 id="hero-title">
-            {title}
-          </h1>
-
+          <h1 id="hero-title">{title}</h1>
           {description && (
             <p id="hero-description" className={`mt-5 text-lg leading-relaxed ${toneMutedClass}`}>
               {description}
             </p>
           )}
-
           {(buttonAccent || buttonSecond) && (
             <div className={`mt-8 flex flex-wrap gap-3 ${justify}`}>
               {buttonAccent && (

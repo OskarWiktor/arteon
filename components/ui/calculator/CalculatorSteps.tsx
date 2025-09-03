@@ -1,6 +1,5 @@
 'use client';
 
-
 import ProgressBar from './ProgressBar';
 import OptionButton from './OptionButton';
 import OptionInput from './OptionInput';

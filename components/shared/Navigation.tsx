@@ -44,17 +44,8 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
       <Wrapper>
-        <nav
-          className="flex h-16 items-center justify-between lg:h-18"
-          aria-label="Nawigacja główna"
-        >
-          <Image
-            src="/assets/arteon-logo.png"
-            width={160}
-            height={50}
-            alt="Arteon — logo firmy"
-            priority
-          />
+        <nav className="flex h-16 items-center justify-between lg:h-18" aria-label="Nawigacja główna">
+          <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon — logo firmy" priority />
 
           <DesktopNavigation />
 
@@ -97,7 +88,7 @@ export default function Navigation() {
           <button
             type="button"
             onClick={toggleMenu}
-            className="block rounded p-1 md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:hidden"
             aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
             aria-expanded={isOpen}
           >

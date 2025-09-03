@@ -11,9 +11,7 @@ function Section({ id, title, children, subtitle }: { id: string; title: string;
     <section id={id} aria-labelledby={`${id}-title`} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-8">
         {subtitle ? <p className="text-sm tracking-widest text-[#5e5e5e] uppercase">{subtitle}</p> : null}
-        <h2 id={`${id}-title`}>
-          {title}
-        </h2>
+        <h2 id={`${id}-title`}>{title}</h2>
       </div>
       <div className="prose prose-neutral max-w-none">{children}</div>
     </section>

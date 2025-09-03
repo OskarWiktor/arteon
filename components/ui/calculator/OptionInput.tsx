@@ -1,6 +1,5 @@
 'use client';
 
-
 import type { Step } from '@/types/calculator';
 
 interface OptionInputProps {

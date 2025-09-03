@@ -23,7 +23,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const host = headersList.get('host') || '';
   const locale = host.endsWith('.com') ? 'en' : 'pl';
 
-
   return (
     <html lang={locale}>
       <head>

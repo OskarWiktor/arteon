@@ -4,17 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
-import {
-  RiArrowDownSLine,
-  RiCodeSSlashFill,
-  RiShoppingCartLine,
-  RiArticleLine,
-  RiPaletteLine,
-  RiFileTextLine,
-  RiMegaphoneLine,
-  RiInstagramLine,
-  RiFacebookFill,
-} from 'react-icons/ri';
+import { RiArrowDownSLine, RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
 const navigationItems = [
   { href: '/', label: 'Home', exact: true },
@@ -32,13 +22,7 @@ const offerSubPages = [
   { href: '/offer/marketing', icon: <RiMegaphoneLine aria-hidden="true" />, title: 'Marketing' },
 ];
 
-export default function MobileNavigation({
-  isOpen,
-  setIsOpen,
-}: {
-  isOpen: boolean;
-  setIsOpen: (val: boolean) => void;
-}) {
+export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
 
@@ -120,7 +104,7 @@ export default function MobileNavigation({
           animate={{ opacity: 1, scaleY: 1 }}
           exit={{ opacity: 0, scaleY: 0.95 }}
           transition={{ duration: 0.3 }}
-          className="absolute left-0 top-16 z-50 w-full origin-top bg-white pt-2 pb-6 shadow-lg md:hidden"
+          className="absolute top-16 left-0 z-50 w-full origin-top bg-white pt-2 pb-6 shadow-lg md:hidden"
           ref={menuRef}
           aria-label="Mobile navigation menu"
         >
@@ -142,11 +126,7 @@ export default function MobileNavigation({
 
                 if (label === 'Oferta') {
                   return (
-                    <motion.li
-                      key={label}
-                      className="flex flex-col"
-                      variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-                    >
+                    <motion.li key={label} className="flex flex-col" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                       <button
                         id={offerButtonId}
                         ref={offerBtnRef}
@@ -156,15 +136,10 @@ export default function MobileNavigation({
                         aria-controls={submenuId}
                         onClick={() => setIsOfferOpen((prev) => !prev)}
                         onKeyDown={handleOfferKeyDown}
-                        className="flex w-full items-center justify-between text-left hover:text-indigo-800 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                        className="flex w-full items-center justify-between rounded text-left hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                       >
                         <span>{label}</span>
-                        <motion.span
-                          aria-hidden="true"
-                          animate={{ rotate: isOfferOpen ? 180 : 0 }}
-                          transition={{ duration: 0.3 }}
-                          className="inline-flex"
-                        >
+                        <motion.span aria-hidden="true" animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.3 }} className="inline-flex">
                           <RiArrowDownSLine className="h-5 w-5" />
                         </motion.span>
                       </button>
@@ -187,7 +162,7 @@ export default function MobileNavigation({
                                 key={item.href}
                                 href={item.href}
                                 onClick={() => setIsOpen(false)}
-                                className="group flex items-center gap-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white hover:text-indigo-800"
+                                className="group flex items-center gap-2 rounded hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                               >
                                 <span className="[&_svg]:h-5 [&_svg]:w-5" aria-hidden="true">
                                   {item.icon}
@@ -203,16 +178,12 @@ export default function MobileNavigation({
                 }
 
                 return (
-                  <motion.li
-                    key={label}
-                    className="relative"
-                    variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}
-                  >
+                  <motion.li key={label} className="relative" variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}>
                     <Link
                       href={href}
                       onClick={() => setIsOpen(false)}
                       aria-current={isActivePage ? 'page' : undefined}
-                      className={`rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white hover:text-indigo-800 ${
+                      className={`rounded hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                         isActivePage ? 'font-semibold text-[#2B2B2B]' : ''
                       }`}
                     >
@@ -223,10 +194,7 @@ export default function MobileNavigation({
               })}
             </LayoutGroup>
 
-            <motion.li
-              variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-              className="flex justify-between border-t border-gray-300 pt-4"
-            >
+            <motion.li variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="flex justify-between border-t border-gray-300 pt-4">
               {/* 
                            <div>
                 <button className="cursor-pointer text-lg text-indigo-800 focus-visible:outline-2 focus-visible:outline-black">PL</button>

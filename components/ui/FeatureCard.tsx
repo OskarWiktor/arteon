@@ -4,13 +4,12 @@ type FeatureCardProps = {
 };
 
 export default function FeatureCard({ title, points }: FeatureCardProps) {
-  const id = `feature-${String(title).toLowerCase().replace(/[^a-z0-9]+/gi, '-')}`;
+  const id = `feature-${String(title)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gi, '-')}`;
 
   return (
-    <article
-      aria-labelledby={id}
-      className="rounded-md bg-white px-6 py-4 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md"
-    >
+    <article aria-labelledby={id} className="rounded-md bg-white px-6 py-4 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md">
       <header className="flex items-center gap-2">
         <span aria-hidden="true" className="inline-block h-2 w-2 rounded-[2px] bg-black" />
         <p id={id} role="heading" aria-level={3}>
