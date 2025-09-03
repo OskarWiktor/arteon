@@ -39,8 +39,6 @@ export default function WorkSteps() {
       btnOneLink="/contact"
       btnTwo="Porozmawiajmy"
       btnTwoLink="/contact"
-      backgroundImage="/assets/bg/abstract-bg12.jpg"
-      overlay="black"
     />
   );
 }

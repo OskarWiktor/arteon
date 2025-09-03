@@ -54,7 +54,7 @@ export default function HeroBanner({
   const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#080808]/80';
 
   const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
-  const contentBgClass = overlay === 'black' ? 'bg-black/60' : overlay === 'white' ? 'bg-white/80' : '';
+  const contentBgClass = overlay === 'black' ? 'bg-black/50' : overlay === 'white' ? 'bg-white/50' : '';
 
   const textAlign = variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left';
 
