@@ -96,7 +96,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
                     </span>
                   )}
 
-                  <h4 id={titleId} className="z-10">
+                  <h4 className="z-10">
                     {itemTitle}
                   </h4>
                   {itemSubtitle && <span className="text-[#5e5e5e]">{itemSubtitle}</span>}
