@@ -114,9 +114,9 @@ export default function CookieConsent() {
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-1">
-              <h6 id="cookie-title" className="text-base font-semibold">
+              <span id="cookie-title" className="h6">
                 Cookies i prywatność
-              </h6>
+              </span>
               <span className="text-sm text-[#5e5e5e]">
                 Używamy wyłącznie niezbędnych technologii oraz <strong>analityki</strong> do ulepszania serwisu. Vercel Analytics działa bez cookies. GA4 włączymy dopiero po Twojej zgodzie.
                 <span className="ml-1">
@@ -149,7 +149,7 @@ export default function CookieConsent() {
           </div>
         ) : (
           <div id="cookie-preferences" className="space-y-4">
-            <h5 id="cookie-title">Preferencje prywatności</h5>
+            <span id="cookie-title" className='h6'>Preferencje prywatności</span>
 
             <fieldset className="space-y-2">
               <legend className="sr-only">Kategorie</legend>

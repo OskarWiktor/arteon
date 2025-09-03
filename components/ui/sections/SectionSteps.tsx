@@ -28,8 +28,8 @@ interface SectionStepsProps {
 export default function SectionSteps({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, items, backgroundImage, overlay = 'none' }: SectionStepsProps) {
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/55' : overlay === 'white' ? 'bg-white/65' : '';
-  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-slate-900';
-  const toneMutedClass = overlay === 'black' ? 'text-white/90' : 'text-slate-900/70';
+  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
+  const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#2B2B2B]';
   const bgPadY = hasBg ? 'py-16 md:py-24' : '';
 
   const count = items?.length ?? 0;

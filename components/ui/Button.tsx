@@ -42,7 +42,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
         'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
       break;
     case 'accent':
-      variantClass = 'hover:translate-y-[-2px] shadow-md hover:shadow-xl bg-indigo-800 text-white ' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+      variantClass = 'hover:translate-y-[-2px] shadow-md hover:shadow-xl bg-[#372aac] text-white ' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
       break;
     case 'dark':
       variantClass =
@@ -55,15 +55,15 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
         'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
       break;
     case 'minimal':
-      variantClass = 'bg-white text-[#080808] ' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
+      variantClass = 'bg-white text-[#080808]' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
       break;
   }
 
   const baseClass =
-    `transition w-fit focus:outline-none focus-visible:outline-none focus-visible:ring-2 ` +
+    `transition w-fit` +
     ` inline-flex rounded-md items-center font-medium text-base ` +
     `${sizeClass} ${variantClass} ` +
-    `${disabled ? 'cursor-not-allowed opacity-50 pointer-events-none' : 'cursor-pointer'}`;
+    `${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`;
 
   const Arrow = arrow ? (
     <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">
@@ -84,15 +84,15 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
     if (isExternal(link)) {
       return (
         <a href={link} target="_blank" rel="noopener noreferrer" className={baseClass} onClick={onClick}>
-          <span className="text-sm">{children}</span>
-          {Arrow}
+        <span>{children}</span>
+        {Arrow}
         </a>
       );
     }
 
     return (
       <Link href={link} className={baseClass} onClick={onClick}>
-        <span className="text-sm">{children}</span>
+        <span>{children}</span>
         {Arrow}
       </Link>
     );
@@ -100,8 +100,8 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
 
   return (
     <button type="button" onClick={onClick} className={baseClass}>
-      <span>{children}</span>
-      {Arrow}
+        <span>{children}</span>
+        {Arrow}
     </button>
   );
 }
