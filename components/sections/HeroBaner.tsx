@@ -54,7 +54,7 @@ export default function HeroBanner({
   const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#080808]/80';
 
   const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
-  const contentBgClass = overlay === 'black' ? 'bg-black/50' : overlay === 'white' ? 'bg-white/50' : '';
+  const contentBgClass = overlay === 'black' ? 'bg-[#0000004a]' : overlay === 'white' ? 'bg-white/50' : '';
 
   const textAlign = variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left';
 
@@ -80,14 +80,13 @@ export default function HeroBanner({
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
       <Wrapper className="relative flex h-[540px] items-center">
         <div className={`md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass}`}>
-          {' '}
           {subtitle && <p className={`text-xl tracking-widest uppercase ${toneMutedClass}`}>{subtitle}</p>}
           {topButtons.length > 0 && (
             <nav aria-label="Szybkie linki" className="mt-4">
               <ul className={`flex flex-wrap gap-2 md:gap-3 ${justify}`}>
                 {topButtons.map(({ text, link }, i) => (
                   <li key={i}>
-                    <Button variant="glass" size="small" link={link}>
+                    <Button size="small" link={link}>
                       {text as ReactNode}
                     </Button>
                   </li>
