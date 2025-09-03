@@ -1,9 +1,8 @@
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
-
 import HeroBaner from '@/components/sections/HeroBaner';
-import SectionBasic from '@/components/ui/sections/SectionBasic';
 import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilters';
 import Gap from '@/components/ui/Gap';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
+import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 export async function generateMetadata() {
   return generatePageMetadata('projects');

@@ -7,7 +7,7 @@ import { graphicsSteps } from './graphicsSteps';
 import { marketingSteps } from './marketingSteps';
 import { expansionSteps } from './expansionSteps';
 
-import type { Step } from '@/types/contact';
+import type { Step } from '@/types/calculator';
 import { contentSteps } from './contentSteps';
 
 const stepsByType: Record<string, Step[]> = {

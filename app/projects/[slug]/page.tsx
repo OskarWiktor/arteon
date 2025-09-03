@@ -1,12 +1,12 @@
-import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
-import Wrapper from '@/components/ui/Wrapper';
 import Button from '@/components/ui/Button';
+import Gap from '@/components/ui/Gap';
+import Wrapper from '@/components/ui/Wrapper';
 
 import projectsData from '@/data/pl/projects.json';
 import type { Project } from '@/types/project';
-import Gap from '@/components/ui/Gap';
 
 const projects = projectsData.projects as Project[];
 

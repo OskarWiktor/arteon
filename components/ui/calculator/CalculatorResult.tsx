@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
-import { includedPerPath } from '@/data/pl/contact/includedPerPath';
+
+import { includedPerPath } from '@/data/pl/calculator/includedPerPath';
 import Button from '../Button';
 
 interface CalculatorResultProps {

@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
+
 import ProgressBar from './ProgressBar';
 import OptionButton from './OptionButton';
 import OptionInput from './OptionInput';
 import Button from '../../ui/Button';
-import type { Step } from '@/types/contact';
+import type { Step } from '@/types/calculator';
 
 export type Selections = Record<number, string[]>;
 

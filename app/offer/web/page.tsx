@@ -1,14 +1,14 @@
-import React from 'react';
 import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
 import FaqWebsite from '@/components/sections/faqs/FaqWebsite';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import Mission from '@/components/sections/steps/Mission';
 import CTABaner from '@/components/sections/CTABaner';
 import WebFeatures from '@/components/sections/features/WebFeatures';
-import Gap from '@/components/ui/Gap';
 import WebPrices from '@/components/sections/prices/WebPrices';
+import Mission from '@/components/sections/steps/Mission';
+import Gap from '@/components/ui/Gap';
+
 
 export default function OfferWebPage() {
   return (
