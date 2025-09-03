@@ -110,14 +110,14 @@ export default function CookieConsent() {
 
   return (
     <div role="dialog" aria-modal="true" aria-labelledby="cookie-title" className="fixed inset-x-0 bottom-0 z-50">
-      <div className="mx-auto mb-4 w-[min(92vw,900px)] rounded bg-white p-5 shadow-xl ring-1 ring-black/5">
+      <div className="mx-auto mb-4 w-[min(92vw,900px)] rounded bg-indigo-800 p-5 shadow-xl ring-1 ring-black/5 text-white">
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-1">
-              <span id="cookie-title" className="h6">
+              <span id="cookie-title text-white" className="h6">
                 Cookies i prywatność
               </span>
-              <span className="text-sm text-[#5e5e5e]">
+              <span className="text-sm ">
                 Używamy wyłącznie niezbędnych technologii oraz <strong>analityki</strong> do ulepszania serwisu. Vercel Analytics działa bez cookies. GA4 włączymy dopiero po Twojej zgodzie.
                 <span className="ml-1">
                   <button className="underline underline-offset-2" onClick={() => setPanel(true)} aria-haspopup="dialog" aria-controls="cookie-preferences">
