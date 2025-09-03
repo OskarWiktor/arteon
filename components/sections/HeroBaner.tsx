@@ -53,8 +53,8 @@ export default function HeroBanner({
   const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
   const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#080808]/80';
 
-  const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
-  const contentBgClass = overlay === 'black' ? 'bg-black' : overlay === 'white' ? 'bg-white/50' : '';
+  const baseBg = overlay === 'black' ? 'bg-black' : 'bg-white';
+  const contentBgClass = overlay === 'black' ? 'bg-[#0000004a]' : overlay === 'white' ? 'bg-white/50' : '';
 
   const textAlign = variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left';
 
@@ -70,7 +70,7 @@ export default function HeroBanner({
   ].filter(({ text }) => Boolean(text));
 
   return (
-    <section
+    <div className={baseBg}>    <section
       id="hero"
       aria-labelledby="hero-title"
       aria-describedby={description ? 'hero-description' : undefined}
@@ -117,5 +117,7 @@ export default function HeroBanner({
         </div>
       </Wrapper>
     </section>
+    </div>
+
   );
 }

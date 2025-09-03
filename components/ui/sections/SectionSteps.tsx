@@ -79,19 +79,19 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
                 <article
                   aria-labelledby={titleId}
                   aria-describedby={descId}
-                  className="relative flex h-full w-full flex-col rounded-md border-gray-300 bg-white px-6 py-8 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
+                  className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white px-6 py-8 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
                 >
                   {imageSrc ? (
                     <Image
                       src={imageSrc}
                       alt={imageAlt ?? ''}
-                      width={128}
-                      height={128}
-                      className="pointer-events-none absolute top-[-8px] left-2 opacity-10 select-none"
+                      width={42}
+                      height={42}
+                      className="pointer-events-none select-none"
                       aria-hidden={imageAlt ? undefined : true}
                     />
                   ) : (
-                    <span className="absolute top-[-8px] left-2 text-9xl font-bold text-[#080808]/10" aria-hidden={true}>
+                    <span className="text-xl font-bold text-indigo-800" aria-hidden={true}>
                       {icon}
                     </span>
                   )}
