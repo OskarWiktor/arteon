@@ -6,19 +6,19 @@ const WorkStepsItems = [
   {
     icon: '1',
     title: 'Rozmowa',
-    borderClassName: 'border-b-indigo-800',
+    borderClassName: 'border-b-amber-500',
     description: <>Opowiadasz nam o swojej marce, celach oraz wyzwaniach</>,
   },
   {
     icon: '2',
     title: 'Plan',
-    borderClassName: 'border-b-indigo-800',
+    borderClassName: 'border-b-amber-500',
     description: <>Na podstawie Twojej wizji i naszej wiedzy, tworzymy plan działania</>,
   },
   {
     icon: '3',
     title: 'Realizacja',
-    borderClassName: 'border-b-indigo-800',
+    borderClassName: 'border-b-amber-500',
     description: <>Realizujemy projekt, stale informując Cie o postępach</>,
   },
 ];

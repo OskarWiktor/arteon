@@ -56,7 +56,7 @@ export default function HeroBanner({
   const baseBg = overlay === 'black' ? 'bg-black' : 'bg-white';
   const contentBgClass = overlay === 'black' ? 'bg-[#0000004a]' : overlay === 'white' ? 'bg-white/50' : '';
 
-  const textAlign = variant === 'center' ? 'text-center' : variant === 'right' ? 'text-right' : 'text-left';
+  const textAlign = variant === 'center' ? 'text-left md:text-center' : variant === 'right' ? 'text-right' : 'text-left';
 
   const justify = variant === 'center' ? 'justify-center' : variant === 'right' ? 'justify-end' : 'justify-start';
 
@@ -75,16 +75,16 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-[540px] items-center overflow-hidden`}
+        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} h-min-[540px] flex h-auto items-center overflow-hidden py-14 md:py-0`}
         style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
-        <Wrapper className="relative flex h-[540px] items-center">
-          <div className={`md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass}`}>
-            {subtitle && <p className={`text-xl tracking-widest uppercase ${toneMutedClass}`}>{subtitle}</p>}
+        <Wrapper className="relative flex h-auto items-center md:h-[540px]">
+          <div className={`max-w-[92vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass} break-words hyphens-auto`}>
+            {subtitle && <p className={`text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
               <nav aria-label="Szybkie linki" className="mt-4">
-                <ul className={`flex flex-wrap gap-2 md:gap-3 ${justify}`}>
+                <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
                   {topButtons.map(({ text, link }, i) => (
                     <li key={i}>
                       <Button size="small" link={link}>
@@ -97,7 +97,7 @@ export default function HeroBanner({
             )}
             <h1 id="hero-title">{title}</h1>
             {description && (
-              <p id="hero-description" className={`mt-5 text-lg leading-relaxed ${toneMutedClass}`}>
+              <p id="hero-description" className={`mt-5 text-base leading-relaxed sm:text-lg ${toneMutedClass} max-w-prose [text-wrap:pretty]`}>
                 {description}
               </p>
             )}

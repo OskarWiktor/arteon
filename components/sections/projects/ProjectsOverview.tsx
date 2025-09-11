@@ -97,14 +97,14 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
   return (
     <Wrapper>
       <section className="w-full">
-        {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
+        {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
         <h2 className="md:mb-2">{title}</h2>
 
         <div className="relative">
           {isScrollable && (
             <button
               onClick={() => scroll('left')}
-              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-indigo-800 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
+              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
               aria-label="Przewiń w lewo"
             >
               <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
@@ -122,7 +122,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
           {isScrollable && (
             <button
               onClick={() => scroll('right')}
-              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-indigo-800 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
+              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
               aria-label="Przewiń w prawo"
             >
               <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
@@ -145,11 +145,11 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
                 }}
                 aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
                 aria-current={i === currentSlide ? 'true' : undefined}
-                className="h-6 w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                className="h-6 w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               >
                 <span
                   aria-hidden="true"
-                  className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-indigo-800 hover:bg-indigo-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+                  className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-amber-500 hover:bg-indigo-700' : 'bg-gray-300 hover:bg-gray-500'}`}
                 />
               </button>
             ))}

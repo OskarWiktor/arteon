@@ -48,7 +48,7 @@ export default function SectionPrices({
       <Wrapper>
         <div className="mb-8">
           {subtitle && (
-            <span id={subtitleId} className="text-xl tracking-widest text-[#5e5e5e] uppercase">
+            <span id={subtitleId} className="text-xl tracking-wider text-[#5e5e5e] uppercase">
               {subtitle}
             </span>
           )}

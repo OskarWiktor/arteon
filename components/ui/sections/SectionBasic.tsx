@@ -43,7 +43,7 @@ export default function SectionBasic({ id, title, subtitle, description, imageSr
         <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-1' : ''}`}>
           <div className={`flex h-full flex-col justify-center py-6 md:py-8 lg:py-8 ${variant === 'right' ? 'md:pl-6' : 'md:pr-6'}`}>
             {subtitle && (
-              <span id={subtitleId} className="text-xl tracking-widest text-[#5e5e5e] uppercase">
+              <span id={subtitleId} className="text-xl tracking-wider text-[#5e5e5e] uppercase">
                 {subtitle}
               </span>
             )}

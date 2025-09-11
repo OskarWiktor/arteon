@@ -31,9 +31,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               >
-                <RiInstagramLine className="h-7 w-7 text-[#080808] transition hover:text-indigo-800" aria-hidden="true" />
+                <RiInstagramLine className="h-7 w-7 text-[#080808] transition hover:text-amber-500" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="rounded text-[#080808] hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {title}
                   </Link>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="rounded text-[#080808] hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                   </Link>

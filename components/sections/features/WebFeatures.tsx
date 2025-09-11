@@ -7,35 +7,35 @@ import { GoLaw } from 'react-icons/go';
 const items: FeatureItem[] = [
   {
     title: 'Indywidualny projekt graficzny',
-    icon: <RiPencilRuler2Line className="h-6 w-6 text-indigo-800" />,
+    icon: <RiPencilRuler2Line className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Redakcja treści dla lepszej konwersji i SEO',
-    icon: <RiArticleLine className="h-6 w-6 text-indigo-800" />,
+    icon: <RiArticleLine className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Deklaracja Dostępności (WCAG 2.1 AA)',
-    icon: <IoAccessibility className="h-5 w-5 text-indigo-800" />,
+    icon: <IoAccessibility className="h-5 w-5 text-amber-500" />,
   },
   {
     title: 'Wsparcie prawne: polityki i regulaminy',
-    icon: <GoLaw className="h-6 w-6 text-indigo-800" />,
+    icon: <GoLaw className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Wsparcie graficzne i obróbka zdjęć',
-    icon: <RiBrushLine className="h-6 w-6 text-indigo-800" />,
+    icon: <RiBrushLine className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Bezpieczeństwo i certyfikaty SSL',
-    icon: <RiShieldCheckLine className="h-6 w-6 text-indigo-800" />,
+    icon: <RiShieldCheckLine className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Pełna responsywność na urządzeniach mobilnych',
-    icon: <RiDeviceLine className="h-6 w-6 text-indigo-800" />,
+    icon: <RiDeviceLine className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Łatwe zarządzanie treścią (CMS)',
-    icon: <RiDatabase2Line className="h-6 w-6 text-indigo-800" />,
+    icon: <RiDatabase2Line className="h-6 w-6 text-amber-500" />,
   },
 ];
 

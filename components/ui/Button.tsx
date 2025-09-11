@@ -39,28 +39,31 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
     case 'normal':
       variantClass =
         'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] ' +
-        'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
+        'focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-amber-500';
       break;
     case 'accent':
-      variantClass = 'hover:translate-y-[-2px] shadow-md hover:shadow-xl bg-[#372aac] text-white ' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+      variantClass = 'hover:translate-y-[-2px] shadow-md hover:shadow-xl bg-amber-600 text-white ' + 'focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
       break;
     case 'dark':
       variantClass =
-        'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-[#2B2B2B] bg-[#2B2B2B] hover:border-indigo-800 hover:bg-indigo-800 text-[#f1f1f1] ' +
+        'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-[#2B2B2B] bg-[#2B2B2B] hover:border-amber-500 hover:bg-amber-500 text-[#f1f1f1] ' +
         'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#2B2B2B]';
       break;
     case 'glass':
       variantClass =
-        'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-gray-100 hover:bg-indigo-800/60 backdrop-blur-sm bg-white/60 ' +
-        'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
+        'hover:translate-y-[-2px] shadow-md hover:shadow-xl border border-gray-100 hover:bg-amber-500/60 backdrop-blur-sm bg-white/60 ' +
+        'focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-amber-500';
       break;
     case 'minimal':
-      variantClass = 'bg-white text-[#080808]' + 'focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-800';
+      variantClass = 'bg-white text-[#080808]' + 'focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-amber-500';
       break;
   }
 
   const baseClass =
-    `transition w-fit` + ` inline-flex rounded-md items-center font-medium text-base ` + `${sizeClass} ${variantClass} ` + `${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`;
+    `transition w-fit` +
+    ` inline-flex rounded-md items-center font-medium text-sm md:text-base ` +
+    `${sizeClass} ${variantClass} ` +
+    `${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`;
 
   const Arrow = arrow ? (
     <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">

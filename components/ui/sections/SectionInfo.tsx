@@ -26,7 +26,7 @@ export default function SectionInfo({ id, title, subtitle, description, btnOne, 
     <section id={id} className="w-full" aria-labelledby={headingId} aria-describedby={describedBy}>
       <Wrapper className="flex flex-col">
         {subtitle && (
-          <span id={subtitleId} className="text-xl tracking-widest text-[#5e5e5e] uppercase">
+          <span id={subtitleId} className="text-xl tracking-wider text-[#5e5e5e] uppercase">
             {subtitle}
           </span>
         )}

@@ -54,15 +54,15 @@ export default function DesktopNavigation() {
   const offerSubPages = [
     {
       href: '/services/websites',
-      icon: <RiCodeSSlashFill className="h-6 w-6 text-indigo-800" aria-hidden="true" />,
+      icon: <RiCodeSSlashFill className="h-6 w-6 text-amber-500" aria-hidden="true" />,
       title: 'Strony internetowe',
       desc: 'WCAG 2.1 AA - Indywidualny projekt - Migracje',
     },
-    { href: '/services/online-stores', icon: <RiShoppingCartLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Sklepy online', desc: 'Płatności - Integracje - Automatyzacje' },
-    { href: '/services/online-blogs', icon: <RiArticleLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
-    { href: '/services/design', icon: <RiPaletteLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Grafika', desc: 'Systemy marek - Loga - Do druku' },
-    { href: '/services/content', icon: <RiFileTextLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Content', desc: 'Teksty - Artykuły - Opisy' },
-    { href: '/services/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-[#2B2B2B]" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
+    { href: '/services/online-stores', icon: <RiShoppingCartLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Sklepy internetowe', desc: 'Płatności - Integracje - Automatyzacje' },
+    { href: '/services/online-blogs', icon: <RiArticleLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
+    { href: '/services/design', icon: <RiPaletteLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Grafika', desc: 'Systemy marek - Loga - Do druku' },
+    { href: '/services/content', icon: <RiFileTextLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Treści', desc: 'Teksty - Artykuły - Opisy' },
+    { href: '/services/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
   ];
 
   const focusMenuItem = (idx: number) => {
@@ -119,7 +119,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-10px] flex items-center gap-1 rounded text-base text-[#2B2B2B] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-10px] flex items-center gap-1 rounded text-base text-[#2B2B2B] hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -144,7 +144,7 @@ export default function DesktopNavigation() {
                               <Link
                                 key={item.href}
                                 href={item.href}
-                                className="flex gap-4 rounded-md border border-gray-100 px-4 py-2 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                                className="flex gap-4 rounded-md border border-gray-100 px-4 py-2 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                               >
                                 <div className="leading-tight">
                                   <div className="flex items-center gap-2">
@@ -169,7 +169,7 @@ export default function DesktopNavigation() {
                 <Link
                   href={href}
                   aria-current={isActivePage ? 'page' : undefined}
-                  className={`rounded text-base text-[#2B2B2B] hover:text-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
+                  className={`rounded text-base text-[#2B2B2B] hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                     isActivePage ? 'font-semibold text-[#080808]' : ''
                   }`}
                 >

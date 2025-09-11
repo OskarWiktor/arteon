@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { RiInstagramLine, RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
 
 import MobileNavigation from './navigation/MobileNavigation';
 import DesktopNavigation from './navigation/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
+import Link from 'next/link';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,8 +46,9 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
       <Wrapper>
         <nav className="flex h-16 items-center justify-between lg:h-18" aria-label="Nawigacja główna">
-          <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon — logo firmy" priority />
-
+          <Link href="/">
+            <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon — logo firmy" priority />
+          </Link>
           <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
@@ -54,11 +56,11 @@ export default function Navigation() {
 // TO DO in Arteon v.1.2
             <div className="mr-2 lg:mr-4">
               <a href={`${getTargetDomain('pl')}${pathname}`}>
-                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-indigo-800' : 'text-[#2B2B2B] hover:text-indigo-800'}`}>PL</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>PL</button>
               </a>
               <span className="text-lg text-[#2B2B2B]"> / </span>
               <a href={`${getTargetDomain('en')}${pathname}`}>
-                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-indigo-800' : 'text-[#2B2B2B] hover:text-indigo-800'}`}>EN</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>EN</button>
               </a>
             </div>
 */}
@@ -72,16 +74,18 @@ export default function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
-              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
+            {/*
+              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" aria-hidden="true" />
+            */}
             </a>
           </div>
 
           <button
             type="button"
             onClick={toggleMenu}
-            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:hidden"
+            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:hidden"
             aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
             aria-expanded={isOpen}
           >

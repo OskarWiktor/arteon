@@ -37,30 +37,6 @@ body {
   color: var(--foreground);
 }
 
-/*    SCROLLBAR    */
-
-::-webkit-scrollbar {
-  width: 2px;
-}
-
-::-webkit-scrollbar-track {
-  background: theme('colors.gray.100');
-}
-
-::-webkit-scrollbar-thumb {
-  background: theme('colors.indigo.500');
-  border-radius: 9999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.indigo.500');
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: theme('colors.indigo.500') theme('colors.gray.100');
-}
-
 /*    TEXT    */
 
 .text-light {
@@ -76,7 +52,7 @@ body {
 p,
 li {
   @apply leading-relaxed font-normal text-balance;
-  font-size: clamp(16px, calc(16px + 2 * ((100vw - 360px) / 1080)), 18px);
+  font-size: clamp(14px, calc(14px + 4 * ((100vw - 360px) / 1080)), 18px);
 }
 
 h1,
@@ -91,31 +67,31 @@ h6 {
 h1,
 .h1 {
   font-weight: 700;
-  font-size: clamp(48px, calc(48px + 24 * ((100vw - 360px) / 1080)), 72px);
+  font-size: clamp(42px, calc(42px + 24 * ((100vw - 360px) / 1080)), 66px);
 }
 
 h2,
 .h2 {
   font-weight: 700;
-  font-size: clamp(36px, calc(36px + 12 * ((100vw - 360px) / 1080)), 48px);
+  font-size: clamp(32px, calc(32px + 12 * ((100vw - 360px) / 1080)), 44px);
 }
 
 h3,
 .h3 {
   font-weight: 700;
-  font-size: clamp(36px, calc(36px + 12 * ((100vw - 360px) / 1080)), 48px);
+  font-size: clamp(32px, calc(32px + 12 * ((100vw - 360px) / 1080)), 44px);
 }
 
 h4,
 .h4 {
   font-weight: 600;
-  font-size: clamp(24px, calc(24px + 12 * ((100vw - 360px) / 1080)), 36px);
+  font-size: clamp(22px, calc(22px + 12 * ((100vw - 360px) / 1080)), 34px);
 }
 
 h5,
 .h5 {
   font-weight: 600;
-  font-size: clamp(20px, calc(20px + 4 * ((100vw - 360px) / 1080)), 24px);
+  font-size: clamp(18px, calc(18px + 4 * ((100vw - 360px) / 1080)), 22px);
 }
 
 h6,
@@ -157,7 +133,7 @@ textarea {
 /*    CUSTOM    */
 
 .marker-after {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-indigo-800 before:blur-[0.5px] before:content-[''];
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
   p,
   span {
     @apply relative z-10;
@@ -165,5 +141,5 @@ textarea {
 }
 
 .marker-before {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-indigo-800 before:blur-[0.5px] before:content-[''];
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
 }

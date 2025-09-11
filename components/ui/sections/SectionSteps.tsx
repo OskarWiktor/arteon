@@ -66,9 +66,9 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
       {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative z-10 pb-8">
-        {subtitle && <span className={`text-xl tracking-widest uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
+        {subtitle && <span className={`text-xl tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
         {title && <h3 className={toneTextClass}>{title}</h3>}
-        {description && <p className={`max-w-2xl ${toneMutedClass}`}>{description}</p>}
+        {description && <p className={`pt-3 pb-2 max-w-3xl ${toneMutedClass}`}>{description}</p>}
 
         <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
           {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
@@ -78,7 +78,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
                   {imageSrc ? (
                     <Image src={imageSrc} alt={imageAlt ?? ''} width={42} height={42} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
                   ) : (
-                    <span className="text-xl font-bold text-indigo-800" aria-hidden={true}>
+                    <span className="text-3xl font-bold text-amber-500" aria-hidden={true}>
                       {icon}
                     </span>
                   )}
@@ -86,7 +86,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
                   <h4 className="z-10">{itemTitle}</h4>
                   {itemSubtitle && <span className="text-base text-[#5e5e5e]">{itemSubtitle}</span>}
 
-                  <div className="z-10 mt-2">{itemDesc}</div>
+                  <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
                 </article>
               </li>
             );

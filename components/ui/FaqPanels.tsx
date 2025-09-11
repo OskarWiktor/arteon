@@ -24,7 +24,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
 
   return (
     <section aria-labelledby="faq-heading">
-      {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
+      {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
       <h2 id="faq-heading" className="mb-2">
         {title}
       </h2>
@@ -40,7 +40,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
               id={buttonId}
               type="button"
               onClick={() => toggle(index)}
-              className="flex w-full cursor-pointer items-center justify-between px-6 py-4 text-left transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:py-6"
+              className="flex w-full cursor-pointer items-center justify-between px-5 py-3 text-left transition focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:px-6 md:py-4"
               aria-expanded={isOpen}
               aria-controls={panelId}
             >
