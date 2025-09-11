@@ -10,7 +10,7 @@ interface OptionInputProps {
 
 export default function OptionInput({ input, value, onChangeValue }: OptionInputProps) {
   return (
-    <div className={`relative rounded-md border py-2 transition ${value ? 'border-indigo-400' : 'border-gray-100 hover:border-indigo-300'}`}>
+    <div className={`relative rounded-md border py-2 transition ${value ? 'border-amber-400' : 'border-gray-100 hover:border-amber-300'}`}>
       {input && <h6 className="mb-2 block">{input.label}</h6>}
       <input
         type="number"

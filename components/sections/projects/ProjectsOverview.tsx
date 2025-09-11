@@ -17,13 +17,21 @@ type Props = {
   slugs?: string | string[];
 };
 
-export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Realizacje', subtitle, category, slugs }: Props) {
+export default function ProjectsOverview({
+  projects,
+  max = 7,
+  title = 'Nasze Realizacje',
+  subtitle,
+  category,
+  slugs,
+}: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [maxSlides, setMaxSlides] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
+  const [gapPx, setGapPx] = useState(16);
   const [isScrollable, setIsScrollable] = useState(false);
 
   const sourceProjects = useMemo<Project[]>(() => {
@@ -32,7 +40,6 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
 
   const finalProjects = useMemo(() => {
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
-
     let list: Project[] = [];
 
     if (slugsArray && slugsArray.length) {
@@ -43,90 +50,143 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
     } else {
       list = [];
     }
-
     return list.slice(0, max);
   }, [sourceProjects, slugs, category, max]);
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (!scrollRef.current || !cardWidth) return;
-    const offset = direction === 'left' ? -cardWidth : cardWidth;
-    scrollRef.current.scrollBy({ left: offset, behavior: 'smooth' });
-  };
 
   useEffect(() => {
     const container = scrollRef.current;
     const card = cardRef.current;
+    if (!container || !card) return;
 
-    const update = () => {
-      if (!container || !card) return;
-      const containerStyle = getComputedStyle(container);
-      const gap = parseInt(containerStyle.columnGap || '16', 10);
-      const newCardWidth = card.offsetWidth + (Number.isFinite(gap) ? gap : 16);
+    const ro = new ResizeObserver(() => {
+      const cs = getComputedStyle(container);
+      const gap = parseFloat(cs.columnGap || '16') || 16;
+      setGapPx(gap);
 
-      setCardWidth(newCardWidth);
+      const w = card.getBoundingClientRect().width;
+      const cardWithGap = w + gap;
+      setCardWidth(cardWithGap);
 
-      const visibleWidth = container.clientWidth;
-      const visibleCards = Math.max(1, Math.floor((visibleWidth + gap) / newCardWidth));
-      const totalCards = finalProjects.length;
-      const slides = Math.max(1, totalCards - visibleCards + 1);
+      const epsilon = 0.01;
+      const visible = Math.max(1, Math.floor((container.clientWidth + epsilon) / cardWithGap));
+
+      const total = finalProjects.length;
+      const slides = Math.max(1, total - visible + 1);
 
       setMaxSlides(slides);
       setIsScrollable(slides > 1);
+
+      const nextIndex = Math.min(currentSlide, slides - 1);
+      setCurrentSlide(nextIndex);
+      container.scrollTo({ left: nextIndex * cardWithGap, behavior: 'instant' as ScrollBehavior });
+    });
+
+    ro.observe(container);
+    if (card) ro.observe(card);
+    return () => ro.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finalProjects.length]);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el || !cardWidth) return;
+
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const idx = Math.round(el.scrollLeft / cardWidth);
+        setCurrentSlide(idx);
+        ticking = false;
+      });
     };
+    el.addEventListener('scroll', onScroll, { passive: true });
+    return () => el.removeEventListener('scroll', onScroll);
+  }, [cardWidth]);
 
-    const handleScroll = () => {
-      if (!scrollRef.current || !cardWidth) return;
-      const index = Math.round(scrollRef.current.scrollLeft / cardWidth);
-      setCurrentSlide(index);
-    };
+  const scrollByCards = (dir: 'left' | 'right') => {
+    if (!scrollRef.current || !cardWidth) return;
+    const delta = dir === 'left' ? -1 : 1;
+    const next = Math.max(0, Math.min(currentSlide + delta, maxSlides - 1));
+    scrollRef.current.scrollTo({ left: next * cardWidth, behavior: 'smooth' });
+  };
 
-    update();
-    container?.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', update);
+  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (!isScrollable) return;
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      scrollByCards('right');
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      scrollByCards('left');
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      scrollRef.current?.scrollTo({ left: 0, behavior: 'smooth' });
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      scrollRef.current?.scrollTo({ left: (maxSlides - 1) * cardWidth, behavior: 'smooth' });
+    }
+  };
 
-    return () => {
-      container?.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', update);
-    };
-  }, [cardWidth, finalProjects]);
+  if (!finalProjects.length) return null;
 
-  if (!finalProjects.length) {
-    return null;
-  }
+  const carouselLabel = 'Karuzela projektów';
 
   return (
     <Wrapper>
-      <section className="w-full">
+      <section className="w-full" aria-labelledby="projects-heading">
         {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-        <h2 className="md:mb-2">{title}</h2>
+        <h2 id="projects-heading" className="md:mb-2">{title}</h2>
 
         <div className="relative">
-          {isScrollable && (
-            <button
-              onClick={() => scroll('left')}
-              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
-              aria-label="Przewiń w lewo"
-            >
-              <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
-            </button>
-          )}
-
-          <div ref={scrollRef} className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth pt-4 pb-6" aria-label="Karuzela projektów" tabIndex={0}>
+          <div
+            ref={scrollRef}
+            className="
+              no-scrollbar flex gap-4 overflow-x-auto pt-4 pb-6
+              scroll-smooth
+              snap-x snap-mandatory
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white
+            "
+            role="region"
+            aria-roledescription="carousel"
+            aria-label={carouselLabel}
+            aria-live="polite"
+            tabIndex={0}
+            onKeyDown={onKeyDown}
+          >
             {finalProjects.map((project, i) => (
-              <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[340px] md:min-w-[420px] lg:min-w-[520px]">
+              <div
+                key={project.slug}
+                ref={i === 0 ? cardRef : null}
+                className="snap-start min-w-[340px] md:min-w-[420px] lg:min-w-[520px]"
+                aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
+              >
                 <ProjectCard project={project} size="small" />
               </div>
             ))}
           </div>
 
           {isScrollable && (
-            <button
-              onClick={() => scroll('right')}
-              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
-              aria-label="Przewiń w prawo"
-            >
-              <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
-            </button>
+            <>
+              <button
+                type="button"
+                onClick={() => scrollByCards('left')}
+                className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
+                aria-label="Przewiń w lewo"
+              >
+                <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
+              </button>
+
+              <button
+                type="button"
+                onClick={() => scrollByCards('right')}
+                className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-amber-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
+                aria-label="Przewiń w prawo"
+              >
+                <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
+              </button>
+            </>
           )}
         </div>
 
@@ -135,21 +195,14 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
             {Array.from({ length: maxSlides }).map((_, i) => (
               <button
                 key={i}
-                onClick={() => {
-                  if (scrollRef.current) {
-                    scrollRef.current.scrollTo({
-                      left: i * cardWidth,
-                      behavior: 'smooth',
-                    });
-                  }
-                }}
+                onClick={() => scrollRef.current?.scrollTo({ left: i * cardWidth, behavior: 'smooth' })}
                 aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
                 aria-current={i === currentSlide ? 'true' : undefined}
                 className="h-6 w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               >
                 <span
                   aria-hidden="true"
-                  className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-amber-500 hover:bg-indigo-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+                  className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-amber-500 hover:bg-amber-700' : 'bg-gray-300 hover:bg-gray-500'}`}
                 />
               </button>
             ))}

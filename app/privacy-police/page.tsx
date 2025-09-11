@@ -7,15 +7,15 @@ export const metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <Wrapper className="my-12 md:my-18 lg:my-24 select-none">
+    <Wrapper className="my-12 select-none md:my-18 lg:my-24">
       <h1>Polityka prywatności</h1>
 
       <section className="my-6 space-y-4 md:my-10 lg:my-14">
         <h2 className="h4">1. Administrator danych</h2>
+        <p>Administratorem danych osobowych jest Arteon Wiktoria Wiktor z siedzibą w gm. Czernichów, miejsc. Zagacie, ul. Jaśminowa, nr 36, 32-070</p>
         <p>
-          Administratorem danych osobowych jest Arteon Wiktoria Wiktor z siedzibą w gm. Czernichów, miejsc. Zagacie, ul. Jaśminowa, nr 36, 32-070 
+          NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong>
         </p>
-        <p>NIP: <strong>9442284430</strong>, REGON: <strong>528888241</strong></p>
         <p>
           Kontakt: <strong>kontakt@arteonagency.pl</strong>, tel. <strong>516 466 255</strong>.
         </p>
