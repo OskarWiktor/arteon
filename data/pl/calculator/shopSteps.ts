@@ -7,12 +7,12 @@ export const shopSteps: Step[] = [
     options: [
       { label: 'Tak', value: 'ready', price: 0, tooltip: 'Pracujemy na dostarczonym przez Ciebie projekcie', icon: 'FiCheckCircle' },
       { label: 'Mam inspiracje / pomysł', value: 'idea', multiplier: 1.2, tooltip: 'Na bazie Twoich inspiracji tworzymy dopasowany projekt sklepu', icon: 'FiLightbulb' },
-      { label: 'Nie', value: 'from-scratch', multiplier: 1.6, tooltip: 'Tworzymy projekt sklepu od zera – zgodny z Twoją marką i klientami', icon: 'FiEdit3' },
+      { label: 'Nie', value: 'from-scratch', multiplier: 1.6, tooltip: 'Tworzymy projekt sklepu od zera - zgodny z Twoją marką i klientami', icon: 'FiEdit3' },
     ],
   },
   {
     title: 'Jakie podstrony ma zawierać Twój sklep?',
-    tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+    tooltip: 'Przykładowo: O nas, Galeria, usługi',
     required: true,
     type: 'single',
     options: [
@@ -32,10 +32,10 @@ export const shopSteps: Step[] = [
     required: true,
     type: 'single',
     options: [
-      { label: '0', value: '0-products', price: 0, tooltip: 'Wprowadzasz je samodzielnie – my budujemy system', icon: 'FiMinusCircle' },
-      { label: '1–10', value: 'few-products', price: 200, icon: 'FiBox' },
-      { label: '11–30', value: 'mid-products', price: 800, icon: 'FiGrid' },
-      { label: '31–60', value: 'more-products', price: 1600, icon: 'FiLayers' },
+      { label: '0', value: '0-products', price: 0, tooltip: 'Wprowadzasz je samodzielnie - my budujemy system', icon: 'FiMinusCircle' },
+      { label: '1-10', value: 'few-products', price: 200, icon: 'FiBox' },
+      { label: '11-30', value: 'mid-products', price: 800, icon: 'FiGrid' },
+      { label: '31-60', value: 'more-products', price: 1600, icon: 'FiLayers' },
       { label: '60+', value: 'large-products', price: 2000, icon: 'FiPackage' },
     ],
     input: {
@@ -67,10 +67,10 @@ export const shopSteps: Step[] = [
           title: 'Ile stron z artykułami mamy przygotować?',
           required: true,
           options: [
-            { label: '1–3', value: 'articles-1-3', price: 120, icon: 'FiFile' },
-            { label: '4–10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
-            { label: '11–30', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
-            { label: '31–60', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
+            { label: '1-3', value: 'articles-1-3', price: 120, icon: 'FiFile' },
+            { label: '4-10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
+            { label: '11-30', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
+            { label: '31-60', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
             { label: '60+', value: 'articles-60plus', price: 3600, icon: 'FiArchive' },
           ],
           input: {

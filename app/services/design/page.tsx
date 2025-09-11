@@ -1,20 +1,26 @@
 import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
-import FaqWebsite from '@/components/sections/faqs/FaqWebsite';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
-import WebFeatures from '@/components/sections/features/WebFeatures';
-import WebPrices from '@/components/sections/prices/WebPrices';
-import Mission from '@/components/sections/steps/Mission';
 import Gap from '@/components/ui/Gap';
+import PricingSteps from '@/components/sections/steps/PricingSteps';
+import TechSteps from '@/components/sections/steps/TechSteps';
+import { generatePageMetadata } from '@/lib/generatePageMetadata';
+import DesignFeatures from '@/components/sections/features/DesignFeatures';
+import FaqDesign from '@/components/sections/faqs/FaqDesign';
+import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 
-export default function OfferWebPage() {
+export async function generateMetadata() {
+  return generatePageMetadata('design');
+}
+
+export default function OfferDesignPage() {
   return (
     <>
       <HeroBanner
         title="Strony internetowe"
-        description="SEO, WCAG, treść, sprawdzona technologia. Indywidualne projekty dla Twoich celów"
+        description="Standard globalnych marek dla Twojego biznesu"
         buttonAccent="Wyceń projekt"
         buttonAccentLink="/contact"
         buttonSecond="Sprawdź realizacje"
@@ -35,33 +41,37 @@ export default function OfferWebPage() {
 
       <Gap size="sm" />
 
-      <WebFeatures />
+      <DesignFeatures />
 
       <Gap />
 
-      <Mission />
+      <TechSteps />
+
+      <Gap size="sm" />
 
       <Gap />
+
+      <PricingSteps />
+
+      <Gap size="sm" />
 
       <WorkSteps />
 
+      <Gap size="sm" />
+
+      <FaqDesign />
+
       <Gap />
 
-      <WebPrices />
-
-      <Gap />
-
-      <FaqWebsite />
+      <ServicesSteps />
 
       <Gap />
 
       <CTABaner
-        title="Zbudujmy stronę, która pracuje na markę"
-        description="Minimum formy. Maksimum efektu. Jasny plan i odpowiedzialność po naszej stronie."
+        title="Zbudujmy stronę, która pracuje na Twoją markę"
+        description="Jasny plan i odpowiedzialność po naszej stronie"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        secondaryLabel="Zapytaj o termin"
-        secondaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg1.jpg"
         overlay="black"
       />

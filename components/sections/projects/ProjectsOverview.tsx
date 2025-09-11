@@ -6,16 +6,18 @@ import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 import Wrapper from '../../ui/Wrapper';
 import ProjectCard from '../../ui/ProjectCard';
 import allProjectsData from '@/data/pl/projects.json';
-import type { Project } from '@/types/project';
+import type { Project, ProjectCategory } from '@/types/project';
 
 type Props = {
   projects?: Project[];
   max?: number;
-  title?: string;
+  title: string;
   subtitle?: string;
+  category?: ProjectCategory;
+  slugs?: string | string[];
 };
 
-export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Projekty', subtitle }: Props) {
+export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Realizacje', subtitle, category, slugs }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -24,11 +26,26 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
   const [cardWidth, setCardWidth] = useState(0);
   const [isScrollable, setIsScrollable] = useState(false);
 
-  const defaultProjects = useMemo(() => {
-    return [...(allProjectsData.projects as Project[])].slice(0, max);
-  }, [max]);
+  const sourceProjects = useMemo<Project[]>(() => {
+    return projects && projects.length ? projects : (allProjectsData.projects as Project[]);
+  }, [projects]);
 
-  const finalProjects = projects ?? defaultProjects;
+  const finalProjects = useMemo(() => {
+    const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
+
+    let list: Project[] = [];
+
+    if (slugsArray && slugsArray.length) {
+      const map = new Map(sourceProjects.map((p) => [p.slug, p] as const));
+      list = slugsArray.map((s) => map.get(s)).filter(Boolean) as Project[];
+    } else if (category) {
+      list = sourceProjects.filter((p) => (p.category || []).includes(category));
+    } else {
+      list = [];
+    }
+
+    return list.slice(0, max);
+  }, [sourceProjects, slugs, category, max]);
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollRef.current || !cardWidth) return;
@@ -42,17 +59,19 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
 
     const update = () => {
       if (!container || !card) return;
-      const cardStyle = getComputedStyle(card);
-      const gap = parseInt(cardStyle.marginRight || '16', 10);
-      const newCardWidth = card.offsetWidth + gap;
+      const containerStyle = getComputedStyle(container);
+      const gap = parseInt(containerStyle.columnGap || '16', 10);
+      const newCardWidth = card.offsetWidth + (Number.isFinite(gap) ? gap : 16);
 
       setCardWidth(newCardWidth);
-      const totalWidth = container.scrollWidth;
+
       const visibleWidth = container.clientWidth;
-      const slides = Math.ceil((totalWidth - visibleWidth) / newCardWidth) + 1;
+      const visibleCards = Math.max(1, Math.floor((visibleWidth + gap) / newCardWidth));
+      const totalCards = finalProjects.length;
+      const slides = Math.max(1, totalCards - visibleCards + 1);
 
       setMaxSlides(slides);
-      setIsScrollable(totalWidth > visibleWidth + 4);
+      setIsScrollable(slides > 1);
     };
 
     const handleScroll = () => {
@@ -70,6 +89,10 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Pro
       window.removeEventListener('resize', update);
     };
   }, [cardWidth, finalProjects]);
+
+  if (!finalProjects.length) {
+    return null;
+  }
 
   return (
     <Wrapper>

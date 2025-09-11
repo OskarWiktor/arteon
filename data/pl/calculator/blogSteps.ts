@@ -24,10 +24,10 @@ export const blogSteps: Step[] = [
     required: true,
     options: [
       { label: '0', value: 'articles-0', price: 0, tooltip: 'Wprowadzasz je samodzielnie — my przygotujemy wygląd i funkcje', icon: 'FiMinusCircle' },
-      { label: '1–3', value: 'articles-1-3', price: 120, icon: 'FiFilePlus' },
-      { label: '4–10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
-      { label: '11–30', value: 'articles-11-30', price: 1200, icon: 'FiFilePlus' },
-      { label: '31–60', value: 'articles-31-60', price: 2400, icon: 'FiFilePlus' },
+      { label: '1-3', value: 'articles-1-3', price: 120, icon: 'FiFilePlus' },
+      { label: '4-10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
+      { label: '11-30', value: 'articles-11-30', price: 1200, icon: 'FiFilePlus' },
+      { label: '31-60', value: 'articles-31-60', price: 2400, icon: 'FiFilePlus' },
       { label: '60+', value: 'articles-60plus', price: 3600, icon: 'FiFilePlus' },
     ],
     input: {

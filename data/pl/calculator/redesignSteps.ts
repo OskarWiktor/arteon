@@ -43,7 +43,7 @@ export const redesignSteps: Step[] = [
         },
         {
           title: 'Ile stron zawiera Twoja witryna?',
-          tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+          tooltip: 'Przykładowo: O nas, Galeria, usługi',
           required: true,
           type: 'single',
           options: [
@@ -69,14 +69,14 @@ export const redesignSteps: Step[] = [
             expand: [
               {
                 title: 'Ile nowych podstron chcesz dodać?',
-                tooltip: 'Nowe podstrony jak np. Oferta, Galeria',
+                tooltip: 'Nowe podstrony jak np. usługi, Galeria',
                 required: true,
                 type: 'single',
                 options: [
                   { label: '1', value: 'extra-1', price: 200, icon: 'FiFile' },
-                  { label: '2–3', value: 'extra-2-3', price: 600, icon: 'FiFilePlus' },
-                  { label: '4–6', value: 'extra-4-6', price: 1200, icon: 'FiFolder' },
-                  { label: '7–10', value: 'extra-7-10', price: 2000, icon: 'FiFolderPlus' },
+                  { label: '2-3', value: 'extra-2-3', price: 600, icon: 'FiFilePlus' },
+                  { label: '4-6', value: 'extra-4-6', price: 1200, icon: 'FiFolder' },
+                  { label: '7-10', value: 'extra-7-10', price: 2000, icon: 'FiFolderPlus' },
                 ],
                 input: {
                   key: 'custom-extra-pages',
@@ -100,10 +100,10 @@ export const redesignSteps: Step[] = [
                 title: 'Ile stron z artykułami posiada witryna?',
                 required: true,
                 options: [
-                  { label: '1–3', value: 'articles-1-3', price: 60, icon: 'FiFile' },
-                  { label: '4–10', value: 'articles-4-10', price: 250, icon: 'FiFilePlus' },
-                  { label: '11–30', value: 'articles-11-30', price: 600, icon: 'FiFolder' },
-                  { label: '31–60', value: 'articles-31-60', price: 1200, icon: 'FiFolderPlus' },
+                  { label: '1-3', value: 'articles-1-3', price: 60, icon: 'FiFile' },
+                  { label: '4-10', value: 'articles-4-10', price: 250, icon: 'FiFilePlus' },
+                  { label: '11-30', value: 'articles-11-30', price: 600, icon: 'FiFolder' },
+                  { label: '31-60', value: 'articles-31-60', price: 1200, icon: 'FiFolderPlus' },
                   { label: '60+', value: 'articles-60plus', price: 1800, icon: 'FiArchive' },
                 ],
                 input: {
@@ -157,7 +157,7 @@ export const redesignSteps: Step[] = [
         },
         {
           title: 'Ile stron zawiera Twoja witryna?',
-          tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+          tooltip: 'Przykładowo: O nas, Galeria, usługi',
           required: true,
           type: 'single',
           options: [
@@ -183,14 +183,14 @@ export const redesignSteps: Step[] = [
             expand: [
               {
                 title: 'Ile nowych podstron chcesz dodać?',
-                tooltip: 'Nowe podstrony jak np. Oferta, Galeria',
+                tooltip: 'Nowe podstrony jak np. usługi, Galeria',
                 required: true,
                 type: 'single',
                 options: [
                   { label: '1', value: 'extra-1', price: 200, icon: 'FiFile' },
-                  { label: '2–3', value: 'extra-2-3', price: 600, icon: 'FiFilePlus' },
-                  { label: '4–6', value: 'extra-4-6', price: 1200, icon: 'FiFolder' },
-                  { label: '7–10', value: 'extra-7-10', price: 2000, icon: 'FiFolderPlus' },
+                  { label: '2-3', value: 'extra-2-3', price: 600, icon: 'FiFilePlus' },
+                  { label: '4-6', value: 'extra-4-6', price: 1200, icon: 'FiFolder' },
+                  { label: '7-10', value: 'extra-7-10', price: 2000, icon: 'FiFolderPlus' },
                 ],
                 input: {
                   key: 'custom-extra-pages',
@@ -206,9 +206,9 @@ export const redesignSteps: Step[] = [
           required: true,
           type: 'single',
           options: [
-            { label: '1–10', value: 'few-products', price: 400, icon: 'FiBox' },
-            { label: '11–30', value: 'mid-products', price: 600, icon: 'FiGrid' },
-            { label: '31–60', value: 'more-products', price: 1200, icon: 'FiLayers' },
+            { label: '1-10', value: 'few-products', price: 400, icon: 'FiBox' },
+            { label: '11-30', value: 'mid-products', price: 600, icon: 'FiGrid' },
+            { label: '31-60', value: 'more-products', price: 1200, icon: 'FiLayers' },
             { label: '60+', value: 'large-products', price: 1400, icon: 'FiPackage' },
           ],
           input: {
@@ -230,10 +230,10 @@ export const redesignSteps: Step[] = [
                 title: 'Ile stron z artykułami posiada sklep?',
                 required: true,
                 options: [
-                  { label: '1–3', value: 'articles-1-3', price: 60, icon: 'FiFile' },
-                  { label: '4–10', value: 'articles-4-10', price: 250, icon: 'FiFilePlus' },
-                  { label: '11–30', value: 'articles-11-30', price: 600, icon: 'FiFolder' },
-                  { label: '31–60', value: 'articles-31-60', price: 1200, icon: 'FiFolderPlus' },
+                  { label: '1-3', value: 'articles-1-3', price: 60, icon: 'FiFile' },
+                  { label: '4-10', value: 'articles-4-10', price: 250, icon: 'FiFilePlus' },
+                  { label: '11-30', value: 'articles-11-30', price: 600, icon: 'FiFolder' },
+                  { label: '31-60', value: 'articles-31-60', price: 1200, icon: 'FiFolderPlus' },
                   { label: '60+', value: 'articles-60plus', price: 1800, icon: 'FiArchive' },
                 ],
                 input: {
@@ -287,7 +287,7 @@ export const redesignSteps: Step[] = [
         },
         {
           title: 'Ile stron zawiera Twój blog?',
-          tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+          tooltip: 'Przykładowo: O nas, Galeria, usługi',
           required: true,
           type: 'single',
           options: [
@@ -313,14 +313,14 @@ export const redesignSteps: Step[] = [
             expand: [
               {
                 title: 'Ile nowych podstron chcesz dodać?',
-                tooltip: 'Nowe podstrony jak np. Oferta, Galeria',
+                tooltip: 'Nowe podstrony jak np. usługi, Galeria',
                 required: true,
                 type: 'single',
                 options: [
                   { label: '1', value: 'extra-1', price: 200, icon: 'FiFile' },
-                  { label: '2–3', value: 'extra-2-3', price: 600, icon: 'FiFilePlus' },
-                  { label: '4–6', value: 'extra-4-6', price: 1200, icon: 'FiFolder' },
-                  { label: '7–10', value: 'extra-7-10', price: 2000, icon: 'FiFolderPlus' },
+                  { label: '2-3', value: 'extra-2-3', price: 600, icon: 'FiFilePlus' },
+                  { label: '4-6', value: 'extra-4-6', price: 1200, icon: 'FiFolder' },
+                  { label: '7-10', value: 'extra-7-10', price: 2000, icon: 'FiFolderPlus' },
                 ],
                 input: {
                   key: 'custom-extra-pages',
@@ -335,10 +335,10 @@ export const redesignSteps: Step[] = [
           title: 'Ile stron z artykułami posiada blog?',
           required: true,
           options: [
-            { label: '1–3', value: 'articles-1-3', price: 60, icon: 'FiFile' },
-            { label: '4–10', value: 'articles-4-10', price: 250, icon: 'FiFilePlus' },
-            { label: '11–30', value: 'articles-11-30', price: 600, icon: 'FiFolder' },
-            { label: '31–60', value: 'articles-31-60', price: 1200, icon: 'FiFolderPlus' },
+            { label: '1-3', value: 'articles-1-3', price: 60, icon: 'FiFile' },
+            { label: '4-10', value: 'articles-4-10', price: 250, icon: 'FiFilePlus' },
+            { label: '11-30', value: 'articles-11-30', price: 600, icon: 'FiFolder' },
+            { label: '31-60', value: 'articles-31-60', price: 1200, icon: 'FiFolderPlus' },
             { label: '60+', value: 'articles-60plus', price: 1800, icon: 'FiArchive' },
           ],
           input: {

@@ -2,74 +2,69 @@ import SectionPrices, { type SectionPricesPlan, type Note } from '@/components/u
 
 const WebPlans: SectionPricesPlan[] = [
   {
-    name: 'Landing One-Page',
-    platform: 'WordPress',
-    price: '4 900–7 900 zł',
-    description: 'Start, szybkie wdrożenie, pełen standard jakości.',
+    name: 'Strona wizytówka WordPress',
+    price: '1 900 zł',
+    description: 'Idealna na start - prosta i nowoczesna strona',
     features: [
-      '1 strona z sekcjami (one-page).',
-      'Treści i microcopy w cenie.',
-      'SEO on-page i techniczne.',
-      'WCAG 2.1 AA + Deklaracja Dostępności.',
-      'Formularz, analityka, podstawowe integracje.',
-      'CMS + szkolenie PDF.',
+      'Jedna strona (one-page) z nowoczesnym designem',
+      'Treści przygotowane pod SEO - żeby szybciej znaleźć Cię w Google',
+      'Wygląd dopasowany do Twojej marki i klientów',
+      'Formularz kontaktowy i wybrane integracje',
+      'Optymalizacja techniczna - szybkie ładowanie strony',
+      'Bezpłatna pomoc w wyborze hostingu i domeny',
+      'Instrukcja PDF jak samodzielnie edytować treść',
     ],
-    btnOne: 'Zamów landing',
+    btnOne: 'Zamów stronę wizytówkę',
     btnOneLink: '/contact',
-    btnTwo: 'Dobierz stack',
-    btnTwoLink: '#tech',
   },
   {
-    name: 'Strona firmowa 5–10',
-    platform: 'WordPress',
-    price: '9 900–15 900 zł',
-    description: 'Rozwój, blog, portfolio, więcej sekcji i integracji.',
+    name: 'Strona firmowa WordPress',
+    price: '3 900 - 4 900 zł',
+    description: 'Rozbudowana strona dla firm, które chcą zaprezentować swoją ofertę',
     features: [
-      '5–10 podstron + blog/aktualności.',
-      'Architektura informacji i treść.',
-      'Zaawansowane SEO i schemy danych.',
-      'WCAG 2.1 AA + Deklaracja Dostępności.',
-      'Szybkość, cache, bezpieczeństwo.',
-      'CMS + szkolenie PDF i wideo.',
+      '6-10 podstron (np. usługi, o nas, blog, kontakt)',
+      'Strategia treści i analiza konkurencji - żeby wyróżnić Twoją firmę',
+      'Spójny grafika i architektura informacji dopasowana do klienta',
+      'Treści przygotowane pod SEO - lepsza widoczność w wyszukiwarce',
+      'Formularze kontaktowe, wybrane funkcje i integracje',
+      'Optymalizacja techniczna i analityka odwiedzin',
+      'Bezpłatna pomoc w wyborze hostingu i domeny',
+      'Instrukcja PDF z obsługi strony',
     ],
-    btnOne: 'Zamów stronę',
+    btnOne: 'Zamów stronę firmową',
     btnOneLink: '/contact',
-    btnTwo: 'Co w cenie',
-    btnTwoLink: '#value',
   },
   {
-    name: 'Prestiżowa strona',
-    platform: 'Webflow',
-    price: '17 900–29 900 zł',
-    description: 'Luksus UX, animacje, CMS i perfekcyjny detal.',
+    name: 'Prestiżowa strona Webflow',
+    price: '6 900 - 9 900 zł',
+    description: 'Strona premium z animacjami, blogiem i perfekcyjnym UX.',
     features: [
-      'Projekt premium, mikro-interakcje i animacje.',
-      'CMS kolekcje: blog, portfolio, case studies.',
-      'SEO i wydajność klasy enterprise.',
-      'WCAG 2.1 AA + Deklaracja Dostępności.',
-      'Komponenty i style jak w design systemie.',
-      'Szkolenie PDF + wideo, dokumentacja edycji.',
+      'Projekt premium z animacjami i efektami zwiększającymi sprzedaż',
+      'Rozbudowany blog i możliwość samodzielnej edycji treści (CMS)',
+      'SEO na najwyższym poziomie - strona gotowa do pozycjonowania',
+      'Zgodność z WCAG 2.1 AA + Deklaracja Dostępności',
+      'Optymalizacja techniczna - strona szybka i stabilna',
+      'Formularze kontaktowe i wybrane integracje biznesowe',
+      'Bezpłatna pomoc w wyborze hostingu i domeny',
+      'Instrukcja PDF z obsługi strony',
     ],
-    btnOne: 'Zamów prestiż',
+    btnOne: 'Zamów stronę premium',
     btnOneLink: '/contact',
-    btnTwo: 'Zobacz technologię',
-    btnTwoLink: '#tech',
     lastPlan: true,
-    badgeLabel: 'Polecane',
   },
 ];
 
 const WebPlansNote: Note = {
   text: (
     <p className="text-[#5e5e5e]">
-      <strong className="text-[#080808]">Potrzebujesz funkcji niestandardowych?</strong> Liga Next.js obsłuży aplikacje, panele, integracje i logikę biznesową. <em>Wycena indywidualna</em> po
-      warsztacie celów.
+      <strong className="text-[#080808]">Potrzebujesz czegoś więcej? </strong>
+      Tworzymy dedykowane aplikacje i sklepy internetowe w Next.js - rozwiązania szyte na miarę, które spełnią nawet najbardziej wymagające cele biznesowe.
     </p>
   ),
-  ctaLabel: 'Porozmawiaj o Next.js',
+  ctaLabel: 'Porozmawiajmy o Twoim projekcie',
   ctaLink: '/contact',
 };
 
 export default function WebPrices() {
-  return <SectionPrices id="pricing-blog" subtitle="Cennik" title="Blog i content" plans={WebPlans} note={WebPlansNote} />;
+  return <SectionPrices id="pricing-web" subtitle="Cennik stron internetowych" title="Przykładowe realizacje" plans={WebPlans} note={WebPlansNote} />;
 }

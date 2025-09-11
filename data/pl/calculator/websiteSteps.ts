@@ -15,13 +15,13 @@ export const websiteSteps: Step[] = [
     required: true,
     options: [
       { label: 'Jedna strona (onepage)', value: 'onepage', price: 0, tooltip: 'Wszystkie informacje zawarte na jednej, dłuższej stronie', icon: 'FiAlignJustify' },
-      { label: 'Strona z podstronami', value: 'multipage', price: 0, tooltip: 'Struktura z wieloma zakładkami (np. O nas, Kontakt, Oferta)', icon: 'FiLayers' },
+      { label: 'Strona z podstronami', value: 'multipage', price: 0, tooltip: 'Struktura z wieloma zakładkami (np. O nas, Kontakt, usługi)', icon: 'FiLayers' },
     ],
     branches: {
       multipage: [
         {
           title: 'Jakie podstrony ma zawierać Twoja strona?',
-          tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+          tooltip: 'Przykładowo: O nas, Galeria, usługi',
           required: true,
           type: 'single',
           options: [
@@ -49,10 +49,10 @@ export const websiteSteps: Step[] = [
                 title: 'Ile stron z artykułami mamy przygotować?',
                 required: true,
                 options: [
-                  { label: '1–3', value: 'articles-1-3', price: 120, icon: 'FiFile' },
-                  { label: '4–10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
-                  { label: '11–30', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
-                  { label: '31–60', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
+                  { label: '1-3', value: 'articles-1-3', price: 120, icon: 'FiFile' },
+                  { label: '4-10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
+                  { label: '11-30', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
+                  { label: '31-60', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
                   { label: '60+', value: 'articles-60plus', price: 3600, icon: 'FiArchive' },
                 ],
                 input: {

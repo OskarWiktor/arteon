@@ -5,11 +5,11 @@ const faqItems = [
   {
     question: 'Jakie treści możecie dla mnie stworzyć?',
     answer:
-      'Piszę treści na strony internetowe (strona główna, oferta, o firmie), artykuły blogowe, opisy produktów, treści SEO, posty na social media oraz scenariusze video. Tworzę też storytelling i teksty sprzedażowe.',
+      'Piszę treści na strony internetowe (strona główna, usługi, o firmie), artykuły blogowe, opisy produktów, treści SEO, posty na social media oraz scenariusze video. Tworzę też storytelling i teksty sprzedażowe.',
   },
   {
     question: 'Ile kosztuje stworzenie treści?',
-    answer: 'Cena zależy od rodzaju tekstu, jego długości i celu. Prosty opis usługi to koszt od 100 zł, artykuł blogowy – od 150 zł, a pełna treść na stronę to średnio 600–1200 zł.',
+    answer: 'Cena zależy od rodzaju tekstu, jego długości i celu. Prosty opis usługi to koszt od 100 zł, artykuł blogowy - od 150 zł, a pełna treść na stronę to średnio 600-1200 zł.',
   },
   {
     question: 'Czy mogę zamówić tylko pojedynczy tekst?',
@@ -17,7 +17,7 @@ const faqItems = [
   },
   {
     question: 'Ile czasu trwa przygotowanie treści?',
-    answer: 'Standardowo od 2 do 5 dni roboczych – zależnie od długości, złożoności i bieżącej dostępności. Większe projekty (np. cała strona) mogą zająć do 10–14 dni.',
+    answer: 'Standardowo od 2 do 5 dni roboczych - zależnie od długości, złożoności i bieżącej dostępności. Większe projekty (np. cała strona) mogą zająć do 10-14 dni.',
   },
   {
     question: 'Czy teksty są unikalne i pisane ręcznie?',
@@ -33,27 +33,15 @@ const faqItems = [
   },
   {
     question: 'Czy teksty są zoptymalizowane pod SEO?',
-    answer: 'Tak, tworzę treści z uwzględnieniem fraz kluczowych, struktury nagłówków i zasad SEO copywritingu – tak, aby dobrze wypadały w Google.',
-  },
-  {
-    question: 'Czy mogę otrzymać próbkę tekstu przed zleceniem całości?',
-    answer: 'Tak, na życzenie przygotowuję krótką próbkę (np. fragment opisu lub wstęp artykułu), abyś zobaczył styl i jakość.',
-  },
-  {
-    question: 'Czy oferujecie treści w języku angielskim?',
-    answer: 'Tak, mogę przygotować treści po angielsku (lub przetłumaczyć i dostosować już istniejące) z zachowaniem naturalnego języka i stylu marketingowego.',
-  },
-  {
-    question: 'Czy mogę zgłosić poprawki do gotowego tekstu?',
-    answer: 'Tak, masz prawo do jednej lub dwóch rund poprawek (w zależności od zakresu). Celem jest tekst, z którego będziesz w pełni zadowolony.',
+    answer: 'Tak, tworzę treści z uwzględnieniem fraz kluczowych, struktury nagłówków i zasad SEO copywritingu - tak, aby dobrze wypadały w Google.',
   },
   {
     question: 'Czy zajmujecie się treściami na social media?',
-    answer: 'Tak, mogę stworzyć opisy postów, hasła reklamowe, bio na profil, scenariusze rolek czy treści do kampanii marketingowych.',
+    answer: 'Tak, tworzymy opisy postów, hasła reklamowe, bio na profil, scenariusze rolek czy treści do kampanii marketingowych.',
   },
   {
     question: 'Czy mogę zlecić regularne pisanie tekstów (np. co miesiąc)?',
-    answer: 'Tak, możliwa jest stała współpraca abonamentowa – np. comiesięczne artykuły, newslettery lub pakiety treści. Dzięki temu masz zawsze świeży content bez konieczności zamawiania od nowa.',
+    answer: 'Tak, możliwa jest stała współpraca abonamentowa - np. comiesięczne artykuły, newslettery lub pakiety treści.',
   },
 ];
 

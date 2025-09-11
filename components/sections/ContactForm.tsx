@@ -58,7 +58,7 @@ export default function ContactForm() {
           <textarea id="message" name="Wiadomość" placeholder="Prowadzę firmę zajmującą się... chciałbym stworzyć..." required className={fieldClass + ' h-48 resize-none'} />
         </div>
 
-        <Button variant="dark" arrow onClick={() => formRef.current?.requestSubmit()}>
+        <Button variant="accent" arrow onClick={() => formRef.current?.requestSubmit()}>
           Wyślij
         </Button>
 

@@ -70,54 +70,54 @@ export default function HeroBanner({
   ].filter(({ text }) => Boolean(text));
 
   return (
-    <div className={baseBg}>    <section
-      id="hero"
-      aria-labelledby="hero-title"
-      aria-describedby={description ? 'hero-description' : undefined}
-      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-[540px] items-center overflow-hidden`}
-      style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
-    >
-      {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
-      <Wrapper className="relative flex h-[540px] items-center">
-        <div className={`md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass}`}>
-          {subtitle && <p className={`text-xl tracking-widest uppercase ${toneMutedClass}`}>{subtitle}</p>}
-          {topButtons.length > 0 && (
-            <nav aria-label="Szybkie linki" className="mt-4">
-              <ul className={`flex flex-wrap gap-2 md:gap-3 ${justify}`}>
-                {topButtons.map(({ text, link }, i) => (
-                  <li key={i}>
-                    <Button size="small" link={link}>
-                      {text as ReactNode}
-                    </Button>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          )}
-          <h1 id="hero-title">{title}</h1>
-          {description && (
-            <p id="hero-description" className={`mt-5 text-lg leading-relaxed ${toneMutedClass}`}>
-              {description}
-            </p>
-          )}
-          {(buttonAccent || buttonSecond) && (
-            <div className={`mt-8 flex flex-wrap gap-3 ${justify}`}>
-              {buttonAccent && (
-                <Button arrow variant="accent" link={buttonAccentLink}>
-                  {buttonAccent}
-                </Button>
-              )}
-              {buttonSecond && (
-                <Button arrow link={buttonSecondLink}>
-                  {buttonSecond}
-                </Button>
-              )}
-            </div>
-          )}
-        </div>
-      </Wrapper>
-    </section>
+    <div className={baseBg}>
+      <section
+        id="hero"
+        aria-labelledby="hero-title"
+        aria-describedby={description ? 'hero-description' : undefined}
+        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-[540px] items-center overflow-hidden`}
+        style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
+      >
+        {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
+        <Wrapper className="relative flex h-[540px] items-center">
+          <div className={`md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass}`}>
+            {subtitle && <p className={`text-xl tracking-widest uppercase ${toneMutedClass}`}>{subtitle}</p>}
+            {topButtons.length > 0 && (
+              <nav aria-label="Szybkie linki" className="mt-4">
+                <ul className={`flex flex-wrap gap-2 md:gap-3 ${justify}`}>
+                  {topButtons.map(({ text, link }, i) => (
+                    <li key={i}>
+                      <Button size="small" link={link}>
+                        {text as ReactNode}
+                      </Button>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
+            <h1 id="hero-title">{title}</h1>
+            {description && (
+              <p id="hero-description" className={`mt-5 text-lg leading-relaxed ${toneMutedClass}`}>
+                {description}
+              </p>
+            )}
+            {(buttonAccent || buttonSecond) && (
+              <div className={`mt-8 flex flex-wrap gap-3 ${justify}`}>
+                {buttonAccent && (
+                  <Button arrow variant="accent" link={buttonAccentLink}>
+                    {buttonAccent}
+                  </Button>
+                )}
+                {buttonSecond && (
+                  <Button arrow link={buttonSecondLink}>
+                    {buttonSecond}
+                  </Button>
+                )}
+              </div>
+            )}
+          </div>
+        </Wrapper>
+      </section>
     </div>
-
   );
 }

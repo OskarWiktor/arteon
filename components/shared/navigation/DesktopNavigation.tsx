@@ -45,19 +45,24 @@ export default function DesktopNavigation() {
   useEffect(() => setIsOfferOpen(false), [pathname]);
 
   const navigationItems = [
-    { href: '/', label: 'Home', exact: true },
-    { href: '/projects', label: 'Projekty' },
-    { href: '/offer', label: 'Oferta' },
+    { href: '/', label: 'Strona Główna', exact: true },
+    { href: '/projects', label: 'Realizacje' },
+    { href: '/services', label: 'Usługi' },
     { href: '/contact', label: 'Kontakt' },
   ];
 
   const offerSubPages = [
-    { href: '/offer/web', icon: <RiCodeSSlashFill className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Strony', desc: 'WCAG 2.2 - Indywidualny projekt - Migracje' },
-    { href: '/offer/shop', icon: <RiShoppingCartLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Sklepy online', desc: 'Płatności - Integracje - Automatyzacje' },
-    { href: '/offer/blog', icon: <RiArticleLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
-    { href: '/offer/design', icon: <RiPaletteLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Design', desc: 'Systemy marek - Loga - Do druku' },
-    { href: '/offer/content', icon: <RiFileTextLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Content', desc: 'Teksty - Artykuły - Opisy' },
-    { href: '/offer/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-[#2B2B2B]" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
+    {
+      href: '/services/websites',
+      icon: <RiCodeSSlashFill className="h-6 w-6 text-indigo-800" aria-hidden="true" />,
+      title: 'Strony internetowe',
+      desc: 'WCAG 2.1 AA - Indywidualny projekt - Migracje',
+    },
+    { href: '/services/online-stores', icon: <RiShoppingCartLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Sklepy online', desc: 'Płatności - Integracje - Automatyzacje' },
+    { href: '/services/online-blogs', icon: <RiArticleLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
+    { href: '/services/design', icon: <RiPaletteLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Grafika', desc: 'Systemy marek - Loga - Do druku' },
+    { href: '/services/content', icon: <RiFileTextLine className="h-6 w-6 text-indigo-800" aria-hidden="true" />, title: 'Content', desc: 'Teksty - Artykuły - Opisy' },
+    { href: '/services/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-[#2B2B2B]" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
   ];
 
   const focusMenuItem = (idx: number) => {
@@ -86,7 +91,7 @@ export default function DesktopNavigation() {
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       focusMenuItem(currentIndex <= 0 ? 0 : currentIndex - 1);
-    } else if (e.key === 'Home') {
+    } else if (e.key === 'Strona Główna') {
       e.preventDefault();
       focusMenuItem(0);
     } else if (e.key === 'End') {
@@ -102,7 +107,7 @@ export default function DesktopNavigation() {
           {navigationItems.map(({ href, label, exact }) => {
             const isActivePage = exact ? pathname === href : pathname.startsWith(href);
 
-            if (label === 'Oferta') {
+            if (label === 'Usługi') {
               return (
                 <li ref={offerLiRef} className="group relative flex" key={label}>
                   <button

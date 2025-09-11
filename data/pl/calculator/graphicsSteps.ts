@@ -38,7 +38,7 @@ export const graphicsSteps: Step[] = [
             { label: 'Baner reklamowy (Facebook, Instagram, Google)', value: 'ad-banner', price: 400, icon: 'FiMonitor' },
             { label: 'Projekt graficzny strony typu one-page (np. portfolio)', value: 'web-ui-onepage', price: 600, icon: 'FiLayout' },
             { label: 'Projekt graficzny strony z 3 podstronami (np. Home + O nas + Kontakt)', value: 'web-ui-3pages', price: 1400, icon: 'FiColumns' },
-            { label: 'Projekt graficzny strony z 5+ podstronami (np. Home, Oferta, Projekty, Blog, Kontakt)', value: 'web-ui-5pages', price: 2000, icon: 'FiFileText' },
+            { label: 'Projekt graficzny strony z 5+ podstronami (np. Home, usługi, Projekty, Blog, Kontakt)', value: 'web-ui-5pages', price: 2000, icon: 'FiFileText' },
             { label: 'Zestaw ikon w stylu marki', value: 'custom-icons', price: 600, icon: 'FiStar' },
           ],
         },

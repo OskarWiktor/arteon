@@ -19,7 +19,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
         </div>
 
         <div className="px-6 py-4 md:px-7 md:py-5">
-          <span className='h4'>{project.title}</span>
+          <span className="h4">{project.title}</span>
           <p className="mt-2 text-[#5e5e5e]">{project.short}</p>
 
           {size === 'normal' ? (

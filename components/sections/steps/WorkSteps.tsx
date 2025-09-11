@@ -7,38 +7,22 @@ const WorkStepsItems = [
     icon: '1',
     title: 'Rozmowa',
     borderClassName: 'border-b-indigo-800',
-    description: <>Opowiadasz nam o swojej marce, celach i wyzwaniach. Zbieramy kluczowe informacje, aby przygotować precyzyjny plan działania.</>,
+    description: <>Opowiadasz nam o swojej marce, celach oraz wyzwaniach</>,
   },
   {
     icon: '2',
-    title: 'Projekt',
+    title: 'Plan',
     borderClassName: 'border-b-indigo-800',
-    description: <>Budujemy wizję opartą na realnych potrzebach. Łączymy estetykę z funkcją w spójną wizję Twojej marki.</>,
+    description: <>Na podstawie Twojej wizji i naszej wiedzy, tworzymy plan działania</>,
   },
   {
     icon: '3',
     title: 'Realizacja',
     borderClassName: 'border-b-indigo-800',
-    description: <>Realizujemy projekt od makiet po kod. Testujemy, optymalizujemy i dbamy o płynne działanie, aby witryna angażowała i konwertowała.</>,
-  },
-  {
-    icon: '4',
-    title: 'Rozwój',
-    borderClassName: 'border-b-indigo-800',
-    description: <>Publikacja to początek. Dbamy o wzrost: SEO, social media, analiza. Twoja marka żyje, rozwija się i przyciąga właściwych klientów.</>,
+    description: <>Realizujemy projekt, stale informując Cie o postępach</>,
   },
 ];
 
 export default function WorkSteps() {
-  return (
-    <SectionSteps
-      items={WorkStepsItems}
-      title="Proces"
-      description="Transparentny. Iteracyjny. Skuteczny."
-      btnOne="Rozpocznij wycenę"
-      btnOneLink="/contact"
-      btnTwo="Porozmawiajmy"
-      btnTwoLink="/contact"
-    />
-  );
+  return <SectionSteps items={WorkStepsItems} title="Proces pracy" subtitle="Nasze praktyki" description="Transparentny. Prosty. Skuteczny." btnOne="Rozpocznij wycenę" btnOneLink="/contact" />;
 }

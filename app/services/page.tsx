@@ -3,29 +3,30 @@ import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import HeroBaner from '@/components/sections/HeroBaner';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
-import FaqContent from '@/components/sections/faqs/FaqContent';
+import Gap from '@/components/ui/Gap';
+import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 
 export async function generateMetadata() {
-  return generatePageMetadata('content');
+  return generatePageMetadata('offer');
 }
 
-export default function Page() {
+export default function OfferPage() {
   return (
     <>
-      <HeroBaner
-        title="Lorem Ipsum Lorem Ipsum"
-        description="njkbasdka sbdjabsd bjkbsajdb"
-        backgroundImage="/assets/bg/abstract-bg12.jpg"
-        overlay="black"
-        buttonTopOne="test1"
-        buttonTopTwo="test2"
-        buttonTopThree="test3"
-        buttonTopFour="test4"
-      />
-      <SectionInfo id="sfasdfasd" title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
-      <FaqContent />
+      <HeroBaner backgroundImage="/assets/bg/abstract-bg12.jpg" overlay="black" title="Lorem Ipsum Lorem Ipsum" description="njkbasdka sbdjabsd bjkbsajdb asdfasdas asf fawef eaf esf" />
+
+      <Gap size="sm" />
+
+      <SectionInfo id="abcddd" title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
+
+      <Gap />
+
+      <ServicesSteps />
+
+      <Gap />
+
       <SectionBasic
-        id="asfasdfsdf"
+        id="go-contact"
         title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
         description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
         imageSrc="/assets/test.jpg"
@@ -33,6 +34,8 @@ export default function Page() {
         btnOne="Przejdź do formularza"
         btnOneLink="/contact"
       ></SectionBasic>
+
+      <Gap size="sm" />
     </>
   );
 }

@@ -39,9 +39,9 @@ export const contentSteps: Step[] = [
           required: true,
           options: [
             { label: '1', value: 'articles-1-3', price: 120, icon: 'FiFile' },
-            { label: '2–4', value: 'articles-4-10', price: 480, icon: 'FiFilePlus' },
-            { label: '5–10', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
-            { label: '11–20', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
+            { label: '2-4', value: 'articles-4-10', price: 480, icon: 'FiFilePlus' },
+            { label: '5-10', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
+            { label: '11-20', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
             { label: '20+', value: 'articles-60plus', price: 2800, icon: 'FiArchive' },
           ],
           input: {
@@ -119,9 +119,9 @@ export const contentSteps: Step[] = [
           title: 'Ile produktów mamy opisać?',
           required: true,
           options: [
-            { label: '1–10', value: 'few-products', price: 400, icon: 'FiBox' },
-            { label: '11–30', value: 'mid-products', price: 1200, icon: 'FiGrid' },
-            { label: '31–60', value: 'more-products', price: 2400, icon: 'FiLayers' },
+            { label: '1-10', value: 'few-products', price: 400, icon: 'FiBox' },
+            { label: '11-30', value: 'mid-products', price: 1200, icon: 'FiGrid' },
+            { label: '31-60', value: 'more-products', price: 2400, icon: 'FiLayers' },
             { label: '60+', value: 'large-products', price: 3200, icon: 'FiPackage' },
           ],
           input: {

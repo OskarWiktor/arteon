@@ -23,11 +23,12 @@ interface SectionStepsProps {
   items: SectionStepItem[];
   backgroundImage?: string;
   overlay?: 'none' | 'black' | 'white';
+  disclaimer?: ReactNode;
 }
 
-export default function SectionSteps({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, items, backgroundImage, overlay = 'none' }: SectionStepsProps) {
+export default function SectionSteps({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, items, backgroundImage, overlay = 'none', disclaimer }: SectionStepsProps) {
   const hasBg = Boolean(backgroundImage);
-  const overlayClass = overlay === 'black' ? 'bg-black/55' : overlay === 'white' ? 'bg-white/65' : '';
+  const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
   const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
   const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#2B2B2B]';
   const bgPadY = hasBg ? 'py-16 md:py-24' : '';
@@ -65,45 +66,27 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
       {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative z-10 pb-8">
-        {subtitle && <span className="text-xl tracking-widest text-[#5e5e5e] uppercase">{subtitle}</span>}
+        {subtitle && <span className={`text-xl tracking-widest uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
         {title && <h3 className={toneTextClass}>{title}</h3>}
-        {description && <p className={`max-w-2xl md:mt-3 ${toneMutedClass}`}>{description}</p>}
+        {description && <p className={`max-w-2xl ${toneMutedClass}`}>{description}</p>}
 
-        <ol className={`mt-6 grid auto-rows-fr grid-cols-1 gap-4 md:mt-8 lg:mt-10 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
+        <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
           {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
-            const titleId = `step-title-${index}`;
-            const descId = `step-desc-${index}`;
-
             return (
               <li key={index} className="flex flex-col items-stretch">
-                <article
-                  aria-labelledby={titleId}
-                  aria-describedby={descId}
-                  className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white px-6 py-8 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
-                >
+                <article className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white px-6 py-8 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
                   {imageSrc ? (
-                    <Image
-                      src={imageSrc}
-                      alt={imageAlt ?? ''}
-                      width={42}
-                      height={42}
-                      className="pointer-events-none select-none"
-                      aria-hidden={imageAlt ? undefined : true}
-                    />
+                    <Image src={imageSrc} alt={imageAlt ?? ''} width={42} height={42} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
                   ) : (
                     <span className="text-xl font-bold text-indigo-800" aria-hidden={true}>
                       {icon}
                     </span>
                   )}
 
-                  <h4 className="z-10">
-                    {itemTitle}
-                  </h4>
-                  {itemSubtitle && <span className="text-[#5e5e5e]">{itemSubtitle}</span>}
+                  <h4 className="z-10">{itemTitle}</h4>
+                  {itemSubtitle && <span className="text-base text-[#5e5e5e]">{itemSubtitle}</span>}
 
-                  <div id={descId} className="z-10 mt-2">
-                    {itemDesc}
-                  </div>
+                  <div className="z-10 mt-2">{itemDesc}</div>
                 </article>
               </li>
             );
@@ -122,6 +105,12 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
                 {btnTwo}
               </Button>
             )}
+          </div>
+        )}
+
+        {disclaimer && (
+          <div className="mt-4 md:mt-5 lg:mt-6">
+            <span className={`${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{disclaimer}</span>
           </div>
         )}
       </Wrapper>

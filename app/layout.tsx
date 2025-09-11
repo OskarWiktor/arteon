@@ -26,8 +26,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang={locale}>
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/zae8yif.css" />
-
         <Script id="ga-consent-default" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];

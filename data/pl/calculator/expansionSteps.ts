@@ -25,7 +25,7 @@ export const expansionSteps: Step[] = [
             'website-pages': [
               {
                 title: 'Ile stron chcesz dodać?',
-                tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+                tooltip: 'Przykładowo: O nas, Galeria, usługi',
                 required: true,
                 type: 'single',
                 options: [
@@ -67,8 +67,8 @@ export const expansionSteps: Step[] = [
                 required: true,
                 type: 'single',
                 options: [
-                  { label: '1–2', value: '1-2-functions', price: 400, icon: 'FiCpu' },
-                  { label: '3–5', value: '3-5-functions', price: 1000, icon: 'FiCpu' },
+                  { label: '1-2', value: '1-2-functions', price: 400, icon: 'FiCpu' },
+                  { label: '3-5', value: '3-5-functions', price: 1000, icon: 'FiCpu' },
                   { label: '6+', value: '6plus-functions', price: 1200, icon: 'FiCpu' },
                 ],
                 input: {
@@ -100,9 +100,9 @@ export const expansionSteps: Step[] = [
                 required: true,
                 type: 'single',
                 options: [
-                  { label: '1–10', value: 'few-products', price: 200, icon: 'FiBox' },
-                  { label: '11–30', value: 'mid-products', price: 800, icon: 'FiGrid' },
-                  { label: '31–60', value: 'more-products', price: 1600, icon: 'FiLayers' },
+                  { label: '1-10', value: 'few-products', price: 200, icon: 'FiBox' },
+                  { label: '11-30', value: 'mid-products', price: 800, icon: 'FiGrid' },
+                  { label: '31-60', value: 'more-products', price: 1600, icon: 'FiLayers' },
                   { label: '60+', value: 'large-products', price: 2000, icon: 'FiPackage' },
                 ],
                 input: {
@@ -125,7 +125,7 @@ export const expansionSteps: Step[] = [
             'shop-pages': [
               {
                 title: 'Ile stron chcesz dodać?',
-                tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+                tooltip: 'Przykładowo: O nas, Galeria, usługi',
                 required: true,
                 type: 'single',
                 options: [
@@ -167,8 +167,8 @@ export const expansionSteps: Step[] = [
                 required: true,
                 type: 'single',
                 options: [
-                  { label: '1–2', value: '1-2-functions', price: 400, icon: 'FiCpu' },
-                  { label: '3–5', value: '3-5-functions', price: 1000, icon: 'FiCpu' },
+                  { label: '1-2', value: '1-2-functions', price: 400, icon: 'FiCpu' },
+                  { label: '3-5', value: '3-5-functions', price: 1000, icon: 'FiCpu' },
                   { label: '6+', value: '6plus-functions', price: 1200, icon: 'FiCpu' },
                 ],
                 input: {
@@ -199,10 +199,10 @@ export const expansionSteps: Step[] = [
                 title: 'Ile stron z artykułami mamy przygotować?',
                 required: true,
                 options: [
-                  { label: '1–3', value: 'articles-1-3', price: 120, icon: 'FiFile' },
-                  { label: '4–10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
-                  { label: '11–30', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
-                  { label: '31–60', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
+                  { label: '1-3', value: 'articles-1-3', price: 120, icon: 'FiFile' },
+                  { label: '4-10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
+                  { label: '11-30', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
+                  { label: '31-60', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
                   { label: '60+', value: 'articles-60plus', price: 3600, icon: 'FiArchive' },
                 ],
                 input: {
@@ -215,7 +215,7 @@ export const expansionSteps: Step[] = [
             'blog-pages': [
               {
                 title: 'Ile stron chcesz dodać?',
-                tooltip: 'Przykładowo: O nas, Galeria, Oferta',
+                tooltip: 'Przykładowo: O nas, Galeria, usługi',
                 required: true,
                 options: [
                   { label: '1', value: 'website-1', price: 200, icon: 'FiFile' },
@@ -256,8 +256,8 @@ export const expansionSteps: Step[] = [
                 tooltip: 'Przykładowo: formularze, logowanie użytkownika, funkcje sklepu ).',
                 required: true,
                 options: [
-                  { label: '1–2', value: '1-2-functions', price: 400, icon: 'FiCpu' },
-                  { label: '3–5', value: '3-5-functions', price: 1000, icon: 'FiCpu' },
+                  { label: '1-2', value: '1-2-functions', price: 400, icon: 'FiCpu' },
+                  { label: '3-5', value: '3-5-functions', price: 1000, icon: 'FiCpu' },
                   { label: '6+', value: '6plus-functions', price: 1200, icon: 'FiCpu' },
                 ],
                 type: 'single',

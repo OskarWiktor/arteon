@@ -37,7 +37,7 @@ export default function SectionPrices({
   subtitle = 'Pakiety',
   plans,
   note,
-  legalNote = 'Ceny orientacyjne. Dokładne ceny ustalamy po zapoznaniu sie z indywidualnymi potrzebami',
+  legalNote = 'Dokładne ceny ustalamy po zapoznaniu sie z indywidualnymi potrzebami',
 }: SectionPricesProps) {
   const headingId = `${id}-heading`;
   const subtitleId = subtitle ? `${id}-subtitle` : undefined;
@@ -82,24 +82,24 @@ export default function SectionPrices({
                   <h4 id={itemHeadingId}>{plan.name}</h4>
 
                   {plan.platform && (
-                    <span id={itemPlatformId} className="mt-1 text-base text-[#5e5e5e]">
+                    <span id={itemPlatformId} className="pt-1 text-base text-[#5e5e5e]">
                       {plan.platform}
                     </span>
                   )}
 
-                  <p id={itemPriceId} className="mt-4">
-                    {plan.price} <span className="text-sm font-normal text-[#5e5e5e]">brutto</span>
+                  <p id={itemPriceId} className="pt-4 pb-2">
+                    <span className="text-xl">{plan.price} </span>
+                    <span className="font-normal text-[#5e5e5e]">brutto</span>
                   </p>
 
-                  <span id={itemDescId} className="mt-2 text-base text-[#5e5e5e]">
+                  <span id={itemDescId} className="text-base text-[#5e5e5e]">
                     {plan.description}
                   </span>
 
-                  <ul className="mt-6 space-y-2 text-sm">
+                  <ul className="mt-6 list-disc space-y-2 pl-5 text-sm marker:text-[#0A0A0A]" role="list">
                     {(plan.features ?? []).map((f, i) => (
-                      <li key={`${itemId}-f-${i}`} className="flex items-start gap-2">
-                        <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900" />
-                        <span>{f}</span>
+                      <li key={`${itemId}-f-${i}`} className="leading-relaxed">
+                        {f}
                       </li>
                     ))}
                   </ul>
@@ -108,12 +108,12 @@ export default function SectionPrices({
                 {(plan.btnOne && plan.btnOneLink) || (plan.btnTwo && plan.btnTwoLink) ? (
                   <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label={`Działania planu: ${plan.name}`}>
                     {plan.btnOne && plan.btnOneLink && (
-                      <Button link={plan.btnOneLink} variant="accent" arrow>
+                      <Button link={plan.btnOneLink} variant="dark" arrow>
                         {plan.btnOne}
                       </Button>
                     )}
                     {plan.btnTwo && plan.btnTwoLink && (
-                      <Button link={plan.btnTwoLink} variant="normal" arrow>
+                      <Button link={plan.btnTwoLink} arrow>
                         {plan.btnTwo}
                       </Button>
                     )}

@@ -1,4 +1,4 @@
-export type ProjectCategory = 'aplikacja' | 'strona' | 'blog' | 'sklep';
+export type ProjectCategory = 'aplikacja' | 'strona' | 'blog' | 'sklep' | 'grafika' | 'treść' | 'marketing';
 
 export type Project = {
   slug: string;

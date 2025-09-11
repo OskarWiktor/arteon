@@ -26,5 +26,5 @@ const ContactStepsItems = [
 ];
 
 export default function ContactSteps() {
-  return <SectionSteps items={ContactStepsItems} title="Jak przebiega kontakt?" />;
+  return <SectionSteps items={ContactStepsItems} subtitle="Rozmowa" title="Jak wygląda pierwszy kontakt?" />;
 }

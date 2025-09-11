@@ -1,3 +1,4 @@
+import BenefitBelt from '@/components/sections/BenefitBelt';
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
@@ -6,28 +7,32 @@ import Gap from '@/components/ui/Gap';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
+import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 
 export async function generateMetadata() {
   return generatePageMetadata('home');
 }
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <HeroBaner
         title="Zbuduj markę, która rośnie i sprzedaje"
-        description="Studio projektowe Arteon – od strategii i brandingu, przez strony WWW, po marketing digital."
+        description="Studio projektowe Arteon - od strategii i brandingu, przez strony WWW, po marketing digital."
         backgroundImage="/assets/bg/abstract-bg12.jpg"
         overlay="black"
-        buttonTopOne="WWW"
-        buttonTopOneLink="#www"
-        buttonTopTwo="Treść"
-        buttonTopTwoLink="#tresc"
-        buttonTopThree="Design"
-        buttonTopThreeLink="#design"
-        buttonTopFour="Marketing"
-        buttonTopFourLink="#marketing"
         variant="center"
+      />
+
+      <BenefitBelt
+        items={[
+          { icon: <RiCodeSSlashFill />, label: 'Strony' },
+          { icon: <RiShoppingCartLine />, label: 'Sklepy' },
+          { icon: <RiArticleLine />, label: 'Blogi' },
+          { icon: <RiPaletteLine />, label: 'Grafika' },
+          { icon: <RiFileTextLine />, label: 'Treść' },
+          { icon: <RiMegaphoneLine />, label: 'Marketing' },
+        ]}
       />
 
       <Gap size="sm" />
@@ -35,7 +40,7 @@ export default function Home() {
       <SectionInfo
         id="mkjiohh"
         title="Elastyczny partner dla Twojej marki"
-        description="Od startupu po globalną skalę – łączymy psychologię, design i technologię, aby Twoja firma przyciągała właściwych klientów."
+        description="Od startupu po globalną skalę - łączymy psychologię, design i technologię, aby Twoja firma przyciągała właściwych klientów."
       />
 
       <Gap />
@@ -58,7 +63,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Responsywne strony WWW"
         btnOne="Zobacz ofertę"
-        btnOneLink="/offer"
+        btnOneLink="/services"
       >
         <ul className="list-disc pl-5">
           <li>Analiza branży i konkurencji w cenie</li>
@@ -78,7 +83,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Content marketing"
         btnOne="Zobacz ofertę"
-        btnOneLink="/offer"
+        btnOneLink="/services"
       >
         <ul className="list-disc pl-5">
           <li>Analiza słów kluczowych i potrzeb klientów</li>
@@ -91,8 +96,8 @@ export default function Home() {
 
       <SectionInfo id="klnjknjnj" title="Dlaczego warto z nami pracować?" description="Działamy jak system: od strategii przez wdrożenie po analizę wyników — wszystko w jednym miejscu.">
         <ul className="list-disc pl-5">
-          <li>Kompleksowe rozwiązania – jeden partner</li>
-          <li>Indywidualne podejście – zero szablonów</li>
+          <li>Kompleksowe rozwiązania - jeden partner</li>
+          <li>Indywidualne podejście - zero szablonów</li>
           <li>Pełna transparentność i mentoring</li>
         </ul>
       </SectionInfo>
@@ -110,7 +115,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Branding i identyfikacja wizualna"
         btnOne="Zobacz ofertę"
-        btnOneLink="/offer"
+        btnOneLink="/services"
       >
         <ul className="list-disc pl-5">
           <li>Logo i księga znaku</li>
@@ -130,7 +135,7 @@ export default function Home() {
         imageSrc="/assets/test.jpg"
         imageAlt="Marketing cyfrowy"
         btnOne="Zobacz ofertę"
-        btnOneLink="/offer"
+        btnOneLink="/services"
       >
         <ul className="list-disc pl-5">
           <li>Działania dopasowane do Twojego wymarzonego klienta</li>

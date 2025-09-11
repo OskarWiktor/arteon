@@ -3,16 +3,12 @@ import Wrapper from '../../ui/Wrapper';
 
 const faqItems = [
   {
-    question: 'Czy zajmujecie się również pisaniem artykułów?',
-    answer: 'Tak, możemy stworzyć bloga technicznie i od razu zapewnić treści – pisane pod SEO, angażujące i dopasowane do Twojej branży oraz grupy docelowej.',
-  },
-  {
-    question: 'Na jakim systemie powstaje blog?',
-    answer: 'Najczęściej tworzymy blogi w WordPressie, dzięki czemu masz łatwy w obsłudze panel CMS i możliwość samodzielnego dodawania wpisów.',
+    question: 'Ile trwa stworzenie bloga?',
+    answer: 'Standardowo projekt zajmuje od 7 do 20 dni roboczych, w zależności od złożoności i dostępnych materiałów',
   },
   {
     question: 'Czy mogę samodzielnie prowadzić bloga po wdrożeniu?',
-    answer: 'Tak, po uruchomieniu bloga otrzymasz prostą instrukcję lub szkolenie – abyś mógł/mogła samodzielnie dodawać wpisy, zdjęcia i kategorie.',
+    answer: 'Tak, po uruchomieniu bloga otrzymasz szkolenie PDF - abyś mógł/mogła samodzielnie dodawać wpisy, zdjęcia i kategorie.',
   },
   {
     question: 'Czy blog będzie zoptymalizowany pod SEO?',
@@ -21,28 +17,15 @@ const faqItems = [
   },
   {
     question: 'Czy projektujecie wygląd bloga od zera?',
-    answer: 'Tak, blog może być zaprojektowany indywidualnie – zgodnie z identyfikacją Twojej marki. Możemy też oprzeć go na nowoczesnym, dopracowanym szablonie.',
-  },
-  {
-    question: 'Ile kosztuje stworzenie bloga?',
-    answer:
-      'Cena zależy od wybranego systemu, liczby podstron i zakresu integracji. Prosty blog z CMS zaczyna się od 1500 zł. Możesz skorzystać z kalkulatora wyceny, by poznać koszt dopasowany do Twoich potrzeb.',
-  },
-  {
-    question: 'Ile trwa stworzenie bloga?',
-    answer: 'Zazwyczaj 5–10 dni roboczych. Jeśli blog jest częścią większego serwisu – czas może być dłuższy i zależy od całej struktury projektu.',
+    answer: 'Tak, blog może być zaprojektowany indywidualnie - zgodnie z identyfikacją Twojej marki. Możemy też oprzeć go na nowoczesnym, dopracowanym szablonie.',
   },
   {
     question: 'Czy dodajecie pierwsze wpisy na start?',
     answer: 'Tak, możemy przygotować i dodać kilka startowych wpisów, aby blog wyglądał na aktywny i przyciągał ruch od pierwszego dnia.',
   },
   {
-    question: 'Czy mogę zlecić stałe prowadzenie bloga?',
-    answer: 'Tak, oferujemy abonamentowe prowadzenie bloga – pisanie i publikację 2–8 wpisów miesięcznie, z dbałością o SEO i spójność marki.',
-  },
-  {
     question: 'Czy mogę liczyć na pomoc w strategii treści?',
-    answer: 'Tak, doradzamy, jak budować strukturę bloga, jakie tematy poruszać i jak łączyć treści z Twoją ofertą. Możemy też zaproponować kalendarz publikacji.',
+    answer: 'Tak, doradzamy, jak budować strukturę bloga, tak aby pojawił się wyżej w Google.',
   },
 ];
 

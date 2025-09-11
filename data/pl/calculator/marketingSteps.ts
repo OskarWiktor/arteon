@@ -46,8 +46,8 @@ export const marketingSteps: Step[] = [
           required: true,
           type: 'multi',
           options: [
-            { label: 'Google Ads – wyszukiwarka', value: 'ppc-search', price: 500, icon: 'FiSearch' },
-            { label: 'Google Ads – banery (Display)', value: 'ppc-display', price: 400, icon: 'FiImage' },
+            { label: 'Google Ads - wyszukiwarka', value: 'ppc-search', price: 500, icon: 'FiSearch' },
+            { label: 'Google Ads - banery (Display)', value: 'ppc-display', price: 400, icon: 'FiImage' },
             { label: 'Remarketing', value: 'ppc-remarketing', price: 400, icon: 'FiRepeat' },
             { label: 'Meta Ads (Facebook / Instagram)', value: 'ppc-meta', price: 500, icon: 'FiFacebook' },
           ],
@@ -71,9 +71,9 @@ export const marketingSteps: Step[] = [
                 required: true,
                 options: [
                   { label: '1', value: 'articles-1-3', price: 120, icon: 'FiFile' },
-                  { label: '2–4', value: 'articles-4-10', price: 480, icon: 'FiFilePlus' },
-                  { label: '5–10', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
-                  { label: '11–20', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
+                  { label: '2-4', value: 'articles-4-10', price: 480, icon: 'FiFilePlus' },
+                  { label: '5-10', value: 'articles-11-30', price: 1200, icon: 'FiFolder' },
+                  { label: '11-20', value: 'articles-31-60', price: 2400, icon: 'FiFolderPlus' },
                   { label: '20+', value: 'articles-60plus', price: 2800, icon: 'FiArchive' },
                 ],
                 input: {
@@ -122,9 +122,9 @@ export const marketingSteps: Step[] = [
                 title: 'Dla ilu produktów mamy przygotować treść?',
                 required: true,
                 options: [
-                  { label: '1–10', value: 'products-1-10', price: 400, icon: 'FiBox' },
-                  { label: '11–30', value: 'products-11-30', price: 1200, icon: 'FiGrid' },
-                  { label: '31–60', value: 'products-31-60', price: 2400, icon: 'FiLayers' },
+                  { label: '1-10', value: 'products-1-10', price: 400, icon: 'FiBox' },
+                  { label: '11-30', value: 'products-11-30', price: 1200, icon: 'FiGrid' },
+                  { label: '31-60', value: 'products-31-60', price: 2400, icon: 'FiLayers' },
                   { label: '60+', value: 'products-60plus', price: 3200, icon: 'FiPackage' },
                 ],
                 input: {
@@ -177,8 +177,8 @@ export const marketingSteps: Step[] = [
     required: true,
     options: [
       { label: 'Jednorazowa kampania', value: 'one-time', price: 0, icon: 'FiZap' },
-      { label: '1–3 miesiące', value: 'short-term', multiplier: 1.2, icon: 'FiClock' },
-      { label: '4–6 miesięcy', value: 'mid-term', multiplier: 1.4, icon: 'FiCalendar' },
+      { label: '1-3 miesiące', value: 'short-term', multiplier: 1.2, icon: 'FiClock' },
+      { label: '4-6 miesięcy', value: 'mid-term', multiplier: 1.4, icon: 'FiCalendar' },
       { label: '6+ miesięcy (ciągła współpraca)', value: 'long-term', multiplier: 1.6, icon: 'FiRepeat' },
     ],
   },
@@ -186,8 +186,8 @@ export const marketingSteps: Step[] = [
     title: 'Czy posiadasz wcześniejsze dane marketingowe (kampanie, statystyki)?',
     required: true,
     options: [
-      { label: 'Tak – udostępnię', value: 'has-data', price: 0, icon: 'FiDatabase' },
-      { label: 'Nie – zaczynamy od zera', value: 'no-data', multiplier: 1.1, icon: 'FiAlertCircle' },
+      { label: 'Tak - udostępnię', value: 'has-data', price: 0, icon: 'FiDatabase' },
+      { label: 'Nie - zaczynamy od zera', value: 'no-data', multiplier: 1.1, icon: 'FiAlertCircle' },
     ],
   },
 ];

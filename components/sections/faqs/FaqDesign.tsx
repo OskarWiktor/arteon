@@ -8,36 +8,24 @@ const faqItems = [
       'Oferujemy projektowanie logo, identyfikacji wizualnej (kolory, typografia, key visual), grafik do social mediów, prezentacji, ulotek, wizytówek, banerów oraz layoutów stron internetowych.',
   },
   {
-    question: 'Ile kosztuje projekt logo?',
-    answer: 'Podstawowy projekt logo zaczyna się od 600 zł. W zależności od zakresu (np. pełny branding, księga znaku) cena może wzrosnąć. Wycena jest zawsze indywidualna.',
-  },
-  {
     question: 'Czy mogę zamówić cały pakiet identyfikacji wizualnej?',
     answer: 'Tak, oferujemy kompleksowe pakiety zawierające logo, kolorystykę, typografię, wzory grafik i podstawowe zastosowania (social media, druki, www).',
   },
   {
     question: 'Jak długo trwa realizacja projektu graficznego?',
-    answer: 'Prosty projekt graficzny (np. wizytówka, post) trwa 1–3 dni robocze. Logo i identyfikacja wizualna – od 5 do 10 dni roboczych. Konkretne terminy ustalamy indywidualnie.',
+    answer: 'Prosty projekt graficzny (np. wizytówka, post) trwa 1-3 dni robocze. Logo i identyfikacja wizualna - od 5 do 10 dni roboczych. Konkretne terminy ustalamy indywidualnie.',
   },
   {
     question: 'Czy mogę zgłosić poprawki do projektu?',
-    answer: 'Tak, w każdej usłudze graficznej przewidziane są 1–2 rundy poprawek. Dążymy do tego, by efekt końcowy w 100% spełniał Twoje oczekiwania.',
+    answer: 'Tak, w każdej usłudze graficznej przewidziane są 1-2 rundy poprawek. Dążymy do tego, by efekt końcowy w 100% spełniał Twoje oczekiwania.',
   },
   {
     question: 'W jakich formatach otrzymam pliki?',
-    answer: 'Dostarczamy pliki wektorowe (SVG, PDF), rastrowe (JPG, PNG) oraz wersje do druku i internetu. W przypadku logo – również wersje mono, z tłem i bez.',
+    answer: 'Dostarczamy pliki wektorowe (SVG, PDF), rastrowe (JPG, PNG) oraz wersje do druku i internetu. W przypadku logo - również wersje mono, z tłem i bez.',
   },
   {
     question: 'Czy projektujecie grafiki do mediów społecznościowych?',
-    answer: 'Tak, tworzymy grafiki na Instagram, Facebook, LinkedIn, YouTube i inne platformy – posty, relacje, okładki, grafiki reklamowe.',
-  },
-  {
-    question: 'Czy mogę zlecić tylko pojedynczą grafikę?',
-    answer: 'Oczywiście. Możesz zlecić jedną grafikę, jak i cały pakiet (np. 10 grafik miesięcznie). Wszystko zależy od Twoich potrzeb.',
-  },
-  {
-    question: 'Czy projektujecie materiały do druku?',
-    answer: 'Tak, projektujemy ulotki, plakaty, wizytówki, katalogi i inne materiały drukowane – w odpowiednich formatach i z marginesami technicznymi.',
+    answer: 'Tak, tworzymy grafiki na Instagram, Facebook, LinkedIn, YouTube i inne platformy - posty, relacje, okładki, grafiki reklamowe.',
   },
   {
     question: 'Czy mogę liczyć na pomoc w wyborze stylu graficznego?',
@@ -49,11 +37,11 @@ const faqItems = [
   },
   {
     question: 'Czy mogę otrzymać pliki źródłowe (np. .psd, .ai)?',
-    answer: 'Tak, pliki źródłowe są dostępne na życzenie – szczególnie przy logo i projektach, które będą dalej edytowane.',
+    answer: 'Tak, pliki źródłowe są dostępne na życzenie - szczególnie przy logo i projektach, które będą dalej edytowane.',
   },
   {
     question: 'Czy mogę zlecić stałą współpracę graficzną?',
-    answer: 'Tak, oferujemy pakiety miesięczne lub długofalową obsługę graficzną marki – idealne rozwiązanie, jeśli potrzebujesz regularnych materiałów.',
+    answer: 'Tak, oferujemy pakiety miesięczne lub długofalową obsługę graficzną marki - idealne rozwiązanie, jeśli potrzebujesz regularnych materiałów.',
   },
 ];
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { RiInstagramLine, RiFacebookFill, RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { RiInstagramLine, RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
 
 import MobileNavigation from './navigation/MobileNavigation';
@@ -63,7 +63,9 @@ export default function Navigation() {
             </div>
 */}
 
-            <span className="mr-3 text-sm font-normal text-[#5e5e5e] italic">#MadeWithNext</span>
+            <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
+              #MadeWithNext.js
+            </a>
 
             <a
               href="https://www.instagram.com/arteon.pl"
@@ -73,15 +75,6 @@ export default function Navigation() {
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
-            </a>
-            <a
-              href="https://www.facebook.com/arteonpl"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-            >
-              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
             </a>
           </div>
 
@@ -96,7 +89,6 @@ export default function Navigation() {
           </button>
         </nav>
 
-        {/* Mobile nav (API bez zmian) */}
         <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} />
       </Wrapper>
     </header>

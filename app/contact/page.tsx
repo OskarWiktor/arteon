@@ -2,7 +2,6 @@ import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 import ContactForm from '@/components/sections/ContactForm';
 import HeroBaner from '@/components/sections/HeroBaner';
-import SectionBasic from '@/components/ui/sections/SectionBasic';
 import ContactSteps from '@/components/sections/steps/ContactSteps';
 import Gap from '@/components/ui/Gap';
 
@@ -10,7 +9,7 @@ export async function generateMetadata() {
   return generatePageMetadata('contact');
 }
 
-export default function Page() {
+export default function ContactPage() {
   return (
     <>
       <HeroBaner
@@ -24,21 +23,9 @@ export default function Page() {
 
       <ContactSteps />
 
-      <Gap />
+      <Gap size="sm" />
 
       <ContactForm />
-
-      <Gap />
-
-      <SectionBasic
-        title="Szybka wycena"
-        description="Zastanawiasz się jaki może być potencjalny koszt Twojego projektu? Kliknij i przejdź do naszego bezpłatnego kalkulatora!"
-        imageSrc="/assets/test.jpg"
-        imageAlt="Kalkulator"
-        btnOneLink="/contact"
-        btnOne="Kalkulator"
-        id="contact"
-      />
 
       <Gap size="sm" />
     </>

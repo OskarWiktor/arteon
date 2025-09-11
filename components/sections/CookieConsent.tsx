@@ -11,7 +11,11 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 180;
 function readConsent(): ConsentState | null {
   const m = document.cookie.match(new RegExp('(^| )' + COOKIE_NAME + '=([^;]+)'));
   if (!m) return null;
-  try { return JSON.parse(decodeURIComponent(m[2])) as ConsentState; } catch { return null; }
+  try {
+    return JSON.parse(decodeURIComponent(m[2])) as ConsentState;
+  } catch {
+    return null;
+  }
 }
 function writeConsent(state: ConsentState) {
   const value = encodeURIComponent(JSON.stringify(state));
@@ -37,21 +41,32 @@ export default function CookieConsent() {
   const firstBtnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const open = () => { setVisible(true); setPanel(true); setTimeout(()=>firstBtnRef.current?.focus(),0); };
+    const open = () => {
+      setVisible(true);
+      setPanel(true);
+      setTimeout(() => firstBtnRef.current?.focus(), 0);
+    };
     document.addEventListener('arteon:open-consent', open);
     return () => document.removeEventListener('arteon:open-consent', open);
   }, []);
 
   useEffect(() => {
     const saved = readConsent();
-    if (saved) { updateGtag(saved.analytics); setVisible(false); }
-    else { setVisible(true); setPanel(false); setTimeout(()=>firstBtnRef.current?.focus(),0); }
+    if (saved) {
+      updateGtag(saved.analytics);
+      setVisible(false);
+    } else {
+      setVisible(true);
+      setPanel(false);
+      setTimeout(() => firstBtnRef.current?.focus(), 0);
+    }
   }, []);
 
   function saveAndClose(next: { analytics: boolean }) {
-    writeConsent({ v:1, analytics: next.analytics, updatedAt: new Date().toISOString() });
+    writeConsent({ v: 1, analytics: next.analytics, updatedAt: new Date().toISOString() });
     updateGtag(next.analytics);
-    setVisible(false); setPanel(false);
+    setVisible(false);
+    setPanel(false);
   }
 
   if (!visible) return null;
@@ -63,19 +78,16 @@ export default function CookieConsent() {
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-2">
-              <span id="cookie-title" className="h6">Cookies i prywatność</span>
+              <span id="cookie-title" className="h6">
+                Cookies i prywatność
+              </span>
               <p className="text-sm text-black">
-                Używamy wyłącznie niezbędnych technologii oraz <strong>analityki</strong> do ulepszania serwisu.
-                Vercel Analytics działa bez cookies. GA4 włączymy dopiero po Twojej zgodzie.
+                Używamy wyłącznie niezbędnych technologii oraz <strong>analityki</strong> do ulepszania serwisu. Vercel Analytics działa bez cookies. GA4 włączymy dopiero po Twojej zgodzie.
                 <span className="ml-1">
-                  <button
-                    className="text-black underline underline-offset-2"
-                    onClick={() => setPanel(true)}
-                    aria-haspopup="dialog"
-                    aria-controls="cookie-preferences"
-                  >
+                  <button className="text-black underline underline-offset-2" onClick={() => setPanel(true)} aria-haspopup="dialog" aria-controls="cookie-preferences">
                     Ustaw preferencje
-                  </button>{' '}•{' '}
+                  </button>{' '}
+                  •{' '}
                   <a className="text-black underline underline-offset-2" href="/polityka-prywatnosci" rel="noopener">
                     Polityka prywatności
                   </a>
@@ -91,13 +103,19 @@ export default function CookieConsent() {
               >
                 Odrzuć
               </button>
-              <Button onClick={() => setPanel(true)} size="small">Ustawienia</Button>
-              <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="dark">Akceptuj</Button>
+              <Button onClick={() => setPanel(true)} size="small">
+                Ustawienia
+              </Button>
+              <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="dark">
+                Akceptuj
+              </Button>
             </div>
           </div>
         ) : (
           <div id="cookie-preferences" className="space-y-4">
-            <span id="cookie-panel-title" className="h6">Preferencje prywatności</span>
+            <span id="cookie-panel-title" className="h6">
+              Preferencje prywatności
+            </span>
 
             <fieldset className="space-y-2">
               <legend className="sr-only">Kategorie</legend>
@@ -105,9 +123,7 @@ export default function CookieConsent() {
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
                   <span className="text-base font-medium">Niezbędne</span>
-                  <span className="ml-2 text-sm font-medium text-black">
-                    Bez nich serwis nie działa. Nie zbierają danych do marketingu.
-                  </span>
+                  <span className="ml-2 text-sm font-medium text-black">Bez nich serwis nie działa. Nie zbierają danych do marketingu.</span>
                 </div>
                 <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-black">Zawsze aktywne</span>
               </div>
@@ -115,9 +131,7 @@ export default function CookieConsent() {
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
                   <span className="text-base font-medium">Analityka (GA4)</span>
-                  <span className="ml-2 text-sm font-medium text-black">
-                    Statystyki odwiedzin. Włącza Google Analytics 4 po Twojej zgodzie.
-                  </span>
+                  <span className="ml-2 text-sm font-medium text-black">Statystyki odwiedzin. Włącza Google Analytics 4 po Twojej zgodzie.</span>
                 </div>
                 <div className="flex w-[24px] items-center justify-center">
                   <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" aria-label="Włącz analitykę GA4 (informacyjnie)" onChange={() => {}} checked={false} readOnly />
@@ -134,8 +148,12 @@ export default function CookieConsent() {
               </span>
 
               <div className="flex gap-2">
-                <Button onClick={() => saveAndClose({ analytics: false })} size="small">Zapisz i odrzuć</Button>
-                <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="dark">Zapisz i akceptuj</Button>
+                <Button onClick={() => saveAndClose({ analytics: false })} size="small">
+                  Zapisz i odrzuć
+                </Button>
+                <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="dark">
+                  Zapisz i akceptuj
+                </Button>
               </div>
             </div>
           </div>

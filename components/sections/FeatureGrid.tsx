@@ -5,6 +5,7 @@ import FeatureCard from '../ui/FeatureCard';
 export type FeatureItem = {
   title: string;
   points?: string[];
+  icon?: ReactNode;
 };
 
 interface FeatureGridProps {

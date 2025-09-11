@@ -60,10 +60,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   }
 
   const baseClass =
-    `transition w-fit` +
-    ` inline-flex rounded-md items-center font-medium text-base ` +
-    `${sizeClass} ${variantClass} ` +
-    `${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`;
+    `transition w-fit` + ` inline-flex rounded-md items-center font-medium text-base ` + `${sizeClass} ${variantClass} ` + `${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`;
 
   const Arrow = arrow ? (
     <span className="ml-1 flex h-5 w-5 items-center justify-center" aria-hidden="true">
@@ -84,8 +81,8 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
     if (isExternal(link)) {
       return (
         <a href={link} target="_blank" rel="noopener noreferrer" className={baseClass} onClick={onClick}>
-        <span>{children}</span>
-        {Arrow}
+          <span>{children}</span>
+          {Arrow}
         </a>
       );
     }
@@ -100,8 +97,8 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
 
   return (
     <button type="button" onClick={onClick} className={baseClass}>
-        <span>{children}</span>
-        {Arrow}
+      <span>{children}</span>
+      {Arrow}
     </button>
   );
 }

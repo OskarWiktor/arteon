@@ -4,22 +4,22 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
-import { RiArrowDownSLine, RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
+import { RiArrowDownSLine, RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiInstagramLine } from 'react-icons/ri';
 
 const navigationItems = [
-  { href: '/', label: 'Home', exact: true },
-  { href: '/projects', label: 'Projekty' },
-  { href: '/offer', label: 'Oferta' },
+  { href: '/', label: 'Strona Główna', exact: true },
+  { href: '/projects', label: 'Realizacje' },
+  { href: '/services', label: 'Usługi' },
   { href: '/contact', label: 'Kontakt' },
 ];
 
 const offerSubPages = [
-  { href: '/offer/web', icon: <RiCodeSSlashFill aria-hidden="true" />, title: 'Strony WWW' },
-  { href: '/offer/shop', icon: <RiShoppingCartLine aria-hidden="true" />, title: 'Sklepy online' },
-  { href: '/offer/blog', icon: <RiArticleLine aria-hidden="true" />, title: 'Blogi' },
-  { href: '/offer/design', icon: <RiPaletteLine aria-hidden="true" />, title: 'Design' },
-  { href: '/offer/content', icon: <RiFileTextLine aria-hidden="true" />, title: 'Content' },
-  { href: '/offer/marketing', icon: <RiMegaphoneLine aria-hidden="true" />, title: 'Marketing' },
+  { href: '/services/websites', icon: <RiCodeSSlashFill aria-hidden="true" />, title: 'Strony internetowe' },
+  { href: '/services/online-stores', icon: <RiShoppingCartLine aria-hidden="true" />, title: 'Sklepy online' },
+  { href: '/services/online-blogs', icon: <RiArticleLine aria-hidden="true" />, title: 'Blogi' },
+  { href: '/services/design', icon: <RiPaletteLine aria-hidden="true" />, title: 'Grafika' },
+  { href: '/services/content', icon: <RiFileTextLine aria-hidden="true" />, title: 'Content' },
+  { href: '/services/marketing', icon: <RiMegaphoneLine aria-hidden="true" />, title: 'Marketing' },
 ];
 
 export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
@@ -87,7 +87,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       list[Math.max(idx - 1, 0)]?.focus();
-    } else if (e.key === 'Home') {
+    } else if (e.key === 'Strona Główna') {
       e.preventDefault();
       list[0]?.focus();
     } else if (e.key === 'End') {
@@ -124,7 +124,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               {navigationItems.map(({ href, label, exact }) => {
                 const isActivePage = exact ? pathname === href : pathname.startsWith(href);
 
-                if (label === 'Oferta') {
+                if (label === 'Usługi') {
                   return (
                     <motion.li key={label} className="flex flex-col" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                       <button
@@ -203,7 +203,11 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               </div> 
               
               */}
-              <div className="flex gap-2" role="group" aria-label="Social media">
+              <div className="flex w-full justify-between gap-2" role="group">
+                <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
+                  #MadeWithNext.js
+                </a>
+
                 <a
                   href="https://www.instagram.com/arteon.pl"
                   target="_blank"
@@ -212,15 +216,6 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >
                   <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
-                </a>
-                <a
-                  href="https://www.facebook.com/arteonpl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                >
-                  <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-indigo-800" aria-hidden="true" />
                 </a>
               </div>
             </motion.li>

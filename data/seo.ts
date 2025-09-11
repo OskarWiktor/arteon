@@ -58,7 +58,7 @@ const metadataMap: MetadataMap = {
         'identyfikacja wizualna',
         'marketing internetowy',
         'reklamy online',
-        'oferta strony internetowej',
+        'usługi strony internetowej',
         'nowa strona firmowa',
         'branding i design',
         'seo i reklama',
@@ -134,19 +134,19 @@ const metadataMap: MetadataMap = {
 
   projects: {
     pl: {
-      title: 'Projekty | Arteon',
-      description: 'Zobacz wybrane projekty Arteon: strony internetowe, sklepy, blogi, grafiki i kampanie marketingowe. Tworzymy skuteczne i estetyczne rozwiązania dopasowane do potrzeb klientów.',
+      title: 'Realizacje | Arteon',
+      description: 'Zobacz wybrane Realizacje Arteon: strony internetowe, sklepy, blogi, grafiki i kampanie marketingowe. Tworzymy skuteczne i estetyczne rozwiązania dopasowane do potrzeb klientów.',
       keywords: [
-        'projekty Arteon',
+        'Realizacje Arteon',
         'realizacje stron internetowych',
-        'projekty sklepów internetowych',
-        'projekty blogów',
-        'projekty graficzne',
+        'Realizacje sklepów internetowych',
+        'Realizacje blogów',
+        'Realizacje graficzne',
         'portfolio agencji kreatywnej',
         'portfolio web design',
         'branding i identyfikacja wizualna',
         'realizacje kampanii marketingowych',
-        'projekty logo i grafiki',
+        'Realizacje logo i grafiki',
         'tworzenie nowoczesnych stron',
         'inspiracje web design',
         'case studies stron',
@@ -175,10 +175,10 @@ const metadataMap: MetadataMap = {
 
   offer: {
     pl: {
-      title: 'Oferta | Arteon',
+      title: 'usługi | Arteon',
       description: 'Poznaj pełną ofertę Arteon: tworzenie stron i sklepów internetowych, projektowanie graficzne, content marketing, kampanie reklamowe i kompleksowy branding.',
       keywords: [
-        'oferta Arteon',
+        'usługi Arteon',
         'usługi kreatywne',
         'tworzenie stron internetowych',
         'strony internetowe',
@@ -192,7 +192,7 @@ const metadataMap: MetadataMap = {
         'social media marketing',
         'projektowanie logo',
         'tworzenie treści na strony',
-        'kompleksowa oferta marketingowa',
+        'kompleksowa usługi marketingowa',
         'agencja kreatywna',
       ],
     },
@@ -234,7 +234,7 @@ const metadataMap: MetadataMap = {
         'strona firmowa',
         'landing page',
         'projekt strony internetowej',
-        'oferta tworzenia stron',
+        'usługi tworzenia stron',
         'agencja web design',
         'web development',
         'projekt UX UI',
@@ -274,7 +274,7 @@ const metadataMap: MetadataMap = {
   ecommerce: {
     pl: {
       title: 'Sklepy internetowe | Arteon',
-      description: 'Projektujemy funkcjonalne i atrakcyjne sklepy internetowe, które zwiększają sprzedaż i ułatwiają zarządzanie. Arteon – Twój partner w e-commerce.',
+      description: 'Projektujemy funkcjonalne i atrakcyjne sklepy internetowe, które zwiększają sprzedaż i ułatwiają zarządzanie. Arteon - Twój partner w e-commerce.',
       keywords: [
         'sklepy internetowe Arteon',
         'sklepy internetowe',
@@ -295,7 +295,7 @@ const metadataMap: MetadataMap = {
     },
     en: {
       title: 'Online Stores | Arteon',
-      description: 'We design functional and attractive online stores that increase sales and simplify management. Arteon – your partner in e-commerce.',
+      description: 'We design functional and attractive online stores that increase sales and simplify management. Arteon - your partner in e-commerce.',
       keywords: [
         'Arteon online stores',
         'online stores',
@@ -376,7 +376,7 @@ const metadataMap: MetadataMap = {
         'identyfikacja wizualna',
         'grafika na strony internetowe',
         'grafika na social media',
-        'projekty materiałów reklamowych',
+        'Realizacje materiałów reklamowych',
         'drukowane materiały reklamowe',
         'branding',
         'projektowanie wizytówek',
