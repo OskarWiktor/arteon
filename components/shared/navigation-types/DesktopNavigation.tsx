@@ -58,7 +58,12 @@ export default function DesktopNavigation() {
       title: 'Strony internetowe',
       desc: 'WCAG 2.1 AA - Indywidualny projekt - Migracje',
     },
-    { href: '/services/online-stores', icon: <RiShoppingCartLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Sklepy internetowe', desc: 'Płatności - Integracje - Automatyzacje' },
+    {
+      href: '/services/online-stores',
+      icon: <RiShoppingCartLine className="h-6 w-6 text-amber-500" aria-hidden="true" />,
+      title: 'Sklepy internetowe',
+      desc: 'Płatności - Integracje - Automatyzacje',
+    },
     { href: '/services/online-blogs', icon: <RiArticleLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
     { href: '/services/design', icon: <RiPaletteLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Grafika', desc: 'Systemy marek - Loga - Do druku' },
     { href: '/services/content', icon: <RiFileTextLine className="h-6 w-6 text-amber-500" aria-hidden="true" />, title: 'Treści', desc: 'Teksty - Artykuły - Opisy' },

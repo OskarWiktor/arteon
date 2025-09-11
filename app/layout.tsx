@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-
 import { headers } from 'next/headers';
 
 import './globals.css';
-import Footer from '@/components/shared/Footer';
 import Navigation from '@/components/shared/Navigation';
+import Footer from '@/components/shared/Footer';
+import CookieConsent from '@/components/shared/CookieConsent';
 
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import CookieConsent from '@/components/sections/CookieConsent';
+import SkipToContent from '@/components/shared/SkipToContent';
 
 export const metadata: Metadata = {
   title: 'Arteon',
@@ -26,11 +26,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang={locale}>
       <head>
-        <Script id="ga-consent-default" strategy="afterInteractive">
+        <Script id="ga-consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            // domyślnie brak zgody
             gtag('consent', 'default', {
               analytics_storage: 'denied',
               ad_user_data: 'denied',
@@ -51,14 +50,20 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
 
       <body className="font-sans antialiased">
+        <CookieConsent />
+
+        <SkipToContent />
+
         <Navigation />
-        <main>{children}</main>
+
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
+
         <Footer />
 
         <Analytics />
         <SpeedInsights />
-
-        <CookieConsent />
       </body>
     </html>
   );

@@ -68,7 +68,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
       <Wrapper className="relative z-10 pb-8">
         {subtitle && <span className={`text-xl tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
         {title && <h3 className={toneTextClass}>{title}</h3>}
-        {description && <p className={`pt-3 pb-2 max-w-3xl ${toneMutedClass}`}>{description}</p>}
+        {description && <p className={`max-w-3xl pt-3 pb-2 ${toneMutedClass}`}>{description}</p>}
 
         <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
           {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {

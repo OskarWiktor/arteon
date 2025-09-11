@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import Image from 'next/image';
 
-import MobileNavigation from './navigation/MobileNavigation';
-import DesktopNavigation from './navigation/DesktopNavigation';
+import MobileNavigation from './navigation-types/MobileNavigation';
+import DesktopNavigation from './navigation-types/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
 
@@ -76,7 +76,7 @@ export default function Navigation() {
               aria-label="Instagram"
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
-            {/*
+              {/*
               <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" aria-hidden="true" />
             */}
             </a>
