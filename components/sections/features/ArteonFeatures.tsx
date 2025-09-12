@@ -1,7 +1,7 @@
 'use client';
 
 import FeatureGrid, { type FeatureItem } from '../FeatureGrid';
-import { RiArticleLine, RiDeviceLine, RiDatabase2Line, RiBarChart2Line, RiShareForwardLine, RiBookOpenLine, RiMailLine } from 'react-icons/ri';
+import { RiArticleLine, RiDatabase2Line, RiBarChart2Line, RiShareForwardLine, RiBookOpenLine } from 'react-icons/ri';
 import { IoAccessibility } from 'react-icons/io5';
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
