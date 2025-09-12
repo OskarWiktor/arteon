@@ -1,305 +1,201 @@
+// app/pl/grafika/page.tsx
+import Keywords from '@/components/sections/Keywords';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Arteon – Minimalizm. Prestiż. Efekt.',
-  description: 'Przenosimy know-how globalnych marek do firm MŚP. Strony, sklepy, blogi, design, SEO, marketing i treści – wszystko pod Twoje cele.',
-  keywords: [
-    'strony internetowe',
-    'sklepy internetowe',
-    'Next.js',
-    'Webflow',
-    'WordPress',
-    'SEO',
-    'WCAG',
-    'branding',
-    'copywriting',
-    'marketing internetowy',
-    'projektowanie stron',
-    'agencja interaktywna',
-  ],
-  alternates: { canonical: 'https://arteon.pl/' },
+  title: 'Grafika i identyfikacja wizualna - Arteon',
+  description: 'Logo, identyfikacja wizualna, szablony social media, materiały drukowane i grafiki firmowe. Know-how globalnych marek dla małych i średnich firm.',
+  alternates: { canonical: 'https://twojadomena.pl/pl/grafika' },
   openGraph: {
-    title: 'Arteon – Minimalizm. Prestiż. Efekt.',
-    description: 'Know‑how globalnych marek w produktach dla MŚP. WWW • Design • Marketing • Treści.',
-    url: 'https://arteon.pl/',
-    siteName: 'Arteon',
-    locale: 'pl_PL',
+    title: 'Grafika i identyfikacja wizualna - Arteon',
+    description: 'Projektujemy logo, branding, szablony social media, materiały drukowane i grafiki firmowe. Minimalizm. Prestiż. Efekt.',
     type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Arteon – Minimalizm. Prestiż. Efekt.',
-    description: 'Know‑how globalnych marek w produktach dla MŚP. WWW • Design • Marketing • Treści.',
+    url: 'https://twojadomena.pl/pl/grafika',
+    siteName: 'Arteon',
   },
 };
 
-export default function HomePage() {
+export default function GraphicsPage() {
   return (
     <main className="bg-[#F5F5F7] text-[#0A0A0A]">
-      {/* Skip link */}
-      <a href="#content" className="sr-only z-50 rounded-md bg-white px-3 py-2 text-black shadow focus:not-sr-only focus:absolute focus:top-4 focus:left-4">
-        Przejdź do treści
-      </a>
-
-      {/* JSON-LD (Organization + WebSite) */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'Arteon',
-            url: 'https://arteon.pl/',
-            slogan: 'Minimalizm. Prestiż. Efekt.',
-            sameAs: ['https://www.facebook.com/', 'https://www.instagram.com/', 'https://www.linkedin.com/'],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            name: 'Arteon',
-            url: 'https://arteon.pl/',
-            potentialAction: {
-              '@type': 'SearchAction',
-              target: 'https://arteon.pl/szukaj?q={search_term_string}',
-              'query-input': 'required name=search_term_string',
-            },
-          }),
-        }}
-      />
-
       {/* HERO */}
-      <header className="relative">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-28 md:py-32">
-          <p className="text-sm tracking-widest text-neutral-600 uppercase">Know-how globalnych marek</p>
-          <h1 className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl md:text-6xl">Minimalizm. Prestiż. Efekt.</h1>
-          <p className="mt-5 max-w-2xl text-lg text-neutral-700">Przenosimy sprawdzone praktyki wielkich marek do MŚP. Projektujemy strony, sklepy i treści, które rosną z Twoim biznesem.</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <PrimaryLink href="/kontakt" ariaLabel="Umów konsultację">
+      <section className="relative">
+        <div className="mx-auto max-w-7xl px-6 py-20">
+          <p className="text-sm tracking-widest text-neutral-500 uppercase">Design</p>
+          <h1 className="mt-3 text-4xl leading-tight font-semibold md:text-5xl">Grafika, która buduje markę.</h1>
+          <p className="mt-6 max-w-2xl text-lg text-neutral-700">
+            Logo, identyfikacja wizualna, szablony social media, treści do druku i grafiki firmowe. Tworzymy spójny system, który działa w internecie i offline.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link href="/kontakt" className="rounded-2xl bg-black px-5 py-3 text-white outline-offset-4 focus:outline focus:outline-2 focus:outline-black">
               Umów konsultację
-            </PrimaryLink>
-            <SecondaryLink href="/portfolio" ariaLabel="Zobacz portfolio">
+            </Link>
+            <Link href="/portfolio" className="rounded-2xl border border-neutral-300 px-5 py-3 outline-offset-4 focus:outline focus:outline-2 focus:outline-black">
               Zobacz portfolio
-            </SecondaryLink>
+            </Link>
           </div>
         </div>
-      </header>
+      </section>
 
-      {/* VALUE PROPOSITION */}
-      <section id="content" aria-labelledby="dlaczego" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <h2 id="dlaczego" className="text-2xl font-semibold md:text-3xl">
-            Z nami jesteś bezpieczny. My wiemy, co robimy.
+      {/* ZAKRES USŁUG */}
+      <section aria-labelledby="zakres-heading" className="border-t border-neutral-200">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <h2 id="zakres-heading" className="text-2xl font-semibold">
+            Zakres usług
           </h2>
-          <p className="mt-4 max-w-3xl text-neutral-700">
-            Pracowaliśmy dla globalnych marek. Te same metody wdrażamy w Twojej firmie. Dopasowujemy technologię, zakres i budżet do Twoich celów. Zawsze dowozimy efekt.
-          </p>
-          <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
             {[
-              { title: 'Transparentny proces', desc: 'Etapy, terminy i raporty – zawsze wiesz, gdzie jesteśmy.' },
-              { title: 'Elastyczna technologia', desc: 'WordPress, Webflow, Next.js – dobieramy do celu i skali.' },
-              { title: 'SEO i WCAG w cenie', desc: 'Widoczność i dostępność są standardem, nie dodatkiem.' },
-              { title: 'Treści, które sprzedają', desc: 'Redakcja pod SEO i sprzedaż – bez dopłat.' },
+              {
+                h: 'Logo i identyfikacja wizualna',
+                p: 'Projekty logo, palety kolorów i typografie. Wszystko, aby Twoja marka była spójna i rozpoznawalna.',
+                list: ['Logo i sygnet', 'Pełne brandingi', 'Pliki wektorowe Adobe CC'],
+              },
+              {
+                h: 'Szablony social media',
+                p: 'Gotowe zestawy postów, stories i rolek dopasowane do psychologii odbiorców i Twojej branży.',
+                list: ['Posty i karuzele', 'Stories i rolki', 'Pakiety startowe'],
+              },
+              {
+                h: 'Materiały drukowane',
+                p: 'Wizytówki, ulotki, katalogi, banery, książki. Profesjonalny skład i przygotowanie do druku.',
+                list: ['Wizytówki i ulotki', 'Foldery i katalogi', 'Publikacje i książki'],
+              },
+              {
+                h: 'Grafiki firmowe',
+                p: 'Projekty graficzne na ubrania i firmowe materiały. Gotowe do druku i wdrożenia.',
+                list: ['Firmowe ubrania', 'Banery i roll-upy', 'Teczki i papier firmowy'],
+              },
+              {
+                h: 'Obróbka i montaż',
+                p: 'Obróbka zdjęć pod www oraz montaż materiałów video na TikToka i Instagrama.',
+                list: ['Retusz zdjęć', 'Montaż rolek', 'Content + treść w pakiecie'],
+              },
+            ].map((card) => (
+              <article key={card.h} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5" aria-label={card.h}>
+                <h3 className="text-lg font-semibold">{card.h}</h3>
+                <p className="mt-2 text-neutral-700">{card.p}</p>
+                <ul className="mt-4 list-disc pl-5 text-neutral-700 marker:text-neutral-800">
+                  {card.list.map((li) => (
+                    <li key={li}>{li}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CENNIK - przykładowe pakiety */}
+      <section aria-labelledby="cennik-heading" className="border-t border-neutral-200">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <h2 id="cennik-heading" className="text-2xl font-semibold">
+            Przykładowe pakiety
+          </h2>
+
+          <div role="list" className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {[
+              {
+                name: 'Logo Start',
+                price: '1 200 - 2 000 zł',
+                desc: 'Podstawowe logo + pliki wektorowe.',
+                feats: ['2 kierunki', 'Pliki źródłowe', 'Mini-instrukcja użycia'],
+              },
+              {
+                name: 'Identyfikacja Core',
+                price: '2 000 - 3 200 zł',
+                desc: 'Logo, kolorystyka, typografia. Spójność marki od podstaw.',
+                feats: ['Logo i sygnet', 'Paleta kolorów', 'Typografia marki'],
+              },
+              {
+                name: 'Identyfikacja Premium',
+                price: '4 500 - 6 500 zł',
+                desc: 'Pełna identyfikacja wizualna + rozszerzone materiały firmowe.',
+                feats: ['Księga znaku', 'Materiały drukowane', 'Pakiet social media'],
+              },
+            ].map((p) => (
+              <div key={p.name} role="listitem" className="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
+                <div className="text-sm tracking-wider text-neutral-500 uppercase">{p.name}</div>
+                <div className="mt-2 text-2xl font-semibold">{p.price}</div>
+                <p className="mt-3 text-neutral-700">{p.desc}</p>
+                <ul className="mt-4 list-disc pl-5 text-neutral-700 marker:text-neutral-800">
+                  {p.feats.map((f) => (
+                    <li key={f}>{f}</li>
+                  ))}
+                </ul>
+                <div className="mt-6">
+                  <Link href="/kontakt" className="inline-block rounded-2xl bg-black px-4 py-2 text-white outline-offset-4 focus:outline focus:outline-2 focus:outline-black">
+                    Wyceń projekt
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-6 text-sm text-neutral-600">Ceny orientacyjne. Finalna wycena zależy od zakresu i liczby wariantów.</p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section aria-labelledby="faq-heading" className="border-t border-neutral-200">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <h2 id="faq-heading" className="text-2xl font-semibold">
+            FAQ
+          </h2>
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {[
+              {
+                q: 'Czy dostanę pliki źródłowe?',
+                a: 'Tak. Otrzymasz pliki wektorowe i instrukcję użycia.',
+              },
+              {
+                q: 'Czy robicie projekty pod social media?',
+                a: 'Tak. Przygotowujemy szablony, posty, stories i rolki wraz z treścią.',
+              },
+              {
+                q: 'Czy mogę zamówić tylko wizytówki?',
+                a: 'Tak. Projektujemy materiały firmowe również jako osobne zlecenia.',
+              },
+              {
+                q: 'Czy zajmujecie się też ubraniami?',
+                a: 'Tak. Tworzymy projekty graficzne na ubrania firmowe, gotowe do druku.',
+              },
             ].map((item) => (
-              <li key={item.title} className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="mt-2 text-sm text-neutral-700">{item.desc}</p>
-              </li>
+              <details key={item.q} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
+                <summary className="cursor-pointer text-lg font-medium">{item.q}</summary>
+                <p className="mt-3 text-neutral-700">{item.a}</p>
+              </details>
             ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* PILLARS */}
-      <section aria-labelledby="filary" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <h2 id="filary" className="text-2xl font-semibold md:text-3xl">
-            Cztery filary Arteon
-          </h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <PillarCard title="WWW" desc="Strony, sklepy, blogi, aplikacje Next.js." href="/uslugi/www" />
-            <PillarCard title="Design" desc="Logo, identyfikacja, materiały do druku i social." href="/uslugi/design" />
-            <PillarCard title="Marketing" desc="SEO, reklamy, automatyzacje i strategie." href="/uslugi/marketing" />
-            <PillarCard title="Treści" desc="Storytelling, artykuły, opisy produktów, oferty." href="/uslugi/tresci" />
-          </div>
-          <div className="mt-8">
-            <SecondaryLink href="/oferta" ariaLabel="Poznaj naszą ofertę">
-              Poznaj ofertę
-            </SecondaryLink>
           </div>
         </div>
       </section>
 
-      {/* PRICING SUMMARY (SEO + konwersja) */}
-      <section aria-labelledby="ceny" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <h2 id="ceny" className="text-2xl font-semibold md:text-3xl">
-            Przykładowe zakresy i ceny
-          </h2>
-          <div className="mt-8 grid gap-6 lg:grid-cols-3">
-            <PriceCard title="Strony www" price="od 1 900 zł" bullets={['Redakcja treści i SEO w cenie', 'WCAG 2.1 AA – deklaracja dostępności', 'WordPress / Webflow / Next.js']} href="/cennik#www" />
-            <PriceCard title="Sklepy online" price="od 5 000 zł" bullets={['Integracje płatności i dostaw', 'SEO techniczne + treściowe', 'CMS do edycji produktów']} href="/cennik#sklepy" />
-            <PriceCard
-              title="Treści i marketing"
-              price="od 300 zł"
-              bullets={['Storytelling i oferty sprzedażowe', 'Audyty SEO i kampanie reklamowe', 'Social media i automatyzacje']}
-              href="/cennik#tresci-marketing"
-            />
-          </div>
-          <div className="mt-8">
-            <PrimaryLink href="/cennik" ariaLabel="Sprawdź pełen cennik">
-              Sprawdź pełen cennik
-            </PrimaryLink>
-          </div>
-        </div>
-      </section>
+      {/* SŁOWA KLUCZOWE */}
+      <Keywords
+        keys="Projektowanie logo, identyfikacja wizualna, branding, brand book, palety kolorów, typografia marki, szablony social media,
+        grafiki Instagram i Facebook, stories i karuzele, rolki video, montaż materiałów video, obróbka zdjęć pod www,
+        materiały drukowane: wizytówki, ulotki, katalogi, banery, publikacje i książki, grafiki firmowe na ubrania,
+        szablony prezentacji, roll-up, papier firmowy, projekty w Figmie, pliki wektorowe Adobe CC, projekty graficzne dla e-commerce"
+      />
 
-      {/* PORTFOLIO */}
-      <section aria-labelledby="portfolio" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <h2 id="portfolio" className="text-2xl font-semibold md:text-3xl">
-            Efekt zamiast obietnic
-          </h2>
-          <p className="mt-4 max-w-3xl text-neutral-700">Zobacz, jak podnosimy sprzedaż i wizerunek w różnych branżach. Każdy projekt jest unikalny i oparty o archetyp marki.</p>
-          <div className="mt-8">
-            <SecondaryLink href="/portfolio" ariaLabel="Zobacz realizacje">
-              Zobacz realizacje
-            </SecondaryLink>
+      {/* CTA */}
+      <section aria-label="Wezwanie do działania" className="border-t border-neutral-200">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="rounded-3xl bg-black px-8 py-12 text-white">
+            <h2 className="text-2xl font-semibold">Twoja marka zasługuje na spójny design.</h2>
+            <p className="mt-3 max-w-2xl text-neutral-200">Od logo po wizytówki i social media. Zbuduj z nami pełną identyfikację.</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/kontakt" className="rounded-2xl bg-white px-5 py-3 text-black outline-offset-4 focus:outline focus:outline-2 focus:outline-white">
+                Umów konsultację
+              </Link>
+              <Link href="/oferta" className="rounded-2xl border border-white/30 px-5 py-3 outline-offset-4 focus:outline focus:outline-2 focus:outline-white">
+                Zobacz ofertę
+              </Link>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* GUARANTEES */}
-      <section aria-labelledby="gwarancje" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <h2 id="gwarancje" className="text-2xl font-semibold md:text-3xl">
-            Standard Arteon w cenie
-          </h2>
-          <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              'Redakcja treści pod SEO i sprzedaż',
-              'Audyty WCAG 2.1 AA + Deklaracja Dostępności',
-              'Polityka prywatności i regulaminy – wsparcie',
-              'Dedykowane szkolenie PDF z obsługi',
-              'Miesiąc wsparcia po wdrożeniu',
-              'Transparentna komunikacja i raporty',
-            ].map((point) => (
-              <li key={point} className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-                <span className="inline-block font-medium">{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* ABOUT */}
-      <section aria-labelledby="onas" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <h2 id="onas" className="text-2xl font-semibold md:text-3xl">
-            Arteon – architekt doświadczeń
-          </h2>
-          <p className="mt-4 max-w-3xl text-neutral-700">
-            Łączymy technologię, emocje i wartości. Projektujemy minimalistycznie, z perfekcją detalu. Każda marka jest unikalna i autentyczna. Tworzymy realny efekt, nie gadżety.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section aria-labelledby="start" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <h2 id="start" className="text-2xl font-semibold md:text-3xl">
-            Zacznijmy od rozmowy
-          </h2>
-          <p className="mt-4 max-w-2xl text-neutral-700">Każdy projekt wyceniamy indywidualnie. Niezależnie od wymagań – znajdziemy najlepszą drogę do efektu.</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <PrimaryLink href="/kontakt" ariaLabel="Umów konsultację">
-              Umów konsultację
-            </PrimaryLink>
-            <SecondaryLink href="/oferta" ariaLabel="Poznaj naszą ofertę">
-              Poznaj ofertę
-            </SecondaryLink>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER NOTE (SEO frazy naturalnie) */}
     </main>
-  );
-}
-
-/* --- UI helpers --- */
-function PrimaryLink({ href, ariaLabel, children }: { href: string; ariaLabel: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      aria-label={ariaLabel}
-      className="inline-flex items-center justify-center rounded-2xl bg-black px-5 py-3 text-white outline-offset-2 transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
-    >
-      {children}
-    </Link>
-  );
-}
-
-function SecondaryLink({ href, ariaLabel, children }: { href: string; ariaLabel: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      aria-label={ariaLabel}
-      className="inline-flex items-center justify-center rounded-2xl border border-neutral-300 bg-white px-5 py-3 text-black outline-offset-2 transition hover:bg-neutral-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
-    >
-      {children}
-    </Link>
-  );
-}
-
-function PillarCard({ title, desc, href }: { title: string; desc: string; href: string }) {
-  return (
-    <article className="flex h-full flex-col justify-between rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-      <div>
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="mt-2 text-sm text-neutral-700">{desc}</p>
-      </div>
-      <div className="mt-6">
-        <Link
-          href={href}
-          className="text-sm font-medium underline underline-offset-4 outline-offset-2 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
-          aria-label={`Przejdź do: ${title}`}
-        >
-          Sprawdź sekcję
-        </Link>
-      </div>
-    </article>
-  );
-}
-
-function PriceCard({ title, price, bullets, href }: { title: string; price: string; bullets: string[]; href: string }) {
-  return (
-    <article className="flex h-full flex-col justify-between rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-      <div>
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="mt-1 text-2xl font-semibold tracking-tight">{price}</p>
-        <ul className="mt-4 list-disc pl-5 text-sm text-neutral-700">
-          {bullets.map((b) => (
-            <li key={b} className="marker:text-neutral-500">
-              {b}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="mt-6">
-        <Link
-          href={href}
-          className="text-sm font-medium underline underline-offset-4 outline-offset-2 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
-          aria-label={`Zobacz szczegóły: ${title}`}
-        >
-          Zobacz szczegóły
-        </Link>
-      </div>
-    </article>
   );
 }

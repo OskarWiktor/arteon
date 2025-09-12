@@ -71,7 +71,7 @@ export default function SectionSteps({
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-4';
-  } else if (count === 6) {
+  } else if (count === 6 || count === 9) {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-3';

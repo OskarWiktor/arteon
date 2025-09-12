@@ -1,15 +1,16 @@
-import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import PricingSteps from '@/components/sections/steps/FeesSteps';
-import TechSteps from '@/components/sections/steps/TechSteps';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import DesignFeatures from '@/components/sections/features/DesignFeatures';
 import FaqDesign from '@/components/sections/faqs/FaqDesign';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import Keywords from '@/components/sections/Keywords';
+import DesignSteps from '@/components/sections/steps/DesignSteps';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
 
 export async function generateMetadata() {
   return generatePageMetadata('design');
@@ -19,23 +20,28 @@ export default function OfferDesignPage() {
   return (
     <>
       <HeroBanner
-        title="Strony internetowe"
-        description="Standard globalnych marek dla Twojego biznesu"
-        buttonAccent="Wyceń projekt"
+        title="Grafika i branding"
+        description={
+          <>
+            Logo, identyfikacja, social media, materiały drukowane.
+            <strong>Spójny design</strong>, który działa w sieci i offline.
+          </>
+        }
+        buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/contact"
-        buttonSecond="Sprawdź realizacje"
+        buttonSecond="Portfolio"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg4.jpg"
         overlay="black"
       />
 
       <BenefitBelt
         items={[
-          { icon: <RiShieldCheckLine />, label: 'Zgodność z prawem' },
-          { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiCodeSSlashFill />, label: 'Sprawdzone technologie' },
+          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
+          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
           { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
+          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
         ]}
       />
 
@@ -43,13 +49,13 @@ export default function OfferDesignPage() {
 
       <DesignFeatures />
 
-      <Gap />
+      <Gap variant="line" />
 
-      <TechSteps />
+      <DesignSteps />
 
       <Gap size="sm" />
 
-      <Gap />
+      <Gap variant="line" />
 
       <PricingSteps />
 
@@ -61,11 +67,21 @@ export default function OfferDesignPage() {
 
       <FaqDesign />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ServicesSteps />
 
-      <Gap />
+      <Gap size="sm" />
+
+      <Keywords
+        keys="Projektowanie logo, identyfikacja wizualna, branding, rebranding, brand book, księga znaku, system identyfikacji,
+  projekty graficzne dla firm, palety kolorów, typografia marki, szablony social media, grafiki Instagram i Facebook,
+  karuzele i stories, rolki video, montaż materiałów wideo, obróbka zdjęć pod www, materiały drukowane: wizytówki, ulotki, katalogi, banery,
+  projekty firmowe na ubrania, szablony prezentacji, infografiki, publikacje i książki, projekty etykiet i opakowań,
+  grafiki wektorowe Adobe CC, mockupy, spójny design do stron www i sklepów, projekty w Figmie, design systemy dla marek,
+  branding psychologiczny, spójność wizualna online i offline, grafika dla e-commerce, content do social media wraz z treścią,
+  projekty graficzne szyte na miarę, minimalizm i prestiż w designie"
+      />
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"

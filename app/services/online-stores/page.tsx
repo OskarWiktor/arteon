@@ -1,4 +1,3 @@
-import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
@@ -12,6 +11,8 @@ import ShopFeatures from '@/components/sections/features/ShopFeatures';
 import ShopPrices from '@/components/sections/prices/ShopPrices';
 import FaqShop from '@/components/sections/faqs/FaqShop';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import Keywords from '@/components/sections/Keywords';
+import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill } from 'react-icons/ri';
 
 export async function generateMetadata() {
   return generatePageMetadata('ecommerce');
@@ -22,22 +23,27 @@ export default function OfferWebPage() {
     <>
       <HeroBanner
         title="Sklepy internetowe"
-        description="Rozwiązania dużych marek dostosowane do Twojego biznesu - szybkie, intuicyjne i gotowe na rozwój"
-        buttonAccent="Wyceń projekt"
+        description={
+          <>
+            Projektujemy sklepy online, które sprzedają szybciej i skuteczniej. 
+            <strong>Płatności, dostawy i marketing</strong> w jednym systemie.
+          </>
+        }
+        buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/contact"
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg2.jpg"
         overlay="black"
       />
 
       <BenefitBelt
         items={[
-          { icon: <RiShieldCheckLine />, label: 'Zgodność z prawem' },
           { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiCodeSSlashFill />, label: 'Sprawdzone technologie' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
+          { icon: <RiShieldCheckLine />, label: 'Bezpieczieństwo' },
+          { icon: <RiBarChart2Fill />, label: 'Stała kontrola wyników' },
+          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
         ]}
       />
 
@@ -69,11 +75,13 @@ export default function OfferWebPage() {
 
       <FaqShop />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ServicesSteps />
 
-      <Gap />
+      <Gap size="sm" />
+
+      <Keywords keys="Sklepy internetowe, projektowanie e-commerce, WooCommerce, Webflow Ecommerce, Next.js sklepy custom, projekt sklepu internetowego, integracje płatności, integracje dostaw, koszyk i checkout, SEO sklepów online, opisy produktów SEO, migracja sklepów WordPress, sklep do 50 produktów, sklep średni do 300 produktów, sklep premium, e-commerce dla firm, dodawanie produktów CSV, obsługa e-commerce, sklepy internetowe Kraków, sklepy online Polska" />
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"

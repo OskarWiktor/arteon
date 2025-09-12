@@ -29,7 +29,7 @@ const items: FeatureItem[] = [
     icon: <RiShareForwardLine className="h-6 w-6 text-amber-500" />,
   },
   {
-    title: 'Opisy produktów przyjazne SEO i użytkownikowi',
+    title: 'Opisy produktów wspierające SEO',
     icon: <RiPencilRuler2Line className="h-6 w-6 text-amber-500" />,
   },
   {

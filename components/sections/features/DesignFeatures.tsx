@@ -33,11 +33,11 @@ const items: FeatureItem[] = [
     icon: <RiShoppingBag3Line className="h-6 w-6 text-amber-500" />,
   },
   {
-    title: 'Nowoczesne makiety UX/UI w Figmie',
+    title: 'Nowoczesne makiety stron w Figmie',
     icon: <RiPaletteLine className="h-6 w-6 text-amber-500" />,
   },
 ];
 
 export default function DesignFeatures() {
-  return <FeatureGrid title="Co dostajesz" subtitle="Spójna identyfikacja wizualna dla Twojej marki" items={items} />;
+  return <FeatureGrid title="Spójna identyfikacja wizualna dla Twojej marki" subtitle="Co dostajesz" items={items} />;
 }

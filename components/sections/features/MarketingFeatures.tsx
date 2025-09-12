@@ -1,5 +1,5 @@
 import FeatureGrid, { FeatureItem } from '../FeatureGrid';
-import { RiBarChart2Line, RiAdvertisementLine, RiSearchEyeLine, RiTeamLine, RiLineChartLine, RiRocketLine, RiLightbulbLine } from 'react-icons/ri';
+import { RiBarChart2Line, RiAdvertisementLine, RiSearchEyeLine, RiLineChartLine, RiRocketLine, RiLightbulbLine } from 'react-icons/ri';
 
 import { IoAnalytics } from 'react-icons/io5';
 
@@ -17,16 +17,12 @@ const items: FeatureItem[] = [
     icon: <RiSearchEyeLine className="h-6 w-6 text-amber-500" />,
   },
   {
-    title: 'Analiza konkurencji i insighty rynkowe',
+    title: 'Analiza konkurencji',
     icon: <IoAnalytics className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Automatyzacja prowadzenia social mediów',
     icon: <RiRocketLine className="h-6 w-6 text-amber-500" />,
-  },
-  {
-    title: 'Strategia marki oparta na archetypach',
-    icon: <RiTeamLine className="h-6 w-6 text-amber-500" />,
   },
   {
     title: 'Branding budujący emocje i transformację klienta',

@@ -10,7 +10,7 @@ const items: FeatureItem[] = [
     icon: <RiPencilRuler2Line className="h-6 w-6 text-amber-500" />,
   },
   {
-    title: 'Redakcja treści sprzedażowych i SEO',
+    title: 'Redakcja treści pod sprzedaż i SEO',
     icon: <RiArticleLine className="h-6 w-6 text-amber-500" />,
   },
   {
@@ -18,7 +18,7 @@ const items: FeatureItem[] = [
     icon: <IoAccessibility className="h-5 w-5 text-amber-500" />,
   },
   {
-    title: 'Regulaminy, polityki i pełne wsparcie prawne',
+    title: 'Wsparcie prawne: polityki i regulaminy',
     icon: <GoLaw className="h-6 w-6 text-amber-500" />,
   },
   {

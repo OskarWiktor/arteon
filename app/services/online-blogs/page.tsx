@@ -1,4 +1,3 @@
-import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
@@ -11,6 +10,9 @@ import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import BlogFeatures from '@/components/sections/features/BlogFeatures';
 import FaqBlog from '@/components/sections/faqs/FaqBlog';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import Keywords from '@/components/sections/Keywords';
+import BlogPrices from '@/components/sections/prices/BlogPrices';
+import { RiArticleLine, RiSearchLine, RiShieldCheckLine, RiCustomerService2Line } from 'react-icons/ri';
 
 export async function generateMetadata() {
   return generatePageMetadata('blog');
@@ -20,23 +22,27 @@ export default function OfferBlogPage() {
   return (
     <>
       <HeroBanner
-        title="Strony internetowe"
-        description="Standard globalnych marek dla Twojego biznesu"
-        buttonAccent="Wyceń projekt"
+        title="Blogi internetowe"
+        description={
+          <>
+            Tworzymy blogi, które budują <strong>autorytet marki</strong> i wspierają SEO. Strategia treści i technologia - w jednym miejscu.
+          </>
+        }
+        buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/contact"
-        buttonSecond="Sprawdź realizacje"
+        buttonSecond="Nasze realizacje"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg3.jpg"
         overlay="black"
       />
 
       <BenefitBelt
         items={[
-          { icon: <RiShieldCheckLine />, label: 'Zgodność z prawem' },
-          { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiCodeSSlashFill />, label: 'Sprawdzone technologie' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
+          { icon: <RiArticleLine />, label: 'Proste zarządzanie' },
+          { icon: <RiSearchLine />, label: 'Optymalizacja' },
+          { icon: <RiShieldCheckLine />, label: 'Dostępność' },
+          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
         ]}
       />
 
@@ -54,6 +60,8 @@ export default function OfferBlogPage() {
 
       <Gap size="sm" />
 
+      <BlogPrices />
+
       <Gap />
 
       <PricingSteps />
@@ -66,11 +74,13 @@ export default function OfferBlogPage() {
 
       <FaqBlog />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ServicesSteps />
 
-      <Gap />
+      <Gap size="sm" />
+
+      <Keywords keys="Blogi internetowe, blog firmowy, blog ekspercki, blog premium Webflow, blog custom Next.js, blog WordPress, artykuły blogowe SEO, integracja newslettera, platformy contentowe, CMS dla bloga, blog responsywny, blog zgodny z WCAG 2.1 AA, redakcja treści blogowych, pakiety artykułów, blog z AI, blogi firmowe Kraków, blogi dla e-commerce, tworzenie treści na bloga, publikacje blogowe, optymalizacja SEO bloga" />
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"

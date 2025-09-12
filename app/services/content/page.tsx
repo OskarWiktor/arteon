@@ -1,16 +1,16 @@
-import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import PricingSteps from '@/components/sections/steps/FeesSteps';
-import TechSteps from '@/components/sections/steps/TechSteps';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import FaqContent from '@/components/sections/faqs/FaqContent';
 import ContentFeatures from '@/components/sections/features/ContentFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import Calculator from '@/components/sections/Calculator';
+import Keywords from '@/components/sections/Keywords';
+import ContentSteps from '@/components/sections/steps/ContentSteps';
+import { RiBarChart2Fill, RiBookOpenLine, RiCustomerService2Line, RiBrushLine } from 'react-icons/ri';
 
 export async function generateMetadata() {
   return generatePageMetadata('content');
@@ -20,23 +20,25 @@ export default function OfferContentPage() {
   return (
     <>
       <HeroBanner
-        title="Strony internetowe"
-        description="Standard globalnych marek dla Twojego biznesu"
-        buttonAccent="Wyceń projekt"
+        title="Tworzenie treści"
+        description={
+          <>
+            Teksty, które <strong>pozycjonują i sprzedają</strong>. Od stron i blogów, po e-commerce i social media.
+          </>
+        }
+        buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/contact"
-        buttonSecond="Sprawdź realizacje"
-        buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg6.jpg"
         overlay="black"
       />
 
       <BenefitBelt
         items={[
-          { icon: <RiShieldCheckLine />, label: 'Zgodność z prawem' },
-          { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiCodeSSlashFill />, label: 'Sprawdzone technologie' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
+          { icon: <RiBarChart2Fill />, label: 'Treści pod sprzedaż' },
+          { icon: <RiBookOpenLine />, label: 'Spójny język marki' },
+          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
+          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
         ]}
       />
 
@@ -46,7 +48,7 @@ export default function OfferContentPage() {
 
       <Gap />
 
-      <TechSteps />
+      <ContentSteps />
 
       <Gap size="sm" />
 
@@ -58,17 +60,17 @@ export default function OfferContentPage() {
 
       <WorkSteps />
 
-      <Calculator />
-
       <Gap size="sm" />
 
       <FaqContent />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ServicesSteps />
 
-      <Gap />
+      <Gap size="sm" />
+
+      <Keywords keys="Treści marketingowe, copywriting SEO, artykuły eksperckie, treści na strony www, treści sprzedażowe, storytelling marki, redakcja treści pod konwersję, scenariusze do rolek, opisy produktów e-commerce, opisy kategorii SEO, treści do social media, oferty sprzedażowe PDF, case studies, prezentacje sprzedażowe, blog firmowy, język marki, CTA psychologiczne, korekta treści, treści wizerunkowe, pakiety artykułów, treści dopasowane do archetypu" />
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"

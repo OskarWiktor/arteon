@@ -1,16 +1,16 @@
-import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import PricingSteps from '@/components/sections/steps/FeesSteps';
-import TechSteps from '@/components/sections/steps/TechSteps';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import MarketingFeatures from '@/components/sections/features/MarketingFeatures';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import FaqMarketing from '@/components/sections/faqs/FaqMarketing';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import Keywords from '@/components/sections/Keywords';
+import MarketingSteps from '@/components/sections/steps/MarketingSteps';
+import { RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine } from 'react-icons/ri';
 
 export async function generateMetadata() {
   return generatePageMetadata('marketing');
@@ -20,23 +20,26 @@ export default function OfferMarketingPage() {
   return (
     <>
       <HeroBanner
-        title="Strony internetowe"
-        description="Standard globalnych marek dla Twojego biznesu"
-        buttonAccent="Wyceń projekt"
+        title="Marketing"
+        description={
+          <>
+            SEO, reklamy, social media.
+            <strong>Strategie, które dowożą efekt</strong> i zwiększają sprzedaż.
+          </>
+        }
+        buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/contact"
-        buttonSecond="Sprawdź realizacje"
-        buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg5.jpg"
         overlay="black"
       />
 
       <BenefitBelt
         items={[
-          { icon: <RiShieldCheckLine />, label: 'Zgodność z prawem' },
-          { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiCodeSSlashFill />, label: 'Sprawdzone technologie' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
+          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
+          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
+          { icon: <RiBarChart2Fill />, label: 'Raporty i kontrola wyników' },
+          { icon: <RiShieldCheckLine />, label: 'Bezpieczeństwo danych' },
         ]}
       />
 
@@ -46,13 +49,7 @@ export default function OfferMarketingPage() {
 
       <Gap />
 
-      <ProjectsOverview title="Wyróżnione realizacje stron" category="strona" subtitle="Portfolio" />
-
-      <Gap />
-
-      <TechSteps />
-
-      <Gap size="sm" />
+      <MarketingSteps />
 
       <Gap />
 
@@ -66,11 +63,13 @@ export default function OfferMarketingPage() {
 
       <FaqMarketing />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ServicesSteps />
 
-      <Gap />
+      <Gap size="sm" />
+
+      <Keywords keys="Marketing internetowy, SEO techniczne, SEO on-page, audyt SEO, reklamy Google Ads, reklamy Facebook Ads, reklamy Instagram, kampanie reklamowe, social media marketing, prowadzenie Instagrama, prowadzenie Facebooka, strategie marketingowe, analiza konkurencji, automatyzacja social media, branding emocjonalny, archetyp marki, oferta sprzedażowa Apple Why How What, psychologia marki, marketing online dla firm, strategie komunikacji" />
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"
