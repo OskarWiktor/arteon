@@ -24,7 +24,6 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
   const [currentSlide, setCurrentSlide] = useState(0);
   const [maxSlides, setMaxSlides] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
-  const [gapPx, setGapPx] = useState(16);
   const [isScrollable, setIsScrollable] = useState(false);
 
   const sourceProjects = useMemo<Project[]>(() => {
@@ -54,7 +53,6 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
     const ro = new ResizeObserver(() => {
       const cs = getComputedStyle(container);
       const gap = parseFloat(cs.columnGap || '16') || 16;
-      setGapPx(gap);
 
       const w = card.getBoundingClientRect().width;
       const cardWithGap = w + gap;
