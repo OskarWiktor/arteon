@@ -8,9 +8,15 @@ const items = [
   {
     icon: <RiCodeSSlashFill className="h-8 w-8" />,
     title: 'Strony internetowe',
+    subtitle: 'od 1 900 zł',
     description: (
       <div className="flex h-full flex-col">
-        <p className="mb-3">Nowoczesne, czytelne i dostosowane do każdego urządzenia. W cenie treści, SEO i szkolenie z obsługi.</p>
+        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+          <li>Nowoczesny design + SEO w cenie</li>
+          <li>Pełna zgodność z przepisami</li>
+          <li>Bezpłatne szkolenie PDF z obsługi strony</li>
+          <li>Dopasowanie technologii do Twoich celów</li>
+        </ul>
         <div className="mt-auto">
           <Button arrow link="/services/www">
             Sprawdź ofertę
@@ -22,9 +28,15 @@ const items = [
   {
     icon: <RiShoppingCartLine className="h-8 w-8" />,
     title: 'Sklepy internetowe',
+    subtitle: 'od 5 000 zł',
     description: (
       <div className="flex h-full flex-col">
-        <p className="mb-3">Sklep gotowy do sprzedaży - płatności online, łatwa obsługa produktów i wsparcie w rozwoju biznesu.</p>
+        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+          <li>Płatności online i szybki checkout</li>
+          <li>Łatwa edycja produktów</li>
+          <li>Pełna zgodność z przepisami</li>
+          <li>SEO i marketing w standardzie</li>
+        </ul>
         <div className="mt-auto">
           <Button arrow link="/services/shops">
             Sprawdź ofertę
@@ -36,9 +48,15 @@ const items = [
   {
     icon: <RiArticleLine className="h-8 w-8" />,
     title: 'Blogi',
+    subtitle: 'od 2 900 zł',
     description: (
       <div className="flex h-full flex-col">
-        <p className="mb-3">Blog, który buduje widoczność w Google i pozycję eksperta. Proste zarządzanie i gotowe pomysły na treści.</p>
+        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+          <li>Redakcja treści i SEO w cenie</li>
+          <li>CMS do prostego zarządzania artykułami</li>
+          <li>Pełna zgodność z przepisami</li>
+          <li>Strategia treści zwiększająca widoczność</li>
+        </ul>
         <div className="mt-auto">
           <Button arrow link="/services/blog-seo">
             Sprawdź ofertę
@@ -50,9 +68,15 @@ const items = [
   {
     icon: <RiPaletteLine className="h-8 w-8" />,
     title: 'Grafika',
+    subtitle: 'od 180 zł',
     description: (
       <div className="flex h-full flex-col">
-        <p className="mb-3">Logo, identyfikacja wizualna, materiały do internetu i do druku. Spójny wygląd Twojej marki w każdym kanale.</p>
+        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+          <li>Logo i pełna identyfikacja wizualna</li>
+          <li>Materiały do druku i online</li>
+          <li>Szablony pod social media</li>
+          <li>Pliki wektorowe i instrukcje w cenie</li>
+        </ul>
         <div className="mt-auto">
           <Button arrow link="/services/design">
             Sprawdź ofertę
@@ -64,9 +88,15 @@ const items = [
   {
     icon: <RiFileTextLine className="h-8 w-8" />,
     title: 'Tworzenie treści',
+    subtitle: 'od 300 zł',
     description: (
       <div className="flex h-full flex-col">
-        <p className="mb-3">Artykuły, opisy, treści do social mediów. Wszystko pisane prostym językiem, by Twoja marka była bliżej ludzi.</p>
+        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+          <li>Artykuły eksperckie i SEO</li>
+          <li>Treści do stron i e-commerce</li>
+          <li>Posty i scenariusze do social mediów</li>
+          <li>Język marki dopasowany do odbiorców</li>
+        </ul>
         <div className="mt-auto">
           <Button arrow link="/services/content">
             Sprawdź ofertę
@@ -78,9 +108,15 @@ const items = [
   {
     icon: <RiMegaphoneLine className="h-8 w-8" />,
     title: 'Marketing',
+    subtitle: 'od 700 zł',
     description: (
       <div className="flex h-full flex-col">
-        <p className="mb-3">Pozycjonowanie, reklamy i prowadzenie social mediów. Budujemy widoczność i przyciągamy klientów do Twojej firmy.</p>
+        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+          <li>Kompleksowe SEO i audyty</li>
+          <li>Reklamy FB / IG / Google</li>
+          <li>Strategie i archetypy marki</li>
+          <li>Automatyzacje i raporty efektów</li>
+        </ul>
         <div className="mt-auto">
           <Button arrow link="/services/marketing">
             Sprawdź ofertę
@@ -92,5 +128,15 @@ const items = [
 ];
 
 export default function ServicesSteps() {
-  return <SectionSteps items={items} title="Poznaj nasze usługi" subtitle="Partner" description="Sprawdź szczegóły naszej oferty lub umów sie na bezpłatne konsultacje" overlay="none" />;
+  return (
+    <SectionSteps
+      items={items}
+      title="Poznaj nasze usługi"
+      subtitle="Partner"
+      description="Sprawdź szczegóły naszej oferty lub umów sie na bezpłatne konsultacje"
+      btnOne="Skontaktuj się"
+      btnOneVariant="dark"
+      btnOneLink="/contact"
+    />
+  );
 }

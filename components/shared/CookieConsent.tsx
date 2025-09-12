@@ -146,7 +146,7 @@ export default function CookieConsent() {
 
   return (
     <div ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descId} className="fixed inset-x-0 bottom-0 z-[70] bg-transparent">
-      <div className="mx-auto mb-4 w-[min(92vw,900px)] rounded bg-white p-5 text-black shadow-xl ring-1 ring-black/5">
+      <div className="mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 text-black shadow-xl ring-1 ring-black/5">
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-2">
@@ -155,7 +155,6 @@ export default function CookieConsent() {
               </span>
               <p id="cookie-desc" className="text-sm text-black">
                 Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony.
-                <strong> Vercel Analytics</strong> działa bez plików cookies.
                 <strong> Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.
                 <span className="ml-1">
                   <button
@@ -170,7 +169,7 @@ export default function CookieConsent() {
                     Ustaw preferencje
                   </button>{' '}
                   •{' '}
-                  <a className="text-black underline underline-offset-2" href="/polityka-prywatnosci" rel="noopener">
+                  <a className="text-black underline underline-offset-2" href="/privacy-police" rel="noopener">
                     Polityka prywatności
                   </a>
                 </span>

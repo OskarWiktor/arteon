@@ -17,14 +17,7 @@ type Props = {
   slugs?: string | string[];
 };
 
-export default function ProjectsOverview({
-  projects,
-  max = 7,
-  title = 'Nasze Realizacje',
-  subtitle,
-  category,
-  slugs,
-}: Props) {
+export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Realizacje', subtitle, category, slugs }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -137,17 +130,14 @@ export default function ProjectsOverview({
     <Wrapper>
       <section className="w-full" aria-labelledby="projects-heading">
         {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-        <h2 id="projects-heading" className="md:mb-2">{title}</h2>
+        <h2 id="projects-heading" className="md:mb-2">
+          {title}
+        </h2>
 
         <div className="relative">
           <div
             ref={scrollRef}
-            className="
-              no-scrollbar flex gap-4 overflow-x-auto pt-4 pb-6
-              scroll-smooth
-              snap-x snap-mandatory
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white
-            "
+            className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             role="region"
             aria-roledescription="carousel"
             aria-label={carouselLabel}
@@ -156,12 +146,7 @@ export default function ProjectsOverview({
             onKeyDown={onKeyDown}
           >
             {finalProjects.map((project, i) => (
-              <div
-                key={project.slug}
-                ref={i === 0 ? cardRef : null}
-                className="snap-start min-w-[340px] md:min-w-[420px] lg:min-w-[520px]"
-                aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
-              >
+              <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[340px] snap-start md:min-w-[420px] lg:min-w-[520px]" aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}>
                 <ProjectCard project={project} size="small" />
               </div>
             ))}

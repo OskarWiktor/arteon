@@ -15,7 +15,7 @@ export const baseSteps: Step[] = [
         label: 'Sklep online',
         value: 'shop',
         price: 1400,
-        tooltip: 'Sklep z koszykiem, płatnościami i panelem klienta — gotowy do sprzedaży 24/7.',
+        tooltip: 'Sklep z koszykiem, płatnościami i panelem klienta - gotowy do sprzedaży 24/7.',
         icon: 'FiShoppingCart',
       },
       {

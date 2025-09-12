@@ -43,11 +43,11 @@ export default function Navigation() {
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
+    <header id="navigation" className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
       <Wrapper>
         <nav className="flex h-16 items-center justify-between lg:h-18" aria-label="Nawigacja główna">
           <Link href="/">
-            <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon — logo firmy" priority />
+            <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon - logo firmy" priority />
           </Link>
           <DesktopNavigation />
 

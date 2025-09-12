@@ -1,11 +1,13 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
+import CTABaner from '@/components/sections/CTABaner';
+import ArteonFeatures from '@/components/sections/features/ArteonFeatures';
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import FeesSteps from '@/components/sections/steps/FeesSteps';
+import Mission from '@/components/sections/steps/Mission';
+import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import TechStack from '@/components/sections/TechStack';
 import Gap from '@/components/ui/Gap';
-import SectionBasic from '@/components/ui/sections/SectionBasic';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 
@@ -18,7 +20,8 @@ export default function HomePage() {
     <>
       <HeroBaner
         title="Zbuduj markę, która rośnie i sprzedaje"
-        description="Studio projektowe Arteon - od strategii i brandingu, przez strony WWW, po marketing digital."
+        subtitle="Know-how globalnych marek"
+        description="Arteon - sprawdzone praktyki wielkich marek dla Twojej firmy. Od strategii, przez strony, po marketing."
         backgroundImage="/assets/bg/abstract-bg12.jpg"
         overlay="black"
         variant="center"
@@ -30,126 +33,56 @@ export default function HomePage() {
           { icon: <RiShoppingCartLine />, label: 'Sklepy' },
           { icon: <RiArticleLine />, label: 'Blogi' },
           { icon: <RiPaletteLine />, label: 'Grafika' },
-          { icon: <RiFileTextLine />, label: 'Treść' },
+          { icon: <RiFileTextLine />, label: 'Treści' },
           { icon: <RiMegaphoneLine />, label: 'Marketing' },
         ]}
       />
 
       <Gap size="sm" />
 
-      <SectionInfo
-        id="mkjiohh"
-        title="Elastyczny partner dla Twojej marki"
-        description="Od startupu po globalną skalę - łączymy psychologię, design i technologię, aby Twoja firma przyciągała właściwych klientów."
-      />
+      <Mission />
 
-      <Gap />
+      <Gap variant="line" />
 
-      <ProjectsOverview title="Nasze realizacje" />
+      <ServicesSteps />
 
-      <Gap />
+      <Gap variant="line" />
 
-      <SectionBasic
-        id="www"
-        title={
-          <>
-            <span className="marker-after">
-              <span>Witryna</span>
-            </span>
-            <span> - fundament Twojej obecności</span>
-          </>
-        }
-        description="Tworzymy strony, sklepy oraz blogi, które angażują użytkowników i zwiększają konwersje."
-        imageSrc="/assets/test.jpg"
-        imageAlt="Responsywne strony WWW"
-        btnOne="Zobacz ofertę"
-        btnOneLink="/services"
-      >
-        <ul className="list-disc pl-5">
-          <li>Analiza branży i konkurencji w cenie</li>
-          <li>Projekt dopasowany do realnych zachowań klientów</li>
-          <li>Witryna przygotowana na skalowanie i rozwój</li>
-          <li>Stały kontakt i pełna przejrzystość na każdym etapie</li>
-        </ul>
-      </SectionBasic>
+      <ProjectsOverview title="Nasze realizacje" category="strona" />
 
-      <Gap />
+      <Gap variant="line" />
 
-      <SectionBasic
-        id="tresc"
-        variant="left"
-        title="Treść - komunikat, który przyciąga uwagę"
-        description="Budujemy treści, które pracują dla algorytmów, ale mówią do ludzi. Pomagamy stworzyć przekaz, by Twoja marka żyła nie tylko w Google, ale i w pamięci klientów."
-        imageSrc="/assets/test.jpg"
-        imageAlt="Content marketing"
-        btnOne="Zobacz ofertę"
-        btnOneLink="/services"
-      >
-        <ul className="list-disc pl-5">
-          <li>Analiza słów kluczowych i potrzeb klientów</li>
-          <li>Optymalizację tekstów pod wyszukiwarki</li>
-          <li>Gotowe teksty: od artykułów po posty w social media</li>
-        </ul>
-      </SectionBasic>
+      <ArteonFeatures />
 
-      <Gap />
-
-      <SectionInfo id="klnjknjnj" title="Dlaczego warto z nami pracować?" description="Działamy jak system: od strategii przez wdrożenie po analizę wyników — wszystko w jednym miejscu.">
-        <ul className="list-disc pl-5">
-          <li>Kompleksowe rozwiązania - jeden partner</li>
-          <li>Indywidualne podejście - zero szablonów</li>
-          <li>Pełna transparentność i mentoring</li>
-        </ul>
-      </SectionInfo>
-
-      <Gap />
+      <Gap variant="line" />
 
       <WorkSteps />
 
-      <Gap />
+      <Gap variant="line" />
 
-      <SectionBasic
-        id="design"
-        title="Design - wygląd, który działa jak magnez"
-        description="Projektujemy system wizualny, który przyciąga właściwych klientów, buduje zaufanie i odróżnia Twoją markę na tle innych. Psychologia, estetyka, spójność — z myślą o długofalowym rozwoju."
-        imageSrc="/assets/test.jpg"
-        imageAlt="Branding i identyfikacja wizualna"
-        btnOne="Zobacz ofertę"
-        btnOneLink="/services"
-      >
-        <ul className="list-disc pl-5">
-          <li>Logo i księga znaku</li>
-          <li>Paleta kolorów i typografia</li>
-          <li>Materiały online i offline</li>
-          <li>Optymalizacja konwersji wizualnej</li>
-        </ul>
-      </SectionBasic>
+      <FeesSteps />
 
       <Gap />
 
-      <SectionBasic
-        id="marketing"
-        variant="left"
-        title="Marketing - reklama, która przynosi efekty"
-        description="Planujemy działania, które trafiają tam, gdzie są klienci. Skupiamy się na tym, co ma największy potencjał i wdrażamy rozwiązania."
-        imageSrc="/assets/test.jpg"
-        imageAlt="Marketing cyfrowy"
-        btnOne="Zobacz ofertę"
-        btnOneLink="/services"
-      >
-        <ul className="list-disc pl-5">
-          <li>Działania dopasowane do Twojego wymarzonego klienta</li>
-          <li>Kampanie reklamowe w Google i social mediach</li>
-          <li>Prowadzenie i rozwój profili na IG, FB, LinkedIn</li>
-          <li>Analiza wyników i rekomendacje dalszych kroków</li>
-        </ul>
-      </SectionBasic>
+      <section aria-label="Słowa kluczowe" className="border-t border-neutral-200">
+        <div className="mx-auto max-w-7xl px-6 py-12 text-sm text-neutral-600">
+          Strony internetowe, sklepy online, blogi firmowe, projektowanie logo, identyfikacja wizualna, branding, marketing internetowy, pozycjonowanie stron (SEO), kampanie Google Ads i Facebook Ads,
+          copywriting, tworzenie treści, social media, automatyzacje marketingowe, audyty SEO i UX, dostępność cyfrowa WCAG 2.1 AA, polityka prywatności i regulaminy, projektowanie UX/UI, responsywne
+          strony www, Next.js, Webflow, WordPress, WooCommerce, aplikacje webowe, optymalizacja Core Web Vitals, analityka internetowa, integracje płatności i systemów dostaw, treści do e-commerce,
+          materiały do druku: wizytówki, ulotki, katalogi.
+        </div>
+      </section>
 
-      <Gap />
-
-      <TechStack />
-
-      <Gap size="sm" />
+      <CTABaner
+        title="Zacznijmy od rozmowy"
+        description="Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań - znajdziemy najlepszą drogę do efektu."
+        primaryLabel="Umów konsultację"
+        primaryLink="/contact"
+        secondaryLabel="Poznaj ofertę"
+        secondaryLink="/services"
+        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        overlay="black"
+      />
     </>
   );
 }

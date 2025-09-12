@@ -4,7 +4,7 @@ import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
-import PricingSteps from '@/components/sections/steps/PricingSteps';
+import PricingSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import MarketingFeatures from '@/components/sections/features/MarketingFeatures';

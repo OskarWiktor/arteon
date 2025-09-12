@@ -71,7 +71,7 @@ export const websiteSteps: Step[] = [
     title: 'Czy posiadasz tekst dla swojej witryny?',
     required: true,
     options: [
-      { label: 'Tak', value: 'own-copy', price: 0, tooltip: 'Dostarczasz tekst — my go dodajemy', icon: 'FiFile' },
+      { label: 'Tak', value: 'own-copy', price: 0, tooltip: 'Dostarczasz tekst - my go dodajemy', icon: 'FiFile' },
       { label: 'Potrzebuję korekty', value: 'copy-help', multiplier: 1.1, tooltip: 'Poprawiamy tekst pod kątem treści i widoczności', icon: 'FiEdit' },
       { label: 'Nie', value: 'copy-new', multiplier: 1.4, tooltip: 'Tworzymy tekst od zera na podstawie Twojej branży i oferty', icon: 'FiPenTool' },
     ],

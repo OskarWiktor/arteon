@@ -14,7 +14,7 @@ export const blogSteps: Step[] = [
     title: 'Czy posiadasz tekst dla swojej witryny?',
     required: true,
     options: [
-      { label: 'Tak', value: 'own-copy', price: 0, tooltip: 'Dostarczasz tekst — my go dodajemy', icon: 'FiFileText' },
+      { label: 'Tak', value: 'own-copy', price: 0, tooltip: 'Dostarczasz tekst - my go dodajemy', icon: 'FiFileText' },
       { label: 'Potrzebuję korekty', value: 'copy-help', multiplier: 1.1, tooltip: 'Poprawiamy tekst dla lepszej widoczności i lepszego odbioru', icon: 'FiEdit2' },
       { label: 'Nie', value: 'copy-new', multiplier: 1.4, tooltip: 'Tworzymy tekst od zera, w oparciu o to czym się zajmujesz', icon: 'FiPenTool' },
     ],
@@ -23,7 +23,7 @@ export const blogSteps: Step[] = [
     title: 'Ile stron z artykułami mamy przygotować?',
     required: true,
     options: [
-      { label: '0', value: 'articles-0', price: 0, tooltip: 'Wprowadzasz je samodzielnie — my przygotujemy wygląd i funkcje', icon: 'FiMinusCircle' },
+      { label: '0', value: 'articles-0', price: 0, tooltip: 'Wprowadzasz je samodzielnie - my przygotujemy wygląd i funkcje', icon: 'FiMinusCircle' },
       { label: '1-3', value: 'articles-1-3', price: 120, icon: 'FiFilePlus' },
       { label: '4-10', value: 'articles-4-10', price: 500, icon: 'FiFilePlus' },
       { label: '11-30', value: 'articles-11-30', price: 1200, icon: 'FiFilePlus' },

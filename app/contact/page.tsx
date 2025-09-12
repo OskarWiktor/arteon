@@ -14,7 +14,7 @@ export default function ContactPage() {
     <>
       <HeroBaner
         title="Porozmawiajmy o Twojej firmie"
-        description="Skontaktuj się z nami — przygotujemy ofertę i plan działania szyty na miarę"
+        description="Skontaktuj się z nami - przygotujemy ofertę i plan działania szyty na miarę"
         backgroundImage="/assets/bg/abstract-bg12.jpg"
         overlay="black"
       />

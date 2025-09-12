@@ -57,9 +57,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
 
   return (
     <section aria-labelledby="faq-heading">
-      {subtitle && (
-        <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>
-      )}
+      {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
       <h2 id="faq-heading" className="mb-2">
         {title}
       </h2>
@@ -86,7 +84,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
                 'flex w-full cursor-pointer items-center justify-between px-5 py-3 text-left transition',
-                'focus:outline-none focus-visible:outline focus-visible:outline-indigo-600 focus-visible:outline-offset-2',
+                'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600',
                 'md:px-6 md:py-4',
               ].join(' ')}
               aria-expanded={isOpen}

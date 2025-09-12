@@ -2,15 +2,13 @@
 
 import SectionSteps from '../../ui/sections/SectionSteps';
 
-const PricingStepsItems = [
+const FeesStepsItems = [
   {
     title: 'Do 5 000 zł',
-    borderClassName: 'border-b-amber-500',
     description: <>Brak zaliczki - jedna faktura po zakończeniu i zaakceptowaniu strony</>,
   },
   {
     title: 'Do 10 000 zł',
-    borderClassName: 'border-b-amber-500',
     description: (
       <>
         Zaliczka 10% po omówieniu szczegółów i zaakceptowaniu wyceny strony
@@ -21,7 +19,6 @@ const PricingStepsItems = [
   },
   {
     title: 'Powyżej 10 000 zł',
-    borderClassName: 'border-b-amber-500',
     description: (
       <>
         Zaliczka 20% po omówieniu szczegółów i zaakceptowaniu wyceny strony
@@ -32,10 +29,10 @@ const PricingStepsItems = [
   },
 ];
 
-export default function PricingSteps() {
+export default function FeesSteps() {
   return (
     <SectionSteps
-      items={PricingStepsItems}
+      items={FeesStepsItems}
       title="Płatności"
       subtitle="Zasady"
       description="Nasza forma płatności = Twoja gwarancja"

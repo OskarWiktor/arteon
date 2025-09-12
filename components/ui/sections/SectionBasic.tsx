@@ -32,7 +32,7 @@ export default function SectionBasic({ id, title, subtitle, description, imageSr
   return (
     <section id={id} className="w-full" aria-labelledby={headingId} aria-describedby={describedBy}>
       <Wrapper className="flex flex-col md:gap-4 lg:flex-row lg:gap-8">
-        {/* Media — ZAWSZE pierwsze w DOM (mobile: obraz nad tekstem) */}
+        {/* Media - ZAWSZE pierwsze w DOM (mobile: obraz nad tekstem) */}
         <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-2' : ''}`}>
           <div className="relative h-full min-h-[420px] w-full">
             <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(min-width:1024px) 50vw, 100vw" />

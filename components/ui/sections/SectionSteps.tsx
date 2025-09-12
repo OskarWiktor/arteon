@@ -16,17 +16,33 @@ interface SectionStepsProps {
   title?: ReactNode;
   subtitle?: ReactNode;
   btnOne?: string;
+  btnOneVariant?: 'accent' | 'dark';
   btnOneLink?: string;
   btnTwo?: string;
   btnTwoLink?: string;
   description?: string;
+  grid?: 'one' | 'two' | 'four';
   items: SectionStepItem[];
   backgroundImage?: string;
   overlay?: 'none' | 'black' | 'white';
   disclaimer?: ReactNode;
 }
 
-export default function SectionSteps({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, items, backgroundImage, overlay = 'none', disclaimer }: SectionStepsProps) {
+export default function SectionSteps({
+  title,
+  subtitle,
+  description,
+  btnOne,
+  btnOneVariant = 'accent',
+  btnOneLink,
+  btnTwo,
+  btnTwoLink,
+  items,
+  grid,
+  backgroundImage,
+  overlay = 'none',
+  disclaimer,
+}: SectionStepsProps) {
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
   const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
@@ -39,11 +55,11 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
   let gridColsMd = '';
   let gridColsLg = '';
 
-  if (count === 1) {
+  if (count === 1 || grid === 'one') {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-1';
     gridColsLg = 'lg:grid-cols-1';
-  } else if (count === 2) {
+  } else if (count === 2 || grid === 'two') {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-2';
@@ -51,7 +67,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-1';
     gridColsLg = 'lg:grid-cols-3';
-  } else if (count === 4) {
+  } else if (count === 4 || grid === 'four') {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-4';
@@ -66,7 +82,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
       {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative z-10 pb-8">
-        {subtitle && <span className={`text-xl tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
+        {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
         {title && <h3 className={toneTextClass}>{title}</h3>}
         {description && <p className={`max-w-3xl pt-3 pb-2 ${toneMutedClass}`}>{description}</p>}
 
@@ -74,17 +90,19 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
           {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
             return (
               <li key={index} className="flex flex-col items-stretch">
-                <article className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white px-6 py-8 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
-                  {imageSrc ? (
-                    <Image src={imageSrc} alt={imageAlt ?? ''} width={42} height={42} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
-                  ) : (
-                    <span className="text-3xl font-bold text-amber-500" aria-hidden={true}>
-                      {icon}
-                    </span>
-                  )}
+                <article className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
+                  <div className="flex items-center gap-2">
+                    {imageSrc ? (
+                      <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
+                    ) : (
+                      <span className="text-3xl font-bold text-amber-500" aria-hidden={true}>
+                        {icon}
+                      </span>
+                    )}
 
-                  <h4 className="z-10">{itemTitle}</h4>
-                  {itemSubtitle && <span className="text-base text-[#5e5e5e]">{itemSubtitle}</span>}
+                    <h4 className="z-10">{itemTitle}</h4>
+                  </div>
+                  {itemSubtitle && <span className="mt-1 text-base text-[#5e5e5e]">{itemSubtitle}</span>}
 
                   <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
                 </article>
@@ -96,7 +114,7 @@ export default function SectionSteps({ title, subtitle, description, btnOne, btn
         {(btnOne || btnTwo) && (
           <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" role="group" aria-label="Działania sekcji">
             {btnOne && (
-              <Button arrow variant="accent" link={btnOneLink}>
+              <Button arrow variant={btnOneVariant} link={btnOneLink}>
                 {btnOne}
               </Button>
             )}
