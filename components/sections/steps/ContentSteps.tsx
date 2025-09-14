@@ -1,13 +1,19 @@
 'use client';
 
-import { RiFileTextLine, RiArticleLine, RiShoppingCartLine, RiShareForwardLine, RiFilePdfLine, RiBookOpenLine, RiChatQuoteLine, RiPencilLine, RiLightbulbFlashLine } from 'react-icons/ri';
+import {
+  RiFileTextLine,
+  RiArticleLine,
+  RiShoppingCartLine,
+  RiShareForwardLine,
+  RiFilePdfLine,
+  RiBookOpenLine,
+  RiChatQuoteLine,
+  RiPencilLine,
+  RiLightbulbFlashLine,
+} from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
-/**
- * Oferta "Treści" - 9 sekcji zgodnych z cennikiem i ofertą.
- * Źródło widełek: Strony www, Artykuły, E-commerce, Social media, Oferty/Case, + elementy ZA DARMO.
- */
 const items = [
   {
     icon: <RiFileTextLine className="h-8 w-8" />,
@@ -16,13 +22,13 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Wizytówka (5 sekcji): 600-900 zł</li>
-          <li>Strona firmowa (10 podstron): 2 400-3 200 zł</li>
-          <li>Landing sprzedażowy (storytelling): 1 200-1 800 zł</li>
-          <li>Dodatkowa podstrona: 250-400 zł</li>
+          <li>Piszemy treści do stron, które jasno pokazują ofertę</li>
+          <li>Budujemy zaufanie i prowadzimy klienta krok po kroku</li>
+          <li>Tworzymy landing page, który sprzedaje od pierwszego wejścia</li>
+          <li>Dopasowujemy język do Twojej branży i odbiorców</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Wyceń treści do strony
           </Button>
         </div>
@@ -36,13 +42,13 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>3 000 zzs (SEO): 300-400 zł</li>
-          <li>6 000 zzs (analiza): 600-800 zł</li>
-          <li>Pakiet 4 artykułów: 1 000-3 000 zł</li>
-          <li>Pakiet 8 artykułów: 2 000-5 000 zł</li>
+          <li>Budują Twój wizerunek jako specjalisty</li>
+          <li>Wzmacniają pozycję strony w Google</li>
+          <li>Dostarczają klientom wartościowych porad i wiedzy</li>
+          <li>Pakiety artykułów zapewniają stały dopływ treści</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Zamów artykuły
           </Button>
         </div>
@@ -56,13 +62,13 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Produkt prosty (1 000 zzs): 40-60 zł</li>
-          <li>Produkt premium (2 000 zzs): 80-120 zł</li>
-          <li>Opis kategorii (3 000 zzs): 200-300 zł</li>
-          <li>Pakiet startowy (50 produktów): 1 800-2 400 zł</li>
+          <li>Opisy, które pokazują korzyści, nie tylko cechy</li>
+          <li>Proste teksty dla szybkich decyzji zakupowych</li>
+          <li>Rozbudowane opisy premium dla produktów wyższej klasy</li>
+          <li>Pakiety opisów przyspieszają start sklepu</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Wyceń treści do sklepu
           </Button>
         </div>
@@ -76,13 +82,13 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Post (copy + hashtagi): 60-120 zł</li>
-          <li>Story (CTA): 30-60 zł</li>
-          <li>Rolka (scenariusz 30 s): 100-200 zł</li>
-          <li>Pakiet 12 postów + 12 stories: 600-1 000 zł</li>
+          <li>Posty, które zatrzymują uwagę i zachęcają do reakcji</li>
+          <li>Story z jasnym wezwaniem do działania</li>
+          <li>Scenariusze rolek, które zwiększają zasięg</li>
+          <li>Gotowe pakiety treści na cały miesiąc</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Zamów copy do social
           </Button>
         </div>
@@ -96,12 +102,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Oferta sprzedażowa (PDF, 5-10 str.): 800-1 400 zł</li>
-          <li>Case study (ok. 3 000 zzs): 400-600 zł</li>
-          <li>Prezentacja sprzedażowa (10 slajdów): 600-1 000 zł</li>
+          <li>Oferty sprzedażowe, które podkreślają wartość Twojej usługi</li>
+          <li>Case studies pokazujące realne efekty</li>
+          <li>Prezentacje, które przekonują inwestorów i partnerów</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Poproś o ofertę PDF
           </Button>
         </div>
@@ -115,12 +121,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Dopasowanie tonu do archetypu</li>
-          <li>Spójny styl: strona, social, e-commerce</li>
-          <li>Prosty język bez żargonu</li>
+          <li>Dopasowujemy ton komunikacji do osobowości marki</li>
+          <li>Ujednolicamy styl w każdej publikacji</li>
+          <li>Dbamy o prosty, zrozumiały język</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Ustalmy język marki
           </Button>
         </div>
@@ -134,12 +140,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Hooki pod intencje i potrzeby</li>
-          <li>Struktury sprzedażowe (Why → How → What)</li>
-          <li>Warianty do A/B testów</li>
+          <li>Hasła, które od razu przyciągają uwagę</li>
+          <li>Struktury sprzedażowe budzące emocje</li>
+          <li>Warianty do szybkich testów skuteczności</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Zaprojektujmy CTA
           </Button>
         </div>
@@ -153,12 +159,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Korekta językowa i stylistyczna</li>
-          <li>SEO on-page w tekście</li>
-          <li>Ujednolicenie formatowania</li>
+          <li>Poprawiamy błędy językowe i stylistyczne</li>
+          <li>Ujednolicamy format i układ treści</li>
+          <li>Dostosowujemy tekst pod SEO, by był lepiej widoczny</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Prześlij tekst do korekty
           </Button>
         </div>
@@ -172,12 +178,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Guidelines do dalszego pisania</li>
-          <li>Szablony sekcji i akapitów</li>
-          <li>Lista kontrolna publikacji</li>
+          <li>Dajemy gotowe szablony sekcji i akapitów</li>
+          <li>Tworzymy listy kontrolne do publikacji</li>
+          <li>Przekazujemy zasady dalszego pisania treści</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Poproś o wytyczne
           </Button>
         </div>
@@ -192,10 +198,10 @@ export default function ContentSteps() {
       items={items}
       title="Oferta treści"
       subtitle="Czytelnie i skutecznie"
-      description="Teksty, które pozycjonują i sprzedają - od strony www, przez blog, po e-commerce i social media."
+      description="Teksty, które pozycjonują i sprzedają — od strony www, przez blog, po e-commerce i social media."
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
-      btnOneLink="/kontakt"
+      btnOneLink="/contact"
     />
   );
 }

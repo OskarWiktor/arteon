@@ -11,11 +11,10 @@ const ContactInfoStepsItems = [
     description: (
       <>
         <span>
-          <a href="tel:+48516466255" className="text-lg font-bold md:text-xl">
+          <a href="tel:+48516466255" className="text-lg md:text-xl">
             516 466 255
           </a>
-        </span>
-        <span className="text-lg md:text-xl">Pracujemy od poniedziałku do piątku: 8 - 16</span>
+        </span>      
       </>
     ),
   },
@@ -24,16 +23,16 @@ const ContactInfoStepsItems = [
     icon: <RiMailLine />,
     description: (
       <span>
-        <a href="mailto:kontakt@arteonagency.pl" className="text-lg font-bold md:text-xl">
-          kontakt@arteonagency.pl
+        <a href="mailto:contact@arteonagency.com" className="text-lg md:text-xl">
+          contact@arteonagency.com
         </a>
       </span>
     ),
   },
   {
-    title: 'Lokalizacja',
+    title: 'Godziny pracy',
     icon: <RiMapPinLine />,
-    description: <span className="text-lg md:text-xl">Polska, Małopolska, Zagacie 32-070, ul. Jaśminowa 36</span>,
+    description: <span className="text-lg md:text-xl">Pracujemy od poniedziałku do piątku: 8 - 16</span>,
   },
 ];
 

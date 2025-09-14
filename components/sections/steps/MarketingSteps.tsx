@@ -1,28 +1,33 @@
 'use client';
 
-import { RiSearchLine, RiBarChart2Line, RiMegaphoneLine, RiFundsLine, RiBrushLine, RiShareForwardLine, RiSettings3Line, RiFileList2Line, RiUserHeartLine } from 'react-icons/ri';
+import {
+  RiSearchLine,
+  RiBarChart2Line,
+  RiMegaphoneLine,
+  RiFundsLine,
+  RiBrushLine,
+  RiShareForwardLine,
+  RiSettings3Line,
+  RiFileList2Line,
+  RiUserHeartLine,
+} from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
-/**
- * Oferta "Marketing" - 9 sekcji zgodnych z Twoim cennikiem.
- * SEO, Reklamy, Social, Audyty/Strategie, Branding psychologiczny + elementy „w cenie”.
- * Widełki i pozycje: zgodnie z cennikiem Arteon (SEO, Reklamy, Social Media, Audyty i strategie, Branding i psychologia marki).
- */
 const items = [
   {
     icon: <RiSearchLine className="h-8 w-8" />,
-    title: 'SEO: audyt i on-page',
+    title: 'SEO: audyt i optymalizacja',
     subtitle: 'od 700 zł',
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Audyt SEO techniczny: 700-1 200 zł</li>
-          <li>On-page (10 podstron): 1 200-1 600 zł</li>
-          <li>Rozszerzenie: 120-160 zł / podstrona</li>
+          <li>Sprawdzamy, czy Twoja strona jest łatwa do znalezienia</li>
+          <li>Poprawiamy treści i opisy tak, by przyciągały klientów</li>
+          <li>Podpowiadamy, co zmienić, by szybciej rosnąć w wynikach</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Zamów audyt SEO
           </Button>
         </div>
@@ -36,12 +41,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Linki, Treści, monitoring</li>
-          <li>Raporty efektów i rekomendacje</li>
-          <li>Plan wzrostu widoczności</li>
+          <li>Piszemy i publikujemy treści, które podnoszą pozycję strony</li>
+          <li>Budujemy sieć wartościowych linków</li>
+          <li>Co miesiąc otrzymujesz raport i jasne rekomendacje</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Zapytaj o abonament
           </Button>
         </div>
@@ -55,12 +60,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Kampania startowa (5 kreacji): 700-1 000 zł</li>
-          <li>Meta / Google / Display</li>
-          <li>Setup + konfiguracja zdarzeń</li>
+          <li>Konfigurujemy reklamy w Google i Meta</li>
+          <li>Tworzymy zestaw dopasowanych grafik i treści</li>
+          <li>Ustawiamy śledzenie wyników i zdarzeń</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Uruchom kampanię
           </Button>
         </div>
@@ -74,12 +79,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Budżet ≤ 5 000 zł: 1 000-1 400 zł / mies.</li>
-          <li>Budżet 5-20 tys. zł: 1 600-2 200 zł / mies.</li>
-          <li>Optymalizacja i testy A/B</li>
+          <li>Prowadzimy i optymalizujemy reklamy na bieżąco</li>
+          <li>Testujemy różne wersje i wybieramy najlepsze</li>
+          <li>Raportujemy efekty i proponujemy dalsze kroki</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Włącz obsługę
           </Button>
         </div>
@@ -93,12 +98,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Pakiet 10 formatów: 900-1 400 zł</li>
-          <li>Spójność z identyfikacją</li>
-          <li>Warianty do testów</li>
+          <li>Projektujemy reklamy spójne z Twoją marką</li>
+          <li>Tworzymy warianty do testów i porównań</li>
+          <li>Przygotowujemy zestaw formatów na różne kanały</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Zamów kreacje
           </Button>
         </div>
@@ -112,12 +117,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Start: 1 100-1 600 zł / mies.</li>
-          <li>Firmowy: 2 200-3 000 zł / mies.</li>
-          <li>Premium: 3 800-5 000 zł / mies.</li>
+          <li>Planujemy i publikujemy posty, stories i rolki</li>
+          <li>Budujemy spójny wizerunek marki</li>
+          <li>Dbamy o regularność i kontakt z odbiorcami</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Poproś o plan publikacji
           </Button>
         </div>
@@ -131,12 +136,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Automatyzacja procesów: 400-600 zł</li>
-          <li>Tagowanie zdarzeń i integracje</li>
-          <li>Prosty workflow dla zespołu</li>
+          <li>Automatyzujemy dodawanie treści na różne kanały</li>
+          <li>Łączymy systemy tak, by działały bez Twojej ingerencji</li>
+          <li>Tworzymy prosty schemat pracy dla zespołu</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Ustaw automatyzacje
           </Button>
         </div>
@@ -150,12 +155,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Audyt strony (SEO + prawo + UX + WCAG): 1 200-1 800 zł</li>
-          <li>Analiza konkurencji (do 5 firm): 800-1 200 zł</li>
-          <li>Strategia marketingowa: 2 500-3 800 zł</li>
+          <li>Analizujemy Twoją stronę i konkurencję</li>
+          <li>Sprawdzamy zgodność z prawem i dostępnością</li>
+          <li>Tworzymy strategię krok po kroku na kolejne miesiące</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Zamów audyt/strategię
           </Button>
         </div>
@@ -169,12 +174,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Archetyp marki: 1 200-1 800 zł</li>
-          <li>Strategia komunikacji emocjonalnej: 2 200-3 500 zł</li>
-          <li>Oferta sprzedażowa (Why → How → What): 900-1 500 zł</li>
+          <li>Określamy archetyp marki i jej osobowość</li>
+          <li>Budujemy język i komunikację, która trafia w emocje</li>
+          <li>Tworzymy oferty, które klienci chcą kupować</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="/contact">
             Ustal kierunek marki
           </Button>
         </div>
@@ -189,10 +194,10 @@ export default function MarketingSteps() {
       items={items}
       title="Oferta marketingu"
       subtitle="Skutecznie i przejrzyście"
-      description="SEO, reklamy i social - oparte na danych i psychologii decyzji. Ty dostajesz efekt."
+      description="SEO, reklamy i social — opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
-      btnOneLink="/kontakt"
+      btnOneLink="/contact"
     />
   );
 }

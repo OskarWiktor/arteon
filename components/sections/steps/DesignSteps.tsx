@@ -1,6 +1,16 @@
 'use client';
 
-import { RiPencilRuler2Line, RiLayoutMasonryLine, RiStackLine, RiBrushLine, RiFileTextLine, RiArchiveDrawerLine, RiShoppingBag3Line, RiImageLine, RiAppsLine } from 'react-icons/ri';
+import {
+  RiPencilRuler2Line,
+  RiLayoutMasonryLine,
+  RiStackLine,
+  RiBrushLine,
+  RiFileTextLine,
+  RiArchiveDrawerLine,
+  RiShoppingBag3Line,
+  RiImageLine,
+  RiAppsLine,
+} from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
@@ -12,14 +22,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Logo Start, Core, Premium</li>
-          <li>Sygnet, logotyp, kolory, typografia</li>
-          <li>Pliki wektorowe (Adobe CC)</li>
+          <li>Rozpoznawalne logo i spójny styl marki</li>
+          <li>Sygnet, logotyp, kolory i typografia</li>
+          <li>Wektory i warianty kolorystyczne gotowe do użycia</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Wyceń projekt
-          </Button>
+          <Button arrow link="/kontakt">Wyceń projekt</Button>
         </div>
       </div>
     ),
@@ -31,14 +39,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Zestawy ikon (12 szt.)</li>
-          <li>Proste, spójne ze stylem marki</li>
-          <li>Pliki wektorowe gotowe do użycia</li>
+          <li>Zestawy ikon w jednym, czytelnym stylu</li>
+          <li>Dobre w małych rozmiarach i na telefonie</li>
+          <li>Pliki wektorowe, gotowe do wdrożeń</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Wyceń projekt
-          </Button>
+          <Button arrow link="/kontakt">Wyceń projekt</Button>
         </div>
       </div>
     ),
@@ -50,14 +56,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Posty, stories, karuzele</li>
-          <li>Pakiety startowe i szablony</li>
+          <li>Posty, stories i karuzele spójne z marką</li>
+          <li>Szablony, które przyspieszają publikacje</li>
           <li>Rolki: proste i z animacjami</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Wyceń projekt
-          </Button>
+          <Button arrow link="/kontakt">Wyceń projekt</Button>
         </div>
       </div>
     ),
@@ -69,14 +73,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Wizytówki, papier firmowy</li>
-          <li>Teczki ofertowe, stopki mailowe</li>
-          <li>Banery i roll-upy</li>
+          <li>Wizytówki i papier firmowy</li>
+          <li>Teczki ofertowe i stopki mailowe</li>
+          <li>Banery i roll-upy gotowe do druku</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Wyceń projekt
-          </Button>
+          <Button arrow link="/kontakt">Wyceń projekt</Button>
         </div>
       </div>
     ),
@@ -88,14 +90,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Ulotki, foldery, katalogi</li>
-          <li>Książki i raporty</li>
-          <li>Skład stron i DTP</li>
+          <li>Ulotki, foldery i katalogi</li>
+          <li>Książki, raporty, okładki</li>
+          <li>Pliki do druku i do sieci</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Wyceń projekt
-          </Button>
+          <Button arrow link="/kontakt">Wyceń projekt</Button>
         </div>
       </div>
     ),
@@ -107,14 +107,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Etykiety produktowe</li>
-          <li>Seria etykiet (warianty)</li>
-          <li>Opakowania pudełka</li>
+          <li>Etykiety produktowe i serie wariantów</li>
+          <li>Pudełka i zestawy opakowań</li>
+          <li>Czytelność na półce i w e-commerce</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Wyceń projekt
-          </Button>
+          <Button arrow link="/kontakt">Wyceń projekt</Button>
         </div>
       </div>
     ),
@@ -126,14 +124,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Makiety UX/UI dla stron</li>
-          <li>Układy zgodne ze złotym podziałem</li>
-          <li>Gotowe do wdrożenia w Next.js/Webflow</li>
+          <li>Makiety układu i wyglądu strony</li>
+          <li>Proporcje i układy zgodne ze złotym podziałem</li>
+          <li>Gotowe do wdrożenia w Next.js / Webflow</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Zapytaj o wycenę
-          </Button>
+          <Button arrow link="/kontakt">Zapytaj o wycenę</Button>
         </div>
       </div>
     ),
@@ -147,12 +143,10 @@ const items = [
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
           <li>Ubrania firmowe i gadżety</li>
           <li>Wektory i warianty kolorów</li>
-          <li>Gotowe pliki do druku</li>
+          <li>Pliki gotowe do druku</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Zapytaj o wycenę
-          </Button>
+          <Button arrow link="/kontakt">Zapytaj o wycenę</Button>
         </div>
       </div>
     ),
@@ -164,14 +158,12 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Retusz zdjęć pod www</li>
-          <li>Montaż rolek na IG/TikTok</li>
-          <li>Content + treść w pakiecie</li>
+          <li>Retusz zdjęć do strony i sklepu</li>
+          <li>Montaż krótkich filmów na IG/TikTok</li>
+          <li>Treść i napisy w pakiecie</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Zapytaj o wycenę
-          </Button>
+          <Button arrow link="/kontakt">Zapytaj o wycenę</Button>
         </div>
       </div>
     ),
@@ -184,7 +176,7 @@ export default function DesignSteps() {
       items={items}
       title="Oferta grafiki"
       subtitle="Przejrzyście i konkretnie"
-      description="Każdy element wizualny Twojej marki - od logo po ubrania firmowe."
+      description="Wizualny fundament Twojej marki — od logo po ubrania firmowe."
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
       btnOneLink="/kontakt"
