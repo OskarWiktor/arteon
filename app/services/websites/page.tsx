@@ -84,7 +84,7 @@ export default function OfferWebPage() {
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"
-        description="Jasny plan i odpowiedzialność po naszej stronie"
+        description="JPokaż się w sieci z profesjonalnym wizerunkiem"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg12.jpg"

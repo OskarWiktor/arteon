@@ -83,8 +83,8 @@ export default function OfferBlogPage() {
       <Keywords keys="Blogi internetowe, blog firmowy, blog ekspercki, blog premium Webflow, blog custom Next.js, blog WordPress, artykuły blogowe SEO, integracja newslettera, platformy contentowe, CMS dla bloga, blog responsywny, blog zgodny z WCAG 2.1 AA, redakcja treści blogowych, pakiety artykułów, blog z AI, blogi firmowe Kraków, blogi dla e-commerce, tworzenie treści na bloga, publikacje blogowe, optymalizacja SEO bloga" />
 
       <CTABaner
-        title="Zbudujmy stronę, która pracuje na Twoją markę"
-        description="Jasny plan i odpowiedzialność po naszej stronie"
+        title="Czas na blog, który buduje Twoją pozycję"
+        description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg7.jpg"

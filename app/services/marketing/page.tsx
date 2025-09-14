@@ -72,9 +72,9 @@ export default function OfferMarketingPage() {
       <Keywords keys="Marketing internetowy, SEO techniczne, SEO on-page, audyt SEO, reklamy Google Ads, reklamy Facebook Ads, reklamy Instagram, kampanie reklamowe, social media marketing, prowadzenie Instagrama, prowadzenie Facebooka, strategie marketingowe, analiza konkurencji, automatyzacja social media, branding emocjonalny, archetyp marki, oferta sprzedażowa Apple Why How What, psychologia marki, marketing online dla firm, strategie komunikacji" />
 
       <CTABaner
-        title="Zbudujmy stronę, która pracuje na Twoją markę"
-        description="Jasny plan i odpowiedzialność po naszej stronie"
-        primaryLabel="Wyceń projekt"
+        title="Rozwiń markę dobrą strategią"
+        description="Od SEO po reklamy - planujemy i prowadzimy działania, które zwiększają sprzedaż"
+        primaryLabel="Skontaktuj się"
         primaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg5.jpg"
         overlay="black"

@@ -6,11 +6,11 @@ export type PrimaryCategory = Extract<ProjectCategory, 'aplikacja' | 'strona' | 
 export type SecondaryCategory = Extract<ProjectCategory, 'grafika' | 'treść' | 'marketing'>;
 
 export type Project = {
-  description: ReactNode;
-  descripton: ReactNode;
   slug: string;
   title: string;
   short: string;
+  description: ReactNode;
+  task: ReactNode;
   image: string;
   link: string;
   category: ProjectCategory[];

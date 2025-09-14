@@ -32,11 +32,9 @@ export default function ProjectPage({ params }: PageProps) {
 
       <Wrapper>
         <h1 className="h2 mb-2">{project.title}</h1>
-        <p className="my-4">
-          <span className="text-xl font-bold uppercase">{project.category}</span>
-        </p>
-        <span className="text-2xl">{project.short}</span>
+        <p className="my-4 uppercase">{project.category.join(' • ')}</p>
         <p className="my-4">{project.description}</p>
+        <p className="my-4">{project.task}</p>
         {project.link && (
           <Button arrow link={project.link}>
             Zobacz stronę

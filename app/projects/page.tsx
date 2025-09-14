@@ -1,7 +1,6 @@
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilters';
 import Gap from '@/components/ui/Gap';
-import SectionBasic from '@/components/ui/sections/SectionBasic';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 export async function generateMetadata() {
@@ -17,19 +16,8 @@ export default function ProjectsPage() {
 
       <ProjectWithFilters />
 
-      <Gap />
+      <Gap size="sm" />
 
-      <SectionBasic
-        id="go-to-contact"
-        title="Zacznijmy współpracę"
-        description="Masz pytania lub potrzebujesz wyceny niestandardowego projektu? Skontaktuj się z nami, a my przygotujemy ofertę."
-        imageSrc="/assets/test.jpg"
-        imageAlt="Kontakt z Arteon"
-        btnOneLink="/contact"
-        btnOne="Kontakt"
-      />
-
-      <Gap />
     </>
   );
 }

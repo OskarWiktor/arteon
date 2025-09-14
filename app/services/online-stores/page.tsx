@@ -84,8 +84,8 @@ export default function OfferWebPage() {
       <Keywords keys="Sklepy internetowe, projektowanie e-commerce, WooCommerce, Webflow Ecommerce, Next.js sklepy custom, projekt sklepu internetowego, integracje płatności, integracje dostaw, koszyk i checkout, SEO sklepów online, opisy produktów SEO, migracja sklepów WordPress, sklep do 50 produktów, sklep średni do 300 produktów, sklep premium, e-commerce dla firm, dodawanie produktów CSV, obsługa e-commerce, sklepy internetowe Kraków, sklepy online Polska" />
 
       <CTABaner
-        title="Zbudujmy stronę, która pracuje na Twoją markę"
-        description="Jasny plan i odpowiedzialność po naszej stronie"
+        title="Postaw sklep, który sprzedaje"
+        description="Dajemy Ci rozwiązanie gotowe do rozwoju - szybkie, stabilne i zgodne z przepisami"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg13.jpg"

@@ -29,7 +29,7 @@ export default function ContactPage() {
 
       <ContactForm />
 
-      <Gap />
+      <Gap variant='line'/>
 
       <ContactInfo />
 

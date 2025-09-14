@@ -82,9 +82,9 @@ export default function OfferDesignPage() {
       />
 
       <CTABaner
-        title="Zbudujmy stronę, która pracuje na Twoją markę"
-        description="Jasny plan i odpowiedzialność po naszej stronie"
-        primaryLabel="Wyceń projekt"
+        title="Nadaj marce wyjątkową tożsamość"
+        description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
+        primaryLabel="Skontaktuj się"
         primaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg15.jpg"
         overlay="black"
