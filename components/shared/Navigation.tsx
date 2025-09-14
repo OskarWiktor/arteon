@@ -68,7 +68,7 @@ export default function Navigation() {
             <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
               #MadeWithNext.js
             </a>
-              {/*
+            {/*
 
             <a
               href="https://www.instagram.com/arteon.pl"
@@ -80,7 +80,6 @@ export default function Navigation() {
               <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
             </a>
                         */}
-
           </div>
 
           <button

@@ -92,12 +92,10 @@ export default function SectionSteps({
               <li key={index} className="flex flex-col items-stretch">
                 <article className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
                   <div className="flex items-center">
-                    {imageSrc && (
-                      <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none select-none mr-2" aria-hidden={imageAlt ? undefined : true} />
-                    )}
+                    {imageSrc && <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none mr-2 select-none" aria-hidden={imageAlt ? undefined : true} />}
 
                     {icon && (
-                      <span className="text-3xl mr-2 font-bold text-slate-500" aria-hidden={true}>
+                      <span className="mr-2 text-3xl font-bold text-slate-500" aria-hidden={true}>
                         {icon}
                       </span>
                     )}

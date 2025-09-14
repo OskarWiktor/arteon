@@ -144,7 +144,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
             onKeyDown={onKeyDown}
           >
             {finalProjects.map((project, i) => (
-              <div key={project.slug} ref={i === 0 ? cardRef : null} className="min-w-[340px] snap-start md:min-w-[420px] lg:min-w-[520px]" aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}>
+              <div key={project.slug} ref={i === 0 ? cardRef : null} className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]" aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}>
                 <ProjectCard project={project} size="small" />
               </div>
             ))}
