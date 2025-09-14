@@ -116,8 +116,8 @@ textarea {
   input:-webkit-autofill,
   textarea:-webkit-autofill,
   select:-webkit-autofill {
-    @apply bg-amber-100 text-[#2B2B2B];
-    -webkit-box-shadow: 0 0 0px 1000px theme('colors.amber.100') inset;
+    @apply bg-slate-100 text-[#2B2B2B];
+    -webkit-box-shadow: 0 0 0px 1000px theme('colors.slate.100') inset;
     transition: background-color 5000s ease-in-out 0s;
   }
 }
@@ -126,14 +126,14 @@ textarea {
   select option:checked,
   select option:focus,
   select option:hover {
-    @apply bg-amber-100 text-[#2B2B2B];
+    @apply bg-slate-100 text-[#2B2B2B];
   }
 }
 
 /*    CUSTOM    */
 
 .marker-after {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-slate-500 before:blur-[0.5px] before:content-[''];
   p,
   span {
     @apply relative z-10;
@@ -141,5 +141,5 @@ textarea {
 }
 
 .marker-before {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-amber-500 before:blur-[0.5px] before:content-[''];
+  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-slate-500 before:blur-[0.5px] before:content-[''];
 }

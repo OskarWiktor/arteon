@@ -18,7 +18,7 @@ const SERVICES = [
   { href: '/services/online-stores', icon: <RiShoppingCartLine aria-hidden />, title: 'Sklepy online' },
   { href: '/services/online-blogs', icon: <RiArticleLine aria-hidden />, title: 'Blogi' },
   { href: '/services/design', icon: <RiPaletteLine aria-hidden />, title: 'Grafika' },
-  { href: '/services/content', icon: <RiFileTextLine aria-hidden />, title: 'Content' },
+  { href: '/services/content', icon: <RiFileTextLine aria-hidden />, title: 'Treści' },
   { href: '/services/marketing', icon: <RiMegaphoneLine aria-hidden />, title: 'Marketing' },
 ];
 
@@ -95,7 +95,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
           >
             <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3">
               <span className="text-sm tracking-wider text-zinc-600">ARTEON</span>
-              <button onClick={() => setIsOpen(false)} className="rounded px-3 py-1.5 text-sm font-medium text-zinc-700 ring-amber-700 ring-offset-2 outline-none focus-visible:ring-2">
+              <button onClick={() => setIsOpen(false)} className="rounded px-3 py-1.5 text-sm font-medium text-zinc-700 ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
                 Zamknij
               </button>
             </div>
@@ -109,9 +109,9 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       <Link
                         href={s.href}
                         onClick={() => setIsOpen(false)}
-                        className="group flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] text-zinc-900 transition outline-none hover:bg-zinc-50 focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
+                        className="group flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] text-zinc-900 transition outline-none hover:bg-zinc-50 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                       >
-                        <span className="text-zinc-700 group-hover:text-amber-500 [&_svg]:h-5 [&_svg]:w-5">{s.icon}</span>
+                        <span className="text-zinc-700 group-hover:text-slate-500 [&_svg]:h-5 [&_svg]:w-5">{s.icon}</span>
                         <span>{s.title}</span>
                       </Link>
                     </li>
@@ -130,7 +130,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-2 text-[15px] ring-amber-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                        className={`block rounded-lg px-3 py-2 text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-zinc-900' : 'text-zinc-900 hover:bg-zinc-50'
                         }`}
                       >
@@ -150,7 +150,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href="/contact"
                       onClick={() => setIsOpen(false)}
-                      className="rounded-lg bg-amber-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
+                      className="rounded-lg bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       Umów konsultację
                     </Link>
@@ -159,7 +159,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Instagram"
-                      className="rounded p-1.5 transition outline-none hover:bg-zinc-100 focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
+                      className="rounded p-1.5 transition outline-none hover:bg-zinc-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       {/*
                       <RiInstagramLine className="h-8 w-8 text-zinc-800" aria-hidden />

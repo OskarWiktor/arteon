@@ -8,12 +8,12 @@ const items = [
   {
     icon: <RiCodeSSlashFill className="h-8 w-8" />,
     title: 'Strony internetowe',
-    subtitle: 'od 1 900 zł',
+    subtitle: 'od 1 600 zł',
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
           <li>Nowoczesny design + SEO w cenie</li>
-          <li>Pełna zgodność z przepisami</li>
+          <li>Darmowe wsparcie prawne</li>
           <li>Bezpłatne szkolenie PDF z obsługi strony</li>
           <li>Dopasowanie technologii do Twoich celów</li>
         </ul>
@@ -28,14 +28,14 @@ const items = [
   {
     icon: <RiShoppingCartLine className="h-8 w-8" />,
     title: 'Sklepy internetowe',
-    subtitle: 'od 5 000 zł',
+    subtitle: 'od 4 000 zł',
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
           <li>Płatności online i szybki checkout</li>
           <li>Łatwa edycja produktów</li>
-          <li>Pełna zgodność z przepisami</li>
-          <li>SEO i marketing w standardzie</li>
+          <li>Darmowe wsparcie prawne</li>
+          <li>Bezpłatne szkolenie PDF z obsługi strony</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/services/shops">
@@ -53,9 +53,9 @@ const items = [
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
           <li>Redakcja treści i SEO w cenie</li>
-          <li>CMS do prostego zarządzania artykułami</li>
-          <li>Pełna zgodność z przepisami</li>
-          <li>Strategia treści zwiększająca widoczność</li>
+          <li>Proste systemy tworzenia treści</li>
+          <li>Darmowe wsparcie prawne</li>
+          <li>Bezpłatne szkolenie PDF z obsługi strony</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/services/blog-seo">
@@ -72,7 +72,7 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Logo i pełna identyfikacja wizualna</li>
+          <li>Loga i identyfikacja wizualna</li>
           <li>Materiały do druku i online</li>
           <li>Szablony pod social media</li>
           <li>Pliki wektorowe i instrukcje w cenie</li>
@@ -92,7 +92,7 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Artykuły eksperckie i SEO</li>
+          <li>Artykuły eksperckie</li>
           <li>Treści do stron i e-commerce</li>
           <li>Posty i scenariusze do social mediów</li>
           <li>Język marki dopasowany do odbiorców</li>

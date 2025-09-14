@@ -47,19 +47,19 @@ export default function OfferMarketingPage() {
 
       <MarketingFeatures />
 
-      <Gap />
+      <Gap variant="line" />
 
       <MarketingSteps />
 
-      <Gap />
+      <Gap variant="line" />
 
       <PricingSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <WorkSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <FaqMarketing />
 
@@ -76,7 +76,7 @@ export default function OfferMarketingPage() {
         description="Jasny plan i odpowiedzialność po naszej stronie"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg5.jpg"
         overlay="black"
       />
     </>

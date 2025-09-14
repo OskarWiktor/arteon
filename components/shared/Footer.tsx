@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import Wrapper from '../ui/Wrapper';
@@ -7,7 +9,7 @@ const offerLinks = [
   { href: '/services/online-stores', title: 'Sklepy online' },
   { href: '/services/online-blogs', title: 'Blogi' },
   { href: '/services/design', title: 'Grafika' },
-  { href: '/services/content', title: 'Content' },
+  { href: '/services/content', title: 'Treści' },
   { href: '/services/marketing', title: 'Marketing' },
 ];
 
@@ -17,7 +19,7 @@ const navLinks = [
   { href: '/contact', label: 'Kontakt' },
 ];
 
-const policyLinks = [{ href: '/privacy-police', label: 'Polityka Prywatności' }];
+const policyLinks = [{ href: '/privacy-policy', label: 'Polityka Prywatności' }];
 
 export default function Footer() {
   return (
@@ -33,9 +35,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               >
-                  <RiInstagramLine className="h-7 w-7 text-[#080808] transition hover:text-amber-500" aria-hidden="true" />
+                  <RiInstagramLine className="h-7 w-7 text-[#080808] transition hover:text-slate-500" aria-hidden="true" />
               </a>
             </div>
             */}
@@ -47,7 +49,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {title}
                   </Link>
@@ -62,7 +64,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                   </Link>
@@ -77,10 +79,13 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                   </Link>
+                  <button onClick={() => (window as any).ArteonConsent?.open()} className="mt-1 cursor-pointer hover:text-slate-500" aria-haspopup="dialog">
+                    Ustawienia cookies
+                  </button>
                 </li>
               ))}
             </ul>

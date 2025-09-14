@@ -46,21 +46,19 @@ export default function OfferContentPage() {
 
       <ContentFeatures />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ContentSteps />
 
-      <Gap size="sm" />
-
-      <Gap />
+      <Gap variant="line" />
 
       <PricingSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <WorkSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <FaqContent />
 
@@ -77,7 +75,7 @@ export default function OfferContentPage() {
         description="Jasny plan i odpowiedzialność po naszej stronie"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg6.jpg"
         overlay="black"
       />
     </>

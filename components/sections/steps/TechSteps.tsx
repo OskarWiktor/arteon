@@ -9,19 +9,19 @@ const TechStepsItems = [
   {
     icon: <FaWordpress className="h-8 w-8" />,
     title: 'Wordpress',
-    borderClassName: 'border-b-amber-500',
+    borderClassName: 'border-b-slate-500',
     description: <>Prosta edycja i sprawdzone rozwiązanie. Dobre dla lokalnych i krajowych biznesów. Dodatkowe zabezpieczenia i optymalizacje w cenie.</>,
   },
   {
     icon: <FaWebflow className="h-8 w-8" />,
     title: 'Webflow',
-    borderClassName: 'border-b-amber-500',
+    borderClassName: 'border-b-slate-500',
     description: <>Międzynarodowy stadard, pełna zgodność z WCAG 2.1, większa płynność i piękny wygląd. Idealne dla marek, które stawiają na wizerunek i wygodę edycji.</>,
   },
   {
     icon: <SiNextdotjs className="h-8 w-8" />,
     title: 'Next.js',
-    borderClassName: 'border-b-amber-500',
+    borderClassName: 'border-b-slate-500',
     description: <>Wydajność i skalowalność klasy produktowej. Idealne gdy potrzebujesz niestandardowych funkcji, integracji i niezawodniej prędkości.</>,
   },
 ];

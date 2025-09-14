@@ -14,7 +14,7 @@ interface HeroBannerProps {
   buttonTopFour?: string;
   buttonTopFourLink?: string;
   subtitle?: ReactNode;
-  title: ReactNode;
+  title?: ReactNode;
   description?: ReactNode;
   buttonAccent?: string;
   buttonAccentLink?: string;
@@ -75,11 +75,11 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} h-min-[540px] flex h-auto items-center overflow-hidden py-14 md:py-0`}
+        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[520px] items-center overflow-hidden py-14 md:py-0`}
         style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
-        <Wrapper className="relative flex h-auto items-center md:h-[540px]">
+        <Wrapper className="relative flex h-auto items-center">
           <div className={`max-w-[92vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass} break-words hyphens-auto`}>
             {subtitle && <p className={`text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
@@ -95,7 +95,7 @@ export default function HeroBanner({
                 </ul>
               </nav>
             )}
-            <h1 id="hero-title">{title}</h1>
+            {title && <h1 id="hero-title">{title}</h1>}
             {description && (
               <p id="hero-description" className={`mt-5 text-base leading-relaxed sm:text-lg ${toneMutedClass} max-w-prose [text-wrap:pretty]`}>
                 {description}
@@ -104,12 +104,12 @@ export default function HeroBanner({
             {(buttonAccent || buttonSecond) && (
               <div className={`mt-8 flex flex-wrap gap-3 ${justify}`}>
                 {buttonAccent && (
-                  <Button arrow variant="accent" link={buttonAccentLink}>
+                  <Button arrow link={buttonAccentLink}>
                     {buttonAccent}
                   </Button>
                 )}
                 {buttonSecond && (
-                  <Button arrow link={buttonSecondLink}>
+                  <Button arrow variant="accent" link={buttonSecondLink}>
                     {buttonSecond}
                   </Button>
                 )}

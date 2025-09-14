@@ -1,8 +1,6 @@
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 import HeroBaner from '@/components/sections/HeroBaner';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionBasic from '@/components/ui/sections/SectionBasic';
 import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 
@@ -13,27 +11,11 @@ export async function generateMetadata() {
 export default function OfferPage() {
   return (
     <>
-      <HeroBaner backgroundImage="/assets/bg/abstract-bg12.jpg" overlay="black" title="Lorem Ipsum Lorem Ipsum" description="njkbasdka sbdjabsd bjkbsajdb asdfasdas asf fawef eaf esf" />
+      <HeroBaner backgroundImage="/assets/bg/abstract-bg12.jpg" overlay="black" title="Nasze usługi" variant="center" />
 
       <Gap size="sm" />
 
-      <SectionInfo id="abcddd" title="Lorem ipsum uca sdilaw" description="sjdhjakhsd shduhas bda wd wkdw ahjw" />
-
-      <Gap />
-
       <ServicesSteps />
-
-      <Gap />
-
-      <SectionBasic
-        id="go-contact"
-        title="Gotowy, by stworzyć projekt dopasowany do Twojej marki?"
-        description="Opisz swoją działalność a my przygotujemy dla Ciebie bezpłatny plan działania"
-        imageSrc="/assets/test.jpg"
-        imageAlt="Zaproszenie do kontaktu"
-        btnOne="Przejdź do formularza"
-        btnOneLink="/contact"
-      ></SectionBasic>
 
       <Gap size="sm" />
     </>

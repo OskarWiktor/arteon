@@ -4,21 +4,15 @@ import SectionSteps from '../../ui/sections/SectionSteps';
 
 const WorkStepsItems = [
   {
-    icon: '1',
-    title: 'Rozmowa',
-    borderClassName: 'border-b-amber-500',
+    title: <><span className='text-slate-600 font-extrabold'>1 </span>Rozmowa</>,
     description: <>Opowiadasz nam o swojej marce, celach oraz wyzwaniach</>,
   },
   {
-    icon: '2',
-    title: 'Plan',
-    borderClassName: 'border-b-amber-500',
+    title: <><span className='text-slate-600 font-extrabold'>2 </span>Plan</>,
     description: <>Na podstawie Twojej wizji i naszej wiedzy, tworzymy plan działania</>,
   },
   {
-    icon: '3',
-    title: 'Realizacja',
-    borderClassName: 'border-b-amber-500',
+    title: <><span className='text-slate-600 font-extrabold'>3 </span>Realizacja</>,
     description: <>Realizujemy projekt, stale informując Cie o postępach</>,
   },
 ];

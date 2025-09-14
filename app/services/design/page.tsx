@@ -32,7 +32,7 @@ export default function OfferDesignPage() {
         buttonSecond="Portfolio"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg4.jpg"
+        backgroundImage="/assets/bg/abstract-bg15.jpg"
         overlay="black"
       />
 
@@ -53,17 +53,15 @@ export default function OfferDesignPage() {
 
       <DesignSteps />
 
-      <Gap size="sm" />
-
       <Gap variant="line" />
 
       <PricingSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <WorkSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <FaqDesign />
 
@@ -88,7 +86,7 @@ export default function OfferDesignPage() {
         description="Jasny plan i odpowiedzialność po naszej stronie"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg15.jpg"
         overlay="black"
       />
     </>

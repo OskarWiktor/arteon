@@ -1,33 +1,19 @@
 {
   "projects": [
     {
-      "slug": "meridol-accessibility",
-      "title": "Meridol Accessibility",
-      "short": "Dostosowanie strony do standardów WCAG z wykorzystaniem AEM i jQuery.",
-      "image": "/assets/projects/arteon-baners-meridol.jpg",
-      "link": "https://www.meridol.de/",
-      "category": ["strona", "sklep"]
-    },
-    {
-      "slug": "elmex-accessibility",
-      "title": "Elmex Accessibility",
-      "short": "Nowe komponenty i poprawki UI zgodne z WCAG w środowisku AEM.",
-      "image": "/assets/projects/arteon-baners-elmex.jpg",
-      "link": "https://www.elmex.de/",
-      "category": ["strona", "sklep"]
-    },
-    {
-      "slug": "sanex-accessibility",
-      "title": "Sanex Accessibility",
-      "short": "Implementacja contrast toola i dostępności komponentów w AEM.",
-      "image": "/assets/projects/arteon-baners-sanex.jpg",
-      "link": "https://www.sanex.co.uk/",
+      "slug": "msc-psychotherapy",
+      "title": "MSC Psychotherapy UK",
+      "short": "Redesign oraz rozbudowa strony dla angielskiego gabinetu psychoterapeutycznego",
+      "description": "test",
+      "image": "/assets/projects/arteon-baners-msc.png",
+      "link": "https://msc-psychotherapy.co.uk/",
       "category": ["strona", "sklep"]
     },
     {
       "slug": "pilka-nozna-pl",
       "title": "PilkaNożna.pl",
       "short": "Blog piłkarski oparty na WordPressie i Blade.",
+      "description": "test",
       "image": "/assets/projects/arteon-baners-pilkanozna-pl.jpg",
       "link": "https://pilkanozna.pl/",
       "category": ["blog"]
@@ -36,14 +22,43 @@
       "slug": "trilllizo",
       "title": "Trillizo",
       "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
+      "description": "test",
       "image": "/assets/projects/arteon-baners-trilllizo.jpg",
       "link": "https://trilllizo.com",
       "category": ["sklep"]
     },
     {
+      "slug": "meridol-accessibility",
+      "title": "Meridol Accessibility",
+      "short": "Dostosowanie strony do standardów WCAG z wykorzystaniem AEM i jQuery.",
+      "description": "test",
+      "image": "/assets/projects/arteon-baners-meridol.jpg",
+      "link": "https://www.meridol.de/",
+      "category": ["strona", "sklep"]
+    },
+    {
+      "slug": "elmex-accessibility",
+      "title": "Elmex Accessibility",
+      "short": "Nowe komponenty i poprawki UI zgodne z WCAG w środowisku AEM.",
+      "description": "test",
+      "image": "/assets/projects/arteon-baners-elmex.jpg",
+      "link": "https://www.elmex.de/",
+      "category": ["strona", "sklep"]
+    },
+    {
+      "slug": "sanex-accessibility",
+      "title": "Sanex Accessibility",
+      "short": "Implementacja contrast toola i dostępności komponentów w AEM.",
+      "description": "test",
+      "image": "/assets/projects/arteon-baners-sanex.jpg",
+      "link": "https://www.sanex.co.uk/",
+      "category": ["strona", "sklep"]
+    },
+    {
       "slug": "sanex",
       "title": "Sanex",
       "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
+      "description": "test",
       "image": "/assets/projects/arteon-baners-sanex.jpg",
       "link": "https://sanex.co.uk",
       "category": ["strona", "sklep"]
@@ -52,6 +67,7 @@
       "slug": "palmolive",
       "title": "Palmolive",
       "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
+      "description": "test",
       "image": "/assets/projects/arteon-baners-palmolive.jpg",
       "link": "https://palmolive.de",
       "category": ["strona", "sklep"]
@@ -60,6 +76,7 @@
       "slug": "colgate",
       "title": "Colgate",
       "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
+      "description": "test",
       "image": "/assets/projects/arteon-baners-colgate.jpg",
       "link": "https://www.colgate.de",
       "category": ["strona", "sklep"]
@@ -68,6 +85,7 @@
       "slug": "detergent-regulations",
       "title": "Detergent Regulations",
       "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
+      "description": "test",
       "image": "/assets/projects/arteon-baners-detergentregulations.jpg",
       "link": "https://www.detergentregulations.com/de-de",
       "category": ["strona", "blog"]

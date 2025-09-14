@@ -33,7 +33,7 @@ export default function OfferBlogPage() {
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg3.jpg"
+        backgroundImage="/assets/bg/abstract-bg7.jpg"
         overlay="black"
       />
 
@@ -50,7 +50,7 @@ export default function OfferBlogPage() {
 
       <BlogFeatures />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ProjectsOverview title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
 
@@ -58,19 +58,19 @@ export default function OfferBlogPage() {
 
       <TechSteps />
 
-      <Gap size="sm" />
+      <Gap />
 
       <BlogPrices />
 
-      <Gap />
+      <Gap variant="line" />
 
       <PricingSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <WorkSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <FaqBlog />
 
@@ -87,7 +87,7 @@ export default function OfferBlogPage() {
         description="Jasny plan i odpowiedzialność po naszej stronie"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg7.jpg"
         overlay="black"
       />
     </>

@@ -4,23 +4,19 @@ import SectionSteps from '../../ui/sections/SectionSteps';
 
 const ContactStepsItems = [
   {
-    icon: '1',
-    title: 'Wypełniasz formularz',
+    title: <><span className='text-slate-600 font-extrabold'>1 </span>Wypełniasz formularz</>,
     description: <>Opisujesz swój projekt: cel, zakres i wszelkie inspiracje</>,
   },
   {
-    icon: '2',
-    title: 'Analizujemy potrzeby',
+    title: <><span className='text-slate-600 font-extrabold'>2 </span>Analizujemy potrzeby</>,
     description: <>Sprawdzamy Twoją branżę, analizujemy wymagania i dopracowujemy szczegóły</>,
   },
   {
-    icon: '3',
-    title: 'Otrzymujesz ofertę',
+    title: <><span className='text-slate-600 font-extrabold'>3 </span>Otrzymujesz ofertę</>,
     description: <>Wysyłamy ofertę wraz z wyceną i przewidywanym terminem realizacji</>,
   },
   {
-    icon: '4',
-    title: 'Startujemy z projektem',
+    title: <><span className='text-slate-600 font-extrabold'>4 </span>Startujemy z projektem</>,
     description: <>Decydujesz, kiedy ruszamy. Realizujemy projekt etapami lub od razu</>,
   },
 ];

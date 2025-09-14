@@ -36,7 +36,7 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Linki, content, monitoring</li>
+          <li>Linki, Treści, monitoring</li>
           <li>Raporty efektów i rekomendacje</li>
           <li>Plan wzrostu widoczności</li>
         </ul>

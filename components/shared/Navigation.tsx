@@ -56,11 +56,11 @@ export default function Navigation() {
 // TO DO in Arteon v.1.2
             <div className="mr-2 lg:mr-4">
               <a href={`${getTargetDomain('pl')}${pathname}`}>
-                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>PL</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isPL ? 'text-slate-500' : 'text-[#2B2B2B] hover:text-slate-500'}`}>PL</button>
               </a>
               <span className="text-lg text-[#2B2B2B]"> / </span>
               <a href={`${getTargetDomain('en')}${pathname}`}>
-                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-amber-500' : 'text-[#2B2B2B] hover:text-amber-500'}`}>EN</button>
+                <button className={`cursor-pointer text-lg focus-visible:outline-2 focus-visible:outline-black ${isEN ? 'text-slate-500' : 'text-[#2B2B2B] hover:text-slate-500'}`}>EN</button>
               </a>
             </div>
 */}
@@ -68,24 +68,25 @@ export default function Navigation() {
             <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
               #MadeWithNext.js
             </a>
+              {/*
 
             <a
               href="https://www.instagram.com/arteon.pl"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
-              {/*
-              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-amber-500" aria-hidden="true" />
-            */}
+              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
             </a>
+                        */}
+
           </div>
 
           <button
             type="button"
             onClick={toggleMenu}
-            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:hidden"
+            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:hidden"
             aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
             aria-expanded={isOpen}
           >

@@ -33,7 +33,7 @@ export default function ContactForm() {
 
   const fieldClass =
     'h-11 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-gray-900 transition ' +
-    'focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+    'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   return (
     <Wrapper>
@@ -70,7 +70,7 @@ export default function ContactForm() {
           </p>
         )}
         {formStatus === 'success' && (
-          <p role="status" className="text-amber-500">
+          <p role="status" className="text-slate-500">
             Wiadomość wysłana! Odpowiemy tak szybko, jak to tylko możliwe
           </p>
         )}

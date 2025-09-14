@@ -25,7 +25,7 @@ export default function OfferWebPage() {
         title="Sklepy internetowe"
         description={
           <>
-            Projektujemy sklepy online, które sprzedają szybciej i skuteczniej. 
+            Projektujemy sklepy online, które sprzedają szybciej i skuteczniej.
             <strong>Płatności, dostawy i marketing</strong> w jednym systemie.
           </>
         }
@@ -34,7 +34,7 @@ export default function OfferWebPage() {
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg2.jpg"
+        backgroundImage="/assets/bg/abstract-bg13.jpg"
         overlay="black"
       />
 
@@ -51,7 +51,7 @@ export default function OfferWebPage() {
 
       <ShopFeatures />
 
-      <Gap />
+      <Gap variant="line" />
 
       <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
 
@@ -59,19 +59,19 @@ export default function OfferWebPage() {
 
       <TechSteps />
 
-      <Gap size="sm" />
+      <Gap />
 
       <ShopPrices />
 
-      <Gap />
+      <Gap variant="line" />
 
       <PricingSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <WorkSteps />
 
-      <Gap size="sm" />
+      <Gap variant="line" />
 
       <FaqShop />
 
@@ -88,7 +88,7 @@ export default function OfferWebPage() {
         description="Jasny plan i odpowiedzialność po naszej stronie"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg1.jpg"
+        backgroundImage="/assets/bg/abstract-bg13.jpg"
         overlay="black"
       />
     </>

@@ -11,7 +11,7 @@ export async function generateMetadata() {
 export default function ProjectsPage() {
   return (
     <>
-      <HeroBaner title="Projekty, które rosną razem z marką" backgroundImage="/assets/bg/abstract-bg12.jpg" overlay="black" />
+      <HeroBaner title="Projekty, które rosną razem z marką" variant="center" backgroundImage="/assets/bg/abstract-bg13.jpg" overlay="black" />
 
       <Gap size="sm" />
 

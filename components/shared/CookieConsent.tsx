@@ -169,7 +169,7 @@ export default function CookieConsent() {
                     Ustaw preferencje
                   </button>{' '}
                   •{' '}
-                  <a className="text-black underline underline-offset-2" href="/privacy-police" rel="noopener">
+                  <a className="text-black underline underline-offset-2" href="/privacy-policy" rel="noopener">
                     Polityka prywatności
                   </a>
                 </span>
@@ -242,10 +242,10 @@ export default function CookieConsent() {
                   onClick={() => saveAndClose({ analytics: false })}
                   className="inline-flex w-fit items-center rounded-md border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-black shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                 >
-                  Zapisz i odrzuć
+                  Odrzuć
                 </button>
                 <Button onClick={() => saveAndClose({ analytics: analyticsChoice })} size="small" variant="dark">
-                  Zapisz i akceptuj
+                  Zapisz
                 </Button>
               </div>
             </div>
