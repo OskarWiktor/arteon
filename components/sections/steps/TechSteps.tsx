@@ -30,7 +30,7 @@ export default function TechSteps() {
   return (
     <SectionSteps
       overlay="black"
-      backgroundImage="/assets/bg/abstract-bg1.jpg"
+      backgroundImage="/assets/bg/abstract-bg1.webp"
       items={TechStepsItems}
       title="Technologia służy celowi"
       subtitle="Nasza Technologia"

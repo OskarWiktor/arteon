@@ -32,7 +32,7 @@ export default function OfferDesignPage() {
         buttonSecond="Portfolio"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.jpg"
+        backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
 
@@ -86,7 +86,7 @@ export default function OfferDesignPage() {
         description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
         primaryLabel="Skontaktuj się"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg15.jpg"
+        backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
     </>

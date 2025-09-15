@@ -23,7 +23,7 @@ export default function HomePage() {
         title="Zbuduj markę, która rośnie i sprzedaje"
         subtitle="Know-how globalnych marek"
         description="Arteon - sprawdzone praktyki wielkich marek dla Twojej firmy. Od strategii, przez strony, po marketing."
-        backgroundImage="/assets/bg/abstract-bg2.jpg"
+        backgroundImage="/assets/bg/abstract-bg2.webp"
         overlay="black"
         variant="center"
       />
@@ -79,7 +79,7 @@ export default function HomePage() {
         primaryLink="/contact"
         secondaryLabel="Poznaj ofertę"
         secondaryLink="/services"
-        backgroundImage="/assets/bg/abstract-bg2.jpg"
+        backgroundImage="/assets/bg/abstract-bg2.webp"
         overlay="black"
       />
     </>

@@ -11,7 +11,7 @@ export async function generateMetadata() {
 export default function OfferPage() {
   return (
     <>
-      <HeroBaner backgroundImage="/assets/bg/abstract-bg12.jpg" overlay="black" title="Nasze usługi" variant="center" />
+      <HeroBaner backgroundImage="/assets/bg/abstract-bg12.webp" overlay="black" title="Nasze usługi" variant="center" />
 
       <Gap size="sm" />
 

@@ -33,7 +33,7 @@ export default function OfferBlogPage() {
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg7.jpg"
+        backgroundImage="/assets/bg/abstract-bg7.webp"
         overlay="black"
       />
 
@@ -87,7 +87,7 @@ export default function OfferBlogPage() {
         description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg7.jpg"
+        backgroundImage="/assets/bg/abstract-bg7.webp"
         overlay="black"
       />
     </>

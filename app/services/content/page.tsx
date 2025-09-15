@@ -29,7 +29,7 @@ export default function OfferContentPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/contact"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg6.jpg"
+        backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
       />
 
@@ -75,7 +75,7 @@ export default function OfferContentPage() {
         description="Tworzymy treści, które trafiają do ludzi i wspierają sprzedaż"
         primaryLabel="Skontaktuj się"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg6.jpg"
+        backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
       />
     </>

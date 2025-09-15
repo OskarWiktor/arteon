@@ -34,7 +34,7 @@ export default function OfferWebPage() {
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/projects"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg13.jpg"
+        backgroundImage="/assets/bg/abstract-bg13.webp"
         overlay="black"
       />
 
@@ -88,7 +88,7 @@ export default function OfferWebPage() {
         description="Dajemy Ci rozwiązanie gotowe do rozwoju - szybkie, stabilne i zgodne z przepisami"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg13.jpg"
+        backgroundImage="/assets/bg/abstract-bg13.webp"
         overlay="black"
       />
     </>

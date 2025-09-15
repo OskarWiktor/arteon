@@ -47,7 +47,7 @@ export default function Navigation() {
       <Wrapper>
         <nav className="flex h-16 items-center justify-between lg:h-18" aria-label="Nawigacja główna">
           <Link href="/">
-            <Image src="/assets/arteon-logo.png" width={160} height={50} alt="Arteon - logo firmy" priority />
+            <Image src="/assets/arteon-logo.png" width={140} height={50} alt="Arteon - logo firmy" priority />
           </Link>
           <DesktopNavigation />
 
