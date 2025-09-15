@@ -6,7 +6,7 @@
       "short": "Redesign oraz rozbudowa strony dla angielskiego gabinetu psychoterapeutycznego",
       "description": "test",
       "task": "test",
-      "image": "/assets/projects/arteon-baners-msc.png",
+      "image": "/assets/projects/arteon-baners-msc.webp",
       "link": "https://msc-psychotherapy.co.uk/",
       "category": ["strona", "sklep", "treść", "marketing", "grafika"]
     },
@@ -16,7 +16,7 @@
       "short": "Redesign oraz przebudowa bloga",
       "description": "test",
       "task": "Testowanie komponentów, tworzenie dokumentacji, praca z WordPressem i Blade, wdrażanie szablonów, zgłaszanie błędów i propozycji optymalizacji",
-      "image": "/assets/projects/arteon-baners-pilkanozna-pl.jpg",
+      "image": "/assets/projects/arteon-baners-pilkanozna-pl.webp",
       "link": "https://pilkanozna.pl/",
       "category": ["blog"]
     },
@@ -26,7 +26,7 @@
       "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
       "description": "Sklep internetowy z odzieżą, zrealizowany w WordPressie z użyciem Elementora Pro. Projekt obejmował dwie wersje językowe: polski (.pl) i angielski (.com)",
       "task": "Instalacja i konfiguracja WordPressa, projekt i implementacja UI, integracje (płatności, InPost, newsletter), optymalizacja SEO ( techniczne, zdjęcia, treść ), lokalizacja, dokumentacja, opieka powdrożeniowa",
-      "image": "/assets/projects/arteon-baners-trilllizo.jpg",
+      "image": "/assets/projects/arteon-baners-trilllizo.webp",
       "link": "https://trilllizo.com",
       "category": ["sklep"]
     },
@@ -36,7 +36,7 @@
       "short": "Dostosowanie strony do standardów WCAG (współpraca z VML)",
       "description": "Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM z wykorzystaniem JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony meridol.de do standardów dostępności WCAG.",
       "task": "Wdrożenie standardów WCAG 2.1, implementacja contrast tool, praca w jQuery i AEM, dostępność czytników ekranu, optymalizacja UI dla użytkowników z niepełnosprawnościami",
-      "image": "/assets/projects/arteon-baners-meridol.jpg",
+      "image": "/assets/projects/arteon-baners-meridol.webp",
       "link": "https://www.meridol.de/",
       "category": ["strona", "sklep"]
     },
@@ -46,7 +46,7 @@
       "short": "Nowe komponenty i poprawki UI zgodne z WCAG (współpraca z VML)",
       "description": "Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM z wykorzystaniem JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony elmex.de do standardów dostępności WCAG oraz wdrażanie nowych komponentów zgodnych z tymi wytycznymi.",
       "task": "Edycja dostępnych komponentów, optymalizacja UI zgodnie z WCAG 2.1, praca w jQuery i AEM, naprawa błędów wizualnych",
-      "image": "/assets/projects/arteon-baners-elmex.jpg",
+      "image": "/assets/projects/arteon-baners-elmex.webp",
       "link": "https://www.elmex.de/",
       "category": ["strona", "sklep"]
     },
@@ -56,7 +56,7 @@
       "short": "Implementacja contrast toola i dostępności komponentów (współpraca z VML)",
       "description": "Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM i rozwijany przy użyciu JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony sanex.co.uk do standardów dostępności WCAG.",
       "task": "Implementacja contrast tool, optymalizacja karuzeli, poprawa filtrów, zmiany UI zgodne z WCAG 2.1, praca w jQuery i AEM",
-      "image": "/assets/projects/arteon-baners-sanex.jpg",
+      "image": "/assets/projects/arteon-baners-sanex.webp",
       "link": "https://www.sanex.co.uk/",
       "category": ["strona", "sklep"]
     },
@@ -66,7 +66,7 @@
       "short": "Przygotowanie lokalizacji stron (współpraca z VML)",
       "description": "test",
       "task": "test",
-      "image": "/assets/projects/arteon-baners-sanex.jpg",
+      "image": "/assets/projects/arteon-baners-sanex.webp",
       "link": "https://sanex.co.uk",
       "category": ["strona", "sklep"]
     },
@@ -76,7 +76,7 @@
       "short": "Przygotowanie lokalizacji stron (współpraca z VML)",
       "description": "test",
       "task": "test",
-      "image": "/assets/projects/arteon-baners-palmolive.jpg",
+      "image": "/assets/projects/arteon-baners-palmolive.webp",
       "link": "https://palmolive.de",
       "category": ["strona", "sklep"]
     },
@@ -86,7 +86,7 @@
       "short": "Przygotowanie lokalizacji stron (współpraca z VML)",
       "description": "test",
       "task": "test",
-      "image": "/assets/projects/arteon-baners-colgate.jpg",
+      "image": "/assets/projects/arteon-baners-colgate.webp",
       "link": "https://www.colgate.de",
       "category": ["strona", "sklep"]
     },
@@ -96,7 +96,7 @@
       "short": "Przygotowanie lokalizacji oraz wdrożenie analityki (współpraca z VML)",
       "description": "test",
       "task": "test",
-      "image": "/assets/projects/arteon-baners-detergentregulations.jpg",
+      "image": "/assets/projects/arteon-baners-detergentregulations.webp",
       "link": "https://www.detergentregulations.com/de-de",
       "category": ["strona", "blog", "marketing"]
     }
