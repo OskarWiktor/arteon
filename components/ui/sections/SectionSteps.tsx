@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { JSX, ReactNode } from 'react';
 import Image from 'next/image';
 import Wrapper from '../Wrapper';
 import Button from '../Button';
@@ -11,6 +11,8 @@ interface SectionStepItem {
   subtitle?: string;
   description: ReactNode;
 }
+
+type HeadingLevel = 'h2' | 'h3';
 
 interface SectionStepsProps {
   title?: ReactNode;
@@ -26,6 +28,7 @@ interface SectionStepsProps {
   backgroundImage?: string;
   overlay?: 'none' | 'black' | 'white';
   disclaimer?: ReactNode;
+  headingLevel?: HeadingLevel;
 }
 
 export default function SectionSteps({
@@ -42,6 +45,7 @@ export default function SectionSteps({
   backgroundImage,
   overlay = 'none',
   disclaimer,
+  headingLevel = 'h2',
 }: SectionStepsProps) {
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
@@ -77,13 +81,33 @@ export default function SectionSteps({
     gridColsLg = 'lg:grid-cols-3';
   }
 
+  const SectionHeadingTag = (headingLevel || 'h2') as keyof JSX.IntrinsicElements;
+  const ArticleHeadingTag = (headingLevel === 'h2' ? 'h3' : 'h4') as keyof JSX.IntrinsicElements;
+
   return (
-    <section className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`} style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined} data-section="steps">
-      {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
+    <section
+      className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${bgPadY}`}
+      style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
+      data-section="steps"
+      aria-labelledby={title ? 'steps-title' : undefined}
+    >
+      {hasBg && overlay !== 'none' && (
+        <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />
+      )}
 
       <Wrapper className="relative z-10 pb-8">
-        {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
-        {title && <h3 className={toneTextClass}>{title}</h3>}
+        {subtitle && (
+          <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>
+            {subtitle}
+          </span>
+        )}
+
+        {title && (
+          <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3`}>
+            {title}
+          </SectionHeadingTag>
+        )}
+
         {description && <p className={`max-w-3xl pt-3 pb-2 ${toneMutedClass}`}>{description}</p>}
 
         <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
@@ -92,7 +116,16 @@ export default function SectionSteps({
               <li key={index} className="flex flex-col items-stretch">
                 <article className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
                   <div className="flex items-center">
-                    {imageSrc && <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none mr-2 select-none" aria-hidden={imageAlt ? undefined : true} />}
+                    {imageSrc && (
+                      <Image
+                        src={imageSrc}
+                        alt={imageAlt ?? ''}
+                        width={36}
+                        height={36}
+                        className="pointer-events-none mr-2 select-none"
+                        aria-hidden={imageAlt ? undefined : true}
+                      />
+                    )}
 
                     {icon && (
                       <span className="mr-2 text-3xl font-bold text-slate-500" aria-hidden={true}>
@@ -100,8 +133,9 @@ export default function SectionSteps({
                       </span>
                     )}
 
-                    <h4 className="z-10">{itemTitle}</h4>
+                    <ArticleHeadingTag className="z-10 h4">{itemTitle}</ArticleHeadingTag>
                   </div>
+
                   {itemSubtitle && <span className="mt-1 text-base text-[#5e5e5e]">{itemSubtitle}</span>}
 
                   <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
