@@ -1,16 +1,6 @@
 'use client';
 
-import {
-  RiSearchLine,
-  RiBarChart2Line,
-  RiMegaphoneLine,
-  RiFundsLine,
-  RiBrushLine,
-  RiShareForwardLine,
-  RiSettings3Line,
-  RiFileList2Line,
-  RiUserHeartLine,
-} from 'react-icons/ri';
+import { RiSearchLine, RiBarChart2Line, RiMegaphoneLine, RiFundsLine, RiBrushLine, RiShareForwardLine, RiSettings3Line, RiFileList2Line, RiUserHeartLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 

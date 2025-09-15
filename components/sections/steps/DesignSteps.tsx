@@ -1,16 +1,6 @@
 'use client';
 
-import {
-  RiPencilRuler2Line,
-  RiLayoutMasonryLine,
-  RiStackLine,
-  RiBrushLine,
-  RiFileTextLine,
-  RiArchiveDrawerLine,
-  RiShoppingBag3Line,
-  RiImageLine,
-  RiAppsLine,
-} from 'react-icons/ri';
+import { RiPencilRuler2Line, RiLayoutMasonryLine, RiStackLine, RiBrushLine, RiFileTextLine, RiArchiveDrawerLine, RiShoppingBag3Line, RiImageLine, RiAppsLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
@@ -27,7 +17,9 @@ const items = [
           <li>Wektory i warianty kolorystyczne gotowe do użycia</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń projekt</Button>
+          <Button arrow link="/kontakt">
+            Wyceń projekt
+          </Button>
         </div>
       </div>
     ),
@@ -44,7 +36,9 @@ const items = [
           <li>Pliki wektorowe, gotowe do wdrożeń</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń projekt</Button>
+          <Button arrow link="/kontakt">
+            Wyceń projekt
+          </Button>
         </div>
       </div>
     ),
@@ -61,7 +55,9 @@ const items = [
           <li>Rolki: proste i z animacjami</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń projekt</Button>
+          <Button arrow link="/kontakt">
+            Wyceń projekt
+          </Button>
         </div>
       </div>
     ),
@@ -78,7 +74,9 @@ const items = [
           <li>Banery i roll-upy gotowe do druku</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń projekt</Button>
+          <Button arrow link="/kontakt">
+            Wyceń projekt
+          </Button>
         </div>
       </div>
     ),
@@ -95,7 +93,9 @@ const items = [
           <li>Pliki do druku i do sieci</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń projekt</Button>
+          <Button arrow link="/kontakt">
+            Wyceń projekt
+          </Button>
         </div>
       </div>
     ),
@@ -112,7 +112,9 @@ const items = [
           <li>Czytelność na półce i w e-commerce</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń projekt</Button>
+          <Button arrow link="/kontakt">
+            Wyceń projekt
+          </Button>
         </div>
       </div>
     ),
@@ -129,7 +131,9 @@ const items = [
           <li>Gotowe do wdrożenia w Next.js / Webflow</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Zapytaj o wycenę</Button>
+          <Button arrow link="/kontakt">
+            Zapytaj o wycenę
+          </Button>
         </div>
       </div>
     ),
@@ -146,7 +150,9 @@ const items = [
           <li>Pliki gotowe do druku</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Zapytaj o wycenę</Button>
+          <Button arrow link="/kontakt">
+            Zapytaj o wycenę
+          </Button>
         </div>
       </div>
     ),
@@ -163,7 +169,9 @@ const items = [
           <li>Treść i napisy w pakiecie</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Zapytaj o wycenę</Button>
+          <Button arrow link="/kontakt">
+            Zapytaj o wycenę
+          </Button>
         </div>
       </div>
     ),

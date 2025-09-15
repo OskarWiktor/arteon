@@ -28,7 +28,6 @@ const faqItems = [
   },
 ];
 
-
 export default function FaqContent() {
   return (
     <Wrapper>

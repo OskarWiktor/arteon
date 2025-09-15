@@ -1,16 +1,6 @@
 'use client';
 
-import {
-  RiFileTextLine,
-  RiArticleLine,
-  RiShoppingCartLine,
-  RiShareForwardLine,
-  RiFilePdfLine,
-  RiBookOpenLine,
-  RiChatQuoteLine,
-  RiPencilLine,
-  RiLightbulbFlashLine,
-} from 'react-icons/ri';
+import { RiFileTextLine, RiArticleLine, RiShoppingCartLine, RiShareForwardLine, RiFilePdfLine, RiBookOpenLine, RiChatQuoteLine, RiPencilLine, RiLightbulbFlashLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 

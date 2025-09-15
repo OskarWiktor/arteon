@@ -17,7 +17,6 @@ export default function ProjectsPage() {
       <ProjectWithFilters />
 
       <Gap size="sm" />
-
     </>
   );
 }
