@@ -18,7 +18,7 @@ const items = [
           <li>Dopasowanie technologii do Twoich celów</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/www">
+          <Button arrow link="/services/websites">
             Sprawdź ofertę
           </Button>
         </div>
@@ -38,7 +38,7 @@ const items = [
           <li>Bezpłatne szkolenie PDF z obsługi strony</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/shops">
+          <Button arrow link="/services/online-stores">
             Sprawdź ofertę
           </Button>
         </div>
@@ -58,7 +58,7 @@ const items = [
           <li>Bezpłatne szkolenie PDF z obsługi strony</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/blog-seo">
+          <Button arrow link="/services/online-blogs">
             Sprawdź ofertę
           </Button>
         </div>
