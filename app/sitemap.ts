@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}${path}`,
     lastModified: now,
     changeFrequency: 'weekly',
-    priority: path === '/' ? 1 : 0.7,
+    priority: path === '/' ? 1 : 0.8,
   }))
 
   const projects = (projectsData as any).projects ?? []
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}/projects/${p.slug}`,
     lastModified: p.updatedAt ? new Date(p.updatedAt) : now,
     changeFrequency: 'monthly',
-    priority: 0.6,
+    priority: 0.4,
   }))
 
   return [...staticEntries, ...projectEntries]
