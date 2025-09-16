@@ -10,7 +10,6 @@ import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import BlogFeatures from '@/components/sections/features/BlogFeatures';
 import FaqBlog from '@/components/sections/faqs/FaqBlog';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import Keywords from '@/components/sections/Keywords';
 import BlogPrices from '@/components/sections/prices/BlogPrices';
 import { RiArticleLine, RiSearchLine, RiShieldCheckLine, RiCustomerService2Line } from 'react-icons/ri';
 
@@ -79,8 +78,6 @@ export default function OfferBlogPage() {
       <ServicesSteps />
 
       <Gap size="sm" />
-
-      <Keywords keys="Blogi internetowe, blog firmowy, blog ekspercki, blog premium Webflow, blog custom Next.js, blog WordPress, artykuły blogowe SEO, integracja newslettera, platformy contentowe, CMS dla bloga, blog responsywny, blog zgodny z WCAG 2.1 AA, redakcja treści blogowych, pakiety artykułów, blog z AI, blogi firmowe Kraków, blogi dla e-commerce, tworzenie treści na bloga, publikacje blogowe, optymalizacja SEO bloga" />
 
       <CTABaner
         title="Czas na blog, który buduje Twoją pozycję"

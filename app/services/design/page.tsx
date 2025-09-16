@@ -8,7 +8,6 @@ import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import DesignFeatures from '@/components/sections/features/DesignFeatures';
 import FaqDesign from '@/components/sections/faqs/FaqDesign';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import Keywords from '@/components/sections/Keywords';
 import DesignSteps from '@/components/sections/steps/DesignSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
 
@@ -70,16 +69,6 @@ export default function OfferDesignPage() {
       <ServicesSteps />
 
       <Gap size="sm" />
-
-      <Keywords
-        keys="Projektowanie logo, identyfikacja wizualna, branding, rebranding, brand book, księga znaku, system identyfikacji,
-  projekty graficzne dla firm, palety kolorów, typografia marki, szablony social media, grafiki Instagram i Facebook,
-  karuzele i stories, rolki video, montaż materiałów wideo, obróbka zdjęć pod www, materiały drukowane: wizytówki, ulotki, katalogi, banery,
-  projekty firmowe na ubrania, szablony prezentacji, infografiki, publikacje i książki, projekty etykiet i opakowań,
-  grafiki wektorowe Adobe CC, mockupy, spójny design do stron www i sklepów, projekty w Figmie, design systemy dla marek,
-  branding psychologiczny, spójność wizualna online i offline, grafika dla e-commerce, content do social media wraz z treścią,
-  projekty graficzne szyte na miarę, minimalizm i prestiż w designie"
-      />
 
       <CTABaner
         title="Nadaj marce wyjątkową tożsamość"

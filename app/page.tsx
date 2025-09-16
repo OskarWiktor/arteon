@@ -2,7 +2,6 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import ArteonFeatures from '@/components/sections/features/ArteonFeatures';
 import HeroBaner from '@/components/sections/HeroBaner';
-import Keywords from '@/components/sections/Keywords';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import Mission from '@/components/sections/steps/Mission';
@@ -64,13 +63,6 @@ export default function HomePage() {
       <FeesSteps />
 
       <Gap size="sm" />
-
-      <Keywords
-        keys="Strony internetowe, sklepy online, blogi firmowe, projektowanie logo, identyfikacja wizualna, branding, marketing internetowy, pozycjonowanie stron (SEO), kampanie Google Ads i Facebook Ads,
-          copywriting, tworzenie treści, social media, automatyzacje marketingowe, audyty SEO i UX, dostępność cyfrowa WCAG 2.1 AA, polityka prywatności i regulaminy, projektowanie UX/UI, responsywne
-          strony www, Next.js, Webflow, WordPress, WooCommerce, aplikacje webowe, optymalizacja Core Web Vitals, analityka internetowa, integracje płatności i systemów dostaw, treści do e-commerce,
-          materiały do druku: wizytówki, ulotki, katalogi."
-      />
 
       <CTABaner
         title="Zacznijmy od rozmowy"

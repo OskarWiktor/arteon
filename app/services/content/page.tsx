@@ -8,7 +8,6 @@ import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import FaqContent from '@/components/sections/faqs/FaqContent';
 import ContentFeatures from '@/components/sections/features/ContentFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import Keywords from '@/components/sections/Keywords';
 import ContentSteps from '@/components/sections/steps/ContentSteps';
 import { RiBarChart2Fill, RiBookOpenLine, RiCustomerService2Line, RiBrushLine } from 'react-icons/ri';
 
@@ -67,8 +66,6 @@ export default function OfferContentPage() {
       <ServicesSteps />
 
       <Gap size="sm" />
-
-      <Keywords keys="Treści marketingowe, copywriting SEO, artykuły eksperckie, treści na strony www, treści sprzedażowe, storytelling marki, redakcja treści pod konwersję, scenariusze do rolek, opisy produktów e-commerce, opisy kategorii SEO, treści do social media, oferty sprzedażowe PDF, case studies, prezentacje sprzedażowe, blog firmowy, język marki, CTA psychologiczne, korekta treści, treści wizerunkowe, pakiety artykułów, treści dopasowane do archetypu" />
 
       <CTABaner
         title="Stwórzmy treści, które działają jak magnez"

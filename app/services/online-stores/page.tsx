@@ -11,7 +11,6 @@ import ShopFeatures from '@/components/sections/features/ShopFeatures';
 import ShopPrices from '@/components/sections/prices/ShopPrices';
 import FaqShop from '@/components/sections/faqs/FaqShop';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import Keywords from '@/components/sections/Keywords';
 import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill } from 'react-icons/ri';
 
 export async function generateMetadata() {
@@ -80,8 +79,6 @@ export default function OfferWebPage() {
       <ServicesSteps />
 
       <Gap size="sm" />
-
-      <Keywords keys="Sklepy internetowe, projektowanie e-commerce, WooCommerce, Webflow Ecommerce, Next.js sklepy custom, projekt sklepu internetowego, integracje płatności, integracje dostaw, koszyk i checkout, SEO sklepów online, opisy produktów SEO, migracja sklepów WordPress, sklep do 50 produktów, sklep średni do 300 produktów, sklep premium, e-commerce dla firm, dodawanie produktów CSV, obsługa e-commerce, sklepy internetowe Kraków, sklepy online Polska" />
 
       <CTABaner
         title="Zbudujmy sklep, który rozwija się z Tobą"

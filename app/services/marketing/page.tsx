@@ -8,7 +8,6 @@ import MarketingFeatures from '@/components/sections/features/MarketingFeatures'
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import FaqMarketing from '@/components/sections/faqs/FaqMarketing';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import Keywords from '@/components/sections/Keywords';
 import MarketingSteps from '@/components/sections/steps/MarketingSteps';
 import { RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine } from 'react-icons/ri';
 
@@ -68,8 +67,6 @@ export default function OfferMarketingPage() {
       <ServicesSteps />
 
       <Gap size="sm" />
-
-      <Keywords keys="Marketing internetowy, SEO techniczne, SEO on-page, audyt SEO, reklamy Google Ads, reklamy Facebook Ads, reklamy Instagram, kampanie reklamowe, social media marketing, prowadzenie Instagrama, prowadzenie Facebooka, strategie marketingowe, analiza konkurencji, automatyzacja social media, branding emocjonalny, archetyp marki, oferta sprzedażowa Apple Why How What, psychologia marki, marketing online dla firm, strategie komunikacji" />
 
       <CTABaner
         title="Rozwiń markę dobrą strategią"

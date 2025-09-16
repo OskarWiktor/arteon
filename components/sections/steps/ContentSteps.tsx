@@ -186,7 +186,7 @@ export default function ContentSteps() {
   return (
     <SectionSteps
       items={items}
-      title="Oferta treści"
+      title="Oferta tworzenia treści"
       subtitle="Czytelnie i skutecznie"
       description="Teksty, które pozycjonują i sprzedają - od strony www, przez blog, po e-commerce i social media."
       btnOne="Skontaktuj się"
