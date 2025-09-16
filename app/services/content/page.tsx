@@ -71,8 +71,8 @@ export default function OfferContentPage() {
       <Keywords keys="Treści marketingowe, copywriting SEO, artykuły eksperckie, treści na strony www, treści sprzedażowe, storytelling marki, redakcja treści pod konwersję, scenariusze do rolek, opisy produktów e-commerce, opisy kategorii SEO, treści do social media, oferty sprzedażowe PDF, case studies, prezentacje sprzedażowe, blog firmowy, język marki, CTA psychologiczne, korekta treści, treści wizerunkowe, pakiety artykułów, treści dopasowane do archetypu" />
 
       <CTABaner
-        title="Stwórzmy treść, który działa jak magnez"
-        description="Tworzymy treści, które trafiają do ludzi i wspierają sprzedaż"
+        title="Stwórzmy treści, które działają jak magnez"
+        description="Tworzymy treści, które trafiają do ludzi oraz algorytmów, wspierając sprzedaż"
         primaryLabel="Skontaktuj się"
         primaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg6.webp"

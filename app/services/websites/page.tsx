@@ -25,7 +25,7 @@ export default function OfferWebPage() {
         title="Strony internetowe"
         description={
           <>
-            Tworzymy strony WWW, które łączą estetykę, technologię i skuteczność. <strong>Standard globalnych marek</strong> - dla Twojego biznesu.
+            Tworzymy strony WWW, które łączą estetykę, technologię i psychologię. <strong>Standard globalnych marek</strong> - dla Twojego biznesu.
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -84,7 +84,7 @@ export default function OfferWebPage() {
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"
-        description="JPokaż się w sieci z profesjonalnym wizerunkiem"
+        description="Pokaż się w sieci z profesjonalnym wizerunkiem"
         primaryLabel="Wyceń projekt"
         primaryLink="/contact"
         backgroundImage="/assets/bg/abstract-bg12.webp"

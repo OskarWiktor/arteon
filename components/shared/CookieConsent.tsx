@@ -231,10 +231,7 @@ export default function CookieConsent() {
 
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <span className="text-sm font-medium text-black">
-                W każdej chwili możesz zmienić decyzję:{' '}
-                <button className="cursor-pointer border-b border-b-slate-900 text-black" onClick={() => (window as any).ArteonConsent?.open()}>
-                  Zarządzaj zgodą
-                </button>
+                W każdej chwili możesz zmienić decyzję
               </span>
 
               <div className="flex gap-2">

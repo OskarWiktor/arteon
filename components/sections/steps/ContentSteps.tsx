@@ -188,7 +188,7 @@ export default function ContentSteps() {
       items={items}
       title="Oferta treści"
       subtitle="Czytelnie i skutecznie"
-      description="Teksty, które pozycjonują i sprzedają — od strony www, przez blog, po e-commerce i social media."
+      description="Teksty, które pozycjonują i sprzedają - od strony www, przez blog, po e-commerce i social media."
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
       btnOneLink="/contact"

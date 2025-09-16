@@ -184,7 +184,7 @@ export default function MarketingSteps() {
       items={items}
       title="Oferta marketingu"
       subtitle="Skutecznie i przejrzyście"
-      description="SEO, reklamy i social — opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
+      description="SEO, reklamy i social - opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
       btnOneLink="/contact"

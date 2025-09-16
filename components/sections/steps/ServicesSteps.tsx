@@ -12,10 +12,10 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Nowoczesny design + SEO w cenie</li>
+          <li>Nowoczesny wygląd i redakcja treści pod sprzedaż</li>
           <li>Darmowe wsparcie prawne</li>
-          <li>Bezpłatne szkolenie PDF z obsługi strony</li>
           <li>Dopasowanie technologii do Twoich celów</li>
+          <li>Bezpłatne szkolenie PDF z obsługi strony</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/services/websites">
@@ -32,10 +32,10 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Płatności online i szybki checkout</li>
-          <li>Łatwa edycja produktów</li>
+          <li>Konfiguracja płatności i dostaw</li>
+          <li>Łatwa edycja produktów i kategorii</li>
           <li>Darmowe wsparcie prawne</li>
-          <li>Bezpłatne szkolenie PDF z obsługi strony</li>
+          <li>Bezpłatne Szkolenie PDF dla właściciela sklepu</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/services/online-stores">
@@ -52,10 +52,10 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Redakcja treści i SEO w cenie</li>
           <li>Proste systemy tworzenia treści</li>
+          <li>Techniczne SEO w cenie</li>
           <li>Darmowe wsparcie prawne</li>
-          <li>Bezpłatne szkolenie PDF z obsługi strony</li>
+          <li>Bezpłatne szkolenie PDF z obsługi bloga</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/services/online-blogs">
@@ -72,10 +72,10 @@ const items = [
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Loga i identyfikacja wizualna</li>
-          <li>Materiały do druku i online</li>
+          <li>Loga i identyfikacje wizualne</li>
+          <li>Materiały do druku</li>
           <li>Szablony pod social media</li>
-          <li>Pliki wektorowe i instrukcje w cenie</li>
+          <li>Makiety stron</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/services/design">
@@ -133,7 +133,7 @@ export default function ServicesSteps() {
       items={items}
       title="Poznaj nasze usługi"
       subtitle="Partner"
-      description="Sprawdź szczegóły naszej oferty lub umów sie na bezpłatne konsultacje"
+      description="Posiadamy szeroką ofertę, dzięki czemu, nie zależnie od Twojej branży, celów jak i budżetu, jesteśmy w stanie zrealizować Twój plan"
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
       btnOneLink="/contact"

@@ -1,5 +1,5 @@
 import FeatureGrid, { FeatureItem } from '../FeatureGrid';
-import { RiPencilRuler2Line, RiArticleLine, RiShieldCheckLine, RiDeviceLine, RiDatabase2Line } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiArticleLine, RiShieldCheckLine, RiDeviceLine, RiDatabase2Line, RiBookOpenLine } from 'react-icons/ri';
 
 import { IoAccessibility } from 'react-icons/io5';
 import { GoLaw } from 'react-icons/go';
@@ -33,6 +33,10 @@ const items: FeatureItem[] = [
     title: 'Łatwe zarządzanie treścią (CMS)',
     icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
   },
+    {
+      title: 'Darmowe, dedykowane szkolenie PDF z obsługi',
+      icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+    },
 ];
 
 export default function WebFeatures() {

@@ -15,14 +15,14 @@ const missionItems = [
     imageAlt: 'Ziemia',
     title: 'Stabilny',
     subtitle: 'Ziemia',
-    description: <p>Budujemy solidne fundamenty: SEO, zgodność z prawem i przejrzysta struktura</p>,
+    description: <p>Budujemy solidne fundamenty: SEO, zgodność z prawem i przejrzystą strukturę</p>,
   },
   {
     imageSrc: '/assets/ogien.png',
     imageAlt: 'Ogień',
     title: 'Aktywny',
     subtitle: 'Ogień',
-    description: <p>Wprowadzamy energię - marketing, który przyciąga klientów i skaluje Twój biznes</p>,
+    description: <p>Wprowadzamy energię - marketing, który przyciąga odpowiednich klientów i skaluje Twój biznes</p>,
   },
   {
     imageSrc: '/assets/powietrze.png',

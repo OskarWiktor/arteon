@@ -91,16 +91,10 @@ export default function SectionSteps({
       data-section="steps"
       aria-labelledby={title ? 'steps-title' : undefined}
     >
-      {hasBg && overlay !== 'none' && (
-        <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />
-      )}
+      {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative z-10 pb-8">
-        {subtitle && (
-          <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>
-            {subtitle}
-          </span>
-        )}
+        {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
 
         {title && (
           <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3`}>
@@ -116,16 +110,7 @@ export default function SectionSteps({
               <li key={index} className="flex flex-col items-stretch">
                 <article className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
                   <div className="flex items-center">
-                    {imageSrc && (
-                      <Image
-                        src={imageSrc}
-                        alt={imageAlt ?? ''}
-                        width={36}
-                        height={36}
-                        className="pointer-events-none mr-2 select-none"
-                        aria-hidden={imageAlt ? undefined : true}
-                      />
-                    )}
+                    {imageSrc && <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none mr-2 select-none" aria-hidden={imageAlt ? undefined : true} />}
 
                     {icon && (
                       <span className="mr-2 text-3xl font-bold text-slate-500" aria-hidden={true}>
@@ -133,7 +118,7 @@ export default function SectionSteps({
                       </span>
                     )}
 
-                    <ArticleHeadingTag className="z-10 h4">{itemTitle}</ArticleHeadingTag>
+                    <ArticleHeadingTag className="h4 z-10">{itemTitle}</ArticleHeadingTag>
                   </div>
 
                   {itemSubtitle && <span className="mt-1 text-base text-[#5e5e5e]">{itemSubtitle}</span>}

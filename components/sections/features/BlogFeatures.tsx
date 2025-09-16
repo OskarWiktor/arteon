@@ -1,5 +1,5 @@
 import FeatureGrid, { FeatureItem } from '../FeatureGrid';
-import { RiPencilRuler2Line, RiDeviceLine, RiDatabase2Line, RiBarChart2Line, RiShareForwardLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiDeviceLine, RiDatabase2Line, RiBarChart2Line, RiShareForwardLine, RiBookOpenLine } from 'react-icons/ri';
 
 import { IoAccessibility } from 'react-icons/io5';
 import { GoLaw } from 'react-icons/go';
@@ -14,7 +14,7 @@ const items: FeatureItem[] = [
     icon: <IoAccessibility className="h-5 w-5 text-slate-500" />,
   },
   {
-    title: 'Wsparcie prawne: polityka prywatności i regulaminy',
+    title: 'Wsparcie prawne: polityka prywatności, regulaminy',
     icon: <GoLaw className="h-6 w-6 text-slate-500" />,
   },
   {
@@ -32,6 +32,10 @@ const items: FeatureItem[] = [
   {
     title: 'Integracja z social mediami i newsletterem',
     icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
+  },
+  {
+    title: 'Darmowe, dedykowane szkolenie PDF z obsługi',
+    icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
   },
 ];
 

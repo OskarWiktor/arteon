@@ -44,7 +44,7 @@ export default function Filters({ selected, onChange }: Props) {
               </Button>
               {primarycategorys.map((category) => (
                 <Button key={category} variant={selected.primary === category ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, primary: category })}>
-                  {category}
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
                 </Button>
               ))}
             </div>
@@ -58,7 +58,7 @@ export default function Filters({ selected, onChange }: Props) {
               </Button>
               {secondarycategorys.map((category) => (
                 <Button key={category} variant={selected.secondary === category ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, secondary: category })}>
-                  {category}
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
                 </Button>
               ))}
             </div>

@@ -21,7 +21,7 @@ const items: FeatureItem[] = [
     icon: <IoAccessibility className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Wsparcie prawne - polityki i regulaminy',
+    title: 'Wsparcie prawne - polityki, regulaminy',
     icon: <GoLaw className="h-6 w-6 text-slate-500" />,
   },
   {
@@ -29,7 +29,7 @@ const items: FeatureItem[] = [
     icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Łatwe zarządzanie treściami i produktami (CMS)',
+    title: 'Łatwe zarządzanie treściami i produktami',
     icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
   },
   {
@@ -37,7 +37,7 @@ const items: FeatureItem[] = [
     icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Dedykowane szkolenie i instrukcje',
+    title: 'Dedykowane szkolenia i instrukcje',
     icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
   },
   {
@@ -45,7 +45,7 @@ const items: FeatureItem[] = [
     icon: <MdSupportAgent className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Inspiracje z globalnych marek',
+    title: 'Standard globalnych marek',
     icon: <HiSparkles className="h-6 w-6 text-slate-500" />,
   },
 ];
