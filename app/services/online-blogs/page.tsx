@@ -14,7 +14,7 @@ import BlogPrices from '@/components/sections/prices/BlogPrices';
 import { RiArticleLine, RiSearchLine, RiShieldCheckLine, RiCustomerService2Line } from 'react-icons/ri';
 
 export async function generateMetadata() {
-  return generatePageMetadata('blog');
+  return generatePageMetadata('onlineBlogs');
 }
 
 export default function OfferBlogPage() {

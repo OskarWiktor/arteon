@@ -14,7 +14,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill } from 'react-icons/ri';
 
 export async function generateMetadata() {
-  return generatePageMetadata('ecommerce');
+  return generatePageMetadata('onlineStores');
 }
 
 export default function OfferWebPage() {

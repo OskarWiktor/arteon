@@ -1,27 +1,6 @@
 import { Metadata } from 'next';
 
 const metadataMap: MetadataMap = {
-  contact: {
-    pl: {
-      title: 'Kontakt - wycena strony, sklepu, brandingu | Arteon',
-      description: 'Skontaktuj się z Arteon i opisz swój projekt strony, sklepu lub bloga. Szybko przygotujemy ofertę i plan działania dopasowany do Twoich potrzeb.',
-      keywords: [
-        'reklamy online',
-        'nowa strona firmowa',
-        'branding i design',
-        'seo i reklama',
-        'projekt graficzny',
-      ],
-    },
-    en: {
-      title: 'Contact | Arteon',
-      description: 'Get in touch with Arteon and describe your website, store, or blog project. We’ll quickly prepare a tailored offer and action plan to meet your needs.',
-      keywords: [
-        'contact Arteon',
-      ],
-    },
-  },
-
   home: {
     pl: {
       title: 'Strony, sklepy, branding i marketing | Arteon',
@@ -48,7 +27,7 @@ const metadataMap: MetadataMap = {
   projects: {
     pl: {
       title: 'Portfolio - strony, sklepy, grafika i marketing | Arteon',
-      description: 'Zobacz wybrane Realizacje Arteon: strony internetowe, sklepy, blogi, grafiki i kampanie marketingowe. Tworzymy skuteczne i estetyczne rozwiązania dopasowane do potrzeb klientów.',
+      description: 'Zobacz nasze realizacje: strony WWW, sklepy e-commerce, identyfikacje wizualne i kampanie. Projekty, które działają.',
       keywords: [
         'realizacje stron internetowych',
         'Realizacje sklepów internetowych',
@@ -68,7 +47,7 @@ const metadataMap: MetadataMap = {
   offer: {
     pl: {
       title: 'Usługi - strony, sklepy, branding i marketing | Arteon',
-      description: 'Poznaj pełną ofertę Arteon: tworzenie stron, sklepów, blogów, projektowanie graficzne, content marketing, kampanie reklamowe i kompleksowy branding.',
+      description: 'Zobacz nasze realizacje: strony WWW, sklepy e-commerce, identyfikacje wizualne i kampanie. Projekty, które działają.',
       keywords: [
         'tworzenie stron internetowych',
         'tworzenie sklepów internetowych',
@@ -90,7 +69,7 @@ const metadataMap: MetadataMap = {
   websites: {
     pl: {
       title: 'Strony internetowe - WordPress, Webflow, Next.js | Arteon',
-      description: 'Tworzymy nowoczesne, szybkie i responsywne strony internetowe dopasowane do Twoich potrzeb. Arteon to połączenie estetyki, funkcjonalności i skuteczności',
+      description: 'Tworzymy szybkie, dostępne i responsywne strony. WordPress, Webflow i Next.js. SEO i WCAG w standardzie.',
       keywords: [
         'strony internetowe',
         'tworzenie stron internetowych',
@@ -108,7 +87,7 @@ const metadataMap: MetadataMap = {
     },
   },
 
-  ecommerce: {
+  onlineStores: {
     pl: {
       title: 'Sklepy internetowe - WooCommerce, Webflow, Next.js | Arteon',
       description: 'Projektujemy funkcjonalne i atrakcyjne sklepy internetowe, które zwiększają sprzedaż i ułatwiają zarządzanie. Arteon - Twój partner w e-commerce.',
@@ -128,11 +107,32 @@ const metadataMap: MetadataMap = {
     },
   },
 
+    onlineBlogs: {
+    pl: {
+      title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
+      description: 'Budujemy blogi firmowe i eksperckie. SEO, CMS, UX i szkolenie. Publikuj treści, które przyciągają klientów.',
+      keywords: [
+        'blogi internetowe',
+        'tworzenie blogów',
+        'projektowanie blogów internetowych',
+        'blog SEO',
+        'blog dla marki osobistej',
+      ],
+    },
+    en: {
+      title: 'Online Blogs | Arteon',
+      description: 'We create functional and aesthetic online blogs that attract readers and support your brand. Professional blog development tailored to your needs.',
+      keywords: [
+        'Arteon online blogs',
+      ],
+    },
+  },
+
   marketing: {
     pl: {
       title: 'Marketing internetowy - SEO, Google Ads, social media | Arteon',
       description:
-        'Skuteczne strategie marketingu internetowego i reklamy online, które zwiększają widoczność Twojej marki i generują więcej klientów. Kompleksowa obsługa SEO, Google Ads, social media i więcej.',
+        'Prowadzimy SEO, kampanie Google Ads i social media. Strategia i kreacje, które dają więcej klientów.',
       keywords: [
         'marketing internetowy',
         'reklama online',
@@ -154,7 +154,7 @@ const metadataMap: MetadataMap = {
     pl: {
       title: 'Grafika i branding - logo, identyfikacja wizualna | Arteon',
       description:
-        'Profesjonalne usługi grafiki komputerowej online i offline: projektowanie logo, identyfikacji wizualnej, materiałów reklamowych oraz grafik na potrzeby stron i mediów społecznościowych.',
+        'Projektujemy logo, system identyfikacji, materiały druk i digital. Spójność i emocja marki od pierwszego kontaktu.',
       keywords: [
         'grafika komputerowa',
         'projektowanie logo',
@@ -174,7 +174,7 @@ const metadataMap: MetadataMap = {
   content: {
     pl: {
       title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
-      description: 'Tworzenie treści dla stron internetowych, sklepów, blogów i mediów społecznościowych. Skuteczny content, który angażuje, sprzedaje i wzmacnia Twoją markę online.',
+      description: 'Pisanie treści pod SEO i sprzedaż. Artykuły, opisy produktów, social media. Język marki dopasowany do odbiorcy.',
       keywords: [
         'content marketing',
         'teksty na stronę internetową',
@@ -192,23 +192,23 @@ const metadataMap: MetadataMap = {
     },
   },
 
-  blog: {
+    contact: {
     pl: {
-      title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
-      description: 'Tworzymy funkcjonalne i estetyczne blogi internetowe, które przyciągają czytelników i wspierają Twoją markę. Profesjonalna budowa bloga dostosowana do Twoich potrzeb.',
+      title: 'Kontakt - wycena strony, sklepu, brandingu | Arteon',
+      description: 'Opisz swój projekt. Przygotujemy darmową wycenę i plan: strony, sklepy, blogi, grafika, marketing.',
       keywords: [
-        'blogi internetowe',
-        'tworzenie blogów',
-        'projektowanie blogów internetowych',
-        'blog SEO',
-        'blog dla marki osobistej',
+        'reklamy online',
+        'nowa strona firmowa',
+        'branding i design',
+        'seo i reklama',
+        'projekt graficzny',
       ],
     },
     en: {
-      title: 'Online Blogs | Arteon',
-      description: 'We create functional and aesthetic online blogs that attract readers and support your brand. Professional blog development tailored to your needs.',
+      title: 'Contact | Arteon',
+      description: 'Get in touch with Arteon and describe your website, store, or blog project. We’ll quickly prepare a tailored offer and action plan to meet your needs.',
       keywords: [
-        'Arteon online blogs',
+        'contact Arteon',
       ],
     },
   },
