@@ -23,7 +23,7 @@ export default function OfferMarketingPage() {
         description={
           <>
             SEO, reklamy, social media.
-            <strong>Strategie, które dowożą efekt</strong> i zwiększają sprzedaż.
+            <strong> Strategie, które dowożą efekt</strong> i zwiększają sprzedaż.
           </>
         }
         buttonAccent="Bezpłatna wycena"

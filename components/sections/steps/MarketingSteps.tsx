@@ -1,20 +1,20 @@
 'use client';
 
-import { RiSearchLine, RiBarChart2Line, RiMegaphoneLine, RiFundsLine, RiBrushLine, RiShareForwardLine, RiSettings3Line, RiFileList2Line, RiUserHeartLine } from 'react-icons/ri';
+import { RiSearchLine, RiBarChart2Line, RiMegaphoneLine, RiShareForwardLine, RiFileList2Line, RiUserHeartLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 const items = [
-  {
-    icon: <RiSearchLine className="h-8 w-8" />,
-    title: 'SEO: audyt i optymalizacja',
-    subtitle: 'od 700 zł',
+    {
+    icon: <RiFileList2Line className="h-8 w-8" />,
+    title: 'SEO: audyt',
+    subtitle: 'od 800 zł',
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Sprawdzamy, czy Twoja strona jest łatwa do znalezienia</li>
-          <li>Poprawiamy treści i opisy tak, by przyciągały klientów</li>
-          <li>Podpowiadamy, co zmienić, by szybciej rosnąć w wynikach</li>
+          <li>Analizujemy Twoją stronę i konkurencję</li>
+          <li>Sprawdzamy zgodność z prawem i dostępnością</li>
+          <li>Tworzymy jasny plan poprawy widoczności</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/kontakt">
@@ -25,9 +25,28 @@ const items = [
     ),
   },
   {
+    icon: <RiSearchLine className="h-8 w-8" />,
+    title: 'SEO: optymalizacja',
+    subtitle: 'od 600 zł',
+    description: (
+      <div className="flex h-full flex-col">
+        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+          <li>Sprawdzamy, czy Twoja strona jest łatwa do znalezienia</li>
+          <li>Poprawiamy treści i opisy tak, by przyciągały klientów</li>
+          <li>Poprawiamy technicznie Twoją witrynę</li>
+        </ul>
+        <div className="mt-auto">
+          <Button arrow link="/kontakt">
+            Zamów optymalizację SEO
+          </Button>
+        </div>
+      </div>
+    ),
+  },
+  {
     icon: <RiBarChart2Line className="h-8 w-8" />,
-    title: 'SEO miesięczne',
-    subtitle: 'od 1 800 zł / mies.',
+    title: 'SEO: rozwój',
+    subtitle: 'od 1 200 zł / mies.',
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
@@ -37,7 +56,7 @@ const items = [
         </ul>
         <div className="mt-auto">
           <Button arrow link="/kontakt">
-            Zapytaj o abonament
+            Zapytaj o abonament SEO
           </Button>
         </div>
       </div>
@@ -45,8 +64,8 @@ const items = [
   },
   {
     icon: <RiMegaphoneLine className="h-8 w-8" />,
-    title: 'Reklamy: start kampanii',
-    subtitle: 'od 700 zł',
+    title: 'Reklamy',
+    subtitle: 'od 600 zł',
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
@@ -63,95 +82,19 @@ const items = [
     ),
   },
   {
-    icon: <RiFundsLine className="h-8 w-8" />,
-    title: 'Obsługa kampanii',
-    subtitle: 'od 1 000 zł / mies.',
-    description: (
-      <div className="flex h-full flex-col">
-        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Prowadzimy i optymalizujemy reklamy na bieżąco</li>
-          <li>Testujemy różne wersje i wybieramy najlepsze</li>
-          <li>Raportujemy efekty i proponujemy dalsze kroki</li>
-        </ul>
-        <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Włącz obsługę
-          </Button>
-        </div>
-      </div>
-    ),
-  },
-  {
-    icon: <RiBrushLine className="h-8 w-8" />,
-    title: 'Kreacje reklamowe',
-    subtitle: 'od 900 zł',
-    description: (
-      <div className="flex h-full flex-col">
-        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Projektujemy reklamy spójne z Twoją marką</li>
-          <li>Tworzymy warianty do testów i porównań</li>
-          <li>Przygotowujemy zestaw formatów na różne kanały</li>
-        </ul>
-        <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Zamów kreacje
-          </Button>
-        </div>
-      </div>
-    ),
-  },
-  {
     icon: <RiShareForwardLine className="h-8 w-8" />,
     title: 'Social media: prowadzenie',
     subtitle: 'od 1 100 zł / mies.',
     description: (
       <div className="flex h-full flex-col">
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Planujemy i publikujemy posty, stories i rolki</li>
-          <li>Budujemy spójny wizerunek marki</li>
+          <li>Planujemy i publikujemy posty, stories oraz rolki</li>
+          <li>Przygotowujemy scenariusze i montujemy filmiki</li>
           <li>Dbamy o regularność i kontakt z odbiorcami</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/kontakt">
             Poproś o plan publikacji
-          </Button>
-        </div>
-      </div>
-    ),
-  },
-  {
-    icon: <RiSettings3Line className="h-8 w-8" />,
-    title: 'Automatyzacje publikacji',
-    subtitle: 'od 400 zł',
-    description: (
-      <div className="flex h-full flex-col">
-        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Automatyzujemy dodawanie treści na różne kanały</li>
-          <li>Łączymy systemy tak, by działały bez Twojej ingerencji</li>
-          <li>Tworzymy prosty schemat pracy dla zespołu</li>
-        </ul>
-        <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Ustaw automatyzacje
-          </Button>
-        </div>
-      </div>
-    ),
-  },
-  {
-    icon: <RiFileList2Line className="h-8 w-8" />,
-    title: 'Audyty i strategie',
-    subtitle: 'od 800 zł',
-    description: (
-      <div className="flex h-full flex-col">
-        <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-          <li>Analizujemy Twoją stronę i konkurencję</li>
-          <li>Sprawdzamy zgodność z prawem i dostępnością</li>
-          <li>Tworzymy strategię krok po kroku na kolejne miesiące</li>
-        </ul>
-        <div className="mt-auto">
-          <Button arrow link="/kontakt">
-            Zamów audyt/strategię
           </Button>
         </div>
       </div>
@@ -166,7 +109,7 @@ const items = [
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
           <li>Określamy archetyp marki i jej osobowość</li>
           <li>Budujemy język i komunikację, która trafia w emocje</li>
-          <li>Tworzymy oferty, które klienci chcą kupować</li>
+          <li>Tworzymy oferty z których klienci chcą skorzystać</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="/kontakt">
