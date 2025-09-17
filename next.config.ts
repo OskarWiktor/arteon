@@ -15,6 +15,8 @@ const nextConfig = {
 
       { source: '/contact', destination: '/kontakt', permanent: true },
       { source: '/offer', destination: '/uslugi', permanent: true },
+
+      { source: '/calculator', destination: '/', permanent: true },
     ];
   },
 };
