@@ -28,9 +28,9 @@ export default function OfferBlogPage() {
           </>
         }
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/contact"
+        buttonAccentLink="/kontakt"
         buttonSecond="Nasze realizacje"
-        buttonSecondLink="/projects"
+        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg7.webp"
         overlay="black"
@@ -83,7 +83,7 @@ export default function OfferBlogPage() {
         title="Czas na blog, który buduje Twoją pozycję"
         description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
         primaryLabel="Wyceń projekt"
-        primaryLink="/contact"
+        primaryLink="/kontakt"
         backgroundImage="/assets/bg/abstract-bg7.webp"
         overlay="black"
       />

@@ -5,8 +5,7 @@ const BlogPlans: SectionPricesPlan[] = [
     name: 'Blog mały',
     platform: 'WordPress',
     price: '2 900 - 3 500 zł',
-    description:
-      'Prosty blog firmowy na start. Stabilny, łatwy w obsłudze i przygotowany pod SEO, abyś mógł zacząć publikować i zdobywać klientów od pierwszego dnia.',
+    description: 'Prosty blog firmowy na start. Stabilny, łatwy w obsłudze i przygotowany pod SEO, abyś mógł zacząć publikować i zdobywać klientów od pierwszego dnia.',
     features: [
       'Do 30 artykułów - idealne na początek',
       'SEO techniczne - w cenie',
@@ -18,14 +17,13 @@ const BlogPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi bloga',
     ],
     btnOne: 'Zamów mały blog',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
   },
   {
     name: 'Blog średni',
     platform: 'WordPress / Webflow',
     price: '4 900 - 6 000 zł',
-    description:
-      'Rozbudowany blog dla firm, które chcą regularnie publikować i budować wizerunek eksperta. Więcej treści, integracje marketingowe i większe możliwości rozwoju.',
+    description: 'Rozbudowany blog dla firm, które chcą regularnie publikować i budować wizerunek eksperta. Więcej treści, integracje marketingowe i większe możliwości rozwoju.',
     features: [
       'Do 100 artykułów',
       'SEO techniczne i redakcja treści - w pakiecie',
@@ -37,14 +35,13 @@ const BlogPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi bloga',
     ],
     btnOne: 'Zamów blog średni',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
   },
   {
     name: 'Blog premium',
     platform: 'Webflow CMS',
     price: '7 500 - 9 000 zł',
-    description:
-      'Blog premium w technologii Webflow. Design klasy premium, płynne animacje i sekcje polecanych treści. Idealny dla marek, które stawiają na estetykę i pełen komfort edycji.',
+    description: 'Blog premium w technologii Webflow. Design klasy premium, płynne animacje i sekcje polecanych treści. Idealny dla marek, które stawiają na estetykę i pełen komfort edycji.',
     features: [
       'Do 300 artykułów, rozbudowane kategorie',
       'SEO techniczne - w cenie',
@@ -58,7 +55,7 @@ const BlogPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF dla Ciebie i zespołu',
     ],
     btnOne: 'Zamów blog premium',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
     lastPlan: true,
   },
 ];
@@ -71,17 +68,9 @@ const BlogPlansNote: Note = {
     </p>
   ),
   ctaLabel: 'Porozmawiajmy o Twoim blogu',
-  ctaLink: '/contact',
+  ctaLink: '/kontakt',
 };
 
 export default function BlogPrices() {
-  return (
-    <SectionPrices
-      id="pricing-blogs"
-      subtitle="Cennik blogów internetowych"
-      title="Przykładowe realizacje"
-      plans={BlogPlans}
-      note={BlogPlansNote}
-    />
-  );
+  return <SectionPrices id="pricing-blogs" subtitle="Cennik blogów internetowych" title="Przykładowe realizacje" plans={BlogPlans} note={BlogPlansNote} />;
 }

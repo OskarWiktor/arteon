@@ -41,7 +41,7 @@ const items = [
       </div>
     ),
   },
-    {
+  {
     icon: <RiStackLine className="h-8 w-8" />,
     title: 'Social media',
     description: (

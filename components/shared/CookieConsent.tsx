@@ -169,7 +169,7 @@ export default function CookieConsent() {
                     Ustaw preferencje
                   </button>{' '}
                   •{' '}
-                  <a className="text-black underline underline-offset-2" href="/privacy-policy" rel="noopener">
+                  <a className="text-black underline underline-offset-2" href="/polityka-prywatnosci" rel="noopener">
                     Polityka prywatności
                   </a>
                 </span>
@@ -230,9 +230,7 @@ export default function CookieConsent() {
             </fieldset>
 
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <span className="text-sm font-medium text-black">
-                W każdej chwili możesz zmienić decyzję
-              </span>
+              <span className="text-sm font-medium text-black">W każdej chwili możesz zmienić decyzję</span>
 
               <div className="flex gap-2">
                 <button

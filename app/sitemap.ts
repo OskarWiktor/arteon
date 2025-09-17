@@ -6,7 +6,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.p
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticPaths = ['/', '/services/websites', '/services/online-stores', '/services/online-blogs', '/services/design', '/services/content', '/services/marketing', '/projects', '/contact'];
+  const staticPaths = [
+    '/',
+    '/uslugi/strony-internetowe',
+    '/uslugi/sklepy-internetowe',
+    '/uslugi/blogi-internetowe',
+    '/uslugi/grafika',
+    '/uslugi/tworzenie-tresci',
+    '/uslugi/marketing',
+    '/realizacje',
+    '/kontakt',
+  ];
 
   const staticEntries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${BASE_URL}${path}`,
@@ -17,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const projects = (projectsData as any).projects ?? [];
   const projectEntries: MetadataRoute.Sitemap = projects.map((p: { slug: string; updatedAt?: string }) => ({
-    url: `${BASE_URL}/projects/${p.slug}`,
+    url: `${BASE_URL}/realizacje/${p.slug}`,
     lastModified: p.updatedAt ? new Date(p.updatedAt) : now,
     changeFrequency: 'monthly',
     priority: 0.4,

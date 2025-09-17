@@ -17,7 +17,7 @@ const ShopPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi sklepu',
     ],
     btnOne: 'Zamów mały sklep',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
   },
   {
     name: 'Sklep średni',
@@ -36,7 +36,7 @@ const ShopPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi sklepu',
     ],
     btnOne: 'Zamów średni sklep',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
   },
   {
     name: 'Sklep premium',
@@ -56,7 +56,7 @@ const ShopPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi sklepu',
     ],
     btnOne: 'Zamów sklep premium',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
     lastPlan: true,
   },
 ];
@@ -65,12 +65,11 @@ const ShopPlansNote: Note = {
   text: (
     <p className="text-[#5e5e5e]">
       <strong className="text-[#080808]">Potrzebujesz czegoś więcej? </strong>
-      Tworzymy zaawansowane sklepy i aplikacje w Next.js - rozwiązania szyte na miarę,
-      gotowe na zaawansowane integracje, funkcje oraz duży ruch.
+      Tworzymy zaawansowane sklepy i aplikacje w Next.js - rozwiązania szyte na miarę, gotowe na zaawansowane integracje, funkcje oraz duży ruch.
     </p>
   ),
   ctaLabel: 'Porozmawiajmy o Twoim projekcie',
-  ctaLink: '/contact',
+  ctaLink: '/kontakt',
 };
 
 export default function ShopPrices() {

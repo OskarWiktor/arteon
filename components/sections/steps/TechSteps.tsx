@@ -12,9 +12,7 @@ const TechStepsItems = [
     borderClassName: 'border-b-slate-500',
     description: (
       <>
-        Popularne i elastyczne rozwiązanie. Sprawdza się w wizytówkach,
-        małych sklepach i blogach. Łatwa edycja treści, tysiące gotowych
-        wtyczek i motywów. W cenie dodatkowe zabezpieczenia oraz
+        Popularne i elastyczne rozwiązanie. Sprawdza się w wizytówkach, małych sklepach i blogach. Łatwa edycja treści, tysiące gotowych wtyczek i motywów. W cenie dodatkowe zabezpieczenia oraz
         optymalizacje, aby strona działała szybciej i bezpieczniej.
       </>
     ),
@@ -25,11 +23,8 @@ const TechStepsItems = [
     borderClassName: 'border-b-slate-500',
     description: (
       <>
-        Międzynarodowy standard. Piękne animacje,
-        pełna zgodność z WCAG 2.1 i wygodny panel edycji. Idealne dla
-        marek, które stawiają na wizerunek, estetykę i prostą obsługę
-        bez udziału programisty. Szybkość działania i pełna kontrola
-        nad wyglądem w pakiecie.
+        Międzynarodowy standard. Piękne animacje, pełna zgodność z WCAG 2.1 i wygodny panel edycji. Idealne dla marek, które stawiają na wizerunek, estetykę i prostą obsługę bez udziału programisty.
+        Szybkość działania i pełna kontrola nad wyglądem w pakiecie.
       </>
     ),
   },
@@ -39,12 +34,8 @@ const TechStepsItems = [
     borderClassName: 'border-b-slate-500',
     description: (
       <>
-        Technologia klasy premium. Maksymalna
-        wydajność, skalowalność i bezpieczeństwo. Sprawdza się przy
-        niestandardowych funkcjach, integracjach z systemami zewnętrznymi
-        oraz w sklepach i aplikacjach, które muszą działać niezawodnie
-        i błyskawicznie. To fundament dla marek planujących długofalowy
-        rozwój.
+        Technologia klasy premium. Maksymalna wydajność, skalowalność i bezpieczeństwo. Sprawdza się przy niestandardowych funkcjach, integracjach z systemami zewnętrznymi oraz w sklepach i
+        aplikacjach, które muszą działać niezawodnie i błyskawicznie. To fundament dla marek planujących długofalowy rozwój.
       </>
     ),
   },

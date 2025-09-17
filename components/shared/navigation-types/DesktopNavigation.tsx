@@ -46,28 +46,28 @@ export default function DesktopNavigation() {
 
   const navigationItems = [
     { href: '/', label: 'Strona Główna', exact: true },
-    { href: '/projects', label: 'Realizacje' },
-    { href: '/services', label: 'Usługi' },
-    { href: '/contact', label: 'Kontakt' },
+    { href: '/realizacje', label: 'Realizacje' },
+    { href: '/uslugi', label: 'Usługi' },
+    { href: '/kontakt', label: 'Kontakt' },
   ];
 
   const offerSubPages = [
     {
-      href: '/services/websites',
+      href: '/uslugi/strony-internetowe',
       icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" aria-hidden="true" />,
       title: 'Strony internetowe',
       desc: 'WCAG 2.1 AA - Indywidualny projekt - Migracje',
     },
     {
-      href: '/services/online-stores',
+      href: '/uslugi/sklepy-internetowe',
       icon: <RiShoppingCartLine className="h-6 w-6 text-slate-500" aria-hidden="true" />,
       title: 'Sklepy internetowe',
       desc: 'Płatności - Integracje - Automatyzacje',
     },
-    { href: '/services/online-blogs', icon: <RiArticleLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
-    { href: '/services/design', icon: <RiPaletteLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Grafika', desc: 'Systemy marek - Loga - Do druku' },
-    { href: '/services/content', icon: <RiFileTextLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Treści', desc: 'Teksty - Artykuły - Opisy' },
-    { href: '/services/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
+    { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
+    { href: '/uslugi/grafika', icon: <RiPaletteLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Grafika', desc: 'Systemy marek - Loga - Do druku' },
+    { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Treści', desc: 'Teksty - Artykuły - Opisy' },
+    { href: '/uslugi/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
   ];
 
   const focusMenuItem = (idx: number) => {

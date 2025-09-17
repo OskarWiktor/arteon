@@ -27,7 +27,7 @@ export default function OfferMarketingPage() {
           </>
         }
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/contact"
+        buttonAccentLink="/kontakt"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"
@@ -72,7 +72,7 @@ export default function OfferMarketingPage() {
         title="Rozwiń markę dobrą strategią"
         description="Od SEO po reklamy - planujemy i prowadzimy działania, które zwiększają sprzedaż"
         primaryLabel="Skontaktuj się"
-        primaryLink="/contact"
+        primaryLink="/kontakt"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"
       />

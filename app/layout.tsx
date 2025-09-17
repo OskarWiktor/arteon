@@ -14,7 +14,7 @@ import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 
 export const metadata: Metadata = {
-  title: 'Arteon', 
+  title: 'Arteon',
   description: 'Arteon',
   icons: {
     icon: '/favicon.ico',

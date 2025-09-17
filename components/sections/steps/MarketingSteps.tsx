@@ -17,7 +17,7 @@ const items = [
           <li>Podpowiadamy, co zmienić, by szybciej rosnąć w wynikach</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Zamów audyt SEO
           </Button>
         </div>
@@ -36,7 +36,7 @@ const items = [
           <li>Co miesiąc otrzymujesz raport i jasne rekomendacje</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Zapytaj o abonament
           </Button>
         </div>
@@ -55,7 +55,7 @@ const items = [
           <li>Ustawiamy śledzenie wyników i zdarzeń</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Uruchom kampanię
           </Button>
         </div>
@@ -74,7 +74,7 @@ const items = [
           <li>Raportujemy efekty i proponujemy dalsze kroki</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Włącz obsługę
           </Button>
         </div>
@@ -93,7 +93,7 @@ const items = [
           <li>Przygotowujemy zestaw formatów na różne kanały</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Zamów kreacje
           </Button>
         </div>
@@ -112,7 +112,7 @@ const items = [
           <li>Dbamy o regularność i kontakt z odbiorcami</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Poproś o plan publikacji
           </Button>
         </div>
@@ -131,7 +131,7 @@ const items = [
           <li>Tworzymy prosty schemat pracy dla zespołu</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Ustaw automatyzacje
           </Button>
         </div>
@@ -150,7 +150,7 @@ const items = [
           <li>Tworzymy strategię krok po kroku na kolejne miesiące</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Zamów audyt/strategię
           </Button>
         </div>
@@ -169,7 +169,7 @@ const items = [
           <li>Tworzymy oferty, które klienci chcą kupować</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Ustal kierunek marki
           </Button>
         </div>
@@ -187,7 +187,7 @@ export default function MarketingSteps() {
       description="SEO, reklamy i social - opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
-      btnOneLink="/contact"
+      btnOneLink="/kontakt"
     />
   );
 }

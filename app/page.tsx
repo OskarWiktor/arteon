@@ -68,9 +68,9 @@ export default function HomePage() {
         title="Zacznijmy od rozmowy"
         description="Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań - znajdziemy najlepszą drogę do efektu."
         primaryLabel="Umów konsultację"
-        primaryLink="/contact"
+        primaryLink="/kontakt"
         secondaryLabel="Poznaj ofertę"
-        secondaryLink="/services"
+        secondaryLink="/uslugi"
         backgroundImage="/assets/bg/abstract-bg2.webp"
         overlay="black"
       />

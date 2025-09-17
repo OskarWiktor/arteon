@@ -18,7 +18,7 @@ const items = [
           <li>Bezpłatne szkolenie PDF z obsługi strony</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/websites">
+          <Button arrow link="/uslugi/strony-internetowe">
             Sprawdź ofertę
           </Button>
         </div>
@@ -38,7 +38,7 @@ const items = [
           <li>Bezpłatne Szkolenie PDF dla właściciela sklepu</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/online-stores">
+          <Button arrow link="/uslugi/sklepy-internetowe">
             Sprawdź ofertę
           </Button>
         </div>
@@ -58,7 +58,7 @@ const items = [
           <li>Bezpłatne szkolenie PDF z obsługi bloga</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/online-blogs">
+          <Button arrow link="/uslugi/blogi-internetowe">
             Sprawdź ofertę
           </Button>
         </div>
@@ -78,7 +78,7 @@ const items = [
           <li>Makiety stron</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/design">
+          <Button arrow link="/uslugi/grafika">
             Sprawdź ofertę
           </Button>
         </div>
@@ -98,7 +98,7 @@ const items = [
           <li>Język marki dopasowany do odbiorców</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/content">
+          <Button arrow link="/uslugi/tworzenie-tresci">
             Sprawdź ofertę
           </Button>
         </div>
@@ -118,7 +118,7 @@ const items = [
           <li>Automatyzacje i raporty efektów</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/services/marketing">
+          <Button arrow link="/uslugi/marketing">
             Sprawdź ofertę
           </Button>
         </div>
@@ -136,7 +136,7 @@ export default function ServicesSteps() {
       description="Posiadamy szeroką ofertę, dzięki czemu, nie zależnie od Twojej branży, celów jak i budżetu, jesteśmy w stanie zrealizować Twój plan"
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
-      btnOneLink="/contact"
+      btnOneLink="/kontakt"
     />
   );
 }

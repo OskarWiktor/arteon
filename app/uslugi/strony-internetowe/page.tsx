@@ -1,58 +1,57 @@
+import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
+import FaqWebsite from '@/components/sections/faqs/FaqWebsite';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
+import WebFeatures from '@/components/sections/features/WebFeatures';
+import WebPrices from '@/components/sections/prices/WebPrices';
 import Gap from '@/components/ui/Gap';
 import PricingSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
-import ShopFeatures from '@/components/sections/features/ShopFeatures';
-import ShopPrices from '@/components/sections/prices/ShopPrices';
-import FaqShop from '@/components/sections/faqs/FaqShop';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill } from 'react-icons/ri';
 
 export async function generateMetadata() {
-  return generatePageMetadata('onlineStores');
+  return generatePageMetadata('websites');
 }
 
 export default function OfferWebPage() {
   return (
     <>
       <HeroBanner
-        title="Sklepy internetowe"
+        title="Strony internetowe"
         description={
           <>
-            Projektujemy sklepy online, które sprzedają szybciej i skuteczniej.
-            <strong>Płatności, dostawy i marketing</strong> w jednym systemie.
+            Tworzymy strony WWW, które łączą estetykę, technologię i psychologię. <strong>Standard globalnych marek</strong> - dla Twojego biznesu.
           </>
         }
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/contact"
+        buttonAccentLink="/kontakt"
         buttonSecond="Nasze realizacje"
-        buttonSecondLink="/projects"
+        buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg13.webp"
+        backgroundImage="/assets/bg/abstract-bg12.webp"
         overlay="black"
       />
 
       <BenefitBelt
         items={[
+          { icon: <RiShieldCheckLine />, label: 'Zgodność z prawem' },
           { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczieństwo' },
-          { icon: <RiBarChart2Fill />, label: 'Stała kontrola wyników' },
-          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
+          { icon: <RiCodeSSlashFill />, label: 'Sprawdzone technologie' },
+          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
         ]}
       />
 
       <Gap size="sm" />
 
-      <ShopFeatures />
+      <WebFeatures />
 
       <Gap variant="line" />
 
-      <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
+      <ProjectsOverview title="Wyróżnione realizacje stron internetowych" category="strona" subtitle="Portfolio" />
 
       <Gap />
 
@@ -60,7 +59,7 @@ export default function OfferWebPage() {
 
       <Gap />
 
-      <ShopPrices />
+      <WebPrices />
 
       <Gap variant="line" />
 
@@ -72,7 +71,7 @@ export default function OfferWebPage() {
 
       <Gap variant="line" />
 
-      <FaqShop />
+      <FaqWebsite />
 
       <Gap variant="line" />
 
@@ -81,11 +80,11 @@ export default function OfferWebPage() {
       <Gap size="sm" />
 
       <CTABaner
-        title="Zbudujmy sklep, który rozwija się z Tobą"
-        description="Tworzymy dedykowane rozwiązanie, gotowe do rozwoju - szybkie, stabilne i zgodne z przepisami"
+        title="Zbudujmy stronę, która pracuje na Twoją markę"
+        description="Pokaż się w sieci z profesjonalnym wizerunkiem"
         primaryLabel="Wyceń projekt"
-        primaryLink="/contact"
-        backgroundImage="/assets/bg/abstract-bg13.webp"
+        primaryLink="/kontakt"
+        backgroundImage="/assets/bg/abstract-bg12.webp"
         overlay="black"
       />
     </>

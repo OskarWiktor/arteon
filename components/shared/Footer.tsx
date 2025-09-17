@@ -5,21 +5,21 @@ import Image from 'next/image';
 import Wrapper from '../ui/Wrapper';
 
 const offerLinks = [
-  { href: '/services/websites', title: 'Strony internetowe' },
-  { href: '/services/online-stores', title: 'Sklepy online' },
-  { href: '/services/online-blogs', title: 'Blogi' },
-  { href: '/services/design', title: 'Grafika' },
-  { href: '/services/content', title: 'Treści' },
-  { href: '/services/marketing', title: 'Marketing' },
+  { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
+  { href: '/uslugi/sklepy-internetowe', title: 'Sklepy online' },
+  { href: '/uslugi/blogi-internetowe', title: 'Blogi' },
+  { href: '/uslugi/grafika', title: 'Grafika' },
+  { href: '/uslugi/tworzenie-tresci', title: 'Treści' },
+  { href: '/uslugi/marketing', title: 'Marketing' },
 ];
 
 const navLinks = [
   { href: '/', label: 'Strona Główna' },
-  { href: '/projects', label: 'Realizacje' },
-  { href: '/contact', label: 'Kontakt' },
+  { href: '/realizacje', label: 'Realizacje' },
+  { href: '/kontakt', label: 'Kontakt' },
 ];
 
-const policyLinks = [{ href: '/privacy-policy', label: 'Polityka Prywatności' }];
+const policyLinks = [{ href: '/polityka-prywatnosci', label: 'Polityka Prywatności' }];
 
 export default function Footer() {
   return (

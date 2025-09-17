@@ -17,7 +17,7 @@ const WebPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi strony',
     ],
     btnOne: 'Zamów stronę wizytówkę',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
   },
   {
     name: 'Strona firmowa WordPress',
@@ -36,7 +36,7 @@ const WebPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi strony',
     ],
     btnOne: 'Zamów stronę firmową',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
   },
   {
     name: 'Strona firmowa Premium',
@@ -56,7 +56,7 @@ const WebPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi strony',
     ],
     btnOne: 'Zamów stronę premium',
-    btnOneLink: '/contact',
+    btnOneLink: '/kontakt',
     lastPlan: true,
   },
 ];
@@ -69,7 +69,7 @@ const WebPlansNote: Note = {
     </p>
   ),
   ctaLabel: 'Porozmawiajmy o Twoim projekcie',
-  ctaLink: '/contact',
+  ctaLink: '/kontakt',
 };
 
 export default function WebPrices() {

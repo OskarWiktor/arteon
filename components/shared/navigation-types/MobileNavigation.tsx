@@ -9,17 +9,17 @@ import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiF
 type NavItem = { href: string; label: string; exact?: boolean };
 
 const NAV: NavItem[] = [
-  { href: '/projects', label: 'Realizacje', exact: true },
-  { href: '/contact', label: 'Kontakt' },
+  { href: '/realizacje', label: 'Realizacje', exact: true },
+  { href: '/kontakt', label: 'Kontakt' },
 ];
 
 const SERVICES = [
-  { href: '/services/websites', icon: <RiCodeSSlashFill aria-hidden />, title: 'Strony internetowe' },
-  { href: '/services/online-stores', icon: <RiShoppingCartLine aria-hidden />, title: 'Sklepy online' },
-  { href: '/services/online-blogs', icon: <RiArticleLine aria-hidden />, title: 'Blogi' },
-  { href: '/services/design', icon: <RiPaletteLine aria-hidden />, title: 'Grafika' },
-  { href: '/services/content', icon: <RiFileTextLine aria-hidden />, title: 'Treści' },
-  { href: '/services/marketing', icon: <RiMegaphoneLine aria-hidden />, title: 'Marketing' },
+  { href: '/uslugi/strony-internetowe', icon: <RiCodeSSlashFill aria-hidden />, title: 'Strony internetowe' },
+  { href: '/uslugi/sklepy-internetowe', icon: <RiShoppingCartLine aria-hidden />, title: 'Sklepy online' },
+  { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine aria-hidden />, title: 'Blogi' },
+  { href: '/uslugi/grafika', icon: <RiPaletteLine aria-hidden />, title: 'Grafika' },
+  { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine aria-hidden />, title: 'Treści' },
+  { href: '/uslugi/marketing', icon: <RiMegaphoneLine aria-hidden />, title: 'Marketing' },
 ];
 
 export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
@@ -148,7 +148,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   </a>
                   <div className="flex items-center gap-3">
                     <Link
-                      href="/contact"
+                      href="/kontakt"
                       onClick={() => setIsOpen(false)}
                       className="rounded-lg bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >

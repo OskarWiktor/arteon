@@ -18,7 +18,7 @@ const items = [
           <li>Dopasowujemy język do Twojej branży i odbiorców</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Wyceń treści do strony
           </Button>
         </div>
@@ -38,7 +38,7 @@ const items = [
           <li>Pakiety artykułów zapewniają stały dopływ treści</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Zamów artykuły
           </Button>
         </div>
@@ -58,7 +58,7 @@ const items = [
           <li>Pakiety opisów przyspieszają start sklepu</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Wyceń treści do sklepu
           </Button>
         </div>
@@ -78,7 +78,7 @@ const items = [
           <li>Gotowe pakiety treści na cały miesiąc</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Zamów copy do social
           </Button>
         </div>
@@ -97,7 +97,7 @@ const items = [
           <li>Prezentacje, które przekonują inwestorów i partnerów</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Poproś o ofertę PDF
           </Button>
         </div>
@@ -116,7 +116,7 @@ const items = [
           <li>Dbamy o prosty, zrozumiały język</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Ustalmy język marki
           </Button>
         </div>
@@ -135,7 +135,7 @@ const items = [
           <li>Warianty do szybkich testów skuteczności</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Zaprojektujmy CTA
           </Button>
         </div>
@@ -154,7 +154,7 @@ const items = [
           <li>Dostosowujemy tekst pod SEO, by był lepiej widoczny</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Prześlij tekst do korekty
           </Button>
         </div>
@@ -173,7 +173,7 @@ const items = [
           <li>Przekazujemy zasady dalszego pisania treści</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/contact">
+          <Button arrow link="/kontakt">
             Poproś o wytyczne
           </Button>
         </div>
@@ -191,7 +191,7 @@ export default function ContentSteps() {
       description="Teksty, które pozycjonują i sprzedają - od strony www, przez blog, po e-commerce i social media."
       btnOne="Skontaktuj się"
       btnOneVariant="dark"
-      btnOneLink="/contact"
+      btnOneLink="/kontakt"
     />
   );
 }
