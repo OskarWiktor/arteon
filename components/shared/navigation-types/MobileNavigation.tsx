@@ -18,7 +18,7 @@ const SERVICES = [
   { href: '/uslugi/sklepy-internetowe', icon: <RiShoppingCartLine aria-hidden />, title: 'Sklepy online' },
   { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine aria-hidden />, title: 'Blogi' },
   { href: '/uslugi/grafika', icon: <RiPaletteLine aria-hidden />, title: 'Grafika' },
-  { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine aria-hidden />, title: 'Treści' },
+  { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine aria-hidden />, title: 'Tworzenie treści' },
   { href: '/uslugi/marketing', icon: <RiMegaphoneLine aria-hidden />, title: 'Marketing' },
 ];
 

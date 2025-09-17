@@ -66,7 +66,7 @@ export default function DesktopNavigation() {
     },
     { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Blogi', desc: 'CMS - Architektura - Skalowalne treści' },
     { href: '/uslugi/grafika', icon: <RiPaletteLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Grafika', desc: 'Systemy marek - Loga - Do druku' },
-    { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Treści', desc: 'Teksty - Artykuły - Opisy' },
+    { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Tworzenie treści', desc: 'Teksty - Artykuły - Opisy' },
     { href: '/uslugi/marketing', icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" aria-hidden="true" />, title: 'Marketing', desc: 'SEO - Reklamy - Social Media' },
   ];
 
