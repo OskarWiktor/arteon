@@ -10,6 +10,7 @@ import FaqDesign from '@/components/sections/faqs/FaqDesign';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import DesignSteps from '@/components/sections/steps/DesignSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import ContactForm from '@/components/sections/ContactForm';
 
 export async function generateMetadata() {
   return generatePageMetadata('design');
@@ -59,6 +60,14 @@ export default function OfferDesignPage() {
       <Gap variant="line" />
 
       <WorkSteps />
+
+      <Gap size="sm" />
+
+      <ContactForm
+        title="Zbudujmy spójny wizerunek"
+        description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę"
+        defaultSubject="Grafika"
+      />
 
       <Gap variant="line" />
 

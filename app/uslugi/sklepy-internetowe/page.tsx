@@ -12,6 +12,7 @@ import ShopPrices from '@/components/sections/prices/ShopPrices';
 import FaqShop from '@/components/sections/faqs/FaqShop';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill } from 'react-icons/ri';
+import ContactForm from '@/components/sections/ContactForm';
 
 export async function generateMetadata() {
   return generatePageMetadata('onlineStores');
@@ -69,6 +70,14 @@ export default function OfferWebPage() {
       <Gap variant="line" />
 
       <WorkSteps />
+
+      <Gap size="sm" />
+
+      <ContactForm
+        title="Zbudujmy Twój sklep online"
+        description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę"
+        defaultSubject="Sklep internetowy"
+      />
 
       <Gap variant="line" />
 

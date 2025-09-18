@@ -16,7 +16,7 @@ const items = [
           <li>Ubrania firmowe oraz gadżety</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Wyceń projekt
           </Button>
         </div>
@@ -34,7 +34,7 @@ const items = [
           <li>Retusz zdjęć do strony i sklepu</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Zapytaj o wycenę
           </Button>
         </div>
@@ -52,7 +52,7 @@ const items = [
           <li>Montaż filmów</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Wyceń projekt
           </Button>
         </div>
@@ -62,15 +62,5 @@ const items = [
 ];
 
 export default function DesignSteps() {
-  return (
-    <SectionSteps
-      items={items}
-      title="Oferta grafiki"
-      subtitle="Przejrzyście i konkretnie"
-      description="Wizualny fundament Twojej marki - od logo po ubrania firmowe."
-      btnOne="Skontaktuj się"
-      btnOneVariant="dark"
-      btnOneLink="/kontakt"
-    />
-  );
+  return <SectionSteps items={items} title="Oferta grafiki" subtitle="Przejrzyście i konkretnie" description="Wizualny fundament Twojej marki - od logo po ubrania firmowe." />;
 }

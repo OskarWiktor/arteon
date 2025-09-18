@@ -12,6 +12,7 @@ import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import ContactForm from '@/components/sections/ContactForm';
 
 export async function generateMetadata() {
   return generatePageMetadata('websites');
@@ -68,6 +69,14 @@ export default function OfferWebPage() {
       <Gap variant="line" />
 
       <WorkSteps />
+
+      <Gap size="sm" />
+
+      <ContactForm
+        title="Zamów stronę internetową"
+        description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę"
+        defaultSubject="Strona internetowa"
+      />
 
       <Gap variant="line" />
 

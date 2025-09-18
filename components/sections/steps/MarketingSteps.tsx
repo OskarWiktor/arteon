@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 const items = [
-    {
+  {
     icon: <RiFileList2Line className="h-8 w-8" />,
     title: 'SEO: audyt',
     subtitle: 'od 800 zł',
@@ -17,7 +17,7 @@ const items = [
           <li>Tworzymy jasny plan poprawy widoczności</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Zamów audyt SEO
           </Button>
         </div>
@@ -36,7 +36,7 @@ const items = [
           <li>Poprawiamy technicznie Twoją witrynę</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Zamów optymalizację SEO
           </Button>
         </div>
@@ -55,7 +55,7 @@ const items = [
           <li>Co miesiąc otrzymujesz raport i jasne rekomendacje</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Zapytaj o abonament SEO
           </Button>
         </div>
@@ -74,7 +74,7 @@ const items = [
           <li>Ustawiamy śledzenie wyników i zdarzeń</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Uruchom kampanię
           </Button>
         </div>
@@ -93,7 +93,7 @@ const items = [
           <li>Dbamy o regularność i kontakt z odbiorcami</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Poproś o plan publikacji
           </Button>
         </div>
@@ -112,7 +112,7 @@ const items = [
           <li>Tworzymy oferty z których klienci chcą skorzystać</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">
+          <Button arrow link="#kontakt">
             Ustal kierunek marki
           </Button>
         </div>
@@ -128,9 +128,6 @@ export default function MarketingSteps() {
       title="Oferta marketingu"
       subtitle="Skutecznie i przejrzyście"
       description="SEO, reklamy i social - opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
-      btnOne="Skontaktuj się"
-      btnOneVariant="dark"
-      btnOneLink="/kontakt"
     />
   );
 }

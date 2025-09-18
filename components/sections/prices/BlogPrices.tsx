@@ -17,7 +17,7 @@ const BlogPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi bloga',
     ],
     btnOne: 'Zamów mały blog',
-    btnOneLink: '/kontakt',
+    btnOneLink: '#kontakt',
   },
   {
     name: 'Blog średni',
@@ -35,7 +35,7 @@ const BlogPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi bloga',
     ],
     btnOne: 'Zamów blog średni',
-    btnOneLink: '/kontakt',
+    btnOneLink: '#kontakt',
   },
   {
     name: 'Blog premium',
@@ -55,7 +55,7 @@ const BlogPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF dla Ciebie i zespołu',
     ],
     btnOne: 'Zamów blog premium',
-    btnOneLink: '/kontakt',
+    btnOneLink: '#kontakt',
     lastPlan: true,
   },
 ];
@@ -68,7 +68,7 @@ const BlogPlansNote: Note = {
     </p>
   ),
   ctaLabel: 'Porozmawiajmy o Twoim blogu',
-  ctaLink: '/kontakt',
+  ctaLink: '#kontakt',
 };
 
 export default function BlogPrices() {

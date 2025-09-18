@@ -17,7 +17,7 @@ const ShopPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi sklepu',
     ],
     btnOne: 'Zamów mały sklep',
-    btnOneLink: '/kontakt',
+    btnOneLink: '#kontakt',
   },
   {
     name: 'Sklep średni',
@@ -36,7 +36,7 @@ const ShopPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi sklepu',
     ],
     btnOne: 'Zamów średni sklep',
-    btnOneLink: '/kontakt',
+    btnOneLink: '#kontakt',
   },
   {
     name: 'Sklep premium',
@@ -56,7 +56,7 @@ const ShopPlans: SectionPricesPlan[] = [
       'Darmowe szkolenie PDF z obsługi sklepu',
     ],
     btnOne: 'Zamów sklep premium',
-    btnOneLink: '/kontakt',
+    btnOneLink: '#kontakt',
     lastPlan: true,
   },
 ];
@@ -69,7 +69,7 @@ const ShopPlansNote: Note = {
     </p>
   ),
   ctaLabel: 'Porozmawiajmy o Twoim projekcie',
-  ctaLink: '/kontakt',
+  ctaLink: '#kontakt',
 };
 
 export default function ShopPrices() {

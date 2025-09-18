@@ -1,13 +1,6 @@
 'use client';
 
-import {
-  RiFileTextLine,
-  RiArticleLine,
-  RiShoppingCartLine,
-  RiShareForwardLine,
-  RiFilePdfLine,
-  RiPencilLine,
-} from 'react-icons/ri';
+import { RiFileTextLine, RiArticleLine, RiShoppingCartLine, RiShareForwardLine, RiFilePdfLine, RiPencilLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
@@ -24,7 +17,9 @@ const items = [
           <li>Dostosowujemy język do Twojej branży i klientów</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń treści do strony</Button>
+          <Button arrow link="#kontakt">
+            Wyceń treści do strony
+          </Button>
         </div>
       </div>
     ),
@@ -41,7 +36,9 @@ const items = [
           <li>Planujemy publikacje, by utrzymać regularność i wspomóc SEO</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Zamów artykuły</Button>
+          <Button arrow link="#kontakt">
+            Zamów artykuły
+          </Button>
         </div>
       </div>
     ),
@@ -58,7 +55,9 @@ const items = [
           <li>Przygotowujemy rozbudowane opisy premium dla produktów wyższej klasy</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Wyceń treści do sklepu</Button>
+          <Button arrow link="#kontakt">
+            Wyceń treści do sklepu
+          </Button>
         </div>
       </div>
     ),
@@ -75,7 +74,9 @@ const items = [
           <li>Układamy scenariusze rolek pod większe zasięgi</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Zamów copy do social</Button>
+          <Button arrow link="#kontakt">
+            Zamów copy do social
+          </Button>
         </div>
       </div>
     ),
@@ -91,7 +92,9 @@ const items = [
           <li>Opracowujemy case studies pokazujące efekty współpracy</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Poproś o ofertę PDF</Button>
+          <Button arrow link="#kontakt">
+            Poproś o ofertę PDF
+          </Button>
         </div>
       </div>
     ),
@@ -108,7 +111,9 @@ const items = [
           <li>Dostosowujemy teksty pod SEO dla lepszej widoczności</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/kontakt">Prześlij tekst do korekty</Button>
+          <Button arrow link="#kontakt">
+            Prześlij tekst do korekty
+          </Button>
         </div>
       </div>
     ),
@@ -122,9 +127,6 @@ export default function ContentSteps() {
       title="Oferta tworzenia treści"
       subtitle="Czytelnie i skutecznie"
       description="Pisanie, redakcja i optymalizacja treści — strona www, blog, e-commerce i social media."
-      btnOne="Skontaktuj się"
-      btnOneVariant="dark"
-      btnOneLink="/kontakt"
     />
   );
 }

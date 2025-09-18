@@ -10,6 +10,7 @@ import ContentFeatures from '@/components/sections/features/ContentFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContentSteps from '@/components/sections/steps/ContentSteps';
 import { RiBarChart2Fill, RiBookOpenLine, RiCustomerService2Line, RiBrushLine } from 'react-icons/ri';
+import ContactForm from '@/components/sections/ContactForm';
 
 export async function generateMetadata() {
   return generatePageMetadata('content');
@@ -56,6 +57,10 @@ export default function OfferContentPage() {
       <Gap variant="line" />
 
       <WorkSteps />
+
+      <Gap size="sm" />
+
+      <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Treści" />
 
       <Gap variant="line" />
 

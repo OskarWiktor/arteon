@@ -10,6 +10,7 @@ import FaqMarketing from '@/components/sections/faqs/FaqMarketing';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import MarketingSteps from '@/components/sections/steps/MarketingSteps';
 import { RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine } from 'react-icons/ri';
+import ContactForm from '@/components/sections/ContactForm';
 
 export async function generateMetadata() {
   return generatePageMetadata('marketing');
@@ -57,6 +58,14 @@ export default function OfferMarketingPage() {
       <Gap variant="line" />
 
       <WorkSteps />
+
+      <Gap size="sm" />
+
+      <ContactForm
+        title="Postaw na skuteczny marketing"
+        description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę"
+        defaultSubject="Marketing"
+      />
 
       <Gap variant="line" />
 
