@@ -1,7 +1,7 @@
 import Wrapper from './Wrapper';
 import type { CSSProperties } from 'react';
 
-export type Size = 'sm' | 'md' | 'xl';
+export type Size = 'xs' | 'sm' | 'md' | 'xl';
 
 type GapStyle = CSSProperties & { ['--gap-h']?: string };
 
@@ -10,6 +10,7 @@ const VIEW_MAX = 1440;
 const VIEW_RANGE = VIEW_MAX - VIEW_MIN;
 
 const MAP: Record<Size, { min: number; max: number }> = {
+  xs: { min: 40, max: 80 },
   sm: { min: 80, max: 128 },
   md: { min: 128, max: 192 },
   xl: { min: 160, max: 256 },

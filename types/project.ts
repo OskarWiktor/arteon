@@ -5,13 +5,38 @@ export type ProjectCategory = 'aplikacja' | 'strona' | 'blog' | 'sklep' | 'grafi
 export type PrimaryCategory = Extract<ProjectCategory, 'aplikacja' | 'strona' | 'blog' | 'sklep'>;
 export type SecondaryCategory = Extract<ProjectCategory, 'grafika' | 'treść' | 'marketing'>;
 
+export type Stat = { label: string; value: string; note?: string };
+
 export type Project = {
   slug: string;
   title: string;
-  short: string;
-  description: ReactNode;
-  task: ReactNode;
+  short: ReactNode;
+  description?: ReactNode;
+  task?: ReactNode;
   image: string;
-  link: string;
-  category: ProjectCategory[];
+  link?: string;
+  category?: string[];
+
+  client?: { name?: string; sector?: string; location?: string };
+  timeline?: { start?: string; end?: string };
+  stack?: string[];
+  deliverables?: string[];
+  goals?: ReactNode;
+  challenges?: ReactNode;
+  solutions?: ReactNode;
+  outcomes?: Stat[];
+  process_steps?: string[];
+  testimonial?: { quote: string; author?: string; role?: string };
+
+  beforeAfter?: {
+    beforeImage?: string;
+    afterImage?: string;
+    note?: string;
+  };
+
+  seo?: {
+    title?: string;
+    description?: string;
+    canonical?: string;
+  };
 };

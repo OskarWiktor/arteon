@@ -3,13 +3,66 @@
     {
       "slug": "msc-psychotherapy",
       "title": "MSC Psychotherapy UK",
-      "short": "Redesign oraz rozbudowa strony dla angielskiego gabinetu psychoterapeutycznego",
-      "description": "test",
-      "task": "test",
+      "short": "Nowy wygląd oraz optymalizacja strony z funkcjami sklepu. Lepsza widoczność w Google. Marketing w social mediach",
+      "description": "Mgr. Sylwia Paciuch zgłosiła się do nas z prośbą o kompleksową zmianę wizerunku swojej marki w sieci. Nasz pierwszy kontakt polegał na dokładnym omówieniu dokładnych celów biznesowych. Następnie, przygotowaliśmy jasny plan działania, tak ",
       "image": "/assets/projects/arteon-baners-msc.webp",
       "link": "https://msc-psychotherapy.co.uk/",
-      "category": ["strona", "sklep", "treść", "marketing", "grafika"]
+      "category": ["strona", "seo", "treść", "grafika", "analityka", "wcag"],
+
+      "client": { "name": "Mental Support Centre", "sector": "Psychoterapia", "location": "Camberley, UK" },
+      "stack": ["WordPress", "Yoast SEO", "GA4", "GSC"],
+
+      "deliverables": [
+        "Nowy wygląd strony: lekki, przejrzysty, budzący zaufanie",
+        "Jasne wezwania do działania: umów wizytę, napisz, zadzwoń",
+        "Prosty język w treści: mniej teorii, więcej konkretów",
+        "Spójność marki: ta sama estetyka na stronie, FB i IG",
+        "SEO lokalne: Camberley i Londyn w tytułach i opisach",
+        "Analityka: mierzymy wejścia i zapytania, wiemy co działa",
+        "Szybkość i dostępność: krótszy czas ładowania, wygoda dla każdego",
+        "Przygotowanie pod sprzedaż ebooka (następny etap)"
+      ],
+
+      "goals": ["Więcej lokalnych pacjentów z Camberley i Londynu", "Spójny wizerunek w sieci", "Lepsza widoczność strony w Google", "Promocja autorskiej książki"],
+
+      "solutions": [
+        "Jedna linia wizualna i językowa we wszystkich kanałach",
+        "Strona prowadząca do kontaktu: przyciski i formularz w kluczowych miejscach",
+        "Treści kierowane do pacjenta: dla kogo, jakie korzyści, co dalej",
+        "SEO lokalne i porządek w nagłówkach",
+        "Analityka do stałego mierzenia efektów",
+        "Plan treści: blog i rolki, plus promocja książki"
+      ],
+
+      "outcomes": [
+        { "label": "Szybkość na telefonie", "value": "97/100", "note": "po optymalizacji (wcześniej ok. 64%)" },
+        { "label": "Spójność kanałów", "value": "www • FB • IG", "note": "ten sam styl i przekaz" },
+        { "label": "Widoczność lokalna", "value": "w trakcie wzrostu", "note": "kolejny etap: blog i linkowanie" }
+      ],
+
+      "process_steps": [
+        "Audyt: wizerunek, treści, szybkość, dane",
+        "Projekt: mobilny układ i czytelna nawigacja",
+        "Treści: prosty język i jasne korzyści",
+        "Wdrożenie: konfiguracja i testy na urządzeniach",
+        "Pomiar: kliknięcia, formularze, źródła ruchu",
+        "Rozwój: blog, rolki, promocja książki",
+        "E-commerce: wdrożenie sprzedaży ebooka"
+      ],
+
+      "beforeAfter": {
+        "beforeImage": "/assets/projects/arteon-baners-msc.webp",
+        "afterImage": "/assets/projects/arteon-baners-msc.webp",
+        "note": "Przed: różne style i wolne ładowanie. Po: jedna linia i czytelny kontakt."
+      },
+
+      "seo": {
+        "title": "MSC Psychotherapy UK - spójna marka (Case study)",
+        "description": "Nowy wygląd strony, promocja książki, lokalne SEO i pełen pakiet marketingu. Zobacz, jak rozwineliśmy markę MSC Psychotherapy w Londynie",
+        "canonical": "https://www.arteonagency.pl/realizacje/msc-psychotherapy"
+      }
     },
+
     {
       "slug": "pilka-nozna-pl",
       "title": "PilkaNożna.pl",

@@ -126,7 +126,7 @@ export default function ContentSteps() {
       items={items}
       title="Oferta tworzenia treści"
       subtitle="Czytelnie i skutecznie"
-      description="Pisanie, redakcja i optymalizacja treści — strona www, blog, e-commerce i social media."
+      description="Pisanie, redakcja i optymalizacja treści - strona www, blog, e-commerce i social media."
     />
   );
 }

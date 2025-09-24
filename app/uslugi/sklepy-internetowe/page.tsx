@@ -73,11 +73,7 @@ export default function OfferWebPage() {
 
       <Gap size="sm" />
 
-      <ContactForm
-        title="Zbudujmy Twój sklep online"
-        description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę"
-        defaultSubject="Sklep internetowy"
-      />
+      <ContactForm title="Zbudujmy Twój sklep online" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Sklep internetowy" />
 
       <Gap variant="line" />
 

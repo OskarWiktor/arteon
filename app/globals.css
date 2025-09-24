@@ -91,13 +91,13 @@ h4,
 h5,
 .h5 {
   font-weight: 600;
-  font-size: clamp(18px, calc(18px + 4 * ((100vw - 360px) / 1080)), 22px);
+  font-size: clamp(18px, calc(18px + 8 * ((100vw - 360px) / 1080)), 26px);
 }
 
 h6,
 .h6 {
   font-weight: 600;
-  font-size: clamp(18px, calc(18px + 2 * ((100vw - 360px) / 1080)), 20px);
+  font-size: clamp(18px, calc(18px + 4 * ((100vw - 360px) / 1080)), 22px);
 }
 
 /*    FORMS    */

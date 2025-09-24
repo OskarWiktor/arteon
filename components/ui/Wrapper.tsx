@@ -1,15 +1,16 @@
-import { ReactNode } from 'react';
+import { ElementType, HTMLAttributes, ReactNode } from 'react';
 
-interface WrapperProps {
+interface WrapperProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
+  as?: ElementType;
   id?: string;
   className?: string;
 }
 
-export default function Wrapper({ children, className, id }: WrapperProps) {
+export default function Wrapper({ children, as: Tag = 'div', className = '', id, ...rest }: WrapperProps) {
   return (
-    <div id={id} className={`m-auto w-[90%] max-w-[1280px] ${className}`}>
+    <Tag id={id} className={`m-auto w-[90%] max-w-[1280px] ${className}`} {...rest}>
       {children}
-    </div>
+    </Tag>
   );
 }

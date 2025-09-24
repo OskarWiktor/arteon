@@ -63,11 +63,7 @@ export default function OfferDesignPage() {
 
       <Gap size="sm" />
 
-      <ContactForm
-        title="Zbudujmy spójny wizerunek"
-        description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę"
-        defaultSubject="Grafika"
-      />
+      <ContactForm title="Zbudujmy spójny wizerunek" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Grafika" />
 
       <Gap variant="line" />
 
