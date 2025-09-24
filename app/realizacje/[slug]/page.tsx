@@ -13,6 +13,7 @@ import TableOfContents from '@/components/sections/TableOfContent';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import Badge from '@/components/ui/Badge';
+import CTABaner from '@/components/sections/CTABaner';
 
 const projects = projectsData.projects as Project[];
 
@@ -64,17 +65,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 /* ── mini helpery do ReactNode/HTML-string ── */
-const Inline = ({ content }: { content?: React.ReactNode }) =>
-  !content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>;
+const Inline = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
-const Block = ({ content }: { content?: React.ReactNode }) =>
-  !content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>;
+const Block = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
 function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
     <div className="rounded-xl bg-white p-4 shadow-md">
       <p className="h5">{value}</p>
-      <p className=" text-[#5e5e5e]">{label}</p>
+      <p className="text-[#5e5e5e]">{label}</p>
       {note && <p className="mt-2">{note}</p>}
     </div>
   );
@@ -150,18 +149,49 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
+          {project.process_steps?.length ? (
+            <>
+              <SectionInfo title="Proces">
+                <ul className="grid gap-3 md:grid-cols-2">
+                  {project.process_steps.map((step, i) => (
+                    <li key={i} className="rounded-xl bg-white p-3 shadow-md">
+                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border-1 border-[#5e5e5e] text-xs font-bold text-[#5e5e5e]">{i + 1}</span>
+                      <span dangerouslySetInnerHTML={{ __html: step }} />
+                    </li>
+                  ))}
+                </ul>
+              </SectionInfo>
+              <Gap size="sm" />
+            </>
+          ) : null}
+
           {project.deliverables?.length ? (
             <>
               <SectionInfo title="Zakres prac">
-                <ul className="ml-6 list-disc">
-                  {project.deliverables.map((d, i) =>
-                    typeof d === 'string' ? (
-                      <li key={i} dangerouslySetInnerHTML={{ __html: d }} />
-                    ) : (
-                      <li key={i}>{d as any}</li>
-                    )
-                  )}
-                </ul>
+                <ul className="ml-6 list-disc">{project.deliverables.map((d, i) => (typeof d === 'string' ? <li key={i} dangerouslySetInnerHTML={{ __html: d }} /> : <li key={i}>{d as any}</li>))}</ul>
+              </SectionInfo>
+              <Gap size="sm" />
+            </>
+          ) : null}
+
+          {project.beforeAfter && (project.beforeAfter.beforeImage || project.beforeAfter.afterImage) ? (
+            <>
+              <SectionInfo title="Jak było - jak jest">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <figure>
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
+                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Przed</figcaption>
+                  </figure>
+                  <figure>
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
+                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Po</figcaption>
+                  </figure>
+                </div>
+                {project.beforeAfter.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: project.beforeAfter.note }} />}
               </SectionInfo>
               <Gap size="sm" />
             </>
@@ -193,45 +223,6 @@ export default function ProjectPage({ params }: PageProps) {
                     <Stat key={i} label={o.label} value={o.value} note={o.note} />
                   ))}
                 </div>
-              </SectionInfo>
-              <Gap size="sm" />
-            </>
-          ) : null}
-
-          {project.beforeAfter && (project.beforeAfter.beforeImage || project.beforeAfter.afterImage) ? (
-            <>
-              <SectionInfo title="Jak było - jak jest">
-                <div className="grid gap-6 md:grid-cols-2">
-                  <figure>
-                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Przed</figcaption>
-                  </figure>
-                  <figure>
-                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Po</figcaption>
-                  </figure>
-                </div>
-                {project.beforeAfter.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: project.beforeAfter.note }} />}
-              </SectionInfo>
-              <Gap size="sm" />
-            </>
-          ) : null}
-
-          {project.process_steps?.length ? (
-            <>
-              <SectionInfo title="Proces">
-                <ul className="grid gap-3 md:grid-cols-2">
-                  {project.process_steps.map((step, i) => (
-                    <li key={i} className="rounded-xl bg-white p-3 shadow-md">
-                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border-1 border-[#5e5e5e] text-xs font-bold text-[#5e5e5e]">{i + 1}</span>
-                      <span dangerouslySetInnerHTML={{ __html: step }} />
-                    </li>
-                  ))}
-                </ul>
               </SectionInfo>
               <Gap size="sm" />
             </>
@@ -273,6 +264,19 @@ export default function ProjectPage({ params }: PageProps) {
 
         <TableOfContents rootSelector="#article-root" />
       </Wrapper>
+
+      <Gap />
+
+      <CTABaner
+        title="Rozwiń z nami swoją firmę"
+        description="Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet"
+        primaryLabel="Skontaktuj się"
+        primaryLink="/kontakt"
+        secondaryLabel="Sprawdź naszą ofertę"
+        secondaryLink="/uslugi"
+        backgroundImage="/assets/bg/abstract-bg13.webp"
+        overlay="black"
+      />
     </>
   );
 }
