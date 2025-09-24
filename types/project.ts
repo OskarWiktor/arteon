@@ -15,7 +15,7 @@ export type Project = {
   task?: ReactNode;
   image: string;
   link?: string;
-  category?: ProjectCategory[];
+  category: ProjectCategory[];
 
   client?: { name?: string; sector?: string; location?: string };
   timeline?: { start?: string; end?: string };
