@@ -3,66 +3,59 @@
     {
       "slug": "msc-psychotherapy",
       "title": "MSC Psychotherapy UK",
-      "short": "Nowy wygląd oraz optymalizacja strony z funkcjami sklepu. Lepsza widoczność w Google. Marketing w social mediach",
-      "description": "Mgr. Sylwia Paciuch zgłosiła się do nas z prośbą o kompleksową zmianę wizerunku swojej marki w sieci. Nasz pierwszy kontakt polegał na dokładnym omówieniu dokładnych celów biznesowych. Następnie, przygotowaliśmy jasny plan działania, tak ",
+      "short": "Strona dla psychoterapeuty w UK. Lepsza widoczność w Google, spójny wizerunek, przygotowanie do sprzedaży ebooka i promocji książki.",
+      "description": "<p>MSC Psychotherapy UK to gabinet prowadzony przez mgr Sylwię Paciuch. Naszym celem było zbudowanie <strong>spójnej, prostej w odbiorze strony dla psychoterapeuty</strong> po polsku oraz wzmocnienie <strong>widoczności w Google</strong> w regionie Camberley i Londynu. Projekt łączy <strong>marketing dla psychologa</strong>, <strong>pozycjonowanie lokalne</strong> i przygotowanie do <strong>promocji książki psychologicznej</strong> \"Spokojnie, to tylko nerwica\".</p>",
       "image": "/assets/projects/arteon-baners-msc.webp",
       "link": "https://msc-psychotherapy.co.uk/",
-      "category": ["strona", "seo", "treść", "grafika", "analityka", "wcag"],
+      "category": ["strona", "sklep", "treść", "grafika", "marketing"],
 
       "client": { "name": "Mental Support Centre", "sector": "Psychoterapia", "location": "Camberley, UK" },
       "stack": ["WordPress", "Yoast SEO", "GA4", "GSC"],
 
       "deliverables": [
-        "Nowy wygląd strony: lekki, przejrzysty, budzący zaufanie",
-        "Jasne wezwania do działania: umów wizytę, napisz, zadzwoń",
-        "Prosty język w treści: mniej teorii, więcej konkretów",
-        "Spójność marki: ta sama estetyka na stronie, FB i IG",
-        "SEO lokalne: Camberley i Londyn w tytułach i opisach",
-        "Analityka: mierzymy wejścia i zapytania, wiemy co działa",
-        "Szybkość i dostępność: krótszy czas ładowania, wygoda dla każdego",
-        "Przygotowanie pod sprzedaż ebooka (następny etap)"
+        "Nowy układ i styl - lekki, czytelny, dopasowany do <strong>gabinetu psychologicznego</strong>",
+        "Treści prostym językiem - korzyści dla pacjenta, akcent na <strong>lęk i nerwicę</strong>",
+        "Struktura SEO - nagłówki, linkowanie wewnętrzne, sekcje pod <strong>pozycjonowanie dla psychologa</strong>",
+        "Analityka - konfiguracja <strong>GA4</strong>, ścieżki kontaktu, kluczowe zdarzenia",
+        "Dostępność - lepszy kontrast, czytelne fonty, wygoda mobilna (WCAG)",
+        "Przygotowanie sklepu - <strong>ebook</strong> i <strong>audiobook</strong> książki \"Spokojnie, to tylko nerwica\"",
+        "Plan <strong>marketingu dla psychologa</strong> - blog + krótkie rolki (TikTok/IG)"
       ],
 
-      "goals": ["Więcej lokalnych pacjentów z Camberley i Londynu", "Spójny wizerunek w sieci", "Lepsza widoczność strony w Google", "Promocja autorskiej książki"],
+      "goals": "<p>1) Jasny przekaz oferty: terapia indywidualna, par, rodzin, grupowa - z naciskiem na <strong>lęk i nerwicę</strong>, depresję, zaburzenia odżywiania, tematykę seksuologiczną oraz <strong>hipnozę terapeutyczną</strong>.</p><p>2) <strong>Pozycjonowanie dla psychologa</strong> w Camberley i Londynie - frazy: <em>psychoterapia po polsku</em>, <em>polski psychoterapeuta</em> oraz zapytania dotyczące lęku i nerwicy.</p><p>3) <strong>Promocja książki psychologicznej</strong> i przygotowanie do sprzedaży <strong>ebooka</strong> i <strong>audiobooka</strong> na stronie.</p><p>4) Spójność identyfikacji: nowoczesne <strong>logo dla psychologa</strong>, te same kolory i typografia w serwisie i social media.</p>",
 
-      "solutions": [
-        "Jedna linia wizualna i językowa we wszystkich kanałach",
-        "Strona prowadząca do kontaktu: przyciski i formularz w kluczowych miejscach",
-        "Treści kierowane do pacjenta: dla kogo, jakie korzyści, co dalej",
-        "SEO lokalne i porządek w nagłówkach",
-        "Analityka do stałego mierzenia efektów",
-        "Plan treści: blog i rolki, plus promocja książki"
-      ],
+      "challenges": "<p>Rozproszony wizerunek (inna estetyka na stronie, FB i IG), edukacyjne treści bez jasnego wskazania na możliwość umówienia się na terapię oraz słaba widoczność lokalna w Google. </p>",
+
+      "solutions": "<p><strong>1. Strona dla psychoterapeuty</strong> - przejrzysta nawigacja, krótkie akapity, specjalistyczne sekcje: dla kogo jest terapia, kiedy pomaga, jak zacząć.</p><p><strong>2. Pozycjonowanie dla psychologa</strong> - nagłówki i opisy pod Camberley/London, podkreślenie tematów: <em>lęk i nerwica</em>, <em>terapia par</em>, <em>hipnoza terapeutyczna</em>.</p><p><strong>3. Spójność identyfikacji</strong> - <em>logo dla psychologa</em> w wariancie nowoczesnym</p><p><strong>4. Promocja książki psychologicznej</strong> - sekcja na stronie + plan publikacji (krótkie rolki z cytatami i poradami), przygotowanie do sprzedaży <em>ebooka/audiobooka</em> w sklepie.</p><p><strong>5. Analityka i rozwój</strong> - <em>GA4 i GSC</em> do analityki widoczności strony w Google; <em>blog gabinetu psychologicznego</em> z tematami pod wyszukiwania (lęk, nerwica, relacje).</p>",
 
       "outcomes": [
-        { "label": "Szybkość na telefonie", "value": "97/100", "note": "po optymalizacji (wcześniej ok. 64%)" },
-        { "label": "Spójność kanałów", "value": "www • FB • IG", "note": "ten sam styl i przekaz" },
-        { "label": "Widoczność lokalna", "value": "w trakcie wzrostu", "note": "kolejny etap: blog i linkowanie" }
+        { "value": "Nowa zoptymalizowana strona", "label": "97/100", "note": "Po optymalizacji (wcześniej ok. 64%)" },
+        { "value": "Widoczność lokalna", "label": "W trakcie wzrostu", "note": "Kolejny etap: blog i redakcja treści" },
+        { "value": "Promocja książki", "label": "W trakcie realizacji", "note": "Kolejny etap: funkcje sklepu i rolki w social mediach" }
       ],
 
       "process_steps": [
-        "Audyt: wizerunek, treści, szybkość, dane",
-        "Projekt: mobilny układ i czytelna nawigacja",
-        "Treści: prosty język i jasne korzyści",
-        "Wdrożenie: konfiguracja i testy na urządzeniach",
-        "Pomiar: kliknięcia, formularze, źródła ruchu",
-        "Rozwój: blog, rolki, promocja książki",
-        "E-commerce: wdrożenie sprzedaży ebooka"
+        "Audyt: wizerunek, treści, szybkość, dane - punkt startowy",
+        "Projekt: układ pod <strong>stronę dla psychologa</strong> i komfort czytania",
+        "Treści: krótkie akapity, akcent na <strong>lęk i nerwicę</strong>, jasne następne kroki",
+        "Wdrożenie: konfiguracja, testy mobilne, porządek w nagłówkach",
+        "Pomiar: GA4, kliknięcia w kontakt, źródła ruchu",
+        "Rozwój: <strong>blog gabinetu</strong>, rolki (TikTok/IG), sekcja książki",
+        "Sklep: przygotowanie ścieżki dla <strong>ebooka</strong> i <strong>audiobooka</strong>"
       ],
 
       "beforeAfter": {
-        "beforeImage": "/assets/projects/arteon-baners-msc.webp",
-        "afterImage": "/assets/projects/arteon-baners-msc.webp",
-        "note": "Przed: różne style i wolne ładowanie. Po: jedna linia i czytelny kontakt."
+        "beforeImage": "/assets/projects/arteon-b-msc.webp",
+        "afterImage": "/assets/projects/arteon-a-msc2.webp",
+        "note": "Przed: różne style i wolne ładowanie. Po: jedna linia wizualna, jasny przekaz i treści pod <strong>pozycjonowanie dla psychologa</strong>."
       },
 
       "seo": {
-        "title": "MSC Psychotherapy UK - spójna marka (Case study)",
-        "description": "Nowy wygląd strony, promocja książki, lokalne SEO i pełen pakiet marketingu. Zobacz, jak rozwineliśmy markę MSC Psychotherapy w Londynie",
+        "title": "Strona dla psychoterapeuty w UK - SEO i promocja książki | Case study MSC Psychotherapy",
+        "description": "Strona dla psychologa po polsku w UK. Pozycjonowanie lokalne (Camberley/London), logo i marketing dla psychologa, promocja książki „Spokojnie, to tylko nerwica”, analityka GA4, przygotowanie sklepu (ebook, audiobook).",
         "canonical": "https://www.arteonagency.pl/realizacje/msc-psychotherapy"
       }
     },
-
     {
       "slug": "pilka-nozna-pl",
       "title": "PilkaNożna.pl",

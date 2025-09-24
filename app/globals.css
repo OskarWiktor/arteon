@@ -92,6 +92,7 @@ h5,
 .h5 {
   font-weight: 600;
   font-size: clamp(18px, calc(18px + 8 * ((100vw - 360px) / 1080)), 26px);
+  line-height: 125%;
 }
 
 h6,

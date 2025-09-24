@@ -20,10 +20,11 @@ const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 const projectUrl = (slug: string) => `${siteUrl}/realizacje/${slug}`;
 
+/* ── SEO/JSON-LD: opis tylko z SEO ── */
 function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;
-  const description = project.seo?.description || project.short || project.description || '';
+  const description = project.seo?.description || '';
   const image = project.image?.startsWith('http') ? project.image : `${siteUrl}${project.image}`;
 
   return {
@@ -34,14 +35,8 @@ function jsonLd(project: Project) {
     description,
     image: [image],
     author: [{ '@type': 'Organization', name: 'Arteon' }],
-    publisher: {
-      '@type': 'Organization',
-      name: 'Arteon',
-      logo: { '@type': 'ImageObject', url: `${siteUrl}/icon-512x512.png` },
-    },
+    publisher: { '@type': 'Organization', name: 'Arteon', logo: { '@type': 'ImageObject', url: `${siteUrl}/icon-512x512.png` } },
     about: project.category,
-    datePublished: project.timeline?.start ? `${project.timeline.start}-01` : undefined,
-    dateModified: project.timeline?.end ? `${project.timeline.end}-01` : undefined,
   } as const;
 }
 
@@ -51,6 +46,7 @@ export async function generateStaticParams() {
 
 type PageProps = { params: { slug: string } };
 
+/* ── META: tylko z SEO ── */
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const project = getProject(params.slug);
   if (!project) return {};
@@ -67,12 +63,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+/* ── mini helpery do ReactNode/HTML-string ── */
+const Inline = ({ content }: { content?: React.ReactNode }) =>
+  !content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>;
+
+const Block = ({ content }: { content?: React.ReactNode }) =>
+  !content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>;
+
 function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
     <div className="rounded-xl bg-white p-4 shadow-md">
       <p className="h5">{value}</p>
       <p className=" text-[#5e5e5e]">{label}</p>
-      {note && <p className="mt-1">{note}</p>}
+      {note && <p className="mt-2">{note}</p>}
     </div>
   );
 }
@@ -98,7 +101,11 @@ export default function ProjectPage({ params }: PageProps) {
 
             {project.category?.length ? <span className="mb-4 block text-sm text-[#5e5e5e] uppercase">{project.category.join(' • ')}</span> : null}
 
-            {project.short && <p itemProp="description">{project.short}</p>}
+            {project.short && (
+              <p itemProp="description">
+                <Inline content={project.short} />
+              </p>
+            )}
           </header>
 
           <div className="mb-6 flex flex-wrap items-center gap-1 text-sm">
@@ -123,10 +130,10 @@ export default function ProjectPage({ params }: PageProps) {
           {(project.description || project.task) && (
             <>
               <SectionInfo title="Kontekst projektu">
-                {project.description && <p>{project.description}</p>}
+                <Block content={project.description} />
                 {project.task && (
                   <p className="mt-6">
-                    <strong>Nasze zadanie:</strong> {project.task}
+                    <strong>Nasze zadanie:</strong> <Inline content={project.task} />
                   </p>
                 )}
               </SectionInfo>
@@ -137,7 +144,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.goals ? (
             <>
               <SectionInfo title="Cele biznesowe">
-                {project.goals}
+                <Block content={project.goals} />
               </SectionInfo>
               <Gap size="sm" />
             </>
@@ -147,9 +154,13 @@ export default function ProjectPage({ params }: PageProps) {
             <>
               <SectionInfo title="Zakres prac">
                 <ul className="ml-6 list-disc">
-                  {project.deliverables.map((d, i) => (
-                    <li key={i}>{d}</li>
-                  ))}
+                  {project.deliverables.map((d, i) =>
+                    typeof d === 'string' ? (
+                      <li key={i} dangerouslySetInnerHTML={{ __html: d }} />
+                    ) : (
+                      <li key={i}>{d as any}</li>
+                    )
+                  )}
                 </ul>
               </SectionInfo>
               <Gap size="sm" />
@@ -159,7 +170,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.challenges && (
             <>
               <SectionInfo title="Wyzwania">
-                {project.challenges}
+                <Block content={project.challenges} />
               </SectionInfo>
               <Gap size="sm" />
             </>
@@ -168,7 +179,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.solutions && (
             <>
               <SectionInfo title="Rozwiązania">
-                {project.solutions}
+                <Block content={project.solutions} />
               </SectionInfo>
               <Gap size="sm" />
             </>
@@ -204,7 +215,7 @@ export default function ProjectPage({ params }: PageProps) {
                     <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Po</figcaption>
                   </figure>
                 </div>
-                {project.beforeAfter.note && <p className="mt-3 text-sm">{project.beforeAfter.note}</p>}
+                {project.beforeAfter.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: project.beforeAfter.note }} />}
               </SectionInfo>
               <Gap size="sm" />
             </>
@@ -217,7 +228,7 @@ export default function ProjectPage({ params }: PageProps) {
                   {project.process_steps.map((step, i) => (
                     <li key={i} className="rounded-xl bg-white p-3 shadow-md">
                       <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border-1 border-[#5e5e5e] text-xs font-bold text-[#5e5e5e]">{i + 1}</span>
-                      {step}
+                      <span dangerouslySetInnerHTML={{ __html: step }} />
                     </li>
                   ))}
                 </ul>
