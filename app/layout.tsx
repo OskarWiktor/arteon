@@ -32,16 +32,16 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={locale}>
-<head>
-  <Script id="arteon-globals" strategy="beforeInteractive">
-    {`
+      <head>
+        <Script id="arteon-globals" strategy="beforeInteractive">
+          {`
       window.__GA_ID = ${GA_ID ? JSON.stringify(GA_ID) : 'undefined'};
       window.ArteonConsent = { open: () => document.dispatchEvent(new CustomEvent('arteon:open-consent')) };
     `}
-  </Script>
+        </Script>
 
-  <Script id="ga-consent-default" strategy="beforeInteractive">
-    {`
+        <Script id="ga-consent-default" strategy="beforeInteractive">
+          {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('consent','default',{
@@ -51,9 +51,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         ad_storage:'denied'
       });
     `}
-  </Script>
-</head>
-
+        </Script>
+      </head>
 
       <body className="font-sans antialiased">
         <CookieConsent />

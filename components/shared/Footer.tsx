@@ -19,7 +19,10 @@ const navLinks = [
   { href: '/kontakt', label: 'Kontakt' },
 ];
 
-const policyLinks = [{ href: '/polityka-prywatnosci', label: 'Polityka Prywatności' }];
+const otherLinks = [
+  { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
+  { href: '/mapa-strony', label: 'Mapa Strony' },
+];
 
 export default function Footer() {
   return (
@@ -75,7 +78,7 @@ export default function Footer() {
 
           <nav aria-label="Polityka" className="md:col-span-1">
             <ul className="flex flex-col gap-1 text-sm">
-              {policyLinks.map(({ href, label }) => (
+              {otherLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}
@@ -83,11 +86,13 @@ export default function Footer() {
                   >
                     {label}
                   </Link>
-                  <button onClick={() => (window as any).ArteonConsent?.open()} className="mt-1 cursor-pointer hover:text-slate-500" aria-haspopup="dialog">
-                    Ustawienia cookies
-                  </button>
                 </li>
               ))}
+              <li>
+                <button onClick={() => (window as any).ArteonConsent?.open()} className="cursor-pointer hover:text-slate-500" aria-haspopup="dialog">
+                  Ustawienia cookies
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
