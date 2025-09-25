@@ -32,29 +32,28 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={locale}>
-      <head>
-        <Script id="ga-consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('consent', 'default', {
-              analytics_storage: 'denied',
-              ad_user_data: 'denied',
-              ad_personalization: 'denied',
-              ad_storage: 'denied'
-            });
-          `}
-        </Script>
+<head>
+  <Script id="arteon-globals" strategy="beforeInteractive">
+    {`
+      window.__GA_ID = ${GA_ID ? JSON.stringify(GA_ID) : 'undefined'};
+      window.ArteonConsent = { open: () => document.dispatchEvent(new CustomEvent('arteon:open-consent')) };
+    `}
+  </Script>
 
-        <Script id="arteon-globals" strategy="afterInteractive">
-          {`
-            window.__GA_ID = ${GA_ID ? JSON.stringify(GA_ID) : 'undefined'};
-            window.ArteonConsent = {
-              open: () => document.dispatchEvent(new CustomEvent('arteon:open-consent'))
-            };
-          `}
-        </Script>
-      </head>
+  <Script id="ga-consent-default" strategy="beforeInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent','default',{
+        analytics_storage:'denied',
+        ad_user_data:'denied',
+        ad_personalization:'denied',
+        ad_storage:'denied'
+      });
+    `}
+  </Script>
+</head>
+
 
       <body className="font-sans antialiased">
         <CookieConsent />

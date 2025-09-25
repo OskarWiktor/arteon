@@ -21,7 +21,6 @@ const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 const projectUrl = (slug: string) => `${siteUrl}/realizacje/${slug}`;
 
-/* ── SEO/JSON-LD: opis tylko z SEO ── */
 function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;
@@ -47,7 +46,6 @@ export async function generateStaticParams() {
 
 type PageProps = { params: { slug: string } };
 
-/* ── META: tylko z SEO ── */
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const project = getProject(params.slug);
   if (!project) return {};
@@ -64,7 +62,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-/* ── mini helpery do ReactNode/HTML-string ── */
 const Inline = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
 const Block = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);

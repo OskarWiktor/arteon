@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
         <h2 className="h4">5. Odbiorcy danych</h2>
         <p>Dane mogą być przekazywane podmiotom wspierającym nas w świadczeniu usług, takim jak:</p>
         <ul className="list-disc space-y-1 pl-6">
-          <li>dostawcy hostingu i poczty (np. Vercel),</li>
+          <li>dostawcy hostingu i poczty (Vercel),</li>
           <li>dostawcy narzędzi analitycznych (Google Ireland Ltd., Vercel Inc.),</li>
           <li>biuro rachunkowe, podmioty obsługujące płatności lub prawo - jeśli zajdzie taka potrzeba.</li>
         </ul>
@@ -82,7 +82,7 @@ export default function PrivacyPolicyPage() {
         <h2 className="h4">7. Czas przechowywania danych</h2>
         <ul className="list-disc space-y-1 pl-6">
           <li>Dane z formularza kontaktowego - do 12 miesięcy od zakończenia korespondencji.</li>
-          <li>Dane klientów - przez okres wymagany przepisami prawa (np. dokumentacja księgowa - 5 lat).</li>
+          <li>Dane klientów - przez okres wymagany przepisami prawa (dokumentacja księgowa).</li>
           <li>Dane analityczne - zgodnie z polityką Google Analytics (domyślnie 26 miesięcy).</li>
         </ul>
       </section>

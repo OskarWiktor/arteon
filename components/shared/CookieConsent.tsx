@@ -46,6 +46,7 @@ function updateGtag(analytics: boolean) {
 function loadGA(measurementId?: string) {
   if (!measurementId) return;
   if (document.getElementById('ga4-src')) return;
+
   const s1 = document.createElement('script');
   s1.id = 'ga4-src';
   s1.async = true;
@@ -57,7 +58,7 @@ function loadGA(measurementId?: string) {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '${measurementId}');
+    gtag('config', '${measurementId}', { send_page_view: false });
   `;
   document.head.appendChild(s2);
 }
