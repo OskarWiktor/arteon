@@ -1,4 +1,3 @@
-/** @type {import('next-sitemap').IConfig} */
 const fg = require('fast-glob');
 const path = require('node:path');
 
@@ -7,7 +6,6 @@ module.exports = {
   generateRobotsTxt: true,
   sitemapSize: 7000,
   exclude: ['/404','/500','/_next/*','/api/*','/drafts/*'],
-
   transform: async (config, p) => {
     const isHome = p === '/';
     const isServices = p.startsWith('/uslugi/');
@@ -24,7 +22,7 @@ module.exports = {
   additionalPaths: async () => {
     const add = [];
 
-    // 1) Z danych – projekty
+    // 1) Projekty z danych
     try {
       const { projects } = require('./data/pl/projects.json');
       for (const p of projects ?? []) {
@@ -37,38 +35,35 @@ module.exports = {
       }
     } catch {}
 
-    // 2) Z plików – wszystkie page.tsx/mdx w app/
-    //    (obejmuje SSR i SSG, bez segmentów dynamicznych i grup routingu)
+    // 2) Skan app/ – dorzucamy też SSR
     const appDir = path.join(process.cwd(), 'app');
-    const patterns = ['**/page.{ts,tsx,mdx}'];
-    const files = await fg(patterns, { cwd: appDir, dot: false, ignore: [
-      '**/(_*)/**',     // np. (marketing)
-      '**/_*',          // ukryte
-      'api/**',
-      '**/components/**',
-      '**/shared/**',
-      '**/layout.{ts,tsx}',
-      '_not-found/**',
-      '**/_not-found/**',
-    ]});
+    const files = await fg(['**/page.{ts,tsx,mdx}'], {
+      cwd: appDir,
+      ignore: [
+        '**/(_*)/**',          // grupy routingu (np. (pl))
+        '**/_*',
+        'api/**',
+        '**/components/**',
+        '**/shared/**',
+        '**/layout.{ts,tsx}',
+        '_not-found/**',
+        '**/_not-found/**',
+      ],
+    });
 
-    const toRoute = (f) => {
-      let r = '/' + f
-        .replace(/\\/g, '/')
-        .replace(/\/page\.(ts|tsx|mdx)$/, '');
+    const toRoute = (file) => {
+      // root
+      if (file === 'page.tsx' || file === 'page.mdx' || file === 'page.ts') return '/';
 
-      // usuń grupy routingu (np. /(pl))
+      let r = '/' + file.replace(/\\/g, '/').replace(/\/page\.(ts|tsx|mdx)$/, '');
+      // usuń grupy routingu /(…)
       r = r.replace(/\/\([^/]+\)/g, '');
-
-      // pomiń dynamiczne segmenty
+      // pomiń segmenty dynamiczne
       if (/\[.+?\]/.test(r)) return null;
-
-      // index route
+      // index safety
       if (r === '/index') r = '/';
-
       // wykluczki
       if (r === '/_not-found' || r === '/api') return null;
-
       return r;
     };
 
