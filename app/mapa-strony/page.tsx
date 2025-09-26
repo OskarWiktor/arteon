@@ -161,13 +161,13 @@ function buildJsonLd({ services, portfolioItems, infoPages }: { services: NavIte
       {
         '@type': 'ItemList',
         '@id': `${BASE_URL}/#sitemap-uslugi`,
-        name: 'Mapa strony – Usługi',
+        name: 'Mapa strony - Usługi',
         itemListElement: toListElements([...services, ...servicesChildren]),
       },
       {
         '@type': 'ItemList',
         '@id': `${BASE_URL}/#sitemap-realizacje`,
-        name: 'Mapa strony – Realizacje',
+        name: 'Mapa strony - Realizacje',
         itemListElement:
           portfolioItems.length > 0
             ? toListElements(portfolioItems)
@@ -183,7 +183,7 @@ function buildJsonLd({ services, portfolioItems, infoPages }: { services: NavIte
       {
         '@type': 'ItemList',
         '@id': `${BASE_URL}/#sitemap-informacje`,
-        name: 'Mapa strony – Informacje',
+        name: 'Mapa strony - Informacje',
         itemListElement: toListElements(infoPages),
       },
       {

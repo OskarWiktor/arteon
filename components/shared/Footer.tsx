@@ -21,7 +21,7 @@ const navLinks = [
 
 const otherLinks = [
   { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
-  { href: '/mapa-strony', label: 'Mapa Strony' },
+  { href: '/regulamin', label: 'Regulamin świadczenia usług' },
 ];
 
 export default function Footer() {
@@ -92,6 +92,14 @@ export default function Footer() {
                 <button onClick={() => (window as any).ArteonConsent?.open()} className="cursor-pointer hover:text-slate-500" aria-haspopup="dialog">
                   Ustawienia cookies
                 </button>
+              </li>
+              <li>
+                <Link
+                  href="/mapa-strony"
+                  className="mt-4 inline-block rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  Mapa strony
+                </Link>
               </li>
             </ul>
           </nav>

@@ -31,7 +31,6 @@ const items = [
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
           <li>Makiety układu i wyglądu strony</li>
           <li>Retusz oraz optymalizacje grafik</li>
-          <li>Retusz zdjęć do strony i sklepu</li>
         </ul>
         <div className="mt-auto">
           <Button arrow link="#kontakt">

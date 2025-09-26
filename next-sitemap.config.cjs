@@ -5,7 +5,7 @@ module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl',
   generateRobotsTxt: true,
   sitemapSize: 7000,
-  exclude: ['/404','/500','/_next/*','/api/*','/drafts/*'],
+  exclude: ['/404', '/500', '/_next/*', '/api/*', '/drafts/*'],
   transform: async (config, p) => {
     const isHome = p === '/';
     const isServices = p.startsWith('/uslugi/');
@@ -35,12 +35,12 @@ module.exports = {
       }
     } catch {}
 
-    // 2) Skan app/ – dorzucamy też SSR
+    // 2) Skan app/ - dorzucamy też SSR
     const appDir = path.join(process.cwd(), 'app');
     const files = await fg(['**/page.{ts,tsx,mdx}'], {
       cwd: appDir,
       ignore: [
-        '**/(_*)/**',          // grupy routingu (np. (pl))
+        '**/(_*)/**', // grupy routingu (np. (pl))
         '**/_*',
         'api/**',
         '**/components/**',
@@ -67,7 +67,7 @@ module.exports = {
       return r;
     };
 
-    const seen = new Set(add.map(x => x.loc));
+    const seen = new Set(add.map((x) => x.loc));
     for (const f of files) {
       const route = toRoute(f);
       if (!route) continue;
