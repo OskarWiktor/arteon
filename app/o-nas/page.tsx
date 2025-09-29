@@ -24,7 +24,7 @@ export default function AboutPage() {
         title="O nas"
         subtitle="Arteon - Elastyczny partner"
         description="Budujemy strony i komunikację, które sprzedają - z naciskiem na czytelność, szybkość i realny efekt biznesowy."
-        backgroundImage="/assets/bg/abstract-bg2.webp"
+        backgroundImage="/assets/bg/abstract-bg8.webp"
         overlay="black"
       />
       <BenefitBelt
@@ -79,7 +79,7 @@ export default function AboutPage() {
         primaryLink="/kontakt"
         secondaryLabel="Poznaj ofertę"
         secondaryLink="/uslugi"
-        backgroundImage="/assets/bg/abstract-bg2.webp"
+        backgroundImage="/assets/bg/abstract-bg8.webp"
         overlay="black"
       />
     </>

@@ -25,7 +25,7 @@ export default function ContactPage() {
         title="Porozmawiajmy o Twojej firmie"
         variant="center"
         description="Skontaktuj się z nami - przygotujemy ofertę i plan działania szyty na miarę"
-        backgroundImage="/assets/bg/abstract-bg4.webp"
+        backgroundImage="/assets/bg/abstract-bg10.webp"
         overlay="black"
       />
 
