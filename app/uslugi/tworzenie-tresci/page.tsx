@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
-import PricingSteps from '@/components/sections/steps/FeesSteps';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import FaqContent from '@/components/sections/faqs/FaqContent';
 import ContentFeatures from '@/components/sections/features/ContentFeatures';
@@ -12,6 +11,7 @@ import ContentSteps from '@/components/sections/steps/ContentSteps';
 import { RiBarChart2Fill, RiBookOpenLine, RiCustomerService2Line, RiBrushLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
+import FeesSteps from '@/components/sections/steps/FeesSteps';
 
 export async function generateMetadata() {
   return generatePageMetadata('content');
@@ -54,11 +54,11 @@ export default function OfferContentPage() {
 
         <Gap variant="line" />
 
-        <PricingSteps />
+        <WorkSteps variant="content" />
 
         <Gap variant="line" />
 
-        <WorkSteps />
+        <FeesSteps/>
 
         <Gap size="sm" />
 

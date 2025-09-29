@@ -7,7 +7,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import WebFeatures from '@/components/sections/features/WebFeatures';
 import WebPrices from '@/components/sections/prices/WebPrices';
 import Gap from '@/components/ui/Gap';
-import PricingSteps from '@/components/sections/steps/FeesSteps';
+import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
@@ -68,11 +68,11 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <PricingSteps />
+        <WorkSteps variant="web" />
 
         <Gap variant="line" />
 
-        <WorkSteps />
+        <FeesSteps/>
 
         <Gap size="sm" />
 

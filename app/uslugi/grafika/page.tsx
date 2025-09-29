@@ -3,7 +3,7 @@ import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
-import PricingSteps from '@/components/sections/steps/FeesSteps';
+import FeesSteps from '@/components/sections/steps/FeesSteps';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import DesignFeatures from '@/components/sections/features/DesignFeatures';
 import FaqDesign from '@/components/sections/faqs/FaqDesign';
@@ -57,11 +57,11 @@ export default function OfferDesignPage() {
 
         <Gap variant="line" />
 
-        <PricingSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps />
+        <FeesSteps/>
 
         <Gap size="sm" />
 

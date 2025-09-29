@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { headers } from 'next/headers';
 
 import './globals.css';
 import Navigation from '@/components/shared/Navigation';
@@ -26,12 +25,8 @@ export const metadata: Metadata = {
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const headersList = await headers();
-  const host = headersList.get('host') || '';
-  const locale = host.endsWith('.com') ? 'en' : 'pl';
-
   return (
-    <html lang={locale}>
+    <html lang="pl">
       <head>
         <Script id="arteon-globals" strategy="beforeInteractive">
           {`
