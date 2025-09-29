@@ -22,7 +22,7 @@ export default function AboutPage() {
     <>
       <HeroBaner
         title="O nas"
-        subtitle="Arteon - Twój partner"
+        subtitle="Arteon - Elastyczny partner"
         description="Budujemy strony i komunikację, które sprzedają - z naciskiem na czytelność, szybkość i realny efekt biznesowy."
         backgroundImage="/assets/bg/abstract-bg2.webp"
         overlay="black"
@@ -81,73 +81,6 @@ export default function AboutPage() {
         secondaryLink="/uslugi"
         backgroundImage="/assets/bg/abstract-bg2.webp"
         overlay="black"
-      />
-
-      {/* JSON-LD: Organization + FAQ */}
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'Arteon',
-            url: 'https://www.arteonagency.pl',
-            email: 'contact@arteonagency.com',
-            address: {
-              '@type': 'PostalAddress',
-              addressLocality: 'Zagacie',
-              postalCode: '32-070',
-              streetAddress: 'ul. Jaśminowa 36',
-              addressCountry: 'PL',
-            },
-            sameAs: [],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'Ile trwa projekt strony?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'To zależy od zakresu. Strona firmowa z blogiem to zwykle kilka tygodni. Landing page szybciej. Kluczowe jest szybkie zatwierdzanie etapów.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'Czy mogę samodzielnie edytować treści?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Tak. Dostajesz panel CMS oraz krótkie instrukcje PDF/Video. W razie potrzeby wdrożymy dalsze automatyzacje.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'Czy zajmujecie się hostingiem?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Nie świadczymy hostingu. Pomożemy dobrać i skonfigurować infrastrukturę lub wdrożymy na środowisku, z którego korzystasz.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'Jak wyglądają rozliczenia?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Zgodnie z Regulaminem: progi płatności i kamienie milowe są znane z góry. Faktury VAT-zw. (jeśli przysługuje). Termin standardowy: 7 dni.',
-                },
-              },
-            ],
-          }),
-        }}
       />
     </>
   );
