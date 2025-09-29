@@ -34,14 +34,14 @@ export default function TermsPage() {
             <p>1.7. Język umowy: polski.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="dla-kogo" title="2. Dla kogo świadczymy">
             <p>2.1. Usługi kierowane są do przedsiębiorców (B2B). Na życzenie możliwa obsługa konsumentów oraz przedsiębiorców na prawach konsumenta (art. 38a Ustawy o prawach konsumenta).</p>
             <p>2.2. Dla konsumenta / przedsiębiorcy uprzywilejowanego obowiązuje prawo odstąpienia 14 dni, z wyjątkami wskazanymi w §13.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="zakres-uslug" title="3. Zakres usług">
             <p>
@@ -70,7 +70,7 @@ export default function TermsPage() {
             </p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="umowa" title="4. Zawarcie umowy">
             <p>4.1. Kanały: e-mail, formularz, Oferteo, komunikatory (np. Teams) - zawsze z potwierdzeniem na piśmie (mail/wiadomość).</p>
@@ -88,7 +88,7 @@ export default function TermsPage() {
             <p>4.5. Ważność oferty: 14 dni od wysłania, chyba że wskazano inaczej.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="platnosci" title="5. Ceny i rozliczenia">
             <p>5.1. Waluta: PLN (inne waluty na życzenie - rozliczenie wg bieżącego kursu banku).</p>
@@ -98,7 +98,7 @@ export default function TermsPage() {
             <p>5.5. Faktury: wystawiane wyłącznie za usługi; brak paragonów. Ceny brutto z adnotacją o zwolnieniu z VAT, jeżeli przysługuje.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="change-request" title="6. Zmiany zakresu (change request)">
             <p>6.1. Dodatkowe prace wyceniane zadaniowo (uwzględniając technologię i złożoność).</p>
@@ -106,7 +106,7 @@ export default function TermsPage() {
             <p>6.3. Definicje: „poprawka” = modyfikacja w ramach uzgodnionej funkcji i celu; „nowa funkcja” = rzecz nieobjęta ustalonym zakresem - wymaga nowej wyceny.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="odbior" title="7. Odbiór">
             <p>7.1. Odbiory cząstkowe po etapach + odbiór końcowy potwierdzony e-mailem.</p>
@@ -114,7 +114,7 @@ export default function TermsPage() {
             <p>7.3. Dostępy robocze przekazywane w trakcie prac; pakiet dostępowo-projektowy (repo, pliki, konfiguracje) - po pełnej zapłacie.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="prawa-autorskie" title="8. Prawa autorskie i portfolio">
             <p>
@@ -129,7 +129,7 @@ export default function TermsPage() {
             <p>8.4. Licencje osób trzecich (fonty, zdjęcia, wtyczki) zapewnia i finansuje Klient; Usługodawca może pośredniczyć w znalezieniu i zakupie.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="utrzymanie" title="9. Utrzymanie, domeny, kopie">
             <p>9.1. Utrzymanie (opcjonalnie): aktualizacje, kopie, drobne prace, monitoring - wg umowy utrzymaniowej; czas reakcji: do 48h w dni robocze.</p>
@@ -138,7 +138,7 @@ export default function TermsPage() {
             <p>9.4. Infrastruktura zewnętrzna Klienta: odpowiedzialność Usługodawcy ograniczona do konfiguracji i działań w ramach przydzielonych uprawnień.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="seo-reklama" title="10. SEO i reklama - zasady">
             <p>10.1. Brak gwarancji konkretnych pozycji i wyników - na efekt wpływają czynniki zewnętrzne (konkurencja, algorytmy, rynek).</p>
@@ -146,7 +146,7 @@ export default function TermsPage() {
             <p>10.3. Budżety reklamowe rozlicza Klient bezpośrednio z operatorem (Google, Meta); Usługodawca fakturuje wyłącznie obsługę.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="gwarancja" title="11. Gwarancja i wsparcie">
             <p>11.1. Gwarancja na wdrożenie: 60 dni od odbioru - obejmuje błędy implementacyjne.</p>
@@ -154,7 +154,7 @@ export default function TermsPage() {
             <p>11.3. Po gwarancji: prace serwisowe według indywidualnej wyceny (stawka nie niższa niż 50 zł brutto/h).</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="odpowiedzialnosc" title="12. Odpowiedzialność, poufność, siła wyższa">
             <p>12.1. Odpowiedzialność Usługodawcy wobec Klienta B2B ograniczona jest do wysokości wynagrodzenia za dany etap prac; wyłączone są utracone korzyści.</p>
@@ -162,7 +162,7 @@ export default function TermsPage() {
             <p>12.3. Poufność: każda ze stron zachowuje w tajemnicy informacje techniczne, handlowe i organizacyjne uzyskane w trakcie współpracy.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="konsumenci" title="13. Konsumenci i przedsiębiorcy uprzywilejowani">
             <p>13.1. Informacje przedumowne udostępniane są przed zawarciem umowy (strona/oferta).</p>
@@ -176,7 +176,7 @@ export default function TermsPage() {
             <p>13.3. Na życzenie udostępniamy wzór formularza odstąpienia (PDF).</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="reklamacje" title="14. Reklamacje">
             <p>14.1. Zgłoszenie e-mailem na adres: contact@arteonagency.com z opisem problemu, datą i załącznikami.</p>
@@ -184,7 +184,7 @@ export default function TermsPage() {
             <p>14.3. Priorytet: naprawa w rozsądnym terminie; jeżeli naprawa obiektywnie niemożliwa - odpowiednia rekompensata.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="rodo" title="15. Dane osobowe">
             <p>
@@ -198,7 +198,7 @@ export default function TermsPage() {
             <p>15.3. Analityka (np. GA4, Vercel Analytics) i logi - zgodnie z Polityką prywatności.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="zmiany-prawo" title="16. Zmiany regulaminu, prawo i spory">
             <p>
@@ -212,14 +212,14 @@ export default function TermsPage() {
             <p>16.3. Spory: w pierwszej kolejności mediacja/negocjacje; w relacjach B2B - sąd właściwy dla siedziby Usługodawcy.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="oferteo" title="17. Oferteo">
             <p>17.1. Zgłoszenie w Oferteo + pisemne potwierdzenie Usługodawcy (np. e-mail) = zawarcie umowy na warunkach oferty i niniejszego Regulaminu.</p>
             <p>17.2. Link do Regulaminu dołączamy w ofertach Oferteo; Regulamin wiąże strony dla zleceń z tego kanału.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo id="wejscie-w-zycie" title="18. Wejście w życie">
             <p>18.1. Regulamin obowiązuje od dnia: 1.10.2025.</p>

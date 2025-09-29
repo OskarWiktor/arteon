@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
             Wersja: <strong>1.10.2025</strong>
           </p>
 
-          <Gap size="sm" />
+          <Gap size="xs" />
 
           <SectionInfo title="1. Administrator danych">
             <p>Administratorem danych osobowych jest Arteon z siedzibą w gm. Czernichów, miejsc. Zagacie, ul. Jaśminowa, nr 36, 32-070.</p>
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="2. Zakres zbieranych danych">
             <ul className="list-disc space-y-1 pl-6">
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
             </ul>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="3. Cele i podstawy prawne przetwarzania">
             <ol className="list-decimal space-y-1 pl-6">
@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
             </ol>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="4. Pliki cookies">
             <p>Strona wykorzystuje pliki cookies w celu:</p>
@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
             <p>Możesz zarządzać cookies w ustawieniach swojej przeglądarki. Ograniczenie cookies może wpłynąć na niektóre funkcje serwisu.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="5. Odbiorcy danych">
             <p>Dane mogą być przekazywane podmiotom wspierającym nas w świadczeniu usług, takim jak:</p>
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
             <p>Wszyscy odbiorcy przetwarzają dane zgodnie z RODO na podstawie odpowiednich umów.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="6. Powierzenie przetwarzania (DPA)">
             <p>
@@ -97,7 +97,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="7. Przekazywanie danych poza EOG">
             <p>
@@ -106,7 +106,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="8. Czas przechowywania danych">
             <ul className="list-disc space-y-1 pl-6">
@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
             </ul>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="9. Twoje prawa">
             <p>Masz prawo do:</p>
@@ -132,19 +132,19 @@ export default function PrivacyPolicyPage() {
             </ul>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="10. Dobrowolność podania danych">
             <p>Podanie danych osobowych jest dobrowolne, ale niezbędne do kontaktu lub realizacji usługi.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="11. Zabezpieczenia">
             <p>Stosujemy środki techniczne i organizacyjne zapewniające ochronę danych osobowych przed nieuprawnionym dostępem, utratą czy zniszczeniem.</p>
           </SectionInfo>
 
-          <Gap size="sm" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="12. Zmiany polityki">
             <p>Polityka prywatności może być aktualizowana, aby uwzględnić zmiany w przepisach lub technologii. Aktualna wersja jest zawsze dostępna na tej stronie.</p>

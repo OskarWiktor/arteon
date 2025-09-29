@@ -52,14 +52,14 @@ export default function SitemapPage() {
           <p className="mt-2">Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do interesującej Cię treści.</p>
         </header>
 
-        <Gap size="xs" />
+        <Gap size="sm" />
 
         <nav aria-label="Mapa strony">
           <SectionInfo title="Usługi">
             <NestedList items={services} />
           </SectionInfo>
 
-          <Gap size="xs" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="Realizacje">
             <p>
@@ -80,7 +80,7 @@ export default function SitemapPage() {
             ) : null}
           </SectionInfo>
 
-          <Gap size="xs" />
+          <Gap variant="line" size="sm" />
 
           <SectionInfo title="Informacje">
             <ul>

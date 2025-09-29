@@ -45,7 +45,7 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <ArteonFeatures />
 
         <Gap variant="line" />
 
@@ -53,7 +53,7 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <ArteonFeatures />
+        <ServicesSteps />
 
         <Gap variant="line" />
 

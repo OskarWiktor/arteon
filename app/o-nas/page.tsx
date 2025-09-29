@@ -45,7 +45,7 @@ export default function AboutPage() {
           </p>
         </SectionBasic>
 
-        <Gap />
+        <Gap variant="line" />
 
         <SectionInfo
           title="Dlaczego powstaliśmy?"
@@ -53,19 +53,19 @@ export default function AboutPage() {
             modelu: strategia → projekt → wdrożenie → widoczność."
         ></SectionInfo>
 
-        <Gap />
+        <Gap variant="line" />
 
         <WhatSetsUsApartSteps />
 
-        <Gap />
+        <Gap variant="line" />
 
         <WorkSteps />
 
-        <Gap />
+        <Gap variant="line" />
 
         <TechStack />
 
-        <Gap />
+        <Gap variant="line" />
 
         <ServicesSteps />
 
