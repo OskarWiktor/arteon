@@ -57,7 +57,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
 
   return (
     <section aria-labelledby="faq-heading">
-      {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
+      {subtitle && <span className="text-base tracking-wider uppercase text-[#5e5e5e]">{subtitle}</span>}
       <h2 id="faq-heading" className="mb-2">
         {title}
       </h2>

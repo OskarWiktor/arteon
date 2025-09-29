@@ -1,11 +1,10 @@
 'use client';
 
 import FeatureGrid, { type FeatureItem } from '../FeatureGrid';
-import { RiArticleLine, RiDatabase2Line, RiBrushLine, RiBarChart2Line, RiShareForwardLine, RiBookOpenLine } from 'react-icons/ri';
+import { RiArticleLine, RiDatabase2Line, RiBrushLine, RiBarChart2Line, RiBookOpenLine } from 'react-icons/ri';
 import { IoAccessibility } from 'react-icons/io5';
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
-import { HiSparkles } from 'react-icons/hi';
 
 const items: FeatureItem[] = [
   {
@@ -33,10 +32,6 @@ const items: FeatureItem[] = [
     icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Integracje z social mediami i analityką',
-    icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
-  },
-  {
     title: 'Dedykowane szkolenia i instrukcje',
     icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
   },
@@ -44,12 +39,8 @@ const items: FeatureItem[] = [
     title: 'Stałe wsparcie po wdrożeniu',
     icon: <MdSupportAgent className="h-6 w-6 text-slate-500" />,
   },
-  {
-    title: 'Standard globalnych marek',
-    icon: <HiSparkles className="h-6 w-6 text-slate-500" />,
-  },
 ];
 
 export default function ArteonFeatures() {
-  return <FeatureGrid title="Nasz standard współpracy" subtitle="Co zawsze dostajesz w Arteon" items={items} />;
+  return <FeatureGrid title="Nasz standard współpracy" subtitle="Co dostajesz w Arteon" items={items} />;
 }

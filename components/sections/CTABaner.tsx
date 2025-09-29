@@ -27,7 +27,7 @@ export default function CTABaner({ title, subtitle, description, primaryLabel, p
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative z-10 px-6 py-16 md:py-20">
-        <div className={`mx-auto max-w-3xl text-center ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} rounded-2xl p-6`}>
+        <div className={`mx-auto text-center ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} rounded-2xl p-6`}>
           {subtitle && <span className="text-base tracking-wider uppercase">{subtitle}</span>}
 
           <h3>{title}</h3>

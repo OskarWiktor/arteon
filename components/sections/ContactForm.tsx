@@ -46,7 +46,7 @@ export default function ContactForm({ title, description, defaultSubject, action
       {(title || description) && (
         <header className="mb-6">
           {title && <h2 className="h3">{title}</h2>}
-          {description && <p className="max-w-3xl pt-3 pb-2 text-[#2B2B2B]">{description}</p>}
+          {description && <p className=" pt-3 pb-2 text-[#2B2B2B]">{description}</p>}
         </header>
       )}
 
