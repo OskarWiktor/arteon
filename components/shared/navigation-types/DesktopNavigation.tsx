@@ -45,9 +45,9 @@ export default function DesktopNavigation() {
   useEffect(() => setIsOfferOpen(false), [pathname]);
 
   const navigationItems = [
-    { href: '/', label: 'Strona Główna', exact: true },
-    { href: '/realizacje', label: 'Realizacje' },
+    { href: '/realizacje', label: 'Realizacje', exact: true },
     { href: '/uslugi', label: 'Usługi' },
+    { href: '/o-nas', label: 'O nas' },
     { href: '/kontakt', label: 'Kontakt' },
   ];
 

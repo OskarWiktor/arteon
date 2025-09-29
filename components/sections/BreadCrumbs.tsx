@@ -1,7 +1,5 @@
 'use client';
 
-import Wrapper from '@/components/ui/Wrapper';
-
 type Crumb = { href: string; label: string };
 
 export type BreadcrumbsProps = {
@@ -39,27 +37,25 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
 
   return (
     <nav aria-label="okruszki" className={`py-6 ${className}`}>
-      <Wrapper>
-        <ol className="flex flex-wrap gap-2 text-sm">
-          {items.map((it, idx) => {
-            const isLast = idx === lastIndex;
-            return (
-              <li key={`${it.href}-${idx}`} className="flex items-center gap-2">
-                {isLast ? (
-                  <span aria-current="page" className="opacity-70">
-                    {it.label}
-                  </span>
-                ) : (
-                  <a href={it.href} className="underline underline-offset-4 hover:no-underline">
-                    {it.label}
-                  </a>
-                )}
-                {!isLast && <span aria-hidden="true">/</span>}
-              </li>
-            );
-          })}
-        </ol>
-      </Wrapper>
+      <ol className="flex flex-wrap gap-2 text-sm">
+        {items.map((it, idx) => {
+          const isLast = idx === lastIndex;
+          return (
+            <li key={`${it.href}-${idx}`} className="flex items-center gap-2">
+              {isLast ? (
+                <span aria-current="page" className="opacity-70">
+                  {it.label}
+                </span>
+              ) : (
+                <a href={it.href} className="underline underline-offset-4 hover:no-underline">
+                  {it.label}
+                </a>
+              )}
+              {!isLast && <span aria-hidden="true">/</span>}
+            </li>
+          );
+        })}
+      </ol>
 
       {includeJsonLd && jsonLd && (
         <script

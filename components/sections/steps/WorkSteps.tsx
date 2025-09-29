@@ -30,5 +30,5 @@ const WorkStepsItems = [
 ];
 
 export default function WorkSteps() {
-  return <SectionSteps items={WorkStepsItems} title="Proces pracy" subtitle="Nasze praktyki" description="Transparentny. Prosty. Skuteczny." />;
+  return <SectionSteps items={WorkStepsItems} title="Nasz proces współpracy" subtitle="Nasze praktyki" description="Transparentny. Prosty. Skuteczny." />;
 }

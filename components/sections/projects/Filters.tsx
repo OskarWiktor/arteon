@@ -2,7 +2,6 @@
 
 import { useMemo } from 'react';
 import Button from '../../ui/Button';
-import Wrapper from '../../ui/Wrapper';
 import allProjectsData from '@/data/pl/projects.json';
 import type { Project, ProjectCategory, PrimaryCategory, SecondaryCategory } from '@/types/project';
 
@@ -39,40 +38,38 @@ export default function Filters({ selected, onChange }: Props) {
   }, [projects]);
 
   return (
-    <section className="w-full">
-      <Wrapper className="flex flex-col gap-4">
-        <h2>Filtry projektów</h2>
+    <section className="flex w-full flex-col gap-4">
+      <h2>Filtry projektów</h2>
 
-        <div className="flex flex-col justify-between md:flex-row">
-          <div>
-            <p className="mb-1 text-sm font-medium">Typ projektu</p>
-            <div role="group" aria-label="Filtr: Typ projektu" className="flex flex-wrap gap-2">
-              <Button variant={!selected.primary ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, primary: null })}>
-                Wszystkie
+      <div className="flex flex-col justify-between md:flex-row">
+        <div>
+          <p className="mb-1 text-sm font-medium">Typ projektu</p>
+          <div role="group" aria-label="Filtr: Typ projektu" className="flex flex-wrap gap-2">
+            <Button variant={!selected.primary ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, primary: null })}>
+              Wszystkie
+            </Button>
+            {primaryCategories.map((category) => (
+              <Button key={category} variant={selected.primary === category ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, primary: category })}>
+                {category.charAt(0).toUpperCase() + category.slice(1)}
               </Button>
-              {primaryCategories.map((category) => (
-                <Button key={category} variant={selected.primary === category ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, primary: category })}>
-                  {category.charAt(0).toUpperCase() + category.slice(1)}
-                </Button>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <p className="mt-4 mb-1 text-sm font-medium md:mt-0">Dodatkowe usługi</p>
-            <div role="group" aria-label="Filtr: Usługi" className="flex flex-wrap gap-2">
-              <Button variant={!selected.secondary ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, secondary: null })}>
-                Wszystkie
-              </Button>
-              {secondaryCategories.map((category) => (
-                <Button key={category} variant={selected.secondary === category ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, secondary: category })}>
-                  {category.charAt(0).toUpperCase() + category.slice(1)}
-                </Button>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
-      </Wrapper>
+
+        <div>
+          <p className="mt-4 mb-1 text-sm font-medium md:mt-0">Dodatkowe usługi</p>
+          <div role="group" aria-label="Filtr: Usługi" className="flex flex-wrap gap-2">
+            <Button variant={!selected.secondary ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, secondary: null })}>
+              Wszystkie
+            </Button>
+            {secondaryCategories.map((category) => (
+              <Button key={category} variant={selected.secondary === category ? 'accent' : 'normal'} size="small" onClick={() => onChange({ ...selected, secondary: category })}>
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </Button>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

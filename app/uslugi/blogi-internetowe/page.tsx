@@ -13,6 +13,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import BlogPrices from '@/components/sections/prices/BlogPrices';
 import { RiArticleLine, RiSearchLine, RiShieldCheckLine, RiCustomerService2Line } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
+import Wrapper from '@/components/ui/Wrapper';
 
 export async function generateMetadata() {
   return generatePageMetadata('onlineBlogs');
@@ -46,43 +47,47 @@ export default function OfferBlogPage() {
         ]}
       />
 
-      <Gap size="sm" />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <BlogFeatures />
+        <BlogFeatures />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ProjectsOverview title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
+        <ProjectsOverview title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
 
-      <Gap />
+        <Gap />
+      </Wrapper>
 
       <TechSteps />
 
-      <Gap />
+      <Wrapper>
+        <Gap />
 
-      <BlogPrices />
+        <BlogPrices />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <PricingSteps />
+        <PricingSteps />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <WorkSteps />
+        <WorkSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
 
-      <ContactForm title="Zbudujmy Twój blog" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Blog" />
+        <ContactForm title="Zbudujmy Twój blog" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Blog" />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <FaqBlog />
+        <FaqBlog />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ServicesSteps />
+        <ServicesSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
 
       <CTABaner
         title="Czas na blog, który buduje Twoją pozycję"

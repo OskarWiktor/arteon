@@ -8,6 +8,7 @@ import Mission from '@/components/sections/steps/Mission';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import Gap from '@/components/ui/Gap';
+import Wrapper from '@/components/ui/Wrapper';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 
@@ -37,32 +38,33 @@ export default function HomePage() {
           { icon: <RiMegaphoneLine />, label: 'Marketing' },
         ]}
       />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <Gap size="sm" />
+        <Mission />
 
-      <Mission />
+        <Gap variant="line" />
 
-      <Gap variant="line" />
+        <ServicesSteps />
 
-      <ServicesSteps />
+        <Gap variant="line" />
 
-      <Gap variant="line" />
+        <ProjectsOverview title="Nasze realizacje" category="strona" />
 
-      <ProjectsOverview title="Nasze realizacje" category="strona" />
+        <Gap variant="line" />
 
-      <Gap variant="line" />
+        <ArteonFeatures />
 
-      <ArteonFeatures />
+        <Gap variant="line" />
 
-      <Gap variant="line" />
+        <WorkSteps />
 
-      <WorkSteps />
+        <Gap variant="line" />
 
-      <Gap variant="line" />
+        <FeesSteps />
 
-      <FeesSteps />
-
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
 
       <CTABaner
         title="Zacznijmy od rozmowy"

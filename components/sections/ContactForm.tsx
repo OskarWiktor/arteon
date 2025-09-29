@@ -2,7 +2,6 @@
 
 import { useRef, useState } from 'react';
 import Button from '../ui/Button';
-import Wrapper from '../ui/Wrapper';
 
 type ContactFormProps = {
   title?: string;
@@ -43,7 +42,7 @@ export default function ContactForm({ title, description, defaultSubject, action
     'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   return (
-    <Wrapper id="kontakt">
+    <section id="kontakt">
       {(title || description) && (
         <header className="mb-6">
           {title && <h2 className="h3">{title}</h2>}
@@ -91,6 +90,6 @@ export default function ContactForm({ title, description, defaultSubject, action
           </p>
         )}
       </form>
-    </Wrapper>
+    </section>
   );
 }

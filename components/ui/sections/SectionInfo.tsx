@@ -17,7 +17,7 @@ interface SectionInfoProps {
 
 export default function SectionInfo({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, children, id }: SectionInfoProps) {
   return (
-    <section className="w-full" id={id}>
+    <div id={id}>
       {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
 
       <h2 className="mb-2 scroll-mt-26 lg:mb-4">{title}</h2>
@@ -40,6 +40,6 @@ export default function SectionInfo({ title, subtitle, description, btnOne, btnO
           )}
         </div>
       )}
-    </section>
+    </div>
   );
 }

@@ -5,6 +5,7 @@ import HeroBaner from '@/components/sections/HeroBaner';
 import ContactSteps from '@/components/sections/steps/ContactSteps';
 import Gap from '@/components/ui/Gap';
 import ContactInfo from '@/components/sections/steps/ContactInfoSteps';
+import Wrapper from '@/components/ui/Wrapper';
 
 export async function generateMetadata() {
   return generatePageMetadata('contact');
@@ -21,19 +22,21 @@ export default function ContactPage() {
         overlay="black"
       />
 
-      <Gap size="sm" />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <ContactSteps />
+        <ContactSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
 
-      <ContactForm />
+        <ContactForm />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ContactInfo />
+        <ContactInfo />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
     </>
   );
 }

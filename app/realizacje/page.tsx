@@ -1,6 +1,7 @@
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilters';
 import Gap from '@/components/ui/Gap';
+import Wrapper from '@/components/ui/Wrapper';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 
 export async function generateMetadata() {
@@ -12,11 +13,13 @@ export default function ProjectsPage() {
     <>
       <HeroBaner title="Projekty, które rosną razem z marką" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
 
-      <Gap size="sm" />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <ProjectWithFilters />
+        <ProjectWithFilters />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
     </>
   );
 }

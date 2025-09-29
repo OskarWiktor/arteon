@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import HeroBaner from '@/components/sections/HeroBaner';
 import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import Wrapper from '@/components/ui/Wrapper';
 
 export async function generateMetadata() {
   return generatePageMetadata('offer');
@@ -13,11 +14,13 @@ export default function OfferPage() {
     <>
       <HeroBaner backgroundImage="/assets/bg/abstract-bg12.webp" overlay="black" title="Nasze usługi" variant="center" />
 
-      <Gap size="sm" />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <ServicesSteps />
+        <ServicesSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
     </>
   );
 }

@@ -1,4 +1,3 @@
-import Wrapper from './Wrapper';
 import type { CSSProperties } from 'react';
 
 export type Size = 'xs' | 'sm' | 'md' | 'xl';
@@ -23,14 +22,12 @@ export default function Gap({ size = 'md', variant, className }: { size?: Size; 
   const styleVar: GapStyle = { ['--gap-h']: height };
 
   return (
-    <Wrapper>
-      <div aria-hidden="true" className={['relative h-[var(--gap-h)] w-full shrink-0 transition-all duration-300 ease-out', className].filter(Boolean).join(' ')} style={styleVar} data-size={size}>
-        {variant === 'line' && (
-          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2">
-            <div className="h-px w-full bg-neutral-200" />
-          </div>
-        )}
-      </div>
-    </Wrapper>
+    <div aria-hidden="true" className={['relative h-[var(--gap-h)] w-full shrink-0 transition-all duration-300 ease-out', className].filter(Boolean).join(' ')} style={styleVar} data-size={size}>
+      {variant === 'line' && (
+        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2">
+          <div className="h-px w-full bg-neutral-200" />
+        </div>
+      )}
+    </div>
   );
 }

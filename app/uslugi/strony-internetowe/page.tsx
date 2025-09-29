@@ -13,6 +13,7 @@ import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
+import Wrapper from '@/components/ui/Wrapper';
 
 export async function generateMetadata() {
   return generatePageMetadata('websites');
@@ -46,43 +47,47 @@ export default function OfferWebPage() {
         ]}
       />
 
-      <Gap size="sm" />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <WebFeatures />
+        <WebFeatures />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ProjectsOverview title="Wyróżnione realizacje stron internetowych" category="strona" subtitle="Portfolio" />
+        <ProjectsOverview title="Wyróżnione realizacje stron internetowych" category="strona" subtitle="Portfolio" />
 
-      <Gap />
+        <Gap />
+      </Wrapper>
 
       <TechSteps />
 
-      <Gap />
+      <Wrapper>
+        <Gap />
 
-      <WebPrices />
+        <WebPrices />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <PricingSteps />
+        <PricingSteps />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <WorkSteps />
+        <WorkSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
 
-      <ContactForm title="Zamów stronę internetową" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Strona internetowa" />
+        <ContactForm title="Zamów stronę internetową" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Strona internetowa" />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <FaqWebsite />
+        <FaqWebsite />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ServicesSteps />
+        <ServicesSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
 
       <CTABaner
         title="Zbudujmy stronę, która pracuje na Twoją markę"

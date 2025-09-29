@@ -1,4 +1,4 @@
-import { JSX, ReactNode } from 'react';
+import { ElementType, JSX, ReactNode } from 'react';
 import Image from 'next/image';
 import Wrapper from '../Wrapper';
 import Button from '../Button';
@@ -83,6 +83,7 @@ export default function SectionSteps({
 
   const SectionHeadingTag = (headingLevel || 'h2') as keyof JSX.IntrinsicElements;
   const ArticleHeadingTag = (headingLevel === 'h2' ? 'h3' : 'h4') as keyof JSX.IntrinsicElements;
+  const Tag: ElementType = hasBg ? Wrapper : 'div';
 
   return (
     <section
@@ -92,8 +93,7 @@ export default function SectionSteps({
       aria-labelledby={title ? 'steps-title' : undefined}
     >
       {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
-
-      <Wrapper className="relative z-10 pb-8">
+      <Tag className="relative z-10">
         {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
 
         {title && (
@@ -150,7 +150,7 @@ export default function SectionSteps({
             <span className={`${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{disclaimer}</span>
           </div>
         )}
-      </Wrapper>
+      </Tag>
     </section>
   );
 }

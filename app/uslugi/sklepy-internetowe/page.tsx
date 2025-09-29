@@ -13,6 +13,7 @@ import FaqShop from '@/components/sections/faqs/FaqShop';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
+import Wrapper from '@/components/ui/Wrapper';
 
 export async function generateMetadata() {
   return generatePageMetadata('onlineStores');
@@ -47,43 +48,47 @@ export default function OfferWebPage() {
         ]}
       />
 
-      <Gap size="sm" />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <ShopFeatures />
+        <ShopFeatures />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
+        <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
 
-      <Gap />
+        <Gap />
+      </Wrapper>
 
       <TechSteps />
 
-      <Gap />
+      <Wrapper>
+        <Gap />
 
-      <ShopPrices />
+        <ShopPrices />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <PricingSteps />
+        <PricingSteps />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <WorkSteps />
+        <WorkSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
 
-      <ContactForm title="Zbudujmy Twój sklep online" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Sklep internetowy" />
+        <ContactForm title="Zbudujmy Twój sklep online" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Sklep internetowy" />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <FaqShop />
+        <FaqShop />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ServicesSteps />
+        <ServicesSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
 
       <CTABaner
         title="Zbudujmy sklep, który rozwija się z Tobą"

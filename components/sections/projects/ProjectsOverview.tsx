@@ -3,7 +3,6 @@
 import { useRef, useEffect, useState, useMemo } from 'react';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 
-import Wrapper from '../../ui/Wrapper';
 import ProjectCard from '../../ui/ProjectCard';
 import allProjectsData from '@/data/pl/projects.json';
 import type { Project, ProjectCategory } from '@/types/project';
@@ -125,79 +124,77 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
   const carouselLabel = 'Karuzela projektów';
 
   return (
-    <Wrapper>
-      <section className="w-full" aria-labelledby="projects-heading">
-        {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-        <h2 id="projects-heading" className="md:mb-2">
-          {title}
-        </h2>
+    <section className="w-full" aria-labelledby="projects-heading">
+      {subtitle && <span className="text-xl tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
+      <h2 id="projects-heading" className="md:mb-2">
+        {title}
+      </h2>
 
-        <div className="relative">
-          <div
-            ref={scrollRef}
-            className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-            role="region"
-            aria-roledescription="carousel"
-            aria-label={carouselLabel}
-            aria-live="polite"
-            tabIndex={0}
-            onKeyDown={onKeyDown}
-          >
-            {finalProjects.map((project, i) => (
-              <div key={project.slug} ref={i === 0 ? cardRef : null} className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]" aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}>
-                <ProjectCard project={project} size="small" />
-              </div>
-            ))}
-          </div>
-
-          {isScrollable && (
-            <>
-              <button
-                type="button"
-                onClick={() => scrollByCards('left')}
-                className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
-                aria-label="Przewiń w lewo"
-              >
-                <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
-              </button>
-
-              <button
-                type="button"
-                onClick={() => scrollByCards('right')}
-                className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
-                aria-label="Przewiń w prawo"
-              >
-                <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
-              </button>
-            </>
-          )}
+      <div className="relative">
+        <div
+          ref={scrollRef}
+          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label={carouselLabel}
+          aria-live="polite"
+          tabIndex={0}
+          onKeyDown={onKeyDown}
+        >
+          {finalProjects.map((project, i) => (
+            <div key={project.slug} ref={i === 0 ? cardRef : null} className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]" aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}>
+              <ProjectCard project={project} size="small" />
+            </div>
+          ))}
         </div>
 
-        {isScrollable && maxSlides > 1 && (
-          <div className="mt-0 flex justify-center gap-2 md:mt-2 lg:mt-4" role="group" aria-label="Nawigacja karuzeli">
-            {Array.from({ length: maxSlides }).map((_, i) => (
-              <button
-                key={i}
-                onClick={() => scrollRef.current?.scrollTo({ left: i * cardWidth, behavior: 'smooth' })}
-                aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
-                aria-current={i === currentSlide ? 'true' : undefined}
-                className="h-6 w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-              >
-                <span
-                  aria-hidden="true"
-                  className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
-                />
-              </button>
-            ))}
-          </div>
-        )}
+        {isScrollable && (
+          <>
+            <button
+              type="button"
+              onClick={() => scrollByCards('left')}
+              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
+              aria-label="Przewiń w lewo"
+            >
+              <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
+            </button>
 
-        {isScrollable && maxSlides > 1 && (
-          <p className="sr-only" aria-live="polite">
-            Slajd {Math.min(currentSlide + 1, maxSlides)} z {maxSlides}
-          </p>
+            <button
+              type="button"
+              onClick={() => scrollByCards('right')}
+              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
+              aria-label="Przewiń w prawo"
+            >
+              <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
+            </button>
+          </>
         )}
-      </section>
-    </Wrapper>
+      </div>
+
+      {isScrollable && maxSlides > 1 && (
+        <div className="mt-0 flex justify-center gap-2 md:mt-2 lg:mt-4" role="group" aria-label="Nawigacja karuzeli">
+          {Array.from({ length: maxSlides }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => scrollRef.current?.scrollTo({ left: i * cardWidth, behavior: 'smooth' })}
+              aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
+              aria-current={i === currentSlide ? 'true' : undefined}
+              className="h-6 w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >
+              <span
+                aria-hidden="true"
+                className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+              />
+            </button>
+          ))}
+        </div>
+      )}
+
+      {isScrollable && maxSlides > 1 && (
+        <p className="sr-only" aria-live="polite">
+          Slajd {Math.min(currentSlide + 1, maxSlides)} z {maxSlides}
+        </p>
+      )}
+    </section>
   );
 }

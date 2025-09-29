@@ -12,13 +12,12 @@ type TableOfContentsProps = {
 export default function TableOfContents({ rootSelector = '#article-root', size = 'small' }: TableOfContentsProps) {
   const [items, setItems] = useState<Entry[]>([]);
   const [activeId, setActiveId] = useState<string>('');
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const root = document.querySelector(rootSelector) || document;
-
     const headings = Array.from(root.querySelectorAll('h2, h3')) as HTMLElement[];
 
-    // nadawanie id gdy brak
     const seen = new Set<string>();
     const slugify = (t: string) =>
       t
@@ -52,7 +51,6 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
 
     const obs = new IntersectionObserver(
       (entries) => {
-        // wybierz najbliższy nagłówek w widoku
         const visible = entries.filter((e) => e.isIntersecting).sort((a, b) => (a.target as HTMLElement).getBoundingClientRect().top - (b.target as HTMLElement).getBoundingClientRect().top);
         const top = visible[0]?.target as HTMLElement | undefined;
         if (top?.id) setActiveId(top.id);
@@ -67,31 +65,56 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
   const hasItems = useMemo(() => items.length > 0, [items]);
   if (!hasItems) return null;
 
-  const widthClass = size === 'small' ? 'w-[208px]' : 'w-[300px]';
+  const widthClass = size === 'small' ? 'lg:w-[208px]' : 'lg:w-[300px]';
+
+  const LinkList = ({ dense = false }: { dense?: boolean }) => (
+    <ul className={dense ? 'space-y-0.5 text-[13px] leading-tight' : 'space-y-0.5 text-sm'}>
+      {items.map((i, idx) => {
+        const isActive = activeId === i.id;
+        return (
+          <li key={i.id} className={i.level === 3 ? 'border-l border-black/10 pl-3' : ''}>
+            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`flex items-center gap-1 rounded-md px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
+              <span className="line-clamp-1">{i.text}</span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  );
 
   return (
-    <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
-      <div className="rounded-xl bg-white p-4 shadow-md">
-        <p className="mb-3 text-base tracking-wider text-[#5e5e5e] uppercase">Spis treści</p>
-        <nav aria-label="Spis treści">
-          <ul className="space-y-1 text-sm">
-            {items.map((i) => {
-              const isActive = activeId === i.id;
-              return (
-                <li key={i.id} className={i.level === 3 ? 'pl-3' : ''}>
-                  <a
-                    href={`#${i.id}`}
-                    aria-current={isActive ? 'location' : undefined}
-                    className={`block rounded-xl px-3 py-1 text-sm font-medium hover:underline md:text-base ${isActive ? 'bg-black/5' : ''}`}
-                  >
-                    {i.text}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      </div>
-    </aside>
+    <>
+      <aside className={`block lg:hidden ${widthClass}`}>
+        <div className="relative rounded-lg border border-black/10 bg-white/95 shadow-sm backdrop-blur">
+          <div className="flex items-center justify-between px-3 py-2">
+            <p className="text-xs font-medium tracking-wider text-[#5e5e5e] uppercase">
+              Spis treści <span className="opacity-60">({items.length})</span>
+            </p>
+            <button type="button" aria-expanded={expanded} onClick={() => setExpanded((v) => !v)} className="text-xs underline">
+              {expanded ? 'Zwiń' : 'Pokaż wszystko'}
+            </button>
+          </div>
+
+          <nav aria-label="Spis treści" className="px-2 pb-2">
+            <div className="relative">
+              <div className={`overflow-y-auto ${expanded ? 'max-h-[70vh]' : 'max-h-40'} pr-1 pb-6`}>
+                <LinkList dense />
+              </div>
+
+              {!expanded && <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white/95 to-transparent" />}
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
+        <div className="rounded-xl border border-black/10 bg-white p-3 shadow-sm">
+          <p className="mb-2 text-xs tracking-wider text-[#5e5e5e] uppercase">Spis treści</p>
+          <nav aria-label="Spis treści">
+            <LinkList />
+          </nav>
+        </div>
+      </aside>
+    </>
   );
 }

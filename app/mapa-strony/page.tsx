@@ -1,4 +1,3 @@
-// app/mapa-strony/page.tsx
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
@@ -32,8 +31,10 @@ const portfolioItems: NavItem[] = [
 
 const infoPages: NavItem[] = [
   { title: 'Strona Główna', href: '/' },
+  { title: 'O nas', href: '/o-nas' },
   { title: 'Kontakt', href: '/kontakt' },
   { title: 'Polityka prywatności', href: '/polityka-prywatnosci' },
+  { title: 'Regulamin świadczenia usług', href: '/regulamin' },
 ];
 
 export default function SitemapPage() {
@@ -42,64 +43,67 @@ export default function SitemapPage() {
   const jsonLd = buildJsonLd({ services, portfolioItems, infoPages });
 
   return (
-    <Wrapper>
+    <>
       <Gap size="sm" />
 
-      <header>
-        <h1>Mapa strony</h1>
-        <p className="mt-2">Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do interesującej Cię treści.</p>
-      </header>
-      <Gap size="xs" />
-
-      <nav aria-label="Mapa strony">
-        <SectionInfo title="Usługi">
-          <NestedList items={services} />
-        </SectionInfo>
+      <Wrapper>
+        <header>
+          <h1>Mapa strony</h1>
+          <p className="mt-2">Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do interesującej Cię treści.</p>
+        </header>
 
         <Gap size="xs" />
 
-        <SectionInfo title="Realizacje">
-          <p>
-            <Link href={portfolioIndex.href} className="font-medium underline-offset-4 hover:underline">
-              {portfolioIndex.title}
-            </Link>
-          </p>
-          {showAllPortfolio ? (
-            <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-              {portfolioItems.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="underline-offset-4 hover:underline">
-                    {item.title}
+        <nav aria-label="Mapa strony">
+          <SectionInfo title="Usługi">
+            <NestedList items={services} />
+          </SectionInfo>
+
+          <Gap size="xs" />
+
+          <SectionInfo title="Realizacje">
+            <p>
+              <Link href={portfolioIndex.href} className="font-medium underline-offset-4 hover:underline">
+                {portfolioIndex.title}
+              </Link>
+            </p>
+            {showAllPortfolio ? (
+              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {portfolioItems.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="underline-offset-4 hover:underline">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </SectionInfo>
+
+          <Gap size="xs" />
+
+          <SectionInfo title="Informacje">
+            <ul>
+              {infoPages.map((p) => (
+                <li key={p.href}>
+                  <Link href={p.href} className="font-medium underline-offset-4 hover:underline">
+                    {p.title}
                   </Link>
                 </li>
               ))}
             </ul>
-          ) : null}
-        </SectionInfo>
+          </SectionInfo>
+        </nav>
 
-        <Gap size="xs" />
+        <Gap size="sm" />
 
-        <SectionInfo title="Informacje">
-          <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {infoPages.map((p) => (
-              <li key={p.href}>
-                <Link href={p.href} className="font-medium underline-offset-4 hover:underline">
-                  {p.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </SectionInfo>
-      </nav>
-
-      <Gap size="sm" />
-
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-    </Wrapper>
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </Wrapper>
+    </>
   );
 }
 

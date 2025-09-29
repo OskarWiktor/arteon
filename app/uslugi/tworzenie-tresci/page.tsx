@@ -11,6 +11,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContentSteps from '@/components/sections/steps/ContentSteps';
 import { RiBarChart2Fill, RiBookOpenLine, RiCustomerService2Line, RiBrushLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
+import Wrapper from '@/components/ui/Wrapper';
 
 export async function generateMetadata() {
   return generatePageMetadata('content');
@@ -42,35 +43,37 @@ export default function OfferContentPage() {
         ]}
       />
 
-      <Gap size="sm" />
+      <Wrapper>
+        <Gap size="sm" />
 
-      <ContentFeatures />
+        <ContentFeatures />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ContentSteps />
+        <ContentSteps />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <PricingSteps />
+        <PricingSteps />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <WorkSteps />
+        <WorkSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
 
-      <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Treści" />
+        <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Treści" />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <FaqContent />
+        <FaqContent />
 
-      <Gap variant="line" />
+        <Gap variant="line" />
 
-      <ServicesSteps />
+        <ServicesSteps />
 
-      <Gap size="sm" />
+        <Gap size="sm" />
+      </Wrapper>
 
       <CTABaner
         title="Stwórzmy treści, które działają jak magnez"
