@@ -1,18 +1,14 @@
 'use client';
-
 import { useEffect, useRef } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 
 export default function FocusManager() {
   const pathname = usePathname();
-  const search = useSearchParams();
+  const searchParams = useSearchParams();
   const firstLoad = useRef(true);
 
   useEffect(() => {
-    if (firstLoad.current) {
-      firstLoad.current = false;
-      return;
-    }
+    if (firstLoad.current) { firstLoad.current = false; return; }
 
     const hash = typeof window !== 'undefined' ? window.location.hash : '';
     if (hash) {
@@ -25,7 +21,6 @@ export default function FocusManager() {
     }
 
     (document.activeElement as HTMLElement | null)?.blur();
-
     requestAnimationFrame(() => {
       const skipLink = document.getElementById('skip-link') as HTMLElement | null;
       if (skipLink) {
@@ -36,7 +31,7 @@ export default function FocusManager() {
       }
       window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
     });
-  }, [pathname, search?.toString()]);
+  }, [pathname, searchParams?.toString()]);
 
   return null;
 }
