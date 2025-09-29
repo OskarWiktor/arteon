@@ -6,7 +6,6 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import BlogFeatures from '@/components/sections/features/BlogFeatures';
 import FaqBlog from '@/components/sections/faqs/FaqBlog';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -15,9 +14,19 @@ import { RiArticleLine, RiSearchLine, RiShieldCheckLine, RiCustomerService2Line 
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 
-export async function generateMetadata() {
-  return generatePageMetadata('onlineBlogs');
-}
+export const metadata = {
+  title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
+  description: 'Blogi firmowe i eksperckie. Prosty CMS, czytelny układ i treści, które przyciągają klientów.',
+  keywords: ['blog firmowy', 'tworzenie bloga', 'projekt bloga', 'treści eksperckie', 'widoczność w Google'],
+  alternates: { canonical: '/uslugi/blogi-internetowe' },
+  openGraph: {
+    title: 'Blog, który pracuje na markę - Arteon',
+    description: 'Strategia tematów, projekt i wdrożenie. Publikacja bez tarcia.',
+    url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
+    type: 'website',
+  },
+} as const;
+
 
 export default function OfferBlogPage() {
   return (
@@ -72,7 +81,7 @@ export default function OfferBlogPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps/>
+        <FeesSteps />
 
         <Gap size="sm" />
 

@@ -9,12 +9,20 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 
-export async function generateMetadata() {
-  return generatePageMetadata('home');
-}
+export const metadata = {
+  title: 'Strony, sklepy, treści i marketing - Kraków | Arteon',
+  description: 'Projekt i wdrożenie stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google od startu. Gwarancja i jasne zasady.',
+  keywords: ['strony internetowe Kraków', 'sklepy internetowe', 'tworzenie stron', 'branding', 'treści na stronę', 'marketing internetowy', 'widoczność w Google'],
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Arteon - strony, sklepy, treści i marketing',
+    description: 'Efekt od startu. Strony i sklepy z treściami, widocznością w Google i gwarancją.',
+    url: 'https://www.arteonagency.pl/',
+    type: 'website',
+  },
+} as const;
 
 export default function HomePage() {
   return (

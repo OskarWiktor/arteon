@@ -6,7 +6,6 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import ShopFeatures from '@/components/sections/features/ShopFeatures';
 import ShopPrices from '@/components/sections/prices/ShopPrices';
 import FaqShop from '@/components/sections/faqs/FaqShop';
@@ -15,9 +14,19 @@ import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 
-export async function generateMetadata() {
-  return generatePageMetadata('onlineStores');
-}
+export const metadata = {
+  title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
+  description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
+  keywords: ['sklepy internetowe', 'tworzenie sklepów online', 'e-commerce', 'wdrożenie sklepu', 'opisy produktów', 'widoczność w Google'],
+  alternates: { canonical: '/uslugi/sklepy-internetowe' },
+  openGraph: {
+    title: 'Sklepy, które sprzedają - Arteon',
+    description: 'Projekt i wdrożenie z naciskiem na konwersję. Treści i widoczność od startu.',
+    url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
+    type: 'website',
+  },
+} as const;
+
 
 export default function OfferWebPage() {
   return (
@@ -73,7 +82,7 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps/>
+        <FeesSteps />
 
         <Gap size="sm" />
 

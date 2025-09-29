@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import FaqContent from '@/components/sections/faqs/FaqContent';
 import ContentFeatures from '@/components/sections/features/ContentFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -13,9 +12,19 @@ import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 
-export async function generateMetadata() {
-  return generatePageMetadata('content');
-}
+export const metadata = {
+  title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
+  description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
+  keywords: ['teksty na stronę', 'copywriting', 'opisy produktów', 'artykuły eksperckie', 'treści sprzedażowe', 'widoczność w Google'],
+  alternates: { canonical: '/uslugi/tworzenie-tresci' },
+  openGraph: {
+    title: 'Treści, które przyciągają klientów - Arteon',
+    description: 'Strategia tematów, pisanie i redakcja. Publikacja i dystrybucja bez tarcia.',
+    url: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci',
+    type: 'website',
+  },
+} as const;
+
 
 export default function OfferContentPage() {
   return (
@@ -58,7 +67,7 @@ export default function OfferContentPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps/>
+        <FeesSteps />
 
         <Gap size="sm" />
 

@@ -10,14 +10,22 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 
-export async function generateMetadata() {
-  return generatePageMetadata('websites');
-}
+export const metadata = {
+  title: 'Strony internetowe - projekt i wdrożenie | Arteon',
+  description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
+  keywords: ['strony internetowe', 'tworzenie stron', 'projektowanie stron www', 'strona firmowa', 'widoczność w Google', 'WCAG'],
+  alternates: { canonical: '/uslugi/strony-internetowe' },
+  openGraph: {
+    title: 'Strony, które sprzedają i rosną - Arteon',
+    description: 'Projekt + wdrożenie + treści. Widoczność od startu i wsparcie po publikacji.',
+    url: 'https://www.arteonagency.pl/uslugi/strony-internetowe',
+    type: 'website',
+  },
+} as const;
 
 export default function OfferWebPage() {
   return (
@@ -72,7 +80,7 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps/>
+        <FeesSteps />
 
         <Gap size="sm" />
 

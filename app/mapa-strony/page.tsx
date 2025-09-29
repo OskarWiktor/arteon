@@ -7,7 +7,7 @@ import Link from 'next/link';
 const BASE_URL = 'https://www.arteonagency.pl';
 
 export const metadata: Metadata = {
-  title: 'Mapa strony',
+  title: 'Mapa strony | Arteon',
   description: 'Przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, informacje.',
   alternates: { canonical: `${BASE_URL}/mapa-strony` },
 };

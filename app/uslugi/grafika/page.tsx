@@ -4,7 +4,6 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import { generatePageMetadata } from '@/lib/generatePageMetadata';
 import DesignFeatures from '@/components/sections/features/DesignFeatures';
 import FaqDesign from '@/components/sections/faqs/FaqDesign';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -13,9 +12,19 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine 
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 
-export async function generateMetadata() {
-  return generatePageMetadata('design');
-}
+export const metadata = {
+  title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
+  description: 'Logo i system identyfikacji. Materiały do druku i online. Spójność i prestiż od pierwszego kontaktu.',
+  keywords: ['projektowanie logo', 'identyfikacja wizualna', 'grafika na stronę', 'materiały drukowane', 'brandbook'],
+  alternates: { canonical: '/uslugi/grafika' },
+  openGraph: {
+    title: 'Brand, który zapada w pamięć - Arteon',
+    description: 'Koncepcje, projekt i pliki gotowe do produkcji. Bez niespodzianek.',
+    url: 'https://www.arteonagency.pl/uslugi/grafika',
+    type: 'website',
+  },
+} as const;
+
 
 export default function OfferDesignPage() {
   return (
@@ -61,7 +70,7 @@ export default function OfferDesignPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps/>
+        <FeesSteps />
 
         <Gap size="sm" />
 
