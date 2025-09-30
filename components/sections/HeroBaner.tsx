@@ -80,7 +80,7 @@ export default function HeroBanner({
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
-          <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-4 pt-0 md:p-5 lg:p-7 ${contentBgClass} hyphens-auto`}>
+          <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 pt-4 md:p-7 ${contentBgClass} hyphens-auto`}>
             {subtitle && <p className={`text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
               <nav aria-label="Szybkie linki" className="mt-4">
@@ -97,12 +97,12 @@ export default function HeroBanner({
             )}
             {title && <h1 id="hero-title">{title}</h1>}
             {description && (
-              <p id="hero-description" className={`mt-3 md:mt-5 text-base leading-relaxed sm:text-lg ${toneMutedClass} max-w-prose [text-wrap:pretty]`}>
+              <p id="hero-description" className={`mt-3 md:mt-5 text-base leading-relaxed ${toneMutedClass} max-w-prose text-wrap:pretty`}>
                 {description}
               </p>
             )}
             {(buttonAccent || buttonSecond) && (
-              <div className={`mt-6 md:mt-8 flex flex-wrap gap-3 ${justify}`}>
+              <div className={`mt-7 md:mt-8 flex flex-wrap gap-3 ${justify}`}>
                 {buttonAccent && (
                   <Button arrow link={buttonAccentLink}>
                     {buttonAccent}

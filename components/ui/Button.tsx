@@ -7,7 +7,7 @@ import { RiArrowRightUpLine } from 'react-icons/ri';
 interface ButtonProps {
   children: ReactNode;
   variant?: 'normal' | 'accent' | 'glass' | 'dark' | 'minimal';
-  size?: 'small' | 'medium' | 'big';
+  size?: 'small' | 'medium';
   onClick?: () => void;
   disabled?: boolean;
   arrow?: boolean;
@@ -25,13 +25,10 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
 
   switch (size) {
     case 'small':
-      sizeClass = 'px-3 py-1';
+      sizeClass = 'px-2 py-1 md:px-3 md:py-1';
       break;
     case 'medium':
-      sizeClass = 'px-4 py-2';
-      break;
-    case 'big':
-      sizeClass = 'px-6 py-3';
+      sizeClass = 'px-3 py-1.5 md:px-4 md:py-2';
       break;
   }
 

@@ -67,7 +67,7 @@ h6 {
 h1,
 .h1 {
   font-weight: 700;
-  font-size: clamp(42px, calc(42px + 24 * ((100vw - 360px) / 1080)), 66px);
+  font-size: clamp(36px, calc(36px + 24 * ((100vw - 360px) / 1080)), 60px);
 }
 
 h2,
@@ -96,17 +96,13 @@ h5,
 }
 
 h6,
-.h6 {
+.h6,
+label {
   font-weight: 600;
   font-size: clamp(18px, calc(18px + 4 * ((100vw - 360px) / 1080)), 22px);
 }
 
 /*    FORMS    */
-
-label {
-  @apply text-xl font-semibold text-[#2B2B2B];
-}
-
 input,
 select,
 textarea {
