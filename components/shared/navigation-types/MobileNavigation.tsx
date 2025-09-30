@@ -94,25 +94,24 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             exit={{ x: 24, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 280, damping: 30 }}
           >
-            <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3">
-              <span className="text-sm tracking-wider text-zinc-600">ARTEON</span>
-              <button onClick={() => setIsOpen(false)} className="rounded px-3 py-1.5 text-sm font-medium text-zinc-700 ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
+            <div className="flex items-center justify-end px-4 pt-3">
+              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
                 Zamknij
               </button>
             </div>
 
             <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
               <div>
-                <p className="px-3 pb-1 text-[11px] tracking-wider text-zinc-500 uppercase">Usługi</p>
+                <p className="px-3 pb-1 text-[11px] tracking-wider text-[#5e5e5e] uppercase">Usługi</p>
                 <ul id="services" className="grid grid-cols-1 gap-1" onKeyDown={onServicesKeyDown}>
                   {SERVICES.map((s) => (
                     <li key={s.href}>
                       <Link
                         href={s.href}
                         onClick={() => setIsOpen(false)}
-                        className="group flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] text-zinc-900 transition outline-none hover:bg-zinc-50 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                        className="group flex items-center gap-3 rounded-lg px-3 py-[3px] text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                       >
-                        <span className="text-zinc-700 group-hover:text-slate-500 [&_svg]:h-5 [&_svg]:w-5">{s.icon}</span>
+                        <span className="text-[#080808] group-hover:text-slate-600 [&_svg]:h-5 [&_svg]:w-5">{s.icon}</span>
                         <span>{s.title}</span>
                       </Link>
                     </li>
@@ -120,7 +119,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 </ul>
               </div>
 
-              <div className="my-2 h-px w-full bg-zinc-200/70" />
+              <div className="my-2 h-px w-full bg-neutral-200" />
 
               <ul className="mb-2 flex flex-col gap-1">
                 {NAV.map(({ href, label, exact }) => {
@@ -131,8 +130,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-2 text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
-                          isActive ? 'bg-zinc-100 font-semibold text-zinc-900' : 'text-zinc-900 hover:bg-zinc-50'
+                        className={`block rounded-lg px-3 py-[3px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                          isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
                         {label}
@@ -144,10 +143,10 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <div className="mt-auto border-t border-zinc-200 pt-3">
                 <div className="flex items-center justify-between">
-                  <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="text-xs font-medium text-zinc-600">
+                  <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="text-xs font-medium text-[#5e5e5e]">
                     #MadeWithNext.js
                   </a>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2">
                     <Link
                       href="/kontakt"
                       onClick={() => setIsOpen(false)}
@@ -155,6 +154,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     >
                       Umów konsultację
                     </Link>
+                                          {/*
+
                     <a
                       href="https://www.instagram.com/arteon.pl"
                       target="_blank"
@@ -162,10 +163,10 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       aria-label="Instagram"
                       className="rounded p-1.5 transition outline-none hover:bg-zinc-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
-                      {/*
                       <RiInstagramLine className="h-8 w-8 text-zinc-800" aria-hidden />
-                      */}
                     </a>
+                                          */}
+
                   </div>
                 </div>
               </div>

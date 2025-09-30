@@ -147,7 +147,7 @@ export default function SectionSteps({
 
         {disclaimer && (
           <div className="mt-4 md:mt-5 lg:mt-6">
-            <span className={`${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{disclaimer}</span>
+            <p className={`${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{disclaimer}</p>
           </div>
         )}
       </Tag>

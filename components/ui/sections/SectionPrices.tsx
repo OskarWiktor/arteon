@@ -46,7 +46,7 @@ export default function SectionPrices({
     <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className="w-full">
       <div className="mb-8">
         {subtitle && (
-          <span id={subtitleId} className="text-xl tracking-wider text-[#5e5e5e] uppercase">
+          <span id={subtitleId} className="text-base tracking-wider text-[#5e5e5e] uppercase">
             {subtitle}
           </span>
         )}

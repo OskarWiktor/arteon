@@ -104,7 +104,7 @@ h6,
 /*    FORMS    */
 
 label {
-  @apply text-xl font-medium text-[#2B2B2B] md:text-2xl;
+  @apply text-xl font-semibold text-[#2B2B2B];
 }
 
 input,

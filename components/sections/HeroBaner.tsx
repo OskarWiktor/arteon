@@ -75,12 +75,12 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[520px] items-center overflow-hidden py-14 md:py-0`}
+        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[460px] items-center overflow-hidden py-10 md:py-0`}
         style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
-          <div className={`max-w-[92vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass} hyphens-auto`}>
+          <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-4 pt-0 md:p-5 lg:p-7 ${contentBgClass} hyphens-auto`}>
             {subtitle && <p className={`text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
               <nav aria-label="Szybkie linki" className="mt-4">
@@ -97,12 +97,12 @@ export default function HeroBanner({
             )}
             {title && <h1 id="hero-title">{title}</h1>}
             {description && (
-              <p id="hero-description" className={`mt-5 text-base leading-relaxed sm:text-lg ${toneMutedClass} max-w-prose [text-wrap:pretty]`}>
+              <p id="hero-description" className={`mt-3 md:mt-5 text-base leading-relaxed sm:text-lg ${toneMutedClass} max-w-prose [text-wrap:pretty]`}>
                 {description}
               </p>
             )}
             {(buttonAccent || buttonSecond) && (
-              <div className={`mt-8 flex flex-wrap gap-3 ${justify}`}>
+              <div className={`mt-6 md:mt-8 flex flex-wrap gap-3 ${justify}`}>
                 {buttonAccent && (
                   <Button arrow link={buttonAccentLink}>
                     {buttonAccent}

@@ -23,19 +23,19 @@ export default function CTABaner({ title, subtitle, description, primaryLabel, p
   const toneMutedClass = overlay === 'black' ? 'text-white/90' : 'text-slate-900/70';
 
   return (
-    <section className={`relative overflow-hidden ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg}`} style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined} data-section="final-cta">
+    <section className={`relative overflow-hidden flex h-auto min-h-[360px] ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg}`} style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined} data-section="final-cta">
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
-      <Wrapper className="relative z-10 px-6 py-16 md:py-20">
-        <div className={`mx-auto max-w-3xl text-center ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} rounded-2xl p-6`}>
+      <Wrapper className="relative flex h-auto md:items-center">
+        <div className={`max-w-[100vw] md:max-w-[65%] rounded-2xl p-2 md:p-5 lg:p-7 md:text-center ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} rounded-2xl p-6`}>
           {subtitle && <span className="text-base tracking-wider uppercase">{subtitle}</span>}
 
           <h3>{title}</h3>
 
-          {description && <p className={`mx-auto mt-3 text-base leading-relaxed md:text-lg ${toneMutedClass}`}>{description}</p>}
+          {description && <p className={`mx-auto mt-3 md:mt-5 text-base leading-relaxed md:text-lg ${toneMutedClass}`}>{description}</p>}
 
           {(primaryLabel || secondaryLabel) && (
-            <div className="mt-8 flex flex-wrap justify-center gap-3" role="group" aria-label="Działania sekcji">
+            <div className="mt-6 md:mt-8 flex flex-wrap md:justify-center gap-3" role="group" aria-label="Działania sekcji">
               {primaryLabel && (
                 <Button link={primaryLink} arrow variant="accent">
                   {primaryLabel}
