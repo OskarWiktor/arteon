@@ -75,7 +75,7 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[460px] items-center overflow-hidden py-10 md:py-0`}
+        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[420px] md:min-h-[460px] lg:min-h-[520px] items-center overflow-hidden py-10 md:py-0`}
         style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
@@ -95,7 +95,7 @@ export default function HeroBanner({
                 </ul>
               </nav>
             )}
-            {title && <h1 id="hero-title">{title}</h1>}
+            {title && <h1 id="hero-title text-wrap text-wrap:pretty">{title}</h1>}
             {description && (
               <p id="hero-description" className={`mt-3 md:mt-5 text-base leading-relaxed ${toneMutedClass} max-w-prose text-wrap:pretty`}>
                 {description}

@@ -27,7 +27,7 @@ const otherLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-white py-10 md:py-12" aria-label="Stopka strony">
+    <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
       <Wrapper>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="flex w-full flex-row items-center justify-between gap-4 md:flex-col md:items-start md:justify-start">
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           <nav aria-label="Usługi" className="md:col-span-1">
-            <ul className="flex flex-col gap-1 text-sm">
+            <ul className="flex flex-col gap-2 text-sm">
               {offerLinks.map(({ href, title }) => (
                 <li key={href}>
                   <Link
@@ -63,7 +63,7 @@ export default function Footer() {
           </nav>
 
           <nav aria-label="Nawigacja" className="md:col-span-1">
-            <ul className="flex flex-col gap-1 text-sm">
+            <ul className="flex flex-col gap-2 text-sm">
               {navLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
@@ -78,7 +78,7 @@ export default function Footer() {
           </nav>
 
           <nav aria-label="Polityka" className="md:col-span-1">
-            <ul className="flex flex-col gap-1 text-sm">
+            <ul className="flex flex-col gap-2 text-sm">
               {otherLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
@@ -108,7 +108,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-gray-200 pt-4 text-sm text-[#5e5e5e]">
           <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
-            <span>
+            <span className='text-center md:text-left'>
               © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
             </span>
             <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
