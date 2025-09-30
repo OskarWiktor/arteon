@@ -80,7 +80,7 @@ export default function HeroBanner({
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
-          <div className={`max-w-[92vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass} break-words hyphens-auto`}>
+          <div className={`max-w-[92vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 md:p-7 ${contentBgClass} hyphens-auto`}>
             {subtitle && <p className={`text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
               <nav aria-label="Szybkie linki" className="mt-4">
