@@ -57,7 +57,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         </Suspense>
 
         <Navigation />
-        <main id="main-content" tabIndex={-1}>{children}</main>
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
 
         <Analytics />

@@ -75,7 +75,7 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[420px] md:min-h-[460px] lg:min-h-[520px] items-center overflow-hidden py-10 md:py-0`}
+        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[420px] items-center overflow-hidden py-10 md:min-h-[460px] md:py-0 lg:min-h-[520px]`}
         style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
@@ -97,12 +97,12 @@ export default function HeroBanner({
             )}
             {title && <h1 id="hero-title text-wrap text-wrap:pretty">{title}</h1>}
             {description && (
-              <p id="hero-description" className={`mt-3 md:mt-5 text-base leading-relaxed ${toneMutedClass} max-w-prose text-wrap:pretty`}>
+              <p id="hero-description" className={`mt-3 text-base leading-relaxed md:mt-5 ${toneMutedClass} text-wrap:pretty max-w-prose`}>
                 {description}
               </p>
             )}
             {(buttonAccent || buttonSecond) && (
-              <div className={`mt-7 md:mt-8 flex flex-wrap gap-3 ${justify}`}>
+              <div className={`mt-7 flex flex-wrap gap-3 md:mt-8 ${justify}`}>
                 {buttonAccent && (
                   <Button arrow link={buttonAccentLink}>
                     {buttonAccent}

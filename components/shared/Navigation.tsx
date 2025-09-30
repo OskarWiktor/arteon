@@ -26,7 +26,7 @@ export default function Navigation() {
   return (
     <header id="navigation" className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
       <Wrapper>
-        <nav className="flex h-14 md:h-16 items-center justify-between lg:h-18" aria-label="Nawigacja główna">
+        <nav className="flex h-14 items-center justify-between md:h-16 lg:h-18" aria-label="Nawigacja główna">
           <Link href="/">
             <Image src="/assets/arteon-logo.png" width={140} height={50} alt="Arteon - logo firmy" priority />
           </Link>

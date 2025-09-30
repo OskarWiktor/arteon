@@ -8,7 +8,10 @@ export default function FocusManager() {
   const firstLoad = useRef(true);
 
   useEffect(() => {
-    if (firstLoad.current) { firstLoad.current = false; return; }
+    if (firstLoad.current) {
+      firstLoad.current = false;
+      return;
+    }
 
     const hash = typeof window !== 'undefined' ? window.location.hash : '';
     if (hash) {

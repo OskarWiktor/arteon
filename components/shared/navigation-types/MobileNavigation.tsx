@@ -23,6 +23,11 @@ const SERVICES = [
   { href: '/uslugi/marketing', icon: <RiMegaphoneLine aria-hidden />, title: 'Marketing' },
 ];
 
+const INFO: NavItem[] = [
+  { href: '/regulamin', label: 'Regulamin świadczenia usług', exact: true },
+  { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
+];
+
 export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
@@ -141,6 +146,28 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 })}
               </ul>
 
+              <div className="my-2 h-px w-full bg-neutral-200" />
+
+              <ul className="mb-2 flex flex-col gap-1">
+                {INFO.map(({ href, label, exact }) => {
+                  const isActive = exact ? pathname === href : pathname.startsWith(href);
+                  return (
+                    <li key={label}>
+                      <Link
+                        href={href}
+                        onClick={() => setIsOpen(false)}
+                        aria-current={isActive ? 'page' : undefined}
+                        className={`block rounded-lg px-3 py-[3px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                          isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
+                        }`}
+                      >
+                        {label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+
               <div className="mt-auto border-t border-zinc-200 pt-3">
                 <div className="flex items-center justify-between">
                   <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="text-xs font-medium text-[#5e5e5e]">
@@ -154,7 +181,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     >
                       Umów konsultację
                     </Link>
-                                          {/*
+                    {/*
 
                     <a
                       href="https://www.instagram.com/arteon.pl"
@@ -166,7 +193,6 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       <RiInstagramLine className="h-8 w-8 text-zinc-800" aria-hidden />
                     </a>
                                           */}
-
                   </div>
                 </div>
               </div>

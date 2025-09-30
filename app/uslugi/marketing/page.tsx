@@ -25,7 +25,6 @@ export const metadata = {
   },
 } as const;
 
-
 export default function OfferMarketingPage() {
   return (
     <>

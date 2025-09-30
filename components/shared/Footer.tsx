@@ -108,7 +108,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-gray-200 pt-4 text-sm text-[#5e5e5e]">
           <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
-            <span className='text-center md:text-left'>
+            <span className="text-center md:text-left">
               © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
             </span>
             <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
