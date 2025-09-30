@@ -123,6 +123,11 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
 
   const carouselLabel = 'Karuzela projektów';
 
+  const navBtn =
+    'group absolute top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-2 text-white shadow-xl backdrop-blur-sm ' +
+    'transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none ' +
+    'focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
+
   return (
     <section className="w-full" aria-labelledby="projects-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
@@ -133,7 +138,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
       <div className="relative">
         <div
           ref={scrollRef}
-          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
           aria-label={carouselLabel}
@@ -150,21 +155,11 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
 
         {isScrollable && (
           <>
-            <button
-              type="button"
-              onClick={() => scrollByCards('left')}
-              className="absolute top-1/2 left-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
-              aria-label="Przewiń w lewo"
-            >
+            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2`} aria-label="Przewiń w lewo">
               <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
             </button>
 
-            <button
-              type="button"
-              onClick={() => scrollByCards('right')}
-              className="absolute top-1/2 right-2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-500 bg-white/60 p-2 shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block"
-              aria-label="Przewiń w prawo"
-            >
+            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2`} aria-label="Przewiń w prawo">
               <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
             </button>
           </>
@@ -172,7 +167,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
       </div>
 
       {isScrollable && maxSlides > 1 && (
-        <div className="mt-0 flex justify-center gap-2 md:mt-2 lg:mt-4" role="group" aria-label="Nawigacja karuzeli">
+        <div className="flex justify-center gap-2" role="group" aria-label="Nawigacja karuzeli">
           {Array.from({ length: maxSlides }).map((_, i) => (
             <button
               key={i}

@@ -22,14 +22,12 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
           <span className="h4 line-clamp-2">{project.title}</span>
           <p className={`mt-2 text-[#5e5e5e] ${size === 'normal' ? 'line-clamp-3' : 'line-clamp-2'}`}>{project.short}</p>
 
-          {size === 'normal' ? (
-            <div className="mt-auto">
-              <div className="mt-4 mb-2 h-px w-full bg-gray-200" aria-hidden="true" />
-              <Button variant="minimal" size="small" arrow>
-                Szczegóły projektu
-              </Button>
-            </div>
-          ) : null}
+          <div className="mt-auto">
+            <div className="mt-4 mb-2 h-px w-full bg-gray-200" aria-hidden="true" />
+            <Button variant="minimal" size="small" arrow>
+              Szczegóły projektu
+            </Button>
+          </div>
         </div>
       </article>
     </Link>
