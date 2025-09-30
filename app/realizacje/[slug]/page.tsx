@@ -86,9 +86,7 @@ export default function ProjectPage({ params }: PageProps) {
 
       <Breadcrumbs second={{ href: '/realizacje', label: 'Realizacje' }} third={{ href: `/realizacje/${project.slug}`, label: project.title }} includeJsonLd />
 
-      <Gap size="xs" />
-
-      <Wrapper as="article" id="article-root" itemScope itemType="https://schema.org/Article" className="grid gap-8 lg:grid-cols-[1fr_208px]">
+      <Wrapper as="article" id="article-root" itemScope itemType="https://schema.org/Article" className="flex flex-col-reverse gap-8 lg:grid lg:grid-cols-[1fr_208px]">
         <div>
           <header className="mb-2">
             <h1 className="h2 mb-1" itemProp="headline">
@@ -104,7 +102,7 @@ export default function ProjectPage({ params }: PageProps) {
             )}
           </header>
 
-          <div className="mb-6 flex flex-wrap items-center gap-1 text-sm">
+          <div className="mb-4 flex flex-wrap items-center gap-1 text-sm">
             {project.client?.name && <Badge text={project.client.name} />}
             {project.client?.sector && <Badge text={project.client.sector} />}
             {project.client?.location && <Badge text={project.client.location} />}
@@ -114,7 +112,7 @@ export default function ProjectPage({ params }: PageProps) {
 
           {project.link && (
             <>
-              <div className="mt-4">
+              <div className="mt-2">
                 <Button variant="accent" arrow link={project.link} aria-label={`Zobacz realizację: ${project.title} na żywo`}>
                   Zobacz stronę
                 </Button>
@@ -227,13 +225,16 @@ export default function ProjectPage({ params }: PageProps) {
 
           {project.testimonial?.quote ? (
             <>
-              <SectionInfo title="Opinia klienta">
+              <SectionInfo title="Ocena współpracy">
                 <blockquote className="rounded-xl bg-white p-6 shadow-md">
                   <p className="text-lg leading-relaxed">“{project.testimonial.quote}”</p>
                   {(project.testimonial.author || project.testimonial.role) && (
-                    <footer className="mt-2 text-base text-[#5e5e5e]">
-                      {project.testimonial.author}
-                      {project.testimonial.role ? `, ${project.testimonial.role}` : ''}
+                    <footer className="mt-2">
+                      <h5 className="mt-5">{project.testimonial.author}</h5>
+                      {project.testimonial.role ? <p className="mt-1 mb-3 text-[#5e5e5e]">{project.testimonial.role}</p> : null}
+                      <Button variant="accent" size="small" arrow link="{project.testimonial.link}">
+                        Link do opinii
+                      </Button>
                     </footer>
                   )}
                 </blockquote>

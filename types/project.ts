@@ -26,7 +26,7 @@ export type Project = {
   solutions?: ReactNode;
   outcomes?: Stat[];
   process_steps?: string[];
-  testimonial?: { quote: string; author?: string; role?: string };
+  testimonial?: { quote: string; author?: string; role?: string; link?: string };
 
   beforeAfter?: {
     beforeImage?: string;
