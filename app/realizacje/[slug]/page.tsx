@@ -117,12 +117,12 @@ export default function ProjectPage({ params }: PageProps) {
                   Zobacz stronę
                 </Button>
               </div>
-              <Gap size="sm" />
             </>
           )}
 
           {(project.description || project.task) && (
             <>
+              <Gap size="sm" />
               <SectionInfo title="Kontekst projektu">
                 <Block content={project.description} />
                 {project.task && (

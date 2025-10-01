@@ -57,15 +57,31 @@
       }
     },
     {
+      "slug": "katalog-restoquality",
+      "title": "Katalog RestoQuality",
+      "short": "Utworzenie nowego wyglądu dla firmowego, promocyjnego katalogu z produktami",
+      "description": "Projekt obejmował stworzenie nowego, atrakcyjnego wizualnie katalogi dla firmy RestoQuality. Propozycja została stworzona na bazie wszelkich wytycznych firmy",
+      "image": "/assets/projects/gazetka-mockup.jpg",
+      "category": ["grafika"]
+    },
+    {
       "slug": "pilka-nozna-pl",
-      "title": "PilkaNożna.pl",
-      "short": "Redesign oraz przebudowa bloga",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
-      "task": "Testowanie komponentów, tworzenie dokumentacji, praca z WordPressem i Blade, wdrażanie szablonów, zgłaszanie błędów i propozycji optymalizacji",
+      "title": "PilkaNożna.pl - redesign EURO 2024",
+      "short": "Odświeżenie bloga w nowym systemie z dedykowanym motywem.",
+      "description": "<p>Redesign serwisu przed rozpoczęciem <strong>EURO 2024</strong>. Projekt polegał na zmianie systemy, wraz ze zmianą wyglądu, by redaktorzy mogli łatwiej tworzyć <strong>bogatsze wizualnie artykuły</strong>. Przygotowaliśmy pełną dokumentację dla zespołu redakcyjnego. Projekt był współtworzony z grupą programistów</p>",
+
+      "deliverables": [
+        "Przygotowanie pełnej dokumentacji technicznej wraz ze szkoleniem",
+        "Przygotowanie szablonów różnych typów artykułów, dla ułatwienia pracy",
+        "Testy bloków oraz funkcjonalności"
+      ],
+
       "image": "/assets/projects/arteon-baners-pilkanozna-pl.webp",
       "link": "https://pilkanozna.pl/",
-      "category": ["blog"]
+      "category": ["blog"],
+      "stack": ["WordPress", "Gutenberg", "PHP", "Blade"]
     },
+
     {
       "slug": "trilllizo",
       "title": "Trillizo",
@@ -92,6 +108,14 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       }
+    },
+        {
+      "slug": "wizytowki-restoquality",
+      "title": "Wizytówki RestoQuality",
+      "short": "Utworzenie nowego szablonu wyglądu wizytówek",
+      "description": "Projekt obejmował stworzenie nowych, atrakcyjnych wizualnie wizytówek dla firmy RestoQuality. Propozycja została stworzona na bazie wszelkich wytycznych firmy",
+      "image": "/assets/projects/resto-wiz.png",
+      "category": ["grafika"]
     },
     {
       "slug": "elmex-accessibility",
@@ -129,8 +153,8 @@
     },
     {
       "slug": "sanex",
-      "title": "Sanex",
-      "short": "Przygotowanie lokalizacji stron (współpraca z VML)",
+      "title": "Sanex Lokalizacje",
+      "short": "Przygotowanie lokalizacji witryny (współpraca z VML)",
       "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
       "task": "test",
       "image": "/assets/projects/arteon-baners-sanex.webp",
@@ -144,10 +168,18 @@
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       }
     },
+        {
+      "slug": "cennik-salon-kosmetyczny",
+      "title": "Cennik dla salonu kosmetycznego",
+      "short": "Projekt graficzny cennika dla salonu kosmetycznego",
+      "description": "Projekt obejmował stworzenie atrakcyjnego wizualnie cennika dla salonu Manufaktura Piękna w Skawinie. Propozycja została stworzona na bazie wszelkich wytycznych salonu",
+      "image": "/assets/projects/cennik-mockup.png",
+      "category": ["grafika"]
+    },
     {
       "slug": "palmolive",
-      "title": "Palmolive",
-      "short": "Przygotowanie lokalizacji stron (współpraca z VML)",
+      "title": "Palmolive Lokalizacje",
+      "short": "Przygotowanie lokalizacji witryny (współpraca z VML)",
       "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
       "task": "test",
       "image": "/assets/projects/arteon-baners-palmolive.webp",
@@ -163,8 +195,8 @@
     },
     {
       "slug": "colgate",
-      "title": "Colgate",
-      "short": "Przygotowanie lokalizacji stron (współpraca z VML)",
+      "title": "Colgate Lokalizacje",
+      "short": "Przygotowanie lokalizacji witryny (współpraca z VML)",
       "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
       "task": "test",
       "image": "/assets/projects/arteon-baners-colgate.webp",
