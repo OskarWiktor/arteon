@@ -117,22 +117,16 @@
       "task": "Wdrożenie standardów WCAG 2.1, implementacja contrast tool, praca w jQuery i AEM, dostępność czytników ekranu, optymalizacja UI dla użytkowników z niepełnosprawnościami",
       "goals": "<p>1) Klawiatura i kolejność fokusa. 2) Lepsze kontrasty. 3) Czytelne etykiety i komunikaty.</p>",
       "solutions": "<p>Dodaliśmy <strong>contrast tool</strong>, etykiety i role ARIA, uporządkowaliśmy <strong>tab order</strong>, dopracowaliśmy stany fokus. Uzgodniliśmy zasady, które łatwo powtórzyć na innych rynkach.</p>",
-      "process_steps": [
-        "Przegląd komponentów",
-        "Plan poprawek",
-        "Wdrożenia",
-        "Testy z czytnikami",
-        "Stabilizacja"
-      ],
+      "process_steps": ["Przegląd komponentów", "Plan poprawek", "Wdrożenia", "Testy z czytnikami", "Stabilizacja"],
       "image": "/assets/projects/arteon-baners-meridol.webp",
       "link": "https://www.meridol.de/",
       "category": ["strona", "sklep"],
-            "testimonial": {
+      "testimonial": {
         "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
-            },
+      },
       "seo": {
         "title": "Dostępność WCAG w AEM - we współpracy z VML | Case study Meridol",
         "description": "Klawiatura, kontrasty i ARIA. Użyteczność bez barier, z zachowaniem ograniczeń AEM.",
@@ -149,7 +143,6 @@
       "category": ["grafika"]
     },
 
-
     {
       "slug": "elmex-accessibility",
       "title": "Elmex Accessibility",
@@ -158,12 +151,7 @@
       "task": "Edycja dostępnych komponentów, optymalizacja UI zgodnie z WCAG 2.1, praca w jQuery i AEM, naprawa błędów wizualnych",
       "goals": "<p>1) Poprawne etykiety i komunikaty. 2) Stabilne zachowanie na klawiaturze. 3) Kontrasty zgodne z WCAG.</p>",
       "solutions": "<p>Ujednoliciliśmy <strong>role ARIA</strong>, stany fokus/hover, zachowanie karuzel i akordeonów.</p>",
-      "process_steps": [
-        "Lista braków",
-        "Poprawki w komponentach",
-        "QA z czytnikami",
-        "Dokumentacja zasad"
-      ],
+      "process_steps": ["Lista braków", "Poprawki w komponentach", "QA z czytnikami", "Dokumentacja zasad"],
       "image": "/assets/projects/arteon-baners-elmex.webp",
       "link": "https://www.elmex.de/",
       "category": ["strona", "sklep"],
@@ -188,12 +176,7 @@
       "task": "Implementacja contrast tool, optymalizacja karuzeli, poprawa filtrów, zmiany UI zgodne z WCAG 2.1, praca w jQuery i AEM",
       "goals": "<p>1) Kontrast i widoczny fokus. 2) Czytelne etykiety. 3) Stabilna obsługa klawiaturą.</p>",
       "solutions": "<p>Wdrożyliśmy <strong>contrast tool</strong>, uporządkowaliśmy tab order, dodaliśmy etykiety i role. Usprawniliśmy zachowanie karuzel i filtrów.</p>",
-      "process_steps": [
-        "Rozpoznanie problemów ze zgodnością",
-        "Poprawki",
-        "Testy manualne",
-        "Publikacja"
-      ],
+      "process_steps": ["Rozpoznanie problemów ze zgodnością", "Poprawki", "Testy manualne", "Publikacja"],
       "image": "/assets/projects/arteon-baners-sanex.webp",
       "link": "https://www.sanex.co.uk/",
       "category": ["strona", "sklep"],
