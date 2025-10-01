@@ -1,20 +1,30 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import Filters from './Filters';
 import ProjectsGrid from './ProjectsGrid';
-import type { PrimaryCategory, SecondaryCategory } from '@/types/project';
+import type { ProjectCategory } from '@/types/project';
 
 export default function ProjectWithFilters() {
-  const [selected, setSelected] = useState<{ primary: PrimaryCategory | null; secondary: SecondaryCategory | null }>({
-    primary: null,
-    secondary: null,
-  });
+  const [selectedSet, setSelectedSet] = useState<Set<ProjectCategory>>(new Set());
+
+  const selected = useMemo(() => Array.from(selectedSet), [selectedSet]);
+
+  const onToggle = useCallback((cat: ProjectCategory) => {
+    setSelectedSet((prev) => {
+      const next = new Set(prev);
+      if (next.has(cat)) next.delete(cat);
+      else next.add(cat);
+      return next;
+    });
+  }, []);
+
+  const onClear = useCallback(() => setSelectedSet(new Set()), []);
 
   return (
     <>
-      <Filters selected={selected} onChange={setSelected} />
-      <ProjectsGrid selectedPrimary={selected.primary} selectedSecondary={selected.secondary} />
+      <Filters selected={selected} onToggle={onToggle} onClear={onClear} />
+      <ProjectsGrid selectedCategories={selected} />
     </>
   );
 }

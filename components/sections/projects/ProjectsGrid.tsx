@@ -1,14 +1,13 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
-import projectsData from '@/data/pl/projects.json';
+import { useMemo } from 'react';
+import allProjectsData from '@/data/pl/projects.json';
+import type { Project, ProjectCategory } from '@/types/project';
 import ProjectCard from '../../ui/ProjectCard';
-import type { Project, ProjectCategory, PrimaryCategory, SecondaryCategory } from '@/types/project';
+import { AnimatePresence, motion } from 'framer-motion';
 
 type Props = {
-  selectedCategory?: ProjectCategory | null;
-  selectedPrimary?: PrimaryCategory | null;
-  selectedSecondary?: SecondaryCategory | null;
+  selectedCategories: ProjectCategory[];
 };
 
 const cardVariants = {
@@ -21,26 +20,36 @@ const cardVariants = {
   exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
 };
 
-export default function ProjectsGrid({ selectedCategory = null, selectedPrimary = null, selectedSecondary = null }: Props) {
-  const allProjects = projectsData.projects as Project[];
+export default function ProjectsGrid({ selectedCategories }: Props) {
+  const projects = allProjectsData.projects as Project[];
 
-  const filteredProjects = allProjects.filter((p) => {
-    const okSingle = selectedCategory ? p.category.includes(selectedCategory) : true;
-    const okPrimary = selectedPrimary ? p.category.includes(selectedPrimary) : true;
-    const okSecondary = selectedSecondary ? p.category.includes(selectedSecondary) : true;
-    return okSingle && okPrimary && okSecondary;
-  });
+  const filteredProjects = useMemo(() => {
+    if (!selectedCategories.length) return projects;
+    return projects.filter((p) => {
+      const cats = new Set(p.category ?? []);
+      return selectedCategories.every((c) => cats.has(c));
+    });
+  }, [projects, selectedCategories]);
 
-  if (!filteredProjects.length) return null;
+  if (!filteredProjects.length) {
+    return <p className="mt-6 text-[#5e5e5e]">Brak projektów dla wybranych filtrów.</p>;
+  }
 
-  const animKey = `${selectedCategory ?? 'all'}|${selectedPrimary ?? 'all'}|${selectedSecondary ?? 'all'}`;
+  const animKey = JSON.stringify([...selectedCategories].sort());
 
   return (
     <section className="w-full">
       <div className="grid auto-rows-max grid-cols-1 gap-8 pt-8 md:grid-cols-2">
         <AnimatePresence mode="wait" key={animKey}>
           {filteredProjects.map((project, i) => (
-            <motion.div key={project.slug} variants={cardVariants} initial="hidden" animate="visible" exit="exit" custom={i}>
+            <motion.div
+              key={project.slug}
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              custom={i}
+            >
               <ProjectCard project={project} />
             </motion.div>
           ))}
