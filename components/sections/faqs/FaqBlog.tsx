@@ -12,7 +12,7 @@ const faqItems = [
   {
     question: 'Czy blog będzie zoptymalizowany pod SEO?',
     answer:
-      'Tak, wdrażamy techniczne podstawy SEO (szybkość, Rezponsywność, struktura nagłówków, meta tagi) i stosujemy najlepsze praktyki, by Twoje treści miały szansę dobrze pozycjonować się w Google',
+      'Tak, wdrażamy techniczne podstawy SEO (szybkość, Responsywność, struktura nagłówków, meta tagi) i stosujemy najlepsze praktyki, by Twoje treści miały szansę dobrze pozycjonować się w Google',
   },
   {
     question: 'Czy projektujecie wygląd bloga od zera?',

@@ -18,7 +18,7 @@ const items: FeatureItem[] = [
     icon: <GoLaw className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Pełna Rezponsywność i komfort czytania',
+    title: 'Pełna Responsywność i komfort czytania',
     icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
   },
   {
