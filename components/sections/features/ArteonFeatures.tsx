@@ -16,7 +16,7 @@ const items: FeatureItem[] = [
     icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Responsywność i dostępność (WCAG 2.1 AA)',
+    title: 'Rezponsywność i dostępność (WCAG 2.1 AA)',
     icon: <IoAccessibility className="h-6 w-6 text-slate-500" />,
   },
   {

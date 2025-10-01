@@ -41,7 +41,7 @@ const items: FeatureItem[] = [
     icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
   },
   {
-    title: 'Pełna responsywność na urządzeniach mobilnych',
+    title: 'Pełna Rezponsywność na urządzeniach mobilnych',
     icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
   },
   {

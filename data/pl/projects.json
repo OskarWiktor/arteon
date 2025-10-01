@@ -56,14 +56,16 @@
         "canonical": "https://www.arteonagency.pl/realizacje/msc-psychotherapy"
       }
     },
+
     {
       "slug": "katalog-restoquality",
-      "title": "Katalog RestoQuality",
+      "title": "Katalog produktów RestoQuality",
       "short": "Utworzenie nowego wyglądu dla firmowego, promocyjnego katalogu z produktami",
-      "description": "Projekt obejmował stworzenie nowego, atrakcyjnego wizualnie katalogi dla firmy RestoQuality. Propozycja została stworzona na bazie wszelkich wytycznych firmy",
+      "description": "<p>Firma potrzebowała <strong>katalogu sprzedażowego</strong>, który jasno pokazuje kategorie i przewagi produktów. Zaprojektowaliśmy <strong>nowy układ</strong>, typografię i siatkę zdjęć.</p><p>Projekt powstał na podstawie <strong>wytycznych marki</strong> i aktualnej oferty. Zachowaliśmy ton komunikacji i kolory, dodając lepszą hierarchię treści.</p>",
       "image": "/assets/projects/gazetka-mockup.jpg",
       "category": ["grafika"]
     },
+
     {
       "slug": "pilka-nozna-pl",
       "title": "PilkaNożna.pl - redesign EURO 2024",
@@ -84,32 +86,61 @@
 
     {
       "slug": "trilllizo",
-      "title": "Trillizo",
-      "short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong> Sklep internetowy z odzieżą, zrealizowany w WordPressie z użyciem Elementora Pro. Projekt obejmował dwie wersje językowe: polski (.pl) i angielski (.com)",
+      "title": "Sklep Trilllizo",
+      "short": "Sklep z wysokiej jakości odzieżą dla dzieci w dwóch wersjach językowych",
+      "description": "<p>Marka odzieżowa przyszła z jasną inspiracją. Zadanie: oddać wygląd <strong>1:1</strong> i uruchomić sprzedaż przez własną platformę. Zbudowaliśmy sklep na <strong>WordPress + WooCommerce + Elementor Pro</strong>, skonfigurowaliśmy płatności i <strong>InPost</strong>. Serwis działa w dwóch wersjach: <strong>.pl</strong> i <strong>.com</strong>. Na koniec stworzyliśmy dedykowanie szkolenie PDF z obsługi i przekazaliśmy <strong>plan SEO</strong>.</p>",
       "task": "Instalacja i konfiguracja WordPressa, projekt i implementacja UI, integracje (płatności, InPost, newsletter), optymalizacja SEO ( techniczne, zdjęcia, treść ), lokalizacja, dokumentacja, opieka powdrożeniowa",
+      "deliverables": [
+        "Instalacja i konfiguracja środowiska",
+        "Motyw i komponenty pod wygląd 1:1",
+        "WooCommerce + płatności + InPost + newsletter",
+        "Dwie wersje językowe (.pl / .com)",
+        "Szkolenie + plan SEO"
+      ],
+      "goals": "<p>1) Identyczny wygląd jak w referencji. 2) Prosty zakup i szybki checkout. 3) Gotowość na SEO i skalowanie treści.</p>",
+      "process_steps": ["Setup serwera", "Projekt/motyw", "Integracje", "Testy zakupów", "Szkolenie i publikacja"],
       "image": "/assets/projects/arteon-baners-trilllizo.webp",
       "link": "https://trilllizo.com",
-      "category": ["sklep"]
+      "category": ["sklep"],
+      "seo": {
+        "title": "Sklep WooCommerce z inspiracji | Case study Trilllizo",
+        "description": "Pełne wdrożenie: motyw, integracje, wersje .pl/.com i szkolenie. Sklep gotowy na SEO.",
+        "canonical": "https://www.arteonagency.pl/realizacje/trilllizo"
+      }
     },
+
     {
       "slug": "meridol-accessibility",
       "title": "Meridol Accessibility",
-      "short": "Dostosowanie strony do standardów WCAG (współpraca z VML)",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong> Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM z wykorzystaniem JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony meridol.de do standardów dostępności WCAG.",
+      "short": "WCAG w AEM. Czytelniej, wygodniej, zgodnie ze standardem.",
+      "description": "<strong>Wspólnie z VML</strong> pracowaliśmy nad dostępnością <strong>meridol.de</strong>. Celem było wygodniejsze korzystanie ze strony dla osób używających <strong>klawiatury</strong> i <strong>czytników ekranu</strong>. Tam, gdzie AEM ograniczał ingerencję w HTML, wdrażaliśmy poprawki przez <strong>jQuery</strong> i stylowanie.",
       "task": "Wdrożenie standardów WCAG 2.1, implementacja contrast tool, praca w jQuery i AEM, dostępność czytników ekranu, optymalizacja UI dla użytkowników z niepełnosprawnościami",
+      "goals": "<p>1) Klawiatura i kolejność fokusa. 2) Lepsze kontrasty. 3) Czytelne etykiety i komunikaty.</p>",
+      "solutions": "<p>Dodaliśmy <strong>contrast tool</strong>, etykiety i role ARIA, uporządkowaliśmy <strong>tab order</strong>, dopracowaliśmy stany fokus. Uzgodniliśmy zasady, które łatwo powtórzyć na innych rynkach.</p>",
+      "process_steps": [
+        "Przegląd komponentów",
+        "Plan poprawek",
+        "Wdrożenia",
+        "Testy z czytnikami",
+        "Stabilizacja"
+      ],
       "image": "/assets/projects/arteon-baners-meridol.webp",
       "link": "https://www.meridol.de/",
       "category": ["strona", "sklep"],
-
-      "testimonial": {
+            "testimonial": {
         "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+            },
+      "seo": {
+        "title": "Dostępność WCAG w AEM - we współpracy z VML | Meridol",
+        "description": "Klawiatura, kontrasty i ARIA. Użyteczność bez barier, z zachowaniem ograniczeń AEM.",
+        "canonical": "https://www.arteonagency.pl/realizacje/meridol-accessibility"
       }
     },
-        {
+
+    {
       "slug": "wizytowki-restoquality",
       "title": "Wizytówki RestoQuality",
       "short": "Utworzenie nowego szablonu wyglądu wizytówek",
@@ -117,6 +148,7 @@
       "image": "/assets/projects/resto-wiz.png",
       "category": ["grafika"]
     },
+
     {
       "slug": "elmex-accessibility",
       "title": "Elmex Accessibility",
@@ -133,7 +165,9 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       }
+
     },
+
     {
       "slug": "sanex-accessibility",
       "title": "Sanex Accessibility",
@@ -151,6 +185,7 @@
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       }
     },
+
     {
       "slug": "sanex",
       "title": "Sanex Lokalizacje",
@@ -168,7 +203,8 @@
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       }
     },
-        {
+
+    {
       "slug": "cennik-salon-kosmetyczny",
       "title": "Cennik dla salonu kosmetycznego",
       "short": "Projekt graficzny cennika dla salonu kosmetycznego",
@@ -176,6 +212,7 @@
       "image": "/assets/projects/cennik-mockup.png",
       "category": ["grafika"]
     },
+
     {
       "slug": "palmolive",
       "title": "Palmolive Lokalizacje",
@@ -193,6 +230,7 @@
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       }
     },
+
     {
       "slug": "colgate",
       "title": "Colgate Lokalizacje",
@@ -210,6 +248,7 @@
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       }
     },
+
     {
       "slug": "detergent-regulations",
       "title": "Detergent Regulations",
