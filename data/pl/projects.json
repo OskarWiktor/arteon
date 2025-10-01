@@ -113,7 +113,7 @@
       "slug": "meridol-accessibility",
       "title": "Meridol Accessibility",
       "short": "WCAG w AEM. Czytelniej, wygodniej, zgodnie ze standardem.",
-      "description": "<strong>Wspólnie z VML</strong> pracowaliśmy nad dostępnością <strong>meridol.de</strong>. Celem było wygodniejsze korzystanie ze strony dla osób używających <strong>klawiatury</strong> i <strong>czytników ekranu</strong>. Tam, gdzie AEM ograniczał ingerencję w HTML, wdrażaliśmy poprawki przez <strong>jQuery</strong> i stylowanie.",
+      "description": "<p><strong>Wspólnie z VML</strong> pracowaliśmy nad dostępnością <strong>meridol.de</strong>. Celem było wygodniejsze korzystanie ze strony dla osób używających <strong>klawiatury</strong> i <strong>czytników ekranu</strong>. Tam, gdzie AEM ograniczał ingerencję w HTML, wdrażaliśmy poprawki przez <strong>jQuery</strong> i stylowanie.</p>",
       "task": "Wdrożenie standardów WCAG 2.1, implementacja contrast tool, praca w jQuery i AEM, dostępność czytników ekranu, optymalizacja UI dla użytkowników z niepełnosprawnościami",
       "goals": "<p>1) Klawiatura i kolejność fokusa. 2) Lepsze kontrasty. 3) Czytelne etykiety i komunikaty.</p>",
       "solutions": "<p>Dodaliśmy <strong>contrast tool</strong>, etykiety i role ARIA, uporządkowaliśmy <strong>tab order</strong>, dopracowaliśmy stany fokus. Uzgodniliśmy zasady, które łatwo powtórzyć na innych rynkach.</p>",
@@ -134,7 +134,7 @@
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
             },
       "seo": {
-        "title": "Dostępność WCAG w AEM - we współpracy z VML | Meridol",
+        "title": "Dostępność WCAG w AEM - we współpracy z VML | Case study Meridol",
         "description": "Klawiatura, kontrasty i ARIA. Użyteczność bez barier, z zachowaniem ograniczeń AEM.",
         "canonical": "https://www.arteonagency.pl/realizacje/meridol-accessibility"
       }
@@ -143,72 +143,99 @@
     {
       "slug": "wizytowki-restoquality",
       "title": "Wizytówki RestoQuality",
-      "short": "Utworzenie nowego szablonu wyglądu wizytówek",
-      "description": "Projekt obejmował stworzenie nowych, atrakcyjnych wizualnie wizytówek dla firmy RestoQuality. Propozycja została stworzona na bazie wszelkich wytycznych firmy",
+      "short": "Nowy szablon wizytówek w stylistyce marki.",
+      "description": "<p>Projekt <strong>wizytówek</strong> spójnych z identyfikacją RestoQuality. Czysta typografia, proporcje i układ kontaktów. Materiały gotowe do druku.</p>",
       "image": "/assets/projects/resto-wiz.png",
       "category": ["grafika"]
     },
 
+
     {
       "slug": "elmex-accessibility",
       "title": "Elmex Accessibility",
-      "short": "Nowe komponenty i poprawki UI zgodne z WCAG (współpraca z VML)",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong> Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM z wykorzystaniem JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony elmex.de do standardów dostępności WCAG oraz wdrażanie nowych komponentów zgodnych z tymi wytycznymi.",
+      "short": "Czytelne komponenty i formularze. Standard WCAG w praktyce.",
+      "description": "<p><strong>Wspólnie z VML</strong> poprawialiśmy <strong>dostępność</strong> elementów na <strong>elmex.de</strong>.</p>",
       "task": "Edycja dostępnych komponentów, optymalizacja UI zgodnie z WCAG 2.1, praca w jQuery i AEM, naprawa błędów wizualnych",
+      "goals": "<p>1) Poprawne etykiety i komunikaty. 2) Stabilne zachowanie na klawiaturze. 3) Kontrasty zgodne z WCAG.</p>",
+      "solutions": "<p>Ujednoliciliśmy <strong>role ARIA</strong>, stany fokus/hover, zachowanie karuzel i akordeonów.</p>",
+      "process_steps": [
+        "Lista braków",
+        "Poprawki w komponentach",
+        "QA z czytnikami",
+        "Dokumentacja zasad"
+      ],
       "image": "/assets/projects/arteon-baners-elmex.webp",
       "link": "https://www.elmex.de/",
       "category": ["strona", "sklep"],
-
       "testimonial": {
         "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+      },
+      "seo": {
+        "title": "Dostępne komponenty i formularze | Case study Elmex x VML",
+        "description": "ARIA, fokus i czytelne stany. Interakcje zgodne z WCAG.",
+        "canonical": "https://www.arteonagency.pl/realizacje/elmex-accessibility"
       }
-
     },
 
     {
       "slug": "sanex-accessibility",
       "title": "Sanex Accessibility",
-      "short": "Implementacja contrast toola i dostępności komponentów (współpraca z VML)",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong> Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM i rozwijany przy użyciu JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony sanex.co.uk do standardów dostępności WCAG.",
+      "short": "Kontrast, filtry i karuzele. Komfort użycia zgodny z WCAG.",
+      "description": "<p><strong>Z VML</strong> skupiliśmy się na elementach, które najczęściej sprawiają trudność: <strong>filtry</strong>, <strong>karuzele</strong>, nawigacja klawiaturą. Celem było proste sterowanie i czytelność na <strong>sanex.co.uk</strong>.</p>",
       "task": "Implementacja contrast tool, optymalizacja karuzeli, poprawa filtrów, zmiany UI zgodne z WCAG 2.1, praca w jQuery i AEM",
+      "goals": "<p>1) Kontrast i widoczny fokus. 2) Czytelne etykiety. 3) Stabilna obsługa klawiaturą.</p>",
+      "solutions": "<p>Wdrożyliśmy <strong>contrast tool</strong>, uporządkowaliśmy tab order, dodaliśmy etykiety i role. Usprawniliśmy zachowanie karuzel i filtrów.</p>",
+      "process_steps": [
+        "Rozpoznanie problemów ze zgodnością",
+        "Poprawki",
+        "Testy manualne",
+        "Publikacja"
+      ],
       "image": "/assets/projects/arteon-baners-sanex.webp",
       "link": "https://www.sanex.co.uk/",
       "category": ["strona", "sklep"],
-
       "testimonial": {
         "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+      },
+      "seo": {
+        "title": "WCAG dla interakcji - filtry i karuzele | Case study Sanex x VML",
+        "description": "Kontrast, klawiatura i etykiety. Proste zasady, lepsze doświadczenie.",
+        "canonical": "https://www.arteonagency.pl/realizacje/sanex-accessibility"
       }
     },
 
     {
       "slug": "sanex",
       "title": "Sanex Lokalizacje",
-      "short": "Przygotowanie lokalizacji witryny (współpraca z VML)",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
-      "task": "test",
+      "short": "Lokalizacje na bazie wersji master. Spójny wygląd i treść.",
+      "description": "<p>Wsparcie przy <strong>lokalizacji serwisu</strong> Sanex na wybrane rynki. Zakres: przeniesienie treści i elementów interfejsu z wersji master do wersji lokalnych, z zachowaniem <strong>tej samej struktury i wyglądu</strong>.</p>",
       "image": "/assets/projects/arteon-baners-sanex.webp",
       "link": "https://sanex.co.uk",
       "category": ["strona", "sklep"],
-
       "testimonial": {
         "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+      },
+      "seo": {
+        "title": "Lokalizacje serwisu na rynki zagraniczne | Case study Sanex x VML",
+        "description": "Adaptacja treści i UI na bazie mastera. Spójność layoutu i komunikacji.",
+        "canonical": "https://www.arteonagency.pl/realizacje/sanex"
       }
     },
 
     {
       "slug": "cennik-salon-kosmetyczny",
       "title": "Cennik dla salonu kosmetycznego",
-      "short": "Projekt graficzny cennika dla salonu kosmetycznego",
-      "description": "Projekt obejmował stworzenie atrakcyjnego wizualnie cennika dla salonu Manufaktura Piękna w Skawinie. Propozycja została stworzona na bazie wszelkich wytycznych salonu",
+      "short": "Cennik salonu w nowej, czytelnej formie.",
+      "description": "<p>Projekt obejmował stworzenie atrakcyjnego, czytelnego <strong>cennika</strong> dla salonu Manufaktura Piękna w Skawinie. Zaprojektowaliśmy układ, typografię i sekcje. Materiał gotowy do druku i publikacji online.</p>",
       "image": "/assets/projects/cennik-mockup.png",
       "category": ["grafika"]
     },
@@ -216,45 +243,51 @@
     {
       "slug": "palmolive",
       "title": "Palmolive Lokalizacje",
-      "short": "Przygotowanie lokalizacji witryny (współpraca z VML)",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
-      "task": "test",
+      "short": "Adaptacja treści i układu na rynki lokalne.",
+      "description": "<p>Wsparcie w <strong>lokalizacji serwisów</strong> Palmolive. Przenosiliśmy treści i elementy interfejsu na bazie wersji master, dbając o <strong>spójny wygląd</strong> i komunikację.</p>",
       "image": "/assets/projects/arteon-baners-palmolive.webp",
       "link": "https://palmolive.de",
       "category": ["strona", "sklep"],
-
       "testimonial": {
         "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+      },
+      "seo": {
+        "title": "Lokalizacje serwisów na rynki zagraniczne | Case study Palmolive x VML",
+        "description": "Adaptacja treści i UI zgodnie z wersją master. Spójność layoutu i treści.",
+        "canonical": "https://www.arteonagency.pl/realizacje/palmolive"
       }
     },
 
     {
       "slug": "colgate",
       "title": "Colgate Lokalizacje",
-      "short": "Przygotowanie lokalizacji witryny (współpraca z VML)",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
+      "short": "Przeniesienie treści i UI z mastera do wersji lokalnych.",
+      "description": "<p>Realizowaliśmy <strong>lokalizacje</strong> serwisów Colgate. Zakres: adaptacja treści i elementów interfejsu z mastera do wersji lokalnych. Bez rozbudowy funkcji, ze <strong>spójnym wyglądem</strong>.</p>",
       "task": "test",
       "image": "/assets/projects/arteon-baners-colgate.webp",
       "link": "https://www.colgate.de",
       "category": ["strona", "sklep"],
-
       "testimonial": {
         "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+      },
+      "seo": {
+        "title": "Lokalizacje serwisów - spójny wygląd i treść | Case study Colgate x VML",
+        "description": "Adaptacja z mastera na rynki lokalne. Prosto, spójnie, zgodnie z brandem.",
+        "canonical": "https://www.arteonagency.pl/realizacje/colgate"
       }
     },
 
     {
       "slug": "detergent-regulations",
       "title": "Detergent Regulations",
-      "short": "Przygotowanie lokalizacji oraz wdrożenie analityki (współpraca z VML)",
-      "description": "<strong>Strona w przebudownie - pokażemy cały proces współpracy</strong>",
-      "task": "test",
+      "short": "Wdrożenie analityki stron (współpraca z VML)",
+      "description": "<p>Wsparcie przy wdrożeniu narzędzi analitycznych - GA4 oraz GTM na różne lokalizacje, oraz wsparcie w konfugaracji stron m.in mapy witryn</p>",
       "image": "/assets/projects/arteon-baners-detergentregulations.webp",
       "link": "https://www.detergentregulations.com/de-de",
       "category": ["strona", "blog", "marketing"],
@@ -264,6 +297,12 @@
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+      },
+
+      "seo": {
+        "title": "Analityka i konfiguracja | Case study Detergent Regulations x VML",
+        "description": "Adaptacja treści na rynki lokalne i konfiguracja bazowych pomiarów.",
+        "canonical": "https://www.arteonagency.pl/realizacje/detergent-regulations"
       }
     }
   ]
