@@ -86,6 +86,7 @@ h4,
 .h4 {
   font-weight: 600;
   font-size: clamp(22px, calc(22px + 12 * ((100vw - 360px) / 1080)), 34px);
+  line-height: 115%;
 }
 
 h5,
@@ -113,7 +114,6 @@ textarea {
   @apply w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-lg text-[#2B2B2B] shadow-md transition focus:outline-none;
 }
 
-
 @layer base {
   input:-webkit-autofill,
   textarea:-webkit-autofill,
@@ -133,7 +133,6 @@ textarea {
 }
 
 /*    CUSTOM    */
-
 .marker-after {
   @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-slate-500 before:blur-[0.5px] before:content-[''];
   p,

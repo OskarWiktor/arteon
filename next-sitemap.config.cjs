@@ -37,16 +37,7 @@ module.exports = {
     const appDir = path.join(process.cwd(), 'app');
     const files = await fg(['**/page.{ts,tsx,mdx}'], {
       cwd: appDir,
-      ignore: [
-        '**/(_*)/**',
-        '**/_*',
-        'api/**',
-        '**/components/**',
-        '**/shared/**',
-        '**/layout.{ts,tsx}',
-        '_not-found/**',
-        '**/_not-found/**',
-      ],
+      ignore: ['**/(_*)/**', '**/_*', 'api/**', '**/components/**', '**/shared/**', '**/layout.{ts,tsx}', '_not-found/**', '**/_not-found/**'],
     });
 
     const toRoute = (file) => {

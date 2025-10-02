@@ -67,6 +67,21 @@
     },
 
     {
+      "slug": "projekt-wizytowek-spa-talia",
+      "title": "Wizytówka dla SPA - TALIA",
+      "short": "Profesjonalne wizytówki dla SPA. Pliki do druku.",
+      "description": "<p>Projekt wizytówek dla SPA w stylu premium. Kompletny projekt graficzny, czytelny układ danych wraz z przygotowaniem plików wizytówek do druku. Motyw natury wspiera marki wellness i hotele SPA. Format 85x55 mm.</p></br><ul><li>Projektowanie wizytówek dla SPA i beauty</li><li>Pliki do druku: PDF, spady 3 mm</li><li>Format: 85×55 mm, wersja PNG do podglądu</li></ul>",
+      "image": "/assets/projects/wizytowka-talia.png",
+      "category": ["grafika"],
+      "client": { "name": "TALIA SPA", "sector": "Wellness & SPA", "location": "UK" },
+      "seo": {
+        "title": "Projekt wizytówek dla SPA - TALIA | Arteon",
+        "description": "Profesjonalny projekt wizytówek dla SPA. Układ 85x55 mm, przygotowanie do druku (PDF/X, spady), wersje językowe. Przykład realizacji dla branży wellness.",
+        "canonical": "https://www.arteonagency.pl/realizacje/projekt-wizytowek-spa-talia"
+      }
+    },
+
+    {
       "slug": "pilka-nozna-pl",
       "title": "PilkaNożna.pl - redesign EURO 2024",
       "short": "Odświeżenie bloga w nowym systemie z dedykowanym motywem.",

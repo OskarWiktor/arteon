@@ -62,8 +62,8 @@ export default function OfferDesignPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="grafika" subtitle="Portfolio" />
-        
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
         <Gap variant="line" />
 
         <DesignSteps />
