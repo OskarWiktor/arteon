@@ -12,7 +12,7 @@ module.exports = {
     const isProjects = p.startsWith('/realizacje');
     return {
       loc: p,
-      changefreq: isHome ? 'daily' : isServices ? 'weekly' : isProjects ? 'monthly' : 'weekly',
+      changefreq: isHome ? 'daily' : isServices ? 'daily' : isProjects ? 'daily' : 'daily',
       priority: isHome ? 1.0 : isServices ? 0.8 : isProjects ? 0.6 : 0.7,
       lastmod: new Date().toISOString(),
       alternateRefs: [],
@@ -22,7 +22,6 @@ module.exports = {
   additionalPaths: async () => {
     const add = [];
 
-    // 1) Projekty z danych
     try {
       const { projects } = require('./data/pl/projects.json');
       for (const p of projects ?? []) {
@@ -35,12 +34,11 @@ module.exports = {
       }
     } catch {}
 
-    // 2) Skan app/ - dorzucamy też SSR
     const appDir = path.join(process.cwd(), 'app');
     const files = await fg(['**/page.{ts,tsx,mdx}'], {
       cwd: appDir,
       ignore: [
-        '**/(_*)/**', // grupy routingu (np. (pl))
+        '**/(_*)/**',
         '**/_*',
         'api/**',
         '**/components/**',
@@ -52,17 +50,12 @@ module.exports = {
     });
 
     const toRoute = (file) => {
-      // root
       if (file === 'page.tsx' || file === 'page.mdx' || file === 'page.ts') return '/';
 
       let r = '/' + file.replace(/\\/g, '/').replace(/\/page\.(ts|tsx|mdx)$/, '');
-      // usuń grupy routingu /(…)
       r = r.replace(/\/\([^/]+\)/g, '');
-      // pomiń segmenty dynamiczne
       if (/\[.+?\]/.test(r)) return null;
-      // index safety
       if (r === '/index') r = '/';
-      // wykluczki
       if (r === '/_not-found' || r === '/api') return null;
       return r;
     };
@@ -75,7 +68,7 @@ module.exports = {
       seen.add(route);
       add.push({
         loc: route,
-        changefreq: route === '/' ? 'daily' : route.startsWith('/uslugi/') ? 'weekly' : 'weekly',
+        changefreq: route === '/' ? 'daily' : route.startsWith('/uslugi/') ? 'daily' : 'daily',
         priority: route === '/' ? 1.0 : route.startsWith('/uslugi/') ? 0.8 : 0.7,
         lastmod: new Date().toISOString(),
       });
