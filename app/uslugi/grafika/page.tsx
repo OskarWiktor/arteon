@@ -11,6 +11,7 @@ import DesignSteps from '@/components/sections/steps/DesignSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
+import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 
 export const metadata = {
   title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
@@ -59,6 +60,10 @@ export default function OfferDesignPage() {
 
         <DesignFeatures />
 
+        <Gap variant="line" />
+
+        <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="grafika" subtitle="Portfolio" />
+        
         <Gap variant="line" />
 
         <DesignSteps />

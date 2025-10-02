@@ -11,10 +11,7 @@ type Props = {
   onClear: () => void;
 };
 
-const ORDER: readonly ProjectCategory[] = [
-  'strona', 'sklep', 'blog', 'aplikacja',
-  'grafika', 'treść', 'marketing',
-] as const;
+const ORDER: readonly ProjectCategory[] = ['strona', 'sklep', 'blog', 'aplikacja', 'grafika', 'treść', 'marketing'] as const;
 
 export default function Filters({ selected, onToggle, onClear }: Props) {
   const projects = allProjectsData.projects as Project[];
@@ -32,28 +29,13 @@ export default function Filters({ selected, onToggle, onClear }: Props) {
     <section className="w-full">
       <h2 className="mb-2">Filtry projektów</h2>
 
-      <div
-        role="toolbar"
-        aria-label="Filtry realizacji"
-        className="flex flex-wrap w-full items-center gap-2 overflow-x-auto rounded-md pt-1 pb-12"
-      >
-        <Button
-          variant={hasSelection ? 'normal' : 'accent'}
-          size="small"
-          onClick={onClear}
-          aria-pressed={!hasSelection}
-        >
+      <div role="toolbar" aria-label="Filtry realizacji" className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-md pt-1 pb-12">
+        <Button variant={hasSelection ? 'normal' : 'accent'} size="small" onClick={onClear} aria-pressed={!hasSelection}>
           Wszystkie
         </Button>
 
         {available.map((c) => (
-          <Button
-            key={c}
-            variant={isSelected(c) ? 'accent' : 'normal'}
-            size="small"
-            onClick={() => onToggle(c)}
-            aria-pressed={isSelected(c)}
-          >
+          <Button key={c} variant={isSelected(c) ? 'accent' : 'normal'} size="small" onClick={() => onToggle(c)} aria-pressed={isSelected(c)}>
             {c.charAt(0).toUpperCase() + c.slice(1)}
           </Button>
         ))}

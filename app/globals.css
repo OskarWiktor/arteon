@@ -106,8 +106,13 @@ label {
 input,
 select,
 textarea {
-  @apply w-full rounded-md border border-gray-300 bg-white px-2 py-3 text-lg text-[#2B2B2B] shadow-md transition focus:outline-none;
+  @apply w-full rounded-md border border-gray-300 bg-white px-4 py-6 text-lg text-[#2B2B2B] shadow-md transition focus:outline-none;
 }
+
+textarea {
+  @apply w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-lg text-[#2B2B2B] shadow-md transition focus:outline-none;
+}
+
 
 @layer base {
   input:-webkit-autofill,
