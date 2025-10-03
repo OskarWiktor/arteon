@@ -18,8 +18,8 @@ export const metadata = {
   keywords: ['teksty na stronę', 'copywriting', 'opisy produktów', 'artykuły eksperckie', 'treści sprzedażowe', 'widoczność w Google'],
   alternates: { canonical: '/uslugi/tworzenie-tresci' },
   openGraph: {
-    title: 'Treści, które przyciągają klientów - Arteon',
-    description: 'Strategia tematów, pisanie i redakcja. Publikacja i dystrybucja bez tarcia.',
+    title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
+    description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
     url: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci',
     type: 'website',
   },

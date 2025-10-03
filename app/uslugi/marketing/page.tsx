@@ -18,8 +18,8 @@ export const metadata = {
   keywords: ['marketing internetowy', 'reklamy Google', 'reklamy Meta', 'kampanie online', 'widoczność w Google', 'strategie marketingowe'],
   alternates: { canonical: '/uslugi/marketing' },
   openGraph: {
-    title: 'Marketing, który dowozi wynik - Arteon',
-    description: 'Diagnoza, plan, kampanie i pomiar. Prosto i skutecznie.',
+    title: 'Marketing internetowy - reklamy i widoczność w Google | Arteon',
+    description: 'Strategia, kreacje i kampanie. Więcej zapytań i sprzedaży dzięki reklamom i mądrej widoczności.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
   },

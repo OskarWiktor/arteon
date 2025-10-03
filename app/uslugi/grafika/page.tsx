@@ -19,8 +19,8 @@ export const metadata = {
   keywords: ['projektowanie logo', 'identyfikacja wizualna', 'grafika na stronę', 'materiały drukowane', 'brandbook'],
   alternates: { canonical: '/uslugi/grafika' },
   openGraph: {
-    title: 'Brand, który zapada w pamięć - Arteon',
-    description: 'Koncepcje, projekt i pliki gotowe do produkcji. Bez niespodzianek.',
+    title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
+    description: 'Logo i system identyfikacji. Materiały do druku i online. Spójność i prestiż od pierwszego kontaktu.',
     url: 'https://www.arteonagency.pl/uslugi/grafika',
     type: 'website',
   },

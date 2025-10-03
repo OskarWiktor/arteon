@@ -20,8 +20,8 @@ export const metadata = {
   keywords: ['blog firmowy', 'tworzenie bloga', 'projekt bloga', 'treści eksperckie', 'widoczność w Google'],
   alternates: { canonical: '/uslugi/blogi-internetowe' },
   openGraph: {
-    title: 'Blog, który pracuje na markę - Arteon',
-    description: 'Strategia tematów, projekt i wdrożenie. Publikacja bez tarcia.',
+    title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
+    description: 'Blogi firmowe i eksperckie. Prosty CMS, czytelny układ i treści, które przyciągają klientów.',
     url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
     type: 'website',
   },
