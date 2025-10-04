@@ -18,8 +18,8 @@ export default function FeatureGrid({ title, subtitle, description, items }: Fea
   return (
     <section>
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 className="md:mt-2 reveal-animation">{title}</h2>
-      {description && <p className="mt-3 reveal-animation">{description}</p>}
+      <h2 className="reveal-animation md:mt-2">{title}</h2>
+      {description && <p className="reveal-animation mt-3">{description}</p>}
 
       <div className="mt-6 grid gap-4 md:mt-8 md:grid-cols-2 lg:mt-10">
         {items.map((item, idx) => (

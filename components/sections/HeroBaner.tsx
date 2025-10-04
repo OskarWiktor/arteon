@@ -75,13 +75,13 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center' : ''} ${baseBg} flex h-auto min-h-[420px] items-center overflow-hidden py-10 md:min-h-[460px] md:py-0 lg:min-h-[520px]`}
+        className={`relative ${hasBg ? 'bg-cover bg-center md:bg-fixed' : ''} ${baseBg} flex h-auto min-h-[420px] items-center overflow-hidden py-10 md:min-h-[460px] md:py-0 lg:min-h-[520px]`}
         style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
           <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 pt-4 md:p-7 ${contentBgClass} hyphens-auto`}>
-            {subtitle && <p className={`text-base reveal-animation tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
+            {subtitle && <p className={`reveal-animation text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
               <nav aria-label="Szybkie linki" className="mt-4">
                 <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
@@ -97,7 +97,7 @@ export default function HeroBanner({
             )}
             {title && <h1 id="hero-title text-wrap reveal-animation text-wrap:pretty">{title}</h1>}
             {description && (
-              <p id="hero-description" className={`mt-3 text-base reveal-animation leading-relaxed md:mt-5 ${toneMutedClass} text-wrap:pretty max-w-prose`}>
+              <p id="hero-description" className={`reveal-animation mt-3 text-base leading-relaxed md:mt-5 ${toneMutedClass} text-wrap:pretty max-w-prose`}>
                 {description}
               </p>
             )}

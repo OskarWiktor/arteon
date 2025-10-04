@@ -50,7 +50,11 @@ export default function SectionPrices({
             {subtitle}
           </span>
         )}
-        {title && <h3 className='reveal-animation' id={headingId}>{title}</h3>}
+        {title && (
+          <h3 className="reveal-animation" id={headingId}>
+            {title}
+          </h3>
+        )}
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -77,7 +81,9 @@ export default function SectionPrices({
                   </div>
                 )}
 
-                <h4 id={itemHeadingId} className='reveal-animation'>{plan.name}</h4>
+                <h4 id={itemHeadingId} className="reveal-animation">
+                  {plan.name}
+                </h4>
 
                 {plan.platform && (
                   <span id={itemPlatformId} className="pt-1 text-base text-[#5e5e5e]">

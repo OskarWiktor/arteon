@@ -131,7 +131,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
   return (
     <section className="w-full" aria-labelledby="projects-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="projects-heading" className="md:mb-2 reveal-animation">
+      <h2 id="projects-heading" className="reveal-animation md:mb-2">
         {title}
       </h2>
 

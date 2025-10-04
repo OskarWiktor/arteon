@@ -1,4 +1,5 @@
 import TableOfContents from '@/components/sections/TableOfContent';
+import { ButtonToTop } from '@/components/ui/Button';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
@@ -161,6 +162,8 @@ export default function PrivacyPolicyPage() {
 
         <TableOfContents rootSelector="#article-root" size="large" />
       </Wrapper>
+
+      <ButtonToTop />
 
       <Gap />
     </>

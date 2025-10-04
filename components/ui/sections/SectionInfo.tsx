@@ -20,9 +20,9 @@ export default function SectionInfo({ title, subtitle, description, btnOne, btnO
     <div id={id}>
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
 
-      <h2 className="mb-2 scroll-mt-26 reveal-animation lg:mb-4">{title}</h2>
+      <h2 className="reveal-animation mb-2 scroll-mt-26 lg:mb-4">{title}</h2>
 
-      {description && <p className='reveal-animation'>{description}</p>}
+      {description && <p className="reveal-animation">{description}</p>}
 
       {children}
 
