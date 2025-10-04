@@ -188,3 +188,9 @@ textarea {
     transition-duration: 0ms !important;
   }
 }
+
+@media (pointer: coarse) {
+  abbr.cursor-help {
+    text-decoration-thickness: from-font;
+  }
+}
