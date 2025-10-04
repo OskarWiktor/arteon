@@ -81,7 +81,7 @@ export default function HeroBanner({
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
           <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 pt-4 md:p-7 ${contentBgClass} hyphens-auto`}>
-            {subtitle && <p className={`text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
+            {subtitle && <p className={`text-base reveal-animation tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
               <nav aria-label="Szybkie linki" className="mt-4">
                 <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
@@ -95,9 +95,9 @@ export default function HeroBanner({
                 </ul>
               </nav>
             )}
-            {title && <h1 id="hero-title text-wrap text-wrap:pretty">{title}</h1>}
+            {title && <h1 id="hero-title text-wrap reveal-animation text-wrap:pretty">{title}</h1>}
             {description && (
-              <p id="hero-description" className={`mt-3 text-base leading-relaxed md:mt-5 ${toneMutedClass} text-wrap:pretty max-w-prose`}>
+              <p id="hero-description" className={`mt-3 text-base reveal-animation leading-relaxed md:mt-5 ${toneMutedClass} text-wrap:pretty max-w-prose`}>
                 {description}
               </p>
             )}

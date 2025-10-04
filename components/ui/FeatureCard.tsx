@@ -12,7 +12,7 @@ export default function FeatureCard({ title, points, icon }: FeatureCardProps) {
     .replace(/[^a-z0-9]+/gi, '-')}`;
 
   return (
-    <article aria-labelledby={id} className="rounded-md bg-white px-5 py-3 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md md:px-6 md:py-4">
+    <article aria-labelledby={id} className="rounded-xl bg-white px-5 py-3 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md md:px-6 md:py-4">
       <header className="flex items-center gap-2">
         {icon ? (
           <span aria-hidden="true" className="inline-flex items-center justify-center">

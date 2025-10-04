@@ -97,18 +97,18 @@ export default function SectionSteps({
         {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
 
         {title && (
-          <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3`}>
+          <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3 reveal-animation`}>
             {title}
           </SectionHeadingTag>
         )}
 
-        {description && <p className={`pt-3 pb-2 ${toneMutedClass}`}>{description}</p>}
+        {description && <p className={`pt-3 pb-2 reveal-animation ${toneMutedClass}`}>{description}</p>}
 
         <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
           {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
             return (
               <li key={index} className="flex flex-col items-stretch">
-                <article className="flex h-full w-full flex-col rounded-md border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
+                <article className="flex h-full w-full flex-col rounded-xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
                   <div className="flex items-center">
                     {imageSrc && <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none mr-2 select-none" aria-hidden={imageAlt ? undefined : true} />}
 

@@ -107,11 +107,11 @@ label {
 input,
 select,
 textarea {
-  @apply w-full rounded-md border border-gray-300 bg-white px-4 py-6 text-lg text-[#2B2B2B] shadow-md transition focus:outline-none;
+  @apply w-full rounded-lg border border-gray-300 bg-white px-4 py-6 text-lg text-[#2B2B2B] transition focus:outline-none;
 }
 
 textarea {
-  @apply w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-lg text-[#2B2B2B] shadow-md transition focus:outline-none;
+  @apply w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-lg text-[#2B2B2B] transition focus:outline-none;
 }
 
 @layer base {
@@ -143,4 +143,46 @@ textarea {
 
 .marker-before {
   @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-slate-500 before:blur-[0.5px] before:content-[''];
+}
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 0;
+  background: currentColor;
+  transition: width 200ms ease-out;
+  pointer-events: none;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* ===== Reveal Animation (uniwersalne) ===== */
+.reveal-animation {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+  will-change: opacity, transform;
+  transition-delay: calc(var(--reveal-delay, 0ms));
+}
+
+.reveal-animation.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-animation {
+    transform: none !important;
+    transition-duration: 0ms !important;
+  }
 }

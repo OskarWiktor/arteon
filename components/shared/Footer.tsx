@@ -41,7 +41,7 @@ export default function Footer() {
                 aria-label="Instagram"
                 className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               >
-                  <RiInstagramLine className="h-7 w-7 text-[#080808] transition hover:text-slate-500" aria-hidden="true" />
+                  <RiInstagramLine className="h-7 w-7 text-[#080808] transition  hover-underline text-base" aria-hidden="true" />
               </a>
             </div>
             */}
@@ -53,7 +53,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {title}
                   </Link>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                   </Link>
@@ -83,21 +83,21 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                   </Link>
                 </li>
               ))}
               <li>
-                <button onClick={() => (window as any).ArteonConsent?.open()} className="cursor-pointer hover:text-slate-500" aria-haspopup="dialog">
+                <button onClick={() => (window as any).ArteonConsent?.open()} className="hover-underline cursor-pointer text-base" aria-haspopup="dialog">
                   Ustawienia cookies
                 </button>
               </li>
               <li>
                 <Link
                   href="/mapa-strony"
-                  className="mt-4 inline-block rounded text-[#080808] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  className="hover-underline mt-4 inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >
                   Mapa strony
                 </Link>

@@ -20,8 +20,8 @@ export const metadata = {
   keywords: ['sklepy internetowe', 'tworzenie sklepów online', 'e-commerce', 'wdrożenie sklepu', 'opisy produktów', 'widoczność w Google'],
   alternates: { canonical: '/uslugi/sklepy-internetowe' },
   openGraph: {
-  title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
-  description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
+    title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
+    description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
     url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
     type: 'website',
   },

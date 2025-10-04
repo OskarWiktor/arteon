@@ -35,9 +35,9 @@ export default function SectionBasic({ id, title, subtitle, description, imageSr
           <div className={`flex h-full flex-col justify-center py-6 md:py-8 lg:py-8 ${variant === 'right' ? 'md:pl-6' : 'md:pr-6'}`}>
             {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
 
-            <h3 className="mb-2 lg:mb-4">{title}</h3>
+            <h3 className="mb-2 lg:mb-4 reveal-animation">{title}</h3>
 
-            {description && <p>{description}</p>}
+            {description && <p className='reveal-animation'>{description}</p>}
 
             {children && <div className="text-balance">{children}</div>}
 

@@ -124,7 +124,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-10px] flex items-center gap-1 rounded text-base text-[#2B2B2B] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-10px] flex cursor-pointer items-center gap-1 rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
                     {label}
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -149,7 +149,7 @@ export default function DesktopNavigation() {
                               <Link
                                 key={item.href}
                                 href={item.href}
-                                className="flex gap-4 rounded-md border border-gray-100 px-4 py-2 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                                className="flex gap-4 rounded-xl border border-gray-100 px-4 py-2 shadow-xs transition hover:translate-y-[-2px] hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                               >
                                 <div className="leading-tight">
                                   <div className="flex items-center gap-2">
@@ -174,7 +174,7 @@ export default function DesktopNavigation() {
                 <Link
                   href={href}
                   aria-current={isActivePage ? 'page' : undefined}
-                  className={`rounded text-base text-[#2B2B2B] hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
+                  className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                     isActivePage ? 'font-semibold text-[#080808]' : ''
                   }`}
                 >

@@ -38,14 +38,14 @@ export default function ContactForm({ title, description, defaultSubject, action
   };
 
   const fieldClass =
-    'h-11 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-gray-900 transition ' +
+    'h-11 w-full rounded-xl border border-gray-300 bg-transparent px-3 py-2 text-gray-900 transition ' +
     'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   return (
     <section id="kontakt">
       {(title || description) && (
         <header className="mb-6">
-          {title && <h2 className="h3">{title}</h2>}
+          {title && <h2 className="h3 reveal-animation">{title}</h2>}
           {description && <p className="pt-3 pb-2 text-[#2B2B2B]">{description}</p>}
         </header>
       )}

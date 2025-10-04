@@ -34,9 +34,9 @@ export default function CTABaner({ title, subtitle, description, primaryLabel, p
         <div className={`max-w-[100vw] rounded-2xl p-2 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} rounded-2xl p-6`}>
           {subtitle && <span className="text-base tracking-wider uppercase">{subtitle}</span>}
 
-          <h3>{title}</h3>
+          <h3 className='reveal-animation'>{title}</h3>
 
-          {description && <p className={`mx-auto mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}>{description}</p>}
+          {description && <p className={`mx-auto reveal-animation mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}>{description}</p>}
 
           {(primaryLabel || secondaryLabel) && (
             <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:justify-center" role="group" aria-label="Działania sekcji">

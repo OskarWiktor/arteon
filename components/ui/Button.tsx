@@ -58,7 +58,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
 
   const baseClass =
     `transition w-fit` +
-    ` inline-flex rounded-md items-center font-medium text-sm md:text-base ` +
+    ` inline-flex rounded-xl items-center font-medium text-sm md:text-base ` +
     `${sizeClass} ${variantClass} ` +
     `${disabled ? 'cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`;
 

@@ -50,7 +50,7 @@ export default function SectionPrices({
             {subtitle}
           </span>
         )}
-        {title && <h3 id={headingId}>{title}</h3>}
+        {title && <h3 className='reveal-animation' id={headingId}>{title}</h3>}
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -67,7 +67,7 @@ export default function SectionPrices({
               key={itemId}
               aria-labelledby={itemHeadingId}
               aria-describedby={itemDescribedBy}
-              className={`flex flex-col justify-between rounded-md bg-white p-6 ${plan.lastPlan ? 'ring-2 ring-neutral-900' : 'ring-1 ring-neutral-200'}`}
+              className={`flex flex-col justify-between rounded-xl bg-white p-6 ${plan.lastPlan ? 'ring-2 ring-neutral-900' : 'ring-1 ring-neutral-200'}`}
             >
               <div>
                 {plan.badgeLabel && (
@@ -77,7 +77,7 @@ export default function SectionPrices({
                   </div>
                 )}
 
-                <h4 id={itemHeadingId}>{plan.name}</h4>
+                <h4 id={itemHeadingId} className='reveal-animation'>{plan.name}</h4>
 
                 {plan.platform && (
                   <span id={itemPlatformId} className="pt-1 text-base text-[#5e5e5e]">
@@ -123,7 +123,7 @@ export default function SectionPrices({
       </div>
 
       {note && (
-        <aside className="mt-8 mb-4 rounded-md bg-white p-6 ring-1 ring-neutral-200" role="note" aria-label="Informacja">
+        <aside className="mt-8 mb-4 rounded-xl bg-white p-6 ring-1 ring-neutral-200" role="note" aria-label="Informacja">
           {note.text}
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">

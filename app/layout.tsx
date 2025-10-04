@@ -13,6 +13,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
+import RevealObserver from '@/components/systems/RevealObserver';
 
 export const metadata: Metadata = {
   title: 'Arteon',
@@ -55,6 +56,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <FocusManager />
           <RouteAnnouncer />
         </Suspense>
+        <RevealObserver />
 
         <Navigation />
         <main id="main-content" tabIndex={-1}>

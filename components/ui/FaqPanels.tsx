@@ -58,7 +58,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
   return (
     <section aria-labelledby="faq-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="faq-heading" className="mb-2">
+      <h2 id="faq-heading reveal-animation" className="mb-2">
         {title}
       </h2>
 
@@ -71,7 +71,7 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
           <div
             key={index}
             className={[
-              'my-4 overflow-hidden rounded-md border bg-white',
+              'my-4 overflow-hidden rounded-xl border bg-white',
               'hover:border-indigo-300 hover:shadow-md',
               isOpen ? 'border-indigo-300' : 'border-gray-300',
               'focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-white',
