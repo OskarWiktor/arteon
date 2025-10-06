@@ -14,6 +14,7 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import Badge from '@/components/ui/Badge';
 import CTABaner from '@/components/sections/CTABaner';
+import FaqPanels from '@/components/ui/FaqPanels';
 
 const projects = projectsData.projects as Project[];
 
@@ -21,6 +22,7 @@ const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 const projectUrl = (slug: string) => `${siteUrl}/realizacje/${slug}`;
 
+// -------- JSON-LD builders --------
 function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;
@@ -35,33 +37,29 @@ function jsonLd(project: Project) {
     description,
     image: [image],
     author: [{ '@type': 'Organization', name: 'Arteon' }],
-    publisher: { '@type': 'Organization', name: 'Arteon', logo: { '@type': 'ImageObject', url: `${siteUrl}/icon-512x512.png` } },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Arteon',
+      logo: { '@type': 'ImageObject', url: `${siteUrl}/icon-512x512.png` },
+    },
     about: project.category,
   } as const;
 }
 
-export async function generateStaticParams() {
-  return projects.map((project) => ({ slug: project.slug }));
-}
-
-type PageProps = { params: { slug: string } };
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const project = getProject(params.slug);
-  if (!project) return {};
-  const title = project.seo?.title || `${project.title} - Case study`;
-  const description = project.seo?.description || '';
-  const url = projectUrl(project.slug);
-  const image = project.image?.startsWith('http') ? project.image : `${siteUrl}${project.image}`;
+function faqJsonLd(items: { question: string; answer: string }[], url: string) {
   return {
-    title,
-    description,
-    alternates: { canonical: project.seo?.canonical || url },
-    openGraph: { type: 'article', url, title, description, images: [{ url: image, width: 1200, height: 630, alt: project.title }] },
-    twitter: { card: 'summary_large_image', title, description, images: [image] },
-  };
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((it) => ({
+      '@type': 'Question',
+      name: it.question,
+      acceptedAnswer: { '@type': 'Answer', text: it.answer },
+    })),
+    mainEntityOfPage: url,
+  } as const;
 }
 
+// -------- small helpers --------
 const Inline = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
 const Block = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
@@ -76,6 +74,100 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
   );
 }
 
+// -------- Rich Content renderer --------
+function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1'; children: React.ReactNode }) {
+  const map: Record<string, string> = {
+    '16/9': 'aspect-[16/9]',
+    '4/3': 'aspect-[4/3]',
+    '1/1': 'aspect-square',
+  };
+  return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio]}`}>{children}</div>;
+}
+
+function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
+  if (!blocks?.length) return null;
+  return (
+    <>
+      {blocks.map((b, i) => {
+        if (b.type === 'richtext') {
+          return <div dangerouslySetInnerHTML={{ __html: b.html }} />;
+        }
+        if (b.type === 'image') {
+          return (
+            <div key={i}>
+              <Gap size="xs" />{' '}
+              <figure>
+                <Aspect ratio={b.ratio || '16/9'}>
+                  <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" />
+                </Aspect>
+                {b.caption && <figcaption className="mt-2 text-sm text-[#5e5e5e]">{b.caption}</figcaption>}
+              </figure>
+            </div>
+          );
+        }
+        if (b.type === 'imageText') {
+          const Img = (
+            <Aspect key={i} ratio="4/3">
+              <Image  src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
+            </Aspect>
+          );
+
+          return (
+            <div key={i}>
+              <Gap size="xs" />
+              <div className="grid items-start gap-6 md:grid-cols-2">
+                {b.imageSide === 'right' ? (
+                  <>
+                    <div dangerouslySetInnerHTML={{ __html: b.html }} />
+                    {Img}
+                  </>
+                ) : (
+                  <>
+                    {Img}
+                    <div dangerouslySetInnerHTML={{ __html: b.html }} />
+                  </>
+                )}
+              </div>
+            </div>
+          );
+        }
+        return null;
+      })}
+    </>
+  );
+}
+
+// -------- Next metadata --------
+export async function generateStaticParams() {
+  return projects.map((project) => ({ slug: project.slug }));
+}
+
+type PageProps = { params: { slug: string } };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const project = getProject(params.slug);
+  if (!project) return {};
+  const title = project.seo?.title || `${project.title} - Case study`;
+  const description = project.seo?.description || '';
+  const url = projectUrl(project.slug);
+  const image = project.image?.startsWith('http') ? project.image : `${siteUrl}${project.image}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: project.seo?.canonical || url },
+    openGraph: {
+      type: 'article',
+      url,
+      title,
+      description,
+      images: [{ url: image, width: 1200, height: 630, alt: project.title }],
+    },
+    twitter: { card: 'summary_large_image', title, description, images: [image] },
+  };
+}
+
+// -------- Page --------
 export default function ProjectPage({ params }: PageProps) {
   const project = getProject(params.slug);
   if (!project) return notFound();
@@ -111,13 +203,11 @@ export default function ProjectPage({ params }: PageProps) {
           </div>
 
           {project.link && (
-            <>
-              <div className="mt-2">
-                <Button variant="accent" arrow link={project.link} aria-label={`Zobacz realizację: ${project.title} na żywo`}>
-                  Zobacz stronę
-                </Button>
-              </div>
-            </>
+            <div className="mt-2">
+              <Button variant="accent" arrow link={project.link} aria-label={`Zobacz realizację: ${project.title} na żywo`}>
+                Zobacz stronę
+              </Button>
+            </div>
           )}
 
           {(project.description || project.task) && (
@@ -192,26 +282,30 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          {project.challenges && (
+          {project.challenges ? (
             <>
               <SectionInfo title="Wyzwania">
                 <Block content={project.challenges} />
               </SectionInfo>
               <Gap size="sm" />
             </>
-          )}
+          ) : null}
 
-          {project.solutions && (
+          {project.solutions ? (
             <>
               <SectionInfo title="Rozwiązania">
                 <Block content={project.solutions} />
               </SectionInfo>
               <Gap size="sm" />
             </>
-          )}
+          ) : null}
+
+          {/* RICH CONTENT BLOKS */}
+          <RenderBlocks blocks={project.contentBlocks} />
 
           {project.outcomes?.length ? (
             <>
+              <Gap size="sm" />
               <SectionInfo title="Rezultaty">
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {project.outcomes.map((o, i) => (
@@ -219,10 +313,25 @@ export default function ProjectPage({ params }: PageProps) {
                   ))}
                 </div>
               </SectionInfo>
-              <Gap size="sm" />
             </>
           ) : null}
 
+          {/* FAQ + JSON-LD */}
+          {project.faq?.length ? (
+            <>
+              <Gap size="sm" />
+
+              <FaqPanels title="FAQ" subtitle="Najczęstsze pytania" items={project.faq} />
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify(faqJsonLd(project.faq, projectUrl(project.slug))),
+                }}
+              />
+            </>
+          ) : null}
+
+          {/* Testimonials */}
           {project.testimonial?.quote ? (
             <>
               <SectionInfo title="Ocena współpracy">
@@ -232,9 +341,11 @@ export default function ProjectPage({ params }: PageProps) {
                     <footer className="mt-2">
                       <h5 className="mt-5">{project.testimonial.author}</h5>
                       {project.testimonial.role ? <p className="mt-1 mb-3 text-[#5e5e5e]">{project.testimonial.role}</p> : null}
-                      <Button variant="accent" size="small" arrow link="{project.testimonial.link}">
-                        Link do opinii
-                      </Button>
+                      {project.testimonial.link ? (
+                        <Button variant="accent" size="small" arrow link={project.testimonial.link}>
+                          Link do opinii
+                        </Button>
+                      ) : null}
                     </footer>
                   )}
                 </blockquote>
@@ -243,6 +354,7 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
+          {/* ARTICLE + BREADCRUMB JSON-LD */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(project)) }} />
           <script
             type="application/ld+json"

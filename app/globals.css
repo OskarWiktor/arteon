@@ -52,7 +52,7 @@ body {
 p,
 li {
   @apply leading-relaxed font-normal text-balance;
-  font-size: clamp(14px, calc(14px + 4 * ((100vw - 360px) / 1080)), 18px);
+  font-size: clamp(16px, calc(16px + 3 * ((100vw - 360px) / 1080)), 19px);
 }
 
 h1,

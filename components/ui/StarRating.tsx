@@ -6,9 +6,8 @@ function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
 
-/** Gwiazdki z połówkami. Prezentacyjne – tekst dla czytników ekranu dodaj w otoczeniu. */
 export const StarRating = memo(function StarRating({ value, size = 20, className = '' }: { value: number; size?: number; className?: string }) {
-  const v = clamp(Math.round(value * 2) / 2, 0, 5); // snap 0.5
+  const v = clamp(Math.round(value * 2) / 2, 0, 5);
   const full = Math.floor(v);
   const half = v - full === 0.5;
   const empty = 5 - full - (half ? 1 : 0);

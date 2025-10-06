@@ -1,6 +1,84 @@
 {
   "projects": [
     {
+      "slug": "wizytowka-dla-kancelarii-adwokackiej-lux-nova",
+      "title": "Wizytówka dla kancelarii - LUX NOVA",
+      "short": "Projekt wizytówki dla kancelarii adwokackiej",
+      "description": "<p>Projekt koncepcyjny wizytówki dla kancelarii adwokackiej, w którym stawiamy na czytelny układ danych oraz spójną identyfikację opartą o sygnet gryfa i zestaw kolorów podkreślających autorytet marki.</p>",
+      "image": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png",
+      "category": ["grafika"],
+      "client": { "name": "LUX NOVA", "sector": "Prawo" },
+      "stack": ["Adobe Illustrator", "Mockup 3D"],
+      "deliverables": [
+        "Wizytówka w układzie poziomym (front i tył)",
+        "Logo z gryfem jako element identyfikacji wizualnej",
+        "Ustalenie zgodnej kolorystyki",
+        "Stworzenie układu informacji: telefon, e-mail, adres oraz QR kierujący na stronę"
+      ],
+      "task": "Stworzyć elegancki projekt wizytówki dla kancelarii w układzie poziomym z przejrzystą hierarchią danych i miejscem na kod QR.",
+      "outcomes": [
+        { "value": "Spójność", "label": "Identyfikacja", "note": "Sygnet + paleta + typografia" },
+        { "value": "Czytelność", "label": "Układ danych", "note": "Logiczna hierarchia i odstępy" }
+      ],
+      "process_steps": [
+        "Stworzenie Moodboardu i ustalenie kierunku stylistycznego",
+        "Stworzenie układu siatek dla równych odstępów oraz odpowiedniej hierarchia informacji",
+        "Stworzenie 2 wersji wizytówki w kompozycji poziomej",
+        "Zdjęcia 3D projektu oraz opis"
+      ],
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt wizytówki?",
+          "answer": "Projekt wizytówki kosztuje u nas od 150 do 250 zł brutto"
+        },
+        {
+          "question": "Ile trwa realizacja projektu wizytówki?",
+          "answer": "Realizacja projektu, wraz z przygotowaniem do druku, zajmuje od 1 do 3 dni roboczych, po ustaleniu co ma się znaleść na wizytówce"
+        },
+        {
+          "question": "Czy tworzycie i przerabiacie projekty wizytówek do druku?",
+          "answer": "Tak, możemy stworzyć gotowe pliku do druku, według wskazanych przez Państwa drukarnie preferencji"
+        },
+        {
+          "question": "Czy warto dodać kod QR na wizytówce?",
+          "answer": "Kod QR ułatwia szybkie przejście do strony kontaktowej, dzięki temu użytkownik nie musi przepisywać danych ręcznie, co pozytywnie wpływa na konwersję"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<h5 class='h3 reveal-animation'>Paleta i typografia</h5><p class='pt-3'>Użyliśmy połączenia bordo i beżu, dla wzmacnia wrażenie autorytetu i stabilności. Typografia oparta jest na krojach Beaufort Pro i Neue Haas Grotesk Display Pro - budują one wrażenie nowoczesnej klasyki oraz utrzymują wysoką czytelność w małych rozmiarach.</p>"
+        },
+        {
+          "type": "imageText",
+          "src": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png",
+          "alt": "Wizytówka dla kancelarii - LUX NOVA (widok ogólny)",
+          "imageSide": "left",
+          "html": "<h5 class='h3 reveal-animation'>Wizytówka dla adwokata - hierarchia i porządek</h5><p class='pt-3'>Na froncie zaakcentowaliśmy mocno logo firmy, aby odbiorca mógł szybko zapamiętać znak kancelarii. Na rewersie ponownie zaakcentowaliśmy logo wraz z kodem QR do strony firmowej, na dole uporządkowaliśmy najważniejsze dane firmy</p>"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-wizytowka-dla-kancelarii-przod.jpg",
+          "alt": "Wizytówka dla kancelarii - LUX NOVA (front)",
+          "caption": "Front wizytówki w układzie poziomym",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-wizytowka-dla-kancelarii-tyl.jpg",
+          "alt": "Wizytówka dla kancelarii - LUX NOVA (tył)",
+          "caption": "Tył wizytówki w układzie poziomym",
+          "ratio": "16/9"
+        }
+      ],
+      "seo": {
+        "title": "Wizytówka dla kancelarii | LUX NOVA",
+        "description": "Projekt wizytówki dla kancelarii adwokackiej. Sprawdź jak wyglądają stworzone przez nas wizytówki",
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-kancelarii-adwokackiej-lux-nova"
+      }
+    },
+
+    {
       "slug": "msc-psychotherapy",
       "title": "MSC Psychotherapy UK",
       "short": "Strona dla psychoterapeutki w UK. Lepsza widoczność w Google, spójny wizerunek, przygotowanie do sprzedaży ebooka i promocji książki.",
@@ -51,8 +129,8 @@
       },
 
       "seo": {
-        "title": "Strona dla psychoterapeutki w UK - SEO i promocja książki | Case study MSC Psychotherapy",
-        "description": "Strona dla psychologa. Pozycjonowanie lokalne (Camberley/London), logo i marketing dla psychologa, promocja książki „Spokojnie, to tylko nerwica”, analityka GA4, przygotowanie sklepu (ebook, audiobook).",
+        "title": "Strona dla psychoterapeutki w UK - pozycjonowanie i promocja książki | MSC Psychotherapy",
+        "description": "Strona dla psychologa. Pozycjonowanie lokalne, logo i marketing dla psychologa, promocja książki oraz przygotowanie sklepu. Sprawdź naszą realizację dla psychoterapeutki w UK",
         "canonical": "https://www.arteonagency.pl/realizacje/msc-psychotherapy"
       }
     },
