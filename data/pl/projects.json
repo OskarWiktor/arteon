@@ -72,15 +72,15 @@
         }
       ],
       "seo": {
-        "title": "Wizytówka dla kancelarii | LUX NOVA",
+        "title": "Wizytówka dla kancelarii - LUX NOVA | Arteon",
         "description": "Projekt wizytówki dla kancelarii adwokackiej. Sprawdź jak wyglądają stworzone przez nas wizytówki",
         "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-kancelarii-adwokackiej-lux-nova"
       }
     },
 
     {
-      "slug": "msc-psychotherapy",
-      "title": "MSC Psychotherapy UK",
+      "slug": "strona-dla-psychologa-msc-psychotherapy",
+      "title": "Strona dla psychologa - MSC Psychotherapy UK",
       "short": "Strona dla psychoterapeutki w UK. Lepsza widoczność w Google, spójny wizerunek, przygotowanie do sprzedaży ebooka i promocji książki.",
       "description": "<p>Mental Support Centre to gabinet prowadzony przez mgr Sylwię Paciuch. Naszym celem było zbudowanie <strong>spójnej, prostej w odbiorze strony dla psychoterapeuty</strong> po polsku oraz wzmocnienie <strong>widoczności w Google</strong> w Camberley oraz okolicach Londynu. Projekt łączy <strong>marketing dla psychologa</strong>, <strong>pozycjonowanie lokalne</strong> i przygotowanie do <strong>promocji książki psychologicznej</strong> \"Spokojnie, to tylko nerwica\".</p>",
       "image": "/assets/projects/arteon-baners-msc.webp",
@@ -129,23 +129,26 @@
       },
 
       "seo": {
-        "title": "Strona dla psychoterapeutki w UK - pozycjonowanie i promocja książki | MSC Psychotherapy",
+        "title": "Strona dla psychologa - MSC Psychotherapy | Arteon",
         "description": "Strona dla psychologa. Pozycjonowanie lokalne, logo i marketing dla psychologa, promocja książki oraz przygotowanie sklepu. Sprawdź naszą realizację dla psychoterapeutki w UK",
-        "canonical": "https://www.arteonagency.pl/realizacje/msc-psychotherapy"
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-dla-psychologa-msc-psychotherapy"
       }
     },
 
     {
-      "slug": "katalog-restoquality",
-      "title": "Katalog produktów RestoQuality",
+      "slug": "katalog-produktów-restoquality",
+      "title": "Katalog produktów - RestoQuality",
       "short": "Utworzenie nowego wyglądu dla firmowego, promocyjnego katalogu z produktami",
       "description": "<p>Firma potrzebowała <strong>katalogu sprzedażowego</strong>, który jasno pokazuje kategorie i przewagi produktów. Zaprojektowaliśmy <strong>nowy układ</strong>, typografię i siatkę zdjęć.</p><p>Projekt powstał na podstawie <strong>wytycznych marki</strong> i aktualnej oferty. Zachowaliśmy ton komunikacji i kolory, dodając lepszą hierarchię treści.</p>",
       "image": "/assets/projects/gazetka-mockup.jpg",
-      "category": ["grafika"]
+      "category": ["grafika"],
+      "seo": {
+        "canonical": "https://www.arteonagency.pl/realizacje/katalog-produktów-restoquality"
+      }
     },
 
     {
-      "slug": "projekt-wizytowek-spa-talia",
+      "slug": "wizytowka-dla-spa-talia",
       "title": "Wizytówka dla SPA - TALIA",
       "short": "Profesjonalne wizytówki dla SPA. Pliki do druku.",
       "description": "<p>Projekt wizytówek dla SPA w stylu premium. Kompletny projekt graficzny, czytelny układ danych wraz z przygotowaniem plików wizytówek do druku. Motyw natury wspiera marki wellness i hotele SPA. Format 85x55 mm.</p></br><ul><li>Projektowanie wizytówek dla SPA i beauty</li><li>Pliki do druku: PDF, spady 3 mm</li><li>Format: 85×55 mm, wersja PNG do podglądu</li></ul>",
@@ -154,13 +157,13 @@
       "client": { "name": "TALIA SPA", "sector": "Wellness & SPA", "location": "UK" },
       "seo": {
         "title": "Projekt wizytówek dla SPA - TALIA | Arteon",
-        "description": "Profesjonalny projekt wizytówek dla SPA. Układ 85x55 mm, przygotowanie do druku (PDF/X, spady), wersje językowe. Przykład realizacji dla branży wellness.",
-        "canonical": "https://www.arteonagency.pl/realizacje/projekt-wizytowek-spa-talia"
+        "description": "Profesjonalny projekt wizytówek dla SPA. Przykład realizacji dla branży wellness.",
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-spa-talia"
       }
     },
 
     {
-      "slug": "pilka-nozna-pl",
+      "slug": "blog-sportowy-pilka-nozna-pl",
       "title": "PilkaNożna.pl - redesign EURO 2024",
       "short": "Odświeżenie bloga w nowym systemie z dedykowanym motywem.",
       "description": "<p>Redesign serwisu przed rozpoczęciem <strong>EURO 2024</strong>. Projekt polegał na zmianie systemy, wraz ze zmianą wyglądu, by redaktorzy mogli łatwiej tworzyć <strong>bogatsze wizualnie artykuły</strong>. Przygotowaliśmy pełną dokumentację dla zespołu redakcyjnego. Projekt był współtworzony z grupą programistów</p>",
@@ -174,12 +177,15 @@
       "image": "/assets/projects/arteon-baners-pilkanozna-pl.webp",
       "link": "https://pilkanozna.pl/",
       "category": ["blog"],
-      "stack": ["WordPress", "Gutenberg", "PHP", "Blade"]
+      "stack": ["WordPress", "Gutenberg", "PHP", "Blade"],
+      "seo": {
+        "canonical": "https://www.arteonagency.pl/realizacje/blog-sportowy-pilka-nozna-pl"
+      }
     },
 
     {
-      "slug": "trilllizo",
-      "title": "Sklep Trilllizo",
+      "slug": "sklep-dla-firmy-odziezowej-trilllizo",
+      "title": "Sklep dla firmy odzieżowej - Trilllizo",
       "short": "Sklep z wysokiej jakości odzieżą dla dzieci w dwóch wersjach językowych",
       "description": "<p>Marka odzieżowa przyszła z jasną inspiracją. Zadanie: oddać wygląd <strong>1:1</strong> i uruchomić sprzedaż przez własną platformę. Zbudowaliśmy sklep na <strong>WordPress + WooCommerce + Elementor Pro</strong>, skonfigurowaliśmy płatności i <strong>InPost</strong>. Serwis działa w dwóch wersjach: <strong>.pl</strong> i <strong>.com</strong>. Na koniec stworzyliśmy dedykowanie szkolenie PDF z obsługi i przekazaliśmy <strong>plan SEO</strong>.</p>",
       "task": "Instalacja i konfiguracja WordPressa, projekt i implementacja UI, integracje (płatności, InPost, newsletter), optymalizacja SEO ( techniczne, zdjęcia, treść ), lokalizacja, dokumentacja, opieka powdrożeniowa",
@@ -196,9 +202,9 @@
       "link": "https://trilllizo.com",
       "category": ["sklep"],
       "seo": {
-        "title": "Sklep WooCommerce z inspiracji | Case study Trilllizo",
+        "title": "Sklep dla firmy odziezowej - Trilllizo | Arteon",
         "description": "Pełne wdrożenie: motyw, integracje, wersje .pl/.com i szkolenie. Sklep gotowy na SEO.",
-        "canonical": "https://www.arteonagency.pl/realizacje/trilllizo"
+        "canonical": "https://www.arteonagency.pl/realizacje/sklep-dla-firmy-odziezowej-trilllizo"
       }
     },
 
@@ -228,12 +234,15 @@
     },
 
     {
-      "slug": "wizytowki-restoquality",
-      "title": "Wizytówki RestoQuality",
+      "slug": "wizytowki-dla-gastronomii-restoquality",
+      "title": "Wizytówki dla gastronomii - RestoQuality",
       "short": "Nowy szablon wizytówek w stylistyce marki.",
       "description": "<p>Projekt <strong>wizytówek</strong> spójnych z identyfikacją RestoQuality. Czysta typografia, proporcje i układ kontaktów. Materiały gotowe do druku.</p>",
       "image": "/assets/projects/resto-wiz.png",
-      "category": ["grafika"]
+      "category": ["grafika"],
+      "seo": {
+        "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-gastronomii-restoquality"
+      }
     },
 
     {
@@ -308,12 +317,15 @@
     },
 
     {
-      "slug": "cennik-salon-kosmetyczny",
+      "slug": "cennik-dla-salonu-kosmetycznego",
       "title": "Cennik dla salonu kosmetycznego",
       "short": "Cennik salonu w nowej, czytelnej formie.",
       "description": "<p>Projekt obejmował stworzenie atrakcyjnego, czytelnego <strong>cennika</strong> dla salonu Manufaktura Piękna w Skawinie. Zaprojektowaliśmy układ, typografię i sekcje. Materiał gotowy do druku i publikacji online.</p>",
       "image": "/assets/projects/cennik-mockup.png",
-      "category": ["grafika"]
+      "category": ["grafika"],
+      "seo": {
+        "canonical": "https://www.arteonagency.pl/realizacje/cennik-dla-salonu-kosmetycznego"
+      }
     },
 
     {
