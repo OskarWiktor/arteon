@@ -91,7 +91,7 @@ export default function OfferBlogPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl='https://www.arteonagency.pl/uslugi/blogi-internetowe'
+          pageUrl="https://www.arteonagency.pl/uslugi/blogi-internetowe"
           items={[
             { question: 'Ile trwa stworzenie bloga?', answer: 'Standardowo projekt zajmuje od 7 do 20 dni roboczych, w zależności od złożoności i dostępnych materiałów' },
             {

@@ -95,28 +95,47 @@ export default function OfferWebPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/grafika"
           items={[
             {
-              question: 'Jak długo trwa stworzenie strony?',
-              answer: 'Standardowo projekt zajmuje od 5 do 15 dni roboczych, w zależności od złożoności i dostępnych materiałów',
+              question: 'Ile kosztuje strona internetowa?',
+              answer:
+                'Cena strony internetowej zależy od tego co dokładnie ma się na niej znaleść. Patrzymy na: liczbę podstron, projekt graficzny witryny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje)',
             },
             {
-              question: 'Czy zajmujecie się również tworzeniem treści na stronę?',
-              answer: 'Tak, oferujemy usługę copywritingu oraz designu - możemy stworzyć od podstaw treści oraz grafiki lub dopracować Twoje materiały',
+              question: 'Jak długo trwa stworzenie strony internetowej?',
+              answer: 'Standardowo stworzenie strony internetowej zajmuje od 5 do 15 dni roboczych, w zależności od ilości podstron oraz wszelkich funkcjonalności',
             },
             {
-              question: 'Czy mogę później samodzielnie edytować treść strony?',
-              answer: 'Tak, gwarantujemy darmowe szkolenie z edycji, w formie PDF po zakończeniu projektu',
+              question: 'ile kosztuje roczne utrzymanie strony internetowej',
+              answer:
+                'Koszt utrzymania strony internetowej jest zależy między innymi od ceny domeny ( adresu URL strony ) oraz ceny hostingu ( wynajmowanego miejsca na serwerze ). Przeciętne utrzymanie strony internetowej zaczyna się od 300 zł rocznie',
             },
             {
-              question: 'Czy strona będzie widoczna w Google?',
+              question: 'Co powinna zawierać dobra strona internetowa?',
+              answer:
+                'Jasną ofertę, sekcje z korzyściami, dowody (realizacje, opinie), prosty kontakt oraz wygodną wersję na telefon. Dodatkowo: podstawy prawne (politykę prywatności, cookies, regulaminy), wysoką prędkość ładowania oraz optymalizację pod wyszukiwarki',
+            },
+            {
+              question: 'Czy zajmujecie się tworzeniem treści na strony internetowe?',
+              answer: 'Tak, możemy stworzyć od podstaw treści oraz grafiki lub dopracować Twoje materiały',
+            },
+            {
+              question: 'Czy mogę później samodzielnie edytować treść strony internetowej?',
+              answer: 'Tak, gwarantujemy darmowe szkolenie z edycji, w formie PDF po zakończeniu prac',
+            },
+            {
+              question: 'Czy strona internetowa będzie widoczna w Google?',
               answer: 'Tak, dbamy o optymalizację SEO: szybkość, mobilność, poprawne nagłówki i meta tagi. Pomagamy w całym procesie pozycjonowania witryny',
             },
             {
-              question: 'Czy mogę zgłosić poprawki po zrobieniu strony?',
-              answer: 'Tak, zapewniamy gwarancję, opiekę techniczną i możliwość rozwoju strony.',
+              question: 'Czy mogę zgłosić poprawki strony internetowej po jej stworzeniu?',
+              answer: 'Tak, jeśli cokolwiek na stronie internetowej będzie wadliwe, poprawimy to bez dodatkowych kosztów',
             },
             {
-              question: 'Nie znam się na technologii - czy mogę liczyć na pomoc?',
-              answer: 'Tak, prowadzimy cały proces w przystępny sposób i wyjaśniamy wszystkie elementy bez zbędnego żargonu',
+              question: 'Czy po publikacji pomagacie w rozwoju strony internetowe?',
+              answer: 'Tak, możemy przeanalizować Twoją branże i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą ilość klientów',
+            },
+            {
+              question: 'Nie znam się na technologii, czy mogę liczyć na pomoc?',
+              answer: 'Tak, uwielbiamy pomagać i edukować - prowadzimy cały proces w przystępny oraz transparentny sposób, objaśniając wszystkie kroku bez technologicznego żargonu',
             },
           ]}
         />
