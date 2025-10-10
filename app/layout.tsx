@@ -90,19 +90,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           `}
         </Script>
 
-        <Script
-          id="schema-org-organization"
-          type="application/ld+json"
-          strategy="afterInteractive"
-        >
+        <Script id="schema-org-organization" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(orgJsonLd)}
         </Script>
 
-        <Script
-          id="schema-org-website"
-          type="application/ld+json"
-          strategy="afterInteractive"
-        >
+        <Script id="schema-org-website" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(websiteJsonLd)}
         </Script>
       </head>

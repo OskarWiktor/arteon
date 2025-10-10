@@ -3,15 +3,27 @@ import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
-import ContentFeatures from '@/components/sections/features/ContentFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContentSteps from '@/components/sections/steps/ContentSteps';
-import { RiBarChart2Fill, RiBookOpenLine, RiCustomerService2Line, RiBrushLine } from 'react-icons/ri';
+import {
+  RiBarChart2Fill,
+  RiBookOpenLine,
+  RiCustomerService2Line,
+  RiBrushLine,
+  RiTeamLine,
+  RiArticleLine,
+  RiChatQuoteLine,
+  RiFileSearchLine,
+  RiPencilRuler2Line,
+  RiShareForwardLine,
+} from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
+import FeatureGrid from '@/components/sections/FeatureGrid';
+import { IoSparkles } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
@@ -57,7 +69,44 @@ export default function OfferContentPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <ContentFeatures />
+        <FeatureGrid
+          title="Co dostajesz"
+          subtitle="Nasz standard pracy"
+          items={[
+            {
+              title: 'Treści pod SEO - widoczność w Google',
+              icon: <RiFileSearchLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Redakcja treści sprzedażowych i marketingowych',
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Język marki - spójny ton komunikacji',
+              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Treści budujący emocje i transformację klienta',
+              icon: <IoSparkles className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Artykuły i wpisy eksperckie na bloga',
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Scenariusze do rolek i social mediów',
+              icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Opisy produktów wspierające SEO',
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Treści dopasowane do archetypu i wartości marki',
+              icon: <RiTeamLine className="h-6 w-6 text-slate-500" />,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

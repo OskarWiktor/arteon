@@ -6,14 +6,27 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
-import BlogFeatures from '@/components/sections/features/BlogFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import BlogPrices from '@/components/sections/prices/BlogPrices';
-import { RiArticleLine, RiSearchLine, RiShieldCheckLine, RiCustomerService2Line } from 'react-icons/ri';
+import {
+  RiArticleLine,
+  RiSearchLine,
+  RiShieldCheckLine,
+  RiCustomerService2Line,
+  RiBarChart2Line,
+  RiBookOpenLine,
+  RiDatabase2Line,
+  RiDeviceLine,
+  RiPencilRuler2Line,
+  RiShareForwardLine,
+} from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
+import FeatureGrid from '@/components/sections/FeatureGrid';
+import { GoLaw } from 'react-icons/go';
+import { IoAccessibility } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
@@ -60,7 +73,44 @@ export default function OfferBlogPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <BlogFeatures />
+        <FeatureGrid
+          title="Co dostajesz"
+          subtitle="Nasz standard pracy"
+          items={[
+            {
+              title: 'Indywidualny projekt graficzny bloga',
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Deklaracja Dostępności (WCAG 2.1 AA)',
+              icon: <IoAccessibility className="h-5 w-5 text-slate-500" />,
+            },
+            {
+              title: 'Wsparcie prawne: polityka prywatności, regulaminy',
+              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pełna Responsywność i komfort czytania',
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Łatwe zarządzanie wpisami i kategoriami (CMS)',
+              icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Optymalizacja techniczna SEO',
+              icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Integracja z social mediami i newsletterem',
+              icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Darmowe, dedykowane szkolenie PDF z obsługi',
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

@@ -4,15 +4,16 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import DesignFeatures from '@/components/sections/features/DesignFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import DesignSteps from '@/components/sections/steps/DesignSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiImageLine, RiPaletteLine, RiShoppingBag3Line, RiStackLine, RiVideoLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
+import FeatureGrid from '@/components/sections/FeatureGrid';
+import { IoColorPalette } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
@@ -61,7 +62,44 @@ export default function OfferDesignPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <DesignFeatures />
+        <FeatureGrid
+          title="Co dostajesz"
+          subtitle="Nasz standard pracy"
+          items={[
+            {
+              title: 'Projekt logo dopasowany do archetypu marki',
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pełny branding: palety kolorów, typografie, style',
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Spójne szablony do social mediów',
+              icon: <RiStackLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Profesjonalna obróbka zdjęć i grafik pod www',
+              icon: <RiImageLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Materiały video i rolki promocyjne',
+              icon: <RiVideoLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Design materiałów drukowanych (wizytówki, ulotki, banery)',
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Grafiki na ubrania i gadżety firmowe',
+              icon: <RiShoppingBag3Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Nowoczesne makiety stron w Figmie',
+              icon: <RiPaletteLine className="h-6 w-6 text-slate-500" />,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

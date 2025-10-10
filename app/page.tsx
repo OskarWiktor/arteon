@@ -1,6 +1,6 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
-import ArteonFeatures from '@/components/sections/features/ArteonFeatures';
+import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
@@ -9,7 +9,10 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
+import { GoLaw } from 'react-icons/go';
+import { IoAccessibility } from 'react-icons/io5';
+import { MdSupportAgent } from 'react-icons/md';
+import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine, RiDatabase2Line } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
@@ -18,7 +21,7 @@ export const metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
-  description: 'Projekt i wdrożenie stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google od startu. Gwarancja i jasne zasady.',
+    description: 'Projekt i wdrożenie stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google od startu. Gwarancja i jasne zasady.',
     url: 'https://www.arteonagency.pl/',
     type: 'website',
   },
@@ -53,7 +56,44 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <ArteonFeatures />
+        <FeatureGrid
+          title="Co dostajesz"
+          subtitle="Nasz standard pracy"
+          items={[
+            {
+              title: 'Treści dopasowane do marki',
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Projekt graficzny spójny online i offline',
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Responsywność i dostępność (WCAG 2.1 AA)',
+              icon: <IoAccessibility className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Wsparcie prawne - polityki, regulaminy',
+              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Strategie marketingowe oparte na emocjach',
+              icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Łatwe zarządzanie treściami i produktami',
+              icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dedykowane szkolenia i instrukcje',
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Stałe wsparcie po wdrożeniu',
+              icon: <MdSupportAgent className="h-6 w-6 text-slate-500" />,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

@@ -1,9 +1,8 @@
-import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
+import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill, RiArticleLine, RiBookOpenLine, RiDatabase2Line, RiDeviceLine, RiPencilRuler2Line } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
-import WebFeatures from '@/components/sections/features/WebFeatures';
 import WebPrices from '@/components/sections/prices/WebPrices';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
@@ -14,6 +13,9 @@ import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
+import FeatureGrid from '@/components/sections/FeatureGrid';
+import { GoLaw } from 'react-icons/go';
+import { IoAccessibility } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Strony internetowe - projekt i wdrożenie | Arteon',
@@ -61,7 +63,44 @@ export default function OfferWebPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <WebFeatures />
+        <FeatureGrid
+          title="Co dostajesz"
+          subtitle="Nasz standard pracy"
+          items={[
+            {
+              title: 'Indywidualny projekt graficzny',
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Redakcja treści dla lepszej konwersji i SEO',
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Deklaracja Dostępności (WCAG 2.1 AA)',
+              icon: <IoAccessibility className="h-5 w-5 text-slate-500" />,
+            },
+            {
+              title: 'Wsparcie prawne: polityki i regulaminy',
+              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Bezpieczeństwo i certyfikaty SSL',
+              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pełna Responsywność na różnych urządzeniach',
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Łatwe zarządzanie treścią (CMS)',
+              icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Darmowe, dedykowane szkolenie PDF z obsługi',
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 
@@ -95,9 +134,9 @@ export default function OfferWebPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe"
           items={[
             {
-              question: 'Ile kosztuje strona internetowa?',
+              question: 'Ile kosztuje stworzenie strony internetowej?',
               answer:
-                'Cena strony internetowej zależy od tego co dokładnie ma się na niej znaleść. Patrzymy na: liczbę podstron, projekt graficzny witryny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje)',
+                'Cena strony internetowej zależy od tego co dokładnie ma się na niej znaleść. Patrzymy na: liczbę podstron, projekt graficzny witryny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje). Koszt stworzenia prostej, jednostronicowej strony zaczyna się od 1600 zł brutto',
             },
             {
               question: 'Jak długo trwa stworzenie strony internetowej?',

@@ -90,7 +90,7 @@ export default function Footer() {
           <div className="flex w-full flex-row items-center justify-between gap-4 md:flex-col md:items-start md:justify-start">
             <div aria-label="Informacja o współpracy międzynarodowej">
               <p className="text-[#080808]">
-                <strong className='text-base font-semibold'>Realizujemy projekty na całym świecie dla polskich firm i osób prywatnych</strong>
+                <strong className="text-base font-semibold">Realizujemy projekty na całym świecie dla polskich firm i osób prywatnych</strong>
               </p>
             </div>
           </div>

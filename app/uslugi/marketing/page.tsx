@@ -4,14 +4,26 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import MarketingFeatures from '@/components/sections/features/MarketingFeatures';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import MarketingSteps from '@/components/sections/steps/MarketingSteps';
-import { RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine } from 'react-icons/ri';
+import {
+  RiAdvertisementLine,
+  RiBarChart2Fill,
+  RiBarChart2Line,
+  RiCustomerService2Line,
+  RiLightbulbFlashLine,
+  RiLightbulbLine,
+  RiLineChartLine,
+  RiRocketLine,
+  RiSearchEyeLine,
+  RiShieldCheckLine,
+} from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
+import FeatureGrid from '@/components/sections/FeatureGrid';
+import { IoAnalytics } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Marketing internetowy - reklamy i widoczność w Google | Arteon',
@@ -58,7 +70,40 @@ export default function OfferMarketingPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <MarketingFeatures />
+        <FeatureGrid
+          title="Co dostajesz"
+          subtitle="Nasz standard pracy"
+          items={[
+            {
+              title: 'Kompleksowe SEO strony, sklepu i bloga',
+              icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Reklamy Google, Facebook i Instagram',
+              icon: <RiAdvertisementLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Audyty techniczne, prawne i WCAG 2.1 AA',
+              icon: <RiSearchEyeLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Analiza konkurencji',
+              icon: <IoAnalytics className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Automatyzacja prowadzenia social mediów',
+              icon: <RiRocketLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Branding budujący emocje i transformację klienta',
+              icon: <RiLightbulbLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Oferty sprzedażowe według schematu Why → How → What',
+              icon: <RiLineChartLine className="h-6 w-6 text-slate-500" />,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 
