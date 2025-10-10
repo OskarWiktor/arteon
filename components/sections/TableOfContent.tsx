@@ -74,7 +74,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
         return (
           <li key={i.id} className={i.level === 3 ? 'border-l border-black/10 pl-3' : ''}>
             <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`flex items-center gap-1 rounded-xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
-              <span className="line-clamp-1">{i.text}</span>
+              <span className="line-clamp-1 text-[15px]">{i.text}</span>
             </a>
           </li>
         );

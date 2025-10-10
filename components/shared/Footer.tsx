@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
       <Wrapper>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <nav aria-label="Usługi" className="md:col-span-1">
             <ul className="flex flex-col gap-2 text-sm">
               {offerLinks.map(({ href, title }) => (

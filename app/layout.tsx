@@ -15,8 +15,6 @@ import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import RevealObserver from '@/components/systems/RevealObserver';
 
 export const metadata: Metadata = {
-  title: 'Arteon',
-  description: 'Arteon',
   icons: { icon: '/favicon.ico', shortcut: '/favicon.ico', apple: '/apple-touch-icon.png' },
 };
 
