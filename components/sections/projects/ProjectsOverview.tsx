@@ -124,7 +124,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
   const carouselLabel = 'Karuzela projektów';
 
   const navBtn =
-    'group absolute top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-2 text-white shadow-xl backdrop-blur-sm ' +
+    'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-1 md:p-2 text-white shadow-xl backdrop-blur-sm ' +
     'transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none ' +
     'focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
 
@@ -155,11 +155,11 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
 
         {isScrollable && (
           <>
-            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2`} aria-label="Przewiń w lewo">
+            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2 max-w-13 max-h-13`} aria-label="Przewiń w lewo">
               <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
             </button>
 
-            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2`} aria-label="Przewiń w prawo">
+            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2 max-w-13 max-h-13`} aria-label="Przewiń w prawo">
               <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
             </button>
           </>
@@ -167,18 +167,18 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
       </div>
 
       {isScrollable && maxSlides > 1 && (
-        <div className="flex justify-center gap-2" role="group" aria-label="Nawigacja karuzeli">
+        <div className="flex justify-center md:gap-2" role="group" aria-label="Nawigacja karuzeli">
           {Array.from({ length: maxSlides }).map((_, i) => (
             <button
               key={i}
               onClick={() => scrollRef.current?.scrollTo({ left: i * cardWidth, behavior: 'smooth' })}
               aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
               aria-current={i === currentSlide ? 'true' : undefined}
-              className="h-6 w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="h-5 md:h-6 w-5 md:w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <span
                 aria-hidden="true"
-                className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+                className={`mx-auto block h-2 md:h-3 w-2 md:w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
               />
             </button>
           ))}
