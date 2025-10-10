@@ -11,6 +11,7 @@ import MarketingSteps from '@/components/sections/steps/MarketingSteps';
 import { RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata = {
   title: 'Marketing internetowy - reklamy i widoczność w Google | Arteon',
@@ -51,6 +52,8 @@ export default function OfferMarketingPage() {
           { icon: <RiShieldCheckLine />, label: 'Bezpieczeństwo danych' },
         ]}
       />
+
+      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/marketing`, label: 'Marketing' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

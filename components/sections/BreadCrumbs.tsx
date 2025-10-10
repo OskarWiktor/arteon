@@ -40,21 +40,25 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
   return (
     <Wrapper>
       <nav aria-label="okruszki" className={`py-6 ${className}`}>
-        <ol className="flex flex-wrap gap-1 text-sm md:gap-2">
+        <ol className="flex flex-wrap gap-1 md:gap-2">
           {items.map((it, idx) => {
             const isLast = idx === lastIndex;
             return (
-              <li key={`${it.href}-${idx}`} className="flex items-center gap-1 md:gap-2">
+              <li key={`${it.href}-${idx}`} className="flex items-center gap-1 text-sm md:gap-2">
                 {isLast ? (
-                  <span aria-current="page" className="opacity-70">
+                  <span aria-current="page" className="text-sm opacity-70">
                     {it.label}
                   </span>
                 ) : (
-                  <a href={it.href} className="underline underline-offset-4 hover:no-underline">
+                  <a href={it.href} className="text-sm underline underline-offset-4 hover:no-underline">
                     {it.label}
                   </a>
                 )}
-                {!isLast && <span aria-hidden="true">/</span>}
+                {!isLast && (
+                  <span className="text-sm" aria-hidden="true">
+                    /
+                  </span>
+                )}
               </li>
             );
           })}

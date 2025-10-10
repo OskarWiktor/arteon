@@ -11,6 +11,7 @@ import { RiBarChart2Fill, RiBookOpenLine, RiCustomerService2Line, RiBrushLine } 
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
@@ -50,6 +51,8 @@ export default function OfferContentPage() {
           { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
         ]}
       />
+
+      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/tworzenie-tresci`, label: 'Tworzenie treści' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

@@ -13,6 +13,7 @@ import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata = {
   title: 'Strony internetowe - projekt i wdrożenie | Arteon',
@@ -54,6 +55,8 @@ export default function OfferWebPage() {
           { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
         ]}
       />
+
+      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/strony-internetowe`, label: 'Strony internetowe' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

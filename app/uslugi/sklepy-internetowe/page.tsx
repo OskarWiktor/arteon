@@ -13,6 +13,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiShieldCheckLine, RiBarChart2Fill, RiCustomerService2Line, RiSpeedFill } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
@@ -55,6 +56,8 @@ export default function OfferWebPage() {
           { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
         ]}
       />
+
+      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/sklepy-internetowe`, label: 'Sklepy internetowe' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

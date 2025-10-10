@@ -12,8 +12,8 @@ export default function FeatureCard({ title, points, icon }: FeatureCardProps) {
     .replace(/[^a-z0-9]+/gi, '-')}`;
 
   return (
-    <article aria-labelledby={id} className="rounded-xl bg-white px-5 py-3 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md md:px-6 md:py-4">
-      <header className="flex items-center gap-2">
+    <div aria-labelledby={id} className="rounded-xl bg-white px-5 py-3 shadow-sm transition hover:translate-y-[-2px] hover:shadow-md md:px-6 md:py-4">
+      <div className="flex items-center gap-2">
         {icon ? (
           <span aria-hidden="true" className="inline-flex items-center justify-center">
             {icon}
@@ -25,7 +25,7 @@ export default function FeatureCard({ title, points, icon }: FeatureCardProps) {
         <p id={id} role="heading" aria-level={3} className="font-medium">
           {title}
         </p>
-      </header>
+      </div>
 
       {Array.isArray(points) && points.length > 0 && (
         <ul className="mt-2 space-y-2">
@@ -36,6 +36,6 @@ export default function FeatureCard({ title, points, icon }: FeatureCardProps) {
           ))}
         </ul>
       )}
-    </article>
+    </div>
   );
 }

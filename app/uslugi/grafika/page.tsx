@@ -12,6 +12,7 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine 
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata = {
   title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
@@ -54,6 +55,8 @@ export default function OfferDesignPage() {
           { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
         ]}
       />
+
+      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/grafika`, label: 'Grafika' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

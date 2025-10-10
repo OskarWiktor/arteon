@@ -22,7 +22,7 @@ const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 const projectUrl = (slug: string) => `${siteUrl}/realizacje/${slug}`;
 
-// -------- JSON-LD builders --------
+/* ---------- JSON-LD builders ---------- */
 function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;
@@ -59,7 +59,7 @@ function faqJsonLd(items: { question: string; answer: string }[], url: string) {
   } as const;
 }
 
-// -------- small helpers --------
+/* ---------- small helpers ---------- */
 const Inline = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
 const Block = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
@@ -74,46 +74,86 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
   );
 }
 
-// -------- Rich Content renderer --------
-function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1'; children: React.ReactNode }) {
+/* ---------- Rich Content renderer ---------- */
+function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
+  if (ratio === 'auto') {
+    // Full width, natural height (np. pod A4)
+    return <div className="relative overflow-hidden rounded-2xl border border-black/10">{children}</div>;
+  }
+
   const map: Record<string, string> = {
     '16/9': 'aspect-[16/9]',
     '4/3': 'aspect-[4/3]',
     '1/1': 'aspect-square',
   };
-  return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio]}`}>{children}</div>;
+
+  return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
 function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
   if (!blocks?.length) return null;
+
   return (
     <>
-      {blocks.map((b, i) => {
+      {blocks.map((b: any, i: number) => {
         if (b.type === 'richtext') {
-          return <div dangerouslySetInnerHTML={{ __html: b.html }} />;
+          return <div key={`rt-${i}`} dangerouslySetInnerHTML={{ __html: b.html }} />;
         }
+
         if (b.type === 'image') {
+          const isAuto = b.ratio === 'auto';
           return (
-            <div key={i}>
-              <Gap size="xs" />{' '}
+            <div key={`img-${i}`}>
+              <Gap size="xs" />
               <figure>
-                <Aspect ratio={b.ratio || '16/9'}>
-                  <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" />
-                </Aspect>
+                {isAuto ? (
+                  <div className="overflow-hidden rounded-2xl border border-black/10">
+                    <Image
+                      src={b.src}
+                      alt={b.alt}
+                      // naturalna wysokość + pełna szerokość
+                      width={(b as any).width ?? 2000}
+                      height={(b as any).height ?? 2800}
+                      sizes="100vw"
+                      style={{ width: '100%', height: 'auto' }}
+                      priority={(b as any).priority ?? false}
+                      quality={(b as any).quality ?? 90}
+                    />
+                  </div>
+                ) : (
+                  <Aspect ratio={b.ratio || '16/9'}>
+                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={(b as any).quality ?? 90} />
+                  </Aspect>
+                )}
                 {b.caption && <figcaption className="mt-2 text-sm text-[#5e5e5e]">{b.caption}</figcaption>}
               </figure>
             </div>
           );
         }
+
         if (b.type === 'imageText') {
-          const Img = (
-            <Aspect key={i} ratio="4/3">
-              <Image  src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
-            </Aspect>
-          );
+          const Img =
+            b.ratio === 'auto' ? (
+              <div className="overflow-hidden rounded-2xl border border-black/10">
+                <Image
+                  src={b.src}
+                  alt={b.alt}
+                  width={(b as any).width ?? 2000}
+                  height={(b as any).height ?? 2800}
+                  sizes="(min-width:768px) 50vw, 100vw"
+                  style={{ width: '100%', height: 'auto' }}
+                  priority={(b as any).priority ?? false}
+                  quality={(b as any).quality ?? 90}
+                />
+              </div>
+            ) : (
+              <Aspect ratio={b.ratio || '4/3'}>
+                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" quality={(b as any).quality ?? 90} />
+              </Aspect>
+            );
 
           return (
-            <div key={i}>
+            <div key={`imgt-${i}`}>
               <Gap size="xs" />
               <div className="grid items-start gap-6 md:grid-cols-2">
                 {b.imageSide === 'right' ? (
@@ -131,13 +171,14 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
             </div>
           );
         }
+
         return null;
       })}
     </>
   );
 }
 
-// -------- Next metadata --------
+/* ---------- Next metadata ---------- */
 export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
@@ -147,6 +188,7 @@ type PageProps = { params: { slug: string } };
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const project = getProject(params.slug);
   if (!project) return {};
+
   const title = project.seo?.title || `${project.title} - Case study`;
   const description = project.seo?.description || '';
   const url = projectUrl(project.slug);
@@ -167,7 +209,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-// -------- Page --------
+/* ---------- Page ---------- */
 export default function ProjectPage({ params }: PageProps) {
   const project = getProject(params.slug);
   if (!project) return notFound();
@@ -240,7 +282,7 @@ export default function ProjectPage({ params }: PageProps) {
                 <ul className="grid gap-3 md:grid-cols-2">
                   {project.process_steps.map((step, i) => (
                     <li key={i} className="rounded-xl bg-white p-3 shadow-md">
-                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border-1 border-[#5e5e5e] text-xs font-bold text-[#5e5e5e]">{i + 1}</span>
+                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#5e5e5e] text-xs font-bold text-[#5e5e5e]">{i + 1}</span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
                     </li>
                   ))}
@@ -262,16 +304,16 @@ export default function ProjectPage({ params }: PageProps) {
           {project.beforeAfter && (project.beforeAfter.beforeImage || project.beforeAfter.afterImage) ? (
             <>
               <SectionInfo title="Jak było - jak jest">
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-6">
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" />
                     </div>
-                    <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Przed</figcaption>
+                    <figcaption className="mt-2 text-sm text-[#5e5e5e]">Przed</figcaption>
                   </figure>
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" />
                     </div>
                     <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Po</figcaption>
                   </figure>
@@ -320,7 +362,6 @@ export default function ProjectPage({ params }: PageProps) {
           {project.faq?.length ? (
             <>
               <Gap size="sm" />
-
               <FaqPanels title="FAQ" subtitle="Najczęstsze pytania" items={project.faq} />
               <script
                 type="application/ld+json"

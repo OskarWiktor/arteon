@@ -23,7 +23,7 @@ export default function AboutPage() {
       <HeroBaner
         title="O nas"
         subtitle="Arteon - Elastyczny partner"
-        description="Budujemy strony i komunikację, które sprzedają - z naciskiem na czytelność, szybkość i realny efekt biznesowy."
+        description="Budujemy strony i komunikację - z naciskiem na czytelność i efekt twst dasdw dz ad"
         backgroundImage="/assets/bg/abstract-bg8.webp"
         overlay="black"
       />

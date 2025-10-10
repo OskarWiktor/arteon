@@ -13,6 +13,7 @@ import BlogPrices from '@/components/sections/prices/BlogPrices';
 import { RiArticleLine, RiSearchLine, RiShieldCheckLine, RiCustomerService2Line } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
@@ -54,6 +55,7 @@ export default function OfferBlogPage() {
           { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
         ]}
       />
+      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/blogi-internetowe`, label: 'Blogi internetowe' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

@@ -1,6 +1,92 @@
 {
   "projects": [
     {
+      "slug": "teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova",
+      "title": "Teczka ofertowa dla kancelarii - LUX NOVA",
+      "short": "Projekt teczki ofertowej dla kancelarii adwokackiej - elegancja, porządek i prestiż w jednym.",
+      "description": "<p>Projekt koncepcyjny teczki ofertowej dla kancelarii adwokackiej <strong>LUX NOVA</strong>. Celem było stworzenie spójnego elementu identyfikacji wizualnej, który wzmacnia wizerunek kancelarii jako marki nowoczesnej i godnej zaufania. Teczka jest uzupełnieniem zestawu firmowych materiałów drukowanych - wizytówek i papieru firmowego.</p>",
+      "image": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
+      "category": ["grafika"],
+      "client": { "name": "LUX NOVA", "sector": "Prawo" },
+      "stack": ["Adobe Illustrator", "Mockup 3D"],
+      "deliverables": [
+        "Projekt teczki ofertowej w wariancie zewnętrznym i wewnętrznym",
+        "Zastosowanie sygnetu gryfa jako motywu przewodniego",
+        "Ustalenie proporcji kolorów: bordo i beż jako synonimy autorytetu i zaufania",
+        "Układ danych kontaktowych z kodem QR prowadzącym na stronę kancelarii"
+      ],
+      "task": "Zaprojektować elegancką teczkę ofertową dla kancelarii adwokackiej - czytelną, reprezentacyjną i spójną z istniejącym systemem identyfikacji wizualnej.",
+      "outcomes": [
+        { "value": "Spójność", "label": "Identyfikacja", "note": "Wszystkie materiały firmowe utrzymane w jednej stylistyce" },
+        { "value": "Prestiż", "label": "Kolorystyka", "note": "Połączenie bordo i beżu wzmacnia wrażenie stabilności" },
+        { "value": "Profesjonalizm", "label": "Układ", "note": "Dane rozmieszczone w harmonijnych proporcjach" }
+      ],
+      "process_steps": [
+        "Analiza istniejącej identyfikacji kancelarii (logo, wizytówka, kolory, typografia)",
+        "Stworzenie moodboardu dla projektu teczki ofertowej",
+        "Opracowanie zewnętrznej i wewnętrznej kompozycji teczki",
+        "Przygotowanie wersji do druku i prezentacji 3D"
+      ],
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt teczki ofertowej?",
+          "answer": "Projekt teczki ofertowej kosztuje od 250 do 450 zł brutto, w zależności od stopnia personalizacji i przygotowania do druku."
+        },
+        {
+          "question": "Jak długo trwa realizacja projektu?",
+          "answer": "Projekt wraz z wizualizacją i plikami do druku realizujemy w ciągu 2-4 dni roboczych."
+        },
+        {
+          "question": "Czy przygotowujecie projekty teczek ofertowych dla innych branż?",
+          "answer": "Tak, projektujemy teczki ofertowe dla kancelarii, biur, deweloperów, gabinetów medycznych i innych firm, dopasowując styl do charakteru branży."
+        },
+        {
+          "question": "Czy mogę zamówić zestaw: teczka + wizytówka + papier firmowy?",
+          "answer": "Tak, oferujemy komplet materiałów firmowych w spójnej identyfikacji graficznej. W pakiecie cena jest niższa."
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<h5 class='h3 reveal-animation'>Paleta i typografia</h5><p class='pt-3'>Projekt utrzymany jest w kolorystyce <strong>bordo i beżu</strong> - symbolizujących stabilność, doświadczenie i klasę. Typografia łączy nowoczesność z tradycją: elegancki <em>Beaufort Pro</em> z geometrycznym <em>Neue Haas Grotesk Display Pro</em>. Taki zestaw podkreśla profesjonalizm i wysoką kulturę komunikacji marki prawniczej.</p>"
+        },
+        {
+          "type": "imageText",
+          "src": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
+          "alt": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - projekt koncepcyjny",
+          "imageSide": "left",
+          "html": "<h5 class='h3 reveal-animation'>Projekt teczki ofertowej dla kancelarii adwokackiej</h5><p class='pt-3'>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy elegancką formę, która idealnie reprezentuje kancelarię podczas spotkań i przekazywania dokumentów.</p>"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-przod.jpg",
+          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (front)",
+          "caption": "Front teczki ofertowej - sygnet gryfa i logo kancelarii",
+          "ratio": "auto"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-lewa-strona.jpg",
+          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, lewa strona)",
+          "caption": "Wnętrze teczki - jednolita kolorystyka i spójny układ",
+          "ratio": "auto"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-prawa-strona.jpg",
+          "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, prawa strona)",
+          "caption": "Wnętrze teczki z danymi kontaktowymi i kodem QR",
+          "ratio": "auto"
+        }
+      ],
+      "seo": {
+        "title": "Teczka ofertowa dla kancelarii adwokackiej - LUX NOVA | Arteon",
+        "description": "Projekt teczki ofertowej dla kancelarii adwokackiej. Elegancki, spójny design w kolorach bordo i beżu. Zobacz, jak wygląda profesjonalny projekt teczki ofertowej dla adwokata.",
+        "canonical": "https://www.arteonagency.pl/realizacje/teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova"
+      }
+    },
+
+    {
       "slug": "wizytowka-dla-kancelarii-adwokackiej-lux-nova",
       "title": "Wizytówka dla kancelarii - LUX NOVA",
       "short": "Projekt wizytówki dla kancelarii adwokackiej",
@@ -136,14 +222,14 @@
     },
 
     {
-      "slug": "katalog-produktów-restoquality",
+      "slug": "katalog-produktow-restoquality",
       "title": "Katalog produktów - RestoQuality",
       "short": "Utworzenie nowego wyglądu dla firmowego, promocyjnego katalogu z produktami",
       "description": "<p>Firma potrzebowała <strong>katalogu sprzedażowego</strong>, który jasno pokazuje kategorie i przewagi produktów. Zaprojektowaliśmy <strong>nowy układ</strong>, typografię i siatkę zdjęć.</p><p>Projekt powstał na podstawie <strong>wytycznych marki</strong> i aktualnej oferty. Zachowaliśmy ton komunikacji i kolory, dodając lepszą hierarchię treści.</p>",
       "image": "/assets/projects/gazetka-mockup.jpg",
       "category": ["grafika"],
       "seo": {
-        "canonical": "https://www.arteonagency.pl/realizacje/katalog-produktów-restoquality"
+        "canonical": "https://www.arteonagency.pl/realizacje/katalog-produktow-restoquality"
       }
     },
 
