@@ -1,4 +1,3 @@
-// app/layout.tsx
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Suspense } from 'react';
@@ -23,6 +22,50 @@ export const metadata: Metadata = {
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
+// —————————————————————————————————————————————
+// SCHEMA.ORG — dane globalne (1x na cały serwis)
+// —————————————————————————————————————————————
+const SITE_URL = 'https://www.arteonagency.pl';
+const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
+
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Arteon',
+  url: SITE_URL,
+  logo: ORG_LOGO,
+  // Dodaj tylko realne profile — jeśli nie masz, pole pomiń
+  // sameAs: [
+  //   'https://www.facebook.com/…',
+  //   'https://www.instagram.com/…',
+  //   'https://www.linkedin.com/company/…'
+  // ],
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: 'contact@arteonagency.com',
+      availableLanguage: ['pl'],
+    },
+  ],
+  address: { '@type': 'PostalAddress', addressCountry: 'PL' },
+  areaServed: ['PL', 'EU', 'UK', 'USA'],
+  inLanguage: ['pl'],
+};
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Arteon',
+  url: SITE_URL,
+  inLanguage: 'pl',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE_URL}/szukaj?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
@@ -45,6 +88,22 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               ad_storage:'denied'
             });
           `}
+        </Script>
+
+        <Script
+          id="schema-org-organization"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify(orgJsonLd)}
+        </Script>
+
+        <Script
+          id="schema-org-website"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify(websiteJsonLd)}
         </Script>
       </head>
 
