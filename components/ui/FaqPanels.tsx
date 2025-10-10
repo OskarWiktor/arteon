@@ -75,9 +75,9 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
   return (
     <section aria-labelledby="faq-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="faq-heading" className="reveal-animation mb-2">
+      <h3 id="faq-heading" className="reveal-animation h2 mb-2">
         {title}
-      </h2>
+      </h3>
 
       {items.map((item, index) => {
         const isOpen = index === activeIndex;
@@ -110,7 +110,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
               aria-expanded={isOpen}
               aria-controls={panelId}
             >
-              <span className="h6">{item.question}</span>
+              <h4 className="h6">{item.question}</h4>
               <span className="ml-2" aria-hidden="true">
                 {isOpen ? <FiMinus /> : <FiPlus />}
               </span>
