@@ -92,7 +92,7 @@ export default function OfferWebPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/grafika"
+          pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe"
           items={[
             {
               question: 'Ile kosztuje strona internetowa?',
