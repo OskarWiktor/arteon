@@ -1,5 +1,4 @@
 import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill } from 'react-icons/ri';
-import FaqWebsite from '@/components/sections/faqs/FaqWebsite';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
@@ -14,6 +13,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
+import FaqPanels from '@/components/ui/FaqPanels';
 
 export const metadata = {
   title: 'Strony internetowe - projekt i wdrożenie | Arteon',
@@ -91,7 +91,35 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <FaqWebsite />
+        <FaqPanels
+          pageUrl="https://www.arteonagency.pl/uslugi/grafika"
+          items={[
+            {
+              question: 'Jak długo trwa stworzenie strony?',
+              answer: 'Standardowo projekt zajmuje od 5 do 15 dni roboczych, w zależności od złożoności i dostępnych materiałów',
+            },
+            {
+              question: 'Czy zajmujecie się również tworzeniem treści na stronę?',
+              answer: 'Tak, oferujemy usługę copywritingu oraz designu - możemy stworzyć od podstaw treści oraz grafiki lub dopracować Twoje materiały',
+            },
+            {
+              question: 'Czy mogę później samodzielnie edytować treść strony?',
+              answer: 'Tak, gwarantujemy darmowe szkolenie z edycji, w formie PDF po zakończeniu projektu',
+            },
+            {
+              question: 'Czy strona będzie widoczna w Google?',
+              answer: 'Tak, dbamy o optymalizację SEO: szybkość, mobilność, poprawne nagłówki i meta tagi. Pomagamy w całym procesie pozycjonowania witryny',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki po zrobieniu strony?',
+              answer: 'Tak, zapewniamy gwarancję, opiekę techniczną i możliwość rozwoju strony.',
+            },
+            {
+              question: 'Nie znam się na technologii - czy mogę liczyć na pomoc?',
+              answer: 'Tak, prowadzimy cały proces w przystępny sposób i wyjaśniamy wszystkie elementy bez zbędnego żargonu',
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

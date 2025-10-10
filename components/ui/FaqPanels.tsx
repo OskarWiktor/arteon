@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useId, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 
@@ -11,13 +11,18 @@ interface FaqPanelsItem {
 
 interface FaqPanelsProps {
   items: FaqPanelsItem[];
-  title: string;
+  title?: string;
   subtitle?: string;
+  generateSchema?: boolean;
+  pageUrl?: string;
 }
 
-export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
+export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle = 'FAQ', generateSchema = true, pageUrl }: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
+
+  const scriptId = useId();
 
   const toggle = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index));
@@ -46,8 +51,6 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
         e.preventDefault();
         btnRefs.current[max]?.focus();
         break;
-      default:
-        break;
     }
   };
 
@@ -55,10 +58,24 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
     btnRefs.current = btnRefs.current.slice(0, items.length);
   }, [items.length]);
 
+  const faqJsonLd = useMemo(() => {
+    if (!generateSchema || !items?.length) return null;
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      ...(pageUrl ? { mainEntityOfPage: pageUrl } : {}),
+      mainEntity: items.map((it) => ({
+        '@type': 'Question',
+        name: it.question,
+        acceptedAnswer: { '@type': 'Answer', text: it.answer },
+      })),
+    };
+  }, [generateSchema, items, pageUrl]);
+
   return (
     <section aria-labelledby="faq-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="faq-heading reveal-animation" className="mb-2">
+      <h2 id="faq-heading" className="reveal-animation mb-2">
         {title}
       </h2>
 
@@ -80,6 +97,9 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
             <button
               id={buttonId}
               type="button"
+              ref={(el: HTMLButtonElement | null): void => {
+                btnRefs.current[index] = el;
+              }}
               onClick={() => toggle(index)}
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
@@ -115,6 +135,8 @@ export default function FaqPanels({ items, title, subtitle }: FaqPanelsProps) {
           </div>
         );
       })}
+
+      {faqJsonLd && <script id={`faq-jsonld-${scriptId}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
     </section>
   );
 }

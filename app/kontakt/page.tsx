@@ -11,7 +11,7 @@ export const metadata = {
   keywords: ['wycena strony', 'wycena sklepu', 'kontakt agencja', 'projekt graficzny', 'kampanie online'],
   alternates: { canonical: '/kontakt' },
   openGraph: {
-    title: 'Porozmawiajmy o Twoim projekcie - Arteon',
+    title: 'Porozmawiajmy o Twoim projekcie | Arteon',
     description: 'Szybka wycena i jasny plan. Transparentne zasady i gwarancja.',
     url: 'https://www.arteonagency.pl/kontakt',
     type: 'website',

@@ -362,7 +362,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.faq?.length ? (
             <>
               <Gap size="sm" />
-              <FaqPanels title="FAQ" subtitle="Najczęstsze pytania" items={project.faq} />
+              <FaqPanels title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} />
               <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
