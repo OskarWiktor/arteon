@@ -78,7 +78,7 @@ export default function OfferContentPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/grafika"
+          pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-tresci"
           items={[
             {
               question: 'Ile czasu trwa przygotowanie treści?',

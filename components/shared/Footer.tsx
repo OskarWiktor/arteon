@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import Wrapper from '../ui/Wrapper';
 
 const offerLinks = [
@@ -30,23 +29,6 @@ export default function Footer() {
     <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
       <Wrapper>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="flex w-full flex-row items-center justify-between gap-4 md:flex-col md:items-start md:justify-start">
-            <Image src="/assets/arteon-logo.png" width={160} height={42} alt="Arteon - logo firmy" className="object-contain" />
-            {/*
-            <div className="flex items-center gap-2" role="group" aria-label="Social media">
-              <a
-                href="https://www.instagram.com/arteon.pl"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-              >
-                  <RiInstagramLine className="h-7 w-7 text-[#080808] transition  hover-underline text-base" aria-hidden="true" />
-              </a>
-            </div>
-            */}
-          </div>
-
           <nav aria-label="Usługi" className="md:col-span-1">
             <ul className="flex flex-col gap-2 text-sm">
               {offerLinks.map(({ href, title }) => (
@@ -104,6 +86,14 @@ export default function Footer() {
               </li>
             </ul>
           </nav>
+
+          <div className="flex w-full flex-row items-center justify-between gap-4 md:flex-col md:items-start md:justify-start">
+            <div aria-label="Informacja o współpracy międzynarodowej">
+              <p className="text-[#080808]">
+                <strong className='text-base font-semibold'>Realizujemy projekty na całym świecie dla polskich firm i osób prywatnych</strong>
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="mt-8 border-t border-gray-200 pt-4 text-sm text-[#5e5e5e]">

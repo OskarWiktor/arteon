@@ -79,7 +79,7 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/grafika"
+          pageUrl="https://www.arteonagency.pl/uslugi/marketing"
           items={[
             {
               question: 'Czy mogę zlecić jednorazową kampanię?',

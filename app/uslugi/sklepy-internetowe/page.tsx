@@ -93,10 +93,10 @@ export default function OfferWebPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/grafika"
+          pageUrl="https://www.arteonagency.pl/uslugi/sklepy-internetowe"
           items={[
             {
-              question: 'Jak długo trwa stworzenie sklepu?',
+              question: 'Jak długo trwa stworzenie sklepu internetowego?',
               answer: 'Zazwyczaj od 10 do 20 dni roboczych - zależnie od złożoności projektu i tempa dostarczania materiałów',
             },
             {
