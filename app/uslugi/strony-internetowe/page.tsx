@@ -136,11 +136,11 @@ export default function OfferWebPage() {
             {
               question: 'Ile kosztuje stworzenie strony internetowej?',
               answer:
-                'Cena strony internetowej zależy od tego co dokładnie ma się na niej znaleźć. Patrzymy na: liczbę podstron, projekt graficzny witryny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje). Koszt stworzenia prostej, jednostronicowej strony zaczyna się od 1600 zł brutto',
+                'Cena strony internetowej zależy od tego, co dokładnie ma się na niej znaleźć. Patrzymy na: liczbę podstron, projekt graficzny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje). Koszt stworzenia prostej, jednostronicowej strony zaczyna się od 1600 zł brutto',
             },
             {
               question: 'Jak długo trwa stworzenie strony internetowej?',
-              answer: 'Standardowo stworzenie strony internetowej zajmuje od 5 do 15 dni roboczych, w zależności od ilości podstron oraz wszelkich funkcjonalności',
+              answer: 'Standardowo stworzenie strony internetowej zajmuje od 5 do 15 dni roboczych, w zależności od liczby podstron oraz potrzebnych funkcjonalności.',
             },
             {
               question: 'ile kosztuje roczne utrzymanie strony internetowej',
@@ -154,15 +154,20 @@ export default function OfferWebPage() {
             },
             {
               question: 'Czy zajmujecie się tworzeniem treści na strony internetowe?',
-              answer: 'Tak, możemy stworzyć od podstaw treści oraz grafiki, dopracować Twoje materiały jak i wskazać jakie treści najlepiej zadziałają w Twojej branży',
+              answer: 'Tak. Możemy stworzyć od podstaw treści i grafiki, dopracować Twoje materiały oraz wskazać, jakie treści najlepiej zadziałają w Twojej branży.',
             },
             {
               question: 'Czy mogę później samodzielnie edytować treść strony internetowej?',
-              answer: 'Tak, gwarantujemy darmowe szkolenie z edycji, w formie PDF po zakończeniu prac. Pokażemy, jak dopisać nową usługę, dodać wpis na blog czy zaktualizować cennik. Oferujemy również stałą współpracę w celu rozwinięcia Twojej witryny',
+              answer:
+                'Tak. Gwarantujemy darmowe szkolenie z edycji w formie PDF po zakończeniu prac. Pokażemy, jak dodać nową usługę, wpis na blog i zaktualizować cennik. Oferujemy też stałą współpracę nad rozwojem witryny.',
             },
             {
               question: 'Czy strona internetowa będzie widoczna w Google?',
               answer: 'Tak, dbamy o optymalizację SEO: szybkość, mobilność, poprawne nagłówki i meta tagi. Pomagamy w całym procesie pozycjonowania witryny',
+            },
+            {
+              question: 'Jak mierzyć skuteczność strony internetowej?',
+              answer: 'Podstawą jest GSC (Google Search Console). To narzędzie pozwala śledzić zapytania użytkowników powiązane z Twoją stroną oraz monitorować pozycje i indeksację.',
             },
             {
               question: 'Czy mogę zgłosić poprawki strony internetowej po jej stworzeniu?',

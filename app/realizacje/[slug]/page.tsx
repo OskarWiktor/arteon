@@ -77,7 +77,6 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
 /* ---------- Rich Content renderer ---------- */
 function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
   if (ratio === 'auto') {
-    // Full width, natural height (np. pod A4)
     return <div className="relative overflow-hidden rounded-2xl border border-black/10">{children}</div>;
   }
 
@@ -111,7 +110,6 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
                     <Image
                       src={b.src}
                       alt={b.alt}
-                      // naturalna wysokość + pełna szerokość
                       width={(b as any).width ?? 2000}
                       height={(b as any).height ?? 2800}
                       sizes="100vw"
@@ -178,7 +176,6 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
   );
 }
 
-/* ---------- Next metadata ---------- */
 export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
@@ -209,7 +206,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-/* ---------- Page ---------- */
 export default function ProjectPage({ params }: PageProps) {
   const project = getProject(params.slug);
   if (!project) return notFound();
@@ -342,7 +338,6 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          {/* RICH CONTENT BLOKS */}
           <RenderBlocks blocks={project.contentBlocks} />
 
           {project.outcomes?.length ? (
@@ -358,7 +353,6 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          {/* FAQ + JSON-LD */}
           {project.faq?.length ? (
             <>
               <Gap size="sm" />
@@ -372,7 +366,6 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          {/* Testimonials */}
           {project.testimonial?.quote ? (
             <>
               <SectionInfo title="Ocena współpracy">
@@ -395,7 +388,6 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          {/* ARTICLE + BREADCRUMB JSON-LD */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(project)) }} />
           <script
             type="application/ld+json"
