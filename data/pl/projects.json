@@ -79,6 +79,16 @@
           "ratio": "auto"
         }
       ],
+      "cta": {
+        "title": "Potrzebujesz teczki ofertowej dla swojej firmy?",
+        "description": "Zaprojektujemy teczkę przygotowaną do druku zgodną z charakterem Twojej branży",
+        "primaryLabel": "Zamów teczkę",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Zobacz ofertę grafiki",
+        "secondaryLink": "/uslugi/grafika",
+        "backgroundImage": "/assets/bg/abstract-bg13.webp",
+        "overlay": "black"
+      },
       "seo": {
         "title": "Teczka ofertowa dla kancelarii adwokackiej - LUX NOVA | Arteon",
         "description": "Projekt teczki ofertowej dla kancelarii adwokackiej. Elegancki, spójny design w kolorach bordo i beżu. Zobacz, jak wygląda profesjonalny projekt teczki ofertowej dla adwokata.",
@@ -171,7 +181,7 @@
       "description": "<p>Mental Support Centre to gabinet prowadzony przez mgr Sylwię Paciuch. Naszym celem było zbudowanie <strong>spójnej, prostej w odbiorze strony dla psychoterapeuty</strong> po polsku oraz wzmocnienie <strong>widoczności w Google</strong> w Camberley oraz okolicach Londynu. Projekt łączy <strong>marketing dla psychologa</strong>, <strong>pozycjonowanie lokalne</strong> i przygotowanie do <strong>promocji książki psychologicznej</strong> \"Spokojnie, to tylko nerwica\".</p>",
       "image": "/assets/projects/arteon-baners-msc.webp",
       "link": "https://msc-psychotherapy.co.uk/",
-      "category": ["strona", "sklep", "treść", "grafika", "marketing"],
+      "category": ["strona", "sklep", "blog", "treść", "grafika", "marketing"],
 
       "client": { "name": "Mental Support Centre", "sector": "Psychoterapia", "location": "Camberley, UK" },
       "stack": ["WordPress", "Yoast SEO", "GA4", "GSC"],

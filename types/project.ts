@@ -5,13 +5,23 @@ export type PrimaryCategory = Extract<ProjectCategory, 'aplikacja' | 'strona' | 
 export type SecondaryCategory = Extract<ProjectCategory, 'grafika' | 'treść' | 'marketing'>;
 
 export type Stat = { label: string; value: string; note?: string };
-
 export type FaqItem = { question: string; answer: string };
 
 export type ContentBlock =
   | { type: 'richtext'; html: string }
-  | { type: 'image'; src: string; alt: string; caption?: string; ratio?: '16/9' | '4/3' | '1/1' }
-  | { type: 'imageText'; src: string; alt: string; html: string; imageSide?: 'left' | 'right' };
+  | { type: 'image'; src: string; alt: string; caption?: string; ratio?: '16/9' | '4/3' | '1/1' | 'auto' }
+  | { type: 'imageText'; src: string; alt: string; html: string; imageSide?: 'left' | 'right'; ratio?: '16/9' | '4/3' | '1/1' | 'auto' };
+
+export type ProjectCTA = {
+  title?: string;
+  description?: string;
+  primaryLabel?: string;
+  primaryLink?: string;
+  secondaryLabel?: string;
+  secondaryLink?: string;
+  backgroundImage?: string;
+  overlay?: 'black' | 'white';
+};
 
 export type Project = {
   slug: string;
@@ -38,6 +48,8 @@ export type Project = {
 
   faq?: FaqItem[];
   contentBlocks?: ContentBlock[];
+
+  cta?: ProjectCTA;
 
   seo?: { title?: string; description?: string; canonical?: string };
 };

@@ -64,6 +64,17 @@ const Inline = ({ content }: { content?: React.ReactNode }) => (!content ? null 
 
 const Block = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
+const defaultCTA = {
+  title: 'Rozwiń z nami swoją firmę',
+  description: 'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet',
+  primaryLabel: 'Skontaktuj się',
+  primaryLink: '/kontakt',
+  secondaryLabel: 'Sprawdź naszą ofertę',
+  secondaryLink: '/uslugi',
+  backgroundImage: '/assets/bg/abstract-bg13.webp',
+  overlay: 'black',
+} as const;
+
 function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
     <div className="rounded-xl bg-white p-4 shadow-md">
@@ -209,6 +220,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default function ProjectPage({ params }: PageProps) {
   const project = getProject(params.slug);
   if (!project) return notFound();
+
+  const ctaProps = { ...defaultCTA, ...(project.cta ?? {}) };
 
   return (
     <>
@@ -411,14 +424,14 @@ export default function ProjectPage({ params }: PageProps) {
       <Gap />
 
       <CTABaner
-        title="Rozwiń z nami swoją firmę"
-        description="Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet"
-        primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
-        secondaryLabel="Sprawdź naszą ofertę"
-        secondaryLink="/uslugi"
-        backgroundImage="/assets/bg/abstract-bg13.webp"
-        overlay="black"
+        title={ctaProps.title}
+        description={ctaProps.description}
+        primaryLabel={ctaProps.primaryLabel}
+        primaryLink={ctaProps.primaryLink}
+        secondaryLabel={ctaProps.secondaryLabel}
+        secondaryLink={ctaProps.secondaryLink}
+        backgroundImage={ctaProps.backgroundImage}
+        overlay={ctaProps.overlay}
       />
     </>
   );
