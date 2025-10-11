@@ -202,7 +202,7 @@ export default function OfferWebPage() {
             },
             {
               question: 'Czy po uruchomieniu sklepu internetowego mogę liczyć na pomoc w jego rozwoju?',
-              answer: 'Tak, możemy przeanalizować Twoją branże i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą ilość klientów',
+              answer: 'Tak, możemy przeanalizować Twoją branżę i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą liczbę klientów',
             },
             {
               question: 'Czy będe w stanie samodzielnie dodawać produkty w moim sklepie internetowym?',

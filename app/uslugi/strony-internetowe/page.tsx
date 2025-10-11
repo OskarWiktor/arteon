@@ -136,7 +136,7 @@ export default function OfferWebPage() {
             {
               question: 'Ile kosztuje stworzenie strony internetowej?',
               answer:
-                'Cena strony internetowej zależy od tego co dokładnie ma się na niej znaleść. Patrzymy na: liczbę podstron, projekt graficzny witryny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje). Koszt stworzenia prostej, jednostronicowej strony zaczyna się od 1600 zł brutto',
+                'Cena strony internetowej zależy od tego co dokładnie ma się na niej znaleźć. Patrzymy na: liczbę podstron, projekt graficzny witryny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje). Koszt stworzenia prostej, jednostronicowej strony zaczyna się od 1600 zł brutto',
             },
             {
               question: 'Jak długo trwa stworzenie strony internetowej?',
@@ -170,7 +170,7 @@ export default function OfferWebPage() {
             },
             {
               question: 'Czy po publikacji pomagacie w rozwoju strony internetowe?',
-              answer: 'Tak, możemy przeanalizować Twoją branże i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą ilość klientów',
+              answer: 'Tak, możemy przeanalizować Twoją branżę i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą liczbę klientów',
             },
             {
               question: 'Nie znam się na technologii, czy mogę liczyć na pomoc?',
