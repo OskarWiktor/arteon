@@ -154,11 +154,11 @@ export default function OfferWebPage() {
             },
             {
               question: 'Czy zajmujecie się tworzeniem treści na strony internetowe?',
-              answer: 'Tak, możemy stworzyć od podstaw treści oraz grafiki lub dopracować Twoje materiały',
+              answer: 'Tak, możemy stworzyć od podstaw treści oraz grafiki, dopracować Twoje materiały jak i wskazać jakie treści najlepiej zadziałają w Twojej branży',
             },
             {
               question: 'Czy mogę później samodzielnie edytować treść strony internetowej?',
-              answer: 'Tak, gwarantujemy darmowe szkolenie z edycji, w formie PDF po zakończeniu prac',
+              answer: 'Tak, gwarantujemy darmowe szkolenie z edycji, w formie PDF po zakończeniu prac. Pokażemy, jak dopisać nową usługę, dodać wpis na blog czy zaktualizować cennik. Oferujemy również stałą współpracę w celu rozwinięcia Twojej witryny',
             },
             {
               question: 'Czy strona internetowa będzie widoczna w Google?',

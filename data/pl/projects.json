@@ -214,6 +214,45 @@
         "note": "Przed: różne style i wolne ładowanie. Po: jedna linia wizualna, jasny przekaz i treści pod <strong>pozycjonowanie dla psychologa</strong>."
       },
 
+      "faq": [
+        {
+          "question": "Ile kosztuje strona dla psychologa?",
+          "answer": "Cena strony internetowej zależy od tego co dokładnie ma się na niej znaleść. Patrzymy na: liczbę podstron, projekt graficzny witryny, treści, zdjęcia oraz dodatkowe funkcje (np. formularze, rezerwacje). Strona dla psychologa powinna zawierać dobrze opisane strony ofertowe oraz łatwą drogę do kontaktu, cena zaczyna się od 3500 zł brutto"
+        },
+        {
+          "question": "Jak długo trwa stworzenie strony dla psychoterapeuty?",
+          "answer": "Standardowo stworzenie strony internetowej zajmuje od 5 do 15 dni roboczych, w zależności od ilości podstron oraz wszelkich funkcjonalności"
+        },
+        {
+          "question": "Czy przygotujecie treści na stronę dla psychologa?",
+          "answer": "Tak, możemy stworzyć od podstaw treści oraz grafiki, dopracować Twoje materiały jak i wskazać jakie treści najlepiej zadziałają w Twojej branży"
+        },
+        {
+          "question": "Czy strona dla psychologa będzie widoczna w Google?",
+              "answer": "Tak, dbamy o optymalizację SEO: szybkość, mobilność, poprawne nagłówki i meta tagi. Pomagamy w całym procesie pozycjonowania witryny"
+        },
+        {
+          "question": "Czy mogę samodzielnie edytować treści na stronie?",
+          "answer": "Tak, gwarantujemy darmowe szkolenie z edycji, w formie PDF po zakończeniu prac. Pokażemy, jak dopisać nową usługę, dodać wpis na blog czy zaktualizować cennik. Oferujemy również stałą współpracę w celu rozwinięcia Twojej witryny"
+        },
+        {
+          "question": "Czy możecie stworzyć stronę dla psychologa z rezerwacją wizyt?",
+          "answer": "Tak, integrujemy formularze kontaktu, kalendarze rezerwacji wizyt, płatności online oraz przypomnienia e-mail/SMS."
+        },
+        {
+          "question": "Jakie zdjęcia i grafiki najlepiej działają na stronie psychologa?",
+          "answer": "Naturalne portrety, stonowana kolorystyka, czytelna typografia. Stawiamy na spokój, zaufanie i jasny układ sekcji."
+        },
+        {
+          "question": "Jak mierzyć skuteczność strony dla psychologa?",
+          "answer": "Podstawą jest GSC ( Google Search Console ). To narzędzie analityczne pozwala między innymi na śledzenie zapytań użytkowników, które Google połączył z Twoją stroną czy na monitorowanie pozycji Twojej strony"
+        },
+        {
+          "question": "Czy oferujecie wsparcie po publikacji strony?",
+          "answer": "Tak, możemy przeanalizować Twoją branże i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą ilość klientów"
+        }
+      ],
+
       "seo": {
         "title": "Strona dla psychologa - MSC Psychotherapy | Arteon",
         "description": "Strona dla psychologa. Pozycjonowanie lokalne, logo i marketing dla psychologa, promocja książki oraz przygotowanie sklepu. Sprawdź naszą realizację dla psychoterapeutki w UK",

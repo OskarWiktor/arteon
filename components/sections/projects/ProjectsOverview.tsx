@@ -155,11 +155,11 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
 
         {isScrollable && (
           <>
-            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2 max-w-13 max-h-13`} aria-label="Przewiń w lewo">
+            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2 max-h-13 max-w-13`} aria-label="Przewiń w lewo">
               <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
             </button>
 
-            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2 max-w-13 max-h-13`} aria-label="Przewiń w prawo">
+            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2 max-h-13 max-w-13`} aria-label="Przewiń w prawo">
               <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
             </button>
           </>
@@ -174,11 +174,11 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
               onClick={() => scrollRef.current?.scrollTo({ left: i * cardWidth, behavior: 'smooth' })}
               aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
               aria-current={i === currentSlide ? 'true' : undefined}
-              className="h-5 md:h-6 w-5 md:w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="h-5 w-5 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:h-6 md:w-6"
             >
               <span
                 aria-hidden="true"
-                className={`mx-auto block h-2 md:h-3 w-2 md:w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+                className={`mx-auto block h-2 w-2 rounded-full transition duration-300 md:h-3 md:w-3 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
               />
             </button>
           ))}

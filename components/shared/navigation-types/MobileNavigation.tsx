@@ -5,14 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
-import {
-  RiCodeSSlashFill,
-  RiShoppingCartLine,
-  RiArticleLine,
-  RiPaletteLine,
-  RiFileTextLine,
-  RiMegaphoneLine,
-} from 'react-icons/ri';
+import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 
 type NavItem = { href: string; label: string; exact?: boolean };
 
@@ -43,13 +36,7 @@ function Portal({ children }: { children: React.ReactNode }) {
   return createPortal(children, document.body);
 }
 
-export default function MobileNavigation({
-  isOpen,
-  setIsOpen,
-}: {
-  isOpen: boolean;
-  setIsOpen: (val: boolean) => void;
-}) {
+export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -146,28 +133,23 @@ export default function MobileNavigation({
             transition={{ type: 'spring', stiffness: 280, damping: 30 }}
           >
             <div className="flex items-center justify-end px-4 pt-3">
-              <button
-                onClick={() => setIsOpen(false)}
-                className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2"
-              >
+              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
                 Zamknij
               </button>
             </div>
 
             <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
               <div>
-                <p className="px-3 pb-1 text-[11px] uppercase tracking-wider text-[#5e5e5e]">Usługi</p>
+                <p className="px-3 pb-1 text-[11px] tracking-wider text-[#5e5e5e] uppercase">Usługi</p>
                 <ul id="services" className="grid grid-cols-1 gap-1" onKeyDown={onServicesKeyDown}>
                   {SERVICES.map((s) => (
                     <li key={s.href}>
                       <Link
                         href={s.href}
                         onClick={() => setIsOpen(false)}
-                        className="group flex items-center gap-3 rounded-lg px-3 py-[3px] text-[15px] text-[#080808] outline-none transition hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                        className="group flex items-center gap-3 rounded-lg px-3 py-[3px] text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                       >
-                        <span className="text-[#080808] group-hover:text-slate-600 [&_svg]:h-5 [&_svg]:w-5">
-                          {s.icon}
-                        </span>
+                        <span className="text-[#080808] group-hover:text-slate-600 [&_svg]:h-5 [&_svg]:w-5">{s.icon}</span>
                         <span>{s.title}</span>
                       </Link>
                     </li>
@@ -186,10 +168,8 @@ export default function MobileNavigation({
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[3px] text-[15px] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2 ${
-                          isActive
-                            ? 'bg-zinc-100 font-semibold text-[#080808]'
-                            : 'text-[#080808] hover:bg-neutral-100'
+                        className={`block rounded-lg px-3 py-[3px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                          isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
                         {label}
@@ -210,10 +190,8 @@ export default function MobileNavigation({
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[3px] text-[15px] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2 ${
-                          isActive
-                            ? 'bg-zinc-100 font-semibold text-[#080808]'
-                            : 'text-[#080808] hover:bg-neutral-100'
+                        className={`block rounded-lg px-3 py-[3px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                          isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
                         {label}
@@ -225,19 +203,14 @@ export default function MobileNavigation({
 
               <div className="mt-auto border-t border-zinc-200 pt-3">
                 <div className="flex items-center justify-between">
-                  <a
-                    href="https://nextjs.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-xs font-medium text-[#5e5e5e]"
-                  >
+                  <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="text-xs font-medium text-[#5e5e5e]">
                     #MadeWithNext.js
                   </a>
                   <div className="flex items-center gap-2">
                     <Link
                       href="/kontakt"
                       onClick={() => setIsOpen(false)}
-                      className="rounded-xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white outline-none transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="rounded-xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       Umów konsultację
                     </Link>
