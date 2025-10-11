@@ -4,7 +4,6 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import ContentSteps from '@/components/sections/steps/ContentSteps';
 import {
   RiBarChart2Fill,
   RiBookOpenLine,
@@ -16,6 +15,10 @@ import {
   RiFileSearchLine,
   RiPencilRuler2Line,
   RiShareForwardLine,
+  RiFilePdfLine,
+  RiFileTextLine,
+  RiPencilLine,
+  RiShoppingCartLine,
 } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -24,6 +27,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import { IoSparkles } from 'react-icons/io5';
+import Button from '@/components/ui/Button';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
@@ -110,7 +115,126 @@ export default function OfferContentPage() {
 
         <Gap variant="line" />
 
-        <ContentSteps />
+        <SectionSteps
+          title="Oferta marketingu"
+          subtitle="Skutecznie i przejrzyście"
+          description="SEO, reklamy i social - opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Strony www',
+              subtitle: 'od 600 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Piszemy treści, które jasno przedstawiają ofertę</li>
+                    <li>Układamy strukturę, by prowadziła odbiorcę krok po kroku</li>
+                    <li>Dostosowujemy język do Twojej branży i klientów</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Wyceń treści do strony
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Artykuły eksperckie',
+              subtitle: 'od 300 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Przygotowujemy artykuły eksperckie i edukacyjne</li>
+                    <li>Optymalizujemy je pod SEO, by wzmacniały widoczność</li>
+                    <li>Planujemy publikacje, by utrzymać regularność i wspomóc SEO</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Zamów artykuły
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiShoppingCartLine className="h-8 w-8" />,
+              title: 'E-commerce: opisy',
+              subtitle: 'od 40 zł / szt.',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Piszemy opisy produktów pokazujące korzyści</li>
+                    <li>Tworzymy krótkie treści do szybkich decyzji zakupowych</li>
+                    <li>Przygotowujemy rozbudowane opisy premium dla produktów wyższej klasy</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Wyceń treści do sklepu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiShareForwardLine className="h-8 w-8" />,
+              title: 'Social media: treści',
+              subtitle: 'od 30 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Przygotowujemy posty, które zatrzymują uwagę i reakcje</li>
+                    <li>Piszemy scenariusze z jasnym wezwaniem do działania</li>
+                    <li>Układamy scenariusze rolek pod większe zasięgi</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Zamów copy do social
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiFilePdfLine className="h-8 w-8" />,
+              title: 'Oferty i case studies',
+              subtitle: 'od 400 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Projektujemy oferty sprzedażowe podkreślające Twoją wartość</li>
+                    <li>Opracowujemy case studies pokazujące efekty współpracy</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Poproś o ofertę PDF
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPencilLine className="h-8 w-8" />,
+              title: 'Korekta i redakcja',
+              subtitle: 'wycena indywidualna',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Poprawiamy błędy językowe i stylistyczne</li>
+                    <li>Ujednolicamy format, ton i układ treści</li>
+                    <li>Dostosowujemy teksty pod SEO dla lepszej widoczności</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Prześlij tekst do korekty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

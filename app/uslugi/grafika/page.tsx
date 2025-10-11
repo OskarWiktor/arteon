@@ -5,8 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import DesignSteps from '@/components/sections/steps/DesignSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiImageLine, RiPaletteLine, RiShoppingBag3Line, RiStackLine, RiVideoLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiImageLine, RiPaletteLine, RiShoppingBag3Line, RiStackLine, RiVideoLine, RiLayoutMasonryLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -14,6 +13,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import { IoColorPalette } from 'react-icons/io5';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
@@ -107,7 +108,66 @@ export default function OfferDesignPage() {
 
         <Gap variant="line" />
 
-        <DesignSteps />
+        <SectionSteps
+          title="Oferta grafiki"
+          subtitle="Przejrzyście i konkretnie"
+          description="Wizualny fundament Twojej marki - od logo po ubrania firmowe."
+          items={[
+            {
+              icon: <RiPencilRuler2Line className="h-8 w-8" />,
+              title: 'Identyfikacja marki',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Sygnety, loga, kolory i typografie</li>
+                    <li>Wizytówki, ulotki, foldery i katalogi</li>
+                    <li>Ubrania firmowe oraz gadżety</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Wyceń projekt
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLayoutMasonryLine className="h-8 w-8" />,
+              title: 'Strony',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Makiety układu i wyglądu strony</li>
+                    <li>Retusz oraz optymalizacje grafik</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Zapytaj o wycenę
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiStackLine className="h-8 w-8" />,
+              title: 'Social media',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Posty, stories i karuzele</li>
+                    <li>Szablony dla spójności marki</li>
+                    <li>Montaż filmów</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Wyceń projekt
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

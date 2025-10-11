@@ -2,13 +2,14 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
 import HeroBaner from '@/components/sections/HeroBaner';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import WhatSetsUsApartSteps from '@/components/sections/steps/WhatSetsUsApartSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TechStack from '@/components/sections/TechStack';
 import Gap from '@/components/ui/Gap';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
+import Link from 'next/link';
 import { RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 
 export const metadata = {
@@ -55,7 +56,45 @@ export default function AboutPage() {
 
         <Gap variant="line" />
 
-        <WhatSetsUsApartSteps />
+        <SectionSteps
+          title="Co nas wyróżnia?"
+          grid="two"
+          items={[
+            {
+              title: 'Komplet usług wokół Twojej strony',
+              description: (
+                <p>Strona, sklep, blog. Do tego grafika, branding, marketing, treści i budowa widoczności - wszystko w jednym miejscu. Dbamy o WCAG i podstawy prawne, żebyś startował bez ryzyka.</p>
+              ),
+            },
+            {
+              title: 'Dobór technologii do celu',
+              description: (
+                <p>
+                  Najpierw cel. Potem narzędzia. Dobieramy technologię tak, by szybciej dojść do wyniku, w ramach Twojego budżetu i skali. Tłumaczymy każdą decyzję prosto, bez technicznego żargonu.
+                </p>
+              ),
+            },
+            {
+              title: 'Widoczność w pakiecie',
+              description: (
+                <p>Optymalizacja pod Google od pierwszego dnia: struktura, treści i techniczne pozycjonowanie są w cenie. Po wdrożeniu dostajesz darmową propozycję „co dalej”, by rosnąć szybciej.</p>
+              ),
+            },
+
+            {
+              title: 'Gwarancja i proste rozliczenia',
+              description: (
+                <p>
+                  Jasne zasady: faktura po realizacji (małe projekty), przy większych niska zaliczka i kamienie milowe. Gwarancja opisana w{' '}
+                  <Link href="/regulamin" className="inline underline underline-offset-4">
+                    regulaminie
+                  </Link>
+                  . Po wdrożeniu, dwa miesiące wsparcia w cenie.
+                </p>
+              ),
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

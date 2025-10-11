@@ -5,18 +5,22 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import MarketingSteps from '@/components/sections/steps/MarketingSteps';
 import {
   RiAdvertisementLine,
   RiBarChart2Fill,
   RiBarChart2Line,
   RiCustomerService2Line,
+  RiFileList2Line,
   RiLightbulbFlashLine,
   RiLightbulbLine,
   RiLineChartLine,
+  RiMegaphoneLine,
   RiRocketLine,
   RiSearchEyeLine,
+  RiSearchLine,
+  RiShareForwardLine,
   RiShieldCheckLine,
+  RiUserHeartLine,
 } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -24,6 +28,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import { IoAnalytics } from 'react-icons/io5';
+import Button from '@/components/ui/Button';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata = {
   title: 'Marketing internetowy - reklamy i widoczność w Google | Arteon',
@@ -107,7 +113,127 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <MarketingSteps />
+        <SectionSteps
+          title="Oferta marketingu"
+          subtitle="Skutecznie i przejrzyście"
+          description="SEO, reklamy i social - opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
+          items={[
+            {
+              icon: <RiFileList2Line className="h-8 w-8" />,
+              title: 'SEO: audyt',
+              subtitle: 'od 800 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Analizujemy Twoją stronę i konkurencję</li>
+                    <li>Sprawdzamy zgodność z prawem i dostępnością</li>
+                    <li>Tworzymy jasny plan poprawy widoczności</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Zamów audyt SEO
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiSearchLine className="h-8 w-8" />,
+              title: 'SEO: optymalizacja',
+              subtitle: 'od 600 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Sprawdzamy, czy Twoja strona jest łatwa do znalezienia</li>
+                    <li>Poprawiamy treści i opisy tak, by przyciągały klientów</li>
+                    <li>Poprawiamy technicznie Twoją witrynę</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Zamów optymalizację SEO
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiBarChart2Line className="h-8 w-8" />,
+              title: 'SEO: rozwój',
+              subtitle: 'od 1 200 zł / mies.',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Piszemy i publikujemy treści, które podnoszą pozycję strony</li>
+                    <li>Budujemy sieć wartościowych linków</li>
+                    <li>Co miesiąc otrzymujesz raport i jasne rekomendacje</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Zapytaj o abonament SEO
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiMegaphoneLine className="h-8 w-8" />,
+              title: 'Reklamy',
+              subtitle: 'od 600 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Konfigurujemy reklamy w Google i Meta</li>
+                    <li>Tworzymy zestaw dopasowanych grafik i treści</li>
+                    <li>Ustawiamy śledzenie wyników i zdarzeń</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Uruchom kampanię
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiShareForwardLine className="h-8 w-8" />,
+              title: 'Social media: prowadzenie',
+              subtitle: 'od 1 100 zł / mies.',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Planujemy i publikujemy posty, stories oraz rolki</li>
+                    <li>Przygotowujemy scenariusze i montujemy filmiki</li>
+                    <li>Dbamy o regularność i kontakt z odbiorcami</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Poproś o plan publikacji
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiUserHeartLine className="h-8 w-8" />,
+              title: 'Branding psychologiczny',
+              subtitle: 'od 900 zł',
+              description: (
+                <div className="flex h-full flex-col">
+                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
+                    <li>Określamy archetyp marki i jej osobowość</li>
+                    <li>Budujemy język i komunikację, która trafia w emocje</li>
+                    <li>Tworzymy oferty z których klienci chcą skorzystać</li>
+                  </ul>
+                  <div className="mt-auto">
+                    <Button arrow link="#kontakt">
+                      Ustal kierunek marki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 
