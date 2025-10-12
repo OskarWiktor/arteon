@@ -46,19 +46,6 @@ function jsonLd(project: Project) {
   } as const;
 }
 
-function faqJsonLd(items: { question: string; answer: string }[], url: string) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: items.map((it) => ({
-      '@type': 'Question',
-      name: it.question,
-      acceptedAnswer: { '@type': 'Answer', text: it.answer },
-    })),
-    mainEntityOfPage: url,
-  } as const;
-}
-
 /* ---------- small helpers ---------- */
 const Inline = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
@@ -369,13 +356,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.faq?.length ? (
             <>
               <Gap size="sm" />
-              <FaqPanels title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} />
-              <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                  __html: JSON.stringify(faqJsonLd(project.faq, projectUrl(project.slug))),
-                }}
-              />
+              <FaqPanels title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} pageUrl={projectUrl(project.slug)}/>
             </>
           ) : null}
 
