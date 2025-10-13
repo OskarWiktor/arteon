@@ -18,14 +18,7 @@ interface FaqPanelsProps {
   openByDefault?: number; // ile pierwszych pozycji ma być otwartych po załadowaniu
 }
 
-export default function FaqPanels({
-  items,
-  title = 'Najczęstsze pytania',
-  subtitle = 'FAQ',
-  generateSchema = true,
-  pageUrl,
-  openByDefault = 0,
-}: FaqPanelsProps) {
+export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle = 'FAQ', generateSchema = true, pageUrl, openByDefault = 0 }: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(openByDefault > 0 ? 0 : null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
@@ -80,7 +73,9 @@ export default function FaqPanels({
   return (
     <section aria-labelledby="faq-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h3 id="faq-heading" className="reveal-animation h2 mb-2">{title}</h3>
+      <h3 id="faq-heading" className="reveal-animation h2 mb-2">
+        {title}
+      </h3>
 
       {items.map((item, index) => {
         const isOpen = activeIndex === index || (openByDefault > 0 && index < openByDefault && activeIndex === null);
@@ -100,7 +95,9 @@ export default function FaqPanels({
             <button
               id={buttonId}
               type="button"
-              ref={(el) => { btnRefs.current[index] = el; }}
+              ref={(el) => {
+                btnRefs.current[index] = el;
+              }}
               onClick={() => toggle(index)}
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
@@ -135,13 +132,7 @@ export default function FaqPanels({
         );
       })}
 
-      {faqJsonLd && (
-        <script
-          id={`faq-jsonld-${scriptId}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      {faqJsonLd && <script id={`faq-jsonld-${scriptId}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
     </section>
   );
 }
