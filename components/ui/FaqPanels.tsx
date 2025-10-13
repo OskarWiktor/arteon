@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, useId, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 
 interface FaqPanelsItem {
@@ -15,13 +15,19 @@ interface FaqPanelsProps {
   subtitle?: string;
   generateSchema?: boolean;
   pageUrl?: string;
+  openByDefault?: number; // ile pierwszych pozycji ma być otwartych po załadowaniu
 }
 
-export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle = 'FAQ', generateSchema = true, pageUrl }: FaqPanelsProps) {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
+export default function FaqPanels({
+  items,
+  title = 'Najczęstsze pytania',
+  subtitle = 'FAQ',
+  generateSchema = true,
+  pageUrl,
+  openByDefault = 0,
+}: FaqPanelsProps) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(openByDefault > 0 ? 0 : null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
-
   const scriptId = useId();
 
   const toggle = (index: number) => {
@@ -31,7 +37,6 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
   const onKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>, index: number) => {
     const max = items.length - 1;
     let next = index;
-
     switch (e.key) {
       case 'ArrowDown':
         e.preventDefault();
@@ -75,12 +80,10 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
   return (
     <section aria-labelledby="faq-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h3 id="faq-heading" className="reveal-animation h2 mb-2">
-        {title}
-      </h3>
+      <h3 id="faq-heading" className="reveal-animation h2 mb-2">{title}</h3>
 
       {items.map((item, index) => {
-        const isOpen = index === activeIndex;
+        const isOpen = activeIndex === index || (openByDefault > 0 && index < openByDefault && activeIndex === null);
         const buttonId = `faq-q-${index}`;
         const panelId = `faq-a-${index}`;
 
@@ -97,9 +100,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
             <button
               id={buttonId}
               type="button"
-              ref={(el: HTMLButtonElement | null): void => {
-                btnRefs.current[index] = el;
-              }}
+              ref={(el) => { btnRefs.current[index] = el; }}
               onClick={() => toggle(index)}
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
@@ -116,27 +117,31 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
               </span>
             </button>
 
-            <AnimatePresence initial={false}>
-              {isOpen && (
-                <motion.div
-                  key="content"
-                  id={panelId}
-                  role="region"
-                  aria-labelledby={buttonId}
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.25, ease: 'easeInOut' }}
-                >
-                  <p className="px-6 pb-4">{item.answer}</p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <motion.div
+              id={panelId}
+              role="region"
+              aria-labelledby={buttonId}
+              initial={false}
+              animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
+              style={{ overflow: 'hidden' }}
+              transition={{ duration: 0.25, ease: 'easeInOut' }}
+              aria-hidden={!isOpen}
+            >
+              <div className="px-6 pb-4">
+                <p>{item.answer}</p>
+              </div>
+            </motion.div>
           </div>
         );
       })}
 
-      {faqJsonLd && <script id={`faq-jsonld-${scriptId}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+      {faqJsonLd && (
+        <script
+          id={`faq-jsonld-${scriptId}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
     </section>
   );
 }
