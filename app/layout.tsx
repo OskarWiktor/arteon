@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-// —————————————————————————————————————————————
-// SCHEMA.ORG — dane globalne (1x na cały serwis)
-// —————————————————————————————————————————————
+// ---------------------------------------------
+// SCHEMA.ORG - dane globalne (1x na cały serwis)
+// ---------------------------------------------
 const SITE_URL = 'https://www.arteonagency.pl';
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
 
@@ -32,7 +32,7 @@ const orgJsonLd = {
   name: 'Arteon',
   url: SITE_URL,
   logo: ORG_LOGO,
-  // Dodaj tylko realne profile — jeśli nie masz, pole pomiń
+  // Dodaj tylko realne profile - jeśli nie masz, pole pomiń
   // sameAs: [
   //   'https://www.facebook.com/…',
   //   'https://www.instagram.com/…',

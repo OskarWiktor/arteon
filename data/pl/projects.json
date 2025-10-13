@@ -1,6 +1,67 @@
 {
   "projects": [
     {
+      "slug": "papier-firmowy-dla-kancelarii-adwokackiej-lux-nova",
+      "title": "Papier firmowy dla kancelarii - LUX NOVA",
+      "short": "Projekt papieru firmowego dla kancelarii adwokackiej",
+      "description": "<p><strong>Projekt koncepcyjny - dane przykładowe.</strong> Papier firmowy dla kancelarii <strong>LUX NOVA</strong> wzmacnia wizerunek marki: klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelny blok kontaktu z <strong>kodem QR</strong>. Całość zachowuje równowagę między <em>elegancją</em> i <em>praktycznością</em> - gotowe do druku i do użycia cyfrowego (PDF).</p>",
+      "image": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
+      "category": ["grafika"],
+      "client": { "name": "LUX NOVA", "sector": "Prawo" },
+      "stack": ["Adobe Illustrator", "Mockup 3D"],
+      "deliverables": [
+        "Projekt papieru firmowego A4 (nagłówek + tło + stopka)",
+        "Motyw gryfa w niskiej intensywności jako wzór tła",
+        "Stopka z danymi: telefon, e-mail, adres + kod QR do strony"
+      ],
+      "task": "Zaprojektować papier firmowy kancelarii - czytelny, elegancki, spójny z wizytówką i teczką.",
+      "outcomes": [
+        { "value": "Spójność", "label": "Identyfikacja", "note": "Spójne kolory i typografia we wszystkich materiałach" },
+        { "value": "Czytelność", "label": "Układ", "note": "Wyraźny nagłówek, najważniejsze dane w stopce, miejsce na treść" },
+        { "value": "Prestiż", "label": "Motyw", "note": "Delikatny gryf buduje rozpoznawalność bez przytłoczenia" }
+      ],
+      "process_steps": [
+        "Analiza istniejących materiałów (logo, wizytówki, teczka)",
+        "Ustalenie siatki i marginesów pod format A4",
+        "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"
+      ],
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt papieru firmowego?",
+          "answer": "Projekt papieru firmowego kosztuje od 180 do 280 zł brutto - w zależności od ilości wariantów oraz informacji, które muszą być zawarte na papierze firmowym"
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<h5 class='h3 reveal-animation'>Paleta i typografia</h5><p class='pt-3'>Kolory: <strong>bordo</strong> i <strong>beż</strong> - stabilność i zaufanie. Typografia łączy elegancki serif z nowoczesnym groteskiem. Taki duet gwarantuje czytelność na papierze i w PDF.</p>"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
+          "alt": "Papier firmowy LUX NOVA - wizualizacja na biurku",
+          "caption": "Wizualizacja 3D - elegancja i porządek na pierwszym planie",
+          "ratio": "16/9"
+        }
+      ],
+      "cta": {
+        "title": "Zamów papier firmowy dla swojej kancelarii",
+        "description": "Przygotujemy pliki do druku i PDF. Spójnie z Twoją identyfikacją.",
+        "primaryLabel": "Zamów projekt",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Zobacz ofertę grafiki",
+        "secondaryLink": "/uslugi/grafika",
+        "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Papier firmowy dla kancelarii adwokackiej - LUX NOVA | Arteon",
+        "description": "Projekt papieru firmowego dla kancelarii. Elegancki nagłówek, motyw gryfa, czytelna stopka i kod QR. Spójność z wizytówkami i teczką. Pliki do druku i PDF.",
+        "canonical": "https://www.arteonagency.pl/realizacje/papier-firmowy-dla-kancelarii-adwokackiej-lux-nova"
+      }
+    },
+
+    {
       "slug": "teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova",
       "title": "Teczka ofertowa dla kancelarii - LUX NOVA",
       "short": "Projekt teczki ofertowej dla kancelarii adwokackiej - elegancja, porządek i prestiż w jednym",
