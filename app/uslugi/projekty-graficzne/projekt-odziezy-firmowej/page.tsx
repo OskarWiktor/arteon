@@ -15,13 +15,13 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
-  title: 'xxx | Arteon',
-  description: 'xxx',
-  keywords: ['xxx', 'xxx'],
+  title: 'Projekt odzieży firmowej | Arteon',
+  description: 'Projekt nadruków i haftów na odzież firmową. Spójny wygląd zespołu i lepsza rozpoznawalność marki.',
+  keywords: ['projekt odzieży firmowej', 'nadruk firmowy', 'haft komputerowy', 'odzież z logo', 'materiały firmowe'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
   openGraph: {
-    title: 'xxx | Arteon',
-    description: 'xxx',
+    title: 'Projekt odzieży firmowej | Arteon',
+    description: 'Nadruki i hafty dopasowane do identyfikacji marki. Pliki przygotowane pod wybraną technikę.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     type: 'website',
   },

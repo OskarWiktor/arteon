@@ -16,12 +16,12 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
   title: 'Projekt ulotki | Arteon',
-  description: 'xxx',
-  keywords: ['xxx', 'xxx'],
+  description: 'Ulotka, która przyciąga uwagę i kieruje do kontaktu lub zakupu. Projekt dopasowany do Twojej oferty i lokalnych działań.',
+  keywords: ['projekt ulotki', 'ulotki reklamowe', 'projekt graficzny ulotki', 'ulotka do druku', 'materiały promocyjne'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-ulotki' },
   openGraph: {
-    title: 'xxx | Arteon',
-    description: 'xxx',
+    title: 'Projekt ulotki | Arteon',
+    description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
   },

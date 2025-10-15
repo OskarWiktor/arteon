@@ -16,12 +16,12 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
   title: 'Projekt logo | Arteon',
-  description: 'xxx',
-  keywords: ['xxx', 'xxx'],
+  description: 'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
+  keywords: ['projekt logo', 'logo dla firmy', 'tworzenie logo', 'księga znaku', 'identyfikacja wizualna'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-logo' },
   openGraph: {
-    title: 'xxx | Arteon',
-    description: 'xxx',
+    title: 'Projekt logo | Arteon',
+    description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
     type: 'website',
   },

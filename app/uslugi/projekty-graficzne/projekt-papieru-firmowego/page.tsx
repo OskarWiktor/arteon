@@ -15,13 +15,13 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
-  title: 'xxx | Arteon',
-  description: 'xxx',
-  keywords: ['xxx', 'xxx'],
+  title: 'Projekt papieru firmowego | Arteon',
+  description: 'Papier firmowy, który wzmacnia wizerunek w korespondencji. Szablony Word/PDF oraz wersje gotowe do druku.',
+  keywords: ['projekt papieru firmowego', 'papier firmowy', 'szablon firmowy', 'projekt do druku', 'materiały firmowe'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
   openGraph: {
-    title: 'xxx | Arteon',
-    description: 'xxx',
+    title: 'Projekt papieru firmowego | Arteon',
+    description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     type: 'website',
   },

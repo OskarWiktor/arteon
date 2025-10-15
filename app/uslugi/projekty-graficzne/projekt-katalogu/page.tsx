@@ -15,14 +15,14 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
-  title: 'xxx | Arteon',
-  description: 'xxx',
-  keywords: ['xxx', 'xxx'],
-  alternates: { canonical: '/uslugi/projekty-graficzne/xxx' },
+  title: 'Projekt katalogu | Arteon',
+  description: 'Katalog produktów lub ofert z czytelnym składem DTP. Zdjęcia, typografia i układ, które podnoszą sprzedaż i wizerunek.',
+  keywords: ['projekt katalogu', 'katalog firmowy', 'skład DTP', 'katalog produktów', 'materiały do druku'],
+  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-katalogu' },
   openGraph: {
-    title: 'xxx | Arteon',
-    description: 'xxx',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/xxx',
+    title: 'Projekt katalogu | Arteon',
+    description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
     type: 'website',
   },
 } as const;

@@ -24,7 +24,7 @@ export default function CTABaner({ title, subtitle, description, primaryLabel, p
 
   return (
     <section
-      className={`relative flex h-auto min-h-[360px] md:min-h-[440px] overflow-hidden ${hasBg ? 'bg-cover bg-center md:bg-fixed' : ''} ${baseBg}`}
+      className={`relative flex h-auto min-h-[360px] overflow-hidden md:min-h-[440px] ${hasBg ? 'bg-cover bg-center md:bg-fixed' : ''} ${baseBg}`}
       style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       data-section="final-cta"
     >

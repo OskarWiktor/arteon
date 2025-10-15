@@ -16,12 +16,12 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
   title: 'Projekt graficzny strony | Arteon',
-  description: 'xxx',
-  keywords: ['xxx', 'xxx'],
+  description: 'Makiety i layouty stron internetowych tworzone z myślą o czytelności i konwersji. Estetyka, UX i SEO w jednym projekcie.',
+  keywords: ['projekt graficzny strony', 'layout strony', 'makiety UX', 'projekt www', 'projekt strony firmowej'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
   openGraph: {
     title: 'Projekt graficzny strony | Arteon',
-    description: 'xxx',
+    description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
   },

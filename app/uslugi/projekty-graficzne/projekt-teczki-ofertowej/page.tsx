@@ -16,12 +16,12 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
-  description: 'xxx',
-  keywords: ['xxx', 'xxx'],
+  description: 'Teczka ofertowa podnosi prestiż spotkań i porządkuje dokumenty. Projekt spójny z identyfikacją wizualną Twojej marki.',
+  keywords: ['projekt teczki ofertowej', 'teczka firmowa', 'materiały firmowe', 'projekt do druku', 'identyfikacja wizualna'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
-    description: 'xxx',
+    description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     type: 'website',
   },
