@@ -30,13 +30,13 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
         ) : (
           <span aria-hidden="true" className="inline-block h-2 w-2 rounded-[2px] bg-black" />
         )}
-        <h3 id={headingId} className="h6 font-semibold text-[#0A0A0A]" itemProp="name">
+        <h3 id={headingId} className="h6 font-semibold text-[#080808]" itemProp="name">
           {title}
         </h3>
       </div>
 
       {description && (
-        <div id={descId} className="mt-1 text-[16px] leading-6 text-[#080808]/80" itemProp="description">
+        <div id={descId} className="text-small mt-1 leading-6 text-[#5e5e5e]" itemProp="description">
           {description}
         </div>
       )}
@@ -44,7 +44,7 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
       {Array.isArray(points) && points.length > 0 && (
         <ul className="mt-2 space-y-2" role="list">
           {points.map((pt, i) => (
-            <li key={i} className="flex items-start gap-1 text-base text-[#080808]/70">
+            <li key={i} className="flex items-start gap-1 text-base text-[#5e5e5e]">
               {pt}
             </li>
           ))}

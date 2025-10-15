@@ -53,7 +53,12 @@ p,
 li,
 .p {
   @apply leading-relaxed font-normal;
-  font-size: clamp(15px, calc(15px + 3 * ((100vw - 360px) / 1080)), 18px);
+  font-size: clamp(15px, calc(15px + 2 * ((100vw - 360px) / 1080)), 17px);
+}
+
+.text-small {
+  @apply leading-relaxed font-normal;
+  font-size: clamp(14px, calc(15px + 3 * ((100vw - 360px) / 1080)), 16px);
 }
 
 h1,
@@ -103,6 +108,10 @@ label {
   font-weight: 600;
   font-size: clamp(16px, calc(16px + 3 * ((100vw - 360px) / 1080)), 20px);
   line-height: 150%;
+}
+
+strong {
+  font-weight: 600;
 }
 
 /*    FORMS    */

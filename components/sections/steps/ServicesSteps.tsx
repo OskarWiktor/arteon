@@ -74,7 +74,7 @@ const items = [
         <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
           <li>Loga i identyfikacje wizualne</li>
           <li>Materiały do druku</li>
-          <li>Szablony pod social media</li>
+          <li>Materiały online</li>
           <li>Makiety stron</li>
         </ul>
         <div className="mt-auto">

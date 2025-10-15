@@ -17,6 +17,8 @@ const nextConfig = {
       { source: '/offer', destination: '/uslugi', permanent: true },
 
       { source: '/calculator', destination: '/', permanent: true },
+
+      { source: '/uslugi/grafika', destination: '/uslugi/projekty-graficzne', permanent: true },
     ];
   },
 };
