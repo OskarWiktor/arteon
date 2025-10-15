@@ -9,22 +9,14 @@
       "category": ["grafika"],
       "client": { "name": "LUX NOVA", "sector": "Prawo" },
       "stack": ["Adobe Illustrator", "Mockup 3D"],
-      "deliverables": [
-        "Projekt papieru firmowego A4 (nagłówek + tło + stopka)",
-        "Motyw gryfa w niskiej intensywności jako wzór tła",
-        "Stopka z danymi: telefon, e-mail, adres + kod QR do strony"
-      ],
+      "deliverables": ["Projekt papieru firmowego A4 (nagłówek + tło + stopka)", "Motyw gryfa w niskiej intensywności jako wzór tła", "Stopka z danymi: telefon, e-mail, adres + kod QR do strony"],
       "task": "Zaprojektować papier firmowy kancelarii - czytelny, elegancki, spójny z wizytówką i teczką.",
       "outcomes": [
         { "value": "Spójność", "label": "Identyfikacja", "note": "Spójne kolory i typografia we wszystkich materiałach" },
         { "value": "Czytelność", "label": "Układ", "note": "Wyraźny nagłówek, najważniejsze dane w stopce, miejsce na treść" },
         { "value": "Prestiż", "label": "Motyw", "note": "Delikatny gryf buduje rozpoznawalność bez przytłoczenia" }
       ],
-      "process_steps": [
-        "Analiza istniejących materiałów (logo, wizytówki, teczka)",
-        "Ustalenie siatki i marginesów pod format A4",
-        "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"
-      ],
+      "process_steps": ["Analiza istniejących materiałów (logo, wizytówki, teczka)", "Ustalenie siatki i marginesów pod format A4", "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"],
       "faq": [
         {
           "question": "Ile kosztuje projekt papieru firmowego?",
@@ -45,18 +37,18 @@
         }
       ],
       "cta": {
-        "title": "Zamów papier firmowy dla swojej kancelarii",
-        "description": "Przygotujemy pliki do druku i PDF. Spójnie z Twoją identyfikacją.",
-        "primaryLabel": "Zamów projekt",
+        "title": "Zamów papier firmowy dla swojej firmy",
+        "description": "Zrealizujemy dla Ciebie projekt z przygotowaniem do druku",
+        "primaryLabel": "Zamów papier firmowy",
         "primaryLink": "/kontakt",
-        "secondaryLabel": "Zobacz ofertę grafiki",
+        "secondaryLabel": "Projekty graficzne",
         "secondaryLink": "/uslugi/grafika",
         "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
         "overlay": "black"
       },
       "seo": {
-        "title": "Papier firmowy dla kancelarii adwokackiej - LUX NOVA | Arteon",
-        "description": "Projekt papieru firmowego dla kancelarii. Elegancki nagłówek, motyw gryfa, czytelna stopka i kod QR. Spójność z wizytówkami i teczką. Pliki do druku i PDF.",
+        "title": "Papier firmowy dla kancelarii adwokackiej | Arteon",
+        "description": "Projekt papieru firmowego dla kancelarii. Sprawdź realizację i zamów papier firmowy dla swojej firmy",
         "canonical": "https://www.arteonagency.pl/realizacje/papier-firmowy-dla-kancelarii-adwokackiej-lux-nova"
       }
     },
@@ -142,17 +134,17 @@
       ],
       "cta": {
         "title": "Potrzebujesz teczki ofertowej dla swojej firmy?",
-        "description": "Zaprojektujemy teczkę przygotowaną do druku zgodną z charakterem Twojej branży",
+        "description": "Skontaktuj się z nami lub sprawdź szczegóły naszej oferty",
         "primaryLabel": "Zamów teczkę",
         "primaryLink": "/kontakt",
-        "secondaryLabel": "Zobacz ofertę grafiki",
+        "secondaryLabel": "Projekty graficzne",
         "secondaryLink": "/uslugi/grafika",
-        "backgroundImage": "/assets/bg/abstract-bg13.webp",
+        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
         "overlay": "black"
       },
       "seo": {
-        "title": "Teczka ofertowa dla kancelarii adwokackiej - LUX NOVA | Arteon",
-        "description": "Projekt teczki ofertowej dla kancelarii adwokackiej. Elegancki, spójny design w kolorach bordo i beżu. Zobacz, jak wygląda profesjonalny projekt teczki ofertowej dla adwokata.",
+        "title": "Teczka ofertowa dla kancelarii adwokackiej | Arteon",
+        "description": "Projekt teczki ofertowej dla kancelarii adwokackiej. Zobacz, naszą realizację i zamów projekt teczki sprzedażowej dla swojej firmy",
         "canonical": "https://www.arteonagency.pl/realizacje/teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova"
       }
     },
@@ -228,9 +220,21 @@
           "ratio": "16/9"
         }
       ],
+
+      "cta": {
+        "title": "Potrzebujesz wizytówki dla swojej firmy?",
+        "description": "Zaprojektujemy teczkę przygotowaną do druku zgodną z charakterem Twojej branży",
+        "primaryLabel": "Zamów teczkę",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Projekty graficzne",
+        "secondaryLink": "/uslugi/grafika",
+        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
+        "overlay": "black"
+      },
+
       "seo": {
-        "title": "Wizytówka dla kancelarii - LUX NOVA | Arteon",
-        "description": "Projekt wizytówki dla kancelarii adwokackiej. Sprawdź jak wyglądają stworzone przez nas wizytówki",
+        "title": "Wizytówka dla kancelarii | Arteon",
+        "description": "Projekt wizytówki dla kancelarii adwokackiej. Sprawdź jak wyglądają stworzone przez nas wizytówki i zamów wizytówkę dla siebie",
         "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-kancelarii-adwokackiej-lux-nova"
       }
     },

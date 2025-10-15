@@ -46,17 +46,13 @@ export default function OfferBlogPage() {
     <>
       <HeroBanner
         title="Blogi internetowe"
-        description={
-          <>
-            Tworzymy blogi, które budują <strong>autorytet marki</strong> i wspierają SEO. Strategia treści i technologia - w jednym miejscu.
-          </>
-        }
+        description={<>Zwiększ swoją widoczność, tworząc własny blog internetowy</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg7.webp"
+        backgroundImage="/assets/bg/abstract-bg3.webp"
         overlay="black"
       />
 
@@ -71,7 +67,7 @@ export default function OfferBlogPage() {
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/blogi-internetowe`, label: 'Blogi internetowe' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <FeatureGrid
           title="Co dostajesz"
@@ -126,8 +122,8 @@ export default function OfferBlogPage() {
 
         <SectionPrices
           id="pricing-blogs"
-          subtitle="Cennik blogów internetowych"
-          title="Przykładowe pakiety"
+          subtitle="Przykładowe pakiety"
+          title="Cennik blogów internetowych"
           plans={
             [
               {
@@ -206,15 +202,15 @@ export default function OfferBlogPage() {
 
         <Gap variant="line" />
 
-        <WorkSteps variant="web" />
+        <FeesSteps />
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="web" />
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy Twój blog" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Blog" />
+        <ContactForm title="Zbudujmy Twój blog" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Blog" />
 
         <Gap variant="line" />
 
@@ -258,7 +254,7 @@ export default function OfferBlogPage() {
         description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
         primaryLabel="Wyceń projekt"
         primaryLink="/kontakt"
-        backgroundImage="/assets/bg/abstract-bg7.webp"
+        backgroundImage="/assets/bg/abstract-bg3.webp"
         overlay="black"
       />
     </>

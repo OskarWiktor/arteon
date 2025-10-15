@@ -50,23 +50,23 @@ export default function ContactForm({ title, description, defaultSubject, action
         </header>
       )}
 
-      <form ref={formRef} className="flex w-full flex-col gap-6" action={action} method="POST" onSubmit={handleSubmit} aria-describedby="form-status">
-        <div className="flex flex-col gap-2">
+      <form ref={formRef} className="flex w-full flex-col gap-5" action={action} method="POST" onSubmit={handleSubmit} aria-describedby="form-status">
+        <div className="flex flex-col gap-1">
           <label htmlFor="name">Imię i nazwisko</label>
           <input id="name" name="Imię i Nazwisko" placeholder="Jan Kowalski" type="text" autoComplete="name" required className={fieldClass} />
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <label htmlFor="email">Email</label>
           <input id="email" name="Email" placeholder="jan.kowalski@gmail.com" type="email" autoComplete="email" required className={fieldClass} />
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <label htmlFor="subject">Temat</label>
           <input id="subject" name="Zakres współpracy" placeholder="np. Strona | Sklep | Social Media | Logo" type="text" required defaultValue={defaultSubject} className={fieldClass} />
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <label htmlFor="message">Wiadomość</label>
           <textarea id="message" name="Wiadomość" placeholder="Prowadzę firmę zajmującą się... chciałbym stworzyć..." required className={fieldClass + ' h-48 resize-none'} />
         </div>

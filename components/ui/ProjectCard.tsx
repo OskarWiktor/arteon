@@ -19,7 +19,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
         </div>
 
         <div className="flex grow flex-col px-6 py-4 md:px-7 md:py-5">
-          <span className="h4 line-clamp-2">{project.title}</span>
+          <h3 className="h5 line-clamp-2">{project.title}</h3>
           <p className={`mt-2 text-[#5e5e5e] ${size === 'normal' ? 'line-clamp-3' : 'line-clamp-2'}`}>{project.short}</p>
 
           <div className="mt-auto">

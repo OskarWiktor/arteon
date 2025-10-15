@@ -17,12 +17,12 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 
 export const metadata = {
-  title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
+  title: 'Grafika - logo, identyfikacja, materiały | Arteon',
   description: 'Logo i system identyfikacji. Materiały do druku i online. Spójność i prestiż od pierwszego kontaktu.',
   keywords: ['projektowanie logo', 'identyfikacja wizualna', 'grafika na stronę', 'materiały drukowane', 'brandbook'],
   alternates: { canonical: '/uslugi/grafika' },
   openGraph: {
-    title: 'Grafika i branding - logo, identyfikacja, materiały | Arteon',
+    title: 'Grafika - logo, identyfikacja, materiały | Arteon',
     description: 'Logo i system identyfikacji. Materiały do druku i online. Spójność i prestiż od pierwszego kontaktu.',
     url: 'https://www.arteonagency.pl/uslugi/grafika',
     type: 'website',
@@ -33,13 +33,8 @@ export default function OfferDesignPage() {
   return (
     <>
       <HeroBanner
-        title="Grafika i branding"
-        description={
-          <>
-            Logo, identyfikacja, social media, materiały drukowane.
-            <strong>Spójny design</strong>, który działa w sieci i offline.
-          </>
-        }
+        title="Grafika"
+        description={<>Stwórz unikatowy wizerunek swojej firmy, przy pomocy dedykowanej grafiki</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"
@@ -61,7 +56,7 @@ export default function OfferDesignPage() {
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/grafika`, label: 'Grafika' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <FeatureGrid
           title="Co dostajesz"
@@ -171,15 +166,15 @@ export default function OfferDesignPage() {
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <FeesSteps />
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy spójny wizerunek" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Grafika" />
+        <ContactForm title="Zbudujmy spójny wizerunek" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Grafika" />
 
         <Gap variant="line" />
 

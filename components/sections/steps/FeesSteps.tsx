@@ -27,16 +27,32 @@ const FeesStepsItems = [
       </span>
     ),
   },
+    {
+    title: 'Gwarancja i własność',
+    description: (
+      <span>
+        <strong>2 miesiące gwarancji</strong> po publikacji zgodnie z{' '}
+        <a
+          href="https://www.arteonagency.pl/regulamin"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4"
+        >
+          regulaminem
+        </a>
+        . Pełna <strong>własność plików oraz dostępy</strong>
+      </span>
+    ),
+  },
 ];
 
 export default function FeesSteps() {
   return (
     <SectionSteps
       items={FeesStepsItems}
-      title="Płatności"
-      subtitle="Zasady"
-      description="Nasza forma płatności = Twoja gwarancja"
-      disclaimer="Transparentny kontakt na każdym etapie pracy. Możliwość wrowadzania zmian i dostosowania projektu w trakcie realizacji"
+      title="Płatności i bezpieczeństwo"
+      subtitle="Zasady współpracy"
+      description="Posiadamy transparentne zasady płatności, dzięki którym, zawsze wiesz czego się spodziewać. Nasz system skonstruowany jest tak aby maksymalnie obniżyć Twój poziom ryzyka oraz abyś wiedział jak dokładnie prowadzimy projeky o różnych budżetach"
     />
   );
 }

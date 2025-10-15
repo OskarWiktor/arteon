@@ -51,8 +51,7 @@ export default function OfferWebPage() {
         title="Sklepy internetowe"
         description={
           <>
-            Projektujemy sklepy online, które sprzedają szybciej i skuteczniej.
-            <strong>Płatności, dostawy i marketing</strong> w jednym systemie.
+            Zwiększ swoją skuteczność, sprzedając produkty we własnym <strong>sklepie internetowym</strong>
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -76,7 +75,7 @@ export default function OfferWebPage() {
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/sklepy-internetowe`, label: 'Sklepy internetowe' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <FeatureGrid
           title="Co dostajesz"
@@ -147,8 +146,8 @@ export default function OfferWebPage() {
 
         <SectionPrices
           id="pricing-shops"
-          subtitle="Cennik sklepów internetowych"
-          title="Przykładowe realizacje"
+          subtitle="Przykładowe realizacje"
+          title="Cennik sklepów internetowych"
           plans={
             [
               {
@@ -227,15 +226,15 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <WorkSteps variant="web" />
+        <FeesSteps />
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="web" />
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy Twój sklep online" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Sklep internetowy" />
+        <ContactForm title="Zbudujmy Twój sklep online" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Sklep internetowy" />
 
         <Gap variant="line" />
 

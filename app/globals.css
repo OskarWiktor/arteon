@@ -50,8 +50,9 @@ body {
 }
 
 p,
-li {
-  @apply leading-relaxed font-normal text-balance;
+li,
+.p {
+  @apply leading-relaxed font-normal;
   font-size: clamp(15px, calc(15px + 3 * ((100vw - 360px) / 1080)), 18px);
 }
 

@@ -6,13 +6,13 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { RiPhoneLine, RiMailLine, RiMapPinLine } from 'react-icons/ri';
 
 export const metadata = {
-  title: 'Kontakt - wycena strony, sklepu i kampanii | Arteon',
-  description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i plan działań dla Twojej marki - Kraków i cała Polska.',
+  title: 'Kontakt - wycena Twojego plany | Arteon',
+  description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania',
   keywords: ['wycena strony', 'wycena sklepu', 'kontakt agencja', 'projekt graficzny', 'kampanie online'],
   alternates: { canonical: '/kontakt' },
   openGraph: {
-    title: 'Porozmawiajmy o Twoim projekcie | Arteon',
-    description: 'Szybka wycena i jasny plan. Transparentne zasady i gwarancja.',
+    title: 'Kontakt - wycena Twojego plany | Arteon',
+    description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania',
     url: 'https://www.arteonagency.pl/kontakt',
     type: 'website',
   },
@@ -24,7 +24,7 @@ export default function ContactPage() {
       <HeroBaner
         title="Porozmawiajmy o Twojej firmie"
         variant="center"
-        description="Skontaktuj się z nami - przygotujemy ofertę i plan działania szyty na miarę"
+        description="Wypełnij formularz i uzyskaj darmową wycenę dla swojej firmy"
         backgroundImage="/assets/bg/abstract-bg10.webp"
         overlay="black"
       />
@@ -37,23 +37,23 @@ export default function ContactPage() {
             {
               title: (
                 <>
-                  <span className="font-extrabold text-slate-600">1 </span>Wypełniasz formularz
+                  <span className="text-amber-600">1 </span>Wypełniasz formularz
                 </>
               ),
-              description: <>Opisujesz swój projekt: cel, zakres i wszelkie inspiracje</>,
+              description: <>Opisujesz swoją firmę, pomysł na rozwój oraz swoje potrzeby</>,
             },
             {
               title: (
                 <>
-                  <span className="font-extrabold text-slate-600">2 </span>Analizujemy potrzeby
+                  <span className="text-amber-600">2 </span>Analizujemy potrzeby
                 </>
               ),
-              description: <>Sprawdzamy Twoją branżę, analizujemy wymagania i dopracowujemy szczegóły</>,
+              description: <>Sprawdzamy Twoją branżę, analizujemy cele i tworzymy plan</>,
             },
             {
               title: (
                 <>
-                  <span className="font-extrabold text-slate-600">3 </span>Otrzymujesz ofertę
+                  <span className="text-amber-600">3 </span>Otrzymujesz ofertę
                 </>
               ),
               description: <>Wysyłamy ofertę wraz z wyceną i przewidywanym terminem realizacji</>,
@@ -61,10 +61,10 @@ export default function ContactPage() {
             {
               title: (
                 <>
-                  <span className="font-extrabold text-slate-600">4 </span>Startujemy z projektem
+                  <span className="text-amber-600">4 </span>Startujemy z projektem
                 </>
               ),
-              description: <>Decydujesz, kiedy ruszamy. Realizujemy projekt etapami lub od razu</>,
+              description: <>Decydujesz, kiedy ruszamy z realizacją</>,
             },
           ]}
           subtitle="Rozmowa"
@@ -73,7 +73,7 @@ export default function ContactPage() {
 
         <Gap size="sm" />
 
-        <ContactForm />
+        <ContactForm title="Rozwiń swoją firmę" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" />
 
         <Gap variant="line" />
 
@@ -104,9 +104,9 @@ export default function ContactPage() {
               ),
             },
             {
-              title: 'Godziny pracy',
+              title: 'Godziny otwarcia',
               icon: <RiMapPinLine />,
-              description: <span className="text-lg md:text-xl">Pracujemy od poniedziałku do piątku: 8 - 16</span>,
+              description: <span className="text-lg md:text-xl">Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8 - 16</span>,
             },
           ]}
           title="Dane kontaktowe"

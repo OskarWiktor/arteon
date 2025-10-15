@@ -49,12 +49,7 @@ export default function OfferMarketingPage() {
     <>
       <HeroBanner
         title="Marketing"
-        description={
-          <>
-            SEO, reklamy, social media.
-            <strong> Strategie, które dowożą efekt</strong> i zwiększają sprzedaż.
-          </>
-        }
+        description={<>Przyciągnij nowych klientów, przemyślanym działaniem marketingowym</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         variant="left"
@@ -74,7 +69,7 @@ export default function OfferMarketingPage() {
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/marketing`, label: 'Marketing' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <FeatureGrid
           title="Co dostajesz"
@@ -237,15 +232,15 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <WorkSteps variant="marketing" />
+        <FeesSteps />
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="marketing" />
 
         <Gap size="sm" />
 
-        <ContactForm title="Postaw na skuteczny marketing" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Marketing" />
+        <ContactForm title="Postaw na skuteczny marketing" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Marketing" />
 
         <Gap variant="line" />
 

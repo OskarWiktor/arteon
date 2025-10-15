@@ -48,11 +48,7 @@ export default function OfferContentPage() {
     <>
       <HeroBanner
         title="Tworzenie treści"
-        description={
-          <>
-            Teksty, które <strong>pozycjonują i sprzedają</strong>. Od stron i blogów, po e-commerce i social media.
-          </>
-        }
+        description={<>Przyciągnij nowych klientów poprzez treści, które trafiają idealnie do wymarzonych odbiorców</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         variant="left"
@@ -72,7 +68,7 @@ export default function OfferContentPage() {
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/tworzenie-tresci`, label: 'Tworzenie treści' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <FeatureGrid
           title="Co dostajesz"
@@ -237,16 +233,16 @@ export default function OfferContentPage() {
         />
 
         <Gap variant="line" />
-
-        <WorkSteps variant="content" />
+        
+        <FeesSteps />
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="content" />
 
         <Gap size="sm" />
 
-        <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Treści" />
+        <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Treści" />
 
         <Gap variant="line" />
 

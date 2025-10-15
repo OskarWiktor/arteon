@@ -1,4 +1,18 @@
-import { RiShieldCheckLine, RiSpeedFill, RiBarChart2Fill, RiCodeSSlashFill, RiArticleLine, RiBookOpenLine, RiDatabase2Line, RiDeviceLine, RiPencilRuler2Line } from 'react-icons/ri';
+import {
+  RiShieldCheckLine,
+  RiSpeedFill,
+  RiBarChart2Fill,
+  RiCodeSSlashFill,
+  RiArticleLine,
+  RiBookOpenLine,
+  RiDeviceLine,
+  RiPencilRuler2Line,
+  RiCalendarCheckLine,
+  RiKey2Line,
+  RiLifebuoyLine,
+  RiMessage2Line,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
@@ -14,8 +28,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
-import { IoAccessibility } from 'react-icons/io5';
 import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
   title: 'Strony internetowe - projekt i wdrożenie | Arteon',
@@ -37,7 +51,7 @@ export default function OfferWebPage() {
         title="Strony internetowe"
         description={
           <>
-            Tworzymy strony WWW, które łączą estetykę, technologię i psychologię. <strong>Standard globalnych marek</strong> - dla Twojego biznesu.
+            Przyciągnij nowych klientów dzięki własnej <strong>stronie internetowej</strong>. Zbuduj profesjonalny wizerunek w sieci i zwiększą swoją widoczność
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -61,63 +75,117 @@ export default function OfferWebPage() {
       <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/strony-internetowe`, label: 'Strony internetowe' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
+
+        <SectionInfo title="Co zyskujesz dzięki stronie internetowej?">
+          <p>
+            Własna strona internetowa daje Twojej firmie nowe źródło klientów. Aż 76% osób, szukających lokalnie usług w Google, trafia do siedziby firmy w przeciągu 24 godzin a aż 28% tych wyszukań,
+            kończy się zakupem{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
+              (źródło)
+            </a>
+            . Firmowa <strong>strona internetowa pracuje na Twój sukces 24/7</strong>: pokazuje Twoją ofertę, buduje zaufanie, zbiera zapytania - nawet gdy masz wyciszony telefon
+          </p>
+          <br />
+          <p>
+            84% konsumentów uważa firmę z własną stroną internetową za bardziej wiarygodną{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://blog.verisign.com/getting-online/five-reasons-every-small-business-needs-a-website/">
+              (źródło)
+            </a>{' '}
+            a aż 56% osób nie ufa firmie, która nie posiada własnej strony{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.verisign.com/assets/Research-small-business-september2013.pdf">
+              (źródło)
+            </a>
+            . <strong>Dobra strona internetowa robi</strong> za Ciebie aż <strong>3 rzeczy naraz</strong>:
+          </p>
+          <br />
+          <ul className="ml-5 list-disc">
+            <li>Odnajduje potencjalnych klientów</li>
+            <li>Zapoznaje ich z Twoją ofertą</li>
+            <li>Pokazuje, jak skorzystać z Twojej oferty</li>
+          </ul>
+          <br />
+          <p>
+            Trend rynkowy pokazuje jasno: {'>'}70% małych firm deklaruje wzrost przychodów po uruchomieniu strony internetowej{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.networksolutions.com/blog/small-business-website-statistics/">
+              (źródło)
+            </a>
+          </p>
+        </SectionInfo>
+
+        <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dostajesz"
+          title="Co zyskujesz tworząc stronę internetową z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {
               title: 'Indywidualny projekt graficzny',
+              description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Cię na tle konkurencji</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Redakcja treści dla lepszej konwersji i SEO',
+              title: 'Redakcję treści dla lepszej pozycji w Google',
+              description: <>Teksty, które jasno wyjaśniają ofertę i prowadzą do kontaktu</>,
               icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Deklaracja Dostępności (WCAG 2.1 AA)',
-              icon: <IoAccessibility className="h-5 w-5 text-slate-500" />,
-            },
-            {
-              title: 'Wsparcie prawne: polityki i regulaminy',
+              title: 'Wsparcie prawne przy politykach i regulaminach',
+              description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
               icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Bezpieczeństwo i certyfikaty SSL',
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Pełna Responsywność na różnych urządzeniach',
+              title: 'Strona dostosowana do różnych urządzeń',
+              description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
               icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Łatwe zarządzanie treścią (CMS)',
-              icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Dedykowane szkolenie PDF z obsługi strony',
+              description: <>Proste instrukcje, stworzone tak, abyś samodzielnie mógł edytować stronę</>,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Darmowe, dedykowane szkolenie PDF z obsługi',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              title: 'Zero ukrytych kosztów',
+              description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieźąco, ile coś kosztuje</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Termin i plan z kamieniami milowymi',
+              description: <>Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie gotowe i kiedy</>,
+              icon: <RiCalendarCheckLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Transparentna współpraca na bieżąco',
+              description: <>Informujemy Cię regularnie o postępach naszych prac</>,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pełna własność i dostępy',
+              description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dalsze wsparcie + 2 miesiące gwarancji',
+              description: <>Po publikacji pomagamy w dalszym rozwoju. Ewentualne błędy poprawiamy w ramach gwarancji</>,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje stron internetowych" category="strona" subtitle="Portfolio" />
+        <ProjectsOverview title="Nasze wyróżnione realizacje stron internetowych" category="strona" subtitle="Portfolio" />
 
-        <Gap />
-      </Wrapper>
+        <Gap variant="line" />
 
-      <TechSteps />
+        <FeesSteps />
 
-      <Wrapper>
-        <Gap />
+        <Gap variant="line" />
 
         <SectionPrices
           id="pricing-web"
-          subtitle="Cennik stron internetowych"
-          title="Przykładowe realizacje"
+          subtitle="Przykładowe realizacje"
+          title="Cennik stron internetowych"
           plans={
             [
               {
@@ -194,17 +262,19 @@ export default function OfferWebPage() {
           }
         />
 
-        <Gap variant="line" />
+        <Gap />
+      </Wrapper>
+
+      <TechSteps />
+
+      <Wrapper>
+        <Gap />
 
         <WorkSteps variant="web" />
 
-        <Gap variant="line" />
-
-        <FeesSteps />
-
         <Gap size="sm" />
 
-        <ContactForm title="Zamów stronę internetową" description="Opisz swoją wizję, potrzeby i cele a my przygotujemy bezpłatną wycenę" defaultSubject="Strona internetowa" />
+        <ContactForm title="Zamów stronę internetową" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Strona internetowa" />
 
         <Gap variant="line" />
 

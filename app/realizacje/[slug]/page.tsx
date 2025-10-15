@@ -250,7 +250,7 @@ export default function ProjectPage({ params }: PageProps) {
 
           {(project.description || project.task) && (
             <>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
               <SectionInfo title="Kontekst projektu">
                 <Block content={project.description} />
                 {project.task && (
@@ -259,7 +259,7 @@ export default function ProjectPage({ params }: PageProps) {
                   </p>
                 )}
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           )}
 
@@ -268,7 +268,7 @@ export default function ProjectPage({ params }: PageProps) {
               <SectionInfo title="Cele biznesowe">
                 <Block content={project.goals} />
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
@@ -284,7 +284,7 @@ export default function ProjectPage({ params }: PageProps) {
                   ))}
                 </ul>
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
@@ -293,7 +293,7 @@ export default function ProjectPage({ params }: PageProps) {
               <SectionInfo title="Zakres prac">
                 <ul className="ml-6 list-disc">{project.deliverables.map((d, i) => (typeof d === 'string' ? <li key={i} dangerouslySetInnerHTML={{ __html: d }} /> : <li key={i}>{d as any}</li>))}</ul>
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
@@ -316,7 +316,7 @@ export default function ProjectPage({ params }: PageProps) {
                 </div>
                 {project.beforeAfter.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: project.beforeAfter.note }} />}
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
@@ -325,7 +325,7 @@ export default function ProjectPage({ params }: PageProps) {
               <SectionInfo title="Wyzwania">
                 <Block content={project.challenges} />
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
@@ -334,7 +334,7 @@ export default function ProjectPage({ params }: PageProps) {
               <SectionInfo title="Rozwiązania">
                 <Block content={project.solutions} />
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
@@ -342,7 +342,7 @@ export default function ProjectPage({ params }: PageProps) {
 
           {project.outcomes?.length ? (
             <>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
               <SectionInfo title="Rezultaty">
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {project.outcomes.map((o, i) => (
@@ -355,7 +355,7 @@ export default function ProjectPage({ params }: PageProps) {
 
           {project.faq?.length ? (
             <>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
               <FaqPanels title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} pageUrl={projectUrl(project.slug)} />
             </>
           ) : null}
@@ -378,7 +378,7 @@ export default function ProjectPage({ params }: PageProps) {
                   )}
                 </blockquote>
               </SectionInfo>
-              <Gap size="sm" />
+              <Gap size="sm" variant="line" />
             </>
           ) : null}
 

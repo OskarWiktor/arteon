@@ -21,13 +21,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroBaner
-        title="O nas"
-        subtitle="Arteon - Elastyczny partner"
-        description="Budujemy strony i komunikację - z naciskiem na czytelność i efekt twst dasdw dz ad"
-        backgroundImage="/assets/bg/abstract-bg8.webp"
-        overlay="black"
-      />
+      <HeroBaner title="O nas" description="Arteon - Elastyczny partner dla Twojej firmy" backgroundImage="/assets/bg/abstract-bg8.webp" overlay="black" variant="center" />
       <BenefitBelt
         items={[
           { icon: <RiMegaphoneLine />, label: 'Doświadczenie w pracy dla marek globalnych' },
@@ -38,7 +32,7 @@ export default function AboutPage() {
         <Gap size="sm" />
 
         <SectionBasic imageSrc="/assets/arteon-sygnet-01.png" imageAlt="logo arteon" title="Kim jesteśmy">
-          <p>W Arteon wierzymy, że wysoka jakość usług online, powinna być dostępna dla każdego. Wdrażamy doświadczenie w pracy dla globalnych marek w małych i średnich biznesach.</p>
+          <p>W Arteon wierzymy, że wysoka jakość usług, powinna być dostępna dla każdego. Wdrażamy doświadczenie w pracy dla globalnych marek w małych i średnich biznesach.</p>
           <p className="mt-2">
             Tworzymy nowoczesne strony internetowe, sklepy online, blogi i aplikacje webowe. Projektujemy identyfikacje wizualne, prowadzimy marketing internetowy, pozycjonowanie oraz kampanie
             reklamowe. Przygotowujemy treści sprzedażowe i blogowe, dbając o to, by Twoja firma była widoczna w sieci i przyciągała właściwych klientów. Łączymy design, technologię i strategię, aby
