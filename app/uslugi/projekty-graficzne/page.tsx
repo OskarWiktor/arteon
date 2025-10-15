@@ -38,15 +38,15 @@ import {
 import Script from 'next/script';
 
 const SERVICES = [
-  { name: 'Projekt wizytówki', path: '/projekt-wizytowki' },
-  { name: 'Projekt ulotki', path: '/projekt-ulotki' },
-  { name: 'Teczka ofertowa', path: '/projekt-teczki-ofertowej' },
-  { name: 'Papier firmowy', path: '/projekt-papieru-firmowego' },
-  { name: 'Odzież firmowa', path: '/projekt-odziezy-firmowej' },
-  { name: 'Projekt logo', path: '/projekt-logo' },
-  { name: 'Projekt katalogu', path: '/projekt-katalogu' },
-  { name: 'Identyfikacja wizualna', path: '/projekt-identyfikacji-wizualnej' },
-  { name: 'Projekt graficzny strony', path: '/projekt-graficzny-strony' },
+  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne//projekt-wizytowki' },
+  { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne//projekt-ulotki' },
+  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne//projekt-teczki-ofertowej' },
+  { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne//projekt-papieru-firmowego' },
+  { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne//projekt-odziezy-firmowej' },
+  { name: 'Projekt logo', path: '/uslugi/projekty-graficzne//projekt-logo' },
+  { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne//projekt-katalogu' },
+  { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne//projekt-identyfikacji-wizualnej' },
+  { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne//projekt-graficzny-strony' },
 ];
 
 function ItemListSchema() {
@@ -261,7 +261,7 @@ export default function OfferDesignPage() {
                     do druku.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-wizytowki">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -278,7 +278,7 @@ export default function OfferDesignPage() {
                     kontaktu.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-ulotki">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -294,7 +294,7 @@ export default function OfferDesignPage() {
                     Teczka ofertowa podnosi prestiż firmy i buduje zaufanie. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał firmowy.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-teczki-ofertowej">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -308,7 +308,7 @@ export default function OfferDesignPage() {
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">Papier firmowy wzmacnia profesjonalny wizerunek w każdej korespondencji. Przygotowujemy szablony Word i PDF i wersję gotową do druku.</p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-papieru-firmowego">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -324,7 +324,7 @@ export default function OfferDesignPage() {
                     Odzież z logo zwiększa rozpoznawalność marki. Projektujemy nadruki i hafty dla zespołów, eventów i punktów sprzedaży - w wersjach pod sitodruk, DTF lub haft komputerowy.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-odziezy-firmowej">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-odziezy-firmowej">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -341,7 +341,7 @@ export default function OfferDesignPage() {
                     mini-księgę znaku.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-logo">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-logo">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -358,7 +358,7 @@ export default function OfferDesignPage() {
                     drukowanej lub online.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-katalogu">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -374,7 +374,7 @@ export default function OfferDesignPage() {
                     Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Projektujemy identyfikację, która buduje zaufanie i spójność w każdym punkcie styku z klientem.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-identyfikacji-wizualnej">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -390,7 +390,7 @@ export default function OfferDesignPage() {
                     Makiety i layouty stron internetowych tworzone z myślą o konwersji i doświadczeniu użytkownika. Łączymy estetykę, UX i SEO, aby Twoja witryna wyróżniała się w sieci.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/projekt-graficzny-strony">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
                       Przejdź do oferty
                     </Button>
                   </div>
