@@ -131,11 +131,11 @@ export default function OfferWebPage() {
           <br />
 
           <p>
-            Średni poziom porzuceń koszyka to wciąż <strong>~70%</strong>. We własnym sklepie internetowym możesz uprościć ścieżkę zakupu oraz odzyskać te transakcje{' '}
+            Średni poziom porzuceń koszyka to wciąż <strong>~70% </strong>{' '}
             <a target="_blank" className="inline-block underline underline-offset-4" href="https://baymard.com/lists/cart-abandonment-rate">
               (źródło)
             </a>
-            .
+            . We własnym sklepie internetowym możesz uprościć ścieżkę zakupu oraz odzyskać te transakcje.
           </p>
 
           <br />
@@ -204,7 +204,7 @@ export default function OfferWebPage() {
             },
             {
               title: 'Transparentna współpraca na bieżąco',
-              description: <>Informujemy Cię regularnie o postępach naszych prac</>,
+              description: <>Informujemy Cię regularnie o postępach naszych prac nad Twoim sklepem</>,
               icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {

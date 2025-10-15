@@ -14,10 +14,13 @@ import {
   RiCustomerService2Line,
   RiBarChart2Line,
   RiBookOpenLine,
-  RiDatabase2Line,
   RiDeviceLine,
   RiPencilRuler2Line,
-  RiShareForwardLine,
+  RiMoneyDollarCircleLine,
+  RiBrushLine,
+  RiKey2Line,
+  RiLifebuoyLine,
+  RiMessage2Line,
 } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -25,8 +28,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
-import { IoAccessibility } from 'react-icons/io5';
 import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
@@ -69,41 +72,106 @@ export default function OfferBlogPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <SectionInfo title="Co zyskujesz tworząc blog internetowy?">
+          <p>
+            <strong>Stworzenie bloga internetowego daje Twojej firmie dodatkowe stałe źródło ruchu i zapytań.</strong> Artykuły na blogu internetowym potrafią generować dużą, znaczącą ilość wejść na
+            stronę - <strong>ok. 55% więcej odwiedzin</strong> porównując z firmami bez bloga{' '}
+            <a target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4" href="https://offers.hubspot.com/lessons-from-marketing-stats">
+              (źródło)
+            </a>
+            . Regularna publikacja artykułów zwiększa widoczność w Google i ściąga nowych klientów.
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Blog internetowy daje więcej odwiedzić przy niskim koszcie.</strong> Marketing skoncentrowany wokół tworzenia treści, generuje ok.
+            <strong> 3x więcej odwiedzin</strong> i kosztuje ok. <strong>62% mniej</strong> niż działania outbound - płatne reklamy, „zimne” maile i telefony sprzedażowe{' '}
+            <a target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4" href="https://www.demandsage.com/business-blogging-statistics">
+              (źródło)
+            </a>
+            . Blog online to stabilny kanał pozyskiwania dodatkowych klientów.
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Klienci wolą pomocne, edukacyjne i ekspreckie treści niż reklamy.</strong> Aż <strong>~70%</strong> odbiorców woli poznawać firmę poprzez artykuły, a nie reklamy - to prosty sposób
+            na budowanie zaufania i dodatkowe kontakty{' '}
+            <a target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4" href="https://www.demandsage.com/business-blogging-statistics">
+              (źródło)
+            </a>
+            .
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Dobry blog online robi za Ciebie trzy rzeczy naraz:</strong>
+          </p>
+
+          <ul className="ml-5 list-disc">
+            <li>Przyciąga właściwy ruch z Google,</li>
+            <li>Wyjaśnia Twoją ofertę i buduje rolę lidera poprzez przykłady oraz porady,</li>
+            <li>Konwertuje czytelników na zapytania oraz sprzedaż,</li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
         <FeatureGrid
           title="Co zyskujesz tworząc blog internetowy z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'Indywidualny projekt graficzny bloga',
+              title: 'Indywidualny projekt graficzny bloga online',
+              description: <>Wygląd, który od pierwszych sekund buduje zaufanie i zachęca do czytania</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Deklaracja Dostępności (WCAG 2.1 AA)',
-              icon: <IoAccessibility className="h-5 w-5 text-slate-500" />,
+              title: 'Dobór i obróbka grafik do wpisów',
+              description: <>Pomagamy dobrać spójne grafiki i dopasowujemy je do bloga: kadry, proporcje, waga</>,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Wsparcie prawne: polityka prywatności, regulaminy',
+              title: 'Wsparcie prawne przy politykach i zgodach',
+              description: <>Przeprowadzamy Cię przez wymagania (polityki, cookies, zgody)</>,
               icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Pełna Responsywność i komfort czytania',
+              title: 'Blog dostosowany do różnych urządzeń',
+              description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
               icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Łatwe zarządzanie wpisami i kategoriami (CMS)',
-              icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Dedykowane szkolenie PDF z obsługi bloga',
+              description: <>Proste instrukcje: jak dodać wpis, zdjęcia i linki</>,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Optymalizacja techniczna SEO',
+              title: 'Zero ukrytych kosztów',
+              description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Transparentna współpraca na bieżąco',
+              description: <>Informujemy Cię regularnie o postępach prac nad Twoim blogiem</>,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pełną własność i dostępy',
+              description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Proste raporty wyników',
+              description: <>Wdrażamy narzędzia analityczne pokazujące skąd jest ruch i które wpisy pracują najlepiej</>,
               icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Integracja z social mediami i newsletterem',
-              icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Darmowe, dedykowane szkolenie PDF z obsługi',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              title: 'Dalsze wsparcie + 2 miesiące gwarancji',
+              description: <>Po publikacji pomagamy w dalszym rozwoju bloga. Ewentualne błędy poprawiamy w ramach gwarancji</>,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />

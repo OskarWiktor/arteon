@@ -156,7 +156,7 @@ export default function OfferWebPage() {
             },
             {
               title: 'Transparentna współpraca na bieżąco',
-              description: <>Informujemy Cię regularnie o postępach naszych prac</>,
+              description: <>Informujemy Cię regularnie o postępach prac nad Twoją stroną</>,
               icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {
