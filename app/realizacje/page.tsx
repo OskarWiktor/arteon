@@ -4,7 +4,7 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 
 export const metadata = {
-  title: 'Portfolio: strony, sklepy, grafika i kampanie | Arteon',
+  title: 'Portfolio: strony, sklepy, projektowanie graficzne i kampanie | Arteon',
   description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
   keywords: ['portfolio stron', 'realizacje sklepów', 'case study', 'projekty graficzne', 'kampanie marketingowe'],
   alternates: { canonical: '/realizacje' },

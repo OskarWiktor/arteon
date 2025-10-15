@@ -7,7 +7,7 @@ const offerLinks = [
   { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
-  { href: '/uslugi/grafika', title: 'Grafika' },
+  { href: '/uslugi/projektowanie-graficzne', title: 'Projektowanie graficzne' },
   { href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' },
   { href: '/uslugi/marketing', title: 'Marketing' },
 ];

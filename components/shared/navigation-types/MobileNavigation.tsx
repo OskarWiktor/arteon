@@ -19,7 +19,7 @@ const SERVICES = [
   { href: '/uslugi/strony-internetowe', icon: <RiCodeSSlashFill aria-hidden />, title: 'Strony internetowe' },
   { href: '/uslugi/sklepy-internetowe', icon: <RiShoppingCartLine aria-hidden />, title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine aria-hidden />, title: 'Blogi internetowe' },
-  { href: '/uslugi/grafika', icon: <RiPaletteLine aria-hidden />, title: 'Grafika' },
+  { href: '/uslugi/projektowanie-graficzne', icon: <RiPaletteLine aria-hidden />, title: 'Projektowanie graficzne' },
   { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine aria-hidden />, title: 'Tworzenie treści' },
   { href: '/uslugi/marketing', icon: <RiMegaphoneLine aria-hidden />, title: 'Marketing' },
 ];

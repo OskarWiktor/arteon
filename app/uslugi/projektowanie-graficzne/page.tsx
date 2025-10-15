@@ -17,14 +17,14 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 
 export const metadata = {
-  title: 'Grafika - logo, identyfikacja, materiały | Arteon',
+  title: 'Projektowanie graficzne - logo, identyfikacja, materiały | Arteon',
   description: 'Logo i system identyfikacji. Materiały do druku i online. Spójność i prestiż od pierwszego kontaktu.',
   keywords: ['projektowanie logo', 'identyfikacja wizualna', 'grafika na stronę', 'materiały drukowane', 'brandbook'],
-  alternates: { canonical: '/uslugi/grafika' },
+  alternates: { canonical: '/uslugi/projektowanie-graficzne' },
   openGraph: {
-    title: 'Grafika - logo, identyfikacja, materiały | Arteon',
+    title: 'Projektowanie graficzne - logo, identyfikacja, materiały | Arteon',
     description: 'Logo i system identyfikacji. Materiały do druku i online. Spójność i prestiż od pierwszego kontaktu.',
-    url: 'https://www.arteonagency.pl/uslugi/grafika',
+    url: 'https://www.arteonagency.pl/uslugi/projektowanie-graficzne',
     type: 'website',
   },
 } as const;
@@ -33,7 +33,7 @@ export default function OfferDesignPage() {
   return (
     <>
       <HeroBanner
-        title="Grafika"
+        title="Projektowanie graficzne"
         description={<>Stwórz unikatowy wizerunek swojej firmy, przy pomocy dedykowanej grafiki</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
@@ -53,7 +53,7 @@ export default function OfferDesignPage() {
         ]}
       />
 
-      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/grafika`, label: 'Grafika' }} includeJsonLd />
+      <Breadcrumbs second={{ href: '/uslugi', label: 'Usługi' }} third={{ href: `/uslugi/projektowanie-graficzne`, label: 'Projektowanie graficzne' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="xs" />
@@ -174,12 +174,12 @@ export default function OfferDesignPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy wizerunek Twojej firmy" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę projektu graficznego" defaultSubject="Grafika" />
+        <ContactForm title="Zbudujmy wizerunek Twojej firmy" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę projektu graficznego" defaultSubject="Projektowanie graficzne" />
 
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/grafika"
+          pageUrl="https://www.arteonagency.pl/uslugi/projektowanie-graficzne"
           items={[
             {
               question: 'Czy mogę zamówić cały pakiet identyfikacji wizualnej?',

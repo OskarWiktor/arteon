@@ -67,7 +67,7 @@ const items = [
   },
   {
     icon: <RiPaletteLine className="h-8 w-8" />,
-    title: 'Grafika',
+    title: 'Projektowanie graficzne',
     subtitle: 'od 180 zł',
     description: (
       <div className="flex h-full flex-col">
@@ -78,7 +78,7 @@ const items = [
           <li>Makiety stron</li>
         </ul>
         <div className="mt-auto">
-          <Button arrow link="/uslugi/grafika">
+          <Button arrow link="/uslugi/projektowanie-graficzne">
             Sprawdź ofertę
           </Button>
         </div>

@@ -44,7 +44,7 @@ export default function HomePage() {
           { icon: <RiCodeSSlashFill />, label: 'Strony' },
           { icon: <RiShoppingCartLine />, label: 'Sklepy' },
           { icon: <RiArticleLine />, label: 'Blogi' },
-          { icon: <RiPaletteLine />, label: 'Grafika' },
+          { icon: <RiPaletteLine />, label: 'Projektowanie graficzne' },
           { icon: <RiFileTextLine />, label: 'Treści' },
           { icon: <RiMegaphoneLine />, label: 'Marketing' },
         ]}
