@@ -49,14 +49,12 @@ export default function OfferDesignXxxPage() {
           { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
         ]}
       />
-
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{ href: `/uslugi/projekty-graficzne/projekt-odziezy-firmowej`, label: 'Projekt odzieży firmowej' }}
         includeJsonLd
       />
-
       <Wrapper>
         <Gap size="xs" />
 
@@ -129,8 +127,16 @@ export default function OfferDesignXxxPage() {
 
         <Gap size="sm" />
       </Wrapper>
-
-      <CTABaner title="xxx" description="xxx" primaryLabel="Skontaktuj się" primaryLink="/kontakt" backgroundImage="/assets/bg/abstract-bg15.webp" overlay="black" />
+      <CTABaner
+        title="Ubierz zespół w tożsamość"
+        description="Zaprojektujemy nadruki i hafty, które wyróżniają markę w terenie."
+        primaryLabel="Skontaktuj się"
+        primaryLink="/kontakt"
+        secondaryLabel="Poznaj usługi graficzne"
+        secondaryLink="/uslugi/projekty-graficzne"
+        backgroundImage="/assets/bg/abstract-bg15.webp"
+        overlay="black"
+      />
     </>
   );
 }

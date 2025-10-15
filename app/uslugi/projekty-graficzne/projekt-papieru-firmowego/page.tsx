@@ -135,7 +135,16 @@ export default function OfferDesignXxxPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner title="xxx" description="xxx" primaryLabel="Skontaktuj się" primaryLink="/kontakt" backgroundImage="/assets/bg/abstract-bg15.webp" overlay="black" />
+      <CTABaner
+        title="Niech korespondencja pracuje na markę"
+        description="Stworzymy papier firmowy, który wygląda profesjonalnie i czytelnie."
+        primaryLabel="Skontaktuj się"
+        primaryLink="/kontakt"
+        secondaryLabel="Poznaj usługi graficzne"
+        secondaryLink="/uslugi/projekty-graficzne"
+        backgroundImage="/assets/bg/abstract-bg15.webp"
+        overlay="black"
+      />
     </>
   );
 }

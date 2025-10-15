@@ -41,7 +41,6 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
-
       <BenefitBelt
         items={[
           { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
@@ -50,14 +49,12 @@ export default function OfferDesignXxxPage() {
           { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
         ]}
       />
-
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{ href: `/uslugi/projekty-graficzne/projekt-wizytowki`, label: 'xxx' }}
         includeJsonLd
       />
-
       <Wrapper>
         <Gap size="xs" />
 
@@ -141,8 +138,16 @@ export default function OfferDesignXxxPage() {
 
         <Gap size="sm" />
       </Wrapper>
-
-      <CTABaner title="xxx" description="xxx" primaryLabel="Skontaktuj się" primaryLink="/kontakt" backgroundImage="/assets/bg/abstract-bg15.webp" overlay="black" />
+      <CTABaner
+        title="Zrób mocne pierwsze wrażenie"
+        description="Stworzymy wizytówkę, która mówi jasno i buduje zaufanie."
+        primaryLabel="Skontaktuj się"
+        primaryLink="/kontakt"
+        secondaryLabel="Poznaj usługi graficzne"
+        secondaryLink="/uslugi/projekty-graficzne"
+        backgroundImage="/assets/bg/abstract-bg15.webp"
+        overlay="black"
+      />
     </>
   );
 }
