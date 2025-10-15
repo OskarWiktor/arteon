@@ -72,7 +72,7 @@ export default function OfferMarketingPage() {
         <Gap size="xs" />
 
         <FeatureGrid
-          title="Co dostajesz"
+          title="Co zyskujesz zlecając nam marketing?"
           subtitle="Nasz standard pracy"
           items={[
             {

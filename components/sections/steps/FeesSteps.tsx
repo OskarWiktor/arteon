@@ -27,17 +27,12 @@ const FeesStepsItems = [
       </span>
     ),
   },
-    {
+  {
     title: 'Gwarancja i własność',
     description: (
       <span>
         <strong>2 miesiące gwarancji</strong> po publikacji zgodnie z{' '}
-        <a
-          href="https://www.arteonagency.pl/regulamin"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline underline-offset-4"
-        >
+        <a href="https://www.arteonagency.pl/regulamin" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
           regulaminem
         </a>
         . Pełna <strong>własność plików oraz dostępy</strong>

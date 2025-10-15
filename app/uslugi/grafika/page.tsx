@@ -59,7 +59,7 @@ export default function OfferDesignPage() {
         <Gap size="xs" />
 
         <FeatureGrid
-          title="Co dostajesz"
+          title="Co zyskujesz realizując projekt graficzny z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {

@@ -70,7 +70,7 @@ export default function OfferBlogPage() {
         <Gap size="xs" />
 
         <FeatureGrid
-          title="Co dostajesz"
+          title="Co zyskujesz tworząc blog internetowy z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -112,13 +112,11 @@ export default function OfferBlogPage() {
 
         <ProjectsOverview title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
 
-        <Gap />
-      </Wrapper>
+        <Gap variant="line" />
 
-      <TechSteps />
+        <FeesSteps />
 
-      <Wrapper>
-        <Gap />
+        <Gap variant="line" />
 
         <SectionPrices
           id="pricing-blogs"
@@ -200,11 +198,13 @@ export default function OfferBlogPage() {
           }
         />
 
-        <Gap variant="line" />
+        <Gap />
+      </Wrapper>
 
-        <FeesSteps />
+      <TechSteps />
 
-        <Gap variant="line" />
+      <Wrapper>
+        <Gap />
 
         <WorkSteps variant="web" />
 

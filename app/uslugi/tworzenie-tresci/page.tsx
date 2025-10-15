@@ -71,7 +71,7 @@ export default function OfferContentPage() {
         <Gap size="xs" />
 
         <FeatureGrid
-          title="Co dostajesz"
+          title="Co zyskujesz tworząc treści z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -233,7 +233,7 @@ export default function OfferContentPage() {
         />
 
         <Gap variant="line" />
-        
+
         <FeesSteps />
 
         <Gap variant="line" />

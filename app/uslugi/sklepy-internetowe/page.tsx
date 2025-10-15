@@ -78,7 +78,7 @@ export default function OfferWebPage() {
         <Gap size="xs" />
 
         <FeatureGrid
-          title="Co dostajesz"
+          title="Co zyskujesz tworząc sklep internetowy z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -136,13 +136,11 @@ export default function OfferWebPage() {
 
         <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
 
-        <Gap />
-      </Wrapper>
+        <Gap variant="line" />
 
-      <TechSteps />
+        <FeesSteps />
 
-      <Wrapper>
-        <Gap />
+        <Gap variant="line" />
 
         <SectionPrices
           id="pricing-shops"
@@ -224,11 +222,13 @@ export default function OfferWebPage() {
           }
         />
 
-        <Gap variant="line" />
+        <Gap />
+      </Wrapper>
 
-        <FeesSteps />
+      <TechSteps />
 
-        <Gap variant="line" />
+      <Wrapper>
+        <Gap />
 
         <WorkSteps variant="web" />
 
