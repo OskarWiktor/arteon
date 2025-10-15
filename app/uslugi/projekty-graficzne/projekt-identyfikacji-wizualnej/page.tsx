@@ -132,7 +132,11 @@ export default function OfferDesignXxxPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy wizerunek Twojej firmy" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę projektu graficznego" defaultSubject="Projekty graficzne" />
+        <ContactForm
+          title="Zamów identyfikację wizualną"
+          description="Napisz, jakiego zakresu identyfikacji potrzebujesz (logo, kolory, typografia, materiały) oraz czym się zajmujesz. Otrzymasz wycenę i harmonogram prac."
+          defaultSubject="Identyfikacja wizualna"
+        />
 
         <Gap variant="line" />
 
