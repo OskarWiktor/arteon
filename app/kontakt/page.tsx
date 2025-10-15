@@ -73,7 +73,7 @@ export default function ContactPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Rozwiń swoją firmę" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" />
+        <ContactForm title="Rozwiń swoją firmę" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę swojego projektu" />
 
         <Gap variant="line" />
 

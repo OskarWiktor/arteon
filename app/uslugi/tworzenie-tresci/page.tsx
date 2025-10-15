@@ -242,7 +242,7 @@ export default function OfferContentPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Treści" />
+        <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę tworzenia treści" defaultSubject="Treści" />
 
         <Gap variant="line" />
 

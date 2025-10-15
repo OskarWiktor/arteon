@@ -7,11 +7,11 @@ import {
   RiBookOpenLine,
   RiDeviceLine,
   RiPencilRuler2Line,
-  RiCalendarCheckLine,
   RiKey2Line,
   RiLifebuoyLine,
   RiMessage2Line,
   RiMoneyDollarCircleLine,
+  RiBrushLine,
 } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBaner';
@@ -79,8 +79,8 @@ export default function OfferWebPage() {
 
         <SectionInfo title="Co zyskujesz dzięki stronie internetowej?">
           <p>
-            Własna strona internetowa daje Twojej firmie nowe źródło klientów. Aż 76% osób, szukających lokalnie usług w Google, trafia do siedziby firmy w przeciągu 24 godzin a aż 28% tych wyszukań,
-            kończy się zakupem{' '}
+            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób, szukających lokalnie usług w Google, trafia do siedziby firmy w przeciągu 24 godzin a 28%
+            tych wyszukań, kończy się zakupem{' '}
             <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
               (źródło)
             </a>
@@ -92,7 +92,7 @@ export default function OfferWebPage() {
             <a target="_blank" className="inline-block underline underline-offset-4" href="https://blog.verisign.com/getting-online/five-reasons-every-small-business-needs-a-website/">
               (źródło)
             </a>{' '}
-            a aż 56% osób nie ufa firmie, która nie posiada własnej strony{' '}
+            ,a aż 56% osób nie ufa firmie, która nie posiada własnej strony{' '}
             <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.verisign.com/assets/Research-small-business-september2013.pdf">
               (źródło)
             </a>
@@ -100,9 +100,9 @@ export default function OfferWebPage() {
           </p>
           <br />
           <ul className="ml-5 list-disc">
-            <li>Odnajduje potencjalnych klientów</li>
-            <li>Zapoznaje ich z Twoją ofertą</li>
-            <li>Pokazuje, jak skorzystać z Twojej oferty</li>
+            <li>Odnajduje potencjalnych klientów,</li>
+            <li>Zapoznaje ich z Twoją ofertą,</li>
+            <li>Pokazuje, jak skorzystać z Twojej oferty,</li>
           </ul>
           <br />
           <p>
@@ -120,8 +120,8 @@ export default function OfferWebPage() {
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'Indywidualny projekt graficzny',
-              description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Cię na tle konkurencji</>,
+              title: 'Indywidualny projekt graficzny strony',
+              description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Twoją stronę na tle konkurencji</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -130,12 +130,17 @@ export default function OfferWebPage() {
               icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
+              title: 'Dobór i obróbka zdjęć',
+              description: <>Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do Twojej strony: kadry, tło, rozmiary, waga.</>,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
               title: 'Wsparcie prawne przy politykach i regulaminach',
               description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
               icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Strona dostosowana do różnych urządzeń',
+              title: 'Stronę dostosowana do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
               icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
@@ -146,13 +151,8 @@ export default function OfferWebPage() {
             },
             {
               title: 'Zero ukrytych kosztów',
-              description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieźąco, ile coś kosztuje</>,
+              description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
               icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Termin i plan z kamieniami milowymi',
-              description: <>Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie gotowe i kiedy</>,
-              icon: <RiCalendarCheckLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
@@ -160,13 +160,13 @@ export default function OfferWebPage() {
               icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Pełna własność i dostępy',
+              title: 'Pełną własność i dostępy',
               description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
               icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
-              description: <>Po publikacji pomagamy w dalszym rozwoju. Ewentualne błędy poprawiamy w ramach gwarancji</>,
+              description: <>Po publikacji pomagamy w dalszym rozwoju strony internetowej. Ewentualne błędy poprawiamy w ramach gwarancji</>,
               icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -271,7 +271,7 @@ export default function OfferWebPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zamów stronę internetową" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Strona internetowa" />
+        <ContactForm title="Zbudujmy Twoją stronę internetową" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę strony internetowej" defaultSubject="Strona internetowa" />
 
         <Gap variant="line" />
 

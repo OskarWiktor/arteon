@@ -240,7 +240,11 @@ export default function OfferMarketingPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Postaw na skuteczny marketing" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Marketing" />
+        <ContactForm
+          title="Stwórzmy skuteczny marketing dla Twojej firmy"
+          description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę usług marketingowych"
+          defaultSubject="Marketing"
+        />
 
         <Gap variant="line" />
 

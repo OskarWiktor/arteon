@@ -62,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply leading-tight font-medium text-balance;
+  @apply leading-tight font-medium;
 }
 
 h1,

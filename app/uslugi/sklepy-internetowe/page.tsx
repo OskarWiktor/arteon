@@ -14,22 +14,24 @@ import {
   RiSpeedFill,
   RiArticleLine,
   RiBookOpenLine,
-  RiBrushLine,
-  RiDatabase2Line,
   RiDeviceLine,
-  RiGlobalLine,
   RiMoneyDollarCircleLine,
   RiPencilRuler2Line,
-  RiShoppingCartLine,
+  RiCalendarCheckLine,
+  RiKey2Line,
+  RiLifebuoyLine,
+  RiMessage2Line,
+  RiSpeedLine,
+  RiBrushLine,
 } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
-import { GoLaw } from 'react-icons/go';
-import { IoAccessibility } from 'react-icons/io5';
 import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import { GoLaw } from 'react-icons/go';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
@@ -51,7 +53,7 @@ export default function OfferWebPage() {
         title="Sklepy internetowe"
         description={
           <>
-            Zwiększ swoją skuteczność, sprzedając produkty we własnym <strong>sklepie internetowym</strong>
+            Zwiększ swoją skuteczność, sprzedając produkty we własnym <strong>sklepie internetowym</strong>, bez zbędnych pośredników
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -77,57 +79,143 @@ export default function OfferWebPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <SectionInfo title="Co zyskujesz tworząc sklep internetowy?">
+          <p>
+            <strong>Własny sklep internetowy daje Twojej firmie realną niezależność.</strong> Sprzedajesz na własnej platformie bez pośredników, więc
+            <strong> więcej pieniędzy zostaje u Ciebie</strong>. Platformy sprzedażowe pobierają prowizje rzędu <strong>8-15%+</strong>{' '}
+            <a className="inline-block underline underline-offset-4" href="https://sell.amazon.com/pricing" target="_blank" rel="noopener noreferrer">
+              (Amazon - fees)
+            </a>
+            ,<strong> 6,5%+</strong>{' '}
+            <a className="ml-2 inline-block underline underline-offset-4" href="https://help.etsy.com/hc/en-us/articles/115015663607-Fees-and-Taxes-on-Etsy" target="_blank" rel="noopener noreferrer">
+              (Etsy - fees)
+            </a>
+            , a na Allegro zależnie od kategorii, to zwykle przedział kilkunastu procent
+            <a className="ml-2 inline-block underline underline-offset-4" href="https://allegro.pl/pomoc/dla-sprzedajacych/oplaty-i-prowizje" target="_blank" rel="noopener noreferrer">
+              (Allegro - opłaty)
+            </a>
+            .
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Sklep online prowadzi sprzedaż 24/7.</strong> Klienci chętnie kupują produkty w sklepach, na własnych telefonach - dziś to już <strong>ponad połowa</strong> transakcji online (np.
+            sezon 2024: <strong>~53%</strong>, prognoza 2025: <strong>~56%</strong> udziału mobile w przychodach e-commerce){' '}
+            <a
+              target="_blank"
+              className="inline-block underline underline-offset-4"
+              href="https://blog.adobe.com/en/publish/2024/08/21/adobe-analytics-mobile-shopping-expected-drive-53-percent-online-sales-during-2024-holiday-season"
+            >
+              (źródło 1)
+            </a>{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://business.adobe.com/resources/holiday-shopping-report.html">
+              (źródło 2)
+            </a>
+            . Każda wizyta użytkownika w Twoim sklepie internetowym to dodatkowa szansa na zamówienie.
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Masz klientów u siebie, nie na cudzej platformie.</strong> Budujesz własną bazę kontaktów i relacje. Kanały direct (np. e-mail) potrafią zwracać nawet <strong>~36:1</strong>{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://dma.org.uk/uploads/misc/dma-email-benchmarking-report-2023.pdf">
+              (źródło 1)
+            </a>{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.litmus.com/blog/infographic-the-roi-of-email-marketing">
+              (źródło 2)
+            </a>
+            - rośnie lojalność i liczba zakupów.
+          </p>
+
+          <br />
+
+          <p>
+            Średni poziom porzuceń koszyka to wciąż <strong>~70%</strong>. We własnym sklepie internetowym możesz uprościć ścieżkę zakupu oraz odzyskać te transakcje{' '}
+            <a target="_blank" className="inline-block underline underline-offset-4" href="https://baymard.com/lists/cart-abandonment-rate">
+              (źródło)
+            </a>
+            .
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Dobra platforma sprzedażowa robi za Ciebie trzy rzeczy naraz:</strong>
+          </p>
+
+          <ul className="ml-5 list-disc">
+            <li>Przyciąga klientów gotowych do zakupu,</li>
+            <li>Wyjaśnia prosto warunki zakupu oraz dostaw,</li>
+            <li>Sprzedaje bez Twojego udziału</li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
         <FeatureGrid
           title="Co zyskujesz tworząc sklep internetowy z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {
               title: 'Indywidualny projekt graficzny sklepu',
+              description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Twój sklep</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Redakcja treści pod sprzedaż i SEO',
+              title: 'Redakcję treści sprzedażowych dla lepszej pozycji w Google',
+              description: <>Opisy, które jasno mówią o korzyściach i prowadzą do zakupu</>,
               icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Deklaracja Dostępności (WCAG 2.1 AA)',
-              icon: <IoAccessibility className="h-5 w-5 text-slate-500" />,
-            },
-            {
-              title: 'Wsparcie prawne: polityki i regulaminy',
-              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Profesjonalna obróbka zdjęć produktów',
+              title: 'Dobór i obróbka zdjęć produktów',
+              description: <>Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do sklepu: kadry, tło, rozmiary, waga.</>,
               icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Bezpieczeństwo płatności i certyfikaty SSL',
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
+              title: 'Wsparcie prawne przy politykach i regulaminach',
+              description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
+              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Pełna Responsywność na urządzeniach mobilnych',
+              title: 'Sklep online dostosowany do różnych urządzeń',
+              description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
               icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Łatwe zarządzanie produktami i treściami (CMS)',
-              icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Szybkość i stabilność',
+              description: <>Sklep online który działa szybko, bez awarii</>,
+              icon: <RiSpeedLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Integracje płatności i systemów dostaw',
+              title: 'Pełną własność i dostępy',
+              description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Zero ukrytych kosztów',
+              description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
               icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Koszyk i proces zakupowy zoptymalizowany pod konwersję',
-              icon: <RiShoppingCartLine className="h-6 w-6 text-slate-500" />,
+              title: 'Termin i plan z kamieniami milowymi',
+              description: <>Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie gotowe i kiedy</>,
+              icon: <RiCalendarCheckLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Sklep zgodny z przepisami na rynkach międzynarodowych',
-              icon: <RiGlobalLine className="h-6 w-6 text-slate-500" />,
+              title: 'Transparentna współpraca na bieżąco',
+              description: <>Informujemy Cię regularnie o postępach naszych prac</>,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Darmowe, dedykowane szkolenie PDF z obsługi',
+              title: 'Dedykowane szkolenie PDF z obsługi sklepu',
+              description: <>Proste instrukcje, stworzone tak, abyś samodzielnie mógł dodać produkty, ceny i promocje</>,
               icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dalsze wsparcie + 2 miesiące gwarancji',
+              description: <>Po publikacji pomagamy w dalszym rozwoju i skalowaniu sklepu internetowego. Ewentualne błędy poprawiamy w ramach gwarancji</>,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -234,7 +322,7 @@ export default function OfferWebPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy Twój sklep online" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Sklep internetowy" />
+        <ContactForm title="Zbudujmy Twój sklep online" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę sklepu internetowego" defaultSubject="Sklep internetowy" />
 
         <Gap variant="line" />
 

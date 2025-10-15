@@ -210,7 +210,7 @@ export default function OfferBlogPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy Twój blog" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę" defaultSubject="Blog" />
+        <ContactForm title="Zbudujmy Twój blog online" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę bloga internetowego" defaultSubject="Blog" />
 
         <Gap variant="line" />
 
