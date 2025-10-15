@@ -18,7 +18,7 @@ const services: NavItem[] = [
   { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
-  { href: '/uslugi/projektowanie-graficzne', title: 'Projektowanie graficzne' },
+  { href: '/uslugi/projekty-graficzne', title: 'Projekty graficzne' },
   { href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' },
   { href: '/uslugi/marketing', title: 'Marketing' },
 ];

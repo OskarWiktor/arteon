@@ -42,7 +42,7 @@
         "primaryLabel": "Zamów papier firmowy",
         "primaryLink": "/kontakt",
         "secondaryLabel": "Projekty graficzne",
-        "secondaryLink": "/uslugi/projektowanie-graficzne",
+        "secondaryLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
         "overlay": "black"
       },
@@ -138,7 +138,7 @@
         "primaryLabel": "Zamów teczkę",
         "primaryLink": "/kontakt",
         "secondaryLabel": "Projekty graficzne",
-        "secondaryLink": "/uslugi/projektowanie-graficzne",
+        "secondaryLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
         "overlay": "black"
       },
@@ -227,7 +227,7 @@
         "primaryLabel": "Zamów teczkę",
         "primaryLink": "/kontakt",
         "secondaryLabel": "Projekty graficzne",
-        "secondaryLink": "/uslugi/projektowanie-graficzne",
+        "secondaryLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
         "overlay": "black"
       },

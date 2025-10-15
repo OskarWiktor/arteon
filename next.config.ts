@@ -6,7 +6,7 @@ const nextConfig = {
       { source: '/services/websites', destination: '/uslugi/strony-internetowe', permanent: true },
       { source: '/services/online-stores', destination: '/uslugi/sklepy-internetowe', permanent: true },
       { source: '/services/blogs', destination: '/uslugi/blogi-internetowe', permanent: true },
-      { source: '/services/design', destination: '/uslugi/projektowanie-graficzne', permanent: true },
+      { source: '/services/design', destination: '/uslugi/projekty-graficzne', permanent: true },
       { source: '/services/marketing', destination: '/uslugi/marketing', permanent: true },
       { source: '/services/content', destination: '/uslugi/tworzenie-tresci', permanent: true },
 
