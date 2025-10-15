@@ -32,7 +32,7 @@ export default function OfferDesignXxxPage() {
     <>
       <HeroBanner
         title="Projekt teczki ofertowej"
-        description={<>xxx</>}
+        description={<>Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z identyfikacją - trwałe, eleganckie i funkcjonalne na prezentacje i dokumenty.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"

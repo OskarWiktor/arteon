@@ -106,7 +106,6 @@ export default function OfferDesignPage() {
         title="Projekty graficzne"
         description={
           <>
-            {' '}
             Zbuduj spójny i profesjonalny wizerunek swojej marki. Projektujemy materiały firmowe - od logo i wizytówek po strony i odzież - dopasowane do Twojej branży, kolorystyki i stylu
             komunikacji.
           </>

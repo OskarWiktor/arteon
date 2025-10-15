@@ -31,8 +31,8 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="xxx"
-        description={<>xxx</>}
+        title="Projekt ulotki"
+        description={<>Dotarcie lokalne zaczyna się od jasnego przekazu. Tworzymy ulotki, które przyciągają uwagę, wyjaśniają ofertę w kilka sekund i kierują prosto do kontaktu.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"

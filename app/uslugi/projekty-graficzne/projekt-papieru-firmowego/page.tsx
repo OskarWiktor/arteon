@@ -31,8 +31,8 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="xxx"
-        description={<>xxx</>}
+        title="Projekt papieru firmowego"
+        description={<>Każda korespondencja może wzmacniać markę. Projektujemy papier firmowy z prawidłowymi szablonami Word/PDF i plikami do druku - czytelny, spójny i profesjonalny.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"

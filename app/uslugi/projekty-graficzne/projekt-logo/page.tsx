@@ -31,8 +31,8 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="Projekt Logo"
-        description={<>xxx</>}
+        title="Projekt logo"
+        description={<>Silny znak porządkuje komunikację i wyróżnia markę. Tworzymy logo z myślą o czytelności i skalowalności - z wersjami kolorystycznymi oraz mini-księgą znaku.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"

@@ -31,8 +31,8 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="xxx"
-        description={<>xxx</>}
+        title="Projekt katalogu"
+        description={<>Sprzedaż potrzebuje klarownej prezentacji oferty. Projektujemy katalogi z dopracowanym składem DTP, zdjęciami i typografią - w wersji do druku i do udostępniania online.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"

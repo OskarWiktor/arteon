@@ -31,8 +31,8 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="xxx"
-        description={<>xxx</>}
+        title="Projekt graficzny strony"
+        description={<>Wygląd, struktura i komfort użytkownika pracują na konwersję. Tworzymy makiety i layouty www zgodne z UX i SEO - estetyczne, czytelne i gotowe do wdrożenia.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"

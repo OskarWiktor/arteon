@@ -31,8 +31,8 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="xxx"
-        description={<>xxx</>}
+        title="Projekt wizytówki"
+        description={<>Zadbaj o pierwsze wrażenie, które buduje zaufanie. Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie i gotowe do druku oraz użycia online.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"

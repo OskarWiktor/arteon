@@ -31,8 +31,10 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="xxx"
-        description={<>xxx</>}
+        title="Identyfikacja wizualna"
+        description={
+          <>Spójny system wizualny zwiększa wiarygodność i rozpoznawalność. Projektujemy identyfikację: logo, kolory, typografia i materiały firmowe - gotowe do wdrożenia w całej firmie.</>
+        }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="/kontakt"
         buttonSecond="Portfolio"
