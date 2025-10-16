@@ -15,12 +15,12 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 
 export const metadata = {
-  title: 'Identyfikacja wizualna | Arteon',
+  title: 'Projekt identyfikacji wizualnej | Arteon',
   description: 'Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Spójność w każdym punkcie styku.',
-  keywords: ['identyfikacja wizualna', 'system identyfikacji', 'brandbook', 'wizualna tożsamość marki', 'projekt wizerunku'],
+  keywords: ['Projekt identyfikacji wizualnej', 'system identyfikacji', 'brandbook', 'wizualna tożsamość marki', 'projekt wizerunku'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   openGraph: {
-    title: 'Identyfikacja wizualna | Arteon',
+    title: 'Projekt identyfikacji wizualnej | Arteon',
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     type: 'website',
@@ -31,7 +31,7 @@ export default function OfferDesignXxxPage() {
   return (
     <>
       <HeroBanner
-        title="Identyfikacja wizualna"
+        title="Projekt identyfikacji wizualnej"
         description={
           <>Spójny system wizualny zwiększa wiarygodność i rozpoznawalność. Projektujemy identyfikację: logo, kolory, typografia i materiały firmowe - gotowe do wdrożenia w całej firmie.</>
         }
