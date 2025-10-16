@@ -127,11 +127,39 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje projekt katalogu?',
+              answer: 'Cena zależy od liczby stron, ilości zdjęć oraz tekstów. Po briefie otrzymasz szczegółową wycenę dopasowaną do zakresu.',
+            },
+            {
+              question: 'Jak długo trwa wykonanie projektu katalogu?',
+              answer: 'Standardowy czas realizacji wynosi 7-14 dni roboczych. Projekty rozbudowane (powyżej 20 stron) mogą wymagać dodatkowego czasu - terminy ustalamy indywidualnie.',
+            },
+            {
+              question: 'W jakich formatach dostanę katalog?',
+              answer: 'Dostarczamy pliki gotowe do druku (PDF z odpowiednimi spadami i profilami kolorów) oraz wersję cyfrową do publikacji online (PDF interaktywny lub flipbook).',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu katalogu?',
+              answer: 'Tak - każda realizacja obejmuje rundy poprawek. Dopracowujemy układ, zdjęcia, typografię i treści, aż katalog spełni Twoje oczekiwania.',
+            },
+            {
+              question: 'Czy mogę dostarczyć własne zdjęcia i teksty?',
+              answer: 'Tak - możesz dostarczyć materiały lub zlecić nam ich opracowanie. W razie potrzeby dobieramy zdjęcia ze stocków i redagujemy treści pod Twoją ofertę.',
+            },
+            {
+              question: 'Czy projekt katalogu jest gotowy do druku?',
+              answer: 'Tak - pliki przygotowujemy zgodnie ze standardami drukarni (spady, marginesy, profile ICC, kolory CMYK). Możesz od razu przekazać je do druku.',
+            },
+            {
+              question: 'Czy wykonujecie skład DTP większych publikacji?',
+              answer: 'Tak - zajmujemy się pełnym składem katalogów, folderów i broszur. Dbamy o hierarchię, odstępy i czytelność, także w projektach liczących dziesiątki stron.',
+            },
+            {
+              question: 'Czy mogę zamówić katalog w języku obcym?',
+              answer: 'Tak - wykonujemy katalogi wielojęzyczne, z zachowaniem spójnej typografii i układu.',
             },
           ]}
         />

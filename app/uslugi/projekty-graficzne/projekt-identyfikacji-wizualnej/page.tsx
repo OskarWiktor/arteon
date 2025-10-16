@@ -141,8 +141,36 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje identyfikacja wizualna?',
+              answer: 'Cena zależy od zakresu prac: logo, paleta kolorów, typografia, materiały firmowe i brandbook. Po briefie otrzymasz indywidualną wycenę dopasowaną do potrzeb Twojej marki.',
+            },
+            {
+              question: 'Jak długo trwa stworzenie identyfikacji wizualnej?',
+              answer: 'Standardowo projekt trwa od 10 do 20 dni roboczych, w zależności od liczby elementów. Terminy zawsze ustalamy indywidualnie.',
+            },
+            {
+              question: 'Co zawiera kompletna identyfikacja wizualna?',
+              answer: 'Zazwyczaj: logo, kolory, typografię, wzory wizytówek, papierów firmowych, teczek i grafik do social mediów. Możemy też rozszerzyć projekt o brandbook i szablony online.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu?',
+              answer: 'Tak - każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją marki.',
+            },
+            {
+              question: 'Czy mogę zamówić samo logo bez całego systemu?',
+              answer: 'Tak - projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną.',
+            },
+            {
+              question: 'Czy dostanę pliki gotowe do druku i internetu?',
+              answer: 'Tak - przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia.',
+            },
+            {
+              question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
+              answer: 'Tak - przedstawiamy propozycje stylistyczne i moodboardy, które pomogą Ci określić kierunek wizualny marki.',
+            },
+            {
+              question: 'Czy mogę zamówić brandbook do identyfikacji?',
+              answer: 'Tak - opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia. To podstawa spójnej komunikacji w firmie.',
             },
           ]}
         />

@@ -118,8 +118,37 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje profesjonalne logo?',
+              answer:
+                'Cena logo zależy od zakresu pracy: liczby wariantów, wersji kolorystycznych, dodatkowych adaptacji. Zwykle propozycję przedstawiamy po briefie - dostosowaną do Twoich potrzeb i budżetu.',
+            },
+            {
+              question: 'Jak długo trwa realizacja projektu logo?',
+              answer: 'Standardowy proces trwa około 7-14 dni roboczych. Terminy ustalamy indywidualnie.',
+            },
+            {
+              question: 'W jakich formatach otrzymam logo?',
+              answer: 'Otrzymasz pliki wektorowe (SVG, EPS, AI) i rastrowe (PNG, JPG), wersje monochromatyczne, wersje na jasne i ciemne tło oraz mini-księgę znaku z wytycznymi.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do logo?',
+              answer: 'Tak - w standardowym pakiecie uwzględniamy minimum jedną lub dwie rundy korekt. Razem dopracujemy szczegóły, by efekt finalny odpowiadał Twojej wizji.',
+            },
+            {
+              question: 'Czy pomogacie określić styl i kierunek logo?',
+              answer: 'Tak - jeśli nie masz wizji, przygotowujemy moodboardy, przykłady stylowe i warianty kierunków, by wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
+            },
+            {
+              question: 'Gdzie mogę używać logo?',
+              answer: 'Logo będzie zaprojektowane do użytku online, drukowania, gadżetów, odzieży. Dbamy o skalowalność i czytelność w każdej formie.',
+            },
+            {
+              question: 'Czy dostaję prawa autorskie do logo?',
+              answer: 'Tak - po finalizacji projektu przekazujemy Ci pełne prawa autorskie i pliki źródłowe. Możesz swobodnie korzystać z logo w materiałach własnych.',
+            },
+            {
+              question: 'Czy oferujecie szybką realizację logo?',
+              answer: 'Tak - dla projektów priorytetowych proponujemy ekspresowy tryb realizacji. Czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
             },
           ]}
         />

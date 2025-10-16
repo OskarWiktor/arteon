@@ -126,8 +126,36 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje projekt graficzny strony?',
+              answer: 'Cena zależy głównie od liczby podstron. Po krótkim zapoznaniu z wymaganiami przedstawimy szczegółową wycenę dopasowaną do Twoich celów.',
+            },
+            {
+              question: 'Jak długo trwa przygotowanie projektu strony?',
+              answer: 'Standardowo od 7 do 14 dni roboczych. Czas zależy od liczby podstron i indywidualnych potrzeb UX. Dokładny harmonogram ustalamy przed rozpoczęciem projektu.',
+            },
+            {
+              question: 'Czy projekt graficzny strony obejmuje wersję mobilną?',
+              answer: 'Tak - każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu.',
+            },
+            {
+              question: 'Czy projekt graficzny uwzględnia SEO i UX?',
+              answer: 'Tak - łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu?',
+              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
+            },
+            {
+              question: 'W jakim formacie dostanę projekt?',
+              answer: 'Dostarczamy pliki w Figmie, gotowe do wdrożenia przez dewelopera. Możesz też zlecić nam realizację strony na podstawie projektu.',
+            },
+            {
+              question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
+              answer: 'Tak - po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości.',
+            },
+            {
+              question: 'Czy mogę zamówić tylko jedną podstronę lub landing page?',
+              answer: 'Tak - projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach lub kampaniach sprzedażowych.',
             },
           ]}
         />

@@ -126,8 +126,28 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje projekt wizytówki?',
+              answer: 'Cena zależy od liczby wariantów, ilości informacji oraz wersji kolorystycznych. Po briefie przedstawiamy dopasowaną wycenę.',
+            },
+            {
+              question: 'Jak długo trwa projekt wizytówki?',
+              answer: 'Czas realizacji wynosi zwykle 2-5 dni roboczych. W przypadku dodatkowych wariantów lub korekt termin ustalamy wspólnie.',
+            },
+            {
+              question: 'W jakich formatach dostanę wizytówkę?',
+              answer: 'Otrzymujesz plik PDF do druku z odpowiednimi spadami, wersje PNG/JPG oraz pliki źródłowe (AI, Figma).',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki?',
+              answer: 'Tak - zwykle przewidujemy 1-2 rundy poprawek w ramach projektu. Poprawiamy układ, kolory i treść do finalnej akceptacji.',
+            },
+            {
+              question: 'Czy wizytówka będzie czytelna?',
+              answer: 'Dbamy o kontrast, rozmiar czcionek i hierarchię - nawet mała wizytówka będzie czytelna i estetyczna.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt wizytówki?',
+              answer: 'Tak - oferujemy tryb ekspresowy z szybszym terminem realizacji. Koszt i czas ustalamy przed startem projektu.',
             },
           ]}
         />

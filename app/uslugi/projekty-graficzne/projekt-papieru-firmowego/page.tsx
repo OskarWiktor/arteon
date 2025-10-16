@@ -122,8 +122,36 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje projekt papieru firmowego?',
+              answer: 'Cena zależy od liczby wariantów (listy, koperty, dokumenty) i adaptacji do formatów. Po briefie przedstawimy wycenę odpowiadającą Twoim potrzebom.',
+            },
+            {
+              question: 'Jak długo trwa wykonanie projektu papieru firmowego?',
+              answer: 'Zazwyczaj 3-7 dni roboczych, jeśli zakres jest standardowy. Dłuższe projekty z wieloma wariantami mogą wymagać więcej czasu.',
+            },
+            {
+              question: 'W jakich formatach dostanę projekt papieru firmowego?',
+              answer: 'Otrzymasz pliki PDF do druku z odpowiednimi spadami, wersje Word/PDF oraz pliki źródłowe.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki?',
+              answer: 'Tak - w projekcie uwzględniamy rundy poprawek. Wspólnie dopracowujemy układ i szczegóły, aż efekt będzie spójny z Twoją wizją.',
+            },
+            {
+              question: 'Czy papier firmowy będzie prawidłowo przygotowany do druku?',
+              answer: 'Tak - pliki zostaną zoptymalizowane: spady, marginesy bezpieczeństwa, profile kolorów. Będą gotowe do przekazania do drukarni.',
+            },
+            {
+              question: 'Czy można używać papieru firmowego cyfrowo?',
+              answer: 'Tak - oprócz wersji do druku dostarczamy wersje elektroniczne (PDF), gotowe do wysyłki mailowej lub elektronicznej dokumentacji.',
+            },
+            {
+              question: 'Czy projekt obejmuje koperty firmowe?',
+              answer: 'Jeśli uwzględnisz koperty w briefie, do projektu dodamy ich wersję. Dzięki temu identyfikacja pozostaje spójna w całym korespondencyjnym obiegu.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt papieru firmowego?',
+              answer: 'Tak - oferujemy opcję szybszej realizacji. Koszt i termin ustalamy indywidualnie przed rozpoczęciem projektu.',
             },
           ]}
         />

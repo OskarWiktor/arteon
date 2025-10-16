@@ -135,8 +135,24 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Jak długo trwa realizacja teczki ofertowej?',
+              answer: 'Realizacja trwa zwykle 5-10 dni roboczych, w zależności od liczby wersji i stopnia skomplikowania projektu.',
+            },
+            {
+              question: 'W jakich formatach dostanę pliki teczki?',
+              answer: 'Dostarczamy pliki do druku oraz pliki źródłowe.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki?',
+              answer: 'Tak - w ramach projektu przewidziane są rundy poprawek. Doprecyzujemy detale wspólnie, by efekt był satysfakcjonujący.',
+            },
+            {
+              question: 'Czy projekt teczki jest gotowy do druku?',
+              answer: 'Tak - pliki będą wyposażone w spady, profile kolorów i standardy drukarskie. Możesz przekazać je bezpośrednio do drukarni.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt teczki?',
+              answer: 'Tak - oferujemy opcję szybszej realizacji. Przed startem ustalamy termin i koszt dodatkowy.',
             },
           ]}
         />

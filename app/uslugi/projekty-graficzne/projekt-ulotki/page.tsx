@@ -125,7 +125,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów projekt ulotki"
-          description="Opisz cel ulotki, grupę odbiorców i format druku. Dołącz treści lub szkic — przygotujemy wycenę i wyznaczymy termin realizacji."
+          description="Opisz cel ulotki, grupę odbiorców i format druku. Dołącz treści lub szkic - przygotujemy wycenę i wyznaczymy termin realizacji."
           defaultSubject="Projekt ulotki"
         />
 
@@ -135,8 +135,36 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje projekt ulotki?',
+              answer: 'Cena projektu ulotki zależy od formatu (A5, DL, składane), liczby wariantów i objętości grafiki. Po briefie przygotowujemy dopasowaną wycenę.',
+            },
+            {
+              question: 'Jak długo trwa projektowanie ulotki?',
+              answer: 'Przy standardowym zakresie czas to 3-7 dni roboczych. Większe projekty z wieloma wersjami mogą wymagać więcej czasu - termin ustalamy indywidualnie.',
+            },
+            {
+              question: 'W jakich formatach otrzymam ulotkę?',
+              answer: 'Dostarczamy pliki do druku oraz wersje do internetu (PNG, JPG). Pliki możemy dopasować do wymagań drukarni.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do ulotki?',
+              answer: 'Tak - w cenie zawarty jest zestaw rund poprawek (zwykle 1-2). Wspólnie dopracowujemy układ, kolory i treść aż do akceptacji.',
+            },
+            {
+              question: 'Jak dobrać format i papier ulotki?',
+              answer: 'Pomagamy dobrać optymalny format (np. A5, DL) i grubość papieru w zależności od celu kampanii i budżetu. Zalecamy materiały, które są trwałe i estetyczne.',
+            },
+            {
+              question: 'Czy projekt ulotki będzie czytelny na urządzeniach mobilnych?',
+              answer: 'Tak - dostarczamy również wersję cyfrową zoptymalizowaną pod urządzenia mobilne, tak by czytelność i przekaz były zachowane.',
+            },
+            {
+              question: 'Czy projekt ulotki jest gotowy do druku?',
+              answer: 'Tak - przygotowujemy pliki z odpowiednimi ustawieniami druku, gotowe do przekazania do drukarni.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt ulotki?',
+              answer: 'Tak - oferujemy tryb priorytetowy, który skraca czas realizacji. Koszt ustalamy indywidualnie przed rozpoczęciem projektu.',
             },
           ]}
         />

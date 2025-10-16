@@ -115,8 +115,36 @@ export default function OfferDesignXxxPage() {
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej"
           items={[
             {
-              question: 'xxx',
-              answer: 'xxx',
+              question: 'Ile kosztuje projekt odzieży firmowej?',
+              answer: 'Cena zależy od liczby projektów (koszulki, bluzy, czapki), techniki druku (sitodruk, haft, DTF) i liczby wariantów. Po briefie przedstawiamy dopasowaną wycenę.',
+            },
+            {
+              question: 'Jak długo trwa projekt odzieży firmowej?',
+              answer: 'Standardowy czas realizacji to zwykle 5-10 dni roboczych, w zależności od liczby wersji i techniki nadruku.',
+            },
+            {
+              question: 'W jakich formatach otrzymam projekty?',
+              answer: 'Dostarczamy pliki wektorowe (AI, SVG) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości, z wariantami kolorystycznymi i adaptacjami do różnych elementów odzieży.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu?',
+              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Doprecyzowujemy szczegóły, takie jak kolory, umiejscowienie i wielkość projektu, aż zrealizujemy finalną wersję.',
+            },
+            {
+              question: 'Jaką technikę druku wybrać?',
+              answer: 'Doradzamy technikę (sitodruk, haft, DTF) uwzględniając materiał, budżet i trwałość. Dobieramy rozwiązanie, które wygląda dobrze i utrzymuje się długo.',
+            },
+            {
+              question: 'Czy projekt będzie prawidłowo skalowalny?',
+              answer: 'Tak - projektujemy tak, aby grafika była czytelna i estetyczna zarówno na małych jak i większych elementach odzieży.',
+            },
+            {
+              question: 'Czy projekt odzieży jest gotowy do produkcji?',
+              answer: 'Tak - przygotujemy pliki zoptymalizowane pod wybraną technikę: kolory, separacje, warstwy. Gotowe do przekazania do producenta.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt odzieży firmowej?',
+              answer: 'Tak - oferujemy opcję przyspieszonego wykonania. Koszt i termin ustalamy indywidualnie przed rozpoczęciem projektu.',
             },
           ]}
         />
