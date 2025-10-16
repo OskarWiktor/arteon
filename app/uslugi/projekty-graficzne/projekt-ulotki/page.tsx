@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiArticleLine, RiFileTextLine, RiLayoutLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -99,11 +99,27 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając ulotkę u nas?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
+              title: 'Jasny przekaz i mocne wezwanie do działania',
+              description: <>Tworzymy układy, które przyciągają wzrok, wyjaśnia ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Format dopasowany do celu',
+              description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i praktyczna w dystrybucji.</>,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pliki gotowe do druku i wersja cyfrowa',
+              description: <>Otrzymujesz gotowy plik do druku oraz wersję do użycia w internecie.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dopracowanie detali',
+              description: <>W cenie przewidujemy poprawki. Razem dopieszczamy treść, układ i wyróżniki oferty.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}

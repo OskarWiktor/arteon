@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -82,12 +82,28 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając logo u nas?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Znak, który prowadzi markę',
+              description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania.</>,
+              icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Warianty i zastosowania',
+              description: <>Otrzymujesz wersje kolorystyczne i monochromatyczne, gotowe do użycia w różnych sytuacjach.</>,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Prosta instrukcja użycia',
+              description: <>Dołączamy krótkie wytyczne, które ułatwiają poprawne korzystanie z logo w firmie.</>,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pełna własność i pliki źródłowe',
+              description: <>Po zakończeniu projektu masz komplet materiałów i swobodę ich użycia w przyszłości.</>,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />

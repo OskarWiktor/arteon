@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiIdCardLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -13,6 +13,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import { IoColorPalette } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
@@ -52,7 +53,7 @@ export default function OfferDesignXxxPage() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-wizytowki`, label: 'xxx' }}
+        fourth={{ href: `/uslugi/projekty-graficzne/projekt-wizytowki`, label: 'Projekt wizytówki' }}
         includeJsonLd
       />
       <Wrapper>
@@ -90,11 +91,27 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając projekt wizytówki u nas?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
+              title: 'Czytelny układ i prestiżowy wygląd',
+              description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz i budują zaufanie przy pierwszym kontakcie.</>,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pliki do druku i online',
+              description: <>Otrzymujesz gotowe pliki do drukarni oraz wersję cyfrową do wysyłki lub prezentacji w sieci.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Spójność z identyfikacją marki',
+              description: <>Dopasowujemy kolory i typografię do Twojej marki, aby każdy materiał mówił jednym językiem.</>,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Szybka realizacja i poprawki w cenie',
+              description: <>Dostarczamy projekt w krótkim terminie i dopracowujemy go wspólnie do pełnej akceptacji.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}

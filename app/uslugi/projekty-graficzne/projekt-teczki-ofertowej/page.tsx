@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -13,6 +13,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import { IoColorPalette } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
@@ -99,12 +100,28 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając teczkę ofertową?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Prestiż na spotkaniach',
+              description: <>Projekt podkreśla profesjonalizm Twojej firmy, dzięki czemu oferta prezentuje się klarownie.</>,
+              icon: <RiFolderOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dopasowanie do identyfikacji',
+              description: <>Kolory, typografia i detale nawiązują do Twojej marki, budując spójny obraz firmy.</>,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Praktyczne rozwiązania konstrukcyjne',
+              description: <>Proponujemy układ kieszeni i wykończenia, które są trwałe i wygodne w użyciu.</>,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pliki gotowe do druku',
+              description: <>Dostarczamy finalne materiały do druku.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />

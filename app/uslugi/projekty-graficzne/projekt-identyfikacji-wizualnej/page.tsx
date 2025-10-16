@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -105,12 +105,28 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając identyfikację wizualną?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Spójny system marki',
+              description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały działały razem.</>,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Materiały do codziennej komunikacji',
+              description: <>Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i grafiki do prezentacji marki.</>,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Proste zasady stosowania',
+              description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie.</>,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pełna gotowość do druku i online',
+              description: <>Otrzymujesz komplet plików do codziennej pracy i wdrożeń bez dodatkowych przeróbek.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />

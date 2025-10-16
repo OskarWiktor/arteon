@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -90,11 +90,27 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając projekt graficzny strony?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
+              title: 'Przemyślany układ i estetyka',
+              description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie.</>,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Responsywność i czytelność',
+              description: <>Projekt działa na komputerze i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Gotowość do wdrożenia',
+              description: <>Dostarczamy pliki i rekomendacje, które przyspieszają pracę dewelopera i skracają czas publikacji.</>,
+              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Wspólne dopracowanie szczegółów',
+              description: <>Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji do pełnej akceptacji.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}

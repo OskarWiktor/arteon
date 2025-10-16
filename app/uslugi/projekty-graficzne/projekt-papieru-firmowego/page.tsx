@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -86,12 +86,28 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając papier firmowy?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
+              title: 'Spójny wygląd korespondencji',
+              description: <>Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i wiadomości.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Szablony do codziennej pracy',
+              description: <>Otrzymujesz gotowe do użycia pliki w wersji do druku oraz praktyczne szablony elektroniczne.</>,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dopasowanie danych i układu',
+              description: <>Dbamy o czytelność, hierarchię informacji i zgodność z pozostałymi materiałami marki.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Szybka realizacja i poprawki',
+              description: <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />

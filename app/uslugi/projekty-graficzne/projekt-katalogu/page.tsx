@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -52,7 +52,7 @@ export default function OfferDesignXxxPage() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/xxx`, label: 'xxx' }}
+        fourth={{ href: `/uslugi/projekty-graficzne/projekt-katalogu`, label: 'Projekt katalogu' }}
         includeJsonLd
       />
       <Wrapper>
@@ -94,11 +94,27 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając katalog?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
+              title: 'Klarowna prezentacja oferty',
+              description: <>Układ ułatwiający odbiorcy zrozumienie produktów i szybkie porównanie opcji.</>,
+              icon: <RiBookletLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dopracowane zdjęcia i typografia',
+              description: <>Dbamy o spójność zdjęć i czytelne podpisy, aby katalog był lekki w odbiorze.</>,
+              icon: <RiImageLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Wersja drukowana i cyfrowa',
+              description: <>Dostarczamy katalog gotowy do druku oraz wygodną wersję do udostępniania online.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Wspólne dopracowanie szczegółów',
+              description: <>W cenie przewidujemy poprawki. Razem ustalamy układ, kolejność i wyróżniki ofertowe.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}

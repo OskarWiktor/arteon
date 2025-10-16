@@ -5,7 +5,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -79,12 +79,28 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz realizując projekt graficzny xxx z nami?"
+          title="Co zyskujesz zamawiając odzież firmową?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'xxx',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Spójny wygląd zespołu',
+              description: <>Projekt buduje rozpoznawalność marki w terenie i podczas wydarzeń.</>,
+              icon: <RiTShirt2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Wizualizacje i warianty',
+              description: <>Przygotowujemy podglądy na koszulkach, bluzach i innych elementach, aby łatwiej było podjąć decyzję.</>,
+              icon: <RiImageLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Dopasowanie do wybranej technologii',
+              description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków.</>,
+              icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Pliki gotowe do produkcji',
+              description: <>Otrzymujesz materiały, które możesz od razu przekazać wykonawcy odzieży.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
