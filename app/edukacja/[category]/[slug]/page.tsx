@@ -66,7 +66,7 @@ function jsonLd(article: Article) {
 /* ---------- Aspect helper ---------- */
 function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
   if (ratio === 'auto') return <div className="relative overflow-hidden rounded-2xl border border-black/10">{children}</div>;
-  const map: Record<string, string> = { '16/9': 'aspect-[16/9]', '4/3': 'aspect-[4/3]', '1/1': 'aspect-square' };
+  const map: Record<string, string> = { '16/9': 'aspect-square md:aspect-[16/9]', '4/3': 'aspect-[4/3]', '1/1': 'aspect-square' };
   return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
