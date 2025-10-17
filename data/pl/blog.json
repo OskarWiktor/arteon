@@ -41,9 +41,10 @@
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak sprawdzić, czy strona jest zaindeksowana przez Google Search Console?</h2><p>Pierwszy krok to sprawdzenie, czy strona w ogóle znajduje się w indeksie.</p></br><p>1. Wpisz w wyszukiwarkę komendę:</p>"
         },
         {
-          "type": "code",
-          "language": "html",
-          "code": "site:twojadomena.pl"
+  "type": "code",
+  "language": "bash",
+  "code": "site:twojadomena.pl",
+  "showLineNumbers": false
         },
         {
           "type": "richtext",
@@ -54,11 +55,13 @@
           "type": "richtext",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Najczęstsze przyczyny braku widoczności strony internetowej w Google</h2><p>Poniżej znajdziesz listę błędów, które najczęściej odpowiadają za brak strony w Google:</p></br><h3 class='h4 mb-2 mt-4'>1. Plik robots.txt blokuje roboty wyszukiwarki</h3><p>Jeśli Twoja domena zawiera kod:</p>"
         },
-        {
-          "type": "code",
-          "language": "html",
-          "code": "User-agent: *\nDisallow: /"
-        },
+{
+  "type": "code",
+  "language": "bash",
+  "code": "User-agent: *\nDisallow: /",
+  "showLineNumbers": false
+},
+
         {
           "type": "richtext",
           "html": "<p>Googlebot nie będzie mógł odwiedzić żadnej podstrony.</br>Sprawdź ten plik pod adresem <strong>twojadomena.pl/robots.txt</strong> i upewnij się, że nie blokuje witryny w Google.</p></br><h3 class='h4 mb-2 mt-4'>2. Meta tag „noindex”</h3><p>W kodzie HTML w sekcji &lt;head&gt; nie powinno być:</p>"
@@ -139,14 +142,15 @@
           "caption": "Core Web Vitals",
           "columns": [{ "header": "Skrót" }, { "header": "Nazwa" }, { "header": "Co mierzy" }, { "header": "Zalecana wartość" }],
           "rows": [
-            ["LCP", "Largest Contentful Paint", "czas wczytania głównej treści", "<br 2,5 s"],
-            ["INP", "Interaction to Next Paint", "czas reakcji na kliknięcia", "<br 200 ms"],
-            ["CLS", "Cumulative Layout Shift", "stabilność wizualna", "<br 0,1"]
+["LCP", "Largest Contentful Paint", "czas wczytania głównej treści", "&lt; 2,5 s"],
+["INP", "Interaction to Next Paint", "czas reakcji na kliknięcia", "&lt; 200 ms"],
+["CLS", "Cumulative Layout Shift", "stabilność wizualna", "&lt; 0,1"]
+
           ]
         },
         {
           "type": "richtext",
-          "html": "<p><strong>Jak poprawić wynik:</strong></p></br><ul class='list-disc ml-5'><li>zoptymalizuj obrazy (format WebP, opisane wymiary),</li><li>kompresuj kod JS i CSS,</li><li>używaj cache i CDN,</li><li>sprawdź raport Core Web Vitals w GSC.</li></ul></br><p>💡<em> Dobrze zoptymunik nowana strona ładuje się błyskawicznie i utrzymuje uwagę użytkownika — a to bezpośrednio wpływa na pozycje w wynikach wyszukiwania. Brak optymalizacji może być poważnym problemem, który sprawia, że strona jest nie widoczna w Google.</em></p>",
+          "html": "<p><strong>Jak poprawić wynik:</strong></p></br><ul class='list-disc ml-5'><li>zoptymalizuj obrazy (format WebP, opisane wymiary),</li><li>kompresuj kod JS i CSS,</li><li>używaj cache i CDN,</li><li>sprawdź raport Core Web Vitals w GSC.</li></ul></br><p>💡<em> Dobrze zoptymalizowana strona ładuje się błyskawicznie i utrzymuje uwagę użytkownika — a to bezpośrednio wpływa na pozycje w wynikach wyszukiwania. Brak optymalizacji może być poważnym problemem, który sprawia, że strona jest nie widoczna w Google.</em></p>",
           "breakAfter": true
         },
         {
