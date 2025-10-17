@@ -176,7 +176,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
             <div key={`grp-img-${i}`}>
               <figure>
                 {isAuto ? (
-                  <div className="overflow-hidden rounded-2xl border border-black/10 ">
+                  <div className="overflow-hidden rounded-2xl border border-black/10">
                     <Image
                       src={b.src}
                       alt={b.alt}

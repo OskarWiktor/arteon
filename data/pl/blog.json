@@ -28,15 +28,14 @@
           "breakAfter": true
         },
         {
-  "type": "image",
-  "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/google-search-console-screen.jpg",
-  "alt": "Google Search Console - screen ekranu",
-  "ratio": "16/9",
-  "quality": 90,
-  "caption": "Google Search Console - screen ekranu",
-    "breakAfter": false
-
-},
+          "type": "image",
+          "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/google-search-console-screen.jpg",
+          "alt": "Google Search Console - screen ekranu",
+          "ratio": "16/9",
+          "quality": 90,
+          "caption": "Google Search Console - screen ekranu",
+          "breakAfter": false
+        },
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak sprawdzić, czy strona jest zaindeksowana przez Google Search Console?</h2><p>Pierwszy krok to sprawdzenie, czy strona w ogóle znajduje się w indeksie.</p></br><p>1. Wpisz w wyszukiwarkę komendę:</p>"
@@ -87,15 +86,15 @@
           ],
           "breakAfter": true
         },
-                {
-  "type": "image",
-  "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/content-marketing.jpg",
-  "alt": "Content marketing nastawiony na odbiorce",
-  "ratio": "16/9",
-  "quality": 90,
-  "caption": "Content marketing nastawiony na odbiorce",
-    "breakAfter": false
-},
+        {
+          "type": "image",
+          "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/content-marketing.jpg",
+          "alt": "Content marketing nastawiony na odbiorce",
+          "ratio": "16/9",
+          "quality": 90,
+          "caption": "Content marketing nastawiony na odbiorce",
+          "breakAfter": false
+        },
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak poprawić treści, by wyszukiwarka Google uznała ją za wartościową?</h2><p>Treść to kluczowy czynnik widoczności Twojej strony w Google.</br>Algorytmy potrafią rozpoznać, czy tekst rzeczywiście rozwiązuje problem użytkownika, czy jedynie wypełnia miejsce na stronie.</p></br><p>Aby poprawić treści strony:</p></br><ul class='list-disc ml-5'><li>Pisz dla ludzi, nie dla robotów.</br>Używaj naturalnego języka i wyjaśniaj trudniejsze pojęcia.</br> Zamiast pisać np. „SEO techniczne optymalizuje crawl budget”, napisz „optymalizacja techniczna pomaga robotowi Google szybciej zrozumieć Twoją stronę”.</li></br><li>Używaj fraz kluczowych naturalnie.</br>Wpleć wyrażenia, za pomocą których chcesz się pozycjonować np. <strong>widoczność strony</strong> w naturalny, nie wymuszony sposób.</li></br><li>Buduj logiczną strukturę.</br>Każdy akapit powinien odpowiadać na konkretne pytanie użytkownika, na przykład:<ul class='list-disc ml-5'><li>Dlaczego moja strona nie pojawia się w wynikach?</li><li>Jak poprawić indeksację strony?</li><li>Co wpływa na widoczność strony w wyszukiwarce?</li></ul></li></br><li>Dodaj dane liczbowe i przykłady.</br>Np.: „Strony z treścią powyżej 1500 słów uzyskują średnio 55% więcej wejść z Google (źródło: Backlinko).”</li></br><li>Unikaj „thin content” — zbyt krótkich stron.</br>Artykuły lub podstrony mające mniej niż 300 słów często są pomijane przez roboty.</li></ul>",
@@ -121,16 +120,16 @@
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Meta title i description - pierwszy krok do kliknięcia</h2><p>Wynik w wyszukiwarce składa się z tytułu, adresu i opisu.</br>To właśnie meta title i meta description decydują, czy ktoś kliknie w Twój link.</p></br><p><strong>Jak napisać skuteczny meta title:</strong></p><ul class='list-disc ml-5'><li>Umieść frazę kluczową na początku,</li><li>Nie przekraczaj 60 znaków.</li></ul></br><p><strong>Jak stworzyć meta description:</strong></p><ul class='list-disc ml-5'><li>Pisz zachęcająco, ale konkretnie (do 155 znaków).</li><li>Użyj fraz, które podkreślają tytuł.</li><li>Zakończ lekkim CTA - wezwaniem do działania np: „Sprawdź, jak...”</li></ul>",
           "breakAfter": true
         },
-                        {
-  "type": "image",
-  "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/page-speed-screen.jpg",
-  "alt": "Page Speed - zrzut ekranu",
-  "ratio": "16/9",
-  "quality": 90,
-  "caption": "Page Speed - zrzut ekranu",
-    "breakAfter": false
-},
-    
+        {
+          "type": "image",
+          "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/page-speed-screen.jpg",
+          "alt": "Page Speed - zrzut ekranu",
+          "ratio": "16/9",
+          "quality": 90,
+          "caption": "Page Speed - zrzut ekranu",
+          "breakAfter": false
+        },
+
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak poprawić wydajność strony (Core Web Vitals)?</h2><p>Szybkość działania ma bezpośredni wpływ na pozycję strony w wynikach wyszukiwania.</br>Algorytm ocenia trzy kluczowe wskaźniki (Core Web Vitals):</p>"
@@ -160,15 +159,15 @@
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Dane strukturalne — jak pomóc robotowi Google zrozumieć Twoją stronę www</h2><p>Robot indeksujący nie „czyta” treści tak jak człowiek — potrzebuje sygnałów technicznych, by zrozumieć, czym jest dana strona.</br>Służą do tego <strong>dane strukturalne (schema)</strong> w formacie <strong>JSON-LD.</strong></p></br><p><strong>Najpopularniejsze typy danych to:</strong></p></br><ul class='list-disc ml-5'><li><em>Article</em> - dla wpisów blogowych i artykułów,</li><li><em>FAQPage</em> - dla sekcji z pytaniami i odpowiedziami,</li><li><em>BreadcrumbList</em> - dla nawigacji okruszkowej,</li><li><em>Organization</em> - dla informacji o firmie,</li><li><em>Product</em> - dla sklepów internetowych.</li></ul></br><p>Dzięki nim Google może wyświetlać rozszerzone wyniki, np. gwiazdki, oceny, pytania lub linki z nawigacji.</br>To zwiększa CTR (click-through rate), czyli liczbę kliknięć w Twoją stronę.</p></br><p>💡 <em>Warte dodania: w 2025 roku Google ograniczył widoczność wyników FAQ, ale dane strukturalne nadal pomagają w interpretacji treści i poprawiają ogólny ranking.</em></p>",
           "breakAfter": true
         },
-                                {
-  "type": "image",
-  "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/google-logo-on-building.jpg",
-  "alt": "Logo Google na budynku",
-  "ratio": "16/9",
-  "quality": 90,
-  "caption": "Logo Google na budynku",
-    "breakAfter": false
-},
+        {
+          "type": "image",
+          "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/google-logo-on-building.jpg",
+          "alt": "Logo Google na budynku",
+          "ratio": "16/9",
+          "quality": 90,
+          "caption": "Logo Google na budynku",
+          "breakAfter": false
+        },
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak działają aktualizacje algorytmu i jak wpływają na widoczność strony w wynikach Google</h2><p>Google aktualizuje swoje algorytmy nawet kilkanaście razy w roku.</br>Najważniejsze tzw. „Core Updates” zmieniają sposób, w jaki wyszukiwarka ocenia jakość treści i wiarygodność stron.</p></br><p><strong>Co robić w razie spadku pozycji po aktualizacji:</strong></p></br><ol class='list-decimal ml-5'><li>Przejdź do raportu „Wydajność” w Google Search Console.</li><li>Porównaj ruch i frazy z ostatnich 3 miesięcy.</li><li>Rozbuduj treści, które spadły — odpowiedz pełniej na pytania użytkowników.</li><li>Dodaj przykłady, dane i źródła — to wzmacnia wiarygodność.</li><li>Aktualizuj daty publikacji — sygnał świeżości pomaga wrócić do wyników.</li></ol></br><p>Pamiętaj: Potocznie mówi się, że niższa pozycja to forma „kary od Google”, ale algorytm po prostu nagradza lepsze treści.</p><p>Użytkownik jest najważniejszy, a <strong>„helpful content”</strong> to taki, który faktycznie pomaga.</p>"
@@ -201,16 +200,16 @@
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Podsumowanie — jak sprawić, by strona była widoczna w Google</h2><p>Widoczność w wyszukiwarce Google nie jest dziełem przypadku.</br>To wynik połączenia <strong>techniki, treści i zaufania.</strong></p></br><p>Aby Twoja strona internetowa regularnie pojawiała się w wynikach wyszukiwania, wykonaj te kroki w kolejności:</p></br><ol class='list-decimal ml-5'><li><strong>Sprawdź zaindeksowane strony</strong> - upewnij się, że Google ma dostęp do Twojej witryny (polecenie site:twojadomena.pl).</li><li><strong>Napraw błędy techniczne</strong> - usuń blokady robots.txt, meta noindex i przekierowania łańcuchowe.</li><li><strong>Dodaj i zgłoś sitemap.xml</strong> - w GSC → „Mapy witryn”.</li><li><strong>Popraw strukturę i linkowanie</strong> - każda strona powinna prowadzić do innych ważnych podstron.</li><li><strong>Optymalizuj treść</strong> - pisz jasno, z przykładami, używaj nagłówków z pytaniami.</li><li><strong>Zadbaj o szybkość i mobile</strong> - Google ocenia realne dane użytkowników (Core Web Vitals).</li><li><strong>Buduj zaufanie</strong> - zdobywaj linki zewnętrzne, opinie, aktualizuj treści.</li></ol></br><p>Pamiętaj: pozycjonowanie stron (SEO) nie działa z dnia na dzień.</br>Google potrzebuje czasu, by zaufać nowej witrynie i powiązać ją z konkretnymi zapytaniami.</br>Ale jeśli zastosujesz powyższe kroki, Twoja strona zacznie pojawiać się coraz częściej — nie tylko na nazwę marki, lecz także na frazy sprzedażowe i informacyjne.</p>",
           "breakAfter": true
         },
-                                        {
-  "type": "image",
-  "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/seo-w-notatniku.jpg",
-  "alt": "seo w notatniku",
-  "ratio": "16/9",
-  "quality": 90,
-  "caption": "Optymalizacja SEO",
-    "breakAfter": false
-},
-    
+        {
+          "type": "image",
+          "src": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/seo-w-notatniku.jpg",
+          "alt": "seo w notatniku",
+          "ratio": "16/9",
+          "quality": 90,
+          "caption": "Optymalizacja SEO",
+          "breakAfter": false
+        },
+
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Zrób audyt strony pod kątem SEO</h2><p>Brak widoczności strony w Google to częsty problem. Jeśli mimo wszystkich działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt techniczny i contentowy.</p></br><p><strong>Analiza obejmuje:</strong></p></br><ul class='list-disc ml-5'><li>weryfikację indeksacji witryny,</li><li>sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>ocenę szybkości (Core Web Vitals),</li><li>analizę treści i słów kluczowych,</li><li>rekomendacje zmian.</li></ul></br><p>👉 Skontaktuj się z nami — przeprowadzimy kompleksowy audyt SEO i wskażemy dokładnie, co blokuje Twoją widoczność według aktualnych wytycznych Google.</br>Efekt? Twoja strona zacznie się pojawiać tam, gdzie szukają Cię klienci.</p>",
