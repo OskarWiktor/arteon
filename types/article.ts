@@ -1,0 +1,36 @@
+import { ProjectCTA } from './project';
+
+export type Article = {
+  slug: string;
+  title: string;
+  excerpt?: string;
+  cover?: string;
+  category?: string[];
+  tags?: string[];
+  author?: { name: string; url?: string };
+  readingTime?: number; // w minutach
+  datePublished?: string; // YYYY-MM-DD
+  dateModified?: string; // YYYY-MM-DD
+  faq?: { question: string; answer: string }[];
+  contentBlocks: Array<
+    | { type: 'richtext'; html: string }
+    | { type: 'image'; src: string; alt: string; caption?: string; ratio?: '16/9' | '4/3' | '1/1' | 'auto'; width?: number; height?: number; quality?: number; priority?: boolean }
+    | {
+        type: 'imageText';
+        src: string;
+        alt: string;
+        html: string;
+        imageSide?: 'left' | 'right';
+        ratio?: '16/9' | '4/3' | '1/1' | 'auto';
+        width?: number;
+        height?: number;
+        quality?: number;
+        priority?: boolean;
+      }
+    | { type: 'quote'; text: string; author?: string; role?: string }
+    | { type: 'callout'; title?: string; html: string }
+  >;
+  seo?: { title?: string; description?: string; canonical?: string };
+
+  cta?: ProjectCTA;
+};

@@ -48,6 +48,7 @@ export default function DesktopNavigation() {
     { href: '/realizacje', label: 'Realizacje', exact: true },
     { href: '/uslugi', label: 'Usługi' },
     { href: '/o-nas', label: 'O nas' },
+    { href: '/edukacja', label: 'Edukacja' },
     { href: '/kontakt', label: 'Kontakt' },
   ];
 

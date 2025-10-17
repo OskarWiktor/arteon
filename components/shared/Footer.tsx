@@ -16,6 +16,7 @@ const navLinks = [
   { href: '/', label: 'Strona Główna' },
   { href: '/realizacje', label: 'Realizacje' },
   { href: '/o-nas', label: 'O Nas' },
+  { href: '/edukacja', label: 'Edukacja' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 

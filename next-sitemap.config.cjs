@@ -4,7 +4,7 @@ const path = require('node:path');
 const fs = require('node:fs');
 const { execSync } = require('node:child_process');
 
-/** Bezpieczne pobranie daty ostatniego commita Gita dla pliku */
+/** ───────── Helpers: Git & FS ───────── */
 function gitLastCommitISO(filePath) {
   try {
     const out = execSync(`git log -1 --format=%cI -- "${filePath}"`, { stdio: ['ignore', 'pipe', 'ignore'] })
@@ -15,45 +15,48 @@ function gitLastCommitISO(filePath) {
     return null;
   }
 }
-
-/** Fallback: mtime pliku (ISO) */
 function fileMTimeISO(filePath) {
   try {
-    const stat = fs.statSync(filePath);
-    return stat.mtime.toISOString();
+    return fs.statSync(filePath).mtime.toISOString();
   } catch {
     return null;
   }
 }
+function parseISO(str) {
+  if (!str) return null;
+  const d = new Date(str);
+  return isNaN(d.getTime()) ? null : d.toISOString();
+}
+function maxISO(list) {
+  const arr = list.map(parseISO).filter(Boolean).sort();
+  return arr.length ? arr[arr.length - 1] : null;
+}
+function slugify(input) {
+  return String(input)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
 
-/** Mapowanie ścieżki pliku app/.../page.* -> route */
+/** ───────── Route mapping from app ───────── */
 function toRoute(file) {
   if (file === 'page.tsx' || file === 'page.ts' || file === 'page.mdx') return '/';
   let r = '/' + file.replace(/\\/g, '/').replace(/\/page\.(ts|tsx|mdx)$/, '');
-  // usuń grupy route'ów (np. /(pl))
-  r = r.replace(/\/\([^/]+\)/g, '');
-  // pomiń dynamiczne
-  if (/\[.+?\]/.test(r)) return null;
+  r = r.replace(/\/\([^/]+\)/g, ''); // usuń grupy /(xxx)
+  if (/\[.+?\]/.test(r)) return null; // pomiń dynamiczne
   if (r === '/index') r = '/';
   if (r === '/_not-found' || r === '/api') return null;
   return r;
 }
-
-/** Zbuduj mapę: route -> lastmod (ISO) na podstawie Gita/mtime */
 function buildRouteLastmodMap() {
   const appDir = path.join(process.cwd(), 'app');
   const files = fg.sync(['**/page.{ts,tsx,mdx}'], {
     cwd: appDir,
-    ignore: [
-      '**/(_*)/**',
-      '**/_*',
-      'api/**',
-      '**/components/**',
-      '**/shared/**',
-      '**/layout.{ts,tsx}',
-      '_not-found/**',
-      '**/_not-found/**',
-    ],
+    ignore: ['**/(_*)/**', '**/_*', 'api/**', '**/components/**', '**/shared/**', '**/layout.{ts,tsx}', '_not-found/**', '**/_not-found/**'],
   });
 
   const map = new Map();
@@ -61,7 +64,6 @@ function buildRouteLastmodMap() {
     const abs = path.join(appDir, f);
     const route = toRoute(f);
     if (!route) continue;
-
     const gitDate = gitLastCommitISO(abs);
     const lastmod = gitDate || fileMTimeISO(abs);
     if (lastmod) map.set(route, lastmod);
@@ -69,44 +71,93 @@ function buildRouteLastmodMap() {
   return map;
 }
 
-/** Spróbuj domyślnie odczytać listę projektów */
+/** ───────── Projects (jak miałeś) ───────── */
 function readProjects() {
   try {
-    // dostosuj ścieżkę jeśli masz inny katalog z danymi
     const { projects } = require('./data/pl/projects.json');
     return Array.isArray(projects) ? projects : [];
   } catch {
     return [];
   }
 }
-
-const ROUTE_LASTMOD = buildRouteLastmodMap();
-const PROJECTS = readProjects();
-
-/** Opcjonalnie: mapowanie projektu -> lastmod z repo (jeśli trzymasz pliki treści/MDX per projekt) */
 function projectLastmodFromFiles(slug) {
-  // Przykładowe heurystyki: MDX treści projektu, JSON, obrazy – weź najnowszy commit z dopasowań
-  const candidates = fg.sync(
-    [
-      `content/projects/${slug}.mdx`,
-      `content/projects/${slug}/**/*`,
-      `data/pl/projects.json`,
-      `public/assets/projects/${slug}/**/*`,
-    ],
-    { dot: false }
-  );
+  const candidates = fg.sync([`content/projects/${slug}.mdx`, `content/projects/${slug}/**/*`, `data/pl/projects.json`, `public/assets/projects/${slug}/**/*`], { dot: false });
 
-  let newestISO = null;
+  let newest = null;
   for (const rel of candidates) {
     const abs = path.join(process.cwd(), rel);
-    const gitDate = gitLastCommitISO(abs) || fileMTimeISO(abs);
-    if (gitDate && (!newestISO || new Date(gitDate) > new Date(newestISO))) {
-      newestISO = gitDate;
-    }
+    const iso = gitLastCommitISO(abs) || fileMTimeISO(abs);
+    if (iso && (!newest || new Date(iso) > new Date(newest))) newest = iso;
   }
-  return newestISO;
+  return newest;
 }
 
+/** ───────── Blog/Edukacja ───────── */
+function readBlog() {
+  try {
+    const blog = require('./data/pl/blog.json');
+    return Array.isArray(blog.articles) ? blog.articles : [];
+  } catch {
+    return [];
+  }
+}
+function primaryCategorySlug(article) {
+  const first = (article.category && article.category[0]) || 'inne';
+  return slugify(first);
+}
+function articleAssetsLastmod(article) {
+  // Szukamy zmian w danych/assetach wpisu (opcjonalne, ale przydatne jako fallback)
+  const slug = article.slug;
+  const candidates = fg.sync([`content/blog/${slug}.mdx`, `content/blog/${slug}/**/*`, `public/assets/blog/${slug}/**/*`, `data/pl/blog.json`], { dot: false });
+
+  let newest = null;
+  for (const rel of candidates) {
+    const abs = path.join(process.cwd(), rel);
+    const iso = gitLastCommitISO(abs) || fileMTimeISO(abs);
+    if (iso && (!newest || new Date(iso) > new Date(newest))) newest = iso;
+  }
+  return newest;
+}
+
+/** ───────── Build data ───────── */
+const ROUTE_LASTMOD = buildRouteLastmodMap();
+const PROJECTS = readProjects();
+const ARTICLES = readBlog();
+
+/** Dodajemy lastmod dla Edukacji do ROUTE_LASTMOD (by działało też w transform) */
+(function enrichEducationLastmods() {
+  // Artykuły: /edukacja/[category]/[slug]
+  for (const a of ARTICLES) {
+    const cat = primaryCategorySlug(a);
+    const pathLoc = `/edukacja/${cat}/${a.slug}`;
+    const fromData = parseISO(a.dateModified) || parseISO(a.datePublished);
+    const fallback = articleAssetsLastmod(a);
+    const last = fromData || fallback;
+    if (last) ROUTE_LASTMOD.set(pathLoc, last);
+  }
+
+  // Kategorie (tylko te, które mają artykuły)
+  const byCat = new Map(); // catSlug -> [ISO]
+  for (const a of ARTICLES) {
+    const datestr = parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a);
+    for (const c of a.category || []) {
+      const s = slugify(c);
+      if (!byCat.has(s)) byCat.set(s, []);
+      if (datestr) byCat.get(s).push(datestr);
+    }
+  }
+  for (const [cat, list] of byCat.entries()) {
+    const last = maxISO(list);
+    if (last) ROUTE_LASTMOD.set(`/edukacja/${cat}`, last);
+  }
+
+  // Index: /edukacja -> najnowszy artykuł
+  const allDates = ARTICLES.map((a) => parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a)).filter(Boolean);
+  const newest = maxISO(allDates);
+  if (newest) ROUTE_LASTMOD.set('/edukacja', newest);
+})();
+
+/** ───────── Config ───────── */
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl',
   generateRobotsTxt: true,
@@ -114,61 +165,67 @@ module.exports = {
   exclude: ['/404', '/500', '/_next/*', '/api/*', '/drafts/*'],
 
   /**
-   * Każdy route: changefreq = 'weekly'.
-   * lastmod z mapy Gita/mtime; jeśli brak – nie nadpisujemy.
+   * Global: changefreq weekly.
+   * lastmod: najpierw z ROUTE_LASTMOD (Git/file lub dane artykułu).
    */
   transform: async (config, loc) => {
     const base = {
       loc,
       changefreq: 'weekly',
-      priority: loc === '/' ? 1.0 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/realizacje') ? 0.6 : 0.7,
+      priority: loc === '/' ? 1.0 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7,
       alternateRefs: [],
     };
-
     const lastmod = ROUTE_LASTMOD.get(loc);
     return lastmod ? { ...base, lastmod } : base;
   },
 
   /**
    * Dodatkowe ścieżki:
-   * - projekty z /realizacje/[slug] z lastmod z updatedAt, a jeśli brak, z Gita/plików
-   * - pozostałe route’y z app/…/page.* które nie weszły automatycznie (gdyby transform ich nie dorzucił)
+   * - projekty /realizacje/[slug] (jak wcześniej),
+   * - edukacja: /edukacja, /edukacja/[category], /edukacja/[category]/[slug].
    */
   additionalPaths: async () => {
     const add = [];
 
-    // Projekty
+    /* ─ Projects ─ */
     for (const p of PROJECTS) {
       const loc = `/realizacje/${p.slug}`;
-      const iso =
-        (p.updatedAt && new Date(p.updatedAt).toISOString()) ||
-        projectLastmodFromFiles(p.slug) ||
-        ROUTE_LASTMOD.get(loc) ||
-        null;
+      const iso = (p.updatedAt && parseISO(p.updatedAt)) || projectLastmodFromFiles(p.slug) || ROUTE_LASTMOD.get(loc) || null;
 
-      const entry = {
-        loc,
-        changefreq: 'weekly',
-        priority: 0.6,
-      };
+      const entry = { loc, changefreq: 'weekly', priority: 0.6 };
       if (iso) entry.lastmod = iso;
       add.push(entry);
     }
 
-    // Dodatkowe strony z app (upewniamy się, że wszystkie mają sensowne lastmod)
+    /* ─ Edukacja: index ─ */
+    if (ROUTE_LASTMOD.has('/edukacja')) {
+      add.push({
+        loc: '/edukacja',
+        changefreq: 'weekly',
+        priority: 0.8,
+        lastmod: ROUTE_LASTMOD.get('/edukacja'),
+      });
+    }
+
+    /* ─ Edukacja: kategorie ─ */
+    for (const [loc, last] of ROUTE_LASTMOD.entries()) {
+      if (loc.startsWith('/edukacja/') && loc.split('/').length === 3) {
+        add.push({ loc, changefreq: 'weekly', priority: 0.75, lastmod: last });
+      }
+    }
+
+    /* ─ Edukacja: artykuły ─ */
+    for (const [loc, last] of ROUTE_LASTMOD.entries()) {
+      if (loc.startsWith('/edukacja/') && loc.split('/').length === 4) {
+        add.push({ loc, changefreq: 'weekly', priority: 0.72, lastmod: last });
+      }
+    }
+
+    /* ─ Upewnij się, że pozostałe statyczne route’y też są (fallback) ─ */
     const appDir = path.join(process.cwd(), 'app');
     const files = await fg(['**/page.{ts,tsx,mdx}'], {
       cwd: appDir,
-      ignore: [
-        '**/(_*)/**',
-        '**/_*',
-        'api/**',
-        '**/components/**',
-        '**/shared/**',
-        '**/layout.{ts,tsx}',
-        '_not-found/**',
-        '**/_not-found/**',
-      ],
+      ignore: ['**/(_*)/**', '**/_*', 'api/**', '**/components/**', '**/shared/**', '**/layout.{ts,tsx}', '_not-found/**', '**/_not-found/**'],
     });
 
     const seen = new Set(add.map((x) => x.loc));
@@ -183,12 +240,20 @@ module.exports = {
       const entry = {
         loc: route,
         changefreq: 'weekly',
-        priority: route === '/' ? 1.0 : route.startsWith('/uslugi/') ? 0.8 : 0.7,
+        priority: route === '/' ? 1.0 : route.startsWith('/uslugi/') ? 0.8 : route.startsWith('/edukacja') ? 0.75 : 0.7,
       };
       if (iso) entry.lastmod = iso;
       add.push(entry);
     }
 
     return add;
+  },
+
+  robotsTxtOptions: {
+    policies: [{ userAgent: '*', allow: '/' }],
+    additionalSitemaps: [
+      // jeśli dorzucisz kolejne mapy, dodaj tu:
+      // `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl'}/server-sitemap.xml`,
+    ],
   },
 };

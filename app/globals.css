@@ -114,6 +114,10 @@ strong {
   font-weight: 600;
 }
 
+.inline-link {
+  @apply underline underline-offset-4 hover:no-underline;
+}
+
 /*    FORMS    */
 input,
 select,

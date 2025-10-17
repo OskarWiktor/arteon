@@ -1,0 +1,35 @@
+import type { Metadata } from 'next';
+import HeroBaner from '@/components/sections/HeroBaner';
+import Gap from '@/components/ui/Gap';
+import Wrapper from '@/components/ui/Wrapper';
+import ArticlesList from '@/components/sections/blog/ArticlesList';
+import FilterBar from '@/components/sections/blog/FilterBar';
+import { getCategoriesWithCount } from '@/lib/blog';
+
+export const metadata: Metadata = {
+  title: 'Edukacja - poradniki i wiedza | Arteon',
+  description: 'Poradniki o stronach, sklepach, SEO i marketingu. Uczysz się i wdrażasz - krok po kroku.',
+  alternates: { canonical: '/edukacja' },
+  openGraph: {
+    title: 'Edukacja Arteon',
+    description: 'Artykuły: praktyka, SEO i rozwój firmy.',
+    url: 'https://www.arteonagency.pl/edukacja',
+    type: 'website',
+  },
+};
+
+export default function EdukacjaPage() {
+  const cats = getCategoriesWithCount(); // tylko realne kategorie (count>0)
+
+  return (
+    <>
+      <HeroBaner title="Edukacja" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
+      <Wrapper>
+        <Gap size="sm" />
+        <FilterBar cats={cats} />
+        <ArticlesList />
+        <Gap size="sm" />
+      </Wrapper>
+    </>
+  );
+}

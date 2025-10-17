@@ -26,7 +26,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<h5 class='h3 reveal-animation'>Paleta i typografia</h5><p class='pt-3'>Kolory: <strong>bordo</strong> i <strong>beż</strong> - stabilność i zaufanie. Typografia łączy elegancki serif z nowoczesnym groteskiem. Taki duet gwarantuje czytelność na papierze i w PDF.</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Paleta i typografia</h2><p>Kolory: <strong>bordo</strong> i <strong>beż</strong> - stabilność i zaufanie. Typografia łączy elegancki serif z nowoczesnym groteskiem. Taki duet gwarantuje czytelność na papierze i w PDF.</p>"
         },
         {
           "type": "image",
@@ -101,14 +101,14 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<h5 class='h3 reveal-animation'>Paleta i typografia</h5><p class='pt-3'>Projekt utrzymany jest w kolorystyce <strong>bordo i beżu</strong> - symbolizujących stabilność, doświadczenie i klasę. Typografia łączy nowoczesność z tradycją: elegancki <em>Beaufort Pro</em> z geometrycznym <em>Neue Haas Grotesk Display Pro</em>. Taki zestaw podkreśla profesjonalizm i wysoką kulturę komunikacji marki prawniczej.</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Paleta i typografia</h2><p>Projekt utrzymany jest w kolorystyce <strong>bordo i beżu</strong> - symbolizujących stabilność, doświadczenie i klasę. Typografia łączy nowoczesność z tradycją: elegancki <em>Beaufort Pro</em> z geometrycznym <em>Neue Haas Grotesk Display Pro</em>. Taki zestaw podkreśla profesjonalizm i wysoką kulturę komunikacji marki prawniczej.</p>"
         },
         {
           "type": "imageText",
           "src": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
           "alt": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - projekt koncepcyjny",
           "imageSide": "left",
-          "html": "<h5 class='h3 reveal-animation'>Projekt teczki ofertowej dla kancelarii adwokackiej</h5><p class='pt-3'>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy elegancką formę, która idealnie reprezentuje kancelarię podczas spotkań i przekazywania dokumentów.</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Projekt teczki ofertowej dla kancelarii adwokackiej</h2><p>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy elegancką formę, która idealnie reprezentuje kancelarię podczas spotkań i przekazywania dokumentów.</p>"
         },
         {
           "type": "image",
@@ -196,14 +196,14 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<h5 class='h3 reveal-animation'>Paleta i typografia</h5><p class='pt-3'>Użyliśmy połączenia bordo i beżu, dla wzmacnia wrażenie autorytetu i stabilności. Typografia oparta jest na krojach Beaufort Pro i Neue Haas Grotesk Display Pro - budują one wrażenie nowoczesnej klasyki oraz utrzymują wysoką czytelność w małych rozmiarach.</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Paleta i typografia</h2><p>Użyliśmy połączenia bordo i beżu, dla wzmacnia wrażenie autorytetu i stabilności. Typografia oparta jest na krojach Beaufort Pro i Neue Haas Grotesk Display Pro - budują one wrażenie nowoczesnej klasyki oraz utrzymują wysoką czytelność w małych rozmiarach.</p>"
         },
         {
           "type": "imageText",
           "src": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png",
           "alt": "Wizytówka dla kancelarii - LUX NOVA (widok ogólny)",
           "imageSide": "left",
-          "html": "<h5 class='h3 reveal-animation'>Wizytówka dla adwokata - hierarchia i porządek</h5><p class='pt-3'>Na froncie zaakcentowaliśmy mocno logo firmy, aby odbiorca mógł szybko zapamiętać znak kancelarii. Na rewersie ponownie zaakcentowaliśmy logo wraz z kodem QR do strony firmowej, na dole uporządkowaliśmy najważniejsze dane firmy</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówka dla adwokata - hierarchia i porządek</h2><p>Na froncie zaakcentowaliśmy mocno logo firmy, aby odbiorca mógł szybko zapamiętać znak kancelarii. Na rewersie ponownie zaakcentowaliśmy logo wraz z kodem QR do strony firmowej, na dole uporządkowaliśmy najważniejsze dane firmy</p>"
         },
         {
           "type": "image",
@@ -378,7 +378,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<h5 class='h3 reveal-animation'>Struktura i hierarchia</h5><p class='pt-3'>Czytelne kategorie, powtarzalna karta produktu, wyróżnione ceny. Szybkie porównania wspierają decyzję zakupu.</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Struktura i hierarchia</h2><p>Czytelne kategorie, powtarzalna karta produktu, wyróżnione ceny. Szybkie porównania wspierają decyzję zakupu.</p>"
         },
         {
           "type": "image",
@@ -431,7 +431,7 @@
           "src": "/assets/projects/wizytowka-talia.png",
           "alt": "Wizytówka dla SPA - TALIA (front i tył)",
           "imageSide": "left",
-          "html": "<h5 class='h3 reveal-animation'>Wizytówki dla SPA - spokój i klasa</h5><p class='pt-3'>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>"
         }
       ],
       "seo": {
@@ -552,7 +552,7 @@
           "src": "/assets/projects/resto-wiz.png",
           "alt": "Szablon wizytówek dla handlowców w gastronomii - RestoQuality ",
           "imageSide": "left",
-          "html": "<h5 class='h3 reveal-animation'>Wizytówki dla restauracji i firm gastro</h5><p class='pt-3'>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla restauracji i firm gastro</h2><p>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"
         }
       ],
       "seo": {

@@ -12,6 +12,7 @@ type NavItem = { href: string; label: string; exact?: boolean };
 const NAV: NavItem[] = [
   { href: '/realizacje', label: 'Realizacje', exact: true },
   { href: '/o-nas', label: 'O nas' },
+  { href: '/edukacja', label: 'Edukacja' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 
