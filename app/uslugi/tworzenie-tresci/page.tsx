@@ -50,7 +50,7 @@ export default function OfferContentPage() {
         title="Tworzenie treści"
         description={<>Przyciągnij nowych klientów poprzez treści, które trafiają idealnie do wymarzonych odbiorców</>}
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
@@ -287,7 +287,7 @@ export default function OfferContentPage() {
         title="Stwórzmy treści, które działają jak magnez"
         description="Tworzymy treści, które trafiają do ludzi oraz algorytmów, wspierając sprzedaż"
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
       />

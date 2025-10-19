@@ -34,7 +34,7 @@ export default function OfferDesignXxxPage() {
         title="Projekt katalogu"
         description={<>Sprzedaż potrzebuje klarownej prezentacji oferty. Projektujemy katalogi z dopracowanym składem DTP, zdjęciami i typografią - w wersji do druku i do udostępniania online.</>}
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -190,7 +190,7 @@ export default function OfferDesignXxxPage() {
         title="Pokaż ofertę z klasą"
         description="Zaprojektujemy katalog, który klarownie prowadzi do decyzji."
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"

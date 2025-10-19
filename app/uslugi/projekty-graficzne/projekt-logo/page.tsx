@@ -34,7 +34,7 @@ export default function OfferDesignXxxPage() {
         title="Projekt logo"
         description={<>Silny znak porządkuje komunikację i wyróżnia markę. Tworzymy logo z myślą o czytelności i skalowalności - z wersjami kolorystycznymi oraz mini-księgą znaku.</>}
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -179,7 +179,7 @@ export default function OfferDesignXxxPage() {
         title="Znak, który prowadzi markę"
         description="Stworzymy logo, które porządkuje komunikację i zostaje w pamięci."
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"

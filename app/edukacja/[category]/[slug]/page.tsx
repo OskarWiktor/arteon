@@ -193,7 +193,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                     <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
                   </Aspect>
                 )}
-                {b.caption && <figcaption className="mt-2 mb-6 md:mb-12 lg:mb-16 text-sm text-[#5e5e5e]">{b.caption}</figcaption>}
+                {b.caption && <figcaption className="mt-2 mb-6 text-sm text-[#5e5e5e] md:mb-12 lg:mb-16">{b.caption}</figcaption>}
               </figure>
             </div>
           );

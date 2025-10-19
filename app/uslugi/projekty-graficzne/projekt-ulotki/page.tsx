@@ -34,7 +34,7 @@ export default function OfferDesignXxxPage() {
         title="Projekt ulotki"
         description={<>Dotarcie lokalne zaczyna się od jasnego przekazu. Tworzymy ulotki, które przyciągają uwagę, wyjaśniają ofertę w kilka sekund i kierują prosto do kontaktu.</>}
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -195,7 +195,7 @@ export default function OfferDesignXxxPage() {
         title="Zamień uwagę w działanie"
         description="Zaprojektujemy ulotkę, która prowadzi prosto do kontaktu."
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"

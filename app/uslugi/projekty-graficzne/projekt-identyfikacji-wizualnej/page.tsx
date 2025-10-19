@@ -36,7 +36,7 @@ export default function OfferDesignXxxPage() {
           <>Spójny system wizualny zwiększa wiarygodność i rozpoznawalność. Projektujemy identyfikację: logo, kolory, typografia i materiały firmowe - gotowe do wdrożenia w całej firmie.</>
         }
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -201,7 +201,7 @@ export default function OfferDesignXxxPage() {
         title="Uspójnij obraz marki"
         description="Zbudujemy system, który wzmacnia rozpoznawalność i wiarygodność."
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"

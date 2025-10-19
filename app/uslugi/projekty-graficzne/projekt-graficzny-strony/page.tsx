@@ -34,7 +34,7 @@ export default function OfferDesignXxxPage() {
         title="Projekt graficzny strony"
         description={<>Wygląd, struktura i komfort użytkownika pracują na konwersję. Tworzymy makiety i layouty www zgodne z UX i SEO - estetyczne, czytelne i gotowe do wdrożenia.</>}
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -186,7 +186,7 @@ export default function OfferDesignXxxPage() {
         title="Daj stronie przewagę na starcie"
         description="Stworzymy layout, który prowadzi wzrokiem i zwiększa konwersję."
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"

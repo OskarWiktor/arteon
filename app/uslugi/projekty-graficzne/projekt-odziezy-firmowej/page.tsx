@@ -34,7 +34,7 @@ export default function OfferDesignXxxPage() {
         title="Projekt odzieży firmowej"
         description={<>Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z Twoją identyfikacją.</>}
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -175,7 +175,7 @@ export default function OfferDesignXxxPage() {
         title="Ubierz zespół w tożsamość"
         description="Zaprojektujemy nadruki i hafty, które wyróżniają markę w terenie."
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"

@@ -51,7 +51,7 @@ export default function OfferBlogPage() {
         title="Blogi internetowe"
         description={<>Zwiększ swoją widoczność, tworząc własny blog internetowy</>}
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -321,7 +321,7 @@ export default function OfferBlogPage() {
         title="Czas na blog, który buduje Twoją pozycję"
         description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
         primaryLabel="Wyceń projekt"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg3.webp"
         overlay="black"
       />

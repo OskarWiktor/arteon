@@ -12,10 +12,8 @@ import {
   RiCustomerService2Line,
   RiFileList2Line,
   RiLightbulbFlashLine,
-  RiLightbulbLine,
   RiLineChartLine,
   RiMegaphoneLine,
-  RiRocketLine,
   RiSearchEyeLine,
   RiSearchLine,
   RiShareForwardLine,
@@ -30,28 +28,79 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import { IoAnalytics } from 'react-icons/io5';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionBasic from '@/components/ui/sections/SectionBasic';
+import Script from 'next/script';
 
+/* === SEO meta === */
 export const metadata = {
-  title: 'Marketing internetowy - reklamy i widoczność w Google | Arteon',
-  description: 'Strategia, kreacje i kampanie. Więcej zapytań i sprzedaży dzięki reklamom i mądrej widoczności.',
-  keywords: ['marketing internetowy', 'reklamy Google', 'reklamy Meta', 'kampanie online', 'widoczność w Google', 'strategie marketingowe'],
+  title: 'Marketing internetowy — SEO, reklamy i komunikacja, które dowożą wynik | Arteon',
+  description:
+    'Strategia, wdrożenia i kampanie: audyt SEO, optymalizacja, pozycjonowanie, reklamy online, social media oraz branding i komunikacja. Przyciągamy właściwych klientów i pokazujemy wyniki.',
+  keywords: [
+    'marketing internetowy',
+    'audyt SEO',
+    'optymalizacja SEO',
+    'pozycjonowanie stron',
+    'reklamy online',
+    'social media',
+    'branding i komunikacja',
+    'widoczność w Google',
+    'kampanie Google i Meta',
+  ],
   alternates: { canonical: '/uslugi/marketing' },
   openGraph: {
-    title: 'Marketing internetowy - reklamy i widoczność w Google | Arteon',
-    description: 'Strategia, kreacje i kampanie. Więcej zapytań i sprzedaży dzięki reklamom i mądrej widoczności.',
+    title: 'Marketing internetowy — SEO, reklamy i komunikacja, które dowożą wynik | Arteon',
+    description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
   },
 } as const;
 
-export default function OfferMarketingPage() {
+/* === ItemList JSON-LD dla podstron marketingu === */
+function ItemListSchema() {
+  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+  const services = [
+    { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
+    { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },
+    { name: 'Pozycjonowanie stron', path: '/uslugi/marketing/pozycjonowanie-stron' },
+    { name: 'Reklamy online', path: '/uslugi/marketing/reklamy-online' },
+    { name: 'Social media', path: '/uslugi/marketing/social-media' },
+    { name: 'Branding i komunikacja', path: '/uslugi/marketing/branding-komunikacja' },
+  ];
+  const json = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${base}/uslugi/marketing#itemlist`,
+    name: 'Usługi marketingowe — Arteon',
+    itemListOrder: 'http://schema.org/ItemListOrderAscending',
+    itemListElement: services.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${base}${s.path}`,
+      name: s.name,
+    })),
+  };
+  return (
+    <Script id="schema-itemlist-marketing" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
+
+export default function OfferMarketingHubPage() {
   return (
     <>
       <HeroBanner
         title="Marketing"
-        description={<>Przyciągnij nowych klientów, przemyślanym działaniem marketingowym</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        description={
+          <>
+            Przyciągniemy właściwych klientów i pokażemy konkretny wynik. Zaczynamy od diagnozy, wdrażamy poprawki, rozwijamy widoczność i uruchamiamy kampanie. Wszystko w jednym, poukładanym
+            procesie.
+          </>
+        }
+        buttonAccent="Bezpłatna konsultacja"
+        buttonAccentLink="#kontakt"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"
@@ -60,9 +109,9 @@ export default function OfferMarketingPage() {
       <BenefitBelt
         items={[
           { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
-          { icon: <RiBarChart2Fill />, label: 'Raporty i kontrola wyników' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczeństwo danych' },
+          { icon: <RiLightbulbFlashLine />, label: 'Plan oparty na danych' },
+          { icon: <RiBarChart2Fill />, label: 'Raporty zrozumiałe dla biznesu' },
+          { icon: <RiShieldCheckLine />, label: 'Bezpieczeństwo i stabilność' },
         ]}
       />
 
@@ -71,100 +120,130 @@ export default function OfferMarketingPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        {/* Wprowadzenie: co dostaje klient */}
+        <SectionInfo title="Marketing, który łączy kropki">
+          <p>
+            <strong>Najpierw rozumiemy, potem działamy.</strong> Sprawdzamy, co realnie hamuje widoczność i sprzedaż — a później wdrażamy proste rozwiązania: szybszą stronę, lepsze treści i kampanie,
+            które dowożą kontakt.
+          </p>
+          <br />
+          <p>
+            <strong>Pracujemy etapami i pokazujemy efekty.</strong> Każda zmiana ma cel i miarę — od krótszego czasu ładowania, przez wzrost wejść z Google, po niższy koszt pozyskania z reklam.
+            Dostajesz krótki raport i plan na kolejny miesiąc.
+          </p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* Co zyskujesz — pełne zdania */}
         <FeatureGrid
           title="Co zyskujesz zlecając nam marketing?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'Kompleksowe SEO strony, sklepu i bloga',
+              title: 'Spójny plan na SEO i reklamy',
+              description: <>Nie robimy „wszystkiego naraz”. Ustalamy logiczną kolejność: diagnoza → wdrożenia → rozwój → kampanie. Dzięki temu budżet pracuje tam, gdzie ma największy sens.</>,
               icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Reklamy Google, Facebook i Instagram',
+              title: 'Widoczność w Google bez żargonu',
+              description: (
+                <>Tłumaczymy po ludzku i wdrażamy zmiany, które widać w wynikach: szybsza strona, lepsze tytuły i opisy, logiczna struktura, treści, które odpowiadają na pytania klientów.</>
+              ),
+              icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Kampanie, które mierzą to, co ważne',
+              description: <>Konfigurujemy pomiar konwersji (formularze, telefony, wiadomości). Dzięki temu wiesz, ile kosztuje realny kontakt i co skalować.</>,
               icon: <RiAdvertisementLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Audyty techniczne, prawne i WCAG 2.1 AA',
-              icon: <RiSearchEyeLine className="h-6 w-6 text-slate-500" />,
+              title: 'Strategia treści + social media',
+              description: <>Tworzymy treści na stronę i do social mediów — spójne tematy, regularne publikacje i moderacja. Efekt: zasięg, rozpoznawalność i więcej wejść na WWW.</>,
+              icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Analiza konkurencji',
+              title: 'Branding i jasna komunikacja',
+              description: <>Uporządkujemy język marki i zasady wizualne. Klient szybciej zrozumie wartość oferty — a Ty otrzymasz gotowe szablony treści i prosty brandbook.</>,
+              icon: <RiUserHeartLine className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Raporty i decyzje oparte na danych',
+              description: <>Dostajesz czytelny raport i wnioski. Wspólnie decydujemy, które działania wzmacniać, a które zakończyć — bez pudru i „marketingowej mgły”.</>,
               icon: <IoAnalytics className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Automatyzacja prowadzenia social mediów',
-              icon: <RiRocketLine className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Branding budujący emocje i transformację klienta',
-              icon: <RiLightbulbLine className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Oferty sprzedażowe według schematu Why → How → What',
-              icon: <RiLineChartLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
 
         <Gap variant="line" />
 
+        {/* Krótkie „jak mierzymy sukces” */}
+        <SectionInfo title="Jak mierzymy sukces?" subtitle="Praktyczne wskaźniki">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Widoczność i wejścia z Google</strong> — więcej fraz w Top10/Top3 i większy ruch organiczny.
+            </li>
+            <li>
+              <strong>Koszt pozyskania kontaktu z reklam</strong> — stabilny i przewidywalny CPA.
+            </li>
+            <li>
+              <strong>Więcej zapytań</strong> — formularze, telefony i wiadomości z WWW oraz social mediów.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* Sekcja kroków — każda karta to link do podstrony z pełnym opisem */}
         <SectionSteps
           title="Oferta marketingu"
           subtitle="Skutecznie i przejrzyście"
-          description="SEO, reklamy i social - opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
+          description="Każda usługa ma własną stronę z detalami, przykładami i cennikiem. Zaczynamy od diagnozy, kończymy na skalowaniu tego, co działa."
           items={[
             {
               icon: <RiFileList2Line className="h-8 w-8" />,
-              title: 'SEO: audyt',
-              subtitle: 'od 800 zł',
+              title: 'Audyt SEO',
+              subtitle: 'Diagnoza i priorytety działań',
               description: (
                 <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-                    <li>Analizujemy Twoją stronę i konkurencję</li>
-                    <li>Sprawdzamy zgodność z prawem i dostępnością</li>
-                    <li>Tworzymy jasny plan poprawy widoczności</li>
-                  </ul>
+                  <p className="mb-3 text-sm">
+                    Sprawdzimy, dlaczego strona nie rośnie w Google: szybkość, treści, struktura i „czy Google rozumie Twoją ofertę”. Dostaniesz raport z priorytetami i szybkimi wygranymi.
+                  </p>
                   <div className="mt-auto">
-                    <Button arrow link="#kontakt">
-                      Zamów audyt SEO
+                    <Button arrow link="/uslugi/marketing/audyt-seo">
+                      Zobacz audyt SEO
                     </Button>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiSearchLine className="h-8 w-8" />,
-              title: 'SEO: optymalizacja',
-              subtitle: 'od 600 zł',
+              icon: <RiSearchEyeLine className="h-8 w-8" />,
+              title: 'Optymalizacja SEO',
+              subtitle: 'Wdrożenia po audycie',
               description: (
                 <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-                    <li>Sprawdzamy, czy Twoja strona jest łatwa do znalezienia</li>
-                    <li>Poprawiamy treści i opisy tak, by przyciągały klientów</li>
-                    <li>Poprawiamy technicznie Twoją witrynę</li>
-                  </ul>
+                  <p className="mb-3 text-sm">
+                    Wprowadzimy zmiany, które realnie podnoszą wyniki: szybsza strona, lepsze tytuły i opisy, porządek w treściach i dodatkowe dane dla Google. Każdą zmianę mierzymy.
+                  </p>
                   <div className="mt-auto">
-                    <Button arrow link="#kontakt">
-                      Zamów optymalizację SEO
+                    <Button arrow link="/uslugi/marketing/optymalizacja-seo">
+                      Przejdź do optymalizacji
                     </Button>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiBarChart2Line className="h-8 w-8" />,
-              title: 'SEO: rozwój',
-              subtitle: 'od 1 200 zł / mies.',
+              icon: <RiLineChartLine className="h-8 w-8" />,
+              title: 'Pozycjonowanie stron',
+              subtitle: 'Stały wzrost widoczności',
               description: (
                 <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-                    <li>Piszemy i publikujemy treści, które podnoszą pozycję strony</li>
-                    <li>Budujemy sieć wartościowych linków</li>
-                    <li>Co miesiąc otrzymujesz raport i jasne rekomendacje</li>
-                  </ul>
+                  <p className="mb-3 text-sm">Budujemy widoczność miesiąc po miesiącu: strategia treści, porządek na stronie i bezpieczne linki. Raport co miesiąc i jasne priorytety.</p>
                   <div className="mt-auto">
-                    <Button arrow link="#kontakt">
-                      Zapytaj o abonament SEO
+                    <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
+                      Zobacz pozycjonowanie
                     </Button>
                   </div>
                 </div>
@@ -172,18 +251,14 @@ export default function OfferMarketingPage() {
             },
             {
               icon: <RiMegaphoneLine className="h-8 w-8" />,
-              title: 'Reklamy',
-              subtitle: 'od 600 zł',
+              title: 'Reklamy online',
+              subtitle: 'Google i Meta nastawione na wynik',
               description: (
                 <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-                    <li>Konfigurujemy reklamy w Google i Meta</li>
-                    <li>Tworzymy zestaw dopasowanych grafik i treści</li>
-                    <li>Ustawiamy śledzenie wyników i zdarzeń</li>
-                  </ul>
+                  <p className="mb-3 text-sm">Ustawimy pomiar, zrobimy kreacje i przetestujemy warianty. Skalujemy tylko to, co dowozi najniższy koszt pozyskania kontaktu.</p>
                   <div className="mt-auto">
-                    <Button arrow link="#kontakt">
-                      Uruchom kampanię
+                    <Button arrow link="/uslugi/marketing/reklamy-online">
+                      Zobacz reklamy online
                     </Button>
                   </div>
                 </div>
@@ -191,18 +266,14 @@ export default function OfferMarketingPage() {
             },
             {
               icon: <RiShareForwardLine className="h-8 w-8" />,
-              title: 'Social media: prowadzenie',
-              subtitle: 'od 1 100 zł / mies.',
+              title: 'Social media',
+              subtitle: 'Plan, treści i moderacja',
               description: (
                 <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-                    <li>Planujemy i publikujemy posty, stories oraz rolki</li>
-                    <li>Przygotowujemy scenariusze i montujemy filmiki</li>
-                    <li>Dbamy o regularność i kontakt z odbiorcami</li>
-                  </ul>
+                  <p className="mb-3 text-sm">Kalendarz publikacji, grafiki i krótkie wideo (reels), moderacja oraz integracja z WWW i reklamami.</p>
                   <div className="mt-auto">
-                    <Button arrow link="#kontakt">
-                      Poproś o plan publikacji
+                    <Button arrow link="/uslugi/marketing/social-media">
+                      Prowadzenie social media
                     </Button>
                   </div>
                 </div>
@@ -210,18 +281,14 @@ export default function OfferMarketingPage() {
             },
             {
               icon: <RiUserHeartLine className="h-8 w-8" />,
-              title: 'Branding psychologiczny',
-              subtitle: 'od 900 zł',
+              title: 'Branding i komunikacja',
+              subtitle: 'Język i zasady, które sprzedają',
               description: (
                 <div className="flex h-full flex-col">
-                  <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
-                    <li>Określamy archetyp marki i jej osobowość</li>
-                    <li>Budujemy język i komunikację, która trafia w emocje</li>
-                    <li>Tworzymy oferty z których klienci chcą skorzystać</li>
-                  </ul>
+                  <p className="mb-3 text-sm">Archetyp, obietnica, język marki i prosty brandbook. Spójny przekaz na stronie i w social mediach.</p>
                   <div className="mt-auto">
-                    <Button arrow link="#kontakt">
-                      Ustal kierunek marki
+                    <Button arrow link="/uslugi/marketing/branding-komunikacja">
+                      Zobacz branding i komunikację
                     </Button>
                   </div>
                 </div>
@@ -232,54 +299,88 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
+        {/* Dwie sekcje „dlaczego razem działa lepiej” */}
+        <SectionBasic
+          variant="right"
+          imageSrc="/assets/sections/mkt-hub-01.webp"
+          imageAlt="Marketing łączący SEO i reklamy"
+          subtitle="Dlaczego łączymy SEO i reklamy"
+          title={<>Szybki wynik z reklam + trwały efekt z SEO</>}
+          description="Reklamy dowożą zapytania od razu, a SEO buduje widoczność, która działa latami. Razem tworzą stabilny system pozyskiwania klientów."
+          btnOne="Zapytaj o plan 90 dni"
+          btnOneLink="#kontakt"
+        >
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
+            <li>Najpierw naprawiamy podstawy: strona musi szybko działać i jasno mówić o ofercie.</li>
+            <li>Testujemy komunikaty w reklamach — wygrywające przenosimy do treści na WWW.</li>
+            <li>SEO przejmuje ciężar w dłuższym okresie, a reklamy domykają sezonowe i szybkie cele.</li>
+          </ul>
+        </SectionBasic>
+
+        <Gap variant="line" />
+
+        <SectionBasic
+          variant="left"
+          imageSrc="/assets/sections/mkt-hub-02.webp"
+          imageAlt="Raportowanie i decyzje na danych"
+          subtitle="Raportowanie i decyzje"
+          title={<>Krótkie raporty, konkretne decyzje</>}
+          description="Mniej slajdów, więcej wniosków. Pokazujemy, co działa i co wzmacniamy w kolejnym miesiącu. Ty decydujesz o skali."
+          btnOne="Chcę prosty raport"
+          btnOneLink="#kontakt"
+        >
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
+            <li>Widoczność i wejścia z Google oraz koszt pozyskania z reklam — bez wodotrysków.</li>
+            <li>Propozycje testów: tematy treści, nowe grupy reklam, ulepszenia na stronie.</li>
+            <li>Rekomendacje budżetowe: gdzie dokładamy, a co odpuszczamy.</li>
+          </ul>
+        </SectionBasic>
+
+        <Gap variant="line" />
+
+        {/* Kroki opłat + jak pracujemy */}
         <FeesSteps />
 
         <Gap variant="line" />
 
         <WorkSteps variant="marketing" />
 
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Stwórzmy skuteczny marketing dla Twojej firmy"
-          description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę usług marketingowych"
-          defaultSubject="Marketing"
-        />
-
         <Gap variant="line" />
 
+        {/* FAQ rozbudowane */}
         <FaqPanels
           pageUrl="https://www.arteonagency.pl/uslugi/marketing"
           items={[
             {
-              question: 'Czy mogę zlecić jednorazową kampanię?',
-              answer: 'Tak, możesz zlecić kampanię jednorazową (np. promującą konkretny produkt, usługę lub wydarzenie). Oferujemy też stałą obsługę marketingową',
+              question: 'Od czego zaczniemy współpracę?',
+              answer: 'Od krótkiej rozmowy i wglądu w stronę. Często startujemy od audytu SEO (diagnostyka), a potem przechodzimy do wdrożeń i/lub kampanii.',
             },
             {
-              question: 'Jak długo trwa pozycjonowanie strony?',
-              answer: 'SEO to proces. Pierwsze efekty mogą pojawić się po 1-3 miesiącach, ale stabilne wzrosty zwykle buduje się przez 6-12 miesięcy',
+              question: 'Kiedy zobaczę pierwsze efekty?',
+              answer: 'Zmiany techniczne widać od razu (szybsza strona). Kampanie reklamowe zwykle dowożą szybciej, a SEO buduje stabilny wzrost w perspektywie 1–3 miesięcy i dalej.',
             },
             {
-              question: 'Czy zajmujecie się prowadzeniem kampanii w social media?',
-              answer: 'Tak, prowadzimy kampanie reklamowe na Facebooku i Instagramie - od przygotowania grafik i tekstów po konfigurację, optymalizację i raportowanie',
+              question: 'Jak wyglądają raporty?',
+              answer: 'Krótko i po ludzku: co zrobiliśmy, co to dało i co robimy w kolejnym miesiącu. Liczby, wykres i wnioski — żadnych slajdów na 50 stron.',
             },
             {
-              question: 'Czy dostanę raport z wynikami kampanii?',
-              answer: 'Tak, po zakończeniu kampanii (lub co miesiąc w przypadku stałej współpracy) otrzymujesz jasny raport: zasięgi, kliknięcia, koszt pozyskania, konwersje',
+              question: 'Czy mogę zamówić tylko jedną usługę (np. same reklamy)?',
+              answer: 'Tak. Dobieramy zakres do Twoich celów i budżetu. Jeśli będzie potrzeba zmian na stronie, podpowiemy, co zrobić najpierw.',
             },
             {
-              question: 'Czy mogę połączyć SEO i kampanie płatne?',
-              answer: 'Tak, to najlepsze rozwiązanie. SEO buduje długofalową widoczność, a płatne kampanie zapewniają szybki ruch',
-            },
-            {
-              question: 'Czy prowadzicie marketing dla sklepów internetowych?',
-              answer: 'Tak, mamy doświadczenie w promocji e-commerce - prowadzimy kampanie produktowe (Google Merchant), remarketing, kampanie sezonowe i sprzedażowe',
-            },
-            {
-              question: 'Czy mogę liczyć na pomoc? Nie wiem, od czego zacząć.',
-              answer: 'Tak, oferujemy bezpłatną konsultację startową - pomożemy określić cele, kanały i optymalną strategię, dopasowaną do Twojej branży i budżetu',
+              question: 'Czy pracujecie dla firm lokalnych i ogólnopolskich?',
+              answer: 'Tak. Dla lokalnych działamy na frazach miasto/region i kampaniach „blisko mnie”. Dla ogólnopolskich — na szerszych strategiach treści i skalowaniu kampanii.',
             },
           ]}
+        />
+
+        <Gap variant="line" />
+
+        {/* Kontakt */}
+        <ContactForm
+          title="Stwórzmy skuteczny marketing dla Twojej firmy"
+          description="Opisz cele i budżet. Przygotujemy plan na 90 dni: od szybkich wygranych do działań długofalowych."
+          defaultSubject="Marketing — zapytanie"
         />
 
         <Gap variant="line" />
@@ -290,13 +391,15 @@ export default function OfferMarketingPage() {
       </Wrapper>
 
       <CTABaner
-        title="Rozwiń markę dobrą strategią"
-        description="Od SEO po reklamy - planujemy i prowadzimy działania, które zwiększają sprzedaż"
+        title="Rozwiń markę mądrą strategią"
+        description="Od audytu i wdrożeń po kampanie i treści — działamy tak, aby wynik był widoczny."
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"
       />
+
+      <ItemListSchema />
     </>
   );
 }

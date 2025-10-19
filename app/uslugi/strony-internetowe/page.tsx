@@ -55,7 +55,7 @@ export default function OfferWebPage() {
           </>
         }
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -340,7 +340,7 @@ export default function OfferWebPage() {
         title="Zbudujmy stronę, która pracuje na Twoją markę"
         description="Pokaż się w sieci z profesjonalnym wizerunkiem"
         primaryLabel="Wyceń projekt"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg12.webp"
         overlay="black"
       />

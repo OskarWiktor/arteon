@@ -111,7 +111,7 @@ export default function OfferDesignPage() {
           </>
         }
         buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="/kontakt"
+        buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
         buttonSecondLink="/realizacje"
         variant="left"
@@ -481,7 +481,7 @@ export default function OfferDesignPage() {
         title="Nadaj marce wyjątkową tożsamość"
         description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
         primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
+        primaryLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />

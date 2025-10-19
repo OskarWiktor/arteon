@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 export default function EdukacjaPage() {
-  const cats = getCategoriesWithCount(); // tylko realne kategorie (count>0)
+  const cats = getCategoriesWithCount();
 
   return (
     <>

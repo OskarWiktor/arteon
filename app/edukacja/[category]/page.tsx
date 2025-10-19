@@ -43,7 +43,13 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
 
   return (
     <>
-      <HeroBaner title={`Edukacja: ${label}`} variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
+      <HeroBaner
+        title={`Edukacja: ${label}`}
+        description={`Poradniki i wiedza na temat: ${label}. Sprawdź nasze artykuły`}
+        variant="center"
+        backgroundImage="/assets/bg/abstract-bg13.webp"
+        overlay="black"
+      />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} active={params.category} />
