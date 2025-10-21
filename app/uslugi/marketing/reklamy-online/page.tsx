@@ -324,11 +324,7 @@ export default function OfferAdsOnlinePage() {
 
         <Gap size="sm" />
 
-        <ContactForm
-          title="Zamów kampanię reklamową"
-          description="Podaj cele i budżet. Przygotujemy plan działań, strukturę kampanii i harmonogram testów."
-          defaultSubject="Reklamy online"
-        />
+        <ContactForm title="Zamów kampanię reklamową" description="Podaj cele i budżet. Przygotujemy plan działań, strukturę kampanii i harmonogram testów." defaultSubject="Reklamy online" />
 
         <Gap variant="line" />
 

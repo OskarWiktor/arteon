@@ -42,7 +42,7 @@ export default function ContactForm({ title, description, defaultSubject, action
     'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   return (
-    <section id="kontakt" className='scroll-mt-26'>
+    <section id="kontakt" className="scroll-mt-26">
       {(title || description) && (
         <header className="mb-6">
           {title && <h2 className="h3 reveal-animation">{title}</h2>}

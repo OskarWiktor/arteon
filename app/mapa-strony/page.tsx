@@ -18,9 +18,26 @@ const services: NavItem[] = [
   { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
-  { href: '/uslugi/projekty-graficzne', title: 'Projekty graficzne' },
+  { href: '/uslugi/projekty-graficzne', title: 'Projekty graficzne', children: [
+    { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony' }, 
+    { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Projekt identyfikacji wizualnej' }, 
+    { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Projekt katalogu' },
+    { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Projekt logo' },
+    { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Projekt odzieży firmowej' },
+    { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Projekt papieru firmowego' },
+    { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Projekt teczki ofertowej' },
+    { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Projekt ulotki' },
+    { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Projekt wizytówki' },
+  ]},
   { href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' },
-  { href: '/uslugi/marketing', title: 'Marketing' },
+  { href: '/uslugi/marketing', title: 'Marketing', children: [
+    { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' }, 
+    { href: '/uslugi/marketing/branding-komunikacja', title: 'Branding komunikacja' }, 
+    { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
+    { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
+    { href: '/uslugi/marketing/reklamy-online', title: 'Reklamy online' },
+    { href: '/uslugi/marketing/social-media', title: 'Social Media' },
+  ]},
 ];
 
 const portfolioIndex = { title: 'Wszystkie realizacje', href: '/realizacje' };
@@ -28,6 +45,12 @@ const portfolioIndex = { title: 'Wszystkie realizacje', href: '/realizacje' };
 const portfolioItems: NavItem[] = [
   // { title: 'Nazwa projektu 1', href: '/realizacje/nazwa-projektu-1' },
 ];
+
+const blogIndex = { title: 'Wszystkie artykuły', href: '/edukacja' }
+
+const blogItems: NavItem[] = [
+  //{ title: 'Wszystkie artykuły', href: '/edukacja' },
+]
 
 const infoPages: NavItem[] = [
   { title: 'Strona Główna', href: '/' },
@@ -39,6 +62,7 @@ const infoPages: NavItem[] = [
 
 export default function SitemapPage() {
   const showAllPortfolio = portfolioItems.length > 0 && portfolioItems.length <= 40;
+  const showAllArticles = blogItems.length > 0 && blogItems.length <= 40;
 
   const jsonLd = buildJsonLd({ services, portfolioItems, infoPages });
 
@@ -70,6 +94,27 @@ export default function SitemapPage() {
             {showAllPortfolio ? (
               <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {portfolioItems.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="underline-offset-4 hover:underline">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </SectionInfo>
+
+          <Gap variant="line" size="sm" />
+
+          <SectionInfo title="Edukacja">
+            <p>
+              <Link href={blogIndex.href} className="font-medium underline-offset-4 hover:underline">
+                {blogIndex.title}
+              </Link>
+            </p>
+            {showAllArticles ? (
+              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {blogItems.map((item) => (
                   <li key={item.href}>
                     <Link href={item.href} className="underline-offset-4 hover:underline">
                       {item.title}
@@ -116,12 +161,12 @@ function NestedList({ items }: { items: NavItem[] }) {
             {item.title}
           </Link>
           {item.children && item.children.length > 0 && (
-            <ul className="mt-1 ml-5 list-disc space-y-1 text-sm">
+            <ul className="mt-1 ml-5 space-y-1 text-sm">
               {item.children.map((child) => (
                 <li key={child.href}>
-                  <Link href={child.href} className="underline-offset-4 hover:underline">
-                    {child.title}
-                  </Link>
+          <Link href={item.href} className="font-medium underline-offset-4 hover:underline">
+            {child.title}
+          </Link>
                 </li>
               ))}
             </ul>

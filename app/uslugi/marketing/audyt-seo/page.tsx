@@ -136,7 +136,9 @@ export default function OfferMarketingPage() {
             },
             {
               title: 'Szybkość ładowania i wygodę korzystania',
-              description: <>Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od strony technicznej. Wskazujemy proste zmiany, które przyspieszą działanie i poprawią wrażenia użytkowników.</>,
+              description: (
+                <>Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od strony technicznej. Wskazujemy proste zmiany, które przyspieszą działanie i poprawią wrażenia użytkowników.</>
+              ),
               icon: <RiCheckLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -302,19 +304,16 @@ export default function OfferMarketingPage() {
           grid="two"
         />
 
-        <Gap size="sm" />
-                
+        <Gap variant="line" />
+
         <FeesSteps />
 
         <Gap variant="line" />
 
-        {/* Kontakt */}
         <ContactForm title="Zamów audyt SEO" description="Podaj adres strony i cele. Wrócimy z zakresem audytu, terminem i wyceną." defaultSubject="Audyt SEO — zapytanie" />
-        
 
         <Gap variant="line" />
 
-        {/* FAQ — PAA + obiekcje, pełne zdania */}
         <FaqPanels
           pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
           items={[
@@ -358,7 +357,6 @@ export default function OfferMarketingPage() {
         overlay="black"
       />
 
-      {/* JSON-LD Service */}
       <ServiceSchema />
     </>
   );
