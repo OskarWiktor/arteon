@@ -87,11 +87,11 @@ export default function OfferWebPage() {
               (Amazon - fees)
             </a>
             ,<strong> 6,5%+</strong>{' '}
-            <a className="ml-2 inline-link" href="https://help.etsy.com/hc/en-us/articles/115015663607-Fees-and-Taxes-on-Etsy" target="_blank" rel="noopener noreferrer">
+            <a className="inline-link ml-2" href="https://help.etsy.com/hc/en-us/articles/115015663607-Fees-and-Taxes-on-Etsy" target="_blank" rel="noopener noreferrer">
               (Etsy - fees)
             </a>
             , a na Allegro zależnie od kategorii, to zwykle przedział kilkunastu procent
-            <a className="ml-2 inline-link" href="https://allegro.pl/pomoc/dla-sprzedajacych/oplaty-i-prowizje" target="_blank" rel="noopener noreferrer">
+            <a className="inline-link ml-2" href="https://allegro.pl/pomoc/dla-sprzedajacych/oplaty-i-prowizje" target="_blank" rel="noopener noreferrer">
               (Allegro - opłaty)
             </a>
             .

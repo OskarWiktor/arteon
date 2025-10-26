@@ -62,7 +62,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong> Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz materiałów - nawet
             <strong> ~75%</strong> wrażeń o wiarygodności wynika z jakości oprawy wizualnej
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="ml-1 inline-link">
+            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
             . Dobrze zaprojektowana strona szybciej prowadzi do kontaktu.

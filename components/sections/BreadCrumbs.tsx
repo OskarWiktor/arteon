@@ -50,7 +50,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
                     {it.label}
                   </span>
                 ) : (
-                  <a href={it.href} className="text-sm inline-link">
+                  <a href={it.href} className="inline-link text-sm">
                     {it.label}
                   </a>
                 )}

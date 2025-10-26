@@ -62,12 +62,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.</strong> Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania pokazują
             niższe obciążenie poznawcze i wyższą zapamiętywalność niż w kanale wyłącznie cyfrowym{' '}
-            <a
-              href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-link"
-            >
+            <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Canada Post - neuromarketing)
             </a>
             . Dobrze zaprojektowana ulotka prowadzi klienta od oferty, przez korzyści, do kontaktu.
@@ -78,7 +73,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Wygląd materiałów graficznych firmy, w tym ulotki, wpływa na zaufanie.</strong> Odbiorcy oceniają wiarygodność firmy po jakości oprawy - estetyczny projekt zwiększa szansę na
             pozytywną reakcję (telefon, wejście na stronę)
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="ml-1 inline-link">
+            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (Stanford - web credibility, wnioski dot. designu)
             </a>
             . Ulotka łączy prosty przekaz z czytelnym wezwaniem do działania.

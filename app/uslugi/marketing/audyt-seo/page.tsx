@@ -30,7 +30,6 @@ export const metadata = {
   },
 } as const;
 
-/* === Service JSON-LD (schema.org) === */
 function ServiceSchema() {
   const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
   const json = {
@@ -107,8 +106,8 @@ export default function OfferMarketingPage() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/test.jpg"
-          imageAlt="Audyt SEO — analiza widoczności i plan działań"
+          imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-analityki.jpg"
+          imageAlt="Audyt SEO — analiza widoczności strony w Google Analitics"
           subtitle="Dla kogo"
           title="Kiedy audyt SEO ma największy sens?"
           description="Gdy strona nie wyświetla się tak wysoko jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Kompleksowy audyt SEO jest najlepszy dla:"
@@ -207,8 +206,8 @@ export default function OfferMarketingPage() {
 
         <SectionBasic
           variant="left"
-          imageSrc="/assets/test.jpg"
-          imageAlt="Efekty wdrożeń po audycie SEO"
+          imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-gsc.jpg"
+          imageAlt="Audyt SEO — analiza widoczności strony w Google Search Console"
           subtitle="Wyniki wdrożeń"
           title={<>Jakie efekty widzimy najczęściej po przeprowadzeniu audytu SEO i wdrożeniu pozycjonowania?</>}
           btnOne="Porozmawiajmy o audycie"
@@ -242,7 +241,7 @@ export default function OfferMarketingPage() {
                 'Analiza techniczna - prędkość strony, wersja na telefon',
                 'Weryfikacja tytułów, opisów i nagłówków H1-H3',
                 'Ocena treści pod kątem słów kluczowych i intencji użytkowników',
-                'Rekomendacje optymalizacyjne i plan działań '
+                'Rekomendacje optymalizacyjne i plan działań ',
               ],
               btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
@@ -252,11 +251,11 @@ export default function OfferMarketingPage() {
               price: 'od 1 500 zł',
               description: 'Dla kogo: dla właścicieli rozbudowanych stron firmowych lub małych sklepów.',
               features: [
- 'Wszystko z pakietu dla małych stron, a dodatkowo:',
-        'Analiza struktury kategorii i hierarchii adresów URL',
-        'Ocena treści pod kątem słów kluczowych i duplikacji',
-        'Audyt meta danych, ALT grafik i danych strukturalnych',
-        'Analiza widoczności konkurencji i luk tematycznych',
+                'Wszystko z pakietu dla małych stron, a dodatkowo:',
+                'Analiza struktury kategorii i hierarchii adresów URL',
+                'Ocena treści pod kątem słów kluczowych i duplikacji',
+                'Audyt meta danych, ALT grafik i danych strukturalnych',
+                'Analiza widoczności konkurencji i luk tematycznych',
               ],
               btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
@@ -266,11 +265,11 @@ export default function OfferMarketingPage() {
               price: 'od 3 000 zł',
               description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
               features: [
-                  'Wszystko z pakietu dla małych sklepów i rozbudowanych stron, a dodatkowo:',
-        'Analiza crawl budgetu i logiki indeksacji dużych zasobów',
-        'Audyt duplikacji treści między kategoriami i/lub językami',
-        'Analiza pliku robots.txt, sitemap i kanonikalizacji',
-        'Analiza konkurencji i widoczności branżowej',
+                'Wszystko z pakietu dla małych sklepów i rozbudowanych stron, a dodatkowo:',
+                'Analiza crawl budgetu i logiki indeksacji dużych zasobów',
+                'Audyt duplikacji treści między kategoriami i/lub językami',
+                'Analiza pliku robots.txt, sitemap i kanonikalizacji',
+                'Analiza konkurencji i widoczności branżowej',
               ],
               btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
@@ -305,7 +304,7 @@ export default function OfferMarketingPage() {
               title: 'Pozycjonowanie stron (abonament)',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Stały wzrost widoczności: plan treści, porządek na stronie i bezpieczne pozyskiwanie linków. Raport co miesiąc.</p>
+                  <p className="mb-3 text-sm">Pracujemy nad stałym wzrostem widoczności: tworzymy plan treści, rozbudowujemy ofertę, dodajemy nowe bloki i mierzymy efekt co miesiąc</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
                       Sprawdź abonament na pozycjonowanie stron
@@ -324,54 +323,57 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <ContactForm title="Zamów audyt SEO" description="Podaj adres strony i cele. Wrócimy z zakresem audytu, terminem i wyceną." defaultSubject="Audyt SEO — zapytanie" />
+        <ContactForm title="Zamów audyt SEO" description="Podaj adres swojej strony a my przygotujemy wycenę audytu SEO" defaultSubject="Audyt SEO" />
 
         <Gap variant="line" />
 
-<FaqPanels
-  pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
-  items={[
-    {
-      question: 'Dlaczego moja strona nie wyświetla się w Google?',
-      answer: (
-        <p>
-          Najczęstsze powody to problemy z indeksacją, zbyt wolne ładowanie, zduplikowane treści lub
-          nieczytelna struktura. Audyt wskazuje przyczynę i pokazuje, co poprawić najpierw. Więcej informacji na ten temat znajduje się w naszym{' '}
-          <a
-            href="/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic"
-            className="inline-link"
-          >
-            artykule
-          </a>
-          .
-        </p>
-      ),
-      answerSchemaText:
-        'Najczęstsze powody to problemy z indeksacją, zbyt wolne ładowanie, zduplikowane treści lub nieczytelna struktura. Audyt wskazuje przyczynę i pokazuje, co poprawić najpierw. Więcej w naszym artykule o powodach braku widoczności strony w Google.',
-    },
-    {
-      question: 'Jak sprawdzić, czy strona jest w ogóle widoczna?',
-      answer:
-        'W audycie pokazujemy proste metody weryfikacji i tłumaczymy, co oznaczają wyniki. Dzięki temu łatwo sprawdzisz postępy po wdrożeniach.',
-    },
-    {
-      question: 'Co dostanę po audycie?',
-      answer:
-        'Otrzymasz raport napisany po ludzku, listę priorytetów oraz szybkie poprawki do wdrożenia. Omawiamy wszystko na spotkaniu i odpowiadamy na pytania.',
-    },
-    {
-      question: 'Ile trwa audyt i kiedy widać efekty?',
-      answer:
-        'Standardowo audyt trwa 5–10 dni roboczych. Pierwsze pozytywne zmiany często widać w ciągu kilku tygodni po wdrożeniu najważniejszych poprawek.',
-    },
-    {
-      question: 'Czy możecie wdrożyć rekomendacje?',
-      answer:
-        'Tak. Zajmujemy się wdrożeniem zmian w ramach optymalizacji SEO, a w dłuższej perspektywie prowadzimy stałe pozycjonowanie.',
-    },
-  ]}
-/>
-
+        <FaqPanels
+          pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
+          openByDefault={1}
+          items={[
+            {
+              question: 'Co dokładnie sprawdza audyt SEO i jakie są najczęstsze blokery?',
+              answer: (
+                <p>
+                  Weryfikujemy indeksację, szybkość i Core Web Vitals, strukturę informacji, meta dane, nagłówki, linkowanie wewnętrzne, dane strukturalne, mapy strony, robots.txt i treści pod
+                  intencję wyszukiwania. Częste blokery to: brak indeksacji kluczowych podstron, wolne ładowanie, duplikacja treści, słabe nagłówki i chaotyczna nawigacja. Szerzej opisujemy to w
+                  naszym{' '}
+                  <a href="/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic" className="inline-link">
+                    artykule
+                  </a>
+                  .
+                </p>
+              ),
+              answerSchemaText:
+                'Audyt sprawdza indeksację, Core Web Vitals, strukturę, meta, nagłówki, linkowanie, dane strukturalne, sitemap, robots.txt oraz dopasowanie treści do intencji. Typowe blokery: brak indeksacji, wolne ładowanie, duplikacja, słabe nagłówki i nawigacja.',
+            },
+            {
+              question: 'Jakie dostępy są potrzebne do audytu SEO?',
+              answer:
+                'Wystarczy adres strony. Dla pełnej diagnozy prosimy o dostępy tylko do odczytu: Google Search Console i Google Analytics 4. Dostęp do CMS/hostingu nie jest wymagany na etapie audytu.',
+            },
+            {
+              question: 'Co dostanę po audycie SEO i jak wygląda raport?',
+              answer: 'Otrzymasz dokument z listą priorytetów, opisem problemów, rekomendacjami wdrożeń, przykładami i krótkim podsumowaniem.',
+            },
+            {
+              question: 'Ile trwa audyt SEO i od czego zależy wycena?',
+              answer: 'Standardowo 5–10 dni roboczych. Czas i cena zależą od wielkości serwisu (liczby podstron), technologii i zakresu analizy (np. e-commerce, wielojęzyczność).',
+            },
+            {
+              question: 'Czy audyt SEO sam w sobie poprawi pozycje w Google?',
+              answer: 'Nie. Audyt SEO to diagnoza i plan. Wzrost pozycji pojawia się po wdrożeniu rekomendacji: poprawkach technicznych, uporządkowaniu treści i innym indywidualnym zadaniom.',
+            },
+            {
+              question: 'Czy zajmujecie się wdrożeniem zaleceń po audycie SEO?',
+              answer: 'Tak. Po audycie przechodzimy do optymalizacji SEO: poprawiamy prędkość, meta, strukturę i dane strukturalne, porządkujemy treści. Możemy też prowadzić dalsze pozycjonowanie.',
+            },
+            {
+              question: 'Jak często powtarzać audyt SEO?',
+              answer: 'Rekomendujemy pełny audyt co 6–12 miesięcy lub przed większą przebudową serwisu. Lżejszy przegląd kwartalny pozwala utrzymać tempo wzrostu.',
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

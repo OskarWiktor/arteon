@@ -64,7 +64,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Spójny system wizualny porządkuje każdy kontakt z Twoją marką.</strong> Firmy, które konsekwentnie trzymają identyfikację, notują średnio
             <strong> 10-20% wyższe przychody</strong>
-            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="ml-1 inline-link">
+            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
             . Ten sam styl działa na stronie, w ofertach, w druku i w social mediach.
@@ -74,7 +74,7 @@ export default function OfferDesignXxxPage() {
 
           <p>
             <strong>Jakość oprawy przekłada się na zaufanie.</strong> Nawet <strong>~75%</strong> odbiorców ocenia wiarygodność firmy po wyglądzie materiałów i strony
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="ml-1 inline-link">
+            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
             . Czytelna typografia i porządek wizualny ułatwiają decyzję o kontakcie.
@@ -84,7 +84,7 @@ export default function OfferDesignXxxPage() {
 
           <p>
             <strong>Kolor i konsekwencja zwiększają rozpoznawalność.</strong> Zastosowanie spójnych barw potrafi podnieść zapamiętywanie marki nawet o <strong>~80%</strong>
-            <a href="https://www.xerox.com/en-us/insights/color" target="_blank" rel="noopener noreferrer" className="ml-1 inline-link">
+            <a href="https://www.xerox.com/en-us/insights/color" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
             . Klient szybciej kojarzy, z kim rozmawia.

@@ -68,12 +68,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Katalog działa online i w druku.</strong> Dostajesz wersję do wysyłki mailem (PDF) i pliki gotowe do druku. Materiały drukowane dłużej zostają w pamięci niż przekaz wyłącznie
             cyfrowy
-            <a
-              href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 inline-link"
-            >
+            <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
             .

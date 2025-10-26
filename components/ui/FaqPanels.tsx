@@ -20,14 +20,7 @@ interface FaqPanelsProps {
   openByDefault?: number;
 }
 
-export default function FaqPanels({
-  items,
-  title = 'Najczęstsze pytania',
-  subtitle = 'FAQ',
-  generateSchema = true,
-  pageUrl,
-  openByDefault = 0,
-}: FaqPanelsProps) {
+export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle = 'FAQ', generateSchema = true, pageUrl, openByDefault = 0 }: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(openByDefault > 0 ? 0 : null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
@@ -69,8 +62,7 @@ export default function FaqPanels({
     if (!generateSchema || !items?.length) return null;
 
     const mainEntity = items.map((it) => {
-      const textForSchema =
-        typeof it.answer === 'string' ? it.answer : (it.answerSchemaText ?? '');
+      const textForSchema = typeof it.answer === 'string' ? it.answer : (it.answerSchemaText ?? '');
       return {
         '@type': 'Question',
         name: it.question,
@@ -111,7 +103,9 @@ export default function FaqPanels({
             <button
               id={buttonId}
               type="button"
-              ref={(el) => { btnRefs.current[index] = el; }}
+              ref={(el) => {
+                btnRefs.current[index] = el;
+              }}
               onClick={() => toggle(index)}
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
@@ -138,21 +132,13 @@ export default function FaqPanels({
               transition={{ duration: 0.25, ease: 'easeInOut' }}
               aria-hidden={!isOpen}
             >
-              <div className="px-6 pb-4">
-                {typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}
-              </div>
+              <div className="px-6 pb-4">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
             </motion.div>
           </div>
         );
       })}
 
-      {faqJsonLd && (
-        <script
-          id={`faq-jsonld-${scriptId}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      {faqJsonLd && <script id={`faq-jsonld-${scriptId}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
     </section>
   );
 }

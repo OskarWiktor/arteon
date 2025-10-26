@@ -70,7 +70,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Dobra oraz estetyczna wizytówka podnosi status Twojej marki.</strong>
             Estetyka materiałów realnie wpływa na ocenę wiarygodności marki, jakość oprawy wizualnej przekłada się na większe zaufanie
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="ml-1 inline-link">
+            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
             .
