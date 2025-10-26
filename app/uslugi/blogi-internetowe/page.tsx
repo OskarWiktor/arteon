@@ -76,7 +76,7 @@ export default function OfferBlogPage() {
           <p>
             <strong>Stworzenie bloga internetowego daje Twojej firmie dodatkowe stałe źródło ruchu i zapytań.</strong> Artykuły na blogu internetowym potrafią generować dużą, znaczącą ilość wejść na
             stronę - <strong>ok. 55% więcej odwiedzin</strong> porównując z firmami bez bloga{' '}
-            <a target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4" href="https://offers.hubspot.com/lessons-from-marketing-stats">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://offers.hubspot.com/lessons-from-marketing-stats">
               (źródło)
             </a>
             . Regularna publikacja artykułów zwiększa widoczność w Google i ściąga nowych klientów.
@@ -87,7 +87,7 @@ export default function OfferBlogPage() {
           <p>
             <strong>Blog internetowy daje więcej odwiedzić przy niskim koszcie.</strong> Marketing skoncentrowany wokół tworzenia treści, generuje ok.
             <strong> 3x więcej odwiedzin</strong> i kosztuje ok. <strong>62% mniej</strong> niż działania outbound - płatne reklamy, „zimne” maile i telefony sprzedażowe{' '}
-            <a target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4" href="https://www.demandsage.com/business-blogging-statistics">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.demandsage.com/business-blogging-statistics">
               (źródło)
             </a>
             . Blog online to stabilny kanał pozyskiwania dodatkowych klientów.
@@ -98,7 +98,7 @@ export default function OfferBlogPage() {
           <p>
             <strong>Klienci wolą pomocne, edukacyjne i ekspreckie treści niż reklamy.</strong> Aż <strong>~70%</strong> odbiorców woli poznawać firmę poprzez artykuły, a nie reklamy - to prosty sposób
             na budowanie zaufania i dodatkowe kontakty{' '}
-            <a target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4" href="https://www.demandsage.com/business-blogging-statistics">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.demandsage.com/business-blogging-statistics">
               (źródło)
             </a>
             .

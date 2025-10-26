@@ -154,7 +154,7 @@ export default function PrivacyPolicyPage() {
           <Gap size="xs" />
 
           <section>
-            <a href="/polityka-prywatnosci-arteon.pdf" className="inline-block underline underline-offset-4" download>
+            <a href="/polityka-prywatnosci-arteon.pdf" className="inline-link" download>
               Pobierz PDF: Polityka prywatności
             </a>
           </section>

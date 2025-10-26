@@ -83,15 +83,15 @@ export default function OfferWebPage() {
           <p>
             <strong>Własny sklep internetowy daje Twojej firmie realną niezależność.</strong> Sprzedajesz na własnej platformie bez pośredników, więc
             <strong> więcej pieniędzy zostaje u Ciebie</strong>. Platformy sprzedażowe pobierają prowizje rzędu <strong>8-15%+</strong>{' '}
-            <a className="inline-block underline underline-offset-4" href="https://sell.amazon.com/pricing" target="_blank" rel="noopener noreferrer">
+            <a className="inline-link" href="https://sell.amazon.com/pricing" target="_blank" rel="noopener noreferrer">
               (Amazon - fees)
             </a>
             ,<strong> 6,5%+</strong>{' '}
-            <a className="ml-2 inline-block underline underline-offset-4" href="https://help.etsy.com/hc/en-us/articles/115015663607-Fees-and-Taxes-on-Etsy" target="_blank" rel="noopener noreferrer">
+            <a className="ml-2 inline-link" href="https://help.etsy.com/hc/en-us/articles/115015663607-Fees-and-Taxes-on-Etsy" target="_blank" rel="noopener noreferrer">
               (Etsy - fees)
             </a>
             , a na Allegro zależnie od kategorii, to zwykle przedział kilkunastu procent
-            <a className="ml-2 inline-block underline underline-offset-4" href="https://allegro.pl/pomoc/dla-sprzedajacych/oplaty-i-prowizje" target="_blank" rel="noopener noreferrer">
+            <a className="ml-2 inline-link" href="https://allegro.pl/pomoc/dla-sprzedajacych/oplaty-i-prowizje" target="_blank" rel="noopener noreferrer">
               (Allegro - opłaty)
             </a>
             .
@@ -104,12 +104,12 @@ export default function OfferWebPage() {
             sezon 2024: <strong>~53%</strong>, prognoza 2025: <strong>~56%</strong> udziału mobile w przychodach e-commerce){' '}
             <a
               target="_blank"
-              className="inline-block underline underline-offset-4"
+              className="inline-link"
               href="https://blog.adobe.com/en/publish/2024/08/21/adobe-analytics-mobile-shopping-expected-drive-53-percent-online-sales-during-2024-holiday-season"
             >
               (źródło 1)
             </a>{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://business.adobe.com/resources/holiday-shopping-report.html">
+            <a target="_blank" className="inline-link" href="https://business.adobe.com/resources/holiday-shopping-report.html">
               (źródło 2)
             </a>
             . Każda wizyta użytkownika w Twoim sklepie internetowym to dodatkowa szansa na zamówienie.
@@ -119,10 +119,10 @@ export default function OfferWebPage() {
 
           <p>
             <strong>Masz klientów u siebie, nie na cudzej platformie.</strong> Budujesz własną bazę kontaktów i relacje. Kanały direct (np. e-mail) potrafią zwracać nawet <strong>~36:1</strong>{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://dma.org.uk/uploads/misc/dma-email-benchmarking-report-2023.pdf">
+            <a target="_blank" className="inline-link" href="https://dma.org.uk/uploads/misc/dma-email-benchmarking-report-2023.pdf">
               (źródło 1)
             </a>{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.litmus.com/blog/infographic-the-roi-of-email-marketing">
+            <a target="_blank" className="inline-link" href="https://www.litmus.com/blog/infographic-the-roi-of-email-marketing">
               (źródło 2)
             </a>
             - rośnie lojalność i liczba zakupów.
@@ -132,7 +132,7 @@ export default function OfferWebPage() {
 
           <p>
             Średni poziom porzuceń koszyka to wciąż <strong>~70% </strong>{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://baymard.com/lists/cart-abandonment-rate">
+            <a target="_blank" className="inline-link" href="https://baymard.com/lists/cart-abandonment-rate">
               (źródło)
             </a>
             . We własnym sklepie internetowym możesz uprościć ścieżkę zakupu oraz odzyskać te transakcje.

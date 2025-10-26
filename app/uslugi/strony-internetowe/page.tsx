@@ -81,7 +81,7 @@ export default function OfferWebPage() {
           <p>
             <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób, szukających lokalnie usług w Google, trafia do siedziby firmy w przeciągu 24 godzin a 28%
             tych wyszukań, kończy się zakupem{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
+            <a target="_blank" className="inline-link" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
               (źródło)
             </a>
             . Firmowa <strong>strona internetowa pracuje na Twój sukces 24/7</strong>: pokazuje Twoją ofertę, buduje zaufanie, zbiera zapytania - nawet gdy masz wyciszony telefon
@@ -89,11 +89,11 @@ export default function OfferWebPage() {
           <br />
           <p>
             84% konsumentów uważa firmę z własną stroną internetową za bardziej wiarygodną{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://blog.verisign.com/getting-online/five-reasons-every-small-business-needs-a-website/">
+            <a target="_blank" className="inline-link" href="https://blog.verisign.com/getting-online/five-reasons-every-small-business-needs-a-website/">
               (źródło)
             </a>{' '}
             ,a aż 56% osób nie ufa firmie, która nie posiada własnej strony{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.verisign.com/assets/Research-small-business-september2013.pdf">
+            <a target="_blank" className="inline-link" href="https://www.verisign.com/assets/Research-small-business-september2013.pdf">
               (źródło)
             </a>
             . <strong>Dobra strona internetowa robi</strong> za Ciebie aż <strong>3 rzeczy naraz</strong>:
@@ -107,7 +107,7 @@ export default function OfferWebPage() {
           <br />
           <p>
             Trend rynkowy pokazuje jasno: {'>'}70% małych firm deklaruje wzrost przychodów po uruchomieniu strony internetowej{' '}
-            <a target="_blank" className="inline-block underline underline-offset-4" href="https://www.networksolutions.com/blog/small-business-website-statistics/">
+            <a target="_blank" className="inline-link" href="https://www.networksolutions.com/blog/small-business-website-statistics/">
               (źródło)
             </a>
           </p>

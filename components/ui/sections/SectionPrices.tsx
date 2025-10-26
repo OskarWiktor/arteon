@@ -129,7 +129,7 @@ export default function SectionPrices({
       </div>
 
       {note && (
-        <aside className="mt-8 mb-4 rounded-xl bg-white p-6 ring-1 ring-neutral-200" role="note" aria-label="Informacja">
+        <div className="mt-8 rounded-xl bg-white p-6 ring-1 ring-neutral-200" role="note" aria-label="Informacja">
           {note.text}
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">
@@ -138,10 +138,10 @@ export default function SectionPrices({
               </Button>
             </div>
           )}
-        </aside>
+        </div>
       )}
 
-      {legalNote && <p className="text-[#5e5e5e]">{legalNote}</p>}
+      {legalNote && <p className="pt-4 text-[#5e5e5e]">{legalNote}</p>}
     </section>
   );
 }

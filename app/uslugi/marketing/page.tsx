@@ -57,7 +57,6 @@ export const metadata = {
   },
 } as const;
 
-/* === ItemList JSON-LD dla podstron marketingu === */
 function ItemListSchema() {
   const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
   const services = [
@@ -66,7 +65,6 @@ function ItemListSchema() {
     { name: 'Pozycjonowanie stron', path: '/uslugi/marketing/pozycjonowanie-stron' },
     { name: 'Reklamy online', path: '/uslugi/marketing/reklamy-online' },
     { name: 'Social media', path: '/uslugi/marketing/social-media' },
-    { name: 'Branding i komunikacja', path: '/uslugi/marketing/branding-komunikacja' },
   ];
   const json = {
     '@context': 'https://schema.org',
@@ -120,7 +118,6 @@ export default function OfferMarketingHubPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* Wprowadzenie: co dostaje klient */}
         <SectionInfo title="Marketing, który łączy kropki">
           <p>
             <strong>Najpierw rozumiemy, potem działamy.</strong> Sprawdzamy, co realnie hamuje widoczność i sprzedaż — a później wdrażamy proste rozwiązania: szybszą stronę, lepsze treści i kampanie,
@@ -135,7 +132,6 @@ export default function OfferMarketingHubPage() {
 
         <Gap variant="line" />
 
-        {/* Co zyskujesz — pełne zdania */}
         <FeatureGrid
           title="Co zyskujesz zlecając nam marketing?"
           subtitle="Nasz standard pracy"
@@ -177,7 +173,6 @@ export default function OfferMarketingHubPage() {
 
         <Gap variant="line" />
 
-        {/* Krótkie „jak mierzymy sukces” */}
         <SectionInfo title="Jak mierzymy sukces?" subtitle="Praktyczne wskaźniki">
           <ul className="ml-5 list-disc space-y-2">
             <li>
@@ -194,11 +189,11 @@ export default function OfferMarketingHubPage() {
 
         <Gap variant="line" />
 
-        {/* Sekcja kroków — każda karta to link do podstrony z pełnym opisem */}
         <SectionSteps
           title="Oferta marketingu"
           subtitle="Skutecznie i przejrzyście"
           description="Każda usługa ma własną stronę z detalami, przykładami i cennikiem. Zaczynamy od diagnozy, kończymy na skalowaniu tego, co działa."
+          grid="two"
           items={[
             {
               icon: <RiFileList2Line className="h-8 w-8" />,
@@ -279,27 +274,11 @@ export default function OfferMarketingHubPage() {
                 </div>
               ),
             },
-            {
-              icon: <RiUserHeartLine className="h-8 w-8" />,
-              title: 'Branding i komunikacja',
-              subtitle: 'Język i zasady, które sprzedają',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Archetyp, obietnica, język marki i prosty brandbook. Spójny przekaz na stronie i w social mediach.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/marketing/branding-komunikacja">
-                      Zobacz branding i komunikację
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
           ]}
         />
 
         <Gap variant="line" />
 
-        {/* Dwie sekcje „dlaczego razem działa lepiej” */}
         <SectionBasic
           variant="right"
           imageSrc="/assets/sections/mkt-hub-01.webp"
@@ -338,7 +317,6 @@ export default function OfferMarketingHubPage() {
 
         <Gap variant="line" />
 
-        {/* Kroki opłat + jak pracujemy */}
         <FeesSteps />
 
         <Gap variant="line" />
@@ -347,7 +325,6 @@ export default function OfferMarketingHubPage() {
 
         <Gap variant="line" />
 
-        {/* FAQ rozbudowane */}
         <FaqPanels
           pageUrl="https://www.arteonagency.pl/uslugi/marketing"
           items={[

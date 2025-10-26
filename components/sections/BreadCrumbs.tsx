@@ -50,7 +50,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
                     {it.label}
                   </span>
                 ) : (
-                  <a href={it.href} className="text-sm underline underline-offset-4 hover:no-underline">
+                  <a href={it.href} className="text-sm inline-link">
                     {it.label}
                   </a>
                 )}

@@ -117,7 +117,7 @@ export default function OfferMarketingPage() {
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
             <li>Nowych platform, które potrzebują solidnych podstaw zanim ruszą z kampaniami reklamowymi.</li>
-            <li>Właścicieli sklepów oraz stron internetowe z problemami widoczności, które nie pozwalają na dostateczną ilość zapytań.</li>
+            <li>Właścicieli sklepów oraz stron internetowe z problemami widoczności, które nie pozwalają na dostateczną ilość zapytań lub klientów.</li>
             <li>Firm usługowych i B2B, którym zależy na stałym dopływie jakościowych zapytań od klientów.</li>
           </ul>
         </SectionBasic>
@@ -164,7 +164,7 @@ export default function OfferMarketingPage() {
               title: '1. Wdrażamy analitykę i zbieramy dane',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Analizujemy ruch i wyszukiwania, sprawdzamy, jak Google widzi Twoją stronę, i gdzie tracisz szanse na wyświetlenia.</p>
+                  <p className="mb-3 text-sm">Analizujemy stronę technicznie następnie patrzymy na ruch i wyszukiwania, sprawdzamy jak Google widzi Twoją stronę.</p>
                 </div>
               ),
             },
@@ -172,7 +172,7 @@ export default function OfferMarketingPage() {
               title: '2. Przygotowujemy raport i priorytety',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Otrzymujesz zrozumiały raport oraz listę działań podzielonych na szybkie poprawki i zadania na 90 dni.</p>
+                  <p className="mb-3 text-sm">Tworzymy raport wszelkich błędów i problemów oraz przygotowywujemy listę działań podzielonych na szybkie poprawki i zadania na 90 dni.</p>
                 </div>
               ),
             },
@@ -192,10 +192,13 @@ export default function OfferMarketingPage() {
         <SectionInfo title="Jak mierzymy efekty pozycjonowania po audycie?" subtitle="KPI i raportowanie">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Widoczność i ruch z Google:</strong> ile nowych fraz Google łączy z Twoją stroną i o ile rośnie ruch.
+              <strong>Pozycję strony:</strong> sprawdzamy na której pozycji pokazuje się Twoja strona przy poszczególnych frazach.
             </li>
             <li>
-              <strong>Zapytania i kontakt:</strong> ilość uzupełnionych formularzy, telefonów i wiadomości po wprowadzonych zmianach.
+              <strong>Ilość fraz:</strong> patrzymy ile nowych fraz Google łączy z Twoją witryną i jak wpływa to na ruch oraz pozycję.
+            </li>
+            <li>
+              <strong>Zapytania i ruch:</strong> patrzymy o ile wzrósł ruch na Twojej stronie oraz o ile wzrosła ilość uzupełnionych formularzy, telefonów i wiadomości po wprowadzonych zmianach.
             </li>
           </ul>
         </SectionInfo>
@@ -227,49 +230,60 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <SectionPrices
-          title="Przykładowe pakiety audytu"
-          subtitle="Pakiety"
+          title="Cennik audytu SEO"
+          subtitle="Przykładowe zakresy i ceny"
           plans={[
             {
-              name: 'Audyt podstawowy',
+              name: 'Audyt SEO dla małych stron',
               price: 'od 800 zł',
-              description: 'Dla małych stron i landingów. Diagnoza barier i lista szybkich poprawek.',
-              features: ['Sprawdzenie widoczności w Google', 'Prosty raport i priorytety', 'Rekomendacje do wdrożenia od razu'],
-              btnOne: 'Zamów audyt',
+              description: 'Dla kogo: dla właścicieli prostych stron firmowych i landing pages ( stron z jedną podstroną ).',
+              features: [
+                'Analiza indeksacji i widoczności w Google',
+                'Analiza techniczna - prędkość strony, wersja na telefon',
+                'Weryfikacja tytułów, opisów i nagłówków H1-H3',
+                'Ocena treści pod kątem słów kluczowych i intencji użytkowników',
+                'Rekomendacje optymalizacyjne i plan działań '
+              ],
+              btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Audyt pełny',
-              badgeLabel: 'Najczęściej wybierany',
-              price: 'od 1 400 zł',
-              description: 'Dla serwisów firmowych i mniejszych sklepów. Raport + plan działań na 90 dni.',
-              features: ['Widoczność i treści dopasowane do zapytań', 'Usprawnienia szybkości i wygody korzystania', 'Struktura i linki wewnętrzne', 'Raport + arkusz priorytetów'],
-              lastPlan: true,
-              btnOne: 'Poproś o wycenę',
+              name: 'Audyt SEO dla małych sklepów i rozbudowanych stron',
+              price: 'od 1 500 zł',
+              description: 'Dla kogo: dla właścicieli rozbudowanych stron firmowych lub małych sklepów.',
+              features: [
+ 'Wszystko z pakietu dla małych stron, a dodatkowo:',
+        'Analiza struktury kategorii i hierarchii adresów URL',
+        'Ocena treści pod kątem słów kluczowych i duplikacji',
+        'Audyt meta danych, ALT grafik i danych strukturalnych',
+        'Analiza widoczności konkurencji i luk tematycznych',
+              ],
+              btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Audyt + wdrożenia',
-              price: 'od 2 400 zł',
-              description: 'Kompleksowo: audyt i wdrożenie najważniejszych zmian wraz z pomiarem efektów.',
-              features: ['Audyt pełny', 'Backlog zadań i staging', 'Testy przed/po i monitoring wyników'],
-              btnOne: 'Zapytaj o termin',
+              name: 'Audyt SEO dla dużych serwisów',
+              price: 'od 3 000 zł',
+              description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
+              features: [
+                  'Wszystko z pakietu dla małych sklepów i rozbudowanych stron, a dodatkowo:',
+        'Analiza crawl budgetu i logiki indeksacji dużych zasobów',
+        'Audyt duplikacji treści między kategoriami i/lub językami',
+        'Analiza pliku robots.txt, sitemap i kanonikalizacji',
+        'Analiza konkurencji i widoczności branżowej',
+              ],
+              btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
           ]}
-          note={{
-            text: <>Masz duży serwis lub e-commerce? Przygotujemy zakres dopasowany do technologii i wielkości strony.</>,
-            ctaLabel: 'Skonsultuj potrzeby',
-            ctaLink: '#kontakt',
-          }}
-          legalNote="Ceny są orientacyjne. Dokładną wycenę przedstawimy po krótkim zapoznaniu i wglądzie w stronę."
+          legalNote="Ceny orientacyjne brutto. Dokładna wycena zależy od dokładnej wielkości witryny i indywidualnych czynników zależnych od branży."
         />
 
         <Gap variant="line" />
 
         <SectionSteps
-          title="Zobacz też"
-          subtitle="Kolejne kroki po audycie"
+          title="Kolejne kroki po audycie"
+          subtitle="Zobacz też"
           description="Po diagnozie zwykle przechodzimy do wdrożeń i stałej pracy nad widocznością."
           items={[
             {
@@ -277,10 +291,10 @@ export default function OfferMarketingPage() {
               title: 'Optymalizacja SEO (wdrożenia)',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Wprowadzimy zmiany: przyspieszymy ładowanie, uporządkujemy tytuły i opisy, dodamy dane ułatwiające Google zrozumienie treści.</p>
+                  <p className="mb-3 text-sm">Wprowadzamy zmiany: przyspieszamy ładowanie, porządkujemy tytuły i opisy, dodajemy dane ułatwiające Google zrozumienie treści.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/optymalizacja-seo">
-                      Przejdź do optymalizacji
+                      Przejdź do optymalizacji SEO
                     </Button>
                   </div>
                 </div>
@@ -294,7 +308,7 @@ export default function OfferMarketingPage() {
                   <p className="mb-3 text-sm">Stały wzrost widoczności: plan treści, porządek na stronie i bezpieczne pozyskiwanie linków. Raport co miesiąc.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
-                      Sprawdź abonament SEO
+                      Sprawdź abonament na pozycjonowanie stron
                     </Button>
                   </div>
                 </div>
@@ -314,32 +328,50 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
-          items={[
-            {
-              question: 'Dlaczego moja strona nie wyświetla się w Google?',
-              answer:
-                'Najczęstsze powody to problemy z widocznością podstron w wyszukiwarce, zbyt wolne ładowanie, zduplikowane treści lub nieczytelna struktura. Audyt wskazuje przyczynę i pokazuje, co poprawić najpierw.',
-            },
-            {
-              question: 'Jak sprawdzić, czy strona jest w ogóle widoczna?',
-              answer: 'W audycie pokazujemy proste metody weryfikacji i tłumaczymy, co oznaczają wyniki. Dzięki temu łatwo sprawdzisz postępy po wdrożeniach.',
-            },
-            {
-              question: 'Co dostanę po audycie?',
-              answer: 'Otrzymasz raport napisany po ludzku, listę priorytetów oraz szybkie poprawki do wdrożenia. Omawiamy wszystko na spotkaniu i odpowiadamy na pytania.',
-            },
-            {
-              question: 'Ile trwa audyt i kiedy widać efekty?',
-              answer: 'Standardowo audyt trwa 5-10 dni roboczych. Pierwsze pozytywne zmiany często widać w ciągu kilku tygodni po wdrożeniu najważniejszych poprawek.',
-            },
-            {
-              question: 'Czy możecie wdrożyć rekomendacje?',
-              answer: 'Tak. Zajmujemy się wdrożeniem zmian w ramach optymalizacji SEO, a w dłuższej perspektywie prowadzimy stałe pozycjonowanie.',
-            },
-          ]}
-        />
+<FaqPanels
+  pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
+  items={[
+    {
+      question: 'Dlaczego moja strona nie wyświetla się w Google?',
+      answer: (
+        <p>
+          Najczęstsze powody to problemy z indeksacją, zbyt wolne ładowanie, zduplikowane treści lub
+          nieczytelna struktura. Audyt wskazuje przyczynę i pokazuje, co poprawić najpierw. Więcej informacji na ten temat znajduje się w naszym{' '}
+          <a
+            href="/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic"
+            className="inline-link"
+          >
+            artykule
+          </a>
+          .
+        </p>
+      ),
+      answerSchemaText:
+        'Najczęstsze powody to problemy z indeksacją, zbyt wolne ładowanie, zduplikowane treści lub nieczytelna struktura. Audyt wskazuje przyczynę i pokazuje, co poprawić najpierw. Więcej w naszym artykule o powodach braku widoczności strony w Google.',
+    },
+    {
+      question: 'Jak sprawdzić, czy strona jest w ogóle widoczna?',
+      answer:
+        'W audycie pokazujemy proste metody weryfikacji i tłumaczymy, co oznaczają wyniki. Dzięki temu łatwo sprawdzisz postępy po wdrożeniach.',
+    },
+    {
+      question: 'Co dostanę po audycie?',
+      answer:
+        'Otrzymasz raport napisany po ludzku, listę priorytetów oraz szybkie poprawki do wdrożenia. Omawiamy wszystko na spotkaniu i odpowiadamy na pytania.',
+    },
+    {
+      question: 'Ile trwa audyt i kiedy widać efekty?',
+      answer:
+        'Standardowo audyt trwa 5–10 dni roboczych. Pierwsze pozytywne zmiany często widać w ciągu kilku tygodni po wdrożeniu najważniejszych poprawek.',
+    },
+    {
+      question: 'Czy możecie wdrożyć rekomendacje?',
+      answer:
+        'Tak. Zajmujemy się wdrożeniem zmian w ramach optymalizacji SEO, a w dłuższej perspektywie prowadzimy stałe pozycjonowanie.',
+    },
+  ]}
+/>
+
 
         <Gap variant="line" />
 

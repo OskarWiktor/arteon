@@ -67,7 +67,7 @@ export default function OfferDesignXxxPage() {
               href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-1 inline-block underline underline-offset-4"
+              className="ml-1 inline-link"
             >
               (źródło)
             </a>
@@ -79,7 +79,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Profesjonalna teczka ofertowa buduje wiarygodność w kilka sekund.</strong> Estetyka i czytelność oprawy silnie wpływają na ocenę firmy - odbiorcy przypisują zaufanie na podstawie
             jakości materiałów
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="ml-1 inline-block underline underline-offset-4">
+            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="ml-1 inline-link">
               (źródło)
             </a>
             . Spójna estetyka, kolory i typografia wzmacniają rozpoznawalność firmy.

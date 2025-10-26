@@ -229,7 +229,7 @@ export default function TermsPage() {
           <Gap size="xs" />
 
           <section>
-            <a href="/regulamin-arteon.pdf" className="inline-block underline underline-offset-4" download>
+            <a href="/regulamin-arteon.pdf" className="inline-link" download>
               Pobierz PDF: Regulamin świadczenia usług
             </a>
           </section>

@@ -136,7 +136,7 @@ export default function OfferDesignPage() {
         <SectionInfo title="Co zyskujesz dzięki projektom graficznym?">
           <p>
             <strong>Spójna identyfikacja wizualna zwiększa rozpoznawalność marki nawet o 80%</strong>{' '}
-            <a href="https://www.lucidpress.com/blog/state-of-brand-consistency" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4">
+            <a href="https://www.lucidpress.com/blog/state-of-brand-consistency" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Lucidpress - raport o spójności marek)
             </a>
             . Profesjonalny projekt graficzny sprawia, że Twoja firma jest łatwiejsza do zapamiętania i budzi większe zaufanie już przy pierwszym kontakcie.
@@ -147,7 +147,7 @@ export default function OfferDesignPage() {
           <p>
             <strong>Spójny wygląd marki ułatwia sprzedaż.</strong> Firmy utrzymujące jednolity brand notują średnio
             <strong> 10-20% wyższe przychody</strong>{' '}
-            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4">
+            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Marq - analiza przewagi konkurencyjnej)
             </a>
             . To logo, papier firmowy, katalog i teczka, które mówią jednym językiem - online, w druku i podczas spotkań z klientami.
@@ -158,10 +158,10 @@ export default function OfferDesignPage() {
           <p>
             <strong>Design buduje wiarygodność.</strong> Aż <strong>~75%</strong> osób ocenia firmę po jakości materiałów wizualnych i strony internetowej. Schludny, spójny projekt podnosi zaufanie i
             wpływa na decyzję o kontakcie{' '}
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4">
+            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Stanford - badanie wiarygodności stron)
             </a>{' '}
-            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4">
+            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Rareform - opracowanie branżowe)
             </a>
             .
@@ -171,7 +171,7 @@ export default function OfferDesignPage() {
 
           <p>
             <strong>Materiały drukowane nadal działają.</strong> 79% konsumentów deklaruje, że chętniej sięga po ofertę firm, które dostarczają estetyczne broszury, ulotki lub wizytówki{' '}
-            <a href="https://www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4">
+            <a href="https://www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (PrintPower - raport o zaufaniu do druku)
             </a>
             . Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają konwersję w sprzedaży.

@@ -1,12 +1,14 @@
 'use client';
 
-import { useEffect, useRef, useState, useId, useMemo } from 'react';
+import { useEffect, useRef, useState, useId, useMemo, type ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 
 interface FaqPanelsItem {
   question: string;
-  answer: string;
+  answer: string | ReactNode;
+  /** Opcjonalny czysty tekst do schema.org (bez HTML). Jeśli brak, a answer jest stringiem – użyjemy go. */
+  answerSchemaText?: string;
 }
 
 interface FaqPanelsProps {
@@ -15,10 +17,17 @@ interface FaqPanelsProps {
   subtitle?: string;
   generateSchema?: boolean;
   pageUrl?: string;
-  openByDefault?: number; // ile pierwszych pozycji ma być otwartych po załadowaniu
+  openByDefault?: number;
 }
 
-export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle = 'FAQ', generateSchema = true, pageUrl, openByDefault = 0 }: FaqPanelsProps) {
+export default function FaqPanels({
+  items,
+  title = 'Najczęstsze pytania',
+  subtitle = 'FAQ',
+  generateSchema = true,
+  pageUrl,
+  openByDefault = 0,
+}: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(openByDefault > 0 ? 0 : null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
@@ -58,15 +67,22 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
 
   const faqJsonLd = useMemo(() => {
     if (!generateSchema || !items?.length) return null;
+
+    const mainEntity = items.map((it) => {
+      const textForSchema =
+        typeof it.answer === 'string' ? it.answer : (it.answerSchemaText ?? '');
+      return {
+        '@type': 'Question',
+        name: it.question,
+        acceptedAnswer: { '@type': 'Answer', text: textForSchema },
+      };
+    });
+
     return {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       ...(pageUrl ? { mainEntityOfPage: pageUrl } : {}),
-      mainEntity: items.map((it) => ({
-        '@type': 'Question',
-        name: it.question,
-        acceptedAnswer: { '@type': 'Answer', text: it.answer },
-      })),
+      mainEntity,
     };
   }, [generateSchema, items, pageUrl]);
 
@@ -95,9 +111,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
             <button
               id={buttonId}
               type="button"
-              ref={(el) => {
-                btnRefs.current[index] = el;
-              }}
+              ref={(el) => { btnRefs.current[index] = el; }}
               onClick={() => toggle(index)}
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
@@ -125,14 +139,20 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
               aria-hidden={!isOpen}
             >
               <div className="px-6 pb-4">
-                <p>{item.answer}</p>
+                {typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}
               </div>
             </motion.div>
           </div>
         );
       })}
 
-      {faqJsonLd && <script id={`faq-jsonld-${scriptId}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+      {faqJsonLd && (
+        <script
+          id={`faq-jsonld-${scriptId}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
     </section>
   );
 }

@@ -62,7 +62,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny branding realnie przekłada się na wynik: firmy utrzymujące konsekwentną identyfikację raportują{' '}
             <strong>~10-20% wyższy wzrost/przychody</strong>{' '}
-            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4">
+            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
               (źródło)
             </a>
             .
@@ -73,7 +73,7 @@ export default function OfferDesignXxxPage() {
           <p>
             <strong>Profesjonalne logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: aż <strong>~75%</strong> osób
             przypisuje wiarygodność marce na podstawie ich materiałów wizualnych{' '}
-            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4">
+            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (źródło)
             </a>
           </p>
