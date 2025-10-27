@@ -124,12 +124,12 @@ export default function OfferMarketingHubPage() {
             },
             {
               title: 'Reklamy Google i Meta',
-      description: <>Tworzymy kampanie oparte na realnych problemach klientów. Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to, co działa.</>,
+              description: <>Tworzymy kampanie oparte na realnych problemach klientów. Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to, co działa.</>,
               icon: <RiBarChart2Fill className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Zero ukrytych kosztów',
-      description: <>Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i terminy są rozpisane przed startem działań.</>,
+              description: <>Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i terminy są rozpisane przed startem działań.</>,
               icon: <RiCustomerService2Line className="h-6 w-6 text-slate-500" />,
             },
             {

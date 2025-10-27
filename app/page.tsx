@@ -4,10 +4,10 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import Mission from '@/components/sections/steps/Mission';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
+import Button from '@/components/ui/Button';
 import Gap from '@/components/ui/Gap';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { GoLaw } from 'react-icons/go';
 import { IoAccessibility } from 'react-icons/io5';
@@ -31,9 +31,8 @@ export default function HomePage() {
   return (
     <>
       <HeroBaner
-        title="Zbuduj markę, która rośnie i sprzedaje"
-        subtitle="Know-how globalnych marek"
-        description="Arteon - sprawdzone praktyki wielkich marek dla Twojej firmy. Od strategii, przez strony, po marketing."
+        title="Agencja kreatywno-technologiczna"
+        description="Witaj w Arteon - agencji, która pomoże Ci rozwinąć Twój biznes online oraz offline"
         backgroundImage="/assets/bg/abstract-bg2.webp"
         overlay="black"
         variant="center"
@@ -52,12 +51,97 @@ export default function HomePage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <Mission />
+        <SectionSteps
+          subtitle="Cztery filary jakości"
+          title="Elastyczny partner dla Twojej marki"
+          description="Prowadzimy kompleksowe działania w czterech kluczowych obszarach, dzięki czemu pracując z nami masz wszystko w jednym miejscu"
+          items={[
+            {
+              imageSrc: '/assets/woda.png',
+              imageAlt: 'Woda - symbol grafiki i designu',
+              title: 'Grafika',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Tworzymy rozmaite projekty graficzne, przez projekty do drugu jak wizytówki czy ulotki, po projekty stron internetowych jak i całych identyfikacji wizualnych. Opieramy się na
+                    psychologii, dzięki czemu nasze projekty trafiają do odpowiednich grup odbiorczych, tworząc dla Ciebie idealne środowisko do pozyskiwania najlepszych klientów
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/uslugi/projekty-graficzne">
+                      Przejdź do projektów graficznych
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              imageSrc: '/assets/ziemia.png',
+              imageAlt: 'Ziemia - symbol witryn internetowych',
+              title: 'Strony',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Tworzymy strony internetowe, sklepy oraz blogi dopasowując odpowiednią technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny, które są zgodne z RODO, WCAG 2.1 i
+                    oferujemy pomoc we wszelkich kwestiach prawnych, dzięki czemu nie musisz się o nic martwić.
+                  </p>
+                  <div className="mt-auto gap-4 flex">
+                    <Button arrow link="/uslugi/strony-internetowe">
+                      Strony
+                    </Button>
+                    <Button arrow link="/uslugi/blogi-internetowe">
+                      Blogi
+                    </Button>
+                    <Button arrow link="/uslugi/sklepy-internetowe">
+                      Sklepy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              imageSrc: '/assets/ogien.png',
+              imageAlt: 'Ogień - symbol marketingu',
+              title: 'Marketing',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Specjalizujemy się w pozycjonowaniu stron oraz sklepów, z nami zyskasz widoczność w Google i nie tylko. Zajmujemy się również tworzeniem kampanii reklamowych dla Google jak i
+                    social mediów. Analizujemy twoje grono odbiorców i proponujemy działania, które trafiają dokładnie tam gdzie szukają cie klienci.
+                  </p>
+                    <div className="mt-4">
+                    <Button arrow link="/uslugi/marketing">
+                      Sprawdź ofertę marketingu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              imageSrc: '/assets/powietrze.png',
+              imageAlt: 'Powietrze - symbol języka',
+              title: 'Treści',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Tworzymy treści, które w jasny sposób pokazują Twoją ofertą i zachęcają do skorzystania z niej. Tworzymy treści do social mediów, na strony internetowe, sklepy czy blogi. Wszystko
+                    to w oparciu o realne rozwiązywanie problemów Twoich klientów. Z nami, jesteś widoczny dokładnie tam gdzie są Twoi klienci.
+                  </p>
+                    <div className="mt-4">
+                    <Button arrow link="/uslugi/tworzenie-tresci">
+                      Sprawdź ofertę tworzenia treści
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
 
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dostajesz"
+          title="Co dostajesz współpracując z nami?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -98,10 +182,6 @@ export default function HomePage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Nasze realizacje" category="strona" />
-
-        <Gap variant="line" />
-
-        <ServicesSteps />
 
         <Gap variant="line" />
 
