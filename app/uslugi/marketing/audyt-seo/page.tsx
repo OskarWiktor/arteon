@@ -73,8 +73,8 @@ export default function OfferMarketingPage() {
 
       <BenefitBelt
         items={[
-          { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
-          { icon: <RiLightbulbFlashLine />, label: 'Prosty język i konkret' },
+          { icon: <RiCustomerService2Line />, label: 'Stabilny rozwój' },
+          { icon: <RiLightbulbFlashLine />, label: 'Lepsza widoczność' },
           { icon: <RiBarChart2Fill />, label: 'Raport i priorytety' },
           { icon: <RiShieldCheckLine />, label: 'Bezpieczne wdrożenia' },
         ]}
@@ -107,15 +107,15 @@ export default function OfferMarketingPage() {
         <SectionBasic
           variant="right"
           imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-analityki.jpg"
-          imageAlt="Audyt SEO — analiza widoczności strony w Google Analitics"
+          imageAlt="Audyt SEO — analiza widoczności strony w Google Analytics"
           subtitle="Dla kogo"
-          title="Kiedy audyt SEO ma największy sens?"
+          title="Kiedy audyt SEO ma największy sens i dla kogo jest?"
           description="Gdy strona nie wyświetla się tak wysoko jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Kompleksowy audyt SEO jest najlepszy dla:"
           btnOne="Zamów audyt SEO"
           btnOneLink="#kontakt"
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
-            <li>Nowych platform, które potrzebują solidnych podstaw zanim ruszą z kampaniami reklamowymi.</li>
+            <li>Właścicieli nowych platform, które potrzebują solidnych podstaw zanim ruszą z kampaniami reklamowymi.</li>
             <li>Właścicieli sklepów oraz stron internetowe z problemami widoczności, które nie pozwalają na dostateczną ilość zapytań lub klientów.</li>
             <li>Firm usługowych i B2B, którym zależy na stałym dopływie jakościowych zapytań od klientów.</li>
           </ul>
@@ -188,7 +188,7 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Jak mierzymy efekty pozycjonowania po audycie?" subtitle="KPI i raportowanie">
+        <SectionInfo title="Co sprawdzamy audycie SEO i późniejszej optymalizacji SEO?" subtitle="KPI i raportowanie">
           <ul className="ml-5 list-disc space-y-2">
             <li>
               <strong>Pozycję strony:</strong> sprawdzamy na której pozycji pokazuje się Twoja strona przy poszczególnych frazach.
@@ -215,7 +215,7 @@ export default function OfferMarketingPage() {
         >
           <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
             <li className="list-none rounded-xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>Więcej wejść z Google</strong> już po 2-3 miesiącach dzięki poprawie szybkości i uporządkowaniu treści.
+              <strong>Więcej wejść z Google</strong> efekt może być zauważalny już po 2-3 miesiącach.
             </li>
             <li className="list-none rounded-xl bg-white p-4 ring-1 ring-neutral-200">
               <strong>Szybsze działanie strony</strong> dzięki optymalizacji technicznej witryny.
@@ -233,7 +233,7 @@ export default function OfferMarketingPage() {
           subtitle="Przykładowe zakresy i ceny"
           plans={[
             {
-              name: 'Audyt SEO dla małych stron',
+              name: 'Audyt SEO: 1+ strona',
               price: 'od 800 zł',
               description: 'Dla kogo: dla właścicieli prostych stron firmowych i landing pages ( stron z jedną podstroną ).',
               features: [
@@ -247,7 +247,7 @@ export default function OfferMarketingPage() {
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Audyt SEO dla małych sklepów i rozbudowanych stron',
+              name: 'Audyt SEO: 10+ stron',
               price: 'od 1 500 zł',
               description: 'Dla kogo: dla właścicieli rozbudowanych stron firmowych lub małych sklepów.',
               features: [
@@ -261,7 +261,7 @@ export default function OfferMarketingPage() {
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Audyt SEO dla dużych serwisów',
+              name: 'Audyt SEO: 30+ stron',
               price: 'od 3 000 zł',
               description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
               features: [

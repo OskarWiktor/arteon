@@ -4,7 +4,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiLineChartLine, RiSearchLine, RiFileList2Line, RiCheckLine, RiLinksFill } from 'react-icons/ri';
+import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiLineChartLine, RiSearchLine, RiFileList2Line, RiLinksFill } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -30,7 +30,6 @@ export const metadata = {
   },
 } as const;
 
-/* === Service JSON-LD (schema.org) === */
 function ServiceSchema() {
   const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
   const json = {
@@ -60,9 +59,7 @@ export default function OfferSeoSubscription() {
     <>
       <HeroBanner
         title="Pozycjonowanie stron"
-        description={
-          <>Budujemy długofalową widoczność Twojej strony w Google. Co miesiąc rozwijamy treści, porządkujemy serwis i dbamy o bezpieczne linki — tak, aby pojawiały się nowe zapytania z WWW.</>
-        }
+        description={<>Budujemy długofalową widoczność Twojej strony w Google. Co miesiąc rozwijamy treści, optymalizujemy serwis i dbamy o jak najwyższą pozycję w wynikach wyszukiwania Google</>}
         buttonAccent="Bezpłatna konsultacja"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -89,11 +86,11 @@ export default function OfferSeoSubscription() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* Wartość i obietnica rezultatu */}
         <SectionInfo title="Na czym polega pozycjonowanie stron i dlaczego działa?">
           <p>
-            <strong>Pozycjonowanie to praca etapami, miesiąc po miesiącu.</strong> Zamiast pojedynczych strzałów, budujemy system: rozwijamy treści, poprawiamy kluczowe podstrony i pozyskujemy linki,
-            które wzmacniają wiarygodność domeny. Dzięki temu Twoja strona częściej pojawia się tam, gdzie szukają Cię klienci.
+            <strong>Pozycjonowanie SEO stron to praca polegająca na rozwijaniu Twojego serwisu w celu uzyskania jak najwyższej pozycji w wyszukiwarce Google.</strong> Nasza oferta pozycjonowania to
+            kompleksowy system: rozwijamy treści, poprawiamy kluczowe podstrony, pozyskujemy linki, które wzmacniają wiarygodność domeny oraz stale dodajemy nowe strony abyś miał coraz więcej
+            klientów. Dzięki temu Twoja witryna częściej pojawia się tam, gdzie szukają Cię klienci.
           </p>
           <br />
           <p>
@@ -104,46 +101,47 @@ export default function OfferSeoSubscription() {
 
         <Gap variant="line" />
 
-        {/* Dla kogo (z obrazkiem) */}
         <SectionBasic
           variant="right"
-          imageSrc="/assets/sections/seo-sub-01.webp"
+          imageSrc="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.jpg"
           imageAlt="Pozycjonowanie stron — plan treści i rozwój widoczności"
           subtitle="Dla kogo"
-          title={<>Kiedy abonament SEO ma największy sens?</>}
-          description="Gdy chcesz stałego dopływu zapytań z Google i przewagi nad konkurencją — bez jednorazowych skoków."
+          title={<>Kiedy pozycjonowanie strony ma największy sens?</>}
+          description="Gdy chcesz stałego dopływu zapytań z Google i przewagi nad konkurencją. Pozycjonowanie stron jest najlepsze dla:"
           btnOne="Porozmawiajmy"
           btnOneLink="#kontakt"
-          btnTwo="Zobacz zakres"
-          btnTwoLink="#kontakt"
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
-            <li>Strony firmowe, które chcą rosnąć w wynikach wyszukiwania i pozyskiwać więcej zapytań.</li>
-            <li>Branże usługowe i B2B, gdzie liczy się ekspertowość i regularne publikacje.</li>
-            <li>Marki, które wolą stabilną strategię niż chaotyczne działania bez planu.</li>
+            <li>Właścicieli stron firmowych, którzy chcą rosnąć w wynikach wyszukiwania i pozyskiwać więcej klientów.</li>
+            <li>Branż usługowych i B2B, gdzie liczy się budowa autorytetu i regularne publikacje.</li>
+            <li>Marek, które potrzebują stabilnej strategi budowy swojej widoczności online.</li>
           </ul>
         </SectionBasic>
 
         <Gap variant="line" />
 
-        {/* Co robimy co miesiąc — po ludzku */}
         <FeatureGrid
-          title="Co robimy w ramach pozycjonowania (co miesiąc)?"
+          title="Co robimy w ramach pozycjonowania stron (co miesiąc)?"
           subtitle="Zakres działań i efekty"
           items={[
             {
-              title: 'Strategia treści i kalendarz publikacji',
-              description: <>Wybieramy tematy, które odpowiadają na pytania klientów i wzmacniają pozycję strony. Tworzymy kalendarz i dbamy o regularność publikacji.</>,
+              title: 'Strategia treści',
+              description: <>Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie treści, budując Twoją widoczność tam gdzie szukają Cie klienci.</>,
               icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Poprawa kluczowych podstron (on-page)',
-              description: <>Dopracowujemy istniejące podstrony oferty i bloga: nagłówki, tytuły, opisy i układ treści. Dzięki temu są lepiej dopasowane do zapytań użytkowników.</>,
+              description: (
+                <>
+                  Analizujemy Twoją konkurencję i dopracowujemy istniejące podstrony: nagłówki, tytuły, dodatkowe opisy oraz elementy. Dzięki temu strony są lepiej dopasowane do realnych zapytań
+                  użytkowników.
+                </>
+              ),
               icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
-              description: <>Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły branżowe, katalogi jakościowe). Chodzi o jakość i naturalność, nie o ilość.</>,
+              description: <>Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły branżowe, katalogi), dzięki temu autorytet Twojej witryny rośnie</>,
               icon: <RiLinksFill className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -156,11 +154,10 @@ export default function OfferSeoSubscription() {
 
         <Gap variant="line" />
 
-        {/* Jak mierzymy efekty */}
-        <SectionInfo title="Jak mierzymy postępy?" subtitle="KPI i raportowanie">
+        <SectionInfo title="Jak mierzymy postępy pozycjonowania strony?" subtitle="KPI i raportowanie">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Widoczność fraz:</strong> ile zapytań trafia do Top10/Top3 i jak rośnie zasięg tematów.
+              <strong>Widoczność fraz:</strong> ile zapytań trafia do Top10/Top3 i jak rośnie Twój zasięg.
             </li>
             <li>
               <strong>Ruch z Google:</strong> liczba wejść na stronę z wyników wyszukiwania.
@@ -173,41 +170,38 @@ export default function OfferSeoSubscription() {
 
         <Gap variant="line" />
 
-        {/* Proces współpracy */}
         <SectionSteps
-          title="Jak wygląda współpraca — krok po kroku"
+          title="Jak wygląda współpraca przy pozycjonowaniu stron?"
           subtitle="Proces"
           description="Powtarzalny schemat, który porządkuje działania i pozwala rosnąć konsekwentnie."
           items={[
             {
-              icon: <RiSearchLine className="h-8 w-8" />,
-              title: '1. Plan 90 dni: priorytety i tematy',
+              title: '1. Audyt SEO + Plan 90 dni',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i zadania wspierające.</p>
+                  <p className="mb-3 text-sm">
+                    Przeprowadzany audyt SEO a następnie ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i zadania wspierające.
+                  </p>
                 </div>
               ),
             },
             {
-              icon: <RiCheckLine className="h-8 w-8" />,
-              title: '2. Produkcja treści i poprawa kluczowych podstron',
+              title: '2. Optymalizacja SEO',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Publikujemy artykuły, rozwijamy sekcje oferty i porządkujemy elementy, które wpływają na widoczność i konwersję.</p>
+                  <p className="mb-3 text-sm">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak aby Google uznał ją za wartościową</p>
                 </div>
               ),
             },
             {
-              icon: <RiLinksFill className="h-8 w-8" />,
-              title: '3. Linki i wzmocnienie autorytetu',
+              title: '3. Produkcja treści i poprawa podstron',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Pozyskujemy wartościowe odnośniki, które naturalnie wspierają widoczność domeny.</p>
+                  <p className="mb-3 text-sm">Publikujemy artykuły, rozwijamy sekcje ofert i porządkujemy elementy, które wpływają na widoczność i konwersję.</p>
                 </div>
               ),
             },
             {
-              icon: <RiBarChart2Fill className="h-8 w-8" />,
               title: '4. Raport i plan na kolejny miesiąc',
               description: (
                 <div className="flex h-full flex-col">
@@ -216,51 +210,21 @@ export default function OfferSeoSubscription() {
               ),
             },
           ]}
-          grid="four"
+          grid="two"
         />
 
         <Gap variant="line" />
 
-        {/* Mini-case (język korzyści) */}
-        <SectionBasic
-          variant="left"
-          imageSrc="/assets/sections/seo-sub-02.webp"
-          imageAlt="Efekty pozycjonowania stron — przykłady"
-          subtitle="Wyniki naszych Klientów"
-          title={<>Jakie rezultaty widzimy najczęściej?</>}
-          description="Przykłady z ostatnich wdrożeń. Rzeczywiste wyniki zależą od branży, konkurencji i intensywności prac."
-        >
-          <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
-            <li className="list-none rounded-xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>Stały przyrost fraz w Top10</strong> w ciągu 3-6 miesięcy, wraz z większą liczbą wejść z Google.
-            </li>
-            <li className="list-none rounded-xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>Więcej zapytań</strong> po dopracowaniu podstron oferty i regularnych publikacjach blogowych.
-            </li>
-            <li className="list-none rounded-xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>Lepszy wizerunek eksperta</strong> dzięki treściom, które odpowiadają na realne pytania klientów.
-            </li>
-          </ul>
-          <div className="mt-6">
-            <Button arrow link="#kontakt">
-              Porozmawiajmy o Twojej stronie
-            </Button>
-          </div>
-        </SectionBasic>
-
-        <Gap variant="line" />
-
-        {/* Pakiety cenowe */}
         <SectionPrices
           title="Pakiety pozycjonowania"
           subtitle="Miesięczne plany"
           plans={[
             {
               name: 'SEO Start',
-              price: 'od 1 200 zł / mies.',
-              description: 'Dla mniejszych stron firmowych. Podstawowy plan treści i porządek on-page.',
-              features: ['Plan treści i harmonogram', 'Poprawa kluczowych podstron', 'Raport miesięczny'],
-              btnOne: 'Zamów ofertę',
+              price: 'od 1 000 zł / mies.',
+              description: 'Dla mniejszych stron firmowych. Podstawowy plan treści i spokojny rozwój.',
+              features: ['Plan treści i harmonogram', 'Poprawa kluczowych podstron', 'Optymalizacje'],
+              btnOne: 'Poproś o wycenę',
               btnOneLink: '#kontakt',
             },
             {
@@ -268,7 +232,7 @@ export default function OfferSeoSubscription() {
               badgeLabel: 'Najczęściej wybierany',
               price: 'od 1 600 zł / mies.',
               description: 'Strategia treści + bezpieczne linki. Dla firm, które chcą rosnąć szybciej.',
-              features: ['Publikacje i aktualizacje', 'Linki z wartościowych miejsc', 'Raport KPI + rekomendacje'],
+              features: ['Publikacje i aktualizacje', 'Linki z wartościowych miejsc', 'Analiza konkurencji'],
               lastPlan: true,
               btnOne: 'Poproś o wycenę',
               btnOneLink: '#kontakt',
@@ -278,7 +242,7 @@ export default function OfferSeoSubscription() {
               price: 'od 2 400 zł / mies.',
               description: 'Większa intensywność prac i szybciej widoczne efekty.',
               features: ['Rozszerzony plan treści', 'Silniejsze wzmocnienie linkami', 'Priorytetowe wdrożenia'],
-              btnOne: 'Zapytaj o termin',
+              btnOne: 'Poproś o wycenę',
               btnOneLink: '#kontakt',
             },
           ]}
@@ -287,7 +251,7 @@ export default function OfferSeoSubscription() {
             ctaLabel: 'Skonsultuj potrzeby',
             ctaLink: '#kontakt',
           }}
-          legalNote="Ceny są orientacyjne. Dokładną wycenę przedstawimy po krótkim briefie i wglądzie w stronę."
+          legalNote="Ceny orientacyjne brutto. Ostateczna wycena zależy od technologii, wielkości witryny i tego w jakim tempie chcesz rosnąć. Dopasowujemy ofertę do Twojego budżetu"
         />
 
         <Gap variant="line" />
@@ -337,7 +301,7 @@ export default function OfferSeoSubscription() {
 
         <ContactForm
           title="Zamów pozycjonowanie strony"
-          description="Podaj adres strony i cele. Przygotujemy plan działań i wycenę dopasowaną do Twojej branży."
+          description="Podaj adres swojej witryny. Przygotujemy plan działań i wycenę dopasowaną do Twojej branży."
           defaultSubject="Pozycjonowanie stron"
         />
 
@@ -349,23 +313,23 @@ export default function OfferSeoSubscription() {
             {
               question: 'Ile trwa pozycjonowanie i kiedy widać efekty?',
               answer:
-                'To proces. Pierwsze wzrosty zwykle pojawiają się w ciągu 1-3 miesięcy, a stabilna poprawa buduje się w perspektywie 3-6 miesięcy i dłużej. Tempo zależy od konkurencji i intensywności prac.',
+                'Pozycjonowanie stron to proces. Pierwsze wzrosty zwykle pojawiają się w ciągu 1-3 miesięcy, a stabilna poprawa pojawia się w perspektywie 3-6 miesięcy i dłużej. Tempo zależy od konkurencji i intensywności prac.',
             },
             {
-              question: 'Czy tworzycie treści w ramach współpracy?',
-              answer: 'Tak. Przygotowujemy i aktualizujemy treści zgodnie z kalendarzem publikacji: artykuły, poradniki, rozbudowę podstron oferty.',
+              question: 'Czy tworzycie treści w ramach pozycjonowania stron?',
+              answer: 'Tak. Przygotowujemy i aktualizujemy treści zgodnie z Twoją branżą oraz konkurencją: artykuły, poradniki, rozbudowa podstron oferty.',
             },
             {
               question: 'Czy pozyskujecie linki do strony?',
               answer: 'Tak. Stawiamy na bezpieczne i jakościowe miejsca, które są powiązane tematycznie z Twoją branżą. Liczy się naturalność i sens, nie sama liczba odnośników.',
             },
             {
-              question: 'Jak wygląda raportowanie?',
-              answer: 'Co miesiąc otrzymujesz prosty raport: widoczność fraz, wejścia z Google i liczba zapytań. Dołączamy rekomendacje na kolejny etap.',
+              question: 'Jak wygląda raportowanie wyników pozycjonowania SEO?',
+              answer: 'Co miesiąc otrzymujesz prosty raport: widoczność fraz, wejścia z Google i liczba zapytań. Dołączamy rekomendacje i plan na dalszy rozwój.',
             },
             {
-              question: 'Czy to usługa dla sklepów internetowych?',
-              answer: 'Ta oferta jest skoncentrowana na stronach firmowych. Dla e-commerce przygotujemy osobną propozycję w oparciu o kartę produktów i potrzeby sklepu.',
+              question: 'Czy to usługa również dla sklepów internetowych?',
+              answer: 'Ta oferta jest skoncentrowana na stronach firmowych. Dla e-commerce przygotujemy osobną propozycję w oparciu o specyfikę produktów i potrzeby sklepu.',
             },
           ]}
         />
@@ -378,15 +342,14 @@ export default function OfferSeoSubscription() {
       </Wrapper>
 
       <CTABaner
-        title="Budujmy widoczność miesiąc po miesiącu"
-        description="Strategia treści, porządek na stronie i bezpieczne linki — zestaw, który realnie zwiększa liczbę zapytań."
+        title="Zbudujmy Twoją widoczność"
+        description="Strategia treści, porządek na stronie i bezpieczne linki — zestaw, który zwiększa liczbę zapytań."
         primaryLabel="Skontaktuj się"
         primaryLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
       />
 
-      {/* JSON-LD Service */}
       <ServiceSchema />
     </>
   );

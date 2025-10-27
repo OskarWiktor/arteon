@@ -4,7 +4,7 @@ import CTABaner from '@/components/sections/CTABaner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiToolsLine, RiCheckLine } from 'react-icons/ri';
+import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiToolsLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -24,7 +24,7 @@ export const metadata = {
   alternates: { canonical: '/uslugi/marketing/optymalizacja-seo' },
   openGraph: {
     title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',
-    description: 'Praktyczne wdrożenia po audycie: szybka strona, uporządkowane treści i lepsze wyniki w Google. Wszystko z testami i raportami.',
+    description: 'Wdrażamy poprawki po audycie: przyspieszamy stronę, porządkujemy treści i ułatwiamy Google ich zrozumienie. Testy przed i po, jasne raporty i stabilny wzrost.',
     url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
     type: 'website',
   },
@@ -63,9 +63,7 @@ export default function OfferOptimizationSEO() {
     <>
       <HeroBanner
         title="Optymalizacja SEO"
-        description={
-          <>Wprowadzimy zmiany, które realnie poprawią wyniki: przyspieszymy stronę, uporządkujemy treści i ułatwimy Google ich zrozumienie. Każde wdrożenie mierzymy — zobaczysz efekt przed i po.</>
-        }
+        description={<>Wprowadzimy zmiany, które poprawią pozycję Twojej strony w Google: przyspieszymy stronę, uporządkujemy treści i ułatwimy Google ich zrozumienie.</>}
         buttonAccent="Bezpłatna konsultacja"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -94,13 +92,13 @@ export default function OfferOptimizationSEO() {
 
         <SectionInfo title="Na czym polega optymalizacja SEO i dlaczego działa?">
           <p>
-            <strong>Optymalizacja to praktyczny etap po audycie SEO.</strong> Zamiast teoretycznych zaleceń — wdrażamy konkretne zmiany, które skracają czas ładowania, porządkują treści i sprawiają,
-            że Google łatwiej rozumie najważniejsze podstrony. Dzięki temu strona rośnie w widoczności, a użytkownik szybciej znajduje to, czego potrzebuje.
+            <strong>Optymalizacja SEO to kolejny etap po audycie SEO.</strong> Optymalizacja pozwala na wprowadzenie konkretnych zmian na stronie lub sklepie internetowym, które skracają czas
+            ładowania, porządkują treści i sprawiają, że Google łatwiej rozumie Twoją ofertę. Dzięki temu strona zyskuje wyższą pozycję w Google, a użytkownicy szybciej znajdują to, czego potrzebują.
           </p>
           <br />
           <p>
-            <strong>Mierzymy efekty każdej zmiany.</strong> Przed wdrożeniem zapisujemy stan bieżący, a po publikacji sprawdzamy, jak poprawił się czas ładowania, pozycje i wejścia z Google. Wiesz
-            dokładnie, co zadziałało.
+            <strong>Mierzymy efekty każdej zmiany.</strong> Przed wdrożeniem dodajemy na Twojej witrynie narzędzia analityczne oraz zapisujemy stan bieżący, a po publikacji sprawdzamy, jak poprawił
+            się czas ładowania, pozycje i wejścia z Google. Wiesz dokładnie, co zadziałało.
           </p>
         </SectionInfo>
 
@@ -108,49 +106,45 @@ export default function OfferOptimizationSEO() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/sections/opt-seo-01.webp"
-          imageAlt="Optymalizacja SEO — wdrożenia, które widać w wynikach"
+          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-zblizenie-na-raport.jpg"
+          imageAlt="Optymalizacja SEO — wyniki raportu"
           subtitle="Dla kogo"
-          title={<>Kiedy warto wejść w optymalizację SEO?</>}
-          description="Gdy masz już diagnozę (audyt) i chcesz przejść do wdrożeń, które najszybciej poprawią wyniki."
-          btnOne="Zamów wdrożenia"
+          title="Kiedy warto zrobić optymalizację SEO i dla kogo ona jest?"
+          description="Gdy masz już diagnozę (audyt) i chcesz przejść do wdrożeń, które najszybciej poprawią wyniki Twojej strony. Optymalizacja SEO jest najlepsza dla:"
+          btnOne="Zamów optymalizację"
           btnOneLink="#kontakt"
-          btnTwo="Zapytaj o zakres"
-          btnTwoLink="#kontakt"
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
-            <li>Nowe strony, które potrzebują solidnych fundamentów przed skalowaniem treści i reklam.</li>
-            <li>Sklepy internetowe, którym zależy na szybkiej stronie i lepszej widoczności produktów.</li>
-            <li>Firmy B2B i usługowe, które chcą stabilnie zwiększać liczbę zapytań z Google.</li>
+            <li>Właścicieli nowych stron, które potrzebują solidnych fundamentów przed skalowaniem treści i stworzeniem reklam.</li>
+            <li>Właścicieli sklepów internetowych, którym zależy na szybkiej stronie i lepszej widoczności produktów.</li>
+            <li>Firm usługowych i B2B. które potrzebują stabilnie zwiększać liczbę zapytań od klientów z Google.</li>
           </ul>
         </SectionBasic>
 
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dokładnie wdrażamy w ramach optymalizacji (po ludzku)?"
+          title="Co dokładnie wdrażamy w ramach optymalizacji SEO?"
           subtitle="Kluczowe obszary i efekty"
           items={[
             {
               title: 'Szybkość ładowania',
-              description: <>Skracamy czas wczytywania strony, porządkujemy grafiki i skrypty. Efekt: strona działa szybciej, a użytkownicy rzadziej rezygnują z przeglądania.</>,
+              description: <>Skracamy czas wczytywania strony, optymalizujemy grafiki i kod strony. Efekt: strona działa szybciej, a użytkownicy rzadziej rezygnują z przeglądania.</>,
               icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Tytuły i opisy widoczne w Google',
-              description: <>Poprawiamy tytuły i opisy, by lepiej pasowały do zapytań użytkowników. Efekt: wyższy CTR i więcej wejść z wyników wyszukiwania.</>,
+              description: <>Poprawiamy tytuły i opisy, by lepiej pasowały do zapytań użytkowników. Efekt: więcej trafnych zapytań i więcej wejść z wyników wyszukiwania.</>,
               icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Struktura treści i nawigacja',
-              description: <>Uporządkujemy nagłówki i menu, dodajemy logiczne połączenia między podstronami. Efekt: łatwiejsza nawigacja i lepsze rozumienie strony przez Google.</>,
+              description: <>Porządkujemy nagłówki i menu, dodajemy logiczne połączenia między podstronami. Efekt: łatwiejsza nawigacja i lepsze rozumienie strony przez Google.</>,
               icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dodatkowe dane dla Google',
-              description: (
-                <>Wprowadzamy dodatkowe informacje (np. sekcje pytań i odpowiedzi czy opisy artykułów), które pomagają Google lepiej zrozumieć zawartość i poprawiają sposób prezentacji wyników.</>
-              ),
+              description: <>Wprowadzamy dodatkowe informacje (np. sekcje pytań i odpowiedzi), które pomagają Google lepiej zrozumieć zawartość i to co dokładnie oferujesz.</>,
               icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -158,16 +152,16 @@ export default function OfferOptimizationSEO() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Jak mierzymy efekt wdrożeń?" subtitle="KPI i raportowanie">
+        <SectionInfo title="Jaki efekt mierzymy po optymalizacji SEO?" subtitle="KPI i raportowanie">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Szybsza strona:</strong> krótszy czas ładowania i płynne działanie na telefonach.
+              <strong>Pozycję strony:</strong> sprawdzamy na której pozycji pokazuje się Twoja strona przy poszczególnych frazach.
             </li>
             <li>
-              <strong>Lepsza widoczność w Google:</strong> wzrost liczby fraz w Top10/Top3 i więcej wejść z wyszukiwarki.
+              <strong>Ilość fraz:</strong> patrzymy ile nowych fraz Google łączy z Twoją witryną i jak wpływa to na ruch oraz pozycję.
             </li>
             <li>
-              <strong>Więcej zapytań:</strong> więcej kontaktów z formularza i telefonu dzięki lepiej opisanym podstronom.
+              <strong>Zapytania i ruch:</strong> patrzymy o ile wzrósł ruch na Twojej stronie oraz o ile wzrosła ilość uzupełnionych formularzy, telefonów i wiadomości po wprowadzonych zmianach.
             </li>
           </ul>
         </SectionInfo>
@@ -175,34 +169,30 @@ export default function OfferOptimizationSEO() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="Jak przebiega optymalizacja — krok po kroku"
+          title="Jak wygląda optymalizacja SEO witryny?"
           subtitle="Proces"
-          description="Wdrożenia robimy bezpiecznie i transparentnie. Zawsze wiesz, na jakim etapie jesteśmy i jaki będzie kolejny krok."
           items={[
             {
-              icon: <RiToolsLine className="h-8 w-8" />,
               title: '1. Ustalamy priorytety z audytu',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Wybieramy zmiany, które dadzą najszybszy efekt: szybkość, treści, struktura.</p>
+                  <p className="mb-3 text-sm">Wybieramy zmiany, które dadzą najszybszy efekt w Twoim przypadku.</p>
                 </div>
               ),
             },
             {
-              icon: <RiCheckLine className="h-8 w-8" />,
               title: '2. Wdrażamy i testujemy zmiany',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Najpierw środowisko testowe, później produkcja. Mierzymy wynik przed i po.</p>
+                  <p className="mb-3 text-sm">Wprowadzamy odpowiednie zmiany na stronie i informujemy o nich Google.</p>
                 </div>
               ),
             },
             {
-              icon: <RiBarChart2Fill className="h-8 w-8" />,
-              title: '3. Raport i rekomendacje na kolejne tygodnie',
+              title: '3. Raport i dalsze działania',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dostajesz krótki raport z efektami i listę następnych działań.</p>
+                  <p className="mb-3 text-sm">Dostajesz krótki raport z efektami optymalizację i listę następnych działań.</p>
                 </div>
               ),
             },
@@ -213,10 +203,10 @@ export default function OfferOptimizationSEO() {
 
         <SectionBasic
           variant="left"
-          imageSrc="/assets/sections/opt-seo-02.webp"
-          imageAlt="Efekty optymalizacji SEO — przykłady"
+          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.jpg"
+          imageAlt="Optymalizacji SEO — ekran edycji strony"
           subtitle="Wyniki wdrożeń"
-          title={<>Jakie efekty widzimy najczęściej po optymalizacji?</>}
+          title={<>Jakie efekty widzimy najczęściej po optymalizacji SEO?</>}
           description="Poniżej kilka typowych rezultatów po 2-8 tygodniach od wdrożeń. Rzeczywiste wyniki zależą od branży i skali zmian."
         >
           <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
@@ -224,58 +214,64 @@ export default function OfferOptimizationSEO() {
               <strong>Wyraźnie szybsze ładowanie strony</strong>, szczególnie na telefonach.
             </li>
             <li className="list-none rounded-xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>Więcej wejść z Google</strong> dzięki lepszym tytułom i opisom oraz porządnej strukturze treści.
+              <strong>Więcej wejść z Google</strong> efekt może być zauważalny już po 2-3 miesiącach.
             </li>
             <li className="list-none rounded-xl bg-white p-4 ring-1 ring-neutral-200">
               <strong>Wzrost liczby zapytań</strong> po dopracowaniu opisów oferty i nawigacji.
             </li>
           </ul>
-          <div className="mt-6">
-            <Button arrow link="#kontakt">
-              Porozmawiajmy o Twojej stronie
-            </Button>
-          </div>
         </SectionBasic>
 
         <Gap variant="line" />
 
         <SectionPrices
-          title="Przykładowe pakiety optymalizacji"
-          subtitle="Pakiety"
+          title="Cennik optymalizacji SEO"
+          subtitle="Przykładowe zakresy i ceny"
           plans={[
             {
-              name: 'Optymalizacja podstawowa',
+              name: 'Optymalizacja SEO: 1+ stron',
               price: 'od 600 zł',
-              description: 'Dla małych stron. Szybsze ładowanie i lepsze tytuły w Google.',
-              features: ['Poprawa prędkości', 'Porządek w tytułach i opisach', 'Krótki raport zmian'],
-              btnOne: 'Zamów optymalizację',
+              description: 'Dla kogo: dla właścicieli prostych stron firmowych i landing pages ( stron z jedną podstroną ).',
+              features: [
+                'Poprawa prędkości i czasu ładowania strony (Core Web Vitals)',
+                'Uporządkowanie tytułów, opisów i nagłówków H1–H3',
+                'Optymalizacja grafik (rozmiar, ALT, format WebP)',
+                'Uporządkowanie meta danych i struktury treści',
+                'Krótki raport zmian z wynikiem przed i po',
+              ],
+              btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Optymalizacja pełna',
-              badgeLabel: 'Najczęściej wybierana',
+              name: 'Optymalizacja SEO: 10+ stron',
               price: 'od 1 200 zł',
-              description: 'Kompleksowe wdrożenia po audycie. Dla serwisów firmowych i mniejszych e-commerce.',
-              features: ['Szybkość + struktura treści', 'Dodatkowe dane dla Google', 'Raport: wynik przed/po'],
-              lastPlan: true,
-              btnOne: 'Poproś o wycenę',
+              description: 'Dla kogo: dla właścicieli rozbudowanych stron firmowych lub małych sklepów.',
+              features: [
+                'Wszystko z pakietu dla małych stron, a dodatkowo:',
+                'Analiza i uporządkowanie struktury kategorii i adresów URL',
+                'Dodanie danych strukturalnych (schema.org, FAQ, artykuły)',
+                'Optymalizacja linkowania wewnętrznego i breadcrumbów',
+                'Pełny raport wdrożeń oraz rekomendacje dalszych działań',
+              ],
+              btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Optymalizacja z opieką',
-              price: 'od 1 900 zł',
-              description: 'Wdrożenia + 4-tygodniowa opieka i monitorowanie wyników.',
-              features: ['Kompleksowe zmiany', 'Monitoring i poprawki', 'Rekomendacje na kolejny miesiąc'],
-              btnOne: 'Zapytaj o termin',
+              name: 'Optymalizacja SEO: 30+ stron',
+              price: 'od 2 500 zł',
+              description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
+              features: [
+                'Wszystko z pakietu dla rozbudowanych stron, a dodatkowo:',
+                'Optymalizacja crawl budgetu i eliminacja duplikacji adresów',
+                'Weryfikacja kanonikalizacji, sitemap i pliku robots.txt',
+                'Audyt parametrów filtrów i paginacji (e-commerce)',
+                'Monitoring efektów przez 4 tygodnie po wdrożeniu',
+              ],
+              btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
           ]}
-          note={{
-            text: <>Masz duży sklep lub portal? Przygotujemy zakres dopasowany do technologii i wielkości serwisu.</>,
-            ctaLabel: 'Skonsultuj potrzeby',
-            ctaLink: '#kontakt',
-          }}
-          legalNote="Ceny są orientacyjne. Dokładną wycenę przedstawimy po krótkim briefie i wglądzie w stronę."
+          legalNote="Ceny orientacyjne brutto. Ostateczna wycena zależy od technologii, wielkości witryny i tego w jakim tempie chcesz rosnąć. Dopasowujemy ofertę do Twojego budżetu"
         />
 
         <Gap variant="line" />
@@ -286,7 +282,6 @@ export default function OfferOptimizationSEO() {
 
         <SectionSteps
           title="Zobacz też"
-          subtitle="Logiczne kolejne kroki"
           description="Optymalizacja najczęściej poprzedzona jest audytem, a po wdrożeniach przechodzimy do stałego pozycjonowania."
           items={[
             {
@@ -294,7 +289,7 @@ export default function OfferOptimizationSEO() {
               title: 'Audyt SEO (diagnostyka)',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Sprawdzimy, dlaczego strona nie rośnie w Google i wskażemy, co poprawić w pierwszej kolejności.</p>
+                  <p className="mb-3 text-sm">Analizujemy stan Twojej witryny i tworzymy jasny plan poprawek i rozwoju.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/audyt-seo">
                       Zobacz audyt SEO
@@ -305,10 +300,10 @@ export default function OfferOptimizationSEO() {
             },
             {
               icon: <RiFileList2Line className="h-8 w-8" />,
-              title: 'Pozycjonowanie stron (abonament)',
+              title: 'Pozycjonowanie stron',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Stała praca nad widocznością: plan treści, porządek na stronie i bezpieczne pozyskiwanie linków.</p>
+                  <p className="mb-3 text-sm">Stale pracujemy nad Twoją widocznością dostarczając raporty działań co miesiąc.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
                       Przejdź do pozycjonowania
@@ -323,7 +318,7 @@ export default function OfferOptimizationSEO() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zamów optymalizację SEO" description="Podaj adres strony i cele. Wrócimy z zakresem wdrożeń, terminem i wyceną." defaultSubject="Optymalizacja SEO" />
+        <ContactForm title="Zamów optymalizację SEO" description="Podaj adres swojej strony a my przygotujemy wycenę optymalizacji SEO" defaultSubject="Optymalizacja SEO" />
 
         <Gap variant="line" />
 
@@ -332,23 +327,39 @@ export default function OfferOptimizationSEO() {
           items={[
             {
               question: 'Czy mogę zrobić optymalizację bez audytu?',
-              answer: 'Teoretycznie tak, ale nie polecamy. Audyt pokazuje, które zmiany dają największy efekt i w jakiej kolejności je wdrażać. Dzięki temu nie tracisz czasu ani budżetu.',
+              answer: (
+                <p>
+                  Teorytycznie tak, ale nie polecamy takiego rozwiązania.{' '}
+                  <a href="/uslugi/marketing/audyt-seo" className="inline-link">
+                    Audyt SEO
+                  </a>{' '}
+                  wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania. Dzięki temu inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.
+                </p>
+              ),
+              answerSchemaText:
+                'Teorytycznie tak, ale nie polecamy takiego rozwiązania. wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania. Dzięki temu inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.',
             },
             {
-              question: 'Kiedy zobaczę efekty optymalizacji?',
-              answer: 'Część efektów (np. szybsze ładowanie) widać od razu. Zmiany w widoczności zwykle pojawiają się w ciągu 2-8 tygodni, w zależności od skali prac i konkurencyjności branży.',
+              question: 'Kiedy zobaczę efekty optymalizacji SEO?',
+              answer:
+                'Część efektów (np. szybsze ładowanie) widać od razu. Pierwsze zmiany w widoczności zwykle pojawiają się w ciągu 2-8 tygodni, w zależności od skali prac i konkurencyjności branży.',
             },
             {
-              question: 'Czy wdrożenia są bezpieczne dla sklepu/strony?',
-              answer: 'Tak. Najpierw testujemy na kopii lub w środowisku testowym, a potem publikujemy zmiany. Prowadzimy pomiary przed i po, aby mieć kontrolę nad efektem.',
-            },
-            {
-              question: 'Czy zajmujecie się też treściami?',
+              question: 'Czy zajmujecie się też edycją lub tworzeniem treści?',
               answer: 'Tak. Poza technicznymi wdrożeniami przygotowujemy lub poprawiamy treści, tytuły i opisy tak, aby lepiej odpowiadały na pytania użytkowników.',
             },
             {
-              question: 'Co dostanę po zakończeniu prac?',
-              answer: 'Krótki raport z listą wdrożonych zmian, wyniki testów oraz rekomendacje na kolejny etap (np. rozwój treści lub pozycjonowanie w abonamencie).',
+              question: 'Jak wygląda współpraca po optymalizacji?',
+              answer: (
+                <p>
+                  Najczęściej przechodzimy do abonamentu{' '}
+                  <a href="/uslugi/marketing/pozycjonowanie-stron" className="inline-link">
+                    pozycjonowania
+                  </a>
+                  : rozwijamy treści, wzmacniamy strukturę i monitorujemy wyniki miesięcznie.
+                </p>
+              ),
+              answerSchemaText: 'Po optymalizacji zwykle przechodzimy do pozycjonowania: rozwój treści, prace strukturalne i comiesięczny monitoring.',
             },
           ]}
         />
