@@ -109,7 +109,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Przejdź do oferty
+                      Przejdź do wizytówek
                     </Button>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
-                      Przejdź do oferty
+                      Przejdź do ulotek
                     </Button>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
-                      Przejdź do oferty
+                      Przejdź do teczek
                     </Button>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function OfferPage() {
                   <p className="mb-3">Papier firmowy wzmacnia profesjonalny wizerunek w każdej korespondencji. Przygotowujemy szablony Word i PDF i wersję gotową do druku.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
-                      Przejdź do oferty
+                      Przejdź do papieru firmowego
                     </Button>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-odziezy-firmowej">
-                      Przejdź do oferty
+                      Przejdź do odzieży firmowej
                     </Button>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-logo">
-                      Przejdź do oferty
+                      Przejdź do projektów logo
                     </Button>
                   </div>
                 </div>
@@ -206,7 +206,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
-                      Przejdź do oferty
+                      Przejdź do katalogów
                     </Button>
                   </div>
                 </div>
@@ -222,7 +222,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Przejdź do oferty
+                      Przejdź do identyfikacji wizualnej
                     </Button>
                   </div>
                 </div>
@@ -238,7 +238,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
-                      Przejdź do oferty
+                      Przejdź do projektów stron
                     </Button>
                   </div>
                 </div>
@@ -263,7 +263,7 @@ export default function OfferPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/audyt-seo">
-                      Zobacz audyt SEO
+                      Przejdź do audytu SEO
                     </Button>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ export default function OfferPage() {
                   <p className="mb-3">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak aby Google uznał ją za wartościową i lepszą od Twojej konkurencji.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/optymalizacja-seo">
-                      Przejdź do optymalizacji
+                      Przejdź do optymalizacji SEO
                     </Button>
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export default function OfferPage() {
                   <p className="mb-3">Budujemy widoczność strategicznym działaniem co miesiąć. Wprowadzamy treści, które odpowiadają na potrzeby Twoich klientów.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
-                      Zobacz pozycjonowanie
+                      Przejdź do pozycjonowania stron
                     </Button>
                   </div>
                 </div>
@@ -319,7 +319,7 @@ export default function OfferPage() {
                   </ul>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
-                      Wyceń treści do strony
+                      Przejdź do oferty tworzenia treści
                     </Button>
                   </div>
                 </div>
@@ -337,7 +337,7 @@ export default function OfferPage() {
                   </ul>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
-                      Zamów artykuły
+                      Przejdź do oferty tworzenia treści
                     </Button>
                   </div>
                 </div>
@@ -355,7 +355,7 @@ export default function OfferPage() {
                   </ul>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
-                      Wyceń treści do sklepu
+                      Przejdź do oferty tworzenia treści
                     </Button>
                   </div>
                 </div>
@@ -373,7 +373,7 @@ export default function OfferPage() {
                   </ul>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
-                      Zamów copy do social
+                      Przejdź do oferty tworzenia treści
                     </Button>
                   </div>
                 </div>
@@ -390,7 +390,7 @@ export default function OfferPage() {
                   </ul>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
-                      Poproś o ofertę PDF
+                      Przejdź do oferty tworzenia treści
                     </Button>
                   </div>
                 </div>
@@ -408,7 +408,7 @@ export default function OfferPage() {
                   </ul>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
-                      Prześlij tekst do korekty
+                      Przejdź do oferty tworzenia treści
                     </Button>
                   </div>
                 </div>

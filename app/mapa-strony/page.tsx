@@ -39,11 +39,8 @@ const services: NavItem[] = [
     title: 'Marketing',
     children: [
       { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' },
-      { href: '/uslugi/marketing/branding-komunikacja', title: 'Branding komunikacja' },
       { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
       { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
-      { href: '/uslugi/marketing/reklamy-online', title: 'Reklamy online' },
-      { href: '/uslugi/marketing/social-media', title: 'Social Media' },
     ],
   },
 ];
