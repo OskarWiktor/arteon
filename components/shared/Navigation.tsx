@@ -24,7 +24,7 @@ export default function Navigation() {
   }, [isOpen]);
 
   return (
-    <header id="navigation" className="sticky top-0 z-50 w-full bg-white/90 shadow-xl backdrop-blur-sm">
+    <header id="navigation" className="sticky top-0 z-50 w-full bg-white/95 shadow-xl backdrop-blur-sm">
       <Wrapper>
         <nav className="flex h-14 items-center justify-between md:h-16 lg:h-18" aria-label="Nawigacja główna">
           <Link href="/">
