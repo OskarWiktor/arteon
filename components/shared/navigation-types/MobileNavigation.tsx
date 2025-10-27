@@ -1,11 +1,25 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { JSX, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
-import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
+import {
+  RiArrowDownSLine,
+  RiCodeSSlashFill,
+  RiShoppingCartLine,
+  RiArticleLine,
+  RiPaletteLine,
+  RiFileTextLine,
+  RiMegaphoneLine,
+  RiSearchLine,
+  RiPriceTag3Line,
+  RiAdvertisementLine,
+  RiBookOpenLine,
+  RiCameraLensLine,
+  RiShareForwardLine,
+} from 'react-icons/ri';
 
 type NavItem = { href: string; label: string; exact?: boolean };
 
@@ -16,13 +30,61 @@ const NAV: NavItem[] = [
   { href: '/kontakt', label: 'Kontakt' },
 ];
 
-const SERVICES = [
-  { href: '/uslugi/strony-internetowe', icon: <RiCodeSSlashFill aria-hidden />, title: 'Strony internetowe' },
-  { href: '/uslugi/sklepy-internetowe', icon: <RiShoppingCartLine aria-hidden />, title: 'Sklepy internetowe' },
-  { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine aria-hidden />, title: 'Blogi internetowe' },
-  { href: '/uslugi/projekty-graficzne', icon: <RiPaletteLine aria-hidden />, title: 'Projekty graficzne' },
-  { href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine aria-hidden />, title: 'Tworzenie treści' },
-  { href: '/uslugi/marketing', icon: <RiMegaphoneLine aria-hidden />, title: 'Marketing' },
+type SectionLink = { href: string; title: string; icon?: JSX.Element };
+type Section = {
+  key: 'witryny' | 'marketing' | 'grafika' | 'tresc';
+  title: string;
+  subtitle?: string;
+  hubHref?: string;
+  items: SectionLink[];
+};
+
+const SECTIONS: Section[] = [
+  {
+    key: 'witryny',
+    title: 'Witryny',
+    subtitle: 'Strony, sklepy, blogi',
+    items: [
+      { href: '/uslugi/strony-internetowe', title: 'Strony internetowe', icon: <RiCodeSSlashFill aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe', icon: <RiShoppingCartLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe', icon: <RiArticleLine aria-hidden className="h-5 w-5" /> },
+    ],
+  },
+  {
+    key: 'marketing',
+    title: 'Marketing',
+    subtitle: 'Widoczność i wzrost',
+    hubHref: '/uslugi/marketing',
+    items: [
+      { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO', icon: <RiSearchLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO', icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron', icon: <RiMegaphoneLine aria-hidden className="h-5 w-5" /> },
+    ],
+  },
+  {
+    key: 'grafika',
+    title: 'Grafika',
+    subtitle: 'Tożsamość i materiały',
+    hubHref: '/uslugi/projekty-graficzne',
+    items: [
+      { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo', icon: <RiPaletteLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Identyfikacja wizualna', icon: <RiShareForwardLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki', icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy', icon: <RiFileTextLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe', icon: <RiBookOpenLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki', icon: <RiAdvertisementLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi', icon: <RiBookOpenLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa', icon: <RiCameraLensLine aria-hidden className="h-5 w-5" /> },
+      { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Layout strony', icon: <RiArticleLine aria-hidden className="h-5 w-5" /> },
+    ],
+  },
+  {
+    key: 'tresc',
+    title: 'Tworzenie treści',
+    subtitle: 'Sprzedaż i SEO',
+    hubHref: '/uslugi/tworzenie-tresci',
+    items: [{ href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści', icon: <RiFileTextLine aria-hidden className="h-5 w-5" /> }],
+  },
 ];
 
 const INFO: NavItem[] = [
@@ -86,23 +148,33 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
     return () => document.removeEventListener('keydown', onKey);
   }, [isOpen, setIsOpen]);
 
-  const onServicesKeyDown = (e: React.KeyboardEvent<HTMLUListElement>) => {
-    const items = panelRef.current?.querySelectorAll<HTMLAnchorElement>('#services a[href]');
-    if (!items || !items.length) return;
-    const list = Array.from(items);
-    const idx = list.findIndex((el) => el === document.activeElement);
+  const [openKeys, setOpenKeys] = useState<Record<Section['key'], boolean>>({
+    witryny: false,
+    marketing: false,
+    grafika: false,
+    tresc: false,
+  });
+
+  const toggleKey = (key: Section['key']) =>
+    setOpenKeys((s) => ({ ...s, [key]: !s[key] }));
+
+  const onListKeyDown = (container: HTMLElement, e: React.KeyboardEvent) => {
+    const items = container.querySelectorAll<HTMLAnchorElement>('a[href]');
+    if (!items.length) return;
+    const arr = Array.from(items);
+    const idx = arr.findIndex((el) => el === document.activeElement);
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      list[Math.min(idx + 1, list.length - 1)]?.focus();
+      arr[Math.min(idx + 1, arr.length - 1)]?.focus();
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
-      list[Math.max(idx - 1, 0)]?.focus();
+      arr[Math.max(idx - 1, 0)]?.focus();
     } else if (e.key === 'Home') {
       e.preventDefault();
-      list[0]?.focus();
+      arr[0]?.focus();
     } else if (e.key === 'End') {
       e.preventDefault();
-      list[list.length - 1]?.focus();
+      arr[arr.length - 1]?.focus();
     }
   };
 
@@ -134,31 +206,89 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             transition={{ type: 'spring', stiffness: 280, damping: 30 }}
           >
             <div className="flex items-center justify-end px-4 pt-3">
-              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2"
+              >
                 Zamknij
               </button>
             </div>
 
             <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
-              <div>
-                <p className="px-3 pb-1 text-[11px] tracking-wider text-[#5e5e5e] uppercase">Usługi</p>
-                <ul id="services" className="grid grid-cols-1 gap-1" onKeyDown={onServicesKeyDown}>
-                  {SERVICES.map((s) => (
-                    <li key={s.href}>
-                      <Link
-                        href={s.href}
-                        onClick={() => setIsOpen(false)}
-                        className="group flex items-center gap-3 rounded-lg px-3 py-[3px] text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
-                      >
-                        <span className="text-[#080808] group-hover:text-slate-600 [&_svg]:h-5 [&_svg]:w-5">{s.icon}</span>
-                        <span>{s.title}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <p className="px-3 pb-1 text-[11px] uppercase tracking-wider text-[#5e5e5e]">Usługi</p>
+
+              <div className="flex flex-col">
+                {SECTIONS.map((sec) => {
+                  const expanded = openKeys[sec.key];
+                  return (
+                    <div key={sec.key} className="mb-1 rounded-lg border border-neutral-200">
+                      <div className="flex items-center justify-between">
+                        {sec.hubHref ? (
+                          <Link
+                            href={sec.hubHref}
+                            onClick={() => setIsOpen(false)}
+                            className="m-2 inline-block rounded px-2 py-1 text-[14px] font-semibold text-[#080808] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                          >
+                            {sec.title}
+                          </Link>
+                        ) : (
+                          <div className="m-2 px-2 py-1 text-[14px] font-semibold text-[#080808]">{sec.title}</div>
+                        )}
+
+                        <button
+                          type="button"
+                          aria-expanded={expanded}
+                          aria-controls={`sec-${sec.key}`}
+                          onClick={() => toggleKey(sec.key)}
+                          className="m-2 inline-flex items-center gap-1 rounded px-2 py-1 text-sm text-[#5e5e5e] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                        >
+                          {sec.subtitle && <span className="hidden text-xs text-[#7a7a7a] sm:inline">{sec.subtitle}</span>}
+                          <RiArrowDownSLine
+                            className={`h-4 w-4 transition-transform ${expanded ? 'rotate-180' : ''}`}
+                            aria-hidden="true"
+                          />
+                        </button>
+                      </div>
+
+                      <AnimatePresence initial={false}>
+                        {expanded && (
+                          <motion.div
+                            id={`sec-${sec.key}`}
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.18 }}
+                            className="overflow-hidden border-t border-neutral-200"
+                          >
+                            <ul
+                              className="p-2"
+                              onKeyDown={(e) => {
+                                const container = e.currentTarget as unknown as HTMLElement;
+                                onListKeyDown(container, e);
+                              }}
+                            >
+                              {sec.items.map((it) => (
+                                <li key={it.href}>
+                                  <Link
+                                    href={it.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className="group flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] text-[#080808] outline-none transition hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                                  >
+                                    {it.icon && <span className="text-[#5e5e5e] group-hover:text-slate-600">{it.icon}</span>}
+                                    <span>{it.title}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                })}
               </div>
 
-              <div className="my-2 h-px w-full bg-neutral-200" />
+              <div className="my-3 h-px w-full bg-neutral-200" />
 
               <ul className="mb-2 flex flex-col gap-1">
                 {NAV.map(({ href, label, exact }) => {
@@ -169,7 +299,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[3px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                        className={`block rounded-lg px-3 py-[7px] text-[15px] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
@@ -191,7 +321,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[3px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                        className={`block rounded-lg px-3 py-[7px] text-[15px] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
@@ -211,7 +341,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href="/kontakt"
                       onClick={() => setIsOpen(false)}
-                      className="rounded-xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="rounded-xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white outline-none transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       Umów konsultację
                     </Link>
