@@ -32,25 +32,54 @@ export const metadata = {
 
 function ServiceSchema() {
   const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
   const json = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Audyt SEO',
-    serviceType: 'SEO Audit',
+    serviceType: ['Audyt SEO', 'SEO Audit'],
     provider: {
       '@type': 'Organization',
       name: 'Arteon',
       url: `${base}`,
+      sameAs: ['https://www.arteonagency.pl'],
     },
-    areaServed: { '@type': 'Country', name: 'Polska' },
+
+    areaServed: {
+      '@type': 'Language',
+      name: 'Polski',
+      alternateName: 'Polish language',
+    },
+
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: `${base}/kontakt`,
+      availableLanguage: ['pl-PL'],
+      description: 'Usługa świadczona zdalnie dla klientów posługujących się językiem polskim w dowolnym kraju.',
+    },
+
     url: `${base}/uslugi/marketing/audyt-seo`,
-    description: 'Przeprowadź audyt SEO swojej witryny i sprawdź co możesz zrobić aby wyświetlać się wyżej w wynikach wyszukiwarki Google',
-    offers: {
-      '@type': 'Offer',
-      priceSpecification: { '@type': 'PriceSpecification', priceCurrency: 'PLN' },
-      url: `${base}/uslugi/marketing/audyt-seo`,
-    },
+    description: 'Audyt SEO dla stron i sklepów internetowych — analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
+
+    offers: [
+      {
+        '@type': 'Offer',
+        priceCurrency: 'PLN',
+        url: `${base}/uslugi/marketing/audyt-seo`,
+      },
+      {
+        '@type': 'Offer',
+        priceCurrency: 'EUR',
+        url: `${base}/uslugi/marketing/audyt-seo`,
+      },
+      {
+        '@type': 'Offer',
+        priceCurrency: 'GBP',
+        url: `${base}/uslugi/marketing/audyt-seo`,
+      },
+    ],
   };
+
   return (
     <Script id="schema-service-audyt-seo" type="application/ld+json">
       {JSON.stringify(json)}

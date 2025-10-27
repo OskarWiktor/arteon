@@ -84,7 +84,7 @@ export default function HomePage() {
                     Tworzymy strony internetowe, sklepy oraz blogi dopasowując odpowiednią technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny, które są zgodne z RODO, WCAG 2.1 i
                     oferujemy pomoc we wszelkich kwestiach prawnych, dzięki czemu nie musisz się o nic martwić.
                   </p>
-                  <div className="mt-auto gap-4 flex">
+                  <div className="mt-auto flex gap-4">
                     <Button arrow link="/uslugi/strony-internetowe">
                       Strony
                     </Button>
@@ -108,7 +108,7 @@ export default function HomePage() {
                     Specjalizujemy się w pozycjonowaniu stron oraz sklepów, z nami zyskasz widoczność w Google i nie tylko. Zajmujemy się również tworzeniem kampanii reklamowych dla Google jak i
                     social mediów. Analizujemy twoje grono odbiorców i proponujemy działania, które trafiają dokładnie tam gdzie szukają cie klienci.
                   </p>
-                    <div className="mt-4">
+                  <div className="mt-4">
                     <Button arrow link="/uslugi/marketing">
                       Sprawdź ofertę marketingu
                     </Button>
@@ -126,7 +126,7 @@ export default function HomePage() {
                     Tworzymy treści, które w jasny sposób pokazują Twoją ofertą i zachęcają do skorzystania z niej. Tworzymy treści do social mediów, na strony internetowe, sklepy czy blogi. Wszystko
                     to w oparciu o realne rozwiązywanie problemów Twoich klientów. Z nami, jesteś widoczny dokładnie tam gdzie są Twoi klienci.
                   </p>
-                    <div className="mt-4">
+                  <div className="mt-4">
                     <Button arrow link="/uslugi/tworzenie-tresci">
                       Sprawdź ofertę tworzenia treści
                     </Button>
@@ -136,6 +136,8 @@ export default function HomePage() {
             },
           ]}
           grid="two"
+          btnOne="Sprawdź wszystkie nasze usługi"
+          btnOneLink="/uslugi"
         />
 
         <Gap variant="line" />

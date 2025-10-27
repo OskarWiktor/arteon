@@ -112,9 +112,7 @@ export default function OfferContentPage() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="Oferta marketingu"
-          subtitle="Skutecznie i przejrzyście"
-          description="SEO, reklamy i social - opisane prostym językiem, oparte na danych i emocjach. Efekt zawsze widoczny."
+          title="Oferta Tworzenia treści"
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
