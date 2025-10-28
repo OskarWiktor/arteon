@@ -74,6 +74,10 @@ h1,
 .h1 {
   font-weight: 700;
   font-size: clamp(36px, calc(36px + 24 * ((100vw - 360px) / 1080)), 60px);
+  text-wrap: balance;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 h2,
