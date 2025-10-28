@@ -4,14 +4,13 @@ import HeroBaner from '@/components/sections/HeroBaner';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import { RiPhoneLine, RiMailLine, RiMapPinLine } from 'react-icons/ri';
+import { RiPhoneLine, RiMailLine, RiMapPinLine, RiMapPinTimeLine } from 'react-icons/ri';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
 export const metadata = {
   title: 'Kontakt – wycena Twojego planu | Arteon',
   description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania.',
-  // pełny kanoniczny URL
   alternates: { canonical: `${BASE_URL}/kontakt` },
   openGraph: {
     title: 'Kontakt – wycena Twojego planu | Arteon',
@@ -22,38 +21,43 @@ export const metadata = {
   },
 } as const;
 
-/* ---------- SCHEMA.ORG: LOCAL BOOST ---------- */
 function ContactSchemas() {
-  // Dane kontaktowe użyte na stronie (spójne z treścią!)
-  const phoneE164 = '+48516466255';
-  const email = 'contact@arteonagency.com';
-
   const professionalService = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
+    '@id': `${BASE_URL}#local`,
     name: 'Arteon',
     url: `${BASE_URL}`,
     image: `${BASE_URL}/icon-512x512.png`,
-    telephone: phoneE164,
-    email,
+    telephone: '+48516466255',
+    email: 'contact@arteonagency.pl',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'ul. Jaśminowa 36',
       addressLocality: 'Zagacie',
       addressRegion: 'małopolskie',
       addressCountry: 'PL',
-      // postalCode: '—', // dodaj, gdy będziesz mieć
+      postalCode: '32-070',
     },
-    // lokalny wektor: wzmacnia Kraków i okolice (globalny masz w Organization w layout)
-    areaServed: 'Kraków i okolice',
+    parentOrganization: { '@id': `${BASE_URL}#organization` },
+
+    serviceArea: {
+      '@type': 'GeoCircle',
+      geoMidpoint: { '@type': 'GeoCoordinates', latitude: 50.0053746, longitude: 19.7094865 },
+      geoRadius: 50000,
+    },
+    areaServed: ['Kraków', 'Skawina', 'Czernichów', 'Liszki', 'Zabierzów', 'Wieliczka'],
+
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         opens: '08:00',
-        closes: '18:00',
+        closes: '16:00',
       },
     ],
+    hasMap:
+      'https://www.google.com/maps/place/Ja%C5%9Bminowa+36,+32-070+Zagacie/@49.955128,19.7525321,11z/data=!4m6!3m5!1s0x47165fee99b80287:0x35a17883ddf6b10c!8m2!3d50.0053746!4d19.7094865!16s%2Fg%2F11vl3bnz_y',
   };
 
   const breadcrumbs = {
@@ -158,8 +162,8 @@ export default function ContactPage() {
             },
             {
               title: 'Godziny otwarcia',
-              icon: <RiMapPinLine />,
-              description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8–18</p>,
+              icon: <RiMapPinTimeLine />,
+              description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8–16</p>,
             },
             {
               title: 'Lokalizacja',
@@ -172,6 +176,7 @@ export default function ContactPage() {
 
         <Gap size="sm" />
       </Wrapper>
+
       <ContactSchemas />
     </>
   );

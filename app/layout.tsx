@@ -26,6 +26,7 @@ const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
 const orgJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': `${SITE_URL}#organization`,
   name: 'Arteon',
   url: SITE_URL,
   logo: ORG_LOGO,
@@ -35,7 +36,7 @@ const orgJsonLd = {
       '@type': 'ContactPoint',
       contactType: 'customer support',
       telephone: '+48 516 466 255',
-      email: 'contact@arteonagency.com',
+      email: 'contact@arteonagency.pl',
       availableLanguage: ['pl'],
     },
   ],
