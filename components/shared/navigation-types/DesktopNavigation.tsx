@@ -245,7 +245,7 @@ export default function DesktopNavigation() {
                         <Wrapper>
                           <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="hidden gap-6 lg:grid" style={{ gridTemplateColumns: '1fr 1fr 2fr 1fr' }}>
                             {offerSections.map((section) => (
-                              <div key={section.key} className="rounded-xl border border-slate-200 p-4">
+                              <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
                                 <div className="mb-3">
                                   {section.hubHref ? (
                                     <Link
@@ -266,7 +266,7 @@ export default function DesktopNavigation() {
                                       <Link
                                         key={item.href + item.title}
                                         href={item.href}
-                                        className="group/link flex gap-3 rounded-lg px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                        className="group/link flex gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                       >
                                         {item.icon && <span className="mt-0.5 shrink-0">{item.icon}</span>}
                                         <span>
@@ -284,7 +284,7 @@ export default function DesktopNavigation() {
                                       <Link
                                         key={item.href + item.title}
                                         href={item.href}
-                                        className="group/link flex items-start gap-3 rounded-lg px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                        className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                       >
                                         {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
                                         <span>
@@ -300,7 +300,7 @@ export default function DesktopNavigation() {
 
                           <div className="grid gap-6 md:grid-cols-2 lg:hidden">
                             {offerSections.map((section) => (
-                              <div key={section.key} className="rounded-xl border border-slate-200 p-4">
+                              <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
                                 <div className="mb-3">
                                   {section.hubHref ? (
                                     <Link
@@ -321,7 +321,7 @@ export default function DesktopNavigation() {
                                       <Link
                                         key={item.href + item.title}
                                         href={item.href}
-                                        className="group/link flex gap-3 rounded-lg px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                        className="group/link flex gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                       >
                                         {item.icon && <span className="mt-0.5 shrink-0">{item.icon}</span>}
                                         <span>
@@ -339,7 +339,7 @@ export default function DesktopNavigation() {
                                       <Link
                                         key={item.href + item.title}
                                         href={item.href}
-                                        className="group/link flex items-start gap-3 rounded-lg px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                        className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                       >
                                         {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
                                         <span>

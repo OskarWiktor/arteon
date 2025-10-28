@@ -108,7 +108,7 @@ export default function SectionSteps({
           {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
             return (
               <li key={index} className="flex flex-col items-stretch">
-                <article className="flex h-full w-full flex-col rounded-xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
+                <article className="flex h-full w-full flex-col rounded-2xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
                   <div className="flex items-center">
                     {imageSrc && <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none mr-2 select-none" aria-hidden={imageAlt ? undefined : true} />}
 

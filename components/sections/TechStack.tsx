@@ -89,7 +89,7 @@ export default function TechStack() {
 
       <div
         ref={containerRef}
-        className="mt-6 overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+        className="mt-6 overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         aria-label="Przewijana lista technologii. Ustaw fokus, najedź lub dotknij, aby wstrzymać przewijanie."
         tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}

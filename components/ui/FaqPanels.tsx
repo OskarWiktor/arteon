@@ -94,7 +94,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
           <div
             key={index}
             className={[
-              'my-4 overflow-hidden rounded-xl border bg-white',
+              'my-4 overflow-hidden rounded-2xl border bg-white',
               'hover:border-indigo-300 hover:shadow-md',
               isOpen ? 'border-indigo-300' : 'border-gray-300',
               'focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-white',

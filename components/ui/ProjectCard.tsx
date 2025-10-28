@@ -11,9 +11,9 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
   return (
     <Link
       href={`/realizacje/${project.slug}`}
-      className="group block h-full rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+      className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
     >
-      <article className="flex h-full flex-col overflow-hidden rounded-xl bg-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+      <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
         <div className={`relative ${sizeClass} w-full`}>
           <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" quality={100} />
         </div>

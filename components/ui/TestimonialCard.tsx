@@ -9,7 +9,7 @@ type Props = { item: Testimonial };
 
 export default function TestimonialCard({ item }: Props) {
   return (
-    <figure className="flex h-full w-full flex-col justify-between rounded-xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
+    <figure className="flex h-full w-full flex-col justify-between rounded-2xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
       <blockquote>
         <StarRating value={item.rating} />
         <p className="mt-2 text-[#0A0A0A]">“{item.quote}”</p>

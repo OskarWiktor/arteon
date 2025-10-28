@@ -103,7 +103,7 @@ function FlowGroup({ items }: { items: any[] }) {
         if (b.type === 'quote') {
           return (
             <div key={`f-q-${i}`} className="not-prose my-6">
-              <figure className="rounded-xl bg-white p-6 shadow-md">
+              <figure className="rounded-2xl bg-white p-6 shadow-md">
                 <blockquote>
                   <p className="text-lg leading-relaxed">“{b.text}”</p>
                 </blockquote>

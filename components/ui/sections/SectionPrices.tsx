@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { RiCheckFill } from "react-icons/ri";
 import Button from '../Button';
 
 export type SectionPricesPlan = {
@@ -34,9 +35,9 @@ export default function SectionPrices({
   id = 'pricing',
   title = 'Przykładowe ceny',
   subtitle = 'Pakiety',
-  plans,
+  plans = [],
   note,
-  legalNote = 'Dokładne ceny ustalamy po zapoznaniu sie z indywidualnymi potrzebami',
+  legalNote = 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
 }: SectionPricesProps) {
   const headingId = `${id}-heading`;
   const subtitleId = subtitle ? `${id}-subtitle` : undefined;
@@ -46,19 +47,25 @@ export default function SectionPrices({
     <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className="w-full">
       <div className="mb-8">
         {subtitle && (
-          <span id={subtitleId} className="text-base tracking-wider text-[#5e5e5e] uppercase">
+          <span id={subtitleId} className="text-sm tracking-wider text-[#5e5e5e] uppercase">
             {subtitle}
           </span>
         )}
         {title && (
-          <h3 className="reveal-animation" id={headingId}>
+          <h3 className="reveal-animation mt-1 text-2xl font-semibold tracking-tight text-[#0a0a0a]" id={headingId}>
             {title}
           </h3>
         )}
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        {(plans ?? []).map((plan, idx) => {
+      <div
+        className="
+          grid grid-cols-1 gap-6
+          md:grid-cols-2
+          lg:grid-cols-3
+          "
+      >
+        {plans.map((plan, idx) => {
           const itemId = `${id}-plan-${idx}`;
           const itemHeadingId = `${itemId}-heading`;
           const itemPlatformId = plan.platform ? `${itemId}-platform` : undefined;
@@ -71,39 +78,61 @@ export default function SectionPrices({
               key={itemId}
               aria-labelledby={itemHeadingId}
               aria-describedby={itemDescribedBy}
-              className={`flex flex-col justify-between rounded-xl bg-white p-6 ${plan.lastPlan ? 'ring-2 ring-neutral-900' : 'ring-1 ring-neutral-200'}`}
+              className={[
+                'group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6',
+                'ring-1 ring-neutral-200 shadow-md transition duration-200',
+                'transition hover:-translate-y-0.5 hover:shadow-lg',
+                plan.lastPlan ? 'ring-2 ring-neutral-900 shadow-md' : '',
+              ].join(' ')}
             >
-              <div>
-                {plan.badgeLabel && (
-                  <div className="mb-2 inline-flex items-center gap-2">
-                    <span aria-hidden="true" className="h-2 w-2 border-r-[8px] border-b-[8px] border-l-[8px] border-r-transparent border-b-neutral-900 border-l-transparent" />
-                    <span className="text-xs font-semibold tracking-wider text-[#080808]">{plan.badgeLabel}</span>
-                  </div>
-                )}
+              {plan.badgeLabel && (
+                <div
+                  className="
+                    absolute -top-3 left-4 rounded-full
+                    bg-neutral-900 px-3 py-1 text-xs font-semibold tracking-wider text-white
+                    shadow-sm
+                  "
+                  aria-label="Wyróżniony plan"
+                >
+                  {plan.badgeLabel}
+                </div>
+              )}
 
-                <h4 id={itemHeadingId} className="reveal-animation">
+              <div>
+                <h4 id={itemHeadingId} className="reveal-animation text-xl font-semibold text-[#0a0a0a]">
                   {plan.name}
                 </h4>
 
                 {plan.platform && (
-                  <span id={itemPlatformId} className="pt-1 text-base text-[#5e5e5e]">
+                  <span id={itemPlatformId} className="mt-1 block text-sm text-[#5e5e5e]">
                     {plan.platform}
                   </span>
                 )}
 
-                <p id={itemPriceId} className="pt-4 pb-2">
-                  <span className="text-xl">{plan.price} </span>
-                  <span className="font-normal text-[#5e5e5e]">brutto</span>
+                <p id={itemPriceId} className="mt-4">
+                  <span className="text-2xl font-semibold tracking-tight text-[#0a0a0a]">{plan.price}</span>{' '}
+                  <span className="align-baseline text-sm font-normal text-[#5e5e5e]">brutto</span>
                 </p>
 
-                <span id={itemDescId} className="text-base text-[#5e5e5e]">
+                <p id={itemDescId} className="mt-2 text-[15px] leading-relaxed text-[#3a3a3a]">
                   {plan.description}
-                </span>
+                </p>
 
-                <ul className="mt-6 list-disc space-y-2 pl-5 text-sm marker:text-[#0A0A0A]" role="list">
+                <ul className="mt-6 space-y-3" role="list">
                   {(plan.features ?? []).map((f, i) => (
-                    <li key={`${itemId}-f-${i}`} className="leading-relaxed">
-                      {f}
+                    <li key={`${itemId}-f-${i}`} className="flex items-start gap-3">
+                      <span
+                        className="
+                          mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full
+                          ring-1 ring-neutral-300
+                          group-hover:ring-neutral-400
+                        "
+                        aria-hidden="true"
+                        title="Zawarte w planie"
+                      >
+                        <RiCheckFill className="h-3.5 w-3.5" />
+                      </span>
+                      <span className="text-sm leading-relaxed text-[#222]">{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -112,7 +141,7 @@ export default function SectionPrices({
               {(plan.btnOne && plan.btnOneLink) || (plan.btnTwo && plan.btnTwoLink) ? (
                 <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label={`Działania planu: ${plan.name}`}>
                   {plan.btnOne && plan.btnOneLink && (
-                    <Button link={plan.btnOneLink} variant="dark" arrow>
+                    <Button link={plan.btnOneLink} variant={plan.lastPlan ? 'dark' : 'accent'} arrow>
                       {plan.btnOne}
                     </Button>
                   )}
@@ -129,8 +158,15 @@ export default function SectionPrices({
       </div>
 
       {note && (
-        <div className="mt-8 rounded-xl bg-white p-6 ring-1 ring-neutral-200" role="note" aria-label="Informacja">
-          {note.text}
+        <div
+          className="
+            mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6
+            ring-1 ring-neutral-200 shadow-sm
+          "
+          role="note"
+          aria-label="Informacja"
+        >
+          <div className="text-[15px] leading-relaxed text-[#3a3a3a]">{note.text}</div>
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">
               <Button link={note.ctaLink} variant="accent" arrow>
@@ -141,7 +177,7 @@ export default function SectionPrices({
         </div>
       )}
 
-      {legalNote && <p className="pt-4 text-[#5e5e5e]">{legalNote}</p>}
+      {legalNote && <p className="pt-4 text-sm leading-relaxed text-[#5e5e5e]">{legalNote}</p>}
     </section>
   );
 }

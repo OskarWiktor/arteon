@@ -19,7 +19,7 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
     <section
       aria-labelledby={headingId}
       aria-describedby={descId}
-      className="flex h-full flex-col rounded-xl bg-white px-5 py-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-6 md:py-4"
+      className="flex h-full flex-col rounded-2xl bg-white px-5 py-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-6 md:py-4"
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
       <div className="flex items-center gap-2">

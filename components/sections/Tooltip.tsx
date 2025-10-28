@@ -119,7 +119,7 @@ export default function Tooltip({ children, title, description, placement = 'top
             exit={{ opacity: 0, y: r ? 0 : placement === 'top' ? 6 : -6 }}
             transition={{ duration: 0.18, ease: 'easeOut' }}
             className={[
-              'absolute z-[60] max-w-xs rounded-lg bg-black px-3 py-2 text-sm text-white shadow-lg',
+              'absolute z-[60] max-w-xs rounded-xl bg-black px-3 py-2 text-sm text-white shadow-lg',
               placement === 'top' ? 'top-full left-1/2 mt-2 -translate-x-1/2' : 'bottom-full left-1/2 mb-2 -translate-x-1/2',
             ].join(' ')}
             onMouseEnter={() => setOpen(true)}

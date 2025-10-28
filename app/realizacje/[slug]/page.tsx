@@ -64,7 +64,7 @@ const defaultCTA = {
 
 function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
-    <div className="rounded-xl bg-white p-4 shadow-md">
+    <div className="rounded-2xl bg-white p-4 shadow-md">
       <p className="h5">{value}</p>
       <p className="text-[#5e5e5e]">{label}</p>
       {note && <p className="mt-2">{note}</p>}
@@ -277,7 +277,7 @@ export default function ProjectPage({ params }: PageProps) {
               <SectionInfo title="Proces">
                 <ul className="grid gap-3 md:grid-cols-2">
                   {project.process_steps.map((step, i) => (
-                    <li key={i} className="rounded-xl bg-white p-3 shadow-md">
+                    <li key={i} className="rounded-2xl bg-white p-3 shadow-md">
                       <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#5e5e5e] text-xs font-bold text-[#5e5e5e]">{i + 1}</span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
                     </li>
@@ -363,7 +363,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.testimonial?.quote ? (
             <>
               <SectionInfo title="Ocena współpracy">
-                <blockquote className="rounded-xl bg-white p-6 shadow-md">
+                <blockquote className="rounded-2xl bg-white p-6 shadow-md">
                   <p className="text-lg leading-relaxed">“{project.testimonial.quote}”</p>
                   {(project.testimonial.author || project.testimonial.role) && (
                     <footer className="mt-2">

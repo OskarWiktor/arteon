@@ -27,7 +27,7 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
   };
 
   return (
-    <figure className={`group rounded-xl border border-black/10 bg-gradient-to-b from-[#0b0b0c] to-[#121215] text-[#e7e7ea] shadow-sm ${className}`}>
+    <figure className={`group rounded-2xl border border-black/10 bg-gradient-to-b from-[#0b0b0c] to-[#121215] text-[#e7e7ea] shadow-sm ${className}`}>
       <div className="flex items-center justify-between gap-3 rounded-t-xl border-b border-white/10 px-4 py-2">
         <div className="flex items-center gap-2 text-xs text-white/70">
           {language ? <span className="inline-block rounded bg-white/10 px-2 py-0.5">{language}</span> : null}

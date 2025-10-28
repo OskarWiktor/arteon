@@ -217,7 +217,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 {SECTIONS.map((sec) => {
                   const expanded = openKeys[sec.key];
                   return (
-                    <div key={sec.key} className="mb-1 rounded-lg border border-neutral-200">
+                    <div key={sec.key} className="mb-1 rounded-xl border border-neutral-200">
                       <div className="flex items-center justify-between">
                         {sec.hubHref ? (
                           <Link
@@ -265,7 +265,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                   <Link
                                     href={it.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="group flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                                   >
                                     {it.icon && <span className="text-[#5e5e5e] group-hover:text-slate-600">{it.icon}</span>}
                                     <span>{it.title}</span>
@@ -292,7 +292,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                        className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
@@ -314,7 +314,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                        className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
@@ -334,7 +334,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href="/kontakt"
                       onClick={() => setIsOpen(false)}
-                      className="rounded-xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="rounded-2xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       Umów konsultację
                     </Link>

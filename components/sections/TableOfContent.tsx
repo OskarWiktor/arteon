@@ -76,7 +76,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
         const isActive = activeId === i.id;
         return (
           <li key={i.id} className={i.level === 3 ? 'border-l border-black/10 pl-3' : ''}>
-            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`flex items-center gap-1 rounded-xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
+            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`flex items-center gap-1 rounded-2xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
               <span className="line-clamp-1 text-[15px]">{i.text}</span>
             </a>
           </li>
@@ -89,7 +89,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
     <>
       {/* Mobile */}
       <aside className={`block lg:hidden ${widthClass}`}>
-        <div className="relative rounded-lg border border-black/10 bg-white/95 shadow-sm backdrop-blur">
+        <div className="relative rounded-xl border border-black/10 bg-white/95 shadow-sm backdrop-blur">
           <div className="flex items-center justify-between px-3 py-2">
             <p className="text-xs font-medium tracking-wider text-[#5e5e5e] uppercase">
               Spis treści <span className="opacity-60">({items.length})</span>
@@ -112,7 +112,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
 
       {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
-        <div className="rounded-xl border border-black/10 bg-white p-3 shadow-sm">
+        <div className="rounded-2xl border border-black/10 bg-white p-3 shadow-sm">
           <p className="mb-2 text-xs tracking-wider text-[#5e5e5e] uppercase">Spis treści</p>
           <nav aria-label="Spis treści">
             <LinkList />
