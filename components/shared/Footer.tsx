@@ -121,8 +121,8 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <h3 className='h6 mt-4'>Inne</h3>
-                        <ul className="flex flex-col gap-2 text-sm">
+            <h3 className="h6 mt-4">Inne</h3>
+            <ul className="flex flex-col gap-2 text-sm">
               {otherLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link

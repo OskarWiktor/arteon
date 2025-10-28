@@ -1,20 +1,13 @@
 // lib/schema.ts
 export function buildServiceSchema(params: {
-  baseUrl: string;        // np. https://www.arteonagency.pl
-  path: string;           // np. /uslugi/marketing/audyt-seo
-  serviceName: string;    // np. "Audyt SEO"
-  description: string;    // krótki opis usługi
+  baseUrl: string; // np. https://www.arteonagency.pl
+  path: string; // np. /uslugi/marketing/audyt-seo
+  serviceName: string; // np. "Audyt SEO"
+  description: string; // krótki opis usługi
   availableLanguages?: string[];
   includeServiceChannel?: boolean;
 }) {
-  const {
-    baseUrl,
-    path,
-    serviceName,
-    description,
-    availableLanguages = ['pl'],
-    includeServiceChannel = true,
-  } = params;
+  const { baseUrl, path, serviceName, description, availableLanguages = ['pl'], includeServiceChannel = true } = params;
 
   const url = `${baseUrl}${path}`;
 
@@ -46,8 +39,7 @@ export function buildServiceSchema(params: {
       '@type': 'ServiceChannel',
       serviceUrl: `${baseUrl}/kontakt`,
       availableLanguage: availableLanguages,
-      description:
-        'Usługa świadczona zdalnie dla klientów polskojęzycznych na całym świecie.',
+      description: 'Usługa świadczona zdalnie dla klientów polskojęzycznych na całym świecie.',
     };
   }
 

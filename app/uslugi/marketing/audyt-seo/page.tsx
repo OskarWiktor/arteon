@@ -22,13 +22,11 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
 export const metadata = {
   title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
-  description:
-    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
+  description: 'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
   alternates: { canonical: `${BASE}/uslugi/marketing/audyt-seo` },
   openGraph: {
     title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
-    description:
-      'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
+    description: 'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
     url: `${BASE}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
@@ -48,8 +46,7 @@ function ServiceSchema() {
     baseUrl: BASE,
     path: '/uslugi/marketing/audyt-seo',
     serviceName: 'Audyt SEO',
-    description:
-      'Audyt SEO dla stron i sklepów internetowych — analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
+    description: 'Audyt SEO dla stron i sklepów internetowych — analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
