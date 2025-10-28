@@ -1,13 +1,146 @@
 {
   "articles": [
     {
+      "slug": "jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow",
+      "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?",
+      "excerpt": "Identyfikacja wizualna buduje wiarygodność, skraca decyzje zakupowe i wzmacnia rozpoznawalność. Zobacz, jak logo, kolorystyka i typografia wpływają na zaufanie klientów.",
+      "category": ["Design", "Branding"],
+      "tags": ["identyfikacja wizualna", "identyfikacja wizualna firmy", "logo", "kolorystyka", "typografia", "brandbook", "zaufanie klientów", "branding", "spójność wizualna"],
+      "seo": {
+        "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów? | Arteon",
+        "description": "Spójna identyfikacja wizualna, logo, kolorystyka i typografia wzmacniają wiarygodność i skracają decyzje zakupowe. Praktyczne wskazówki dla firm.",
+        "canonical": "https://www.arteonagency.pl/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow"
+      },
+      "cover": "/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.jpg",
+      "author": { "name": "Oskar Wiktor" },
+      "datePublished": "2025-10-28",
+      "dateModified": "2025-10-28",
+      "readingTime": 12,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p><strong>Identyfikacja wizualna</strong> to język, którym Twoja firma komunikuje się z otoczeniem. To sposób, w jaki klient rozpoznaje firmę, zapamiętuje ją i podejmuje decyzję o współpracy.</p></br><p>Każdy <strong>kolor</strong>, <strong>krój pisma</strong> czy <strong>układ graficzny</strong> wpływa na emocje odbiorcy. <em>Dobrze zaprojektowana</em> i przemyślana identyfikacja wizualna przyciąga uwagę, zdobywa zaufanie i lojalność klientów oraz tworzy <strong>spójny wizerunek marki</strong> — zarówno na stronie internetowej, jak i w mediach społecznościowych czy materiałach drukowanych.</p></br><p>W tym artykule wyjaśniamy, <strong>czym dokładnie jest identyfikacja</strong>, jak wpływa na postrzeganie marki, decyzje zakupowe klientów oraz <em>dlaczego stanowi kluczowy element</em> budowania wiarygodności.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Czym jest identyfikacja wizualna i dlaczego buduje zaufanie</h2><p><strong>Identyfikacja wizualna</strong> to zbiór elementów graficznych, które nadają firmie charakter i spójność. Obejmuje między innymi <strong>logo</strong>, <strong>kolorystykę</strong>, <strong>typografię</strong>, układ graficzny, styl zdjęć i sposób prezentacji treści.</p></br><p>Wszystkie te elementy tworzą <em>jeden system</em>, który umożliwia utrwalenie marki w świadomości odbiorców.</p></br><p><strong>Zaufanie do marki</strong> jest wynikiem powtarzalnych, spójnych doświadczeń wizualnych. Gdy klient widzi te same kolory, układy i proporcje w różnych miejscach — na stronie, wizytówce, profilu w mediach społecznościowych — podświadomie odbiera firmę jako <strong>stabilną i godną zaufania</strong>. Taka spójność przekłada się na <em>wiarygodność</em>, a wiarygodność na decyzję o skontaktowaniu się z Twoją firmą.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak dobrze zaprojektowana identyfikacja wizualna wpływa na decyzje zakupowe klientów?</h2><p><strong>Branding marki</strong> ma bezpośredni wpływ na to, jak szybko klient podejmuje decyzję o kontakcie lub zakupie. <em>Estetyczny i łatwy do zapamiętania wizerunek</em> budzi zaufanie klientów, ponieważ jest oznaką profesjonalizmu i dbałości o szczegóły.</p></br><p>Badania potwierdzają, że odbiorcy oceniają wiarygodność firmy już w ciągu <strong>kilku sekund</strong> od wejścia na stronę internetową. Jeśli strona jest przejrzysta, kolory harmonijne, a teksty czytelne — klient zostaje dłużej. Gdy elementy wizualne są przypadkowe lub niespójne, <em>odruchowo pojawia się niepewność</em>.</p></br><p><strong>Spójny system identyfikacji</strong> buduje rozpoznawalność marki. Dzięki temu klient szybciej rozumie, kim jesteś, co oferujesz i jakie wartości reprezentujesz. Dobra identyfikacja pełni więc nie tylko funkcję <em>estetyczną</em>, lecz przede wszystkim <strong>strategiczną</strong> — prowadzi odbiorcę do decyzji o kontakcie poprzez zaufanie i klarowny przekaz.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "image",
+          "src": "/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.jpg",
+          "alt": "Różne wersje logo firmy",
+          "ratio": "16/9",
+          "quality": 90,
+          "caption": "Różne wersje logo firmy",
+          "breakAfter": false
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Logo jako rozpoznawalny, najważniejszy element identyfikacji wizualnej</h2><p><strong>Logo</strong> jest najważniejszym elementem całościowej identyfikacji marki. To znak, który reprezentuje firmę we wszystkich kanałach komunikacji. Jego rola nie ogranicza się do dekoracji — <em>logo jest symbolem tożsamości</em> i pierwszym elementem, który kreuje wizerunek marki w świadomości konsumentów.</p></br><p>Dobrze zaprojektowane logo charakteryzuje się <strong>prostotą</strong>, <strong>czytelnością</strong> i możliwością zastosowania w różnych formatach. Powinno zachować czytelność zarówno na stronie internetowej, jak i w nagłówku dokumentu, na wizytówce czy w stopce e-maila. Logo, które wygląda dobrze tylko w jednym miejscu, <em>nie spełnia swojej roli</em>.</p></br><p>Projektując znak, warto pamiętać, że jego zadaniem jest <strong>ułatwienie rozpoznawalności</strong>. Logo, które jest spójne z kolorystyką i typografią firmy, <em>wzmacnia wiarygodność</em> i zapada w pamięć. To element, który — w połączeniu z konsekwentną komunikacją — buduje <strong>długoterminową rozpoznawalność</strong> i lojalność klientów.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Kolorystyka i typografia, które wzmacniają wizerunek marki</h2><p><strong>Kolory</strong> mają ogromny wpływ na emocje odbiorców. Chłodne barwy, takie jak <em>niebieski</em> czy <em>szary</em>, często kojarzą się z profesjonalizmem, bezpieczeństwem i technologią. Ciepłe odcienie, jak <em>pomarańcz</em> czy <em>żółć</em>, wywołują skojarzenia z energią i dostępnością.</p></br><p>Kluczowe jest jednak nie to, jaki kolor wybierzesz, ale to, <strong>jak konsekwentnie będziesz go używać</strong>. Stała paleta kolorów tworzy <em>rozpoznawalny kod wizualny</em>. Gdy odbiorca widzi te same odcienie w różnych miejscach, szybciej identyfikuje firmę. Z kolei zbyt duża liczba barw lub przypadkowe odcienie mogą <strong>osłabić postrzeganą spójność</strong>.</p></br><p><strong>Typografia</strong> odgrywa podobną rolę. Krój pisma to jeden z najbardziej niedocenianych, a jednocześnie kluczowych elementów identyfikacji. Odpowiednio dobrane czcionki wpływają na <strong>czytelność komunikatu</strong> i <em>emocje odbiorcy</em>. Marka o poważnym profilu zyska na prostych, stabilnych krojach; marka kreatywna może pozwolić sobie na subtelne ozdobniki — o ile nie zaburzają one czytelności.</p></br><p>Zarówno <strong>kolorystyka</strong>, jak i <strong>typografia</strong> powinny pracować na <em>spójny obraz marki</em> w świadomości odbiorcy.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Księga identyfikacji wizualnej jako narzędzie spójności Twojej marki</h2><p><strong>Księga identyfikacji wizualnej</strong> (brandbook) to dokument, który określa zasady stosowania wszystkich elementów wizerunku firmy. Zawiera wytyczne dotyczące <strong>logo</strong>, <strong>kolorystyki</strong>, <strong>typografii</strong>, układów graficznych oraz przykładów zastosowań w różnych materiałach.</p></br><p>Taka księga jest <em>niezbędna</em>, jeśli z marką pracuje kilka osób — np. grafik, projektant strony internetowej, drukarnia i agencja marketingowa. Dzięki wspólnym zasadom cała komunikacja wizualna i wszystkie materiały pozostają <strong>spójne</strong>, niezależnie od tego, kto je tworzy.</p></br><p>Brandbook <strong>chroni firmę</strong> przed przypadkowymi zmianami i zniekształceniami. Pozwala utrzymać spójny system wizualny przez wiele lat, co ma bezpośredni wpływ na <em>zaufanie odbiorców</em>. Klient, który rozpoznaje markę po jej estetyce, szybciej utożsamia ją z profesjonalizmem i stabilnością.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "image",
+          "src": "/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/proces-tworzenia-ukladu-strony.jpg",
+          "alt": "Proces tworzenia układu strony internetowej",
+          "ratio": "16/9",
+          "quality": 90,
+          "caption": "Proces tworzenia układu strony internetowej",
+          "breakAfter": false
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak wyróżnić się przez spójny branding na tle konkurencji</h2><p><strong>Wyróżnienie się</strong> na rynku nie polega wyłącznie na oryginalnym logo. Kluczowe znaczenie ma sposób, w jaki marka łączy wszystkie elementy wizualne w <em>spójny, rozpoznawalny styl</em>. <strong>Analiza konkurencji</strong> to pierwszy krok do zrozumienia, jak wygląda rynek i w jaki sposób można zbudować własną tożsamość.</p></br><p>Jeśli większość firm w branży używa podobnych kolorów i motywów, warto poszukać <strong>kontrastu</strong>, który pozostanie zgodny z wartościami marki. Unikalność nie powinna wynikać z nadmiaru efektów, lecz z <em>przemyślanej prostoty</em>. Marka, która komunikuje się konsekwentnie, jest odbierana jako <strong>dojrzała</strong> i <strong>godna zaufania</strong>.</p></br><p>Różnicę często tworzą <em>detale</em> — ton komunikacji, kompozycja grafik, sposób prezentacji treści. Odbiorcy zapamiętują marki, które mają własny rytm i nie zmieniają stylu przy każdej kampanii. Właśnie ta <strong>stabilność wizualna</strong> sprawia, że firma staje się wiarygodna.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Elementy identyfikacji wizualnej marki, które klienci zauważają w pierwszej kolejności</h2><p>Klient ocenia Twoją markę w ciągu <strong>kilku sekund</strong>. Jego uwagę przyciągają <em>powtarzalne, charakterystyczne elementy</em>: układ strony, kolor przycisków, ton komunikacji i ogólna czytelność. Identyfikacja wizualna obejmuje nie tylko logo, ale również to, <strong>jak wygląda przycisk „Zamów”</strong>, jak podpisane są zdjęcia oraz jak prezentowane są nagłówki i wezwania do działania.</p></br><p>Na zaufanie wpływają również elementy drukowane — wizytówki, papier firmowy, katalogi czy opakowania. <strong>Spójne projekty</strong> w każdym z tych obszarów wzmacniają wizerunek i ułatwiają zapamiętanie komunikacji marki.</p></br><p>Przed rozpoczęciem prac warto opracować <strong>jasny harmonogram wdrożenia</strong> identyfikacji wizualnej:</p></br><ul class='list-disc ml-5'><li><strong>Projekt logo</strong> i palety kolorów,</li><li><strong>Opracowanie typografii</strong> i układów graficznych,</li><li><strong>Przygotowanie materiałów marketingowych</strong> i reklamowych,</li><li><strong>Ujednolicenie wyglądu</strong> strony internetowej i mediów społecznościowych.</li></ul></br><p>Taka kolejność zapewnia <em>logiczny porządek</em> i ułatwia wdrożenie pełnego systemu wizualnego w firmie.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Dlaczego inwestycja w system identyfikacji wizualnej przynosi realne korzyści</h2><p>Inwestycja w profesjonalną identyfikację wizualną to inwestycja w <strong>zaufanie</strong>, <strong>widoczność</strong> i <strong>konwersję</strong>.</p></br><p><strong>Identyfikacja wizualna</strong> to potężne narzędzie marketingowe. Pomaga zwiększać rozpoznawalność i <em>skraca czas decyzji zakupowej</em>. Dzięki niej odbiorcy wiedzą, że mają do czynienia z firmą o ustalonych zasadach i wysokiej kulturze wizualnej.</p></br><p>Dobrze zaprojektowana identyfikacja wizualna to <strong>system</strong>, którego efekty można mierzyć przez:</p></br><ul class='list-disc ml-5'><li><strong>wzrost liczby zapytań</strong> ofertowych,</li><li><strong>większy współczynnik konwersji</strong>.</li></ul></br><p>Te wskaźniki przekładają się na <em>realny wynik finansowy</em>, co sprawia, że spójna identyfikacja wizualna jest jednym z najbardziej opłacalnych elementów strategii budowy rozpoznawalności.</p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Jak przebiega proces tworzenia tożsamości marki?</h2><p>Profesjonalna identyfikacja wizualna powstaje w kilku etapach, które pozwalają połączyć <strong>analizę</strong>, <strong>strategię</strong> i <strong>projekt</strong> w spójną całość:</p></br><ul class='list-disc ml-5'><li><strong>Analiza marki i konkurencji</strong> – zrozumienie, kim jest marka, jakie ma wartości i jaka jest jej konkurencja.</li><li><strong>Strategia wizualna</strong> – określenie kierunku estetycznego, tonu komunikacji i emocji, które marka ma wywoływać.</li><li><strong>Projektowanie elementów</strong> – stworzenie logo, palety kolorów, typografii i układów graficznych.</li><li><strong>Księga identyfikacji wizualnej</strong> – zapisanie zasad użycia każdego elementu w różnych kontekstach.</li><li><strong>Wdrożenie</strong> – zastosowanie systemu w materiałach cyfrowych i drukowanych.</li></ul></br><p>Współpraca z <em>agencją brandingową</em> ułatwia zachowanie spójności na każdym etapie. Zespół projektowy dba o to, aby wizualna tożsamość marki odpowiadała jej wartościom i była <strong>trwała w czasie</strong>.</p></br><p><a class='inline-link' href='/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'>👉 Zobacz ofertę projektów identyfikacji wizualnej</a></p>",
+          "breakAfter": true
+        },
+
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Podsumowanie – jak dobra identyfikacja wizualna firmy buduje zaufanie</h2><p><strong>Dobrze zaprojektowana identyfikacja wizualna</strong> firmy to najlepszy sposób na budowę pozytywnego wizerunku marki. <em>Spójna</em> identyfikacja sprawia, że klient łatwiej rozpoznaje firmę, a to <strong>buduje zaufanie</strong> i zwiększa szansę na skorzystanie z Twojej oferty.</p></br><p><strong>Najważniejsze zasady</strong> wpływające na spójność wizualną:</p></br><ul class='list-disc ml-5'><li>Stosuj <strong>przemyślaną kolorystykę</strong> i <strong>czytelną typografię</strong>.</li><li>Dbaj o <strong>jakość materiałów</strong> i ich zgodność z księgą identyfikacji.</li><li>Regularnie <strong>aktualizuj elementy wizualne</strong>, nie zmieniając stylu marki.</li><li>Zachowuj <strong>spójność</strong> we wszystkich kanałach komunikacji.</li><li>Współpracuj z <em>profesjonalistami</em>, którzy rozumieją proces budowania silnej marki.</li></ul></br><p>Identyfikacja wizualna to <strong>inwestycja, która procentuje</strong> przez lata. Wyróżnij się na tle swojej konkurencji i zbuduj każdy element identyfikacji wizualnej z nami.</p></br><p><a class='inline-link' href='/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'>👉 Zobacz ofertę identyfikacji wizualnej</a><br/><a class='inline-link' href='/uslugi/projekty-graficzne/projekt-logo'>👉 Zobacz ofertę projektu logo</a><br/><a class='inline-link' href='/uslugi/projekty-graficzne/projekt-graficzny-strony'>👉 Zobacz projekt graficzny strony</a></p>",
+          "breakAfter": true
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ile trwa przygotowanie identyfikacji wizualnej?",
+          "answer": "Średni czas realizacji wynosi od 1 do 3 tygodni, w zależności od liczby elementów i stopnia zaawansowania projektu."
+        },
+        {
+          "question": "Od czego zależy koszt projektu?",
+          "answer": "Cena zależy od zakresu — prosta identyfikacja z logo i podstawową paletą kolorów jest tańsza niż rozbudowany system z pełną księgą i materiałami promocyjnymi."
+        },
+        {
+          "question": "Czy można odświeżyć istniejącą identyfikację bez rebrandingu?",
+          "answer": "Tak, możliwe jest dopasowanie obecnej identyfikacji do nowych trendów lub rozbudowanie jej o brakujące elementy, zachowując dotychczasowe logo czy inne elementy."
+        },
+        {
+          "question": "Jakie materiały warto zlecić w pierwszej kolejności?",
+          "answer": "W głównej mierze jest to zależne od Twojej branży. Przeważnie najważniejsze elementy to logo, wizytówki, papier firmowy i szablony do mediów społecznościowych. Te materiały są najczęściej widziane przez klientów i kształtują pierwsze wrażenie."
+        }
+      ],
+      "cta": {
+        "title": "Zaprojektujmy spójny system identyfikacji wizualnej",
+        "description": "Logo, paleta kolorów, typografia i brandbook, które budują zaufanie i rozpoznawalność Twojej marki.",
+        "primaryLabel": "Zamów wycenę",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Zobacz ofertę",
+        "secondaryLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "backgroundImage": "/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.jpg",
+        "overlay": "black"
+      }
+    },
+
+    {
       "slug": "dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic",
-      "title": "Dlaczego strona internetowa nie wyświetla się w Google - i jak to naprawić",
+      "title": "Dlaczego strona internetowa nie wyświetla się w Google - i jak to naprawić?",
       "excerpt": "Twoja strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania Google. Kompletny przewodnik.",
       "category": ["SEO", "Widoczność"],
       "tags": ["google", "indeksacja", "google search console", "pozycjonowanie", "robot google", "widoczność strony", "sitemap", "plik robots.txt", "algorytm google", "strona internetowa"],
       "seo": {
-        "title": "Dlaczego strona internetowa nie pojawia się w Google? | Arteon",
+        "title": "Dlaczego strona internetowa nie wyświetla się w Google - i jak to naprawić? | Arteon",
         "description": "Twoja strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania Google. Kompletny przewodnik.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic"
       },
@@ -213,11 +346,11 @@
           "breakAfter": false
         },
 
-{
-  "type": "richtext",
-  "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Zrób audyt SEO Twojej strony</h2> <p>Brak widoczności strony w Google to częsty problem, który skutkuje mniejszą liczbą klientów. Jeśli mimo wszystkich działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt SEO techniczny i contentowy.</p><p><strong>Analiza obejmuje:</strong></p><ul class='list-disc ml-5 mb-4'><li>Weryfikację indeksacji witryny,</li><li>Sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>Ocenę szybkości (Core Web Vitals),</li><li>Analizę treści i słów kluczowych,</li><li>Rekomendacje zmian i plan działań.</li></ul><p>👉 Skontaktuj się z nami — przeprowadzimy kompleksowy audyt SEO i wskażemy dokładnie, co blokuje Twoją widoczność według aktualnych wytycznych Google.</p><p>Efekt? Twoja strona zacznie się pojawiać tam, gdzie szukają Cię klienci.</p><div class='mt-6'><a href='/uslugi/marketing/audyt-seo' class='hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500 transition w-fit inline-flex rounded-2xl items-center font-medium text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2'>Zobacz ofertę audytu SEO</a></div>",
-  "breakAfter": true
-}
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Zrób audyt SEO Twojej strony</h2> <p>Brak widoczności strony w Google to częsty problem, który skutkuje mniejszą liczbą klientów. Jeśli mimo wszystkich działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt SEO techniczny i contentowy.</p><p><strong>Analiza obejmuje:</strong></p><ul class='list-disc ml-5 mb-4'><li>Weryfikację indeksacji witryny,</li><li>Sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>Ocenę szybkości (Core Web Vitals),</li><li>Analizę treści i słów kluczowych,</li><li>Rekomendacje zmian i plan działań.</li></ul><p>👉 Skontaktuj się z nami — przeprowadzimy kompleksowy audyt SEO i wskażemy dokładnie, co blokuje Twoją widoczność według aktualnych wytycznych Google.</p><p>Efekt? Twoja strona zacznie się pojawiać tam, gdzie szukają Cię klienci.</p><div class='mt-6'><a href='/uslugi/marketing/audyt-seo' class='hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500 transition w-fit inline-flex rounded-2xl items-center font-medium text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2'>Zobacz ofertę audytu SEO</a></div>",
+          "breakAfter": true
+        }
       ],
       "cta": {
         "title": "Zróbmy audyt SEO Twojej strony",

@@ -116,7 +116,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
               aria-expanded={isOpen}
               aria-controls={panelId}
             >
-              <h4 className="h6">{item.question}</h4>
+              <h3 className="h6">{item.question}</h3>
               <span className="ml-2" aria-hidden="true">
                 {isOpen ? <FiMinus /> : <FiPlus />}
               </span>

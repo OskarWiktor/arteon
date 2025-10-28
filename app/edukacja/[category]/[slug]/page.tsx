@@ -35,7 +35,6 @@ function articleUrl(category: string, slug: string) {
   return `${siteUrl}/edukacja/${category}/${slug}`;
 }
 
-/* ---------- JSON-LD builders ---------- */
 function jsonLd(article: Article) {
   const canonicalCat = getPrimaryCategorySlug(article);
   const url = articleUrl(canonicalCat, article.slug);
@@ -63,14 +62,12 @@ function jsonLd(article: Article) {
   } as const;
 }
 
-/* ---------- Aspect helper ---------- */
 function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
   if (ratio === 'auto') return <div className="relative overflow-hidden rounded-2xl border border-black/10">{children}</div>;
   const map: Record<string, string> = { '16/9': 'aspect-square md:aspect-[16/9]', '4/3': 'aspect-[4/3]', '1/1': 'aspect-square' };
   return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
-/* ---------- FlowGroup: jeden kontener dla richtext/code/table/quote ---------- */
 function FlowGroup({ items }: { items: any[] }) {
   return (
     <div className="prose prose-lg max-w-none">
@@ -123,7 +120,6 @@ function FlowGroup({ items }: { items: any[] }) {
   );
 }
 
-/* ---------- Content blocks: grupowanie w sekcje + Gap na końcu każdej sekcji ---------- */
 function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
   if (!blocks?.length) return null;
 
@@ -157,7 +153,6 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
   return (
     <>
       {groups.map((g, i) => {
-        // FLOW SECTION (richtext/code/table/quote w jednym kontenerze)
         if (g.kind === 'flow') {
           return (
             <div key={`grp-flow-${i}`}>
@@ -167,7 +162,6 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
           );
         }
 
-        // SINGLE SECTION (image / imageText)
         const b = g.items[0];
 
         if (b.type === 'image') {
@@ -240,14 +234,12 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
           );
         }
 
-        // nieznane typy
         return <div key={`grp-unknown-${i}`} />;
       })}
     </>
   );
 }
 
-/* ---------- Static params & metadata ---------- */
 export async function generateStaticParams() {
   const items = getAllArticles();
   return items.map((a) => ({ category: getPrimaryCategorySlug(a), slug: a.slug }));
@@ -278,7 +270,6 @@ export async function generateMetadata({ params }: { params: { category: string;
   };
 }
 
-/* ---------- Page ---------- */
 export default function ArticlePage({ params }: { params: { category: string; slug: string } }) {
   const article = findArticleBySlug(params.slug);
   if (!article) return notFound();
@@ -326,7 +317,6 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             </>
           ) : null}
 
-          {/* JSON-LD */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(article)) }} />
           <script
             type="application/ld+json"
