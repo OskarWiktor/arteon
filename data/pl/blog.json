@@ -14,7 +14,7 @@
       "cover": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic.jpg",
       "author": { "name": "Oskar Wiktor" },
       "datePublished": "2025-10-17",
-      "dateModified": "2025-10-17",
+      "dateModified": "2025-10-28",
       "readingTime": 13,
       "contentBlocks": [
         {
@@ -213,14 +213,14 @@
           "breakAfter": false
         },
 
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Zrób audyt strony pod kątem SEO</h2><p>Brak widoczności strony w Google to częsty problem. Jeśli mimo wszystkich działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt techniczny i contentowy.</p></br><p><strong>Analiza obejmuje:</strong></p></br><ul class='list-disc ml-5'><li>weryfikację indeksacji witryny,</li><li>sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>ocenę szybkości (Core Web Vitals),</li><li>analizę treści i słów kluczowych,</li><li>rekomendacje zmian.</li></ul></br><p>👉 Skontaktuj się z nami — przeprowadzimy kompleksowy audyt SEO i wskażemy dokładnie, co blokuje Twoją widoczność według aktualnych wytycznych Google.</br>Efekt? Twoja strona zacznie się pojawiać tam, gdzie szukają Cię klienci.</p>",
-          "breakAfter": true
-        }
+{
+  "type": "richtext",
+  "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Zrób audyt SEO Twojej strony</h2> <p>Brak widoczności strony w Google to częsty problem, który skutkuje mniejszą liczbą klientów. Jeśli mimo wszystkich działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt SEO techniczny i contentowy.</p><p><strong>Analiza obejmuje:</strong></p><ul class='list-disc ml-5 mb-4'><li>Weryfikację indeksacji witryny,</li><li>Sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>Ocenę szybkości (Core Web Vitals),</li><li>Analizę treści i słów kluczowych,</li><li>Rekomendacje zmian i plan działań.</li></ul><p>👉 Skontaktuj się z nami — przeprowadzimy kompleksowy audyt SEO i wskażemy dokładnie, co blokuje Twoją widoczność według aktualnych wytycznych Google.</p><p>Efekt? Twoja strona zacznie się pojawiać tam, gdzie szukają Cię klienci.</p><div class='mt-6'><a href='/uslugi/marketing/audyt-seo' class='hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500 transition w-fit inline-flex rounded-2xl items-center font-medium text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2'>Zobacz ofertę audytu SEO</a></div>",
+  "breakAfter": true
+}
       ],
       "cta": {
-        "title": "Zróbmy audyt Twojej strony",
+        "title": "Zróbmy audyt SEO Twojej strony",
         "description": "Dowiedz się, dlaczego Twoja strona internetowa nie pojawia się w Google i co można poprawić, by odzyskać widoczność. Przeprowadzimy pełny audyt techniczny, SEO i contentowy.",
         "primaryLabel": "Umów konsultację",
         "primaryLink": "/kontakt",
