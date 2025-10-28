@@ -95,7 +95,7 @@ export default function HeroBanner({
                 </ul>
               </nav>
             )}
-            {title && <h1 id="hero-title text-wrap reveal-animation text-wrap:pretty">{title}</h1>}
+            {title && <h1 className="hero-title text-wrap reveal-animation text-wrap:pretty">{title}</h1>}
             {description && (
               <p id="hero-description" className={`reveal-animation mt-3 text-base leading-relaxed md:mt-5 ${toneMutedClass} text-wrap:pretty max-w-prose`}>
                 {description}
