@@ -16,69 +16,43 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceShema';
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
 export const metadata = {
   title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
-  description: 'Przeprowadź audyt SEO swojej witryny i sprawdź co możesz zrobić aby wyświetlać się wyżej w wynikach wyszukiwarki Google',
-  keywords: ['audyt SEO', 'poprawa szybkości ładowania strony'],
-  alternates: { canonical: '/uslugi/marketing/audyt-seo' },
+  description:
+    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
+  alternates: { canonical: `${BASE}/uslugi/marketing/audyt-seo` },
   openGraph: {
     title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
-    description: 'Przeprowadź audyt SEO swojej witryny i sprawdź co możesz zrobić aby wyświetlać się wyżej w wynikach wyszukiwarki Google',
-    url: 'https://www.arteonagency.pl/uslugi/marketing/audyt-seo',
+    description:
+      'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
+    url: `${BASE}/uslugi/marketing/audyt-seo`,
+    siteName: 'Arteon',
     type: 'website',
+    //images: [{ url: `${BASE}/assets/og/audyt-seo.jpg`, width: 1200, height: 630, alt: 'Audyt SEO — Arteon' }],
   },
+  //twitter: {
+  //  card: 'summary_large_image',
+  //  title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
+  //  description:
+  //    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
+  //  images: [`${BASE}/assets/og/audyt-seo.jpg`],
+  //},
 } as const;
 
 function ServiceSchema() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
-
-  const json = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Audyt SEO',
-    serviceType: ['Audyt SEO', 'SEO Audit'],
-    provider: {
-      '@type': 'Organization',
-      name: 'Arteon',
-      url: `${base}`,
-      sameAs: ['https://www.arteonagency.pl'],
-    },
-
-    areaServed: {
-      '@type': 'Language',
-      name: 'Polski',
-      alternateName: 'Polish language',
-    },
-
-    availableChannel: {
-      '@type': 'ServiceChannel',
-      serviceUrl: `${base}/kontakt`,
-      availableLanguage: ['pl-PL'],
-      description: 'Usługa świadczona zdalnie dla klientów posługujących się językiem polskim w dowolnym kraju.',
-    },
-
-    url: `${base}/uslugi/marketing/audyt-seo`,
-    description: 'Audyt SEO dla stron i sklepów internetowych — analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
-
-    offers: [
-      {
-        '@type': 'Offer',
-        priceCurrency: 'PLN',
-        url: `${base}/uslugi/marketing/audyt-seo`,
-      },
-      {
-        '@type': 'Offer',
-        priceCurrency: 'EUR',
-        url: `${base}/uslugi/marketing/audyt-seo`,
-      },
-      {
-        '@type': 'Offer',
-        priceCurrency: 'GBP',
-        url: `${base}/uslugi/marketing/audyt-seo`,
-      },
-    ],
-  };
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/marketing/audyt-seo',
+    serviceName: 'Audyt SEO',
+    description:
+      'Audyt SEO dla stron i sklepów internetowych — analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
 
   return (
     <Script id="schema-service-audyt-seo" type="application/ld+json">

@@ -20,9 +20,6 @@ export const metadata: Metadata = {
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-// ---------------------------------------------
-// SCHEMA.ORG - dane globalne (1x na cały serwis)
-// ---------------------------------------------
 const SITE_URL = 'https://www.arteonagency.pl';
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
 
@@ -32,23 +29,19 @@ const orgJsonLd = {
   name: 'Arteon',
   url: SITE_URL,
   logo: ORG_LOGO,
-  // Dodaj tylko realne profile - jeśli nie masz, pole pomiń
-  // sameAs: [
-  //   'https://www.facebook.com/…',
-  //   'https://www.instagram.com/…',
-  //   'https://www.linkedin.com/company/…'
-  // ],
+  // sameAs: ['https://…/linkedin', 'https://…/instagram'], // dodasz, gdy będą
   contactPoint: [
     {
       '@type': 'ContactPoint',
       contactType: 'customer support',
+      telephone: '+48 516 466 255',
       email: 'contact@arteonagency.com',
       availableLanguage: ['pl'],
     },
   ],
   address: { '@type': 'PostalAddress', addressCountry: 'PL' },
-  areaServed: ['PL', 'EU', 'UK', 'USA'],
-  inLanguage: ['pl'],
+  areaServed: 'Worldwide',
+  knowsLanguage: ['pl'],
 };
 
 const websiteJsonLd = {
@@ -57,11 +50,6 @@ const websiteJsonLd = {
   name: 'Arteon',
   url: SITE_URL,
   inLanguage: 'pl',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${SITE_URL}/szukaj?q={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

@@ -20,7 +20,6 @@ export function getCategoriesWithCount() {
   return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label));
 }
 
-// Główna kategoria do URL (możesz kiedyś dodać pole primaryCategory w danych)
 export function getPrimaryCategorySlug(a: Article): string {
   const first = (a.category && a.category[0]) || 'inne';
   return slugify(first);

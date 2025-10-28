@@ -6,12 +6,12 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { RiPhoneLine, RiMailLine, RiMapPinLine } from 'react-icons/ri';
 
 export const metadata = {
-  title: 'Kontakt - wycena Twojego plany | Arteon',
+  title: 'Kontakt - wycena Twojego planu | Arteon',
   description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania',
   keywords: ['wycena strony', 'wycena sklepu', 'kontakt agencja', 'projekt graficzny', 'kampanie online'],
   alternates: { canonical: '/kontakt' },
   openGraph: {
-    title: 'Kontakt - wycena Twojego plany | Arteon',
+    title: 'Kontakt - wycena Twojego planu | Arteon',
     description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania',
     url: 'https://www.arteonagency.pl/kontakt',
     type: 'website',
@@ -84,11 +84,11 @@ export default function ContactPage() {
               icon: <RiPhoneLine />,
               description: (
                 <>
-                  <span>
-                    <a href="tel:+48516466255" className="text-lg md:text-xl">
+                  <p>
+                    <a href="tel:+48516466255">
                       516 466 255
                     </a>
-                  </span>
+                  </p>
                 </>
               ),
             },
@@ -96,17 +96,17 @@ export default function ContactPage() {
               title: 'Email',
               icon: <RiMailLine />,
               description: (
-                <span>
-                  <a href="mailto:contact@arteonagency.com" className="text-lg md:text-xl">
+                <p>
+                  <a href="mailto:contact@arteonagency.com">
                     contact@arteonagency.com
                   </a>
-                </span>
+                </p>
               ),
             },
             {
               title: 'Godziny otwarcia',
               icon: <RiMapPinLine />,
-              description: <span className="text-lg md:text-xl">Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8 - 16</span>,
+              description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8 - 16</p>,
             },
           ]}
           title="Dane kontaktowe"
