@@ -230,42 +230,39 @@ export default function OfferOptimizationSEO() {
           plans={[
             {
               name: 'Optymalizacja SEO: 1+ stron',
-              price: 'od 600 zł',
+              price: 'od 1 200 zł', // zmiana z 600 zł
               description: 'Dla kogo: dla właścicieli prostych stron firmowych i landing pages ( stron z jedną podstroną ).',
               features: [
                 'Poprawa prędkości i czasu ładowania strony (Core Web Vitals)',
                 'Uporządkowanie tytułów, opisów i nagłówków H1–H3',
                 'Optymalizacja grafik (rozmiar, ALT, format WebP)',
                 'Uporządkowanie meta danych i struktury treści',
-                'Krótki raport zmian z wynikiem przed i po',
               ],
               btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
             {
               name: 'Optymalizacja SEO: 10+ stron',
-              price: 'od 1 200 zł',
+              price: 'od 2 200 zł', // zmiana z 1 200 zł
               description: 'Dla kogo: dla właścicieli rozbudowanych stron firmowych lub małych sklepów.',
               features: [
                 'Wszystko z pakietu dla małych stron, a dodatkowo:',
-                'Analiza i uporządkowanie struktury kategorii i adresów URL',
+                'Uporządkowanie struktury kategorii i adresów URL',
                 'Dodanie danych strukturalnych (schema.org, FAQ, artykuły)',
                 'Optymalizacja linkowania wewnętrznego i breadcrumbów',
-                'Pełny raport wdrożeń oraz rekomendacje dalszych działań',
               ],
               btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',
             },
             {
               name: 'Optymalizacja SEO: 30+ stron',
-              price: 'od 2 500 zł',
+              price: 'od 3 800 zł', // zmiana z 2 500 zł
               description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
               features: [
                 'Wszystko z pakietu dla rozbudowanych stron, a dodatkowo:',
                 'Optymalizacja crawl budgetu i eliminacja duplikacji adresów',
                 'Weryfikacja kanonikalizacji, sitemap i pliku robots.txt',
                 'Audyt parametrów filtrów i paginacji (e-commerce)',
-                'Monitoring efektów przez 4 tygodnie po wdrożeniu',
               ],
               btnOne: 'Zamów bezpłatną wycenę',
               btnOneLink: '#kontakt',

@@ -222,36 +222,60 @@ export default function OfferSeoSubscription() {
             {
               name: 'SEO Start',
               price: 'od 1 000 zł / mies.',
-              description: 'Dla mniejszych stron firmowych. Podstawowy plan treści i spokojny rozwój.',
-              features: ['Plan treści i harmonogram', 'Poprawa kluczowych podstron', 'Optymalizacje'],
-              btnOne: 'Poproś o wycenę',
+              description: 'Dla mniejszych stron firmowych. Zaczynamy od uporządkowania oferty i rozwoju kluczowych stron Twojej oferty.',
+              features: [
+                'Przygotowujemy prosty plan treści i harmonogram działań na kolejne tygodnie.',
+                'Co miesiąc rozwijamy lub aktualizujemy wybrane podstrony, aby lepiej odpowiadały na zapytania klientów.',
+                'Porządkujemy metadane i nagłówki, aby wyniki w Google były czytelniejsze i bardziej klikalne.',
+                'Monitorujemy podstawy techniczne, aby strona działała szybciej i stabilniej.',
+                'Poprawiamy linkowanie wewnętrzne, aby ważne podstrony miały większą moc.',
+                'Pozyskujemy pierwsze linki z wartościowych, tematycznych miejsc w tempie dopasowanym do branży.',
+                'Raz w miesiącu wysyłamy krótki raport i proponujemy priorytety na kolejny okres.',
+              ],
+              btnOne: 'Otrzymaj plan działań',
               btnOneLink: '#kontakt',
             },
             {
               name: 'SEO Rozwój',
               badgeLabel: 'Najczęściej wybierany',
-              price: 'od 1 600 zł / mies.',
-              description: 'Strategia treści + bezpieczne linki. Dla firm, które chcą rosnąć szybciej.',
-              features: ['Publikacje i aktualizacje', 'Linki z wartościowych miejsc', 'Analiza konkurencji'],
+              price: 'od 1 900 zł / mies.',
+              description: 'Dla firm, które chcą rosnąć szybciej. Systematycznie publikujemy treści i budujemy autorytet domeny.',
+              features: [
+                'Aktualizujemy strategię słów kluczowych i porównujemy wyniki z konkurencją co kilka tygodni.',
+                'Regularnie publikujemy nowe materiały (artykuły, poradniki, opisy) i odnawiamy starsze treści.',
+                'Rozbudowujemy strukturę serwisu, aby łatwiej zdobywać pozycje na kolejne tematy.',
+                'Wdrażamy dane strukturalne (np. FAQ, artykuły), aby zwiększyć szansę na lepszą ekspozycję w Google.',
+                'Utrzymujemy dobrą kondycję techniczną i monitorujemy wskaźniki szybkości.',
+                'Pozyskujemy linki z wartościowych źródeł, dopasowując tempo do branży i celu działań.',
+                'Na koniec miesiąca omawiamy wyniki i plan na kolejne 30 dni podczas krótkiego spotkania online lub w formie emaila.',
+              ],
               lastPlan: true,
-              btnOne: 'Poproś o wycenę',
+              btnOne: 'Skonsultuj zakres',
               btnOneLink: '#kontakt',
             },
             {
               name: 'SEO Plus',
-              price: 'od 2 400 zł / mies.',
-              description: 'Większa intensywność prac i szybciej widoczne efekty.',
-              features: ['Rozszerzony plan treści', 'Silniejsze wzmocnienie linkami', 'Priorytetowe wdrożenia'],
-              btnOne: 'Poproś o wycenę',
+              price: 'od 3 200 zł / mies.',
+              description: 'Dla sklepów i branż o wysokiej konkurencyjności. Skracamy czas do zamierzonych efektów przez większą intensywność prac.',
+              features: [
+                'Tworzymy rozbudowane cykle treści i klastry tematyczne, które budują widoczność na grupy powiązanych fraz.',
+                'Zajmujemy się pełnym procesem: planowaniem, copywritingiem, optymalizacją i publikacją materiałów.',
+                'Priorytetowo wdrażamy zmiany na kluczowych podstronach, aby szybciej poprawiać widoczność i konwersje.',
+                'Systematycznie rozwijamy linkowanie wewnętrzne i zewnętrzne, dbając o jakość źródeł i naturalny profil.',
+                'Na bieżąco porządkujemy kwestie techniczne: indeksację, mapy strony i czytelność struktury adresów.',
+                'Wspólnie definiujemy wskaźniki sukcesu i raportujemy postępy w jasny zrozumiały sposób.',
+                'Masz zapewniony stały kontakt z dedykowanym specjalistą i szybką reakcję na pilne tematy.',
+              ],
+              btnOne: 'Zaplanuj wzrost',
               btnOneLink: '#kontakt',
             },
           ]}
           note={{
-            text: <>Masz rozbudowaną stronę lub wiele lokalizacji? Przygotujemy zakres dopasowany do Twojej sytuacji.</>,
+            text: <>Masz rozbudowaną stronę lub działasz w wielu lokalizacjach? Dobierzemy tempo publikacji i pozyskiwania linków do realiów Twojej branży i celów biznesowych.</>,
             ctaLabel: 'Skonsultuj potrzeby',
             ctaLink: '#kontakt',
           }}
-          legalNote="Ceny orientacyjne brutto. Ostateczna wycena zależy od technologii, wielkości witryny i tego w jakim tempie chcesz rosnąć. Dopasowujemy ofertę do Twojego budżetu"
+          legalNote="Ceny orientacyjne brutto. Zakres oraz intensywność działań dopasowujemy do branży, celów i technologii witryny. Utrzymujemy ceny około 20–30% niższe od średniej rynkowej."
         />
 
         <Gap variant="line" />
