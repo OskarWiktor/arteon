@@ -240,29 +240,22 @@ export default function DesktopNavigation() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="fixed left-0 top-full z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
+                        className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
                       >
                         <Wrapper>
-                          <div
-                            ref={menuRef}
-                            onKeyDown={handleMenuKeyDown}
-                            className="hidden gap-6 lg:grid"
-                            style={{ gridTemplateColumns: '1fr 1fr 2fr 1fr' }}
-                          >
+                          <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="hidden gap-6 lg:grid" style={{ gridTemplateColumns: '1fr 1fr 2fr 1fr' }}>
                             {offerSections.map((section) => (
                               <div key={section.key} className="rounded-xl border border-slate-200 p-4">
                                 <div className="mb-3">
                                   {section.hubHref ? (
                                     <Link
                                       href={section.hubHref}
-                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 outline-none ring-offset-2 ring-offset-white transition hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {section.title}
                                     </Link>
                                   ) : (
-                                    <div className="text-sm font-semibold tracking-wide text-slate-900">
-                                      {section.title}
-                                    </div>
+                                    <div className="text-sm font-semibold tracking-wide text-slate-900">{section.title}</div>
                                   )}
                                   <div className="text-xs text-slate-500">{section.subtitle}</div>
                                 </div>
@@ -278,9 +271,7 @@ export default function DesktopNavigation() {
                                         {item.icon && <span className="mt-0.5 shrink-0">{item.icon}</span>}
                                         <span>
                                           <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
-                                          {item.desc && (
-                                            <span className="block text-xs text-slate-500">{item.desc}</span>
-                                          )}
+                                          {item.desc && <span className="block text-xs text-slate-500">{item.desc}</span>}
                                         </span>
                                       </Link>
                                     ))}
@@ -295,11 +286,7 @@ export default function DesktopNavigation() {
                                         href={item.href}
                                         className="group/link flex items-start gap-3 rounded-lg px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                       >
-                                        {item.icon ? (
-                                          <span className="mt-0.5 shrink-0">{item.icon}</span>
-                                        ) : (
-                                          <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />
-                                        )}
+                                        {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
                                         <span>
                                           <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
                                         </span>
@@ -318,14 +305,12 @@ export default function DesktopNavigation() {
                                   {section.hubHref ? (
                                     <Link
                                       href={section.hubHref}
-                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 outline-none ring-offset-2 ring-offset-white transition hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {section.title}
                                     </Link>
                                   ) : (
-                                    <div className="text-sm font-semibold tracking-wide text-slate-900">
-                                      {section.title}
-                                    </div>
+                                    <div className="text-sm font-semibold tracking-wide text-slate-900">{section.title}</div>
                                   )}
                                   <div className="text-xs text-slate-500">{section.subtitle}</div>
                                 </div>
@@ -341,9 +326,7 @@ export default function DesktopNavigation() {
                                         {item.icon && <span className="mt-0.5 shrink-0">{item.icon}</span>}
                                         <span>
                                           <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
-                                          {item.desc && (
-                                            <span className="block text-xs text-slate-500">{item.desc}</span>
-                                          )}
+                                          {item.desc && <span className="block text-xs text-slate-500">{item.desc}</span>}
                                         </span>
                                       </Link>
                                     ))}
@@ -358,11 +341,7 @@ export default function DesktopNavigation() {
                                         href={item.href}
                                         className="group/link flex items-start gap-3 rounded-lg px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                       >
-                                        {item.icon ? (
-                                          <span className="mt-0.5 shrink-0">{item.icon}</span>
-                                        ) : (
-                                          <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />
-                                        )}
+                                        {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
                                         <span>
                                           <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
                                         </span>

@@ -155,8 +155,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
     tresc: false,
   });
 
-  const toggleKey = (key: Section['key']) =>
-    setOpenKeys((s) => ({ ...s, [key]: !s[key] }));
+  const toggleKey = (key: Section['key']) => setOpenKeys((s) => ({ ...s, [key]: !s[key] }));
 
   const onListKeyDown = (container: HTMLElement, e: React.KeyboardEvent) => {
     const items = container.querySelectorAll<HTMLAnchorElement>('a[href]');
@@ -206,16 +205,13 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             transition={{ type: 'spring', stiffness: 280, damping: 30 }}
           >
             <div className="flex items-center justify-end px-4 pt-3">
-              <button
-                onClick={() => setIsOpen(false)}
-                className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2"
-              >
+              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
                 Zamknij
               </button>
             </div>
 
             <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
-              <p className="px-3 pb-1 text-[11px] uppercase tracking-wider text-[#5e5e5e]">Usługi</p>
+              <p className="px-3 pb-1 text-[11px] tracking-wider text-[#5e5e5e] uppercase">Usługi</p>
 
               <div className="flex flex-col">
                 {SECTIONS.map((sec) => {
@@ -243,10 +239,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           className="m-2 inline-flex items-center gap-1 rounded px-2 py-1 text-sm text-[#5e5e5e] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                         >
                           {sec.subtitle && <span className="hidden text-xs text-[#7a7a7a] sm:inline">{sec.subtitle}</span>}
-                          <RiArrowDownSLine
-                            className={`h-4 w-4 transition-transform ${expanded ? 'rotate-180' : ''}`}
-                            aria-hidden="true"
-                          />
+                          <RiArrowDownSLine className={`h-4 w-4 transition-transform ${expanded ? 'rotate-180' : ''}`} aria-hidden="true" />
                         </button>
                       </div>
 
@@ -272,7 +265,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                   <Link
                                     href={it.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="group flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] text-[#080808] outline-none transition hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                                    className="group flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                                   >
                                     {it.icon && <span className="text-[#5e5e5e] group-hover:text-slate-600">{it.icon}</span>}
                                     <span>{it.title}</span>
@@ -299,7 +292,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[7px] text-[15px] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2 ${
+                        className={`block rounded-lg px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
@@ -321,7 +314,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-lg px-3 py-[7px] text-[15px] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2 ${
+                        className={`block rounded-lg px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
@@ -341,7 +334,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href="/kontakt"
                       onClick={() => setIsOpen(false)}
-                      className="rounded-xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white outline-none transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="rounded-xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       Umów konsultację
                     </Link>

@@ -81,7 +81,9 @@ export default function OfferPage() {
               title: 'Blogi internetowe',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">Tworzymy blogi internetowe, na których z łatwością dodasz swoje treści. Stawiamy na optymalizację techniczną tak aby zwiększyć widoczność każdego Twojego wpisu.</p>
+                  <p className="mb-3">
+                    Tworzymy blogi internetowe, na których z łatwością dodasz swoje treści. Stawiamy na optymalizację techniczną tak aby zwiększyć widoczność każdego Twojego wpisu.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/blogi-internetowe">
                       Przejdź do blogów

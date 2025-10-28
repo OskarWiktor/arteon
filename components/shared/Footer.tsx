@@ -3,13 +3,30 @@
 import Link from 'next/link';
 import Wrapper from '../ui/Wrapper';
 
-const offerLinks = [
+const offerLinksOne = [
   { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
-  { href: '/uslugi/projekty-graficzne', title: 'Projekty graficzne' },
-  { href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' },
-  { href: '/uslugi/marketing', title: 'Marketing' },
+];
+
+const offerLinksTwo = [{ href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' }];
+
+const offerLinksThree = [
+  { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony' },
+  { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Projekt identyfikacji wizualnej' },
+  { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Projekt katalogu' },
+  { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Projekt logo' },
+  { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Projekt odzieży firmowej' },
+  { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Projekt papieru firmowego' },
+  { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Projekt teczki ofertowej' },
+  { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Projekt ulotki' },
+  { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Projekt wizytówki' },
+];
+
+const offerLinksFour = [
+  { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' },
+  { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
+  { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
 ];
 
 const navLinks = [
@@ -31,8 +48,54 @@ export default function Footer() {
       <Wrapper>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <nav aria-label="Usługi" className="md:col-span-1">
+            <h3 className="h6">Witryny</h3>
             <ul className="flex flex-col gap-2 text-sm">
-              {offerLinks.map(({ href, title }) => (
+              {offerLinksOne.map(({ href, title }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  >
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 className="h6 mt-4">Tworzenie treści</h3>
+            <ul className="flex flex-col gap-2 text-sm">
+              {offerLinksTwo.map(({ href, title }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  >
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Usługi" className="md:col-span-1">
+            <h3 className="h6">Grafika</h3>
+            <ul className="flex flex-col gap-2 text-sm">
+              {offerLinksThree.map(({ href, title }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  >
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Usługi" className="md:col-span-1">
+            <h3 className="h6">Marketing</h3>
+            <ul className="flex flex-col gap-2 text-sm">
+              {offerLinksFour.map(({ href, title }) => (
                 <li key={href}>
                   <Link
                     href={href}
@@ -58,10 +121,8 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </nav>
-
-          <nav aria-label="Polityka" className="md:col-span-1">
-            <ul className="flex flex-col gap-2 text-sm">
+            <h3 className='h6 mt-4'>Inne</h3>
+                        <ul className="flex flex-col gap-2 text-sm">
               {otherLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
@@ -80,7 +141,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/mapa-strony"
-                  className="hover-underline mt-4 inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >
                   Mapa strony
                 </Link>
@@ -89,20 +150,17 @@ export default function Footer() {
           </nav>
 
           <div className="flex w-full flex-row items-center justify-between gap-4 md:flex-col md:items-start md:justify-start">
-            <div aria-label="Informacja o współpracy międzynarodowej">
-              <p className="text-[#080808]">
-                <strong className="text-base font-semibold">Realizujemy projekty na całym świecie dla polskich firm i osób prywatnych</strong>
-              </p>
-            </div>
+            <div aria-label="Informacja o współpracy międzynarodowej"></div>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-200 pt-4 text-sm text-[#5e5e5e]">
+        <div className="mt-8 border-t border-gray-200 pt-4 text-[#5e5e5e]">
           <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
             <span className="text-center md:text-left">
               © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
             </span>
-            <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
+            <h3 className="p text-sm">Realizujemy projekty na całym świecie dla polskich firm i osób prywatnych</h3>
+            <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer font-normal">
               #MadeWithNext.js
             </a>
           </div>
