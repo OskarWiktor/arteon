@@ -29,6 +29,27 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import { IoSparkles } from 'react-icons/io5';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import { buildServiceSchema } from '@/lib/serviceShema';
+import Script from 'next/script';
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
+function ServiceSchema() {
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/tworzenie-tresci',
+    serviceName: 'Tworzenie treści',
+    description: 'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy — pod intencje użytkownika i SEO.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
+  return (
+    <Script id="schema-service-tworzenie-tresci" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
 
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
@@ -289,6 +310,7 @@ export default function OfferContentPage() {
         backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
       />
+      <ServiceSchema />
     </>
   );
 }

@@ -30,6 +30,8 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
 import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import { buildServiceSchema } from '@/lib/serviceShema';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i wdrożenie | Arteon',
@@ -43,6 +45,25 @@ export const metadata = {
     type: 'website',
   },
 } as const;
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
+function ServiceSchema() {
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/blogi-internetowe',
+    serviceName: 'Tworzenie blogów internetowych',
+    description: 'Projektujemy i wdrażamy blogi, które przyciągają ruch z Google: przejrzysta struktura, wygodny edytor, kategorie i wsparcie w publikacji.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
+  return (
+    <Script id="schema-service-blogi-internetowe" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
 
 export default function OfferBlogPage() {
   return (
@@ -325,6 +346,8 @@ export default function OfferBlogPage() {
         backgroundImage="/assets/bg/abstract-bg3.webp"
         overlay="black"
       />
+
+      <ServiceSchema />
     </>
   );
 }

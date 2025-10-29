@@ -13,6 +13,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import { buildServiceSchema } from '@/lib/serviceShema';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Projekt identyfikacji wizualnej | Arteon',
@@ -26,6 +28,25 @@ export const metadata = {
     type: 'website',
   },
 } as const;
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
+function ServiceSchema() {
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+    serviceName: 'Projekt identyfikacji wizualnej',
+    description: 'Kompletna identyfikacja: logo, paleta, typografia i wzory. Podstawowa księga znaku i spójność we wszystkich kanałach.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
+  return (
+    <Script id="schema-service-projekt-identyfikacji-wizualnej" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
 
 export default function OfferDesignXxxPage() {
   return (
@@ -207,6 +228,8 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
+      <ServiceSchema />
     </>
   );
 }

@@ -13,6 +13,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceShema';
 
 export const metadata = {
   title: 'Projekt ulotki | Arteon',
@@ -26,6 +28,25 @@ export const metadata = {
     type: 'website',
   },
 } as const;
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
+function ServiceSchema() {
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/projekty-graficzne/projekt-ulotki',
+    serviceName: 'Projekt ulotki',
+    description: 'Skuteczne ulotki reklamowe: jasne CTA, czytelna hierarchia, formaty pod druk i wersje cyfrowe.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
+  return (
+    <Script id="schema-service-projekt-ulotki" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
 
 export default function OfferDesignXxxPage() {
   return (
@@ -196,6 +217,8 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
+      <ServiceSchema />
     </>
   );
 }

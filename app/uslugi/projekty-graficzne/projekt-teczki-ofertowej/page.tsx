@@ -14,6 +14,8 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
+import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceShema';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
@@ -27,6 +29,25 @@ export const metadata = {
     type: 'website',
   },
 } as const;
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
+function ServiceSchema() {
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    serviceName: 'Projekt teczki ofertowej',
+    description: 'Teczka firmowa spójna z identyfikacją: estetyka i funkcja, poprawne spady oraz makiety pod druk.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
+  return (
+    <Script id="schema-service-projekt-teczki-ofertowej" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
 
 export default function OfferDesignXxxPage() {
   return (
@@ -185,6 +206,8 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
+      <ServiceSchema />
     </>
   );
 }

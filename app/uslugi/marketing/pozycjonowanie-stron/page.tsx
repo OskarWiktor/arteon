@@ -16,6 +16,7 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceShema';
 
 export const metadata = {
   title: 'Pozycjonowanie stron — stały wzrost widoczności i zapytań | Arteon',
@@ -30,23 +31,18 @@ export const metadata = {
   },
 } as const;
 
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
-  const json = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Pozycjonowanie stron',
-    serviceType: 'SEO Retainer',
-    provider: { '@type': 'Organization', name: 'Arteon', url: `${base}` },
-    areaServed: { '@type': 'Country', name: 'Polska' },
-    url: `${base}/uslugi/marketing/pozycjonowanie-stron`,
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/marketing/optymalizacja-seo',
+    serviceName: 'Pozycjonowanie stron',
     description: 'Stała współpraca SEO dla stron firmowych: strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc i jasne priorytety.',
-    offers: {
-      '@type': 'Offer',
-      priceSpecification: { '@type': 'PriceSpecification', priceCurrency: 'PLN' },
-      url: `${base}/uslugi/marketing/pozycjonowanie-stron`,
-    },
-  };
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
   return (
     <Script id="schema-service-pozycjonowanie" type="application/ld+json">
       {JSON.stringify(json)}

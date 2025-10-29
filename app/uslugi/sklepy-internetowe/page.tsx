@@ -32,6 +32,8 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { GoLaw } from 'react-icons/go';
+import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceShema';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
@@ -45,6 +47,25 @@ export const metadata = {
     type: 'website',
   },
 } as const;
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
+function ServiceSchema() {
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/sklepy-internetowe',
+    serviceName: 'Tworzenie sklepów internetowych',
+    description: 'Budujemy sklepy online, które konwertują: szybkie karty produktu, prosty koszyk, płatności i wysyłki, analityka sprzedaży oraz SEO.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
+  return (
+    <Script id="schema-service-sklepy-internetowe" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
 
 export default function OfferWebPage() {
   return (
@@ -395,6 +416,8 @@ export default function OfferWebPage() {
         backgroundImage="/assets/bg/abstract-bg13.webp"
         overlay="black"
       />
+
+      <ServiceSchema />
     </>
   );
 }

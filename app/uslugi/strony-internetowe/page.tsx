@@ -30,6 +30,8 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
 import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import { buildServiceSchema } from '@/lib/serviceShema';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Strony internetowe - projekt i wdrożenie | Arteon',
@@ -43,6 +45,25 @@ export const metadata = {
     type: 'website',
   },
 } as const;
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
+function ServiceSchema() {
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/strony-internetowe',
+    serviceName: 'Tworzenie stron internetowych',
+    description: 'Projektujemy i wdrażamy szybkie, dostępne strony firmowe, które sprzedają. Prosta nawigacja, SEO-ready treści i opieka po wdrożeniu.',
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
+  return (
+    <Script id="schema-service-strony-internetowe" type="application/ld+json">
+      {JSON.stringify(json)}
+    </Script>
+  );
+}
 
 export default function OfferWebPage() {
   return (
@@ -344,6 +365,8 @@ export default function OfferWebPage() {
         backgroundImage="/assets/bg/abstract-bg12.webp"
         overlay="black"
       />
+
+      <ServiceSchema />
     </>
   );
 }

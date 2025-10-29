@@ -16,6 +16,7 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceShema';
 
 export const metadata = {
   title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',
@@ -30,27 +31,18 @@ export const metadata = {
   },
 } as const;
 
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
-  const json = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Optymalizacja SEO',
-    serviceType: 'SEO Implementation',
-    provider: {
-      '@type': 'Organization',
-      name: 'Arteon',
-      url: `${base}`,
-    },
-    areaServed: { '@type': 'Country', name: 'Polska' },
-    url: `${base}/uslugi/marketing/optymalizacja-seo`,
+  const json = buildServiceSchema({
+    baseUrl: BASE,
+    path: '/uslugi/marketing/optymalizacja-seo',
+    serviceName: 'Optymalizacja SEO',
     description: 'Wdrożenia po audycie: poprawa szybkości strony, porządek w treściach i dodatkowe dane, które pomagają Google lepiej zrozumieć witrynę. Testy przed i po, mierzalne wyniki.',
-    offers: {
-      '@type': 'Offer',
-      priceSpecification: { '@type': 'PriceSpecification', priceCurrency: 'PLN' },
-      url: `${base}/uslugi/marketing/optymalizacja-seo`,
-    },
-  };
+    availableLanguages: ['pl'],
+    includeServiceChannel: true,
+  });
+
   return (
     <Script id="schema-service-optymalizacja-seo" type="application/ld+json">
       {JSON.stringify(json)}
