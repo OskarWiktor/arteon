@@ -634,18 +634,6 @@
     },
 
     {
-      "slug": "cennik-dla-salonu-kosmetycznego",
-      "title": "Cennik dla salonu kosmetycznego",
-      "short": "Cennik salonu w nowej, czytelnej formie",
-      "description": "<p>Projekt obejmował stworzenie atrakcyjnego, czytelnego <strong>cennika</strong> dla salonu Manufaktura Piękna w Skawinie. Zaprojektowaliśmy układ, typografię i sekcje. Materiał gotowy do druku i publikacji online.</p>",
-      "image": "/assets/projects/cennik-mockup.png",
-      "category": ["grafika"],
-      "seo": {
-        "canonical": "https://www.arteonagency.pl/realizacje/cennik-dla-salonu-kosmetycznego"
-      }
-    },
-
-    {
       "slug": "palmolive",
       "title": "Palmolive Lokalizacje",
       "short": "Adaptacja treści i układu na rynki lokalne",
