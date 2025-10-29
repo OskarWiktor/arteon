@@ -38,25 +38,25 @@ import {
 import Script from 'next/script';
 
 const SERVICES = [
-  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne//projekt-wizytowki' },
-  { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne//projekt-ulotki' },
-  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne//projekt-teczki-ofertowej' },
-  { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne//projekt-papieru-firmowego' },
-  { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne//projekt-odziezy-firmowej' },
-  { name: 'Projekt logo', path: '/uslugi/projekty-graficzne//projekt-logo' },
-  { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne//projekt-katalogu' },
-  { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne//projekt-identyfikacji-wizualnej' },
-  { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne//projekt-graficzny-strony' },
+  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
+  { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne/projekt-ulotki' },
+  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
+  { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
+  { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
+  { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
+  { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
+  { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
+  { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
 ];
 
 function ItemListSchema() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https:/www.arteonagency.pl';
   const json = {
-    '@context': 'https://schema.org',
+    '@context': 'https:/schema.org',
     '@type': 'ItemList',
     '@id': `${base}/#projekty-graficzne-itemlist`,
     name: 'Projekty graficzne - oferta usług',
-    itemListOrder: 'http://schema.org/ItemListOrderAscending',
+    itemListOrder: 'http:/schema.org/ItemListOrderAscending',
     itemListElement: SERVICES.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
@@ -94,7 +94,7 @@ export const metadata = {
   openGraph: {
     title: 'Projekty graficzne dla firm: logo, identyfikacja, wizytówki, ulotki, katalogi | Arteon',
     description: 'Kompleksowe projekty graficzne: od logo i identyfikacji po katalogi i layouty stron. Pliki do druku i online, spójność i prestiż.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
+    url: 'https:/www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
   },
 } as const;
@@ -136,7 +136,7 @@ export default function OfferDesignPage() {
         <SectionInfo title="Co zyskujesz dzięki projektom graficznym?">
           <p>
             <strong>Spójna identyfikacja wizualna zwiększa rozpoznawalność marki nawet o 80%</strong>{' '}
-            <a href="https://www.lucidpress.com/blog/state-of-brand-consistency" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https:/www.lucidpress.com/blog/state-of-brand-consistency" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Lucidpress - raport o spójności marek)
             </a>
             . Profesjonalny projekt graficzny sprawia, że Twoja firma jest łatwiejsza do zapamiętania i budzi większe zaufanie już przy pierwszym kontakcie.
@@ -147,7 +147,7 @@ export default function OfferDesignPage() {
           <p>
             <strong>Spójny wygląd marki ułatwia sprzedaż.</strong> Firmy utrzymujące jednolity brand notują średnio
             <strong> 10-20% wyższe przychody</strong>{' '}
-            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https:/www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Marq - analiza przewagi konkurencyjnej)
             </a>
             . To logo, papier firmowy, katalog i teczka, które mówią jednym językiem - online, w druku i podczas spotkań z klientami.
@@ -158,10 +158,10 @@ export default function OfferDesignPage() {
           <p>
             <strong>Design buduje wiarygodność.</strong> Aż <strong>~75%</strong> osób ocenia firmę po jakości materiałów wizualnych i strony internetowej. Schludny, spójny projekt podnosi zaufanie i
             wpływa na decyzję o kontakcie{' '}
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https:/credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Stanford - badanie wiarygodności stron)
             </a>{' '}
-            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https:/rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Rareform - opracowanie branżowe)
             </a>
             .
@@ -171,7 +171,7 @@ export default function OfferDesignPage() {
 
           <p>
             <strong>Materiały drukowane nadal działają.</strong> 79% konsumentów deklaruje, że chętniej sięga po ofertę firm, które dostarczają estetyczne broszury, ulotki lub wizytówki{' '}
-            <a href="https://www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https:/www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (PrintPower - raport o zaufaniu do druku)
             </a>
             . Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają konwersję w sprzedaży.
@@ -409,12 +409,12 @@ export default function OfferDesignPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy wizerunek Twojej firmy" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę projektu graficznego" defaultSubject="Projekt graficzne" />
+        <ContactForm title="Zbudujmy wizerunek Twojej firmy" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę projektu graficznego" defaultSubject="Projekty graficzne" />
 
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
+          pageUrl="https:/www.arteonagency.pl/uslugi/projekty-graficzne"
           title="Najczęstsze pytania o projekty graficzne"
           items={[
             {
