@@ -36,7 +36,7 @@ const orgJsonLd = {
       '@type': 'ContactPoint',
       contactType: 'customer support',
       telephone: '+48 516 466 255',
-      email: 'contact@arteonagency.pl',
+      email: 'contact@arteonagency.com',
       availableLanguage: ['pl'],
     },
   ],

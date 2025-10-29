@@ -4,7 +4,7 @@ import HeroBaner from '@/components/sections/HeroBaner';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import { RiPhoneLine, RiMailLine, RiMapPinLine, RiMapPinTimeLine } from 'react-icons/ri';
+import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
@@ -30,7 +30,7 @@ function ContactSchemas() {
     url: `${BASE_URL}`,
     image: `${BASE_URL}/icon-512x512.png`,
     telephone: '+48516466255',
-    email: 'contact@arteonagency.pl',
+    email: 'contact@arteonagency.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'ul. Jaśminowa 36',
@@ -164,11 +164,6 @@ export default function ContactPage() {
               title: 'Godziny otwarcia',
               icon: <RiMapPinTimeLine />,
               description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8–16</p>,
-            },
-            {
-              title: 'Lokalizacja',
-              icon: <RiMapPinLine />,
-              description: <p>Powiat krakowski, gmina Czernichów, Zagacie 32-070, ul. Jaśminowa 36</p>,
             },
           ]}
           title="Dane kontaktowe"

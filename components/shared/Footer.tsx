@@ -10,7 +10,7 @@ const ORG = {
   name: 'Arteon',
   phoneE164: '+48516466255',
   phoneDisplay: '516 466 255',
-  email: 'contact@arteonagency.pl',
+  email: 'contact@arteonagency.com',
   street: 'ul. Jaśminowa 36',
   locality: 'Zagacie',
   region: 'małopolskie',
@@ -30,7 +30,7 @@ function FooterSchemas() {
     url: BASE_URL,
     image: `${BASE_URL}/icon-512x512.png`,
     telephone: ORG.phoneE164,
-    email: 'contact@arteonagency.pl',
+    email: 'contact@arteonagency.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: ORG.street,
@@ -43,14 +43,9 @@ function FooterSchemas() {
 
     serviceArea: {
       '@type': 'GeoCircle',
-      geoMidpoint: {
-        '@type': 'GeoCoordinates',
-        latitude: 50.0053746,
-        longitude: 19.7094865,
-      },
+      geoMidpoint: { '@type': 'GeoCoordinates', latitude: 50.0053746, longitude: 19.7094865 },
       geoRadius: 50000,
     },
-
     areaServed: ['Kraków', 'Skawina', 'Czernichów', 'Liszki', 'Zabierzów', 'Wieliczka'],
 
     hasMap:
@@ -229,19 +224,9 @@ export default function Footer() {
                     {ORG.email}
                   </a>
                 </p>
-                <p>
-                  {ORG.street}, {ORG.locality}
-                </p>
-                <p>{ORG.region}, Polska</p>
-                <p>
-                  <a href={ORG.mapUrl} target="_blank" rel="noopener noreferrer" className="hover-underline">
-                    Pokaż na mapie
-                  </a>
-                </p>
               </address>
 
               <div className="mt-3">
-                <p className="mt-1 text-sm text-[#5e5e5e]">Obszar siedziby: {ORG.servedList.join(', ')}</p>
                 <p className="text-sm text-[#5e5e5e]">Godziny: pn–pt, 8:00–16:00</p>
               </div>
             </section>

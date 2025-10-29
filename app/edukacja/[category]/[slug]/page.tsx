@@ -166,9 +166,11 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
         if (b.type === 'image') {
           const isAuto = b.ratio === 'auto';
+          const hasCaption = Boolean(b.caption);
+
           return (
             <div key={`grp-img-${i}`}>
-              <figure>
+              <figure className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}>
                 {isAuto ? (
                   <div className="overflow-hidden rounded-2xl border border-black/10">
                     <Image
@@ -187,7 +189,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                     <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
                   </Aspect>
                 )}
-                {b.caption && <figcaption className="mt-2 mb-6 text-sm text-[#5e5e5e] md:mb-12 lg:mb-16">{b.caption}</figcaption>}
+                {hasCaption && <figcaption className="mt-2 mb-6 text-sm text-[#5e5e5e] md:mb-12 lg:mb-16">{b.caption}</figcaption>}
               </figure>
             </div>
           );
