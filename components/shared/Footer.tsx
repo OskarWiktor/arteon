@@ -237,7 +237,7 @@ export default function Footer() {
               <span className="text-center md:text-left">
                 © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
               </span>
-              <span className="text-sm">Tworzymy strony, sklepy i identyfikacje wizualne dla polskich firm na całym świecie — z siedzibą w Małopolsce, w okolicach Krakowa.</span>
+              <span className="text-sm">Realizujemy projekty dla polskich firm na całym świecie — z siedzibą w Małopolsce, w okolicach Krakowa.</span>
               <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer font-normal">
                 #MadeWithNext.js
               </a>
