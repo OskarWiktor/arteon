@@ -4,22 +4,28 @@ import { JSX, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
+import Wrapper from '@/components/ui/Wrapper';
+
 import {
   RiArrowDownSLine,
   RiCodeSSlashFill,
   RiShoppingCartLine,
   RiArticleLine,
-  RiPaletteLine,
-  RiFileTextLine,
   RiMegaphoneLine,
   RiSearchLine,
-  RiAdvertisementLine,
-  RiCameraLensLine,
   RiPriceTag3Line,
-  RiBookOpenLine,
-  RiShareForwardLine,
+  RiIdCardLine,
+  RiFileList2Line,
+  RiFolderOpenLine,
+  RiFileTextLine,
+  RiTShirt2Line,
+  RiQuillPenLine,
+  RiBookletLine,
+  RiPantoneLine,
+  RiLayoutLine,
+  RiCoupon2Line,
+  RiRestaurant2Line,
 } from 'react-icons/ri';
-import Wrapper from '@/components/ui/Wrapper';
 
 type SectionItem = {
   href: string;
@@ -31,9 +37,7 @@ type SectionItem = {
 type OfferSection = {
   key: 'witryny' | 'marketing' | 'grafika' | 'tresc';
   title: string;
-  subtitle: string;
   items: SectionItem[];
-  grid?: boolean;
   hubHref?: string;
 };
 
@@ -86,93 +90,55 @@ export default function DesktopNavigation() {
     {
       key: 'witryny',
       title: 'Witryny',
-      subtitle: 'Strony, sklepy, blogi',
       items: [
-        {
-          href: '/uslugi/strony-internetowe',
-          icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" aria-hidden="true" />,
-          title: 'Strony internetowe',
-          desc: 'WCAG 2.2 AA, projekt na miarę',
-        },
-        {
-          href: '/uslugi/sklepy-internetowe',
-          icon: <RiShoppingCartLine className="h-6 w-6 text-slate-500" aria-hidden="true" />,
-          title: 'Sklepy internetowe',
-          desc: 'Płatności, integracje, automatyzacje',
-        },
-        {
-          href: '/uslugi/blogi-internetowe',
-          icon: <RiArticleLine className="h-6 w-6 text-slate-500" aria-hidden="true" />,
-          title: 'Blogi internetowe',
-          desc: 'Architektura treści i CMS',
-        },
+        { href: '/uslugi/strony-internetowe', icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />, title: 'Strony internetowe', desc: 'WCAG 2.2 AA, projekt na miarę' },
+        { href: '/uslugi/sklepy-internetowe', icon: <RiShoppingCartLine className="h-6 w-6 text-slate-500" />, title: 'Sklepy internetowe', desc: 'Płatności, integracje, automatyzacje' },
+        { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine className="h-6 w-6 text-slate-500" />, title: 'Blogi internetowe', desc: 'Architektura treści i CMS' },
       ],
     },
     {
       key: 'marketing',
       title: 'Marketing',
-      subtitle: 'Widoczność i wzrost',
       hubHref: '/uslugi/marketing',
       items: [
-        {
-          href: '/uslugi/marketing/audyt-seo',
-          icon: <RiSearchLine className="h-6 w-6 text-slate-500" aria-hidden="true" />,
-          title: 'Audyt SEO',
-          desc: 'Diagnostyka i priorytety działań',
-        },
-        {
-          href: '/uslugi/marketing/optymalizacja-seo',
-          icon: <RiPriceTag3Line className="h-6 w-6 text-slate-500" aria-hidden="true" />,
-          title: 'Optymalizacja SEO',
-          desc: 'On-page, technikalia, treści',
-        },
-        {
-          href: '/uslugi/marketing/pozycjonowanie-stron',
-          icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" aria-hidden="true" />,
-          title: 'Pozycjonowanie stron',
-          desc: 'Strategia, linki, wzrost fraz',
-        },
+        { href: '/uslugi/marketing/audyt-seo', icon: <RiSearchLine className="h-6 w-6 text-slate-500" />, title: 'Audyt SEO', desc: 'Diagnostyka i priorytety działań' },
+        { href: '/uslugi/marketing/optymalizacja-seo', icon: <RiPriceTag3Line className="h-6 w-6 text-slate-500" />, title: 'Optymalizacja SEO', desc: 'On-page, technikalia, treści' },
+        { href: '/uslugi/marketing/pozycjonowanie-stron', icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" />, title: 'Pozycjonowanie stron', desc: 'Strategia, linki, wzrost fraz' },
       ],
     },
     {
       key: 'grafika',
       title: 'Grafika',
-      subtitle: 'Tożsamość i materiały',
       hubHref: '/uslugi/projekty-graficzne',
-      grid: true,
       items: [
-        { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo', icon: <RiPaletteLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Identyfikacja wizualna', icon: <RiShareForwardLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki', icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy', icon: <RiFileTextLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe', icon: <RiBookOpenLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki', icon: <RiAdvertisementLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi', icon: <RiBookOpenLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa', icon: <RiCameraLensLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Layout strony', icon: <RiArticleLine className="h-5 w-5 text-slate-500" aria-hidden="true" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki', icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Identyfikacja wizualna', icon: <RiPantoneLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Karty lojalnościowe', icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi', icon: <RiBookletLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony i vouchery', icon: <RiCoupon2Line className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Layout strony', icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo', icon: <RiQuillPenLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji', icon: <RiRestaurant2Line className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa', icon: <RiTShirt2Line className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy', icon: <RiFileTextLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony social media', icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe', icon: <RiFolderOpenLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki', icon: <RiFileList2Line className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki', icon: <RiIdCardLine className="h-5 w-5 text-slate-500" /> },
       ],
     },
     {
       key: 'tresc',
       title: 'Tworzenie treści',
-      subtitle: 'Sprzedaż i SEO',
       hubHref: '/uslugi/tworzenie-tresci',
-      items: [
-        {
-          href: '/uslugi/tworzenie-tresci',
-          icon: <RiFileTextLine className="h-6 w-6 text-slate-500" aria-hidden="true" />,
-          title: 'Tworzenie treści',
-          desc: 'Teksty na strony, blog, oferty',
-        },
-      ],
+      items: [{ href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />, title: 'Tworzenie treści', desc: 'Teksty na strony, blog, oferty' }],
     },
   ];
 
   const focusMenuItem = (idx: number) => {
     const items = menuRef.current?.querySelectorAll<HTMLAnchorElement>('a[href]');
-    if (!items || items.length === 0) return;
-    const i = Math.max(0, Math.min(idx, items.length - 1));
-    items[i].focus();
+    if (!items?.length) return;
+    items[Math.max(0, Math.min(idx, items.length - 1))].focus();
   };
 
   const handleOfferButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
@@ -185,9 +151,8 @@ export default function DesktopNavigation() {
 
   const handleMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     const items = menuRef.current?.querySelectorAll<HTMLAnchorElement>('a[href]');
-    if (!items || items.length === 0) return;
+    if (!items?.length) return;
     const currentIndex = Array.from(items).findIndex((el) => el === document.activeElement);
-
     if (e.key === 'ArrowDown') {
       e.preventDefault();
       focusMenuItem(currentIndex < 0 ? 0 : currentIndex + 1);
@@ -243,112 +208,34 @@ export default function DesktopNavigation() {
                         className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
                       >
                         <Wrapper>
-                          <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="hidden gap-6 lg:grid" style={{ gridTemplateColumns: '1fr 1fr 2fr 1fr' }}>
+                          <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="grid gap-6" style={{ gridTemplateColumns: '1fr 1fr 2fr 1fr' }}>
                             {offerSections.map((section) => (
                               <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
                                 <div className="mb-3">
                                   {section.hubHref ? (
                                     <Link
                                       href={section.hubHref}
-                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 outline-none ring-offset-2 ring-offset-white transition hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {section.title}
                                     </Link>
                                   ) : (
                                     <div className="text-sm font-semibold tracking-wide text-slate-900">{section.title}</div>
                                   )}
-                                  <div className="text-xs text-slate-500">{section.subtitle}</div>
                                 </div>
 
-                                {section.key !== 'grafika' && (
-                                  <div className="flex flex-col gap-2">
-                                    {section.items.map((item) => (
-                                      <Link
-                                        key={item.href + item.title}
-                                        href={item.href}
-                                        className="group/link flex gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
-                                      >
-                                        {item.icon && <span className="mt-0.5 shrink-0">{item.icon}</span>}
-                                        <span>
-                                          <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
-                                          {item.desc && <span className="block text-xs text-slate-500">{item.desc}</span>}
-                                        </span>
-                                      </Link>
-                                    ))}
-                                  </div>
-                                )}
-
-                                {section.key === 'grafika' && (
-                                  <div className="grid grid-cols-2 gap-2">
-                                    {section.items.map((item) => (
-                                      <Link
-                                        key={item.href + item.title}
-                                        href={item.href}
-                                        className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
-                                      >
-                                        {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                        <span>
-                                          <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
-                                        </span>
-                                      </Link>
-                                    ))}
-                                  </div>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-
-                          <div className="grid gap-6 md:grid-cols-2 lg:hidden">
-                            {offerSections.map((section) => (
-                              <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
-                                <div className="mb-3">
-                                  {section.hubHref ? (
+                                <div className={`grid ${section.key === 'grafika' ? 'grid-cols-2' : 'grid-cols-1'} gap-2`}>
+                                  {section.items.map((item) => (
                                     <Link
-                                      href={section.hubHref}
-                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      key={item.href + item.title}
+                                      href={item.href}
+                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
-                                      {section.title}
+                                      {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
+                                      <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
                                     </Link>
-                                  ) : (
-                                    <div className="text-sm font-semibold tracking-wide text-slate-900">{section.title}</div>
-                                  )}
-                                  <div className="text-xs text-slate-500">{section.subtitle}</div>
+                                  ))}
                                 </div>
-
-                                {section.key !== 'grafika' && (
-                                  <div className="flex flex-col gap-2">
-                                    {section.items.map((item) => (
-                                      <Link
-                                        key={item.href + item.title}
-                                        href={item.href}
-                                        className="group/link flex gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
-                                      >
-                                        {item.icon && <span className="mt-0.5 shrink-0">{item.icon}</span>}
-                                        <span>
-                                          <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
-                                          {item.desc && <span className="block text-xs text-slate-500">{item.desc}</span>}
-                                        </span>
-                                      </Link>
-                                    ))}
-                                  </div>
-                                )}
-
-                                {section.key === 'grafika' && (
-                                  <div className="grid grid-cols-2 gap-2">
-                                    {section.items.map((item) => (
-                                      <Link
-                                        key={item.href + item.title}
-                                        href={item.href}
-                                        className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
-                                      >
-                                        {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                        <span>
-                                          <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
-                                        </span>
-                                      </Link>
-                                    ))}
-                                  </div>
-                                )}
                               </div>
                             ))}
                           </div>
