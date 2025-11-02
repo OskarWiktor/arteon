@@ -199,14 +199,14 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             role="dialog"
             aria-modal="true"
             aria-label="Menu mobilne"
-            className="fixed top-0 right-0 z[1000] h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-xl"
+            className="z[1000] fixed top-0 right-0 h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-xl"
             initial={{ x: 24, opacity: 0.98 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 24, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 280, damping: 30 }}
           >
             <div className="flex items-center justify-end px-4 pt-3">
-              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2">
+              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
                 Zamknij
               </button>
             </div>
@@ -265,7 +265,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                   <Link
                                     href={it.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-[15px] text-[#080808] outline-none transition hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                                   >
                                     {it.icon && <span className="text-[#5e5e5e] group-hover:text-slate-600">{it.icon}</span>}
                                     <span>{it.title}</span>
@@ -293,7 +293,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={href}
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
-                        className={`block rounded-xl px-3 py-[7px] text-[15px] outline-none ring-slate-700 ring-offset-2 focus-visible:ring-2 ${
+                        className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
                           isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
                         }`}
                       >
@@ -312,7 +312,11 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
                 ].map(({ href, label }) => (
                   <li key={label}>
-                    <Link href={href} onClick={() => setIsOpen(false)} className="block rounded-xl px-3 py-[7px] text-[15px] text-[#080808] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2">
+                    <Link
+                      href={href}
+                      onClick={() => setIsOpen(false)}
+                      className="block rounded-xl px-3 py-[7px] text-[15px] text-[#080808] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                    >
                       {label}
                     </Link>
                   </li>
@@ -328,7 +332,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href="/kontakt"
                       onClick={() => setIsOpen(false)}
-                      className="rounded-2xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white outline-none transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="rounded-2xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       Umów konsultację
                     </Link>

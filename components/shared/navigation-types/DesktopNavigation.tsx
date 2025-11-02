@@ -215,7 +215,7 @@ export default function DesktopNavigation() {
                                   {section.hubHref ? (
                                     <Link
                                       href={section.hubHref}
-                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 outline-none ring-offset-2 ring-offset-white transition hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {section.title}
                                     </Link>

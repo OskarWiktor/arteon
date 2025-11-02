@@ -40,14 +40,12 @@ function FooterSchemas() {
       postalCode: '32-070',
     },
     parentOrganization: { '@id': `${BASE_URL}#organization` },
-
     serviceArea: {
       '@type': 'GeoCircle',
       geoMidpoint: { '@type': 'GeoCoordinates', latitude: 50.0053746, longitude: 19.7094865 },
       geoRadius: 50000,
     },
-    areaServed: ['Kraków', 'Skawina', 'Czernichów', 'Liszki', 'Zabierzów', 'Wieliczka'],
-
+    areaServed: ORG.servedList,
     hasMap:
       'https://www.google.com/maps/place/Ja%C5%9Bminowa+36,+32-070+Zagacie/@49.955128,19.7525321,11z/data=!4m6!3m5!1s0x47165fee99b80287:0x35a17883ddf6b10c!8m2!3d50.0053746!4d19.7094865!16s%2Fg%2F11vl3bnz_y',
     openingHoursSpecification: [
@@ -72,7 +70,9 @@ const offerLinksOne = [
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
 ];
+
 const offerLinksTwo = [{ href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' }];
+
 const offerLinksThree = [
   { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony' },
   { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Projekt identyfikacji wizualnej' },
@@ -83,12 +83,19 @@ const offerLinksThree = [
   { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Projekt teczki ofertowej' },
   { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Projekt ulotki' },
   { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Projekt wizytówki' },
+  { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Projekt cennika' },
+  { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Projekt karty lojalnościowej' },
+  { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony rabatowe i vouchery' },
+  { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Projekt menu restauracji' },
+  { href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony postów na social media' },
 ];
+
 const offerLinksFour = [
   { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' },
   { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
   { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
 ];
+
 const navLinks = [
   { href: '/', label: 'Strona Główna' },
   { href: '/realizacje', label: 'Realizacje' },
@@ -96,18 +103,88 @@ const navLinks = [
   { href: '/edukacja', label: 'Edukacja' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
+
 const otherLinks = [
   { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
   { href: '/regulamin', label: 'Regulamin świadczenia usług' },
 ];
 
 export default function Footer() {
+  const mid = Math.ceil(offerLinksThree.length / 2);
+  const gfxLeft = offerLinksThree.slice(0, mid);
+  const gfxRight = offerLinksThree.slice(mid);
+
   return (
     <>
       <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
         <Wrapper>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
-            <nav aria-label="Usługi – Witryny" className="md:col-span-1">
+            <section aria-label="Dane firmy i lokalizacja">
+              <address className="text-base text-[#080808] not-italic">
+                <p>
+                  <strong>{ORG.name}</strong>
+                </p>
+                <p>
+                  <a href={`tel:${ORG.phoneE164}`} className="hover-underline">
+                    {ORG.phoneDisplay}
+                  </a>
+                </p>
+                <p>
+                  <a href={`mailto:${ORG.email}`} className="hover-underline">
+                    {ORG.email}
+                  </a>
+                </p>
+              </address>
+
+              <div className="mt-3">
+                <p className="text-sm text-[#5e5e5e]">Godziny: pn–pt, 8:00–16:00</p>
+              </div>
+
+              <ul className="mt-4 flex flex-col gap-2 text-sm">
+                {navLinks.map(({ href, label }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <nav aria-label="Usługi – Grafika" className="lg:col-span-2">
+              <h3 className="h6">Grafika</h3>
+              <div className="mt-2 grid grid-cols-2 gap-x-10">
+                <ul className="flex flex-col gap-2 text-sm">
+                  {gfxLeft.map(({ href, title }) => (
+                    <li key={href}>
+                      <Link
+                        href={href}
+                        className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                      >
+                        {title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="flex flex-col gap-2 text-sm">
+                  {gfxRight.map(({ href, title }) => (
+                    <li key={href}>
+                      <Link
+                        href={href}
+                        className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                      >
+                        {title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </nav>
+
+            <nav aria-label="Usługi – Witryny, Treści i Marketing">
               <h3 className="h6">Witryny</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (
@@ -121,6 +198,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+
               <h3 className="h6 mt-4">Tworzenie treści</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksTwo.map(({ href, title }) => (
@@ -134,26 +212,8 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </nav>
 
-            <nav aria-label="Usługi – Grafika" className="md:col-span-1">
-              <h3 className="h6">Grafika</h3>
-              <ul className="flex flex-col gap-2 text-sm">
-                {offerLinksThree.map(({ href, title }) => (
-                  <li key={href}>
-                    <Link
-                      href={href}
-                      className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <nav aria-label="Usługi – Marketing" className="md:col-span-1">
-              <h3 className="h6">Marketing</h3>
+              <h3 className="h6 mt-4">Marketing</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksFour.map(({ href, title }) => (
                   <li key={href}>
@@ -168,20 +228,8 @@ export default function Footer() {
               </ul>
             </nav>
 
-            <nav aria-label="Nawigacja" className="md:col-span-1">
-              <ul className="flex flex-col gap-2 text-sm">
-                {navLinks.map(({ href, label }) => (
-                  <li key={href}>
-                    <Link
-                      href={href}
-                      className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <h3 className="h6 mt-4">Inne</h3>
+            <nav aria-label="Nawigacja">
+              <h3 className="h6">Inne</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {otherLinks.map(({ href, label }) => (
                   <li key={href}>
@@ -208,28 +256,6 @@ export default function Footer() {
                 </li>
               </ul>
             </nav>
-
-            <section aria-label="Dane firmy i lokalizacja" className="md:col-span-1">
-              <address className="text-base text-[#080808] not-italic">
-                <p>
-                  <strong>{ORG.name}</strong>
-                </p>
-                <p>
-                  <a href={`tel:${ORG.phoneE164}`} className="hover-underline">
-                    {ORG.phoneDisplay}
-                  </a>
-                </p>
-                <p>
-                  <a href={`mailto:${ORG.email}`} className="hover-underline">
-                    {ORG.email}
-                  </a>
-                </p>
-              </address>
-
-              <div className="mt-3">
-                <p className="text-sm text-[#5e5e5e]">Godziny: pn–pt, 8:00–16:00</p>
-              </div>
-            </section>
           </div>
 
           <div className="mt-8 border-t border-gray-200 pt-4 text-[#5e5e5e]">
@@ -238,7 +264,7 @@ export default function Footer() {
                 © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
               </span>
               <span className="text-sm">Realizujemy projekty dla polskich firm na całym świecie — z siedzibą w Małopolsce, w okolicach Krakowa.</span>
-              <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer font-normal">
+              <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="mr-3 cursor-pointer font-normal">
                 #MadeWithNext.js
               </a>
             </div>
