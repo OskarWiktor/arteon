@@ -62,7 +62,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className="font-extrabold text-slate-600">3 </span>Projekt i wdrożenie
+        <span className="font-extrabold text-slate-600">3 </span>Projekt i realizacja
       </>
     ),
     description: <p>Projektujemy układ i wygląd, a następnie tworzymy stronę, blog lub sklep. Jesteśmy w stałym kontakcie, abyś miał pełny wgląd do postępów.</p>,

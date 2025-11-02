@@ -15,12 +15,12 @@ import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiF
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
-  description: 'Projekt i wdrożenie stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google od startu. Gwarancja i jasne zasady.',
+  description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google od startu. Gwarancja i jasne zasady.',
   keywords: ['strony internetowe Kraków', 'sklepy internetowe', 'tworzenie stron', 'branding', 'treści na stronę', 'marketing internetowy', 'widoczność w Google'],
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
-    description: 'Projekt i wdrożenie stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google od startu. Gwarancja i jasne zasady.',
+    description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google od startu. Gwarancja i jasne zasady.',
     url: 'https://www.arteonagency.pl/',
     type: 'website',
   },

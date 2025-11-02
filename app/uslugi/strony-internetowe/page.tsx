@@ -34,12 +34,12 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
-  title: 'Strony internetowe - projekt i wdrożenie | Arteon',
+  title: 'Strony internetowe - projekt i realizacja | Arteon',
   description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
   keywords: ['strony internetowe', 'tworzenie stron', 'projektowanie stron www', 'strona firmowa', 'widoczność w Google', 'WCAG'],
   alternates: { canonical: '/uslugi/strony-internetowe' },
   openGraph: {
-    title: 'Strony internetowe - projekt i wdrożenie | Arteon',
+    title: 'Strony internetowe - projekt i realizacja | Arteon',
     description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
     url: 'https://www.arteonagency.pl/uslugi/strony-internetowe',
     type: 'website',

@@ -36,7 +36,7 @@ function ServiceSchema() {
     baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
     serviceName: 'Projekt graficzny strony',
-    description: 'Makieta i projekt UI strony: czytelny layout, system komponentów, zgodność z WCAG i przygotowanie pod wdrożenie.',
+    description: 'Makieta i projekt UI strony: czytelny layout, system komponentów, zgodność z WCAG i przygotowanie pod realizację.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });

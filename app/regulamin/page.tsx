@@ -150,7 +150,7 @@ export default function TermsPage() {
           <Gap variant="line" size="sm" />
 
           <SectionInfo id="gwarancja" title="11. Gwarancja i wsparcie">
-            <p>11.1. Gwarancja na wdrożenie: 60 dni od odbioru - obejmuje błędy implementacyjne.</p>
+            <p>11.1. Gwarancja na realizacja: 60 dni od odbioru - obejmuje błędy implementacyjne.</p>
             <p>11.2. Gwarancja nie obejmuje: nowych funkcji, zmian przeglądarek/usług zewnętrznych, zdarzeń po stronie hostingu, działań osób trzecich.</p>
             <p>11.3. Po gwarancji: prace serwisowe według indywidualnej wyceny (stawka nie niższa niż 50 zł brutto/h).</p>
           </SectionInfo>

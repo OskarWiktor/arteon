@@ -45,7 +45,7 @@ export default function AboutPage() {
         <SectionInfo
           title="Dlaczego powstaliśmy?"
           description="Firmy nie potrzebują już „samej strony”. Potrzebują klarownej oferty, treści, które prowadzą odbiorcę krok po kroku, oraz widoczności, która buduje się od pierwszego dnia. Dlatego działamy w
-            modelu: strategia → projekt → wdrożenie → widoczność."
+            modelu: strategia → projekt → realizacja → widoczność."
         ></SectionInfo>
 
         <Gap variant="line" />

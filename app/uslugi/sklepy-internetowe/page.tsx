@@ -36,12 +36,12 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
-  title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
+  title: 'Sklepy internetowe - projekt i realizacja | Arteon',
   description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-  keywords: ['sklepy internetowe', 'tworzenie sklepów online', 'e-commerce', 'wdrożenie sklepu', 'opisy produktów', 'widoczność w Google'],
+  keywords: ['sklepy internetowe', 'tworzenie sklepów online', 'e-commerce', 'realizacja sklepu', 'opisy produktów', 'widoczność w Google'],
   alternates: { canonical: '/uslugi/sklepy-internetowe' },
   openGraph: {
-    title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
+    title: 'Sklepy internetowe - projekt i realizacja | Arteon',
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
     url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
     type: 'website',

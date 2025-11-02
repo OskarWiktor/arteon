@@ -89,7 +89,7 @@ export default function OfferOptimizationSEO() {
           </p>
           <br />
           <p>
-            <strong>Mierzymy efekty każdej zmiany.</strong> Przed wdrożeniem dodajemy na Twojej witrynie narzędzia analityczne oraz zapisujemy stan bieżący, a po publikacji sprawdzamy, jak poprawił
+            <strong>Mierzymy efekty każdej zmiany.</strong> Przed realizacją dodajemy na Twojej witrynie narzędzia analityczne oraz zapisujemy stan bieżący, a po publikacji sprawdzamy, jak poprawił
             się czas ładowania, pozycje i wejścia z Google. Wiesz dokładnie, co zadziałało.
           </p>
         </SectionInfo>

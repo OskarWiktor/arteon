@@ -365,7 +365,7 @@ export default function OfferMarketingPage() {
               answer: 'Nie. Audyt SEO to diagnoza i plan. Wzrost pozycji pojawia się po wdrożeniu rekomendacji: poprawkach technicznych, uporządkowaniu treści i innym indywidualnym zadaniom.',
             },
             {
-              question: 'Czy zajmujecie się wdrożeniem zaleceń po audycie SEO?',
+              question: 'Czy zajmujecie się realizacją zaleceń po audycie SEO?',
               answer: 'Tak. Po audycie przechodzimy do optymalizacji SEO: poprawiamy prędkość, meta, strukturę i dane strukturalne, porządkujemy treści. Możemy też prowadzić dalsze pozycjonowanie.',
             },
             {

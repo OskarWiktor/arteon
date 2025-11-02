@@ -104,7 +104,7 @@ export default function OfferMarketingHubPage() {
             },
             {
               title: 'Raporty i decyzje oparte na danych',
-              description: <>Przed wdrożeniem jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak abyś miał pewność, że marketing z nami będzie skuteczny.</>,
+              description: <>Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak abyś miał pewność, że marketing z nami będzie skuteczny.</>,
               icon: <IoAnalytics className="h-6 w-6 text-slate-500" />,
             },
             {
