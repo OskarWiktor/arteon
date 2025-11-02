@@ -297,6 +297,7 @@ export default function OfferWebPage() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe"
           items={[
             {

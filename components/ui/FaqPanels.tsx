@@ -7,7 +7,6 @@ import { FiPlus, FiMinus } from 'react-icons/fi';
 interface FaqPanelsItem {
   question: string;
   answer: string | ReactNode;
-  /** Opcjonalny czysty tekst do schema.org (bez HTML). Jeśli brak, a answer jest stringiem – użyjemy go. */
   answerSchemaText?: string;
 }
 
@@ -21,9 +20,15 @@ interface FaqPanelsProps {
 }
 
 export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle = 'FAQ', generateSchema = true, pageUrl, openByDefault = 0 }: FaqPanelsProps) {
-  const [activeIndex, setActiveIndex] = useState<number | null>(openByDefault > 0 ? 0 : null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
+
+  useEffect(() => {
+    if (openByDefault > 0 && items.length > 0) {
+      setActiveIndex(0);
+    }
+  }, []);
 
   const toggle = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index));
@@ -86,7 +91,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
       </h2>
 
       {items.map((item, index) => {
-        const isOpen = activeIndex === index || (openByDefault > 0 && index < openByDefault && activeIndex === null);
+        const isOpen = activeIndex === index;
         const buttonId = `faq-q-${index}`;
         const panelId = `faq-a-${index}`;
 
@@ -95,9 +100,9 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
             key={index}
             className={[
               'my-4 overflow-hidden rounded-2xl border bg-white',
-              'hover:border-indigo-300 hover:shadow-md',
-              isOpen ? 'border-indigo-300' : 'border-gray-300',
-              'focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-white',
+              'hover:border-slate-300 hover:shadow-md',
+              isOpen ? 'border-slate-300' : 'border-gray-300',
+              'focus-within:ring-2 focus-within:ring-slate-500 focus-within:ring-offset-2 focus-within:ring-offset-white',
             ].join(' ')}
           >
             <button
@@ -110,7 +115,7 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
                 'flex w-full cursor-pointer items-center justify-between px-5 py-3 text-left transition',
-                'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600',
+                'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-600',
                 'md:px-6 md:py-4',
               ].join(' ')}
               aria-expanded={isOpen}

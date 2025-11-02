@@ -24,7 +24,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media' },
   openGraph: {
     title: 'Szablony postów social media | Arteon',
-  description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
+    description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
     type: 'website',
   },
@@ -54,7 +54,12 @@ export default function OfferDesignSzablonyPostowPage() {
     <>
       <HeroBanner
         title="Szablony postów social media"
-        description={<>Przyspiesz publikacje zachowując spójny i profesjonalny styl swojej marki. Projektujemy edytowalne szablony postów do Instagrama, Facebooka, LinkedIna i TikToka – gotowe do szybkiej edycji i użycia.</>}
+        description={
+          <>
+            Przyspiesz publikacje zachowując spójny i profesjonalny styl swojej marki. Projektujemy edytowalne szablony postów do Instagrama, Facebooka, LinkedIna i TikToka – gotowe do szybkiej edycji
+            i użycia.
+          </>
+        }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
@@ -88,7 +93,8 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <SectionInfo title="Co zyskujesz dzięki szablonom postów?">
           <p>
-            <strong>Stały, rozpoznawalny styl</strong> – Szablony pomagają utrzymać wspólny wygląd całej Twojej komunikacji, dzięki czemu odbiorca łatwiej zapamięta Twoją markę, a profil zyska profesjonalny wygląd.
+            <strong>Stały, rozpoznawalny styl</strong> – Szablony pomagają utrzymać wspólny wygląd całej Twojej komunikacji, dzięki czemu odbiorca łatwiej zapamięta Twoją markę, a profil zyska
+            profesjonalny wygląd.
           </p>
 
           <br />
@@ -147,15 +153,12 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <Gap size="sm" />
 
-        <ContactForm
-          title="Zamów szablony postów"
-          description="Napisz czym się zajmujesz a my stworzymy wycenę"
-          defaultSubject="Szablony postów social media"
-        />
+        <ContactForm title="Zamów szablony postów" description="Napisz czym się zajmujesz a my stworzymy wycenę" defaultSubject="Szablony postów social media" />
 
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media"
           title="Najczęstsze pytania o szablony postów"
           items={[

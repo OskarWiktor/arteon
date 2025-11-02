@@ -328,8 +328,8 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
           openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
           items={[
             {
               question: 'Co dokładnie sprawdza audyt SEO i jakie są najczęstsze blokery?',

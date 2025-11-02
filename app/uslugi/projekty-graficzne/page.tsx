@@ -411,7 +411,10 @@ export default function OfferDesignPage() {
               title: 'Szablony postów na social media',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikację, tworząc spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i eksportu z czytelną hieratchią treści i miejscem na wezwanie do działania.</p>
+                  <p className="mb-3 text-sm">
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikację, tworząc spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
+                    eksportu z czytelną hieratchią treści i miejscem na wezwanie do działania.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
                       Przejdź do oferty
@@ -425,7 +428,9 @@ export default function OfferDesignPage() {
               title: 'Kupony rabatowe i vouchery',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Kupony rabatowe i vouchery, które zachęcają Twoich klientów do powrotu i wspierają sprzedaż. Dostarczamy gotowe pliki do druku, spójne z wizerunkiem Twojej marki.</p>
+                  <p className="mb-3 text-sm">
+                    Kupony rabatowe i vouchery, które zachęcają Twoich klientów do powrotu i wspierają sprzedaż. Dostarczamy gotowe pliki do druku, spójne z wizerunkiem Twojej marki.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera">
                       Przejdź do oferty
@@ -439,7 +444,9 @@ export default function OfferDesignPage() {
               title: 'Projekt cennika',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Profesjonalne cenniki, które porządkują Twoją ofertę i budują profesjonalny wizerunek. Dostarczamy pliki gotowe do druku oraz dodania na stronę czy media społecznościowe.</p>
+                  <p className="mb-3 text-sm">
+                    Profesjonalne cenniki, które porządkują Twoją ofertę i budują profesjonalny wizerunek. Dostarczamy pliki gotowe do druku oraz dodania na stronę czy media społecznościowe.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-cennika">
                       Przejdź do oferty
@@ -453,7 +460,10 @@ export default function OfferDesignPage() {
               title: 'Karty lojalnościowe',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Tworzymy projekty kart lojalnościowych, które zachęcają do regularnych powrotów Twoich klientów. Projektujemy czytelne układy z miejscem na pieczątki. Otrzymujesz gotowe pliki do druku.</p>
+                  <p className="mb-3 text-sm">
+                    Tworzymy projekty kart lojalnościowych, które zachęcają do regularnych powrotów Twoich klientów. Projektujemy czytelne układy z miejscem na pieczątki. Otrzymujesz gotowe pliki do
+                    druku.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej">
                       Przejdź do oferty
@@ -467,7 +477,9 @@ export default function OfferDesignPage() {
               title: 'Projekt menu restauracji',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne układy, ze spójną typografią zgodnie z wizerunkiem Twojej firmy. Otrzymujesz pliki do druku oraz wersję online.</p>
+                  <p className="mb-3 text-sm">
+                    Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne układy, ze spójną typografią zgodnie z wizerunkiem Twojej firmy. Otrzymujesz pliki do druku oraz wersję online.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-menu-restauracji">
                       Przejdź do oferty
@@ -494,6 +506,7 @@ export default function OfferDesignPage() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
           title="Najczęstsze pytania o projekty graficzne"
           items={[

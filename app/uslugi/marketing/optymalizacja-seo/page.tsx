@@ -312,6 +312,7 @@ export default function OfferOptimizationSEO() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo"
           items={[
             {

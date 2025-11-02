@@ -266,6 +266,7 @@ export default function OfferContentPage() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-tresci"
           items={[
             {

@@ -62,8 +62,9 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Tworzymy rozmaite projekty graficzne. Od projektów do druku, jak wizytówki czy ulotki, przez projekty do mediów społecznościowych oraz stron, po pełne identyfikacje wizualne i projekty nadruków na odzież. Opieramy się na
-                    psychologii, dzięki czemu nasze projekty trafiają do odpowiednich grup odbiorczych, tworząc dla Ciebie idealne środowisko do pozyskiwania najlepszych klientów
+                    Tworzymy rozmaite projekty graficzne. Od projektów do druku, jak wizytówki czy ulotki, przez projekty do mediów społecznościowych oraz stron, po pełne identyfikacje wizualne i
+                    projekty nadruków na odzież. Opieramy się na psychologii, dzięki czemu nasze projekty trafiają do odpowiednich grup odbiorczych, tworząc dla Ciebie idealne środowisko do
+                    pozyskiwania najlepszych klientów
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/projekty-graficzne">
@@ -80,7 +81,9 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje webowe, dopasowując technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny zgodne z krajowymi i międzynarodowymi wymogami prawnymi (m.in RODO, WCAG 2.1 AA), oferując przy tym bezpłatne wsparcie. Każdy proces pracy tłumaczymy jak najprostszym językiem, dzięki czemu nie musisz się martwić jeśli nie posiadasz wiedzy technicznej.
+                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje webowe, dopasowując technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny zgodne z krajowymi i
+                    międzynarodowymi wymogami prawnymi (m.in RODO, WCAG 2.1 AA), oferując przy tym bezpłatne wsparcie. Każdy proces pracy tłumaczymy jak najprostszym językiem, dzięki czemu nie musisz
+                    się martwić jeśli nie posiadasz wiedzy technicznej.
                   </p>
                   <div className="mt-auto flex gap-4">
                     <Button arrow link="/uslugi/strony-internetowe">
@@ -103,7 +106,9 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn jak i całościowo firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam gdzie szukają Cię klienci. Zajmujemy się również tworzeniem kampanii reklamowych jak i prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc zaproponować działania, które trafiają dokładnie w Twoją grupę odbiorców.
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn jak i całościowo firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam gdzie szukają Cię klienci. Zajmujemy się
+                    również tworzeniem kampanii reklamowych jak i prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc zaproponować działania,
+                    które trafiają dokładnie w Twoją grupę odbiorców.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/marketing">
@@ -120,8 +125,8 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na witryny internetowe oraz platformy społecznościowe, które w jasny sposób pokazują Twoją ofertą i Twoje kompetencje. Wszystko
-                    to w oparciu o rozwiązywanie realnych problemów Twoich klientów.
+                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na witryny internetowe oraz platformy społecznościowe, które w jasny sposób pokazują Twoją ofertą i Twoje kompetencje.
+                    Wszystko to w oparciu o rozwiązywanie realnych problemów Twoich klientów.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/tworzenie-tresci">

@@ -66,7 +66,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             gtag('config', 'G-89KYXWSGYS'); // automatyczny pierwszy page_view
           `}
         </Script>
-        
+
         <Script id="arteon-globals" strategy="beforeInteractive">
           {`
             window.__GA_ID = ${GA_ID ? JSON.stringify(GA_ID) : 'undefined'};

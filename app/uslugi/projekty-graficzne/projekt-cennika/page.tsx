@@ -24,7 +24,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika' },
   openGraph: {
     title: 'Projekt cennika | Arteon',
-  description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
+    description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
     type: 'website',
   },
@@ -54,11 +54,7 @@ export default function OfferDesignCennikPage() {
     <>
       <HeroBanner
         title="Projekt cennika"
-        description={
-          <>
-            Projektujemy przejrzyste cenniki przygotowane do druku wraz z wersją cyfrową. Zbuduj profesjonalny wygląd poprzez indywidualny projekt swojego cennika.
-          </>
-        }
+        description={<>Projektujemy przejrzyste cenniki przygotowane do druku wraz z wersją cyfrową. Zbuduj profesjonalny wygląd poprzez indywidualny projekt swojego cennika.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
@@ -88,15 +84,13 @@ export default function OfferDesignCennikPage() {
         <Gap size="xs" />
 
         <SectionInfo title="Dlaczego warto mieć profesjonalny projekt cennika?">
-          <p>
-            Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia porównanie, zachęca do wyboru droższych opcji oraz buduje profesjonalny wizerunek Twojej firmy.
-          </p>
+          <p>Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia porównanie, zachęca do wyboru droższych opcji oraz buduje profesjonalny wizerunek Twojej firmy.</p>
 
           <br />
 
           <p>
-            <strong>Wygląd ma wpływ na decyzje zakupowe.</strong> Badania pokazują, że sposób prezentacji cen może zwiększyć sprzedaż nawet o 20%. Odpowiednia estetyka i hierarchia pomaga odbiorcy wybrać
-            właściwą opcję.
+            <strong>Wygląd ma wpływ na decyzje zakupowe.</strong> Badania pokazują, że sposób prezentacji cen może zwiększyć sprzedaż nawet o 20%. Odpowiednia estetyka i hierarchia pomaga odbiorcy
+            wybrać właściwą opcję.
           </p>
 
           <br />
@@ -149,15 +143,12 @@ export default function OfferDesignCennikPage() {
 
         <Gap size="sm" />
 
-        <ContactForm
-          title="Zamów projekt cennika"
-          description="Opisz, czym się zajmujesz a my przygotujemy dla Ciebie propozycję układu, termin oraz wycenę."
-          defaultSubject="Projekt cennika"
-        />
+        <ContactForm title="Zamów projekt cennika" description="Opisz, czym się zajmujesz a my przygotujemy dla Ciebie propozycję układu, termin oraz wycenę." defaultSubject="Projekt cennika" />
 
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika"
           title="Najczęstsze pytania o projekt cennika"
           items={[

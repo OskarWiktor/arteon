@@ -161,6 +161,7 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
           items={[
             {

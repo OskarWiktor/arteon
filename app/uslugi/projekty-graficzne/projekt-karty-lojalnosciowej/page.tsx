@@ -24,7 +24,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
   openGraph: {
     title: 'Projekt karty lojalnościowej | Arteon',
-  description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
+    description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     type: 'website',
   },
@@ -54,9 +54,7 @@ export default function OfferDesignKartaPage() {
     <>
       <HeroBanner
         title="Projekt karty lojalnościowej"
-        description={
-          <>Zachęć klientów do powrotu, przez estetyczne karty lojalnościowe. Projektujemy czytelne i eleganckie karty, które wspierają sprzedaż i budują relację z klientem.</>
-        }
+        description={<>Zachęć klientów do powrotu, przez estetyczne karty lojalnościowe. Projektujemy czytelne i eleganckie karty, które wspierają sprzedaż i budują relację z klientem.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
@@ -160,6 +158,7 @@ export default function OfferDesignKartaPage() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej"
           title="Najczęstsze pytania o karty lojalnościowe"
           items={[

@@ -315,7 +315,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
 
           {article.faq?.length ? (
             <>
-              <FaqPanels title="Najczęstsze pytania" subtitle="FAQ" items={article.faq} pageUrl={url} />
+              <FaqPanels openByDefault={1} title="Najczęstsze pytania" subtitle="FAQ" items={article.faq} pageUrl={url} />
             </>
           ) : null}
 

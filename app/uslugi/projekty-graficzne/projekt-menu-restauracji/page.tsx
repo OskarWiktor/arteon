@@ -24,7 +24,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji' },
   openGraph: {
     title: 'Projekt menu restauracji | Arteon',
-  description: 'Projektujemy menu dla restauracji, kawiarni i barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
+    description: 'Projektujemy menu dla restauracji, kawiarni i barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
   },
@@ -158,6 +158,7 @@ export default function OfferDesignMenuPage() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji"
           title="Najczęstsze pytania dotyczące projektów menu restauracyjnego"
           items={[

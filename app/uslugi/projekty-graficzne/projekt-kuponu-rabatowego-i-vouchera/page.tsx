@@ -24,7 +24,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
   openGraph: {
     title: 'Kupony rabatowe i vouchery | Arteon',
-  description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
+    description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     type: 'website',
   },
@@ -85,7 +85,8 @@ export default function OfferDesignVoucheryPage() {
 
         <SectionInfo title="Dlaczego warto inwestować w kupony i vouchery?">
           <p>
-            <strong>Kupon oraz voucher to drobny projektowy detal, który przynosi duży efekt.</strong> Daje pretekst do kontaktu, zakupów i powrotu klienta. Estetyczny projekt buduje pozytywne emocje, wyróżnia markę i buduje profesjonalny wizerunek.
+            <strong>Kupon oraz voucher to drobny projektowy detal, który przynosi duży efekt.</strong> Daje pretekst do kontaktu, zakupów i powrotu klienta. Estetyczny projekt buduje pozytywne emocje,
+            wyróżnia markę i buduje profesjonalny wizerunek.
           </p>
 
           <br />
@@ -148,6 +149,7 @@ export default function OfferDesignVoucheryPage() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera"
           title="Najczęstsze pytania dotyczące kuponów i voucherów"
           items={[

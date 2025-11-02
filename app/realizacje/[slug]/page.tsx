@@ -356,7 +356,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.faq?.length ? (
             <>
               <Gap size="sm" variant="line" />
-              <FaqPanels title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} pageUrl={projectUrl(project.slug)} />
+              <FaqPanels openByDefault={1} title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} pageUrl={projectUrl(project.slug)} />
             </>
           ) : null}
 

@@ -328,6 +328,7 @@ export default function OfferSeoSubscription() {
         <Gap variant="line" />
 
         <FaqPanels
+          openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron"
           items={[
             {
