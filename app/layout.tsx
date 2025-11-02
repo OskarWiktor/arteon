@@ -57,6 +57,16 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="pl">
       <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-89KYXWSGYS" />
+        <Script id="ga-init">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-89KYXWSGYS'); // automatyczny pierwszy page_view
+          `}
+        </Script>
+        
         <Script id="arteon-globals" strategy="beforeInteractive">
           {`
             window.__GA_ID = ${GA_ID ? JSON.stringify(GA_ID) : 'undefined'};
