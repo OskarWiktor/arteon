@@ -30,8 +30,8 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
 import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-import { buildServiceSchema } from '@/lib/serviceShema';
 import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Strony internetowe - projekt i wdrożenie | Arteon',

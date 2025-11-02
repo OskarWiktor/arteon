@@ -98,35 +98,19 @@ export default function ContactPage() {
         <SectionSteps
           items={[
             {
-              title: (
-                <>
-                  <span className="text-amber-600">1 </span>Wypełniasz formularz
-                </>
-              ),
+              title: <>Wypełniasz formularz</>,
               description: <>Opisujesz swoją firmę, pomysł na rozwój oraz swoje potrzeby</>,
             },
             {
-              title: (
-                <>
-                  <span className="text-amber-600">2 </span>Analizujemy potrzeby
-                </>
-              ),
+              title: <>Analizujemy potrzeby</>,
               description: <>Sprawdzamy Twoją branżę, analizujemy cele i tworzymy plan</>,
             },
             {
-              title: (
-                <>
-                  <span className="text-amber-600">3 </span>Otrzymujesz ofertę
-                </>
-              ),
+              title: <>Otrzymujesz ofertę</>,
               description: <>Wysyłamy ofertę wraz z wyceną i przewidywanym terminem realizacji</>,
             },
             {
-              title: (
-                <>
-                  <span className="text-amber-600">4 </span>Startujemy z projektem
-                </>
-              ),
+              title: <>Startujemy z projektem</>,
               description: <>Decydujesz, kiedy ruszamy z realizacją</>,
             },
           ]}

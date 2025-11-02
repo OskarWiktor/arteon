@@ -16,7 +16,7 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceShema';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Pozycjonowanie stron — stały wzrost widoczności i zapytań | Arteon',
@@ -193,7 +193,7 @@ export default function OfferSeoSubscription() {
               title: '3. Produkcja treści i poprawa podstron',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Publikujemy artykuły, rozwijamy sekcje ofert i porządkujemy elementy, które wpływają na widoczność i konwersję.</p>
+                  <p className="mb-3 text-sm">Publikujemy artykuły, rozwijamy sekcje ofert i porządkujemy elementy, które wpływają na widoczność i sprzedaż.</p>
                 </div>
               ),
             },

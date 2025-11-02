@@ -14,7 +14,7 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceShema';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Projekt ulotki | Arteon',

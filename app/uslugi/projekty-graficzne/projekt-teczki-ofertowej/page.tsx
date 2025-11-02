@@ -15,7 +15,7 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceShema';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',

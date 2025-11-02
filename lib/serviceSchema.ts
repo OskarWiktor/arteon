@@ -1,12 +1,4 @@
-// lib/schema.ts
-export function buildServiceSchema(params: {
-  baseUrl: string; // np. https://www.arteonagency.pl
-  path: string; // np. /uslugi/marketing/audyt-seo
-  serviceName: string; // np. "Audyt SEO"
-  description: string; // krótki opis usługi
-  availableLanguages?: string[];
-  includeServiceChannel?: boolean;
-}) {
+export function buildServiceSchema(params: { baseUrl: string; path: string; serviceName: string; description: string; availableLanguages?: string[]; includeServiceChannel?: boolean }) {
   const { baseUrl, path, serviceName, description, availableLanguages = ['pl'], includeServiceChannel = true } = params;
 
   const url = `${baseUrl}${path}`;

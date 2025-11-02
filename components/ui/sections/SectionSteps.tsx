@@ -23,12 +23,14 @@ interface SectionStepsProps {
   btnTwo?: string;
   btnTwoLink?: string;
   description?: ReactNode;
-  grid?: 'one' | 'two' | 'four';
+  grid?: 'one' | 'two' | 'three' | 'four';
   items: SectionStepItem[];
   backgroundImage?: string;
   overlay?: 'none' | 'black' | 'white';
   disclaimer?: ReactNode;
   headingLevel?: HeadingLevel;
+  /** 🔢 Pokazuje numer w kwadracie zamiast ikony */
+  showIndex?: boolean;
 }
 
 export default function SectionSteps({
@@ -46,6 +48,7 @@ export default function SectionSteps({
   overlay = 'none',
   disclaimer,
   headingLevel = 'h2',
+  showIndex = false,
 }: SectionStepsProps) {
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
@@ -55,6 +58,7 @@ export default function SectionSteps({
 
   const count = items?.length ?? 0;
 
+  // 🔹 logika oryginalnego grida + dodana opcja "three"
   let gridColsSm = 'sm:grid-cols-1';
   let gridColsMd = '';
   let gridColsLg = '';
@@ -67,9 +71,9 @@ export default function SectionSteps({
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-2';
-  } else if (count === 3) {
+  } else if (count === 3 || grid === 'three') {
     gridColsSm = 'sm:grid-cols-1';
-    gridColsMd = 'md:grid-cols-1';
+    gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-3';
   } else if (count === 4 || grid === 'four') {
     gridColsSm = 'sm:grid-cols-1';
@@ -93,6 +97,7 @@ export default function SectionSteps({
       aria-labelledby={title ? 'steps-title' : undefined}
     >
       {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
+
       <Tag className="relative z-10">
         {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
 
@@ -106,22 +111,27 @@ export default function SectionSteps({
 
         <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
           {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
+            const hasVisual = showIndex || icon || imageSrc;
+
             return (
               <li key={index} className="flex flex-col items-stretch">
-                <article className="flex h-full w-full flex-col rounded-2xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
-                  <div className="flex items-center">
-                    {imageSrc && <Image src={imageSrc} alt={imageAlt ?? ''} width={36} height={36} className="pointer-events-none mr-2 select-none" aria-hidden={imageAlt ? undefined : true} />}
+                <article className="flex h-full w-full flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
+                  {hasVisual && (
+                    <div className="mb-4 flex justify-start">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-600 shadow-sm ring-1 ring-black/5">
+                        {showIndex ? (
+                          <span className="text-base font-semibold">{index + 1}</span>
+                        ) : imageSrc ? (
+                          <Image src={imageSrc} alt={imageAlt ?? ''} width={28} height={28} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
+                        ) : (
+                          icon
+                        )}
+                      </div>
+                    </div>
+                  )}
 
-                    {icon && (
-                      <span className="mr-2 text-3xl font-bold text-slate-500" aria-hidden={true}>
-                        {icon}
-                      </span>
-                    )}
-
-                    <ArticleHeadingTag className="h4 z-10">{itemTitle}</ArticleHeadingTag>
-                  </div>
-
-                  {itemSubtitle && <span className="mt-1 text-base text-[#5e5e5e]">{itemSubtitle}</span>}
+                  <ArticleHeadingTag className="h4 mb-1 text-[#080808]">{itemTitle}</ArticleHeadingTag>
+                  {itemSubtitle && <span className="text-base text-[#5e5e5e]">{itemSubtitle}</span>}
 
                   <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
                 </article>

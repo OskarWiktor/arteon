@@ -29,8 +29,8 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import { IoSparkles } from 'react-icons/io5';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import { buildServiceSchema } from '@/lib/serviceShema';
 import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 

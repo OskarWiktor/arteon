@@ -33,7 +33,7 @@ import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { GoLaw } from 'react-icons/go';
 import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceShema';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i wdrożenie | Arteon',
@@ -303,7 +303,7 @@ export default function OfferWebPage() {
                   'Do 1000 produktów',
                   'Projekt graficzny premium - więcej możliwości dzięki technologii',
                   'Najwyższy poziom SEO technicznego',
-                  'Koszyk, checkout i integracje płatności skonfigurowane pod konwersję',
+                  'Koszyk, checkout i integracje płatności skonfigurowane pod sprzedaż',
                   'Sekcje kolekcji, bestsellery i rekomendacje produktów',
                   'Blog i treści edukacyjne wspierające ruch organiczny',
                   'WCAG 2.1 AA + Deklaracja Dostępności',

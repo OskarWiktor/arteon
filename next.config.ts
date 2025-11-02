@@ -19,6 +19,9 @@ const nextConfig = {
       { source: '/calculator', destination: '/', permanent: true },
 
       { source: '/uslugi/grafika', destination: '/uslugi/projekty-graficzne', permanent: true },
+
+      { source: '/realizacje/cennik-dla-salonu-kosmetycznego', destination: '/realizacje/', permanent: true },
+
     ];
   },
 };

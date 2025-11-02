@@ -13,8 +13,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-import { buildServiceSchema } from '@/lib/serviceShema';
 import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',

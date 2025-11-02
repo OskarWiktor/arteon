@@ -33,6 +33,9 @@ import {
   RiKey2Line,
   RiLifebuoyLine,
   RiMoneyDollarCircleLine,
+  RiCoupon2Line,
+  RiPriceTag3Line,
+  RiRestaurant2Line,
 } from 'react-icons/ri';
 
 import Script from 'next/script';
@@ -47,16 +50,22 @@ const SERVICES = [
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
   { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
+
+  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-social-media' },
+  { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
+  { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
+  { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
+  { name: 'Projekt menu restauracji', path: '/uslugi/projekty-graficzne/projekt-menu-restauracji' },
 ];
 
 function ItemListSchema() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https:/www.arteonagency.pl';
+  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
   const json = {
-    '@context': 'https:/schema.org',
+    '@context': 'https://schema.org',
     '@type': 'ItemList',
     '@id': `${base}/#projekty-graficzne-itemlist`,
     name: 'Projekty graficzne - oferta usług',
-    itemListOrder: 'http:/schema.org/ItemListOrderAscending',
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: SERVICES.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
@@ -94,7 +103,7 @@ export const metadata = {
   openGraph: {
     title: 'Projekty graficzne dla firm: logo, identyfikacja, wizytówki, ulotki, katalogi | Arteon',
     description: 'Kompleksowe projekty graficzne: od logo i identyfikacji po katalogi i layouty stron. Pliki do druku i online, spójność i prestiż.',
-    url: 'https:/www.arteonagency.pl/uslugi/projekty-graficzne',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
   },
 } as const;
@@ -136,7 +145,7 @@ export default function OfferDesignPage() {
         <SectionInfo title="Co zyskujesz dzięki projektom graficznym?">
           <p>
             <strong>Spójna identyfikacja wizualna zwiększa rozpoznawalność marki nawet o 80%</strong>{' '}
-            <a href="https:/www.lucidpress.com/blog/state-of-brand-consistency" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https://www.lucidpress.com/blog/state-of-brand-consistency" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Lucidpress - raport o spójności marek)
             </a>
             . Profesjonalny projekt graficzny sprawia, że Twoja firma jest łatwiejsza do zapamiętania i budzi większe zaufanie już przy pierwszym kontakcie.
@@ -147,7 +156,7 @@ export default function OfferDesignPage() {
           <p>
             <strong>Spójny wygląd marki ułatwia sprzedaż.</strong> Firmy utrzymujące jednolity brand notują średnio
             <strong> 10-20% wyższe przychody</strong>{' '}
-            <a href="https:/www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Marq - analiza przewagi konkurencyjnej)
             </a>
             . To logo, papier firmowy, katalog i teczka, które mówią jednym językiem - online, w druku i podczas spotkań z klientami.
@@ -171,10 +180,10 @@ export default function OfferDesignPage() {
 
           <p>
             <strong>Materiały drukowane nadal działają.</strong> 79% konsumentów deklaruje, że chętniej sięga po ofertę firm, które dostarczają estetyczne broszury, ulotki lub wizytówki{' '}
-            <a href="https:/www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https://www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (PrintPower - raport o zaufaniu do druku)
             </a>
-            . Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają konwersję w sprzedaży.
+            . Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają sprzedaż w sprzedaży.
           </p>
 
           <br />
@@ -249,6 +258,7 @@ export default function OfferDesignPage() {
           title="Projekty graficzne dla firm"
           subtitle="Kompleksowa oferta projektowa"
           description="Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik."
+          grid="two"
           items={[
             {
               icon: <RiIdCardLine className="h-8 w-8" />,
@@ -396,6 +406,76 @@ export default function OfferDesignPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Szablony postów na social media',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikację, tworząc spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i eksportu z czytelną hieratchią treści i miejscem na wezwanie do działania.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiCoupon2Line className="h-8 w-8" />,
+              title: 'Kupony rabatowe i vouchery',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Kupony rabatowe i vouchery, które zachęcają Twoich klientów do powrotu i wspierają sprzedaż. Dostarczamy gotowe pliki do druku, spójne z wizerunkiem Twojej marki.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPriceTag3Line className="h-8 w-8" />,
+              title: 'Projekt cennika',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Profesjonalne cenniki, które porządkują Twoją ofertę i budują profesjonalny wizerunek. Dostarczamy pliki gotowe do druku oraz dodania na stronę czy media społecznościowe.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-cennika">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiCoupon2Line className="h-8 w-8" />,
+              title: 'Karty lojalnościowe',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Tworzymy projekty kart lojalnościowych, które zachęcają do regularnych powrotów Twoich klientów. Projektujemy czytelne układy z miejscem na pieczątki. Otrzymujesz gotowe pliki do druku.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiRestaurant2Line className="h-8 w-8" />,
+              title: 'Projekt menu restauracji',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne układy, ze spójną typografią zgodnie z wizerunkiem Twojej firmy. Otrzymujesz pliki do druku oraz wersję online.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-menu-restauracji">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -414,7 +494,7 @@ export default function OfferDesignPage() {
         <Gap variant="line" />
 
         <FaqPanels
-          pageUrl="https:/www.arteonagency.pl/uslugi/projekty-graficzne"
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
           title="Najczęstsze pytania o projekty graficzne"
           items={[
             {

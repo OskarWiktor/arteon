@@ -16,7 +16,7 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceShema';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',

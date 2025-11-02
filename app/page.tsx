@@ -10,9 +10,8 @@ import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { GoLaw } from 'react-icons/go';
-import { IoAccessibility } from 'react-icons/io5';
 import { MdSupportAgent } from 'react-icons/md';
-import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine, RiDatabase2Line } from 'react-icons/ri';
+import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
@@ -54,7 +53,7 @@ export default function HomePage() {
         <SectionSteps
           subtitle="Cztery filary jakości"
           title="Elastyczny partner dla Twojej marki"
-          description="Prowadzimy kompleksowe działania w czterech kluczowych obszarach, dzięki czemu pracując z nami masz wszystko w jednym miejscu"
+          description="Prowadzimy kompleksowe działania rozwojowe w czterech kluczowych obszarach, dzięki czemu pracując z nami masz wszystko w jednym miejscu. Nie zależnie od Twojej branży oraz celów, znajdziemy najlepszy sposób aby rozwinąć Twój biznes, przyciągając właściwych odbiorców i klientów"
           items={[
             {
               imageSrc: '/assets/woda.png',
@@ -63,7 +62,7 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Tworzymy rozmaite projekty graficzne, przez projekty do drugu jak wizytówki czy ulotki, po projekty stron internetowych jak i całych identyfikacji wizualnych. Opieramy się na
+                    Tworzymy rozmaite projekty graficzne. Od projektów do druku, jak wizytówki czy ulotki, przez projekty do mediów społecznościowych oraz stron, po pełne identyfikacje wizualne i projekty nadruków na odzież. Opieramy się na
                     psychologii, dzięki czemu nasze projekty trafiają do odpowiednich grup odbiorczych, tworząc dla Ciebie idealne środowisko do pozyskiwania najlepszych klientów
                   </p>
                   <div className="mt-4">
@@ -81,8 +80,7 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Tworzymy strony internetowe, sklepy oraz blogi dopasowując odpowiednią technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny, które są zgodne z RODO, WCAG 2.1 i
-                    oferujemy pomoc we wszelkich kwestiach prawnych, dzięki czemu nie musisz się o nic martwić.
+                    Tworzymy strony internetowe, sklepy, blogi oraz aplikacje webowe, dopasowując technologię, która w Twoim przypadku będzie najlepsza. Tworzymy witryny zgodne z krajowymi i międzynarodowymi wymogami prawnymi (m.in RODO, WCAG 2.1 AA), oferując przy tym bezpłatne wsparcie. Każdy proces pracy tłumaczymy jak najprostszym językiem, dzięki czemu nie musisz się martwić jeśli nie posiadasz wiedzy technicznej.
                   </p>
                   <div className="mt-auto flex gap-4">
                     <Button arrow link="/uslugi/strony-internetowe">
@@ -105,8 +103,7 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Specjalizujemy się w pozycjonowaniu stron oraz sklepów, z nami zyskasz widoczność w Google i nie tylko. Zajmujemy się również tworzeniem kampanii reklamowych dla Google jak i
-                    social mediów. Analizujemy twoje grono odbiorców i proponujemy działania, które trafiają dokładnie tam gdzie szukają cie klienci.
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn jak i całościowo firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam gdzie szukają Cię klienci. Zajmujemy się również tworzeniem kampanii reklamowych jak i prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc zaproponować działania, które trafiają dokładnie w Twoją grupę odbiorców.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/marketing">
@@ -123,8 +120,8 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Tworzymy treści, które w jasny sposób pokazują Twoją ofertą i zachęcają do skorzystania z niej. Tworzymy treści do social mediów, na strony internetowe, sklepy czy blogi. Wszystko
-                    to w oparciu o realne rozwiązywanie problemów Twoich klientów. Z nami, jesteś widoczny dokładnie tam gdzie są Twoi klienci.
+                    Tworzymy treści sprzedażowe, promocyjne oraz edukacyjne na witryny internetowe oraz platformy społecznościowe, które w jasny sposób pokazują Twoją ofertą i Twoje kompetencje. Wszystko
+                    to w oparciu o rozwiązywanie realnych problemów Twoich klientów.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/tworzenie-tresci">
@@ -143,39 +140,31 @@ export default function HomePage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dostajesz współpracując z nami?"
+          title="Co możemy wnieść do Twojej marki?"
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'Treści dopasowane do marki',
+              title: 'Treści dopasowane do Twojego wymarzonego klienta',
               icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Projekt graficzny spójny online i offline',
+              title: 'Spójne projekty graficzne online oraz offline',
               icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Responsywność i dostępność (WCAG 2.1 AA)',
-              icon: <IoAccessibility className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Wsparcie prawne - polityki, regulaminy',
+              title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
               icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Strategie marketingowe oparte na emocjach',
+              title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
               icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
-            },
-            {
-              title: 'Łatwe zarządzanie treściami i produktami',
-              icon: <RiDatabase2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
               icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Stałe wsparcie po wdrożeniu',
+              title: 'Wsparcie w dalszym rozwoju po realizacji',
               icon: <MdSupportAgent className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -198,8 +187,8 @@ export default function HomePage() {
 
       <CTABaner
         title="Zacznijmy od rozmowy"
-        description="Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań - znajdziemy najlepszą drogę do efektu."
-        primaryLabel="Umów konsultację"
+        description="Z chęcią porozmawiamy o Twoim pomyśle, przejdź do strony kontaktu i opisz swoją wizję rozwoju"
+        primaryLabel="Kontakt"
         primaryLink="/kontakt"
         secondaryLabel="Poznaj ofertę"
         secondaryLink="/uslugi"

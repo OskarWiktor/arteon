@@ -13,8 +13,8 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
-import { buildServiceSchema } from '@/lib/serviceShema';
 import Script from 'next/script';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 export const metadata = {
   title: 'Projekt graficzny strony | Arteon',
@@ -53,7 +53,7 @@ export default function OfferDesignXxxPage() {
     <>
       <HeroBanner
         title="Projekt graficzny strony"
-        description={<>Wygląd, struktura i komfort użytkownika pracują na konwersję. Tworzymy makiety i layouty www zgodne z UX i SEO - estetyczne, czytelne i gotowe do wdrożenia.</>}
+        description={<>Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Tworzymy makiety i layouty www zgodne z UX i SEO - estetyczne, czytelne i gotowe do wdrożenia.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Portfolio"
@@ -205,7 +205,7 @@ export default function OfferDesignXxxPage() {
       </Wrapper>
       <CTABaner
         title="Daj stronie przewagę na starcie"
-        description="Stworzymy layout, który prowadzi wzrokiem i zwiększa konwersję."
+        description="Stworzymy layout, który prowadzi wzrokiem i zwiększa sprzedaż."
         primaryLabel="Skontaktuj się"
         primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"

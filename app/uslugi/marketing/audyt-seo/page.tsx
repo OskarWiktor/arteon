@@ -16,7 +16,7 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceShema';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
