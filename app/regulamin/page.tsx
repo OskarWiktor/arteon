@@ -29,7 +29,7 @@ export default function TermsPage() {
             <p>1.1. Usługodawca: Arteon </p>
             <p>1.2. NIP / REGON: 9442284430 / 528888241</p>
             <p>1.3. Adres do korespondencji: Zagacie, ul. Jaśminowa, nr 36, 32-070</p>
-            <p>1.4. E-mail do spraw umów i reklamacji: contact@arteonagency.com.</p>
+            <p>1.4. E-mail do spraw umów i reklamacji: kontakt@arteonagency.pl.</p>
             <p>1.5. Telefon: 516 466 255.</p>
             <p>1.6. Regulamin określa zasady świadczenia usług drogą elektroniczną na terytorium Polski.</p>
             <p>1.7. Język umowy: polski.</p>
@@ -180,7 +180,7 @@ export default function TermsPage() {
           <Gap variant="line" size="sm" />
 
           <SectionInfo id="reklamacje" title="14. Reklamacje">
-            <p>14.1. Zgłoszenie e-mailem na adres: contact@arteonagency.com z opisem problemu, datą i załącznikami.</p>
+            <p>14.1. Zgłoszenie e-mailem na adres: kontakt@arteonagency.pl z opisem problemu, datą i załącznikami.</p>
             <p>14.2. Odpowiedź w terminie 14 dni.</p>
             <p>14.3. Priorytet: naprawa w rozsądnym terminie; jeżeli naprawa obiektywnie niemożliwa - odpowiednia rekompensata.</p>
           </SectionInfo>

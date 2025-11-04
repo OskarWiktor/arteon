@@ -10,7 +10,7 @@ const ORG = {
   name: 'Arteon',
   phoneE164: '+48516466255',
   phoneDisplay: '516 466 255',
-  email: 'contact@arteonagency.com',
+  email: 'kontakt@arteonagency.pl',
   street: 'ul. Jaśminowa 36',
   locality: 'Zagacie',
   region: 'małopolskie',
@@ -30,7 +30,7 @@ function FooterSchemas() {
     url: BASE_URL,
     image: `${BASE_URL}/icon-512x512.png`,
     telephone: ORG.phoneE164,
-    email: 'contact@arteonagency.com',
+    email: 'kontakt@arteonagency.pl',
     address: {
       '@type': 'PostalAddress',
       streetAddress: ORG.street,

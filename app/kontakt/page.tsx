@@ -30,7 +30,7 @@ function ContactSchemas() {
     url: `${BASE_URL}`,
     image: `${BASE_URL}/icon-512x512.png`,
     telephone: '+48516466255',
-    email: 'contact@arteonagency.com',
+    email: 'kontakt@arteonagency.pl',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'ul. Jaśminowa 36',
@@ -140,7 +140,7 @@ export default function ContactPage() {
               icon: <RiMailLine />,
               description: (
                 <p>
-                  <a href="mailto:contact@arteonagency.com">contact@arteonagency.com</a>
+                  <a href="mailto:kontakt@arteonagency.pl">kontakt@arteonagency.pl</a>
                 </p>
               ),
             },
