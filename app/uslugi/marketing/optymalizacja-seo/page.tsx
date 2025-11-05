@@ -222,7 +222,7 @@ export default function OfferOptimizationSEO() {
           plans={[
             {
               name: 'Optymalizacja SEO: 1+ stron',
-              price: 'od 1 200 zł', // zmiana z 600 zł
+              price: 'od 600 zł', // zmiana z 600 zł
               description: 'Dla kogo: dla właścicieli prostych stron firmowych i landing pages ( stron z jedną podstroną ).',
               features: [
                 'Poprawa prędkości i czasu ładowania strony (Core Web Vitals)',
@@ -235,7 +235,7 @@ export default function OfferOptimizationSEO() {
             },
             {
               name: 'Optymalizacja SEO: 10+ stron',
-              price: 'od 2 200 zł', // zmiana z 1 200 zł
+              price: 'od 1 200 zł', // zmiana z 1 200 zł
               description: 'Dla kogo: dla właścicieli rozbudowanych stron firmowych lub małych sklepów.',
               features: [
                 'Wszystko z pakietu dla małych stron, a dodatkowo:',
@@ -248,7 +248,7 @@ export default function OfferOptimizationSEO() {
             },
             {
               name: 'Optymalizacja SEO: 30+ stron',
-              price: 'od 3 800 zł', // zmiana z 2 500 zł
+              price: 'od 2 500 zł', // zmiana z 2 500 zł
               description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
               features: [
                 'Wszystko z pakietu dla rozbudowanych stron, a dodatkowo:',
