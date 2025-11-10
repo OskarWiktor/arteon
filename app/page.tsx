@@ -30,8 +30,8 @@ export default function HomePage() {
   return (
     <>
       <HeroBaner
-        title="Agencja kreatywno-technologiczna"
-        description="Witaj w Arteon - agencji, która pomoże Ci rozwinąć Twój biznes online oraz offline"
+        title="Rozwiń swoją markę z nami"
+        description="Witaj w Arteon - miejscu, które pomoże Ci rozwinąć Twój biznes online oraz offline"
         backgroundImage="/assets/bg/abstract-bg2.webp"
         overlay="black"
         variant="center"
