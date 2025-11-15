@@ -126,7 +126,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
   return (
     <section className="w-full" aria-labelledby="testimonials-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="testimonials-heading" className="md:mb-2 reveal-animation">
+      <h2 id="testimonials-heading" className="reveal-animation md:mb-2">
         {title}
       </h2>
 
