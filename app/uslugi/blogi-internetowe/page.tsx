@@ -32,6 +32,7 @@ import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
@@ -200,6 +201,10 @@ export default function OfferBlogPage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

@@ -16,6 +16,7 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
@@ -141,6 +142,10 @@ export default function OfferDesignXxxPage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

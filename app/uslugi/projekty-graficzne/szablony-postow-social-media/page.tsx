@@ -16,6 +16,7 @@ import { IoColorPalette } from 'react-icons/io5';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Szablony postów social media | Arteon',
@@ -142,6 +143,10 @@ export default function OfferDesignSzablonyPostowPage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

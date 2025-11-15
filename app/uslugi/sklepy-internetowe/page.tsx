@@ -34,6 +34,7 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { GoLaw } from 'react-icons/go';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i realizacja | Arteon',
@@ -244,6 +245,10 @@ export default function OfferWebPage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

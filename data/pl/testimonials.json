@@ -9,28 +9,48 @@
     "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
   },
   {
-    "id": "vml-case-2024",
-    "author": "Senior PM",
-    "role": "VML (Global)",
+    "id": "oferteo-hanala-2025",
+    "author": "HanaLa",
+    "role": "Projekt strony i sklepu ",
     "rating": 5,
-    "quote": "Dostarczali szybko i bezbłędnie. Dbałość o detale i komunikacja jak w topowych zespołach enterprise.",
-    "source": "linkedin",
-    "link": "https://example.com/opinia-vml"
+    "quote": "Profesjonalny strona i sklep w adekwatnej cenie. Polecam",
+    "source": "oferteo",
+    "link": "https://www.oferteo.pl/arteon/firma/6229061"
   },
   {
-    "id": "local-shop-2025",
-    "author": "Aleksandra K.",
-    "role": "Owner, e-commerce",
-    "rating": 4.5,
-    "quote": "Sklep gotowy do sprzedaży, SEO ogarnięte, a ja mam jasny plan dalszego rozwoju. Polecam.",
-    "source": "oferteo"
+    "id": "oferteo-magda-2025",
+    "author": "Magda",
+    "role": "Usługi graficzne, projekt logo i strony",
+    "rating": 5,
+    "quote": "Dawno mi się tak dobrze nie współpracowało. Pan Oskar zaproponował mi naprawdę fajne rozwiązania. Cena adekwatna do jakości.",
+    "source": "oferteo",
+    "link": "https://www.oferteo.pl/arteon/firma/6229061"
   },
   {
-    "id": "local-asd",
-    "author": "Algref",
-    "role": "Owner, eaasd-commerce",
-    "rating": 4.5,
-    "quote": "Sklep gotowy do sprzedaży, SEO ogarnięte, a ja mam jasny plan dalszego rozwoju. Polecam.",
-    "source": "oferteo"
+    "id": "fixly-marek-2022",
+    "author": "Marek",
+    "role": "Usługi graficzne, projekt logo, wizytówki i ulotki",
+    "rating": 5,
+    "quote": "Bardzo dobra współpraca. Wszystko ok. Dobry kontakt.",
+    "source": "fixly",
+    "link": "https://fixly.pl/profil/d963Jrae"
+  },
+  {
+    "id": "fixly-dorota-2021",
+    "author": "Dorota",
+    "role": "Usługi graficzne, projekt logo",
+    "rating": 5,
+    "quote": "Polecam serdecznie ! Pełen profesjonalizm ☺️ logo , strona internetowa , pliki na baner reklamowy oraz wizytówki . Dziękuję raz jeszcze i będę polecać bo warto ☺️ Rozsądna cena i mnóstwo fachowej porady , Pozdrawiam serdecznie ! Pewnie się jeszcze odezwę w sprawie ulotek o ,których rozmawialiśmy ☺️",
+    "source": "fixly",
+    "link": "https://fixly.pl/profil/d963Jrae"
+  },
+  {
+    "id": "fixly-łukasz-2021",
+    "author": "Łukasz",
+    "role": "Usługi graficzne, projekt logo",
+    "rating": 5,
+    "quote": "polecam! Super kontakt i sprawna realizacja projektu.",
+    "source": "fixly",
+    "link": "https://fixly.pl/profil/d963Jrae"
   }
 ]

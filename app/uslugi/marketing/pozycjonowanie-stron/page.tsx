@@ -17,6 +17,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Pozycjonowanie stron — stały wzrost widoczności i zapytań | Arteon',
@@ -273,6 +274,10 @@ export default function OfferSeoSubscription() {
           }}
           legalNote="Ceny orientacyjne brutto. Zakres oraz intensywność działań dopasowujemy do branży, celów i technologii witryny. Utrzymujemy ceny około 20–30% niższe od średniej rynkowej."
         />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

@@ -15,7 +15,7 @@ type Props = {
   max?: number;
 };
 
-export default function TestimonialsCarousel({ title = 'Opinie klientów', subtitle, testimonials, ids, max = 12 }: Props) {
+export default function TestimonialsCarousel({ title = 'Opinie współprac i realizacji', subtitle, testimonials, ids, max = 12 }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -57,7 +57,10 @@ export default function TestimonialsCarousel({ title = 'Opinie klientów', subti
 
       const nextIndex = Math.min(currentSlide, slides - 1);
       setCurrentSlide(nextIndex);
-      container.scrollTo({ left: nextIndex * cardWithGap, behavior: 'instant' as ScrollBehavior });
+      container.scrollTo({
+        left: nextIndex * cardWithGap,
+        behavior: 'instant' as ScrollBehavior,
+      });
     });
 
     ro.observe(container);
@@ -104,19 +107,26 @@ export default function TestimonialsCarousel({ title = 'Opinie klientów', subti
       scrollRef.current?.scrollTo({ left: 0, behavior: 'smooth' });
     } else if (e.key === 'End') {
       e.preventDefault();
-      scrollRef.current?.scrollTo({ left: (maxSlides - 1) * cardWidth, behavior: 'smooth' });
+      scrollRef.current?.scrollTo({
+        left: (maxSlides - 1) * cardWidth,
+        behavior: 'smooth',
+      });
     }
   };
 
   if (!items.length) return null;
 
+  const carouselLabel = 'Karuzela opinii';
+
   const navBtn =
-    'group absolute top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-2 text-white shadow-xl backdrop-blur-sm transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
+    'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-1 md:p-2 text-white shadow-xl backdrop-blur-sm ' +
+    'transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none ' +
+    'focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
 
   return (
     <section className="w-full" aria-labelledby="testimonials-heading">
       {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="testimonials-heading" className="md:mb-2">
+      <h2 id="testimonials-heading" className="md:mb-2 reveal-animation">
         {title}
       </h2>
 
@@ -126,7 +136,7 @@ export default function TestimonialsCarousel({ title = 'Opinie klientów', subti
           className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
-          aria-label="Karuzela opinii"
+          aria-label={carouselLabel}
           aria-live="polite"
           tabIndex={0}
           onKeyDown={onKeyDown}
@@ -140,10 +150,11 @@ export default function TestimonialsCarousel({ title = 'Opinie klientów', subti
 
         {isScrollable && (
           <>
-            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2`} aria-label="Przewiń w lewo">
+            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2 max-h-13 max-w-13`} aria-label="Przewiń w lewo">
               <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
             </button>
-            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2`} aria-label="Przewiń w prawo">
+
+            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2 max-h-13 max-w-13`} aria-label="Przewiń w prawo">
               <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
             </button>
           </>
@@ -151,18 +162,23 @@ export default function TestimonialsCarousel({ title = 'Opinie klientów', subti
       </div>
 
       {isScrollable && maxSlides > 1 && (
-        <div className="flex justify-center gap-2" role="group" aria-label="Nawigacja karuzeli">
+        <div className="flex justify-center md:gap-2" role="group" aria-label="Nawigacja karuzeli">
           {Array.from({ length: maxSlides }).map((_, i) => (
             <button
               key={i}
-              onClick={() => scrollRef.current?.scrollTo({ left: i * cardWidth, behavior: 'smooth' })}
+              onClick={() =>
+                scrollRef.current?.scrollTo({
+                  left: i * cardWidth,
+                  behavior: 'smooth',
+                })
+              }
               aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
               aria-current={i === currentSlide ? 'true' : undefined}
-              className="h-6 w-6 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="h-5 w-5 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:h-6 md:w-6"
             >
               <span
                 aria-hidden="true"
-                className={`mx-auto block h-3 w-3 rounded-full transition duration-300 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
+                className={`mx-auto block h-2 w-2 rounded-full transition duration-300 md:h-3 md:w-3 ${i === currentSlide ? 'bg-slate-500 hover:bg-slate-700' : 'bg-gray-300 hover:bg-gray-500'}`}
               />
             </button>
           ))}

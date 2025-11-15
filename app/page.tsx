@@ -5,6 +5,7 @@ import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import Button from '@/components/ui/Button';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -178,6 +179,10 @@ export default function HomePage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Nasze realizacje" category="strona" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

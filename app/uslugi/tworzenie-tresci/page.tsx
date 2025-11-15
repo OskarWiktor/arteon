@@ -31,6 +31,7 @@ import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
@@ -250,6 +251,10 @@ export default function OfferContentPage() {
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

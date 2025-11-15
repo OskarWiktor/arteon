@@ -17,6 +17,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',
@@ -262,6 +263,10 @@ export default function OfferOptimizationSEO() {
           ]}
           legalNote="Ceny orientacyjne brutto. Ostateczna wycena zależy od technologii, wielkości witryny i tego w jakim tempie chcesz rosnąć. Dopasowujemy ofertę do Twojego budżetu"
         />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

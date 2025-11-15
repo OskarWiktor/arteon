@@ -14,6 +14,7 @@ import { IoAnalytics } from 'react-icons/io5';
 import Button from '@/components/ui/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Script from 'next/script';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Marketing internetowy — SEO, reklamy i komunikacja | Arteon',
@@ -197,6 +198,10 @@ export default function OfferMarketingHubPage() {
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

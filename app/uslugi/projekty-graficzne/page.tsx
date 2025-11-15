@@ -39,6 +39,7 @@ import {
 } from 'react-icons/ri';
 
 import Script from 'next/script';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 const SERVICES = [
   { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
@@ -251,6 +252,10 @@ export default function OfferDesignPage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 

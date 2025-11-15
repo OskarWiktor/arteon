@@ -16,6 +16,7 @@ import { IoColorPalette } from 'react-icons/io5';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Kupony rabatowe i vouchery | Arteon',
@@ -129,6 +130,10 @@ export default function OfferDesignVoucheryPage() {
         <Gap variant="line" />
 
         <ProjectsOverview title="Przykładowe realizacje kuponów i voucherów" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 
