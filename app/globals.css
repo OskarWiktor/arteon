@@ -74,28 +74,28 @@ h1,
 
 h2,
 .h2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(32px, calc(32px + 12 * ((100vw - 360px) / 1080)), 44px);
   line-height: 100%;
 }
 
 h3,
 .h3 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(32px, calc(32px + 12 * ((100vw - 360px) / 1080)), 44px);
   line-height: 110%;
 }
 
 h4,
 .h4 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(22px, calc(22px + 12 * ((100vw - 360px) / 1080)), 34px);
   line-height: 110%;
 }
 
 h5,
 .h5 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: clamp(18px, calc(18px + 8 * ((100vw - 360px) / 1080)), 26px);
   line-height: 120%;
 }
@@ -103,7 +103,7 @@ h5,
 h6,
 .h6,
 label {
-  font-weight: 700;
+  font-weight: 500;
   font-size: clamp(16px, calc(16px + 3 * ((100vw - 360px) / 1080)), 20px);
   line-height: 120%;
 }
