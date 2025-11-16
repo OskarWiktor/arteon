@@ -74,20 +74,20 @@ const offerLinksOne = [
 const offerLinksTwo = [{ href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' }];
 
 const offerLinksThree = [
-  { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony' },
-  { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Projekt identyfikacji wizualnej' },
-  { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Projekt katalogu' },
-  { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Projekt logo' },
-  { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Projekt odzieży firmowej' },
-  { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Projekt papieru firmowego' },
-  { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Projekt teczki ofertowej' },
-  { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Projekt ulotki' },
-  { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Projekt wizytówki' },
-  { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Projekt cennika' },
-  { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Projekt karty lojalnościowej' },
-  { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony rabatowe i vouchery' },
-  { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Projekt menu restauracji' },
-  { href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony postów na social media' },
+        { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki' },
+        { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Identyfikacja wizualna' },
+        { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Karty lojalnościowe' },
+        { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi' },
+        { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony i vouchery' },
+        { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Layout strony' },
+        { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo' },
+        { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji' },
+        { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa' },
+        { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy' },
+        { href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony social media' },
+        { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe' },
+        { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki' },
+        { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki' },
 ];
 
 const offerLinksFour = [
