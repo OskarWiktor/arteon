@@ -300,13 +300,14 @@ export default function ProjectPage({ params }: PageProps) {
           {project.beforeAfter && (project.beforeAfter.beforeImage || project.beforeAfter.afterImage) ? (
             <>
               <SectionInfo title="Jak było - jak jest">
-                <div className="grid grid-cols-1 gap-6">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
                       <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" />
                     </div>
                     <figcaption className="mt-2 text-sm text-[#5e5e5e]">Przed</figcaption>
                   </figure>
+
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
                       <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" />
@@ -314,6 +315,7 @@ export default function ProjectPage({ params }: PageProps) {
                     <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Po</figcaption>
                   </figure>
                 </div>
+
                 {project.beforeAfter.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: project.beforeAfter.note }} />}
               </SectionInfo>
               <Gap size="sm" variant="line" />
@@ -342,7 +344,6 @@ export default function ProjectPage({ params }: PageProps) {
 
           {project.outcomes?.length ? (
             <>
-              <Gap size="sm" variant="line" />
               <SectionInfo title="Rezultaty">
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {project.outcomes.map((o, i) => (

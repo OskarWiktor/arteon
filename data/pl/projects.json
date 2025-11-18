@@ -1,6 +1,68 @@
 {
   "projects": [
     {
+      "slug": "strona-internetowa-dla-camper-albania",
+      "title": "Strona internetowa dla Camper Albania - wynajem kamperów w Albanii",
+      "short": "Redesign i optymalizacja strony internetowej dla wypożyczalni kamperów Camper Albania - lepszy kontrast, czytelniejszy układ i wydajność 95/100",
+      "description": "<p>Projekt dla wypożyczalni kamperów na terenie Albanii <strong>Camper Albania</strong>. Celem projektu było odświeżenie wyglądu strony, poprawa czytelności oraz optymalizacja prędkości ładowania. Efekt: ulepszony, kontrastowy układ zgodny z założeniami <strong>WCAG 2.1 AA</strong> i skok wyniku wydajności mobilnej w Google PageSpeed Insights z ok. 65 do <strong>95 punktów</strong>.</p>",
+      "image": "/assets/projects/arteon-baners-camper-albania-mockup.png",
+      "category": ["strona", "grafika"],
+      "client": {
+        "name": "Camper Albania",
+        "sector": "Wynajem kamperów",
+        "location": "Albania"
+      },
+      "link": "https://camper-albania.eu",
+      "stack": ["Redesign wyglądu strony", "WCAG 2.1 AA (kontrast)", "Optymalizacja prędkości strony"],
+      "process_steps": [
+        "Audyt istniejącej strony - analiza układu, kontrastu, czytelności i wyniku w Google PageSpeed Insights.",
+        "Ulepszenie wygląu elementów na stronie z naciskiem na lepszy kontrast.",
+        "Dopasowanie spójnej kolorystyki i typografii.",
+        "Optymalizacja zasobów i testy prędkości na telefonach, aż do uzyskania wyniku 95/100 w Google PageSpeed Insights."
+      ],
+
+      "outcomes": [
+        {
+          "value": "95/100",
+          "label": "Wydajność mobile",
+          "note": "Wynik w Google PageSpeed Insights na urządzeniach mobilnych (wcześniej ok. 65/100)."
+        },
+        {
+          "value": "Lepsza czytelność",
+          "label": "UX na telefonach",
+          "note": "Wyraźniejsza hierarchia treści, większe nagłówki i przejrzyste sekcje oferty."
+        },
+        {
+          "value": "Wyższy kontrast",
+          "label": "WCAG 2.1",
+          "note": "Kolorystyka dostosowana do standardu AA pod kątem kontrastu tekstu i tła."
+        }
+      ],
+
+      "beforeAfter": {
+        "beforeImage": "/assets/projects/arteon-camper-albania-b.png",
+        "afterImage": "/assets/projects/arteon-camper-albania-a.png"
+      },
+
+
+      "cta": {
+        "title": "Potrzebujesz szybszej i czytelniejszej strony?",
+        "description": "Podeślij link do swojej strony a my zobaczymy jak możemy ją poprawić ",
+        "primaryLabel": "Skontaktuj się",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Sprawdź ofertę stron internetowych",
+        "secondaryLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.png",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Strona internetowa dla Camper Albania - wynajem kamperów w Albanii | Arteon",
+        "description": "Redesign i optymalizacja strony internetowej Camper Albania. Lepszy kontrast zgodny z WCAG 2.1, wyższa czytelność na mobile i wynik 95/100 w Google PageSpeed Insights.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-camper-albania"
+      }
+    },
+
+    {
       "slug": "papier-firmowy-dla-kancelarii-adwokackiej-lux-nova",
       "title": "Papier firmowy dla kancelarii - LUX NOVA",
       "short": "Projekt papieru firmowego dla kancelarii adwokackiej",

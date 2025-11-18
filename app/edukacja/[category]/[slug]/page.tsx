@@ -301,7 +301,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             <h1 className="h2 mb-1" itemProp="headline">
               {article.title}
             </h1>
-            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
+            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e] md:gap-4">
               {article.author?.name ? <Badge text={article.author.name} /> : null}
               {article.datePublished ? <Badge text={`Publikacja: ${article.datePublished}`} /> : null}
               {article.readingTime ? <Badge text={`${article.readingTime} min czytania`} /> : null}
