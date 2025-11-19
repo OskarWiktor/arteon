@@ -1,6 +1,50 @@
 {
   "projects": [
     {
+      "slug": "bon-walentynkowy-dla-salonu-kosmetycznego-kasia",
+      "title": "Bon walentynkowy dla salonu kosmetycznego Kasia",
+      "short": "Elegancki bon walentynkowy w formacie DL dla gabinetu kosmetycznego w Krakowie. Gotowe pliki do druku i wręczenia jako prezent.",
+      "description": "<p>Projekt bonu walentynkowego w formacie DL dla <strong>salonu kosmetycznego w Krakowie</strong>. Celem było stworzenie eleganckiego i czytelnego vouchera, który bezpośrednio nawiązuje do walentynek.</p><p>Połączony został motyw róż z delikatnymi pasami i klasyczną typografią. Na froncie dominuje spokojna kompozycja zdjęcia z tytułem i nazwą salonu, a na rewersie znajdują się <strong>czytelne pola do wypełnienia</strong> (dla kogo, na jaki zabieg, ważny do) oraz szczegółowe dane gabinetu.</p>",
+      "image": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png",
+      "category": ["grafika"],
+      "client": {
+        "name": "Gabinet kosmetyczny Kasia",
+        "sector": "Salon kosmetyczny",
+        "location": "Kraków"
+      },
+      "process_steps": [
+        "Ustalenie formatu oraz treści bonu walentynkowego.",
+        "Dobór zdjęcia i zaprojektowanie układu.",
+        "Dopasowanie spójnej kolorystyki i typografii.",
+        "Finalne dopracowanie wraz z przygotowaniem pliku do druku."
+      ],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png",
+          "alt": "Bon walentynkowy dla salonu kosmetycznego",
+          "ratio": "16/9"
+        }
+      ],
+
+      "cta": {
+        "title": "Potrzebujesz vouchera lub kuponu promocyjnego dla swojej firmy?",
+        "description": "Opisz nam czym się zajmujesz, przygotujemy projekt graficzny wraz z wersją do druku",
+        "primaryLabel": "Skontaktuj się",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Sprawdź ofertę voucherów i kuponów",
+        "secondaryLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
+        "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Bon walentynkowy dla salonu kosmetycznego Kasia | Arteon",
+        "description": "Elegancki bon walentynkowy dla gabinetu kosmetycznego. Gotowe pliki do druku. Sprawdź naszą realizację i samów własny projekt",
+        "canonical": "https://www.arteonagency.pl/realizacje/bon-walentynkowy-dla-salonu-kosmetycznego-kasia"
+      }
+    },
+
+    {
       "slug": "strona-internetowa-dla-camper-albania",
       "title": "Strona internetowa dla Camper Albania - wynajem kamperów w Albanii",
       "short": "Redesign i optymalizacja strony internetowej dla wypożyczalni kamperów Camper Albania - lepszy kontrast, czytelniejszy układ i wydajność 95/100",
@@ -44,10 +88,9 @@
         "afterImage": "/assets/projects/arteon-camper-albania-a.png"
       },
 
-
       "cta": {
         "title": "Potrzebujesz szybszej i czytelniejszej strony?",
-        "description": "Podeślij link do swojej strony a my zobaczymy jak możemy ją poprawić ",
+        "description": "Prześlij link do swojej strony, sprawdzimy jak można ją poprawić ",
         "primaryLabel": "Skontaktuj się",
         "primaryLink": "/kontakt",
         "secondaryLabel": "Sprawdź ofertę stron internetowych",
