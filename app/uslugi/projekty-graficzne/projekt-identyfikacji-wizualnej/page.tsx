@@ -59,7 +59,7 @@ export default function OfferDesignXxxPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Portfolio"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg15.webp"

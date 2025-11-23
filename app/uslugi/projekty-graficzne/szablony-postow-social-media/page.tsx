@@ -63,10 +63,10 @@ export default function OfferDesignSzablonyPostowPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Portfolio"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png"
         overlay="black"
       />
 
@@ -200,7 +200,7 @@ export default function OfferDesignSzablonyPostowPage() {
         primaryLink="#kontakt"
         secondaryLabel="Poznaj inne usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png"
         overlay="black"
       />
 

@@ -57,6 +57,8 @@ export default function HomePage() {
           description="Prowadzimy kompleksowe działania rozwojowe w czterech kluczowych obszarach, dzięki czemu pracując z nami masz wszystko w jednym miejscu. Nie zależnie od Twojej branży oraz celów, znajdziemy najlepszy sposób aby rozwinąć Twój biznes, przyciągając właściwych odbiorców i klientów"
           items={[
             {
+              topImageAlt: 'test',
+              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png',
               imageSrc: '/assets/woda.png',
               imageAlt: 'Woda - symbol grafiki i designu',
               title: 'Grafika',
@@ -76,6 +78,8 @@ export default function HomePage() {
               ),
             },
             {
+              topImageAlt: 'test',
+              topImageSrc: '/assets/projects/arteon-baners-camper-albania-mockup.png',
               imageSrc: '/assets/ziemia.png',
               imageAlt: 'Ziemia - symbol witryn internetowych',
               title: 'Strony',
@@ -101,6 +105,8 @@ export default function HomePage() {
               ),
             },
             {
+              topImageAlt: 'test',
+              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png',
               imageSrc: '/assets/ogien.png',
               imageAlt: 'Ogień - symbol marketingu',
               title: 'Marketing',
@@ -120,6 +126,8 @@ export default function HomePage() {
               ),
             },
             {
+              topImageAlt: 'test',
+              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
               imageSrc: '/assets/powietrze.png',
               imageAlt: 'Powietrze - symbol języka',
               title: 'Treści',

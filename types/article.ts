@@ -8,9 +8,9 @@ export type Article = {
   category?: string[];
   tags?: string[];
   author?: { name: string; url?: string };
-  readingTime?: number; // w minutach
-  datePublished?: string; // YYYY-MM-DD
-  dateModified?: string; // YYYY-MM-DD
+  readingTime?: number;
+  datePublished?: string;
+  dateModified?: string;
   faq?: { question: string; answer: string }[];
   contentBlocks: Array<
     | { type: 'richtext'; html: string }

@@ -58,7 +58,7 @@ export default function OfferDesignKartaPage() {
         description={<>Zachęć klientów do powrotu, przez estetyczne karty lojalnościowe. Projektujemy czytelne i eleganckie karty, które wspierają sprzedaż i budują relację z klientem.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Portfolio"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg15.webp"

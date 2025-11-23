@@ -235,7 +235,7 @@ export default function OfferMarketingPage() {
           plans={[
             {
               name: 'Audyt SEO: 1+ strona',
-              price: 'od 800 zł', // zmiana z 800 zł
+              price: 'od 800 zł',
               description: 'Dla kogo: dla właścicieli prostych stron firmowych i landing pages ( stron z jedną podstroną ).',
               features: [
                 'Analiza indeksacji i widoczności w Google',
@@ -249,7 +249,7 @@ export default function OfferMarketingPage() {
             },
             {
               name: 'Audyt SEO: 10+ stron',
-              price: 'od 1 500 zł', // zmiana z 1 500 zł
+              price: 'od 1 500 zł',
               description: 'Dla kogo: dla właścicieli rozbudowanych stron firmowych lub małych sklepów.',
               features: [
                 'Wszystko z pakietu dla małych stron, a dodatkowo:',
@@ -263,7 +263,7 @@ export default function OfferMarketingPage() {
             },
             {
               name: 'Audyt SEO: 30+ stron',
-              price: 'od 3 0000 zł', // zmiana z 3 000 zł
+              price: 'od 3 0000 zł',
               description: 'Dla kogo: dla właścicieli dużych stron firmowych i sklepów.',
               features: [
                 'Wszystko z pakietu dla małych sklepów i rozbudowanych stron, a dodatkowo:',

@@ -58,10 +58,10 @@ export default function OfferDesignCennikPage() {
         description={<>Projektujemy przejrzyste cenniki przygotowane do druku wraz z wersją cyfrową. Zbuduj profesjonalny wygląd poprzez indywidualny projekt swojego cennika.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Portfolio"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/cennik-mockup.png"
         overlay="black"
       />
 
@@ -194,7 +194,7 @@ export default function OfferDesignCennikPage() {
         primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/cennik-mockup.png"
         overlay="black"
       />
 

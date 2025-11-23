@@ -5,12 +5,12 @@ import { FiCopy, FiCheck } from 'react-icons/fi';
 
 type CodeBlockProps = {
   code: string;
-  language?: string; // 'ts', 'tsx', 'js', 'bash', 'json', etc.
+  language?: string;
   filename?: string;
   caption?: string;
   showLineNumbers?: boolean;
-  wrap?: boolean; // zawijanie linii
-  highlightLines?: number[]; // np. [2,5,6]
+  wrap?: boolean;
+  highlightLines?: number[];
   className?: string;
 };
 

@@ -83,7 +83,7 @@ export default function OfferWebPage() {
         buttonSecond="Nasze realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg13.webp"
+        backgroundImage="/assets/projects/arteon-baners-trilllizo.webp"
         overlay="black"
       />
 
@@ -419,7 +419,7 @@ export default function OfferWebPage() {
         description="Tworzymy dedykowane rozwiązanie, gotowe do rozwoju - szybkie, stabilne i zgodne z przepisami"
         primaryLabel="Wyceń projekt"
         primaryLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg13.webp"
+        backgroundImage="/assets/projects/arteon-baners-trilllizo.webp"
         overlay="black"
       />
 

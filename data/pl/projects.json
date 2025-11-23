@@ -1,48 +1,48 @@
 {
   "projects": [
-{
-  "slug": "szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc",
-  "title": "Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK",
-  "short": "Spójny zestaw szablonów postów i stories na media społecznościowe dla gabinetu psychologicznego",
-  "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami i podkreślą spokojny, wspierający charakter gabinetu.</p><p>Stworzyliśmy serię kadrów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli w połączeniu z klasyczną typografią buduje wrażenie bezpieczeństwa, profesjonalizmu i łagodnej, niedyrektywnej obecności psychoterapeuty.</p>",
-  "image": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
-  "category": ["grafika"],
-  "client": {
-    "name": "Mental Support Centre",
-    "sector": "Psychoterapia",
-    "location": "Camberley, UK"
-  },
-  "process_steps": [
-    "Analiza dotychczasowej komunikacji w social mediach i ustalenie głównych typów postów (nowy wpis, webinary, przypomnienia, aktualności).",
-    "Przygotowanie moodboardu oraz palety kolorów spójnej ze stroną MSC Psychotherapy.",
-    "Zaprojektowanie układu szablonów pod posty i stories (tekst, zdjęcia, miejsce na wezwanie do działania np. „Link w opisie”).",
-    "Test czytelności na urządzeniach mobilnych i dopracowanie detali typograficznych.",
-    "Przekazanie plików roboczych i gotowych wersji do publikacji na Instagramie."
-  ],
-  "contentBlocks": [
     {
-      "type": "image",
-      "src": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
-      "alt": "Szablony postów na Instagram dla gabinetu psychologicznego MSC Psychotherapy UK",
-      "ratio": "16/9"
-    }
-  ],
-  "cta": {
-    "title": "Chcesz usprawnić proces tworzenia treści do swoich mediów społecznościowych?",
-    "description": "Opisz, jak czym się zajmujesz i kim są Twoi klienci. Przygotujemy spójny zestaw szablonów do Instagrama i innych mediów społecznościowych, który zbuduje profesjonalny wizerunek i uprości proces pozyskiwania nowych klientów.",
-    "primaryLabel": "Skontaktuj się",
-    "primaryLink": "/kontakt",
-    "secondaryLabel": "Zobacz ofertę szablonów do mediów społecznośiowych",
-    "secondaryLink": "/uslugi/projekty-graficzne/szablony-postow-do-social-media",
-    "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
-    "overlay": "black"
-  },
-  "seo": {
-    "title": "Szablony postów dla psychologa – MSC Psychotherapy | Arteon",
-    "description": "Spójne szablony postów i stories na Instagram dla gabinetu psychologicznego. Delikatna paleta barw, czytelna typografia i gotowe miejsca na treść. Zobacz realizację i zamów własny projekt.",
-    "canonical": "https://www.arteonagency.pl/realizacje/szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc"
-  }
-},
+      "slug": "szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc",
+      "title": "Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK",
+      "short": "Spójny zestaw szablonów postów i stories na media społecznościowe dla gabinetu psychologicznego",
+      "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami i podkreślą spokojny, wspierający charakter gabinetu.</p><p>Stworzyliśmy serię kadrów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli w połączeniu z klasyczną typografią buduje wrażenie bezpieczeństwa, profesjonalizmu i łagodnej, niedyrektywnej obecności psychoterapeuty.</p>",
+      "image": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
+      "category": ["grafika"],
+      "client": {
+        "name": "Mental Support Centre",
+        "sector": "Psychoterapia",
+        "location": "Camberley, UK"
+      },
+      "process_steps": [
+        "Analiza dotychczasowej komunikacji w social mediach i ustalenie głównych typów postów (nowy wpis, webinary, przypomnienia, aktualności).",
+        "Przygotowanie moodboardu oraz palety kolorów spójnej ze stroną MSC Psychotherapy.",
+        "Zaprojektowanie układu szablonów pod posty i stories (tekst, zdjęcia, miejsce na wezwanie do działania np. „Link w opisie”).",
+        "Test czytelności na urządzeniach mobilnych i dopracowanie detali typograficznych.",
+        "Przekazanie plików roboczych i gotowych wersji do publikacji na Instagramie."
+      ],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
+          "alt": "Szablony postów na Instagram dla gabinetu psychologicznego MSC Psychotherapy UK",
+          "ratio": "16/9"
+        }
+      ],
+      "cta": {
+        "title": "Chcesz usprawnić proces tworzenia treści do swoich mediów społecznościowych?",
+        "description": "Opisz, jak czym się zajmujesz i kim są Twoi klienci. Przygotujemy spójny zestaw szablonów do Instagrama i innych mediów społecznościowych, który zbuduje profesjonalny wizerunek i uprości proces pozyskiwania nowych klientów.",
+        "primaryLabel": "Skontaktuj się",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Zobacz ofertę szablonów do mediów społecznośiowych",
+        "secondaryLink": "/uslugi/projekty-graficzne/szablony-postow-do-social-media",
+        "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Szablony postów dla psychologa – MSC Psychotherapy | Arteon",
+        "description": "Spójne szablony postów i stories na Instagram dla gabinetu psychologicznego. Delikatna paleta barw, czytelna typografia i gotowe miejsca na treść. Zobacz realizację i zamów własny projekt.",
+        "canonical": "https://www.arteonagency.pl/realizacje/szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc"
+      }
+    },
     {
       "slug": "bon-walentynkowy-dla-salonu-kosmetycznego-kasia",
       "title": "Bon walentynkowy dla salonu kosmetycznego Kasia",

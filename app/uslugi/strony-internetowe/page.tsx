@@ -78,10 +78,10 @@ export default function OfferWebPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Nasze realizacje"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg12.webp"
+        backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
       />
 
@@ -368,7 +368,7 @@ export default function OfferWebPage() {
         description="Pokaż się w sieci z profesjonalnym wizerunkiem"
         primaryLabel="Wyceń projekt"
         primaryLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg12.webp"
+        backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
       />
 

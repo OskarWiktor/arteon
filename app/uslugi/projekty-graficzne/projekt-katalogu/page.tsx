@@ -57,10 +57,10 @@ export default function OfferDesignXxxPage() {
         description={<>Sprzedaż potrzebuje klarownej prezentacji oferty. Projektujemy katalogi z dopracowanym składem DTP, zdjęciami i typografią - w wersji do druku i do udostępniania online.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Portfolio"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/gazetka-mockup.jpg"
         overlay="black"
       />
       <BenefitBelt
@@ -215,7 +215,7 @@ export default function OfferDesignXxxPage() {
         primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/gazetka-mockup.jpg"
         overlay="black"
       />
 

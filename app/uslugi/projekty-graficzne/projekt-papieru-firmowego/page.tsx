@@ -57,10 +57,10 @@ export default function OfferDesignXxxPage() {
         description={<>Każda korespondencja może wzmacniać markę. Projektujemy papier firmowy z prawidłowymi szablonami Word/PDF i plikami do druku - czytelny, spójny i profesjonalny.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Portfolio"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png"
         overlay="black"
       />
 
@@ -213,7 +213,7 @@ export default function OfferDesignXxxPage() {
         primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png"
         overlay="black"
       />
 

@@ -58,10 +58,10 @@ export default function OfferDesignXxxPage() {
         description={<>Zadbaj o pierwsze wrażenie, które buduje zaufanie. Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie i gotowe do druku oraz użycia online.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Portfolio"
+        buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png"
         overlay="black"
       />
       <BenefitBelt
@@ -209,7 +209,7 @@ export default function OfferDesignXxxPage() {
         primaryLink="#kontakt"
         secondaryLabel="Poznaj usługi graficzne"
         secondaryLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png"
         overlay="black"
       />
 

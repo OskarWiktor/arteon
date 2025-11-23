@@ -5,8 +5,11 @@ import Button from '../Button';
 
 interface SectionStepItem {
   icon?: ReactNode;
-  imageSrc?: string;
+  imageSrc?: string;      // 👈 mała ikona w kwadracie (tak jak było)
   imageAlt?: string;
+  /** 🆕 Duże zdjęcie nad ikoną / kwadratem */
+  topImageSrc?: string;
+  topImageAlt?: string;
   title: ReactNode;
   subtitle?: string;
   description: ReactNode;
@@ -96,10 +99,23 @@ export default function SectionSteps({
       data-section="steps"
       aria-labelledby={title ? 'steps-title' : undefined}
     >
-      {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
+      {hasBg && overlay !== 'none' && (
+        <div
+          aria-hidden={true}
+          className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`}
+        />
+      )}
 
       <Tag className="relative z-10">
-        {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
+        {subtitle && (
+          <span
+            className={`text-base tracking-wider uppercase ${
+              hasBg ? 'text-white' : 'text-[#5e5e5e]'
+            }`}
+          >
+            {subtitle}
+          </span>
+        )}
 
         {title && (
           <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3 reveal-animation`}>
@@ -107,41 +123,88 @@ export default function SectionSteps({
           </SectionHeadingTag>
         )}
 
-        {description && <p className={`reveal-animation pt-3 pb-2 ${toneMutedClass}`}>{description}</p>}
+        {description && (
+          <p className={`reveal-animation pt-3 pb-2 ${toneMutedClass}`}>{description}</p>
+        )}
 
-        <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
-          {items.map(({ icon, imageSrc, imageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
-            const hasVisual = showIndex || icon || imageSrc;
+        <ol
+          className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}
+        >
+          {items.map(
+            (
+              {
+                icon,
+                imageSrc,
+                imageAlt,
+                topImageSrc,
+                topImageAlt,
+                title: itemTitle,
+                description: itemDesc,
+                subtitle: itemSubtitle,
+              },
+              index,
+            ) => {
+              const hasVisual = showIndex || icon || imageSrc;
 
-            return (
-              <li key={index} className="flex flex-col items-stretch">
-                <article className="flex h-full w-full flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
-                  {hasVisual && (
-                    <div className="mb-4 flex justify-start">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-600 shadow-sm ring-1 ring-black/5">
-                        {showIndex ? (
-                          <span className="text-base font-semibold">{index + 1}</span>
-                        ) : imageSrc ? (
-                          <Image src={imageSrc} alt={imageAlt ?? ''} width={28} height={28} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
-                        ) : (
-                          icon
-                        )}
+              return (
+                <li key={index} className="flex flex-col items-stretch">
+                  <article className="flex h-full w-full flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:p-6">
+                    {topImageSrc && (
+                      <div className="mb-4 md:mb-6">
+                        <div className="relative h-52 w-full overflow-hidden rounded-xl md:h-68">
+                          <Image
+                            src={topImageSrc}
+                            alt={topImageAlt ?? ''}
+                            fill
+                            className="object-cover pointer-events-none select-none"
+                            aria-hidden={topImageAlt ? undefined : true}
+                          />
+                        </div>
                       </div>
-                    </div>
-                  )}
+                    )}
 
-                  <ArticleHeadingTag className="h4 mb-1 text-[#080808]">{itemTitle}</ArticleHeadingTag>
-                  {itemSubtitle && <span className="text-base text-[#5e5e5e]">{itemSubtitle}</span>}
+                    {hasVisual && (
+                      <div className="mb-4 flex justify-start">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-600 shadow-sm ring-1 ring-black/5">
+                          {showIndex ? (
+                            <span className="text-base font-semibold">{index + 1}</span>
+                          ) : imageSrc ? (
+                            <Image
+                              src={imageSrc}
+                              alt={imageAlt ?? ''}
+                              width={28}
+                              height={28}
+                              className="pointer-events-none select-none"
+                              aria-hidden={imageAlt ? undefined : true}
+                            />
+                          ) : (
+                            icon
+                          )}
+                        </div>
+                      </div>
+                    )}
 
-                  <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
-                </article>
-              </li>
-            );
-          })}
+                    <ArticleHeadingTag className="h4 mb-1 text-[#080808]">
+                      {itemTitle}
+                    </ArticleHeadingTag>
+                    {itemSubtitle && (
+                      <span className="text-base text-[#5e5e5e]">{itemSubtitle}</span>
+                    )}
+
+                    <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
+                  </article>
+                </li>
+              );
+            },
+          )}
         </ol>
 
         {(btnOne || btnTwo) && (
-          <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" role="group" aria-label="Działania sekcji">
+          <div
+            className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10"
+            role="group"
+            aria-label="Działania sekcji"
+          >
             {btnOne && (
               <Button arrow variant={btnOneVariant} link={btnOneLink}>
                 {btnOne}
