@@ -91,8 +91,8 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionInfo title="Co daje optymalizacja strony WordPress?">
           <p>
-            Wolna lub niestabilna strona stworzona w WordPress potrafi skutecznie zniechęcić klientów. Długi czas ładowania, rozsypujący się układ na telefonie czy przeładowanie wtyczkami powodują, że użytkownicy
-            szybciej zamykają kartę, a Google niechętnie promuje witrynę w wynikach wyszukiwania.
+            Wolna lub niestabilna strona stworzona w WordPress potrafi skutecznie zniechęcić klientów. Długi czas ładowania, rozsypujący się układ na telefonie czy przeładowanie wtyczkami powodują, że
+            użytkownicy szybciej zamykają kartę, a Google niechętnie promuje witrynę w wynikach wyszukiwania.
           </p>
 
           <br />

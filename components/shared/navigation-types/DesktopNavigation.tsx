@@ -116,7 +116,7 @@ export default function DesktopNavigation() {
         { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Karty lojalnościowe', icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
         { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi', icon: <RiBookletLine className="h-5 w-5 text-slate-500" /> },
         { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony i vouchery', icon: <RiCoupon2Line className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Layout strony', icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony', icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
         { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo', icon: <RiQuillPenLine className="h-5 w-5 text-slate-500" /> },
         { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji', icon: <RiRestaurant2Line className="h-5 w-5 text-slate-500" /> },
         { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa', icon: <RiTShirt2Line className="h-5 w-5 text-slate-500" /> },

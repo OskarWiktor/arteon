@@ -79,7 +79,7 @@ const offerLinksThree = [
   { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Karty lojalnościowe' },
   { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi' },
   { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony i vouchery' },
-  { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Layout strony' },
+  { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony' },
   { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo' },
   { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji' },
   { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa' },

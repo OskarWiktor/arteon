@@ -27,9 +27,9 @@ export default function Filters({ selected, onToggle, onClear }: Props) {
 
   return (
     <section className="w-full">
-      <h2 className="reveal-animation mb-2">Filtry projektów</h2>
+      <h2 className="reveal-animation mb-4">Filtry projektów</h2>
 
-      <div role="toolbar" aria-label="Filtry realizacji" className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-2xl pt-1 pb-4 md:pb-6 lg:pb-8">
+      <div role="toolbar" aria-label="Filtry realizacji" className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-2xl pb-6 md:pb-8 lg:pb-10">
         <Button variant={hasSelection ? 'normal' : 'accent'} size="small" onClick={onClear} aria-pressed={!hasSelection}>
           Wszystkie
         </Button>

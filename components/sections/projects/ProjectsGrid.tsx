@@ -39,7 +39,7 @@ export default function ProjectsGrid({ selectedCategories }: Props) {
 
   return (
     <section className="w-full">
-      <div className="grid auto-rows-max grid-cols-1 gap-8 pt-8 md:grid-cols-2">
+      <div className="grid auto-rows-max grid-cols-1 gap-8 md:grid-cols-2">
         <AnimatePresence mode="wait" key={animKey}>
           {filteredProjects.map((project, i) => (
             <motion.div key={project.slug} variants={cardVariants} initial="hidden" animate="visible" exit="exit" custom={i}>

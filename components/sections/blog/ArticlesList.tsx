@@ -26,8 +26,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
                 </div>
               ) : null}
               <div className="p-4">
-                <h3 className="h5">{a.title}</h3>
-                {a.excerpt ? <p className="mt-2 text-[#5e5e5e]">{a.excerpt}</p> : null}
+                <h3 className="h6">{a.title}</h3>
                 <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
                   {a.readingTime ? <span>{a.readingTime} min czytania</span> : null}
                   {a.datePublished ? <span aria-label="Data publikacji">• {a.datePublished}</span> : null}

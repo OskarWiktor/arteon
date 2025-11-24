@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Button from '@/components/ui/Button';
 import { usePathname } from 'next/navigation';
 
 type Cat = { label: string; slug: string; count: number };
@@ -10,24 +10,22 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
   const isRoot = pathname === '/edukacja';
 
   return (
-    <nav aria-label="Kategorie artykułów" className="mb-6 flex flex-wrap gap-2">
-      <Link href="/edukacja" aria-current={isRoot ? 'page' : undefined} className={`rounded-full border px-3 py-1 text-sm hover:bg-black hover:text-white ${isRoot ? 'bg-black text-white' : ''}`}>
-        Wszystko
-      </Link>
+    <>
+      <h2 className="reveal-animation mb-4">Filtry artykułów</h2>
+      <nav aria-label="Kategorie artykułów" className="flex flex-wrap gap-2 pb-6 md:pb-8 lg:pb-10">
+        <Button variant={isRoot ? 'accent' : 'normal'} link="/edukacja" size="small" aria-current={isRoot ? 'page' : undefined}>
+          Wszystko
+        </Button>
 
-      {cats.map((c) => {
-        const activeCat = active === c.slug;
-        return (
-          <Link
-            key={c.slug}
-            href={`/edukacja/${c.slug}`}
-            aria-current={activeCat ? 'page' : undefined}
-            className={`rounded-full border px-3 py-1 text-sm hover:bg-black hover:text-white ${activeCat ? 'bg-black text-white' : ''}`}
-          >
-            {c.label} <span className="opacity-60">({c.count})</span>
-          </Link>
-        );
-      })}
-    </nav>
+        {cats.map((c) => {
+          const isActive = active === c.slug;
+          return (
+            <Button size="small" key={c.slug} variant={isActive ? 'accent' : 'normal'} link={`/edukacja/${c.slug}`} aria-current={isActive ? 'page' : undefined}>
+              {c.label} <span className="opacity-60">({c.count})</span>
+            </Button>
+          );
+        })}
+      </nav>
+    </>
   );
 }
