@@ -5,6 +5,7 @@ import HeroBaner from '@/components/sections/HeroBaner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
+import TechStack from '@/components/sections/TechStack';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import Button from '@/components/ui/Button';
 import Gap from '@/components/ui/Gap';
@@ -33,7 +34,7 @@ export default function HomePage() {
       <HeroBaner
         title="Rozwiń swoją markę z nami"
         description="Witaj w Arteon - miejscu, które pomoże Ci rozwinąć Twój biznes online oraz offline"
-        backgroundImage="/assets/bg/abstract-bg2.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.png"
         overlay="black"
         variant="center"
       />
@@ -61,7 +62,7 @@ export default function HomePage() {
               topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png',
               imageSrc: '/assets/woda.png',
               imageAlt: 'Woda - symbol grafiki i designu',
-              title: 'Grafika',
+              title: 'Projekty graficzne',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -198,6 +199,10 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
+        <TechStack />
+
+        <Gap variant="line" />
+
         <FeesSteps />
 
         <Gap size="sm" />
@@ -210,7 +215,7 @@ export default function HomePage() {
         primaryLink="/kontakt"
         secondaryLabel="Poznaj ofertę"
         secondaryLink="/uslugi"
-        backgroundImage="/assets/bg/abstract-bg2.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.png"
         overlay="black"
       />
     </>

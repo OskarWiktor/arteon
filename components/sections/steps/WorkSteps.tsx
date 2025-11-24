@@ -203,7 +203,7 @@ export default function WorkSteps({ variant = 'home', title, subtitle, descripti
 
   return (
     <SectionSteps
-      title={title ?? (variant === 'home' ? 'Jak pracujemy' : 'Nasz proces współpracy')}
+      title={title ?? (variant === 'home' ? 'Jak pracujemy?' : 'Nasz proces współpracy')}
       subtitle={subtitle ?? undefined}
       description={description ?? undefined}
       grid="four"

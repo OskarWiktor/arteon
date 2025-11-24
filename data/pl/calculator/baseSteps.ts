@@ -47,7 +47,7 @@ export const baseSteps: Step[] = [
         icon: 'FiFileText',
       },
       {
-        label: 'Grafika i Branding',
+        label: 'Projekty graficzne i Branding',
         value: 'graphics',
         price: 0,
         tooltip: 'Logo, identyfikacja wizualna, materiały materiały do internetu i druku',

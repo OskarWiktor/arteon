@@ -17,6 +17,9 @@ import {
   SiAdobeindesign,
   SiFigma,
   SiShopify,
+  SiWix,
+  SiGoogleanalytics,
+  SiGoogleads,
 } from 'react-icons/si';
 
 interface TechStackItem {
@@ -33,11 +36,14 @@ const techStackItems: TechStackItem[] = [
   { label: 'Adobe Illustrator', icon: SiAdobeillustrator },
   { label: 'Sass', icon: SiSass },
   { label: 'Vercel', icon: SiVercel },
+  { label: 'Google Ads', icon: SiGoogleads },
   { label: 'Webflow', icon: SiWebflow },
   { label: 'Adobe InDesign', icon: SiAdobeindesign },
   { label: 'Wordpress', icon: SiWordpress },
+  { label: 'Google Analytics 4', icon: SiGoogleanalytics },
   { label: 'Adobe Photoshop', icon: SiAdobephotoshop },
   { label: 'Shopify', icon: SiShopify },
+  { label: 'Wix', icon: SiWix },
 ];
 
 export default function TechStack() {
@@ -85,7 +91,7 @@ export default function TechStack() {
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
-      <h2 id="techstack-heading">Jakiej technologii używamy?</h2>
+      <h2 id="techstack-heading" className='reveal-animation'>Jakiej technologii używamy?</h2>
 
       <div
         ref={containerRef}

@@ -154,8 +154,8 @@ export default function Footer() {
               </ul>
             </section>
 
-            <nav aria-label="Usługi – Grafika" className="lg:col-span-2">
-              <h3 className="h6">Grafika</h3>
+            <nav aria-label="Usługi – Projekty graficzne" className="lg:col-span-2">
+              <h3 className="h6 mb-2">Projekty graficzne</h3>
               <div className="mt-2 grid grid-cols-2 gap-x-10">
                 <ul className="flex flex-col gap-2 text-sm">
                   {gfxLeft.map(({ href, title }) => (
@@ -185,7 +185,7 @@ export default function Footer() {
             </nav>
 
             <nav aria-label="Usługi – Witryny, Treści i Marketing">
-              <h3 className="h6">Witryny</h3>
+              <h3 className="h6 mb-2">Witryny</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
@@ -229,7 +229,7 @@ export default function Footer() {
             </nav>
 
             <nav aria-label="Nawigacja">
-              <h3 className="h6">Inne</h3>
+              <h3 className="h6 mb-2">Inne</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {otherLinks.map(({ href, label }) => (
                   <li key={href}>

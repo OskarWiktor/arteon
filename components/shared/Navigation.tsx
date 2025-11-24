@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine, RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import Image from 'next/image';
 
 import MobileNavigation from './navigation-types/MobileNavigation';
@@ -36,18 +36,25 @@ export default function Navigation() {
             <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
               #MadeWithNext.js
             </a>
-            {/*
 
             <a
               href="https://www.instagram.com/arteon.pl"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
+              aria-label="Firmowy Instagram"
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
             </a>
-                        */}
+                        <a
+              href="https://www.facebook.com/people/Arteon/61583260915021/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Firmowy Facebook"
+              className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >
+              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
+            </a>
           </div>
 
           <button

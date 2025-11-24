@@ -66,7 +66,7 @@ const SECTIONS: Section[] = [
   },
   {
     key: 'grafika',
-    title: 'Grafika',
+    title: 'Projekty graficzne',
     hubHref: '/uslugi/projekty-graficzne',
     items: [
       { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki', icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
