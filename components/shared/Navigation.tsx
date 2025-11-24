@@ -46,7 +46,7 @@ export default function Navigation() {
             >
               <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
             </a>
-                        <a
+            <a
               href="https://www.facebook.com/people/Arteon/61583260915021/"
               target="_blank"
               rel="noopener noreferrer"

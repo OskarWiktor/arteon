@@ -91,7 +91,9 @@ export default function TechStack() {
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
-      <h2 id="techstack-heading" className='reveal-animation'>Jakiej technologii używamy?</h2>
+      <h2 id="techstack-heading" className="reveal-animation">
+        Jakiej technologii używamy?
+      </h2>
 
       <div
         ref={containerRef}

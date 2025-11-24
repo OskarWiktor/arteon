@@ -25,6 +25,14 @@ export const metadata = {
     description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google Gwarancja i jasne zasady.',
     url: 'https://www.arteonagency.pl/',
     type: 'website',
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Logo Arteon na plakacie',
+      },
+    ],
   },
 } as const;
 

@@ -18,7 +18,6 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const SITE_URL = 'https://www.arteonagency.pl';
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
-const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/arteon-logo-on-mockup.webp`;
 
 export const metadata: Metadata = {
   icons: { icon: '/favicon.ico', shortcut: '/favicon.ico', apple: '/apple-touch-icon.png' },
@@ -28,13 +27,13 @@ export const metadata: Metadata = {
     url: SITE_URL,
     images: [
       {
-        url: DEFAULT_OG_IMAGE,
+        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
         width: 1200,
         height: 630,
         alt: 'Logo Arteon na plakacie',
       },
     ],
-  }
+  },
 };
 
 const orgJsonLd = {
