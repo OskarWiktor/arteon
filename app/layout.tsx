@@ -14,14 +14,28 @@ import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import RevealObserver from '@/components/systems/RevealObserver';
 
-export const metadata: Metadata = {
-  icons: { icon: '/favicon.ico', shortcut: '/favicon.ico', apple: '/apple-touch-icon.png' },
-};
-
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const SITE_URL = 'https://www.arteonagency.pl';
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/arteon-logo-on-mockup.webp`;
+
+export const metadata: Metadata = {
+  icons: { icon: '/favicon.ico', shortcut: '/favicon.ico', apple: '/apple-touch-icon.png' },
+  openGraph: {
+    type: 'website',
+    siteName: 'Arteon',
+    url: SITE_URL,
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: 'Logo Arteon na plakacie',
+      },
+    ],
+  }
+};
 
 const orgJsonLd = {
   '@context': 'https://schema.org',
