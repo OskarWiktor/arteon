@@ -34,7 +34,7 @@ export default function HomePage() {
       <HeroBaner
         title="Rozwiń swoją markę z nami"
         description="Witaj w Arteon - miejscu, które pomoże Ci rozwinąć Twój biznes online oraz offline"
-        backgroundImage="/assets/arteon-logo-on-mockup.png"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
         variant="center"
       />
@@ -215,7 +215,7 @@ export default function HomePage() {
         primaryLink="/kontakt"
         secondaryLabel="Poznaj ofertę"
         secondaryLink="/uslugi"
-        backgroundImage="/assets/arteon-logo-on-mockup.png"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>
