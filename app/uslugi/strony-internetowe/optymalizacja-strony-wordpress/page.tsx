@@ -1,5 +1,3 @@
-// app/uslugi/strony-internetowe/optymalizacja-strony-wordpress/page.tsx
-
 import HeroBanner from '@/components/sections/HeroBaner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABaner from '@/components/sections/CTABaner';
@@ -93,7 +91,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionInfo title="Co daje optymalizacja strony WordPress?">
           <p>
-            Wolna lub niestabilna strona WordPress potrafi skutecznie zniechęcić klientów. Długi czas ładowania, rozsypujący się układ na telefonie czy przeładowanie wtyczkami powodują, że użytkownicy
+            Wolna lub niestabilna strona stworzona w WordPress potrafi skutecznie zniechęcić klientów. Długi czas ładowania, rozsypujący się układ na telefonie czy przeładowanie wtyczkami powodują, że użytkownicy
             szybciej zamykają kartę, a Google niechętnie promuje witrynę w wynikach wyszukiwania.
           </p>
 
