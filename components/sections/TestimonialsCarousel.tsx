@@ -66,7 +66,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
     ro.observe(container);
     if (card) ro.observe(card);
     return () => ro.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- Only re-run when items.length changes, not on every items change
   }, [items.length]);
 
   useEffect(() => {

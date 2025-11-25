@@ -27,7 +27,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: ['https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp'],
+        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
       },
     ],
   },

@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arteon Agency Website
+
+Modern, accessible website for Arteon - a web development and digital marketing agency based in Poland.
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **React:** 19.0.0
+- **TypeScript:** 5.x (strict mode)
+- **Styling:** Tailwind CSS 4
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Analytics:** Vercel Analytics & Speed Insights
+- **Deployment:** Vercel
+
+## Features
+
+- ✅ **Accessibility:** WCAG 2.1 AA compliant with focus management, screen reader support, and keyboard navigation
+- ✅ **SEO:** Schema.org structured data, dynamic sitemaps, OpenGraph metadata
+- ✅ **Performance:** Optimized images, code splitting, lazy loading
+- ✅ **Privacy:** GDPR-compliant cookie consent with Google Analytics integration
+- ✅ **Responsive:** Mobile-first design with fluid typography
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd arteon
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Create a `.env.local` file (copy from `.env.example`):
+```bash
+cp .env.example .env.local
+```
+
+4. Update environment variables in `.env.local`:
+```env
+NEXT_PUBLIC_SITE_URL=https://www.arteonagency.pl
+NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
+```
+
+5. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+arteon/
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx           # Homepage
+│   ├── layout.tsx         # Root layout
+│   ├── uslugi/            # Services pages
+│   ├── realizacje/        # Projects/portfolio
+│   ├── edukacja/          # Blog/education
+│   └── kontakt/           # Contact page
+├── components/
+│   ├── ui/                # Reusable UI components
+│   ├── sections/          # Page sections
+│   ├── shared/            # Shared components (Navigation, Footer)
+│   └── systems/          # System components (FocusManager, etc.)
+├── data/                  # JSON data files
+│   └── pl/               # Polish language data
+├── lib/                   # Utility functions
+├── types/                 # TypeScript type definitions
+└── public/                # Static assets
+```
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `NEXT_PUBLIC_SITE_URL` | Base URL of the website | Yes |
+| `NEXT_PUBLIC_GA_ID` | Google Analytics 4 Measurement ID | No (defaults to G-89KYXWSGYS) |
 
-## Deploy on Vercel
+## Code Quality
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **ESLint:** Comprehensive configuration with accessibility, security, and code quality rules
+- **TypeScript:** Strict mode enabled with comprehensive type checking
+- **Prettier:** Code formatting with Tailwind CSS plugin
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Accessibility
+
+The project follows WCAG 2.1 AA standards with:
+- Focus management on route changes
+- Screen reader announcements
+- Skip to content link
+- Keyboard navigation support
+- ARIA labels throughout
+- Reduced motion support
+
+## SEO
+
+- Dynamic sitemap generation with `lastmod` dates
+- Schema.org structured data (Organization, WebSite, Service, etc.)
+- OpenGraph metadata
+- Proper meta tags and canonical URLs
+
+## Deployment
+
+The project is configured for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import the repository in Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy
+
+The build process automatically generates the sitemap after building.
+
+## License
+
+Private - All rights reserved
+
+## Contact
+
+- **Email:** kontakt@arteonagency.pl
+- **Phone:** +48 516 466 255
+- **Website:** https://www.arteonagency.pl

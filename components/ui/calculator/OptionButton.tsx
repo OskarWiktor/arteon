@@ -20,7 +20,7 @@ export default function OptionButton({ optValue, label, tooltip, selected, onCli
     }
   };
 
-  const IconComponent = icon ? (FiIcons as any)[icon] : null;
+  const IconComponent = icon && icon in FiIcons ? (FiIcons as Record<string, React.ComponentType<{ className?: string }>>)[icon] : null;
 
   return (
     <button

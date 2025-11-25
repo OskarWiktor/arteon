@@ -7,6 +7,10 @@ import ProjectCard from '../../ui/ProjectCard';
 import allProjectsData from '@/data/pl/projects.json';
 import type { Project, ProjectCategory } from '@/types/project';
 
+interface ProjectsData {
+  projects: Project[];
+}
+
 type Props = {
   projects?: Project[];
   max?: number;
@@ -26,7 +30,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
   const [isScrollable, setIsScrollable] = useState(false);
 
   const sourceProjects = useMemo<Project[]>(() => {
-    return projects && projects.length ? projects : (allProjectsData.projects as Project[]);
+    return projects && projects.length ? projects : (allProjectsData as ProjectsData).projects;
   }, [projects]);
 
   const finalProjects = useMemo(() => {
@@ -74,7 +78,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
     ro.observe(container);
     if (card) ro.observe(card);
     return () => ro.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- Only re-run when finalProjects.length changes, not on every finalProjects change
   }, [finalProjects.length]);
 
   useEffect(() => {

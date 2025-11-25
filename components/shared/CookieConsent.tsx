@@ -31,11 +31,24 @@ function writeConsent(state: ConsentState) {
   document.cookie = `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}${domainAttr}`;
 }
 
+interface GtagFunction {
+  (command: 'consent', action: 'update', params: {
+    analytics_storage: 'granted' | 'denied';
+    ad_user_data: 'denied';
+    ad_personalization: 'denied';
+    ad_storage: 'denied';
+  }): void;
+}
+
+interface WindowWithGtag extends Window {
+  gtag?: GtagFunction;
+}
+
 function updateGtag(analytics: boolean) {
-  // @ts-ignore
-  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
-  // @ts-ignore
-  window.gtag('consent', 'update', {
+  if (typeof window === 'undefined') return;
+  const win = window as WindowWithGtag;
+  if (typeof win.gtag !== 'function') return;
+  win.gtag('consent', 'update', {
     analytics_storage: analytics ? 'granted' : 'denied',
     ad_user_data: 'denied',
     ad_personalization: 'denied',
@@ -87,7 +100,7 @@ export default function CookieConsent() {
     const saved = readConsent();
     if (saved) {
       updateGtag(saved.analytics);
-      if (saved.analytics) loadGA((window as any).__GA_ID);
+      if (saved.analytics) loadGA(window.__GA_ID);
       setVisible(false);
     } else {
       setVisible(true);
@@ -134,7 +147,7 @@ export default function CookieConsent() {
   function saveAndClose(next: { analytics: boolean }) {
     writeConsent({ v: 1, analytics: next.analytics, updatedAt: new Date().toISOString() });
     updateGtag(next.analytics);
-    if (next.analytics) loadGA((window as any).__GA_ID);
+    if (next.analytics) loadGA(window.__GA_ID);
 
     setVisible(false);
     setPanel(false);

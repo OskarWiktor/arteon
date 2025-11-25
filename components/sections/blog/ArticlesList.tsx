@@ -7,7 +7,11 @@ import { getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
 import blogData from '@/data/pl/blog.json';
 
-const articles = (blogData as any).articles as Article[];
+interface BlogData {
+  articles: Article[];
+}
+
+const articles = (blogData as BlogData).articles;
 
 export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
   const items = filterCategorySlug ? articles.filter((a) => (a.category || []).some((c) => slugify(c) === filterCategorySlug)) : articles;

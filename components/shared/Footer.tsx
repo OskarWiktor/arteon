@@ -242,7 +242,7 @@ export default function Footer() {
                   </li>
                 ))}
                 <li>
-                  <button onClick={() => (window as any).ArteonConsent?.open()} className="hover-underline cursor-pointer text-base" aria-haspopup="dialog">
+                  <button onClick={() => window.ArteonConsent?.open()} className="hover-underline cursor-pointer text-base" aria-haspopup="dialog">
                     Ustawienia cookies
                   </button>
                 </li>

@@ -125,9 +125,9 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
   const FLOW_TYPES = new Set(['richtext', 'code', 'table', 'quote']);
 
-  type Group = { kind: 'flow' | 'single'; items: any[] };
+  type Group = { kind: 'flow' | 'single'; items: Article['contentBlocks'] };
   const groups: Group[] = [];
-  let buf: any[] = [];
+  let buf: Article['contentBlocks'] = [];
 
   const flushFlow = () => {
     if (buf.length) {
@@ -137,7 +137,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
   };
 
   for (const b of blocks) {
-    if ((b as any).breakBefore) flushFlow();
+    if (b.breakBefore) flushFlow();
 
     if (FLOW_TYPES.has(b.type)) {
       buf.push(b);
@@ -146,7 +146,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
       groups.push({ kind: 'single', items: [b] });
     }
 
-    if ((b as any).breakAfter) flushFlow();
+    if (b.breakAfter) flushFlow();
   }
   flushFlow();
 

@@ -16,7 +16,11 @@ import Badge from '@/components/ui/Badge';
 import CTABanner from '@/components/sections/CTABanner';
 import FaqPanels from '@/components/ui/FaqPanels';
 
-const projects = projectsData.projects as Project[];
+interface ProjectsData {
+  projects: Project[];
+}
+
+const projects = (projectsData as ProjectsData).projects;
 
 const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
@@ -108,17 +112,17 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
                     <Image
                       src={b.src}
                       alt={b.alt}
-                      width={(b as any).width ?? 2000}
-                      height={(b as any).height ?? 2800}
+                      width={b.width ?? 2000}
+                      height={b.height ?? 2800}
                       sizes="100vw"
                       style={{ width: '100%', height: 'auto' }}
-                      priority={(b as any).priority ?? false}
-                      quality={(b as any).quality ?? 90}
+                      priority={b.priority ?? false}
+                      quality={b.quality ?? 90}
                     />
                   </div>
                 ) : (
                   <Aspect ratio={b.ratio || '16/9'}>
-                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={(b as any).quality ?? 90} />
+                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
                   </Aspect>
                 )}
                 {b.caption && <figcaption className="mt-2 text-sm text-[#5e5e5e]">{b.caption}</figcaption>}
@@ -134,17 +138,17 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
                 <Image
                   src={b.src}
                   alt={b.alt}
-                  width={(b as any).width ?? 2000}
-                  height={(b as any).height ?? 2800}
+                  width={b.width ?? 2000}
+                  height={b.height ?? 2800}
                   sizes="(min-width:768px) 50vw, 100vw"
                   style={{ width: '100%', height: 'auto' }}
-                  priority={(b as any).priority ?? false}
-                  quality={(b as any).quality ?? 90}
+                  priority={b.priority ?? false}
+                  quality={b.quality ?? 90}
                 />
               </div>
             ) : (
               <Aspect ratio={b.ratio || '4/3'}>
-                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" quality={(b as any).quality ?? 90} />
+                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" quality={b.quality ?? 90} />
               </Aspect>
             );
 
@@ -291,7 +295,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.deliverables?.length ? (
             <>
               <SectionInfo title="Zakres prac">
-                <ul className="ml-6 list-disc">{project.deliverables.map((d, i) => (typeof d === 'string' ? <li key={i} dangerouslySetInnerHTML={{ __html: d }} /> : <li key={i}>{d as any}</li>))}</ul>
+                <ul className="ml-6 list-disc">{project.deliverables.map((d, i) => (typeof d === 'string' ? <li key={i} dangerouslySetInnerHTML={{ __html: d }} /> : <li key={i}>{d}</li>))}</ul>
               </SectionInfo>
               <Gap size="sm" variant="line" />
             </>

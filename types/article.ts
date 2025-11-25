@@ -13,8 +13,8 @@ export type Article = {
   dateModified?: string;
   faq?: { question: string; answer: string }[];
   contentBlocks: Array<
-    | { type: 'richtext'; html: string }
-    | { type: 'image'; src: string; alt: string; caption?: string; ratio?: '16/9' | '4/3' | '1/1' | 'auto'; width?: number; height?: number; quality?: number; priority?: boolean }
+    | { type: 'richtext'; html: string; breakBefore?: boolean; breakAfter?: boolean }
+    | { type: 'image'; src: string; alt: string; caption?: string; ratio?: '16/9' | '4/3' | '1/1' | 'auto'; width?: number; height?: number; quality?: number; priority?: boolean; breakBefore?: boolean; breakAfter?: boolean }
     | {
         type: 'imageText';
         src: string;
@@ -26,9 +26,11 @@ export type Article = {
         height?: number;
         quality?: number;
         priority?: boolean;
+        breakBefore?: boolean;
+        breakAfter?: boolean;
       }
-    | { type: 'quote'; text: string; author?: string; role?: string }
-    | { type: 'callout'; title?: string; html: string }
+    | { type: 'quote'; text: string; author?: string; role?: string; breakBefore?: boolean; breakAfter?: boolean }
+    | { type: 'callout'; title?: string; html: string; breakBefore?: boolean; breakAfter?: boolean }
   >;
   seo?: { title?: string; description?: string; canonical?: string };
 

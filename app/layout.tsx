@@ -15,6 +15,7 @@ import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import RevealObserver from '@/components/systems/RevealObserver';
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_MEASUREMENT_ID = GA_ID || 'G-89KYXWSGYS';
 
 const SITE_URL = 'https://www.arteonagency.pl';
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
@@ -70,13 +71,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="pl">
       <head>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-89KYXWSGYS" />
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
         <Script id="ga-init">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-89KYXWSGYS'); // automatyczny pierwszy page_view
+            gtag('config', '${GA_MEASUREMENT_ID}'); // automatyczny pierwszy page_view
           `}
         </Script>
 

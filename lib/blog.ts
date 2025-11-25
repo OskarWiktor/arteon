@@ -2,7 +2,11 @@ import blogData from '@/data/pl/blog.json';
 import type { Article } from '@/types/article';
 import { slugify } from '@/utils/slug';
 
-const articles = (blogData as any).articles as Article[];
+interface BlogData {
+  articles: Article[];
+}
+
+const articles = (blogData as BlogData).articles;
 
 export function getAllArticles(): Article[] {
   return articles;

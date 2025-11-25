@@ -67,7 +67,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
         {includeJsonLd && jsonLd && (
           <script
             type="application/ld+json"
-            // eslint-disable-next-line react/no-danger
+            // eslint-disable-next-line react/no-danger -- JSON-LD structured data requires dangerouslySetInnerHTML
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
         )}

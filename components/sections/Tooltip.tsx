@@ -24,9 +24,12 @@ export default function Tooltip({ children, title, description, placement = 'top
   const r = useReducedMotion();
 
   useEffect(() => {
-    const KEY = '__tooltip_dotted_underline_injected__';
-    // @ts-ignore
-    if ((window as any)[KEY]) return;
+    const KEY = '__tooltip_dotted_underline_injected__' as const;
+    interface WindowWithTooltipFlag extends Window {
+      [KEY]?: boolean;
+    }
+    const win = window as WindowWithTooltipFlag;
+    if (win[KEY]) return;
     const style = document.createElement('style');
     style.textContent = `
       @media (pointer: coarse) {
@@ -36,8 +39,7 @@ export default function Tooltip({ children, title, description, placement = 'top
       }
     `;
     document.head.appendChild(style);
-    // @ts-ignore
-    (window as any)[KEY] = true;
+    win[KEY] = true;
   }, []);
 
   const clearTimer = () => {
