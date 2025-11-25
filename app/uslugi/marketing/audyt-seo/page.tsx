@@ -1,6 +1,6 @@
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -387,7 +387,7 @@ export default function OfferMarketingPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Poznaj prawdziwy stan SEO swojej strony"
         description="Audyt, który kończy się planem działania — nie tylko diagnozą."
         primaryLabel="Skontaktuj się"

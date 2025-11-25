@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import HeroBaner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ArticlesList from '@/components/sections/blog/ArticlesList';
@@ -23,7 +23,7 @@ export default function EdukacjaPage() {
 
   return (
     <>
-      <HeroBaner title="Edukacja" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
+      <HeroBanner title="Edukacja" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} />

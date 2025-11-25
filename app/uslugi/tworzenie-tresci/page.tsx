@@ -1,7 +1,7 @@
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import {
@@ -308,7 +308,7 @@ export default function OfferContentPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Stwórzmy treści, które działają jak magnez"
         description="Tworzymy treści, które trafiają do ludzi oraz algorytmów, wspierając sprzedaż"
         primaryLabel="Skontaktuj się"

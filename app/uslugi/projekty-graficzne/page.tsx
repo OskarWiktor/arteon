@@ -1,7 +1,7 @@
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -575,7 +575,7 @@ export default function OfferDesignPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Nadaj marce wyjątkową tożsamość"
         description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
         primaryLabel="Skontaktuj się"

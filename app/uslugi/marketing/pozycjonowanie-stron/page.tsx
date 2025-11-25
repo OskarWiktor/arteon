@@ -1,6 +1,6 @@
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -367,7 +367,7 @@ export default function OfferSeoSubscription() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Zbudujmy Twoją widoczność"
         description="Strategia treści, porządek na stronie i bezpieczne linki — zestaw, który zwiększa liczbę zapytań."
         primaryLabel="Skontaktuj się"

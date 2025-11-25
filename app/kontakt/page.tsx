@@ -1,6 +1,6 @@
 import Script from 'next/script';
 import ContactForm from '@/components/sections/ContactForm';
-import HeroBaner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -84,7 +84,7 @@ function ContactSchemas() {
 export default function ContactPage() {
   return (
     <>
-      <HeroBaner
+      <HeroBanner
         title="Porozmawiajmy o Twojej firmie"
         variant="center"
         description="Wypełnij formularz i uzyskaj darmową wycenę dla swojej firmy"

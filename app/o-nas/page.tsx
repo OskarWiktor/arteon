@@ -1,6 +1,6 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
-import HeroBaner from '@/components/sections/HeroBaner';
+import CTABanner from '@/components/sections/CTABanner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TechStack from '@/components/sections/TechStack';
@@ -21,7 +21,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroBaner title="O nas" description="Arteon - Elastyczny partner dla Twojej firmy" backgroundImage="/assets/bg/abstract-bg8.webp" overlay="black" variant="center" />
+      <HeroBanner title="O nas" description="Arteon - Elastyczny partner dla Twojej firmy" backgroundImage="/assets/bg/abstract-bg8.webp" overlay="black" variant="center" />
       <BenefitBelt
         items={[
           { icon: <RiMegaphoneLine />, label: 'Doświadczenie w pracy dla marek globalnych' },
@@ -105,7 +105,7 @@ export default function AboutPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Zacznijmy od rozmowy"
         description="Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań - znajdziemy najlepszą drogę do efektu."
         primaryLabel="Skontaktuj się"

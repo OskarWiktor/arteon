@@ -1,4 +1,4 @@
-import HeroBaner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import Button from '@/components/ui/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
@@ -38,7 +38,7 @@ export const metadata = {
 export default function OfferPage() {
   return (
     <>
-      <HeroBaner backgroundImage="/assets/bg/abstract-bg12.webp" overlay="black" title="Nasze usługi" variant="center" />
+      <HeroBanner backgroundImage="/assets/bg/abstract-bg12.webp" overlay="black" title="Nasze usługi" variant="center" />
 
       <Wrapper>
         <Gap size="sm" />

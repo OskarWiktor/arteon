@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import Button from '../ui/Button';
 import Wrapper from '../ui/Wrapper';
 
-interface CTABanerProps {
+interface CTABannerProps {
   title: ReactNode;
   subtitle?: ReactNode;
   description?: ReactNode;
@@ -14,7 +14,7 @@ interface CTABanerProps {
   overlay?: 'none' | 'black' | 'white';
 }
 
-export default function CTABaner({ title, subtitle, description, primaryLabel, primaryLink, secondaryLabel, secondaryLink, backgroundImage, overlay = 'none' }: CTABanerProps) {
+export default function CTABanner({ title, subtitle, description, primaryLabel, primaryLink, secondaryLabel, secondaryLink, backgroundImage, overlay = 'none' }: CTABannerProps) {
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
   const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
@@ -32,7 +32,7 @@ export default function CTABaner({ title, subtitle, description, primaryLabel, p
 
       <Wrapper className="relative flex h-auto justify-center md:items-center">
         <div
-          className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} rounded-2xl p-6`}
+          className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} p-6`}
         >
           {subtitle && <span className="text-base tracking-wider uppercase">{subtitle}</span>}
 
@@ -59,3 +59,4 @@ export default function CTABaner({ title, subtitle, description, primaryLabel, p
     </section>
   );
 }
+

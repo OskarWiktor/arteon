@@ -1,7 +1,7 @@
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -193,7 +193,7 @@ export default function OfferDesignSzablonyPostowPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Stwórz spójną komunikację w mediach społecznościowych"
         description="Dostarczymy szablony, dzięki którym publikacje będą szybsze i łatwiejsze."
         primaryLabel="Skontaktuj się"

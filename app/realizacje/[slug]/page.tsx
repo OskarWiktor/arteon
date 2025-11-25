@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 
 import projectsData from '@/data/pl/projects.json';
 import type { Project } from '@/types/project';
@@ -13,7 +13,7 @@ import TableOfContents from '@/components/sections/TableOfContent';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import Badge from '@/components/ui/Badge';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import FaqPanels from '@/components/ui/FaqPanels';
 
 const projects = projectsData.projects as Project[];
@@ -405,7 +405,7 @@ export default function ProjectPage({ params }: PageProps) {
 
       <Gap />
 
-      <CTABaner
+      <CTABanner
         title={ctaProps.title}
         description={ctaProps.description}
         primaryLabel={ctaProps.primaryLabel}

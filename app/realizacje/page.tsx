@@ -1,4 +1,4 @@
-import HeroBaner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilters';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
@@ -19,7 +19,7 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <HeroBaner title="Wybrane realizacje" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
+      <HeroBanner title="Wybrane realizacje" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
 
       <Wrapper>
         <Gap size="sm" />

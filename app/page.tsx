@@ -1,7 +1,7 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
-import HeroBaner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
@@ -36,7 +36,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
-      <HeroBaner
+      <HeroBanner
         title="Rozwiń swoją markę z nami"
         description="Witaj w Arteon - miejscu, które pomoże Ci rozwinąć Twój biznes online oraz offline"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
@@ -213,7 +213,7 @@ export default function HomePage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Zacznijmy od rozmowy"
         description="Z chęcią porozmawiamy o Twoim pomyśle, przejdź do strony kontaktu i opisz swoją wizję rozwoju"
         primaryLabel="Kontakt"

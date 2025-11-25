@@ -1,6 +1,6 @@
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
@@ -366,7 +366,7 @@ export default function OfferOptimizationWordPressPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Zróbmy porządek z Twoją stroną WordPress"
         description="Przyspieszymy stronę, uporządkujemy wtyczki i przygotujemy fundamenty pod dalszy rozwój."
         primaryLabel="Poproś o wycenę"

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import HeroBaner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ArticlesList from '@/components/sections/blog/ArticlesList';
@@ -43,7 +43,7 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
 
   return (
     <>
-      <HeroBaner
+      <HeroBanner
         title={`Edukacja: ${label}`}
         description={`Poradniki i wiedza na temat: ${label}. Sprawdź nasze artykuły`}
         variant="center"

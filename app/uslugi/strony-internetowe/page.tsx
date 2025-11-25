@@ -14,9 +14,9 @@ import {
   RiBrushLine,
 } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
@@ -363,7 +363,7 @@ export default function OfferWebPage() {
         <Gap size="sm" />
       </Wrapper>
 
-      <CTABaner
+      <CTABanner
         title="Zbudujmy stronę, która pracuje na Twoją markę"
         description="Pokaż się w sieci z profesjonalnym wizerunkiem"
         primaryLabel="Wyceń projekt"

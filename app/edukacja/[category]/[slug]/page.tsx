@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
-import HeroBaner from '@/components/sections/HeroBaner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import TableOfContents from '@/components/sections/TableOfContent';
 import Badge from '@/components/ui/Badge';
 import FaqPanels from '@/components/ui/FaqPanels';
-import CTABaner from '@/components/sections/CTABaner';
+import CTABanner from '@/components/sections/CTABanner';
 
 import type { Article } from '@/types/article';
 import { getAllArticles, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blog';
@@ -286,7 +286,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
 
   return (
     <>
-      <HeroBaner backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'} />
+      <HeroBanner backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'} />
 
       <Breadcrumbs
         second={{ href: '/edukacja', label: 'Edukacja' }}
@@ -342,7 +342,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
 
       <Gap />
 
-      <CTABaner
+      <CTABanner
         title={cta.title}
         description={cta.description}
         primaryLabel={cta.primaryLabel}
