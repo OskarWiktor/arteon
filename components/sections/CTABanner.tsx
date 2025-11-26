@@ -31,9 +31,7 @@ export default function CTABanner({ title, subtitle, description, primaryLabel, 
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative flex h-auto justify-center md:items-center">
-        <div
-          className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}
-        >
+        <div className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}>
           {subtitle && <span className="text-base tracking-wider uppercase">{subtitle}</span>}
 
           <h3 className="reveal-animation">{title}</h3>
@@ -59,4 +57,3 @@ export default function CTABanner({ title, subtitle, description, primaryLabel, 
     </section>
   );
 }
-

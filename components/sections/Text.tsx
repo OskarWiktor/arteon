@@ -13,7 +13,7 @@ export default function TechVisualSection() {
             </h2>
           </div>
 
-          <span className="text-sm leading-relaxed text-neutral-600 md:max-w-md md:justify-self-end md:text-base">
+          <span className="text-sm leading-relaxed text-[#5e5e5e] md:max-w-md md:justify-self-end md:text-base">
             We merge technology and visual design to create innovative, impactful solutions. Our mission is to deliver designs that are both striking and highly functional, redefining what&apos;s
             possible in the digital space.
           </span>
@@ -37,24 +37,24 @@ export default function TechVisualSection() {
             <div className="absolute inset-x-10 top-[65%] flex max-w-3/5 -translate-y-1/2 justify-between md:inset-x-24">
               <div className="space-y-1 text-center">
                 <span className="text-3xl font-semibold text-neutral-900">50+</span> <br />
-                <span className="font-medium tracking-[0.18em] text-neutral-500 uppercase">Industries</span>
+                <span className="font-medium tracking-[0.18em] text-[#5e5e5e] uppercase">Industries</span>
               </div>
 
               <div className="space-y-1 text-center">
                 <span className="text-3xl font-semibold text-neutral-900">4 Week</span>
                 <br />
-                <span className="font-medium tracking-[0.18em] text-neutral-500 uppercase">Turnaround</span>
+                <span className="font-medium tracking-[0.18em] text-[#5e5e5e] uppercase">Turnaround</span>
               </div>
 
               <div className="space-y-1 text-center">
                 <span className="text-3xl font-semibold text-neutral-900">100%</span> <br />
-                <span className="font-medium tracking-[0.18em] text-neutral-500 uppercase">Satisfaction</span>
+                <span className="font-medium tracking-[0.18em] text-[#5e5e5e] uppercase">Satisfaction</span>
               </div>
             </div>
 
             <div className="absolute top-[20%] -translate-y-1/2 text-right md:right-34">
               <span className="text-3xl font-semibold text-neutral-900">5000+</span> <br />
-              <span className="mt-1 font-medium tracking-[0.18em] text-neutral-500 uppercase">Clients</span>
+              <span className="mt-1 font-medium tracking-[0.18em] text-[#5e5e5e] uppercase">Clients</span>
             </div>
           </dl>
         </div>

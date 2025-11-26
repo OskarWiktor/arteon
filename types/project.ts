@@ -10,7 +10,18 @@ export type FaqItem = { question: string; answer: string };
 export type ContentBlock =
   | { type: 'richtext'; html: string }
   | { type: 'image'; src: string; alt: string; caption?: string; ratio?: '16/9' | '4/3' | '1/1' | 'auto'; width?: number; height?: number; quality?: number; priority?: boolean }
-  | { type: 'imageText'; src: string; alt: string; html: string; imageSide?: 'left' | 'right'; ratio?: '16/9' | '4/3' | '1/1' | 'auto'; width?: number; height?: number; quality?: number; priority?: boolean };
+  | {
+      type: 'imageText';
+      src: string;
+      alt: string;
+      html: string;
+      imageSide?: 'left' | 'right';
+      ratio?: '16/9' | '4/3' | '1/1' | 'auto';
+      width?: number;
+      height?: number;
+      quality?: number;
+      priority?: boolean;
+    };
 
 export type ProjectCTA = {
   title?: string;

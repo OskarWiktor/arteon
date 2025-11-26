@@ -31,23 +31,16 @@ function writeConsent(state: ConsentState) {
   document.cookie = `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}${domainAttr}`;
 }
 
-interface GtagFunction {
-  (command: 'consent', action: 'update', params: {
-    analytics_storage: 'granted' | 'denied';
-    ad_user_data: 'denied';
-    ad_personalization: 'denied';
-    ad_storage: 'denied';
-  }): void;
-}
-
-interface WindowWithGtag extends Window {
-  gtag?: GtagFunction;
-}
-
+// 🔧 uproszczony typ gtag – zamiast kombinować z interfejsami Next/TS
 function updateGtag(analytics: boolean) {
   if (typeof window === 'undefined') return;
-  const win = window as WindowWithGtag;
+
+  const win = window as typeof window & {
+    gtag?: (...args: any[]) => void;
+  };
+
   if (typeof win.gtag !== 'function') return;
+
   win.gtag('consent', 'update', {
     analytics_storage: analytics ? 'granted' : 'denied',
     ad_user_data: 'denied',
@@ -100,6 +93,7 @@ export default function CookieConsent() {
     const saved = readConsent();
     if (saved) {
       updateGtag(saved.analytics);
+      // zakładam, że gdzieś globalnie masz zdefiniowane window.__GA_ID
       if (saved.analytics) loadGA(window.__GA_ID);
       setVisible(false);
     } else {
@@ -145,7 +139,11 @@ export default function CookieConsent() {
   }, [visible]);
 
   function saveAndClose(next: { analytics: boolean }) {
-    writeConsent({ v: 1, analytics: next.analytics, updatedAt: new Date().toISOString() });
+    writeConsent({
+      v: 1,
+      analytics: next.analytics,
+      updatedAt: new Date().toISOString(),
+    });
     updateGtag(next.analytics);
     if (next.analytics) loadGA(window.__GA_ID);
 
@@ -199,12 +197,7 @@ export default function CookieConsent() {
                 Odrzuć
               </button>
 
-              <Button
-                onClick={() => {
-                  setPanel(true);
-                }}
-                size="small"
-              >
+              <Button size="small" onClick={() => setPanel(true)}>
                 Ustawienia
               </Button>
               <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="dark">
@@ -253,7 +246,15 @@ export default function CookieConsent() {
                 >
                   Odrzuć
                 </button>
-                <Button onClick={() => saveAndClose({ analytics: analyticsChoice })} size="small" variant="dark">
+                <Button
+                  onClick={() =>
+                    saveAndClose({
+                      analytics: analyticsChoice,
+                    })
+                  }
+                  size="small"
+                  variant="dark"
+                >
                   Zapisz
                 </Button>
               </div>

@@ -14,7 +14,19 @@ export type Article = {
   faq?: { question: string; answer: string }[];
   contentBlocks: Array<
     | { type: 'richtext'; html: string; breakBefore?: boolean; breakAfter?: boolean }
-    | { type: 'image'; src: string; alt: string; caption?: string; ratio?: '16/9' | '4/3' | '1/1' | 'auto'; width?: number; height?: number; quality?: number; priority?: boolean; breakBefore?: boolean; breakAfter?: boolean }
+    | {
+        type: 'image';
+        src: string;
+        alt: string;
+        caption?: string;
+        ratio?: '16/9' | '4/3' | '1/1' | 'auto';
+        width?: number;
+        height?: number;
+        quality?: number;
+        priority?: boolean;
+        breakBefore?: boolean;
+        breakAfter?: boolean;
+      }
     | {
         type: 'imageText';
         src: string;

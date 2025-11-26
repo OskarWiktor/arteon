@@ -25,18 +25,20 @@ Modern, accessible website for Arteon - a web development and digital marketing 
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm, yarn, pnpm, or bun
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd arteon
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -46,17 +48,20 @@ pnpm install
 ```
 
 3. Create a `.env.local` file (copy from `.env.example`):
+
 ```bash
 cp .env.example .env.local
 ```
 
 4. Update environment variables in `.env.local`:
+
 ```env
 NEXT_PUBLIC_SITE_URL=https://www.arteonagency.pl
 NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ```
 
 5. Run the development server:
+
 ```bash
 npm run dev
 # or
@@ -100,10 +105,10 @@ arteon/
 
 ## Environment Variables
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `NEXT_PUBLIC_SITE_URL` | Base URL of the website | Yes |
-| `NEXT_PUBLIC_GA_ID` | Google Analytics 4 Measurement ID | No (defaults to G-89KYXWSGYS) |
+| Variable               | Description                       | Required                      |
+| ---------------------- | --------------------------------- | ----------------------------- |
+| `NEXT_PUBLIC_SITE_URL` | Base URL of the website           | Yes                           |
+| `NEXT_PUBLIC_GA_ID`    | Google Analytics 4 Measurement ID | No (defaults to G-89KYXWSGYS) |
 
 ## Code Quality
 
@@ -114,6 +119,7 @@ arteon/
 ## Accessibility
 
 The project follows WCAG 2.1 AA standards with:
+
 - Focus management on route changes
 - Screen reader announcements
 - Skip to content link

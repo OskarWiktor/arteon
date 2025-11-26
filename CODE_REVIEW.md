@@ -14,6 +14,7 @@ This is a **well-structured, modern Next.js application** with strong focus on a
 **Overall Score: 8.2/10**
 
 ### Strengths
+
 - ✅ Excellent accessibility implementation (WCAG 2.1 AA considerations)
 - ✅ Strong SEO optimization (Schema.org, OpenGraph, sitemaps)
 - ✅ Modern tech stack with latest Next.js and React
@@ -22,11 +23,13 @@ This is a **well-structured, modern Next.js application** with strong focus on a
 - ✅ Privacy-first approach (GDPR-compliant cookie consent)
 
 ### Critical Issues
+
 - 🔴 OpenGraph metadata bug (array instead of string)
 - 🔴 Component naming inconsistencies (HeroBaner vs HeroBanner)
 - 🔴 Hardcoded Google Analytics ID
 
 ### Medium Priority Issues
+
 - 🟡 TypeScript `any` usage (192 instances)
 - 🟡 Missing error boundaries
 - 🟡 Some TypeScript suppressions (@ts-ignore)
@@ -40,6 +43,7 @@ This is a **well-structured, modern Next.js application** with strong focus on a
 **File:** `app/page.tsx:30`
 
 **Issue:**
+
 ```typescript
 images: [
   {
@@ -51,6 +55,7 @@ images: [
 **Problem:** OpenGraph `url` should be a string, not an array. This will cause incorrect metadata rendering.
 
 **Fix:**
+
 ```typescript
 images: [
   {
@@ -65,17 +70,20 @@ images: [
 
 **Files:** Multiple files importing `HeroBaner` and `CTABaner`
 
-**Issue:** 
+**Issue:**
+
 - Component file is named `HeroBaner.tsx` but exports `HeroBanner` (correct spelling)
 - Component `CTABaner` should be `CTABanner` (typo: "baner" → "banner")
 - Inconsistent imports across the codebase
 
 **Affected Files:**
+
 - `components/sections/HeroBaner.tsx` (should be `HeroBanner.tsx`)
 - `components/sections/CTABaner.tsx` (should be `CTABanner.tsx`)
 - 34+ files with inconsistent imports
 
 **Fix:**
+
 1. Rename `HeroBaner.tsx` → `HeroBanner.tsx`
 2. Rename `CTABaner.tsx` → `CTABanner.tsx`
 3. Update all imports consistently
@@ -87,6 +95,7 @@ images: [
 **File:** `app/layout.tsx:73`
 
 **Issue:**
+
 ```typescript
 <Script async src="https://www.googletagmanager.com/gtag/js?id=G-89KYXWSGYS" />
 ```
@@ -94,6 +103,7 @@ images: [
 **Problem:** GA ID is hardcoded, but `NEXT_PUBLIC_GA_ID` env var is already defined (line 17) but not used.
 
 **Fix:**
+
 ```typescript
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-89KYXWSGYS';
 <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
@@ -106,6 +116,7 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-89KYXWSGYS';
 **File:** `components/sections/CTABaner.tsx:35`
 
 **Issue:**
+
 ```typescript
 className={`... rounded-2xl p-6 ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'} rounded-2xl p-6`}
 ```
@@ -123,6 +134,7 @@ className={`... rounded-2xl p-6 ${toneTextClass} ${overlay === 'black' ? 'bg-bla
 **Problem:** Excessive use of `any` type reduces type safety.
 
 **Examples:**
+
 - `lib/blog.ts:5` - `(blogData as any).articles`
 - `lib/serviceSchema.ts:6` - `const json: any = {...}`
 - `components/ui/calculator/OptionButton.tsx:23` - `(FiIcons as any)[icon]`
@@ -138,11 +150,13 @@ className={`... rounded-2xl p-6 ${toneTextClass} ${overlay === 'black' ? 'bg-bla
 **Impact:** Errors can crash the entire application instead of being gracefully handled.
 
 **Recommendation:** Add error boundaries at:
+
 - Root layout level
 - Route group level
 - Critical component sections
 
 **Example:**
+
 ```typescript
 // app/error.tsx
 'use client';
@@ -163,6 +177,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
 **Count:** 8 instances of `@ts-ignore` or `eslint-disable`
 
 **Files:**
+
 - `components/sections/Tooltip.tsx` (2 instances)
 - `components/shared/CookieConsent.tsx` (2 instances)
 - `components/sections/BreadCrumbs.tsx` (1 instance)
@@ -178,6 +193,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
 **Issue:** No `.env.example` file to document required environment variables.
 
 **Recommendation:** Create `.env.example`:
+
 ```env
 NEXT_PUBLIC_SITE_URL=https://www.arteonagency.pl
 NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
@@ -192,6 +208,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 **Issue:** Contains default Next.js template content.
 
 **Recommendation:** Add project-specific documentation:
+
 - Setup instructions
 - Environment variables
 - Architecture overview
@@ -214,6 +231,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ### Positive Patterns
 
 1. **Accessibility Excellence:**
+
    - `FocusManager` for route transitions
    - `RouteAnnouncer` for screen readers
    - `SkipToContent` link
@@ -221,12 +239,14 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
    - Keyboard navigation support
 
 2. **SEO Best Practices:**
+
    - Schema.org structured data
    - Dynamic sitemap generation
    - Proper meta tags
    - OpenGraph implementation (with one bug)
 
 3. **Component Organization:**
+
    - Clear separation: `ui/`, `sections/`, `shared/`, `systems/`
    - Reusable components
    - Consistent naming (except for typos)
@@ -239,16 +259,19 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ### Areas for Improvement
 
 1. **Type Safety:**
+
    - Reduce `any` usage (192 instances)
    - Add proper types for JSON imports
    - Type dynamic icon imports
 
 2. **Error Handling:**
+
    - Add error boundaries
    - Better form validation feedback
    - Network error handling
 
 3. **Performance:**
+
    - Consider lazy loading for heavy components
    - Image optimization review
    - Bundle size analysis
@@ -265,21 +288,25 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ### Configuration Files
 
 #### `package.json`
+
 - ✅ Good dependency management
 - ✅ Modern versions
 - ⚠️ Consider adding test dependencies
 
 #### `tsconfig.json`
+
 - ✅ Strict mode enabled
 - ✅ Good path aliases
 - ✅ Proper includes/excludes
 
 #### `next.config.ts`
+
 - ✅ Good redirects configuration
 - ⚠️ Consider adding security headers
 - ⚠️ Consider image domains configuration
 
 #### `eslint.config.js`
+
 - ✅ Comprehensive rules
 - ✅ Good plugin setup
 - ✅ Accessibility rules enabled
@@ -287,24 +314,28 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ### Component Files
 
 #### `components/ui/Button.tsx`
+
 - ✅ Good accessibility
 - ✅ External link detection
 - ✅ Multiple variants
 - ⚠️ `ButtonToTop` could be extracted to separate file
 
 #### `components/sections/ContactForm.tsx`
+
 - ✅ Good form handling
 - ✅ Error states
 - ⚠️ No client-side validation beyond HTML5
 - ⚠️ Consider adding rate limiting
 
 #### `components/shared/CookieConsent.tsx`
+
 - ✅ Excellent GDPR compliance
 - ✅ Focus trap implementation
 - ✅ Good accessibility
 - ⚠️ Uses `@ts-ignore` (2 instances)
 
 #### `components/systems/FocusManager.tsx`
+
 - ✅ Excellent accessibility feature
 - ✅ Proper focus management
 - ✅ Hash navigation support
@@ -312,17 +343,20 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ### Page Files
 
 #### `app/page.tsx`
+
 - 🔴 **CRITICAL:** OpenGraph bug (line 30)
 - ⚠️ Uses `HeroBaner` (should be `HeroBanner`)
 - ⚠️ Uses `CTABaner` (should be `CTABanner`)
 
 #### `app/layout.tsx`
+
 - 🔴 **CRITICAL:** Hardcoded GA ID
 - ✅ Good Schema.org implementation
 - ✅ Proper script loading
 - ✅ Cookie consent integration
 
 #### `app/kontakt/page.tsx`
+
 - ✅ Good metadata
 - ✅ Schema.org implementation
 - ⚠️ Uses `HeroBaner` (typo)
@@ -332,6 +366,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ## Recommendations by Priority
 
 ### Immediate (Critical)
+
 1. ✅ Fix OpenGraph `url` array → string
 2. ✅ Rename `HeroBaner` → `HeroBanner` consistently
 3. ✅ Rename `CTABaner` → `CTABanner` consistently
@@ -339,6 +374,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 5. ✅ Remove duplicate className in `CTABaner.tsx`
 
 ### Short-term (High Priority)
+
 1. Add error boundaries
 2. Reduce `any` type usage
 3. Replace `@ts-ignore` with proper types
@@ -346,6 +382,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 5. Update README with project documentation
 
 ### Medium-term (Nice to Have)
+
 1. Add unit tests
 2. Add E2E tests
 3. Performance optimization audit
@@ -353,6 +390,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 5. Add security headers to `next.config.ts`
 
 ### Long-term (Enhancements)
+
 1. Consider Storybook for component documentation
 2. Add monitoring/error tracking (Sentry)
 3. Consider i18n if multi-language needed
@@ -364,12 +402,14 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ## Security Considerations
 
 ### Current State
+
 - ✅ Cookie consent implementation
 - ✅ Secure cookie settings
 - ✅ External link `rel="noopener noreferrer"`
 - ✅ Form submission to trusted service (Formspree)
 
 ### Recommendations
+
 1. Add Content Security Policy headers
 2. Review form submission endpoint security
 3. Consider rate limiting for forms
@@ -392,6 +432,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ## Accessibility Audit
 
 ### Strengths
+
 - ✅ Skip to content link
 - ✅ Focus management on route changes
 - ✅ ARIA labels throughout
@@ -401,6 +442,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 - ✅ Semantic HTML
 
 ### Minor Improvements
+
 - Consider adding `lang` attribute changes for dynamic content
 - Review color contrast ratios (appears good but verify)
 - Consider adding `aria-live` regions for dynamic updates
@@ -410,11 +452,13 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ## Performance Observations
 
 ### Good Practices
+
 - ✅ Next.js Image component usage
 - ✅ Dynamic imports potential (framer-motion)
 - ✅ Proper script loading strategies
 
 ### Potential Optimizations
+
 - Review bundle size
 - Consider code splitting for calculator
 - Lazy load heavy components (carousels, animations)
@@ -425,6 +469,7 @@ NEXT_PUBLIC_GA_ID=G-89KYXWSGYS
 ## Conclusion
 
 This is a **high-quality codebase** with excellent attention to accessibility and SEO. The main issues are:
+
 1. A few critical bugs (OpenGraph, naming inconsistencies)
 2. Type safety improvements needed (reduce `any` usage)
 3. Missing error boundaries
@@ -432,6 +477,7 @@ This is a **high-quality codebase** with excellent attention to accessibility an
 With the critical fixes applied, this would be a production-ready, maintainable codebase. The architecture is solid, and the code demonstrates good understanding of modern React/Next.js patterns.
 
 **Recommended Action Plan:**
+
 1. Fix critical issues (1-2 hours)
 2. Address medium priority items (1 day)
 3. Plan for testing infrastructure (1 week)
@@ -455,4 +501,3 @@ With the critical fixes applied, this would be a production-ready, maintainable 
 ---
 
 **Review completed:** All files, pages, and components reviewed systematically.
-

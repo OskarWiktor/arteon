@@ -13,8 +13,7 @@ interface Window {
       ad_user_data?: 'denied';
       ad_personalization?: 'denied';
       ad_storage?: 'denied';
-    }
+    },
   ) => void;
   dataLayer?: unknown[];
 }
-

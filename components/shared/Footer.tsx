@@ -101,6 +101,7 @@ const navLinks = [
   { href: '/realizacje', label: 'Realizacje' },
   { href: '/o-nas', label: 'O Nas' },
   { href: '/edukacja', label: 'Edukacja' },
+  { href: '/narzedzia', label: 'Narzędzia' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 

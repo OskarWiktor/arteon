@@ -13,6 +13,7 @@ interface ButtonProps {
   arrow?: boolean;
   link?: string;
   className?: string;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 const isExternal = (href: string) => {
@@ -20,7 +21,7 @@ const isExternal = (href: string) => {
   return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(href);
 };
 
-export default function Button({ children, variant = 'normal', size = 'medium', onClick, disabled = false, arrow = false, link, className = '' }: ButtonProps) {
+export default function Button({ children, variant = 'normal', size = 'medium', onClick, disabled = false, arrow = false, link, className = '', type }: ButtonProps) {
   let sizeClass = '';
   let variantClass = '';
 
@@ -75,9 +76,11 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
     </span>
   ) : null;
 
+  const buttonType: 'button' | 'submit' | 'reset' = type ?? 'button';
+
   if (disabled) {
     return (
-      <button type="button" disabled aria-disabled="true" className={baseClass}>
+      <button type={buttonType} disabled aria-disabled="true" className={baseClass}>
         <span>{children}</span>
         {Arrow}
       </button>
@@ -102,7 +105,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   }
 
   return (
-    <button type="button" onClick={onClick} className={baseClass}>
+    <button type={buttonType} onClick={onClick} className={baseClass}>
       <span>{children}</span>
       {Arrow}
     </button>

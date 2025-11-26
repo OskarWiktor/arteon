@@ -29,4 +29,3 @@ export default function ButtonToTop({ targetId = 'article-root', showAfter = 400
     </Button>
   );
 }
-

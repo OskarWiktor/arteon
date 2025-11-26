@@ -33,6 +33,7 @@ const NAV: NavItem[] = [
   { href: '/realizacje', label: 'Realizacje', exact: true },
   { href: '/o-nas', label: 'O nas' },
   { href: '/edukacja', label: 'Edukacja' },
+  { href: '/narzedzia', label: 'Narzędzia' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 

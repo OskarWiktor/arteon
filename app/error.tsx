@@ -16,9 +16,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
     <Wrapper>
       <div className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center">
         <h1 className="mb-4">Coś poszło nie tak</h1>
-        <p className="mb-8 max-w-md text-lg leading-relaxed text-[#5e5e5e]">
-          Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę lub skontaktuj się z nami, jeśli problem się powtarza.
-        </p>
+        <p className="mb-8 max-w-md text-lg leading-relaxed text-[#5e5e5e]">Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę lub skontaktuj się z nami, jeśli problem się powtarza.</p>
         <div className="flex flex-wrap gap-3">
           <Button onClick={reset} variant="accent" arrow>
             Spróbuj ponownie
@@ -39,4 +37,3 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
     </Wrapper>
   );
 }
-
