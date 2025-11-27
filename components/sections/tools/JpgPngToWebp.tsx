@@ -1,9 +1,6 @@
 'use client';
 
-import HeroBanner from '@/components/sections/HeroBanner';
 import Button from '@/components/ui/Button';
-import Gap from '@/components/ui/Gap';
-import Wrapper from '@/components/ui/Wrapper';
 import { DragEvent, FormEvent, useMemo, useState } from 'react';
 
 type FileStatus = 'pending' | 'processing' | 'done' | 'error';
@@ -80,7 +77,7 @@ export default function JpgPngToWebp() {
   const [files, setFiles] = useState<FileItem[]>([]);
   const [isConverting, setIsConverting] = useState(false);
   const [globalError, setGlobalError] = useState<string | null>(null);
-  const [quality, setQuality] = useState(80); // 60–95
+  const [quality, setQuality] = useState(80); // 60-95
   const [autoDownload, setAutoDownload] = useState(false);
   const [copyInfo, setCopyInfo] = useState<string | null>(null);
 
@@ -112,7 +109,7 @@ export default function JpgPngToWebp() {
         });
 
       if (!newItems.length && !prev.length) {
-        setGlobalError('Dodaj pliki JPG lub PNG – inne formaty są pomijane.');
+        setGlobalError('Dodaj pliki JPG lub PNG - inne formaty są pomijane.');
       }
 
       return [...prev, ...newItems];
@@ -312,234 +309,204 @@ export default function JpgPngToWebp() {
 
   return (
     <>
-      <HeroBanner
-        title="Konwerter JPG/PNG na WebP"
-        description="Zoptymalizuj grafiki dla szybszej prędkości Twojej witryny. Dodaj kilka plików, wybierz poziom jakości i pobierz zdjęcia w formacie WebP. Konwersja odbywa się w całości w Twojej przeglądarce – pliki nie są nigdzie wysyłane."
-        overlay="black"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-      />
-
-      <Wrapper>
-        <Gap size="sm" />
-
-        <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-          <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <p className="mb-2 text-xs font-semibold tracking-wide text-[#5e5e5e] uppercase">Krok 1 · Dodaj pliki</p>
-                <label
-                  onDrop={handleDrop}
-                  onDragOver={handleDragOver}
-                  className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
-                >
-                  <span className="mb-1 text-sm font-medium">Przeciągnij i upuść obrazy tutaj</span>
-                  <span className="mb-2 text-xs text-[#5e5e5e]">lub kliknij, aby wybrać pliki z dysku</span>
-                  <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-800 shadow-sm">Obsługiwane: JPG, PNG</span>
-                  <input type="file" accept="image/jpeg,image/png" multiple onChange={handleFileChange} className="hidden" />
-                </label>
-                {globalError && <p className="mt-2 text-xs text-red-600">{globalError}</p>}
-              </div>
-
-              <div>
-                <p className="mt-8 mb-2 text-xs font-semibold tracking-wide text-[#5e5e5e] uppercase">Krok 2 · Ustaw jakość WebP</p>
-                <div className="flex items-center">
-                  <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="p-0!" />
-                  <span className="w-16 text-right text-neutral-700">{quality}%</span>
-                </div>
-                <span className="mt-3 text-sm text-[#5e5e5e]">Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80% to dobry kompromis dla większości stron.</span>
-
-                <div className="mt-3 flex items-center">
-                  <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
-                  <label htmlFor="auto-download" className="pl-2 text-sm! text-neutral-700">
-                    Automatycznie pobierz wszystkie pliki po konwersji
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <p className="mt-8 mb-2 text-xs font-semibold tracking-wide text-[#5e5e5e] uppercase">Krok 3 · Konwertuj i pobierz</p>
-                {total > 0 && (
-                  <div className="mb-3 space-y-2">
-                    <div className="flex items-center justify-between text-sm text-[#5e5e5e]">
-                      <span>
-                        W kolejce: <strong>{total}</strong> plików
-                      </span>
-                      {total > 0 && (
-                        <span>
-                          Zakończone: {completed} / {total}
-                        </span>
-                      )}
-                    </div>
-                    <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
-                      <div
-                        className="h-full rounded-full bg-slate-600 transition-all"
-                        style={{ width: `${visualProgress}%` }}
-                        role="progressbar"
-                        aria-valuemin={0}
-                        aria-valuemax={100}
-                        aria-valuenow={progress}
-                      />
-                    </div>
-                  </div>
-                )}
-
-                <div className="mt-4 flex flex-wrap gap-3">
-                  <Button variant="accent" disabled={isConverting || !files.length} className="disabled:opacity-60" type="submit" size="small">
-                    {isConverting ? 'Konwertuję…' : 'Konwertuj pliki'}
-                  </Button>
-                  <Button onClick={handleDownloadAll} disabled={!anyDone} className="disabled:opacity-40" size="small">
-                    Pobierz wszystkie
-                  </Button>
-                  <Button onClick={handleClearAll} disabled={!files.length || isConverting} className="disabled:opacity-40" size="small">
-                    Wyczyść listę
-                  </Button>
-                </div>
-
-                {totalInput > 0 && (
-                  <div className="mt-6">
-                    <p className="text-sm! text-[#5e5e5e]">
-                      Łączny rozmiar wejściowy: <strong>{formatBytes(totalInput)}</strong>
-                    </p>
-                    {totalOutput > 0 && (
-                      <>
-                        <p className="text-sm! text-[#5e5e5e]">
-                          Łączny rozmiar po konwersji: <strong>{formatBytes(totalOutput)}</strong>
-                        </p>
-                        <p>
-                          Łącznie zaoszczędzono:{' '}
-                          <strong>
-                            {formatBytes(Math.max(totalSaved, 0))} {totalSaved > 0 && `(~${Math.round((totalSaved / totalInput) * 100)}% mniej)`}
-                          </strong>
-                        </p>
-                      </>
-                    )}
-                  </div>
-                )}
-
-                <div className="mt-6 flex flex-wrap items-center gap-2">
-                  <Button variant="minimal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="disabled:opacity-40">
-                    Kopiuj raport konwersji
-                  </Button>
-                  {copyInfo && <span className="text-xs text-[#5e5e5e]">{copyInfo}</span>}
-                </div>
-              </div>
-            </form>
-          </section>
-
-          <section aria-label="Lista plików w kolejce" className="space-y-2 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
-            <div className="flex items-center justify-between gap-2">
-              <h2 className="h6">Pliki w kolejce</h2>
-              {files.length > 0 && (
-                <p className="text-sm! text-[#5e5e5e]">
-                  Gotowe: {readyCount} · W trakcie / oczekujące: {pendingCount}
-                </p>
-              )}
+      <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+        <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <p className="mb-2 font-semibold uppercase">Dodaj pliki</p>
+              <label
+                onDrop={handleDrop}
+                onDragOver={handleDragOver}
+                className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
+              >
+                <span className="mb-1 text-sm font-medium">Przeciągnij i upuść obrazy tutaj</span>
+                <span className="mb-2 text-xs text-[#5e5e5e]">lub kliknij, aby wybrać pliki z dysku</span>
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-800 shadow-sm">Obsługiwane: JPG, PNG</span>
+                <input type="file" accept="image/jpeg,image/png" multiple onChange={handleFileChange} className="hidden" />
+              </label>
+              {globalError && <p className="mt-2 text-xs text-red-600">{globalError}</p>}
             </div>
 
-            {files.length === 0 && <p className="text-xs text-[#5e5e5e]">Dodaj pliki po lewej stronie, aby zobaczyć listę kolejki, stan konwersji oraz oszczędność rozmiaru.</p>}
-
-            {files.length > 0 && (
-              <div className="max-h-80 space-y-2 overflow-auto text-sm">
-                {files.map((item) => {
-                  const statusLabel = item.status === 'pending' ? 'Oczekuje' : item.status === 'processing' ? 'Przetwarzanie…' : item.status === 'done' ? 'Gotowe' : 'Błąd';
-
-                  const statusColor =
-                    item.status === 'done'
-                      ? 'bg-emerald-100 text-emerald-700'
-                      : item.status === 'processing'
-                        ? 'bg-blue-100 text-blue-700'
-                        : item.status === 'error'
-                          ? 'bg-red-100 text-red-700'
-                          : 'bg-neutral-100 text-neutral-700';
-
-                  const isBigger = item.outputSize != null && item.outputSize > item.inputSize;
-
-                  return (
-                    <div key={item.id} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
-                      <div className="flex min-w-0 flex-1 items-center gap-3">
-                        <button
-                          type="button"
-                          onClick={() => handlePreview(item.id)}
-                          className="hidden h-12 w-12 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 md:block"
-                          title="Kliknij, aby otworzyć podgląd w nowej karcie"
-                        >
-                          {item.previewUrl && (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={item.previewUrl} alt={item.file.name} className="h-full w-full object-cover" />
-                          )}
-                        </button>
-
-                        <div className="min-w-0 flex-1">
-                          <p className="truncate text-sm! font-medium" title={item.file.name}>
-                            {item.file.name}
-                          </p>
-                          <p className="text-xs! text-[#5e5e5e]">
-                            Wielkość przed: {formatBytes(item.inputSize)}
-                            {item.outputSize != null && (
-                              <>
-                                {' · '}Wielkość po: {formatBytes(item.outputSize)}{' '}
-                                {item.ratio != null && item.ratio > 0 && (
-                                  <>
-                                    {' ('}
-                                    {Math.round((1 - item.ratio) * 100)}% mniej)
-                                  </>
-                                )}
-                                {isBigger && <span className="ml-1 text-[11px] text-amber-700">(większy niż oryginał – spróbuj niższej jakości)</span>}
-                              </>
-                            )}
-                          </p>
-                          {item.error && <p className="mt-1 text-xs! text-red-600">{item.error}</p>}
-                        </div>
-                      </div>
-
-                      <div className="flex items-center gap-1">
-                        <span className={`rounded-full px-3 py-1 text-[11px] font-medium ${statusColor}`}>{statusLabel}</span>
-                        {item.status === 'done' && item.downloadUrl && (
-                          <a
-                            href={item.downloadUrl}
-                            download={item.file.name.replace(/\.[^.]+$/, '.webp')}
-                            className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium"
-                          >
-                            Pobierz
-                          </a>
-                        )}
-                        {item.status === 'done' && (
-                          <button type="button" onClick={() => handleReconvert(item.id)} className="cursor-pointer rounded-full border border-black/10 bg-white px-3 py-1 text-[11px]">
-                            Rekonwertuj
-                          </button>
-                        )}
-                        <button type="button" onClick={() => handleRemove(item.id)} className="cursor-pointer rounded-full px-2 py-1 text-xs text-[#5e5e5e] hover:text-neutral-900">
-                          Usuń
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
+            <div>
+              <p className="mt-8 mb-2 font-semibold uppercase">Ustaw jakość WebP</p>
+              <div className="flex items-center">
+                <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="p-0!" />
+                <span className="w-16 text-right text-neutral-700">{quality}%</span>
               </div>
-            )}
-          </section>
-        </div>
+              <span className="mt-3 text-sm text-[#5e5e5e]">Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80% to dobry kompromis dla większości stron.</span>
 
-        <Gap size="xs" />
+              <div className="mt-3 flex items-center">
+                <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
+                <label htmlFor="auto-download" className="pl-2 text-sm! text-neutral-700">
+                  Automatycznie pobierz wszystkie pliki po konwersji
+                </label>
+              </div>
+            </div>
 
-        <section className="rounded-2xl border border-black/10 bg-white/80 p-7 text-sm shadow-sm">
-          <h2 className="h4 mb-4">Dlaczego WebP jest ważny dla szybkości strony i SEO?</h2>
-          <p className="mb-6">
-            Format WebP pozwala znacząco zmniejszyć wagę grafik bez widocznej utraty jakości. Lżejsze obrazy to szybsze ładowanie strony, lepsze wyniki w Core Web Vitals i większa szansa, że
-            użytkownik zostanie na stronie.
-          </p>
-          <ul className="mb-6 list-disc pl-5">
-            <li>krótszy czas ładowania podstron (lepsze doświadczenie użytkownika),</li>
-            <li>pośrednie wsparcie dla lepszych pozycji w Google poprzez lepsze UX,</li>
-            <li>niższe obciążenie serwera.</li>
-          </ul>
-          <p className="text-[#5e5e5e]">
-            Jeśli chcesz, żeby Twoja strona ładowała się tak szybko, jak pliki po konwersji, możesz rozważyć pełną optymalizację WWW (obrazy, kod, hosting, SEO techniczne).
-          </p>
+            <div>
+              <p className="mt-8 mb-2 font-semibold uppercase">Konwertuj i pobierz</p>
+              {total > 0 && (
+                <div className="mb-3 space-y-2">
+                  <div className="flex items-center justify-between text-sm text-[#5e5e5e]">
+                    <span>
+                      W kolejce: <strong>{total}</strong> plików
+                    </span>
+                    {total > 0 && (
+                      <span>
+                        Zakończone: {completed} / {total}
+                      </span>
+                    )}
+                  </div>
+                  <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
+                    <div
+                      className="h-full rounded-full bg-slate-600 transition-all"
+                      style={{ width: `${visualProgress}%` }}
+                      role="progressbar"
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-valuenow={progress}
+                    />
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-4 flex flex-wrap gap-3">
+                <Button variant="accent" disabled={isConverting || !files.length} className="disabled:opacity-60" type="submit" size="small">
+                  {isConverting ? 'Konwertuję…' : 'Konwertuj pliki'}
+                </Button>
+                <Button onClick={handleDownloadAll} disabled={!anyDone} className="disabled:opacity-40" size="small">
+                  Pobierz wszystkie
+                </Button>
+                <Button onClick={handleClearAll} disabled={!files.length || isConverting} className="disabled:opacity-40" size="small">
+                  Wyczyść listę
+                </Button>
+              </div>
+
+              {totalInput > 0 && (
+                <div className="mt-6">
+                  <p className="text-sm! text-[#5e5e5e]">
+                    Łączny rozmiar wejściowy: <strong>{formatBytes(totalInput)}</strong>
+                  </p>
+                  {totalOutput > 0 && (
+                    <>
+                      <p className="text-sm! text-[#5e5e5e]">
+                        Łączny rozmiar po konwersji: <strong>{formatBytes(totalOutput)}</strong>
+                      </p>
+                      <p>
+                        Łącznie zaoszczędzono:{' '}
+                        <strong>
+                          {formatBytes(Math.max(totalSaved, 0))} {totalSaved > 0 && `(~${Math.round((totalSaved / totalInput) * 100)}% mniej)`}
+                        </strong>
+                      </p>
+                    </>
+                  )}
+                </div>
+              )}
+
+              <div className="mt-6 flex flex-wrap items-center gap-2">
+                <Button variant="minimal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="disabled:opacity-40">
+                  Kopiuj raport konwersji
+                </Button>
+                {copyInfo && <span className="text-xs text-[#5e5e5e]">{copyInfo}</span>}
+              </div>
+            </div>
+          </form>
         </section>
 
-        <Gap size="sm" />
-      </Wrapper>
+        <section aria-label="Lista plików w kolejce" className="space-y-2 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+          <div className="flex items-center justify-between gap-2">
+            <h2 className="h6">Pliki w kolejce</h2>
+            {files.length > 0 && (
+              <p className="text-sm! text-[#5e5e5e]">
+                Gotowe: {readyCount} · W trakcie / oczekujące: {pendingCount}
+              </p>
+            )}
+          </div>
+
+          {files.length === 0 && <p className="text-xs text-[#5e5e5e]">Dodaj pliki po lewej stronie, aby zobaczyć listę kolejki, stan konwersji oraz oszczędność rozmiaru.</p>}
+
+          {files.length > 0 && (
+            <div className="space-y-2 text-sm">
+              {/* ← TU ZMIANA: usunięto max-h-80 overflow-auto */}
+              {files.map((item) => {
+                const statusLabel = item.status === 'pending' ? 'Oczekuje' : item.status === 'processing' ? 'Przetwarzanie…' : item.status === 'done' ? 'Gotowe' : 'Błąd';
+
+                const statusColor =
+                  item.status === 'done'
+                    ? 'bg-emerald-100 text-emerald-700'
+                    : item.status === 'processing'
+                      ? 'bg-blue-100 text-blue-700'
+                      : item.status === 'error'
+                        ? 'bg-red-100 text-red-700'
+                        : 'bg-neutral-100 text-neutral-700';
+
+                const isBigger = item.outputSize != null && item.outputSize > item.inputSize;
+
+                return (
+                  <div key={item.id} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
+                    <div className="flex min-w-0 flex-1 items-center gap-3">
+                      <button
+                        type="button"
+                        onClick={() => handlePreview(item.id)}
+                        className="hidden h-12 w-12 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 md:block"
+                        title="Kliknij, aby otworzyć podgląd w nowej karcie"
+                      >
+                        {item.previewUrl && (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={item.previewUrl} alt={item.file.name} className="h-full w-full object-cover" />
+                        )}
+                      </button>
+
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-sm! font-medium" title={item.file.name}>
+                          {item.file.name}
+                        </p>
+                        <p className="text-xs! text-[#5e5e5e]">
+                          Wielkość przed: {formatBytes(item.inputSize)}
+                          {item.outputSize != null && (
+                            <>
+                              {' · '}Wielkość po: {formatBytes(item.outputSize)}{' '}
+                              {item.ratio != null && item.ratio > 0 && (
+                                <>
+                                  {' ('}
+                                  {Math.round((1 - item.ratio) * 100)}% mniej)
+                                </>
+                              )}
+                              {isBigger && <span className="ml-1 text-[11px] text-amber-700">(większy niż oryginał - spróbuj niższej jakości)</span>}
+                            </>
+                          )}
+                        </p>
+                        {item.error && <p className="mt-1 text-xs! text-red-600">{item.error}</p>}
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-1">
+                      <span className={`rounded-full px-3 py-1 text-[11px] font-medium ${statusColor}`}>{statusLabel}</span>
+                      {item.status === 'done' && item.downloadUrl && (
+                        <a
+                          href={item.downloadUrl}
+                          download={item.file.name.replace(/\.[^.]+$/, '.webp')}
+                          className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium"
+                        >
+                          Pobierz
+                        </a>
+                      )}
+                      {item.status === 'done' && (
+                        <button type="button" onClick={() => handleReconvert(item.id)} className="cursor-pointer rounded-full border border-black/10 bg-white px-3 py-1 text-[11px]">
+                          Rekonwertuj
+                        </button>
+                      )}
+                      <button type="button" onClick={() => handleRemove(item.id)} className="cursor-pointer rounded-full px-2 py-1 text-xs text-[#5e5e5e] hover:text-neutral-900">
+                        Usuń
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      </div>
     </>
   );
 }

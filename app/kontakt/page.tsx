@@ -9,11 +9,11 @@ import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
 export const metadata = {
-  title: 'Kontakt – wycena Twojego planu | Arteon',
+  title: 'Kontakt - wycena Twojego planu | Arteon',
   description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania.',
   alternates: { canonical: `${BASE_URL}/kontakt` },
   openGraph: {
-    title: 'Kontakt – wycena Twojego planu | Arteon',
+    title: 'Kontakt - wycena Twojego planu | Arteon',
     description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania.',
     url: `${BASE_URL}/kontakt`,
     siteName: 'Arteon',
@@ -147,7 +147,7 @@ export default function ContactPage() {
             {
               title: 'Godziny otwarcia',
               icon: <RiMapPinTimeLine />,
-              description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8–16</p>,
+              description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8-16</p>,
             },
           ]}
           title="Dane kontaktowe"

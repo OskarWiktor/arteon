@@ -20,12 +20,12 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Projekt menu restauracji | Arteon',
-  description: 'Projektujemy menu dla restauracji, kawiarni ui barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
+  description: 'Projektujemy menu dla restauracji, kawiarni ui barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
   keywords: ['projekt menu restauracji', 'projekt karty dań', 'menu restauracyjne projekt', 'menu do druku', 'projekt graficzny menu'],
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji' },
   openGraph: {
     title: 'Projekt menu restauracji | Arteon',
-    description: 'Projektujemy menu dla restauracji, kawiarni i barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
+    description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
   },
@@ -38,7 +38,7 @@ function ServiceSchema() {
     baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
     serviceName: 'Projekt menu restauracji',
-    description: 'Projekt graficzny menu dla restauracji, kawiarni i barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
+    description: 'Projekt graficzny menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -55,7 +55,7 @@ export default function OfferDesignMenuPage() {
     <>
       <HeroBanner
         title="Projekt menu restauracji"
-        description={<>Stworzymy dla Ciebie estetyczne i czytelne menu restauracji, kawiarni lub baru – spójne z klimatem lokalu i Twoją marką.</>}
+        description={<>Stworzymy dla Ciebie estetyczne i czytelne menu restauracji, kawiarni lub baru - spójne z klimatem lokalu i Twoją marką.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Realizacje"
@@ -120,7 +120,7 @@ export default function OfferDesignMenuPage() {
             },
             {
               title: 'Spójność z klimatem lokalu',
-              description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji – nowoczesnego, klasycznego czy rustykalnego.</>,
+              description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji - nowoczesnego, klasycznego czy rustykalnego.</>,
               icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -173,19 +173,19 @@ export default function OfferDesignMenuPage() {
             },
             {
               question: 'Czy mogę otrzymać wersję do publikacji online?',
-              answer: 'Tak – przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie lub w mediach społecznościowych.',
+              answer: 'Tak - przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie lub w mediach społecznościowych.',
             },
             {
               question: 'Czy możliwe jest przygotowanie wersji wielojęzycznej menu?',
-              answer: 'Tak – możemy zaprojektować menu w dwóch wersjach lub w jednej z tłumaczeniem w kilku językach.',
+              answer: 'Tak - możemy zaprojektować menu w dwóch wersjach lub w jednej z tłumaczeniem w kilku językach.',
             },
             {
               question: 'Jak długo trwa realizacja projektu?',
-              answer: 'Zazwyczaj 3–5 dni roboczych. Przy dużych kartach z wieloma pozycjami termin ustalamy indywidualnie.',
+              answer: 'Zazwyczaj 3-5 dni roboczych. Przy dużych kartach z wieloma pozycjami termin ustalamy indywidualnie.',
             },
             {
               question: 'Czy mogę zlecić późniejszą aktualizację menu?',
-              answer: 'Tak – oferujemy aktualizacje sezonowe i modyfikacje. Na życzenie możemy również przygotować pliki żródłowe, które będziesz mógł łatwo edytować.',
+              answer: 'Tak - oferujemy aktualizacje sezonowe i modyfikacje. Na życzenie możemy również przygotować pliki żródłowe, które będziesz mógł łatwo edytować.',
             },
           ]}
         />
@@ -199,7 +199,7 @@ export default function OfferDesignMenuPage() {
 
       <CTABanner
         title="Zaprojektuj menu, które zapamiętają Twoi klienci"
-        description="Profesjonalny projekt menu restauracyjnego – estetyka, czytelność i emocje, które zwiększają sprzedaż."
+        description="Profesjonalny projekt menu restauracyjnego - estetyka, czytelność i emocje, które zwiększają sprzedaż."
         primaryLabel="Skontaktuj się"
         primaryLink="#kontakt"
         secondaryLabel="Poznaj inne usługi graficzne"

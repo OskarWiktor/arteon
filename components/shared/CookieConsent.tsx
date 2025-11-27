@@ -31,7 +31,7 @@ function writeConsent(state: ConsentState) {
   document.cookie = `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}${domainAttr}`;
 }
 
-// 🔧 uproszczony typ gtag – zamiast kombinować z interfejsami Next/TS
+// 🔧 uproszczony typ gtag - zamiast kombinować z interfejsami Next/TS
 function updateGtag(analytics: boolean) {
   if (typeof window === 'undefined') return;
 

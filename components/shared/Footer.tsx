@@ -138,7 +138,7 @@ export default function Footer() {
               </address>
 
               <div className="mt-3">
-                <p className="text-sm text-[#5e5e5e]">Godziny: pn–pt, 8:00–16:00</p>
+                <p className="text-sm text-[#5e5e5e]">Godziny: pn-pt, 8:00-16:00</p>
               </div>
 
               <ul className="mt-4 flex flex-col gap-2 text-sm">
@@ -155,7 +155,7 @@ export default function Footer() {
               </ul>
             </section>
 
-            <nav aria-label="Usługi – Projekty graficzne" className="lg:col-span-2">
+            <nav aria-label="Usługi - Projekty graficzne" className="lg:col-span-2">
               <h3 className="h6 mb-2">Projekty graficzne</h3>
               <div className="mt-2 grid grid-cols-2 gap-x-10">
                 <ul className="flex flex-col gap-2 text-sm">
@@ -185,7 +185,7 @@ export default function Footer() {
               </div>
             </nav>
 
-            <nav aria-label="Usługi – Witryny, Treści i Marketing">
+            <nav aria-label="Usługi - Witryny, Treści i Marketing">
               <h3 className="h6 mb-2">Witryny</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (

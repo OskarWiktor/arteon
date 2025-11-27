@@ -363,7 +363,7 @@ export default function OfferMarketingPage() {
             },
             {
               question: 'Ile trwa audyt SEO i od czego zależy wycena?',
-              answer: 'Standardowo 5–10 dni roboczych. Czas i cena zależą od wielkości serwisu (liczby podstron), technologii i zakresu analizy (np. e-commerce, wielojęzyczność).',
+              answer: 'Standardowo 5-10 dni roboczych. Czas i cena zależą od wielkości serwisu (liczby podstron), technologii i zakresu analizy (np. e-commerce, wielojęzyczność).',
             },
             {
               question: 'Czy audyt SEO sam w sobie poprawi pozycje w Google?',
@@ -375,7 +375,7 @@ export default function OfferMarketingPage() {
             },
             {
               question: 'Jak często powtarzać audyt SEO?',
-              answer: 'Rekomendujemy pełny audyt co 6–12 miesięcy lub przed większą przebudową serwisu. Lżejszy przegląd kwartalny pozwala utrzymać tempo wzrostu.',
+              answer: 'Rekomendujemy pełny audyt co 6-12 miesięcy lub przed większą przebudową serwisu. Lżejszy przegląd kwartalny pozwala utrzymać tempo wzrostu.',
             },
           ]}
         />

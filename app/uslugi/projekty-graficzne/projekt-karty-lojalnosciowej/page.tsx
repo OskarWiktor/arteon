@@ -92,7 +92,7 @@ export default function OfferDesignKartaPage() {
           <br />
 
           <p>
-            <strong>Estetyka ma znaczenie.</strong> Dobrze zaprojektowana karta staje się elementem wizerunku firmy – wygląda profesjonalnie, budzi pozytywne emocje i zachęca do ponownych wizyt.
+            <strong>Estetyka ma znaczenie.</strong> Dobrze zaprojektowana karta staje się elementem wizerunku firmy - wygląda profesjonalnie, budzi pozytywne emocje i zachęca do ponownych wizyt.
           </p>
 
           <br />
@@ -115,7 +115,7 @@ export default function OfferDesignKartaPage() {
           items={[
             {
               title: 'Układ dopasowany do branży',
-              description: <>Tworzymy karty dopasowane do specyfiki działalności – salonów, kawiarni, siłowni, butików i innych punktów usługowych.</>,
+              description: <>Tworzymy karty dopasowane do specyfiki działalności - salonów, kawiarni, siłowni, butików i innych punktów usługowych.</>,
               icon: <RiVipCrownLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -181,7 +181,7 @@ export default function OfferDesignKartaPage() {
             },
             {
               question: 'Czy mogę zamówić serię różnych kart lojalnościowych?',
-              answer: 'Tak – możemy przygotować serię spójną wizualnie dla wielu punktów czy marek partnerskich.',
+              answer: 'Tak - możemy przygotować serię spójną wizualnie dla wielu punktów czy marek partnerskich.',
             },
           ]}
         />

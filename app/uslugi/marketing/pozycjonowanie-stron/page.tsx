@@ -272,7 +272,7 @@ export default function OfferSeoSubscription() {
             ctaLabel: 'Skonsultuj potrzeby',
             ctaLink: '#kontakt',
           }}
-          legalNote="Ceny orientacyjne brutto. Zakres oraz intensywność działań dopasowujemy do branży, celów i technologii witryny. Utrzymujemy ceny około 20–30% niższe od średniej rynkowej."
+          legalNote="Ceny orientacyjne brutto. Zakres oraz intensywność działań dopasowujemy do branży, celów i technologii witryny. Utrzymujemy ceny około 20-30% niższe od średniej rynkowej."
         />
 
         <Gap variant="line" />

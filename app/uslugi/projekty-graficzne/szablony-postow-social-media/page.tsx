@@ -57,7 +57,7 @@ export default function OfferDesignSzablonyPostowPage() {
         title="Szablony postów social media"
         description={
           <>
-            Przyspiesz publikacje zachowując spójny i profesjonalny styl swojej marki. Projektujemy edytowalne szablony postów do Instagrama, Facebooka, LinkedIna i TikToka – gotowe do szybkiej edycji
+            Przyspiesz publikacje zachowując spójny i profesjonalny styl swojej marki. Projektujemy edytowalne szablony postów do Instagrama, Facebooka, LinkedIna i TikToka - gotowe do szybkiej edycji
             i użycia.
           </>
         }
@@ -94,14 +94,14 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <SectionInfo title="Co zyskujesz dzięki szablonom postów?">
           <p>
-            <strong>Stały, rozpoznawalny styl</strong> – Szablony pomagają utrzymać wspólny wygląd całej Twojej komunikacji, dzięki czemu odbiorca łatwiej zapamięta Twoją markę, a profil zyska
+            <strong>Stały, rozpoznawalny styl</strong> - Szablony pomagają utrzymać wspólny wygląd całej Twojej komunikacji, dzięki czemu odbiorca łatwiej zapamięta Twoją markę, a profil zyska
             profesjonalny wygląd.
           </p>
 
           <br />
 
           <p>
-            <strong>Oszczędność czasu</strong> – edytowalne pliki pozwalają przygotować serię postów w kilkanaście minut. Otrzymujesz gotowe układy z czytelną hierarchię treści.
+            <strong>Oszczędność czasu</strong> - edytowalne pliki pozwalają przygotować serię postów w kilkanaście minut. Otrzymujesz gotowe układy z czytelną hierarchię treści.
           </p>
 
           <br />
@@ -177,7 +177,7 @@ export default function OfferDesignSzablonyPostowPage() {
             },
             {
               question: 'Jak szybko powstają szablony?',
-              answer: 'Zwykle 3–7 dni roboczych w zależności od ilości wariantów.',
+              answer: 'Zwykle 3-7 dni roboczych w zależności od ilości wariantów.',
             },
             {
               question: 'Czy szablony będą spójne z moją stroną?',

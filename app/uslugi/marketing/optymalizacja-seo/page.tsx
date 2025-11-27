@@ -227,7 +227,7 @@ export default function OfferOptimizationSEO() {
               description: 'Dla kogo: dla właścicieli prostych stron firmowych i landing pages ( stron z jedną podstroną ).',
               features: [
                 'Poprawa prędkości i czasu ładowania strony (Core Web Vitals)',
-                'Uporządkowanie tytułów, opisów i nagłówków H1–H3',
+                'Uporządkowanie tytułów, opisów i nagłówków H1-H3',
                 'Optymalizacja grafik (rozmiar, ALT, format WebP)',
                 'Uporządkowanie meta danych i struktury treści',
               ],

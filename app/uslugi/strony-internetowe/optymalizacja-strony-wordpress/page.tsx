@@ -58,7 +58,7 @@ export default function OfferOptimizationWordPressPage() {
       <HeroBanner
         title="Optymalizacja strony WordPress"
         description={
-          <>Przyspieszamy strony WordPress, porządkujemy wtyczki i poprawiamy wersję mobilną. Strona zaczyna działać płynnie, a użytkownicy bez problemu docierają do oferty – również na telefonach.</>
+          <>Przyspieszamy strony WordPress, porządkujemy wtyczki i poprawiamy wersję mobilną. Strona zaczyna działać płynnie, a użytkownicy bez problemu docierają do oferty - również na telefonach.</>
         }
         buttonAccent="Sprawdź, co da się poprawić"
         buttonAccentLink="#kontakt"

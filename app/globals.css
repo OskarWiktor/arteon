@@ -213,3 +213,15 @@ textarea {
     text-decoration-thickness: from-font;
   }
 }
+
+/* Podstawowy wygląd kadru react-easy-crop - cień poza kadrem + obramowanie */
+.arteon-crop-area {
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.55);
+  border-radius: 8px;
+  border: 1px solid var(--crop-grid-color, #10b981);
+}
+
+/* Zmiana koloru linii siatki */
+.arteon-cropper .reactEasyCrop_GridLine {
+  background-color: var(--crop-grid-color, #10b981);
+}

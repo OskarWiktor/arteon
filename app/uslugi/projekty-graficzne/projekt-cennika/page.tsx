@@ -175,7 +175,7 @@ export default function OfferDesignCennikPage() {
             },
             {
               question: 'Czy możliwe jest zrealizowanie cennika, który ma wiele stron?',
-              answer: 'Tak – możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem, w formie wielostronicowej.',
+              answer: 'Tak - możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem, w formie wielostronicowej.',
             },
           ]}
         />
