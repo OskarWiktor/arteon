@@ -773,19 +773,18 @@ export default function ImageResizeTool() {
       const centerX = x0 + width / 2;
       const centerY = y0 + height / 2;
 
-      const originalAspect = ow / oh;
-      let baseW: number;
-      let baseH: number;
+const originalAspect = ow / oh;
+let baseW: number;
 
-      if (originalAspect > aspect) {
-        baseH = oh;
-        baseW = oh * aspect;
-      } else {
-        baseW = ow;
-        baseH = ow / aspect;
-      }
+if (originalAspect > aspect) {
+  baseW = oh * aspect;
+} else {
+  baseW = ow;
+}
 
-      let zoom = baseW / width;
+let zoom = baseW / width;
+zoom = Math.max(1, Math.min(10, zoom));
+
       zoom = Math.max(1, Math.min(10, zoom));
 
       const halfW = width / 2;
