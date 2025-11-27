@@ -174,7 +174,10 @@ export default function ToolsIndexPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Jak korzystać z narzędzi Arteon?" description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci">
+        <SectionInfo
+          title="Jak korzystać z narzędzi Arteon?"
+          description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci"
+        >
           <p className="text-xs text-[#5e5e5e]">
             Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
             kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online
