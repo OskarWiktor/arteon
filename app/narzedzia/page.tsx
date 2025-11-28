@@ -4,7 +4,7 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageAiLine, RiImageEditLine } from 'react-icons/ri';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla właścicieli stron i firm',
@@ -35,7 +35,6 @@ export const metadata = {
   },
 };
 
-// Schema.org – lista narzędzi (ItemList)
 const toolsJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -46,7 +45,7 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 1,
       name: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
-      description: 'Konwerter JPG/PNG na WebP, który zmniejsza wagę zdjęć bez utraty jakości. Działa w całości w przeglądarce – bez wysyłania plików na serwer, bez logowania i bez limitu użycia.',
+      description: 'Konwerter JPG/PNG na WebP, który zmniejsza wagę zdjęć bez utraty jakości. Działa w całości w przeglądarce - bez wysyłania plików na serwer, bez logowania i bez limitu użycia.',
       url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -65,7 +64,7 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 3,
       name: 'Darmowy generator favicon online',
-      description: 'Generator favicon online, który z jednego obrazu tworzy favicon.ico oraz ikony PNG 180x180, 192x192 i 512x512 – zgodne z wymaganiami przeglądarek i Lighthouse.',
+      description: 'Generator favicon online, który z jednego obrazu tworzy favicon.ico oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.',
       url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -78,6 +77,16 @@ const toolsJsonLd = {
         'Licznik długości meta title i meta description z podglądem wyglądu w Google. Pomaga dopasować liczbę znaków, słów i szerokość w pikselach tak, aby tytuł i opis nie były ucinane w wynikach wyszukiwania.',
       url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
       applicationCategory: 'SEOApplication',
+      operatingSystem: 'Any',
+    },
+    {
+      '@type': 'WebApplication',
+      position: 5,
+      name: 'Darmowy generator stopki mailowej HTML',
+      description:
+        'Darmowy generator stopki mailowej HTML po polsku. Dodaj dane kontaktowe, link CTA i profile social mediów, a następnie skopiuj gotowy kod podpisu do Gmaila, Outlooka i innych klientów pocztowych.',
+      url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
+      applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
   ],
@@ -103,12 +112,11 @@ export default function ToolsIndexPage() {
           items={[
             {
               icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'Konwerter JPG/PNG na WebP (bez limitu)',
+              title: 'Konwerter JPG/PNG na WebP',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Szybko zmniejsz wagę zdjęć, konwertując je z JPG lub PNG do formatu <strong>WebP</strong>. Narzędzie działa w całości w Twojej przeglądarce, więc pliki nigdzie nie są wysyłane.
-                    Idealne i szybkie narzędzie dla poprawienia prędkości w Twojej witrynie internetowej.
+                    Zmniejsz wagę zdjęć, konwertując je z JPG lub PNG do formatu <strong>WebP</strong>. Pobierz pliki, dodaj na stronę i zoptymalizuj jej prędkość
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/jpg-png-na-webp-bez-limitu">
@@ -119,14 +127,11 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiImageAiLine className="h-8 w-8" />,
+              icon: <RiCropLine className="h-8 w-8" />,
               title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>
-                    Przygotuj idealny kadr pod social media lub stronę WWW. Wybierz jeden z gotowych formatów (np. post lub relacja na Instagramie) albo wpisz własne wymiary w pikselach. Możesz też
-                    zrobić <strong>okrągły avatar</strong> i eksportować obraz do PNG, JPG lub WebP - bez limitu użycia.
-                  </p>
+                  <p>Przygotuj idealny kadr ze zdjęcia pod social media lub stronę WWW. Wybierz gotowy format albo wpisz własne wymiary w pikselach i pobierz gotowe zdjęcie w PNG, JPG lub WebP</p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia">
                       Otwórz narzędzie
@@ -136,13 +141,12 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiImageAiLine className="h-8 w-8" />,
+              icon: <RiAppsLine className="h-8 w-8" />,
               title: 'Generator favicon i ikon dla strony',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Z jednego obrazu przygotujesz kompletny zestaw ikon dla swojej strony: <strong>favicon.ico</strong> oraz pliki PNG 180x180, 192x192 i 512x512. Taki pakiet wystarcza dla kart
-                    przeglądarki, ekranów domowych i podstawowych wymagań Lighthouse oraz PWA w Chrome.
+                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-favicon-ico">
@@ -153,16 +157,27 @@ export default function ToolsIndexPage() {
               ),
             },
             {
-              icon: <RiImageAiLine className="h-8 w-8" />,
+              icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Licznik długości meta title i description',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>
-                    Wpisz swój <strong>meta title</strong> i <strong>meta description</strong>, a narzędzie pokaże liczbę znaków, słów, szerokość w pikselach oraz podgląd, jak treść będzie wyglądać w
-                    Google. Dzięki temu łatwiej unikniesz uciętych tytułów i opisów i szybciej przygotujesz wersję gotową do wklejenia na stronę zgodną z dobrymi praktykami SEO
-                  </p>
+                  <p>Sprawdź liczbę znaków, słów i szerokość w pikselach oraz podgląd wyniku w Google. Łatwiej unikniesz uciętych tytułów i opisów i szybciej dopasujesz treści pod SEO</p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/licznik-dlugosci-meta-title-i-description">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiMailLine className="h-8 w-8" />,
+              title: 'Darmowy generator stopki mailowej HTML',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/darmowy-generator-stopki-mailowej">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -178,7 +193,7 @@ export default function ToolsIndexPage() {
           title="Jak korzystać z narzędzi Arteon?"
           description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci"
         >
-          <p className="text-xs text-[#5e5e5e]">
+          <p className="mt-4 text-xs text-[#5e5e5e]">
             Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
             kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online
           </p>

@@ -20,6 +20,8 @@ const nextConfig = {
 
       { source: '/uslugi/grafika', destination: '/uslugi/projekty-graficzne', permanent: true },
 
+      { source: '/narzedzia/jpg-png-na-webp', destination: '/narzedzia/jpg-png-na-webp-bez-limitu', permanent: true },
+
       { source: '/realizacje/cennik-dla-salonu-kosmetycznego', destination: '/realizacje/', permanent: true },
     ];
   },

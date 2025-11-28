@@ -22,7 +22,7 @@ export default function SectionInfo({ title, subtitle, description, btnOne, btnO
 
       <h2 className="reveal-animation mb-2 scroll-mt-26 lg:mb-4">{title}</h2>
 
-      {description && <p className="reveal-animation">{description}</p>}
+      {description && <p>{description}</p>}
 
       {children}
 
