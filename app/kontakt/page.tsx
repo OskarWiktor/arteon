@@ -128,7 +128,7 @@ export default function ContactPage() {
           items={[
             {
               title: 'Telefon',
-              icon: <RiPhoneLine />,
+              icon: <RiPhoneLine className="h-8 w-8" />,
               description: (
                 <p>
                   <a href="tel:+48516466255">516 466 255</a>
@@ -137,7 +137,7 @@ export default function ContactPage() {
             },
             {
               title: 'Email',
-              icon: <RiMailLine />,
+              icon: <RiMailLine className="h-8 w-8" />,
               description: (
                 <p>
                   <a href="mailto:kontakt@arteonagency.pl">kontakt@arteonagency.pl</a>
@@ -146,7 +146,7 @@ export default function ContactPage() {
             },
             {
               title: 'Godziny otwarcia',
-              icon: <RiMapPinTimeLine />,
+              icon: <RiMapPinTimeLine className="h-8 w-8" />,
               description: <p>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku: 8-16</p>,
             },
           ]}

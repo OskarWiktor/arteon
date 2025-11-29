@@ -1,6 +1,106 @@
 {
   "articles": [
     {
+      "slug": "jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp",
+      "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
+      "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Jeśli nie zadbasz o ich format, rozmiar i kompresję, Twoja strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie Twoją stronę nie sprawdzając oferty.",
+      "category": ["Zdjęcia", "SEO"],
+      "seo": {
+        "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
+        "description": "Dowiedz się, jak zoptymalizować zdjęcia na stronę WWW: dobrać rozmiar, format i jak stworzyć plik WebP, aby strona była szybsza, lżejsza i lepiej oceniana przez Google",
+        "canonical": "https://www.arteonagency.pl/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp"
+      },
+      "cover": "/assets/blog/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-11-29",
+      "dateModified": "2025-11-29",
+      "readingTime": 8,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Jeśli nie zadbasz o ich format, rozmiar i kompresję, Twoja strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie Twoją stronę nie sprawdzając oferty.</p></br><p>W tym poradniku dowiesz się, jak optymalizować zdjęcia na stronę internetową: jakie formaty plików graficznych wybrać (JPEG, PNG, SVG, WebP), jak ustawić rozmiar zdjęcia i rozdzielczość, co daje kompresja oraz dlaczego format WebP jest dziś jednym z najprostszych sposobów na poprawę szybkości ładowania strony i SEO.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego optymalizacja zdjęć ma tak duży wpływ na szybkość strony i SEO?</h2><p>Według dokumentacji Google, obrazy są jedną z najczęstszych przyczyn wolnego ładowania strony - szczególnie na urządzeniach mobilnych (zobacz wskazówki w <a class='inline-link' target='_blank' href='https://pagespeed.web.dev/'>PageSpeed Insights</a> oraz dokumentację <a class='inline-link' target='_blank' href='https://web.dev/articles/image-optimization'>„Image Optimization” w Google Developers</a> - źródło). Lekkie grafiki oznaczają:</p></br><ul class='list-disc ml-5'><li>krótszy czas ładowania strony,</li><li>lepsze wskaźniki Core Web Vitals (LCP, INP, CLS),</li><li>dłuższy czas spędzony na stronie przez użytkownika,</li><li>pośrednio lepszy wynik pozycjonowania strony.</li></ul></br><p>Algorytm wyszukiwarki nie patrzy tylko na słowa kluczowe. Bierze pod uwagę również doświadczenie użytkownika: czy strona ładuje się szybko, czy obrazy nie skaczą po ekranie, czy na telefonie wszystko jest czytelne. Odpowiednia optymalizacja zdjęć to jeden z najprostszych sposobów, aby wpłynąć na szybkość ładowania bez przebudowy całego serwisu.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jakie formaty zdjęć na stronę WWW wybrać? JPEG, PNG, SVG i WebP</h2><p>Zanim zaczniesz optymalizować zdjęcia, warto zrozumieć, czym różnią się najpopularniejsze formaty plików graficznych.</p>"
+        },
+        {
+          "type": "richtext",
+          "html": "<h3 class='h4 mb-2 mt-4'>JPEG (JPG) - klasyka do zdjęć</h3><p>Format JPG / JPEG to wciąż najpopularniejszy format zdjęć na stronach www. Dobrze sprawdza się tam, gdzie mamy dużo kolorów i przejść tonalnych: zdjęcia produktów, ludzi, wnętrz, krajobrazów.</p></br><ul class='list-disc ml-5'><li>kompresja stratna - możesz zmniejszyć rozmiar plików, ale przy zbyt dużej kompresji spadnie jakość obrazu,</li><li>dobry kompromis między jakością zdjęcia a rozmiarem pliku,</li><li>idealny jako format początkowy, jeśli później konwertujesz zdjęcia do WebP.</li></ul></br><p>Jeśli pracujesz w Photoshopie lub podobnym programie, możesz już na etapie eksportu ustawić jakość na np. 60-80%, żeby zmniejszyć rozmiar plików przed wrzuceniem ich na serwer.</p>"
+        },
+        {
+          "type": "richtext",
+          "html": "<h3 class='h4 mb-2 mt-4'>PNG - gdy ważna jest przejrzystość i ostre krawędzie</h3><p>Format PNG najlepiej sprawdza się tam, gdzie liczy się ostrość i przezroczystość:</p></br><ul class='list-disc ml-5'><li>logotypy na przezroczystym tle,</li><li>ikony, elementy UI, diagramy, wykresy.</li></ul></br><p>PNG stosuje kompresję bezstratną, więc zachowuje pełną jakość grafiki, ale rozmiar pliku potrafi być dużo większy niż przy JPEG. Jeśli używasz PNG tylko do zdjęć, prawdopodobnie niepotrzebnie obciążasz serwer.</p>"
+        },
+        {
+          "type": "richtext",
+          "html": "<h3 class='h4 mb-2 mt-4'>SVG - grafiki wektorowe, które skalują się bez utraty jakości</h3><p>SVG to format wektorowy. Nie przechowuje pikseli, tylko zestaw komend opisujących kształty. To idealne rozwiązanie dla:</p></br><ul class='list-disc ml-5'><li>prostych ikon,</li><li>logotypów,</li><li>prostych ilustracji.</li></ul></br><p>Zaletą SVG jest to, że grafiki wektorowych nie tracą jakości przy powiększaniu i zazwyczaj ważą bardzo mało. Warunek: plik musi być poprawnie eksportowany.</p>"
+        },
+        {
+          "type": "richtext",
+          "html": "<h3 class='h4 mb-2 mt-4'>WebP - format nowej generacji opracowany przez Google</h3><p>WebP to nowoczesny format plików opracowany przez Google (szczegóły znajdziesz w dokumentacji <a class='inline-link' target='_blank' href='https://developers.google.com/speed/webp/docs/webp_study'>„WebP Compression Study”</a> - źródło). Umożliwia:</p></br><ul class='list-disc ml-5'><li>kompresję stratną i bezstratną,</li><li>obsługę przezroczystości (jak PNG),</li><li>znaczne zmniejszenie rozmiaru pliku przy zachowaniu tej samej jakości obrazu.</li></ul></br><p>W praktyce zdjęcia w formacie WebP potrafią być nawet o 25-35% lżejsze niż ich odpowiedniki w JPEG/PNG, a czasem więcej. Dzięki temu:</p></br><ul class='list-disc ml-5'><li>zdjęcia na Twojej stronie ładują się szybciej,</li><li>poprawia się czas ładowania całej witryny,</li><li>rośnie wynik w PageSpeed Insights i jakość Core Web Vitals.</li></ul></br><p>Nic dziwnego, że Google wprost rekomenduje używanie formatów obrazów nowej generacji - takich jak WebP lub AVIF (dane znajdziesz w <a class='inline-link' target='_blank' href='https://developer.chrome.com/docs/lighthouse/overview/'>raporcie Lighthouse</a> i wytycznych <a class='inline-link' target='_blank' href='https://web.dev/articles/serve-images-webp'>„Serve images in next-gen formats”</a> - źródło).</p></br><p>Jeśli masz już zdjęcia w formacie JPG lub PNG i chcesz szybko sprawdzić, ile możesz zyskać, możesz od razu przekonwertować je do WebP. Skorzystaj z darmowego narzędzia:</p></br><p><a class='inline-link' href='/narzedzia/jpg-png-na-webp-bez-limitu'>Konwerter JPG/PNG na WebP online bez limitu</a> - dodajesz pliki, wybierasz jakość i pobierasz lżejsze obrazy gotowe do wgrania na stronę.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak format zdjęcia wpływa na SEO i doświadczenie użytkownika?</h2><p>Dobór odpowiedniego formatu grafiki to nie tylko kwestia technologii, ale też tego, jak użytkownik odbiera Twoją stronę.</p></br><p>Mniejsze pliki graficzne ładują się szybciej, więc użytkownik widzi treść bez czekania.</p></br><p>Szybsze ładowanie strony oznacza mniejszy współczynnik odrzuceń i dłuższy czas spędzony na stronie.</p></br><p>Lepsze wrażenia użytkownika wpływają na pozycjonowanie - Google wprost podkreśla, że wydajność strony i dane z Core Web Vitals są sygnałami rankingowymi (źródło: <a class='inline-link' target='_blank' href='https://developers.google.com/search/docs/appearance/core-web-vitals'>Search Central, dokument o Core Web Vitals</a>).</p></br><p>Odpowiednia optymalizacja obrazów to więc element szerszej strategii SEO, a nie tylko drobny techniczny szczegół.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Rozmiar zdjęcia i rozdzielczość - jak dobrać wymiary do strony?</h2><p>Kolejna rzecz to rozmiar zdjęcia w pikselach. Nawet najlepszy format WebP nie pomoże, jeśli wrzucisz na stronę plik 6000 x 4000 px, który w layoucie strony wyświetlasz jako mały kafel 400 px.</p></br><h3 class='h4 mb-2 mt-4'>Jak dobrać rozmiar zdjęcia do układu strony?</h3><p>Dobra praktyka: dopasuj rozdzielczość zdjęcia do maksymalnej szerokości, w jakiej będzie wyświetlane na stronie.</p></br><ul class='list-disc ml-5'><li>baner na całą szerokość - zwykle wystarczy 1920 px,</li><li>zdjęcie w treści bloga - ok. 1200-1600 px szerokości,</li><li>miniatury, kafelki - 400-800 px.</li></ul></br><p>Odpowiednia optymalizacja zdjęć pod kątem rozmiaru pozwala zmniejszyć rozmiar plików nawet kilkukrotnie bez widocznej utraty jakości.</p></br><p>Jeśli nie chcesz za każdym razem liczyć szerokości i wysokości ręcznie, możesz skorzystać z prostego narzędzia online, które pomoże dobrać kadr i wymiary pod stronę WWW i media społecznościowe:</p></br><p><a class='inline-link' href='/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia'>Kadrowanie i zmiana rozmiaru zdjęcia online</a> – wybierasz format (np. baner, kafelek, post na Instagram), przesuwasz kadr i pobierasz gotowy plik.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Kompresja zdjęć - jak zmniejszyć rozmiar plików bez utraty jakości?</h2><p>Nawet dobrze dobrany format i rozmiar to nie wszystko. Kluczowa jest jeszcze kompresja, czyli zmniejszanie wagi pliku przy zachowaniu akceptowalnej jakości.</p></br><h3 class='h4 mb-2 mt-4'>Kompresja stratna vs bezstratna</h3><p>Kompresja stratna (np. JPEG, WebP w trybie lossy) - usuwa część informacji z obrazu, ale przy rozsądnych ustawieniach użytkownik nie zauważy różnicy.</p></br><p>Kompresja bezstratna (PNG, WebP w trybie lossless) - zachowuje pełną informację, ale efekty wagi są mniejsze.</p></br><p>W praktyce, przy stronach WWW krytyczny jest czas ładowania strony, więc najczęściej korzysta się z kompresji stratnej z ustawieniami, które dają dobry balans między jakością obrazu a wagą pliku.</p></br><h3 class='h4 mb-2 mt-4'>Jak praktycznie kompresować zdjęcia?</h3><p>Możesz:</p></br><ul class='list-disc ml-5'><li>eksportować zdjęcia z np. Photoshopa z odpowiednią jakością (np. 60-80%),</li><li>skorzystać z narzędzi online do kompresji,</li><li>w przypadku WordPressa - użyć dedykowanej wtyczki do optymalizacji obrazów, która automatycznie przeliczy i zapisze pliki w WebP.</li></ul></br><p>Według testów publikowanych w artykułach o optymalizacji SEO i Core Web Vitals, odpowiednia kompresja zdjęć potrafi obniżyć wagę strony nawet o kilkadziesiąt procent (przykładowe opracowania znajdziesz na blogach <a class='inline-link' target='_blank' href='https://blog.cloudflare.com/tag/performance/'>Cloudflare</a>, <a class='inline-link' target='_blank' href='https://web.dev/'>web.dev</a> i innych narzędzi CDN - źródła).</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>WebP w praktyce - jak wdrożyć nowoczesny format na Twojej stronie?</h2><p>Skoro WebP to nowoczesny format plików i daje realne korzyści, pytanie brzmi: jak zoptymalizować zdjęcia na stronie tak, aby korzystały z WebP?</p></br><h3 class='h4 mb-2 mt-4'>Konwersja do WebP przed dodaniem na stronę</h3><p>Najprostszy scenariusz:</p></br><ul class='list-disc ml-5'><li>Przygotowujesz zdjęcie w formacie JPEG lub PNG.</li><li>Zmniejszasz rozmiar zdjęcia i dopasowujesz wymiary.</li><li>Konwertujesz plik do WebP (np. narzędziem online, skryptem lub wtyczką).</li><li>Wgrywasz na serwer tylko wersję WebP.</li></ul></br><p>Dzięki temu już na starcie masz pliki graficzne w formacie WebP, które ładują się szybciej i poprawiają wydajność strony.</p></br><h3 class='h4 mb-2 mt-4'>WebP na WordPressie - co może zrobić wtyczka?</h3><p>Jeśli korzystasz z WordPressa, nie musisz konwertować wszystkiego ręcznie. Wtyczka do optymalizacji zdjęć na stronie internetowej może:</p></br><ul class='list-disc ml-5'><li>automatycznie tworzyć wersje WebP (i czasem AVIF),</li><li>dopasowywać format i rozmiar do różnych urządzeń,</li><li>podmieniać linki na stronie tak, aby przeglądarka ładowała format nowej generacji, gdy go obsługuje.</li></ul></br><p>Dzięki temu zdjęcia na Twojej stronie zostają zoptymalizowane bez ingerencji w kod, a Ty skupiasz się na treści i strategii.</p></br><p>Jeśli chcesz ten proces maksymalnie uprościć, zacznij od jednego zdjęcia ze swojej strony i przepuść je przez <a class='inline-link' href='/narzedzia/jpg-png-na-webp-bez-limitu'>konwerter JPG/PNG na WebP</a>. Zobaczysz różnicę w wadze pliku przy tej samej jakości obrazu, zanim wdrożysz zmianę na całej stronie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak optymalizować zdjęcia pod kątem Core Web Vitals?</h2><p>Core Web Vitals mierzą, jak szybko użytkownik widzi najważniejszą treść, jak szybko strona reaguje i czy layout nie przesuwa się podczas ładowania.</p></br><p>Dobrze przygotowane zdjęcia i grafiki wpływają szczególnie na:</p></br><ul class='list-disc ml-5'><li>LCP (Largest Contentful Paint) - jeśli największym elementem na stronie jest obraz, jego format, rozmiar i kompresja bezpośrednio decydują o wyniku,</li><li>CLS (Cumulative Layout Shift) - jeśli nie podasz wymiarów obrazów, układ będzie się przesuwał podczas ładowania,</li><li>INP - pośrednio, bo wolno ładowane zasoby ogólnie obciążają stronę.</li></ul></br><p>Aby poprawić wynik:</p></br><ul class='list-disc ml-5'><li>używaj WebP tam, gdzie to możliwe,</li><li>podawaj w kodzie wymiary obrazów,</li><li>stosuj lazy loading dla zdjęć niżej w treści,</li><li>sprawdzaj raport Core Web Vitals w Google Search Console (źródło: dokument „Core Web Vitals &amp; Page Experience” w Search Central).</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak sprawdzić, czy Twoje zdjęcia są dobrze zoptymalizowane?</h2><p>Jeśli chcesz sprawdzić, czy obecne zdjęcia na stronie internetowej nie spowalniają wszystkiego:</p></br><ul class='list-disc ml-5'><li>Otwórz raport w <a class='inline-link' target='_blank' href='https://pagespeed.web.dev/'>PageSpeed Insights</a> i zobacz sekcję rekomendacji dotyczących obrazów („<a class='inline-link' target='_blank' href='https://web.dev/articles/serve-images-webp'>Serve images in next-gen formats</a>”, „Properly size images” - źródło).</li><li>Sprawdź, ile waży strona w narzędziach typu <a class='inline-link' target='_blank' href='https://www.webpagetest.org/'>WebPageTest</a> lub w zakładce „Network” w przeglądarce.</li><li>Zwróć uwagę, ile procent całej odpowiedzi stanowią pliki graficzne.</li></ul></br><p>Jeśli widzisz zalecenia, aby „zmniejszyć rozmiar plików graficznych”, „użyć WebP” albo „przygotować zdjęcia na stronę internetową w mniejszej rozdzielczości”, to jasny sygnał, że potrzebna jest skuteczna optymalizacja zdjęć.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak optymalizować zdjęcia z myślą o SEO, a nie tylko o technice?</h2><p>Optymalizacja SEO to nie tylko format i rozmiar. W kontekście wyników wyszukiwania i widoczności w Google liczą się również:</p></br><ul class='list-disc ml-5'><li>opisowe nazwy plików (np. sofa-szara-salon.webp zamiast IMG_1234.webp),</li><li>atrybut alt opisujący, co znajduje się na grafice,</li><li>kontekst w tekście wokół zdjęcia (np. słowa kluczowe związane z produktem lub usługą),</li><li>logiczna struktura strony, w której grafiki na stronie internetowej wspierają treść.</li></ul></br><p>Zdjęcia przyciągają uwagę, ale wyszukiwarka musi również zrozumieć, co na nich jest. Dzięki temu możesz pojawiać się nie tylko w klasycznych wynikach, ale także w Google Grafika.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Lista jak krok po kroku zoptymalizować zdjęcia na stronie internetowej?</h2><p>Na koniec praktyczna lista, która pomoże Ci przejść proces od początku do końca:</p></br><h3 class='h4 mb-2 mt-4'>Sprawdź obecny stan</h3><ul class='list-disc ml-5'><li>uruchom PageSpeed Insights i zobacz rekomendacje dot. obrazów,</li><li>zwróć uwagę na komunikaty o formatach obrazów i rozmiarach.</li></ul></br><h3 class='h4 mb-2 mt-4'>Wybierz odpowiedni format</h3><ul class='list-disc ml-5'><li>zdjęcia: JPEG lub od razu WebP,</li><li>logotypy i ikony: SVG lub lekkie PNG/WebP,</li><li>elementy UI: często najlepiej PNG albo WebP.</li></ul></br><h3 class='h4 mb-2 mt-4'>Dopasuj rozmiar i rozdzielczość</h3><ul class='list-disc ml-5'><li>nie wrzucaj zdjęć większych niż potrzebuje tego układ graficzny strony,</li><li>ustaw szerokość na np. 1200-1920 px dla zdjęć w treści i hero.</li></ul></br><h3 class='h4 mb-2 mt-4'>Zastosuj kompresję</h3><ul class='list-disc ml-5'><li>zmniejsz rozmiar plików przy zachowaniu akceptowalnej jakości,</li><li>jeśli możesz - od razu eksportuj do WebP.</li></ul></br><h3 class='h4 mb-2 mt-4'>Wdróż WebP lub AVIF</h3><ul class='list-disc ml-5'><li>na CMS (np. WordPress) skorzystaj z wtyczki,</li><li>na customowej stronie użyj skryptu / narzędzia do masowej konwersji.</li></ul></br><h3 class='h4 mb-2 mt-4'>Zadbaj o SEO wokół obrazów</h3><ul class='list-disc ml-5'><li>nazwij plik opisowo,</li><li>dodaj alt z naturalnym opisem i słowami kluczowymi,</li><li>upewnij się, że zdjęcia na Twojej stronie wspierają treść i konwersję.</li></ul></br><h3 class='h4 mb-2 mt-4'>Monitoruj efekty</h3><ul class='list-disc ml-5'><li>obserwuj czas ładowania strony i wyniki w PageSpeed,</li><li>sprawdzaj raport Core Web Vitals w GSC,</li><li>śledź wzrost widoczności w narzędziach SEO i w Google.</li></ul>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Zróbmy pełną optymalizację na Twojej stronie",
+        "description": "Przejdź do formularza kontaktowego, prześlij link do swojej strony a my przygotujemy indywidualny plan na pełną optymalizację Twojej strony. Dzięki temu Twoja witryna pojawi się wyżej w wynikach Google, a Twoja firma, zyska nowych klientów",
+        "primaryLabel": "Umów konsultację",
+        "primaryLink": "/kontakt",
+        "secondaryLabel": "Sprawdź nasze bezpłatne narzędzia do optymalizacji",
+        "secondaryLink": "/narzedzia",
+        "backgroundImage": "/assets/blog/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-i-webp/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-i-webp.webp",
+        "overlay": "black"
+      }
+    },
+
+    {
       "slug": "jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google",
       "title": "Jak pisać treści na stronie internetowej aby być wyżej w wyszukiwarce Google?",
       "excerpt": "Dowiedz się, jak pisać treści na stronę internetową, które przyciągają klientów i zajmują wyższe pozycje w Google. Praktyczne zasady SEO i przykłady.",

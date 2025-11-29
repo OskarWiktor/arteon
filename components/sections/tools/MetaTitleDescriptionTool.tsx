@@ -60,18 +60,15 @@ function analyzeTitle(text: string): FieldAnalysis {
   if (isTooShort) {
     status = 'too-short';
     statusLabel = 'Za krótki';
-    helperText =
-      'Tytuł jest bardzo krótki. Dodaj więcej słów, aby lepiej opisać stronę i wykorzystać dostępne miejsce w wynikach wyszukiwania.';
+    helperText = 'Tytuł jest bardzo krótki. Dodaj więcej słów, aby lepiej opisać stronę i wykorzystać dostępne miejsce w wynikach wyszukiwania.';
   } else if (isTooLong) {
     status = 'too-long';
     statusLabel = 'Za długi';
-    helperText =
-      'Tytuł przekracza zakres, który Google zwykle pokazuje w całości (około 580-600 pikseli szerokości, zwykle do 50-60 znaków). Może zostać ucięty.';
+    helperText = 'Tytuł przekracza zakres, który Google zwykle pokazuje w całości (około 580-600 pikseli szerokości, zwykle do 50-60 znaków). Może zostać ucięty.';
   } else {
     status = 'ideal';
     statusLabel = 'Dobra długość';
-    helperText =
-      'Tytuł mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach Google (mniej więcej 450-580 pikseli i ok. 45-60 znaków).';
+    helperText = 'Tytuł mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach Google (mniej więcej 450-580 pikseli i ok. 45-60 znaków).';
   }
 
   return { chars, words, pixels, status, statusLabel, helperText };
@@ -98,23 +95,19 @@ function analyzeDescription(text: string): FieldAnalysis {
   if (isTooShort) {
     status = 'too-short';
     statusLabel = 'Za krótki';
-    helperText =
-      'Opis jest bardzo krótki. Dodaj dłuższy tekst, który lepiej tłumaczy, co użytkownik znajdzie na stronie i dlaczego warto w nią kliknąć.';
+    helperText = 'Opis jest bardzo krótki. Dodaj dłuższy tekst, który lepiej tłumaczy, co użytkownik znajdzie na stronie i dlaczego warto w nią kliknąć.';
   } else if (isTooLong) {
     status = 'too-long';
     statusLabel = 'Za długi';
-    helperText =
-      'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.';
+    helperText = 'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.';
   } else {
     status = 'ideal';
     statusLabel = 'Dobra długość';
-    helperText =
-      'Opis mieści się w typowym zakresie dla wyników wyszukiwania (około 120-160 znaków i do ~920 pikseli), co zwykle wystarcza na 2-3 krótkie zdania.';
+    helperText = 'Opis mieści się w typowym zakresie dla wyników wyszukiwania (około 120-160 znaków i do ~920 pikseli), co zwykle wystarcza na 2-3 krótkie zdania.';
   }
 
   return { chars, words, pixels, status, statusLabel, helperText };
 }
-
 
 function getStatusClasses(status: LengthStatus): string {
   switch (status) {
@@ -230,7 +223,7 @@ export default function MetaTitleDescriptionTool() {
         <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div>
             <h2 className="h6 pb-2">Podgląd wyniku w Google</h2>
-            <p className="text-sm! text-[#5e5e5e]">Podgląd jest orientacyjny - Google może przyciąć lub zmienić tytuł i opis w zależności od szerokości ekranu i zapytania.</p>
+            <p className="text-sm! text-[#5e5e5e]">Podgląd jest orientacyjny - Google może przyciąć lub zmienić tytuł i opis w zależności od szerokości ekranu i samego tekstu</p>
           </div>
 
           <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">
