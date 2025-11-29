@@ -58,10 +58,10 @@ const Block = ({ content }: { content?: React.ReactNode }) => (!content ? null :
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',
   description: 'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet',
-  primaryLabel: 'Skontaktuj się',
-  primaryLink: '/kontakt',
-  secondaryLabel: 'Sprawdź naszą ofertę',
-  secondaryLink: '/uslugi',
+  btnOne: 'Skontaktuj się',
+  btnOneLink: '/kontakt',
+  btnTwo: 'Sprawdź naszą ofertę',
+  btnTwoLink: '/uslugi',
   backgroundImage: '/assets/bg/abstract-bg13.webp',
   overlay: 'black',
 } as const;
@@ -412,10 +412,10 @@ export default function ProjectPage({ params }: PageProps) {
       <CTABanner
         title={ctaProps.title}
         description={ctaProps.description}
-        primaryLabel={ctaProps.primaryLabel}
-        primaryLink={ctaProps.primaryLink}
-        secondaryLabel={ctaProps.secondaryLabel}
-        secondaryLink={ctaProps.secondaryLink}
+        btnOne={ctaProps.btnOne}
+        btnOneLink={ctaProps.btnOneLink}
+        btnTwo={ctaProps.btnTwo}
+        btnTwoLink={ctaProps.btnTwoLink}
         backgroundImage={ctaProps.backgroundImage}
         overlay={ctaProps.overlay}
       />

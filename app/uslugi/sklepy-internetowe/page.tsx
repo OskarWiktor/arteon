@@ -417,8 +417,8 @@ export default function OfferWebPage() {
       <CTABanner
         title="Zbudujmy sklep, który rozwija się z Tobą"
         description="Tworzymy dedykowane rozwiązanie, gotowe do rozwoju - szybkie, stabilne i zgodne z przepisami"
-        primaryLabel="Wyceń projekt"
-        primaryLink="#kontakt"
+        btnOne="Wyceń projekt"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/projects/arteon-baners-trilllizo.webp"
         overlay="black"
       />

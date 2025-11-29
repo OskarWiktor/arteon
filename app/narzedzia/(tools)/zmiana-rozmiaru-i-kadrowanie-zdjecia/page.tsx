@@ -1,7 +1,7 @@
+import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import ImageResizeTool from '@/components/sections/tools/ImageResizeTool';
 import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
@@ -65,18 +65,19 @@ export default function ImageResizerPage() {
         <ImageResizeTool />
 
         <Gap size="sm" />
+      </Wrapper>
 
-        <SectionInfo
+        <CTABanner
           title="Potrzebujesz dodatkowej pomocy przy tworzeniu odpowiednich grafik?"
           description="Napisz do nas i opowiedz o tym co chcesz stworzyć, przygotujemy dedykowaną ofertę dzięki której zaoszczędzisz czas"
           btnOne="Umów rozmowę"
           btnOneLink="/kontakt"
           btnTwo="Sprawdź nasze usługi graficzne"
           btnTwoLink="/uslugi/projekty-graficzne"
+                    backgroundImage='https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp'
+          overlay='black'
         />
 
-        <Gap size="sm" />
-      </Wrapper>
     </>
   );
 }

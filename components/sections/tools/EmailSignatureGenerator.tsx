@@ -943,19 +943,14 @@ export default function EmailSignatureGenerator() {
                         type="color"
                         value={styleConfig.accentColor}
                         onChange={(e) => handleStyleChange('accentColor', e.target.value)}
-                        className="h-9 w-9 cursor-pointer rounded-full border border-neutral-300 bg-white p-0!"
+                        className="h-9 w-9 cursor-pointer border-none bg-white p-0!"
                       />
                     </div>
                   </div>
                   <div>
                     <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Kolor tekstu</p>
                     <div className="flex items-center gap-2">
-                      <input
-                        type="color"
-                        value={styleConfig.textColor}
-                        onChange={(e) => handleStyleChange('textColor', e.target.value)}
-                        className="h-9 w-9 cursor-pointer rounded-full border border-neutral-300 bg-white p-0!"
-                      />
+                      <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="h-9 w-9 cursor-pointer border-none bg-white p-0!" />
                     </div>
                   </div>
                   <div>
@@ -965,7 +960,7 @@ export default function EmailSignatureGenerator() {
                         type="color"
                         value={styleConfig.backgroundColor}
                         onChange={(e) => handleStyleChange('backgroundColor', e.target.value)}
-                        className="h-9 w-9 cursor-pointer rounded-full border border-neutral-300 bg-white p-0!"
+                        className="h-9 w-9 cursor-pointer border-none bg-white p-0!"
                       />
                     </div>
                   </div>

@@ -209,10 +209,10 @@ export default function OfferDesignXxxPage() {
       <CTABanner
         title="Niech korespondencja pracuje na markę"
         description="Stworzymy papier firmowy, który wygląda profesjonalnie i czytelnie."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png"
         overlay="black"
       />

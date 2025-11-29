@@ -183,10 +183,10 @@ export default function OfferDesignVoucheryPage() {
       <CTABanner
         title="Zwiększ profesjonalny wizerunek przez estetyczne kupony"
         description="Zaprojektujemy voucher lub kupon, które zachęci klientów do powrotu."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png"
         overlay="black"
       />

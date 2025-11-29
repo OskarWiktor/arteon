@@ -23,10 +23,10 @@ const GAP: 'sm' | 'xs' | 'md' = 'sm';
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',
   description: 'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet',
-  primaryLabel: 'Skontaktuj się',
-  primaryLink: '/kontakt',
-  secondaryLabel: 'Sprawdź naszą ofertę',
-  secondaryLink: '/uslugi',
+  btnOne: 'Skontaktuj się',
+  btnOneLink: '/kontakt',
+  btnTwo: 'Sprawdź naszą ofertę',
+  btnTwoLink: '/uslugi',
   backgroundImage: '/assets/bg/abstract-bg13.webp',
   overlay: 'black',
 } as const;
@@ -345,10 +345,10 @@ export default function ArticlePage({ params }: { params: { category: string; sl
       <CTABanner
         title={cta.title}
         description={cta.description}
-        primaryLabel={cta.primaryLabel}
-        primaryLink={cta.primaryLink}
-        secondaryLabel={cta.secondaryLabel}
-        secondaryLink={cta.secondaryLink}
+        btnOne={cta.btnOne}
+        btnOneLink={cta.btnOneLink}
+        btnTwo={cta.btnTwo}
+        btnTwoLink={cta.btnTwoLink}
         backgroundImage={cta.backgroundImage}
         overlay={cta.overlay}
       />

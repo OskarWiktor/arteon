@@ -108,10 +108,10 @@ export default function AboutPage() {
       <CTABanner
         title="Zacznijmy od rozmowy"
         description="Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań - znajdziemy najlepszą drogę do efektu."
-        primaryLabel="Skontaktuj się"
-        primaryLink="/kontakt"
-        secondaryLabel="Poznaj ofertę"
-        secondaryLink="/uslugi"
+        btnOne="Skontaktuj się"
+        btnOneLink="/kontakt"
+        btnTwo="Poznaj ofertę"
+        btnTwoLink="/uslugi"
         backgroundImage="/assets/bg/abstract-bg8.webp"
         overlay="black"
       />

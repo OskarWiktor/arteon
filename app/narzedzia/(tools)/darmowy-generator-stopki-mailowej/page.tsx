@@ -5,6 +5,7 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import type { Metadata } from 'next';
 import EmailSignatureGenerator from '@/components/sections/tools/EmailSignatureGenerator';
+import CTABanner from '@/components/sections/CTABanner';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej HTML - bez limitu',
@@ -81,18 +82,18 @@ export default function Page() {
         <EmailSignatureGenerator />
 
         <Gap size="sm" />
-
-        <SectionInfo
-          title="Budujesz profesjonalny wizerunek marki?"
-          description="Podpis mailowy to tylko jeden z elementów. Możemy spójnie zaprojektować stronę WWW, materiały graficzne i komunikację, żeby każdy kontakt z Twoją marką wyglądał profesjonalnie."
-          btnOne="Porozmawiaj o wizerunku online"
-          btnOneLink="/kontakt"
-          btnTwo="Sprawdź nasze usługi"
-          btnTwoLink="/uslugi"
-        />
-
-        <Gap size="sm" />
       </Wrapper>
+
+      <CTABanner
+        title="Budujesz profesjonalny wizerunek marki?"
+        description="Podpis mailowy to tylko jeden z elementów. Możemy spójnie zaprojektować stronę WWW, materiały graficzne i komunikację, żeby każdy kontakt z Twoją marką wyglądał profesjonalnie."
+        btnOne="Porozmawiaj o wizerunku online"
+        btnOneLink="/kontakt"
+        btnTwo="Sprawdź nasze usługi"
+        btnTwoLink="/uslugi"
+        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+      />
     </>
   );
 }

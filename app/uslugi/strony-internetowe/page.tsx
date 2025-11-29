@@ -366,8 +366,8 @@ export default function OfferWebPage() {
       <CTABanner
         title="Zbudujmy stronę, która pracuje na Twoją markę"
         description="Pokaż się w sieci z profesjonalnym wizerunkiem"
-        primaryLabel="Wyceń projekt"
-        primaryLink="#kontakt"
+        btnOne="Wyceń projekt"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
       />

@@ -205,10 +205,10 @@ export default function OfferDesignXxxPage() {
       <CTABanner
         title="Dodaj klasę każdemu spotkaniu"
         description="Przygotujemy teczkę, która porządkuje ofertę i podkreśla prestiż."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png"
         overlay="black"
       />

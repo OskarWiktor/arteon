@@ -369,8 +369,8 @@ export default function OfferOptimizationSEO() {
       <CTABanner
         title="Poprawmy Twoją widoczność w Google"
         description="Szybsza strona, lepsze opisy i porządek w strukturze — wszystko, co potrzebne do wzrostu."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"
       />

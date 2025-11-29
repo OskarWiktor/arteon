@@ -369,8 +369,8 @@ export default function OfferOptimizationWordPressPage() {
       <CTABanner
         title="Zróbmy porządek z Twoją stroną WordPress"
         description="Przyspieszymy stronę, uporządkujemy wtyczki i przygotujemy fundamenty pod dalszy rozwój."
-        primaryLabel="Poproś o wycenę"
-        primaryLink="#kontakt"
+        btnOne="Poproś o wycenę"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg12.webp"
         overlay="black"
       />

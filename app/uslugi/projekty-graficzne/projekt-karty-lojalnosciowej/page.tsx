@@ -196,10 +196,10 @@ export default function OfferDesignKartaPage() {
       <CTABanner
         title="Zwiększ lojalność klientów"
         description="Zaprojektujemy karty, które sprawią, że klienci będą wracać częściej."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />

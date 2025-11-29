@@ -91,10 +91,10 @@
       "cta": {
         "title": "Zróbmy pełną optymalizację na Twojej stronie",
         "description": "Przejdź do formularza kontaktowego, prześlij link do swojej strony a my przygotujemy indywidualny plan na pełną optymalizację Twojej strony. Dzięki temu Twoja witryna pojawi się wyżej w wynikach Google, a Twoja firma, zyska nowych klientów",
-        "primaryLabel": "Umów konsultację",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Sprawdź nasze bezpłatne narzędzia do optymalizacji",
-        "secondaryLink": "/narzedzia",
+        "btnOne": "Umów konsultację",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź nasze bezpłatne narzędzia do optymalizacji",
+        "btnTwoLink": "/narzedzia",
         "backgroundImage": "/assets/blog/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-i-webp/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-i-webp.webp",
         "overlay": "black"
       }
@@ -281,10 +281,10 @@
       "cta": {
         "title": "Zamień treści w realny ruch z Google",
         "description": "Strategia treści, struktura H1-H3, linkowanie i E-E-A-T. Napiszemy teksty, które podnoszą pozycje i sprzedaż.",
-        "primaryLabel": "Zamów wycenę",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Zobacz ofertę",
-        "secondaryLink": "/uslugi/marketing/tworzenie-tresci-seo",
+        "btnOne": "Zamów wycenę",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Zobacz ofertę",
+        "btnTwoLink": "/uslugi/marketing/tworzenie-tresci-seo",
         "backgroundImage": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google.jpg",
         "overlay": "black"
       },
@@ -440,10 +440,10 @@
       "cta": {
         "title": "Zaprojektujmy spójny system identyfikacji wizualnej",
         "description": "Logo, paleta kolorów, typografia i brandbook, które budują zaufanie i rozpoznawalność Twojej marki.",
-        "primaryLabel": "Zamów wycenę",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Zobacz ofertę",
-        "secondaryLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "btnOne": "Zamów wycenę",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Zobacz ofertę",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
         "backgroundImage": "/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.jpg",
         "overlay": "black"
       }
@@ -671,8 +671,8 @@
       "cta": {
         "title": "Zróbmy audyt SEO Twojej strony",
         "description": "Dowiedz się, dlaczego Twoja strona internetowa nie pojawia się w Google i co można poprawić, by odzyskać widoczność. Przeprowadzimy pełny audyt techniczny, SEO i contentowy.",
-        "primaryLabel": "Umów konsultację",
-        "primaryLink": "/kontakt",
+        "btnOne": "Umów konsultację",
+        "btnOneLink": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic.jpg",
         "overlay": "black"
       },

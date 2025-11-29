@@ -212,10 +212,10 @@ export default function OfferDesignXxxPage() {
       <CTABanner
         title="Daj stronie przewagę na starcie"
         description="Stworzymy layout, który prowadzi wzrokiem i zwiększa sprzedaż."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />

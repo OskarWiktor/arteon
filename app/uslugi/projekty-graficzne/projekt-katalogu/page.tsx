@@ -211,10 +211,10 @@ export default function OfferDesignXxxPage() {
       <CTABanner
         title="Pokaż ofertę z klasą"
         description="Zaprojektujemy katalog, który klarownie prowadzi do decyzji."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/gazetka-mockup.jpg"
         overlay="black"
       />

@@ -225,8 +225,8 @@ export default function OfferMarketingHubPage() {
       <CTABanner
         title="Rozwiń markę mądrą strategią"
         description="Od audytu i wdrożeń po kampanie i treści - planujemy i prowadzimy działania, które zwiększają sprzedaż"
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"
       />

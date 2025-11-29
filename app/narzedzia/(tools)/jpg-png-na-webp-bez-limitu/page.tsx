@@ -1,3 +1,4 @@
+import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import JpgPngToWebp from '@/components/sections/tools/JpgPngToWebp';
 import Gap from '@/components/ui/Gap';
@@ -82,16 +83,16 @@ export default function Page() {
         </SectionInfo>
 
         <Gap size="sm" />
-
-        <SectionInfo
-          title="Potrzebujesz pełnej optymalizacji swojej strony?"
-          description="Mamy sprawdzone sposoby na wyniki +90/100 w PageSpeed. Prześlij link do swojej strony a my przygotujemy dla Ciebie ofertę jej optymalizacji"
-          btnOne="Zamów pełną optymalizację"
-          btnOneLink="/kontakt"
-        />
-
-        <Gap size="sm" />
       </Wrapper>
+
+      <CTABanner
+        title="Potrzebujesz pełnej optymalizacji swojej strony?"
+        description="Mamy sprawdzone sposoby na wyniki +90/100 w PageSpeed. Prześlij link do swojej strony a my przygotujemy dla Ciebie ofertę jej optymalizacji"
+        btnOne="Zamów pełną optymalizację"
+        btnOneLink="/kontakt"
+        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+      />
     </>
   );
 }

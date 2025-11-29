@@ -370,8 +370,8 @@ export default function OfferSeoSubscription() {
       <CTABanner
         title="Zbudujmy Twoją widoczność"
         description="Strategia treści, porządek na stronie i bezpieczne linki — zestaw, który zwiększa liczbę zapytań."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
       />

@@ -311,8 +311,8 @@ export default function OfferContentPage() {
       <CTABanner
         title="Stwórzmy treści, które działają jak magnez"
         description="Tworzymy treści, które trafiają do ludzi oraz algorytmów, wspierając sprzedaż"
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg6.webp"
         overlay="black"
       />

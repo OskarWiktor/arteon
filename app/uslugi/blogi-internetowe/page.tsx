@@ -347,8 +347,8 @@ export default function OfferBlogPage() {
       <CTABanner
         title="Czas na blog, który buduje Twoją pozycję"
         description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
-        primaryLabel="Wyceń projekt"
-        primaryLink="#kontakt"
+        btnOne="Wyceń projekt"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg3.webp"
         overlay="black"
       />

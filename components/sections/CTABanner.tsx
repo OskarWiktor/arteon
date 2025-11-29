@@ -6,15 +6,15 @@ interface CTABannerProps {
   title: ReactNode;
   subtitle?: ReactNode;
   description?: ReactNode;
-  primaryLabel?: string;
-  primaryLink?: string;
-  secondaryLabel?: string;
-  secondaryLink?: string;
+  btnOne?: string;
+  btnOneLink?: string;
+  btnTwo?: string;
+  btnTwoLink?: string;
   backgroundImage?: string;
   overlay?: 'none' | 'black' | 'white';
 }
 
-export default function CTABanner({ title, subtitle, description, primaryLabel, primaryLink, secondaryLabel, secondaryLink, backgroundImage, overlay = 'none' }: CTABannerProps) {
+export default function CTABanner({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, backgroundImage, overlay = 'none' }: CTABannerProps) {
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
   const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
@@ -38,16 +38,16 @@ export default function CTABanner({ title, subtitle, description, primaryLabel, 
 
           {description && <p className={`reveal-animation mx-auto mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}>{description}</p>}
 
-          {(primaryLabel || secondaryLabel) && (
+          {(btnOne || btnTwo) && (
             <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:justify-center" role="group" aria-label="Działania sekcji">
-              {primaryLabel && (
-                <Button link={primaryLink} arrow variant="accent">
-                  {primaryLabel}
+              {btnOne && (
+                <Button link={btnOneLink} arrow variant="accent">
+                  {btnOne}
                 </Button>
               )}
-              {secondaryLabel && (
-                <Button link={secondaryLink} arrow>
-                  {secondaryLabel}
+              {btnTwo && (
+                <Button link={btnTwoLink} arrow>
+                  {btnTwo}
                 </Button>
               )}
             </div>

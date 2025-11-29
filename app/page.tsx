@@ -216,10 +216,10 @@ export default function HomePage() {
       <CTABanner
         title="Zacznijmy od rozmowy"
         description="Z chęcią porozmawiamy o Twoim pomyśle, przejdź do strony kontaktu i opisz swoją wizję rozwoju"
-        primaryLabel="Kontakt"
-        primaryLink="/kontakt"
-        secondaryLabel="Poznaj ofertę"
-        secondaryLink="/uslugi"
+        btnOne="Kontakt"
+        btnOneLink="/kontakt"
+        btnTwo="Poznaj ofertę"
+        btnTwoLink="/uslugi"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />

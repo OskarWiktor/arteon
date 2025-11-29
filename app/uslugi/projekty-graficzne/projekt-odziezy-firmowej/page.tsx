@@ -201,10 +201,10 @@ export default function OfferDesignXxxPage() {
       <CTABanner
         title="Ubierz zespół w tożsamość"
         description="Zaprojektujemy nadruki i hafty, które wyróżniają markę w terenie."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />

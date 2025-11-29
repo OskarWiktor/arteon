@@ -191,7 +191,7 @@ export default function WcagContrastChecker() {
                       value={foreground}
                       onChange={(e) => setForeground(e.target.value)}
                       aria-label="Wybierz kolor tekstu"
-                      className="h-10! w-10! cursor-pointer rounded-xl border border-black/10 bg-white p-0!"
+                      className="h-10! w-10! cursor-pointer border-none bg-white p-0!"
                     />
                     <input
                       type="text"
@@ -215,7 +215,7 @@ export default function WcagContrastChecker() {
                       value={background}
                       onChange={(e) => setBackground(e.target.value)}
                       aria-label="Wybierz kolor tła"
-                      className="h-10! w-10! cursor-pointer rounded-xl border border-black/10 bg-white p-0!"
+                      className="h-10! w-10! cursor-pointer border-none bg-white p-0!"
                     />
                     <input
                       type="text"
@@ -253,7 +253,7 @@ export default function WcagContrastChecker() {
                   Nie udało się odczytać kolorów. Użyj formatu <code className="rounded bg-black/5 px-1">#rrggbb</code> lub <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
                 </p>
               ) : (
-                <p className="mt-1 text-[11px]! text-[#6b6b6b]"></p>
+                <p className="mt-1 text-[11px]! text-[#5e5e5e]"></p>
               )}
             </div>
           </div>

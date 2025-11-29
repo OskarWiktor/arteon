@@ -1,3 +1,4 @@
+import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import MetaTitleDescriptionTool from '@/components/sections/tools/MetaTitleDescriptionTool';
 import Gap from '@/components/ui/Gap';
@@ -98,18 +99,18 @@ export default function Page() {
         </SectionInfo>
 
         <Gap size="sm" />
-
-        <SectionInfo
-          title="Potrzebujesz pełnej optymalizacji SEO dla swojej witryny?"
-          description="Możemy zająć się tym za Ciebie. Prześlij nam link do swojej strony a my powiemy co zrobić aby klienci mogli Cie łatwiej znaleźć"
-          btnOne="Umów rozmowę o SEO"
-          btnOneLink="/kontakt"
-          btnTwo="Sprawdź ofertę pozycjonowania"
-          btnTwoLink="/uslugi/marketing/pozycjonowanie-stron"
-        />
-
-        <Gap size="sm" />
       </Wrapper>
+
+      <CTABanner
+        title="Potrzebujesz pełnej optymalizacji SEO dla swojej witryny?"
+        description="Możemy zająć się tym za Ciebie. Prześlij nam link do swojej strony a my powiemy co zrobić aby klienci mogli Cie łatwiej znaleźć"
+        btnOne="Umów rozmowę o SEO"
+        btnOneLink="/kontakt"
+        btnTwo="Sprawdź ofertę pozycjonowania"
+        btnTwoLink="/uslugi/marketing/pozycjonowanie-stron"
+        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+      />
     </>
   );
 }

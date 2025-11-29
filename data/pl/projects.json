@@ -30,10 +30,10 @@
       "cta": {
         "title": "Chcesz usprawnić proces tworzenia treści do swoich mediów społecznościowych?",
         "description": "Opisz, jak czym się zajmujesz i kim są Twoi klienci. Przygotujemy spójny zestaw szablonów do Instagrama i innych mediów społecznościowych, który zbuduje profesjonalny wizerunek i uprości proces pozyskiwania nowych klientów.",
-        "primaryLabel": "Skontaktuj się",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Zobacz ofertę szablonów do mediów społecznośiowych",
-        "secondaryLink": "/uslugi/projekty-graficzne/szablony-postow-do-social-media",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Zobacz ofertę szablonów do mediów społecznośiowych",
+        "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-do-social-media",
         "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
         "overlay": "black"
       },
@@ -73,10 +73,10 @@
       "cta": {
         "title": "Potrzebujesz vouchera lub kuponu promocyjnego dla swojej firmy?",
         "description": "Opisz nam czym się zajmujesz, przygotujemy projekt graficzny wraz z wersją do druku",
-        "primaryLabel": "Skontaktuj się",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Sprawdź ofertę voucherów i kuponów",
-        "secondaryLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę voucherów i kuponów",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
         "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png",
         "overlay": "black"
       },
@@ -134,10 +134,10 @@
       "cta": {
         "title": "Potrzebujesz szybszej i czytelniejszej strony?",
         "description": "Prześlij link do swojej strony, sprawdzimy jak można ją poprawić ",
-        "primaryLabel": "Skontaktuj się",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Sprawdź ofertę stron internetowych",
-        "secondaryLink": "/uslugi/strony-internetowe",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
         "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.png",
         "overlay": "black"
       },
@@ -187,10 +187,10 @@
       "cta": {
         "title": "Zamów papier firmowy dla swojej firmy",
         "description": "Zrealizujemy dla Ciebie projekt z przygotowaniem do druku",
-        "primaryLabel": "Zamów papier firmowy",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Projekty graficzne",
-        "secondaryLink": "/uslugi/projekty-graficzne",
+        "btnOne": "Zamów papier firmowy",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Projekty graficzne",
+        "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
         "overlay": "black"
       },
@@ -283,10 +283,10 @@
       "cta": {
         "title": "Potrzebujesz teczki ofertowej dla swojej firmy?",
         "description": "Skontaktuj się z nami lub sprawdź szczegóły naszej oferty",
-        "primaryLabel": "Zamów teczkę",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Projekty graficzne",
-        "secondaryLink": "/uslugi/projekty-graficzne",
+        "btnOne": "Zamów teczkę",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Projekty graficzne",
+        "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
         "overlay": "black"
       },
@@ -372,10 +372,10 @@
       "cta": {
         "title": "Potrzebujesz wizytówki dla swojej firmy?",
         "description": "Zaprojektujemy teczkę przygotowaną do druku zgodną z charakterem Twojej branży",
-        "primaryLabel": "Zamów teczkę",
-        "primaryLink": "/kontakt",
-        "secondaryLabel": "Projekty graficzne",
-        "secondaryLink": "/uslugi/projekty-graficzne",
+        "btnOne": "Zamów teczkę",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Projekty graficzne",
+        "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
         "overlay": "black"
       },

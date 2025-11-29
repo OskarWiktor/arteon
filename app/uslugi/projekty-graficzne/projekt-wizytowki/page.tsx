@@ -205,10 +205,10 @@ export default function OfferDesignXxxPage() {
       <CTABanner
         title="Zrób mocne pierwsze wrażenie"
         description="Stworzymy wizytówkę, która mówi jasno i buduje zaufanie."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png"
         overlay="black"
       />

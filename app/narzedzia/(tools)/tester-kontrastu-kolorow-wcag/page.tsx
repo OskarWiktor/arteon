@@ -5,6 +5,7 @@ import Gap from '@/components/ui/Gap';
 import type { Metadata } from 'next';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker';
+import CTABanner from '@/components/sections/CTABanner';
 
 export const metadata: Metadata = {
   title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
@@ -87,18 +88,18 @@ export default function Page() {
         <WcagContrastChecker />
 
         <Gap size="sm" />
-
-        <SectionInfo
-          title="Chcesz, żeby Twoja strona była zgodna z WCAG i lepiej widoczna w Google?"
-          description="Prześlij nam link do swojej strony. Sprawdzimy kluczowe elementy: kontrast, hierarchię treści, Core Web Vitals i SEO techniczne - a potem powiemy, co konkretnie poprawić, żeby strona była szybsza, czytelniejsza i generowała więcej zapytań."
-          btnOne="Umów rozmowę o stronie www"
-          btnOneLink="/kontakt"
-          btnTwo="Sprawdź nasze usługi"
-          btnTwoLink="/uslugi"
-        />
-
-        <Gap size="sm" />
       </Wrapper>
+
+      <CTABanner
+        title="Chcesz, żeby Twoja strona była zgodna z WCAG i lepiej widoczna w Google?"
+        description="Prześlij nam link do swojej strony. Sprawdzimy kluczowe elementy: kontrast, hierarchię treści, Core Web Vitals i SEO techniczne - a potem powiemy, co konkretnie poprawić, żeby strona była szybsza, czytelniejsza i generowała więcej zapytań."
+        btnOne="Umów rozmowę o stronie www"
+        btnOneLink="/kontakt"
+        btnTwo="Sprawdź nasze usługi"
+        btnTwoLink="/uslugi"
+        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+      />
     </>
   );
 }

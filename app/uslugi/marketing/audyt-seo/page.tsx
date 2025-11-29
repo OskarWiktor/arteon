@@ -390,8 +390,8 @@ export default function OfferMarketingPage() {
       <CTABanner
         title="Poznaj prawdziwy stan SEO swojej strony"
         description="Audyt, który kończy się planem działania — nie tylko diagnozą."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"
       />

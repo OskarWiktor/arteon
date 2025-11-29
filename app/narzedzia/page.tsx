@@ -4,12 +4,12 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line } from 'react-icons/ri';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla właścicieli stron i firm',
   description:
-    'Darmowe narzędzia online dla właścicieli stron i marek. Konwertery obrazów, favicon, licznik meta tagów i inne dodatki, które pomagają przyspieszyć witrynę, poprawić SEO i lepiej planować działania marketingowe.',
+    'Darmowe narzędzia online dla właścicieli stron i marek. Konwertery obrazów, favicon, licznik meta tagów, tester kontrastu i generator palet kolorów, które pomagają przyspieszyć stronę, poprawić SEO i uporządkować identyfikację wizualną.',
   keywords: [
     'narzędzia dla stron internetowych',
     'narzędzia SEO online',
@@ -17,6 +17,8 @@ export const metadata = {
     'konwerter obrazów WebP',
     'generator favicon',
     'licznik meta title',
+    'tester kontrastu kolorów',
+    'generator palet kolorów',
     'optymalizacja strony internetowej',
     'Arteon narzędzia',
   ],
@@ -24,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: 'Darmowe narzędzia online dla właścicieli stron i firm',
     description:
-      'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description oraz tester kontrastu kolorów zgodny z WCAG 2.1.',
+      'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG oraz generator palet kolorów z jednego HEX-a.',
     url: 'https://www.arteonagency.pl/narzedzia',
     type: 'website',
     images: [
@@ -39,13 +41,15 @@ const toolsJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Darmowe narzędzia online dla właścicieli stron i firm',
-  description: 'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon oraz licznik długości meta title i description.',
+  description:
+    'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG oraz generator palet kolorów z jednego koloru bazowego.',
   itemListElement: [
     {
       '@type': 'WebApplication',
       position: 1,
       name: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
-      description: 'Konwerter JPG/PNG na WebP, który zmniejsza wagę zdjęć bez utraty jakości. Działa w całości w przeglądarce - bez wysyłania plików na serwer, bez logowania i bez limitu użycia.',
+      description:
+        'Konwerter JPG/PNG na WebP, który zmniejsza wagę zdjęć bez utraty jakości. Działa w całości w przeglądarce - bez wysyłania plików na serwer, bez logowania i bez limitu użycia.',
       url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -64,7 +68,8 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 3,
       name: 'Darmowy generator favicon online',
-      description: 'Generator favicon online, który z jednego obrazu tworzy favicon.ico oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.',
+      description:
+        'Generator favicon online, który z jednego obrazu tworzy favicon.ico oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.',
       url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -99,6 +104,16 @@ const toolsJsonLd = {
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
+    {
+      '@type': 'WebApplication',
+      position: 7,
+      name: 'Generator palet kolorów online z jednego koloru',
+      description:
+        'Generator palet kolorów online, który z jednego koloru bazowego buduje klasyczne schematy (monochromatyczne, triadyczne, analogiczne, komplementarne) oraz nowoczesne palety pastelowe, ciemne, tonalne i minimalistyczne inspirowane Material Design i Apple.',
+      url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
+      applicationCategory: 'UtilityApplication',
+      operatingSystem: 'Any',
+    },
   ],
 };
 
@@ -107,7 +122,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Darmowe narzędzia dla właścicieli stron i marek online"
-        description="W jednym miejscu znajdziesz praktyczne, w pełni darmowe narzędzia do pracy nad stroną: od obrazów, przez favicon, po SEO. Bez logowania, bez abonamentu, bez limitów."
+        description="W jednym miejscu znajdziesz praktyczne, w pełni darmowe narzędzia do pracy nad stroną: od obrazów, przez favicon i meta tagi, po kontrast i palety kolorów. Bez logowania, bez abonamentu, bez limitów."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -126,7 +141,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Zmniejsz wagę zdjęć, konwertując je z JPG lub PNG do formatu <strong>WebP</strong>. Pobierz pliki, dodaj na stronę i zoptymalizuj jej prędkość
+                    Zmniejsz wagę zdjęć, konwertując je z JPG lub PNG do formatu <strong>WebP</strong>. Pobierz pliki, dodaj na stronę i zoptymalizuj jej prędkość.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/jpg-png-na-webp-bez-limitu">
@@ -141,7 +156,9 @@ export default function ToolsIndexPage() {
               title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Przygotuj idealny kadr ze zdjęcia pod social media lub stronę WWW. Wybierz gotowy format albo wpisz własne wymiary w pikselach i pobierz gotowe zdjęcie w PNG, JPG lub WebP</p>
+                  <p>
+                    Przygotuj idealny kadr ze zdjęcia pod social media lub stronę WWW. Wybierz gotowy format albo wpisz własne wymiary w pikselach i pobierz gotowe zdjęcie w PNG, JPG lub WebP.
+                  </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia">
                       Otwórz narzędzie
@@ -156,7 +173,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse
+                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 – zgodne z wymaganiami przeglądarek i Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-favicon-ico">
@@ -171,7 +188,9 @@ export default function ToolsIndexPage() {
               title: 'Licznik długości meta title i description',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Sprawdź liczbę znaków, słów i szerokość w pikselach oraz podgląd wyniku w Google. Łatwiej unikniesz uciętych tytułów i opisów i szybciej dopasujesz treści pod SEO</p>
+                  <p>
+                    Sprawdź liczbę znaków, słów i szerokość w pikselach oraz podgląd wyniku w Google. Łatwiej unikniesz uciętych tytułów i opisów i szybciej dopasujesz treści pod SEO.
+                  </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/licznik-dlugosci-meta-title-i-description">
                       Otwórz narzędzie
@@ -185,7 +204,9 @@ export default function ToolsIndexPage() {
               title: 'Darmowy generator stopki mailowej HTML',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych</p>
+                  <p>
+                    Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych.
+                  </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-stopki-mailowej">
                       Otwórz narzędzie
@@ -211,6 +232,23 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiPaletteLine className="h-8 w-8" />,
+              title: 'Generator palet kolorów z jednego koloru',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Wybierz jeden kolor bazowy i wygeneruj klasyczne i nowoczesne palety: monochromatyczne, triadyczne, pastelowe, ciemne, tonalne czy minimalistyczne inspirowane Apple i Material
+                    Design. Sprawdź jakie kolory będą idealne dla Twojej marki.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/generator-palet-kolorow-online">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -218,11 +256,11 @@ export default function ToolsIndexPage() {
 
         <SectionInfo
           title="Jak korzystać z narzędzi Arteon?"
-          description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci"
+          description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci."
         >
           <p className="mt-4 text-xs text-[#5e5e5e]">
-            Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
-            kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online
+            Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie
+            rozbudowywana o kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online.
           </p>
         </SectionInfo>
 
@@ -233,3 +271,4 @@ export default function ToolsIndexPage() {
     </>
   );
 }
+

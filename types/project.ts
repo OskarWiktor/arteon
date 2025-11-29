@@ -26,10 +26,10 @@ export type ContentBlock =
 export type ProjectCTA = {
   title?: string;
   description?: string;
-  primaryLabel?: string;
-  primaryLink?: string;
-  secondaryLabel?: string;
-  secondaryLink?: string;
+  btnOne?: string;
+  btnOneLink?: string;
+  btnTwo?: string;
+  btnTwoLink?: string;
   backgroundImage?: string;
   overlay?: 'black' | 'white';
 };

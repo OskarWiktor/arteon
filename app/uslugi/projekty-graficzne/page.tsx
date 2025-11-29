@@ -578,8 +578,8 @@ export default function OfferDesignPage() {
       <CTABanner
         title="Nadaj marce wyjątkową tożsamość"
         description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />

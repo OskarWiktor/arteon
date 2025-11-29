@@ -190,10 +190,10 @@ export default function OfferDesignCennikPage() {
       <CTABanner
         title="Upiększ swoją ofertę"
         description="Zaprojektujemy cennik, który wygląda profesjonalnie i sprzedaje skutecznie."
-        primaryLabel="Skontaktuj się"
-        primaryLink="#kontakt"
-        secondaryLabel="Poznaj usługi graficzne"
-        secondaryLink="/uslugi/projekty-graficzne"
+        btnOne="Skontaktuj się"
+        btnOneLink="#kontakt"
+        btnTwo="Poznaj usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/cennik-mockup.png"
         overlay="black"
       />
