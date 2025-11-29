@@ -5,9 +5,8 @@ import Button from '../Button';
 
 interface SectionStepItem {
   icon?: ReactNode;
-  imageSrc?: string; // 👈 mała ikona w kwadracie (tak jak było)
+  imageSrc?: string;
   imageAlt?: string;
-  /** 🆕 Duże zdjęcie nad ikoną / kwadratem */
   topImageSrc?: string;
   topImageAlt?: string;
   title: ReactNode;
@@ -32,7 +31,6 @@ interface SectionStepsProps {
   overlay?: 'none' | 'black' | 'white';
   disclaimer?: ReactNode;
   headingLevel?: HeadingLevel;
-  /** 🔢 Pokazuje numer w kwadracie zamiast ikony */
   showIndex?: boolean;
 }
 
@@ -61,7 +59,6 @@ export default function SectionSteps({
 
   const count = items?.length ?? 0;
 
-  // 🔹 logika oryginalnego grida + dodana opcja "three"
   let gridColsSm = 'sm:grid-cols-1';
   let gridColsMd = '';
   let gridColsLg = '';

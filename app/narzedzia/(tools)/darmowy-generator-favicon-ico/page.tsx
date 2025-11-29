@@ -88,6 +88,17 @@ export default function Page() {
         </SectionInfo>
 
         <Gap size="sm" />
+
+        <SectionInfo
+          title="Potrzebujesz dodatkowej pomocy przy tworzeniu swojej strony?"
+          description="Prześlij nam link do strony, nad którą pracujesz, a my podpowiemy, co możesz zrobić, aby Twoja strona generowała więcej klientów"
+          btnOne="Umów rozmowę o stronie www"
+          btnOneLink="/kontakt"
+          btnTwo="Sprawdź nasze usługi"
+          btnTwoLink="/uslugi"
+        />
+
+        <Gap size="sm" />
       </Wrapper>
     </>
   );

@@ -64,7 +64,7 @@ li,
 h1,
 .h1 {
   font-weight: 600;
-  font-size: clamp(36px, calc(36px + 24 * ((100vw - 360px) / 1080)), 60px);
+  font-size: clamp(36px, calc(36px + 20 * ((100vw - 360px) / 1080)), 56px);
   text-wrap: balance;
   hyphens: none;
   word-break: normal;
@@ -151,19 +151,6 @@ textarea {
   }
 }
 
-/*    CUSTOM    */
-.marker-after {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-slate-500 before:blur-[0.5px] before:content-[''];
-  p,
-  span {
-    @apply relative z-10;
-  }
-}
-
-.marker-before {
-  @apply relative inline-block before:absolute before:inset-x-[5px] before:bottom-0 before:h-4 before:-rotate-1 before:bg-slate-500 before:blur-[0.5px] before:content-[''];
-}
-
 .hover-underline {
   position: relative;
   display: inline-block;
@@ -185,7 +172,6 @@ textarea {
   width: 100%;
 }
 
-/* ===== Reveal Animation (uniwersalne) ===== */
 .reveal-animation {
   opacity: 0;
   transform: translateY(12px);
@@ -214,14 +200,12 @@ textarea {
   }
 }
 
-/* Podstawowy wygląd kadru react-easy-crop - cień poza kadrem + obramowanie */
 .arteon-crop-area {
   box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.55);
   border-radius: 8px;
   border: 1px solid var(--crop-grid-color, #10b981);
 }
 
-/* Zmiana koloru linii siatki */
 .arteon-cropper .reactEasyCrop_GridLine {
   background-color: var(--crop-grid-color, #10b981);
 }

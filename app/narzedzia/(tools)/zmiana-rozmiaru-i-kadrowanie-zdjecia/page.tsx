@@ -1,6 +1,7 @@
 import HeroBanner from '@/components/sections/HeroBanner';
 import ImageResizeTool from '@/components/sections/tools/ImageResizeTool';
 import Gap from '@/components/ui/Gap';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
@@ -8,11 +9,11 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
   description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',
-  alternates: { canonical: '/narzedzia/zmiana-rozmiaru-zdjecia' },
+  alternates: { canonical: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia' },
   openGraph: {
     title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
     description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',
-    url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-zdjecia',
+    url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
     type: 'website',
     images: [
       {
@@ -62,6 +63,17 @@ export default function ImageResizerPage() {
         <Gap size="sm" />
 
         <ImageResizeTool />
+
+        <Gap size="sm" />
+
+        <SectionInfo
+          title="Potrzebujesz dodatkowej pomocy przy tworzeniu odpowiednich grafik?"
+          description="Napisz do nas i opowiedz o tym co chcesz stworzyć, przygotujemy dedykowaną ofertę dzięki której zaoszczędzisz czas"
+          btnOne="Umów rozmowę"
+          btnOneLink="/kontakt"
+          btnTwo="Sprawdź nasze usługi graficzne"
+          btnTwoLink="/uslugi/projekty-graficzne"
+        />
 
         <Gap size="sm" />
       </Wrapper>

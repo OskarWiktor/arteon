@@ -65,7 +65,7 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-        <SectionInfo title="Profesjonalna stopka mailowa bez grafika i bez kodowania" description="Generator stopki mailowej, który pomaże Ci zbudować profesjonalny wizerunek">
+        <SectionInfo title="Profesjonalna stopka mailowa bez grafika i bez kodowania" description="Generator stopki mailowej, który pomoże Ci zbudować profesjonalny wizerunek">
           <p className="mt-4">
             Uzupełnij dane: imię i nazwisko, stanowisko, nazwę firmy, dane kontaktowe, link do kalendarza lub oferty oraz profile w social media. Narzędzie od razu buduje z tego przejrzystą stopkę
             HTML, która dobrze wygląda w Gmailu, Outlooku i większości popularnych klientów pocztowych.
@@ -79,6 +79,17 @@ export default function Page() {
         <Gap size="sm" />
 
         <EmailSignatureGenerator />
+
+        <Gap size="sm" />
+
+        <SectionInfo
+          title="Budujesz profesjonalny wizerunek marki?"
+          description="Podpis mailowy to tylko jeden z elementów. Możemy spójnie zaprojektować stronę WWW, materiały graficzne i komunikację, żeby każdy kontakt z Twoją marką wyglądał profesjonalnie."
+          btnOne="Porozmawiaj o wizerunku online"
+          btnOneLink="/kontakt"
+          btnTwo="Sprawdź nasze usługi"
+          btnTwoLink="/uslugi"
+        />
 
         <Gap size="sm" />
       </Wrapper>

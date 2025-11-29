@@ -13,15 +13,38 @@ interface FieldAnalysis {
   helperText: string;
 }
 
-function estimatePixels(text: string, avgPxPerChar: number): number {
-  return Math.round(text.length * avgPxPerChar);
+const TITLE_FONT = '400 20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+const DESCRIPTION_FONT = '300 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+
+let measureCanvas: HTMLCanvasElement | null = null;
+
+function measureTextWidth(text: string, font: string, fallbackAvgPx: number): number {
+  if (!text) return 0;
+
+  if (typeof document === 'undefined') {
+    return Math.round(text.length * fallbackAvgPx);
+  }
+
+  if (!measureCanvas) {
+    measureCanvas = document.createElement('canvas');
+  }
+
+  const context = measureCanvas.getContext('2d');
+  if (!context) {
+    return Math.round(text.length * fallbackAvgPx);
+  }
+
+  context.font = font;
+  const metrics = context.measureText(text);
+  return Math.round(metrics.width);
 }
 
 function analyzeTitle(text: string): FieldAnalysis {
   const trimmed = text.trim();
   const chars = trimmed.length;
   const words = trimmed ? trimmed.split(/\s+/).filter(Boolean).length : 0;
-  const pixels = estimatePixels(trimmed, 7);
+
+  const pixels = measureTextWidth(trimmed, TITLE_FONT, 9);
 
   let status: LengthStatus = 'empty';
   let statusLabel = 'Brak danych';
@@ -31,21 +54,24 @@ function analyzeTitle(text: string): FieldAnalysis {
     return { chars, words, pixels, status, statusLabel, helperText };
   }
 
-  const isTooShort = chars < 30 || pixels < 300;
-  const isTooLong = chars > 65 || pixels > 600;
+  const isTooShort = chars < 35 || pixels < 350;
+  const isTooLong = chars > 65 || pixels > 580;
 
   if (isTooShort) {
     status = 'too-short';
     statusLabel = 'Za krótki';
-    helperText = 'Tytuł jest bardzo krótki. Dodaj więcej słów aby lepiej opisać stronę i wykorzystać dostępne miejsce';
+    helperText =
+      'Tytuł jest bardzo krótki. Dodaj więcej słów, aby lepiej opisać stronę i wykorzystać dostępne miejsce w wynikach wyszukiwania.';
   } else if (isTooLong) {
     status = 'too-long';
     statusLabel = 'Za długi';
-    helperText = 'Tytuł przekracza zakres, który Google zwykle pokazuje w całości (około 600 pikseli szerokości, zwykle do 50-60 znaków)';
+    helperText =
+      'Tytuł przekracza zakres, który Google zwykle pokazuje w całości (około 580-600 pikseli szerokości, zwykle do 50-60 znaków). Może zostać ucięty.';
   } else {
     status = 'ideal';
     statusLabel = 'Dobra długość';
-    helperText = 'Tytuł mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach Google (do około 600 pikseli i 50-60 znaków)';
+    helperText =
+      'Tytuł mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach Google (mniej więcej 450-580 pikseli i ok. 45-60 znaków).';
   }
 
   return { chars, words, pixels, status, statusLabel, helperText };
@@ -55,7 +81,8 @@ function analyzeDescription(text: string): FieldAnalysis {
   const trimmed = text.trim();
   const chars = trimmed.length;
   const words = trimmed ? trimmed.split(/\s+/).filter(Boolean).length : 0;
-  const pixels = estimatePixels(trimmed, 6);
+
+  const pixels = measureTextWidth(trimmed, DESCRIPTION_FONT, 5.8);
 
   let status: LengthStatus = 'empty';
   let statusLabel = 'Brak danych';
@@ -71,20 +98,23 @@ function analyzeDescription(text: string): FieldAnalysis {
   if (isTooShort) {
     status = 'too-short';
     statusLabel = 'Za krótki';
-    helperText = 'Opis jest bardzo krótki. Dodaj dłuższy opis szerzej mówiący o tym, co użytkownik znajdzie na stronie';
+    helperText =
+      'Opis jest bardzo krótki. Dodaj dłuższy tekst, który lepiej tłumaczy, co użytkownik znajdzie na stronie i dlaczego warto w nią kliknąć.';
   } else if (isTooLong) {
     status = 'too-long';
     statusLabel = 'Za długi';
     helperText =
-      'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub częściowo zastąpiony innym fragmentem tekstu ze strony';
+      'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.';
   } else {
     status = 'ideal';
     statusLabel = 'Dobra długość';
-    helperText = 'Opis mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach wyszukiwania (około 120-160 znaków i do ~920 pikseli)';
+    helperText =
+      'Opis mieści się w typowym zakresie dla wyników wyszukiwania (około 120-160 znaków i do ~920 pikseli), co zwykle wystarcza na 2-3 krótkie zdania.';
   }
 
   return { chars, words, pixels, status, statusLabel, helperText };
 }
+
 
 function getStatusClasses(status: LengthStatus): string {
   switch (status) {

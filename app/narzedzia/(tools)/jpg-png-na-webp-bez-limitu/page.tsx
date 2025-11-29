@@ -82,6 +82,15 @@ export default function Page() {
         </SectionInfo>
 
         <Gap size="sm" />
+
+        <SectionInfo
+          title="Potrzebujesz pełnej optymalizacji swojej strony?"
+          description="Mamy sprawdzone sposoby na wyniki +90/100 w PageSpeed. Prześlij link do swojej strony a my przygotujemy dla Ciebie ofertę jej optymalizacji"
+          btnOne="Zamów pełną optymalizację"
+          btnOneLink="/kontakt"
+        />
+
+        <Gap size="sm" />
       </Wrapper>
     </>
   );

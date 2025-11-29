@@ -27,7 +27,7 @@ export default function SectionInfo({ title, subtitle, description, btnOne, btnO
       {children}
 
       {(btnOne || btnTwo) && (
-        <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" aria-label="Działania sekcji">
+        <div className="mt-4 flex flex-wrap gap-3 md:mt-6 lg:mt-8" aria-label="Działania sekcji">
           {btnOne && (
             <Button arrow variant="accent" link={btnOneLink}>
               {btnOne}

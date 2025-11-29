@@ -7,11 +7,11 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Licznik długość meta title i description',
+  title: 'Licznik długości meta title i description',
   description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
   alternates: { canonical: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
   openGraph: {
-    title: 'Licznik długość meta title i description',
+    title: 'Licznik długości meta title i description',
     description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
     url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
     type: 'website',
@@ -96,6 +96,17 @@ export default function Page() {
             Pamiętaj, że Google może w niektórych sytuacjach zamienić Twój opis na fragment treści ze strony, dlatego ważne informacje powinny pojawić się również w samej zawartości strony.
           </p>
         </SectionInfo>
+
+        <Gap size="sm" />
+
+        <SectionInfo
+          title="Potrzebujesz pełnej optymalizacji SEO dla swojej witryny?"
+          description="Możemy zająć się tym za Ciebie. Prześlij nam link do swojej strony a my powiemy co zrobić aby klienci mogli Cie łatwiej znaleźć"
+          btnOne="Umów rozmowę o SEO"
+          btnOneLink="/kontakt"
+          btnTwo="Sprawdź ofertę pozycjonowania"
+          btnTwoLink="/uslugi/marketing/pozycjonowanie-stron"
+        />
 
         <Gap size="sm" />
       </Wrapper>
