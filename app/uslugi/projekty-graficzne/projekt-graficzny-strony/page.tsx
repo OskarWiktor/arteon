@@ -5,7 +5,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -54,7 +54,12 @@ export default function OfferDesignXxxPage() {
     <>
       <HeroBanner
         title="Projekt graficzny strony"
-        description={<>Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Tworzymy makiety i layouty www zgodne z UX i SEO - estetyczne, czytelne i gotowe do wdrożenia.</>}
+        description={
+          <>
+            Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Zaprojektujemy layout Twojej strony tak, aby prowadził wzrok krok po kroku: od pierwszego wrażenia, przez ofertę, aż po kontakt
+            lub zakup.
+          </>
+        }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Realizacje"
@@ -63,26 +68,29 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
       <BenefitBelt
         items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
+          { icon: <RiLayoutLine />, label: 'Czytelny układ strony' },
+          { icon: <RiDeviceLine />, label: 'Desktop i mobile w standardzie' },
+          { icon: <RiCodeSSlashFill />, label: 'Projekt gotowy do wdrożenia' },
+          { icon: <RiBarChart2Fill />, label: 'Layout pod konwersję' },
         ]}
       />
+
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{ href: `/uslugi/projekty-graficzne/projekt-graficzny-strony`, label: 'Projekt graficzny strony' }}
         includeJsonLd
       />
+
       <Wrapper>
         <Gap size="xs" />
 
         <SectionInfo title="Co zyskujesz zamawiając projekt graficzny strony?">
           <p>
-            <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong> Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz materiałów - nawet
+            <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong> Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz materiałów – nawet
             <strong> ~75%</strong> wrażeń o wiarygodności wynika z jakości oprawy wizualnej
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
@@ -94,7 +102,7 @@ export default function OfferDesignXxxPage() {
 
           <p>
             <strong>Układ, hierarchia i czytelne CTA skracają drogę do decyzji.</strong> Użytkownik bez wysiłku znajduje to, czego szuka: ofertę, referencje i przyciski kontaktu. Spójny design
-            porządkuje treść i eliminuje zbędne pytania.
+            porządkuje treść, zmniejsza liczbę pytań i ułatwia rozmowę handlową.
           </p>
 
           <br />
@@ -107,6 +115,33 @@ export default function OfferDesignXxxPage() {
             <li>Wyjaśnia ofertę w prostych blokach i przykładach,</li>
             <li>Prowadzi do działania: kontakt, wycena, rezerwacja.</li>
           </ul>
+
+          <br />
+
+          <p>
+            Gotowy layout porządkuje też współpracę z deweloperem: zamiast ciągłych zmian „w trakcie kodowania” masz zatwierdzony projekt, do którego wszyscy się odnoszą. Mniej poprawek oznacza
+            krótszy czas wdrożenia i niższe koszty.
+          </p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Dla kogo jest projekt graficzny strony?" subtitle="Kiedy ma największy sens?">
+          <p>Projekt graficzny strony najbardziej opłaca się wtedy, gdy chcesz świadomie zaplanować każdy ekran, zamiast „składać” stronę z przypadkowych sekcji.</p>
+
+          <br />
+
+          <ul className="ml-5 list-disc space-y-2">
+            <li>Planujesz nową stronę lub redesign i chcesz najpierw zobaczyć gotowy layout, zanim zainwestujesz w wdrożenie.</li>
+            <li>Masz rozbudowaną ofertę i potrzebujesz jasnej ścieżki użytkownika: od wejścia na stronę do kontaktu lub zakupu.</li>
+            <li>Współpracujesz z deweloperem i chcesz przekazać mu konkretny projekt zamiast ogólnego briefu.</li>
+            <li>Chcesz uporządkować aktualną stronę: poprawić czytelność, nagłówki, sekcje i wezwań do działania.</li>
+            <li>Przygotowujesz landing page pod kampanie reklamowe i zależy Ci na jak najlepszym wykorzystaniu ruchu.</li>
+          </ul>
+
+          <br />
+
+          <p>Jeśli Twoja strona dziś „jakoś działa”, ale czujesz, że nie wykorzystuje potencjału – projekt graficzny jest dobrym krokiem przed kolejną inwestycją w reklamy czy pozycjonowanie.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -117,12 +152,12 @@ export default function OfferDesignXxxPage() {
           items={[
             {
               title: 'Przemyślany układ i estetyka',
-              description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie.</>,
+              description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie – od nagłówka po stopkę.</>,
               icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Responsywność i czytelność',
-              description: <>Projekt działa na komputerze i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
+              description: <>Projekt działa na komputerze, tablecie i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
               icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -158,7 +193,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów projekt graficzny strony"
-          description="Opisz branżę, zakres podstron i kluczowe funkcje. Na tej podstawie przygotujemy wycenę, termin i rekomendacje UX."
+          description="Opisz branżę, cel strony (leady, sprzedaż, edukacja), zakres podstron i kluczowe funkcje. Na tej podstawie przygotujemy wycenę, termin i rekomendacje UX."
           defaultSubject="Projekt graficzny strony"
         />
 
@@ -170,7 +205,7 @@ export default function OfferDesignXxxPage() {
           items={[
             {
               question: 'Ile kosztuje projekt graficzny strony?',
-              answer: 'Cena zależy głównie od liczby podstron. Po krótkim zapoznaniu z wymaganiami przedstawimy szczegółową wycenę dopasowaną do Twoich celów.',
+              answer: 'Cena zależy głównie od liczby podstron i poziomu złożoności projektu. Po krótkim zapoznaniu z wymaganiami przedstawimy szczegółową wycenę dopasowaną do Twoich celów.',
             },
             {
               question: 'Jak długo trwa przygotowanie projektu strony?',
@@ -178,27 +213,27 @@ export default function OfferDesignXxxPage() {
             },
             {
               question: 'Czy projekt graficzny strony obejmuje wersję mobilną?',
-              answer: 'Tak - każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu.',
+              answer: 'Tak – każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu na różnych ekranach.',
             },
             {
               question: 'Czy projekt graficzny uwzględnia SEO i UX?',
-              answer: 'Tak - łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
+              answer: 'Tak – łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
+              answer: 'Tak – w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
             },
             {
               question: 'W jakim formacie dostanę projekt?',
-              answer: 'Dostarczamy pliki w Figmie, gotowe do wdrożenia przez dewelopera. Możesz też zlecić nam realizację strony na podstawie projektu.',
+              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy też pomóc w bezpośredniej współpracy z deweloperem lub zająć się realizacją strony.',
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer: 'Tak - po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości.',
+              answer: 'Tak – po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości, a także rozwijać o kolejne podstrony na bazie przyjętego systemu.',
             },
             {
               question: 'Czy mogę zamówić tylko jedną podstronę lub landing page?',
-              answer: 'Tak - projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach lub kampaniach sprzedażowych.',
+              answer: 'Tak – projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach ofert lub kampaniach sprzedażowych.',
             },
           ]}
         />
@@ -209,9 +244,10 @@ export default function OfferDesignXxxPage() {
 
         <Gap size="sm" />
       </Wrapper>
+
       <CTABanner
         title="Daj stronie przewagę na starcie"
-        description="Stworzymy layout, który prowadzi wzrokiem i zwiększa sprzedaż."
+        description="Stworzymy layout, który prowadzi wzrokiem, porządkuje treść i zwiększa szansę na kontakt z Twoją firmą."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"

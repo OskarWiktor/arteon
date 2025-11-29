@@ -5,7 +5,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine } from 'react-icons/ri';
+import { RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -55,7 +55,10 @@ export default function OfferDesignXxxPage() {
       <HeroBanner
         title="Projekt identyfikacji wizualnej"
         description={
-          <>Spójny system wizualny zwiększa wiarygodność i rozpoznawalność. Projektujemy identyfikację: logo, kolory, typografia i materiały firmowe - gotowe do wdrożenia w całej firmie.</>
+          <>
+            Spójny system wizualny zwiększa wiarygodność i rozpoznawalność marki. Zaprojektujemy identyfikację: logo, kolory, typografię i materiały firmowe – tak, aby Twoja marka wyglądała
+            profesjonalnie w każdym kanale.
+          </>
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
@@ -65,27 +68,30 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
       <BenefitBelt
         items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
+          { icon: <RiPantoneLine />, label: 'Spójny obraz marki w każdym kanale' },
+          { icon: <RiBrushLine />, label: 'Projekt dopasowany do charakteru firmy' },
+          { icon: <RiBarChart2Fill />, label: 'System, który wspiera sprzedaż' },
+          { icon: <RiLightbulbFlashLine />, label: 'Identyfikacja oparta na strategii' },
         ]}
       />
+
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{ href: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, label: 'Projekt identyfikacji wizualnej' }}
         includeJsonLd
       />
+
       <Wrapper>
         <Gap size="xs" />
 
         <SectionInfo title="Co zyskujesz zamawiając identyfikację wizualną?">
           <p>
             <strong>Spójny system wizualny porządkuje każdy kontakt z Twoją marką.</strong> Firmy, które konsekwentnie trzymają identyfikację, notują średnio
-            <strong> 10-20% wyższe przychody</strong>
+            <strong> 10–20% wyższe przychody</strong>
             <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
@@ -99,7 +105,7 @@ export default function OfferDesignXxxPage() {
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
-            . Czytelna typografia i porządek wizualny ułatwiają decyzję o kontakcie.
+            . Czytelna typografia i porządek wizualny ułatwiają decyzję o kontakcie i współpracy.
           </p>
 
           <br />
@@ -109,7 +115,7 @@ export default function OfferDesignXxxPage() {
             <a href="https://www.xerox.com/en-us/insights/color" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
-            . Klient szybciej kojarzy, z kim rozmawia.
+            . Klient szybciej kojarzy, z kim rozmawia i łatwiej wraca do Twojej oferty.
           </p>
 
           <br />
@@ -120,8 +126,35 @@ export default function OfferDesignXxxPage() {
           <ul className="ml-5 list-disc">
             <li>Ujednolica komunikację w całej firmie,</li>
             <li>Przyspiesza tworzenie materiałów i zmniejsza liczbę poprawek,</li>
-            <li>Podnosi rozpoznawalność i ułatwia budowanie zaufania,</li>
+            <li>Podnosi rozpoznawalność i ułatwia budowanie zaufania.</li>
           </ul>
+
+          <br />
+
+          <p>
+            Zamiast za każdym razem wymyślać „jak to ma wyglądać”, korzystasz z gotowego systemu. Dzięki temu oszczędzasz czas swój i zespołu, a marka pozostaje spójna niezależnie od tego, kto
+            przygotowuje kolejne materiały.
+          </p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Dla kogo jest identyfikacja wizualna?" subtitle="Kiedy warto w nią zainwestować?">
+          <p>Projekt identyfikacji wizualnej szczególnie przydaje się wtedy, gdy chcesz świadomie ułożyć obraz marki na lata, a nie tylko zaprojektować pojedyncze logo czy wizytówkę.</p>
+
+          <br />
+
+          <ul className="ml-5 list-disc space-y-2">
+            <li>Zakładasz firmę i chcesz od początku zbudować spójny, profesjonalny wizerunek.</li>
+            <li>Masz już logo, ale materiały „żyją własnym życiem” i brakuje jednego kierunku dla całej komunikacji.</li>
+            <li>Planujesz stronę internetową, kampanie reklamowe lub wejście na nowy rynek i potrzebujesz wyraźnego, rozpoznawalnego stylu.</li>
+            <li>Twój zespół lub podwykonawcy często pytają „czy mogę użyć tego koloru / fontu?” – chcesz jasnych zasad, zamiast ciągłego ustalania detali.</li>
+            <li>Przygotowujesz markę ekspercką (np. gabinet, kancelaria, marka osobista) i zależy Ci na zaufaniu już przy pierwszym kontakcie.</li>
+          </ul>
+
+          <br />
+
+          <p>Jeśli masz poczucie, że Twoja marka „jest dobra w środku”, ale na zewnątrz nie wygląda jeszcze tak, jak powinna – identyfikacja wizualna jest naturalnym kolejnym krokiem.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -132,7 +165,7 @@ export default function OfferDesignXxxPage() {
           items={[
             {
               title: 'Spójny system marki',
-              description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały działały razem.</>,
+              description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały – online i offline – działały razem.</>,
               icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -142,12 +175,12 @@ export default function OfferDesignXxxPage() {
             },
             {
               title: 'Proste zasady stosowania',
-              description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie.</>,
+              description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie – także osobom nietechnicznym.</>,
               icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełna gotowość do druku i online',
-              description: <>Otrzymujesz komplet plików do codziennej pracy i wdrożeń bez dodatkowych przeróbek.</>,
+              description: <>Otrzymujesz komplet plików do codziennej pracy: wersje do druku, internetu i mediów społecznościowych.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -173,7 +206,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów identyfikację wizualną"
-          description="Napisz, jakiego zakresu identyfikacji potrzebujesz (logo, kolory, typografia, materiały) oraz czym się zajmujesz. Otrzymasz wycenę i harmonogram prac."
+          description="Napisz, w jakiej branży działasz, jakie materiały są dla Ciebie kluczowe (online i druk) oraz czy masz już logo. Przygotujemy propozycję zakresu, wycenę i harmonogram prac."
           defaultSubject="Identyfikacja wizualna"
         />
 
@@ -185,35 +218,41 @@ export default function OfferDesignXxxPage() {
           items={[
             {
               question: 'Ile kosztuje identyfikacja wizualna?',
-              answer: 'Cena zależy od zakresu prac: logo, paleta kolorów, typografia, materiały firmowe i brandbook. Po briefie otrzymasz indywidualną wycenę dopasowaną do potrzeb Twojej marki.',
+              answer:
+                'Cena zależy od zakresu prac: logo, paleta kolorów, typografia, materiały firmowe i ewentualny brandbook. Po krótkim briefie otrzymasz indywidualną wycenę dopasowaną do potrzeb Twojej marki.',
             },
             {
               question: 'Jak długo trwa stworzenie identyfikacji wizualnej?',
-              answer: 'Standardowo projekt trwa od 10 do 20 dni roboczych, w zależności od liczby elementów. Terminy zawsze ustalamy indywidualnie.',
+              answer:
+                'Standardowo projekt trwa od 10 do 20 dni roboczych, w zależności od liczby elementów i liczby rund poprawek. Dokładny harmonogram ustalamy indywidualnie na początku współpracy.',
             },
             {
               question: 'Co zawiera kompletna identyfikacja wizualna?',
-              answer: 'Zazwyczaj: logo, kolory, typografię, wzory wizytówek, papierów firmowych, teczek i grafik do social mediów. Możemy też rozszerzyć projekt o brandbook i szablony online.',
+              answer:
+                'Zazwyczaj: logo w kilku wariantach, paletę kolorów, typografię, wzory wizytówek, papierów firmowych, teczek oraz podstawowe grafiki do social mediów. Na życzenie rozszerzamy zakres o brandbook i dodatkowe szablony.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak - każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją marki.',
+              answer:
+                'Tak – każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją Twojej marki i komfortowy w codziennym użyciu.',
             },
             {
               question: 'Czy mogę zamówić samo logo bez całego systemu?',
-              answer: 'Tak - projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną.',
+              answer: 'Tak – projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną, opartą na już istniejącym znaku.',
             },
             {
               question: 'Czy dostanę pliki gotowe do druku i internetu?',
-              answer: 'Tak - przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia.',
+              answer: 'Tak – przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia, aby ułatwić wdrożenie w firmie.',
             },
             {
               question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
-              answer: 'Tak - przedstawiamy propozycje stylistyczne i moodboardy, które pomogą Ci określić kierunek wizualny marki.',
+              answer:
+                'Tak – przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej branży i grupy docelowej.',
             },
             {
               question: 'Czy mogę zamówić brandbook do identyfikacji?',
-              answer: 'Tak - opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia. To podstawa spójnej komunikacji w firmie.',
+              answer:
+                'Tak – opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
             },
           ]}
         />
@@ -224,9 +263,10 @@ export default function OfferDesignXxxPage() {
 
         <Gap size="sm" />
       </Wrapper>
+
       <CTABanner
         title="Uspójnij obraz marki"
-        description="Zbudujemy system, który wzmacnia rozpoznawalność i wiarygodność."
+        description="Zbudujemy system, który wzmacnia rozpoznawalność, ułatwia codzienną pracę i zwiększa zaufanie do Twojej firmy."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"

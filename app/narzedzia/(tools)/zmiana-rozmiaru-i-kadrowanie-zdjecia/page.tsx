@@ -67,17 +67,16 @@ export default function ImageResizerPage() {
         <Gap size="sm" />
       </Wrapper>
 
-        <CTABanner
-          title="Potrzebujesz dodatkowej pomocy przy tworzeniu odpowiednich grafik?"
-          description="Napisz do nas i opowiedz o tym co chcesz stworzyć, przygotujemy dedykowaną ofertę dzięki której zaoszczędzisz czas"
-          btnOne="Umów rozmowę"
-          btnOneLink="/kontakt"
-          btnTwo="Sprawdź nasze usługi graficzne"
-          btnTwoLink="/uslugi/projekty-graficzne"
-                    backgroundImage='https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp'
-          overlay='black'
-        />
-
+      <CTABanner
+        title="Potrzebujesz dodatkowej pomocy przy tworzeniu odpowiednich grafik?"
+        description="Napisz do nas i opowiedz o tym co chcesz stworzyć, przygotujemy dedykowaną ofertę dzięki której zaoszczędzisz czas"
+        btnOne="Umów rozmowę"
+        btnOneLink="/kontakt"
+        btnTwo="Sprawdź nasze usługi graficzne"
+        btnTwoLink="/uslugi/projekty-graficzne"
+        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+      />
     </>
   );
 }

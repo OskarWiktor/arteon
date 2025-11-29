@@ -51,7 +51,6 @@ const SERVICES = [
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
   { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
-
   { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-social-media' },
   { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
   { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
