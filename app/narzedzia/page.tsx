@@ -4,7 +4,7 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine } from 'react-icons/ri';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla właścicieli stron i firm',
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: 'Darmowe narzędzia online dla właścicieli stron i firm',
     description:
-      'Darmowe narzędzia online dla właścicieli stron i marek. Konwertery obrazów, favicon, licznik meta tagów i inne dodatki, które pomagają przyspieszyć witrynę, poprawić SEO i lepiej planować działania marketingowe.',
+      'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description oraz tester kontrastu kolorów zgodny z WCAG 2.1.',
     url: 'https://www.arteonagency.pl/narzedzia',
     type: 'website',
     images: [
@@ -86,6 +86,16 @@ const toolsJsonLd = {
       description:
         'Darmowy generator stopki mailowej HTML po polsku. Dodaj dane kontaktowe, link CTA i profile social mediów, a następnie skopiuj gotowy kod podpisu do Gmaila, Outlooka i innych klientów pocztowych.',
       url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
+      applicationCategory: 'UtilityApplication',
+      operatingSystem: 'Any',
+    },
+    {
+      '@type': 'WebApplication',
+      position: 6,
+      name: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
+      description:
+        'Tester kontrastu kolorów online zgodny z WCAG 2.1. Oblicza współczynnik kontrastu między dwoma kolorami i pokazuje, czy para spełnia wymagania poziomów AA i AAA dla zwykłego i dużego tekstu oraz elementów UI.',
+      url: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -178,6 +188,23 @@ export default function ToolsIndexPage() {
                   <p>Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych</p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-stopki-mailowej">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiContrast2Line className="h-8 w-8" />,
+              title: 'Tester kontrastu kolorów WCAG',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Sprawdź, czy kolory na Twojej stronie spełniają wymagania <strong>WCAG 2.1</strong>. Wpisz kolory tekstu i tła, zobacz współczynnik kontrastu i od razu sprawdź poziomy{' '}
+                    <strong>AA</strong> i <strong>AAA</strong> dla tekstu, nagłówków oraz ikon i elementów UI.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/tester-kontrastu-kolorow-wcag">
                       Otwórz narzędzie
                     </Button>
                   </div>
