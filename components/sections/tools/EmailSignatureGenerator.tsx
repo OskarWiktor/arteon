@@ -6,9 +6,11 @@ import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, Ri
 
 type CopyStatus = 'idle' | 'success' | 'error';
 type FontSizeOption = 'small' | 'normal' | 'large';
+type MarginOption = 'small' | 'medium' | 'large';
+type CtaRadiusOption = 'none' | 'small' | 'full';
 type SocialKey = 'linkedin' | 'instagram' | 'facebook' | 'tiktok' | 'youtube' | 'x';
 type ActivePanel = 'identity' | 'cta' | 'social' | 'appearance' | 'legal';
-type LayoutType = 'standard' | 'accent-bar';
+type LayoutType = 'standard' | 'accent-bar' | 'top-banner' | 'label-column' | 'centered';
 
 interface SignatureConfig {
   fullName: string;
@@ -34,6 +36,8 @@ interface StyleConfig {
   backgroundColor: string;
   fontFamily: string;
   fontSize: FontSizeOption;
+  padding: MarginOption;
+  ctaRadius: CtaRadiusOption;
   showDivider: boolean;
 }
 
@@ -83,6 +87,8 @@ const DEFAULT_STYLE: StyleConfig = {
   backgroundColor: '#ffffff',
   fontFamily: 'Arial, sans-serif',
   fontSize: 'normal',
+  padding: 'medium',
+  ctaRadius: 'full',
   showDivider: true,
 };
 
@@ -98,6 +104,24 @@ const FONT_SIZE_MAP: Record<FontSizeOption, string> = {
   small: '12px',
   normal: '13px',
   large: '14px',
+};
+
+const PADDING_NUM_MAP: Record<MarginOption, number> = {
+  small: 8,
+  medium: 16,
+  large: 24,
+};
+
+const PADDING_MAP: Record<MarginOption, string> = {
+  small: '8px',
+  medium: '16px',
+  large: '24px',
+};
+
+const CTA_RADIUS_MAP: Record<CtaRadiusOption, string> = {
+  none: '0px',
+  small: '6px',
+  full: '999px',
 };
 
 const THEME_PRESETS: ThemePreset[] = [
@@ -159,6 +183,11 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
   const textColor = style.textColor || '#111827';
   const backgroundColor = style.backgroundColor || '#ffffff';
 
+  const paddingPx = PADDING_NUM_MAP[style.padding] ?? 16;
+  const paddingAll = PADDING_MAP[style.padding] ?? '16px';
+  const paddingLeftAccent = `${paddingPx + 8}px`;
+  const ctaBorderRadius = CTA_RADIUS_MAP[style.ctaRadius] ?? '999px';
+
   const hasTopLine = config.topLine.trim().length > 0;
   const hasAddress = config.address.trim().length > 0;
   const hasExtraLine = config.extraLine.trim().length > 0;
@@ -218,7 +247,7 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
           <td style="padding-top:10px;">
             <a href="${escapeHtml(
               normalizeUrl(config.ctaUrl),
-            )}" style="display:inline-block;padding:6px 14px;border-radius:999px;background-color:${accentColor};color:#ffffff;text-decoration:none;font-size:${baseFontSize};">
+            )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:#ffffff;text-decoration:none;font-size:${baseFontSize};">
               ${escapeHtml(config.ctaLabel.trim())}
             </a>
           </td>
@@ -308,10 +337,13 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
       </tr>`
     : '';
 
-  const innerRows = `
+  const headerBlock = `
     ${topLineHtml}
     ${nameRowHtml}
     ${titleCompanyHtml}
+  `;
+
+  const contentBlock = `
     ${extraLineHtml}
     ${addressHtml}
     ${contactHtml}
@@ -322,13 +354,19 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     ${legalHtml}
   `;
 
+  const innerRows = `
+    ${headerBlock}
+    ${contentBlock}
+  `;
+
   let layoutWrapper = '';
 
+  // STANDARD
   if (layout === 'standard') {
     layoutWrapper = `
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
         <tr>
-          <td style="padding:0;vertical-align:top;">
+          <td style="padding:${paddingAll};vertical-align:top;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
               ${innerRows}
             </table>
@@ -336,12 +374,145 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         </tr>
       </table>
     `;
-  } else if (layout === 'accent-bar') {
+  }
+  // ACCENT-BAR
+  else if (layout === 'accent-bar') {
     layoutWrapper = `
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
         <tr>
-          <td style="padding:0;border-left:4px solid ${accentColor};padding-left:12px;">
+          <td style="padding:${paddingAll};border-left:4px solid ${accentColor};padding-left:${paddingLeftAccent};vertical-align:top;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+              ${innerRows}
+            </table>
+          </td>
+        </tr>
+      </table>
+    `;
+  }
+  // TOP-BANNER
+  else if (layout === 'top-banner') {
+    const bannerTopLine = hasTopLine ? `<div style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;opacity:0.9;">${escapeHtml(config.topLine.trim())}</div>` : '';
+    const bannerName = `<div style="font-size:15px;font-weight:bold;margin-top:2px;">${escapeHtml(config.fullName || '')}</div>`;
+    const bannerTitleCompany =
+      hasJobTitle || hasCompany
+        ? `<div style="font-size:${baseFontSize};opacity:0.95;margin-top:2px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${
+            hasCompany ? escapeHtml(config.company.trim()) : ''
+          }</div>`
+        : '';
+
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          <td style="padding:${paddingAll};vertical-align:top;">
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};width:100%;">
+              <tr>
+                <td style="padding:0 0 8px 0;">
+                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;">
+                    <tr>
+                      <td style="background-color:${accentColor};color:#ffffff;padding:8px 12px;">
+                        ${bannerTopLine}
+                        ${bannerName}
+                        ${bannerTitleCompany}
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:4px;">
+                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+                    ${contentBlock}
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    `;
+  }
+  // LABEL-COLUMN
+  else if (layout === 'label-column') {
+    let labelRows = '';
+
+    if (config.phone.trim()) {
+      labelRows += `
+        <tr>
+          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${telLabel}:</td>
+          <td style="padding:2px 0 2px 0;">
+            <a href="tel:${escapeHtml(formatPhone(config.phone))}" style="color:${accentColor};text-decoration:none;">${escapeHtml(formatPhone(config.phone))}</a>
+          </td>
+        </tr>
+      `;
+    }
+    if (config.email.trim()) {
+      labelRows += `
+        <tr>
+          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${mailLabel}:</td>
+          <td style="padding:2px 0 2px 0;">
+            <a href="mailto:${escapeHtml(config.email.trim())}" style="color:${accentColor};text-decoration:none;">${escapeHtml(config.email.trim())}</a>
+          </td>
+        </tr>
+      `;
+    }
+    if (config.website.trim()) {
+      const normalized = normalizeUrl(config.website);
+      labelRows += `
+        <tr>
+          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${webLabel}:</td>
+          <td style="padding:2px 0 2px 0;">
+            <a href="${escapeHtml(normalized)}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a>
+          </td>
+        </tr>
+      `;
+    }
+    if (hasAddress) {
+      labelRows += `
+        <tr>
+          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">Adres:</td>
+          <td style="padding:2px 0 2px 0;color:${textColor};font-size:${baseFontSize};">
+            ${formatMultiline(config.address.trim())}
+          </td>
+        </tr>
+      `;
+    }
+
+    const labelTableHtml = labelRows
+      ? `<tr>
+          <td style="padding:4px 0 4px 0;">
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};">
+              ${labelRows}
+            </table>
+          </td>
+        </tr>`
+      : '';
+
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          <td style="padding:${paddingAll};vertical-align:top;">
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+              ${headerBlock}
+              ${extraLineHtml}
+              ${labelTableHtml}
+              ${socialsHtml}
+              ${ctaHtml}
+              ${dividerHtml}
+              ${formalHtml}
+              ${legalHtml}
+            </table>
+          </td>
+        </tr>
+      </table>
+    `;
+  }
+  // CENTERED
+  else if (layout === 'centered') {
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          <td style="padding:${paddingAll};vertical-align:top;">
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};text-align:center;">
               ${innerRows}
             </table>
           </td>
@@ -465,11 +636,11 @@ export default function EmailSignatureGenerator() {
     <div className="space-y-4">
       <section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-black/10 bg-white/80 p-4 shadow-sm">
         <div className="flex flex-wrap items-center gap-3">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <RiLayout3Line className="text-base text-neutral-600" />
             <span className="text-xs! font-semibold text-[#5e5e5e] uppercase">Układ stopki</span>
             <div className="flex flex-wrap gap-1">
-              {(['standard', 'accent-bar'] as LayoutType[]).map((lt) => (
+              {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered'] as LayoutType[]).map((lt) => (
                 <button
                   key={lt}
                   type="button"
@@ -480,11 +651,15 @@ export default function EmailSignatureGenerator() {
                 >
                   {lt === 'standard' && 'Standard'}
                   {lt === 'accent-bar' && 'Pasek akcentu'}
+                  {lt === 'top-banner' && 'Pasek u góry'}
+                  {lt === 'label-column' && 'Etykiety z lewej'}
+                  {lt === 'centered' && 'Wyśrodkowany'}
                 </button>
               ))}
             </div>
           </div>
         </div>
+        <p className="text-xs! text-[#5e5e5e]">Wkrótce kolejne gotowe układy.</p>
       </section>
 
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
@@ -502,7 +677,6 @@ export default function EmailSignatureGenerator() {
             <PanelButton id="legal" current={activePanel} onClick={setActivePanel} icon={<RiFileTextLine className="text-base" />} label="Klauzula / RODO" />
           </div>
 
-          {/* bez dodatkowego boxa - same sekcje */}
           <div className="mt-3 space-y-4 text-sm!">
             {activePanel === 'identity' && (
               <div className="space-y-3">
@@ -833,6 +1007,46 @@ export default function EmailSignatureGenerator() {
                   </div>
                 </div>
 
+                <div>
+                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Margines wewnętrzny stopki</p>
+                  <div className="flex flex-wrap gap-2">
+                    {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
+                      <button
+                        key={option}
+                        type="button"
+                        onClick={() => handleStyleChange('padding', option)}
+                        className={`rounded-full border px-3 py-1 text-xs! font-medium ${
+                          styleConfig.padding === option ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
+                        }`}
+                      >
+                        {option === 'small' && '8 px'}
+                        {option === 'medium' && '16 px'}
+                        {option === 'large' && '24 px'}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Zaokrąglenie przycisku CTA</p>
+                  <div className="flex flex-wrap gap-2">
+                    {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
+                      <button
+                        key={option}
+                        type="button"
+                        onClick={() => handleStyleChange('ctaRadius', option)}
+                        className={`rounded-full border px-3 py-1 text-xs! font-medium ${
+                          styleConfig.ctaRadius === option ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
+                        }`}
+                      >
+                        {option === 'none' && 'Brak'}
+                        {option === 'small' && 'Lekkie'}
+                        {option === 'full' && 'Pełne'}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 <div className="flex items-center gap-2">
                   <input
                     id="divider-toggle"
@@ -872,9 +1086,11 @@ export default function EmailSignatureGenerator() {
             </div>
           </div>
 
-          <div className="flex flex-1 items-stretch rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
-            <div className="mx-auto flex w-full max-w-[640px] items-stretch rounded-xl border border-neutral-200 bg-white px-4 py-4 text-sm!">
-              <div className="w-full" dangerouslySetInnerHTML={{ __html: signatureHtml }} />
+          <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
+            <div className="mx-auto max-w-full overflow-x-auto">
+              <div className="inline-block rounded-xl border border-neutral-200 bg-white px-4 py-4 text-sm!">
+                <div dangerouslySetInnerHTML={{ __html: signatureHtml }} />
+              </div>
             </div>
           </div>
 
