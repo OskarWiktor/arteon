@@ -24,7 +24,9 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
   description: 'Projekt wizytówki firmowej, która wyjaśnia ofertę w kilka sekund i buduje zaufanie od pierwszego spojrzenia. Pliki źródłowe i gotowe do druku.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-wizytowki' },
+  alternates: {
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
+  },
   openGraph: {
     title: 'Projekt wizytówki | Arteon',
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
@@ -79,7 +81,10 @@ export default function OfferDesignWizytowkaPage() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-wizytowki`, label: 'Projekt wizytówki' }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-wizytowki`,
+          label: 'Projekt wizytówki',
+        }}
         includeJsonLd
       />
 

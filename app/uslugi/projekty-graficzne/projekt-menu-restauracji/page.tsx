@@ -23,13 +23,13 @@ import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt menu restauracji | Arteon',
-  description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
+  description: 'Projektujemy menu dla restauracji, kawiarni i barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
   alternates: {
     canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
   },
   openGraph: {
     title: 'Projekt menu restauracji | Arteon',
-    description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
+    description: 'Projektujemy menu dla restauracji, kawiarni i barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
   },
@@ -42,7 +42,7 @@ function ServiceSchema() {
     baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
     serviceName: 'Projekt menu restauracji',
-    description: 'Projekt graficzny menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
+    description: 'Projekt graficzny menu dla restauracji, kawiarni i barów – eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -60,7 +60,7 @@ export default function OfferDesignMenuPage() {
       <HeroBanner
         title="Projekt menu restauracji"
         description={
-          <>Stworzymy dla Ciebie estetyczne i czytelne menu restauracji, kawiarni lub baru - spójne z klimatem lokalu i Twoją marką. Karta, która pomaga gościom wybrać, a Tobie sprzedawać.</>
+          <>Stworzymy dla Ciebie estetyczne i czytelne menu restauracji, kawiarni lub baru – spójne z klimatem lokalu i Twoją marką. Karta, która pomaga gościom wybrać, a Tobie sprzedawać.</>
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
@@ -73,10 +73,10 @@ export default function OfferDesignMenuPage() {
 
       <BenefitBelt
         items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
+          { icon: <RiPencilRuler2Line />, label: 'Menu dopasowane do klimatu lokalu' },
+          { icon: <RiBrushLine />, label: 'Estetyka, która podnosi apetyt' },
+          { icon: <RiBarChart2Fill />, label: 'Układ, który wspiera sprzedaż' },
+          { icon: <RiLightbulbFlashLine />, label: 'Psychologia wyboru dań' },
         ]}
       />
 
@@ -95,8 +95,8 @@ export default function OfferDesignMenuPage() {
 
         <SectionInfo title="Dlaczego warto zainwestować w profesjonalne menu?">
           <p>
-            <strong>Menu to najważniejszy materiał sprzedażowy w gastronomii.</strong> Dobrze zaprojektowana karta dań prowadzi gościa krok po kroku - od pierwszego spojrzenia po finalne zamówienie.
-            Estetyczna, czytelna forma ułatwia wybór i ogranicza „paraliż decyzyjny”.
+            <strong>Menu to najważniejszy materiał sprzedażowy w gastronomii.</strong> Dobrze zaprojektowana karta dań prowadzi gościa krok po kroku – od pierwszego spojrzenia po finalne zamówienie.
+            Estetyczna, czytelna formа ułatwia wybór i ogranicza „paraliż decyzyjny”.
           </p>
 
           <br />
@@ -126,12 +126,12 @@ export default function OfferDesignMenuPage() {
           items={[
             {
               title: 'Układ dopasowany do oferty',
-              description: <>Projektujemy logiczne sekcje - przystawki, dania główne, napoje, desery - z czytelną hierarchią, która ułatwia podjęcie decyzji i kieruje wzrok na kluczowe pozycje.</>,
+              description: <>Projektujemy logiczne sekcje – przystawki, dania główne, napoje, desery – z czytelną hierarchią, która ułatwia podjęcie decyzji i kieruje wzrok na kluczowe pozycje.</>,
               icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z klimatem lokalu',
-              description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji - nowoczesnego, klasycznego, rustykalnego czy street foodowego.</>,
+              description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji – nowoczesnego, klasycznego, rustykalnego czy street foodowego.</>,
               icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -208,7 +208,7 @@ export default function OfferDesignMenuPage() {
             {
               name: 'Pakiet Standard - pełna karta dań i napojów',
               price: 'wycena indywidualna',
-              description: 'Dla restauracji, które chcą spójnej karty dań, napojów i deserów - np. w formie składanej.',
+              description: 'Dla restauracji, które chcą spójnej karty dań, napojów i deserów – np. w formie składanej.',
               features: [
                 'Wszystko z pakietu Start, a dodatkowo:',
                 'Projekt wielostronicowej lub składanej karty (np. A3 składane na pół)',
@@ -246,7 +246,7 @@ export default function OfferDesignMenuPage() {
         <SectionSteps
           title="Jak jeszcze możesz wzmocnić wizerunek swojego lokalu?"
           subtitle="Zobacz też"
-          description="Menu to centrum komunikacji w lokalu. Jeszcze lepiej działa, gdy otacza je spójny system materiałów - od ulotek po social media."
+          description="Menu to centrum komunikacji w lokalu. Jeszcze lepiej działa, gdy otacza je spójny system materiałów – od ulotek po social media."
           items={[
             {
               icon: <RiArticleLine className="h-8 w-8" />,
@@ -296,7 +296,7 @@ export default function OfferDesignMenuPage() {
 
         <ContactForm
           title="Zamów projekt menu dla swojego lokalu"
-          description="Opisz rodzaj lokalu (restauracja, bistro, kawiarnia, bar), liczbę pozycji w menu oraz format, który Cię interesuje. Możesz dodać aktualną kartę w załączniku - na tej podstawie przygotujemy wycenę i propozycję układu."
+          description="Opisz rodzaj lokalu (restauracja, bistro, kawiarnia, bar), liczbę pozycji w menu oraz format, który Cię interesuje. Możesz dodać aktualną kartę w załączniku – na tej podstawie przygotujemy wycenę i propozycję układu."
           defaultSubject="Projekt menu restauracji"
         />
 
@@ -313,19 +313,19 @@ export default function OfferDesignMenuPage() {
             },
             {
               question: 'Czy mogę otrzymać wersję do publikacji online?',
-              answer: 'Tak - przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie, w social mediach oraz do wykorzystania w kodach QR.',
+              answer: 'Tak – przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie, w social mediach oraz do wykorzystania w kodach QR.',
             },
             {
               question: 'Czy możliwe jest przygotowanie wersji wielojęzycznej menu?',
-              answer: 'Tak - możemy zaprojektować menu w dwóch wersjach językowych lub w jednej karcie z kilkoma językami, przy zachowaniu czytelności i porządku.',
+              answer: 'Tak – możemy zaprojektować menu w dwóch wersjach językowych lub w jednej karcie z kilkoma językami, przy zachowaniu czytelności i porządku.',
             },
             {
               question: 'Jak długo trwa realizacja projektu?',
-              answer: 'Zazwyczaj 3-5 dni roboczych przy standardowej karcie. Przy rozbudowanych menu z wieloma pozycjami i językami termin ustalamy indywidualnie.',
+              answer: 'Zazwyczaj 3–5 dni roboczych przy standardowej karcie. Przy rozbudowanych menu z wieloma pozycjami i językami termin ustalamy indywidualnie.',
             },
             {
               question: 'Czy mogę zlecić późniejszą aktualizację menu?',
-              answer: 'Tak - oferujemy aktualizacje sezonowe oraz modyfikacje cen czy składów. Na życzenie przygotowujemy także pliki źródłowe, które umożliwiają samodzielną edycję.',
+              answer: 'Tak – oferujemy aktualizacje sezonowe oraz modyfikacje cen czy składów. Na życzenie przygotowujemy także pliki źródłowe, które umożliwiają samodzielną edycję.',
             },
           ]}
         />
@@ -339,7 +339,7 @@ export default function OfferDesignMenuPage() {
 
       <CTABanner
         title="Zaprojektuj menu, które zapamiętają Twoi klienci"
-        description="Profesjonalny projekt menu restauracyjnego - estetyka, czytelność i emocje, które zwiększają sprzedaż."
+        description="Profesjonalny projekt menu restauracyjnego – estetyka, czytelność i emocje, które zwiększają sprzedaż."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"

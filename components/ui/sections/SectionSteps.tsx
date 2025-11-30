@@ -109,7 +109,7 @@ export default function SectionSteps({
 
         {description && <p className={`reveal-animation pt-3 pb-2 ${toneMutedClass}`}>{description}</p>}
 
-        <ol className={`mt-4 grid auto-rows-fr grid-cols-1 gap-4 md:mt-6 lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
+        <ol className={`mt-4 grid grid-cols-1 gap-4 md:mt-6 md:auto-rows-fr lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
           {items.map(({ icon, imageSrc, imageAlt, topImageSrc, topImageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
             const hasVisual = showIndex || icon || imageSrc;
 

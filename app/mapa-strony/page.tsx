@@ -4,15 +4,51 @@ import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+import { articles } from '@/data/pl/blog.json';
+import { projects } from '@/data/pl/projects.json';
+
 const BASE_URL = 'https://www.arteonagency.pl';
 
 export const metadata: Metadata = {
   title: 'Mapa strony | Arteon',
-  description: 'Przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, informacje.',
+  description: 'Przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
   alternates: { canonical: `${BASE_URL}/mapa-strony` },
 };
 
 type NavItem = { title: string; href: string; children?: NavItem[] };
+
+type Article = {
+  slug: string;
+  title: string;
+  category?: string | string[];
+};
+
+type Project = {
+  slug: string;
+  title: string;
+};
+
+const GRAPHIC_SERVICES_SOURCE = [
+  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
+  { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne/projekt-ulotki' },
+  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
+  { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
+  { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
+  { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
+  { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
+  { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
+  { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
+  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-social-media' },
+  { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
+  { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
+  { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
+  { name: 'Projekt menu restauracji', path: '/uslugi/projekty-graficzne/projekt-menu-restauracji' },
+];
+
+const GRAPHIC_SERVICES: NavItem[] = GRAPHIC_SERVICES_SOURCE.map((s) => ({
+  title: s.name,
+  href: s.path,
+}));
 
 const services: NavItem[] = [
   { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
@@ -21,17 +57,7 @@ const services: NavItem[] = [
   {
     href: '/uslugi/projekty-graficzne',
     title: 'Projekty graficzne',
-    children: [
-      { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony' },
-      { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Projekt identyfikacji wizualnej' },
-      { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Projekt katalogu' },
-      { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Projekt logo' },
-      { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Projekt odzieży firmowej' },
-      { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Projekt papieru firmowego' },
-      { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Projekt teczki ofertowej' },
-      { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Projekt ulotki' },
-      { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Projekt wizytówki' },
-    ],
+    children: GRAPHIC_SERVICES,
   },
   { href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' },
   {
@@ -45,30 +71,68 @@ const services: NavItem[] = [
   },
 ];
 
-const portfolioIndex = { title: 'Wszystkie realizacje', href: '/realizacje' };
-const portfolioItems: NavItem[] = [
-  // { title: 'Nazwa projektu 1', href: '/realizacje/nazwa-projektu-1' },
-];
+const portfolioIndex: NavItem = { title: 'Wszystkie realizacje', href: '/realizacje' };
 
-const blogIndex = { title: 'Wszystkie artykuły', href: '/edukacja' };
+const portfolioItems: NavItem[] = (projects as Project[]).map((p) => ({
+  title: p.title,
+  href: `/realizacje/${p.slug}`,
+}));
 
-const blogItems: NavItem[] = [
-  //{ title: 'Wszystkie artykuły', href: '/edukacja' },
+function getArticleUrl(article: Article): string {
+  return `/edukacja/${article.slug}`;
+}
+
+function slugifyCategory(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');
+}
+
+const blogCategories: NavItem[] = buildBlogCategoriesFromArticles(articles as Article[]);
+
+const blogArticleItems: NavItem[] = (articles as Article[]).map((a) => ({
+  title: a.title,
+  href: getArticleUrl(a),
+}));
+
+const tools: NavItem[] = [
+  { title: 'Konwerter JPG/PNG na WebP', href: '/narzedzia/jpg-png-na-webp-bez-limitu' },
+  { title: 'Zmiana rozmiaru i kadrowanie zdjęcia', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia' },
+  { title: 'Generator favicon online', href: '/narzedzia/darmowy-generator-favicon-ico' },
+  { title: 'Licznik długości meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
+  { title: 'Darmowy generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
+  { title: 'Tester kontrastu kolorów WCAG', href: '/narzedzia/tester-kontrastu-kolorow-wcag' },
+  { title: 'Generator palet kolorów online', href: '/narzedzia/generator-palet-kolorow-online' },
 ];
 
 const infoPages: NavItem[] = [
-  { title: 'Strona Główna', href: '/' },
+  { title: 'Strona główna', href: '/' },
+  { title: 'Usługi', href: '/uslugi' },
+  { title: 'Realizacje', href: '/realizacje' },
+  { title: 'Edukacja', href: '/edukacja' },
+  { title: 'Narzędzia', href: '/narzedzia' },
   { title: 'O nas', href: '/o-nas' },
   { title: 'Kontakt', href: '/kontakt' },
   { title: 'Polityka prywatności', href: '/polityka-prywatnosci' },
   { title: 'Regulamin świadczenia usług', href: '/regulamin' },
+  { title: 'Ustawienia cookies', href: '/ustawienia-cookies' },
+  { title: 'Mapa strony', href: '/mapa-strony' },
 ];
 
 export default function SitemapPage() {
   const showAllPortfolio = portfolioItems.length > 0 && portfolioItems.length <= 40;
-  const showAllArticles = blogItems.length > 0 && blogItems.length <= 40;
 
-  const jsonLd = buildJsonLd({ services, portfolioItems, infoPages });
+  const jsonLd = buildJsonLd({
+    services,
+    portfolioItems,
+    infoPages,
+    blogCategories,
+    blogArticleItems,
+    tools,
+  });
 
   return (
     <>
@@ -96,7 +160,7 @@ export default function SitemapPage() {
               </Link>
             </p>
             {showAllPortfolio ? (
-              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              <ul className="mt-2 space-y-2">
                 {portfolioItems.map((item) => (
                   <li key={item.href}>
                     <Link href={item.href} className="underline-offset-4 hover:underline">
@@ -112,21 +176,30 @@ export default function SitemapPage() {
 
           <SectionInfo title="Edukacja">
             <p>
-              <Link href={blogIndex.href} className="font-medium underline-offset-4 hover:underline">
-                {blogIndex.title}
+              <Link href="/edukacja" className="font-medium underline-offset-4 hover:underline">
+                Wszystkie artykuły
               </Link>
             </p>
-            {showAllArticles ? (
-              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                {blogItems.map((item) => (
-                  <li key={item.href}>
-                    <Link href={item.href} className="underline-offset-4 hover:underline">
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ) : null}
+            <NestedList items={blogCategories} />
+          </SectionInfo>
+
+          <Gap variant="line" size="sm" />
+
+          <SectionInfo title="Narzędzia">
+            <p>
+              <Link href="/narzedzia" className="font-medium underline-offset-4 hover:underline">
+                Wszystkie narzędzia
+              </Link>
+            </p>
+            <ul className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {tools.map((tool) => (
+                <li key={tool.href}>
+                  <Link href={tool.href} className="underline-offset-4 hover:underline">
+                    {tool.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
@@ -148,7 +221,7 @@ export default function SitemapPage() {
 
         <script
           type="application/ld+json"
-          // eslint-disable-next-line react/no-danger -- JSON-LD structured data requires dangerouslySetInnerHTML
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Wrapper>
@@ -168,7 +241,7 @@ function NestedList({ items }: { items: NavItem[] }) {
             <ul className="mt-1 ml-5 space-y-1 text-sm">
               {item.children.map((child) => (
                 <li key={child.href}>
-                  <Link href={item.href} className="font-medium underline-offset-4 hover:underline">
+                  <Link href={child.href} className="underline-offset-4 hover:underline">
                     {child.title}
                   </Link>
                 </li>
@@ -194,8 +267,52 @@ function toListElements(arr: NavItem[]) {
   }));
 }
 
-function buildJsonLd({ services, portfolioItems, infoPages }: { services: NavItem[]; portfolioItems: NavItem[]; infoPages: NavItem[] }) {
+function buildBlogCategoriesFromArticles(articles: Article[]): NavItem[] {
+  const categoryMap = new Map<string, NavItem>();
+
+  for (const article of articles) {
+    const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : ['Inne'];
+
+    for (const catName of categories) {
+      const slug = slugifyCategory(catName);
+      const key = slug;
+
+      if (!categoryMap.has(key)) {
+        categoryMap.set(key, {
+          title: catName,
+          href: `/edukacja/${slug}`,
+          children: [],
+        });
+      }
+
+      const categoryItem = categoryMap.get(key)!;
+      categoryItem.children!.push({
+        title: article.title,
+        href: getArticleUrl(article),
+      });
+    }
+  }
+
+  return Array.from(categoryMap.values()).sort((a, b) => a.title.localeCompare(b.title, 'pl'));
+}
+
+function buildJsonLd({
+  services,
+  portfolioItems,
+  infoPages,
+  blogCategories,
+  blogArticleItems,
+  tools,
+}: {
+  services: NavItem[];
+  portfolioItems: NavItem[];
+  infoPages: NavItem[];
+  blogCategories: NavItem[];
+  blogArticleItems: NavItem[];
+  tools: NavItem[];
+}) {
   const servicesChildren = services.flatMap((s) => s.children ?? []);
+
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -216,6 +333,30 @@ function buildJsonLd({ services, portfolioItems, infoPages }: { services: NavIte
         '@id': `${BASE_URL}/#sitemap-uslugi`,
         name: 'Mapa strony - Usługi',
         itemListElement: toListElements([...services, ...servicesChildren]),
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        '@id': `${BASE_URL}/#nav-edukacja`,
+        name: 'Edukacja',
+        url: `${BASE_URL}/edukacja`,
+      },
+      {
+        '@type': 'ItemList',
+        '@id': `${BASE_URL}/#sitemap-edukacja`,
+        name: 'Mapa strony - Edukacja',
+        itemListElement: toListElements([{ title: 'Edukacja', href: '/edukacja' }, ...blogCategories, ...blogArticleItems]),
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        '@id': `${BASE_URL}/#nav-narzedzia`,
+        name: 'Narzędzia',
+        url: `${BASE_URL}/narzedzia`,
+      },
+      {
+        '@type': 'ItemList',
+        '@id': `${BASE_URL}/#sitemap-narzedzia`,
+        name: 'Mapa strony - Narzędzia',
+        itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools]),
       },
       {
         '@type': 'ItemList',

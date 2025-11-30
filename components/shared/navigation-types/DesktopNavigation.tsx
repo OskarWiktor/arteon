@@ -25,6 +25,12 @@ import {
   RiLayoutLine,
   RiCoupon2Line,
   RiRestaurant2Line,
+  RiImageEditLine,
+  RiCropLine,
+  RiAppsLine,
+  RiMailLine,
+  RiContrast2Line,
+  RiPaletteLine,
 } from 'react-icons/ri';
 
 type SectionItem = {
@@ -41,21 +47,36 @@ type OfferSection = {
   hubHref?: string;
 };
 
+type ToolsSection = {
+  key: 'obrazy' | 'seo' | 'email' | 'kolory';
+  title: string;
+  items: SectionItem[];
+};
+
 export default function DesktopNavigation() {
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
+  const [isToolsOpen, setIsToolsOpen] = useState(false);
 
   const offerLiRef = useRef<HTMLLIElement>(null);
   const offerBtnRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
+  const toolsLiRef = useRef<HTMLLIElement>(null);
+  const toolsBtnRef = useRef<HTMLButtonElement>(null);
+  const toolsMenuRef = useRef<HTMLDivElement>(null);
+
   const buttonId = 'offer-button';
   const menuId = 'offer-submenu';
 
+  const toolsButtonId = 'tools-button';
+  const toolsMenuId = 'tools-submenu';
+
   useEffect(() => {
     const onPointerDown = (e: MouseEvent | TouchEvent) => {
-      if (!offerLiRef.current) return;
-      if (!offerLiRef.current.contains(e.target as Node)) setIsOfferOpen(false);
+      const target = e.target as Node;
+      if (offerLiRef.current && !offerLiRef.current.contains(target)) setIsOfferOpen(false);
+      if (toolsLiRef.current && !toolsLiRef.current.contains(target)) setIsToolsOpen(false);
     };
     document.addEventListener('mousedown', onPointerDown);
     document.addEventListener('touchstart', onPointerDown);
@@ -69,14 +90,18 @@ export default function DesktopNavigation() {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setIsOfferOpen(false);
-        offerBtnRef.current?.focus();
+        setIsToolsOpen(false);
+        (offerBtnRef.current ?? toolsBtnRef.current)?.focus();
       }
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
   }, []);
 
-  useEffect(() => setIsOfferOpen(false), [pathname]);
+  useEffect(() => {
+    setIsOfferOpen(false);
+    setIsToolsOpen(false);
+  }, [pathname]);
 
   const navigationItems = [
     { href: '/realizacje', label: 'Realizacje', exact: true },
@@ -136,41 +161,121 @@ export default function DesktopNavigation() {
     },
   ];
 
-  const focusMenuItem = (idx: number) => {
-    const items = menuRef.current?.querySelectorAll<HTMLAnchorElement>('a[href]');
+  const toolsSections: ToolsSection[] = [
+    {
+      key: 'obrazy',
+      title: 'Obrazy i favicony',
+      items: [
+        { href: '/narzedzia/jpg-png-na-webp-bez-limitu', title: 'Konwerter JPG/PNG na WebP', icon: <RiImageEditLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', title: 'Kadrowanie i zmiana rozmiaru', icon: <RiCropLine className="h-5 w-5 text-slate-500" /> },
+        { href: '/narzedzia/darmowy-generator-favicon-ico', title: 'Generator favicon', icon: <RiAppsLine className="h-5 w-5 text-slate-500" /> },
+      ],
+    },
+    {
+      key: 'seo',
+      title: 'Meta i SEO',
+      items: [
+        {
+          href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
+          title: 'Licznik meta title i description',
+          icon: <RiFileTextLine className="h-5 w-5 text-slate-500" />,
+        },
+      ],
+    },
+    {
+      key: 'email',
+      title: 'E-mail i komunikacja',
+      items: [
+        {
+          href: '/narzedzia/darmowy-generator-stopki-mailowej',
+          title: 'Generator stopki mailowej HTML',
+          icon: <RiMailLine className="h-5 w-5 text-slate-500" />,
+        },
+      ],
+    },
+    {
+      key: 'kolory',
+      title: 'Kolory i dostępność',
+      items: [
+        {
+          href: '/narzedzia/tester-kontrastu-kolorow-wcag',
+          title: 'Tester kontrastu kolorów WCAG',
+          icon: <RiContrast2Line className="h-5 w-5 text-slate-500" />,
+        },
+        {
+          href: '/narzedzia/generator-palet-kolorow-online',
+          title: 'Generator palet kolorów',
+          icon: <RiPaletteLine className="h-5 w-5 text-slate-500" />,
+        },
+      ],
+    },
+  ];
+
+  const focusMenuItem = (container: HTMLDivElement | null, idx: number) => {
+    const items = container?.querySelectorAll<HTMLAnchorElement>('a[href]');
     if (!items?.length) return;
-    items[Math.max(0, Math.min(idx, items.length - 1))].focus();
+    const safeIdx = Math.max(0, Math.min(idx, items.length - 1));
+    items[safeIdx].focus();
   };
 
   const handleOfferButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
     if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       if (!isOfferOpen) setIsOfferOpen(true);
-      requestAnimationFrame(() => focusMenuItem(0));
+      requestAnimationFrame(() => focusMenuItem(menuRef.current, 0));
     }
   };
 
   const handleMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    const items = menuRef.current?.querySelectorAll<HTMLAnchorElement>('a[href]');
+    const container = menuRef.current;
+    const items = container?.querySelectorAll<HTMLAnchorElement>('a[href]');
     if (!items?.length) return;
     const currentIndex = Array.from(items).findIndex((el) => el === document.activeElement);
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      focusMenuItem(currentIndex < 0 ? 0 : currentIndex + 1);
+      focusMenuItem(container!, currentIndex < 0 ? 0 : currentIndex + 1);
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
-      focusMenuItem(currentIndex <= 0 ? 0 : currentIndex - 1);
+      focusMenuItem(container!, currentIndex <= 0 ? 0 : currentIndex - 1);
     } else if (e.key === 'Home') {
       e.preventDefault();
-      focusMenuItem(0);
+      focusMenuItem(container!, 0);
     } else if (e.key === 'End') {
       e.preventDefault();
-      focusMenuItem(items.length - 1);
+      focusMenuItem(container!, items.length - 1);
+    }
+  };
+
+  const handleToolsButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (!isToolsOpen) setIsToolsOpen(true);
+      requestAnimationFrame(() => focusMenuItem(toolsMenuRef.current, 0));
+    }
+  };
+
+  const handleToolsMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    const container = toolsMenuRef.current;
+    const items = container?.querySelectorAll<HTMLAnchorElement>('a[href]');
+    if (!items?.length) return;
+    const currentIndex = Array.from(items).findIndex((el) => el === document.activeElement);
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      focusMenuItem(container!, currentIndex < 0 ? 0 : currentIndex + 1);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      focusMenuItem(container!, currentIndex <= 0 ? 0 : currentIndex - 1);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      focusMenuItem(container!, 0);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      focusMenuItem(container!, items.length - 1);
     }
   };
 
   return (
-    <div className="hidden md:flex">
+    <div className="hidden lg:flex">
       <LayoutGroup>
         <ul className="relative flex gap-4 lg:gap-6">
           {navigationItems.map(({ href, label, exact }) => {
@@ -226,6 +331,67 @@ export default function DesktopNavigation() {
                                 </div>
 
                                 <div className={`grid ${section.key === 'grafika' ? 'grid-cols-2' : 'grid-cols-1'} gap-2`}>
+                                  {section.items.map((item) => (
+                                    <Link
+                                      key={item.href + item.title}
+                                      href={item.href}
+                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                    >
+                                      {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
+                                      <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </Wrapper>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </li>
+              );
+            }
+
+            if (label === 'Narzędzia') {
+              return (
+                <li ref={toolsLiRef} className="group relative flex" key={label}>
+                  <button
+                    id={toolsButtonId}
+                    type="button"
+                    onClick={() => setIsToolsOpen((p) => !p)}
+                    onKeyDown={handleToolsButtonKeyDown}
+                    aria-haspopup="menu"
+                    aria-expanded={isToolsOpen}
+                    aria-controls={toolsMenuId}
+                    ref={toolsBtnRef}
+                    className="mr-[-10px] flex cursor-pointer items-center gap-1 rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  >
+                    Narzędzia
+                    <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                      <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
+                    </motion.span>
+                  </button>
+
+                  <AnimatePresence>
+                    {isToolsOpen && (
+                      <motion.div
+                        id={toolsMenuId}
+                        role="menu"
+                        aria-labelledby={toolsButtonId}
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
+                      >
+                        <Wrapper>
+                          <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                            {toolsSections.map((section) => (
+                              <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
+                                <div className="mb-3 text-sm font-semibold tracking-wide text-slate-900">{section.title}</div>
+
+                                <div className="grid grid-cols-1 gap-2">
                                   {section.items.map((item) => (
                                     <Link
                                       key={item.href + item.title}

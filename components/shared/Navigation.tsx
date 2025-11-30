@@ -30,6 +30,7 @@ export default function Navigation() {
           <Link href="/">
             <Image src="/assets/arteon-logo.png" width={140} height={50} alt="Arteon - logo firmy" priority />
           </Link>
+
           <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
@@ -60,7 +61,7 @@ export default function Navigation() {
           <button
             type="button"
             onClick={toggleMenu}
-            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:hidden"
+            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white lg:hidden"
             aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
             aria-expanded={isOpen}
           >

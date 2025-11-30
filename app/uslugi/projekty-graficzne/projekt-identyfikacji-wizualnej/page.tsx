@@ -93,6 +93,7 @@ export default function OfferDesignXxxPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        {/* 1. Dlaczego / co zyskujesz */}
         <SectionInfo title="Co zyskujesz zamawiając identyfikację wizualną?">
           <p>
             <strong>Spójny system wizualny porządkuje każdy kontakt z Twoją marką.</strong> Firmy, które konsekwentnie trzymają identyfikację, notują średnio
@@ -144,26 +145,7 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Dla kogo jest identyfikacja wizualna?" subtitle="Kiedy warto w nią zainwestować?">
-          <p>Projekt identyfikacji wizualnej szczególnie przydaje się wtedy, gdy chcesz świadomie ułożyć obraz marki na lata, a nie tylko zaprojektować pojedyncze logo czy wizytówkę.</p>
-
-          <br />
-
-          <ul className="ml-5 list-disc space-y-2">
-            <li>Zakładasz firmę i chcesz od początku zbudować spójny, profesjonalny wizerunek.</li>
-            <li>Masz już logo, ale materiały „żyją własnym życiem” i brakuje jednego kierunku dla całej komunikacji.</li>
-            <li>Planujesz stronę internetową, kampanie reklamowe lub wejście na nowy rynek i potrzebujesz wyraźnego, rozpoznawalnego stylu.</li>
-            <li>Twój zespół lub podwykonawcy często pytają „czy mogę użyć tego koloru / fontu?” - chcesz jasnych zasad, zamiast ciągłego ustalania detali.</li>
-            <li>Przygotowujesz markę ekspercką (np. gabinet, kancelaria, marka osobista) i zależy Ci na zaufaniu już przy pierwszym kontakcie.</li>
-          </ul>
-
-          <br />
-
-          <p>Jeśli masz poczucie, że Twoja marka „jest dobra w środku”, ale na zewnątrz nie wygląda jeszcze tak, jak powinna - identyfikacja wizualna jest naturalnym kolejnym krokiem.</p>
-        </SectionInfo>
-
-        <Gap variant="line" />
-
+        {/* 2. Offer stack – co dokładnie dostajesz */}
         <FeatureGrid
           title="Co zyskujesz zamawiając identyfikację wizualną?"
           subtitle="Nasz standard pracy"
@@ -193,6 +175,37 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        {/* 3. Dla kogo – filtr */}
+        <SectionInfo title="Dla kogo jest identyfikacja wizualna?" subtitle="Kiedy warto w nią zainwestować?">
+          <p>Projekt identyfikacji wizualnej szczególnie przydaje się wtedy, gdy chcesz świadomie ułożyć obraz marki na lata, a nie tylko zaprojektować pojedyncze logo czy wizytówkę.</p>
+
+          <br />
+
+          <ul className="ml-5 list-disc space-y-2">
+            <li>Zakładasz firmę i chcesz od początku zbudować spójny, profesjonalny wizerunek.</li>
+            <li>Masz już logo, ale materiały „żyją własnym życiem” i brakuje jednego kierunku dla całej komunikacji.</li>
+            <li>Planujesz stronę internetową, kampanie reklamowe lub wejście na nowy rynek i potrzebujesz wyraźnego, rozpoznawalnego stylu.</li>
+            <li>Twój zespół lub podwykonawcy często pytają „czy mogę użyć tego koloru / fontu?” - chcesz jasnych zasad, zamiast ciągłego ustalania detali.</li>
+            <li>Przygotowujesz markę ekspercką (np. gabinet, kancelaria, marka osobista) i zależy Ci na zaufaniu już przy pierwszym kontakcie.</li>
+          </ul>
+
+          <br />
+
+          <p>Jeśli masz poczucie, że Twoja marka „jest dobra w środku”, ale na zewnątrz nie wygląda jeszcze tak, jak powinna - identyfikacja wizualna jest naturalnym kolejnym krokiem.</p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* 4. Proof – realizacje + opinie */}
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
+        {/* 5. Cennik / pakiety – po proofie */}
         <SectionPrices
           title="Projekt identyfikacji wizualnej - przykładowe zakresy"
           subtitle="Dobieramy zakres systemu do etapu rozwoju Twojej marki"
@@ -242,10 +255,73 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        {/* 6. Proces / ryzyko */}
+        <FeesSteps />
 
         <Gap variant="line" />
 
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        {/* 7. FAQ – obiekcje */}
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
+          items={[
+            {
+              question: 'Ile kosztuje identyfikacja wizualna?',
+              answer:
+                'Cena zależy od zakresu prac: logo, paleta kolorów, typografia, materiały firmowe i ewentualny brandbook. Po krótkim briefie otrzymasz indywidualną wycenę dopasowaną do potrzeb Twojej marki.',
+            },
+            {
+              question: 'Jak długo trwa stworzenie identyfikacji wizualnej?',
+              answer:
+                'Standardowo projekt trwa od 10 do 20 dni roboczych, w zależności od liczby elementów i liczby rund poprawek. Dokładny harmonogram ustalamy indywidualnie na początku współpracy.',
+            },
+            {
+              question: 'Co zawiera kompletna identyfikacja wizualna?',
+              answer:
+                'Zazwyczaj: logo w kilku wariantach, paletę kolorów, typografię, wzory wizytówek, papierów firmowych, teczek oraz podstawowe grafiki do social mediów. Na życzenie rozszerzamy zakres o brandbook i dodatkowe szablony.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu?',
+              answer:
+                'Tak - każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją Twojej marki i komfortowy w codziennym użyciu.',
+            },
+            {
+              question: 'Czy mogę zamówić samo logo bez całego systemu?',
+              answer: 'Tak - projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną, opartą na już istniejącym znaku.',
+            },
+            {
+              question: 'Czy dostanę pliki gotowe do druku i internetu?',
+              answer: 'Tak - przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia, aby ułatwić wdrożenie w firmie.',
+            },
+            {
+              question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
+              answer:
+                'Tak - przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej branży i grupy docelowej.',
+            },
+            {
+              question: 'Czy mogę zamówić brandbook do identyfikacji?',
+              answer:
+                'Tak - opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        {/* 8. Kontakt */}
+        <ContactForm
+          title="Zamów identyfikację wizualną"
+          description="Napisz, w jakiej branży działasz, jakie materiały są dla Ciebie kluczowe (online i druk) oraz czy masz już logo. Przygotujemy propozycję zakresu, wycenę i harmonogram prac."
+          defaultSubject="Identyfikacja wizualna"
+        />
+
+        <Gap variant="line" />
+
+        {/* 9. Cross-sell */}
         <SectionSteps
           title="Z czym warto połączyć identyfikację wizualną?"
           subtitle="Zobacz też"
@@ -295,73 +371,6 @@ export default function OfferDesignXxxPage() {
             },
           ]}
           grid="three"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów identyfikację wizualną"
-          description="Napisz, w jakiej branży działasz, jakie materiały są dla Ciebie kluczowe (online i druk) oraz czy masz już logo. Przygotujemy propozycję zakresu, wycenę i harmonogram prac."
-          defaultSubject="Identyfikacja wizualna"
-        />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
-          items={[
-            {
-              question: 'Ile kosztuje identyfikacja wizualna?',
-              answer:
-                'Cena zależy od zakresu prac: logo, paleta kolorów, typografia, materiały firmowe i ewentualny brandbook. Po krótkim briefie otrzymasz indywidualną wycenę dopasowaną do potrzeb Twojej marki.',
-            },
-            {
-              question: 'Jak długo trwa stworzenie identyfikacji wizualnej?',
-              answer:
-                'Standardowo projekt trwa od 10 do 20 dni roboczych, w zależności od liczby elementów i liczby rund poprawek. Dokładny harmonogram ustalamy indywidualnie na początku współpracy.',
-            },
-            {
-              question: 'Co zawiera kompletna identyfikacja wizualna?',
-              answer:
-                'Zazwyczaj: logo w kilku wariantach, paletę kolorów, typografię, wzory wizytówek, papierów firmowych, teczek oraz podstawowe grafiki do social mediów. Na życzenie rozszerzamy zakres o brandbook i dodatkowe szablony.',
-            },
-            {
-              question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer:
-                'Tak - każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją Twojej marki i komfortowy w codziennym użyciu.',
-            },
-            {
-              question: 'Czy mogę zamówić samo logo bez całego systemu?',
-              answer: 'Tak - projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną, opartą na już istniejącym znaku.',
-            },
-            {
-              question: 'Czy dostanę pliki gotowe do druku i internetu?',
-              answer: 'Tak - przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia, aby ułatwić wdrożenie w firmie.',
-            },
-            {
-              question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
-              answer:
-                'Tak - przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej branży i grupy docelowej.',
-            },
-            {
-              question: 'Czy mogę zamówić brandbook do identyfikacji?',
-              answer:
-                'Tak - opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
-            },
-          ]}
         />
 
         <Gap variant="line" />

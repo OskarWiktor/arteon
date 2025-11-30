@@ -58,7 +58,7 @@ export default function OfferDesignLogoPage() {
         title="Projekt logo"
         description={
           <>
-            Silny znak porządkuje komunikację i wyróżnia markę. Projektujemy logo z myślą o czytelności, skalowalności i psychologii odbiorcy - z wersjami kolorystycznymi oraz mini-księgą znaku, którą
+            Silny znak porządkuje komunikację i wyróżnia markę. Projektujemy logo z myślą o czytelności, skalowalności i psychologii odbiorcy – z wersjami kolorystycznymi oraz mini-księgą znaku, którą
             wykorzystasz przez lata.
           </>
         }
@@ -73,10 +73,10 @@ export default function OfferDesignLogoPage() {
 
       <BenefitBelt
         items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
+          { icon: <RiPencilRuler2Line />, label: 'Logo dopasowane do marki' },
+          { icon: <RiBrushLine />, label: 'Perfekcja detalu i proporcji' },
+          { icon: <RiBarChart2Fill />, label: 'Znak, który wspiera sprzedaż' },
+          { icon: <RiLightbulbFlashLine />, label: 'Psychologia odbioru w praktyce' },
         ]}
       />
 
@@ -93,8 +93,8 @@ export default function OfferDesignLogoPage() {
         {/* 1. Co zyskujesz - efekt i sens logo */}
         <SectionInfo title="Co zyskujesz zamawiając projekt logo?">
           <p>
-            <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny branding realnie przekłada się na wynik - firmy utrzymujące konsekwentną identyfikację raportują ok.{' '}
-            <strong>10-20% wyższy wzrost/przychody</strong>
+            <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny branding realnie przekłada się na wynik – firmy utrzymujące konsekwentną identyfikację raportują ok.{` `}
+            <strong>10–20% wyższy wzrost/przychody</strong>
             <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
@@ -104,8 +104,8 @@ export default function OfferDesignLogoPage() {
           <br />
 
           <p>
-            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: nawet ok. <strong>75%</strong> osób przypisuje
-            wiarygodność marce na podstawie tego, jak wyglądają jej materiały
+            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: nawet ok.{` `}
+            <strong>75%</strong> osób przypisuje wiarygodność marce na podstawie tego, jak wyglądają jej materiały
             <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
@@ -120,7 +120,7 @@ export default function OfferDesignLogoPage() {
           <ul className="ml-5 list-disc">
             <li>Porządkuje komunikację i ułatwia tworzenie kolejnych materiałów,</li>
             <li>Buduje rozpoznawalność i pamięć marki w głowie klienta,</li>
-            <li>Podnosi zaufanie - wyglądasz jak firma, której można powierzyć pieniądze.</li>
+            <li>Podnosi zaufanie – wyglądasz jak firma, której można powierzyć pieniądze.</li>
           </ul>
         </SectionInfo>
 
@@ -133,12 +133,12 @@ export default function OfferDesignLogoPage() {
           items={[
             {
               title: 'Znak, który prowadzi markę',
-              description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania - również w małych rozmiarach.</>,
+              description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania – również w małych rozmiarach.</>,
               icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Warianty i zastosowania',
-              description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do użycia na stronie, w social mediach i w druku.</>,
+              description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe – gotowe do użycia na stronie, w social mediach i w druku.</>,
               icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -148,7 +148,7 @@ export default function OfferDesignLogoPage() {
             },
             {
               title: 'Pełna własność i pliki źródłowe',
-              description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
+              description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw – możesz swobodnie rozwijać identyfikację w przyszłości.</>,
               icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -180,7 +180,7 @@ export default function OfferDesignLogoPage() {
         <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu nowego logo?" subtitle="Efekty po wdrożeniu">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Spójny wizerunek na wszystkich nośnikach</strong> - od strony WWW, przez social media, po druk.
+              <strong>Spójny wizerunek na wszystkich nośnikach</strong> – od strony WWW, przez social media, po druk.
             </li>
             <li>
               <strong>Łatwiejsze tworzenie materiałów,</strong> bo logo wyznacza kierunek dla kolorów, typografii i stylu.
@@ -207,7 +207,7 @@ export default function OfferDesignLogoPage() {
               description: 'Dla jednoosobowych działalności i małych firm, które potrzebują solidnego znaku na start.',
               features: [
                 'Krótkie konsultacje i brief online',
-                '2-3 wstępne kierunki logo do wyboru',
+                '2–3 wstępne kierunki logo do wyboru',
                 'Dopracowanie wybranego kierunku',
                 'Wersje na jasne i ciemne tło',
                 'Pliki PNG i SVG do użycia online',
@@ -250,7 +250,7 @@ export default function OfferDesignLogoPage() {
         <Gap variant="line" />
 
         {/* 6. Portfolio */}
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsOverview title="Wybrane realizacje logo i identyfikacji wizualnej" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -265,7 +265,7 @@ export default function OfferDesignLogoPage() {
               title: 'Projekt wizytówki firmowej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Wykorzystaj nowe logo na eleganckiej wizytówce - to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad.</p>
+                  <p className="mb-3 text-sm">Wykorzystaj nowe logo na eleganckiej wizytówce – to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Zobacz projekt wizytówki
@@ -312,7 +312,7 @@ export default function OfferDesignLogoPage() {
         {/* 11. Formularz - precyzyjny brief */}
         <ContactForm
           title="Zamów projekt logo"
-          description="Opisz, czym się zajmujesz, w jakiej branży działasz i jaki charakter znaku Ci się podoba (minimalistyczny, klasyczny, odważny). Jeśli masz istniejące materiały lub inspiracje, możesz je dołączyć - na tej podstawie przygotujemy brief, wycenę i harmonogram."
+          description="Opisz, czym się zajmujesz, w jakiej branży działasz i jaki charakter znaku Ci się podoba (minimalistyczny, klasyczny, odważny). Jeśli masz istniejące materiały lub inspiracje, możesz je dołączyć – na tej podstawie przygotujemy brief, wycenę i harmonogram."
           defaultSubject="Projekt logo"
         />
 
@@ -330,20 +330,20 @@ export default function OfferDesignLogoPage() {
             },
             {
               question: 'Jak długo trwa realizacja projektu logo?',
-              answer: 'Standardowy proces trwa około 7-14 dni roboczych, w zależności od liczby kierunków i rund poprawek. Przy pilnych zleceniach możemy zaproponować tryb ekspresowy.',
+              answer: 'Standardowy proces trwa około 7–14 dni roboczych, w zależności od liczby kierunków i rund poprawek. Przy pilnych zleceniach możemy zaproponować tryb ekspresowy.',
             },
             {
               question: 'W jakich formatach otrzymam logo?',
               answer:
-                'Otrzymasz pliki wektorowe (SVG, EPS, AI) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości - w wersjach kolorystycznych, monochromatycznych oraz na jasne i ciemne tło, wraz z mini-księgą znaku.',
+                'Otrzymasz pliki wektorowe (SVG, EPS, AI) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości – w wersjach kolorystycznych, monochromatycznych oraz na jasne i ciemne tło, wraz z mini-księgą znaku.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do logo?',
-              answer: 'Tak - w standardowym pakiecie uwzględniamy minimum jedną-dwie rundy korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
+              answer: 'Tak – w standardowym pakiecie uwzględniamy minimum jedną–dwie rundy korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
             },
             {
               question: 'Czy pomogacie określić styl i kierunek logo?',
-              answer: 'Tak - jeśli nie masz konkretnej wizji, przygotowujemy moodboardy, przykłady stylów i kierunki kreatywne, aby wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
+              answer: 'Tak – jeśli nie masz konkretnej wizji, przygotowujemy moodboardy, przykłady stylów i kierunki kreatywne, aby wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
             },
             {
               question: 'Gdzie mogę używać logo?',
@@ -352,11 +352,11 @@ export default function OfferDesignLogoPage() {
             {
               question: 'Czy dostaję prawa autorskie do logo?',
               answer:
-                'Tak - po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
+                'Tak – po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
             },
             {
               question: 'Czy oferujecie szybką realizację logo?',
-              answer: 'Tak - dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
+              answer: 'Tak – dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
             },
           ]}
         />

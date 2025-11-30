@@ -25,6 +25,8 @@ import {
   RiLayoutLine,
   RiCoupon2Line,
   RiRestaurant2Line,
+  RiInstagramLine,
+  RiFacebookFill,
 } from 'react-icons/ri';
 
 type NavItem = { href: string; label: string; exact?: boolean };
@@ -286,8 +288,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <ul className="mb-2 flex flex-col gap-1">
                 {NAV.map(({ href, label, exact }) => {
-                  const pathname = window.location?.pathname ?? '';
-                  const isActive = exact ? pathname === href : pathname.startsWith(href);
+                  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
+                  const isActive = exact ? currentPath === href : currentPath.startsWith(href);
                   return (
                     <li key={label}>
                       <Link
@@ -309,7 +311,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <ul className="mb-2 flex flex-col gap-1">
                 {[
-                  { href: '/regulamin', label: 'Regulamin świadczenia usług', exact: true },
+                  { href: '/regulamin', label: 'Regulamin świadczenia usług' },
                   { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
                 ].map(({ href, label }) => (
                   <li key={label}>
@@ -326,9 +328,27 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <div className="mt-auto border-t border-zinc-200 pt-3">
                 <div className="flex items-center justify-between">
-                  <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="text-xs font-medium text-[#5e5e5e]">
-                    #MadeWithNext.js
-                  </a>
+                  <div className="flex items-center gap-3">
+                    <a
+                      href="https://www.instagram.com/arteon.pl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Firmowy Instagram"
+                      className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                    >
+                      <RiInstagramLine className="h-5 w-5 text-[#2B2B2B] transition hover:text-slate-600" aria-hidden="true" />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/people/Arteon/61583260915021/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Firmowy Facebook"
+                      className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                    >
+                      <RiFacebookFill className="h-5 w-5 text-[#2B2B2B] transition hover:text-slate-600" aria-hidden="true" />
+                    </a>
+                  </div>
+
                   <div className="flex items-center gap-2">
                     <Link
                       href="/kontakt"

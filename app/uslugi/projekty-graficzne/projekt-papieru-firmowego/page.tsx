@@ -23,7 +23,9 @@ import Button from '@/components/ui/Button';
 export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',
   description: 'Papier firmowy, który wzmacnia wizerunek w korespondencji. Szablony Word/PDF oraz wersje gotowe do druku.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
+  alternates: {
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+  },
   openGraph: {
     title: 'Projekt papieru firmowego | Arteon',
     description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
@@ -57,7 +59,7 @@ export default function OfferDesignPapierFirmowyPage() {
       <HeroBanner
         title="Projekt papieru firmowego"
         description={
-          <>Każda korespondencja może wzmacniać markę. Projektujemy papier firmowy z prawidłowymi szablonami Word/PDF i plikami do druku - czytelny, spójny i profesjonalny w codziennej pracy.</>
+          <>Każda korespondencja może wzmacniać markę. Projektujemy papier firmowy z prawidłowymi szablonami Word/PDF i plikami do druku – czytelny, spójny i profesjonalny w codziennej pracy.</>
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
@@ -70,10 +72,10 @@ export default function OfferDesignPapierFirmowyPage() {
 
       <BenefitBelt
         items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
+          { icon: <RiPencilRuler2Line />, label: 'Spójny system dokumentów' },
+          { icon: <RiBrushLine />, label: 'Profesjonalna oprawa wizualna' },
+          { icon: <RiBarChart2Fill />, label: 'Lepsza percepcja marki' },
+          { icon: <RiLightbulbFlashLine />, label: 'Praktyczne szablony na co dzień' },
         ]}
       />
 
@@ -92,8 +94,8 @@ export default function OfferDesignPapierFirmowyPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt papieru firmowego?">
           <p>
-            <strong>Własny projekt papieru firmowego sprawia, że dokumenty wyglądają profesjonalnie od pierwszej sekundy.</strong> Oferty, umowy i pisma mają jeden, spójny wzór - logo, układ, dane
-            kontaktowe - dzięki czemu autorytet Twojej marki wzrasta. Estetyczna oprawa zwiększa postrzeganą wiarygodność marki już w pierwszych sekundach
+            <strong>Własny projekt papieru firmowego sprawia, że dokumenty wyglądają profesjonalnie od pierwszej sekundy.</strong> Oferty, umowy i pisma mają jeden, spójny wzór – logo, układ, dane
+            kontaktowe – dzięki czemu autorytet Twojej marki wzrasta. Estetyczna oprawa zwiększa postrzeganą wiarygodność marki już w pierwszych sekundach
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (Stanford - web credibility)
             </a>
@@ -165,7 +167,7 @@ export default function OfferDesignPapierFirmowyPage() {
         <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu papieru firmowego?" subtitle="Efekty po wdrożeniu">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Spójniejsze doświadczenie marki,</strong> bo każdy dokument - od krótkiego pisma po wielostronicową ofertę - wygląda tak, jak reszta komunikacji.
+              <strong>Spójniejsze doświadczenie marki,</strong> bo każdy dokument – od krótkiego pisma po wielostronicową ofertę – wygląda tak, jak reszta komunikacji.
             </li>
             <li>
               <strong>Mniej chaosu wśród pracowników,</strong> dzięki gotowym szablonom Word/PDF, z których korzysta cały zespół.
@@ -221,7 +223,7 @@ export default function OfferDesignPapierFirmowyPage() {
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Rozszerzenie o dodatkowe typy dokumentów (np. protokoły, zaświadczenia, proste raporty)',
                 'Dopasowanie papieru firmowego do pozostałych materiałów (wizytówki, teczki, ulotki)',
-                'Rekomendacje dotyczące druku (rodzaj papieru, wykończenie - realizacja po stronie drukarni)',
+                'Rekomendacje dotyczące druku (rodzaj papieru, wykończenie – realizacja po stronie drukarni)',
                 'Wsparcie przy wdrożeniu szablonów w zespole (proste instrukcje użycia)',
               ],
               btnOne: 'Porozmawiajmy o pakiecie Pro',
@@ -247,7 +249,7 @@ export default function OfferDesignPapierFirmowyPage() {
               title: 'Projekt wizytówki firmowej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu widzi spójny system - od dokumentu po dane kontaktowe.</p>
+                  <p className="mb-3 text-sm">Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu widzi spójny system – od dokumentu po dane kontaktowe.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Zobacz projekt wizytówki
@@ -261,7 +263,7 @@ export default function OfferDesignPapierFirmowyPage() {
               title: 'Projekt teczki ofertowej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta - od papieru po oprawę - staje się spójnym doświadczeniem dla klienta.</p>
+                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta – od papieru po oprawę – staje się spójnym doświadczeniem dla klienta.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
                       Zobacz projekt teczki
@@ -308,11 +310,11 @@ export default function OfferDesignPapierFirmowyPage() {
             },
             {
               question: 'Jak długo trwa wykonanie projektu papieru firmowego?',
-              answer: 'Standardowo projekt zajmuje około 3-7 dni roboczych przy typowym zakresie. Większe projekty z wieloma wersjami mogą wymagać więcej czasu - termin ustalamy indywidualnie.',
+              answer: 'Standardowo projekt zajmuje około 3–7 dni roboczych przy typowym zakresie. Większe projekty z wieloma wersjami mogą wymagać więcej czasu – termin ustalamy indywidualnie.',
             },
             {
               question: 'W jakich formatach dostanę projekt papieru firmowego?',
-              answer: 'Otrzymasz pliki PDF do druku z odpowiednimi spadami, wersje PDF do korespondencji elektronicznej oraz - w razie potrzeby - szablony dokumentów w Word lub Google Docs.',
+              answer: 'Otrzymasz pliki PDF do druku z odpowiednimi spadami, wersje PDF do korespondencji elektronicznej oraz – w razie potrzeby – szablony dokumentów w Word lub Google Docs.',
             },
             {
               question: 'Czy mogę zgłosić poprawki?',

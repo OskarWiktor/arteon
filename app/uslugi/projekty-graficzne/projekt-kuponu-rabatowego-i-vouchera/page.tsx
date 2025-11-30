@@ -25,7 +25,7 @@ export const metadata = {
   title: 'Kupony rabatowe i vouchery | Arteon',
   description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+    canonical: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
   },
   openGraph: {
     title: 'Kupony rabatowe i vouchery | Arteon',
@@ -93,6 +93,7 @@ export default function OfferDesignVoucheryPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        {/* 1. Dlaczego – sens i wartość */}
         <SectionInfo title="Dlaczego warto inwestować w kupony i vouchery?">
           <p>
             <strong>Kupon oraz voucher to drobny materiał, który potrafi przynieść duży efekt.</strong> Daje pretekst do kontaktu, zakupów i powrotu klienta. Estetyczny projekt buduje pozytywne
@@ -120,6 +121,7 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
+        {/* 2. Co dostajesz – standard pracy */}
         <FeatureGrid
           title="Co otrzymasz w ramach projektu?"
           subtitle="Nasz standard pracy"
@@ -149,6 +151,7 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
+        {/* 3. Dla kogo – filtr i dopasowanie */}
         <SectionInfo title="Dla kogo są kupony rabatowe i vouchery?" subtitle="Dla kogo">
           <ul className="ml-5 list-disc space-y-2">
             <li>
@@ -168,6 +171,7 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
+        {/* 4. Efekty po wdrożeniu */}
         <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu kuponów i voucherów?" subtitle="Efekty po wdrożeniu">
           <ul className="ml-5 list-disc space-y-2">
             <li>
@@ -187,6 +191,16 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
+        {/* 5. Proof – realizacje + opinie */}
+        <ProjectsOverview title="Przykładowe realizacje kuponów i voucherów" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
+        {/* 6. Pakiety / ceny */}
         <SectionPrices
           title="Kupony rabatowe i vouchery - przykładowe pakiety"
           subtitle="Zakres dopasowany do Twojej oferty"
@@ -231,10 +245,52 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Przykładowe realizacje kuponów i voucherów" category="grafika" subtitle="Portfolio" />
+        {/* 7. Proces – jak to wygląda krok po kroku */}
+        <FeesSteps />
 
         <Gap variant="line" />
 
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        {/* 8. FAQ – obiekcje i szczegóły */}
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera"
+          title="Najczęstsze pytania dotyczące kuponów i voucherów"
+          items={[
+            {
+              question: 'W jakich formatach przygotowujecie kupony?',
+              answer: 'Najczęściej projektujemy formaty takie jak DL lub A6, ale możemy dopasować wymiary do Twoich indywidualnych potrzeb i wymagań drukarni.',
+            },
+            {
+              question: 'Czy mogę zamówić kupon w wersji cyfrowej?',
+              answer: 'Tak - przygotowujemy wersje do mailingu, social mediów oraz pliki z miejscem na kod rabatowy lub QR, które możesz wykorzystać w systemach sprzedażowych.',
+            },
+            {
+              question: 'Jak długo trwa realizacja projektu kuponów lub voucherów?',
+              answer: 'Standardowo realizujemy projekt w ciągu 3-7 dni roboczych, w zależności od liczby wariantów oraz formatu. Terminy ustalamy indywidualnie przed startem prac.',
+            },
+            {
+              question: 'Czy mogę zlecić przygotowanie całej akcji promocyjnej?',
+              answer: 'Tak - możemy zaprojektować kupony, vouchery oraz materiały wspierające (posty, grafiki na stronę, ulotki). Dzięki temu promocja będzie spójna i zrozumiała dla klientów.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        {/* 9. Kontakt – główne CTA po rozwianiu wątpliwości */}
+        <ContactForm
+          title="Zamów projekt voucherów lub kuponów"
+          description="Opisz, czym się zajmujesz, na jaki rodzaj usług lub produktów chcesz przygotować kupony i vouchery oraz w jakiej formie będą rozdawane (druk, online, social media). Na tej podstawie przygotujemy propozycję projektu, wycenę i termin realizacji."
+          defaultSubject="Projekt kuponów i voucherów"
+        />
+
+        <Gap variant="line" />
+
+        {/* 10. Cross-sell – co dalej / z czym połączyć */}
         <SectionSteps
           title="Z czym najlepiej połączyć kupony i vouchery?"
           subtitle="Zobacz też"
@@ -270,52 +326,6 @@ export default function OfferDesignVoucheryPage() {
             },
           ]}
           grid="two"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt voucherów lub kuponów"
-          description="Opisz, czym się zajmujesz, na jaki rodzaj usług lub produktów chcesz przygotować kupony i vouchery oraz w jakiej formie będą rozdawane (druk, online, social media). Na tej podstawie przygotujemy propozycję projektu, wycenę i termin realizacji."
-          defaultSubject="Projekt kuponów i voucherów"
-        />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera"
-          title="Najczęstsze pytania dotyczące kuponów i voucherów"
-          items={[
-            {
-              question: 'W jakich formatach przygotowujecie kupony?',
-              answer: 'Najczęściej projektujemy formaty takie jak DL lub A6, ale możemy dopasować wymiary do Twoich indywidualnych potrzeb i wymagań drukarni.',
-            },
-            {
-              question: 'Czy mogę zamówić kupon w wersji cyfrowej?',
-              answer: 'Tak - przygotowujemy wersje do mailingu, social mediów oraz pliki z miejscem na kod rabatowy lub QR, które możesz wykorzystać w systemach sprzedażowych.',
-            },
-            {
-              question: 'Jak długo trwa realizacja projektu kuponów lub voucherów?',
-              answer: 'Standardowo realizujemy projekt w ciągu 3-7 dni roboczych, w zależności od liczby wariantów oraz formatu. Terminy ustalamy indywidualnie przed startem prac.',
-            },
-            {
-              question: 'Czy mogę zlecić przygotowanie całej akcji promocyjnej?',
-              answer: 'Tak - możemy zaprojektować kupony, vouchery oraz materiały wspierające (posty, grafiki na stronę, ulotki). Dzięki temu promocja będzie spójna i zrozumiała dla klientów.',
-            },
-          ]}
         />
 
         <Gap variant="line" />

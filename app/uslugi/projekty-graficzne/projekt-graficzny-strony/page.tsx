@@ -93,6 +93,7 @@ export default function OfferDesignXxxPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        {/* 1. Dlaczego / sens usługi */}
         <SectionInfo title="Co zyskujesz zamawiając projekt graficzny strony?">
           <p>
             <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong>
@@ -132,26 +133,7 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Dla kogo jest projekt graficzny strony?" subtitle="Kiedy ma największy sens?">
-          <p>Projekt graficzny strony najbardziej opłaca się wtedy, gdy chcesz świadomie zaplanować każdy ekran, zamiast „składać” stronę z przypadkowych sekcji.</p>
-
-          <br />
-
-          <ul className="ml-5 list-disc space-y-2">
-            <li>Planujesz nową stronę lub redesign i chcesz najpierw zobaczyć gotowy layout, zanim zainwestujesz w wdrożenie.</li>
-            <li>Masz rozbudowaną ofertę i potrzebujesz jasnej ścieżki użytkownika: od wejścia na stronę do kontaktu lub zakupu.</li>
-            <li>Współpracujesz z deweloperem i chcesz przekazać mu konkretny projekt zamiast ogólnego briefu.</li>
-            <li>Chcesz uporządkować aktualną stronę: poprawić czytelność, nagłówki, sekcje i wezwań do działania.</li>
-            <li>Przygotowujesz landing page pod kampanie reklamowe i zależy Ci na jak najlepszym wykorzystaniu ruchu.</li>
-          </ul>
-
-          <br />
-
-          <p>Jeśli Twoja strona dziś „jakoś działa”, ale czujesz, że nie wykorzystuje potencjału - projekt graficzny jest dobrym krokiem przed kolejną inwestycją w reklamy czy pozycjonowanie.</p>
-        </SectionInfo>
-
-        <Gap variant="line" />
-
+        {/* 2. Offer stack – co dokładnie dostają */}
         <FeatureGrid
           title="Co zyskujesz zamawiając projekt graficzny strony?"
           subtitle="Nasz standard pracy"
@@ -181,6 +163,37 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        {/* 3. Dla kogo – filtr */}
+        <SectionInfo title="Dla kogo jest projekt graficzny strony?" subtitle="Kiedy ma największy sens?">
+          <p>Projekt graficzny strony najbardziej opłaca się wtedy, gdy chcesz świadomie zaplanować każdy ekran, zamiast „składać” stronę z przypadkowych sekcji.</p>
+
+          <br />
+
+          <ul className="ml-5 list-disc space-y-2">
+            <li>Planujesz nową stronę lub redesign i chcesz najpierw zobaczyć gotowy layout, zanim zainwestujesz w wdrożenie.</li>
+            <li>Masz rozbudowaną ofertę i potrzebujesz jasnej ścieżki użytkownika: od wejścia na stronę do kontaktu lub zakupu.</li>
+            <li>Współpracujesz z deweloperem i chcesz przekazać mu konkretny projekt zamiast ogólnego briefu.</li>
+            <li>Chcesz uporządkować aktualną stronę: poprawić czytelność, nagłówki, sekcje i wezwań do działania.</li>
+            <li>Przygotowujesz landing page pod kampanie reklamowe i zależy Ci na jak najlepszym wykorzystaniu ruchu.</li>
+          </ul>
+
+          <br />
+
+          <p>Jeśli Twoja strona dziś „jakoś działa”, ale czujesz, że nie wykorzystuje potencjału - projekt graficzny jest dobrym krokiem przed kolejną inwestycją w reklamy czy pozycjonowanie.</p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* 4. Proof – realizacje + opinie */}
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
+        {/* 5. Cennik / zakres – po proofie */}
         <SectionPrices
           title="Projekt graficzny strony - przykładowe zakresy"
           subtitle="Dobieramy zakres projektu do celu i wielkości serwisu"
@@ -230,10 +243,67 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        {/* 6. Proces / ryzyko */}
+        <FeesSteps />
 
         <Gap variant="line" />
 
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        {/* 7. FAQ – obiekcje przed kontaktem */}
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony"
+          items={[
+            {
+              question: 'Ile kosztuje projekt graficzny strony?',
+              answer: 'Cena zależy głównie od liczby podstron i poziomu złożoności projektu. Po krótkim zapoznaniu z wymaganiami przedstawimy szczegółową wycenę dopasowaną do Twoich celów.',
+            },
+            {
+              question: 'Jak długo trwa przygotowanie projektu strony?',
+              answer: 'Standardowo od 7 do 14 dni roboczych. Czas zależy od liczby podstron i indywidualnych potrzeb UX. Dokładny harmonogram ustalamy przed rozpoczęciem projektu.',
+            },
+            {
+              question: 'Czy projekt graficzny strony obejmuje wersję mobilną?',
+              answer: 'Tak - każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu na różnych ekranach.',
+            },
+            {
+              question: 'Czy projekt graficzny uwzględnia SEO i UX?',
+              answer: 'Tak - łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu?',
+              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
+            },
+            {
+              question: 'W jakim formacie dostanę projekt?',
+              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy też pomóc w bezpośredniej współpracy z deweloperem lub zająć się realizacją strony.',
+            },
+            {
+              question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
+              answer: 'Tak - po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości, a także rozwijać o kolejne podstrony na bazie przyjętego systemu.',
+            },
+            {
+              question: 'Czy mogę zamówić tylko jedną podstronę lub landing page?',
+              answer: 'Tak - projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach ofert lub kampaniach sprzedażowych.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        {/* 8. Kontakt – dopiero po FAQ */}
+        <ContactForm
+          title="Zamów projekt graficzny strony"
+          description="Opisz branżę, cel strony (leady, sprzedaż, edukacja), zakres podstron i kluczowe funkcje. Na tej podstawie przygotujemy wycenę, termin i rekomendacje UX."
+          defaultSubject="Projekt graficzny strony"
+        />
+
+        <Gap variant="line" />
+
+        {/* 9. Cross-sell + zobacz też */}
         <SectionSteps
           title="Z czym warto połączyć projekt graficzny strony?"
           subtitle="Zobacz też"
@@ -283,67 +353,6 @@ export default function OfferDesignXxxPage() {
             },
           ]}
           grid="three"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt graficzny strony"
-          description="Opisz branżę, cel strony (leady, sprzedaż, edukacja), zakres podstron i kluczowe funkcje. Na tej podstawie przygotujemy wycenę, termin i rekomendacje UX."
-          defaultSubject="Projekt graficzny strony"
-        />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony"
-          items={[
-            {
-              question: 'Ile kosztuje projekt graficzny strony?',
-              answer: 'Cena zależy głównie od liczby podstron i poziomu złożoności projektu. Po krótkim zapoznaniu z wymaganiami przedstawimy szczegółową wycenę dopasowaną do Twoich celów.',
-            },
-            {
-              question: 'Jak długo trwa przygotowanie projektu strony?',
-              answer: 'Standardowo od 7 do 14 dni roboczych. Czas zależy od liczby podstron i indywidualnych potrzeb UX. Dokładny harmonogram ustalamy przed rozpoczęciem projektu.',
-            },
-            {
-              question: 'Czy projekt graficzny strony obejmuje wersję mobilną?',
-              answer: 'Tak - każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu na różnych ekranach.',
-            },
-            {
-              question: 'Czy projekt graficzny uwzględnia SEO i UX?',
-              answer: 'Tak - łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
-            },
-            {
-              question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
-            },
-            {
-              question: 'W jakim formacie dostanę projekt?',
-              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy też pomóc w bezpośredniej współpracy z deweloperem lub zająć się realizacją strony.',
-            },
-            {
-              question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer: 'Tak - po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości, a także rozwijać o kolejne podstrony na bazie przyjętego systemu.',
-            },
-            {
-              question: 'Czy mogę zamówić tylko jedną podstronę lub landing page?',
-              answer: 'Tak - projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach ofert lub kampaniach sprzedażowych.',
-            },
-          ]}
         />
 
         <Gap variant="line" />

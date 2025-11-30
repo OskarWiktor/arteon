@@ -24,7 +24,9 @@ import Button from '@/components/ui/Button';
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
   description: 'Teczka ofertowa podnosi prestiż spotkań i porządkuje dokumenty. Projekt spójny z identyfikacją wizualną Twojej marki.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
+  alternates: {
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+  },
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
@@ -57,7 +59,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
     <>
       <HeroBanner
         title="Projekt teczki ofertowej"
-        description={<>Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z identyfikacją - trwałe, eleganckie i funkcjonalne na prezentacje, dokumenty i umowy.</>}
+        description={<>Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z identyfikacją – trwałe, eleganckie i funkcjonalne na prezentacje, dokumenty i umowy.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Realizacje"
@@ -69,17 +71,20 @@ export default function OfferDesignTeczkaOfertowaPage() {
 
       <BenefitBelt
         items={[
-          { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
-          { icon: <RiBrushLine />, label: 'Perfekcja detalu' },
-          { icon: <RiBarChart2Fill />, label: 'Transparentna współpraca' },
-          { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
+          { icon: <RiPencilRuler2Line />, label: 'Spójny system materiałów' },
+          { icon: <RiBrushLine />, label: 'Elegancki, dopracowany detal' },
+          { icon: <RiBarChart2Fill />, label: 'Wyższy prestiż na spotkaniach' },
+          { icon: <RiLightbulbFlashLine />, label: 'Psychologia pierwszego wrażenia' },
         ]}
       />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-teczki-ofertowej`, label: 'Projekt teczki ofertowej' }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-teczki-ofertowej`,
+          label: 'Projekt teczki ofertowej',
+        }}
         includeJsonLd
       />
 
@@ -88,7 +93,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt teczki ofertowej?">
           <p>
-            <strong>Własna firmowa teczka buduje zaufanie i robi wrażenie od pierwszej sekundy.</strong> Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie marki
+            <strong>Własna firmowa teczka buduje zaufanie i robi wrażenie od pierwszej sekundy.</strong> Klient dostaje Twoje materiały w jednej, eleganckiej formie – to ułatwia zapamiętanie marki
             oraz buduje jej autorytet. Materiały drukowane zostają w pamięci dłużej niż przekaz cyfrowy (mniejsze obciążenie poznawcze, wyższa zapamiętywalność)
             <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (Canada Post - neuromarketing)
@@ -99,7 +104,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
           <br />
 
           <p>
-            <strong>Profesjonalna teczka ofertowa wzmacnia wiarygodność w kilka sekund.</strong> Estetyka i czytelność oprawy silnie wpływają na ocenę firmy - odbiorcy przypisują zaufanie na podstawie
+            <strong>Profesjonalna teczka ofertowa wzmacnia wiarygodność w kilka sekund.</strong> Estetyka i czytelność oprawy silnie wpływają na ocenę firmy – odbiorcy przypisują zaufanie na podstawie
             jakości materiałów
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (Stanford - web credibility)
@@ -115,7 +120,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
           <ul className="ml-5 list-disc">
             <li>Porządkuje dokumenty i ułatwia proces spotkania,</li>
             <li>Podkreśla profesjonalizm w trakcie prezentacji i po wyjściu klienta,</li>
-            <li>Zostawia fizyczny ślad - klient łatwiej wraca do Twojej firmy i oferty.</li>
+            <li>Zostawia fizyczny ślad – klient łatwiej wraca do Twojej firmy i oferty.</li>
           </ul>
         </SectionInfo>
 
@@ -127,7 +132,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
           items={[
             {
               title: 'Prestiż na każdym spotkaniu',
-              description: <>Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie materiałów robi dobre wrażenie.</>,
+              description: <>Projekt teczki podkreśla profesjonalizm Twojej firmy – już samo wręczenie materiałów robi dobre wrażenie.</>,
               icon: <RiFolderOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -142,7 +147,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
             },
             {
               title: 'Pliki gotowe do druku',
-              description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz od razu przekazać je do produkcji.</>,
+              description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię – możesz od razu przekazać je do produkcji.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -172,7 +177,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
         <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu teczek ofertowych?" subtitle="Efekty po wdrożeniu">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Bardziej uporządkowane spotkania,</strong> bo wszystkie materiały - oferta, umowa, wizytówka - trafiają do jednej, spójnej teczki.
+              <strong>Bardziej uporządkowane spotkania,</strong> bo wszystkie materiały – oferta, umowa, wizytówka – trafiają do jednej, spójnej teczki.
             </li>
             <li>
               <strong>Wyższy poziom zaufania i postrzeganego profesjonalizmu,</strong> szczególnie przy pierwszym kontakcie i prezentacjach dla nowych klientów.
@@ -235,7 +240,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Zakres, typ teczki i liczbę wersji dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac."
+          legalNote="Zakres, typ teczki i liczbę wersji dopasowujemy indywidualnie – po briefie otrzymasz konkretną wycenę i harmonogram prac."
         />
 
         <Gap variant="line" />
@@ -247,7 +252,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
         <SectionSteps
           title="Kolejne materiały, które warto połączyć z teczką"
           subtitle="Zobacz też"
-          description="Najlepszy efekt przynosi spójny zestaw materiałów - teczka, wizytówki, oferta PDF i strona www, które opowiadają jedną historię."
+          description="Najlepszy efekt przynosi spójny zestaw materiałów – teczka, wizytówki, oferta PDF i strona www, które opowiadają jedną historię."
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
@@ -311,11 +316,11 @@ export default function OfferDesignTeczkaOfertowaPage() {
             {
               question: 'Jak długo trwa realizacja teczki ofertowej?',
               answer:
-                'Standardowo projekt teczki trwa około 5-10 dni roboczych - w zależności od liczby wersji, stopnia skomplikowania oraz tempa akceptacji. Przy pilnych zleceniach ustalamy tryb ekspresowy indywidualnie.',
+                'Standardowo projekt teczki trwa około 5–10 dni roboczych – w zależności od liczby wersji, stopnia skomplikowania oraz tempa akceptacji. Przy pilnych zleceniach ustalamy tryb ekspresowy indywidualnie.',
             },
             {
               question: 'W jakich formatach dostanę pliki teczki?',
-              answer: 'Dostarczamy pliki do druku (PDF ze spadami i oznaczeniami) oraz - na życzenie - pliki źródłowe. Pliki możemy dopasować do specyfikacji konkretnej drukarni.',
+              answer: 'Dostarczamy pliki do druku (PDF ze spadami i oznaczeniami) oraz – na życzenie – pliki źródłowe. Pliki możemy dopasować do specyfikacji konkretnej drukarni.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',

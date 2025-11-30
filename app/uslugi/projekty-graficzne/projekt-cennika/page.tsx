@@ -93,10 +93,11 @@ export default function OfferDesignCennikPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        {/* 1. Dlaczego (mechanizm + sens usługi) */}
         <SectionInfo title="Dlaczego warto mieć profesjonalny projekt cennika?">
           <p>
-            Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia porównanie, zachęca do wyboru droższych opcji oraz buduje profesjonalny wizerunek Twojej firmy. Klient widzi jasną strukturę,
-            zamiast listy przypadkowych pozycji.
+            Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia porównanie, zachęca do wyboru droższych opcji oraz buduje profesjonalny wizerunek Twojej firmy. Klient widzi jasną i
+            estetyczną strukturę, co dodatkowo wzbudza zaufanie.
           </p>
 
           <br />
@@ -127,45 +128,24 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Dla kogo jest projekt cennika?" subtitle="Kiedy ma największy sens?">
-          <p>Największą wartość z profesjonalnego projektu cennika widzimy u firm, które chcą uporządkować ofertę i ułatwić klientom podjęcie decyzji.</p>
-
-          <br />
-
-          <ul className="ml-5 list-disc space-y-2">
-            <li>Masz kilka lub kilkanaście usług / pakietów i klienci dopytują, czym dokładnie się różnią.</li>
-            <li>Obecny cennik powstał „tymczasowo” w Wordzie lub Excelu i nie pasuje do reszty identyfikacji.</li>
-            <li>Chcesz podnieść ceny, ale potrzebujesz lepszej argumentacji wizualnej i logicznej struktury oferty.</li>
-            <li>Planujesz wprowadzić pakiety (Standard / Premium / VIP) i chcesz, aby klient naturalnie wybierał właściwą opcję.</li>
-            <li>Chcesz mieć jeden spójny cennik dla punktu stacjonarnego, strony www i social media.</li>
-          </ul>
-
-          <br />
-
-          <p>Jeśli Twój cennik jest dziś „roboczym dokumentem”, który trudno pokazać klientowi, projekt graficzny zamienia go w narzędzie sprzedaży - czytelne, estetyczne i spójne z marką.</p>
-        </SectionInfo>
-
-        <Gap variant="line" />
-
+        {/* 2. Co dokładnie dostaje klient (offer stack) */}
         <FeatureGrid
           title="Co zawiera projekt cennika?"
           subtitle="Nasz standard pracy"
           items={[
             {
               title: 'Przejrzysty układ i hierarchia',
-              description: <>Projektujemy logiczne sekcje, wyróżniamy kluczowe usługi i podkreślamy rekomendowane opcje, aby ułatwić wybór klientowi i uporządkować rozmowę o cenach.</>,
+              description: <>Projektujemy logiczne sekcje, wyróżniamy kluczowe usługi i podkreślamy rekomendowane opcje, aby ułatwić wybór klientowi, ułatwiając przy tym rozmowę o cenach.</>,
               icon: <RiTableLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
-              description: (
-                <>Kolory, czcionki i ikony dopasowujemy do stylu Twojej marki oraz branży. Cennik staje się integralną częścią Twojej komunikacji, a nie osobnym dokumentem „z innej bajki”.</>
-              ),
+              description: <>Kolory, czcionki i ikony dopasowujemy do stylu Twojej marki oraz branży. Cennik staje się integralną częścią Twojej komunikacji.</>,
               icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wersje do druku i online',
-              description: <>Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do publikacji na stronie, w systemach rezerwacji lub social mediach. Nie musisz dopasowywać plików samodzielnie.</>,
+              description: <>Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do publikacji na stronie czy mediach społecznościowych. Dostajesz gotową paczkę plików.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -173,6 +153,29 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
+        {/* 3. Dla kogo (segmentacja) */}
+        <SectionInfo title="Dla kogo jest projekt cennika?" subtitle="Kiedy ma największy sens?">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>Masz kilka lub kilkanaście usług / pakietów i klienci dopytują, czym dokładnie się różnią.</li>
+            <li>Obecny cennik powstał „tymczasowo” w Wordzie lub Excelu i nie pasuje do reszty identyfikacji.</li>
+            <li>Chcesz podnieść ceny, ale potrzebujesz lepszej argumentacji wizualnej i logicznej struktury oferty.</li>
+            <li>Planujesz wprowadzić pakiety (Standard / Premium / VIP) i chcesz, aby klient naturalnie wybierał właściwą opcję.</li>
+            <li>Chcesz mieć jeden spójny cennik dla punktu stacjonarnego, strony www i mediów społecznościowych.</li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* 4. Proof: realizacje + opinie */}
+        <ProjectsOverview title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
+        {/* 5. Cennik / pakiety – po proofie */}
         <SectionPrices
           title="Projekt cennika - przykładowe zakresy"
           subtitle="Dobieramy format i poziom szczegółowości do Twojej oferty"
@@ -222,10 +225,56 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        {/* 6. Proces / ryzyko – jak to wygląda w praktyce */}
+        <FeesSteps />
 
         <Gap variant="line" />
 
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        {/* 7. FAQ – obiekcje przed kontaktem */}
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika"
+          title="Najczęstsze pytania o projekt cennika"
+          items={[
+            {
+              question: 'W jakim formacie przygotujecie cennik?',
+              answer: 'Najczęściej tworzymy cenniki w formacie A4 oraz A5. Możemy dopasować projekt do strony www lub materiałów drukowanych.',
+            },
+            {
+              question: 'Czy mogę dodać zdjęcia lub ikony do cennika?',
+              answer: 'Tak. Możemy wzbogacić projekt o grafiki, zdjęcia produktów lub ikony ilustrujące usługi.',
+            },
+            {
+              question: 'Czy mogę później edytować cennik?',
+              answer: 'Tak, na życzenie możemy dostarczyć pliki źródłowe oraz prostą instrukcję edycji, dzięki której będziesz w stanie samodzielnie zaktualizować ceny.',
+            },
+            {
+              question: 'Jak długo trwa realizacja?',
+              answer: 'Zazwyczaj od 3 do 5 dni roboczych. Dla cenników z dużą liczbą pozycji termin ustalamy indywidualnie.',
+            },
+            {
+              question: 'Czy możliwe jest zrealizowanie cennika, który ma wiele stron?',
+              answer: 'Tak - możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem w formie wielostronicowej.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        {/* 8. Kontakt – dopiero po zbijaniu obiekcji */}
+        <ContactForm
+          title="Zamów projekt cennika"
+          description="Opisz, czym się zajmujesz, jak wygląda dziś Twoja oferta i w jaki sposób pokazujesz ceny. Na tej podstawie przygotujemy propozycję układu, termin oraz wycenę."
+          defaultSubject="Projekt cennika"
+        />
+
+        <Gap variant="line" />
+
+        {/* 9. Cross-sell – z czym połączyć cennik */}
         <SectionSteps
           title="Z czym warto połączyć projekt cennika?"
           subtitle="Zobacz też"
@@ -283,26 +332,6 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt cennika"
-          description="Opisz, czym się zajmujesz, jak wygląda dziś Twoja oferta i w jaki sposób pokazujesz ceny. Na tej podstawie przygotujemy propozycję układu, termin oraz wycenę."
-          defaultSubject="Projekt cennika"
-        />
-
-        <Gap variant="line" />
-
         <SectionInfo title="Z czym najczęściej łączymy projekt cennika?" subtitle="Powiązane materiały">
           <p>Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych.</p>
 
@@ -343,36 +372,6 @@ export default function OfferDesignCennikPage() {
             Możemy zaplanować cały zestaw materiałów w jednym procesie, tak aby każdy element - strona, cennik, katalog, social media - opowiadał tę samą historię i pracował na Twój wynik finansowy.
           </p>
         </SectionInfo>
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika"
-          title="Najczęstsze pytania o projekt cennika"
-          items={[
-            {
-              question: 'W jakim formacie przygotujecie cennik?',
-              answer: 'Najczęściej tworzymy cenniki w formacie A4 oraz A5. Możemy dopasować projekt do strony www lub materiałów drukowanych.',
-            },
-            {
-              question: 'Czy mogę dodać zdjęcia lub ikony do cennika?',
-              answer: 'Tak. Możemy wzbogacić projekt o grafiki, zdjęcia produktów lub ikony ilustrujące usługi.',
-            },
-            {
-              question: 'Czy mogę później edytować cennik?',
-              answer: 'Tak, na życzenie możemy dostarczyć pliki źródłowe oraz prostą instrukcję edycji, dzięki której będziesz w stanie samodzielnie zaktualizować ceny.',
-            },
-            {
-              question: 'Jak długo trwa realizacja?',
-              answer: 'Zazwyczaj od 3 do 5 dni roboczych. Dla cenników z dużą liczbą pozycji termin ustalamy indywidualnie.',
-            },
-            {
-              question: 'Czy możliwe jest zrealizowanie cennika, który ma wiele stron?',
-              answer: 'Tak - możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem w formie wielostronicowej.',
-            },
-          ]}
-        />
 
         <Gap variant="line" />
 

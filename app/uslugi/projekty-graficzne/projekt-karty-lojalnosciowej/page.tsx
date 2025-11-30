@@ -94,6 +94,7 @@ export default function OfferDesignKartaPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        {/* 1. Dlaczego – value & pain */}
         <SectionInfo title="Dlaczego warto zainwestować w karty lojalnościowe?">
           <p>
             <strong>Karty lojalnościowe realnie zwiększają liczbę powrotów klientów.</strong> To proste narzędzie, które wzmacnia nawyk: „wracam do tej samej firmy, bo tu mam konkretne korzyści”. W
@@ -127,29 +128,7 @@ export default function OfferDesignKartaPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Dla kogo jest karta lojalnościowa?" subtitle="Kiedy ten projekt szybko się zwraca?">
-          <p>
-            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient wracał regularnie - nawet kilka lub kilkanaście razy w roku. Im częściej ktoś korzysta z Twoich
-            usług, tym szybciej karta „spłaca się” w praktyce.
-          </p>
-
-          <br />
-
-          <ul className="ml-5 list-disc space-y-2">
-            <li>Salony beauty, fryzjerzy, barberzy - regularne wizyty i łatwe rekomendacje „z ust do ust”.</li>
-            <li>Kawiarnie i lokale gastronomiczne - program „zbierz pieczątki, odbierz nagrodę”, który klienci znają i lubią.</li>
-            <li>Siłownie, studia treningowe, zajęcia grupowe - wsparcie utrzymania karnetów i dłuższej współpracy.</li>
-            <li>Butiki, sklepy stacjonarne, concept story - zniżki dla stałych klientów, premiowanie częstszych zakupów.</li>
-            <li>Gabinetowe usługi specjalistyczne - nienachalny sposób na przypomnienie o kolejnych wizytach.</li>
-          </ul>
-
-          <br />
-
-          <p>Jeśli masz poczucie, że wiele osób pojawia się u Ciebie „tylko raz”, karta lojalnościowa może stać się prostym mechanizmem, który zamienia jednorazowych klientów w stałych bywalców.</p>
-        </SectionInfo>
-
-        <Gap variant="line" />
-
+        {/* 2. Offer stack – co dokładnie zawiera projekt */}
         <FeatureGrid
           title="Co zawiera projekt karty lojalnościowej?"
           subtitle="Nasz standard pracy"
@@ -185,6 +164,40 @@ export default function OfferDesignKartaPage() {
 
         <Gap variant="line" />
 
+        {/* 3. Dla kogo – filtr */}
+        <SectionInfo title="Dla kogo jest karta lojalnościowa?" subtitle="Kiedy ten projekt szybko się zwraca?">
+          <p>
+            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient wracał regularnie - nawet kilka lub kilkanaście razy w roku. Im częściej ktoś korzysta z Twoich
+            usług, tym szybciej karta „spłaca się” w praktyce.
+          </p>
+
+          <br />
+
+          <ul className="ml-5 list-disc space-y-2">
+            <li>Salony beauty, fryzjerzy, barberzy - regularne wizyty i łatwe rekomendacje „z ust do ust”.</li>
+            <li>Kawiarnie i lokale gastronomiczne - program „zbierz pieczątki, odbierz nagrodę”, który klienci znają i lubią.</li>
+            <li>Siłownie, studia treningowe, zajęcia grupowe - wsparcie utrzymania karnetów i dłuższej współpracy.</li>
+            <li>Butiki, sklepy stacjonarne, concept story - zniżki dla stałych klientów, premiowanie częstszych zakupów.</li>
+            <li>Gabinetowe usługi specjalistyczne - nienachalny sposób na przypomnienie o kolejnych wizytach.</li>
+          </ul>
+
+          <br />
+
+          <p>Jeśli masz poczucie, że wiele osób pojawia się u Ciebie „tylko raz”, karta lojalnościowa może stać się prostym mechanizmem, który zamienia jednorazowych klientów w stałych bywalców.</p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* 4. Proof – realizacje + opinie */}
+        <ProjectsOverview title="Przykładowe projekty graficzne" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
+        {/* 5. Cennik / pakiety – po proofie */}
         <SectionPrices
           title="Projekt karty lojalnościowej - przykładowe zakresy"
           subtitle="Dobieramy zakres do wielkości programu i liczby lokalizacji"
@@ -234,10 +247,54 @@ export default function OfferDesignKartaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Przykładowe projekty graficzne" category="grafika" subtitle="Portfolio" />
+        {/* 6. Proces / ryzyko */}
+        <FeesSteps />
 
         <Gap variant="line" />
 
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        {/* 7. FAQ – obiekcje */}
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej"
+          title="Najczęstsze pytania o karty lojalnościowe"
+          items={[
+            {
+              question: 'W jakich formatach wykonujecie karty?',
+              answer:
+                'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki (np. 85 × 55 mm). Jeśli potrzebujesz innego formatu - dopasujemy projekt do wymagań Twojej drukarni lub specyfiki branży.',
+            },
+            {
+              question: 'Czy mogę dodać logo i kolory marki na kartę lojalnościową?',
+              answer: 'Tak - projekt zawsze opiera się na Twoim wizerunku. Korzystamy z logo, kolorów i stylu identyfikacji wizualnej, aby zachować pełną spójność materiałów.',
+            },
+            {
+              question: 'Jak długo trwa realizacja kart lojalnościowych?',
+              answer: 'Standardowo przygotowanie projektu wraz z plikami do druku trwa od 3 do 5 dni roboczych. Przy większej liczbie wariantów lub sieci punktów termin ustalamy indywidualnie.',
+            },
+            {
+              question: 'Czy mogę zamówić serię różnych kart lojalnościowych?',
+              answer:
+                'Tak - możemy przygotować serię spójną wizualnie dla wielu punktów, lokalizacji lub marek partnerskich. Dzięki temu program jest łatwy do zrozumienia, a jednocześnie dopasowany do konkretnych miejsc.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        {/* 8. Kontakt */}
+        <ContactForm
+          title="Zamów projekt karty lojalnościowej"
+          description="Opisz, w jakiej branży działasz, jak chcesz nagradzać swoich klientów oraz ile różnych kart potrzebujesz. Na tej podstawie przygotujemy propozycję układu, wycenę i termin realizacji."
+          defaultSubject="Projekt karty lojalnościowej"
+        />
+
+        <Gap variant="line" />
+
+        {/* 9. Cross-sell – co dalej / z czym połączyć */}
         <SectionSteps
           title="Z czym warto połączyć karty lojalnościowe?"
           subtitle="Zobacz też"
@@ -273,54 +330,6 @@ export default function OfferDesignKartaPage() {
             },
           ]}
           grid="two"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt karty lojalnościowej"
-          description="Opisz, w jakiej branży działasz, jak chcesz nagradzać swoich klientów oraz ile różnych kart potrzebujesz. Na tej podstawie przygotujemy propozycję układu, wycenę i termin realizacji."
-          defaultSubject="Projekt karty lojalnościowej"
-        />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej"
-          title="Najczęstsze pytania o karty lojalnościowe"
-          items={[
-            {
-              question: 'W jakich formatach wykonujecie karty?',
-              answer:
-                'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki (np. 85 × 55 mm). Jeśli potrzebujesz innego formatu - dopasujemy projekt do wymagań Twojej drukarni lub specyfiki branży.',
-            },
-            {
-              question: 'Czy mogę dodać logo i kolory marki na kartę lojalnościową?',
-              answer: 'Tak - projekt zawsze opiera się na Twoim wizerunku. Korzystamy z logo, kolorów i stylu identyfikacji wizualnej, aby zachować pełną spójność materiałów.',
-            },
-            {
-              question: 'Jak długo trwa realizacja kart lojalnościowych?',
-              answer: 'Standardowo przygotowanie projektu wraz z plikami do druku trwa od 3 do 5 dni roboczych. Przy większej liczbie wariantów lub sieci punktów termin ustalamy indywidualnie.',
-            },
-            {
-              question: 'Czy mogę zamówić serię różnych kart lojalnościowych?',
-              answer:
-                'Tak - możemy przygotować serię spójną wizualnie dla wielu punktów, lokalizacji lub marek partnerskich. Dzięki temu program jest łatwy do zrozumienia, a jednocześnie dopasowany do konkretnych miejsc.',
-            },
-          ]}
         />
 
         <Gap variant="line" />

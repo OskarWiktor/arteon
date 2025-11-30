@@ -20,6 +20,9 @@ import {
   RiPencilLine,
   RiShareForwardLine,
   RiShoppingCartLine,
+  RiCoupon2Line,
+  RiPriceTag3Line,
+  RiRestaurant2Line,
 } from 'react-icons/ri';
 
 export const metadata = {
@@ -98,19 +101,22 @@ export default function OfferPage() {
 
         <SectionSteps
           title="Projekty graficzne"
+          subtitle="Kompleksowa oferta projektowa"
+          description="Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik."
+          grid="two"
           items={[
             {
               icon: <RiIdCardLine className="h-8 w-8" />,
               title: 'Projekt wizytówki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Wizytówka wyjaśnia czym się zajmujesz w kilka sekund. Tworzymy projekty wizytówek, które łączą czytelność, elegancję i profesjonalny układ. Otrzymujesz gotowe pliki źródłowe oraz
                     do druku.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Przejdź do wizytówek
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -121,13 +127,13 @@ export default function OfferPage() {
               title: 'Projekt ulotki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Ulotka to najprostszy sposób, by dotrzeć lokalnie do nowych klientów. Zaprojektujemy ją tak, by jasno przedstawiała ofertę, przyciągała wzrok i kierowała prosto do zakupu lub
                     kontaktu.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
-                      Przejdź do ulotek
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -138,12 +144,12 @@ export default function OfferPage() {
               title: 'Teczka ofertowa',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Teczka ofertowa podnosi prestiż firmy i buduje zaufanie. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał firmowy.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
-                      Przejdź do teczek
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -154,10 +160,10 @@ export default function OfferPage() {
               title: 'Papier firmowy',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">Papier firmowy wzmacnia profesjonalny wizerunek w każdej korespondencji. Przygotowujemy szablony Word i PDF i wersję gotową do druku.</p>
+                  <p className="mb-3 text-sm">Papier firmowy wzmacnia profesjonalny wizerunek w każdej korespondencji. Przygotowujemy szablony Word i PDF i wersję gotową do druku.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
-                      Przejdź do papieru firmowego
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -168,12 +174,12 @@ export default function OfferPage() {
               title: 'Odzież firmowa',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Odzież z logo zwiększa rozpoznawalność marki. Projektujemy nadruki i hafty dla zespołów, eventów i punktów sprzedaży - w wersjach pod sitodruk, DTF lub haft komputerowy.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-odziezy-firmowej">
-                      Przejdź do odzieży firmowej
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -184,13 +190,13 @@ export default function OfferPage() {
               title: 'Projekt logo',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Logo to fundament identyfikacji wizualnej. Tworzymy znak, który oddaje charakter marki i pozostaje czytelny w każdym formacie. Otrzymujesz wersje wektorowe, kolorystyczne i
                     mini-księgę znaku.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-logo">
-                      Przejdź do projektów logo
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -201,13 +207,13 @@ export default function OfferPage() {
               title: 'Projekt katalogu',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Katalog firmowy to wizualna prezentacja Twojej oferty. Zadbamy o skład, zdjęcia i typografię, dzięki czemu każdy produkt będzie przedstawiony czytelnie i estetycznie - w wersji
                     drukowanej lub online.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
-                      Przejdź do katalogów
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -218,12 +224,12 @@ export default function OfferPage() {
               title: 'Identyfikacja wizualna',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Projektujemy identyfikację, która buduje zaufanie i spójność w każdym punkcie styku z klientem.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Przejdź do identyfikacji wizualnej
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>
@@ -234,12 +240,94 @@ export default function OfferPage() {
               title: 'Projekt graficzny strony',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">
+                  <p className="mb-3 text-sm">
                     Makiety i layouty stron internetowych tworzone z myślą o konwersji i doświadczeniu użytkownika. Łączymy estetykę, UX i SEO, aby Twoja witryna wyróżniała się w sieci.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
-                      Przejdź do projektów stron
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Szablony postów na social media',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikację, tworząc spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
+                    eksportu z czytelną hieratchią treści i miejscem na wezwanie do działania.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiCoupon2Line className="h-8 w-8" />,
+              title: 'Kupony rabatowe i vouchery',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Kupony rabatowe i vouchery, które zachęcają Twoich klientów do powrotu i wspierają sprzedaż. Dostarczamy gotowe pliki do druku, spójne z wizerunkiem Twojej marki.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPriceTag3Line className="h-8 w-8" />,
+              title: 'Projekt cennika',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Profesjonalne cenniki, które porządkują Twoją ofertę i budują profesjonalny wizerunek. Dostarczamy pliki gotowe do druku oraz dodania na stronę czy media społecznościowe.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-cennika">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiCoupon2Line className="h-8 w-8" />,
+              title: 'Karty lojalnościowe',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Tworzymy projekty kart lojalnościowych, które zachęcają do regularnych powrotów Twoich klientów. Projektujemy czytelne układy z miejscem na pieczątki. Otrzymujesz gotowe pliki do
+                    druku.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej">
+                      Przejdź do oferty
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiRestaurant2Line className="h-8 w-8" />,
+              title: 'Projekt menu restauracji',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Menu dla restauracji, baru czy kawiarni. Tworzymy czytelne układy, ze spójną typografią zgodnie z wizerunkiem Twojej firmy. Otrzymujesz pliki do druku oraz wersję online.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-menu-restauracji">
+                      Przejdź do oferty
                     </Button>
                   </div>
                 </div>

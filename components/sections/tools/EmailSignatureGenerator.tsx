@@ -28,6 +28,7 @@ interface SignatureConfig {
   socials: Record<SocialKey, string>;
   legalNote: string;
   formalLine: string;
+  avatarUrl: string;
 }
 
 interface StyleConfig {
@@ -79,6 +80,7 @@ const DEFAULT_SIGNATURE: SignatureConfig = {
   },
   legalNote: 'Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość.',
   formalLine: '',
+  avatarUrl: '',
 };
 
 const DEFAULT_STYLE: StyleConfig = {
@@ -195,24 +197,32 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
   const hasJobTitle = config.jobTitle.trim().length > 0;
   const hasNameTag = config.nameTag.trim().length > 0;
   const hasFormalLine = config.formalLine.trim().length > 0;
+  const hasAvatar = config.avatarUrl.trim().length > 0;
 
-  const contactItems: string[] = [];
+  const avatarSize = 56;
+  const avatarImg = hasAvatar ? `<img src="${escapeHtml(config.avatarUrl.trim())}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" />` : '';
+  const avatarCellInline = hasAvatar ? `<td style="padding-right:12px;vertical-align:top;">${avatarImg}</td>` : '';
+
   const telLabel = 'Tel.';
   const mailLabel = 'E-mail';
   const webLabel = 'Strona';
 
+  const contactItems: string[] = [];
+
   if (config.phone.trim()) {
+    const phone = formatPhone(config.phone);
     contactItems.push(
       `<span style="margin-right:12px;white-space:nowrap;"><span style="font-weight:bold;">${telLabel}:</span> <a href="tel:${escapeHtml(
-        formatPhone(config.phone),
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(formatPhone(config.phone))}</a></span>`,
+        phone,
+      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(phone)}</a></span>`,
     );
   }
   if (config.email.trim()) {
+    const email = config.email.trim();
     contactItems.push(
       `<span style="margin-right:12px;white-space:nowrap;"><span style="font-weight:bold;">${mailLabel}:</span> <a href="mailto:${escapeHtml(
-        config.email.trim(),
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(config.email.trim())}</a></span>`,
+        email,
+      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(email)}</a></span>`,
     );
   }
   if (config.website.trim()) {
@@ -237,127 +247,52 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     .filter((s) => config.socials[s.key] && config.socials[s.key]?.trim().length)
     .map((s) => {
       const url = normalizeUrl(config.socials[s.key]);
-      const label = s.label;
-      return `<a href="${escapeHtml(url)}" style="display:inline-block;margin-right:10px;margin-bottom:2px;color:${accentColor};text-decoration:none;font-size:${baseFontSize};">${label}</a>`;
+      return `<a href="${escapeHtml(url)}" style="display:inline-block;margin-right:10px;margin-bottom:2px;color:${accentColor};text-decoration:none;font-size:${baseFontSize};">${s.label}</a>`;
     });
 
   const ctaHtml =
     config.ctaLabel.trim() && config.ctaUrl.trim()
-      ? `<tr>
-          <td style="padding-top:10px;">
-            <a href="${escapeHtml(
-              normalizeUrl(config.ctaUrl),
-            )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:#ffffff;text-decoration:none;font-size:${baseFontSize};">
-              ${escapeHtml(config.ctaLabel.trim())}
-            </a>
-          </td>
-        </tr>`
+      ? `<tr><td style="padding-top:10px;"><a href="${escapeHtml(
+          normalizeUrl(config.ctaUrl),
+        )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:#ffffff;text-decoration:none;font-size:${baseFontSize};">${escapeHtml(
+          config.ctaLabel.trim(),
+        )}</a></td></tr>`
       : '';
 
-  const legalHtml = config.legalNote.trim()
-    ? `<tr>
-        <td style="padding-top:12px;font-size:11px;line-height:1.4;color:${textColor};">
-          ${formatMultiline(config.legalNote.trim())}
-        </td>
-      </tr>`
-    : '';
+  const legalHtml = config.legalNote.trim() ? `<tr><td style="padding-top:12px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.legalNote.trim())}</td></tr>` : '';
 
-  const dividerHtml = style.showDivider
-    ? `<tr>
-        <td style="padding-top:10px;padding-bottom:10px;">
-          <div style="border-top:1px solid #e5e7eb;width:100%;"></div>
-        </td>
-      </tr>`
-    : '';
+  const dividerHtml = style.showDivider ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:1px solid #e5e7eb;width:100%;"></div></td></tr>` : '';
 
-  const formalHtml = hasFormalLine
-    ? `<tr>
-        <td style="padding-top:6px;font-size:11px;line-height:1.4;color:${textColor};">
-          ${formatMultiline(config.formalLine.trim())}
-        </td>
-      </tr>`
-    : '';
+  const formalHtml = hasFormalLine ? `<tr><td style="padding-top:6px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.formalLine.trim())}</td></tr>` : '';
 
   const topLineHtml = hasTopLine
-    ? `<tr>
-        <td style="padding:0 0 4px 0;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};">
-          ${escapeHtml(config.topLine.trim())}
-        </td>
-      </tr>`
+    ? `<tr><td style="padding:0 0 4px 0;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};">${escapeHtml(config.topLine.trim())}</td></tr>`
     : '';
 
-  const nameRowHtml = `<tr>
-    <td style="padding:0 0 4px 0;">
-      <span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(config.fullName || '')}</span>${
-        hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid #e5e7eb;font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''
-      }
-    </td>
-  </tr>`;
+  const nameRowHtml = `<tr><td style="padding:0 0 4px 0;"><span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(
+    config.fullName || '',
+  )}</span>${hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid #e5e7eb;font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''}</td></tr>`;
 
   const titleCompanyHtml =
     hasJobTitle || hasCompany
-      ? `<tr>
-          <td style="padding:0 0 4px 0;">
-            <span style="color:${textColor};">
-              ${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}
-            </span>
-          </td>
-        </tr>`
+      ? `<tr><td style="padding:0 0 4px 0;"><span style="color:${textColor};">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${
+          hasJobTitle && hasCompany ? ' · ' : ''
+        }${hasCompany ? escapeHtml(config.company.trim()) : ''}</span></td></tr>`
       : '';
 
-  const extraLineHtml = hasExtraLine
-    ? `<tr>
-        <td style="padding:0 0 6px 0;color:${textColor};">
-          ${escapeHtml(config.extraLine.trim())}
-        </td>
-      </tr>`
-    : '';
+  const extraLineHtml = hasExtraLine ? `<tr><td style="padding:0 0 6px 0;color:${textColor};">${escapeHtml(config.extraLine.trim())}</td></tr>` : '';
 
-  const addressHtml = hasAddress
-    ? `<tr>
-        <td style="padding:0 0 6px 0;color:${textColor};font-size:${baseFontSize};">
-          ${formatMultiline(config.address.trim())}
-        </td>
-      </tr>`
-    : '';
+  const addressHtml = hasAddress ? `<tr><td style="padding:0 0 6px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(config.address.trim())}</td></tr>` : '';
 
-  const contactHtml = contactItems.length
-    ? `<tr>
-        <td style="padding:4px 0 0 0;color:${textColor};">
-          ${contactItems.join('<span style="margin-right:4px;">&nbsp;</span>')}
-        </td>
-      </tr>`
-    : '';
+  const contactHtml = contactItems.length ? `<tr><td style="padding:4px 0 0 0;color:${textColor};">${contactItems.join('<span style="margin-right:4px;">&nbsp;</span>')}</td></tr>` : '';
 
-  const socialsHtml = socialLinks.length
-    ? `<tr>
-        <td style="padding-top:8px;color:${textColor};">
-          ${socialLinks.join('')}
-        </td>
-      </tr>`
-    : '';
+  const socialsHtml = socialLinks.length ? `<tr><td style="padding-top:8px;color:${textColor};">${socialLinks.join('')}</td></tr>` : '';
 
-  const headerBlock = `
-    ${topLineHtml}
-    ${nameRowHtml}
-    ${titleCompanyHtml}
-  `;
+  const headerBlock = `${topLineHtml}${nameRowHtml}${titleCompanyHtml}`;
 
-  const contentBlock = `
-    ${extraLineHtml}
-    ${addressHtml}
-    ${contactHtml}
-    ${socialsHtml}
-    ${ctaHtml}
-    ${dividerHtml}
-    ${formalHtml}
-    ${legalHtml}
-  `;
+  const contentBlock = `${extraLineHtml}${addressHtml}${contactHtml}${socialsHtml}${ctaHtml}${dividerHtml}${formalHtml}${legalHtml}`;
 
-  const innerRows = `
-    ${headerBlock}
-    ${contentBlock}
-  `;
+  const innerRows = `${headerBlock}${contentBlock}`;
 
   let layoutWrapper = '';
 
@@ -368,7 +303,14 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         <tr>
           <td style="padding:${paddingAll};vertical-align:top;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              ${innerRows}
+              <tr>
+                ${avatarCellInline}
+                <td style="vertical-align:top;">
+                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+                    ${innerRows}
+                  </table>
+                </td>
+              </tr>
             </table>
           </td>
         </tr>
@@ -382,7 +324,14 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         <tr>
           <td style="padding:${paddingAll};border-left:4px solid ${accentColor};padding-left:${paddingLeftAccent};vertical-align:top;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              ${innerRows}
+              <tr>
+                ${avatarCellInline}
+                <td style="vertical-align:top;">
+                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+                    ${innerRows}
+                  </table>
+                </td>
+              </tr>
             </table>
           </td>
         </tr>
@@ -395,10 +344,13 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     const bannerName = `<div style="font-size:15px;font-weight:bold;margin-top:2px;">${escapeHtml(config.fullName || '')}</div>`;
     const bannerTitleCompany =
       hasJobTitle || hasCompany
-        ? `<div style="font-size:${baseFontSize};opacity:0.95;margin-top:2px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${
-            hasCompany ? escapeHtml(config.company.trim()) : ''
-          }</div>`
+        ? `<div style="font-size:${baseFontSize};opacity:0.95;margin-top:2px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${
+            hasJobTitle && hasCompany ? ' · ' : ''
+          }${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>`
         : '';
+    const bannerAvatar = hasAvatar
+      ? `<td style="text-align:right;vertical-align:middle;"><img src="${escapeHtml(config.avatarUrl.trim())}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;border:2px solid #ffffff;display:inline-block;" /></td>`
+      : '';
 
     layoutWrapper = `
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
@@ -410,9 +362,16 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
                   <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;">
                     <tr>
                       <td style="background-color:${accentColor};color:#ffffff;padding:8px 12px;">
-                        ${bannerTopLine}
-                        ${bannerName}
-                        ${bannerTitleCompany}
+                        <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;">
+                          <tr>
+                            <td style="vertical-align:middle;">
+                              ${bannerTopLine}
+                              ${bannerName}
+                              ${bannerTitleCompany}
+                            </td>
+                            ${bannerAvatar}
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
@@ -436,55 +395,31 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     let labelRows = '';
 
     if (config.phone.trim()) {
-      labelRows += `
-        <tr>
-          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${telLabel}:</td>
-          <td style="padding:2px 0 2px 0;">
-            <a href="tel:${escapeHtml(formatPhone(config.phone))}" style="color:${accentColor};text-decoration:none;">${escapeHtml(formatPhone(config.phone))}</a>
-          </td>
-        </tr>
-      `;
+      const phone = formatPhone(config.phone);
+      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${telLabel}:</td><td style="padding:2px 0 2px 0;"><a href="tel:${escapeHtml(
+        phone,
+      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(phone)}</a></td></tr>`;
     }
     if (config.email.trim()) {
-      labelRows += `
-        <tr>
-          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${mailLabel}:</td>
-          <td style="padding:2px 0 2px 0;">
-            <a href="mailto:${escapeHtml(config.email.trim())}" style="color:${accentColor};text-decoration:none;">${escapeHtml(config.email.trim())}</a>
-          </td>
-        </tr>
-      `;
+      const email = config.email.trim();
+      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${mailLabel}:</td><td style="padding:2px 0 2px 0;"><a href="mailto:${escapeHtml(
+        email,
+      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(email)}</a></td></tr>`;
     }
     if (config.website.trim()) {
       const normalized = normalizeUrl(config.website);
-      labelRows += `
-        <tr>
-          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${webLabel}:</td>
-          <td style="padding:2px 0 2px 0;">
-            <a href="${escapeHtml(normalized)}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a>
-          </td>
-        </tr>
-      `;
+      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${webLabel}:</td><td style="padding:2px 0 2px 0;"><a href="${escapeHtml(
+        normalized,
+      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></td></tr>`;
     }
     if (hasAddress) {
-      labelRows += `
-        <tr>
-          <td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">Adres:</td>
-          <td style="padding:2px 0 2px 0;color:${textColor};font-size:${baseFontSize};">
-            ${formatMultiline(config.address.trim())}
-          </td>
-        </tr>
-      `;
+      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">Adres:</td><td style="padding:2px 0 2px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(
+        config.address.trim(),
+      )}</td></tr>`;
     }
 
     const labelTableHtml = labelRows
-      ? `<tr>
-          <td style="padding:4px 0 4px 0;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};">
-              ${labelRows}
-            </table>
-          </td>
-        </tr>`
+      ? `<tr><td style="padding:4px 0 4px 0;"><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};">${labelRows}</table></td></tr>`
       : '';
 
     layoutWrapper = `
@@ -492,14 +427,21 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         <tr>
           <td style="padding:${paddingAll};vertical-align:top;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              ${headerBlock}
-              ${extraLineHtml}
-              ${labelTableHtml}
-              ${socialsHtml}
-              ${ctaHtml}
-              ${dividerHtml}
-              ${formalHtml}
-              ${legalHtml}
+              <tr>
+                ${avatarCellInline}
+                <td style="vertical-align:top;">
+                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+                    ${headerBlock}
+                    ${extraLineHtml}
+                    ${labelTableHtml}
+                    ${socialsHtml}
+                    ${ctaHtml}
+                    ${dividerHtml}
+                    ${formalHtml}
+                    ${legalHtml}
+                  </table>
+                </td>
+              </tr>
             </table>
           </td>
         </tr>
@@ -508,11 +450,18 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
   }
   // CENTERED
   else if (layout === 'centered') {
+    const avatarRowCentered = hasAvatar
+      ? `<tr><td style="padding:0 0 8px 0;text-align:center;"><img src="${escapeHtml(
+          config.avatarUrl.trim(),
+        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:inline-block;" /></td></tr>`
+      : '';
+
     layoutWrapper = `
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
         <tr>
           <td style="padding:${paddingAll};vertical-align:top;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};text-align:center;">
+              ${avatarRowCentered}
               ${innerRows}
             </table>
           </td>
@@ -521,7 +470,8 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     `;
   }
 
-  return layoutWrapper.trim();
+  // lekkie "minifikowanie" HTML, żeby był krótszy dla Gmaila
+  return layoutWrapper.replace(/\s{2,}/g, ' ').trim();
 }
 
 function PanelButton({ id, current, icon, label, onClick }: PanelButtonProps) {
@@ -691,6 +641,18 @@ export default function EmailSignatureGenerator() {
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
                     placeholder="Np. nazwa firmy lub claim"
                   />
+                </div>
+
+                <div>
+                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Avatar / logo (URL obrazu)</label>
+                  <input
+                    type="url"
+                    value={config.avatarUrl}
+                    onChange={(e) => handleTextChange('avatarUrl', e.target.value)}
+                    className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                    placeholder="https://adrestwojejdomeny.pl/avatar.png"
+                  />
+                  <p className="mt-1 text-xs! text-[#5e5e5e]">Najlepiej kwadratowy obraz min. 120x120 px, z publicznym adresem URL.</p>
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
