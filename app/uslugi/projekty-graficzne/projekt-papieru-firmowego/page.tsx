@@ -16,11 +16,13 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',
   description: 'Papier firmowy, który wzmacnia wizerunek w korespondencji. Szablony Word/PDF oraz wersje gotowe do druku.',
-  keywords: ['projekt papieru firmowego', 'papier firmowy', 'szablon firmowy', 'projekt do druku', 'materiały firmowe'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
   openGraph: {
     title: 'Projekt papieru firmowego | Arteon',
@@ -49,12 +51,14 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignXxxPage() {
+export default function OfferDesignPapierFirmowyPage() {
   return (
     <>
       <HeroBanner
         title="Projekt papieru firmowego"
-        description={<>Każda korespondencja może wzmacniać markę. Projektujemy papier firmowy z prawidłowymi szablonami Word/PDF i plikami do druku - czytelny, spójny i profesjonalny.</>}
+        description={
+          <>Każda korespondencja może wzmacniać markę. Projektujemy papier firmowy z prawidłowymi szablonami Word/PDF i plikami do druku - czytelny, spójny i profesjonalny w codziennej pracy.</>
+        }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Realizacje"
@@ -76,7 +80,10 @@ export default function OfferDesignXxxPage() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-papieru-firmowego`, label: 'Projekt papieru firmowego' }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-papieru-firmowego`,
+          label: 'Projekt papieru firmowego',
+        }}
         includeJsonLd
       />
 
@@ -88,7 +95,7 @@ export default function OfferDesignXxxPage() {
             <strong>Własny projekt papieru firmowego sprawia, że dokumenty wyglądają profesjonalnie od pierwszej sekundy.</strong> Oferty, umowy i pisma mają jeden, spójny wzór - logo, układ, dane
             kontaktowe - dzięki czemu autorytet Twojej marki wzrasta. Estetyczna oprawa zwiększa postrzeganą wiarygodność marki już w pierwszych sekundach
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
-              (źródło)
+              (Stanford - web credibility)
             </a>
             .
           </p>
@@ -101,14 +108,14 @@ export default function OfferDesignXxxPage() {
           <ul className="ml-5 list-disc">
             <li>Ujednolica korespondencję i porządkuje dane,</li>
             <li>Uspójnia wygląd ofert i umów w całej firmie,</li>
-            <li>Podnosi zaufanie i ułatwia kontakt.</li>
+            <li>Podnosi zaufanie i ułatwia kontakt z Twoją marką.</li>
           </ul>
         </SectionInfo>
 
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz zamawiając papier firmowy?"
+          title="Co dokładnie dostajesz w ramach projektu papieru firmowego?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -136,7 +143,136 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        <SectionInfo title="Dla kogo projekt papieru firmowego ma największy sens?" subtitle="Dla kogo">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Dla kancelarii, biur rachunkowych i doradców,</strong> którzy wysyłają umowy, pisma i opinie w formie drukowanej lub PDF.
+            </li>
+            <li>
+              <strong>Dla firm B2B,</strong> które regularnie przygotowują oferty, specyfikacje, protokoły i chcą, aby każdy dokument wyglądał spójnie.
+            </li>
+            <li>
+              <strong>Dla organizacji, instytucji i NGO,</strong> które komunikują się oficjalnie z partnerami, urzędami i beneficjentami.
+            </li>
+            <li>
+              <strong>Dla marek budujących prestiż również w dokumentach,</strong> a nie tylko na stronie www czy w social mediach.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu papieru firmowego?" subtitle="Efekty po wdrożeniu">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Spójniejsze doświadczenie marki,</strong> bo każdy dokument - od krótkiego pisma po wielostronicową ofertę - wygląda tak, jak reszta komunikacji.
+            </li>
+            <li>
+              <strong>Mniej chaosu wśród pracowników,</strong> dzięki gotowym szablonom Word/PDF, z których korzysta cały zespół.
+            </li>
+            <li>
+              <strong>Wyższy poziom zaufania u klientów i partnerów,</strong> gdy dokumenty od początku wyglądają jasno, profesjonalnie i są dobrze podpisane.
+            </li>
+            <li>
+              <strong>Łatwiejsza praca z drukarnią,</strong> bo pliki są już przygotowane zgodnie ze standardami druku i nie wymagają dodatkowego składu.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionPrices
+          title="Projekt papieru firmowego - przykładowe pakiety"
+          subtitle="Zakres dopasowany do skali Twojej korespondencji"
+          plans={[
+            {
+              name: 'Pakiet Start - papier firmowy do druku',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które potrzebują jednego, czytelnego wzoru papieru firmowego w wersji drukowanej i PDF.',
+              features: [
+                'Krótki brief o marce i typach dokumentów (oferty, pisma, umowy)',
+                'Projekt papieru firmowego w formacie A4 dopasowany do identyfikacji wizualnej',
+                'Układ logo, danych kontaktowych i miejsca na treść zgodny z dobrymi praktykami',
+                'Pliki gotowe do druku (PDF ze spadami) oraz wersja PDF do wysyłki mailowej',
+                'Jedna runda poprawek w cenie',
+              ],
+              btnOne: 'Zamów wycenę pakietu Start',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Standard - papier + szablony elektroniczne',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które chcą ujednolicić korespondencję drukowaną i elektroniczną dla całego zespołu.',
+              features: [
+                'Wszystko z pakietu Start, a dodatkowo:',
+                'Szablon dokumentu w programie Word lub Google Docs',
+                'Dopasowanie pól nagłówka i stopki do sposobu pracy zespołu',
+                'Dodatkowy wariant językowy lub drugi wzór (np. dla innego działu)',
+                'Dwie rundy poprawek w cenie',
+              ],
+              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Pro - system korespondencji firmowej',
+              price: 'wycena indywidualna',
+              description: 'Dla marek, które chcą pełnego systemu: papier firmowy, szablony pism i spójność z innymi materiałami.',
+              features: [
+                'Wszystko z pakietu Standard, a dodatkowo:',
+                'Rozszerzenie o dodatkowe typy dokumentów (np. protokoły, zaświadczenia, proste raporty)',
+                'Dopasowanie papieru firmowego do pozostałych materiałów (wizytówki, teczki, ulotki)',
+                'Rekomendacje dotyczące druku (rodzaj papieru, wykończenie - realizacja po stronie drukarni)',
+                'Wsparcie przy wdrożeniu szablonów w zespole (proste instrukcje użycia)',
+              ],
+              btnOne: 'Porozmawiajmy o pakiecie Pro',
+              btnOneLink: '#kontakt',
+            },
+          ]}
+          legalNote="Zakres projektu i liczba wariantów są dobierane indywidualnie. Po briefie otrzymasz dopasowaną wycenę oraz harmonogram prac."
+        />
+
+        <Gap variant="line" />
+
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Jak jeszcze możesz wzmocnić wizerunek w korespondencji?"
+          subtitle="Zobacz też"
+          description="Najlepszy efekt daje spójny system: papier firmowy, wizytówki, teczki i oferta, które razem budują doświadczenie klienta."
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Projekt wizytówki firmowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu widzi spójny system - od dokumentu po dane kontaktowe.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiBookOpenLine className="h-8 w-8" />,
+              title: 'Projekt teczki ofertowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta - od papieru po oprawę - staje się spójnym doświadczeniem dla klienta.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
+                      Zobacz projekt teczki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
 
         <Gap variant="line" />
 
@@ -154,7 +290,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów projekt papieru firmowego"
-          description="Przekaż co ma być umieszczone na papierze oraz preferowany format. Otrzymasz wycenę i termin realizacji."
+          description="Napisz, czym zajmuje się Twoja firma, jakie typy dokumentów przygotowujesz najczęściej (oferty, umowy, pisma) oraz czy potrzebujesz tylko wersji do druku, czy także szablonów Word/PDF. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
           defaultSubject="Projekt papieru firmowego"
         />
 
@@ -163,38 +299,41 @@ export default function OfferDesignXxxPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego"
+          title="Najczęstsze pytania o projekt papieru firmowego"
           items={[
             {
               question: 'Ile kosztuje projekt papieru firmowego?',
-              answer: 'Cena zależy od liczby wariantów (listy, koperty, dokumenty) i adaptacji do formatów. Po briefie przedstawimy wycenę odpowiadającą Twoim potrzebom.',
+              answer:
+                'Cena zależy od liczby wariantów (np. osobny wzór dla różnych działów), zakresu szablonów elektronicznych i ewentualnych wersji językowych. Po krótkim briefie przygotujemy wycenę dopasowaną do Twoich potrzeb.',
             },
             {
               question: 'Jak długo trwa wykonanie projektu papieru firmowego?',
-              answer: 'Zazwyczaj 3-7 dni roboczych, jeśli zakres jest standardowy. Dłuższe projekty z wieloma wariantami mogą wymagać więcej czasu.',
+              answer: 'Standardowo projekt zajmuje około 3-7 dni roboczych przy typowym zakresie. Większe projekty z wieloma wersjami mogą wymagać więcej czasu - termin ustalamy indywidualnie.',
             },
             {
               question: 'W jakich formatach dostanę projekt papieru firmowego?',
-              answer: 'Otrzymasz pliki PDF do druku z odpowiednimi spadami, wersje Word/PDF oraz pliki źródłowe.',
+              answer: 'Otrzymasz pliki PDF do druku z odpowiednimi spadami, wersje PDF do korespondencji elektronicznej oraz - w razie potrzeby - szablony dokumentów w Word lub Google Docs.',
             },
             {
               question: 'Czy mogę zgłosić poprawki?',
-              answer: 'Tak - w projekcie uwzględniamy rundy poprawek. Wspólnie dopracowujemy układ i szczegóły, aż efekt będzie spójny z Twoją wizją.',
+              answer: 'Tak. W projekcie przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, hierarchię informacji i detale wizualne, aż efekt będzie spójny z wizerunkiem Twojej marki.',
             },
             {
               question: 'Czy papier firmowy będzie prawidłowo przygotowany do druku?',
-              answer: 'Tak - pliki zostaną zoptymalizowane: spady, marginesy bezpieczeństwa, profile kolorów. Będą gotowe do przekazania do drukarni.',
+              answer:
+                'Tak. Pliki przygotowujemy z zachowaniem spadów, marginesów bezpieczeństwa i odpowiednich ustawień kolorów. Materiały są gotowe do przekazania do drukarni bez dodatkowego składu.',
             },
             {
               question: 'Czy można używać papieru firmowego cyfrowo?',
-              answer: 'Tak - oprócz wersji do druku dostarczamy wersje elektroniczne (PDF), gotowe do wysyłki mailowej lub elektronicznej dokumentacji.',
+              answer: 'Tak. Oprócz wersji do druku przygotowujemy wersje elektroniczne (PDF), które możesz dołączać do wiadomości e-mail lub systemów elektronicznego obiegu dokumentów.',
             },
             {
-              question: 'Czy projekt obejmuje koperty firmowe?',
-              answer: 'Jeśli uwzględnisz koperty w briefie, do projektu dodamy ich wersję. Dzięki temu identyfikacja pozostaje spójna w całym korespondencyjnym obiegu.',
+              question: 'Czy projekt może obejmować koperty firmowe?',
+              answer: 'Tak. Jeśli wskażesz koperty w briefie, przygotujemy również ich projekt. Dzięki temu cały zestaw korespondencyjny pozostanie spójny wizualnie.',
             },
             {
               question: 'Czy mogę zamówić ekspresowy projekt papieru firmowego?',
-              answer: 'Tak - oferujemy opcję szybszej realizacji. Koszt i termin ustalamy indywidualnie przed rozpoczęciem projektu.',
+              answer: 'Tak. Oferujemy opcję realizacji w trybie przyspieszonym. Przed startem ustalamy możliwy termin oraz dodatkowy koszt, aby wszystko było transparentne.',
             },
           ]}
         />
@@ -207,8 +346,8 @@ export default function OfferDesignXxxPage() {
       </Wrapper>
 
       <CTABanner
-        title="Niech korespondencja pracuje na markę"
-        description="Stworzymy papier firmowy, który wygląda profesjonalnie i czytelnie."
+        title="Niech korespondencja pracuje na Twoją markę"
+        description="Stworzymy papier firmowy, który wygląda profesjonalnie i jest wygodny w codziennej pracy."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"

@@ -37,7 +37,6 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
   description: 'Blogi firmowe i eksperckie. Prosty CMS, czytelny układ i treści, które przyciągają klientów.',
-  keywords: ['blog firmowy', 'tworzenie bloga', 'projekt bloga', 'treści eksperckie', 'widoczność w Google'],
   alternates: { canonical: '/uslugi/blogi-internetowe' },
   openGraph: {
     title: 'Blogi internetowe - projekt i realizacja | Arteon',

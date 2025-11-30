@@ -16,11 +16,13 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt odzieży firmowej | Arteon',
   description: 'Projekt nadruków i haftów na odzież firmową. Spójny wygląd zespołu i lepsza rozpoznawalność marki.',
-  keywords: ['projekt odzieży firmowej', 'nadruk firmowy', 'haft komputerowy', 'odzież z logo', 'materiały firmowe'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
   openGraph: {
     title: 'Projekt odzieży firmowej | Arteon',
@@ -49,12 +51,16 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignXxxPage() {
+export default function OfferDesignOdziezFirmowaPage() {
   return (
     <>
       <HeroBanner
         title="Projekt odzieży firmowej"
-        description={<>Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z Twoją identyfikacją.</>}
+        description={
+          <>
+            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z Twoją identyfikacją i realiami produkcji.
+          </>
+        }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Realizacje"
@@ -63,6 +69,7 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
       <BenefitBelt
         items={[
           { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
@@ -71,19 +78,24 @@ export default function OfferDesignXxxPage() {
           { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
         ]}
       />
+
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-odziezy-firmowej`, label: 'Projekt odzieży firmowej' }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-odziezy-firmowej`,
+          label: 'Projekt odzieży firmowej',
+        }}
         includeJsonLd
       />
+
       <Wrapper>
         <Gap size="xs" />
 
         <SectionInfo title="Co zyskujesz zamawiając projekt odzieży firmowej?">
           <p>
-            <strong>Spójny wygląd odzieży Twojego zespołu buduje zaufanie w kilka sekund.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek firmy i
-            wzmacnia wiarygodność. Dzięki temu Twoja marka jest widoczna w terenie a to działa jak darmowa reklama mobilna
+            <strong>Spójny wygląd odzieży Twojego zespołu buduje zaufanie w kilka sekund.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i
+            wzmacnia wiarygodność - zarówno w siedzibie, jak i „w terenie”. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
           </p>
 
           <br />
@@ -94,19 +106,19 @@ export default function OfferDesignXxxPage() {
           <ul className="ml-5 list-disc">
             <li>Ujednolica zespół i podnosi rozpoznawalność marki,</li>
             <li>Ułatwia obsługę - klient szybciej trafia do właściwej osoby,</li>
-            <li>Wzmacnia wizerunek i buduje autorytet Twojej firmy.</li>
+            <li>Wzmacnia wizerunek i buduje autorytet Twojej firmy w oczach klientów i partnerów.</li>
           </ul>
         </SectionInfo>
 
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz zamawiając odzież firmową?"
+          title="Co dokładnie dostajesz w ramach projektu odzieży firmowej?"
           subtitle="Nasz standard pracy"
           items={[
             {
               title: 'Spójny wygląd zespołu',
-              description: <>Projekt buduje rozpoznawalność marki w terenie i podczas wydarzeń.</>,
+              description: <>Projekt buduje rozpoznawalność marki w terenie, na hali, w salonie i podczas wydarzeń.</>,
               icon: <RiTShirt2Line className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -116,7 +128,7 @@ export default function OfferDesignXxxPage() {
             },
             {
               title: 'Dopasowanie do wybranej technologii',
-              description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków.</>,
+              description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków - sitodruk, haft, DTF.</>,
               icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -129,7 +141,136 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        <SectionInfo title="Dla kogo projekt odzieży firmowej ma największy sens?" subtitle="Dla kogo">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Dla firm usługowych i serwisów w terenie</strong> - ekipy montażowe, serwisowe, budowlane, które codziennie pracują u klientów.
+            </li>
+            <li>
+              <strong>Dla salonów, kawiarni, restauracji i punktów sprzedaży,</strong> gdzie kontakt z klientem opiera się na bezpośredniej obsłudze.
+            </li>
+            <li>
+              <strong>Dla organizatorów wydarzeń, szkół, klubów sportowych,</strong> które chcą spójnego wyglądu zespołu na eventach i turniejach.
+            </li>
+            <li>
+              <strong>Dla marek budujących rozpoznawalność lokalnie,</strong> którym zależy na tym, by logo i nazwa pojawiały się w przestrzeni miejskiej regularnie.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu odzieży firmowej?" subtitle="Efekty po wdrożeniu">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Lepsza rozpoznawalność marki w codziennych sytuacjach,</strong> gdy logo i kolory pojawiają się na ulicy, w biurach klientów i na wydarzeniach.
+            </li>
+            <li>
+              <strong>Wyższe poczucie przynależności do zespołu,</strong> bo pracownicy noszą te same, dopracowane elementy garderoby.
+            </li>
+            <li>
+              <strong>Czytelniejsza obsługa klienta,</strong> który szybciej identyfikuje osoby z obsługi i łatwiej prosi o pomoc.
+            </li>
+            <li>
+              <strong>Łatwiejsza współpraca z drukarnią,</strong> dzięki gotowym plikom przygotowanym pod wybraną technologię nadruku lub haftu.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionPrices
+          title="Projekt odzieży firmowej - przykładowe pakiety"
+          subtitle="Zakres dopasowany do zespołu i rodzaju odzieży"
+          plans={[
+            {
+              name: 'Pakiet Start - podstawowy zestaw nadruków',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które potrzebują prostego, spójnego projektu nadruku na koszulki lub bluzy dla małego zespołu.',
+              features: [
+                'Krótki brief o marce, zastosowaniu odzieży i liczbie pracowników',
+                'Projekt nadruku z logo i podstawowymi elementami identyfikacji (np. claim, adres www)',
+                'Dopasowanie projektu do jednego typu odzieży (np. T-shirt lub bluza)',
+                'Pliki gotowe do produkcji w wybranej technice (np. DTF lub sitodruk)',
+                'Jedna runda poprawek w cenie',
+              ],
+              btnOne: 'Zamów wycenę pakietu Start',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Standard - odzież dla całego zespołu',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które chcą dopracowanego systemu nadruków lub haftów na kilka typów odzieży i różne stanowiska.',
+              features: [
+                'Wszystko z pakietu Start, a dodatkowo:',
+                'Warianty dla kilku elementów garderoby (np. T-shirt, bluza, polo)',
+                'Dostosowanie projektu do różnych kolorów bazowych odzieży',
+                'Wizualizacje na sylwetkach lub mockupach, ułatwiające wybór',
+                'Dwie rundy poprawek w cenie',
+              ],
+              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Pro - system odzieży dla marki',
+              price: 'wycena indywidualna',
+              description: 'Dla marek, które chcą kompleksowego systemu - od ubioru zespołu po odzież na eventy i sprzedaż merchu.',
+              features: [
+                'Wszystko z pakietu Standard, a dodatkowo:',
+                'Rozszerzenie o odzież eventową lub sprzedażową (np. merch dla klientów)',
+                'Rekomendacje dotyczące technologii nadruku/haftu i dobór odcieni kolorów',
+                'Przygotowanie zestawu plików dla różnych dostawców/zleceniobiorców',
+                'Proste wytyczne dla produkcji (min. wielkości, marginesy bezpieczeństwa, zastosowania)',
+              ],
+              btnOne: 'Porozmawiajmy o pakiecie Pro',
+              btnOneLink: '#kontakt',
+            },
+          ]}
+          legalNote="Zakres projektu zależy od liczby typów odzieży, wariantów i technik nadruku/haftu. Po briefie otrzymasz dopasowaną wycenę i harmonogram."
+        />
+
+        <Gap variant="line" />
+
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Jak jeszcze możesz wzmocnić wizerunek swojej marki?"
+          subtitle="Zobacz też"
+          description="Odzież firmowa działa najlepiej, gdy jest częścią spójnego systemu materiałów - od wizytówek po teczki i papier firmowy."
+          items={[
+            {
+              icon: <RiTShirt2Line className="h-8 w-8" />,
+              title: 'Projekt wizytówki firmowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Połącz odzież z dopracowaną wizytówką. Klient zapamięta nie tylko logo na koszulce, ale też konkretne dane kontaktowe.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Projekt papieru firmowego i korespondencji',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Ubierz markę także w dokumentach. Spójne logo, kolory i układ na papierze firmowym domykają cały system wizerunku.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
+                      Zobacz projekt papieru firmowego
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
 
         <Gap variant="line" />
 
@@ -147,7 +288,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów projekt odzieży firmowej"
-          description="Napisz, jakie elementy chcesz umieścić na odzieży i jak chcesz aby to wyglądało. Przygotujemy wycenę i specyfikację plików."
+          description="Napisz, jaki masz zespół (liczba osób, stanowiska), jakie elementy odzieży chcesz zaprojektować (T-shirty, bluzy, polo, czapki) oraz z jakiej techniki chcesz korzystać (sitodruk, haft, DTF). Na tej podstawie przygotujemy wycenę i rekomendację plików produkcyjnych."
           defaultSubject="Projekt odzieży firmowej"
         />
 
@@ -156,38 +297,41 @@ export default function OfferDesignXxxPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej"
+          title="Najczęstsze pytania o projekt odzieży firmowej"
           items={[
             {
               question: 'Ile kosztuje projekt odzieży firmowej?',
-              answer: 'Cena zależy od liczby projektów (koszulki, bluzy, czapki), techniki druku (sitodruk, haft, DTF) i liczby wariantów. Po briefie przedstawiamy dopasowaną wycenę.',
+              answer:
+                'Cena zależy od liczby projektów (koszulki, bluzy, czapki), techniki druku (sitodruk, haft, DTF), ilości wariantów i stopnia dopracowania systemu. Po briefie przedstawimy dopasowaną wycenę.',
             },
             {
               question: 'Jak długo trwa projekt odzieży firmowej?',
-              answer: 'Standardowy czas realizacji to zwykle 5-10 dni roboczych, w zależności od liczby wersji i techniki nadruku.',
+              answer: 'Standardowy czas realizacji to zwykle 5-10 dni roboczych, w zależności od liczby wersji, zakresu materiałów i terminu produkcji odzieży.',
             },
             {
               question: 'W jakich formatach otrzymam projekty?',
-              answer: 'Dostarczamy pliki wektorowe (AI, SVG) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości, z wariantami kolorystycznymi i adaptacjami do różnych elementów odzieży.',
+              answer: 'Dostarczamy pliki wektorowe (np. AI, SVG) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości, z wariantami kolorystycznymi i adaptacjami do różnych elementów odzieży.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Doprecyzowujemy szczegóły, takie jak kolory, umiejscowienie i wielkość projektu, aż zrealizujemy finalną wersję.',
+              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Doprecyzowujemy kolory, umiejscowienie, skalę i szczegóły, aż otrzymasz finalną wersję zgodną z Twoją wizją.',
             },
             {
               question: 'Jaką technikę druku wybrać?',
-              answer: 'Doradzamy technikę (sitodruk, haft, DTF) uwzględniając materiał, budżet i trwałość. Dobieramy rozwiązanie, które wygląda dobrze i utrzymuje się długo.',
+              answer: 'Doradzamy dobór techniki (sitodruk, haft, DTF) z uwzględnieniem materiału odzieży, budżetu i oczekiwanej trwałości. Projekt przygotowujemy pod wybrane rozwiązanie.',
             },
             {
               question: 'Czy projekt będzie prawidłowo skalowalny?',
-              answer: 'Tak - projektujemy tak, aby grafika była czytelna i estetyczna zarówno na małych jak i większych elementach odzieży.',
+              answer: 'Tak - projekt tworzymy w oparciu o grafikę wektorową i testujemy go na różnych rozmiarach, aby był czytelny i estetyczny zarówno na mniejszych, jak i większych elementach.',
             },
             {
               question: 'Czy projekt odzieży jest gotowy do produkcji?',
-              answer: 'Tak - przygotujemy pliki zoptymalizowane pod wybraną technikę: kolory, separacje, warstwy. Gotowe do przekazania do producenta.',
+              answer:
+                'Tak - przygotowujemy pliki zoptymalizowane pod wybraną technikę: separacje kolorów, odpowiednie formaty oraz uwagi dla producenta, tak aby można je było od razu przekazać do realizacji.',
             },
             {
               question: 'Czy mogę zamówić ekspresowy projekt odzieży firmowej?',
-              answer: 'Tak - oferujemy opcję przyspieszonego wykonania. Koszt i termin ustalamy indywidualnie przed rozpoczęciem projektu.',
+              answer: 'Tak - oferujemy opcję przyspieszonej realizacji. Przed rozpoczęciem projektu ustalamy możliwy termin oraz dodatkowy koszt, tak aby wszystko było jasne i przewidywalne.',
             },
           ]}
         />
@@ -198,9 +342,10 @@ export default function OfferDesignXxxPage() {
 
         <Gap size="sm" />
       </Wrapper>
+
       <CTABanner
-        title="Ubierz zespół w tożsamość"
-        description="Zaprojektujemy nadruki i hafty, które wyróżniają markę w terenie."
+        title="Ubierz zespół w tożsamość marki"
+        description="Zaprojektujemy nadruki i hafty, które wyróżniają Twoją firmę w terenie."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"

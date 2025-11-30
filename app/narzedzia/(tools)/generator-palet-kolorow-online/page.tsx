@@ -5,14 +5,15 @@ import Gap from '@/components/ui/Gap';
 import type { Metadata } from 'next';
 import ColorPaletteGenerator from '@/components/sections/tools/ColorPaletteGenerator';
 import CTABanner from '@/components/sections/CTABanner';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata: Metadata = {
-  title: 'Generator palet kolorów online - z jednego koloru do całego systemu barw',
+  title: 'Generator palet kolorów online - system barw z jednego koloru',
   description:
     'Wpisz jeden kolor HEX i w kilka sekund wygeneruj kompletne palety kolorów: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, akcentów UI, pastelową, ciemną i neutralną. Gotowe HEX i HSL do brandingu, UI i stron WWW - za darmo, bez logowania.',
   alternates: { canonical: '/narzedzia/generator-palet-kolorow-online' },
   openGraph: {
-    title: 'Generator palet kolorów online - z jednego koloru do całego systemu barw',
+    title: 'Generator palet kolorów online - system barw z jednego koloru',
     description:
       'Podaj jeden kolor bazowy, a narzędzie wygeneruje kompletne palety: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, akcentów UI, pastelową, ciemną i neutralną. Skopiuj HEX i HSL i od razu użyj w brandingu, UI i projektach WWW.',
     url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
@@ -57,10 +58,16 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Z jednego koloru zbuduj cały system palet"
+        title="Generator palet kolorów online - system barw z jednego koloru"
         description="Podaj kolor bazowy, a narzędzie wygeneruje kompletne palety: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, system akcentów UI, paletę pastelową, ciemną i neutralną. Skopiuj HEX lub HSL i od razu użyj w brandingu, UI i projektach WWW."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
+      />
+
+      <Breadcrumbs
+        second={{ href: '/narzedzia', label: 'Narzędzie' }}
+        third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Generator palet kolorów online - system barw z jednego koloru' }}
+        includeJsonLd
       />
 
       <Wrapper>

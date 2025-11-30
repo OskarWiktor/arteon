@@ -22,7 +22,6 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Pozycjonowanie stron — stały wzrost widoczności i zapytań | Arteon',
   description: 'Długofalowe pozycjonowanie stron: plan treści, porządek na stronie i bezpieczne linki. Comiesięczny raport i jasne priorytety działań.',
-  keywords: ['pozycjonowanie stron', 'SEO abonament', 'pozycjonowanie strony firmowej', 'wzrost widoczności w Google', 'strategia treści', 'miesięczny raport SEO'],
   alternates: { canonical: '/uslugi/marketing/pozycjonowanie-stron' },
   openGraph: {
     title: 'Pozycjonowanie stron — stały wzrost widoczności i zapytań | Arteon',

@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker';
 import CTABanner from '@/components/sections/CTABanner';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata: Metadata = {
   title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
@@ -61,6 +62,8 @@ export default function Page() {
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
+
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/tester-kontrastu-kolorow-wcag`, label: 'Tester kontrastu kolorów WCAG' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

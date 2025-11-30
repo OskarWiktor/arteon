@@ -5,7 +5,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine, RiFileTextLine, RiIdCardLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -16,11 +16,13 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt logo | Arteon',
   description: 'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
-  keywords: ['projekt logo', 'logo dla firmy', 'tworzenie logo', 'księga znaku', 'identyfikacja wizualna'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-logo' },
   openGraph: {
     title: 'Projekt logo | Arteon',
@@ -49,12 +51,17 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignXxxPage() {
+export default function OfferDesignLogoPage() {
   return (
     <>
       <HeroBanner
         title="Projekt logo"
-        description={<>Silny znak porządkuje komunikację i wyróżnia markę. Tworzymy logo z myślą o czytelności i skalowalności - z wersjami kolorystycznymi oraz mini-księgą znaku.</>}
+        description={
+          <>
+            Silny znak porządkuje komunikację i wyróżnia markę. Projektujemy logo z myślą o czytelności, skalowalności i psychologii odbiorcy - z wersjami kolorystycznymi oraz mini-księgą znaku, którą
+            wykorzystasz przez lata.
+          </>
+        }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Realizacje"
@@ -63,6 +70,7 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
       <BenefitBelt
         items={[
           { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
@@ -71,20 +79,23 @@ export default function OfferDesignXxxPage() {
           { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
         ]}
       />
+
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{ href: `/uslugi/projekty-graficzne/projekt-logo`, label: 'Projekt logo' }}
         includeJsonLd
       />
+
       <Wrapper>
         <Gap size="xs" />
 
+        {/* 1. Co zyskujesz - efekt i sens logo */}
         <SectionInfo title="Co zyskujesz zamawiając projekt logo?">
           <p>
-            <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny branding realnie przekłada się na wynik: firmy utrzymujące konsekwentną identyfikację raportują{' '}
-            <strong>~10-20% wyższy wzrost/przychody</strong>{' '}
-            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny branding realnie przekłada się na wynik - firmy utrzymujące konsekwentną identyfikację raportują ok.{' '}
+            <strong>10-20% wyższy wzrost/przychody</strong>
+            <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
             .
@@ -93,38 +104,51 @@ export default function OfferDesignXxxPage() {
           <br />
 
           <p>
-            <strong>Profesjonalne logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: aż <strong>~75%</strong> osób
-            przypisuje wiarygodność marce na podstawie ich materiałów wizualnych{' '}
-            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: nawet ok. <strong>75%</strong> osób przypisuje
+            wiarygodność marce na podstawie tego, jak wyglądają jej materiały
+            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
+            .
           </p>
+
+          <br />
+
+          <p>
+            <strong>Dobre logo robi trzy rzeczy naraz:</strong>
+          </p>
+          <ul className="ml-5 list-disc">
+            <li>Porządkuje komunikację i ułatwia tworzenie kolejnych materiałów,</li>
+            <li>Buduje rozpoznawalność i pamięć marki w głowie klienta,</li>
+            <li>Podnosi zaufanie - wyglądasz jak firma, której można powierzyć pieniądze.</li>
+          </ul>
         </SectionInfo>
 
         <Gap variant="line" />
 
+        {/* 2. Co dokładnie dostajesz */}
         <FeatureGrid
           title="Co zyskujesz zamawiając logo u nas?"
           subtitle="Nasz standard pracy"
           items={[
             {
               title: 'Znak, który prowadzi markę',
-              description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania.</>,
+              description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania - również w małych rozmiarach.</>,
               icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Warianty i zastosowania',
-              description: <>Otrzymujesz wersje kolorystyczne i monochromatyczne, gotowe do użycia w różnych sytuacjach.</>,
+              description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do użycia na stronie, w social mediach i w druku.</>,
               icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Prosta instrukcja użycia',
-              description: <>Dołączamy krótkie wytyczne, które ułatwiają poprawne korzystanie z logo w firmie.</>,
+              description: <>Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie wie, jak poprawnie korzystać z logo.</>,
               icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełna własność i pliki źródłowe',
-              description: <>Po zakończeniu projektu masz komplet materiałów i swobodę ich użycia w przyszłości.</>,
+              description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
               icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -132,30 +156,169 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        {/* 3. Dla kogo logo ma największy sens */}
+        <SectionInfo title="Dla kogo projekt logo ma największy sens?" subtitle="Dla kogo">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Dla nowych firm i start-upów,</strong> które chcą od początku wejść na rynek z klarowną, przemyślaną identyfikacją.
+            </li>
+            <li>
+              <strong>Dla lokalnych biznesów,</strong> które przeszły etap „prowizorki” i potrzebują logo na poziomie jakości usług, które oferują.
+            </li>
+            <li>
+              <strong>Dla ekspertów i marek osobistych,</strong> gdzie logo musi współgrać z reputacją, jaką budujesz latami.
+            </li>
+            <li>
+              <strong>Dla firm w rebrandingu,</strong> które zmieniają kierunek, grupę docelową lub poziom usług i potrzebują nowego symbolu tej zmiany.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* 4. Efekty po wdrożeniu */}
+        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu nowego logo?" subtitle="Efekty po wdrożeniu">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Spójny wizerunek na wszystkich nośnikach</strong> - od strony WWW, przez social media, po druk.
+            </li>
+            <li>
+              <strong>Łatwiejsze tworzenie materiałów,</strong> bo logo wyznacza kierunek dla kolorów, typografii i stylu.
+            </li>
+            <li>
+              <strong>Wyższe postrzegane zaufanie,</strong> co ułatwia domykanie sprzedaży i podnoszenie stawek.
+            </li>
+            <li>
+              <strong>Większa rozpoznawalność,</strong> gdy ten sam znak konsekwentnie pojawia się w wielu miejscach.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        {/* 5. Cennik / pakiety - na wartość, bez kwot */}
+        <SectionPrices
+          title="Projekt logo - przykładowe pakiety"
+          subtitle="Zakres dopasowany do etapu rozwoju Twojej marki"
+          plans={[
+            {
+              name: 'Pakiet Start - logo dla nowej marki',
+              price: 'wycena indywidualna',
+              description: 'Dla jednoosobowych działalności i małych firm, które potrzebują solidnego znaku na start.',
+              features: [
+                'Krótkie konsultacje i brief online',
+                '2-3 wstępne kierunki logo do wyboru',
+                'Dopracowanie wybranego kierunku',
+                'Wersje na jasne i ciemne tło',
+                'Pliki PNG i SVG do użycia online',
+              ],
+              btnOne: 'Zamów wycenę pakietu Start',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Standard - logo + mini-księga znaku',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które chcą mieć logo oraz podstawowe zasady jego stosowania w jednym miejscu.',
+              features: [
+                'Wszystko z pakietu Start, a dodatkowo:',
+                'Wersje poziome i pionowe logo',
+                'Wersje kolorystyczne i monochromatyczne',
+                'Podstawowa mini-księga znaku (pole ochronne, minimalne wymiary, tła)',
+                'Pliki wektorowe (AI, EPS, SVG) do druku i produkcji',
+              ],
+              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Pro - logo i system identyfikacji',
+              price: 'wycena indywidualna',
+              description: 'Dla marek, które chcą od razu zbudować szerszy system wizualny: logo, podstawowe materiały i spójne zasady.',
+              features: [
+                'Wszystko z pakietu Standard, a dodatkowo:',
+                'Rozszerzona mini-księga znaku (kolory, typografia, przykładowe zastosowania)',
+                'Propozycje zastosowań na wizytówkach, papierze firmowym lub social mediach',
+                'Zestaw plików przygotowany pod dalszy rozwój identyfikacji',
+                'Rekomendacje co do kolejnych kroków (strona, materiały drukowane, social media)',
+              ],
+              btnOne: 'Porozmawiajmy o pakiecie Pro',
+              btnOneLink: '#kontakt',
+            },
+          ]}
+          legalNote="Ostateczna wycena zależy m.in. od liczby kierunków, zakresu księgi znaku oraz dodatkowych materiałów. Po krótkim briefie przygotujemy dopasowaną, klarowną propozycję."
+        />
+
+        <Gap variant="line" />
+
+        {/* 6. Portfolio */}
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
+        {/* 7. Zobacz też - cross-sell identyfikacji */}
+        <SectionSteps
+          title="Jak rozwinąć logo w pełną identyfikację?"
+          subtitle="Zobacz też"
+          description="Logo jest fundamentem, ale pełną moc pokazuje dopiero w systemie materiałów. Możesz krok po kroku rozbudować identyfikację, zachowując spójny styl."
+          items={[
+            {
+              icon: <RiIdCardLine className="h-8 w-8" />,
+              title: 'Projekt wizytówki firmowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Wykorzystaj nowe logo na eleganckiej wizytówce - to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Papier firmowy i dokumenty',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Uporządkuj oferty, umowy i korespondencję. Spójne nagłówki, stopki i układ treści wzmacniają profesjonalny obraz firmy.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
+                      Zobacz papier firmowy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
+
+        <Gap variant="line" />
+
+        {/* 8. Social proof */}
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
+        {/* 9. Zasady współpracy i rozliczeń */}
         <FeesSteps />
 
         <Gap variant="line" />
 
+        {/* 10. Proces projektowy */}
         <WorkSteps variant="design" />
 
         <Gap size="sm" />
 
+        {/* 11. Formularz - precyzyjny brief */}
         <ContactForm
           title="Zamów projekt logo"
-          description="Opisz czym się zajmujesz oraz jaki charakter znaki Ci się podoba. Wrócimy z krótkim briefem, wyceną i harmonogramem."
+          description="Opisz, czym się zajmujesz, w jakiej branży działasz i jaki charakter znaku Ci się podoba (minimalistyczny, klasyczny, odważny). Jeśli masz istniejące materiały lub inspiracje, możesz je dołączyć - na tej podstawie przygotujemy brief, wycenę i harmonogram."
           defaultSubject="Projekt logo"
         />
 
         <Gap variant="line" />
 
+        {/* 12. FAQ */}
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo"
@@ -163,45 +326,49 @@ export default function OfferDesignXxxPage() {
             {
               question: 'Ile kosztuje profesjonalne logo?',
               answer:
-                'Cena logo zależy od zakresu pracy: liczby wariantów, wersji kolorystycznych, dodatkowych adaptacji. Zwykle propozycję przedstawiamy po briefie - dostosowaną do Twoich potrzeb i budżetu.',
+                'Cena logo zależy od zakresu pracy: liczby wariantów, wersji kolorystycznych i dodatkowych adaptacji. Propozycję przygotowujemy po briefie, tak aby była spójna z Twoimi potrzebami i budżetem.',
             },
             {
               question: 'Jak długo trwa realizacja projektu logo?',
-              answer: 'Standardowy proces trwa około 7-14 dni roboczych. Terminy ustalamy indywidualnie.',
+              answer: 'Standardowy proces trwa około 7-14 dni roboczych, w zależności od liczby kierunków i rund poprawek. Przy pilnych zleceniach możemy zaproponować tryb ekspresowy.',
             },
             {
               question: 'W jakich formatach otrzymam logo?',
-              answer: 'Otrzymasz pliki wektorowe (SVG, EPS, AI) i rastrowe (PNG, JPG), wersje monochromatyczne, wersje na jasne i ciemne tło oraz mini-księgę znaku z wytycznymi.',
+              answer:
+                'Otrzymasz pliki wektorowe (SVG, EPS, AI) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości - w wersjach kolorystycznych, monochromatycznych oraz na jasne i ciemne tło, wraz z mini-księgą znaku.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do logo?',
-              answer: 'Tak - w standardowym pakiecie uwzględniamy minimum jedną lub dwie rundy korekt. Razem dopracujemy szczegóły, by efekt finalny odpowiadał Twojej wizji.',
+              answer: 'Tak - w standardowym pakiecie uwzględniamy minimum jedną-dwie rundy korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
             },
             {
               question: 'Czy pomogacie określić styl i kierunek logo?',
-              answer: 'Tak - jeśli nie masz wizji, przygotowujemy moodboardy, przykłady stylowe i warianty kierunków, by wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
+              answer: 'Tak - jeśli nie masz konkretnej wizji, przygotowujemy moodboardy, przykłady stylów i kierunki kreatywne, aby wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
             },
             {
               question: 'Gdzie mogę używać logo?',
-              answer: 'Logo będzie zaprojektowane do użytku online, drukowania, gadżetów, odzieży. Dbamy o skalowalność i czytelność w każdej formie.',
+              answer: 'Logo projektujemy tak, aby dobrze działało na stronie WWW, w social mediach, w druku, na gadżetach i odzieży. Dbamy o skalowalność i czytelność w różnych rozmiarach.',
             },
             {
               question: 'Czy dostaję prawa autorskie do logo?',
-              answer: 'Tak - po finalizacji projektu przekazujemy Ci pełne prawa autorskie i pliki źródłowe. Możesz swobodnie korzystać z logo w materiałach własnych.',
+              answer:
+                'Tak - po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
             },
             {
               question: 'Czy oferujecie szybką realizację logo?',
-              answer: 'Tak - dla projektów priorytetowych proponujemy ekspresowy tryb realizacji. Czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
+              answer: 'Tak - dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
             },
           ]}
         />
 
         <Gap variant="line" />
 
+        {/* 13. Ogólny proces usług Arteon */}
         <ServicesSteps />
 
         <Gap size="sm" />
       </Wrapper>
+
       <CTABanner
         title="Znak, który prowadzi markę"
         description="Stworzymy logo, które porządkuje komunikację i zostaje w pamięci."

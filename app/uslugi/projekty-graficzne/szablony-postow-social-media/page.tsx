@@ -12,6 +12,9 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 import { IoColorPalette } from 'react-icons/io5';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine } from 'react-icons/ri';
 import Script from 'next/script';
@@ -21,7 +24,6 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Szablony postów social media | Arteon',
   description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
-  keywords: ['szablony postów social media', 'szablony postów instagram', 'grafiki do social media', 'projekt szablonów facebook', 'szablony do reels i stories'],
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media' },
   openGraph: {
     title: 'Szablony postów social media | Arteon',
@@ -57,8 +59,8 @@ export default function OfferDesignSzablonyPostowPage() {
         title="Szablony postów social media"
         description={
           <>
-            Przyspiesz publikacje zachowując spójny i profesjonalny styl swojej marki. Projektujemy edytowalne szablony postów do Instagrama, Facebooka, LinkedIna i TikToka - gotowe do szybkiej edycji
-            i użycia.
+            Uporządkuj wygląd swoich profili i odzyskaj czas. Projektujemy edytowalne szablony do Instagrama, Facebooka, LinkedIna i TikToka - spójne z marką, gotowe do szybkiej edycji i regularnych
+            publikacji.
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -94,25 +96,26 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <SectionInfo title="Co zyskujesz dzięki szablonom postów?">
           <p>
-            <strong>Stały, rozpoznawalny styl</strong> - Szablony pomagają utrzymać wspólny wygląd całej Twojej komunikacji, dzięki czemu odbiorca łatwiej zapamięta Twoją markę, a profil zyska
-            profesjonalny wygląd.
+            <strong>Stały, rozpoznawalny styl w całej komunikacji.</strong> Szablony utrzymują wspólny wygląd postów, dzięki czemu odbiorca szybciej kojarzy Twoją markę, a profil przestaje wyglądać
+            „składany z kilku różnych epok”.
           </p>
 
           <br />
 
           <p>
-            <strong>Oszczędność czasu</strong> - edytowalne pliki pozwalają przygotować serię postów w kilkanaście minut. Otrzymujesz gotowe układy z czytelną hierarchię treści.
+            <strong>Mniej chaosu, więcej treści.</strong> Zamiast każdorazowo „wymyślać grafikę od zera”, edytujesz gotowy układ. Możesz przygotować serię postów na tydzień lub miesiąc w jedno
+            popołudnie, a nie w wiele osobnych sesji.
           </p>
 
           <br />
 
           <p>
-            <strong>Szablony robią trzy rzeczy naraz:</strong>
+            <strong>Dobrze zaprojektowane szablony robią za Ciebie trzy rzeczy naraz:</strong>
           </p>
           <ul className="ml-5 list-disc">
-            <li>Podnoszą zaufanie,</li>
-            <li>Przyspieszają przygotowanie treści,</li>
-            <li>Wzmacniają rozpoznawalność marki.</li>
+            <li>Podnoszą zaufanie do marki, bo wszystko wygląda spójnie i profesjonalnie,</li>
+            <li>Przyspieszają przygotowanie treści - łatwiej delegować zadania w zespole,</li>
+            <li>Wzmacniają rozpoznawalność, bo odbiorca szybciej „rozpoznaje” Twoje posty w feedzie.</li>
           </ul>
         </SectionInfo>
 
@@ -123,18 +126,20 @@ export default function OfferDesignSzablonyPostowPage() {
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'Spójność',
-              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki lub tworzymy styl od zera, zgodnie z Twoją grupą odbiorczą.</>,
+              title: 'Spójny system wizualny',
+              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
               icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Edytowalne pliki',
-              description: <>Otrzymujesz pliki, które z łatwością możesz edytować wraz z instrukcją jak to zrobić.</>,
+              description: (
+                <>Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy kolory zmienisz bez znajomości zaawansowanych programów.</>
+              ),
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'System stylistyczny',
-              description: <>Projektujemy cały system pod różne typy publikacji między innymi pod: post informacyjny, oferte, opinie, poradnik, cytat czy okładkę wideo.</>,
+              title: 'System pod różne typy postów',
+              description: <>Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta, opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.</>,
               icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -142,7 +147,140 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <Gap variant="line" />
 
+        <SectionInfo title="Dla kogo szablony postów mają największy sens?" subtitle="Dla kogo">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Dla mikro i małych firm,</strong> które chcą wyglądać jak „duże marki”, ale nie mają osobnego grafika na etacie.
+            </li>
+            <li>
+              <strong>Dla specjalistów i edukatorów</strong> - psychoterapeutów, trenerów, doradców - którzy regularnie dzielą się wiedzą i potrzebują powtarzalnych, czytelnych układów.
+            </li>
+            <li>
+              <strong>Dla e-commerce i biznesów lokalnych,</strong> gdzie ważna jest powtarzalność promocji: nowości, rabaty, stałe cykle akcji.
+            </li>
+            <li>
+              <strong>Dla zespołów marketingu,</strong> które chcą ujednolicić pracę kilku osób i mieć wspólne „ramy” dla treści w social mediach.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Jakie efekty zobaczysz po wdrożeniu szablonów?" subtitle="Efekty po wdrożeniu">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Regularny rytm publikacji</strong> - łatwiej zaplanować i zaprogramować serię postów, bo wizualna część jest już przygotowana.
+            </li>
+            <li>
+              <strong>Lepsze pierwsze wrażenie profilu,</strong> szczególnie dla nowych osób, które wchodzą na Twój profil prosto z reklamy czy wyszukiwarki.
+            </li>
+            <li>
+              <strong>Mniej poprawek graficznych,</strong> bo raz ustalony styl i układ pozwalają skupić się na treści zamiast na ciągłym „doszlifowywaniu” wyglądu.
+            </li>
+            <li>
+              <strong>Łatwiejsze delegowanie zadań,</strong> bo każdy w zespole korzysta z tych samych wzorów i zasad, zamiast tworzyć własne pomysły od zera.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionPrices
+          title="Szablony postów - przykładowe pakiety"
+          subtitle="Zakresy, które najczęściej wybierają klienci"
+          plans={[
+            {
+              name: 'Pakiet Start - profil solo',
+              price: 'wycena indywidualna',
+              description: 'Dla jednoosobowych działalności i specjalistów, którzy chcą uporządkować podstawową komunikację w jednym kanale (np. Instagram lub Facebook).',
+              features: [
+                'Analiza obecnego profilu i stylu komunikacji',
+                'Zestaw bazowych szablonów (np. informacyjny, oferta, opinia, cytat, okładka wideo)',
+                'Dopasowanie kolorów i typografii do marki',
+                'Przekazanie plików edytowalnych (np. Figma lub Canva)',
+                'Krótka instrukcja korzystania z szablonów',
+              ],
+              btnOne: 'Zamów wycenę pakietu Start',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Standard - marka i cykl treści',
+              price: 'wycena indywidualna',
+              description: 'Dla marek, które publikują regularnie i chcą mieć kompletny system szablonów pod różne formaty treści i kilka typów postów.',
+              features: [
+                'Wszystko z pakietu Start, a dodatkowo:',
+                'Rozbudowany zestaw szablonów pod różne serie treści (poradniki, case study, karuzele)',
+                'Warianty pod kilka formatów: feed, stories, okładki Reels/Shorts',
+                'Propozycja prostego systemu oznaczeń (ikonki, kolory dla cykli treści)',
+                'Jedna dodatkowa runda poprawek wizualnych w cenie',
+              ],
+              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Pro - zestaw dla zespołu',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które prowadzą kilka profili lub komunikację w kilku językach i potrzebują wspólnego systemu dla całego zespołu.',
+              features: [
+                'Wszystko z pakietu Standard, a dodatkowo:',
+                'Dostosowanie szablonów do kilku profili lub języków',
+                'Rozszerzony zestaw widoków (np. LinkedIn, Pinterest, banery pod kampanie)',
+                'Mini-brandbook social media: zasady stosowania, przykłady dobrych i złych zastosowań',
+                'Wsparcie przy pierwszym wdrożeniu szablonów w zespole',
+              ],
+              btnOne: 'Porozmawiajmy o pakiecie Pro',
+              btnOneLink: '#kontakt',
+            },
+          ]}
+          legalNote="Zakres i liczba szablonów dopasowujemy indywidualnie do Twojej marki i kanałów. Po krótkim briefie przygotujemy konkretną wycenę i harmonogram."
+        />
+
+        <Gap variant="line" />
+
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Kolejne kroki w uporządkowaniu komunikacji"
+          subtitle="Zobacz też"
+          description="Szablony social media najczęściej łączymy z uporządkowaniem identyfikacji wizualnej i strony internetowej."
+          items={[
+            {
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Projekt graficzny strony internetowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Makieta i layout strony, które spinają w całość komunikację z social mediów, ofertę i content. Dzięki temu klient doświadcza jednej, spójnej historii marki.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
+                      Zobacz projekt graficzny strony
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <IoColorPalette className="h-8 w-8" />,
+              title: 'Projekt identyfikacji wizualnej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Kompletny system wizualny: logo, kolory, typografia i materiały firmowe. Szablony postów stają się wtedy naturalnym przedłużeniem identyfikacji, a nie osobnym światem.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
+                      Zobacz identyfikację wizualną
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
 
         <Gap variant="line" />
 
@@ -158,7 +296,11 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zamów szablony postów" description="Napisz czym się zajmujesz a my stworzymy wycenę" defaultSubject="Szablony postów social media" />
+        <ContactForm
+          title="Zamów szablony postów social media"
+          description="Opisz, w jakiej branży działasz, na jakich platformach publikujesz (Instagram, Facebook, LinkedIn, TikTok) i ile mniej więcej typów postów potrzebujesz. Na tej podstawie przygotujemy propozycję zakresu i wycenę."
+          defaultSubject="Szablony postów social media"
+        />
 
         <Gap variant="line" />
 
@@ -169,19 +311,21 @@ export default function OfferDesignSzablonyPostowPage() {
           items={[
             {
               question: 'W jakich programach dostanę szablony postów?',
-              answer: 'Standardowo przekazujemy pliki w Figmie lub Canvie, są to wygodne i proste narzędzia dzięki, którym z łatwością edytujesz tekst czy wymienisz zdjęcia.',
+              answer:
+                'Standardowo przekazujemy pliki w Figmie lub Canvie. To wygodne narzędzia, dzięki którym z łatwością edytujesz teksty, wymienisz zdjęcia i dostosujesz kolory do aktualnych kampanii.',
             },
             {
-              question: 'Czy dostanę instrukcję użycia?',
-              answer: 'Tak. Dołączamy krótką instrukcję i przykłady układów, aby ułatwić produkcję treści w zespole.',
+              question: 'Czy dostanę instrukcję użycia szablonów?',
+              answer: 'Tak. Dołączamy krótką instrukcję oraz przykładowe układy, aby ułatwić produkcję treści - zarówno gdy publikujesz samodzielnie, jak i z zespołem.',
             },
             {
-              question: 'Jak szybko powstają szablony?',
-              answer: 'Zwykle 3-7 dni roboczych w zależności od ilości wariantów.',
+              question: 'Jak szybko powstają szablony postów?',
+              answer: 'Standardowo prace trwają około 3-7 dni roboczych od akceptacji kierunku wizualnego. Dokładny termin zależy od liczby wariantów i platform, na które przygotowujemy szablony.',
             },
             {
-              question: 'Czy szablony będą spójne z moją stroną?',
-              answer: 'Tak, jeśli posiadasz już swój styl, dopasujemy posty tak aby wszystko było spójne.',
+              question: 'Czy szablony będą spójne z moją stroną i identyfikacją?',
+              answer:
+                'Tak. Jeśli masz już identyfikację wizualną lub stronę internetową, dopasujemy szablony do istniejącego stylu. Jeśli nie - możemy pomóc Ci najpierw uporządkować podstawy wizualne.',
             },
           ]}
         />
@@ -195,7 +339,7 @@ export default function OfferDesignSzablonyPostowPage() {
 
       <CTABanner
         title="Stwórz spójną komunikację w mediach społecznościowych"
-        description="Dostarczymy szablony, dzięki którym publikacje będą szybsze i łatwiejsze."
+        description="Dostarczymy szablony, dzięki którym publikacje będą szybsze, prostsze i bardziej spójne z Twoją marką."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"

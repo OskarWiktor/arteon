@@ -22,7 +22,6 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',
   description: 'Wdrażamy poprawki po audycie: przyspieszamy stronę, porządkujemy treści i ułatwiamy Google ich zrozumienie. Testy przed i po, jasne raporty i stabilny wzrost.',
-  keywords: ['optymalizacja SEO', 'poprawa szybkości strony', 'widoczność w Google', 'optymalizacja treści', 'dane ułatwiające Google zrozumienie strony', 'wdrożenia SEO'],
   alternates: { canonical: '/uslugi/marketing/optymalizacja-seo' },
   openGraph: {
     title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',

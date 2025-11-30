@@ -1,3 +1,4 @@
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import MetaTitleDescriptionTool from '@/components/sections/tools/MetaTitleDescriptionTool';
@@ -58,6 +59,12 @@ export default function Page() {
         description="Wpisz tytuł i opis strony, a narzędzie obliczy liczbę znaków, słów, szerokość w pikselach i pokaże, czy długość jest zgodna z zasadami SEO"
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
+      />
+
+      <Breadcrumbs
+        second={{ href: '/narzedzia', label: 'Narzędzie' }}
+        third={{ href: `/narzedzia/licznik-dlugosci-meta-title-i-description`, label: 'Licznik długość meta title i description' }}
+        includeJsonLd
       />
 
       <Wrapper>

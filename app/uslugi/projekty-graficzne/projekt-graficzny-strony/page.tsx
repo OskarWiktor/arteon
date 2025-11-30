@@ -16,11 +16,13 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt graficzny strony | Arteon',
   description: 'Makiety i layouty stron internetowych tworzone z myślą o czytelności i konwersji. Estetyka, UX i SEO w jednym projekcie.',
-  keywords: ['projekt graficzny strony', 'layout strony', 'makiety UX', 'projekt www', 'projekt strony firmowej'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
   openGraph: {
     title: 'Projekt graficzny strony | Arteon',
@@ -81,7 +83,10 @@ export default function OfferDesignXxxPage() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-graficzny-strony`, label: 'Projekt graficzny strony' }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-graficzny-strony`,
+          label: 'Projekt graficzny strony',
+        }}
         includeJsonLd
       />
 
@@ -90,7 +95,8 @@ export default function OfferDesignXxxPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt graficzny strony?">
           <p>
-            <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong> Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz materiałów – nawet
+            <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong>
+            Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz materiałów - nawet
             <strong> ~75%</strong> wrażeń o wiarygodności wynika z jakości oprawy wizualnej
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
@@ -141,7 +147,7 @@ export default function OfferDesignXxxPage() {
 
           <br />
 
-          <p>Jeśli Twoja strona dziś „jakoś działa”, ale czujesz, że nie wykorzystuje potencjału – projekt graficzny jest dobrym krokiem przed kolejną inwestycją w reklamy czy pozycjonowanie.</p>
+          <p>Jeśli Twoja strona dziś „jakoś działa”, ale czujesz, że nie wykorzystuje potencjału - projekt graficzny jest dobrym krokiem przed kolejną inwestycją w reklamy czy pozycjonowanie.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -152,7 +158,7 @@ export default function OfferDesignXxxPage() {
           items={[
             {
               title: 'Przemyślany układ i estetyka',
-              description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie – od nagłówka po stopkę.</>,
+              description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie - od nagłówka po stopkę.</>,
               icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -175,7 +181,109 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        <SectionPrices
+          title="Projekt graficzny strony - przykładowe zakresy"
+          subtitle="Dobieramy zakres projektu do celu i wielkości serwisu"
+          plans={[
+            {
+              name: 'Projekt layoutu landing page',
+              price: 'wycena indywidualna',
+              description: 'Dla kampanii i pojedynczych ofert, kiedy potrzebujesz jednego, dopracowanego ekranu nastawionego na konwersję.',
+              features: [
+                'Projekt jednej strony typu landing page (układ sekcji, nagłówki, CTA)',
+                'Wersja desktop + mobile w Figmie',
+                'Podstawowe rekomendacje UX i kolejności sekcji',
+                'Jedna runda korekt po pierwszej prezentacji',
+              ],
+              btnOne: 'Zamów projekt landing page',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Projekt strony firmowej',
+              price: 'wycena indywidualna',
+              description: 'Dla stron usługowych, które mają kilka kluczowych podstron i potrzebują spójnego systemu layoutów.',
+              features: [
+                'Projekt strony głównej i kluczowych podstron (np. oferta, o nas, kontakt, blog)',
+                'System nagłówków, przycisków i bloków treści',
+                'Widoki desktop i mobile, gotowe do przekazania deweloperowi',
+                'Rekomendacje dotyczące treści, sekcji i CTA',
+              ],
+              btnOne: 'Porozmawiajmy o projekcie strony firmowej',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Projekt rozbudowanego serwisu lub sklepu',
+              price: 'wycena indywidualna',
+              description: 'Dla serwisów, portali i e-commerce, gdzie ważne są bardziej złożone ścieżki użytkownika i różne typy podstron.',
+              features: [
+                'System layoutów dla wielu typów podstron (lista, szczegóły, kategorie, blog, koszyk itd.)',
+                'Makiety kluczowych ścieżek użytkownika (np. zakup, rezerwacja, zapis na usługę)',
+                'Przygotowanie pod wdrożenie w wybranej technologii (np. WordPress, WooCommerce, Next.js)',
+                'Opcjonalne konsultacje z zespołem deweloperskim po stronie klienta',
+              ],
+              btnOne: 'Zbudujmy layout serwisu lub sklepu',
+              btnOneLink: '#kontakt',
+            },
+          ]}
+          legalNote="Ostateczna wycena zależy m.in. od liczby podstron, poziomu złożoności układu, stanu obecnej identyfikacji wizualnej oraz tego, czy layout ma być powiązany z dodatkowymi usługami (np. wdrożeniem strony, copywritingiem, audytem UX/SEO). Po krótkim briefie przygotujemy konkretną propozycję zakresu i harmonogram prac."
+        />
+
+        <Gap variant="line" />
+
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Z czym warto połączyć projekt graficzny strony?"
+          subtitle="Zobacz też"
+          description="Najlepsze efekty uzyskasz, gdy dopracowany layout od razu łączymy z wdrożeniem, identyfikacją wizualną i treściami."
+          items={[
+            {
+              icon: <RiCodeSSlashFill className="h-8 w-8" />,
+              title: 'Wdrożenie strony internetowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Projekt możemy od razu przełożyć na działającą stronę - z uwzględnieniem szybkości, SEO i wygody edycji treści.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/strony-internetowe">
+                      Sprawdź strony internetowe
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Projekt identyfikacji wizualnej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Jeśli Twoja marka nie ma jeszcze spójnego systemu wizualnego, możemy zacząć od identyfikacji, a dopiero potem zaprojektować stronę.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
+                      Zobacz identyfikację wizualną
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiBarChart2Fill className="h-8 w-8" />,
+              title: 'Treści i SEO dla strony',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Dobrze zaprojektowany layout potrzebuje treści, które realnie sprzedają. Pomagamy ułożyć teksty i strukturę z myślą o SEO i konwersji.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi">
+                      Zobacz usługi treści i SEO
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="three"
+        />
 
         <Gap variant="line" />
 
@@ -213,15 +321,15 @@ export default function OfferDesignXxxPage() {
             },
             {
               question: 'Czy projekt graficzny strony obejmuje wersję mobilną?',
-              answer: 'Tak – każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu na różnych ekranach.',
+              answer: 'Tak - każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu na różnych ekranach.',
             },
             {
               question: 'Czy projekt graficzny uwzględnia SEO i UX?',
-              answer: 'Tak – łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
+              answer: 'Tak - łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak – w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
+              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
             },
             {
               question: 'W jakim formacie dostanę projekt?',
@@ -229,11 +337,11 @@ export default function OfferDesignXxxPage() {
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer: 'Tak – po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości, a także rozwijać o kolejne podstrony na bazie przyjętego systemu.',
+              answer: 'Tak - po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości, a także rozwijać o kolejne podstrony na bazie przyjętego systemu.',
             },
             {
               question: 'Czy mogę zamówić tylko jedną podstronę lub landing page?',
-              answer: 'Tak – projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach ofert lub kampaniach sprzedażowych.',
+              answer: 'Tak - projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach ofert lub kampaniach sprzedażowych.',
             },
           ]}
         />

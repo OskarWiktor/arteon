@@ -6,11 +6,11 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import type { Metadata } from 'next';
 import EmailSignatureGenerator from '@/components/sections/tools/EmailSignatureGenerator';
 import CTABanner from '@/components/sections/CTABanner';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej HTML - bez limitu',
   description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
-  keywords: ['generator stopki mailowej', 'stopka mailowa html', 'podpis mailowy generator', 'stopka do gmail', 'podpis do outlook', 'generator podpisu e-mail', 'stopka mailowa dla firmy'],
   alternates: { canonical: '/narzedzia/darmowy-generator-stopki-mailowej' },
   openGraph: {
     title: 'Darmowy generator stopki mailowej HTML - bez limitu',
@@ -61,6 +61,12 @@ export default function Page() {
         description="Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych"
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
+      />
+
+      <Breadcrumbs
+        second={{ href: '/narzedzia', label: 'Narzędzie' }}
+        third={{ href: `/narzedzia/darmowy-generator-stopki-mailowej`, label: 'Darmowy generator stopki mailowej HTML' }}
+        includeJsonLd
       />
 
       <Wrapper>

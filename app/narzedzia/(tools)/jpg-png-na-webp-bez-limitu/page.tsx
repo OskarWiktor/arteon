@@ -1,3 +1,4 @@
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import JpgPngToWebp from '@/components/sections/tools/JpgPngToWebp';
@@ -59,6 +60,8 @@ export default function Page() {
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
+
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/jpg-png-na-webp-bez-limitu`, label: 'Konwerter JPG/PNG na WebP' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

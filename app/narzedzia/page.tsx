@@ -10,18 +10,6 @@ export const metadata = {
   title: 'Darmowe narzędzia online dla właścicieli stron i firm',
   description:
     'Darmowe narzędzia online dla właścicieli stron i marek. Konwertery obrazów, favicon, licznik meta tagów, tester kontrastu i generator palet kolorów, które pomagają przyspieszyć stronę, poprawić SEO i uporządkować identyfikację wizualną.',
-  keywords: [
-    'narzędzia dla stron internetowych',
-    'narzędzia SEO online',
-    'narzędzia do marketingu internetowego',
-    'konwerter obrazów WebP',
-    'generator favicon',
-    'licznik meta title',
-    'tester kontrastu kolorów',
-    'generator palet kolorów',
-    'optymalizacja strony internetowej',
-    'Arteon narzędzia',
-  ],
   alternates: { canonical: '/narzedzia' },
   openGraph: {
     title: 'Darmowe narzędzia online dla właścicieli stron i firm',
@@ -169,7 +157,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 – zgodne z wymaganiami przeglądarek i Lighthouse.
+                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-favicon-ico">

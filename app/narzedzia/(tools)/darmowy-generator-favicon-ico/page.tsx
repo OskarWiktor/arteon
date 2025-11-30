@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import FaviconGenerator from '@/components/sections/tools/FaviconGenerator';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import CTABanner from '@/components/sections/CTABanner';
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
@@ -55,11 +56,13 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Generator favicon online"
+        title="Darmowy generator favicon online"
         description="Stwórz favicon.ico oraz zestaw ikon PNG dla swojej strony. Dodaj obraz, wybierz rozmiary i pobierz gotowe pliki."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
+
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/darmowy-generator-favicon-ico`, label: 'Darmowy generator favicon online' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

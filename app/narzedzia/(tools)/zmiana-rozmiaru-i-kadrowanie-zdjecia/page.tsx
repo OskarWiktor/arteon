@@ -1,3 +1,4 @@
+import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import ImageResizeTool from '@/components/sections/tools/ImageResizeTool';
@@ -57,6 +58,12 @@ export default function ImageResizerPage() {
         description="Dopasuj zdjęcie do konkretnych wymiarów, proporcji lub gotowych formatów pod social media i WWW. Wszystko dzieje się w Twojej przeglądarce - plik nie jest nigdzie wysyłany."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
+      />
+
+      <Breadcrumbs
+        second={{ href: '/narzedzia', label: 'Narzędzie' }}
+        third={{ href: `/narzedzia/zmiana-rozmiaru-zdjecia`, label: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund' }}
+        includeJsonLd
       />
 
       <Wrapper>

@@ -55,7 +55,6 @@ function ServiceSchema() {
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
   description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-  keywords: ['teksty na stronę', 'copywriting', 'opisy produktów', 'artykuły eksperckie', 'treści sprzedażowe', 'widoczność w Google'],
   alternates: { canonical: '/uslugi/tworzenie-tresci' },
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',

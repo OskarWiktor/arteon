@@ -25,7 +25,6 @@ import {
 export const metadata = {
   title: 'Usługi - strony, sklepy, treści, projekty graficzne i marketing | Arteon',
   description: 'Komplet usług wokół Twojej strony: projekt, realizacja, treści, projekty graficzne i marketing. Jasne pakiety i wsparcie po wdrożeniu.',
-  keywords: ['tworzenie stron', 'tworzenie sklepów', 'projektowanie logo', 'treści na stronę', 'marketing internetowy', 'widoczność w Google'],
   alternates: { canonical: '/uslugi' },
   openGraph: {
     title: 'Usługi - strony, sklepy, treści, projekty graficzne i marketing | Arteon',

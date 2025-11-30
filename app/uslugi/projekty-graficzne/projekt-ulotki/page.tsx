@@ -16,11 +16,13 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt ulotki | Arteon',
   description: 'Ulotka, która przyciąga uwagę i kieruje do kontaktu lub zakupu. Projekt dopasowany do Twojej oferty i lokalnych działań.',
-  keywords: ['projekt ulotki', 'ulotki reklamowe', 'projekt graficzny ulotki', 'ulotka do druku', 'materiały promocyjne'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-ulotki' },
   openGraph: {
     title: 'Projekt ulotki | Arteon',
@@ -49,12 +51,12 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignXxxPage() {
+export default function OfferDesignUlotkaPage() {
   return (
     <>
       <HeroBanner
         title="Projekt ulotki"
-        description={<>Dotarcie lokalne zaczyna się od jasnego przekazu. Tworzymy ulotki, które przyciągają uwagę, wyjaśniają ofertę w kilka sekund i kierują prosto do kontaktu.</>}
+        description={<>Dotarcie lokalne zaczyna się od jasnego przekazu. Tworzymy ulotki, które przyciągają uwagę, wyjaśniają ofertę w kilka sekund i prowadzą prosto do kontaktu lub zakupu.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         buttonSecond="Realizacje"
@@ -63,6 +65,7 @@ export default function OfferDesignXxxPage() {
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
       />
+
       <BenefitBelt
         items={[
           { icon: <RiPencilRuler2Line />, label: 'Spójność marki' },
@@ -71,34 +74,36 @@ export default function OfferDesignXxxPage() {
           { icon: <RiLightbulbFlashLine />, label: 'Psychologia w praktyce' },
         ]}
       />
+
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{ href: `/uslugi/projekty-graficzne/projekt-ulotki`, label: 'Projekt ulotki' }}
         includeJsonLd
       />
+
       <Wrapper>
         <Gap size="xs" />
 
         <SectionInfo title="Co zyskujesz zamawiając projekt ulotki?">
           <p>
-            <strong>Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.</strong> Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania pokazują
-            niższe obciążenie poznawcze i wyższą zapamiętywalność niż w kanale wyłącznie cyfrowym{' '}
+            <strong>Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.</strong> Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania
+            neuromarketingowe pokazują niższe obciążenie poznawcze i wyższą zapamiętywalność niż w kanale wyłącznie cyfrowym{' '}
             <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Canada Post - neuromarketing)
             </a>
-            . Dobrze zaprojektowana ulotka prowadzi klienta od oferty, przez korzyści, do kontaktu.
+            . Dobrze zaprojektowana ulotka prowadzi klienta od nagłówka, przez korzyści, aż do konkretnego działania.
           </p>
 
           <br />
 
           <p>
-            <strong>Wygląd materiałów graficznych firmy, w tym ulotki, wpływa na zaufanie.</strong> Odbiorcy oceniają wiarygodność firmy po jakości oprawy - estetyczny projekt zwiększa szansę na
-            pozytywną reakcję (telefon, wejście na stronę)
+            <strong>Wygląd materiałów graficznych, w tym ulotki, realnie wpływa na zaufanie.</strong> Odbiorcy często oceniają wiarygodność firmy po jakości oprawy. Estetyczny, czytelny projekt
+            zwiększa szansę na pozytywną reakcję - wejście na stronę, telefon lub wizytę stacjonarną
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
-              (Stanford - web credibility, wnioski dot. designu)
+              (Stanford - web credibility)
             </a>
-            . Ulotka łączy prosty przekaz z czytelnym wezwaniem do działania.
+            . Ulotka łączy prosty przekaz z jasnym wezwaniem do działania.
           </p>
 
           <br />
@@ -107,36 +112,36 @@ export default function OfferDesignXxxPage() {
             <strong>Dobra ulotka robi trzy rzeczy naraz:</strong>
           </p>
           <ul className="ml-5 list-disc">
-            <li>Przedstawia ofertę w czytelny sposób,</li>
-            <li>Prowadzi do określonego działania,</li>
-            <li>Buduje rozpoznawalność oraz zwiększa zaufanie.</li>
+            <li>Przedstawia ofertę w prosty i zrozumiały sposób,</li>
+            <li>Prowadzi do konkretnego działania (telefon, rezerwacja, wejście na stronę),</li>
+            <li>Buduje rozpoznawalność marki i zwiększa zaufanie.</li>
           </ul>
         </SectionInfo>
 
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zyskujesz zamawiając ulotkę u nas?"
+          title="Co dokładnie dostajesz w ramach projektu ulotki?"
           subtitle="Nasz standard pracy"
           items={[
             {
               title: 'Jasny przekaz i mocne wezwanie do działania',
-              description: <>Tworzymy układy, które przyciągają wzrok, wyjaśnia ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
+              description: <>Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
               icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Format dopasowany do celu',
-              description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i praktyczna w dystrybucji.</>,
+              description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w dystrybucji.</>,
               icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
-              description: <>Otrzymujesz gotowy plik do druku oraz wersję do użycia w internecie.</>,
+              description: <>Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w internecie lub mailingu.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dopracowanie detali',
-              description: <>W cenie przewidujemy poprawki. Razem dopieszczamy treść, układ i wyróżniki oferty.</>,
+              description: <>W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki Twojej oferty.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -144,7 +149,136 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        <SectionInfo title="Dla kogo projekt ulotki ma największy sens?" subtitle="Dla kogo">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Dla firm lokalnych,</strong> które chcą poinformować o nowej ofercie, promocji, otwarciu lokalu lub wydarzeniu w konkretnej okolicy.
+            </li>
+            <li>
+              <strong>Dla gabinetów, salonów i punktów usługowych,</strong> które chcą w prosty sposób pokazać zakres usług i zachęcić do rezerwacji wizyty.
+            </li>
+            <li>
+              <strong>Dla organizatorów wydarzeń,</strong> szkoleń i konferencji, którzy potrzebują materiału informacyjnego z kluczowymi danymi: gdzie, kiedy i jak się zapisać.
+            </li>
+            <li>
+              <strong>Dla firm łączących offline z online,</strong> które chcą, aby ulotka kierowała na stronę www, landing page lub profil w social media (np. QR kod + krótkie CTA).
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu ulotki?" subtitle="Efekty po wdrożeniu">
+          <ul className="ml-5 list-disc space-y-2">
+            <li>
+              <strong>Więcej wejść na stronę lub profil,</strong> bo klient otrzymuje jasny adres, QR kod i prostą instrukcję, co zrobić w kolejnym kroku.
+            </li>
+            <li>
+              <strong>Więcej telefonów i zapytań z lokalnego rynku,</strong> szczególnie przy dobrze zaplanowanej dystrybucji w miejscach odwiedzanych przez Twoją grupę docelową.
+            </li>
+            <li>
+              <strong>Większa rozpoznawalność marki offline,</strong> bo logo, kolory i kluczowy komunikat powtarzają się na ulotce, stronie i innych materiałach.
+            </li>
+            <li>
+              <strong>Lepsze wsparcie kampanii online,</strong> gdy ulotka jest przedłużeniem reklamy w Google Ads, Meta Ads lub działań w social mediach, a nie osobnym komunikatem.
+            </li>
+          </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionPrices
+          title="Projekt ulotki - przykładowe pakiety"
+          subtitle="Zakres dopasowany do kampanii i budżetu"
+          plans={[
+            {
+              name: 'Pakiet Start - prosta ulotka jednostronna',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które potrzebują jednej, czytelnej ulotki z najważniejszą ofertą i kontaktem.',
+              features: [
+                'Krótki brief o ofercie, celu kampanii i grupie docelowej',
+                'Projekt jednostronnej ulotki (np. A5 lub DL)',
+                'Dopasowanie nagłówków, treści i CTA do konkretnego działania',
+                'Plik gotowy do druku + wersja cyfrowa (PNG/JPG)',
+                'Jedna runda poprawek w cenie',
+              ],
+              btnOne: 'Zamów wycenę pakietu Start',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Standard - ulotka dwustronna lub kilka wersji',
+              price: 'wycena indywidualna',
+              description: 'Dla marek, które chcą zmieścić więcej treści, cennik, kilka usług lub przygotować dwie wersje dla różnych odbiorców.',
+              features: [
+                'Wszystko z pakietu Start, a dodatkowo:',
+                'Projekt ulotki dwustronnej (np. oferta + korzyści + dane kontaktowe)',
+                'Możliwość przygotowania dwóch wersji (np. różne lokalizacje lub grupy docelowe)',
+                'Lepsze rozplanowanie treści z podziałem na sekcje',
+                'Dwie rundy poprawek w cenie',
+              ],
+              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Pakiet Pro - ulotka w kampanii i systemie materiałów',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które traktują ulotkę jako element większej kampanii i chcą, aby spójnie łączyła się z wizytówkami, plakatami i stroną www.',
+              features: [
+                'Wszystko z pakietu Standard, a dodatkowo:',
+                'Rekomendacje dotyczące formatu, nakładu i papieru pod konkretną kampanię',
+                'Projekt ulotki spójny z pozostałymi materiałami (wizytówki, plakaty, roll-upy)',
+                'Propozycja integracji z kampaniami online (np. QR kody, dedykowane landing pages)',
+                'Wsparcie przy przygotowaniu plików zgodnie z wymaganiami drukarni',
+              ],
+              btnOne: 'Porozmawiajmy o pakiecie Pro',
+              btnOneLink: '#kontakt',
+            },
+          ]}
+          legalNote="Zakres, format i liczbę wersji dopasowujemy indywidualnie - po briefie otrzymasz konkretną wycenę i harmonogram prac."
+        />
+
+        <Gap variant="line" />
+
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Kolejne kroki po projekcie ulotki"
+          subtitle="Zobacz też"
+          description="Ulotka jest często jednym z kilku materiałów, które pracują na rozpoznawalność i sprzedaż. Najlepszy efekt daje spójny pakiet."
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Projekt wizytówki',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Zadbaj o to, aby osoba, która zobaczy ulotkę i spotka Cię osobiście, otrzymała równie dopracowaną wizytówkę z tym samym stylem.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Szablony postów social media',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Przedłuż przekaz z ulotki w internecie. Ustal jeden styl dla materiałów drukowanych i postów, tak aby klient łatwo rozpoznał Twoją markę.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
+                      Zobacz szablony social media
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
 
         <Gap variant="line" />
 
@@ -162,7 +296,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów projekt ulotki"
-          description="Opisz cel ulotki, grupę odbiorców i format druku. Dołącz treści lub szkic - przygotujemy wycenę i wyznaczymy termin realizacji."
+          description="Opisz, jaki cel ma spełniać ulotka (promocja, otwarcie, oferta stała), do kogo jest kierowana, w jakim formacie planujesz druk oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
           defaultSubject="Projekt ulotki"
         />
 
@@ -171,38 +305,43 @@ export default function OfferDesignXxxPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki"
+          title="Najczęstsze pytania o projekt ulotki"
           items={[
             {
               question: 'Ile kosztuje projekt ulotki?',
-              answer: 'Cena projektu ulotki zależy od formatu (A5, DL, składane), liczby wariantów i objętości grafiki. Po briefie przygotowujemy dopasowaną wycenę.',
+              answer: 'Cena projektu ulotki zależy od formatu (A5, DL, składane), liczby wersji i objętości treści. Po krótkim briefie przygotowujemy dopasowaną wycenę w zależności od zakresu prac.',
             },
             {
               question: 'Jak długo trwa projektowanie ulotki?',
-              answer: 'Przy standardowym zakresie czas to 3-7 dni roboczych. Większe projekty z wieloma wersjami mogą wymagać więcej czasu - termin ustalamy indywidualnie.',
+              answer:
+                'Przy standardowym zakresie czas realizacji wynosi zwykle 3-7 dni roboczych. Większe projekty z wieloma wersjami lub szerszym zakresem treści mogą wymagać dłuższego terminu - ustalamy go indywidualnie.',
             },
             {
               question: 'W jakich formatach otrzymam ulotkę?',
-              answer: 'Dostarczamy pliki do druku oraz wersje do internetu (PNG, JPG). Pliki możemy dopasować do wymagań drukarni.',
+              answer:
+                'Dostarczamy pliki do druku (PDF ze spadami i odpowiednią rozdzielczością) oraz wersje do internetu (PNG, JPG). W razie potrzeby dopasowujemy pliki do wymagań konkretnej drukarni.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do ulotki?',
-              answer: 'Tak - w cenie zawarty jest zestaw rund poprawek (zwykle 1-2). Wspólnie dopracowujemy układ, kolory i treść aż do akceptacji.',
+              answer: 'Tak - w cenie przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i treści tak długo, aż ulotka będzie czytelna, estetyczna i spójna z Twoją marką.',
             },
             {
               question: 'Jak dobrać format i papier ulotki?',
-              answer: 'Pomagamy dobrać optymalny format (np. A5, DL) i grubość papieru w zależności od celu kampanii i budżetu. Zalecamy materiały, które są trwałe i estetyczne.',
+              answer:
+                'Na podstawie celu kampanii i budżetu rekomendujemy format (np. A5, DL, składane A4 do DL) oraz rodzaj papieru. Dbamy o to, aby materiał był wystarczająco trwały, dobrze się prezentował i był wygodny w dystrybucji.',
             },
             {
               question: 'Czy projekt ulotki będzie czytelny na urządzeniach mobilnych?',
-              answer: 'Tak - dostarczamy również wersję cyfrową zoptymalizowaną pod urządzenia mobilne, tak by czytelność i przekaz były zachowane.',
+              answer: 'Tak. Przygotowujemy również wersję cyfrową zoptymalizowaną pod wyświetlanie na telefonach, tak aby ulotka w PDF lub JPG pozostała czytelna także w kanale online.',
             },
             {
               question: 'Czy projekt ulotki jest gotowy do druku?',
-              answer: 'Tak - przygotowujemy pliki z odpowiednimi ustawieniami druku, gotowe do przekazania do drukarni.',
+              answer: 'Tak - pliki przygotowujemy zgodnie z wymaganiami druku: odpowiednia rozdzielczość, kolory, spady i marginesy bezpieczeństwa. Możesz przekazać je bezpośrednio do drukarni.',
             },
             {
               question: 'Czy mogę zamówić ekspresowy projekt ulotki?',
-              answer: 'Tak - oferujemy tryb priorytetowy, który skraca czas realizacji. Koszt ustalamy indywidualnie przed rozpoczęciem projektu.',
+              answer:
+                'Tak - w uzasadnionych przypadkach realizujemy projekty w trybie przyspieszonym. Czas i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac, aby wszystko było transparentne.',
             },
           ]}
         />
@@ -213,9 +352,10 @@ export default function OfferDesignXxxPage() {
 
         <Gap size="sm" />
       </Wrapper>
+
       <CTABanner
         title="Zamień uwagę w działanie"
-        description="Zaprojektujemy ulotkę, która prowadzi prosto do kontaktu."
+        description="Zaprojektujemy ulotkę, która przyciąga wzrok i prowadzi prosto do kontaktu."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"

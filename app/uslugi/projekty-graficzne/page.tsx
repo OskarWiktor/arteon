@@ -84,21 +84,6 @@ function ItemListSchema() {
 export const metadata = {
   title: 'Projekty graficzne dla firm: logo, identyfikacja, wizytówki, ulotki, katalogi | Arteon',
   description: 'Kompleksowe projekty graficzne: od logo i identyfikacji po katalogi i layouty stron. Pliki do druku i online, spójność i prestiż.',
-  keywords: [
-    'projekty graficzne',
-    'projekty graficzne dla firm',
-    'projekt logo',
-    'identyfikacja wizualna',
-    'brandbook',
-    'projekt wizytówki',
-    'projekt ulotki',
-    'teczka ofertowa',
-    'papier firmowy',
-    'projekt katalogu',
-    'odzież firmowa',
-    'projekt graficzny strony',
-    'materiały firmowe',
-  ],
   alternates: { canonical: '/uslugi/projekty-graficzne' },
   openGraph: {
     title: 'Projekty graficzne dla firm: logo, identyfikacja, wizytówki, ulotki, katalogi | Arteon',

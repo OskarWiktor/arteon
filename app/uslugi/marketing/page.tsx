@@ -20,17 +20,6 @@ export const metadata = {
   title: 'Marketing internetowy — SEO, reklamy i komunikacja | Arteon',
   description:
     'Strategia, wdrożenia i kampanie: audyt SEO, optymalizacja, pozycjonowanie, reklamy online, social media oraz branding i komunikacja. Przyciągamy właściwych klientów i pokazujemy wyniki.',
-  keywords: [
-    'marketing internetowy',
-    'audyt SEO',
-    'optymalizacja SEO',
-    'pozycjonowanie stron',
-    'reklamy online',
-    'social media',
-    'branding i komunikacja',
-    'widoczność w Google',
-    'kampanie Google i Meta',
-  ],
   alternates: { canonical: '/uslugi/marketing' },
   openGraph: {
     title: 'Marketing internetowy — SEO, reklamy i komunikacja, które dowożą wynik | Arteon',

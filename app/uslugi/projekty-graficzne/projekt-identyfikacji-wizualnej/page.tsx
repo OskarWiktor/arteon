@@ -16,11 +16,13 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import SectionPrices from '@/components/ui/sections/SectionPrices';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt identyfikacji wizualnej | Arteon',
   description: 'Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Spójność w każdym punkcie styku.',
-  keywords: ['Projekt identyfikacji wizualnej', 'system identyfikacji', 'brandbook', 'wizualna tożsamość marki', 'projekt wizerunku'],
   alternates: { canonical: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   openGraph: {
     title: 'Projekt identyfikacji wizualnej | Arteon',
@@ -56,7 +58,7 @@ export default function OfferDesignXxxPage() {
         title="Projekt identyfikacji wizualnej"
         description={
           <>
-            Spójny system wizualny zwiększa wiarygodność i rozpoznawalność marki. Zaprojektujemy identyfikację: logo, kolory, typografię i materiały firmowe – tak, aby Twoja marka wyglądała
+            Spójny system wizualny zwiększa wiarygodność i rozpoznawalność marki. Zaprojektujemy identyfikację: logo, kolory, typografię i materiały firmowe - tak, aby Twoja marka wyglądała
             profesjonalnie w każdym kanale.
           </>
         }
@@ -81,7 +83,10 @@ export default function OfferDesignXxxPage() {
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
-        fourth={{ href: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, label: 'Projekt identyfikacji wizualnej' }}
+        fourth={{
+          href: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`,
+          label: 'Projekt identyfikacji wizualnej',
+        }}
         includeJsonLd
       />
 
@@ -91,7 +96,7 @@ export default function OfferDesignXxxPage() {
         <SectionInfo title="Co zyskujesz zamawiając identyfikację wizualną?">
           <p>
             <strong>Spójny system wizualny porządkuje każdy kontakt z Twoją marką.</strong> Firmy, które konsekwentnie trzymają identyfikację, notują średnio
-            <strong> 10–20% wyższe przychody</strong>
+            <strong> 10-20% wyższe przychody</strong>
             <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
@@ -148,13 +153,13 @@ export default function OfferDesignXxxPage() {
             <li>Zakładasz firmę i chcesz od początku zbudować spójny, profesjonalny wizerunek.</li>
             <li>Masz już logo, ale materiały „żyją własnym życiem” i brakuje jednego kierunku dla całej komunikacji.</li>
             <li>Planujesz stronę internetową, kampanie reklamowe lub wejście na nowy rynek i potrzebujesz wyraźnego, rozpoznawalnego stylu.</li>
-            <li>Twój zespół lub podwykonawcy często pytają „czy mogę użyć tego koloru / fontu?” – chcesz jasnych zasad, zamiast ciągłego ustalania detali.</li>
+            <li>Twój zespół lub podwykonawcy często pytają „czy mogę użyć tego koloru / fontu?” - chcesz jasnych zasad, zamiast ciągłego ustalania detali.</li>
             <li>Przygotowujesz markę ekspercką (np. gabinet, kancelaria, marka osobista) i zależy Ci na zaufaniu już przy pierwszym kontakcie.</li>
           </ul>
 
           <br />
 
-          <p>Jeśli masz poczucie, że Twoja marka „jest dobra w środku”, ale na zewnątrz nie wygląda jeszcze tak, jak powinna – identyfikacja wizualna jest naturalnym kolejnym krokiem.</p>
+          <p>Jeśli masz poczucie, że Twoja marka „jest dobra w środku”, ale na zewnątrz nie wygląda jeszcze tak, jak powinna - identyfikacja wizualna jest naturalnym kolejnym krokiem.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -165,7 +170,7 @@ export default function OfferDesignXxxPage() {
           items={[
             {
               title: 'Spójny system marki',
-              description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały – online i offline – działały razem.</>,
+              description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały - online i offline - działały razem.</>,
               icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -175,7 +180,7 @@ export default function OfferDesignXxxPage() {
             },
             {
               title: 'Proste zasady stosowania',
-              description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie – także osobom nietechnicznym.</>,
+              description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie - także osobom nietechnicznym.</>,
               icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -188,7 +193,109 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
+        <SectionPrices
+          title="Projekt identyfikacji wizualnej - przykładowe zakresy"
+          subtitle="Dobieramy zakres systemu do etapu rozwoju Twojej marki"
+          plans={[
+            {
+              name: 'Podstawowa identyfikacja dla nowej marki',
+              price: 'wycena indywidualna',
+              description: 'Dla firm na starcie, które potrzebują solidnych fundamentów wizualnych, ale jeszcze nie pełnego brandbooka.',
+              features: [
+                'Logo w kilku wariantach (kolor, mono, jasne/ciemne tło)',
+                'Podstawowa paleta kolorystyczna i typografia',
+                'Proste materiały firmowe (wizytówka, papier firmowy, stopka mailowa)',
+                'Mini-księga znaku z zasadami użycia logo i kolorów',
+              ],
+              btnOne: 'Zamów wycenę podstawowej identyfikacji',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'Rozszerzona identyfikacja dla rozwijającej się marki',
+              price: 'wycena indywidualna',
+              description: 'Dla firm, które rosną, działają w kilku kanałach i potrzebują szerszego zestawu szablonów oraz klarowniejszych wytycznych.',
+              features: [
+                'Wszystko z pakietu podstawowego, a dodatkowo:',
+                'Rozszerzona paleta barw (kolory pomocnicze, akcentowe)',
+                'Więcej materiałów - np. teczka ofertowa, grafiki do social mediów, slajdy prezentacyjne',
+                'Bardziej rozbudowana mini-księga znaku z przykładami zastosowań',
+              ],
+              btnOne: 'Porozmawiajmy o identyfikacji dla rosnącej marki',
+              btnOneLink: '#kontakt',
+            },
+            {
+              name: 'System z brandbookiem dla marki na lata',
+              price: 'wycena indywidualna',
+              description: 'Dla marek, które chcą mieć kompletny system na lata - z dokładnymi zasadami i przykładowymi wdrożeniami w wielu kanałach.',
+              features: [
+                'Kompletny system logo, kolorów, typografii i ikonografii',
+                'Rozbudowany zestaw materiałów drukowanych i cyfrowych',
+                'Brandbook (PDF) z zasadami, siatkami, przykładami i zakazanymi użyciami',
+                'Rekomendacje wdrożenia identyfikacji w stronie www, social mediach i materiałach handlowych',
+              ],
+              btnOne: 'Zbudujmy pełny system identyfikacji',
+              btnOneLink: '#kontakt',
+            },
+          ]}
+          legalNote="Ostateczna wycena zależy m.in. od zakresu elementów (logo, materiały drukowane, szablony cyfrowe), liczby języków oraz poziomu szczegółowości brandbooka. Po krótkim briefie przygotujemy konkretną propozycję zakresu i harmonogram prac."
+        />
+
+        <Gap variant="line" />
+
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Z czym warto połączyć identyfikację wizualną?"
+          subtitle="Zobacz też"
+          description="Najwięcej zyskujesz, gdy spójny system wizualny od razu przenosimy na kluczowe punkty styku z klientami."
+          items={[
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Projekt logo',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Jeśli masz dopiero zalążek pomysłu na logo lub znak, możemy od niego zacząć i dopiero potem rozwinąć pełną identyfikację wizualną.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-logo">
+                      Sprawdź projekt logo
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiIdCardLine className="h-8 w-8" />,
+              title: 'Wizytówki i materiały firmowe',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Wizytówki, papiery firmowe i teczki to pierwsze materiały, które realnie pracują w relacjach B2B. Warto od razu mieć je w nowym stylu.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekty wizytówek
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Strona internetowa w nowej identyfikacji',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Nowa identyfikacja najlepiej działa, gdy od razu przeniesiesz ją na stronę. Projektujemy i wdrażamy strony spójne z Twoim systemem wizualnym.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/strony-internetowe">
+                      Sprawdź strony internetowe
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="three"
+        />
 
         <Gap variant="line" />
 
@@ -234,25 +341,25 @@ export default function OfferDesignXxxPage() {
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
               answer:
-                'Tak – każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją Twojej marki i komfortowy w codziennym użyciu.',
+                'Tak - każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją Twojej marki i komfortowy w codziennym użyciu.',
             },
             {
               question: 'Czy mogę zamówić samo logo bez całego systemu?',
-              answer: 'Tak – projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną, opartą na już istniejącym znaku.',
+              answer: 'Tak - projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną, opartą na już istniejącym znaku.',
             },
             {
               question: 'Czy dostanę pliki gotowe do druku i internetu?',
-              answer: 'Tak – przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia, aby ułatwić wdrożenie w firmie.',
+              answer: 'Tak - przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia, aby ułatwić wdrożenie w firmie.',
             },
             {
               question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
               answer:
-                'Tak – przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej branży i grupy docelowej.',
+                'Tak - przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej branży i grupy docelowej.',
             },
             {
               question: 'Czy mogę zamówić brandbook do identyfikacji?',
               answer:
-                'Tak – opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
+                'Tak - opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
             },
           ]}
         />
