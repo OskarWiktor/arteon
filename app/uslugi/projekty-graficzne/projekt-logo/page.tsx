@@ -90,7 +90,6 @@ export default function OfferDesignLogoPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* 1. Co zyskujesz - efekt i sens logo */}
         <SectionInfo title="Co zyskujesz zamawiając projekt logo?">
           <p>
             <strong>Profesjonalne logo wzmacnia wizerunek i ułatwia sprzedaż.</strong> Spójny branding realnie przekłada się na wynik – firmy utrzymujące konsekwentną identyfikację raportują ok.{` `}
@@ -104,7 +103,7 @@ export default function OfferDesignLogoPage() {
           <br />
 
           <p>
-            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: nawet ok.{` `}
+            <strong>Logo buduje wiarygodność w ułamku sekundy.</strong> Jakość oprawy wizualnej (logo, układ, estetyka) silnie wpływa na ocenę firmy: ok.{` `}
             <strong>75%</strong> osób przypisuje wiarygodność marce na podstawie tego, jak wyglądają jej materiały
             <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
@@ -120,13 +119,12 @@ export default function OfferDesignLogoPage() {
           <ul className="ml-5 list-disc">
             <li>Porządkuje komunikację i ułatwia tworzenie kolejnych materiałów,</li>
             <li>Buduje rozpoznawalność i pamięć marki w głowie klienta,</li>
-            <li>Podnosi zaufanie – wyglądasz jak firma, której można powierzyć pieniądze.</li>
+            <li>Podnosi zaufanie.</li>
           </ul>
         </SectionInfo>
 
         <Gap variant="line" />
 
-        {/* 2. Co dokładnie dostajesz */}
         <FeatureGrid
           title="Co zyskujesz zamawiając logo u nas?"
           subtitle="Nasz standard pracy"
@@ -156,14 +154,13 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        {/* 3. Dla kogo logo ma największy sens */}
         <SectionInfo title="Dla kogo projekt logo ma największy sens?" subtitle="Dla kogo">
           <ul className="ml-5 list-disc space-y-2">
             <li>
               <strong>Dla nowych firm i start-upów,</strong> które chcą od początku wejść na rynek z klarowną, przemyślaną identyfikacją.
             </li>
             <li>
-              <strong>Dla lokalnych biznesów,</strong> które przeszły etap „prowizorki” i potrzebują logo na poziomie jakości usług, które oferują.
+              <strong>Dla lokalnych biznesów,</strong> które rozwijają się i potrzebują logo na poziomie jakości usług, które oferują.
             </li>
             <li>
               <strong>Dla ekspertów i marek osobistych,</strong> gdzie logo musi współgrać z reputacją, jaką budujesz latami.
@@ -176,7 +173,6 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        {/* 4. Efekty po wdrożeniu */}
         <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu nowego logo?" subtitle="Efekty po wdrożeniu">
           <ul className="ml-5 list-disc space-y-2">
             <li>
@@ -196,7 +192,14 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        {/* 5. Cennik / pakiety - na wartość, bez kwot */}
+        <ProjectsOverview title="Wybrane realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
         <SectionPrices
           title="Projekt logo - przykładowe pakiety"
           subtitle="Zakres dopasowany do etapu rozwoju Twojej marki"
@@ -236,7 +239,7 @@ export default function OfferDesignLogoPage() {
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Rozszerzona mini-księga znaku (kolory, typografia, przykładowe zastosowania)',
-                'Propozycje zastosowań na wizytówkach, papierze firmowym lub social mediach',
+                'Propozycje zastosowań na wizytówkach, papierze firmowym czy mediach społecznościowych',
                 'Zestaw plików przygotowany pod dalszy rozwój identyfikacji',
                 'Rekomendacje co do kolejnych kroków (strona, materiały drukowane, social media)',
               ],
@@ -249,76 +252,14 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        {/* 6. Portfolio */}
-        <ProjectsOverview title="Wybrane realizacje logo i identyfikacji wizualnej" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
-        {/* 7. Zobacz też - cross-sell identyfikacji */}
-        <SectionSteps
-          title="Jak rozwinąć logo w pełną identyfikację?"
-          subtitle="Zobacz też"
-          description="Logo jest fundamentem, ale pełną moc pokazuje dopiero w systemie materiałów. Możesz krok po kroku rozbudować identyfikację, zachowując spójny styl."
-          items={[
-            {
-              icon: <RiIdCardLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki firmowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Wykorzystaj nowe logo na eleganckiej wizytówce – to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Papier firmowy i dokumenty',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Uporządkuj oferty, umowy i korespondencję. Spójne nagłówki, stopki i układ treści wzmacniają profesjonalny obraz firmy.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
-                      Zobacz papier firmowy
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
-        {/* 8. Social proof */}
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        {/* 9. Zasady współpracy i rozliczeń */}
         <FeesSteps />
 
         <Gap variant="line" />
 
-        {/* 10. Proces projektowy */}
         <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        {/* 11. Formularz - precyzyjny brief */}
-        <ContactForm
-          title="Zamów projekt logo"
-          description="Opisz, czym się zajmujesz, w jakiej branży działasz i jaki charakter znaku Ci się podoba (minimalistyczny, klasyczny, odważny). Jeśli masz istniejące materiały lub inspiracje, możesz je dołączyć – na tej podstawie przygotujemy brief, wycenę i harmonogram."
-          defaultSubject="Projekt logo"
-        />
 
         <Gap variant="line" />
 
-        {/* 12. FAQ */}
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo"
@@ -363,7 +304,53 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        {/* 13. Ogólny proces usług Arteon */}
+        <ContactForm
+          title="Zamów projekt logo"
+          description="Opisz, czym się zajmujesz, w jakiej branży działasz i jaki charakter znaku Ci się podoba (minimalistyczny, klasyczny, odważny). Jeśli masz istniejące materiały lub inspiracje, możesz je dołączyć – na tej podstawie przygotujemy brief, wycenę i harmonogram."
+          defaultSubject="Projekt logo"
+        />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Jak rozwinąć logo w pełną identyfikację?"
+          subtitle="Zobacz też"
+          description="Logo jest fundamentem, ale pełną moc pokazuje dopiero w systemie materiałów. Z nami możesz krok po kroku rozbudować identyfikację, zachowując spójny styl."
+          items={[
+            {
+              icon: <RiIdCardLine className="h-8 w-8" />,
+              title: 'Projekt wizytówki firmowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Wykorzystaj nowe logo na eleganckiej wizytówce – to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Papier firmowy i dokumenty',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Uporządkuj oferty, umowy i korespondencję. Spójne nagłówki, stopki i układ treści wzmacniają profesjonalny obraz firmy.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
+                      Zobacz papier firmowy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
+
+        <Gap variant="line" />
+
         <ServicesSteps />
 
         <Gap size="sm" />

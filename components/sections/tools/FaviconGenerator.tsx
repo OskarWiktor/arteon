@@ -28,11 +28,11 @@ function formatBytes(bytes: number): string {
 function suggestFileName(size: number | 'ico', type: 'png' | 'ico'): string {
   if (type === 'ico') return 'favicon.ico';
 
-  if (size === 180) return 'apple-touch-icon.png';
-  if (size === 192) return 'android-chrome-192x192.png';
-  if (size === 512) return 'android-chrome-512x512.png';
+  if (size === 180) return 'apple-touch-icon.webp';
+  if (size === 192) return 'android-chrome-192x192.webp';
+  if (size === 512) return 'android-chrome-512x512.webp';
 
-  return `favicon-${size}x${size}.png`;
+  return `favicon-${size}x${size}.webp`;
 }
 
 async function createPngFromImage(img: HTMLImageElement, size: number, backgroundColor: string, transparentBackground: boolean): Promise<Blob> {

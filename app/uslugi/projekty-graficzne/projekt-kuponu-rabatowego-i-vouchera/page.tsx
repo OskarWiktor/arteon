@@ -67,7 +67,7 @@ export default function OfferDesignVoucheryPage() {
         buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png"
+        backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
         overlay="black"
       />
 
@@ -93,7 +93,6 @@ export default function OfferDesignVoucheryPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* 1. Dlaczego – sens i wartość */}
         <SectionInfo title="Dlaczego warto inwestować w kupony i vouchery?">
           <p>
             <strong>Kupon oraz voucher to drobny materiał, który potrafi przynieść duży efekt.</strong> Daje pretekst do kontaktu, zakupów i powrotu klienta. Estetyczny projekt buduje pozytywne
@@ -121,29 +120,28 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 2. Co dostajesz – standard pracy */}
         <FeatureGrid
           title="Co otrzymasz w ramach projektu?"
           subtitle="Nasz standard pracy"
           items={[
             {
               title: 'Spójność z identyfikacją marki',
-              description: <>Dopasujemy projekt do Twojej kolorystyki, logo i tonu komunikacji, dzięki czemu voucher będzie naturalnym przedłużeniem Twojej marki.</>,
+              description: <>Dopasujemy projekt do Twojej kolorystyki, logo i tonu komunikacji, dzięki czemu voucher będzie spójnym elementem Twojej marki.</>,
               icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wersje do druku i online',
-              description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do social mediów, mailingu lub sklepów internetowych.</>,
+              description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych, mailingu lub sklepu internetowegoza.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Czytelne pola i zasady wykorzystania',
-              description: <>Zaprojektujemy pola na datę ważności, kod, podpis czy regulamin tak, aby voucher był piękny i jednocześnie praktyczny.</>,
+              description: <>Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis czy regulamin tak, aby voucher był piękny i praktyczny.</>,
               icon: <RiTicket2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Warianty na różne okazje',
-              description: <>Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z zachowaniem jednego stylu i rozpoznawalności.</>,
+              description: <>Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z zachowaniem jednego spójnego stylu.</>,
               icon: <RiGiftLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -151,17 +149,16 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 3. Dla kogo – filtr i dopasowanie */}
         <SectionInfo title="Dla kogo są kupony rabatowe i vouchery?" subtitle="Dla kogo">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Dla salonów beauty, fryzjerów, SPA,</strong> które chcą zachęcić klientów do kolejnej wizyty lub sprzedaży prezentów bliskim.
+              <strong>Dla salonów beauty, fryzjerów, SPA,</strong> które chcą zachęcić klientów do kolejnej wizyty lub podarowaniu kuponu bliskim.
             </li>
             <li>
-              <strong>Dla gabinetów i specjalistów,</strong> którzy chcą elegancko zapakować usługi w formie bonu prezentowego.
+              <strong>Dla gabinetów i specjalistów,</strong> którzy chcą elegancko zaprezentować usługi w formie bonu prezentowego.
             </li>
             <li>
-              <strong>Dla sklepów stacjonarnych i online,</strong> które chcą wręczać bony wartościowe i kupony rabatowe po zakupie.
+              <strong>Dla sklepów stacjonarnych i online,</strong> które chcą wręczać bony i kupony rabatowe na zakupy.
             </li>
             <li>
               <strong>Dla restauracji i kawiarni,</strong> które chcą oferować vouchery na degustacje, kolacje lub konkretne zestawy.
@@ -171,11 +168,10 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 4. Efekty po wdrożeniu */}
         <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu kuponów i voucherów?" subtitle="Efekty po wdrożeniu">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Więcej powrotów klientów,</strong> bo mają konkretny powód, by pojawić się ponownie w Twoim biznesie.
+              <strong>Więcej powrotów klientów,</strong> bo mają konkretny powód, by ponownie skorzystać z Twojej usługi.
             </li>
             <li>
               <strong>Więcej poleceń,</strong> dzięki voucherom prezentowym, które Twoi klienci wręczają rodzinie i znajomym.
@@ -191,8 +187,7 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 5. Proof – realizacje + opinie */}
-        <ProjectsOverview title="Przykładowe realizacje kuponów i voucherów" category="grafika" subtitle="Portfolio" />
+        <ProjectsOverview title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -200,7 +195,6 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 6. Pakiety / ceny */}
         <SectionPrices
           title="Kupony rabatowe i vouchery - przykładowe pakiety"
           subtitle="Zakres dopasowany do Twojej oferty"
@@ -229,7 +223,7 @@ export default function OfferDesignVoucheryPage() {
             {
               name: 'Pakiet Pro - system lojalnościowy',
               price: 'wycena indywidualna',
-              description: 'Dla marek, które chcą spójnego systemu: karty stałego klienta, vouchery, kupony okresowe i materiały wspierające.',
+              description: 'Dla marek, które chcą spójnego systemu: karty stałego klienta, kuponu i materiałów wspierających.',
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Projekt karty stałego klienta lub programu lojalnościowego',
@@ -245,7 +239,6 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 7. Proces – jak to wygląda krok po kroku */}
         <FeesSteps />
 
         <Gap variant="line" />
@@ -254,7 +247,6 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 8. FAQ – obiekcje i szczegóły */}
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera"
@@ -342,7 +334,7 @@ export default function OfferDesignVoucheryPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png"
+        backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
         overlay="black"
       />
 

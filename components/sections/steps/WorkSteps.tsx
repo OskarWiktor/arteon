@@ -178,7 +178,7 @@ const stepsDesign = [
         <span className="font-extrabold text-slate-600">3 </span>Realizacja
       </>
     ),
-    description: <p>Tworzymy logo/identyfikację i materiały. Przygotowujemy pliki do druku i/lub do internetu.</p>,
+    description: <p>Tworzymy odpowiednie materiały. Przygotowujemy pliki do druku i/lub do internetu.</p>,
   },
   {
     title: (

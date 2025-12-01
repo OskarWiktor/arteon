@@ -31,7 +31,7 @@ export default function AboutPage() {
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">
         <Gap size="sm" />
 
-        <SectionBasic imageSrc="/assets/arteon-sygnet-01.png" imageAlt="logo arteon" title="Kim jesteśmy">
+        <SectionBasic imageSrc="/assets/arteon-sygnet-01.webp" imageAlt="logo arteon" title="Kim jesteśmy">
           <p>W Arteon wierzymy, że wysoka jakość usług, powinna być dostępna dla każdego. Wdrażamy doświadczenie w pracy dla globalnych marek w małych i średnich biznesach.</p>
           <p className="mt-2">
             Tworzymy nowoczesne strony internetowe, sklepy online, blogi i aplikacje webowe. Projektujemy identyfikacje wizualne, prowadzimy marketing internetowy, pozycjonowanie oraz kampanie

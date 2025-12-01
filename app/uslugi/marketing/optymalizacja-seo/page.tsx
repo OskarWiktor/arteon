@@ -98,7 +98,7 @@ export default function OfferOptimizationSEO() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-zblizenie-na-raport.jpg"
+          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-zblizenie-na-raport.webp"
           imageAlt="Optymalizacja SEO — wyniki raportu"
           subtitle="Dla kogo"
           title="Kiedy warto zrobić optymalizację SEO i dla kogo ona jest?"
@@ -195,7 +195,7 @@ export default function OfferOptimizationSEO() {
 
         <SectionBasic
           variant="left"
-          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.jpg"
+          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.webp"
           imageAlt="Optymalizacji SEO — ekran edycji strony"
           subtitle="Wyniki wdrożeń"
           title={<>Jakie efekty widzimy najczęściej po optymalizacji SEO?</>}

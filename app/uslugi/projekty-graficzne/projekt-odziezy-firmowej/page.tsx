@@ -97,7 +97,7 @@ export default function OfferDesignOdziezFirmowaPage() {
         <SectionInfo title="Co zyskujesz zamawiając projekt odzieży firmowej?">
           <p>
             <strong>Spójny wygląd odzieży Twojego zespołu buduje zaufanie w kilka sekund.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i
-            wzmacnia wiarygodność – zarówno w siedzibie, jak i „w terenie”. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
+            wzmacnia wiarygodność – zarówno w siedzibie, jak i w terenie. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
           </p>
 
           <br />
@@ -162,22 +162,11 @@ export default function OfferDesignOdziezFirmowaPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Jakie efekty możesz zobaczyć po wdrożeniu odzieży firmowej?" subtitle="Efekty po wdrożeniu">
-          <ul className="ml-5 list-disc space-y-2">
-            <li>
-              <strong>Lepsza rozpoznawalność marki w codziennych sytuacjach,</strong> gdy logo i kolory pojawiają się na ulicy, w biurach klientów i na wydarzeniach.
-            </li>
-            <li>
-              <strong>Wyższe poczucie przynależności do zespołu,</strong> bo pracownicy noszą te same, dopracowane elementy garderoby.
-            </li>
-            <li>
-              <strong>Czytelniejsza obsługa klienta,</strong> który szybciej identyfikuje osoby z obsługi i łatwiej prosi o pomoc.
-            </li>
-            <li>
-              <strong>Łatwiejsza współpraca z drukarnią,</strong> dzięki gotowym plikom przygotowanym pod wybraną technologię nadruku lub haftu.
-            </li>
-          </ul>
-        </SectionInfo>
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 
@@ -188,12 +177,12 @@ export default function OfferDesignOdziezFirmowaPage() {
             {
               name: 'Pakiet Start - podstawowy zestaw nadruków',
               price: 'wycena indywidualna',
-              description: 'Dla firm, które potrzebują prostego, spójnego projektu nadruku na koszulki lub bluzy dla małego zespołu.',
+              description: 'Dla firm, które potrzebują prostego, spójnego projektu nadruku na np. koszulki dla małego zespołu.',
               features: [
                 'Krótki brief o marce, zastosowaniu odzieży i liczbie pracowników',
-                'Projekt nadruku z logo i podstawowymi elementami identyfikacji (np. claim, adres www)',
+                'Projekt nadruku z logo i podstawowymi elementami identyfikacji',
                 'Dopasowanie projektu do jednego typu odzieży (np. T-shirt lub bluza)',
-                'Pliki gotowe do produkcji w wybranej technice (np. DTF lub sitodruk)',
+                'Pliki gotowe do produkcji w wybranej technice',
                 'Jedna runda poprawek w cenie',
               ],
               btnOne: 'Zamów wycenę pakietu Start',
@@ -220,7 +209,6 @@ export default function OfferDesignOdziezFirmowaPage() {
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Rozszerzenie o odzież eventową lub sprzedażową (np. merch dla klientów)',
-                'Rekomendacje dotyczące technologii nadruku/haftu i dobór odcieni kolorów',
                 'Przygotowanie zestawu plików dla różnych dostawców/zleceniobiorców',
                 'Proste wytyczne dla produkcji (min. wielkości, marginesy bezpieczeństwa, zastosowania)',
               ],
@@ -233,66 +221,11 @@ export default function OfferDesignOdziezFirmowaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
-        <SectionSteps
-          title="Jak jeszcze możesz wzmocnić wizerunek swojej marki?"
-          subtitle="Zobacz też"
-          description="Odzież firmowa działa najlepiej, gdy jest częścią spójnego systemu materiałów – od wizytówek po teczki i papier firmowy."
-          items={[
-            {
-              icon: <RiTShirt2Line className="h-8 w-8" />,
-              title: 'Projekt wizytówki firmowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Połącz odzież z dopracowaną wizytówką. Klient zapamięta nie tylko logo na koszulce, ale też konkretne dane kontaktowe.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt papieru firmowego i korespondencji',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ubierz markę także w dokumentach. Spójne logo, kolory i układ na papierze firmowym domykają cały system wizerunku.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
-                      Zobacz projekt papieru firmowego
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
         <FeesSteps />
 
         <Gap variant="line" />
 
         <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt odzieży firmowej"
-          description="Napisz, jaki masz zespół (liczba osób, stanowiska), jakie elementy odzieży chcesz zaprojektować (T-shirty, bluzy, polo, czapki) oraz z jakiej techniki chcesz korzystać (sitodruk, haft, DTF). Na tej podstawie przygotujemy wycenę i rekomendację plików produkcyjnych."
-          defaultSubject="Projekt odzieży firmowej"
-        />
 
         <Gap variant="line" />
 
@@ -336,6 +269,53 @@ export default function OfferDesignOdziezFirmowaPage() {
               answer: 'Tak – oferujemy opcję przyspieszonej realizacji. Przed rozpoczęciem projektu ustalamy możliwy termin oraz dodatkowy koszt, tak aby wszystko było jasne i przewidywalne.',
             },
           ]}
+        />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt odzieży firmowej"
+          description="Napisz, jaki masz zespół (liczba osób, stanowiska), jakie elementy odzieży chcesz zaprojektować (T-shirty, bluzy, polo, czapki) oraz z jakiej techniki chcesz korzystać (sitodruk, haft, DTF). Na tej podstawie przygotujemy wycenę i rekomendację plików produkcyjnych."
+          defaultSubject="Projekt odzieży firmowej"
+        />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Jak jeszcze możesz wzmocnić wizerunek swojej marki?"
+          subtitle="Zobacz też"
+          description="Odzież firmowa działa najlepiej, gdy jest częścią spójnego systemu materiałów – od wizytówek po teczki i papier firmowy."
+          items={[
+            {
+              icon: <RiTShirt2Line className="h-8 w-8" />,
+              title: 'Projekt wizytówki firmowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Połącz odzież z dopracowaną wizytówką. Klient zapamięta nie tylko logo na koszulce, ale też konkretne dane kontaktowe.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Projekt papieru firmowego i korespondencji',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Ubierz markę także w dokumentach. Spójne logo, kolory i układ na papierze firmowym domykają cały system wizerunku.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
+                      Zobacz projekt papieru firmowego
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
         />
 
         <Gap variant="line" />

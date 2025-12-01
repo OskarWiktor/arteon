@@ -650,7 +650,7 @@ export default function EmailSignatureGenerator() {
                     value={config.avatarUrl}
                     onChange={(e) => handleTextChange('avatarUrl', e.target.value)}
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                    placeholder="https://adrestwojejdomeny.pl/avatar.png"
+                    placeholder="https://adrestwojejdomeny.pl/avatar.webp"
                   />
                   <p className="mt-1 text-xs! text-[#5e5e5e]">Najlepiej kwadratowy obraz min. 120x120 px, z publicznym adresem URL.</p>
                 </div>

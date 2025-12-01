@@ -277,13 +277,25 @@ export default function DesktopNavigation() {
   return (
     <div className="hidden lg:flex">
       <LayoutGroup>
-        <ul className="relative flex gap-4 lg:gap-6">
+        <ul className="relative flex items-center gap-4 lg:gap-6">
           {navigationItems.map(({ href, label, exact }) => {
             const isActivePage = exact ? pathname === href : pathname.startsWith(href);
 
+            // USŁUGI – link + strzałka
             if (label === 'Usługi') {
+              const isActive = pathname.startsWith('/uslugi');
               return (
-                <li ref={offerLiRef} className="group relative flex" key={label}>
+                <li ref={offerLiRef} className="group relative flex items-center gap-0.5" key={label}>
+                  <Link
+                    href="/uslugi"
+                    aria-current={isActive ? 'page' : undefined}
+                    className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
+                      isActive ? 'font-semibold text-[#080808]' : ''
+                    }`}
+                  >
+                    Usługi
+                  </Link>
+
                   <button
                     id={buttonId}
                     type="button"
@@ -293,9 +305,9 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-10px] flex cursor-pointer items-center gap-1 rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-[#2B2B2B] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    aria-label={isOfferOpen ? 'Zamknij listę usług' : 'Otwórz listę usług'}
                   >
-                    Usługi
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
@@ -354,8 +366,19 @@ export default function DesktopNavigation() {
             }
 
             if (label === 'Narzędzia') {
+              const isActive = pathname.startsWith('/narzedzia');
               return (
-                <li ref={toolsLiRef} className="group relative flex" key={label}>
+                <li ref={toolsLiRef} className="group relative flex items-center gap-0.5" key={label}>
+                  <Link
+                    href="/narzedzia"
+                    aria-current={isActive ? 'page' : undefined}
+                    className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
+                      isActive ? 'font-semibold text-[#080808]' : ''
+                    }`}
+                  >
+                    Narzędzia
+                  </Link>
+
                   <button
                     id={toolsButtonId}
                     type="button"
@@ -365,9 +388,9 @@ export default function DesktopNavigation() {
                     aria-expanded={isToolsOpen}
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
-                    className="mr-[-10px] flex cursor-pointer items-center gap-1 rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-[#2B2B2B] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    aria-label={isToolsOpen ? 'Zamknij listę narzędzi' : 'Otwórz listę narzędzi'}
                   >
-                    Narzędzia
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
@@ -415,7 +438,7 @@ export default function DesktopNavigation() {
             }
 
             return (
-              <li key={label} className="relative">
+              <li key={label} className="relative flex items-center">
                 <Link
                   href={href}
                   aria-current={isActivePage ? 'page' : undefined}

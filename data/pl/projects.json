@@ -5,7 +5,7 @@
       "title": "Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK",
       "short": "Spójny zestaw szablonów postów i stories na media społecznościowe dla gabinetu psychologicznego",
       "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami i podkreślą spokojny, wspierający charakter gabinetu.</p><p>Stworzyliśmy serię kadrów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli w połączeniu z klasyczną typografią buduje wrażenie bezpieczeństwa, profesjonalizmu i łagodnej, niedyrektywnej obecności psychoterapeuty.</p>",
-      "image": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
+      "image": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
       "category": ["grafika"],
       "client": {
         "name": "Mental Support Centre",
@@ -22,7 +22,7 @@
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
+          "src": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
           "alt": "Szablony postów na Instagram dla gabinetu psychologicznego MSC Psychotherapy UK",
           "ratio": "16/9"
         }
@@ -34,7 +34,7 @@
         "btnOneLink": "/kontakt",
         "btnTwo": "Zobacz ofertę szablonów do mediów społecznośiowych",
         "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-do-social-media",
-        "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png",
+        "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
         "overlay": "black"
       },
       "seo": {
@@ -48,7 +48,7 @@
       "title": "Bon walentynkowy dla salonu kosmetycznego Kasia",
       "short": "Elegancki bon walentynkowy w formacie DL dla gabinetu kosmetycznego w Krakowie. Gotowe pliki do druku i wręczenia jako prezent.",
       "description": "<p>Projekt bonu walentynkowego w formacie DL dla <strong>salonu kosmetycznego w Krakowie</strong>. Celem było stworzenie eleganckiego i czytelnego vouchera, który bezpośrednio nawiązuje do walentynek.</p><p>Połączony został motyw róż z delikatnymi pasami i klasyczną typografią. Na froncie dominuje spokojna kompozycja zdjęcia z tytułem i nazwą salonu, a na rewersie znajdują się <strong>czytelne pola do wypełnienia</strong> (dla kogo, na jaki zabieg, ważny do) oraz szczegółowe dane gabinetu.</p>",
-      "image": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png",
+      "image": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
       "category": ["grafika"],
       "client": {
         "name": "Gabinet kosmetyczny Kasia",
@@ -64,7 +64,7 @@
       "contentBlocks": [
         {
           "type": "image",
-          "src": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png",
+          "src": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
           "alt": "Bon walentynkowy dla salonu kosmetycznego",
           "ratio": "16/9"
         }
@@ -77,7 +77,7 @@
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę voucherów i kuponów",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
-        "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.png",
+        "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
         "overlay": "black"
       },
       "seo": {
@@ -92,7 +92,7 @@
       "title": "Strona internetowa dla Camper Albania - wynajem kamperów w Albanii",
       "short": "Redesign i optymalizacja strony internetowej dla wypożyczalni kamperów Camper Albania - lepszy kontrast, czytelniejszy układ i wydajność 95/100",
       "description": "<p>Projekt dla wypożyczalni kamperów na terenie Albanii <strong>Camper Albania</strong>. Celem projektu było odświeżenie wyglądu strony, poprawa czytelności oraz optymalizacja prędkości ładowania. Efekt: ulepszony, kontrastowy układ zgodny z założeniami <strong>WCAG 2.1 AA</strong> i skok wyniku wydajności mobilnej w Google PageSpeed Insights z ok. 65 do <strong>95 punktów</strong>.</p>",
-      "image": "/assets/projects/arteon-baners-camper-albania-mockup.png",
+      "image": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
       "category": ["strona", "grafika"],
       "client": {
         "name": "Camper Albania",
@@ -127,8 +127,8 @@
       ],
 
       "beforeAfter": {
-        "beforeImage": "/assets/projects/arteon-camper-albania-b.png",
-        "afterImage": "/assets/projects/arteon-camper-albania-a.png"
+        "beforeImage": "/assets/projects/arteon-camper-albania-b.webp",
+        "afterImage": "/assets/projects/arteon-camper-albania-a.webp"
       },
 
       "cta": {
@@ -138,7 +138,7 @@
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
-        "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.png",
+        "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
         "overlay": "black"
       },
       "seo": {
@@ -153,7 +153,7 @@
       "title": "Papier firmowy dla kancelarii - LUX NOVA",
       "short": "Projekt papieru firmowego dla kancelarii adwokackiej",
       "description": "<p>Projekt koncepcyjny - dane przykładowe.Papier firmowy dla kancelarii <strong>LUX NOVA</strong> wzmacnia wizerunek marki: klarowny nagłówek z logotypem, subtelny motyw gryfa w tle i czytelny blok kontaktu z <strong>kodem QR</strong>. Całość zachowuje równowagę między <em>elegancją</em> i <em>praktycznością</em> - gotowe do druku i do użycia cyfrowego (PDF).</p>",
-      "image": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
+      "image": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
       "category": ["grafika"],
       "client": { "name": "LUX NOVA", "sector": "Prawo" },
       "stack": ["Adobe Illustrator", "Mockup 3D"],
@@ -178,7 +178,7 @@
         },
         {
           "type": "image",
-          "src": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
+          "src": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
           "alt": "Papier firmowy LUX NOVA - wizualizacja na biurku",
           "caption": "Wizualizacja 3D - elegancja i porządek na pierwszym planie",
           "ratio": "16/9"
@@ -191,7 +191,7 @@
         "btnOneLink": "/kontakt",
         "btnTwo": "Projekty graficzne",
         "btnTwoLink": "/uslugi/projekty-graficzne",
-        "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png",
+        "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
         "overlay": "black"
       },
       "seo": {
@@ -206,7 +206,7 @@
       "title": "Teczka ofertowa dla kancelarii - LUX NOVA",
       "short": "Projekt teczki ofertowej dla kancelarii adwokackiej - elegancja, porządek i prestiż w jednym",
       "description": "<p>Projekt koncepcyjny teczki ofertowej dla kancelarii adwokackiej <strong>LUX NOVA</strong>. Celem było stworzenie spójnego elementu identyfikacji wizualnej, który wzmacnia wizerunek kancelarii jako marki nowoczesnej i godnej zaufania. Teczka jest uzupełnieniem zestawu firmowych materiałów drukowanych - wizytówek i papieru firmowego.</p>",
-      "image": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
+      "image": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
       "category": ["grafika"],
       "client": { "name": "LUX NOVA", "sector": "Prawo" },
       "stack": ["Adobe Illustrator", "Mockup 3D"],
@@ -253,28 +253,28 @@
         },
         {
           "type": "imageText",
-          "src": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
+          "src": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
           "alt": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - projekt koncepcyjny",
           "imageSide": "left",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Projekt teczki ofertowej dla kancelarii adwokackiej</h2><p>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy elegancką formę, która idealnie reprezentuje kancelarię podczas spotkań i przekazywania dokumentów.</p>"
         },
         {
           "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-przod.jpg",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-przod.webp",
           "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (front)",
           "caption": "Front teczki ofertowej - sygnet gryfa i logo kancelarii",
           "ratio": "auto"
         },
         {
           "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-lewa-strona.jpg",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-lewa-strona.webp",
           "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, lewa strona)",
           "caption": "Wnętrze teczki - jednolita kolorystyka i spójny układ",
           "ratio": "auto"
         },
         {
           "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-prawa-strona.jpg",
+          "src": "/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-srodek-prawa-strona.webp",
           "alt": "Teczka ofertowa dla kancelarii - LUX NOVA (wnętrze, prawa strona)",
           "caption": "Wnętrze teczki z danymi kontaktowymi i kodem QR",
           "ratio": "auto"
@@ -287,7 +287,7 @@
         "btnOneLink": "/kontakt",
         "btnTwo": "Projekty graficzne",
         "btnTwoLink": "/uslugi/projekty-graficzne",
-        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
+        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
         "overlay": "black"
       },
       "seo": {
@@ -302,7 +302,7 @@
       "title": "Wizytówka dla kancelarii - LUX NOVA",
       "short": "Projekt wizytówki dla kancelarii adwokackiej",
       "description": "<p>Projekt koncepcyjny wizytówki dla kancelarii adwokackiej, w którym stawiamy na czytelny układ danych oraz spójną identyfikację opartą o sygnet gryfa i zestaw kolorów podkreślających autorytet marki.</p>",
-      "image": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png",
+      "image": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
       "category": ["grafika"],
       "client": { "name": "LUX NOVA", "sector": "Prawo" },
       "stack": ["Adobe Illustrator", "Mockup 3D"],
@@ -348,21 +348,21 @@
         },
         {
           "type": "imageText",
-          "src": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png",
+          "src": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
           "alt": "Wizytówka dla kancelarii - LUX NOVA (widok ogólny)",
           "imageSide": "left",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówka dla adwokata - hierarchia i porządek</h2><p>Na froncie zaakcentowaliśmy mocno logo firmy, aby odbiorca mógł szybko zapamiętać znak kancelarii. Na rewersie ponownie zaakcentowaliśmy logo wraz z kodem QR do strony firmowej, na dole uporządkowaliśmy najważniejsze dane firmy</p>"
         },
         {
           "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-wizytowka-dla-kancelarii-przod.jpg",
+          "src": "/assets/projects/luxnova/luxnova-wizytowka-dla-kancelarii-przod.webp",
           "alt": "Wizytówka dla kancelarii - LUX NOVA (front)",
           "caption": "Front wizytówki w układzie poziomym",
           "ratio": "16/9"
         },
         {
           "type": "image",
-          "src": "/assets/projects/luxnova/luxnova-wizytowka-dla-kancelarii-tyl.jpg",
+          "src": "/assets/projects/luxnova/luxnova-wizytowka-dla-kancelarii-tyl.webp",
           "alt": "Wizytówka dla kancelarii - LUX NOVA (tył)",
           "caption": "Tył wizytówki w układzie poziomym",
           "ratio": "16/9"
@@ -376,7 +376,7 @@
         "btnOneLink": "/kontakt",
         "btnTwo": "Projekty graficzne",
         "btnTwoLink": "/uslugi/projekty-graficzne",
-        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png",
+        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
         "overlay": "black"
       },
 
@@ -488,7 +488,7 @@
       "title": "Katalog produktów - RestoQuality",
       "short": "Projekt katalogu sprzedażowego dla gastronomii w formacie A5",
       "description": "<p>Projekt koncepcyjny <strong>katalogu sprzedażowego produktów</strong> dla gastronomii, przygotowany dla firmy RestoQuality, spójny z identyfikacją tej marki. Naszym celem było stworzenie katalogu, ze sprzętami gastronomicznymi, pozwalającego na szybkie porównanie modeli i parametrów, przez właścicieli restauracji oraz szefów kuchni.</p><p>W katalogu zebraliśmy znajdują się piece do pizzy, urządzenia kuchenne oraz akcesoria. Każda karta produktu zawiera <em>opis, kluczowe parametry techniczne, cenę i kraj produkcji</em>. Dedykowane <strong>ikony pochodzenia</strong> ułatwiają skanowanie oferty.</p>",
-      "image": "/assets/projects/gazetka-mockup.jpg",
+      "image": "/assets/projects/gazetka-mockup.webp",
       "category": ["grafika"],
       "stack": ["Adobe InDesign", "Adobe Illustrator", "Mockup 3D"],
       "deliverables": [
@@ -530,7 +530,7 @@
         },
         {
           "type": "image",
-          "src": "/assets/projects/gazetka-mockup.jpg",
+          "src": "/assets/projects/gazetka-mockup.webp",
           "alt": "Katalog produktów dla gastronomii - RestoQuality (makieta A5)",
           "caption": "Karta produktu: opis, parametry, cena, kraj produkcji",
           "ratio": "16/9"
@@ -548,7 +548,7 @@
       "title": "Wizytówka dla SPA - TALIA",
       "short": "Projekt wizytówki dla SPA: premium & nature",
       "description": "<p>Projekt koncepcyjny <strong>wizytówke dla SPA</strong> inspirowanej naturą. Przód: malarskie tło lasu (akryl), logotyp i typografia <em>Warbler Display</em>. Tył: czytelne dane właścicielki i adres www.</p><p>Paleta: <strong>#182519</strong> (zieleń), <strong>#e1d2c2</strong> (ciepły beż) + biel</p>",
-      "image": "/assets/projects/wizytowka-talia.png",
+      "image": "/assets/projects/wizytowka-talia.webp",
       "category": ["grafika"],
       "client": { "name": "TALIA", "sector": "Wellness & SPA" },
       "stack": ["Adobe Illustrator", "Mockup 3D"],
@@ -576,7 +576,7 @@
       "contentBlocks": [
         {
           "type": "imageText",
-          "src": "/assets/projects/wizytowka-talia.png",
+          "src": "/assets/projects/wizytowka-talia.webp",
           "alt": "Wizytówka dla SPA - TALIA (front i tył)",
           "imageSide": "left",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>"
@@ -665,7 +665,7 @@
       "title": "Wizytówki dla gastronomii - RestoQuality",
       "short": "Szablon wizytówek dla handlowców produktów gastronomicznych",
       "description": "<p><strong>Wizytówki dla gastronomii</strong> - projekt koncepcyjny przygotowany dla RestoQuality. Cel: ujednolicony szablon dla działu handlowego. Styl <em>techniczny i solidny</em>; kolory i typografia dopasowane do identyfikacji marki.</p><p>Układ obejmuje <strong>imię i nazwisko handlowca</strong>, <strong>stanowisko</strong>, <strong>telefon</strong>, <strong>adres firmy</strong> oraz znak marki. Szablon kompozycji umożliwiają szybkie wdrożenie dla całego zespołu.</p>",
-      "image": "/assets/projects/resto-wiz.png",
+      "image": "/assets/projects/resto-wiz.webp",
       "category": ["grafika"],
       "stack": ["Adobe Illustrator", "Mockup 3D"],
       "deliverables": [
@@ -697,7 +697,7 @@
       "contentBlocks": [
         {
           "type": "imageText",
-          "src": "/assets/projects/resto-wiz.png",
+          "src": "/assets/projects/resto-wiz.webp",
           "alt": "Szablon wizytówek dla handlowców w gastronomii - RestoQuality ",
           "imageSide": "left",
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla restauracji i firm gastro</h2><p>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"

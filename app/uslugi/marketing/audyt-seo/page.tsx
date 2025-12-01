@@ -31,14 +31,14 @@ export const metadata = {
     url: `${BASE}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
-    //images: [{ url: `${BASE}/assets/og/audyt-seo.jpg`, width: 1200, height: 630, alt: 'Audyt SEO — Arteon' }],
+    //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO — Arteon' }],
   },
   //twitter: {
   //  card: 'summary_large_image',
   //  title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
   //  description:
   //    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
-  //  images: [`${BASE}/assets/og/audyt-seo.jpg`],
+  //  images: [`${BASE}/assets/og/audyt-seo.webp`],
   //},
 } as const;
 
@@ -107,7 +107,7 @@ export default function OfferMarketingPage() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-analityki.jpg"
+          imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-analityki.webp"
           imageAlt="Audyt SEO — analiza widoczności strony w Google Analytics"
           subtitle="Dla kogo"
           title="Kiedy audyt SEO ma największy sens i dla kogo jest?"
@@ -207,7 +207,7 @@ export default function OfferMarketingPage() {
 
         <SectionBasic
           variant="left"
-          imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-gsc.jpg"
+          imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
           imageAlt="Audyt SEO — analiza widoczności strony w Google Search Console"
           subtitle="Wyniki wdrożeń"
           title={<>Jakie efekty widzimy najczęściej po przeprowadzeniu audytu SEO i wdrożeniu pozycjonowania?</>}

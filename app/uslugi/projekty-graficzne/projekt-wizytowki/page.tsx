@@ -65,7 +65,7 @@ export default function OfferDesignWizytowkaPage() {
         buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png"
+        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp"
         overlay="black"
       />
 
@@ -350,7 +350,7 @@ export default function OfferDesignWizytowkaPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.png"
+        backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp"
         overlay="black"
       />
 

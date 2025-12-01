@@ -101,6 +101,23 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           `}
         </Script>
 
+        <Script id="metricool-tracker" strategy="afterInteractive">
+          {`
+            function loadScript(a){
+              var b=document.getElementsByTagName("head")[0],
+                  c=document.createElement("script");
+              c.type="text/javascript";
+              c.src="https://tracker.metricool.com/resources/be.js";
+              c.onreadystatechange = a;
+              c.onload = a;
+              b.appendChild(c);
+            }
+            loadScript(function(){
+              beTracker.t({ hash: "325c4af683a815d876aba0c5aeb86c8b" });
+            });
+          `}
+        </Script>
+
         <Script id="schema-org-organization" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(orgJsonLd)}
         </Script>

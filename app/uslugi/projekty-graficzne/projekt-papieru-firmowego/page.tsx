@@ -66,7 +66,7 @@ export default function OfferDesignPapierFirmowyPage() {
         buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png"
+        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
         overlay="black"
       />
 
@@ -354,7 +354,7 @@ export default function OfferDesignPapierFirmowyPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png"
+        backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
         overlay="black"
       />
 

@@ -70,7 +70,7 @@ export default function OfferDesignSzablonyPostowPage() {
         buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png"
+        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
         overlay="black"
       />
 
@@ -346,7 +346,7 @@ export default function OfferDesignSzablonyPostowPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png"
+        backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
         overlay="black"
       />
 

@@ -63,8 +63,8 @@ export default function HomePage() {
           items={[
             {
               topImageAlt: 'test',
-              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.png',
-              imageSrc: '/assets/woda.png',
+              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
+              imageSrc: '/assets/woda.webp',
               imageAlt: 'Woda - symbol grafiki i designu',
               title: 'Projekty graficzne',
               description: (
@@ -84,8 +84,8 @@ export default function HomePage() {
             },
             {
               topImageAlt: 'test',
-              topImageSrc: '/assets/projects/arteon-baners-camper-albania-mockup.png',
-              imageSrc: '/assets/ziemia.png',
+              topImageSrc: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
+              imageSrc: '/assets/ziemia.webp',
               imageAlt: 'Ziemia - symbol witryn internetowych',
               title: 'Strony',
               description: (
@@ -111,8 +111,8 @@ export default function HomePage() {
             },
             {
               topImageAlt: 'test',
-              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.png',
-              imageSrc: '/assets/ogien.png',
+              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              imageSrc: '/assets/ogien.webp',
               imageAlt: 'Ogień - symbol marketingu',
               title: 'Marketing',
               description: (
@@ -133,7 +133,7 @@ export default function HomePage() {
             {
               topImageAlt: 'test',
               topImageSrc: '/assets/projects/arteon-baners-msc.webp',
-              imageSrc: '/assets/powietrze.png',
+              imageSrc: '/assets/powietrze.webp',
               imageAlt: 'Powietrze - symbol języka',
               title: 'Treści',
               description: (

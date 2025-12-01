@@ -152,10 +152,10 @@ export default function OfferDesignPage() {
           <p>
             <strong>Design buduje wiarygodność.</strong> Aż <strong>~75%</strong> osób ocenia firmę po jakości materiałów wizualnych i strony internetowej. Schludny, spójny projekt podnosi zaufanie i
             wpływa na decyzję o kontakcie{' '}
-            <a href="https:/credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Stanford - badanie wiarygodności stron)
             </a>{' '}
-            <a href="https:/rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
+            <a href="https://rareformnewmedia.com/credibility-in-web-design/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (Rareform - opracowanie branżowe)
             </a>
             .

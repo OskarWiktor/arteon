@@ -65,7 +65,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
         buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png"
+        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
         overlay="black"
       />
 
@@ -352,7 +352,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.png"
+        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
         overlay="black"
       />
 

@@ -70,7 +70,7 @@ export default function OfferDesignCennikPage() {
         buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/projects/cennik-mockup.png"
+        backgroundImage="/assets/projects/cennik-mockup.webp"
         overlay="black"
       />
 
@@ -78,8 +78,8 @@ export default function OfferDesignCennikPage() {
         items={[
           { icon: <RiPencilRuler2Line />, label: 'Spójny wizerunek marki' },
           { icon: <RiTableLine />, label: 'Czytelna prezentacja cen' },
-          { icon: <RiFileTextLine />, label: 'Gotowe do druku i online' },
-          { icon: <RiBarChart2Fill />, label: 'Projekt pod sprzedaż' },
+          { icon: <RiFileTextLine />, label: 'Pliki gotowe do druku i online' },
+          { icon: <RiBarChart2Fill />, label: 'Projekt wspierający sprzedaż' },
         ]}
       />
 
@@ -93,7 +93,6 @@ export default function OfferDesignCennikPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* 1. Dlaczego (mechanizm + sens usługi) */}
         <SectionInfo title="Dlaczego warto mieć profesjonalny projekt cennika?">
           <p>
             Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia porównanie, zachęca do wyboru droższych opcji oraz buduje profesjonalny wizerunek Twojej firmy. Klient widzi jasną i
@@ -117,18 +116,10 @@ export default function OfferDesignCennikPage() {
             <li>Ułatwia porównanie i podejmowanie decyzji,</li>
             <li>Wzmacnia zaufanie i zwiększa sprzedaż.</li>
           </ul>
-
-          <br />
-
-          <p>
-            Po wdrożeniu nowego cennika łatwiej jest też utrzymać konsekwencję: nowi pracownicy szybciej rozumieją ofertę, a klienci otrzymują spójne informacje niezależnie od tego, kto z nimi
-            rozmawia - na żywo, przez telefon czy online.
-          </p>
         </SectionInfo>
 
         <Gap variant="line" />
 
-        {/* 2. Co dokładnie dostaje klient (offer stack) */}
         <FeatureGrid
           title="Co zawiera projekt cennika?"
           subtitle="Nasz standard pracy"
@@ -153,20 +144,18 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        {/* 3. Dla kogo (segmentacja) */}
         <SectionInfo title="Dla kogo jest projekt cennika?" subtitle="Kiedy ma największy sens?">
           <ul className="ml-5 list-disc space-y-2">
             <li>Masz kilka lub kilkanaście usług / pakietów i klienci dopytują, czym dokładnie się różnią.</li>
-            <li>Obecny cennik powstał „tymczasowo” w Wordzie lub Excelu i nie pasuje do reszty identyfikacji.</li>
+            <li>Obecny cennik powstał tymczasowo w Wordzie lub Excelu i nie pasuje do reszty identyfikacji.</li>
             <li>Chcesz podnieść ceny, ale potrzebujesz lepszej argumentacji wizualnej i logicznej struktury oferty.</li>
             <li>Planujesz wprowadzić pakiety (Standard / Premium / VIP) i chcesz, aby klient naturalnie wybierał właściwą opcję.</li>
-            <li>Chcesz mieć jeden spójny cennik dla punktu stacjonarnego, strony www i mediów społecznościowych.</li>
+            <li>Chcesz mieć jeden spójny wizualnie cennik dla punktu stacjonarnego, strony www i mediów społecznościowych.</li>
           </ul>
         </SectionInfo>
 
         <Gap variant="line" />
 
-        {/* 4. Proof: realizacje + opinie */}
         <ProjectsOverview title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
@@ -175,20 +164,19 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        {/* 5. Cennik / pakiety – po proofie */}
         <SectionPrices
           title="Projekt cennika - przykładowe zakresy"
-          subtitle="Dobieramy format i poziom szczegółowości do Twojej oferty"
+          subtitle="Dobieramy format i poziom szczegółowości do Twojej indywidualnej oferty"
           plans={[
             {
               name: 'Cennik podstawowy',
               price: 'wycena indywidualna',
-              description: 'Dla mniejszych ofert, gdy chcesz wreszcie pokazać ceny w czytelnej, estetycznej formie - bez chaosu i przypadkowych tabel.',
+              description: 'Dla mniejszych ofert, gdy chcesz pokazać ceny w czytelnej, estetycznej formie.',
               features: [
                 'Układ jednej strony cennika (np. A4) z logicznym podziałem na sekcje',
                 'Dopasowanie kolorów i typografii do Twojej identyfikacji wizualnej',
                 'Wersja PDF do druku i wysyłki mailowej',
-                'Jedna runda korekt po pierwszej prezentacji',
+                'Ustalenie kierunku i jedna runda korekt po pierwszej prezentacji',
               ],
               btnOne: 'Zamów cennik podstawowy',
               btnOneLink: '#kontakt',
@@ -199,9 +187,9 @@ export default function OfferDesignCennikPage() {
               description: 'Dla firm, które chcą sprzedawać pakiety (np. Standard / Premium / VIP) i potrzebują wizualnej argumentacji dla wyższych opcji.',
               features: [
                 'Projekt cennika z pakietami i wyróżnioną ofertą rekomendowaną',
-                'Czytelne opisy zakresu oraz dopłaty / dodatki',
-                'Wersja do druku i wersja pod publikację online (np. na stronie www)',
-                'Rekomendacje, jak prezentować pakiety w rozmowie z klientem',
+                'Czytelne opisy zakresu oraz dopłat i dodatków',
+                'Wersja do druku i wersja pod publikację online',
+                'Ustalenie kierunku i dwie rundy korekt po pierwszej prezentacji',
               ],
               btnOne: 'Porozmawiajmy o cenniku z pakietami',
               btnOneLink: '#kontakt',
@@ -209,12 +197,12 @@ export default function OfferDesignCennikPage() {
             {
               name: 'Cennik rozbudowany / menu',
               price: 'wycena indywidualna',
-              description: 'Dla restauracji, salonów beauty, gabinetów i firm z dużą liczbą pozycji - gdy cennik staje się jednocześnie menu lub katalogiem.',
+              description: 'Dla restauracji, salonów fryzjerskich, gabinetów i firm z dużą liczbą pozycji - gdy cennik staje się jednocześnie menu lub katalogiem.',
               features: [
                 'Projekt cennika wielosekcyjnego lub wielostronicowego',
                 'Możliwość dodania zdjęć, ikon oraz wyróżników ofert',
-                'Pliki gotowe do druku (np. na papier, plansze, potykacze)',
-                'Wersja PDF / online do wykorzystania na stronie i w social mediach',
+                'Pliki gotowe do druku z wersja online do wykorzystania na stronie i w social mediach ',
+                'Ustalenie kierunku i dwie rundy korekt po pierwszej prezentacji',
               ],
               btnOne: 'Zamów projekt rozbudowanego cennika',
               btnOneLink: '#kontakt',
@@ -225,7 +213,6 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        {/* 6. Proces / ryzyko – jak to wygląda w praktyce */}
         <FeesSteps />
 
         <Gap variant="line" />
@@ -234,7 +221,6 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        {/* 7. FAQ – obiekcje przed kontaktem */}
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika"
@@ -265,7 +251,6 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        {/* 8. Kontakt – dopiero po zbijaniu obiekcji */}
         <ContactForm
           title="Zamów projekt cennika"
           description="Opisz, czym się zajmujesz, jak wygląda dziś Twoja oferta i w jaki sposób pokazujesz ceny. Na tej podstawie przygotujemy propozycję układu, termin oraz wycenę."
@@ -274,11 +259,10 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        {/* 9. Cross-sell – z czym połączyć cennik */}
         <SectionSteps
           title="Z czym warto połączyć projekt cennika?"
           subtitle="Zobacz też"
-          description="Cennik działa najlepiej, gdy jest częścią spójnego systemu materiałów - od menu, przez katalog, po identyfikację wizualną i stronę internetową."
+          description="Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych - od logo, przez katalog, po identyfikację wizualną i stronę internetową. Z nami możesz zaplanować cały zestaw materiałów graficznych w jednym miejscu, tak aby każdy element opowiadał tę samą historię i pracował na Twój wynik."
           items={[
             {
               icon: <RiTableLine className="h-8 w-8" />,
@@ -332,49 +316,6 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Z czym najczęściej łączymy projekt cennika?" subtitle="Powiązane materiały">
-          <p>Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych.</p>
-
-          <br />
-
-          <ul className="ml-5 list-disc space-y-2">
-            <li>
-              projekt{' '}
-              <a href="/uslugi/projekty-graficzne/projekt-menu-restauracji" className="inline-link">
-                menu restauracji
-              </a>{' '}
-              lub karty dań,
-            </li>
-            <li>
-              projekt{' '}
-              <a href="/uslugi/projekty-graficzne/projekt-katalogu" className="inline-link">
-                katalogu ofertowego
-              </a>{' '}
-              z rozbudowanym opisem usług,
-            </li>
-            <li>
-              projekt{' '}
-              <a href="/uslugi/projekty-graficzne/projekt-wizytowki" className="inline-link">
-                wizytówki
-              </a>{' '}
-              oraz{' '}
-              <a href="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej" className="inline-link">
-                identyfikacji wizualnej
-              </a>{' '}
-              marki,
-            </li>
-            <li>szablony postów do social media, które spójnie prowadzą klienta od pierwszego kontaktu aż po konkretną ofertę.</li>
-          </ul>
-
-          <br />
-
-          <p>
-            Możemy zaplanować cały zestaw materiałów w jednym procesie, tak aby każdy element - strona, cennik, katalog, social media - opowiadał tę samą historię i pracował na Twój wynik finansowy.
-          </p>
-        </SectionInfo>
-
-        <Gap variant="line" />
-
         <ServicesSteps />
 
         <Gap size="sm" />
@@ -387,7 +328,7 @@ export default function OfferDesignCennikPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/cennik-mockup.png"
+        backgroundImage="/assets/projects/cennik-mockup.webp"
         overlay="black"
       />
 

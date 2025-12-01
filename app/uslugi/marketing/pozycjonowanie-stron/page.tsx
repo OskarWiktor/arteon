@@ -99,7 +99,7 @@ export default function OfferSeoSubscription() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.jpg"
+          imageSrc="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp"
           imageAlt="Pozycjonowanie stron — plan treści i rozwój widoczności"
           subtitle="Dla kogo"
           title={<>Kiedy pozycjonowanie strony ma największy sens?</>}

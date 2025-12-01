@@ -67,7 +67,7 @@ export default function OfferDesignKatalogPage() {
         buttonSecond="Realizacje"
         buttonSecondLink="/realizacje"
         variant="left"
-        backgroundImage="/assets/projects/gazetka-mockup.jpg"
+        backgroundImage="/assets/projects/gazetka-mockup.webp"
         overlay="black"
       />
 
@@ -358,7 +358,7 @@ export default function OfferDesignKatalogPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/projects/gazetka-mockup.jpg"
+        backgroundImage="/assets/projects/gazetka-mockup.webp"
         overlay="black"
       />
 
