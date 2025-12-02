@@ -189,6 +189,14 @@ export default function OfferDesignWizytowkaPage() {
 
         <Gap variant="line" />
 
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
         <SectionPrices
           title="Projekt wizytówki - przykładowe pakiety"
           subtitle="Zakres dopasowany do Twojej marki"
@@ -241,7 +249,55 @@ export default function OfferDesignWizytowkaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <FeesSteps />
+
+        <Gap variant="line" />
+
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
+          title="Najczęstsze pytania o projekt wizytówki"
+          items={[
+            {
+              question: 'Ile kosztuje projekt wizytówki?',
+              answer:
+                'Cena zależy od liczby wariantów (np. różne stanowiska, języki), zakresu prac i tego, czy projekt opieramy na istniejącej identyfikacji, czy tworzymy kierunek od zera. Po krótkim briefie otrzymasz dopasowaną wycenę.',
+            },
+            {
+              question: 'Jak długo trwa projekt wizytówki?',
+              answer:
+                'Standardowo projekt przygotowujemy w około 2-5 dni roboczych od momentu zebrania materiałów. W przypadku większej liczby wariantów lub dodatkowych korekt termin ustalamy indywidualnie.',
+            },
+            {
+              question: 'W jakich formatach dostanę wizytówkę?',
+              answer: 'Otrzymasz plik PDF do druku ze spadami, wersje PNG/JPG do wykorzystania w sieci oraz - w zależności od ustaleń - pliki źródłowe (np. Figma, AI).',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu wizytówki?',
+              answer: 'Tak. W cenie przewidujemy rundy poprawek - dopracowujemy układ, kolory i teksty tak długo, aż projekt będzie spójny z Twoją marką i wygodny w użyciu.',
+            },
+            {
+              question: 'Czy wizytówka będzie czytelna przy małym rozmiarze?',
+              answer: 'Dbamy o odpowiedni kontrast, wielkość czcionek i hierarchię informacji. Nawet przy standardowym formacie wizytówki kluczowe dane pozostają czytelne.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt wizytówki?',
+              answer: 'Tak, w uzasadnionych sytuacjach realizujemy projekty w trybie przyspieszonym. Termin i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt wizytówki"
+          description="Napisz, czym się zajmujesz, jakie dane mają znaleźć się na wizytówce (imię, funkcja, numer, adres strony) oraz czy potrzebujesz jednego czy kilku wariantów. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
+          defaultSubject="Projekt wizytówki"
+        />
 
         <Gap variant="line" />
 
@@ -280,62 +336,6 @@ export default function OfferDesignWizytowkaPage() {
             },
           ]}
           grid="two"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt wizytówki"
-          description="Napisz, czym się zajmujesz, jakie dane mają znaleźć się na wizytówce (imię, funkcja, numer, adres strony) oraz czy potrzebujesz jednego czy kilku wariantów. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
-          defaultSubject="Projekt wizytówki"
-        />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
-          title="Najczęstsze pytania o projekt wizytówki"
-          items={[
-            {
-              question: 'Ile kosztuje projekt wizytówki?',
-              answer:
-                'Cena zależy od liczby wariantów (np. różne stanowiska, języki), zakresu prac i tego, czy projekt opieramy na istniejącej identyfikacji, czy tworzymy kierunek od zera. Po krótkim briefie otrzymasz dopasowaną wycenę.',
-            },
-            {
-              question: 'Jak długo trwa projekt wizytówki?',
-              answer:
-                'Standardowo projekt przygotowujemy w około 2-5 dni roboczych od momentu zebrania materiałów. W przypadku większej liczby wariantów lub dodatkowych korekt termin ustalamy indywidualnie.',
-            },
-            {
-              question: 'W jakich formatach dostanę wizytówkę?',
-              answer: 'Otrzymasz plik PDF do druku ze spadami, wersje PNG/JPG do wykorzystania w sieci oraz - w zależności od ustaleń - pliki źródłowe (np. Figma, AI).',
-            },
-            {
-              question: 'Czy mogę zgłosić poprawki do projektu wizytówki?',
-              answer: 'Tak. W cenie przewidujemy rundy poprawek - dopracowujemy układ, kolory i teksty tak długo, aż projekt będzie spójny z Twoją marką i wygodny w użyciu.',
-            },
-            {
-              question: 'Czy wizytówka będzie czytelna przy małym rozmiarze?',
-              answer: 'Dbamy o odpowiedni kontrast, wielkość czcionek i hierarchię informacji. Nawet przy standardowym formacie wizytówki kluczowe dane pozostają czytelne.',
-            },
-            {
-              question: 'Czy mogę zamówić ekspresowy projekt wizytówki?',
-              answer: 'Tak, w uzasadnionych sytuacjach realizujemy projekty w trybie przyspieszonym. Termin i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac.',
-            },
-          ]}
         />
 
         <Gap variant="line" />

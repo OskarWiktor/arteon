@@ -1,10 +1,8 @@
-/* next-sitemap.config.js */
 const fg = require('fast-glob');
 const path = require('node:path');
 const fs = require('node:fs');
 const { execSync } = require('node:child_process');
 
-/** ───────── Helpers: Git & FS ───────── */
 function gitLastCommitISO(filePath) {
   try {
     const out = execSync(`git log -1 --format=%cI -- "${filePath}"`, { stdio: ['ignore', 'pipe', 'ignore'] })
@@ -42,12 +40,11 @@ function slugify(input) {
     .replace(/-+/g, '-');
 }
 
-/** ───────── Route mapping from app ───────── */
 function toRoute(file) {
   if (file === 'page.tsx' || file === 'page.ts' || file === 'page.mdx') return '/';
   let r = '/' + file.replace(/\\/g, '/').replace(/\/page\.(ts|tsx|mdx)$/, '');
-  r = r.replace(/\/\([^/]+\)/g, ''); // usuń grupy /(xxx)
-  if (/\[.+?\]/.test(r)) return null; // pomiń dynamiczne
+  r = r.replace(/\/\([^/]+\)/g, '');
+  if (/\[.+?\]/.test(r)) return null;
   if (r === '/index') r = '/';
   if (r === '/_not-found' || r === '/api') return null;
   return r;
@@ -71,7 +68,6 @@ function buildRouteLastmodMap() {
   return map;
 }
 
-/** ───────── Projects (jak miałeś) ───────── */
 function readProjects() {
   try {
     const { projects } = require('./data/pl/projects.json');
@@ -92,7 +88,6 @@ function projectLastmodFromFiles(slug) {
   return newest;
 }
 
-/** ───────── Blog/Edukacja ───────── */
 function readBlog() {
   try {
     const blog = require('./data/pl/blog.json');
@@ -106,7 +101,6 @@ function primaryCategorySlug(article) {
   return slugify(first);
 }
 function articleAssetsLastmod(article) {
-  // Szukamy zmian w danych/assetach wpisu (opcjonalne, ale przydatne jako fallback)
   const slug = article.slug;
   const candidates = fg.sync([`content/blog/${slug}.mdx`, `content/blog/${slug}/**/*`, `public/assets/blog/${slug}/**/*`, `data/pl/blog.json`], { dot: false });
 
@@ -119,14 +113,11 @@ function articleAssetsLastmod(article) {
   return newest;
 }
 
-/** ───────── Build data ───────── */
 const ROUTE_LASTMOD = buildRouteLastmodMap();
 const PROJECTS = readProjects();
 const ARTICLES = readBlog();
 
-/** Dodajemy lastmod dla Edukacji do ROUTE_LASTMOD (by działało też w transform) */
 (function enrichEducationLastmods() {
-  // Artykuły: /edukacja/[category]/[slug]
   for (const a of ARTICLES) {
     const cat = primaryCategorySlug(a);
     const pathLoc = `/edukacja/${cat}/${a.slug}`;
@@ -136,8 +127,7 @@ const ARTICLES = readBlog();
     if (last) ROUTE_LASTMOD.set(pathLoc, last);
   }
 
-  // Kategorie (tylko te, które mają artykuły)
-  const byCat = new Map(); // catSlug -> [ISO]
+  const byCat = new Map();
   for (const a of ARTICLES) {
     const datestr = parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a);
     for (const c of a.category || []) {
@@ -151,23 +141,17 @@ const ARTICLES = readBlog();
     if (last) ROUTE_LASTMOD.set(`/edukacja/${cat}`, last);
   }
 
-  // Index: /edukacja -> najnowszy artykuł
   const allDates = ARTICLES.map((a) => parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a)).filter(Boolean);
   const newest = maxISO(allDates);
   if (newest) ROUTE_LASTMOD.set('/edukacja', newest);
 })();
 
-/** ───────── Config ───────── */
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   exclude: ['/404', '/500', '/_next/*', '/api/*', '/drafts/*'],
 
-  /**
-   * Global: changefreq weekly.
-   * lastmod: najpierw z ROUTE_LASTMOD (Git/file lub dane artykułu).
-   */
   transform: async (config, loc) => {
     const base = {
       loc,
@@ -179,15 +163,9 @@ module.exports = {
     return lastmod ? { ...base, lastmod } : base;
   },
 
-  /**
-   * Dodatkowe ścieżki:
-   * - projekty /realizacje/[slug] (jak wcześniej),
-   * - edukacja: /edukacja, /edukacja/[category], /edukacja/[category]/[slug].
-   */
   additionalPaths: async () => {
     const add = [];
 
-    /* ─ Projects ─ */
     for (const p of PROJECTS) {
       const loc = `/realizacje/${p.slug}`;
       const iso = (p.updatedAt && parseISO(p.updatedAt)) || projectLastmodFromFiles(p.slug) || ROUTE_LASTMOD.get(loc) || null;
@@ -197,7 +175,6 @@ module.exports = {
       add.push(entry);
     }
 
-    /* ─ Edukacja: index ─ */
     if (ROUTE_LASTMOD.has('/edukacja')) {
       add.push({
         loc: '/edukacja',
@@ -207,21 +184,18 @@ module.exports = {
       });
     }
 
-    /* ─ Edukacja: kategorie ─ */
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
       if (loc.startsWith('/edukacja/') && loc.split('/').length === 3) {
         add.push({ loc, changefreq: 'weekly', priority: 0.75, lastmod: last });
       }
     }
 
-    /* ─ Edukacja: artykuły ─ */
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
       if (loc.startsWith('/edukacja/') && loc.split('/').length === 4) {
         add.push({ loc, changefreq: 'weekly', priority: 0.72, lastmod: last });
       }
     }
 
-    /* ─ Upewnij się, że pozostałe statyczne route’y też są (fallback) ─ */
     const appDir = path.join(process.cwd(), 'app');
     const files = await fg(['**/page.{ts,tsx,mdx}'], {
       cwd: appDir,
@@ -251,9 +225,6 @@ module.exports = {
 
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
-    additionalSitemaps: [
-      // jeśli dorzucisz kolejne mapy, dodaj tu:
-      // `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl'}/server-sitemap.xml`,
-    ],
+    additionalSitemaps: [],
   },
 };

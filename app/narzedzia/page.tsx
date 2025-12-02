@@ -116,9 +116,10 @@ export default function ToolsIndexPage() {
       <Wrapper>
         <Gap size="sm" />
 
+        {/* OBRAZY I FAVICONY */}
         <SectionSteps
-          title="Dostępne narzędzia"
-          description="Gotowe do użycia od razu, bez logowania"
+          title="Obrazy i favicony"
+          description="Narzędzia do przygotowania zdjęć, grafik i ikon pod strony WWW oraz social media."
           grid="three"
           items={[
             {
@@ -157,7 +158,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.
+                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 – zgodne z wymaganiami przeglądarek i Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-favicon-ico">
@@ -167,6 +168,16 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Meta i SEO"
+          description="Narzędzia, które pomagają lepiej dopasować meta tagi i wygląd strony w wynikach wyszukiwania."
+          grid="three"
+          items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Licznik długości meta title i description',
@@ -181,6 +192,16 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="E-mail i komunikacja"
+          description="Narzędzia, które pomagają uporządkować komunikację mailową i wizerunek marki."
+          grid="three"
+          items={[
             {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Darmowy generator stopki mailowej HTML',
@@ -195,6 +216,16 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Kolory i dostępność"
+          description="Narzędzia do pracy z kolorami, kontrastem i dostępnością WCAG."
+          grid="three"
+          items={[
             {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Tester kontrastu kolorów WCAG',
@@ -219,7 +250,7 @@ export default function ToolsIndexPage() {
                 <div className="flex h-full flex-col">
                   <p>
                     Wybierz jeden kolor bazowy i wygeneruj klasyczne i nowoczesne palety: monochromatyczne, triadyczne, pastelowe, ciemne, tonalne czy minimalistyczne inspirowane Apple i Material
-                    Design. Sprawdź jakie kolory będą idealne dla Twojej marki.
+                    Design. Sprawdź, jakie kolory będą idealne dla Twojej marki.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/generator-palet-kolorow-online">

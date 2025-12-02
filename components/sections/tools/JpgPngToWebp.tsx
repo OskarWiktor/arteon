@@ -15,6 +15,7 @@ interface FileItem {
   error?: string;
   downloadUrl?: string;
   previewUrl?: string;
+  downloaded?: boolean;
 }
 
 function formatBytes(bytes: number): string {
@@ -73,6 +74,20 @@ function convertToWebp(file: File, quality: number): Promise<Blob> {
   });
 }
 
+// helper do faktycznego pobierania (jedno źródło prawdy)
+function triggerDownloadFromUrl(url: string, filename: string) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export default function JpgPngToWebp() {
   const [files, setFiles] = useState<FileItem[]>([]);
   const [isConverting, setIsConverting] = useState(false);
@@ -105,6 +120,7 @@ export default function JpgPngToWebp() {
             inputSize: file.size,
             status: 'pending' as FileStatus,
             previewUrl,
+            downloaded: false,
           };
         });
 
@@ -151,13 +167,14 @@ export default function JpgPngToWebp() {
     setIsConverting(true);
     try {
       for (const item of toProcess) {
-        setFiles((prev) => prev.map((f) => (f.id === item.id ? { ...f, status: 'processing', error: undefined } : f)));
+        setFiles((prev) => prev.map((f) => (f.id === item.id ? { ...f, status: 'processing', error: undefined, downloaded: autoDownload ? false : f.downloaded } : f)));
 
         try {
           const webpBlob = await convertToWebp(item.file, quality);
           const url = URL.createObjectURL(webpBlob);
           const outputSize = webpBlob.size;
           const ratio = outputSize / item.inputSize;
+          const filename = item.file.name.replace(/\.[^.]+$/, '.webp');
 
           setFiles((prev) =>
             prev.map((f) =>
@@ -168,18 +185,15 @@ export default function JpgPngToWebp() {
                     downloadUrl: url,
                     outputSize,
                     ratio,
+                    // jeżeli auto-download, to od razu zaznaczamy jako pobrane
+                    downloaded: autoDownload ? true : f.downloaded,
                   }
                 : f,
             ),
           );
 
           if (autoDownload) {
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = item.file.name.replace(/\.[^.]+$/, '.webp');
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
+            triggerDownloadFromUrl(url, filename);
           }
         } catch (err) {
           console.error(err);
@@ -201,18 +215,48 @@ export default function JpgPngToWebp() {
     }
   }
 
-  function handleDownloadAll() {
+  // sekwencyjne pobieranie wszystkich plików
+  async function handleDownloadAll() {
     const ready = files.filter((f) => f.status === 'done' && f.downloadUrl);
     if (!ready.length) return;
 
-    ready.forEach((item) => {
-      const a = document.createElement('a');
-      a.href = item.downloadUrl!;
-      a.download = item.file.name.replace(/\.[^.]+$/, '.webp');
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-    });
+    for (const item of ready) {
+      const url = item.downloadUrl!;
+      const filename = item.file.name.replace(/\.[^.]+$/, '.webp');
+
+      triggerDownloadFromUrl(url, filename);
+
+      setFiles((prev) =>
+        prev.map((f) =>
+          f.id === item.id
+            ? {
+                ...f,
+                downloaded: true,
+              }
+            : f,
+        ),
+      );
+      await sleep(150);
+    }
+  }
+
+  function handleDownloadSingle(id: string) {
+    const item = files.find((f) => f.id === id);
+    if (!item || !item.downloadUrl) return;
+
+    const filename = item.file.name.replace(/\.[^.]+$/, '.webp');
+    triggerDownloadFromUrl(item.downloadUrl, filename);
+
+    setFiles((prev) =>
+      prev.map((f) =>
+        f.id === id
+          ? {
+              ...f,
+              downloaded: true,
+            }
+          : f,
+      ),
+    );
   }
 
   function handleRemove(id: string) {
@@ -235,6 +279,7 @@ export default function JpgPngToWebp() {
               outputSize: undefined,
               ratio: undefined,
               downloadUrl: undefined,
+              downloaded: false,
             }
           : f,
       ),
@@ -427,7 +472,6 @@ export default function JpgPngToWebp() {
 
           {files.length > 0 && (
             <div className="space-y-2 text-sm">
-              {/* ← TU ZMIANA: usunięto max-h-80 overflow-auto */}
               {files.map((item) => {
                 const statusLabel = item.status === 'pending' ? 'Oczekuje' : item.status === 'processing' ? 'Przetwarzanie…' : item.status === 'done' ? 'Gotowe' : 'Błąd';
 
@@ -482,15 +526,13 @@ export default function JpgPngToWebp() {
 
                     <div className="flex items-center gap-1">
                       <span className={`rounded-full px-3 py-1 text-[11px] font-medium ${statusColor}`}>{statusLabel}</span>
+
                       {item.status === 'done' && item.downloadUrl && (
-                        <a
-                          href={item.downloadUrl}
-                          download={item.file.name.replace(/\.[^.]+$/, '.webp')}
-                          className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium"
-                        >
-                          Pobierz
-                        </a>
+                        <button type="button" onClick={() => handleDownloadSingle(item.id)} className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium">
+                          {item.downloaded ? 'Pobrano' : 'Pobierz'}
+                        </button>
                       )}
+
                       {item.status === 'done' && (
                         <button type="button" onClick={() => handleReconvert(item.id)} className="cursor-pointer rounded-full border border-black/10 bg-white px-3 py-1 text-[11px]">
                           Rekonwertuj

@@ -1,7 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/Button';
-import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type DragEvent as ReactDragEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiRotateLockLine, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
 
@@ -186,11 +186,14 @@ interface NumberFieldProps {
   widthClass?: string;
 }
 
-function NumberField({ label, value, min, max, onChange, widthClass = 'w-20!' }: NumberFieldProps) {
+function NumberField({ label, suffix, value, min, max, onChange, widthClass = 'w-20!' }: NumberFieldProps) {
   return (
     <div>
       <div className="flex items-center justify-between">
-        <span className="font-medium">{label}</span>
+        <span className="font-medium">
+          {label}
+          {suffix ? ` (${suffix})` : ''}
+        </span>
       </div>
       <input
         type="number"
@@ -292,6 +295,15 @@ export default function ImageResizeTool() {
     return { width: targetWidth, height: targetHeight };
   }, [state.originalWidth, state.originalHeight, state.targetWidth, state.targetHeight]);
 
+  // Nowy – "bezpieczne" wymiary do kadrowania (gdy brak targetWidth/Height, używamy oryginału)
+  const effectiveDims = useMemo(() => {
+    if (dims) return dims;
+    if (state.originalWidth && state.originalHeight) {
+      return { width: state.originalWidth, height: state.originalHeight };
+    }
+    return null;
+  }, [dims, state.originalWidth, state.originalHeight]);
+
   const aspectRatioText = useMemo(() => (state.originalWidth && state.originalHeight ? (state.originalWidth / state.originalHeight).toFixed(2) : null), [state.originalWidth, state.originalHeight]);
 
   const inputFormat = useMemo(() => {
@@ -306,7 +318,9 @@ export default function ImageResizeTool() {
     return 'N/D';
   }, [state.file]);
 
-  const cropEnabled = !!state.imageUrl && !!dims && !!state.originalWidth && !!state.originalHeight;
+  // Podgląd i panel narzędzi mają być widoczne zawsze, gdy jest jakikolwiek obraz,
+  // niezależnie od tego czy wymiary docelowe są już wpisane.
+  const cropEnabled = !!state.imageUrl && !!state.originalWidth && !!state.originalHeight;
 
   const previewPadding = useMemo(() => {
     if (state.originalWidth && state.originalHeight) {
@@ -316,8 +330,10 @@ export default function ImageResizeTool() {
   }, [state.originalWidth, state.originalHeight]);
 
   const cropRectPreview = useMemo(() => {
-    if (!cropEnabled || !state.originalWidth || !state.originalHeight || !dims) return null;
-    const targetAspect = dims.width / dims.height;
+    if (!cropEnabled || !state.originalWidth || !state.originalHeight || !effectiveDims) {
+      return null;
+    }
+    const targetAspect = effectiveDims.width / effectiveDims.height;
     const rect = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
     return {
       left: `${(rect.x / state.originalWidth) * 100}%`,
@@ -325,7 +341,7 @@ export default function ImageResizeTool() {
       width: `${(rect.cropW / state.originalWidth) * 100}%`,
       height: `${(rect.cropH / state.originalHeight) * 100}%`,
     };
-  }, [cropEnabled, dims, state.originalHeight, state.originalWidth, state.cropX, state.cropY, state.cropZoom]);
+  }, [cropEnabled, effectiveDims, state.originalHeight, state.originalWidth, state.cropX, state.cropY, state.cropZoom]);
 
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];
@@ -367,6 +383,16 @@ export default function ImageResizeTool() {
   };
 
   const handleDimensionChange = (type: 'width' | 'height', value: number | null) => {
+    // Jeśli pole jest puste lub wartość <= 0, nie nadpisujemy sensownych wymiarów
+    if (value === null || value <= 0 || Number.isNaN(value)) {
+      setState((prev) => ({
+        ...prev,
+        [type === 'width' ? 'targetWidth' : 'targetHeight']: null,
+        mode: 'pixels',
+      }));
+      return;
+    }
+
     if (!state.originalWidth || !state.originalHeight) {
       setState((prev) => ({
         ...prev,
@@ -390,8 +416,8 @@ export default function ImageResizeTool() {
     const aspect = state.originalWidth / state.originalHeight;
 
     if (type === 'width') {
-      const newWidth = value ?? 0;
-      const newHeight = Math.round(newWidth / aspect);
+      const newWidth = value;
+      const newHeight = Math.max(1, Math.round(newWidth / aspect));
       setState((prev) => ({
         ...prev,
         targetWidth: newWidth,
@@ -399,8 +425,8 @@ export default function ImageResizeTool() {
         mode: 'pixels',
       }));
     } else {
-      const newHeight = value ?? 0;
-      const newWidth = Math.round(newHeight * aspect);
+      const newHeight = value;
+      const newWidth = Math.max(1, Math.round(newHeight * aspect));
       setState((prev) => ({
         ...prev,
         targetHeight: newHeight,
@@ -411,7 +437,7 @@ export default function ImageResizeTool() {
   };
 
   const applyShapeOnDimensions = (shape: ShapeType, aspect?: ShapeAspect) => {
-    const currentDims = dims;
+    const currentDims = effectiveDims;
     if (!currentDims) return;
 
     if (shape === 'square' || shape === 'circle') {
@@ -594,10 +620,10 @@ export default function ImageResizeTool() {
     if (!state.imageUrl || !previewRef.current || !state.originalWidth || !state.originalHeight) {
       return;
     }
-    if (!dims) return;
+    if (!effectiveDims) return;
 
     const { originalWidth, originalHeight } = state;
-    const targetAspect = dims.width / dims.height;
+    const targetAspect = effectiveDims.width / effectiveDims.height;
 
     const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
 
@@ -641,12 +667,12 @@ export default function ImageResizeTool() {
   };
 
   const startRotateDrag = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (!state.imageUrl || !previewRef.current || !state.originalWidth || !state.originalHeight || !dims) {
+    if (!state.imageUrl || !previewRef.current || !state.originalWidth || !state.originalHeight || !effectiveDims) {
       return;
     }
 
     const previewRect = previewRef.current.getBoundingClientRect();
-    const targetAspect = dims.width / dims.height;
+    const targetAspect = effectiveDims.width / effectiveDims.height;
     const cropRect = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
 
     const centerNormX = cropRect.centerX / state.originalWidth;
@@ -681,8 +707,8 @@ export default function ImageResizeTool() {
     const mode = dragRef.current.mode;
 
     if (mode === 'move') {
-      if (!dims) return;
-      const targetAspect = dims.width / dims.height;
+      if (!effectiveDims) return;
+      const targetAspect = effectiveDims.width / effectiveDims.height;
 
       const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, dragRef.current.startCropX, dragRef.current.startCropY, state.cropZoom);
 
@@ -707,11 +733,11 @@ export default function ImageResizeTool() {
         cropY: nextCropY,
       }));
     } else if (mode === 'resize') {
-      if (!dims) return;
+      if (!effectiveDims) return;
 
       const ow = originalWidth;
       const oh = originalHeight;
-      const aspect = dims.width / dims.height;
+      const aspect = effectiveDims.width / effectiveDims.height;
 
       const relX = (e.clientX - rect.left) / rect.width;
       const relY = (e.clientY - rect.top) / rect.height;
@@ -785,8 +811,6 @@ export default function ImageResizeTool() {
       let zoom = baseW / width;
       zoom = Math.max(1, Math.min(10, zoom));
 
-      zoom = Math.max(1, Math.min(10, zoom));
-
       const halfW = width / 2;
       const halfH = height / 2;
       const minCenterX = halfW;
@@ -851,7 +875,22 @@ export default function ImageResizeTool() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <p className="mb-2 font-semibold uppercase">Dodaj zdjęcie</p>
-            <label className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100">
+            <label
+              className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
+              onDragOver={(e: ReactDragEvent<HTMLLabelElement>) => {
+                e.preventDefault();
+                e.stopPropagation();
+                e.dataTransfer.dropEffect = 'copy';
+              }}
+              onDrop={(e: ReactDragEvent<HTMLLabelElement>) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const file = e.dataTransfer.files?.[0] ?? null;
+                if (file) {
+                  handleFileChange(file);
+                }
+              }}
+            >
               <span className="mb-1 text-sm! font-medium">Przeciągnij i upuść zdjęcie tutaj</span>
               <span className="mb-2 text-xs! text-[#5e5e5e]">lub kliknij, aby wybrać plik z dysku</span>
               <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">Obsługiwane: JPG, PNG, WebP</span>
