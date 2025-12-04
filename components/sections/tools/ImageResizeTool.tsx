@@ -505,94 +505,163 @@ export default function ImageResizeTool() {
     }));
   };
 
-  const handleDownload = () => {
-    if (!state.file || !state.imageUrl) {
-      setError('Dodaj najpierw zdjęcie.');
+const handleDownload = () => {
+  if (!state.file || !state.imageUrl) {
+    setError('Dodaj najpierw zdjęcie.');
+    return;
+  }
+
+  if (!dims) {
+    setError('Ustaw poprawne wymiary docelowe.');
+    return;
+  }
+
+  setIsProcessing(true);
+  setError(null);
+
+  const img = new Image();
+  img.src = state.imageUrl;
+  img.onload = () => {
+    const W = dims.width;
+    const H = dims.height;
+
+    const canvas = document.createElement('canvas');
+    canvas.width = W;
+    canvas.height = H;
+    const ctx = canvas.getContext('2d');
+
+    if (!ctx || !state.originalWidth || !state.originalHeight) {
+      setIsProcessing(false);
+      setError('Twoja przeglądarka nie obsługuje kontekstu 2D.');
       return;
     }
 
-    if (!dims) {
-      setError('Ustaw poprawne wymiary docelowe.');
-      return;
-    }
+    const targetAspect = W / H;
+    const crop = getCropRect(
+      state.originalWidth,
+      state.originalHeight,
+      targetAspect,
+      state.cropX,
+      state.cropY,
+      state.cropZoom,
+    );
 
-    setIsProcessing(true);
-    setError(null);
+    const hasRotation = state.rotation !== 0;
+    const rad = (state.rotation * Math.PI) / 180;
 
-    const img = new Image();
-    img.src = state.imageUrl;
-    img.onload = () => {
-      const canvas = document.createElement('canvas');
-      canvas.width = dims.width;
-      canvas.height = dims.height;
-      const ctx = canvas.getContext('2d');
-      if (!ctx || !state.originalWidth || !state.originalHeight) {
-        setIsProcessing(false);
-        setError('Twoja przeglądarka nie obsługuje kontekstu 2D.');
-        return;
-      }
-
-      const targetAspect = dims.width / dims.height;
-      const crop = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
-
-      const rad = (state.rotation * Math.PI) / 180;
-      const W = dims.width;
-      const H = dims.height;
-
+    if (!hasRotation) {
       ctx.save();
-      ctx.translate(W / 2, H / 2);
 
       if (state.shape === 'circle') {
         const r = Math.min(W, H) / 2;
         ctx.beginPath();
-        ctx.arc(0, 0, r, 0, Math.PI * 2);
+        ctx.arc(W / 2, H / 2, r, 0, Math.PI * 2);
         ctx.closePath();
         ctx.clip();
       }
 
-      if (state.rotation !== 0) {
-        ctx.rotate(rad);
-      }
-
-      ctx.drawImage(img, crop.x, crop.y, crop.cropW, crop.cropH, -W / 2, -H / 2, W, H);
+      ctx.drawImage(
+        img,
+        crop.x,
+        crop.y,
+        crop.cropW,
+        crop.cropH,
+        0,
+        0,
+        W,
+        H,
+      );
 
       ctx.restore();
+    } else {
+      const cos = Math.cos(rad);
+      const sin = Math.sin(rad);
+      const tmpW = Math.ceil(Math.abs(W * cos) + Math.abs(H * sin));
+      const tmpH = Math.ceil(Math.abs(W * sin) + Math.abs(H * cos));
 
-      let mime: string = 'image/jpeg';
-      if (state.outputFormat === 'png') mime = 'image/png';
-      if (state.outputFormat === 'webp') mime = 'image/webp';
+      const tmpCanvas = document.createElement('canvas');
+      tmpCanvas.width = tmpW;
+      tmpCanvas.height = tmpH;
+      const tmpCtx = tmpCanvas.getContext('2d');
 
-      canvas.toBlob(
-        (blob) => {
-          if (!blob) {
-            setError('Nie udało się wygenerować pliku.');
-            setIsProcessing(false);
-            return;
-          }
+      if (!tmpCtx) {
+        setIsProcessing(false);
+        setError('Nie udało się przygotować płótna.');
+        return;
+      }
 
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          const baseName = state.file!.name.replace(/\.[^.]+$/, '');
-          a.download = `${baseName}-${dims.width}x${dims.height}.${state.outputFormat}`;
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-          URL.revokeObjectURL(url);
+      tmpCtx.save();
+      tmpCtx.translate(tmpW / 2, tmpH / 2);
+      tmpCtx.rotate(rad);
 
-          setEstimatedSize(blob.size);
-          setIsProcessing(false);
-        },
-        mime,
-        state.outputFormat === 'png' ? undefined : state.outputQuality,
+      tmpCtx.drawImage(
+        img,
+        crop.x,
+        crop.y,
+        crop.cropW,
+        crop.cropH,
+        -W / 2,
+        -H / 2,
+        W,
+        H,
       );
-    };
 
-    img.onerror = () => {
-      setError('Nie udało się wczytać obrazu.');
-      setIsProcessing(false);
-    };
+      tmpCtx.restore();
+
+      const sx = (tmpW - W) / 2;
+      const sy = (tmpH - H) / 2;
+
+      ctx.save();
+
+      if (state.shape === 'circle') {
+        const r = Math.min(W, H) / 2;
+        ctx.beginPath();
+        ctx.arc(W / 2, H / 2, r, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+      }
+
+      ctx.drawImage(tmpCanvas, sx, sy, W, H, 0, 0, W, H);
+
+      ctx.restore();
+    }
+
+    let mime: string = 'image/jpeg';
+    if (state.outputFormat === 'png') mime = 'image/png';
+    if (state.outputFormat === 'webp') mime = 'image/webp';
+
+    canvas.toBlob(
+      (blob) => {
+        if (!blob) {
+          setError('Nie udało się wygenerować pliku.');
+          setIsProcessing(false);
+          return;
+        }
+
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        const baseName = state.file!.name.replace(/\.[^.]+$/, '');
+        a.download = `${baseName}-${dims.width}x${dims.height}.${state.outputFormat}`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+
+        setEstimatedSize(blob.size);
+        setIsProcessing(false);
+      },
+      mime,
+      state.outputFormat === 'png' ? undefined : state.outputQuality,
+    );
   };
+
+  img.onerror = () => {
+    setError('Nie udało się wczytać obrazu.');
+    setIsProcessing(false);
+  };
+};
+
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
