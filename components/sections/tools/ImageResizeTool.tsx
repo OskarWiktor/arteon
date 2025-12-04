@@ -1,14 +1,23 @@
 'use client';
 
 import Button from '@/components/ui/Button';
-import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type DragEvent as ReactDragEvent, type ReactNode } from 'react';
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type FormEvent,
+  type PointerEvent as ReactPointerEvent,
+  type DragEvent as ReactDragEvent,
+  type ReactNode,
+} from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
-import { RiZoomInLine, RiDragMove2Line, RiRotateLockLine, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
+import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
 
 type ResizeMode = 'pixels' | 'preset';
 type OutputFormat = 'jpg' | 'png' | 'webp';
 type GridColor = 'emerald' | 'white' | 'black' | 'red' | 'yellow';
-type ActiveTool = 'dimensions' | 'presets' | 'shapes' | 'zoom' | 'position' | 'rotation' | 'grid';
+type ActiveTool = 'dimensions' | 'presets' | 'shapes' | 'zoom' | 'position' | 'grid';
 
 type ShapeType = 'rect' | 'square' | 'circle';
 type ShapeAspect = '1:1' | '4:5' | '5:4' | '3:2' | '2:3' | '16:9' | '9:16';
@@ -46,13 +55,12 @@ interface ResizeToolState {
   cropX: number;
   cropY: number;
   cropZoom: number;
-  rotation: number;
   gridColor: GridColor;
   shape: ShapeType;
   shapeAspect: ShapeAspect;
 }
 
-type DragMode = 'none' | 'move' | 'resize' | 'rotate';
+type DragMode = 'none' | 'move' | 'resize';
 
 interface DragState {
   mode: DragMode;
@@ -64,9 +72,6 @@ interface DragState {
   anchorX: number;
   anchorY: number;
   corner: 'tl' | 'tr' | 'bl' | 'br' | null;
-  startRotation: number;
-  centerClientX: number;
-  centerClientY: number;
 }
 
 function formatBytes(bytes: number): string {
@@ -77,7 +82,14 @@ function formatBytes(bytes: number): string {
   return `${value.toFixed(value > 10 ? 1 : 2)} ${units[i]}`;
 }
 
-function getCropRect(ow: number, oh: number, targetAspect: number, cropX: number, cropY: number, zoom: number) {
+function getCropRect(
+  ow: number,
+  oh: number,
+  targetAspect: number,
+  cropX: number,
+  cropY: number,
+  zoom: number,
+) {
   const originalAspect = ow / oh;
   let baseW: number;
   let baseH: number;
@@ -143,7 +155,9 @@ function ToolButton({ id, activeTool, onClick, icon, label }: ToolButtonProps) {
     <button
       type="button"
       onClick={() => onClick(id)}
-      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-600 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${
+        isActive ? 'bg-slate-600 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'
+      }`}
     >
       {icon}
       <span>{label}</span>
@@ -159,7 +173,13 @@ interface PillButtonProps<T extends string> {
   disabled?: boolean;
 }
 
-function PillButton<T extends string>({ value, current, label, onChange, disabled }: PillButtonProps<T>) {
+function PillButton<T extends string>({
+  value,
+  current,
+  label,
+  onChange,
+  disabled,
+}: PillButtonProps<T>) {
   const isActive = value === current;
 
   return (
@@ -186,7 +206,15 @@ interface NumberFieldProps {
   widthClass?: string;
 }
 
-function NumberField({ label, suffix, value, min, max, onChange, widthClass = 'w-20!' }: NumberFieldProps) {
+function NumberField({
+  label,
+  suffix,
+  value,
+  min,
+  max,
+  onChange,
+  widthClass = 'w-20!',
+}: NumberFieldProps) {
   return (
     <div>
       <div className="flex items-center justify-between">
@@ -233,7 +261,6 @@ const TOOLBAR_ITEMS: { id: ActiveTool; label: string; icon: ReactNode }[] = [
   { id: 'shapes', label: 'Kształty kadru', icon: <RiCropLine className="text-base" /> },
   { id: 'zoom', label: 'Przybliżenie', icon: <RiZoomInLine className="text-base" /> },
   { id: 'position', label: 'Pozycja', icon: <RiDragMove2Line className="text-base" /> },
-  { id: 'rotation', label: 'Obrót', icon: <RiRotateLockLine className="text-base" /> },
   { id: 'grid', label: 'Kolor siatki', icon: <RiGridLine className="text-base" /> },
 ];
 
@@ -254,7 +281,6 @@ export default function ImageResizeTool() {
     cropX: 0.5,
     cropY: 0.5,
     cropZoom: 1,
-    rotation: 0,
     gridColor: 'emerald',
     shape: 'rect',
     shapeAspect: '4:5',
@@ -277,17 +303,14 @@ export default function ImageResizeTool() {
     anchorX: 0,
     anchorY: 0,
     corner: null,
-    startRotation: 0,
-    centerClientX: 0,
-    centerClientY: 0,
   });
 
+  // sprzątanie URL obiektu
   useEffect(() => {
     return () => {
       if (state.imageUrl) URL.revokeObjectURL(state.imageUrl);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [state.imageUrl]);
 
   const dims = useMemo(() => {
     const { originalWidth, originalHeight, targetWidth, targetHeight } = state;
@@ -295,7 +318,6 @@ export default function ImageResizeTool() {
     return { width: targetWidth, height: targetHeight };
   }, [state.originalWidth, state.originalHeight, state.targetWidth, state.targetHeight]);
 
-  // Nowy – "bezpieczne" wymiary do kadrowania (gdy brak targetWidth/Height, używamy oryginału)
   const effectiveDims = useMemo(() => {
     if (dims) return dims;
     if (state.originalWidth && state.originalHeight) {
@@ -304,7 +326,13 @@ export default function ImageResizeTool() {
     return null;
   }, [dims, state.originalWidth, state.originalHeight]);
 
-  const aspectRatioText = useMemo(() => (state.originalWidth && state.originalHeight ? (state.originalWidth / state.originalHeight).toFixed(2) : null), [state.originalWidth, state.originalHeight]);
+  const aspectRatioText = useMemo(
+    () =>
+      state.originalWidth && state.originalHeight
+        ? (state.originalWidth / state.originalHeight).toFixed(2)
+        : null,
+    [state.originalWidth, state.originalHeight],
+  );
 
   const inputFormat = useMemo(() => {
     if (!state.file) return null;
@@ -318,8 +346,6 @@ export default function ImageResizeTool() {
     return 'N/D';
   }, [state.file]);
 
-  // Podgląd i panel narzędzi mają być widoczne zawsze, gdy jest jakikolwiek obraz,
-  // niezależnie od tego czy wymiary docelowe są już wpisane.
   const cropEnabled = !!state.imageUrl && !!state.originalWidth && !!state.originalHeight;
 
   const previewPadding = useMemo(() => {
@@ -334,14 +360,29 @@ export default function ImageResizeTool() {
       return null;
     }
     const targetAspect = effectiveDims.width / effectiveDims.height;
-    const rect = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
+    const rect = getCropRect(
+      state.originalWidth,
+      state.originalHeight,
+      targetAspect,
+      state.cropX,
+      state.cropY,
+      state.cropZoom,
+    );
     return {
       left: `${(rect.x / state.originalWidth) * 100}%`,
       top: `${(rect.y / state.originalHeight) * 100}%`,
       width: `${(rect.cropW / state.originalWidth) * 100}%`,
       height: `${(rect.cropH / state.originalHeight) * 100}%`,
     };
-  }, [cropEnabled, effectiveDims, state.originalHeight, state.originalWidth, state.cropX, state.cropY, state.cropZoom]);
+  }, [
+    cropEnabled,
+    effectiveDims,
+    state.originalHeight,
+    state.originalWidth,
+    state.cropX,
+    state.cropY,
+    state.cropZoom,
+  ]);
 
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];
@@ -350,6 +391,7 @@ export default function ImageResizeTool() {
 
   const handleFileChange = (file: File | null) => {
     if (!file) return;
+
     if (state.imageUrl) URL.revokeObjectURL(state.imageUrl);
 
     const url = URL.createObjectURL(file);
@@ -365,12 +407,7 @@ export default function ImageResizeTool() {
         targetWidth: img.width,
         targetHeight: img.height,
         mode: 'pixels',
-        cropX: 0.5,
-        cropY: 0.5,
-        cropZoom: 1,
-        rotation: 0,
         selectedPresetKey: null,
-        shape: 'rect',
       }));
       setError(null);
       setEstimatedSize(null);
@@ -383,7 +420,6 @@ export default function ImageResizeTool() {
   };
 
   const handleDimensionChange = (type: 'width' | 'height', value: number | null) => {
-    // Jeśli pole jest puste lub wartość <= 0, nie nadpisujemy sensownych wymiarów
     if (value === null || value <= 0 || Number.isNaN(value)) {
       setState((prev) => ({
         ...prev,
@@ -500,168 +536,100 @@ export default function ImageResizeTool() {
       cropX: 0.5,
       cropY: 0.5,
       cropZoom: 1,
-      rotation: 0,
       shape: 'rect',
     }));
   };
 
-const handleDownload = () => {
-  if (!state.file || !state.imageUrl) {
-    setError('Dodaj najpierw zdjęcie.');
-    return;
-  }
-
-  if (!dims) {
-    setError('Ustaw poprawne wymiary docelowe.');
-    return;
-  }
-
-  setIsProcessing(true);
-  setError(null);
-
-  const img = new Image();
-  img.src = state.imageUrl;
-  img.onload = () => {
-    const W = dims.width;
-    const H = dims.height;
-
-    const canvas = document.createElement('canvas');
-    canvas.width = W;
-    canvas.height = H;
-    const ctx = canvas.getContext('2d');
-
-    if (!ctx || !state.originalWidth || !state.originalHeight) {
-      setIsProcessing(false);
-      setError('Twoja przeglądarka nie obsługuje kontekstu 2D.');
+  const handleDownload = () => {
+    if (!state.file || !state.imageUrl) {
+      setError('Dodaj najpierw zdjęcie.');
       return;
     }
 
-    const targetAspect = W / H;
-    const crop = getCropRect(
-      state.originalWidth,
-      state.originalHeight,
-      targetAspect,
-      state.cropX,
-      state.cropY,
-      state.cropZoom,
-    );
+    if (!dims) {
+      setError('Ustaw poprawne wymiary docelowe.');
+      return;
+    }
 
-    const hasRotation = state.rotation !== 0;
-    const rad = (state.rotation * Math.PI) / 180;
+    setIsProcessing(true);
+    setError(null);
 
-    if (!hasRotation) {
-      ctx.save();
-
-      if (state.shape === 'circle') {
-        const r = Math.min(W, H) / 2;
-        ctx.beginPath();
-        ctx.arc(W / 2, H / 2, r, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.clip();
-      }
-
-      ctx.drawImage(
-        img,
-        crop.x,
-        crop.y,
-        crop.cropW,
-        crop.cropH,
-        0,
-        0,
-        W,
-        H,
-      );
-
-      ctx.restore();
-    } else {
-      const cos = Math.cos(rad);
-      const sin = Math.sin(rad);
-      const tmpW = Math.ceil(Math.abs(W * cos) + Math.abs(H * sin));
-      const tmpH = Math.ceil(Math.abs(W * sin) + Math.abs(H * cos));
-
-      const tmpCanvas = document.createElement('canvas');
-      tmpCanvas.width = tmpW;
-      tmpCanvas.height = tmpH;
-      const tmpCtx = tmpCanvas.getContext('2d');
-
-      if (!tmpCtx) {
+    const img = new Image();
+    img.src = state.imageUrl;
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = dims.width;
+      canvas.height = dims.height;
+      const ctx = canvas.getContext('2d');
+      if (!ctx || !state.originalWidth || !state.originalHeight) {
         setIsProcessing(false);
-        setError('Nie udało się przygotować płótna.');
+        setError('Twoja przeglądarka nie obsługuje kontekstu 2D.');
         return;
       }
 
-      tmpCtx.save();
-      tmpCtx.translate(tmpW / 2, tmpH / 2);
-      tmpCtx.rotate(rad);
-
-      tmpCtx.drawImage(
-        img,
-        crop.x,
-        crop.y,
-        crop.cropW,
-        crop.cropH,
-        -W / 2,
-        -H / 2,
-        W,
-        H,
+      const targetAspect = dims.width / dims.height;
+      const crop = getCropRect(
+        state.originalWidth,
+        state.originalHeight,
+        targetAspect,
+        state.cropX,
+        state.cropY,
+        state.cropZoom,
       );
 
-      tmpCtx.restore();
-
-      const sx = (tmpW - W) / 2;
-      const sy = (tmpH - H) / 2;
+      const W = dims.width;
+      const H = dims.height;
 
       ctx.save();
+      ctx.translate(W / 2, H / 2);
 
       if (state.shape === 'circle') {
         const r = Math.min(W, H) / 2;
         ctx.beginPath();
-        ctx.arc(W / 2, H / 2, r, 0, Math.PI * 2);
+        ctx.arc(0, 0, r, 0, Math.PI * 2);
         ctx.closePath();
         ctx.clip();
       }
 
-      ctx.drawImage(tmpCanvas, sx, sy, W, H, 0, 0, W, H);
+      ctx.drawImage(img, crop.x, crop.y, crop.cropW, crop.cropH, -W / 2, -H / 2, W, H);
 
       ctx.restore();
-    }
 
-    let mime: string = 'image/jpeg';
-    if (state.outputFormat === 'png') mime = 'image/png';
-    if (state.outputFormat === 'webp') mime = 'image/webp';
+      let mime: string = 'image/jpeg';
+      if (state.outputFormat === 'png') mime = 'image/png';
+      if (state.outputFormat === 'webp') mime = 'image/webp';
 
-    canvas.toBlob(
-      (blob) => {
-        if (!blob) {
-          setError('Nie udało się wygenerować pliku.');
+      canvas.toBlob(
+        (blob) => {
+          if (!blob) {
+            setError('Nie udało się wygenerować pliku.');
+            setIsProcessing(false);
+            return;
+          }
+
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          const baseName = state.file!.name.replace(/\.[^.]+$/, '');
+          a.download = `${baseName}-${dims.width}x${dims.height}.${state.outputFormat}`;
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+
+          setEstimatedSize(blob.size);
           setIsProcessing(false);
-          return;
-        }
+        },
+        mime,
+        state.outputFormat === 'png' ? undefined : state.outputQuality,
+      );
+    };
 
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        const baseName = state.file!.name.replace(/\.[^.]+$/, '');
-        a.download = `${baseName}-${dims.width}x${dims.height}.${state.outputFormat}`;
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
-
-        setEstimatedSize(blob.size);
-        setIsProcessing(false);
-      },
-      mime,
-      state.outputFormat === 'png' ? undefined : state.outputQuality,
-    );
+    img.onerror = () => {
+      setError('Nie udało się wczytać obrazu.');
+      setIsProcessing(false);
+    };
   };
-
-  img.onerror = () => {
-    setError('Nie udało się wczytać obrazu.');
-    setIsProcessing(false);
-  };
-};
-
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -685,7 +653,10 @@ const handleDownload = () => {
     setActiveTool('position');
   };
 
-  const startResizeDrag = (e: ReactPointerEvent<HTMLDivElement>, corner: 'tl' | 'tr' | 'bl' | 'br') => {
+  const startResizeDrag = (
+    e: ReactPointerEvent<HTMLDivElement>,
+    corner: 'tl' | 'tr' | 'bl' | 'br',
+  ) => {
     if (!state.imageUrl || !previewRef.current || !state.originalWidth || !state.originalHeight) {
       return;
     }
@@ -694,7 +665,14 @@ const handleDownload = () => {
     const { originalWidth, originalHeight } = state;
     const targetAspect = effectiveDims.width / effectiveDims.height;
 
-    const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
+    const cropRect = getCropRect(
+      originalWidth,
+      originalHeight,
+      targetAspect,
+      state.cropX,
+      state.cropY,
+      state.cropZoom,
+    );
 
     let anchorX = cropRect.x;
     let anchorY = cropRect.y;
@@ -735,35 +713,6 @@ const handleDownload = () => {
     setActiveTool('zoom');
   };
 
-  const startRotateDrag = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (!state.imageUrl || !previewRef.current || !state.originalWidth || !state.originalHeight || !effectiveDims) {
-      return;
-    }
-
-    const previewRect = previewRef.current.getBoundingClientRect();
-    const targetAspect = effectiveDims.width / effectiveDims.height;
-    const cropRect = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
-
-    const centerNormX = cropRect.centerX / state.originalWidth;
-    const centerNormY = cropRect.centerY / state.originalHeight;
-
-    const centerClientX = previewRect.left + centerNormX * previewRect.width;
-    const centerClientY = previewRect.top + centerNormY * previewRect.height;
-
-    e.stopPropagation();
-    e.currentTarget.setPointerCapture(e.pointerId);
-
-    dragRef.current.mode = 'rotate';
-    dragRef.current.startX = e.clientX;
-    dragRef.current.startY = e.clientY;
-    dragRef.current.startRotation = state.rotation;
-    dragRef.current.centerClientX = centerClientX;
-    dragRef.current.centerClientY = centerClientY;
-
-    setIsDragging(true);
-    setActiveTool('rotation');
-  };
-
   const handlePointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
     if (dragRef.current.mode === 'none' || !previewRef.current) return;
 
@@ -779,7 +728,14 @@ const handleDownload = () => {
       if (!effectiveDims) return;
       const targetAspect = effectiveDims.width / effectiveDims.height;
 
-      const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, dragRef.current.startCropX, dragRef.current.startCropY, state.cropZoom);
+      const cropRect = getCropRect(
+        originalWidth,
+        originalHeight,
+        targetAspect,
+        dragRef.current.startCropX,
+        dragRef.current.startCropY,
+        state.cropZoom,
+      );
 
       const rangeX = Math.max(originalWidth - cropRect.cropW, 1);
       const rangeY = Math.max(originalHeight - cropRect.cropH, 1);
@@ -847,8 +803,8 @@ const handleDownload = () => {
         h = minSize / aspect;
       }
 
+      let maxH = signY > 0 ? oh - anchorY: anchorY;
       let maxW = signX > 0 ? ow - anchorX : anchorX;
-      let maxH = signY > 0 ? oh - anchorY : anchorY;
       maxW = Math.max(maxW, minSize);
       maxH = Math.max(maxH, minSize);
 
@@ -899,24 +855,6 @@ const handleDownload = () => {
         cropY,
         cropZoom: zoom,
       }));
-    } else if (mode === 'rotate') {
-      const { centerClientX, centerClientY, startX, startY, startRotation } = dragRef.current;
-
-      const startAngle = Math.atan2(startY - centerClientY, startX - centerClientX);
-      const currentAngle = Math.atan2(e.clientY - centerClientY, e.clientX - centerClientX);
-
-      let deltaDeg = ((currentAngle - startAngle) * 180) / Math.PI;
-      if (deltaDeg > 180) deltaDeg -= 360;
-      if (deltaDeg < -180) deltaDeg += 360;
-
-      let newRotation = startRotation + deltaDeg;
-      newRotation = Math.max(-45, Math.min(45, newRotation));
-      newRotation = Math.round(newRotation * 10) / 10;
-
-      setState((prev) => ({
-        ...prev,
-        rotation: newRotation,
-      }));
     }
   };
 
@@ -962,7 +900,9 @@ const handleDownload = () => {
             >
               <span className="mb-1 text-sm! font-medium">Przeciągnij i upuść zdjęcie tutaj</span>
               <span className="mb-2 text-xs! text-[#5e5e5e]">lub kliknij, aby wybrać plik z dysku</span>
-              <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">Obsługiwane: JPG, PNG, WebP</span>
+              <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">
+                Obsługiwane: JPG, PNG, WebP
+              </span>
               <input
                 type="file"
                 accept="image/*"
@@ -1014,10 +954,14 @@ const handleDownload = () => {
                   Format wyjściowy: <strong>{state.outputFormat.toUpperCase()}</strong>
                 </p>
                 <p className="text-xs!">
-                  Obrót: <strong>{state.rotation}°</strong>
-                </p>
-                <p className="text-xs!">
-                  Kształt: <strong>{state.shape === 'rect' ? 'Prostokąt' : state.shape === 'square' ? 'Kwadrat' : 'Koło'}</strong>
+                  Kształt:{' '}
+                  <strong>
+                    {state.shape === 'rect'
+                      ? 'Prostokąt'
+                      : state.shape === 'square'
+                      ? 'Kwadrat'
+                      : 'Koło'}
+                  </strong>
                 </p>
                 {state.file && (
                   <p className="text-xs!">
@@ -1072,12 +1016,20 @@ const handleDownload = () => {
                   }
                   className="w-full! p-0!"
                 />
-                <p className="text-xs! text-[#5e5e5e]">Niższa jakość = mniejszy plik. Dla sociali często 70-85% to dobry kompromis.</p>
+                <p className="text-xs! text-[#5e5e5e]">
+                  Niższa jakość = mniejszy plik. Dla sociali często 70-85% to dobry kompromis.
+                </p>
               </div>
             )}
 
             <div className="mt-5 flex flex-wrap gap-3">
-              <Button variant="accent" size="small" type="submit" disabled={isProcessing || !state.file} className="disabled:opacity-60">
+              <Button
+                variant="accent"
+                size="small"
+                type="submit"
+                disabled={isProcessing || !state.file}
+                className="disabled:opacity-60"
+              >
                 {isProcessing ? 'Przetwarzanie…' : 'Zmień rozmiar i pobierz'}
               </Button>
             </div>
@@ -1104,13 +1056,24 @@ const handleDownload = () => {
           )}
         </div>
 
-        {!state.imageUrl && <p className="text-xs! text-[#5e5e5e]">Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.</p>}
+        {!state.imageUrl && (
+          <p className="text-xs! text-[#5e5e5e]">
+            Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.
+          </p>
+        )}
 
         {state.imageUrl && cropEnabled && (
           <>
             <div className="flex flex-wrap gap-2">
               {TOOLBAR_ITEMS.map((item) => (
-                <ToolButton key={item.id} id={item.id} icon={item.icon} label={item.label} activeTool={activeTool} onClick={setActiveTool} />
+                <ToolButton
+                  key={item.id}
+                  id={item.id}
+                  icon={item.icon}
+                  label={item.label}
+                  activeTool={activeTool}
+                  onClick={setActiveTool}
+                />
               ))}
             </div>
 
@@ -1125,7 +1088,12 @@ const handleDownload = () => {
                         min={1}
                         className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
                         value={state.targetWidth ?? ''}
-                        onChange={(e) => handleDimensionChange('width', e.target.value ? Number(e.target.value) : null)}
+                        onChange={(e) =>
+                          handleDimensionChange(
+                            'width',
+                            e.target.value ? Number(e.target.value) : null,
+                          )
+                        }
                       />
                     </div>
                     <div>
@@ -1135,7 +1103,12 @@ const handleDownload = () => {
                         min={1}
                         className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
                         value={state.targetHeight ?? ''}
-                        onChange={(e) => handleDimensionChange('height', e.target.value ? Number(e.target.value) : null)}
+                        onChange={(e) =>
+                          handleDimensionChange(
+                            'height',
+                            e.target.value ? Number(e.target.value) : null,
+                          )
+                        }
                       />
                     </div>
                   </div>
@@ -1200,7 +1173,13 @@ const handleDownload = () => {
                 <div className="space-y-3">
                   <div className="flex flex-wrap gap-2">
                     {SHAPE_OPTIONS.map((opt) => (
-                      <PillButton key={opt.value} value={opt.value} current={state.shape} label={opt.label} onChange={(val) => handleShapeChange(val as ShapeType)} />
+                      <PillButton
+                        key={opt.value}
+                        value={opt.value}
+                        current={state.shape}
+                        label={opt.label}
+                        onChange={(val) => handleShapeChange(val as ShapeType)}
+                      />
                     ))}
                   </div>
 
@@ -1209,7 +1188,13 @@ const handleDownload = () => {
                       <p className="text-xs! text-[#5e5e5e]">Proporcje prostokąta</p>
                       <div className="flex flex-wrap gap-2">
                         {RECT_ASPECTS.map((aspect) => (
-                          <PillButton key={aspect} value={aspect} current={state.shapeAspect} label={aspect} onChange={(val) => handleShapeAspectChange(val as ShapeAspect)} />
+                          <PillButton
+                            key={aspect}
+                            value={aspect}
+                            current={state.shapeAspect}
+                            label={aspect}
+                            onChange={(val) => handleShapeAspectChange(val as ShapeAspect)}
+                          />
                         ))}
                       </div>
                     </div>
@@ -1310,36 +1295,6 @@ const handleDownload = () => {
                 </div>
               )}
 
-              {activeTool === 'rotation' && (
-                <div className="space-y-1">
-                  <NumberField
-                    label="Obrót kadru"
-                    suffix="°"
-                    value={state.rotation}
-                    min={-45}
-                    max={45}
-                    onChange={(val) =>
-                      setState((prev) => ({
-                        ...prev,
-                        rotation: val,
-                      }))
-                    }
-                  />
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setState((prev) => ({
-                        ...prev,
-                        rotation: 0,
-                      }))
-                    }
-                    className="mt-2 rounded-full border border-black/10 bg-white px-3 py-1 text-[14px]! hover:bg-neutral-100"
-                  >
-                    0°
-                  </button>
-                </div>
-              )}
-
               {activeTool === 'grid' && (
                 <div className="space-y-2">
                   <div className="flex flex-wrap gap-2">
@@ -1350,7 +1305,10 @@ const handleDownload = () => {
                         current={state.gridColor}
                         label={
                           <span className="flex items-center gap-2">
-                            <span className="h-4 w-4 rounded-full" style={{ backgroundColor: getGridStroke(opt.value) }} />
+                            <span
+                              className="h-4 w-4 rounded-full"
+                              style={{ backgroundColor: getGridStroke(opt.value) }}
+                            />
                             {opt.label}
                           </span>
                         }
@@ -1377,10 +1335,19 @@ const handleDownload = () => {
                 )}
               </div>
 
-              <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-600" style={{ paddingBottom: `${previewPadding}%` }}>
+              <div
+                ref={previewRef}
+                className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-600"
+                style={{ paddingBottom: `${previewPadding}%` }}
+              >
                 <div className="absolute inset-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={state.imageUrl!} alt={state.file?.name || 'Podgląd'} className="h-full w-full object-contain" draggable={false} />
+                  <img
+                    src={state.imageUrl!}
+                    alt={state.file?.name || 'Podgląd'}
+                    className="h-full w-full object-contain"
+                    draggable={false}
+                  />
 
                   {cropRectPreview && (
                     <div
@@ -1388,31 +1355,22 @@ const handleDownload = () => {
                       onPointerMove={handlePointerMove}
                       onPointerUp={handlePointerUp}
                       onPointerLeave={handlePointerLeave}
-                      className={`absolute box-border ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+                      className={`absolute box-border ${
+                        isDragging ? 'cursor-grabbing' : 'cursor-grab'
+                      }`}
                       style={{ ...cropRectPreview }}
                     >
-                      <div
-                        className="pointer-events-none absolute inset-0"
-                        style={{
-                          transform: `rotate(${state.rotation}deg)`,
-                          transformOrigin: '50% 50%',
-                        }}
-                      >
-                        <div className={`absolute inset-0 shadow-[0_0_0_9999px_rgba(0,0,0,0.55)] ${selectionShapeClass}`} />
-                        <div className={`absolute inset-0 grid grid-cols-3 grid-rows-3 overflow-hidden ${selectionShapeClass}`}>
+                      <div className="pointer-events-none absolute inset-0">
+                        <div
+                          className={`absolute inset-0 shadow-[0_0_0_9999px_rgba(0,0,0,0.55)] ${selectionShapeClass}`}
+                        />
+                        <div
+                          className={`absolute inset-0 grid grid-cols-3 grid-rows-3 overflow-hidden ${selectionShapeClass}`}
+                        >
                           {Array.from({ length: 9 }).map((_, i) => (
                             <div key={i} className="border" style={{ borderColor: gridStroke }} />
                           ))}
                         </div>
-                      </div>
-
-                      <div
-                        className="absolute -top-5 left-1/2 h-4 w-4 -translate-x-1/2 cursor-alias rounded-full border bg-white/90 text-center text-[10px]! leading-4 shadow-sm"
-                        style={{ borderColor: gridStroke, color: '#111827' }}
-                        onPointerDown={startRotateDrag}
-                        title="Przeciągnij, aby obrócić kadr"
-                      >
-                        ⤾
                       </div>
 
                       <div
@@ -1435,39 +1393,15 @@ const handleDownload = () => {
                         style={{ borderColor: gridStroke }}
                         onPointerDown={(e) => startResizeDrag(e, 'br')}
                       />
-
-                      <div
-                        className="absolute -top-4 -left-4 h-4 w-4 cursor-alias rounded-full border bg-white/90 shadow-sm"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={startRotateDrag}
-                        title="Obrót z rogu"
-                      />
-                      <div
-                        className="absolute -top-4 -right-4 h-4 w-4 cursor-alias rounded-full border bg-white/90 shadow-sm"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={startRotateDrag}
-                        title="Obrót z rogu"
-                      />
-                      <div
-                        className="absolute -bottom-4 -left-4 h-4 w-4 cursor-alias rounded-full border bg-white/90 shadow-sm"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={startRotateDrag}
-                        title="Obrót z rogu"
-                      />
-                      <div
-                        className="absolute -right-4 -bottom-4 h-4 w-4 cursor-alias rounded-full border bg-white/90 shadow-sm"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={startRotateDrag}
-                        title="Obrót z rogu"
-                      />
                     </div>
                   )}
                 </div>
               </div>
 
               <p className="mt-2 text-xs! text-[#5e5e5e]">
-                Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Siatka obraca się razem z kadrem - zapisany plik będzie miał ten sam kąt i fragment obrazu, który widzisz w środku. Dla
-                kształtu koła plik będzie miał przezroczyste tło poza kształtem (PNG / WebP).
+                Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie
+                miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu
+                koła plik będzie miał przezroczyste tło poza kształtem (PNG / WebP).
               </p>
             </div>
           </>
