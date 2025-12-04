@@ -93,7 +93,6 @@ export default function OfferDesignXxxPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* 1. Dlaczego / sens usługi */}
         <SectionInfo title="Co zyskujesz zamawiając projekt graficzny strony?">
           <p>
             <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong>
@@ -133,7 +132,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 2. Offer stack – co dokładnie dostają */}
         <FeatureGrid
           title="Co zyskujesz zamawiając projekt graficzny strony?"
           subtitle="Nasz standard pracy"
@@ -163,7 +161,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 3. Dla kogo – filtr */}
         <SectionInfo title="Dla kogo jest projekt graficzny strony?" subtitle="Kiedy ma największy sens?">
           <p>Projekt graficzny strony najbardziej opłaca się wtedy, gdy chcesz świadomie zaplanować każdy ekran, zamiast „składać” stronę z przypadkowych sekcji.</p>
 
@@ -184,7 +181,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 4. Proof – realizacje + opinie */}
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
@@ -193,7 +189,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 5. Cennik / zakres – po proofie */}
         <SectionPrices
           title="Projekt graficzny strony - przykładowe zakresy"
           subtitle="Dobieramy zakres projektu do celu i wielkości serwisu"
@@ -243,7 +238,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 6. Proces / ryzyko */}
         <FeesSteps />
 
         <Gap variant="line" />
@@ -252,7 +246,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 7. FAQ – obiekcje przed kontaktem */}
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony"
@@ -294,7 +287,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 8. Kontakt – dopiero po FAQ */}
         <ContactForm
           title="Zamów projekt graficzny strony"
           description="Opisz branżę, cel strony (leady, sprzedaż, edukacja), zakres podstron i kluczowe funkcje. Na tej podstawie przygotujemy wycenę, termin i rekomendacje UX."
@@ -303,7 +295,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 9. Cross-sell + zobacz też */}
         <SectionSteps
           title="Z czym warto połączyć projekt graficzny strony?"
           subtitle="Zobacz też"

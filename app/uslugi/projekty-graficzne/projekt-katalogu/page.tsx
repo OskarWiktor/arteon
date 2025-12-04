@@ -90,7 +90,6 @@ export default function OfferDesignKatalogPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* 1. Dlaczego – wartość i ból */}
         <SectionInfo title="Co zyskujesz zamawiając projekt katalogu?">
           <p>
             <strong>Katalog porządkuje ofertę i prowadzi do kontaktu.</strong> Klient widzi produkty lub usługi w jasnym układzie: sekcje, zdjęcia, najważniejsze dane i ceny. Znika chaos, a pojawia
@@ -129,7 +128,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 2. Offer stack – co dokładnie dostaje klient */}
         <FeatureGrid
           title="Co zyskujesz zamawiając katalog?"
           subtitle="Nasz standard pracy"
@@ -159,7 +157,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 3. Dla kogo – filtr i dopasowanie */}
         <SectionInfo title="Dla kogo szczególnie opłaca się katalog?" subtitle="Kiedy inwestycja zwraca się najszybciej?">
           <p>
             Katalog najlepiej sprawdza się tam, gdzie oferta ma wiele pozycji lub wariantów, a klient potrzebuje ich porównania w jednym miejscu. Im większa złożoność oferty, tym mocniej rośnie
@@ -183,7 +180,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 4. Proof – realizacje + opinie */}
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
@@ -192,7 +188,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 5. Cennik / pakiety – po dowodzie społecznym */}
         <SectionPrices
           title="Projekt katalogu - przykładowe zakresy"
           subtitle="Dobieramy zakres do wielkości oferty"
@@ -242,7 +237,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 6. Proces / ryzyko – jak to wygląda krok po kroku */}
         <FeesSteps />
 
         <Gap variant="line" />
@@ -251,7 +245,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 7. FAQ – obiekcje i szczegóły */}
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu"
@@ -297,7 +290,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 8. Kontakt – główne CTA po rozwianiu wątpliwości */}
         <ContactForm
           title="Zamów projekt katalogu"
           description="Podaj planowaną liczbę stron, rodzaj produktów lub usług, które chcesz pokazać, oraz czy masz już zdjęcia i teksty. Na tej podstawie przygotujemy wycenę, propozycję układu i harmonogram składu."
@@ -306,7 +298,6 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        {/* 9. Cross-sell – co dalej / z czym połączyć katalog */}
         <SectionSteps
           title="Z czym najlepiej połączyć katalog?"
           subtitle="Zobacz też"

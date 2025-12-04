@@ -239,45 +239,6 @@ export default function OfferDesignPapierFirmowyPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Jak jeszcze możesz wzmocnić wizerunek w korespondencji?"
-          subtitle="Zobacz też"
-          description="Najlepszy efekt daje spójny system: papier firmowy, wizytówki, teczki i oferta, które razem budują doświadczenie klienta."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki firmowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu widzi spójny system – od dokumentu po dane kontaktowe.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiBookOpenLine className="h-8 w-8" />,
-              title: 'Projekt teczki ofertowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta – od papieru po oprawę – staje się spójnym doświadczeniem dla klienta.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
-                      Zobacz projekt teczki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
@@ -287,14 +248,6 @@ export default function OfferDesignPapierFirmowyPage() {
         <Gap variant="line" />
 
         <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt papieru firmowego"
-          description="Napisz, czym zajmuje się Twoja firma, jakie typy dokumentów przygotowujesz najczęściej (oferty, umowy, pisma) oraz czy potrzebujesz tylko wersji do druku, czy także szablonów Word/PDF. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
-          defaultSubject="Projekt papieru firmowego"
-        />
 
         <Gap variant="line" />
 
@@ -338,6 +291,53 @@ export default function OfferDesignPapierFirmowyPage() {
               answer: 'Tak. Oferujemy opcję realizacji w trybie przyspieszonym. Przed startem ustalamy możliwy termin oraz dodatkowy koszt, aby wszystko było transparentne.',
             },
           ]}
+        />
+        
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt papieru firmowego"
+          description="Napisz, czym zajmuje się Twoja firma, jakie typy dokumentów przygotowujesz najczęściej (oferty, umowy, pisma) oraz czy potrzebujesz tylko wersji do druku, czy także szablonów Word/PDF. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
+          defaultSubject="Projekt papieru firmowego"
+        />
+
+                <Gap variant="line" />
+
+        <SectionSteps
+          title="Jak jeszcze możesz wzmocnić wizerunek w korespondencji?"
+          subtitle="Zobacz też"
+          description="Najlepszy efekt daje spójny system: papier firmowy, wizytówki, teczki i oferta, które razem budują doświadczenie klienta."
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Projekt wizytówki firmowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu widzi spójny system – od dokumentu po dane kontaktowe.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiBookOpenLine className="h-8 w-8" />,
+              title: 'Projekt teczki ofertowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta – od papieru po oprawę – staje się spójnym doświadczeniem dla klienta.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
+                      Zobacz projekt teczki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
         />
 
         <Gap variant="line" />

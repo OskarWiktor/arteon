@@ -273,7 +273,6 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 9. Kontakt – główne CTA po rozwianiu wątpliwości */}
         <ContactForm
           title="Zamów projekt voucherów lub kuponów"
           description="Opisz, czym się zajmujesz, na jaki rodzaj usług lub produktów chcesz przygotować kupony i vouchery oraz w jakiej formie będą rozdawane (druk, online, social media). Na tej podstawie przygotujemy propozycję projektu, wycenę i termin realizacji."
@@ -282,7 +281,6 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        {/* 10. Cross-sell – co dalej / z czym połączyć */}
         <SectionSteps
           title="Z czym najlepiej połączyć kupony i vouchery?"
           subtitle="Zobacz też"

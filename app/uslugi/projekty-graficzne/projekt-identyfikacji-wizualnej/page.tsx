@@ -93,7 +93,6 @@ export default function OfferDesignXxxPage() {
       <Wrapper>
         <Gap size="xs" />
 
-        {/* 1. Dlaczego / co zyskujesz */}
         <SectionInfo title="Co zyskujesz zamawiając identyfikację wizualną?">
           <p>
             <strong>Spójny system wizualny porządkuje każdy kontakt z Twoją marką.</strong> Firmy, które konsekwentnie trzymają identyfikację, notują średnio
@@ -145,7 +144,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 2. Offer stack – co dokładnie dostajesz */}
         <FeatureGrid
           title="Co zyskujesz zamawiając identyfikację wizualną?"
           subtitle="Nasz standard pracy"
@@ -175,7 +173,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 3. Dla kogo – filtr */}
         <SectionInfo title="Dla kogo jest identyfikacja wizualna?" subtitle="Kiedy warto w nią zainwestować?">
           <p>Projekt identyfikacji wizualnej szczególnie przydaje się wtedy, gdy chcesz świadomie ułożyć obraz marki na lata, a nie tylko zaprojektować pojedyncze logo czy wizytówkę.</p>
 
@@ -196,7 +193,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 4. Proof – realizacje + opinie */}
         <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
@@ -205,7 +201,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 5. Cennik / pakiety – po proofie */}
         <SectionPrices
           title="Projekt identyfikacji wizualnej - przykładowe zakresy"
           subtitle="Dobieramy zakres systemu do etapu rozwoju Twojej marki"
@@ -255,7 +250,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 6. Proces / ryzyko */}
         <FeesSteps />
 
         <Gap variant="line" />
@@ -264,7 +258,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 7. FAQ – obiekcje */}
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
@@ -312,7 +305,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 8. Kontakt */}
         <ContactForm
           title="Zamów identyfikację wizualną"
           description="Napisz, w jakiej branży działasz, jakie materiały są dla Ciebie kluczowe (online i druk) oraz czy masz już logo. Przygotujemy propozycję zakresu, wycenę i harmonogram prac."
@@ -321,7 +313,6 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        {/* 9. Cross-sell */}
         <SectionSteps
           title="Z czym warto połączyć identyfikację wizualną?"
           subtitle="Zobacz też"

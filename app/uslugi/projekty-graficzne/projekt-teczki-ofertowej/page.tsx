@@ -249,6 +249,58 @@ export default function OfferDesignTeczkaOfertowaPage() {
 
         <Gap variant="line" />
 
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
+        <FeesSteps />
+
+        <Gap variant="line" />
+
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej"
+          title="Najczęstsze pytania o projekt teczki ofertowej"
+          items={[
+            {
+              question: 'Jak długo trwa realizacja teczki ofertowej?',
+              answer:
+                'Standardowo projekt teczki trwa około 5–10 dni roboczych – w zależności od liczby wersji, stopnia skomplikowania oraz tempa akceptacji. Przy pilnych zleceniach ustalamy tryb ekspresowy indywidualnie.',
+            },
+            {
+              question: 'W jakich formatach dostanę pliki teczki?',
+              answer: 'Dostarczamy pliki do druku (PDF ze spadami i oznaczeniami) oraz – na życzenie – pliki źródłowe. Pliki możemy dopasować do specyfikacji konkretnej drukarni.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu?',
+              answer: 'Tak. W ramach projektu przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i detale aż do pełnej akceptacji.',
+            },
+            {
+              question: 'Czy projekt teczki jest gotowy do druku?',
+              answer:
+                'Tak. Przygotowujemy pliki zgodnie z wymaganiami druku: odpowiedni format, spady, marginesy bezpieczeństwa oraz ustawienia kolorów, tak aby można je było od razu przekazać do drukarni.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt teczki?',
+              answer: 'Tak. W uzasadnionych przypadkach realizujemy projekty w trybie przyspieszonym. Dodatkowy koszt i termin realizacji ustalamy przed startem, aby wszystko było transparentne.',
+            },
+          ]}
+        />
+
+                <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt teczki ofertowej"
+          description="Napisz, czym się zajmujesz, jakie dokumenty chcesz umieszczać w teczce (oferty, umowy, materiały szkoleniowe) oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
+          defaultSubject="Projekt teczki ofertowej"
+        />
+        
+        <Gap variant="line" />
+
         <SectionSteps
           title="Kolejne materiały, które warto połączyć z teczką"
           subtitle="Zobacz też"
@@ -284,58 +336,6 @@ export default function OfferDesignTeczkaOfertowaPage() {
             },
           ]}
           grid="two"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt teczki ofertowej"
-          description="Napisz, czym się zajmujesz, jakie dokumenty chcesz umieszczać w teczce (oferty, umowy, materiały szkoleniowe) oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
-          defaultSubject="Projekt teczki ofertowej"
-        />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej"
-          title="Najczęstsze pytania o projekt teczki ofertowej"
-          items={[
-            {
-              question: 'Jak długo trwa realizacja teczki ofertowej?',
-              answer:
-                'Standardowo projekt teczki trwa około 5–10 dni roboczych – w zależności od liczby wersji, stopnia skomplikowania oraz tempa akceptacji. Przy pilnych zleceniach ustalamy tryb ekspresowy indywidualnie.',
-            },
-            {
-              question: 'W jakich formatach dostanę pliki teczki?',
-              answer: 'Dostarczamy pliki do druku (PDF ze spadami i oznaczeniami) oraz – na życzenie – pliki źródłowe. Pliki możemy dopasować do specyfikacji konkretnej drukarni.',
-            },
-            {
-              question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak. W ramach projektu przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i detale aż do pełnej akceptacji.',
-            },
-            {
-              question: 'Czy projekt teczki jest gotowy do druku?',
-              answer:
-                'Tak. Przygotowujemy pliki zgodnie z wymaganiami druku: odpowiedni format, spady, marginesy bezpieczeństwa oraz ustawienia kolorów, tak aby można je było od razu przekazać do drukarni.',
-            },
-            {
-              question: 'Czy mogę zamówić ekspresowy projekt teczki?',
-              answer: 'Tak. W uzasadnionych przypadkach realizujemy projekty w trybie przyspieszonym. Dodatkowy koszt i termin realizacji ustalamy przed startem, aby wszystko było transparentne.',
-            },
-          ]}
         />
 
         <Gap variant="line" />

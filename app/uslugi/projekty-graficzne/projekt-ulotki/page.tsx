@@ -251,45 +251,6 @@ export default function OfferDesignUlotkaPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Kolejne kroki po projekcie ulotki"
-          subtitle="Zobacz też"
-          description="Ulotka jest często jednym z kilku materiałów, które pracują na rozpoznawalność i sprzedaż. Najlepszy efekt daje spójny pakiet."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Zadbaj o to, aby osoba, która zobaczy ulotkę i spotka Cię osobiście, otrzymała równie dopracowaną wizytówkę z tym samym stylem.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Szablony postów social media',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Przedłuż przekaz z ulotki w internecie. Ustal jeden styl dla materiałów drukowanych i postów, tak aby klient łatwo rozpoznał Twoją markę.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
-                      Zobacz szablony social media
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
@@ -299,14 +260,6 @@ export default function OfferDesignUlotkaPage() {
         <Gap variant="line" />
 
         <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt ulotki"
-          description="Opisz, jaki cel ma spełniać ulotka (promocja, otwarcie, oferta stała), do kogo jest kierowana, w jakim formacie planujesz druk oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
-          defaultSubject="Projekt ulotki"
-        />
 
         <Gap variant="line" />
 
@@ -352,6 +305,53 @@ export default function OfferDesignUlotkaPage() {
                 'Tak - w uzasadnionych przypadkach realizujemy projekty w trybie przyspieszonym. Czas i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac, aby wszystko było transparentne.',
             },
           ]}
+        />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt ulotki"
+          description="Opisz, jaki cel ma spełniać ulotka (promocja, otwarcie, oferta stała), do kogo jest kierowana, w jakim formacie planujesz druk oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
+          defaultSubject="Projekt ulotki"
+        />
+
+                <Gap variant="line" />
+
+        <SectionSteps
+          title="Kolejne kroki po projekcie ulotki"
+          subtitle="Zobacz też"
+          description="Ulotka jest często jednym z kilku materiałów, które pracują na rozpoznawalność i sprzedaż. Najlepszy efekt daje spójny pakiet."
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Projekt wizytówki',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Zadbaj o to, aby osoba, która zobaczy ulotkę i spotka Cię osobiście, otrzymała równie dopracowaną wizytówkę z tym samym stylem.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Szablony postów social media',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Przedłuż przekaz z ulotki w internecie. Ustal jeden styl dla materiałów drukowanych i postów, tak aby klient łatwo rozpoznał Twoją markę.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
+                      Zobacz szablony social media
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
         />
 
         <Gap variant="line" />

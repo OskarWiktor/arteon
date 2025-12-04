@@ -243,6 +243,56 @@ export default function OfferDesignMenuPage() {
 
         <Gap variant="line" />
 
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
+        <FeesSteps />
+
+        <Gap variant="line" />
+
+        <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji"
+          title="Najczęstsze pytania dotyczące projektów menu restauracyjnego"
+          items={[
+            {
+              question: 'W jakich formatach projektujecie menu?',
+              answer: 'Najczęściej pracujemy w formatach A4, DL lub formatach składanych (np. A3 na pół), ale możemy dostosować projekt do wymiarów kart używanych w Twoim lokalu.',
+            },
+            {
+              question: 'Czy mogę otrzymać wersję do publikacji online?',
+              answer: 'Tak – przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie, w social mediach oraz do wykorzystania w kodach QR.',
+            },
+            {
+              question: 'Czy możliwe jest przygotowanie wersji wielojęzycznej menu?',
+              answer: 'Tak – możemy zaprojektować menu w dwóch wersjach językowych lub w jednej karcie z kilkoma językami, przy zachowaniu czytelności i porządku.',
+            },
+            {
+              question: 'Jak długo trwa realizacja projektu?',
+              answer: 'Zazwyczaj 3–5 dni roboczych przy standardowej karcie. Przy rozbudowanych menu z wieloma pozycjami i językami termin ustalamy indywidualnie.',
+            },
+            {
+              question: 'Czy mogę zlecić późniejszą aktualizację menu?',
+              answer: 'Tak – oferujemy aktualizacje sezonowe oraz modyfikacje cen czy składów. Na życzenie przygotowujemy także pliki źródłowe, które umożliwiają samodzielną edycję.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt menu dla swojego lokalu"
+          description="Opisz rodzaj lokalu (restauracja, bistro, kawiarnia, bar), liczbę pozycji w menu oraz format, który Cię interesuje. Możesz dodać aktualną kartę w załączniku – na tej podstawie przygotujemy wycenę i propozycję układu."
+          defaultSubject="Projekt menu restauracji"
+        />
+
+                <Gap variant="line" />
+
         <SectionSteps
           title="Jak jeszcze możesz wzmocnić wizerunek swojego lokalu?"
           subtitle="Zobacz też"
@@ -278,56 +328,6 @@ export default function OfferDesignMenuPage() {
             },
           ]}
           grid="two"
-        />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
-        <WorkSteps variant="design" />
-
-        <Gap size="sm" />
-
-        <ContactForm
-          title="Zamów projekt menu dla swojego lokalu"
-          description="Opisz rodzaj lokalu (restauracja, bistro, kawiarnia, bar), liczbę pozycji w menu oraz format, który Cię interesuje. Możesz dodać aktualną kartę w załączniku – na tej podstawie przygotujemy wycenę i propozycję układu."
-          defaultSubject="Projekt menu restauracji"
-        />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji"
-          title="Najczęstsze pytania dotyczące projektów menu restauracyjnego"
-          items={[
-            {
-              question: 'W jakich formatach projektujecie menu?',
-              answer: 'Najczęściej pracujemy w formatach A4, DL lub formatach składanych (np. A3 na pół), ale możemy dostosować projekt do wymiarów kart używanych w Twoim lokalu.',
-            },
-            {
-              question: 'Czy mogę otrzymać wersję do publikacji online?',
-              answer: 'Tak – przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie, w social mediach oraz do wykorzystania w kodach QR.',
-            },
-            {
-              question: 'Czy możliwe jest przygotowanie wersji wielojęzycznej menu?',
-              answer: 'Tak – możemy zaprojektować menu w dwóch wersjach językowych lub w jednej karcie z kilkoma językami, przy zachowaniu czytelności i porządku.',
-            },
-            {
-              question: 'Jak długo trwa realizacja projektu?',
-              answer: 'Zazwyczaj 3–5 dni roboczych przy standardowej karcie. Przy rozbudowanych menu z wieloma pozycjami i językami termin ustalamy indywidualnie.',
-            },
-            {
-              question: 'Czy mogę zlecić późniejszą aktualizację menu?',
-              answer: 'Tak – oferujemy aktualizacje sezonowe oraz modyfikacje cen czy składów. Na życzenie przygotowujemy także pliki źródłowe, które umożliwiają samodzielną edycję.',
-            },
-          ]}
         />
 
         <Gap variant="line" />

@@ -279,7 +279,6 @@ export default function OfferDesignKartaPage() {
 
         <Gap variant="line" />
 
-        {/* 8. Kontakt */}
         <ContactForm
           title="Zamów projekt karty lojalnościowej"
           description="Opisz, w jakiej branży działasz, jak chcesz nagradzać swoich klientów oraz ile różnych kart potrzebujesz. Na tej podstawie przygotujemy propozycję układu, wycenę i termin realizacji."
@@ -288,7 +287,6 @@ export default function OfferDesignKartaPage() {
 
         <Gap variant="line" />
 
-        {/* 9. Cross-sell – co dalej / z czym połączyć */}
         <SectionSteps
           title="Z czym warto połączyć karty lojalnościowe?"
           subtitle="Zobacz też"
