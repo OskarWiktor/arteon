@@ -97,7 +97,7 @@ export default function SectionPrices({
                 )}
 
                 <p id={itemPriceId} className="mt-4">
-                  <span className="text-2xl font-semibold tracking-tight text-[#0a0a0a]">{plan.price}</span> <span className="align-baseline text-sm font-normal text-[#5e5e5e]">brutto</span>
+                  <span className="text-2xl font-semibold tracking-tight text-[#0a0a0a]">{plan.price}</span>
                 </p>
 
                 <p id={itemDescId} className="mt-2 text-[15px] leading-relaxed text-[#3a3a3a]">
