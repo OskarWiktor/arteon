@@ -67,8 +67,6 @@ export default function OfferDesignSzablonyPostowPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
         overlay="black"

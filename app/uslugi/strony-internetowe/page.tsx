@@ -77,8 +77,6 @@ export default function OfferWebPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"

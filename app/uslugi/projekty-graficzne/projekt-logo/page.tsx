@@ -64,8 +64,6 @@ export default function OfferDesignLogoPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"

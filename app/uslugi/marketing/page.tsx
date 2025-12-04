@@ -62,8 +62,6 @@ export default function OfferMarketingHubPage() {
       <HeroBanner
         title="Marketing internetowy"
         description={<>Przyciągnij nowych klientów, przemyślanym działaniem marketingowym</>}
-        buttonAccent="Bezpłatna wycena"
-        buttonAccentLink="#kontakt"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg5.webp"
         overlay="black"

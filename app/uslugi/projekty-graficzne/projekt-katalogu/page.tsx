@@ -64,8 +64,6 @@ export default function OfferDesignKatalogPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/projects/gazetka-mockup.webp"
         overlay="black"

@@ -64,8 +64,6 @@ export default function OfferDesignMenuPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
@@ -291,7 +289,7 @@ export default function OfferDesignMenuPage() {
           defaultSubject="Projekt menu restauracji"
         />
 
-                <Gap variant="line" />
+        <Gap variant="line" />
 
         <SectionSteps
           title="Jak jeszcze możesz wzmocnić wizerunek swojego lokalu?"

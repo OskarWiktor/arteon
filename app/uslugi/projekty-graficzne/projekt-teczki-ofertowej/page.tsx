@@ -62,8 +62,6 @@ export default function OfferDesignTeczkaOfertowaPage() {
         description={<>Spotkania sprzedażowe wymagają porządku i klasy. Projektujemy teczki ofertowe spójne z identyfikacją – trwałe, eleganckie i funkcjonalne na prezentacje, dokumenty i umowy.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
         overlay="black"
@@ -291,14 +289,14 @@ export default function OfferDesignTeczkaOfertowaPage() {
           ]}
         />
 
-                <Gap variant="line" />
+        <Gap variant="line" />
 
         <ContactForm
           title="Zamów projekt teczki ofertowej"
           description="Napisz, czym się zajmujesz, jakie dokumenty chcesz umieszczać w teczce (oferty, umowy, materiały szkoleniowe) oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
           defaultSubject="Projekt teczki ofertowej"
         />
-        
+
         <Gap variant="line" />
 
         <SectionSteps

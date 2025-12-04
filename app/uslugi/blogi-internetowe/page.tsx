@@ -73,8 +73,6 @@ export default function OfferBlogPage() {
         description={<>Zwiększ swoją widoczność, tworząc własny blog internetowy</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Nasze realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg3.webp"
         overlay="black"

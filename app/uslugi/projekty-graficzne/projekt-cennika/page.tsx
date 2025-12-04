@@ -67,8 +67,6 @@ export default function OfferDesignCennikPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/projects/cennik-mockup.webp"
         overlay="black"

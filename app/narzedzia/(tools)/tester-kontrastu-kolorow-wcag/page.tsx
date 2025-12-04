@@ -68,6 +68,10 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
+        <WcagContrastChecker />
+
+        <Gap size="sm" />
+
         <SectionInfo title="Jak działa tester kontrastu kolorów WCAG?">
           <p className="mb-6">
             To narzędzie liczy kontrast kolorów dokładnie według oficjalnego wzoru WCAG 2.1 (relative luminance). Na podstawie wprowadzonych kolorów oblicza współczynnik kontrastu w skali od{' '}
@@ -86,9 +90,6 @@ export default function Page() {
           </ul>
           <p className="text-[#5e5e5e]">Wszystkie obliczenia wykonywane są lokalnie w Twojej przeglądarce</p>
         </SectionInfo>
-
-        <Gap size="sm" />
-        <WcagContrastChecker />
 
         <Gap size="sm" />
       </Wrapper>

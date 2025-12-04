@@ -61,8 +61,6 @@ export default function OfferDesignUlotkaPage() {
         description={<>Dotarcie lokalne zaczyna się od jasnego przekazu. Tworzymy ulotki, które przyciągają uwagę, wyjaśniają ofertę w kilka sekund i prowadzą prosto do kontaktu lub zakupu.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"
@@ -315,7 +313,7 @@ export default function OfferDesignUlotkaPage() {
           defaultSubject="Projekt ulotki"
         />
 
-                <Gap variant="line" />
+        <Gap variant="line" />
 
         <SectionSteps
           title="Kolejne kroki po projekcie ulotki"

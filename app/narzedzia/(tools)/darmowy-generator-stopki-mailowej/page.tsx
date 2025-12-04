@@ -72,6 +72,10 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
+        <EmailSignatureGenerator />
+
+        <Gap size="sm" />
+
         <SectionInfo title="Profesjonalna stopka mailowa bez grafika i bez kodowania" description="Generator stopki mailowej, który pomoże Ci zbudować profesjonalny wizerunek">
           <p className="mt-4">
             Uzupełnij dane: imię i nazwisko, stanowisko, nazwę firmy, dane kontaktowe, link do kalendarza lub oferty oraz profile w social media. Narzędzie od razu buduje z tego przejrzystą stopkę
@@ -82,10 +86,6 @@ export default function Page() {
             abonamentu i bez limitu użycia.
           </p>
         </SectionInfo>
-
-        <Gap size="sm" />
-
-        <EmailSignatureGenerator />
 
         <Gap size="sm" />
       </Wrapper>

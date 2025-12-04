@@ -63,8 +63,6 @@ export default function OfferDesignPapierFirmowyPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
         overlay="black"
@@ -292,7 +290,7 @@ export default function OfferDesignPapierFirmowyPage() {
             },
           ]}
         />
-        
+
         <Gap variant="line" />
 
         <ContactForm
@@ -301,7 +299,7 @@ export default function OfferDesignPapierFirmowyPage() {
           defaultSubject="Projekt papieru firmowego"
         />
 
-                <Gap variant="line" />
+        <Gap variant="line" />
 
         <SectionSteps
           title="Jak jeszcze możesz wzmocnić wizerunek w korespondencji?"

@@ -79,8 +79,6 @@ export default function OfferWebPage() {
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
-        buttonSecond="Nasze realizacje"
-        buttonSecondLink="/realizacje"
         variant="left"
         backgroundImage="/assets/projects/arteon-baners-trilllizo.webp"
         overlay="black"
