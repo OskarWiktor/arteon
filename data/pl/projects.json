@@ -89,7 +89,7 @@
 
     {
       "slug": "strona-internetowa-dla-camper-albania",
-      "title": "Strona internetowa dla Camper Albania - wynajem kamperów w Albanii",
+      "title": "Strona internetowa z wynajmem kamperów w Albanii | Arteon",
       "short": "Redesign i optymalizacja strony internetowej dla wypożyczalni kamperów Camper Albania - lepszy kontrast, czytelniejszy układ i wydajność 95/100",
       "description": "<p>Projekt dla wypożyczalni kamperów na terenie Albanii <strong>Camper Albania</strong>. Celem projektu było odświeżenie wyglądu strony, poprawa czytelności oraz optymalizacja prędkości ładowania. Efekt: ulepszony, kontrastowy układ zgodny z założeniami <strong>WCAG 2.1 AA</strong> i skok wyniku wydajności mobilnej w Google PageSpeed Insights z ok. 65 do <strong>95 punktów</strong>.</p>",
       "image": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
@@ -142,8 +142,8 @@
         "overlay": "black"
       },
       "seo": {
-        "title": "Strona internetowa dla Camper Albania - wynajem kamperów w Albanii | Arteon",
-        "description": "Redesign i optymalizacja strony internetowej Camper Albania. Lepszy kontrast zgodny z WCAG 2.1, wyższa czytelność na mobile i wynik 95/100 w Google PageSpeed Insights.",
+        "title": "Strona internetowa z wynajmem kamperów w Albanii | Arteon",
+        "description": "Redesign i optymalizacja strony internetowej z wynajmem kamperów w Albanii - Camper Albania. Lepszy kontrast, czytelność  i optymalizacja",
         "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-camper-albania"
       }
     },

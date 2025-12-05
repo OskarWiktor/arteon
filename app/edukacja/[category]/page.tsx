@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: { category: string 
 
   return {
     title: `Edukacja: ${label} | Arteon`,
-    description: `Poradniki i wiedza: ${label}. Konkretne wskazówki i przykłady.`,
+    description: `Darmowe poradniki i wiedza z zakresu: ${label}. Konkretne wskazówki, przykłady z naszych realizacji i najlepsze praktyki.`,
     alternates: { canonical: url },
     openGraph: { title: `Edukacja: ${label}`, description: `Artykuły: ${label}.`, url, type: 'website' },
   };
@@ -57,7 +57,6 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
         <Gap size="sm" />
       </Wrapper>
 
-      {/* JSON-LD: CollectionPage */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

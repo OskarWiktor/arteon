@@ -26,12 +26,12 @@ import {
 } from 'react-icons/ri';
 
 export const metadata = {
-  title: 'Usługi - strony, sklepy, treści, projekty graficzne i marketing | Arteon',
-  description: 'Komplet usług wokół Twojej strony: projekt, realizacja, treści, projekty graficzne i marketing. Jasne pakiety i wsparcie po wdrożeniu.',
+  title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+  description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
   alternates: { canonical: '/uslugi' },
   openGraph: {
-    title: 'Usługi - strony, sklepy, treści, projekty graficzne i marketing | Arteon',
-    description: 'Komplet usług wokół Twojej strony: projekt, realizacja, treści, projekty graficzne i marketing. Jasne pakiety i wsparcie po wdrożeniu.',
+    title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+    description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
     url: 'https://www.arteonagency.pl/uslugi',
     type: 'website',
   },

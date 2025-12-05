@@ -22,20 +22,20 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
 export const metadata = {
-  title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
-  description: 'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
+  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
+  description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
   alternates: { canonical: `${BASE}/uslugi/marketing/audyt-seo` },
   openGraph: {
-    title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
-    description: 'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
+    title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
+    description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
     url: `${BASE}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
-    //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO — Arteon' }],
+    //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {
   //  card: 'summary_large_image',
-  //  title: 'Audyt SEO — plan pozycjonowania Twojej witryny | Arteon',
+  //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   //  description:
   //    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
   //  images: [`${BASE}/assets/og/audyt-seo.webp`],
@@ -47,7 +47,7 @@ function ServiceSchema() {
     baseUrl: BASE,
     path: '/uslugi/marketing/audyt-seo',
     serviceName: 'Audyt SEO',
-    description: 'Audyt SEO dla stron i sklepów internetowych — analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
+    description: 'Audyt SEO dla stron i sklepów internetowych - analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -108,7 +108,7 @@ export default function OfferMarketingPage() {
         <SectionBasic
           variant="right"
           imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-analityki.webp"
-          imageAlt="Audyt SEO — analiza widoczności strony w Google Analytics"
+          imageAlt="Audyt SEO - analiza widoczności strony w Google Analytics"
           subtitle="Dla kogo"
           title="Kiedy audyt SEO ma największy sens i dla kogo jest?"
           description="Gdy strona nie wyświetla się tak wysoko jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Kompleksowy audyt SEO jest najlepszy dla:"
@@ -208,7 +208,7 @@ export default function OfferMarketingPage() {
         <SectionBasic
           variant="left"
           imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
-          imageAlt="Audyt SEO — analiza widoczności strony w Google Search Console"
+          imageAlt="Audyt SEO - analiza widoczności strony w Google Search Console"
           subtitle="Wyniki wdrożeń"
           title={<>Jakie efekty widzimy najczęściej po przeprowadzeniu audytu SEO i wdrożeniu pozycjonowania?</>}
           btnOne="Porozmawiajmy o audycie"
@@ -389,7 +389,7 @@ export default function OfferMarketingPage() {
 
       <CTABanner
         title="Poznaj prawdziwy stan SEO swojej strony"
-        description="Audyt, który kończy się planem działania — nie tylko diagnozą."
+        description="Audyt, który kończy się planem działania - nie tylko diagnozą."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg5.webp"

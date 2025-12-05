@@ -40,7 +40,7 @@ function ServiceSchema() {
     baseUrl: BASE,
     path: '/uslugi/tworzenie-tresci',
     serviceName: 'Tworzenie treści',
-    description: 'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy — pod intencje użytkownika i SEO.',
+    description: 'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy - pod intencje użytkownika i SEO.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });

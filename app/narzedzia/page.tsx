@@ -157,7 +157,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 – zgodne z wymaganiami przeglądarek i Lighthouse.
+                    Z jednego obrazu wygenerujesz <strong>favicon.ico</strong> oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-favicon-ico">

@@ -15,13 +15,13 @@ type ShapeAspect = '1:1' | '4:5' | '5:4' | '3:2' | '2:3' | '16:9' | '9:16';
 
 const IMAGE_PRESETS = {
   social: [
-    { key: 'ig-square', label: 'Instagram — post kwadrat (1080x1080)', width: 1080, height: 1080 },
-    { key: 'ig-portrait', label: 'Instagram — post pion (1080x1350)', width: 1080, height: 1350 },
-    { key: 'ig-story', label: 'Instagram — story / reels (1080x1920)', width: 1080, height: 1920 },
-    { key: 'fb-post', label: 'Facebook — post (1200x630)', width: 1200, height: 630 },
-    { key: 'fb-cover', label: 'Facebook — cover strony (820x360)', width: 820, height: 360 },
-    { key: 'li-post', label: 'LinkedIn — post (1200x1200)', width: 1200, height: 1200 },
-    { key: 'li-banner', label: 'LinkedIn — baner profilu (1584x396)', width: 1584, height: 396 },
+    { key: 'ig-square', label: 'Instagram - post kwadrat (1080x1080)', width: 1080, height: 1080 },
+    { key: 'ig-portrait', label: 'Instagram - post pion (1080x1350)', width: 1080, height: 1350 },
+    { key: 'ig-story', label: 'Instagram - story / reels (1080x1920)', width: 1080, height: 1920 },
+    { key: 'fb-post', label: 'Facebook - post (1200x630)', width: 1200, height: 630 },
+    { key: 'fb-cover', label: 'Facebook - cover strony (820x360)', width: 820, height: 360 },
+    { key: 'li-post', label: 'LinkedIn - post (1200x1200)', width: 1200, height: 1200 },
+    { key: 'li-banner', label: 'LinkedIn - baner profilu (1584x396)', width: 1584, height: 396 },
   ],
   web: [
     { key: 'thumb', label: 'Miniatura artykułu (800x600)', width: 800, height: 600 },

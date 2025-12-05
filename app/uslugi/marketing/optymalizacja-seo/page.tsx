@@ -20,12 +20,12 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
-  title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',
-  description: 'Wdrażamy poprawki po audycie: przyspieszamy stronę, porządkujemy treści i ułatwiamy Google ich zrozumienie. Testy przed i po, jasne raporty i stabilny wzrost.',
+  title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
+  description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
   alternates: { canonical: '/uslugi/marketing/optymalizacja-seo' },
   openGraph: {
-    title: 'Optymalizacja SEO — szybsza strona i lepsza widoczność w Google | Arteon',
-    description: 'Wdrażamy poprawki po audycie: przyspieszamy stronę, porządkujemy treści i ułatwiamy Google ich zrozumienie. Testy przed i po, jasne raporty i stabilny wzrost.',
+    title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
+    description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
     url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
     type: 'website',
   },
@@ -99,7 +99,7 @@ export default function OfferOptimizationSEO() {
         <SectionBasic
           variant="right"
           imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-zblizenie-na-raport.webp"
-          imageAlt="Optymalizacja SEO — wyniki raportu"
+          imageAlt="Optymalizacja SEO - wyniki raportu"
           subtitle="Dla kogo"
           title="Kiedy warto zrobić optymalizację SEO i dla kogo ona jest?"
           description="Gdy masz już diagnozę (audyt) i chcesz przejść do wdrożeń, które najszybciej poprawią wyniki Twojej strony. Optymalizacja SEO jest najlepsza dla:"
@@ -196,7 +196,7 @@ export default function OfferOptimizationSEO() {
         <SectionBasic
           variant="left"
           imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.webp"
-          imageAlt="Optymalizacji SEO — ekran edycji strony"
+          imageAlt="Optymalizacji SEO - ekran edycji strony"
           subtitle="Wyniki wdrożeń"
           title={<>Jakie efekty widzimy najczęściej po optymalizacji SEO?</>}
           description="Poniżej kilka typowych rezultatów po 2-8 tygodniach od wdrożeń. Rzeczywiste wyniki zależą od branży i skali zmian."
@@ -367,7 +367,7 @@ export default function OfferOptimizationSEO() {
 
       <CTABanner
         title="Poprawmy Twoją widoczność w Google"
-        description="Szybsza strona, lepsze opisy i porządek w strukturze — wszystko, co potrzebne do wzrostu."
+        description="Szybsza strona, lepsze opisy i porządek w strukturze - wszystko, co potrzebne do wzrostu."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg5.webp"

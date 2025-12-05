@@ -22,13 +22,13 @@ import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt odzieży firmowej | Arteon',
-  description: 'Projekt nadruków i haftów na odzież firmową – spójny wygląd zespołu i lepsza rozpoznawalność marki.',
+  description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
   alternates: {
     canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
   },
   openGraph: {
     title: 'Projekt odzieży firmowej | Arteon',
-    description: 'Nadruki i hafty dopasowane do identyfikacji marki. Pliki przygotowane pod wybraną technikę.',
+    description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     type: 'website',
   },
@@ -60,7 +60,7 @@ export default function OfferDesignOdziezFirmowaPage() {
         title="Projekt odzieży firmowej"
         description={
           <>
-            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów – pod sitodruk, DTF i haft komputerowy – zgodnie z Twoją identyfikacją i realiami produkcji.
+            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z Twoją identyfikacją i realiami produkcji.
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -95,7 +95,7 @@ export default function OfferDesignOdziezFirmowaPage() {
         <SectionInfo title="Co zyskujesz zamawiając projekt odzieży firmowej?">
           <p>
             <strong>Spójny wygląd odzieży Twojego zespołu buduje zaufanie w kilka sekund.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i
-            wzmacnia wiarygodność – zarówno w siedzibie, jak i w terenie. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
+            wzmacnia wiarygodność - zarówno w siedzibie, jak i w terenie. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
           </p>
 
           <br />
@@ -105,7 +105,7 @@ export default function OfferDesignOdziezFirmowaPage() {
           </p>
           <ul className="ml-5 list-disc">
             <li>Ujednolica zespół i podnosi rozpoznawalność marki,</li>
-            <li>Ułatwia obsługę – klient szybciej trafia do właściwej osoby,</li>
+            <li>Ułatwia obsługę - klient szybciej trafia do właściwej osoby,</li>
             <li>Wzmacnia wizerunek i buduje autorytet Twojej firmy w oczach klientów i partnerów.</li>
           </ul>
         </SectionInfo>
@@ -128,7 +128,7 @@ export default function OfferDesignOdziezFirmowaPage() {
             },
             {
               title: 'Dopasowanie do wybranej technologii',
-              description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków – sitodruk, haft, DTF.</>,
+              description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków - sitodruk, haft, DTF.</>,
               icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -144,7 +144,7 @@ export default function OfferDesignOdziezFirmowaPage() {
         <SectionInfo title="Dla kogo projekt odzieży firmowej ma największy sens?" subtitle="Dla kogo">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Dla firm usługowych i serwisów w terenie</strong> – ekipy montażowe, serwisowe, budowlane, które codziennie pracują u klientów.
+              <strong>Dla firm usługowych i serwisów w terenie</strong> - ekipy montażowe, serwisowe, budowlane, które codziennie pracują u klientów.
             </li>
             <li>
               <strong>Dla salonów, kawiarni, restauracji i punktów sprzedaży,</strong> gdzie kontakt z klientem opiera się na bezpośredniej obsłudze.
@@ -203,7 +203,7 @@ export default function OfferDesignOdziezFirmowaPage() {
             {
               name: 'Pakiet Pro - system odzieży dla marki',
               price: 'wycena indywidualna',
-              description: 'Dla marek, które chcą kompleksowego systemu – od ubioru zespołu po odzież na eventy i sprzedaż merchu.',
+              description: 'Dla marek, które chcą kompleksowego systemu - od ubioru zespołu po odzież na eventy i sprzedaż merchu.',
               features: [
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Rozszerzenie o odzież eventową lub sprzedażową (np. merch dla klientów)',
@@ -239,7 +239,7 @@ export default function OfferDesignOdziezFirmowaPage() {
             },
             {
               question: 'Jak długo trwa projekt odzieży firmowej?',
-              answer: 'Standardowy czas realizacji to zwykle 5–10 dni roboczych, w zależności od liczby wersji, zakresu materiałów i terminu produkcji odzieży.',
+              answer: 'Standardowy czas realizacji to zwykle 5-10 dni roboczych, w zależności od liczby wersji, zakresu materiałów i terminu produkcji odzieży.',
             },
             {
               question: 'W jakich formatach otrzymam projekty?',
@@ -247,7 +247,7 @@ export default function OfferDesignOdziezFirmowaPage() {
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak – w projekcie przewidujemy rundy poprawek. Doprecyzowujemy kolory, umiejscowienie, skalę i szczegóły, aż otrzymasz finalną wersję zgodną z Twoją wizją.',
+              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Doprecyzowujemy kolory, umiejscowienie, skalę i szczegóły, aż otrzymasz finalną wersję zgodną z Twoją wizją.',
             },
             {
               question: 'Jaką technikę druku wybrać?',
@@ -255,16 +255,16 @@ export default function OfferDesignOdziezFirmowaPage() {
             },
             {
               question: 'Czy projekt będzie prawidłowo skalowalny?',
-              answer: 'Tak – projekt tworzymy w oparciu o grafikę wektorową i testujemy go na różnych rozmiarach, aby był czytelny i estetyczny zarówno na mniejszych, jak i większych elementach.',
+              answer: 'Tak - projekt tworzymy w oparciu o grafikę wektorową i testujemy go na różnych rozmiarach, aby był czytelny i estetyczny zarówno na mniejszych, jak i większych elementach.',
             },
             {
               question: 'Czy projekt odzieży jest gotowy do produkcji?',
               answer:
-                'Tak – przygotowujemy pliki zoptymalizowane pod wybraną technikę: separacje kolorów, odpowiednie formaty oraz uwagi dla producenta, tak aby można je było od razu przekazać do realizacji.',
+                'Tak - przygotowujemy pliki zoptymalizowane pod wybraną technikę: separacje kolorów, odpowiednie formaty oraz uwagi dla producenta, tak aby można je było od razu przekazać do realizacji.',
             },
             {
               question: 'Czy mogę zamówić ekspresowy projekt odzieży firmowej?',
-              answer: 'Tak – oferujemy opcję przyspieszonej realizacji. Przed rozpoczęciem projektu ustalamy możliwy termin oraz dodatkowy koszt, tak aby wszystko było jasne i przewidywalne.',
+              answer: 'Tak - oferujemy opcję przyspieszonej realizacji. Przed rozpoczęciem projektu ustalamy możliwy termin oraz dodatkowy koszt, tak aby wszystko było jasne i przewidywalne.',
             },
           ]}
         />
@@ -282,7 +282,7 @@ export default function OfferDesignOdziezFirmowaPage() {
         <SectionSteps
           title="Jak jeszcze możesz wzmocnić wizerunek swojej marki?"
           subtitle="Zobacz też"
-          description="Odzież firmowa działa najlepiej, gdy jest częścią spójnego systemu materiałów – od wizytówek po teczki i papier firmowy."
+          description="Odzież firmowa działa najlepiej, gdy jest częścią spójnego systemu materiałów - od wizytówek po teczki i papier firmowy."
           items={[
             {
               icon: <RiTShirt2Line className="h-8 w-8" />,

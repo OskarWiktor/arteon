@@ -6,7 +6,7 @@ import Wrapper from '@/components/ui/Wrapper';
 
 export const metadata = {
   title: 'Polityka prywatności | Arteon',
-  description: 'Polityka prywatności serwisu Arteon - dowiedz się, jak chronimy Twoje dane osobowe.',
+  description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
   alternates: { canonical: '/polityka-prywatnosci' },
 };
 

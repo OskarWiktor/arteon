@@ -89,7 +89,7 @@ function analyzeDescription(text: string): FieldAnalysis {
     return { chars, words, pixels, status, statusLabel, helperText };
   }
 
-  const isTooShort = chars < 70 || pixels < 430;
+  const isTooShort = chars < 100 || pixels < 430;
   const isTooLong = chars > 165 || pixels > 920;
 
   if (isTooShort) {

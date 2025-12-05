@@ -23,14 +23,14 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
 export const metadata = {
-  title: 'Optymalizacja strony WordPress — wynik 90+/100 lub brak opłaty | Arteon',
+  title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
   description:
     'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed lub brakiem opłaty. Szybsze ładowanie, uporządkowane wtyczki, lepsza wersja mobilna i stabilne fundamenty pod SEO.',
   alternates: {
     canonical: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
   },
   openGraph: {
-    title: 'Optymalizacja strony WordPress — wynik 90+/100 lub brak opłaty | Arteon',
+    title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
     description:
       'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed lub brakiem opłaty. Szybsze ładowanie, uporządkowane wtyczki, lepsza wersja mobilna i stabilne fundamenty pod SEO.',
     url: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
@@ -116,7 +116,7 @@ export default function OfferOptimizationWordPressPage() {
         <SectionBasic
           variant="right"
           imageSrc="/assets/offer/optymalizacja-wordpress/optymalizacja-wordpress-raport.webp"
-          imageAlt="Optymalizacja strony WordPress — ekran z raportem szybkości"
+          imageAlt="Optymalizacja strony WordPress - ekran z raportem szybkości"
           subtitle="Dla kogo"
           title="Kiedy optymalizacja WordPress ma największy sens?"
           description="Największe korzyści pojawiają się wtedy, gdy strona już działa, ale jej szybkość lub stabilność ogranicza rozwój. Z takiej usługi najczęściej korzystają:"
@@ -248,13 +248,13 @@ export default function OfferOptimizationWordPressPage() {
         <SectionBasic
           variant="left"
           imageSrc="/assets/offer/optymalizacja-wordpress/optymalizacja-wordpress-mobile.webp"
-          imageAlt="Optymalizacja WordPress — widok strony na telefonie"
+          imageAlt="Optymalizacja WordPress - widok strony na telefonie"
           subtitle="Typowe rezultaty"
           title="Jakie zmiany najczęściej widać po optymalizacji strony WordPress?"
           description="Zakres efektów zależy od punktu wyjścia i hostingu, ale w większości realizacji po optymalizacji widoczne są:"
         >
           <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
-            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">Wyraźnie szybsze ładowanie strony — szczególnie na urządzeniach mobilnych.</li>
+            <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">Wyraźnie szybsze ładowanie strony - szczególnie na urządzeniach mobilnych.</li>
             <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">Stabilniejsza praca WordPressa dzięki mniejszej liczbie konfliktów między wtyczkami i motywami.</li>
             <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">Czytelniejsza wersja mobilna i prostsza ścieżka do kontaktu, rezerwacji lub zakupu.</li>
           </ul>
@@ -295,7 +295,7 @@ export default function OfferOptimizationWordPressPage() {
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Większość realizacji mieści się w przedziale 450–850 zł netto. Ostateczna wycena zależy od wielkości strony, hostingu oraz stanu wyjściowego WordPressa. Przed rozpoczęciem prac przedstawiany jest jasny zakres działań, szacowany wynik oraz zasady rozliczenia przy braku możliwości osiągnięcia 90+/100."
+          legalNote="Większość realizacji mieści się w przedziale 450-850 zł netto. Ostateczna wycena zależy od wielkości strony, hostingu oraz stanu wyjściowego WordPressa. Przed rozpoczęciem prac przedstawiany jest jasny zakres działań, szacowany wynik oraz zasady rozliczenia przy braku możliwości osiągnięcia 90+/100."
         />
 
         <Gap variant="line" />
@@ -351,8 +351,8 @@ export default function OfferOptimizationWordPressPage() {
 
         <ContactForm
           title="Sprawdź swoją stronę WordPress za darmo"
-          description="Podaj adres strony WordPress i krótko opisz, co najbardziej przeszkadza w jej działaniu (szybkość, wersja mobilna, błędy). W odpowiedzi otrzymasz propozycję zakresu prac, widełki cenowe 450–850 zł netto oraz informację, czy przy Twoim hostingu i motywie możliwe jest osiągnięcie wyniku 90+/100."
-          defaultSubject="Kampania — optymalizacja strony WordPress"
+          description="Podaj adres strony WordPress i krótko opisz, co najbardziej przeszkadza w jej działaniu (szybkość, wersja mobilna, błędy). W odpowiedzi otrzymasz propozycję zakresu prac, widełki cenowe 450-850 zł netto oraz informację, czy przy Twoim hostingu i motywie możliwe jest osiągnięcie wyniku 90+/100."
+          defaultSubject="Kampania - optymalizacja strony WordPress"
         />
 
         <Gap variant="line" />

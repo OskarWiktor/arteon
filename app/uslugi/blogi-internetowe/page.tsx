@@ -36,11 +36,11 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
-  description: 'Blogi firmowe i eksperckie. Prosty CMS, czytelny układ i treści, które przyciągają klientów.',
+  description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
   alternates: { canonical: '/uslugi/blogi-internetowe' },
   openGraph: {
     title: 'Blogi internetowe - projekt i realizacja | Arteon',
-    description: 'Blogi firmowe i eksperckie. Prosty CMS, czytelny układ i treści, które przyciągają klientów.',
+    description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
     url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
     type: 'website',
   },

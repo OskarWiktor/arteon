@@ -17,12 +17,12 @@ import Script from 'next/script';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
-  title: 'Marketing internetowy — SEO, reklamy i komunikacja | Arteon',
+  title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
   description:
     'Strategia, wdrożenia i kampanie: audyt SEO, optymalizacja, pozycjonowanie, reklamy online, social media oraz branding i komunikacja. Przyciągamy właściwych klientów i pokazujemy wyniki.',
   alternates: { canonical: '/uslugi/marketing' },
   openGraph: {
-    title: 'Marketing internetowy — SEO, reklamy i komunikacja, które dowożą wynik | Arteon',
+    title: 'Marketing internetowy - SEO, reklamy i komunikacja, które dowożą wynik | Arteon',
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
@@ -40,7 +40,7 @@ function ItemListSchema() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     '@id': `${base}/uslugi/marketing#itemlist`,
-    name: 'Usługi marketingowe — Arteon',
+    name: 'Usługi marketingowe - Arteon',
     itemListOrder: 'http://schema.org/ItemListOrderAscending',
     itemListElement: services.map((s, i) => ({
       '@type': 'ListItem',

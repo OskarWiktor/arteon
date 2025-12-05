@@ -281,7 +281,7 @@ export default function DesktopNavigation() {
           {navigationItems.map(({ href, label, exact }) => {
             const isActivePage = exact ? pathname === href : pathname.startsWith(href);
 
-            // USŁUGI – link + strzałka
+            // USŁUGI - link + strzałka
             if (label === 'Usługi') {
               const isActive = pathname.startsWith('/uslugi');
               return (

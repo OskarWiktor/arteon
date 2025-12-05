@@ -20,11 +20,11 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
-  title: 'Pozycjonowanie stron — stały wzrost widoczności i zapytań | Arteon',
+  title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
   description: 'Długofalowe pozycjonowanie stron: plan treści, porządek na stronie i bezpieczne linki. Comiesięczny raport i jasne priorytety działań.',
   alternates: { canonical: '/uslugi/marketing/pozycjonowanie-stron' },
   openGraph: {
-    title: 'Pozycjonowanie stron — stały wzrost widoczności i zapytań | Arteon',
+    title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
     url: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
     type: 'website',
@@ -100,7 +100,7 @@ export default function OfferSeoSubscription() {
         <SectionBasic
           variant="right"
           imageSrc="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp"
-          imageAlt="Pozycjonowanie stron — plan treści i rozwój widoczności"
+          imageAlt="Pozycjonowanie stron - plan treści i rozwój widoczności"
           subtitle="Dla kogo"
           title={<>Kiedy pozycjonowanie strony ma największy sens?</>}
           description="Gdy chcesz stałego dopływu zapytań z Google i przewagi nad konkurencją. Pozycjonowanie stron jest najlepsze dla:"
@@ -159,7 +159,7 @@ export default function OfferSeoSubscription() {
               <strong>Ruch z Google:</strong> liczba wejść na stronę z wyników wyszukiwania.
             </li>
             <li>
-              <strong>Zapytania:</strong> formularze, telefony i wiadomości — ile realnie zgłasza się klientów.
+              <strong>Zapytania:</strong> formularze, telefony i wiadomości - ile realnie zgłasza się klientów.
             </li>
           </ul>
         </SectionInfo>
@@ -294,7 +294,7 @@ export default function OfferSeoSubscription() {
               title: 'Audyt SEO (diagnostyka)',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli jeszcze nie robiliśmy audytu — zaczniemy od diagnozy i listy priorytetów.</p>
+                  <p className="mb-3 text-sm">Jeśli jeszcze nie robiliśmy audytu - zaczniemy od diagnozy i listy priorytetów.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/audyt-seo">
                       Zobacz audyt SEO
@@ -368,7 +368,7 @@ export default function OfferSeoSubscription() {
 
       <CTABanner
         title="Zbudujmy Twoją widoczność"
-        description="Strategia treści, porządek na stronie i bezpieczne linki — zestaw, który zwiększa liczbę zapytań."
+        description="Strategia treści, porządek na stronie i bezpieczne linki - zestaw, który zwiększa liczbę zapytań."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         backgroundImage="/assets/bg/abstract-bg6.webp"

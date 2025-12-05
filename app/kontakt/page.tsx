@@ -10,11 +10,11 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.p
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu | Arteon',
-  description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania.',
+  description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
   alternates: { canonical: `${BASE_URL}/kontakt` },
   openGraph: {
     title: 'Kontakt - wycena Twojego planu | Arteon',
-    description: 'Napisz, czego potrzebujesz. Przygotujemy darmową wycenę i jasny plan działania.',
+    description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
     url: `${BASE_URL}/kontakt`,
     siteName: 'Arteon',
     type: 'website',

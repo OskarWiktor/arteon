@@ -86,7 +86,7 @@ async function convertToWebpSmart(item: FileItem, initialQuality: number, minQua
     lastBlob = blob;
     usedQuality = q;
 
-    // jeśli plik jest mniejszy lub równy oryginałowi – przyjmujemy tę jakość
+    // jeśli plik jest mniejszy lub równy oryginałowi - przyjmujemy tę jakość
     if (blob.size <= originalSize || q === minQuality) {
       break;
     }
@@ -153,7 +153,7 @@ export default function JpgPngToWebp() {
         });
 
       if (!newItems.length && !prev.length) {
-        setGlobalError('Dodaj pliki JPG lub PNG – inne formaty są pomijane.');
+        setGlobalError('Dodaj pliki JPG lub PNG - inne formaty są pomijane.');
       }
 
       return [...prev, ...newItems];
@@ -583,7 +583,7 @@ export default function JpgPngToWebp() {
                                 {')'}
                               </>
                             )}
-                            {isBigger && <span className="ml-1 text-[11px] text-amber-700">(większy niż oryginał – spróbuj niższej jakości)</span>}
+                            {isBigger && <span className="ml-1 text-[11px] text-amber-700">(większy niż oryginał - spróbuj niższej jakości)</span>}
                           </>
                         )}
                       </p>
