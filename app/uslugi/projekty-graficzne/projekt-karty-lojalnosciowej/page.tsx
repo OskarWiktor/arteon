@@ -18,8 +18,6 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt karty lojalnościowej | Arteon',
@@ -282,7 +280,7 @@ export default function OfferDesignKartaPage() {
           description="Opisz, w jakiej branży działasz, jak chcesz nagradzać swoich klientów oraz ile różnych kart potrzebujesz. Na tej podstawie przygotujemy propozycję układu, wycenę i termin realizacji."
           defaultSubject="Projekt karty lojalnościowej"
         />
-
+        {/* 
         <Gap variant="line" />
 
         <SectionSteps
@@ -320,7 +318,7 @@ export default function OfferDesignKartaPage() {
             },
           ]}
           grid="two"
-        />
+        /> */}
 
         <Gap variant="line" />
 

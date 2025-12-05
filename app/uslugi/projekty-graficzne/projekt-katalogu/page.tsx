@@ -17,8 +17,6 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: 'Projekt katalogu | Arteon',
@@ -293,7 +291,7 @@ export default function OfferDesignKatalogPage() {
           description="Podaj planowaną liczbę stron, rodzaj produktów lub usług, które chcesz pokazać, oraz czy masz już zdjęcia i teksty. Na tej podstawie przygotujemy wycenę, propozycję układu i harmonogram składu."
           defaultSubject="Projekt katalogu"
         />
-
+        {/* 
         <Gap variant="line" />
 
         <SectionSteps
@@ -331,7 +329,7 @@ export default function OfferDesignKatalogPage() {
             },
           ]}
           grid="two"
-        />
+        /> */}
 
         <Gap variant="line" />
 

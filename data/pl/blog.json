@@ -149,6 +149,7 @@
         {
           "type": "image",
           "src": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google-2.webp",
+          "alt": "laptop i zeszyt jako narzędzia pracy przy pisaniu treści pod SEO",
           "ratio": "16/9",
           "quality": 90,
           "breakAfter": false
@@ -182,6 +183,7 @@
           "type": "image",
           "src": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google-3.webp",
           "ratio": "16/9",
+          "alt": "laptop i zeszyt jako narzędzia pracy przy pisaniu treści na stronę internetową",
           "quality": 90,
           "breakAfter": false
         },
@@ -214,6 +216,7 @@
           "type": "image",
           "src": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google-4.webp",
           "ratio": "16/9",
+          "alt": "Przygotowywanie treści w pliku word",
           "quality": 90,
           "breakAfter": false
         },
@@ -284,7 +287,7 @@
         "btnOne": "Zamów wycenę",
         "btnOneLink": "/kontakt",
         "btnTwo": "Zobacz ofertę",
-        "btnTwoLink": "/uslugi/marketing/tworzenie-tresci-seo",
+        "btnTwoLink": "/uslugi/tworzenie-tresci",
         "backgroundImage": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google.webp",
         "overlay": "black"
       },

@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
 
 export const metadata = {
-  title: 'O nas | Arteon',
+  title: 'O nas - sprawdź naszą misję i cele | Arteon',
   description: 'Kim jesteśmy, jak pracujemy i dlaczego klienci nam ufają. Poznaj proces, standardy jakości, narzędzia oraz historie projektów Arteon.',
   alternates: { canonical: '/o-nas' },
 };

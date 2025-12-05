@@ -1,16 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/Button';
-import {
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type FormEvent,
-  type PointerEvent as ReactPointerEvent,
-  type DragEvent as ReactDragEvent,
-  type ReactNode,
-} from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type DragEvent as ReactDragEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
 
@@ -82,14 +73,7 @@ function formatBytes(bytes: number): string {
   return `${value.toFixed(value > 10 ? 1 : 2)} ${units[i]}`;
 }
 
-function getCropRect(
-  ow: number,
-  oh: number,
-  targetAspect: number,
-  cropX: number,
-  cropY: number,
-  zoom: number,
-) {
+function getCropRect(ow: number, oh: number, targetAspect: number, cropX: number, cropY: number, zoom: number) {
   const originalAspect = ow / oh;
   let baseW: number;
   let baseH: number;
@@ -155,9 +139,7 @@ function ToolButton({ id, activeTool, onClick, icon, label }: ToolButtonProps) {
     <button
       type="button"
       onClick={() => onClick(id)}
-      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${
-        isActive ? 'bg-slate-600 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'
-      }`}
+      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-600 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
     >
       {icon}
       <span>{label}</span>
@@ -173,13 +155,7 @@ interface PillButtonProps<T extends string> {
   disabled?: boolean;
 }
 
-function PillButton<T extends string>({
-  value,
-  current,
-  label,
-  onChange,
-  disabled,
-}: PillButtonProps<T>) {
+function PillButton<T extends string>({ value, current, label, onChange, disabled }: PillButtonProps<T>) {
   const isActive = value === current;
 
   return (
@@ -206,15 +182,7 @@ interface NumberFieldProps {
   widthClass?: string;
 }
 
-function NumberField({
-  label,
-  suffix,
-  value,
-  min,
-  max,
-  onChange,
-  widthClass = 'w-20!',
-}: NumberFieldProps) {
+function NumberField({ label, suffix, value, min, max, onChange, widthClass = 'w-20!' }: NumberFieldProps) {
   return (
     <div>
       <div className="flex items-center justify-between">
@@ -326,13 +294,7 @@ export default function ImageResizeTool() {
     return null;
   }, [dims, state.originalWidth, state.originalHeight]);
 
-  const aspectRatioText = useMemo(
-    () =>
-      state.originalWidth && state.originalHeight
-        ? (state.originalWidth / state.originalHeight).toFixed(2)
-        : null,
-    [state.originalWidth, state.originalHeight],
-  );
+  const aspectRatioText = useMemo(() => (state.originalWidth && state.originalHeight ? (state.originalWidth / state.originalHeight).toFixed(2) : null), [state.originalWidth, state.originalHeight]);
 
   const inputFormat = useMemo(() => {
     if (!state.file) return null;
@@ -360,29 +322,14 @@ export default function ImageResizeTool() {
       return null;
     }
     const targetAspect = effectiveDims.width / effectiveDims.height;
-    const rect = getCropRect(
-      state.originalWidth,
-      state.originalHeight,
-      targetAspect,
-      state.cropX,
-      state.cropY,
-      state.cropZoom,
-    );
+    const rect = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
     return {
       left: `${(rect.x / state.originalWidth) * 100}%`,
       top: `${(rect.y / state.originalHeight) * 100}%`,
       width: `${(rect.cropW / state.originalWidth) * 100}%`,
       height: `${(rect.cropH / state.originalHeight) * 100}%`,
     };
-  }, [
-    cropEnabled,
-    effectiveDims,
-    state.originalHeight,
-    state.originalWidth,
-    state.cropX,
-    state.cropY,
-    state.cropZoom,
-  ]);
+  }, [cropEnabled, effectiveDims, state.originalHeight, state.originalWidth, state.cropX, state.cropY, state.cropZoom]);
 
   const gridStroke = getGridStroke(state.gridColor);
   const presetList = IMAGE_PRESETS[state.selectedCategory];
@@ -568,14 +515,7 @@ export default function ImageResizeTool() {
       }
 
       const targetAspect = dims.width / dims.height;
-      const crop = getCropRect(
-        state.originalWidth,
-        state.originalHeight,
-        targetAspect,
-        state.cropX,
-        state.cropY,
-        state.cropZoom,
-      );
+      const crop = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
 
       const W = dims.width;
       const H = dims.height;
@@ -653,10 +593,7 @@ export default function ImageResizeTool() {
     setActiveTool('position');
   };
 
-  const startResizeDrag = (
-    e: ReactPointerEvent<HTMLDivElement>,
-    corner: 'tl' | 'tr' | 'bl' | 'br',
-  ) => {
+  const startResizeDrag = (e: ReactPointerEvent<HTMLDivElement>, corner: 'tl' | 'tr' | 'bl' | 'br') => {
     if (!state.imageUrl || !previewRef.current || !state.originalWidth || !state.originalHeight) {
       return;
     }
@@ -665,14 +602,7 @@ export default function ImageResizeTool() {
     const { originalWidth, originalHeight } = state;
     const targetAspect = effectiveDims.width / effectiveDims.height;
 
-    const cropRect = getCropRect(
-      originalWidth,
-      originalHeight,
-      targetAspect,
-      state.cropX,
-      state.cropY,
-      state.cropZoom,
-    );
+    const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
 
     let anchorX = cropRect.x;
     let anchorY = cropRect.y;
@@ -728,14 +658,7 @@ export default function ImageResizeTool() {
       if (!effectiveDims) return;
       const targetAspect = effectiveDims.width / effectiveDims.height;
 
-      const cropRect = getCropRect(
-        originalWidth,
-        originalHeight,
-        targetAspect,
-        dragRef.current.startCropX,
-        dragRef.current.startCropY,
-        state.cropZoom,
-      );
+      const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, dragRef.current.startCropX, dragRef.current.startCropY, state.cropZoom);
 
       const rangeX = Math.max(originalWidth - cropRect.cropW, 1);
       const rangeY = Math.max(originalHeight - cropRect.cropH, 1);
@@ -803,7 +726,7 @@ export default function ImageResizeTool() {
         h = minSize / aspect;
       }
 
-      let maxH = signY > 0 ? oh - anchorY: anchorY;
+      let maxH = signY > 0 ? oh - anchorY : anchorY;
       let maxW = signX > 0 ? ow - anchorX : anchorX;
       maxW = Math.max(maxW, minSize);
       maxH = Math.max(maxH, minSize);
@@ -900,9 +823,7 @@ export default function ImageResizeTool() {
             >
               <span className="mb-1 text-sm! font-medium">Przeciągnij i upuść zdjęcie tutaj</span>
               <span className="mb-2 text-xs! text-[#5e5e5e]">lub kliknij, aby wybrać plik z dysku</span>
-              <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">
-                Obsługiwane: JPG, PNG, WebP
-              </span>
+              <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">Obsługiwane: JPG, PNG, WebP</span>
               <input
                 type="file"
                 accept="image/*"
@@ -954,14 +875,7 @@ export default function ImageResizeTool() {
                   Format wyjściowy: <strong>{state.outputFormat.toUpperCase()}</strong>
                 </p>
                 <p className="text-xs!">
-                  Kształt:{' '}
-                  <strong>
-                    {state.shape === 'rect'
-                      ? 'Prostokąt'
-                      : state.shape === 'square'
-                      ? 'Kwadrat'
-                      : 'Koło'}
-                  </strong>
+                  Kształt: <strong>{state.shape === 'rect' ? 'Prostokąt' : state.shape === 'square' ? 'Kwadrat' : 'Koło'}</strong>
                 </p>
                 {state.file && (
                   <p className="text-xs!">
@@ -1016,20 +930,12 @@ export default function ImageResizeTool() {
                   }
                   className="w-full! p-0!"
                 />
-                <p className="text-xs! text-[#5e5e5e]">
-                  Niższa jakość = mniejszy plik. Dla sociali często 70-85% to dobry kompromis.
-                </p>
+                <p className="text-xs! text-[#5e5e5e]">Niższa jakość = mniejszy plik. Dla sociali często 70-85% to dobry kompromis.</p>
               </div>
             )}
 
             <div className="mt-5 flex flex-wrap gap-3">
-              <Button
-                variant="accent"
-                size="small"
-                type="submit"
-                disabled={isProcessing || !state.file}
-                className="disabled:opacity-60"
-              >
+              <Button variant="accent" size="small" type="submit" disabled={isProcessing || !state.file} className="disabled:opacity-60">
                 {isProcessing ? 'Przetwarzanie…' : 'Zmień rozmiar i pobierz'}
               </Button>
             </div>
@@ -1056,24 +962,13 @@ export default function ImageResizeTool() {
           )}
         </div>
 
-        {!state.imageUrl && (
-          <p className="text-xs! text-[#5e5e5e]">
-            Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.
-          </p>
-        )}
+        {!state.imageUrl && <p className="text-xs! text-[#5e5e5e]">Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.</p>}
 
         {state.imageUrl && cropEnabled && (
           <>
             <div className="flex flex-wrap gap-2">
               {TOOLBAR_ITEMS.map((item) => (
-                <ToolButton
-                  key={item.id}
-                  id={item.id}
-                  icon={item.icon}
-                  label={item.label}
-                  activeTool={activeTool}
-                  onClick={setActiveTool}
-                />
+                <ToolButton key={item.id} id={item.id} icon={item.icon} label={item.label} activeTool={activeTool} onClick={setActiveTool} />
               ))}
             </div>
 
@@ -1088,12 +983,7 @@ export default function ImageResizeTool() {
                         min={1}
                         className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
                         value={state.targetWidth ?? ''}
-                        onChange={(e) =>
-                          handleDimensionChange(
-                            'width',
-                            e.target.value ? Number(e.target.value) : null,
-                          )
-                        }
+                        onChange={(e) => handleDimensionChange('width', e.target.value ? Number(e.target.value) : null)}
                       />
                     </div>
                     <div>
@@ -1103,12 +993,7 @@ export default function ImageResizeTool() {
                         min={1}
                         className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
                         value={state.targetHeight ?? ''}
-                        onChange={(e) =>
-                          handleDimensionChange(
-                            'height',
-                            e.target.value ? Number(e.target.value) : null,
-                          )
-                        }
+                        onChange={(e) => handleDimensionChange('height', e.target.value ? Number(e.target.value) : null)}
                       />
                     </div>
                   </div>
@@ -1173,13 +1058,7 @@ export default function ImageResizeTool() {
                 <div className="space-y-3">
                   <div className="flex flex-wrap gap-2">
                     {SHAPE_OPTIONS.map((opt) => (
-                      <PillButton
-                        key={opt.value}
-                        value={opt.value}
-                        current={state.shape}
-                        label={opt.label}
-                        onChange={(val) => handleShapeChange(val as ShapeType)}
-                      />
+                      <PillButton key={opt.value} value={opt.value} current={state.shape} label={opt.label} onChange={(val) => handleShapeChange(val as ShapeType)} />
                     ))}
                   </div>
 
@@ -1188,13 +1067,7 @@ export default function ImageResizeTool() {
                       <p className="text-xs! text-[#5e5e5e]">Proporcje prostokąta</p>
                       <div className="flex flex-wrap gap-2">
                         {RECT_ASPECTS.map((aspect) => (
-                          <PillButton
-                            key={aspect}
-                            value={aspect}
-                            current={state.shapeAspect}
-                            label={aspect}
-                            onChange={(val) => handleShapeAspectChange(val as ShapeAspect)}
-                          />
+                          <PillButton key={aspect} value={aspect} current={state.shapeAspect} label={aspect} onChange={(val) => handleShapeAspectChange(val as ShapeAspect)} />
                         ))}
                       </div>
                     </div>
@@ -1305,10 +1178,7 @@ export default function ImageResizeTool() {
                         current={state.gridColor}
                         label={
                           <span className="flex items-center gap-2">
-                            <span
-                              className="h-4 w-4 rounded-full"
-                              style={{ backgroundColor: getGridStroke(opt.value) }}
-                            />
+                            <span className="h-4 w-4 rounded-full" style={{ backgroundColor: getGridStroke(opt.value) }} />
                             {opt.label}
                           </span>
                         }
@@ -1335,19 +1205,10 @@ export default function ImageResizeTool() {
                 )}
               </div>
 
-              <div
-                ref={previewRef}
-                className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-600"
-                style={{ paddingBottom: `${previewPadding}%` }}
-              >
+              <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-600" style={{ paddingBottom: `${previewPadding}%` }}>
                 <div className="absolute inset-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={state.imageUrl!}
-                    alt={state.file?.name || 'Podgląd'}
-                    className="h-full w-full object-contain"
-                    draggable={false}
-                  />
+                  <img src={state.imageUrl!} alt={state.file?.name || 'Podgląd'} className="h-full w-full object-contain" draggable={false} />
 
                   {cropRectPreview && (
                     <div
@@ -1355,18 +1216,12 @@ export default function ImageResizeTool() {
                       onPointerMove={handlePointerMove}
                       onPointerUp={handlePointerUp}
                       onPointerLeave={handlePointerLeave}
-                      className={`absolute box-border ${
-                        isDragging ? 'cursor-grabbing' : 'cursor-grab'
-                      }`}
+                      className={`absolute box-border ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
                       style={{ ...cropRectPreview }}
                     >
                       <div className="pointer-events-none absolute inset-0">
-                        <div
-                          className={`absolute inset-0 shadow-[0_0_0_9999px_rgba(0,0,0,0.55)] ${selectionShapeClass}`}
-                        />
-                        <div
-                          className={`absolute inset-0 grid grid-cols-3 grid-rows-3 overflow-hidden ${selectionShapeClass}`}
-                        >
+                        <div className={`absolute inset-0 shadow-[0_0_0_9999px_rgba(0,0,0,0.55)] ${selectionShapeClass}`} />
+                        <div className={`absolute inset-0 grid grid-cols-3 grid-rows-3 overflow-hidden ${selectionShapeClass}`}>
                           {Array.from({ length: 9 }).map((_, i) => (
                             <div key={i} className="border" style={{ borderColor: gridStroke }} />
                           ))}
@@ -1399,9 +1254,8 @@ export default function ImageResizeTool() {
               </div>
 
               <p className="mt-2 text-xs! text-[#5e5e5e]">
-                Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie
-                miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu
-                koła plik będzie miał przezroczyste tło poza kształtem (PNG / WebP).
+                Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu koła plik będzie
+                miał przezroczyste tło poza kształtem (PNG / WebP).
               </p>
             </div>
           </>

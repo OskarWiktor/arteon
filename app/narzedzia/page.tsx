@@ -7,12 +7,12 @@ import Wrapper from '@/components/ui/Wrapper';
 import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine } from 'react-icons/ri';
 
 export const metadata = {
-  title: 'Darmowe narzędzia online dla właścicieli stron i firm',
+  title: 'Darmowe narzędzia online dla stron i firm online',
   description:
-    'Darmowe narzędzia online dla właścicieli stron i marek. Konwertery obrazów, favicon, licznik meta tagów, tester kontrastu i generator palet kolorów, które pomagają przyspieszyć stronę, poprawić SEO i uporządkować identyfikację wizualną.',
+    'Darmowe narzędzia online dla stron i firm online. Konwertery obrazów, favicon, licznik meta tagów, tester kontrastu i generator palet kolorów, które pomagają przyspieszyć stronę, poprawić SEO i uporządkować identyfikację wizualną.',
   alternates: { canonical: '/narzedzia' },
   openGraph: {
-    title: 'Darmowe narzędzia online dla właścicieli stron i firm',
+    title: 'Darmowe narzędzia online dla stron i firm online',
     description:
       'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG oraz generator palet kolorów z jednego HEX-a.',
     url: 'https://www.arteonagency.pl/narzedzia',
@@ -28,7 +28,7 @@ export const metadata = {
 const toolsJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Darmowe narzędzia online dla właścicieli stron i firm',
+  name: 'Darmowe narzędzia online dla stron i firm online',
   description:
     'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG oraz generator palet kolorów z jednego koloru bazowego.',
   itemListElement: [
@@ -107,7 +107,7 @@ export default function ToolsIndexPage() {
   return (
     <>
       <HeroBanner
-        title="Darmowe narzędzia dla właścicieli stron i marek online"
+        title="Darmowe narzędzia dla stron i marek online"
         description="W jednym miejscu znajdziesz praktyczne, w pełni darmowe narzędzia do pracy nad stroną: od obrazów, przez favicon i meta tagi, po kontrast i palety kolorów. Bez logowania, bez abonamentu, bez limitów."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
@@ -116,7 +116,6 @@ export default function ToolsIndexPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        {/* OBRAZY I FAVICONY */}
         <SectionSteps
           title="Obrazy i favicony"
           description="Narzędzia do przygotowania zdjęć, grafik i ikon pod strony WWW oraz social media."

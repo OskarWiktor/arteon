@@ -118,7 +118,6 @@ const infoPages: NavItem[] = [
   { title: 'Kontakt', href: '/kontakt' },
   { title: 'Polityka prywatności', href: '/polityka-prywatnosci' },
   { title: 'Regulamin świadczenia usług', href: '/regulamin' },
-  { title: 'Ustawienia cookies', href: '/ustawienia-cookies' },
   { title: 'Mapa strony', href: '/mapa-strony' },
 ];
 
