@@ -21,7 +21,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroBanner title="O nas" description="Arteon - Elastyczny partner dla Twojej firmy" backgroundImage="/assets/bg/abstract-bg8.webp" overlay="black" variant="center" />
+      <HeroBanner title="O nas" description="Arteon - Elastyczny partner dla Twojej firmy" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
       <BenefitBelt
         items={[
           { icon: <RiMegaphoneLine />, label: 'Doświadczenie w pracy dla marek globalnych' },
@@ -112,7 +112,7 @@ export default function AboutPage() {
         btnOneLink="/kontakt"
         btnTwo="Poznaj ofertę"
         btnTwoLink="/uslugi"
-        backgroundImage="/assets/bg/abstract-bg8.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

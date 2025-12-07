@@ -19,10 +19,10 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
   description:
-    'Strategia, wdrożenia i kampanie: audyt SEO, optymalizacja, pozycjonowanie, reklamy online, social media oraz branding i komunikacja. Przyciągamy właściwych klientów i pokazujemy wyniki.',
+    'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
   alternates: { canonical: '/uslugi/marketing' },
   openGraph: {
-    title: 'Marketing internetowy - SEO, reklamy i komunikacja, które dowożą wynik | Arteon',
+    title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',

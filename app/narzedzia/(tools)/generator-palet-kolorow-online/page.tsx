@@ -10,12 +10,12 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 export const metadata: Metadata = {
   title: 'Generator palet kolorów online - system barw z jednego koloru',
   description:
-    'Wpisz jeden kolor HEX i w kilka sekund wygeneruj kompletne palety kolorów: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, akcentów UI, pastelową, ciemną i neutralną. Gotowe HEX i HSL do brandingu, UI i stron WWW - za darmo, bez logowania.',
+    'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
   alternates: { canonical: '/narzedzia/generator-palet-kolorow-online' },
   openGraph: {
     title: 'Generator palet kolorów online - system barw z jednego koloru',
     description:
-      'Podaj jeden kolor bazowy, a narzędzie wygeneruje kompletne palety: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, akcentów UI, pastelową, ciemną i neutralną. Skopiuj HEX i HSL i od razu użyj w brandingu, UI i projektach WWW.',
+      'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
     url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
     type: 'website',
     images: [
@@ -35,7 +35,7 @@ const schema = {
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description:
-    'Darmowy generator palet kolorów online. Na podstawie jednego koloru bazowego tworzy palety: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, system akcentów UI, paletę pastelową, ciemną i neutralną. Idealne narzędzie dla projektantów stron, marek i interfejsów.',
+    'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

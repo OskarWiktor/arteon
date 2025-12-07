@@ -9,12 +9,12 @@ import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, Ri
 export const metadata = {
   title: 'Darmowe narzędzia online dla stron i firm online',
   description:
-    'Darmowe narzędzia online dla stron i firm online. Konwertery obrazów, favicon, licznik meta tagów, tester kontrastu i generator palet kolorów, które pomagają przyspieszyć stronę, poprawić SEO i uporządkować identyfikację wizualną.',
+    'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
   alternates: { canonical: '/narzedzia' },
   openGraph: {
     title: 'Darmowe narzędzia online dla stron i firm online',
     description:
-      'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG oraz generator palet kolorów z jednego HEX-a.',
+      'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
     url: 'https://www.arteonagency.pl/narzedzia',
     type: 'website',
     images: [
