@@ -8,13 +8,11 @@ import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, Ri
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla stron i firm online',
-  description:
-    'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
+  description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
   alternates: { canonical: '/narzedzia' },
   openGraph: {
     title: 'Darmowe narzędzia online dla stron i firm online',
-    description:
-      'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
+    description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
     url: 'https://www.arteonagency.pl/narzedzia',
     type: 'website',
     images: [

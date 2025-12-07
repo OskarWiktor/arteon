@@ -3,32 +3,38 @@ import Script from 'next/script';
 import { Suspense } from 'react';
 
 import './globals.css';
+
 import Navigation from '@/components/shared/Navigation';
 import Footer from '@/components/shared/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
 
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import RevealObserver from '@/components/systems/RevealObserver';
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-const GA_MEASUREMENT_ID = GA_ID || 'G-89KYXWSGYS';
+const SITE_URL = process.env.SITE_URL!;
+const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
+const METRICOOL_HASH = process.env.METRICOOL_HASH;
 
-const SITE_URL = 'https://www.arteonagency.pl';
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
 
 export const metadata: Metadata = {
-  icons: { icon: '/favicon.ico', shortcut: '/favicon.ico', apple: '/apple-touch-icon.png' },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     type: 'website',
     siteName: 'Arteon',
     url: SITE_URL,
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: `${SITE_URL}/assets/arteon-logo-on-mockup.webp`,
         width: 1200,
         height: 630,
         alt: 'Logo Arteon na plakacie',
@@ -44,7 +50,6 @@ const orgJsonLd = {
   name: 'Arteon',
   url: SITE_URL,
   logo: ORG_LOGO,
-  // sameAs: ['https://…/linkedin', 'https://…/instagram'], // dodasz, gdy będą
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -54,7 +59,10 @@ const orgJsonLd = {
       availableLanguage: ['pl'],
     },
   ],
-  address: { '@type': 'PostalAddress', addressCountry: 'PL' },
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'PL',
+  },
   areaServed: 'Worldwide',
   knowsLanguage: ['pl'],
 };
@@ -67,56 +75,55 @@ const websiteJsonLd = {
   inLanguage: 'pl',
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
       <head>
-        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
-        <Script id="ga-init">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}'); // automatyczny pierwszy page_view
-          `}
-        </Script>
+        {GA_MEASUREMENT_ID && (
+          <>
+            <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
+            <Script id="ga-init">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}');
+              `}
+            </Script>
 
-        <Script id="arteon-globals" strategy="beforeInteractive">
-          {`
-            window.__GA_ID = ${GA_ID ? JSON.stringify(GA_ID) : 'undefined'};
-            window.ArteonConsent = { open: () => document.dispatchEvent(new CustomEvent('arteon:open-consent')) };
-          `}
-        </Script>
+            <Script id="ga-consent-default" strategy="beforeInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('consent','default',{
+                  analytics_storage:'denied',
+                  ad_user_data:'denied',
+                  ad_personalization:'denied',
+                  ad_storage:'denied'
+                });
+              `}
+            </Script>
+          </>
+        )}
 
-        <Script id="ga-consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('consent','default',{
-              analytics_storage:'denied',
-              ad_user_data:'denied',
-              ad_personalization:'denied',
-              ad_storage:'denied'
-            });
-          `}
-        </Script>
-
-        <Script id="metricool-tracker" strategy="afterInteractive">
-          {`
-            function loadScript(a){
-              var b=document.getElementsByTagName("head")[0],
-                  c=document.createElement("script");
-              c.type="text/javascript";
-              c.src="https://tracker.metricool.com/resources/be.js";
-              c.onreadystatechange = a;
-              c.onload = a;
-              b.appendChild(c);
-            }
-            loadScript(function(){
-              beTracker.t({ hash: "325c4af683a815d876aba0c5aeb86c8b" });
-            });
-          `}
-        </Script>
+        {METRICOOL_HASH && (
+          <Script id="metricool-tracker" strategy="afterInteractive">
+            {`
+              function loadScript(callback){
+                var head=document.getElementsByTagName("head")[0];
+                var script=document.createElement("script");
+                script.type="text/javascript";
+                script.src="https://tracker.metricool.com/resources/be.js";
+                script.onreadystatechange=callback;
+                script.onload=callback;
+                head.appendChild(script);
+              }
+              loadScript(function(){
+                beTracker.t({ hash: ${JSON.stringify(METRICOOL_HASH)} });
+              });
+            `}
+          </Script>
+        )}
 
         <Script id="schema-org-organization" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(orgJsonLd)}
@@ -135,12 +142,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <FocusManager />
           <RouteAnnouncer />
         </Suspense>
+
         <RevealObserver />
 
         <Navigation />
+
         <main id="main-content" tabIndex={-1}>
           {children}
         </main>
+
         <Footer />
 
         <Analytics />

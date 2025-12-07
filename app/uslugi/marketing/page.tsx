@@ -18,8 +18,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 export const metadata = {
   title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
-  description:
-    'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
+  description: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
   alternates: { canonical: '/uslugi/marketing' },
   openGraph: {
     title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',

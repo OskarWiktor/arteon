@@ -167,11 +167,34 @@ function formatMultiline(value: string): string {
   return escapeHtml(value).replace(/\n/g, '<br />');
 }
 
-function normalizeUrl(url: string): string {
+function sanitizeHrefUrl(url: string): string {
   const trimmed = url.trim();
   if (!trimmed) return '';
+
+  const lowered = trimmed.toLowerCase();
+  const forbiddenProtocols = ['javascript:', 'data:', 'vbscript:', 'file:'];
+
+  if (forbiddenProtocols.some((proto) => lowered.startsWith(proto))) {
+    return '';
+  }
+
   if (/^https?:\/\//i.test(trimmed)) return trimmed;
+
   return `https://${trimmed}`;
+}
+
+function sanitizeSrcUrl(url: string): string {
+  const trimmed = url.trim();
+  if (!trimmed) return '';
+
+  const lowered = trimmed.toLowerCase();
+  const forbiddenProtocols = ['javascript:', 'vbscript:', 'file:'];
+
+  if (forbiddenProtocols.some((proto) => lowered.startsWith(proto))) {
+    return '';
+  }
+
+  return trimmed;
 }
 
 function formatPhone(phone: string): string {
@@ -197,10 +220,11 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
   const hasJobTitle = config.jobTitle.trim().length > 0;
   const hasNameTag = config.nameTag.trim().length > 0;
   const hasFormalLine = config.formalLine.trim().length > 0;
-  const hasAvatar = config.avatarUrl.trim().length > 0;
+  const sanitizedAvatarUrl = sanitizeSrcUrl(config.avatarUrl);
+  const hasAvatar = sanitizedAvatarUrl.length > 0;
 
   const avatarSize = 56;
-  const avatarImg = hasAvatar ? `<img src="${escapeHtml(config.avatarUrl.trim())}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" />` : '';
+  const avatarImg = hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" />` : '';
   const avatarCellInline = hasAvatar ? `<td style="padding-right:12px;vertical-align:top;">${avatarImg}</td>` : '';
 
   const telLabel = 'Tel.';
@@ -226,12 +250,14 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     );
   }
   if (config.website.trim()) {
-    const normalized = normalizeUrl(config.website);
-    contactItems.push(
-      `<span style="white-space:nowrap;"><span style="font-weight:bold;">${webLabel}:</span> <a href="${escapeHtml(
-        normalized,
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></span>`,
-    );
+    const normalized = sanitizeHrefUrl(config.website);
+    if (normalized) {
+      contactItems.push(
+        `<span style="white-space:nowrap;"><span style="font-weight:bold;">${webLabel}:</span> <a href="${escapeHtml(
+          normalized,
+        )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></span>`,
+      );
+    }
   }
 
   const socials: { key: SocialKey; label: string }[] = [
@@ -246,17 +272,23 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
   const socialLinks = socials
     .filter((s) => config.socials[s.key] && config.socials[s.key]?.trim().length)
     .map((s) => {
-      const url = normalizeUrl(config.socials[s.key]);
+      const url = sanitizeHrefUrl(config.socials[s.key]);
+      if (!url) return '';
       return `<a href="${escapeHtml(url)}" style="display:inline-block;margin-right:10px;margin-bottom:2px;color:${accentColor};text-decoration:none;font-size:${baseFontSize};">${s.label}</a>`;
-    });
+    })
+    .filter(Boolean);
 
   const ctaHtml =
     config.ctaLabel.trim() && config.ctaUrl.trim()
-      ? `<tr><td style="padding-top:10px;"><a href="${escapeHtml(
-          normalizeUrl(config.ctaUrl),
-        )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:#ffffff;text-decoration:none;font-size:${baseFontSize};">${escapeHtml(
-          config.ctaLabel.trim(),
-        )}</a></td></tr>`
+      ? (() => {
+          const ctaUrl = sanitizeHrefUrl(config.ctaUrl);
+          if (!ctaUrl) return '';
+          return `<tr><td style="padding-top:10px;"><a href="${escapeHtml(
+            ctaUrl,
+          )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:#ffffff;text-decoration:none;font-size:${baseFontSize};">${escapeHtml(
+            config.ctaLabel.trim(),
+          )}</a></td></tr>`;
+        })()
       : '';
 
   const legalHtml = config.legalNote.trim() ? `<tr><td style="padding-top:12px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.legalNote.trim())}</td></tr>` : '';
@@ -269,9 +301,9 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     ? `<tr><td style="padding:0 0 4px 0;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};">${escapeHtml(config.topLine.trim())}</td></tr>`
     : '';
 
-  const nameRowHtml = `<tr><td style="padding:0 0 4px 0;"><span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(
-    config.fullName || '',
-  )}</span>${hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid #e5e7eb;font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''}</td></tr>`;
+  const nameRowHtml = `<tr><td style="padding:0 0 4px 0;"><span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(config.fullName || '')}</span>${
+    hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid #e5e7eb;font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''
+  }</td></tr>`;
 
   const titleCompanyHtml =
     hasJobTitle || hasCompany
@@ -289,14 +321,11 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
   const socialsHtml = socialLinks.length ? `<tr><td style="padding-top:8px;color:${textColor};">${socialLinks.join('')}</td></tr>` : '';
 
   const headerBlock = `${topLineHtml}${nameRowHtml}${titleCompanyHtml}`;
-
   const contentBlock = `${extraLineHtml}${addressHtml}${contactHtml}${socialsHtml}${ctaHtml}${dividerHtml}${formalHtml}${legalHtml}`;
-
   const innerRows = `${headerBlock}${contentBlock}`;
 
   let layoutWrapper = '';
 
-  // STANDARD
   if (layout === 'standard') {
     layoutWrapper = `
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
@@ -316,9 +345,7 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         </tr>
       </table>
     `;
-  }
-  // ACCENT-BAR
-  else if (layout === 'accent-bar') {
+  } else if (layout === 'accent-bar') {
     layoutWrapper = `
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
         <tr>
@@ -337,19 +364,19 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         </tr>
       </table>
     `;
-  }
-  // TOP-BANNER
-  else if (layout === 'top-banner') {
+  } else if (layout === 'top-banner') {
     const bannerTopLine = hasTopLine ? `<div style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;opacity:0.9;">${escapeHtml(config.topLine.trim())}</div>` : '';
     const bannerName = `<div style="font-size:15px;font-weight:bold;margin-top:2px;">${escapeHtml(config.fullName || '')}</div>`;
     const bannerTitleCompany =
       hasJobTitle || hasCompany
-        ? `<div style="font-size:${baseFontSize};opacity:0.95;margin-top:2px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${
-            hasJobTitle && hasCompany ? ' · ' : ''
-          }${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>`
+        ? `<div style="font-size:${baseFontSize};opacity:0.95;margin-top:2px;">${
+            hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''
+          }${hasJobTitle && hasCompany ? ' · ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>`
         : '';
     const bannerAvatar = hasAvatar
-      ? `<td style="text-align:right;vertical-align:middle;"><img src="${escapeHtml(config.avatarUrl.trim())}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;border:2px solid #ffffff;display:inline-block;" /></td>`
+      ? `<td style="text-align:right;vertical-align:middle;"><img src="${escapeHtml(
+          sanitizedAvatarUrl,
+        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;border:2px solid #ffffff;display:inline-block;" /></td>`
       : '';
 
     layoutWrapper = `
@@ -389,9 +416,7 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         </tr>
       </table>
     `;
-  }
-  // LABEL-COLUMN
-  else if (layout === 'label-column') {
+  } else if (layout === 'label-column') {
     let labelRows = '';
 
     if (config.phone.trim()) {
@@ -407,10 +432,12 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
       )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(email)}</a></td></tr>`;
     }
     if (config.website.trim()) {
-      const normalized = normalizeUrl(config.website);
-      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${webLabel}:</td><td style="padding:2px 0 2px 0;"><a href="${escapeHtml(
-        normalized,
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></td></tr>`;
+      const normalized = sanitizeHrefUrl(config.website);
+      if (normalized) {
+        labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${webLabel}:</td><td style="padding:2px 0 2px 0;"><a href="${escapeHtml(
+          normalized,
+        )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></td></tr>`;
+      }
     }
     if (hasAddress) {
       labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">Adres:</td><td style="padding:2px 0 2px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(
@@ -447,12 +474,10 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
         </tr>
       </table>
     `;
-  }
-  // CENTERED
-  else if (layout === 'centered') {
+  } else if (layout === 'centered') {
     const avatarRowCentered = hasAvatar
       ? `<tr><td style="padding:0 0 8px 0;text-align:center;"><img src="${escapeHtml(
-          config.avatarUrl.trim(),
+          sanitizedAvatarUrl,
         )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:inline-block;" /></td></tr>`
       : '';
 
@@ -470,7 +495,6 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
     `;
   }
 
-  // lekkie "minifikowanie" HTML, żeby był krótszy dla Gmaila
   return layoutWrapper.replace(/\s{2,}/g, ' ').trim();
 }
 
@@ -613,7 +637,6 @@ export default function EmailSignatureGenerator() {
       </section>
 
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
-        {/* LEWA STRONA - EDYTOR */}
         <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div className="mb-2 flex items-center justify-between gap-2">
             <h2 className="h6">Edytor stopki HTML</h2>
@@ -1034,7 +1057,6 @@ export default function EmailSignatureGenerator() {
           </div>
         </section>
 
-        {/* PRAWA STRONA - PODGLĄD + KOPIOWANIE */}
         <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div className="flex items-center justify-between gap-2">
             <div>

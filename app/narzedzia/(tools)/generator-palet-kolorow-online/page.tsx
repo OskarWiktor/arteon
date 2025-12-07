@@ -9,13 +9,11 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 
 export const metadata: Metadata = {
   title: 'Generator palet kolorów online - system barw z jednego koloru',
-  description:
-    'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
+  description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
   alternates: { canonical: '/narzedzia/generator-palet-kolorow-online' },
   openGraph: {
     title: 'Generator palet kolorów online - system barw z jednego koloru',
-    description:
-      'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
+    description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
     url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
     type: 'website',
     images: [
@@ -34,8 +32,7 @@ const schema = {
   url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
-  description:
-    'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
+  description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {
