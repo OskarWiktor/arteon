@@ -64,7 +64,7 @@ export default function OfferDesignMenuPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
         overlay="black"
       />
 
@@ -353,7 +353,7 @@ export default function OfferDesignMenuPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
         overlay="black"
       />
 
