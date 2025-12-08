@@ -343,11 +343,11 @@ export default function OfferDesignXxxPage() {
       </Wrapper>
 
       <CTABanner
-        title="Daj stronie przewagę na starcie"
-        description="Stworzymy layout, który prowadzi wzrokiem, porządkuje treść i zwiększa szansę na kontakt z Twoją firmą."
+        title="Zbuduj stronę, która wyróżni Cie od konkurencji"
+        description="Stworzymy profesjonalny i przejrzysty układ strony, który wzmocni wizerunek Twojej marki online"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"

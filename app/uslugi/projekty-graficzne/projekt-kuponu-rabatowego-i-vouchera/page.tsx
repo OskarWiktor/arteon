@@ -322,11 +322,11 @@ export default function OfferDesignVoucheryPage() {
       </Wrapper>
 
       <CTABanner
-        title="Zwiększ profesjonalny wizerunek przez estetyczne kupony"
+        title="Wzmocnij sprzedaż swoich usług"
         description="Zaprojektujemy vouchery i kupony, które zachęcą klientów do powrotu i poleceń."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
         overlay="black"

@@ -347,11 +347,11 @@ export default function OfferDesignUlotkaPage() {
       </Wrapper>
 
       <CTABanner
-        title="Zamień uwagę w działanie"
-        description="Zaprojektujemy ulotkę, która przyciąga wzrok i prowadzi prosto do kontaktu."
+        title="Wypromuj swoją ofertę"
+        description="Zaprojektujemy ulotkę, która przyciąga wzrok i prowadzi prosto do kontaktu i sprzedaży."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp"
         overlay="black"

@@ -329,10 +329,10 @@ export default function OfferDesignSzablonyPostowPage() {
 
       <CTABanner
         title="Stwórz spójną komunikację w mediach społecznościowych"
-        description="Dostarczymy szablony, dzięki którym publikacje będą szybsze, prostsze i bardziej spójne z Twoją marką."
+        description="Dostarczymy szablony, dzięki którym publikacje będą szybsze, prostsze i bardziej spójne."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj inne usługi graficzne"
+        btnTwo="Poznaj inne inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
         overlay="black"

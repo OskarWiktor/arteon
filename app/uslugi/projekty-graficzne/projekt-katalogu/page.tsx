@@ -337,11 +337,11 @@ export default function OfferDesignKatalogPage() {
       </Wrapper>
 
       <CTABanner
-        title="Pokaż ofertę z klasą"
-        description="Zaprojektujemy katalog, który klarownie prowadzi do decyzji i wzmacnia wizerunek Twojej marki na spotkaniach, targach i w sprzedaży online."
+        title="Zaprezentuj swoją ofertę w eleganckiej formie"
+        description="Zaprojektujemy katalog, który ułatwi sprzedać i wzmocni wizerunek Twojej marki."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/gazetka-mockup.webp"
         overlay="black"

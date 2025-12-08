@@ -339,11 +339,11 @@ export default function OfferDesignPapierFirmowyPage() {
       </Wrapper>
 
       <CTABanner
-        title="Niech korespondencja pracuje na Twoją markę"
-        description="Stworzymy papier firmowy, który wygląda profesjonalnie i jest wygodny w codziennej pracy."
+        title="Profesjonalny wygląd dokumentów"
+        description="Stworzymy papier firmowy, który zwiększa zaufanie i profesjonalny wizerunek Twojej firmy."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
         overlay="black"

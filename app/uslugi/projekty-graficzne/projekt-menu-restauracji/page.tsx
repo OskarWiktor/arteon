@@ -347,7 +347,7 @@ export default function OfferDesignMenuPage() {
       </Wrapper>
 
       <CTABanner
-        title="Zaprojektuj menu, które zapamiętają Twoi klienci"
+        title="Zaprojektujmy menu, które zapamiętają Twoi klienci"
         description="Profesjonalny projekt menu restauracyjnego - estetyka, czytelność i emocje, które zwiększają sprzedaż."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"

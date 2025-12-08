@@ -359,11 +359,11 @@ export default function OfferDesignXxxPage() {
       </Wrapper>
 
       <CTABanner
-        title="Uspójnij obraz marki"
+        title="Zbuduj przewagę i wyróżnij się na tle konkurencji"
         description="Zbudujemy system, który wzmacnia rozpoznawalność, ułatwia codzienną pracę i zwiększa zaufanie do Twojej firmy."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"

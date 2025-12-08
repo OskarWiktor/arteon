@@ -324,8 +324,8 @@ export default function OfferDesignKartaPage() {
       </Wrapper>
 
       <CTABanner
-        title="Zwiększ lojalność klientów"
-        description="Zaprojektujemy karty, które sprawią, że klienci będą wracać częściej - z jasnymi zasadami programu i spójnym wizerunkiem Twojej marki."
+        title="Zwiększ lojalność swoich klientów"
+        description="Zaprojektujemy karty, które sprawią, że klienci będą wracać jeszcze częściej."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"

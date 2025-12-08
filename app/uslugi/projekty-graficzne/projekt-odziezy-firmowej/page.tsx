@@ -316,11 +316,11 @@ export default function OfferDesignOdziezFirmowaPage() {
       </Wrapper>
 
       <CTABanner
-        title="Ubierz zespół w tożsamość marki"
-        description="Zaprojektujemy nadruki i hafty, które wyróżniają Twoją firmę w terenie."
+        title="Promuj swoją markę w terenie"
+        description="Zaprojektujemy nadruki i hafty, które wyróżnią Twoją firmę i wzmocnią profesjonalny wizerunek."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/bg/abstract-bg15.webp"
         overlay="black"

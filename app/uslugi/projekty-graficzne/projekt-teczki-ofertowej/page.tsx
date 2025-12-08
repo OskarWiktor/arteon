@@ -341,10 +341,10 @@ export default function OfferDesignTeczkaOfertowaPage() {
 
       <CTABanner
         title="Dodaj klasę każdemu spotkaniu"
-        description="Przygotujemy teczkę, która porządkuje ofertę i podkreśla prestiż Twojej marki."
+        description="Przygotujemy teczkę, która podkreśla prestiż Twojej marki."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
         overlay="black"

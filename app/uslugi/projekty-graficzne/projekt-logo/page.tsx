@@ -371,7 +371,7 @@ export default function OfferDesignLogoPage() {
 
       <CTABanner
         title="Znak, który prowadzi markę"
-        description="Stworzymy logo, które porządkuje komunikację i zostaje w pamięci."
+        description="Stworzymy logo, które zostaje w pamięci i kreuje profesjonalny wizerunek."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"

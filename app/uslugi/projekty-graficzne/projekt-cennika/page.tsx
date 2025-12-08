@@ -318,11 +318,11 @@ export default function OfferDesignCennikPage() {
       </Wrapper>
 
       <CTABanner
-        title="Upiększ swoją ofertę"
-        description="Zaprojektujemy cennik, który wygląda profesjonalnie i ułatwia sprzedaż każdego dnia."
+        title="Wzmocnij swój wizerunek"
+        description="Zaprojektujemy przejrzysty i profesjonalny cennik, który wzmocni Twój profesjonalny wizerunek"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/cennik-mockup.webp"
         overlay="black"

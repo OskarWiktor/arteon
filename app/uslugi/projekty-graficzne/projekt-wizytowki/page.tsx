@@ -312,11 +312,11 @@ export default function OfferDesignWizytowkaPage() {
       </Wrapper>
 
       <CTABanner
-        title="Zrób mocne pierwsze wrażenie"
-        description="Stworzymy wizytówkę, która jasno komunikuje, czym się zajmujesz i buduje zaufanie od pierwszego spojrzenia."
+        title="Zachęć klientów do ponownego kontaktu"
+        description="Stworzymy wizytówkę, która wzmocni Twój wizerunek i ułatwi kontakt."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp"
         overlay="black"
