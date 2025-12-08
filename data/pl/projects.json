@@ -45,18 +45,18 @@
       ],
 
       "cta": {
-        "title": "Potrzebujesz vouchera lub kuponu promocyjnego dla swojej firmy?",
+        "title": "Potrzebujesz projektu ulotki lub foldera reklamowego dla swojej firmy?",
         "description": "Opisz nam czym się zajmujesz, przygotujemy projekt graficzny wraz z wersją do druku",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę voucherów i kuponów",
-        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
-        "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
+        "btnTwo": "Sprawdź ofertę ulotek",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-ulotki",
+        "backgroundImage": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
         "overlay": "black"
       },
       "seo": {
         "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
-        "description": "Elegancki bon walentynkowy dla gabinetu kosmetycznego. Gotowe pliki do druku. Sprawdź naszą realizację i samów własny projekt",
+        "description": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group. Sprawdź naszą realizację i zamów własny katalog, ulotkę lub folder reklamowy",
         "canonical": "https://www.arteonagency.pl/realizacje/folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group"
       }
     },
