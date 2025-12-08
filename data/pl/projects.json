@@ -1,5 +1,57 @@
 {
   "projects": [
+{
+  "slug": "plakat-sezonowy-dla-kawiarni-brewerynka",
+  "title": "Plakat sezonowy dla kawiarni Brewerynka",
+  "short": "Minimalistyczny plakat promocyjny dla kawiarni Brewerynka - część większej kampanii zimowej obejmującej materiały w lokalu i posty do mediów społecznościowych",
+  "description": "<p>Projekt <strong>plakatu sezonowego</strong> dla koncepcyjnej kawiarni <strong>Brewerynka Coffee Roasters</strong> - niewielkiej, rzemieślniczej palarni inspirowanej estetyką slow coffee i klimatem skandynawskich kawiarni. Celem było stworzenie <strong>plakatu</strong> dla limitowanej oferty grudniowej, który będzie spójnie funkcjonował zarówno w przestrzeni lokalu, jak i w komunikacji online.</p><br /><p>Plakat oparto na połączeniu stonowanych beży i chłodnego błękitu oraz na powtarzalnym motywie typograficznym. Centralnym elementem stała się minimalistyczna kompozycja produktowa - napój zimowy w szklance, z miękkim światłem i delikatną siatką błękitu i beżu w tle. Zabieg ten miał podkreślić charakter marki: rzemieślniczy, uporządkowany i świadomy wizualnie.</p><br /><p>Projekt stanowi <strong>pierwszy element rozwijanej kampanii</strong> - przygotowane zostaną również materiały w formatach do Instagrama i Facebooka, a całość będzie stopniowo rozbudowywana o kolejne plakaty sezonowe.</p><br /><p>Plakat został przygotowany w wysokiej rozdzielczości oraz umieszczony na <strong>mockupie witryny kawiarni</strong>, aby zilustrować sposób jego realnego wykorzystania w przestrzeni miejskiej.</p>",
+  "image": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
+  "category": ["grafika"],
+  "client": {
+    "name": "Brewerynka Coffee Roasters",
+    "sector": "Gastronomia"
+  },
+
+  "process_steps": [
+    "Stworzenie konceptu Brewerynka oraz określenie charakteru wizualnego marki.",
+    "Opracowanie koncepcji kampanii zimowej - motyw typograficzny, paleta kolorów i estetyka produktu.",
+    "Projekt formatu plakatowego z myślą o witrynach kawiarni oraz materiałach drukowanych.",
+    "Umieszczenie projektu na realistycznym mockupie witryny w celu prezentacji zastosowania."
+  ],
+
+  "contentBlocks": [
+    {
+      "type": "image",
+      "src": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
+      "alt": "Plakat sezonowy Brewerynka Coffee Roasters - mockup ekspozycji w witrynie kawiarni",
+      "ratio": "16/9"
+    },
+    {
+      "type": "image",
+      "src": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta.webp",
+      "alt": "Plakat sezonowy Brewerynka Coffee Roasters - projekt graficzny",
+      "ratio": "auto"
+    }
+  ],
+
+  "cta": {
+    "title": "Potrzebujesz plakatów promocyjnych lub kampanii sezonowej?",
+    "description": "Tworzymy spójne plakaty, grafiki do mediów społecznościowych i rozbudowane materiały promocyjne",
+    "btnOne": "Skontaktuj się",
+    "btnOneLink": "/kontakt",
+    "btnTwo": "Zobacz ofertę projektów graficznych",
+    "btnTwoLink": "/uslugi/projekty-graficzne",
+    "backgroundImage": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
+    "overlay": "black"
+  },
+
+  "seo": {
+    "title": "Plakat sezonowy dla kawiarni - Brewerynka | Arteon",
+    "description": "Projekt koncepcyjny plakatu promocyjnego dla rzemieślniczej kawiarni Brewerynka. Minimalistyczny key visual, estetyka calm geometry i makieta witryny kawiarni.",
+    "canonical": "https://www.arteonagency.pl/realizacje/plakat-sezonowy-dla-kawiarni-brewerynka"
+  }
+},
+  
     {
       "slug": "karta-koktajli-dla-baru-nocturna",
       "title": "Karta koktajli dla baru Nocturna",
