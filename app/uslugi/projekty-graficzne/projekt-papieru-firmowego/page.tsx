@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -138,6 +137,11 @@ export default function OfferDesignPapierFirmowyPage() {
               description: <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>,
               icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -178,6 +182,14 @@ export default function OfferDesignPapierFirmowyPage() {
             </li>
           </ul>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 
@@ -233,19 +245,15 @@ export default function OfferDesignPapierFirmowyPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt papieru firmowego"
+          description="Napisz, czym zajmuje się Twoja firma oraz co powinno znajdować się na Twoim papierze firmowym. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt papieru firmowego"
+        />
 
         <Gap variant="line" />
 
@@ -257,11 +265,11 @@ export default function OfferDesignPapierFirmowyPage() {
             {
               question: 'Ile kosztuje projekt papieru firmowego?',
               answer:
-                'Cena zależy od liczby wariantów (np. osobny wzór dla różnych działów), zakresu szablonów elektronicznych i ewentualnych wersji językowych. Po krótkim briefie przygotujemy wycenę dopasowaną do Twoich potrzeb.',
+                'Cena zależy od liczby wariantów (np. osobny wzór dla różnych działów), zakresu szablonów elektronicznych i ewentualnych wersji językowych. Po krótkim zapoznaniu z Twoimi potrzebami przygotujemy wycenę dopasowaną do Twoich potrzeb.',
             },
             {
               question: 'Jak długo trwa wykonanie projektu papieru firmowego?',
-              answer: 'Standardowo projekt zajmuje około 3-7 dni roboczych przy typowym zakresie. Większe projekty z wieloma wersjami mogą wymagać więcej czasu - termin ustalamy indywidualnie.',
+              answer: 'Standardowo projekt zajmuje około od 2 do 4 dni roboczych. Przy projektach z wieloma wersjami termin ustalamy indywidualnie.',
             },
             {
               question: 'W jakich formatach dostanę projekt papieru firmowego?',
@@ -269,34 +277,17 @@ export default function OfferDesignPapierFirmowyPage() {
             },
             {
               question: 'Czy mogę zgłosić poprawki?',
-              answer: 'Tak. W projekcie przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, hierarchię informacji i detale wizualne, aż efekt będzie spójny z wizerunkiem Twojej marki.',
+              answer: 'Tak, w każdym projekcie przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, hierarchię informacji i detale wizualne, aż efekt będzie spójny z wizerunkiem Twojej marki.',
             },
             {
               question: 'Czy papier firmowy będzie prawidłowo przygotowany do druku?',
-              answer:
-                'Tak. Pliki przygotowujemy z zachowaniem spadów, marginesów bezpieczeństwa i odpowiednich ustawień kolorów. Materiały są gotowe do przekazania do drukarni bez dodatkowego składu.',
-            },
-            {
-              question: 'Czy można używać papieru firmowego cyfrowo?',
-              answer: 'Tak. Oprócz wersji do druku przygotowujemy wersje elektroniczne (PDF), które możesz dołączać do wiadomości e-mail lub systemów elektronicznego obiegu dokumentów.',
-            },
-            {
-              question: 'Czy projekt może obejmować koperty firmowe?',
-              answer: 'Tak. Jeśli wskażesz koperty w briefie, przygotujemy również ich projekt. Dzięki temu cały zestaw korespondencyjny pozostanie spójny wizualnie.',
+              answer: 'Tak, pliki przygotowujemy z zachowaniem spadów, marginesów bezpieczeństwa i odpowiednich ustawień kolorów. Materiały są gotowe do przekazania do drukarni.',
             },
             {
               question: 'Czy mogę zamówić ekspresowy projekt papieru firmowego?',
-              answer: 'Tak. Oferujemy opcję realizacji w trybie przyspieszonym. Przed startem ustalamy możliwy termin oraz dodatkowy koszt, aby wszystko było transparentne.',
+              answer: 'Tak, oferujemy opcję realizacji w trybie przyspieszonym za dodatkową opłatą. Przed startem ustalamy możliwy termin oraz dodatkowy koszt.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt papieru firmowego"
-          description="Napisz, czym zajmuje się Twoja firma, jakie typy dokumentów przygotowujesz najczęściej (oferty, umowy, pisma) oraz czy potrzebujesz tylko wersji do druku, czy także szablonów Word/PDF. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
-          defaultSubject="Projekt papieru firmowego"
         />
 
         <Gap variant="line" />
@@ -311,7 +302,9 @@ export default function OfferDesignPapierFirmowyPage() {
               title: 'Projekt wizytówki firmowej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu widzi spójny system - od dokumentu po dane kontaktowe.</p>
+                  <p className="mb-3 text-sm">
+                    Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu zauważy spójność co wzbudzi większe zaufanie i stworzy jeszcze bardziej profesjonalny wizerunek.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Zobacz projekt wizytówki

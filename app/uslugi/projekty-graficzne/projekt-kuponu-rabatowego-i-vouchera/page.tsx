@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -13,7 +12,7 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiTicket2Line, RiGiftLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiTicket2Line, RiGiftLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -107,7 +106,7 @@ export default function OfferDesignVoucheryPage() {
           <br />
 
           <p>
-            <strong>Odpowiednio zaprojektowane kupony robią trzy rzeczy naraz:</strong>
+            <strong>Odpowiednio zaprojektowane kupony i vouchery robią trzy rzeczy naraz:</strong>
           </p>
           <ul className="ml-5 list-disc">
             <li>Zwiększają szansę na powrót klienta,</li>
@@ -129,7 +128,7 @@ export default function OfferDesignVoucheryPage() {
             },
             {
               title: 'Wersje do druku i online',
-              description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych, mailingu lub sklepu internetowegoza.</>,
+              description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych, mailingu lub sklepu internetowego.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -142,6 +141,11 @@ export default function OfferDesignVoucheryPage() {
               description: <>Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z zachowaniem jednego spójnego stylu.</>,
               icon: <RiGiftLine className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -151,9 +155,6 @@ export default function OfferDesignVoucheryPage() {
           <ul className="ml-5 list-disc space-y-2">
             <li>
               <strong>Dla salonów beauty, fryzjerów, SPA,</strong> które chcą zachęcić klientów do kolejnej wizyty lub podarowaniu kuponu bliskim.
-            </li>
-            <li>
-              <strong>Dla gabinetów i specjalistów,</strong> którzy chcą elegancko zaprezentować usługi w formie bonu prezentowego.
             </li>
             <li>
               <strong>Dla sklepów stacjonarnych i online,</strong> które chcą wręczać bony i kupony rabatowe na zakupy.
@@ -195,53 +196,62 @@ export default function OfferDesignVoucheryPage() {
 
         <SectionPrices
           title="Kupony rabatowe i vouchery - przykładowe pakiety"
-          subtitle="Zakres dopasowany do Twojej oferty"
+          subtitle="Zakres dobieramy do Twojej oferty, branży i indywidualnych potrzeb"
           plans={[
             {
-              name: 'Pakiet Start - pojedynczy voucher',
-              price: 'wycena indywidualna',
-              description: 'Dla firm, które potrzebują jednego, dopracowanego wzoru kuponu lub vouchera na konkretną usługę.',
-              features: ['Krótkie konsultacje i brief online', 'Jeden wzór vouchera lub kuponu', 'Dopasowanie do istniejącej identyfikacji', 'Pliki do druku i wersja cyfrowa (PNG/JPG)'],
-              btnOne: 'Zamów wycenę pakietu Start',
+              name: 'Kupon rabatowy / voucher dwustronicowy',
+              price: '250 zł',
+              description: 'Dla firm, które potrzebują jednego, prostego vouchera na konkretną usługę.',
+              features: [
+                'Projekt vouchera lub kuponu spójny z wizerunkiem marki',
+                '2 kierunki wyglądu i jedna runda korekt po pierwszej prezentacji',
+                'Pliki do druku i wersja cyfrowa (PNG/JPG)',
+                'Realizacja w 3-4 dni',
+              ],
+              btnOne: 'Zamów kupon dwustronicowy',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Pakiet Standard - seria voucherów',
-              price: 'wycena indywidualna',
-              description: 'Dla firm, które chcą mieć kilka spójnych wariantów: różne wartości, okazje lub rodzaje usług.',
+              name: 'Kupon rabatowy / voucher otwierany - 4-stronicowy',
+              price: '350 zł',
+              description: 'Dla firm, które potrzebują kuponu rabatowego na bardziej rozbudowaną usługę',
               features: [
-                'Wszystko z pakietu Start, a dodatkowo:',
-                'Kilka wariantów kuponów / voucherów w jednej linii stylistycznej',
-                'Możliwość różnicowania wartości lub usług',
-                'Wersje do social mediów i mailingu',
+                'Projekt rozkładanego vouchera lub kuponu spójny z wizerunkiem marki',
+                '2 kierunki wyglądu i jedna runda korekt po pierwszej prezentacji',
+                'Pliki do druku i wersja cyfrowa (PNG/JPG)',
+                'Realizacja w 4-5 dni',
               ],
-              btnOne: 'Zamów wycenę pakietu Standard',
+              btnOne: 'Zamów kupon 4-stronicowy',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Pakiet Pro - system lojalnościowy',
+              name: 'Pakiet kuponów / voucherów',
               price: 'wycena indywidualna',
-              description: 'Dla marek, które chcą spójnego systemu: karty stałego klienta, kuponu i materiałów wspierających.',
+              description: 'Dla marek, które chcą spójnych kuponów na różne okazje np. świeta, urodziny czy walentynki',
               features: [
-                'Wszystko z pakietu Standard, a dodatkowo:',
-                'Projekt karty stałego klienta lub programu lojalnościowego',
-                'Spójny zestaw materiałów (voucher, kupon, karta, mini-plakat)',
-                'Rekomendacje, jak komunikować promocje i zasady programu',
+                'Kilka wariantów kuponów / voucherów w jednej linii stylistycznej na różne okazje',
+                '3 kierunki wyglądu i dwie rundy poprawek po pierwszej prezentacji',
+                'Pliki do druku i wersja cyfrowa (PNG/JPG)',
+                'Realizacja w 6-10 dni',
               ],
-              btnOne: 'Porozmawiajmy o pakiecie Pro',
+              btnOne: 'Zamów pakiet kuponów',
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Ostateczna wycena zależy m.in. od liczby wariantów, formatów i tego, czy projekt ma być elementem szerszego systemu materiałów. Po krótkim briefie przygotujemy dopasowaną, klarowną propozycję."
+          legalNote="Podane kwoty są kwotami końcowymi, podanymi na fakturze. Ostateczna wycena zależy m.in. od liczby wariantów, formatu i indywidualnych potrzeb."
         />
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów projekt voucherów lub kuponów"
+          description="Opisz, czym się zajmujesz i co chcesz przedstawić na swoim kuponie. Przygotujemy propozycję realizacji, wycenę i termin."
+          defaultSubject="Projekt kuponów i voucherów"
+        />
 
         <Gap variant="line" />
 
@@ -251,30 +261,18 @@ export default function OfferDesignVoucheryPage() {
           title="Najczęstsze pytania dotyczące kuponów i voucherów"
           items={[
             {
-              question: 'W jakich formatach przygotowujecie kupony?',
-              answer: 'Najczęściej projektujemy formaty takie jak DL lub A6, ale możemy dopasować wymiary do Twoich indywidualnych potrzeb i wymagań drukarni.',
-            },
-            {
-              question: 'Czy mogę zamówić kupon w wersji cyfrowej?',
-              answer: 'Tak - przygotowujemy wersje do mailingu, social mediów oraz pliki z miejscem na kod rabatowy lub QR, które możesz wykorzystać w systemach sprzedażowych.',
+              question: 'W jakich formatach przygotowujecie kupony rabatowe?',
+              answer: 'Najczęściej projektujemy kupony i vouchery w formacie DL lub A6, ale możemy dopasować wymiary do Twoich indywidualnych potrzeb i wymagań.',
             },
             {
               question: 'Jak długo trwa realizacja projektu kuponów lub voucherów?',
-              answer: 'Standardowo realizujemy projekt w ciągu 3-7 dni roboczych, w zależności od liczby wariantów oraz formatu. Terminy ustalamy indywidualnie przed startem prac.',
+              answer: 'Standardowo realizujemy projekt w ciągu 3-6 dni roboczych, w zależności od liczby wariantów oraz formatu. Terminy ustalamy indywidualnie przed startem prac.',
             },
             {
               question: 'Czy mogę zlecić przygotowanie całej akcji promocyjnej?',
-              answer: 'Tak - możemy zaprojektować kupony, vouchery oraz materiały wspierające (posty, grafiki na stronę, ulotki). Dzięki temu promocja będzie spójna i zrozumiała dla klientów.',
+              answer: 'Tak, możemy zaprojektować kupony oraz materiały wspierające (posty, grafiki na stronę, media społecznościowe czy ulotki)',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt voucherów lub kuponów"
-          description="Opisz, czym się zajmujesz, na jaki rodzaj usług lub produktów chcesz przygotować kupony i vouchery oraz w jakiej formie będą rozdawane (druk, online, social media). Na tej podstawie przygotujemy propozycję projektu, wycenę i termin realizacji."
-          defaultSubject="Projekt kuponów i voucherów"
         />
 
         <Gap variant="line" />
@@ -286,10 +284,10 @@ export default function OfferDesignVoucheryPage() {
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Ulotki i plakaty informujące o promocji',
+              title: 'Ulotki i informujące o promocji',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ulotki i plakaty pomagają dotrzeć z informacją o voucherach do większej liczby osób - w lokalu i poza nim.</p>
+                  <p className="mb-3 text-sm">Ulotki pomagą Ci dotrzeć do jeszcze większej grupy osób, przedstawiając szczegółowy zakres Twoich usług.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
                       Zobacz projekty ulotek
@@ -303,7 +301,7 @@ export default function OfferDesignVoucheryPage() {
               title: 'Szablony postów do social mediów',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Spójne grafiki na Instagram i Facebook wzmacniają komunikację promocji i zachęcają do wykorzystania vouchera.</p>
+                  <p className="mb-3 text-sm">Spójne grafiki na Instagram i Facebook wzmacniają komunikację - dzięki spójnym szablonom, tworzenie nowych treści będzie łatwiejsze.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
                       Zobacz szablony postów

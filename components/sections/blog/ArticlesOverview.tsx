@@ -1,27 +1,32 @@
 'use client';
 
 import { useRef, useEffect, useState, useMemo } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 
-import ProjectCard from '../../ui/ProjectCard';
-import allProjectsData from '@/data/pl/projects.json';
-import type { Project, ProjectCategory } from '@/types/project';
+import type { Article } from '@/types/article';
+import { getPrimaryCategorySlug } from '@/lib/blog';
+import { slugify } from '@/utils/slug';
+import blogData from '@/data/pl/blog.json';
 import Button from '@/components/ui/Button';
 
-interface ProjectsData {
-  projects: Project[];
+interface BlogData {
+  articles: Article[];
 }
 
 type Props = {
-  projects?: Project[];
+  articles?: Article[];
   max?: number;
   title: string;
   subtitle?: string;
-  category?: ProjectCategory;
+  categorySlug?: string;
   slugs?: string | string[];
 };
 
-export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Realizacje', subtitle, category, slugs }: Props) {
+const allArticles = (blogData as BlogData).articles;
+
+export default function ArticlesOverview({ articles, max = 7, title = 'Edukacja i artykuły', subtitle, categorySlug, slugs }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -30,24 +35,25 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
   const [cardWidth, setCardWidth] = useState(0);
   const [isScrollable, setIsScrollable] = useState(false);
 
-  const sourceProjects = useMemo<Project[]>(() => {
-    return projects && projects.length ? projects : (allProjectsData as ProjectsData).projects;
-  }, [projects]);
+  const sourceArticles = useMemo<Article[]>(() => {
+    return articles && articles.length ? articles : allArticles;
+  }, [articles]);
 
-  const finalProjects = useMemo(() => {
+  const finalArticles = useMemo(() => {
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
-    let list: Project[] = [];
+    let list: Article[] = [];
 
     if (slugsArray && slugsArray.length) {
-      const map = new Map(sourceProjects.map((p) => [p.slug, p] as const));
-      list = slugsArray.map((s) => map.get(s)).filter(Boolean) as Project[];
-    } else if (category) {
-      list = sourceProjects.filter((p) => (p.category || []).includes(category));
+      const map = new Map(sourceArticles.map((a) => [a.slug, a] as const));
+      list = slugsArray.map((s) => map.get(s)).filter(Boolean) as Article[];
+    } else if (categorySlug) {
+      list = sourceArticles.filter((a) => (a.category || []).some((c) => slugify(c) === categorySlug));
     } else {
-      list = [];
+      list = sourceArticles;
     }
+
     return list.slice(0, max);
-  }, [sourceProjects, slugs, category, max]);
+  }, [sourceArticles, slugs, categorySlug, max]);
 
   useEffect(() => {
     const container = scrollRef.current;
@@ -65,7 +71,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
       const epsilon = 0.01;
       const visible = Math.max(1, Math.floor((container.clientWidth + epsilon) / cardWithGap));
 
-      const total = finalProjects.length;
+      const total = finalArticles.length;
       const slides = Math.max(1, total - visible + 1);
 
       setMaxSlides(slides);
@@ -82,8 +88,8 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
     ro.observe(container);
     if (card) ro.observe(card);
     return () => ro.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- Only re-run when finalProjects.length changes, not on every finalProjects change
-  }, [finalProjects.length]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- Only re-run when finalArticles.length changes, not on every finalArticles change
+  }, [finalArticles.length]);
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -130,28 +136,30 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
     }
   };
 
-  if (!finalProjects.length) return null;
+  if (!finalArticles.length) return null;
 
-  const carouselLabel = 'Karuzela projektów';
+  const carouselLabel = 'Karuzela artykułów';
 
   const navBtn =
     'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-1 md:p-2 text-white shadow-xl backdrop-blur-sm ' +
     'transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none ' +
     'focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
 
+  const allArticlesHref = categorySlug ? `/edukacja/${categorySlug}` : '/edukacja';
+
   return (
-    <section className="w-full" aria-labelledby="projects-heading">
-      {/* nagłówek + przycisk do wszystkich realizacji */}
+    <section className="w-full" aria-labelledby="articles-heading">
+      {/* nagłówek + przycisk do wszystkich artykułów */}
       <div className="mb-2 flex flex-col gap-3 md:mb-3 md:flex-row md:items-center md:justify-between">
         <div>
           {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-          <h2 id="projects-heading" className="reveal-animation md:mb-0">
+          <h2 id="articles-heading" className="reveal-animation md:mb-0">
             {title}
           </h2>
         </div>
 
-        <Button link="/realizacje" aria-label="Sprawdź wszystkie realizacje">
-          Sprawdź wszystkie realizacje
+        <Button link={allArticlesHref} aria-label="Zobacz wszystkie artykuły">
+          Zobacz wszystkie artykuły
         </Button>
       </div>
 
@@ -166,11 +174,34 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
           tabIndex={0}
           onKeyDown={onKeyDown}
         >
-          {finalProjects.map((project, i) => (
-            <div key={project.slug} ref={i === 0 ? cardRef : null} className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]" aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}>
-              <ProjectCard project={project} size="small" />
-            </div>
-          ))}
+          {finalArticles.map((a, i) => {
+            const catSlug = getPrimaryCategorySlug(a);
+            const href = `/edukacja/${catSlug}/${a.slug}`;
+
+            return (
+              <article
+                key={a.slug}
+                ref={i === 0 ? cardRef : null}
+                className="w-[340px] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg md:w-[420px] lg:w-[520px]"
+                aria-label={`Artykuł ${i + 1} z ${finalArticles.length}`}
+              >
+                <Link href={href} className="block focus:outline-none">
+                  {a.cover ? (
+                    <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
+                      <Image src={a.cover} alt={a.title} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" />
+                    </div>
+                  ) : null}
+                  <div className="p-4">
+                    <h3 className="h6">{a.title}</h3>
+                    <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
+                      {a.readingTime ? <span>{a.readingTime} min czytania</span> : null}
+                      {a.datePublished ? <span aria-label="Data publikacji">• {a.datePublished}</span> : null}
+                    </div>
+                  </div>
+                </Link>
+              </article>
+            );
+          })}
         </div>
 
         {isScrollable && (
@@ -187,7 +218,7 @@ export default function ProjectsOverview({ projects, max = 7, title = 'Nasze Rea
       </div>
 
       {isScrollable && maxSlides > 1 && (
-        <div className="flex justify-center md:gap-2" role="group" aria-label="Nawigacja karuzeli">
+        <div className="flex justify-center md:gap-2" role="group" aria-label="Nawigacja karuzeli artykułów">
           {Array.from({ length: maxSlides }).map((_, i) => (
             <button
               key={i}

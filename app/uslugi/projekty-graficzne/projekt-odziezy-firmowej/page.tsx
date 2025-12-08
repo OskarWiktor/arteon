@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -136,6 +135,11 @@ export default function OfferDesignOdziezFirmowaPage() {
               description: <>Otrzymujesz materiały, które możesz od razu przekazać wykonawcy odzieży.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -219,11 +223,15 @@ export default function OfferDesignOdziezFirmowaPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów projekt odzieży firmowej"
+          description="Opisz co chcesz umieścić na firmowej odzieży. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt odzieży firmowej"
+        />
 
         <Gap variant="line" />
 
@@ -235,46 +243,30 @@ export default function OfferDesignOdziezFirmowaPage() {
             {
               question: 'Ile kosztuje projekt odzieży firmowej?',
               answer:
-                'Cena zależy od liczby projektów (koszulki, bluzy, czapki), techniki druku (sitodruk, haft, DTF), ilości wariantów i stopnia dopracowania systemu. Po briefie przedstawimy dopasowaną wycenę.',
+                'Cena zależy od liczby projektów (koszulki, bluzy, czapki) czy techniki druku (sitodruk, haft, DTF). Po dokładnym omówieniu Twojego planu i Twoich potrzeb przygotujemy dedykowaną ofertę.',
             },
             {
               question: 'Jak długo trwa projekt odzieży firmowej?',
-              answer: 'Standardowy czas realizacji to zwykle 5-10 dni roboczych, w zależności od liczby wersji, zakresu materiałów i terminu produkcji odzieży.',
+              answer: 'Standardowy czas realizacji to zwykle 5-10 dni roboczych.',
             },
             {
-              question: 'W jakich formatach otrzymam projekty?',
-              answer: 'Dostarczamy pliki wektorowe (np. AI, SVG) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości, z wariantami kolorystycznymi i adaptacjami do różnych elementów odzieży.',
+              question: 'W jakich formatach otrzymam projekt nadruków?',
+              answer: 'Dostarczamy pliki wektorowe oraz rastrowe w wysokiej rozdzielczości, z wariantami kolorystycznymi i adaptacjami do różnych elementów odzieży.',
             },
             {
-              question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Doprecyzowujemy kolory, umiejscowienie, skalę i szczegóły, aż otrzymasz finalną wersję zgodną z Twoją wizją.',
+              question: 'Czy mogę zgłosić poprawki do projektu nadruku na odzieć?',
+              answer: 'Tak, w projekcie przewidujemy rundy poprawek. Doprecyzowujemy kolory, umiejscowienie, skalę i szczegóły, aż otrzymasz finalną wersję zgodną z Twoją wizją.',
             },
             {
               question: 'Jaką technikę druku wybrać?',
-              answer: 'Doradzamy dobór techniki (sitodruk, haft, DTF) z uwzględnieniem materiału odzieży, budżetu i oczekiwanej trwałości. Projekt przygotowujemy pod wybrane rozwiązanie.',
-            },
-            {
-              question: 'Czy projekt będzie prawidłowo skalowalny?',
-              answer: 'Tak - projekt tworzymy w oparciu o grafikę wektorową i testujemy go na różnych rozmiarach, aby był czytelny i estetyczny zarówno na mniejszych, jak i większych elementach.',
-            },
-            {
-              question: 'Czy projekt odzieży jest gotowy do produkcji?',
               answer:
-                'Tak - przygotowujemy pliki zoptymalizowane pod wybraną technikę: separacje kolorów, odpowiednie formaty oraz uwagi dla producenta, tak aby można je było od razu przekazać do realizacji.',
+                'Doradzamy dobór techniki (sitodruk, haft, DTF) z uwzględnieniem materiału odzieży, budżetu i oczekiwanej trwałości. Projekt przygotowujemy pod wybrane rozwiązanie po omówieniu szczegółów.',
             },
             {
               question: 'Czy mogę zamówić ekspresowy projekt odzieży firmowej?',
-              answer: 'Tak - oferujemy opcję przyspieszonej realizacji. Przed rozpoczęciem projektu ustalamy możliwy termin oraz dodatkowy koszt, tak aby wszystko było jasne i przewidywalne.',
+              answer: 'Tak, oferujemy opcję przyspieszonej realizacji za dodatkową opłatą. Przed rozpoczęciem projektu ustalamy możliwy termin oraz dodatkowy koszt.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt odzieży firmowej"
-          description="Napisz, jaki masz zespół (liczba osób, stanowiska), jakie elementy odzieży chcesz zaprojektować (T-shirty, bluzy, polo, czapki) oraz z jakiej techniki chcesz korzystać (sitodruk, haft, DTF). Na tej podstawie przygotujemy wycenę i rekomendację plików produkcyjnych."
-          defaultSubject="Projekt odzieży firmowej"
         />
 
         <Gap variant="line" />
@@ -300,10 +292,10 @@ export default function OfferDesignOdziezFirmowaPage() {
             },
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt papieru firmowego i korespondencji',
+              title: 'Projekt papieru firmowego',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ubierz markę także w dokumentach. Spójne logo, kolory i układ na papierze firmowym domykają cały system wizerunku.</p>
+                  <p className="mb-3 text-sm">Ubierz markę także w dokumentach. Spójne logo, kolory i układ na papierze firmowym domykają cały system wizerunkowy.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
                       Zobacz projekt papieru firmowego

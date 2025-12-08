@@ -509,8 +509,7 @@ export default function OfferDesignPage() {
             },
             {
               question: 'W jakich formatach otrzymam gotowe pliki graficzne?',
-              answer:
-                'Dostarczamy komplet plików do druku i internetu: PDF (CMYK), PNG, JPG, SVG oraz pliki źródłowe (AI, PSD lub Figma). Na życzenie przygotowujemy także wersje Pantone lub PDF/X-1a zgodne z drukarniami.',
+              answer: 'Dostarczamy komplet plików do druku i internetu: PDF (CMYK), PNG, JPG, SVG oraz pliki źródłowe (AI, PSD lub Figma).',
             },
             {
               question: 'Czy mogę zamówić projekt logo i całej identyfikacji wizualnej?',
@@ -525,27 +524,22 @@ export default function OfferDesignPage() {
             {
               question: 'Czy mogę liczyć na doradztwo przy wyborze stylu graficznego?',
               answer:
-                'Tak. Pomagamy dobrać styl, kolorystykę i ton komunikacji graficznej do branży i grupy odbiorców. Jeśli nie masz jeszcze wizji, przygotujemy propozycje kierunków estetycznych i przykładowe inspiracje.',
+                'Tak. Pomagamy dobrać styl, kolorystykę i ton komunikacji graficznej do branży i grupy odbiorców. Jeśli nie masz pomysłu, przygotujemy propozycje kierunków estetycznych i przykładowe inspiracje.',
             },
             {
               question: 'Czy mogę zlecić stałą współpracę graficzną?',
               answer:
-                'Tak. Oferujemy stałą obsługę graficzną w formie abonamentu miesięcznego. Dzięki temu zyskujesz regularne wsparcie w tworzeniu materiałów - od postów i ulotek po katalogi czy banery reklamowe.',
+                'Ta, oferujemy stałą obsługę graficzną w dopasowanej do indywidualnych potrzeb formie. Dzięki temu zyskujesz regularne wsparcie w tworzeniu materiałów - od postów i ulotek po katalogi czy banery reklamowe.',
             },
             {
               question: 'Czy projekty są gotowe do druku?',
               answer:
-                'Tak. Wszystkie materiały przygotowujemy w pełni zgodnie ze standardami druku: CMYK, spady, marginesy bezpieczeństwa i profile ICC. Pliki możesz przekazać bezpośrednio do drukarni bez dodatkowej obróbki.',
+                'Tak, wszystkie materiały przygotowujemy w pełni zgodnie ze standardami druku: CMYK, spady, marginesy bezpieczeństwa i profile ICC. Pliki możesz przekazać bezpośrednio do drukarni.',
             },
             {
               question: 'Czy po zakończeniu projektu mam pełne prawa do plików?',
               answer:
-                'Tak. Po opłaceniu projektu otrzymujesz pełne prawa autorskie oraz wszystkie pliki źródłowe. Możesz z nich korzystać dowolnie, także w przyszłych realizacjach lub w innych agencjach.',
-            },
-            {
-              question: 'Czy mogę zamówić projekt graficzny online bez spotkania?',
-              answer:
-                'Tak. Cały proces - od briefu po akceptację - można przeprowadzić zdalnie. Kontaktujemy się mailowo lub przez określony komunikator, a gotowe projekty i pliki przekazujemy w formie cyfrowej.',
+                'Tak, po opłaceniu projektu otrzymujesz pełne prawa autorskie oraz wszystkie pliki źródłowe. Możesz z nich korzystać dowolnie, także w przyszłych realizacjach lub w innych agencjach.',
             },
           ]}
         />

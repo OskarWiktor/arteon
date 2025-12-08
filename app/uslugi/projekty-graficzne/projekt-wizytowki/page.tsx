@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiIdCardLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiIdCardLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -59,7 +58,7 @@ export default function OfferDesignWizytowkaPage() {
     <>
       <HeroBanner
         title="Projekt wizytówki"
-        description={<>Zadbaj o pierwsze wrażenie, które buduje zaufanie. Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie i gotowe do druku oraz użycia online.</>}
+        description={<>Zadbaj o dobre pierwsze wrażenie. Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie, gotowe do druku.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -91,19 +90,15 @@ export default function OfferDesignWizytowkaPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt wizytówki?">
           <p>
-            <strong>Profesjonalnie zaprojektowana wizytówka wyjaśnia, czym się zajmujesz w kilka sekund.</strong> Schludny układ, czytelne dane i spójny styl ułatwiają zapamiętanie firmy oraz szybki
-            powrót do kontaktu po spotkaniu. Wizytówka staje się fizycznym śladem rozmowy, który może zamienić się w telefon lub wiadomość po kilku dniach czy tygodniach.
+            <strong>Profesjonalnie zaprojektowana wizytówka </strong> to shludny układ, czytelne dane i spójny styl ułatwiają zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu. Wizytówka
+            staje się fizycznym śladem rozmowy, który może zamienić się w telefon lub wiadomość po kilku dniach czy tygodniach.
           </p>
 
           <br />
 
           <p>
-            <strong>Estetyka materiałów realnie wpływa na ocenę wiarygodności marki.</strong> Jakość oprawy wizualnej - także na małym formacie wizytówki - podnosi zaufanie do firmy i ułatwia decyzję
-            o współpracy
-            <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
-              (źródło)
-            </a>
-            .
+            <strong>Estetyka materiałów realnie wpływa na ocenę wiarygodności marki.</strong> Jakość oprawy wizualnej - także na małym formacie - podnosi zaufanie do firmy i ułatwia decyzję o
+            współpracy
           </p>
 
           <br />
@@ -113,8 +108,8 @@ export default function OfferDesignWizytowkaPage() {
           </p>
           <ul className="ml-5 list-disc">
             <li>Ułatwia zapamiętanie Twojej marki i osoby,</li>
-            <li>Przyspiesza przejście od rozmowy do kontaktu,</li>
-            <li>Podnosi zaufanie i buduje wrażenie profesjonalizmu.</li>
+            <li>Ułatwia późniejszy kontakt,</li>
+            <li>Podnosi zaufanie i buduje profesjonalny wizerunek.</li>
           </ul>
         </SectionInfo>
 
@@ -125,24 +120,24 @@ export default function OfferDesignWizytowkaPage() {
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'Czytelny układ i prestiżowy wygląd',
-              description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz - bez upychania zbyt dużej ilości treści na małej powierzchni.</>,
+              title: 'Czytelny układ i profesjonalny wygląd',
+              description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>,
               icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Pliki gotowe do druku i online',
-              description: <>Otrzymujesz pliki przygotowane pod drukarnię oraz wersje cyfrowe do wysyłki mailowej lub użycia w prezentacjach.</>,
+              title: 'Pliki gotowe do druku',
+              description: <>Otrzymujesz pliki przygotowane do druku</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
-              description: <>Dopasowujemy kolory, typografię i styl do Twojej identyfikacji wizualnej, tak aby każdy materiał mówił jednym językiem.</>,
+              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki aby zachować spójność wizerunku.</>,
               icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Szybka realizacja i poprawki w cenie',
-              description: <>Przygotowujemy projekt w krótkim terminie i dopracowujemy szczegóły wspólnie aż do pełnej akceptacji.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -152,35 +147,16 @@ export default function OfferDesignWizytowkaPage() {
         <SectionInfo title="Dla kogo projekt wizytówki ma największy sens?" subtitle="Dla kogo">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Dla specjalistów usługowych</strong> - prawników, terapeutów, doradców, trenerów - którzy często spotykają się z klientami i chcą zostawić po sobie konkretny, elegancki ślad.
+              <strong>Dla specjalistów,</strong> - prawników, terapeutów, doradców, trenerów - którzy często spotykają się z klientami i chcą ułatwić im ponowny kontakt.
             </li>
             <li>
-              <strong>Dla właścicieli firm lokalnych</strong> - salonów, gabinetów, restauracji, serwisów - gdzie wizytówka jest często pierwszym materialnym kontaktem z marką.
+              <strong>Dla właścicieli firm lokalnych</strong> - salonów, gabinetów, restauracji, serwisów - gdzie wizytówka jest często pierwszym kontaktem z marką.
             </li>
             <li>
               <strong>Dla osób budujących markę osobistą,</strong> które występują na wydarzeniach, konferencjach i szkoleniach, a po prezentacji rozdają swoje dane kontaktowe.
             </li>
             <li>
-              <strong>Dla firm z zespołem sprzedaży,</strong> które chcą zadbać o spójne wizytówki dla kilku lub kilkunastu osób w organizacji.
-            </li>
-          </ul>
-        </SectionInfo>
-
-        <Gap variant="line" />
-
-        <SectionInfo title="Jakie efekty zobaczysz po wdrożeniu nowych wizytówek?" subtitle="Efekty po wdrożeniu">
-          <ul className="ml-5 list-disc space-y-2">
-            <li>
-              <strong>Spójne pierwsze wrażenie marki</strong> - niezależnie od tego, czy klient zobaczy najpierw stronę, social media czy wizytówkę, doświadcza tej samej jakości.
-            </li>
-            <li>
-              <strong>Więcej powrotów do kontaktu</strong> - rozmówca nie musi szukać numeru w notatkach, bo dane ma pod ręką, na dobrze zaprojektowanej karcie.
-            </li>
-            <li>
-              <strong>Mniej chaosu w materiałach drukowanych,</strong> bo wizytówka nie jest „osobnym światem”, tylko elementem całego systemu identyfikacji wizualnej.
-            </li>
-            <li>
-              <strong>Większy komfort podczas przedstawiania się,</strong> bo przekazujesz kartę, która od razu wspiera wizerunek - zamiast próbować „tłumaczyć” za niedopracowany projekt.
+              <strong>Dla firm z zespołem,</strong> które chcą zadbać o spójne wizytówki dla kilku lub kilkunastu osób w organizacji.
             </li>
           </ul>
         </SectionInfo>
@@ -247,47 +223,7 @@ export default function OfferDesignWizytowkaPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <WorkSteps variant="design" />
-
-        <Gap variant="line" />
-
-        <FaqPanels
-          openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
-          title="Najczęstsze pytania o projekt wizytówki"
-          items={[
-            {
-              question: 'Ile kosztuje projekt wizytówki?',
-              answer:
-                'Cena zależy od liczby wariantów (np. różne stanowiska, języki), zakresu prac i tego, czy projekt opieramy na istniejącej identyfikacji, czy tworzymy kierunek od zera. Po krótkim briefie otrzymasz dopasowaną wycenę.',
-            },
-            {
-              question: 'Jak długo trwa projekt wizytówki?',
-              answer:
-                'Standardowo projekt przygotowujemy w około 2-5 dni roboczych od momentu zebrania materiałów. W przypadku większej liczby wariantów lub dodatkowych korekt termin ustalamy indywidualnie.',
-            },
-            {
-              question: 'W jakich formatach dostanę wizytówkę?',
-              answer: 'Otrzymasz plik PDF do druku ze spadami, wersje PNG/JPG do wykorzystania w sieci oraz - w zależności od ustaleń - pliki źródłowe (np. Figma, AI).',
-            },
-            {
-              question: 'Czy mogę zgłosić poprawki do projektu wizytówki?',
-              answer: 'Tak. W cenie przewidujemy rundy poprawek - dopracowujemy układ, kolory i teksty tak długo, aż projekt będzie spójny z Twoją marką i wygodny w użyciu.',
-            },
-            {
-              question: 'Czy wizytówka będzie czytelna przy małym rozmiarze?',
-              answer: 'Dbamy o odpowiedni kontrast, wielkość czcionek i hierarchię informacji. Nawet przy standardowym formacie wizytówki kluczowe dane pozostają czytelne.',
-            },
-            {
-              question: 'Czy mogę zamówić ekspresowy projekt wizytówki?',
-              answer: 'Tak, w uzasadnionych sytuacjach realizujemy projekty w trybie przyspieszonym. Termin i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac.',
-            },
-          ]}
-        />
 
         <Gap variant="line" />
 
@@ -299,20 +235,49 @@ export default function OfferDesignWizytowkaPage() {
 
         <Gap variant="line" />
 
+        <FaqPanels
+          openByDefault={1}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
+          title="Najczęstsze pytania o projekt wizytówki"
+          items={[
+            {
+              question: 'Ile trwa trwa realizacja projektu wizytówki?',
+              answer:
+                'Standardowo projekt przygotowujemy w około 2-4 dni roboczych od momentu zebrania materiałów. W przypadku większej liczby wariantów lub dodatkowych korekt termin ustalamy indywidualnie.',
+            },
+            {
+              question: 'W jakich formatach dostanę wizytówkę?',
+              answer: 'Otrzymasz plik PDF do druku ze spadami, wersje PNG/JPG do wykorzystania w sieci oraz pliki źródłowe.',
+            },
+            {
+              question: 'Czy mogę zgłosić poprawki do projektu wizytówki?',
+              answer: 'Tak, w cenie każdego projektu przewidujemy rundy poprawek - dopracowujemy układ, kolory i teksty tak długo, aż projekt będzie spójny z Twoją marką i wygodny w użyciu.',
+            },
+            {
+              question: 'Czy mogę zamówić ekspresowy projekt wizytówki?',
+              answer: 'Tak, realizujemy projekty w trybie przyspieszonym za dodatkową opłatą. Termin i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
         <SectionSteps
-          title="Kolejne kroki po projekcie wizytówki"
+          title="Z czym można połączyć projekt wizytówki?"
           subtitle="Zobacz też"
-          description="Wizytówka jest często pierwszym elementem większej układanki. Najlepsze efekty daje, gdy jest częścią spójnego systemu identyfikacji."
+          description="Wizytówka jest często pierwszym elementem większej układanki. Najlepszy efekt daje, gdy jest częścią spójnego systemu identyfikacji i promocji Twojej firmyu\."
           items={[
             {
               icon: <IoColorPalette className="h-8 w-8" />,
               title: 'Projekt identyfikacji wizualnej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Logo, kolory, typografia i zasady stosowania. Dzięki temu wizytówka, strona internetowa i materiały social media tworzą jedną, spójną całość.</p>
+                  <p className="mb-3 text-sm">
+                    Aby wszystko było spójne, możesz rozwarzyć stworzenie pełnej identyfikacji wizualnej: logo, ulotki,papier firmowy - wszystko zrealizujesz w jednym miejscu.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Zobacz identyfikację wizualną
+                      Zobacz projekt identyfikacji wizualnej
                     </Button>
                   </div>
                 </div>
@@ -320,10 +285,13 @@ export default function OfferDesignWizytowkaPage() {
             },
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Szablony postów social media',
+              title: 'Szablony postów do mediów społecznościowych',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Uporządkuj wygląd swoich profili tak, aby wizytówka, profil na Instagramie i strona mówiły jednym językiem i prowadziły do tego samego komunikatu.</p>
+                  <p className="mb-3 text-sm">
+                    Tworzenie treści do mediów społecznościowych bywa męczące lecz jest to jeden z najlepszych sposobów na budowanie profesjonalnego wizerunku firmy. Z nami możesz skrócić czas
+                    tworzenia kolejnych treści - tworząc pakiet szablonów dla dedykowanych platform społecznościowych
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
                       Zobacz szablony social media
@@ -339,6 +307,8 @@ export default function OfferDesignWizytowkaPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap size="sm" />
       </Wrapper>
 
       <CTABanner

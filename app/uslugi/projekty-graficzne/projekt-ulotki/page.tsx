@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiArticleLine, RiFileTextLine, RiLayoutLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiArticleLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -62,7 +61,7 @@ export default function OfferDesignUlotkaPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp"
         overlay="black"
       />
 
@@ -150,6 +149,11 @@ export default function OfferDesignUlotkaPage() {
               description: <>W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki Twojej oferty.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -190,6 +194,14 @@ export default function OfferDesignUlotkaPage() {
             </li>
           </ul>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 
@@ -245,19 +257,15 @@ export default function OfferDesignUlotkaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt ulotki"
+          description="Opisz czym się zajmujesz i co chcesz przedstawić na swojej ulotce. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt ulotki"
+        />
 
         <Gap variant="line" />
 
@@ -268,12 +276,12 @@ export default function OfferDesignUlotkaPage() {
           items={[
             {
               question: 'Ile kosztuje projekt ulotki?',
-              answer: 'Cena projektu ulotki zależy od formatu (A5, DL, składane), liczby wersji i objętości treści. Po krótkim briefie przygotowujemy dopasowaną wycenę w zależności od zakresu prac.',
+              answer: 'Cena projektu ulotki zależy od formatu, liczby wersji i objętości treści. Po krótkim zapoznaniu z Twoimi potrzebami i Twoją ofertą, przygotujemy indywidualną wycenę.',
             },
             {
               question: 'Jak długo trwa projektowanie ulotki?',
               answer:
-                'Przy standardowym zakresie czas realizacji wynosi zwykle 3-7 dni roboczych. Większe projekty z wieloma wersjami lub szerszym zakresem treści mogą wymagać dłuższego terminu - ustalamy go indywidualnie.',
+                'Przy standardowym zakresie czas realizacji wynosi zwykle od 3 do 4 dni roboczych. Większe projekty z wieloma wersjami lub szerszym zakresem treści mogą wymagać dłuższego terminu - ustalamy go indywidualnie.',
             },
             {
               question: 'W jakich formatach otrzymam ulotkę?',
@@ -282,50 +290,29 @@ export default function OfferDesignUlotkaPage() {
             },
             {
               question: 'Czy mogę zgłosić poprawki do ulotki?',
-              answer: 'Tak - w cenie przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i treści tak długo, aż ulotka będzie czytelna, estetyczna i spójna z Twoją marką.',
-            },
-            {
-              question: 'Jak dobrać format i papier ulotki?',
               answer:
-                'Na podstawie celu kampanii i budżetu rekomendujemy format (np. A5, DL, składane A4 do DL) oraz rodzaj papieru. Dbamy o to, aby materiał był wystarczająco trwały, dobrze się prezentował i był wygodny w dystrybucji.',
+                'Tak, w cenie każdego projektu przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i treści tak długo, aż ulotka będzie czytelna, estetyczna i spójna z Twoją marką.',
             },
             {
-              question: 'Czy projekt ulotki będzie czytelny na urządzeniach mobilnych?',
-              answer: 'Tak. Przygotowujemy również wersję cyfrową zoptymalizowaną pod wyświetlanie na telefonach, tak aby ulotka w PDF lub JPG pozostała czytelna także w kanale online.',
-            },
-            {
-              question: 'Czy projekt ulotki jest gotowy do druku?',
-              answer: 'Tak - pliki przygotowujemy zgodnie z wymaganiami druku: odpowiednia rozdzielczość, kolory, spady i marginesy bezpieczeństwa. Możesz przekazać je bezpośrednio do drukarni.',
-            },
-            {
-              question: 'Czy mogę zamówić ekspresowy projekt ulotki?',
-              answer:
-                'Tak - w uzasadnionych przypadkach realizujemy projekty w trybie przyspieszonym. Czas i koszt trybu ekspresowego ustalamy przed rozpoczęciem prac, aby wszystko było transparentne.',
+              question: 'Czy projekt ulotki będzie gotowy do druku?',
+              answer: 'Tak, pliki przygotowujemy zgodnie z wymaganiami druku: odpowiednia rozdzielczość, kolory, spady i marginesy bezpieczeństwa. Możesz przekazać je bezpośrednio do drukarni.',
             },
           ]}
         />
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt ulotki"
-          description="Opisz, jaki cel ma spełniać ulotka (promocja, otwarcie, oferta stała), do kogo jest kierowana, w jakim formacie planujesz druk oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
-          defaultSubject="Projekt ulotki"
-        />
-
-        <Gap variant="line" />
-
         <SectionSteps
-          title="Kolejne kroki po projekcie ulotki"
+          title="Z czym najlepiej połączyć projekt ulotki?"
           subtitle="Zobacz też"
-          description="Ulotka jest często jednym z kilku materiałów, które pracują na rozpoznawalność i sprzedaż. Najlepszy efekt daje spójny pakiet."
+          description="Ulotka jest często jednym z kilku materiałów, które pracują na rozpoznawalność Twojej firmy. Najlepszy efekt osiągniesz, budując spójność wszystkich materiałów."
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Projekt wizytówki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Zadbaj o to, aby osoba, która zobaczy ulotkę i spotka Cię osobiście, otrzymała równie dopracowaną wizytówkę z tym samym stylem.</p>
+                  <p className="mb-3 text-sm">Zadbaj o to, aby osoba, która spotkała się z Tobą osobiście, chętniej skontaktowała się z Tobą ponownie.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Zobacz projekt wizytówki
@@ -335,14 +322,14 @@ export default function OfferDesignUlotkaPage() {
               ),
             },
             {
-              icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Szablony postów social media',
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Katalog z ofertą',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Przedłuż przekaz z ulotki w internecie. Ustal jeden styl dla materiałów drukowanych i postów, tak aby klient łatwo rozpoznał Twoją markę.</p>
+                  <p className="mb-3 text-sm">Jeśli Twoje usługi są bardziej rozbudowane, warto rozważyć stworzenie katalogu, w którym pokażesz szczegóły, zdjęcia czy też swoje realizacje.</p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
-                      Zobacz szablony social media
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
+                      Zobacz projekt katalogu
                     </Button>
                   </div>
                 </div>
@@ -366,7 +353,7 @@ export default function OfferDesignUlotkaPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp"
         overlay="black"
       />
 

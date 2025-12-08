@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -16,7 +15,7 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -142,6 +141,11 @@ export default function OfferDesignSzablonyPostowPage() {
               description: <>Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta, opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.</>,
               icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -179,6 +183,14 @@ export default function OfferDesignSzablonyPostowPage() {
             </li>
           </ul>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 
@@ -232,19 +244,15 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów szablony postów social media"
+          description="Opisz, czym się zajmujesz, na jakich platformach publikujesz treści (Instagram, Facebook, LinkedIn, TikTok) i jakie szablony chciałbyś stworzyć. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Szablony postów social media"
+        />
 
         <Gap variant="line" />
 
@@ -256,50 +264,37 @@ export default function OfferDesignSzablonyPostowPage() {
             {
               question: 'W jakich programach dostanę szablony postów?',
               answer:
-                'Standardowo przekazujemy pliki w Figmie lub Canvie. To wygodne narzędzia, dzięki którym z łatwością edytujesz teksty, wymienisz zdjęcia i dostosujesz kolory do aktualnych kampanii.',
-            },
-            {
-              question: 'Czy dostanę instrukcję użycia szablonów?',
-              answer: 'Tak. Dołączamy krótką instrukcję oraz przykładowe układy, aby ułatwić produkcję treści - zarówno gdy publikujesz samodzielnie, jak i z zespołem.',
+                'Standardowo przekazujemy pliki w Figmie, Canvie lub Affinity. To wygodne narzędzia, dzięki którym z łatwością edytujesz teksty, wymienisz zdjęcia i dostosujesz kolory do aktualnych kampanii.',
             },
             {
               question: 'Jak szybko powstają szablony postów?',
-              answer: 'Standardowo prace trwają około 3-7 dni roboczych od akceptacji kierunku wizualnego. Dokładny termin zależy od liczby wariantów i platform, na które przygotowujemy szablony.',
+              answer: 'Standardowo prace trwają około od 3 do 5 dni roboczych. Dokładny termin zależy od liczby wariantów i liczby platform, na które przygotowujemy szablony.',
             },
             {
               question: 'Czy szablony będą spójne z moją stroną i identyfikacją?',
-              answer:
-                'Tak. Jeśli masz już identyfikację wizualną lub stronę internetową, dopasujemy szablony do istniejącego stylu. Jeśli nie - możemy pomóc Ci najpierw uporządkować podstawy wizualne.',
+              answer: 'Tak. Jeśli masz już identyfikację wizualną lub stronę internetową, dopasujemy szablony do istniejącego stylu.',
             },
           ]}
         />
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów szablony postów social media"
-          description="Opisz, w jakiej branży działasz, na jakich platformach publikujesz (Instagram, Facebook, LinkedIn, TikTok) i ile mniej więcej typów postów potrzebujesz. Na tej podstawie przygotujemy propozycję zakresu i wycenę."
-          defaultSubject="Szablony postów social media"
-        />
-
-        <Gap variant="line" />
-
         <SectionSteps
-          title="Kolejne kroki w uporządkowaniu komunikacji"
+          title="Z czym najlepiej połączyć projekt szablonów do mediów społecznościowych"
           subtitle="Zobacz też"
-          description="Szablony social media najczęściej łączymy z uporządkowaniem identyfikacji wizualnej i strony internetowej."
+          description="Projekt szablonów najczęściej łączymy z uporządkowaniem identyfikacji wizualnej i stworzeniem własnej strony internetowej."
           items={[
             {
               icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Projekt graficzny strony internetowej',
+              title: 'Strony internetowe',
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Makieta i layout strony, które spinają w całość komunikację z social mediów, ofertę i content. Dzięki temu klient doświadcza jednej, spójnej historii marki.
+                    Twoje szablony mogą odsyłać klientów do odwiedzenia Twojej witryna na której będą mogli np. przeczytać szczegóły Twojej oferty, zarezerwować spotkanie czy kupić produkt.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
-                      Zobacz projekt graficzny strony
+                      Zobacz ofertę stworzenia strony internetowej
                     </Button>
                   </div>
                 </div>
@@ -311,11 +306,11 @@ export default function OfferDesignSzablonyPostowPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Kompletny system wizualny: logo, kolory, typografia i materiały firmowe. Szablony postów stają się wtedy naturalnym przedłużeniem identyfikacji, a nie osobnym światem.
+                    Aby wszystko było spójne, możesz rozwarzyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Zobacz identyfikację wizualną
+                      Zobacz projekt identyfikacji wizualnej
                     </Button>
                   </div>
                 </div>

@@ -3,9 +3,19 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine, RiFileTextLine, RiIdCardLine } from 'react-icons/ri';
+import {
+  RiPencilRuler2Line,
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiBookOpenLine,
+  RiKey2Line,
+  RiPantoneLine,
+  RiQuillPenLine,
+  RiIdCardLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -19,6 +29,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/Button';
+import { IoColorPalette } from 'react-icons/io5';
 
 export const metadata = {
   title: 'Projekt logo | Arteon',
@@ -147,6 +158,11 @@ export default function OfferDesignLogoPage() {
               description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
               icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -250,11 +266,15 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów projekt logo"
+          description="Opisz, czym się zajmujesz i jaki typ znaku Ci się podoba. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt logo"
+        />
 
         <Gap variant="line" />
 
@@ -265,24 +285,24 @@ export default function OfferDesignLogoPage() {
             {
               question: 'Ile kosztuje profesjonalne logo?',
               answer:
-                'Cena logo zależy od zakresu pracy: liczby wariantów, wersji kolorystycznych i dodatkowych adaptacji. Propozycję przygotowujemy po briefie, tak aby była spójna z Twoimi potrzebami i budżetem.',
+                'Cena logo zależy od zakresu pracy: liczby wariantów, wersji kolorystycznych i dodatkowych adaptacji. Dokładną wycenę przygotowujemy po zapoznaniu się z Twoją ofertą, wizją oraz docelowymi klientami',
             },
             {
               question: 'Jak długo trwa realizacja projektu logo?',
-              answer: 'Standardowy proces trwa około 7-14 dni roboczych, w zależności od liczby kierunków i rund poprawek. Przy pilnych zleceniach możemy zaproponować tryb ekspresowy.',
+              answer: 'Standardowy proces trwa około 5-10 dni roboczych, w zależności od liczby kierunków i rund poprawek. Przy pilnych zleceniach możemy zaproponować tryb ekspresowy.',
             },
             {
               question: 'W jakich formatach otrzymam logo?',
-              answer:
-                'Otrzymasz pliki wektorowe (SVG, EPS, AI) oraz rastrowe (PNG, JPG) w wysokiej rozdzielczości - w wersjach kolorystycznych, monochromatycznych oraz na jasne i ciemne tło, wraz z mini-księgą znaku.',
+              answer: 'Otrzymasz pliki wektorowe oraz rastrowe w wysokiej rozdzielczości - w wersjach kolorystycznych, monochromatycznych oraz na jasne i ciemne tło, wraz z mini-księgą znaku.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do logo?',
-              answer: 'Tak - w standardowym pakiecie uwzględniamy minimum jedną-dwie rundy korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
+              answer: 'Tak, w standardowym pakiecie uwzględniamy minimum jedną rundy korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
             },
             {
               question: 'Czy pomogacie określić styl i kierunek logo?',
-              answer: 'Tak - jeśli nie masz konkretnej wizji, przygotowujemy moodboardy, przykłady stylów i kierunki kreatywne, aby wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
+              answer:
+                'Tak, jeśli nie jesteś pewien jakie logo będzie odpowiednie dla Twojej firmy, przygotowujemy moodboardy, przykłady stylów i kierunki, aby wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
             },
             {
               question: 'Gdzie mogę używać logo?',
@@ -290,22 +310,13 @@ export default function OfferDesignLogoPage() {
             },
             {
               question: 'Czy dostaję prawa autorskie do logo?',
-              answer:
-                'Tak - po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
+              answer: 'Tak, po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
             },
             {
-              question: 'Czy oferujecie szybką realizację logo?',
-              answer: 'Tak - dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
+              question: 'Czy oferujecie espresową realizację logo?',
+              answer: 'Tak, dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt logo"
-          description="Opisz, czym się zajmujesz, w jakiej branży działasz i jaki charakter znaku Ci się podoba (minimalistyczny, klasyczny, odważny). Jeśli masz istniejące materiały lub inspiracje, możesz je dołączyć - na tej podstawie przygotujemy brief, wycenę i harmonogram."
-          defaultSubject="Projekt logo"
         />
 
         <Gap variant="line" />
@@ -313,14 +324,16 @@ export default function OfferDesignLogoPage() {
         <SectionSteps
           title="Jak rozwinąć logo w pełną identyfikację?"
           subtitle="Zobacz też"
-          description="Logo jest fundamentem, ale pełną moc pokazuje dopiero w systemie materiałów. Z nami możesz krok po kroku rozbudować identyfikację, zachowując spójny styl."
+          description="Logo jest fundamentem, ale pełną moc pokazuje dopiero w systemie materiałów. Z nami możesz krok po kroku rozbudować identyfikację, zachowując spójny styl swojej marki."
           items={[
             {
               icon: <RiIdCardLine className="h-8 w-8" />,
               title: 'Projekt wizytówki firmowej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Wykorzystaj nowe logo na eleganckiej wizytówce - to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad.</p>
+                  <p className="mb-3 text-sm">
+                    Wykorzystaj nowe logo na eleganckiej wizytówce - to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad i zachęcić klienta do ponownego kontaktu.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Zobacz projekt wizytówki
@@ -330,14 +343,16 @@ export default function OfferDesignLogoPage() {
               ),
             },
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Papier firmowy i dokumenty',
+              icon: <IoColorPalette className="h-8 w-8" />,
+              title: 'Projekt identyfikacji wizualnej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Uporządkuj oferty, umowy i korespondencję. Spójne nagłówki, stopki i układ treści wzmacniają profesjonalny obraz firmy.</p>
+                  <p className="mb-3 text-sm">
+                    Aby wszystko było spójne, możesz rozwarzyć stworzenie pełnej identyfikacji wizualnej: ulotki, katalogi, posty do mediów społecznościowych - wszystko zrealizujesz w jednym miejscu.
+                  </p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
-                      Zobacz papier firmowy
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
+                      Zobacz projekt identyfikacji wizualnej
                     </Button>
                   </div>
                 </div>

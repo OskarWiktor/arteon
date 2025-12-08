@@ -1,6 +1,67 @@
 {
   "projects": [
     {
+      "slug": "folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group",
+      "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
+      "short": "Składany folder reklamowy w formacie A3 ( składany na A4 ) dla polskiej wirmy wykańczającej wnętrza domów i mieszkań",
+      "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Celem projektu było przygotowanie folderu w wersji cyfrowej oraz do druku, który opisuje jasno ofertę firmy, korzyści płynące ze współpracy ( projekt, dobór materiałów i realizacja u jednego wykonawcy ) oraz przekirowuje do wirtualnego spaceru po ostatniej realizacji tej firmy</p><br /><p>Połączone zostały delikatne odcienie brązu i beżu, spójne ze zdjęciami realizacji. Na pierwszej stronie umieszczone zostało zdjęcie łazienki, wykończonej przez firmę, zachęta do kontaktu oraz informacja o cenie za metr kwadratowy</p><br /><p>W środku znajdziemy jasno przedstawione korzyści ze współpracy z tym wykonawcą wraz z ikonami, dla lepszej czytelności oraz kodem QR do najnowszej realizacji wraz z szczegółowym opisem co udało się zrobić w tej cenie.</p><br /><p>Projekt został <strong>przygotowany do druku wraz z wersją PDF</strong> do wysyłki potencjalnym klientom poprzez wiadomości mailowe. Realizacja obejmowała <strong>3 kierunki wizualne</strong> wraz z rundą poprawek oraz pomoc przy stworzeniu tekstu do folderu reklamowego",
+      "image": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
+      "category": ["grafika"],
+      "client": {
+        "name": "Simba Group PL",
+        "sector": "Wykończenie wnętrz domów i mieszkań"
+      },
+      "process_steps": [
+        "Ustalenie formatu oraz treści.",
+        "Stworzenie 3 kierunków estetycznych.",
+        "Dopasowanie spójnej kolorystyki i typografii.",
+        "Dopracowanie wraz z przygotowaniem pliku do druku i wysyłki w formie PDF."
+      ],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja pierwszej wersji środek folderu",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-tyl.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja pierwszej wersji tył folderu",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod-druga-wersja.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja drugiej wersji środek folderu",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-tyl-druga-wersja.webp",
+          "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja drugiej wersji tył folderu",
+          "ratio": "16/9"
+        }
+      ],
+
+      "cta": {
+        "title": "Potrzebujesz vouchera lub kuponu promocyjnego dla swojej firmy?",
+        "description": "Opisz nam czym się zajmujesz, przygotujemy projekt graficzny wraz z wersją do druku",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę voucherów i kuponów",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
+        "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
+        "overlay": "black"
+      },
+      "seo": {
+        "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
+        "description": "Elegancki bon walentynkowy dla gabinetu kosmetycznego. Gotowe pliki do druku. Sprawdź naszą realizację i samów własny projekt",
+        "canonical": "https://www.arteonagency.pl/realizacje/folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group"
+      }
+    },
+
+    {
       "slug": "szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc",
       "title": "Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK",
       "short": "Spójny zestaw szablonów postów i stories na media społecznościowe dla gabinetu psychologicznego",
@@ -43,6 +104,7 @@
         "canonical": "https://www.arteonagency.pl/realizacje/szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc"
       }
     },
+
     {
       "slug": "bon-walentynkowy-dla-salonu-kosmetycznego-kasia",
       "title": "Bon walentynkowy dla salonu kosmetycznego Kasia",

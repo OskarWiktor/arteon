@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -148,6 +147,11 @@ export default function OfferDesignTeczkaOfertowaPage() {
               description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz od razu przekazać je do produkcji.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -188,6 +192,14 @@ export default function OfferDesignTeczkaOfertowaPage() {
             </li>
           </ul>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
 
         <Gap variant="line" />
 
@@ -243,19 +255,15 @@ export default function OfferDesignTeczkaOfertowaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt teczki ofertowej"
+          description="Opisz czym się zajmujesz i jakie informacje chcesz umieścić na swojej teczce ofertowej. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt teczki ofertowej"
+        />
 
         <Gap variant="line" />
 
@@ -267,7 +275,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
             {
               question: 'Jak długo trwa realizacja teczki ofertowej?',
               answer:
-                'Standardowo projekt teczki trwa około 5-10 dni roboczych - w zależności od liczby wersji, stopnia skomplikowania oraz tempa akceptacji. Przy pilnych zleceniach ustalamy tryb ekspresowy indywidualnie.',
+                'Standardowo realizacja projektu teczki ofertowej trwa od 5 do 8 dni roboczych - w zależności od liczby wersji, stopnia skomplikowania czy tempa akceptacji. Przy pilnych zleceniach ustalamy tryb ekspresowy indywidualnie.',
             },
             {
               question: 'W jakich formatach dostanę pliki teczki?',
@@ -275,41 +283,29 @@ export default function OfferDesignTeczkaOfertowaPage() {
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak. W ramach projektu przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i detale aż do pełnej akceptacji.',
+              answer: 'Tak, w ramach każdego projektu przewidujemy rundy poprawek. Wspólnie dopracowujemy układ, kolory i detale aż do pełnej akceptacji.',
             },
             {
               question: 'Czy projekt teczki jest gotowy do druku?',
               answer:
-                'Tak. Przygotowujemy pliki zgodnie z wymaganiami druku: odpowiedni format, spady, marginesy bezpieczeństwa oraz ustawienia kolorów, tak aby można je było od razu przekazać do drukarni.',
-            },
-            {
-              question: 'Czy mogę zamówić ekspresowy projekt teczki?',
-              answer: 'Tak. W uzasadnionych przypadkach realizujemy projekty w trybie przyspieszonym. Dodatkowy koszt i termin realizacji ustalamy przed startem, aby wszystko było transparentne.',
+                'Tak, przygotowujemy pliki zgodnie z wymaganiami druku: odpowiedni format, spady, marginesy bezpieczeństwa oraz ustawienia kolorów, tak aby można je było od razu przekazać do drukarni.',
             },
           ]}
         />
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt teczki ofertowej"
-          description="Napisz, czym się zajmujesz, jakie dokumenty chcesz umieszczać w teczce (oferty, umowy, materiały szkoleniowe) oraz czy potrzebujesz jednej czy kilku wersji. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
-          defaultSubject="Projekt teczki ofertowej"
-        />
-
-        <Gap variant="line" />
-
         <SectionSteps
-          title="Kolejne materiały, które warto połączyć z teczką"
+          title="Jakie materiały warto połączyć z projektem teczki ofertowej?"
           subtitle="Zobacz też"
-          description="Najlepszy efekt przynosi spójny zestaw materiałów - teczka, wizytówki, oferta PDF i strona www, które opowiadają jedną historię."
+          description="Najlepszy efekt przynosi spójny zestaw materiałów - teczka, wizytówki i strona www."
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Projekt wizytówki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dołącz do teczki wizytówkę w tym samym stylu. Ułatwiasz klientowi kontakt i utrwalasz w pamięci nazwę firmy oraz dane.</p>
+                  <p className="mb-3 text-sm">Dołącz do teczki wizytówkę w tym samym stylu. Dzięki temu ułatwisz klientowi ponowny kontakt i utrwalisz w jego w pamięci swoją firmę.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Zobacz projekt wizytówki
@@ -320,10 +316,10 @@ export default function OfferDesignTeczkaOfertowaPage() {
             },
             {
               icon: <RiFolderOpenLine className="h-8 w-8" />,
-              title: 'Projekt ulotki lub oferty skróconej',
+              title: 'Projekt ulotki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Włóż do teczki skróconą ofertę lub ulotkę z najważniejszymi korzyściami. Klient ma pod ręką zarówno szczegóły, jak i szybkie podsumowanie.</p>
+                  <p className="mb-3 text-sm">Włóż do teczki własną ulotkę z koszyściami płynącymi z Twoich usług.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
                       Zobacz projekt ulotki

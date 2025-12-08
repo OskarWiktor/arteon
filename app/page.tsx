@@ -1,4 +1,5 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
+import ArticlesOverview from '@/components/sections/blog/ArticlesOverview';
 import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBanner from '@/components/sections/HeroBanner';
@@ -208,6 +209,10 @@ export default function HomePage() {
         <Gap variant="line" />
 
         <FeesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesOverview title="Nasze artykuły i poradniki" />
 
         <Gap size="sm" />
       </Wrapper>

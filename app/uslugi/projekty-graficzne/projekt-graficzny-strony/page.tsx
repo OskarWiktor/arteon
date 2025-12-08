@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -154,6 +153,11 @@ export default function OfferDesignXxxPage() {
               description: <>Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji do pełnej akceptacji.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -236,11 +240,15 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów projekt graficzny strony"
+          description="Opisz czym się zajmujesz oraz co chcesz aby było na Twojej stronie. Na tej podstawie przygotujemy wycenę, termin i rekomendacje."
+          defaultSubject="Projekt graficzny strony"
+        />
 
         <Gap variant="line" />
 
@@ -250,45 +258,39 @@ export default function OfferDesignXxxPage() {
           items={[
             {
               question: 'Ile kosztuje projekt graficzny strony?',
-              answer: 'Cena zależy głównie od liczby podstron i poziomu złożoności projektu. Po krótkim zapoznaniu z wymaganiami przedstawimy szczegółową wycenę dopasowaną do Twoich celów.',
+              answer:
+                'Cena zależy głównie od liczby podstron i poziomu złożoności projektu. Po krótkim zapoznaniu z wymaganiami przedstawimy szczegółową wycenę dopasowaną do Twoich indywidualnych celów i potrzeb.',
             },
             {
               question: 'Jak długo trwa przygotowanie projektu strony?',
-              answer: 'Standardowo od 7 do 14 dni roboczych. Czas zależy od liczby podstron i indywidualnych potrzeb UX. Dokładny harmonogram ustalamy przed rozpoczęciem projektu.',
+              answer: 'Standardowo od 5 do 10 dni roboczych. Czas zależy od liczby podstron i indywidualnych potrzeb. Dokładny harmonogram ustalamy przed rozpoczęciem projektu.',
             },
             {
               question: 'Czy projekt graficzny strony obejmuje wersję mobilną?',
-              answer: 'Tak - każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu na różnych ekranach.',
+              answer: 'Tak, każda realizacja obejmuje wersję na komputer, tablet i telefon. Dbamy o pełną responsywność i czytelność układu na różnych ekranach.',
             },
             {
-              question: 'Czy projekt graficzny uwzględnia SEO i UX?',
-              answer: 'Tak - łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja, kontrasty, CTA).',
+              question: 'Czy projekt graficzny uwzględnia myślenie o późniejszym pozycjonowaniu strony?',
+              answer:
+                'Tak, łączymy estetykę z funkcjonalnością. Projekt powstaje z myślą o SEO (hierarchia nagłówków, struktura treści) i UX (intuicyjna nawigacja i struktura strony, czytelność, kontrasty zgodne z WCAG 2.1 AA).',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
-              answer: 'Tak - w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
+              answer: 'Tak, w projekcie przewidujemy rundy poprawek. Dopracowujemy kolory, typografię, układ i elementy wizualne aż do pełnej akceptacji.',
             },
             {
               question: 'W jakim formacie dostanę projekt?',
-              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy też pomóc w bezpośredniej współpracy z deweloperem lub zająć się realizacją strony.',
+              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy również zająć się realizacją strony, co wpłynie na mniejsze koszta',
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer: 'Tak - po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go teraz lub w przyszłości, a także rozwijać o kolejne podstrony na bazie przyjętego systemu.',
+              answer: 'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go odrazu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
             },
             {
-              question: 'Czy mogę zamówić tylko jedną podstronę lub landing page?',
-              answer: 'Tak - projektujemy również pojedyncze ekrany, strony główne i landing page’e. To dobre rozwiązanie przy testach ofert lub kampaniach sprzedażowych.',
+              question: 'Czy mogę zamówić tylko jedną podstronę?',
+              answer: 'Tak, projektujemy również pojedyncze ekrany, strony główne i landing page’e pod pojedyńcze kampanie.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt graficzny strony"
-          description="Opisz branżę, cel strony (leady, sprzedaż, edukacja), zakres podstron i kluczowe funkcje. Na tej podstawie przygotujemy wycenę, termin i rekomendacje UX."
-          defaultSubject="Projekt graficzny strony"
         />
 
         <Gap variant="line" />
@@ -296,14 +298,14 @@ export default function OfferDesignXxxPage() {
         <SectionSteps
           title="Z czym warto połączyć projekt graficzny strony?"
           subtitle="Zobacz też"
-          description="Najlepsze efekty uzyskasz, gdy dopracowany layout od razu łączymy z wdrożeniem, identyfikacją wizualną i treściami."
+          description="Najlepszy efekt uzyskasz, gdy dopracowany układ strony internetowej odrazu zamienisz na w pełni działającą stronę z treściami dopasowanymi do Twojej grupy odbiorczej."
           items={[
             {
               icon: <RiCodeSSlashFill className="h-8 w-8" />,
               title: 'Wdrożenie strony internetowej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Projekt możemy od razu przełożyć na działającą stronę - z uwzględnieniem szybkości, SEO i wygody edycji treści.</p>
+                  <p className="mb-3 text-sm">Projekt możemy od razu przełożyć na działającą stronę - z uwzględnieniem szybkości, SEO i panelem ułatwiającym dalszą edycje treści.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/strony-internetowe">
                       Sprawdź strony internetowe
@@ -313,35 +315,24 @@ export default function OfferDesignXxxPage() {
               ),
             },
             {
-              icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Projekt identyfikacji wizualnej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli Twoja marka nie ma jeszcze spójnego systemu wizualnego, możemy zacząć od identyfikacji, a dopiero potem zaprojektować stronę.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Zobacz identyfikację wizualną
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiBarChart2Fill className="h-8 w-8" />,
-              title: 'Treści i SEO dla strony',
+              title: 'Treści dla strony',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dobrze zaprojektowany layout potrzebuje treści, które realnie sprzedają. Pomagamy ułożyć teksty i strukturę z myślą o SEO i konwersji.</p>
+                  <p className="mb-3 text-sm">
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potenjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
+                    o SEO i wyższej konwersji.
+                  </p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi">
-                      Zobacz usługi treści i SEO
+                    <Button arrow link="/uslugi/tworzenie-tresci">
+                      Zobacz usługi tworzenia treści
                     </Button>
                   </div>
                 </div>
               ),
             },
           ]}
-          grid="three"
+          grid="two"
         />
 
         <Gap variant="line" />

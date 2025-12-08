@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -13,7 +12,7 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -137,6 +136,11 @@ export default function OfferDesignCennikPage() {
               description: <>Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do publikacji na stronie czy mediach społecznościowych. Dostajesz gotową paczkę plików.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -145,7 +149,7 @@ export default function OfferDesignCennikPage() {
         <SectionInfo title="Dla kogo jest projekt cennika?" subtitle="Kiedy ma największy sens?">
           <ul className="ml-5 list-disc space-y-2">
             <li>Masz kilka lub kilkanaście usług / pakietów i klienci dopytują, czym dokładnie się różnią.</li>
-            <li>Obecny cennik powstał tymczasowo w Wordzie lub Excelu i nie pasuje do reszty identyfikacji.</li>
+            <li>Obecny cennik nie pasuje do reszty identyfikacji.</li>
             <li>Chcesz podnieść ceny, ale potrzebujesz lepszej argumentacji wizualnej i logicznej struktury oferty.</li>
             <li>Planujesz wprowadzić pakiety (Standard / Premium / VIP) i chcesz, aby klient naturalnie wybierał właściwą opcję.</li>
             <li>Chcesz mieć jeden spójny wizualnie cennik dla punktu stacjonarnego, strony www i mediów społecznościowych.</li>
@@ -167,55 +171,59 @@ export default function OfferDesignCennikPage() {
           subtitle="Dobieramy format i poziom szczegółowości do Twojej indywidualnej oferty"
           plans={[
             {
-              name: 'Cennik podstawowy',
-              price: 'wycena indywidualna',
-              description: 'Dla mniejszych ofert, gdy chcesz pokazać ceny w czytelnej, estetycznej formie.',
+              name: 'Cennik jednostronicowy',
+              price: '200 zł',
+              description: 'Dla firm z kilkunastoma usługami / produktami',
               features: [
                 'Układ jednej strony cennika (np. A4) z logicznym podziałem na sekcje',
-                'Dopasowanie kolorów i typografii do Twojej identyfikacji wizualnej',
-                'Wersja PDF do druku i wysyłki mailowej',
-                'Ustalenie kierunku i jedna runda korekt po pierwszej prezentacji',
+                'Pliki gotowe do druku i wersja cennika do wykorzystania na stronie i mediach społecznościowych',
+                '2 kierunki wyglądu i jedna runda korekt po pierwszej prezentacji',
+                'Realizacja w 2-3 dni',
               ],
-              btnOne: 'Zamów cennik podstawowy',
+              btnOne: 'Zamów cennik jednostronicowy',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Cennik z pakietami',
-              price: 'wycena indywidualna',
-              description: 'Dla firm, które chcą sprzedawać pakiety (np. Standard / Premium / VIP) i potrzebują wizualnej argumentacji dla wyższych opcji.',
+              name: 'Cennik dwustronicowy',
+              price: '300 zł',
+              description: 'Dla firm, które mają bardziej rozbudowaną ofertę',
               features: [
-                'Projekt cennika z pakietami i wyróżnioną ofertą rekomendowaną',
-                'Czytelne opisy zakresu oraz dopłat i dodatków',
-                'Wersja do druku i wersja pod publikację online',
-                'Ustalenie kierunku i dwie rundy korekt po pierwszej prezentacji',
+                'Projekt cennika z sekcjami / kategoriami różnych usług i/lub pakietami',
+                'Pliki gotowe do druku i wersja cennika do wykorzystania na stronie i mediach społecznościowych',
+                '2 kierunki i dwie rundy korekt po pierwszej prezentacji',
+                'Realizacja w 3-4 dni',
               ],
-              btnOne: 'Porozmawiajmy o cenniku z pakietami',
+              btnOne: 'Zamów cenniku dwustronicowym',
               btnOneLink: '#kontakt',
             },
             {
-              name: 'Cennik rozbudowany / menu',
-              price: 'wycena indywidualna',
-              description: 'Dla restauracji, salonów fryzjerskich, gabinetów i firm z dużą liczbą pozycji - gdy cennik staje się jednocześnie menu lub katalogiem.',
+              name: 'Cennik rozbudowany',
+              price: 'od 400 zł',
+              description: 'Dla restauracji, gabinetów i firm z dużą liczbą pozycji, gdy cennik ma więcej niż 2 strony',
               features: [
-                'Projekt cennika wielosekcyjnego lub wielostronicowego',
-                'Możliwość dodania zdjęć, ikon oraz wyróżników ofert',
-                'Pliki gotowe do druku z wersja online do wykorzystania na stronie i w social mediach ',
-                'Ustalenie kierunku i dwie rundy korekt po pierwszej prezentacji',
+                'Projekt cennika wielostronicowego z podziałem na kategorie usług / produktów',
+                'Pliki gotowe do druku i wersja cennika do wykorzystania na stronie i mediach społecznościowych',
+                '3 kierunki wyglądu i dwie rundy korekt po pierwszej prezentacji',
+                'Realizacja w 5-7 dni',
               ],
               btnOne: 'Zamów projekt rozbudowanego cennika',
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Ostateczna wycena zależy m.in. od liczby pozycji w cenniku, liczby wersji (druk / online / różne lokalizacje), języków oraz tego, czy cennik ma być połączony z innymi materiałami (np. menu, katalogiem, identyfikacją wizualną). Po krótkim briefie przygotujemy konkretną propozycję zakresu i harmonogram prac."
+          legalNote="Podane kwoty są kwotami końcowymi, podanymi na fakturze. Ostateczna wycena zależy od liczby pozycji w cenniku, liczby wersji, języków oraz indywidualnych potrzeb."
         />
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów projekt cennika"
+          description="Opisz, czym się zajmujesz i jak wygląda Twoja oferta. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt cennika"
+        />
 
         <Gap variant="line" />
 
@@ -226,11 +234,11 @@ export default function OfferDesignCennikPage() {
           items={[
             {
               question: 'W jakim formacie przygotujecie cennik?',
-              answer: 'Najczęściej tworzymy cenniki w formacie A4 oraz A5. Możemy dopasować projekt do strony www lub materiałów drukowanych.',
+              answer: 'Najczęściej tworzymy cenniki w formacie A4 oraz A5. Na życzenie możemy przygotować cennik w innym formacie',
             },
             {
               question: 'Czy mogę dodać zdjęcia lub ikony do cennika?',
-              answer: 'Tak. Możemy wzbogacić projekt o grafiki, zdjęcia produktów lub ikony ilustrujące usługi.',
+              answer: 'Tak, możemy wzbogacić projekt o grafiki, zdjęcia produktów lub ikony ilustrujące usługi.',
             },
             {
               question: 'Czy mogę później edytować cennik?',
@@ -238,21 +246,13 @@ export default function OfferDesignCennikPage() {
             },
             {
               question: 'Jak długo trwa realizacja?',
-              answer: 'Zazwyczaj od 3 do 5 dni roboczych. Dla cenników z dużą liczbą pozycji termin ustalamy indywidualnie.',
+              answer: 'Zazwyczaj od 3 do 5 dni roboczych. Dla cenników z dużą liczbą pozycji ( wieloma stronami ) termin ustalamy indywidualnie.',
             },
             {
               question: 'Czy możliwe jest zrealizowanie cennika, który ma wiele stron?',
-              answer: 'Tak - możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem w formie wielostronicowej.',
+              answer: 'Tak, możemy zaprojektować katalog cenowy, menu lub broszurę z cennikiem w formie wielostronicowej.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt cennika"
-          description="Opisz, czym się zajmujesz, jak wygląda dziś Twoja oferta i w jaki sposób pokazujesz ceny. Na tej podstawie przygotujemy propozycję układu, termin oraz wycenę."
-          defaultSubject="Projekt cennika"
         />
 
         <Gap variant="line" />
@@ -260,16 +260,14 @@ export default function OfferDesignCennikPage() {
         <SectionSteps
           title="Z czym warto połączyć projekt cennika?"
           subtitle="Zobacz też"
-          description="Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych - od logo, przez katalog, po identyfikację wizualną i stronę internetową. Z nami możesz zaplanować cały zestaw materiałów graficznych w jednym miejscu, tak aby każdy element opowiadał tę samą historię i pracował na Twój wynik."
+          description="Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych - od logo, przez katalog, po identyfikację wizualną i stronę internetową. Z nami możesz zaplanować cały zestaw materiałów w jednym miejscu, tak aby każdy element opowiadał tę samą historię i pracował na Twój wynik."
           items={[
             {
               icon: <RiTableLine className="h-8 w-8" />,
               title: 'Projekt menu restauracji',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Jeśli prowadzisz restaurację, kawiarnię lub lokal gastronomiczny, możemy od razu zaprojektować menu, które będzie spójne z cennikiem i wystrojem miejsca.
-                  </p>
+                  <p className="mb-3 text-sm">Jeśli prowadzisz restaurację, kawiarnię lub lokal gastronomiczny, możesz sprawdzić dedykowaną ofertę projektów menu dla lokali gastronomicznych.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-menu-restauracji">
                       Zobacz projekt menu
@@ -280,10 +278,10 @@ export default function OfferDesignCennikPage() {
             },
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Katalog lub broszura z ofertą',
+              title: 'Katalog z ofertą',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dla bardziej rozbudowanych usług warto połączyć cennik z katalogiem, w którym pokazujemy szczegóły pakietów, zdjęcia i case studies.</p>
+                  <p className="mb-3 text-sm">Jeśli Twoje usługi są bardziej rozbudowane, warto rozważyć stworzenie katalogu, w którym pokażesz szczegóły, zdjęcia czy też swoje realizacje.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
                       Zobacz projekt katalogu
@@ -294,11 +292,11 @@ export default function OfferDesignCennikPage() {
             },
             {
               icon: <RiPencilRuler2Line className="h-8 w-8" />,
-              title: 'Identyfikacja wizualna i wizytówki',
+              title: 'Identyfikacja wizualna',
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Cennik najlepiej działa, gdy jest spójny z logo, wizytówkami i resztą materiałów. Możemy zacząć od identyfikacji lub dopasować cennik do systemu, który już masz.
+                    Cennik najlepiej działa, gdy jest spójny z logo, wizytówkami i resztą materiałów. Jeśli nie masz jeszcze stylu swojej firmy, możesz rozważyć projekt pełnej identyfikacji wizualnej.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">

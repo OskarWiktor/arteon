@@ -201,10 +201,6 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <SectionPrices
           id="pricing-web"
           subtitle="Przykładowe realizacje"
@@ -289,6 +285,10 @@ export default function OfferWebPage() {
 
       <Wrapper>
         <Gap />
+
+        <FeesSteps />
+
+        <Gap variant="line" />
 
         <WorkSteps variant="web" />
 

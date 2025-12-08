@@ -86,21 +86,21 @@ export default function SectionPrices({
               )}
 
               <div>
-                <h4 id={itemHeadingId} className="reveal-animation text-xl font-semibold text-[#0a0a0a]">
+                <h4 id={itemHeadingId} className="reveal-animation h5 text-xl font-semibold text-[#0a0a0a]">
                   {plan.name}
                 </h4>
 
                 {plan.platform && (
-                  <span id={itemPlatformId} className="mt-1 block text-sm text-[#5e5e5e]">
+                  <span id={itemPlatformId} className="mt-1 block text-sm">
                     {plan.platform}
                   </span>
                 )}
 
                 <p id={itemPriceId} className="mt-4">
-                  <span className="text-2xl font-semibold tracking-tight text-[#0a0a0a]">{plan.price}</span>
+                  <span className="text-xl font-semibold tracking-tight text-[#0a0a0a]">{plan.price}</span>
                 </p>
 
-                <p id={itemDescId} className="mt-2 text-[15px] leading-relaxed text-[#3a3a3a]">
+                <p id={itemDescId} className="mt-2 text-[15px] leading-relaxed">
                   {plan.description}
                 </p>
 
@@ -114,7 +114,7 @@ export default function SectionPrices({
                       >
                         <RiCheckFill className="h-3.5 w-3.5" />
                       </span>
-                      <span className="text-sm leading-relaxed text-[#222]">{f}</span>
+                      <span className="text-base leading-relaxed">{f}</span>
                     </li>
                   ))}
                 </ul>

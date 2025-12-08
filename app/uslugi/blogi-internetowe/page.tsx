@@ -205,10 +205,6 @@ export default function OfferBlogPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <SectionPrices
           id="pricing-blogs"
           subtitle="Przykładowe pakiety"
@@ -296,6 +292,10 @@ export default function OfferBlogPage() {
 
       <Wrapper>
         <Gap />
+
+        <FeesSteps />
+
+        <Gap variant="line" />
 
         <WorkSteps variant="web" />
 

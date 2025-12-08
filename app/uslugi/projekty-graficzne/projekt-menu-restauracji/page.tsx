@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -185,6 +184,14 @@ export default function OfferDesignMenuPage() {
 
         <Gap variant="line" />
 
+        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel />
+
+        <Gap variant="line" />
+
         <SectionPrices
           title="Projekt menu restauracji - przykładowe pakiety"
           subtitle="Zakres dopasowany do wielkości lokalu i karty"
@@ -237,19 +244,15 @@ export default function OfferDesignMenuPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
-        <TestimonialsCarousel />
-
-        <Gap variant="line" />
-
-        <FeesSteps />
-
-        <Gap variant="line" />
-
         <WorkSteps variant="design" />
+
+        <Gap variant="line" />
+
+        <ContactForm
+          title="Zamów projekt menu dla swojego lokalu"
+          description="Opisz jakie dania są dostępne w Twojej restauracji oraz jaki masz pomysł na swoje menu. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt menu restauracji"
+        />
 
         <Gap variant="line" />
 
@@ -259,34 +262,26 @@ export default function OfferDesignMenuPage() {
           title="Najczęstsze pytania dotyczące projektów menu restauracyjnego"
           items={[
             {
-              question: 'W jakich formatach projektujecie menu?',
-              answer: 'Najczęściej pracujemy w formatach A4, DL lub formatach składanych (np. A3 na pół), ale możemy dostosować projekt do wymiarów kart używanych w Twoim lokalu.',
+              question: 'W jakich formatach najczęściej projektujecie menu?',
+              answer: 'Najczęściej pracujemy w formatach A5, A4 i DL lub formatach składanych (np. A3 na pół), ale możemy dostosować projekt do wymiarów kart używanych w Twoim lokalu.',
             },
             {
               question: 'Czy mogę otrzymać wersję do publikacji online?',
-              answer: 'Tak - przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie, w social mediach oraz do wykorzystania w kodach QR.',
+              answer: 'Tak, przygotowujemy wersje cyfrowe (PDF, PNG, JPG) do publikacji na stronie internetowej oraz mediach społecznościowych.',
             },
             {
               question: 'Czy możliwe jest przygotowanie wersji wielojęzycznej menu?',
-              answer: 'Tak - możemy zaprojektować menu w dwóch wersjach językowych lub w jednej karcie z kilkoma językami, przy zachowaniu czytelności i porządku.',
+              answer: 'Tak, możemy zaprojektować menu w kilku wersjach językowych lub umieścić kilka języków w jednej karcie, przy zachowaniu pełnej czytelności.',
             },
             {
-              question: 'Jak długo trwa realizacja projektu?',
-              answer: 'Zazwyczaj 3-5 dni roboczych przy standardowej karcie. Przy rozbudowanych menu z wieloma pozycjami i językami termin ustalamy indywidualnie.',
+              question: 'Jak długo trwa realizacja projektu menu?',
+              answer: 'Zazwyczaj realizacja menu trwa od 3 do 5 dni roboczych. Przy rozbudowanych menu z wieloma pozycjami i językami termin ustalamy indywidualnie.',
             },
             {
               question: 'Czy mogę zlecić późniejszą aktualizację menu?',
-              answer: 'Tak - oferujemy aktualizacje sezonowe oraz modyfikacje cen czy składów. Na życzenie przygotowujemy także pliki źródłowe, które umożliwiają samodzielną edycję.',
+              answer: 'Tak, oferujemy aktualizacje sezonowe oraz modyfikacje cen czy składów. Na życzenie przygotowujemy także pliki źródłowe, które umożliwiają samodzielną edycję.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt menu dla swojego lokalu"
-          description="Opisz rodzaj lokalu (restauracja, bistro, kawiarnia, bar), liczbę pozycji w menu oraz format, który Cię interesuje. Możesz dodać aktualną kartę w załączniku - na tej podstawie przygotujemy wycenę i propozycję układu."
-          defaultSubject="Projekt menu restauracji"
         />
 
         <Gap variant="line" />
@@ -294,14 +289,14 @@ export default function OfferDesignMenuPage() {
         <SectionSteps
           title="Jak jeszcze możesz wzmocnić wizerunek swojego lokalu?"
           subtitle="Zobacz też"
-          description="Menu to centrum komunikacji w lokalu. Jeszcze lepiej działa, gdy otacza je spójny system materiałów - od ulotek po social media."
+          description="Menu to centrum komunikacji firm gastronomicznych. Jeszcze lepiej działa, gdy otacza je spójny system materiałów - od ulotek po media społecznościowe i stronę internetową."
           items={[
             {
               icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Projekt ulotki lub karty lunchowej',
+              title: 'Projekt ulotk',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dodaj do menu ulotkę z ofertą lunchową lub sezonową. Goście łatwiej zabiorą Twoją ofertę „na potem”.</p>
+                  <p className="mb-3 text-sm">Dodaj do menu ulotkę z ofertą sezonową. Goście z chęcią sprawdzą Twoją ofertę sezonową lub promocyjną.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
                       Zobacz projekt ulotki
@@ -315,7 +310,7 @@ export default function OfferDesignMenuPage() {
               title: 'Szablony postów do social mediów',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Pokaż swoje menu w social mediach w spójnej formie. Szablony przyspieszą publikacje i wzmocnią klimat marki.</p>
+                  <p className="mb-3 text-sm">Pokaż swoje menu w mediach społecznościowych w spójnej formie. Szablony przyspieszą publikacje i wzmocnią wizerunek Twojej firmy.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
                       Zobacz szablony postów
@@ -324,8 +319,24 @@ export default function OfferDesignMenuPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Strony internetowe',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Twoje menu może zawierać kod QR, który odsyła klientów na stronę, na której możesz zamieszczać nowe pozycje w menu czy też wprowadzić system składania zamówień.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
+                      Zobacz ofertę stworzenia strony internetowej
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
-          grid="two"
+          grid="three"
         />
 
         <Gap variant="line" />

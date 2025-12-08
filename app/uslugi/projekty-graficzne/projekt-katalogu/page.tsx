@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine, RiLayoutLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -17,6 +16,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
+import Button from '@/components/ui/Button';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata = {
   title: 'Projekt katalogu | Arteon',
@@ -148,6 +149,11 @@ export default function OfferDesignKatalogPage() {
               description: <>W cenie przewidujemy poprawki. Razem ustalamy układ, kolejność sekcji, wyróżniki ofertowe i sposób prezentacji cen.</>,
               icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -233,11 +239,15 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów projekt katalogu"
+          description="Opisz jaką ofertę chcesz przedstawić w katalogu i jak chcesz aby on wyglądał. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Projekt katalogu"
+        />
 
         <Gap variant="line" />
 
@@ -247,12 +257,13 @@ export default function OfferDesignKatalogPage() {
           items={[
             {
               question: 'Ile kosztuje projekt katalogu?',
-              answer: 'Cena zależy od liczby stron, ilości zdjęć, stopnia rozbudowania treści oraz języków. Po krótkim briefie otrzymasz szczegółową wycenę dopasowaną do zakresu i celu katalogu.',
+              answer:
+                'Cena zależy od liczby stron, ilości zdjęć, stopnia rozbudowania treści oraz języków. Po zapoznaniu się z Twoimi potrzebami przygotujemy szczegółową wycenę dopasowaną do zakresu prac i celu katalogu.',
             },
             {
               question: 'Jak długo trwa wykonanie projektu katalogu?',
               answer:
-                'Standardowy czas realizacji wynosi 7-14 dni roboczych. Projekty rozbudowane (powyżej 20 stron) mogą wymagać dodatkowego czasu - dokładny harmonogram ustalamy indywidualnie przed startem.',
+                'Standardowy czas realizacji wynosi 7-10 dni roboczych. Projekty rozbudowane (powyżej 20 stron) mogą wymagać dodatkowego czasu - dokładny harmonogram ustalamy indywidualnie przed startem.',
             },
             {
               question: 'W jakich formatach dostanę katalog?',
@@ -262,66 +273,53 @@ export default function OfferDesignKatalogPage() {
             {
               question: 'Czy mogę zgłosić poprawki do projektu katalogu?',
               answer:
-                'Tak - każda realizacja obejmuje rundy poprawek. Dopracowujemy układ, zdjęcia, typografię i sposób prezentacji treści, aż katalog będzie spójny z Twoją marką i celami sprzedażowymi.',
+                'Tak, każda realizacja obejmuje rundy poprawek. Dopracowujemy układ, zdjęcia, typografię i sposób prezentacji treści, aż katalog będzie spójny z Twoją wizją, marką i celami sprzedażowymi.',
             },
             {
-              question: 'Czy mogę dostarczyć własne zdjęcia i teksty?',
-              answer:
-                'Tak - możesz dostarczyć gotowe materiały lub zlecić nam ich opracowanie. W razie potrzeby dobieramy zdjęcia ze stocków i redagujemy treści tak, aby były czytelne i zachęcały do kontaktu.',
-            },
-            {
-              question: 'Czy projekt katalogu jest gotowy do druku?',
-              answer: 'Tak - pliki przygotowujemy zgodnie ze standardami drukarni (spady, marginesy, profile ICC, kolory CMYK). Możesz od razu przekazać katalog do druku w wybranej drukarni.',
+              question: 'Czy projekt katalogu będzie gotowy do druku?',
+              answer: 'Tak, pliki przygotowujemy zgodnie ze standardami drukarni (spady, marginesy, profile ICC, kolory CMYK). Możesz od razu przekazać katalog do druku w wybranej drukarni.',
             },
             {
               question: 'Czy wykonujecie skład DTP większych publikacji?',
-              answer: 'Tak - zajmujemy się pełnym składem katalogów, folderów i broszur. Dbamy o hierarchię, odstępy, siatkę i czytelność, także w projektach liczących dziesiątki stron.',
+              answer: 'Tak, zajmujemy się pełnym składem katalogów, folderów i broszur. Dbamy o hierarchię, odstępy, siatkę i czytelność, także w projektach liczących dziesiątki stron.',
             },
             {
               question: 'Czy mogę zamówić katalog w języku obcym?',
-              answer: 'Tak - wykonujemy katalogi jedno- i wielojęzyczne, z zachowaniem spójnej typografii i układu. Możemy też doradzić, jak najlepiej zaprezentować treści w kilku językach.',
+              answer: 'Tak, wykonujemy katalogi jedno i wielojęzyczne, z zachowaniem spójnej typografii i układu. Możemy też doradzić, jak najlepiej zaprezentować treści w kilku językach.',
             },
           ]}
         />
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt katalogu"
-          description="Podaj planowaną liczbę stron, rodzaj produktów lub usług, które chcesz pokazać, oraz czy masz już zdjęcia i teksty. Na tej podstawie przygotujemy wycenę, propozycję układu i harmonogram składu."
-          defaultSubject="Projekt katalogu"
-        />
-        {/* 
-        <Gap variant="line" />
-
         <SectionSteps
-          title="Z czym najlepiej połączyć katalog?"
+          title="Z czym najlepiej połączyć projekt katalogu?"
           subtitle="Zobacz też"
-          description="Katalog działa jeszcze lepiej, gdy jest częścią większego systemu materiałów. Możesz rozszerzyć go o dodatkowe nośniki."
+          description="Katalog najlepiej działa, gdy wspiera go strona internetowa lub sklep."
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Folder ofertowy lub prezentacja PDF',
+              title: 'Sklep internetowy z ofertą katalogową',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Krótszy folder lub prezentacja streszcza najważniejsze elementy katalogu - idealne na szybkie spotkania i oferty mailowe.</p>
+                  <p className="mb-3 text-sm">Przy tworzeniu katalogu, warto rozważyć stworzenie sklepu internetowego w którym kliencie będą mogli zakupić przedstawione w katalogu produkty</p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-folderu">
-                      Zobacz projekty folderów
+                    <Button arrow link="/uslugi/sklepy-internetowe">
+                      Zobacz ofertę sklepów internetowych
                     </Button>
                   </div>
                 </div>
               ),
             },
             {
-              icon: <RiImageLine className="h-8 w-8" />,
-              title: 'Key visual i grafiki do social mediów',
+              icon: <RiLayoutLine className="h-8 w-8" />,
+              title: 'Strona internetowa z usługami z katalogu',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Spójne grafiki do kampanii w social mediach pomagają kierować ruch do katalogu online i strony internetowej.</p>
+                  <p className="mb-3 text-sm">Jeśli Twój katalog jest skupiony wokół usług, warto rozważyć stronę internetową przez którą, Twoi kliencie będą mogli się z Tobą skontaktować</p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
-                      Zobacz szablony postów
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
+                      Zobacz ofertę stworzenia strony internetowej
                     </Button>
                   </div>
                 </div>
@@ -329,7 +327,7 @@ export default function OfferDesignKatalogPage() {
             },
           ]}
           grid="two"
-        /> */}
+        />
 
         <Gap variant="line" />
 

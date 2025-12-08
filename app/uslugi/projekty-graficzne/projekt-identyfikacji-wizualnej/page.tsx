@@ -3,9 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine } from 'react-icons/ri';
+import { RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
@@ -166,6 +165,11 @@ export default function OfferDesignXxxPage() {
               description: <>Otrzymujesz komplet plików do codziennej pracy: wersje do druku, internetu i mediów społecznościowych.</>,
               icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+            },
           ]}
         />
 
@@ -248,11 +252,15 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów identyfikację wizualną"
+          description="Opisz czym się zajmujesz i jakich materiałów potrzebujesz dla swojej firmy. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          defaultSubject="Identyfikacja wizualna"
+        />
 
         <Gap variant="line" />
 
@@ -263,50 +271,42 @@ export default function OfferDesignXxxPage() {
             {
               question: 'Ile kosztuje identyfikacja wizualna?',
               answer:
-                'Cena zależy od zakresu prac: logo, paleta kolorów, typografia, materiały firmowe i ewentualny brandbook. Po krótkim briefie otrzymasz indywidualną wycenę dopasowaną do potrzeb Twojej marki.',
+                'Cena zależy od zakresu prac, które wchodzą w Twoją identyfikację: logo, paleta kolorów, typografia, materiały firmowe. Po zapoznaniu się z Twoją ofertą i Twoimi celami, wspólnie ustalimy jakie materiały przyniosą Ci największe korzyści.',
             },
             {
               question: 'Jak długo trwa stworzenie identyfikacji wizualnej?',
-              answer:
-                'Standardowo projekt trwa od 10 do 20 dni roboczych, w zależności od liczby elementów i liczby rund poprawek. Dokładny harmonogram ustalamy indywidualnie na początku współpracy.',
+              answer: 'Standardowo projekt trwa od 5 do 12 dni roboczych, w zależności od liczby elementów i liczby rund poprawek. Dokładny harmonogram ustalamy indywidualnie na początku współpracy.',
             },
             {
               question: 'Co zawiera kompletna identyfikacja wizualna?',
               answer:
-                'Zazwyczaj: logo w kilku wariantach, paletę kolorów, typografię, wzory wizytówek, papierów firmowych, teczek oraz podstawowe grafiki do social mediów. Na życzenie rozszerzamy zakres o brandbook i dodatkowe szablony.',
+                'Zazwyczaj: logo w kilku wariantach, paletę kolorów, typografię, wzory wizytówek, papierów firmowych, teczek oraz grafiki do mediów społecznościowych. Dokładny zakres elementów wchodzących w skład indetyfikacji wizualnej ustalamy wspólnie przed rozpoczęciem prac.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
               answer:
-                'Tak - każda identyfikacja obejmuje rundy poprawek. Wspólnie dopracowujemy układ, kolorystykę i styl, aż efekt będzie spójny z wizją Twojej marki i komfortowy w codziennym użyciu.',
+                'Tak, każde element identyfikacji omawiamy dając Ci pełne pole do naniesienia poprawek, tak aby projekt odpowiadał dokładnie Twojej wizji i Twoim potrzebom. Wspólnie dopracowujemy układ, kolorystykę i styl.',
             },
             {
               question: 'Czy mogę zamówić samo logo bez całego systemu?',
-              answer: 'Tak - projekt logo może być osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną, opartą na już istniejącym znaku.',
+              answer: 'Tak, sam projekt logo jest osobną usługą. W dowolnym momencie możesz rozszerzyć go o pełną identyfikację wizualną, opartą na już istniejącym znaku.',
             },
             {
               question: 'Czy dostanę pliki gotowe do druku i internetu?',
-              answer: 'Tak - przekazujemy pliki wektorowe i rastrowe, wersje do druku, internetu i mediów społecznościowych oraz mini-księgę znaku z zasadami użycia, aby ułatwić wdrożenie w firmie.',
+              answer:
+                'Tak, przekazujemy pliki żródłowe, wersje do druku, internetu i mediów społecznościowych, tak abyś miał pełny dostęp do wszystkich materiałów z możliwością edycji w dowolnym momencie.',
             },
             {
               question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
               answer:
-                'Tak - przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej branży i grupy docelowej.',
+                'Tak, przed rozpoczęciem pracy, analizujemy Twoją branże i Twoją ofertę, przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej grupy docelowej.',
             },
             {
               question: 'Czy mogę zamówić brandbook do identyfikacji?',
               answer:
-                'Tak - opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
+                'Tak, opracowujemy brandbook z wytycznymi: logo, kolory, typografia, siatki, przykłady użycia i zakazane zastosowania. To podstawa spójnej komunikacji w firmie i wygodna instrukcja dla podwykonawców.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów identyfikację wizualną"
-          description="Napisz, w jakiej branży działasz, jakie materiały są dla Ciebie kluczowe (online i druk) oraz czy masz już logo. Przygotujemy propozycję zakresu, wycenę i harmonogram prac."
-          defaultSubject="Identyfikacja wizualna"
         />
 
         <Gap variant="line" />
@@ -314,42 +314,14 @@ export default function OfferDesignXxxPage() {
         <SectionSteps
           title="Z czym warto połączyć identyfikację wizualną?"
           subtitle="Zobacz też"
-          description="Najwięcej zyskujesz, gdy spójny system wizualny od razu przenosimy na kluczowe punkty styku z klientami."
+          description="Najwięcej zyskujesz, gdy nowy system wizualny odrazu wdrożysz we wszystkich miejcach."
           items={[
             {
-              icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Projekt logo',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli masz dopiero zalążek pomysłu na logo lub znak, możemy od niego zacząć i dopiero potem rozwinąć pełną identyfikację wizualną.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-logo">
-                      Sprawdź projekt logo
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiIdCardLine className="h-8 w-8" />,
-              title: 'Wizytówki i materiały firmowe',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Wizytówki, papiery firmowe i teczki to pierwsze materiały, które realnie pracują w relacjach B2B. Warto od razu mieć je w nowym stylu.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekty wizytówek
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
               icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Strona internetowa w nowej identyfikacji',
+              title: 'Strona internetowa',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Nowa identyfikacja najlepiej działa, gdy od razu przeniesiesz ją na stronę. Projektujemy i wdrażamy strony spójne z Twoim systemem wizualnym.</p>
+                  <p className="mb-3 text-sm">Nowa identyfikacja najlepiej zadziała, gdy od razu przeniesiesz ją na stronę. Projektujemy i wdrażamy strony spójne z Twoim systemem.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/strony-internetowe">
                       Sprawdź strony internetowe
@@ -358,8 +330,25 @@ export default function OfferDesignXxxPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiBarChart2Fill className="h-8 w-8" />,
+              title: 'Treści dla strony',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potenjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
+                    o SEO i wyższej konwersji.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/tworzenie-tresci">
+                      Zobacz usługi tworzenia treści
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
-          grid="three"
+          grid="two"
         />
 
         <Gap variant="line" />

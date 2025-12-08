@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -13,7 +12,7 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiVipCrownLine, RiCoupon2Line, RiPencilRuler2Line } from 'react-icons/ri';
+import { RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiVipCrownLine, RiCoupon2Line, RiPencilRuler2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -92,15 +91,15 @@ export default function OfferDesignKartaPage() {
 
         <SectionInfo title="Dlaczego warto zainwestować w karty lojalnościowe?">
           <p>
-            <strong>Karty lojalnościowe realnie zwiększają liczbę powrotów klientów.</strong> To proste narzędzie, które wzmacnia nawyk: „wracam do tej samej firmy, bo dzięki temu mam konkretne
-            korzyści”. W efekcie zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
+            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> To proste narzędzie marketingowe, które wzmacnia lojalność Towich klientów: „wracam do tej firmy, bo
+            dzięki temu, mam dodatkowe korzyści”. W efekcie zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
           </p>
 
           <br />
 
           <p>
-            <strong>Estetyka ma znaczenie.</strong> Dobrze zaprojektowana karta staje się częścią wizerunku firmy - wygląda profesjonalnie, budzi pozytywne emocje i nie „ginie” w portfelu. Klient
-            chętniej ją zachowuje i częściej o niej pamięta.
+            <strong>Estetyka ma znaczenie.</strong> Dobrze zaprojektowana karta staje się spójną częścią wizerunku firmy - wygląda profesjonalnie, budzi pozytywne emocje i nie „ginie” w portfelu.
+            Klient chętniej ją zachowuje i częściej o niej pamięta.
           </p>
 
           <br />
@@ -111,12 +110,12 @@ export default function OfferDesignKartaPage() {
           <ul className="ml-5 list-disc">
             <li>Motywuje do powrotu poprzez jasne i atrakcyjne nagrody,</li>
             <li>Wzmacnia więź klienta z marką i ułatwia budowanie zaufania,</li>
-            <li>Promuje firmę dzięki estetycznej formie, którą klient nosi przy sobie.</li>
+            <li>Promuje firmę dzięki estetycznej formie, którą klient nosi często przy sobie.</li>
           </ul>
 
           <br />
 
-          <p>Z perspektywy biznesu to jeden z najtańszych sposobów na podniesienie przychodów - zamiast szukać nowych klientów, zatrzymuje na dłużej osoby, które już znają Twoją markę.</p>
+          <p>Z perspektywy biznesu to jeden z najtańszych sposobów na podniesienie przychodów - zamiast szukać nowych klientów, zatrzymujesz na dłużej tych, którzy już znają Twoją markę.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -148,8 +147,13 @@ export default function OfferDesignKartaPage() {
             },
             {
               title: 'Numeracje i pola pieczątek',
-              description: <>Projektujemy czytelne pola na pieczątki, podpisy lub oznaczenia nagród. Dzięki temu obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.</>,
+              description: <>Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia nagród. Dzięki temu obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.</>,
               icon: <RiCoupon2Line className="h-6 w-6 text-slate-500" />,
+            },
+            {
+              title: 'Faktura po realizacji',
+              description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -158,23 +162,19 @@ export default function OfferDesignKartaPage() {
 
         <SectionInfo title="Dla kogo jest karta lojalnościowa?" subtitle="Kiedy ten projekt szybko się zwraca?">
           <p>
-            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient wracał regularnie - nawet kilka lub kilkanaście razy w roku. Oto kilka branż w których posiadanie
-            karty lojalnościowej jest niezwykle skuteczne:
+            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient wracał regularnie - kilka lub kilkanaście razy w roku. Oto kilka branż w których posiadanie karty
+            lojalnościowej jest niezwykle skuteczne:
           </p>
 
           <br />
 
           <ul className="ml-5 list-disc space-y-2">
-            <li>Salony beauty, fryzjerzy, barberzy - regularne wizyty i łatwiejsze rekomendacje.</li>
-            <li>Kawiarnie i lokale gastronomiczne - programy typu „zbierz pieczątki i odbierz nagrodę”.</li>
-            <li>Siłownie, studia treningowe, zajęcia grupowe - wsparcie utrzymania karnetów i dłuższej współpracy.</li>
-            <li>Butiki, sklepy stacjonarne - zniżki dla stałych klientów, promowanie częstszych zakupów.</li>
-            <li>Gabinetowe usługi specjalistyczne - łatwy sposób na przypomnienie o kolejnych wizytach.</li>
+            <li>Salony beauty, fryzjerzy, barberzy</li>
+            <li>Kawiarnie i lokale gastronomiczne</li>
+            <li>Siłownie, studia treningowe, zajęcia grupowe</li>
+            <li>Butiki, sklepy stacjonarne</li>
+            <li>Gabinety usług specjalistycznych</li>
           </ul>
-
-          <br />
-
-          <p>Karta lojalnościowa może stać się prostym argumentem, który zamienia jednorazowych klientów w stałych bywalców.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -189,18 +189,18 @@ export default function OfferDesignKartaPage() {
 
         <SectionPrices
           title="Projekt karty lojalnościowej - przykładowe zakresy"
-          subtitle="Dobieramy zakres do wielkości programu i liczby lokalizacji"
+          subtitle="Dobieramy zakres do wielkości programu, liczby lokalizacji i indywidualnych potrzeb"
           plans={[
             {
-              name: 'Pojedyncza karta dla jednego lokalu',
-              price: 'wycena indywidualna',
-              description: 'Dla salonu, kawiarni lub butiku, który chce wprowadzić prosty i czytelny program lojalnościowy w jednym miejscu.',
+              name: 'Karta lojalnościowa w formie wizytówki',
+              price: '250 zł',
+              description: 'Dla salonu, kawiarni lub butiku, który chce wprowadzić prosty i czytelny program lojalnościowy',
               features: [
                 'Konsultacja założeń programu (liczba pól, rodzaj nagrody)',
                 'Projekt karty w formacie wizytówki',
-                'Spójność z Twoim logo i identyfikacją wizualną',
+                'Spójność z Twoim identyfikacją wizualną',
                 'Plik gotowy do druku',
-                'Ustalenie kierunku i dwie rundy korekt',
+                '2 kierunki wyglądu i jedna runda korekt po pierwszej prezentacji',
               ],
               btnOne: 'Zamów wycenę karty dla jednego lokalu',
               btnOneLink: '#kontakt',
@@ -239,11 +239,15 @@ export default function OfferDesignKartaPage() {
 
         <Gap variant="line" />
 
-        <FeesSteps />
+        <WorkSteps variant="design" />
 
         <Gap variant="line" />
 
-        <WorkSteps variant="design" />
+        <ContactForm
+          title="Zamów projekt karty lojalnościowej"
+          description="Opisz, czym się zajmujesz i jak chcesz nagradzać swoich klientów. Przygotujemy propozycję układu, wycenę i termin realizacji."
+          defaultSubject="Projekt karty lojalnościowej"
+        />
 
         <Gap variant="line" />
 
@@ -254,32 +258,24 @@ export default function OfferDesignKartaPage() {
           items={[
             {
               question: 'W jakich formatach wykonujecie karty?',
-              answer:
-                'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki (np. 85 x 55 mm). Jeśli potrzebujesz innego formatu - dopasujemy projekt do wymagań Twojej drukarni lub specyfiki branży.',
+              answer: 'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki ( 85 x 55 mm). Jeśli potrzebujesz innego formatu dopasujemy projekt.',
             },
             {
               question: 'Czy mogę dodać logo i kolory marki na kartę lojalnościową?',
-              answer: 'Tak - projekt zawsze opiera się na Twoim wizerunku. Korzystamy z logo, kolorów i stylu identyfikacji wizualnej, aby zachować pełną spójność materiałów.',
+              answer: 'Tak, projekt zawsze opiera się na Twoim dotychczasowym wizerunku. Korzystamy z logo, kolorów i stylu identyfikacji wizualnej, aby zachować pełną spójność materiałów.',
             },
             {
               question: 'Jak długo trwa realizacja kart lojalnościowych?',
-              answer: 'Standardowo przygotowanie projektu wraz z plikami do druku trwa od 3 do 5 dni roboczych. Przy większej liczbie wariantów lub sieci punktów termin ustalamy indywidualnie.',
+              answer: 'Standardowo przygotowanie projektu trwa od 3 do 5 dni roboczych. Przy większej liczbie wariantów termin ustalamy indywidualnie.',
             },
             {
               question: 'Czy mogę zamówić serię różnych kart lojalnościowych?',
               answer:
-                'Tak - możemy przygotować serię spójną wizualnie dla wielu punktów, lokalizacji lub marek partnerskich. Dzięki temu program jest łatwy do zrozumienia, a jednocześnie dopasowany do konkretnych miejsc.',
+                'Tak, możemy przygotować serię spójną wizualnie dla wielu punktów, lokalizacji lub marek partnerskich. Dzięki temu program jest łatwy do zrozumienia, a jednocześnie dopasowany do konkretnych miejsc.',
             },
           ]}
         />
 
-        <Gap variant="line" />
-
-        <ContactForm
-          title="Zamów projekt karty lojalnościowej"
-          description="Opisz, w jakiej branży działasz, jak chcesz nagradzać swoich klientów oraz ile różnych kart potrzebujesz. Na tej podstawie przygotujemy propozycję układu, wycenę i termin realizacji."
-          defaultSubject="Projekt karty lojalnościowej"
-        />
         {/* 
         <Gap variant="line" />
 
