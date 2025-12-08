@@ -16,6 +16,7 @@ import { getAllArticles, findArticleBySlug, getPrimaryCategorySlug } from '@/lib
 import { slugify } from '@/utils/slug';
 import CodeBlock from '@/components/ui/CodeBlock';
 import TableBlock from '@/components/ui/TableBlock';
+import ArticlesOverview from '@/components/sections/blog/ArticlesOverview';
 
 const siteUrl = 'https://www.arteonagency.pl';
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
@@ -338,6 +339,12 @@ export default function ArticlePage({ params }: { params: { category: string; sl
         </div>
 
         <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
+      </Wrapper>
+
+      <Wrapper>
+        <Gap />
+
+        <ArticlesOverview title="Sprawdź inne artykuły i poradniki" />
       </Wrapper>
 
       <Gap />
