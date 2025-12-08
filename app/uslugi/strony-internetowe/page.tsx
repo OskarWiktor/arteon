@@ -208,8 +208,8 @@ export default function OfferWebPage() {
           plans={
             [
               {
-                name: 'Strona wizytówka WordPress',
-                price: '1 600 - 2 000 zł',
+                name: 'Strona wizytówka',
+                price: '1 000 - 1 200 zł',
                 description: 'Szybki start. Jednostronicowa witryna z nowoczesnym wyglądem',
                 features: [
                   'Jedna strona z klarowną strukturą i sekcjami dopasowanymi do biznesu',
@@ -225,11 +225,11 @@ export default function OfferWebPage() {
                 btnOneLink: '#kontakt',
               },
               {
-                name: 'Strona firmowa WordPress',
-                price: '3 500 - 5 500 zł',
-                description: 'Kompletna strona dla firmy. Zawiera od 6 do 10 podstron. Idealna dla małych i średnich biznesów.',
+                name: 'Strona firmowa',
+                price: '1 600 - 2 200 zł',
+                description: 'Kompletna strona dla firmy. Idealna dla małych i średnich biznesów.',
                 features: [
-                  '2-6 podstron dopasowanych do oferty i usług',
+                  '3-6 podstron dopasowanych do oferty i usług',
                   'Strategia treści oraz analiza konkurencji w cenie',
                   'Spójna architektura informacji oraz wygląd',
                   'SEO techniczne i redakcja treści w cenie',
@@ -244,14 +244,12 @@ export default function OfferWebPage() {
               },
               {
                 name: 'Strona firmowa Premium',
-                platform: 'Webflow',
-                price: '5 500 - 8 000 zł',
-                description: 'Rozwiązanie premium dla marek, które stawiają na wizerunek. Zgodność z międzynarodowymi przepisami o dostępności',
+                price: '2 200 - 2 800 zł',
+                description: 'Rozwiązanie dla firm z rozbudowaną ofertą.',
                 features: [
-                  '6-14 podstron',
+                  '8-10 podstron',
                   'Projekt graficzny strony premium - więcej możliwości dzięki technologii',
                   'SEO techniczne i redakcja treści w cenie',
-                  'Zgodność z WCAG 2.1 AA + Deklaracja Dostępności',
                   'Wybrane integracje oraz dedykowane funkcjonalności',
                   'Zaawansowana optymalizacja szybkości i bezpieczeństwa',
                   'Darmowe wsparcie prawne - polityka prywatności, regulaminy',

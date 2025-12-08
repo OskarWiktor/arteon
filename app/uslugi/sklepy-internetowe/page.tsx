@@ -257,11 +257,10 @@ export default function OfferWebPage() {
             [
               {
                 name: 'Sklep mały',
-                platform: 'WordPress / WooCommerce',
-                price: '4 000 - 6 000 zł',
+                price: '2 000 - 3 000',
                 description: 'Bezpieczny start sprzedaży online. Prosty w obsłudze, szybki i przygotowany pod SEO - gotowy, by zacząć sprzedawać od pierwszego dnia.',
                 features: [
-                  'Do 50 produktów',
+                  'Do 20 produktów',
                   'Płatności online i dostawy skonfigurowane pod Twój rynek',
                   'SEO techniczne i redakcja treści',
                   'Przejrzyste kategorie i wygodne wyszukiwanie',
@@ -275,11 +274,10 @@ export default function OfferWebPage() {
               },
               {
                 name: 'Sklep średni',
-                platform: 'WordPress / WooCommerce',
-                price: '10 000 - 13 000 zł',
-                description: 'Sklep dla rosnącej marki. Setki produktów, promocje, kody rabatowe i zaplecze marketingowe, które napędza wyniki.',
+                price: '3 000 - 4 000 zł',
+                description: 'Sklep dla rosnącej marki. Promocje, kody rabatowe i zaplecze marketingowe, które napędza wyniki.',
                 features: [
-                  'Do 300 produktów',
+                  'Do 60 produktów',
                   'Zaawansowane filtry i wyszukiwarka produktów',
                   'Zestawy, kupony, promocje i listy życzeń',
                   'Integracje płatności i dostaw dopasowane do branży',
@@ -294,11 +292,10 @@ export default function OfferWebPage() {
               },
               {
                 name: 'Sklep premium',
-                platform: 'Webflow Ecommerce',
-                price: '20 000 - 28 000 zł',
+                price: '4 000 - 6 000 zł',
                 description: 'Wygląd premium i płynne doświadczenie zakupowe. Szybki, elastyczny, gotowy na rozwój międzynarodowy.',
                 features: [
-                  'Do 1000 produktów',
+                  'Od 60 produktów',
                   'Projekt graficzny premium - więcej możliwości dzięki technologii',
                   'Najwyższy poziom SEO technicznego',
                   'Koszyk, checkout i integracje płatności skonfigurowane pod sprzedaż',

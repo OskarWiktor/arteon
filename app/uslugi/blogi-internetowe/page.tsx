@@ -213,8 +213,7 @@ export default function OfferBlogPage() {
             [
               {
                 name: 'Blog mały',
-                platform: 'WordPress',
-                price: '2 900 - 3 500 zł',
+                price: '1 800 - 2 500 zł',
                 description: 'Prosty blog firmowy na start. Stabilny, łatwy w obsłudze i przygotowany pod SEO, abyś mógł zacząć publikować i zdobywać klientów od pierwszego dnia.',
                 features: [
                   'Do 30 artykułów - idealne na początek',
@@ -231,8 +230,7 @@ export default function OfferBlogPage() {
               },
               {
                 name: 'Blog średni',
-                platform: 'WordPress / Webflow',
-                price: '4 900 - 6 000 zł',
+                price: '3 200 - 4 000 zł',
                 description: 'Rozbudowany blog dla firm, które chcą regularnie publikować i budować wizerunek eksperta. Więcej treści, integracje marketingowe i większe możliwości rozwoju.',
                 features: [
                   'Do 100 artykułów',
@@ -249,8 +247,7 @@ export default function OfferBlogPage() {
               },
               {
                 name: 'Blog premium',
-                platform: 'Webflow CMS',
-                price: '7 500 - 9 000 zł',
+                price: '6 500 - 8 000 zł',
                 description:
                   'Blog premium w technologii Webflow. Design klasy premium, płynne animacje i sekcje polecanych treści. Idealny dla marek, które stawiają na estetykę i pełen komfort edycji.',
                 features: [
