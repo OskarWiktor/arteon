@@ -30,7 +30,7 @@ interface ProjectsData {
 type Props = {
   projects?: Project[];
   max?: number;
-  title: string;
+  title?: string;
   subtitle?: string;
   category?: ProjectCategory;
   slugs?: string | string[];
@@ -52,7 +52,7 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
 
   const finalProjects = useMemo(() => {
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
-    let list: Project[] = [];
+    let list: Project[];
 
     if (slugsArray && slugsArray.length) {
       const map = new Map(sourceProjects.map((p) => [p.slug, p] as const));
@@ -60,8 +60,9 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
     } else if (category) {
       list = sourceProjects.filter((p) => (p.category || []).includes(category));
     } else {
-      list = [];
+      list = sourceProjects;
     }
+
     return list.slice(0, max);
   }, [sourceProjects, slugs, category, max]);
 

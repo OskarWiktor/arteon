@@ -192,7 +192,7 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Nasze realizacje" category="strona" />
+        <ProjectsOverview title="Najnowsze realizacje" />
 
         <Gap variant="line" />
 

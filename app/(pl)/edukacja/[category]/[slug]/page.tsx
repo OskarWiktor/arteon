@@ -340,7 +340,6 @@ export default function ArticlePage({ params }: { params: { category: string; sl
           />
         </div>
         <div>
-          {' '}
           <ShareBlock url={url} title={shareTitle} className="mb-12" /> <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
         </div>
       </Wrapper>
