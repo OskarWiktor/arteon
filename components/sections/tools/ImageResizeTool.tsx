@@ -5,6 +5,75 @@ import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
 
+const ui = {
+  pl: {
+    imageLoadError: 'Nie udało się wczytać obrazu.',
+    canvasNotSupported: 'Twoja przeglądarka nie obsługuje kontekstu 2D.',
+    fileGenerationError: 'Nie udało się wygenerować pliku.',
+    addImageFirst: 'Dodaj najpierw zdjęcie.',
+    setValidDimensions: 'Ustaw poprawne wymiary docelowe.',
+    addImage: 'Dodaj zdjęcie',
+    dragDropImage: 'Przeciągnij i upuść zdjęcie tutaj',
+    clickToSelect: 'lub kliknij, aby wybrać plik z dysku',
+    supportedFormats: 'Obsługiwane: JPG, PNG, WebP',
+    currentFile: 'Aktualny plik:',
+    imageParams: 'Parametry obrazu',
+    noData: 'Brak danych - dodaj zdjęcie.',
+    original: 'Oryginalne:',
+    aspectRatio: 'Proporcje:',
+    target: 'Docelowe:',
+    inputFormat: 'Format wejściowy:',
+    outputFormat: 'Format wyjściowy:',
+    shape: 'Kształt:',
+    sourceFile: 'Plik źródłowy:',
+    estimatedResult: 'Szacowany wynik:',
+    convertAndDownload: 'Konwertuj i pobierz',
+    quality: 'Jakość (JPG/WEBP)',
+    qualityHelper: 'Niższa jakość = mniejszy plik. Dla sociali często 70-85% to dobry kompromis.',
+    processing: 'Przetwarzanie…',
+    resizeAndDownload: 'Zmień rozmiar i pobierz',
+    cropTools: 'Narzędzia kadrowania',
+    addImageFirstHelper: 'Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.',
+    dimensions: 'Wymiary w px',
+    presets: 'Gotowe formaty',
+    shapesLabel: 'Kształty kadru',
+    zoom: 'Przybliżenie',
+    position: 'Pozycja',
+    gridColor: 'Kolor siatki',
+    width: 'Szerokość (px)',
+    height: 'Wysokość (px)',
+    keepAspectRatio: 'Zachowaj proporcje (automatyczny drugi wymiar)',
+    category: 'Kategoria',
+    format: 'Format',
+    selectPreset: 'Wybierz preset',
+    rectAspect: 'Proporcje prostokąta',
+    cropZoom: 'Przybliżenie kadru',
+    horizontal: 'Poziom (X)',
+    vertical: 'Pion (Y)',
+    centerHorizontal: 'Wyśrodkuj poziomo',
+    centerVertical: 'Wyśrodkuj pionowo',
+    centerCrop: 'Wyśrodkuj kadr',
+    cropPreview: 'Podgląd kadru',
+    cropPreviewHelper: 'Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu koła plik będzie miał przezroczyste tło poza kształtem (PNG / WebP).',
+    shapes: {
+      rect: 'Prostokąt',
+      square: 'Kwadrat',
+      circle: 'Koło',
+    },
+    gridColors: {
+      emerald: 'Zielony',
+      white: 'Biały',
+      black: 'Czarny',
+      red: 'Czerwony',
+      yellow: 'Żółty',
+    },
+    categories: {
+      social: 'Social media',
+      web: 'WWW',
+    },
+  },
+} as const;
+
 type ResizeMode = 'pixels' | 'preset';
 type OutputFormat = 'jpg' | 'png' | 'webp';
 type GridColor = 'emerald' | 'white' | 'black' | 'red' | 'yellow';
@@ -208,31 +277,32 @@ function NumberField({ label, suffix, value, min, max, onChange, widthClass = 'w
 }
 
 const GRID_COLOR_OPTIONS: { value: GridColor; label: string }[] = [
-  { value: 'emerald', label: 'Zielony' },
-  { value: 'white', label: 'Biały' },
-  { value: 'black', label: 'Czarny' },
-  { value: 'red', label: 'Czerwony' },
-  { value: 'yellow', label: 'Żółty' },
+  { value: 'emerald', label: ui.pl.gridColors.emerald },
+  { value: 'white', label: ui.pl.gridColors.white },
+  { value: 'black', label: ui.pl.gridColors.black },
+  { value: 'red', label: ui.pl.gridColors.red },
+  { value: 'yellow', label: ui.pl.gridColors.yellow },
 ];
 
 const SHAPE_OPTIONS: { value: ShapeType; label: string }[] = [
-  { value: 'rect', label: 'Prostokąt' },
-  { value: 'square', label: 'Kwadrat' },
-  { value: 'circle', label: 'Koło' },
+  { value: 'rect', label: ui.pl.shapes.rect },
+  { value: 'square', label: ui.pl.shapes.square },
+  { value: 'circle', label: ui.pl.shapes.circle },
 ];
 
 const RECT_ASPECTS: ShapeAspect[] = ['1:1', '4:5', '3:2', '16:9', '9:16'];
 
 const TOOLBAR_ITEMS: { id: ActiveTool; label: string; icon: ReactNode }[] = [
-  { id: 'dimensions', label: 'Wymiary w px', icon: <RiRulerLine className="text-base" /> },
-  { id: 'presets', label: 'Gotowe formaty', icon: <RiLayoutGridLine className="text-base" /> },
-  { id: 'shapes', label: 'Kształty kadru', icon: <RiCropLine className="text-base" /> },
-  { id: 'zoom', label: 'Przybliżenie', icon: <RiZoomInLine className="text-base" /> },
-  { id: 'position', label: 'Pozycja', icon: <RiDragMove2Line className="text-base" /> },
-  { id: 'grid', label: 'Kolor siatki', icon: <RiGridLine className="text-base" /> },
+  { id: 'dimensions', label: ui.pl.dimensions, icon: <RiRulerLine className="text-base" /> },
+  { id: 'presets', label: ui.pl.presets, icon: <RiLayoutGridLine className="text-base" /> },
+  { id: 'shapes', label: ui.pl.shapesLabel, icon: <RiCropLine className="text-base" /> },
+  { id: 'zoom', label: ui.pl.zoom, icon: <RiZoomInLine className="text-base" /> },
+  { id: 'position', label: ui.pl.position, icon: <RiDragMove2Line className="text-base" /> },
+  { id: 'grid', label: ui.pl.gridColor, icon: <RiGridLine className="text-base" /> },
 ];
 
 export default function ImageResizeTool() {
+  const t = ui.pl;
   const [state, setState] = useState<ResizeToolState>({
     file: null,
     imageUrl: null,
@@ -362,7 +432,7 @@ export default function ImageResizeTool() {
     };
     img.onerror = () => {
       URL.revokeObjectURL(url);
-      setError('Nie udało się wczytać obrazu.');
+      setError(t.imageLoadError);
     };
   };
 
@@ -804,7 +874,7 @@ export default function ImageResizeTool() {
       <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <p className="mb-2 font-semibold uppercase">Dodaj zdjęcie</p>
+            <p className="mb-2 font-semibold uppercase">{t.addImage}</p>
             <label
               className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
               onDragOver={(e: ReactDragEvent<HTMLLabelElement>) => {
@@ -821,9 +891,9 @@ export default function ImageResizeTool() {
                 }
               }}
             >
-              <span className="mb-1 text-sm! font-medium">Przeciągnij i upuść zdjęcie tutaj</span>
-              <span className="mb-2 text-xs! text-[#5e5e5e]">lub kliknij, aby wybrać plik z dysku</span>
-              <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">Obsługiwane: JPG, PNG, WebP</span>
+              <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
+              <span className="mb-2 text-xs! text-[#5e5e5e]">{t.clickToSelect}</span>
+              <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">{t.supportedFormats}</span>
               <input
                 type="file"
                 accept="image/*"
@@ -837,30 +907,30 @@ export default function ImageResizeTool() {
             </label>
             {state.file && (
               <p className="mt-2 text-xs! text-[#5e5e5e]">
-                Aktualny plik: <strong>{state.file.name}</strong>
+                {t.currentFile} <strong>{state.file.name}</strong>
               </p>
             )}
           </div>
 
           <div className="mt-4 rounded-2xl border border-black/10 bg-white/90 p-4 text-xs! text-[#5e5e5e]">
-            <h3 className="h6 mb-2">Parametry obrazu</h3>
-            {!state.imageUrl && <p>Brak danych - dodaj zdjęcie.</p>}
+            <h3 className="h6 mb-2">{t.imageParams}</h3>
+            {!state.imageUrl && <p>{t.noData}</p>}
             {state.imageUrl && (
               <div className="space-y-1 text-sm!">
                 <p className="text-xs!">
-                  Oryginalne:{' '}
+                  {t.original}{' '}
                   <strong>
                     {state.originalWidth} x {state.originalHeight} px
                   </strong>
                 </p>
                 {aspectRatioText && (
                   <p className="text-xs!">
-                    Proporcje: <strong>{aspectRatioText} : 1</strong>
+                    {t.aspectRatio} <strong>{aspectRatioText} : 1</strong>
                   </p>
                 )}
                 {dims && (
                   <p className="text-xs!">
-                    Docelowe:{' '}
+                    {t.target}{' '}
                     <strong>
                       {dims.width} x {dims.height} px
                     </strong>
@@ -868,23 +938,23 @@ export default function ImageResizeTool() {
                 )}
                 {inputFormat && (
                   <p className="text-xs!">
-                    Format wejściowy: <strong>{inputFormat}</strong>
+                    {t.inputFormat} <strong>{inputFormat}</strong>
                   </p>
                 )}
                 <p className="text-xs!">
-                  Format wyjściowy: <strong>{state.outputFormat.toUpperCase()}</strong>
+                  {t.outputFormat} <strong>{state.outputFormat.toUpperCase()}</strong>
                 </p>
                 <p className="text-xs!">
-                  Kształt: <strong>{state.shape === 'rect' ? 'Prostokąt' : state.shape === 'square' ? 'Kwadrat' : 'Koło'}</strong>
+                  {t.shape} <strong>{state.shape === 'rect' ? t.shapes.rect : state.shape === 'square' ? t.shapes.square : t.shapes.circle}</strong>
                 </p>
                 {state.file && (
                   <p className="text-xs!">
-                    Plik źródłowy: <strong>{formatBytes(state.file.size)}</strong>
+                    {t.sourceFile} <strong>{formatBytes(state.file.size)}</strong>
                   </p>
                 )}
                 {estimatedSize !== null && (
                   <p className="text-xs!">
-                    Szacowany wynik: <strong>{formatBytes(estimatedSize)}</strong>
+                    {t.estimatedResult} <strong>{formatBytes(estimatedSize)}</strong>
                   </p>
                 )}
               </div>
@@ -892,7 +962,7 @@ export default function ImageResizeTool() {
           </div>
 
           <div>
-            <p className="mt-4 mb-2 font-semibold uppercase">Konwertuj i pobierz</p>
+            <p className="mt-4 mb-2 font-semibold uppercase">{t.convertAndDownload}</p>
             <div className="flex flex-wrap gap-3 text-sm">
               {(['jpg', 'png', 'webp'] as OutputFormat[]).map((fmt) => (
                 <PillButton
@@ -914,7 +984,7 @@ export default function ImageResizeTool() {
             {state.outputFormat !== 'png' && (
               <div className="mt-4 space-y-1 text-sm">
                 <label className="flex items-center justify-between text-[14px]! font-medium">
-                  <span>Jakość (JPG/WEBP)</span>
+                  <span>{t.quality}</span>
                   <span>{Math.round(state.outputQuality * 100)}%</span>
                 </label>
                 <input
@@ -930,13 +1000,13 @@ export default function ImageResizeTool() {
                   }
                   className="w-full! p-0!"
                 />
-                <p className="text-xs! text-[#5e5e5e]">Niższa jakość = mniejszy plik. Dla sociali często 70-85% to dobry kompromis.</p>
+                <p className="text-xs! text-[#5e5e5e]">{t.qualityHelper}</p>
               </div>
             )}
 
             <div className="mt-5 flex flex-wrap gap-3">
               <Button variant="accent" size="small" type="submit" disabled={isProcessing || !state.file} className="disabled:opacity-60">
-                {isProcessing ? 'Przetwarzanie…' : 'Zmień rozmiar i pobierz'}
+                {isProcessing ? t.processing : t.resizeAndDownload}
               </Button>
             </div>
 
@@ -951,10 +1021,10 @@ export default function ImageResizeTool() {
 
       <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
         <div className="mb-2 flex items-center justify-between gap-2">
-          <h2 className="h6">Narzędzia kadrowania</h2>
+          <h2 className="h6">{t.cropTools}</h2>
           {dims && (
             <span className="text-xs! text-[#5e5e5e]">
-              Docelowe:{' '}
+              {t.target}{' '}
               <strong>
                 {dims.width} x {dims.height} px
               </strong>
@@ -962,7 +1032,7 @@ export default function ImageResizeTool() {
           )}
         </div>
 
-        {!state.imageUrl && <p className="text-xs! text-[#5e5e5e]">Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.</p>}
+        {!state.imageUrl && <p className="text-xs! text-[#5e5e5e]">{t.addImageFirstHelper}</p>}
 
         {state.imageUrl && cropEnabled && (
           <>
@@ -977,7 +1047,7 @@ export default function ImageResizeTool() {
                 <div className="space-y-3">
                   <div className="grid gap-3 md:grid-cols-2">
                     <div>
-                      <label className="text-[14px]! font-medium">Szerokość (px)</label>
+                      <label className="text-[14px]! font-medium">{t.width}</label>
                       <input
                         type="number"
                         min={1}
@@ -987,7 +1057,7 @@ export default function ImageResizeTool() {
                       />
                     </div>
                     <div>
-                      <label className="text-[14px]! font-medium">Wysokość (px)</label>
+                      <label className="text-[14px]! font-medium">{t.height}</label>
                       <input
                         type="number"
                         min={1}
@@ -1010,7 +1080,7 @@ export default function ImageResizeTool() {
                       }
                       className="h-4 w-4! rounded border-neutral-300 p-0!"
                     />
-                    <span>Zachowaj proporcje (automatyczny drugi wymiar)</span>
+                    <span>{t.keepAspectRatio}</span>
                   </label>
                 </div>
               )}
@@ -1019,7 +1089,7 @@ export default function ImageResizeTool() {
                 <div className="space-y-3">
                   <div className="grid gap-3 md:grid-cols-2">
                     <div>
-                      <label className="text-[14px]! font-medium">Kategoria</label>
+                      <label className="text-[14px]! font-medium">{t.category}</label>
                       <select
                         className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
                         value={state.selectedCategory}
@@ -1031,18 +1101,18 @@ export default function ImageResizeTool() {
                           }))
                         }
                       >
-                        <option value="social">Social media</option>
-                        <option value="web">WWW</option>
+                        <option value="social">{t.categories.social}</option>
+                        <option value="web">{t.categories.web}</option>
                       </select>
                     </div>
                     <div>
-                      <label className="text-[14px]! font-medium">Format</label>
+                      <label className="text-[14px]! font-medium">{t.format}</label>
                       <select
                         className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
                         value={state.selectedPresetKey ?? ''}
                         onChange={(e) => handlePresetChange(e.target.value)}
                       >
-                        <option value="">Wybierz preset</option>
+                        <option value="">{t.selectPreset}</option>
                         {presetList.map((preset) => (
                           <option key={preset.key} value={preset.key}>
                             {preset.label}
@@ -1064,7 +1134,7 @@ export default function ImageResizeTool() {
 
                   {state.shape === 'rect' && (
                     <div className="space-y-2">
-                      <p className="text-xs! text-[#5e5e5e]">Proporcje prostokąta</p>
+                      <p className="text-xs! text-[#5e5e5e]">{t.rectAspect}</p>
                       <div className="flex flex-wrap gap-2">
                         {RECT_ASPECTS.map((aspect) => (
                           <PillButton key={aspect} value={aspect} current={state.shapeAspect} label={aspect} onChange={(val) => handleShapeAspectChange(val as ShapeAspect)} />
@@ -1078,7 +1148,7 @@ export default function ImageResizeTool() {
               {activeTool === 'zoom' && (
                 <div className="space-y-1">
                   <NumberField
-                    label="Przybliżenie kadru"
+                    label={t.cropZoom}
                     suffix="%"
                     value={Math.round(state.cropZoom * 100)}
                     min={100}
@@ -1097,7 +1167,7 @@ export default function ImageResizeTool() {
                 <div className="space-y-3">
                   <div className="flex flex-wrap items-end gap-4">
                     <NumberField
-                      label="Poziom (X)"
+                      label={t.horizontal}
                       suffix="%"
                       value={Math.round(state.cropX * 100)}
                       min={0}
@@ -1110,7 +1180,7 @@ export default function ImageResizeTool() {
                       }
                     />
                     <NumberField
-                      label="Pion (Y)"
+                      label={t.vertical}
                       suffix="%"
                       value={Math.round(state.cropY * 100)}
                       min={0}
@@ -1132,7 +1202,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className="flex h-7 w-7 items-center justify-center rounded-full border border-black/10 bg-white hover:bg-neutral-100"
-                        title="Wyśrodkuj poziomo"
+                        title={t.centerHorizontal}
                       >
                         <MdAlignHorizontalCenter className="text-xs" />
                       </button>
@@ -1145,7 +1215,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className="flex h-7 w-7 items-center justify-center rounded-full border border-black/10 bg-white hover:bg-neutral-100"
-                        title="Wyśrodkuj pionowo"
+                        title={t.centerVertical}
                       >
                         <MdAlignVerticalCenter className="text-xs" />
                       </button>
@@ -1159,7 +1229,7 @@ export default function ImageResizeTool() {
                           }))
                         }
                         className="flex h-7 w-7 items-center justify-center rounded-full border border-black/10 bg-white hover:bg-neutral-100"
-                        title="Wyśrodkuj kadr"
+                        title={t.centerCrop}
                       >
                         <span>C</span>
                       </button>
@@ -1197,7 +1267,7 @@ export default function ImageResizeTool() {
 
             <div>
               <div className="mt-4 mb-2 flex items-center justify-between">
-                <h3 className="h6">Podgląd kadru</h3>
+                <h3 className="h6">{t.cropPreview}</h3>
                 {dims && (
                   <span className="text-xs! text-[#5e5e5e]">
                     {dims.width} x {dims.height} px
@@ -1254,8 +1324,7 @@ export default function ImageResizeTool() {
               </div>
 
               <p className="mt-2 text-xs! text-[#5e5e5e]">
-                Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu koła plik będzie
-                miał przezroczyste tło poza kształtem (PNG / WebP).
+                {t.cropPreviewHelper}
               </p>
             </div>
           </>

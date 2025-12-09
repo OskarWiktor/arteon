@@ -8,7 +8,21 @@ import CalculatorResult from '../ui/calculator/CalculatorResult';
 import type { Step } from '@/types/calculator';
 import { baseSteps, getStepsByType } from '@/data/pl/calculator';
 
+const ui = {
+  pl: {
+    selectionRequired: 'Wybór jest wymagany.',
+    estimatedCost: 'Szacunkowy koszt',
+    disclaimer: '* Końcowa wycena jest zależna od indywidualnych potrzeb',
+    inPrice: 'Co jest w cenie:',
+    startAgain: 'Zacznij od nowa',
+    from: 'od',
+    to: 'do',
+    currency: 'zł brutto',
+  },
+} as const;
+
 export default function Calculator() {
+  const t = ui.pl;
   const [currentStep, setCurrentStep] = useState(0);
   const [selections, setSelections] = useState<Selections>({});
   const [activeSteps, setActiveSteps] = useState<Step[]>([]);
@@ -128,7 +142,7 @@ export default function Calculator() {
 
   const handleNext = () => {
     if (step?.required && !hasSelection) {
-      setError('Wybór jest wymagany.');
+      setError(t.selectionRequired);
       return;
     }
     if (currentStep === 0) {
@@ -158,14 +172,14 @@ export default function Calculator() {
         />
       ) : (
         <CalculatorResult
-          title="Szacunkowy koszt"
-          disclaimer="* Końcowa wycena jest zależna od indywidualnych potrzeb"
-          inPrice="Co jest w cenie:"
+          title={t.estimatedCost}
+          disclaimer={t.disclaimer}
+          inPrice={t.inPrice}
           totalPrice={totalPrice}
-          startAgain="Zacznij od nowa"
-          from="od"
-          to="do"
-          currency="zł brutto"
+          startAgain={t.startAgain}
+          from={t.from}
+          to={t.to}
+          currency={t.currency}
           onReset={() => {
             setCurrentStep(0);
             setSelections({});

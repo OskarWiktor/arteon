@@ -9,7 +9,19 @@ import DesktopNavigation from './navigation-types/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
 
+const ui = {
+  pl: {
+    mainNavigation: 'Nawigacja główna',
+    logoAlt: 'Arteon - logo firmy',
+    instagramLabel: 'Firmowy Instagram',
+    facebookLabel: 'Firmowy Facebook',
+    closeMenu: 'Zamknij menu',
+    openMenu: 'Otwórz menu',
+  },
+} as const;
+
 export default function Navigation() {
+  const t = ui.pl;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
@@ -26,9 +38,9 @@ export default function Navigation() {
   return (
     <header id="navigation" className="sticky top-0 z-50 w-full bg-white/95 shadow-xl backdrop-blur-sm">
       <Wrapper>
-        <nav className="flex h-14 items-center justify-between md:h-16 lg:h-18" aria-label="Nawigacja główna">
+        <nav className="flex h-14 items-center justify-between md:h-16 lg:h-18" aria-label={t.mainNavigation}>
           <Link href="/">
-            <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Arteon - logo firmy" priority />
+            <Image src="/assets/arteon-logo.webp" width={140} height={50} alt={t.logoAlt} priority />
           </Link>
 
           <DesktopNavigation />
@@ -42,7 +54,7 @@ export default function Navigation() {
               href="https://www.instagram.com/arteon.pl"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Firmowy Instagram"
+              aria-label={t.instagramLabel}
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
@@ -51,7 +63,7 @@ export default function Navigation() {
               href="https://www.facebook.com/people/Arteon/61583260915021/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Firmowy Facebook"
+              aria-label={t.facebookLabel}
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
@@ -62,7 +74,7 @@ export default function Navigation() {
             type="button"
             onClick={toggleMenu}
             className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white lg:hidden"
-            aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
+            aria-label={isOpen ? t.closeMenu : t.openMenu}
             aria-expanded={isOpen}
           >
             {isOpen ? <RiCloseLine size={28} aria-hidden="true" /> : <RiMenuLine size={28} aria-hidden="true" />}

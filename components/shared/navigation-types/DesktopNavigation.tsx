@@ -6,6 +6,33 @@ import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import Wrapper from '@/components/ui/Wrapper';
 
+const ui = {
+  pl: {
+    realizacje: 'Realizacje',
+    uslugi: 'Usługi',
+    oNas: 'O nas',
+    edukacja: 'Edukacja',
+    narzedzia: 'Narzędzia',
+    kontakt: 'Kontakt',
+    closeServicesList: 'Zamknij listę usług',
+    openServicesList: 'Otwórz listę usług',
+    closeToolsList: 'Zamknij listę narzędzi',
+    openToolsList: 'Otwórz listę narzędzi',
+    sections: {
+      websites: 'Witryny',
+      marketing: 'Marketing',
+      graphicProjects: 'Projekty graficzne',
+      contentCreation: 'Tworzenie treści',
+    },
+    tools: {
+      images: 'Obrazy i favicony',
+      meta: 'Meta i SEO',
+      email: 'E-mail i komunikacja',
+      colors: 'Kolory i dostępność',
+    },
+  },
+} as const;
+
 import {
   RiArrowDownSLine,
   RiCodeSSlashFill,
@@ -54,6 +81,7 @@ type ToolsSection = {
 };
 
 export default function DesktopNavigation() {
+  const t = ui.pl;
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
@@ -104,18 +132,18 @@ export default function DesktopNavigation() {
   }, [pathname]);
 
   const navigationItems = [
-    { href: '/realizacje', label: 'Realizacje', exact: true },
-    { href: '/uslugi', label: 'Usługi' },
-    { href: '/o-nas', label: 'O nas' },
-    { href: '/edukacja', label: 'Edukacja' },
-    { href: '/narzedzia', label: 'Narzędzia' },
-    { href: '/kontakt', label: 'Kontakt' },
+    { href: '/realizacje', label: t.realizacje, exact: true },
+    { href: '/uslugi', label: t.uslugi },
+    { href: '/o-nas', label: t.oNas },
+    { href: '/edukacja', label: t.edukacja },
+    { href: '/narzedzia', label: t.narzedzia },
+    { href: '/kontakt', label: t.kontakt },
   ];
 
   const offerSections: OfferSection[] = [
     {
       key: 'witryny',
-      title: 'Witryny',
+      title: t.sections.websites,
       items: [
         { href: '/uslugi/strony-internetowe', icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />, title: 'Strony internetowe', desc: 'WCAG 2.2 AA, projekt na miarę' },
         { href: '/uslugi/sklepy-internetowe', icon: <RiShoppingCartLine className="h-6 w-6 text-slate-500" />, title: 'Sklepy internetowe', desc: 'Płatności, integracje, automatyzacje' },
@@ -124,7 +152,7 @@ export default function DesktopNavigation() {
     },
     {
       key: 'marketing',
-      title: 'Marketing',
+      title: t.sections.marketing,
       hubHref: '/uslugi/marketing',
       items: [
         { href: '/uslugi/marketing/audyt-seo', icon: <RiSearchLine className="h-6 w-6 text-slate-500" />, title: 'Audyt SEO', desc: 'Diagnostyka i priorytety działań' },
@@ -134,7 +162,7 @@ export default function DesktopNavigation() {
     },
     {
       key: 'grafika',
-      title: 'Projekty graficzne',
+      title: t.sections.graphicProjects,
       hubHref: '/uslugi/projekty-graficzne',
       items: [
         { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki', icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
@@ -155,7 +183,7 @@ export default function DesktopNavigation() {
     },
     {
       key: 'tresc',
-      title: 'Tworzenie treści',
+      title: t.sections.contentCreation,
       hubHref: '/uslugi/tworzenie-tresci',
       items: [{ href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />, title: 'Tworzenie treści', desc: 'Teksty na strony, blog, oferty' }],
     },
@@ -164,7 +192,7 @@ export default function DesktopNavigation() {
   const toolsSections: ToolsSection[] = [
     {
       key: 'obrazy',
-      title: 'Obrazy i favicony',
+      title: t.tools.images,
       items: [
         { href: '/narzedzia/jpg-png-na-webp-bez-limitu', title: 'Konwerter JPG/PNG na WebP', icon: <RiImageEditLine className="h-5 w-5 text-slate-500" /> },
         { href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', title: 'Kadrowanie i zmiana rozmiaru', icon: <RiCropLine className="h-5 w-5 text-slate-500" /> },
@@ -173,7 +201,7 @@ export default function DesktopNavigation() {
     },
     {
       key: 'seo',
-      title: 'Meta i SEO',
+      title: t.tools.meta,
       items: [
         {
           href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
@@ -184,7 +212,7 @@ export default function DesktopNavigation() {
     },
     {
       key: 'email',
-      title: 'E-mail i komunikacja',
+      title: t.tools.email,
       items: [
         {
           href: '/narzedzia/darmowy-generator-stopki-mailowej',
@@ -195,7 +223,7 @@ export default function DesktopNavigation() {
     },
     {
       key: 'kolory',
-      title: 'Kolory i dostępność',
+      title: t.tools.colors,
       items: [
         {
           href: '/narzedzia/tester-kontrastu-kolorow-wcag',
@@ -282,7 +310,7 @@ export default function DesktopNavigation() {
             const isActivePage = exact ? pathname === href : pathname.startsWith(href);
 
             // USŁUGI - link + strzałka
-            if (label === 'Usługi') {
+            if (label === t.uslugi) {
               const isActive = pathname.startsWith('/uslugi');
               return (
                 <li ref={offerLiRef} className="group relative flex items-center gap-0.5" key={label}>
@@ -293,7 +321,7 @@ export default function DesktopNavigation() {
                       isActive ? 'font-semibold text-[#080808]' : ''
                     }`}
                   >
-                    Usługi
+                    {t.uslugi}
                   </Link>
 
                   <button
@@ -306,7 +334,7 @@ export default function DesktopNavigation() {
                     aria-controls={menuId}
                     ref={offerBtnRef}
                     className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-[#2B2B2B] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    aria-label={isOfferOpen ? 'Zamknij listę usług' : 'Otwórz listę usług'}
+                    aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
@@ -365,7 +393,7 @@ export default function DesktopNavigation() {
               );
             }
 
-            if (label === 'Narzędzia') {
+            if (label === t.narzedzia) {
               const isActive = pathname.startsWith('/narzedzia');
               return (
                 <li ref={toolsLiRef} className="group relative flex items-center gap-0.5" key={label}>
@@ -376,7 +404,7 @@ export default function DesktopNavigation() {
                       isActive ? 'font-semibold text-[#080808]' : ''
                     }`}
                   >
-                    Narzędzia
+                    {t.narzedzia}
                   </Link>
 
                   <button
@@ -389,7 +417,7 @@ export default function DesktopNavigation() {
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
                     className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-[#2B2B2B] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    aria-label={isToolsOpen ? 'Zamknij listę narzędzi' : 'Otwórz listę narzędzi'}
+                    aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                   >
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />

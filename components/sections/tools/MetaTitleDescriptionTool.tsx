@@ -2,6 +2,39 @@
 
 import { useMemo, useState } from 'react';
 
+const ui = {
+  pl: {
+    noData: 'Brak danych',
+    enterTitle: 'Wpisz meta title, aby zobaczyć analizę długości.',
+    tooShort: 'Za krótki',
+    titleTooShort: 'Tytuł jest bardzo krótki. Dodaj więcej słów, aby lepiej opisać stronę i wykorzystać dostępne miejsce w wynikach wyszukiwania.',
+    tooLong: 'Za długi',
+    titleTooLong: 'Tytuł przekracza zakres, który Google zwykle pokazuje w całości (około 580-600 pikseli szerokości, zwykle do 50-60 znaków). Może zostać ucięty.',
+    goodLength: 'Dobra długość',
+    titleGoodLength: 'Tytuł mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach Google (mniej więcej 450-580 pikseli i ok. 45-60 znaków).',
+    enterDescription: 'Wpisz meta description, aby zobaczyć analizę długości.',
+    descriptionTooShort: 'Opis jest bardzo krótki. Dodaj dłuższy tekst, który lepiej tłumaczy, co użytkownik znajdzie na stronie i dlaczego warto w nią kliknąć.',
+    descriptionTooLong: 'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.',
+    descriptionGoodLength: 'Opis mieści się w typowym zakresie dla wyników wyszukiwania (około 120-160 znaków i do ~920 pikseli), co zwykle wystarcza na 2-3 krótkie zdania.',
+    addUrl: 'Dodaj adres URL (opcjonalnie)',
+    urlPlaceholder: 'www.twojadomena.pl/podstrona',
+    urlHelper: 'Adres URL jest używany tylko w podglądzie - nie ma wpływu na obliczenia długości meta title i description.',
+    enterTitleLabel: 'Wpisz meta title',
+    titlePlaceholder: 'Np. Pozycjonowanie stron WWW - Arteon',
+    chars: 'Znaki',
+    words: 'Słowa',
+    width: 'Szerokość',
+    noTitle: 'Brak tytułu',
+    enterDescriptionLabel: 'Wpisz meta description',
+    descriptionPlaceholder: 'Opisz w 2-3 zdaniach, co użytkownik znajdzie na stronie i jaką korzyść otrzyma. Dodaj naturalnie główne słowa kluczowe.',
+    noDescription: 'Brak opisu',
+    previewTitle: 'Podgląd wyniku w Google',
+    previewHelper: 'Podgląd jest orientacyjny - Google może przyciąć lub zmienić tytuł i opis w zależności od szerokości ekranu i samego tekstu',
+    exampleTitle: 'Przykładowy tytuł strony - oferta / usługa',
+    exampleDescription: 'Tu pojawi się podgląd opisu Twojej strony. Napisz krótko o tym, co oferujesz, jak pomagasz klientowi oraz dlaczego warto odwiedzić właśnie tę podstronę.',
+  },
+} as const;
+
 type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
 
 interface FieldAnalysis {
@@ -40,6 +73,7 @@ function measureTextWidth(text: string, font: string, fallbackAvgPx: number): nu
 }
 
 function analyzeTitle(text: string): FieldAnalysis {
+  const t = ui.pl;
   const trimmed = text.trim();
   const chars = trimmed.length;
   const words = trimmed ? trimmed.split(/\s+/).filter(Boolean).length : 0;
@@ -47,8 +81,8 @@ function analyzeTitle(text: string): FieldAnalysis {
   const pixels = measureTextWidth(trimmed, TITLE_FONT, 9);
 
   let status: LengthStatus = 'empty';
-  let statusLabel = 'Brak danych';
-  let helperText = 'Wpisz meta title, aby zobaczyć analizę długości.';
+  let statusLabel: string = t.noData;
+  let helperText: string = t.enterTitle;
 
   if (!chars) {
     return { chars, words, pixels, status, statusLabel, helperText };
@@ -59,22 +93,23 @@ function analyzeTitle(text: string): FieldAnalysis {
 
   if (isTooShort) {
     status = 'too-short';
-    statusLabel = 'Za krótki';
-    helperText = 'Tytuł jest bardzo krótki. Dodaj więcej słów, aby lepiej opisać stronę i wykorzystać dostępne miejsce w wynikach wyszukiwania.';
+    statusLabel = t.tooShort;
+    helperText = t.titleTooShort;
   } else if (isTooLong) {
     status = 'too-long';
-    statusLabel = 'Za długi';
-    helperText = 'Tytuł przekracza zakres, który Google zwykle pokazuje w całości (około 580-600 pikseli szerokości, zwykle do 50-60 znaków). Może zostać ucięty.';
+    statusLabel = t.tooLong;
+    helperText = t.titleTooLong;
   } else {
     status = 'ideal';
-    statusLabel = 'Dobra długość';
-    helperText = 'Tytuł mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach Google (mniej więcej 450-580 pikseli i ok. 45-60 znaków).';
+    statusLabel = t.goodLength;
+    helperText = t.titleGoodLength;
   }
 
   return { chars, words, pixels, status, statusLabel, helperText };
 }
 
 function analyzeDescription(text: string): FieldAnalysis {
+  const t = ui.pl;
   const trimmed = text.trim();
   const chars = trimmed.length;
   const words = trimmed ? trimmed.split(/\s+/).filter(Boolean).length : 0;
@@ -82,8 +117,8 @@ function analyzeDescription(text: string): FieldAnalysis {
   const pixels = measureTextWidth(trimmed, DESCRIPTION_FONT, 5.8);
 
   let status: LengthStatus = 'empty';
-  let statusLabel = 'Brak danych';
-  let helperText = 'Wpisz meta description, aby zobaczyć analizę długości.';
+  let statusLabel: string = t.noData;
+  let helperText: string = t.enterDescription;
 
   if (!chars) {
     return { chars, words, pixels, status, statusLabel, helperText };
@@ -94,16 +129,16 @@ function analyzeDescription(text: string): FieldAnalysis {
 
   if (isTooShort) {
     status = 'too-short';
-    statusLabel = 'Za krótki';
-    helperText = 'Opis jest bardzo krótki. Dodaj dłuższy tekst, który lepiej tłumaczy, co użytkownik znajdzie na stronie i dlaczego warto w nią kliknąć.';
+    statusLabel = t.tooShort;
+    helperText = t.descriptionTooShort;
   } else if (isTooLong) {
     status = 'too-long';
-    statusLabel = 'Za długi';
-    helperText = 'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.';
+    statusLabel = t.tooLong;
+    helperText = t.descriptionTooLong;
   } else {
     status = 'ideal';
-    statusLabel = 'Dobra długość';
-    helperText = 'Opis mieści się w typowym zakresie dla wyników wyszukiwania (około 120-160 znaków i do ~920 pikseli), co zwykle wystarcza na 2-3 krótkie zdania.';
+    statusLabel = t.goodLength;
+    helperText = t.descriptionGoodLength;
   }
 
   return { chars, words, pixels, status, statusLabel, helperText };
@@ -129,6 +164,7 @@ function truncateForPreview(text: string, maxChars: number): string {
 }
 
 export default function MetaTitleDescriptionTool() {
+  const t = ui.pl;
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [url, setUrl] = useState('www.twojadomena.pl/podstrona');
@@ -136,84 +172,77 @@ export default function MetaTitleDescriptionTool() {
   const titleAnalysis = useMemo(() => analyzeTitle(title), [title]);
   const descriptionAnalysis = useMemo(() => analyzeDescription(description), [description]);
 
-  const previewTitle = useMemo(() => truncateForPreview(title || 'Przykładowy tytuł strony - oferta / usługa', 65), [title]);
-  const previewDescription = useMemo(
-    () =>
-      truncateForPreview(
-        description || 'Tu pojawi się podgląd opisu Twojej strony. Napisz krótko o tym, co oferujesz, jak pomagasz klientowi oraz dlaczego warto odwiedzić właśnie tę podstronę.',
-        165,
-      ),
-    [description],
-  );
+  const previewTitle = useMemo(() => truncateForPreview(title || t.exampleTitle, 65), [title, t.exampleTitle]);
+  const previewDescription = useMemo(() => truncateForPreview(description || t.exampleDescription, 165), [description, t.exampleDescription]);
 
   return (
     <>
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <section className="tool-section space-y-5">
           <div>
-            <p className="tool-label mb-2">Dodaj adres URL (opcjonalnie)</p>
+            <p className="tool-label mb-2">{t.addUrl}</p>
             <input
               type="text"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               className="tool-input"
-              placeholder="www.twojadomena.pl/podstrona"
+              placeholder={t.urlPlaceholder}
             />
-            <p className="tool-helper mt-1">Adres URL jest używany tylko w podglądzie - nie ma wpływu na obliczenia długości meta title i description.</p>
+            <p className="tool-helper mt-1">{t.urlHelper}</p>
           </div>
 
           <div>
-            <p className="tool-label mt-8 mb-2">Wpisz meta title</p>
+            <p className="tool-label mt-8 mb-2">{t.enterTitleLabel}</p>
             <input
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               className="tool-input"
-              placeholder="Np. Pozycjonowanie stron WWW - Arteon"
+              placeholder={t.titlePlaceholder}
               maxLength={180}
             />
             <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
               <span>
-                Znaki: <strong>{titleAnalysis.chars}</strong>
+                {t.chars}: <strong>{titleAnalysis.chars}</strong>
               </span>
               <span>·</span>
               <span>
-                Słowa: <strong>{titleAnalysis.words}</strong>
+                {t.words}: <strong>{titleAnalysis.words}</strong>
               </span>
               <span>·</span>
               <span>
-                Szerokość: <strong>~{titleAnalysis.pixels} px</strong>
+                {t.width}: <strong>~{titleAnalysis.pixels} px</strong>
               </span>
               <span className={`tool-badge ml-auto ${getStatusClasses(titleAnalysis.status)}`}>
-                {titleAnalysis.status === 'empty' ? 'Brak tytułu' : titleAnalysis.statusLabel}
+                {titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}
               </span>
             </div>
             <p className="tool-helper mt-1">{titleAnalysis.helperText}</p>
           </div>
 
           <div>
-            <p className="tool-label mt-8 mb-2">Wpisz meta description</p>
+            <p className="tool-label mt-8 mb-2">{t.enterDescriptionLabel}</p>
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               className="tool-textarea min-h-[110px] resize-y"
-              placeholder="Opisz w 2-3 zdaniach, co użytkownik znajdzie na stronie i jaką korzyść otrzyma. Dodaj naturalnie główne słowa kluczowe."
+              placeholder={t.descriptionPlaceholder}
               maxLength={400}
             />
             <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
               <span>
-                Znaki: <strong>{descriptionAnalysis.chars}</strong>
+                {t.chars}: <strong>{descriptionAnalysis.chars}</strong>
               </span>
               <span>·</span>
               <span>
-                Słowa: <strong>{descriptionAnalysis.words}</strong>
+                {t.words}: <strong>{descriptionAnalysis.words}</strong>
               </span>
               <span>·</span>
               <span>
-                Szerokość: <strong>~{descriptionAnalysis.pixels} px</strong>
+                {t.width}: <strong>~{descriptionAnalysis.pixels} px</strong>
               </span>
               <span className={`tool-badge ml-auto ${getStatusClasses(descriptionAnalysis.status)}`}>
-                {descriptionAnalysis.status === 'empty' ? 'Brak opisu' : descriptionAnalysis.statusLabel}
+                {descriptionAnalysis.status === 'empty' ? t.noDescription : descriptionAnalysis.statusLabel}
               </span>
             </div>
             <p className="tool-helper mt-1">{descriptionAnalysis.helperText}</p>
@@ -222,8 +251,8 @@ export default function MetaTitleDescriptionTool() {
 
         <section className="tool-section space-y-4">
           <div>
-            <h2 className="h6 pb-2">Podgląd wyniku w Google</h2>
-            <p className="tool-helper">Podgląd jest orientacyjny - Google może przyciąć lub zmienić tytuł i opis w zależności od szerokości ekranu i samego tekstu</p>
+            <h2 className="h6 pb-2">{t.previewTitle}</h2>
+            <p className="tool-helper">{t.previewHelper}</p>
           </div>
 
           <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">

@@ -4,6 +4,32 @@ import { FormEvent, useMemo, useState } from 'react';
 import Button from '@/components/ui/Button';
 import { RiContrast2Line } from 'react-icons/ri';
 
+const ui = {
+  pl: {
+    exampleText: 'Przykładowy tekst kontrastu WCAG 2.1',
+    exampleTextPlaceholder: 'Wpisz nagłówek, tekst przycisku lub treść akapitu',
+    textColorLabel: 'Kolor tekstu (foreground)',
+    selectTextColor: 'Wybierz kolor tekstu',
+    textColorPlaceholder: '#000000 lub rgb(0,0,0)',
+    supportedFormats: 'Obsługiwane formaty:',
+    backgroundColorLabel: 'Kolor tła (background)',
+    selectBackgroundColor: 'Wybierz kolor tła',
+    backgroundColorPlaceholder: '#ffffff lub rgb(255,255,255)',
+    swapColors: 'Zamień kolory miejscami',
+    resetColors: 'Reset do czarny na białym',
+    contrastRatio: 'Współczynnik kontrastu',
+    colorReadError: 'Nie udało się odczytać kolorów. Użyj formatu',
+    or: 'lub',
+    normalText: 'Tekst zwykły',
+    largeText: 'Tekst duży / pogrubiony',
+    icon: 'Ikona',
+    exampleNormalText: 'Przykładowy tekst zwykły',
+    exampleLargeText: 'Przykładowy nagłówek / przycisk',
+    iconPreview: 'Podgląd ikony na tle',
+    resultsLabel: 'Wyniki testu kontrastu i podgląd',
+  },
+} as const;
+
 type RGB = { r: number; g: number; b: number };
 
 function hexToRgb(hex: string): RGB | null {
@@ -142,9 +168,10 @@ function Badge({ ok, label }: { ok: boolean; label: string }) {
 }
 
 export default function WcagContrastChecker() {
+  const t = ui.pl;
   const [foreground, setForeground] = useState('#000000');
   const [background, setBackground] = useState('#ffffff');
-  const [textSample, setTextSample] = useState('Przykładowy tekst kontrastu WCAG 2.1');
+  const [textSample, setTextSample] = useState<string>(t.exampleText);
 
   const result = useMemo(() => getWcagResult(foreground, background), [foreground, background]);
 
@@ -177,20 +204,20 @@ export default function WcagContrastChecker() {
                 value={textSample}
                 onChange={(e) => setTextSample(e.target.value)}
                 className="tool-input h-10"
-                placeholder="Wpisz nagłówek, tekst przycisku lub treść akapitu"
+                placeholder={t.exampleTextPlaceholder}
               />
             </div>
 
             <div>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <p className="tool-label mb-1">Kolor tekstu (foreground)</p>
+                  <p className="tool-label mb-1">{t.textColorLabel}</p>
                   <div className="flex items-center gap-3">
                     <input
                       type="color"
                       value={foreground}
                       onChange={(e) => setForeground(e.target.value)}
-                      aria-label="Wybierz kolor tekstu"
+                      aria-label={t.selectTextColor}
                       className="tool-color-picker tool-color-picker-md"
                     />
                     <input
@@ -198,23 +225,23 @@ export default function WcagContrastChecker() {
                       value={foreground}
                       onChange={(e) => setForeground(e.target.value)}
                       className="tool-input h-10"
-                      placeholder="#000000 lub rgb(0,0,0)"
+                      placeholder={t.textColorPlaceholder}
                     />
                   </div>
                   <p className="tool-helper mt-1 text-[11px]!">
-                    Obsługiwane formaty: <code className="rounded bg-black/5 px-1">#rrggbb</code>, <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
+                    {t.supportedFormats} <code className="rounded bg-black/5 px-1">#rrggbb</code>, <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
                     <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
                   </p>
                 </div>
 
                 <div>
-                  <p className="tool-label mb-1">Kolor tła (background)</p>
+                  <p className="tool-label mb-1">{t.backgroundColorLabel}</p>
                   <div className="flex items-center gap-3">
                     <input
                       type="color"
                       value={background}
                       onChange={(e) => setBackground(e.target.value)}
-                      aria-label="Wybierz kolor tła"
+                      aria-label={t.selectBackgroundColor}
                       className="tool-color-picker tool-color-picker-md"
                     />
                     <input
@@ -222,7 +249,7 @@ export default function WcagContrastChecker() {
                       value={background}
                       onChange={(e) => setBackground(e.target.value)}
                       className="tool-input h-10"
-                      placeholder="#ffffff lub rgb(255,255,255)"
+                      placeholder={t.backgroundColorPlaceholder}
                     />
                   </div>
                 </div>
@@ -232,25 +259,25 @@ export default function WcagContrastChecker() {
             <div>
               <div className="flex flex-wrap gap-3">
                 <Button type="button" size="small" onClick={handleSwap}>
-                  Zamień kolory miejscami
+                  {t.swapColors}
                 </Button>
                 <Button type="button" size="small" variant="minimal" onClick={handleReset}>
-                  Reset do czarny na białym
+                  {t.resetColors}
                 </Button>
               </div>
             </div>
           </form>
         </section>
 
-        <section aria-label="Wyniki testu kontrastu i podgląd" className="tool-section space-y-4">
+        <section aria-label={t.resultsLabel} className="tool-section space-y-4">
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="font-medium uppercase">
-                Współczynnik kontrastu <span className="mt-1 text-xl font-semibold"> {formatRatio(result.ratio)}</span>
+                {t.contrastRatio} <span className="mt-1 text-xl font-semibold"> {formatRatio(result.ratio)}</span>
               </p>
               {hasError ? (
                 <p className="tool-helper mt-1 text-[11px]! text-red-700">
-                  Nie udało się odczytać kolorów. Użyj formatu <code className="rounded bg-black/5 px-1">#rrggbb</code> lub <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
+                  {t.colorReadError} <code className="rounded bg-black/5 px-1">#rrggbb</code> {t.or} <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
                 </p>
               ) : (
                 <p className="tool-helper mt-1 text-[11px]!"></p>
@@ -260,7 +287,7 @@ export default function WcagContrastChecker() {
 
           <div className="tool-info-box space-y-2">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-sm! font-semibold uppercase">Tekst zwykły</p>
+              <p className="text-sm! font-semibold uppercase">{t.normalText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <Badge ok={!!result.ratio && result.normalText.AA} label="AA (min. 4.5:1)" />
                 <Badge ok={!!result.ratio && result.normalText.AAA} label="AAA (min. 7:1)" />
@@ -273,13 +300,13 @@ export default function WcagContrastChecker() {
                 backgroundColor: background,
               }}
             >
-              <p className="text-sm! leading-snug font-normal">{textSample || 'Przykładowy tekst zwykły'}</p>
+              <p className="text-sm! leading-snug font-normal">{textSample || t.exampleNormalText}</p>
             </div>
           </div>
 
           <div className="tool-info-box space-y-2">
             <div className="items_center flex justify-between gap-2">
-              <p className="text-sm! font-semibold uppercase">Tekst duży / pogrubiony</p>
+              <p className="text-sm! font-semibold uppercase">{t.largeText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <Badge ok={!!result.ratio && result.largeText.AA} label="AA (min. 3:1)" />
                 <Badge ok={!!result.ratio && result.largeText.AAA} label="AAA (min. 4.5:1)" />
@@ -292,13 +319,13 @@ export default function WcagContrastChecker() {
                 backgroundColor: background,
               }}
             >
-              <p className="text-base! leading-snug font-semibold!">{textSample || 'Przykładowy nagłówek / przycisk'}</p>
+              <p className="text-base! leading-snug font-semibold!">{textSample || t.exampleLargeText}</p>
             </div>
           </div>
 
           <div className="tool-info-box space-y-2">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-sm! font-semibold uppercase">Ikona</p>
+              <p className="text-sm! font-semibold uppercase">{t.icon}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <Badge ok={!!result.ratio && result.uiGraphics.AA} label="AA (min. 3:1)" />
               </div>
@@ -310,7 +337,7 @@ export default function WcagContrastChecker() {
                   color: foreground,
                   backgroundColor: background,
                 }}
-                aria-label="Podgląd ikony na tle"
+                aria-label={t.iconPreview}
               >
                 <RiContrast2Line className="text-2xl!" aria-hidden="true" />
               </div>

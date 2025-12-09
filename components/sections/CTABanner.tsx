@@ -2,6 +2,12 @@ import type { ReactNode } from 'react';
 import Button from '../ui/Button';
 import Wrapper from '../ui/Wrapper';
 
+const ui = {
+  pl: {
+    actionsLabel: 'Działania sekcji',
+  },
+} as const;
+
 interface CTABannerProps {
   title: ReactNode;
   subtitle?: ReactNode;
@@ -15,6 +21,7 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, backgroundImage, overlay = 'none' }: CTABannerProps) {
+  const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
   const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
@@ -39,7 +46,7 @@ export default function CTABanner({ title, subtitle, description, btnOne, btnOne
           {description && <p className={`reveal-animation mx-auto mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}>{description}</p>}
 
           {(btnOne || btnTwo) && (
-            <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:justify-center" role="group" aria-label="Działania sekcji">
+            <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:justify-center" role="group" aria-label={t.actionsLabel}>
               {btnOne && (
                 <Button link={btnOneLink} arrow variant="accent">
                   {btnOne}

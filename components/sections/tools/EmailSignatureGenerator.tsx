@@ -4,6 +4,110 @@ import Button from '@/components/ui/Button';
 import { useMemo, useState, type ReactNode } from 'react';
 import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line } from 'react-icons/ri';
 
+const ui = {
+  pl: {
+    layoutLabel: 'Układ stopki',
+    moreLayoutsSoon: 'Wkrótce kolejne gotowe układy.',
+    layouts: {
+      standard: 'Standard',
+      accentBar: 'Pasek akcentu',
+      topBanner: 'Pasek u góry',
+      labelColumn: 'Etykiety z lewej',
+      centered: 'Wyśrodkowany',
+    },
+    editorTitle: 'Edytor stopki HTML',
+    panels: {
+      identity: 'Dane',
+      cta: 'Link',
+      social: 'Media społecznościowe',
+      appearance: 'Wygląd',
+      legal: 'Klauzula / RODO',
+    },
+    identity: {
+      title: 'Dane w stopce',
+      topLine: 'Linia nad imieniem',
+      topLinePlaceholder: 'Np. nazwa firmy lub claim',
+      avatar: 'Avatar / logo (URL obrazu)',
+      avatarPlaceholder: 'https://adrestwojejdomeny.pl/avatar.webp',
+      avatarHelper: 'Najlepiej kwadratowy obraz min. 120x120 px, z publicznym adresem URL.',
+      fullName: 'Imię i nazwisko *',
+      fullNamePlaceholder: 'Jan Kowalski',
+      nameTag: 'Tag przy imieniu',
+      nameTagPlaceholder: 'Np. On/On • Art Director',
+      jobTitle: 'Stanowisko',
+      jobTitlePlaceholder: 'Web Developer',
+      company: 'Nazwa firmy',
+      companyPlaceholder: 'Twoja firma / marka',
+      extraLine: 'Dodatkowa linia (krótki opis)',
+      extraLinePlaceholder: 'Np. projektuję szybkie i funkcjonalne strony WWW.',
+      email: 'E-mail *',
+      emailPlaceholder: 'jan.kowalski@example.com',
+      phone: 'Telefon',
+      phonePlaceholder: '+48 600 000 000',
+      website: 'Strona internetowa',
+      websitePlaceholder: 'https://www.twojastrona.pl',
+      address: 'Adres (opcjonalny)',
+      addressPlaceholder: 'ul. Dobra 3, 30-000 Kraków',
+      formalLine: 'Dane formalne (np. NIP, numer licencji)',
+      formalLinePlaceholder: 'Np. NIP: 0000000000 • REGON: 000000000',
+    },
+    cta: {
+      title: 'Przycisk CTA',
+      label: 'Tekst przycisku',
+      labelPlaceholder: 'Umów bezpłatną konsultację',
+      url: 'Link CTA',
+      urlPlaceholder: 'https://kalendarz.pl/twoje-spotkania',
+      helper: 'Jeśli pole tekstu lub linku pozostanie puste, przycisk nie pojawi się w stopce.',
+    },
+    social: {
+      title: 'Media społecznościowe',
+      helper: 'Linki są opcjonalne - w stopce pojawią się tylko te serwisy, które mają uzupełniony adres URL (bez ikon, sama nazwa serwisu).',
+    },
+    appearance: {
+      themeTitle: 'Motyw kolorystyczny',
+      accentColor: 'Kolor akcentu',
+      textColor: 'Kolor tekstu',
+      backgroundColor: 'Kolor tła',
+      fontFamily: 'Czcionka',
+      fontSize: 'Rozmiar tekstu',
+      fontSizeSmall: 'Mały',
+      fontSizeNormal: 'Standard',
+      fontSizeLarge: 'Większy',
+      padding: 'Margines wewnętrzny stopki',
+      ctaRadius: 'Zaokrąglenie przycisku CTA',
+      ctaRadiusNone: 'Brak',
+      ctaRadiusSmall: 'Lekkie',
+      ctaRadiusFull: 'Pełne',
+      showDivider: 'Pokaż linię oddzielającą dane od klauzuli',
+    },
+    legal: {
+      title: 'Klauzula prawna / RODO',
+      placeholder: 'Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość.',
+    },
+    preview: {
+      title: 'Podgląd stopki mailowej',
+      helper: 'Podgląd techniczny - zgodny z Gmail, Outlook i większością klientów pocztowych.',
+      copySuccess: 'Skopiowano - wklej w Gmailu',
+      copyError: 'Błąd kopiowania',
+      copyButton: 'Kopiuj stopkę (Gmail / Outlook)',
+      requiredFields: 'Aby skopiować stopkę, uzupełnij przynajmniej imię i nazwisko oraz e-mail.',
+    },
+    labels: {
+      tel: 'Tel.',
+      email: 'E-mail',
+      website: 'Strona',
+      address: 'Adres',
+    },
+    themes: {
+      dark: 'Ciemny',
+      blue: 'Niebieski',
+      purple: 'Fioletowy',
+      green: 'Zielony',
+      gray: 'Szary',
+    },
+  },
+} as const;
+
 type CopyStatus = 'idle' | 'success' | 'error';
 type FontSizeOption = 'small' | 'normal' | 'large';
 type MarginOption = 'small' | 'medium' | 'large';
@@ -129,31 +233,31 @@ const CTA_RADIUS_MAP: Record<CtaRadiusOption, string> = {
 const THEME_PRESETS: ThemePreset[] = [
   {
     id: 'classic-dark',
-    name: 'Ciemny',
+    name: ui.pl.themes.dark,
     accentColor: '#111827',
     textColor: '#111827',
   },
   {
     id: 'modern-blue',
-    name: 'Niebieski',
+    name: ui.pl.themes.blue,
     accentColor: '#2563eb',
     textColor: '#111827',
   },
   {
     id: 'creative-purple',
-    name: 'Fioletowy',
+    name: ui.pl.themes.purple,
     accentColor: '#7c3aed',
     textColor: '#111827',
   },
   {
     id: 'eco-green',
-    name: 'Zielony',
+    name: ui.pl.themes.green,
     accentColor: '#16a34a',
     textColor: '#111827',
   },
   {
     id: 'minimal',
-    name: 'Szary',
+    name: ui.pl.themes.gray,
     accentColor: '#4b5563',
     textColor: '#111827',
   },
@@ -227,9 +331,10 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
   const avatarImg = hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" />` : '';
   const avatarCellInline = hasAvatar ? `<td style="padding-right:12px;vertical-align:top;">${avatarImg}</td>` : '';
 
-  const telLabel = 'Tel.';
-  const mailLabel = 'E-mail';
-  const webLabel = 'Strona';
+  const t = ui.pl;
+  const telLabel = t.labels.tel;
+  const mailLabel = t.labels.email;
+  const webLabel = t.labels.website;
 
   const contactItems: string[] = [];
 
@@ -440,7 +545,7 @@ function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout:
       }
     }
     if (hasAddress) {
-      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">Adres:</td><td style="padding:2px 0 2px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(
+      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${ui.pl.labels.address}:</td><td style="padding:2px 0 2px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(
         config.address.trim(),
       )}</td></tr>`;
     }
@@ -513,6 +618,7 @@ function PanelButton({ id, current, icon, label, onClick }: PanelButtonProps) {
 }
 
 export default function EmailSignatureGenerator() {
+  const t = ui.pl;
   const [config, setConfig] = useState<SignatureConfig>(DEFAULT_SIGNATURE);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);
   const [copyStatus, setCopyStatus] = useState<CopyStatus>('idle');
@@ -612,7 +718,7 @@ export default function EmailSignatureGenerator() {
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <RiLayout3Line className="text-base text-neutral-600" />
-            <span className="text-xs! font-semibold text-[#5e5e5e] uppercase">Układ stopki</span>
+            <span className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.layoutLabel}</span>
             <div className="flex flex-wrap gap-1">
               {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered'] as LayoutType[]).map((lt) => (
                 <button
@@ -623,171 +729,171 @@ export default function EmailSignatureGenerator() {
                     layout === lt ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
                   }`}
                 >
-                  {lt === 'standard' && 'Standard'}
-                  {lt === 'accent-bar' && 'Pasek akcentu'}
-                  {lt === 'top-banner' && 'Pasek u góry'}
-                  {lt === 'label-column' && 'Etykiety z lewej'}
-                  {lt === 'centered' && 'Wyśrodkowany'}
+                  {lt === 'standard' && t.layouts.standard}
+                  {lt === 'accent-bar' && t.layouts.accentBar}
+                  {lt === 'top-banner' && t.layouts.topBanner}
+                  {lt === 'label-column' && t.layouts.labelColumn}
+                  {lt === 'centered' && t.layouts.centered}
                 </button>
               ))}
             </div>
           </div>
         </div>
-        <p className="text-xs! text-[#5e5e5e]">Wkrótce kolejne gotowe układy.</p>
+        <p className="text-xs! text-[#5e5e5e]">{t.moreLayoutsSoon}</p>
       </section>
 
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
         <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div className="mb-2 flex items-center justify-between gap-2">
-            <h2 className="h6">Edytor stopki HTML</h2>
+            <h2 className="h6">{t.editorTitle}</h2>
           </div>
 
           <div className="flex flex-wrap gap-2">
-            <PanelButton id="identity" current={activePanel} onClick={setActivePanel} icon={<RiUser3Line className="text-base" />} label="Dane" />
-            <PanelButton id="cta" current={activePanel} onClick={setActivePanel} icon={<RiShareLine className="text-base" />} label="Link" />
-            <PanelButton id="social" current={activePanel} onClick={setActivePanel} icon={<RiMailLine className="text-base" />} label="Media społecznościowe" />
-            <PanelButton id="appearance" current={activePanel} onClick={setActivePanel} icon={<RiPaletteLine className="text-base" />} label="Wygląd" />
-            <PanelButton id="legal" current={activePanel} onClick={setActivePanel} icon={<RiFileTextLine className="text-base" />} label="Klauzula / RODO" />
+            <PanelButton id="identity" current={activePanel} onClick={setActivePanel} icon={<RiUser3Line className="text-base" />} label={t.panels.identity} />
+            <PanelButton id="cta" current={activePanel} onClick={setActivePanel} icon={<RiShareLine className="text-base" />} label={t.panels.cta} />
+            <PanelButton id="social" current={activePanel} onClick={setActivePanel} icon={<RiMailLine className="text-base" />} label={t.panels.social} />
+            <PanelButton id="appearance" current={activePanel} onClick={setActivePanel} icon={<RiPaletteLine className="text-base" />} label={t.panels.appearance} />
+            <PanelButton id="legal" current={activePanel} onClick={setActivePanel} icon={<RiFileTextLine className="text-base" />} label={t.panels.legal} />
           </div>
 
           <div className="mt-3 space-y-4 text-sm!">
             {activePanel === 'identity' && (
               <div className="space-y-3">
-                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">Dane w stopce</p>
+                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.title}</p>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Linia nad imieniem</label>
+                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.topLine}</label>
                   <input
                     type="text"
                     value={config.topLine}
                     onChange={(e) => handleTextChange('topLine', e.target.value)}
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                    placeholder="Np. nazwa firmy lub claim"
+                    placeholder={t.identity.topLinePlaceholder}
                   />
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Avatar / logo (URL obrazu)</label>
+                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.avatar}</label>
                   <input
                     type="url"
                     value={config.avatarUrl}
                     onChange={(e) => handleTextChange('avatarUrl', e.target.value)}
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                    placeholder="https://adrestwojejdomeny.pl/avatar.webp"
+                    placeholder={t.identity.avatarPlaceholder}
                   />
-                  <p className="mt-1 text-xs! text-[#5e5e5e]">Najlepiej kwadratowy obraz min. 120x120 px, z publicznym adresem URL.</p>
+                  <p className="mt-1 text-xs! text-[#5e5e5e]">{t.identity.avatarHelper}</p>
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Imię i nazwisko *</label>
+                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.fullName}</label>
                     <input
                       type="text"
                       value={config.fullName}
                       onChange={(e) => handleTextChange('fullName', e.target.value)}
                       className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                      placeholder="Jan Kowalski"
+                      placeholder={t.identity.fullNamePlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Tag przy imieniu</label>
+                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.nameTag}</label>
                     <input
                       type="text"
                       value={config.nameTag}
                       onChange={(e) => handleTextChange('nameTag', e.target.value)}
                       className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                      placeholder="Np. On/On • Art Director"
+                      placeholder={t.identity.nameTagPlaceholder}
                     />
                   </div>
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Stanowisko</label>
+                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.jobTitle}</label>
                     <input
                       type="text"
                       value={config.jobTitle}
                       onChange={(e) => handleTextChange('jobTitle', e.target.value)}
                       className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                      placeholder="Web Developer"
+                      placeholder={t.identity.jobTitlePlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Nazwa firmy</label>
+                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.company}</label>
                     <input
                       type="text"
                       value={config.company}
                       onChange={(e) => handleTextChange('company', e.target.value)}
                       className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                      placeholder="Twoja firma / marka"
+                      placeholder={t.identity.companyPlaceholder}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Dodatkowa linia (krótki opis)</label>
+                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.extraLine}</label>
                   <input
                     type="text"
                     value={config.extraLine}
                     onChange={(e) => handleTextChange('extraLine', e.target.value)}
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                    placeholder="Np. projektuję szybkie i funkcjonalne strony WWW."
+                    placeholder={t.identity.extraLinePlaceholder}
                   />
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">E-mail *</label>
+                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.email}</label>
                     <input
                       type="email"
                       value={config.email}
                       onChange={(e) => handleTextChange('email', e.target.value)}
                       className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                      placeholder="jan.kowalski@example.com"
+                      placeholder={t.identity.emailPlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Telefon</label>
+                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.phone}</label>
                     <input
                       type="tel"
                       value={config.phone}
                       onChange={(e) => handleTextChange('phone', e.target.value)}
                       className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                      placeholder="+48 600 000 000"
+                      placeholder={t.identity.phonePlaceholder}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Strona internetowa</label>
+                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.website}</label>
                   <input
                     type="url"
                     value={config.website}
                     onChange={(e) => handleTextChange('website', e.target.value)}
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                    placeholder="https://www.twojastrona.pl"
+                    placeholder={t.identity.websitePlaceholder}
                   />
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Adres (opcjonalny)</label>
+                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.address}</label>
                   <textarea
                     value={config.address}
                     onChange={(e) => handleTextChange('address', e.target.value)}
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
                     rows={2}
-                    placeholder="ul. Dobra 3, 30-000 Kraków"
+                    placeholder={t.identity.addressPlaceholder}
                   />
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Dane formalne (np. NIP, numer licencji)</label>
+                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.formalLine}</label>
                   <textarea
                     value={config.formalLine}
                     onChange={(e) => handleTextChange('formalLine', e.target.value)}
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-xs! focus:border-neutral-800 focus:outline-none"
                     rows={2}
-                    placeholder="Np. NIP: 0000000000 • REGON: 000000000"
+                    placeholder={t.identity.formalLinePlaceholder}
                   />
                 </div>
               </div>
@@ -796,37 +902,37 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'cta' && (
               <div className="space-y-4">
                 <div>
-                  <p className="mb-2 text-xs! font-semibold text-[#5e5e5e] uppercase">Przycisk CTA</p>
+                  <p className="mb-2 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.cta.title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
-                      <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Tekst przycisku</label>
+                      <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.cta.label}</label>
                       <input
                         type="text"
                         value={config.ctaLabel}
                         onChange={(e) => handleTextChange('ctaLabel', e.target.value)}
                         className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                        placeholder="Umów bezpłatną konsultację"
+                        placeholder={t.cta.labelPlaceholder}
                       />
                     </div>
                     <div>
-                      <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Link CTA</label>
+                      <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.cta.url}</label>
                       <input
                         type="url"
                         value={config.ctaUrl}
                         onChange={(e) => handleTextChange('ctaUrl', e.target.value)}
                         className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                        placeholder="https://kalendarz.pl/twoje-spotkania"
+                        placeholder={t.cta.urlPlaceholder}
                       />
                     </div>
                   </div>
-                  <p className="mt-1 text-xs! text-[#5e5e5e]">Jeśli pole tekstu lub linku pozostanie puste, przycisk nie pojawi się w stopce.</p>
+                  <p className="mt-1 text-xs! text-[#5e5e5e]">{t.cta.helper}</p>
                 </div>
               </div>
             )}
 
             {activePanel === 'social' && (
               <div className="space-y-3">
-                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">Media społecznościowe</p>
+                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.social.title}</p>
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">LinkedIn</label>
@@ -893,14 +999,14 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                 </div>
-                <p className="text-xs! text-[#5e5e5e]">Linki są opcjonalne - w stopce pojawią się tylko te serwisy, które mają uzupełniony adres URL (bez ikon, sama nazwa serwisu).</p>
+                <p className="text-xs! text-[#5e5e5e]">{t.social.helper}</p>
               </div>
             )}
 
             {activePanel === 'appearance' && (
               <div className="space-y-4">
                 <div>
-                  <p className="mb-2 text-xs! font-semibold text-[#5e5e5e] uppercase">Motyw kolorystyczny</p>
+                  <p className="mb-2 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.themeTitle}</p>
                   <div className="flex flex-wrap gap-2">
                     {THEME_PRESETS.map((preset) => (
                       <button
@@ -922,7 +1028,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Kolor akcentu</p>
+                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.accentColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -933,13 +1039,13 @@ export default function EmailSignatureGenerator() {
                     </div>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Kolor tekstu</p>
+                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.textColor}</p>
                     <div className="flex items-center gap-2">
                       <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="h-9 w-9 cursor-pointer border-none bg-white p-0!" />
                     </div>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Kolor tła</p>
+                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.backgroundColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -953,7 +1059,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Czcionka</p>
+                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.fontFamily}</p>
                     <select
                       value={styleConfig.fontFamily}
                       onChange={(e) => handleStyleChange('fontFamily', e.target.value)}
@@ -967,7 +1073,7 @@ export default function EmailSignatureGenerator() {
                     </select>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Rozmiar tekstu</p>
+                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.fontSize}</p>
                     <div className="flex flex-wrap gap-2">
                       {(['small', 'normal', 'large'] as FontSizeOption[]).map((size) => (
                         <button
@@ -978,9 +1084,9 @@ export default function EmailSignatureGenerator() {
                             styleConfig.fontSize === size ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
                           }`}
                         >
-                          {size === 'small' && 'Mały'}
-                          {size === 'normal' && 'Standard'}
-                          {size === 'large' && 'Większy'}
+                          {size === 'small' && t.appearance.fontSizeSmall}
+                          {size === 'normal' && t.appearance.fontSizeNormal}
+                          {size === 'large' && t.appearance.fontSizeLarge}
                         </button>
                       ))}
                     </div>
@@ -988,7 +1094,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Margines wewnętrzny stopki</p>
+                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
                       <button
@@ -1008,7 +1114,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">Zaokrąglenie przycisku CTA</p>
+                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.ctaRadius}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
                       <button
@@ -1019,9 +1125,9 @@ export default function EmailSignatureGenerator() {
                           styleConfig.ctaRadius === option ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
                         }`}
                       >
-                        {option === 'none' && 'Brak'}
-                        {option === 'small' && 'Lekkie'}
-                        {option === 'full' && 'Pełne'}
+                        {option === 'none' && t.appearance.ctaRadiusNone}
+                        {option === 'small' && t.appearance.ctaRadiusSmall}
+                        {option === 'full' && t.appearance.ctaRadiusFull}
                       </button>
                     ))}
                   </div>
@@ -1036,7 +1142,7 @@ export default function EmailSignatureGenerator() {
                     className="h-4! w-4! rounded border-neutral-300"
                   />
                   <label htmlFor="divider-toggle" className="text-sm! text-neutral-800">
-                    Pokaż linię oddzielającą dane od klauzuli
+                    {t.appearance.showDivider}
                   </label>
                 </div>
               </div>
@@ -1044,13 +1150,13 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'legal' && (
               <div className="space-y-3">
-                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">Klauzula prawna / RODO</p>
+                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.legal.title}</p>
                 <textarea
                   value={config.legalNote}
                   onChange={(e) => handleTextChange('legalNote', e.target.value)}
                   className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-xs! focus:border-neutral-800 focus:outline-none"
                   rows={6}
-                  placeholder="Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość."
+                  placeholder={t.legal.placeholder}
                 />
               </div>
             )}
@@ -1060,8 +1166,8 @@ export default function EmailSignatureGenerator() {
         <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div className="flex items-center justify-between gap-2">
             <div>
-              <h2 className="h6">Podgląd stopki mailowej</h2>
-              <p className="text-xs! text-[#5e5e5e]">Podgląd techniczny - zgodny z Gmail, Outlook i większością klientów pocztowych.</p>
+              <h2 className="h6">{t.preview.title}</h2>
+              <p className="text-xs! text-[#5e5e5e]">{t.preview.helper}</p>
             </div>
           </div>
 
@@ -1075,11 +1181,11 @@ export default function EmailSignatureGenerator() {
 
           <div className="flex flex-wrap gap-3">
             <Button type="button" variant="accent" size="small" disabled={!hasRequired} onClick={handleCopyToGmail} className="disabled:opacity-60">
-              {copyStatus === 'success' ? 'Skopiowano - wklej w Gmailu' : copyStatus === 'error' ? 'Błąd kopiowania' : 'Kopiuj stopkę (Gmail / Outlook)'}
+              {copyStatus === 'success' ? t.preview.copySuccess : copyStatus === 'error' ? t.preview.copyError : t.preview.copyButton}
             </Button>
           </div>
 
-          {!hasRequired && <p className="text-xs! text-[#5e5e5e]">Aby skopiować stopkę, uzupełnij przynajmniej imię i nazwisko oraz e-mail.</p>}
+          {!hasRequired && <p className="text-xs! text-[#5e5e5e]">{t.preview.requiredFields}</p>}
         </section>
       </div>
     </div>

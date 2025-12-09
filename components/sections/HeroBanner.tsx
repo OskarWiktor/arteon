@@ -4,6 +4,12 @@ import Button from '../ui/Button';
 import { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 
+const ui = {
+  pl: {
+    quickLinks: 'Szybkie linki',
+  },
+} as const;
+
 interface HeroBannerProps {
   buttonTopOne?: string;
   buttonTopOneLink?: string;
@@ -46,6 +52,7 @@ export default function HeroBanner({
   variant = 'left',
   overlay = 'none',
 }: HeroBannerProps) {
+  const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
 
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
@@ -83,7 +90,7 @@ export default function HeroBanner({
           <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 pt-4 md:p-7 ${contentBgClass} hyphens-auto`}>
             {subtitle && <p className={`reveal-animation text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
             {topButtons.length > 0 && (
-              <nav aria-label="Szybkie linki" className="mt-4">
+              <nav aria-label={t.quickLinks} className="mt-4">
                 <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
                   {topButtons.map(({ text, link }, i) => (
                     <li key={i}>

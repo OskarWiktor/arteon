@@ -190,6 +190,13 @@ const stepsDesign = [
   },
 ];
 
+const ui = {
+  pl: {
+    defaultTitleHome: 'Jak pracujemy?',
+    defaultTitleOther: 'Nasz proces współpracy',
+  },
+} as const;
+
 const VARIANTS: Record<Variant, typeof stepsHome> = {
   home: stepsHome,
   web: stepsWeb,
@@ -199,11 +206,12 @@ const VARIANTS: Record<Variant, typeof stepsHome> = {
 };
 
 export default function WorkSteps({ variant = 'home', title, subtitle, description }: { variant?: Variant; title?: string; subtitle?: string; description?: string }) {
+  const t = ui.pl;
   const items = VARIANTS[variant];
 
   return (
     <SectionSteps
-      title={title ?? (variant === 'home' ? 'Jak pracujemy?' : 'Nasz proces współpracy')}
+      title={title ?? (variant === 'home' ? t.defaultTitleHome : t.defaultTitleOther)}
       subtitle={subtitle ?? undefined}
       description={description ?? undefined}
       grid="four"

@@ -2,6 +2,13 @@
 
 import Wrapper from '../ui/Wrapper';
 
+const ui = {
+  pl: {
+    home: 'Strona główna',
+    ariaLabel: 'okruszki',
+  },
+} as const;
+
 type Crumb = { href: string; label: string };
 
 export type BreadcrumbsProps = {
@@ -20,7 +27,8 @@ function absoluteUrl(siteUrl: string, href: string) {
 }
 
 export default function Breadcrumbs({ second, third, fourth, className = '', includeJsonLd = false, siteUrl = DEFAULT_SITE }: BreadcrumbsProps) {
-  const items: Crumb[] = [{ href: '/', label: 'Strona główna' }, second, third, ...(fourth ? [fourth] : [])];
+  const t = ui.pl;
+  const items: Crumb[] = [{ href: '/', label: t.home }, second, third, ...(fourth ? [fourth] : [])];
 
   const lastIndex = items.length - 1;
 
@@ -39,7 +47,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
 
   return (
     <Wrapper>
-      <nav aria-label="okruszki" className={`py-6 ${className}`}>
+      <nav aria-label={t.ariaLabel} className={`py-6 ${className}`}>
         <ol className="flex flex-wrap gap-1 md:gap-2">
           {items.map((it, idx) => {
             const isLast = idx === lastIndex;

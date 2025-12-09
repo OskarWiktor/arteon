@@ -6,6 +6,12 @@ import type { Project, ProjectCategory } from '@/types/project';
 import ProjectCard from '../../ui/ProjectCard';
 import { AnimatePresence, motion } from 'framer-motion';
 
+const ui = {
+  pl: {
+    noProjects: 'Brak projektów dla wybranych filtrów.',
+  },
+} as const;
+
 type Props = {
   selectedCategories: ProjectCategory[];
 };
@@ -31,8 +37,10 @@ export default function ProjectsGrid({ selectedCategories }: Props) {
     });
   }, [projects, selectedCategories]);
 
+  const t = ui.pl;
+
   if (!filteredProjects.length) {
-    return <p className="mt-6 text-[#5e5e5e]">Brak projektów dla wybranych filtrów.</p>;
+    return <p className="mt-6 text-[#5e5e5e]">{t.noProjects}</p>;
   }
 
   const animKey = JSON.stringify([...selectedCategories].sort());

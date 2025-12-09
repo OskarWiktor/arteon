@@ -6,6 +6,19 @@ import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 
+const ui = {
+  pl: {
+    close: 'Zamknij',
+    services: 'Usługi',
+    mobileMenu: 'Menu mobilne',
+    terms: 'Regulamin świadczenia usług',
+    privacy: 'Polityka Prywatności',
+    instagramLabel: 'Firmowy Instagram',
+    facebookLabel: 'Firmowy Facebook',
+    bookConsultation: 'Umów konsultację',
+  },
+} as const;
+
 import {
   RiArrowDownSLine,
   RiCodeSSlashFill,
@@ -104,6 +117,7 @@ function Portal({ children }: { children: React.ReactNode }) {
 }
 
 export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
+  const t = ui.pl;
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -201,7 +215,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             ref={panelRef}
             role="dialog"
             aria-modal="true"
-            aria-label="Menu mobilne"
+            aria-label={t.mobileMenu}
             className="z[1000] fixed top-0 right-0 h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-xl"
             initial={{ x: 24, opacity: 0.98 }}
             animate={{ x: 0, opacity: 1 }}
@@ -210,12 +224,12 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
           >
             <div className="flex items-center justify-end px-4 pt-3">
               <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
-                Zamknij
+                {t.close}
               </button>
             </div>
 
             <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
-              <p className="px-3 pb-1 text-[11px] tracking-wider text-[#5e5e5e] uppercase">Usługi</p>
+              <p className="px-3 pb-1 text-[11px] tracking-wider text-[#5e5e5e] uppercase">{t.services}</p>
 
               <div className="flex flex-col">
                 {SECTIONS.map((sec) => {
@@ -311,8 +325,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <ul className="mb-2 flex flex-col gap-1">
                 {[
-                  { href: '/regulamin', label: 'Regulamin świadczenia usług' },
-                  { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
+                  { href: '/regulamin', label: t.terms },
+                  { href: '/polityka-prywatnosci', label: t.privacy },
                 ].map(({ href, label }) => (
                   <li key={label}>
                     <Link
@@ -333,7 +347,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       href="https://www.instagram.com/arteon.pl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Firmowy Instagram"
+                      aria-label={t.instagramLabel}
                       className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       <RiInstagramLine className="h-5 w-5 text-[#2B2B2B] transition hover:text-slate-600" aria-hidden="true" />
@@ -342,7 +356,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       href="https://www.facebook.com/people/Arteon/61583260915021/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Firmowy Facebook"
+                      aria-label={t.facebookLabel}
                       className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       <RiFacebookFill className="h-5 w-5 text-[#2B2B2B] transition hover:text-slate-600" aria-hidden="true" />
@@ -355,7 +369,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       onClick={() => setIsOpen(false)}
                       className="rounded-2xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
-                      Umów konsultację
+                      {t.bookConsultation}
                     </Link>
                   </div>
                 </div>

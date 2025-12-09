@@ -3,6 +3,29 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Button from '../ui/Button';
 
+const ui = {
+  pl: {
+    title: 'Cookies i prywatność',
+    description: 'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong> Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
+    setPreferences: 'Ustaw preferencje',
+    privacyPolicy: 'Polityka prywatności',
+    reject: 'Odrzuć',
+    settings: 'Ustawienia',
+    accept: 'Akceptuj',
+    panelTitle: 'Preferencje prywatności',
+    panelDescription: 'Ustawienia zgód na przetwarzanie danych w celach analitycznych.',
+    categoriesLegend: 'Kategorie',
+    essentialTitle: 'Niezbędne',
+    essentialDescription: 'Bez nich serwis nie działa. Nie zbierają danych do marketingu.',
+    essentialStatus: 'Zawsze aktywne',
+    analyticsTitle: 'Analityka (GA4)',
+    analyticsDescription: 'Statystyki odwiedzin. Włącza Google Analytics 4 po Twojej zgodzie.',
+    analyticsLabel: 'Włącz analitykę GA4',
+    changeDecision: 'W każdej chwili możesz zmienić decyzję',
+    save: 'Zapisz',
+  },
+} as const;
+
 type ConsentState = { v: number; analytics: boolean; updatedAt: string };
 const COOKIE_NAME = 'arteon_consent';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 180;
@@ -153,6 +176,7 @@ export default function CookieConsent() {
   }
 
   if (!visible) return null;
+  const t = ui.pl;
   const titleId = panel ? 'cookie-panel-title' : 'cookie-title';
   const descId = panel ? 'cookie-panel-desc' : 'cookie-desc';
 
@@ -163,11 +187,10 @@ export default function CookieConsent() {
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-2">
               <span id="cookie-title" className="h6">
-                Cookies i prywatność
+                {t.title}
               </span>
               <p id="cookie-desc" className="text-sm text-black">
-                Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony.
-                <strong> Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.
+                <span dangerouslySetInnerHTML={{ __html: t.description }} />
                 <span className="ml-1">
                   <button
                     className="text-black underline underline-offset-2"
@@ -178,11 +201,11 @@ export default function CookieConsent() {
                     aria-haspopup="dialog"
                     aria-controls="cookie-preferences"
                   >
-                    Ustaw preferencje
+                    {t.setPreferences}
                   </button>{' '}
                   •{' '}
                   <a className="text-black underline underline-offset-2" href="/polityka-prywatnosci" rel="noopener">
-                    Polityka prywatności
+                    {t.privacyPolicy}
                   </a>
                 </span>
               </p>
@@ -194,57 +217,57 @@ export default function CookieConsent() {
                 onClick={() => saveAndClose({ analytics: false })}
                 className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium text-black shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
               >
-                Odrzuć
+                {t.reject}
               </button>
 
               <Button size="small" onClick={() => setPanel(true)}>
-                Ustawienia
+                {t.settings}
               </Button>
               <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="dark">
-                Akceptuj
+                {t.accept}
               </Button>
             </div>
           </div>
         ) : (
           <div id="cookie-preferences" className="space-y-4">
             <span id="cookie-panel-title" className="h6">
-              Preferencje prywatności
+              {t.panelTitle}
             </span>
             <p id="cookie-panel-desc" className="sr-only">
-              Ustawienia zgód na przetwarzanie danych w celach analitycznych.
+              {t.panelDescription}
             </p>
 
             <fieldset className="space-y-2">
-              <legend className="sr-only">Kategorie</legend>
+              <legend className="sr-only">{t.categoriesLegend}</legend>
 
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
-                  <span className="text-base font-medium">Niezbędne</span>
-                  <span className="ml-2 text-sm font-medium text-black">Bez nich serwis nie działa. Nie zbierają danych do marketingu.</span>
+                  <span className="text-base font-medium">{t.essentialTitle}</span>
+                  <span className="ml-2 text-sm font-medium text-black">{t.essentialDescription}</span>
                 </div>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-black">Zawsze aktywne</span>
+                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-black">{t.essentialStatus}</span>
               </div>
 
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
-                  <span className="text-base font-medium">Analityka (GA4)</span>
-                  <span className="ml-2 text-sm font-medium text-black">Statystyki odwiedzin. Włącza Google Analytics 4 po Twojej zgodzie.</span>
+                  <span className="text-base font-medium">{t.analyticsTitle}</span>
+                  <span className="ml-2 text-sm font-medium text-black">{t.analyticsDescription}</span>
                 </div>
                 <div className="flex w-[24px] items-center justify-center">
-                  <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" aria-label="Włącz analitykę GA4" checked={analyticsChoice} onChange={() => setAnalyticsChoice((v) => !v)} />
+                  <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" aria-label={t.analyticsLabel} checked={analyticsChoice} onChange={() => setAnalyticsChoice((v) => !v)} />
                 </div>
               </div>
             </fieldset>
 
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <span className="text-sm font-medium text-black">W każdej chwili możesz zmienić decyzję</span>
+              <span className="text-sm font-medium text-black">{t.changeDecision}</span>
 
               <div className="flex gap-2">
                 <button
                   onClick={() => saveAndClose({ analytics: false })}
                   className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-black shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                 >
-                  Odrzuć
+                  {t.reject}
                 </button>
                 <Button
                   onClick={() =>
@@ -255,7 +278,7 @@ export default function CookieConsent() {
                   size="small"
                   variant="dark"
                 >
-                  Zapisz
+                  {t.save}
                 </Button>
               </div>
             </div>

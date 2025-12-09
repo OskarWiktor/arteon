@@ -4,6 +4,25 @@ import Link from 'next/link';
 import Script from 'next/script';
 import Wrapper from '../ui/Wrapper';
 
+const ui = {
+  pl: {
+    hours: 'Godziny: pn-pt, 8:00-16:00',
+    graphicProjects: 'Projekty graficzne',
+    websites: 'Witryny',
+    contentCreation: 'Tworzenie treści',
+    marketing: 'Marketing',
+    other: 'Inne',
+    cookieSettings: 'Ustawienia cookies',
+    sitemap: 'Mapa strony',
+    copyright: 'Wszelkie prawa zastrzeżone.',
+    description: 'Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.',
+    companyDataLabel: 'Dane firmy i lokalizacja',
+    graphicProjectsLabel: 'Usługi - Projekty graficzne',
+    websitesContentLabel: 'Usługi - Witryny, Treści i Marketing',
+    navigationLabel: 'Nawigacja',
+  },
+} as const;
+
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 
 const ORG = {
@@ -111,6 +130,7 @@ const otherLinks = [
 ];
 
 export default function Footer() {
+  const t = ui.pl;
   const mid = Math.ceil(offerLinksThree.length / 2);
   const gfxLeft = offerLinksThree.slice(0, mid);
   const gfxRight = offerLinksThree.slice(mid);
@@ -120,7 +140,7 @@ export default function Footer() {
       <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
         <Wrapper>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
-            <section aria-label="Dane firmy i lokalizacja">
+            <section aria-label={t.companyDataLabel}>
               <address className="text-base text-[#080808] not-italic">
                 <p>
                   <strong>{ORG.name}</strong>
@@ -138,7 +158,7 @@ export default function Footer() {
               </address>
 
               <div className="mt-3">
-                <p className="text-sm text-[#5e5e5e]">Godziny: pn-pt, 8:00-16:00</p>
+                <p className="text-sm text-[#5e5e5e]">{t.hours}</p>
               </div>
 
               <ul className="mt-4 flex flex-col gap-2 text-sm">
@@ -155,8 +175,8 @@ export default function Footer() {
               </ul>
             </section>
 
-            <nav aria-label="Usługi - Projekty graficzne" className="lg:col-span-2">
-              <h3 className="h6 mb-2">Projekty graficzne</h3>
+            <nav aria-label={t.graphicProjectsLabel} className="lg:col-span-2">
+              <h3 className="h6 mb-2">{t.graphicProjects}</h3>
               <div className="mt-2 grid grid-cols-2 gap-x-10">
                 <ul className="flex flex-col gap-2 text-sm">
                   {gfxLeft.map(({ href, title }) => (
@@ -185,8 +205,8 @@ export default function Footer() {
               </div>
             </nav>
 
-            <nav aria-label="Usługi - Witryny, Treści i Marketing">
-              <h3 className="h6 mb-2">Witryny</h3>
+            <nav aria-label={t.websitesContentLabel}>
+              <h3 className="h6 mb-2">{t.websites}</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
@@ -200,7 +220,7 @@ export default function Footer() {
                 ))}
               </ul>
 
-              <h3 className="h6 mt-4">Tworzenie treści</h3>
+              <h3 className="h6 mt-4">{t.contentCreation}</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksTwo.map(({ href, title }) => (
                   <li key={href}>
@@ -214,7 +234,7 @@ export default function Footer() {
                 ))}
               </ul>
 
-              <h3 className="h6 mt-4">Marketing</h3>
+              <h3 className="h6 mt-4">{t.marketing}</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksFour.map(({ href, title }) => (
                   <li key={href}>
@@ -229,8 +249,8 @@ export default function Footer() {
               </ul>
             </nav>
 
-            <nav aria-label="Nawigacja">
-              <h3 className="h6 mb-2">Inne</h3>
+            <nav aria-label={t.navigationLabel}>
+              <h3 className="h6 mb-2">{t.other}</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {otherLinks.map(({ href, label }) => (
                   <li key={href}>
@@ -244,7 +264,7 @@ export default function Footer() {
                 ))}
                 <li>
                   <button onClick={() => window.ArteonConsent?.open()} className="hover-underline cursor-pointer text-base" aria-haspopup="dialog">
-                    Ustawienia cookies
+                    {t.cookieSettings}
                   </button>
                 </li>
                 <li>
@@ -252,7 +272,7 @@ export default function Footer() {
                     href="/mapa-strony"
                     className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   >
-                    Mapa strony
+                    {t.sitemap}
                   </Link>
                 </li>
               </ul>
@@ -262,9 +282,9 @@ export default function Footer() {
           <div className="mt-8 border-t border-gray-200 pt-4 text-[#5e5e5e]">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
               <span className="text-center text-sm md:text-left">
-                © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
+                © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {t.copyright}
               </span>
-              <span className="text-sm">Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.</span>
+              <span className="text-sm">{t.description}</span>
               <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js
               </a>

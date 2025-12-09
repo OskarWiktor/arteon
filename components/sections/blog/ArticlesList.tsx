@@ -7,6 +7,14 @@ import { getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
 import blogData from '@/data/pl/blog.json';
 
+const ui = {
+  pl: {
+    articlesList: 'Lista artykułów',
+    readingTime: 'min czytania',
+    publicationDate: 'Data publikacji',
+  },
+} as const;
+
 interface BlogData {
   articles: Article[];
 }
@@ -14,10 +22,11 @@ interface BlogData {
 const articles = (blogData as BlogData).articles;
 
 export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
+  const t = ui.pl;
   const items = filterCategorySlug ? articles.filter((a) => (a.category || []).some((c) => slugify(c) === filterCategorySlug)) : articles;
 
   return (
-    <section aria-label="Lista artykułów" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section aria-label={t.articlesList} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((a) => {
         const catSlug = getPrimaryCategorySlug(a);
         const href = `/edukacja/${catSlug}/${a.slug}`;
@@ -32,8 +41,8 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
               <div className="p-4">
                 <h3 className="h6">{a.title}</h3>
                 <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
-                  {a.readingTime ? <span>{a.readingTime} min czytania</span> : null}
-                  {a.datePublished ? <span aria-label="Data publikacji">• {a.datePublished}</span> : null}
+                  {a.readingTime ? <span>{a.readingTime} {t.readingTime}</span> : null}
+                  {a.datePublished ? <span aria-label={t.publicationDate}>• {a.datePublished}</span> : null}
                 </div>
               </div>
             </Link>

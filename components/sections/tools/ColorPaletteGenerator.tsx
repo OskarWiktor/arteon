@@ -4,6 +4,34 @@ import { FormEvent, useMemo, useState } from 'react';
 import Button from '@/components/ui/Button';
 import { RiCheckLine, RiClipboardLine } from 'react-icons/ri';
 
+const ui = {
+  pl: {
+    selectBaseColor: 'Wybierz kolor bazowy',
+    updateColor: 'Zaktualizuj kolor',
+    randomColor: 'Losowy kolor',
+    currentBaseColor: 'Aktualny kolor bazowy',
+    baseColorHelper: 'Na tym kolorze opierają się wszystkie palety poniżej.',
+    colorPreview: 'Podgląd koloru',
+    copied: 'Skopiowano',
+    copy: 'Kopiuj',
+    generatedPalettes: 'Wygenerowane palety kolorów',
+    colorReadError: 'Nie udało się odczytać koloru. Upewnij się, że używasz formatu',
+    example: 'np.',
+    enterValidColor: 'Wpisz poprawny kolor HEX, aby wygenerować palety. Wszystkie obliczenia są wykonywane lokalnie w Twojej przeglądarce.',
+    palettes: {
+      monochromatic: 'Paleta monochromatyczna',
+      analogous: 'Paleta analogiczna',
+      complementary: 'Paleta komplementarna',
+      triadic: 'Paleta triadyczna',
+      splitComplementary: 'Paleta split-complementary',
+      softPastel: 'Paleta pastelowa',
+      deepDark: 'Paleta ciemna',
+      materialTonal: 'Paleta tonalna (inspirowana Material Design)',
+      appleMinimal: 'Paleta minimalistyczna (inspirowana Apple)',
+    },
+  },
+} as const;
+
 type RGB = { r: number; g: number; b: number };
 type HSL = { h: number; s: number; l: number };
 
@@ -296,9 +324,10 @@ function randomHexColor(): string {
 }
 
 function Swatch({ color, onCopy, copied }: { color: PaletteColor; onCopy: (hex: string) => void; copied: boolean }) {
+  const t = ui.pl;
   return (
     <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
-      <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`Podgląd koloru ${color.hex}`} />
+      <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`${t.colorPreview} ${color.hex}`} />
       <div className="min-w-0 flex-1">
         <p className="text-sm! leading-tight font-medium">{color.hex}</p>
         <p className="truncate text-[11px]! text-[#5e5e5e]">{formatHsl(color.hsl)}</p>
@@ -311,12 +340,12 @@ function Swatch({ color, onCopy, copied }: { color: PaletteColor; onCopy: (hex: 
         {copied ? (
           <>
             <RiCheckLine className="h-3.5 w-3.5" />
-            Skopiowano
+            {t.copied}
           </>
         ) : (
           <>
             <RiClipboardLine className="h-3.5 w-3.5" />
-            Kopiuj
+            {t.copy}
           </>
         )}
       </button>
@@ -325,6 +354,7 @@ function Swatch({ color, onCopy, copied }: { color: PaletteColor; onCopy: (hex: 
 }
 
 export default function ColorPaletteGenerator() {
+  const t = ui.pl;
   const [baseColor, setBaseColor] = useState('#4f6bf5');
   const [inputColor, setInputColor] = useState('#4f6bf5');
   const [copiedHex, setCopiedHex] = useState<string | null>(null);
@@ -371,7 +401,7 @@ export default function ColorPaletteGenerator() {
                 type="color"
                 value={inputColor}
                 onChange={(e) => setInputColor(e.target.value)}
-                aria-label="Wybierz kolor bazowy"
+                aria-label={t.selectBaseColor}
                 className="tool-color-picker h-11! w-13!"
               />
               <input
@@ -385,19 +415,19 @@ export default function ColorPaletteGenerator() {
 
             <div className="flex flex-wrap items-center gap-2">
               <Button type="submit" size="small" variant="accent">
-                Zaktualizuj kolor
+                {t.updateColor}
               </Button>
               <Button type="button" size="small" onClick={handleRandom} className="items-center gap-1">
-                Losowy kolor
+                {t.randomColor}
               </Button>
             </div>
 
             {normalizedBase && (
               <div className="tool-info-box flex items-center gap-3">
-                <div className="h-7 w-7 rounded-lg border border-black/10" style={{ backgroundColor: normalizedBase }} aria-label="Aktualny kolor bazowy" />
+                <div className="h-7 w-7 rounded-lg border border-black/10" style={{ backgroundColor: normalizedBase }} aria-label={t.currentBaseColor} />
                 <div className="min-w-0">
                   <p className="text-sm! leading-tight font-medium">{normalizedBase}</p>
-                  <p className="tool-helper text-[11px]!">Na tym kolorze opierają się wszystkie palety poniżej.</p>
+                  <p className="tool-helper text-[11px]!">{t.baseColorHelper}</p>
                 </div>
               </div>
             )}
@@ -405,16 +435,16 @@ export default function ColorPaletteGenerator() {
         </form>
       </section>
 
-      <section aria-label="Wygenerowane palety kolorów" className="tool-section space-y-4">
+      <section aria-label={t.generatedPalettes} className="tool-section space-y-4">
         {!normalizedBase && (
           <p className="rounded-xl border border-dashed border-red-200 bg-red-50 px-3 py-2 text-[11px]! text-red-800">
-            Nie udało się odczytać koloru. Upewnij się, że używasz formatu <code className="rounded bg-black/5 px-1">#rrggbb</code>, np. <code className="rounded bg-black/5 px-1">#4f6bf5</code>.
+            {t.colorReadError} <code className="rounded bg-black/5 px-1">#rrggbb</code>, {t.example} <code className="rounded bg-black/5 px-1">#4f6bf5</code>.
           </p>
         )}
 
         {normalizedBase && palettes.length === 0 && (
           <p className="tool-info-box tool-helper text-[11px]!">
-            Wpisz poprawny kolor HEX, aby wygenerować palety. Wszystkie obliczenia są wykonywane lokalnie w Twojej przeglądarce.
+            {t.enterValidColor}
           </p>
         )}
 

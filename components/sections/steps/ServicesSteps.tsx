@@ -127,14 +127,24 @@ const items = [
   },
 ];
 
+const ui = {
+  pl: {
+    title: 'Poznaj nasze usługi',
+    subtitle: 'Partner',
+    description: 'Posiadamy szeroką ofertę, dzięki czemu, nie zależnie od Twojej branży, celów jak i budżetu, jesteśmy w stanie zrealizować Twój plan',
+    btnOne: 'Skontaktuj się',
+  },
+} as const;
+
 export default function ServicesSteps() {
+  const t = ui.pl;
   return (
     <SectionSteps
       items={items}
-      title="Poznaj nasze usługi"
-      subtitle="Partner"
-      description="Posiadamy szeroką ofertę, dzięki czemu, nie zależnie od Twojej branży, celów jak i budżetu, jesteśmy w stanie zrealizować Twój plan"
-      btnOne="Skontaktuj się"
+      title={t.title}
+      subtitle={t.subtitle}
+      description={t.description}
+      btnOne={t.btnOne}
       btnOneVariant="dark"
       btnOneLink="/kontakt"
     />

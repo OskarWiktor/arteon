@@ -2,6 +2,15 @@
 
 import { useEffect, useMemo, useState } from 'react';
 
+const ui = {
+  pl: {
+    tableOfContents: 'Spis treści',
+    collapse: 'Zwiń',
+    showAll: 'Pokaż wszystko',
+    section: 'sekcja',
+  },
+} as const;
+
 type Entry = { id: string; text: string; level: 2 | 3 };
 
 type TableOfContentsProps = {
@@ -11,6 +20,7 @@ type TableOfContentsProps = {
 };
 
 export default function TableOfContents({ rootSelector = '#article-root', size = 'small', levels = 'h2+h3' }: TableOfContentsProps) {
+  const t = ui.pl;
   const [items, setItems] = useState<Entry[]>([]);
   const [activeId, setActiveId] = useState<string>('');
   const [expanded, setExpanded] = useState(false);
@@ -32,10 +42,10 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
     headings.forEach((h) => {
       if (!h.id) {
         const base = slugify(h.textContent || '');
-        let candidate = base || 'sekcja';
+        let candidate = base || t.section;
         let i = 2;
         while (!candidate || seen.has(candidate) || document.getElementById(candidate)) {
-          candidate = `${base || 'sekcja'}-${i++}`;
+          candidate = `${base || t.section}-${i++}`;
         }
         h.id = candidate;
         seen.add(candidate);
@@ -92,14 +102,14 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
         <div className="relative rounded-xl border border-black/10 bg-white/95 shadow-sm backdrop-blur">
           <div className="flex items-center justify-between px-3 py-2">
             <p className="text-xs font-medium tracking-wider text-[#5e5e5e] uppercase">
-              Spis treści <span className="opacity-60">({items.length})</span>
+              {t.tableOfContents} <span className="opacity-60">({items.length})</span>
             </p>
             <button type="button" aria-expanded={expanded} onClick={() => setExpanded((v) => !v)} className="text-xs underline">
-              {expanded ? 'Zwiń' : 'Pokaż wszystko'}
+              {expanded ? t.collapse : t.showAll}
             </button>
           </div>
 
-          <nav aria-label="Spis treści" className="px-2 pb-2">
+          <nav aria-label={t.tableOfContents} className="px-2 pb-2">
             <div className="relative">
               <div className={`overflow-y-auto ${expanded ? 'max-h-[70vh]' : 'max-h-40'} pr-1 pb-6`}>
                 <LinkList dense />
@@ -113,8 +123,8 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
         <div className="rounded-2xl border border-black/10 bg-white p-3 shadow-sm">
-          <p className="mb-2 text-xs tracking-wider text-[#5e5e5e] uppercase">Spis treści</p>
-          <nav aria-label="Spis treści">
+          <p className="mb-2 text-xs tracking-wider text-[#5e5e5e] uppercase">{t.tableOfContents}</p>
+          <nav aria-label={t.tableOfContents}>
             <LinkList />
           </nav>
         </div>

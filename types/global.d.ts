@@ -17,3 +17,4 @@ interface Window {
   ) => void;
   dataLayer?: unknown[];
 }
+

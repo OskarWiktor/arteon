@@ -7,6 +7,20 @@ import TestimonialCard from '@/components/ui/TestimonialCard';
 
 import testimonialsPl from '@/data/pl/testimonials.json';
 
+const ui = {
+  pl: {
+    defaultTitle: 'Opinie współprac i realizacji',
+    carouselLabel: 'Karuzela opinii',
+    scrollLeft: 'Przewiń w lewo',
+    scrollRight: 'Przewiń w prawo',
+    carouselNavigation: 'Nawigacja karuzeli',
+    goToSlide: 'Przejdź do slajdu',
+    of: 'z',
+    slide: 'Slajd',
+    testimonial: 'Opinia',
+  },
+} as const;
+
 type Props = {
   title?: string;
   subtitle?: string;
@@ -15,7 +29,8 @@ type Props = {
   max?: number;
 };
 
-export default function TestimonialsCarousel({ title = 'Opinie współprac i realizacji', subtitle, testimonials, ids, max = 12 }: Props) {
+export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subtitle, testimonials, ids, max = 12 }: Props) {
+  const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -116,8 +131,6 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
 
   if (!items.length) return null;
 
-  const carouselLabel = 'Karuzela opinii';
-
   const navBtn =
     'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-1 md:p-2 text-white shadow-xl backdrop-blur-sm ' +
     'transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none ' +
@@ -136,13 +149,13 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
           className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
-          aria-label={carouselLabel}
+          aria-label={t.carouselLabel}
           aria-live="polite"
           tabIndex={0}
           onKeyDown={onKeyDown}
         >
           {items.map((item, i) => (
-            <div key={item.id} ref={i === 0 ? cardRef : null} className="w-[320px] shrink-0 snap-start md:w-[420px] lg:w-[520px]" aria-label={`Opinia ${i + 1} z ${items.length}`}>
+            <div key={item.id} ref={i === 0 ? cardRef : null} className="w-[320px] shrink-0 snap-start md:w-[420px] lg:w-[520px]" aria-label={`${t.testimonial} ${i + 1} ${t.of} ${items.length}`}>
               <TestimonialCard item={item} />
             </div>
           ))}
@@ -150,11 +163,11 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
 
         {isScrollable && (
           <>
-            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2 max-h-13 max-w-13`} aria-label="Przewiń w lewo">
+            <button type="button" onClick={() => scrollByCards('left')} className={`${navBtn} left-2 max-h-13 max-w-13`} aria-label={t.scrollLeft}>
               <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
             </button>
 
-            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2 max-h-13 max-w-13`} aria-label="Przewiń w prawo">
+            <button type="button" onClick={() => scrollByCards('right')} className={`${navBtn} right-2 max-h-13 max-w-13`} aria-label={t.scrollRight}>
               <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
             </button>
           </>
@@ -162,7 +175,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
       </div>
 
       {isScrollable && maxSlides > 1 && (
-        <div className="flex justify-center md:gap-2" role="group" aria-label="Nawigacja karuzeli">
+        <div className="flex justify-center md:gap-2" role="group" aria-label={t.carouselNavigation}>
           {Array.from({ length: maxSlides }).map((_, i) => (
             <button
               key={i}
@@ -172,7 +185,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
                   behavior: 'smooth',
                 })
               }
-              aria-label={`Przejdź do slajdu ${i + 1} z ${maxSlides}`}
+              aria-label={`${t.goToSlide} ${i + 1} ${t.of} ${maxSlides}`}
               aria-current={i === currentSlide ? 'true' : undefined}
               className="h-5 w-5 cursor-pointer rounded-full p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:h-6 md:w-6"
             >
@@ -187,7 +200,7 @@ export default function TestimonialsCarousel({ title = 'Opinie współprac i rea
 
       {isScrollable && maxSlides > 1 && (
         <p className="sr-only" aria-live="polite">
-          Slajd {Math.min(currentSlide + 1, maxSlides)} z {maxSlides}
+          {t.slide} {Math.min(currentSlide + 1, maxSlides)} {t.of} {maxSlides}
         </p>
       )}
     </section>

@@ -41,13 +41,22 @@ const FeesStepsItems = [
   },
 ];
 
+const ui = {
+  pl: {
+    title: 'Płatności i bezpieczeństwo',
+    subtitle: 'Zasady współpracy',
+    description: 'Posiadamy transparentne zasady płatności, dzięki którym, zawsze wiesz czego się spodziewać. Nasz system skonstruowany jest tak aby maksymalnie obniżyć Twój poziom ryzyka oraz abyś wiedział jak dokładnie prowadzimy projeky o różnych budżetach',
+  },
+} as const;
+
 export default function FeesSteps() {
+  const t = ui.pl;
   return (
     <SectionSteps
       items={FeesStepsItems}
-      title="Płatności i bezpieczeństwo"
-      subtitle="Zasady współpracy"
-      description="Posiadamy transparentne zasady płatności, dzięki którym, zawsze wiesz czego się spodziewać. Nasz system skonstruowany jest tak aby maksymalnie obniżyć Twój poziom ryzyka oraz abyś wiedział jak dokładnie prowadzimy projeky o różnych budżetach"
+      title={t.title}
+      subtitle={t.subtitle}
+      description={t.description}
     />
   );
 }

@@ -3,6 +3,47 @@
 import { DragEvent, FormEvent, useMemo, useState } from 'react';
 import Button from '@/components/ui/Button';
 
+const ui = {
+  pl: {
+    canvasNotSupported: 'Brak wsparcia dla canvas w przeglądarce.',
+    pngGenerationError: 'Nie udało się wygenerować pliku PNG.',
+    imageLoadError: 'Nie udało się wczytać obrazu. Spróbuj ponownie lub użyj innego pliku.',
+    supportedFormatsOnly: 'Obsługiwane są wyłącznie pliki PNG, JPG/JPEG oraz SVG.',
+    addBaseImage: 'Najpierw dodaj obraz bazowy (PNG, JPG lub SVG).',
+    selectAtLeastOne: 'Zaznacz przynajmniej jeden rozmiar PNG lub opcję favicon.ico.',
+    unexpectedError: 'Wystąpił nieoczekiwany błąd podczas generowania favicon.',
+    addBaseImageLabel: 'Dodaj obraz bazowy',
+    dragDropImage: 'Przeciągnij i upuść obraz tutaj',
+    clickToSelect: 'lub kliknij, aby wybrać plik z dysku',
+    supportedFormats: 'Obsługiwane: PNG, JPG/JPEG, SVG',
+    selectedFile: 'Wybrany plik:',
+    setSizesAndBackground: 'Ustaw rozmiary i tło',
+    pngSizes: 'Rozmiary PNG (rekomendacje 2025)',
+    transparentBackground: 'Przezroczyste tło (PNG/ICO)',
+    backgroundColor: 'Kolor tła:',
+    generateFaviconIco: 'Wygeneruj plik favicon.ico (bazowo 32x32)',
+    autoDownload: 'Automatycznie pobierz pliki po wygenerowaniu',
+    generateAndDownload: 'Wygeneruj i pobierz favicon',
+    generating: 'Generuję favicon…',
+    generate: 'Generuj favicon',
+    downloadAll: 'Pobierz wszystkie',
+    clear: 'Wyczyść',
+    processing: 'Przetwarzam obraz i generuję pliki favicon…',
+    done: 'Gotowe! Wygenerowano nowoczesny zestaw favicon: favicon.ico + apple-touch-icon + ikony PWA (192 i 512 px). Niżej znajdziesz listę plików.',
+    previewAndFiles: 'Podgląd i pliki favicon',
+    totalSize: 'Łączny rozmiar:',
+    addImageToGenerate: 'Dodaj obraz po lewej stronie, aby wygenerować favicon.ico oraz zestaw ikon PNG zgodny z aktualnymi wytycznymi.',
+    previewBaseImage: 'Podgląd obrazu bazowego',
+    previewFavicon: 'Podgląd favicon',
+    approximatePreview: 'Przybliżony podgląd favicon w małym rozmiarze',
+    largeIconPreview: 'Ikona w większym rozmiarze (np. PWA)',
+    clickToPreview: 'Kliknij, aby otworzyć podgląd w nowej karcie',
+    download: 'Pobierz',
+    previewAndFilesLabel: 'Podgląd favicon i lista wygenerowanych plików',
+    faviconIcoLabel: 'favicon.ico (32x32 w kontenerze ICO)',
+  },
+} as const;
+
 type FileStatus = 'idle' | 'processing' | 'done' | 'error';
 
 interface OutputFile {
@@ -42,7 +83,7 @@ async function createPngFromImage(img: HTMLImageElement, size: number, backgroun
 
   const ctx = canvas.getContext('2d');
   if (!ctx) {
-    throw new Error('Brak wsparcia dla canvas w przeglądarce.');
+    throw new Error(ui.pl.canvasNotSupported);
   }
 
   if (!transparentBackground) {
@@ -65,7 +106,7 @@ async function createPngFromImage(img: HTMLImageElement, size: number, backgroun
     canvas.toBlob(
       (blob) => {
         if (!blob) {
-          reject(new Error('Nie udało się wygenerować pliku PNG.'));
+          reject(new Error(ui.pl.pngGenerationError));
           return;
         }
         resolve(blob);
@@ -111,6 +152,7 @@ async function createIcoFromPng(pngBlob: Blob, size: number): Promise<Blob> {
 }
 
 export default function FaviconGenerator() {
+  const t = ui.pl;
   const [sourceFile, setSourceFile] = useState<File | null>(null);
   const [sourcePreviewUrl, setSourcePreviewUrl] = useState<string | null>(null);
   const [status, setStatus] = useState<FileStatus>('idle');
@@ -137,7 +179,7 @@ export default function FaviconGenerator() {
     if (!file) return;
 
     if (!['image/png', 'image/jpeg', 'image/jpg', 'image/svg+xml'].includes(file.type)) {
-      setError('Obsługiwane są wyłącznie pliki PNG, JPG/JPEG oraz SVG.');
+      setError(t.supportedFormatsOnly);
       setSourceFile(null);
       if (sourcePreviewUrl) {
         URL.revokeObjectURL(sourcePreviewUrl);
@@ -169,7 +211,7 @@ export default function FaviconGenerator() {
     if (!file) return;
 
     if (!['image/png', 'image/jpeg', 'image/jpg', 'image/svg+xml'].includes(file.type)) {
-      setError('Obsługiwane są wyłącznie pliki PNG, JPG/JPEG oraz SVG.');
+      setError(t.supportedFormatsOnly);
       setSourceFile(null);
       if (sourcePreviewUrl) {
         URL.revokeObjectURL(sourcePreviewUrl);
@@ -213,12 +255,12 @@ export default function FaviconGenerator() {
     setError(null);
 
     if (!sourceFile || !sourcePreviewUrl) {
-      setError('Najpierw dodaj obraz bazowy (PNG, JPG lub SVG).');
+      setError(t.addBaseImage);
       return;
     }
 
     if (!selectedSizes.length && !includeIco) {
-      setError('Zaznacz przynajmniej jeden rozmiar PNG lub opcję favicon.ico.');
+      setError(t.selectAtLeastOne);
       return;
     }
 
@@ -234,7 +276,7 @@ export default function FaviconGenerator() {
 
       const loadPromise = new Promise<void>((resolve, reject) => {
         img.onload = () => resolve();
-        img.onerror = () => reject(new Error('Nie udało się wczytać obrazu. Spróbuj ponownie lub użyj innego pliku.'));
+        img.onerror = () => reject(new Error(t.imageLoadError));
       });
 
       img.src = sourcePreviewUrl;
@@ -277,7 +319,7 @@ export default function FaviconGenerator() {
 
         newOutputs.push({
           id: 'favicon-ico',
-          label: 'favicon.ico (32x32 w kontenerze ICO)',
+          label: t.faviconIcoLabel,
           size: 'ico',
           type: 'ico',
           fileName: icoName,
@@ -300,7 +342,7 @@ export default function FaviconGenerator() {
     } catch (err) {
       console.error(err);
       setStatus('error');
-      setError(err instanceof Error ? err.message : 'Wystąpił nieoczekiwany błąd podczas generowania favicon.');
+      setError(err instanceof Error ? err.message : t.unexpectedError);
     }
   }
 
@@ -344,30 +386,30 @@ export default function FaviconGenerator() {
         <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <form onSubmit={handleGenerate} className="space-y-6">
             <div>
-              <p className="mb-2 font-semibold uppercase">Dodaj obraz bazowy</p>
+              <p className="mb-2 font-semibold uppercase">{t.addBaseImageLabel}</p>
               <label
                 onDrop={handleDrop}
                 onDragOver={handleDragOver}
                 className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
               >
-                <span className="mb-1 text-sm font-medium">Przeciągnij i upuść obraz tutaj</span>
-                <span className="mb-2 text-xs text-[#5e5e5e]">lub kliknij, aby wybrać plik z dysku</span>
-                <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-800 shadow-sm">Obsługiwane: PNG, JPG/JPEG, SVG</span>
+                <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
+                <span className="mb-2 text-xs text-[#5e5e5e]">{t.clickToSelect}</span>
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-800 shadow-sm">{t.supportedFormats}</span>
                 <input type="file" accept="image/png,image/jpeg,image/jpg,image/svg+xml" onChange={handleFileChange} className="hidden" />
               </label>
               {sourceFile && (
                 <p className="mt-2 text-xs text-[#5e5e5e]">
-                  Wybrany plik: <strong>{sourceFile.name}</strong> ({formatBytes(sourceFile.size)})
+                  {t.selectedFile} <strong>{sourceFile.name}</strong> ({formatBytes(sourceFile.size)})
                 </p>
               )}
               {error && <p className="mt-2 text-xs text-red-600">{error}</p>}
             </div>
 
             <div>
-              <p className="mt-8 mb-2 font-semibold uppercase">Ustaw rozmiary i tło</p>
+              <p className="mt-8 mb-2 font-semibold uppercase">{t.setSizesAndBackground}</p>
 
               <div className="rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
-                <p className="mb-2 text-sm! font-semibold tracking-wide text-[#5e5e5e] uppercase">Rozmiary PNG (rekomendacje 2025)</p>
+                <p className="mb-2 text-sm! font-semibold tracking-wide text-[#5e5e5e] uppercase">{t.pngSizes}</p>
                 <div className="flex flex-wrap gap-2">
                   {PNG_SIZES.map((size) => {
                     const checked = selectedSizes.includes(size);
@@ -396,12 +438,12 @@ export default function FaviconGenerator() {
                     className="h-4 w-4! rounded border-neutral-300 p-0!"
                   />
                   <label htmlFor="transparent-bg" className="text-sm! text-neutral-800">
-                    Przezroczyste tło (PNG/ICO)
+                    {t.transparentBackground}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="text-sm! text-[#5e5e5e]">Kolor tła:</span>
+                  <span className="text-sm! text-[#5e5e5e]">{t.backgroundColor}</span>
                   <input
                     type="color"
                     value={backgroundColor}
@@ -416,75 +458,75 @@ export default function FaviconGenerator() {
                 <div className="flex items-center gap-2">
                   <input id="include-ico" type="checkbox" checked={includeIco} onChange={(e) => setIncludeIco(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
                   <label htmlFor="include-ico" className="text-sm! text-neutral-800">
-                    Wygeneruj plik <strong>favicon.ico</strong> (bazowo 32x32)
+                    {t.generateFaviconIco}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
                   <label htmlFor="auto-download" className="text-sm! text-neutral-800">
-                    Automatycznie pobierz pliki po wygenerowaniu
+                    {t.autoDownload}
                   </label>
                 </div>
               </div>
             </div>
 
             <div>
-              <p className="mt-8 mb-2 font-semibold uppercase">Wygeneruj i pobierz favicon</p>
+              <p className="mt-8 mb-2 font-semibold uppercase">{t.generateAndDownload}</p>
 
               <div className="flex flex-wrap gap-3">
                 <Button type="submit" variant="accent" size="small" disabled={!hasSource || isProcessing} className="disabled:opacity-60">
-                  {isProcessing ? 'Generuję favicon…' : 'Generuj favicon'}
+                  {isProcessing ? t.generating : t.generate}
                 </Button>
                 <Button onClick={handleDownloadAll} type="button" size="small" disabled={!anyOutputs} className="disabled:opacity-40">
-                  Pobierz wszystkie
+                  {t.downloadAll}
                 </Button>
                 <Button onClick={handleClear} type="button" size="small" disabled={isProcessing || (!hasSource && !anyOutputs)} className="disabled:opacity-40">
-                  Wyczyść
+                  {t.clear}
                 </Button>
               </div>
 
-              {status === 'processing' && <p className="mt-2 text-xs text-[#5e5e5e]">Przetwarzam obraz i generuję pliki favicon…</p>}
+              {status === 'processing' && <p className="mt-2 text-xs text-[#5e5e5e]">{t.processing}</p>}
               {status === 'done' && !error && (
                 <p className="mt-2 text-xs text-emerald-700">
-                  Gotowe! Wygenerowano nowoczesny zestaw favicon: favicon.ico + apple-touch-icon + ikony PWA (192 i 512 px). Niżej znajdziesz listę plików.
+                  {t.done}
                 </p>
               )}
             </div>
           </form>
         </section>
 
-        <section aria-label="Podgląd favicon i lista wygenerowanych plików" className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+        <section aria-label={t.previewAndFilesLabel} className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div className="flex items-center justify-between gap-2">
-            <h2 className="h6">Podgląd i pliki favicon</h2>
+            <h2 className="h6">{t.previewAndFiles}</h2>
             {anyOutputs && (
               <p className="text-xs text-[#5e5e5e]">
-                Łączny rozmiar: <strong>{formatBytes(totalSize)}</strong>
+                {t.totalSize} <strong>{formatBytes(totalSize)}</strong>
               </p>
             )}
           </div>
 
-          {!hasSource && !anyOutputs && <p className="text-xs text-[#5e5e5e]">Dodaj obraz po lewej stronie, aby wygenerować favicon.ico oraz zestaw ikon PNG zgodny z aktualnymi wytycznymi.</p>}
+          {!hasSource && !anyOutputs && <p className="text-xs text-[#5e5e5e]">{t.addImageToGenerate}</p>}
 
           {hasSource && (
             <div className="flex flex-wrap items-center gap-4 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
               <div>
-                <p className="mb-2 text-xs font-semibold tracking-wide text-[#5e5e5e] uppercase">Podgląd obrazu bazowego</p>
+                <p className="mb-2 text-xs font-semibold tracking-wide text-[#5e5e5e] uppercase">{t.previewBaseImage}</p>
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      {sourcePreviewUrl && <img src={sourcePreviewUrl} alt="Podgląd favicon" className="h-full w-full object-cover" />}
+                      {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.previewFavicon} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-xs text-[#5e5e5e]">Przybliżony podgląd favicon w małym rozmiarze</span>
+                    <span className="text-xs text-[#5e5e5e]">{t.approximatePreview}</span>
                   </div>
 
                   <div className="hidden items-center gap-2 md:flex">
                     <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      {sourcePreviewUrl && <img src={sourcePreviewUrl} alt="Podgląd dużej ikony" className="h-full w-full object-cover" />}
+                      {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.largeIconPreview} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-xs text-[#5e5e5e]">Ikona w większym rozmiarze (np. PWA)</span>
+                    <span className="text-xs text-[#5e5e5e]">{t.largeIconPreview}</span>
                   </div>
                 </div>
               </div>
@@ -500,7 +542,7 @@ export default function FaviconGenerator() {
                       type="button"
                       onClick={() => window.open(item.url, '_blank', 'noopener,noreferrer')}
                       className="hidden h-10 w-10 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 md:block"
-                      title="Kliknij, aby otworzyć podgląd w nowej karcie"
+                      title={t.clickToPreview}
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={item.url} alt={item.fileName} className="h-full w-full object-cover" />
@@ -518,7 +560,7 @@ export default function FaviconGenerator() {
 
                   <div className="flex items-center gap-1">
                     <a href={item.url} download={item.fileName} className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium">
-                      Pobierz
+                      {t.download}
                     </a>
                   </div>
                 </div>

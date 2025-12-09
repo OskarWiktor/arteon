@@ -1,6 +1,12 @@
 import { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 
+const ui = {
+  pl: {
+    defaultAriaLabel: 'Kluczowe benefity',
+  },
+} as const;
+
 type BenefitItem = {
   icon: ReactNode;
   label: string;
@@ -12,7 +18,7 @@ interface BenefitBeltProps {
   className?: string;
 }
 
-export default function BenefitBelt({ items, ariaLabel = 'Kluczowe benefity', className = '' }: BenefitBeltProps) {
+export default function BenefitBelt({ items, ariaLabel = ui.pl.defaultAriaLabel, className = '' }: BenefitBeltProps) {
   const data = (items ?? []).slice(0, 6);
 
   return (
