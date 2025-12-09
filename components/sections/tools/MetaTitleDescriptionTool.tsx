@@ -149,26 +149,26 @@ export default function MetaTitleDescriptionTool() {
   return (
     <>
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-        <section className="space-y-5 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+        <section className="tool-section space-y-5">
           <div>
-            <p className="mb-2 font-semibold uppercase">Dodaj adres URL (opcjonalnie)</p>
+            <p className="tool-label mb-2">Dodaj adres URL (opcjonalnie)</p>
             <input
               type="text"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! text-neutral-800 ring-0 outline-none focus:border-neutral-900"
+              className="tool-input"
               placeholder="www.twojadomena.pl/podstrona"
             />
-            <p className="mt-1 text-sm! text-[#5e5e5e]">Adres URL jest używany tylko w podglądzie - nie ma wpływu na obliczenia długości meta title i description.</p>
+            <p className="tool-helper mt-1">Adres URL jest używany tylko w podglądzie - nie ma wpływu na obliczenia długości meta title i description.</p>
           </div>
 
           <div>
-            <p className="mt-8 mb-2 font-semibold uppercase">Wpisz meta title</p>
+            <p className="tool-label mt-8 mb-2">Wpisz meta title</p>
             <input
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! text-neutral-800 ring-0 outline-none focus:border-neutral-900"
+              className="tool-input"
               placeholder="Np. Pozycjonowanie stron WWW - Arteon"
               maxLength={180}
             />
@@ -184,19 +184,19 @@ export default function MetaTitleDescriptionTool() {
               <span>
                 Szerokość: <strong>~{titleAnalysis.pixels} px</strong>
               </span>
-              <span className={`ml-auto inline-flex items-center rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${getStatusClasses(titleAnalysis.status)}`}>
+              <span className={`tool-badge ml-auto ${getStatusClasses(titleAnalysis.status)}`}>
                 {titleAnalysis.status === 'empty' ? 'Brak tytułu' : titleAnalysis.statusLabel}
               </span>
             </div>
-            <p className="mt-1 text-sm! text-[#5e5e5e]">{titleAnalysis.helperText}</p>
+            <p className="tool-helper mt-1">{titleAnalysis.helperText}</p>
           </div>
 
           <div>
-            <p className="mt-8 mb-2 font-semibold uppercase">Wpisz meta description</p>
+            <p className="tool-label mt-8 mb-2">Wpisz meta description</p>
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              className="min-h-[110px] w-full resize-y rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! text-neutral-800 ring-0 outline-none focus:border-neutral-900"
+              className="tool-textarea min-h-[110px] resize-y"
               placeholder="Opisz w 2-3 zdaniach, co użytkownik znajdzie na stronie i jaką korzyść otrzyma. Dodaj naturalnie główne słowa kluczowe."
               maxLength={400}
             />
@@ -212,18 +212,18 @@ export default function MetaTitleDescriptionTool() {
               <span>
                 Szerokość: <strong>~{descriptionAnalysis.pixels} px</strong>
               </span>
-              <span className={`ml-auto inline-flex items-center rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${getStatusClasses(descriptionAnalysis.status)}`}>
+              <span className={`tool-badge ml-auto ${getStatusClasses(descriptionAnalysis.status)}`}>
                 {descriptionAnalysis.status === 'empty' ? 'Brak opisu' : descriptionAnalysis.statusLabel}
               </span>
             </div>
-            <p className="mt-1 text-sm! text-[#5e5e5e]">{descriptionAnalysis.helperText}</p>
+            <p className="tool-helper mt-1">{descriptionAnalysis.helperText}</p>
           </div>
         </section>
 
-        <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+        <section className="tool-section space-y-4">
           <div>
             <h2 className="h6 pb-2">Podgląd wyniku w Google</h2>
-            <p className="text-sm! text-[#5e5e5e]">Podgląd jest orientacyjny - Google może przyciąć lub zmienić tytuł i opis w zależności od szerokości ekranu i samego tekstu</p>
+            <p className="tool-helper">Podgląd jest orientacyjny - Google może przyciąć lub zmienić tytuł i opis w zależności od szerokości ekranu i samego tekstu</p>
           </div>
 
           <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">

@@ -28,9 +28,7 @@ export default function OptionButton({ optValue, label, tooltip, selected, onCli
       onClick={onClick}
       onKeyDown={handleKey}
       tabIndex={0}
-      className={`relative flex items-start gap-3 rounded-2xl border p-4 text-left transition hover:cursor-pointer ${
-        selected ? 'border-slate-400 bg-slate-50' : 'border-gray-300 hover:border-slate-300 hover:shadow-lg'
-      }`}
+      className={`calc-option-button ${selected ? 'calc-option-button-selected' : 'calc-option-button-unselected'}`}
     >
       {IconComponent && <IconComponent className="mt-1 text-2xl text-slate-500" />}
       <div>

@@ -363,7 +363,7 @@ export default function ColorPaletteGenerator() {
 
   return (
     <div className="space-y-4">
-      <section className="rounded-2xl border border-black/10 bg-white/80 p-5 text-sm shadow-sm sm:p-7">
+      <section className="tool-section">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex items-center gap-3">
@@ -372,13 +372,13 @@ export default function ColorPaletteGenerator() {
                 value={inputColor}
                 onChange={(e) => setInputColor(e.target.value)}
                 aria-label="Wybierz kolor bazowy"
-                className="h-11! w-13! cursor-pointer border-none bg-white p-0!"
+                className="tool-color-picker h-11! w-13!"
               />
               <input
                 type="text"
                 value={inputColor}
                 onChange={(e) => setInputColor(e.target.value)}
-                className="h-10 w-32 rounded-xl border border-black/15 bg-white px-3 text-sm! ring-emerald-500/0 transition outline-none focus:ring-2"
+                className="tool-input h-10 w-32"
                 placeholder="#4f6bf5"
               />
             </div>
@@ -393,11 +393,11 @@ export default function ColorPaletteGenerator() {
             </div>
 
             {normalizedBase && (
-              <div className="flex items-center gap-3 rounded-2xl border border-dashed border-neutral-200 bg-neutral-50 px-4 py-2">
+              <div className="tool-info-box flex items-center gap-3">
                 <div className="h-7 w-7 rounded-lg border border-black/10" style={{ backgroundColor: normalizedBase }} aria-label="Aktualny kolor bazowy" />
                 <div className="min-w-0">
                   <p className="text-sm! leading-tight font-medium">{normalizedBase}</p>
-                  <p className="text-[11px]! text-[#5e5e5e]">Na tym kolorze opierają się wszystkie palety poniżej.</p>
+                  <p className="tool-helper text-[11px]!">Na tym kolorze opierają się wszystkie palety poniżej.</p>
                 </div>
               </div>
             )}
@@ -405,7 +405,7 @@ export default function ColorPaletteGenerator() {
         </form>
       </section>
 
-      <section aria-label="Wygenerowane palety kolorów" className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-5 text-sm shadow-sm sm:p-7">
+      <section aria-label="Wygenerowane palety kolorów" className="tool-section space-y-4">
         {!normalizedBase && (
           <p className="rounded-xl border border-dashed border-red-200 bg-red-50 px-3 py-2 text-[11px]! text-red-800">
             Nie udało się odczytać koloru. Upewnij się, że używasz formatu <code className="rounded bg-black/5 px-1">#rrggbb</code>, np. <code className="rounded bg-black/5 px-1">#4f6bf5</code>.
@@ -413,7 +413,7 @@ export default function ColorPaletteGenerator() {
         )}
 
         {normalizedBase && palettes.length === 0 && (
-          <p className="rounded-xl border border-dashed border-neutral-200 bg-neutral-50 px-3 py-2 text-[11px]! text-[#5e5e5e]">
+          <p className="tool-info-box tool-helper text-[11px]!">
             Wpisz poprawny kolor HEX, aby wygenerować palety. Wszystkie obliczenia są wykonywane lokalnie w Twojej przeglądarce.
           </p>
         )}
@@ -421,11 +421,11 @@ export default function ColorPaletteGenerator() {
         {normalizedBase && palettes.length > 0 && (
           <div className="grid gap-4 md:grid-cols-2">
             {palettes.map((group) => (
-              <div key={group.id} className="space-y-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+              <div key={group.id} className="tool-info-box space-y-2">
                 <div className="flex items-center justify-between gap-2">
                   <div>
                     <p className="font-semibold!">{group.label}</p>
-                    <p className="text-sm! text-[#5e5e5e]">{group.description}</p>
+                    <p className="tool-helper">{group.description}</p>
                   </div>
                 </div>
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">

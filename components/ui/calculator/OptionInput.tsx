@@ -10,7 +10,7 @@ interface OptionInputProps {
 
 export default function OptionInput({ input, value, onChangeValue }: OptionInputProps) {
   return (
-    <div className={`relative rounded-2xl border py-2 transition ${value ? 'border-slate-400' : 'border-gray-100 hover:border-slate-300'}`}>
+    <div className={`calc-input-container ${value ? 'calc-input-container-filled' : 'calc-input-container-empty'}`}>
       {input && <h6 className="mb-2 block">{input.label}</h6>}
       <input
         type="number"
@@ -18,7 +18,7 @@ export default function OptionInput({ input, value, onChangeValue }: OptionInput
         placeholder="Wpisz ilość"
         value={value}
         onChange={(e) => onChangeValue(e.target.value)}
-        className="w-full border-b border-gray-300 bg-transparent px-2 py-1.5 text-gray-700 transition focus:outline-none"
+        className="calc-input-field"
       />
     </div>
   );

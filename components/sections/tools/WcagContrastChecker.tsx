@@ -167,16 +167,16 @@ export default function WcagContrastChecker() {
   return (
     <>
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-        <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-5 text-sm shadow-sm sm:p-7">
+        <section className="tool-section space-y-4">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <p className="mb-1 text-xs! font-medium uppercase">Przykładowy tekst</p>
+              <p className="tool-label mb-1">Przykładowy tekst</p>
               <input
                 id="text-sample"
                 type="text"
                 value={textSample}
                 onChange={(e) => setTextSample(e.target.value)}
-                className="h-10 w-full rounded-xl border border-black/15 bg-white px-3 text-sm! ring-emerald-500/0 transition outline-none focus:ring-2"
+                className="tool-input h-10"
                 placeholder="Wpisz nagłówek, tekst przycisku lub treść akapitu"
               />
             </div>
@@ -184,44 +184,44 @@ export default function WcagContrastChecker() {
             <div>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <p className="mb-1 text-xs! font-medium uppercase">Kolor tekstu (foreground)</p>
+                  <p className="tool-label mb-1">Kolor tekstu (foreground)</p>
                   <div className="flex items-center gap-3">
                     <input
                       type="color"
                       value={foreground}
                       onChange={(e) => setForeground(e.target.value)}
                       aria-label="Wybierz kolor tekstu"
-                      className="h-10! w-10! cursor-pointer border-none bg-white p-0!"
+                      className="tool-color-picker tool-color-picker-md"
                     />
                     <input
                       type="text"
                       value={foreground}
                       onChange={(e) => setForeground(e.target.value)}
-                      className="h-10 w-full rounded-xl border border-black/15 bg-white px-3 text-sm! ring-emerald-500/0 transition outline-none focus:ring-2"
+                      className="tool-input h-10"
                       placeholder="#000000 lub rgb(0,0,0)"
                     />
                   </div>
-                  <p className="mt-1 text-[11px]! text-[#7a7a7a]">
+                  <p className="tool-helper mt-1 text-[11px]!">
                     Obsługiwane formaty: <code className="rounded bg-black/5 px-1">#rrggbb</code>, <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
                     <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
                   </p>
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-medium uppercase">Kolor tła (background)</p>
+                  <p className="tool-label mb-1">Kolor tła (background)</p>
                   <div className="flex items-center gap-3">
                     <input
                       type="color"
                       value={background}
                       onChange={(e) => setBackground(e.target.value)}
                       aria-label="Wybierz kolor tła"
-                      className="h-10! w-10! cursor-pointer border-none bg-white p-0!"
+                      className="tool-color-picker tool-color-picker-md"
                     />
                     <input
                       type="text"
                       value={background}
                       onChange={(e) => setBackground(e.target.value)}
-                      className="h-10 w-full rounded-xl border border-black/15 bg-white px-3 text-sm! ring-emerald-500/0 transition outline-none focus:ring-2"
+                      className="tool-input h-10"
                       placeholder="#ffffff lub rgb(255,255,255)"
                     />
                   </div>
@@ -242,23 +242,23 @@ export default function WcagContrastChecker() {
           </form>
         </section>
 
-        <section aria-label="Wyniki testu kontrastu i podgląd" className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-5 text-sm shadow-sm sm:p-7">
+        <section aria-label="Wyniki testu kontrastu i podgląd" className="tool-section space-y-4">
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="font-medium uppercase">
                 Współczynnik kontrastu <span className="mt-1 text-xl font-semibold"> {formatRatio(result.ratio)}</span>
               </p>
               {hasError ? (
-                <p className="mt-1 text-[11px]! text-red-700">
+                <p className="tool-helper mt-1 text-[11px]! text-red-700">
                   Nie udało się odczytać kolorów. Użyj formatu <code className="rounded bg-black/5 px-1">#rrggbb</code> lub <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
                 </p>
               ) : (
-                <p className="mt-1 text-[11px]! text-[#5e5e5e]"></p>
+                <p className="tool-helper mt-1 text-[11px]!"></p>
               )}
             </div>
           </div>
 
-          <div className="space-y-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+          <div className="tool-info-box space-y-2">
             <div className="flex items-center justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">Tekst zwykły</p>
               <div className="flex flex-wrap items-center gap-1.5">
@@ -277,7 +277,7 @@ export default function WcagContrastChecker() {
             </div>
           </div>
 
-          <div className="space-y-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+          <div className="tool-info-box space-y-2">
             <div className="items_center flex justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">Tekst duży / pogrubiony</p>
               <div className="flex flex-wrap items-center gap-1.5">
@@ -296,7 +296,7 @@ export default function WcagContrastChecker() {
             </div>
           </div>
 
-          <div className="space-y-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+          <div className="tool-info-box space-y-2">
             <div className="flex items-center justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">Ikona</p>
               <div className="flex flex-wrap items-center gap-1.5">
