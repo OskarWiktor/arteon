@@ -1,6 +1,73 @@
 {
   "articles": [
     {
+      "slug": "czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google",
+      "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej aby rosnąć w Google?",
+      "excerpt": "Lokalne firmy, które prowadzą blog na swojej stronie internetowej, zdobywają więcej ruchu z Google, częściej pojawiają się w Google Maps i obniżają koszt pozyskania klienta. Zobacz, jak blog pomaga małym biznesom rosnąć bez płatnych reklam.",
+      "category": ["SEO", "Widoczność", "Treści"],
+      "seo": {
+        "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej aby rosnąć w Google?",
+        "description": "Sprawdź, dlaczego blog na stronie lokalnej firmy zwiększa widoczność w Google, Google Maps i obniża koszt pozyskania klienta. Dane z HubSpot, Semrush, Ahrefs, Backlinko i Neila Patela.",
+        "canonical": "https://www.arteonagency.pl/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google"
+      },
+      "cover": "/assets/blog/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-09",
+      "dateModified": "2025-12-09",
+      "readingTime": 4,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Właściciele małych firm często pytają: „Czy naprawdę muszę prowadzić bloga, skoro działam tylko lokalnie?”</p></br><p>Prowadzenie bloga kojarzy się z dużymi portalami czy firmami działającymi krajowo lug globalnie. Tymczasem dane z ostatnich lat pokazują coś zupełnie odwrotnego: to właśnie małe firmy lokalne najwięcej zyskują na prowadzeniu bloga internetowego, bo dzięki niemu mogą wyświetlać się przed konkurencją i zdobywać klientów bez płacenia za reklamy.</p></br><p>Poniżej wyjaśniamy dlaczego tak jest, opierając się na danych od Google, HubSpot, Semrush, Ahrefs, Backlinko i Neila Patela.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego blog pomaga firmom lokalnym?</h2><p>Firmy lokalne, które prowadzą blog, mają średnio +55% więcej ruchu organicznego.</p></br><p>Według raportu HubSpot State of Marketing 2024, firmy, które publikują na swojej stronie artykuły regularnie, notują:</p></br><ul class='list-disc ml-5'><li>55% więcej wejść na stronę,</li><li>67% więcej zapytań,</li><li>oraz 13 większą szansę na dodatni ROI niż te bez bloga.</li></ul></br><p> Źródło: <a class='inline-link' target='_blank' href='https://www.hubspot.com/state-of-marketing'>Raport HubSpot State of Marketing 2024</a></p><br/><p>Dlaczego?</p></br><p>Bo blog odpowiada na pytania, które potencjalni klienci wpisują codziennie w Google:</p></br><ul class='list-disc ml-5'><li>„ile kosztuje wymiana instalacji elektrycznej”</li><li>„czy warto robić audyt SEO małej strony”</li><li>„jak wybrać dobrego fizjoterapeute”</li></ul></br><p>Jeśli Twoja firma odpowiada na takie pytania - Google zacznie ją promować, a potencjalny klient trafa do Ciebie patrząc na Ciebie jak na eksperta.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Google premiuje treści, które pomagają użytkownikom zrozumieć problem</h2><p>Od 2023 roku Google intensywnie rozwija algorytmy Helpful Content, E-E-A-T i tzw. „Hidden Gems”.</p></br><p>W praktyce oznacza to że Google wyróżnia treści eksperckie, proste i praktyczne - szczególnie w formie pytań i odpowiedzi.</p></br><p>Źródło potwierdzające tę zmianę: <a class='inline-link' target='_blank' href='https://developers.google.com/search/blog'>Google Search Central Blog</a></p><br /><p>Blog pomaga bo przy lokalnych usługach klient często:</p></br><ul class='list-disc ml-5'><li>nie wie, jak działa usługa,</li><li>nie zna realnych kosztów,</li><li>nie wie, jakiego wybrać wykonawcę,</li><li>boi się zostać oszukany.</li></ul></br><p>Jeśli Twoja firma wyjaśnia skomplikowane kwestie związane z Twoją branżą poprzez artykuły, Google jak i Twój klient zacznie Ci bardziej ufać.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Blog poprawia widoczność firmy w Google Maps</h2><p>To często pomijany fakt, a ma ogromne znaczenie.</p></br><p>Według raportu Semrush Local SEO Report 2024: firmy publikujące artykuły mają 2,3x większą szansę pojawić się w Top 3 Google Maps, co przekłada się bezpośrednio na więcej kliknięć w „Zadzwoń” czy „Odwiedź stronę”.</p></br><p> Źródło: <a class='inline-link' target='_blank' href='https://www.semrush.com/local/'>Semrush Local SEO Report 2024</a></p></br><p>Dlaczego blog wpływa na Google Maps?</p></br><p>Bo Google ocenia, czy Twoja strona tematycznie pasuje do tego, czego szuka użytkownik. Semrush podkreśla, że blog wzmacnia tematyczną widoczność domeny, co podnosi jej lokalny autorytet.</p></br><p>Przykład:</p></br><p>Jeśli jesteś hydraulikiem i masz na blogu artykuły typu:</p></br><ul class='list-disc ml-5'><li>„Ile kosztuje wymiana baterii w łazience?”</li><li>„Najczęstsze problemy z instalacją w blokach z wielkiej płyty”</li></ul></br><p>To Google stwierdza: „Ta firma naprawdę zna się na problemach hydraulicznych, pokażmy ją wyżej”.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Blog zwiększa liczbę słów kluczowych nawet 5–10 razy</h2><p>Badanie Ahrefs na 3 mln stron pokazało, że: 91% stron bez dodatkowych artykułów nie ma żadnego ruchu organicznego, a strony z blogiem pojawiają się na więcej fraz kluczowych - nawet jeśli działają tylko w jednym mieście.</p></br><p> Źródło: <a class='inline-link' target='_blank' href='https://ahrefs.com/blog/search-traffic-study/'>Ahrefs: Search Traffic Study</a></p></br><p>Co to znaczy dla małej firmy?</p></br><p>Że Twoja strona może pokryć:</p></br><ul class='list-disc ml-5'><li>frazy lokalne („instalator kraków”),</li><li>frazy problemowe („dlaczego wybija korki w mieszkaniu?”),</li><li>frazy kosztowe („ile kosztuje montaż licznika?”),</li><li>frazy porównawcze („jaki materiał wybrać do elewacji?”).</li></ul></br><p>Im więcej słów na stronie, tym więcej potencjalnych klientów.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Blog obniża koszt pozyskania klienta (CAC)</h2><p>Według badań Neil Patel Digital (2024):</p></br><ul class='list-disc ml-5'><li>treści obniżają koszt pozyskania klienta o średnio 62%,</li><li>a klienci zdobyci dzięki edukacji są 3x bardziej lojalni.</li></ul></br><p> Źródło: <a class='inline-link' target='_blank' href='https://neilpatel.com/blog/content-marketing-roi/'>Neil Patel: Content Marketing ROI</a></p></br><p>Dlaczego koszt spada?</p></br><p>Bo klient:</p></br><ul class='list-disc ml-5'><li>sam Cię znajduje,</li><li>sam Cię wybiera,</li><li>nie musisz go przekonywać płatnymi reklamami,</li><li>nie musisz tłumaczyć pewnych zagadnień (już o nich przeczytał).</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Ile artykułów trzeba publikować?</h2><p>Według Backlinko (2024):</p></br><ul class='list-disc ml-5'><li>2 artykuły miesięcznie to stabilny wzrost widoczności,</li><li>4–6 artykułów to szybki wzrost ruchu, nawet +30–50% w 6 miesięcy.</li></ul></br><p> Źródło: <a class='inline-link' target='_blank' href='https://backlinko.com/blog-seo-stats'>Backlinko: Blog SEO Stats</a></p></br><p>Dla firm lokalnych idealny format to:</p></br><ul class='list-disc ml-5'><li>krótkie artykuły 500–900 słów,</li><li>jeden problem / jedno pytanie,</li><li>konkretna odpowiedź + praktyczny wniosek.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jakie tematy działają najlepiej dla firm lokalnych?</h2><p>Google pokazuje, że najlepiej działają treści typu:</p></br><ul class='list-disc ml-5'><li>„Jak wybrać…”</li><li>„Ile kosztuje…”</li><li>„Czy warto…”</li><li>„Jak przygotować się do…”</li><li>„Najczęstsze błędy przy…”</li></ul></br><p>To najczęstsze frazy, które odpowiadają na realne pytania klientów.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Zwiększ widoczność swojej strony",
+        "description": "Przejdź do oferty pozycjonowania stron i zobacz, jak strategiczny blog na stronie internetowej może zwiększyć widoczność Twojej firmy w Google.",
+        "btnOne": "Pozycjonowanie stron",
+        "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
+        "backgroundImage": "/assets/blog/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google.webp",
+        "overlay": "black"
+      }
+    },
+
+    {
       "slug": "jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp",
       "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
       "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Jeśli nie zadbasz o ich format, rozmiar i kompresję, Twoja strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie Twoją stronę nie sprawdzając oferty.",
