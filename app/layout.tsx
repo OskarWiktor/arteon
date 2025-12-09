@@ -16,6 +16,8 @@ import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import RevealObserver from '@/components/systems/RevealObserver';
 
+import { LocaleProvider, type Locale } from '@/lib/LocaleContext';
+
 const SITE_URL = process.env.SITE_URL!;
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
@@ -76,8 +78,10 @@ const websiteJsonLd = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale: Locale = 'pl';
+
   return (
-    <html lang="pl">
+    <html lang={locale}>
       <head>
         {GA_MEASUREMENT_ID && (
           <>
@@ -145,13 +149,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <RevealObserver />
 
-        <Navigation />
+        <LocaleProvider value={locale}>
+          <Navigation />
 
-        <main id="main-content" tabIndex={-1}>
-          {children}
-        </main>
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
 
-        <Footer />
+          <Footer />
+        </LocaleProvider>
 
         <Analytics />
         <SpeedInsights />
