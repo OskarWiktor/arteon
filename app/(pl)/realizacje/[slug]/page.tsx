@@ -15,6 +15,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import Badge from '@/components/ui/Badge';
 import CTABanner from '@/components/sections/CTABanner';
 import FaqPanels from '@/components/ui/FaqPanels';
+import ShareBlock from '@/components/sections/ShareBlock';
 
 interface ProjectsData {
   projects: Project[];
@@ -26,7 +27,6 @@ const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 const projectUrl = (slug: string) => `${siteUrl}/realizacje/${slug}`;
 
-/* ---------- JSON-LD builders ---------- */
 function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;
@@ -50,7 +50,6 @@ function jsonLd(project: Project) {
   } as const;
 }
 
-/* ---------- small helpers ---------- */
 const Inline = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <span dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
 
 const Block = ({ content }: { content?: React.ReactNode }) => (!content ? null : typeof content === 'string' ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <>{content}</>);
@@ -76,7 +75,6 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
   );
 }
 
-/* ---------- Rich Content renderer ---------- */
 function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' | 'auto'; children: React.ReactNode }) {
   if (ratio === 'auto') {
     return <div className="relative overflow-hidden rounded-2xl border border-black/10">{children}</div>;
@@ -213,6 +211,8 @@ export default function ProjectPage({ params }: PageProps) {
   if (!project) return notFound();
 
   const ctaProps = { ...defaultCTA, ...(project.cta ?? {}) };
+  const url = projectUrl(project.slug);
+  const shareTitle = project.seo?.title || project.title;
 
   return (
     <>
@@ -404,7 +404,16 @@ export default function ProjectPage({ params }: PageProps) {
           />
         </div>
 
-        <TableOfContents rootSelector="#article-root" />
+        <div>
+          
+                    <ShareBlock
+            url={url}
+            title={shareTitle}
+            className='mb-12'
+          />
+                  <TableOfContents rootSelector="#article-root" />
+
+        </div>
       </Wrapper>
 
       <Gap />

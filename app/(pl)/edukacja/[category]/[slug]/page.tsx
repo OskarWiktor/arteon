@@ -17,6 +17,7 @@ import { slugify } from '@/utils/slug';
 import CodeBlock from '@/components/ui/CodeBlock';
 import TableBlock from '@/components/ui/TableBlock';
 import ArticlesOverview from '@/components/sections/blog/ArticlesOverview';
+import ShareBlock from '@/components/sections/ShareBlock';
 
 const siteUrl = 'https://www.arteonagency.pl';
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
@@ -284,7 +285,8 @@ export default function ArticlePage({ params }: { params: { category: string; sl
 
   const url = articleUrl(canonicalCat, article.slug);
   const cta = { ...defaultCTA, ...(article.cta ?? {}) };
-
+  const shareTitle = article.seo?.title || article.title;
+  
   return (
     <>
       <HeroBanner backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'} />
@@ -337,8 +339,12 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             }}
           />
         </div>
-
-        <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
+<div>                    <ShareBlock
+            url={url}
+            title={shareTitle}
+            className='mb-12'
+          />        <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
+</div>
       </Wrapper>
 
       <Wrapper>
