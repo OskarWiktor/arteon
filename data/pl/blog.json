@@ -7,7 +7,7 @@
       "category": ["SEO", "Widoczność", "Treści"],
       "seo": {
         "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej aby rosnąć w Google?",
-        "description": "Sprawdź, dlaczego blog na stronie lokalnej firmy zwiększa widoczność w Google, Google Maps i obniża koszt pozyskania klienta. Dane z HubSpot, Semrush, Ahrefs, Backlinko i Neila Patela.",
+        "description": "Sprawdź, dlaczego blog na stronie zwiększa widoczność w Google, Google Maps i obniża koszt pozyskania klienta",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google"
       },
       "cover": "/assets/blog/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google.webp",
@@ -38,7 +38,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Blog zwiększa liczbę słów kluczowych nawet 5–10 razy</h2><p>Badanie Ahrefs na 3 mln stron pokazało, że: 91% stron bez dodatkowych artykułów nie ma żadnego ruchu organicznego, a strony z blogiem pojawiają się na więcej fraz kluczowych - nawet jeśli działają tylko w jednym mieście.</p></br><p> Źródło: <a class='inline-link' target='_blank' href='https://ahrefs.com/blog/search-traffic-study/'>Ahrefs: Search Traffic Study</a></p></br><p>Co to znaczy dla małej firmy?</p></br><p>Że Twoja strona może pokryć:</p></br><ul class='list-disc ml-5'><li>frazy lokalne („instalator kraków”),</li><li>frazy problemowe („dlaczego wybija korki w mieszkaniu?”),</li><li>frazy kosztowe („ile kosztuje montaż licznika?”),</li><li>frazy porównawcze („jaki materiał wybrać do elewacji?”).</li></ul></br><p>Im więcej słów na stronie, tym więcej potencjalnych klientów.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Blog zwiększa liczbę słów kluczowych nawet 5-10 razy</h2><p>Badanie Ahrefs na 3 mln stron pokazało, że: 91% stron bez dodatkowych artykułów nie ma żadnego ruchu organicznego, a strony z blogiem pojawiają się na więcej fraz kluczowych - nawet jeśli działają tylko w jednym mieście.</p></br><p> Źródło: <a class='inline-link' target='_blank' href='https://ahrefs.com/blog/search-traffic-study/'>Ahrefs: Search Traffic Study</a></p></br><p>Co to znaczy dla małej firmy?</p></br><p>Że Twoja strona może pokryć:</p></br><ul class='list-disc ml-5'><li>frazy lokalne („instalator kraków”),</li><li>frazy problemowe („dlaczego wybija korki w mieszkaniu?”),</li><li>frazy kosztowe („ile kosztuje montaż licznika?”),</li><li>frazy porównawcze („jaki materiał wybrać do elewacji?”).</li></ul></br><p>Im więcej słów na stronie, tym więcej potencjalnych klientów.</p>",
           "breakAfter": true
         },
         {
@@ -48,7 +48,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Ile artykułów trzeba publikować?</h2><p>Według Backlinko (2024):</p></br><ul class='list-disc ml-5'><li>2 artykuły miesięcznie to stabilny wzrost widoczności,</li><li>4–6 artykułów to szybki wzrost ruchu, nawet +30–50% w 6 miesięcy.</li></ul></br><p> Źródło: <a class='inline-link' target='_blank' href='https://backlinko.com/blog-seo-stats'>Backlinko: Blog SEO Stats</a></p></br><p>Dla firm lokalnych idealny format to:</p></br><ul class='list-disc ml-5'><li>krótkie artykuły 500–900 słów,</li><li>jeden problem / jedno pytanie,</li><li>konkretna odpowiedź + praktyczny wniosek.</li></ul>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Ile artykułów trzeba publikować?</h2><p>Według Backlinko (2024):</p></br><ul class='list-disc ml-5'><li>2 artykuły miesięcznie to stabilny wzrost widoczności,</li><li>4-6 artykułów to szybki wzrost ruchu, nawet +30-50% w 6 miesięcy.</li></ul></br><p> Źródło: <a class='inline-link' target='_blank' href='https://backlinko.com/blog-seo-stats'>Backlinko: Blog SEO Stats</a></p></br><p>Dla firm lokalnych idealny format to:</p></br><ul class='list-disc ml-5'><li>krótkie artykuły 500-900 słów,</li><li>jeden problem / jedno pytanie,</li><li>konkretna odpowiedź + praktyczny wniosek.</li></ul>",
           "breakAfter": true
         },
         {
