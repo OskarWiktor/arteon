@@ -181,7 +181,12 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
           onKeyDown={onKeyDown}
         >
           {finalProjects.map((project, i) => (
-            <div key={project.slug} ref={i === 0 ? cardRef : null} className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]" aria-label={`${t.project} ${i + 1} ${t.of} ${finalProjects.length}`}>
+            <div
+              key={project.slug}
+              ref={i === 0 ? cardRef : null}
+              className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
+              aria-label={`${t.project} ${i + 1} ${t.of} ${finalProjects.length}`}
+            >
               <ProjectCard project={project} size="small" />
             </div>
           ))}

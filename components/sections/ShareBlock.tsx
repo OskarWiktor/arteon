@@ -1,12 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import {
-  RiFacebookCircleFill,
-  RiLinkedinBoxFill,
-  RiMailLine,
-  RiLinkM,
-} from 'react-icons/ri';
+import { RiFacebookCircleFill, RiLinkedinBoxFill, RiMailLine, RiLinkM } from 'react-icons/ri';
 
 type ShareBlockProps = {
   url: string;
@@ -15,12 +10,7 @@ type ShareBlockProps = {
   className?: string;
 };
 
-export default function ShareBlock({
-  url,
-  title,
-  label = 'Ten materiał może komuś pomóc — udostępnij go dalej.',
-  className = '',
-}: ShareBlockProps) {
+export default function ShareBlock({ url, title, label = 'Ten materiał może komuś pomóc — udostępnij go dalej.', className = '' }: ShareBlockProps) {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -51,12 +41,8 @@ export default function ShareBlock({
   }
 
   return (
-    <section
-      className={`rounded-2xl border w-fit border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`}
-      aria-label="Udostępnij ten materiał"
-    >
+    <section className={`w-fit rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`} aria-label="Udostępnij ten materiał">
       <div className="flex items-start gap-3">
-
         <div className="flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <ShareIconLink href={facebookHref} label="Udostępnij na Facebooku">
@@ -82,7 +68,7 @@ export default function ShareBlock({
             <button
               type="button"
               onClick={handleCopy}
-              className="inline-flex items-center gap-1.5 rounded-full border border-black/15 px-3 py-1.5 text-xs font-medium text-[#333] transition hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2"
+              className="inline-flex items-center gap-1.5 rounded-full border border-black/15 px-3 py-1.5 text-xs font-medium text-[#333] transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
             >
               <RiLinkM className="h-4 w-4" aria-hidden="true" />
               <span>{copied ? 'Skopiowano' : 'Kopiuj link'}</span>
@@ -106,7 +92,7 @@ function ShareIconLink({ href, children }: ShareIconLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-[#222] shadow-sm transition hover:-translate-y-[1px] hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-[#222] shadow-sm transition hover:-translate-y-[1px] hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
     >
       {children}
     </a>

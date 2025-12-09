@@ -23,13 +23,7 @@ export default function OptionButton({ optValue, label, tooltip, selected, onCli
   const IconComponent = icon && icon in FiIcons ? (FiIcons as Record<string, React.ComponentType<{ className?: string }>>)[icon] : null;
 
   return (
-    <button
-      key={optValue}
-      onClick={onClick}
-      onKeyDown={handleKey}
-      tabIndex={0}
-      className={`calc-option-button ${selected ? 'calc-option-button-selected' : 'calc-option-button-unselected'}`}
-    >
+    <button key={optValue} onClick={onClick} onKeyDown={handleKey} tabIndex={0} className={`calc-option-button ${selected ? 'calc-option-button-selected' : 'calc-option-button-unselected'}`}>
       {IconComponent && <IconComponent className="mt-1 text-2xl text-slate-500" />}
       <div>
         <h6 className="font-medium">{label}</h6>

@@ -210,12 +210,6 @@ export default function WorkSteps({ variant = 'home', title, subtitle, descripti
   const items = VARIANTS[variant];
 
   return (
-    <SectionSteps
-      title={title ?? (variant === 'home' ? t.defaultTitleHome : t.defaultTitleOther)}
-      subtitle={subtitle ?? undefined}
-      description={description ?? undefined}
-      grid="four"
-      items={items}
-    />
+    <SectionSteps title={title ?? (variant === 'home' ? t.defaultTitleHome : t.defaultTitleOther)} subtitle={subtitle ?? undefined} description={description ?? undefined} grid="four" items={items} />
   );
 }

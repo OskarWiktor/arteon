@@ -487,11 +487,7 @@ export default function FaviconGenerator() {
               </div>
 
               {status === 'processing' && <p className="mt-2 text-xs text-[#5e5e5e]">{t.processing}</p>}
-              {status === 'done' && !error && (
-                <p className="mt-2 text-xs text-emerald-700">
-                  {t.done}
-                </p>
-              )}
+              {status === 'done' && !error && <p className="mt-2 text-xs text-emerald-700">{t.done}</p>}
             </div>
           </form>
         </section>

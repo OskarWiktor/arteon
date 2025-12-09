@@ -405,14 +405,8 @@ export default function ProjectPage({ params }: PageProps) {
         </div>
 
         <div>
-          
-                    <ShareBlock
-            url={url}
-            title={shareTitle}
-            className='mb-12'
-          />
-                  <TableOfContents rootSelector="#article-root" />
-
+          <ShareBlock url={url} title={shareTitle} className="mb-12" />
+          <TableOfContents rootSelector="#article-root" />
         </div>
       </Wrapper>
 

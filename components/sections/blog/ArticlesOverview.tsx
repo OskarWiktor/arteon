@@ -210,7 +210,11 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
                   <div className="p-4">
                     <h3 className="h6">{a.title}</h3>
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
-                      {a.readingTime ? <span>{a.readingTime} {t.readingTime}</span> : null}
+                      {a.readingTime ? (
+                        <span>
+                          {a.readingTime} {t.readingTime}
+                        </span>
+                      ) : null}
                       {a.datePublished ? <span aria-label={t.publicationDate}>• {a.datePublished}</span> : null}
                     </div>
                   </div>

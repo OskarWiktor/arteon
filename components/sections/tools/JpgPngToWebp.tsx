@@ -22,7 +22,8 @@ const ui = {
     clickToSelect: 'lub kliknij, aby wybrać pliki z dysku',
     supportedFormats: 'Obsługiwane: JPG, PNG',
     setQuality: 'Ustaw jakość WebP',
-    qualityHelper: 'Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80% to dobry kompromis dla większości stron. Narzędzie automatycznie obniży jakość, jeśli wynikowy plik byłby większy od oryginału.',
+    qualityHelper:
+      'Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80% to dobry kompromis dla większości stron. Narzędzie automatycznie obniży jakość, jeśli wynikowy plik byłby większy od oryginału.',
     autoDownloadAll: 'Automatycznie pobierz wszystkie pliki po konwersji',
     convertAndDownload: 'Konwertuj i pobierz',
     inQueue: 'W kolejce:',
@@ -485,9 +486,7 @@ export default function JpgPngToWebp() {
               <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="p-0!" />
               <span className="w-16 text-right text-neutral-700">{quality}%</span>
             </div>
-            <span className="mt-3 text-sm text-[#5e5e5e]">
-              {t.qualityHelper}
-            </span>
+            <span className="mt-3 text-sm text-[#5e5e5e]">{t.qualityHelper}</span>
 
             <div className="mt-3 flex items-center">
               <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />

@@ -51,14 +51,5 @@ const ui = {
 
 export default function TechSteps() {
   const t = ui.pl;
-  return (
-    <SectionSteps
-      overlay="black"
-      backgroundImage="/assets/bg/abstract-bg1.webp"
-      items={TechStepsItems}
-      title={t.title}
-      subtitle={t.subtitle}
-      description={t.description}
-    />
-  );
+  return <SectionSteps overlay="black" backgroundImage="/assets/bg/abstract-bg1.webp" items={TechStepsItems} title={t.title} subtitle={t.subtitle} description={t.description} />;
 }

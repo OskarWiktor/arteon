@@ -6,7 +6,8 @@ import Button from '../ui/Button';
 const ui = {
   pl: {
     title: 'Cookies i prywatność',
-    description: 'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong> Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
+    description:
+      'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong> Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
     setPreferences: 'Ustaw preferencje',
     privacyPolicy: 'Polityka prywatności',
     reject: 'Odrzuć',

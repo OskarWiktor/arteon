@@ -286,7 +286,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
   const url = articleUrl(canonicalCat, article.slug);
   const cta = { ...defaultCTA, ...(article.cta ?? {}) };
   const shareTitle = article.seo?.title || article.title;
-  
+
   return (
     <>
       <HeroBanner backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'} />
@@ -339,12 +339,10 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             }}
           />
         </div>
-<div>                    <ShareBlock
-            url={url}
-            title={shareTitle}
-            className='mb-12'
-          />        <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
-</div>
+        <div>
+          {' '}
+          <ShareBlock url={url} title={shareTitle} className="mb-12" /> <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
+        </div>
       </Wrapper>
 
       <Wrapper>

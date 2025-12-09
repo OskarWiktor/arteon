@@ -397,20 +397,8 @@ export default function ColorPaletteGenerator() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex items-center gap-3">
-              <input
-                type="color"
-                value={inputColor}
-                onChange={(e) => setInputColor(e.target.value)}
-                aria-label={t.selectBaseColor}
-                className="tool-color-picker h-11! w-13!"
-              />
-              <input
-                type="text"
-                value={inputColor}
-                onChange={(e) => setInputColor(e.target.value)}
-                className="tool-input h-10 w-32"
-                placeholder="#4f6bf5"
-              />
+              <input type="color" value={inputColor} onChange={(e) => setInputColor(e.target.value)} aria-label={t.selectBaseColor} className="tool-color-picker h-11! w-13!" />
+              <input type="text" value={inputColor} onChange={(e) => setInputColor(e.target.value)} className="tool-input h-10 w-32" placeholder="#4f6bf5" />
             </div>
 
             <div className="flex flex-wrap items-center gap-2">
@@ -442,11 +430,7 @@ export default function ColorPaletteGenerator() {
           </p>
         )}
 
-        {normalizedBase && palettes.length === 0 && (
-          <p className="tool-info-box tool-helper text-[11px]!">
-            {t.enterValidColor}
-          </p>
-        )}
+        {normalizedBase && palettes.length === 0 && <p className="tool-info-box tool-helper text-[11px]!">{t.enterValidColor}</p>}
 
         {normalizedBase && palettes.length > 0 && (
           <div className="grid gap-4 md:grid-cols-2">

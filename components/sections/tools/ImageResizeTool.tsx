@@ -54,7 +54,8 @@ const ui = {
     centerVertical: 'Wyśrodkuj pionowo',
     centerCrop: 'Wyśrodkuj kadr',
     cropPreview: 'Podgląd kadru',
-    cropPreviewHelper: 'Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu koła plik będzie miał przezroczyste tło poza kształtem (PNG / WebP).',
+    cropPreviewHelper:
+      'Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu koła plik będzie miał przezroczyste tło poza kształtem (PNG / WebP).',
     shapes: {
       rect: 'Prostokąt',
       square: 'Kwadrat',
@@ -1323,9 +1324,7 @@ export default function ImageResizeTool() {
                 </div>
               </div>
 
-              <p className="mt-2 text-xs! text-[#5e5e5e]">
-                {t.cropPreviewHelper}
-              </p>
+              <p className="mt-2 text-xs! text-[#5e5e5e]">{t.cropPreviewHelper}</p>
             </div>
           </>
         )}

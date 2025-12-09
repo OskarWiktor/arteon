@@ -59,30 +59,38 @@ export default function SectionSteps({
 
   const count = items?.length ?? 0;
 
+  const resolvedGrid: 'one' | 'two' | 'three' | 'four' = (() => {
+    if (grid) return grid;
+
+    if (count === 1) return 'one';
+    if (count === 2) return 'two';
+    if (count === 3) return 'three';
+    if (count === 4) return 'four';
+    if (count === 6 || count === 9) return 'three';
+
+    return 'one';
+  })();
+
   let gridColsSm = 'sm:grid-cols-1';
   let gridColsMd = '';
   let gridColsLg = '';
 
-  if (count === 1 || grid === 'one') {
+  if (resolvedGrid === 'one') {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-1';
     gridColsLg = 'lg:grid-cols-1';
-  } else if (count === 2 || grid === 'two') {
+  } else if (resolvedGrid === 'two') {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-2';
-  } else if (count === 3 || grid === 'three') {
+  } else if (resolvedGrid === 'three') {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-3';
-  } else if (count === 4 || grid === 'four') {
+  } else if (resolvedGrid === 'four') {
     gridColsSm = 'sm:grid-cols-1';
     gridColsMd = 'md:grid-cols-2';
     gridColsLg = 'lg:grid-cols-4';
-  } else if (count === 6 || count === 9) {
-    gridColsSm = 'sm:grid-cols-1';
-    gridColsMd = 'md:grid-cols-2';
-    gridColsLg = 'lg:grid-cols-3';
   }
 
   const SectionHeadingTag = (headingLevel || 'h2') as keyof JSX.IntrinsicElements;

@@ -198,14 +198,7 @@ export default function WcagContrastChecker() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <p className="tool-label mb-1">Przykładowy tekst</p>
-              <input
-                id="text-sample"
-                type="text"
-                value={textSample}
-                onChange={(e) => setTextSample(e.target.value)}
-                className="tool-input h-10"
-                placeholder={t.exampleTextPlaceholder}
-              />
+              <input id="text-sample" type="text" value={textSample} onChange={(e) => setTextSample(e.target.value)} className="tool-input h-10" placeholder={t.exampleTextPlaceholder} />
             </div>
 
             <div>
@@ -213,20 +206,8 @@ export default function WcagContrastChecker() {
                 <div>
                   <p className="tool-label mb-1">{t.textColorLabel}</p>
                   <div className="flex items-center gap-3">
-                    <input
-                      type="color"
-                      value={foreground}
-                      onChange={(e) => setForeground(e.target.value)}
-                      aria-label={t.selectTextColor}
-                      className="tool-color-picker tool-color-picker-md"
-                    />
-                    <input
-                      type="text"
-                      value={foreground}
-                      onChange={(e) => setForeground(e.target.value)}
-                      className="tool-input h-10"
-                      placeholder={t.textColorPlaceholder}
-                    />
+                    <input type="color" value={foreground} onChange={(e) => setForeground(e.target.value)} aria-label={t.selectTextColor} className="tool-color-picker tool-color-picker-md" />
+                    <input type="text" value={foreground} onChange={(e) => setForeground(e.target.value)} className="tool-input h-10" placeholder={t.textColorPlaceholder} />
                   </div>
                   <p className="tool-helper mt-1 text-[11px]!">
                     {t.supportedFormats} <code className="rounded bg-black/5 px-1">#rrggbb</code>, <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
@@ -237,20 +218,8 @@ export default function WcagContrastChecker() {
                 <div>
                   <p className="tool-label mb-1">{t.backgroundColorLabel}</p>
                   <div className="flex items-center gap-3">
-                    <input
-                      type="color"
-                      value={background}
-                      onChange={(e) => setBackground(e.target.value)}
-                      aria-label={t.selectBackgroundColor}
-                      className="tool-color-picker tool-color-picker-md"
-                    />
-                    <input
-                      type="text"
-                      value={background}
-                      onChange={(e) => setBackground(e.target.value)}
-                      className="tool-input h-10"
-                      placeholder={t.backgroundColorPlaceholder}
-                    />
+                    <input type="color" value={background} onChange={(e) => setBackground(e.target.value)} aria-label={t.selectBackgroundColor} className="tool-color-picker tool-color-picker-md" />
+                    <input type="text" value={background} onChange={(e) => setBackground(e.target.value)} className="tool-input h-10" placeholder={t.backgroundColorPlaceholder} />
                   </div>
                 </div>
               </div>

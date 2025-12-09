@@ -14,7 +14,8 @@ const ui = {
     titleGoodLength: 'Tytuł mieści się w zakresie, który najczęściej wyświetla się w całości w wynikach Google (mniej więcej 450-580 pikseli i ok. 45-60 znaków).',
     enterDescription: 'Wpisz meta description, aby zobaczyć analizę długości.',
     descriptionTooShort: 'Opis jest bardzo krótki. Dodaj dłuższy tekst, który lepiej tłumaczy, co użytkownik znajdzie na stronie i dlaczego warto w nią kliknąć.',
-    descriptionTooLong: 'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.',
+    descriptionTooLong:
+      'Opis przekracza zakres, który Google najczęściej pokazuje w całości (około 150-160 znaków lub ~920 pikseli). Może zostać ucięty lub zastąpiony innym fragmentem tekstu ze strony.',
     descriptionGoodLength: 'Opis mieści się w typowym zakresie dla wyników wyszukiwania (około 120-160 znaków i do ~920 pikseli), co zwykle wystarcza na 2-3 krótkie zdania.',
     addUrl: 'Dodaj adres URL (opcjonalnie)',
     urlPlaceholder: 'www.twojadomena.pl/podstrona',
@@ -181,26 +182,13 @@ export default function MetaTitleDescriptionTool() {
         <section className="tool-section space-y-5">
           <div>
             <p className="tool-label mb-2">{t.addUrl}</p>
-            <input
-              type="text"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              className="tool-input"
-              placeholder={t.urlPlaceholder}
-            />
+            <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} className="tool-input" placeholder={t.urlPlaceholder} />
             <p className="tool-helper mt-1">{t.urlHelper}</p>
           </div>
 
           <div>
             <p className="tool-label mt-8 mb-2">{t.enterTitleLabel}</p>
-            <input
-              type="text"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              className="tool-input"
-              placeholder={t.titlePlaceholder}
-              maxLength={180}
-            />
+            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="tool-input" placeholder={t.titlePlaceholder} maxLength={180} />
             <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
               <span>
                 {t.chars}: <strong>{titleAnalysis.chars}</strong>
@@ -213,22 +201,14 @@ export default function MetaTitleDescriptionTool() {
               <span>
                 {t.width}: <strong>~{titleAnalysis.pixels} px</strong>
               </span>
-              <span className={`tool-badge ml-auto ${getStatusClasses(titleAnalysis.status)}`}>
-                {titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}
-              </span>
+              <span className={`tool-badge ml-auto ${getStatusClasses(titleAnalysis.status)}`}>{titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}</span>
             </div>
             <p className="tool-helper mt-1">{titleAnalysis.helperText}</p>
           </div>
 
           <div>
             <p className="tool-label mt-8 mb-2">{t.enterDescriptionLabel}</p>
-            <textarea
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              className="tool-textarea min-h-[110px] resize-y"
-              placeholder={t.descriptionPlaceholder}
-              maxLength={400}
-            />
+            <textarea value={description} onChange={(e) => setDescription(e.target.value)} className="tool-textarea min-h-[110px] resize-y" placeholder={t.descriptionPlaceholder} maxLength={400} />
             <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
               <span>
                 {t.chars}: <strong>{descriptionAnalysis.chars}</strong>
@@ -241,9 +221,7 @@ export default function MetaTitleDescriptionTool() {
               <span>
                 {t.width}: <strong>~{descriptionAnalysis.pixels} px</strong>
               </span>
-              <span className={`tool-badge ml-auto ${getStatusClasses(descriptionAnalysis.status)}`}>
-                {descriptionAnalysis.status === 'empty' ? t.noDescription : descriptionAnalysis.statusLabel}
-              </span>
+              <span className={`tool-badge ml-auto ${getStatusClasses(descriptionAnalysis.status)}`}>{descriptionAnalysis.status === 'empty' ? t.noDescription : descriptionAnalysis.statusLabel}</span>
             </div>
             <p className="tool-helper mt-1">{descriptionAnalysis.helperText}</p>
           </div>

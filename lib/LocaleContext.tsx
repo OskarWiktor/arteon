@@ -26,4 +26,3 @@ export function useLocale(): Locale {
   }
   return context.locale;
 }
-

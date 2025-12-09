@@ -117,11 +117,13 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="Obrazy i favicony"
           description="Narzędzia do przygotowania zdjęć, grafik i ikon pod strony WWW oraz social media."
-          grid="three"
+          grid="two"
           items={[
             {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Konwerter JPG/PNG na WebP',
+              topImageAlt: 'Konwerter JPG/PNG na WebP Arteon',
+              topImageSrc: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -138,6 +140,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
+              topImageAlt: 'Zmiana rozmiaru i kadrowanie zdjęcia Arteon',
+              topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Przygotuj idealny kadr ze zdjęcia pod social media lub stronę WWW. Wybierz gotowy format albo wpisz własne wymiary w pikselach i pobierz gotowe zdjęcie w PNG, JPG lub WebP.</p>
@@ -152,6 +156,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiAppsLine className="h-8 w-8" />,
               title: 'Generator favicon i ikon dla strony',
+              topImageAlt: 'Generator favicon i ikon dla strony Arteon',
+              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -173,11 +179,13 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="Meta i SEO"
           description="Narzędzia, które pomagają lepiej dopasować meta tagi i wygląd strony w wynikach wyszukiwania."
-          grid="three"
+          grid="two"
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
               title: 'Licznik długości meta title i description',
+              topImageAlt: 'Licznik długości meta title i description Arteon',
+              topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Sprawdź liczbę znaków, słów i szerokość w pikselach oraz podgląd wyniku w Google. Łatwiej unikniesz uciętych tytułów i opisów i szybciej dopasujesz treści pod SEO.</p>
@@ -197,11 +205,13 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="E-mail i komunikacja"
           description="Narzędzia, które pomagają uporządkować komunikację mailową i wizerunek marki."
-          grid="three"
+          grid="two"
           items={[
             {
               icon: <RiMailLine className="h-8 w-8" />,
               title: 'Darmowy generator stopki mailowej HTML',
+              topImageAlt: 'Darmowy generator stopki mailowej HTML Arteon',
+              topImageSrc: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych.</p>
@@ -221,11 +231,13 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="Kolory i dostępność"
           description="Narzędzia do pracy z kolorami, kontrastem i dostępnością WCAG."
-          grid="three"
+          grid="two"
           items={[
             {
               icon: <RiContrast2Line className="h-8 w-8" />,
               title: 'Tester kontrastu kolorów WCAG',
+              topImageAlt: 'Tester kontrastu kolorów WCAG Arteon',
+              topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -243,6 +255,8 @@ export default function ToolsIndexPage() {
             {
               icon: <RiPaletteLine className="h-8 w-8" />,
               title: 'Generator palet kolorów z jednego koloru',
+              topImageAlt: 'Generator palet kolorów z jednego koloru Arteon',
+              topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
