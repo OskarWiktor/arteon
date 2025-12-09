@@ -35,15 +35,16 @@ interface BlogData {
 type Props = {
   articles?: Article[];
   max?: number;
-  title: string;
+  title?: string;
   subtitle?: string;
   categorySlug?: string;
   slugs?: string | string[];
+  excludeSlug?: string;
 };
 
 const allArticles = (blogData as BlogData).articles;
 
-export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defaultTitle, subtitle, categorySlug, slugs }: Props) {
+export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defaultTitle, subtitle, categorySlug, slugs, excludeSlug }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -59,7 +60,7 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
 
   const finalArticles = useMemo(() => {
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
-    let list: Article[] = [];
+    let list: Article[];
 
     if (slugsArray && slugsArray.length) {
       const map = new Map(sourceArticles.map((a) => [a.slug, a] as const));
@@ -70,8 +71,12 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
       list = sourceArticles;
     }
 
+    if (excludeSlug) {
+      list = list.filter((a) => a.slug !== excludeSlug);
+    }
+
     return list.slice(0, max);
-  }, [sourceArticles, slugs, categorySlug, max]);
+  }, [sourceArticles, slugs, categorySlug, excludeSlug, max]);
 
   useEffect(() => {
     const container = scrollRef.current;
@@ -165,7 +170,6 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
 
   return (
     <section className="w-full" aria-labelledby="articles-heading">
-      {/* nagłówek + przycisk do wszystkich artykułów */}
       <div className="mb-2 flex flex-col gap-3 md:mb-3 md:flex-row md:items-center md:justify-between">
         <div>
           {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}

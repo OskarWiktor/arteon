@@ -16,6 +16,7 @@ import Badge from '@/components/ui/Badge';
 import CTABanner from '@/components/sections/CTABanner';
 import FaqPanels from '@/components/ui/FaqPanels';
 import ShareBlock from '@/components/sections/ShareBlock';
+import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
 
 interface ProjectsData {
   projects: Project[];
@@ -408,6 +409,11 @@ export default function ProjectPage({ params }: PageProps) {
           <ShareBlock url={url} title={shareTitle} className="mb-12" />
           <TableOfContents rootSelector="#article-root" />
         </div>
+      </Wrapper>
+
+      <Wrapper>
+        <Gap />
+        <ProjectsOverview title="Sprawdź najnowsze realizacje" excludeSlug={project.slug} />{' '}
       </Wrapper>
 
       <Gap />

@@ -347,7 +347,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
       <Wrapper>
         <Gap />
 
-        <ArticlesOverview title="Sprawdź inne artykuły i poradniki" />
+        <ArticlesOverview title="Sprawdź najnowsze artykuły i poradniki" excludeSlug={article.slug} />
       </Wrapper>
 
       <Gap />

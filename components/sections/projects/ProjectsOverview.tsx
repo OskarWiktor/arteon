@@ -34,9 +34,10 @@ type Props = {
   subtitle?: string;
   category?: ProjectCategory;
   slugs?: string | string[];
+  excludeSlug?: string;
 };
 
-export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defaultTitle, subtitle, category, slugs }: Props) {
+export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defaultTitle, subtitle, category, slugs, excludeSlug }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -63,8 +64,12 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
       list = sourceProjects;
     }
 
+    if (excludeSlug) {
+      list = list.filter((p) => p.slug !== excludeSlug);
+    }
+
     return list.slice(0, max);
-  }, [sourceProjects, slugs, category, max]);
+  }, [sourceProjects, slugs, category, excludeSlug, max]);
 
   useEffect(() => {
     const container = scrollRef.current;
@@ -99,7 +104,7 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
     ro.observe(container);
     if (card) ro.observe(card);
     return () => ro.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- Only re-run when finalProjects.length changes, not on every finalProjects change
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [finalProjects.length]);
 
   useEffect(() => {
@@ -156,7 +161,6 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
 
   return (
     <section className="w-full" aria-labelledby="projects-heading">
-      {/* nagłówek + przycisk do wszystkich realizacji */}
       <div className="mb-2 flex flex-col gap-3 md:mb-3 md:flex-row md:items-center md:justify-between">
         <div>
           {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}

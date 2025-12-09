@@ -10,7 +10,7 @@ type ShareBlockProps = {
   className?: string;
 };
 
-export default function ShareBlock({ url, title, label = 'Ten materiał może komuś pomóc — udostępnij go dalej.', className = '' }: ShareBlockProps) {
+export default function ShareBlock({ url, title, label = 'Ten materiał może komuś pomóc - udostępnij go dalej.', className = '' }: ShareBlockProps) {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
