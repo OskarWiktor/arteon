@@ -17,7 +17,10 @@ import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import RevealObserver from '@/components/systems/RevealObserver';
 
 import { LocaleProvider, type Locale } from '@/lib/LocaleContext';
+import { SiteProvider } from '@/lib/SiteContext';
+import { getActiveSiteKey } from '@/lib/site';
 
+// site scaffold only — no production behavior changes while flag disabled
 const SITE_URL = process.env.SITE_URL!;
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
@@ -78,7 +81,10 @@ const websiteJsonLd = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // site scaffold only — no production behavior changes while flag disabled
   const locale: Locale = 'pl';
+  // When SITE_BY_DOMAIN_ENABLED=false, getActiveSiteKey() always returns 'pl'
+  const siteKey = getActiveSiteKey();
 
   return (
     <html lang={locale}>
@@ -149,15 +155,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <RevealObserver />
 
-        <LocaleProvider value={locale}>
-          <Navigation />
+        <SiteProvider siteKey={siteKey}>
+          <LocaleProvider value={locale}>
+            <Navigation />
 
-          <main id="main-content" tabIndex={-1}>
-            {children}
-          </main>
+            <main id="main-content" tabIndex={-1}>
+              {children}
+            </main>
 
-          <Footer />
-        </LocaleProvider>
+            <Footer />
+          </LocaleProvider>
+        </SiteProvider>
 
         <Analytics />
         <SpeedInsights />
