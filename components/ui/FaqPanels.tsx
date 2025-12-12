@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useId, useMemo, type ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { FiPlus, FiMinus } from 'react-icons/fi';
+import SectionHeader from './typography/SectionHeader';
 
 interface FaqPanelsItem {
   question: string;
@@ -92,10 +93,13 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
 
   return (
     <section aria-labelledby="faq-heading">
-      {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="faq-heading" className="reveal-animation h3 mb-2">
-        {title}
-      </h2>
+      <SectionHeader
+        subtitle={subtitle}
+        title={title}
+        headingLevel="h2"
+        headingClassName="reveal-animation h3 mb-2"
+        titleId="faq-heading"
+      />
 
       {items.map((item, index) => {
         const isOpen = activeIndex === index;

@@ -1,4 +1,6 @@
 import { ReactNode } from 'react';
+import IconText from './IconText';
+import Text from './typography/Text';
 
 type FeatureCardProps = {
   idx?: number;
@@ -15,6 +17,8 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
   const headingId = `feature-${base}-${idx}`;
   const descId = description ? `feature-desc-${base}-${idx}` : undefined;
 
+  const displayIcon = icon || <span className="inline-block h-2 w-2 rounded-[2px] bg-black" />;
+
   return (
     <section
       aria-labelledby={headingId}
@@ -22,23 +26,16 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
       className="flex h-full flex-col rounded-2xl bg-white px-5 py-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-6 md:py-4"
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
-      <div className="flex items-center gap-2">
-        {icon ? (
-          <span aria-hidden="true" className="inline-flex items-center justify-center">
-            {icon}
-          </span>
-        ) : (
-          <span aria-hidden="true" className="inline-block h-2 w-2 rounded-[2px] bg-black" />
-        )}
+      <IconText icon={displayIcon} iconClassName="inline-flex items-center justify-center">
         <h3 id={headingId} className="h6 font-semibold text-[#080808]" itemProp="name">
           {title}
         </h3>
-      </div>
+      </IconText>
 
       {description && (
-        <div id={descId} className="text-small mt-1 leading-6 text-[#5e5e5e]" itemProp="description">
+        <Text variant="small" tone="muted" as="div" id={descId} className="mt-1 leading-6" itemProp="description">
           {description}
-        </div>
+        </Text>
       )}
 
       {Array.isArray(points) && points.length > 0 && (

@@ -1,6 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/Button';
+import Tag from '@/components/ui/Tag';
 import { useMemo, useState, type ReactNode } from 'react';
 import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line } from 'react-icons/ri';
 
@@ -721,20 +722,20 @@ export default function EmailSignatureGenerator() {
             <span className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.layoutLabel}</span>
             <div className="flex flex-wrap gap-1">
               {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered'] as LayoutType[]).map((lt) => (
-                <button
+                <Tag
                   key={lt}
+                  as="button"
                   type="button"
                   onClick={() => setLayout(lt)}
-                  className={`rounded-full border px-3 py-1 text-xs! ${
-                    layout === lt ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
-                  }`}
+                  variant={layout === lt ? 'selected' : 'default'}
+                  size="sm"
                 >
                   {lt === 'standard' && t.layouts.standard}
                   {lt === 'accent-bar' && t.layouts.accentBar}
                   {lt === 'top-banner' && t.layouts.topBanner}
                   {lt === 'label-column' && t.layouts.labelColumn}
                   {lt === 'centered' && t.layouts.centered}
-                </button>
+                </Tag>
               ))}
             </div>
           </div>

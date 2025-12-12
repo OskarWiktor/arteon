@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
-import Button from '../ui/Button';
 import Wrapper from '../ui/Wrapper';
+import SectionHeader from '../ui/typography/SectionHeader';
+import ButtonGroup from '../ui/ButtonGroup';
 
 const ui = {
   pl: {
@@ -39,26 +40,18 @@ export default function CTABanner({ title, subtitle, description, btnOne, btnOne
 
       <Wrapper className="relative flex h-auto justify-center md:items-center">
         <div className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}>
-          {subtitle && <span className="text-base tracking-wider uppercase">{subtitle}</span>}
+          <SectionHeader
+            subtitle={subtitle}
+            title={title}
+            description={description}
+            headingLevel="h3"
+            eyebrowVariant="dynamic"
+            eyebrowClassName={`text-base tracking-wider uppercase ${overlay === 'black' ? 'text-white' : 'text-slate-900'}`}
+            headingClassName="reveal-animation"
+            descriptionClassName={`reveal-animation mx-auto mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}
+          />
 
-          <h3 className="reveal-animation">{title}</h3>
-
-          {description && <p className={`reveal-animation mx-auto mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}>{description}</p>}
-
-          {(btnOne || btnTwo) && (
-            <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:justify-center" role="group" aria-label={t.actionsLabel}>
-              {btnOne && (
-                <Button link={btnOneLink} arrow variant="accent">
-                  {btnOne}
-                </Button>
-              )}
-              {btnTwo && (
-                <Button link={btnTwoLink} arrow>
-                  {btnTwo}
-                </Button>
-              )}
-            </div>
-          )}
+          <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" align="center" ariaLabel={t.actionsLabel} role="group" />
         </div>
       </Wrapper>
     </section>

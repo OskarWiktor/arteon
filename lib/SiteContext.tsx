@@ -3,7 +3,7 @@
 // site scaffold only — no production behavior changes while flag disabled
 
 import { createContext, useContext, type ReactNode } from 'react';
-import type { SiteKey } from './config/site/pl';
+import type { SiteKey } from './config/site/pl'; // Used in SiteContextValue and SiteProviderProps
 
 export interface SiteContextValue {
   siteKey: SiteKey;

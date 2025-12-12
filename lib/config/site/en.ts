@@ -2,7 +2,7 @@
 
 import type { SiteKey } from './pl';
 
-export const enConfig = {
+export const enConfig: { siteKey: SiteKey } = {
   siteKey: 'en' as const,
   // Add site-specific config here when needed
   // For now, keeping it minimal to avoid any production changes

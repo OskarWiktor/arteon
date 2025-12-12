@@ -1,6 +1,9 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import ToolSection from '@/components/ui/tools/ToolSection';
+import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
+import ToolHelper from '@/components/ui/tools/ToolHelper';
 
 const ui = {
   pl: {
@@ -179,15 +182,12 @@ export default function MetaTitleDescriptionTool() {
   return (
     <>
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-        <section className="tool-section space-y-5">
-          <div>
-            <p className="tool-label mb-2">{t.addUrl}</p>
+        <ToolSection className="space-y-5">
+          <ToolFieldRow label={t.addUrl} helper={t.urlHelper}>
             <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} className="tool-input" placeholder={t.urlPlaceholder} />
-            <p className="tool-helper mt-1">{t.urlHelper}</p>
-          </div>
+          </ToolFieldRow>
 
-          <div>
-            <p className="tool-label mt-8 mb-2">{t.enterTitleLabel}</p>
+          <ToolFieldRow label={t.enterTitleLabel} className="mt-8" helper={titleAnalysis.helperText}>
             <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="tool-input" placeholder={t.titlePlaceholder} maxLength={180} />
             <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
               <span>
@@ -203,11 +203,9 @@ export default function MetaTitleDescriptionTool() {
               </span>
               <span className={`tool-badge ml-auto ${getStatusClasses(titleAnalysis.status)}`}>{titleAnalysis.status === 'empty' ? t.noTitle : titleAnalysis.statusLabel}</span>
             </div>
-            <p className="tool-helper mt-1">{titleAnalysis.helperText}</p>
-          </div>
+          </ToolFieldRow>
 
-          <div>
-            <p className="tool-label mt-8 mb-2">{t.enterDescriptionLabel}</p>
+          <ToolFieldRow label={t.enterDescriptionLabel} className="mt-8" helper={descriptionAnalysis.helperText}>
             <textarea value={description} onChange={(e) => setDescription(e.target.value)} className="tool-textarea min-h-[110px] resize-y" placeholder={t.descriptionPlaceholder} maxLength={400} />
             <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
               <span>
@@ -223,14 +221,13 @@ export default function MetaTitleDescriptionTool() {
               </span>
               <span className={`tool-badge ml-auto ${getStatusClasses(descriptionAnalysis.status)}`}>{descriptionAnalysis.status === 'empty' ? t.noDescription : descriptionAnalysis.statusLabel}</span>
             </div>
-            <p className="tool-helper mt-1">{descriptionAnalysis.helperText}</p>
-          </div>
-        </section>
+          </ToolFieldRow>
+        </ToolSection>
 
-        <section className="tool-section space-y-4">
+        <ToolSection className="space-y-4">
           <div>
             <h2 className="h6 pb-2">{t.previewTitle}</h2>
-            <p className="tool-helper">{t.previewHelper}</p>
+            <ToolHelper>{t.previewHelper}</ToolHelper>
           </div>
 
           <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">
@@ -238,7 +235,7 @@ export default function MetaTitleDescriptionTool() {
             <p className="mt-1 line-clamp-2 text-[18px]! font-normal text-[#1a0dab]">{previewTitle}</p>
             <p className="mt-1 line-clamp-3 text-[13px]! leading-snug text-[#4d5156]">{previewDescription}</p>
           </div>
-        </section>
+        </ToolSection>
       </div>
     </>
   );

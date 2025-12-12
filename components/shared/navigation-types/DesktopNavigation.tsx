@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import Wrapper from '@/components/ui/Wrapper';
+import AppLink from '@/components/ui/Link';
 
 const ui = {
   pl: {
@@ -391,15 +392,14 @@ export default function DesktopNavigation() {
               const isActive = pathname.startsWith('/uslugi');
               return (
                 <li ref={offerLiRef} className="group relative flex items-center gap-0.5" key={label}>
-                  <Link
+                  <AppLink
                     href={t.urls.uslugi}
+                    variant="navigation"
                     aria-current={isActive ? 'page' : undefined}
-                    className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
-                      isActive ? 'font-semibold text-[#080808]' : ''
-                    }`}
+                    className={isActive ? 'font-semibold text-[#080808]' : ''}
                   >
                     {t.uslugi}
-                  </Link>
+                  </AppLink>
 
                   <button
                     id={buttonId}
@@ -474,15 +474,14 @@ export default function DesktopNavigation() {
               const isActive = pathname.startsWith('/narzedzia');
               return (
                 <li ref={toolsLiRef} className="group relative flex items-center gap-0.5" key={label}>
-                  <Link
+                  <AppLink
                     href={t.urls.narzedzia}
+                    variant="navigation"
                     aria-current={isActive ? 'page' : undefined}
-                    className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
-                      isActive ? 'font-semibold text-[#080808]' : ''
-                    }`}
+                    className={isActive ? 'font-semibold text-[#080808]' : ''}
                   >
                     {t.narzedzia}
-                  </Link>
+                  </AppLink>
 
                   <button
                     id={toolsButtonId}
@@ -544,15 +543,14 @@ export default function DesktopNavigation() {
 
             return (
               <li key={label} className="relative flex items-center">
-                <Link
+                <AppLink
                   href={href}
+                  variant="navigation"
                   aria-current={isActivePage ? 'page' : undefined}
-                  className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
-                    isActivePage ? 'font-semibold text-[#080808]' : ''
-                  }`}
+                  className={isActivePage ? 'font-semibold text-[#080808]' : ''}
                 >
                   {label}
-                </Link>
+                </AppLink>
               </li>
             );
           })}

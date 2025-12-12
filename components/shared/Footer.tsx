@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import Script from 'next/script';
 import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
+import AppLink from '../ui/Link';
+import Text from '../ui/typography/Text';
 
 const ui = {
   pl: {
@@ -157,18 +158,15 @@ export default function Footer() {
               </address>
 
               <div className="mt-3">
-                <p className="text-sm text-[#5e5e5e]">{t.hours}</p>
+                <Text variant="small" tone="muted">
+                  {t.hours}
+                </Text>
               </div>
 
               <ul className="mt-4 flex flex-col gap-2 text-sm">
                 {navLinks.map(({ href, label }) => (
                   <li key={href}>
-                    <Link
-                      href={href}
-                      className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    >
-                      {label}
-                    </Link>
+                    <AppLink href={href}>{label}</AppLink>
                   </li>
                 ))}
               </ul>
@@ -180,24 +178,18 @@ export default function Footer() {
                 <ul className="flex flex-col gap-2 text-sm">
                   {gfxLeft.map(({ href, title }) => (
                     <li key={href}>
-                      <Link
-                        href={href}
-                        className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                      >
+                      <AppLink href={href} display="inline-block">
                         {title}
-                      </Link>
+                      </AppLink>
                     </li>
                   ))}
                 </ul>
                 <ul className="flex flex-col gap-2 text-sm">
                   {gfxRight.map(({ href, title }) => (
                     <li key={href}>
-                      <Link
-                        href={href}
-                        className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                      >
+                      <AppLink href={href} display="inline-block">
                         {title}
-                      </Link>
+                      </AppLink>
                     </li>
                   ))}
                 </ul>
@@ -209,12 +201,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
-                    <Link
-                      href={href}
-                      className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    >
-                      {title}
-                    </Link>
+                    <AppLink href={href}>{title}</AppLink>
                   </li>
                 ))}
               </ul>
@@ -223,12 +210,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksTwo.map(({ href, title }) => (
                   <li key={href}>
-                    <Link
-                      href={href}
-                      className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    >
-                      {title}
-                    </Link>
+                    <AppLink href={href}>{title}</AppLink>
                   </li>
                 ))}
               </ul>
@@ -237,12 +219,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksFour.map(({ href, title }) => (
                   <li key={href}>
-                    <Link
-                      href={href}
-                      className="hover-underline rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    >
-                      {title}
-                    </Link>
+                    <AppLink href={href}>{title}</AppLink>
                   </li>
                 ))}
               </ul>
@@ -253,24 +230,18 @@ export default function Footer() {
               <ul className="flex flex-col gap-2 text-sm">
                 {otherLinks.map(({ href, label }) => (
                   <li key={href}>
-                    <Link
-                      href={href}
-                      className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    >
+                    <AppLink href={href} display="inline-block">
                       {label}
-                    </Link>
+                    </AppLink>
                   </li>
                 ))}
                 <li>
                   <CookieSettingsButton label={t.cookieSettings} />
                 </li>
                 <li>
-                  <Link
-                    href="/mapa-strony"
-                    className="hover-underline inline-block rounded text-base text-[#080808] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                  >
+                  <AppLink href="/mapa-strony" display="inline-block">
                     {t.sitemap}
-                  </Link>
+                  </AppLink>
                 </li>
               </ul>
             </nav>

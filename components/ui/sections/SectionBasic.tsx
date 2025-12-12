@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import Image from 'next/image';
-import Button from '../Button';
+import SectionHeader from '../typography/SectionHeader';
+import ButtonGroup from '../ButtonGroup';
 
 type Variant = 'left' | 'right';
 
@@ -31,28 +32,18 @@ export default function SectionBasic({ id, title, subtitle, description, imageSr
 
         <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-1' : ''}`}>
           <div className={`flex h-full flex-col justify-center py-6 md:py-8 lg:py-8 ${variant === 'right' ? 'md:pl-6' : 'md:pr-6'}`}>
-            {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-
-            <h3 className="reveal-animation mb-2 lg:mb-4">{title}</h3>
-
-            {description && <p className="reveal-animation">{description}</p>}
+            <SectionHeader
+              subtitle={subtitle}
+              title={title}
+              description={description}
+              headingLevel="h3"
+              headingClassName="reveal-animation mb-2 lg:mb-4"
+              descriptionClassName="reveal-animation"
+            />
 
             {children && <div className="text-balance">{children}</div>}
 
-            {(btnOne || btnTwo) && (
-              <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" role="group">
-                {btnOne && (
-                  <Button arrow variant="accent" link={btnOneLink}>
-                    {btnOne}
-                  </Button>
-                )}
-                {btnTwo && (
-                  <Button arrow link={btnTwoLink}>
-                    {btnTwo}
-                  </Button>
-                )}
-              </div>
-            )}
+            <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" role="group" />
           </div>
         </div>
       </div>

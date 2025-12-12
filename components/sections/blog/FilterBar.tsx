@@ -2,6 +2,7 @@
 
 import Button from '@/components/ui/Button';
 import { usePathname } from 'next/navigation';
+import Heading from '@/components/ui/typography/Heading';
 
 const ui = {
   pl: {
@@ -23,7 +24,9 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
 
   return (
     <>
-      <h2 className="reveal-animation mb-4">{t.filters}</h2>
+      <Heading as="h2" className="reveal-animation mb-4">
+        {t.filters}
+      </Heading>
       <nav aria-label={t.categories} className="flex flex-wrap gap-2 pb-6 md:pb-8 lg:pb-10">
         <Button variant={isRoot ? 'accent' : 'normal'} link={t.urls.education} size="small" aria-current={isRoot ? 'page' : undefined}>
           {t.all}

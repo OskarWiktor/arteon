@@ -1,7 +1,7 @@
 import { ElementType, JSX, ReactNode } from 'react';
 import Image from 'next/image';
 import Wrapper from '../Wrapper';
-import Button from '../Button';
+import ButtonGroup from '../ButtonGroup';
 
 const ui = {
   pl: {
@@ -170,20 +170,16 @@ export default function SectionSteps({
           })}
         </ol>
 
-        {(btnOne || btnTwo) && (
-          <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" role="group" aria-label={t.sectionActions}>
-            {btnOne && (
-              <Button arrow variant={btnOneVariant} link={btnOneLink}>
-                {btnOne}
-              </Button>
-            )}
-            {btnTwo && (
-              <Button arrow link={btnTwoLink}>
-                {btnTwo}
-              </Button>
-            )}
-          </div>
-        )}
+        <ButtonGroup
+          btnOne={btnOne}
+          btnOneLink={btnOneLink}
+          btnOneVariant={btnOneVariant === 'dark' ? 'dark' : btnOneVariant}
+          btnTwo={btnTwo}
+          btnTwoLink={btnTwoLink}
+          spacing="loose"
+          ariaLabel={t.sectionActions}
+          role="group"
+        />
 
         {disclaimer && (
           <div className="mt-4 md:mt-5 lg:mt-6">

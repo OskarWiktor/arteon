@@ -2,7 +2,11 @@
 
 import { FormEvent, useMemo, useState } from 'react';
 import Button from '@/components/ui/Button';
-import { RiCheckLine, RiClipboardLine } from 'react-icons/ri';
+import ToolSection from '@/components/ui/tools/ToolSection';
+import ToolInfo from '@/components/ui/tools/ToolInfo';
+import ToolHelper from '@/components/ui/tools/ToolHelper';
+import ToolAlert from '@/components/ui/tools/ToolAlert';
+import CopyButton from '@/components/ui/tools/CopyButton';
 
 const ui = {
   pl: {
@@ -360,23 +364,7 @@ function Swatch({ color, onCopy, copied }: { color: PaletteColor; onCopy: (hex: 
         <p className="text-sm! leading-tight font-medium">{color.hex}</p>
         <p className="truncate text-[11px]! text-[#5e5e5e]">{formatHsl(color.hsl)}</p>
       </div>
-      <button
-        type="button"
-        onClick={() => onCopy(color.hex)}
-        className="inline-flex cursor-pointer items-center gap-1 rounded-full border border-black/15 bg-white px-2.5 py-1 text-[11px]! font-medium text-neutral-900 hover:bg-neutral-50"
-      >
-        {copied ? (
-          <>
-            <RiCheckLine className="h-3.5 w-3.5" />
-            {t.copied}
-          </>
-        ) : (
-          <>
-            <RiClipboardLine className="h-3.5 w-3.5" />
-            {t.copy}
-          </>
-        )}
-      </button>
+      <CopyButton text={color.hex} label={t.copy} copiedLabel={t.copied} onCopy={() => onCopy(color.hex)} />
     </div>
   );
 }
@@ -421,7 +409,7 @@ export default function ColorPaletteGenerator() {
 
   return (
     <div className="space-y-4">
-      <section className="tool-section">
+      <ToolSection>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex items-center gap-3">
@@ -439,35 +427,39 @@ export default function ColorPaletteGenerator() {
             </div>
 
             {normalizedBase && (
-              <div className="tool-info-box flex items-center gap-3">
+              <ToolInfo className="flex items-center gap-3">
                 <div className="h-7 w-7 rounded-lg border border-black/10" style={{ backgroundColor: normalizedBase }} aria-label={t.currentBaseColor} />
                 <div className="min-w-0">
                   <p className="text-sm! leading-tight font-medium">{normalizedBase}</p>
-                  <p className="tool-helper text-[11px]!">{t.baseColorHelper}</p>
+                  <ToolHelper className="text-[11px]!">{t.baseColorHelper}</ToolHelper>
                 </div>
-              </div>
+              </ToolInfo>
             )}
           </div>
         </form>
-      </section>
+      </ToolSection>
 
-      <section aria-label={t.generatedPalettes} className="tool-section space-y-4">
+      <ToolSection aria-label={t.generatedPalettes} className="space-y-4">
         {!normalizedBase && (
-          <p className="rounded-xl border border-dashed border-red-200 bg-red-50 px-3 py-2 text-[11px]! text-red-800">
+          <ToolAlert variant="error">
             {t.colorReadError} <code className="rounded bg-black/5 px-1">#rrggbb</code>, {t.example} <code className="rounded bg-black/5 px-1">#4f6bf5</code>.
-          </p>
+          </ToolAlert>
         )}
 
-        {normalizedBase && palettes.length === 0 && <p className="tool-info-box tool-helper text-[11px]!">{t.enterValidColor}</p>}
+        {normalizedBase && palettes.length === 0 && (
+          <ToolInfo>
+            <ToolHelper className="text-[11px]!">{t.enterValidColor}</ToolHelper>
+          </ToolInfo>
+        )}
 
         {normalizedBase && palettes.length > 0 && (
           <div className="grid gap-4 md:grid-cols-2">
             {palettes.map((group) => (
-              <div key={group.id} className="tool-info-box space-y-2">
+              <ToolInfo key={group.id} className="space-y-2">
                 <div className="flex items-center justify-between gap-2">
                   <div>
                     <p className="font-semibold!">{group.label}</p>
-                    <p className="tool-helper">{group.description}</p>
+                    <ToolHelper>{group.description}</ToolHelper>
                   </div>
                 </div>
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
@@ -475,11 +467,11 @@ export default function ColorPaletteGenerator() {
                     <Swatch key={`${group.id}-${color.hex}-${color.hsl.l}`} color={color} onCopy={handleCopy} copied={copiedHex === color.hex} />
                   ))}
                 </div>
-              </div>
+              </ToolInfo>
             ))}
           </div>
         )}
-      </section>
+      </ToolSection>
     </div>
   );
 }

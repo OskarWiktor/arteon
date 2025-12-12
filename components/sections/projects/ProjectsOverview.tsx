@@ -4,9 +4,9 @@ import { useRef, useEffect, useState, useMemo } from 'react';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 
 import ProjectCard from '../../ui/ProjectCard';
+import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
 import allProjectsData from '@/data/pl/projects.json';
 import type { Project, ProjectCategory } from '@/types/project';
-import Button from '@/components/ui/Button';
 
 const ui = {
   pl: {
@@ -164,18 +164,16 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
 
   return (
     <section className="w-full" aria-labelledby="projects-heading">
-      <div className="mb-2 flex flex-col gap-3 md:mb-3 md:flex-row md:items-center md:justify-between">
-        <div>
-          {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-          <h2 id="projects-heading" className="reveal-animation md:mb-0">
-            {title}
-          </h2>
-        </div>
-
-        <Button link={t.urls.projects} aria-label={t.seeAllProjects}>
-          {t.seeAllProjects}
-        </Button>
-      </div>
+      <SectionHeaderWithAction
+        subtitle={subtitle}
+        title={title}
+        headingLevel="h2"
+        headingClassName="reveal-animation md:mb-0"
+        titleId="projects-heading"
+        actionLabel={t.seeAllProjects}
+        actionLink={t.urls.projects}
+        actionAriaLabel={t.seeAllProjects}
+      />
 
       <div className="relative">
         <div

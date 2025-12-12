@@ -6,6 +6,7 @@ import type { Article } from '@/types/article';
 import { getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
 import blogData from '@/data/pl/blog.json';
+import Text from '@/components/ui/typography/Text';
 
 const ui = {
   pl: {
@@ -43,13 +44,17 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
               ) : null}
               <div className="p-4">
                 <h3 className="h6">{a.title}</h3>
-                <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
+                <div className="mt-3 flex flex-wrap items-center gap-2">
                   {a.readingTime ? (
-                    <span>
+                    <Text variant="small" tone="muted" as="span">
                       {a.readingTime} {t.readingTime}
-                    </span>
+                    </Text>
                   ) : null}
-                  {a.datePublished ? <span aria-label={t.publicationDate}>• {a.datePublished}</span> : null}
+                  {a.datePublished ? (
+                    <Text variant="small" tone="muted" as="span" aria-label={t.publicationDate}>
+                      • {a.datePublished}
+                    </Text>
+                  ) : null}
                 </div>
               </div>
             </Link>

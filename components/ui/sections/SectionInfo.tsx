@@ -1,5 +1,6 @@
-import Button from '../Button';
 import { ReactNode } from 'react';
+import SectionHeader from '../typography/SectionHeader';
+import ButtonGroup from '../ButtonGroup';
 
 const ui = {
   pl: {
@@ -23,28 +24,17 @@ export default function SectionInfo({ title, subtitle, description, btnOne, btnO
   const t = ui.pl;
   return (
     <div id={id}>
-      {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-
-      <h2 className="reveal-animation mb-2 scroll-mt-26 lg:mb-4">{title}</h2>
-
-      {description && <p>{description}</p>}
+      <SectionHeader
+        subtitle={subtitle}
+        title={title}
+        description={description}
+        headingLevel="h2"
+        headingClassName="reveal-animation mb-2 scroll-mt-26 lg:mb-4"
+      />
 
       {children}
 
-      {(btnOne || btnTwo) && (
-        <div className="mt-4 flex flex-wrap gap-3 md:mt-6 lg:mt-8" aria-label={t.sectionActions}>
-          {btnOne && (
-            <Button arrow variant="accent" link={btnOneLink}>
-              {btnOne}
-            </Button>
-          )}
-          {btnTwo && (
-            <Button arrow link={btnTwoLink}>
-              {btnTwo}
-            </Button>
-          )}
-        </div>
-      )}
+      <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} ariaLabel={t.sectionActions} />
     </div>
   );
 }

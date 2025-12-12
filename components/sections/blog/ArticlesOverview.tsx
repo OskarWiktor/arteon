@@ -4,12 +4,13 @@ import { useRef, useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
+import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
+import Text from '@/components/ui/typography/Text';
 
 import type { Article } from '@/types/article';
 import { getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
 import blogData from '@/data/pl/blog.json';
-import Button from '@/components/ui/Button';
 
 const ui = {
   pl: {
@@ -173,18 +174,16 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
 
   return (
     <section className="w-full" aria-labelledby="articles-heading">
-      <div className="mb-2 flex flex-col gap-3 md:mb-3 md:flex-row md:items-center md:justify-between">
-        <div>
-          {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-          <h2 id="articles-heading" className="reveal-animation md:mb-0">
-            {title}
-          </h2>
-        </div>
-
-        <Button link={allArticlesHref} aria-label={t.seeAllArticles}>
-          {t.seeAllArticles}
-        </Button>
-      </div>
+      <SectionHeaderWithAction
+        subtitle={subtitle}
+        title={title}
+        headingLevel="h2"
+        headingClassName="reveal-animation md:mb-0"
+        titleId="articles-heading"
+        actionLabel={t.seeAllArticles}
+        actionLink={allArticlesHref}
+        actionAriaLabel={t.seeAllArticles}
+      />
 
       <div className="relative">
         <div
@@ -216,13 +215,17 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
                   ) : null}
                   <div className="p-4">
                     <h3 className="h6">{a.title}</h3>
-                    <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
+                    <div className="mt-3 flex flex-wrap items-center gap-2">
                       {a.readingTime ? (
-                        <span>
+                        <Text variant="small" tone="muted" as="span">
                           {a.readingTime} {t.readingTime}
-                        </span>
+                        </Text>
                       ) : null}
-                      {a.datePublished ? <span aria-label={t.publicationDate}>• {a.datePublished}</span> : null}
+                      {a.datePublished ? (
+                        <Text variant="small" tone="muted" as="span" aria-label={t.publicationDate}>
+                          • {a.datePublished}
+                        </Text>
+                      ) : null}
                     </div>
                   </div>
                 </Link>

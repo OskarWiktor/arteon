@@ -1,11 +1,11 @@
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
+import AppLink from '@/components/ui/Link';
 import type { Metadata } from 'next';
-import Link from 'next/link';
 
-import { articles } from '@/data/pl/blog.json';
-import { projects } from '@/data/pl/projects.json';
+import blogData from '@/data/pl/blog.json';
+import projectsData from '@/data/pl/projects.json';
 
 const BASE_URL = 'https://www.arteonagency.pl';
 
@@ -73,7 +73,7 @@ const services: NavItem[] = [
 
 const portfolioIndex: NavItem = { title: 'Wszystkie realizacje', href: '/realizacje' };
 
-const portfolioItems: NavItem[] = (projects as Project[]).map((p) => ({
+const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).projects || []).map((p) => ({
   title: p.title,
   href: `/realizacje/${p.slug}`,
 }));
@@ -91,9 +91,10 @@ function slugifyCategory(name: string): string {
     .replace(/(^-|-$)+/g, '');
 }
 
-const blogCategories: NavItem[] = buildBlogCategoriesFromArticles(articles as Article[]);
+const articles = (blogData as { articles: Article[] }).articles || [];
+const blogCategories: NavItem[] = buildBlogCategoriesFromArticles(articles);
 
-const blogArticleItems: NavItem[] = (articles as Article[]).map((a) => ({
+const blogArticleItems: NavItem[] = articles.map((a) => ({
   title: a.title,
   href: getArticleUrl(a),
 }));
@@ -154,17 +155,15 @@ export default function SitemapPage() {
 
           <SectionInfo title="Realizacje">
             <p>
-              <Link href={portfolioIndex.href} className="font-medium underline-offset-4 hover:underline">
+              <AppLink href={portfolioIndex.href} className="font-medium">
                 {portfolioIndex.title}
-              </Link>
+              </AppLink>
             </p>
             {showAllPortfolio ? (
               <ul className="mt-2 space-y-2">
                 {portfolioItems.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="underline-offset-4 hover:underline">
-                      {item.title}
-                    </Link>
+                    <AppLink href={item.href}>{item.title}</AppLink>
                   </li>
                 ))}
               </ul>
@@ -175,9 +174,9 @@ export default function SitemapPage() {
 
           <SectionInfo title="Edukacja">
             <p>
-              <Link href="/edukacja" className="font-medium underline-offset-4 hover:underline">
+              <AppLink href="/edukacja" className="font-medium">
                 Wszystkie artykuły
-              </Link>
+              </AppLink>
             </p>
             <NestedList items={blogCategories} />
           </SectionInfo>
@@ -186,16 +185,14 @@ export default function SitemapPage() {
 
           <SectionInfo title="Narzędzia">
             <p>
-              <Link href="/narzedzia" className="font-medium underline-offset-4 hover:underline">
+              <AppLink href="/narzedzia" className="font-medium">
                 Wszystkie narzędzia
-              </Link>
+              </AppLink>
             </p>
             <ul className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
               {tools.map((tool) => (
                 <li key={tool.href}>
-                  <Link href={tool.href} className="underline-offset-4 hover:underline">
-                    {tool.title}
-                  </Link>
+                  <AppLink href={tool.href}>{tool.title}</AppLink>
                 </li>
               ))}
             </ul>
@@ -207,9 +204,9 @@ export default function SitemapPage() {
             <ul>
               {infoPages.map((p) => (
                 <li key={p.href}>
-                  <Link href={p.href} className="font-medium underline-offset-4 hover:underline">
+                  <AppLink href={p.href} className="font-medium">
                     {p.title}
-                  </Link>
+                  </AppLink>
                 </li>
               ))}
             </ul>
@@ -233,16 +230,14 @@ function NestedList({ items }: { items: NavItem[] }) {
     <ul className="space-y-2">
       {items.map((item) => (
         <li key={item.href}>
-          <Link href={item.href} className="font-medium underline-offset-4 hover:underline">
+          <AppLink href={item.href} className="font-medium">
             {item.title}
-          </Link>
+          </AppLink>
           {item.children && item.children.length > 0 && (
             <ul className="mt-1 ml-5 space-y-1 text-sm">
               {item.children.map((child) => (
                 <li key={child.href}>
-                  <Link href={child.href} className="underline-offset-4 hover:underline">
-                    {child.title}
-                  </Link>
+                  <AppLink href={child.href}>{child.title}</AppLink>
                 </li>
               ))}
             </ul>

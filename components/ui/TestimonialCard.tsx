@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Testimonial } from '@/types/testimonial';
 import { StarRating } from './StarRating';
+import Text from './typography/Text';
 
 const ui = {
   pl: {
@@ -47,7 +48,9 @@ export default function TestimonialCard({ item }: Props) {
           {item.role && (
             <>
               <br />
-              <span className="truncate text-sm text-[#5e5e5e]">{item.role}</span>
+              <Text variant="small" tone="muted" className="truncate">
+                {item.role}
+              </Text>
             </>
           )}
           {item.link && (

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 import type { Testimonial } from '@/types/testimonial';
 import TestimonialCard from '@/components/ui/TestimonialCard';
+import SectionHeader from '../ui/typography/SectionHeader';
 
 import testimonialsPl from '@/data/pl/testimonials.json';
 
@@ -138,10 +139,13 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
 
   return (
     <section className="w-full" aria-labelledby="testimonials-heading">
-      {subtitle && <span className="text-base tracking-wider text-[#5e5e5e] uppercase">{subtitle}</span>}
-      <h2 id="testimonials-heading" className="reveal-animation md:mb-2">
-        {title}
-      </h2>
+      <SectionHeader
+        subtitle={subtitle}
+        title={title}
+        headingLevel="h2"
+        headingClassName="reveal-animation md:mb-2"
+        titleId="testimonials-heading"
+      />
 
       <div className="relative">
         <div

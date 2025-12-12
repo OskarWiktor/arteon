@@ -3,6 +3,11 @@
 import { FormEvent, useMemo, useState } from 'react';
 import Button from '@/components/ui/Button';
 import { RiContrast2Line } from 'react-icons/ri';
+import ToolSection from '@/components/ui/tools/ToolSection';
+import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
+import ToolHelper from '@/components/ui/tools/ToolHelper';
+import ToolInfo from '@/components/ui/tools/ToolInfo';
+import Tag from '@/components/ui/Tag';
 
 const ui = {
   pl: {
@@ -163,15 +168,7 @@ function formatRatio(ratio: number | null): string {
 }
 
 function Badge({ ok, label }: { ok: boolean; label: string }) {
-  return (
-    <span
-      className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px]! font-medium ${
-        ok ? 'bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200' : 'bg-red-50 text-red-800 ring-1 ring-red-200'
-      }`}
-    >
-      {label}
-    </span>
-  );
+  return <Tag variant={ok ? 'success' : 'error'} size="md">{label}</Tag>;
 }
 
 export default function WcagContrastChecker() {
@@ -201,34 +198,36 @@ export default function WcagContrastChecker() {
   return (
     <>
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-        <section className="tool-section space-y-4">
+        <ToolSection className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <p className="tool-label mb-1">Przykładowy tekst</p>
+            <ToolFieldRow label="Przykładowy tekst">
               <input id="text-sample" type="text" value={textSample} onChange={(e) => setTextSample(e.target.value)} className="tool-input h-10" placeholder={t.exampleTextPlaceholder} />
-            </div>
+            </ToolFieldRow>
 
             <div>
               <div className="grid gap-4 sm:grid-cols-2">
-                <div>
-                  <p className="tool-label mb-1">{t.textColorLabel}</p>
+                <ToolFieldRow
+                  label={t.textColorLabel}
+                  helper={
+                    <>
+                      {t.supportedFormats} <code className="rounded bg-black/5 px-1">#rrggbb</code>, <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
+                      <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
+                    </>
+                  }
+                  helperClassName="text-[11px]!"
+                >
                   <div className="flex items-center gap-3">
                     <input type="color" value={foreground} onChange={(e) => setForeground(e.target.value)} aria-label={t.selectTextColor} className="tool-color-picker tool-color-picker-md" />
                     <input type="text" value={foreground} onChange={(e) => setForeground(e.target.value)} className="tool-input h-10" placeholder={t.textColorPlaceholder} />
                   </div>
-                  <p className="tool-helper mt-1 text-[11px]!">
-                    {t.supportedFormats} <code className="rounded bg-black/5 px-1">#rrggbb</code>, <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
-                    <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
-                  </p>
-                </div>
+                </ToolFieldRow>
 
-                <div>
-                  <p className="tool-label mb-1">{t.backgroundColorLabel}</p>
+                <ToolFieldRow label={t.backgroundColorLabel}>
                   <div className="flex items-center gap-3">
                     <input type="color" value={background} onChange={(e) => setBackground(e.target.value)} aria-label={t.selectBackgroundColor} className="tool-color-picker tool-color-picker-md" />
                     <input type="text" value={background} onChange={(e) => setBackground(e.target.value)} className="tool-input h-10" placeholder={t.backgroundColorPlaceholder} />
                   </div>
-                </div>
+                </ToolFieldRow>
               </div>
             </div>
 
@@ -243,25 +242,25 @@ export default function WcagContrastChecker() {
               </div>
             </div>
           </form>
-        </section>
+        </ToolSection>
 
-        <section aria-label={t.resultsLabel} className="tool-section space-y-4">
+        <ToolSection aria-label={t.resultsLabel} className="space-y-4">
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="font-medium uppercase">
                 {t.contrastRatio} <span className="mt-1 text-xl font-semibold"> {formatRatio(result.ratio)}</span>
               </p>
               {hasError ? (
-                <p className="tool-helper mt-1 text-[11px]! text-red-700">
+                <ToolHelper variant="error" className="mt-1 text-[11px]!">
                   {t.colorReadError} <code className="rounded bg-black/5 px-1">#rrggbb</code> {t.or} <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
-                </p>
+                </ToolHelper>
               ) : (
                 <p className="tool-helper mt-1 text-[11px]!"></p>
               )}
             </div>
           </div>
 
-          <div className="tool-info-box space-y-2">
+          <ToolInfo className="space-y-2">
             <div className="flex items-center justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">{t.normalText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
@@ -278,9 +277,9 @@ export default function WcagContrastChecker() {
             >
               <p className="text-sm! leading-snug font-normal">{textSample || t.exampleNormalText}</p>
             </div>
-          </div>
+          </ToolInfo>
 
-          <div className="tool-info-box space-y-2">
+          <ToolInfo className="space-y-2">
             <div className="items_center flex justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">{t.largeText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
@@ -297,9 +296,9 @@ export default function WcagContrastChecker() {
             >
               <p className="text-base! leading-snug font-semibold!">{textSample || t.exampleLargeText}</p>
             </div>
-          </div>
+          </ToolInfo>
 
-          <div className="tool-info-box space-y-2">
+          <ToolInfo className="space-y-2">
             <div className="flex items-center justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">{t.icon}</p>
               <div className="flex flex-wrap items-center gap-1.5">
@@ -318,8 +317,8 @@ export default function WcagContrastChecker() {
                 <RiContrast2Line className="text-2xl!" aria-hidden="true" />
               </div>
             </div>
-          </div>
-        </section>
+          </ToolInfo>
+        </ToolSection>
       </div>
     </>
   );

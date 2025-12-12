@@ -1,6 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/Button';
+import Tag from '@/components/ui/Tag';
 import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type DragEvent as ReactDragEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
@@ -35,7 +36,7 @@ const ui = {
     cropTools: 'Narzędzia kadrowania',
     addImageFirstHelper: 'Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.',
     dimensions: 'Wymiary w px',
-    presets: 'Gotowe formaty',
+    presetsLabel: 'Gotowe formaty',
     shapesLabel: 'Kształty kadru',
     zoom: 'Przybliżenie',
     position: 'Pozycja',
@@ -246,16 +247,17 @@ function PillButton<T extends string>({ value, current, label, onChange, disable
   const isActive = value === current;
 
   return (
-    <button
+    <Tag
+      as="button"
       type="button"
+      variant={isActive ? 'selected' : 'default'}
+      size="lg"
       disabled={disabled}
       onClick={() => !disabled && onChange(value)}
-      className={`rounded-full border px-3 py-1 text-[14px]! ${
-        isActive ? 'bg-slate-600 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'
-      } ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
+      className={isActive ? '' : 'border-black/10 hover:bg-neutral-100'}
     >
       {label}
-    </button>
+    </Tag>
   );
 }
 
@@ -312,7 +314,7 @@ const RECT_ASPECTS: ShapeAspect[] = ['1:1', '4:5', '3:2', '16:9', '9:16'];
 
 const TOOLBAR_ITEMS: { id: ActiveTool; label: string; icon: ReactNode }[] = [
   { id: 'dimensions', label: ui.pl.dimensions, icon: <RiRulerLine className="text-base" /> },
-  { id: 'presets', label: ui.pl.presets, icon: <RiLayoutGridLine className="text-base" /> },
+  { id: 'presets', label: ui.pl.presetsLabel, icon: <RiLayoutGridLine className="text-base" /> },
   { id: 'shapes', label: ui.pl.shapesLabel, icon: <RiCropLine className="text-base" /> },
   { id: 'zoom', label: ui.pl.zoom, icon: <RiZoomInLine className="text-base" /> },
   { id: 'position', label: ui.pl.position, icon: <RiDragMove2Line className="text-base" /> },
@@ -911,7 +913,7 @@ export default function ImageResizeTool() {
             >
               <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
               <span className="mb-2 text-xs! text-[#5e5e5e]">{t.clickToSelect}</span>
-              <span className="rounded-full bg-white px-3 py-1 text-xs! font-medium text-neutral-800 shadow-sm">{t.supportedFormats}</span>
+              <Tag variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Tag>
               <input
                 type="file"
                 accept="image/*"

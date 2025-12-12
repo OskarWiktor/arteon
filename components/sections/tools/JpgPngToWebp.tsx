@@ -2,6 +2,10 @@
 
 import Button from '@/components/ui/Button';
 import { DragEvent, FormEvent, useMemo, useState } from 'react';
+import ToolSection from '@/components/ui/tools/ToolSection';
+import ToolAlert from '@/components/ui/tools/ToolAlert';
+import Text from '@/components/ui/typography/Text';
+import Tag from '@/components/ui/Tag';
 
 const ui = {
   pl: {
@@ -474,7 +478,7 @@ export default function JpgPngToWebp() {
 
   return (
     <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-      <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+      <ToolSection className="space-y-4">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <p className="mb-2 font-semibold uppercase">{t.addFiles}</p>
@@ -485,10 +489,14 @@ export default function JpgPngToWebp() {
             >
               <span className="mb-1 text-sm font-medium">{t.dragDropImages}</span>
               <span className="mb-2 text-xs text-[#5e5e5e]">{t.clickToSelect}</span>
-              <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-800 shadow-sm">{t.supportedFormats}</span>
+              <Tag variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Tag>
               <input type="file" accept="image/jpeg,image/png" multiple onChange={handleFileChange} className="hidden" />
             </label>
-            {globalError && <p className="mt-2 text-xs text-red-600">{globalError}</p>}
+            {globalError && (
+              <ToolAlert variant="error" className="mt-2">
+                {globalError}
+              </ToolAlert>
+            )}
           </div>
 
           <div>
@@ -497,7 +505,9 @@ export default function JpgPngToWebp() {
               <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="p-0!" />
               <span className="w-16 text-right text-neutral-700">{quality}%</span>
             </div>
-            <span className="mt-3 text-sm text-[#5e5e5e]">{t.qualityHelper}</span>
+            <Text variant="small" tone="muted" as="span" className="mt-3">
+              {t.qualityHelper}
+            </Text>
 
             <div className="mt-3 flex items-center">
               <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
@@ -511,10 +521,10 @@ export default function JpgPngToWebp() {
             <p className="mt-8 mb-2 font-semibold uppercase">{t.convertAndDownload}</p>
             {total > 0 && (
               <div className="mb-3 space-y-2">
-                <div className="flex items-center justify-between text-sm text-[#5e5e5e]">
-                  <span>
+                <div className="flex items-center justify-between">
+                  <Text variant="small" tone="muted" as="span">
                     {t.inQueue} <strong>{total}</strong> {t.files}
-                  </span>
+                  </Text>
                   {total > 0 && (
                     <span>
                       Zakończone: {completed} / {total}
@@ -587,9 +597,9 @@ export default function JpgPngToWebp() {
             </div>
           </div>
         </form>
-      </section>
+      </ToolSection>
 
-      <section aria-label={t.queueListAriaLabel} className="space-y-2 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+      <ToolSection aria-label={t.queueListAriaLabel} className="space-y-2">
         <div className="flex items-center justify-between gap-2">
           <h2 className="h6">{t.queueFilesHeading}</h2>
           {files.length > 0 && (
@@ -605,15 +615,6 @@ export default function JpgPngToWebp() {
           <div className="space-y-2 text-sm">
             {files.map((item) => {
               const statusLabel = item.status === 'pending' ? t.status.pending : item.status === 'processing' ? t.status.processing : item.status === 'done' ? t.status.done : t.status.error;
-
-              const statusColor =
-                item.status === 'done'
-                  ? 'bg-emerald-100 text-emerald-700'
-                  : item.status === 'processing'
-                    ? 'bg-blue-100 text-blue-700'
-                    : item.status === 'error'
-                      ? 'bg-red-100 text-red-700'
-                      : 'bg-neutral-100 text-neutral-700';
 
               const isBigger = item.outputSize != null && item.outputSize > item.inputSize;
 
@@ -660,30 +661,32 @@ export default function JpgPngToWebp() {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <span className={`rounded-full px-3 py-1 text-[11px] font-medium ${statusColor}`}>{statusLabel}</span>
+                    <Tag variant={item.status === 'done' ? 'success' : item.status === 'error' ? 'error' : 'neutral'} size="md">
+                      {statusLabel}
+                    </Tag>
 
                     {item.status === 'done' && item.downloadUrl && (
-                      <button type="button" onClick={() => handleDownloadSingle(item.id)} className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium">
+                      <Tag as="button" type="button" onClick={() => handleDownloadSingle(item.id)} variant="default" size="md" className="cursor-pointer border-black/15">
                         {item.downloaded ? t.downloaded : t.actions.download}
-                      </button>
+                      </Tag>
                     )}
 
                     {item.status === 'done' && (
-                      <button type="button" onClick={() => handleReconvert(item.id)} className="cursor-pointer rounded-full border border-black/10 bg-white px-3 py-1 text-[11px]">
+                      <Tag as="button" type="button" onClick={() => handleReconvert(item.id)} variant="default" size="md" className="cursor-pointer border-black/10">
                         {t.actions.reconvert}
-                      </button>
+                      </Tag>
                     )}
 
-                    <button type="button" onClick={() => handleRemove(item.id)} className="cursor-pointer rounded-full px-2 py-1 text-xs text-[#5e5e5e] hover:text-neutral-900">
+                    <Tag as="button" type="button" onClick={() => handleRemove(item.id)} variant="default" size="sm" className="cursor-pointer text-[#5e5e5e] hover:text-neutral-900">
                       {t.actions.remove}
-                    </button>
+                    </Tag>
                   </div>
                 </div>
               );
             })}
           </div>
         )}
-      </section>
+      </ToolSection>
     </div>
   );
 }

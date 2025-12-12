@@ -2,6 +2,11 @@
 
 import { DragEvent, FormEvent, useMemo, useState } from 'react';
 import Button from '@/components/ui/Button';
+import ToolSection from '@/components/ui/tools/ToolSection';
+import ToolInfo from '@/components/ui/tools/ToolInfo';
+import ToolAlert from '@/components/ui/tools/ToolAlert';
+import Text from '@/components/ui/typography/Text';
+import Tag from '@/components/ui/Tag';
 
 const ui = {
   pl: {
@@ -383,7 +388,7 @@ export default function FaviconGenerator() {
   return (
     <>
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-        <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+        <ToolSection className="space-y-4">
           <form onSubmit={handleGenerate} className="space-y-6">
             <div>
               <p className="mb-2 font-semibold uppercase">{t.addBaseImageLabel}</p>
@@ -394,7 +399,7 @@ export default function FaviconGenerator() {
               >
                 <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
                 <span className="mb-2 text-xs text-[#5e5e5e]">{t.clickToSelect}</span>
-                <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-800 shadow-sm">{t.supportedFormats}</span>
+                <Tag variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Tag>
                 <input type="file" accept="image/png,image/jpeg,image/jpg,image/svg+xml" onChange={handleFileChange} className="hidden" />
               </label>
               {sourceFile && (
@@ -402,33 +407,41 @@ export default function FaviconGenerator() {
                   {t.selectedFile} <strong>{sourceFile.name}</strong> ({formatBytes(sourceFile.size)})
                 </p>
               )}
-              {error && <p className="mt-2 text-xs text-red-600">{error}</p>}
+              {error && (
+                <ToolAlert variant="error" className="mt-2">
+                  {error}
+                </ToolAlert>
+              )}
             </div>
 
             <div>
               <p className="mt-8 mb-2 font-semibold uppercase">{t.setSizesAndBackground}</p>
 
-              <div className="rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
-                <p className="mb-2 text-sm! font-semibold tracking-wide text-[#5e5e5e] uppercase">{t.pngSizes}</p>
+              <ToolInfo>
+                <Text variant="small" tone="muted" as="p" className="mb-2! font-semibold tracking-wide uppercase">
+                  {t.pngSizes}
+                </Text>
                 <div className="flex flex-wrap gap-2">
                   {PNG_SIZES.map((size) => {
                     const checked = selectedSizes.includes(size);
                     return (
-                      <label
+                      <Tag
                         key={size}
-                        className={`flex cursor-pointer items-center justify-between rounded-full border px-3 py-1 text-[14px]! font-medium ${
-                          checked ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
-                        }`}
+                        as="label"
+                        variant={checked ? 'selected' : 'default'}
+                        size="lg"
+                        className="flex cursor-pointer items-center justify-between"
+                        htmlFor={`size-${size}`}
                       >
-                        <input type="checkbox" checked={checked} onChange={() => toggleSize(size)} className="mr-1 h-4 w-4! p-0! align-middle" />
+                        <input type="checkbox" id={`size-${size}`} checked={checked} onChange={() => toggleSize(size)} className="mr-1 h-4 w-4! p-0! align-middle" />
                         {size}x{size}
-                      </label>
+                      </Tag>
                     );
                   })}
                 </div>
-              </div>
+              </ToolInfo>
 
-              <div className="mt-4 gap-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+              <ToolInfo className="mt-4 gap-2">
                 <div className="flex items-center gap-2">
                   <input
                     id="transparent-bg"
@@ -443,7 +456,9 @@ export default function FaviconGenerator() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="text-sm! text-[#5e5e5e]">{t.backgroundColor}</span>
+                  <Text variant="small" tone="muted" as="span">
+                    {t.backgroundColor}
+                  </Text>
                   <input
                     type="color"
                     value={backgroundColor}
@@ -452,9 +467,9 @@ export default function FaviconGenerator() {
                     className="h-8! w-7! cursor-pointer border-none bg-white p-0!"
                   />
                 </div>
-              </div>
+              </ToolInfo>
 
-              <div className="mt-4 flex flex-wrap items-center gap-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+              <ToolInfo className="mt-4 flex flex-wrap items-center gap-2">
                 <div className="flex items-center gap-2">
                   <input id="include-ico" type="checkbox" checked={includeIco} onChange={(e) => setIncludeIco(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
                   <label htmlFor="include-ico" className="text-sm! text-neutral-800">
@@ -468,7 +483,7 @@ export default function FaviconGenerator() {
                     {t.autoDownload}
                   </label>
                 </div>
-              </div>
+              </ToolInfo>
             </div>
 
             <div>
@@ -486,13 +501,21 @@ export default function FaviconGenerator() {
                 </Button>
               </div>
 
-              {status === 'processing' && <p className="mt-2 text-xs text-[#5e5e5e]">{t.processing}</p>}
-              {status === 'done' && !error && <p className="mt-2 text-xs text-emerald-700">{t.done}</p>}
+              {status === 'processing' && (
+                <ToolAlert variant="info" className="mt-2">
+                  {t.processing}
+                </ToolAlert>
+              )}
+              {status === 'done' && !error && (
+                <ToolAlert variant="success" className="mt-2">
+                  {t.done}
+                </ToolAlert>
+              )}
             </div>
           </form>
-        </section>
+        </ToolSection>
 
-        <section aria-label={t.previewAndFilesLabel} className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+        <ToolSection aria-label={t.previewAndFilesLabel} className="space-y-4">
           <div className="flex items-center justify-between gap-2">
             <h2 className="h6">{t.previewAndFiles}</h2>
             {anyOutputs && (
@@ -505,7 +528,7 @@ export default function FaviconGenerator() {
           {!hasSource && !anyOutputs && <p className="text-xs text-[#5e5e5e]">{t.addImageToGenerate}</p>}
 
           {hasSource && (
-            <div className="flex flex-wrap items-center gap-4 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+            <ToolInfo className="flex flex-wrap items-center gap-4">
               <div>
                 <p className="mb-2 text-xs font-semibold tracking-wide text-[#5e5e5e] uppercase">{t.previewBaseImage}</p>
                 <div className="flex items-center gap-3">
@@ -526,7 +549,7 @@ export default function FaviconGenerator() {
                   </div>
                 </div>
               </div>
-            </div>
+            </ToolInfo>
           )}
 
           {anyOutputs && (
@@ -555,15 +578,15 @@ export default function FaviconGenerator() {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <a href={item.url} download={item.fileName} className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium">
+                    <Tag as="a" href={item.url} download={item.fileName} variant="default" size="md" className="cursor-pointer border-black/15">
                       {t.download}
-                    </a>
+                    </Tag>
                   </div>
                 </div>
               ))}
             </div>
           )}
-        </section>
+        </ToolSection>
       </div>
     </>
   );

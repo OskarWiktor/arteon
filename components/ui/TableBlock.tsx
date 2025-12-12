@@ -1,3 +1,5 @@
+import Text from './typography/Text';
+
 const ui = {
   pl: {
     defaultTableLabel: 'Tabela',
@@ -47,7 +49,13 @@ export default function TableBlock({ caption, note, columns, rows, striped = tru
         </table>
       </div>
 
-      {note ? <figcaption className="mt-2 text-xs text-[#5e5e5e]">{note}</figcaption> : null}
+      {note ? (
+        <figcaption className="mt-2">
+          <Text variant="xs" tone="muted">
+            {note}
+          </Text>
+        </figcaption>
+      ) : null}
     </figure>
   );
 }
