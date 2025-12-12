@@ -1,5 +1,3 @@
-'use client';
-
 import SectionSteps from '../../ui/sections/SectionSteps';
 import { FaWordpress } from 'react-icons/fa';
 import { FaWebflow } from 'react-icons/fa6';

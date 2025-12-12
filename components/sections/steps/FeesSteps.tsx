@@ -1,5 +1,3 @@
-'use client';
-
 import SectionSteps from '../../ui/sections/SectionSteps';
 
 const FeesStepsItems = [

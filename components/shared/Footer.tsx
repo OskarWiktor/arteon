@@ -1,8 +1,7 @@
-'use client';
-
 import Link from 'next/link';
 import Script from 'next/script';
 import Wrapper from '../ui/Wrapper';
+import CookieSettingsButton from './CookieSettingsButton';
 
 const ui = {
   pl: {
@@ -263,9 +262,7 @@ export default function Footer() {
                   </li>
                 ))}
                 <li>
-                  <button onClick={() => window.ArteonConsent?.open()} className="hover-underline cursor-pointer text-base" aria-haspopup="dialog">
-                    {t.cookieSettings}
-                  </button>
+                  <CookieSettingsButton label={t.cookieSettings} />
                 </li>
                 <li>
                   <Link

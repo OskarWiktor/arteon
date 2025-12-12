@@ -24,7 +24,14 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
     >
       <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
         <div className={`relative ${sizeClass} w-full`}>
-          <Image src={project.image} alt={`${t.projectImageAlt} ${project.title}`} fill className="object-cover" quality={100} />
+          <Image
+            src={project.image}
+            alt={`${t.projectImageAlt} ${project.title}`}
+            fill
+            className="object-cover"
+            sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+            quality={100}
+          />
         </div>
 
         <div className="flex grow flex-col px-6 py-4 md:px-7 md:py-5">

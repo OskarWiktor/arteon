@@ -309,14 +309,26 @@ export default function ProjectPage({ params }: PageProps) {
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" />
+                      <Image
+                        src={project.beforeAfter.beforeImage || project.image}
+                        alt="Widok przed zmianami"
+                        fill
+                        className="object-cover"
+                        sizes="(min-width:768px) 50vw, 100vw"
+                      />
                     </div>
                     <figcaption className="mt-2 text-sm text-[#5e5e5e]">Przed</figcaption>
                   </figure>
 
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" />
+                      <Image
+                        src={project.beforeAfter.afterImage || project.image}
+                        alt="Widok po wdrożeniu"
+                        fill
+                        className="object-cover"
+                        sizes="(min-width:768px) 50vw, 100vw"
+                      />
                     </div>
                     <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Po</figcaption>
                   </figure>

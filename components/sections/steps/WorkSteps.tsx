@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import SectionSteps from '../../ui/sections/SectionSteps';
 

@@ -134,7 +134,14 @@ export default function SectionSteps({
                   {topImageSrc && (
                     <div className="mb-4 md:mb-6">
                       <div className="relative h-52 w-full overflow-hidden rounded-xl md:h-68">
-                        <Image src={topImageSrc} alt={topImageAlt ?? ''} fill className="pointer-events-none object-cover select-none" aria-hidden={topImageAlt ? undefined : true} />
+                        <Image
+                          src={topImageSrc}
+                          alt={topImageAlt ?? ''}
+                          fill
+                          className="pointer-events-none object-cover select-none"
+                          sizes="(min-width:1024px) 50vw, (min-width:768px) 50vw, 100vw"
+                          aria-hidden={topImageAlt ? undefined : true}
+                        />
                       </div>
                     </div>
                   )}

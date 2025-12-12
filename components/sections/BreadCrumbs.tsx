@@ -1,5 +1,3 @@
-'use client';
-
 import Wrapper from '../ui/Wrapper';
 
 const ui = {

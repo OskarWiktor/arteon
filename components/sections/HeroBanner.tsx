@@ -1,5 +1,3 @@
-'use client';
-
 import Button from '../ui/Button';
 import { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
