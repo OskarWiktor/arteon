@@ -12,6 +12,9 @@ const ui = {
     articlesList: 'Lista artykułów',
     readingTime: 'min czytania',
     publicationDate: 'Data publikacji',
+    urls: {
+      education: '/edukacja',
+    },
   },
 } as const;
 
@@ -29,7 +32,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
     <section aria-label={t.articlesList} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((a) => {
         const catSlug = getPrimaryCategorySlug(a);
-        const href = `/edukacja/${catSlug}/${a.slug}`;
+        const href = `${t.urls.education}/${catSlug}/${a.slug}`;
         return (
           <article key={a.slug} className="overflow-hidden rounded-2xl bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg">
             <Link href={href} className="block focus:outline-none">

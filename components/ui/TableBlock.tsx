@@ -1,3 +1,9 @@
+const ui = {
+  pl: {
+    defaultTableLabel: 'Tabela',
+  },
+} as const;
+
 type Align = 'left' | 'center' | 'right';
 
 type TableBlockProps = {
@@ -11,9 +17,10 @@ type TableBlockProps = {
 };
 
 export default function TableBlock({ caption, note, columns, rows, striped = true, compact = false, className = '' }: TableBlockProps) {
+  const t = ui.pl;
   return (
     <figure className={`not-prose`}>
-      <div className={`overflow-x-auto rounded-2xl border border-black/10 bg-white shadow-sm ${className}`} role="region" aria-label={caption || 'Tabela'}>
+      <div className={`overflow-x-auto rounded-2xl border border-black/10 bg-white shadow-sm ${className}`} role="region" aria-label={caption || t.defaultTableLabel}>
         {caption ? <div className="border-b border-black/10 px-4 py-3 text-sm font-medium text-[#1a1a1a]">{caption}</div> : null}
 
         <table className="w-full text-left">

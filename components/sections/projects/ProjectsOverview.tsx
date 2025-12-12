@@ -20,6 +20,9 @@ const ui = {
     of: 'z',
     slide: 'Slajd',
     project: 'Projekt',
+    urls: {
+      projects: '/realizacje',
+    },
   },
 } as const;
 
@@ -169,7 +172,7 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
           </h2>
         </div>
 
-        <Button link="/realizacje" aria-label={t.seeAllProjects}>
+        <Button link={t.urls.projects} aria-label={t.seeAllProjects}>
           {t.seeAllProjects}
         </Button>
       </div>

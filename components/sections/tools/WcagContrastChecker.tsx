@@ -27,6 +27,13 @@ const ui = {
     exampleLargeText: 'Przykładowy nagłówek / przycisk',
     iconPreview: 'Podgląd ikony na tle',
     resultsLabel: 'Wyniki testu kontrastu i podgląd',
+    badges: {
+      normalAA: 'AA (min. 4.5:1)',
+      normalAAA: 'AAA (min. 7:1)',
+      largeAA: 'AA (min. 3:1)',
+      largeAAA: 'AAA (min. 4.5:1)',
+      iconAA: 'AA (min. 3:1)',
+    },
   },
 } as const;
 
@@ -258,8 +265,8 @@ export default function WcagContrastChecker() {
             <div className="flex items-center justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">{t.normalText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
-                <Badge ok={!!result.ratio && result.normalText.AA} label="AA (min. 4.5:1)" />
-                <Badge ok={!!result.ratio && result.normalText.AAA} label="AAA (min. 7:1)" />
+                <Badge ok={!!result.ratio && result.normalText.AA} label={t.badges.normalAA} />
+                <Badge ok={!!result.ratio && result.normalText.AAA} label={t.badges.normalAAA} />
               </div>
             </div>
             <div
@@ -277,8 +284,8 @@ export default function WcagContrastChecker() {
             <div className="items_center flex justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">{t.largeText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
-                <Badge ok={!!result.ratio && result.largeText.AA} label="AA (min. 3:1)" />
-                <Badge ok={!!result.ratio && result.largeText.AAA} label="AAA (min. 4.5:1)" />
+                <Badge ok={!!result.ratio && result.largeText.AA} label={t.badges.largeAA} />
+                <Badge ok={!!result.ratio && result.largeText.AAA} label={t.badges.largeAAA} />
               </div>
             </div>
             <div
@@ -296,7 +303,7 @@ export default function WcagContrastChecker() {
             <div className="flex items-center justify-between gap-2">
               <p className="text-sm! font-semibold uppercase">{t.icon}</p>
               <div className="flex flex-wrap items-center gap-1.5">
-                <Badge ok={!!result.ratio && result.uiGraphics.AA} label="AA (min. 3:1)" />
+                <Badge ok={!!result.ratio && result.uiGraphics.AA} label={t.badges.iconAA} />
               </div>
             </div>
             <div className="flex items-center gap-3">

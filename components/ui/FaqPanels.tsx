@@ -19,7 +19,14 @@ interface FaqPanelsProps {
   openByDefault?: number;
 }
 
-export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle = 'FAQ', generateSchema = true, pageUrl, openByDefault = 0 }: FaqPanelsProps) {
+const ui = {
+  pl: {
+    defaultTitle: 'Najczęstsze pytania',
+    defaultSubtitle: 'FAQ',
+  },
+} as const;
+
+export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle = ui.pl.defaultSubtitle, generateSchema = true, pageUrl, openByDefault = 0 }: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();

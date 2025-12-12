@@ -3,6 +3,12 @@ import Image from 'next/image';
 import Wrapper from '../Wrapper';
 import Button from '../Button';
 
+const ui = {
+  pl: {
+    sectionActions: 'Działania sekcji',
+  },
+} as const;
+
 interface SectionStepItem {
   icon?: ReactNode;
   imageSrc?: string;
@@ -51,6 +57,7 @@ export default function SectionSteps({
   headingLevel = 'h2',
   showIndex = false,
 }: SectionStepsProps) {
+  const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
   const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
@@ -157,7 +164,7 @@ export default function SectionSteps({
         </ol>
 
         {(btnOne || btnTwo) && (
-          <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" role="group" aria-label="Działania sekcji">
+          <div className="mt-6 flex flex-wrap gap-3 md:mt-8 lg:mt-10" role="group" aria-label={t.sectionActions}>
             {btnOne && (
               <Button arrow variant={btnOneVariant} link={btnOneLink}>
                 {btnOne}

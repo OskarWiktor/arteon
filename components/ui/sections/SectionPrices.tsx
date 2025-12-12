@@ -2,6 +2,18 @@ import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
 import Button from '../Button';
 
+const ui = {
+  pl: {
+    defaultTitle: 'Przykładowe ceny',
+    defaultSubtitle: 'Pakiety',
+    defaultLegalNote: 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
+    featuredPlan: 'Wyróżniony plan',
+    planActions: 'Działania planu',
+    noteAriaLabel: 'Informacja',
+    includedInPlan: 'Zawarte w planie',
+  },
+} as const;
+
 export type SectionPricesPlan = {
   name: string;
   platform?: string;
@@ -33,12 +45,13 @@ export type SectionPricesProps = {
 
 export default function SectionPrices({
   id = 'pricing',
-  title = 'Przykładowe ceny',
-  subtitle = 'Pakiety',
+  title = ui.pl.defaultTitle,
+  subtitle = ui.pl.defaultSubtitle,
   plans = [],
   note,
-  legalNote = 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
+  legalNote = ui.pl.defaultLegalNote,
 }: SectionPricesProps) {
+  const t = ui.pl;
   const headingId = `${id}-heading`;
   const subtitleId = subtitle ? `${id}-subtitle` : undefined;
   const describedBy = subtitleId || undefined;
@@ -80,7 +93,7 @@ export default function SectionPrices({
               ].join(' ')}
             >
               {plan.badgeLabel && (
-                <div className="absolute -top-3 left-4 rounded-full bg-neutral-900 px-3 py-1 text-xs font-semibold tracking-wider text-white shadow-sm" aria-label="Wyróżniony plan">
+                <div className="absolute -top-3 left-4 rounded-full bg-neutral-900 px-3 py-1 text-xs font-semibold tracking-wider text-white shadow-sm" aria-label={t.featuredPlan}>
                   {plan.badgeLabel}
                 </div>
               )}
@@ -110,7 +123,7 @@ export default function SectionPrices({
                       <span
                         className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300 group-hover:ring-neutral-400"
                         aria-hidden="true"
-                        title="Zawarte w planie"
+                        title={t.includedInPlan}
                       >
                         <RiCheckFill className="h-3.5 w-3.5" />
                       </span>
@@ -121,7 +134,7 @@ export default function SectionPrices({
               </div>
 
               {(plan.btnOne && plan.btnOneLink) || (plan.btnTwo && plan.btnTwoLink) ? (
-                <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label={`Działania planu: ${plan.name}`}>
+                <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label={`${t.planActions}: ${plan.name}`}>
                   {plan.btnOne && plan.btnOneLink && (
                     <Button link={plan.btnOneLink} variant={plan.lastPlan ? 'dark' : 'accent'} arrow>
                       {plan.btnOne}
@@ -140,7 +153,7 @@ export default function SectionPrices({
       </div>
 
       {note && (
-        <div className="mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label="Informacja">
+        <div className="mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label={t.noteAriaLabel}>
           <div className="text-[15px] leading-relaxed text-[#3a3a3a]">{note.text}</div>
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">

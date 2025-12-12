@@ -25,6 +25,9 @@ const ui = {
     article: 'Artykuł',
     readingTime: 'min czytania',
     publicationDate: 'Data publikacji',
+    urls: {
+      education: '/edukacja',
+    },
   },
 } as const;
 
@@ -166,7 +169,7 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
     'transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none ' +
     'focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
 
-  const allArticlesHref = categorySlug ? `/edukacja/${categorySlug}` : '/edukacja';
+  const allArticlesHref = categorySlug ? `${t.urls.education}/${categorySlug}` : t.urls.education;
 
   return (
     <section className="w-full" aria-labelledby="articles-heading">
@@ -196,7 +199,7 @@ export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defa
         >
           {finalArticles.map((a, i) => {
             const catSlug = getPrimaryCategorySlug(a);
-            const href = `/edukacja/${catSlug}/${a.slug}`;
+            const href = `${t.urls.education}/${catSlug}/${a.slug}`;
 
             return (
               <article

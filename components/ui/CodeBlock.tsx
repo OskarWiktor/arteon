@@ -3,6 +3,15 @@
 import { useMemo, useState } from 'react';
 import { FiCopy, FiCheck } from 'react-icons/fi';
 
+const ui = {
+  pl: {
+    copyCode: 'Skopiuj kod',
+    copied: 'Skopiowano',
+    copy: 'Kopiuj',
+    codeFragment: 'Fragment kodu',
+  },
+} as const;
+
 type CodeBlockProps = {
   code: string;
   language?: string;
@@ -15,6 +24,7 @@ type CodeBlockProps = {
 };
 
 export default function CodeBlock({ code, language, filename, caption, showLineNumbers = true, wrap = false, highlightLines = [], className = '' }: CodeBlockProps) {
+  const t = ui.pl;
   const [copied, setCopied] = useState(false);
 
   const lines = useMemo(() => code.replace(/\n$/, '').split('\n'), [code]);
@@ -37,16 +47,16 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
           type="button"
           onClick={onCopy}
           className="inline-flex items-center gap-2 rounded-md border border-white/10 px-2 py-1 text-xs text-white/80 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-          aria-label="Skopiuj kod"
+          aria-label={t.copyCode}
         >
-          {copied ? <FiCheck /> : <FiCopy />} {copied ? 'Skopiowano' : 'Kopiuj'}
+          {copied ? <FiCheck /> : <FiCopy />} {copied ? t.copied : t.copy}
         </button>
       </div>
 
       <pre
         className={`relative overflow-x-auto rounded-b-xl p-4 text-[13px] leading-relaxed ${wrap ? 'break-words whitespace-pre-wrap' : 'whitespace-pre'}`}
         role="region"
-        aria-label={filename || 'Fragment kodu'}
+        aria-label={filename || t.codeFragment}
       >
         <code className="grid grid-cols-[auto_1fr] gap-x-4">
           {lines.map((ln, i) => {

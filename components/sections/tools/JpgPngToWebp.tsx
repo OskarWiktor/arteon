@@ -58,6 +58,17 @@ const ui = {
       remove: 'Usuń',
       reconvert: 'Konwertuj ponownie',
     },
+    queueListAriaLabel: 'Lista plików w kolejce',
+    queueFilesHeading: 'Pliki w kolejce',
+    downloaded: 'Pobrano',
+    readyCount: 'Gotowe',
+    pendingCount: 'W trakcie / oczekujące',
+    sizeBefore: 'Wielkość przed:',
+    sizeAfter: 'Wielkość po:',
+    biggerThanOriginal: '(większy niż oryginał - spróbuj niższej jakości)',
+    usedQuality: 'Użyta jakość WebP:',
+    totalInputSize: 'Łączny rozmiar wejściowy:',
+    totalOutputSize: 'Łączny rozmiar po konwersji:',
   },
 } as const;
 
@@ -538,12 +549,12 @@ export default function JpgPngToWebp() {
             {totalInput > 0 && (
               <div className="mt-6">
                 <p className="text-sm! text-[#5e5e5e]">
-                  Łączny rozmiar wejściowy: <strong>{formatBytes(totalInput)}</strong>
+                  {t.totalInputSize} <strong>{formatBytes(totalInput)}</strong>
                 </p>
                 {totalOutput > 0 && (
                   <>
                     <p className="text-sm! text-[#5e5e5e]">
-                      Łączny rozmiar po konwersji: <strong>{formatBytes(totalOutput)}</strong>
+                      {t.totalOutputSize} <strong>{formatBytes(totalOutput)}</strong>
                     </p>
                     <p className="text-sm! text-[#5e5e5e]">
                       {totalSaved >= 0 ? (
@@ -578,12 +589,12 @@ export default function JpgPngToWebp() {
         </form>
       </section>
 
-      <section aria-label="Lista plików w kolejce" className="space-y-2 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+      <section aria-label={t.queueListAriaLabel} className="space-y-2 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
         <div className="flex items-center justify-between gap-2">
-          <h2 className="h6">Pliki w kolejce</h2>
+          <h2 className="h6">{t.queueFilesHeading}</h2>
           {files.length > 0 && (
             <p className="text-sm! text-[#5e5e5e]">
-              Gotowe: {readyCount} · W trakcie / oczekujące: {pendingCount}
+              {t.readyCount}: {readyCount} · {t.pendingCount}: {pendingCount}
             </p>
           )}
         </div>
@@ -628,10 +639,10 @@ export default function JpgPngToWebp() {
                         {item.file.name}
                       </p>
                       <p className="text-xs! text-[#5e5e5e]">
-                        Wielkość przed: {formatBytes(item.inputSize)}
+                        {t.sizeBefore} {formatBytes(item.inputSize)}
                         {item.outputSize != null && (
                           <>
-                            {' · '}Wielkość po: {formatBytes(item.outputSize)}{' '}
+                            {' · '}{t.sizeAfter} {formatBytes(item.outputSize)}{' '}
                             {diffPercent !== null && (
                               <>
                                 {' ('}
@@ -639,11 +650,11 @@ export default function JpgPngToWebp() {
                                 {')'}
                               </>
                             )}
-                            {isBigger && <span className="ml-1 text-[11px] text-amber-700">(większy niż oryginał - spróbuj niższej jakości)</span>}
+                            {isBigger && <span className="ml-1 text-[11px] text-amber-700">{t.biggerThanOriginal}</span>}
                           </>
                         )}
                       </p>
-                      {item.usedQuality && <p className="text-[11px] text-[#5e5e5e]">Użyta jakość WebP: {item.usedQuality}%</p>}
+                      {item.usedQuality && <p className="text-[11px] text-[#5e5e5e]">{t.usedQuality} {item.usedQuality}%</p>}
                       {item.error && <p className="mt-1 text-xs! text-red-600">{item.error}</p>}
                     </div>
                   </div>
@@ -653,7 +664,7 @@ export default function JpgPngToWebp() {
 
                     {item.status === 'done' && item.downloadUrl && (
                       <button type="button" onClick={() => handleDownloadSingle(item.id)} className="cursor-pointer rounded-full border border-black/15 bg-white px-3 py-1 text-[11px]! font-medium">
-                        {item.downloaded ? 'Pobrano' : t.actions.download}
+                        {item.downloaded ? t.downloaded : t.actions.download}
                       </button>
                     )}
 

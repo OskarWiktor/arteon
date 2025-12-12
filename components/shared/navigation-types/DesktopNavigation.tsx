@@ -23,12 +23,89 @@ const ui = {
       marketing: 'Marketing',
       graphicProjects: 'Projekty graficzne',
       contentCreation: 'Tworzenie treści',
+      items: {
+        websites: 'Strony internetowe',
+        websitesDesc: 'WCAG 2.2 AA, projekt na miarę',
+        shops: 'Sklepy internetowe',
+        shopsDesc: 'Płatności, integracje, automatyzacje',
+        blogs: 'Blogi internetowe',
+        blogsDesc: 'Architektura treści i CMS',
+        auditSeo: 'Audyt SEO',
+        auditSeoDesc: 'Diagnostyka i priorytety działań',
+        optimizationSeo: 'Optymalizacja SEO',
+        optimizationSeoDesc: 'On-page, technikalia, treści',
+        positioning: 'Pozycjonowanie stron',
+        positioningDesc: 'Strategia, linki, wzrost fraz',
+        priceList: 'Cenniki',
+        visualIdentity: 'Identyfikacja wizualna',
+        loyaltyCard: 'Karty lojalnościowe',
+        catalogs: 'Katalogi',
+        coupons: 'Kupony i vouchery',
+        websiteDesign: 'Projekt graficzny strony',
+        logo: 'Logo',
+        restaurantMenu: 'Menu restauracji',
+        companyClothing: 'Odzież firmowa',
+        companyPaper: 'Papier firmowy',
+        socialTemplates: 'Szablony social media',
+        offerFolder: 'Teczki ofertowe',
+        flyers: 'Ulotki',
+        businessCards: 'Wizytówki',
+        contentCreation: 'Tworzenie treści',
+        contentCreationDesc: 'Teksty na strony, blog, oferty',
+      },
     },
     tools: {
       images: 'Obrazy i favicony',
       meta: 'Meta i SEO',
       email: 'E-mail i komunikacja',
       colors: 'Kolory i dostępność',
+      items: {
+        jpgToWebp: 'Konwerter JPG/PNG na WebP',
+        imageResize: 'Kadrowanie i zmiana rozmiaru',
+        favicon: 'Generator favicon',
+        metaCounter: 'Licznik meta title i description',
+        emailSignature: 'Generator stopki mailowej HTML',
+        contrastChecker: 'Tester kontrastu kolorów WCAG',
+        colorPalette: 'Generator palet kolorów',
+      },
+    },
+    urls: {
+      realizacje: '/realizacje',
+      uslugi: '/uslugi',
+      oNas: '/o-nas',
+      edukacja: '/edukacja',
+      narzedzia: '/narzedzia',
+      kontakt: '/kontakt',
+      websites: '/uslugi/strony-internetowe',
+      shops: '/uslugi/sklepy-internetowe',
+      blogs: '/uslugi/blogi-internetowe',
+      marketing: '/uslugi/marketing',
+      auditSeo: '/uslugi/marketing/audyt-seo',
+      optimizationSeo: '/uslugi/marketing/optymalizacja-seo',
+      positioning: '/uslugi/marketing/pozycjonowanie-stron',
+      graphicProjects: '/uslugi/projekty-graficzne',
+      priceList: '/uslugi/projekty-graficzne/projekt-cennika',
+      visualIdentity: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+      loyaltyCard: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+      catalogs: '/uslugi/projekty-graficzne/projekt-katalogu',
+      coupons: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+      websiteDesign: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
+      logo: '/uslugi/projekty-graficzne/projekt-logo',
+      restaurantMenu: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+      companyClothing: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+      companyPaper: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+      socialTemplates: '/uslugi/projekty-graficzne/szablony-postow-social-media',
+      offerFolder: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+      flyers: '/uslugi/projekty-graficzne/projekt-ulotki',
+      businessCards: '/uslugi/projekty-graficzne/projekt-wizytowki',
+      contentCreation: '/uslugi/tworzenie-tresci',
+      jpgToWebp: '/narzedzia/jpg-png-na-webp-bez-limitu',
+      imageResize: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
+      favicon: '/narzedzia/darmowy-generator-favicon-ico',
+      metaCounter: '/narzedzia/licznik-dlugosci-meta-title-i-description',
+      emailSignature: '/narzedzia/darmowy-generator-stopki-mailowej',
+      contrastChecker: '/narzedzia/tester-kontrastu-kolorow-wcag',
+      colorPalette: '/narzedzia/generator-palet-kolorow-online',
     },
   },
 } as const;
@@ -132,12 +209,12 @@ export default function DesktopNavigation() {
   }, [pathname]);
 
   const navigationItems = [
-    { href: '/realizacje', label: t.realizacje, exact: true },
-    { href: '/uslugi', label: t.uslugi },
-    { href: '/o-nas', label: t.oNas },
-    { href: '/edukacja', label: t.edukacja },
-    { href: '/narzedzia', label: t.narzedzia },
-    { href: '/kontakt', label: t.kontakt },
+    { href: t.urls.realizacje, label: t.realizacje, exact: true },
+    { href: t.urls.uslugi, label: t.uslugi },
+    { href: t.urls.oNas, label: t.oNas },
+    { href: t.urls.edukacja, label: t.edukacja },
+    { href: t.urls.narzedzia, label: t.narzedzia },
+    { href: t.urls.kontakt, label: t.kontakt },
   ];
 
   const offerSections: OfferSection[] = [
@@ -145,47 +222,47 @@ export default function DesktopNavigation() {
       key: 'witryny',
       title: t.sections.websites,
       items: [
-        { href: '/uslugi/strony-internetowe', icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />, title: 'Strony internetowe', desc: 'WCAG 2.2 AA, projekt na miarę' },
-        { href: '/uslugi/sklepy-internetowe', icon: <RiShoppingCartLine className="h-6 w-6 text-slate-500" />, title: 'Sklepy internetowe', desc: 'Płatności, integracje, automatyzacje' },
-        { href: '/uslugi/blogi-internetowe', icon: <RiArticleLine className="h-6 w-6 text-slate-500" />, title: 'Blogi internetowe', desc: 'Architektura treści i CMS' },
+        { href: t.urls.websites, icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />, title: t.sections.items.websites, desc: t.sections.items.websitesDesc },
+        { href: t.urls.shops, icon: <RiShoppingCartLine className="h-6 w-6 text-slate-500" />, title: t.sections.items.shops, desc: t.sections.items.shopsDesc },
+        { href: t.urls.blogs, icon: <RiArticleLine className="h-6 w-6 text-slate-500" />, title: t.sections.items.blogs, desc: t.sections.items.blogsDesc },
       ],
     },
     {
       key: 'marketing',
       title: t.sections.marketing,
-      hubHref: '/uslugi/marketing',
+      hubHref: t.urls.marketing,
       items: [
-        { href: '/uslugi/marketing/audyt-seo', icon: <RiSearchLine className="h-6 w-6 text-slate-500" />, title: 'Audyt SEO', desc: 'Diagnostyka i priorytety działań' },
-        { href: '/uslugi/marketing/optymalizacja-seo', icon: <RiPriceTag3Line className="h-6 w-6 text-slate-500" />, title: 'Optymalizacja SEO', desc: 'On-page, technikalia, treści' },
-        { href: '/uslugi/marketing/pozycjonowanie-stron', icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" />, title: 'Pozycjonowanie stron', desc: 'Strategia, linki, wzrost fraz' },
+        { href: t.urls.auditSeo, icon: <RiSearchLine className="h-6 w-6 text-slate-500" />, title: t.sections.items.auditSeo, desc: t.sections.items.auditSeoDesc },
+        { href: t.urls.optimizationSeo, icon: <RiPriceTag3Line className="h-6 w-6 text-slate-500" />, title: t.sections.items.optimizationSeo, desc: t.sections.items.optimizationSeoDesc },
+        { href: t.urls.positioning, icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" />, title: t.sections.items.positioning, desc: t.sections.items.positioningDesc },
       ],
     },
     {
       key: 'grafika',
       title: t.sections.graphicProjects,
-      hubHref: '/uslugi/projekty-graficzne',
+      hubHref: t.urls.graphicProjects,
       items: [
-        { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki', icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Identyfikacja wizualna', icon: <RiPantoneLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Karty lojalnościowe', icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi', icon: <RiBookletLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony i vouchery', icon: <RiCoupon2Line className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony', icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo', icon: <RiQuillPenLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji', icon: <RiRestaurant2Line className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa', icon: <RiTShirt2Line className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy', icon: <RiFileTextLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony social media', icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe', icon: <RiFolderOpenLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki', icon: <RiFileList2Line className="h-5 w-5 text-slate-500" /> },
-        { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki', icon: <RiIdCardLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.priceList, title: t.sections.items.priceList, icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.visualIdentity, title: t.sections.items.visualIdentity, icon: <RiPantoneLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.loyaltyCard, title: t.sections.items.loyaltyCard, icon: <RiPriceTag3Line className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.catalogs, title: t.sections.items.catalogs, icon: <RiBookletLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.coupons, title: t.sections.items.coupons, icon: <RiCoupon2Line className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.websiteDesign, title: t.sections.items.websiteDesign, icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.logo, title: t.sections.items.logo, icon: <RiQuillPenLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.restaurantMenu, title: t.sections.items.restaurantMenu, icon: <RiRestaurant2Line className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.companyClothing, title: t.sections.items.companyClothing, icon: <RiTShirt2Line className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.companyPaper, title: t.sections.items.companyPaper, icon: <RiFileTextLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.socialTemplates, title: t.sections.items.socialTemplates, icon: <RiLayoutLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.offerFolder, title: t.sections.items.offerFolder, icon: <RiFolderOpenLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.flyers, title: t.sections.items.flyers, icon: <RiFileList2Line className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.businessCards, title: t.sections.items.businessCards, icon: <RiIdCardLine className="h-5 w-5 text-slate-500" /> },
       ],
     },
     {
       key: 'tresc',
       title: t.sections.contentCreation,
-      hubHref: '/uslugi/tworzenie-tresci',
-      items: [{ href: '/uslugi/tworzenie-tresci', icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />, title: 'Tworzenie treści', desc: 'Teksty na strony, blog, oferty' }],
+      hubHref: t.urls.contentCreation,
+      items: [{ href: t.urls.contentCreation, icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />, title: t.sections.items.contentCreation, desc: t.sections.items.contentCreationDesc }],
     },
   ];
 
@@ -194,9 +271,9 @@ export default function DesktopNavigation() {
       key: 'obrazy',
       title: t.tools.images,
       items: [
-        { href: '/narzedzia/jpg-png-na-webp-bez-limitu', title: 'Konwerter JPG/PNG na WebP', icon: <RiImageEditLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', title: 'Kadrowanie i zmiana rozmiaru', icon: <RiCropLine className="h-5 w-5 text-slate-500" /> },
-        { href: '/narzedzia/darmowy-generator-favicon-ico', title: 'Generator favicon', icon: <RiAppsLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.jpgToWebp, title: t.tools.items.jpgToWebp, icon: <RiImageEditLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.imageResize, title: t.tools.items.imageResize, icon: <RiCropLine className="h-5 w-5 text-slate-500" /> },
+        { href: t.urls.favicon, title: t.tools.items.favicon, icon: <RiAppsLine className="h-5 w-5 text-slate-500" /> },
       ],
     },
     {
@@ -204,8 +281,8 @@ export default function DesktopNavigation() {
       title: t.tools.meta,
       items: [
         {
-          href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
-          title: 'Licznik meta title i description',
+          href: t.urls.metaCounter,
+          title: t.tools.items.metaCounter,
           icon: <RiFileTextLine className="h-5 w-5 text-slate-500" />,
         },
       ],
@@ -215,8 +292,8 @@ export default function DesktopNavigation() {
       title: t.tools.email,
       items: [
         {
-          href: '/narzedzia/darmowy-generator-stopki-mailowej',
-          title: 'Generator stopki mailowej HTML',
+          href: t.urls.emailSignature,
+          title: t.tools.items.emailSignature,
           icon: <RiMailLine className="h-5 w-5 text-slate-500" />,
         },
       ],
@@ -226,13 +303,13 @@ export default function DesktopNavigation() {
       title: t.tools.colors,
       items: [
         {
-          href: '/narzedzia/tester-kontrastu-kolorow-wcag',
-          title: 'Tester kontrastu kolorów WCAG',
+          href: t.urls.contrastChecker,
+          title: t.tools.items.contrastChecker,
           icon: <RiContrast2Line className="h-5 w-5 text-slate-500" />,
         },
         {
-          href: '/narzedzia/generator-palet-kolorow-online',
-          title: 'Generator palet kolorów',
+          href: t.urls.colorPalette,
+          title: t.tools.items.colorPalette,
           icon: <RiPaletteLine className="h-5 w-5 text-slate-500" />,
         },
       ],
@@ -315,7 +392,7 @@ export default function DesktopNavigation() {
               return (
                 <li ref={offerLiRef} className="group relative flex items-center gap-0.5" key={label}>
                   <Link
-                    href="/uslugi"
+                    href={t.urls.uslugi}
                     aria-current={isActive ? 'page' : undefined}
                     className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                       isActive ? 'font-semibold text-[#080808]' : ''
@@ -398,7 +475,7 @@ export default function DesktopNavigation() {
               return (
                 <li ref={toolsLiRef} className="group relative flex items-center gap-0.5" key={label}>
                   <Link
-                    href="/narzedzia"
+                    href={t.urls.narzedzia}
                     aria-current={isActive ? 'page' : undefined}
                     className={`hover-underline rounded text-base font-medium text-[#2B2B2B] focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                       isActive ? 'font-semibold text-[#080808]' : ''

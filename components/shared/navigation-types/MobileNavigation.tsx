@@ -16,6 +16,88 @@ const ui = {
     instagramLabel: 'Firmowy Instagram',
     facebookLabel: 'Firmowy Facebook',
     bookConsultation: 'Umów konsultację',
+    nav: {
+      realizacje: 'Realizacje',
+      oNas: 'O nas',
+      edukacja: 'Edukacja',
+      narzedzia: 'Narzędzia',
+      kontakt: 'Kontakt',
+    },
+    sections: {
+      websites: {
+        title: 'Witryny',
+        items: {
+          websites: 'Strony internetowe',
+          shops: 'Sklepy internetowe',
+          blogs: 'Blogi internetowe',
+        },
+      },
+      marketing: {
+        title: 'Marketing',
+        items: {
+          auditSeo: 'Audyt SEO',
+          optimizationSeo: 'Optymalizacja SEO',
+          positioning: 'Pozycjonowanie stron',
+        },
+      },
+      graphicProjects: {
+        title: 'Projekty graficzne',
+        items: {
+          priceList: 'Cenniki',
+          visualIdentity: 'Identyfikacja wizualna',
+          loyaltyCard: 'Karty lojalnościowe',
+          catalogs: 'Katalogi',
+          coupons: 'Kupony i vouchery',
+          websiteDesign: 'Projekt graficzny strony',
+          logo: 'Logo',
+          restaurantMenu: 'Menu restauracji',
+          companyClothing: 'Odzież firmowa',
+          companyPaper: 'Papier firmowy',
+          socialTemplates: 'Szablony social media',
+          offerFolder: 'Teczki ofertowe',
+          flyers: 'Ulotki',
+          businessCards: 'Wizytówki',
+        },
+      },
+      contentCreation: {
+        title: 'Tworzenie treści',
+        items: {
+          contentCreation: 'Tworzenie treści',
+        },
+      },
+    },
+    urls: {
+      realizacje: '/realizacje',
+      oNas: '/o-nas',
+      edukacja: '/edukacja',
+      narzedzia: '/narzedzia',
+      kontakt: '/kontakt',
+      regulamin: '/regulamin',
+      privacy: '/polityka-prywatnosci',
+      websites: '/uslugi/strony-internetowe',
+      shops: '/uslugi/sklepy-internetowe',
+      blogs: '/uslugi/blogi-internetowe',
+      marketing: '/uslugi/marketing',
+      auditSeo: '/uslugi/marketing/audyt-seo',
+      optimizationSeo: '/uslugi/marketing/optymalizacja-seo',
+      positioning: '/uslugi/marketing/pozycjonowanie-stron',
+      graphicProjects: '/uslugi/projekty-graficzne',
+      priceList: '/uslugi/projekty-graficzne/projekt-cennika',
+      visualIdentity: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+      loyaltyCard: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+      catalogs: '/uslugi/projekty-graficzne/projekt-katalogu',
+      coupons: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+      websiteDesign: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
+      logo: '/uslugi/projekty-graficzne/projekt-logo',
+      restaurantMenu: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+      companyClothing: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+      companyPaper: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+      socialTemplates: '/uslugi/projekty-graficzne/szablony-postow-social-media',
+      offerFolder: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+      flyers: '/uslugi/projekty-graficzne/projekt-ulotki',
+      businessCards: '/uslugi/projekty-graficzne/projekt-wizytowki',
+      contentCreation: '/uslugi/tworzenie-tresci',
+    },
   },
 } as const;
 
@@ -44,13 +126,16 @@ import {
 
 type NavItem = { href: string; label: string; exact?: boolean };
 
-const NAV: NavItem[] = [
-  { href: '/realizacje', label: 'Realizacje', exact: true },
-  { href: '/o-nas', label: 'O nas' },
-  { href: '/edukacja', label: 'Edukacja' },
-  { href: '/narzedzia', label: 'Narzędzia' },
-  { href: '/kontakt', label: 'Kontakt' },
-];
+function getNavItems(): NavItem[] {
+  const t = ui.pl;
+  return [
+    { href: t.urls.realizacje, label: t.nav.realizacje, exact: true },
+    { href: t.urls.oNas, label: t.nav.oNas },
+    { href: t.urls.edukacja, label: t.nav.edukacja },
+    { href: t.urls.narzedzia, label: t.nav.narzedzia },
+    { href: t.urls.kontakt, label: t.nav.kontakt },
+  ];
+}
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {
@@ -60,54 +145,57 @@ type Section = {
   items: SectionLink[];
 };
 
-const SECTIONS: Section[] = [
-  {
-    key: 'witryny',
-    title: 'Witryny',
-    items: [
-      { href: '/uslugi/strony-internetowe', title: 'Strony internetowe', icon: <RiCodeSSlashFill aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe', icon: <RiShoppingCartLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe', icon: <RiArticleLine aria-hidden className="h-5 w-5" /> },
-    ],
-  },
-  {
-    key: 'marketing',
-    title: 'Marketing',
-    hubHref: '/uslugi/marketing',
-    items: [
-      { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO', icon: <RiSearchLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO', icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron', icon: <RiMegaphoneLine aria-hidden className="h-5 w-5" /> },
-    ],
-  },
-  {
-    key: 'grafika',
-    title: 'Projekty graficzne',
-    hubHref: '/uslugi/projekty-graficzne',
-    items: [
-      { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki', icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', title: 'Identyfikacja wizualna', icon: <RiPantoneLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', title: 'Karty lojalnościowe', icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-katalogu', title: 'Katalogi', icon: <RiBookletLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', title: 'Kupony i vouchery', icon: <RiCoupon2Line aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-graficzny-strony', title: 'Projekt graficzny strony', icon: <RiLayoutLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-logo', title: 'Logo', icon: <RiQuillPenLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji', icon: <RiRestaurant2Line aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa', icon: <RiTShirt2Line aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy', icon: <RiFileTextLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony social media', icon: <RiLayoutLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe', icon: <RiFolderOpenLine aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki', icon: <RiFileList2Line aria-hidden className="h-5 w-5" /> },
-      { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki', icon: <RiIdCardLine aria-hidden className="h-5 w-5" /> },
-    ],
-  },
-  {
-    key: 'tresc',
-    title: 'Tworzenie treści',
-    hubHref: '/uslugi/tworzenie-tresci',
-    items: [{ href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści', icon: <RiFileTextLine aria-hidden className="h-5 w-5" /> }],
-  },
-];
+function getSections(): Section[] {
+  const t = ui.pl;
+  return [
+    {
+      key: 'witryny',
+      title: t.sections.websites.title,
+      items: [
+        { href: t.urls.websites, title: t.sections.websites.items.websites, icon: <RiCodeSSlashFill aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.shops, title: t.sections.websites.items.shops, icon: <RiShoppingCartLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.blogs, title: t.sections.websites.items.blogs, icon: <RiArticleLine aria-hidden className="h-5 w-5" /> },
+      ],
+    },
+    {
+      key: 'marketing',
+      title: t.sections.marketing.title,
+      hubHref: t.urls.marketing,
+      items: [
+        { href: t.urls.auditSeo, title: t.sections.marketing.items.auditSeo, icon: <RiSearchLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.optimizationSeo, title: t.sections.marketing.items.optimizationSeo, icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.positioning, title: t.sections.marketing.items.positioning, icon: <RiMegaphoneLine aria-hidden className="h-5 w-5" /> },
+      ],
+    },
+    {
+      key: 'grafika',
+      title: t.sections.graphicProjects.title,
+      hubHref: t.urls.graphicProjects,
+      items: [
+        { href: t.urls.priceList, title: t.sections.graphicProjects.items.priceList, icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.visualIdentity, title: t.sections.graphicProjects.items.visualIdentity, icon: <RiPantoneLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.loyaltyCard, title: t.sections.graphicProjects.items.loyaltyCard, icon: <RiPriceTag3Line aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.catalogs, title: t.sections.graphicProjects.items.catalogs, icon: <RiBookletLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.coupons, title: t.sections.graphicProjects.items.coupons, icon: <RiCoupon2Line aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.websiteDesign, title: t.sections.graphicProjects.items.websiteDesign, icon: <RiLayoutLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.logo, title: t.sections.graphicProjects.items.logo, icon: <RiQuillPenLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.restaurantMenu, title: t.sections.graphicProjects.items.restaurantMenu, icon: <RiRestaurant2Line aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.companyClothing, title: t.sections.graphicProjects.items.companyClothing, icon: <RiTShirt2Line aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.companyPaper, title: t.sections.graphicProjects.items.companyPaper, icon: <RiFileTextLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.socialTemplates, title: t.sections.graphicProjects.items.socialTemplates, icon: <RiLayoutLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.offerFolder, title: t.sections.graphicProjects.items.offerFolder, icon: <RiFolderOpenLine aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.flyers, title: t.sections.graphicProjects.items.flyers, icon: <RiFileList2Line aria-hidden className="h-5 w-5" /> },
+        { href: t.urls.businessCards, title: t.sections.graphicProjects.items.businessCards, icon: <RiIdCardLine aria-hidden className="h-5 w-5" /> },
+      ],
+    },
+    {
+      key: 'tresc',
+      title: t.sections.contentCreation.title,
+      hubHref: t.urls.contentCreation,
+      items: [{ href: t.urls.contentCreation, title: t.sections.contentCreation.items.contentCreation, icon: <RiFileTextLine aria-hidden className="h-5 w-5" /> }],
+    },
+  ];
+}
 
 function Portal({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
@@ -120,6 +208,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
   const t = ui.pl;
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
+  const NAV = getNavItems();
+  const SECTIONS = getSections();
 
   const [panelWidth, setPanelWidth] = useState(0);
   useEffect(() => {
@@ -325,8 +415,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <ul className="mb-2 flex flex-col gap-1">
                 {[
-                  { href: '/regulamin', label: t.terms },
-                  { href: '/polityka-prywatnosci', label: t.privacy },
+                  { href: t.urls.regulamin, label: t.terms },
+                  { href: t.urls.privacy, label: t.privacy },
                 ].map(({ href, label }) => (
                   <li key={label}>
                     <Link
@@ -365,7 +455,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
                   <div className="flex items-center gap-2">
                     <Link
-                      href="/kontakt"
+                      href={t.urls.kontakt}
                       onClick={() => setIsOpen(false)}
                       className="rounded-2xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >

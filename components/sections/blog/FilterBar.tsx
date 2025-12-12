@@ -8,6 +8,9 @@ const ui = {
     filters: 'Filtry artykułów',
     categories: 'Kategorie artykułów',
     all: 'Wszystko',
+    urls: {
+      education: '/edukacja',
+    },
   },
 } as const;
 
@@ -16,20 +19,20 @@ type Cat = { label: string; slug: string; count: number };
 export default function FilterBar({ cats, active }: { cats: Cat[]; active?: string }) {
   const t = ui.pl;
   const pathname = usePathname();
-  const isRoot = pathname === '/edukacja';
+  const isRoot = pathname === t.urls.education;
 
   return (
     <>
       <h2 className="reveal-animation mb-4">{t.filters}</h2>
       <nav aria-label={t.categories} className="flex flex-wrap gap-2 pb-6 md:pb-8 lg:pb-10">
-        <Button variant={isRoot ? 'accent' : 'normal'} link="/edukacja" size="small" aria-current={isRoot ? 'page' : undefined}>
+        <Button variant={isRoot ? 'accent' : 'normal'} link={t.urls.education} size="small" aria-current={isRoot ? 'page' : undefined}>
           {t.all}
         </Button>
 
         {cats.map((c) => {
           const isActive = active === c.slug;
           return (
-            <Button size="small" key={c.slug} variant={isActive ? 'accent' : 'normal'} link={`/edukacja/${c.slug}`} aria-current={isActive ? 'page' : undefined}>
+            <Button size="small" key={c.slug} variant={isActive ? 'accent' : 'normal'} link={`${t.urls.education}/${c.slug}`} aria-current={isActive ? 'page' : undefined}>
               {c.label} <span className="opacity-60">({c.count})</span>
             </Button>
           );

@@ -72,6 +72,18 @@ const ui = {
       social: 'Social media',
       web: 'WWW',
     },
+    presets: {
+      igSquare: 'Instagram - post kwadrat (1080x1080)',
+      igPortrait: 'Instagram - post pion (1080x1350)',
+      igStory: 'Instagram - story / reels (1080x1920)',
+      fbPost: 'Facebook - post (1200x630)',
+      fbCover: 'Facebook - cover strony (820x360)',
+      liPost: 'LinkedIn - post (1200x1200)',
+      liBanner: 'LinkedIn - baner profilu (1584x396)',
+      thumb: 'Miniatura artykułu (800x600)',
+      hero: 'Hero sekcji (1920x1080)',
+      bg: 'Tło sekcji (1920x1280)',
+    },
   },
 } as const;
 
@@ -83,22 +95,27 @@ type ActiveTool = 'dimensions' | 'presets' | 'shapes' | 'zoom' | 'position' | 'g
 type ShapeType = 'rect' | 'square' | 'circle';
 type ShapeAspect = '1:1' | '4:5' | '5:4' | '3:2' | '2:3' | '16:9' | '9:16';
 
-const IMAGE_PRESETS = {
-  social: [
-    { key: 'ig-square', label: 'Instagram - post kwadrat (1080x1080)', width: 1080, height: 1080 },
-    { key: 'ig-portrait', label: 'Instagram - post pion (1080x1350)', width: 1080, height: 1350 },
-    { key: 'ig-story', label: 'Instagram - story / reels (1080x1920)', width: 1080, height: 1920 },
-    { key: 'fb-post', label: 'Facebook - post (1200x630)', width: 1200, height: 630 },
-    { key: 'fb-cover', label: 'Facebook - cover strony (820x360)', width: 820, height: 360 },
-    { key: 'li-post', label: 'LinkedIn - post (1200x1200)', width: 1200, height: 1200 },
-    { key: 'li-banner', label: 'LinkedIn - baner profilu (1584x396)', width: 1584, height: 396 },
-  ],
-  web: [
-    { key: 'thumb', label: 'Miniatura artykułu (800x600)', width: 800, height: 600 },
-    { key: 'hero', label: 'Hero sekcji (1920x1080)', width: 1920, height: 1080 },
-    { key: 'bg', label: 'Tło sekcji (1920x1280)', width: 1920, height: 1280 },
-  ],
-} as const;
+function getImagePresets() {
+  const t = ui.pl;
+  return {
+    social: [
+      { key: 'ig-square', label: t.presets.igSquare, width: 1080, height: 1080 },
+      { key: 'ig-portrait', label: t.presets.igPortrait, width: 1080, height: 1350 },
+      { key: 'ig-story', label: t.presets.igStory, width: 1080, height: 1920 },
+      { key: 'fb-post', label: t.presets.fbPost, width: 1200, height: 630 },
+      { key: 'fb-cover', label: t.presets.fbCover, width: 820, height: 360 },
+      { key: 'li-post', label: t.presets.liPost, width: 1200, height: 1200 },
+      { key: 'li-banner', label: t.presets.liBanner, width: 1584, height: 396 },
+    ],
+    web: [
+      { key: 'thumb', label: t.presets.thumb, width: 800, height: 600 },
+      { key: 'hero', label: t.presets.hero, width: 1920, height: 1080 },
+      { key: 'bg', label: t.presets.bg, width: 1920, height: 1280 },
+    ],
+  } as const;
+}
+
+const IMAGE_PRESETS = getImagePresets();
 
 interface ResizeToolState {
   file: File | null;

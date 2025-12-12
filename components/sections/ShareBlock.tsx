@@ -3,6 +3,20 @@
 import { useState, useEffect } from 'react';
 import { RiFacebookCircleFill, RiLinkedinBoxFill, RiMailLine, RiLinkM } from 'react-icons/ri';
 
+const ui = {
+  pl: {
+    defaultLabel: 'Ten materiał może komuś pomóc - udostępnij go dalej.',
+    ariaLabel: 'Udostępnij ten materiał',
+    shareFacebook: 'Udostępnij na Facebooku',
+    shareLinkedIn: 'Udostępnij na LinkedIn',
+    shareTwitter: 'Udostępnij na X (Twitter)',
+    shareEmail: 'Wyślij link e-mailem',
+    copyLink: 'Kopiuj link',
+    copied: 'Skopiowano',
+    copyPrompt: 'Skopiuj adres strony (Ctrl+C, Enter):',
+  },
+} as const;
+
 type ShareBlockProps = {
   url: string;
   title: string;
@@ -10,7 +24,8 @@ type ShareBlockProps = {
   className?: string;
 };
 
-export default function ShareBlock({ url, title, label = 'Ten materiał może komuś pomóc - udostępnij go dalej.', className = '' }: ShareBlockProps) {
+export default function ShareBlock({ url, title, label = ui.pl.defaultLabel, className = '' }: ShareBlockProps) {
+  const t = ui.pl;
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -33,36 +48,36 @@ export default function ShareBlock({ url, title, label = 'Ten materiał może ko
         await navigator.clipboard.writeText(url);
         setCopied(true);
       } else {
-        window.prompt('Skopiuj adres strony (Ctrl+C, Enter):', url);
+        window.prompt(t.copyPrompt, url);
       }
     } catch {
-      window.prompt('Skopiuj adres strony (Ctrl+C, Enter):', url);
+      window.prompt(t.copyPrompt, url);
     }
   }
 
   return (
-    <section className={`w-fit rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`} aria-label="Udostępnij ten materiał">
+    <section className={`w-fit rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`} aria-label={t.ariaLabel}>
       <div className="flex items-start gap-3">
         <div className="flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <ShareIconLink href={facebookHref} label="Udostępnij na Facebooku">
+            <ShareIconLink href={facebookHref} label={t.shareFacebook}>
               <RiFacebookCircleFill className="h-5 w-5" />
-              <span className="sr-only">Udostępnij na Facebooku</span>
+              <span className="sr-only">{t.shareFacebook}</span>
             </ShareIconLink>
 
-            <ShareIconLink href={linkedinHref} label="Udostępnij na LinkedIn">
+            <ShareIconLink href={linkedinHref} label={t.shareLinkedIn}>
               <RiLinkedinBoxFill className="h-5 w-5" />
-              <span className="sr-only">Udostępnij na LinkedIn</span>
+              <span className="sr-only">{t.shareLinkedIn}</span>
             </ShareIconLink>
 
-            <ShareIconLink href={twitterHref} label="Udostępnij na X (Twitter)">
+            <ShareIconLink href={twitterHref} label={t.shareTwitter}>
               <span className="text-xs font-semibold">X</span>
-              <span className="sr-only">Udostępnij na X (Twitter)</span>
+              <span className="sr-only">{t.shareTwitter}</span>
             </ShareIconLink>
 
-            <ShareIconLink href={mailHref} label="Wyślij link e-mailem">
+            <ShareIconLink href={mailHref} label={t.shareEmail}>
               <RiMailLine className="h-5 w-5" />
-              <span className="sr-only">Wyślij link e-mailem</span>
+              <span className="sr-only">{t.shareEmail}</span>
             </ShareIconLink>
 
             <button
@@ -71,7 +86,7 @@ export default function ShareBlock({ url, title, label = 'Ten materiał może ko
               className="inline-flex items-center gap-1.5 rounded-full border border-black/15 px-3 py-1.5 text-xs font-medium text-[#333] transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
             >
               <RiLinkM className="h-4 w-4" aria-hidden="true" />
-              <span>{copied ? 'Skopiowano' : 'Kopiuj link'}</span>
+              <span>{copied ? t.copied : t.copyLink}</span>
             </button>
           </div>
         </div>

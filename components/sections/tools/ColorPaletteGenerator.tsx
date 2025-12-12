@@ -19,15 +19,43 @@ const ui = {
     example: 'np.',
     enterValidColor: 'Wpisz poprawny kolor HEX, aby wygenerować palety. Wszystkie obliczenia są wykonywane lokalnie w Twojej przeglądarce.',
     palettes: {
-      monochromatic: 'Paleta monochromatyczna',
-      analogous: 'Paleta analogiczna',
-      complementary: 'Paleta komplementarna',
-      triadic: 'Paleta triadyczna',
-      splitComplementary: 'Paleta split-complementary',
-      softPastel: 'Paleta pastelowa',
-      deepDark: 'Paleta ciemna',
-      materialTonal: 'Paleta tonalna (inspirowana Material Design)',
-      appleMinimal: 'Paleta minimalistyczna (inspirowana Apple)',
+      monochromatic: {
+        label: 'Paleta monochromatyczna',
+        description: 'Wszystkie kolory mają ten sam odcień (H), a różnią się głównie jasnością (L) w przestrzeni HSL.',
+      },
+      analogous: {
+        label: 'Paleta analogiczna',
+        description: 'Kolory o zbliżonym odcieniu - tutaj od ok. -30° do +30° wokół koloru bazowego na klasycznym kole barw (np. Ittena).',
+      },
+      complementary: {
+        label: 'Paleta komplementarna',
+        description: 'Kolor bazowy i jego dopełnienie przesunięte o 180° na kole barw - jeden z podstawowych kontrastów barwnych opisanych m.in. przez Johannesa Ittena.',
+      },
+      triadic: {
+        label: 'Paleta triadyczna',
+        description: 'Trzy odcienie oddalone od siebie o 120° na kole barw (wierzchołki trójkąta równobocznego) - geometria często wykorzystywana w brandingu i projektach inspirowanych Bauhausem.',
+      },
+      splitComplementary: {
+        label: 'Paleta split-complementary',
+        description:
+          'Odmiana palety komplementarnej - zamiast jednego dopełnienia (180°) używamy dwóch kolorów przesuniętych o ok. ±30° od dopełnienia, co zmniejsza napięcie wizualne przy zachowaniu silnego kontrastu.',
+      },
+      softPastel: {
+        label: 'Paleta pastelowa',
+        description: 'Ten sam odcień z obniżonym nasyceniem i podniesioną jasnością - przesunięcie w stronę środka i górnej części przestrzeni HSL, które daje miękkie, „kremowe" kolory.',
+      },
+      deepDark: {
+        label: 'Paleta ciemna',
+        description: 'Ta sama barwa przy wysokim nasyceniu (S) i obniżonej jasności (L) - przesunięcie w dół osi lightness, które daje głębokie kolory typowe dla dark mode i mocnych akcentów.',
+      },
+      materialTonal: {
+        label: 'Paleta tonalna (inspirowana Material Design)',
+        description: 'Kilka kroków jasności jednego odcienia - zróżnicowane L i umiarkowane S, zbliżone do tonalnych zakresów znanych z wytycznych Material Design (np. 50-900).',
+      },
+      appleMinimal: {
+        label: 'Paleta minimalistyczna (inspirowana Apple)',
+        description: 'Jeden mocny akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali - układ typowy dla interfejsów z dużą ilością bieli i subtelnych cieni.',
+      },
     },
   },
 } as const;
@@ -188,6 +216,7 @@ function rotateHue(h: number, delta: number): number {
 }
 
 function createPaletteFromHex(baseHex: string): PaletteGroup[] {
+  const t = ui.pl;
   const normalized = normalizeHex(baseHex);
   if (!normalized) return [];
 
@@ -209,8 +238,8 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const mono: PaletteGroup = {
     id: 'monochromatic',
-    label: 'Paleta monochromatyczna',
-    description: 'Wszystkie kolory mają ten sam odcień (H), a różnią się głównie jasnością (L) w przestrzeni HSL.',
+    label: t.palettes.monochromatic.label,
+    description: t.palettes.monochromatic.description,
     colors: [
       mkColor(baseHsl.h, baseHsl.s, clamp(baseHsl.l - 25, 5, 95)),
       mkColor(baseHsl.h, baseHsl.s, clamp(baseHsl.l - 12, 5, 95)),
@@ -222,8 +251,8 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const analogous: PaletteGroup = {
     id: 'analogous',
-    label: 'Paleta analogiczna',
-    description: 'Kolory o zbliżonym odcieniu - tutaj od ok. -30° do +30° wokół koloru bazowego na klasycznym kole barw (np. Ittena).',
+    label: t.palettes.analogous.label,
+    description: t.palettes.analogous.description,
     colors: [
       mkColor(rotateHue(baseHsl.h - 30, 0), baseHsl.s, baseHsl.l),
       mkColor(rotateHue(baseHsl.h - 15, 0), baseHsl.s, baseHsl.l + 5),
@@ -235,8 +264,8 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const complementary: PaletteGroup = {
     id: 'complementary',
-    label: 'Paleta komplementarna',
-    description: 'Kolor bazowy i jego dopełnienie przesunięte o 180° na kole barw - jeden z podstawowych kontrastów barwnych opisanych m.in. przez Johannesa Ittena.',
+    label: t.palettes.complementary.label,
+    description: t.palettes.complementary.description,
     colors: [
       mkColor(baseHsl.h, baseHsl.s, baseHsl.l),
       mkColor(baseHsl.h, baseHsl.s, clamp(baseHsl.l - 10, 5, 95)),
@@ -248,8 +277,8 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const triadic: PaletteGroup = {
     id: 'triadic',
-    label: 'Paleta triadyczna',
-    description: 'Trzy odcienie oddalone od siebie o 120° na kole barw (wierzchołki trójkąta równobocznego) - geometria często wykorzystywana w brandingu i projektach inspirowanych Bauhausem.',
+    label: t.palettes.triadic.label,
+    description: t.palettes.triadic.description,
     colors: [
       mkColor(baseHsl.h, baseHsl.s, baseHsl.l),
       mkColor(rotateHue(baseHsl.h + 120, 0), baseHsl.s, baseHsl.l - 5),
@@ -261,9 +290,8 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const split: PaletteGroup = {
     id: 'split-complementary',
-    label: 'Paleta split-complementary',
-    description:
-      'Odmiana palety komplementarnej - zamiast jednego dopełnienia (180°) używamy dwóch kolorów przesuniętych o ok. ±30° od dopełnienia, co zmniejsza napięcie wizualne przy zachowaniu silnego kontrastu.',
+    label: t.palettes.splitComplementary.label,
+    description: t.palettes.splitComplementary.description,
     colors: [
       mkColor(baseHsl.h, baseHsl.s, baseHsl.l),
       mkColor(rotateHue(baseHsl.h + 150, 0), baseHsl.s, baseHsl.l),
@@ -276,16 +304,16 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
   const pastelS = Math.min(baseHsl.s, 45);
   const pastel: PaletteGroup = {
     id: 'soft-pastel',
-    label: 'Paleta pastelowa',
-    description: 'Ten sam odcień z obniżonym nasyceniem i podniesioną jasnością - przesunięcie w stronę środka i górnej części przestrzeni HSL, które daje miękkie, „kremowe” kolory.',
+    label: t.palettes.softPastel.label,
+    description: t.palettes.softPastel.description,
     colors: [mkColor(baseHsl.h, pastelS, 92), mkColor(baseHsl.h, pastelS, 88), mkColor(baseHsl.h, pastelS, 84), mkColor(baseHsl.h, pastelS, 80), mkColor(baseHsl.h, pastelS, 76)],
   };
 
   const deepS = Math.max(baseHsl.s, 55);
   const deep: PaletteGroup = {
     id: 'deep-dark',
-    label: 'Paleta ciemna',
-    description: 'Ta sama barwa przy wysokim nasyceniu (S) i obniżonej jasności (L) - przesunięcie w dół osi lightness, które daje głębokie kolory typowe dla dark mode i mocnych akcentów.',
+    label: t.palettes.deepDark.label,
+    description: t.palettes.deepDark.description,
     colors: [
       mkColor(baseHsl.h, deepS, clamp(baseHsl.l - 5, 5, 95)),
       mkColor(baseHsl.h, deepS, clamp(baseHsl.l - 12, 5, 95)),
@@ -297,8 +325,8 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const material: PaletteGroup = {
     id: 'material-tonal',
-    label: 'Paleta tonalna (inspirowana Material Design)',
-    description: 'Kilka kroków jasności jednego odcienia - zróżnicowane L i umiarkowane S, zbliżone do tonalnych zakresów znanych z wytycznych Material Design (np. 50-900).',
+    label: t.palettes.materialTonal.label,
+    description: t.palettes.materialTonal.description,
     colors: [
       mkColor(baseHsl.h, baseHsl.s * 0.3, 96),
       mkColor(baseHsl.h, baseHsl.s * 0.4, 90),
@@ -310,8 +338,8 @@ function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const apple: PaletteGroup = {
     id: 'apple-minimal',
-    label: 'Paleta minimalistyczna (inspirowana Apple)',
-    description: 'Jeden mocny akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali - układ typowy dla interfejsów z dużą ilością bieli i subtelnych cieni.',
+    label: t.palettes.appleMinimal.label,
+    description: t.palettes.appleMinimal.description,
     colors: [mkColor(baseHsl.h, Math.max(baseHsl.s, 60), clamp(baseHsl.l, 45, 60)), mkColor(baseHsl.h, 6, 98), mkColor(baseHsl.h, 6, 94), mkColor(baseHsl.h, 6, 88), mkColor(baseHsl.h, 6, 30)],
   };
 
