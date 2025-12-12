@@ -26,7 +26,7 @@ export const metadata = {
   title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
   description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
   alternates: {
-    canonical: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
+    canonical: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
   },
   openGraph: {
     title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',

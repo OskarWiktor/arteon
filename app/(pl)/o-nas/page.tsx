@@ -16,6 +16,18 @@ export const metadata = {
   title: 'O nas - sprawdź naszą misję i cele | Arteon',
   description: 'Kim jesteśmy, jak pracujemy i dlaczego klienci nam ufają. Poznaj proces, standardy jakości, narzędzia oraz historie projektów Arteon.',
   alternates: { canonical: '/o-nas' },
+  openGraph: {
+    title: 'O nas - sprawdź naszą misję i cele | Arteon',
+    description: 'Kim jesteśmy, jak pracujemy i dlaczego klienci nam ufają. Poznaj proces, standardy jakości, narzędzia oraz historie projektów Arteon.',
+    url: 'https://www.arteonagency.pl/o-nas',
+    type: 'website',
+    // TODO: Add unique OpenGraph image for about page: /assets/og/o-nas.webp (1200x630px)
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+      },
+    ],
+  },
 };
 
 export default function AboutPage() {

@@ -12,9 +12,12 @@ import Button from '@/components/ui/Button';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
+import Script from 'next/script';
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
 import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
+import testimonialsPl from '@/data/pl/testimonials.json';
+import type { Testimonial } from '@/types/testimonial';
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
@@ -22,7 +25,7 @@ export const metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
-    description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google Gwarancja i jasne zasady.',
+    description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
     url: 'https://www.arteonagency.pl/',
     type: 'website',
     images: [
@@ -33,9 +36,89 @@ export const metadata = {
   },
 } as const;
 
+function HomePageSchemas() {
+  const testimonials = testimonialsPl as Testimonial[];
+  const allRatings = testimonials.map((t) => t.rating);
+  const avgRating = allRatings.length > 0 ? allRatings.reduce((a, b) => a + b, 0) / allRatings.length : 5;
+  const reviewCount = testimonials.length;
+
+  const aggregateRating = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://www.arteonagency.pl#organization',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: avgRating.toFixed(1),
+      reviewCount,
+      bestRating: '5',
+      worstRating: '1',
+    },
+    review: testimonials.slice(0, 5).map((t) => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: t.author,
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: t.rating,
+        bestRating: '5',
+        worstRating: '1',
+      },
+      reviewBody: t.quote,
+      ...(t.link ? { url: t.link } : {}),
+    })),
+  };
+
+  const howTo = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Jak pracujemy - proces współpracy z Arteon',
+    description: 'Czteroetapowy proces współpracy: rozmowa, plan, realizacja, publikacja i wsparcie.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Rozmowa',
+        text: 'Ustalamy cele, odbiorców i priorytety. Zbieramy wszelkie informację, żeby stworzyć efekt, na którym Ci zależy.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Plan',
+        text: 'Tworzymy dokładny plan: ustalamy zakres, termin i tworzymy dedykowaną wycenę.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Realizacja',
+        text: 'Tworzymy to, czego potrzebujesz: stronę, grafiki, treści lub kampanie. Dbamy o widoczność w Google i dostępność (WCAG).',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Publikacja i wsparcie',
+        text: 'Uruchamiamy i dostarczamy pliki. Tworzymy darmową listę kroków „co dalej”, by Twoja firma rosła szybciej.',
+      },
+    ],
+  };
+
+  return (
+    <>
+      <Script id="schema-aggregate-rating" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify(aggregateRating)}
+      </Script>
+      <Script id="schema-howto-process" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify(howTo)}
+      </Script>
+    </>
+  );
+}
+
 export default function HomePage() {
   return (
     <>
+      <HomePageSchemas />
       <HeroBanner
         title="Rozwiń swoją markę z nami"
         description="Witaj w Arteon - miejscu, które pomoże Ci rozwinąć Twój biznes online oraz offline"

@@ -54,7 +54,14 @@ const orgJsonLd = {
   '@id': `${SITE_URL}#organization`,
   name: 'Arteon',
   url: SITE_URL,
-  logo: ORG_LOGO,
+  logo: {
+    '@type': 'ImageObject',
+    url: ORG_LOGO,
+    width: 512,
+    height: 512,
+  },
+  image: ORG_LOGO,
+  sameAs: ['https://www.facebook.com/people/Arteon/61583260915021/'],
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -62,14 +69,21 @@ const orgJsonLd = {
       telephone: '+48 516 466 255',
       email: 'kontakt@arteonagency.pl',
       availableLanguage: ['pl'],
+      areaServed: 'Worldwide',
     },
   ],
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'ul. Jaśminowa 36',
+    addressLocality: 'Zagacie',
+    addressRegion: 'małopolskie',
     addressCountry: 'PL',
+    postalCode: '32-070',
   },
   areaServed: 'Worldwide',
   knowsLanguage: ['pl'],
+  foundingDate: '2020',
+  description: 'Arteon - agencja tworząca strony internetowe, sklepy online, projekty graficzne oraz treści i kampanie marketingowe. Dla polskich firm na całym świecie.',
 };
 
 const websiteJsonLd = {
@@ -78,6 +92,18 @@ const websiteJsonLd = {
   name: 'Arteon',
   url: SITE_URL,
   inLanguage: 'pl',
+  publisher: {
+    '@id': `${SITE_URL}#organization`,
+  },
+  // TODO: Add SearchAction if site search is implemented
+  // potentialAction: {
+  //   '@type': 'SearchAction',
+  //   target: {
+  //     '@type': 'EntryPoint',
+  //     urlTemplate: `${SITE_URL}/szukaj?q={search_term_string}`,
+  //   },
+  //   'query-input': 'required name=search_term_string',
+  // },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

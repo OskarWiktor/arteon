@@ -8,6 +8,12 @@ export const metadata = {
   title: 'Polityka prywatności | Arteon',
   description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
   alternates: { canonical: '/polityka-prywatnosci' },
+  openGraph: {
+    title: 'Polityka prywatności | Arteon',
+    description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
+    url: 'https://www.arteonagency.pl/polityka-prywatnosci',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicyPage() {

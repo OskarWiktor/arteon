@@ -255,6 +255,7 @@ export async function generateMetadata({ params }: { params: { category: string;
 
   const canonicalCat = getPrimaryCategorySlug(article);
   const url = articleUrl(canonicalCat, article.slug);
+  const canonicalPath = article.seo?.canonical || `/edukacja/${canonicalCat}/${article.slug}`;
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
   const image = article.cover?.startsWith('http') ? article.cover : article.cover ? `${siteUrl}${article.cover}` : undefined;
@@ -262,7 +263,7 @@ export async function generateMetadata({ params }: { params: { category: string;
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: { canonical: canonicalPath.startsWith('/') ? canonicalPath : `/edukacja/${canonicalCat}/${article.slug}` },
     openGraph: {
       type: 'article',
       url,

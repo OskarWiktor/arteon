@@ -11,13 +11,19 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.p
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu | Arteon',
   description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
-  alternates: { canonical: `${BASE_URL}/kontakt` },
+  alternates: { canonical: '/kontakt' },
   openGraph: {
     title: 'Kontakt - wycena Twojego planu | Arteon',
     description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
     url: `${BASE_URL}/kontakt`,
     siteName: 'Arteon',
     type: 'website',
+    // TODO: Add unique OpenGraph image for contact page: /assets/og/kontakt.webp (1200x630px)
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+      },
+    ],
   },
 } as const;
 
@@ -69,6 +75,39 @@ function ContactSchemas() {
     ],
   };
 
+  const howToContact = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Jak wygląda pierwszy kontakt z Arteon',
+    description: 'Proces nawiązania współpracy: wypełnienie formularza, analiza potrzeb, otrzymanie oferty, start projektu.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Wypełniasz formularz',
+        text: 'Opisujesz swoją firmę, pomysł na rozwój oraz swoje potrzeby',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Analizujemy potrzeby',
+        text: 'Sprawdzamy Twoją branżę, analizujemy cele i tworzymy plan',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Otrzymujesz ofertę',
+        text: 'Wysyłamy ofertę wraz z wyceną i przewidywanym terminem realizacji',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Startujemy z projektem',
+        text: 'Decydujesz, kiedy ruszamy z realizacją',
+      },
+    ],
+  };
+
   return (
     <>
       <Script id="schema-professional-service" type="application/ld+json">
@@ -76,6 +115,9 @@ function ContactSchemas() {
       </Script>
       <Script id="schema-breadcrumbs" type="application/ld+json">
         {JSON.stringify(breadcrumbs)}
+      </Script>
+      <Script id="schema-howto-contact" type="application/ld+json">
+        {JSON.stringify(howToContact)}
       </Script>
     </>
   );

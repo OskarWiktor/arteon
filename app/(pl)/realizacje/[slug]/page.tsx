@@ -192,10 +192,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const url = projectUrl(project.slug);
   const image = project.image?.startsWith('http') ? project.image : `${siteUrl}${project.image}`;
 
+  const canonicalPath = project.seo?.canonical || `/realizacje/${project.slug}`;
   return {
     title,
     description,
-    alternates: { canonical: project.seo?.canonical || url },
+    alternates: { canonical: canonicalPath.startsWith('/') ? canonicalPath : `/realizacje/${project.slug}` },
     openGraph: {
       type: 'article',
       url,

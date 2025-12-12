@@ -12,6 +12,12 @@ export const metadata = {
     description: 'Strony, sklepy, identyfikacje i kampanie. Konkretne efekty i przejrzty proces.',
     url: 'https://www.arteonagency.pl/realizacje',
     type: 'website',
+    // TODO: Add unique OpenGraph image for portfolio page: /assets/og/realizacje.webp (1200x630px)
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+      },
+    ],
   },
 } as const;
 

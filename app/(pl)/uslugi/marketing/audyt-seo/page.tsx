@@ -24,7 +24,7 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-  alternates: { canonical: `${BASE}/uslugi/marketing/audyt-seo` },
+  alternates: { canonical: '/uslugi/marketing/audyt-seo' },
   openGraph: {
     title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
     description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',

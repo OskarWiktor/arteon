@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Projekt wizytówki | Arteon',
   description: 'Projekt wizytówki firmowej, która wyjaśnia ofertę w kilka sekund i buduje zaufanie od pierwszego spojrzenia. Pliki źródłowe i gotowe do druku.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
+    canonical: '/uslugi/projekty-graficzne/projekt-wizytowki',
   },
   openGraph: {
     title: 'Projekt wizytówki | Arteon',

@@ -23,7 +23,7 @@ export const metadata = {
   title: 'Projekt ulotki | Arteon',
   description: 'Ulotka, która przyciąga uwagę i kieruje do kontaktu lub zakupu. Projekt dopasowany do Twojej oferty i lokalnych działań.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
+    canonical: '/uslugi/projekty-graficzne/projekt-ulotki',
   },
   openGraph: {
     title: 'Projekt ulotki | Arteon',
