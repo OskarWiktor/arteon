@@ -8,6 +8,7 @@ import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import Tag from '@/components/ui/Tag';
+import Text from '@/components/ui/typography/Text';
 
 const ui = {
   pl: {
@@ -262,7 +263,7 @@ export default function WcagContrastChecker() {
 
           <ToolInfo className="space-y-2">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-sm! font-semibold uppercase">{t.normalText}</p>
+              <Text variant="small" as="p" className="font-semibold uppercase">{t.normalText}</Text>
               <div className="flex flex-wrap items-center gap-1.5">
                 <Badge ok={!!result.ratio && result.normalText.AA} label={t.badges.normalAA} />
                 <Badge ok={!!result.ratio && result.normalText.AAA} label={t.badges.normalAAA} />
@@ -275,13 +276,13 @@ export default function WcagContrastChecker() {
                 backgroundColor: background,
               }}
             >
-              <p className="text-sm! leading-snug font-normal">{textSample || t.exampleNormalText}</p>
+              <Text variant="small" as="p" className="leading-snug font-normal">{textSample || t.exampleNormalText}</Text>
             </div>
           </ToolInfo>
 
           <ToolInfo className="space-y-2">
             <div className="items_center flex justify-between gap-2">
-              <p className="text-sm! font-semibold uppercase">{t.largeText}</p>
+              <Text variant="small" as="p" className="font-semibold uppercase">{t.largeText}</Text>
               <div className="flex flex-wrap items-center gap-1.5">
                 <Badge ok={!!result.ratio && result.largeText.AA} label={t.badges.largeAA} />
                 <Badge ok={!!result.ratio && result.largeText.AAA} label={t.badges.largeAAA} />
@@ -294,7 +295,7 @@ export default function WcagContrastChecker() {
                 backgroundColor: background,
               }}
             >
-              <p className="text-base! leading-snug font-semibold!">{textSample || t.exampleLargeText}</p>
+              <Text variant="body" as="p" className="leading-snug font-semibold!">{textSample || t.exampleLargeText}</Text>
             </div>
           </ToolInfo>
 

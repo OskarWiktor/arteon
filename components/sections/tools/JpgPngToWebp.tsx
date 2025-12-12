@@ -6,6 +6,7 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import Text from '@/components/ui/typography/Text';
 import Tag from '@/components/ui/Tag';
+import Heading from '@/components/ui/typography/Heading';
 
 const ui = {
   pl: {
@@ -558,15 +559,15 @@ export default function JpgPngToWebp() {
 
             {totalInput > 0 && (
               <div className="mt-6">
-                <p className="text-sm! text-[#5e5e5e]">
+                <Text variant="small" tone="muted" as="p">
                   {t.totalInputSize} <strong>{formatBytes(totalInput)}</strong>
-                </p>
+                </Text>
                 {totalOutput > 0 && (
                   <>
-                    <p className="text-sm! text-[#5e5e5e]">
+                    <Text variant="small" tone="muted" as="p">
                       {t.totalOutputSize} <strong>{formatBytes(totalOutput)}</strong>
-                    </p>
-                    <p className="text-sm! text-[#5e5e5e]">
+                    </Text>
+                    <Text variant="small" tone="muted" as="p">
                       {totalSaved >= 0 ? (
                         <>
                           {t.totalSaved}:{' '}
@@ -583,7 +584,7 @@ export default function JpgPngToWebp() {
                           </strong>
                         </>
                       )}
-                    </p>
+                    </Text>
                   </>
                 )}
               </div>
@@ -593,7 +594,7 @@ export default function JpgPngToWebp() {
               <Button variant="minimal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="disabled:opacity-40">
                 {t.copySummary}
               </Button>
-              {copyInfo && <span className="text-xs text-[#5e5e5e]">{copyInfo}</span>}
+              {copyInfo && <Text variant="xs" tone="muted" as="span">{copyInfo}</Text>}
             </div>
           </div>
         </form>
@@ -601,11 +602,11 @@ export default function JpgPngToWebp() {
 
       <ToolSection aria-label={t.queueListAriaLabel} className="space-y-2">
         <div className="flex items-center justify-between gap-2">
-          <h2 className="h6">{t.queueFilesHeading}</h2>
+          <Heading as="h2" className="h6">{t.queueFilesHeading}</Heading>
           {files.length > 0 && (
-            <p className="text-sm! text-[#5e5e5e]">
+            <Text variant="small" tone="muted" as="p">
               {t.readyCount}: {readyCount} · {t.pendingCount}: {pendingCount}
-            </p>
+            </Text>
           )}
         </div>
 

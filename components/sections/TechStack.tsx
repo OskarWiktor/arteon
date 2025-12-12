@@ -3,6 +3,7 @@
 import { motion, useMotionValue, useAnimationFrame, useReducedMotion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { IconType } from 'react-icons';
+import IconText from '@/components/ui/IconText';
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -117,10 +118,9 @@ export default function TechStack() {
       >
         <motion.div ref={trackRef} style={{ x, willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
           {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
-            <div key={`${label}-${index}`} className="flex shrink-0 items-center">
-              <Icon className="h-auto w-6" aria-hidden="true" />
-              <span className="pl-2 text-2xl">{label}</span>
-            </div>
+            <IconText key={`${label}-${index}`} icon={<Icon className="h-auto w-6" aria-hidden="true" />} gap="2" className="shrink-0">
+              <span className="text-2xl">{label}</span>
+            </IconText>
           ))}
         </motion.div>
       </div>

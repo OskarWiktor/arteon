@@ -1,4 +1,7 @@
 import Button from '../ui/Button';
+import ButtonGroup from '../ui/ButtonGroup';
+import Eyebrow from '../ui/typography/Eyebrow';
+import Text from '../ui/typography/Text';
 import { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 
@@ -86,7 +89,7 @@ export default function HeroBanner({
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
           <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 pt-4 md:p-7 ${contentBgClass} hyphens-auto`}>
-            {subtitle && <p className={`reveal-animation text-base tracking-wide uppercase sm:text-lg ${toneMutedClass}`}>{subtitle}</p>}
+            {subtitle && <Eyebrow variant="hero" className={`reveal-animation ${toneMutedClass}`}>{subtitle}</Eyebrow>}
             {topButtons.length > 0 && (
               <nav aria-label={t.quickLinks} className="mt-4">
                 <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
@@ -106,23 +109,22 @@ export default function HeroBanner({
               </h1>
             )}
             {description && (
-              <p id="hero-description" className={`reveal-animation mt-3 text-base leading-relaxed md:mt-5 ${toneMutedClass} text-wrap:pretty`}>
+              <Text variant="body" tone="muted" as="p" id="hero-description" className={`reveal-animation mt-3 leading-relaxed md:mt-5 text-wrap:pretty`}>
                 {description}
-              </p>
+              </Text>
             )}
             {(buttonAccent || buttonSecond) && (
-              <div className={`mt-7 flex flex-wrap gap-3 md:mt-8 ${justify}`}>
-                {buttonAccent && (
-                  <Button arrow link={buttonAccentLink}>
-                    {buttonAccent}
-                  </Button>
-                )}
-                {buttonSecond && (
-                  <Button arrow variant="accent" link={buttonSecondLink}>
-                    {buttonSecond}
-                  </Button>
-                )}
-              </div>
+              <ButtonGroup
+                btnOne={buttonAccent}
+                btnOneLink={buttonAccentLink}
+                btnOneVariant="accent"
+                btnTwo={buttonSecond}
+                btnTwoLink={buttonSecondLink}
+                btnTwoVariant="accent"
+                spacing="loose"
+                align={variant === 'center' ? 'center' : variant === 'right' ? 'right' : 'left'}
+                className="mt-7 md:mt-8"
+              />
             )}
           </div>
         </Wrapper>
