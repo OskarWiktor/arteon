@@ -1,7 +1,8 @@
 'use client';
 
-import { useMemo, useState } from 'react';
-import { FiCopy, FiCheck } from 'react-icons/fi';
+import { useMemo } from 'react';
+import CopyButton from './tools/CopyButton';
+import Text from './typography/Text';
 
 const ui = {
   pl: {
@@ -25,32 +26,31 @@ type CodeBlockProps = {
 
 export default function CodeBlock({ code, language, filename, caption, showLineNumbers = true, wrap = false, highlightLines = [], className = '' }: CodeBlockProps) {
   const t = ui.pl;
-  const [copied, setCopied] = useState(false);
 
   const lines = useMemo(() => code.replace(/\n$/, '').split('\n'), [code]);
-  const onCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(code);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1200);
-    } catch {}
-  };
 
   return (
     <figure className={`group rounded-2xl border border-black/10 bg-gradient-to-b from-[#0b0b0c] to-[#121215] text-[#e7e7ea] shadow-sm ${className}`}>
       <div className="flex items-center justify-between gap-3 rounded-t-xl border-b border-white/10 px-4 py-2">
-        <div className="flex items-center gap-2 text-xs text-white/70">
-          {language ? <span className="inline-block rounded bg-white/10 px-2 py-0.5">{language}</span> : null}
-          {filename ? <span className="truncate">{filename}</span> : null}
+        <div className="flex items-center gap-2">
+          {language ? (
+            <Text variant="xs" as="span" className="inline-block rounded bg-white/10 px-2 py-0.5 text-white/70">
+              {language}
+            </Text>
+          ) : null}
+          {filename ? (
+            <Text variant="xs" as="span" className="truncate text-white/70">
+              {filename}
+            </Text>
+          ) : null}
         </div>
-        <button
-          type="button"
-          onClick={onCopy}
-          className="inline-flex items-center gap-2 rounded-md border border-white/10 px-2 py-1 text-xs text-white/80 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-          aria-label={t.copyCode}
-        >
-          {copied ? <FiCheck /> : <FiCopy />} {copied ? t.copied : t.copy}
-        </button>
+        <CopyButton
+          text={code}
+          label={t.copy}
+          copiedLabel={t.copied}
+          variant="dark"
+          className="gap-2 rounded-md px-2 py-1 text-xs"
+        />
       </div>
 
       <pre
@@ -65,8 +65,10 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
             return (
               <span key={i} className={`contents ${isHl ? 'bg-white/[0.04]' : ''}`} data-line={n}>
                 {showLineNumbers ? (
-                  <span aria-hidden="true" className={`min-w-6 pr-1 text-right text-white/40 tabular-nums select-none`}>
-                    {n}
+                  <span aria-hidden="true">
+                    <Text variant="xs" as="span" className="min-w-6 pr-1 text-right text-white/40 tabular-nums select-none">
+                      {n}
+                    </Text>
                   </span>
                 ) : null}
                 <span className={`font-mono ${wrap ? '' : 'inline-block min-w-full'}`}>{ln || ' '}</span>
@@ -76,7 +78,11 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
         </code>
       </pre>
 
-      {caption ? <figcaption className="border-t border-white/10 px-4 py-2 text-xs text-white/60">{caption}</figcaption> : null}
+      {caption ? (
+        <Text variant="xs" as="figcaption" className="border-t border-white/10 px-4 py-2 text-white/60">
+          {caption}
+        </Text>
+      ) : null}
     </figure>
   );
 }

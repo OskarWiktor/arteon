@@ -1,4 +1,4 @@
-import { ProjectCTA } from './project';
+import type { ProjectCTA } from './project';
 
 export type Article = {
   slug: string;

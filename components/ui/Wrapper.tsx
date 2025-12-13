@@ -1,4 +1,4 @@
-import { ElementType, HTMLAttributes, ReactNode } from 'react';
+import type { ElementType, HTMLAttributes, ReactNode } from 'react';
 
 interface WrapperProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;

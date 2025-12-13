@@ -1,12 +1,14 @@
 'use client';
 
-import { DragEvent, FormEvent, useMemo, useState } from 'react';
+import { useMemo, useState, type DragEvent, type FormEvent } from 'react';
 import Button from '@/components/ui/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
+import Heading from '@/components/ui/typography/Heading';
+import Eyebrow from '@/components/ui/typography/Eyebrow';
 import Text from '@/components/ui/typography/Text';
-import Tag from '@/components/ui/Tag';
+import Badge from '@/components/ui/Badge';
 
 const ui = {
   pl: {
@@ -290,7 +292,7 @@ export default function FaviconGenerator() {
       const newOutputs: OutputFile[] = [];
 
       for (const size of selectedSizes) {
-        // eslint-disable-next-line no-await-in-loop
+         
         const pngBlob = await createPngFromImage(img, size, backgroundColor, transparentBackground);
         const url = URL.createObjectURL(pngBlob);
         const fileName = suggestFileName(size, 'png');
@@ -398,14 +400,16 @@ export default function FaviconGenerator() {
                 className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
               >
                 <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
-                <span className="mb-2 text-xs text-[#5e5e5e]">{t.clickToSelect}</span>
-                <Tag variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Tag>
+                <Text variant="xs" tone="muted" as="span" className="mb-2">
+                  {t.clickToSelect}
+                </Text>
+                <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
                 <input type="file" accept="image/png,image/jpeg,image/jpg,image/svg+xml" onChange={handleFileChange} className="hidden" />
               </label>
               {sourceFile && (
-                <p className="mt-2 text-xs text-[#5e5e5e]">
+                <Text variant="xs" tone="muted" as="p" className="mt-2">
                   {t.selectedFile} <strong>{sourceFile.name}</strong> ({formatBytes(sourceFile.size)})
-                </p>
+                </Text>
               )}
               {error && (
                 <ToolAlert variant="error" className="mt-2">
@@ -425,7 +429,7 @@ export default function FaviconGenerator() {
                   {PNG_SIZES.map((size) => {
                     const checked = selectedSizes.includes(size);
                     return (
-                      <Tag
+                      <Badge
                         key={size}
                         as="label"
                         variant={checked ? 'selected' : 'default'}
@@ -435,7 +439,7 @@ export default function FaviconGenerator() {
                       >
                         <input type="checkbox" id={`size-${size}`} checked={checked} onChange={() => toggleSize(size)} className="mr-1 h-4 w-4! p-0! align-middle" />
                         {size}x{size}
-                      </Tag>
+                      </Badge>
                     );
                   })}
                 </div>
@@ -517,27 +521,37 @@ export default function FaviconGenerator() {
 
         <ToolSection aria-label={t.previewAndFilesLabel} className="space-y-4">
           <div className="flex items-center justify-between gap-2">
-            <h2 className="h6">{t.previewAndFiles}</h2>
+            <Heading as="h2" className="h6">
+              {t.previewAndFiles}
+            </Heading>
             {anyOutputs && (
-              <p className="text-xs text-[#5e5e5e]">
+              <Text variant="xs" tone="muted" as="p">
                 {t.totalSize} <strong>{formatBytes(totalSize)}</strong>
-              </p>
+              </Text>
             )}
           </div>
 
-          {!hasSource && !anyOutputs && <p className="text-xs text-[#5e5e5e]">{t.addImageToGenerate}</p>}
+          {!hasSource && !anyOutputs && (
+            <Text variant="xs" tone="muted" as="p">
+              {t.addImageToGenerate}
+            </Text>
+          )}
 
           {hasSource && (
             <ToolInfo className="flex flex-wrap items-center gap-4">
               <div>
-                <p className="mb-2 text-xs font-semibold tracking-wide text-[#5e5e5e] uppercase">{t.previewBaseImage}</p>
+                <Eyebrow variant="dynamic" className="mb-2 text-xs font-semibold tracking-wide">
+                  {t.previewBaseImage}
+                </Eyebrow>
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.previewFavicon} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-xs text-[#5e5e5e]">{t.approximatePreview}</span>
+                    <Text variant="xs" tone="muted" as="span">
+                      {t.approximatePreview}
+                    </Text>
                   </div>
 
                   <div className="hidden items-center gap-2 md:flex">
@@ -545,7 +559,9 @@ export default function FaviconGenerator() {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.largeIconPreview} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-xs text-[#5e5e5e]">{t.largeIconPreview}</span>
+                    <Text variant="xs" tone="muted" as="span">
+                      {t.largeIconPreview}
+                    </Text>
                   </div>
                 </div>
               </div>
@@ -568,19 +584,21 @@ export default function FaviconGenerator() {
                     </button>
 
                     <div className="min-w-0 flex-1">
-                      <p className="truncate text-sm! font-medium" title={item.fileName}>
-                        {item.fileName}
-                      </p>
-                      <p className="text-xs! text-[#5e5e5e]">
+                      <div title={item.fileName}>
+                        <Text as="p" variant="small" className="truncate font-medium">
+                          {item.fileName}
+                        </Text>
+                      </div>
+                      <Text as="p" variant="xs" tone="muted" className="text-xs!">
                         {item.label} · {formatBytes(item.sizeBytes)}
-                      </p>
+                      </Text>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <Tag as="a" href={item.url} download={item.fileName} variant="default" size="md" className="cursor-pointer border-black/15">
+                    <Badge as="a" href={item.url} download={item.fileName} variant="default" size="md" className="cursor-pointer border-black/15">
                       {t.download}
-                    </Tag>
+                    </Badge>
                   </div>
                 </div>
               ))}

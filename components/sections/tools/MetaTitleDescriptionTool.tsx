@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
+import Heading from '@/components/ui/typography/Heading';
 
 const ui = {
   pl: {
@@ -226,7 +227,9 @@ export default function MetaTitleDescriptionTool() {
 
         <ToolSection className="space-y-4">
           <div>
-            <h2 className="h6 pb-2">{t.previewTitle}</h2>
+            <Heading as="h2" className="h6 pb-2">
+              {t.previewTitle}
+            </Heading>
             <ToolHelper>{t.previewHelper}</ToolHelper>
           </div>
 

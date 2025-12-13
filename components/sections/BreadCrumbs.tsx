@@ -1,4 +1,6 @@
 import Wrapper from '../ui/Wrapper';
+import AppLink from '../ui/Link';
+import Text from '../ui/typography/Text';
 
 const ui = {
   pl: {
@@ -52,18 +54,20 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
             return (
               <li key={`${it.href}-${idx}`} className="flex items-center gap-1 text-sm md:gap-2">
                 {isLast ? (
-                  <span aria-current="page" className="text-sm opacity-70">
+                  <Text variant="small" as="span" aria-current="page" className="opacity-70">
                     {it.label}
-                  </span>
+                  </Text>
                 ) : (
-                  <a href={it.href} className="inline-link text-sm">
-                    {it.label}
-                  </a>
+                  <AppLink href={it.href} variant="default" display="inline" className="inline-link">
+                    <Text variant="small" as="span">
+                      {it.label}
+                    </Text>
+                  </AppLink>
                 )}
                 {!isLast && (
-                  <span className="text-sm" aria-hidden="true">
+                  <Text variant="small" as="span" aria-hidden="true">
                     /
-                  </span>
+                  </Text>
                 )}
               </li>
             );
@@ -73,7 +77,6 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
         {includeJsonLd && jsonLd && (
           <script
             type="application/ld+json"
-            // eslint-disable-next-line react/no-danger -- JSON-LD structured data requires dangerouslySetInnerHTML
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
         )}

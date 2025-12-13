@@ -21,26 +21,36 @@ type TableBlockProps = {
 export default function TableBlock({ caption, note, columns, rows, striped = true, compact = false, className = '' }: TableBlockProps) {
   const t = ui.pl;
   return (
-    <figure className={`not-prose`}>
+    <figure className="not-prose">
       <div className={`overflow-x-auto rounded-2xl border border-black/10 bg-white shadow-sm ${className}`} role="region" aria-label={caption || t.defaultTableLabel}>
-        {caption ? <div className="border-b border-black/10 px-4 py-3 text-sm font-medium text-[#1a1a1a]">{caption}</div> : null}
+        {caption && (
+          <div className="border-b border-black/10 px-4 py-3">
+            <Text variant="small" as="div" className="font-medium">
+              {caption}
+            </Text>
+          </div>
+        )}
 
         <table className="w-full text-left">
           <thead className="bg-[#0b0b0c] text-white">
             <tr>
               {columns.map((c, i) => (
-                <th key={i} scope="col" className={`px-4 ${compact ? 'py-2' : 'py-3'} text-sm font-semibold ${alignCls(c.align)}`}>
-                  {c.header}
+                <th key={i} scope="col" className={`px-4 ${compact ? 'py-2' : 'py-3'} ${alignCls(c.align)}`}>
+                  <Text variant="small" as="span" className="font-semibold">
+                    {c.header}
+                  </Text>
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody className="text-[#1a1a1a]">
+          <tbody>
             {rows.map((r, i) => (
               <tr key={i} className={`${striped ? (i % 2 === 0 ? 'bg-white' : 'bg-[#fafafa]') : 'bg-white'} border-t border-black/5`}>
                 {r.map((cell, j) => (
                   <td key={j} className={`px-4 ${compact ? 'py-2' : 'py-3'} align-top ${alignCls(columns[j]?.align)}`}>
-                    <span className="block text-[15px]">{String(cell)}</span>
+                    <Text variant="body" as="div">
+                      {String(cell)}
+                    </Text>
                   </td>
                 ))}
               </tr>

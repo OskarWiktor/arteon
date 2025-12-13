@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Wrapper from '../ui/Wrapper';
-import CalculatorSteps, { Selections } from '../ui/calculator/CalculatorSteps';
+import CalculatorSteps, { type Selections } from '../ui/calculator/CalculatorSteps';
 import CalculatorResult from '../ui/calculator/CalculatorResult';
 
 import type { Step } from '@/types/calculator';

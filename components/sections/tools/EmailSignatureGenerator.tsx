@@ -1,7 +1,10 @@
 'use client';
 
 import Button from '@/components/ui/Button';
-import Tag from '@/components/ui/Tag';
+import Badge from '@/components/ui/Badge';
+import Heading from '@/components/ui/typography/Heading';
+import Eyebrow from '@/components/ui/typography/Eyebrow';
+import Text from '@/components/ui/typography/Text';
 import { useMemo, useState, type ReactNode } from 'react';
 import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line } from 'react-icons/ri';
 
@@ -719,10 +722,12 @@ export default function EmailSignatureGenerator() {
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <RiLayout3Line className="text-base text-neutral-600" />
-            <span className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.layoutLabel}</span>
+            <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+              {t.layoutLabel}
+            </Eyebrow>
             <div className="flex flex-wrap gap-1">
               {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered'] as LayoutType[]).map((lt) => (
-                <Tag
+                <Badge
                   key={lt}
                   as="button"
                   type="button"
@@ -735,18 +740,22 @@ export default function EmailSignatureGenerator() {
                   {lt === 'top-banner' && t.layouts.topBanner}
                   {lt === 'label-column' && t.layouts.labelColumn}
                   {lt === 'centered' && t.layouts.centered}
-                </Tag>
+                </Badge>
               ))}
             </div>
           </div>
         </div>
-        <p className="text-xs! text-[#5e5e5e]">{t.moreLayoutsSoon}</p>
+        <Text variant="xs" tone="muted" as="p" className="text-xs!">
+          {t.moreLayoutsSoon}
+        </Text>
       </section>
 
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
         <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div className="mb-2 flex items-center justify-between gap-2">
-            <h2 className="h6">{t.editorTitle}</h2>
+            <Heading as="h2" className="h6">
+              {t.editorTitle}
+            </Heading>
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -760,10 +769,16 @@ export default function EmailSignatureGenerator() {
           <div className="mt-3 space-y-4 text-sm!">
             {activePanel === 'identity' && (
               <div className="space-y-3">
-                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.title}</p>
+                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                  {t.identity.title}
+                </Eyebrow>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.topLine}</label>
+                  <label className="mb-1 block">
+                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                      {t.identity.topLine}
+                    </Text>
+                  </label>
                   <input
                     type="text"
                     value={config.topLine}
@@ -774,7 +789,11 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.avatar}</label>
+                  <label className="mb-1 block">
+                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                      {t.identity.avatar}
+                    </Text>
+                  </label>
                   <input
                     type="url"
                     value={config.avatarUrl}
@@ -782,12 +801,18 @@ export default function EmailSignatureGenerator() {
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
                     placeholder={t.identity.avatarPlaceholder}
                   />
-                  <p className="mt-1 text-xs! text-[#5e5e5e]">{t.identity.avatarHelper}</p>
+                  <Text variant="xs" tone="muted" as="p" className="mt-1 text-xs!">
+                    {t.identity.avatarHelper}
+                  </Text>
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.fullName}</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        {t.identity.fullName}
+                      </Text>
+                    </label>
                     <input
                       type="text"
                       value={config.fullName}
@@ -797,7 +822,11 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.nameTag}</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        {t.identity.nameTag}
+                      </Text>
+                    </label>
                     <input
                       type="text"
                       value={config.nameTag}
@@ -832,7 +861,11 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.extraLine}</label>
+                  <label className="mb-1 block">
+                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                      {t.identity.extraLine}
+                    </Text>
+                  </label>
                   <input
                     type="text"
                     value={config.extraLine}
@@ -844,7 +877,11 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.email}</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        {t.identity.email}
+                      </Text>
+                    </label>
                     <input
                       type="email"
                       value={config.email}
@@ -854,7 +891,11 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.phone}</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        {t.identity.phone}
+                      </Text>
+                    </label>
                     <input
                       type="tel"
                       value={config.phone}
@@ -866,7 +907,11 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.website}</label>
+                  <label className="mb-1 block">
+                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                      {t.identity.website}
+                    </Text>
+                  </label>
                   <input
                     type="url"
                     value={config.website}
@@ -877,7 +922,11 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.address}</label>
+                  <label className="mb-1 block">
+                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                      {t.identity.address}
+                    </Text>
+                  </label>
                   <textarea
                     value={config.address}
                     onChange={(e) => handleTextChange('address', e.target.value)}
@@ -888,7 +937,11 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.formalLine}</label>
+                  <label className="mb-1 block">
+                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                      {t.identity.formalLine}
+                    </Text>
+                  </label>
                   <textarea
                     value={config.formalLine}
                     onChange={(e) => handleTextChange('formalLine', e.target.value)}
@@ -903,10 +956,16 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'cta' && (
               <div className="space-y-4">
                 <div>
-                  <p className="mb-2 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.cta.title}</p>
+                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
+                    {t.cta.title}
+                  </Eyebrow>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
-                      <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.cta.label}</label>
+                      <label className="mb-1 block">
+                        <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                          {t.cta.label}
+                        </Text>
+                      </label>
                       <input
                         type="text"
                         value={config.ctaLabel}
@@ -916,7 +975,11 @@ export default function EmailSignatureGenerator() {
                       />
                     </div>
                     <div>
-                      <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.cta.url}</label>
+                      <label className="mb-1 block">
+                        <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                          {t.cta.url}
+                        </Text>
+                      </label>
                       <input
                         type="url"
                         value={config.ctaUrl}
@@ -926,17 +989,25 @@ export default function EmailSignatureGenerator() {
                       />
                     </div>
                   </div>
-                  <p className="mt-1 text-xs! text-[#5e5e5e]">{t.cta.helper}</p>
+                  <Text variant="xs" tone="muted" as="p" className="mt-1 text-xs!">
+                    {t.cta.helper}
+                  </Text>
                 </div>
               </div>
             )}
 
             {activePanel === 'social' && (
               <div className="space-y-3">
-                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.social.title}</p>
+                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                  {t.social.title}
+                </Eyebrow>
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">LinkedIn</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        LinkedIn
+                      </Text>
+                    </label>
                     <input
                       type="url"
                       value={config.socials.linkedin}
@@ -946,7 +1017,11 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Instagram</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        Instagram
+                      </Text>
+                    </label>
                     <input
                       type="url"
                       value={config.socials.instagram}
@@ -958,7 +1033,11 @@ export default function EmailSignatureGenerator() {
                 </div>
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">Facebook</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        Facebook
+                      </Text>
+                    </label>
                     <input
                       type="url"
                       value={config.socials.facebook}
@@ -968,7 +1047,11 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">TikTok</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        TikTok
+                      </Text>
+                    </label>
                     <input
                       type="url"
                       value={config.socials.tiktok}
@@ -980,7 +1063,11 @@ export default function EmailSignatureGenerator() {
                 </div>
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">YouTube</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        YouTube
+                      </Text>
+                    </label>
                     <input
                       type="url"
                       value={config.socials.youtube}
@@ -990,7 +1077,11 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">X (Twitter)</label>
+                    <label className="mb-1 block">
+                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
+                        X (Twitter)
+                      </Text>
+                    </label>
                     <input
                       type="url"
                       value={config.socials.x}
@@ -1000,29 +1091,34 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                 </div>
-                <p className="text-xs! text-[#5e5e5e]">{t.social.helper}</p>
+                <Text variant="xs" tone="muted" as="p" className="text-xs!">
+                  {t.social.helper}
+                </Text>
               </div>
             )}
 
             {activePanel === 'appearance' && (
               <div className="space-y-4">
                 <div>
-                  <p className="mb-2 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.themeTitle}</p>
+                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
+                    {t.appearance.themeTitle}
+                  </Eyebrow>
                   <div className="flex flex-wrap gap-2">
                     {THEME_PRESETS.map((preset) => (
-                      <button
+                      <Badge
                         key={preset.id}
-                        type="button"
                         onClick={() => applyTheme(preset.id)}
-                        className={`flex items-center gap-2 rounded-full border px-3 py-1 text-xs! ${
-                          themeId === preset.id ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
-                        }`}
+                        as="button"
+                        type="button"
+                        size="sm"
+                        variant={themeId === preset.id ? 'selected' : 'default'}
+                        className={`flex items-center gap-2 px-3 py-1 text-xs! ${themeId === preset.id ? '' : 'hover:border-neutral-500'}`}
                       >
                         <span className="flex h-4 w-4 items-center justify-center rounded-full border border-neutral-300">
                           <span className="h-3 w-3 rounded-full" style={{ backgroundColor: preset.accentColor }} />
                         </span>
                         {preset.name}
-                      </button>
+                      </Badge>
                     ))}
                   </div>
                 </div>
@@ -1077,18 +1173,19 @@ export default function EmailSignatureGenerator() {
                     <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.fontSize}</p>
                     <div className="flex flex-wrap gap-2">
                       {(['small', 'normal', 'large'] as FontSizeOption[]).map((size) => (
-                        <button
+                        <Badge
                           key={size}
-                          type="button"
                           onClick={() => handleStyleChange('fontSize', size)}
-                          className={`rounded-full border px-3 py-1 text-xs! font-medium ${
-                            styleConfig.fontSize === size ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
-                          }`}
+                          as="button"
+                          type="button"
+                          size="sm"
+                          variant={styleConfig.fontSize === size ? 'selected' : 'default'}
+                          className={`px-3 py-1 text-xs! font-medium ${styleConfig.fontSize === size ? '' : 'hover:border-neutral-500'}`}
                         >
                           {size === 'small' && t.appearance.fontSizeSmall}
                           {size === 'normal' && t.appearance.fontSizeNormal}
                           {size === 'large' && t.appearance.fontSizeLarge}
-                        </button>
+                        </Badge>
                       ))}
                     </div>
                   </div>
@@ -1098,18 +1195,19 @@ export default function EmailSignatureGenerator() {
                   <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
-                      <button
+                      <Badge
                         key={option}
-                        type="button"
                         onClick={() => handleStyleChange('padding', option)}
-                        className={`rounded-full border px-3 py-1 text-xs! font-medium ${
-                          styleConfig.padding === option ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
-                        }`}
+                        as="button"
+                        type="button"
+                        size="sm"
+                        variant={styleConfig.padding === option ? 'selected' : 'default'}
+                        className={`px-3 py-1 text-xs! font-medium ${styleConfig.padding === option ? '' : 'hover:border-neutral-500'}`}
                       >
                         {option === 'small' && '8 px'}
                         {option === 'medium' && '16 px'}
                         {option === 'large' && '24 px'}
-                      </button>
+                      </Badge>
                     ))}
                   </div>
                 </div>
@@ -1118,18 +1216,19 @@ export default function EmailSignatureGenerator() {
                   <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.ctaRadius}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
-                      <button
+                      <Badge
                         key={option}
-                        type="button"
                         onClick={() => handleStyleChange('ctaRadius', option)}
-                        className={`rounded-full border px-3 py-1 text-xs! font-medium ${
-                          styleConfig.ctaRadius === option ? 'border-black bg-slate-600 text-white' : 'border-neutral-300 bg-white text-neutral-800 hover:border-neutral-500'
-                        }`}
+                        as="button"
+                        type="button"
+                        size="sm"
+                        variant={styleConfig.ctaRadius === option ? 'selected' : 'default'}
+                        className={`px-3 py-1 text-xs! font-medium ${styleConfig.ctaRadius === option ? '' : 'hover:border-neutral-500'}`}
                       >
                         {option === 'none' && t.appearance.ctaRadiusNone}
                         {option === 'small' && t.appearance.ctaRadiusSmall}
                         {option === 'full' && t.appearance.ctaRadiusFull}
-                      </button>
+                      </Badge>
                     ))}
                   </div>
                 </div>
@@ -1151,7 +1250,9 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'legal' && (
               <div className="space-y-3">
-                <p className="text-xs! font-semibold text-[#5e5e5e] uppercase">{t.legal.title}</p>
+                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                  {t.legal.title}
+                </Eyebrow>
                 <textarea
                   value={config.legalNote}
                   onChange={(e) => handleTextChange('legalNote', e.target.value)}
@@ -1167,8 +1268,12 @@ export default function EmailSignatureGenerator() {
         <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
           <div className="flex items-center justify-between gap-2">
             <div>
-              <h2 className="h6">{t.preview.title}</h2>
-              <p className="text-xs! text-[#5e5e5e]">{t.preview.helper}</p>
+              <Heading as="h2" className="h6">
+                {t.preview.title}
+              </Heading>
+              <Text variant="xs" tone="muted" as="p" className="text-xs!">
+                {t.preview.helper}
+              </Text>
             </div>
           </div>
 
@@ -1186,7 +1291,11 @@ export default function EmailSignatureGenerator() {
             </Button>
           </div>
 
-          {!hasRequired && <p className="text-xs! text-[#5e5e5e]">{t.preview.requiredFields}</p>}
+          {!hasRequired && (
+            <Text variant="xs" tone="muted" as="p" className="text-xs!">
+              {t.preview.requiredFields}
+            </Text>
+          )}
         </section>
       </div>
     </div>

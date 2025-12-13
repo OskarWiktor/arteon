@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import AppLink from '../../ui/Link';
 import SectionSteps from '../../ui/sections/SectionSteps';
 
 const REGULATIONS_URL = '/regulamin';
@@ -74,9 +74,9 @@ const stepsWeb = [
     description: (
       <p>
         Uruchamiamy witrynę oraz dajemy darmową propozycję „co dalej”, by Twoja firma rosła szybciej. Gwarancja 60 dni i jasne rozliczenia -{' '}
-        <Link href={REGULATIONS_URL} className="underline underline-offset-4">
+        <AppLink href={REGULATIONS_URL} variant="default" display="inline" className="underline underline-offset-4">
           regulamin
-        </Link>
+        </AppLink>
         .
       </p>
     ),

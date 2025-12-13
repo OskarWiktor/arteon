@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import FeatureCard from '../ui/FeatureCard';
 import SectionHeader from '../ui/typography/SectionHeader';
 

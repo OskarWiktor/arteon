@@ -1,9 +1,5 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
-import HeroBanner from '@/components/sections/HeroBanner';
-import BenefitBelt from '@/components/sections/BenefitBelt';
-import CTABanner from '@/components/sections/CTABanner';
-import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import Script from 'next/script';
+import { IoSparkles } from 'react-icons/io5';
 import {
   RiBarChart2Fill,
   RiBookOpenLine,
@@ -20,18 +16,23 @@ import {
   RiPencilLine,
   RiShoppingCartLine,
 } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
-import Wrapper from '@/components/ui/Wrapper';
-import FeesSteps from '@/components/sections/steps/FeesSteps';
+
+import BenefitBelt from '@/components/sections/BenefitBelt';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import FaqPanels from '@/components/ui/FaqPanels';
+import ContactForm from '@/components/sections/ContactForm';
+import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
-import { IoSparkles } from 'react-icons/io5';
-import Button from '@/components/ui/Button';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Script from 'next/script';
-import { buildServiceSchema } from '@/lib/serviceSchema';
+import HeroBanner from '@/components/sections/HeroBanner';
+import FeesSteps from '@/components/sections/steps/FeesSteps';
+import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import Button from '@/components/ui/Button';
+import FaqPanels from '@/components/ui/FaqPanels';
+import Gap from '@/components/ui/Gap';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Wrapper from '@/components/ui/Wrapper';
+import { buildServiceSchema } from '@/lib/serviceSchema';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
 

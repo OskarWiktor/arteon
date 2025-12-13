@@ -1,6 +1,6 @@
 'use client';
 
-import React, { KeyboardEvent } from 'react';
+import React, { type KeyboardEvent } from 'react';
 import * as FiIcons from 'react-icons/fi';
 
 interface OptionButtonProps {

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 type TextVariant = 'body' | 'small' | 'xs' | 'caption';
 type TextTone = 'default' | 'muted' | 'dark';
@@ -13,9 +13,10 @@ interface TextProps {
   id?: string;
   'aria-label'?: string;
   itemProp?: string;
+  role?: string;
 }
 
-export default function Text({ children, variant = 'body', tone = 'default', as = 'p', className = '', id, 'aria-label': ariaLabel, itemProp }: TextProps) {
+export default function Text({ children, variant = 'body', tone = 'default', as = 'p', className = '', id, 'aria-label': ariaLabel, itemProp, role }: TextProps) {
   const variantClasses: Record<TextVariant, string> = {
     body: 'text-base',
     small: 'text-sm',
@@ -31,7 +32,7 @@ export default function Text({ children, variant = 'body', tone = 'default', as 
 
   const classes = `${variantClasses[variant]} ${toneClasses[tone]} ${className}`;
 
-  const commonProps = { id, className: classes, 'aria-label': ariaLabel, itemProp };
+  const commonProps = { id, className: classes, 'aria-label': ariaLabel, itemProp, role };
 
   switch (as) {
     case 'span':

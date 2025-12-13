@@ -1,24 +1,21 @@
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Suspense } from 'react';
 
-import './globals.css';
-
-import Navigation from '@/components/shared/Navigation';
-import Footer from '@/components/shared/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
-
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import Footer from '@/components/shared/Footer';
+import Navigation from '@/components/shared/Navigation';
 import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
-import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import RevealObserver from '@/components/systems/RevealObserver';
-
+import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { LocaleProvider, type Locale } from '@/lib/LocaleContext';
-import { SiteProvider } from '@/lib/SiteContext';
 import { getActiveSiteKey } from '@/lib/site';
+import { SiteProvider } from '@/lib/SiteContext';
+
+import './globals.css';
 
 // site scaffold only — no production behavior changes while flag disabled
 const SITE_URL = process.env.SITE_URL!;

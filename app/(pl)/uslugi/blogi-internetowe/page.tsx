@@ -28,7 +28,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import { GoLaw } from 'react-icons/go';
-import SectionPrices, { SectionPricesPlan, Note } from '@/components/ui/sections/SectionPrices';
+import SectionPrices, { type Note, type SectionPricesPlan } from '@/components/ui/sections/SectionPrices';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';

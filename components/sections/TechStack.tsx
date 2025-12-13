@@ -2,7 +2,7 @@
 
 import { motion, useMotionValue, useAnimationFrame, useReducedMotion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { IconType } from 'react-icons';
+import type { IconType } from 'react-icons';
 import IconText from '@/components/ui/IconText';
 import {
   SiNextdotjs,

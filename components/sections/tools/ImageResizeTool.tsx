@@ -1,7 +1,10 @@
 'use client';
 
 import Button from '@/components/ui/Button';
-import Tag from '@/components/ui/Tag';
+import Badge from '@/components/ui/Badge';
+import Heading from '@/components/ui/typography/Heading';
+import Text from '@/components/ui/typography/Text';
+import ToolAlert from '@/components/ui/tools/ToolAlert';
 import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type DragEvent as ReactDragEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
@@ -247,7 +250,7 @@ function PillButton<T extends string>({ value, current, label, onChange, disable
   const isActive = value === current;
 
   return (
-    <Tag
+    <Badge
       as="button"
       type="button"
       variant={isActive ? 'selected' : 'default'}
@@ -257,7 +260,7 @@ function PillButton<T extends string>({ value, current, label, onChange, disable
       className={isActive ? '' : 'border-black/10 hover:bg-neutral-100'}
     >
       {label}
-    </Tag>
+    </Badge>
   );
 }
 
@@ -785,22 +788,22 @@ export default function ImageResizeTool() {
       const anchorX = dragRef.current.anchorX;
       const anchorY = dragRef.current.anchorY;
 
-      let dx = px - anchorX;
-      let dy = py - anchorY;
+      const dx = px - anchorX;
+      const dy = py - anchorY;
 
       if (dx === 0 && dy === 0) return;
 
       const signX = dx >= 0 ? 1 : -1;
       const signY = dy >= 0 ? 1 : -1;
 
-      let absDx = Math.abs(dx);
-      let absDy = Math.abs(dy);
+      const absDx = Math.abs(dx);
+      const absDy = Math.abs(dy);
 
-      let wByDx = absDx;
-      let hByDx = wByDx / aspect;
+      const wByDx = absDx;
+      const hByDx = wByDx / aspect;
 
-      let hByDy = absDy;
-      let wByDy = hByDy * aspect;
+      const hByDy = absDy;
+      const wByDy = hByDy * aspect;
 
       let w = wByDx;
       let h = hByDx;
@@ -913,7 +916,7 @@ export default function ImageResizeTool() {
             >
               <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
               <span className="mb-2 text-xs! text-[#5e5e5e]">{t.clickToSelect}</span>
-              <Tag variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Tag>
+              <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
               <input
                 type="file"
                 accept="image/*"
@@ -1020,7 +1023,9 @@ export default function ImageResizeTool() {
                   }
                   className="w-full! p-0!"
                 />
-                <p className="text-xs! text-[#5e5e5e]">{t.qualityHelper}</p>
+                <Text variant="xs" tone="muted" as="p" className="text-xs!">
+                  {t.qualityHelper}
+                </Text>
               </div>
             )}
 
@@ -1031,9 +1036,9 @@ export default function ImageResizeTool() {
             </div>
 
             {error && (
-              <p className="mt-2 text-xs! text-red-600" role="alert">
+              <ToolAlert variant="error" className="mt-2">
                 {error}
-              </p>
+              </ToolAlert>
             )}
           </div>
         </form>
@@ -1041,18 +1046,24 @@ export default function ImageResizeTool() {
 
       <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
         <div className="mb-2 flex items-center justify-between gap-2">
-          <h2 className="h6">{t.cropTools}</h2>
+          <Heading as="h2" className="h6">
+            {t.cropTools}
+          </Heading>
           {dims && (
-            <span className="text-xs! text-[#5e5e5e]">
+            <Text variant="xs" tone="muted" as="span" className="text-xs!">
               {t.target}{' '}
               <strong>
                 {dims.width} x {dims.height} px
               </strong>
-            </span>
+            </Text>
           )}
         </div>
 
-        {!state.imageUrl && <p className="text-xs! text-[#5e5e5e]">{t.addImageFirstHelper}</p>}
+        {!state.imageUrl && (
+          <Text variant="xs" tone="muted" as="p" className="text-xs!">
+            {t.addImageFirstHelper}
+          </Text>
+        )}
 
         {state.imageUrl && cropEnabled && (
           <>
@@ -1154,7 +1165,9 @@ export default function ImageResizeTool() {
 
                   {state.shape === 'rect' && (
                     <div className="space-y-2">
-                      <p className="text-xs! text-[#5e5e5e]">{t.rectAspect}</p>
+                      <Text variant="xs" tone="muted" as="p" className="text-xs!">
+                        {t.rectAspect}
+                      </Text>
                       <div className="flex flex-wrap gap-2">
                         {RECT_ASPECTS.map((aspect) => (
                           <PillButton key={aspect} value={aspect} current={state.shapeAspect} label={aspect} onChange={(val) => handleShapeAspectChange(val as ShapeAspect)} />

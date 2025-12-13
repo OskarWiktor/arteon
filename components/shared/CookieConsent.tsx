@@ -51,7 +51,9 @@ function writeConsent(state: ConsentState) {
       const base = parts.slice(-2).join('.');
       domainAttr = `; Domain=.${base}`;
     }
-  } catch {}
+  } catch {
+    domainAttr = '';
+  }
   document.cookie = `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}${domainAttr}`;
 }
 
@@ -60,7 +62,7 @@ function updateGtag(analytics: boolean) {
   if (typeof window === 'undefined') return;
 
   const win = window as typeof window & {
-    gtag?: (...args: any[]) => void;
+    gtag?: (..._args: any[]) => void;
   };
 
   if (typeof win.gtag !== 'function') return;

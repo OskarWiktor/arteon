@@ -1,11 +1,11 @@
 'use client';
 
 import Button from '@/components/ui/Button';
-import { DragEvent, FormEvent, useMemo, useState } from 'react';
+import { useMemo, useState, type DragEvent, type FormEvent } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import Text from '@/components/ui/typography/Text';
-import Tag from '@/components/ui/Tag';
+import Badge from '@/components/ui/Badge';
 import Heading from '@/components/ui/typography/Heading';
 
 const ui = {
@@ -482,15 +482,15 @@ export default function JpgPngToWebp() {
       <ToolSection className="space-y-4">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <p className="mb-2 font-semibold uppercase">{t.addFiles}</p>
+            <Text as="p" variant="small" className="mb-2 font-semibold uppercase">{t.addFiles}</Text>
             <label
               onDrop={handleDrop}
               onDragOver={handleDragOver}
               className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
             >
-              <span className="mb-1 text-sm font-medium">{t.dragDropImages}</span>
-              <span className="mb-2 text-xs text-[#5e5e5e]">{t.clickToSelect}</span>
-              <Tag variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Tag>
+              <Text as="span" variant="small" className="mb-1 font-medium">{t.dragDropImages}</Text>
+              <Text as="span" variant="xs" tone="muted" className="mb-2">{t.clickToSelect}</Text>
+              <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
               <input type="file" accept="image/jpeg,image/png" multiple onChange={handleFileChange} className="hidden" />
             </label>
             {globalError && (
@@ -501,10 +501,10 @@ export default function JpgPngToWebp() {
           </div>
 
           <div>
-            <p className="mt-8 mb-2 font-semibold uppercase">{t.setQuality}</p>
+            <Text as="p" variant="small" className="mt-8 mb-2 font-semibold uppercase">{t.setQuality}</Text>
             <div className="flex items-center">
               <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="p-0!" />
-              <span className="w-16 text-right text-neutral-700">{quality}%</span>
+              <Text as="span" variant="small" tone="dark" className="w-16 text-right">{quality}%</Text>
             </div>
             <Text variant="small" tone="muted" as="span" className="mt-3">
               {t.qualityHelper}
@@ -512,14 +512,16 @@ export default function JpgPngToWebp() {
 
             <div className="mt-3 flex items-center">
               <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
-              <label htmlFor="auto-download" className="pl-2 text-sm! text-neutral-700">
-                {t.autoDownloadAll}
+              <label htmlFor="auto-download" className="pl-2 cursor-pointer">
+                <Text variant="small" tone="dark" as="span">
+                  {t.autoDownloadAll}
+                </Text>
               </label>
             </div>
           </div>
 
           <div>
-            <p className="mt-8 mb-2 font-semibold uppercase">{t.convertAndDownload}</p>
+            <Text as="p" variant="small" className="mt-8 mb-2 font-semibold uppercase">{t.convertAndDownload}</Text>
             {total > 0 && (
               <div className="mb-3 space-y-2">
                 <div className="flex items-center justify-between">
@@ -527,9 +529,9 @@ export default function JpgPngToWebp() {
                     {t.inQueue} <strong>{total}</strong> {t.files}
                   </Text>
                   {total > 0 && (
-                    <span>
+                    <Text as="span" variant="small" tone="muted">
                       Zakończone: {completed} / {total}
-                    </span>
+                    </Text>
                   )}
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
@@ -610,7 +612,7 @@ export default function JpgPngToWebp() {
           )}
         </div>
 
-        {files.length === 0 && <p className="text-xs text-[#5e5e5e]">{t.addFilesToStart}</p>}
+        {files.length === 0 && <Text variant="xs" tone="muted" as="p">{t.addFilesToStart}</Text>}
 
         {files.length > 0 && (
           <div className="space-y-2 text-sm">
@@ -637,10 +639,12 @@ export default function JpgPngToWebp() {
                     </button>
 
                     <div className="min-w-0 flex-1">
-                      <p className="truncate text-sm! font-medium" title={item.file.name}>
-                        {item.file.name}
-                      </p>
-                      <p className="text-xs! text-[#5e5e5e]">
+                      <div title={item.file.name}>
+                        <Text as="p" variant="small" className="truncate font-medium">
+                          {item.file.name}
+                        </Text>
+                      </div>
+                      <Text as="p" variant="xs" tone="muted" className="text-xs!">
                         {t.sizeBefore} {formatBytes(item.inputSize)}
                         {item.outputSize != null && (
                           <>
@@ -652,35 +656,35 @@ export default function JpgPngToWebp() {
                                 {')'}
                               </>
                             )}
-                            {isBigger && <span className="ml-1 text-[11px] text-amber-700">{t.biggerThanOriginal}</span>}
+                            {isBigger && <Text as="span" variant="xs" className="ml-1 text-amber-700">{t.biggerThanOriginal}</Text>}
                           </>
                         )}
-                      </p>
-                      {item.usedQuality && <p className="text-[11px] text-[#5e5e5e]">{t.usedQuality} {item.usedQuality}%</p>}
-                      {item.error && <p className="mt-1 text-xs! text-red-600">{item.error}</p>}
+                      </Text>
+                      {item.usedQuality && <Text as="p" variant="xs" tone="muted" className="text-[11px]">{t.usedQuality} {item.usedQuality}%</Text>}
+                      {item.error && <ToolAlert variant="error" className="mt-2">{item.error}</ToolAlert>}
                     </div>
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <Tag variant={item.status === 'done' ? 'success' : item.status === 'error' ? 'error' : 'neutral'} size="md">
+                    <Badge variant={item.status === 'done' ? 'success' : item.status === 'error' ? 'error' : 'neutral'} size="md">
                       {statusLabel}
-                    </Tag>
+                    </Badge>
 
                     {item.status === 'done' && item.downloadUrl && (
-                      <Tag as="button" type="button" onClick={() => handleDownloadSingle(item.id)} variant="default" size="md" className="cursor-pointer border-black/15">
+                      <Badge as="button" type="button" onClick={() => handleDownloadSingle(item.id)} variant="default" size="md" className="cursor-pointer border-black/15">
                         {item.downloaded ? t.downloaded : t.actions.download}
-                      </Tag>
+                      </Badge>
                     )}
 
                     {item.status === 'done' && (
-                      <Tag as="button" type="button" onClick={() => handleReconvert(item.id)} variant="default" size="md" className="cursor-pointer border-black/10">
+                      <Badge as="button" type="button" onClick={() => handleReconvert(item.id)} variant="default" size="md" className="cursor-pointer border-black/10">
                         {t.actions.reconvert}
-                      </Tag>
+                      </Badge>
                     )}
 
-                    <Tag as="button" type="button" onClick={() => handleRemove(item.id)} variant="default" size="sm" className="cursor-pointer text-[#5e5e5e] hover:text-neutral-900">
+                    <Badge as="button" type="button" onClick={() => handleRemove(item.id)} variant="default" size="sm" className="cursor-pointer text-[#5e5e5e] hover:text-neutral-900">
                       {t.actions.remove}
-                    </Tag>
+                    </Badge>
                   </div>
                 </div>
               );

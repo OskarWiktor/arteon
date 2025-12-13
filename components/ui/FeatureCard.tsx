@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import IconText from './IconText';
 import Text from './typography/Text';
 
@@ -41,8 +41,10 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
       {Array.isArray(points) && points.length > 0 && (
         <ul className="mt-2 space-y-2" role="list">
           {points.map((pt, i) => (
-            <li key={i} className="flex items-start gap-1 text-base text-[#5e5e5e]">
-              {pt}
+            <li key={i} className="flex items-start gap-1">
+              <Text variant="body" tone="muted" as="span">
+                {pt}
+              </Text>
             </li>
           ))}
         </ul>

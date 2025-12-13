@@ -2,6 +2,9 @@
 
 import { useRef, useState } from 'react';
 import Button from '../ui/Button';
+import Heading from '../ui/typography/Heading';
+import Text from '../ui/typography/Text';
+import ToolAlert from '../ui/tools/ToolAlert';
 
 const ui = {
   pl: {
@@ -62,8 +65,16 @@ export default function ContactForm({ title, description, defaultSubject, action
     <section id="kontakt" className="scroll-mt-26">
       {(title || description) && (
         <header className="mb-6">
-          {title && <h2 className="h3 reveal-animation">{title}</h2>}
-          {description && <p className="pt-3 pb-2 text-[#2B2B2B]">{description}</p>}
+          {title && (
+            <Heading as="h2" className="h3 reveal-animation">
+              {title}
+            </Heading>
+          )}
+          {description && (
+            <Text variant="body" tone="dark" as="p" className="pt-3 pb-2">
+              {description}
+            </Text>
+          )}
         </header>
       )}
 
@@ -97,14 +108,14 @@ export default function ContactForm({ title, description, defaultSubject, action
         <span id="form-status" className="sr-only" aria-live="polite" />
 
         {formStatus === 'error' && (
-          <p role="alert" className="text-red-700">
+          <ToolAlert variant="error" className="mt-2">
             {t.error}
-          </p>
+          </ToolAlert>
         )}
         {formStatus === 'success' && (
-          <p role="status" className="text-slate-500">
+          <ToolAlert variant="success" className="mt-2">
             {t.success}
-          </p>
+          </ToolAlert>
         )}
       </form>
     </section>

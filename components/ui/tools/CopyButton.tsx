@@ -7,13 +7,19 @@ interface CopyButtonProps {
   text: string;
   label?: string;
   copiedLabel?: string;
+  variant?: 'default' | 'dark';
   className?: string;
   onCopy?: () => void;
   onError?: () => void;
 }
 
-export default function CopyButton({ text, label = 'Kopiuj', copiedLabel = 'Skopiowano', className = '', onCopy, onError }: CopyButtonProps) {
+export default function CopyButton({ text, label = 'Kopiuj', copiedLabel = 'Skopiowano', variant = 'default', className = '', onCopy, onError }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
+
+  const variantClasses: Record<NonNullable<CopyButtonProps['variant']>, string> = {
+    default: 'border border-black/15 bg-white text-neutral-900 hover:bg-neutral-50',
+    dark: 'border border-white/10 text-white/80 hover:bg-white/10',
+  };
 
   const handleCopy = async () => {
     try {
@@ -45,7 +51,7 @@ export default function CopyButton({ text, label = 'Kopiuj', copiedLabel = 'Skop
     <button
       type="button"
       onClick={handleCopy}
-      className={`inline-flex cursor-pointer items-center gap-1 rounded-full border border-black/15 bg-white px-2.5 py-1 text-[11px]! font-medium text-neutral-900 hover:bg-neutral-50 ${className}`}
+      className={`inline-flex cursor-pointer items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-medium ${variantClasses[variant]} ${className}`}
       aria-label={copied ? copiedLabel : label}
     >
       {copied ? (

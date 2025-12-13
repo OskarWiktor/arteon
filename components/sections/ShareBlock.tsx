@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { RiFacebookCircleFill, RiLinkedinBoxFill, RiMailLine, RiLinkM } from 'react-icons/ri';
+import Text from '../ui/typography/Text';
+import { RiFacebookCircleFill, RiLinkedinBoxFill, RiMailLine } from 'react-icons/ri';
+import CopyButton from '../ui/tools/CopyButton';
 
 const ui = {
   pl: {
@@ -24,15 +25,8 @@ type ShareBlockProps = {
   className?: string;
 };
 
-export default function ShareBlock({ url, title, label = ui.pl.defaultLabel, className = '' }: ShareBlockProps) {
+export default function ShareBlock({ url, title, className = '' }: ShareBlockProps) {
   const t = ui.pl;
-  const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    if (!copied) return;
-    const t = setTimeout(() => setCopied(false), 2500);
-    return () => clearTimeout(t);
-  }, [copied]);
 
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
@@ -41,19 +35,6 @@ export default function ShareBlock({ url, title, label = ui.pl.defaultLabel, cla
   const linkedinHref = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
   const twitterHref = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
   const mailHref = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
-
-  async function handleCopy() {
-    try {
-      if (navigator?.clipboard?.writeText) {
-        await navigator.clipboard.writeText(url);
-        setCopied(true);
-      } else {
-        window.prompt(t.copyPrompt, url);
-      }
-    } catch {
-      window.prompt(t.copyPrompt, url);
-    }
-  }
 
   return (
     <section className={`w-fit rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`} aria-label={t.ariaLabel}>
@@ -71,7 +52,9 @@ export default function ShareBlock({ url, title, label = ui.pl.defaultLabel, cla
             </ShareIconLink>
 
             <ShareIconLink href={twitterHref} label={t.shareTwitter}>
-              <span className="text-xs font-semibold">X</span>
+              <Text variant="xs" as="span" className="font-semibold">
+                X
+              </Text>
               <span className="sr-only">{t.shareTwitter}</span>
             </ShareIconLink>
 
@@ -80,14 +63,13 @@ export default function ShareBlock({ url, title, label = ui.pl.defaultLabel, cla
               <span className="sr-only">{t.shareEmail}</span>
             </ShareIconLink>
 
-            <button
-              type="button"
-              onClick={handleCopy}
-              className="inline-flex items-center gap-1.5 rounded-full border border-black/15 px-3 py-1.5 text-xs font-medium text-[#333] transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
-            >
-              <RiLinkM className="h-4 w-4" aria-hidden="true" />
-              <span>{copied ? t.copied : t.copyLink}</span>
-            </button>
+            <CopyButton
+              text={url}
+              label={t.copyLink}
+              copiedLabel={t.copied}
+              onError={() => window.prompt(t.copyPrompt, url)}
+              className="gap-1.5 px-3 py-1.5 text-xs text-[#333] transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+            />
           </div>
         </div>
       </div>

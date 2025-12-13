@@ -2,7 +2,7 @@ import Button from '../ui/Button';
 import ButtonGroup from '../ui/ButtonGroup';
 import Eyebrow from '../ui/typography/Eyebrow';
 import Text from '../ui/typography/Text';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 
 const ui = {

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 export type ProjectCategory = 'aplikacja' | 'strona' | 'blog' | 'sklep' | 'grafika' | 'treść' | 'marketing';
 export type PrimaryCategory = Extract<ProjectCategory, 'aplikacja' | 'strona' | 'blog' | 'sklep'>;

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import Eyebrow from './Eyebrow';
 import Heading from './Heading';
 

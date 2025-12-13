@@ -1,12 +1,13 @@
 'use client';
 
-import { FormEvent, useMemo, useState } from 'react';
+import { useMemo, useState, type FormEvent } from 'react';
 import Button from '@/components/ui/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import CopyButton from '@/components/ui/tools/CopyButton';
+import Text from '@/components/ui/typography/Text';
 
 const ui = {
   pl: {
@@ -355,13 +356,15 @@ function randomHexColor(): string {
   return `#${value.toString(16).padStart(6, '0')}`;
 }
 
-function Swatch({ color, onCopy, copied }: { color: PaletteColor; onCopy: (hex: string) => void; copied: boolean }) {
+function Swatch({ color, onCopy, copied: _copied }: { color: PaletteColor; onCopy: (hex: string) => void; copied: boolean }) {
   const t = ui.pl;
   return (
     <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
       <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`${t.colorPreview} ${color.hex}`} />
       <div className="min-w-0 flex-1">
-        <p className="text-sm! leading-tight font-medium">{color.hex}</p>
+        <Text variant="small" as="p" className="leading-tight font-medium">
+          {color.hex}
+        </Text>
         <p className="truncate text-[11px]! text-[#5e5e5e]">{formatHsl(color.hsl)}</p>
       </div>
       <CopyButton text={color.hex} label={t.copy} copiedLabel={t.copied} onCopy={() => onCopy(color.hex)} />
@@ -430,7 +433,9 @@ export default function ColorPaletteGenerator() {
               <ToolInfo className="flex items-center gap-3">
                 <div className="h-7 w-7 rounded-lg border border-black/10" style={{ backgroundColor: normalizedBase }} aria-label={t.currentBaseColor} />
                 <div className="min-w-0">
-                  <p className="text-sm! leading-tight font-medium">{normalizedBase}</p>
+                  <Text variant="small" as="p" className="leading-tight font-medium">
+                    {normalizedBase}
+                  </Text>
                   <ToolHelper className="text-[11px]!">{t.baseColorHelper}</ToolHelper>
                 </div>
               </ToolInfo>

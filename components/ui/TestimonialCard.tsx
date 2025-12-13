@@ -34,7 +34,9 @@ export default function TestimonialCard({ item }: Props) {
     <figure className="flex h-full w-full flex-col justify-between rounded-2xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
       <blockquote>
         <StarRating value={item.rating} />
-        <p className="mt-2 text-[#0A0A0A]">“{displayedQuote}”</p>
+        <Text variant="body" tone="default" as="p" className="mt-2">
+          "{displayedQuote}"
+        </Text>
       </blockquote>
 
       <figcaption className="mt-5 flex items-center gap-4">
@@ -44,7 +46,9 @@ export default function TestimonialCard({ item }: Props) {
           <div aria-hidden className="h-12 w-12 rounded-full bg-gray-200" />
         )}
         <div className="min-w-0">
-          <span className="truncate text-base font-semibold text-[#0A0A0A]">{item.author}</span>
+          <Text variant="body" tone="default" as="span" className="truncate font-semibold">
+            {item.author}
+          </Text>
           {item.role && (
             <>
               <br />

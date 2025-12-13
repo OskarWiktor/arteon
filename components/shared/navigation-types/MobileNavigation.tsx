@@ -1,10 +1,13 @@
 'use client';
 
-import { JSX, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type JSX } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
+import Text from '../../ui/typography/Text';
+import Eyebrow from '../../ui/typography/Eyebrow';
+import IconText from '../../ui/IconText';
 
 const ui = {
   pl: {
@@ -313,13 +316,17 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             transition={{ type: 'spring', stiffness: 280, damping: 30 }}
           >
             <div className="flex items-center justify-end px-4 pt-3">
-              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 text-sm font-medium text-[#5e5e5e] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
-                {t.close}
+              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
+                <Text variant="small" tone="muted" as="span" className="font-medium">
+                  {t.close}
+                </Text>
               </button>
             </div>
 
             <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
-              <p className="px-3 pb-1 text-[11px] tracking-wider text-[#5e5e5e] uppercase">{t.services}</p>
+              <Eyebrow variant="dynamic" className="px-3 pb-1 text-[11px] tracking-wider">
+                {t.services}
+              </Eyebrow>
 
               <div className="flex flex-col">
                 {SECTIONS.map((sec) => {
@@ -331,12 +338,18 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           <Link
                             href={sec.hubHref}
                             onClick={() => setIsOpen(false)}
-                            className="m-2 inline-block rounded px-2 py-1 text-[14px] font-semibold text-[#080808] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                            className="m-2 inline-block rounded px-2 py-1 outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                           >
-                            {sec.title}
+                            <Text variant="small" as="span" className="font-semibold">
+                              {sec.title}
+                            </Text>
                           </Link>
                         ) : (
-                          <div className="m-2 px-2 py-1 text-[14px] font-semibold text-[#080808]">{sec.title}</div>
+                          <div className="m-2 px-2 py-1">
+                            <Text variant="small" as="span" className="font-semibold">
+                              {sec.title}
+                            </Text>
+                          </div>
                         )}
 
                         <button
@@ -344,7 +357,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           aria-expanded={expanded}
                           aria-controls={`sec-${sec.key}`}
                           onClick={() => toggleKey(sec.key)}
-                          className="m-2 inline-flex items-center gap-1 rounded px-2 py-1 text-sm text-[#5e5e5e] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                          className="m-2 inline-flex items-center gap-1 rounded px-2 py-1 outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                         >
                           <RiArrowDownSLine className={`h-4 w-4 transition-transform ${expanded ? 'rotate-180' : ''}`} aria-hidden="true" />
                         </button>
@@ -374,8 +387,19 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                     onClick={() => setIsOpen(false)}
                                     className="group flex items-center gap-3 rounded-xl px-3 py-2 text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                                   >
-                                    {it.icon && <span className="text-[#5e5e5e] group-hover:text-slate-600">{it.icon}</span>}
-                                    <span>{it.title}</span>
+                                    <IconText
+                                      icon={
+                                        it.icon ? (
+                                          <span className="text-[#5e5e5e] group-hover:text-slate-600">{it.icon}</span>
+                                        ) : undefined
+                                      }
+                                      gap="3"
+                                      className="min-w-0"
+                                    >
+                                      <Text variant="body" as="span">
+                                        {it.title}
+                                      </Text>
+                                    </IconText>
                                   </Link>
                                 </li>
                               ))}
@@ -392,8 +416,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <ul className="mb-2 flex flex-col gap-1">
                 {NAV.map(({ href, label, exact }) => {
-                  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
-                  const isActive = exact ? currentPath === href : currentPath.startsWith(href);
+                  const isActive = exact ? pathname === href : pathname.startsWith(href);
                   return (
                     <li key={label}>
                       <Link
@@ -410,8 +433,6 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   );
                 })}
               </ul>
-
-              <div className="my-2 h-px w-full bg-neutral-200" />
 
               <ul className="mb-2 flex flex-col gap-1">
                 {[

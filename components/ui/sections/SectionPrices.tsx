@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
 import Button from '../Button';
+import ButtonGroup from '../ButtonGroup';
 import Text from '../typography/Text';
 import IconText from '../IconText';
 import Tag from '../Tag';
@@ -143,18 +144,17 @@ export default function SectionPrices({
               </div>
 
               {(plan.btnOne && plan.btnOneLink) || (plan.btnTwo && plan.btnTwoLink) ? (
-                <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label={`${t.planActions}: ${plan.name}`}>
-                  {plan.btnOne && plan.btnOneLink && (
-                    <Button link={plan.btnOneLink} variant={plan.lastPlan ? 'dark' : 'accent'} arrow>
-                      {plan.btnOne}
-                    </Button>
-                  )}
-                  {plan.btnTwo && plan.btnTwoLink && (
-                    <Button link={plan.btnTwoLink} arrow>
-                      {plan.btnTwo}
-                    </Button>
-                  )}
-                </div>
+                <ButtonGroup
+                  btnOne={plan.btnOne}
+                  btnOneLink={plan.btnOneLink}
+                  btnOneVariant={plan.lastPlan ? 'dark' : 'accent'}
+                  btnTwo={plan.btnTwo}
+                  btnTwoLink={plan.btnTwoLink}
+                  spacing="default"
+                  align="left"
+                  ariaLabel={`${t.planActions}: ${plan.name}`}
+                  className="mt-6"
+                />
               ) : null}
             </article>
           );

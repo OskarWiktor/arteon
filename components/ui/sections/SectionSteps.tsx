@@ -1,4 +1,4 @@
-import { ElementType, JSX, ReactNode } from 'react';
+import type { ElementType, JSX, ReactNode } from 'react';
 import Image from 'next/image';
 import Wrapper from '../Wrapper';
 import ButtonGroup from '../ButtonGroup';

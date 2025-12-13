@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../ButtonGroup';
 

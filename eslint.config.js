@@ -12,9 +12,24 @@ import nextPlugin from '@next/eslint-plugin-next';
 import reactHooks from 'eslint-plugin-react-hooks';
 
 export default [
-  js.configs.recommended,
   {
     ignores: ['**/.next/**', '**/node_modules/**'],
+  },
+  js.configs.recommended,
+  {
+    files: ['**/*.{js,mjs,cjs}'],
+    languageOptions: {
+      globals: {
+        process: 'readonly',
+        require: 'readonly',
+        module: 'readonly',
+        __dirname: 'readonly',
+        __filename: 'readonly',
+      },
+    },
+  },
+  {
+    files: ['**/*.{ts,tsx}'],
     languageOptions: {
       parser: tsparser,
       parserOptions: {
@@ -33,29 +48,26 @@ export default [
       security: security,
       promise: promise,
       'react-hooks': reactHooks,
-      next: nextPlugin,
+      '@next/next': nextPlugin,
     },
     rules: {
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'off',
 
+      'no-undef': 'off',
+
       'unused-imports/no-unused-imports': 'error',
       'no-duplicate-imports': 'error',
-      'import/order': [
+      'import/order': 'off',
+
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': [
         'error',
         {
-          groups: [['builtin', 'external'], ['internal'], ['parent', 'sibling', 'index']],
-          pathGroups: [
-            {
-              pattern: '@/**',
-              group: 'internal',
-              position: 'after',
-            },
-          ],
-          pathGroupsExcludedImportTypes: ['builtin'],
-          'newlines-between': 'always',
-          alphabetize: { order: 'asc', caseInsensitive: true },
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
         },
       ],
 
@@ -65,9 +77,16 @@ export default [
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
 
-      'next/google-font-display': 'warn',
-      'next/no-html-link-for-pages': 'off',
-      'next/no-img-element': 'warn',
+      '@next/next/google-font-display': 'warn',
+      '@next/next/no-html-link-for-pages': 'off',
+      '@next/next/no-img-element': 'warn',
+    },
+  },
+  {
+    files: ['**/*.d.ts'],
+    rules: {
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
     },
   },
   prettier,
