@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Licznik długości meta title i description',
     description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
-    url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
+    url: '/narzedzia/licznik-dlugosci-meta-title-i-description',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
       },
     ],
   },
@@ -100,7 +100,13 @@ export default function Page() {
             <li>zakończ delikatnym wezwaniem do działania, na przykład „Sprawdź ofertę”, „Umów konsultację” albo „Zobacz szczegóły”,</li>
           </ul>
 
-          <p className="text-[#5e5e5e]">
+          <ul className="ml-6 list-disc">
+            <li>trzymaj się 50-60 znaków dla title i 140-160 dla description (to orientacyjne widełki),</li>
+            <li>dodaj słowo kluczowe i nazwę marki,</li>
+            <li>zakończ delikatnym wezwaniem do działania, na przykład „Sprawdź ofertę”, „Umów konsultację” albo „Zobacz szczegóły”,</li>
+          </ul>
+
+          <p className="text-light">
             Pamiętaj, że Google może w niektórych sytuacjach zamienić Twój opis na fragment treści ze strony, dlatego ważne informacje powinny pojawić się również w samej zawartości strony.
           </p>
         </SectionInfo>
@@ -115,7 +121,7 @@ export default function Page() {
         btnOneLink="/kontakt"
         btnTwo="Sprawdź ofertę pozycjonowania"
         btnTwoLink="/uslugi/marketing/pozycjonowanie-stron"
-        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

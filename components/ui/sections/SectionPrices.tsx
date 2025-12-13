@@ -2,9 +2,9 @@ import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
 import Button from '../Button';
 import ButtonGroup from '../ButtonGroup';
+import Badge from '../Badge';
 import Text from '../typography/Text';
 import IconText from '../IconText';
-import Tag from '../Tag';
 
 const ui = {
   pl: {
@@ -97,9 +97,9 @@ export default function SectionPrices({
               ].join(' ')}
             >
               {plan.badgeLabel && (
-                <Tag variant="dark" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
+                <Badge variant="dark" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
                   {plan.badgeLabel}
-                </Tag>
+                </Badge>
               )}
 
               <div>

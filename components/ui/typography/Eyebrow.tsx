@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-type EyebrowVariant = 'default' | 'white' | 'hero' | 'dynamic';
+type EyebrowVariant = 'default' | 'hero' | 'dynamic';
 
 interface EyebrowProps {
   children: ReactNode;
@@ -13,8 +13,7 @@ export default function Eyebrow({ children, variant = 'default', className = '',
   const baseClasses = 'text-base tracking-wider uppercase';
   
   const variantClasses: Record<EyebrowVariant, string> = {
-    default: `${baseClasses} text-[#5e5e5e]`,
-    white: `${baseClasses} text-white`,
+    default: `${baseClasses} text-light`,
     hero: 'text-base tracking-wide uppercase sm:text-lg',
     dynamic: '', // Will be handled by className prop
   };

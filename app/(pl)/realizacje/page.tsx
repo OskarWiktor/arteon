@@ -10,12 +10,12 @@ export const metadata = {
   openGraph: {
     title: 'Portfolio Arteon - projekty, które działają',
     description: 'Strony, sklepy, identyfikacje i kampanie. Konkretne efekty i przejrzty proces.',
-    url: 'https://www.arteonagency.pl/realizacje',
+    url: '/realizacje',
     type: 'website',
     // TODO: Add unique OpenGraph image for portfolio page: /assets/og/realizacje.webp (1200x630px)
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/bg/abstract-bg13.webp',
       },
     ],
   },

@@ -35,7 +35,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
         const catSlug = getPrimaryCategorySlug(a);
         const href = `${t.urls.education}/${catSlug}/${a.slug}`;
         return (
-          <article key={a.slug} className="overflow-hidden rounded-2xl bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg">
+          <article key={a.slug} className="surface-card">
             <Link href={href} className="block focus:outline-none">
               {a.cover ? (
                 <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">

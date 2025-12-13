@@ -28,8 +28,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt papieru firmowego | Arteon',
     description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+    url: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     type: 'website',
+    images: [{ url: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp' }],
   },
 } as const;
 

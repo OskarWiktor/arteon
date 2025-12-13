@@ -107,7 +107,7 @@ function FlowGroup({ items }: { items: any[] }) {
                   <p className="text-lg leading-relaxed">“{b.text}”</p>
                 </blockquote>
                 {(b.author || b.role) && (
-                  <figcaption className="mt-3 text-sm text-[#5e5e5e]">
+                  <figcaption className="mt-3 text-sm text-light">
                     {b.author}
                     {b.role ? `, ${b.role}` : ''}
                   </figcaption>
@@ -191,7 +191,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                     <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
                   </Aspect>
                 )}
-                {hasCaption && <figcaption className="mt-2 mb-6 text-sm text-[#5e5e5e] md:mb-12 lg:mb-16">{b.caption}</figcaption>}
+                {hasCaption && <figcaption className="mt-2 mb-6 text-sm text-light md:mb-12 lg:mb-16">{b.caption}</figcaption>}
               </figure>
             </div>
           );
@@ -254,11 +254,11 @@ export async function generateMetadata({ params }: { params: { category: string;
   if (!article) return {};
 
   const canonicalCat = getPrimaryCategorySlug(article);
-  const url = articleUrl(canonicalCat, article.slug);
   const canonicalPath = article.seo?.canonical || `/edukacja/${canonicalCat}/${article.slug}`;
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
-  const image = article.cover?.startsWith('http') ? article.cover : article.cover ? `${siteUrl}${article.cover}` : undefined;
+  const image = article.cover?.startsWith('http') ? article.cover : article.cover || undefined;
+  const ogUrl = canonicalPath.startsWith('/') ? canonicalPath : `/edukacja/${canonicalCat}/${article.slug}`;
 
   return {
     title,
@@ -266,7 +266,7 @@ export async function generateMetadata({ params }: { params: { category: string;
     alternates: { canonical: canonicalPath.startsWith('/') ? canonicalPath : `/edukacja/${canonicalCat}/${article.slug}` },
     openGraph: {
       type: 'article',
-      url,
+      url: ogUrl,
       title,
       description,
       images: image ? [{ url: image, width: 1200, height: 630, alt: article.title }] : undefined,
@@ -305,7 +305,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             <h1 className="h2 mb-1" itemProp="headline">
               {article.title}
             </h1>
-            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e] md:gap-4">
+            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-light md:gap-4">
               {article.author?.name ? <Badge text={article.author.name} /> : null}
               {article.datePublished ? <Badge text={`Publikacja: ${article.datePublished}`} /> : null}
               {article.readingTime ? <Badge text={`${article.readingTime} min czytania`} /> : null}

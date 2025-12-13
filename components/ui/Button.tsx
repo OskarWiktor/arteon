@@ -6,7 +6,7 @@ import { RiArrowRightUpLine } from 'react-icons/ri';
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: 'normal' | 'accent' | 'glass' | 'dark' | 'minimal' | 'totop';
+  variant?: 'normal' | 'accent' | 'glass' | 'dark';
   size?: 'small' | 'medium';
   onClick?: () => void;
   disabled?: boolean;
@@ -37,7 +37,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   switch (variant) {
     case 'normal':
       variantClass =
-        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] ' +
+        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-dark ' +
         'focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500';
       break;
     case 'accent':
@@ -52,16 +52,6 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
       variantClass =
         'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-gray-100 hover:bg-slate-500/60 backdrop-blur-sm bg-white/60 ' +
         'focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500';
-      break;
-    case 'minimal':
-      variantClass = 'bg-white text-[#080808] focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500';
-      break;
-    case 'totop':
-      variantClass =
-        'fixed right-5 bottom-5 z-50 rounded-full px-3 py-3 md:px-3 md:py-3 ' +
-        'shadow-lg bg-black text-white border border-black/10 ' +
-        'hover:bg-black/90 focus-visible:ring-white focus-visible:ring-2';
-      sizeClass = '';
       break;
   }
 

@@ -141,7 +141,7 @@ export default function Footer() {
         <Wrapper>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
             <section aria-label={t.companyDataLabel}>
-              <address className="text-base text-[#080808] not-italic">
+              <address className="text-base text-dark not-italic">
                 <p>
                   <strong>{ORG.name}</strong>
                 </p>
@@ -247,7 +247,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="mt-8 border-t border-gray-200 pt-4 text-[#5e5e5e]">
+          <div className="mt-8 border-t border-gray-200 pt-4 text-light">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
               <span className="text-center text-sm md:text-left">
                 © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {t.copyright}

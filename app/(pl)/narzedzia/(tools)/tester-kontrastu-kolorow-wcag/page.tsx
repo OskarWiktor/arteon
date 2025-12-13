@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
     description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',
-    url: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag',
+    url: '/narzedzia/tester-kontrastu-kolorow-wcag',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
       },
     ],
   },
@@ -79,16 +79,16 @@ export default function Page() {
           </p>
           <ul className="mb-6 list-disc pl-5">
             <li>
-              <strong>Tekst zwykły</strong> - poziom AA wymaga kontrastu co najmniej <strong>4.5:1</strong>, a AAA co najmniej <strong>7:1</strong>,
+              <strong>Tekst zwykły</strong> - poziom AA wymaga kontrastu co najmniej <strong>4.5:1</strong>, a AAA co najmniej <strong>7:1</strong>.
             </li>
             <li>
-              <strong>Duży tekst</strong> (min. 18 px regular lub 14 px pogrubiony) - poziom AA wymaga <strong>3:1</strong>, a AAA <strong>4.5:1</strong>,
+              <strong>Tekst duży</strong> - minimalny kontrast to <strong>3:1</strong>.
             </li>
             <li>
               <strong>Ikony i elementy UI</strong> - minimalny kontrast to <strong>3:1</strong>.
             </li>
           </ul>
-          <p className="text-[#5e5e5e]">Wszystkie obliczenia wykonywane są lokalnie w Twojej przeglądarce</p>
+          <p className="text-light">Wszystkie obliczenia wykonywane są lokalnie w Twojej przeglądarce</p>
         </SectionInfo>
 
         <Gap size="sm" />
@@ -101,7 +101,7 @@ export default function Page() {
         btnOneLink="/kontakt"
         btnTwo="Sprawdź nasze usługi"
         btnTwoLink="/uslugi"
-        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

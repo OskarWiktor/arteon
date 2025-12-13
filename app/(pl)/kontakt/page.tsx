@@ -15,13 +15,13 @@ export const metadata = {
   openGraph: {
     title: 'Kontakt - wycena Twojego planu | Arteon',
     description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
-    url: `${BASE_URL}/kontakt`,
+    url: '/kontakt',
     siteName: 'Arteon',
     type: 'website',
     // TODO: Add unique OpenGraph image for contact page: /assets/og/kontakt.webp (1200x630px)
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/bg/abstract-bg10.webp',
       },
     ],
   },

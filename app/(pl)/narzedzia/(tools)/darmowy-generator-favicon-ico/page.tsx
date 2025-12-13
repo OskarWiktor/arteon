@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
     description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',
-    url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
+    url: '/narzedzia/darmowy-generator-favicon-ico',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
       },
     ],
   },
@@ -81,13 +81,13 @@ export default function Page() {
               <strong>favicon.ico</strong> - klasyczna ikona strony widoczna w kartach przeglądarki,
             </li>
             <li>
-              <strong>apple-touch-icon 180x180</strong> - ikona dla urządzeń z iOS (Dodaj do ekranu początkowego),
+              <strong>180x180</strong> - apple-touch-icon dla iOS.
             </li>
             <li>
               <strong>192x192 i 512x512</strong> - ikony używane w manifestach PWA i na urządzeniach z Androidem oraz w Chrome.
             </li>
           </ul>
-          <p className="text-[#5e5e5e]">Wszystkie pliki generowane są lokalnie w Twojej przeglądarce - nic nie jest wysyłane na serwer.</p>
+          <p className="text-light">Wszystkie pliki generowane są lokalnie w Twojej przeglądarce - nic nie jest wysyłane na serwer.</p>
         </SectionInfo>
 
         <Gap size="sm" />
@@ -100,7 +100,7 @@ export default function Page() {
         btnOneLink="/kontakt"
         btnTwo="Sprawdź nasze usługi"
         btnTwoLink="/uslugi"
-        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

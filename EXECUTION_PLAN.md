@@ -58,8 +58,8 @@ Dla każdego zadania/epiku:
 
 ### 2.1 Usunięcie nieużywanych wariantów (prymitywy UI)
 - **Zakres** (wg audytu):
-  - `Button.variant="minimal"` (0 użyć)
-  - `Tag.variant="selected" | "success" | "error"` (brak realnych użyć)
+  - `Button.variant="minimal"` (0 użyć) ✅
+  - `Tag.variant="selected" | "success" | "error"` (brak realnych użyć) ✅
 - **Zależności**:
   - decyzja jest podjęta: usuwamy wszystko co nieużywane.
 - **Kryteria akceptacji**:
@@ -68,7 +68,7 @@ Dla każdego zadania/epiku:
 
 ### 2.2 Komponenty do usunięcia / scalenia
 - **Tooltip**: nie usuwamy (zostaje do późniejszego realnego wdrożenia).
-- **Badge vs Tag**: konsolidujemy do `Badge` (Badge dostaje warianty, Tag jest wygaszany/usuwany).
+- **Badge vs Tag**: konsolidujemy do `Badge` (Badge dostaje warianty, Tag jest wygaszany/usuwany). ✅
 - **Kryteria akceptacji**:
   - brak importów do usuniętych plików (jeśli Tag zostanie usunięty)
   - brak zmian wizualnych
@@ -78,6 +78,15 @@ Dla każdego zadania/epiku:
 ## 3) Faza 2 – Prymitywy „high ROI” (redukcja duplikacji)
 
 ### 3.1 Karuzele → jeden prymityw
+- Status: ✅
+- Odkrycie: `TestimonialsCarousel`, `ArticlesOverview`, `ProjectsOverview` mają bardzo podobną logikę (ResizeObserver + scroll listener + dots + keyboard) i obecnie nie ma wspólnego prymitywu w `components/ui`.
+- Wdrożone:
+  - `hooks/useCarouselScroller.ts` (właściwa lokalizacja dla hooków) ✅
+  - `components/ui/carousel/CarouselNavButtons.tsx` (wspólne kontrolki karuzeli: strzałki) ✅
+  - `components/ui/carousel/CarouselDots.tsx` (wspólne kontrolki karuzeli: kropki + SR) ✅
+  - Migracja: `TestimonialsCarousel` → `useCarouselScroller()` ✅
+  - Migracja: `ProjectsOverview` → `useCarouselScroller()` ✅
+  - Migracja: `ArticlesOverview` → `useCarouselScroller()` ✅
 - **Zakres**:
   - skonsolidować logikę z:
     - `TestimonialsCarousel`
@@ -92,6 +101,14 @@ Dla każdego zadania/epiku:
   - brak zmian w klasach (poza przeniesieniem do prymitywu)
 
 ### 3.2 „Surface/Card” – redukcja powtarzalnych stringów klas
+- Status: 🟡 (w toku)
+- Odkrycie: w repo powtarza się pattern karty (np. `overflow-hidden rounded-2xl bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg`).
+- Wdrożone:
+  - globalne klasy: `.surface-card`, `.surface-panel`, `.surface-panel-solid` ✅
+  - pierwsze przepięcia: `ArticlesList` + karty w `ArticlesOverview` → `.surface-card` ✅
+  - `TableBlock` → `.surface-panel-solid` ✅
+  - `ShareBlock` → `.surface-panel` ✅
+  - `TableOfContent` (desktop panel) → `.surface-panel-solid` ✅
 - **Opcje wdrożenia**:
   - globalne klasy `.surface` / `.surface-solid` w `globals.css`
   - albo komponent `Card` + warianty
@@ -102,6 +119,11 @@ Dla każdego zadania/epiku:
   - realna redukcja duplikacji (min. kilka miejsc przepiętych)
 
 ### 3.3 IconButton i SocialIconLink
+- Status: 🟡 (w toku)
+- Odkrycie: w `Navigation` i `MobileNavigation` powtarza się ten sam pattern linków ikonowych (target/rel + aria-label + focus ring + ikonka).
+- Wdrożone:
+  - `components/ui/SocialIconLink.tsx` ✅
+  - Migracja: `Navigation` + `MobileNavigation` → `SocialIconLink` ✅
 - **Cel**: ujednolicić focus ring, aria-label, target/rel.
 - **Kryteria akceptacji**:
   - brak zmian wizualnych

@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Edukacja - poradniki i wiedza | Arteon',
     description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź',
-    url: 'https://www.arteonagency.pl/edukacja',
+    url: '/edukacja',
     type: 'website',
     // TODO: Add unique OpenGraph image for education/blog page: /assets/og/edukacja.webp (1200x630px)
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/ogien.webp',
       },
     ],
   },

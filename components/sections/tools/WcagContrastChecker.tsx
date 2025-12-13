@@ -243,7 +243,7 @@ export default function WcagContrastChecker() {
                 <Button type="button" size="small" onClick={handleSwap}>
                   {t.swapColors}
                 </Button>
-                <Button type="button" size="small" variant="minimal" onClick={handleReset}>
+                <Button type="button" size="small" variant="normal" onClick={handleReset} className="border-0 shadow-none hover:shadow-none hover:translate-y-0">
                   {t.resetColors}
                 </Button>
               </div>

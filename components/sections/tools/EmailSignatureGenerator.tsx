@@ -839,7 +839,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.jobTitle}</label>
+                    <label className="mb-1 block text-xs! font-semibold text-light uppercase">{t.identity.jobTitle}</label>
                     <input
                       type="text"
                       value={config.jobTitle}
@@ -849,7 +849,7 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-[#5e5e5e] uppercase">{t.identity.company}</label>
+                    <label className="mb-1 block text-xs! font-semibold text-light uppercase">{t.identity.company}</label>
                     <input
                       type="text"
                       value={config.company}
@@ -1125,7 +1125,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.accentColor}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.accentColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -1136,13 +1136,13 @@ export default function EmailSignatureGenerator() {
                     </div>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.textColor}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.textColor}</p>
                     <div className="flex items-center gap-2">
                       <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="h-9 w-9 cursor-pointer border-none bg-white p-0!" />
                     </div>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.backgroundColor}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.backgroundColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -1156,7 +1156,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.fontFamily}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.fontFamily}</p>
                     <select
                       value={styleConfig.fontFamily}
                       onChange={(e) => handleStyleChange('fontFamily', e.target.value)}
@@ -1170,7 +1170,7 @@ export default function EmailSignatureGenerator() {
                     </select>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.fontSize}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.fontSize}</p>
                     <div className="flex flex-wrap gap-2">
                       {(['small', 'normal', 'large'] as FontSizeOption[]).map((size) => (
                         <Badge
@@ -1192,7 +1192,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.padding}</p>
+                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
                       <Badge
@@ -1213,7 +1213,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-[#5e5e5e] uppercase">{t.appearance.ctaRadius}</p>
+                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.ctaRadius}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
                       <Badge

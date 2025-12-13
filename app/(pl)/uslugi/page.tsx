@@ -32,12 +32,12 @@ export const metadata = {
   openGraph: {
     title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
     description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
-    url: 'https://www.arteonagency.pl/uslugi',
+    url: '/uslugi',
     type: 'website',
     // TODO: Add unique OpenGraph image for services page: /assets/og/uslugi.webp (1200x630px)
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/bg/abstract-bg12.webp',
       },
     ],
   },

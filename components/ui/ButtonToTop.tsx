@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { RiArrowUpLine } from 'react-icons/ri';
-import Button from './Button';
 
 export default function ButtonToTop({ targetId = 'article-root', showAfter = 400, label = 'Do góry' }: { targetId?: string; showAfter?: number; label?: string }) {
   const [visible, setVisible] = useState(false);
@@ -23,9 +22,15 @@ export default function ButtonToTop({ targetId = 'article-root', showAfter = 400
   if (!visible) return null;
 
   return (
-    <Button variant="totop" size="medium" onClick={scrollToTarget} className="rounded-full">
+    <button
+      type="button"
+      onClick={scrollToTarget}
+      className={
+        'fixed right-5 bottom-5 z-50 inline-flex w-fit cursor-pointer items-center rounded-full px-3 py-3 font-medium text-sm text-white shadow-lg transition hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-black border border-black/10'
+      }
+    >
       <span className="sr-only">{label}</span>
       <RiArrowUpLine aria-hidden className="h-5 w-5" />
-    </Button>
+    </button>
   );
 }

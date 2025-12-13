@@ -70,7 +70,7 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
   return (
     <div className="rounded-2xl bg-white p-4 shadow-md">
       <p className="h5">{value}</p>
-      <p className="text-[#5e5e5e]">{label}</p>
+      <p className="text-light">{label}</p>
       {note && <p className="mt-2">{note}</p>}
     </div>
   );
@@ -124,7 +124,7 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
                     <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
                   </Aspect>
                 )}
-                {b.caption && <figcaption className="mt-2 text-sm text-[#5e5e5e]">{b.caption}</figcaption>}
+                {b.caption && <figcaption className="mt-2 text-sm text-light">{b.caption}</figcaption>}
               </figure>
             </div>
           );
@@ -189,22 +189,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = project.seo?.title || `${project.title} - Case study`;
   const description = project.seo?.description || '';
-  const url = projectUrl(project.slug);
-  const image = project.image?.startsWith('http') ? project.image : `${siteUrl}${project.image}`;
+  const image = project.image?.startsWith('http') ? project.image : project.image || undefined;
 
   const canonicalPath = project.seo?.canonical || `/realizacje/${project.slug}`;
+  const ogUrl = canonicalPath.startsWith('/') ? canonicalPath : `/realizacje/${project.slug}`;
   return {
     title,
     description,
     alternates: { canonical: canonicalPath.startsWith('/') ? canonicalPath : `/realizacje/${project.slug}` },
     openGraph: {
       type: 'article',
-      url,
+      url: ogUrl,
       title,
       description,
-      images: [{ url: image, width: 1200, height: 630, alt: project.title }],
+      images: image ? [{ url: image, width: 1200, height: 630, alt: project.title }] : undefined,
     },
-    twitter: { card: 'summary_large_image', title, description, images: [image] },
+    twitter: { card: 'summary_large_image', title, description, images: image ? [image] : undefined },
   };
 }
 
@@ -229,7 +229,7 @@ export default function ProjectPage({ params }: PageProps) {
               {project.title}
             </h1>
 
-            {project.category?.length ? <span className="mb-4 block text-sm text-[#5e5e5e] uppercase">{project.category.join(' • ')}</span> : null}
+            {project.category?.length ? <span className="mb-4 block text-sm text-light uppercase">{project.category.join(' • ')}</span> : null}
 
             {project.short && (
               <p itemProp="description">
@@ -284,7 +284,7 @@ export default function ProjectPage({ params }: PageProps) {
                 <ul className="grid gap-3 md:grid-cols-2">
                   {project.process_steps.map((step, i) => (
                     <li key={i} className="rounded-2xl bg-white p-3 shadow-md">
-                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#5e5e5e] text-xs font-bold text-[#5e5e5e]">{i + 1}</span>
+                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#5e5e5e] text-xs font-bold text-light">{i + 1}</span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
                     </li>
                   ))}
@@ -317,7 +317,7 @@ export default function ProjectPage({ params }: PageProps) {
                         sizes="(min-width:768px) 50vw, 100vw"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm text-[#5e5e5e]">Przed</figcaption>
+                    <figcaption className="mt-2 text-sm text-light">Przed</figcaption>
                   </figure>
 
                   <figure>
@@ -330,7 +330,7 @@ export default function ProjectPage({ params }: PageProps) {
                         sizes="(min-width:768px) 50vw, 100vw"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm font-semibold text-[#5e5e5e]">Po</figcaption>
+                    <figcaption className="mt-2 text-sm font-semibold text-light">Po</figcaption>
                   </figure>
                 </div>
 
@@ -387,7 +387,7 @@ export default function ProjectPage({ params }: PageProps) {
                   {(project.testimonial.author || project.testimonial.role) && (
                     <footer className="mt-2">
                       <h5 className="mt-5">{project.testimonial.author}</h5>
-                      {project.testimonial.role ? <p className="mt-1 mb-3 text-[#5e5e5e]">{project.testimonial.role}</p> : null}
+                      {project.testimonial.role ? <p className="mt-1 mb-3 text-light">{project.testimonial.role}</p> : null}
                       {project.testimonial.link ? (
                         <Button variant="accent" size="small" arrow link={project.testimonial.link}>
                           Link do opinii

@@ -26,11 +26,11 @@ export const metadata = {
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
     description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
-    url: 'https://www.arteonagency.pl/',
+    url: '/',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/arteon-logo-on-mockup.webp',
       },
     ],
   },

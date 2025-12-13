@@ -7,7 +7,7 @@ interface SectionHeaderWithActionProps {
   title?: ReactNode;
   description?: ReactNode;
   headingLevel?: 'h1' | 'h2' | 'h3' | 'h4';
-  eyebrowVariant?: 'default' | 'white' | 'hero' | 'dynamic';
+  eyebrowVariant?: 'default' | 'dynamic';
   eyebrowClassName?: string;
   headingClassName?: string;
   descriptionClassName?: string;

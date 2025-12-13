@@ -396,7 +396,7 @@ export default function DesktopNavigation() {
                     href={t.urls.uslugi}
                     variant="navigation"
                     aria-current={isActive ? 'page' : undefined}
-                    className={isActive ? 'font-semibold text-[#080808]' : ''}
+                    className={isActive ? 'font-semibold text-dark' : ''}
                   >
                     {t.uslugi}
                   </AppLink>
@@ -410,7 +410,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-[#2B2B2B] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-mid transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -455,7 +455,7 @@ export default function DesktopNavigation() {
                                       className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                      <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
+                                      <span className="block text-sm font-medium text-mid">{item.title}</span>
                                     </Link>
                                   ))}
                                 </div>
@@ -478,7 +478,7 @@ export default function DesktopNavigation() {
                     href={t.urls.narzedzia}
                     variant="navigation"
                     aria-current={isActive ? 'page' : undefined}
-                    className={isActive ? 'font-semibold text-[#080808]' : ''}
+                    className={isActive ? 'font-semibold text-dark' : ''}
                   >
                     {t.narzedzia}
                   </AppLink>
@@ -492,7 +492,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isToolsOpen}
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-[#2B2B2B] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-mid transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                   >
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -526,7 +526,7 @@ export default function DesktopNavigation() {
                                       className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                      <span className="block text-sm font-medium text-[#2B2B2B]">{item.title}</span>
+                                      <span className="block text-sm font-medium text-mid">{item.title}</span>
                                     </Link>
                                   ))}
                                 </div>
@@ -547,7 +547,7 @@ export default function DesktopNavigation() {
                   href={href}
                   variant="navigation"
                   aria-current={isActivePage ? 'page' : undefined}
-                  className={isActivePage ? 'font-semibold text-[#080808]' : ''}
+                  className={isActivePage ? 'font-semibold text-dark' : ''}
                 >
                   {label}
                 </AppLink>

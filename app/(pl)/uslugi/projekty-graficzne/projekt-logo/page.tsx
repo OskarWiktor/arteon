@@ -38,8 +38,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt logo | Arteon',
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
+    url: '/uslugi/projekty-graficzne/projekt-logo',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 

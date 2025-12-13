@@ -9,7 +9,7 @@ interface SectionHeaderProps {
   title?: ReactNode;
   description?: ReactNode;
   headingLevel?: HeadingLevel;
-  eyebrowVariant?: 'default' | 'white' | 'hero' | 'dynamic';
+  eyebrowVariant?: 'default' | 'dynamic';
   eyebrowClassName?: string;
   headingClassName?: string;
   descriptionClassName?: string;

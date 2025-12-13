@@ -88,8 +88,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekty graficzne do druku i online | Arteon',
     description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
+    url: '/uslugi/projekty-graficzne',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 

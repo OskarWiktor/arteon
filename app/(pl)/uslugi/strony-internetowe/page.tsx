@@ -41,8 +41,9 @@ export const metadata = {
   openGraph: {
     title: 'Strony internetowe - projekt i realizacja | Arteon',
     description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
-    url: 'https://www.arteonagency.pl/uslugi/strony-internetowe',
+    url: '/uslugi/strony-internetowe',
     type: 'website',
+    images: [{ url: '/assets/projects/arteon-baners-msc.webp' }],
   },
 } as const;
 
@@ -265,8 +266,8 @@ export default function OfferWebPage() {
           note={
             {
               text: (
-                <p className="text-[#5e5e5e]">
-                  <strong className="text-[#080808]">Potrzebujesz czegoś więcej? </strong>
+                <p className="text-light">
+                  <strong className="text-dark">Potrzebujesz czegoś więcej? </strong>
                   Tworzymy zaawansowane strony, aplikacje i sklepy w Next.js - rozwiązania szyte na miarę, które spełnią najbardziej wymagające cele biznesowe.
                 </p>
               ),

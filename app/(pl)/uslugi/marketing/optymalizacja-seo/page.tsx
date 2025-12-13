@@ -26,8 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
-    url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
+    url: '/uslugi/marketing/optymalizacja-seo',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg5.webp' }],
   },
 } as const;
 

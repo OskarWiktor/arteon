@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Darmowy generator stopki mailowej HTML - bez limitu',
     description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
-    url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
+    url: '/narzedzia/darmowy-generator-stopki-mailowej',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
       },
     ],
   },
@@ -91,13 +91,13 @@ export default function Page() {
       </Wrapper>
 
       <CTABanner
-        title="Budujesz profesjonalny wizerunek marki?"
-        description="Podpis mailowy to tylko jeden z elementów. Możemy spójnie zaprojektować stronę WWW, materiały graficzne i komunikację, żeby każdy kontakt z Twoją marką wyglądał profesjonalnie."
-        btnOne="Porozmawiaj o wizerunku online"
+        title="Chcesz w pełni profesjonalną identyfikację mailową dla Twojej firmy?"
+        description="Wykonamy dla Ciebie profesjonalną identyfikację mailową - dopasowaną do Twojej marki, spójną z Twoją stroną i social mediami."
+        btnOne="Umów rozmowę"
         btnOneLink="/kontakt"
         btnTwo="Sprawdź nasze usługi"
         btnTwoLink="/uslugi"
-        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

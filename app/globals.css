@@ -210,6 +210,18 @@ textarea {
   background-color: var(--crop-grid-color, #10b981);
 }
 
+.surface-panel {
+  @apply rounded-2xl border border-black/10 bg-white/70 shadow-sm backdrop-blur-sm;
+}
+
+.surface-panel-solid {
+  @apply rounded-2xl border border-black/10 bg-white shadow-sm;
+}
+
+.surface-card {
+  @apply overflow-hidden rounded-2xl bg-white shadow-md transition focus-within:shadow-lg hover:shadow-lg;
+}
+
 /*    TOOLS COMPONENTS    */
 
 /* Tool section container */

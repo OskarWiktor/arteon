@@ -390,6 +390,14 @@ Status:
 Rekomendacja:
 - Konsolidacja do `Carousel`/`useCarouselScroller()` (opis w sekcji 3.1).
 
+Postęp:
+- `useCarouselScroller()` dodany ✅
+- `TestimonialsCarousel` przepięty ✅
+- `ProjectsOverview` przepięty ✅
+- `ArticlesOverview` przepięty ✅
+- `useCarouselScroller` przeniesiony do `hooks/` ✅
+- Kontrolki (nav + dots + SR) skonsolidowane do `components/ui/carousel/CarouselNavButtons.tsx` + `components/ui/carousel/CarouselDots.tsx` ✅
+
 Efekt:
 - duża redukcja kodu + mniej bugów a11y
 
@@ -599,6 +607,13 @@ Rekomendacja:
   - `.surface-solid` = `rounded-2xl border border-black/10 bg-white shadow-sm`
 - Następnie przepiąć komponenty, które mają identyczny wygląd (np. `ShareBlock`, panele w toolach, karty w sekcjach) na te klasy.
 
+Postęp:
+- Dodane: `.surface-card`, `.surface-panel`, `.surface-panel-solid` ✅
+- Przepięte: `ArticlesList` + karty w `ArticlesOverview` na `.surface-card` ✅
+- Przepięte: `TableBlock` na `.surface-panel-solid` ✅
+- Przepięte: `ShareBlock` na `.surface-panel` ✅
+- Przepięte: `TableOfContent` (desktop panel) na `.surface-panel-solid` ✅
+
 Spacing:
 - `Gap` już pełni rolę globalnego prymitywu spacingu i jest używany bardzo często.
 - Warto doprecyzować „kanon”:
@@ -618,7 +633,7 @@ Status (wg użyć `variant="..."`):
 - `caption` – **brak użyć** (0)
 
 Rekomendacja:
-- Usunąć `caption` (dubluje `xs`) albo zostawić tylko jako alias, jeśli chcesz wspierać semantykę (ale to nie redukuje API).
+- Usunąć `caption` (dubluje `xs`) albo zostawić tylko jako alias, jeśli chcesz wspierać semantykę (ale to nie redukuje API). ✅
 
 Status (wg użyć `tone="..."`):
 - `muted` – używany
@@ -636,7 +651,7 @@ Status (wg użyć `variant="..."` w JSX):
 - `error` – brak realnych użyć
 
 Rekomendacja:
-- Usunąć nieużywane warianty: `selected`, `success`, `error` (albo wdrożyć konsekwentnie zamiast lokalnych klas).
+- Usunąć nieużywane warianty: `selected`, `success`, `error` (albo wdrożyć konsekwentnie zamiast lokalnych klas). ✅
 - Jeśli `Tag` ma być bazą dla tool pills, to w dłuższej perspektywie:
   - zastąpić `.tool-pill-*` wariantami `Tag` (jedna implementacja zamiast dwóch systemów).
 
@@ -656,8 +671,8 @@ Status (wg użyć `variant="..."`):
 - `normal` – najczęściej przez default (bez ustawiania prop)
 
 Rekomendacja:
-- Usunąć `minimal`.
-- Rozważyć usunięcie `totop` z `Button` i przenieść ten styl do samego `ButtonToTop` (żeby nie rozdymać API bazowego przycisku wariantem “jednej funkcji”).
+- Usunąć `minimal`. ✅
+- Rozważyć usunięcie `totop` z `Button` i przenieść ten styl do samego `ButtonToTop` (żeby nie rozdymać API bazowego przycisku wariantem “jednej funkcji”). ✅
 
 #### `Gap` (`components/ui/Gap.tsx`)
 

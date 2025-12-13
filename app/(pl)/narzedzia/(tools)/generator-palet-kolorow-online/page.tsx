@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Generator palet kolorów online - system barw z jednego koloru',
     description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
-    url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
+    url: '/narzedzia/generator-palet-kolorow-online',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
       },
     ],
   },
@@ -76,13 +76,13 @@ export default function Page() {
       </Wrapper>
 
       <CTABanner
-        title="Szukasz kogoś kto pomoże Ci stworzyć spójną markę?"
-        description="Napisz do nas, pomożemy Ci zbudować kompletny system, który wyróżni Cie na tle konkurencji"
-        btnOne="Napisz do nas"
+        title="Potrzebujesz spójnej identyfikacji wizualnej dla swojej marki?"
+        description="Projektujemy logo, system kolorów i materiały firmowe tak, aby Twoja marka wyglądała profesjonalnie i budowała zaufanie."
+        btnOne="Umów rozmowę"
         btnOneLink="/kontakt"
         btnTwo="Sprawdź nasze usługi"
         btnTwoLink="/uslugi"
-        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

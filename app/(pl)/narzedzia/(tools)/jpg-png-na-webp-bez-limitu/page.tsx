@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
     description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',
-    url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
+    url: '/narzedzia/jpg-png-na-webp-bez-limitu',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
       },
     ],
   },
@@ -75,12 +75,13 @@ export default function Page() {
             Format WebP pozwala znacząco zmniejszyć wagę grafik bez widocznej utraty jakości. Lżejsze obrazy to szybsze ładowanie strony, lepsze wyniki w Core Web Vitals i większa szansa, że
             użytkownik zostanie na stronie.
           </p>
-          <ul className="mb-6 list-disc pl-5">
-            <li>krótszy czas ładowania podstron (lepsze doświadczenie użytkownika),</li>
+          <ul className="ml-6 list-disc">
+            <li>mniejsza waga zdjęć,</li>
+            <li>szybsze ładowanie strony,</li>
             <li>pośrednie wsparcie dla lepszych pozycji w Google poprzez lepsze UX,</li>
             <li>niższe obciążenie serwera.</li>
           </ul>
-          <p className="text-[#5e5e5e]">
+          <p className="text-light">
             Jeśli chcesz, żeby Twoja strona ładowała się tak szybko, jak pliki po konwersji, możesz rozważyć pełną optymalizację WWW (obrazy, kod, hosting, SEO techniczne).
           </p>
         </SectionInfo>
@@ -93,7 +94,9 @@ export default function Page() {
         description="Mamy sprawdzone sposoby na wyniki +90/100 w PageSpeed. Prześlij link do swojej strony a my przygotujemy dla Ciebie ofertę jej optymalizacji"
         btnOne="Zamów pełną optymalizację"
         btnOneLink="/kontakt"
-        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        btnTwo="Sprawdź nasze usługi"
+        btnTwoLink="/uslugi"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

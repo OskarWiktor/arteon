@@ -29,8 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt wizytówki | Arteon',
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
+    url: '/uslugi/projekty-graficzne/projekt-wizytowki',
     type: 'website',
+    images: [{ url: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp' }],
   },
 } as const;
 

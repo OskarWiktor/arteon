@@ -593,7 +593,7 @@ export default function JpgPngToWebp() {
             )}
 
             <div className="mt-6 flex flex-wrap items-center gap-2">
-              <Button variant="minimal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="disabled:opacity-40">
+              <Button variant="normal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="border-0 shadow-none hover:shadow-none hover:translate-y-0 disabled:opacity-40">
                 {t.copySummary}
               </Button>
               {copyInfo && <Text variant="xs" tone="muted" as="span">{copyInfo}</Text>}
@@ -682,7 +682,7 @@ export default function JpgPngToWebp() {
                       </Badge>
                     )}
 
-                    <Badge as="button" type="button" onClick={() => handleRemove(item.id)} variant="default" size="sm" className="cursor-pointer text-[#5e5e5e] hover:text-neutral-900">
+                    <Badge as="button" type="button" onClick={() => handleRemove(item.id)} variant="default" size="sm" className="cursor-pointer text-light hover:text-neutral-900">
                       {t.actions.remove}
                     </Badge>
                   </div>

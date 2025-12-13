@@ -60,8 +60,9 @@ export const metadata = {
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-    url: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci',
+    url: '/uslugi/tworzenie-tresci',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg6.webp' }],
   },
 } as const;
 

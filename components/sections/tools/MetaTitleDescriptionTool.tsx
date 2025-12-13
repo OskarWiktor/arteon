@@ -190,7 +190,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterTitleLabel} className="mt-8" helper={titleAnalysis.helperText}>
             <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="tool-input" placeholder={t.titlePlaceholder} maxLength={180} />
-            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
+            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-light">
               <span>
                 {t.chars}: <strong>{titleAnalysis.chars}</strong>
               </span>
@@ -208,7 +208,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterDescriptionLabel} className="mt-8" helper={descriptionAnalysis.helperText}>
             <textarea value={description} onChange={(e) => setDescription(e.target.value)} className="tool-textarea min-h-[110px] resize-y" placeholder={t.descriptionPlaceholder} maxLength={400} />
-            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#5e5e5e]">
+            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-light">
               <span>
                 {t.chars}: <strong>{descriptionAnalysis.chars}</strong>
               </span>

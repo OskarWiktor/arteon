@@ -41,8 +41,9 @@ export const metadata = {
   openGraph: {
     title: 'Blogi internetowe - projekt i realizacja | Arteon',
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
-    url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
+    url: '/uslugi/blogi-internetowe',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg3.webp' }],
   },
 } as const;
 
@@ -271,8 +272,8 @@ export default function OfferBlogPage() {
           note={
             {
               text: (
-                <p className="text-[#5e5e5e]">
-                  <strong className="text-[#080808]">Masz większe plany? </strong>
+                <p className="text-light">
+                  <strong className="text-dark">Masz większe plany? </strong>
                   Tworzymy zaawansowane strony, aplikacje i sklepy w Next.js - rozwiązania szyte na miarę, które spełnią najbardziej wymagające cele biznesowe.
                 </p>
               ),

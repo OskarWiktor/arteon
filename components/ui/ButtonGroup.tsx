@@ -8,7 +8,7 @@ interface ButtonGroupProps {
   btnTwoLink?: string;
   btnTwoVariant?: 'accent' | 'normal' | 'dark';
   className?: string;
-  spacing?: 'default' | 'tight' | 'loose';
+  spacing?: 'default' | 'loose';
   align?: 'left' | 'center' | 'right';
   ariaLabel?: string;
   role?: 'group' | 'none';
@@ -31,7 +31,6 @@ export default function ButtonGroup({
 
   const spacingClasses = {
     default: 'mt-4 md:mt-6 lg:mt-8',
-    tight: 'mt-4 md:mt-5',
     loose: 'mt-6 md:mt-8 lg:mt-10',
   };
 

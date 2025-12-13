@@ -6,7 +6,7 @@ interface AppLinkProps {
   children: ReactNode;
   className?: string;
   variant?: 'default' | 'navigation';
-  display?: 'inline' | 'inline-block' | 'block';
+  display?: 'inline' | 'inline-block';
   'aria-current'?: 'page' | 'step' | 'location' | 'date' | 'time' | boolean;
   'aria-label'?: string;
   target?: string;
@@ -18,7 +18,7 @@ export default function AppLink({
   children,
   className = '',
   variant = 'default',
-  display = 'block',
+  display,
   'aria-current': ariaCurrent,
   'aria-label': ariaLabel,
   target,
@@ -27,17 +27,17 @@ export default function AppLink({
   const baseClasses = 'hover-underline rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   const variantClasses = {
-    default: 'text-base text-[#080808]',
-    navigation: 'text-base font-medium text-[#2B2B2B]',
+    default: 'text-base text-dark',
+    navigation: 'text-base font-medium text-mid',
   };
 
   const displayClasses = {
     inline: 'inline',
     'inline-block': 'inline-block',
-    block: '',
   };
 
-  const classes = `${baseClasses} ${variantClasses[variant]} ${displayClasses[display]} ${className}`;
+  const displayClass = display ? displayClasses[display] : '';
+  const classes = `${baseClasses} ${variantClasses[variant]} ${displayClass} ${className}`;
 
   return (
     <NextLink href={href} className={classes} aria-current={ariaCurrent} aria-label={ariaLabel} target={target} rel={rel}>

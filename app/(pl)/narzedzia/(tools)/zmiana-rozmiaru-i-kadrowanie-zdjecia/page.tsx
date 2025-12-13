@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
     description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',
-    url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
+    url: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
       },
     ],
   },
@@ -75,13 +75,13 @@ export default function ImageResizerPage() {
       </Wrapper>
 
       <CTABanner
-        title="Potrzebujesz dodatkowej pomocy przy tworzeniu odpowiednich grafik?"
-        description="Napisz do nas i opowiedz o tym co chcesz stworzyć, przygotujemy dedykowaną ofertę dzięki której zaoszczędzisz czas"
+        title="Masz pomysł na stronę lub projekt graficzny?"
+        description="Napisz do nas. Powiemy, jak podejść do projektu i co warto zrobić, żeby od razu działał biznesowo."
         btnOne="Umów rozmowę"
         btnOneLink="/kontakt"
         btnTwo="Sprawdź nasze usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
     </>

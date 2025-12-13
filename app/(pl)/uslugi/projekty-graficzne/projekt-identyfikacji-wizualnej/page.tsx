@@ -26,8 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt identyfikacji wizualnej | Arteon',
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+    url: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 

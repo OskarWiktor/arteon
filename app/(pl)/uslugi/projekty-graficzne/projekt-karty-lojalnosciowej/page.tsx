@@ -25,8 +25,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt karty lojalnościowej | Arteon',
     description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+    url: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 

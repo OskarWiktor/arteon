@@ -25,6 +25,7 @@ const METRICOOL_HASH = process.env.METRICOOL_HASH;
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -33,10 +34,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'Arteon',
-    url: SITE_URL,
+    url: '/',
     images: [
       {
-        url: `${SITE_URL}/assets/arteon-logo-on-mockup.webp`,
+        url: '/assets/arteon-logo-on-mockup.webp',
         width: 1200,
         height: 630,
         alt: 'Logo Arteon na plakacie',

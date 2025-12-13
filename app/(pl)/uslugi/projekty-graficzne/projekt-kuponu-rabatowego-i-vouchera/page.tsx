@@ -29,8 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Kupony rabatowe i vouchery | Arteon',
     description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+    url: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     type: 'website',
+    images: [{ url: '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp' }],
   },
 } as const;
 

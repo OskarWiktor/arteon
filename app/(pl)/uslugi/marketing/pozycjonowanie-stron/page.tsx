@@ -26,8 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
-    url: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
+    url: '/uslugi/marketing/pozycjonowanie-stron',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg6.webp' }],
   },
 } as const;
 

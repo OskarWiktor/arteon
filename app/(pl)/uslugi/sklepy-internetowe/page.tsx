@@ -43,8 +43,9 @@ export const metadata = {
   openGraph: {
     title: 'Sklepy internetowe - projekt i realizacja | Arteon',
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-    url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
+    url: '/uslugi/sklepy-internetowe',
     type: 'website',
+    images: [{ url: '/assets/projects/arteon-baners-trilllizo.webp' }],
   },
 } as const;
 
@@ -315,8 +316,8 @@ export default function OfferWebPage() {
           note={
             {
               text: (
-                <p className="text-[#5e5e5e]">
-                  <strong className="text-[#080808]">Potrzebujesz czegoś więcej? </strong>
+                <p className="text-light">
+                  <strong className="text-dark">Potrzebujesz czegoś więcej? </strong>
                   Tworzymy zaawansowane sklepy i aplikacje w Next.js - rozwiązania szyte na miarę, gotowe na zaawansowane integracje, funkcje oraz duży ruch.
                 </p>
               ),

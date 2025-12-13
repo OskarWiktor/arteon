@@ -29,8 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    url: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     type: 'website',
+    images: [{ url: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
   },
 } as const;
 

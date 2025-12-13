@@ -27,7 +27,7 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
       <IconText icon={displayIcon} iconClassName="inline-flex items-center justify-center">
-        <h3 id={headingId} className="h6 font-semibold text-[#080808]" itemProp="name">
+        <h3 id={headingId} className="h6 font-semibold text-dark" itemProp="name">
           {title}
         </h3>
       </IconText>

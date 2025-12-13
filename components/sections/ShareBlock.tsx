@@ -37,7 +37,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
   const mailHref = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
 
   return (
-    <section className={`w-fit rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm backdrop-blur-sm ${className}`} aria-label={t.ariaLabel}>
+    <section className={`w-fit surface-panel p-4 ${className}`} aria-label={t.ariaLabel}>
       <div className="flex items-start gap-3">
         <div className="flex-1">
           <div className="flex flex-wrap items-center gap-2">

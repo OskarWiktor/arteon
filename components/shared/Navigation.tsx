@@ -7,6 +7,8 @@ import Image from 'next/image';
 import MobileNavigation from './navigation-types/MobileNavigation';
 import DesktopNavigation from './navigation-types/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
+import SocialIconLink from '@/components/ui/SocialIconLink';
+import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
 
 const ui = {
@@ -46,39 +48,33 @@ export default function Navigation() {
           <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
-            <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-[#5e5e5e]">
+            <a href="https://nextjs.org/" target="_blank" className="mr-3 cursor-pointer text-sm font-normal text-light">
               #MadeWithNext.js
             </a>
 
-            <a
+            <SocialIconLink
               href="https://www.instagram.com/arteon.pl"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t.instagramLabel}
+              label={t.instagramLabel}
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-            >
-              <RiInstagramLine className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
-            </a>
-            <a
+              icon={<RiInstagramLine className="h-6 w-6 text-mid transition hover:text-slate-500" aria-hidden="true" />}
+            />
+            <SocialIconLink
               href="https://www.facebook.com/people/Arteon/61583260915021/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t.facebookLabel}
+              label={t.facebookLabel}
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-            >
-              <RiFacebookFill className="h-6 w-6 text-[#2B2B2B] transition hover:text-slate-500" aria-hidden="true" />
-            </a>
+              icon={<RiFacebookFill className="h-6 w-6 text-mid transition hover:text-slate-500" aria-hidden="true" />}
+            />
           </div>
 
-          <button
-            type="button"
+          <IconButton
             onClick={toggleMenu}
-            className="block rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white lg:hidden"
-            aria-label={isOpen ? t.closeMenu : t.openMenu}
+            label={isOpen ? t.closeMenu : t.openMenu}
             aria-expanded={isOpen}
+            size="md"
+            className="block h-auto w-auto p-1 lg:hidden"
           >
             {isOpen ? <RiCloseLine size={28} aria-hidden="true" /> : <RiMenuLine size={28} aria-hidden="true" />}
-          </button>
+          </IconButton>
         </nav>
 
         <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} />

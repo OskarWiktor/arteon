@@ -1,0 +1,32 @@
+'use client';
+
+import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
+
+type CarouselNavButtonsProps = {
+  isScrollable: boolean;
+  onPrev: () => void;
+  onNext: () => void;
+  prevLabel: string;
+  nextLabel: string;
+};
+
+export function CarouselNavButtons({ isScrollable, onPrev, onNext, prevLabel, nextLabel }: CarouselNavButtonsProps) {
+  if (!isScrollable) return null;
+
+  const navBtn =
+    'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-1 md:p-2 text-white shadow-xl backdrop-blur-sm ' +
+    'transition hover:scale-105 hover:bg-white hover:text-slate-700 focus:outline-none ' +
+    'focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
+
+  return (
+    <>
+      <button type="button" onClick={onPrev} className={`${navBtn} left-2 max-h-13 max-w-13`} aria-label={prevLabel}>
+        <RiArrowLeftSLine className="h-8 w-8" aria-hidden="true" />
+      </button>
+
+      <button type="button" onClick={onNext} className={`${navBtn} right-2 max-h-13 max-w-13`} aria-label={nextLabel}>
+        <RiArrowRightSLine className="h-8 w-8" aria-hidden="true" />
+      </button>
+    </>
+  );
+}

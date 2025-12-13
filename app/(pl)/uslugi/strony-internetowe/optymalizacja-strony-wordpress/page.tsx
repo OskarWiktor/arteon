@@ -31,9 +31,10 @@ export const metadata = {
   openGraph: {
     title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
     description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
-    url: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
+    url: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
     type: 'website',
     siteName: 'Arteon',
+    images: [{ url: '/assets/bg/abstract-bg12.webp' }],
   },
 } as const;
 

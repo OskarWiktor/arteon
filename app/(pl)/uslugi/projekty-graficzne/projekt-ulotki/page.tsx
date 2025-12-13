@@ -28,8 +28,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt ulotki | Arteon',
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
+    url: '/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
+    images: [{ url: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp' }],
   },
 } as const;
 

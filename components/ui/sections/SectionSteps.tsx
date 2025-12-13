@@ -60,8 +60,8 @@ export default function SectionSteps({
   const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
-  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
-  const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#2B2B2B]';
+  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-dark';
+  const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-mid';
   const bgPadY = hasBg ? 'py-16 md:py-24' : '';
 
   const count = items?.length ?? 0;
@@ -114,7 +114,7 @@ export default function SectionSteps({
       {hasBg && overlay !== 'none' && <div aria-hidden={true} className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Tag className="relative z-10">
-        {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{subtitle}</span>}
+        {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-light'}`}>{subtitle}</span>}
 
         {title && (
           <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3 reveal-animation`}>
@@ -160,8 +160,8 @@ export default function SectionSteps({
                     </div>
                   )}
 
-                  <ArticleHeadingTag className="h4 mb-1 text-[#080808]">{itemTitle}</ArticleHeadingTag>
-                  {itemSubtitle && <span className="text-base text-[#5e5e5e]">{itemSubtitle}</span>}
+                  <ArticleHeadingTag className="h4 mb-1 text-dark">{itemTitle}</ArticleHeadingTag>
+                  {itemSubtitle && <span className="text-base text-light">{itemSubtitle}</span>}
 
                   <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
                 </article>
@@ -183,7 +183,7 @@ export default function SectionSteps({
 
         {disclaimer && (
           <div className="mt-4 md:mt-5 lg:mt-6">
-            <p className={`${hasBg ? 'text-white' : 'text-[#5e5e5e]'}`}>{disclaimer}</p>
+            <p className={`${hasBg ? 'text-white' : 'text-light'}`}>{disclaimer}</p>
           </div>
         )}
       </Tag>

@@ -29,8 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt cennika | Arteon',
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
+    url: '/uslugi/projekty-graficzne/projekt-cennika',
     type: 'website',
+    images: [{ url: '/assets/projects/cennik-mockup.webp' }],
   },
 } as const;
 

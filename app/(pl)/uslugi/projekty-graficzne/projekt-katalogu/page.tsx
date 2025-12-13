@@ -26,8 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt katalogu | Arteon',
     description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
+    url: '/uslugi/projekty-graficzne/projekt-katalogu',
     type: 'website',
+    images: [{ url: '/assets/projects/gazetka-mockup.webp' }],
   },
 } as const;
 

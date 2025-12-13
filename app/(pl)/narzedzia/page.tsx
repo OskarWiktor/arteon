@@ -13,11 +13,11 @@ export const metadata = {
   openGraph: {
     title: 'Darmowe narzędzia online dla stron i firm online',
     description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-    url: 'https://www.arteonagency.pl/narzedzia',
+    url: '/narzedzia',
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
       },
     ],
   },
@@ -280,7 +280,7 @@ export default function ToolsIndexPage() {
           title="Jak korzystać z narzędzi Arteon?"
           description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci."
         >
-          <p className="mt-4 text-xs text-[#5e5e5e]">
+          <p className="mt-4 text-xs text-light">
             Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
             kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online.
           </p>

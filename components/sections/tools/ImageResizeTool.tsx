@@ -915,7 +915,7 @@ export default function ImageResizeTool() {
               }}
             >
               <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
-              <span className="mb-2 text-xs! text-[#5e5e5e]">{t.clickToSelect}</span>
+              <span className="mb-2 text-xs! text-light">{t.clickToSelect}</span>
               <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
               <input
                 type="file"
@@ -929,13 +929,13 @@ export default function ImageResizeTool() {
               />
             </label>
             {state.file && (
-              <p className="mt-2 text-xs! text-[#5e5e5e]">
+              <p className="mt-2 text-xs! text-light">
                 {t.currentFile} <strong>{state.file.name}</strong>
               </p>
             )}
           </div>
 
-          <div className="mt-4 rounded-2xl border border-black/10 bg-white/90 p-4 text-xs! text-[#5e5e5e]">
+          <div className="mt-4 rounded-2xl border border-black/10 bg-white/90 p-4 text-xs! text-light">
             <h3 className="h6 mb-2">{t.imageParams}</h3>
             {!state.imageUrl && <p>{t.noData}</p>}
             {state.imageUrl && (
@@ -1302,7 +1302,7 @@ export default function ImageResizeTool() {
               <div className="mt-4 mb-2 flex items-center justify-between">
                 <h3 className="h6">{t.cropPreview}</h3>
                 {dims && (
-                  <span className="text-xs! text-[#5e5e5e]">
+                  <span className="text-xs! text-light">
                     {dims.width} x {dims.height} px
                   </span>
                 )}
@@ -1356,7 +1356,7 @@ export default function ImageResizeTool() {
                 </div>
               </div>
 
-              <p className="mt-2 text-xs! text-[#5e5e5e]">{t.cropPreviewHelper}</p>
+              <p className="mt-2 text-xs! text-light">{t.cropPreviewHelper}</p>
             </div>
           </>
         )}

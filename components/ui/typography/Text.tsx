@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
-type TextVariant = 'body' | 'small' | 'xs' | 'caption';
-type TextTone = 'default' | 'muted' | 'dark';
+type TextVariant = 'body' | 'small' | 'xs';
+type TextTone = 'default' | 'muted' | 'dark' | 'inverse';
 type TextElement = 'p' | 'span' | 'div' | 'figcaption';
 
 interface TextProps {
@@ -21,13 +21,13 @@ export default function Text({ children, variant = 'body', tone = 'default', as 
     body: 'text-base',
     small: 'text-sm',
     xs: 'text-xs',
-    caption: 'text-xs',
   };
 
   const toneClasses: Record<TextTone, string> = {
-    default: 'text-[#080808]',
-    muted: 'text-[#5e5e5e]',
-    dark: 'text-[#2B2B2B]',
+    default: 'text-dark',
+    muted: 'text-light',
+    dark: 'text-mid',
+    inverse: 'text-white',
   };
 
   const classes = `${variantClasses[variant]} ${toneClasses[tone]} ${className}`;

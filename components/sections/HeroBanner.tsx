@@ -56,10 +56,12 @@ export default function HeroBanner({
   const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
 
+  const isDarkOverlay = overlay === 'black';
+
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
 
-  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-[#080808]';
-  const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-[#080808]/80';
+  const toneTextClass = isDarkOverlay ? 'text-white' : 'text-dark';
+  const toneMutedClass = isDarkOverlay ? 'text-white' : 'text-dark opacity-80';
 
   const baseBg = overlay === 'black' ? 'bg-black' : 'bg-white';
   const contentBgClass = overlay === 'black' ? 'bg-black/60' : overlay === 'white' ? 'bg-white/50' : '';
@@ -109,7 +111,13 @@ export default function HeroBanner({
               </h1>
             )}
             {description && (
-              <Text variant="body" tone="muted" as="p" id="hero-description" className={`reveal-animation mt-3 leading-relaxed md:mt-5 text-wrap:pretty`}>
+              <Text
+                variant="body"
+                as="p"
+                id="hero-description"
+                tone={isDarkOverlay ? 'inverse' : 'default'}
+                className={`reveal-animation mt-3 leading-relaxed md:mt-5 text-wrap:pretty ${isDarkOverlay ? '' : 'opacity-80'}`}
+              >
                 {description}
               </Text>
             )}

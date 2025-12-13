@@ -365,7 +365,7 @@ function Swatch({ color, onCopy, copied: _copied }: { color: PaletteColor; onCop
         <Text variant="small" as="p" className="leading-tight font-medium">
           {color.hex}
         </Text>
-        <p className="truncate text-[11px]! text-[#5e5e5e]">{formatHsl(color.hsl)}</p>
+        <p className="truncate text-[11px]! text-light">{formatHsl(color.hsl)}</p>
       </div>
       <CopyButton text={color.hex} label={t.copy} copiedLabel={t.copied} onCopy={() => onCopy(color.hex)} />
     </div>

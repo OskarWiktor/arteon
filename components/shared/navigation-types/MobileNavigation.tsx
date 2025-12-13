@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import Text from '../../ui/typography/Text';
 import Eyebrow from '../../ui/typography/Eyebrow';
 import IconText from '../../ui/IconText';
+import SocialIconLink from '../../ui/SocialIconLink';
 
 const ui = {
   pl: {
@@ -385,12 +386,12 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                   <Link
                                     href={it.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-[15px] text-[#080808] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-[15px] text-dark transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                                   >
                                     <IconText
                                       icon={
                                         it.icon ? (
-                                          <span className="text-[#5e5e5e] group-hover:text-slate-600">{it.icon}</span>
+                                          <span className="text-light group-hover:text-slate-600">{it.icon}</span>
                                         ) : undefined
                                       }
                                       gap="3"
@@ -424,7 +425,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         onClick={() => setIsOpen(false)}
                         aria-current={isActive ? 'page' : undefined}
                         className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
-                          isActive ? 'bg-zinc-100 font-semibold text-[#080808]' : 'text-[#080808] hover:bg-neutral-100'
+                          isActive ? 'bg-zinc-100 font-semibold text-dark' : 'text-dark hover:bg-neutral-100'
                         }`}
                       >
                         {label}
@@ -443,7 +444,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href={href}
                       onClick={() => setIsOpen(false)}
-                      className="block rounded-xl px-3 py-[7px] text-[15px] text-[#080808] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="block rounded-xl px-3 py-[7px] text-[15px] text-dark outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                     >
                       {label}
                     </Link>
@@ -454,24 +455,18 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               <div className="mt-auto border-t border-zinc-200 pt-3">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <a
+                    <SocialIconLink
                       href="https://www.instagram.com/arteon.pl"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={t.instagramLabel}
+                      label={t.instagramLabel}
                       className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
-                    >
-                      <RiInstagramLine className="h-5 w-5 text-[#2B2B2B] transition hover:text-slate-600" aria-hidden="true" />
-                    </a>
-                    <a
+                      icon={<RiInstagramLine className="h-5 w-5 text-mid transition hover:text-slate-600" aria-hidden="true" />}
+                    />
+                    <SocialIconLink
                       href="https://www.facebook.com/people/Arteon/61583260915021/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={t.facebookLabel}
+                      label={t.facebookLabel}
                       className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
-                    >
-                      <RiFacebookFill className="h-5 w-5 text-[#2B2B2B] transition hover:text-slate-600" aria-hidden="true" />
-                    </a>
+                      icon={<RiFacebookFill className="h-5 w-5 text-mid transition hover:text-slate-600" aria-hidden="true" />}
+                    />
                   </div>
 
                   <div className="flex items-center gap-2">

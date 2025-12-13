@@ -29,8 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Szablony postów social media | Arteon',
     description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
+    url: '/uslugi/projekty-graficzne/szablony-postow-social-media',
     type: 'website',
+    images: [{ url: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp' }],
   },
 } as const;
 

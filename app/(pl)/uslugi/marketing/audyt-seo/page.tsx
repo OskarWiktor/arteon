@@ -28,9 +28,10 @@ export const metadata = {
   openGraph: {
     title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
     description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-    url: `${BASE}/uslugi/marketing/audyt-seo`,
+    url: '/uslugi/marketing/audyt-seo',
     siteName: 'Arteon',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg5.webp' }],
     //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {

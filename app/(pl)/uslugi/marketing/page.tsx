@@ -23,8 +23,9 @@ export const metadata = {
   openGraph: {
     title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
-    url: 'https://www.arteonagency.pl/uslugi/marketing',
+    url: '/uslugi/marketing',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg5.webp' }],
   },
 } as const;
 

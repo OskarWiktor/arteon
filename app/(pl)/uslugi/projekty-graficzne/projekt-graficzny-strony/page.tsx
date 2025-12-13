@@ -26,8 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt graficzny strony | Arteon',
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
+    url: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 

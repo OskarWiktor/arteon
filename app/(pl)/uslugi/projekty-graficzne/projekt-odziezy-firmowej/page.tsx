@@ -28,8 +28,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt odzieży firmowej | Arteon',
     description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+    url: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     type: 'website',
+    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 

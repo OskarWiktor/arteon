@@ -43,7 +43,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
 
           <div className="mt-auto">
             <div className="mt-4 mb-2 h-px w-full bg-gray-200" aria-hidden="true" />
-            <Button variant="minimal" size="small" arrow>
+            <Button variant="normal" size="small" arrow className="border-0 shadow-none hover:shadow-none hover:translate-y-0">
               {t.projectDetails}
             </Button>
           </div>

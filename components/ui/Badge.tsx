@@ -9,7 +9,7 @@ export interface BadgeProps {
   text?: string;
   variant?: BadgeVariant;
   size?: BadgeSize;
-  as?: BadgeElement | 'a';
+  as?: BadgeElement;
   className?: string;
   onClick?: () => void;
   htmlFor?: string;
@@ -56,7 +56,7 @@ export default function Badge({
 
   const resolvedVariant: BadgeVariant = variant ?? 'default';
   const resolvedSize: BadgeSize = size ?? 'md';
-  const ResolvedComponent: BadgeElement = (Component ?? 'span') as BadgeElement;
+  const ResolvedComponent: BadgeElement = Component ?? 'span';
   const content = children ?? text;
 
   const sizeClasses: Record<BadgeSize, string> = {

@@ -123,7 +123,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
 
       {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
-        <div className="rounded-2xl border border-black/10 bg-white p-3 shadow-sm">
+        <div className="surface-panel-solid p-3">
           <Text variant="xs" tone="muted" as="p" className="mb-2 tracking-wider uppercase">
             {t.tableOfContents}
           </Text>
