@@ -1,0 +1,415 @@
+# TOOLS_CATALOG
+
+Ten plik opisuje wszystkie narzędzia (interaktywne komponenty) z katalogu `components/sections/tools/*`.
+
+Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w większości przypadków:
+
+- **Są client-side**: pliki zawierają `'use client'` i opierają się o stan Reacta.
+- **Przetwarzają dane lokalnie**: operacje na obrazach/tekście/kolorach odbywają się w przeglądarce, bez wysyłania plików na serwer.
+- **Korzystają z Web API**: głównie `canvas`, `FileReader`, `URL.createObjectURL`, `navigator.clipboard`/`document.execCommand('copy')`.
+- **Sprzątają zasoby**: część narzędzi tworzy `ObjectURL` dla podglądów/wyników i w miarę możliwości je zwalnia (`URL.revokeObjectURL`).
+
+---
+
+## `ColorPaletteGenerator` (`components/sections/tools/ColorPaletteGenerator.tsx`)
+
+- **Co robi**: Generator palet kolorów na podstawie jednego koloru bazowego (HEX). Zwraca zestawy palet (m.in. monochromatyczna, triadyczna, split-complementary, pastelowa, ciemna, tonalna) i pozwala kopiować wartości.
+- **Wejście (UI)**:
+  - **[picker + input]** użytkownik może wskazać kolor przez `<input type="color">` lub wpisać HEX w polu tekstowym.
+  - **[akcje]**:
+    - **`Zaktualizuj kolor`**: zatwierdza wpisany HEX jako kolor bazowy.
+    - **`Losowy kolor`**: ustawia losowy HEX w polu wejściowym (ale nie aktualizuje bazowego, dopóki nie klikniesz `Zaktualizuj kolor`).
+- **Stan i dane**:
+  - **`baseColor`**: aktywny kolor bazowy, na którym liczą się palety.
+  - **`inputColor`**: wartość w polu edycji (może różnić się od `baseColor`).
+  - **`copiedHex`**: HEX ostatnio skopiowanego swatcha (do pokazania feedbacku „Skopiowano”).
+- **Walidacja/normalizacja koloru**:
+  - **[wymagany prefix `#`]** `normalizeHex()` akceptuje tylko kolory zaczynające się od `#`.
+  - **[formaty]** wspierane są `#rgb` i `#rrggbb` (3 lub 6 znaków po `#`).
+  - **[normalizacja]** kolor jest sprowadzany do `#rrggbb` i lower-case.
+  - **[błędy]** brak poprawnego HEX skutkuje brakiem palet i komunikatem w UI (`ToolAlert`).
+- **Algorytm generowania palet**:
+  - **[konwersje]**:
+    - HEX → RGB: `hexToRgb()`.
+    - RGB → HSL: `rgbToHsl()`.
+    - HSL → RGB → HEX: `hslToRgb()` + `rgbToHex()`.
+  - **[clamp]** wszystkie wartości HSL są ograniczane do sensownych zakresów (`clamp()`), a hue jest „zawijany” w 0–360.
+  - **[grupy palet]** `createPaletteFromHex()` zwraca tablicę `PaletteGroup`, gdzie każda grupa ma:
+    - **`label`** i **`description`** (tekst edukacyjny w UI).
+    - **`colors[]`**: lista 5 kolorów (HEX + HSL).
+  - **[monochromatic]** ten sam hue i saturation, zmienne lightness (`l -25`, `-12`, `0`, `+12`, `+24`).
+  - **[analogous]** hue w zakresie około `-30° … +30°` wokół bazowego.
+  - **[complementary]** hue bazowy + dopełnienie (`+180°`) + wariacje lightness.
+  - **[triadic]** hue `+120°` i `+240°` (wariacje L).
+  - **[split-complementary]** hue `+150°` i `+210°`.
+  - **[soft-pastel]** zmniejsza saturację do max ~45 i ustawia wysokie L (`92 → 76`).
+  - **[deep-dark]** podbija saturację do min ~55 i obniża L (seria `l -5 → -36`).
+  - **[material-tonal]** inspiracja tonalnymi krokami (niska/średnia saturacja, zróżnicowane L: `96, 90, 80, 70, 60`).
+  - **[apple-minimal]** mocny akcent + bardzo jasne neutrals + ciemny neutral.
+- **Kopiowanie**:
+  - **[CopyButton]** każdy swatch ma przycisk kopiowania HEX.
+  - **[feedback]** po kopii ustawiany jest `copiedHex`, a następnie resetowany po 1200ms przez `useTimeout()`.
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolInfo`, `ToolHelper`, `ToolAlert`, `CopyButton`, `Button`, `Text`.
+  - **Hook**: `useTimeout` (reset stanu „copied”).
+- **Side effecty**:
+  - **[timeout]** jedyny efekt uboczny to timer resetujący `copiedHex`.
+
+---
+
+## `MetaTitleDescriptionTool` (`components/sections/tools/MetaTitleDescriptionTool.tsx`)
+
+- **Co robi**: Analizator długości `meta title` i `meta description`.
+  - Liczy:
+    - **liczbę znaków**,
+    - **liczbę słów**,
+    - **szerokość w pikselach** (szacunkowo, jak w SERP Google),
+  - nadaje status: `empty` / `too-short` / `ideal` / `too-long`.
+  - pokazuje podgląd snippet-u Google (title + url + description).
+- **Wejście (UI)**:
+  - **[URL]** opcjonalny adres URL używany wyłącznie w podglądzie.
+  - **[title]** pole tekstowe z limitem `maxLength={180}`.
+  - **[description]** textarea z limitem `maxLength={400}`.
+- **Pomiar szerokości tekstu (px)**:
+  - **[canvas]** `measureTextWidth()` tworzy (raz) `HTMLCanvasElement` i używa `CanvasRenderingContext2D.measureText()`.
+  - **[fonts]** używa zdefiniowanych fontów:
+    - title: `400 20px system-ui, ...`
+    - description: `300 15px system-ui, ...`
+  - **[fallback SSR]** gdy `document` nie istnieje (np. SSR), szerokość jest aproksymowana: `text.length * fallbackAvgPx`.
+- **Heurystyki oceny długości**:
+  - **[title]**:
+    - `too-short`, gdy **< 35 znaków** lub **< 350px**.
+    - `too-long`, gdy **> 65 znaków** lub **> 580px**.
+    - `ideal` w pozostałych przypadkach.
+  - **[description]**:
+    - `too-short`, gdy **< 100 znaków** lub **< 430px**.
+    - `too-long`, gdy **> 165 znaków** lub **> 920px**.
+    - `ideal` w pozostałych przypadkach.
+- **Podgląd snippet-u**:
+  - **[truncation]** `truncateForPreview()` ucina tekst do:
+    - title: 65 znaków,
+    - description: 165 znaków,
+    - dodając znak `…`.
+  - **[default tekst]** gdy pola są puste, używa przykładowych wartości z `ui.pl`.
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`, `Heading`.
+- **Side effecty**:
+  - **[brak]** narzędzie nie zapisuje danych poza stanem komponentu.
+
+---
+
+## `WcagContrastChecker` (`components/sections/tools/WcagContrastChecker.tsx`)
+
+- **Co robi**: Tester kontrastu kolorów zgodny z WCAG 2.1.
+  - oblicza współczynnik kontrastu `ratio`,
+  - ocenia pass/fail dla:
+    - **tekstu zwykłego** (AA/AAA),
+    - **tekstu dużego/pogrubionego** (AA/AAA),
+    - **ikon i elementów UI** (AA).
+  - pokazuje wizualne podglądy (tekst i ikona na tle).
+- **Wejście (UI)**:
+  - **[próbka tekstu]** dowolny tekst testowy (nagłówek/CTA/akapit).
+  - **[foreground]** kolor tekstu: picker + input tekstowy.
+  - **[background]** kolor tła: picker + input tekstowy.
+  - **[akcje]**:
+    - **`Zamień kolory miejscami`**: swap foreground/background.
+    - **`Reset do czarny na białym`**.
+- **Obsługiwane formaty koloru**:
+  - **HEX**: `#rgb` i `#rrggbb`.
+  - **RGB(A)**: `rgb(r,g,b)` i `rgba(r,g,b,a)`.
+  - **Uwagi**:
+    - alpha w `rgba()` jest parsowana przez regex, ale nie wpływa na obliczenia (wykorzystywane są tylko kanały R/G/B).
+    - brak wsparcia dla nazw kolorów (`red`) i HSL.
+- **Algorytm kontrastu**:
+  - **[parsing]** `parseColor()` zwraca `{ r, g, b }` lub `null`.
+  - **[luminance]** `relativeLuminance()` liczy luminancję względną wg WCAG:
+    - najpierw `channelToLinear()` przekształca kanały sRGB,
+    - potem sumuje ważone składowe `0.2126*R + 0.7152*G + 0.0722*B`.
+  - **[ratio]** `getContrastRatio()`:
+    - `ratio = (lighter + 0.05) / (darker + 0.05)`,
+    - wynik jest zaokrąglany do 2 miejsc.
+- **Progi WCAG (z kodu)**:
+  - **Tekst zwykły**:
+    - **AA**: `ratio >= 4.5`.
+    - **AAA**: `ratio >= 7`.
+  - **Tekst duży**:
+    - **AA**: `ratio >= 3`.
+    - **AAA**: `ratio >= 4.5`.
+  - **UI/ikony**:
+    - **AA**: `ratio >= 3`.
+- **Prezentacja wyników**:
+  - **[ratio]** wyświetlane jako `X.XX : 1`.
+  - **[badge]** `ResultBadge` renderuje `Badge` z wariantem `success` lub `error`.
+  - **[błąd]** gdy parsing się nie uda, `ratio === null` i UI pokazuje komunikat z poprawnymi formatami.
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`, `ToolInfo`, `Badge`, `Text`.
+  - **Ikony**: `react-icons/ri`.
+- **Side effecty**:
+  - **[brak]** brak zapisów lub integracji z zewnętrznymi API.
+
+---
+
+## `FaviconGenerator` (`components/sections/tools/FaviconGenerator.tsx`)
+
+- **Co robi**: Generator zestawu favicon.
+  - Wspiera wygenerowanie:
+    - ikon PNG w wybranych rozmiarach,
+    - opcjonalnie `favicon.ico` (kontener ICO na bazie PNG 32×32).
+  - Udostępnia:
+    - podgląd,
+    - pobieranie pojedynczych plików,
+    - pobieranie wszystkich,
+    - auto-download po generacji.
+- **Wejście (UI)**:
+  - **[upload]** `drag&drop` lub wybór pliku.
+  - **[formaty]** akceptowane MIME:
+    - `image/png`,
+    - `image/jpeg`, `image/jpg`,
+    - `image/svg+xml`.
+- **Konfiguracja generowania**:
+  - **[rozmiary PNG]** `selectedSizes` (domyślnie `[180, 192, 512]`).
+  - **[favicon.ico]** `includeIco` (domyślnie `true`).
+  - **[tło]**:
+    - `transparentBackground`: czy wynik ma mieć przezroczyste tło.
+    - `backgroundColor`: kolor tła, używany gdy `transparentBackground === false`.
+  - **[auto-download]** `autoDownload`: automatycznie pobiera każdy plik zaraz po wygenerowaniu.
+- **Algorytm generowania PNG** (`createPngFromImage()`):
+  - **[canvas]** tworzy `canvas` o wymiarach `size × size`.
+  - **[tło]**:
+    - gdy `transparentBackground === false`: wypełnia canvas `backgroundColor`.
+    - gdy `true`: czyści canvas.
+  - **[skalowanie]** skaluje obraz z zachowaniem proporcji:
+    - `ratio = min(size / naturalWidth, size / naturalHeight)`.
+    - wynik jest wycentrowany (`dx`, `dy`).
+  - **[render]** `ctx.imageSmoothingQuality = 'high'` i `ctx.drawImage(...)`.
+  - **[export]** `canvas.toBlob(..., 'image/png')`.
+- **Algorytm generowania ICO** (`createIcoFromPng()`):
+  - **[źródło]** tworzy PNG 32×32 (taki sam pipeline jak wyżej).
+  - **[kontener ICO]** buduje minimalny binarny format `.ico`:
+    - nagłówek (6 bajtów),
+    - pojedynczy wpis (16 bajtów),
+    - zawartość: bytes PNG wklejone jako „image data”.
+  - **[mime]** wynikowy blob ma `type: 'image/x-icon'`.
+- **Zarządzanie wynikami**:
+  - **[outputs]** stan `outputs: OutputFile[]` przechowuje:
+    - `sizeBytes`, `url` (ObjectURL), `fileName`, `label`, `type`.
+  - **[download]**:
+    - pojedyncze pobranie: link `<a download>`.
+    - `Pobierz wszystkie`: iteruje po `outputs`.
+    - `autoDownload`: pobiera w trakcie generowania (dla każdego pliku osobno).
+  - **[preview]** miniatury otwierają podgląd w nowej karcie (`window.open(url, '_blank')`).
+- **Cleanup**:
+  - **[revoke outputs]** przed wygenerowaniem nowego zestawu i przy `Clear` wywoływane jest `URL.revokeObjectURL()` dla wszystkich outputów.
+  - **[revoke source preview]** przy zmianie pliku i przy `Clear` zwalniany jest `sourcePreviewUrl`.
+- **Błędy i statusy**:
+  - **[status]** `idle` / `processing` / `done` / `error`.
+  - **[walidacja]**:
+    - brak pliku → błąd „Najpierw dodaj obraz bazowy…”.
+    - brak wybranych rozmiarów i wyłączone ICO → błąd „Zaznacz przynajmniej jeden rozmiar…”.
+  - **[runtime]** osobne komunikaty dla braku `canvas`, błędu ładowania obrazu i problemów z generacją blob.
+- **Istotna uwaga (stan obecny kodu)**:
+  - **[nazwy plików vs format]** generator tworzy **pliki PNG**, ale `suggestFileName()` zwraca nazwy z rozszerzeniem `.webp` dla rekomendowanych rozmiarów (`apple-touch-icon.webp`, `android-chrome-*.webp`). Zawartość pozostaje PNG (mime `image/png`).
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolInfo`, `ToolAlert`, `Button`, `Badge`, `Heading`, `Eyebrow`, `Text`.
+- **Side effecty**:
+  - **[ObjectURL]** tworzenie i zwalnianie `URL.createObjectURL`.
+  - **[download]** generowanie i klikanie tymczasowych linków `<a>`.
+
+---
+
+## `JpgPngToWebp` (`components/sections/tools/JpgPngToWebp.tsx`)
+
+- **Co robi**: Batch konwerter wielu plików JPG/PNG do WebP.
+  - posiada kolejkę,
+  - pokazuje status dla każdego pliku,
+  - umożliwia auto-download i pobieranie zbiorcze,
+  - generuje raport oszczędności i kopiuje go do schowka.
+- **Wejście (UI)**:
+  - **[upload]** drag&drop lub file picker (`multiple`).
+  - **[formaty]** akceptuje wyłącznie MIME:
+    - `image/jpeg`,
+    - `image/png`.
+  - **[deduplikacja]** pliki o tym samym kluczu `name-size` są pomijane.
+- **Model kolejki**:
+  - **[FileItem]** każdy element ma m.in.:
+    - `status`: `pending` / `processing` / `done` / `error`,
+    - `previewUrl`: ObjectURL podglądu,
+    - `downloadUrl`: ObjectURL wyniku WebP,
+    - `outputSize`, `ratio`, `usedQuality`, `downloaded`.
+  - **[kolejność]** konwersja jest wykonywana sekwencyjnie (pętla `for...of`).
+- **Konwersja do WebP**:
+  - **[pipeline]** `convertToWebp()`:
+    - `FileReader.readAsDataURL(file)`,
+    - `Image` ładowany z DataURL,
+    - `canvas` o wymiarach `naturalWidth × naturalHeight`,
+    - `canvas.toBlob(..., 'image/webp', quality/100)`.
+  - **[smart quality]** `convertToWebpSmart()`:
+    - startuje od `initialQuality` (UI: domyślnie 80%),
+    - jeżeli wynikowy blob jest większy od oryginału, obniża jakość co `5` punktów,
+    - minimalna jakość to `60`,
+    - zwraca blob + faktycznie użyty `usedQuality`.
+- **Pobieranie**:
+  - **[download helper]** `triggerDownloadFromUrl(url, filename)` – jedna funkcja do pobierania (tworzy `<a download>` i klika).
+  - **[download all]** pobiera wszystkie pliki `done` z krótką przerwą `sleep(150)`, aby ograniczyć „zatykanie” przeglądarki.
+  - **[auto-download]** przy włączonej opcji `autoDownload` pobiera plik zaraz po konwersji i oznacza go jako `downloaded`.
+  - **[reconvert]** resetuje element do `pending` i usuwa poprzedni `downloadUrl`.
+- **Podgląd i zarządzanie listą**:
+  - **[preview]** `window.open(previewUrl, '_blank')`.
+  - **[remove]** usuwa element z listy oraz zwalnia `previewUrl` i `downloadUrl`.
+  - **[clear all]** czyści listę i zwalnia wszystkie ObjectURL.
+- **Raport i kopiowanie**:
+  - **[summary]** oblicza łączny rozmiar wejściowy/wyjściowy i różnicę (`savedWeight` / `weightDifference`).
+  - **[clipboard]** kopiuje raport przez `useCopyToClipboard()`.
+  - **[komunikaty]** UI pokazuje `copyInfo` (np. „Raport skopiowany…”).
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolAlert`, `Button`, `Badge`, `Heading`, `Text`.
+  - **Hook**: `useCopyToClipboard`.
+- **Side effecty**:
+  - **[FileReader]** odczyt plików po stronie klienta.
+  - **[ObjectURL]** tworzenie i zwalnianie `previewUrl` i `downloadUrl`.
+  - **[download]** automatyczne pobieranie plików przez `<a download>`.
+
+---
+
+## `ImageResizeTool` (`components/sections/tools/ImageResizeTool.tsx`)
+
+- **Co robi**: Narzędzie do zmiany rozmiaru + kadrowania obrazu z podglądem kadru.
+  - wspiera presety (social/web) i ręczne wymiary,
+  - pozwala ustawić kształt kadru (prostokąt/kwadrat/koło),
+  - posiada interaktywny kadr (przesuwanie i skalowanie uchwytami),
+  - eksportuje wynik do JPG/PNG/WebP z kontrolą jakości.
+- **Wejście (UI)**:
+  - **[upload]** drag&drop lub wybór pliku (`accept="image/*"`).
+  - **[wczytanie wymiarów]** po załadowaniu obrazka odczytywane są `img.width` i `img.height`.
+- **Stan (model danych)**:
+  - **`file`**: aktualny plik źródłowy.
+  - **`imageUrl`**: `ObjectURL` używany do podglądu.
+  - **`originalWidth` / `originalHeight`**: wymiary wejściowe.
+  - **`targetWidth` / `targetHeight`**: docelowy rozmiar pliku wynikowego.
+  - **`mode`**: `pixels` lub `preset`.
+  - **`keepAspectRatio`**: gdy `true`, zmiana jednego wymiaru przelicza drugi na podstawie proporcji oryginału.
+  - **Kadrowanie**:
+    - **`cropX` / `cropY`**: pozycja środka kadru w skali 0–1 w dostępnych granicach.
+    - **`cropZoom`**: powiększenie (1 = brak zoomu).
+  - **Siatka**:
+    - **`gridColor`**: kolor linii 3×3 (np. emerald/white/black).
+  - **Kształt**:
+    - **`shape`**: `rect` / `square` / `circle`.
+    - **`shapeAspect`**: proporcje prostokąta (np. `4:5`, `16:9`).
+  - **Eksport**:
+    - **`outputFormat`**: `jpg` / `png` / `webp`.
+    - **`outputQuality`**: liczba 0.60–1.00 (UI: 60–100%), używana dla JPG/WebP.
+  - **UX**:
+    - **`activeTool`**: aktywna zakładka narzędzi kadrowania.
+    - **`estimatedSize`**: rozmiar blob po wygenerowaniu (pokazywany jako „Szacowany wynik”).
+- **Tryby ustawiania rozmiaru**:
+  - **[pixels]** ręczne wpisanie `targetWidth` i `targetHeight`.
+  - **[keep aspect ratio]** gdy włączone, zmiana jednego wymiaru automatycznie przelicza drugi (`Math.round(...)`).
+  - **[preset]** wybór gotowego formatu (social/web) ustawia wymiary docelowe, resetuje kadr i wymusza `shape: 'rect'`.
+- **Presety** (`getImagePresets()`):
+  - **Social media**: m.in. IG 1080×1080, 1080×1350, 1080×1920; FB 1200×630 i cover 820×360; LI 1200×1200 i banner 1584×396.
+  - **WWW**: miniatura 800×600; hero 1920×1080; tło 1920×1280.
+- **Model kadrowania (matematyka)**:
+  - **[getCropRect]** wylicza prostokąt kadru w przestrzeni oryginalnego obrazu:
+    - wyznacza maksymalny kadr o docelowych proporcjach, który mieści się w oryginale,
+    - dzieli go przez `zoom` (im większy zoom, tym mniejszy wycinek),
+    - interpretuje `cropX`/`cropY` jako pozycję środka kadru w dopuszczalnym zakresie,
+    - zwraca współrzędne `x`, `y`, `cropW`, `cropH`.
+  - **[zakres zoom]** wewnętrznie clamp do `1…10`.
+- **Interaktywny kadr (pointer events)**:
+  - **[move]** przeciąganie kadru:
+    - używa `setPointerCapture`,
+    - przelicza przesunięcie kursora na zmianę `cropX`/`cropY` i clamp do `0…1`.
+  - **[resize]** przeciąganie uchwytów narożnych:
+    - wyznacza punkt kotwicy (przeciwległy róg kadru),
+    - utrzymuje docelowe proporcje kadru,
+    - na podstawie nowej szerokości kadru wylicza `cropZoom`,
+    - aktualizuje `cropX`/`cropY` oraz `cropZoom`.
+  - **[drag state]** sterowanie logiką przeciągania odbywa się przez `dragRef` (`mode: 'move' | 'resize'`).
+- **Kształt kadru**:
+  - **[square/circle]** po wyborze kwadratu lub koła narzędzie automatycznie ustawia `targetWidth === targetHeight` (bierze krótszy bok).
+  - **[rect aspect]** dla prostokąta wybór proporcji przelicza docelową wysokość na podstawie bieżącej szerokości.
+  - **[circle alpha]**:
+    - koło wymaga kanału alfa – narzędzie blokuje wybór JPG (`disabled`) i automatycznie przełącza `outputFormat` na PNG, jeśli wcześniej był JPG.
+- **Podgląd kadru**:
+  - **[overlay]** zaznaczony obszar ma:
+    - maskę (ciemne przyciemnienie poza kadrem),
+    - siatkę 3×3 w wybranym kolorze,
+    - uchwyty narożne do resize.
+  - **[shape preview]** dla `circle` nakładany jest `rounded-full`.
+- **Eksport (download)**:
+  - **[canvas render]**:
+    - tworzy `canvas` o docelowych wymiarach,
+    - dla koła klipuje rysunek (`ctx.arc()` + `ctx.clip()`),
+    - rysuje wycinek obrazu `drawImage(img, crop.x, crop.y, crop.cropW, crop.cropH, ...)`.
+  - **[mime + quality]**:
+    - JPG: `image/jpeg` + `outputQuality`.
+    - WebP: `image/webp` + `outputQuality`.
+    - PNG: `image/png` (bez parametru jakości).
+  - **[filename]** `baseName-{W}x{H}.{ext}`.
+  - **[estimated]** po wygenerowaniu ustawia `estimatedSize = blob.size`.
+  - **[cleanup]** wynikowy `ObjectURL` jest revokowany natychmiast po rozpoczęciu pobierania.
+- **Cleanup zasobów**:
+  - **[revoke imageUrl]** przy zmianie pliku oraz przy unmount komponentu.
+- **Zależności**:
+  - **UI**: `ToolAlert`, `Button`, `Badge`, `Heading`, `Text`.
+  - **Ikony**: `react-icons/md`, `react-icons/ri`.
+- **Side effecty**:
+  - **[ObjectURL]** tworzenie i zwalnianie podglądu.
+  - **[canvas]** tworzenie pliku wynikowego w przeglądarce.
+
+---
+
+## `EmailSignatureGenerator` (`components/sections/tools/EmailSignatureGenerator.tsx`)
+
+- **Co robi**: Edytor stopki e-mail (podpisu) generujący HTML kompatybilny z klientami pocztowymi (tabela-based layout) + podgląd + kopiowanie.
+- **Układy (layout presets)**:
+  - **`standard`**: klasyczny układ (opcjonalny avatar po lewej + treść po prawej).
+  - **`accent-bar`**: wariant z pionowym paskiem akcentu po lewej.
+  - **`top-banner`**: górny pasek z tłem w kolorze akcentu + treść poniżej.
+  - **`label-column`**: kontakt w formie tabeli z etykietami (Tel./E-mail/Strona/Adres).
+  - **`centered`**: całość wyśrodkowana (opcjonalnie avatar nad treścią).
+- **Model danych**:
+  - **`SignatureConfig`** (dane i treści): m.in. `fullName`, `email`, `phone`, `website`, `address`, `company`, `jobTitle`, `ctaLabel`, `ctaUrl`, `socials[]`, `legalNote`, `formalLine`, `avatarUrl`.
+  - **`StyleConfig`** (wygląd): `accentColor`, `textColor`, `backgroundColor`, `fontFamily`, `fontSize`, `padding`, `ctaRadius`, `showDivider`.
+- **Panele edycji (UI)**:
+  - **[identity]**: dane osoby/firmy (w tym adres i dane formalne).
+  - **[cta]**: tekst i link przycisku CTA.
+  - **[social]**: linki do profili (LinkedIn/Instagram/Facebook/TikTok/YouTube/X) – pojawiają się tylko wypełnione.
+  - **[appearance]**: motyw i style (kolory, font, rozmiar tekstu, padding, radius CTA, divider).
+  - **[legal]**: klauzula prawna/RODO (textarea, wspiera wielolinijkowość).
+- **Generowanie HTML** (`buildSignatureHtml()`):
+  - **[escape]** wszystkie teksty przechodzą przez `escapeHtml()`.
+  - **[multiline]** pola typu textarea są formatowane do HTML (`\n` → `<br />`).
+  - **[URL sanitation]**:
+    - **linki (href)** `sanitizeHrefUrl()`:
+      - blokuje protokoły `javascript:`, `data:`, `vbscript:`, `file:`.
+      - dopuszcza `http(s)://`.
+      - jeśli użytkownik nie poda protokołu, dopina `https://`.
+    - **obraz (src)** `sanitizeSrcUrl()`:
+      - blokuje `javascript:`, `vbscript:`, `file:`.
+      - nie blokuje `data:` (jeśli użytkownik wstawi Data URL, zostanie użyty).
+  - **[warunkowość]**:
+    - CTA pojawia się tylko, gdy są ustawione i label, i URL oraz URL przejdzie sanitizację.
+    - social pojawia się tylko dla wpisanych URL.
+    - divider (`showDivider`) kontroluje separator między danymi a klauzulą.
+    - avatar jest renderowany tylko, gdy `avatarUrl` po sanitizacji nie jest puste.
+  - **[layout]** HTML opiera się na zagnieżdżonych `<table>` i inline-style (dla zgodności z klientami poczty).
+  - **[minifikacja whitespace]** końcowy HTML jest spłaszczany przez `replace(/\s{2,}/g, ' ')` i `trim()`.
+- **Podgląd**:
+  - **[dangerouslySetInnerHTML]** render HTML w preview bezpośrednio jako markup.
+- **Kopiowanie stopki**:
+  - **[preferowane]** `document.execCommand('copy')` na zaznaczeniu tymczasowego elementu DOM – kopiuje jako rich HTML (praktyczne dla Gmail/Outlook).
+  - **[fallback]** `navigator.clipboard.writeText(signatureHtml)` – kopiuje HTML jako tekst.
+  - **[status]** `copyStatus: idle/success/error` z resetem po 3000ms (`useTimeout`).
+  - **[wymagane pola]** kopiowanie jest zablokowane bez `fullName` i `email`.
+- **Motywy (theme presets)**:
+  - **[THEME_PRESETS]** gotowe zestawy zmieniające `accentColor` i `textColor`.
+- **Zależności**:
+  - **UI**: `Button`, `Badge`, `Heading`, `Eyebrow`, `Text`.
+  - **Hook**: `useTimeout`.
+  - **Ikony**: `react-icons/ri`.
+- **Side effecty**:
+  - **[clipboard]** zapis do schowka (execCommand / navigator.clipboard).
+  - **[DOM]** tworzenie i usuwanie tymczasowego elementu do zaznaczenia HTML.
+  - **[timeout]** reset statusu kopiowania.
