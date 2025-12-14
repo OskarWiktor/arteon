@@ -1,8 +1,8 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import HeroBanner from '@/components/sections/HeroBanner';
@@ -95,7 +95,7 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
 
   return (
     <>
-      {blocks.map((b: any, i: number) => {
+      {blocks.map((b, i) => {
         if (b.type === 'richtext') {
           return <div key={`rt-${i}`} dangerouslySetInnerHTML={{ __html: b.html }} />;
         }
@@ -444,3 +444,5 @@ export default function ProjectPage({ params }: PageProps) {
     </>
   );
 }
+
+

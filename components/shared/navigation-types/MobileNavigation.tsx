@@ -9,6 +9,12 @@ import Text from '../../ui/typography/Text';
 import Eyebrow from '../../ui/typography/Eyebrow';
 import IconText from '../../ui/IconText';
 import SocialIconLink from '../../ui/SocialIconLink';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
+import { useRestoreFocus } from '@/hooks/useRestoreFocus';
+import { useScrollLock } from '@/hooks/useScrollLock';
+import { useEventListener } from '@/hooks/useEventListener';
+import { useTimeout } from '@/hooks/useTimeout';
 
 const ui = {
   pl: {
@@ -215,50 +221,32 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
   const NAV = getNavItems();
   const SECTIONS = getSections();
 
+  const { start: focusFirst } = useTimeout();
+
   const [panelWidth, setPanelWidth] = useState(0);
+  const updatePanelWidth = () => setPanelWidth(Math.min(window.innerWidth * 0.88, 300));
+  useEventListener(typeof window !== 'undefined' ? window : null, 'resize', updatePanelWidth);
+
   useEffect(() => {
-    const update = () => setPanelWidth(Math.min(window.innerWidth * 0.88, 300));
-    update();
-    window.addEventListener('resize', update);
-    return () => window.removeEventListener('resize', update);
+    updatePanelWidth();
   }, []);
 
   useEffect(() => {
     setIsOpen(false);
   }, [pathname, setIsOpen]);
 
-  useEffect(() => {
-    const root = document.documentElement;
-    if (isOpen) root.classList.add('overflow-hidden');
-    else root.classList.remove('overflow-hidden');
-    return () => root.classList.remove('overflow-hidden');
-  }, [isOpen]);
+  useScrollLock(isOpen);
+  useEscapeKey(() => setIsOpen(false), isOpen);
+  useFocusTrap(panelRef, isOpen, 'a[href],button:not([disabled]),[tabindex="0"]');
+  useRestoreFocus(isOpen);
 
   useEffect(() => {
     if (!isOpen) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setIsOpen(false);
-      if (e.key === 'Tab' && panelRef.current) {
-        const f = panelRef.current.querySelectorAll<HTMLElement>('a[href],button:not([disabled]),[tabindex="0"]');
-        if (!f.length) return;
-        const first = f[0];
-        const last = f[f.length - 1];
-        if (e.shiftKey && document.activeElement === first) {
-          e.preventDefault();
-          (last as HTMLElement).focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
-          e.preventDefault();
-          (first as HTMLElement).focus();
-        }
-      }
-    };
-    document.addEventListener('keydown', onKey);
-    setTimeout(() => {
+    focusFirst(() => {
       const first = panelRef.current?.querySelector<HTMLElement>('a[href],button:not([disabled]),[tabindex="0"]');
       first?.focus();
     }, 0);
-    return () => document.removeEventListener('keydown', onKey);
-  }, [isOpen, setIsOpen]);
+  }, [isOpen]);
 
   const [openKeys, setOpenKeys] = useState<Record<Section['key'], boolean>>({
     witryny: false,

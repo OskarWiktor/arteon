@@ -1,4 +1,4 @@
-import BenefitBelt from '@/components/sections/BenefitBelt';
+﻿import BenefitBelt from '@/components/sections/BenefitBelt';
 import ArticlesOverview from '@/components/sections/blog/ArticlesOverview';
 import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -8,7 +8,7 @@ import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TechStack from '@/components/sections/TechStack';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
@@ -313,3 +313,5 @@ export default function HomePage() {
     </>
   );
 }
+
+

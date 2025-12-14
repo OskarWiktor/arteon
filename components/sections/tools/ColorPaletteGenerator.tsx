@@ -1,13 +1,14 @@
 'use client';
 
 import { useMemo, useState, type FormEvent } from 'react';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
-import CopyButton from '@/components/ui/tools/CopyButton';
+import CopyButton from '@/components/ui/buttons/CopyButton';
 import Text from '@/components/ui/typography/Text';
+import { useTimeout } from '@/hooks/useTimeout';
 
 const ui = {
   pl: {
@@ -377,6 +378,7 @@ export default function ColorPaletteGenerator() {
   const [baseColor, setBaseColor] = useState('#4f6bf5');
   const [inputColor, setInputColor] = useState('#4f6bf5');
   const [copiedHex, setCopiedHex] = useState<string | null>(null);
+  const { start: startCopiedReset } = useTimeout();
 
   const normalizedBase = useMemo(() => normalizeHex(baseColor), [baseColor]);
   const palettes = useMemo(() => (normalizedBase ? createPaletteFromHex(normalizedBase) : []), [normalizedBase]);
@@ -395,19 +397,9 @@ export default function ColorPaletteGenerator() {
     setInputColor(random);
   };
 
-  const handleCopy = async (hex: string) => {
-    try {
-      await navigator.clipboard.writeText(hex);
-      setCopiedHex(hex);
-      setTimeout(() => {
-        setCopiedHex(null);
-      }, 1200);
-    } catch {
-      setCopiedHex(hex);
-      setTimeout(() => {
-        setCopiedHex(null);
-      }, 1200);
-    }
+  const handleCopy = (hex: string) => {
+    setCopiedHex(hex);
+    startCopiedReset(() => setCopiedHex(null), 1200);
   };
 
   return (

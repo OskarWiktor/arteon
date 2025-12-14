@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
-import ButtonGroup from '../ButtonGroup';
+import ButtonGroup from '../buttons/ButtonGroup';
 
 const ui = {
   pl: {

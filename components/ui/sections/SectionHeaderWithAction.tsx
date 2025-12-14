@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
-import Button from '../Button';
+import Button from '../buttons/Button';
 
 interface SectionHeaderWithActionProps {
   subtitle?: ReactNode;

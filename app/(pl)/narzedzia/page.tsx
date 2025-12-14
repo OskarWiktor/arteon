@@ -1,5 +1,5 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import Button from '@/components/ui/Button';
+﻿import HeroBanner from '@/components/sections/HeroBanner';
+import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -293,3 +293,5 @@ export default function ToolsIndexPage() {
     </>
   );
 }
+
+

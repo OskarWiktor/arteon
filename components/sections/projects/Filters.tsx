@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import Button from '../../ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import Heading from '../../ui/typography/Heading';
 import allProjectsData from '@/data/pl/projects.json';
 import type { Project, ProjectCategory } from '@/types/project';

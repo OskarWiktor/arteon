@@ -1,10 +1,11 @@
-'use client';
+﻿'use client';
 
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import Badge from '@/components/ui/Badge';
 import Heading from '@/components/ui/typography/Heading';
 import Eyebrow from '@/components/ui/typography/Eyebrow';
 import Text from '@/components/ui/typography/Text';
+import { useTimeout } from '@/hooks/useTimeout';
 import { useMemo, useState, type ReactNode } from 'react';
 import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line } from 'react-icons/ri';
 
@@ -623,6 +624,7 @@ function PanelButton({ id, current, icon, label, onClick }: PanelButtonProps) {
 
 export default function EmailSignatureGenerator() {
   const t = ui.pl;
+  const { start: startCopyReset } = useTimeout();
   const [config, setConfig] = useState<SignatureConfig>(DEFAULT_SIGNATURE);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);
   const [copyStatus, setCopyStatus] = useState<CopyStatus>('idle');
@@ -696,23 +698,24 @@ export default function EmailSignatureGenerator() {
       }
 
       setCopyStatus('success');
-      setTimeout(() => setCopyStatus('idle'), 3000);
+      startCopyReset(() => setCopyStatus('idle'), 3000);
     } catch {
-      if (navigator.clipboard?.writeText) {
-        navigator.clipboard
-          .writeText(signatureHtml)
-          .then(() => {
-            setCopyStatus('success');
-            setTimeout(() => setCopyStatus('idle'), 3000);
-          })
-          .catch(() => {
-            setCopyStatus('error');
-            setTimeout(() => setCopyStatus('idle'), 3000);
-          });
-      } else {
+      if (!navigator.clipboard?.writeText) {
         setCopyStatus('error');
-        setTimeout(() => setCopyStatus('idle'), 3000);
+        startCopyReset(() => setCopyStatus('idle'), 3000);
+        return;
       }
+
+      navigator.clipboard
+        .writeText(signatureHtml)
+        .then(() => {
+          setCopyStatus('success');
+          startCopyReset(() => setCopyStatus('idle'), 3000);
+        })
+        .catch(() => {
+          setCopyStatus('error');
+          startCopyReset(() => setCopyStatus('idle'), 3000);
+        });
     }
   }
 
@@ -1301,3 +1304,5 @@ export default function EmailSignatureGenerator() {
     </div>
   );
 }
+
+

@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import Button from '../ui/Button';
+import Button from '../ui/buttons/Button';
 import Heading from '../ui/typography/Heading';
 import Text from '../ui/typography/Text';
 import ToolAlert from '../ui/tools/ToolAlert';

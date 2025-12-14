@@ -70,7 +70,13 @@ function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' |
   return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
-function FlowGroup({ items }: { items: any[] }) {
+type FlowBlock = Extract<Article['contentBlocks'][number], { type: 'richtext' | 'code' | 'table' | 'quote' }>;
+
+function isFlowBlock(b: Article['contentBlocks'][number]): b is FlowBlock {
+  return b.type === 'richtext' || b.type === 'code' || b.type === 'table' || b.type === 'quote';
+}
+
+function FlowGroup({ items }: { items: FlowBlock[] }) {
   return (
     <div className="prose prose-lg max-w-none">
       {items.map((b, i) => {
@@ -125,11 +131,10 @@ function FlowGroup({ items }: { items: any[] }) {
 function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
   if (!blocks?.length) return null;
 
-  const FLOW_TYPES = new Set(['richtext', 'code', 'table', 'quote']);
-
-  type Group = { kind: 'flow' | 'single'; items: Article['contentBlocks'] };
+  type NonFlowBlock = Exclude<Article['contentBlocks'][number], FlowBlock>;
+  type Group = { kind: 'flow'; items: FlowBlock[] } | { kind: 'single'; items: NonFlowBlock[] };
   const groups: Group[] = [];
-  let buf: Article['contentBlocks'] = [];
+  let buf: FlowBlock[] = [];
 
   const flushFlow = () => {
     if (buf.length) {
@@ -141,7 +146,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
   for (const b of blocks) {
     if (b.breakBefore) flushFlow();
 
-    if (FLOW_TYPES.has(b.type)) {
+    if (isFlowBlock(b)) {
       buf.push(b);
     } else {
       flushFlow();

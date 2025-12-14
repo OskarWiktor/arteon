@@ -1,5 +1,5 @@
 import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 const ui = {

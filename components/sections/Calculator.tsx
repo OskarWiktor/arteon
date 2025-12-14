@@ -59,19 +59,21 @@ export default function Calculator() {
           })),
         );
     });
-    const filtered = activeSteps.filter((_, idx) => idx <= currentStep || !activeSteps[idx].metaBranchParent?.startsWith(step.title));
-    if (branches.length) {
-      filtered.splice(
-        currentStep + 1,
-        0,
-        ...branches.map((b) => ({
-          ...b,
-          title: `BRANCH: ${b.title}`,
-        })),
-      );
-    }
-    setActiveSteps(filtered);
-  }, [selections, currentStep]);
+    setActiveSteps((prev) => {
+      const filtered = prev.filter((_, idx) => idx <= currentStep || !prev[idx].metaBranchParent?.startsWith(step.title));
+      if (branches.length) {
+        filtered.splice(
+          currentStep + 1,
+          0,
+          ...branches.map((b) => ({
+            ...b,
+            title: `BRANCH: ${b.title}`,
+          })),
+        );
+      }
+      return filtered;
+    });
+  }, [selections, currentStep, step]);
 
   const parseInputValue = useCallback((val: string, key: string): number | null => {
     if (!val.startsWith(`${key}:`)) return null;

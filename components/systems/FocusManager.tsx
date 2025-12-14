@@ -6,6 +6,7 @@ export default function FocusManager() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const firstLoad = useRef(true);
+  const search = searchParams?.toString() ?? '';
 
   useEffect(() => {
     if (firstLoad.current) {
@@ -34,7 +35,7 @@ export default function FocusManager() {
       }
       window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
     });
-  }, [pathname, searchParams?.toString()]);
+  }, [pathname, search]);
 
   return null;
 }

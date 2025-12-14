@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
-import Button from '../Button';
-import ButtonGroup from '../ButtonGroup';
+import Button from '../buttons/Button';
+import ButtonGroup from '../buttons/ButtonGroup';
 import Badge from '../Badge';
 import Text from '../typography/Text';
 import IconText from '../IconText';

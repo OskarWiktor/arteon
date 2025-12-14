@@ -17,6 +17,16 @@ export default [
   },
   js.configs.recommended,
   {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    plugins: {
+      '@next/next': nextPlugin,
+    },
+    rules: {
+      ...(nextPlugin.configs?.recommended?.rules ?? {}),
+      ...(nextPlugin.configs?.['core-web-vitals']?.rules ?? {}),
+    },
+  },
+  {
     files: ['**/*.{js,mjs,cjs}'],
     languageOptions: {
       globals: {

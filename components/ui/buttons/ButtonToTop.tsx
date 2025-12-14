@@ -2,15 +2,23 @@
 
 import { useEffect, useState } from 'react';
 import { RiArrowUpLine } from 'react-icons/ri';
+import { useEventListener } from '@/hooks/useEventListener';
+
+const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };
 
 export default function ButtonToTop({ targetId = 'article-root', showAfter = 400, label = 'Do góry' }: { targetId?: string; showAfter?: number; label?: string }) {
   const [visible, setVisible] = useState(false);
 
+  useEventListener(
+    typeof window !== 'undefined' ? window : null,
+    'scroll',
+    () => setVisible(window.scrollY > showAfter),
+    PASSIVE_SCROLL,
+    true
+  );
+
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > showAfter);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    setVisible(window.scrollY > showAfter);
   }, [showAfter]);
 
   const scrollToTarget = () => {

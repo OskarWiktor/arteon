@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
 import { RiCheckLine, RiClipboardLine } from 'react-icons/ri';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 
 interface CopyButtonProps {
   text: string;
@@ -14,7 +14,7 @@ interface CopyButtonProps {
 }
 
 export default function CopyButton({ text, label = 'Kopiuj', copiedLabel = 'Skopiowano', variant = 'default', className = '', onCopy, onError }: CopyButtonProps) {
-  const [copied, setCopied] = useState(false);
+  const { copied, copy } = useCopyToClipboard();
 
   const variantClasses: Record<NonNullable<CopyButtonProps['variant']>, string> = {
     default: 'border border-black/15 bg-white text-neutral-900 hover:bg-neutral-50',
@@ -22,29 +22,11 @@ export default function CopyButton({ text, label = 'Kopiuj', copiedLabel = 'Skop
   };
 
   const handleCopy = async () => {
-    try {
-      if (navigator.clipboard) {
-        await navigator.clipboard.writeText(text);
-      } else {
-        // Fallback dla starszych przeglądarek
-        const textArea = document.createElement('textarea');
-        textArea.value = text;
-        textArea.style.position = 'fixed';
-        textArea.style.opacity = '0';
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-      }
-
-      setCopied(true);
-      onCopy?.();
-      setTimeout(() => {
-        setCopied(false);
-      }, 1200);
-    } catch {
-      onError?.();
-    }
+    await copy(text, {
+      resetAfterMs: 1200,
+      onCopy,
+      onError,
+    });
   };
 
   return (

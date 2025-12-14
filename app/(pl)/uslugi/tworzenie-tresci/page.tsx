@@ -1,4 +1,4 @@
-import Script from 'next/script';
+﻿import Script from 'next/script';
 import { IoSparkles } from 'react-icons/io5';
 import {
   RiBarChart2Fill,
@@ -27,7 +27,7 @@ import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import FaqPanels from '@/components/ui/FaqPanels';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -321,3 +321,5 @@ export default function OfferContentPage() {
     </>
   );
 }
+
+

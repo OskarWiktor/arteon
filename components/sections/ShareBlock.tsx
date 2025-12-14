@@ -2,7 +2,7 @@
 
 import Text from '../ui/typography/Text';
 import { RiFacebookCircleFill, RiLinkedinBoxFill, RiMailLine } from 'react-icons/ri';
-import CopyButton from '../ui/tools/CopyButton';
+import CopyButton from '../ui/buttons/CopyButton';
 
 const ui = {
   pl: {

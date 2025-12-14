@@ -6,6 +6,9 @@ import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import Wrapper from '@/components/ui/Wrapper';
 import AppLink from '@/components/ui/Link';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
 
 const ui = {
   pl: {
@@ -172,37 +175,26 @@ export default function DesktopNavigation() {
   const toolsBtnRef = useRef<HTMLButtonElement>(null);
   const toolsMenuRef = useRef<HTMLDivElement>(null);
 
+  const offerMenuKeyboard = useMenuKeyboardNavigation(menuRef);
+  const toolsMenuKeyboard = useMenuKeyboardNavigation(toolsMenuRef);
+
   const buttonId = 'offer-button';
   const menuId = 'offer-submenu';
 
   const toolsButtonId = 'tools-button';
   const toolsMenuId = 'tools-submenu';
 
-  useEffect(() => {
-    const onPointerDown = (e: MouseEvent | TouchEvent) => {
-      const target = e.target as Node;
-      if (offerLiRef.current && !offerLiRef.current.contains(target)) setIsOfferOpen(false);
-      if (toolsLiRef.current && !toolsLiRef.current.contains(target)) setIsToolsOpen(false);
-    };
-    document.addEventListener('mousedown', onPointerDown);
-    document.addEventListener('touchstart', onPointerDown);
-    return () => {
-      document.removeEventListener('mousedown', onPointerDown);
-      document.removeEventListener('touchstart', onPointerDown);
-    };
-  }, []);
+  useOutsideClick(offerLiRef, () => setIsOfferOpen(false), isOfferOpen);
+  useOutsideClick(toolsLiRef, () => setIsToolsOpen(false), isToolsOpen);
 
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setIsOfferOpen(false);
-        setIsToolsOpen(false);
-        (offerBtnRef.current ?? toolsBtnRef.current)?.focus();
-      }
-    };
-    document.addEventListener('keydown', onKey);
-    return () => document.removeEventListener('keydown', onKey);
-  }, []);
+  useEscapeKey(
+    () => {
+      setIsOfferOpen(false);
+      setIsToolsOpen(false);
+      (offerBtnRef.current ?? toolsBtnRef.current)?.focus();
+    },
+    isOfferOpen || isToolsOpen
+  );
 
   useEffect(() => {
     setIsOfferOpen(false);
@@ -317,68 +309,25 @@ export default function DesktopNavigation() {
     },
   ];
 
-  const focusMenuItem = (container: HTMLDivElement | null, idx: number) => {
-    const items = container?.querySelectorAll<HTMLAnchorElement>('a[href]');
-    if (!items?.length) return;
-    const safeIdx = Math.max(0, Math.min(idx, items.length - 1));
-    items[safeIdx].focus();
-  };
-
   const handleOfferButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
     if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       if (!isOfferOpen) setIsOfferOpen(true);
-      requestAnimationFrame(() => focusMenuItem(menuRef.current, 0));
+      requestAnimationFrame(() => offerMenuKeyboard.focusFirst());
     }
   };
 
-  const handleMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    const container = menuRef.current;
-    const items = container?.querySelectorAll<HTMLAnchorElement>('a[href]');
-    if (!items?.length) return;
-    const currentIndex = Array.from(items).findIndex((el) => el === document.activeElement);
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      focusMenuItem(container!, currentIndex < 0 ? 0 : currentIndex + 1);
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      focusMenuItem(container!, currentIndex <= 0 ? 0 : currentIndex - 1);
-    } else if (e.key === 'Home') {
-      e.preventDefault();
-      focusMenuItem(container!, 0);
-    } else if (e.key === 'End') {
-      e.preventDefault();
-      focusMenuItem(container!, items.length - 1);
-    }
-  };
+  const handleMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => offerMenuKeyboard.onKeyDown(e);
 
   const handleToolsButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
     if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       if (!isToolsOpen) setIsToolsOpen(true);
-      requestAnimationFrame(() => focusMenuItem(toolsMenuRef.current, 0));
+      requestAnimationFrame(() => toolsMenuKeyboard.focusFirst());
     }
   };
 
-  const handleToolsMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    const container = toolsMenuRef.current;
-    const items = container?.querySelectorAll<HTMLAnchorElement>('a[href]');
-    if (!items?.length) return;
-    const currentIndex = Array.from(items).findIndex((el) => el === document.activeElement);
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      focusMenuItem(container!, currentIndex < 0 ? 0 : currentIndex + 1);
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      focusMenuItem(container!, currentIndex <= 0 ? 0 : currentIndex - 1);
-    } else if (e.key === 'Home') {
-      e.preventDefault();
-      focusMenuItem(container!, 0);
-    } else if (e.key === 'End') {
-      e.preventDefault();
-      focusMenuItem(container!, items.length - 1);
-    }
-  };
+  const handleToolsMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => toolsMenuKeyboard.onKeyDown(e);
 
   return (
     <div className="hidden lg:flex">

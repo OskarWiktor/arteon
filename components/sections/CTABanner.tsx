@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 import SectionHeader from '../ui/typography/SectionHeader';
-import ButtonGroup from '../ui/ButtonGroup';
+import ButtonGroup from '../ui/buttons/ButtonGroup';
 
 const ui = {
   pl: {

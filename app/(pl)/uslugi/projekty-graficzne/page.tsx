@@ -1,4 +1,4 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
+﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -13,7 +13,7 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import { IoAccessibilityOutline, IoColorPalette } from 'react-icons/io5';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import {
   RiPencilRuler2Line,
@@ -564,3 +564,5 @@ export default function OfferDesignPage() {
     </>
   );
 }
+
+

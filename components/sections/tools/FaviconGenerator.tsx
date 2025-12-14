@@ -1,7 +1,7 @@
-'use client';
+﻿'use client';
 
 import { useMemo, useState, type DragEvent, type FormEvent } from 'react';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
@@ -609,3 +609,5 @@ export default function FaviconGenerator() {
     </>
   );
 }
+
+

@@ -1,5 +1,5 @@
-import Button from '../ui/Button';
-import ButtonGroup from '../ui/ButtonGroup';
+import Button from '../ui/buttons/Button';
+import ButtonGroup from '../ui/buttons/ButtonGroup';
 import Eyebrow from '../ui/typography/Eyebrow';
 import Text from '../ui/typography/Text';
 import type { ReactNode } from 'react';

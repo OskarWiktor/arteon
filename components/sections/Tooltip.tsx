@@ -1,7 +1,12 @@
 'use client';
 
-import { useEffect, useId, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+import { useEventListener } from '@/hooks/useEventListener';
+
+const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };
 
 type Placement = 'top' | 'bottom';
 
@@ -53,40 +58,19 @@ export default function Tooltip({ children, title, description, placement = 'top
     clearTimer();
     timerRef.current = window.setTimeout(() => setOpen(true), delay) as unknown as number;
   };
-  const hideImmediately = () => {
+  const hideImmediately = useCallback(() => {
     clearTimer();
     setOpen(false);
-  };
+  }, []);
   const toggleTouch = (e: React.TouchEvent) => {
     e.preventDefault();
     clearTimer();
     setOpen((v) => !v);
   };
 
-  useEffect(() => {
-    if (!open) return;
-
-    const onScroll = () => hideImmediately();
-
-    const onPointerDown = (e: PointerEvent) => {
-      if (!rootRef.current) return;
-      if (!rootRef.current.contains(e.target as Node)) hideImmediately();
-    };
-
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') hideImmediately();
-    };
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('pointerdown', onPointerDown, { passive: true });
-    window.addEventListener('keydown', onKeyDown);
-
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('pointerdown', onPointerDown);
-      window.removeEventListener('keydown', onKeyDown);
-    };
-  }, [open]);
+  useEscapeKey(hideImmediately, open);
+  useOutsideClick(rootRef, hideImmediately, open);
+  useEventListener(typeof window !== 'undefined' ? window : null, 'scroll', hideImmediately, PASSIVE_SCROLL, open);
 
   return (
     <span ref={rootRef} className="relative inline" onMouseLeave={hideImmediately}>

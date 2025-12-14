@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
 import SectionHeader from '../typography/SectionHeader';
-import ButtonGroup from '../ButtonGroup';
+import ButtonGroup from '../buttons/ButtonGroup';
 
 type Variant = 'left' | 'right';
 

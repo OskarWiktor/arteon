@@ -1,12 +1,13 @@
-'use client';
+﻿'use client';
 
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import { useMemo, useState, type DragEvent, type FormEvent } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import Text from '@/components/ui/typography/Text';
 import Badge from '@/components/ui/Badge';
 import Heading from '@/components/ui/typography/Heading';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 
 const ui = {
   pl: {
@@ -192,6 +193,8 @@ function sleep(ms: number) {
 
 export default function JpgPngToWebp() {
   const t = ui.pl;
+
+  const { copy } = useCopyToClipboard();
   const [files, setFiles] = useState<FileItem[]>([]);
   const [isConverting, setIsConverting] = useState(false);
   const [globalError, setGlobalError] = useState<string | null>(null);
@@ -452,12 +455,8 @@ export default function JpgPngToWebp() {
       trendLabel,
     ].join('\n');
 
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopyInfo(t.reportCopied);
-    } catch {
-      setCopyInfo(t.reportCopyError);
-    }
+    const ok = await copy(text);
+    setCopyInfo(ok ? t.reportCopied : t.reportCopyError);
   }
 
   const total = files.length;
@@ -695,3 +694,5 @@ export default function JpgPngToWebp() {
     </div>
   );
 }
+
+

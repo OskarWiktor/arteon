@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { RiMenuLine, RiCloseLine, RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import Image from 'next/image';
 
@@ -10,6 +10,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import SocialIconLink from '@/components/ui/SocialIconLink';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
 
 const ui = {
   pl: {
@@ -28,14 +29,7 @@ export default function Navigation() {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
-  useEffect(() => {
-    if (!isOpen) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setIsOpen(false);
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [isOpen]);
+  useEscapeKey(() => setIsOpen(false), isOpen);
 
   return (
     <header id="navigation" className="sticky top-0 z-50 w-full bg-white/95 shadow-xl backdrop-blur-sm">

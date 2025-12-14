@@ -1,9 +1,11 @@
 'use client';
 
 import { motion, useMotionValue, useAnimationFrame, useReducedMotion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
 import IconText from '@/components/ui/IconText';
+import { useEventListener } from '@/hooks/useEventListener';
+import { useTimeout } from '@/hooks/useTimeout';
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -65,25 +67,28 @@ export default function TechStack() {
   const [loopWidth, setLoopWidth] = useState(0);
   const reduceMotion = useReducedMotion();
 
+  const { start: startFontMeasure, clear: clearFontMeasure } = useTimeout();
+
+  const measure = useCallback(() => {
+    if (!trackRef.current) return;
+    const total = trackRef.current.scrollWidth;
+    setLoopWidth(total / 2);
+  }, []);
+
+  useEventListener(typeof window !== 'undefined' ? window : null, 'resize', measure);
+
   useEffect(() => {
-    const measure = () => {
-      if (!trackRef.current) return;
-      const total = trackRef.current.scrollWidth;
-      setLoopWidth(total / 2);
-    };
     measure();
 
     const ro = new ResizeObserver(measure);
     if (trackRef.current) ro.observe(trackRef.current);
-    window.addEventListener('resize', measure);
-    const fontTimer = setTimeout(measure, 100);
+    startFontMeasure(measure, 100);
 
     return () => {
       ro.disconnect();
-      window.removeEventListener('resize', measure);
-      clearTimeout(fontTimer);
+      clearFontMeasure();
     };
-  }, []);
+  }, [measure]);
 
   useAnimationFrame((t, delta) => {
     if (isPaused || reduceMotion || loopWidth === 0) return;

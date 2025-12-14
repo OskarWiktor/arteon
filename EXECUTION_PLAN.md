@@ -124,6 +124,8 @@ Dla każdego zadania/epiku:
 - Wdrożone:
   - `components/ui/SocialIconLink.tsx` ✅
   - Migracja: `Navigation` + `MobileNavigation` → `SocialIconLink` ✅
+  - `components/ui/buttons/IconButton.tsx` ✅
+  - Migracja: `Navigation` (toggle menu) → `IconButton` ✅
 - **Cel**: ujednolicić focus ring, aria-label, target/rel.
 - **Kryteria akceptacji**:
   - brak zmian wizualnych
@@ -143,9 +145,12 @@ Dla każdego zadania/epiku:
   - łatwość dodania nowego linku (1 miejsce)
 
 ### 4.2 Wspólne hooki / utils
-- `useOutsideClick`
-- `useEscapeKey`
-- `useMenuKeyboardNavigation`
+- `useOutsideClick` ✅
+- `useEscapeKey` ✅
+- `useFocusTrap` ✅
+- `useRestoreFocus` ✅
+- `useScrollLock` ✅
+- `useMenuKeyboardNavigation` ✅
 - **Kryteria akceptacji**:
   - brak regresji w zachowaniu menu
   - keyboard nav działa co najmniej jak wcześniej

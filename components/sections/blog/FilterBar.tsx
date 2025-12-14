@@ -1,6 +1,6 @@
 'use client';
 
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import { usePathname } from 'next/navigation';
 import Heading from '@/components/ui/typography/Heading';
 

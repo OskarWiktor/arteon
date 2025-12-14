@@ -1,7 +1,7 @@
 'use client';
 
 import { includedPerPath } from '@/data/pl/calculator/includedPerPath';
-import Button from '../Button';
+import Button from '../buttons/Button';
 import Heading from '../typography/Heading';
 import Text from '../typography/Text';
 

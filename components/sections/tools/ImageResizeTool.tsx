@@ -1,6 +1,6 @@
-'use client';
+﻿'use client';
 
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import Badge from '@/components/ui/Badge';
 import Heading from '@/components/ui/typography/Heading';
 import Text from '@/components/ui/typography/Text';
@@ -353,6 +353,8 @@ export default function ImageResizeTool() {
   const [estimatedSize, setEstimatedSize] = useState<number | null>(null);
   const [isDragging, setIsDragging] = useState(false);
 
+  const { originalWidth, originalHeight, targetWidth, targetHeight } = state;
+
   const previewRef = useRef<HTMLDivElement | null>(null);
   const dragRef = useRef<DragState>({
     mode: 'none',
@@ -374,10 +376,9 @@ export default function ImageResizeTool() {
   }, [state.imageUrl]);
 
   const dims = useMemo(() => {
-    const { originalWidth, originalHeight, targetWidth, targetHeight } = state;
     if (!originalWidth || !originalHeight || !targetWidth || !targetHeight) return null;
     return { width: targetWidth, height: targetHeight };
-  }, [state.originalWidth, state.originalHeight, state.targetWidth, state.targetHeight]);
+  }, [originalWidth, originalHeight, targetWidth, targetHeight]);
 
   const effectiveDims = useMemo(() => {
     if (dims) return dims;
@@ -1364,3 +1365,5 @@ export default function ImageResizeTool() {
     </div>
   );
 }
+
+

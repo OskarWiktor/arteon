@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import CopyButton from './tools/CopyButton';
+import CopyButton from './buttons/CopyButton';
 import Text from './typography/Text';
 
 const ui = {

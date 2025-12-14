@@ -1,7 +1,7 @@
-'use client';
+﻿'use client';
 
 import { useEffect } from 'react';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import Wrapper from '@/components/ui/Wrapper';
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
@@ -37,3 +37,5 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
     </Wrapper>
   );
 }
+
+

@@ -27,6 +27,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
+    const sectionFallback = ui.pl.section;
     const root = (document.querySelector(rootSelector) as Document | Element) || document;
 
     const selector = levels === 'h2' ? 'h2' : 'h2, h3';
@@ -43,10 +44,10 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
     headings.forEach((h) => {
       if (!h.id) {
         const base = slugify(h.textContent || '');
-        let candidate = base || t.section;
+        let candidate = base || sectionFallback;
         let i = 2;
         while (!candidate || seen.has(candidate) || document.getElementById(candidate)) {
-          candidate = `${base || t.section}-${i++}`;
+          candidate = `${base || sectionFallback}-${i++}`;
         }
         h.id = candidate;
         seen.add(candidate);

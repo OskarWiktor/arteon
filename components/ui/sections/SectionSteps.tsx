@@ -1,7 +1,7 @@
 import type { ElementType, JSX, ReactNode } from 'react';
 import Image from 'next/image';
 import Wrapper from '../Wrapper';
-import ButtonGroup from '../ButtonGroup';
+import ButtonGroup from '../buttons/ButtonGroup';
 
 const ui = {
   pl: {

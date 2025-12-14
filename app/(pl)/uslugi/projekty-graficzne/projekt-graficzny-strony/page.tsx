@@ -1,4 +1,4 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
+﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -17,7 +17,7 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 
 export const metadata = {
   title: 'Projekt graficzny strony | Arteon',
@@ -358,3 +358,5 @@ export default function OfferDesignXxxPage() {
     </>
   );
 }
+
+

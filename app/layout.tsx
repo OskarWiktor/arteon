@@ -18,14 +18,24 @@ import { SiteProvider } from '@/lib/SiteContext';
 import './globals.css';
 
 // site scaffold only — no production behavior changes while flag disabled
-const SITE_URL = process.env.SITE_URL!;
+const SITE_URL =
+  process.env.SITE_URL ||
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://www.arteonagency.pl');
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
 
 const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
+const metadataBase = (() => {
+  try {
+    return new URL(SITE_URL);
+  } catch {
+    return new URL('https://www.arteonagency.pl');
+  }
+})();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase,
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',

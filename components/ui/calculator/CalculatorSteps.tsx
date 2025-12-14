@@ -1,9 +1,9 @@
 'use client';
 
 import ProgressBar from './ProgressBar';
-import OptionButton from './OptionButton';
+import OptionButton from '../buttons/OptionButton';
 import OptionInput from './OptionInput';
-import Button from '../../ui/Button';
+import Button from '../buttons/Button';
 import type { Step } from '@/types/calculator';
 
 const ui = {

@@ -1,5 +1,5 @@
-import HeroBanner from '@/components/sections/HeroBanner';
-import Button from '@/components/ui/Button';
+﻿import HeroBanner from '@/components/sections/HeroBanner';
+import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -517,3 +517,5 @@ export default function OfferPage() {
     </>
   );
 }
+
+

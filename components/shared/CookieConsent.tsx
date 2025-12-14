@@ -1,7 +1,11 @@
 'use client';
 
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import Button from '../ui/Button';
+import { useEffect, useRef, useState } from 'react';
+import Button from '../ui/buttons/Button';
+import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
+import { useRestoreFocus } from '@/hooks/useRestoreFocus';
+import { useTimeout } from '@/hooks/useTimeout';
 
 const ui = {
   pl: {
@@ -62,7 +66,7 @@ function updateGtag(analytics: boolean) {
   if (typeof window === 'undefined') return;
 
   const win = window as typeof window & {
-    gtag?: (..._args: any[]) => void;
+    gtag?: (..._args: unknown[]) => void;
   };
 
   if (typeof win.gtag !== 'function') return;
@@ -102,14 +106,26 @@ export default function CookieConsent() {
 
   const dialogRef = useRef<HTMLDivElement>(null);
   const firstNativeBtnRef = useRef<HTMLButtonElement>(null);
-  const previouslyFocused = useRef<HTMLElement | null>(null);
+
+  const { start: focusFirstButton } = useTimeout();
+
+  useRestoreFocus(visible);
+
+  useEscapeKey(
+    (e) => {
+      e.preventDefault();
+      saveAndClose({ analytics: false });
+    },
+    visible
+  );
+
+  useFocusTrap(dialogRef, visible);
 
   useEffect(() => {
     const open = () => {
-      previouslyFocused.current = document.activeElement as HTMLElement;
       setVisible(true);
       setPanel(true);
-      setTimeout(() => firstNativeBtnRef.current?.focus(), 0);
+      focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
     };
     document.addEventListener('arteon:open-consent', open);
     return () => document.removeEventListener('arteon:open-consent', open);
@@ -125,44 +141,9 @@ export default function CookieConsent() {
     } else {
       setVisible(true);
       setPanel(false);
-      setTimeout(() => firstNativeBtnRef.current?.focus(), 0);
+      focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
     }
   }, []);
-
-  useLayoutEffect(() => {
-    if (!visible) return;
-    const root = dialogRef.current;
-    if (!root) return;
-
-    const focusableSelectors = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
-
-    const trap = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.preventDefault();
-        saveAndClose({ analytics: false });
-        return;
-      }
-      if (e.key !== 'Tab') return;
-
-      const nodes = Array.from(root.querySelectorAll<HTMLElement>(focusableSelectors)).filter((el) => !el.hasAttribute('disabled') && (el.offsetParent !== null || el === document.activeElement));
-
-      if (nodes.length === 0) return;
-
-      const first = nodes[0];
-      const last = nodes[nodes.length - 1];
-
-      if (e.shiftKey && document.activeElement === first) {
-        e.preventDefault();
-        last.focus();
-      } else if (!e.shiftKey && document.activeElement === last) {
-        e.preventDefault();
-        first.focus();
-      }
-    };
-
-    document.addEventListener('keydown', trap);
-    return () => document.removeEventListener('keydown', trap);
-  }, [visible]);
 
   function saveAndClose(next: { analytics: boolean }) {
     writeConsent({
@@ -175,7 +156,6 @@ export default function CookieConsent() {
 
     setVisible(false);
     setPanel(false);
-    setTimeout(() => previouslyFocused.current?.focus(), 0);
   }
 
   if (!visible) return null;
@@ -199,7 +179,7 @@ export default function CookieConsent() {
                     className="text-black underline underline-offset-2"
                     onClick={() => {
                       setPanel(true);
-                      setTimeout(() => firstNativeBtnRef.current?.focus(), 0);
+                      focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
                     }}
                     aria-haspopup="dialog"
                     aria-controls="cookie-preferences"

@@ -15,6 +15,29 @@ export type Article = {
   contentBlocks: Array<
     | { type: 'richtext'; html: string; breakBefore?: boolean; breakAfter?: boolean }
     | {
+        type: 'code';
+        code: string;
+        language?: string;
+        filename?: string;
+        caption?: string;
+        showLineNumbers?: boolean;
+        wrap?: boolean;
+        highlightLines?: number[];
+        breakBefore?: boolean;
+        breakAfter?: boolean;
+      }
+    | {
+        type: 'table';
+        caption?: string;
+        note?: string;
+        columns: { header: string; align?: 'left' | 'center' | 'right' }[];
+        rows: (string | number)[][];
+        striped?: boolean;
+        compact?: boolean;
+        breakBefore?: boolean;
+        breakAfter?: boolean;
+      }
+    | {
         type: 'image';
         src: string;
         alt: string;

@@ -1,4 +1,4 @@
-import WorkSteps from '@/components/sections/steps/WorkSteps';
+﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -14,7 +14,7 @@ import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
@@ -327,3 +327,5 @@ export default function OfferDesignWizytowkaPage() {
     </>
   );
 }
+
+

@@ -276,15 +276,17 @@ Wspólne kandydaty do prymitywów:
 
 ### UI Primitives (wysokie ROI)
 - `Card`
-- `IconButton`
+- `IconButton` (w `components/ui/buttons/IconButton.tsx`)
 - `SocialIconLink`
 - `Portal` (wydzielone z `MobileNavigation`)
 
 ### Hooki (wysokie ROI)
-- `useOutsideClick(ref, handler)`
-- `useEscapeKey(handler)`
-- `useFocusTrap(containerRef, enabled)`
-- `useRestoreFocus()`
+- `useOutsideClick(ref, handler)` ✅
+- `useEscapeKey(handler)` ✅
+- `useFocusTrap(containerRef, enabled)` ✅
+- `useRestoreFocus()` ✅
+- `useScrollLock(locked)` ✅
+- `useMenuKeyboardNavigation(containerRef)` ✅
 - `useCarouselScroller()`
 - `useHeadingAnchors()` + `useActiveHeading()`
 

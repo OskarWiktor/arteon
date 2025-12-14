@@ -1,7 +1,7 @@
-'use client';
+﻿'use client';
 
 import { useMemo, useState, type FormEvent } from 'react';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/buttons/Button';
 import { RiContrast2Line } from 'react-icons/ri';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
@@ -339,3 +339,5 @@ export default function WcagContrastChecker() {
     </>
   );
 }
+
+

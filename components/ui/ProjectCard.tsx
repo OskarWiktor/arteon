@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Project } from '@/types/project';
-import Button from './Button';
+import Button from './buttons/Button';
 import Text from './typography/Text';
 
 const ui = {

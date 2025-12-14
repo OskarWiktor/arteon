@@ -34,9 +34,9 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
 
   useEffect(() => {
     if (openByDefault > 0 && items.length > 0) {
-      setActiveIndex(0);
+      setActiveIndex((prev) => (prev === null ? 0 : prev));
     }
-  }, []);
+  }, [items.length, openByDefault]);
 
   const toggle = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index));
