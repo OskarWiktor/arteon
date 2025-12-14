@@ -39,7 +39,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Sklepy internetowe - projekt i realizacja | Arteon',
   description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-  alternates: { canonical: '/uslugi/sklepy-internetowe' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe' },
   openGraph: {
     title: 'Sklepy internetowe - projekt i realizacja | Arteon',
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
@@ -49,7 +49,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

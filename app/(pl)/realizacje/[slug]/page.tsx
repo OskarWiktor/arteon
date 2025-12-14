@@ -191,12 +191,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const description = project.seo?.description || '';
   const image = project.image?.startsWith('http') ? project.image : project.image || undefined;
 
-  const canonicalPath = project.seo?.canonical || `/realizacje/${project.slug}`;
-  const ogUrl = canonicalPath.startsWith('/') ? canonicalPath : `/realizacje/${project.slug}`;
+  const canonicalPath = project.seo?.canonical || `https://www.arteonagency.pl/realizacje/${project.slug}`;
+  const ogUrl = canonicalPath.startsWith('/') ? `https://www.arteonagency.pl${canonicalPath}` : canonicalPath;
   return {
     title,
     description,
-    alternates: { canonical: canonicalPath.startsWith('/') ? canonicalPath : `/realizacje/${project.slug}` },
+    alternates: { canonical: ogUrl },
     openGraph: {
       type: 'article',
       url: ogUrl,

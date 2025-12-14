@@ -34,7 +34,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({
@@ -56,7 +56,7 @@ function ServiceSchema() {
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
   description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-  alternates: { canonical: '/uslugi/tworzenie-tresci' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci' },
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',

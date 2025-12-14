@@ -22,7 +22,7 @@ import Button from '@/components/ui/buttons/Button';
 export const metadata = {
   title: 'Projekt identyfikacji wizualnej | Arteon',
   description: 'Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Spójność w każdym punkcie styku.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   openGraph: {
     title: 'Projekt identyfikacji wizualnej | Arteon',
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
@@ -32,7 +32,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

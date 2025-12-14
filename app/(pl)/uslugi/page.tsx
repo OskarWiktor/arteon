@@ -28,7 +28,7 @@ import {
 export const metadata = {
   title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
   description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
-  alternates: { canonical: '/uslugi' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi' },
   openGraph: {
     title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
     description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',

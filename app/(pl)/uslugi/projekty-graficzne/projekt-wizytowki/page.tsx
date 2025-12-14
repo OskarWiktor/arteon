@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Projekt wizytówki | Arteon',
   description: 'Projekt wizytówki firmowej, która wyjaśnia ofertę w kilka sekund i buduje zaufanie od pierwszego spojrzenia. Pliki źródłowe i gotowe do druku.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/projekt-wizytowki',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
   },
   openGraph: {
     title: 'Projekt wizytówki | Arteon',
@@ -35,7 +35,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

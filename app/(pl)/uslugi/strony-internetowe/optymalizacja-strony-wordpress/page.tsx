@@ -20,13 +20,13 @@ import { RiSpeedFill, RiToolsLine, RiShieldCheckLine, RiDeviceLine, RiBarChart2F
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 export const metadata = {
   title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
   description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
   alternates: {
-    canonical: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
+    canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
   },
   openGraph: {
     title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',

@@ -9,7 +9,7 @@ import { getCategoriesWithCount } from '@/lib/blog';
 export const metadata: Metadata = {
   title: 'Edukacja - poradniki i wiedza | Arteon',
   description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź',
-  alternates: { canonical: '/edukacja' },
+  alternates: { canonical: 'https://www.arteonagency.pl/edukacja' },
   openGraph: {
     title: 'Edukacja - poradniki i wiedza | Arteon',
     description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź',

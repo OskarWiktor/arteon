@@ -116,6 +116,8 @@ function articleAssetsLastmod(article) {
 const ROUTE_LASTMOD = buildRouteLastmodMap();
 const PROJECTS = readProjects();
 const ARTICLES = readBlog();
+const SITE_URL = 'https://www.arteonagency.pl';
+const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 
 (function enrichEducationLastmods() {
   for (const a of ARTICLES) {
@@ -147,7 +149,7 @@ const ARTICLES = readBlog();
 })();
 
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl',
+  siteUrl: SITE_URL,
   generateRobotsTxt: true,
   sitemapSize: 7000,
   exclude: ['/404', '/500', '/_next/*', '/api/*', '/drafts/*'],
@@ -224,7 +226,7 @@ module.exports = {
   },
 
   robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
+    policies: IS_PRODUCTION ? [{ userAgent: '*', allow: '/' }] : [{ userAgent: '*', disallow: '/' }],
     additionalSitemaps: [],
   },
 };

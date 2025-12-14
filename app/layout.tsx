@@ -18,10 +18,8 @@ import { SiteProvider } from '@/lib/SiteContext';
 import './globals.css';
 
 // site scaffold only — no production behavior changes while flag disabled
-const SITE_URL =
-  process.env.SITE_URL ||
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://www.arteonagency.pl');
+const SITE_URL = 'https://www.arteonagency.pl';
+const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
 
@@ -36,6 +34,7 @@ const metadataBase = (() => {
 
 export const metadata: Metadata = {
   metadataBase,
+  robots: IS_PRODUCTION ? { index: true, follow: true } : { index: false, follow: false },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',

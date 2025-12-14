@@ -22,7 +22,7 @@ import Button from '@/components/ui/buttons/Button';
 export const metadata = {
   title: 'Projekt graficzny strony | Arteon',
   description: 'Makiety i layouty stron internetowych tworzone z myślą o czytelności i konwersji. Estetyka, UX i SEO w jednym projekcie.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony' },
   openGraph: {
     title: 'Projekt graficzny strony | Arteon',
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
@@ -32,7 +32,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

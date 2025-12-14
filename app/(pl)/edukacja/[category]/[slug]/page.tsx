@@ -259,16 +259,16 @@ export async function generateMetadata({ params }: { params: { category: string;
   if (!article) return {};
 
   const canonicalCat = getPrimaryCategorySlug(article);
-  const canonicalPath = article.seo?.canonical || `/edukacja/${canonicalCat}/${article.slug}`;
+  const canonicalPath = article.seo?.canonical || `https://www.arteonagency.pl/edukacja/${canonicalCat}/${article.slug}`;
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
   const image = article.cover?.startsWith('http') ? article.cover : article.cover || undefined;
-  const ogUrl = canonicalPath.startsWith('/') ? canonicalPath : `/edukacja/${canonicalCat}/${article.slug}`;
+  const ogUrl = canonicalPath.startsWith('/') ? `https://www.arteonagency.pl${canonicalPath}` : canonicalPath;
 
   return {
     title,
     description,
-    alternates: { canonical: canonicalPath.startsWith('/') ? canonicalPath : `/edukacja/${canonicalCat}/${article.slug}` },
+    alternates: { canonical: ogUrl },
     openGraph: {
       type: 'article',
       url: ogUrl,

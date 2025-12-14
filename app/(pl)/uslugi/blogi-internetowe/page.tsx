@@ -37,7 +37,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
   description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
-  alternates: { canonical: '/uslugi/blogi-internetowe' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/blogi-internetowe' },
   openGraph: {
     title: 'Blogi internetowe - projekt i realizacja | Arteon',
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
@@ -47,7 +47,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

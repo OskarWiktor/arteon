@@ -22,7 +22,7 @@ import type { Testimonial } from '@/types/testimonial';
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
   description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
-  alternates: { canonical: '/' },
+  alternates: { canonical: 'https://www.arteonagency.pl/' },
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
     description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',

@@ -6,7 +6,7 @@ import Wrapper from '@/components/ui/Wrapper';
 export const metadata = {
   title: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie | Arteon',
   description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
-  alternates: { canonical: '/realizacje' },
+  alternates: { canonical: 'https://www.arteonagency.pl/realizacje' },
   openGraph: {
     title: 'Portfolio Arteon - projekty, które działają',
     description: 'Strony, sklepy, identyfikacje i kampanie. Konkretne efekty i przejrzty proces.',

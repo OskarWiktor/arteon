@@ -22,7 +22,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
   description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
-  alternates: { canonical: '/uslugi/marketing/optymalizacja-seo' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo' },
   openGraph: {
     title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
@@ -32,7 +32,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

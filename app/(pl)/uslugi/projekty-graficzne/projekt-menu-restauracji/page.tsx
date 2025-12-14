@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Projekt menu restauracji | Arteon',
   description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
   },
   openGraph: {
     title: 'Projekt menu restauracji | Arteon',
@@ -35,7 +35,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

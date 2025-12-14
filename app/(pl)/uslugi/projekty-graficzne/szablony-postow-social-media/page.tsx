@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Szablony postów social media | Arteon',
   description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/szablony-postow-social-media',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
   },
   openGraph: {
     title: 'Szablony postów social media | Arteon',
@@ -35,7 +35,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

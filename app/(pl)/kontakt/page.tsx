@@ -6,12 +6,12 @@ import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE_URL = 'https://www.arteonagency.pl';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu | Arteon',
   description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
-  alternates: { canonical: '/kontakt' },
+  alternates: { canonical: 'https://www.arteonagency.pl/kontakt' },
   openGraph: {
     title: 'Kontakt - wycena Twojego planu | Arteon',
     description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',

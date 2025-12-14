@@ -10,7 +10,7 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
   description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',
-  alternates: { canonical: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia' },
+  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia' },
   openGraph: {
     title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
     description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',

@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Kupony rabatowe i vouchery | Arteon',
   description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
   },
   openGraph: {
     title: 'Kupony rabatowe i vouchery | Arteon',
@@ -35,7 +35,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

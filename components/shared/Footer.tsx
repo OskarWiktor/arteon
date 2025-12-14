@@ -23,7 +23,7 @@ const ui = {
   },
 } as const;
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE_URL = 'https://www.arteonagency.pl';
 
 const ORG = {
   name: 'Arteon',

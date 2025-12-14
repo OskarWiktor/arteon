@@ -7,7 +7,7 @@ import Wrapper from '@/components/ui/Wrapper';
 export const metadata = {
   title: 'Regulamin świadczenia usług | Arteon',
   description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',
-  alternates: { canonical: '/regulamin' },
+  alternates: { canonical: 'https://www.arteonagency.pl/regulamin' },
   openGraph: {
     title: 'Regulamin świadczenia usług | Arteon',
     description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',

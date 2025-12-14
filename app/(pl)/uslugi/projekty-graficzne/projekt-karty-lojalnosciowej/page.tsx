@@ -21,7 +21,7 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 export const metadata = {
   title: 'Projekt karty lojalnościowej | Arteon',
   description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
   openGraph: {
     title: 'Projekt karty lojalnościowej | Arteon',
     description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
@@ -31,7 +31,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

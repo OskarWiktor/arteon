@@ -12,7 +12,7 @@ const BASE_URL = 'https://www.arteonagency.pl';
 export const metadata: Metadata = {
   title: 'Mapa strony | Arteon',
   description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
-  alternates: { canonical: '/mapa-strony' },
+  alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
 };
 
 type NavItem = { title: string; href: string; children?: NavItem[] };

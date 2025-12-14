@@ -11,7 +11,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 export const metadata: Metadata = {
   title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
   description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',
-  alternates: { canonical: '/narzedzia/darmowy-generator-favicon-ico' },
+  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico' },
   openGraph: {
     title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
     description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',

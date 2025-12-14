@@ -22,7 +22,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 export const metadata = {
   title: 'Projekt katalogu | Arteon',
   description: 'Katalog produktów lub ofert z czytelnym składem DTP. Zdjęcia, typografia i układ, które podnoszą sprzedaż i wizerunek.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-katalogu' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu' },
   openGraph: {
     title: 'Projekt katalogu | Arteon',
     description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
@@ -32,7 +32,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

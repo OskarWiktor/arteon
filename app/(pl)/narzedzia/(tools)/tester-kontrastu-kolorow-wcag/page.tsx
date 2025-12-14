@@ -11,7 +11,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 export const metadata: Metadata = {
   title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
   description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',
-  alternates: { canonical: '/narzedzia/tester-kontrastu-kolorow-wcag' },
+  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag' },
   openGraph: {
     title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
     description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',

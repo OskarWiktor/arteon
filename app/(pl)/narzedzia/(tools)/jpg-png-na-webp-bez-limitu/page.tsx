@@ -11,7 +11,7 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
   description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',
-  alternates: { canonical: '/narzedzia/jpg-png-na-webp-bez-limitu' },
+  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu' },
   openGraph: {
     title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
     description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',

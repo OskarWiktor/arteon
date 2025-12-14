@@ -1,7 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async headers() {
+    if (process.env.VERCEL_ENV === 'production') {
+      return [];
+    }
+
+    return [
+      {
+        source: '/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
+    ];
+  },
   async redirects() {
     return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'arteonagency.pl' }],
+        destination: 'https://www.arteonagency.pl/:path*',
+        permanent: true,
+      },
       { source: '/services', destination: '/uslugi', permanent: true },
       { source: '/services/websites', destination: '/uslugi/strony-internetowe', permanent: true },
       { source: '/services/online-stores', destination: '/uslugi/sklepy-internetowe', permanent: true },

@@ -11,7 +11,7 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Licznik długości meta title i description',
   description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
-  alternates: { canonical: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
+  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description' },
   openGraph: {
     title: 'Licznik długości meta title i description',
     description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',

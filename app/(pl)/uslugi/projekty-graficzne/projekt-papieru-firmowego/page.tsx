@@ -23,7 +23,7 @@ export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',
   description: 'Papier firmowy, który wzmacnia wizerunek w korespondencji. Szablony Word/PDF oraz wersje gotowe do druku.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
   },
   openGraph: {
     title: 'Projekt papieru firmowego | Arteon',
@@ -34,7 +34,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

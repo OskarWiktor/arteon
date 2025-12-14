@@ -23,7 +23,7 @@ export const metadata = {
   title: 'Projekt ulotki | Arteon',
   description: 'Ulotka, która przyciąga uwagę i kieruje do kontaktu lub zakupu. Projekt dopasowany do Twojej oferty i lokalnych działań.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/projekt-ulotki',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
   },
   openGraph: {
     title: 'Projekt ulotki | Arteon',
@@ -34,7 +34,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

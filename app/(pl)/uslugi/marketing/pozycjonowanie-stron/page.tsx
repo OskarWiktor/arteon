@@ -22,7 +22,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
   description: 'Długofalowe pozycjonowanie stron: plan treści, porządek na stronie i bezpieczne linki. Comiesięczny raport i jasne priorytety działań.',
-  alternates: { canonical: '/uslugi/marketing/pozycjonowanie-stron' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron' },
   openGraph: {
     title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
@@ -32,12 +32,12 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({
     baseUrl: BASE,
-    path: '/uslugi/marketing/optymalizacja-seo',
+    path: '/uslugi/marketing/pozycjonowanie-stron',
     serviceName: 'Pozycjonowanie stron',
     description: 'Stała współpraca SEO dla stron firmowych: strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc i jasne priorytety.',
     availableLanguages: ['pl'],

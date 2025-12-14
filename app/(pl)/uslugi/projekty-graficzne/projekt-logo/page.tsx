@@ -34,7 +34,7 @@ import { IoColorPalette } from 'react-icons/io5';
 export const metadata = {
   title: 'Projekt logo | Arteon',
   description: 'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
-  alternates: { canonical: '/uslugi/projekty-graficzne/projekt-logo' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo' },
   openGraph: {
     title: 'Projekt logo | Arteon',
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
@@ -44,7 +44,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

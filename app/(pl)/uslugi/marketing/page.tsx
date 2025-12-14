@@ -19,7 +19,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
   description: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
-  alternates: { canonical: '/uslugi/marketing' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing' },
   openGraph: {
     title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
@@ -30,7 +30,7 @@ export const metadata = {
 } as const;
 
 function ItemListSchema() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+  const base = 'https://www.arteonagency.pl';
   const services = [
     { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
     { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },

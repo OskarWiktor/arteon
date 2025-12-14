@@ -11,7 +11,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej HTML - bez limitu',
   description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
-  alternates: { canonical: '/narzedzia/darmowy-generator-stopki-mailowej' },
+  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej' },
   openGraph: {
     title: 'Darmowy generator stopki mailowej HTML - bez limitu',
     description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',

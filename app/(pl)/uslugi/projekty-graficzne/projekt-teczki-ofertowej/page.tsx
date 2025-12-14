@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
   description: 'Teczka ofertowa podnosi prestiż spotkań i porządkuje dokumenty. Projekt spójny z identyfikacją wizualną Twojej marki.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
   },
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
@@ -35,7 +35,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Projekt cennika | Arteon',
   description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
   alternates: {
-    canonical: '/uslugi/projekty-graficzne/projekt-cennika',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
   },
   openGraph: {
     title: 'Projekt cennika | Arteon',
@@ -35,7 +35,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

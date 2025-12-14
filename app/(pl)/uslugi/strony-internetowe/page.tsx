@@ -37,7 +37,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 export const metadata = {
   title: 'Strony internetowe - projekt i realizacja | Arteon',
   description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
-  alternates: { canonical: '/uslugi/strony-internetowe' },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe' },
   openGraph: {
     title: 'Strony internetowe - projekt i realizacja | Arteon',
     description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
@@ -47,7 +47,7 @@ export const metadata = {
   },
 } as const;
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.arteonagency.pl';
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: { category: string 
   return {
     title: `Edukacja: ${label} | Arteon`,
     description: `Darmowe poradniki i wiedza z zakresu: ${label}. Konkretne wskazówki, przykłady z naszych realizacji i najlepsze praktyki.`,
-    alternates: { canonical: `/edukacja/${params.category}` },
+    alternates: { canonical: `https://www.arteonagency.pl/edukacja/${params.category}` },
     openGraph: { title: `Edukacja: ${label}`, description: `Artykuły: ${label}.`, url, type: 'website' },
   };
 }
