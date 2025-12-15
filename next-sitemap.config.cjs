@@ -177,15 +177,6 @@ module.exports = {
       add.push(entry);
     }
 
-    if (ROUTE_LASTMOD.has('/edukacja')) {
-      add.push({
-        loc: '/edukacja',
-        changefreq: 'weekly',
-        priority: 0.8,
-        lastmod: ROUTE_LASTMOD.get('/edukacja'),
-      });
-    }
-
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
       if (loc.startsWith('/edukacja/') && loc.split('/').length === 3) {
         add.push({ loc, changefreq: 'weekly', priority: 0.75, lastmod: last });
@@ -196,30 +187,6 @@ module.exports = {
       if (loc.startsWith('/edukacja/') && loc.split('/').length === 4) {
         add.push({ loc, changefreq: 'weekly', priority: 0.72, lastmod: last });
       }
-    }
-
-    const appDir = path.join(process.cwd(), 'app');
-    const files = await fg(['**/page.{ts,tsx,mdx}'], {
-      cwd: appDir,
-      ignore: ['**/(_*)/**', '**/_*', 'api/**', '**/components/**', '**/shared/**', '**/layout.{ts,tsx}', '_not-found/**', '**/_not-found/**'],
-    });
-
-    const seen = new Set(add.map((x) => x.loc));
-    for (const f of files) {
-      const route = toRoute(f);
-      if (!route || seen.has(route)) continue;
-      seen.add(route);
-
-      const abs = path.join(appDir, f);
-      const iso = gitLastCommitISO(abs) || fileMTimeISO(abs);
-
-      const entry = {
-        loc: route,
-        changefreq: 'weekly',
-        priority: route === '/' ? 1.0 : route.startsWith('/uslugi/') ? 0.8 : route.startsWith('/edukacja') ? 0.75 : 0.7,
-      };
-      if (iso) entry.lastmod = iso;
-      add.push(entry);
     }
 
     return add;

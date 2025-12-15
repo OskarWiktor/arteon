@@ -58,6 +58,19 @@ Ostatnia weryfikacja statusów w kodzie: **2025-12-15**
 
 - Jeśli w trakcie zadania edytujesz/refaktorujesz plik tak, że staje się pusty (0B / tylko whitespace / tymczasowy „barrel” bez wartości), usuń go od razu i popraw wszystkie importy.
 
+ **KRYTYCZNE: NIE MODYFIKOWAĆ plików konfiguracji SEO (sitemap/robots)**
+  - Pliki chronione:
+    - `next-sitemap.config.cjs` – konfiguracja generowania sitemap i robots.txt
+    - `public/robots.txt` – plik robots (generowany automatycznie przez `next-sitemap`)
+  - Zasady:
+    - **NIE EDYTOWAĆ** tych plików bez wyraźnego polecenia użytkownika.
+    - **NIE DODAWAĆ** dodatkowej logiki skanowania stron w `additionalPaths` (strony statyczne są już obsługiwane przez `transform`).
+    - `additionalPaths` służy WYŁĄCZNIE do dynamicznych ścieżek (projekty z `projects.json`, kategorie/artykuły edukacji).
+    - Każda modyfikacja tych plików wymaga pełnej weryfikacji sitemapy po `npm run build`.
+  - Uzasadnienie:
+    - Historia: duplikacje w sitemapie spowodowane przez podwójne skanowanie plików (raz w `transform`, drugi raz w `additionalPaths`).
+    - Sitemap jest krytyczna dla SEO – błędy mogą wpłynąć na indeksację całej witryny.
+
 ---
 
 ## Definition of Done (dla każdego zadania)
@@ -75,6 +88,7 @@ Dla każdego zadania:
 ## Zadania
 
 Zrobione zadania: `DONE_TASKS.md`.
+
 
 - 🟡 **[AUDIT-001] Repo: audyt treści (literówki, ortografia, interpunkcja, spójność copy)**
   - Cel: wychwycić błędy językowe i niespójności w treściach (strony/oferta/blog/realizacje/narzędzia).
