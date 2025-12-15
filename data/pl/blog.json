@@ -4,7 +4,8 @@
       "slug": "jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow",
       "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów?",
       "excerpt": "Kolor jest jednym z najsilniejszych bodźców wpływających na to, czy klient zaufa marce, zapamięta ją i ostatecznie dokona zakupu. Zobacz, jak konkretne barwy oddziałują na emocje, UX i konwersję oraz jak dobrać paletę kolorów, która realnie wspiera sprzedaż.",
-      "category": ["Design", "Psychologia", "Branding"],
+      "primaryCategory": "Design",
+      "category": ["Psychologia", "Branding"],
       "seo": {
         "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów?",
         "description": "Dowiedz się, jak kolory wpływają na decyzje zakupowe klientów, zaufanie do marki, UX i konwersję. Dane z badań CCICOLOR, Lucidpress, HubSpot, YouGov i innych źródeł.",
@@ -93,7 +94,8 @@
       "slug": "ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty",
       "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
       "excerpt": "Pozycjonowanie strony firmowej w 2025 roku wymaga czasu i konsekwentnych działań, ale przy dobrze ułożonej strategii pierwsze realne efekty możesz zobaczyć już po kilku tygodniach. Zobacz, od czego zależy tempo wyników SEO i jak wygląda realistyczna oś czasu.",
-      "category": ["SEO", "Widoczność"],
+      "primaryCategory": "SEO",
+      "category": ["Widoczność"],
       "seo": {
         "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
         "description": "Sprawdź, ile czasu realnie trwa pozycjonowanie strony firmowej w 2025 roku, kiedy widać pierwsze efekty i jakie czynniki najbardziej wpływają na tempo wyników SEO.",
@@ -185,7 +187,8 @@
       "slug": "czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google",
       "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
       "excerpt": "Lokalne firmy, które prowadzą blog na swojej stronie internetowej, zdobywają więcej ruchu z Google, częściej pojawiają się w Google Maps i obniżają koszt pozyskania klienta. Zobacz, jak blog pomaga małym biznesom rosnąć bez płatnych reklam.",
-      "category": ["SEO", "Widoczność", "Treści"],
+      "primaryCategory": "SEO",
+      "category": ["Widoczność", "Treści"],
       "seo": {
         "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
         "description": "Sprawdź, dlaczego blog na stronie zwiększa widoczność w Google, Google Maps i obniża koszt pozyskania klienta",
@@ -252,7 +255,8 @@
       "slug": "jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp",
       "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
       "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Jeśli nie zadbasz o ich format, rozmiar i kompresję, Twoja strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie Twoją stronę nie sprawdzając oferty.",
-      "category": ["Zdjęcia", "SEO"],
+      "primaryCategory": "Zdjęcia",
+      "category": ["SEO"],
       "seo": {
         "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
         "description": "Dowiedz się, jak zoptymalizować zdjęcia na stronę WWW, aby strona była szybsza, lżejsza i lepiej oceniana przez Google",
@@ -352,7 +356,8 @@
       "slug": "jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google",
       "title": "Jak pisać treści na stronie internetowej, aby być wyżej w wyszukiwarce Google?",
       "excerpt": "Dowiedz się, jak pisać treści na stronę internetową, które przyciągają klientów i zajmują wyższe pozycje w Google. Praktyczne zasady SEO i przykłady.",
-      "category": ["SEO", "Treści"],
+      "primaryCategory": "SEO",
+      "category": ["Treści"],
       "tags": [
         "seo copywriting",
         "treści seo",
@@ -571,7 +576,8 @@
       "slug": "jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow",
       "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?",
       "excerpt": "Identyfikacja wizualna buduje wiarygodność, skraca decyzje zakupowe i wzmacnia rozpoznawalność. Zobacz, jak logo, kolorystyka i typografia wpływają na zaufanie klientów.",
-      "category": ["Design", "Branding"],
+      "primaryCategory": "Design",
+      "category": ["Branding"],
       "tags": ["identyfikacja wizualna", "identyfikacja wizualna firmy", "logo", "kolorystyka", "typografia", "brandbook", "zaufanie klientów", "branding", "spójność wizualna"],
       "seo": {
         "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów? | Arteon",
@@ -704,7 +710,8 @@
       "slug": "dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic",
       "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",
       "excerpt": "Twoja strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania Google. Kompletny przewodnik.",
-      "category": ["SEO", "Widoczność"],
+      "primaryCategory": "SEO",
+      "category": ["Widoczność"],
       "tags": ["google", "indeksacja", "google search console", "pozycjonowanie", "robot google", "widoczność strony", "sitemap", "plik robots.txt", "algorytm google", "strona internetowa"],
       "seo": {
         "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",

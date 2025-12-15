@@ -97,8 +97,8 @@ function readBlog() {
   }
 }
 function primaryCategorySlug(article) {
-  const first = (article.category && article.category[0]) || 'inne';
-  return slugify(first);
+  const primary = article.primaryCategory || (article.category && article.category[0]) || 'inne';
+  return slugify(primary);
 }
 function articleAssetsLastmod(article) {
   const slug = article.slug;
@@ -132,7 +132,9 @@ const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
   const byCat = new Map();
   for (const a of ARTICLES) {
     const datestr = parseISO(a.dateModified) || parseISO(a.datePublished) || articleAssetsLastmod(a);
-    for (const c of a.category || []) {
+    const primary = a.primaryCategory || (a.category && a.category[0]);
+    const allCats = [primary, ...(a.category || [])].filter(Boolean);
+    for (const c of allCats) {
       const s = slugify(c);
       if (!byCat.has(s)) byCat.set(s, []);
       if (datestr) byCat.get(s).push(datestr);
@@ -152,7 +154,7 @@ module.exports = {
   siteUrl: SITE_URL,
   generateRobotsTxt: true,
   sitemapSize: 7000,
-  exclude: ['/404', '/500', '/_next/*', '/api/*', '/drafts/*'],
+  exclude: ['/404', '/500', '/_next/*', '/api/*', '/drafts/*', '/edukacja/*/*'],
 
   transform: async (config, loc) => {
     const base = {
@@ -177,16 +179,26 @@ module.exports = {
       add.push(entry);
     }
 
+    const seenCategories = new Set();
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
       if (loc.startsWith('/edukacja/') && loc.split('/').length === 3) {
-        add.push({ loc, changefreq: 'weekly', priority: 0.75, lastmod: last });
+        const category = loc.split('/')[2];
+        if (!seenCategories.has(category)) {
+          seenCategories.add(category);
+          add.push({ loc, changefreq: 'weekly', priority: 0.75, lastmod: last });
+        }
       }
     }
 
-    for (const [loc, last] of ROUTE_LASTMOD.entries()) {
-      if (loc.startsWith('/edukacja/') && loc.split('/').length === 4) {
-        add.push({ loc, changefreq: 'weekly', priority: 0.72, lastmod: last });
-      }
+    for (const a of ARTICLES) {
+      const cat = primaryCategorySlug(a);
+      const loc = `/edukacja/${cat}/${a.slug}`;
+      const fromData = parseISO(a.dateModified) || parseISO(a.datePublished);
+      const fallback = articleAssetsLastmod(a);
+      const lastmod = fromData || fallback;
+      const entry = { loc, changefreq: 'weekly', priority: 0.72 };
+      if (lastmod) entry.lastmod = lastmod;
+      add.push(entry);
     }
 
     return add;
