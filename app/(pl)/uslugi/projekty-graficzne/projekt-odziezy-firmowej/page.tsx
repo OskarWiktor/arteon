@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -28,9 +28,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt odzieży firmowej | Arteon',
     description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
-    url: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
@@ -53,7 +53,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignOdziezFirmowaPage() {
+export default function OfferDesignCorporateApparelPage() {
   return (
     <>
       <HeroBanner
@@ -165,7 +165,7 @@ export default function OfferDesignOdziezFirmowaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 

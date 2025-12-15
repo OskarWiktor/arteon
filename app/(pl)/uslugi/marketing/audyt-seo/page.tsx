@@ -23,15 +23,15 @@ const BASE = 'https://www.arteonagency.pl';
 
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
-  description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
+  description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/audyt-seo' },
   openGraph: {
     title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
-    description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-    url: '/uslugi/marketing/audyt-seo',
+    description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
+    url: `${BASE}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg5.webp' }],
+    images: [{ url: `${BASE}/assets/bg/abstract-bg5.webp` }],
     //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {
@@ -65,7 +65,7 @@ export default function OfferMarketingPage() {
     <>
       <HeroBanner
         title="Audyt SEO"
-        description={<>Przeprowadź audyt SEO swojej witryny i sprawdź co możesz zrobić aby wyświetlać się wyżej w wynikach wyszukiwarki Google.</>}
+        description={<>Przeprowadź audyt SEO swojej witryny i sprawdź, co możesz zrobić, aby wyświetlać się wyżej w wynikach wyszukiwarki Google.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -112,13 +112,13 @@ export default function OfferMarketingPage() {
           imageAlt="Audyt SEO - analiza widoczności strony w Google Analytics"
           subtitle="Dla kogo"
           title="Kiedy audyt SEO ma największy sens i dla kogo jest?"
-          description="Gdy strona nie wyświetla się tak wysoko jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Kompleksowy audyt SEO jest najlepszy dla:"
+          description="Gdy strona nie wyświetla się tak wysoko, jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Kompleksowy audyt SEO jest najlepszy dla:"
           btnOne="Zamów audyt SEO"
           btnOneLink="#kontakt"
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
             <li>Właścicieli nowych platform, które potrzebują solidnych podstaw zanim ruszą z kampaniami reklamowymi.</li>
-            <li>Właścicieli sklepów oraz stron internetowe z problemami widoczności, które nie pozwalają na dostateczną ilość zapytań lub klientów.</li>
+            <li>Właścicieli sklepów oraz stron internetowych z problemami widoczności, które nie pozwalają na dostateczną ilość zapytań lub klientów.</li>
             <li>Firm usługowych i B2B, którym zależy na stałym dopływie jakościowych zapytań od klientów.</li>
           </ul>
         </SectionBasic>
@@ -165,7 +165,7 @@ export default function OfferMarketingPage() {
               title: '1. Wdrażamy analitykę i zbieramy dane',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Analizujemy stronę technicznie następnie patrzymy na ruch i wyszukiwania, sprawdzamy jak Google widzi Twoją stronę.</p>
+                  <p className="mb-3 text-sm">Analizujemy stronę technicznie, następnie patrzymy na ruch i wyszukiwania, sprawdzamy, jak Google widzi Twoją stronę.</p>
                 </div>
               ),
             },
@@ -173,7 +173,7 @@ export default function OfferMarketingPage() {
               title: '2. Przygotowujemy raport i priorytety',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Tworzymy raport wszelkich błędów i problemów oraz przygotowywujemy listę działań podzielonych na szybkie poprawki i zadania na 90 dni.</p>
+                  <p className="mb-3 text-sm">Tworzymy raport wszelkich błędów i problemów oraz przygotowujemy listę działań podzielonych na szybkie poprawki i zadania na 90 dni.</p>
                 </div>
               ),
             },
@@ -190,16 +190,16 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Co sprawdzamy audycie SEO i późniejszej optymalizacji SEO?" subtitle="KPI i raportowanie">
+        <SectionInfo title="Co sprawdzamy w audycie SEO i późniejszej optymalizacji SEO?" subtitle="KPI i raportowanie">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Pozycję strony:</strong> sprawdzamy na której pozycji pokazuje się Twoja strona przy poszczególnych frazach.
+              <strong>Pozycję strony:</strong> sprawdzamy, na której pozycji pokazuje się Twoja strona przy poszczególnych frazach.
             </li>
             <li>
-              <strong>Ilość fraz:</strong> patrzymy ile nowych fraz Google łączy z Twoją witryną i jak wpływa to na ruch oraz pozycję.
+              <strong>Ilość fraz:</strong> patrzymy, ile nowych fraz Google łączy z Twoją witryną i jak wpływa to na ruch oraz pozycję.
             </li>
             <li>
-              <strong>Zapytania i ruch:</strong> patrzymy o ile wzrósł ruch na Twojej stronie oraz o ile wzrosła ilość uzupełnionych formularzy, telefonów i wiadomości po wprowadzonych zmianach.
+              <strong>Zapytania i ruch:</strong> patrzymy, o ile wzrósł ruch na Twojej stronie oraz o ile wzrosła ilość uzupełnionych formularzy, telefonów i wiadomości po wprowadzonych zmianach.
             </li>
           </ul>
         </SectionInfo>

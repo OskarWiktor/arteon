@@ -2,10 +2,14 @@
 
 import Button from '@/components/ui/buttons/Button';
 import Badge from '@/components/ui/Badge';
-import Heading from '@/components/ui/typography/Heading';
-import Text from '@/components/ui/typography/Text';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
-import { useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type DragEvent as ReactDragEvent, type ReactNode } from 'react';
+import { exportCroppedImage } from '@/components/sections/tools/ImageResizeTool/exportCroppedImage';
+import { getCropRect, getGridStroke } from '@/components/sections/tools/ImageResizeTool/cropMath';
+import { useCropDrag } from '@/components/sections/tools/ImageResizeTool/useCropDrag';
+import type { ActiveTool, GridColor, OutputFormat, ResizeMode, ShapeAspect, ShapeType } from '@/components/sections/tools/ImageResizeTool/types';
+import { formatBytes } from '@/lib/tools/formatBytes';
+import { revokeObjectUrl } from '@/lib/tools/objectUrl';
+import { useEffect, useMemo, useRef, useState, type DragEvent as ReactDragEvent, type FormEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
 
@@ -84,20 +88,15 @@ const ui = {
       fbCover: 'Facebook - cover strony (820x360)',
       liPost: 'LinkedIn - post (1200x1200)',
       liBanner: 'LinkedIn - baner profilu (1584x396)',
+      ogImage: 'OG image (1200x630)',
+      cover: 'Grafika do artykułu (1600x900)',
+      banner: 'Baner strony (1920x600)',
       thumb: 'Miniatura artykułu (800x600)',
       hero: 'Hero sekcji (1920x1080)',
       bg: 'Tło sekcji (1920x1280)',
     },
   },
 } as const;
-
-type ResizeMode = 'pixels' | 'preset';
-type OutputFormat = 'jpg' | 'png' | 'webp';
-type GridColor = 'emerald' | 'white' | 'black' | 'red' | 'yellow';
-type ActiveTool = 'dimensions' | 'presets' | 'shapes' | 'zoom' | 'position' | 'grid';
-
-type ShapeType = 'rect' | 'square' | 'circle';
-type ShapeAspect = '1:1' | '4:5' | '5:4' | '3:2' | '2:3' | '16:9' | '9:16';
 
 function getImagePresets() {
   const t = ui.pl;
@@ -112,6 +111,9 @@ function getImagePresets() {
       { key: 'li-banner', label: t.presets.liBanner, width: 1584, height: 396 },
     ],
     web: [
+      { key: 'og-image', label: t.presets.ogImage, width: 1200, height: 630 },
+      { key: 'cover', label: t.presets.cover, width: 1600, height: 900 },
+      { key: 'banner', label: t.presets.banner, width: 1920, height: 600 },
       { key: 'thumb', label: t.presets.thumb, width: 800, height: 600 },
       { key: 'hero', label: t.presets.hero, width: 1920, height: 1080 },
       { key: 'bg', label: t.presets.bg, width: 1920, height: 1280 },
@@ -140,79 +142,6 @@ interface ResizeToolState {
   gridColor: GridColor;
   shape: ShapeType;
   shapeAspect: ShapeAspect;
-}
-
-type DragMode = 'none' | 'move' | 'resize';
-
-interface DragState {
-  mode: DragMode;
-  startX: number;
-  startY: number;
-  startCropX: number;
-  startCropY: number;
-  startZoom: number;
-  anchorX: number;
-  anchorY: number;
-  corner: 'tl' | 'tr' | 'bl' | 'br' | null;
-}
-
-function formatBytes(bytes: number): string {
-  if (bytes === 0) return '0 B';
-  const units = ['B', 'KB', 'MB', 'GB'];
-  const i = Math.floor(Math.log(bytes) / Math.log(1024));
-  const value = bytes / Math.pow(1024, i);
-  return `${value.toFixed(value > 10 ? 1 : 2)} ${units[i]}`;
-}
-
-function getCropRect(ow: number, oh: number, targetAspect: number, cropX: number, cropY: number, zoom: number) {
-  const originalAspect = ow / oh;
-  let baseW: number;
-  let baseH: number;
-
-  if (originalAspect > targetAspect) {
-    baseH = oh;
-    baseW = oh * targetAspect;
-  } else {
-    baseW = ow;
-    baseH = ow / targetAspect;
-  }
-
-  const zoomClamped = Math.max(1, Math.min(zoom, 10));
-  const cropW = baseW / zoomClamped;
-  const cropH = baseH / zoomClamped;
-
-  const halfW = cropW / 2;
-  const halfH = cropH / 2;
-
-  const minCenterX = halfW;
-  const maxCenterX = ow - halfW;
-  const minCenterY = halfH;
-  const maxCenterY = oh - halfH;
-
-  const centerX = minCenterX + (maxCenterX - minCenterX) * cropX;
-  const centerY = minCenterY + (maxCenterY - minCenterY) * cropY;
-
-  const x = centerX - halfW;
-  const y = centerY - halfH;
-
-  return { x, y, cropW, cropH, centerX, centerY };
-}
-
-function getGridStroke(color: GridColor): string {
-  switch (color) {
-    case 'emerald':
-      return 'rgba(16, 185, 129, 0.9)';
-    case 'white':
-      return 'rgba(255, 255, 255, 0.9)';
-    case 'black':
-      return 'rgba(0, 0, 0, 0.9)';
-    case 'red':
-      return 'rgba(239, 68, 68, 0.95)';
-    case 'yellow':
-      return 'rgba(234, 179, 8, 0.95)';
-    default:
-      return 'rgba(16, 185, 129, 0.9)';
-  }
 }
 
 interface ToolButtonProps {
@@ -351,27 +280,15 @@ export default function ImageResizeTool() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [estimatedSize, setEstimatedSize] = useState<number | null>(null);
-  const [isDragging, setIsDragging] = useState(false);
 
   const { originalWidth, originalHeight, targetWidth, targetHeight } = state;
 
   const previewRef = useRef<HTMLDivElement | null>(null);
-  const dragRef = useRef<DragState>({
-    mode: 'none',
-    startX: 0,
-    startY: 0,
-    startCropX: 0.5,
-    startCropY: 0.5,
-    startZoom: 1,
-    anchorX: 0,
-    anchorY: 0,
-    corner: null,
-  });
 
   // sprzątanie URL obiektu
   useEffect(() => {
     return () => {
-      if (state.imageUrl) URL.revokeObjectURL(state.imageUrl);
+      revokeObjectUrl(state.imageUrl);
     };
   }, [state.imageUrl]);
 
@@ -433,7 +350,7 @@ export default function ImageResizeTool() {
   const handleFileChange = (file: File | null) => {
     if (!file) return;
 
-    if (state.imageUrl) URL.revokeObjectURL(state.imageUrl);
+    revokeObjectUrl(state.imageUrl);
 
     const url = URL.createObjectURL(file);
     const img = new Image();
@@ -455,7 +372,7 @@ export default function ImageResizeTool() {
       setActiveTool('dimensions');
     };
     img.onerror = () => {
-      URL.revokeObjectURL(url);
+      revokeObjectUrl(url);
       setError(t.imageLoadError);
     };
   };
@@ -583,86 +500,52 @@ export default function ImageResizeTool() {
 
   const handleDownload = () => {
     if (!state.file || !state.imageUrl) {
-      setError('Dodaj najpierw zdjęcie.');
+      setError(t.addImageFirst);
       return;
     }
 
     if (!dims) {
-      setError('Ustaw poprawne wymiary docelowe.');
+      setError(t.setValidDimensions);
+      return;
+    }
+
+    if (!state.originalWidth || !state.originalHeight) {
+      setError(t.imageLoadError);
       return;
     }
 
     setIsProcessing(true);
     setError(null);
 
-    const img = new Image();
-    img.src = state.imageUrl;
-    img.onload = () => {
-      const canvas = document.createElement('canvas');
-      canvas.width = dims.width;
-      canvas.height = dims.height;
-      const ctx = canvas.getContext('2d');
-      if (!ctx || !state.originalWidth || !state.originalHeight) {
+    const baseName = state.file.name.replace(/\.[^.]+$/, '');
+
+    void (async () => {
+      try {
+        const { size } = await exportCroppedImage({
+          imageUrl: state.imageUrl!,
+          originalWidth: state.originalWidth!,
+          originalHeight: state.originalHeight!,
+          dims,
+          cropX: state.cropX,
+          cropY: state.cropY,
+          cropZoom: state.cropZoom,
+          shape: state.shape,
+          outputFormat: state.outputFormat,
+          outputQuality: state.outputQuality,
+          baseName,
+          imageLoadErrorMessage: t.imageLoadError,
+          canvasNotSupportedErrorMessage: t.canvasNotSupported,
+          fileGenerationErrorMessage: t.fileGenerationError,
+        });
+
+        setEstimatedSize(size);
+      } catch (err) {
+        console.error(err);
+        setError(err instanceof Error ? err.message : t.fileGenerationError);
+      } finally {
         setIsProcessing(false);
-        setError('Twoja przeglądarka nie obsługuje kontekstu 2D.');
-        return;
       }
-
-      const targetAspect = dims.width / dims.height;
-      const crop = getCropRect(state.originalWidth, state.originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
-
-      const W = dims.width;
-      const H = dims.height;
-
-      ctx.save();
-      ctx.translate(W / 2, H / 2);
-
-      if (state.shape === 'circle') {
-        const r = Math.min(W, H) / 2;
-        ctx.beginPath();
-        ctx.arc(0, 0, r, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.clip();
-      }
-
-      ctx.drawImage(img, crop.x, crop.y, crop.cropW, crop.cropH, -W / 2, -H / 2, W, H);
-
-      ctx.restore();
-
-      let mime: string = 'image/jpeg';
-      if (state.outputFormat === 'png') mime = 'image/png';
-      if (state.outputFormat === 'webp') mime = 'image/webp';
-
-      canvas.toBlob(
-        (blob) => {
-          if (!blob) {
-            setError('Nie udało się wygenerować pliku.');
-            setIsProcessing(false);
-            return;
-          }
-
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          const baseName = state.file!.name.replace(/\.[^.]+$/, '');
-          a.download = `${baseName}-${dims.width}x${dims.height}.${state.outputFormat}`;
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-          URL.revokeObjectURL(url);
-
-          setEstimatedSize(blob.size);
-          setIsProcessing(false);
-        },
-        mime,
-        state.outputFormat === 'png' ? undefined : state.outputQuality,
-      );
-    };
-
-    img.onerror = () => {
-      setError('Nie udało się wczytać obrazu.');
-      setIsProcessing(false);
-    };
+    })();
   };
 
   const handleSubmit = (e: FormEvent) => {
@@ -670,232 +553,22 @@ export default function ImageResizeTool() {
     handleDownload();
   };
 
-  const startMoveDrag = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (!state.imageUrl || !previewRef.current) return;
-
-    e.currentTarget.setPointerCapture(e.pointerId);
-
-    dragRef.current.mode = 'move';
-    dragRef.current.startX = e.clientX;
-    dragRef.current.startY = e.clientY;
-    dragRef.current.startCropX = state.cropX;
-    dragRef.current.startCropY = state.cropY;
-    dragRef.current.startZoom = state.cropZoom;
-    dragRef.current.corner = null;
-
-    setIsDragging(true);
-    setActiveTool('position');
-  };
-
-  const startResizeDrag = (e: ReactPointerEvent<HTMLDivElement>, corner: 'tl' | 'tr' | 'bl' | 'br') => {
-    if (!state.imageUrl || !previewRef.current || !state.originalWidth || !state.originalHeight) {
-      return;
-    }
-    if (!effectiveDims) return;
-
-    const { originalWidth, originalHeight } = state;
-    const targetAspect = effectiveDims.width / effectiveDims.height;
-
-    const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, state.cropX, state.cropY, state.cropZoom);
-
-    let anchorX = cropRect.x;
-    let anchorY = cropRect.y;
-
-    switch (corner) {
-      case 'tl':
-        anchorX = cropRect.x + cropRect.cropW;
-        anchorY = cropRect.y + cropRect.cropH;
-        break;
-      case 'tr':
-        anchorX = cropRect.x;
-        anchorY = cropRect.y + cropRect.cropH;
-        break;
-      case 'bl':
-        anchorX = cropRect.x + cropRect.cropW;
-        anchorY = cropRect.y;
-        break;
-      case 'br':
-        anchorX = cropRect.x;
-        anchorY = cropRect.y;
-        break;
-    }
-
-    e.stopPropagation();
-    e.currentTarget.setPointerCapture(e.pointerId);
-
-    dragRef.current.mode = 'resize';
-    dragRef.current.startX = e.clientX;
-    dragRef.current.startY = e.clientY;
-    dragRef.current.startCropX = state.cropX;
-    dragRef.current.startCropY = state.cropY;
-    dragRef.current.startZoom = state.cropZoom;
-    dragRef.current.anchorX = anchorX;
-    dragRef.current.anchorY = anchorY;
-    dragRef.current.corner = corner;
-
-    setIsDragging(true);
-    setActiveTool('zoom');
-  };
-
-  const handlePointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (dragRef.current.mode === 'none' || !previewRef.current) return;
-
-    const { originalWidth, originalHeight } = state;
-    if (!originalWidth || !originalHeight) return;
-
-    const rect = previewRef.current.getBoundingClientRect();
-    if (!rect.width || !rect.height) return;
-
-    const mode = dragRef.current.mode;
-
-    if (mode === 'move') {
-      if (!effectiveDims) return;
-      const targetAspect = effectiveDims.width / effectiveDims.height;
-
-      const cropRect = getCropRect(originalWidth, originalHeight, targetAspect, dragRef.current.startCropX, dragRef.current.startCropY, state.cropZoom);
-
-      const rangeX = Math.max(originalWidth - cropRect.cropW, 1);
-      const rangeY = Math.max(originalHeight - cropRect.cropH, 1);
-
-      const deltaX = e.clientX - dragRef.current.startX;
-      const deltaY = e.clientY - dragRef.current.startY;
-
-      const factorX = originalWidth / (rangeX * rect.width);
-      const factorY = originalHeight / (rangeY * rect.height);
-
-      let nextCropX = dragRef.current.startCropX + deltaX * factorX;
-      let nextCropY = dragRef.current.startCropY + deltaY * factorY;
-
-      nextCropX = Math.min(1, Math.max(0, nextCropX));
-      nextCropY = Math.min(1, Math.max(0, nextCropY));
-
-      setState((prev) => ({
-        ...prev,
-        cropX: nextCropX,
-        cropY: nextCropY,
-      }));
-    } else if (mode === 'resize') {
-      if (!effectiveDims) return;
-
-      const ow = originalWidth;
-      const oh = originalHeight;
-      const aspect = effectiveDims.width / effectiveDims.height;
-
-      const relX = (e.clientX - rect.left) / rect.width;
-      const relY = (e.clientY - rect.top) / rect.height;
-      const px = Math.min(1, Math.max(0, relX)) * ow;
-      const py = Math.min(1, Math.max(0, relY)) * oh;
-
-      const anchorX = dragRef.current.anchorX;
-      const anchorY = dragRef.current.anchorY;
-
-      const dx = px - anchorX;
-      const dy = py - anchorY;
-
-      if (dx === 0 && dy === 0) return;
-
-      const signX = dx >= 0 ? 1 : -1;
-      const signY = dy >= 0 ? 1 : -1;
-
-      const absDx = Math.abs(dx);
-      const absDy = Math.abs(dy);
-
-      const wByDx = absDx;
-      const hByDx = wByDx / aspect;
-
-      const hByDy = absDy;
-      const wByDy = hByDy * aspect;
-
-      let w = wByDx;
-      let h = hByDx;
-
-      if (hByDx > absDy) {
-        w = wByDy;
-        h = hByDy;
-      }
-
-      const minSize = Math.max(4, Math.min(ow, oh) * 0.01);
-      if (w < minSize || h < minSize) {
-        w = minSize;
-        h = minSize / aspect;
-      }
-
-      let maxH = signY > 0 ? oh - anchorY : anchorY;
-      let maxW = signX > 0 ? ow - anchorX : anchorX;
-      maxW = Math.max(maxW, minSize);
-      maxH = Math.max(maxH, minSize);
-
-      const limitedW = Math.min(w, maxW);
-      const limitedH = Math.min(h, maxH);
-
-      let width = limitedW;
-      let height = width / aspect;
-      if (height > limitedH) {
-        height = limitedH;
-        width = height * aspect;
-      }
-
-      const x0 = signX > 0 ? anchorX : anchorX - width;
-      const y0 = signY > 0 ? anchorY : anchorY - height;
-
-      const centerX = x0 + width / 2;
-      const centerY = y0 + height / 2;
-
-      const originalAspect = ow / oh;
-      let baseW: number;
-
-      if (originalAspect > aspect) {
-        baseW = oh * aspect;
-      } else {
-        baseW = ow;
-      }
-
-      let zoom = baseW / width;
-      zoom = Math.max(1, Math.min(10, zoom));
-
-      const halfW = width / 2;
-      const halfH = height / 2;
-      const minCenterX = halfW;
-      const maxCenterX = ow - halfW;
-      const minCenterY = halfH;
-      const maxCenterY = oh - halfH;
-
-      const clampedCenterX = Math.min(maxCenterX, Math.max(minCenterX, centerX));
-      const clampedCenterY = Math.min(maxCenterY, Math.max(minCenterY, centerY));
-
-      const cropX = (clampedCenterX - minCenterX) / (maxCenterX - minCenterX || 1);
-      const cropY = (clampedCenterY - minCenterY) / (maxCenterY - minCenterY || 1);
-
-      setState((prev) => ({
-        ...prev,
-        cropX,
-        cropY,
-        cropZoom: zoom,
-      }));
-    }
-  };
-
-  const endDrag = () => {
-    dragRef.current.mode = 'none';
-    setIsDragging(false);
-  };
-
-  const handlePointerUp = (e: ReactPointerEvent<HTMLDivElement>) => {
-    endDrag();
-    try {
-      e.currentTarget.releasePointerCapture(e.pointerId);
-    } catch {
-      // ignore
-    }
-  };
-
-  const handlePointerLeave = () => {
-    endDrag();
-  };
+  const { isDragging, startMoveDrag, startResizeDrag, handlePointerMove, handlePointerUp, handlePointerLeave } = useCropDrag({
+    imageUrl: state.imageUrl,
+    originalWidth: state.originalWidth,
+    originalHeight: state.originalHeight,
+    cropX: state.cropX,
+    cropY: state.cropY,
+    cropZoom: state.cropZoom,
+    effectiveDims,
+    previewRef,
+    setState,
+    setActiveTool,
+  });
 
   return (
     <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,2.5fr)]">
-      <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+      <section className="tool-section space-y-4">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <p className="mb-2 font-semibold uppercase">{t.addImage}</p>
@@ -1006,7 +679,7 @@ export default function ImageResizeTool() {
             </div>
 
             {state.outputFormat !== 'png' && (
-              <div className="mt-4 space-y-1 text-sm">
+              <div className="mt-4 space-y-1">
                 <label className="flex items-center justify-between text-[14px]! font-medium">
                   <span>{t.quality}</span>
                   <span>{Math.round(state.outputQuality * 100)}%</span>
@@ -1024,9 +697,7 @@ export default function ImageResizeTool() {
                   }
                   className="w-full! p-0!"
                 />
-                <Text variant="xs" tone="muted" as="p" className="text-xs!">
-                  {t.qualityHelper}
-                </Text>
+                <p className="text-xs! text-light">{t.qualityHelper}</p>
               </div>
             )}
 
@@ -1045,25 +716,21 @@ export default function ImageResizeTool() {
         </form>
       </section>
 
-      <section className="space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+      <section className="tool-section space-y-4">
         <div className="mb-2 flex items-center justify-between gap-2">
-          <Heading as="h2" className="h6">
-            {t.cropTools}
-          </Heading>
+          <h2 className="h6">{t.cropTools}</h2>
           {dims && (
-            <Text variant="xs" tone="muted" as="span" className="text-xs!">
+            <span className="text-xs! text-light">
               {t.target}{' '}
               <strong>
                 {dims.width} x {dims.height} px
               </strong>
-            </Text>
+            </span>
           )}
         </div>
 
         {!state.imageUrl && (
-          <Text variant="xs" tone="muted" as="p" className="text-xs!">
-            {t.addImageFirstHelper}
-          </Text>
+          <p className="text-xs! text-light">{t.addImageFirstHelper}</p>
         )}
 
         {state.imageUrl && cropEnabled && (
@@ -1166,9 +833,7 @@ export default function ImageResizeTool() {
 
                   {state.shape === 'rect' && (
                     <div className="space-y-2">
-                      <Text variant="xs" tone="muted" as="p" className="text-xs!">
-                        {t.rectAspect}
-                      </Text>
+                      <p className="text-xs! text-light">{t.rectAspect}</p>
                       <div className="flex flex-wrap gap-2">
                         {RECT_ASPECTS.map((aspect) => (
                           <PillButton key={aspect} value={aspect} current={state.shapeAspect} label={aspect} onChange={(val) => handleShapeAspectChange(val as ShapeAspect)} />

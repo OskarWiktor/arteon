@@ -1,11 +1,9 @@
 'use client';
 
 import { useMemo } from 'react';
-import allProjectsData from '@/data/pl/projects.json';
-import type { Project, ProjectCategory } from '@/types/project';
+import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import ProjectCard from '../../ui/ProjectCard';
 import { AnimatePresence, motion } from 'framer-motion';
-import Text from '../../ui/typography/Text';
 
 const ui = {
   pl: {
@@ -14,6 +12,7 @@ const ui = {
 } as const;
 
 type Props = {
+  projects: ProjectPreview[];
   selectedCategories: ProjectCategory[];
 };
 
@@ -27,9 +26,7 @@ const cardVariants = {
   exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
 };
 
-export default function ProjectsGrid({ selectedCategories }: Props) {
-  const projects = allProjectsData.projects as Project[];
-
+export default function ProjectsGrid({ projects, selectedCategories }: Props) {
   const filteredProjects = useMemo(() => {
     if (!selectedCategories.length) return projects;
     return projects.filter((p) => {
@@ -42,9 +39,7 @@ export default function ProjectsGrid({ selectedCategories }: Props) {
 
   if (!filteredProjects.length) {
     return (
-      <Text variant="body" tone="muted" as="p" className="mt-6">
-        {t.noProjects}
-      </Text>
+      <p className="mt-6 text-base text-light">{t.noProjects}</p>
     );
   }
 

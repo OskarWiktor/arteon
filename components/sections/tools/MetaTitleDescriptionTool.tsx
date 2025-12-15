@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
-import Heading from '@/components/ui/typography/Heading';
+import { analyzeMetaDescription, analyzeMetaTitle, truncateForPreview, type FieldMetrics, type LengthStatus } from '@/lib/tools/seo/metaLength';
 
 const ui = {
   pl: {
@@ -40,113 +40,47 @@ const ui = {
   },
 } as const;
 
-type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
-
-interface FieldAnalysis {
-  chars: number;
-  words: number;
-  pixels: number;
-  status: LengthStatus;
+interface FieldAnalysis extends FieldMetrics {
   statusLabel: string;
   helperText: string;
 }
 
-const TITLE_FONT = '400 20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-const DESCRIPTION_FONT = '300 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-
-let measureCanvas: HTMLCanvasElement | null = null;
-
-function measureTextWidth(text: string, font: string, fallbackAvgPx: number): number {
-  if (!text) return 0;
-
-  if (typeof document === 'undefined') {
-    return Math.round(text.length * fallbackAvgPx);
-  }
-
-  if (!measureCanvas) {
-    measureCanvas = document.createElement('canvas');
-  }
-
-  const context = measureCanvas.getContext('2d');
-  if (!context) {
-    return Math.round(text.length * fallbackAvgPx);
-  }
-
-  context.font = font;
-  const metrics = context.measureText(text);
-  return Math.round(metrics.width);
-}
-
 function analyzeTitle(text: string): FieldAnalysis {
   const t = ui.pl;
-  const trimmed = text.trim();
-  const chars = trimmed.length;
-  const words = trimmed ? trimmed.split(/\s+/).filter(Boolean).length : 0;
+  const metrics = analyzeMetaTitle(text);
 
-  const pixels = measureTextWidth(trimmed, TITLE_FONT, 9);
-
-  let status: LengthStatus = 'empty';
-  let statusLabel: string = t.noData;
-  let helperText: string = t.enterTitle;
-
-  if (!chars) {
-    return { chars, words, pixels, status, statusLabel, helperText };
+  if (metrics.status === 'empty') {
+    return { ...metrics, statusLabel: t.noData, helperText: t.enterTitle };
   }
 
-  const isTooShort = chars < 35 || pixels < 350;
-  const isTooLong = chars > 65 || pixels > 580;
-
-  if (isTooShort) {
-    status = 'too-short';
-    statusLabel = t.tooShort;
-    helperText = t.titleTooShort;
-  } else if (isTooLong) {
-    status = 'too-long';
-    statusLabel = t.tooLong;
-    helperText = t.titleTooLong;
-  } else {
-    status = 'ideal';
-    statusLabel = t.goodLength;
-    helperText = t.titleGoodLength;
+  if (metrics.status === 'too-short') {
+    return { ...metrics, statusLabel: t.tooShort, helperText: t.titleTooShort };
   }
 
-  return { chars, words, pixels, status, statusLabel, helperText };
+  if (metrics.status === 'too-long') {
+    return { ...metrics, statusLabel: t.tooLong, helperText: t.titleTooLong };
+  }
+
+  return { ...metrics, statusLabel: t.goodLength, helperText: t.titleGoodLength };
 }
 
 function analyzeDescription(text: string): FieldAnalysis {
   const t = ui.pl;
-  const trimmed = text.trim();
-  const chars = trimmed.length;
-  const words = trimmed ? trimmed.split(/\s+/).filter(Boolean).length : 0;
+  const metrics = analyzeMetaDescription(text);
 
-  const pixels = measureTextWidth(trimmed, DESCRIPTION_FONT, 5.8);
-
-  let status: LengthStatus = 'empty';
-  let statusLabel: string = t.noData;
-  let helperText: string = t.enterDescription;
-
-  if (!chars) {
-    return { chars, words, pixels, status, statusLabel, helperText };
+  if (metrics.status === 'empty') {
+    return { ...metrics, statusLabel: t.noData, helperText: t.enterDescription };
   }
 
-  const isTooShort = chars < 100 || pixels < 430;
-  const isTooLong = chars > 165 || pixels > 920;
-
-  if (isTooShort) {
-    status = 'too-short';
-    statusLabel = t.tooShort;
-    helperText = t.descriptionTooShort;
-  } else if (isTooLong) {
-    status = 'too-long';
-    statusLabel = t.tooLong;
-    helperText = t.descriptionTooLong;
-  } else {
-    status = 'ideal';
-    statusLabel = t.goodLength;
-    helperText = t.descriptionGoodLength;
+  if (metrics.status === 'too-short') {
+    return { ...metrics, statusLabel: t.tooShort, helperText: t.descriptionTooShort };
   }
 
-  return { chars, words, pixels, status, statusLabel, helperText };
+  if (metrics.status === 'too-long') {
+    return { ...metrics, statusLabel: t.tooLong, helperText: t.descriptionTooLong };
+  }
+
+  return { ...metrics, statusLabel: t.goodLength, helperText: t.descriptionGoodLength };
 }
 
 function getStatusClasses(status: LengthStatus): string {
@@ -159,13 +93,8 @@ function getStatusClasses(status: LengthStatus): string {
       return 'bg-red-100 text-red-700 border-red-200';
     case 'empty':
     default:
-      return 'bg-neutral-100 text-neutral-700 border-neutral-200';
+      return 'bg-neutral-100 text-mid border-neutral-200';
   }
-}
-
-function truncateForPreview(text: string, maxChars: number): string {
-  if (text.length <= maxChars) return text;
-  return text.slice(0, maxChars - 1).trimEnd() + '…';
 }
 
 export default function MetaTitleDescriptionTool() {
@@ -227,16 +156,14 @@ export default function MetaTitleDescriptionTool() {
 
         <ToolSection className="space-y-4">
           <div>
-            <Heading as="h2" className="h6 pb-2">
-              {t.previewTitle}
-            </Heading>
+            <h2 className="h6 pb-2">{t.previewTitle}</h2>
             <ToolHelper>{t.previewHelper}</ToolHelper>
           </div>
 
           <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">
-            <p className="truncate text-[13px]! text-[#202124]">{url || 'www.twojadomena.pl/podstrona'}</p>
-            <p className="mt-1 line-clamp-2 text-[18px]! font-normal text-[#1a0dab]">{previewTitle}</p>
-            <p className="mt-1 line-clamp-3 text-[13px]! leading-snug text-[#4d5156]">{previewDescription}</p>
+            <p className="truncate text-[13px]! text-mid">{url || 'www.twojadomena.pl/podstrona'}</p>
+            <p className="mt-1 line-clamp-2 text-[18px]! font-normal text-mid">{previewTitle}</p>
+            <p className="mt-1 line-clamp-3 text-[13px]! leading-snug text-light">{previewDescription}</p>
           </div>
         </ToolSection>
       </div>

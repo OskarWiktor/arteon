@@ -2,8 +2,6 @@
 
 import { useRef, useState } from 'react';
 import Button from '../ui/buttons/Button';
-import Heading from '../ui/typography/Heading';
-import Text from '../ui/typography/Text';
 import ToolAlert from '../ui/tools/ToolAlert';
 
 const ui = {
@@ -58,7 +56,7 @@ export default function ContactForm({ title, description, defaultSubject, action
   };
 
   const fieldClass =
-    'h-11 w-full rounded-2xl border border-gray-300 bg-transparent px-3 py-2 text-gray-900 transition ' +
+    'h-11 w-full rounded-2xl border border-gray-300 bg-transparent px-3 py-2 text-dark transition ' +
     'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   return (
@@ -66,14 +64,10 @@ export default function ContactForm({ title, description, defaultSubject, action
       {(title || description) && (
         <header className="mb-6">
           {title && (
-            <Heading as="h2" className="h3 reveal-animation">
-              {title}
-            </Heading>
+            <h2 className="h3 reveal-animation">{title}</h2>
           )}
           {description && (
-            <Text variant="body" tone="dark" as="p" className="pt-3 pb-2">
-              {description}
-            </Text>
+            <p className="pt-3 pb-2 text-mid">{description}</p>
           )}
         </header>
       )}

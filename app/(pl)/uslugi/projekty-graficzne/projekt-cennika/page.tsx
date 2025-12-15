@@ -6,7 +6,7 @@ import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -29,9 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt cennika | Arteon',
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
-    url: '/uslugi/projekty-graficzne/projekt-cennika',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
     type: 'website',
-    images: [{ url: '/assets/projects/cennik-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/cennik-mockup.webp' }],
   },
 } as const;
 
@@ -54,7 +54,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignCennikPage() {
+export default function OfferDesignPriceListPage() {
   return (
     <>
       <HeroBanner
@@ -119,7 +119,7 @@ export default function OfferDesignCennikPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zawiera projekt cennika?"
+          title="Co zyskujesz zamawiając cennik?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -159,7 +159,7 @@ export default function OfferDesignCennikPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -261,7 +261,7 @@ export default function OfferDesignCennikPage() {
         <SectionSteps
           title="Z czym warto połączyć projekt cennika?"
           subtitle="Zobacz też"
-          description="Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych - od logo, przez katalog, po identyfikację wizualną i stronę internetową. Z nami możesz zaplanować cały zestaw materiałów w jednym miejscu, tak aby każdy element opowiadał tę samą historię i pracował na Twój wynik."
+          description="Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych - od logo, przez katalog, po identyfikację wizualną i stronę internetową. Z nami możesz zaplanować cały zestaw materiałów w jednym miejscu, tak, aby każdy element opowiadał tę samą historię i pracował na Twój wynik."
           items={[
             {
               icon: <RiTableLine className="h-8 w-8" />,

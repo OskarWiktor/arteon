@@ -26,9 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
-    url: '/uslugi/marketing/optymalizacja-seo',
+    url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg5.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
   },
 } as const;
 
@@ -324,7 +324,7 @@ export default function OfferOptimizationSEO() {
               question: 'Czy mogę zrobić optymalizację bez audytu?',
               answer: (
                 <p>
-                  Teorytycznie tak, ale nie polecamy takiego rozwiązania.{' '}
+                  Teoretycznie tak, ale nie polecamy takiego rozwiązania.{" "}
                   <a href="/uslugi/marketing/audyt-seo" className="inline-link">
                     Audyt SEO
                   </a>{' '}
@@ -332,7 +332,7 @@ export default function OfferOptimizationSEO() {
                 </p>
               ),
               answerSchemaText:
-                'Teorytycznie tak, ale nie polecamy takiego rozwiązania. wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania. Dzięki temu inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.',
+                'Teoretycznie tak, ale nie polecamy takiego rozwiązania. Audyt SEO wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania. Dzięki temu inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.',
             },
             {
               question: 'Kiedy zobaczę efekty optymalizacji SEO?',

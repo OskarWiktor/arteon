@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Generator palet kolorów online - system barw z jednego koloru',
     description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
-    url: '/narzedzia/generator-palet-kolorow-online',
+    url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
       },
     ],
   },

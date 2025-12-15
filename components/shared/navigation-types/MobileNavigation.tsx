@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
-import Text from '../../ui/typography/Text';
 import Eyebrow from '../../ui/typography/Eyebrow';
 import IconText from '../../ui/IconText';
 import SocialIconLink from '../../ui/SocialIconLink';
@@ -150,9 +149,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
           >
             <div className="flex items-center justify-end px-4 pt-3">
               <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
-                <Text variant="small" tone="muted" as="span" className="font-medium">
-                  {t.close}
-                </Text>
+                <span className="text-sm text-light font-medium">{t.close}</span>
               </button>
             </div>
 
@@ -173,15 +170,11 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                             onClick={() => setIsOpen(false)}
                             className="m-2 inline-block rounded px-2 py-1 outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                           >
-                            <Text variant="small" as="span" className="font-semibold">
-                              {sec.title}
-                            </Text>
+                            <span className="text-sm text-dark font-semibold">{sec.title}</span>
                           </Link>
                         ) : (
                           <div className="m-2 px-2 py-1">
-                            <Text variant="small" as="span" className="font-semibold">
-                              {sec.title}
-                            </Text>
+                            <span className="text-sm text-dark font-semibold">{sec.title}</span>
                           </div>
                         )}
 
@@ -192,7 +185,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           onClick={() => toggleKey(sec.key)}
                           className="m-2 inline-flex items-center gap-1 rounded px-2 py-1 outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
                         >
-                          <RiArrowDownSLine className={`h-4 w-4 transition-transform ${expanded ? 'rotate-180' : ''}`} aria-hidden="true" />
+                          <RiArrowDownSLine className={`h-4 w-4 text-slate-500 transition-transform ${expanded ? 'rotate-180' : ''}`} aria-hidden="true" />
                         </button>
                       </div>
 
@@ -223,15 +216,13 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                     <IconText
                                       icon={
                                         it.icon ? (
-                                          <span className="text-light group-hover:text-slate-600">{it.icon}</span>
+                                          <span className="text-slate-500">{it.icon}</span>
                                         ) : undefined
                                       }
                                       gap="3"
                                       className="min-w-0"
                                     >
-                                      <Text variant="body" as="span">
-                                        {it.title}
-                                      </Text>
+                                      <span className="text-base text-dark">{it.title}</span>
                                     </IconText>
                                   </Link>
                                 </li>
@@ -288,13 +279,13 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       href="https://www.instagram.com/arteon.pl"
                       label={t.instagramLabel}
                       className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
-                      icon={<RiInstagramLine className="h-5 w-5 text-mid transition hover:text-slate-600" aria-hidden="true" />}
+                      icon={<RiInstagramLine className="h-5 w-5 text-slate-500" aria-hidden="true" />}
                     />
                     <SocialIconLink
                       href="https://www.facebook.com/people/Arteon/61583260915021/"
                       label={t.facebookLabel}
                       className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
-                      icon={<RiFacebookFill className="h-5 w-5 text-mid transition hover:text-slate-600" aria-hidden="true" />}
+                      icon={<RiFacebookFill className="h-5 w-5 text-slate-500" aria-hidden="true" />}
                     />
                   </div>
 

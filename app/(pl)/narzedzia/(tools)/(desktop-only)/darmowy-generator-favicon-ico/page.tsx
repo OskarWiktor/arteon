@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
     description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',
-    url: '/narzedzia/darmowy-generator-favicon-ico',
+    url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
       },
     ],
   },

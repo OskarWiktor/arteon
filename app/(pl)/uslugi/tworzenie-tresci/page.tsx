@@ -60,9 +60,9 @@ export const metadata = {
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-    url: '/uslugi/tworzenie-tresci',
+    url: `${BASE}/uslugi/tworzenie-tresci`,
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg6.webp' }],
+    images: [{ url: `${BASE}/assets/bg/abstract-bg6.webp` }],
   },
 } as const;
 
@@ -110,7 +110,7 @@ export default function OfferContentPage() {
               icon: <RiChatQuoteLine className="h-6 w-6 text-slate-500" />,
             },
             {
-              title: 'Treści budujący emocje i transformację klienta',
+              title: 'Treści budujące emocje i transformację klienta',
               icon: <IoSparkles className="h-6 w-6 text-slate-500" />,
             },
             {

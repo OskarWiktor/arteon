@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Licznik długości meta title i description',
     description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
-    url: '/narzedzia/licznik-dlugosci-meta-title-i-description',
+    url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
       },
     ],
   },
@@ -116,7 +116,7 @@ export default function Page() {
 
       <CTABanner
         title="Potrzebujesz pełnej optymalizacji SEO dla swojej witryny?"
-        description="Możemy zająć się tym za Ciebie. Prześlij nam link do swojej strony a my powiemy co zrobić aby klienci mogli Cie łatwiej znaleźć"
+        description="Możemy zająć się tym za Ciebie. Prześlij nam link do swojej strony, a my powiemy, co zrobić, aby klienci mogli Cię łatwiej znaleźć"
         btnOne="Umów rozmowę o SEO"
         btnOneLink="/kontakt"
         btnTwo="Sprawdź ofertę pozycjonowania"

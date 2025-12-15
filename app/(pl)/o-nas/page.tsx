@@ -19,12 +19,12 @@ export const metadata = {
   openGraph: {
     title: 'O nas - sprawdź naszą misję i cele | Arteon',
     description: 'Kim jesteśmy, jak pracujemy i dlaczego klienci nam ufają. Poznaj proces, standardy jakości, narzędzia oraz historie projektów Arteon.',
-    url: '/o-nas',
+    url: 'https://www.arteonagency.pl/o-nas',
     type: 'website',
     // TODO: Add unique OpenGraph image for about page: /assets/og/o-nas.webp (1200x630px)
     images: [
       {
-        url: '/assets/arteon-logo-on-mockup.webp',
+        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
       },
     ],
   },
@@ -44,7 +44,7 @@ export default function AboutPage() {
         <Gap size="sm" />
 
         <SectionBasic imageSrc="/assets/arteon-sygnet-01.webp" imageAlt="logo arteon" title="Kim jesteśmy">
-          <p>W Arteon wierzymy, że wysoka jakość usług, powinna być dostępna dla każdego. Wdrażamy doświadczenie w pracy dla globalnych marek w małych i średnich biznesach.</p>
+          <p>W Arteon wierzymy, że wysoka jakość usług powinna być dostępna dla każdego. Wdrażamy doświadczenie w pracy dla globalnych marek w małych i średnich biznesach.</p>
           <p className="mt-2">
             Tworzymy nowoczesne strony internetowe, sklepy online, blogi i aplikacje webowe. Projektujemy identyfikacje wizualne, prowadzimy marketing internetowy, pozycjonowanie oraz kampanie
             reklamowe. Przygotowujemy treści sprzedażowe i blogowe, dbając o to, by Twoja firma była widoczna w sieci i przyciągała właściwych klientów. Łączymy design, technologię i strategię, aby
@@ -56,8 +56,7 @@ export default function AboutPage() {
 
         <SectionInfo
           title="Dlaczego powstaliśmy?"
-          description="Firmy nie potrzebują już „samej strony”. Potrzebują klarownej oferty, treści, które prowadzą odbiorcę krok po kroku, oraz widoczności, która buduje się od pierwszego dnia. Dlatego działamy w
-            modelu: strategia → projekt → realizacja → widoczność."
+          description="Firmy nie potrzebują już „samej strony”. Potrzebują klarownej oferty, treści, które prowadzą odbiorcę krok po kroku oraz widoczności, która buduje się od pierwszego dnia. Dlatego działamy w modelu: strategia → projekt → realizacja → widoczność."
         ></SectionInfo>
 
         <Gap variant="line" />
@@ -95,7 +94,7 @@ export default function AboutPage() {
                   <Link href="/regulamin" className="inline underline underline-offset-4">
                     regulaminie
                   </Link>
-                  . Po wdrożeniu, dwa miesiące wsparcia w cenie.
+                  . Po wdrożeniu dwa miesiące wsparcia w cenie.
                 </p>
               ),
             },

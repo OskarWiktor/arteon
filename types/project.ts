@@ -64,3 +64,11 @@ export type Project = {
 
   seo?: { title?: string; description?: string; canonical?: string };
 };
+
+export type ProjectPreview = {
+  slug: string;
+  title: string;
+  short: string;
+  image: string;
+  category: ProjectCategory[];
+};

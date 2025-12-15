@@ -2,10 +2,11 @@
 
 import Button from '@/components/ui/buttons/Button';
 import Badge from '@/components/ui/Badge';
-import Heading from '@/components/ui/typography/Heading';
 import Eyebrow from '@/components/ui/typography/Eyebrow';
-import Text from '@/components/ui/typography/Text';
-import { useTimeout } from '@/hooks/useTimeout';
+import { buildSignatureHtml } from '@/components/sections/tools/EmailSignatureGenerator/buildSignatureHtml';
+import { useSignatureCopy } from '@/components/sections/tools/EmailSignatureGenerator/useSignatureCopy';
+import type { ActivePanel, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, StyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import { rgbToHex } from '@/lib/tools/color/convert';
 import { useMemo, useState, type ReactNode } from 'react';
 import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line } from 'react-icons/ri';
 
@@ -113,44 +114,6 @@ const ui = {
   },
 } as const;
 
-type CopyStatus = 'idle' | 'success' | 'error';
-type FontSizeOption = 'small' | 'normal' | 'large';
-type MarginOption = 'small' | 'medium' | 'large';
-type CtaRadiusOption = 'none' | 'small' | 'full';
-type SocialKey = 'linkedin' | 'instagram' | 'facebook' | 'tiktok' | 'youtube' | 'x';
-type ActivePanel = 'identity' | 'cta' | 'social' | 'appearance' | 'legal';
-type LayoutType = 'standard' | 'accent-bar' | 'top-banner' | 'label-column' | 'centered';
-
-interface SignatureConfig {
-  fullName: string;
-  jobTitle: string;
-  company: string;
-  topLine: string;
-  nameTag: string;
-  email: string;
-  phone: string;
-  website: string;
-  address: string;
-  extraLine: string;
-  ctaLabel: string;
-  ctaUrl: string;
-  socials: Record<SocialKey, string>;
-  legalNote: string;
-  formalLine: string;
-  avatarUrl: string;
-}
-
-interface StyleConfig {
-  accentColor: string;
-  textColor: string;
-  backgroundColor: string;
-  fontFamily: string;
-  fontSize: FontSizeOption;
-  padding: MarginOption;
-  ctaRadius: CtaRadiusOption;
-  showDivider: boolean;
-}
-
 interface PanelButtonProps {
   id: ActivePanel;
   current: ActivePanel;
@@ -159,12 +122,11 @@ interface PanelButtonProps {
   onClick: (id: ActivePanel) => void;
 }
 
-interface ThemePreset {
-  id: string;
-  name: string;
-  accentColor: string;
-  textColor: string;
-}
+const SIGNATURE_LABELS = {
+  tel: ui.pl.labels.tel,
+  email: ui.pl.labels.email,
+  website: ui.pl.labels.website,
+} as const;
 
 const DEFAULT_SIGNATURE: SignatureConfig = {
   fullName: 'Jan Kowalski',
@@ -192,10 +154,17 @@ const DEFAULT_SIGNATURE: SignatureConfig = {
   avatarUrl: '',
 };
 
+const SIGNATURE_COLOR_DARK = rgbToHex({ r: 17, g: 24, b: 39 });
+const SIGNATURE_COLOR_WHITE = rgbToHex({ r: 255, g: 255, b: 255 });
+const SIGNATURE_COLOR_BLUE = rgbToHex({ r: 37, g: 99, b: 235 });
+const SIGNATURE_COLOR_PURPLE = rgbToHex({ r: 124, g: 58, b: 237 });
+const SIGNATURE_COLOR_GREEN = rgbToHex({ r: 22, g: 163, b: 74 });
+const SIGNATURE_COLOR_GRAY = rgbToHex({ r: 75, g: 85, b: 99 });
+
 const DEFAULT_STYLE: StyleConfig = {
-  accentColor: '#111827',
-  textColor: '#111827',
-  backgroundColor: '#ffffff',
+  accentColor: SIGNATURE_COLOR_DARK,
+  textColor: SIGNATURE_COLOR_DARK,
+  backgroundColor: SIGNATURE_COLOR_WHITE,
   fontFamily: 'Arial, sans-serif',
   fontSize: 'normal',
   padding: 'medium',
@@ -211,402 +180,38 @@ const FONT_OPTIONS = [
   { value: 'Georgia, serif', label: 'Georgia' },
 ];
 
-const FONT_SIZE_MAP: Record<FontSizeOption, string> = {
-  small: '12px',
-  normal: '13px',
-  large: '14px',
-};
-
-const PADDING_NUM_MAP: Record<MarginOption, number> = {
-  small: 8,
-  medium: 16,
-  large: 24,
-};
-
-const PADDING_MAP: Record<MarginOption, string> = {
-  small: '8px',
-  medium: '16px',
-  large: '24px',
-};
-
-const CTA_RADIUS_MAP: Record<CtaRadiusOption, string> = {
-  none: '0px',
-  small: '6px',
-  full: '999px',
-};
-
 const THEME_PRESETS: ThemePreset[] = [
   {
     id: 'classic-dark',
     name: ui.pl.themes.dark,
-    accentColor: '#111827',
-    textColor: '#111827',
+    accentColor: SIGNATURE_COLOR_DARK,
+    textColor: SIGNATURE_COLOR_DARK,
   },
   {
     id: 'modern-blue',
     name: ui.pl.themes.blue,
-    accentColor: '#2563eb',
-    textColor: '#111827',
+    accentColor: SIGNATURE_COLOR_BLUE,
+    textColor: SIGNATURE_COLOR_DARK,
   },
   {
     id: 'creative-purple',
     name: ui.pl.themes.purple,
-    accentColor: '#7c3aed',
-    textColor: '#111827',
+    accentColor: SIGNATURE_COLOR_PURPLE,
+    textColor: SIGNATURE_COLOR_DARK,
   },
   {
     id: 'eco-green',
     name: ui.pl.themes.green,
-    accentColor: '#16a34a',
-    textColor: '#111827',
+    accentColor: SIGNATURE_COLOR_GREEN,
+    textColor: SIGNATURE_COLOR_DARK,
   },
   {
     id: 'minimal',
     name: ui.pl.themes.gray,
-    accentColor: '#4b5563',
-    textColor: '#111827',
+    accentColor: SIGNATURE_COLOR_GRAY,
+    textColor: SIGNATURE_COLOR_DARK,
   },
 ];
-
-function escapeHtml(value: string): string {
-  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-}
-
-function formatMultiline(value: string): string {
-  return escapeHtml(value).replace(/\n/g, '<br />');
-}
-
-function sanitizeHrefUrl(url: string): string {
-  const trimmed = url.trim();
-  if (!trimmed) return '';
-
-  const lowered = trimmed.toLowerCase();
-  const forbiddenProtocols = ['javascript:', 'data:', 'vbscript:', 'file:'];
-
-  if (forbiddenProtocols.some((proto) => lowered.startsWith(proto))) {
-    return '';
-  }
-
-  if (/^https?:\/\//i.test(trimmed)) return trimmed;
-
-  return `https://${trimmed}`;
-}
-
-function sanitizeSrcUrl(url: string): string {
-  const trimmed = url.trim();
-  if (!trimmed) return '';
-
-  const lowered = trimmed.toLowerCase();
-  const forbiddenProtocols = ['javascript:', 'vbscript:', 'file:'];
-
-  if (forbiddenProtocols.some((proto) => lowered.startsWith(proto))) {
-    return '';
-  }
-
-  return trimmed;
-}
-
-function formatPhone(phone: string): string {
-  return phone.trim();
-}
-
-function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout: LayoutType): string {
-  const fontFamily = style.fontFamily || 'Arial, sans-serif';
-  const baseFontSize = FONT_SIZE_MAP[style.fontSize] || FONT_SIZE_MAP.normal;
-  const accentColor = style.accentColor || '#111827';
-  const textColor = style.textColor || '#111827';
-  const backgroundColor = style.backgroundColor || '#ffffff';
-
-  const paddingPx = PADDING_NUM_MAP[style.padding] ?? 16;
-  const paddingAll = PADDING_MAP[style.padding] ?? '16px';
-  const paddingLeftAccent = `${paddingPx + 8}px`;
-  const ctaBorderRadius = CTA_RADIUS_MAP[style.ctaRadius] ?? '999px';
-
-  const hasTopLine = config.topLine.trim().length > 0;
-  const hasAddress = config.address.trim().length > 0;
-  const hasExtraLine = config.extraLine.trim().length > 0;
-  const hasCompany = config.company.trim().length > 0;
-  const hasJobTitle = config.jobTitle.trim().length > 0;
-  const hasNameTag = config.nameTag.trim().length > 0;
-  const hasFormalLine = config.formalLine.trim().length > 0;
-  const sanitizedAvatarUrl = sanitizeSrcUrl(config.avatarUrl);
-  const hasAvatar = sanitizedAvatarUrl.length > 0;
-
-  const avatarSize = 56;
-  const avatarImg = hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" />` : '';
-  const avatarCellInline = hasAvatar ? `<td style="padding-right:12px;vertical-align:top;">${avatarImg}</td>` : '';
-
-  const t = ui.pl;
-  const telLabel = t.labels.tel;
-  const mailLabel = t.labels.email;
-  const webLabel = t.labels.website;
-
-  const contactItems: string[] = [];
-
-  if (config.phone.trim()) {
-    const phone = formatPhone(config.phone);
-    contactItems.push(
-      `<span style="margin-right:12px;white-space:nowrap;"><span style="font-weight:bold;">${telLabel}:</span> <a href="tel:${escapeHtml(
-        phone,
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(phone)}</a></span>`,
-    );
-  }
-  if (config.email.trim()) {
-    const email = config.email.trim();
-    contactItems.push(
-      `<span style="margin-right:12px;white-space:nowrap;"><span style="font-weight:bold;">${mailLabel}:</span> <a href="mailto:${escapeHtml(
-        email,
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(email)}</a></span>`,
-    );
-  }
-  if (config.website.trim()) {
-    const normalized = sanitizeHrefUrl(config.website);
-    if (normalized) {
-      contactItems.push(
-        `<span style="white-space:nowrap;"><span style="font-weight:bold;">${webLabel}:</span> <a href="${escapeHtml(
-          normalized,
-        )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></span>`,
-      );
-    }
-  }
-
-  const socials: { key: SocialKey; label: string }[] = [
-    { key: 'linkedin', label: 'LinkedIn' },
-    { key: 'instagram', label: 'Instagram' },
-    { key: 'facebook', label: 'Facebook' },
-    { key: 'tiktok', label: 'TikTok' },
-    { key: 'youtube', label: 'YouTube' },
-    { key: 'x', label: 'X' },
-  ];
-
-  const socialLinks = socials
-    .filter((s) => config.socials[s.key] && config.socials[s.key]?.trim().length)
-    .map((s) => {
-      const url = sanitizeHrefUrl(config.socials[s.key]);
-      if (!url) return '';
-      return `<a href="${escapeHtml(url)}" style="display:inline-block;margin-right:10px;margin-bottom:2px;color:${accentColor};text-decoration:none;font-size:${baseFontSize};">${s.label}</a>`;
-    })
-    .filter(Boolean);
-
-  const ctaHtml =
-    config.ctaLabel.trim() && config.ctaUrl.trim()
-      ? (() => {
-          const ctaUrl = sanitizeHrefUrl(config.ctaUrl);
-          if (!ctaUrl) return '';
-          return `<tr><td style="padding-top:10px;"><a href="${escapeHtml(
-            ctaUrl,
-          )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:#ffffff;text-decoration:none;font-size:${baseFontSize};">${escapeHtml(
-            config.ctaLabel.trim(),
-          )}</a></td></tr>`;
-        })()
-      : '';
-
-  const legalHtml = config.legalNote.trim() ? `<tr><td style="padding-top:12px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.legalNote.trim())}</td></tr>` : '';
-
-  const dividerHtml = style.showDivider ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:1px solid #e5e7eb;width:100%;"></div></td></tr>` : '';
-
-  const formalHtml = hasFormalLine ? `<tr><td style="padding-top:6px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.formalLine.trim())}</td></tr>` : '';
-
-  const topLineHtml = hasTopLine
-    ? `<tr><td style="padding:0 0 4px 0;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};">${escapeHtml(config.topLine.trim())}</td></tr>`
-    : '';
-
-  const nameRowHtml = `<tr><td style="padding:0 0 4px 0;"><span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(config.fullName || '')}</span>${
-    hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid #e5e7eb;font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''
-  }</td></tr>`;
-
-  const titleCompanyHtml =
-    hasJobTitle || hasCompany
-      ? `<tr><td style="padding:0 0 4px 0;"><span style="color:${textColor};">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${
-          hasJobTitle && hasCompany ? ' · ' : ''
-        }${hasCompany ? escapeHtml(config.company.trim()) : ''}</span></td></tr>`
-      : '';
-
-  const extraLineHtml = hasExtraLine ? `<tr><td style="padding:0 0 6px 0;color:${textColor};">${escapeHtml(config.extraLine.trim())}</td></tr>` : '';
-
-  const addressHtml = hasAddress ? `<tr><td style="padding:0 0 6px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(config.address.trim())}</td></tr>` : '';
-
-  const contactHtml = contactItems.length ? `<tr><td style="padding:4px 0 0 0;color:${textColor};">${contactItems.join('<span style="margin-right:4px;">&nbsp;</span>')}</td></tr>` : '';
-
-  const socialsHtml = socialLinks.length ? `<tr><td style="padding-top:8px;color:${textColor};">${socialLinks.join('')}</td></tr>` : '';
-
-  const headerBlock = `${topLineHtml}${nameRowHtml}${titleCompanyHtml}`;
-  const contentBlock = `${extraLineHtml}${addressHtml}${contactHtml}${socialsHtml}${ctaHtml}${dividerHtml}${formalHtml}${legalHtml}`;
-  const innerRows = `${headerBlock}${contentBlock}`;
-
-  let layoutWrapper = '';
-
-  if (layout === 'standard') {
-    layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-        <tr>
-          <td style="padding:${paddingAll};vertical-align:top;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              <tr>
-                ${avatarCellInline}
-                <td style="vertical-align:top;">
-                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-                    ${innerRows}
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    `;
-  } else if (layout === 'accent-bar') {
-    layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-        <tr>
-          <td style="padding:${paddingAll};border-left:4px solid ${accentColor};padding-left:${paddingLeftAccent};vertical-align:top;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              <tr>
-                ${avatarCellInline}
-                <td style="vertical-align:top;">
-                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-                    ${innerRows}
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    `;
-  } else if (layout === 'top-banner') {
-    const bannerTopLine = hasTopLine ? `<div style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;opacity:0.9;">${escapeHtml(config.topLine.trim())}</div>` : '';
-    const bannerName = `<div style="font-size:15px;font-weight:bold;margin-top:2px;">${escapeHtml(config.fullName || '')}</div>`;
-    const bannerTitleCompany =
-      hasJobTitle || hasCompany
-        ? `<div style="font-size:${baseFontSize};opacity:0.95;margin-top:2px;">${
-            hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''
-          }${hasJobTitle && hasCompany ? ' · ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>`
-        : '';
-    const bannerAvatar = hasAvatar
-      ? `<td style="text-align:right;vertical-align:middle;"><img src="${escapeHtml(
-          sanitizedAvatarUrl,
-        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;border:2px solid #ffffff;display:inline-block;" /></td>`
-      : '';
-
-    layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-        <tr>
-          <td style="padding:${paddingAll};vertical-align:top;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};width:100%;">
-              <tr>
-                <td style="padding:0 0 8px 0;">
-                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;">
-                    <tr>
-                      <td style="background-color:${accentColor};color:#ffffff;padding:8px 12px;">
-                        <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;">
-                          <tr>
-                            <td style="vertical-align:middle;">
-                              ${bannerTopLine}
-                              ${bannerName}
-                              ${bannerTitleCompany}
-                            </td>
-                            ${bannerAvatar}
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding-top:4px;">
-                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-                    ${contentBlock}
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    `;
-  } else if (layout === 'label-column') {
-    let labelRows = '';
-
-    if (config.phone.trim()) {
-      const phone = formatPhone(config.phone);
-      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${telLabel}:</td><td style="padding:2px 0 2px 0;"><a href="tel:${escapeHtml(
-        phone,
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(phone)}</a></td></tr>`;
-    }
-    if (config.email.trim()) {
-      const email = config.email.trim();
-      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${mailLabel}:</td><td style="padding:2px 0 2px 0;"><a href="mailto:${escapeHtml(
-        email,
-      )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(email)}</a></td></tr>`;
-    }
-    if (config.website.trim()) {
-      const normalized = sanitizeHrefUrl(config.website);
-      if (normalized) {
-        labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${webLabel}:</td><td style="padding:2px 0 2px 0;"><a href="${escapeHtml(
-          normalized,
-        )}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></td></tr>`;
-      }
-    }
-    if (hasAddress) {
-      labelRows += `<tr><td style="padding:2px 8px 2px 0;font-weight:bold;color:${textColor};white-space:nowrap;">${ui.pl.labels.address}:</td><td style="padding:2px 0 2px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(
-        config.address.trim(),
-      )}</td></tr>`;
-    }
-
-    const labelTableHtml = labelRows
-      ? `<tr><td style="padding:4px 0 4px 0;"><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};">${labelRows}</table></td></tr>`
-      : '';
-
-    layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-        <tr>
-          <td style="padding:${paddingAll};vertical-align:top;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              <tr>
-                ${avatarCellInline}
-                <td style="vertical-align:top;">
-                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-                    ${headerBlock}
-                    ${extraLineHtml}
-                    ${labelTableHtml}
-                    ${socialsHtml}
-                    ${ctaHtml}
-                    ${dividerHtml}
-                    ${formalHtml}
-                    ${legalHtml}
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    `;
-  } else if (layout === 'centered') {
-    const avatarRowCentered = hasAvatar
-      ? `<tr><td style="padding:0 0 8px 0;text-align:center;"><img src="${escapeHtml(
-          sanitizedAvatarUrl,
-        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:inline-block;" /></td></tr>`
-      : '';
-
-    layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-        <tr>
-          <td style="padding:${paddingAll};vertical-align:top;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};text-align:center;">
-              ${avatarRowCentered}
-              ${innerRows}
-            </table>
-          </td>
-        </tr>
-      </table>
-    `;
-  }
-
-  return layoutWrapper.replace(/\s{2,}/g, ' ').trim();
-}
 
 function PanelButton({ id, current, icon, label, onClick }: PanelButtonProps) {
   const isActive = id === current;
@@ -624,17 +229,16 @@ function PanelButton({ id, current, icon, label, onClick }: PanelButtonProps) {
 
 export default function EmailSignatureGenerator() {
   const t = ui.pl;
-  const { start: startCopyReset } = useTimeout();
   const [config, setConfig] = useState<SignatureConfig>(DEFAULT_SIGNATURE);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);
-  const [copyStatus, setCopyStatus] = useState<CopyStatus>('idle');
+  const { copyStatus, copyToGmail } = useSignatureCopy();
   const [activePanel, setActivePanel] = useState<ActivePanel>('identity');
   const [layout, setLayout] = useState<LayoutType>('standard');
   const [themeId, setThemeId] = useState<string>('classic-dark');
 
   const hasRequired = config.fullName.trim().length > 0 && config.email.trim().length > 0;
 
-  const signatureHtml = useMemo(() => buildSignatureHtml(config, styleConfig, layout), [config, styleConfig, layout]);
+  const signatureHtml = useMemo(() => buildSignatureHtml(config, styleConfig, layout, SIGNATURE_LABELS), [config, styleConfig, layout]);
 
   function handleTextChange<K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) {
     setConfig((prev) => ({
@@ -672,59 +276,15 @@ export default function EmailSignatureGenerator() {
   }
 
   function handleCopyToGmail() {
-    if (!signatureHtml) return;
-
-    try {
-      const temp = document.createElement('div');
-      temp.style.position = 'fixed';
-      temp.style.pointerEvents = 'none';
-      temp.style.opacity = '0';
-      temp.innerHTML = signatureHtml;
-      document.body.appendChild(temp);
-
-      const range = document.createRange();
-      range.selectNodeContents(temp);
-      const selection = window.getSelection();
-      selection?.removeAllRanges();
-      selection?.addRange(range);
-
-      const successful = document.execCommand('copy');
-
-      selection?.removeAllRanges();
-      document.body.removeChild(temp);
-
-      if (!successful) {
-        throw new Error('execCommand failed');
-      }
-
-      setCopyStatus('success');
-      startCopyReset(() => setCopyStatus('idle'), 3000);
-    } catch {
-      if (!navigator.clipboard?.writeText) {
-        setCopyStatus('error');
-        startCopyReset(() => setCopyStatus('idle'), 3000);
-        return;
-      }
-
-      navigator.clipboard
-        .writeText(signatureHtml)
-        .then(() => {
-          setCopyStatus('success');
-          startCopyReset(() => setCopyStatus('idle'), 3000);
-        })
-        .catch(() => {
-          setCopyStatus('error');
-          startCopyReset(() => setCopyStatus('idle'), 3000);
-        });
-    }
+    copyToGmail(signatureHtml);
   }
 
   return (
     <div className="space-y-4">
-      <section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-black/10 bg-white/80 p-4 shadow-sm">
+      <section className="tool-section flex flex-wrap items-center justify-between gap-3 p-4!">
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
-            <RiLayout3Line className="text-base text-neutral-600" />
+            <RiLayout3Line className="text-base text-slate-500" />
             <Eyebrow variant="dynamic" className="text-xs! font-semibold">
               {t.layoutLabel}
             </Eyebrow>
@@ -748,17 +308,13 @@ export default function EmailSignatureGenerator() {
             </div>
           </div>
         </div>
-        <Text variant="xs" tone="muted" as="p" className="text-xs!">
-          {t.moreLayoutsSoon}
-        </Text>
+        <p className="text-xs! text-light">{t.moreLayoutsSoon}</p>
       </section>
 
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
-        <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+        <section className="tool-section flex min-h-[620px] flex-col space-y-4">
           <div className="mb-2 flex items-center justify-between gap-2">
-            <Heading as="h2" className="h6">
-              {t.editorTitle}
-            </Heading>
+            <h2 className="h6">{t.editorTitle}</h2>
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -778,9 +334,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                      {t.identity.topLine}
-                    </Text>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.topLine}</span>
                   </label>
                   <input
                     type="text"
@@ -793,9 +347,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                      {t.identity.avatar}
-                    </Text>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.avatar}</span>
                   </label>
                   <input
                     type="url"
@@ -804,17 +356,13 @@ export default function EmailSignatureGenerator() {
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
                     placeholder={t.identity.avatarPlaceholder}
                   />
-                  <Text variant="xs" tone="muted" as="p" className="mt-1 text-xs!">
-                    {t.identity.avatarHelper}
-                  </Text>
+                  <p className="mt-1 text-xs! text-light">{t.identity.avatarHelper}</p>
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        {t.identity.fullName}
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.fullName}</span>
                     </label>
                     <input
                       type="text"
@@ -826,9 +374,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        {t.identity.nameTag}
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.nameTag}</span>
                     </label>
                     <input
                       type="text"
@@ -865,9 +411,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                      {t.identity.extraLine}
-                    </Text>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.extraLine}</span>
                   </label>
                   <input
                     type="text"
@@ -881,9 +425,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        {t.identity.email}
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.email}</span>
                     </label>
                     <input
                       type="email"
@@ -895,9 +437,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        {t.identity.phone}
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.phone}</span>
                     </label>
                     <input
                       type="tel"
@@ -911,9 +451,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                      {t.identity.website}
-                    </Text>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.website}</span>
                   </label>
                   <input
                     type="url"
@@ -926,9 +464,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                      {t.identity.address}
-                    </Text>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.address}</span>
                   </label>
                   <textarea
                     value={config.address}
@@ -941,9 +477,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                      {t.identity.formalLine}
-                    </Text>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.formalLine}</span>
                   </label>
                   <textarea
                     value={config.formalLine}
@@ -965,9 +499,7 @@ export default function EmailSignatureGenerator() {
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                          {t.cta.label}
-                        </Text>
+                        <span className="text-xs! font-semibold uppercase text-light">{t.cta.label}</span>
                       </label>
                       <input
                         type="text"
@@ -979,9 +511,7 @@ export default function EmailSignatureGenerator() {
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                          {t.cta.url}
-                        </Text>
+                        <span className="text-xs! font-semibold uppercase text-light">{t.cta.url}</span>
                       </label>
                       <input
                         type="url"
@@ -992,9 +522,7 @@ export default function EmailSignatureGenerator() {
                       />
                     </div>
                   </div>
-                  <Text variant="xs" tone="muted" as="p" className="mt-1 text-xs!">
-                    {t.cta.helper}
-                  </Text>
+                  <p className="mt-1 text-xs! text-light">{t.cta.helper}</p>
                 </div>
               </div>
             )}
@@ -1007,9 +535,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        LinkedIn
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">LinkedIn</span>
                     </label>
                     <input
                       type="url"
@@ -1021,9 +547,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        Instagram
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">Instagram</span>
                     </label>
                     <input
                       type="url"
@@ -1037,9 +561,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        Facebook
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">Facebook</span>
                     </label>
                     <input
                       type="url"
@@ -1051,9 +573,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        TikTok
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">TikTok</span>
                     </label>
                     <input
                       type="url"
@@ -1067,9 +587,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        YouTube
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">YouTube</span>
                     </label>
                     <input
                       type="url"
@@ -1081,9 +599,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <Text variant="xs" tone="muted" as="span" className="text-xs! font-semibold uppercase">
-                        X (Twitter)
-                      </Text>
+                      <span className="text-xs! font-semibold uppercase text-light">X (Twitter)</span>
                     </label>
                     <input
                       type="url"
@@ -1094,9 +610,7 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                 </div>
-                <Text variant="xs" tone="muted" as="p" className="text-xs!">
-                  {t.social.helper}
-                </Text>
+                <p className="text-xs! text-light">{t.social.helper}</p>
               </div>
             )}
 
@@ -1244,7 +758,7 @@ export default function EmailSignatureGenerator() {
                     onChange={(e) => handleStyleChange('showDivider', e.target.checked)}
                     className="h-4! w-4! rounded border-neutral-300"
                   />
-                  <label htmlFor="divider-toggle" className="text-sm! text-neutral-800">
+                  <label htmlFor="divider-toggle" className="text-sm! text-mid">
                     {t.appearance.showDivider}
                   </label>
                 </div>
@@ -1268,15 +782,11 @@ export default function EmailSignatureGenerator() {
           </div>
         </section>
 
-        <section className="flex min-h-[620px] flex-col space-y-4 rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm">
+        <section className="tool-section flex min-h-[620px] flex-col space-y-4">
           <div className="flex items-center justify-between gap-2">
             <div>
-              <Heading as="h2" className="h6">
-                {t.preview.title}
-              </Heading>
-              <Text variant="xs" tone="muted" as="p" className="text-xs!">
-                {t.preview.helper}
-              </Text>
+              <h2 className="h6">{t.preview.title}</h2>
+              <p className="text-xs! text-light">{t.preview.helper}</p>
             </div>
           </div>
 
@@ -1295,9 +805,7 @@ export default function EmailSignatureGenerator() {
           </div>
 
           {!hasRequired && (
-            <Text variant="xs" tone="muted" as="p" className="text-xs!">
-              {t.preview.requiredFields}
-            </Text>
+            <p className="text-xs! text-light">{t.preview.requiredFields}</p>
           )}
         </section>
       </div>

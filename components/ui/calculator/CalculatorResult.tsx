@@ -2,8 +2,6 @@
 
 import { includedPerPath } from '@/data/pl/calculator/includedPerPath';
 import Button from '../buttons/Button';
-import Heading from '../typography/Heading';
-import Text from '../typography/Text';
 
 interface CalculatorResultProps {
   title: string;
@@ -21,31 +19,21 @@ interface CalculatorResultProps {
 export default function CalculatorResult({ totalPrice, onReset, pathKey, title, disclaimer, inPrice, startAgain, from, to, currency }: CalculatorResultProps) {
   return (
     <div className="space-y-4">
-      <Heading as="h3" className="inline border-b-2 border-b-slate-400">
-        {title}
-      </Heading>
+      <h3 className="inline border-b-2 border-b-slate-400">{title}</h3>
       
       <div className="pt-8">
-        <Text as="p" variant="body" className="text-2xl font-medium">
-          {`${from} ${Math.round(totalPrice * 0.8)} ${to} ${Math.round(totalPrice * 1.2)} ${currency}`}
-        </Text>
+        <p className="text-2xl font-medium text-dark">{`${from} ${Math.round(totalPrice * 0.8)} ${to} ${Math.round(totalPrice * 1.2)} ${currency}`}</p>
       </div>
       
-      <Text variant="xs" tone="muted" as="span">
-        {disclaimer}
-      </Text>
+      <span className="text-xs text-light">{disclaimer}</span>
 
       {pathKey && (
         <div className="mt-6">
-          <Heading as="h4" className="mb-2">
-            {inPrice}
-          </Heading>
+          <h4 className="mb-2">{inPrice}</h4>
           <ul className="list-disc pl-6">
             {includedPerPath[pathKey].map((item, i) => (
               <li key={i}>
-                <Text variant="body" as="span">
-                  {item}
-                </Text>
+                <span className="text-base text-dark">{item}</span>
               </li>
             ))}
           </ul>

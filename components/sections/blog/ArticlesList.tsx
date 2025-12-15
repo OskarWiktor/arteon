@@ -1,12 +1,7 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
-import type { Article } from '@/types/article';
-import { getPrimaryCategorySlug } from '@/lib/blog';
+import { getAllArticles, getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
-import blogData from '@/data/pl/blog.json';
-import Text from '@/components/ui/typography/Text';
 
 const ui = {
   pl: {
@@ -19,11 +14,7 @@ const ui = {
   },
 } as const;
 
-interface BlogData {
-  articles: Article[];
-}
-
-const articles = (blogData as BlogData).articles;
+const articles = getAllArticles();
 
 export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
   const t = ui.pl;
@@ -46,14 +37,14 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
                 <h3 className="h6">{a.title}</h3>
                 <div className="mt-3 flex flex-wrap items-center gap-2">
                   {a.readingTime ? (
-                    <Text variant="small" tone="muted" as="span">
+                    <span className="text-sm text-light">
                       {a.readingTime} {t.readingTime}
-                    </Text>
+                    </span>
                   ) : null}
                   {a.datePublished ? (
-                    <Text variant="small" tone="muted" as="span" aria-label={t.publicationDate}>
+                    <span className="text-sm text-light" aria-label={t.publicationDate}>
                       • {a.datePublished}
-                    </Text>
+                    </span>
                   ) : null}
                 </div>
               </div>

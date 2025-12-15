@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
     description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',
-    url: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
+    url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
       },
     ],
   },
@@ -29,7 +29,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
   alternateName: 'Darmowe narzędzie do zmiany rozmiaru i kadrowania zdjęć online',
-  url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-zdjecia',
+  url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description:
@@ -62,7 +62,7 @@ export default function ImageResizerPage() {
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzie' }}
-        third={{ href: `/narzedzia/zmiana-rozmiaru-zdjecia`, label: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund' }}
+        third={{ href: `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`, label: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund' }}
         includeJsonLd
       />
 

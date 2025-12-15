@@ -24,17 +24,17 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **`inputColor`**: wartość w polu edycji (może różnić się od `baseColor`).
   - **`copiedHex`**: HEX ostatnio skopiowanego swatcha (do pokazania feedbacku „Skopiowano”).
 - **Walidacja/normalizacja koloru**:
-  - **[wymagany prefix `#`]** `normalizeHex()` akceptuje tylko kolory zaczynające się od `#`.
+  - **[wymagany prefix `#`]** `normalizeHex()` (`lib/tools/color/convert.ts`) akceptuje tylko kolory zaczynające się od `#`.
   - **[formaty]** wspierane są `#rgb` i `#rrggbb` (3 lub 6 znaków po `#`).
   - **[normalizacja]** kolor jest sprowadzany do `#rrggbb` i lower-case.
   - **[błędy]** brak poprawnego HEX skutkuje brakiem palet i komunikatem w UI (`ToolAlert`).
 - **Algorytm generowania palet**:
   - **[konwersje]**:
-    - HEX → RGB: `hexToRgb()`.
-    - RGB → HSL: `rgbToHsl()`.
-    - HSL → RGB → HEX: `hslToRgb()` + `rgbToHex()`.
+    - HEX → RGB: `hexToRgb()` (`lib/tools/color/convert.ts`).
+    - RGB → HSL: `rgbToHsl()` (`lib/tools/color/convert.ts`).
+    - HSL → RGB → HEX: `hslToRgb()` + `rgbToHex()` (`lib/tools/color/convert.ts`).
   - **[clamp]** wszystkie wartości HSL są ograniczane do sensownych zakresów (`clamp()`), a hue jest „zawijany” w 0–360.
-  - **[grupy palet]** `createPaletteFromHex()` zwraca tablicę `PaletteGroup`, gdzie każda grupa ma:
+  - **[grupy palet]** `createPaletteFromHex()` (`lib/tools/color/palette.ts`) zwraca tablicę `PaletteGroup`, gdzie każda grupa ma:
     - **`label`** i **`description`** (tekst edukacyjny w UI).
     - **`colors[]`**: lista 5 kolorów (HEX + HSL).
   - **[monochromatic]** ten sam hue i saturation, zmienne lightness (`l -25`, `-12`, `0`, `+12`, `+24`).
@@ -50,12 +50,50 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[CopyButton]** każdy swatch ma przycisk kopiowania HEX.
   - **[feedback]** po kopii ustawiany jest `copiedHex`, a następnie resetowany po 1200ms przez `useTimeout()`.
 - **Zależności**:
-  - **UI**: `ToolSection`, `ToolInfo`, `ToolHelper`, `ToolAlert`, `CopyButton`, `Button`, `Text`.
+  - **UI**: `ToolSection`, `ToolInfo`, `ToolHelper`, `ToolAlert`, `CopyButton`, `Button`.
+  - **Lib**: `lib/tools/color/convert.ts`, `lib/tools/color/palette.ts`.
   - **Hook**: `useTimeout` (reset stanu „copied”).
 - **Side effecty**:
   - **[timeout]** jedyny efekt uboczny to timer resetujący `copiedHex`.
 
 ---
+
+## `PaletteExtractor` (`components/sections/tools/PaletteExtractor/PaletteExtractor.tsx`)
+
+- **Co robi**: Wyciąga dominujące kolory z obrazu/logo i prezentuje je jako paletę swatchy z kodami HEX (do kopiowania).
+- **Strona narzędzia**: `/narzedzia/generator-palety-kolorow-z-obrazu` (`app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`)
+- **Wejście (UI)**:
+  - **[upload]** `ImageDropzone` (drag&drop lub wybór pliku).
+  - **[formaty]** akceptowane MIME:
+    - `image/png`,
+    - `image/jpeg`, `image/jpg`,
+    - `image/svg+xml` (best-effort; parser zależy od przeglądarki).
+  - **[akcje]**:
+    - `Kopiuj paletę` (wszystkie HEX w osobnych liniach),
+    - `Wyczyść` (czyści stan i zwalnia ObjectURL).
+- **Stan i dane**:
+  - `file`: wybrany plik obrazu,
+  - `previewUrl`: `ObjectURL` używany do podglądu i analizy,
+  - `colors`: `ExtractedColor[]` (lista `{ hex, rgb, count }`),
+  - `status`: `idle | processing | done | error`,
+  - `error`: komunikat błędu dla upload/analizy.
+- **Pipeline ekstrakcji**:
+  - **[ObjectURL]** po wyborze pliku tworzony jest `URL.createObjectURL(file)`.
+  - **[downscale]** obraz jest skalowany do małej siatki (domyślnie max ~240px) przez `getDownscaledImageDataFromUrl()` (`lib/tools/image/canvas.ts`).
+  - **[extract]** paleta liczona jest przez `extractPalette(imageData)` (`lib/tools/color/extractPalette.ts`): bucketing + sort po częstotliwości + filtr podobieństwa.
+- **Algorytm** (`extractPalette`):
+  - ignoruje piksele przezroczyste (alpha < `32`),
+  - kwantyzuje kanały (bucket size `16`),
+  - wybiera do `12` kolorów,
+  - odrzuca kolory zbyt podobne (RGB distance < `40`).
+- **Prezentacja wyników**:
+  - `PaletteSwatches` renderuje listę swatchy (kolor + HEX + RGB) i przyciski `CopyButton`.
+- **Cleanup**:
+  - przy `Wyczyść` oraz przy unmount komponentu zwalniany jest `previewUrl` przez `revokeObjectUrl()` (`lib/tools/objectUrl.ts`).
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolInfo`, `ToolAlert`, `Button`, `Badge`, `CopyButton`.
+  - **Lib**: `lib/tools/image/canvas.ts`, `lib/tools/color/extractPalette.ts`, `lib/tools/objectUrl.ts`, `lib/tools/formatBytes.ts`.
+  - **Side effecty**: `canvas` (`getImageData`) + `ObjectURL` + clipboard (przez `CopyButton`).
 
 ## `MetaTitleDescriptionTool` (`components/sections/tools/MetaTitleDescriptionTool.tsx`)
 
@@ -70,13 +108,14 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[URL]** opcjonalny adres URL używany wyłącznie w podglądzie.
   - **[title]** pole tekstowe z limitem `maxLength={180}`.
   - **[description]** textarea z limitem `maxLength={400}`.
-- **Pomiar szerokości tekstu (px)**:
-  - **[canvas]** `measureTextWidth()` tworzy (raz) `HTMLCanvasElement` i używa `CanvasRenderingContext2D.measureText()`.
+ - **Pomiar szerokości tekstu (px)**:
+  - **[canvas]** pomiar jest wykonywany w `lib/tools/seo/metaLength.ts` (wewnętrznie przez `CanvasRenderingContext2D.measureText()`).
   - **[fonts]** używa zdefiniowanych fontów:
     - title: `400 20px system-ui, ...`
     - description: `300 15px system-ui, ...`
   - **[fallback SSR]** gdy `document` nie istnieje (np. SSR), szerokość jest aproksymowana: `text.length * fallbackAvgPx`.
-- **Heurystyki oceny długości**:
+  - **[shared util]** eksportuje: `analyzeMetaTitle()` + `analyzeMetaDescription()`.
+ - **Heurystyki oceny długości**:
   - **[title]**:
     - `too-short`, gdy **< 35 znaków** lub **< 350px**.
     - `too-long`, gdy **> 65 znaków** lub **> 580px**.
@@ -85,15 +124,16 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - `too-short`, gdy **< 100 znaków** lub **< 430px**.
     - `too-long`, gdy **> 165 znaków** lub **> 920px**.
     - `ideal` w pozostałych przypadkach.
-- **Podgląd snippet-u**:
-  - **[truncation]** `truncateForPreview()` ucina tekst do:
+ - **Podgląd snippet-u**:
+  - **[truncation]** `truncateForPreview()` (`lib/tools/seo/metaLength.ts`) ucina tekst do:
     - title: 65 znaków,
     - description: 165 znaków,
     - dodając znak `…`.
   - **[default tekst]** gdy pola są puste, używa przykładowych wartości z `ui.pl`.
-- **Zależności**:
-  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`, `Heading`.
-- **Side effecty**:
+ - **Zależności**:
+  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`.
+  - **Lib**: `lib/tools/seo/metaLength.ts`.
+ - **Side effecty**:
   - **[brak]** narzędzie nie zapisuje danych poza stanem komponentu.
 
 ---
@@ -121,11 +161,11 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - alpha w `rgba()` jest parsowana przez regex, ale nie wpływa na obliczenia (wykorzystywane są tylko kanały R/G/B).
     - brak wsparcia dla nazw kolorów (`red`) i HSL.
 - **Algorytm kontrastu**:
-  - **[parsing]** `parseColor()` zwraca `{ r, g, b }` lub `null`.
-  - **[luminance]** `relativeLuminance()` liczy luminancję względną wg WCAG:
-    - najpierw `channelToLinear()` przekształca kanały sRGB,
-    - potem sumuje ważone składowe `0.2126*R + 0.7152*G + 0.0722*B`.
-  - **[ratio]** `getContrastRatio()`:
+  - **[parsing]** `parseColor()` (`lib/tools/color/contrast.ts`) zwraca `{ r, g, b }` lub `null`.
+    - **HEX**: `hexToRgb()` (`lib/tools/color/convert.ts`).
+    - **RGB(A)**: parsowany przez regex; alpha jest ignorowana.
+  - **[luminance]** `relativeLuminance()` (`lib/tools/color/contrast.ts`) liczy luminancję względną wg WCAG.
+  - **[ratio]** `getContrastRatio()` (`lib/tools/color/contrast.ts`):
     - `ratio = (lighter + 0.05) / (darker + 0.05)`,
     - wynik jest zaokrąglany do 2 miejsc.
 - **Progi WCAG (z kodu)**:
@@ -142,8 +182,9 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[badge]** `ResultBadge` renderuje `Badge` z wariantem `success` lub `error`.
   - **[błąd]** gdy parsing się nie uda, `ratio === null` i UI pokazuje komunikat z poprawnymi formatami.
 - **Zależności**:
-  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`, `ToolInfo`, `Badge`, `Text`.
+  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`, `ToolInfo`, `Badge`.
   - **Ikony**: `react-icons/ri`.
+  - **Lib**: `lib/tools/color/contrast.ts` (oraz pośrednio `lib/tools/color/convert.ts`).
 - **Side effecty**:
   - **[brak]** brak zapisów lub integracji z zewnętrznymi API.
 
@@ -173,30 +214,26 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - `transparentBackground`: czy wynik ma mieć przezroczyste tło.
     - `backgroundColor`: kolor tła, używany gdy `transparentBackground === false`.
   - **[auto-download]** `autoDownload`: automatycznie pobiera każdy plik zaraz po wygenerowaniu.
-- **Algorytm generowania PNG** (`createPngFromImage()`):
-  - **[canvas]** tworzy `canvas` o wymiarach `size × size`.
-  - **[tło]**:
-    - gdy `transparentBackground === false`: wypełnia canvas `backgroundColor`.
-    - gdy `true`: czyści canvas.
-  - **[skalowanie]** skaluje obraz z zachowaniem proporcji:
-    - `ratio = min(size / naturalWidth, size / naturalHeight)`.
-    - wynik jest wycentrowany (`dx`, `dy`).
-  - **[render]** `ctx.imageSmoothingQuality = 'high'` i `ctx.drawImage(...)`.
-  - **[export]** `canvas.toBlob(..., 'image/png')`.
-- **Algorytm generowania ICO** (`createIcoFromPng()`):
-  - **[źródło]** tworzy PNG 32×32 (taki sam pipeline jak wyżej).
-  - **[kontener ICO]** buduje minimalny binarny format `.ico`:
-    - nagłówek (6 bajtów),
-    - pojedynczy wpis (16 bajtów),
-    - zawartość: bytes PNG wklejone jako „image data”.
-  - **[mime]** wynikowy blob ma `type: 'image/x-icon'`.
+- **Algorytm generowania** (`lib/tools/favicon/generator.ts`):
+  - **[core]** `generateFaviconOutputs()`:
+    - generuje PNG dla każdego `size` w `pngSizes`,
+    - opcjonalnie generuje `favicon.ico` jako kontener ICO na bazie PNG 32×32,
+    - tworzy `URL.createObjectURL(blob)` i zwraca `FaviconOutputFile[]`.
+  - **[nazwy plików]** `suggestFaviconFileName()` mapuje:
+    - `180` → `apple-touch-icon.png`,
+    - `192` → `android-chrome-192x192.png`,
+    - `512` → `android-chrome-512x512.png`,
+    - inne → `favicon-${size}x${size}.png`,
+    - ICO → `favicon.ico`.
+  - **[tło + scaling]** canvas jest wypełniany kolorem (`backgroundColor`) albo czyszczony (transparent), a obraz jest skalowany z zachowaniem proporcji i centrowany.
+  - **[mime]** PNG mają `image/png`, a ICO `image/x-icon`.
 - **Zarządzanie wynikami**:
-  - **[outputs]** stan `outputs: OutputFile[]` przechowuje:
+  - **[outputs]** stan `outputs: FaviconOutputFile[]` przechowuje:
     - `sizeBytes`, `url` (ObjectURL), `fileName`, `label`, `type`.
   - **[download]**:
     - pojedyncze pobranie: link `<a download>`.
     - `Pobierz wszystkie`: iteruje po `outputs`.
-    - `autoDownload`: pobiera w trakcie generowania (dla każdego pliku osobno).
+    - `autoDownload`: przy generowaniu (callback `onOutput`) pobiera każdy plik osobno.
   - **[preview]** miniatury otwierają podgląd w nowej karcie (`window.open(url, '_blank')`).
 - **Cleanup**:
   - **[revoke outputs]** przed wygenerowaniem nowego zestawu i przy `Clear` wywoływane jest `URL.revokeObjectURL()` dla wszystkich outputów.
@@ -207,10 +244,9 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - brak pliku → błąd „Najpierw dodaj obraz bazowy…”.
     - brak wybranych rozmiarów i wyłączone ICO → błąd „Zaznacz przynajmniej jeden rozmiar…”.
   - **[runtime]** osobne komunikaty dla braku `canvas`, błędu ładowania obrazu i problemów z generacją blob.
-- **Istotna uwaga (stan obecny kodu)**:
-  - **[nazwy plików vs format]** generator tworzy **pliki PNG**, ale `suggestFileName()` zwraca nazwy z rozszerzeniem `.webp` dla rekomendowanych rozmiarów (`apple-touch-icon.webp`, `android-chrome-*.webp`). Zawartość pozostaje PNG (mime `image/png`).
 - **Zależności**:
-  - **UI**: `ToolSection`, `ToolInfo`, `ToolAlert`, `Button`, `Badge`, `Heading`, `Eyebrow`, `Text`.
+  - **UI**: `ToolSection`, `ToolInfo`, `ToolAlert`, `Button`, `Badge`, `Eyebrow`.
+  - **Lib**: `lib/tools/favicon/generator.ts`, `lib/tools/loadImage`, `lib/tools/download`, `lib/tools/objectUrl`.
 - **Side effecty**:
   - **[ObjectURL]** tworzenie i zwalnianie `URL.createObjectURL`.
   - **[download]** generowanie i klikanie tymczasowych linków `<a>`.
@@ -224,6 +260,12 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - pokazuje status dla każdego pliku,
   - umożliwia auto-download i pobieranie zbiorcze,
   - generuje raport oszczędności i kopiuje go do schowka.
+- **Architektura**:
+  - logika jest rozbita na hooki w `components/sections/tools/JpgPngToWebp/*`:
+    - `useWebpQueue` (kolejka + upload + preview + cleanup `ObjectURL`),
+    - `useWebpConversion` (konwersja + statusy + smart-quality + auto-download),
+    - `useWebpDownloads` (download all/single + oznaczanie `downloaded`),
+    - `useWebpReportCopy` (budowa + kopiowanie raportu).
 - **Wejście (UI)**:
   - **[upload]** drag&drop lub file picker (`multiple`).
   - **[formaty]** akceptuje wyłącznie MIME:
@@ -238,18 +280,13 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - `outputSize`, `ratio`, `usedQuality`, `downloaded`.
   - **[kolejność]** konwersja jest wykonywana sekwencyjnie (pętla `for...of`).
 - **Konwersja do WebP**:
-  - **[pipeline]** `convertToWebp()`:
-    - `FileReader.readAsDataURL(file)`,
-    - `Image` ładowany z DataURL,
-    - `canvas` o wymiarach `naturalWidth × naturalHeight`,
-    - `canvas.toBlob(..., 'image/webp', quality/100)`.
-  - **[smart quality]** `convertToWebpSmart()`:
+  - **[smart quality]** `convertImageFileToWebpSmart()` (`lib/tools/image/webp.ts`):
     - startuje od `initialQuality` (UI: domyślnie 80%),
     - jeżeli wynikowy blob jest większy od oryginału, obniża jakość co `5` punktów,
     - minimalna jakość to `60`,
-    - zwraca blob + faktycznie użyty `usedQuality`.
+    - zwraca `{ blob, usedQuality }` (zapisywane per plik w kolejce).
 - **Pobieranie**:
-  - **[download helper]** `triggerDownloadFromUrl(url, filename)` – jedna funkcja do pobierania (tworzy `<a download>` i klika).
+  - **[download helper]** `triggerDownloadFromUrl(url, filename)` – jedna funkcja do pobierania (deleguje do `downloadFromUrl()`; tworzy `<a download>` i klika).
   - **[download all]** pobiera wszystkie pliki `done` z krótką przerwą `sleep(150)`, aby ograniczyć „zatykanie” przeglądarki.
   - **[auto-download]** przy włączonej opcji `autoDownload` pobiera plik zaraz po konwersji i oznacza go jako `downloaded`.
   - **[reconvert]** resetuje element do `pending` i usuwa poprzedni `downloadUrl`.
@@ -262,8 +299,10 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[clipboard]** kopiuje raport przez `useCopyToClipboard()`.
   - **[komunikaty]** UI pokazuje `copyInfo` (np. „Raport skopiowany…”).
 - **Zależności**:
-  - **UI**: `ToolSection`, `ToolAlert`, `Button`, `Badge`, `Heading`, `Text`.
-  - **Hook**: `useCopyToClipboard`.
+  - **UI**: `ToolSection`, `ToolAlert`, `Button`, `Badge`.
+  - **Hook**: `useCopyToClipboard` (kopiowanie raportu).
+  - **Tool hooki**: `useWebpQueue`, `useWebpConversion`, `useWebpDownloads`, `useWebpReportCopy`.
+  - **Lib**: `lib/tools/image/webp`, `lib/tools/image/webpQueue`, `lib/tools/image/webpReport`, `lib/tools/objectUrl`, `lib/tools/download`, `lib/tools/sleep`.
 - **Side effecty**:
   - **[FileReader]** odczyt plików po stronie klienta.
   - **[ObjectURL]** tworzenie i zwalnianie `previewUrl` i `downloadUrl`.
@@ -278,6 +317,12 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - pozwala ustawić kształt kadru (prostokąt/kwadrat/koło),
   - posiada interaktywny kadr (przesuwanie i skalowanie uchwytami),
   - eksportuje wynik do JPG/PNG/WebP z kontrolą jakości.
+- **Architektura**:
+  - logika jest rozbita na moduły w `components/sections/tools/ImageResizeTool/*`:
+    - `types` (wspólne typy),
+    - `cropMath` (crop rect + grid stroke),
+    - `useCropDrag` (pointer events + drag),
+    - `exportCroppedImage` (canvas render + download).
 - **Wejście (UI)**:
   - **[upload]** drag&drop lub wybór pliku (`accept="image/*"`).
   - **[wczytanie wymiarów]** po załadowaniu obrazka odczytywane są `img.width` i `img.height`.
@@ -308,7 +353,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[preset]** wybór gotowego formatu (social/web) ustawia wymiary docelowe, resetuje kadr i wymusza `shape: 'rect'`.
 - **Presety** (`getImagePresets()`):
   - **Social media**: m.in. IG 1080×1080, 1080×1350, 1080×1920; FB 1200×630 i cover 820×360; LI 1200×1200 i banner 1584×396.
-  - **WWW**: miniatura 800×600; hero 1920×1080; tło 1920×1280.
+  - **WWW**: OG image 1200×630; grafika do artykułu 1600×900; baner strony 1920×600; miniatura 800×600; hero 1920×1080; tło 1920×1280.
 - **Model kadrowania (matematyka)**:
   - **[getCropRect]** wylicza prostokąt kadru w przestrzeni oryginalnego obrazu:
     - wyznacza maksymalny kadr o docelowych proporcjach, który mieści się w oryginale,
@@ -352,7 +397,8 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Cleanup zasobów**:
   - **[revoke imageUrl]** przy zmianie pliku oraz przy unmount komponentu.
 - **Zależności**:
-  - **UI**: `ToolAlert`, `Button`, `Badge`, `Heading`, `Text`.
+  - **UI**: `ToolAlert`, `Button`, `Badge`.
+  - **Tool moduły**: `types`, `cropMath`, `useCropDrag`, `exportCroppedImage`.
   - **Ikony**: `react-icons/md`, `react-icons/ri`.
 - **Side effecty**:
   - **[ObjectURL]** tworzenie i zwalnianie podglądu.
@@ -363,6 +409,12 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 ## `EmailSignatureGenerator` (`components/sections/tools/EmailSignatureGenerator.tsx`)
 
 - **Co robi**: Edytor stopki e-mail (podpisu) generujący HTML kompatybilny z klientami pocztowymi (tabela-based layout) + podgląd + kopiowanie.
+- **Architektura**:
+  - logika jest rozbita na moduły w `components/sections/tools/EmailSignatureGenerator/*`:
+    - `types` (wspólne typy),
+    - `sanitize` (escape + whitelist protokołów dla URL),
+    - `buildSignatureHtml` (generowanie HTML),
+    - `useSignatureCopy` (kopiowanie + status + fallback).
 - **Układy (layout presets)**:
   - **`standard`**: klasyczny układ (opcjonalny avatar po lewej + treść po prawej).
   - **`accent-bar`**: wariant z pionowym paskiem akcentu po lewej.
@@ -401,13 +453,15 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Kopiowanie stopki**:
   - **[preferowane]** `document.execCommand('copy')` na zaznaczeniu tymczasowego elementu DOM – kopiuje jako rich HTML (praktyczne dla Gmail/Outlook).
   - **[fallback]** `navigator.clipboard.writeText(signatureHtml)` – kopiuje HTML jako tekst.
-  - **[status]** `copyStatus: idle/success/error` z resetem po 3000ms (`useTimeout`).
+  - **[status]** `copyStatus: idle/success/error` z resetem po 3000ms (`useSignatureCopy` korzysta z `useTimeout`).
   - **[wymagane pola]** kopiowanie jest zablokowane bez `fullName` i `email`.
 - **Motywy (theme presets)**:
   - **[THEME_PRESETS]** gotowe zestawy zmieniające `accentColor` i `textColor`.
 - **Zależności**:
-  - **UI**: `Button`, `Badge`, `Heading`, `Eyebrow`, `Text`.
-  - **Hook**: `useTimeout`.
+  - **UI**: `Button`, `Badge`, `Eyebrow`.
+  - **Tool moduły**: `buildSignatureHtml`, `sanitize`, `types`.
+  - **Tool hook**: `useSignatureCopy`.
+  - **Hook**: `useTimeout` (używany wewnątrz `useSignatureCopy`).
   - **Ikony**: `react-icons/ri`.
 - **Side effecty**:
   - **[clipboard]** zapis do schowka (execCommand / navigator.clipboard).

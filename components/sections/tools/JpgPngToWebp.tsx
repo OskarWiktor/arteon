@@ -1,13 +1,17 @@
 ﻿'use client';
 
 import Button from '@/components/ui/buttons/Button';
-import { useMemo, useState, type DragEvent, type FormEvent } from 'react';
+import { useMemo, useState } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
-import Text from '@/components/ui/typography/Text';
 import Badge from '@/components/ui/Badge';
-import Heading from '@/components/ui/typography/Heading';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { downloadFromUrl } from '@/lib/tools/download';
+import { formatBytes } from '@/lib/tools/formatBytes';
+import { useWebpQueue } from '@/components/sections/tools/JpgPngToWebp/useWebpQueue';
+import { useWebpConversion } from '@/components/sections/tools/JpgPngToWebp/useWebpConversion';
+import { useWebpDownloads } from '@/components/sections/tools/JpgPngToWebp/useWebpDownloads';
+import { useWebpReportCopy } from '@/components/sections/tools/JpgPngToWebp/useWebpReportCopy';
 
 const ui = {
   pl: {
@@ -78,385 +82,78 @@ const ui = {
   },
 } as const;
 
-type FileStatus = 'pending' | 'processing' | 'done' | 'error';
-
-interface FileItem {
-  id: string;
-  file: File;
-  inputSize: number;
-  outputSize?: number;
-  ratio?: number;
-  status: FileStatus;
-  error?: string;
-  downloadUrl?: string;
-  previewUrl?: string;
-  downloaded?: boolean;
-  usedQuality?: number;
-}
-
-function formatBytes(bytes: number): string {
-  if (bytes === 0) return '0 B';
-  const units = ['B', 'KB', 'MB', 'GB'];
-  const i = Math.floor(Math.log(bytes) / Math.log(1024));
-  const value = bytes / Math.pow(1024, i);
-  return `${value.toFixed(value > 10 ? 1 : 2)} ${units[i]}`;
-}
-
-function convertToWebp(file: File, quality: number): Promise<Blob> {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-
-    reader.onerror = () => {
-      reject(new Error(ui.pl.fileLoadError));
-    };
-
-    reader.onload = () => {
-      const img = new Image();
-
-      img.onerror = () => {
-        reject(new Error(ui.pl.imageLoadError));
-      };
-
-      img.onload = () => {
-        const canvas = document.createElement('canvas');
-        canvas.width = img.naturalWidth;
-        canvas.height = img.naturalHeight;
-
-        const ctx = canvas.getContext('2d');
-        if (!ctx) {
-          reject(new Error(ui.pl.canvasNotSupported));
-          return;
-        }
-
-        ctx.drawImage(img, 0, 0);
-
-        canvas.toBlob(
-          (blob) => {
-            if (!blob) {
-              reject(new Error(ui.pl.webpGenerationError));
-              return;
-            }
-            resolve(blob);
-          },
-          'image/webp',
-          quality / 100,
-        );
-      };
-
-      img.src = reader.result as string;
-    };
-
-    reader.readAsDataURL(file);
-  });
-}
-
-async function convertToWebpSmart(item: FileItem, initialQuality: number, minQuality = 60, step = 5): Promise<{ blob: Blob; usedQuality: number }> {
-  let q = initialQuality;
-  const originalSize = item.inputSize;
-  let lastBlob: Blob | null = null;
-  let usedQuality = initialQuality;
-
-  while (q >= minQuality) {
-    const blob = await convertToWebp(item.file, q);
-    lastBlob = blob;
-    usedQuality = q;
-
-    // jeśli plik jest mniejszy lub równy oryginałowi - przyjmujemy tę jakość
-    if (blob.size <= originalSize || q === minQuality) {
-      break;
-    }
-
-    // inaczej schodzimy z jakością i próbujemy dalej
-    q -= step;
-  }
-
-  if (!lastBlob) {
-    throw new Error(ui.pl.webpGenerationError);
-  }
-
-  return { blob: lastBlob, usedQuality };
-}
-
 // helper do faktycznego pobierania (jedno źródło prawdy)
 function triggerDownloadFromUrl(url: string, filename: string) {
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
-
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  downloadFromUrl(url, filename);
 }
 
 export default function JpgPngToWebp() {
   const t = ui.pl;
 
   const { copy } = useCopyToClipboard();
-  const [files, setFiles] = useState<FileItem[]>([]);
-  const [isConverting, setIsConverting] = useState(false);
-  const [globalError, setGlobalError] = useState<string | null>(null);
   const [quality, setQuality] = useState(80); // domyślna jakość 80%
   const [autoDownload, setAutoDownload] = useState(false);
-  const [copyInfo, setCopyInfo] = useState<string | null>(null);
+  const {
+    files,
+    setFiles,
+    globalError,
+    setGlobalError,
+    handleFileChange,
+    handleDrop,
+    handleDragOver,
+    removeFile,
+    reconvertFile,
+    clearAll,
+    previewFile,
+  } = useWebpQueue({ addJpgPngOnlyError: t.addJpgPngOnly });
 
-  function addFiles(list: FileList | null) {
-    if (!list?.length) return;
-    setGlobalError(null);
+  const { copyInfo, setCopyInfo, handleCopySummary } = useWebpReportCopy({
+    files,
+    copy,
+    labels: {
+      clipboardNotSupported: t.clipboardNotSupported,
+      noCompletedConversions: t.noCompletedConversions,
+      reportCopied: t.reportCopied,
+      reportCopyError: t.reportCopyError,
+      conversionReport: t.conversionReport,
+      fileCount: t.fileCount,
+      totalSizeBefore: t.totalSizeBefore,
+      totalSizeAfter: t.totalSizeAfter,
+      savedWeight: t.savedWeight,
+      weightDifference: t.weightDifference,
+      less: t.less,
+      more: t.more,
+    },
+  });
 
-    const selected = Array.from(list);
-    setFiles((prev) => {
-      const existingKeys = new Set(prev.map((f) => `${f.file.name}-${f.file.size}`));
+  const { isConverting, handleSubmit } = useWebpConversion({
+    files,
+    setFiles,
+    quality,
+    autoDownload,
+    setGlobalError,
+    setCopyInfo,
+    triggerDownloadFromUrl,
+    labels: {
+      addAtLeastOne: t.addAtLeastOne,
+      allProcessed: t.allProcessed,
+      conversionError: t.conversionError,
+      fileLoadError: t.fileLoadError,
+      imageLoadError: t.imageLoadError,
+      canvasNotSupported: t.canvasNotSupported,
+      webpGenerationError: t.webpGenerationError,
+    },
+  });
 
-      const newItems: FileItem[] = selected
-        .filter((file) => {
-          if (!['image/jpeg', 'image/png'].includes(file.type)) return false;
-          const key = `${file.name}-${file.size}`;
-          if (existingKeys.has(key)) return false;
-          existingKeys.add(key);
-          return true;
-        })
-        .map((file, index) => {
-          const previewUrl = URL.createObjectURL(file);
-          return {
-            id: `${Date.now()}-${index}-${file.name}`,
-            file,
-            inputSize: file.size,
-            status: 'pending' as FileStatus,
-            previewUrl,
-            downloaded: false,
-          };
-        });
-
-      if (!newItems.length && !prev.length) {
-        setGlobalError(t.addJpgPngOnly);
-      }
-
-      return [...prev, ...newItems];
-    });
-  }
-
-  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
-    addFiles(e.target.files);
-    e.target.value = '';
-  }
-
-  function handleDrop(e: DragEvent<HTMLLabelElement>) {
-    e.preventDefault();
-    e.stopPropagation();
-    addFiles(e.dataTransfer.files);
-  }
-
-  function handleDragOver(e: DragEvent<HTMLLabelElement>) {
-    e.preventDefault();
-    e.stopPropagation();
-  }
-
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    setGlobalError(null);
-    setCopyInfo(null);
-
-    if (!files.length) {
-      setGlobalError(t.addAtLeastOne);
-      return;
-    }
-
-    const toProcess = files.filter((f) => f.status === 'pending' || f.status === 'error');
-    if (!toProcess.length) {
-      setGlobalError(t.allProcessed);
-      return;
-    }
-
-    setIsConverting(true);
-    try {
-      for (const item of toProcess) {
-        setFiles((prev) =>
-          prev.map((f) =>
-            f.id === item.id
-              ? {
-                  ...f,
-                  status: 'processing',
-                  error: undefined,
-                  downloaded: autoDownload ? false : f.downloaded,
-                }
-              : f,
-          ),
-        );
-
-        try {
-          const { blob: webpBlob, usedQuality } = await convertToWebpSmart(item, quality, 60, 5);
-
-          const url = URL.createObjectURL(webpBlob);
-          const outputSize = webpBlob.size;
-          const ratio = outputSize / item.inputSize;
-          const filename = item.file.name.replace(/\.[^.]+$/, '.webp');
-
-          setFiles((prev) =>
-            prev.map((f) =>
-              f.id === item.id
-                ? {
-                    ...f,
-                    status: 'done',
-                    downloadUrl: url,
-                    outputSize,
-                    ratio,
-                    usedQuality,
-                    downloaded: autoDownload ? true : f.downloaded,
-                  }
-                : f,
-            ),
-          );
-
-          if (autoDownload) {
-            triggerDownloadFromUrl(url, filename);
-          }
-        } catch (err) {
-          console.error(err);
-          setFiles((prev) =>
-            prev.map((f) =>
-              f.id === item.id
-                ? {
-                    ...f,
-                    status: 'error',
-                    error: err instanceof Error ? err.message : t.conversionError,
-                  }
-                : f,
-            ),
-          );
-        }
-      }
-    } finally {
-      setIsConverting(false);
-    }
-  }
-
-  async function handleDownloadAll() {
-    const ready = files.filter((f) => f.status === 'done' && f.downloadUrl);
-    if (!ready.length) return;
-
-    for (const item of ready) {
-      const url = item.downloadUrl!;
-      const filename = item.file.name.replace(/\.[^.]+$/, '.webp');
-
-      triggerDownloadFromUrl(url, filename);
-
-      setFiles((prev) =>
-        prev.map((f) =>
-          f.id === item.id
-            ? {
-                ...f,
-                downloaded: true,
-              }
-            : f,
-        ),
-      );
-
-      await sleep(150);
-    }
-  }
-
-  function handleDownloadSingle(id: string) {
-    const item = files.find((f) => f.id === id);
-    if (!item || !item.downloadUrl) return;
-
-    const filename = item.file.name.replace(/\.[^.]+$/, '.webp');
-    triggerDownloadFromUrl(item.downloadUrl, filename);
-
-    setFiles((prev) =>
-      prev.map((f) =>
-        f.id === id
-          ? {
-              ...f,
-              downloaded: true,
-            }
-          : f,
-      ),
-    );
-  }
-
-  function handleRemove(id: string) {
-    setFiles((prev) => {
-      const item = prev.find((f) => f.id === id);
-      if (item?.downloadUrl) URL.revokeObjectURL(item.downloadUrl);
-      if (item?.previewUrl) URL.revokeObjectURL(item.previewUrl);
-      return prev.filter((f) => f.id !== id);
-    });
-  }
-
-  function handleReconvert(id: string) {
-    setFiles((prev) =>
-      prev.map((f) => {
-        if (f.id !== id) return f;
-
-        if (f.downloadUrl) {
-          URL.revokeObjectURL(f.downloadUrl);
-        }
-
-        return {
-          ...f,
-          status: 'pending',
-          error: undefined,
-          outputSize: undefined,
-          ratio: undefined,
-          downloadUrl: undefined,
-          downloaded: false,
-          usedQuality: undefined,
-        };
-      }),
-    );
-  }
+  const { handleDownloadAll, handleDownloadSingle } = useWebpDownloads({
+    files,
+    setFiles,
+    triggerDownloadFromUrl,
+  });
 
   function handleClearAll() {
-    setFiles((prev) => {
-      prev.forEach((f) => {
-        if (f.downloadUrl) URL.revokeObjectURL(f.downloadUrl);
-        if (f.previewUrl) URL.revokeObjectURL(f.previewUrl);
-      });
-      return [];
-    });
-    setGlobalError(null);
+    clearAll();
     setCopyInfo(null);
-  }
-
-  function handlePreview(id: string) {
-    const item = files.find((f) => f.id === id);
-    if (!item?.previewUrl) return;
-    window.open(item.previewUrl, '_blank', 'noopener,noreferrer');
-  }
-
-  async function handleCopySummary() {
-    if (!navigator.clipboard) {
-      setCopyInfo(t.clipboardNotSupported);
-      return;
-    }
-
-    const converted = files.filter((f) => f.status === 'done');
-    if (!converted.length) {
-      setCopyInfo(t.noCompletedConversions);
-      return;
-    }
-
-    const totalInputLocal = converted.reduce((sum, f) => sum + f.inputSize, 0);
-    const totalOutputLocal = converted.reduce((sum, f) => sum + (f.outputSize ?? 0), 0);
-    const savedLocal = totalInputLocal - totalOutputLocal;
-    const savedPercent = totalInputLocal > 0 ? Math.round((Math.abs(savedLocal) / totalInputLocal) * 100) : 0;
-
-    const trendLabel =
-      savedLocal >= 0 ? `${t.savedWeight} ${formatBytes(savedLocal)} (~${savedPercent}% ${t.less})` : `${t.weightDifference} ${formatBytes(Math.abs(savedLocal))} (~${savedPercent}% ${t.more})`;
-
-    const text = [
-      t.conversionReport,
-      `${t.fileCount} ${converted.length}`,
-      `${t.totalSizeBefore} ${formatBytes(totalInputLocal)}`,
-      `${t.totalSizeAfter} ${formatBytes(totalOutputLocal)}`,
-      trendLabel,
-    ].join('\n');
-
-    const ok = await copy(text);
-    setCopyInfo(ok ? t.reportCopied : t.reportCopyError);
   }
 
   const total = files.length;
@@ -481,14 +178,14 @@ export default function JpgPngToWebp() {
       <ToolSection className="space-y-4">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <Text as="p" variant="small" className="mb-2 font-semibold uppercase">{t.addFiles}</Text>
+            <p className="mb-2 text-sm text-dark font-semibold uppercase">{t.addFiles}</p>
             <label
               onDrop={handleDrop}
               onDragOver={handleDragOver}
               className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
             >
-              <Text as="span" variant="small" className="mb-1 font-medium">{t.dragDropImages}</Text>
-              <Text as="span" variant="xs" tone="muted" className="mb-2">{t.clickToSelect}</Text>
+              <span className="mb-1 text-sm text-dark font-medium">{t.dragDropImages}</span>
+              <span className="mb-2 text-xs text-light">{t.clickToSelect}</span>
               <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
               <input type="file" accept="image/jpeg,image/png" multiple onChange={handleFileChange} className="hidden" />
             </label>
@@ -500,37 +197,33 @@ export default function JpgPngToWebp() {
           </div>
 
           <div>
-            <Text as="p" variant="small" className="mt-8 mb-2 font-semibold uppercase">{t.setQuality}</Text>
+            <p className="mt-8 mb-2 text-sm text-dark font-semibold uppercase">{t.setQuality}</p>
             <div className="flex items-center">
               <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="p-0!" />
-              <Text as="span" variant="small" tone="dark" className="w-16 text-right">{quality}%</Text>
+              <span className="w-16 text-right text-sm text-mid">{quality}%</span>
             </div>
-            <Text variant="small" tone="muted" as="span" className="mt-3">
+            <span className="mt-3 text-sm text-light">
               {t.qualityHelper}
-            </Text>
+            </span>
 
             <div className="mt-3 flex items-center">
               <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
               <label htmlFor="auto-download" className="pl-2 cursor-pointer">
-                <Text variant="small" tone="dark" as="span">
-                  {t.autoDownloadAll}
-                </Text>
+                <span className="text-sm text-mid">{t.autoDownloadAll}</span>
               </label>
             </div>
           </div>
 
           <div>
-            <Text as="p" variant="small" className="mt-8 mb-2 font-semibold uppercase">{t.convertAndDownload}</Text>
+            <p className="mt-8 mb-2 text-sm text-dark font-semibold uppercase">{t.convertAndDownload}</p>
             {total > 0 && (
               <div className="mb-3 space-y-2">
                 <div className="flex items-center justify-between">
-                  <Text variant="small" tone="muted" as="span">
+                  <span className="text-sm text-light">
                     {t.inQueue} <strong>{total}</strong> {t.files}
-                  </Text>
+                  </span>
                   {total > 0 && (
-                    <Text as="span" variant="small" tone="muted">
-                      Zakończone: {completed} / {total}
-                    </Text>
+                    <span className="text-sm text-light">Zakończone: {completed} / {total}</span>
                   )}
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
@@ -560,15 +253,15 @@ export default function JpgPngToWebp() {
 
             {totalInput > 0 && (
               <div className="mt-6">
-                <Text variant="small" tone="muted" as="p">
+                <p className="text-sm text-light">
                   {t.totalInputSize} <strong>{formatBytes(totalInput)}</strong>
-                </Text>
+                </p>
                 {totalOutput > 0 && (
                   <>
-                    <Text variant="small" tone="muted" as="p">
+                    <p className="text-sm text-light">
                       {t.totalOutputSize} <strong>{formatBytes(totalOutput)}</strong>
-                    </Text>
-                    <Text variant="small" tone="muted" as="p">
+                    </p>
+                    <p className="text-sm text-light">
                       {totalSaved >= 0 ? (
                         <>
                           {t.totalSaved}:{' '}
@@ -585,7 +278,7 @@ export default function JpgPngToWebp() {
                           </strong>
                         </>
                       )}
-                    </Text>
+                    </p>
                   </>
                 )}
               </div>
@@ -595,7 +288,7 @@ export default function JpgPngToWebp() {
               <Button variant="normal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="border-0 shadow-none hover:shadow-none hover:translate-y-0 disabled:opacity-40">
                 {t.copySummary}
               </Button>
-              {copyInfo && <Text variant="xs" tone="muted" as="span">{copyInfo}</Text>}
+              {copyInfo && <span className="text-xs text-light">{copyInfo}</span>}
             </div>
           </div>
         </form>
@@ -603,15 +296,15 @@ export default function JpgPngToWebp() {
 
       <ToolSection aria-label={t.queueListAriaLabel} className="space-y-2">
         <div className="flex items-center justify-between gap-2">
-          <Heading as="h2" className="h6">{t.queueFilesHeading}</Heading>
+          <h2 className="h6">{t.queueFilesHeading}</h2>
           {files.length > 0 && (
-            <Text variant="small" tone="muted" as="p">
+            <p className="text-sm text-light">
               {t.readyCount}: {readyCount} · {t.pendingCount}: {pendingCount}
-            </Text>
+            </p>
           )}
         </div>
 
-        {files.length === 0 && <Text variant="xs" tone="muted" as="p">{t.addFilesToStart}</Text>}
+        {files.length === 0 && <p className="text-xs text-light">{t.addFilesToStart}</p>}
 
         {files.length > 0 && (
           <div className="space-y-2 text-sm">
@@ -627,7 +320,7 @@ export default function JpgPngToWebp() {
                   <div className="flex min-w-0 flex-1 items-center gap-3">
                     <button
                       type="button"
-                      onClick={() => handlePreview(item.id)}
+                      onClick={() => previewFile(item.id)}
                       className="hidden h-12 w-12 overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 md:block"
                       title={t.actions.preview}
                     >
@@ -639,11 +332,9 @@ export default function JpgPngToWebp() {
 
                     <div className="min-w-0 flex-1">
                       <div title={item.file.name}>
-                        <Text as="p" variant="small" className="truncate font-medium">
-                          {item.file.name}
-                        </Text>
+                        <p className="text-sm text-dark truncate font-medium">{item.file.name}</p>
                       </div>
-                      <Text as="p" variant="xs" tone="muted" className="text-xs!">
+                      <p className="text-xs! text-light">
                         {t.sizeBefore} {formatBytes(item.inputSize)}
                         {item.outputSize != null && (
                           <>
@@ -655,11 +346,11 @@ export default function JpgPngToWebp() {
                                 {')'}
                               </>
                             )}
-                            {isBigger && <Text as="span" variant="xs" className="ml-1 text-amber-700">{t.biggerThanOriginal}</Text>}
+                            {isBigger && <span className="ml-1 text-xs text-amber-700">{t.biggerThanOriginal}</span>}
                           </>
                         )}
-                      </Text>
-                      {item.usedQuality && <Text as="p" variant="xs" tone="muted" className="text-[11px]">{t.usedQuality} {item.usedQuality}%</Text>}
+                      </p>
+                      {item.usedQuality && <p className="text-[11px] text-light">{t.usedQuality} {item.usedQuality}%</p>}
                       {item.error && <ToolAlert variant="error" className="mt-2">{item.error}</ToolAlert>}
                     </div>
                   </div>
@@ -676,12 +367,12 @@ export default function JpgPngToWebp() {
                     )}
 
                     {item.status === 'done' && (
-                      <Badge as="button" type="button" onClick={() => handleReconvert(item.id)} variant="default" size="md" className="cursor-pointer border-black/10">
+                      <Badge as="button" type="button" onClick={() => reconvertFile(item.id)} variant="default" size="md" className="cursor-pointer border-black/10">
                         {t.actions.reconvert}
                       </Badge>
                     )}
 
-                    <Badge as="button" type="button" onClick={() => handleRemove(item.id)} variant="default" size="sm" className="cursor-pointer text-light hover:text-neutral-900">
+                    <Badge as="button" type="button" onClick={() => removeFile(item.id)} variant="default" size="sm" className="cursor-pointer text-light hover:text-dark">
                       {t.actions.remove}
                     </Badge>
                   </div>

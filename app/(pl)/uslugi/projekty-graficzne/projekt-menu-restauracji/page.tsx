@@ -6,7 +6,7 @@ import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -29,9 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt menu restauracji | Arteon',
     description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
-    url: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
-    images: [{ url: '/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp' }],
   },
 } as const;
 
@@ -119,7 +119,7 @@ export default function OfferDesignMenuPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co zawiera projekt menu restauracji?"
+          title="Co zyskujesz zamawiając menu restauracji?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -185,7 +185,7 @@ export default function OfferDesignMenuPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -251,7 +251,7 @@ export default function OfferDesignMenuPage() {
 
         <ContactForm
           title="Zamów projekt menu dla swojego lokalu"
-          description="Opisz jakie dania są dostępne w Twojej restauracji oraz jaki masz pomysł na swoje menu. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          description="Opisz, jakie dania są dostępne w Twojej restauracji oraz jaki masz pomysł na swoje menu. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
           defaultSubject="Projekt menu restauracji"
         />
 
@@ -294,7 +294,7 @@ export default function OfferDesignMenuPage() {
           items={[
             {
               icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Projekt ulotk',
+              title: 'Projekt ulotki',
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">Dodaj do menu ulotkę z ofertą sezonową. Goście z chęcią sprawdzą Twoją ofertę sezonową lub promocyjną.</p>

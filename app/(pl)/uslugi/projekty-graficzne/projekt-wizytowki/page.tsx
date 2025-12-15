@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiIdCardLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -29,9 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt wizytówki | Arteon',
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
-    url: '/uslugi/projekty-graficzne/projekt-wizytowki',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
     type: 'website',
-    images: [{ url: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp' }],
   },
 } as const;
 
@@ -54,7 +54,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignWizytowkaPage() {
+export default function OfferDesignBusinessCardPage() {
   return (
     <>
       <HeroBanner
@@ -91,7 +91,7 @@ export default function OfferDesignWizytowkaPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt wizytówki?">
           <p>
-            <strong>Profesjonalnie zaprojektowana wizytówka </strong> to shludny układ, czytelne dane i spójny styl ułatwiają zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu. Wizytówka
+            <strong>Profesjonalnie zaprojektowana wizytówka </strong> to schludny układ, czytelne dane i spójny styl ułatwiają zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu. Wizytówka
             staje się fizycznym śladem rozmowy, który może zamienić się w telefon lub wiadomość po kilku dniach czy tygodniach.
           </p>
 
@@ -117,7 +117,7 @@ export default function OfferDesignWizytowkaPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dokładnie dostajesz w ramach projektu wizytówki?"
+          title="Co zyskujesz zamawiając wizytówkę?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -164,7 +164,7 @@ export default function OfferDesignWizytowkaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -266,7 +266,7 @@ export default function OfferDesignWizytowkaPage() {
         <SectionSteps
           title="Z czym można połączyć projekt wizytówki?"
           subtitle="Zobacz też"
-          description="Wizytówka jest często pierwszym elementem większej układanki. Najlepszy efekt daje, gdy jest częścią spójnego systemu identyfikacji i promocji Twojej firmyu\."
+          description="Wizytówka jest często pierwszym elementem większej układanki. Najlepszy efekt daje, gdy jest częścią spójnego systemu identyfikacji i promocji Twojej firmy."
           items={[
             {
               icon: <IoColorPalette className="h-8 w-8" />,
@@ -274,7 +274,7 @@ export default function OfferDesignWizytowkaPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Aby wszystko było spójne, możesz rozwarzyć stworzenie pełnej identyfikacji wizualnej: logo, ulotki,papier firmowy - wszystko zrealizujesz w jednym miejscu.
+                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, ulotki, papier firmowy - wszystko zrealizujesz w jednym miejscu.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import HeroBanner from '@/components/sections/HeroBanner';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
@@ -8,6 +9,8 @@ import { getAllArticles, getCategoriesWithCount } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
 
 const siteUrl = 'https://www.arteonagency.pl';
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const cats = getCategoriesWithCount();
@@ -33,10 +36,7 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
   const hasAny = getAllArticles().some((a) => (a.category || []).some((c) => slugify(c) === params.category));
 
   if (!hasAny) {
-    // Opcja A: 404
-    // notFound();
-    // Opcja B: fallback do głównej listy:
-    // return redirect('/edukacja');
+    notFound();
   }
 
   const label = cats.find((c) => c.slug === params.category)?.label ?? params.category.replace(/-/g, ' ');

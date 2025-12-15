@@ -139,7 +139,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-mid transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-500 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -167,12 +167,12 @@ export default function DesktopNavigation() {
                                   {section.hubHref ? (
                                     <Link
                                       href={section.hubHref}
-                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-slate-900 ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-dark ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {section.title}
                                     </Link>
                                   ) : (
-                                    <div className="text-sm font-semibold tracking-wide text-slate-900">{section.title}</div>
+                                    <div className="text-sm font-semibold tracking-wide text-dark">{section.title}</div>
                                   )}
                                 </div>
 
@@ -221,7 +221,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isToolsOpen}
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-mid transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-500 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                   >
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -245,7 +245,7 @@ export default function DesktopNavigation() {
                           <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
                             {toolsSections.map((section) => (
                               <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
-                                <div className="mb-3 text-sm font-semibold tracking-wide text-slate-900">{section.title}</div>
+                                <div className="mb-3 text-sm font-semibold tracking-wide text-dark">{section.title}</div>
 
                                 <div className="grid grid-cols-1 gap-2">
                                   {section.items.map((item) => (

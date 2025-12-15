@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -28,9 +28,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt papieru firmowego | Arteon',
     description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
-    url: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     type: 'website',
-    images: [{ url: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp' }],
   },
 } as const;
 
@@ -53,7 +53,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignPapierFirmowyPage() {
+export default function OfferDesignLetterheadPage() {
   return (
     <>
       <HeroBanner
@@ -186,7 +186,7 @@ export default function OfferDesignPapierFirmowyPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 

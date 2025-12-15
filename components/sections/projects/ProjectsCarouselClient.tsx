@@ -7,8 +7,7 @@ import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
 
 import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
-import allProjectsData from '@/data/pl/projects.json';
-import type { Project, ProjectCategory } from '@/types/project';
+import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
 const ui = {
   pl: {
@@ -28,12 +27,8 @@ const ui = {
   },
 } as const;
 
-interface ProjectsData {
-  projects: Project[];
-}
-
 type Props = {
-  projects?: Project[];
+  projects: ProjectPreview[];
   max?: number;
   title?: string;
   subtitle?: string;
@@ -42,22 +37,22 @@ type Props = {
   excludeSlug?: string;
 };
 
-export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defaultTitle, subtitle, category, slugs, excludeSlug }: Props) {
+export default function ProjectsCarouselClient({ projects, max = 7, title = ui.pl.defaultTitle, subtitle, category, slugs, excludeSlug }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const sourceProjects = useMemo<Project[]>(() => {
-    return projects && projects.length ? projects : (allProjectsData as ProjectsData).projects;
+  const sourceProjects = useMemo<ProjectPreview[]>(() => {
+    return projects;
   }, [projects]);
 
   const finalProjects = useMemo(() => {
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
-    let list: Project[];
+    let list: ProjectPreview[];
 
     if (slugsArray && slugsArray.length) {
       const map = new Map(sourceProjects.map((p) => [p.slug, p] as const));
-      list = slugsArray.map((s) => map.get(s)).filter(Boolean) as Project[];
+      list = slugsArray.map((s) => map.get(s)).filter(Boolean) as ProjectPreview[];
     } else if (category) {
       list = sourceProjects.filter((p) => (p.category || []).includes(category));
     } else {
@@ -121,7 +116,13 @@ export default function ProjectsOverview({ projects, max = 7, title = ui.pl.defa
           ))}
         </div>
 
-        <CarouselNavButtons isScrollable={isScrollable} onPrev={() => scrollByCards('left')} onNext={() => scrollByCards('right')} prevLabel={t.scrollLeft} nextLabel={t.scrollRight} />
+        <CarouselNavButtons
+          isScrollable={isScrollable}
+          onPrev={() => scrollByCards('left')}
+          onNext={() => scrollByCards('right')}
+          prevLabel={t.scrollLeft}
+          nextLabel={t.scrollRight}
+        />
       </div>
 
       <CarouselDots

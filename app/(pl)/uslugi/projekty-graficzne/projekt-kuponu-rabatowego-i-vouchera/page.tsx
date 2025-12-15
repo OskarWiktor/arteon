@@ -6,7 +6,7 @@ import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -29,9 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Kupony rabatowe i vouchery | Arteon',
     description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
-    url: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     type: 'website',
-    images: [{ url: '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp' }],
   },
 } as const;
 
@@ -54,7 +54,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignVoucheryPage() {
+export default function OfferDesignCouponsAndVouchersPage() {
   return (
     <>
       <HeroBanner
@@ -187,7 +187,7 @@ export default function OfferDesignVoucheryPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 

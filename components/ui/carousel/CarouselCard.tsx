@@ -5,20 +5,19 @@ import Link from 'next/link';
 
 import ProjectCard from '@/components/ui/ProjectCard';
 import TestimonialCard from '@/components/ui/TestimonialCard';
-import Text from '@/components/ui/typography/Text';
 
-import type { Article } from '@/types/article';
-import type { Project } from '@/types/project';
+import type { ArticlePreview } from '@/types/article';
+import type { ProjectPreview } from '@/types/project';
 import type { Testimonial } from '@/types/testimonial';
 
 type CarouselCardProps =
   | {
       variant: 'project';
-      project: Project;
+      project: ProjectPreview;
     }
   | {
       variant: 'article';
-      article: Article;
+      article: ArticlePreview;
       href: string;
       readingTimeLabel: string;
       publicationDateLabel: string;
@@ -51,14 +50,14 @@ export function CarouselCard(props: CarouselCardProps) {
           <h3 className="h6">{a.title}</h3>
           <div className="mt-3 flex flex-wrap items-center gap-2">
             {a.readingTime ? (
-              <Text variant="small" tone="muted" as="span">
+              <span className="text-sm text-light">
                 {a.readingTime} {readingTimeLabel}
-              </Text>
+              </span>
             ) : null}
             {a.datePublished ? (
-              <Text variant="small" tone="muted" as="span" aria-label={publicationDateLabel}>
+              <span className="text-sm text-light" aria-label={publicationDateLabel}>
                 • {a.datePublished}
-              </Text>
+              </span>
             ) : null}
           </div>
         </div>

@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
     description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',
-    url: '/narzedzia/tester-kontrastu-kolorow-wcag',
+    url: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
       },
     ],
   },

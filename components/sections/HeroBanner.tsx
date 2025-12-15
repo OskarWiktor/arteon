@@ -1,7 +1,6 @@
 import Button from '../ui/buttons/Button';
 import ButtonGroup from '../ui/buttons/ButtonGroup';
 import Eyebrow from '../ui/typography/Eyebrow';
-import Text from '../ui/typography/Text';
 import type { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 
@@ -111,15 +110,14 @@ export default function HeroBanner({
               </h1>
             )}
             {description && (
-              <Text
-                variant="body"
-                as="p"
+              <p
                 id="hero-description"
-                tone={isDarkOverlay ? 'inverse' : 'default'}
-                className={`reveal-animation mt-3 leading-relaxed md:mt-5 text-wrap:pretty ${isDarkOverlay ? '' : 'opacity-80'}`}
+                className={`reveal-animation mt-3 text-base leading-relaxed md:mt-5 text-wrap:pretty ${
+                  isDarkOverlay ? 'text-white' : 'text-dark opacity-80'
+                }`}
               >
                 {description}
-              </Text>
+              </p>
             )}
             {(buttonAccent || buttonSecond) && (
               <ButtonGroup

@@ -20,7 +20,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -41,9 +41,9 @@ export const metadata = {
   openGraph: {
     title: 'Strony internetowe - projekt i realizacja | Arteon',
     description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
-    url: '/uslugi/strony-internetowe',
+    url: 'https://www.arteonagency.pl/uslugi/strony-internetowe',
     type: 'website',
-    images: [{ url: '/assets/projects/arteon-baners-msc.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
   },
 } as const;
 
@@ -99,9 +99,9 @@ export default function OfferWebPage() {
 
         <SectionInfo title="Co zyskujesz dzięki stronie internetowej?">
           <p>
-            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób, szukających lokalnie usług w Google, trafia do siedziby firmy w przeciągu 24 godzin a 28%
-            tych wyszukań, kończy się zakupem{' '}
-            <a target="_blank" className="inline-link" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
+            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób szukających lokalnie usług w Google trafia do siedziby firmy w ciągu 24 godzin, a 28%
+            tych wyszukań kończy się zakupem{' '}
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
               (źródło)
             </a>
             . Firmowa <strong>strona internetowa pracuje na Twój sukces 24/7</strong>: pokazuje Twoją ofertę, buduje zaufanie, zbiera zapytania - nawet gdy masz wyciszony telefon
@@ -109,11 +109,11 @@ export default function OfferWebPage() {
           <br />
           <p>
             84% konsumentów uważa firmę z własną stroną internetową za bardziej wiarygodną{' '}
-            <a target="_blank" className="inline-link" href="https://blog.verisign.com/getting-online/five-reasons-every-small-business-needs-a-website/">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://blog.verisign.com/getting-online/five-reasons-every-small-business-needs-a-website/">
               (źródło)
             </a>{' '}
-            ,a aż 56% osób nie ufa firmie, która nie posiada własnej strony{' '}
-            <a target="_blank" className="inline-link" href="https://www.verisign.com/assets/Research-small-business-september2013.pdf">
+            , a aż 56% osób nie ufa firmie, która nie posiada własnej strony{' '}
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.verisign.com/assets/Research-small-business-september2013.pdf">
               (źródło)
             </a>
             . <strong>Dobra strona internetowa robi</strong> za Ciebie aż <strong>3 rzeczy naraz</strong>:
@@ -127,7 +127,7 @@ export default function OfferWebPage() {
           <br />
           <p>
             Trend rynkowy pokazuje jasno: {'>'}70% małych firm deklaruje wzrost przychodów po uruchomieniu strony internetowej{' '}
-            <a target="_blank" className="inline-link" href="https://www.networksolutions.com/blog/small-business-website-statistics/">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.networksolutions.com/blog/small-business-website-statistics/">
               (źródło)
             </a>
           </p>
@@ -176,7 +176,7 @@ export default function OfferWebPage() {
             },
             {
               title: 'Transparentna współpraca na bieżąco',
-              description: <>Informujemy Cię regularnie o postępach prac nad Twoją stroną</>,
+              description: <>Informujemy Cię regularnie o postępach prac nad Twoją stronę</>,
               icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -194,7 +194,7 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Nasze wyróżnione realizacje stron internetowych" category="strona" subtitle="Portfolio" />
+        <ProjectsCarousel title="Nasze wyróżnione realizacje stron internetowych" category="strona" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -311,14 +311,14 @@ export default function OfferWebPage() {
               answer: 'Standardowo stworzenie strony internetowej zajmuje od 5 do 15 dni roboczych, w zależności od liczby podstron oraz potrzebnych funkcjonalności.',
             },
             {
-              question: 'ile kosztuje roczne utrzymanie strony internetowej',
+              question: 'Ile kosztuje roczne utrzymanie strony internetowej?',
               answer:
-                'Koszt utrzymania strony internetowej jest zależy między innymi od ceny domeny ( adresu URL strony ) oraz ceny hostingu ( wynajmowanego miejsca na serwerze ). Przeciętne utrzymanie strony internetowej zaczyna się od 300 zł rocznie',
+                'Koszt utrzymania strony internetowej zależy między innymi od ceny domeny (adresu URL strony) oraz ceny hostingu (wynajmowanego miejsca na serwerze). Przeciętne utrzymanie strony internetowej zaczyna się od 300 zł rocznie',
             },
             {
               question: 'Co powinna zawierać dobra strona internetowa?',
               answer:
-                'Jasną ofertę, sekcje z korzyściami, dowody (realizacje, opinie), prosty kontakt oraz wygodną wersję na telefon. Dodatkowo: podstawy prawne (politykę prywatności, cookies, regulaminy), wysoką prędkość ładowania oraz optymalizację pod wyszukiwarki',
+                'Jasną ofertę, sekcje z korzyściami, dowody (realizacje, opinie), prosty kontakt oraz wygodną wersję na telefon. Dodatkowo: podstawy prawne (politykę prywatności, pliki cookie, regulaminy), wysoką prędkość ładowania oraz optymalizację pod wyszukiwarki',
             },
             {
               question: 'Czy zajmujecie się tworzeniem treści na strony internetowe?',
@@ -342,12 +342,12 @@ export default function OfferWebPage() {
               answer: 'Tak, jeśli cokolwiek na stronie internetowej będzie wadliwe, poprawimy to bez dodatkowych kosztów',
             },
             {
-              question: 'Czy po publikacji pomagacie w rozwoju strony internetowe?',
+              question: 'Czy po publikacji pomagacie w rozwoju strony internetowej?',
               answer: 'Tak, możemy przeanalizować Twoją branżę i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą liczbę klientów',
             },
             {
               question: 'Nie znam się na technologii, czy mogę liczyć na pomoc?',
-              answer: 'Tak, uwielbiamy pomagać i edukować - prowadzimy cały proces w przystępny oraz transparentny sposób, objaśniając wszystkie kroku bez technologicznego żargonu',
+              answer: 'Tak, uwielbiamy pomagać i edukować - prowadzimy cały proces w przystępny oraz transparentny sposób, objaśniając wszystkie kroki bez technologicznego żargonu',
             },
           ]}
         />

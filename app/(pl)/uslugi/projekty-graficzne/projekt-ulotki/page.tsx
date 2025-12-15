@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiArticleLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -28,9 +28,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt ulotki | Arteon',
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
-    url: '/uslugi/projekty-graficzne/projekt-ulotki',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
-    images: [{ url: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp' }],
   },
 } as const;
 
@@ -53,7 +53,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignUlotkaPage() {
+export default function OfferDesignFlyerPage() {
   return (
     <>
       <HeroBanner
@@ -127,7 +127,7 @@ export default function OfferDesignUlotkaPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dokładnie dostajesz w ramach projektu ulotki?"
+          title="Co zyskujesz zamawiając ulotkę?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -198,7 +198,7 @@ export default function OfferDesignUlotkaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -264,7 +264,7 @@ export default function OfferDesignUlotkaPage() {
 
         <ContactForm
           title="Zamów projekt ulotki"
-          description="Opisz czym się zajmujesz i co chcesz przedstawić na swojej ulotce. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          description="Opisz, czym się zajmujesz i co chcesz przedstawić na swojej ulotce. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
           defaultSubject="Projekt ulotki"
         />
 

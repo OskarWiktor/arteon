@@ -45,8 +45,8 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
       break;
     case 'dark':
       variantClass =
-        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-[#2B2B2B] bg-[#2B2B2B] hover:border-slate-500 hover:bg-slate-500 text-[#f1f1f1] ' +
-        'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#2B2B2B]';
+        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-mid bg-mid hover:border-slate-500 hover:bg-slate-500 text-[color:var(--background)] ' +
+        'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-mid';
       break;
     case 'glass':
       variantClass =

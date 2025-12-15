@@ -1,8 +1,6 @@
-import Script from 'next/script';
 import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
-import Text from '../ui/typography/Text';
 
 const ui = {
   pl: {
@@ -77,11 +75,7 @@ function FooterSchemas() {
     ],
   };
 
-  return (
-    <Script id="schema-professional-service-footer" type="application/ld+json">
-      {JSON.stringify(professionalService)}
-    </Script>
-  );
+  return <script id="schema-professional-service-footer" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalService) }} />;
 }
 
 const offerLinksOne = [
@@ -158,9 +152,7 @@ export default function Footer() {
               </address>
 
               <div className="mt-3">
-                <Text variant="small" tone="muted">
-                  {t.hours}
-                </Text>
+                <p className="text-sm text-light">{t.hours}</p>
               </div>
 
               <ul className="mt-4 flex flex-col gap-2 text-sm">
@@ -253,7 +245,7 @@ export default function Footer() {
                 © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {t.copyright}
               </span>
               <span className="text-sm">{t.description}</span>
-              <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
+              <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js
               </a>
             </div>

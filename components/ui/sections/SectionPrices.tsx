@@ -3,7 +3,6 @@ import { RiCheckFill } from 'react-icons/ri';
 import Button from '../buttons/Button';
 import ButtonGroup from '../buttons/ButtonGroup';
 import Badge from '../Badge';
-import Text from '../typography/Text';
 import IconText from '../IconText';
 
 const ui = {
@@ -64,12 +63,12 @@ export default function SectionPrices({
     <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className="w-full">
       <div className="mb-8">
         {subtitle && (
-          <Text variant="small" tone="muted" as="span" id={subtitleId} className="tracking-wider uppercase">
+          <span id={subtitleId} className="text-sm text-light tracking-wider uppercase">
             {subtitle}
-          </Text>
+          </span>
         )}
         {title && (
-          <h3 className="reveal-animation mt-1 text-2xl font-semibold tracking-tight text-[#0a0a0a]" id={headingId}>
+          <h3 className="reveal-animation mt-1 text-2xl font-semibold tracking-tight text-dark" id={headingId}>
             {title}
           </h3>
         )}
@@ -90,10 +89,9 @@ export default function SectionPrices({
               aria-labelledby={itemHeadingId}
               aria-describedby={itemDescribedBy}
               className={[
-                'group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6',
-                'shadow-md ring-1 ring-neutral-200 transition duration-200',
-                'transition hover:-translate-y-0.5 hover:shadow-lg',
-                plan.lastPlan ? 'shadow-md ring-2 ring-neutral-900' : '',
+                'group relative flex h-full flex-col justify-between surface-card-lift p-6',
+                'ring-1 ring-neutral-200 duration-200',
+                plan.lastPlan ? 'ring-2 ring-neutral-900' : '',
               ].join(' ')}
             >
               {plan.badgeLabel && (
@@ -103,7 +101,7 @@ export default function SectionPrices({
               )}
 
               <div>
-                <h4 id={itemHeadingId} className="reveal-animation h5 text-xl font-semibold text-[#0a0a0a]">
+                <h4 id={itemHeadingId} className="reveal-animation h5 text-xl font-semibold text-dark">
                   {plan.name}
                 </h4>
 
@@ -114,7 +112,7 @@ export default function SectionPrices({
                 )}
 
                 <p id={itemPriceId} className="mt-4">
-                  <span className="text-xl font-semibold tracking-tight text-[#0a0a0a]">{plan.price}</span>
+                  <span className="text-xl font-semibold tracking-tight text-dark">{plan.price}</span>
                 </p>
 
                 <p id={itemDescId} className="mt-2 text-[15px] leading-relaxed">
@@ -163,7 +161,7 @@ export default function SectionPrices({
 
       {note && (
         <div className="mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label={t.noteAriaLabel}>
-          <div className="text-[15px] leading-relaxed text-[#3a3a3a]">{note.text}</div>
+          <div className="text-[15px] leading-relaxed text-mid">{note.text}</div>
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">
               <Button link={note.ctaLink} variant="accent" arrow>
@@ -175,9 +173,7 @@ export default function SectionPrices({
       )}
 
       {legalNote && (
-        <Text variant="small" tone="muted" className="pt-4 leading-relaxed">
-          {legalNote}
-        </Text>
+        <p className="pt-4 text-sm text-light leading-relaxed">{legalNote}</p>
       )}
     </section>
   );

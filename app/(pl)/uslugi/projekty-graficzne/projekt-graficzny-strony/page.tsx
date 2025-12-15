@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -26,9 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt graficzny strony | Arteon',
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
-    url: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
@@ -51,7 +51,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignXxxPage() {
+export default function OfferDesignWebsiteGraphicDesignPage() {
   return (
     <>
       <HeroBanner
@@ -184,7 +184,7 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -247,7 +247,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów projekt graficzny strony"
-          description="Opisz czym się zajmujesz oraz co chcesz aby było na Twojej stronie. Na tej podstawie przygotujemy wycenę, termin i rekomendacje."
+          description="Opisz, czym się zajmujesz oraz co chcesz, aby było na Twojej stronie. Na tej podstawie przygotujemy wycenę, termin i rekomendacje."
           defaultSubject="Projekt graficzny strony"
         />
 
@@ -281,15 +281,15 @@ export default function OfferDesignXxxPage() {
             },
             {
               question: 'W jakim formacie dostanę projekt?',
-              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy również zająć się realizacją strony, co wpłynie na mniejsze koszta',
+              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy również zająć się realizacją strony, co wpłynie na mniejsze koszty',
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer: 'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go odrazu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
+              answer: 'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
             },
             {
               question: 'Czy mogę zamówić tylko jedną podstronę?',
-              answer: 'Tak, projektujemy również pojedyncze ekrany, strony główne i landing page’e pod pojedyńcze kampanie.',
+              answer: 'Tak, projektujemy również pojedyncze ekrany, strony główne i landing page’e pod pojedyncze kampanie.',
             },
           ]}
         />
@@ -299,14 +299,14 @@ export default function OfferDesignXxxPage() {
         <SectionSteps
           title="Z czym warto połączyć projekt graficzny strony?"
           subtitle="Zobacz też"
-          description="Najlepszy efekt uzyskasz, gdy dopracowany układ strony internetowej odrazu zamienisz na w pełni działającą stronę z treściami dopasowanymi do Twojej grupy odbiorczej."
+          description="Najlepszy efekt uzyskasz, gdy dopracowany układ strony internetowej od razu zamienisz na w pełni działającą stronę z treściami dopasowanymi do Twojej grupy odbiorczej."
           items={[
             {
               icon: <RiCodeSSlashFill className="h-8 w-8" />,
               title: 'Wdrożenie strony internetowej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Projekt możemy od razu przełożyć na działającą stronę - z uwzględnieniem szybkości, SEO i panelem ułatwiającym dalszą edycje treści.</p>
+                  <p className="mb-3 text-sm">Projekt możemy od razu przełożyć na działającą stronę - z uwzględnieniem szybkości, SEO i panelem ułatwiającym dalszą edycję treści.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/strony-internetowe">
                       Sprawdź strony internetowe
@@ -321,7 +321,7 @@ export default function OfferDesignXxxPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potenjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
                     o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">
@@ -344,7 +344,7 @@ export default function OfferDesignXxxPage() {
       </Wrapper>
 
       <CTABanner
-        title="Zbuduj stronę, która wyróżni Cie od konkurencji"
+        title="Zbuduj stronę, która wyróżni Cię od konkurencji"
         description="Stworzymy profesjonalny i przejrzysty układ strony, który wzmocni wizerunek Twojej marki online"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"

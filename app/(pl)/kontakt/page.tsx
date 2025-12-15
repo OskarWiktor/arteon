@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import ContactForm from '@/components/sections/ContactForm';
 import HeroBanner from '@/components/sections/HeroBanner';
 import Gap from '@/components/ui/Gap';
@@ -10,62 +9,24 @@ const BASE_URL = 'https://www.arteonagency.pl';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu | Arteon',
-  description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
+  description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
   alternates: { canonical: 'https://www.arteonagency.pl/kontakt' },
   openGraph: {
     title: 'Kontakt - wycena Twojego planu | Arteon',
-    description: 'Strona kontaktowa Arteon. Napisz co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
-    url: '/kontakt',
+    description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
+    url: `${BASE_URL}/kontakt`,
     siteName: 'Arteon',
     type: 'website',
     // TODO: Add unique OpenGraph image for contact page: /assets/og/kontakt.webp (1200x630px)
     images: [
       {
-        url: '/assets/bg/abstract-bg10.webp',
+        url: `${BASE_URL}/assets/bg/abstract-bg10.webp`,
       },
     ],
   },
 } as const;
 
 function ContactSchemas() {
-  const professionalService = {
-    '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
-    '@id': `${BASE_URL}#local`,
-    name: 'Arteon',
-    url: `${BASE_URL}`,
-    image: `${BASE_URL}/icon-512x512.png`,
-    telephone: '+48516466255',
-    email: 'kontakt@arteonagency.pl',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'ul. Jaśminowa 36',
-      addressLocality: 'Zagacie',
-      addressRegion: 'małopolskie',
-      addressCountry: 'PL',
-      postalCode: '32-070',
-    },
-    parentOrganization: { '@id': `${BASE_URL}#organization` },
-
-    serviceArea: {
-      '@type': 'GeoCircle',
-      geoMidpoint: { '@type': 'GeoCoordinates', latitude: 50.0053746, longitude: 19.7094865 },
-      geoRadius: 50000,
-    },
-    areaServed: ['Kraków', 'Skawina', 'Czernichów', 'Liszki', 'Zabierzów', 'Wieliczka'],
-
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '16:00',
-      },
-    ],
-    hasMap:
-      'https://www.google.com/maps/place/Ja%C5%9Bminowa+36,+32-070+Zagacie/@49.955128,19.7525321,11z/data=!4m6!3m5!1s0x47165fee99b80287:0x35a17883ddf6b10c!8m2!3d50.0053746!4d19.7094865!16s%2Fg%2F11vl3bnz_y',
-  };
-
   const breadcrumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -110,15 +71,8 @@ function ContactSchemas() {
 
   return (
     <>
-      <Script id="schema-professional-service" type="application/ld+json">
-        {JSON.stringify(professionalService)}
-      </Script>
-      <Script id="schema-breadcrumbs" type="application/ld+json">
-        {JSON.stringify(breadcrumbs)}
-      </Script>
-      <Script id="schema-howto-contact" type="application/ld+json">
-        {JSON.stringify(howToContact)}
-      </Script>
+      <script id="schema-breadcrumbs" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script id="schema-howto-contact" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToContact) }} />
     </>
   );
 }

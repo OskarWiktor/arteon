@@ -2,7 +2,6 @@
 
 import { useMemo } from 'react';
 import CopyButton from './buttons/CopyButton';
-import Text from './typography/Text';
 
 const ui = {
   pl: {
@@ -30,18 +29,20 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
   const lines = useMemo(() => code.replace(/\n$/, '').split('\n'), [code]);
 
   return (
-    <figure className={`group rounded-2xl border border-black/10 bg-gradient-to-b from-[#0b0b0c] to-[#121215] text-[#e7e7ea] shadow-sm ${className}`}>
+    <figure
+      className={`group rounded-2xl border border-black/10 bg-gradient-to-b from-[color:var(--surface-dark)] to-[color:var(--surface-dark-2)] text-[color:var(--text-on-dark)] shadow-sm ${className}`}
+    >
       <div className="flex items-center justify-between gap-3 rounded-t-xl border-b border-white/10 px-4 py-2">
         <div className="flex items-center gap-2">
           {language ? (
-            <Text variant="xs" as="span" className="inline-block rounded bg-white/10 px-2 py-0.5 text-white/70">
+            <span className="text-xs inline-block rounded bg-white/10 px-2 py-0.5 text-white/70">
               {language}
-            </Text>
+            </span>
           ) : null}
           {filename ? (
-            <Text variant="xs" as="span" className="truncate text-white/70">
+            <span className="text-xs truncate text-white/70">
               {filename}
-            </Text>
+            </span>
           ) : null}
         </div>
         <CopyButton
@@ -66,9 +67,7 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
               <span key={i} className={`contents ${isHl ? 'bg-white/[0.04]' : ''}`} data-line={n}>
                 {showLineNumbers ? (
                   <span aria-hidden="true">
-                    <Text variant="xs" as="span" className="min-w-6 pr-1 text-right text-white/40 tabular-nums select-none">
-                      {n}
-                    </Text>
+                    <span className="text-xs min-w-6 pr-1 text-right text-white/40 tabular-nums select-none">{n}</span>
                   </span>
                 ) : null}
                 <span className={`font-mono ${wrap ? '' : 'inline-block min-w-full'}`}>{ln || ' '}</span>
@@ -79,9 +78,7 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
       </pre>
 
       {caption ? (
-        <Text variant="xs" as="figcaption" className="border-t border-white/10 px-4 py-2 text-white/60">
-          {caption}
-        </Text>
+        <figcaption className="text-xs border-t border-white/10 px-4 py-2 text-white/60">{caption}</figcaption>
       ) : null}
     </figure>
   );

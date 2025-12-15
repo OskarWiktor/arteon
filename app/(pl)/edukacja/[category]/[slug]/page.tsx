@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -12,15 +12,17 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import CTABanner from '@/components/sections/CTABanner';
 
 import type { Article } from '@/types/article';
-import { getAllArticles, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blog';
+import { getAllArticles, getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
 import CodeBlock from '@/components/ui/CodeBlock';
 import TableBlock from '@/components/ui/TableBlock';
-import ArticlesOverview from '@/components/sections/blog/ArticlesOverview';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import ShareBlock from '@/components/sections/ShareBlock';
 
 const siteUrl = 'https://www.arteonagency.pl';
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
+
+export const dynamicParams = false;
 
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',
@@ -251,7 +253,11 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
 
 export async function generateStaticParams() {
   const items = getAllArticles();
-  return items.map((a) => ({ category: getPrimaryCategorySlug(a), slug: a.slug }));
+  return items.flatMap((a) => {
+    const cats = (a.category || []).map((c) => slugify(c));
+    const uniqueCats = Array.from(new Set([getPrimaryCategorySlug(a), ...cats]));
+    return uniqueCats.map((category) => ({ category, slug: a.slug }));
+  });
 }
 
 export async function generateMetadata({ params }: { params: { category: string; slug: string } }): Promise<Metadata> {
@@ -262,7 +268,7 @@ export async function generateMetadata({ params }: { params: { category: string;
   const canonicalPath = article.seo?.canonical || `https://www.arteonagency.pl/edukacja/${canonicalCat}/${article.slug}`;
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
-  const image = article.cover?.startsWith('http') ? article.cover : article.cover || undefined;
+  const image = article.cover ? (article.cover.startsWith('http') ? article.cover : `${siteUrl}${article.cover}`) : undefined;
   const ogUrl = canonicalPath.startsWith('/') ? `https://www.arteonagency.pl${canonicalPath}` : canonicalPath;
 
   return {
@@ -284,9 +290,11 @@ export default function ArticlePage({ params }: { params: { category: string; sl
   const article = findArticleBySlug(params.slug);
   if (!article) return notFound();
 
+  const articlePreviews = getAllArticlePreviews();
+
   const canonicalCat = getPrimaryCategorySlug(article);
   if (params.category !== canonicalCat) {
-    redirect(`/edukacja/${canonicalCat}/${article.slug}`);
+    permanentRedirect(`/edukacja/${canonicalCat}/${article.slug}`);
   }
 
   const url = articleUrl(canonicalCat, article.slug);
@@ -329,21 +337,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
           ) : null}
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(article)) }} />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'BreadcrumbList',
-                itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Strona główna', item: siteUrl },
-                  { '@type': 'ListItem', position: 2, name: 'Edukacja', item: `${siteUrl}/edukacja` },
-                  { '@type': 'ListItem', position: 3, name: canonicalCat, item: `${siteUrl}/edukacja/${canonicalCat}` },
-                  { '@type': 'ListItem', position: 4, name: article.title, item: url },
-                ],
-              }),
-            }}
-          />
+
         </div>
         <div>
           <ShareBlock url={url} title={shareTitle} className="mb-12" /> <TableOfContents rootSelector="#article-root" size="large" levels="h2" />
@@ -353,7 +347,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
       <Wrapper>
         <Gap />
 
-        <ArticlesOverview title="Sprawdź najnowsze artykuły i poradniki" excludeSlug={article.slug} />
+        <ArticlesCarousel title="Sprawdź najnowsze artykuły i poradniki" articles={articlePreviews} excludeSlug={article.slug} />
       </Wrapper>
 
       <Gap />

@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'Arteon',
-    url: '/',
+    url: SITE_URL,
     images: [
       {
-        url: '/assets/arteon-logo-on-mockup.webp',
+        url: `${SITE_URL}/assets/arteon-logo-on-mockup.webp`,
         width: 1200,
         height: 630,
         alt: 'Logo Arteon na plakacie',
@@ -102,15 +102,6 @@ const websiteJsonLd = {
   publisher: {
     '@id': `${SITE_URL}#organization`,
   },
-  // TODO: Add SearchAction if site search is implemented
-  // potentialAction: {
-  //   '@type': 'SearchAction',
-  //   target: {
-  //     '@type': 'EntryPoint',
-  //     urlTemplate: `${SITE_URL}/szukaj?q={search_term_string}`,
-  //   },
-  //   'query-input': 'required name=search_term_string',
-  // },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -168,13 +159,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Script>
         )}
 
-        <Script id="schema-org-organization" type="application/ld+json" strategy="afterInteractive">
-          {JSON.stringify(orgJsonLd)}
-        </Script>
+        <script id="schema-org-organization" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
 
-        <Script id="schema-org-website" type="application/ld+json" strategy="afterInteractive">
-          {JSON.stringify(websiteJsonLd)}
-        </Script>
+        <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       </head>
 
       <body className="font-sans antialiased">

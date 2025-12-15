@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Polityka prywatności | Arteon',
     description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
-    url: '/polityka-prywatnosci',
+    url: 'https://www.arteonagency.pl/polityka-prywatnosci',
     type: 'website',
   },
 };
@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
           <SectionInfo title="2. Zakres zbieranych danych">
             <ul className="list-disc space-y-1 pl-6">
               <li>dane podane w formularzu kontaktowym (imię, nazwisko, e-mail, treść wiadomości),</li>
-              <li>dane techniczne zbierane automatycznie (adres IP, informacje o urządzeniu, pliki cookies),</li>
+              <li>dane techniczne zbierane automatycznie (adres IP, informacje o urządzeniu, pliki cookie),</li>
               <li>dane analityczne z Google Analytics 4 i Vercel Analytics,</li>
               <li>logi serwera i zdarzeń bezpieczeństwa (np. znaczniki czasu, adres IP, nagłówki żądania).</li>
             </ul>
@@ -74,14 +74,14 @@ export default function PrivacyPolicyPage() {
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo title="4. Pliki cookies">
-            <p>Strona wykorzystuje pliki cookies w celu:</p>
+          <SectionInfo title="4. Pliki cookie">
+            <p>Strona wykorzystuje pliki cookie w celu:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>zapewnienia prawidłowego działania serwisu,</li>
               <li>analizy ruchu (Google Analytics 4, Vercel Analytics),</li>
               <li>celów marketingowych.</li>
             </ul>
-            <p>Możesz zarządzać cookies w ustawieniach swojej przeglądarki. Ograniczenie cookies może wpłynąć na niektóre funkcje serwisu.</p>
+            <p>Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki. Ograniczenie plików cookie może wpłynąć na niektóre funkcje serwisu.</p>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />

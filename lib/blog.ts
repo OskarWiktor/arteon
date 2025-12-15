@@ -1,5 +1,7 @@
+import 'server-only';
+
 import blogData from '@/data/pl/blog.json';
-import type { Article } from '@/types/article';
+import type { Article, ArticlePreview } from '@/types/article';
 import { slugify } from '@/utils/slug';
 
 interface BlogData {
@@ -10,6 +12,18 @@ const articles = (blogData as BlogData).articles;
 
 export function getAllArticles(): Article[] {
   return articles;
+}
+
+export function getAllArticlePreviews(): ArticlePreview[] {
+  return articles.map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    cover: a.cover,
+    category: a.category,
+    readingTime: a.readingTime,
+    datePublished: a.datePublished,
+  }));
 }
 
 export function getCategoriesWithCount() {

@@ -79,7 +79,9 @@ const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).pro
 }));
 
 function getArticleUrl(article: Article): string {
-  return `/edukacja/${article.slug}`;
+  const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : [];
+  const primaryCategory = categories[0] ?? 'Inne';
+  return `/edukacja/${slugifyCategory(primaryCategory)}/${article.slug}`;
 }
 
 function slugifyCategory(name: string): string {

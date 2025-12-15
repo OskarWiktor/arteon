@@ -31,10 +31,10 @@ export const metadata = {
   openGraph: {
     title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
     description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
-    url: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
+    url: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
     type: 'website',
     siteName: 'Arteon',
-    images: [{ url: '/assets/bg/abstract-bg12.webp' }],
+    images: [{ url: `${BASE}/assets/bg/abstract-bg12.webp` }],
   },
 } as const;
 
@@ -132,15 +132,15 @@ export default function OfferOptimizationWordPressPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dokładnie jest optymalizowane na stronie WordPress?"
-          subtitle="Kluczowe obszary i efekty"
+          title="Co robimy w ramach optymalizacji WordPress?"
+          subtitle="Zakres działań i efekty"
           items={[
             {
-              title: 'Szybkość ładowania i lekkie zasoby',
+              title: 'Szybsze ładowanie i lepsze Core Web Vitals',
               description: (
                 <>
-                  Konfigurowane są mechanizmy cache, porządkowane ładowanie skryptów i stylów oraz ograniczane zbędne elementy. Efekt: krótszy czas ładowania i lepsze wyniki w testach szybkości,
-                  szczególnie na urządzeniach mobilnych.
+                  Optymalizujemy kod, konfigurację oraz zasoby, aby skrócić czas ładowania strony i poprawić wyniki w PageSpeed Insights. Efekt: lepsze doświadczenie użytkownika i wyższa widoczność w
+                  Google, szczególnie na urządzeniach mobilnych.
                 </>
               ),
               icon: <RiSpeedFill className="h-6 w-6 text-slate-500" />,
@@ -149,7 +149,7 @@ export default function OfferOptimizationWordPressPage() {
               title: 'Porządki we wtyczkach i motywie',
               description: (
                 <>
-                  Analizowane są wtyczki i motyw, usuwane duplikaty funkcji oraz zbędne dodatki, a ciężkie rozwiązania zastępowane lżejszymi. Efekt: stabilniejsza strona i mniejsze ryzyko konfliktów
+                  Usuwamy zbędne wtyczki, porządkujemy konfigurację i wskazujemy elementy, które spowalniają stronę lub powodują konflikty. Efekt: stabilniejsza strona i mniej problemów technicznych
                   przy dalszych aktualizacjach.
                 </>
               ),
@@ -159,7 +159,7 @@ export default function OfferOptimizationWordPressPage() {
               title: 'Obrazy dopasowane do urządzeń',
               description: (
                 <>
-                  Dostosowywane są rozmiary zdjęć, wdrażana jest kompresja oraz odpowiednie formaty plików. Efekt: mniejsza waga strony przy zachowaniu jakości wizualnej, co bezpośrednio wspiera
+                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze zużycie transferu i znacznie lepsza
                   szybkość działania witryny.
                 </>
               ),

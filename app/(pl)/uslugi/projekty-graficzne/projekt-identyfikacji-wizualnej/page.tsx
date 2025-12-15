@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -26,9 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt identyfikacji wizualnej | Arteon',
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
-    url: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
@@ -51,7 +51,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignXxxPage() {
+export default function OfferDesignBrandIdentityDesignPage() {
   return (
     <>
       <HeroBanner
@@ -196,7 +196,7 @@ export default function OfferDesignXxxPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -259,7 +259,7 @@ export default function OfferDesignXxxPage() {
 
         <ContactForm
           title="Zamów identyfikację wizualną"
-          description="Opisz czym się zajmujesz i jakich materiałów potrzebujesz dla swojej firmy. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          description="Opisz, czym się zajmujesz i jakich materiałów potrzebujesz dla swojej firmy. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
           defaultSubject="Identyfikacja wizualna"
         />
 
@@ -281,12 +281,12 @@ export default function OfferDesignXxxPage() {
             {
               question: 'Co zawiera kompletna identyfikacja wizualna?',
               answer:
-                'Zazwyczaj: logo w kilku wariantach, paletę kolorów, typografię, wzory wizytówek, papierów firmowych, teczek oraz grafiki do mediów społecznościowych. Dokładny zakres elementów wchodzących w skład indetyfikacji wizualnej ustalamy wspólnie przed rozpoczęciem prac.',
+                'Zazwyczaj: logo w kilku wariantach, paletę kolorów, typografię, wzory wizytówek, papierów firmowych, teczek oraz grafiki do mediów społecznościowych. Dokładny zakres elementów wchodzących w skład identyfikacji wizualnej ustalamy wspólnie przed rozpoczęciem prac.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu?',
               answer:
-                'Tak, każde element identyfikacji omawiamy dając Ci pełne pole do naniesienia poprawek, tak aby projekt odpowiadał dokładnie Twojej wizji i Twoim potrzebom. Wspólnie dopracowujemy układ, kolorystykę i styl.',
+                'Tak, każdy element identyfikacji omawiamy, dając Ci pełne pole do naniesienia poprawek, tak, aby projekt odpowiadał dokładnie Twojej wizji i Twoim potrzebom. Wspólnie dopracowujemy układ, kolorystykę i styl.',
             },
             {
               question: 'Czy mogę zamówić samo logo bez całego systemu?',
@@ -295,12 +295,12 @@ export default function OfferDesignXxxPage() {
             {
               question: 'Czy dostanę pliki gotowe do druku i internetu?',
               answer:
-                'Tak, przekazujemy pliki żródłowe, wersje do druku, internetu i mediów społecznościowych, tak abyś miał pełny dostęp do wszystkich materiałów z możliwością edycji w dowolnym momencie.',
+                'Tak, przekazujemy pliki źródłowe, wersje do druku, internetu i mediów społecznościowych, tak, abyś miał pełny dostęp do wszystkich materiałów z możliwością edycji w dowolnym momencie.',
             },
             {
               question: 'Czy mogę liczyć na doradztwo w wyborze stylu identyfikacji?',
               answer:
-                'Tak, przed rozpoczęciem pracy, analizujemy Twoją branże i Twoją ofertę, przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej grupy docelowej.',
+                'Tak, przed rozpoczęciem pracy, analizujemy Twoją branżę i Twoją ofertę, przygotowujemy propozycje stylistyczne i moodboardy, omawiamy plusy i minusy różnych kierunków, a następnie wspólnie wybieramy kierunek najlepiej dopasowany do Twojej grupy docelowej.',
             },
             {
               question: 'Czy mogę zamówić brandbook do identyfikacji?',
@@ -315,7 +315,7 @@ export default function OfferDesignXxxPage() {
         <SectionSteps
           title="Z czym warto połączyć identyfikację wizualną?"
           subtitle="Zobacz też"
-          description="Najwięcej zyskujesz, gdy nowy system wizualny odrazu wdrożysz we wszystkich miejcach."
+          description="Najwięcej zyskujesz, gdy nowy system wizualny od razu wdrożysz we wszystkich miejscach."
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
@@ -337,7 +337,7 @@ export default function OfferDesignXxxPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potenjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
                     o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">

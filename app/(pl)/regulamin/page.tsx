@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Regulamin świadczenia usług | Arteon',
     description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',
-    url: '/regulamin',
+    url: 'https://www.arteonagency.pl/regulamin',
     type: 'website',
   },
 };

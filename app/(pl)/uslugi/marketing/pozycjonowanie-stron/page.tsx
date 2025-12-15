@@ -26,9 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
-    url: '/uslugi/marketing/pozycjonowanie-stron',
+    url: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg6.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg6.webp' }],
   },
 } as const;
 
@@ -111,7 +111,7 @@ export default function OfferSeoSubscription() {
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
             <li>Właścicieli stron firmowych, którzy chcą rosnąć w wynikach wyszukiwania i pozyskiwać więcej klientów.</li>
             <li>Branż usługowych i B2B, gdzie liczy się budowa autorytetu i regularne publikacje.</li>
-            <li>Marek, które potrzebują stabilnej strategi budowy swojej widoczności online.</li>
+            <li>Marek, które potrzebują stabilnej strategii budowy swojej widoczności online.</li>
           </ul>
         </SectionBasic>
 
@@ -123,7 +123,7 @@ export default function OfferSeoSubscription() {
           items={[
             {
               title: 'Strategia treści',
-              description: <>Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie treści, budując Twoją widoczność tam gdzie szukają Cie klienci.</>,
+              description: <>Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie treści, budując Twoją widoczność tam, gdzie szukają Cię klienci.</>,
               icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -177,7 +177,7 @@ export default function OfferSeoSubscription() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Przeprowadzany audyt SEO a następnie ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i zadania wspierające.
+                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i zadania wspierające.
                   </p>
                 </div>
               ),
@@ -186,7 +186,7 @@ export default function OfferSeoSubscription() {
               title: '2. Optymalizacja SEO',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak aby Google uznał ją za wartościową</p>
+                  <p className="mb-3 text-sm">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby Google uznał ją za wartościową</p>
                 </div>
               ),
             },

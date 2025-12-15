@@ -7,7 +7,7 @@ import FeesSteps from '@/components/sections/steps/FeesSteps';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -88,9 +88,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekty graficzne do druku i online | Arteon',
     description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
-    url: '/uslugi/projekty-graficzne',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
@@ -234,7 +234,7 @@ export default function OfferDesignPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -400,8 +400,8 @@ export default function OfferDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikację, tworząc spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
-                    eksportu z czytelną hieratchią treści i miejscem na wezwanie do działania.
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
+                    eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">

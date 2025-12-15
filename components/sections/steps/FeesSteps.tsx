@@ -2,7 +2,7 @@ import SectionSteps from '../../ui/sections/SectionSteps';
 
 const FeesStepsItems = [
   {
-    title: 'Do 5,000 zł',
+    title: 'Do 5 000 zł',
     description: (
       <span>
         <strong>Brak zaliczki</strong>, po zakończeniu i zaakceptowaniu projektu <strong>jedna faktura</strong>
@@ -10,7 +10,7 @@ const FeesStepsItems = [
     ),
   },
   {
-    title: 'Do 10,000 zł',
+    title: 'Do 10 000 zł',
     description: (
       <span>
         <strong>Zaliczka 10%</strong>, po omówieniu szczegółów i zaakceptowaniu wyceny. Możliwość rozłożenia płatności na <strong>dwie faktury</strong>
@@ -18,10 +18,10 @@ const FeesStepsItems = [
     ),
   },
   {
-    title: 'Powyżej 10,000 zł',
+    title: 'Powyżej 10 000 zł',
     description: (
       <span>
-        <strong>Zaliczka 20%</strong>, po omówieniu szczegółów i zaakceptowaniu wycen. Możliwość rozłożenia płatności na <strong>kilka faktur</strong>
+        <strong>Zaliczka 20%</strong>, po omówieniu szczegółów i zaakceptowaniu wyceny. Możliwość rozłożenia płatności na <strong>kilka faktur</strong>
       </span>
     ),
   },
@@ -44,7 +44,7 @@ const ui = {
     title: 'Płatności i bezpieczeństwo',
     subtitle: 'Zasady współpracy',
     description:
-      'Posiadamy transparentne zasady płatności, dzięki którym, zawsze wiesz czego się spodziewać. Nasz system skonstruowany jest tak aby maksymalnie obniżyć Twój poziom ryzyka oraz abyś wiedział jak dokładnie prowadzimy projeky o różnych budżetach',
+      'Posiadamy transparentne zasady płatności, dzięki którym zawsze wiesz, czego się spodziewać. Nasz system skonstruowany jest tak, aby maksymalnie obniżyć Twój poziom ryzyka oraz abyś wiedział, jak dokładnie prowadzimy projekty o różnych budżetach',
   },
 } as const;
 

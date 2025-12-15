@@ -2,11 +2,10 @@
 
 import { useMemo } from 'react';
 import Button from '@/components/ui/buttons/Button';
-import Heading from '../../ui/typography/Heading';
-import allProjectsData from '@/data/pl/projects.json';
-import type { Project, ProjectCategory } from '@/types/project';
+import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
 type Props = {
+  projects: ProjectPreview[];
   selected: ProjectCategory[];
   onToggle: (_cat: ProjectCategory) => void;
   onClear: () => void;
@@ -22,9 +21,8 @@ const ui = {
 
 const ORDER: readonly ProjectCategory[] = ['strona', 'sklep', 'blog', 'aplikacja', 'grafika', 'treść', 'marketing'] as const;
 
-export default function Filters({ selected, onToggle, onClear }: Props) {
+export default function Filters({ projects, selected, onToggle, onClear }: Props) {
   const t = ui.pl;
-  const projects = allProjectsData.projects as Project[];
 
   const available = useMemo(() => {
     const present = new Set<ProjectCategory>();
@@ -37,9 +35,7 @@ export default function Filters({ selected, onToggle, onClear }: Props) {
 
   return (
     <section className="w-full">
-      <Heading as="h2" className="reveal-animation mb-4">
-        {t.heading}
-      </Heading>
+      <h2 className="reveal-animation mb-4">{t.heading}</h2>
 
       <div role="toolbar" aria-label={t.filtersAriaLabel} className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-2xl pb-6 md:pb-8 lg:pb-10">
         <Button variant={hasSelection ? 'normal' : 'accent'} size="small" onClick={onClear} aria-pressed={!hasSelection}>

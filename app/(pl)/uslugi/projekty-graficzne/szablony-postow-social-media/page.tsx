@@ -6,7 +6,7 @@ import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -29,9 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Szablony postów social media | Arteon',
     description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
-    url: '/uslugi/projekty-graficzne/szablony-postow-social-media',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
     type: 'website',
-    images: [{ url: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp' }],
   },
 } as const;
 
@@ -54,7 +54,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignSzablonyPostowPage() {
+export default function OfferDesignSocialMediaPostTemplatesPage() {
   return (
     <>
       <HeroBanner
@@ -122,7 +122,7 @@ export default function OfferDesignSzablonyPostowPage() {
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dostajesz w ramach usługi?"
+          title="Co dostajesz w pakiecie szablonów?"
           subtitle="Nasz standard pracy"
           items={[
             {
@@ -187,7 +187,7 @@ export default function OfferDesignSzablonyPostowPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -307,7 +307,7 @@ export default function OfferDesignSzablonyPostowPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Aby wszystko było spójne, możesz rozwarzyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.
+                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">

@@ -1,6 +1,5 @@
 import Wrapper from '../ui/Wrapper';
 import AppLink from '../ui/Link';
-import Text from '../ui/typography/Text';
 
 const ui = {
   pl: {
@@ -54,20 +53,18 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
             return (
               <li key={`${it.href}-${idx}`} className="flex items-center gap-1 text-sm md:gap-2">
                 {isLast ? (
-                  <Text variant="small" as="span" aria-current="page" className="opacity-70">
+                  <span className="text-sm text-dark opacity-70" aria-current="page">
                     {it.label}
-                  </Text>
+                  </span>
                 ) : (
                   <AppLink href={it.href} variant="default" display="inline" className="inline-link">
-                    <Text variant="small" as="span">
-                      {it.label}
-                    </Text>
+                    <span className="text-sm text-dark">{it.label}</span>
                   </AppLink>
                 )}
                 {!isLast && (
-                  <Text variant="small" as="span" aria-hidden="true">
+                  <span className="text-sm text-dark" aria-hidden="true">
                     /
-                  </Text>
+                  </span>
                 )}
               </li>
             );

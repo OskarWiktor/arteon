@@ -18,7 +18,7 @@ import {
 } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -38,9 +38,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt logo | Arteon',
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
-    url: '/uslugi/projekty-graficzne/projekt-logo',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
@@ -207,7 +207,7 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wybrane realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wybrane realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -298,12 +298,12 @@ export default function OfferDesignLogoPage() {
             },
             {
               question: 'Czy mogę zgłosić poprawki do logo?',
-              answer: 'Tak, w standardowym pakiecie uwzględniamy minimum jedną rundy korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
+              answer: 'Tak, w standardowym pakiecie uwzględniamy minimum jedną rundę korekt. Razem dopracujemy kształt, proporcje i detale, aby efekt odpowiadał Twojej wizji.',
             },
             {
               question: 'Czy pomogacie określić styl i kierunek logo?',
               answer:
-                'Tak, jeśli nie jesteś pewien jakie logo będzie odpowiednie dla Twojej firmy, przygotowujemy moodboardy, przykłady stylów i kierunki, aby wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
+                'Tak, jeśli nie jesteś pewien, jakie logo będzie odpowiednie dla Twojej firmy, przygotowujemy moodboardy, przykłady stylów i kierunki, aby wspólnie znaleźć to, co najlepiej pasuje do Twojej marki.',
             },
             {
               question: 'Gdzie mogę używać logo?',
@@ -314,7 +314,7 @@ export default function OfferDesignLogoPage() {
               answer: 'Tak, po finalizacji projektu przekazujemy Ci pełne prawa autorskie majątkowe do logo oraz komplet plików źródłowych. Możesz swobodnie korzystać z niego w materiałach własnych.',
             },
             {
-              question: 'Czy oferujecie espresową realizację logo?',
+              question: 'Czy oferujecie ekspresową realizację logo?',
               answer: 'Tak, dla projektów priorytetowych proponujemy tryb ekspresowy. Zakres, czas i koszt ustalamy indywidualnie przed rozpoczęciem pracy.',
             },
           ]}
@@ -349,7 +349,7 @@ export default function OfferDesignLogoPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Aby wszystko było spójne, możesz rozwarzyć stworzenie pełnej identyfikacji wizualnej: ulotki, katalogi, posty do mediów społecznościowych - wszystko zrealizujesz w jednym miejscu.
+                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: ulotki, katalogi, posty do mediów społecznościowych - wszystko zrealizujesz w jednym miejscu.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">

@@ -4,7 +4,7 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine } from 'react-icons/ri';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla stron i firm online',
@@ -13,11 +13,11 @@ export const metadata = {
   openGraph: {
     title: 'Darmowe narzędzia online dla stron i firm online',
     description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepszą swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-    url: '/narzedzia',
+    url: 'https://www.arteonagency.pl/narzedzia',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
       },
     ],
   },
@@ -28,7 +28,7 @@ const toolsJsonLd = {
   '@type': 'ItemList',
   name: 'Darmowe narzędzia online dla stron i firm online',
   description:
-    'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG oraz generator palet kolorów z jednego koloru bazowego.',
+    'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG, paleta kolorów z obrazu/logo oraz generator palet kolorów z jednego koloru bazowego.',
   itemListElement: [
     {
       '@type': 'WebApplication',
@@ -91,6 +91,16 @@ const toolsJsonLd = {
     {
       '@type': 'WebApplication',
       position: 7,
+      name: 'Generator palety kolorów z obrazu',
+      description:
+      'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+      url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
+      applicationCategory: 'UtilityApplication',
+      operatingSystem: 'Any',
+    },
+    {
+      '@type': 'WebApplication',
+      position: 8,
       name: 'Generator palet kolorów online z jednego koloru',
       description:
         'Generator palet kolorów online, który z jednego koloru bazowego buduje klasyczne schematy (monochromatyczne, triadyczne, analogiczne, komplementarne) oraz nowoczesne palety pastelowe, ciemne, tonalne i minimalistyczne inspirowane Material Design i Apple.',
@@ -246,6 +256,22 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/tester-kontrastu-kolorow-wcag">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiPantoneLine className="h-8 w-8" />,
+              title: 'Generator palety kolorów z obrazu',
+              topImageAlt: 'Paleta kolorów z obrazu i logo Arteon',
+              topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Dodaj obraz, a narzędzie pokaże użyte na nim kolory i stworzy z nich paletę barw. Skopiuj kod koloru jednym kliknięciem i użyj w dowolnym miejscu.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/generator-palety-kolorow-z-obrazu">
                       Otwórz narzędzie
                     </Button>
                   </div>

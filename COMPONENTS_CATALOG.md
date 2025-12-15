@@ -45,6 +45,7 @@ Struktura repo (w uproszczeniu):
   - **[a11y]** obsługa klawisza Escape do zamykania menu.
 - **Zależności**:
   - `DesktopNavigation`, `MobileNavigation`.
+  - `components/shared/navigation-data/pl.ts` (SSOT dla linków/sekcji w headerze).
 
 ### `DesktopNavigation` (`components/shared/navigation-types/DesktopNavigation.tsx`)
 - **Co robi**: Złożona nawigacja desktopowa z dropdownami, podmenu, obsługą klawiatury i animacjami.
@@ -56,6 +57,9 @@ Struktura repo (w uproszczeniu):
     - zamykanie Escape,
     - zamykanie po kliknięciu poza.
   - **[animacje]** animuje dropdowny (Framer Motion).
+- **Zależności**:
+  - `components/shared/navigation-data/pl.ts` (`DESKTOP_NAV_ITEMS_PL`, `OFFER_SECTIONS_PL`, `TOOLS_SECTIONS_PL`).
+  - Hooki: `useEscapeKey`, `useOutsideClick`, `useMenuKeyboardNavigation`.
 
 ### `MobileNavigation` (`components/shared/navigation-types/MobileNavigation.tsx`)
 - **Co robi**: Drawer nawigacji mobilnej (portal + animacje + focus trap).
@@ -65,6 +69,9 @@ Struktura repo (w uproszczeniu):
   - **[scroll lock]** blokada scrolla strony przy otwartym drawerze.
   - **[a11y]** obsługa Escape, nawigacja klawiaturą, aria-atributy.
   - **[animacje]** animacje przejść (Framer Motion).
+- **Zależności**:
+  - `components/shared/navigation-data/pl.ts` (`MOBILE_NAV_ITEMS_PL`, `OFFER_SECTIONS_PL`, `LEGAL_LINKS_PL`).
+  - Hooki: `useEscapeKey`, `useFocusTrap`, `useRestoreFocus`, `useScrollLock`, `useEventListener`, `useTimeout`.
 
 ### `SkipToContent` (`components/shared/SkipToContent.tsx`)
 - **Co robi**: Link „skip to content” (a11y) do przeskoku na `main`.
@@ -81,6 +88,10 @@ Struktura repo (w uproszczeniu):
     - panel preferencji z przełącznikami kategorii.
   - **[a11y]** focus trap, Escape, klik poza, restore focus.
   - **[global API]** wystawia `window.ArteonConsent?.open()` do otwierania ustawień z innych miejsc.
+- **Zależności**:
+  - `lib/consent/storage.ts` (persist zgód).
+  - `lib/consent/gtag.ts` (aktualizacja consent mode).
+  - `lib/consent/ga.ts` (lazy-load GA po zgodzie).
 
 ### `CookieSettingsButton` (`components/shared/CookieSettingsButton.tsx`)
 - **Co robi**: Przycisk otwierający ustawienia cookies.
@@ -194,7 +205,7 @@ Struktura repo (w uproszczeniu):
   - **[filtering]** opcjonalny filtr po `categorySlug`.
   - **[i18n]** stringi UI zależne od locale.
 
-### `ArticlesOverview` (`components/sections/blog/ArticlesOverview.tsx`)
+### `ArticlesCarousel` (`components/sections/blog/ArticlesCarousel.tsx`)
 - **Co robi**: Karuzela z podglądem artykułów (filtrowanie po slugach/kategorii).
 - **Odpowiedzialności**:
   - **[carousel]** używa `useCarouselScroller`.
@@ -225,7 +236,7 @@ Struktura repo (w uproszczeniu):
   - **[layout]** render grid.
   - **[animacje]** animuje zmiany (Framer Motion).
 
-### `ProjectsOverview` (`components/sections/projects/ProjectsOverview.tsx`)
+### `ProjectsCarousel` (`components/sections/projects/ProjectsCarousel.tsx`)
 - **Co robi**: Karuzela podglądu projektów (opcjonalne filtrowanie).
 - **Odpowiedzialności**:
   - **[carousel]** `useCarouselScroller` + `Carousel*`.
@@ -283,10 +294,10 @@ Struktura repo (w uproszczeniu):
 - **Odpowiedzialności**:
   - **[konfiguracja]** dane osoby, CTA, social, wygląd, klauzula.
   - **[layout presets]** kilka układów stopki (np. standard, accent-bar, top-banner, label-column, centered).
-  - **[HTML generation]** buduje HTML, sanitizuje wartości (escape, whitelist protokołów dla linków).
+  - **[HTML generation]** buduje HTML w `buildSignatureHtml` + sanitizuje wartości w `sanitize` (escape + whitelist protokołów dla linków).
   - **[preview]** render podglądu przez `dangerouslySetInnerHTML`.
-  - **[copy]** kopiuje HTML (preferencja: `execCommand('copy')` na selekcji; fallback: `navigator.clipboard.writeText`).
-  - **[UX]** status kopiowania resetowany timeoutem (`useTimeout`).
+  - **[copy]** kopiuje HTML przez `useSignatureCopy` (preferencja: `execCommand('copy')` na selekcji; fallback: `navigator.clipboard.writeText`).
+  - **[UX]** status kopiowania resetowany timeoutem (`useSignatureCopy` korzysta z `useTimeout`).
 
 ### `FaviconGenerator` (`components/sections/tools/FaviconGenerator.tsx`)
 - **Co robi**: Generator zestawu favicon (PNG + opcjonalnie `favicon.ico`).
@@ -332,6 +343,15 @@ Struktura repo (w uproszczeniu):
   - **[wyniki]** pokazuje pass/fail dla AA/AAA (normal/large) i UI graphics.
   - **[preview]** sample tekstu + ikona na tle.
 
+### `PaletteExtractor` (`components/sections/tools/PaletteExtractor/PaletteExtractor.tsx`)
+- **Co robi**: Wyciąga dominujące kolory z obrazu/logo i prezentuje je jako paletę (swatche) z możliwością kopiowania kodów HEX.
+- **Odpowiedzialności**:
+  - **[upload]** `ImageDropzone` (drag&drop / file picker) + walidacja typu (PNG/JPG/SVG).
+  - **[analysis]** downscale obrazu do `ImageData` (`getDownscaledImageDataFromUrl`) + ekstrakcja palety (`extractPalette`).
+  - **[UI]** podgląd obrazu + lista swatchy (`PaletteSwatches`) + akcje (`PaletteActions`).
+  - **[copy]** kopiowanie pojedynczych kolorów (HEX) i całej palety.
+  - **[cleanup]** revoke `ObjectURL` dla podglądu przy zmianie pliku i unmount.
+
 ---
 
 ## UI (`components/ui/*`)
@@ -353,16 +373,6 @@ Struktura repo (w uproszczeniu):
 - **Odpowiedzialności**:
   - **[variants]** style linków.
   - **[a11y]** obsługa `aria-current` i `aria-label`.
-
-### `Heading` (`components/ui/typography/Heading.tsx`)
-- **Co robi**: Ujednolicony komponent nagłówka.
-- **Odpowiedzialności**:
-  - **[typografia]** spójne style nagłówków.
-
-### `Text` (`components/ui/typography/Text.tsx`)
-- **Co robi**: Ujednolicony komponent tekstu (warianty, tony).
-- **Odpowiedzialności**:
-  - **[typografia]** spójne style tekstu (np. body/xs/muted).
 
 ### `Eyebrow` (`components/ui/typography/Eyebrow.tsx`)
 - **Co robi**: Mały nagłówek/etykieta sekcji (eyebrow).

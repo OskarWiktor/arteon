@@ -8,7 +8,11 @@ import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import Badge from '@/components/ui/Badge';
-import Text from '@/components/ui/typography/Text';
+import { getContrastRatio } from '@/lib/tools/color/contrast';
+import { rgbToHex } from '@/lib/tools/color/convert';
+
+const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
+const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });
 
 const ui = {
   pl: {
@@ -16,11 +20,11 @@ const ui = {
     exampleTextPlaceholder: 'Wpisz nagłówek, tekst przycisku lub treść akapitu',
     textColorLabel: 'Kolor tekstu (foreground)',
     selectTextColor: 'Wybierz kolor tekstu',
-    textColorPlaceholder: '#000000 lub rgb(0,0,0)',
+    textColorPlaceholder: `${DEFAULT_FOREGROUND} lub rgb(0,0,0)`,
     supportedFormats: 'Obsługiwane formaty:',
     backgroundColorLabel: 'Kolor tła (background)',
     selectBackgroundColor: 'Wybierz kolor tła',
-    backgroundColorPlaceholder: '#ffffff lub rgb(255,255,255)',
+    backgroundColorPlaceholder: `${DEFAULT_BACKGROUND} lub rgb(255,255,255)`,
     swapColors: 'Zamień kolory miejscami',
     resetColors: 'Reset do czarny na białym',
     contrastRatio: 'Współczynnik kontrastu',
@@ -42,83 +46,6 @@ const ui = {
     },
   },
 } as const;
-
-type RGB = { r: number; g: number; b: number };
-
-function hexToRgb(hex: string): RGB | null {
-  let value = hex.trim().replace('#', '');
-
-  if (value.length === 3) {
-    value = value
-      .split('')
-      .map((c) => c + c)
-      .join('');
-  }
-
-  if (value.length !== 6) return null;
-
-  const r = parseInt(value.slice(0, 2), 16);
-  const g = parseInt(value.slice(2, 4), 16);
-  const b = parseInt(value.slice(4, 6), 16);
-
-  if ([r, g, b].some((v) => Number.isNaN(v))) return null;
-
-  return { r, g, b };
-}
-
-function parseColor(color: string): RGB | null {
-  const trimmed = color.trim();
-
-  if (trimmed.startsWith('#')) {
-    return hexToRgb(trimmed);
-  }
-
-  const rgbMatch = trimmed.match(/^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+))?\s*\)$/i);
-
-  if (rgbMatch) {
-    const r = Number(rgbMatch[1]);
-    const g = Number(rgbMatch[2]);
-    const b = Number(rgbMatch[3]);
-
-    if ([r, g, b].some((v) => v < 0 || v > 255 || Number.isNaN(v))) {
-      return null;
-    }
-
-    return { r, g, b };
-  }
-
-  return null;
-}
-
-function channelToLinear(c: number): number {
-  const sRgb = c / 255;
-  return sRgb <= 0.03928 ? sRgb / 12.92 : Math.pow((sRgb + 0.055) / 1.055, 2.4);
-}
-
-function relativeLuminance({ r, g, b }: RGB): number {
-  const R = channelToLinear(r);
-  const G = channelToLinear(g);
-  const B = channelToLinear(b);
-
-  return 0.2126 * R + 0.7152 * G + 0.0722 * B;
-}
-
-function getContrastRatio(foreground: string, background: string): number | null {
-  const fgRgb = parseColor(foreground);
-  const bgRgb = parseColor(background);
-
-  if (!fgRgb || !bgRgb) return null;
-
-  const L1 = relativeLuminance(fgRgb);
-  const L2 = relativeLuminance(bgRgb);
-
-  const lighter = Math.max(L1, L2);
-  const darker = Math.min(L1, L2);
-
-  const ratio = (lighter + 0.05) / (darker + 0.05);
-
-  return Math.round(ratio * 100) / 100;
-}
 
 type WcagResult = {
   ratio: number | null;
@@ -174,8 +101,8 @@ function ResultBadge({ ok, label }: { ok: boolean; label: string }) {
 
 export default function WcagContrastChecker() {
   const t = ui.pl;
-  const [foreground, setForeground] = useState('#000000');
-  const [background, setBackground] = useState('#ffffff');
+  const [foreground, setForeground] = useState(DEFAULT_FOREGROUND);
+  const [background, setBackground] = useState(DEFAULT_BACKGROUND);
   const [textSample, setTextSample] = useState<string>(t.exampleText);
 
   const result = useMemo(() => getWcagResult(foreground, background), [foreground, background]);
@@ -186,8 +113,8 @@ export default function WcagContrastChecker() {
   };
 
   const handleReset = () => {
-    setForeground('#000000');
-    setBackground('#ffffff');
+    setForeground(DEFAULT_FOREGROUND);
+    setBackground(DEFAULT_BACKGROUND);
   };
 
   const handleSubmit = (e: FormEvent) => {
@@ -202,9 +129,7 @@ export default function WcagContrastChecker() {
         <ToolSection className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-6">
             <ToolFieldRow label={
-              <Text variant="small" as="span" className="font-medium">
-                Przykładowy tekst
-              </Text>
+              <span className="text-sm text-dark font-medium">Przykładowy tekst</span>
             }>
               <input id="text-sample" type="text" value={textSample} onChange={(e) => setTextSample(e.target.value)} className="tool-input h-10" placeholder={t.exampleTextPlaceholder} />
             </ToolFieldRow>
@@ -214,12 +139,12 @@ export default function WcagContrastChecker() {
                 <ToolFieldRow
                   label={t.textColorLabel}
                   helper={
-                    <Text variant="xs" as="span" className="text-inherit">
+                    <span className="text-xs text-inherit">
                       {t.supportedFormats}{' '}
                       <code className="rounded bg-black/5 px-1">#rrggbb</code>,{' '}
                       <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
                       <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
-                    </Text>
+                    </span>
                   }
                   helperClassName="text-[11px]!"
                 >
@@ -229,7 +154,7 @@ export default function WcagContrastChecker() {
                   </div>
                 </ToolFieldRow>
 
-                <ToolFieldRow label={<Text variant="small" as="span" className="font-medium">{t.backgroundColorLabel}</Text>}>
+                <ToolFieldRow label={<span className="text-sm text-dark font-medium">{t.backgroundColorLabel}</span>}>
                   <div className="flex items-center gap-3">
                     <input type="color" value={background} onChange={(e) => setBackground(e.target.value)} aria-label={t.selectBackgroundColor} className="tool-color-picker tool-color-picker-md" />
                     <input type="text" value={background} onChange={(e) => setBackground(e.target.value)} className="tool-input h-10" placeholder={t.backgroundColorPlaceholder} />
@@ -255,20 +180,16 @@ export default function WcagContrastChecker() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <div className="space-y-1">
-                <Text variant="small" as="p" className="font-medium uppercase">
-                  {t.contrastRatio}
-                </Text>
-                <Text as="p" variant="body" className="text-xl font-semibold">
-                  {formatRatio(result.ratio)}
-                </Text>
+                <p className="text-sm text-dark font-medium uppercase">{t.contrastRatio}</p>
+                <p className="text-xl text-dark font-semibold">{formatRatio(result.ratio)}</p>
               </div>
               {hasError ? (
                 <ToolHelper variant="error" className="mt-1">
-                  <Text variant="xs" as="span">
+                  <span className="text-xs text-dark">
                     {t.colorReadError}{' '}
                     <code className="rounded bg-black/5 px-1">#rrggbb</code> {t.or}{' '}
                     <code className="rounded bg-black/5 px-1">rgb(r,g,b)</code>.
-                  </Text>
+                  </span>
                 </ToolHelper>
               ) : (
                 <div className="mt-1 h-4"></div>
@@ -278,7 +199,7 @@ export default function WcagContrastChecker() {
 
           <ToolInfo className="space-y-2">
             <div className="flex items-center justify-between gap-2">
-              <Text variant="small" as="p" className="font-semibold uppercase">{t.normalText}</Text>
+              <p className="text-sm text-dark font-semibold uppercase">{t.normalText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <ResultBadge ok={!!result.ratio && result.normalText.AA} label={t.badges.normalAA} />
                 <ResultBadge ok={!!result.ratio && result.normalText.AAA} label={t.badges.normalAAA} />
@@ -291,13 +212,13 @@ export default function WcagContrastChecker() {
                 backgroundColor: background,
               }}
             >
-              <Text variant="small" as="p" className="leading-snug font-normal">{textSample || t.exampleNormalText}</Text>
+              <p className="text-sm leading-snug font-normal">{textSample || t.exampleNormalText}</p>
             </div>
           </ToolInfo>
 
           <ToolInfo className="space-y-2">
             <div className="items_center flex justify-between gap-2">
-              <Text variant="small" as="p" className="font-semibold uppercase">{t.largeText}</Text>
+              <p className="text-sm text-dark font-semibold uppercase">{t.largeText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <ResultBadge ok={!!result.ratio && result.largeText.AA} label={t.badges.largeAA} />
                 <ResultBadge ok={!!result.ratio && result.largeText.AAA} label={t.badges.largeAAA} />
@@ -310,13 +231,13 @@ export default function WcagContrastChecker() {
                 backgroundColor: background,
               }}
             >
-              <Text variant="body" as="p" className="leading-snug font-semibold!">{textSample || t.exampleLargeText}</Text>
+              <p className="text-base leading-snug font-semibold!">{textSample || t.exampleLargeText}</p>
             </div>
           </ToolInfo>
 
           <ToolInfo className="space-y-2">
             <div className="flex items-center justify-between gap-2">
-              <Text variant="small" as="p" className="font-semibold uppercase">{t.icon}</Text>
+              <p className="text-sm text-dark font-semibold uppercase">{t.icon}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <ResultBadge ok={!!result.ratio && result.uiGraphics.AA} label={t.badges.iconAA} />
               </div>

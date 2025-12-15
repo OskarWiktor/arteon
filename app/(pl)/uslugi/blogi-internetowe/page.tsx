@@ -5,7 +5,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import {
   RiArticleLine,
@@ -41,9 +41,9 @@ export const metadata = {
   openGraph: {
     title: 'Blogi internetowe - projekt i realizacja | Arteon',
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
-    url: '/uslugi/blogi-internetowe',
+    url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg3.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg3.webp' }],
   },
 } as const;
 
@@ -155,7 +155,7 @@ export default function OfferBlogPage() {
             },
             {
               title: 'Wsparcie prawne przy politykach i zgodach',
-              description: <>Przeprowadzamy Cię przez wymagania (polityki, cookies, zgody)</>,
+              description: <>Przeprowadzamy Cię przez wymagania (polityki, pliki cookie, zgody)</>,
               icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -198,7 +198,7 @@ export default function OfferBlogPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -327,7 +327,7 @@ export default function OfferBlogPage() {
             },
             {
               question: 'Czy mogę liczyć na pomoc w strategii treści?',
-              answer: 'Tak, bezpłatnie pomagamy, w budowie struktury bloga, tak aby pojawił się wyżej w Google',
+              answer: 'Tak, bezpłatnie pomagamy w budowie struktury bloga, tak, aby pojawił się wyżej w Google',
             },
           ]}
         />

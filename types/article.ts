@@ -71,3 +71,5 @@ export type Article = {
 
   cta?: ProjectCTA;
 };
+
+export type ArticlePreview = Pick<Article, 'slug' | 'title' | 'excerpt' | 'cover' | 'category' | 'readingTime' | 'datePublished'>;

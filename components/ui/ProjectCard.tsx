@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import type { Project } from '@/types/project';
+import type { ProjectPreview } from '@/types/project';
 import Button from './buttons/Button';
-import Text from './typography/Text';
 
 const ui = {
   pl: {
@@ -12,7 +11,7 @@ const ui = {
   },
 } as const;
 
-type Props = { project: Project; size?: 'small' | 'normal' };
+type Props = { project: ProjectPreview; size?: 'small' | 'normal' };
 
 export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
   const t = ui.pl;
@@ -23,7 +22,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
       href={`${t.projectUrlPrefix}/${project.slug}`}
       className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
     >
-      <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+      <article className="flex h-full flex-col overflow-hidden surface-card-lift">
         <div className={`relative ${sizeClass} w-full`}>
           <Image
             src={project.image}
@@ -37,9 +36,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
 
         <div className="flex grow flex-col px-6 py-4 md:px-7 md:py-5">
           <h3 className="h5 line-clamp-2">{project.title}</h3>
-          <Text variant="body" tone="muted" as="p" className={`mt-2 ${size === 'normal' ? 'line-clamp-3' : 'line-clamp-2'}`}>
-            {project.short}
-          </Text>
+          <p className={`mt-2 text-base text-light ${size === 'normal' ? 'line-clamp-3' : 'line-clamp-2'}`}>{project.short}</p>
 
           <div className="mt-auto">
             <div className="mt-4 mb-2 h-px w-full bg-gray-200" aria-hidden="true" />

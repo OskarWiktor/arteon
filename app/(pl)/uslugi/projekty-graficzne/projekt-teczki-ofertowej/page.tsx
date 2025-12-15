@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -29,9 +29,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
-    url: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     type: 'website',
-    images: [{ url: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
   },
 } as const;
 
@@ -54,7 +54,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignTeczkaOfertowaPage() {
+export default function OfferDesignPresentationFolderPage() {
   return (
     <>
       <HeroBanner
@@ -196,7 +196,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -262,7 +262,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
 
         <ContactForm
           title="Zamów projekt teczki ofertowej"
-          description="Opisz czym się zajmujesz i jakie informacje chcesz umieścić na swojej teczce ofertowej. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          description="Opisz, czym się zajmujesz i jakie informacje chcesz umieścić na swojej teczce ofertowej. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
           defaultSubject="Projekt teczki ofertowej"
         />
 
@@ -289,7 +289,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
             {
               question: 'Czy projekt teczki jest gotowy do druku?',
               answer:
-                'Tak, przygotowujemy pliki zgodnie z wymaganiami druku: odpowiedni format, spady, marginesy bezpieczeństwa oraz ustawienia kolorów, tak aby można je było od razu przekazać do drukarni.',
+                'Tak, przygotowujemy pliki zgodnie z wymaganiami druku: odpowiedni format, spady, marginesy bezpieczeństwa oraz ustawienia kolorów, tak, aby można je było od razu przekazać do drukarni.',
             },
           ]}
         />
@@ -306,7 +306,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
               title: 'Projekt wizytówki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dołącz do teczki wizytówkę w tym samym stylu. Dzięki temu ułatwisz klientowi ponowny kontakt i utrwalisz w jego w pamięci swoją firmę.</p>
+                  <p className="mb-3 text-sm">Dołącz do teczki wizytówkę w tym samym stylu. Dzięki temu ułatwisz klientowi ponowny kontakt i utrwalisz w jego pamięci swoją firmę.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
                       Zobacz projekt wizytówki
@@ -320,7 +320,7 @@ export default function OfferDesignTeczkaOfertowaPage() {
               title: 'Projekt ulotki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Włóż do teczki własną ulotkę z koszyściami płynącymi z Twoich usług.</p>
+                  <p className="mb-3 text-sm">Włóż do teczki własną ulotkę z korzyściami płynącymi z Twoich usług.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
                       Zobacz projekt ulotki

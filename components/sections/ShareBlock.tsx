@@ -1,6 +1,5 @@
 'use client';
 
-import Text from '../ui/typography/Text';
 import { RiFacebookCircleFill, RiLinkedinBoxFill, RiMailLine } from 'react-icons/ri';
 import CopyButton from '../ui/buttons/CopyButton';
 
@@ -52,9 +51,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
             </ShareIconLink>
 
             <ShareIconLink href={twitterHref} label={t.shareTwitter}>
-              <Text variant="xs" as="span" className="font-semibold">
-                X
-              </Text>
+              <span className="text-xs text-slate-500 font-semibold">X</span>
               <span className="sr-only">{t.shareTwitter}</span>
             </ShareIconLink>
 
@@ -68,7 +65,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
               label={t.copyLink}
               copiedLabel={t.copied}
               onError={() => window.prompt(t.copyPrompt, url)}
-              className="gap-1.5 px-3 py-1.5 text-xs text-[#333] transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+              className="gap-1.5 px-3 py-1.5 text-xs text-mid transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
             />
           </div>
         </div>
@@ -89,7 +86,7 @@ function ShareIconLink({ href, children }: ShareIconLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-[#222] shadow-sm transition hover:-translate-y-[1px] hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-slate-500 shadow-sm transition hover:-translate-y-[1px] hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
     >
       {children}
     </a>

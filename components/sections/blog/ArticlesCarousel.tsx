@@ -7,10 +7,8 @@ import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
 import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
-import type { Article } from '@/types/article';
-import { getPrimaryCategorySlug } from '@/lib/blog';
+import type { ArticlePreview } from '@/types/article';
 import { slugify } from '@/utils/slug';
-import blogData from '@/data/pl/blog.json';
 
 const ui = {
   pl: {
@@ -32,12 +30,8 @@ const ui = {
   },
 } as const;
 
-interface BlogData {
-  articles: Article[];
-}
-
 type Props = {
-  articles?: Article[];
+  articles?: ArticlePreview[];
   max?: number;
   title?: string;
   subtitle?: string;
@@ -46,24 +40,27 @@ type Props = {
   excludeSlug?: string;
 };
 
-const allArticles = (blogData as BlogData).articles;
+function getPrimaryCategorySlug(a: Pick<ArticlePreview, 'category'>): string {
+  const first = (a.category && a.category[0]) || 'inne';
+  return slugify(first);
+}
 
-export default function ArticlesOverview({ articles, max = 7, title = ui.pl.defaultTitle, subtitle, categorySlug, slugs, excludeSlug }: Props) {
+export default function ArticlesCarousel({ articles, max = 7, title = ui.pl.defaultTitle, subtitle, categorySlug, slugs, excludeSlug }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const sourceArticles = useMemo<Article[]>(() => {
-    return articles && articles.length ? articles : allArticles;
+  const sourceArticles = useMemo<ArticlePreview[]>(() => {
+    return articles ?? [];
   }, [articles]);
 
   const finalArticles = useMemo(() => {
     const slugsArray = typeof slugs === 'string' ? [slugs] : slugs;
-    let list: Article[];
+    let list: ArticlePreview[];
 
     if (slugsArray && slugsArray.length) {
       const map = new Map(sourceArticles.map((a) => [a.slug, a] as const));
-      list = slugsArray.map((s) => map.get(s)).filter(Boolean) as Article[];
+      list = slugsArray.map((s) => map.get(s)).filter(Boolean) as ArticlePreview[];
     } else if (categorySlug) {
       list = sourceArticles.filter((a) => (a.category || []).some((c) => slugify(c) === categorySlug));
     } else {

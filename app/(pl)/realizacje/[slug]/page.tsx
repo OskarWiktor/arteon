@@ -16,7 +16,7 @@ import Badge from '@/components/ui/Badge';
 import CTABanner from '@/components/sections/CTABanner';
 import FaqPanels from '@/components/ui/FaqPanels';
 import ShareBlock from '@/components/sections/ShareBlock';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 
 interface ProjectsData {
   projects: Project[];
@@ -27,6 +27,8 @@ const projects = (projectsData as ProjectsData).projects;
 const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 const projectUrl = (slug: string) => `${siteUrl}/realizacje/${slug}`;
+
+export const dynamicParams = false;
 
 function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
@@ -189,7 +191,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = project.seo?.title || `${project.title} - Case study`;
   const description = project.seo?.description || '';
-  const image = project.image?.startsWith('http') ? project.image : project.image || undefined;
+  const image = project.image ? (project.image.startsWith('http') ? project.image : `${siteUrl}${project.image}`) : undefined;
 
   const canonicalPath = project.seo?.canonical || `https://www.arteonagency.pl/realizacje/${project.slug}`;
   const ogUrl = canonicalPath.startsWith('/') ? `https://www.arteonagency.pl${canonicalPath}` : canonicalPath;
@@ -284,7 +286,7 @@ export default function ProjectPage({ params }: PageProps) {
                 <ul className="grid gap-3 md:grid-cols-2">
                   {project.process_steps.map((step, i) => (
                     <li key={i} className="rounded-2xl bg-white p-3 shadow-md">
-                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#5e5e5e] text-xs font-bold text-light">{i + 1}</span>
+                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-light text-xs font-bold text-light">{i + 1}</span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
                     </li>
                   ))}
@@ -402,20 +404,6 @@ export default function ProjectPage({ params }: PageProps) {
           ) : null}
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(project)) }} />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'BreadcrumbList',
-                itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Strona główna', item: siteUrl },
-                  { '@type': 'ListItem', position: 2, name: 'Realizacje', item: `${siteUrl}/realizacje` },
-                  { '@type': 'ListItem', position: 3, name: project.title, item: projectUrl(project.slug) },
-                ],
-              }),
-            }}
-          />
         </div>
 
         <div>
@@ -426,7 +414,7 @@ export default function ProjectPage({ params }: PageProps) {
 
       <Wrapper>
         <Gap />
-        <ProjectsOverview title="Sprawdź najnowsze realizacje" excludeSlug={project.slug} />{' '}
+        <ProjectsCarousel title="Sprawdź najnowsze realizacje" excludeSlug={project.slug} />{' '}
       </Wrapper>
 
       <Gap />

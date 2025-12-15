@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Testimonial } from '@/types/testimonial';
 import { StarRating } from './StarRating';
-import Text from './typography/Text';
 
 const ui = {
   pl: {
@@ -31,12 +30,10 @@ export default function TestimonialCard({ item }: Props) {
   const displayedQuote = getDisplayedQuote(item.quote, MAX_WORDS);
 
   return (
-    <figure className="flex h-full w-full flex-col justify-between rounded-2xl border-gray-300 bg-white p-5 shadow-md transition hover:-translate-y-0.5 hover:shadow-lg md:px-6 md:py-8">
+    <figure className="flex h-full w-full flex-col justify-between surface-card-lift border-gray-300 p-5 md:px-6 md:py-8">
       <blockquote>
         <StarRating value={item.rating} />
-        <Text variant="body" tone="default" as="p" className="mt-2">
-          "{displayedQuote}"
-        </Text>
+        <p className="mt-2 text-base text-dark">"{displayedQuote}"</p>
       </blockquote>
 
       <figcaption className="mt-5 flex items-center gap-4">
@@ -46,15 +43,11 @@ export default function TestimonialCard({ item }: Props) {
           <div aria-hidden className="h-12 w-12 rounded-full bg-gray-200" />
         )}
         <div className="min-w-0">
-          <Text variant="body" tone="default" as="span" className="truncate font-semibold">
-            {item.author}
-          </Text>
+          <span className="text-base text-dark truncate font-semibold">{item.author}</span>
           {item.role && (
             <>
               <br />
-              <Text variant="small" tone="muted" className="truncate">
-                {item.role}
-              </Text>
+              <span className="text-sm text-light truncate">{item.role}</span>
             </>
           )}
           {item.link && (

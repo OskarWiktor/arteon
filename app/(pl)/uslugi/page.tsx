@@ -25,6 +25,32 @@ import {
   RiRestaurant2Line,
 } from 'react-icons/ri';
 
+const siteUrl = 'https://www.arteonagency.pl';
+
+const SERVICES = [
+  { name: 'Strony internetowe', path: '/uslugi/strony-internetowe' },
+  { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },
+  { name: 'Blogi internetowe', path: '/uslugi/blogi-internetowe' },
+  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
+  { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne/projekt-ulotki' },
+  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
+  { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
+  { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
+  { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
+  { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
+  { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
+  { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
+  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-social-media' },
+  { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
+  { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
+  { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
+  { name: 'Projekt menu restauracji', path: '/uslugi/projekty-graficzne/projekt-menu-restauracji' },
+  { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
+  { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },
+  { name: 'Pozycjonowanie stron', path: '/uslugi/marketing/pozycjonowanie-stron' },
+  { name: 'Tworzenie treści', path: '/uslugi/tworzenie-tresci' },
+] as const;
+
 export const metadata = {
   title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
   description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
@@ -32,12 +58,12 @@ export const metadata = {
   openGraph: {
     title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
     description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
-    url: '/uslugi',
+    url: `${siteUrl}/uslugi`,
     type: 'website',
     // TODO: Add unique OpenGraph image for services page: /assets/og/uslugi.webp (1200x630px)
     images: [
       {
-        url: '/assets/bg/abstract-bg12.webp',
+        url: `${siteUrl}/assets/bg/abstract-bg12.webp`,
       },
     ],
   },
@@ -90,7 +116,7 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3">
-                    Tworzymy blogi internetowe, na których z łatwością dodasz swoje treści. Stawiamy na optymalizację techniczną tak aby zwiększyć widoczność każdego Twojego wpisu.
+                    Tworzymy blogi internetowe, na których z łatwością dodasz swoje treści. Stawiamy na optymalizację techniczną tak, aby zwiększyć widoczność każdego Twojego wpisu.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/blogi-internetowe">
@@ -263,8 +289,8 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikację, tworząc spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
-                    eksportu z czytelną hieratchią treści i miejscem na wezwanie do działania.
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
+                    eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
@@ -354,7 +380,7 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3">
-                    Przeprowadzamy audyt SEO a następnie ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i działania wspierające Twoją pozycję.
+                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i działania wspierające Twoją pozycję.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/audyt-seo">
@@ -370,7 +396,7 @@ export default function OfferPage() {
               subtitle: 'Wdrożenia po audycie',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak aby Google uznał ją za wartościową i lepszą od Twojej konkurencji.</p>
+                  <p className="mb-3">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby Google uznał ją za wartościową i lepszą od Twojej konkurencji.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/optymalizacja-seo">
                       Przejdź do optymalizacji SEO
@@ -385,7 +411,7 @@ export default function OfferPage() {
               subtitle: 'Stały wzrost widoczności',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3">Budujemy widoczność strategicznym działaniem co miesiąć. Wprowadzamy treści, które odpowiadają na potrzeby Twoich klientów.</p>
+                  <p className="mb-3">Budujemy widoczność strategicznym działaniem co miesiąc. Wprowadzamy treści, które odpowiadają na potrzeby Twoich klientów.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
                       Przejdź do pozycjonowania stron
@@ -514,8 +540,32 @@ export default function OfferPage() {
 
         <Gap size="sm" />
       </Wrapper>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            '@id': `${siteUrl}/uslugi#collection`,
+            name: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+            description:
+              'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+            url: `${siteUrl}/uslugi`,
+            mainEntity: {
+              '@type': 'ItemList',
+              '@id': `${siteUrl}/uslugi#itemlist`,
+              itemListOrder: 'https://schema.org/ItemListOrderAscending',
+              itemListElement: SERVICES.map((s, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                url: `${siteUrl}${s.path}`,
+                name: s.name,
+              })),
+            },
+          }),
+        }}
+      />
     </>
   );
 }
-
-

@@ -3,19 +3,49 @@ import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilte
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 
+import projectsData from '@/data/pl/projects.json';
+import type { ProjectPreview } from '@/types/project';
+
+type ProjectsData = {
+  projects: ProjectPreview[];
+};
+
+const siteUrl = 'https://www.arteonagency.pl';
+const projects = (projectsData as ProjectsData).projects;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${siteUrl}/realizacje#collection`,
+  name: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie | Arteon',
+  description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
+  url: `${siteUrl}/realizacje`,
+  mainEntity: {
+    '@type': 'ItemList',
+    '@id': `${siteUrl}/realizacje#itemlist`,
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
+    itemListElement: projects.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${siteUrl}/realizacje/${p.slug}`,
+      name: p.title,
+    })),
+  },
+};
+
 export const metadata = {
   title: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie | Arteon',
   description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
   alternates: { canonical: 'https://www.arteonagency.pl/realizacje' },
   openGraph: {
     title: 'Portfolio Arteon - projekty, które działają',
-    description: 'Strony, sklepy, identyfikacje i kampanie. Konkretne efekty i przejrzty proces.',
-    url: '/realizacje',
+    description: 'Strony, sklepy, identyfikacje i kampanie. Konkretne efekty i przejrzysty proces.',
+    url: `${siteUrl}/realizacje`,
     type: 'website',
     // TODO: Add unique OpenGraph image for portfolio page: /assets/og/realizacje.webp (1200x630px)
     images: [
       {
-        url: '/assets/bg/abstract-bg13.webp',
+        url: `${siteUrl}/assets/bg/abstract-bg13.webp`,
       },
     ],
   },
@@ -29,10 +59,12 @@ export default function ProjectsPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <ProjectWithFilters />
+        <ProjectWithFilters projects={projects} />
 
         <Gap size="sm" />
       </Wrapper>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </>
   );
 }

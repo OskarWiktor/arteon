@@ -2,6 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Button from '../ui/buttons/Button';
+import { loadGA } from '@/lib/consent/ga';
+import { updateGtagConsent } from '@/lib/consent/gtag';
+import { readConsent, writeConsent } from '@/lib/consent/storage';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
@@ -31,72 +34,9 @@ const ui = {
   },
 } as const;
 
-type ConsentState = { v: number; analytics: boolean; updatedAt: string };
-const COOKIE_NAME = 'arteon_consent';
-const COOKIE_MAX_AGE = 60 * 60 * 24 * 180;
-
-function readConsent(): ConsentState | null {
-  const m = document.cookie.match(new RegExp('(?:^|; )' + COOKIE_NAME + '=([^;]+)'));
-  if (!m) return null;
-  try {
-    return JSON.parse(decodeURIComponent(m[1])) as ConsentState;
-  } catch {
-    return null;
-  }
-}
-
-function writeConsent(state: ConsentState) {
-  const value = encodeURIComponent(JSON.stringify(state));
-  const secure = location.protocol === 'https:' ? '; Secure' : '';
-  let domainAttr = '';
-  try {
-    const parts = location.hostname.split('.');
-    if (parts.length >= 2) {
-      const base = parts.slice(-2).join('.');
-      domainAttr = `; Domain=.${base}`;
-    }
-  } catch {
-    domainAttr = '';
-  }
-  document.cookie = `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}${domainAttr}`;
-}
-
 // 🔧 uproszczony typ gtag - zamiast kombinować z interfejsami Next/TS
 function updateGtag(analytics: boolean) {
-  if (typeof window === 'undefined') return;
-
-  const win = window as typeof window & {
-    gtag?: (..._args: unknown[]) => void;
-  };
-
-  if (typeof win.gtag !== 'function') return;
-
-  win.gtag('consent', 'update', {
-    analytics_storage: analytics ? 'granted' : 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    ad_storage: 'denied',
-  });
-}
-
-function loadGA(measurementId?: string) {
-  if (!measurementId) return;
-  if (document.getElementById('ga4-src')) return;
-
-  const s1 = document.createElement('script');
-  s1.id = 'ga4-src';
-  s1.async = true;
-  s1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-  document.head.appendChild(s1);
-
-  const s2 = document.createElement('script');
-  s2.text = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${measurementId}', { send_page_view: false });
-  `;
-  document.head.appendChild(s2);
+  updateGtagConsent(analytics);
 }
 
 export default function CookieConsent() {
@@ -123,11 +63,14 @@ export default function CookieConsent() {
 
   useEffect(() => {
     const open = () => {
+      const saved = readConsent();
+      setAnalyticsChoice(saved?.analytics ?? false);
       setVisible(true);
       setPanel(true);
       focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
     };
     document.addEventListener('arteon:open-consent', open);
+    window.ArteonConsent = { open };
     return () => document.removeEventListener('arteon:open-consent', open);
   }, []);
 
@@ -165,18 +108,18 @@ export default function CookieConsent() {
 
   return (
     <div ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descId} className="fixed inset-x-0 bottom-0 z-[70] bg-transparent">
-      <div className="mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 text-black shadow-xl ring-1 ring-black/5">
+      <div className="mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 text-dark shadow-xl ring-1 ring-black/5">
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-2">
               <span id="cookie-title" className="h6">
                 {t.title}
               </span>
-              <p id="cookie-desc" className="text-sm text-black">
+              <p id="cookie-desc" className="text-sm text-dark">
                 <span dangerouslySetInnerHTML={{ __html: t.description }} />
                 <span className="ml-1">
                   <button
-                    className="text-black underline underline-offset-2"
+                    className="text-dark underline underline-offset-2"
                     onClick={() => {
                       setPanel(true);
                       focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
@@ -187,7 +130,7 @@ export default function CookieConsent() {
                     {t.setPreferences}
                   </button>{' '}
                   •{' '}
-                  <a className="text-black underline underline-offset-2" href="/polityka-prywatnosci" rel="noopener">
+                  <a className="text-dark underline underline-offset-2" href="/polityka-prywatnosci" rel="noopener">
                     {t.privacyPolicy}
                   </a>
                 </span>
@@ -198,7 +141,7 @@ export default function CookieConsent() {
               <button
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: false })}
-                className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium text-black shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
               >
                 {t.reject}
               </button>
@@ -226,15 +169,15 @@ export default function CookieConsent() {
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
                   <span className="text-base font-medium">{t.essentialTitle}</span>
-                  <span className="ml-2 text-sm font-medium text-black">{t.essentialDescription}</span>
+                  <span className="ml-2 text-sm font-medium text-dark">{t.essentialDescription}</span>
                 </div>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-black">{t.essentialStatus}</span>
+                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-dark">{t.essentialStatus}</span>
               </div>
 
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
                   <span className="text-base font-medium">{t.analyticsTitle}</span>
-                  <span className="ml-2 text-sm font-medium text-black">{t.analyticsDescription}</span>
+                  <span className="ml-2 text-sm font-medium text-dark">{t.analyticsDescription}</span>
                 </div>
                 <div className="flex w-[24px] items-center justify-center">
                   <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" aria-label={t.analyticsLabel} checked={analyticsChoice} onChange={() => setAnalyticsChoice((v) => !v)} />
@@ -243,12 +186,12 @@ export default function CookieConsent() {
             </fieldset>
 
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <span className="text-sm font-medium text-black">{t.changeDecision}</span>
+              <span className="text-sm font-medium text-dark">{t.changeDecision}</span>
 
               <div className="flex gap-2">
                 <button
                   onClick={() => saveAndClose({ analytics: false })}
-                  className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-black shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                  className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-dark shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                 >
                   {t.reject}
                 </button>

@@ -5,10 +5,14 @@ import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
-import Heading from '@/components/ui/typography/Heading';
 import Eyebrow from '@/components/ui/typography/Eyebrow';
-import Text from '@/components/ui/typography/Text';
 import Badge from '@/components/ui/Badge';
+import { rgbToHex } from '@/lib/tools/color/convert';
+import { downloadFromUrl } from '@/lib/tools/download';
+import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/favicon/generator';
+import { formatBytes } from '@/lib/tools/formatBytes';
+import { loadImage } from '@/lib/tools/loadImage';
+import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 
 const ui = {
   pl: {
@@ -53,110 +57,9 @@ const ui = {
 
 type FileStatus = 'idle' | 'processing' | 'done' | 'error';
 
-interface OutputFile {
-  id: string;
-  label: string;
-  size: number | 'ico';
-  type: 'png' | 'ico';
-  fileName: string;
-  sizeBytes: number;
-  url: string;
-}
-
 const PNG_SIZES = [180, 192, 512];
 
-function formatBytes(bytes: number): string {
-  if (bytes === 0) return '0 B';
-  const units = ['B', 'KB', 'MB', 'GB'];
-  const i = Math.floor(Math.log(bytes) / Math.log(1024));
-  const value = bytes / Math.pow(1024, i);
-  return `${value.toFixed(value > 10 ? 1 : 2)} ${units[i]}`;
-}
-
-function suggestFileName(size: number | 'ico', type: 'png' | 'ico'): string {
-  if (type === 'ico') return 'favicon.ico';
-
-  if (size === 180) return 'apple-touch-icon.webp';
-  if (size === 192) return 'android-chrome-192x192.webp';
-  if (size === 512) return 'android-chrome-512x512.webp';
-
-  return `favicon-${size}x${size}.webp`;
-}
-
-async function createPngFromImage(img: HTMLImageElement, size: number, backgroundColor: string, transparentBackground: boolean): Promise<Blob> {
-  const canvas = document.createElement('canvas');
-  canvas.width = size;
-  canvas.height = size;
-
-  const ctx = canvas.getContext('2d');
-  if (!ctx) {
-    throw new Error(ui.pl.canvasNotSupported);
-  }
-
-  if (!transparentBackground) {
-    ctx.fillStyle = backgroundColor || '#ffffff';
-    ctx.fillRect(0, 0, size, size);
-  } else {
-    ctx.clearRect(0, 0, size, size);
-  }
-
-  const ratio = Math.min(size / img.naturalWidth, size / img.naturalHeight);
-  const drawWidth = img.naturalWidth * ratio;
-  const drawHeight = img.naturalHeight * ratio;
-  const dx = (size - drawWidth) / 2;
-  const dy = (size - drawHeight) / 2;
-
-  ctx.imageSmoothingQuality = 'high';
-  ctx.drawImage(img, dx, dy, drawWidth, drawHeight);
-
-  return new Promise<Blob>((resolve, reject) => {
-    canvas.toBlob(
-      (blob) => {
-        if (!blob) {
-          reject(new Error(ui.pl.pngGenerationError));
-          return;
-        }
-        resolve(blob);
-      },
-      'image/png',
-      1,
-    );
-  });
-}
-
-async function createIcoFromPng(pngBlob: Blob, size: number): Promise<Blob> {
-  const pngBuffer = await pngBlob.arrayBuffer();
-  const pngBytes = new Uint8Array(pngBuffer);
-
-  const headerSize = 6;
-  const entrySize = 16;
-  const imageOffset = headerSize + entrySize;
-  const totalSize = imageOffset + pngBytes.length;
-
-  const buffer = new ArrayBuffer(totalSize);
-  const view = new DataView(buffer);
-  const bytes = new Uint8Array(buffer);
-
-  view.setUint16(0, 0, true);
-  view.setUint16(2, 1, true);
-  view.setUint16(4, 1, true);
-
-  const iconWidth = size === 256 ? 0 : size;
-  const iconHeight = iconWidth;
-
-  view.setUint8(6, iconWidth);
-  view.setUint8(7, iconHeight);
-  view.setUint8(8, 0);
-  view.setUint8(9, 0);
-  view.setUint16(10, 1, true);
-  view.setUint16(12, 32, true);
-  view.setUint32(14, pngBytes.length, true);
-  view.setUint32(18, imageOffset, true);
-
-  bytes.set(pngBytes, imageOffset);
-
-  return new Blob([buffer], { type: 'image/x-icon' });
-}
+const DEFAULT_BACKGROUND_COLOR = rgbToHex({ r: 255, g: 255, b: 255 });
 
 export default function FaviconGenerator() {
   const t = ui.pl;
@@ -168,15 +71,13 @@ export default function FaviconGenerator() {
   const [selectedSizes, setSelectedSizes] = useState<number[]>([180, 192, 512]);
   const [includeIco, setIncludeIco] = useState(true);
   const [transparentBackground, setTransparentBackground] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState('#ffffff');
+  const [backgroundColor, setBackgroundColor] = useState(DEFAULT_BACKGROUND_COLOR);
   const [autoDownload, setAutoDownload] = useState(false);
 
-  const [outputs, setOutputs] = useState<OutputFile[]>([]);
+  const [outputs, setOutputs] = useState<FaviconOutputFile[]>([]);
 
-  function revokeOutputs(urls: OutputFile[]) {
-    urls.forEach((o) => {
-      if (o.url) URL.revokeObjectURL(o.url);
-    });
+  function revokeOutputs(urls: FaviconOutputFile[]) {
+    urls.forEach((o) => revokeObjectUrl(o.url));
   }
 
   function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -189,7 +90,7 @@ export default function FaviconGenerator() {
       setError(t.supportedFormatsOnly);
       setSourceFile(null);
       if (sourcePreviewUrl) {
-        URL.revokeObjectURL(sourcePreviewUrl);
+        revokeObjectUrl(sourcePreviewUrl);
         setSourcePreviewUrl(null);
       }
       return;
@@ -202,9 +103,7 @@ export default function FaviconGenerator() {
       return [];
     });
 
-    if (sourcePreviewUrl) {
-      URL.revokeObjectURL(sourcePreviewUrl);
-    }
+    revokeObjectUrl(sourcePreviewUrl);
 
     const preview = URL.createObjectURL(file);
     setSourceFile(file);
@@ -221,7 +120,7 @@ export default function FaviconGenerator() {
       setError(t.supportedFormatsOnly);
       setSourceFile(null);
       if (sourcePreviewUrl) {
-        URL.revokeObjectURL(sourcePreviewUrl);
+        revokeObjectUrl(sourcePreviewUrl);
         setSourcePreviewUrl(null);
       }
       return;
@@ -234,9 +133,7 @@ export default function FaviconGenerator() {
       return [];
     });
 
-    if (sourcePreviewUrl) {
-      URL.revokeObjectURL(sourcePreviewUrl);
-    }
+    revokeObjectUrl(sourcePreviewUrl);
 
     const preview = URL.createObjectURL(file);
     setSourceFile(file);
@@ -278,71 +175,23 @@ export default function FaviconGenerator() {
     });
 
     try {
-      const img = new Image();
-      img.crossOrigin = 'anonymous';
+      const img = await loadImage(sourcePreviewUrl, { crossOrigin: 'anonymous', errorMessage: t.imageLoadError });
 
-      const loadPromise = new Promise<void>((resolve, reject) => {
-        img.onload = () => resolve();
-        img.onerror = () => reject(new Error(t.imageLoadError));
+      const newOutputs = await generateFaviconOutputs({
+        img,
+        pngSizes: selectedSizes,
+        includeIco,
+        backgroundColor,
+        transparentBackground,
+        faviconIcoLabel: t.faviconIcoLabel,
+        canvasNotSupportedErrorMessage: t.canvasNotSupported,
+        pngGenerationErrorMessage: t.pngGenerationError,
+        onOutput: (output) => {
+          if (autoDownload) {
+            downloadFromUrl(output.url, output.fileName);
+          }
+        },
       });
-
-      img.src = sourcePreviewUrl;
-      await loadPromise;
-
-      const newOutputs: OutputFile[] = [];
-
-      for (const size of selectedSizes) {
-         
-        const pngBlob = await createPngFromImage(img, size, backgroundColor, transparentBackground);
-        const url = URL.createObjectURL(pngBlob);
-        const fileName = suggestFileName(size, 'png');
-
-        newOutputs.push({
-          id: `${size}-png`,
-          label: `${size}x${size} PNG`,
-          size,
-          type: 'png',
-          fileName,
-          sizeBytes: pngBlob.size,
-          url,
-        });
-
-        if (autoDownload) {
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = fileName;
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-        }
-      }
-
-      if (includeIco) {
-        const icoBaseSize = 32;
-        const pngBlobForIco = await createPngFromImage(img, icoBaseSize, backgroundColor, transparentBackground);
-        const icoBlob = await createIcoFromPng(pngBlobForIco, icoBaseSize);
-        const icoUrl = URL.createObjectURL(icoBlob);
-        const icoName = suggestFileName('ico', 'ico');
-
-        newOutputs.push({
-          id: 'favicon-ico',
-          label: t.faviconIcoLabel,
-          size: 'ico',
-          type: 'ico',
-          fileName: icoName,
-          sizeBytes: icoBlob.size,
-          url: icoUrl,
-        });
-
-        if (autoDownload) {
-          const a = document.createElement('a');
-          a.href = icoUrl;
-          a.download = icoName;
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-        }
-      }
 
       setOutputs(newOutputs);
       setStatus('done');
@@ -357,12 +206,7 @@ export default function FaviconGenerator() {
     if (!outputs.length) return;
 
     outputs.forEach((item) => {
-      const a = document.createElement('a');
-      a.href = item.url;
-      a.download = item.fileName;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
+      downloadFromUrl(item.url, item.fileName);
     });
   }
 
@@ -375,7 +219,7 @@ export default function FaviconGenerator() {
     });
 
     if (sourcePreviewUrl) {
-      URL.revokeObjectURL(sourcePreviewUrl);
+      revokeObjectUrl(sourcePreviewUrl);
       setSourcePreviewUrl(null);
     }
     setSourceFile(null);
@@ -400,16 +244,14 @@ export default function FaviconGenerator() {
                 className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
               >
                 <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
-                <Text variant="xs" tone="muted" as="span" className="mb-2">
-                  {t.clickToSelect}
-                </Text>
+                <span className="mb-2 text-xs text-light">{t.clickToSelect}</span>
                 <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
                 <input type="file" accept="image/png,image/jpeg,image/jpg,image/svg+xml" onChange={handleFileChange} className="hidden" />
               </label>
               {sourceFile && (
-                <Text variant="xs" tone="muted" as="p" className="mt-2">
+                <p className="mt-2 text-xs text-light">
                   {t.selectedFile} <strong>{sourceFile.name}</strong> ({formatBytes(sourceFile.size)})
-                </Text>
+                </p>
               )}
               {error && (
                 <ToolAlert variant="error" className="mt-2">
@@ -422,9 +264,7 @@ export default function FaviconGenerator() {
               <p className="mt-8 mb-2 font-semibold uppercase">{t.setSizesAndBackground}</p>
 
               <ToolInfo>
-                <Text variant="small" tone="muted" as="p" className="mb-2! font-semibold tracking-wide uppercase">
-                  {t.pngSizes}
-                </Text>
+                <p className="mb-2! text-sm text-light font-semibold tracking-wide uppercase">{t.pngSizes}</p>
                 <div className="flex flex-wrap gap-2">
                   {PNG_SIZES.map((size) => {
                     const checked = selectedSizes.includes(size);
@@ -454,15 +294,13 @@ export default function FaviconGenerator() {
                     onChange={(e) => setTransparentBackground(e.target.checked)}
                     className="h-4 w-4! rounded border-neutral-300 p-0!"
                   />
-                  <label htmlFor="transparent-bg" className="text-sm! text-neutral-800">
+                  <label htmlFor="transparent-bg" className="text-sm! text-mid">
                     {t.transparentBackground}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <Text variant="small" tone="muted" as="span">
-                    {t.backgroundColor}
-                  </Text>
+                  <span className="text-sm text-light">{t.backgroundColor}</span>
                   <input
                     type="color"
                     value={backgroundColor}
@@ -476,14 +314,14 @@ export default function FaviconGenerator() {
               <ToolInfo className="mt-4 flex flex-wrap items-center gap-2">
                 <div className="flex items-center gap-2">
                   <input id="include-ico" type="checkbox" checked={includeIco} onChange={(e) => setIncludeIco(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
-                  <label htmlFor="include-ico" className="text-sm! text-neutral-800">
+                  <label htmlFor="include-ico" className="text-sm! text-mid">
                     {t.generateFaviconIco}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
-                  <label htmlFor="auto-download" className="text-sm! text-neutral-800">
+                  <label htmlFor="auto-download" className="text-sm! text-mid">
                     {t.autoDownload}
                   </label>
                 </div>
@@ -521,20 +359,16 @@ export default function FaviconGenerator() {
 
         <ToolSection aria-label={t.previewAndFilesLabel} className="space-y-4">
           <div className="flex items-center justify-between gap-2">
-            <Heading as="h2" className="h6">
-              {t.previewAndFiles}
-            </Heading>
+            <h2 className="h6">{t.previewAndFiles}</h2>
             {anyOutputs && (
-              <Text variant="xs" tone="muted" as="p">
+              <p className="text-xs text-light">
                 {t.totalSize} <strong>{formatBytes(totalSize)}</strong>
-              </Text>
+              </p>
             )}
           </div>
 
           {!hasSource && !anyOutputs && (
-            <Text variant="xs" tone="muted" as="p">
-              {t.addImageToGenerate}
-            </Text>
+            <p className="text-xs text-light">{t.addImageToGenerate}</p>
           )}
 
           {hasSource && (
@@ -549,9 +383,7 @@ export default function FaviconGenerator() {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.previewFavicon} className="h-full w-full object-cover" />}
                     </div>
-                    <Text variant="xs" tone="muted" as="span">
-                      {t.approximatePreview}
-                    </Text>
+                    <span className="text-xs text-light">{t.approximatePreview}</span>
                   </div>
 
                   <div className="hidden items-center gap-2 md:flex">
@@ -559,9 +391,7 @@ export default function FaviconGenerator() {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.largeIconPreview} className="h-full w-full object-cover" />}
                     </div>
-                    <Text variant="xs" tone="muted" as="span">
-                      {t.largeIconPreview}
-                    </Text>
+                    <span className="text-xs text-light">{t.largeIconPreview}</span>
                   </div>
                 </div>
               </div>
@@ -585,13 +415,11 @@ export default function FaviconGenerator() {
 
                     <div className="min-w-0 flex-1">
                       <div title={item.fileName}>
-                        <Text as="p" variant="small" className="truncate font-medium">
-                          {item.fileName}
-                        </Text>
+                        <p className="text-sm text-dark truncate font-medium">{item.fileName}</p>
                       </div>
-                      <Text as="p" variant="xs" tone="muted" className="text-xs!">
+                      <p className="text-xs! text-light">
                         {item.label} · {formatBytes(item.sizeBytes)}
-                      </Text>
+                      </p>
                     </div>
                   </div>
 

@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import Text from '../ui/typography/Text';
 
 const ui = {
   pl: {
@@ -103,9 +102,9 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       <aside className={`block lg:hidden ${widthClass}`}>
         <div className="relative rounded-xl border border-black/10 bg-white/95 shadow-sm backdrop-blur">
           <div className="flex items-center justify-between px-3 py-2">
-            <Text variant="xs" tone="muted" as="p" className="font-medium tracking-wider uppercase">
+            <p className="text-xs text-light font-medium tracking-wider uppercase">
               {t.tableOfContents} <span className="opacity-60">({items.length})</span>
-            </Text>
+            </p>
             <button type="button" aria-expanded={expanded} onClick={() => setExpanded((v) => !v)} className="text-xs underline">
               {expanded ? t.collapse : t.showAll}
             </button>
@@ -125,9 +124,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
         <div className="surface-panel-solid p-3">
-          <Text variant="xs" tone="muted" as="p" className="mb-2 tracking-wider uppercase">
-            {t.tableOfContents}
-          </Text>
+          <p className="mb-2 text-xs text-light tracking-wider uppercase">{t.tableOfContents}</p>
           <nav aria-label={t.tableOfContents}>
             <LinkList />
           </nav>

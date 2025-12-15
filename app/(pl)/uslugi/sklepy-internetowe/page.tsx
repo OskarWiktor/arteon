@@ -5,7 +5,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import {
   RiShieldCheckLine,
@@ -43,9 +43,9 @@ export const metadata = {
   openGraph: {
     title: 'Sklepy internetowe - projekt i realizacja | Arteon',
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-    url: '/uslugi/sklepy-internetowe',
+    url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
     type: 'website',
-    images: [{ url: '/assets/projects/arteon-baners-trilllizo.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-trilllizo.webp' }],
   },
 } as const;
 
@@ -88,7 +88,7 @@ export default function OfferWebPage() {
       <BenefitBelt
         items={[
           { icon: <RiSpeedFill />, label: 'Szybkość i stabilność' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczieństwo' },
+          { icon: <RiShieldCheckLine />, label: 'Bezpieczeństwo' },
           { icon: <RiBarChart2Fill />, label: 'Stała kontrola wyników' },
           { icon: <RiCustomerService2Line />, label: 'Wsparcie rozwoju' },
         ]}
@@ -124,12 +124,13 @@ export default function OfferWebPage() {
             sezon 2024: <strong>~53%</strong>, prognoza 2025: <strong>~56%</strong> udziału mobile w przychodach e-commerce){' '}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-link"
               href="https://blog.adobe.com/en/publish/2024/08/21/adobe-analytics-mobile-shopping-expected-drive-53-percent-online-sales-during-2024-holiday-season"
             >
               (źródło 1)
             </a>{' '}
-            <a target="_blank" className="inline-link" href="https://business.adobe.com/resources/holiday-shopping-report.html">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://business.adobe.com/resources/holiday-shopping-report.html">
               (źródło 2)
             </a>
             . Każda wizyta użytkownika w Twoim sklepie internetowym to dodatkowa szansa na zamówienie.
@@ -139,10 +140,10 @@ export default function OfferWebPage() {
 
           <p>
             <strong>Masz klientów u siebie, nie na cudzej platformie.</strong> Budujesz własną bazę kontaktów i relacje. Kanały direct (np. e-mail) potrafią zwracać nawet <strong>~36:1</strong>{' '}
-            <a target="_blank" className="inline-link" href="https://dma.org.uk/uploads/misc/dma-email-benchmarking-report-2023.pdf">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://dma.org.uk/uploads/misc/dma-email-benchmarking-report-2023.pdf">
               (źródło 1)
             </a>{' '}
-            <a target="_blank" className="inline-link" href="https://www.litmus.com/blog/infographic-the-roi-of-email-marketing">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.litmus.com/blog/infographic-the-roi-of-email-marketing">
               (źródło 2)
             </a>
             - rośnie lojalność i liczba zakupów.
@@ -152,7 +153,7 @@ export default function OfferWebPage() {
 
           <p>
             Średni poziom porzuceń koszyka to wciąż <strong>~70% </strong>{' '}
-            <a target="_blank" className="inline-link" href="https://baymard.com/lists/cart-abandonment-rate">
+            <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://baymard.com/lists/cart-abandonment-rate">
               (źródło)
             </a>
             . We własnym sklepie internetowym możesz uprościć ścieżkę zakupu oraz odzyskać te transakcje.
@@ -242,7 +243,7 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje sklepów internetowych" category="sklep" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -354,7 +355,7 @@ export default function OfferWebPage() {
             {
               question: 'Ile kosztuje stworzenie sklepu internetowego?',
               answer:
-                'Cena sklepu internetowego zależy od między innymi liczby produktów, ich wariantów, projektu graficznego oraz integracji (płatności, dostawy, faktury, magazyn). Proste sklepy internetowe tworzymy od 4000 zł brutto',
+                'Cena sklepu internetowego zależy między innymi od liczby produktów, ich wariantów, projektu graficznego oraz integracji (płatności, dostawy, faktury, magazyn). Proste sklepy internetowe tworzymy od 4000 zł brutto',
             },
             {
               question: 'Jak długo trwa stworzenie sklepu internetowego?',
@@ -363,12 +364,12 @@ export default function OfferWebPage() {
             {
               question: 'Ile kosztuje roczne utrzymanie sklepu internetowego?',
               answer:
-                'Koszt utrzymania sklepu internetowego jest zależy między innymi od ceny domeny ( adresu URL strony ) oraz ceny hostingu ( wynajmowanego miejsca na serwerze ) oraz ewentualnych płatnych integracji. Zwykle od 300 złotych rocznie w górę, zależnie od dostawcy i skali ruchu.',
+                'Koszt utrzymania sklepu internetowego zależy między innymi od ceny domeny (adresu URL strony) oraz ceny hostingu (wynajmowanego miejsca na serwerze) oraz ewentualnych płatnych integracji. Zwykle od 300 złotych rocznie w górę, zależnie od dostawcy i skali ruchu.',
             },
             {
-              question: 'Co powinnien zawierać dobry sklep internetowy?',
+              question: 'Co powinien zawierać dobry sklep internetowy?',
               answer:
-                'Jasną ofertę produktów, sekcje z korzyściami produktów, opinie, prostą drogę kupna produktu oraz wygodną wersję na telefon. Dodatkowo: podstawy prawne (politykę prywatności, cookies, regulaminy), wysoką prędkość ładowania oraz optymalizację pod wyszukiwarki',
+                'Jasną ofertę produktów, sekcje z korzyściami produktów, opinie, prostą drogę kupna produktu oraz wygodną wersję na telefon. Dodatkowo: podstawy prawne (politykę prywatności, pliki cookie, regulaminy), wysoką prędkość ładowania oraz optymalizację pod wyszukiwarki',
             },
             {
               question: 'Jakie metody płatności mogę mieć w sklepie internetowym?',
@@ -392,12 +393,12 @@ export default function OfferWebPage() {
               answer: 'Tak, możemy przeanalizować Twoją branżę i przygotować jasny plan rozwoju, który przełoży się na wyższą pozycję w Google oraz większą liczbę klientów',
             },
             {
-              question: 'Czy będe w stanie samodzielnie dodawać produkty w moim sklepie internetowym?',
+              question: 'Czy będę w stanie samodzielnie dodawać produkty w moim sklepie internetowym?',
               answer: 'Tak, po stworzeniu i uruchomieniu Twojego sklepu, otrzymasz szkolenie w formie PDF z obsługi sklepu',
             },
             {
               question: 'Nie znam się na technologii - czy przeprowadzicie mnie przez cały proces?',
-              answer: 'Tak, uwielbiamy pomagać i edukować - prowadzimy cały proces w przystępny oraz transparentny sposób, objaśniając wszystkie kroku bez technologicznego żargonu',
+              answer: 'Tak, uwielbiamy pomagać i edukować - prowadzimy cały proces w przystępny oraz transparentny sposób, objaśniając wszystkie kroki bez technologicznego żargonu',
             },
           ]}
         />

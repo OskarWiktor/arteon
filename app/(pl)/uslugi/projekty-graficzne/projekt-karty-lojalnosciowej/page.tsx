@@ -6,7 +6,7 @@ import Gap from '@/components/ui/Gap';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -25,9 +25,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt karty lojalnościowej | Arteon',
     description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
-    url: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
@@ -50,7 +50,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignKartaPage() {
+export default function OfferDesignLoyaltyCardPage() {
   return (
     <>
       <HeroBanner
@@ -92,8 +92,8 @@ export default function OfferDesignKartaPage() {
 
         <SectionInfo title="Dlaczego warto zainwestować w karty lojalnościowe?">
           <p>
-            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> To proste narzędzie marketingowe, które wzmacnia lojalność Towich klientów: „wracam do tej firmy, bo
-            dzięki temu, mam dodatkowe korzyści”. W efekcie zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
+            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> To proste narzędzie marketingowe, które wzmacnia lojalność Twoich klientów: „wracam do tej firmy, bo
+            dzięki temu mam dodatkowe korzyści”. W efekcie zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
           </p>
 
           <br />
@@ -163,7 +163,7 @@ export default function OfferDesignKartaPage() {
 
         <SectionInfo title="Dla kogo jest karta lojalnościowa?" subtitle="Kiedy ten projekt szybko się zwraca?">
           <p>
-            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient wracał regularnie - kilka lub kilkanaście razy w roku. Oto kilka branż w których posiadanie karty
+            Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient wracał regularnie - kilka lub kilkanaście razy w roku. Oto kilka branż, w których posiadanie karty
             lojalnościowej jest niezwykle skuteczne:
           </p>
 
@@ -180,7 +180,7 @@ export default function OfferDesignKartaPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Przykładowe projekty graficzne" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Przykładowe projekty graficzne" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -199,7 +199,7 @@ export default function OfferDesignKartaPage() {
               features: [
                 'Konsultacja założeń programu (liczba pól, rodzaj nagrody)',
                 'Projekt karty w formacie wizytówki',
-                'Spójność z Twoim identyfikacją wizualną',
+                'Spójność z Twoją identyfikacją wizualną',
                 'Plik gotowy do druku',
                 '2 kierunki wyglądu i jedna runda korekt po pierwszej prezentacji',
               ],
@@ -215,7 +215,7 @@ export default function OfferDesignKartaPage() {
                 'Warianty kart dla wielu lokalizacji lub podmarek',
                 'Możliwość różnicowania nagród i progów lojalności',
                 'Plik gotowy do druku',
-                'Ustalenie kierunku i indywisualnie ustalona rundy korekt',
+                'Ustalenie kierunku i indywidualnie ustalone rundy korekt',
               ],
               btnOne: 'Porozmawiajmy o kartach dla sieci',
               btnOneLink: '#kontakt',
@@ -229,7 +229,7 @@ export default function OfferDesignKartaPage() {
                 'Dodatkowe materiały informujące o programie (np. plakat, naklejka, grafika na social media)',
                 'Spójna linia wizualna programu',
                 'Plik gotowy do druku',
-                'Ustalenie kierunku i indywisualnie ustalona rundy korekt',
+                'Ustalenie kierunku i indywidualnie ustalone rundy korekt',
               ],
               btnOne: 'Zbudujmy pełny program lojalnościowy',
               btnOneLink: '#kontakt',
@@ -259,7 +259,7 @@ export default function OfferDesignKartaPage() {
           items={[
             {
               question: 'W jakich formatach wykonujecie karty?',
-              answer: 'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki ( 85 x 55 mm). Jeśli potrzebujesz innego formatu dopasujemy projekt.',
+              answer: 'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki (85 × 55 mm). Jeśli potrzebujesz innego formatu, dopasujemy projekt.',
             },
             {
               question: 'Czy mogę dodać logo i kolory marki na kartę lojalnościową?',

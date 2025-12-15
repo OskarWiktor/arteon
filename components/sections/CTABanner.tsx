@@ -27,8 +27,8 @@ export default function CTABanner({ title, subtitle, description, btnOne, btnOne
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
   const baseBg = overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
 
-  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-slate-900';
-  const toneMutedClass = overlay === 'black' ? 'text-white/90' : 'text-slate-900/70';
+  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-dark';
+  const toneMutedClass = overlay === 'black' ? 'text-white/90' : 'text-light';
 
   return (
     <section
@@ -46,7 +46,7 @@ export default function CTABanner({ title, subtitle, description, btnOne, btnOne
             description={description}
             headingLevel="h3"
             eyebrowVariant="dynamic"
-            eyebrowClassName={`text-base tracking-wider uppercase ${overlay === 'black' ? 'text-white' : 'text-slate-900'}`}
+            eyebrowClassName={`text-base tracking-wider uppercase ${overlay === 'black' ? 'text-white' : 'text-dark'}`}
             headingClassName="reveal-animation"
             descriptionClassName={`reveal-animation mx-auto mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}
           />

@@ -17,7 +17,7 @@ export default function CopyButton({ text, label = 'Kopiuj', copiedLabel = 'Skop
   const { copied, copy } = useCopyToClipboard();
 
   const variantClasses: Record<NonNullable<CopyButtonProps['variant']>, string> = {
-    default: 'border border-black/15 bg-white text-neutral-900 hover:bg-neutral-50',
+    default: 'border border-black/15 bg-white text-dark hover:bg-neutral-50',
     dark: 'border border-white/10 text-white/80 hover:bg-white/10',
   };
 

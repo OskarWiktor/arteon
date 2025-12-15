@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Darmowy generator stopki mailowej HTML - bez limitu',
     description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
-    url: '/narzedzia/darmowy-generator-stopki-mailowej',
+    url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
       },
     ],
   },

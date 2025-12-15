@@ -1,5 +1,7 @@
+import type { NextConfig } from 'next';
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   async headers() {
     if (process.env.VERCEL_ENV === 'production') {
       return [];
@@ -15,11 +17,18 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/narzedzia/palette-extractor',
+        has: [{ type: 'host', value: 'arteonagency.pl' }],
+        destination: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
+        permanent: true,
+      },
+      {
         source: '/:path*',
         has: [{ type: 'host', value: 'arteonagency.pl' }],
         destination: 'https://www.arteonagency.pl/:path*',
         permanent: true,
       },
+      { source: '/narzedzia/palette-extractor', destination: '/narzedzia/generator-palety-kolorow-z-obrazu', permanent: true },
       { source: '/services', destination: '/uslugi', permanent: true },
       { source: '/services/websites', destination: '/uslugi/strony-internetowe', permanent: true },
       { source: '/services/online-stores', destination: '/uslugi/sklepy-internetowe', permanent: true },
@@ -42,6 +51,13 @@ const nextConfig = {
       { source: '/projects/trilllizo', destination: '/realizacje/sklep-dla-firmy-odziezowej-trilllizo', permanent: true },
       { source: '/realizacje/katalog-produktów-restoquality', destination: '/realizacje/katalog-produktow-restoquality', permanent: true },
     ];
+  },
+  webpack(config, { dev }) {
+    if (!dev && config.cache) {
+      config.cache = Object.freeze({ type: 'memory' });
+    }
+
+    return config;
   },
 };
 

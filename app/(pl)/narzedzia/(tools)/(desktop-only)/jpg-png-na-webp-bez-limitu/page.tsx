@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
     description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',
-    url: '/narzedzia/jpg-png-na-webp-bez-limitu',
+    url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
     type: 'website',
     images: [
       {
-        url: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
       },
     ],
   },

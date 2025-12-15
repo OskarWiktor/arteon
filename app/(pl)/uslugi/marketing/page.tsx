@@ -23,9 +23,9 @@ export const metadata = {
   openGraph: {
     title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
-    url: '/uslugi/marketing',
+    url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
-    images: [{ url: '/assets/bg/abstract-bg5.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
   },
 } as const;
 
@@ -41,7 +41,7 @@ function ItemListSchema() {
     '@type': 'ItemList',
     '@id': `${base}/uslugi/marketing#itemlist`,
     name: 'Usługi marketingowe - Arteon',
-    itemListOrder: 'http://schema.org/ItemListOrderAscending',
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: services.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
@@ -86,23 +86,23 @@ export default function OfferMarketingHubPage() {
           subtitle="Nasz standard pracy"
           items={[
             {
-              title: 'Jasną strategie działania',
+              title: 'Jasną strategię działania',
               description: <>Plan działań oparty na psychologii w biznesie z podziałem na szybkie wygrane i strategiczne działania długoterminowe.</>,
               icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Raporty i decyzje oparte na danych',
-              description: <>Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak abyś miał pewność, że marketing z nami będzie skuteczny.</>,
+              description: <>Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak, abyś miał pewność, że marketing z nami będzie skuteczny.</>,
               icon: <IoAnalytics className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełna własność danych i kont',
-              description: <>Masz dostęp do weszlkich narzędzi z których korzystamy, dzięki temu w dowolnej chwili możesz sprawdzić wyniki naszych działań.</>,
+              description: <>Masz dostęp do wszystkich narzędzi, z których korzystamy, dzięki czemu w dowolnej chwili możesz sprawdzić wyniki naszych działań.</>,
               icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'SEO techniczne + treściowe',
-              description: <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientą oraz techniczną strukturę, którą lubią wyszukiwarki</>,
+              description: <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>,
               icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
             },
             {
@@ -122,7 +122,7 @@ export default function OfferMarketingHubPage() {
             },
             {
               title: 'Wsparcie po wdrożeniu',
-              description: <>Stale informujemy Cie o wynikach naszych działań, dajemy Ci jasne podsumowanie w mailu oraz prowadzimy darmowe konsultację online</>,
+              description: <>Stale informujemy Cię o wynikach naszych działań, dajemy Ci jasne podsumowanie w mailu oraz prowadzimy darmowe konsultacje online</>,
               icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
@@ -143,7 +143,7 @@ export default function OfferMarketingHubPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Przeprowadzamy audyt SEO a następnie ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i działania wspierające Twoją pozycję.
+                    Przeprowadzamy audyt SEO, a następnie ustalamy cele i zakres na trzy najbliższe miesiące: tematy treści, podstrony do dopracowania i działania wspierające Twoją pozycję.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/audyt-seo">
@@ -159,7 +159,7 @@ export default function OfferMarketingHubPage() {
               subtitle: 'Wdrożenia po audycie',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak aby Google uznał ją za wartościową i lepszą od Twojej konkurencji.</p>
+                  <p className="mb-3 text-sm">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby Google uznał ją za wartościową i lepszą od Twojej konkurencji.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/optymalizacja-seo">
                       Przejdź do optymalizacji
@@ -174,7 +174,7 @@ export default function OfferMarketingHubPage() {
               subtitle: 'Stały wzrost widoczności',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Budujemy widoczność strategicznym działaniem co miesiąć. Wprowadzamy treści, które odpowiadają na potrzeby Twoich klientów.</p>
+                  <p className="mb-3 text-sm">Budujemy widoczność strategicznym działaniem co miesiąc. Wprowadzamy treści, które odpowiadają na potrzeby Twoich klientów.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
                       Zobacz pozycjonowanie

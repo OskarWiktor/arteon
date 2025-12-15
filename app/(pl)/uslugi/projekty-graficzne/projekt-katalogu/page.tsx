@@ -7,7 +7,7 @@ import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine, RiLayoutLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
-import ProjectsOverview from '@/components/sections/projects/ProjectsOverview';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -26,9 +26,9 @@ export const metadata = {
   openGraph: {
     title: 'Projekt katalogu | Arteon',
     description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
-    url: '/uslugi/projekty-graficzne/projekt-katalogu',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
     type: 'website',
-    images: [{ url: '/assets/projects/gazetka-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/gazetka-mockup.webp' }],
   },
 } as const;
 
@@ -51,7 +51,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignKatalogPage() {
+export default function OfferDesignCatalogPage() {
   return (
     <>
       <HeroBanner
@@ -183,7 +183,7 @@ export default function OfferDesignKatalogPage() {
 
         <Gap variant="line" />
 
-        <ProjectsOverview title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -246,7 +246,7 @@ export default function OfferDesignKatalogPage() {
 
         <ContactForm
           title="Zamów projekt katalogu"
-          description="Opisz jaką ofertę chcesz przedstawić w katalogu i jak chcesz aby on wyglądał. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+          description="Opisz, jaką ofertę chcesz przedstawić w katalogu i jak chcesz, aby on wyglądał. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
           defaultSubject="Projekt katalogu"
         />
 
@@ -303,7 +303,7 @@ export default function OfferDesignKatalogPage() {
               title: 'Sklep internetowy z ofertą katalogową',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Przy tworzeniu katalogu, warto rozważyć stworzenie sklepu internetowego w którym kliencie będą mogli zakupić przedstawione w katalogu produkty</p>
+                  <p className="mb-3 text-sm">Przy tworzeniu katalogu warto rozważyć stworzenie sklepu internetowego, w którym klienci będą mogli zakupić przedstawione w katalogu produkty</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/sklepy-internetowe">
                       Zobacz ofertę sklepów internetowych
@@ -317,7 +317,7 @@ export default function OfferDesignKatalogPage() {
               title: 'Strona internetowa z usługami z katalogu',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli Twój katalog jest skupiony wokół usług, warto rozważyć stronę internetową przez którą, Twoi kliencie będą mogli się z Tobą skontaktować</p>
+                  <p className="mb-3 text-sm">Jeśli Twój katalog jest skupiony wokół usług, warto rozważyć stronę internetową, przez którą Twoi klienci będą mogli się z Tobą skontaktować</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
                       Zobacz ofertę stworzenia strony internetowej
@@ -339,7 +339,7 @@ export default function OfferDesignKatalogPage() {
 
       <CTABanner
         title="Zaprezentuj swoją ofertę w eleganckiej formie"
-        description="Zaprojektujemy katalog, który ułatwi sprzedać i wzmocni wizerunek Twojej marki."
+        description="Zaprojektujemy katalog, który ułatwi sprzedaż i wzmocni wizerunek Twojej marki."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"

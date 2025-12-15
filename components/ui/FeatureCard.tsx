@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import IconText from './IconText';
-import Text from './typography/Text';
 
 type FeatureCardProps = {
   idx?: number;
@@ -23,7 +22,7 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
     <section
       aria-labelledby={headingId}
       aria-describedby={descId}
-      className="flex h-full flex-col rounded-2xl bg-white px-5 py-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md md:px-6 md:py-4"
+      className="flex h-full flex-col surface-card-soft px-5 py-3 md:px-6 md:py-4"
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
       <IconText icon={displayIcon} iconClassName="inline-flex items-center justify-center">
@@ -33,18 +32,16 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
       </IconText>
 
       {description && (
-        <Text variant="small" tone="muted" as="div" id={descId} className="mt-1 leading-6" itemProp="description">
+        <div id={descId} className="mt-1 text-sm text-light leading-6" itemProp="description">
           {description}
-        </Text>
+        </div>
       )}
 
       {Array.isArray(points) && points.length > 0 && (
         <ul className="mt-2 space-y-2" role="list">
           {points.map((pt, i) => (
             <li key={i} className="flex items-start gap-1">
-              <Text variant="body" tone="muted" as="span">
-                {pt}
-              </Text>
+              <span className="text-base text-light">{pt}</span>
             </li>
           ))}
         </ul>

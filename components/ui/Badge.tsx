@@ -66,11 +66,11 @@ export default function Badge({
   };
 
   const variantClasses: Record<BadgeVariant, string> = {
-    default: 'border border-neutral-300 bg-white text-neutral-800',
+    default: 'border border-neutral-300 bg-white text-mid',
     selected: 'border border-black bg-slate-600 text-white',
     success: 'bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200',
     error: 'bg-red-50 text-red-800 ring-1 ring-red-200',
-    neutral: 'border border-neutral-200 bg-neutral-100 text-neutral-700',
+    neutral: 'border border-neutral-200 bg-neutral-100 text-mid',
     dark: 'bg-neutral-900 text-white',
   };
 

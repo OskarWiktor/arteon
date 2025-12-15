@@ -186,7 +186,15 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
 
 export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory';
 
-export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'emailSignature' | 'contrastChecker' | 'colorPalette';
+export type ToolItemKey =
+  | 'jpgToWebp'
+  | 'imageResize'
+  | 'favicon'
+  | 'metaCounter'
+  | 'emailSignature'
+  | 'contrastChecker'
+  | 'paletteExtractor'
+  | 'colorPalette';
 
 export type ToolSectionItem = {
   key: ToolItemKey;
@@ -226,6 +234,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
     title: 'Kolory i dostępność',
     items: [
       { key: 'contrastChecker', href: '/narzedzia/tester-kontrastu-kolorow-wcag', title: 'Tester kontrastu kolorów WCAG', icon: RiContrast2Line },
+      { key: 'paletteExtractor', href: '/narzedzia/generator-palety-kolorow-z-obrazu', title: 'Paleta kolorów z obrazu / logo', icon: RiPantoneLine },
       { key: 'colorPalette', href: '/narzedzia/generator-palet-kolorow-online', title: 'Generator palet kolorów', icon: RiPaletteLine },
     ],
   },

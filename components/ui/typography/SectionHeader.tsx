@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import Eyebrow from './Eyebrow';
-import Heading from './Heading';
 
 type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4';
 
@@ -29,6 +28,8 @@ export default function SectionHeader({
   subtitleId,
   titleId,
 }: SectionHeaderProps) {
+  const TitleTag = headingLevel;
+
   return (
     <>
       {subtitle && (
@@ -37,9 +38,9 @@ export default function SectionHeader({
         </Eyebrow>
       )}
       {title && (
-        <Heading as={headingLevel} className={headingClassName} id={titleId}>
+        <TitleTag className={headingClassName} id={titleId}>
           {title}
-        </Heading>
+        </TitleTag>
       )}
       {description && <p className={descriptionClassName}>{description}</p>}
     </>
