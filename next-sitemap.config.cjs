@@ -205,7 +205,7 @@ module.exports = {
   },
 
   robotsTxtOptions: {
-    policies: IS_PRODUCTION ? [{ userAgent: '*', allow: '/' }] : [{ userAgent: '*', disallow: '/' }],
+    policies: [{ userAgent: '*', allow: '/' }],
     additionalSitemaps: [],
   },
 };
