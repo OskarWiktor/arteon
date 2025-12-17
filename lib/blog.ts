@@ -39,8 +39,8 @@ export function getCategoriesWithCount() {
 }
 
 export function getPrimaryCategorySlug(a: Article): string {
-  const first = (a.category && a.category[0]) || 'inne';
-  return slugify(first);
+  const primary = a.primaryCategory || (a.category && a.category[0]) || 'inne';
+  return slugify(primary);
 }
 
 export function findArticleBySlug(slug: string): Article | undefined {

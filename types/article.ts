@@ -5,6 +5,7 @@ export type Article = {
   title: string;
   excerpt?: string;
   cover?: string;
+  primaryCategory?: string;
   category?: string[];
   tags?: string[];
   author?: { name: string; url?: string };

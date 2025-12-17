@@ -50,6 +50,13 @@ const nextConfig: NextConfig = {
       { source: '/projects/msc-psychotherapy', destination: '/realizacje/strona-dla-psychologa-msc-psychotherapy', permanent: true },
       { source: '/projects/trilllizo', destination: '/realizacje/sklep-dla-firmy-odziezowej-trilllizo', permanent: true },
       { source: '/realizacje/katalog-produktów-restoquality', destination: '/realizacje/katalog-produktow-restoquality', permanent: true },
+      { source: '/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow', destination: '/edukacja/design/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow', permanent: true },
+      { source: '/edukacja/widocznosc/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty', destination: '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty', permanent: true },
+      { source: '/edukacja/widocznosc/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google', destination: '/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google', permanent: true },
+      { source: '/edukacja/seo/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp', destination: '/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp', permanent: true },
+      { source: '/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google', destination: '/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google', permanent: true },
+      { source: '/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow', destination: '/edukacja/design/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow', permanent: true },
+      { source: '/edukacja/widocznosc/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic', destination: '/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic', permanent: true },
     ];
   },
   webpack(config, { dev }) {
