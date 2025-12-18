@@ -23,6 +23,7 @@ import {
   RiRestaurant2Line,
   RiSearchLine,
   RiShoppingCartLine,
+  RiTeamLine,
   RiTShirt2Line,
 } from 'react-icons/ri';
 
@@ -45,6 +46,20 @@ export const DESKTOP_NAV_ITEMS_PL: HeaderNavItem[] = [
 ];
 
 export const MOBILE_NAV_ITEMS_PL: HeaderNavItem[] = DESKTOP_NAV_ITEMS_PL.filter((it) => it.key !== 'uslugi');
+
+export type AboutItemKey = 'faq' | 'joinNetwork';
+
+export type AboutNavItem = {
+  key: AboutItemKey;
+  href: string;
+  title: string;
+  icon?: IconType;
+};
+
+export const ABOUT_NAV_ITEMS_PL: AboutNavItem[] = [
+  { key: 'faq', href: '/o-nas/faq', title: 'FAQ', icon: RiFileList2Line },
+  { key: 'joinNetwork', href: '/o-nas/dolacz-do-sieci', title: 'Dołącz do sieci', icon: RiTeamLine },
+];
 
 export type OfferSectionKey = 'witryny' | 'marketing' | 'grafika' | 'tresc';
 

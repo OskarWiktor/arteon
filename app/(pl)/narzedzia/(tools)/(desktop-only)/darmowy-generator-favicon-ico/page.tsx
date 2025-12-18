@@ -33,7 +33,8 @@ const schema = {
   url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
-  description: 'Darmowy generator favicon online po polsku. Twórz favicon.ico oraz ikony PNG 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer.',
+  description:
+    'Darmowy generator favicon online po polsku. Twórz favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer.',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {
@@ -73,12 +74,15 @@ export default function Page() {
 
         <SectionInfo title="Nowoczesny zestaw favicon - co generuje to narzędzie?">
           <p className="mb-6">
-            Generator tworzy zestaw ikon zgodny z aktualnymi wytycznymi (2024-2025): klasyczny plik <strong>favicon.ico</strong> (32x32) oraz ikony PNG o rozmiarach <strong>180x180</strong>,{' '}
-            <strong>192x192</strong> i <strong>512x512</strong>. Taki pakiet wystarcza dla kart przeglądarki, ekranów domowych i podstawowych wymagań Lighthouse oraz PWA w Chrome.
+            Generator tworzy zestaw ikon zgodny z aktualnymi wytycznymi (2024-2025): klasyczny plik <strong>favicon.ico</strong> (32x32) oraz ikony PNG o rozmiarach <strong>16x16</strong>,{' '}
+            <strong>32x32</strong>, <strong>180x180</strong>, <strong>192x192</strong> i <strong>512x512</strong> (możesz wybrać, które chcesz wygenerować).
           </p>
           <ul className="mb-6 list-disc pl-5">
             <li>
               <strong>favicon.ico</strong> - klasyczna ikona strony widoczna w kartach przeglądarki,
+            </li>
+            <li>
+              <strong>16x16 i 32x32</strong> - klasyczne favicon PNG (często używane w starszych integracjach i do małych ikon w UI przeglądarki).
             </li>
             <li>
               <strong>180x180</strong> - apple-touch-icon dla iOS.

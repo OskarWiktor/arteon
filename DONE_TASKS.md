@@ -1,6 +1,237 @@
 # DONE_TASKS
+ 
+## 2025-12-17
+ 
+- 🟡 **[AUDIT-003] Repo: audyt cleanup (puste pliki, martwe exporty, nieużywany kod/warianty)**
+  - **Zrobione 2025-12-17**:
+    - Skan `git ls-files` pod kątem pustych plików (0B): brak.
+    - Wykryto pliki śledzone w git, ale usunięte lokalnie (pozostałość po spłaszczeniu `PaletteExtractor/*`).
+    - Follow-up zadania: `CLEANUP-011`.
+
+- ✅ **[IDEA-006] Generator favicon: pełny pakiet (16/32 + apple/android) + paczka ZIP**
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
+    - `components/sections/tools/FaviconGenerator.tsx`
+    - `lib/tools/zip.ts`
+    - `lib/tools/zip/createZipBlob.ts`
+    - `TOOLS_CATALOG.md`
+  - **Zrobione 2025-12-17**:
+    - Dodano opcjonalne generowanie PNG `16x16` i `32x32` (obok `180/192/512`) + spójne nazwy plików.
+    - Dodano `Pobierz paczkę (.zip)` (wybrane pliki + opcjonalnie `site.webmanifest`).
+    - Snippet do `<head>`: **nie wdrożono** — **decyzja użytkownika**.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[IDEA-004] Konwerter JPG/PNG na WebP: pobieranie paczki ZIP + eksport raportu oszczędności**
+  - Pliki:
+    - `components/sections/tools/JpgPngToWebp.tsx`
+    - `components/sections/tools/JpgPngToWebp/useWebpDownloads.ts`
+    - `components/sections/tools/JpgPngToWebp/useWebpConversion.ts`
+    - `lib/tools/image/webpReport.ts`
+  - **Zrobione 2025-12-17**:
+    - Dodano `Pobierz wszystko (.zip)` tworzące archiwum z poprawnie skonwertowanymi plikami WebP.
+    - Dodano opcję dołączenia raportu `CSV` do ZIP.
+    - Dodano przełącznik trybu auto-download: `Pojedyncze pliki` vs `Jedna paczka ZIP`.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[PERF-002] Obrazy: zredukować agresywne ustawienia jakości (`quality={100}`)**
+  - Pliki:
+    - `components/ui/ProjectCard.tsx`
+  - **Zrobione 2025-12-17**:
+    - Obniżono jakość w `ProjectCard` z `quality={100}` do `quality={85}` (karty/miniatury/karuzele) bez regresji UI/UX.
+    - Zweryfikowano: `app/(pl)/realizacje/[slug]/page.tsx`, `app/(pl)/edukacja/[category]/[slug]/page.tsx` — brak `quality={100}`.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+## 2025-12-16
+ 
+- ✅ **[TOOLS-014] Palette Extractor: rekomendacje zmian tekstów/funkcji + ujednolicenie z innymi narzędziami**
+  - Pliki:
+    - `components/sections/tools/PaletteExtractor.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
+    - `TOOLS_CATALOG.md`
+  - **Zrobione 2025-12-16**:
+    - Uproszczono copy/UX: mniej technicznie, więcej o korzyściach.
+    - Usunięto akcje `Kopiuj paletę` i `Wyczyść` — pozostawiono kopiowanie per kolor oraz prostą podmianę obrazu przez ponowne wgranie pliku.
+    - Ujednolicono implementację z innymi narzędziami: spójna struktura `ToolSection`/`ToolInfo`/`ToolAlert`, inline upload.
+    - Spłaszczono strukturę komponentu (usunięto folder i subkomponenty `PaletteExtractor/*`).
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[CLEANUP-010] Tooltip: zastąpić lokalny timer przez `useTimeout`**
+  - Pliki:
+    - `components/sections/Tooltip.tsx`
+    - `hooks/useTimeout.ts`
+  - **Zrobione 2025-12-16**:
+    - Tooltip używa `useTimeout()` do opóźnionego otwarcia (zamiast lokalnego `timerRef` + `clearTimer`).
+    - Zachowano zachowanie: `delay`, `Escape`, outside click, scroll i touch toggle.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły”**
+  - **Zrobione 2025-12-16**:
+    - Dodano 10 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-001`–`IDEA-010`.
+  - **Zrobione 2025-12-16**:
+    - Dodano 8 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-011`–`IDEA-018`.
+
+- ✅ **[TOOLS-016] Narzędzia: ujednolicić upload/drag&drop (ToolFileDropzone)**
+  - Pliki:
+    - `components/sections/tools/ImageResizeTool.tsx`
+    - `components/sections/tools/JpgPngToWebp.tsx`
+    - `components/sections/tools/JpgPngToWebp/useWebpQueue.ts`
+    - `components/ui/tools/ToolFileDropzone.tsx`
+    - `hooks/useFileDropzone.ts`
+  - **Zrobione 2025-12-16**:
+    - Przepięto UI uploadu w `ImageResizeTool` i `JpgPngToWebp` na wspólny komponent `ToolFileDropzone` (copy i klasy bez zmian).
+    - WebP: uproszczono `useWebpQueue` — `addFiles()` jest jedynym wejściem, usunięto zduplikowane handlery (`onDrop`/`onDragOver`/`onChange`).
+    - Zachowano reset inputa po wyborze oraz działanie drag&drop.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[PROJECT-005] Realizacje: dopiąć `cta` (brakujące) + naprawić niespójne CTA**
+  - Plik: `data/pl/projects.json`
+  - **Zrobione 2025-12-16**:
+    - Dodano brakujące `cta` dla slugów: `strona-dla-psychologa-msc-psychotherapy`, `katalog-produktow-restoquality`, `wizytowka-dla-spa-talia`, `blog-sportowy-pilka-nozna-pl`, `sklep-dla-firmy-odziezowej-trilllizo`, `meridol-accessibility`, `wizytowki-dla-gastronomii-restoquality`, `elmex-accessibility`, `sanex-accessibility`, `sanex`, `palmolive`, `colgate`, `detergent-regulations`.
+    - Naprawiono niespójne CTA dla `wizytowka-dla-kancelarii-adwokackiej-lux-nova` (copy, linki, `backgroundImage`).
+    - Ujednolicono: `btnOneLink: "/kontakt"`, `btnTwoLink` do pasującej usługi, `backgroundImage` z assetów tej realizacji.
+    - Weryfikacja: `projects.json` parsuje się poprawnie (JSON OK).
+
+- ✅ **[CLEANUP-009] Tools: wynieść wyliczanie `inputFormat` (ext/MIME) do shared util**
+  - Pliki:
+    - `lib/tools/fileFormat.ts`
+    - `components/sections/tools/PaletteExtractor.tsx`
+    - `components/sections/tools/ImageResizeTool.tsx`
+  - **Zrobione 2025-12-16**:
+    - Dodano util `getFileFormatLabel(file)` zwracający uppercase ext lub MIME subtype (fallback `N/D`).
+    - Podmieniono wyliczanie `inputFormat` w `PaletteExtractor` i `ImageResizeTool` na wspólny helper (bez zmian w UI/UX i copy).
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[PROJECT-006] Realizacje: higiena treści**
+  - Plik: `data/pl/projects.json`
+  - **Zrobione 2025-12-16**:
+    - `blog-sportowy-pilka-nozna-pl` (linia 756): `PilkaNożna.pl` → `PiłkaNożna.pl`
+    - `blog-sportowy-pilka-nozna-pl` (linia 758): `zmianie systemy` → `zmianie systemu`
+    - `blog-sportowy-pilka-nozna-pl` (linia 758): `...z grupą programistów</p>` → `...z grupą programistów.</p>`
+    - `katalog-produktow-restoquality` (linia 652): `katalogu, ze sprzętami` → `katalogu ze sprzętami`
+    - `katalog-produktow-restoquality` (linia 652): `parametrów, przez właścicieli` → `parametrów przez właścicieli`
+    - `katalog-produktow-restoquality` (linia 652): `W katalogu zebraliśmy znajdują się piece do pizzy` → `W katalogu znajdują się piece do pizzy`
+    - `katalog-produktow-restoquality` (linia 681): `Tak. Tworzymy możemy stworzyć autorskie ikony cech produktu, jak i inne elementy...` → `Tak. Możemy stworzyć autorskie ikony cech produktu oraz inne elementy...`
+    - `katalog-produktow-restoquality` (linia 703): `katalogu toduktów` → `katalogu produktów`
+    - `sklep-dla-firmy-odziezowej-trilllizo` (linia 779): `dedykowanie szkolenie` → `dedykowane szkolenie`
+    - `sklep-dla-firmy-odziezowej-trilllizo` (linia 780): `SEO ( techniczne, zdjęcia, treść )` → `SEO (techniczne, zdjęcia, treść)`
+    - `sklep-dla-firmy-odziezowej-trilllizo` (linia 794): `odziezowej` → `odzieżowej`
+    - `folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group` (linia 106): `wirmy` → `firmy`
+    - `folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group` (linia 106): `A3 ( składany na A4 )` → `A3 (składany na A4)`
+    - `folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group` (linia 107): `( projekt, dobór materiałów i realizacja u jednego wykonawcy )` → `(projekt, dobór materiałów i realizacja u jednego wykonawcy)`
+    - `folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group` (linia 107): `przekirowuje` → `przekierowuje`
+    - `folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group` (linia 107): `wraz z szczegółowym` → `wraz ze szczegółowym`
+    - `detergent-regulations` (linia 993): `konfugaracji` → `konfiguracji`
+    - `detergent-regulations` (linia 993): `lokalizacje, oraz` → `lokalizacje oraz`
+    - `detergent-regulations` (linia 993): `m.in mapy` → `m.in. mapy`
+    - `wizytowki-dla-gastronomii-restoquality` (linia 829): `Szablon kompozycji umożliwiają` → `Szablon kompozycji umożliwia`
+    - `wizytowki-dla-gastronomii-restoquality` (linia 836): `imie` → `imię`
+    - `wizytowki-dla-gastronomii-restoquality` (linia 856): `pliki produkcyjny` → `pliki produkcyjne`
+    - `wizytowka-dla-spa-talia` (linia 712): `<strong>wizytówke</strong>` → `<strong>wizytówki</strong>`
+    - `detergent-regulations`: doprecyzować opis analityki (co wdrożono + jak testowano).
+
+- 🟡 **[AUDIT-005] Repo: audyt performance sanity-check (client components/rerender/obrazy)**
+  - **Zrobione 2025-12-16**:
+    - Skan `public/assets/**` pod kątem największych plików (m.in. `public/assets/projects/arteon-a-msc2.webp` ~791KB, `public/assets/bg/abstract-bg1.webp` ~344KB).
+    - Skan kodu pod perf-smells: `quality={100}` (`components/ui/ProjectCard.tsx`), `bg-fixed` (`components/sections/HeroBanner.tsx`, `components/sections/CTABanner.tsx`), client-only `CodeBlock` (`components/ui/CodeBlock.tsx`).
+    - Follow-up zadania: `PERF-001`, `PERF-002`, `PERF-003`.
 
 ## 2025-12-15
+
+- 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty)**
+  - **Zrobione 2025-12-15**:
+    - Skan duplikacji: narzędzia (`components/sections/tools/*`), dropzone (`hooks/useFileDropzone.ts`, `components/ui/tools/ToolFileDropzone.tsx`), timery/copy (`hooks/useTimeout.ts`, `hooks/useCopyToClipboard.ts`).
+    - Follow-up zadania: `TOOLS-016`, `CLEANUP-009`, `CLEANUP-010`.
+
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły”**
+  - **Zrobione 2025-12-15**:
+    - Dodano 10 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-001`–`IDEA-010`.
+
+- ✅ **[SEO-015] O nas: dodać podstronę FAQ (`/o-nas/faq`) i rozbudować treść pod SEO**
+  - Pliki:
+    - `app/(pl)/o-nas/faq/page.tsx`
+    - `app/(pl)/mapa-strony/page.tsx`
+    - `components/shared/Footer.tsx`
+    - `PAGES_CATALOG.md`
+  - **Zrobione 2025-12-15**:
+    - Utworzono nową stronę FAQ z min. 25 pytaniami i odpowiedziami (spójny ton + long-tail pod SEO).
+    - Dodano `metadata` (title/description/canonical/openGraph) oraz schema.org `FAQPage` + breadcrumbs (JSON-LD, bez duplikacji).
+    - Podlinkowano `/o-nas/faq` w stopce oraz na `/mapa-strony`; uzupełniono `PAGES_CATALOG.md`.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[PAGES-002] /o-nas: przebudowa copy + sekcje proof (realizacje i opinie)**
+  - Plik:
+    - `app/(pl)/o-nas/page.tsx`
+  - **Zrobione 2025-12-15**:
+    - Zmieniono narrację strony „O nas” tak, aby opisywała szerszą ofertę (strategia, branding, technologia, marketing) zamiast komunikacji skupionej na „samej stronie”.
+    - Zaktualizowano: `HeroBanner`, `BenefitBelt`, copy w `SectionBasic`, opis w `SectionInfo` oraz pierwszy wyróżnik w `SectionSteps`.
+    - Dodano sekcje proof: `ProjectsCarousel` + `TestimonialsCarousel` po `WorkSteps`.
+    - Zaktualizowano `metadata.title` i `metadata.description` (bez zmian OG image — osobno w `SEO-013`).
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- 🟡 **[AUDIT-004] Repo: audyt SEO sanity-check (canonical/OG/schema/robots/sitemap)**
+  - **Zrobione 2025-12-15**:
+    - Sprawdzono canonical (absolute), OpenGraph (URL absolute) i Schema.org (URL absolute) na kluczowych stronach.
+    - Zweryfikowano `public/robots.txt` oraz sitemap index (`public/sitemap.xml` → `public/sitemap-0.xml`) – bez regresji.
+    - Follow-up zadania: `SEO-013`, `SEO-016`, `SEO-017`.
+
+- ✅ **[CLEANUP-008] Karuzele: `CarouselCard` ma re-use `ProjectCard` i `TestimonialCard`**
+  - Pliki:
+    - `components/ui/carousel/CarouselCard.tsx`
+    - `components/ui/ProjectCard.tsx`
+    - `components/ui/TestimonialCard.tsx`
+    - `components/sections/projects/ProjectsCarouselClient.tsx`
+    - `components/sections/TestimonialsCarousel.tsx`
+  - **Zrobione 2025-12-15**:
+    - Potwierdzono, że `CarouselCard` renderuje `ProjectCard` dla wariantu `project` (`size="small"`) oraz `TestimonialCard` dla wariantu `testimonial`.
+    - Nie było potrzeby zmian w kodzie – integracja była już zaimplementowana.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[COPY-042] CookieConsent: usunąć zbędną spację w wyróżnieniu „Google Analytics 4”**
+  - Plik: `components/shared/CookieConsent.tsx`
+  - **Zrobione 2025-12-15**:
+    - Poprawiono: `<strong> Google Analytics 4</strong>` → `<strong>Google Analytics 4</strong>`.
+    - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
+
+- ✅ **[COPY-041] Cookies: ujednolicić nazewnictwo na „pliki cookie” w UI**
+  - Pliki:
+    - `components/shared/Footer.tsx`
+    - `components/shared/CookieConsent.tsx`
+  - **Zrobione 2025-12-15**:
+    - Ujednolicono copy w UI: `cookies/Cookies` → `pliki cookie` (stopka + modal).
+    - Zaktualizowano dokumentację: `COMPONENTS_CATALOG.md`.
+    - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
+
+- ✅ **[COPY-040] /narzedzia (hub): poprawić literówkę w opisie (metadata/OG)**
+  - Plik: `app/(pl)/narzedzia/page.tsx`
+  - **Zrobione 2025-12-15**:
+    - Poprawiono: `ulepszą swoją identyfikację` → `ulepsz swoją identyfikację` w metadata i OpenGraph.
+    - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
+
+- ✅ **[COPY-039] Meta length tool (strona): poprawić odmianę „długości” w tytule i breadcrumbs**
+  - Plik: `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
+  - **Zrobione 2025-12-15**:
+    - Ujednolicono zapis: `Licznik długość ...` → `Licznik długości ...` (hero + breadcrumbs).
+    - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
+
+- ✅ **[COPY-038] PaletteExtractor (strona): poprawić „Cię” oraz spójność liczby w opisach**
+  - Plik: `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
+  - **Zrobione 2025-12-15**:
+    - Poprawiono CTA: `wyróżni Cie` → `wyróżni Cię`.
+    - Ujednolicono liczbę w opisach (spójne `zdjęcie` + `na nim`) w metadata/OG/schema.
+    - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
+
+- ✅ **[COPY-037] ColorPaletteGenerator: poprawić cudzysłów w opisie palety**
+  - Plik: `components/sections/tools/ColorPaletteGenerator.tsx`
+  - **Zrobione 2025-12-15**:
+    - Naprawiono mieszanie cudzysłowów w opisie palety pastelowej: `„kremowe"` → `„kremowe”`.
+    - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
+
+- ✅ **[COPY-036] ServicesSteps: poprawić literówki i interpunkcję w opisach usług**
+  - Plik: `components/sections/steps/ServicesSteps.tsx`
+  - **Zrobione 2025-12-15**:
+    - Poprawiono: `nie zależnie` → `niezależnie`, usunięto zbędny przecinek po `czemu` oraz `jak i` → `i` w `ui.pl.description`.
+    - Ujednolicono zapis w liście: `Bezpłatne Szkolenie PDF` → `Bezpłatne szkolenie PDF`.
+    - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[TOOLS-010] EmailSignatureGenerator: refactor (HTML/sanitizacja/kopiowanie)**
   - Pliki:

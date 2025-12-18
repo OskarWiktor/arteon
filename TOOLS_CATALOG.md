@@ -58,19 +58,19 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 
 ---
 
-## `PaletteExtractor` (`components/sections/tools/PaletteExtractor/PaletteExtractor.tsx`)
+## `PaletteExtractor` (`components/sections/tools/PaletteExtractor.tsx`)
 
-- **Co robi**: Wyciąga dominujące kolory z obrazu/logo i prezentuje je jako paletę swatchy z kodami HEX (do kopiowania).
+- **Co robi**: Wyciąga dominujące kolory z obrazu i prezentuje je jako paletę z kodami HEX. Każdy kolor można skopiować jednym kliknięciem.
 - **Strona narzędzia**: `/narzedzia/generator-palety-kolorow-z-obrazu` (`app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`)
 - **Wejście (UI)**:
-  - **[upload]** `ImageDropzone` (drag&drop lub wybór pliku).
+  - **[upload]** drag&drop lub wybór pliku (inline w komponencie, bez osobnego subkomponentu).
   - **[formaty]** akceptowane MIME:
     - `image/png`,
     - `image/jpeg`, `image/jpg`,
     - `image/svg+xml` (best-effort; parser zależy od przeglądarki).
   - **[akcje]**:
-    - `Kopiuj paletę` (wszystkie HEX w osobnych liniach),
-    - `Wyczyść` (czyści stan i zwalnia ObjectURL).
+    - Podmiana obrazu: wgraj kolejny plik (drag&drop lub wybór z dysku) – stan i podgląd resetują się automatycznie.
+    - Kopiowanie per kolor (przycisk `CopyButton` obok każdego koloru).
 - **Stan i dane**:
   - `file`: wybrany plik obrazu,
   - `previewUrl`: `ObjectURL` używany do podglądu i analizy,
@@ -87,11 +87,15 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - wybiera do `12` kolorów,
   - odrzuca kolory zbyt podobne (RGB distance < `40`).
 - **Prezentacja wyników**:
-  - `PaletteSwatches` renderuje listę swatchy (kolor + HEX + RGB) i przyciski `CopyButton`.
+  - Inline rendering swatchy (kolor + HEX + RGB) z przyciskami `CopyButton`.
+  - Grid 2-kolumnowy na `sm` breakpoint.
 - **Cleanup**:
-  - przy `Wyczyść` oraz przy unmount komponentu zwalniany jest `previewUrl` przez `revokeObjectUrl()` (`lib/tools/objectUrl.ts`).
+  - przy podmianie pliku oraz przy unmount komponentu zwalniany jest `previewUrl` przez `revokeObjectUrl()` (`lib/tools/objectUrl.ts`).
+- **Struktura**:
+  - **[flat]** pojedynczy plik komponentu (bez podfolderu i subkomponentów).
+  - **[unified]** spójna struktura z innymi narzędziami: `ToolSection`, `ToolInfo`, `ToolAlert`, inline upload area.
 - **Zależności**:
-  - **UI**: `ToolSection`, `ToolInfo`, `ToolAlert`, `Button`, `Badge`, `CopyButton`.
+  - **UI**: `ToolSection`, `ToolInfo`, `ToolHelper`, `ToolAlert`, `ToolFileDropzone`, `Badge`, `CopyButton`.
   - **Lib**: `lib/tools/image/canvas.ts`, `lib/tools/color/extractPalette.ts`, `lib/tools/objectUrl.ts`, `lib/tools/formatBytes.ts`.
   - **Side effecty**: `canvas` (`getImageData`) + `ObjectURL` + clipboard (przez `CopyButton`).
 
@@ -151,23 +155,30 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[próbka tekstu]** dowolny tekst testowy (nagłówek/CTA/akapit).
   - **[foreground]** kolor tekstu: picker + input tekstowy.
   - **[background]** kolor tła: picker + input tekstowy.
+  - **[cel dopasowania]** wybór progu WCAG (AA/AAA) dla tekstu/ikony.
   - **[akcje]**:
     - **`Zamień kolory miejscami`**: swap foreground/background.
     - **`Reset do czarny na białym`**.
+    - **`Dopasuj`**: proponuje wariant koloru foreground spełniający wybrany próg + pozwala go ustawić i skopiować.
 - **Obsługiwane formaty koloru**:
   - **HEX**: `#rgb` i `#rrggbb`.
   - **RGB(A)**: `rgb(r,g,b)` i `rgba(r,g,b,a)`.
+  - **HSL(A)**: `hsl(h,s%,l%)` i `hsla(h,s%,l%,a)`.
   - **Uwagi**:
-    - alpha w `rgba()` jest parsowana przez regex, ale nie wpływa na obliczenia (wykorzystywane są tylko kanały R/G/B).
-    - brak wsparcia dla nazw kolorów (`red`) i HSL.
+    - brak wsparcia dla nazw kolorów (`red`).
+    - alpha w `rgba()` / `hsla()` jest uwzględniana w obliczeniach (kompozycja na tle).
 - **Algorytm kontrastu**:
-  - **[parsing]** `parseColor()` (`lib/tools/color/contrast.ts`) zwraca `{ r, g, b }` lub `null`.
+  - **[parsing]** `parseColor()` (`lib/tools/color/contrast.ts`) zwraca `{ r, g, b, a }` lub `null`.
     - **HEX**: `hexToRgb()` (`lib/tools/color/convert.ts`).
-    - **RGB(A)**: parsowany przez regex; alpha jest ignorowana.
+    - **RGB(A)**: parsowany przez regex (alpha obsługiwana).
+    - **HSL(A)**: `parseHsl()` + `hslToRgb()` (`lib/tools/color/convert.ts`).
+  - **[compositing]** jeśli kolor ma alpha, kontrast jest liczony po kompozycji:
+    - foreground na background,
+    - a jeśli background ma alpha, najpierw kompozycja background na białym (`#fff`).
   - **[luminance]** `relativeLuminance()` (`lib/tools/color/contrast.ts`) liczy luminancję względną wg WCAG.
   - **[ratio]** `getContrastRatio()` (`lib/tools/color/contrast.ts`):
     - `ratio = (lighter + 0.05) / (darker + 0.05)`,
-    - wynik jest zaokrąglany do 2 miejsc.
+    - wynik nie jest zaokrąglany (UI formatuje do 2 miejsc).
 - **Progi WCAG (z kodu)**:
   - **Tekst zwykły**:
     - **AA**: `ratio >= 4.5`.
@@ -200,6 +211,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - podgląd,
     - pobieranie pojedynczych plików,
     - pobieranie wszystkich,
+    - pobieranie paczki ZIP (opcjonalnie z `site.webmanifest`),
     - auto-download po generacji.
 - **Wejście (UI)**:
   - **[upload]** `drag&drop` lub wybór pliku.
@@ -208,11 +220,12 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - `image/jpeg`, `image/jpg`,
     - `image/svg+xml`.
 - **Konfiguracja generowania**:
-  - **[rozmiary PNG]** `selectedSizes` (domyślnie `[180, 192, 512]`).
+  - **[rozmiary PNG]** `selectedSizes` (domyślnie `[16, 32, 180, 192, 512]`).
   - **[favicon.ico]** `includeIco` (domyślnie `true`).
   - **[tło]**:
     - `transparentBackground`: czy wynik ma mieć przezroczyste tło.
     - `backgroundColor`: kolor tła, używany gdy `transparentBackground === false`.
+  - **[manifest]** `includeWebmanifest`: dołącza `site.webmanifest` do paczki ZIP.
   - **[auto-download]** `autoDownload`: automatycznie pobiera każdy plik zaraz po wygenerowaniu.
 - **Algorytm generowania** (`lib/tools/favicon/generator.ts`):
   - **[core]** `generateFaviconOutputs()`:
@@ -233,6 +246,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[download]**:
     - pojedyncze pobranie: link `<a download>`.
     - `Pobierz wszystkie`: iteruje po `outputs`.
+    - `Pobierz paczkę (.zip)`: tworzy ZIP z wybranymi outputami (oraz opcjonalnie `site.webmanifest`) przez `createZipBlob()` (`lib/tools/zip.ts`).
     - `autoDownload`: przy generowaniu (callback `onOutput`) pobiera każdy plik osobno.
   - **[preview]** miniatury otwierają podgląd w nowej karcie (`window.open(url, '_blank')`).
 - **Cleanup**:

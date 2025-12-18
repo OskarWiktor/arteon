@@ -1,14 +1,21 @@
-import type { RGB } from '@/lib/tools/color/types';
-import { hexToRgb } from '@/lib/tools/color/convert';
+import type { RGB, RGBA } from '@/lib/tools/color/types';
+import { hexToRgb, hslToRgb, parseHsl } from '@/lib/tools/color/convert';
 
-export function parseColor(color: string): RGB | null {
+export function parseColor(color: string): RGBA | null {
   const trimmed = color.trim();
 
   if (trimmed.startsWith('#')) {
-    return hexToRgb(trimmed);
+    const rgb = hexToRgb(trimmed);
+    return rgb ? { ...rgb, a: 1 } : null;
   }
 
-  const rgbMatch = trimmed.match(/^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+))?\s*\)$/i);
+  const hsl = parseHsl(trimmed);
+  if (hsl) {
+    const rgb = hslToRgb({ h: hsl.h, s: hsl.s, l: hsl.l });
+    return { ...rgb, a: hsl.a };
+  }
+
+  const rgbMatch = trimmed.match(/^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*([0-9.]+%?))?\s*\)$/i);
 
   if (rgbMatch) {
     const r = Number(rgbMatch[1]);
@@ -19,10 +26,34 @@ export function parseColor(color: string): RGB | null {
       return null;
     }
 
-    return { r, g, b };
+    let a = 1;
+    const alphaRaw = rgbMatch[4];
+    if (alphaRaw !== undefined) {
+      if (alphaRaw.endsWith('%')) {
+        a = Number(alphaRaw.slice(0, -1)) / 100;
+      } else {
+        a = Number(alphaRaw);
+      }
+
+      if (Number.isNaN(a) || a < 0 || a > 1) return null;
+    }
+
+    return { r, g, b, a };
   }
 
   return null;
+}
+
+function compositeOver(foreground: RGBA, background: RGB): RGB {
+  const a = foreground.a;
+  const inv = 1 - a;
+  const clampChannel = (v: number) => Math.min(255, Math.max(0, v));
+
+  return {
+    r: clampChannel(foreground.r * a + background.r * inv),
+    g: clampChannel(foreground.g * a + background.g * inv),
+    b: clampChannel(foreground.b * a + background.b * inv),
+  };
 }
 
 function channelToLinear(c: number): number {
@@ -39,18 +70,22 @@ export function relativeLuminance({ r, g, b }: RGB): number {
 }
 
 export function getContrastRatio(foreground: string, background: string): number | null {
-  const fgRgb = parseColor(foreground);
-  const bgRgb = parseColor(background);
+  const fg = parseColor(foreground);
+  const bg = parseColor(background);
 
-  if (!fgRgb || !bgRgb) return null;
+  if (!fg || !bg) return null;
 
-  const L1 = relativeLuminance(fgRgb);
-  const L2 = relativeLuminance(bgRgb);
+  const baseBackground: RGB = { r: 255, g: 255, b: 255 };
+  const bgOpaque = bg.a < 1 ? compositeOver(bg, baseBackground) : { r: bg.r, g: bg.g, b: bg.b };
+  const fgOpaque = fg.a < 1 ? compositeOver(fg, bgOpaque) : { r: fg.r, g: fg.g, b: fg.b };
+
+  const L1 = relativeLuminance(fgOpaque);
+  const L2 = relativeLuminance(bgOpaque);
 
   const lighter = Math.max(L1, L2);
   const darker = Math.min(L1, L2);
 
   const ratio = (lighter + 0.05) / (darker + 0.05);
 
-  return Math.round(ratio * 100) / 100;
+  return ratio;
 }

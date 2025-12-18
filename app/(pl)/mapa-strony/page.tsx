@@ -118,6 +118,8 @@ const infoPages: NavItem[] = [
   { title: 'Edukacja', href: '/edukacja' },
   { title: 'Narzędzia', href: '/narzedzia' },
   { title: 'O nas', href: '/o-nas' },
+  { title: 'FAQ', href: '/o-nas/faq' },
+  { title: 'Dołącz do sieci', href: '/o-nas/dolacz-do-sieci' },
   { title: 'Kontakt', href: '/kontakt' },
   { title: 'Polityka prywatności', href: '/polityka-prywatnosci' },
   { title: 'Regulamin świadczenia usług', href: '/regulamin' },

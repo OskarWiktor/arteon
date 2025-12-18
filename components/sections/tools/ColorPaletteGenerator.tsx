@@ -49,7 +49,7 @@ const ui = {
       },
       softPastel: {
         label: 'Paleta pastelowa',
-        description: 'Ten sam odcień z obniżonym nasyceniem i podniesioną jasnością - przesunięcie w stronę środka i górnej części przestrzeni HSL, które daje miękkie, „kremowe" kolory.',
+        description: 'Ten sam odcień z obniżonym nasyceniem i podniesioną jasnością - przesunięcie w stronę środka i górnej części przestrzeni HSL, które daje miękkie, „kremowe” kolory.',
       },
       deepDark: {
         label: 'Paleta ciemna',

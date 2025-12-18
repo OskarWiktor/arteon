@@ -55,7 +55,7 @@ export default function Page() {
       <Script id="ld-json-meta-length-tool" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <HeroBanner
-        title="Licznik długość meta title i description"
+        title="Licznik długości meta title i description"
         description="Wpisz tytuł i opis strony, a narzędzie obliczy liczbę znaków, słów, szerokość w pikselach i pokaże, czy długość jest zgodna z zasadami SEO"
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
@@ -63,7 +63,7 @@ export default function Page() {
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzie' }}
-        third={{ href: `/narzedzia/licznik-dlugosci-meta-title-i-description`, label: 'Licznik długość meta title i description' }}
+        third={{ href: `/narzedzia/licznik-dlugosci-meta-title-i-description`, label: 'Licznik długości meta title i description' }}
         includeJsonLd
       />
 

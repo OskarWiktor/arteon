@@ -14,11 +14,14 @@ type UseWebpConversionLabels = {
   webpGenerationError: string;
 };
 
+ type WebpAutoDownloadMode = 'files' | 'zip';
+
 type UseWebpConversionOptions = {
   files: WebpQueueItem[];
   setFiles: Dispatch<SetStateAction<WebpQueueItem[]>>;
   quality: number;
   autoDownload: boolean;
+  autoDownloadMode: WebpAutoDownloadMode;
   setGlobalError: Dispatch<SetStateAction<string | null>>;
   setCopyInfo: Dispatch<SetStateAction<string | null>>;
   triggerDownloadFromUrl: (url: string, filename: string) => void;
@@ -86,13 +89,13 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
                       outputSize,
                       ratio,
                       usedQuality,
-                      downloaded: options.autoDownload ? true : f.downloaded,
+                      downloaded: options.autoDownload && options.autoDownloadMode === 'files' ? true : f.downloaded,
                     }
                   : f,
               ),
             );
 
-            if (options.autoDownload) {
+            if (options.autoDownload && options.autoDownloadMode === 'files') {
               options.triggerDownloadFromUrl(url, filename);
             }
           } catch (err) {
@@ -117,6 +120,7 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
     [
       options,
       options.autoDownload,
+      options.autoDownloadMode,
       options.files,
       options.labels.addAtLeastOne,
       options.labels.allProcessed,

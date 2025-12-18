@@ -1,5 +1,6 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -14,6 +15,12 @@ type CarouselCardProps =
   | {
       variant: 'project';
       project: ProjectPreview;
+    }
+  | {
+      variant: 'tool';
+      title: string;
+      href: string;
+      icon?: ReactNode;
     }
   | {
       variant: 'article';
@@ -34,6 +41,31 @@ export function CarouselCard(props: CarouselCardProps) {
 
   if (props.variant === 'testimonial') {
     return <TestimonialCard item={props.item} />;
+  }
+
+  if (props.variant === 'tool') {
+    return (
+      <Link
+        href={props.href}
+        className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+      >
+        <article className="flex h-full flex-col surface-card-lift border border-gray-200 p-4 md:p-6">
+          {props.icon ? (
+            <div className="mb-4 flex justify-start" aria-hidden>
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-500 shadow-sm ring-1 ring-black/5">
+                {props.icon}
+              </div>
+            </div>
+          ) : null}
+
+          <h3 className="h4 mb-1 text-dark">{props.title}</h3>
+
+          <div className="mt-auto pt-4">
+            <span className="text-sm text-light underline underline-offset-4 transition group-hover:opacity-80">Otwórz narzędzie</span>
+          </div>
+        </article>
+      </Link>
+    );
   }
 
   const { article: a, href, readingTimeLabel, publicationDateLabel } = props;

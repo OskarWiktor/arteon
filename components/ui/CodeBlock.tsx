@@ -1,6 +1,3 @@
-'use client';
-
-import { useMemo } from 'react';
 import CopyButton from './buttons/CopyButton';
 
 const ui = {
@@ -26,7 +23,7 @@ type CodeBlockProps = {
 export default function CodeBlock({ code, language, filename, caption, showLineNumbers = true, wrap = false, highlightLines = [], className = '' }: CodeBlockProps) {
   const t = ui.pl;
 
-  const lines = useMemo(() => code.replace(/\n$/, '').split('\n'), [code]);
+  const lines = code.replace(/\n$/, '').split('\n');
 
   return (
     <figure

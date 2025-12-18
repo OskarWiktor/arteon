@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState, type ChangeEvent, type DragEvent } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { createWebpQueueItems, type WebpQueueItem } from '@/lib/tools/image/webpQueue';
 import { revokeObjectUrl, revokeObjectUrls } from '@/lib/tools/objectUrl';
 
@@ -43,28 +43,6 @@ export function useWebpQueue(options: UseWebpQueueOptions) {
     },
     [options.addJpgPngOnlyError],
   );
-
-  const handleFileChange = useCallback(
-    (e: ChangeEvent<HTMLInputElement>) => {
-      addFiles(e.target.files);
-      e.target.value = '';
-    },
-    [addFiles],
-  );
-
-  const handleDrop = useCallback(
-    (e: DragEvent<HTMLLabelElement>) => {
-      e.preventDefault();
-      e.stopPropagation();
-      addFiles(e.dataTransfer.files);
-    },
-    [addFiles],
-  );
-
-  const handleDragOver = useCallback((e: DragEvent<HTMLLabelElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-  }, []);
 
   const removeFile = useCallback((id: string) => {
     setFiles((prev) => {
@@ -118,9 +96,6 @@ export function useWebpQueue(options: UseWebpQueueOptions) {
     globalError,
     setGlobalError,
     addFiles,
-    handleFileChange,
-    handleDrop,
-    handleDragOver,
     removeFile,
     reconvertFile,
     clearAll,

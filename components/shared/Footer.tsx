@@ -10,7 +10,7 @@ const ui = {
     contentCreation: 'Tworzenie treści',
     marketing: 'Marketing',
     other: 'Inne',
-    cookieSettings: 'Ustawienia cookies',
+    cookieSettings: 'Ustawienia plików cookie',
     sitemap: 'Mapa strony',
     copyright: 'Wszelkie prawa zastrzeżone.',
     description: 'Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.',
@@ -121,6 +121,7 @@ const navLinks = [
 const otherLinks = [
   { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
   { href: '/regulamin', label: 'Regulamin świadczenia usług' },
+  { href: '/o-nas/faq', label: 'FAQ' },
 ];
 
 export default function Footer() {

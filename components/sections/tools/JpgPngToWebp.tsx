@@ -1,10 +1,11 @@
 ﻿'use client';
 
 import Button from '@/components/ui/buttons/Button';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import Badge from '@/components/ui/Badge';
+import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { downloadFromUrl } from '@/lib/tools/download';
 import { formatBytes } from '@/lib/tools/formatBytes';
@@ -34,13 +35,19 @@ const ui = {
     setQuality: 'Ustaw jakość WebP',
     qualityHelper:
       'Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80% to dobry kompromis dla większości stron. Narzędzie automatycznie obniży jakość, jeśli wynikowy plik byłby większy od oryginału.',
-    autoDownloadAll: 'Automatycznie pobierz wszystkie pliki po konwersji',
+    autoDownloadAll: 'Automatycznie pobierz po konwersji',
+    autoDownloadModeFiles: 'Pojedyncze pliki',
+    autoDownloadModeZip: 'Jedna paczka ZIP',
+    includeCsvReport: 'Dołącz raport CSV do ZIP',
     convertAndDownload: 'Konwertuj i pobierz',
     inQueue: 'W kolejce:',
     files: 'plików',
     convert: 'Konwertuj',
     converting: 'Konwertuję…',
     downloadAll: 'Pobierz wszystkie',
+    downloadZip: 'Pobierz wszystko (.zip)',
+    zipping: 'Przygotowuję paczkę ZIP…',
+    zipGenerationError: 'Nie udało się przygotować paczki ZIP.',
     clearAll: 'Wyczyść wszystko',
     copySummary: 'Skopiuj podsumowanie',
     conversionReport: 'Raport konwersji JPG/PNG → WebP:',
@@ -93,14 +100,16 @@ export default function JpgPngToWebp() {
   const { copy } = useCopyToClipboard();
   const [quality, setQuality] = useState(80); // domyślna jakość 80%
   const [autoDownload, setAutoDownload] = useState(false);
+  const [autoDownloadMode, setAutoDownloadMode] = useState<'files' | 'zip'>('files');
+  const [includeCsvReport, setIncludeCsvReport] = useState(false);
+  const [autoZipRequestId, setAutoZipRequestId] = useState(0);
+  const handledAutoZipRequestId = useRef(0);
   const {
     files,
     setFiles,
     globalError,
     setGlobalError,
-    handleFileChange,
-    handleDrop,
-    handleDragOver,
+    addFiles,
     removeFile,
     reconvertFile,
     clearAll,
@@ -131,6 +140,7 @@ export default function JpgPngToWebp() {
     setFiles,
     quality,
     autoDownload,
+    autoDownloadMode,
     setGlobalError,
     setCopyInfo,
     triggerDownloadFromUrl,
@@ -145,16 +155,36 @@ export default function JpgPngToWebp() {
     },
   });
 
-  const { handleDownloadAll, handleDownloadSingle } = useWebpDownloads({
+  const { handleDownloadAll, handleDownloadZip, handleDownloadSingle, isZipping, zipError, setZipError } = useWebpDownloads({
     files,
     setFiles,
     triggerDownloadFromUrl,
+    zipGenerationError: t.zipGenerationError,
   });
 
   function handleClearAll() {
     clearAll();
     setCopyInfo(null);
+    setZipError(null);
   }
+
+  function handleSubmitWithAutoZip(e: FormEvent) {
+    const toProcess = files.filter((f) => f.status === 'pending' || f.status === 'error');
+    if (autoDownload && autoDownloadMode === 'zip' && toProcess.length) {
+      setAutoZipRequestId((prev) => prev + 1);
+    }
+    handleSubmit(e);
+  }
+
+  useEffect(() => {
+    if (!autoZipRequestId) return;
+    if (isConverting) return;
+    if (handledAutoZipRequestId.current === autoZipRequestId) return;
+    if (!autoDownload || autoDownloadMode !== 'zip') return;
+
+    handledAutoZipRequestId.current = autoZipRequestId;
+    void handleDownloadZip({ includeCsvReport });
+  }, [autoDownload, autoDownloadMode, autoZipRequestId, handleDownloadZip, includeCsvReport, isConverting]);
 
   const total = files.length;
   const completed = files.filter((f) => f.status === 'done' || f.status === 'error').length;
@@ -176,19 +206,19 @@ export default function JpgPngToWebp() {
   return (
     <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
       <ToolSection className="space-y-4">
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmitWithAutoZip} className="space-y-4">
           <div>
             <p className="mb-2 text-sm text-dark font-semibold uppercase">{t.addFiles}</p>
-            <label
-              onDrop={handleDrop}
-              onDragOver={handleDragOver}
+            <ToolFileDropzone
+              accept="image/jpeg,image/png"
+              multiple
+              onFiles={addFiles}
               className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
             >
               <span className="mb-1 text-sm text-dark font-medium">{t.dragDropImages}</span>
               <span className="mb-2 text-xs text-light">{t.clickToSelect}</span>
               <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
-              <input type="file" accept="image/jpeg,image/png" multiple onChange={handleFileChange} className="hidden" />
-            </label>
+            </ToolFileDropzone>
             {globalError && (
               <ToolAlert variant="error" className="mt-2">
                 {globalError}
@@ -212,6 +242,33 @@ export default function JpgPngToWebp() {
                 <span className="text-sm text-mid">{t.autoDownloadAll}</span>
               </label>
             </div>
+
+            {autoDownload && (
+              <div className="mt-3 ml-6 flex flex-wrap items-center gap-2">
+                <Badge
+                  as="button"
+                  type="button"
+                  onClick={() => setAutoDownloadMode('files')}
+                  disabled={isConverting}
+                  variant={autoDownloadMode === 'files' ? 'selected' : 'default'}
+                  size="sm"
+                  className="border-black/10"
+                >
+                  {t.autoDownloadModeFiles}
+                </Badge>
+                <Badge
+                  as="button"
+                  type="button"
+                  onClick={() => setAutoDownloadMode('zip')}
+                  disabled={isConverting}
+                  variant={autoDownloadMode === 'zip' ? 'selected' : 'default'}
+                  size="sm"
+                  className="border-black/10"
+                >
+                  {t.autoDownloadModeZip}
+                </Badge>
+              </div>
+            )}
           </div>
 
           <div>
@@ -246,10 +303,43 @@ export default function JpgPngToWebp() {
               <Button onClick={handleDownloadAll} disabled={!anyDone} className="disabled:opacity-40" size="small">
                 {t.downloadAll}
               </Button>
+              <Button
+                onClick={() => void handleDownloadZip({ includeCsvReport })}
+                disabled={!anyDone || isConverting || isZipping}
+                className="disabled:opacity-40"
+                size="small"
+              >
+                {t.downloadZip}
+              </Button>
               <Button onClick={handleClearAll} disabled={!files.length || isConverting} className="disabled:opacity-40" size="small">
                 {t.clearAll}
               </Button>
             </div>
+
+            <div className="mt-3 flex items-center">
+              <input
+                id="webp-include-csv"
+                type="checkbox"
+                checked={includeCsvReport}
+                onChange={(e) => setIncludeCsvReport(e.target.checked)}
+                disabled={isZipping}
+                className="h-4 w-4! rounded border-neutral-300 p-0!"
+              />
+              <label htmlFor="webp-include-csv" className="pl-2 cursor-pointer">
+                <span className="text-sm text-mid">{t.includeCsvReport}</span>
+              </label>
+            </div>
+
+            {zipError && (
+              <ToolAlert variant="error" className="mt-2">
+                {zipError}
+              </ToolAlert>
+            )}
+            {isZipping && (
+              <ToolAlert variant="info" className="mt-2">
+                {t.zipping}
+              </ToolAlert>
+            )}
 
             {totalInput > 0 && (
               <div className="mt-6">

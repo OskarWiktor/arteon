@@ -1,4 +1,4 @@
-import type { HSL, RGB } from '@/lib/tools/color/types';
+import type { HSL, HSLA, RGB } from '@/lib/tools/color/types';
 
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
@@ -133,6 +133,51 @@ export function normalizeHex(color: string): string | null {
 
 export function formatHsl(hsl: HSL): string {
   return `hsl(${Math.round(hsl.h)}, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%)`;
+}
+
+export function parseHsl(color: string): HSLA | null {
+  const trimmed = color.trim();
+  const wrapperMatch = trimmed.match(/^hsla?\((.*)\)$/i);
+  if (!wrapperMatch) return null;
+
+  const inner = wrapperMatch[1].trim();
+
+  const commaMatch = inner.match(
+    /^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
+  );
+
+  const spaceMatch = inner.match(
+    /^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
+  );
+
+  const match = commaMatch ?? spaceMatch;
+  if (!match) return null;
+
+  const h = Number(match[1]);
+  const s = Number(match[2]);
+  const l = Number(match[3]);
+
+  if ([h, s, l].some((v) => Number.isNaN(v))) return null;
+  if (s < 0 || s > 100 || l < 0 || l > 100) return null;
+
+  let a = 1;
+  const alphaRaw = match[4];
+  if (alphaRaw !== undefined) {
+    if (alphaRaw.endsWith('%')) {
+      a = Number(alphaRaw.slice(0, -1)) / 100;
+    } else {
+      a = Number(alphaRaw);
+    }
+
+    if (Number.isNaN(a) || a < 0 || a > 1) return null;
+  }
+
+  return {
+    h: ((h % 360) + 360) % 360,
+    s,
+    l,
+    a,
+  };
 }
 
 export function randomHexColor(): string {

@@ -45,6 +45,25 @@
         "overlay": "black"
       },
 
+      "faq": [
+        {
+          "question": "W jakich formatach możecie przygotować plakat sezonowy?",
+          "answer": "Najczęściej przygotowujemy plakaty w formatach A3/A2 oraz jako grafiki do witryn. Jeśli plakat ma wisieć w konkretnym miejscu (np. szyba, tablica), dopasujemy wymiary i marginesy pod tę ekspozycję."
+        },
+        {
+          "question": "Czy dostanę plik gotowy do druku (spady i ustawienia dla drukarni)?",
+          "answer": "Tak. Przekazujemy pliki produkcyjne ze spadami i eksportem pod druk. Jeśli masz wytyczne drukarni (np. profil, spady, format), dopasujemy pliki pod te wymagania."
+        },
+        {
+          "question": "Czy na bazie plakatu da się przygotować wersje do social media?",
+          "answer": "Tak. Możemy przygotować warianty (np. post i stories) utrzymane w tym samym key visualu, żeby kampania była spójna offline i online."
+        },
+        {
+          "question": "Co jest potrzebne, żeby wystartować z projektem?",
+          "answer": "Wystarczy: treść (oferta, data, cena), logo, ewentualne zdjęcia/produkty oraz informacja gdzie plakat będzie używany. Jeśli nie masz zdjęć, możemy pomóc w doborze i kompozycji."
+        }
+      ],
+
       "seo": {
         "title": "Plakat sezonowy dla kawiarni - Brewerynka | Arteon",
         "description": "Projekt koncepcyjny plakatu promocyjnego dla rzemieślniczej kawiarni Brewerynka. Minimalistyczny key visual, estetyka calm geometry i makieta witryny kawiarni.",
@@ -93,6 +112,25 @@
         "backgroundImage": "/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp",
         "overlay": "black"
       },
+
+      "faq": [
+        {
+          "question": "W jakich formatach może być przygotowana karta koktajli?",
+          "answer": "Menu możemy przygotować jako pojedynczą kartę, składane menu lub booklet (kilka stron). Format dobieramy do liczby pozycji i tego, jak karta będzie używana w lokalu."
+        },
+        {
+          "question": "Czy projekt uwzględnia czytelność menu w półmroku?",
+          "answer": "Tak. Dobieramy kontrast, wielkości fontów i hierarchię typografii tak, aby menu było wygodne w czytaniu także przy nastrojowym oświetleniu."
+        },
+        {
+          "question": "Czy w projekcie mogą znaleźć się ilustracje lub ikony drinków?",
+          "answer": "Tak. Możemy przygotować autorskie ilustracje (np. szkice) lub zestaw ikon, które podkreślą charakter lokalu i ułatwią nawigację po menu."
+        },
+        {
+          "question": "Czy dostanę wersję do druku i wersję do publikacji online?",
+          "answer": "Tak. Przygotowujemy pliki do drukarni oraz wersję cyfrową (np. PDF) gotową do publikacji na stronie lub w social media."
+        }
+      ],
       "seo": {
         "title": "Ekskluzywna karta koktajli - Nocturna | Arteon",
         "description": "Projekt ekskluzywnej karty koktajli dla konceptu Nocturna. Autorskie ilustracje drinków, elegancka typografia i profesjonalny mockup w stylistyce speakeasy.",
@@ -103,8 +141,8 @@
     {
       "slug": "folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group",
       "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
-      "short": "Składany folder reklamowy w formacie A3 ( składany na A4 ) dla polskiej wirmy wykańczającej wnętrza domów i mieszkań",
-      "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Celem projektu było przygotowanie folderu w wersji cyfrowej oraz do druku, który opisuje jasno ofertę firmy, korzyści płynące ze współpracy ( projekt, dobór materiałów i realizacja u jednego wykonawcy ) oraz przekirowuje do wirtualnego spaceru po ostatniej realizacji tej firmy</p><br /><p>Połączone zostały delikatne odcienie brązu i beżu, spójne ze zdjęciami realizacji. Na pierwszej stronie umieszczone zostało zdjęcie łazienki, wykończonej przez firmę, zachęta do kontaktu oraz informacja o cenie za metr kwadratowy</p><br /><p>W środku znajdziemy jasno przedstawione korzyści ze współpracy z tym wykonawcą wraz z ikonami, dla lepszej czytelności oraz kodem QR do najnowszej realizacji wraz z szczegółowym opisem co udało się zrobić w tej cenie.</p><br /><p>Projekt został <strong>przygotowany do druku wraz z wersją PDF</strong> do wysyłki potencjalnym klientom poprzez wiadomości mailowe. Realizacja obejmowała <strong>3 kierunki wizualne</strong> wraz z rundą poprawek oraz pomoc przy stworzeniu tekstu do folderu reklamowego",
+      "short": "Składany folder reklamowy w formacie A3 (składany na A4) dla polskiej firmy wykańczającej wnętrza domów i mieszkań",
+      "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Celem projektu było przygotowanie folderu w wersji cyfrowej oraz do druku, który opisuje jasno ofertę firmy, korzyści płynące ze współpracy (projekt, dobór materiałów i realizacja u jednego wykonawcy) oraz przekierowuje do wirtualnego spaceru po ostatniej realizacji tej firmy</p><br /><p>Połączone zostały delikatne odcienie brązu i beżu, spójne ze zdjęciami realizacji. Na pierwszej stronie umieszczone zostało zdjęcie łazienki, wykończonej przez firmę, zachęta do kontaktu oraz informacja o cenie za metr kwadratowy</p><br /><p>W środku znajdziemy jasno przedstawione korzyści ze współpracy z tym wykonawcą wraz z ikonami, dla lepszej czytelności oraz kodem QR do najnowszej realizacji wraz ze szczegółowym opisem co udało się zrobić w tej cenie.</p><br /><p>Projekt został <strong>przygotowany do druku wraz z wersją PDF</strong> do wysyłki potencjalnym klientom poprzez wiadomości mailowe. Realizacja obejmowała <strong>3 kierunki wizualne</strong> wraz z rundą poprawek oraz pomoc przy stworzeniu tekstu do folderu reklamowego",
       "image": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
       "category": ["grafika"],
       "client": {
@@ -154,6 +192,25 @@
         "backgroundImage": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
         "overlay": "black"
       },
+
+      "faq": [
+        {
+          "question": "Jaki format folderu reklamowego będzie najlepszy dla firmy wykończeniowej?",
+          "answer": "Najczęściej wybierane są formaty A4 (łatwy do przekazania na spotkaniu) lub A3 składany do A4 (więcej miejsca na ofertę, zdjęcia i referencje). Format dobieramy do ilości treści oraz sposobu dystrybucji."
+        },
+        {
+          "question": "Czy przygotujecie folder zarówno do druku, jak i do wysyłki e-mailem?",
+          "answer": "Tak. Przekazujemy plik produkcyjny do drukarni oraz osobny, zoptymalizowany PDF do wysyłki mailowej (mniejsza waga, zachowana czytelność)."
+        },
+        {
+          "question": "Czy możecie pomóc w dopracowaniu tekstów i układu oferty?",
+          "answer": "Tak. Możemy uporządkować treści, skrócić i doprecyzować komunikaty oraz ułożyć ofertę w logicznej kolejności (zakres, proces, korzyści, CTA), aby folder był bardziej sprzedażowy."
+        },
+        {
+          "question": "Czy w folderze można umieścić kod QR do wirtualnego spaceru lub realizacji?",
+          "answer": "Tak. Kod QR to wygodny sposób, aby przenieść odbiorcę do galerii realizacji, filmu lub wirtualnego spaceru. Dobieramy miejsce i rozmiar tak, aby kod był łatwy do zeskanowania."
+        }
+      ],
       "seo": {
         "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
         "description": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group. Sprawdź naszą realizację i zamów własny katalog, ulotkę lub folder reklamowy",
@@ -198,6 +255,25 @@
         "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
         "overlay": "black"
       },
+
+      "faq": [
+        {
+          "question": "Jakie formaty obejmują szablony (posty i stories)?",
+          "answer": "Przygotowujemy szablony pod najczęściej używane formaty, m.in. posty i stories na Instagramie. W razie potrzeby dodamy też warianty pod Facebook lub inne kanały."
+        },
+        {
+          "question": "Czy mogę samodzielnie edytować teksty i zdjęcia w szablonach?",
+          "answer": "Tak. Układ jest zaprojektowany tak, aby szybko podmieniać treści bez psucia kompozycji. Dzięki temu możesz publikować regularnie, zachowując spójny styl."
+        },
+        {
+          "question": "Czy projekt uwzględnia czytelność na telefonach?",
+          "answer": "Tak. Dobieramy wielkości fontów, kontrast i odstępy tak, aby treści były czytelne w feedzie i na stories na urządzeniach mobilnych."
+        },
+        {
+          "question": "Czy szablony mogą być dopasowane do identyfikacji marki gabinetu?",
+          "answer": "Tak. Dopasowujemy paletę kolorów, typografię i elementy graficzne do Twojej strony lub materiałów, aby komunikacja w social media była spójna z wizerunkiem gabinetu."
+        }
+      ],
       "seo": {
         "title": "Szablony postów dla psychologa - MSC Psychotherapy | Arteon",
         "description": "Realizacja szablonów postów na media społecznościowe dla gabinetu psychologicznego w Anglii. Zobacz realizację i zamów własny projekt",
@@ -242,6 +318,25 @@
         "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
         "overlay": "black"
       },
+
+      "faq": [
+        {
+          "question": "Czy voucher może mieć pola do wypełnienia (dla kogo, na jaki zabieg, ważny do)?",
+          "answer": "Tak. Projektujemy voucher tak, aby był praktyczny w użyciu - z czytelnymi polami do wypełnienia oraz miejscem na najważniejsze informacje (np. wartość, usługa, termin ważności)."
+        },
+        {
+          "question": "Czy przygotujecie plik do druku i wersję do wysyłki online?",
+          "answer": "Tak. Dostarczamy pliki gotowe do drukarni oraz wersję cyfrową (np. PDF) do wysyłki e-mailem lub udostępnienia klientom."
+        },
+        {
+          "question": "Czy można przygotować serię voucherów sezonowych w jednym stylu?",
+          "answer": "Tak. Możemy zaprojektować zestaw voucherów na różne okazje (Walentynki, Dzień Kobiet, święta), zachowując spójny układ i identyfikację, aby materiały wyglądały jak jedna kolekcja."
+        },
+        {
+          "question": "Jakie informacje są potrzebne, żeby rozpocząć projekt vouchera?",
+          "answer": "Wystarczą: logo, dane kontaktowe, oferta lub przykładowe zabiegi, zasady realizacji i termin ważności. Jeśli nie masz gotowych materiałów graficznych, dobierzemy estetykę i zdjęcia pod branżę."
+        }
+      ],
       "seo": {
         "title": "Bon walentynkowy dla salonu kosmetycznego Kasia | Arteon",
         "description": "Elegancki bon walentynkowy dla gabinetu kosmetycznego. Gotowe pliki do druku. Sprawdź naszą realizację i samów własny projekt",
@@ -303,6 +398,25 @@
         "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
         "overlay": "black"
       },
+
+      "faq": [
+        {
+          "question": "Czy można poprawić wynik PageSpeed bez przebudowy całej strony?",
+          "answer": "Tak - często zaczynamy od audytu (obrazy, skrypty, CSS, czcionki, cache) i wdrażamy szybkie poprawki. Jeśli problem leży w układzie lub treści, wtedy rekomendujemy redesign tylko wybranych sekcji."
+        },
+        {
+          "question": "Jakie elementy najczęściej obniżają wydajność strony na telefonach?",
+          "answer": "Najczęściej są to nieoptymalne obrazy, zbyt ciężkie skrypty, brak lazy loadingu i zbyt dużo zasobów ładowanych na start. Porządkujemy te obszary i testujemy w Google PageSpeed Insights."
+        },
+        {
+          "question": "Czy redesign może jednocześnie poprawić dostępność (WCAG) i czytelność?",
+          "answer": "Tak. Poprawa kontrastu, hierarchii nagłówków, rozmiarów tekstu i odstępów zwykle wpływa jednocześnie na UX oraz zgodność z WCAG 2.1 AA."
+        },
+        {
+          "question": "Czy po optymalizacji strona zachowa spójny wygląd i będzie responsywna?",
+          "answer": "Tak. Zmiany wdrażamy z myślą o mobile-first i testujemy kluczowe widoki. Celem jest szybsza strona bez utraty estetyki i bez rozjechania layoutu."
+        }
+      ],
       "seo": {
         "title": "Strona internetowa z wynajmem kamperów w Albanii | Arteon",
         "description": "Redesign i optymalizacja strony internetowej z wynajmem kamperów w Albanii - Camper Albania. Lepszy kontrast, czytelność  i optymalizacja",
@@ -533,12 +647,12 @@
 
       "cta": {
         "title": "Potrzebujesz wizytówki dla swojej firmy?",
-        "description": "Zaprojektujemy teczkę przygotowaną do druku zgodną z charakterem Twojej branży",
-        "btnOne": "Zamów teczkę",
+        "description": "Zaprojektujemy wizytówkę przygotowaną do druku, spójną z charakterem Twojej branży",
+        "btnOne": "Zamów wizytówkę",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Projekty graficzne",
-        "btnTwoLink": "/uslugi/projekty-graficzne",
-        "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
+        "btnTwo": "Zobacz ofertę projektu wizytówki",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
         "overlay": "black"
       },
 
@@ -638,6 +752,17 @@
         }
       ],
 
+      "cta": {
+        "title": "Chcesz stronę, która buduje zaufanie i pozyskuje pacjentów?",
+        "description": "Zaprojektujemy czytelną stronę z treściami pod SEO i prostą ścieżką do kontaktu",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-msc.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Strona dla psychologa - MSC Psychotherapy | Arteon",
         "description": "Realizacja strony dla psychologa w Anglii. Pozycjonowanie lokalne, logo, marketing i promocja książki. Sprawdź naszą realizację",
@@ -649,7 +774,7 @@
       "slug": "katalog-produktow-restoquality",
       "title": "Katalog produktów - RestoQuality",
       "short": "Projekt katalogu sprzedażowego dla gastronomii w formacie A5",
-      "description": "<p>Projekt koncepcyjny <strong>katalogu sprzedażowego produktów</strong> dla gastronomii, przygotowany dla firmy RestoQuality, spójny z identyfikacją tej marki. Naszym celem było stworzenie katalogu, ze sprzętami gastronomicznymi, pozwalającego na szybkie porównanie modeli i parametrów, przez właścicieli restauracji oraz szefów kuchni.</p><p>W katalogu zebraliśmy znajdują się piece do pizzy, urządzenia kuchenne oraz akcesoria. Każda karta produktu zawiera <em>opis, kluczowe parametry techniczne, cenę i kraj produkcji</em>. Dedykowane <strong>ikony pochodzenia</strong> ułatwiają skanowanie oferty.</p>",
+      "description": "<p>Projekt koncepcyjny <strong>katalogu sprzedażowego produktów</strong> dla gastronomii, przygotowany dla firmy RestoQuality, spójny z identyfikacją tej marki. Naszym celem było stworzenie katalogu ze sprzętami gastronomicznymi, pozwalającego na szybkie porównanie modeli i parametrów przez właścicieli restauracji oraz szefów kuchni.</p><p>W katalogu znajdują się piece do pizzy, urządzenia kuchenne oraz akcesoria. Każda karta produktu zawiera <em>opis, kluczowe parametry techniczne, cenę i kraj produkcji</em>. Dedykowane <strong>ikony pochodzenia</strong> ułatwiają skanowanie oferty.</p>",
       "image": "/assets/projects/gazetka-mockup.webp",
       "category": ["grafika"],
       "stack": ["Adobe InDesign", "Adobe Illustrator", "Mockup 3D"],
@@ -678,7 +803,7 @@
         },
         {
           "question": "Czy możecie zaprojektować ikony i piktogramy do katalogu sprzedażowego?",
-          "answer": "Tak. Tworzymy możemy stworzyć autorskie ikony cech produktu, jak i inne elementy potrzebne do prawidłowego pokazania produktów"
+          "answer": "Tak. Możemy stworzyć autorskie ikony cech produktu oraz inne elementy potrzebne do prawidłowego pokazania produktów"
         },
         {
           "question": "Ile trwa stworzenie projektu katalogu produktów?",
@@ -698,9 +823,21 @@
           "ratio": "16/9"
         }
       ],
+
+      "cta": {
+        "title": "Potrzebujesz katalogu produktów, który sprzedaje?",
+        "description": "Zaprojektujemy czytelny katalog z kartami produktów, parametrami i cenami - gotowy do druku i PDF",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Zobacz ofertę projektu katalogu",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-katalogu",
+        "backgroundImage": "/assets/projects/gazetka-mockup.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Katalog produktów dla gastronomii | Arteon",
-        "description": "Projekt katalogu produktów (A5) dla gastronomii. Czytelne karty produktów, parametry, ceny i ikony pochodzenia. Zobacz naszą realizację katalogu toduktów",
+        "description": "Projekt katalogu produktów (A5) dla gastronomii. Czytelne karty produktów, parametry, ceny i ikony pochodzenia. Zobacz naszą realizację katalogu produktów",
         "canonical": "https://www.arteonagency.pl/realizacje/katalog-produktow-restoquality"
       }
     },
@@ -709,7 +846,7 @@
       "slug": "wizytowka-dla-spa-talia",
       "title": "Wizytówka dla SPA - TALIA",
       "short": "Projekt wizytówki dla SPA: premium & nature",
-      "description": "<p>Projekt koncepcyjny <strong>wizytówke dla SPA</strong> inspirowanej naturą. Przód: malarskie tło lasu (akryl), logotyp i typografia <em>Warbler Display</em>. Tył: czytelne dane właścicielki i adres www.</p><p>Paleta: <strong>#182519</strong> (zieleń), <strong>#e1d2c2</strong> (ciepły beż) + biel</p>",
+      "description": "<p>Projekt koncepcyjny <strong>wizytówki dla SPA</strong> inspirowanej naturą. Przód: malarskie tło lasu (akryl), logotyp i typografia <em>Warbler Display</em>. Tył: czytelne dane właścicielki i adres www.</p><p>Paleta: <strong>#182519</strong> (zieleń), <strong>#e1d2c2</strong> (ciepły beż) + biel</p>",
       "image": "/assets/projects/wizytowka-talia.webp",
       "category": ["grafika"],
       "client": { "name": "TALIA", "sector": "Wellness & SPA" },
@@ -744,6 +881,18 @@
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>"
         }
       ],
+
+      "cta": {
+        "title": "Potrzebujesz wizytówki premium dla swojej marki?",
+        "description": "Zaprojektujemy elegancką wizytówkę i przygotujemy pliki gotowe do druku",
+        "btnOne": "Zamów wizytówkę",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Zobacz ofertę projektu wizytówki",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/wizytowka-talia.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Projekt wizytówki dla SPA | Arteon",
         "description": "Wizytówka dla SPA w estetyce premium & nature. Warbler Display, zieleń #182519 i beż #e1d2c2. Projekt koncepcyjny - zobacz realizację.",
@@ -753,9 +902,9 @@
 
     {
       "slug": "blog-sportowy-pilka-nozna-pl",
-      "title": "PilkaNożna.pl - redesign EURO 2024",
+      "title": "PiłkaNożna.pl - redesign EURO 2024",
       "short": "Odświeżenie bloga w nowym systemie z dedykowanym motywem",
-      "description": "<p>Redesign serwisu przed rozpoczęciem <strong>EURO 2024</strong>. Projekt polegał na zmianie systemy, wraz ze zmianą wyglądu, by redaktorzy mogli łatwiej tworzyć <strong>bogatsze wizualnie artykuły</strong>. Przygotowaliśmy pełną dokumentację dla zespołu redakcyjnego. Projekt był współtworzony z grupą programistów</p>",
+      "description": "<p>Redesign serwisu przed rozpoczęciem <strong>EURO 2024</strong>. Projekt polegał na zmianie systemu, wraz ze zmianą wyglądu, by redaktorzy mogli łatwiej tworzyć <strong>bogatsze wizualnie artykuły</strong>. Przygotowaliśmy pełną dokumentację dla zespołu redakcyjnego. Projekt był współtworzony z grupą programistów.</p>",
 
       "deliverables": [
         "Przygotowanie pełnej dokumentacji technicznej wraz ze szkoleniem",
@@ -767,6 +916,37 @@
       "link": "https://pilkanozna.pl/",
       "category": ["blog"],
       "stack": ["WordPress", "Gutenberg", "PHP", "Blade"],
+
+      "cta": {
+        "title": "Chcesz bloga, który łatwo rozwijać i publikować?",
+        "description": "Wdrożymy nowy system i szablony artykułów, żeby redakcja pracowała szybciej",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę blogów internetowych",
+        "btnTwoLink": "/uslugi/blogi-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-pilkanozna-pl.webp",
+        "overlay": "black"
+      },
+
+      "faq": [
+        {
+          "question": "Czy redesign bloga obejmuje też usprawnienie edycji treści dla redakcji?",
+          "answer": "Tak. Poza wyglądem, dbamy o wygodny proces publikacji (np. bloki, szablony sekcji, spójne style), aby redaktorzy mogli szybciej tworzyć artykuły bez grzebania w kodzie."
+        },
+        {
+          "question": "Czy da się przygotować szablony pod różne typy artykułów (np. zapowiedź meczu, relacja, analiza)?",
+          "answer": "Tak. Projektujemy powtarzalne układy i komponenty, które pozwalają składać różne formaty treści, zachowując spójny wygląd w całym serwisie."
+        },
+        {
+          "question": "Jak zabezpieczacie SEO podczas zmian na stronie?",
+          "answer": "Przy redesignie zwracamy uwagę na strukturę nagłówków, linkowanie wewnętrzne, meta dane i zachowanie adresów URL. Jeśli URL-e muszą się zmienić, planujemy przekierowania, aby nie tracić ruchu."
+        },
+        {
+          "question": "Czy po wdrożeniu dostanę dokumentację i szkolenie dla zespołu?",
+          "answer": "Tak. Przy większych serwisach przygotowujemy dokumentację oraz szkolenie (lub instrukcję), żeby redakcja wiedziała jak korzystać z nowych szablonów i publikować szybciej."
+        }
+      ],
+
       "seo": {
         "canonical": "https://www.arteonagency.pl/realizacje/blog-sportowy-pilka-nozna-pl"
       }
@@ -776,8 +956,8 @@
       "slug": "sklep-dla-firmy-odziezowej-trilllizo",
       "title": "Sklep dla firmy odzieżowej - Trilllizo",
       "short": "Sklep z wysokiej jakości odzieżą dla dzieci w dwóch wersjach językowych",
-      "description": "<p>Marka odzieżowa przyszła z jasną inspiracją. Zadanie: oddać wygląd <strong>1:1</strong> i uruchomić sprzedaż przez własną platformę. Zbudowaliśmy sklep na <strong>WordPress + WooCommerce + Elementor Pro</strong>, skonfigurowaliśmy płatności i <strong>InPost</strong>. Serwis działa w dwóch wersjach: <strong>.pl</strong> i <strong>.com</strong>. Na koniec stworzyliśmy dedykowanie szkolenie PDF z obsługi i przekazaliśmy <strong>plan SEO</strong>.</p>",
-      "task": "Instalacja i konfiguracja WordPressa, projekt i implementacja UI, integracje (płatności, InPost, newsletter), optymalizacja SEO ( techniczne, zdjęcia, treść ), lokalizacja, dokumentacja, opieka powdrożeniowa",
+      "description": "<p>Marka odzieżowa przyszła z jasną inspiracją. Zadanie: oddać wygląd <strong>1:1</strong> i uruchomić sprzedaż przez własną platformę. Zbudowaliśmy sklep na <strong>WordPress + WooCommerce + Elementor Pro</strong>, skonfigurowaliśmy płatności i <strong>InPost</strong>. Serwis działa w dwóch wersjach: <strong>.pl</strong> i <strong>.com</strong>. Na koniec stworzyliśmy dedykowane szkolenie PDF z obsługi i przekazaliśmy <strong>plan SEO</strong>.</p>",
+      "task": "Instalacja i konfiguracja WordPressa, projekt i implementacja UI, integracje (płatności, InPost, newsletter), optymalizacja SEO (techniczne, zdjęcia, treść), lokalizacja, dokumentacja, opieka powdrożeniowa",
       "deliverables": [
         "Instalacja i konfiguracja środowiska",
         "Motyw i komponenty pod wygląd 1:1",
@@ -790,8 +970,39 @@
       "image": "/assets/projects/arteon-baners-trilllizo.webp",
       "link": "https://trilllizo.com",
       "category": ["sklep"],
+
+      "cta": {
+        "title": "Chcesz sklep internetowy, który sprzedaje i łatwo rozwijać?",
+        "description": "Wdrożymy sklep, płatności i dostawy oraz przygotujemy fundamenty pod SEO",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę sklepów internetowych",
+        "btnTwoLink": "/uslugi/sklepy-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-trilllizo.webp",
+        "overlay": "black"
+      },
+
+      "faq": [
+        {
+          "question": "Czy w sklepie da się wdrożyć płatności i dostawy (np. InPost)?",
+          "answer": "Tak. Konfigurujemy płatności oraz metody dostawy i testujemy cały proces zakupowy (koszyk → checkout → potwierdzenia), żeby klient mógł kupić bez problemu na telefonie i desktopie."
+        },
+        {
+          "question": "Czy sklep może działać w dwóch wersjach językowych (.pl i .com)?",
+          "answer": "Tak. Wdrażamy wersje językowe i dopasowujemy treści, walutę oraz podstawowe ustawienia SEO tak, aby sklep był czytelny dla odbiorców z różnych rynków."
+        },
+        {
+          "question": "Czy projekt obejmuje przygotowanie sklepu pod SEO?",
+          "answer": "Tak. Dbamy o fundamenty: struktura kategorii, optymalizacja zdjęć, podstawowe ustawienia techniczne oraz rekomendacje treści. W tym projekcie przekazaliśmy też plan SEO do dalszego rozwoju."
+        },
+        {
+          "question": "Czy po wdrożeniu dostanę instrukcję lub szkolenie z obsługi sklepu?",
+          "answer": "Tak. Przekazujemy instrukcję (np. PDF) i pokazujemy najważniejsze elementy w panelu: produkty, zamówienia, kupony, wysyłki i podstawowe ustawienia sklepu."
+        }
+      ],
+
       "seo": {
-        "title": "Sklep dla firmy odziezowej - Trilllizo | Arteon",
+        "title": "Sklep dla firmy odzieżowej - Trilllizo | Arteon",
         "description": "Pełna realizacja: motyw, integracje, wersje .pl/.com i szkolenie. Sklep gotowy na SEO.",
         "canonical": "https://www.arteonagency.pl/realizacje/sklep-dla-firmy-odziezowej-trilllizo"
       }
@@ -815,25 +1026,55 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
+
+      "cta": {
+        "title": "Chcesz poprawić dostępność swojej strony (WCAG)?",
+        "description": "Uporządkujemy nawigację klawiaturą, kontrasty i etykiety, żeby strona była wygodna dla wszystkich",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-meridol.webp",
+        "overlay": "black"
+      },
+
+      "faq": [
+        {
+          "question": "Czy da się wdrożyć poprawki WCAG w AEM bez przebudowy całego frontu?",
+          "answer": "Tak. Tam, gdzie AEM ogranicza bezpośrednią ingerencję w HTML, da się wdrażać poprawki warstwą CSS/JS (np. jQuery) - m.in. porządkowanie fokusa, etykiety ARIA czy poprawa stanów interakcji."
+        },
+        {
+          "question": "Jakie obszary najczęściej poprawiacie przy audycie dostępności?",
+          "answer": "Najczęściej: nawigacja klawiaturą, widoczny fokus, kontrast tekstu i przycisków, etykiety formularzy, komunikaty błędów oraz role/atrybuty ARIA dla komponentów interaktywnych."
+        },
+        {
+          "question": "Jak testujecie dostępność (klawiatura i czytniki ekranu)?",
+          "answer": "Testujemy ręcznie przejście klawiaturą (tab order) oraz zachowanie kluczowych komponentów. Dodatkowo sprawdzamy odczyt i komunikaty w czytnikach ekranu oraz weryfikujemy kontrast w narzędziach wspierających." 
+        },
+        {
+          "question": "Czy można dodać narzędzie do zmiany kontrastu (contrast tool)?",
+          "answer": "Tak. Możemy wdrożyć przełącznik kontrastu i zasady stylowania tak, aby był dostępny z klawiatury, czytelny i spójny z UI - bez rozbijania istniejących komponentów."
+        }
+      ],
+
       "seo": {
         "title": "Dostępność WCAG w AEM - we współpracy z VML | Case study Meridol",
         "description": "Klawiatura, kontrasty i ARIA. Użyteczność bez barier, z zachowaniem ograniczeń AEM.",
         "canonical": "https://www.arteonagency.pl/realizacje/meridol-accessibility"
       }
     },
-
     {
       "slug": "wizytowki-dla-gastronomii-restoquality",
       "title": "Wizytówki dla gastronomii - RestoQuality",
       "short": "Szablon wizytówek dla handlowców produktów gastronomicznych",
-      "description": "<p><strong>Wizytówki dla gastronomii</strong> - projekt koncepcyjny przygotowany dla RestoQuality. Cel: ujednolicony szablon dla działu handlowego. Styl <em>techniczny i solidny</em>; kolory i typografia dopasowane do identyfikacji marki.</p><p>Układ obejmuje <strong>imię i nazwisko handlowca</strong>, <strong>stanowisko</strong>, <strong>telefon</strong>, <strong>adres firmy</strong> oraz znak marki. Szablon kompozycji umożliwiają szybkie wdrożenie dla całego zespołu.</p>",
+      "description": "<p><strong>Wizytówki dla gastronomii</strong> - projekt koncepcyjny przygotowany dla RestoQuality. Cel: ujednolicony szablon dla działu handlowego. Styl <em>techniczny i solidny</em>; kolory i typografia dopasowane do identyfikacji marki.</p><p>Układ obejmuje <strong>imię i nazwisko handlowca</strong>, <strong>stanowisko</strong>, <strong>telefon</strong>, <strong>adres firmy</strong> oraz znak marki. Szablon kompozycji umożliwia szybkie wdrożenie dla całego zespołu.</p>",
       "image": "/assets/projects/resto-wiz.webp",
       "category": ["grafika"],
       "stack": ["Adobe Illustrator", "Mockup 3D"],
       "deliverables": [
         "Projekt koncepcyjny wizytówek dla handlowców",
         "Dopasowanie kolorów i typografii do wizerunku marki",
-        "Szablon układu danych: imie i nazwisko + stanowisko + telefon + adres firmy"
+        "Szablon układu danych: imię i nazwisko + stanowisko + telefon + adres firmy"
       ],
       "task": "Stworzyć czytelny, powtarzalny szablon wizytówki dla zespołu sprzedaży - zgodny z identyfikacją marki.",
       "outcomes": [
@@ -853,7 +1094,7 @@
         },
         {
           "question": "Czy przygotujecie pliki wizytówek do druku?",
-          "answer": "Tak. Dostarczamy pliki produkcyjny ze spadami, według wskazanych przez Państwa drukarnie preferencji"
+          "answer": "Tak. Dostarczamy pliki produkcyjne ze spadami, według wskazanych przez Państwa drukarnie preferencji"
         }
       ],
       "contentBlocks": [
@@ -865,6 +1106,18 @@
           "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla restauracji i firm gastro</h2><p>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"
         }
       ],
+
+      "cta": {
+        "title": "Potrzebujesz wizytówek dla swojego zespołu?",
+        "description": "Zaprojektujemy spójny szablon i przygotujemy pliki do druku dla całej firmy",
+        "btnOne": "Zamów wizytówki",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Zobacz ofertę projektu wizytówki",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
+        "backgroundImage": "/assets/projects/resto-wiz.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Wizytówki dla gastronomii | Arteon",
         "description": "Projekt wizytówek dla gastronomii. Czytelny szablon dla handlowców, spójny z identyfikacją marki. Zobacz naszą realizację wizytówek.",
@@ -890,6 +1143,18 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
+
+      "cta": {
+        "title": "Chcesz poprawić dostępność komponentów i formularzy (WCAG)?",
+        "description": "Dopracujemy stany fokus, etykiety i kontrasty, żeby UI było czytelne i wygodne",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-elmex.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Dostępne komponenty i formularze | Case study Elmex x VML",
         "description": "ARIA, fokus i czytelne stany. Interakcje zgodne z WCAG.",
@@ -915,6 +1180,18 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
+
+      "cta": {
+        "title": "Chcesz poprawić dostępność interakcji (WCAG)?",
+        "description": "Dopracujemy nawigację klawiaturą, kontrasty i etykiety w filtrach oraz karuzelach",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-sanex.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "WCAG dla interakcji - filtry i karuzele | Case study Sanex x VML",
         "description": "Kontrast, klawiatura i etykiety. Proste zasady, lepsze doświadczenie.",
@@ -936,6 +1213,18 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
+
+      "cta": {
+        "title": "Planujesz lokalizację serwisu na nowe rynki?",
+        "description": "Przeniesiemy treści i elementy interfejsu z wersji master, dbając o spójny wygląd",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-sanex.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Lokalizacje serwisu na rynki zagraniczne | Case study Sanex x VML",
         "description": "Adaptacja treści i UI na bazie mastera. Spójność layoutu i komunikacji.",
@@ -957,6 +1246,18 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
+
+      "cta": {
+        "title": "Potrzebujesz lokalizacji serwisu na nowy rynek?",
+        "description": "Zaadaptujemy treści i UI na bazie wersji master, dbając o spójność layoutu i komunikacji",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-palmolive.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Lokalizacje serwisów na rynki zagraniczne | Case study Palmolive x VML",
         "description": "Adaptacja treści i UI zgodnie z wersją master. Spójność layoutu i treści.",
@@ -979,6 +1280,18 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
+
+      "cta": {
+        "title": "Planujesz lokalizację serwisu na nowe rynki?",
+        "description": "Zaadaptujemy treści i UI na bazie wersji master, dbając o spójny wygląd i komunikację",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-colgate.webp",
+        "overlay": "black"
+      },
+
       "seo": {
         "title": "Lokalizacje serwisów - spójny wygląd i treść | Case study Colgate x VML",
         "description": "Adaptacja z mastera na rynki lokalne. Prosto, spójnie, zgodnie z brandem.",
@@ -990,7 +1303,7 @@
       "slug": "detergent-regulations",
       "title": "Detergent Regulations",
       "short": "Wdrożenie analityki stron (współpraca z VML)",
-      "description": "<p>Wsparcie przy wdrożeniu narzędzi analitycznych - GA4 oraz GTM na różne lokalizacje, oraz wsparcie w konfugaracji stron m.in mapy witryn</p>",
+      "description": "<p>Wsparcie przy wdrożeniu analityki: GA4 i Google Tag Manager (GTM) na wielu lokalizacjach serwisu. Konfiguracja tagów i podstawowych zdarzeń oraz testy poprawności pomiaru (tryb podglądu GTM, DebugView i raport czasu rzeczywistego w GA4). Dodatkowo wsparcie w konfiguracji stron, m.in. mapy witryn.</p>",
       "image": "/assets/projects/arteon-baners-detergentregulations.webp",
       "link": "https://www.detergentregulations.com/de-de",
       "category": ["strona", "blog", "marketing"],
@@ -1000,6 +1313,17 @@
         "author": "Paulina Nowakowska",
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
+      },
+
+      "cta": {
+        "title": "Chcesz wdrożyć analitykę GA4 i GTM na stronie?",
+        "description": "Skonfigurujemy pomiar i podstawowe zdarzenia oraz przetestujemy poprawność zbierania danych",
+        "btnOne": "Skontaktuj się",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę audytu SEO",
+        "btnTwoLink": "/uslugi/marketing/audyt-seo",
+        "backgroundImage": "/assets/projects/arteon-baners-detergentregulations.webp",
+        "overlay": "black"
       },
 
       "seo": {

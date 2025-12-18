@@ -1,7 +1,7 @@
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
-import PaletteExtractor from '@/components/sections/tools/PaletteExtractor/PaletteExtractor';
+import PaletteExtractor from '@/components/sections/tools/PaletteExtractor';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
@@ -10,12 +10,12 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
   description:
-      'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+      'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
   alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu' },
   openGraph: {
     title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
     description:
-      'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+      'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
     url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
     type: 'website',
     images: [
@@ -36,7 +36,7 @@ const schema = {
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description:
-      'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+      'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {
@@ -79,7 +79,7 @@ export default function Page() {
 
       <CTABanner
         title="Potrzebujesz spójnego systemu dla swojej marki?"
-        description="Zaprojektujemy dla Ciebie spójny system identyfikacji wizualnej, który wyróżni Cie na tle konkurencji."
+        description="Zaprojektujemy dla Ciebie spójny system identyfikacji wizualnej, który wyróżni Cię na tle konkurencji."
         btnOne="Sprawdź ofertę identyfikacji"
         btnOneLink="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
         btnTwo="Sprawdź wszystkie usługi"

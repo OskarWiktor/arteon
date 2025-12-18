@@ -12,9 +12,9 @@ import { useTimeout } from '@/hooks/useTimeout';
 
 const ui = {
   pl: {
-    title: 'Cookies i prywatność',
+    title: 'Pliki cookie i prywatność',
     description:
-      'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong> Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
+      'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong>Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
     setPreferences: 'Ustaw preferencje',
     privacyPolicy: 'Polityka prywatności',
     reject: 'Odrzuć',

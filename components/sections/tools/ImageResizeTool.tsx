@@ -3,13 +3,15 @@
 import Button from '@/components/ui/buttons/Button';
 import Badge from '@/components/ui/Badge';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
+import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import { exportCroppedImage } from '@/components/sections/tools/ImageResizeTool/exportCroppedImage';
 import { getCropRect, getGridStroke } from '@/components/sections/tools/ImageResizeTool/cropMath';
 import { useCropDrag } from '@/components/sections/tools/ImageResizeTool/useCropDrag';
 import type { ActiveTool, GridColor, OutputFormat, ResizeMode, ShapeAspect, ShapeType } from '@/components/sections/tools/ImageResizeTool/types';
 import { formatBytes } from '@/lib/tools/formatBytes';
+import { getFileFormatLabel } from '@/lib/tools/fileFormat';
 import { revokeObjectUrl } from '@/lib/tools/objectUrl';
-import { useEffect, useMemo, useRef, useState, type DragEvent as ReactDragEvent, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
 
@@ -307,17 +309,7 @@ export default function ImageResizeTool() {
 
   const aspectRatioText = useMemo(() => (state.originalWidth && state.originalHeight ? (state.originalWidth / state.originalHeight).toFixed(2) : null), [state.originalWidth, state.originalHeight]);
 
-  const inputFormat = useMemo(() => {
-    if (!state.file) return null;
-    const name = state.file.name;
-    const extMatch = name.match(/\.([^.]+)$/);
-    if (extMatch && extMatch[1]) return extMatch[1].toUpperCase();
-    if (state.file.type && state.file.type.includes('/')) {
-      const [, sub] = state.file.type.split('/');
-      return sub.toUpperCase();
-    }
-    return 'N/D';
-  }, [state.file]);
+  const inputFormat = useMemo(() => getFileFormatLabel(state.file), [state.file]);
 
   const cropEnabled = !!state.imageUrl && !!state.originalWidth && !!state.originalHeight;
 
@@ -572,36 +564,16 @@ export default function ImageResizeTool() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <p className="mb-2 font-semibold uppercase">{t.addImage}</p>
-            <label
+            <ToolFileDropzone
+              accept="image/*"
+              dropEffect="copy"
+              onFiles={(files) => handleFileChange(files?.[0] ?? null)}
               className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
-              onDragOver={(e: ReactDragEvent<HTMLLabelElement>) => {
-                e.preventDefault();
-                e.stopPropagation();
-                e.dataTransfer.dropEffect = 'copy';
-              }}
-              onDrop={(e: ReactDragEvent<HTMLLabelElement>) => {
-                e.preventDefault();
-                e.stopPropagation();
-                const file = e.dataTransfer.files?.[0] ?? null;
-                if (file) {
-                  handleFileChange(file);
-                }
-              }}
             >
               <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
               <span className="mb-2 text-xs! text-light">{t.clickToSelect}</span>
               <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
-              <input
-                type="file"
-                accept="image/*"
-                className="hidden"
-                onChange={(e) => {
-                  const file = e.target.files?.[0] ?? null;
-                  handleFileChange(file);
-                  e.target.value = '';
-                }}
-              />
-            </label>
+            </ToolFileDropzone>
             {state.file && (
               <p className="mt-2 text-xs! text-light">
                 {t.currentFile} <strong>{state.file.name}</strong>

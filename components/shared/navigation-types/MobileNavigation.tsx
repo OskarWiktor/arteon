@@ -8,7 +8,7 @@ import { createPortal } from 'react-dom';
 import Eyebrow from '../../ui/typography/Eyebrow';
 import IconText from '../../ui/IconText';
 import SocialIconLink from '../../ui/SocialIconLink';
-import { LEGAL_LINKS_PL, MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
+import { ABOUT_NAV_ITEMS_PL, LEGAL_LINKS_PL, MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';
@@ -48,6 +48,13 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
   const NAV = MOBILE_NAV_ITEMS_PL;
+  const ABOUT_ITEMS = ABOUT_NAV_ITEMS_PL.map((it) => {
+    const Icon = it.icon;
+    return {
+      ...it,
+      icon: Icon ? <Icon aria-hidden className="h-5 w-5" /> : undefined,
+    };
+  });
   const SECTIONS: Section[] = OFFER_SECTIONS_PL.map((section) => ({
     key: section.key,
     title: section.title,
@@ -239,7 +246,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               <div className="my-3 h-px w-full bg-neutral-200" />
 
               <ul className="mb-2 flex flex-col gap-1">
-                {NAV.map(({ href, label, exact }) => {
+                {NAV.map(({ href, label, exact, key: itemKey }) => {
                   const isActive = exact ? pathname === href : pathname.startsWith(href);
                   return (
                     <li key={label}>
@@ -253,6 +260,29 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       >
                         {label}
                       </Link>
+
+                      {itemKey === 'oNas' && ABOUT_ITEMS.length > 0 && (
+                        <ul className="mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3">
+                          {ABOUT_ITEMS.map((aboutItem) => {
+                            const isSubActive = pathname.startsWith(aboutItem.href);
+                            return (
+                              <li key={aboutItem.href}>
+                                <Link
+                                  href={aboutItem.href}
+                                  onClick={() => setIsOpen(false)}
+                                  aria-current={isSubActive ? 'page' : undefined}
+                                  className={`flex items-center gap-3 rounded-xl px-3 py-[6px] text-[14px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                                    isSubActive ? 'bg-zinc-100 font-semibold text-dark' : 'text-dark hover:bg-neutral-100'
+                                  }`}
+                                >
+                                  {aboutItem.icon ? <span className="text-slate-500">{aboutItem.icon}</span> : null}
+                                  <span className="min-w-0">{aboutItem.title}</span>
+                                </Link>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      )}
                     </li>
                   );
                 })}

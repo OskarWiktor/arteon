@@ -354,14 +354,14 @@ Uwagi dot. środowiska:
   - **[brak]** (poza cache canvas w module).
 
 ## `Color types` (`lib/tools/color/types.ts`)
-- **Co robi**: Wspólne typy `RGB` i `HSL`.
+- **Co robi**: Wspólne typy `RGB/RGBA` i `HSL/HSLA`.
 - **API**:
-  - `RGB`, `HSL`
+  - `RGB`, `RGBA`, `HSL`, `HSLA`
 
 ## `Color convert` (`lib/tools/color/convert.ts`)
-- **Co robi**: Konwersje i formatowanie kolorów (HEX/RGB/HSL) + walidacja/normalizacja.
+- **Co robi**: Konwersje i formatowanie kolorów (HEX/RGB/RGBA/HSL/HSLA) + walidacja/normalizacja.
 - **Wybrane API**:
-  - `hexToRgb`, `rgbToHex`, `rgbToHsl`, `hslToRgb`
+  - `hexToRgb`, `rgbToHex`, `rgbToHsl`, `hslToRgb`, `parseHsl`
   - `normalizeHex`, `formatHsl`, `randomHexColor`, `clamp`
 - **Side effecty**:
   - **[brak]** (pure).
@@ -377,16 +377,18 @@ Uwagi dot. środowiska:
 ## `getContrastRatio` (`lib/tools/color/contrast.ts`)
 - **Co robi**: Helpery do kontrastu (WCAG): parsuje kolor wejściowy i liczy `relativeLuminance` oraz `contrast ratio`.
 - **API**:
-  - `parseColor(color: string): RGB | null` (obsługa `#rgb`, `#rrggbb`, `rgb(...)`, `rgba(...)`)
+  - `parseColor(color: string): RGBA | null` (obsługa `#rgb`, `#rrggbb`, `rgb(...)`, `rgba(...)`, `hsl(...)`, `hsla(...)`)
   - `relativeLuminance(rgb: RGB): number`
   - `getContrastRatio(foreground: string, background: string): number | null`
 - **Zależności**:
-  - `lib/tools/color/convert` (`hexToRgb`)
-  - `lib/tools/color/types` (`RGB`)
+  - `lib/tools/color/convert` (`hexToRgb`, `parseHsl`, `hslToRgb`)
+  - `lib/tools/color/types` (`RGB`, `RGBA`)
 - **Side effecty**:
   - **[brak]** (pure).
 - **Uwagi**:
-  - `rgba(...)` jest parsowane, ale kanał alpha nie jest uwzględniany (funkcja zwraca `RGB`).
+  - Dla `rgba(...)` / `hsla(...)` kontrast jest liczony po kompozycji: foreground na background.
+  - Jeśli background ma alpha, jest kompozycja na białym (`#fff`).
+  - `getContrastRatio()` zwraca niezaokrąglony wynik (UI formatuje do 2 miejsc).
 
 ## `extractPalette` (`lib/tools/color/extractPalette.ts`)
 - **Co robi**: Ekstrakcja dominujących kolorów z `ImageData` (quantization/bucketing + filtrowanie „zbyt podobnych” kolorów).

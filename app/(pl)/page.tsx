@@ -8,6 +8,7 @@ import FeesSteps from '@/components/sections/steps/FeesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TechStack from '@/components/sections/TechStack';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -274,6 +275,10 @@ export default function HomePage() {
         <Gap variant="line" />
 
         <ProjectsCarousel title="Najnowsze realizacje" />
+
+        <Gap variant="line" />
+
+        <ToolsCarousel />
 
         <Gap variant="line" />
 

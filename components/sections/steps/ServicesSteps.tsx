@@ -6,7 +6,7 @@ const ui = {
   pl: {
     title: 'Poznaj nasze usługi',
     subtitle: 'Partner',
-    description: 'Posiadamy szeroką ofertę, dzięki czemu, nie zależnie od Twojej branży, celów jak i budżetu, jesteśmy w stanie zrealizować Twój plan',
+    description: 'Posiadamy szeroką ofertę, dzięki czemu niezależnie od Twojej branży, celów i budżetu, jesteśmy w stanie zrealizować Twój plan',
     btnOne: 'Skontaktuj się',
     checkOffer: 'Sprawdź ofertę',
     urls: {
@@ -54,7 +54,7 @@ function getItems() {
             <li>Konfiguracja płatności i dostaw</li>
             <li>Łatwa edycja produktów i kategorii</li>
             <li>Darmowe wsparcie prawne</li>
-            <li>Bezpłatne Szkolenie PDF dla właściciela sklepu</li>
+            <li>Bezpłatne szkolenie PDF dla właściciela sklepu</li>
           </ul>
           <div className="mt-auto">
             <Button arrow link={t.urls.shops}>

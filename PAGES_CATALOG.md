@@ -101,6 +101,29 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/o-nas`.
   - **[schema]** microdata na wrapperze: `https://schema.org/AboutPage`.
 
+### `/o-nas/faq` — FAQ (współpraca)
+
+- **[Plik]** `app/(pl)/o-nas/faq/page.tsx`
+- **[Cel / content]** Obszerna strona FAQ odpowiadająca na pytania i obawy klientów (proces, wycena, terminy, SEO, utrzymanie). Wspiera SEO long-tail i ułatwia podjęcie decyzji o współpracy.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `FaqPanels`, `CTABanner`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/o-nas/faq`, `openGraph`.
+  - **[schema]**
+    - JSON-LD: `FAQPage` (emitowany server-side w `page.tsx`; `FaqPanels` ma `generateSchema={false}` aby nie dublować).
+    - JSON-LD: `BreadcrumbList` (przez `Breadcrumbs(includeJsonLd)`).
+    - Microdata: `FAQPage` na wrapperze (`itemScope` + `itemType`).
+
+### `/o-nas/dolacz-do-sieci` — Dołącz do sieci
+
+- **[Plik]** `app/(pl)/o-nas/dolacz-do-sieci/page.tsx`
+- **[Cel / content]** Strona partnerska (nie rekrutacyjna): zaproszenie do współpracy projektowej i dołączenia do sieci kontaktów (web/mobile/wideo/3D/animacja) + formularz kontaktowy z domyślnym tematem.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `ContactForm`, `CTABanner`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/o-nas/dolacz-do-sieci`, `openGraph`.
+  - **[schema]**
+    - JSON-LD: `BreadcrumbList` (przez `Breadcrumbs(includeJsonLd)`).
+    - Microdata: `WebPage` na wrapperze (`itemScope` + `itemType`).
+
 ### `/kontakt` — Kontakt
 
 - **[Plik]** `app/(pl)/kontakt/page.tsx`

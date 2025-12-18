@@ -79,7 +79,7 @@ Struktura repo (w uproszczeniu):
   - **[a11y]** udostępnia szybki skok do treści (zwykle widoczny po focus).
 
 ### `CookieConsent` (`components/shared/CookieConsent.tsx`)
-- **Co robi**: Obsługuje zgodę na cookies (banner + panel preferencji) oraz integrację z Google Analytics consent.
+- **Co robi**: Obsługuje zgodę na pliki cookie (banner + panel preferencji) oraz integrację z Google Analytics consent.
 - **Odpowiedzialności**:
   - **[persist]** odczyt/zapis cookie z preferencjami.
   - **[GA consent]** wywołuje `gtag('consent', 'default' | 'update', ...)` wg ustawień.
@@ -94,7 +94,7 @@ Struktura repo (w uproszczeniu):
   - `lib/consent/ga.ts` (lazy-load GA po zgodzie).
 
 ### `CookieSettingsButton` (`components/shared/CookieSettingsButton.tsx`)
-- **Co robi**: Przycisk otwierający ustawienia cookies.
+- **Co robi**: Przycisk otwierający ustawienia plików cookie.
 - **Odpowiedzialności**:
   - **[delegacja]** wywołuje globalne `window.ArteonConsent?.open()`.
 
@@ -188,7 +188,7 @@ Struktura repo (w uproszczeniu):
 ### `Tooltip` (`components/sections/Tooltip.tsx`)
 - **Co robi**: Uniwersalny tooltip (hover/focus/touch) z opóźnieniem.
 - **Odpowiedzialności**:
-  - **[timing]** opóźnione show/hide.
+  - **[timing]** opóźnione show/hide (`useTimeout` dla `delay` + `clear` przy hide).
   - **[a11y]** role/aria atrybuty.
   - **[CSS inject]** jednorazowo wstrzykuje styl (kropkowane podkreślenie).
 - **Uwagi**:

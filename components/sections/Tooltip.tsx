@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEventListener } from '@/hooks/useEventListener';
+import { useTimeout } from '@/hooks/useTimeout';
 
 const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };
 
@@ -24,7 +25,7 @@ export default function Tooltip({ children, title, description, placement = 'top
   const id = useId().replace(/:/g, '');
   const bubbleId = `tt-${id}`;
   const rootRef = useRef<HTMLSpanElement>(null);
-  const timerRef = useRef<number | null>(null);
+  const { start, clear } = useTimeout();
   const [open, setOpen] = useState(false);
   const r = useReducedMotion();
 
@@ -47,24 +48,16 @@ export default function Tooltip({ children, title, description, placement = 'top
     win[KEY] = true;
   }, []);
 
-  const clearTimer = () => {
-    if (timerRef.current) {
-      window.clearTimeout(timerRef.current);
-      timerRef.current = null;
-    }
-  };
-
   const show = () => {
-    clearTimer();
-    timerRef.current = window.setTimeout(() => setOpen(true), delay) as unknown as number;
+    start(() => setOpen(true), delay);
   };
   const hideImmediately = useCallback(() => {
-    clearTimer();
+    clear();
     setOpen(false);
-  }, []);
+  }, [clear]);
   const toggleTouch = (e: React.TouchEvent) => {
     e.preventDefault();
-    clearTimer();
+    clear();
     setOpen((v) => !v);
   };
 

@@ -1,6 +1,8 @@
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
+import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
+import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TechStack from '@/components/sections/TechStack';
@@ -10,15 +12,15 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
-import { RiFileTextLine, RiMegaphoneLine } from 'react-icons/ri';
+import { RiCodeSSlashFill, RiLightbulbFlashLine, RiMegaphoneLine, RiPaletteLine } from 'react-icons/ri';
 
 export const metadata = {
-  title: 'O nas - sprawdź naszą misję i cele | Arteon',
-  description: 'Kim jesteśmy, jak pracujemy i dlaczego klienci nam ufają. Poznaj proces, standardy jakości, narzędzia oraz historie projektów Arteon.',
+  title: 'O nas – strategia, kreacja i widoczność | Arteon',
+  description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
   alternates: { canonical: 'https://www.arteonagency.pl/o-nas' },
   openGraph: {
-    title: 'O nas - sprawdź naszą misję i cele | Arteon',
-    description: 'Kim jesteśmy, jak pracujemy i dlaczego klienci nam ufają. Poznaj proces, standardy jakości, narzędzia oraz historie projektów Arteon.',
+    title: 'O nas – strategia, kreacja i widoczność | Arteon',
+    description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
     url: 'https://www.arteonagency.pl/o-nas',
     type: 'website',
     // TODO: Add unique OpenGraph image for about page: /assets/og/o-nas.webp (1200x630px)
@@ -33,30 +35,47 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroBanner title="O nas" description="Arteon - Elastyczny partner dla Twojej firmy" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
+      <HeroBanner
+        title="O nas"
+        description="Arteon – strategia, kreacja i widoczność, które dowożą wynik"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+        variant="center"
+      />
       <BenefitBelt
         items={[
-          { icon: <RiMegaphoneLine />, label: 'Doświadczenie w pracy dla marek globalnych' },
-          { icon: <RiFileTextLine />, label: 'Prosty proces i jasne zasady współpracy' },
+          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />, label: 'Strategia i plan działania' },
+          { icon: <RiPaletteLine className="h-6 w-6 text-slate-500" />, label: 'Branding i design' },
+          { icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />, label: 'Technologia (strony i sklepy)' },
+          { icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" />, label: 'Widoczność i marketing' },
         ]}
       />
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">
         <Gap size="sm" />
 
         <SectionBasic imageSrc="/assets/arteon-sygnet-01.webp" imageAlt="logo arteon" title="Kim jesteśmy">
-          <p>W Arteon wierzymy, że wysoka jakość usług powinna być dostępna dla każdego. Wdrażamy doświadczenie w pracy dla globalnych marek w małych i średnich biznesach.</p>
-          <p className="mt-2">
-            Tworzymy nowoczesne strony internetowe, sklepy online, blogi i aplikacje webowe. Projektujemy identyfikacje wizualne, prowadzimy marketing internetowy, pozycjonowanie oraz kampanie
-            reklamowe. Przygotowujemy treści sprzedażowe i blogowe, dbając o to, by Twoja firma była widoczna w sieci i przyciągała właściwych klientów. Łączymy design, technologię i strategię, aby
-            Twój biznes rósł szybko i bezpiecznie.
+          <p>
+            W Arteon łączymy strategię, design i technologię w jeden proces. Wdrażamy doświadczenie z pracy dla globalnych marek w małych i średnich biznesach — tak, żeby Twoja marka była spójna, a
+            działania dowoziły wynik.
           </p>
+          <p className="mt-2">
+            Nie sprzedajemy „samej strony”. Zaczynamy od celu (zapytania, sprzedaż, rekrutacja, wizerunek), a dopiero potem dobieramy narzędzia: ofertę, identyfikację, treści, wdrożenie i kanały
+            dotarcia.
+          </p>
+          <ul className="mt-4 list-disc space-y-1 pl-6">
+            <li>Strategia i architektura oferty</li>
+            <li>Branding i projekty graficzne</li>
+            <li>Strony, sklepy i aplikacje webowe</li>
+            <li>Treści, SEO i widoczność</li>
+            <li>Kampanie, analityka i optymalizacja</li>
+          </ul>
         </SectionBasic>
 
         <Gap variant="line" />
 
         <SectionInfo
           title="Dlaczego powstaliśmy?"
-          description="Firmy nie potrzebują już „samej strony”. Potrzebują klarownej oferty, treści, które prowadzą odbiorcę krok po kroku oraz widoczności, która buduje się od pierwszego dnia. Dlatego działamy w modelu: strategia → projekt → realizacja → widoczność."
+          description="Widzimy powtarzający się problem: firmy inwestują w pojedyncze elementy (strona, reklamy, logo), ale bez spójnej oferty, treści i planu te działania nie składają się na wynik. Dlatego pracujemy w modelu: diagnoza → plan → realizacja → pomiar → optymalizacja."
         ></SectionInfo>
 
         <Gap variant="line" />
@@ -66,9 +85,9 @@ export default function AboutPage() {
           grid="two"
           items={[
             {
-              title: 'Komplet usług wokół Twojej strony',
+              title: 'Komplet usług wokół Twojej oferty i komunikacji',
               description: (
-                <p>Strona, sklep, blog. Do tego grafika, branding, marketing, treści i budowa widoczności - wszystko w jednym miejscu. Dbamy o WCAG i podstawy prawne, żebyś startował bez ryzyka.</p>
+                <p>Jedna odpowiedzialność, jeden plan: strategia, kreacja, wdrożenie i widoczność. Bez rozbijania pracy na kilku wykonawców.</p>
               ),
             },
             {
@@ -80,9 +99,9 @@ export default function AboutPage() {
               ),
             },
             {
-              title: 'Widoczność w pakiecie',
+              title: 'Widoczność i pomiar od startu',
               description: (
-                <p>Optymalizacja pod Google od pierwszego dnia: struktura, treści i techniczne pozycjonowanie są w cenie. Po wdrożeniu dostajesz darmową propozycję „co dalej”, by rosnąć szybciej.</p>
+                <p>SEO i analityka od pierwszego dnia: struktura, treści i techniczne podstawy. Po wdrożeniu dostajesz propozycję „co dalej”, żeby rosnąć szybciej.</p>
               ),
             },
 
@@ -104,6 +123,14 @@ export default function AboutPage() {
         <Gap variant="line" />
 
         <WorkSteps />
+
+        <Gap variant="line" />
+
+        <ProjectsCarousel title="Wybrane realizacje" subtitle="Portfolio" />
+
+        <Gap variant="line" />
+
+        <TestimonialsCarousel title="Opinie klientów" />
 
         <Gap variant="line" />
 
