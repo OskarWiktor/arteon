@@ -2,6 +2,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import MetaTitleDescriptionTool from '@/components/sections/tools/MetaTitleDescriptionTool';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
@@ -110,6 +111,10 @@ export default function Page() {
             Pamiętaj, że Google może w niektórych sytuacjach zamienić Twój opis na fragment treści ze strony, dlatego ważne informacje powinny pojawić się również w samej zawartości strony.
           </p>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ToolsCarousel title="Sprawdź inne narzędzia" />
 
         <Gap size="sm" />
       </Wrapper>

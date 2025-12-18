@@ -7,6 +7,7 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 
 export const metadata: Metadata = {
   title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
@@ -90,6 +91,10 @@ export default function Page() {
           </ul>
           <p className="text-light">Wszystkie obliczenia wykonywane są lokalnie w Twojej przeglądarce</p>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ToolsCarousel title="Sprawdź inne narzędzia" />
 
         <Gap size="sm" />
       </Wrapper>

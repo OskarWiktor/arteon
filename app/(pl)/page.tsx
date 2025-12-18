@@ -282,10 +282,6 @@ export default function HomePage() {
 
         <Gap variant="line" />
 
-        <ToolsCarousel />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
@@ -303,6 +299,10 @@ export default function HomePage() {
         <Gap variant="line" />
 
         <ArticlesCarousel title="Nasze artykuły i poradniki" articles={articlePreviews} />
+
+        <Gap variant="line" />
+
+        <ToolsCarousel />
 
         <Gap size="sm" />
       </Wrapper>

@@ -7,6 +7,7 @@ import FaviconGenerator from '@/components/sections/tools/FaviconGenerator';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
@@ -92,6 +93,10 @@ export default function Page() {
           </ul>
           <p className="text-light">Wszystkie pliki generowane są lokalnie w Twojej przeglądarce - nic nie jest wysyłane na serwer.</p>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ToolsCarousel title="Sprawdź inne narzędzia" />
 
         <Gap size="sm" />
       </Wrapper>

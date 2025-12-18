@@ -2,6 +2,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import PaletteExtractor from '@/components/sections/tools/PaletteExtractor';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
@@ -68,8 +69,9 @@ export default function Page() {
 
         <PaletteExtractor />
 
-        <Gap size="xs" />
+        <Gap variant="line" />
 
+        <ToolsCarousel title="Sprawdź inne narzędzia" />
         <Gap size="sm" />
       </Wrapper>
 

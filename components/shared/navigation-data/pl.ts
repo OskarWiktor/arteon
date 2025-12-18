@@ -207,6 +207,8 @@ export type ToolSectionItem = {
   key: ToolItemKey;
   href: string;
   title: string;
+  description: string;
+  image: string;
   icon?: IconType;
 };
 
@@ -221,28 +223,88 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
     key: 'obrazy',
     title: 'Obrazy i favicony',
     items: [
-      { key: 'jpgToWebp', href: '/narzedzia/jpg-png-na-webp-bez-limitu', title: 'Konwerter JPG/PNG na WebP', icon: RiImageEditLine },
-      { key: 'imageResize', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', title: 'Kadrowanie i zmiana rozmiaru obrazu', icon: RiCropLine },
-      { key: 'favicon', href: '/narzedzia/darmowy-generator-favicon-ico', title: 'Generator favicon', icon: RiAppsLine },
+      {
+        key: 'jpgToWebp',
+        href: '/narzedzia/jpg-png-na-webp-bez-limitu',
+        title: 'Konwerter JPG/PNG na WebP',
+        description: 'Zmniejsz wagę zdjęć bez utraty jakości. Konwertuj JPG i PNG do WebP i przyspiesz ładowanie strony.',
+        image: '/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+        icon: RiImageEditLine,
+      },
+      {
+        key: 'imageResize',
+        href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
+        title: 'Kadrowanie i zmiana rozmiaru',
+        description: 'Przygotuj idealny kadr pod social media lub stronę WWW. Wybierz gotowy format lub wpisz własne wymiary.',
+        image: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
+        icon: RiCropLine,
+      },
+      {
+        key: 'favicon',
+        href: '/narzedzia/darmowy-generator-favicon-ico',
+        title: 'Generator favicon',
+        description: 'Z jednego obrazu wygeneruj favicon.ico oraz ikony PNG zgodne z wymaganiami przeglądarek i Lighthouse.',
+        image: '/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
+        icon: RiAppsLine,
+      },
     ],
   },
   {
     key: 'seo',
     title: 'Meta i SEO',
-    items: [{ key: 'metaCounter', href: '/narzedzia/licznik-dlugosci-meta-title-i-description', title: 'Licznik meta title i description', icon: RiFileTextLine }],
+    items: [
+      {
+        key: 'metaCounter',
+        href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
+        title: 'Licznik meta title i description',
+        description: 'Sprawdź liczbę znaków i podgląd wyniku w Google. Uniknij uciętych tytułów i opisów w wynikach wyszukiwania.',
+        image: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+        icon: RiFileTextLine,
+      },
+    ],
   },
   {
     key: 'email',
     title: 'E-mail i komunikacja',
-    items: [{ key: 'emailSignature', href: '/narzedzia/darmowy-generator-stopki-mailowej', title: 'Generator stopki mailowej HTML', icon: RiMailLine }],
+    items: [
+      {
+        key: 'emailSignature',
+        href: '/narzedzia/darmowy-generator-stopki-mailowej',
+        title: 'Generator stopki mailowej',
+        description: 'Zbuduj profesjonalny podpis e-mail w kilka minut. Skopiuj gotowy kod HTML do Gmaila lub Outlooka.',
+        image: '/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+        icon: RiMailLine,
+      },
+    ],
   },
   {
     key: 'kolory',
     title: 'Kolory i dostępność',
     items: [
-      { key: 'contrastChecker', href: '/narzedzia/tester-kontrastu-kolorow-wcag', title: 'Tester kontrastu kolorów WCAG', icon: RiContrast2Line },
-      { key: 'paletteExtractor', href: '/narzedzia/generator-palety-kolorow-z-obrazu', title: 'Generator palety kolorów z obrazu', icon: RiPantoneLine },
-      { key: 'colorPalette', href: '/narzedzia/generator-palet-kolorow-online', title: 'Generator palety kolorów z jednego koloru', icon: RiPaletteLine },
+      {
+        key: 'contrastChecker',
+        href: '/narzedzia/tester-kontrastu-kolorow-wcag',
+        title: 'Tester kontrastu WCAG',
+        description: 'Sprawdź, czy kolory na Twojej stronie spełniają wymagania WCAG 2.1 dla poziomu AA i AAA.',
+        image: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+        icon: RiContrast2Line,
+      },
+      {
+        key: 'paletteExtractor',
+        href: '/narzedzia/generator-palety-kolorow-z-obrazu',
+        title: 'Paleta kolorów z obrazu',
+        description: 'Dodaj obraz, a narzędzie pokaże użyte na nim kolory. Skopiuj kod koloru jednym kliknięciem.',
+        image: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+        icon: RiPantoneLine,
+      },
+      {
+        key: 'colorPalette',
+        href: '/narzedzia/generator-palet-kolorow-online',
+        title: 'Generator palet kolorów',
+        description: 'Wybierz jeden kolor i wygeneruj klasyczne oraz nowoczesne palety: pastelowe, ciemne, tonalne i inne.',
+        image: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+        icon: RiPaletteLine,
+      },
     ],
   },
 ];

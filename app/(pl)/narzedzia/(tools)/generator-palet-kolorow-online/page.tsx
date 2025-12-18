@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import ColorPaletteGenerator from '@/components/sections/tools/ColorPaletteGenerator';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 
 export const metadata: Metadata = {
   title: 'Generator palet kolorów online - system barw z jednego koloru',
@@ -71,6 +72,10 @@ export default function Page() {
         <Gap size="sm" />
 
         <ColorPaletteGenerator />
+
+        <Gap variant="line" />
+
+        <ToolsCarousel title="Sprawdź inne narzędzia" />
 
         <Gap size="sm" />
       </Wrapper>

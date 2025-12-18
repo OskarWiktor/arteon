@@ -74,26 +74,22 @@ export default function ToolsCarousel({ max = 8, title = ui.pl.defaultTitle, sub
           tabIndex={0}
           onKeyDown={onKeyDown}
         >
-          {items.map((tool, i) => {
-            const Icon = tool.icon;
-
-            return (
-              <div
-                key={tool.key}
-                ref={
-                  i === 0
-                    ? (el: HTMLDivElement | null) => {
-                        cardRef.current = el;
-                      }
-                    : null
-                }
-                className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
-                aria-label={`${t.tool} ${i + 1} ${t.of} ${items.length}`}
-              >
-                <CarouselCard variant="tool" title={tool.title} href={tool.href} icon={Icon ? <Icon className="h-8 w-8" /> : undefined} />
-              </div>
-            );
-          })}
+          {items.map((tool, i) => (
+            <div
+              key={tool.key}
+              ref={
+                i === 0
+                  ? (el: HTMLDivElement | null) => {
+                      cardRef.current = el;
+                    }
+                  : null
+              }
+              className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
+              aria-label={`${t.tool} ${i + 1} ${t.of} ${items.length}`}
+            >
+              <CarouselCard variant="tool" title={tool.title} href={tool.href} description={tool.description} image={tool.image} />
+            </div>
+          ))}
         </div>
 
         <CarouselNavButtons isScrollable={isScrollable} onPrev={() => scrollByCards('left')} onNext={() => scrollByCards('right')} prevLabel={t.scrollLeft} nextLabel={t.scrollRight} />

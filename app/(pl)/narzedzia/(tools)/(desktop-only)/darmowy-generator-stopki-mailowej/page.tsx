@@ -7,6 +7,7 @@ import type { Metadata } from 'next';
 import EmailSignatureGenerator from '@/components/sections/tools/EmailSignatureGenerator';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej HTML - bez limitu',
@@ -86,6 +87,10 @@ export default function Page() {
             abonamentu i bez limitu użycia.
           </p>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <ToolsCarousel title="Sprawdź inne narzędzia" />
 
         <Gap size="sm" />
       </Wrapper>

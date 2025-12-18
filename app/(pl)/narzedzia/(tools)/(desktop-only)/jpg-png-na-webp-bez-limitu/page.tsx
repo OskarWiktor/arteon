@@ -2,6 +2,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import JpgPngToWebp from '@/components/sections/tools/JpgPngToWebp';
+import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
@@ -83,7 +84,9 @@ export default function Page() {
           </ul>
           <p className="text-light">Jeśli chcesz, żeby Twoja strona ładowała się tak szybko, jak pliki po konwersji, możesz rozważyć pełną optymalizację WWW (obrazy, kod, hosting, SEO techniczne).</p>
         </SectionInfo>
+        <Gap variant="line" />
 
+        <ToolsCarousel title="Sprawdź inne narzędzia" />
         <Gap size="sm" />
       </Wrapper>
 

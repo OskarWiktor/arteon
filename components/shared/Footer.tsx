@@ -90,7 +90,6 @@ const offerLinksThree = [
   { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki' },
 ];
 
-
 const navLinksPrimary = [
   { href: '/', label: 'Strona główna' },
   { href: '/uslugi', label: 'Usługi' },
@@ -136,7 +135,7 @@ export default function Footer() {
     <>
       <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
         <Wrapper>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 lg:auto-rows-min">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-5">
             {/* 1.1 Dane firmy + Logo + Social */}
             <section aria-label={t.companyDataLabel} className="lg:col-start-1 lg:row-start-1">
               <div className="mb-4">
