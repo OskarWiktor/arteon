@@ -42,7 +42,7 @@ export default function Navigation() {
           <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
-            <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal text-light">
+            <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-light mr-3 cursor-pointer text-sm font-normal">
               #MadeWithNext.js
             </a>
 
@@ -50,23 +50,17 @@ export default function Navigation() {
               href="https://www.instagram.com/arteon.pl"
               label={t.instagramLabel}
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-              icon={<RiInstagramLine className="h-6 w-6 text-slate-500" aria-hidden="true" />}
+              icon={<RiInstagramLine className="h-6 w-6 text-slate-700" aria-hidden="true" />}
             />
             <SocialIconLink
               href="https://www.facebook.com/people/Arteon/61583260915021/"
               label={t.facebookLabel}
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-              icon={<RiFacebookFill className="h-6 w-6 text-slate-500" aria-hidden="true" />}
+              icon={<RiFacebookFill className="h-6 w-6 text-slate-700" aria-hidden="true" />}
             />
           </div>
 
-          <IconButton
-            onClick={toggleMenu}
-            label={isOpen ? t.closeMenu : t.openMenu}
-            aria-expanded={isOpen}
-            size="md"
-            className="block h-auto w-auto p-1 lg:hidden"
-          >
+          <IconButton onClick={toggleMenu} label={isOpen ? t.closeMenu : t.openMenu} aria-expanded={isOpen} size="md" className="block h-auto w-auto p-1 lg:hidden">
             {isOpen ? <RiCloseLine size={28} aria-hidden="true" /> : <RiMenuLine size={28} aria-hidden="true" />}
           </IconButton>
         </nav>

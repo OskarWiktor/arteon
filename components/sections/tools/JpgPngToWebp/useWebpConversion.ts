@@ -14,7 +14,7 @@ type UseWebpConversionLabels = {
   webpGenerationError: string;
 };
 
- type WebpAutoDownloadMode = 'files' | 'zip';
+type WebpAutoDownloadMode = 'files' | 'zip';
 
 type UseWebpConversionOptions = {
   files: WebpQueueItem[];

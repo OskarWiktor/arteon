@@ -13,8 +13,7 @@ import { useTimeout } from '@/hooks/useTimeout';
 const ui = {
   pl: {
     title: 'Pliki cookie i prywatność',
-    description:
-      'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong>Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
+    description: 'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong>Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
     setPreferences: 'Ustaw preferencje',
     privacyPolicy: 'Polityka prywatności',
     reject: 'Odrzuć',
@@ -51,13 +50,10 @@ export default function CookieConsent() {
 
   useRestoreFocus(visible);
 
-  useEscapeKey(
-    (e) => {
-      e.preventDefault();
-      saveAndClose({ analytics: false });
-    },
-    visible
-  );
+  useEscapeKey((e) => {
+    e.preventDefault();
+    saveAndClose({ analytics: false });
+  }, visible);
 
   useFocusTrap(dialogRef, visible);
 
@@ -108,14 +104,14 @@ export default function CookieConsent() {
 
   return (
     <div ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descId} className="fixed inset-x-0 bottom-0 z-[70] bg-transparent">
-      <div className="mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 text-dark shadow-xl ring-1 ring-black/5">
+      <div className="text-dark mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 shadow-xl ring-1 ring-black/5">
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="space-y-2">
               <span id="cookie-title" className="h6">
                 {t.title}
               </span>
-              <p id="cookie-desc" className="text-sm text-dark">
+              <p id="cookie-desc" className="text-dark text-sm">
                 <span dangerouslySetInnerHTML={{ __html: t.description }} />
                 <span className="ml-1">
                   <button
@@ -141,7 +137,7 @@ export default function CookieConsent() {
               <button
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: false })}
-                className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium text-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
               >
                 {t.reject}
               </button>
@@ -169,15 +165,15 @@ export default function CookieConsent() {
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
                   <span className="text-base font-medium">{t.essentialTitle}</span>
-                  <span className="ml-2 text-sm font-medium text-dark">{t.essentialDescription}</span>
+                  <span className="text-dark ml-2 text-sm font-medium">{t.essentialDescription}</span>
                 </div>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-dark">{t.essentialStatus}</span>
+                <span className="text-dark rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold">{t.essentialStatus}</span>
               </div>
 
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
                 <div>
                   <span className="text-base font-medium">{t.analyticsTitle}</span>
-                  <span className="ml-2 text-sm font-medium text-dark">{t.analyticsDescription}</span>
+                  <span className="text-dark ml-2 text-sm font-medium">{t.analyticsDescription}</span>
                 </div>
                 <div className="flex w-[24px] items-center justify-center">
                   <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" aria-label={t.analyticsLabel} checked={analyticsChoice} onChange={() => setAnalyticsChoice((v) => !v)} />
@@ -186,12 +182,12 @@ export default function CookieConsent() {
             </fieldset>
 
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <span className="text-sm font-medium text-dark">{t.changeDecision}</span>
+              <span className="text-dark text-sm font-medium">{t.changeDecision}</span>
 
               <div className="flex gap-2">
                 <button
                   onClick={() => saveAndClose({ analytics: false })}
-                  className="inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-dark shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                  className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                 >
                   {t.reject}
                 </button>

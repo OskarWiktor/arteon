@@ -25,7 +25,7 @@ export default function BenefitBelt({ items, ariaLabel = ui.pl.defaultAriaLabel,
   return (
     <section className={`relative bg-white ${className}`} aria-label={ariaLabel}>
       <Wrapper className="py-2 md:py-3">
-        <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-dark md:flex md:flex-nowrap md:items-center md:gap-0 md:divide-x md:divide-slate-200">
+        <ul className="text-dark grid grid-cols-2 gap-x-4 gap-y-2 md:flex md:flex-nowrap md:items-center md:gap-0 md:divide-x md:divide-slate-200">
           {data.map((item, i) => (
             <li key={i} className="py-2 md:flex-1 md:justify-center md:px-4 md:first:pl-0 md:last:pr-0">
               <IconText icon={item.icon} iconClassName="[&_svg]:h-6 [&_svg]:w-6">

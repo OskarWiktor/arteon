@@ -21,7 +21,7 @@ export function useTimeout() {
         callback();
       }, delayMs);
     },
-    [clear]
+    [clear],
   );
 
   useEffect(() => clear, [clear]);

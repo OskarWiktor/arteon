@@ -14,12 +14,12 @@ import CTABanner from '@/components/sections/CTABanner';
 import type { Article } from '@/types/article';
 import { getAllArticles, getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
+import { toAbsoluteUrl } from '@/lib/url';
 import CodeBlock from '@/components/ui/CodeBlock';
 import TableBlock from '@/components/ui/TableBlock';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import ShareBlock from '@/components/sections/ShareBlock';
 
-const siteUrl = 'https://www.arteonagency.pl';
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
 
 export const dynamicParams = false;
@@ -36,7 +36,7 @@ const defaultCTA = {
 } as const;
 
 function articleUrl(category: string, slug: string) {
-  return `${siteUrl}/edukacja/${category}/${slug}`;
+  return toAbsoluteUrl(`/edukacja/${category}/${slug}`);
 }
 
 function jsonLd(article: Article) {
@@ -44,7 +44,7 @@ function jsonLd(article: Article) {
   const url = articleUrl(canonicalCat, article.slug);
   const headline = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
-  const image = article.cover ? (article.cover.startsWith('http') ? article.cover : `${siteUrl}${article.cover}`) : undefined;
+  const image = article.cover ? toAbsoluteUrl(article.cover) : undefined;
 
   return {
     '@context': 'https://schema.org',
@@ -57,7 +57,7 @@ function jsonLd(article: Article) {
     publisher: {
       '@type': 'Organization',
       name: 'Arteon',
-      logo: { '@type': 'ImageObject', url: `${siteUrl}/icon-512x512.png` },
+      logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/icon-512x512.png') },
     },
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
@@ -115,7 +115,7 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
                   <p className="text-lg leading-relaxed">“{b.text}”</p>
                 </blockquote>
                 {(b.author || b.role) && (
-                  <figcaption className="mt-3 text-sm text-light">
+                  <figcaption className="text-light mt-3 text-sm">
                     {b.author}
                     {b.role ? `, ${b.role}` : ''}
                   </figcaption>
@@ -198,7 +198,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                     <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
                   </Aspect>
                 )}
-                {hasCaption && <figcaption className="mt-2 mb-6 text-sm text-light md:mb-12 lg:mb-16">{b.caption}</figcaption>}
+                {hasCaption && <figcaption className="text-light mt-2 mb-6 text-sm md:mb-12 lg:mb-16">{b.caption}</figcaption>}
               </figure>
             </div>
           );
@@ -265,11 +265,11 @@ export async function generateMetadata({ params }: { params: { category: string;
   if (!article) return {};
 
   const canonicalCat = getPrimaryCategorySlug(article);
-  const canonicalPath = article.seo?.canonical || `https://www.arteonagency.pl/edukacja/${canonicalCat}/${article.slug}`;
+  const canonicalPath = article.seo?.canonical || toAbsoluteUrl(`/edukacja/${canonicalCat}/${article.slug}`);
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
-  const image = article.cover ? (article.cover.startsWith('http') ? article.cover : `${siteUrl}${article.cover}`) : undefined;
-  const ogUrl = canonicalPath.startsWith('/') ? `https://www.arteonagency.pl${canonicalPath}` : canonicalPath;
+  const image = article.cover ? toAbsoluteUrl(article.cover) : undefined;
+  const ogUrl = toAbsoluteUrl(canonicalPath);
 
   return {
     title,
@@ -307,7 +307,13 @@ export default function ArticlePage({ params }: { params: { category: string; sl
 
       <Breadcrumbs
         second={{ href: '/edukacja', label: 'Edukacja' }}
-        third={{ href: `/edukacja/${canonicalCat}`, label: article.category?.find((c) => slugify(c) === canonicalCat) || canonicalCat }}
+        third={{
+          href: `/edukacja/${canonicalCat}`,
+          label:
+            (article.primaryCategory && slugify(article.primaryCategory) === canonicalCat ? article.primaryCategory : null) ||
+            article.category?.find((c) => slugify(c) === canonicalCat) ||
+            canonicalCat,
+        }}
         fourth={{ href: `/edukacja/${canonicalCat}/${article.slug}`, label: article.title }}
         includeJsonLd
       />
@@ -318,7 +324,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             <h1 className="h2 mb-1" itemProp="headline">
               {article.title}
             </h1>
-            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-light md:gap-4">
+            <div className="text-light mt-5 flex flex-wrap items-center gap-2 text-sm md:gap-4">
               {article.author?.name ? <Badge text={article.author.name} /> : null}
               {article.datePublished ? <Badge text={`Publikacja: ${article.datePublished}`} /> : null}
               {article.readingTime ? <Badge text={`${article.readingTime} min czytania`} /> : null}
@@ -337,7 +343,6 @@ export default function ArticlePage({ params }: { params: { category: string; sl
           ) : null}
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(article)) }} />
-
         </div>
         <div>
           <ShareBlock url={url} title={shareTitle} className="mb-12" /> <TableOfContents rootSelector="#article-root" size="large" levels="h2" />

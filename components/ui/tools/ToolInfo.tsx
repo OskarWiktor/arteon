@@ -8,4 +8,3 @@ interface ToolInfoProps {
 export default function ToolInfo({ children, className = '' }: ToolInfoProps) {
   return <div className={`tool-info-box ${className}`}>{children}</div>;
 }
-

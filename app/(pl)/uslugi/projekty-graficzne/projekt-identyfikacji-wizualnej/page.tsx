@@ -149,27 +149,27 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Spójny system marki',
               description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały - online i offline - działały razem.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Materiały do codziennej komunikacji',
               description: <>Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i grafiki do prezentacji marki.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Proste zasady stosowania',
               description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie - także osobom nietechnicznym.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Pełna gotowość do druku i online',
               description: <>Otrzymujesz komplet plików do codziennej pracy: wersje do druku, internetu i mediów społecznościowych.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -337,8 +337,8 @@ export default function OfferDesignBrandIdentityDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
-                    o SEO i wyższej konwersji.
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
+                    myślą o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
@@ -374,5 +374,3 @@ export default function OfferDesignBrandIdentityDesignPage() {
     </>
   );
 }
-
-

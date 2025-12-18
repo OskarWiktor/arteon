@@ -23,8 +23,7 @@ const ui = {
     clickToSelect: 'lub kliknij, aby wybrać plik z dysku',
     supportedFormats: 'Obsługiwane: PNG, JPG/JPEG, SVG',
     preview: 'Podgląd i paleta',
-    addImageToStart:
-      'Wgraj obraz, a narzędzie pokaże jego dominujące kolory. Każdy kod skopiujesz jednym kliknięciem – idealne do UI, brandingu i social mediów.',
+    addImageToStart: 'Wgraj obraz, a narzędzie pokaże jego dominujące kolory. Każdy kod skopiujesz jednym kliknięciem - idealne do UI, brandingu i social mediów.',
     processing: 'Analizuję obraz i tworzę paletę…',
     colorPreview: 'Podgląd koloru',
     copy: 'Kopiuj',
@@ -125,21 +124,16 @@ export default function PaletteExtractor() {
       <ToolSection className="space-y-4">
         <div>
           <p className="mb-2 font-semibold uppercase">{t.addImageLabel}</p>
-          <ToolFileDropzone
-            accept={SUPPORTED_TYPES.join(',')}
-            disabled={isProcessing}
-            onFiles={handleFiles}
-            className={`tool-upload-area ${isProcessing ? 'cursor-not-allowed opacity-60' : ''}`}
-          >
+          <ToolFileDropzone accept={SUPPORTED_TYPES.join(',')} disabled={isProcessing} onFiles={handleFiles} className={`tool-upload-area ${isProcessing ? 'cursor-not-allowed opacity-60' : ''}`}>
             <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
-            <span className="mb-2 text-xs text-light">{t.clickToSelect}</span>
+            <span className="text-light mb-2 text-xs">{t.clickToSelect}</span>
             <Badge variant="default" size="sm" className="bg-white shadow-sm">
               {t.supportedFormats}
             </Badge>
           </ToolFileDropzone>
 
           {file && (
-            <p className="mt-2 text-xs text-light">
+            <p className="text-light mt-2 text-xs">
               {t.selectedFile} <strong>{file.name}</strong> ({fileSize})
             </p>
           )}
@@ -156,25 +150,17 @@ export default function PaletteExtractor() {
         <div className="flex items-center justify-between gap-2">
           <h2 className="h6">{t.preview}</h2>
           {file && (
-            <p className="text-xs text-light">
+            <p className="text-light text-xs">
               {fileSize} · <strong>{inputFormat}</strong>
             </p>
           )}
         </div>
 
-        {!previewUrl && <p className="text-xs text-light">{t.addImageToStart}</p>}
+        {!previewUrl && <p className="text-light text-xs">{t.addImageToStart}</p>}
 
-        {status === 'processing' && previewUrl && (
-          <ToolAlert variant="info">
-            {t.processing}
-          </ToolAlert>
-        )}
+        {status === 'processing' && previewUrl && <ToolAlert variant="info">{t.processing}</ToolAlert>}
 
-        {status === 'error' && previewUrl && error && (
-          <ToolAlert variant="error">
-            {error}
-          </ToolAlert>
-        )}
+        {status === 'error' && previewUrl && error && <ToolAlert variant="error">{error}</ToolAlert>}
 
         {previewUrl && (
           <ToolInfo>
@@ -184,7 +170,7 @@ export default function PaletteExtractor() {
                 <img src={previewUrl} alt={file?.name || 'Podgląd'} className="h-full w-full object-cover" />
               </div>
               <div className="min-w-0">
-                <p className="text-sm text-dark truncate font-medium">{file?.name}</p>
+                <p className="text-dark truncate text-sm font-medium">{file?.name}</p>
                 <ToolHelper className="text-[11px]!">{t.copyHint}</ToolHelper>
               </div>
             </div>
@@ -197,8 +183,10 @@ export default function PaletteExtractor() {
               <div key={color.hex} className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
                 <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`${t.colorPreview} ${color.hex}`} />
                 <div className="min-w-0 flex-1">
-                  <p className="text-sm text-dark leading-tight font-medium">{color.hex}</p>
-                  <p className="truncate text-[11px]! text-light">rgb({color.rgb.r}, {color.rgb.g}, {color.rgb.b})</p>
+                  <p className="text-dark text-sm leading-tight font-medium">{color.hex}</p>
+                  <p className="text-light truncate text-[11px]!">
+                    rgb({color.rgb.r}, {color.rgb.g}, {color.rgb.b})
+                  </p>
                 </div>
                 <CopyButton text={color.hex} label={t.copy} copiedLabel={t.copied} />
               </div>
@@ -206,9 +194,7 @@ export default function PaletteExtractor() {
           </div>
         )}
 
-        {colors.length === 0 && previewUrl && status === 'done' && (
-          <p className="text-xs text-light">{t.empty}</p>
-        )}
+        {colors.length === 0 && previewUrl && status === 'done' && <p className="text-light text-xs">{t.empty}</p>}
       </ToolSection>
     </div>
   );

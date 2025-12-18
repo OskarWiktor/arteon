@@ -137,27 +137,27 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Przemyślany układ i estetyka',
               description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie - od nagłówka po stopkę.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Responsywność i czytelność',
               description: <>Projekt działa na komputerze, tablecie i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Gotowość do wdrożenia',
               description: <>Dostarczamy pliki i rekomendacje, które przyspieszają pracę dewelopera i skracają czas publikacji.</>,
-              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />,
+              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: <>Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji do pełnej akceptacji.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -285,7 +285,8 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer: 'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
+              answer:
+                'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
             },
             {
               question: 'Czy mogę zamówić tylko jedną podstronę?',
@@ -321,8 +322,8 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
-                    o SEO i wyższej konwersji.
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
+                    myślą o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
@@ -358,5 +359,3 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
     </>
   );
 }
-
-

@@ -33,8 +33,7 @@ const schema = {
   url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
-  description:
-    'Darmowy generator favicon online po polsku. Twórz favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer.',
+  description: 'Darmowy generator favicon online po polsku. Twórz favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer.',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

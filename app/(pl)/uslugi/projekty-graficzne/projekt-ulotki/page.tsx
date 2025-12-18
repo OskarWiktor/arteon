@@ -133,27 +133,27 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Jasny przekaz i mocne wezwanie do działania',
               description: <>Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Format dopasowany do celu',
               description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w dystrybucji.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
               description: <>Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w internecie lub mailingu.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dopracowanie detali',
               description: <>W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki Twojej oferty.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -362,5 +362,3 @@ export default function OfferDesignFlyerPage() {
     </>
   );
 }
-
-

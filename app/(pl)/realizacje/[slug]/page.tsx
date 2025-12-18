@@ -9,6 +9,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 
 import projectsData from '@/data/pl/projects.json';
 import type { Project } from '@/types/project';
+import { toAbsoluteUrl } from '@/lib/url';
 import TableOfContents from '@/components/sections/TableOfContent';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -24,9 +25,8 @@ interface ProjectsData {
 
 const projects = (projectsData as ProjectsData).projects;
 
-const siteUrl = 'https://www.arteonagency.pl';
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
-const projectUrl = (slug: string) => `${siteUrl}/realizacje/${slug}`;
+const projectUrl = (slug: string) => toAbsoluteUrl(`/realizacje/${slug}`);
 
 export const dynamicParams = false;
 
@@ -34,7 +34,7 @@ function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;
   const description = project.seo?.description || '';
-  const image = project.image?.startsWith('http') ? project.image : `${siteUrl}${project.image}`;
+  const image = toAbsoluteUrl(project.image || '');
 
   return {
     '@context': 'https://schema.org',
@@ -47,7 +47,7 @@ function jsonLd(project: Project) {
     publisher: {
       '@type': 'Organization',
       name: 'Arteon',
-      logo: { '@type': 'ImageObject', url: `${siteUrl}/icon-512x512.png` },
+      logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/icon-512x512.png') },
     },
     about: project.category,
   } as const;
@@ -126,7 +126,7 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
                     <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
                   </Aspect>
                 )}
-                {b.caption && <figcaption className="mt-2 text-sm text-light">{b.caption}</figcaption>}
+                {b.caption && <figcaption className="text-light mt-2 text-sm">{b.caption}</figcaption>}
               </figure>
             </div>
           );
@@ -191,10 +191,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = project.seo?.title || `${project.title} - Case study`;
   const description = project.seo?.description || '';
-  const image = project.image ? (project.image.startsWith('http') ? project.image : `${siteUrl}${project.image}`) : undefined;
+  const image = project.image ? toAbsoluteUrl(project.image) : undefined;
 
-  const canonicalPath = project.seo?.canonical || `https://www.arteonagency.pl/realizacje/${project.slug}`;
-  const ogUrl = canonicalPath.startsWith('/') ? `https://www.arteonagency.pl${canonicalPath}` : canonicalPath;
+  const canonicalPath = project.seo?.canonical || toAbsoluteUrl(`/realizacje/${project.slug}`);
+  const ogUrl = toAbsoluteUrl(canonicalPath);
   return {
     title,
     description,
@@ -231,7 +231,7 @@ export default function ProjectPage({ params }: PageProps) {
               {project.title}
             </h1>
 
-            {project.category?.length ? <span className="mb-4 block text-sm text-light uppercase">{project.category.join(' • ')}</span> : null}
+            {project.category?.length ? <span className="text-light mb-4 block text-sm uppercase">{project.category.join(' • ')}</span> : null}
 
             {project.short && (
               <p itemProp="description">
@@ -286,7 +286,7 @@ export default function ProjectPage({ params }: PageProps) {
                 <ul className="grid gap-3 md:grid-cols-2">
                   {project.process_steps.map((step, i) => (
                     <li key={i} className="rounded-2xl bg-white p-3 shadow-md">
-                      <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-light text-xs font-bold text-light">{i + 1}</span>
+                      <span className="border-light text-light mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full border text-xs font-bold">{i + 1}</span>
                       <span dangerouslySetInnerHTML={{ __html: step }} />
                     </li>
                   ))}
@@ -311,28 +311,16 @@ export default function ProjectPage({ params }: PageProps) {
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image
-                        src={project.beforeAfter.beforeImage || project.image}
-                        alt="Widok przed zmianami"
-                        fill
-                        className="object-cover"
-                        sizes="(min-width:768px) 50vw, 100vw"
-                      />
+                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
                     </div>
-                    <figcaption className="mt-2 text-sm text-light">Przed</figcaption>
+                    <figcaption className="text-light mt-2 text-sm">Przed</figcaption>
                   </figure>
 
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image
-                        src={project.beforeAfter.afterImage || project.image}
-                        alt="Widok po wdrożeniu"
-                        fill
-                        className="object-cover"
-                        sizes="(min-width:768px) 50vw, 100vw"
-                      />
+                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
                     </div>
-                    <figcaption className="mt-2 text-sm font-semibold text-light">Po</figcaption>
+                    <figcaption className="text-light mt-2 text-sm font-semibold">Po</figcaption>
                   </figure>
                 </div>
 
@@ -389,7 +377,7 @@ export default function ProjectPage({ params }: PageProps) {
                   {(project.testimonial.author || project.testimonial.role) && (
                     <footer className="mt-2">
                       <h5 className="mt-5">{project.testimonial.author}</h5>
-                      {project.testimonial.role ? <p className="mt-1 mb-3 text-light">{project.testimonial.role}</p> : null}
+                      {project.testimonial.role ? <p className="text-light mt-1 mb-3">{project.testimonial.role}</p> : null}
                       {project.testimonial.link ? (
                         <Button variant="accent" size="small" arrow link={project.testimonial.link}>
                           Link do opinii
@@ -432,5 +420,3 @@ export default function ProjectPage({ params }: PageProps) {
     </>
   );
 }
-
-

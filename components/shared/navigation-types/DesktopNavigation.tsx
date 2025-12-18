@@ -66,7 +66,7 @@ export default function DesktopNavigation() {
       setIsAboutOpen(false);
       (offerBtnRef.current ?? toolsBtnRef.current ?? aboutBtnRef.current)?.focus();
     },
-    isOfferOpen || isToolsOpen || isAboutOpen
+    isOfferOpen || isToolsOpen || isAboutOpen,
   );
 
   useEffect(() => {
@@ -78,7 +78,7 @@ export default function DesktopNavigation() {
   const navigationItems = DESKTOP_NAV_ITEMS_PL;
 
   const offerSections = OFFER_SECTIONS_PL.map((section) => {
-    const iconClassName = section.key === 'grafika' ? 'h-5 w-5 text-slate-500' : 'h-6 w-6 text-slate-500';
+    const iconClassName = section.key === 'grafika' ? 'h-5 w-5 text-slate-700' : 'h-6 w-6 text-slate-700';
 
     return {
       ...section,
@@ -98,7 +98,7 @@ export default function DesktopNavigation() {
       const Icon = item.icon;
       return {
         ...item,
-        icon: Icon ? <Icon className="h-5 w-5 text-slate-500" /> : undefined,
+        icon: Icon ? <Icon className="h-5 w-5 text-slate-700" /> : undefined,
       };
     }),
   }));
@@ -107,7 +107,7 @@ export default function DesktopNavigation() {
     const Icon = item.icon;
     return {
       ...item,
-      icon: Icon ? <Icon className="h-5 w-5 text-slate-500" /> : undefined,
+      icon: Icon ? <Icon className="h-5 w-5 text-slate-700" /> : undefined,
     };
   });
 
@@ -152,12 +152,7 @@ export default function DesktopNavigation() {
               const isActive = pathname.startsWith('/uslugi');
               return (
                 <li ref={offerLiRef} className="group relative flex items-center gap-0.5" key={label}>
-                  <AppLink
-                    href={href}
-                    variant="navigation"
-                    aria-current={isActive ? 'page' : undefined}
-                    className={isActive ? 'font-semibold text-dark' : ''}
-                  >
+                  <AppLink href={href} variant="navigation" aria-current={isActive ? 'page' : undefined} className={isActive ? 'text-dark font-semibold' : ''}>
                     {label}
                   </AppLink>
 
@@ -170,7 +165,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-500 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -198,12 +193,12 @@ export default function DesktopNavigation() {
                                   {section.hubHref ? (
                                     <Link
                                       href={section.hubHref}
-                                      className="inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide text-dark ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="text-dark inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {section.title}
                                     </Link>
                                   ) : (
-                                    <div className="text-sm font-semibold tracking-wide text-dark">{section.title}</div>
+                                    <div className="text-dark text-sm font-semibold tracking-wide">{section.title}</div>
                                   )}
                                 </div>
 
@@ -215,7 +210,7 @@ export default function DesktopNavigation() {
                                       className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                      <span className="block text-sm font-medium text-mid">{item.title}</span>
+                                      <span className="text-mid block text-sm font-medium">{item.title}</span>
                                     </Link>
                                   ))}
                                 </div>
@@ -234,12 +229,7 @@ export default function DesktopNavigation() {
               const isActive = pathname.startsWith('/narzedzia');
               return (
                 <li ref={toolsLiRef} className="group relative flex items-center gap-0.5" key={label}>
-                  <AppLink
-                    href={href}
-                    variant="navigation"
-                    aria-current={isActive ? 'page' : undefined}
-                    className={isActive ? 'font-semibold text-dark' : ''}
-                  >
+                  <AppLink href={href} variant="navigation" aria-current={isActive ? 'page' : undefined} className={isActive ? 'text-dark font-semibold' : ''}>
                     {label}
                   </AppLink>
 
@@ -252,7 +242,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isToolsOpen}
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-500 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                   >
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -276,7 +266,7 @@ export default function DesktopNavigation() {
                           <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
                             {toolsSections.map((section) => (
                               <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
-                                <div className="mb-3 text-sm font-semibold tracking-wide text-dark">{section.title}</div>
+                                <div className="text-dark mb-3 text-sm font-semibold tracking-wide">{section.title}</div>
 
                                 <div className="grid grid-cols-1 gap-2">
                                   {section.items.map((item) => (
@@ -286,7 +276,7 @@ export default function DesktopNavigation() {
                                       className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
                                     >
                                       {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                      <span className="block text-sm font-medium text-mid">{item.title}</span>
+                                      <span className="text-mid block text-sm font-medium">{item.title}</span>
                                     </Link>
                                   ))}
                                 </div>
@@ -305,12 +295,7 @@ export default function DesktopNavigation() {
               const isActive = pathname.startsWith('/o-nas');
               return (
                 <li ref={aboutLiRef} className="group relative flex items-center gap-0.5" key={label}>
-                  <AppLink
-                    href={href}
-                    variant="navigation"
-                    aria-current={isActive ? 'page' : undefined}
-                    className={isActive ? 'font-semibold text-dark' : ''}
-                  >
+                  <AppLink href={href} variant="navigation" aria-current={isActive ? 'page' : undefined} className={isActive ? 'text-dark font-semibold' : ''}>
                     {label}
                   </AppLink>
 
@@ -323,7 +308,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isAboutOpen}
                     aria-controls={aboutMenuId}
                     ref={aboutBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-500 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isAboutOpen ? t.closeAboutList : t.openAboutList}
                   >
                     <motion.span animate={{ rotate: isAboutOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -341,20 +326,22 @@ export default function DesktopNavigation() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 z-50 mt-2 w-[min(92vw,340px)] rounded-2xl bg-white/95 p-3 shadow-xl backdrop-blur-sm ring-1 ring-slate-200"
+                        className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
                       >
-                        <div ref={aboutMenuRef} onKeyDown={handleAboutMenuKeyDown} className="grid gap-1">
-                          {aboutItems.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              className="group/link flex items-center gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
-                            >
-                              {item.icon ? <span className="shrink-0">{item.icon}</span> : null}
-                              <span className="block text-sm font-medium text-mid">{item.title}</span>
-                            </Link>
-                          ))}
-                        </div>
+                        <Wrapper>
+                          <div ref={aboutMenuRef} onKeyDown={handleAboutMenuKeyDown} className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                            {aboutItems.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="group/link flex items-start gap-3 rounded-2xl border border-slate-200 px-3 py-3 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                              >
+                                {item.icon ? <span className="mt-0.5 shrink-0 text-slate-700">{item.icon}</span> : null}
+                                <span className="text-mid block text-sm font-medium">{item.title}</span>
+                              </Link>
+                            ))}
+                          </div>
+                        </Wrapper>
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -364,12 +351,7 @@ export default function DesktopNavigation() {
 
             return (
               <li key={label} className="relative flex items-center">
-                <AppLink
-                  href={href}
-                  variant="navigation"
-                  aria-current={isActivePage ? 'page' : undefined}
-                  className={isActivePage ? 'font-semibold text-dark' : ''}
-                >
+                <AppLink href={href} variant="navigation" aria-current={isActivePage ? 'page' : undefined} className={isActivePage ? 'text-dark font-semibold' : ''}>
                   {label}
                 </AppLink>
               </li>

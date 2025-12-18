@@ -7,4 +7,3 @@ export const plConfig = {
   // Add site-specific config here when needed
   // For now, keeping it minimal to avoid any production changes
 };
-

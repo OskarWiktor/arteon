@@ -18,7 +18,12 @@ const articles = getAllArticles();
 
 export default function ArticlesList({ filterCategorySlug }: { filterCategorySlug?: string }) {
   const t = ui.pl;
-  const items = filterCategorySlug ? articles.filter((a) => (a.category || []).some((c) => slugify(c) === filterCategorySlug)) : articles;
+  const items = filterCategorySlug
+    ? articles.filter((a) => {
+        const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
+        return allCats.some((c) => slugify(c) === filterCategorySlug);
+      })
+    : articles;
 
   return (
     <section aria-label={t.articlesList} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -37,12 +42,12 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
                 <h3 className="h6">{a.title}</h3>
                 <div className="mt-3 flex flex-wrap items-center gap-2">
                   {a.readingTime ? (
-                    <span className="text-sm text-light">
+                    <span className="text-light text-sm">
                       {a.readingTime} {t.readingTime}
                     </span>
                   ) : null}
                   {a.datePublished ? (
-                    <span className="text-sm text-light" aria-label={t.publicationDate}>
+                    <span className="text-light text-sm" aria-label={t.publicationDate}>
                       • {a.datePublished}
                     </span>
                   ) : null}

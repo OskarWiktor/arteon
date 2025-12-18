@@ -25,9 +25,10 @@ type ContactFormProps = {
   description?: React.ReactNode;
   defaultSubject?: string;
   action?: string;
+  messagePlaceholder?: string;
 };
 
-export default function ContactForm({ title, description, defaultSubject, action = 'https://formspree.io/f/xldnokbw' }: ContactFormProps) {
+export default function ContactForm({ title, description, defaultSubject, action = 'https://formspree.io/f/xldnokbw', messagePlaceholder }: ContactFormProps) {
   const t = ui.pl;
   const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const formRef = useRef<HTMLFormElement>(null);
@@ -63,12 +64,8 @@ export default function ContactForm({ title, description, defaultSubject, action
     <section id="kontakt" className="scroll-mt-26">
       {(title || description) && (
         <header className="mb-6">
-          {title && (
-            <h2 className="h3 reveal-animation">{title}</h2>
-          )}
-          {description && (
-            <p className="pt-3 pb-2 text-mid">{description}</p>
-          )}
+          {title && <h2 className="h3 reveal-animation">{title}</h2>}
+          {description && <p className="text-mid pt-3 pb-2">{description}</p>}
         </header>
       )}
 
@@ -90,7 +87,7 @@ export default function ContactForm({ title, description, defaultSubject, action
 
         <div className="flex flex-col gap-1">
           <label htmlFor="message">{t.messageLabel}</label>
-          <textarea id="message" name="Wiadomość" placeholder={t.messagePlaceholder} required className={fieldClass + ' h-48 resize-none'} />
+          <textarea id="message" name="Wiadomość" placeholder={messagePlaceholder ?? t.messagePlaceholder} required className={fieldClass + ' h-48 resize-none'} />
         </div>
 
         <input type="hidden" name="Źródło" value={typeof window !== 'undefined' ? window.location.href : ''} />

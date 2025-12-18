@@ -81,9 +81,7 @@ export default function Page() {
             <li>pośrednie wsparcie dla lepszych pozycji w Google poprzez lepsze UX,</li>
             <li>niższe obciążenie serwera.</li>
           </ul>
-          <p className="text-light">
-            Jeśli chcesz, żeby Twoja strona ładowała się tak szybko, jak pliki po konwersji, możesz rozważyć pełną optymalizację WWW (obrazy, kod, hosting, SEO techniczne).
-          </p>
+          <p className="text-light">Jeśli chcesz, żeby Twoja strona ładowała się tak szybko, jak pliki po konwersji, możesz rozważyć pełną optymalizację WWW (obrazy, kod, hosting, SEO techniczne).</p>
         </SectionInfo>
 
         <Gap size="sm" />

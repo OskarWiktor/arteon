@@ -36,7 +36,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
   const mailHref = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
 
   return (
-    <section className={`w-fit surface-panel p-4 ${className}`} aria-label={t.ariaLabel}>
+    <section className={`surface-panel w-fit p-4 ${className}`} aria-label={t.ariaLabel}>
       <div className="flex items-start gap-3">
         <div className="flex-1">
           <div className="flex flex-wrap items-center gap-2">
@@ -51,7 +51,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
             </ShareIconLink>
 
             <ShareIconLink href={twitterHref} label={t.shareTwitter}>
-              <span className="text-xs text-slate-500 font-semibold">X</span>
+              <span className="text-xs font-semibold text-slate-700">X</span>
               <span className="sr-only">{t.shareTwitter}</span>
             </ShareIconLink>
 
@@ -65,7 +65,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
               label={t.copyLink}
               copiedLabel={t.copied}
               onError={() => window.prompt(t.copyPrompt, url)}
-              className="gap-1.5 px-3 py-1.5 text-xs text-mid transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+              className="text-mid gap-1.5 px-3 py-1.5 text-xs transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
             />
           </div>
         </div>
@@ -86,7 +86,7 @@ function ShareIconLink({ href, children }: ShareIconLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-slate-500 shadow-sm transition hover:-translate-y-[1px] hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-slate-700 shadow-sm transition hover:-translate-y-[1px] hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
     >
       {children}
     </a>

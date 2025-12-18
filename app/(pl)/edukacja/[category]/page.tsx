@@ -5,7 +5,7 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
-import { getAllArticles, getCategoriesWithCount } from '@/lib/blog';
+import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
 
 const siteUrl = 'https://www.arteonagency.pl';
@@ -33,7 +33,10 @@ export async function generateMetadata({ params }: { params: { category: string 
 
 export default function EdukacjaCategoryPage({ params }: { params: { category: string } }) {
   const cats = getCategoriesWithCount();
-  const hasAny = getAllArticles().some((a) => (a.category || []).some((c) => slugify(c) === params.category));
+  const hasAny = getAllArticles().some((a) => {
+    const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
+    return allCats.some((c) => slugify(c) === params.category);
+  });
 
   if (!hasAny) {
     notFound();
@@ -67,11 +70,14 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
             mainEntity: {
               '@type': 'ItemList',
               itemListElement: getAllArticles()
-                .filter((a) => (a.category || []).some((c) => slugify(c) === params.category))
+                .filter((a) => {
+                  const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
+                  return allCats.some((c) => slugify(c) === params.category);
+                })
                 .map((a, i) => ({
                   '@type': 'ListItem',
                   position: i + 1,
-                  url: `${siteUrl}/edukacja/${params.category}/${a.slug}`,
+                  url: `${siteUrl}/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`,
                   name: a.title,
                 })),
             },

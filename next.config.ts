@@ -1,30 +1,48 @@
 import type { NextConfig } from 'next';
 
+const IS_PROD = process.env.VERCEL_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
   async headers() {
-    if (process.env.VERCEL_ENV === 'production') {
-      return [];
-    }
-
-    return [
-      {
-        source: '/:path*',
-        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
-      },
-    ];
+    return IS_PROD
+      ? [
+          {
+            source: '/:path*',
+            headers: [
+              { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
+              { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+            ],
+          },
+        ]
+      : [
+          {
+            source: '/:path*',
+            headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+          },
+        ];
   },
   async redirects() {
-    return [
+    const redirects = [
+      ...(IS_PROD
+        ? [
+            {
+              source: '/:path*',
+              has: [{ type: 'header', key: 'x-forwarded-proto', value: 'http' }],
+              destination: 'https://www.arteonagency.pl/:path*',
+              permanent: true,
+            },
+          ]
+        : []),
       {
         source: '/narzedzia/palette-extractor',
-        has: [{ type: 'host', value: 'arteonagency.pl' }],
+        has: [{ type: 'host' as const, value: 'arteonagency.pl' }],
         destination: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
         permanent: true,
       },
       {
         source: '/:path*',
-        has: [{ type: 'host', value: 'arteonagency.pl' }],
+        has: [{ type: 'host' as const, value: 'arteonagency.pl' }],
         destination: 'https://www.arteonagency.pl/:path*',
         permanent: true,
       },
@@ -51,13 +69,35 @@ const nextConfig: NextConfig = {
       { source: '/projects/trilllizo', destination: '/realizacje/sklep-dla-firmy-odziezowej-trilllizo', permanent: true },
       { source: '/realizacje/katalog-produktów-restoquality', destination: '/realizacje/katalog-produktow-restoquality', permanent: true },
       { source: '/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow', destination: '/edukacja/design/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow', permanent: true },
-      { source: '/edukacja/widocznosc/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty', destination: '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty', permanent: true },
-      { source: '/edukacja/widocznosc/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google', destination: '/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google', permanent: true },
-      { source: '/edukacja/seo/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp', destination: '/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp', permanent: true },
-      { source: '/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google', destination: '/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google', permanent: true },
+      {
+        source: '/edukacja/widocznosc/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty',
+        destination: '/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty',
+        permanent: true,
+      },
+      {
+        source: '/edukacja/widocznosc/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google',
+        destination: '/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google',
+        permanent: true,
+      },
+      {
+        source: '/edukacja/seo/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+        destination: '/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+        permanent: true,
+      },
+      {
+        source: '/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
+        destination: '/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
+        permanent: true,
+      },
       { source: '/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow', destination: '/edukacja/design/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow', permanent: true },
-      { source: '/edukacja/widocznosc/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic', destination: '/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic', permanent: true },
+      {
+        source: '/edukacja/widocznosc/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+        destination: '/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+        permanent: true,
+      },
     ];
+
+    return redirects;
   },
   webpack(config, { dev }) {
     if (!dev && config.cache) {

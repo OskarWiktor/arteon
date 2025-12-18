@@ -5,22 +5,24 @@ import Wrapper from '@/components/ui/Wrapper';
 import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
 import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blog';
-
-const siteUrl = 'https://www.arteonagency.pl';
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata: Metadata = {
   title: 'Edukacja - poradniki i wiedza | Arteon',
   description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
-  alternates: { canonical: 'https://www.arteonagency.pl/edukacja' },
+  alternates: { canonical: toAbsoluteUrl('/edukacja') },
   openGraph: {
     title: 'Edukacja - poradniki i wiedza | Arteon',
     description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
-    url: `${siteUrl}/edukacja`,
+    url: toAbsoluteUrl('/edukacja'),
     type: 'website',
     // TODO: Add unique OpenGraph image for education/blog page: /assets/og/edukacja.webp (1200x630px)
     images: [
       {
-        url: `${siteUrl}/assets/ogien.webp`,
+        url: toAbsoluteUrl('/assets/ogien.webp'),
+        width: 1200,
+        height: 630,
+        alt: 'Edukacja - Arteon',
       },
     ],
   },
@@ -29,18 +31,18 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': `${siteUrl}/edukacja#collection`,
+  '@id': `${toAbsoluteUrl('/edukacja')}#collection`,
   name: 'Edukacja - poradniki i wiedza | Arteon',
   description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
-  url: `${siteUrl}/edukacja`,
+  url: toAbsoluteUrl('/edukacja'),
   mainEntity: {
     '@type': 'ItemList',
-    '@id': `${siteUrl}/edukacja#itemlist`,
+    '@id': `${toAbsoluteUrl('/edukacja')}#itemlist`,
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: getAllArticles().map((a, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${siteUrl}/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`,
+      url: toAbsoluteUrl(`/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`),
       name: a.seo?.title || a.title,
     })),
   },

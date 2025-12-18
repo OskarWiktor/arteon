@@ -5,29 +5,29 @@ import Wrapper from '@/components/ui/Wrapper';
 
 import projectsData from '@/data/pl/projects.json';
 import type { ProjectPreview } from '@/types/project';
+import { toAbsoluteUrl } from '@/lib/url';
 
 type ProjectsData = {
   projects: ProjectPreview[];
 };
 
-const siteUrl = 'https://www.arteonagency.pl';
 const projects = (projectsData as ProjectsData).projects;
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': `${siteUrl}/realizacje#collection`,
+  '@id': `${toAbsoluteUrl('/realizacje')}#collection`,
   name: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie | Arteon',
   description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
-  url: `${siteUrl}/realizacje`,
+  url: toAbsoluteUrl('/realizacje'),
   mainEntity: {
     '@type': 'ItemList',
-    '@id': `${siteUrl}/realizacje#itemlist`,
+    '@id': `${toAbsoluteUrl('/realizacje')}#itemlist`,
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: projects.map((p, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${siteUrl}/realizacje/${p.slug}`,
+      url: toAbsoluteUrl(`/realizacje/${p.slug}`),
       name: p.title,
     })),
   },
@@ -36,16 +36,19 @@ const schema = {
 export const metadata = {
   title: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie | Arteon',
   description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
-  alternates: { canonical: 'https://www.arteonagency.pl/realizacje' },
+  alternates: { canonical: toAbsoluteUrl('/realizacje') },
   openGraph: {
     title: 'Portfolio Arteon - projekty, które działają',
     description: 'Strony, sklepy, identyfikacje i kampanie. Konkretne efekty i przejrzysty proces.',
-    url: `${siteUrl}/realizacje`,
+    url: toAbsoluteUrl('/realizacje'),
     type: 'website',
     // TODO: Add unique OpenGraph image for portfolio page: /assets/og/realizacje.webp (1200x630px)
     images: [
       {
-        url: `${siteUrl}/assets/bg/abstract-bg13.webp`,
+        url: toAbsoluteUrl('/assets/bg/abstract-bg13.webp'),
+        width: 1200,
+        height: 630,
+        alt: 'Portfolio Arteon',
       },
     ],
   },

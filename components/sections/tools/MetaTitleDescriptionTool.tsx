@@ -119,7 +119,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterTitleLabel} className="mt-8" helper={titleAnalysis.helperText}>
             <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="tool-input" placeholder={t.titlePlaceholder} maxLength={180} />
-            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-light">
+            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs">
               <span>
                 {t.chars}: <strong>{titleAnalysis.chars}</strong>
               </span>
@@ -137,7 +137,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterDescriptionLabel} className="mt-8" helper={descriptionAnalysis.helperText}>
             <textarea value={description} onChange={(e) => setDescription(e.target.value)} className="tool-textarea min-h-[110px] resize-y" placeholder={t.descriptionPlaceholder} maxLength={400} />
-            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-light">
+            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs">
               <span>
                 {t.chars}: <strong>{descriptionAnalysis.chars}</strong>
               </span>
@@ -161,9 +161,9 @@ export default function MetaTitleDescriptionTool() {
           </div>
 
           <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">
-            <p className="truncate text-[13px]! text-mid">{url || 'www.twojadomena.pl/podstrona'}</p>
-            <p className="mt-1 line-clamp-2 text-[18px]! font-normal text-mid">{previewTitle}</p>
-            <p className="mt-1 line-clamp-3 text-[13px]! leading-snug text-light">{previewDescription}</p>
+            <p className="text-mid truncate text-[13px]!">{url || 'www.twojadomena.pl/podstrona'}</p>
+            <p className="text-mid mt-1 line-clamp-2 text-[18px]! font-normal">{previewTitle}</p>
+            <p className="text-light mt-1 line-clamp-3 text-[13px]! leading-snug">{previewDescription}</p>
           </div>
         </ToolSection>
       </div>

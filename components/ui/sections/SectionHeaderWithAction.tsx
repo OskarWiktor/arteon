@@ -37,7 +37,13 @@ export default function SectionHeaderWithAction({
   actionAriaLabel,
   className = '',
 }: SectionHeaderWithActionProps) {
-  const actionContent = action || (actionLabel && actionLink ? <Button link={actionLink} aria-label={actionAriaLabel}>{actionLabel}</Button> : null);
+  const actionContent =
+    action ||
+    (actionLabel && actionLink ? (
+      <Button link={actionLink} aria-label={actionAriaLabel}>
+        {actionLabel}
+      </Button>
+    ) : null);
 
   return (
     <div className={`mb-2 flex flex-col gap-3 md:mb-3 md:flex-row md:items-center md:justify-between ${className}`}>
@@ -59,4 +65,3 @@ export default function SectionHeaderWithAction({
     </div>
   );
 }
-

@@ -132,29 +132,29 @@ export default function OfferDesignLoyaltyCardPage() {
                   Tworzymy karty dopasowane do specyfiki działalności - salonów, kawiarni, siłowni, butików i innych punktów usługowych. Zasady programu są czytelne zarówno dla Ciebie, jak i klientów.
                 </>
               ),
-              icon: <RiVipCrownLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiVipCrownLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale dopasowujemy do Twojej identyfikacji wizualnej. Karta naturalnie uzupełnia pozostałe materiały i wzmacnia profesjonalny wizerunek firmy.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Gotowość do druku',
               description: (
                 <>Dostarczamy pliki w formacie gotowym do druku, z odpowiednimi spadami i specyfikacją dla drukarni. Możesz od razu zamówić nakład bez dodatkowych przeróbek technicznych.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Numeracje i pola pieczątek',
               description: <>Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia nagród. Dzięki temu obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.</>,
-              icon: <RiCoupon2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiCoupon2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />

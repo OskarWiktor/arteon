@@ -2,6 +2,7 @@ import 'server-only';
 
 import blogData from '@/data/pl/blog.json';
 import type { Article, ArticlePreview } from '@/types/article';
+import { getPrimaryCategorySlug as getPrimaryCategorySlugBase } from '@/utils/blogCategory';
 import { slugify } from '@/utils/slug';
 
 interface BlogData {
@@ -20,6 +21,7 @@ export function getAllArticlePreviews(): ArticlePreview[] {
     title: a.title,
     excerpt: a.excerpt,
     cover: a.cover,
+    primaryCategory: a.primaryCategory,
     category: a.category,
     readingTime: a.readingTime,
     datePublished: a.datePublished,
@@ -29,18 +31,19 @@ export function getAllArticlePreviews(): ArticlePreview[] {
 export function getCategoriesWithCount() {
   const map = new Map<string, { label: string; slug: string; count: number }>();
   for (const a of articles) {
-    for (const c of a.category || []) {
-      const s = slugify(c);
-      const prev = map.get(s);
-      map.set(s, { label: c, slug: s, count: (prev?.count || 0) + 1 });
+    const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
+    const unique = Array.from(new Set(allCats.map((c) => slugify(c))));
+    for (const slug of unique) {
+      const label = allCats.find((c) => slugify(c) === slug) || slug;
+      const prev = map.get(slug);
+      map.set(slug, { label, slug, count: (prev?.count || 0) + 1 });
     }
   }
   return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label));
 }
 
 export function getPrimaryCategorySlug(a: Article): string {
-  const primary = a.primaryCategory || (a.category && a.category[0]) || 'inne';
-  return slugify(primary);
+  return getPrimaryCategorySlugBase(a);
 }
 
 export function findArticleBySlug(slug: string): Article | undefined {

@@ -1,28 +1,31 @@
 # HOOKS_CATALOG
 
 Ten plik opisuje wszystkie współdzielone hooki i helpery w repozytorium Arteon:
+
 - **`/hooks/*`**: hooki UI/behavior (client-side; pliki zawierają `'use client'`).
 - **`/utils/*`**: małe utilsy (zwykle pure; mogą działać w SSR).
 - **`/lib/*`**: współdzielona logika aplikacji (konteksty, SEO/schema, blog, consent, tool utils).
 
 Uwagi dot. środowiska:
+
 - Nie wszystkie moduły są client-side: część jest SSR-safe (pure), część wymaga DOM (`window`/`document`).
 
 ## `useCarouselScroller` (`hooks/useCarouselScroller.ts`)
+
 - **Co robi**: Zarządza karuzelą opartą o poziomy scroll (stan aktualnego slajdu, liczba slajdów, nawigacja, obsługa klawiatury) i reaguje na zmiany rozmiaru.
 - **Sygnatura**: `useCarouselScroller({ itemCount, scrollRef, cardRef })`
 - **Parametry**:
   - **`itemCount`**: liczba elementów w karuzeli.
-  - **`scrollRef`**: `RefObject<HTMLDivElement | null>` – kontener przewijany w poziomie.
-  - **`cardRef`**: `RefObject<HTMLElement | null>` – referencja do elementu karty (do pomiaru szerokości).
+  - **`scrollRef`**: `RefObject<HTMLDivElement | null>` - kontener przewijany w poziomie.
+  - **`cardRef`**: `RefObject<HTMLElement | null>` - referencja do elementu karty (do pomiaru szerokości).
 - **Zwraca**:
-  - **`currentSlide`**: `number` – indeks aktualnie „aktywnego” slajdu.
-  - **`maxSlides`**: `number` – maksymalna liczba slajdów (uwzględnia ile kart mieści się w viewport).
-  - **`cardWidth`**: `number` – szerokość karty + gap (w px).
-  - **`isScrollable`**: `boolean` – czy karuzela ma więcej niż 1 slajd.
-  - **`scrollByCards`**: `(dir: 'left' | 'right') => void` – przesunięcie o jedną kartę.
-  - **`goToSlide`**: `(index: number) => void` – przewinięcie do wskazanego indeksu.
-  - **`onKeyDown`**: `(e: KeyboardEvent<HTMLDivElement>) => void` – obsługa `ArrowLeft/ArrowRight/Home/End`.
+  - **`currentSlide`**: `number` - indeks aktualnie „aktywnego” slajdu.
+  - **`maxSlides`**: `number` - maksymalna liczba slajdów (uwzględnia ile kart mieści się w viewport).
+  - **`cardWidth`**: `number` - szerokość karty + gap (w px).
+  - **`isScrollable`**: `boolean` - czy karuzela ma więcej niż 1 slajd.
+  - **`scrollByCards`**: `(dir: 'left' | 'right') => void` - przesunięcie o jedną kartę.
+  - **`goToSlide`**: `(index: number) => void` - przewinięcie do wskazanego indeksu.
+  - **`onKeyDown`**: `(e: KeyboardEvent<HTMLDivElement>) => void` - obsługa `ArrowLeft/ArrowRight/Home/End`.
 - **Zależności**:
   - **`ResizeObserver`**: do przeliczeń po zmianie rozmiaru.
   - **`getComputedStyle`**: odczyt `columnGap` dla wyliczenia „card + gap”.
@@ -33,6 +36,7 @@ Uwagi dot. środowiska:
   - **[scrollTo]**: ustawia scroll programowo (m.in. przy reflow/resize).
 
 ## `useCopyToClipboard` (`hooks/useCopyToClipboard.ts`)
+
 - **Co robi**: Kopiuje tekst do schowka i wystawia flagę `copied` (np. do UI „Skopiowano”).
 - **API**:
   - **Wywołanie**: `const { copied, copy } = useCopyToClipboard()`
@@ -48,6 +52,7 @@ Uwagi dot. środowiska:
   - **[timeout]**: ustawia timer resetujący `copied`.
 
 ## `useEscapeKey` (`hooks/useEscapeKey.ts`)
+
 - **Co robi**: Wywołuje `handler` po wciśnięciu klawisza `Escape` (z opcją `enabled`).
 - **Sygnatura**: `useEscapeKey(handler: (event: KeyboardEvent) => void, enabled: boolean = true)`
 - **Zależności**:
@@ -56,6 +61,7 @@ Uwagi dot. środowiska:
   - **[listener keydown]**: podpina/odpina listener na `document`.
 
 ## `useEventListener` (`hooks/useEventListener.ts`)
+
 - **Co robi**: Uogólniony helper do dodawania event listenerów na dowolnym `EventTarget` z opcją `enabled` i stabilną referencją callbacka.
 - **Sygnatura**: `useEventListener(target, type, listener, options?, enabled = true)`
 - **Parametry**:
@@ -70,7 +76,8 @@ Uwagi dot. środowiska:
   - **[listener]**: podpina/odpina listener na `target`.
 
 ## `useFocusTrap` (`hooks/useFocusTrap.ts`)
-- **Co robi**: „Trzyma” fokus klawiatury wewnątrz kontenera (np. modal/drawer) – cykluje fokus po `Tab` / `Shift+Tab`.
+
+- **Co robi**: „Trzyma” fokus klawiatury wewnątrz kontenera (np. modal/drawer) - cykluje fokus po `Tab` / `Shift+Tab`.
 - **Sygnatura**: `useFocusTrap(containerRef, enabled, focusableSelectors = DEFAULT_FOCUSABLE)`
 - **Parametry**:
   - **`containerRef`**: `RefObject<HTMLElement | null>`.
@@ -82,6 +89,7 @@ Uwagi dot. środowiska:
   - **[listener keydown]**: podpina/odpina listener na `document`.
 
 ## `useMenuKeyboardNavigation` (`hooks/useMenuKeyboardNavigation.ts`)
+
 - **Co robi**: Zapewnia nawigację klawiaturą po elementach menu (ArrowUp/ArrowDown/Home/End) i helpery do ustawiania fokusu.
 - **Sygnatura**: `useMenuKeyboardNavigation(containerRef, options?: { itemSelector?: string })`
 - **Parametry**:
@@ -95,9 +103,10 @@ Uwagi dot. środowiska:
 - **Zależności**:
   - **DOM**: `containerRef.current.querySelectorAll`, `document.activeElement`, `.focus()`.
 - **Side effecty**:
-  - **[brak]**: hook nie podpina listenerów sam – `onKeyDown` jest przekazywane do komponentu.
+  - **[brak]**: hook nie podpina listenerów sam - `onKeyDown` jest przekazywane do komponentu.
 
 ## `useOutsideClick` (`hooks/useOutsideClick.ts`)
+
 - **Co robi**: Wykrywa klik/touch poza wskazanym elementem i wywołuje `handler`.
 - **Sygnatura**: `useOutsideClick(ref, handler, enabled: boolean = true)`
 - **Parametry**:
@@ -110,6 +119,7 @@ Uwagi dot. środowiska:
   - **[listeners]**: podpina/odpina `mousedown` i `touchstart` na `document`.
 
 ## `useRestoreFocus` (`hooks/useRestoreFocus.ts`)
+
 - **Co robi**: Zapamiętuje element, który miał fokus w momencie włączenia, a następnie przy wyłączeniu (lub unmount) przywraca fokus.
 - **Sygnatura**: `useRestoreFocus(enabled: boolean)`
 - **Zależności**:
@@ -119,6 +129,7 @@ Uwagi dot. środowiska:
   - **[fokus]**: przy wyłączeniu/unmount próbuje przywrócić fokus na zapamiętany element.
 
 ## `useScrollLock` (`hooks/useScrollLock.ts`)
+
 - **Co robi**: Blokuje scroll strony przez dodanie/zdjęcie klasy na `document.documentElement`.
 - **Sygnatura**: `useScrollLock(locked: boolean, className: string = 'overflow-hidden')`
 - **Zależności**:
@@ -127,6 +138,7 @@ Uwagi dot. środowiska:
   - **[klasa na root]**: dodaje/usuwa klasę (i usuwa w cleanup).
 
 ## `useTimeout` (`hooks/useTimeout.ts`)
+
 - **Co robi**: Udostępnia stabilne API do zarządzania timeoutami (`start`, `clear`) z cleanup na unmount.
 - **API**:
   - **Wywołanie**: `const { start, clear } = useTimeout()`
@@ -138,6 +150,7 @@ Uwagi dot. środowiska:
   - **[timeout]**: tworzy timeout i czyści go na unmount.
 
 ## `useLocale` + `LocaleProvider` (`lib/LocaleContext.tsx`)
+
 - **Co robi**: Udostępnia kontekst języka (`'pl' | 'en'`) dla komponentów.
 - **API**:
   - **Provider**: `<LocaleProvider value={locale}>{children}</LocaleProvider>`
@@ -150,6 +163,7 @@ Uwagi dot. środowiska:
   - **[invariant]**: `useLocale` rzuca błędem, jeśli jest użyty poza `LocaleProvider`.
 
 ## `useSite` + `SiteProvider` (`lib/SiteContext.tsx`)
+
 - **Co robi**: Udostępnia kontekst `siteKey` (typ `SiteKey`) dla aplikacji.
 - **API**:
   - **Provider**: `<SiteProvider siteKey={siteKey}>{children}</SiteProvider>`
@@ -163,6 +177,7 @@ Uwagi dot. środowiska:
   - **[invariant]**: `useSite` rzuca błędem, jeśli jest użyty poza `SiteProvider`.
 
 ## `slugify` (`utils/slug.ts`)
+
 - **Co robi**: Tworzy slug URL-safe z tekstu (lowercase, usuwa diakrytyki, znaki specjalne, normalizuje spacje i myślniki).
 - **Sygnatura**: `slugify(input: string): string`
 - **Zależności**:
@@ -171,6 +186,7 @@ Uwagi dot. środowiska:
   - **[brak]** (pure).
 
 ## `Blog helpers` (`lib/blog.ts`)
+
 - **Co robi**: Helpery do bloga oparte o statyczne dane z `data/pl/blog.json`.
 - **API**:
   - `getAllArticles(): Article[]`
@@ -185,6 +201,7 @@ Uwagi dot. środowiska:
   - **[brak]** (read-only).
 
 ## `buildServiceSchema` (`lib/serviceSchema.ts`)
+
 - **Co robi**: Buduje JSON-LD schema.org `Service` dla podstron usług (URL, provider, offers, opcjonalnie `ServiceChannel`).
 - **Sygnatura**: `buildServiceSchema({ baseUrl, path, serviceName, description, availableLanguages?, includeServiceChannel? })`
 - **Zależności**:
@@ -195,6 +212,7 @@ Uwagi dot. środowiska:
   - `baseUrl` powinien być absolute (np. `https://www.arteonagency.pl`).
 
 ## `getSiteKeyFromHost` / `getActiveSiteKey` (`lib/site.ts`)
+
 - **Co robi**: Określa `SiteKey` na podstawie hosta (feature-flag `SITE_BY_DOMAIN_ENABLED`).
 - **API**:
   - `getSiteKeyFromHost(host: string): SiteKey`
@@ -206,6 +224,7 @@ Uwagi dot. środowiska:
   - **[brak]**.
 
 ## `Site config` (`lib/config/site/pl.ts`, `lib/config/site/en.ts`)
+
 - **Co robi**: Typ `SiteKey` oraz minimalne konfiguracje per site (scaffold pod multi-domain).
 - **API**:
   - `export type SiteKey = 'pl' | 'en'`
@@ -215,6 +234,7 @@ Uwagi dot. środowiska:
   - **[brak]**.
 
 ## `Consent storage` (`lib/consent/storage.ts`)
+
 - **Co robi**: Persist i odczyt zgód użytkownika w cookie `arteon_consent`.
 - **API**:
   - `readConsent(): ConsentState | null`
@@ -227,6 +247,7 @@ Uwagi dot. środowiska:
   - Moduł browser-only (w SSR zwraca `null` / no-op).
 
 ## `updateGtagConsent` (`lib/consent/gtag.ts`)
+
 - **Co robi**: Aktualizuje Google Consent Mode przez `window.gtag('consent','update', ...)`.
 - **Sygnatura**: `updateGtagConsent(analytics: boolean): void`
 - **Zależności**:
@@ -237,6 +258,7 @@ Uwagi dot. środowiska:
   - Moduł browser-only (no-op bez `window.gtag`).
 
 ## `loadGA` (`lib/consent/ga.ts`)
+
 - **Co robi**: Lazy-load GA4 (`gtag.js`) po zgodzie (dodaje skrypty do `<head>`; nie duplikuje ładowania).
 - **Sygnatura**: `loadGA(measurementId?: string): void`
 - **Zależności**:
@@ -247,12 +269,14 @@ Uwagi dot. środowiska:
   - Moduł browser-only.
 
 ## `formatBytes` (`lib/tools/formatBytes.ts`)
+
 - **Co robi**: Formatuje liczbę bajtów na czytelny string (`B/KB/MB/GB`).
 - **Sygnatura**: `formatBytes(bytes: number): string`
 - **Side effecty**:
   - **[brak]** (pure).
 
 ## `downloadFromUrl` (`lib/tools/download.ts`)
+
 - **Co robi**: Triggeruje download pliku przez tymczasowy `<a download>`.
 - **Sygnatura**: `downloadFromUrl(url: string, filename: string): void`
 - **Zależności**:
@@ -261,12 +285,14 @@ Uwagi dot. środowiska:
   - **[DOM]** tworzy i klika element `<a>`.
 
 ## `sleep` (`lib/tools/sleep.ts`)
+
 - **Co robi**: Promise wrapper na `setTimeout` (pomocnicze opóźnienia, np. przy batch-download).
 - **Sygnatura**: `sleep(ms: number): Promise<void>`
 - **Side effecty**:
   - **[timeout]** używa `setTimeout`.
 
 ## `readFileAsDataUrl` (`lib/tools/readFileAsDataUrl.ts`)
+
 - **Co robi**: Wczytuje `File` jako Data URL (`FileReader.readAsDataURL`) i zwraca wynik jako `Promise<string>`.
 - **Sygnatura**: `readFileAsDataUrl(file: File, options?: { errorMessage?: string }): Promise<string>`
 - **Zależności**:
@@ -277,6 +303,7 @@ Uwagi dot. środowiska:
   - Moduł browser-only.
 
 ## `revokeObjectUrl` / `revokeObjectUrls` (`lib/tools/objectUrl.ts`)
+
 - **Co robi**: Bezpieczny cleanup `URL.createObjectURL`.
 - **API**:
   - `revokeObjectUrl(url: string | null | undefined): void`
@@ -287,6 +314,7 @@ Uwagi dot. środowiska:
   - **[memory]** zwalnia zasoby ObjectURL.
 
 ## `loadImage` (`lib/tools/loadImage.ts`)
+
 - **Co robi**: Ładuje obraz z URL do `HTMLImageElement` (Promise) z opcją `crossOrigin`.
 - **Sygnatura**: `loadImage(url: string, options?: { crossOrigin?: '' | 'anonymous' | 'use-credentials'; errorMessage?: string }): Promise<HTMLImageElement>`
 - **Zależności**:
@@ -297,6 +325,7 @@ Uwagi dot. środowiska:
   - Moduł browser-only.
 
 ## `canvasToBlob` (`lib/tools/canvasToBlob.ts`)
+
 - **Co robi**: Promise wrapper na `canvas.toBlob` (z kontrolą błędu).
 - **Sygnatura**: `canvasToBlob(canvas, mimeType, quality?, errorMessage?): Promise<Blob>`
 - **Zależności**:
@@ -305,6 +334,7 @@ Uwagi dot. środowiska:
   - **[brak]** (poza generacją Bloba w pamięci).
 
 ## `WebP helpers` (`lib/tools/image/webp.ts`)
+
 - **Co robi**: Konwersja obrazów (`File`) do WebP przez `canvas` + algorytm smart-quality.
 - **API**:
   - `convertImageFileToWebp(file, quality, messages): Promise<Blob>`
@@ -320,6 +350,7 @@ Uwagi dot. środowiska:
   - Moduł browser-only.
 
 ## `WebP report` (`lib/tools/image/webpReport.ts`)
+
 - **Co robi**: Buduje tekstowy raport konwersji JPG/PNG → WebP (do schowka / podsumowania).
 - **API**:
   - `buildWebpConversionReportText(items, labels): string`
@@ -329,6 +360,7 @@ Uwagi dot. środowiska:
   - **[brak]** (pure).
 
 ## `generateFaviconOutputs` (`lib/tools/favicon/generator.ts`)
+
 - **Co robi**: Generuje zestaw favicon (PNG w wielu rozmiarach + opcjonalnie `favicon.ico`) na bazie `HTMLImageElement`.
 - **API**:
   - `generateFaviconOutputs(options): Promise<FaviconOutputFile[]>`
@@ -343,6 +375,7 @@ Uwagi dot. środowiska:
   - Moduł browser-only.
 
 ## `Meta length helpers` (`lib/tools/seo/metaLength.ts`)
+
 - **Co robi**: Analiza długości meta title/description (znaki, słowa, przybliżone piksele + status) oraz truncate do preview.
 - **API**:
   - `analyzeMetaTitle(text: string): FieldMetrics`
@@ -354,11 +387,13 @@ Uwagi dot. środowiska:
   - **[brak]** (poza cache canvas w module).
 
 ## `Color types` (`lib/tools/color/types.ts`)
+
 - **Co robi**: Wspólne typy `RGB/RGBA` i `HSL/HSLA`.
 - **API**:
   - `RGB`, `RGBA`, `HSL`, `HSLA`
 
 ## `Color convert` (`lib/tools/color/convert.ts`)
+
 - **Co robi**: Konwersje i formatowanie kolorów (HEX/RGB/RGBA/HSL/HSLA) + walidacja/normalizacja.
 - **Wybrane API**:
   - `hexToRgb`, `rgbToHex`, `rgbToHsl`, `hslToRgb`, `parseHsl`
@@ -367,6 +402,7 @@ Uwagi dot. środowiska:
   - **[brak]** (pure).
 
 ## `createPaletteFromHex` (`lib/tools/color/palette.ts`)
+
 - **Co robi**: Generuje zestawy palet (np. monochromatic/triadic/analogous) na bazie koloru bazowego HEX.
 - **Sygnatura**: `createPaletteFromHex(baseHex: string): PaletteGroup[]`
 - **Zależności**:
@@ -375,6 +411,7 @@ Uwagi dot. środowiska:
   - **[brak]** (pure).
 
 ## `getContrastRatio` (`lib/tools/color/contrast.ts`)
+
 - **Co robi**: Helpery do kontrastu (WCAG): parsuje kolor wejściowy i liczy `relativeLuminance` oraz `contrast ratio`.
 - **API**:
   - `parseColor(color: string): RGBA | null` (obsługa `#rgb`, `#rrggbb`, `rgb(...)`, `rgba(...)`, `hsl(...)`, `hsla(...)`)
@@ -391,6 +428,7 @@ Uwagi dot. środowiska:
   - `getContrastRatio()` zwraca niezaokrąglony wynik (UI formatuje do 2 miejsc).
 
 ## `extractPalette` (`lib/tools/color/extractPalette.ts`)
+
 - **Co robi**: Ekstrakcja dominujących kolorów z `ImageData` (quantization/bucketing + filtrowanie „zbyt podobnych” kolorów).
 - **Sygnatura**: `extractPalette(imageData: ImageData, options?: { maxColors?; bucketSize?; alphaThreshold?; minDistance? }): ExtractedColor[]`
 - **Zwraca**: listę `{ hex, rgb, count }`.
@@ -403,6 +441,7 @@ Uwagi dot. środowiska:
   - Wymaga `ImageData` (typowo browser/canvas).
 
 ## `getDownscaledImageDataFromUrl` (`lib/tools/image/canvas.ts`)
+
 - **Co robi**: Ładuje obraz z URL i zwraca downscale `ImageData` (wydajniejsze przetwarzanie pikseli niż praca na pełnym rozmiarze).
 - **Sygnatura**: `getDownscaledImageDataFromUrl(url: string, options?: { maxDimension?; crossOrigin?; errorMessage? }): Promise<ImageData>`
 - **Zależności**:

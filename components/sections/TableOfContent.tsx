@@ -102,7 +102,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       <aside className={`block lg:hidden ${widthClass}`}>
         <div className="relative rounded-xl border border-black/10 bg-white/95 shadow-sm backdrop-blur">
           <div className="flex items-center justify-between px-3 py-2">
-            <p className="text-xs text-light font-medium tracking-wider uppercase">
+            <p className="text-light text-xs font-medium tracking-wider uppercase">
               {t.tableOfContents} <span className="opacity-60">({items.length})</span>
             </p>
             <button type="button" aria-expanded={expanded} onClick={() => setExpanded((v) => !v)} className="text-xs underline">
@@ -124,7 +124,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
         <div className="surface-panel-solid p-3">
-          <p className="mb-2 text-xs text-light tracking-wider uppercase">{t.tableOfContents}</p>
+          <p className="text-light mb-2 text-xs tracking-wider uppercase">{t.tableOfContents}</p>
           <nav aria-label={t.tableOfContents}>
             <LinkList />
           </nav>

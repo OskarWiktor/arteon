@@ -10,15 +10,7 @@ interface IconTextProps {
   'aria-label'?: string;
 }
 
-export default function IconText({
-  icon,
-  children,
-  gap = '2',
-  align = 'center',
-  iconClassName = '',
-  className = '',
-  'aria-label': ariaLabel,
-}: IconTextProps) {
+export default function IconText({ icon, children, gap = '2', align = 'center', iconClassName = '', className = '', 'aria-label': ariaLabel }: IconTextProps) {
   const gapClasses = {
     '1': 'gap-1',
     '2': 'gap-2',
@@ -44,4 +36,3 @@ export default function IconText({
     </div>
   );
 }
-

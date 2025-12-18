@@ -23,7 +23,7 @@ export default function TableBlock({ caption, note, columns, rows, striped = tru
       <div className={`surface-panel-solid overflow-x-auto ${className}`} role="region" aria-label={caption || t.defaultTableLabel}>
         {caption && (
           <div className="border-b border-black/10 px-4 py-3">
-            <div className="text-sm text-dark font-medium">{caption}</div>
+            <div className="text-dark text-sm font-medium">{caption}</div>
           </div>
         )}
 
@@ -42,7 +42,7 @@ export default function TableBlock({ caption, note, columns, rows, striped = tru
               <tr key={i} className={`${striped ? (i % 2 === 0 ? 'bg-white' : 'bg-neutral-50') : 'bg-white'} border-t border-black/5`}>
                 {r.map((cell, j) => (
                   <td key={j} className={`px-4 ${compact ? 'py-2' : 'py-3'} align-top ${alignCls(columns[j]?.align)}`}>
-                    <div className="text-base text-dark">{String(cell)}</div>
+                    <div className="text-dark text-base">{String(cell)}</div>
                   </td>
                 ))}
               </tr>
@@ -53,7 +53,7 @@ export default function TableBlock({ caption, note, columns, rows, striped = tru
 
       {note ? (
         <figcaption className="mt-2">
-          <p className="text-xs text-light">{note}</p>
+          <p className="text-light text-xs">{note}</p>
         </figcaption>
       ) : null}
     </figure>

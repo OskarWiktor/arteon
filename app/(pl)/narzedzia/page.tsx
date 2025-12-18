@@ -5,19 +5,23 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine } from 'react-icons/ri';
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla stron i firm online',
   description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepsz swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia') },
   openGraph: {
     title: 'Darmowe narzędzia online dla stron i firm online',
     description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepsz swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-    url: 'https://www.arteonagency.pl/narzedzia',
+    url: toAbsoluteUrl('/narzedzia'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp'),
+        width: 1200,
+        height: 630,
+        alt: 'Narzędzia - Arteon',
       },
     ],
   },
@@ -92,8 +96,7 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 7,
       name: 'Generator palety kolorów z obrazu',
-      description:
-      'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+      description: 'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
       url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -306,7 +309,7 @@ export default function ToolsIndexPage() {
           title="Jak korzystać z narzędzi Arteon?"
           description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci."
         >
-          <p className="mt-4 text-xs text-light">
+          <p className="text-light mt-4 text-xs">
             Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
             kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online.
           </p>
@@ -319,5 +322,3 @@ export default function ToolsIndexPage() {
     </>
   );
 }
-
-

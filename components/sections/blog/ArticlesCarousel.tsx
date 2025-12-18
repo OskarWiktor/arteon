@@ -9,6 +9,7 @@ import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
 import type { ArticlePreview } from '@/types/article';
 import { slugify } from '@/utils/slug';
+import { getPrimaryCategorySlug } from '@/utils/blogCategory';
 
 const ui = {
   pl: {
@@ -40,11 +41,6 @@ type Props = {
   excludeSlug?: string;
 };
 
-function getPrimaryCategorySlug(a: Pick<ArticlePreview, 'category'>): string {
-  const first = (a.category && a.category[0]) || 'inne';
-  return slugify(first);
-}
-
 export default function ArticlesCarousel({ articles, max = 7, title = ui.pl.defaultTitle, subtitle, categorySlug, slugs, excludeSlug }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -62,7 +58,10 @@ export default function ArticlesCarousel({ articles, max = 7, title = ui.pl.defa
       const map = new Map(sourceArticles.map((a) => [a.slug, a] as const));
       list = slugsArray.map((s) => map.get(s)).filter(Boolean) as ArticlePreview[];
     } else if (categorySlug) {
-      list = sourceArticles.filter((a) => (a.category || []).some((c) => slugify(c) === categorySlug));
+      list = sourceArticles.filter((a) => {
+        const allCats = [a.primaryCategory, ...(a.category || [])].filter(Boolean) as string[];
+        return allCats.some((c) => slugify(c) === categorySlug);
+      });
     } else {
       list = sourceArticles;
     }
@@ -125,13 +124,7 @@ export default function ArticlesCarousel({ articles, max = 7, title = ui.pl.defa
                 className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
                 aria-label={`${t.article} ${i + 1} ${t.of} ${finalArticles.length}`}
               >
-                <CarouselCard
-                  variant="article"
-                  article={a}
-                  href={href}
-                  readingTimeLabel={t.readingTime}
-                  publicationDateLabel={t.publicationDate}
-                />
+                <CarouselCard variant="article" article={a} href={href} readingTimeLabel={t.readingTime} publicationDateLabel={t.publicationDate} />
               </div>
             );
           })}

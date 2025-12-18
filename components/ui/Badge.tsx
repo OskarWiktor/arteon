@@ -22,23 +22,7 @@ export interface BadgeProps {
   disabled?: boolean;
 }
 
-export default function Badge({
-  children,
-  text,
-  variant,
-  size,
-  as: Component,
-  className = '',
-  onClick,
-  htmlFor,
-  type,
-  'aria-label': ariaLabel,
-  href,
-  download,
-  target,
-  rel,
-  disabled,
-}: BadgeProps) {
+export default function Badge({ children, text, variant, size, as: Component, className = '', onClick, htmlFor, type, 'aria-label': ariaLabel, href, download, target, rel, disabled }: BadgeProps) {
   const isLegacyTextBadge =
     typeof text === 'string' &&
     children === undefined &&

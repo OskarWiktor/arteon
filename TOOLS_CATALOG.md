@@ -33,7 +33,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - HEX → RGB: `hexToRgb()` (`lib/tools/color/convert.ts`).
     - RGB → HSL: `rgbToHsl()` (`lib/tools/color/convert.ts`).
     - HSL → RGB → HEX: `hslToRgb()` + `rgbToHex()` (`lib/tools/color/convert.ts`).
-  - **[clamp]** wszystkie wartości HSL są ograniczane do sensownych zakresów (`clamp()`), a hue jest „zawijany” w 0–360.
+  - **[clamp]** wszystkie wartości HSL są ograniczane do sensownych zakresów (`clamp()`), a hue jest „zawijany” w 0-360.
   - **[grupy palet]** `createPaletteFromHex()` (`lib/tools/color/palette.ts`) zwraca tablicę `PaletteGroup`, gdzie każda grupa ma:
     - **`label`** i **`description`** (tekst edukacyjny w UI).
     - **`colors[]`**: lista 5 kolorów (HEX + HSL).
@@ -69,7 +69,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - `image/jpeg`, `image/jpg`,
     - `image/svg+xml` (best-effort; parser zależy od przeglądarki).
   - **[akcje]**:
-    - Podmiana obrazu: wgraj kolejny plik (drag&drop lub wybór z dysku) – stan i podgląd resetują się automatycznie.
+    - Podmiana obrazu: wgraj kolejny plik (drag&drop lub wybór z dysku) - stan i podgląd resetują się automatycznie.
     - Kopiowanie per kolor (przycisk `CopyButton` obok każdego koloru).
 - **Stan i dane**:
   - `file`: wybrany plik obrazu,
@@ -112,33 +112,33 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[URL]** opcjonalny adres URL używany wyłącznie w podglądzie.
   - **[title]** pole tekstowe z limitem `maxLength={180}`.
   - **[description]** textarea z limitem `maxLength={400}`.
- - **Pomiar szerokości tekstu (px)**:
-  - **[canvas]** pomiar jest wykonywany w `lib/tools/seo/metaLength.ts` (wewnętrznie przez `CanvasRenderingContext2D.measureText()`).
-  - **[fonts]** używa zdefiniowanych fontów:
-    - title: `400 20px system-ui, ...`
-    - description: `300 15px system-ui, ...`
-  - **[fallback SSR]** gdy `document` nie istnieje (np. SSR), szerokość jest aproksymowana: `text.length * fallbackAvgPx`.
-  - **[shared util]** eksportuje: `analyzeMetaTitle()` + `analyzeMetaDescription()`.
- - **Heurystyki oceny długości**:
-  - **[title]**:
-    - `too-short`, gdy **< 35 znaków** lub **< 350px**.
-    - `too-long`, gdy **> 65 znaków** lub **> 580px**.
-    - `ideal` w pozostałych przypadkach.
-  - **[description]**:
-    - `too-short`, gdy **< 100 znaków** lub **< 430px**.
-    - `too-long`, gdy **> 165 znaków** lub **> 920px**.
-    - `ideal` w pozostałych przypadkach.
- - **Podgląd snippet-u**:
-  - **[truncation]** `truncateForPreview()` (`lib/tools/seo/metaLength.ts`) ucina tekst do:
-    - title: 65 znaków,
-    - description: 165 znaków,
-    - dodając znak `…`.
-  - **[default tekst]** gdy pola są puste, używa przykładowych wartości z `ui.pl`.
- - **Zależności**:
-  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`.
-  - **Lib**: `lib/tools/seo/metaLength.ts`.
- - **Side effecty**:
-  - **[brak]** narzędzie nie zapisuje danych poza stanem komponentu.
+- **Pomiar szerokości tekstu (px)**:
+- **[canvas]** pomiar jest wykonywany w `lib/tools/seo/metaLength.ts` (wewnętrznie przez `CanvasRenderingContext2D.measureText()`).
+- **[fonts]** używa zdefiniowanych fontów:
+  - title: `400 20px system-ui, ...`
+  - description: `300 15px system-ui, ...`
+- **[fallback SSR]** gdy `document` nie istnieje (np. SSR), szerokość jest aproksymowana: `text.length * fallbackAvgPx`.
+- **[shared util]** eksportuje: `analyzeMetaTitle()` + `analyzeMetaDescription()`.
+- **Heurystyki oceny długości**:
+- **[title]**:
+  - `too-short`, gdy **< 35 znaków** lub **< 350px**.
+  - `too-long`, gdy **> 65 znaków** lub **> 580px**.
+  - `ideal` w pozostałych przypadkach.
+- **[description]**:
+  - `too-short`, gdy **< 100 znaków** lub **< 430px**.
+  - `too-long`, gdy **> 165 znaków** lub **> 920px**.
+  - `ideal` w pozostałych przypadkach.
+- **Podgląd snippet-u**:
+- **[truncation]** `truncateForPreview()` (`lib/tools/seo/metaLength.ts`) ucina tekst do:
+  - title: 65 znaków,
+  - description: 165 znaków,
+  - dodając znak `…`.
+- **[default tekst]** gdy pola są puste, używa przykładowych wartości z `ui.pl`.
+- **Zależności**:
+- **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`.
+- **Lib**: `lib/tools/seo/metaLength.ts`.
+- **Side effecty**:
+- **[brak]** narzędzie nie zapisuje danych poza stanem komponentu.
 
 ---
 
@@ -300,7 +300,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - minimalna jakość to `60`,
     - zwraca `{ blob, usedQuality }` (zapisywane per plik w kolejce).
 - **Pobieranie**:
-  - **[download helper]** `triggerDownloadFromUrl(url, filename)` – jedna funkcja do pobierania (deleguje do `downloadFromUrl()`; tworzy `<a download>` i klika).
+  - **[download helper]** `triggerDownloadFromUrl(url, filename)` - jedna funkcja do pobierania (deleguje do `downloadFromUrl()`; tworzy `<a download>` i klika).
   - **[download all]** pobiera wszystkie pliki `done` z krótką przerwą `sleep(150)`, aby ograniczyć „zatykanie” przeglądarki.
   - **[auto-download]** przy włączonej opcji `autoDownload` pobiera plik zaraz po konwersji i oznacza go jako `downloaded`.
   - **[reconvert]** resetuje element do `pending` i usuwa poprzedni `downloadUrl`.
@@ -348,7 +348,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **`mode`**: `pixels` lub `preset`.
   - **`keepAspectRatio`**: gdy `true`, zmiana jednego wymiaru przelicza drugi na podstawie proporcji oryginału.
   - **Kadrowanie**:
-    - **`cropX` / `cropY`**: pozycja środka kadru w skali 0–1 w dostępnych granicach.
+    - **`cropX` / `cropY`**: pozycja środka kadru w skali 0-1 w dostępnych granicach.
     - **`cropZoom`**: powiększenie (1 = brak zoomu).
   - **Siatka**:
     - **`gridColor`**: kolor linii 3×3 (np. emerald/white/black).
@@ -357,7 +357,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - **`shapeAspect`**: proporcje prostokąta (np. `4:5`, `16:9`).
   - **Eksport**:
     - **`outputFormat`**: `jpg` / `png` / `webp`.
-    - **`outputQuality`**: liczba 0.60–1.00 (UI: 60–100%), używana dla JPG/WebP.
+    - **`outputQuality`**: liczba 0.60-1.00 (UI: 60-100%), używana dla JPG/WebP.
   - **UX**:
     - **`activeTool`**: aktywna zakładka narzędzi kadrowania.
     - **`estimatedSize`**: rozmiar blob po wygenerowaniu (pokazywany jako „Szacowany wynik”).
@@ -389,7 +389,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[square/circle]** po wyborze kwadratu lub koła narzędzie automatycznie ustawia `targetWidth === targetHeight` (bierze krótszy bok).
   - **[rect aspect]** dla prostokąta wybór proporcji przelicza docelową wysokość na podstawie bieżącej szerokości.
   - **[circle alpha]**:
-    - koło wymaga kanału alfa – narzędzie blokuje wybór JPG (`disabled`) i automatycznie przełącza `outputFormat` na PNG, jeśli wcześniej był JPG.
+    - koło wymaga kanału alfa - narzędzie blokuje wybór JPG (`disabled`) i automatycznie przełącza `outputFormat` na PNG, jeśli wcześniej był JPG.
 - **Podgląd kadru**:
   - **[overlay]** zaznaczony obszar ma:
     - maskę (ciemne przyciemnienie poza kadrem),
@@ -441,7 +441,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Panele edycji (UI)**:
   - **[identity]**: dane osoby/firmy (w tym adres i dane formalne).
   - **[cta]**: tekst i link przycisku CTA.
-  - **[social]**: linki do profili (LinkedIn/Instagram/Facebook/TikTok/YouTube/X) – pojawiają się tylko wypełnione.
+  - **[social]**: linki do profili (LinkedIn/Instagram/Facebook/TikTok/YouTube/X) - pojawiają się tylko wypełnione.
   - **[appearance]**: motyw i style (kolory, font, rozmiar tekstu, padding, radius CTA, divider).
   - **[legal]**: klauzula prawna/RODO (textarea, wspiera wielolinijkowość).
 - **Generowanie HTML** (`buildSignatureHtml()`):
@@ -465,8 +465,8 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Podgląd**:
   - **[dangerouslySetInnerHTML]** render HTML w preview bezpośrednio jako markup.
 - **Kopiowanie stopki**:
-  - **[preferowane]** `document.execCommand('copy')` na zaznaczeniu tymczasowego elementu DOM – kopiuje jako rich HTML (praktyczne dla Gmail/Outlook).
-  - **[fallback]** `navigator.clipboard.writeText(signatureHtml)` – kopiuje HTML jako tekst.
+  - **[preferowane]** `document.execCommand('copy')` na zaznaczeniu tymczasowego elementu DOM - kopiuje jako rich HTML (praktyczne dla Gmail/Outlook).
+  - **[fallback]** `navigator.clipboard.writeText(signatureHtml)` - kopiuje HTML jako tekst.
   - **[status]** `copyStatus: idle/success/error` z resetem po 3000ms (`useSignatureCopy` korzysta z `useTimeout`).
   - **[wymagane pola]** kopiowanie jest zablokowane bez `fullName` i `email`.
 - **Motywy (theme presets)**:

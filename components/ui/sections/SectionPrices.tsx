@@ -46,14 +46,7 @@ export type SectionPricesProps = {
   legalNote?: string;
 };
 
-export default function SectionPrices({
-  id = 'pricing',
-  title = ui.pl.defaultTitle,
-  subtitle = ui.pl.defaultSubtitle,
-  plans = [],
-  note,
-  legalNote = ui.pl.defaultLegalNote,
-}: SectionPricesProps) {
+export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTitle, subtitle = ui.pl.defaultSubtitle, plans = [], note, legalNote = ui.pl.defaultLegalNote }: SectionPricesProps) {
   const t = ui.pl;
   const headingId = `${id}-heading`;
   const subtitleId = subtitle ? `${id}-subtitle` : undefined;
@@ -63,12 +56,12 @@ export default function SectionPrices({
     <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className="w-full">
       <div className="mb-8">
         {subtitle && (
-          <span id={subtitleId} className="text-sm text-light tracking-wider uppercase">
+          <span id={subtitleId} className="text-light text-sm tracking-wider uppercase">
             {subtitle}
           </span>
         )}
         {title && (
-          <h3 className="reveal-animation mt-1 text-2xl font-semibold tracking-tight text-dark" id={headingId}>
+          <h3 className="reveal-animation text-dark mt-1 text-2xl font-semibold tracking-tight" id={headingId}>
             {title}
           </h3>
         )}
@@ -88,11 +81,9 @@ export default function SectionPrices({
               key={itemId}
               aria-labelledby={itemHeadingId}
               aria-describedby={itemDescribedBy}
-              className={[
-                'group relative flex h-full flex-col justify-between surface-card-lift p-6',
-                'ring-1 ring-neutral-200 duration-200',
-                plan.lastPlan ? 'ring-2 ring-neutral-900' : '',
-              ].join(' ')}
+              className={['group surface-card-lift relative flex h-full flex-col justify-between p-6', 'ring-1 ring-neutral-200 duration-200', plan.lastPlan ? 'ring-2 ring-neutral-900' : ''].join(
+                ' ',
+              )}
             >
               {plan.badgeLabel && (
                 <Badge variant="dark" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
@@ -101,7 +92,7 @@ export default function SectionPrices({
               )}
 
               <div>
-                <h4 id={itemHeadingId} className="reveal-animation h5 text-xl font-semibold text-dark">
+                <h4 id={itemHeadingId} className="reveal-animation h5 text-dark text-xl font-semibold">
                   {plan.name}
                 </h4>
 
@@ -112,7 +103,7 @@ export default function SectionPrices({
                 )}
 
                 <p id={itemPriceId} className="mt-4">
-                  <span className="text-xl font-semibold tracking-tight text-dark">{plan.price}</span>
+                  <span className="text-dark text-xl font-semibold tracking-tight">{plan.price}</span>
                 </p>
 
                 <p id={itemDescId} className="mt-2 text-[15px] leading-relaxed">
@@ -124,10 +115,7 @@ export default function SectionPrices({
                     <li key={`${itemId}-f-${i}`}>
                       <IconText
                         icon={
-                          <span
-                            className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300 group-hover:ring-neutral-400"
-                            title={t.includedInPlan}
-                          >
+                          <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300 group-hover:ring-neutral-400" title={t.includedInPlan}>
                             <RiCheckFill className="h-3.5 w-3.5" />
                           </span>
                         }
@@ -161,7 +149,7 @@ export default function SectionPrices({
 
       {note && (
         <div className="mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label={t.noteAriaLabel}>
-          <div className="text-[15px] leading-relaxed text-mid">{note.text}</div>
+          <div className="text-mid text-[15px] leading-relaxed">{note.text}</div>
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">
               <Button link={note.ctaLink} variant="accent" arrow>
@@ -172,9 +160,7 @@ export default function SectionPrices({
         </div>
       )}
 
-      {legalNote && (
-        <p className="pt-4 text-sm text-light leading-relaxed">{legalNote}</p>
-      )}
+      {legalNote && <p className="text-light pt-4 text-sm leading-relaxed">{legalNote}</p>}
     </section>
   );
 }

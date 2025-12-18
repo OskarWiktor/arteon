@@ -11,16 +11,7 @@ type CarouselDotsProps = {
   slideLabel: string;
 };
 
-export function CarouselDots({
-  isScrollable,
-  currentSlide,
-  maxSlides,
-  onDotClick,
-  carouselNavigationLabel,
-  goToSlideLabel,
-  ofLabel,
-  slideLabel,
-}: CarouselDotsProps) {
+export function CarouselDots({ isScrollable, currentSlide, maxSlides, onDotClick, carouselNavigationLabel, goToSlideLabel, ofLabel, slideLabel }: CarouselDotsProps) {
   if (!isScrollable || maxSlides <= 1) return null;
 
   return (

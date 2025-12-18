@@ -53,16 +53,16 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
             return (
               <li key={`${it.href}-${idx}`} className="flex items-center gap-1 text-sm md:gap-2">
                 {isLast ? (
-                  <span className="text-sm text-dark opacity-70" aria-current="page">
+                  <span className="text-dark text-sm opacity-70" aria-current="page">
                     {it.label}
                   </span>
                 ) : (
                   <AppLink href={it.href} variant="default" display="inline" className="inline-link">
-                    <span className="text-sm text-dark">{it.label}</span>
+                    <span className="text-dark text-sm">{it.label}</span>
                   </AppLink>
                 )}
                 {!isLast && (
-                  <span className="text-sm text-dark" aria-hidden="true">
+                  <span className="text-dark text-sm" aria-hidden="true">
                     /
                   </span>
                 )}
@@ -71,12 +71,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
           })}
         </ol>
 
-        {includeJsonLd && jsonLd && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
-        )}
+        {includeJsonLd && jsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
       </nav>
     </Wrapper>
   );

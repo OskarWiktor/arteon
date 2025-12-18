@@ -143,7 +143,7 @@ export default function OfferOptimizationWordPressPage() {
                   Google, szczególnie na urządzeniach mobilnych.
                 </>
               ),
-              icon: <RiSpeedFill className="h-6 w-6 text-slate-500" />,
+              icon: <RiSpeedFill className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Porządki we wtyczkach i motywie',
@@ -153,22 +153,22 @@ export default function OfferOptimizationWordPressPage() {
                   przy dalszych aktualizacjach.
                 </>
               ),
-              icon: <RiToolsLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiToolsLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Obrazy dopasowane do urządzeń',
               description: (
                 <>
-                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze zużycie transferu i znacznie lepsza
-                  szybkość działania witryny.
+                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze zużycie transferu i znacznie lepsza szybkość działania
+                  witryny.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Wersja mobilna i wygoda korzystania',
               description: <>Korygowane są marginesy, czcionki i przyciski na telefonach. Efekt: strona jest czytelna, łatwa w obsłudze i lepiej przygotowana na ruch z urządzeń mobilnych.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />

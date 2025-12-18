@@ -13,20 +13,24 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
 import { RiCodeSSlashFill, RiLightbulbFlashLine, RiMegaphoneLine, RiPaletteLine } from 'react-icons/ri';
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'O nas – strategia, kreacja i widoczność | Arteon',
+  title: 'O nas - strategia, kreacja i widoczność | Arteon',
   description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
-  alternates: { canonical: 'https://www.arteonagency.pl/o-nas' },
+  alternates: { canonical: toAbsoluteUrl('/o-nas') },
   openGraph: {
-    title: 'O nas – strategia, kreacja i widoczność | Arteon',
+    title: 'O nas - strategia, kreacja i widoczność | Arteon',
     description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
-    url: 'https://www.arteonagency.pl/o-nas',
+    url: toAbsoluteUrl('/o-nas'),
     type: 'website',
     // TODO: Add unique OpenGraph image for about page: /assets/og/o-nas.webp (1200x630px)
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
+        alt: 'O nas - Arteon',
       },
     ],
   },
@@ -35,19 +39,13 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroBanner
-        title="O nas"
-        description="Arteon – strategia, kreacja i widoczność, które dowożą wynik"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
-        overlay="black"
-        variant="center"
-      />
+      <HeroBanner title="O nas" description="Arteon - strategia, kreacja i widoczność, które dowożą wynik" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
       <BenefitBelt
         items={[
-          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />, label: 'Strategia i plan działania' },
-          { icon: <RiPaletteLine className="h-6 w-6 text-slate-500" />, label: 'Branding i design' },
-          { icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />, label: 'Technologia (strony i sklepy)' },
-          { icon: <RiMegaphoneLine className="h-6 w-6 text-slate-500" />, label: 'Widoczność i marketing' },
+          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-700" />, label: 'Strategia i plan działania' },
+          { icon: <RiPaletteLine className="h-6 w-6 text-slate-700" />, label: 'Branding i design' },
+          { icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-700" />, label: 'Technologia (strony i sklepy)' },
+          { icon: <RiMegaphoneLine className="h-6 w-6 text-slate-700" />, label: 'Widoczność i marketing' },
         ]}
       />
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">
@@ -86,9 +84,7 @@ export default function AboutPage() {
           items={[
             {
               title: 'Komplet usług wokół Twojej oferty i komunikacji',
-              description: (
-                <p>Jedna odpowiedzialność, jeden plan: strategia, kreacja, wdrożenie i widoczność. Bez rozbijania pracy na kilku wykonawców.</p>
-              ),
+              description: <p>Jedna odpowiedzialność, jeden plan: strategia, kreacja, wdrożenie i widoczność. Bez rozbijania pracy na kilku wykonawców.</p>,
             },
             {
               title: 'Dobór technologii do celu',
@@ -100,9 +96,7 @@ export default function AboutPage() {
             },
             {
               title: 'Widoczność i pomiar od startu',
-              description: (
-                <p>SEO i analityka od pierwszego dnia: struktura, treści i techniczne podstawy. Po wdrożeniu dostajesz propozycję „co dalej”, żeby rosnąć szybciej.</p>
-              ),
+              description: <p>SEO i analityka od pierwszego dnia: struktura, treści i techniczne podstawy. Po wdrożeniu dostajesz propozycję „co dalej”, żeby rosnąć szybciej.</p>,
             },
 
             {

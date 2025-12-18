@@ -99,35 +99,35 @@ export default function OfferContentPage() {
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileSearchLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className="h-6 w-6 text-slate-500" />,
+              icon: <IoSparkles className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiShareForwardLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiTeamLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -321,5 +321,3 @@ export default function OfferContentPage() {
     </>
   );
 }
-
-

@@ -49,19 +49,17 @@ export function CarouselCard(props: CarouselCardProps) {
         href={props.href}
         className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
       >
-        <article className="flex h-full flex-col surface-card-lift border border-gray-200 p-4 md:p-6">
+        <article className="surface-card-lift flex h-full flex-col border border-gray-200 p-4 md:p-6">
           {props.icon ? (
             <div className="mb-4 flex justify-start" aria-hidden>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-500 shadow-sm ring-1 ring-black/5">
-                {props.icon}
-              </div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-700 shadow-sm ring-1 ring-black/5">{props.icon}</div>
             </div>
           ) : null}
 
-          <h3 className="h4 mb-1 text-dark">{props.title}</h3>
+          <h3 className="h4 text-dark mb-1">{props.title}</h3>
 
           <div className="mt-auto pt-4">
-            <span className="text-sm text-light underline underline-offset-4 transition group-hover:opacity-80">Otwórz narzędzie</span>
+            <span className="text-light text-sm underline underline-offset-4 transition group-hover:opacity-80">Otwórz narzędzie</span>
           </div>
         </article>
       </Link>
@@ -71,7 +69,7 @@ export function CarouselCard(props: CarouselCardProps) {
   const { article: a, href, readingTimeLabel, publicationDateLabel } = props;
 
   return (
-    <article className="h-full surface-card">
+    <article className="surface-card h-full">
       <Link href={href} className="block focus:outline-none">
         {a.cover ? (
           <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
@@ -82,12 +80,12 @@ export function CarouselCard(props: CarouselCardProps) {
           <h3 className="h6">{a.title}</h3>
           <div className="mt-3 flex flex-wrap items-center gap-2">
             {a.readingTime ? (
-              <span className="text-sm text-light">
+              <span className="text-light text-sm">
                 {a.readingTime} {readingTimeLabel}
               </span>
             ) : null}
             {a.datePublished ? (
-              <span className="text-sm text-light" aria-label={publicationDateLabel}>
+              <span className="text-light text-sm" aria-label={publicationDateLabel}>
                 • {a.datePublished}
               </span>
             ) : null}

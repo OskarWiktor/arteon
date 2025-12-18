@@ -3,6 +3,7 @@ import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import { toAbsoluteUrl } from '@/lib/url';
 import {
   RiFileList2Line,
   RiSearchEyeLine,
@@ -24,8 +25,6 @@ import {
   RiPriceTag3Line,
   RiRestaurant2Line,
 } from 'react-icons/ri';
-
-const siteUrl = 'https://www.arteonagency.pl';
 
 const SERVICES = [
   { name: 'Strony internetowe', path: '/uslugi/strony-internetowe' },
@@ -54,16 +53,19 @@ const SERVICES = [
 export const metadata = {
   title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
   description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi') },
   openGraph: {
     title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
     description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
-    url: `${siteUrl}/uslugi`,
+    url: toAbsoluteUrl('/uslugi'),
     type: 'website',
     // TODO: Add unique OpenGraph image for services page: /assets/og/uslugi.webp (1200x630px)
     images: [
       {
-        url: `${siteUrl}/assets/bg/abstract-bg12.webp`,
+        url: toAbsoluteUrl('/assets/bg/abstract-bg12.webp'),
+        width: 1200,
+        height: 630,
+        alt: 'Usługi Arteon',
       },
     ],
   },
@@ -289,8 +291,8 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
-                    eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe
+                    do edycji i eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
@@ -547,19 +549,18 @@ export default function OfferPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
-            '@id': `${siteUrl}/uslugi#collection`,
+            '@id': `${toAbsoluteUrl('/uslugi')}#collection`,
             name: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
-            description:
-              'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
-            url: `${siteUrl}/uslugi`,
+            description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+            url: toAbsoluteUrl('/uslugi'),
             mainEntity: {
               '@type': 'ItemList',
-              '@id': `${siteUrl}/uslugi#itemlist`,
+              '@id': `${toAbsoluteUrl('/uslugi')}#itemlist`,
               itemListOrder: 'https://schema.org/ItemListOrderAscending',
               itemListElement: SERVICES.map((s, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
-                url: `${siteUrl}${s.path}`,
+                url: toAbsoluteUrl(s.path),
                 name: s.name,
               })),
             },

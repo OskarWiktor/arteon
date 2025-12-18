@@ -24,10 +24,10 @@ export default function OptionButton({ optValue, label, tooltip, selected, onCli
 
   return (
     <button key={optValue} onClick={onClick} onKeyDown={handleKey} tabIndex={0} className={`calc-option-button ${selected ? 'calc-option-button-selected' : 'calc-option-button-unselected'}`}>
-      {IconComponent && <IconComponent className="mt-1 text-2xl text-slate-500" />}
+      {IconComponent && <IconComponent className="mt-1 text-2xl text-slate-700" />}
       <div>
         <h6 className="font-medium">{label}</h6>
-        {tooltip && <span className="block text-dark">{tooltip}</span>}
+        {tooltip && <span className="text-dark block">{tooltip}</span>}
       </div>
     </button>
   );

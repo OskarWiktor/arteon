@@ -1,15 +1,18 @@
 import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
+import Image from 'next/image';
+import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
 const ui = {
   pl: {
     hours: 'Godziny: pn-pt, 8:00-16:00',
     graphicProjects: 'Projekty graficzne',
     websites: 'Witryny',
-    contentCreation: 'Tworzenie treści',
+    content: 'Treści',
     marketing: 'Marketing',
-    other: 'Inne',
+    other: 'Główne strony',
+    otherSecondary: 'Inne',
     cookieSettings: 'Ustawienia plików cookie',
     sitemap: 'Mapa strony',
     copyright: 'Wszelkie prawa zastrzeżone.',
@@ -18,6 +21,10 @@ const ui = {
     graphicProjectsLabel: 'Usługi - Projekty graficzne',
     websitesContentLabel: 'Usługi - Witryny, Treści i Marketing',
     navigationLabel: 'Nawigacja',
+    navigationSecondaryLabel: 'Nawigacja (cd.)',
+    contactLabel: 'Kontakt',
+    mainNavigationLabel: 'Główne sekcje',
+    legalNavigationLabel: 'Dokumenty i ustawienia',
   },
 } as const;
 
@@ -28,14 +35,6 @@ const ORG = {
   phoneE164: '+48516466255',
   phoneDisplay: '516 466 255',
   email: 'kontakt@arteonagency.pl',
-  street: 'ul. Jaśminowa 36',
-  locality: 'Zagacie',
-  region: 'małopolskie',
-  country: 'PL',
-  postal: '32-070',
-  areaServedLocal: 'Kraków i okolice (małopolskie)',
-  servedList: ['Kraków', 'Skawina', 'Czernichów', 'Liszki', 'Zabierzów', 'Wieliczka'],
-  mapUrl: 'https://www.google.com/maps/search/?api=1&query=Zagacie%2C+ul.+Ja%C5%9Bminowa+36%2C+ma%C5%82opolskie',
 };
 
 function FooterSchemas() {
@@ -48,23 +47,6 @@ function FooterSchemas() {
     image: `${BASE_URL}/icon-512x512.png`,
     telephone: ORG.phoneE164,
     email: 'kontakt@arteonagency.pl',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: ORG.street,
-      addressLocality: ORG.locality,
-      addressRegion: 'małopolskie',
-      addressCountry: 'PL',
-      postalCode: '32-070',
-    },
-    parentOrganization: { '@id': `${BASE_URL}#organization` },
-    serviceArea: {
-      '@type': 'GeoCircle',
-      geoMidpoint: { '@type': 'GeoCoordinates', latitude: 50.0053746, longitude: 19.7094865 },
-      geoRadius: 50000,
-    },
-    areaServed: ORG.servedList,
-    hasMap:
-      'https://www.google.com/maps/place/Ja%C5%9Bminowa+36,+32-070+Zagacie/@49.955128,19.7525321,11z/data=!4m6!3m5!1s0x47165fee99b80287:0x35a17883ddf6b10c!8m2!3d50.0053746!4d19.7094865!16s%2Fg%2F11vl3bnz_y',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -84,7 +66,12 @@ const offerLinksOne = [
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
 ];
 
-const offerLinksTwo = [{ href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' }];
+const offerLinksTwo = [
+  { href: '/uslugi/tworzenie-tresci', title: 'Tworzenie treści' },
+  { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' },
+  { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
+  { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
+];
 
 const offerLinksThree = [
   { href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki' },
@@ -103,40 +90,59 @@ const offerLinksThree = [
   { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki' },
 ];
 
-const offerLinksFour = [
-  { href: '/uslugi/marketing/audyt-seo', title: 'Audyt SEO' },
-  { href: '/uslugi/marketing/optymalizacja-seo', title: 'Optymalizacja SEO' },
-  { href: '/uslugi/marketing/pozycjonowanie-stron', title: 'Pozycjonowanie stron' },
+
+const navLinksPrimary = [
+  { href: '/', label: 'Strona główna' },
+  { href: '/uslugi', label: 'Usługi' },
+  { href: '/realizacje', label: 'Realizacje' },
+  { href: '/o-nas', label: 'O nas' },
+  { href: '/o-nas/dolacz-do-sieci', label: 'Dołącz do sieci' },
 ];
 
-const navLinks = [
-  { href: '/', label: 'Strona Główna' },
-  { href: '/realizacje', label: 'Realizacje' },
-  { href: '/o-nas', label: 'O Nas' },
+const navLinksSecondary = [
   { href: '/edukacja', label: 'Edukacja' },
   { href: '/narzedzia', label: 'Narzędzia' },
+  { href: '/o-nas/faq', label: 'FAQ' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 
-const otherLinks = [
-  { href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
+const legalLinks = [
+  { href: '/polityka-prywatnosci', label: 'Polityka prywatności' },
   { href: '/regulamin', label: 'Regulamin świadczenia usług' },
-  { href: '/o-nas/faq', label: 'FAQ' },
+  { href: '/mapa-strony', label: 'Mapa strony' },
+];
+
+const toolsLinks = [
+  { href: '/narzedzia/licznik-dlugosci-meta-title-i-description', label: 'Licznik meta title i description' },
+  { href: '/narzedzia/tester-kontrastu-kolorow-wcag', label: 'Tester kontrastu kolorów WCAG' },
+  { href: '/narzedzia/generator-palety-kolorow-z-obrazu', label: 'Generator palet kolorów z obrazu' },
+  { href: '/narzedzia/generator-palet-kolorow-online', label: 'Generator palet kolorów z jednego koloru' },
+  { href: '/narzedzia/jpg-png-na-webp-bez-limitu', label: 'Konwerter JPG/PNG na WebP' },
+  { href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
+  { href: '/narzedzia/darmowy-generator-favicon-ico', label: 'Generator favicon' },
+  { href: '/narzedzia/darmowy-generator-stopki-mailowej', label: 'Generator stopki mailowej HTML' },
 ];
 
 export default function Footer() {
   const t = ui.pl;
-  const mid = Math.ceil(offerLinksThree.length / 2);
-  const gfxLeft = offerLinksThree.slice(0, mid);
-  const gfxRight = offerLinksThree.slice(mid);
+  const midGfx = Math.ceil(offerLinksThree.length / 2);
+  const gfxLeft = offerLinksThree.slice(0, midGfx);
+  const gfxRight = offerLinksThree.slice(midGfx);
+  const midTools = Math.ceil(toolsLinks.length / 2);
+  const toolsLeft = toolsLinks.slice(0, midTools);
+  const toolsRight = toolsLinks.slice(midTools);
 
   return (
     <>
       <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
         <Wrapper>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
-            <section aria-label={t.companyDataLabel}>
-              <address className="text-base text-dark not-italic">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 lg:auto-rows-min">
+            {/* 1.1 Dane firmy + Logo + Social */}
+            <section aria-label={t.companyDataLabel} className="lg:col-start-1 lg:row-start-1">
+              <div className="mb-4">
+                <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Logo Arteon" />
+              </div>
+              <address className="text-dark mb-4 text-base not-italic">
                 <p>
                   <strong>{ORG.name}</strong>
                 </p>
@@ -151,46 +157,31 @@ export default function Footer() {
                   </a>
                 </p>
               </address>
-
-              <div className="mt-3">
-                <p className="text-sm text-light">{t.hours}</p>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/arteon.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram Arteon"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
+                >
+                  <RiInstagramLine className="h-6 w-6 text-slate-700" aria-hidden="true" />
+                </a>
+                <a
+                  href="https://www.facebook.com/people/Arteon/61583260915021/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook Arteon"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
+                >
+                  <RiFacebookFill className="h-6 w-6 text-slate-700" aria-hidden="true" />
+                </a>
               </div>
-
-              <ul className="mt-4 flex flex-col gap-2 text-sm">
-                {navLinks.map(({ href, label }) => (
-                  <li key={href}>
-                    <AppLink href={href}>{label}</AppLink>
-                  </li>
-                ))}
-              </ul>
             </section>
 
-            <nav aria-label={t.graphicProjectsLabel} className="lg:col-span-2">
-              <h3 className="h6 mb-2">{t.graphicProjects}</h3>
-              <div className="mt-2 grid grid-cols-2 gap-x-10">
-                <ul className="flex flex-col gap-2 text-sm">
-                  {gfxLeft.map(({ href, title }) => (
-                    <li key={href}>
-                      <AppLink href={href} display="inline-block">
-                        {title}
-                      </AppLink>
-                    </li>
-                  ))}
-                </ul>
-                <ul className="flex flex-col gap-2 text-sm">
-                  {gfxRight.map(({ href, title }) => (
-                    <li key={href}>
-                      <AppLink href={href} display="inline-block">
-                        {title}
-                      </AppLink>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </nav>
-
-            <nav aria-label={t.websitesContentLabel}>
-              <h3 className="h6 mb-2">{t.websites}</h3>
+            {/* 1.2 Witryny */}
+            <nav aria-label={t.websitesContentLabel} className="lg:col-start-2 lg:row-start-1">
+              <h3 className="h6 mb-3">{t.websites}</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
@@ -198,8 +189,11 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+            </nav>
 
-              <h3 className="h6 mt-4">{t.contentCreation}</h3>
+            {/* 1.3 Treści + Marketing */}
+            <nav aria-label="Treści i Marketing" className="lg:col-start-3 lg:row-start-1">
+              <h3 className="h6 mb-3">Treści + Marketing</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksTwo.map(({ href, title }) => (
                   <li key={href}>
@@ -207,21 +201,65 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+            </nav>
 
-              <h3 className="h6 mt-4">{t.marketing}</h3>
+            {/* 1.4 Projekty graficzne (1) */}
+            <nav aria-label={`${t.graphicProjectsLabel} (1)`} className="lg:col-start-4 lg:row-start-1">
+              <h3 className="h6 mb-3">{t.graphicProjects}</h3>
               <ul className="flex flex-col gap-2 text-sm">
-                {offerLinksFour.map(({ href, title }) => (
+                {gfxLeft.map(({ href, title }) => (
                   <li key={href}>
-                    <AppLink href={href}>{title}</AppLink>
+                    <AppLink href={href} display="inline-block">
+                      {title}
+                    </AppLink>
                   </li>
                 ))}
               </ul>
             </nav>
 
-            <nav aria-label={t.navigationLabel}>
-              <h3 className="h6 mb-2">{t.other}</h3>
+            {/* 1.5 Projekty graficzne (2) */}
+            <nav aria-label={`${t.graphicProjectsLabel} (2)`} className="lg:col-start-5 lg:row-start-1">
+              <h3 className="sr-only">{t.graphicProjects}</h3>
+              <ul className="flex flex-col gap-2 text-sm lg:mt-9">
+                {gfxRight.map(({ href, title }) => (
+                  <li key={href}>
+                    <AppLink href={href} display="inline-block">
+                      {title}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* 2.1 Główne strony */}
+            <nav aria-label={t.mainNavigationLabel} className="lg:col-start-1 lg:row-start-2">
+              <h3 className="h6 mb-3">{t.other}</h3>
               <ul className="flex flex-col gap-2 text-sm">
-                {otherLinks.map(({ href, label }) => (
+                {navLinksPrimary.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href}>{label}</AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* 2.2 Inne */}
+            <nav aria-label={t.navigationSecondaryLabel} className="lg:col-start-2 lg:row-start-2">
+              <h3 className="h6 mb-3">{t.otherSecondary}</h3>
+              <ul className="flex flex-col gap-2 text-sm">
+                {navLinksSecondary.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href}>{label}</AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* 2.3 Dokumenty i ustawienia */}
+            <nav aria-label={t.legalNavigationLabel} className="lg:col-start-3 lg:row-start-2">
+              <h3 className="h6 mb-3">{t.legalNavigationLabel}</h3>
+              <ul className="flex flex-col gap-2 text-sm">
+                {legalLinks.map(({ href, label }) => (
                   <li key={href}>
                     <AppLink href={href} display="inline-block">
                       {label}
@@ -231,19 +269,42 @@ export default function Footer() {
                 <li>
                   <CookieSettingsButton label={t.cookieSettings} />
                 </li>
-                <li>
-                  <AppLink href="/mapa-strony" display="inline-block">
-                    {t.sitemap}
-                  </AppLink>
-                </li>
+              </ul>
+            </nav>
+
+            {/* 2.4 Narzędzia (1) */}
+            <nav aria-label="Narzędzia online (1)" className="lg:col-start-4 lg:row-start-2">
+              <h3 className="h6 mb-3">Narzędzia</h3>
+              <ul className="flex flex-col gap-2 text-sm">
+                {toolsLeft.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href} className="text-left">
+                      {label}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* 2.5 Narzędzia (2) */}
+            <nav aria-label="Narzędzia online (2)" className="lg:col-start-5 lg:row-start-2">
+              <h3 className="sr-only">Narzędzia</h3>
+              <ul className="flex flex-col gap-2 text-sm lg:mt-9">
+                {toolsRight.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href} className="text-left">
+                      {label}
+                    </AppLink>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
 
-          <div className="mt-8 border-t border-gray-200 pt-4 text-light">
+          <div className="text-light mt-8 border-t border-gray-200 pt-4">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
               <span className="text-center text-sm md:text-left">
-                © <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {t.copyright}
+                &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {t.copyright}
               </span>
               <span className="text-sm">{t.description}</span>
               <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">

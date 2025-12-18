@@ -99,8 +99,8 @@ export default function OfferWebPage() {
 
         <SectionInfo title="Co zyskujesz dzięki stronie internetowej?">
           <p>
-            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób szukających lokalnie usług w Google trafia do siedziby firmy w ciągu 24 godzin, a 28%
-            tych wyszukań kończy się zakupem{' '}
+            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób szukających lokalnie usług w Google trafia do siedziby firmy w ciągu 24 godzin, a 28% tych
+            wyszukań kończy się zakupem{' '}
             <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
               (źródło)
             </a>
@@ -142,52 +142,52 @@ export default function OfferWebPage() {
             {
               title: 'Indywidualny projekt graficzny strony',
               description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Twoją stronę na tle konkurencji</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Redakcję treści dla lepszej pozycji w Google',
               description: <>Teksty, które jasno wyjaśniają ofertę i prowadzą do kontaktu</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dobór i obróbka zdjęć',
               description: <>Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do Twojej strony: kadry, tło, rozmiary, waga.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Wsparcie prawne przy politykach i regulaminach',
               description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
-              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+              icon: <GoLaw className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Stronę dostosowana do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi strony',
               description: <>Proste instrukcje, stworzone tak, abyś samodzielnie mógł edytować stronę</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: <>Informujemy Cię regularnie o postępach prac nad Twoją stronę</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: <>Po publikacji pomagamy w dalszym rozwoju strony internetowej. Ewentualne błędy poprawiamy w ramach gwarancji</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />

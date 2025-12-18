@@ -58,13 +58,7 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
 
   return (
     <section className="w-full" aria-labelledby="testimonials-heading">
-      <SectionHeader
-        subtitle={subtitle}
-        title={title}
-        headingLevel="h2"
-        headingClassName="reveal-animation md:mb-2"
-        titleId="testimonials-heading"
-      />
+      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="reveal-animation md:mb-2" titleId="testimonials-heading" />
 
       <div className="relative">
         <div

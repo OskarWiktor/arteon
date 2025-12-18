@@ -128,24 +128,24 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Spójny system wizualny',
               description: <>Dopasowujemy kolory, typografię i styl do Twojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Edytowalne pliki',
               description: (
                 <>Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy kolory zmienisz bez znajomości zaawansowanych programów.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'System pod różne typy postów',
               description: <>Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta, opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -306,9 +306,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               title: 'Projekt identyfikacji wizualnej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.
-                  </p>
+                  <p className="mb-3 text-sm">Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
                       Zobacz projekt identyfikacji wizualnej
@@ -343,5 +341,3 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
     </>
   );
 }
-
-

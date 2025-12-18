@@ -19,19 +19,23 @@ import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiF
 import testimonialsPl from '@/data/pl/testimonials.json';
 import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blog';
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
   description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
-  alternates: { canonical: 'https://www.arteonagency.pl/' },
+  alternates: { canonical: toAbsoluteUrl('/') },
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
     description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
-    url: 'https://www.arteonagency.pl/',
+    url: toAbsoluteUrl('/'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/arteon-logo-on-mockup.webp',
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
+        alt: 'Logo Arteon na plakacie',
       },
     ],
   },
@@ -201,9 +205,9 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz kompleksowym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci. Zajmujemy się
-                    również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc zaproponować działania,
-                    które trafiają dokładnie w Twoją grupę odbiorców.
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz kompleksowym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci.
+                    Zajmujemy się również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc
+                    zaproponować działania, które trafiają dokładnie w Twoją grupę odbiorców.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/marketing">
@@ -247,27 +251,27 @@ export default function HomePage() {
           items={[
             {
               title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Spójne projekty graficzne online oraz offline',
-              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+              icon: <GoLaw className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiBarChart2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: <MdSupportAgent className="h-6 w-6 text-slate-500" />,
+              icon: <MdSupportAgent className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -316,5 +320,3 @@ export default function HomePage() {
     </>
   );
 }
-
-

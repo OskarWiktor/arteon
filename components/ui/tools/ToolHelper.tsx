@@ -14,4 +14,3 @@ export default function ToolHelper({ children, className = '', variant = 'defaul
 
   return <p className={`tool-helper ${variantClasses[variant]} ${className}`}>{children}</p>;
 }
-

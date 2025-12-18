@@ -37,8 +37,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   switch (variant) {
     case 'normal':
       variantClass =
-        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-dark ' +
-        'focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500';
+        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-dark ' + 'focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500';
       break;
     case 'accent':
       variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-slate-600 text-white ' + 'focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';

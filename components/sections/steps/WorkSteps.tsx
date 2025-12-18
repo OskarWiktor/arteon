@@ -9,7 +9,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">1 </span>Rozmowa
+        <span className="text-light font-extrabold">1 </span>Rozmowa
       </>
     ),
     description: <p>Ustalamy cele, odbiorców i priorytety. Zbieramy wszelkie informację, żeby stworzyć efekt, na którym Ci zależy.</p>,
@@ -17,7 +17,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">2 </span>Plan
+        <span className="text-light font-extrabold">2 </span>Plan
       </>
     ),
     description: <p>Tworzymy dokładny plan: ustalamy zakres, termin i tworzymy dedykowaną wycenę.</p>,
@@ -25,7 +25,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">3 </span>Realizacja
+        <span className="text-light font-extrabold">3 </span>Realizacja
       </>
     ),
     description: <p>Tworzymy to, czego potrzebujesz: stronę, grafiki, treści lub kampanie. Dbamy o widoczność w Google i dostępność (WCAG).</p>,
@@ -33,7 +33,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">4 </span>Publikacja i wsparcie
+        <span className="text-light font-extrabold">4 </span>Publikacja i wsparcie
       </>
     ),
     description: <p>Uruchamiamy i dostarczamy pliki. Tworzymy darmową listę kroków „co dalej”, by Twoja firma rosła szybciej.</p>,
@@ -44,7 +44,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">1 </span>Rozmowa
+        <span className="text-light font-extrabold">1 </span>Rozmowa
       </>
     ),
     description: <p>Ustalamy cele, odbiorców i funkcje. Zbieramy treści oraz sprawdzamy konkurencję, żeby zbudować właściwy kierunek.</p>,
@@ -52,7 +52,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">2 </span>Plan
+        <span className="text-light font-extrabold">2 </span>Plan
       </>
     ),
     description: <p>Wyznaczamy jasny zakres, termin i oraz cenę. Dobobieramy technologię dla lepszych rezultatów. Wiesz, co powstanie, kiedy i za ile.</p>,
@@ -60,7 +60,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">3 </span>Projekt i realizacja
+        <span className="text-light font-extrabold">3 </span>Projekt i realizacja
       </>
     ),
     description: <p>Projektujemy układ i wygląd, a następnie tworzymy stronę, blog lub sklep. Jesteśmy w stałym kontakcie, abyś miał pełny wgląd do postępów.</p>,
@@ -68,7 +68,7 @@ const stepsWeb = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">4 </span>Publikacja i wzrost
+        <span className="text-light font-extrabold">4 </span>Publikacja i wzrost
       </>
     ),
     description: (
@@ -87,7 +87,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">1 </span>Analiza
+        <span className="text-light font-extrabold">1 </span>Analiza
       </>
     ),
     description: <p>Poznajemy rynek, klientów i Twoją ofertę. Ustalamy, co ma rosnąć: zapytania, sprzedaż, rozpoznawalność.</p>,
@@ -95,7 +95,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">2 </span>Plan
+        <span className="text-light font-extrabold">2 </span>Plan
       </>
     ),
     description: <p>Wybieramy kanały, treści i harmonogram. Ustalamy budżet i sposób mierzenia efektu.</p>,
@@ -103,7 +103,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">3 </span>Kreacje
+        <span className="text-light font-extrabold">3 </span>Kreacje
       </>
     ),
     description: <p>Konfigurujemy reklamy, tworzymy treści, optymalizujemy strony.</p>,
@@ -111,7 +111,7 @@ const stepsMarketing = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">4 </span>Pomiar i wzrost
+        <span className="text-light font-extrabold">4 </span>Pomiar i wzrost
       </>
     ),
     description: <p>Pokazujemy efekty i planujemy następne kroki.</p>,
@@ -122,7 +122,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">1 </span>Analiza
+        <span className="text-light font-extrabold">1 </span>Analiza
       </>
     ),
     description: <p>Definiujemy tematy, pytania klientów i ton komunikacji.</p>,
@@ -130,7 +130,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">2 </span>Plan
+        <span className="text-light font-extrabold">2 </span>Plan
       </>
     ),
     description: <p>Układamy mapę tematów. Uzgadniamy priorytety: co tworzymy najpierw i gdzie.</p>,
@@ -138,7 +138,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">3 </span>Tworzenie
+        <span className="text-light font-extrabold">3 </span>Tworzenie
       </>
     ),
     description: <p>Tworzymy klarowne treści z wezwaniami do działania, dbając o Twoją widoczność</p>,
@@ -146,7 +146,7 @@ const stepsContent = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">4 </span>Publikacja
+        <span className="text-light font-extrabold">4 </span>Publikacja
       </>
     ),
     description: <p>Wprowadzamy treści w wybranej formie i monitorujemy wyniki.</p>,
@@ -157,7 +157,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">1 </span>Analiza
+        <span className="text-light font-extrabold">1 </span>Analiza
       </>
     ),
     description: <p>Zbieramy wszystkie dane, kontekst użycia i wymagania. Ustalamy jasne cele oraz wycenę.</p>,
@@ -165,7 +165,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">2 </span>Koncepcje
+        <span className="text-light font-extrabold">2 </span>Koncepcje
       </>
     ),
     description: <p>Przygotowujemy 2-3 kierunki z uzasadnieniem. Wybierasz drogę, my dopracowujemy detale.</p>,
@@ -173,7 +173,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">3 </span>Realizacja
+        <span className="text-light font-extrabold">3 </span>Realizacja
       </>
     ),
     description: <p>Tworzymy odpowiednie materiały. Przygotowujemy pliki do druku i/lub do internetu.</p>,
@@ -181,7 +181,7 @@ const stepsDesign = [
   {
     title: (
       <>
-        <span className="font-extrabold text-light">4 </span>Dostarczenie
+        <span className="text-light font-extrabold">4 </span>Dostarczenie
       </>
     ),
     description: <p>Przekazujemy pliki w róznych formatach oraz tłumaczymy jak najlepiej ich użyć.</p>,

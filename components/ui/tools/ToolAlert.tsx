@@ -21,4 +21,3 @@ export default function ToolAlert({ children, variant = 'info', className = '' }
     </div>
   );
 }
-

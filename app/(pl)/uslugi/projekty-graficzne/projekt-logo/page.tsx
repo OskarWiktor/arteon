@@ -142,27 +142,27 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Znak, który prowadzi markę',
               description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania - również w małych rozmiarach.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiQuillPenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Warianty i zastosowania',
               description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do użycia na stronie, w social mediach i w druku.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Prosta instrukcja użycia',
               description: <>Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie wie, jak poprawnie korzystać z logo.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Pełna własność i pliki źródłowe',
               description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -385,5 +385,3 @@ export default function OfferDesignLogoPage() {
     </>
   );
 }
-
-

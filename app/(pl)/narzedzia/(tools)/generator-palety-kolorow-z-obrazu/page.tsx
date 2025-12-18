@@ -9,21 +9,18 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
-  description:
-      'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+  description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
   alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu' },
   openGraph: {
     title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
-    description:
-      'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+    description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
     url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
     type: 'website',
     images: [
-     {
-       url: 'https://www.arteonagency.pl/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
-     },
+      {
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+      },
     ],
-
   },
 };
 
@@ -35,8 +32,7 @@ const schema = {
   url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
-  description:
-      'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+  description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

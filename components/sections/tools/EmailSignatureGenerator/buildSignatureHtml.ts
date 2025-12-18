@@ -137,7 +137,9 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     : '';
 
   const nameRowHtml = `<tr><td style="padding:0 0 4px 0;"><span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(config.fullName || '')}</span>${
-    hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''
+    hasNameTag
+      ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>`
+      : ''
   }</td></tr>`;
 
   const titleCompanyHtml =

@@ -116,13 +116,7 @@ export default function ProjectsCarouselClient({ projects, max = 7, title = ui.p
           ))}
         </div>
 
-        <CarouselNavButtons
-          isScrollable={isScrollable}
-          onPrev={() => scrollByCards('left')}
-          onNext={() => scrollByCards('right')}
-          prevLabel={t.scrollLeft}
-          nextLabel={t.scrollRight}
-        />
+        <CarouselNavButtons isScrollable={isScrollable} onPrev={() => scrollByCards('left')} onNext={() => scrollByCards('right')} prevLabel={t.scrollLeft} nextLabel={t.scrollRight} />
       </div>
 
       <CarouselDots

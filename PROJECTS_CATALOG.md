@@ -53,7 +53,7 @@ W każdej realizacji opisuję:
 - **Sugestie ulepszeń (SEO)**:
   - **Dodać sekcję H2 „Format i przygotowanie do druku”** (nawet jeśli krótko: format, spady, kolorystyka).
   - **Dodać FAQ**: koszt projektu plakatu, terminy, co jest potrzebne od klienta.
-  - **Dodać `deliverables`** i 1–2 „miękkie” outcomes (np. łatwość adaptacji do social, spójność kampanii).
+  - **Dodać `deliverables`** i 1-2 „miękkie” outcomes (np. łatwość adaptacji do social, spójność kampanii).
 
 ### `Karta koktajli dla baru Nocturna` (`karta-koktajli-dla-baru-nocturna`)
 
@@ -81,7 +81,7 @@ W każdej realizacji opisuję:
 - **Sugestie ulepszeń (SEO)**:
   - **Dodać sekcję „Co było w pakiecie”** (projekt + ilustracje + przygotowanie do druku + mockupy).
   - **Dodać FAQ** pod frazy long-tail: „projekt menu koktajlowego”, „karta drinków do druku”.
-  - **Rozbudować galerię**: 2–4 ujęcia stron/sekcji (łatwiejsze indeksowanie obrazów i lepszy time-on-page).
+  - **Rozbudować galerię**: 2-4 ujęcia stron/sekcji (łatwiejsze indeksowanie obrazów i lepszy time-on-page).
 
 ### `Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group` (`folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group`)
 
@@ -137,7 +137,7 @@ W każdej realizacji opisuję:
   - **Brak konkretu pakietu**: użytkownik nie wie, co dokładnie dostaje.
 - **Sugestie ulepszeń (SEO)**:
   - **Dodać `deliverables`**: liczba szablonów (post/story), formaty, wersje językowe, pliki edytowalne.
-  - **Dodać 4–8 obrazów** w `contentBlocks` (różne typy komunikatów: webinar, wpis, cytat, edukacja).
+  - **Dodać 4-8 obrazów** w `contentBlocks` (różne typy komunikatów: webinar, wpis, cytat, edukacja).
   - **Dodać FAQ** pod frazy: „szablony postów dla psychologa”, „grafiki do Instagrama dla gabinetu”.
 
 ### `Bon walentynkowy dla salonu kosmetycznego Kasia` (`bon-walentynkowy-dla-salonu-kosmetycznego-kasia`)
@@ -196,7 +196,7 @@ W każdej realizacji opisuję:
   - **`stack` jest semantycznie mylący**: wartości są raczej „zakresem prac”, nie stackiem technologicznym.
   - **Opis jest krótki**: przy dobrym wyniku warto dopisać, co konkretnie poprawiono (bez zdradzania wrażliwych danych).
 - **Sugestie ulepszeń (SEO)**:
-  - **Dodać sekcję „Co dokładnie zoptymalizowaliśmy”**: obrazy, CSS/JS, fonty, krytyczne zasoby, CWV (5–8 punktów).
+  - **Dodać sekcję „Co dokładnie zoptymalizowaliśmy”**: obrazy, CSS/JS, fonty, krytyczne zasoby, CWV (5-8 punktów).
   - **Dodać FAQ**: koszt i czas optymalizacji, co trzeba przygotować, jak wygląda pomiar (GSC/PSI).
   - **Rozszerzyć treść o long-tail**: „optymalizacja prędkości strony”, „PageSpeed 90+”, „WCAG kontrast”.
 
@@ -290,7 +290,7 @@ W każdej realizacji opisuję:
 - **Sugestie ulepszeń (SEO)**:
   - **Naprawić CTA** (tekst i linki) pod „wizytówkę dla kancelarii”.
   - **Uzupełnić `seo.title` o markę** i doprecyzować „wizytówka adwokacka/kancelaria”.
-  - **Dodać 1–2 zdania o produkcji** (papier, uszlachetnienia, minimalne rozmiary tekstu) — zwiększa wiarygodność.
+  - **Dodać 1-2 zdania o produkcji** (papier, uszlachetnienia, minimalne rozmiary tekstu) — zwiększa wiarygodność.
 
 ### `Strona dla psychologa - MSC Psychotherapy UK` (`strona-dla-psychologa-msc-psychotherapy`)
 
@@ -319,8 +319,8 @@ W każdej realizacji opisuję:
   - **Dużo HTML w polach tekstowych**: trudniej utrzymać spójną semantykę nagłówków.
 - **Sugestie ulepszeń (SEO)**:
   - **Zbalansować frazy**: część powtórzeń zastąpić synonimami i bardziej naturalnymi konstrukcjami.
-  - **Dodać galerię** (np. 4–8 screenów sekcji strony) z altami.
-  - **Dodać 1–2 konkretne metryki** (np. poprawa CWV, CTR, liczba klików w kontakt) — jeśli są dostępne.
+  - **Dodać galerię** (np. 4-8 screenów sekcji strony) z altami.
+  - **Dodać 1-2 konkretne metryki** (np. poprawa CWV, CTR, liczba klików w kontakt) — jeśli są dostępne.
 
 ### `Katalog produktów - RestoQuality` (`katalog-produktow-restoquality`)
 
@@ -339,7 +339,7 @@ W każdej realizacji opisuję:
 - **Czego brakuje / do dopracowania**:
   - **`client`**: brak (to jeden z najważniejszych braków w tej realizacji)
   - **`outcomes`**: brak (np. liczba stron, skrócenie czasu wyboru produktu, feedback handlowców)
-  - **Więcej materiału wizualnego**: jest tylko 1 obraz (na katalog warto dać 3–6 ujęć)
+  - **Więcej materiału wizualnego**: jest tylko 1 obraz (na katalog warto dać 3-6 ujęć)
   - **Korekta copy**: są literówki w opisach/FAQ
 - **Plusy**:
   - **Silna użyteczność**: opisy kart produktów (parametry, cena, kraj) trafiają w intencje w gastronomii.
@@ -350,7 +350,7 @@ W każdej realizacji opisuję:
   - **Niewykorzystany potencjał galerii**: katalog bez przykładów stron wygląda „pusto”.
 - **Sugestie ulepszeń (SEO)**:
   - **Uzupełnić `client`**: `name`, `sector`, opcjonalnie `location`.
-  - **Dodać 3–6 screenów stron** (spis treści, karta produktu, kategoria) + alt z frazami „katalog produktów dla gastronomii”.
+  - **Dodać 3-6 screenów stron** (spis treści, karta produktu, kategoria) + alt z frazami „katalog produktów dla gastronomii”.
   - **Dodać outcomes**: np. liczba stron, liczba kategorii, efekt „szybsze porównania”.
 
 ### `Wizytówka dla SPA - TALIA` (`wizytowka-dla-spa-talia`)
@@ -406,7 +406,7 @@ W każdej realizacji opisuję:
   - **Braki SEO meta**: utrudnia rankowanie na frazy typu „redesign portalu/serwisu sportowego”.
 - **Sugestie ulepszeń (SEO)**:
   - **Uzupełnić `seo.title` i `seo.description`** (unikalne, pod frazy: „redesign portalu sportowego”, „wdrożenie Gutenberg”).
-  - **Dodać before/after** i 4–8 screenów (home, listing, artykuł, elementy Gutenberg).
+  - **Dodać before/after** i 4-8 screenów (home, listing, artykuł, elementy Gutenberg).
   - **Dodać outcomes**: np. poprawa CWV/performance, skrócenie czasu publikacji, mniejsza liczba błędów redakcyjnych.
 
 ### `Sklep dla firmy odzieżowej - Trilllizo` (`sklep-dla-firmy-odziezowej-trilllizo`)
@@ -466,7 +466,7 @@ W każdej realizacji opisuję:
   - **Brak materiału wizualnego**: przy WCAG screeny stanów fokus/ARIA pomagają zrozumieć skalę.
 - **Sugestie ulepszeń (SEO)**:
   - **Dodać `outcomes`**: np. „X komponentów poprawionych”, „Lighthouse accessibility +Y punktów”, „naprawione krytyczne błędy WCAG”.
-  - **Dodać `contentBlocks`**: 3–6 screenów przed/po (focus states, formularz, karuzela) + opisy.
+  - **Dodać `contentBlocks`**: 3-6 screenów przed/po (focus states, formularz, karuzela) + opisy.
   - **Dodać FAQ**: audyt WCAG, czas wdrożenia, co jest potrzebne od klienta.
 
 ### `Wizytówki dla gastronomii - RestoQuality` (`wizytowki-dla-gastronomii-restoquality`)
@@ -494,7 +494,7 @@ W każdej realizacji opisuję:
   - **Słowa kluczowe są trafione**: „wizytówki dla gastronomii”, „dla handlowców”.
 - **Minusy / ryzyka**:
   - **Brak CTA**: trudniej domknąć intencję użytkownika (zobaczył realizację, ale nie ma jasnego „co dalej”).
-  - **Za mało wariantów**: „szablon” aż prosi się o pokazanie 2–3 przykładów.
+  - **Za mało wariantów**: „szablon” aż prosi się o pokazanie 2-3 przykładów.
 - **Sugestie ulepszeń (SEO)**:
   - **Uzupełnić `client`** i dodać `cta` (np. do usługi wizytówek).
   - **Dodać dodatkowe bloki**: front/tył, warianty dla różnych ról handlowców, zbliżenia typografii.
@@ -525,8 +525,8 @@ W każdej realizacji opisuję:
   - **Zbyt mała unikalność** vs Meridol/Sanex: bez detali strony będą wyglądały podobnie.
   - **Brak dowodów**: trudniej „uwierzyć” w efekt.
 - **Sugestie ulepszeń (SEO)**:
-  - **Rozbudować `description`** do 2–4 akapitów (problem → co poprawiono → co zyskał użytkownik).
-  - **Dodać `outcomes`** i 3–6 screenów (formularze, komunikaty błędów, fokus).
+  - **Rozbudować `description`** do 2-4 akapitów (problem → co poprawiono → co zyskał użytkownik).
+  - **Dodać `outcomes`** i 3-6 screenów (formularze, komunikaty błędów, fokus).
   - **Dodać `cta`** do audytu dostępności + linkowanie wewnętrzne do narzędzia kontrastu.
 
 ### `Sanex Accessibility` (`sanex-accessibility`)
@@ -583,7 +583,7 @@ W każdej realizacji opisuję:
 - **Sugestie ulepszeń (SEO)**:
   - **Dodać `process_steps`** (master → eksport → adaptacja → QA → publikacja).
   - **Dodać `outcomes`**: liczba rynków, czas wdrożeń, zmniejszenie błędów.
-  - **Dodać `contentBlocks`**: przykłady „master vs lokalizacja” (nawet 2–3 screeny).
+  - **Dodać `contentBlocks`**: przykłady „master vs lokalizacja” (nawet 2-3 screeny).
 
 ### `Palmolive Lokalizacje` (`palmolive`)
 

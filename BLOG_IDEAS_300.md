@@ -2,7 +2,7 @@
 
 Format: Tytuł — Intencja (informacyjna / komercyjna / hybrydowa) — Powiązana usługa — Uzasadnienie
 
-## Batch 1/6 (1–50) — Strony internetowe: planowanie + technologia
+## Batch 1/6 (1-50) — Strony internetowe: planowanie + technologia
 
 1. Jak dobrać liczbę podstron do oferty, żeby strona nie była ani za krótka, ani za długa? — Intencja: hybrydowa — Usługa: Strony internetowe — Uzasadnienie: Dylemat przed startem projektu; wspiera scope, UX i naturalnie prowadzi do wyceny.
 2. Brief na stronę firmową: jakie informacje zebrać przed startem projektu (z przykładami)? — Intencja: hybrydowa — Usługa: Strony internetowe — Uzasadnienie: Redukuje ryzyko i przyspiesza realizację; temat często wyszukiwany przed zleceniem strony.
@@ -55,19 +55,19 @@ Format: Tytuł — Intencja (informacyjna / komercyjna / hybrydowa) — Powiąza
 49. Cookies i skrypty marketingowe: jak je dodać, żeby nie zabić performance — Intencja: hybrydowa — Usługa: Optymalizacja SEO — Uzasadnienie: Łączy compliance, UX i szybkość; prowadzi do uporządkowania tagów i optymalizacji.
 50. Backup i utrzymanie strony: co powinno być w opiece technicznej (i jak to kontrolować) — Intencja: hybrydowa — Usługa: Strony internetowe — Uzasadnienie: Temat „po wdrożeniu” buduje zaufanie i kieruje do stałej opieki.
 
-## Batch 2/6 (51–100) — SEO: audyt + optymalizacja + widoczność
+## Batch 2/6 (51-100) — SEO: audyt + optymalizacja + widoczność
 
 51. Audyt SEO: co dokładnie sprawdzamy (technika, treść, linki) i dlaczego — Intencja: hybrydowa — Usługa: Audyt SEO — Uzasadnienie: Porządkuje oczekiwania klienta i pokazuje, że audyt to plan działania, a nie „magia SEO”.
 52. Kiedy warto zrobić audyt SEO: start nowej strony, spadki, migracja, brak leadów — Intencja: hybrydowa — Usługa: Audyt SEO — Uzasadnienie: Pomaga podjąć decyzję i pokazuje typowe sygnały ostrzegawcze.
 53. Jak przygotować się do audytu SEO: dostępy do GSC, GA4, CMS i hostingu (checklista) — Intencja: hybrydowa — Usługa: Audyt SEO — Uzasadnienie: Usuwa blokady procesowe i skraca czas startu współpracy.
 54. Jak czytać raport audytu SEO: priorytety, wpływ, trudność, koszt wdrożenia — Intencja: informacyjna — Usługa: Audyt SEO — Uzasadnienie: Edukuje klienta i ułatwia akceptację planu naprawczego.
-55. 10 szybkich wygranych po audycie SEO, które często dają efekt w 7–14 dni — Intencja: informacyjna — Usługa: Optymalizacja SEO — Uzasadnienie: Materiał „quick wins” pod wysoką intencję; prowadzi do wdrożeń.
+55. 10 szybkich wygranych po audycie SEO, które często dają efekt w 7-14 dni — Intencja: informacyjna — Usługa: Optymalizacja SEO — Uzasadnienie: Materiał „quick wins” pod wysoką intencję; prowadzi do wdrożeń.
 56. Optymalizacja SEO vs pozycjonowanie: czym się różnią i kiedy potrzebujesz której usługi — Intencja: hybrydowa — Usługa: Marketing internetowy — Uzasadnienie: Rozbraja nieporozumienia i ułatwia dobranie zakresu współpracy.
 57. Jak znaleźć frazy kluczowe dla firmy usługowej (bez drogich narzędzi) — Intencja: informacyjna — Usługa: Pozycjonowanie stron — Uzasadnienie: Pomaga zacząć od realnych pytań klientów i buduje zaufanie do procesu.
 58. Intencja wyszukiwania (search intent): jak odróżnić frazy informacyjne od zakupowych — Intencja: informacyjna — Usługa: Pozycjonowanie stron — Uzasadnienie: Wyjaśnia, czemu nie każda fraza ma sens i jak planować treści.
 59. Strony usług vs wpisy blogowe: jak rozdzielić tematy, żeby nie kanibalizować SEO — Intencja: hybrydowa — Usługa: Pozycjonowanie stron — Uzasadnienie: Rozwiązuje częsty problem w serwisach usługowych i blogach.
 60. Kanibalizacja fraz: jak ją rozpoznać w Search Console i jak naprawić — Intencja: informacyjna — Usługa: Optymalizacja SEO — Uzasadnienie: Temat problemowy z jasnym rozwiązaniem; świetny lead na optymalizację.
-61. Struktura nagłówków H1–H3 na stronie usługi: wzorce i przykłady — Intencja: informacyjna — Usługa: Optymalizacja SEO — Uzasadnienie: Ułatwia poprawę on-page SEO bez sztucznego upychania fraz.
+61. Struktura nagłówków H1-H3 na stronie usługi: wzorce i przykłady — Intencja: informacyjna — Usługa: Optymalizacja SEO — Uzasadnienie: Ułatwia poprawę on-page SEO bez sztucznego upychania fraz.
 62. Ile tekstu na stronie usługi? Minimum, maksimum i kiedy długość szkodzi — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Częste pytanie klientów; łączy UX, SEO i konwersję.
 63. Jak pisać meta title, które zwiększa CTR (bez clickbaitu) — 12 szablonów — Intencja: informacyjna — Usługa: Pozycjonowanie stron — Uzasadnienie: Praktyczne formuły do wdrożenia od razu; temat pod wysoki popyt.
 64. Meta description: czy ma znaczenie i jak pisać opisy, które sprzedają — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Łączy SEO i copywriting; prowadzi do poprawy snippetów.
@@ -106,9 +106,9 @@ Format: Tytuł — Intencja (informacyjna / komercyjna / hybrydowa) — Powiąza
 97. Strona nie rośnie w Google: 7 najczęstszych przyczyn i jak je sprawdzić — Intencja: hybrydowa — Usługa: Audyt SEO — Uzasadnienie: Materiał diagnostyczny pod leady na audyt.
 98. SEO w erze AI Overviews: jak pisać treści, żeby wygrywać „odpowiedzi” i kliknięcia — Intencja: informacyjna — Usługa: Pozycjonowanie stron — Uzasadnienie: Nowy trend, który buduje autorytet i aktualność bloga.
 99. E-E-A-T dla małej firmy: jak budować wiarygodność treści bez wielkiego budżetu — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Wspiera lepszą jakość i zaufanie, szczególnie w usługach.
-100. Case study na stronie: jak je pisać, żeby działało w SEO i sprzedaży — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Case study to „dowód” i jednocześnie treść indeksowalna.
+100.  Case study na stronie: jak je pisać, żeby działało w SEO i sprzedaży — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Case study to „dowód” i jednocześnie treść indeksowalna.
 
-## Batch 3/6 (101–150) — Sklepy internetowe: UX + konwersja + treści
+## Batch 3/6 (101-150) — Sklepy internetowe: UX + konwersja + treści
 
 101. Sklep online vs Allegro/Amazon/Etsy: kiedy warto budować własny sklep (koszty prowizji, kontrola marki) — Intencja: hybrydowa — Usługa: Sklepy internetowe — Uzasadnienie: Decyzja strategiczna przed startem sprzedaży; naturalnie prowadzi do wyceny sklepu.
 102. Jak policzyć opłacalność przejścia z marketplace na własny sklep (prosta metoda) — Intencja: hybrydowa — Usługa: Sklepy internetowe — Uzasadnienie: Temat „czy to się zwróci?”; buduje zaufanie i urealnia oczekiwania.
@@ -161,7 +161,7 @@ Format: Tytuł — Intencja (informacyjna / komercyjna / hybrydowa) — Powiąza
 149. Błędy w konfiguracji dostaw i płatności, które blokują sprzedaż — checklista wdrożeniowa — Intencja: hybrydowa — Usługa: Sklepy internetowe — Uzasadnienie: Materiał diagnostyczny; przyciąga właścicieli sklepów po starcie.
 150. Case study e-commerce: jak opisać wdrożenie sklepu, żeby pokazać proces i efekty — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Case study to dowód kompetencji i treść wspierająca SEO.
 
-## Batch 4/6 (151–200) — Tworzenie treści + blog: język marki + E-E-A-T
+## Batch 4/6 (151-200) — Tworzenie treści + blog: język marki + E-E-A-T
 
 151. Tone of voice marki: jak go zdefiniować i przełożyć na stronę i social media (prosta metoda) — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Pomaga uporządkować komunikację i poprawić spójność treści.
 152. Archetyp marki: jak go wybrać i przełożyć na styl treści (bez ezoteryki) — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Wspiera spójny język i wyróżnienie na tle konkurencji.
@@ -186,12 +186,12 @@ Format: Tytuł — Intencja (informacyjna / komercyjna / hybrydowa) — Powiąza
 171. Newsletter na blogu: co oferować w zamian za zapis (bez „spamowych” lead magnetów) — Intencja: hybrydowa — Usługa: Marketing internetowy — Uzasadnienie: Buduje bazę direct i zwiększa powracający ruch.
 172. Paywall i płatne treści: kiedy to działa i jak nie zabić ruchu organicznego — Intencja: hybrydowa — Usługa: Blogi internetowe — Uzasadnienie: Temat decyzyjny dla ekspertów; łączy model biznesowy z SEO.
 173. Reklamy na blogu: kiedy mają sens biznesowo i jak je wdrożyć bez spadku UX — Intencja: informacyjna — Usługa: Blogi internetowe — Uzasadnienie: Uczy, jak monetyzować ruch bez psucia strony.
-174. Jak tworzyć case studies: struktura „problem–proces–efekt” + checklista danych — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Case study wspiera sprzedaż i wiarygodność.
+174. Jak tworzyć case studies: struktura „problem-proces-efekt” + checklista danych — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Case study wspiera sprzedaż i wiarygodność.
 175. Jak pokazywać liczby w case study, gdy nie możesz ujawniać wrażliwych danych — Intencja: informacyjna — Usługa: Tworzenie treści — Uzasadnienie: Pomaga tworzyć dowody bez łamania NDA.
 176. Oferta PDF: co powinna zawierać, żeby skrócić proces sprzedaży — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Wspiera usługę „Oferty i case studies” i domykanie leadów.
 177. Jak pisać ofertę usług bez ogólników: przykłady zdań, które działają — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Konkretny materiał „do wdrożenia”, powiązany z realnymi problemami sprzedaży.
 178. Copy do social media: Facebook/Instagram vs LinkedIn — różnice w stylu i długości — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Pokazuje, jak nie kopiować treści 1:1 między platformami.
-179. Scenariusz rolki (Reels): prosty szablon „hook–wartość–CTA” + przykłady — Intencja: informacyjna — Usługa: Tworzenie treści — Uzasadnienie: Wysoki popyt na format wideo; temat praktyczny.
+179. Scenariusz rolki (Reels): prosty szablon „hook-wartość-CTA” + przykłady — Intencja: informacyjna — Usługa: Tworzenie treści — Uzasadnienie: Wysoki popyt na format wideo; temat praktyczny.
 180. Jak pisać posty edukacyjne, które wspierają SEO pośrednio (brand search) — Intencja: informacyjna — Usługa: Marketing internetowy — Uzasadnienie: Łączy działania social z rozpoznawalnością i późniejszym ruchem organicznym.
 181. Jak przerabiać jeden temat na 5 formatów (artykuł, post, newsletter, FAQ, case) bez duplikowania — Intencja: informacyjna — Usługa: Tworzenie treści — Uzasadnienie: Pomaga skalować treści bez spadku jakości.
 182. Aktualizacja treści: kiedy lepiej poprawić stary artykuł niż pisać nowy — Intencja: hybrydowa — Usługa: Optymalizacja SEO — Uzasadnienie: Typowe działanie w SEO; często daje szybszy efekt niż nowe teksty.
@@ -214,14 +214,14 @@ Format: Tytuł — Intencja (informacyjna / komercyjna / hybrydowa) — Powiąza
 199. Jak mierzyć, czy treść dowozi leady: proste zdarzenia, formularze, telefony — Intencja: hybrydowa — Usługa: Marketing internetowy — Uzasadnienie: Pomaga połączyć content z wynikami biznesowymi.
 200. Jedna realizacja, wiele treści: jak zamienić projekt w portfolio, case study i posty — Intencja: hybrydowa — Usługa: Tworzenie treści — Uzasadnienie: Ułatwia tworzenie treści bez wymyślania tematów od zera.
 
-## Batch 5/6 (201–250) — Projekty graficzne + branding + dostępność
+## Batch 5/6 (201-250) — Projekty graficzne + branding + dostępność
 
 201. Logo vs logotyp vs sygnet: co naprawdę potrzebujesz i jak to wpływa na rozpoznawalność — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Klasyczny dylemat zakupowy; pomaga dobrać zakres projektu logo.
 202. Ile wersji logo przygotować (kolor, mono, negatyw, ikona): praktyczny standard dla MŚP — Intencja: informacyjna — Usługa: Projekty graficzne — Uzasadnienie: Urealnia oczekiwania i minimalizuje późniejsze „doprawianie” logo.
 203. Rebranding vs lifting: kiedy zmiana logo ma sens, a kiedy lepiej poprawić tylko aplikacje — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Pomaga podjąć bezpieczną decyzję strategiczną.
 204. Brandbook w wersji „minimum”: co powinno się w nim znaleźć, żeby marka była spójna — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Pokazuje realny zakres i wartość brandbooka bez przesady.
 205. Key visual marki: jak zbudować system elementów, żeby grafiki „wyglądały jak Twoje” — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Wspiera spójność w social, reklamach i na stronie.
-206. Paleta kolorów marki: jak dobrać 2–3 kolory główne i zestaw uzupełniający (z przykładami) — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Bardzo praktyczne przy startach i rebrandingu.
+206. Paleta kolorów marki: jak dobrać 2-3 kolory główne i zestaw uzupełniający (z przykładami) — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Bardzo praktyczne przy startach i rebrandingu.
 207. Kontrast WCAG a kolory brandowe: jak znaleźć kompromis między „ładnie” a „czytelnie” — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Łączy design z dostępnością i UX.
 208. Tester kontrastu WCAG: jak interpretować wyniki AA/AAA i co poprawiać w pierwszej kolejności — Intencja: informacyjna — Usługa: Narzędzia online — Uzasadnienie: Naturalnie promuje narzędzie i uczy dostępności w praktyce.
 209. Generator palet kolorów: jak tworzyć palety, które działają na stronie, w PDF i w social — Intencja: informacyjna — Usługa: Narzędzia online — Uzasadnienie: Rozwiązuje problem „kolory fajne w projekcie, słabe w realu”.
@@ -267,7 +267,7 @@ Format: Tytuł — Intencja (informacyjna / komercyjna / hybrydowa) — Powiąza
 249. Jak przenieść branding na stronę: kolory, typografia, zdjęcia i mikrocopy jako jeden system — Intencja: hybrydowa — Usługa: Strony internetowe — Uzasadnienie: Łączy design z wdrożeniem strony.
 250. Jak przygotować identyfikację wizualną pod rozwój: nowe formaty, social, reklamy, druk — Intencja: hybrydowa — Usługa: Projekty graficzne — Uzasadnienie: Wspiera myślenie systemowe i zmniejsza koszty przyszłych materiałów.
 
-## Batch 6/6 (251–300) — Marketing płatny + social + analityka + rozwój
+## Batch 6/6 (251-300) — Marketing płatny + social + analityka + rozwój
 
 251. Google Ads dla firmy usługowej: od czego zacząć, żeby nie przepalać budżetu — Intencja: hybrydowa — Usługa: Marketing internetowy — Uzasadnienie: Temat wejściowy dla PPC z wysoką intencją i realnymi obawami.
 252. Kampania w wyszukiwarce vs Performance Max: kiedy która opcja ma sens dla małego budżetu — Intencja: hybrydowa — Usługa: Marketing internetowy — Uzasadnienie: Pomaga wybrać typ kampanii i uniknąć rozczarowań.

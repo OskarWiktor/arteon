@@ -571,17 +571,19 @@ export default function ImageResizeTool() {
               className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
             >
               <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
-              <span className="mb-2 text-xs! text-light">{t.clickToSelect}</span>
-              <Badge variant="default" size="sm" className="bg-white shadow-sm">{t.supportedFormats}</Badge>
+              <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
+              <Badge variant="default" size="sm" className="bg-white shadow-sm">
+                {t.supportedFormats}
+              </Badge>
             </ToolFileDropzone>
             {state.file && (
-              <p className="mt-2 text-xs! text-light">
+              <p className="text-light mt-2 text-xs!">
                 {t.currentFile} <strong>{state.file.name}</strong>
               </p>
             )}
           </div>
 
-          <div className="mt-4 rounded-2xl border border-black/10 bg-white/90 p-4 text-xs! text-light">
+          <div className="text-light mt-4 rounded-2xl border border-black/10 bg-white/90 p-4 text-xs!">
             <h3 className="h6 mb-2">{t.imageParams}</h3>
             {!state.imageUrl && <p>{t.noData}</p>}
             {state.imageUrl && (
@@ -669,7 +671,7 @@ export default function ImageResizeTool() {
                   }
                   className="w-full! p-0!"
                 />
-                <p className="text-xs! text-light">{t.qualityHelper}</p>
+                <p className="text-light text-xs!">{t.qualityHelper}</p>
               </div>
             )}
 
@@ -692,7 +694,7 @@ export default function ImageResizeTool() {
         <div className="mb-2 flex items-center justify-between gap-2">
           <h2 className="h6">{t.cropTools}</h2>
           {dims && (
-            <span className="text-xs! text-light">
+            <span className="text-light text-xs!">
               {t.target}{' '}
               <strong>
                 {dims.width} x {dims.height} px
@@ -701,9 +703,7 @@ export default function ImageResizeTool() {
           )}
         </div>
 
-        {!state.imageUrl && (
-          <p className="text-xs! text-light">{t.addImageFirstHelper}</p>
-        )}
+        {!state.imageUrl && <p className="text-light text-xs!">{t.addImageFirstHelper}</p>}
 
         {state.imageUrl && cropEnabled && (
           <>
@@ -805,7 +805,7 @@ export default function ImageResizeTool() {
 
                   {state.shape === 'rect' && (
                     <div className="space-y-2">
-                      <p className="text-xs! text-light">{t.rectAspect}</p>
+                      <p className="text-light text-xs!">{t.rectAspect}</p>
                       <div className="flex flex-wrap gap-2">
                         {RECT_ASPECTS.map((aspect) => (
                           <PillButton key={aspect} value={aspect} current={state.shapeAspect} label={aspect} onChange={(val) => handleShapeAspectChange(val as ShapeAspect)} />
@@ -940,7 +940,7 @@ export default function ImageResizeTool() {
               <div className="mt-4 mb-2 flex items-center justify-between">
                 <h3 className="h6">{t.cropPreview}</h3>
                 {dims && (
-                  <span className="text-xs! text-light">
+                  <span className="text-light text-xs!">
                     {dims.width} x {dims.height} px
                   </span>
                 )}
@@ -994,7 +994,7 @@ export default function ImageResizeTool() {
                 </div>
               </div>
 
-              <p className="mt-2 text-xs! text-light">{t.cropPreviewHelper}</p>
+              <p className="text-light mt-2 text-xs!">{t.cropPreviewHelper}</p>
             </div>
           </>
         )}
@@ -1002,5 +1002,3 @@ export default function ImageResizeTool() {
     </div>
   );
 }
-
-

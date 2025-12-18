@@ -123,22 +123,22 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Czytelny układ i profesjonalny wygląd',
               description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Otrzymujesz pliki przygotowane do druku</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Dopasowujemy kolory, typografię i styl do Twojej marki aby zachować spójność wizerunku.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -327,5 +327,3 @@ export default function OfferDesignBusinessCardPage() {
     </>
   );
 }
-
-

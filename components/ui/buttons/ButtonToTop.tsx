@@ -9,13 +9,7 @@ const PASSIVE_SCROLL: AddEventListenerOptions = { passive: true };
 export default function ButtonToTop({ targetId = 'article-root', showAfter = 400, label = 'Do góry' }: { targetId?: string; showAfter?: number; label?: string }) {
   const [visible, setVisible] = useState(false);
 
-  useEventListener(
-    typeof window !== 'undefined' ? window : null,
-    'scroll',
-    () => setVisible(window.scrollY > showAfter),
-    PASSIVE_SCROLL,
-    true
-  );
+  useEventListener(typeof window !== 'undefined' ? window : null, 'scroll', () => setVisible(window.scrollY > showAfter), PASSIVE_SCROLL, true);
 
   useEffect(() => {
     setVisible(window.scrollY > showAfter);
@@ -34,7 +28,7 @@ export default function ButtonToTop({ targetId = 'article-root', showAfter = 400
       type="button"
       onClick={scrollToTarget}
       className={
-        'fixed right-5 bottom-5 z-50 inline-flex w-fit cursor-pointer items-center rounded-full px-3 py-3 font-medium text-sm text-white shadow-lg transition hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white bg-black border border-black/10'
+        'fixed right-5 bottom-5 z-50 inline-flex w-fit cursor-pointer items-center rounded-full border border-black/10 bg-black px-3 py-3 text-sm font-medium text-white shadow-lg transition hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white'
       }
     >
       <span className="sr-only">{label}</span>

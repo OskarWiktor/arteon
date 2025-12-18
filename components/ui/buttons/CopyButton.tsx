@@ -50,4 +50,3 @@ export default function CopyButton({ text, label = 'Kopiuj', copiedLabel = 'Skop
     </button>
   );
 }
-

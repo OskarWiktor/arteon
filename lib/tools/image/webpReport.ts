@@ -65,9 +65,7 @@ export function buildWebpConversionReportText(items: WebpConversionReportItem[],
   const savedPercent = totalInput > 0 ? Math.round((Math.abs(saved) / totalInput) * 100) : 0;
 
   const trendLabel =
-    saved >= 0
-      ? `${labels.savedWeight} ${formatBytes(saved)} (~${savedPercent}% ${labels.less})`
-      : `${labels.weightDifference} ${formatBytes(Math.abs(saved))} (~${savedPercent}% ${labels.more})`;
+    saved >= 0 ? `${labels.savedWeight} ${formatBytes(saved)} (~${savedPercent}% ${labels.less})` : `${labels.weightDifference} ${formatBytes(Math.abs(saved))} (~${savedPercent}% ${labels.more})`;
 
   return [
     labels.conversionReport,

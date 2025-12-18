@@ -93,13 +93,7 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
 
   return (
     <section aria-labelledby="faq-heading">
-      <SectionHeader
-        subtitle={subtitle}
-        title={title}
-        headingLevel="h2"
-        headingClassName="reveal-animation h3 mb-2"
-        titleId="faq-heading"
-      />
+      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="reveal-animation h3 mb-2" titleId="faq-heading" />
 
       {items.map((item, index) => {
         const isOpen = activeIndex === index;

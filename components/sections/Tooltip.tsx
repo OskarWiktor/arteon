@@ -71,7 +71,7 @@ export default function Tooltip({ children, title, description, placement = 'top
         className={[
           'tooltip-trigger',
           'cursor-help underline decoration-dotted underline-offset-2',
-          'transition-colors hover:text-dark focus-visible:text-dark',
+          'hover:text-dark focus-visible:text-dark transition-colors',
           'rounded focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:outline-none',
           className,
         ].join(' ')}

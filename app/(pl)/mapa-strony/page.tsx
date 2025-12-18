@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 
 import blogData from '@/data/pl/blog.json';
 import projectsData from '@/data/pl/projects.json';
+import { slugify } from '@/utils/slug';
 
 const BASE_URL = 'https://www.arteonagency.pl';
 
@@ -20,7 +21,8 @@ type NavItem = { title: string; href: string; children?: NavItem[] };
 type Article = {
   slug: string;
   title: string;
-  category?: string | string[];
+  primaryCategory?: string;
+  category?: string[];
 };
 
 type Project = {
@@ -79,18 +81,8 @@ const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).pro
 }));
 
 function getArticleUrl(article: Article): string {
-  const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : [];
-  const primaryCategory = categories[0] ?? 'Inne';
-  return `/edukacja/${slugifyCategory(primaryCategory)}/${article.slug}`;
-}
-
-function slugifyCategory(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)+/g, '');
+  const primaryCategory = article.primaryCategory || article.category?.[0] || 'Inne';
+  return `/edukacja/${slugify(primaryCategory)}/${article.slug}`;
 }
 
 const articles = (blogData as { articles: Article[] }).articles || [];
@@ -108,6 +100,7 @@ const tools: NavItem[] = [
   { title: 'Licznik długości meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
   { title: 'Darmowy generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
   { title: 'Tester kontrastu kolorów WCAG', href: '/narzedzia/tester-kontrastu-kolorow-wcag' },
+  { title: 'Paleta kolorów z obrazu', href: '/narzedzia/generator-palety-kolorow-z-obrazu' },
   { title: 'Generator palet kolorów online', href: '/narzedzia/generator-palet-kolorow-online' },
 ];
 
@@ -193,7 +186,7 @@ export default function SitemapPage() {
                 Wszystkie narzędzia
               </AppLink>
             </p>
-            <ul className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
+            <ul className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 2xl:grid-cols-10">
               {tools.map((tool) => (
                 <li key={tool.href}>
                   <AppLink href={tool.href}>{tool.title}</AppLink>
@@ -205,7 +198,7 @@ export default function SitemapPage() {
           <Gap variant="line" size="sm" />
 
           <SectionInfo title="Informacje">
-            <ul>
+            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-10">
               {infoPages.map((p) => (
                 <li key={p.href}>
                   <AppLink href={p.href} className="font-medium">
@@ -219,10 +212,7 @@ export default function SitemapPage() {
 
         <Gap size="sm" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Wrapper>
     </>
   );
@@ -268,10 +258,11 @@ function buildBlogCategoriesFromArticles(articles: Article[]): NavItem[] {
   const categoryMap = new Map<string, NavItem>();
 
   for (const article of articles) {
-    const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : ['Inne'];
+    const allCats = [article.primaryCategory, ...(article.category || [])].filter(Boolean) as string[];
+    const categories = allCats.length ? Array.from(new Set(allCats)) : ['Inne'];
 
     for (const catName of categories) {
-      const slug = slugifyCategory(catName);
+      const slug = slugify(catName);
       const key = slug;
 
       if (!categoryMap.has(key)) {

@@ -4,13 +4,7 @@ import { useEffect, useRef } from 'react';
 
 type AnyEventListener = (...args: unknown[]) => void;
 
-export function useEventListener<T extends EventTarget, K extends string>(
-  target: T | null,
-  type: K,
-  listener: AnyEventListener,
-  options?: boolean | AddEventListenerOptions,
-  enabled: boolean = true
-) {
+export function useEventListener<T extends EventTarget, K extends string>(target: T | null, type: K, listener: AnyEventListener, options?: boolean | AddEventListenerOptions, enabled: boolean = true) {
   const listenerRef = useRef(listener);
 
   useEffect(() => {

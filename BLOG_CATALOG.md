@@ -3,6 +3,7 @@
 Ten plik opisuje wszystkie artykuły z `data/pl/blog.json`.
 
 Celem katalogu jest:
+
 - **Ocena jakości treści** (struktura, kompletność, użyteczność).
 - **Ocena jakości SEO** (meta, canonical, linkowanie, E-E-A-T, potencjał na featured snippets).
 - **Wskazanie braków i ryzyk** (techniczne, redakcyjne, strukturalne).
@@ -25,31 +26,37 @@ Celem katalogu jest:
 ## Spis artykułów (kolejność wg `blog.json`)
 
 - **Jak kolorystyka wpływa na decyzje zakupowe klientów?**
+
   - **Slug**: `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
   - **URL**: `/edukacja/design/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
   - **Kategorie**: `Design`, `Psychologia`, `Branding`
 
 - **Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?**
+
   - **Slug**: `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
   - **URL**: `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
   - **Kategorie**: `SEO`, `Widoczność`
 
 - **Czy lokalne firmy potrzebują bloga na stronie internetowej aby rosnąć w Google?**
+
   - **Slug**: `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
   - **URL**: `/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
   - **Kategorie**: `SEO`, `Widoczność`, `Treści`
 
 - **Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP**
+
   - **Slug**: `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
   - **URL**: `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
   - **Kategorie**: `Zdjęcia`, `SEO`
 
 - **Jak pisać treści na stronie internetowej aby być wyżej w wyszukiwarce Google?**
+
   - **Slug**: `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
   - **URL**: `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
   - **Kategorie**: `SEO`, `Treści`
 
 - **Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?**
+
   - **Slug**: `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
   - **URL**: `/edukacja/design/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow` (wg routingu)
   - **Kategorie**: `Design`, `Branding`
@@ -75,30 +82,35 @@ Celem katalogu jest:
   - **Typy bloków**: tylko `richtext`.
   - **Konsekwencja**: dużo nagłówków `H2` i `H3` (dobry „szkielet” pod TOC), ale brak wzbogacenia o `image` / `table`.
 - **SEO (meta)**:
-  - **`seo.title`**: identyczny jak `title` – poprawne, ale bez wyróżnika marki.
-  - **`seo.description`**: bardzo mocne – zawiera obietnicę wartości i wiarygodne źródła.
+  - **`seo.title`**: identyczny jak `title` - poprawne, ale bez wyróżnika marki.
+  - **`seo.description`**: bardzo mocne - zawiera obietnicę wartości i wiarygodne źródła.
   - **`seo.canonical`**: wygląda spójnie z routingiem (`/edukacja/design/...`).
 - **CTA**:
+
   - **Występuje**.
   - **Spójność**: bardzo dobra (narzędzie do palet + oferta identyfikacji).
 
 - **Plusy**:
+
   - **[duża wiarygodność]** tekst opiera się na źródłach (CCICOLOR, Lucidpress, NN/g, HubSpot itd.), co wzmacnia E‑E‑A‑T.
   - **[dobra struktura edukacyjna]** logiczny podział na: psychologia → marka → UX → konwersja → praktyka.
   - **[język „dla biznesu”]** łączy design z mierzalnymi efektami (CTR, konwersja, rozpoznawalność).
-  - **[wysoka skanowalność]** krótkie sekcje, listy punktowane – przyjazne dla czytelnika.
+  - **[wysoka skanowalność]** krótkie sekcje, listy punktowane - przyjazne dla czytelnika.
 
 - **Minusy / ryzyka**:
+
   - **[brak tagów]** utrudnia budowę klastrów tematycznych i powiązanych wpisów w obrębie bloga.
   - **[brak FAQ]** ogranicza pokrycie long-tail (PAA) i możliwość rozbudowy o dodatkowe intencje.
   - **[brak linkowania wewnętrznego w treści]** poza CTA artykuł nie prowadzi czytelnika do powiązanych zasobów (narzędzia/usługi/inne wpisy).
   - **[brak materiału wizualnego]** przy temacie „kolor” brak przykładów palet i kontrastów osłabia UX.
 
 - **Braki (co ma / czego nie ma)**:
+
   - **[ma]** jasne nagłówki, listy, źródła, konkretne wnioski, CTA.
   - **[nie ma]** tagów, FAQ, obrazów/diagramów, tabel podsumowujących, linków wewnętrznych w środku tekstu.
 
 - **Ton i charakter**:
+
   - **[ekspercki]** odwołania do badań i danych.
   - **[praktyczny]** nastawiony na wdrożenie (jak dobrać kolor, jak wpływa na CTA).
   - **[marketingowo-sprzedażowy]** wnioski prowadzą do konwersji, ale bez agresywnego języka.
@@ -128,36 +140,41 @@ Celem katalogu jest:
 - **Szacowany czas czytania**: `4 min`
 - **Format treści (`contentBlocks`)**:
   - **Typy bloków**: tylko `richtext`.
-  - **Konsekwencja**: materiał jest „tekstowy” – bez tabel/wykresów, mimo że temat dobrze się do nich nadaje.
+  - **Konsekwencja**: materiał jest „tekstowy” - bez tabel/wykresów, mimo że temat dobrze się do nich nadaje.
 - **SEO (meta)**:
   - **`seo.title`**: bardzo długi (ryzyko ucięcia w SERP).
   - **`seo.description`**: rzeczowy, zgodny z intencją (czas + czynniki).
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
 - **CTA**:
+
   - **Występuje**.
   - **Spójność**: bardzo dobra (prowadzi do usługi pozycjonowania).
 
 - **Plusy**:
+
   - **[świetnie dopasowana intencja]** użytkownik chce konkretu („ile trwa i kiedy efekty”) i artykuł daje model czasowy.
-  - **[mocne źródła]** Ahrefs, Semrush, BrightLocal, Google Search Central – wzmacnia E‑E‑A‑T.
+  - **[mocne źródła]** Ahrefs, Semrush, BrightLocal, Google Search Central - wzmacnia E‑E‑A‑T.
   - **[dobry układ sekcji]** czytelne bloki: nowe strony vs istniejące, czynniki wpływu, realistyczna oś czasu.
   - **[nadaje się na featured snippet]** fragmenty typu „0-2 miesiące / 2-4 miesiące…” są gotowe pod snippet.
 
 - **Minusy / ryzyka**:
+
   - **[brak tagów]** trudniej zbudować klaster SEO (czas, indeksacja, audyt, treści) i powiązania między wpisami.
   - **[brak FAQ]** w temacie „czas SEO” FAQ zwykle zbiera dużo long-tail (PAA).
   - **[brak linkowania wewnętrznego w treści]** można naturalnie linkować do audytu SEO, artykułu o indeksacji oraz o treściach.
 
 - **Braki (co ma / czego nie ma)**:
+
   - **[ma]** dane i źródła, strukturę czasową, logiczne argumenty, CTA.
   - **[nie ma]** tagów, FAQ, tabel/wykresów, sekcji „TL;DR”, linków wewnętrznych w środku tekstu.
 
 - **Ton i charakter**:
-  - **[ekspercki i realistyczny]** „SEO to proces” – bez przesadnych obietnic.
+
+  - **[ekspercki i realistyczny]** „SEO to proces” - bez przesadnych obietnic.
   - **[konsultacyjny]** tłumaczy czynniki i prowadzi do działania (CTA).
 
 - **Sugestie ulepszeń (SEO + UX)**:
-  - **[meta title]** skrócić (i ewentualnie ustandaryzować dopisek marki) – tak, by nie przekraczać sensownego limitu.
+  - **[meta title]** skrócić (i ewentualnie ustandaryzować dopisek marki) - tak, by nie przekraczać sensownego limitu.
   - **[FAQ]** dodać 5-8 pytań, np.:
     - „Czy da się przyspieszyć efekty SEO?”
     - „Kiedy pojawią się pierwsze leady z Google?”
@@ -189,35 +206,40 @@ Celem katalogu jest:
   - **`seo.description`**: krótkie i konkretne, ale warto dodać pełniejsze CTA i doprecyzować „lokalne firmy”.
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
 - **CTA**:
+
   - **Występuje**.
   - **Spójność**: dobra (prowadzi do pozycjonowania).
 
 - **Plusy**:
+
   - **[trafiona intencja]** odpowiada na realne pytanie małych firm („czy blog ma sens lokalnie?”).
   - **[konkret i dane]** przywołuje wiele źródeł (HubSpot, Semrush Local, Ahrefs, Backlinko, Neil Patel, Google Search Central).
   - **[przykłady branżowe]** przykłady typu hydraulik/fizjoterapeuta zwiększają zrozumiałość i „Experience”.
   - **[dobra struktura pod PAA]** nagłówki w formie tez/podpytań są bliskie temu, jak ludzie szukają w Google.
 
 - **Minusy / ryzyka**:
+
   - **[brak tagów]** temat aż prosi się o tagi typu `local seo`, `google maps`, `content marketing`.
   - **[brak FAQ]** utrata potencjału na long-tail (np. „ile artykułów”, „ile kosztuje”, „kiedy efekty”).
-  - **[błędy językowe]** w treści widoczne są literówki i niekonsekwencje („lug”, „trafa”, „13 większą…”) – osłabia wizerunek i E‑E‑A‑T.
+  - **[błędy językowe]** w treści widoczne są literówki i niekonsekwencje („lug”, „trafa”, „13 większą…”) - osłabia wizerunek i E‑E‑A‑T.
   - **[linkowanie wewnętrzne]** w praktyce brak linków do:
     - wpisu o czasie SEO,
     - wpisu o pisaniu treści,
     - oferty tworzenia treści.
 
 - **Braki (co ma / czego nie ma)**:
+
   - **[ma]** mocne argumenty, źródła, przykłady, jasny przekaz biznesowy.
   - **[nie ma]** tagów, FAQ, elementów wizualnych (grafika/tabela), checklisty wdrożeniowej i wewnętrznego linkowania.
 
 - **Ton i charakter**:
+
   - **[bezpośredni i perswazyjny]** ma przekonać przedsiębiorcę, że blog się opłaca.
   - **[edukacyjny]** tłumaczy mechanizmy Google (Helpful Content, E‑E‑A‑T) w przystępny sposób.
   - **[lokalny]** język i przykłady są dobrane pod biznesy usługowe.
 
 - **Sugestie ulepszeń (SEO + UX)**:
-  - **[korekta]** poprawić literówki i sformułowania – to szybki „zysk” jakościowy.
+  - **[korekta]** poprawić literówki i sformułowania - to szybki „zysk” jakościowy.
   - **[tagi]** dodać, np.: `lokalne seo`, `google maps`, `blog firmowy`, `content marketing`, `widoczność lokalna`, `pytania klientów`.
   - **[FAQ]** dodać 5-8 pytań, np.:
     - „Ile artykułów miesięcznie wystarczy?”
@@ -229,7 +251,7 @@ Celem katalogu jest:
     - wpisu o pisaniu treści,
     - oferty tworzenia treści,
     - narzędzi z sekcji `/narzedzia`.
-  - **[sekcja wdrożeniowa]** dodać mini-plan (7–14 dni): wybór tematów, struktura wpisu, CTA, publikacja, pomiar w GSC.
+  - **[sekcja wdrożeniowa]** dodać mini-plan (7-14 dni): wybór tematów, struktura wpisu, CTA, publikacja, pomiar w GSC.
 
 ---
 
@@ -249,28 +271,33 @@ Celem katalogu jest:
   - **`seo.description`**: konkret, ale relatywnie krótki (można dopracować pod CTR).
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/zdjecia/...`).
 - **Linkowanie**:
-  - **Zewnętrzne**: dużo odwołań do `web.dev`, PageSpeed, dokumentacji Google – plus dla wiarygodności.
-  - **Wewnętrzne**: wplecione linki do narzędzi `/narzedzia/*` – bardzo dobry wzorzec.
+  - **Zewnętrzne**: dużo odwołań do `web.dev`, PageSpeed, dokumentacji Google - plus dla wiarygodności.
+  - **Wewnętrzne**: wplecione linki do narzędzi `/narzedzia/*` - bardzo dobry wzorzec.
 - **CTA**:
+
   - **Występuje**.
   - **Ryzyko**: `cta.backgroundImage` wskazuje na ścieżkę z inną nazwą katalogu niż `cover` (w repo brak katalogu `.../rozmiary-i-webp/...`). To może powodować brak tła CTA.
 
 - **Plusy**:
-  - **[praktyczny poradnik]** krok po kroku i checklisty – wpis jest „wdrożeniowy”, nie tylko teoretyczny.
-  - **[dobry temat SEO]** łączy performance (CWV) z SEO – wysoka intencja użytkownika.
+
+  - **[praktyczny poradnik]** krok po kroku i checklisty - wpis jest „wdrożeniowy”, nie tylko teoretyczny.
+  - **[dobry temat SEO]** łączy performance (CWV) z SEO - wysoka intencja użytkownika.
   - **[mocne źródła]** linki do Google/web.dev wspierają E‑E‑A‑T.
   - **[internal linking do narzędzi]** pomaga użytkownikowi od razu wykonać zadanie (konwersja + UX).
 
 - **Minusy / ryzyka**:
+
   - **[brak tagów]** ogranicza widoczność i powiązania (CWV, WebP, PageSpeed).
   - **[brak FAQ]** temat ma ogromny potencjał long-tail (WebP vs AVIF, jakość, rozmiary, alt, lazy loading).
   - **[brak tabel/obrazów]** wpis o obrazach nie ma bloków `image` ani tabel porównawczych wag/formatów.
 
 - **Braki (co ma / czego nie ma)**:
+
   - **[ma]** dobre linki zewnętrzne, narzędzia wewnętrzne, checklisty, logiczną strukturę.
   - **[nie ma]** tagów, FAQ, porównań w formie tabeli/wykresu, przykładów kodu (np. dla Next.js).
 
 - **Ton i charakter**:
+
   - **[techniczno-edukacyjny]** tłumaczy prosto, ale merytorycznie.
   - **[narzędziowy]** prowadzi do konkretnych działań (PageSpeed, konwerter WebP).
 
@@ -316,10 +343,12 @@ Celem katalogu jest:
   - **`seo.description`**: konkretna, blisko „idealnej” długości pod SERP.
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
 - **CTA**:
+
   - **Występuje**.
   - **Spójność**: bardzo dobra (prowadzi do usług: tworzenie treści / kontakt).
 
 - **Plusy**:
+
   - **[największa kompletność]** to najbardziej „pełny” materiał w zbiorze: intencja, struktura, nagłówki, słowa kluczowe, linkowanie, E‑E‑A‑T, aktualizacje.
   - **[tagi + FAQ]** najlepszy zestaw SEO/long-tail wśród wpisów (łatwiej budować topical authority).
   - **[przykłady]** przykłady dla kilku branż budują „Experience” i ułatwiają zrozumienie.
@@ -327,15 +356,18 @@ Celem katalogu jest:
   - **[spójność z usługami]** końcówka prowadzi do konkretnych ofert i domyka ścieżkę użytkownika.
 
 - **Minusy / ryzyka**:
+
   - **[długość i „ciężar wejścia”]** przy długim materiale warto mieć krótkie TL;DR na początku.
   - **[brak wewnętrznego linkowania do innych wpisów]** materiał opisuje linkowanie, ale sam mógłby mocniej linkować do wpisów z tego katalogu (czas SEO, indeksacja, blog lokalny, optymalizacja zdjęć).
   - **[tematyka zbyt szeroka]** ryzyko, że część sekcji jest tylko „musnięta”; możliwy split na serię artykułów.
 
 - **Braki (co ma / czego nie ma)**:
+
   - **[ma]** tagi, FAQ, obrazy, szerokie pokrycie tematu, dużo przykładów, CTA.
   - **[nie ma]** tabel/checklist na początku, powiązań linkami do innych artykułów, bloków `table`/`code` (przydałyby się do mini-checklist i przykładów wdrożeń).
 
 - **Ton i charakter**:
+
   - **[mentorski i edukacyjny]** prowadzi czytelnika krok po kroku.
   - **[ekspercki]** mocno „procesowy” (jak Google ocenia treści, jak utrzymać pozycje).
   - **[praktyczny]** dużo zaleceń i gotowych struktur.
@@ -385,25 +417,30 @@ Celem katalogu jest:
     - w danych: `https://www.arteonagency.pl/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
     - wg routingu (primary category = `Design`): `/edukacja/design/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
 - **CTA**:
+
   - **Występuje**.
   - **Spójność**: bardzo dobra (identyfikacja + kontakt).
 
 - **Plusy**:
+
   - **[silny temat biznesowy]** „zaufanie” jest bezpośrednio powiązane z konwersją i decyzją zakupową.
   - **[tagi + FAQ]** dobry zestaw pod semantykę i long-tail.
   - **[obrazy]** wspierają UX i wiarygodność (pokazują przykłady w praktyce).
-  - **[linkowanie do usług]** w treści pojawiają się linki do ofert (identyfikacja / logo / projekt graficzny) – spójna ścieżka.
+  - **[linkowanie do usług]** w treści pojawiają się linki do ofert (identyfikacja / logo / projekt graficzny) - spójna ścieżka.
 
 - **Minusy / ryzyka**:
+
   - **[canonical vs primary category]** realne ryzyko konfliktu URL (redirecty, niespójne udostępnienia, rozmycie sygnałów).
   - **[mało źródeł zewnętrznych]** w porównaniu do artykułów „SEO” brak cytowań raportów/badań, które wzmocniłyby E‑E‑A‑T.
   - **[brak H3]** miejscami przydałaby się głębsza hierarchia (lepsza skanowalność i TOC).
 
 - **Braki (co ma / czego nie ma)**:
+
   - **[ma]** tagi, FAQ, obrazy, linki do usług, logiczne podsumowanie.
   - **[nie ma]** mocnych danych/źródeł, spójnego canonical z routingiem, pogłębienia nagłówków H3.
 
 - **Ton i charakter**:
+
   - **[doradczy i brandingowy]** skupia się na spójności i profesjonalizmie.
   - **[sprzedażowy]** w naturalny sposób domyka się ofertą.
 
@@ -446,10 +483,12 @@ Celem katalogu jest:
   - **`seo.description`**: spójny z tematem i obietnicą „kompletny przewodnik”.
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
 - **CTA**:
+
   - **Występuje**.
   - **Spójność**: bardzo dobra (audyt SEO jako „kolejny krok”).
 
 - **Plusy**:
+
   - **[najlepsza „narzędziowość”]** to najbardziej praktyczny wpis: pokazuje konkretne kroki, narzędzia i miejsca w GSC.
   - **[różnorodność bloków]** tabele i code bloki poprawiają skanowalność (i są rzadkie w pozostałych artykułach).
   - **[checklisty]** tabele typu „co sprawdzić / gdzie sprawdzić” są bardzo dobre pod featured snippet.
@@ -457,19 +496,22 @@ Celem katalogu jest:
   - **[spójne domknięcie]** CTA i link do audytu są naturalnym rozwinięciem problemu.
 
 - **Minusy / ryzyka**:
+
   - **[miejscami jakość redakcyjna]** drobne literówki i niekonsekwencje („nie widoczna” vs „niewidoczna”, „nie wiele”).
   - **[brak linków do powiązanych wpisów]** materiał naturalnie łączy się z:
     - czasem SEO,
     - pisaniem treści,
     - optymalizacją zdjęć (CWV),
-    ale nie linkuje do nich.
+      ale nie linkuje do nich.
   - **[meta title]** warto skrócić dla CTR (temat jest długi, ale powinien być „czytelny w SERP”).
 
 - **Braki (co ma / czego nie ma)**:
+
   - **[ma]** check-listy, code bloki, obrazy, FAQ, tagi, CTA.
   - **[nie ma]** krótkiego TL;DR na start, większej liczby linków wewnętrznych do powiązanych poradników, dopracowanego HTML (spójne `<br/>`).
 
 - **Ton i charakter**:
+
   - **[pomocowy i uspokajający]** „to częsty problem, większość błędów da się naprawić”.
   - **[diagnostyczny]** nastawiony na rozwiązywanie problemów krok po kroku.
   - **[konsultacyjny]** naturalnie prowadzi do audytu SEO jako następnego etapu.
@@ -489,32 +531,39 @@ Celem katalogu jest:
 ## Wspólne obserwacje i rekomendacje (dla całego bloga)
 
 - **[Tagi]**
+
   - Tylko część wpisów ma `tags[]`.
   - Rekomendacja: dodać tagi do wszystkich artykułów i ustandaryzować słownictwo (np. `Core Web Vitals` vs `CWV`, `local seo` vs `lokalne seo`).
 
 - **[FAQ]**
+
   - Tylko część wpisów ma `faq[]`.
   - Rekomendacja: w tematach SEO/marketing/UX dodawać min. 5-8 pytań, bo to zwykle zwiększa pokrycie long-tail.
 
 - **[Linkowanie wewnętrzne]**
+
   - Największy potencjał do poprawy: pierwsze wpisy (kolorystyka, czas SEO, blog lokalny) praktycznie nie tworzą sieci linków między artykułami.
   - Rekomendacja: budować klastry tematyczne i łączyć wpisy ze sobą:
     - `czas SEO` ↔ `indeksacja / brak widoczności` ↔ `pisanie treści` ↔ `blog lokalny` ↔ `CWV / optymalizacja zdjęć`.
 
 - **[Spójność canonical i routingu]**
+
   - Występuje realne ryzyko niespójności, gdy `seo.canonical` wskazuje inną kategorię niż primary category (pierwszy element `category[]`).
   - Rekomendacja: dla każdego wpisu dopilnować, aby canonical był równy:
     - `https://www.arteonagency.pl/edukacja/{slugify(category[0])}/{slug}`.
 
 - **[Jakość HTML w `richtext.html`]**
+
   - Łamania linii są ustandaryzowane do `<br/>`.
   - Rekomendacja: okresowo skanować treści pod kątem błędów HTML.
 
 - **[Standaryzacja meta]**
+
   - Część wpisów ma dopisek `| Arteon` w `seo.title`, część nie.
   - Rekomendacja: ujednolicić format meta title i pilnować długości (CTR + brak ucięcia w SERP).
 
 - **[Multimedia / struktury danych]**
+
   - W wielu wpisach dominuje sam `richtext`, mimo że projekt wspiera `image`, `table`, `code`.
   - Rekomendacja: świadomie dodawać:
     - tabele porównawcze (formaty, checklisty),

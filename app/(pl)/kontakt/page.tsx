@@ -4,23 +4,25 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
-
-const BASE_URL = 'https://www.arteonagency.pl';
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu | Arteon',
   description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
-  alternates: { canonical: 'https://www.arteonagency.pl/kontakt' },
+  alternates: { canonical: toAbsoluteUrl('/kontakt') },
   openGraph: {
     title: 'Kontakt - wycena Twojego planu | Arteon',
     description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
-    url: `${BASE_URL}/kontakt`,
+    url: toAbsoluteUrl('/kontakt'),
     siteName: 'Arteon',
     type: 'website',
     // TODO: Add unique OpenGraph image for contact page: /assets/og/kontakt.webp (1200x630px)
     images: [
       {
-        url: `${BASE_URL}/assets/bg/abstract-bg10.webp`,
+        url: toAbsoluteUrl('/assets/bg/abstract-bg10.webp'),
+        width: 1200,
+        height: 630,
+        alt: 'Kontakt - Arteon',
       },
     ],
   },
@@ -31,8 +33,8 @@ function ContactSchemas() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: `${BASE_URL}` },
-      { '@type': 'ListItem', position: 2, name: 'Kontakt', item: `${BASE_URL}/kontakt` },
+      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: toAbsoluteUrl('/') },
+      { '@type': 'ListItem', position: 2, name: 'Kontakt', item: toAbsoluteUrl('/kontakt') },
     ],
   };
 

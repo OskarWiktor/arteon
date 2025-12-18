@@ -1,14 +1,69 @@
 # DONE_TASKS
- 
+
 ## 2025-12-17
- 
+
+- ✅ **[11] Blog: "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?"**
+
+  - Plik: `data/pl/blog.json`
+  - **Zrobione 2025-12-17**:
+    - Dodano nowy artykuł (slug: `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`) wraz z pełnym `contentBlocks`, `seo`, `cta` i `faq`.
+    - Dodano linkowanie wewnętrzne do powiązanych treści oraz CTA do oferty (`/uslugi/marketing/audyt-seo`).
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — O nas (propozycje nowych podstron)**
+
+  - **Zrobione 2025-12-17**:
+    - Przegląd istniejących stron: `/o-nas`, `/o-nas/faq`, `/o-nas/dolacz-do-sieci`.
+    - Dodano propozycje rozbudowy sekcji „O nas” w `TASKS.md`: `IDEA-019`-`IDEA-024`.
+
+- ✅ **[20] Blog: "Jak dobrać domenę i adresy URL podstron, aby wzmocnić pozycję strony w wyszukiwarce?"**
+
+  - Pliki:
+    - `data/pl/blog.json`
+    - `components/sections/blog/ArticlesCarousel.tsx`
+    - `app/(pl)/mapa-strony/page.tsx`
+    - `utils/blogCategory.ts`
+    - `lib/blog.ts`
+    - `types/article.ts`
+    - `public/assets/blog/jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce/jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce.webp`
+  - **Zrobione 2025-12-17**:
+    - Dodano nowy artykuł (slug: `jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce`) wraz z pełnym `contentBlocks`, `seo`, `cta` i `faq`.
+    - Ujednolicono generowanie URL-i artykułów (primaryCategory → fallback) w linkach wewnętrznych (karuzela artykułów, `/mapa-strony`) do kanonicznego `/edukacja/{kategoria}/{slug}`.
+    - Dodano okładkę: `public/assets/blog/jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce/jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce.webp`.
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[32] Blog: "Bezpieczeństwo strony internetowej: zabezpieczenia, które powinny być wdrożone w 2026"**
+
+  - Plik: `data/pl/blog.json`
+  - **Zrobione 2025-12-17**:
+    - Dodano nowy artykuł (slug: `bezpieczenstwo-strony-internetowej-zabezpieczenia-2026`) wraz z pełnym `contentBlocks`, `seo`, `cta` i `faq` + linkowaniem wewnętrznym.
+    - Dodano okładkę: `public/assets/blog/bezpieczenstwo-strony-internetowej-zabezpieczenia-2026/bezpieczenstwo-strony-internetowej-zabezpieczenia-2026.webp`.
+    - Sprawdzone: `blog.json` (JSON OK).
+
+- ✅ **[IDEA-008] Tester kontrastu WCAG: obsługa HSL/alpha + propozycja koloru spełniającego AA/AAA**
+
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
+    - `components/sections/tools/WcagContrastChecker.tsx`
+    - `lib/tools/color/types.ts`
+    - `lib/tools/color/convert.ts`
+    - `lib/tools/color/contrast.ts`
+    - `HOOKS_CATALOG.md`
+    - `TOOLS_CATALOG.md`
+  - **Zrobione 2025-12-17**:
+    - Dodano obsługę `hsl()/hsla()` oraz uwzględniono alpha przez kompozycję w obliczeniach kontrastu.
+    - UI: bezpieczny color picker dla nie-HEX + selektor progu WCAG + akcja `Dopasuj` (podgląd, `Ustaw`, kopiowanie).
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
 - 🟡 **[AUDIT-003] Repo: audyt cleanup (puste pliki, martwe exporty, nieużywany kod/warianty)**
+
   - **Zrobione 2025-12-17**:
     - Skan `git ls-files` pod kątem pustych plików (0B): brak.
     - Wykryto pliki śledzone w git, ale usunięte lokalnie (pozostałość po spłaszczeniu `PaletteExtractor/*`).
     - Follow-up zadania: `CLEANUP-011`.
 
 - ✅ **[IDEA-006] Generator favicon: pełny pakiet (16/32 + apple/android) + paczka ZIP**
+
   - Pliki:
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
     - `components/sections/tools/FaviconGenerator.tsx`
@@ -22,6 +77,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[IDEA-004] Konwerter JPG/PNG na WebP: pobieranie paczki ZIP + eksport raportu oszczędności**
+
   - Pliki:
     - `components/sections/tools/JpgPngToWebp.tsx`
     - `components/sections/tools/JpgPngToWebp/useWebpDownloads.ts`
@@ -42,8 +98,9 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 ## 2025-12-16
- 
+
 - ✅ **[TOOLS-014] Palette Extractor: rekomendacje zmian tekstów/funkcji + ujednolicenie z innymi narzędziami**
+
   - Pliki:
     - `components/sections/tools/PaletteExtractor.tsx`
     - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
@@ -56,6 +113,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[CLEANUP-010] Tooltip: zastąpić lokalny timer przez `useTimeout`**
+
   - Pliki:
     - `components/sections/Tooltip.tsx`
     - `hooks/useTimeout.ts`
@@ -65,12 +123,14 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły”**
+
   - **Zrobione 2025-12-16**:
-    - Dodano 10 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-001`–`IDEA-010`.
+    - Dodano 10 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-001`-`IDEA-010`.
   - **Zrobione 2025-12-16**:
-    - Dodano 8 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-011`–`IDEA-018`.
+    - Dodano 8 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-011`-`IDEA-018`.
 
 - ✅ **[TOOLS-016] Narzędzia: ujednolicić upload/drag&drop (ToolFileDropzone)**
+
   - Pliki:
     - `components/sections/tools/ImageResizeTool.tsx`
     - `components/sections/tools/JpgPngToWebp.tsx`
@@ -84,6 +144,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[PROJECT-005] Realizacje: dopiąć `cta` (brakujące) + naprawić niespójne CTA**
+
   - Plik: `data/pl/projects.json`
   - **Zrobione 2025-12-16**:
     - Dodano brakujące `cta` dla slugów: `strona-dla-psychologa-msc-psychotherapy`, `katalog-produktow-restoquality`, `wizytowka-dla-spa-talia`, `blog-sportowy-pilka-nozna-pl`, `sklep-dla-firmy-odziezowej-trilllizo`, `meridol-accessibility`, `wizytowki-dla-gastronomii-restoquality`, `elmex-accessibility`, `sanex-accessibility`, `sanex`, `palmolive`, `colgate`, `detergent-regulations`.
@@ -92,6 +153,7 @@
     - Weryfikacja: `projects.json` parsuje się poprawnie (JSON OK).
 
 - ✅ **[CLEANUP-009] Tools: wynieść wyliczanie `inputFormat` (ext/MIME) do shared util**
+
   - Pliki:
     - `lib/tools/fileFormat.ts`
     - `components/sections/tools/PaletteExtractor.tsx`
@@ -102,6 +164,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[PROJECT-006] Realizacje: higiena treści**
+
   - Plik: `data/pl/projects.json`
   - **Zrobione 2025-12-16**:
     - `blog-sportowy-pilka-nozna-pl` (linia 756): `PilkaNożna.pl` → `PiłkaNożna.pl`
@@ -138,15 +201,18 @@
 ## 2025-12-15
 
 - 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty)**
+
   - **Zrobione 2025-12-15**:
     - Skan duplikacji: narzędzia (`components/sections/tools/*`), dropzone (`hooks/useFileDropzone.ts`, `components/ui/tools/ToolFileDropzone.tsx`), timery/copy (`hooks/useTimeout.ts`, `hooks/useCopyToClipboard.ts`).
     - Follow-up zadania: `TOOLS-016`, `CLEANUP-009`, `CLEANUP-010`.
 
 - 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły”**
+
   - **Zrobione 2025-12-15**:
-    - Dodano 10 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-001`–`IDEA-010`.
+    - Dodano 10 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-001`-`IDEA-010`.
 
 - ✅ **[SEO-015] O nas: dodać podstronę FAQ (`/o-nas/faq`) i rozbudować treść pod SEO**
+
   - Pliki:
     - `app/(pl)/o-nas/faq/page.tsx`
     - `app/(pl)/mapa-strony/page.tsx`
@@ -159,6 +225,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[PAGES-002] /o-nas: przebudowa copy + sekcje proof (realizacje i opinie)**
+
   - Plik:
     - `app/(pl)/o-nas/page.tsx`
   - **Zrobione 2025-12-15**:
@@ -169,12 +236,14 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - 🟡 **[AUDIT-004] Repo: audyt SEO sanity-check (canonical/OG/schema/robots/sitemap)**
+
   - **Zrobione 2025-12-15**:
     - Sprawdzono canonical (absolute), OpenGraph (URL absolute) i Schema.org (URL absolute) na kluczowych stronach.
-    - Zweryfikowano `public/robots.txt` oraz sitemap index (`public/sitemap.xml` → `public/sitemap-0.xml`) – bez regresji.
+    - Zweryfikowano `public/robots.txt` oraz sitemap index (`public/sitemap.xml` → `public/sitemap-0.xml`) - bez regresji.
     - Follow-up zadania: `SEO-013`, `SEO-016`, `SEO-017`.
 
 - ✅ **[CLEANUP-008] Karuzele: `CarouselCard` ma re-use `ProjectCard` i `TestimonialCard`**
+
   - Pliki:
     - `components/ui/carousel/CarouselCard.tsx`
     - `components/ui/ProjectCard.tsx`
@@ -183,16 +252,18 @@
     - `components/sections/TestimonialsCarousel.tsx`
   - **Zrobione 2025-12-15**:
     - Potwierdzono, że `CarouselCard` renderuje `ProjectCard` dla wariantu `project` (`size="small"`) oraz `TestimonialCard` dla wariantu `testimonial`.
-    - Nie było potrzeby zmian w kodzie – integracja była już zaimplementowana.
+    - Nie było potrzeby zmian w kodzie - integracja była już zaimplementowana.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[COPY-042] CookieConsent: usunąć zbędną spację w wyróżnieniu „Google Analytics 4”**
+
   - Plik: `components/shared/CookieConsent.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono: `<strong> Google Analytics 4</strong>` → `<strong>Google Analytics 4</strong>`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-041] Cookies: ujednolicić nazewnictwo na „pliki cookie” w UI**
+
   - Pliki:
     - `components/shared/Footer.tsx`
     - `components/shared/CookieConsent.tsx`
@@ -202,18 +273,21 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-040] /narzedzia (hub): poprawić literówkę w opisie (metadata/OG)**
+
   - Plik: `app/(pl)/narzedzia/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono: `ulepszą swoją identyfikację` → `ulepsz swoją identyfikację` w metadata i OpenGraph.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-039] Meta length tool (strona): poprawić odmianę „długości” w tytule i breadcrumbs**
+
   - Plik: `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
   - **Zrobione 2025-12-15**:
     - Ujednolicono zapis: `Licznik długość ...` → `Licznik długości ...` (hero + breadcrumbs).
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-038] PaletteExtractor (strona): poprawić „Cię” oraz spójność liczby w opisach**
+
   - Plik: `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono CTA: `wyróżni Cie` → `wyróżni Cię`.
@@ -221,12 +295,14 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-037] ColorPaletteGenerator: poprawić cudzysłów w opisie palety**
+
   - Plik: `components/sections/tools/ColorPaletteGenerator.tsx`
   - **Zrobione 2025-12-15**:
     - Naprawiono mieszanie cudzysłowów w opisie palety pastelowej: `„kremowe"` → `„kremowe”`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-036] ServicesSteps: poprawić literówki i interpunkcję w opisach usług**
+
   - Plik: `components/sections/steps/ServicesSteps.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono: `nie zależnie` → `niezależnie`, usunięto zbędny przecinek po `czemu` oraz `jak i` → `i` w `ui.pl.description`.
@@ -234,6 +310,7 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[TOOLS-010] EmailSignatureGenerator: refactor (HTML/sanitizacja/kopiowanie)**
+
   - Pliki:
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `components/sections/tools/EmailSignatureGenerator/types.ts`
@@ -249,6 +326,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[TOOLS-009] ImageResizeTool: refactor (crop math / pointer events / eksport)**
+
   - Pliki:
     - `components/sections/tools/ImageResizeTool.tsx`
     - `components/sections/tools/ImageResizeTool/types.ts`
@@ -263,6 +341,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[TOOLS-008] JpgPngToWebp: rozdzielenie na hooki (queue/konwersja/download/raport)**
+
   - Pliki:
     - `components/sections/tools/JpgPngToWebp.tsx`
     - `components/sections/tools/JpgPngToWebp/useWebpQueue.ts`
@@ -276,6 +355,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[SECURITY-001] Linki z `target="_blank"`: dopiąć `rel="noopener noreferrer"`**
+
   - Pliki:
     - `components/shared/Navigation.tsx`
     - `components/shared/Footer.tsx`
@@ -291,6 +371,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[SEO-014] Schema.org: usunięcie `SearchAction` (brak wyszukiwarki)**
+
   - Plik:
     - `app/layout.tsx`
   - **Zrobione 2025-12-15**:
@@ -298,16 +379,18 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[STYLES-003] UI: ujednolicić kolory ikon i buttona akcentowego**
+
   - Pliki:
     - `app/(pl)/uslugi/**/page.tsx`
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `components/ui/buttons/Button.tsx`
   - **Zrobione 2025-12-15**:
-    - Ujednolicono kolor ikon do `text-slate-500` (tylko elementy ikon).
+    - Ujednolicono kolor ikon do `text-slate-700` (tylko elementy ikon).
     - Ustawiono główny button z akcentem na `text-slate-600`.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[STYLES-002] Kolory: tokenizacja i usunięcie raw hexów**
+
   - Pliki:
     - `components/shared/CookieConsent.tsx`
     - `components/shared/SkipToContent.tsx`
@@ -326,6 +409,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[TOOLS-015] Narzędzia: mobile support (allowlist) + selektywna blokada**
+
   - Pliki:
     - `app/(pl)/narzedzia/(tools)/layout.tsx`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/layout.tsx`
@@ -337,6 +421,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[CLEANUP-007] OfferDesign: ujednolicić nazwy komponentów stron na angielskie**
+
   - Pliki:
     - `app/(pl)/uslugi/projekty-graficzne/projekt-cennika/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej/page.tsx`
@@ -354,12 +439,14 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[CLEANUP-005] Blog: naprawić błędne tagi `<p>` w intro artykułu (blog.json)**
+
   - Plik: `data/pl/blog.json`
   - **Zrobione 2025-12-15**:
     - Naprawiono błędną strukturę HTML w intro artykułu: `treści.<p><p>Na szczęście` → `treści.</p><p>Na szczęście`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (content-only).
 
 - ✅ **[CLEANUP-006] Nazwy komponentów stron: usunąć placeholder `Xxx`**
+
   - Pliki:
     - `app/(pl)/uslugi/projekty-graficzne/projekt-graficzny-strony/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej/page.tsx`
@@ -370,6 +457,7 @@
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - 🟡 **[AUDIT-001] Repo: codzienny audyt jakości + SEO + wydajności (raport dzienny)**
+
   - **Zrobione 2025-12-15**:
     - Audyt dokumentacji: uporządkowano `TASKS.md` (aktualizacja daty weryfikacji, doprecyzowanie DoD dla COPY/content-only).
     - Zidentyfikowano braki SEO i dopisano zadania: `SEO-013` (dedykowane OG dla głównych stron) oraz `SEO-014` (rozliczenie `SearchAction`).
@@ -378,11 +466,13 @@
     - Bez zmian w produkcyjnym kodzie w ramach audytu (tylko tracking / dokumentacja).
 
 - ✅ **[TOOLS-011] Narzędzia: `lint` + `typecheck` (build)**
+
   - **Zrobione 2025-12-15**:
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
     - Zaktualizowano tracking: przeniesiono wpis TOOLS-011 z `TASKS.md` do `DONE_TASKS.md`.
 
 - ✅ **[COPY-002] Strona główna: poprawić „Niezależnie” i interpunkcję w opisie sekcji**
+
   - Plik: `app/(pl)/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono ortografię i interpunkcję w opisie sekcji (m.in. `Niezależnie`, `dzięki czemu, pracując z nami, masz`, `sposób, aby`, `m.in. RODO`, `martwić, jeśli`).
@@ -390,36 +480,42 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-014] Kontakt: dodać przecinek w zdaniu „Napisz, co…” (metadata + OpenGraph)**
+
   - Plik: `app/(pl)/kontakt/page.tsx`
   - **Zrobione 2025-12-15**:
     - Dodano przecinek w `metadata.description` i `openGraph.description`: `Napisz, co chcesz stworzyć`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-015] Edukacja: domknąć zdanie w opisach (metadata + OpenGraph + schema)**
+
   - Plik: `app/(pl)/edukacja/page.tsx`
   - **Zrobione 2025-12-15**:
     - Domknięto zdanie w opisach (metadata/OG/schema): `Odwiedź nas i sprawdź nasze poradniki.`
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-016] Tworzenie treści: poprawić odmianę „budujące” w siatce benefitów**
+
   - Plik: `app/(pl)/uslugi/tworzenie-tresci/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono odmianę: `Treści budujący` → `Treści budujące`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-017] Karta lojalnościowa: poprawić literówki, odmianę i interpunkcję w opisach**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono literówki/odmianę/interpunkcję w opisach i FAQ (m.in. `Twoich`, `dzięki temu mam`, `branż, w których`, `Twoją identyfikacją wizualną`, `indywidualnie ustalone rundy korekt`, `(85 × 55 mm)`).
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-018] Katalog: poprawić literówki, odmianę i interpunkcję w opisach CTA/sekcji**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-katalogu/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono interpunkcję i odmianę w opisie formularza, sekcji „Zobacz też” oraz CTA (m.in. `klienci`, `sprzedaż`).
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-019] Menu restauracji: poprawić literówki i interpunkcję w sekcji kontaktowej i „Zobacz też”**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-menu-restauracji/page.tsx`
   - **Zrobione 2025-12-15**:
     - Dodano przecinek w opisie formularza: `Opisz, jakie…`.
@@ -427,18 +523,21 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-020] Audyt SEO: dodać brakujące przecinki i poprawić literówki (metadata + treści)**
+
   - Plik: `app/(pl)/uslugi/marketing/audyt-seo/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono interpunkcję i literówki w `metadata` oraz treściach (m.in. `sprawi, że`, `sprawdź, co…`, `tak, aby…`, `przygotowujemy`, `w audycie`).
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-021] Licznik długości meta: poprawić interpunkcję i „Cię” w CTA bannerze**
+
   - Plik: `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono CTA: `..., a my powiemy, co zrobić, aby…` oraz `Cie` → `Cię`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-022] Projekty graficzne: dodać przecinki po „Opisz” i przed „aby” w opisach formularza**
+
   - Pliki:
     - `app/(pl)/uslugi/projekty-graficzne/projekt-graficzny-strony/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-ulotki/page.tsx`
@@ -449,54 +548,63 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-023] Marketing: poprawić „Cię”, odmianę i przecinki w opisach oferty**
+
   - Plik: `app/(pl)/uslugi/marketing/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono: `Cię`, `konsultacje online`, `audyt SEO, a następnie` oraz `tak, aby Google`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-024] Pozycjonowanie stron: poprawić „strategii”, „Cię” i przecinki w opisach**
+
   - Plik: `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono: `strategii`, `tam, gdzie`, `szukają Cię`, `audyt SEO, a następnie` oraz `tak, aby Google`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-025] Usługi: dodać przecinki w zdaniach „tak, aby” i „..., a następnie ...”**
+
   - Plik: `app/(pl)/uslugi/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono interpunkcję: `tak, aby`, `audyt SEO, a następnie` oraz `tak, aby Google`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-026] Blogi internetowe: poprawić przecinki w odpowiedzi FAQ**
+
   - Plik: `app/(pl)/uslugi/blogi-internetowe/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono interpunkcję w odpowiedzi FAQ: `pomagamy w` oraz `tak, aby`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-027] Projekt graficzny strony: poprawić literówki i odmianę w FAQ/CTA**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-graficzny-strony/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono literówki i odmianę w FAQ/CTA (m.in. `koszty`, `od razu`, `pojedyncze`, `edycję`, `potencjalnych`, `Cię`).
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-028] Identyfikacja wizualna: poprawić literówki, odmianę i interpunkcję w FAQ/sekcji**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono literówki/odmianę/interpunkcję w FAQ/sekcji (m.in. `identyfikacji`, `każdy element`, `omawiamy, dając`, `źródłowe`, `od razu`, `miejscach`, `potencjalnych`).
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-029] Teczka ofertowa: poprawić „tak, aby” oraz literówki w opisach**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-teczki-ofertowej/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono: `tak, aby`, `w jego pamięci` oraz `korzyściami`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-030] Cennik: dodać przecinek w zdaniu „tak, aby” w opisie sekcji**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-cennika/page.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono interpunkcję: `tak, aby` w opisie sekcji.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-031] FeesSteps: poprawić literówki i interpunkcję w sekcji „Płatności i bezpieczeństwo”**
+
   - Plik: `components/sections/steps/FeesSteps.tsx`
   - **Zrobione 2025-12-15**:
     - Poprawiono zapis kwot: `Do 5 000 zł`, `Do 10 000 zł`, `Powyżej 10 000 zł`.
@@ -504,18 +612,21 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-032] Blog: poprawić interpunkcję w opisie CTA (blog.json)**
+
   - Plik: `data/pl/blog.json`
   - **Zrobione 2025-12-15**:
     - Poprawiono interpunkcję w `cta.description`: `..., a my ...` oraz `Twoja firma zyska ...`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-033] Blog: dodać przecinki w intro artykułu (blog.json)**
+
   - Plik: `data/pl/blog.json`
   - **Zrobione 2025-12-15**:
     - Poprawiono intro artykułu: `opowiemy, co zrobić, aby...`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-034] O nas: poprawić interpunkcję w opisach sekcji**
+
   - Plik: `app/(pl)/o-nas/page.tsx`
   - **Zrobione 2025-12-15**:
     - Usunięto zbędne przecinki w opisach oraz ujednolicono zapis (m.in. `usług powinna`, `Po wdrożeniu dwa miesiące...`).
@@ -523,6 +634,7 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-001] Polityka prywatności: ujednolicić zapis „pliki cookie”**
+
   - Plik: `app/(pl)/polityka-prywatnosci/page.tsx`
   - **Zrobione 2025-12-15**:
     - Ujednolicono zapis na `pliki cookie` oraz poprawiono odmiany (`plikami cookie`, `plików cookie`).
@@ -530,6 +642,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[CLEANUP-004] Blog: ustandaryzować łamania linii w treściach artykułów**
+
   - Plik: `data/pl/blog.json`
   - **Zrobione 2025-12-15**:
     - Ustandaryzowano łamania linii do `<br/>` w `contentBlocks[].html`.
@@ -538,6 +651,7 @@
     - Sprawdzone: `npm run build` (OK).
 
 - ✅ **[TOOLS-012] Palette Extractor (z obrazu/logo)**: nowy tool + shared color pipeline
+
   - **Zrobione 2025-12-15**:
     - Dodano stronę narzędzia `/narzedzia/generator-palety-kolorow-z-obrazu` (`app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`) + schema `WebApplication` i canonical absolute.
     - Dodano komponent `PaletteExtractor` (upload PNG/JPG/SVG, ekstrakcja dominujących kolorów, kopiowanie HEX, clear + cleanup ObjectURL).
@@ -547,6 +661,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[SEO-012] Narzędzie `palette-extractor`: refaktor SEO (URL/tytuł/copy/OG/redirect)**
+
   - **Zrobione 2025-12-15**:
     - Zmieniono URL narzędzia na `/narzedzia/generator-palety-kolorow-z-obrazu`.
     - Zaktualizowano `metadata` (title/description/canonical), `openGraph` (url + image) oraz schema `WebApplication` (URL absolute).
@@ -556,6 +671,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[TOOLS-007] FaviconGenerator**: rozdzielić pipeline PNG/ICO + zarządzanie outputami; reuse shared (download/objectURL)
+
   - **Zrobione 2025-12-15**:
     - Wydzielono pipeline generowania favicon do `lib/tools/favicon/generator.ts` (PNG sizes + opcjonalnie `favicon.ico`).
     - `FaviconGenerator` korzysta z nowego utila (UI/UX bez zmian).
@@ -564,6 +680,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[UI-001] `.surface-*`: dokończyć migrację kart/paneli**
+
   - **Zrobione 2025-12-15**:
     - Dodano utilities w `app/globals.css`: `.surface-card-lift`, `.surface-card-soft`.
     - Przepięto powtarzające się style (bez zmian UI/UX):
@@ -576,6 +693,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[STYLES-001] Typografia: dopiąć globals-first**
+
   - **Zrobione 2025-12-15**:
     - Usunięto komponenty `Text` i `Heading` oraz zastąpiono ich użycia semantycznymi tagami (`h1`-`h6`, `p`, `span`) + klasami typografii (`.h*`, `.p`, `text-sm`, `text-xs`, `.text-light/.text-mid/.text-dark/.text-white`) z `globals.css`.
     - Zaktualizowano `COMPONENTS_CATALOG.md` (usunięto wpisy o `Text` i `Heading`).
@@ -591,6 +709,7 @@
 ## 2025-12-14
 
 - 🟡 **[AUDIT-001] Repo: codzienny audyt jakości + SEO + wydajności (raport dzienny)**
+
   - **Zrobione 2025-12-14**:
     - Checki: `npm run lint`, `npm run build` (OK).
     - Naprawiono `/mapa-strony`: linki do artykułów edukacji uwzględniają kategorię (`/edukacja/[category]/[slug]`).
@@ -599,6 +718,7 @@
     - Skan perf/cleanup (timery/obserwery/ObjectURL): bez wykrytych problemów.
 
 - ✅ **[COPY-012] Projekty graficzne: poprawić „rozważyć” w opisach sekcji „Zobacz też”**
+
   - Pliki:
     - `app/(pl)/uslugi/projekty-graficzne/projekt-logo/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/szablony-postow-social-media/page.tsx`
@@ -607,6 +727,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[COPY-005] Marketing: poprawić „miesiąc” w opisach pozycjonowania**
+
   - Pliki:
     - `app/(pl)/uslugi/marketing/page.tsx`
     - `app/(pl)/uslugi/page.tsx`
@@ -616,6 +737,7 @@
     - Poprawiono zapis: `ulotki,papier` → `ulotki, papier` (linia 277).
 
 - ✅ **[COPY-004] Sklepy internetowe: poprawić literówki i składnię w FAQ**
+
   - Plik: `app/(pl)/uslugi/sklepy-internetowe/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono składnię: `zależy między innymi od`.
@@ -667,6 +789,7 @@
     - Naprawiono błąd ESLint blokujący build w `components/ui/TableBlock.tsx`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 - ✅ **[COPY-008] Marketing: poprawić literówki i interpunkcję w sekcji korzyści**
+
   - Plik: `app/(pl)/uslugi/marketing/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono literówki i interpunkcję w sekcji korzyści na `/uslugi/marketing`.
@@ -674,12 +797,14 @@
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[TOOLS-006] WcagContrastChecker**: wynieść parsing/kontrast do utils; ujednolicić z color utils tam gdzie ma to sens (bez utraty formatów)
+
   - **Zrobione 2025-12-14**:
     - Wydzielono logikę kontrastu do `lib/tools/color/contrast.ts` (parseColor + luminance + contrast ratio).
     - `WcagContrastChecker` korzysta z nowych utili (UI/UX bez zmian).
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[SEO-010] Schema: deduplikacja `ProfessionalService`**
+
   - Usunąć duplikację `ProfessionalService` pomiędzy `/kontakt` i globalnym footerem.
   - **Zrobione 2025-12-14**:
     - Usunięto zdublowany JSON-LD `ProfessionalService` z `app/(pl)/kontakt/page.tsx`.
@@ -793,16 +918,19 @@
   - Usunąć duplikaty `BreadcrumbList` na `/edukacja/[category]/[slug]` i `/realizacje/[slug]` (zostawić jedno źródło).
   - **Zrobione 2025-12-14**:
 - ✅ **[CLEANUP-001] `tool-pill*`: weryfikacja i ewentualne usunięcie martwego CSS**
+
   - **Zrobione 2025-12-14**:
     - Potwierdzono brak użyć `tool-pill*` w repo (w tym HTML/MD).
     - Usunięto `.tool-pill`, `.tool-pill-inactive`, `.tool-pill-active` z `app/globals.css`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[TOOLS-002] CORE**: audyt kodu narzędzi + sprawdzenie `HOOKS_CATALOG.md`/`COMPONENTS_CATALOG.md` pod kątem reuse
+
   - **Zrobione 2025-12-14**:
     - Zidentyfikowano powtarzalne prymitywy w narzędziach (download, ObjectURL lifecycle, `loadImage`, `canvas.toBlob`, `formatBytes`, FileReader/clipboard) jako baza do TOOLS-003.
 
 - ✅ **[TOOLS-003] SHARED**: wspólne prymitywy (download, ObjectURL lifecycle, `loadImage` + `canvasToBlob`) i przepięcie min. 2 narzędzi
+
   - **Zrobione 2025-12-14**:
     - Dodano shared utilsy:
       - `lib/tools/formatBytes.ts`

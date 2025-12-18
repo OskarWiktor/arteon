@@ -123,22 +123,22 @@ export default function OfferOptimizationSEO() {
             {
               title: 'Szybkość ładowania',
               description: <>Skracamy czas wczytywania strony, optymalizujemy grafiki i kod strony. Efekt: strona działa szybciej, a użytkownicy rzadziej rezygnują z przeglądania.</>,
-              icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiSearchLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Tytuły i opisy widoczne w Google',
               description: <>Poprawiamy tytuły i opisy, by lepiej pasowały do zapytań użytkowników. Efekt: więcej trafnych zapytań i więcej wejść z wyników wyszukiwania.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Struktura treści i nawigacja',
               description: <>Porządkujemy nagłówki i menu, dodajemy logiczne połączenia między podstronami. Efekt: łatwiejsza nawigacja i lepsze rozumienie strony przez Google.</>,
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dodatkowe dane dla Google',
               description: <>Wprowadzamy dodatkowe informacje (np. sekcje pytań i odpowiedzi), które pomagają Google lepiej zrozumieć zawartość i to co dokładnie oferujesz.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -324,7 +324,7 @@ export default function OfferOptimizationSEO() {
               question: 'Czy mogę zrobić optymalizację bez audytu?',
               answer: (
                 <p>
-                  Teoretycznie tak, ale nie polecamy takiego rozwiązania.{" "}
+                  Teoretycznie tak, ale nie polecamy takiego rozwiązania.{' '}
                   <a href="/uslugi/marketing/audyt-seo" className="inline-link">
                     Audyt SEO
                   </a>{' '}
@@ -379,5 +379,3 @@ export default function OfferOptimizationSEO() {
     </>
   );
 }
-
-

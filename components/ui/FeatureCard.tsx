@@ -22,17 +22,17 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
     <section
       aria-labelledby={headingId}
       aria-describedby={descId}
-      className="flex h-full flex-col surface-card-soft px-5 py-3 md:px-6 md:py-4"
+      className="surface-card-soft flex h-full flex-col px-5 py-3 md:px-6 md:py-4"
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
       <IconText icon={displayIcon} iconClassName="inline-flex items-center justify-center">
-        <h3 id={headingId} className="h6 font-semibold text-dark" itemProp="name">
+        <h3 id={headingId} className="h6 text-dark font-semibold" itemProp="name">
           {title}
         </h3>
       </IconText>
 
       {description && (
-        <div id={descId} className="mt-1 text-sm text-light leading-6" itemProp="description">
+        <div id={descId} className="text-light mt-1 text-sm leading-6" itemProp="description">
           {description}
         </div>
       )}
@@ -41,7 +41,7 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
         <ul className="mt-2 space-y-2" role="list">
           {points.map((pt, i) => (
             <li key={i} className="flex items-start gap-1">
-              <span className="text-base text-light">{pt}</span>
+              <span className="text-light text-base">{pt}</span>
             </li>
           ))}
         </ul>

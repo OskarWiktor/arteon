@@ -42,11 +42,7 @@ export type ConvertImageFileToWebpSmartResult = {
   usedQuality: number;
 };
 
-export async function convertImageFileToWebpSmart(
-  file: File,
-  originalSize: number,
-  options: ConvertImageFileToWebpSmartOptions,
-): Promise<ConvertImageFileToWebpSmartResult> {
+export async function convertImageFileToWebpSmart(file: File, originalSize: number, options: ConvertImageFileToWebpSmartOptions): Promise<ConvertImageFileToWebpSmartResult> {
   const minQuality = options.minQuality ?? 60;
   const step = options.step ?? 5;
 

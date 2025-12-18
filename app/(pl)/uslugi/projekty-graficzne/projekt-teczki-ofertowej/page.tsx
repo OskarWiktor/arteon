@@ -131,27 +131,27 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Prestiż na każdym spotkaniu',
               description: <>Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie materiałów robi dobre wrażenie.</>,
-              icon: <RiFolderOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFolderOpenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale nawiązują do Twojej identyfikacji wizualnej, aby wszystkie materiały mówiły jednym językiem.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Przemyślane rozwiązania konstrukcyjne',
               description: <>Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka była trwała, wygodna i funkcjonalna w codziennym użyciu.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz od razu przekazać je do produkcji.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />
@@ -355,5 +355,3 @@ export default function OfferDesignPresentationFolderPage() {
     </>
   );
 }
-
-

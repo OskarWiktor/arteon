@@ -279,7 +279,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
-### `/narzedzia/generator-palety-kolorow-z-obrazu` — Paleta kolorów z obrazu / logo
+### `/narzedzia/generator-palety-kolorow-z-obrazu` — Paleta kolorów z obrazu
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
 - **[Cel / content]** Ekstrakcja dominujących kolorów z obrazu/logo (client-side) i kopiowanie palety jako HEX.

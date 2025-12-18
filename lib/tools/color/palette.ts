@@ -6,16 +6,7 @@ export type PaletteColor = {
   hsl: HSL;
 };
 
-export type PaletteGroupId =
-  | 'monochromatic'
-  | 'analogous'
-  | 'complementary'
-  | 'triadic'
-  | 'split-complementary'
-  | 'soft-pastel'
-  | 'deep-dark'
-  | 'material-tonal'
-  | 'apple-minimal';
+export type PaletteGroupId = 'monochromatic' | 'analogous' | 'complementary' | 'triadic' | 'split-complementary' | 'soft-pastel' | 'deep-dark' | 'material-tonal' | 'apple-minimal';
 
 export type PaletteGroup = {
   id: PaletteGroupId;
@@ -133,13 +124,7 @@ export function createPaletteFromHex(baseHex: string): PaletteGroup[] {
 
   const apple: PaletteGroup = {
     id: 'apple-minimal',
-    colors: [
-      mkColor(baseHsl.h, Math.max(baseHsl.s, 60), clamp(baseHsl.l, 45, 60)),
-      mkColor(baseHsl.h, 6, 98),
-      mkColor(baseHsl.h, 6, 94),
-      mkColor(baseHsl.h, 6, 88),
-      mkColor(baseHsl.h, 6, 30),
-    ],
+    colors: [mkColor(baseHsl.h, Math.max(baseHsl.s, 60), clamp(baseHsl.l, 45, 60)), mkColor(baseHsl.h, 6, 98), mkColor(baseHsl.h, 6, 94), mkColor(baseHsl.h, 6, 88), mkColor(baseHsl.h, 6, 30)],
   };
 
   return [mono, triadic, split, pastel, deep, material, apple, analogous, complementary];

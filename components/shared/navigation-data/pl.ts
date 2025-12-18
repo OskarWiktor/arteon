@@ -201,15 +201,7 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
 
 export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory';
 
-export type ToolItemKey =
-  | 'jpgToWebp'
-  | 'imageResize'
-  | 'favicon'
-  | 'metaCounter'
-  | 'emailSignature'
-  | 'contrastChecker'
-  | 'paletteExtractor'
-  | 'colorPalette';
+export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette';
 
 export type ToolSectionItem = {
   key: ToolItemKey;
@@ -230,7 +222,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
     title: 'Obrazy i favicony',
     items: [
       { key: 'jpgToWebp', href: '/narzedzia/jpg-png-na-webp-bez-limitu', title: 'Konwerter JPG/PNG na WebP', icon: RiImageEditLine },
-      { key: 'imageResize', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', title: 'Kadrowanie i zmiana rozmiaru', icon: RiCropLine },
+      { key: 'imageResize', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', title: 'Kadrowanie i zmiana rozmiaru obrazu', icon: RiCropLine },
       { key: 'favicon', href: '/narzedzia/darmowy-generator-favicon-ico', title: 'Generator favicon', icon: RiAppsLine },
     ],
   },
@@ -249,8 +241,8 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
     title: 'Kolory i dostępność',
     items: [
       { key: 'contrastChecker', href: '/narzedzia/tester-kontrastu-kolorow-wcag', title: 'Tester kontrastu kolorów WCAG', icon: RiContrast2Line },
-      { key: 'paletteExtractor', href: '/narzedzia/generator-palety-kolorow-z-obrazu', title: 'Paleta kolorów z obrazu / logo', icon: RiPantoneLine },
-      { key: 'colorPalette', href: '/narzedzia/generator-palet-kolorow-online', title: 'Generator palet kolorów', icon: RiPaletteLine },
+      { key: 'paletteExtractor', href: '/narzedzia/generator-palety-kolorow-z-obrazu', title: 'Generator palety kolorów z obrazu', icon: RiPantoneLine },
+      { key: 'colorPalette', href: '/narzedzia/generator-palet-kolorow-online', title: 'Generator palety kolorów z jednego koloru', icon: RiPaletteLine },
     ],
   },
 ];

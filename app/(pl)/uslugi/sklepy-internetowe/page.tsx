@@ -181,62 +181,62 @@ export default function OfferWebPage() {
             {
               title: 'Indywidualny projekt graficzny sklepu',
               description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Twój sklep</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Redakcję treści sprzedażowych dla lepszej pozycji w Google',
               description: <>Opisy, które jasno mówią o korzyściach i prowadzą do zakupu</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dobór i obróbka zdjęć produktów',
               description: <>Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do sklepu: kadry, tło, rozmiary, waga.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Wsparcie prawne przy politykach i regulaminach',
               description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
-              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+              icon: <GoLaw className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Sklep online dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Szybkość i stabilność',
               description: <>Sklep online który działa szybko, bez awarii</>,
-              icon: <RiSpeedLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiSpeedLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Termin i plan z kamieniami milowymi',
               description: <>Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie gotowe i kiedy</>,
-              icon: <RiCalendarCheckLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiCalendarCheckLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: <>Informujemy Cię regularnie o postępach naszych prac nad Twoim sklepem</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi sklepu',
               description: <>Proste instrukcje, stworzone tak, abyś samodzielnie mógł dodać produkty, ceny i promocje</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: <>Po publikacji pomagamy w dalszym rozwoju i skalowaniu sklepu internetowego. Ewentualne błędy poprawiamy w ramach gwarancji</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-700" />,
             },
           ]}
         />

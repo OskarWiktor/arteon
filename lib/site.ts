@@ -48,4 +48,3 @@ export function getActiveSiteKey(host?: string): SiteKey {
 
   return getSiteKeyFromHost(host);
 }
-

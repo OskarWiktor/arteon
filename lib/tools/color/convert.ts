@@ -142,13 +142,9 @@ export function parseHsl(color: string): HSLA | null {
 
   const inner = wrapperMatch[1].trim();
 
-  const commaMatch = inner.match(
-    /^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
-  );
+  const commaMatch = inner.match(/^([+-]?\d*\.?\d+)(?:deg)?\s*,\s*([+-]?\d*\.?\d+)%\s*,\s*([+-]?\d*\.?\d+)%\s*(?:,\s*([+-]?\d*\.?\d+%?)\s*)?$/i);
 
-  const spaceMatch = inner.match(
-    /^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i,
-  );
+  const spaceMatch = inner.match(/^([+-]?\d*\.?\d+)(?:deg)?\s+([+-]?\d*\.?\d+)%\s+([+-]?\d*\.?\d+)%\s*(?:\/\s*([+-]?\d*\.?\d+%?)\s*)?$/i);
 
   const match = commaMatch ?? spaceMatch;
   if (!match) return null;

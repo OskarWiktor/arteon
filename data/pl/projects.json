@@ -48,19 +48,19 @@
       "faq": [
         {
           "question": "W jakich formatach możecie przygotować plakat sezonowy?",
-          "answer": "Najczęściej przygotowujemy plakaty w formatach A3/A2 oraz jako grafiki do witryn. Jeśli plakat ma wisieć w konkretnym miejscu (np. szyba, tablica), dopasujemy wymiary i marginesy pod tę ekspozycję."
+          "answer": "Najczęściej przygotowujemy plakaty w formatach A3/A2. Jeśli plakat ma wisieć w konkretnym miejscu (np. szyba, tablica), dopasujemy wymiary i marginesy pod tę ekspozycję."
         },
         {
-          "question": "Czy dostanę plik gotowy do druku (spady i ustawienia dla drukarni)?",
+          "question": "Czy dostanę plik gotowy do druku?",
           "answer": "Tak. Przekazujemy pliki produkcyjne ze spadami i eksportem pod druk. Jeśli masz wytyczne drukarni (np. profil, spady, format), dopasujemy pliki pod te wymagania."
         },
         {
-          "question": "Czy na bazie plakatu da się przygotować wersje do social media?",
-          "answer": "Tak. Możemy przygotować warianty (np. post i stories) utrzymane w tym samym key visualu, żeby kampania była spójna offline i online."
+          "question": "Czy na bazie plakatu możecie przygotować też wersje do mediów społecznościowych?",
+          "answer": "Tak. Możemy przygotować warianty (np. post i stories) utrzymane w tej samej koncepcji tak aby kampania była spójna offline i online."
         },
         {
           "question": "Co jest potrzebne, żeby wystartować z projektem?",
-          "answer": "Wystarczy: treść (oferta, data, cena), logo, ewentualne zdjęcia/produkty oraz informacja gdzie plakat będzie używany. Jeśli nie masz zdjęć, możemy pomóc w doborze i kompozycji."
+          "answer": "Wystarczy: treść (oferta, data, cena), logo, ewentualne zdjęcia/produkty oraz informacja gdzie plakat będzie używany. Jeśli nie jesteś pewien co chcesz umieścić na plakacie to opowiedź nam co ma on promować."
         }
       ],
 
@@ -195,16 +195,12 @@
 
       "faq": [
         {
-          "question": "Jaki format folderu reklamowego będzie najlepszy dla firmy wykończeniowej?",
-          "answer": "Najczęściej wybierane są formaty A4 (łatwy do przekazania na spotkaniu) lub A3 składany do A4 (więcej miejsca na ofertę, zdjęcia i referencje). Format dobieramy do ilości treści oraz sposobu dystrybucji."
-        },
-        {
           "question": "Czy przygotujecie folder zarówno do druku, jak i do wysyłki e-mailem?",
-          "answer": "Tak. Przekazujemy plik produkcyjny do drukarni oraz osobny, zoptymalizowany PDF do wysyłki mailowej (mniejsza waga, zachowana czytelność)."
+          "answer": "Tak. Możemy przygotować plik produkcyjny do drukarni oraz osobny, zoptymalizowany PDF do wysyłki mailowej z mniejszą wagą i zachowaną czytelnością."
         },
         {
           "question": "Czy możecie pomóc w dopracowaniu tekstów i układu oferty?",
-          "answer": "Tak. Możemy uporządkować treści, skrócić i doprecyzować komunikaty oraz ułożyć ofertę w logicznej kolejności (zakres, proces, korzyści, CTA), aby folder był bardziej sprzedażowy."
+          "answer": "Tak. Możemy uporządkować treści, skrócić i doprecyzować komunikaty oraz ułożyć ofertę."
         },
         {
           "question": "Czy w folderze można umieścić kod QR do wirtualnego spaceru lub realizacji?",
@@ -258,8 +254,8 @@
 
       "faq": [
         {
-          "question": "Jakie formaty obejmują szablony (posty i stories)?",
-          "answer": "Przygotowujemy szablony pod najczęściej używane formaty, m.in. posty i stories na Instagramie. W razie potrzeby dodamy też warianty pod Facebook lub inne kanały."
+          "question": "Jakie formaty obejmują szablony?",
+          "answer": "Format szablonu dopasowujemy do indywidualnych potrzeb. Możemy przygotować szablony pod najczęściej używane formaty, m.in. posty i stories na Instagramie. W razie potrzeby dodamy też warianty pod Facebook lub inne kanały."
         },
         {
           "question": "Czy mogę samodzielnie edytować teksty i zdjęcia w szablonach?",
@@ -267,11 +263,11 @@
         },
         {
           "question": "Czy projekt uwzględnia czytelność na telefonach?",
-          "answer": "Tak. Dobieramy wielkości fontów, kontrast i odstępy tak, aby treści były czytelne w feedzie i na stories na urządzeniach mobilnych."
+          "answer": "Tak. Dobieramy wielkości fontów, kontrast i odstępy tak, aby treści były czytelna, na różnych urządzeniach mobilnych."
         },
         {
           "question": "Czy szablony mogą być dopasowane do identyfikacji marki gabinetu?",
-          "answer": "Tak. Dopasowujemy paletę kolorów, typografię i elementy graficzne do Twojej strony lub materiałów, aby komunikacja w social media była spójna z wizerunkiem gabinetu."
+          "answer": "Tak. Dopasowujemy paletę kolorów, typografię i elementy graficzne do Twojej strony lub materiałów, aby komunikacja w mediach społecznościowych była spójna z wizerunkiem gabinetu."
         }
       ],
       "seo": {
@@ -321,12 +317,12 @@
 
       "faq": [
         {
-          "question": "Czy voucher może mieć pola do wypełnienia (dla kogo, na jaki zabieg, ważny do)?",
+          "question": "Czy voucher może mieć dedykowane pola do wypełnienia?",
           "answer": "Tak. Projektujemy voucher tak, aby był praktyczny w użyciu - z czytelnymi polami do wypełnienia oraz miejscem na najważniejsze informacje (np. wartość, usługa, termin ważności)."
         },
         {
           "question": "Czy przygotujecie plik do druku i wersję do wysyłki online?",
-          "answer": "Tak. Dostarczamy pliki gotowe do drukarni oraz wersję cyfrową (np. PDF) do wysyłki e-mailem lub udostępnienia klientom."
+          "answer": "Tak. Dostarczamy pliki gotowe do druku oraz wersję cyfrową (np. PDF) do np. wysyłki e-mailem."
         },
         {
           "question": "Czy można przygotować serię voucherów sezonowych w jednym stylu?",
@@ -334,7 +330,7 @@
         },
         {
           "question": "Jakie informacje są potrzebne, żeby rozpocząć projekt vouchera?",
-          "answer": "Wystarczą: logo, dane kontaktowe, oferta lub przykładowe zabiegi, zasady realizacji i termin ważności. Jeśli nie masz gotowych materiałów graficznych, dobierzemy estetykę i zdjęcia pod branżę."
+          "answer": "Wystarczą: logo, dane kontaktowe i zasady realizacji."
         }
       ],
       "seo": {
@@ -402,19 +398,15 @@
       "faq": [
         {
           "question": "Czy można poprawić wynik PageSpeed bez przebudowy całej strony?",
-          "answer": "Tak - często zaczynamy od audytu (obrazy, skrypty, CSS, czcionki, cache) i wdrażamy szybkie poprawki. Jeśli problem leży w układzie lub treści, wtedy rekomendujemy redesign tylko wybranych sekcji."
+          "answer": "Tak, w przypadku optymalizacji zawsze przeprowadzamy najpierw krótki audyt a następnie wdrażamy poprawki. Jeśli problem leży w układzie lub treści, wtedy rekomendujemy redesign tylko wybranych sekcji."
         },
         {
           "question": "Jakie elementy najczęściej obniżają wydajność strony na telefonach?",
-          "answer": "Najczęściej są to nieoptymalne obrazy, zbyt ciężkie skrypty, brak lazy loadingu i zbyt dużo zasobów ładowanych na start. Porządkujemy te obszary i testujemy w Google PageSpeed Insights."
-        },
-        {
-          "question": "Czy redesign może jednocześnie poprawić dostępność (WCAG) i czytelność?",
-          "answer": "Tak. Poprawa kontrastu, hierarchii nagłówków, rozmiarów tekstu i odstępów zwykle wpływa jednocześnie na UX oraz zgodność z WCAG 2.1 AA."
+          "answer": "Najczęściej są to zbyt duże obrazy, zbyt ciężkie skrypty, skomplikowane i nie zoptymalizowane animacje a także zbyt dużo zasobów ładowanych zaraz po otworzeniu strony. Porządkujemy te obszary a następnie testujemy w Google PageSpeed Insights."
         },
         {
           "question": "Czy po optymalizacji strona zachowa spójny wygląd i będzie responsywna?",
-          "answer": "Tak. Zmiany wdrażamy z myślą o mobile-first i testujemy kluczowe widoki. Celem jest szybsza strona bez utraty estetyki i bez rozjechania layoutu."
+          "answer": "Tak, celem optymalizacji jest szybsza strona bez utraty estetyki, zawsze wdrażamy zmiany mając na uwadzę zachowanie, w miarę możliwości, tego samego stylu i układu."
         }
       ],
       "seo": {
@@ -753,7 +745,7 @@
       ],
 
       "cta": {
-        "title": "Chcesz stronę, która buduje zaufanie i pozyskuje pacjentów?",
+        "title": "Potrzebujesz strony dla swojego gabinetu psychologicznego?",
         "description": "Zaprojektujemy czytelną stronę z treściami pod SEO i prostą ścieżką do kontaktu",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
@@ -825,8 +817,8 @@
       ],
 
       "cta": {
-        "title": "Potrzebujesz katalogu produktów, który sprzedaje?",
-        "description": "Zaprojektujemy czytelny katalog z kartami produktów, parametrami i cenami - gotowy do druku i PDF",
+        "title": "Potrzebujesz katalogu produktów dla swojej firmy?",
+        "description": "Zaprojektujemy czytelny katalog gotowy do druku",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
         "btnTwo": "Zobacz ofertę projektu katalogu",
@@ -918,8 +910,8 @@
       "stack": ["WordPress", "Gutenberg", "PHP", "Blade"],
 
       "cta": {
-        "title": "Chcesz bloga, który łatwo rozwijać i publikować?",
-        "description": "Wdrożymy nowy system i szablony artykułów, żeby redakcja pracowała szybciej",
+        "title": "Potrzebujesz bloga, którego możesz łatwo rozwijać",
+        "description": "Wdrożymy dedykowane system i szablony artykułów z myślą o komforcie redaktorów",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę blogów internetowych",
@@ -972,7 +964,7 @@
       "category": ["sklep"],
 
       "cta": {
-        "title": "Chcesz sklep internetowy, który sprzedaje i łatwo rozwijać?",
+        "title": "Potrzebujesz sklepu internetowego, który możesz łatwo rozwijać?",
         "description": "Wdrożymy sklep, płatności i dostawy oraz przygotujemy fundamenty pod SEO",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
@@ -1049,7 +1041,7 @@
         },
         {
           "question": "Jak testujecie dostępność (klawiatura i czytniki ekranu)?",
-          "answer": "Testujemy ręcznie przejście klawiaturą (tab order) oraz zachowanie kluczowych komponentów. Dodatkowo sprawdzamy odczyt i komunikaty w czytnikach ekranu oraz weryfikujemy kontrast w narzędziach wspierających." 
+          "answer": "Testujemy ręcznie przejście klawiaturą (tab order) oraz zachowanie kluczowych komponentów. Dodatkowo sprawdzamy odczyt i komunikaty w czytnikach ekranu oraz weryfikujemy kontrast w narzędziach wspierających."
         },
         {
           "question": "Czy można dodać narzędzie do zmiany kontrastu (contrast tool)?",
@@ -1145,8 +1137,8 @@
       },
 
       "cta": {
-        "title": "Chcesz poprawić dostępność komponentów i formularzy (WCAG)?",
-        "description": "Dopracujemy stany fokus, etykiety i kontrasty, żeby UI było czytelne i wygodne",
+        "title": "Chcesz poprawić dostępność na swojej stronie?",
+        "description": "Dopracujemy stany, etykiety i kontrast, żeby wszystko było czytelne i wygodne",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
@@ -1182,7 +1174,7 @@
       },
 
       "cta": {
-        "title": "Chcesz poprawić dostępność interakcji (WCAG)?",
+        "title": "Chcesz poprawić dostępność interakcji zgodnie z WCAG 2.1 AA?",
         "description": "Dopracujemy nawigację klawiaturą, kontrasty i etykiety w filtrach oraz karuzelach",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",

@@ -38,9 +38,7 @@ export default function ProjectsGrid({ projects, selectedCategories }: Props) {
   const t = ui.pl;
 
   if (!filteredProjects.length) {
-    return (
-      <p className="mt-6 text-base text-light">{t.noProjects}</p>
-    );
+    return <p className="text-light mt-6 text-base">{t.noProjects}</p>;
   }
 
   const animKey = JSON.stringify([...selectedCategories].sort());

@@ -13,15 +13,7 @@ type ToolFileDropzoneProps = {
   children: ReactNode;
 };
 
-export default function ToolFileDropzone({
-  accept,
-  multiple = false,
-  disabled = false,
-  dropEffect,
-  className = 'tool-upload-area',
-  onFiles,
-  children,
-}: ToolFileDropzoneProps) {
+export default function ToolFileDropzone({ accept, multiple = false, disabled = false, dropEffect, className = 'tool-upload-area', onFiles, children }: ToolFileDropzoneProps) {
   const { handleFileChange, handleDrop, handleDragOver } = useFileDropzone({ onFiles, disabled, dropEffect });
 
   return (

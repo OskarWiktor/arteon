@@ -23,7 +23,7 @@ export function useMenuKeyboardNavigation(containerRef: RefObject<HTMLElement | 
       const safe = Math.max(0, Math.min(index, items.length - 1));
       items[safe]?.focus();
     },
-    [getItems]
+    [getItems],
   );
 
   const onKeyDown = useCallback(
@@ -47,7 +47,7 @@ export function useMenuKeyboardNavigation(containerRef: RefObject<HTMLElement | 
         focusItem(items.length - 1);
       }
     },
-    [focusItem, getItems]
+    [focusItem, getItems],
   );
 
   return {

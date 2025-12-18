@@ -13,4 +13,3 @@ export default function ToolSection({ children, className = '', 'aria-label': ar
     </section>
   );
 }
-

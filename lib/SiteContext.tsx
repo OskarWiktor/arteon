@@ -36,4 +36,3 @@ export function useSite(): SiteContextValue {
   }
   return context;
 }
-

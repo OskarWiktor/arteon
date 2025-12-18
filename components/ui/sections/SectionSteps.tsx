@@ -130,7 +130,7 @@ export default function SectionSteps({
 
             return (
               <li key={index} className="flex flex-col items-stretch">
-                <article className="flex h-full w-full flex-col surface-card-lift border border-gray-200 p-4 md:p-6">
+                <article className="surface-card-lift flex h-full w-full flex-col border border-gray-200 p-4 md:p-6">
                   {topImageSrc && (
                     <div className="mb-4 md:mb-6">
                       <div className="relative h-52 w-full overflow-hidden rounded-xl md:h-68">
@@ -148,7 +148,7 @@ export default function SectionSteps({
 
                   {hasVisual && (
                     <div className="mb-4 flex justify-start">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-500 shadow-sm ring-1 ring-black/5">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-700 shadow-sm ring-1 ring-black/5">
                         {showIndex ? (
                           <span className="text-base font-semibold">{index + 1}</span>
                         ) : imageSrc ? (
@@ -160,8 +160,8 @@ export default function SectionSteps({
                     </div>
                   )}
 
-                  <ArticleHeadingTag className="h4 mb-1 text-dark">{itemTitle}</ArticleHeadingTag>
-                  {itemSubtitle && <span className="text-base text-light">{itemSubtitle}</span>}
+                  <ArticleHeadingTag className="h4 text-dark mb-1">{itemTitle}</ArticleHeadingTag>
+                  {itemSubtitle && <span className="text-light text-base">{itemSubtitle}</span>}
 
                   <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
                 </article>
