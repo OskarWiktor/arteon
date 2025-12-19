@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RiMenuLine, RiCloseLine, RiInstagramLine, RiFacebookFill, RiSearchLine } from 'react-icons/ri';
 import Image from 'next/image';
 
@@ -33,6 +33,18 @@ export default function Navigation() {
 
   useEscapeKey(() => setIsOpen(false), isOpen);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setIsSearchOpen(true);
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <header id="navigation" className="sticky top-0 z-50 w-full bg-white/95 shadow-xl backdrop-blur-sm">
       <Wrapper>
@@ -44,6 +56,15 @@ export default function Navigation() {
           <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
+            <button
+              type="button"
+              onClick={() => setIsSearchOpen(true)}
+              className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              aria-label="Wyszukaj (Ctrl+K)"
+            >
+              <RiSearchLine className="h-5 w-5" aria-hidden="true" />
+            </button>
+
             <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-light mr-3 cursor-pointer text-sm font-normal">
               #MadeWithNext.js
             </a>

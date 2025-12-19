@@ -10,8 +10,7 @@ import { ABOUT_NAV_ITEMS_PL, DESKTOP_NAV_ITEMS_PL, OFFER_SECTIONS_PL, TOOLS_SECT
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
-import { RiArrowDownSLine, RiSearchLine } from 'react-icons/ri';
-import SearchDialog from '@/components/ui/SearchDialog';
+import { RiArrowDownSLine } from 'react-icons/ri';
 
 const ui = {
   pl: {
@@ -30,7 +29,6 @@ export default function DesktopNavigation() {
   const [isOfferOpen, setIsOfferOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const offerLiRef = useRef<HTMLLIElement>(null);
   const offerBtnRef = useRef<HTMLButtonElement>(null);
@@ -70,17 +68,6 @@ export default function DesktopNavigation() {
     },
     isOfferOpen || isToolsOpen || isAboutOpen,
   );
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        setIsSearchOpen(true);
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, []);
 
   useEffect(() => {
     setIsOfferOpen(false);
@@ -156,15 +143,6 @@ export default function DesktopNavigation() {
 
   return (
     <div className="hidden lg:flex lg:items-center lg:gap-4">
-      <button
-        type="button"
-        onClick={() => setIsSearchOpen(true)}
-        className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-        aria-label="Wyszukaj (Ctrl+K)"
-      >
-        <RiSearchLine className="h-5 w-5" aria-hidden="true" />
-      </button>
-
       <LayoutGroup>
         <ul className="relative flex items-center gap-4 lg:gap-6">
           {navigationItems.map(({ href, label, exact, key: itemKey }) => {
@@ -381,8 +359,6 @@ export default function DesktopNavigation() {
           })}
         </ul>
       </LayoutGroup>
-
-      <SearchDialog isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </div>
   );
 }
