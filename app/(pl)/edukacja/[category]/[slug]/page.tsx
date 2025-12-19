@@ -293,6 +293,12 @@ export default function ArticlePage({ params }: { params: { category: string; sl
   const articlePreviews = getAllArticlePreviews();
 
   const canonicalCat = getPrimaryCategorySlug(article);
+  const categoryLabel =
+    (article.primaryCategory && slugify(article.primaryCategory) === canonicalCat ? article.primaryCategory : null) ||
+    article.category?.find((c) => slugify(c) === canonicalCat) ||
+    canonicalCat.replace(/-/g, ' ').toUpperCase();
+
+  const articlesCarouselTitle = `Sprawdź nasze artykuły na temat: ${categoryLabel}`;
   if (params.category !== canonicalCat) {
     permanentRedirect(`/edukacja/${canonicalCat}/${article.slug}`);
   }
@@ -309,10 +315,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
         second={{ href: '/edukacja', label: 'Edukacja' }}
         third={{
           href: `/edukacja/${canonicalCat}`,
-          label:
-            (article.primaryCategory && slugify(article.primaryCategory) === canonicalCat ? article.primaryCategory : null) ||
-            article.category?.find((c) => slugify(c) === canonicalCat) ||
-            canonicalCat,
+          label: categoryLabel,
         }}
         fourth={{ href: `/edukacja/${canonicalCat}/${article.slug}`, label: article.title }}
         includeJsonLd
@@ -352,7 +355,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
       <Wrapper>
         <Gap />
 
-        <ArticlesCarousel title="Sprawdź najnowsze artykuły i poradniki" articles={articlePreviews} excludeSlug={article.slug} />
+        <ArticlesCarousel title={articlesCarouselTitle} categorySlug={canonicalCat} articles={articlePreviews} excludeSlug={article.slug} />
       </Wrapper>
 
       <Gap />

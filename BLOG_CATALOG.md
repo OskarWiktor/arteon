@@ -76,7 +76,7 @@ Celem katalogu jest:
 - **Kategorie**: `Design` (primary), `Psychologia`, `Branding`
 - **Daty**:
   - **`datePublished`**: `2025-12-09`
-  - **`dateModified`**: `2025-12-09`
+  - **`dateModified`**: `2025-12-19`
 - **Szacowany czas czytania**: `4 min`
 - **Format treści (`contentBlocks`)**:
   - **Typy bloków**: tylko `richtext`.

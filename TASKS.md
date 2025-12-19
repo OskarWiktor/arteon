@@ -329,7 +329,7 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Jest sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ❌ **[CONTENT-004] Blog: naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton)**
+- ✅ **[CONTENT-004] Blog: naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton)**
 
   - Cel: naprawić błąd techniczny (zduplikowane sekcje) i dostosować ton.
   - Zakres:
@@ -345,6 +345,49 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Brak checklisty — zamiast tego podsumowanie priorytetów.
     - Jest sekcja FAQ.
   - Weryfikacja: nie jest wymagana (content-only).
+
+  - **Zrobione 2025-12-19**:
+    - Usunięto zduplikowane sekcje (powtórzone bloki o formatach JPEG/PNG/SVG/WebP + kolejne duplikaty w dalszej części wpisu).
+    - Dodano proste wyjaśnienia terminów: LCP/CLS/INP oraz kompresja stratna/bezstratna.
+    - Zamieniono checklistę na sekcję „Podsumowanie priorytetów: co zrobić najpierw?”.
+    - Dodano sekcję FAQ (4 pytania).
+
+- ❌ **[CONTENT-005] Edukacja: lepszy content na stronach kategorii artykułów (fallback dla nowych kategorii)**
+
+  - Cel:
+    - Podnieść jakość i dopasowanie do nowego tonu (mentorski, prosty, benefit-first) treści na stronach kategorii edukacji (`/edukacja/[category]`).
+    - Zostawić obecną treść jako domyślną dla kategorii, które pojawią się w przyszłości.
+  - Pliki:
+    - `app/(pl)/edukacja/[category]/page.tsx`
+    - `PAGES_CATALOG.md`
+  - Zakres:
+    - Dodać mapę treści per znana kategoria (np. SEO/Design/Zdjęcia/Branding/Treści/Widoczność/Psychologia): opis w hero + opis do `metadata`.
+    - Dla nieznanej kategorii (nieobecnej w mapie) użyć dotychczasowego opisu hero i dotychczasowego `metadata.description`.
+  - Kryteria akceptacji:
+    - Dla znanych kategorii wyświetlany jest dopasowany opis w `HeroBanner` oraz bardziej konkretny opis w meta.
+    - Dla nowych kategorii działa fallback: **dokładnie dotychczasowy** opis hero i dotychczasowe `metadata.description`.
+    - Brak zmian w layout/komponentach (tylko treść).
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[BLOG-001] Edukacja: karuzela artykułów na stronie artykułu ma pokazywać wpisy z tej samej kategorii + dynamiczny nagłówek**
+
+  - Cel:
+    - Na stronie pojedynczego artykułu (`/edukacja/.../...`) na dole mają pojawiać się artykuły z tej samej kategorii/tematu (np. SEO → SEO).
+    - Nagłówek karuzeli ma dopasowywać się do kategorii (np. `Sprawdź nasze artykuły na temat: SEO`).
+    - Obok nagłówka ma zostać link do wszystkich artykułów (jak dotychczas).
+  - Pliki:
+    - `app/(pl)/edukacja/[category]/[slug]/page.tsx`
+    - (opcjonalnie) `components/sections/blog/ArticlesCarousel.tsx`
+  - Zakres:
+    - Wykorzystać kanoniczną kategorię artykułu (`canonicalCat`) jako filtr: przekazać do `ArticlesCarousel` prop `categorySlug={canonicalCat}`.
+    - Wyliczyć czytelną nazwę kategorii (tą samą logiką co w breadcrumbs) i zbudować dynamiczny tytuł karuzeli w formacie: `Sprawdź nasze artykuły na temat: {Kategoria}`.
+    - Zostawić wykluczenie bieżącego artykułu: `excludeSlug={article.slug}`.
+    - Upewnić się, że link akcji w nagłówku karuzeli prowadzi do listy artykułów danej kategorii (`/edukacja/{canonicalCat}`) i pozostaje widoczny.
+  - Kryteria akceptacji:
+    - Dla artykułu w kategorii (np. SEO) karuzela pokazuje wyłącznie artykuły z tej kategorii (bez bieżącego wpisu).
+    - Tytuł karuzeli jest dynamiczny i zawiera nazwę kategorii, a nie slug.
+    - Link „Zobacz wszystkie artykuły” jest obecny i prowadzi do właściwego widoku (kategoria lub ogólna lista).
+    - `npm run lint` i `npm run build` przechodzą.
 
 - ❌ **[SEO-013] OG images: dedykowane grafiki dla kluczowych stron (hub pages)**
 
@@ -1199,15 +1242,3 @@ Wymagany format (kopiuj i uzupełnij):
   - Plan migracji (bez zmiany UI/UX):
     - Wydzielić wspólne „capability detection” i obsługę błędów.
     - Zostawić dedykowaną ścieżkę dla kopiowania HTML (selection + `execCommand`) i wspólne API do ustawiania statusu.
-
-- ❌ **[CONTENT-001] Poprawa merytoryczna artykułu o kolorystyce i decyzjach zakupowych]**
-
-  - Cel: zwiększyć wiarygodność cytowanych danych w artykule "Jak kolorystyka wpływa na decyzje zakupowe klientów?" poprzez dodanie bardziej szczegółowych odniesień do badań.
-  - Zakres:
-    - Artykuł w `data/pl/blog.json` o slug `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`.
-    - Dodać konkretne daty badań lub bezpośrednie linki do raportów/statystyk (np. dla CCICOLOR, Lucidpress, HubSpot), jeśli dostępne.
-    - Jeśli dokładne źródła nie są dostępne, zaznaczyć to jako szacunkowe dane z ogólnym odniesieniem do źródła.
-  - Kryteria akceptacji:
-    - Cytowane statystyki mają bardziej precyzyjne odniesienia lub wyjaśnienie ich ogólnego charakteru.
-    - Brak zmian w UI/UX lub głównych tezach artykułu.
-    - Weryfikacja: nie jest wymagana (content-only).

@@ -2,6 +2,28 @@
 
 ## 2025-12-19
 
+- ✅ **[CONTENT-004] Blog: naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton)**
+
+  - Plik:
+    - `data/pl/blog.json`
+  - **Zrobione**:
+    - Usunięto zduplikowane sekcje (powtórzone fragmenty o formatach JPEG/PNG/SVG/WebP oraz kolejne duplikaty w dalszej części wpisu).
+    - Dodano proste wyjaśnienia terminów: LCP/CLS/INP oraz kompresja stratna/bezstratna.
+    - Zamieniono checklistę na sekcję „Podsumowanie priorytetów: co zrobić najpierw?”.
+    - Dodano sekcję FAQ (4 pytania).
+  - Weryfikacja: pominięto `npm run lint` i `npm run build` (content-only).
+
+- ✅ **[CONTENT-001] Poprawa merytoryczna artykułu o kolorystyce i decyzjach zakupowych**
+
+  - Pliki:
+    - `data/pl/blog.json`
+    - `BLOG_CATALOG.md`
+  - **Zrobione**:
+    - Doprecyzowano źródła dla cytowanych statystyk (dodano bezpośrednie linki + adnotacje, gdzie dane mają charakter często cytowanego szacunku).
+    - Uzupełniono odniesienia m.in. dla: CCICOLOR/Colorcom, Lucidpress/Marq (State of Brand Consistency, komunikat 2019-12-02) oraz HubSpot/Performable (Joshua Porter, 2011).
+    - Zaktualizowano `dateModified` artykułu.
+  - Weryfikacja: nie jest wymagana (content-only).
+
 - ✅ **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
 
   - **Zakres**: Przeanalizowano 8 artykułów w `data/pl/blog.json` (wszystkie oprócz 2 wzorcowych: stopka mailowa, favicon) pod kątem zgodności z nowymi wytycznymi tonu marki Arteon.

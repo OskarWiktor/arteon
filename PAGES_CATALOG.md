@@ -185,6 +185,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - `CodeBlock`, `TableBlock`
   - `ArticlesCarousel`, `ShareBlock`
 - **[Dane / źródła]** `lib/blog` (pobieranie artykułu i powiązań).
+- **[Powiązane artykuły]** Na dole strony renderowana jest karuzela artykułów (`ArticlesCarousel`) z wpisami z tej samej kategorii co bieżący artykuł (z wykluczeniem bieżącego wpisu). Nagłówek karuzeli dopasowuje się dynamicznie do kategorii, a link akcji prowadzi do listy artykułów danej kategorii (`/edukacja/[category]`).
 - **[SEO]**
   - **[schema]** JSON-LD:
     - `BlogPosting`
