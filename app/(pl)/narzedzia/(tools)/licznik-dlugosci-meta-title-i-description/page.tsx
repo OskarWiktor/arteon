@@ -5,6 +5,7 @@ import MetaTitleDescriptionTool from '@/components/sections/tools/MetaTitleDescr
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
@@ -71,9 +72,48 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
+        <SectionInfo title="Czym są meta title i meta description?">
+          <p className="text-mid">
+            Meta title i meta description to teksty, które pojawiają się w wynikach wyszukiwania Google. Title to niebieski nagłówek, a description to krótki opis pod nim. Dobre meta tagi zwiększają
+            szansę, że ktoś kliknie właśnie w Twój link.
+          </p>
+          <p className="text-mid mt-3">
+            <strong>Dlaczego długość ma znaczenie?</strong> Google obcina zbyt długie tytuły i opisy. Jeśli Twój tekst jest za długi, użytkownik zobaczy tylko jego fragment zakończony wielokropkiem —
+            i może nie zrozumieć, o czym jest strona.
+          </p>
+        </SectionInfo>
+
+        <Gap size="sm" />
+
         <MetaTitleDescriptionTool />
 
-        <Gap size="xs" />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Jak korzystać z licznika?"
+          description="Sprawdzenie długości meta tagów zajmuje dosłownie chwilę:"
+          grid="four"
+          items={[
+            {
+              title: '1. Wpisz tytuł',
+              description: 'Wklej lub wpisz swój meta title. Narzędzie od razu pokaże liczbę znaków i szerokość w pikselach.',
+            },
+            {
+              title: '2. Wpisz opis',
+              description: 'Dodaj meta description. Zobaczysz, ile znaków zostało do optymalnego limitu.',
+            },
+            {
+              title: '3. Sprawdź podgląd',
+              description: 'Zobacz, jak Twoja strona będzie wyglądać w wynikach Google — dokładnie tak, jak zobaczy ją użytkownik.',
+            },
+            {
+              title: '4. Popraw i skopiuj',
+              description: 'Dostosuj tekst do zaleceń i skopiuj gotowe meta tagi do swojej strony.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Jak pisać dobre meta title i meta description?">
           <p className="mb-6">

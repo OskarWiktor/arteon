@@ -5,6 +5,7 @@ import Gap from '@/components/ui/Gap';
 import type { Metadata } from 'next';
 import FaviconGenerator from '@/components/sections/tools/FaviconGenerator';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
@@ -72,6 +73,32 @@ export default function Page() {
 
         <Gap size="xs" />
 
+        <SectionSteps
+          title="Jak korzystać z generatora?"
+          description="Wygenerowanie favicon to dosłownie kilka kliknięć:"
+          grid="four"
+          items={[
+            {
+              title: '1. Dodaj obraz',
+              description: 'Przeciągnij plik na obszar uploadu lub kliknij, żeby wybrać grafikę z dysku. Najlepiej sprawdza się proste logo lub ikona.',
+            },
+            {
+              title: '2. Wybierz rozmiary',
+              description: 'Zaznacz, które rozmiary ikon potrzebujesz: favicon.ico, ikony PNG (16x16, 32x32, 180x180, 192x192, 512x512).',
+            },
+            {
+              title: '3. Wygeneruj pliki',
+              description: 'Kliknij przycisk generowania. Narzędzie przetworzy obraz lokalnie — nic nie jest wysyłane na serwer.',
+            },
+            {
+              title: '4. Pobierz zestaw',
+              description: 'Pobierz wszystkie wygenerowane pliki jednym kliknięciem jako archiwum ZIP.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Nowoczesny zestaw favicon - co generuje to narzędzie?">
           <p className="mb-6">
             Generator tworzy zestaw ikon zgodny z aktualnymi wytycznymi (2024-2025): klasyczny plik <strong>favicon.ico</strong> (32x32) oraz ikony PNG o rozmiarach <strong>16x16</strong>,{' '}
@@ -93,6 +120,29 @@ export default function Page() {
           </ul>
           <p className="text-light">Wszystkie pliki generowane są lokalnie w Twojej przeglądarce - nic nie jest wysyłane na serwer.</p>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Gdzie wgrać pliki favicon?"
+          description="Wygenerowane pliki wystarczy umieścić w odpowiednim miejscu:"
+          grid="two"
+          items={[
+            {
+              title: 'WordPress i inne CMS-y',
+              description: (
+                <p>
+                  Większość motywów ma opcję „Ikona witryny” w ustawieniach. Wgraj tam plik 512x512 — WordPress sam wygeneruje mniejsze rozmiary. Dla pełnej kontroli dodaj pliki ręcznie do katalogu
+                  głównego.
+                </p>
+              ),
+            },
+            {
+              title: 'Własna strona (HTML)',
+              description: <p>Umieść pliki w katalogu głównym strony i dodaj odpowiednie tagi link w sekcji head. Generator podpowie, jak powinien wyglądać kod HTML.</p>,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

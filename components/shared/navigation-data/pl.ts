@@ -19,6 +19,7 @@ import {
   RiPaletteLine,
   RiPantoneLine,
   RiPriceTag3Line,
+  RiQrCodeLine,
   RiQuillPenLine,
   RiRestaurant2Line,
   RiSearchLine,
@@ -199,9 +200,9 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
   },
 ];
 
-export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory';
+export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk';
 
-export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette';
+export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette' | 'qrCode';
 
 export type ToolSectionItem = {
   key: ToolItemKey;
@@ -304,6 +305,20 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         description: 'Wybierz jeden kolor i wygeneruj klasyczne oraz nowoczesne palety: pastelowe, ciemne, tonalne i inne.',
         image: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
         icon: RiPaletteLine,
+      },
+    ],
+  },
+  {
+    key: 'druk',
+    title: 'Druk i materiały',
+    items: [
+      {
+        key: 'qrCode',
+        href: '/narzedzia/generator-kodu-qr',
+        title: 'Generator kodu QR',
+        description: 'Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG.',
+        image: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+        icon: RiQrCodeLine,
       },
     ],
   },

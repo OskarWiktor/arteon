@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { RiMenuLine, RiCloseLine, RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine, RiInstagramLine, RiFacebookFill, RiSearchLine } from 'react-icons/ri';
 import Image from 'next/image';
 
 import MobileNavigation from './navigation-types/MobileNavigation';
@@ -11,6 +11,7 @@ import SocialIconLink from '@/components/ui/SocialIconLink';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import SearchDialog from '@/components/ui/SearchDialog';
 
 const ui = {
   pl: {
@@ -26,6 +27,7 @@ const ui = {
 export default function Navigation() {
   const t = ui.pl;
   const [isOpen, setIsOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -60,12 +62,24 @@ export default function Navigation() {
             />
           </div>
 
-          <IconButton onClick={toggleMenu} label={isOpen ? t.closeMenu : t.openMenu} aria-expanded={isOpen} size="md" className="block h-auto w-auto p-1 lg:hidden">
-            {isOpen ? <RiCloseLine size={28} aria-hidden="true" /> : <RiMenuLine size={28} aria-hidden="true" />}
-          </IconButton>
+          <div className="flex items-center gap-1 lg:hidden">
+            <button
+              type="button"
+              onClick={() => setIsSearchOpen(true)}
+              className="flex h-10 w-10 items-center justify-center rounded-lg text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+              aria-label="Wyszukaj"
+            >
+              <RiSearchLine className="h-6 w-6" aria-hidden="true" />
+            </button>
+            <IconButton onClick={toggleMenu} label={isOpen ? t.closeMenu : t.openMenu} aria-expanded={isOpen} size="md" className="block h-auto w-auto p-1">
+              {isOpen ? <RiCloseLine size={28} aria-hidden="true" /> : <RiMenuLine size={28} aria-hidden="true" />}
+            </IconButton>
+          </div>
         </nav>
 
         <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} />
+
+        <SearchDialog isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       </Wrapper>
     </header>
   );

@@ -5,6 +5,7 @@ import JpgPngToWebp from '@/components/sections/tools/JpgPngToWebp';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
@@ -67,9 +68,47 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
+        <SectionInfo title="Czym jest format WebP i dlaczego warto go używać?">
+          <p className="text-mid">
+            WebP to nowoczesny format obrazów stworzony przez Google. Pozwala zmniejszyć rozmiar zdjęć nawet o 30% w porównaniu z JPG i PNG — bez widocznej utraty jakości. Lżejsze pliki to szybsze
+            ładowanie strony, lepsze wyniki w Core Web Vitals i mniejsze zużycie transferu u odwiedzających.
+          </p>
+          <p className="text-mid mt-3">
+            <strong>Gdzie używać WebP?</strong> Na stronach internetowych, w sklepach online, w newsletterach i wszędzie tam, gdzie zależy Ci na szybkości i dobrej jakości obrazu.
+          </p>
+        </SectionInfo>
+
+        <Gap size="sm" />
+
         <JpgPngToWebp />
 
-        <Gap size="xs" />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Jak korzystać z konwertera?"
+          description="Konwersja zdjęć na WebP zajmuje dosłownie kilka sekund. Oto jak to zrobić:"
+          grid="four"
+          items={[
+            {
+              title: '1. Dodaj pliki',
+              description: 'Przeciągnij zdjęcia JPG lub PNG na obszar uploadu albo kliknij, żeby wybrać pliki z dysku.',
+            },
+            {
+              title: '2. Ustaw jakość',
+              description: 'Wybierz poziom jakości (domyślnie 80%). Wyższa wartość = lepsza jakość, ale większy plik.',
+            },
+            {
+              title: '3. Konwertuj',
+              description: 'Kliknij przycisk konwersji. Narzędzie przetworzy wszystkie pliki naraz — bez wysyłania ich na serwer.',
+            },
+            {
+              title: '4. Pobierz',
+              description: 'Pobierz przekonwertowane pliki pojedynczo lub wszystkie naraz jako archiwum ZIP.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Dlaczego WebP jest ważny dla szybkości strony i SEO?">
           <p className="mb-6">
@@ -84,6 +123,30 @@ export default function Page() {
           </ul>
           <p className="text-light">Jeśli chcesz, żeby Twoja strona ładowała się tak szybko, jak pliki po konwersji, możesz rozważyć pełną optymalizację WWW (obrazy, kod, hosting, SEO techniczne).</p>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Zastosowania formatu WebP"
+          description="WebP sprawdzi się wszędzie tam, gdzie liczy się szybkość i jakość:"
+          grid="two"
+          items={[
+            {
+              title: 'Strony i sklepy internetowe',
+              description: (
+                <p>
+                  Lżejsze zdjęcia produktów i banerów to szybsze ładowanie strony. Google premiuje szybkie witryny w wynikach wyszukiwania, a użytkownicy chętniej zostają na stronie, która nie każe im
+                  czekać.
+                </p>
+              ),
+            },
+            {
+              title: 'Social media i reklamy',
+              description: <p>Mniejsze pliki to szybsze wgrywanie grafik i mniejsze zużycie limitu transferu. WebP obsługuje też przezroczystość (jak PNG) i animacje (jak GIF).</p>,
+            },
+          ]}
+        />
+
         <Gap variant="line" />
 
         <ToolsCarousel title="Sprawdź inne narzędzia" />

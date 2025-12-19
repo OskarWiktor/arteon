@@ -4,7 +4,7 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine } from 'react-icons/ri';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine, RiQrCodeLine } from 'react-icons/ri';
 import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
@@ -111,6 +111,15 @@ const toolsJsonLd = {
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
+    {
+      '@type': 'WebApplication',
+      position: 9,
+      name: 'Darmowy generator kodu QR online',
+      description: 'Generator kodu QR online dla firm i materiałów drukowanych. Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG.',
+      url: 'https://www.arteonagency.pl/narzedzia/generator-kodu-qr',
+      applicationCategory: 'UtilityApplication',
+      operatingSystem: 'Any',
+    },
   ],
 };
 
@@ -187,7 +196,7 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Gap variant="line" />
 
         <SectionSteps
           title="Meta i SEO"
@@ -213,7 +222,7 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Gap variant="line" />
 
         <SectionSteps
           title="E-mail i komunikacja"
@@ -239,7 +248,7 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap size="sm" />
+        <Gap variant="line" />
 
         <SectionSteps
           title="Kolory i dostępność"
@@ -294,6 +303,32 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/generator-palet-kolorow-online">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Druk i materiały"
+          description="Narzędzia do przygotowania materiałów drukowanych i kodów QR."
+          grid="two"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Generator kodu QR',
+              topImageAlt: 'Generator kodu QR Arteon',
+              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ danych (URL, vCard, e-mail, telefon), dostosuj kolory i rozmiar, pobierz gotowy plik PNG lub SVG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/generator-kodu-qr">
                       Otwórz narzędzie
                     </Button>
                   </div>

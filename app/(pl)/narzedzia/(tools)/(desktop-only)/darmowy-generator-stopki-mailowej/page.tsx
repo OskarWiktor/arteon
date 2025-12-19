@@ -3,6 +3,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import Wrapper from '@/components/ui/Wrapper';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import type { Metadata } from 'next';
 import EmailSignatureGenerator from '@/components/sections/tools/EmailSignatureGenerator';
 import CTABanner from '@/components/sections/CTABanner';
@@ -73,11 +74,49 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
+        <SectionInfo title="Czym jest stopka mailowa i dlaczego warto ją mieć?">
+          <p className="text-mid">
+            Stopka mailowa (podpis e-mail) to blok informacji na końcu każdej wiadomości. Zawiera Twoje dane kontaktowe, stanowisko, link do strony lub kalendarza. Profesjonalna stopka buduje zaufanie
+            i ułatwia odbiorcom kontakt z Tobą.
+          </p>
+          <p className="text-mid mt-3">
+            <strong>Kiedy warto użyć generatora?</strong> Gdy chcesz szybko stworzyć spójny podpis dla siebie lub całego zespołu — bez znajomości HTML i bez płacenia grafikowi.
+          </p>
+        </SectionInfo>
+
+        <Gap size="sm" />
+
         <EmailSignatureGenerator />
 
         <Gap size="sm" />
 
-        <SectionInfo title="Profesjonalna stopka mailowa bez grafika i bez kodowania" description="Generator stopki mailowej, który pomoże Ci zbudować profesjonalny wizerunek">
+        <SectionSteps
+          title="Jak korzystać z generatora?"
+          description="Stworzenie profesjonalnej stopki mailowej zajmuje dosłownie kilka minut:"
+          grid="four"
+          items={[
+            {
+              title: '1. Wpisz dane',
+              description: 'Uzupełnij imię, nazwisko, stanowisko, firmę i dane kontaktowe. Możesz też dodać linki do social mediów.',
+            },
+            {
+              title: '2. Dostosuj wygląd',
+              description: 'Wybierz kolory, czcionkę i układ. Dodaj przycisk CTA (np. „Umów spotkanie”) i klauzulę prawną, jeśli potrzebujesz.',
+            },
+            {
+              title: '3. Podgląd na żywo',
+              description: 'Zobacz, jak stopka będzie wyglądać w e-mailu. Podgląd aktualizuje się natychmiast po każdej zmianie.',
+            },
+            {
+              title: '4. Skopiuj kod',
+              description: 'Kliknij „Skopiuj HTML” i wklej stopkę w ustawieniach swojego klienta pocztowego (Gmail, Outlook, Apple Mail).',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Profesjonalna stopka mailowa bez grafika i bez kodowania">
           <p className="mt-4">
             Uzupełnij dane: imię i nazwisko, stanowisko, nazwę firmy, dane kontaktowe, link do kalendarza lub oferty oraz profile w social media. Narzędzie od razu buduje z tego przejrzystą stopkę
             HTML, która dobrze wygląda w Gmailu, Outlooku i większości popularnych klientów pocztowych.

@@ -4,6 +4,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import Gap from '@/components/ui/Gap';
 import type { Metadata } from 'next';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -69,9 +70,48 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
+        <SectionInfo title="Czym jest kontrast kolorów i dlaczego ma znaczenie?">
+          <p className="text-mid">
+            Kontrast to różnica jasności między dwoma kolorami — na przykład między tekstem a tłem. Im wyższy kontrast, tym łatwiej przeczytać tekst. Wytyczne WCAG (Web Content Accessibility
+            Guidelines) określają, jaki minimalny kontrast jest wymagany, żeby strona była dostępna dla osób z wadami wzroku.
+          </p>
+          <p className="text-mid mt-3">
+            <strong>Dlaczego to ważne?</strong> Słaby kontrast utrudnia czytanie nie tylko osobom niedowidzącym, ale też wszystkim korzystającym z telefonu w słońcu czy na starszych monitorach. Dobry
+            kontrast = lepsza czytelność dla wszystkich.
+          </p>
+        </SectionInfo>
+
+        <Gap size="sm" />
+
         <WcagContrastChecker />
 
         <Gap size="sm" />
+
+        <SectionSteps
+          title="Jak korzystać z testera?"
+          description="Sprawdzenie kontrastu kolorów to dosłownie kilka sekund:"
+          grid="four"
+          items={[
+            {
+              title: '1. Wybierz kolor tekstu',
+              description: 'Wpisz kod HEX lub użyj próbnika kolorów, żeby wybrać kolor pierwszego planu (tekstu).',
+            },
+            {
+              title: '2. Wybierz kolor tła',
+              description: 'Analogicznie wybierz kolor tła, na którym będzie wyświetlany tekst.',
+            },
+            {
+              title: '3. Sprawdź wynik',
+              description: 'Narzędzie od razu pokaże współczynnik kontrastu i czy spełniasz poziom AA lub AAA.',
+            },
+            {
+              title: '4. Dostosuj kolory',
+              description: 'Jeśli kontrast jest za niski, zmień któryś z kolorów i sprawdź ponownie.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Jak działa tester kontrastu kolorów WCAG?">
           <p className="mb-6">

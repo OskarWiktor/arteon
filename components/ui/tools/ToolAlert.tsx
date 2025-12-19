@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-type AlertVariant = 'error' | 'success' | 'info';
+type AlertVariant = 'error' | 'success' | 'info' | 'warning';
 
 interface ToolAlertProps {
   children: ReactNode;
@@ -13,6 +13,7 @@ export default function ToolAlert({ children, variant = 'info', className = '' }
     error: 'border-red-200 bg-red-50 text-red-800',
     success: 'border-emerald-200 bg-emerald-100 text-emerald-700',
     info: 'border-neutral-200 bg-neutral-50 text-mid',
+    warning: 'border-amber-200 bg-amber-50 text-amber-800',
   };
 
   return (

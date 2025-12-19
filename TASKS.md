@@ -1,5 +1,17 @@
 # Arteon - Refactor Master Plan (single source of truth)
 
+## Spis treści
+
+- [Ustawienia projektu (stack)](#ustawienia-projektu-stack)
+- [Źródła kontekstu (katalogi)](#źródła-kontekstu-katalogi)
+- [Zasady ogólne (zawsze)](#zasady-ogólne-zawsze)
+- [Instrukcje operacyjne](#instrukcje-operacyjne)
+- [Instrukcje: Treści i artykuły](#instrukcje-treści-i-artykuły)
+- [Definition of Done (dla każdego zadania)](#definition-of-done-dla-każdego-zadania)
+- [Zadania](#zadania)
+- [Zadania: Artykuły (backlog)](#zadania-artykuły-backlog)
+- [Pomysły](#pomysły)
+
 ## Ustawienia projektu (stack)
 
 - Framework: Next.js `15.3.6` (App Router) + React `19.2.1`
@@ -12,7 +24,9 @@
 - Narzędzia/media: `sharp`, `react-easy-crop`, `react-icons`, `framer-motion`, `gray-matter`
 - `next.config.ts`: poza produkcją dodaje `X-Robots-Tag: noindex, nofollow`; wymusza host `arteonagency.pl` → `https://www.arteonagency.pl`
 
-Źródła kontekstu, możesz się z nimi zapoznawać przed rozpoczęciem zadania, w szczególności jeśli zadanie dotyczy danego typu treści / komponentów / stron czy hooków:
+## Źródła kontekstu (katalogi)
+
+Możesz się z nimi zapoznawać przed rozpoczęciem zadania, w szczególności jeśli zadanie dotyczy danego typu treści / komponentów / stron czy hooków:
 
 - `COMPONENTS_CATALOG.md` - opis wszystkich komponentów,
 - `HOOKS_CATALOG.md` - opis wszystkich hooków i utilis i lib,
@@ -31,34 +45,64 @@ Ostatnia weryfikacja statusów w kodzie: **2025-12-15**
 
 ## Zasady ogólne (zawsze)
 
+### Kod / refactor (bez zmian UI)
+
 - Refaktory nie mają zmieniać UI/UX ani treści.
 - Na etapie „porządkowania” zachowujemy klasy Tailwinda 1:1 (chyba że zadanie mówi inaczej).
-- Canonical: **bezwzględne (absolute)** i zawsze na `https://www.arteonagency.pl`.
-- OpenGraph: **unikalne per typ strony**; gdy fallback, dodajemy komentarz TODO w pliku strony.
+- Content renderer: wspólny `HTMLContent` + wspólny `RenderBlocks` (warianty dla typów danych).
+
+### UI / styl (spójność serwisu)
+
 - Typografia: **globals-first** (bazujemy na `.h*` i `.p` / globalnych regułach), a wyjątki rozwiązujemy przez klasy.
 - Kolory tekstu: wymuszamy użycie `.text-light/.text-mid/.text-dark` (eliminujemy `text-gray-*`/`text-neutral-*`/raw hexy dla tekstu).
 - Badge/Tag/Tool pills: konsolidujemy do `Badge` (jeden komponent + warianty); `Tag` docelowo nie istnieje.
 - `Button`: warianty „jednorazowe” nie wchodzą do API; `totop` jest lokalny w `ButtonToTop`.
 - `Tooltip`: zostaje (jedyny wyjątek - może być chwilowo nieużywany).
-- Content renderer: wspólny `HTMLContent` + wspólny `RenderBlocks` (warianty dla typów danych).
-- Multi-domain/multi-language: w planie na później; domena determinuje język dla wybranych wspólnych komponentów (np. tools).
+- Ikony mają zawsze mieć kolor `text-slate-700`.
+
+### SEO (inwarianty)
+
+- Canonical: **bezwzględne (absolute)** i zawsze na `https://www.arteonagency.pl`.
+- OpenGraph: **unikalne per typ strony**; gdy fallback, dodajemy komentarz TODO w pliku strony.
+
+### Nawigacja / IA
+
 - Nowe strony w grupach „Usługi”, „Realizacje”, „O nas”, „Edukacja” i „Narzędzia” po utworzeniu muszą być automatycznie dodawane do wszystkich wariantów nawigacji (desktop + mobile, w tym dropdowny/submenu).
+
+### Inne
+
+- Multi-domain/multi-language: w planie na później; domena determinuje język dla wybranych wspólnych komponentów (np. tools).
+
+### Workflow: jak domykamy zadania
+
 - po zakończeniu zadania:
   - pod zadaniem zapisz co zostało zrobione oraz dodaj odpowiednią ikonę statusu (✅/🟡/❌)
   - jeśli zadanie nie jest z grupy `AUDIT-*`: przenieś wykonane zadanie do `DONE_TASKS.md` (z datą i podsumowaniem); najnowsze wpisy umieszczaj najwyżej pod daną datą; nowe daty twórz na górze pliku
   - jeśli zadanie jest z grupy `AUDIT-*`: zadanie zawsze zostaje w `TASKS.md`, a do `DONE_TASKS.md` dodaj tylko wpis z zakresem wykonanej pracy (np. co sprawdzono + jakie zadania/pomysły dopisano)
-  - zaktualizuj odpowiedni katalog z danymi projektu (`COMPONENTS_CATALOG.md`, `HOOKS_CATALOG.md`, `TOOLS_CATALOG.md`, `PROJECTS_CATALOG.md`, `PAGES_CATALOG.md`)
+  - Zadania artykułowe (sekcja „Zadania: Artykuły”) domykamy tak samo jak resztę: wpis do `DONE_TASKS.md` + aktualizacja `BLOG_CATALOG.md`.
+- **KRYTYCZNE (obowiązkowe): po każdym zadaniu/modyfikacji aktualizujesz odpowiedni plik katalogu** (`COMPONENTS_CATALOG.md`, `HOOKS_CATALOG.md`, `TOOLS_CATALOG.md`, `PROJECTS_CATALOG.md`, `PAGES_CATALOG.md`, `BLOG_CATALOG.md`).
+  - Dotyczy zarówno dodania nowych elementów, jak i modyfikacji istniejących.
+  - Dotyczy także zmian „małych” (np. dopisanie propsa, poprawka w istniejącym komponencie, zmiana treści artykułu).
+  - **To jest krok wymagany do domknięcia zadania** (robimy go razem z wpisem do `DONE_TASKS.md`).
+
+### Dodatkowe reguły
+
 - każdy komponent i cały kod powinien być zgodny z najlepszymi praktykami Next
 - przy tworzeniu nowych hooków lub komponentów sprawdź raport mówiący o tych które już są, jeśli są już podobne to ich użyj lub stwórz nowy wariant / propsy (bez require), które będą przydatne
 - nie zmieniaj wyglądu, treści ani funkcjonalności, chyba że wskazano inaczej
-- po zmianie, modyfikacji lub dodaniu nowego komponentu, hooku lub narzędzia opisz co się zmieniło w odpowiednim katalogu
 - nie wprowadzaj w `robots.tsx` globalnej blokady indeksacji całej witryny (blokowanie `/` jest zabronione)
-- ikony mają zawsze mieć kolor `text-slate-700`
 - nigdy nie zmieniaj numerów zadań
+
+
+---
+
+## Instrukcje operacyjne
 
 ### Instrukcja przed każdym zadaniem (obowiązkowo)
 
 - Jeśli w trakcie zadania edytujesz/refaktorujesz plik tak, że staje się pusty (0B / tylko whitespace / tymczasowy „barrel” bez wartości), usuń go od razu i popraw wszystkie importy.
+
+- Przed zadaniem, które dotyka komponentów/hooków/narzędzi/stron/artykułów, możesz (i warto) szybko sprawdzić odpowiedni plik katalogu (`*_CATALOG.md`), żeby być zaznajomionym z istniejącymi elementami i nie dublować rozwiązań.
 
   **KRYTYCZNE: NIE MODYFIKOWAĆ plików konfiguracji SEO (sitemap/robots)**
 
@@ -86,6 +130,7 @@ Dla każdego zadania:
   - zadań z grupy **AUDIT** (`AUDIT-*`)
   - zadań content-only / docs-only, które w treści mają wpis `Weryfikacja: nie jest wymagana`
 - Zachowana dostępność (focus ring, aria, keyboard).
+- Aktualizacja odpowiedniego `*_CATALOG.md` wykonana (patrz: „Workflow: jak domykamy zadania”).
 
 ---
 
@@ -183,7 +228,12 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Dodano pomysły ulepszeń dla istniejących narzędzi: `IDEA-011`-`IDEA-018`.
 
   - **Zrobione 2025-12-17**:
+
     - Audyt sekcji `/o-nas` + propozycje rozbudowy: `IDEA-019`-`IDEA-024`.
+
+  - **Zrobione 2025-12-18**:
+    - Audyt ogólny rozwoju serwisu: narzędzia, usługi, artykuły, cross-linking.
+    - Dodano pomysły: `IDEA-025` (QR generator), `IDEA-026` (opieka nad stroną), `IDEA-027` (konsultacje), `IDEA-028` (artykuł: stopka mailowa), `IDEA-029` (artykuł: favicon), `IDEA-030` (ToolsCarousel na usługach).
 
 - ❌ **[PERF-001] Assets: odchudzić największe obrazy w `public/assets/**` (bez zmiany wyglądu)\*\*
 
@@ -349,7 +399,6 @@ Zrobione zadania: `DONE_TASKS.md`.
     - `sanex`
   - `task` (uzupełnić / naprawić):
     - `colgate` (linia 972): usunąć placeholder `"task": "test"` i dodać realny opis.
-  - ✅ Higiena treści (przeniesione do `DONE_TASKS.md`)
   - Kryteria akceptacji:
     - Powyższe pola są uzupełnione i spójne semantycznie.
     - `npm run lint` i `npm run build` przechodzą.
@@ -368,6 +417,243 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Karty narzędzi w karuzeli prowadzą do poprawnych URL-i `/narzedzia/...`.
     - Brak regresji UI/UX istniejących karuzel.
     - `npm run lint` i `npm run build` przechodzą.
+
+---
+
+## Instrukcje: Treści i artykuły
+
+- **ZASADY TECHNICZNE (aktualizacja 2025-12-18):**
+  1. **Tytuł = pytanie**: Każdy artykuł musi mieć tytuł w formie pytania (np. „Dlaczego strona nie wyświetla się w Google i jak to naprawić?”).
+  2. **Polskie znaki**: Treść artykułu MUSI zawierać polskie znaki diakrytyczne (ą, ę, ć, ł, ń, ó, ś, ź, ż). NIE używaj ASCII bez polskich znaków.
+  3. **URL = tytuł**: Slug URL musi być 1:1 zgodny z tytułem (bez polskich znaków, z myślnikami zamiast spacji).
+  4. **Czas czytania**: Obliczany na podstawie realnej liczby słów. 200 słów = 1 minuta. Celuj w **5-8 minut** (1000-1600 słów).
+  5. **Wsparcie klastra usług**: Artykuły i narzędzia zawsze wspierają klaster tematyczny usług na stronie. Linkuj do odpowiednich usług.
+  6. **Nie rozdrabniaj**: Jeśli temat jest odpowiedzią na jedno pytanie główne, zrób jeden kompleksowy artykuł zamiast kilku małych.
+
+- **Cel serii**: zwiększać widoczność SEO ofert, domeny i narzędzi Arteon poprzez edukację w mentorskim tonie, bez żargonu (prowadź czytelnika do zrozumienia i działania, ale bez presji).
+- **Docelowy czytelnik**: MŚP (usługi + e-commerce), często bez wiedzy technicznej. Tekst ma być zrozumiały bez znajomości SEO/UX, ale nie może być infantylny.
+- **Ton**: konkretnie, spokojnie, bez korpo-języka i wodolejstwa. Każde pojęcie „z branży” wyjaśnij w 1-2 zdaniach i od razu pokaż zastosowanie.
+- **WAŻNE: Ten styl dotyczy całego serwisu** — nie tylko artykułów. Stosuj go także na podstronach usług (`/uslugi/...`), narzędzi (`/narzedzia/...`), realizacji (`/realizacje/...`) oraz stronach informacyjnych (np. O nas, FAQ, Kontakt, Mapa strony).
+- **Spójność z istniejącymi stronami ofert i narzędzi**:
+  - Używaj podobnych typów sekcji i nagłówków jak na istniejących podstronach (np. „Co zyskujesz…”, „Na czym polega… i dlaczego działa?”, „Kiedy ma sens?”, „Proces”, „Jak mierzyć efekty?”, „Najczęstsze błędy”, „FAQ”, „Podsumowanie”).
+  - Jeśli podajesz liczby/statystyki, dodaj źródło w formie linku (np. „(źródło)”) tak jak na stronach ofert.
+- **Ton i rola autora**:
+  - Występujesz jako mentor i przewodnik.
+  - Pozycja komunikacyjna: „Jestem kilka kroków dalej, rozumiem proces i spokojnie przeprowadzę Cię przez decyzję.”
+  - Nie popisujesz się wiedzą techniczną i nie „sprzedajesz się” w treści.
+- **KLUCZOWE: Maksymalna prostota i przyjazność** (aktualizacja 2025-12-18):
+  - **Pisz tak, żeby zrozumiało 5-letnie dziecko i 60-letnia osoba bez wiedzy technicznej.**
+  - **Każdy termin techniczny natychmiast wyjaśniaj** — po użyciu terminu od razu odpowiedz na pytania: „Co to jest?” i „Po co to?”.
+  - **Każde zdanie = logiczny ciąg dalszy** — bez skoków myślowych, płynna narracja jak opowieść.
+  - **Ludzki język** — pisz jak do znajomego przy kawie, nie jak korporacyjna broszura.
+  - **Instrukcje krok po kroku** — przy podstronach narzędzi Arteon (oraz artykułach o narzędziach) dodawaj sekcję „Jak to zrobić w naszym narzędziu” z prostym przewodnikiem.
+  - Przykład dobrego wyjaśnienia:
+    - ❌ „Wygeneruj favicon.ico i apple-touch-icon.png”
+    - ✅ „Stwórz małą ikonkę, która pojawi się na karcie przeglądarki (to właśnie favicon — miniaturowa ikona Twojej strony). Dzięki niej Twoja strona wygląda profesjonalnie i łatwiej ją znaleźć wśród wielu otwartych kart.”
+- **Styl językowy**:
+  - Pełne, poprawne zdania (bez równoważników zdań).
+  - Naturalny rytm (jak w dobrej rozmowie): spokojnie, rzeczowo, klarownie.
+  - Bez slangu i kolokwializmów.
+- **Narracja**:
+  - Druga osoba liczby pojedynczej („Twoja firma”, „zyskujesz”, „widzisz efekt”).
+- **Zakazane formy**:
+  - Hasła marketingowe bez treści („kompleksowe rozwiązania”, „nowoczesne podejście”).
+  - Żargon techniczny bez wyjaśnienia.
+  - Clickbait.
+- **Zasada benefit-first (kluczowa)**: każdą informację techniczną poprzedź korzyścią.
+  - Schemat: co zyskujesz → dlaczego to ważne → jakim narzędziem jest to realizowane.
+  - Przykład:
+    - ❌ „Strona jest oparta o Next.js”
+    - ✅ „Strona działa szybciej, jest stabilna i łatwa w rozwoju. Dlatego korzystamy z nowoczesnych technologii takich jak Next.js.”
+- **Struktura** (aktualizacja 2025-12-18):
+  - Poniższy układ to **punkt wyjścia**, nie sztywny szablon:
+    - Wstęp (o czym artykuł, co czytelnik zyska)
+    - Wyjaśnienie problemu/tematu (co to jest, dlaczego ważne)
+    - Rozwiązanie / kroki / proces
+    - Najczęstsze błędy lub pułapki
+    - Podsumowanie + CTA
+  - **Dopasuj strukturę do tematu**. Jeśli logiczny podział wymaga innego układu — zrób inaczej. Ważne, żeby artykuł miał sens i płynnie prowadził czytelnika, nie żeby pasował do szablonu.
+  - Przykłady elastyczności:
+    - Artykuł o narzędziu → może mieć dużą sekcję „Jak to zrobić krok po kroku”.
+    - Artykuł porównawczy → może mieć strukturę „Opcja A vs Opcja B”.
+    - Artykuł o procesie → może mieć oś czasu zamiast sekcji.
+
+### Co robić, a czego NIE robić (aktualizacja 2025-12-18)
+
+**✅ TAK — rób to:**
+- Zacznij od konkretu, nie od wstępu o wstępie
+- Wyjaśniaj terminy od razu po ich użyciu (w nawiasie lub w następnym zdaniu)
+- Używaj analogii i przykładów z życia („Pomyśl o tym jak o...”, „Wyobraź sobie, że...”)
+- Pisz jak do znajomego — naturalnie, bez sztywności
+- Dodawaj instrukcje krok po kroku do narzędzi Arteon
+- Linkuj do powiązanych artykułów i usług tam, gdzie ma to sens
+- Używaj pytań jako nagłówków (np. „Ile to kosztuje?”, „Kiedy warto?”)
+- Kończ podsumowaniem z 3-5 konkretnymi wnioskami
+
+**❌ NIE — unikaj tego:**
+- Nie zaczyniaj od ogólników („W dzisiejszych czasach...”, „Jak wszyscy wiemy...”)
+- Nie używaj żargonu bez wyjaśnienia (SEO, CTA, long-tail — zawsze wyjaśnij)
+- Nie pisz korpo-językiem („kompleksowe rozwiązania”, „innowacyjne podejście”)
+- Nie kopiuj struktury bezmyślnie — dopasuj do tematu
+- Nie twórz checklist ani list do odhaczania
+- Nie obiecuj rezultatów ani gwarancji
+- Nie upychaj słów kluczowych sztucznie
+- Nie pisz długich wstępów przed przejściem do sedna
+
+- **Zakaz checklist**: nie twórz w artykułach sekcji „Checklista” ani list „do odhaczania”. Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety”.
+- **Konkret zamiast ogólników**: w każdym tekście dodaj co najmniej 1 „do skopiowania”.
+- **Linkowanie jako seria**: buduj klaster tematyczny i prowadź czytelnika po serwisie (naturalnie, bez „upychania” linków):
+  - W treści lub na końcu dodaj „Zobacz też” z 2-4 linkami do powiązanych artykułów z tej listy.
+  - W CTA na końcu zawsze daj 1 sensowny next-step dopasowany do tematu (opcjonalnie drugi link).
+  - Jeśli temat dotyczy narzędzia, pierwszy link kieruj do narzędzia, a drugi (jeśli ma sens) do powiązanej oferty.
+- **Linkowanie wewnętrzne — priorytety** (aktualizacja 2025-12-18):
+  - **Linki w treści mogą prowadzić do wszystkiego**: ofert, narzędzi, innych artykułów — nie tylko w końcowym CTA, ale naturalnie w środku tekstu.
+  - **Priorytet linkowania**:
+    1. **Oferty/usługi (`/uslugi/...`)** — najważniejsze. Jeśli temat naturalnie nawiązuje do usługi, linkuj do niej. Nie nachalnie, ale tam gdzie pasuje do kontekstu.
+    2. **Narzędzia (`/narzedzia/...`)** — jeśli mamy narzędzie, które pomoże czytelnikowi w tej sytuacji.
+    3. **Powiązane artykuły (`/edukacja/...`)** — jeśli mamy artykuł, który rozwija dany wątek.
+  - **Jak linkować naturalnie**:
+    - ✅ „Jeśli chcesz to zrobić sam, skorzystaj z naszego [generatora palet](/narzedzia/generator-palet-kolorow-online).”
+    - ✅ „To dobry moment, żeby [zlecić audyt SEO](/uslugi/marketing/pozycjonowanie-stron) — sprawdzimy, co blokuje Twoją stronę.”
+    - ❌ Nie upychaj linków na siłę. Link ma wynikać z kontekstu.
+  - **Na końcu artykułu**: zasady „Zobacz też” i CTA stosuj według punktu „Linkowanie jako seria” powyżej.
+- **Kolejność artykułów w plikach**: nowy artykuł zawsze wstawiaj na górze listy, żeby zachować prawidłową kolejność (najnowsze pierwsze) — w szczególności w `data/pl/blog.json` (początek `articles[]`).
+- **SEO - jak pisać pod Google w 2025 roku**:
+  - People-first content / Helpful Content Update / nacisk na E‑E‑A‑T.
+  - Tekst pisany dla człowieka, nie algorytmu.
+  - Naturalne użycie fraz (bez powtórek „pod SEO”).
+  - Logiczna struktura i realna wartość edukacyjna.
+  - Struktura docelowa:
+    - 1 główny temat (H1).
+    - 8-12 sekcji (H2/H3).
+    - Pytania użytkownika jako nagłówki.
+  - Długość:
+    - Blog: ok. 1 800-2 200 słów.
+    - Dla ofert: tyle, ile potrzeba do podjęcia decyzji (bez sztucznego „dopisywania pod SEO”).
+- **Semantyka i scoring (dla copywritera)**:
+  - Cel: Content Score min. 70 (NeuronWriter / Surfer) bez psucia jakości.
+  - Używaj naturalnych synonimów i pojęć powiązanych.
+  - Zakaz: sztucznych bloków „frazy kluczowe” i powtarzania słów dla samego SEO.
+- **E‑E‑A‑T (wiarygodność)**:
+  - Gdy wspominasz standardy lub „best practices”, podeprzyj je źródłem (Google Search Central, OWASP, WCAG) albo opisem z praktyki wdrożeń („najczęściej widzimy…”).
+  - Pokazuj doświadczenie praktyczne i tłumacz „dlaczego coś działa”.
+  - Unikaj obietnic wyników i gwarancji efektów.
+  - Dopuszczalne: statystyki, dane z wiarygodnych źródeł, konkretne przykłady.
+  - Zakazane: gwarancje efektów, wymyślanie liczb, „100% skuteczności”.
+- **Projekty koncepcyjne i przykłady**: jeśli tekst zawiera przykładową wycenę/przykładowy projekt/symulację efektu, dopisz: „Projekt koncepcyjny — dane przykładowe.”
+- **CTA**: ma być spokojne, nienaciskające i informacyjne (bez presji). Czytelnik po CTA ma wiedzieć, jaki jest następny krok i co zyska.
+  - Przykłady CTA:
+    - „Sprawdź, czy to rozwiązanie ma sens w Twoim przypadku”
+    - „Porozmawiajmy o Twoim projekcie”
+    - „Zobacz możliwe scenariusze”
+- **Model ofertowy (Value-Based Offers / Hormozi)**:
+  - Skupienie na rezultacie, nie na „usłudze”.
+  - Jasno pokaż: problem → mechanizm rozwiązania → zakres pracy → ograniczenia (czego nie robimy).
+  - Opisuj zmianę, jaką klient przejdzie, i jasno określ, co dokładnie otrzymuje.
+  - Buduj poczucie bezpieczeństwa decyzji (bez presji).
+- **Zasada nadrzędna**: jeśli treść brzmi jak reklama — jest zła. Jeśli brzmi jak rozmowa z kompetentnym doradcą — jest dobra.
+
+---
+
+## Zadania: Artykuły (backlog)
+
+- ❌ **[2] Blog: Jakie materiały są potrzebne, żeby móc zlecić stronę internetową?**
+  - **Konspekt (H2/H3)**:
+    - H2: Dlaczego przygotowane materiały przyspieszają realizację i obniżają koszt
+    - H2: Minimum na start: co jest niezbędne, żeby stworzyć stronę internetową?
+    - H3: Informacje o firmie i ofercie (dla kogo, co sprzedajesz, przewagi)
+    - H3: Cele i priorytety (leady, sprzedaż, marka, rekrutacja) + co mierzymy
+    - H3: Treści na podstrony (home/usługi/o nas/kontakt) + jaka długość i styl
+    - H3: Materiały wizualne (logo, kolory, fonty, zdjęcia: własne vs stock)
+    - H3: Dowody zaufania (opinie, realizacje, case studies, liczby)
+    - H3: Dostępy i technikalia (domena/DNS/hosting/poczta/GA4/GSC)
+    - H3: Funkcje i integracje (formularze, CRM, newsletter, kalendarz) - jak je spisać
+    - H2: Najczęstsze braki, które opóźniają realizację strony i jak ich uniknąć
+
+- ❌ **[3] Blog: Struktura strony usługowej: jak ułożyć sekcje, żeby użytkownik łatwiej zrozumiał ofertę?**
+  - **Konspekt (H2/H3)**:
+    - H2: Co użytkownik musi zrozumieć w 10 sekund (co, dla kogo, efekt)
+    - H2: Proponowany układ strony usługi (sekcje krok po kroku)
+    - H2: Hero i pierwsza sekcja: jak pisać nagłówki i leady (bez żargonu)
+    - H2: Zakres usługi: jak opisać „co dostaję” (deliverables) + granice
+    - H2: Proces współpracy: jak pokazać etapy i skrócić niepewność
+    - H2: Dowody i wiarygodność (opinie, case study, liczby, realizacje)
+    - H2: FAQ i obiekcje (co dodać, żeby odciążyć sprzedaż)
+    - H2: CTA i konwersja (gdzie i ile CTA, jak nie być nachalnym)
+    - H2: Podsumowanie: priorytety strony usługowej (co poprawić najpierw i dlaczego)
+
+- ❌ **[6] Blog: 10 najczęstszych błędów w sekcji „O nas” i jak je poprawić**
+  - **Konspekt (H2/H3)**:
+    - H2: Po co jest „O nas” (zaufanie, domykanie decyzji, wiarygodność)
+    - H2: 10 najczęstszych błędów (lista + dlaczego to szkodzi)
+    - H3: Ogólniki („dynamiczna firma”) - jak przerobić na konkrety (przykłady zdań)
+    - H3: Brak ludzi i kompetencji - jak to pokazać bez „ściany CV”
+    - H3: Brak dowodów (opinie, liczby, realizacje) - co dodać zamiast obietnic
+    - H3: Historia firmy zamiast wartości dla klienta - jak zmienić narrację
+    - H2: Proponowana struktura sekcji/strony „O nas” (układ do skopiowania)
+    - H2: Jak wpleść CTA i next-step (bez agresywnego tonu)
+    - H2: Podsumowanie: czy „O nas” buduje zaufanie (najważniejsze sygnały)
+
+- ❌ **[7] Blog: Jak zaprojektować stronę kontaktową, która zwiększa liczbę zapytań?**
+  - **Konspekt (H2/H3)**:
+    - H2: Cel strony kontaktowej: więcej zapytań vs lepsza jakość leadów
+    - H2: Elementy obowiązkowe (telefon/e-mail/formularz/adres/godziny/mapa)
+    - H2: Formularz: minimum pól + kiedy dodać pytania kwalifikacyjne
+    - H2: Mikrocopy, które zwiększa wysyłkę (czas odpowiedzi, co dalej, „bez spamu”)
+    - H2: Wiarygodność i bezpieczeństwo (RODO, polityka prywatności, antyspam)
+    - H2: Mobile UX (czytelność, kliknięcie w numer, błędy walidacji)
+    - H2: Jak mierzyć efekty (konwersje: formularz/telefon/mail)
+    - H2: Najczęstsze błędy + szybkie poprawki
+
+- ❌ **[18] Blog: Mapa strony dla użytkownika: jak ją wykorzystać do lepszej indeksacji?**
+  - **Konspekt (H2/H3)**:
+    - H2: Mapa strony dla użytkownika vs sitemap.xml (różnice)
+    - H2: Kiedy mapa strony ma sens (rozbudowana oferta/blog/narzędzia)
+    - H2: Jak zbudować strukturę (kategorie, głębokość, priorytety)
+    - H2: Jak mapa strony wspiera SEO (linkowanie wewnętrzne i crawl)
+    - H2: Czego nie dodawać (noindex, duplikaty, strony techniczne)
+    - H2: Jak utrzymać aktualność (proces i owner)
+    - H2: Podsumowanie wdrożenia + najczęstsze błędy
+
+- ❌ **[25] Blog: Kiedy przebudowa strony ma sens, a kiedy wystarczy jej optymalizacja?**
+  - **Konspekt (H2/H3)**:
+    - H2: Jak rozpoznać, co jest problemem (treść/UX/SEO/technologia)
+    - H2: Kiedy wystarczy optymalizacja (quick wins: treści, szybkość, konwersja)
+    - H2: Kiedy przebudowa jest konieczna (architektura, skalowanie, bezpieczeństwo)
+    - H2: Ryzyka przebudowy dla SEO i jak je ograniczyć (audyt, 301, canonical)
+    - H2: Podejście etapowe (co robić po kolei, żeby nie zatrzymać biznesu)
+    - H2: Proste drzewko decyzyjne (pytania „tak/nie”)
+    - H2: Co dalej (CTA: audyt + plan działań)
+
+- ❌ **[107] Blog: Karta produktu na stronie: 15 elementów, które zwiększają sprzedaż bez obniżania ceny**
+  - **Konspekt (H2/H3)**:
+    - H2: Co ma zrobić karta produktu (zredukować ryzyko i ułatwić decyzję)
+    - H2: 15 elementów skutecznej karty produktu (lista + krótkie uzasadnienia)
+    - H2: Opis produktu: język korzyści + konkrety (jak pisać, żeby sprzedawało)
+    - H2: Redukcja obiekcji (dostawa, zwroty, gwarancja, płatności, zaufanie)
+    - H2: UX i mobile (czytelność, kolejność sekcji, sticky CTA, zdjęcia)
+    - H2: SEO karty produktu (unikalny content + dane strukturalne Product/Offer)
+    - H2: Analityka i testy (add-to-cart, porzucone koszyki, A/B w realnych warunkach)
+
+- ❌ **[108] Blog: Meta title i meta description: jak pisać, żeby zwiększyć CTR i nie być uciętym w Google?**
+  - **Konspekt (H2/H3)**:
+    - H2: Po co są meta title i description (co zyskujesz: więcej wejść z tych samych pozycji)
+    - H2: Jak Google realnie je wyświetla (kiedy podmienia, a kiedy trzyma Twoją wersję)
+    - H2: Długość i czytelność: zasady, które działają (bez „magicznych liczb”)
+    - H2: Wzory do skopiowania (usługa lokalna / usługa B2B / sklep / artykuł)
+    - H2: Najczęstsze błędy (duplikaty, brak konkretu, obietnice bez pokrycia)
+    - H2: Jak sprawdzać i poprawiać meta szybko (narzędzie: licznik meta title/description)
+    - H2: Podsumowanie: 5 priorytetów na start + CTA (pozycjonowanie stron / konsultacja)
+
+- ❌ **[109] Blog: Favicon i ikony strony: co przygotować, żeby działały w przeglądarkach, Google i Lighthouse?**
+  - **Konspekt (H2/H3)**:
+    - H2: Co daje favicon i ikony (wiarygodność marki + spójność na mobile)
+    - H2: Jakie pliki są potrzebne w praktyce (favicon.ico, apple-touch-icon, ikony 192/512)
+    - H2: Skąd biorą się problemy (zły rozmiar, tło, cache, brak manifestu)
+    - H2: Jak przygotować zestaw ikon w 10 minut (narzędzie: generator favicon)
+    - H2: Jak sprawdzić, czy wszystko działa (Lighthouse, przeglądarki, urządzenia)
+    - H2: Najczęstsze błędy i poprawki (na przykładach)
+    - H2: Podsumowanie + CTA (strony internetowe / identyfikacja wizualna)
 
 ---
 
@@ -575,42 +861,6 @@ Wymagany format (kopiuj i uzupełnij):
     - `npm run lint`
     - `npm run build`
 
-- ❌ **[IDEA-008] Tester kontrastu WCAG: obsługa HSL/alpha + propozycja koloru spełniającego AA/AAA**
-
-  - Cel i uzasadnienie:
-
-    - Projektanci częściej pracują na HSL, a w UI realnie występują też kolory z alpha (RGBA) — wsparcie formatów zmniejsza tarcie.
-    - Propozycja „najbliższego” koloru spełniającego AA/AAA zwiększa wartość narzędzia (nie tylko diagnoza, ale i rozwiązanie).
-
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Rozszerzyć parser o `hsl()` / `hsla()`.
-    - Jeśli kolor ma alpha (`rgba/hsla`) liczyć kontrast po kompozycji na tle.
-    - Dodać akcję `Dopasuj`, która proponuje wariant koloru spełniający docelowy poziom (np. AA dla tekstu zwykłego) i pozwala skopiować wynik.
-  - Pliki i ścieżki:
-    - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
-    - `components/sections/tools/WcagContrastChecker.tsx`
-    - `lib/tools/color/contrast.ts`
-    - `lib/tools/color/convert.ts`
-  - SEO:
-    - URL/slug: `/narzedzia/tester-kontrastu-kolorow-wcag`
-    - `metadata.title`: `Tester kontrastu kolorów WCAG 2.1 AA i AAA`
-    - `metadata.description`: `Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA`
-    - OG image: `public/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp`
-    - Schema: `WebApplication`
-  - Kryteria akceptacji:
-    - Narzędzie poprawnie przyjmuje: `#rgb/#rrggbb`, `rgb()`, `rgba()`, `hsl()`, `hsla()`.
-    - Dla kolorów z alpha kontrast jest liczony po kompozycji (brak mylących wyników).
-    - Akcja `Dopasuj` generuje kolor, który spełnia wybrany próg i da się go skopiować jednym kliknięciem.
-  - Weryfikacja:
-
-    - `npm run lint`
-    - `npm run build`
-
-  - **Zrobione 2025-12-17**:
-    - Dodano parsing `hsl()/hsla()` + uwzględniono alpha przez kompozycję w `getContrastRatio()`.
-    - UI: bezpieczny color picker dla nie-HEX + selektor progu WCAG + akcja `Dopasuj` (podgląd, `Ustaw`, kopiowanie).
-    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
-
 - ❌ **[IDEA-009] Generator palet kolorów: eksport do CSS variables/Tailwind + kopiowanie całej palety**
 
   - Cel i uzasadnienie:
@@ -700,248 +950,102 @@ Wymagany format (kopiuj i uzupełnij):
     - `npm run lint`
     - `npm run build`
 
-## Artykuły
+- ❌ **[IDEA-026] Usługi: „Opieka nad stroną" — pakiety utrzymania i wsparcia technicznego**
 
-### Instrukcje tworzenia artykułów (wnioski na podstawie tej listy tematów)
+  - Cel i uzasadnienie:
+    - Klienci po wdrożeniu strony potrzebują regularnej opieki (aktualizacje, backupy, drobne zmiany, monitoring).
+    - Strona usługi domyka ścieżkę klienta i generuje przychód recurring.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowa podstrona usługi z opisem pakietów (np. Basic/Standard/Premium), zakresem prac, cennikiem i FAQ.
+  - Pliki i ścieżki:
+    - `app/(pl)/uslugi/opieka-nad-strona/page.tsx`
+    - `components/shared/navigation-data/pl.ts` (`OFFER_SECTIONS_PL` → sekcja `witryny`)
+  - SEO:
+    - URL/slug: `/uslugi/opieka-nad-strona`
+    - `metadata.title`: `Opieka nad stroną internetową — pakiety utrzymania i wsparcia | Arteon`
+    - `metadata.description`: `Regularne aktualizacje, backupy, monitoring i drobne zmiany na stronie. Wybierz pakiet dopasowany do potrzeb Twojej firmy.`
+    - OG image: `public/assets/og/uslugi-opieka-nad-strona.webp`
+    - Schema: `Service` + `BreadcrumbList`
+  - Kryteria akceptacji:
+    - Min. 3 pakiety z jasnym zakresem i ceną.
+    - FAQ min. 6 pytań (co obejmuje, czego nie, jak zgłaszać, SLA).
+    - Strona podpięta do nawigacji (submenu Usługi → Witryny).
+  - Weryfikacja:
+    - `npm run lint`
+    - `npm run build`
 
-- **Cel serii**: zwiększać widoczność SEO ofert, domeny i narzędzi Arteon poprzez edukację w mentorskim tonie, bez żargonu (prowadź czytelnika do zrozumienia i działania, ale bez presji).
-- **Docelowy czytelnik**: MŚP (usługi + e-commerce), często bez wiedzy technicznej. Tekst ma być zrozumiały bez znajomości SEO/UX, ale nie może być infantylny.
-- **Ton**: konkretnie, spokojnie, bez korpo-języka i wodolejstwa. Każde pojęcie „z branży” wyjaśnij w 1-2 zdaniach i od razu pokaż zastosowanie.
-- **Spójność z istniejącymi stronami ofert i narzędzi**:
-  - Używaj podobnych typów sekcji i nagłówków jak na istniejących podstronach (np. „Co zyskujesz…”, „Na czym polega… i dlaczego działa?”, „Kiedy ma sens?”, „Proces”, „Jak mierzyć efekty?”, „Najczęstsze błędy”, „FAQ”, „Podsumowanie”).
-  - Jeśli podajesz liczby/statystyki, dodaj źródło w formie linku (np. „(źródło)”) tak jak na stronach ofert.
-- **Ton i rola autora**:
-  - Występujesz jako mentor i przewodnik.
-  - Pozycja komunikacyjna: „Jestem kilka kroków dalej, rozumiem proces i spokojnie przeprowadzę Cię przez decyzję.”
-  - Nie popisujesz się wiedzą techniczną i nie „sprzedajesz się” w treści.
-- **Styl językowy**:
-  - Pełne, poprawne zdania (bez równoważników zdań).
-  - Naturalny rytm (jak w dobrej rozmowie): spokojnie, rzeczowo, klarownie.
-  - Bez slangu i kolokwializmów.
-- **Narracja**:
-  - Druga osoba liczby pojedynczej („Twoja firma”, „zyskujesz”, „widzisz efekt”).
-- **Zakazane formy**:
-  - Hasła marketingowe bez treści („kompleksowe rozwiązania”, „nowoczesne podejście”).
-  - Żargon techniczny bez wyjaśnienia.
-  - Clickbait.
-- **Zasada benefit-first (kluczowa)**: każdą informację techniczną poprzedź korzyścią.
-  - Schemat: co zyskujesz → dlaczego to ważne → jakim narzędziem jest to realizowane.
-  - Przykład:
-    - ❌ „Strona jest oparta o Next.js”
-    - ✅ „Strona działa szybciej, jest stabilna i łatwa w rozwoju. Dlatego korzystamy z nowoczesnych technologii takich jak Next.js.”
-- **Struktura**: w każdym artykule utrzymuj podobny układ:
-  - TL;DR (3-6 punktów: najważniejsze wnioski)
-  - Co to jest / kiedy ma sens (dla kogo)
-  - Kroki / plan wdrożenia (kolejność działań)
-  - Najczęstsze błędy + szybkie poprawki
-  - Podsumowanie + CTA
-- **Zakaz checklist**: nie twórz w artykułach sekcji „Checklista” ani list „do odhaczania”. Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety”.
-- **Konkret zamiast ogólników**: w każdym tekście dodaj co najmniej 1 „do skopiowania”:
-  - wzór sekcji (template),
-  - przykłady zdań/mikrocopy,
-  - listę pytań (FAQ),
-  - mini-audyt w formie pytań kontrolnych (co sprawdzić u siebie),
-  - podsumowanie: 3-7 priorytetów/wniosków (co zrobić teraz i dlaczego).
-- **Linkowanie jako seria**: buduj klaster tematyczny i prowadź czytelnika po serwisie (naturalnie, bez „upychania” linków):
-  - W treści lub na końcu dodaj „Zobacz też” z 2-4 linkami do powiązanych artykułów z tej listy.
-  - W CTA na końcu zawsze daj 1 sensowny next-step do oferty (`/uslugi/...`) lub narzędzia (`/narzedzia/...`) dopasowanego do tematu (opcjonalnie drugi link).
-  - Jeśli temat dotyczy narzędzia, pierwszy link kieruj do narzędzia, a drugi (jeśli ma sens) do powiązanej oferty.
-- **Kolejność artykułów w plikach**: nowy artykuł zawsze wstawiaj na górze listy, żeby zachować prawidłową kolejność (najnowsze pierwsze) — w szczególności w `data/pl/blog.json` (początek `articles[]`).
-- **SEO - jak pisać pod Google w 2025 roku**:
-  - People-first content / Helpful Content Update / nacisk na E‑E‑A‑T.
-  - Tekst pisany dla człowieka, nie algorytmu.
-  - Naturalne użycie fraz (bez powtórek „pod SEO”).
-  - Logiczna struktura i realna wartość edukacyjna.
-  - Struktura docelowa:
-    - 1 główny temat (H1).
-    - 8-12 sekcji (H2/H3).
-    - Pytania użytkownika jako nagłówki.
-  - Długość:
-    - Blog: ok. 1 800-2 200 słów.
-    - Dla ofert: tyle, ile potrzeba do podjęcia decyzji (bez sztucznego „dopisywania pod SEO”).
-- **Semantyka i scoring (dla copywritera)**:
-  - Cel: Content Score min. 70 (NeuronWriter / Surfer) bez psucia jakości.
-  - Używaj naturalnych synonimów i pojęć powiązanych.
-  - Zakaz: sztucznych bloków „frazy kluczowe” i powtarzania słów dla samego SEO.
-- **E‑E‑A‑T (wiarygodność)**:
-  - Gdy wspominasz standardy lub „best practices”, podeprzyj je źródłem (Google Search Central, OWASP, WCAG) albo opisem z praktyki wdrożeń („najczęściej widzimy…”).
-  - Pokazuj doświadczenie praktyczne i tłumacz „dlaczego coś działa”.
-  - Unikaj obietnic wyników i gwarancji efektów.
-  - Dopuszczalne: statystyki, dane z wiarygodnych źródeł, konkretne przykłady.
-  - Zakazane: gwarancje efektów, wymyślanie liczb, „100% skuteczności”.
-- **Projekty koncepcyjne i przykłady**: jeśli tekst zawiera przykładową wycenę/przykładowy projekt/symulację efektu, dopisz: „Projekt koncepcyjny — dane przykładowe.”
-- **CTA**: na końcu 1 jasny next-step dopasowany do tematu. CTA ma być spokojne, nienaciskające, informacyjne.
-  - Przykłady CTA:
-    - „Sprawdź, czy to rozwiązanie ma sens w Twoim przypadku”
-    - „Porozmawiajmy o Twoim projekcie”
-    - „Zobacz możliwe scenariusze”
-- **Model ofertowy (Value-Based Offers / Hormozi)**:
-  - Skupienie na rezultacie, nie na „usłudze”.
-  - Jasno pokaż: problem → mechanizm rozwiązania → zakres pracy → ograniczenia (czego nie robimy).
-  - Opisuj zmianę, jaką klient przejdzie, i jasno określ, co dokładnie otrzymuje.
-  - Buduj poczucie bezpieczeństwa decyzji (bez presji).
-- **Zasada nadrzędna**: jeśli treść brzmi jak reklama — jest zła. Jeśli brzmi jak rozmowa z kompetentnym doradcą — jest dobra.
+- ❌ **[IDEA-027] Usługi: „Konsultacje" — jednorazowe sesje doradcze (UX/SEO/strategia)**
 
-### Lista artykułów + briefy (konspekt nagłówków/tematów)
+  - Cel i uzasadnienie:
+    - Część klientów nie potrzebuje pełnego projektu, tylko punktowej porady (audyt mini, przegląd strony, plan działań).
+    - Niski próg wejścia do współpracy i budowanie relacji.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowa podstrona z opisem formatu konsultacji, tematów (UX, SEO, strategia www), procesu rezerwacji i cennika.
+  - Pliki i ścieżki:
+    - `app/(pl)/uslugi/konsultacje/page.tsx`
+    - `components/shared/navigation-data/pl.ts` (`OFFER_SECTIONS_PL`)
+  - SEO:
+    - URL/slug: `/uslugi/konsultacje`
+    - `metadata.title`: `Konsultacje UX, SEO i strategii www — jednorazowe sesje doradcze | Arteon`
+    - `metadata.description`: `Potrzebujesz punktowej porady? Umów konsultację i uzyskaj konkretne rekomendacje dotyczące UX, SEO lub strategii rozwoju strony.`
+    - OG image: `public/assets/og/uslugi-konsultacje.webp`
+    - Schema: `Service` + `BreadcrumbList`
+  - Kryteria akceptacji:
+    - Jasny opis formatu (czas, zakres, deliverables).
+    - CTA do rezerwacji/kontaktu.
+    - FAQ min. 5 pytań.
+  - Weryfikacja:
+    - `npm run lint`
+    - `npm run build`
 
-#### [2] Jakie materiały są potrzebne, żeby móc zlecić stronę internetową?
+- ❌ **[IDEA-030] Rozbudowa: ToolsCarousel na stronach usług i realizacji**
 
-- **Konspekt (H2/H3)**:
-  - H2: Dlaczego przygotowane materiały przyspieszają realizację i obniżają koszt
-  - H2: Minimum na start: co jest niezbędne, żeby stworzyć stronę internetową?
-  - H3: Informacje o firmie i ofercie (dla kogo, co sprzedajesz, przewagi)
-  - H3: Cele i priorytety (leady, sprzedaż, marka, rekrutacja) + co mierzymy
-  - H3: Treści na podstrony (home/usługi/o nas/kontakt) + jaka długość i styl
-  - H3: Materiały wizualne (logo, kolory, fonty, zdjęcia: własne vs stock)
-  - H3: Dowody zaufania (opinie, realizacje, case studies, liczby)
-  - H3: Dostępy i technikalia (domena/DNS/hosting/poczta/GA4/GSC)
-  - H3: Funkcje i integracje (formularze, CRM, newsletter, kalendarz) - jak je spisać
-  - H2: Najczęstsze braki, które opóźniają realizację strony i jak ich uniknąć
+  - Cel i uzasadnienie:
+    - Zwiększenie widoczności narzędzi i cross-linking między sekcjami serwisu.
+    - Użytkownik przeglądający usługi może od razu skorzystać z powiązanego narzędzia.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Dodać `ToolsCarousel` z propem `excludeSlug` (aby nie pokazywać aktualnego narzędzia) na wybranych stronach:
+      - `/uslugi/projekty-graficzne` (palety, kontrast)
+      - `/uslugi/marketing` (meta counter)
+      - `/uslugi/strony-internetowe` (WebP, favicon, meta)
+      - `/realizacje` (jako cross-sell)
+  - Pliki i ścieżki:
+    - `app/(pl)/uslugi/projekty-graficzne/page.tsx`
+    - `app/(pl)/uslugi/marketing/page.tsx`
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx`
+    - `app/(pl)/realizacje/page.tsx`
+  - SEO:
+    - Brak zmian w metadata (tylko rozbudowa UI).
+  - Kryteria akceptacji:
+    - Karuzela narzędzi pojawia się na min. 3 stronach usług.
+    - Brak regresji w istniejącym UI/UX.
+  - Weryfikacja:
+    - `npm run lint`
+    - `npm run build`
 
-#### [3] Struktura strony usługowej: jak ułożyć sekcje, żeby użytkownik łatwiej zrozumiał ofertę?
+- ❌ **[IDEA-038] Nowe artykuły SEO — tematy wyodrębnione z długich artykułów**
+  - Cel: Rozbudowa bazy wiedzy o osobne, skoncentrowane artykuły na tematy, które wcześniej były tylko wspominane w innych artykułach.
+  - Artykuły do stworzenia:
+    1. ❌ **Czym jest crawl budget i jak go optymalizować?**
+       - Temat wyodrębniony z: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+       - Zakres: co to crawl budget, kiedy ma znaczenie (duże strony), jak sprawdzić w GSC, jak optymalizować.
+    2. ❌ **Duplikacja treści — jak ją wykryć i naprawić?**
+       - Temat wyodrębniony z: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+       - Zakres: czym jest duplikacja, przykłady, canonical, narzędzia do wykrywania.
+    3. ❌ **Core Web Vitals — jak poprawić wydajność strony?**
+       - Temat wyodrębniony z: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+       - Zakres: LCP, INP, CLS — co oznaczają, jak mierzyć, jak poprawić, narzędzia.
+    4. ❌ **Mobile-first indexing — jak przygotować stronę pod telefony?**
+       - Temat wyodrębniony z: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+       - Zakres: co to mobile-first, jak sprawdzić responsywność, typowe błędy.
+    5. ❌ **Dane strukturalne (schema.org) — jak pomóc Google zrozumieć stronę?**
+       - Temat wyodrębniony z: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+       - Zakres: czym są dane strukturalne, JSON-LD, typy schema, jak testować.
+    6. ❌ **Aktualizacje algorytmu Google — jak reagować na spadki pozycji?**
+       - Temat wyodrębniony z: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+       - Zakres: czym są Core Updates, jak diagnozować spadki, co robić.
+    7. ❌ **Jak pisać treści, które Google uzna za wartościowe?**
+       - Temat wyodrębniony z: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+       - Zakres: thin content, E-E-A-T, struktura, przykłady.
+  - Weryfikacja: `npm run lint`
 
-- **Konspekt (H2/H3)**:
-  - H2: Co użytkownik musi zrozumieć w 10 sekund (co, dla kogo, efekt)
-  - H2: Proponowany układ strony usługi (sekcje krok po kroku)
-  - H2: Hero i pierwsza sekcja: jak pisać nagłówki i leady (bez żargonu)
-  - H2: Zakres usługi: jak opisać „co dostaję” (deliverables) + granice
-  - H2: Proces współpracy: jak pokazać etapy i skrócić niepewność
-  - H2: Dowody i wiarygodność (opinie, case study, liczby, realizacje)
-  - H2: FAQ i obiekcje (co dodać, żeby odciążyć sprzedaż)
-  - H2: CTA i konwersja (gdzie i ile CTA, jak nie być nachalnym)
-  - H2: Podsumowanie: priorytety strony usługowej (co poprawić najpierw i dlaczego)
-
-#### [6] 10 najczęstszych błędów w sekcji „O nas” i jak je poprawić
-
-- **Konspekt (H2/H3)**:
-  - H2: Po co jest „O nas” (zaufanie, domykanie decyzji, wiarygodność)
-  - H2: 10 najczęstszych błędów (lista + dlaczego to szkodzi)
-  - H3: Ogólniki („dynamiczna firma”) - jak przerobić na konkrety (przykłady zdań)
-  - H3: Brak ludzi i kompetencji - jak to pokazać bez „ściany CV”
-  - H3: Brak dowodów (opinie, liczby, realizacje) - co dodać zamiast obietnic
-  - H3: Historia firmy zamiast wartości dla klienta - jak zmienić narrację
-  - H2: Proponowana struktura sekcji/strony „O nas” (układ do skopiowania)
-  - H2: Jak wpleść CTA i next-step (bez agresywnego tonu)
-  - H2: Podsumowanie: czy „O nas” buduje zaufanie (najważniejsze sygnały)
-
-#### [7] Jak zaprojektować stronę kontaktową, która zwiększa liczbę zapytań?
-
-- **Konspekt (H2/H3)**:
-  - H2: Cel strony kontaktowej: więcej zapytań vs lepsza jakość leadów
-  - H2: Elementy obowiązkowe (telefon/e-mail/formularz/adres/godziny/mapa)
-  - H2: Formularz: minimum pól + kiedy dodać pytania kwalifikacyjne
-  - H2: Mikrocopy, które zwiększa wysyłkę (czas odpowiedzi, co dalej, „bez spamu”)
-  - H2: Wiarygodność i bezpieczeństwo (RODO, polityka prywatności, antyspam)
-  - H2: Mobile UX (czytelność, kliknięcie w numer, błędy walidacji)
-  - H2: Jak mierzyć efekty (konwersje: formularz/telefon/mail)
-  - H2: Najczęstsze błędy + szybkie poprawki
-
-#### [11] FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?
-
-- **Konspekt (H2/H3)**:
-
-  - H2: FAQ jako SEO + sprzedaż (long-tail i obiekcje)
-  - H2: Skąd brać pytania (sprzedaż, e-maile, GSC, rozmowy, konkurencja)
-  - H2: Jak wybierać i grupować pytania (priorytety, tematy, unikanie duplikacji)
-  - H2: Jak pisać odpowiedzi (krótko na start → rozwinięcie → link do szczegółów)
-  - H2: FAQ vs osobny artykuł (kiedy rozdzielić, żeby nie kanibalizować)
-  - H2: Wdrożenie na stronie (czytelność, dostępność, indeksowalność)
-  - H2: FAQ schema: kiedy ma sens i jak nie przesadzić
-  - H2: Przykładowe pytania (dla usług/stron) + podsumowanie: jak utrzymać FAQ aktualne
-
-- ✅ **Zrobione 2025-12-17**:
-  - Dodano artykuł do `data/pl/blog.json` (slug: `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`) wraz z `seo`, `contentBlocks`, `cta` i `faq`.
-  - Dodano linkowanie wewnętrzne do powiązanych treści oraz CTA do oferty.
-  - Weryfikacja: `npm run lint` (OK), `npm run build` (OK).
-
-#### [18] Mapa strony dla użytkownika: jak ją wykorzystać do lepszej indeksacji?
-
-- **Konspekt (H2/H3)**:
-  - H2: Mapa strony dla użytkownika vs sitemap.xml (różnice)
-  - H2: Kiedy mapa strony ma sens (rozbudowana oferta/blog/narzędzia)
-  - H2: Jak zbudować strukturę (kategorie, głębokość, priorytety)
-  - H2: Jak mapa strony wspiera SEO (linkowanie wewnętrzne i crawl)
-  - H2: Czego nie dodawać (noindex, duplikaty, strony techniczne)
-  - H2: Jak utrzymać aktualność (proces i owner)
-  - H2: Podsumowanie wdrożenia + najczęstsze błędy
-
-#### [20] Jak dobrać domenę i adresy URL podstron, aby wzmocnić pozycję strony w wyszukiwarce?
-
-- **Konspekt (H2/H3)**:
-
-  - H2: Domena: marka vs fraza (co dziś realnie pomaga, a co jest mitem)
-  - H2: TLD i kwestie praktyczne (np. `.pl`, przekierowania www/non-www)
-  - H2: Zasady dobrych URL (krótko, czytelnie, myślniki, spójność)
-  - H2: Struktura URL dla usług i bloga (przykłady „dobry vs zły”)
-  - H2: Canonical i przekierowania: minimum, które musi działać
-  - H2: Zmiana URL / migracja: plan minimum (mapa 301, testy, monitoring)
-  - H2: Najczęstsze błędy (mieszanie języków, losowe slugi, duplikaty)
-  - H2: Podsumowanie: planowanie URL-i przed startem projektu (priorytety i pułapki)
-
-- ✅ **Zrobione 2025-12-17**:
-  - Dodano artykuł do `data/pl/blog.json` (slug: `jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce`) wraz z `seo`, `contentBlocks`, `cta` i `faq`.
-  - Dodano okładkę: `public/assets/blog/jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce/jak-dobrac-domene-i-adresy-url-podstron-aby-wzmocnic-pozycje-strony-w-wyszukiwarce.webp`.
-  - Ujednolicono generowanie URL w linkach wewnętrznych (primaryCategory → fallback) w karuzeli artykułów i na `/mapa-strony`.
-  - Weryfikacja: `npm run lint` (OK), `npm run build` (OK).
-
-#### [25] Kiedy przebudowa strony ma sens, a kiedy wystarczy jej optymalizacja?
-
-- **Konspekt (H2/H3)**:
-  - H2: Jak rozpoznać, co jest problemem (treść/UX/SEO/technologia)
-  - H2: Kiedy wystarczy optymalizacja (quick wins: treści, szybkość, konwersja)
-  - H2: Kiedy przebudowa jest konieczna (architektura, skalowanie, bezpieczeństwo)
-  - H2: Ryzyka przebudowy dla SEO i jak je ograniczyć (audyt, 301, canonical)
-  - H2: Podejście etapowe (co robić po kolei, żeby nie zatrzymać biznesu)
-  - H2: Proste drzewko decyzyjne (pytania „tak/nie”)
-  - H2: Co dalej (CTA: audyt + plan działań)
-
-#### [32] Bezpieczeństwo strony internetowej: zabezpieczenia, które powinny być wdrożone w 2026
-
-- **Konspekt (H2/H3)**:
-
-  - H2: Najczęstsze zagrożenia dla stron firmowych (realne scenariusze)
-  - H2: Minimum bezpieczeństwa (HTTPS, aktualizacje, backup)
-  - H2: Dostępy i role (MFA, hasła, zasada najmniejszych uprawnień)
-  - H2: Formularze i antyspam (walidacja, rate-limit, honeypot, ochrona przed botami)
-  - H2: Dane i prywatność (RODO, retencja, minimalizacja)
-  - H2: Nagłówki bezpieczeństwa w praktyce (co dają i kiedy warto)
-  - H2: Monitoring i reakcja (alerty, logi, co robić po incydencie)
-  - H2: Podsumowanie: minimum / rekomendowane / advanced (priorytety wdrożenia)
-
-- ✅ **Zrobione 2025-12-17**:
-  - Dodano artykuł do `data/pl/blog.json` (slug: `bezpieczenstwo-strony-internetowej-zabezpieczenia-2026`) wraz z `seo`, `contentBlocks`, `cta` i `faq` + linkowaniem wewnętrznym.
-  - Dodano okładkę: `public/assets/blog/bezpieczenstwo-strony-internetowej-zabezpieczenia-2026/bezpieczenstwo-strony-internetowej-zabezpieczenia-2026.webp`.
-  - Weryfikacja: `blog.json` (JSON OK).
-
-#### [107] Karta produktu na stronie: 15 elementów, które zwiększają sprzedaż bez obniżania ceny
-
-- **Konspekt (H2/H3)**:
-  - H2: Co ma zrobić karta produktu (zredukować ryzyko i ułatwić decyzję)
-  - H2: 15 elementów skutecznej karty produktu (lista + krótkie uzasadnienia)
-  - H2: Opis produktu: język korzyści + konkrety (jak pisać, żeby sprzedawało)
-  - H2: Redukcja obiekcji (dostawa, zwroty, gwarancja, płatności, zaufanie)
-  - H2: UX i mobile (czytelność, kolejność sekcji, sticky CTA, zdjęcia)
-  - H2: SEO karty produktu (unikalny content + dane strukturalne Product/Offer)
-  - H2: Analityka i testy (add-to-cart, porzucone koszyki, A/B w realnych warunkach)
-
-#### [108] Meta title i meta description: jak pisać, żeby zwiększyć CTR i nie być uciętym w Google?
-
-- **Konspekt (H2/H3)**:
-  - H2: Po co są meta title i description (co zyskujesz: więcej wejść z tych samych pozycji)
-  - H2: Jak Google realnie je wyświetla (kiedy podmienia, a kiedy trzyma Twoją wersję)
-  - H2: Długość i czytelność: zasady, które działają (bez „magicznych liczb”)
-  - H2: Wzory do skopiowania (usługa lokalna / usługa B2B / sklep / artykuł)
-  - H2: Najczęstsze błędy (duplikaty, brak konkretu, obietnice bez pokrycia)
-  - H2: Jak sprawdzać i poprawiać meta szybko (narzędzie: licznik meta title/description)
-  - H2: Podsumowanie: 5 priorytetów na start + CTA (pozycjonowanie stron / konsultacja)
-
-#### [109] Favicon i ikony strony: co przygotować, żeby działały w przeglądarkach, Google i Lighthouse?
-
-- **Konspekt (H2/H3)**:
-  - H2: Co daje favicon i ikony (wiarygodność marki + spójność na mobile)
-  - H2: Jakie pliki są potrzebne w praktyce (favicon.ico, apple-touch-icon, ikony 192/512)
-  - H2: Skąd biorą się problemy (zły rozmiar, tło, cache, brak manifestu)
-  - H2: Jak przygotować zestaw ikon w 10 minut (narzędzie: generator favicon)
-  - H2: Jak sprawdzić, czy wszystko działa (Lighthouse, przeglądarki, urządzenia)
-  - H2: Najczęstsze błędy i poprawki (na przykładach)
-  - H2: Podsumowanie + CTA (strony internetowe / identyfikacja wizualna)

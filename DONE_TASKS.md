@@ -1,5 +1,192 @@
 # DONE_TASKS
 
+## 2025-12-19
+
+- ✅ **[UI-002] SearchDialog: dopasować style do reszty serwisu (kolory + wysokość inputa)**
+
+  - Pliki:
+    - `components/ui/SearchDialog.tsx`
+    - `components/shared/Navigation.tsx`
+  - **Zrobione**:
+    - Dopasowano kolory do globalnych klas (`text-dark/text-mid/text-light`) zamiast `text-slate-*`.
+    - Ikony ustawiono na `text-slate-700`.
+    - Zmniejszono realną wysokość paska inputa (mniej paddingu + mniejsze ikony/przyciski + `py-1` w headerze i `h-7` na inpucie).
+    - Dopasowano kolor lupy w `Navigation` (desktop) do `text-slate-700`.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[UI-001] SearchDialog: poprawa UI/UX wyszukiwarki**
+
+  - Pliki:
+    - `components/ui/SearchDialog.tsx`
+    - `components/shared/Navigation.tsx`
+  - **Zrobione**:
+    - Usunięto stopkę z podpowiedziami skrótów klawiszowych (↑↓, Enter, Esc).
+    - Zamieniono przycisk „Esc" na ikonę zamknięcia (X).
+    - Zmniejszono wysokość inputa (py-3→py-2, text-base→text-sm).
+    - Dodano ikonę wyszukiwania na desktop w Navigation pomiędzy linkami a `#MadeWithNext.js`.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- 🟡 **[AUDIT-001] Audyt zgodności artykułów z wytycznymi pisania treści**
+  - Plik: `data/pl/blog.json` (15 artykułów)
+  - **Sprawdzono**:
+    - Tytuły (czy są pytaniami)
+    - Polskie znaki diakrytyczne w contentBlocks, CTA, FAQ
+    - Czas czytania (wytyczna: 5-8 min)
+    - Obecność FAQ
+    - SEO (title, description, canonical, cover)
+  - **Wykryte niezgodności**:
+    - 1 artykuł z błędnym SEO/treścią (jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy → treść o Google, nie o stopce)
+    - 6 artykułów bez polskich znaków w contentBlocks/CTA/FAQ
+    - 4 artykuły bez FAQ
+    - 2 artykuły z tytułami nie będącymi pytaniami
+    - 5 artykułów z readingTime < 5 min
+  - **Dodano zadania**: `BLOG-001`, `BLOG-002`, `BLOG-003`, `BLOG-004`, `BLOG-005`
+
+## 2025-12-18
+
+- ✅ **[CONTENT-001] Dodanie instrukcji „Jak korzystać” do wszystkich stron narzędzi**
+
+  - Pliki (8 stron narzędzi):
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/page.tsx`
+  - **Zrobione**:
+    - Dodano `SectionInfo` z wyjaśnieniem czym jest narzędzie przed komponentem narzędzia.
+    - Dodano `SectionSteps` (grid="four") z instrukcją „Jak korzystać” po komponencie narzędzia.
+    - Dodano `SectionSteps` (grid="two") z zastosowaniami/wskazówkami dla większości narzędzi.
+    - Treści napisane w prostym, mentorskim tonie zgodnym z wytycznymi marki Arteon.
+    - Struktura zgodna ze wzorcem `/narzedzia/generator-kodu-qr`.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[IDEA-037] Wyszukiwarka w nawigacji (site search)**
+
+  - Pliki:
+    - `lib/search/searchIndex.ts` — generowanie indeksu z pl.ts, blog.json, projects.json
+    - `hooks/useSearch.ts` — logika wyszukiwania z debounce i grupowaniem
+    - `components/ui/SearchDialog.tsx` — modal z inputem, instant wynikami, keyboard nav
+    - `components/shared/navigation-types/DesktopNavigation.tsx` — ikona lupy, `Ctrl+K` shortcut
+    - `components/shared/Navigation.tsx` — ikona lupy na mobile
+  - **Zrobione**:
+    - Client-side search z prebuilt index (usługi, narzędzia, artykuły, realizacje, strony statyczne).
+    - Modal z instant wynikami podczas pisania (debounce 150ms).
+    - Grupowanie wyników (Usługi / Narzędzia / Edukacja / Realizacje / Strony).
+    - Keyboard navigation: `↑↓` nawigacja, `Enter` przejście, `Esc` zamknij.
+    - `Ctrl+K` / `Cmd+K` otwiera dialog (globalny listener).
+    - Ikona lupy w desktop nav i mobile header.
+    - Zero results: komunikat + link do kontaktu.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[22] Blog: skrócenie i rozbicie artykułu o treściach SEO (22→10 min)**
+
+  - Główny artykuł skrócony do 10 min i przekształcony w hub z linkami do nowych artykułów.
+  - Dodano 5 nowych artykułów:
+    - `jak-dopasowac-tresc-do-intencji-uzytkownika-google`
+    - `struktura-naglowkow-i-formatowanie-tekstu-pod-seo`
+    - `jak-pisac-meta-title-i-meta-description`
+    - `linkowanie-wewnetrzne-jak-laczyc-strony-dla-google`
+    - `jak-aktualizowac-stare-tresci-zeby-nie-tracily-pozycji`
+
+- ✅ **[13] Blog: dopracowanie artykułu o indeksacji w Google (13→8 min)**
+
+  - Rozbicie cofnięte (tematy zbyt ściśle powiązane).
+  - Artykuł przepisany z polskimi znakami i pełną odpowiedzią (diagnostyka + kroki naprawy).
+
+- ✅ **[IDEA-025] Narzędzie: Generator kodu QR online (dla firm i materiałów drukowanych)**
+
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/generator-kodu-qr/page.tsx`
+    - `components/sections/tools/QrCodeGenerator.tsx`
+    - `lib/tools/qr/generateQr.ts`
+    - `components/shared/navigation-data/pl.ts` (TOOLS_SECTIONS_PL)
+    - `components/shared/Footer.tsx` (toolsLinks)
+    - `app/(pl)/narzedzia/page.tsx` (hub page)
+    - `components/ui/tools/ToolAlert.tsx` (dodano variant warning)
+  - **Zrobione**:
+    - Nowe narzędzie client-side generujące kody QR z opcjami: URL, tekst, vCard, Wi-Fi, e-mail, telefon.
+    - Wybór rozmiaru (150–1000px), marginesu (quiet zone 0–4) i poziomu korekcji błędów (L/M/Q/H).
+    - Kolor kodu QR i tła z walidacją kontrastu (ostrzeżenie przy kontraście < 3:1).
+    - Pobieranie jako PNG i SVG.
+    - Podgląd aktualizuje się na bieżąco (debounce 300ms).
+    - Dodano do nowej sekcji „Druk i materiały" w TOOLS_SECTIONS_PL.
+    - Dodano do footera, hub page /narzedzia i JSON-LD schema.
+    - Strona z contentem w przyjaznym, mentorskim tonie: wyjaśnienie czym jest QR, instrukcja krok po kroku, zastosowania (materiały drukowane, vCard, Wi-Fi), wskazówki do druku.
+    - Instalacja biblioteki `qrcode` + `@types/qrcode`.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[IDEA-031] Rewrite: „Jak kolorystyka wpływa na decyzje zakupowe klientów?"**
+
+  - Pliki: `data/pl/blog.json`
+  - Przepisano artykuł w przyjaznym, mentorskim tonie.
+  - Dodano instrukcję krok po kroku do generatora palet Arteon.
+  - Uproszczono wyjaśnienia psychologii kolorów.
+  - Dodano link do testera kontrastu WCAG.
+  - Sprawdzone: `npm run lint` (OK).
+
+- ✅ **[IDEA-032] Rewrite: „FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?"**
+
+  - Pliki: `data/pl/blog.json`
+  - Przepisano artykuł w przyjaznym tonie.
+  - Wyjaśniono wszystkie terminy (FAQ, SEO, long-tail, FAQ schema, dane strukturalne).
+  - Dodano analogie i przykłady z życia.
+  - Sprawdzone: `npm run lint` (OK).
+
+- ✅ **[IDEA-033] Rewrite: „Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?"**
+
+  - Pliki: `data/pl/blog.json`
+  - Przepisano artykuł w przyjaznym tonie.
+  - Dodano wyjaśnienie czym jest SEO/pozycjonowanie.
+  - Dodano analogię „SEO to jak sadzenie drzewa".
+  - Uproszczono język techniczny.
+  - Sprawdzone: `npm run lint` (OK).
+
+- ✅ **[IDEA-034] Rewrite: Pozostałe artykuły — audyt i dostosowanie tonu**
+
+  - Pliki: `data/pl/blog.json`, `TASKS.md`
+  - Przeprowadzono audyt pozostałych artykułów.
+  - Artykuły o optymalizacji zdjęć i blogu lokalnym mają akceptowalny ton — nie wymagają natychmiastowej przeróbki.
+  - Dodano sekcję DO/DON'T do instrukcji artykułów w `TASKS.md`.
+  - Zaktualizowano sekcję Struktura — elastyczna, dopasowana do tematu.
+
+- ✅ **[IDEA-028] Artykuł: „Jak przygotować profesjonalną stopkę mailową dla firmy?"**
+
+  - Pliki: `data/pl/blog.json`, `TASKS.md` (wytyczne tonu)
+  - **Zrobione 2025-12-18**:
+    - Dodano artykuł w nowym, przyjaznym i mentorskim tonie.
+    - Zastosowano zasadę: zrozumiałe dla 5-latka i 60-letniej osoby bez wiedzy technicznej.
+    - Artykuł zawiera instrukcję krok po kroku dla generatora Arteon.
+    - Zaktualizowano wytyczne artykułów w `TASKS.md` o nowe zasady tonu (sekcja „KLUCZOWE: Maksymalna prostota i przyjazność").
+    - Zawiera 6 FAQ oraz CTA do generatora i oferty identyfikacji wizualnej.
+    - Poprawione polskie znaki diakrytyczne (ą, ę, ó, ś, ć, ż, ź, ł, ń).
+    - Sprawdzone: `npm run lint` (OK).
+
+- ✅ **[IDEA-029] Artykuł: „Favicon i ikony strony: co przygotować, żeby działały w przeglądarkach i Lighthouse?"**
+
+  - Pliki: `data/pl/blog.json`
+  - **Zrobione 2025-12-18**:
+    - Dodano artykuł w przyjaznym, mentorskim tonie zgodnie z wytycznymi.
+    - Artykuł wyjaśnia: czym jest favicon, jakie pliki są potrzebne, najczęstsze błędy, jak stworzyć zestaw w generatorze Arteon.
+    - Instrukcja krok po kroku dla generatora favicon.
+    - Zawiera 6 FAQ oraz CTA do generatora i oferty stron internetowych.
+    - Sprawdzone: `npm run lint` (OK).
+
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — narzędzia, usługi, artykuły, cross-linking**
+
+  - **Zrobione 2025-12-18**:
+    - Audyt ogólny: przegląd `PAGES_CATALOG.md`, `TOOLS_CATALOG.md`, `BLOG_CATALOG.md`.
+    - Zidentyfikowano luki: brak nowych narzędzi od czasu launch, brak usługi opieki/konsultacji, brak artykułów wspierających istniejące narzędzia.
+    - Dodano 6 nowych pomysłów w `TASKS.md` (sekcja Pomysły):
+      - `IDEA-025` — Generator kodu QR (nowe narzędzie)
+      - `IDEA-026` — Usługa „Opieka nad stroną" (pakiety utrzymania)
+      - `IDEA-027` — Usługa „Konsultacje" (sesje doradcze UX/SEO)
+      - `IDEA-028` — Artykuł o stopce mailowej (wspiera narzędzie)
+      - `IDEA-029` — Artykuł o favicon (wspiera narzędzie)
+      - `IDEA-030` — ToolsCarousel na stronach usług (cross-linking)
+
 ## 2025-12-17
 
 - ✅ **[11] Blog: "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?"**

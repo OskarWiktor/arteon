@@ -4,6 +4,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import PaletteExtractor from '@/components/sections/tools/PaletteExtractor';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
@@ -67,7 +69,64 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
+        <SectionInfo title="Do czego służy generator palety kolorów z obrazu?">
+          <p className="text-mid">
+            To narzędzie analizuje wgrane zdjęcie i wyciąga z niego dominujące kolory. Dzięki temu możesz szybko stworzyć paletę barw na podstawie inspirującego zdjęcia, logo konkurencji czy zdjęcia
+            produktu.
+          </p>
+          <p className="text-mid mt-3">
+            <strong>Gdzie to się przydaje?</strong> Przy projektowaniu identyfikacji wizualnej, tworzeniu spójnych grafik, dobieraniu kolorów do strony WWW i wszędzie tam, gdzie potrzebujesz wyciągnąć
+            kolory z gotowego obrazu.
+          </p>
+        </SectionInfo>
+
+        <Gap size="sm" />
+
         <PaletteExtractor />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Jak korzystać z generatora?"
+          description="Wyciągnięcie kolorów ze zdjęcia to dosłownie kilka sekund:"
+          grid="four"
+          items={[
+            {
+              title: '1. Dodaj obraz',
+              description: 'Przeciągnij zdjęcie na obszar uploadu lub kliknij, żeby wybrać plik z dysku.',
+            },
+            {
+              title: '2. Poczekaj na analizę',
+              description: 'Narzędzie automatycznie przeanalizuje obraz i wyciągnie z niego dominujące kolory.',
+            },
+            {
+              title: '3. Przeglądaj paletę',
+              description: 'Zobacz wyodrębnione kolory wraz z kodami HEX. Każdy kolor możesz skopiować jednym kliknięciem.',
+            },
+            {
+              title: '4. Użyj w projekcie',
+              description: 'Skopiowane kody kolorów wklej bezpośrednio do Figmy, Photoshopa, CSS lub dowolnego narzędzia graficznego.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Zastosowania palety kolorów z obrazu"
+          description="Narzędzie przyda się w wielu sytuacjach:"
+          grid="two"
+          items={[
+            {
+              title: 'Inspiracja do brandingu',
+              description: <p>Wgraj zdjęcie, które oddaje klimat Twojej marki — krajobraz, wnętrze, produkt. Wyciągnij z niego kolory i użyj jako bazy do identyfikacji wizualnej.</p>,
+            },
+            {
+              title: 'Spójne grafiki social media',
+              description: <p>Masz zdjęcie produktu i chcesz dobrać do niego tło lub akcenty? Wyciągnij kolory ze zdjęcia i użyj ich w grafice — całość będzie spójna.</p>,
+            },
+          ]}
+        />
 
         <Gap variant="line" />
 

@@ -646,3 +646,22 @@ Struktura repo (w uproszczeniu):
 #### `ToolAlert` (`components/ui/tools/ToolAlert.tsx`)
 
 - **Co robi**: Alert box (info/success/error) z odpowiednimi rolami i stylami.
+
+### `SearchDialog` (`components/ui/SearchDialog.tsx`)
+
+- **Co robi**: Modal wyszukiwania strony (site search) z instant wynikami podczas pisania.
+- **Odpowiedzialności**:
+  - **[input]** pole wyszukiwania z debounce (zmniejszona wysokość: `py-1` w headerze, `h-7`, `text-sm`).
+  - **[wyniki]** grupowanie wyników (Usługi / Narzędzia / Edukacja / Realizacje / Strony).
+  - **[keyboard nav]** `↑↓` nawigacja, `Enter` przejście, `Esc` zamknięcie.
+  - **[close]** przycisk zamknięcia z ikoną X (bez tekstu „Esc").
+  - **[a11y]** `role="dialog"`, `aria-modal`, `aria-label`.
+  - **[animacje]** Framer Motion dla entrance/exit.
+- **Props**:
+  - **`isOpen`**: `boolean` - czy modal jest otwarty.
+  - **`onClose`**: `() => void` - callback zamknięcia.
+- **Zależności**:
+  - `hooks/useSearch` — logika wyszukiwania.
+  - `hooks/useEscapeKey` — zamykanie na Escape.
+  - `next/navigation` — `useRouter` do nawigacji.
+- **UI (2025-12-19)**: Usunięto stopkę z podpowiedziami skrótów, przycisk zamknięcia to ikona X, kolory dopasowane do `text-dark/text-mid/text-light`.

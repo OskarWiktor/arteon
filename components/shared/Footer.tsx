@@ -120,6 +120,7 @@ const toolsLinks = [
   { href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
   { href: '/narzedzia/darmowy-generator-favicon-ico', label: 'Generator favicon' },
   { href: '/narzedzia/darmowy-generator-stopki-mailowej', label: 'Generator stopki mailowej HTML' },
+  { href: '/narzedzia/generator-kodu-qr', label: 'Generator kodu QR' },
 ];
 
 export default function Footer() {

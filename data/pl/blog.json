@@ -1,6 +1,213 @@
 {
   "articles": [
     {
+      "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
+      "title": "Jak przygotować profesjonalną stopkę mailową?",
+      "excerpt": "Stopka mailowa to Twoja wizytówka w każdym e-mailu. Dowiedz się, co powinna zawierać, jak uniknąć typowych błędów i jak stworzyć ją w kilka minut za pomocą naszego darmowego narzędzia.",
+      "primaryCategory": "Branding",
+      "category": ["Design"],
+      "tags": ["stopka mailowa", "podpis e-mail", "email signature", "branding", "identyfikacja wizualna", "gmail", "outlook", "profesjonalny e-mail", "komunikacja firmowa"],
+      "seo": {
+        "title": "Jak przygotować profesjonalną stopkę mailową? | Arteon",
+        "description": "Dowiedz się, co powinna zawierać firmowa stopka e-mail, jak uniknąć typowych błędów i jak stworzyć podpis w kilka minut. Prosty przewodnik krok po kroku.",
+        "canonical": "https://www.arteonagency.pl/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa"
+      },
+      "cover": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-19",
+      "dateModified": "2025-12-19",
+      "readingTime": 7,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Wyobraź sobie, że wysyłasz e-mail do potencjalnego klienta. Piszesz świetną wiadomość, ale na końcu widnieje tylko Twoje imię. Odbiorca nie wie, kim jesteś, czym się zajmujesz ani jak się z Tobą skontaktować w inny sposób.</p><br/><p>Właśnie dlatego <strong>stopka mailowa</strong> (nazywana też podpisem e-mail lub po angielsku email signature) jest tak ważna. To taki mały blok informacji na końcu każdego e-maila, który mówi: cześć, jestem taki i taki, pracuję w takiej firmie, a tutaj masz moje dane kontaktowe.</p><br/><p>W tym poradniku pokażemy Ci:</p><br/><ul class='list-disc ml-5'><li>co powinna zawierać dobra stopka,</li><li>jakie błędy najczęściej popełniają firmy,</li><li>jak stworzyć swoją stopkę w kilka minut (za darmo!).</li></ul><br/><p>Nie musisz znać się na kodowaniu ani projektowaniu. Wszystko wyjaśnimy prostym językiem.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest stopka mailowa i dlaczego warto ją mieć?</h2><p>Stopka mailowa to krótki blok tekstu (czasem z grafiką), który automatycznie pojawia się na końcu każdego e-maila, którego wysyłasz.</p><br/><p><strong>Pomyśl o niej jak o wizytówce.</strong> Kiedy spotykasz kogoś na spotkaniu biznesowym, dajesz mu wizytówkę. W świecie e-maili rolę wizytówki pełni właśnie stopka.</p><br/><p><strong>Dlaczego to ważne?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wyglądasz profesjonalnie</strong> — e-mail z dobrą stopką budzi większe zaufanie niż e-mail zakończony samym imieniem.</li><li><strong>Ułatwiasz kontakt</strong> — odbiorca od razu widzi Twój telefon, adres strony czy link do profilu LinkedIn.</li><li><strong>Budujesz rozpoznawalność marki</strong> — jeśli każdy pracownik firmy ma taką samą, spójną stopkę, firma wygląda na dobrze zorganizowaną.</li><li><strong>Oszczędzasz czas</strong> — nie musisz za każdym razem ręcznie wpisywać swoich danych.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co powinna zawierać dobra stopka mailowa?</h2><p>Dobra stopka to taka, która daje odbiorcy wszystkie potrzebne informacje, ale nie przytłacza go ścianą tekstu. Oto elementy, które warto uwzględnić:</p><br/><h3 class='h4 mb-2 mt-4'>Elementy obowiązkowe (minimum)</h3><ul class='list-disc ml-5'><li><strong>Imię i nazwisko</strong> — żeby odbiorca wiedział, z kim rozmawia.</li><li><strong>Stanowisko</strong> — np. Specjalista ds. marketingu lub Właściciel. Dzięki temu odbiorca wie, jaką rolę pełnisz w firmie.</li><li><strong>Nazwa firmy</strong> — nawet jeśli piszesz z firmowego adresu, warto to powtórzyć.</li><li><strong>Telefon</strong> — bezpośredni numer, pod którym można Cię złapać.</li><li><strong>Adres e-mail</strong> — tak, wiem, że odbiorca już go ma (bo właśnie dostał od Ciebie e-mail), ale warto go powtórzyć dla wygody kopiowania.</li></ul><br/><h3 class='h4 mb-2 mt-4'>Elementy dodatkowe (warto rozważyć)</h3><ul class='list-disc ml-5'><li><strong>Adres strony internetowej</strong> — link do Twojej strony firmowej.</li><li><strong>Adres siedziby</strong> — szczególnie ważne dla firm lokalnych lub tych, które przyjmują klientów w biurze.</li><li><strong>Linki do mediów społecznościowych</strong> — LinkedIn, Facebook, Instagram — ale tylko te, które faktycznie prowadzisz i aktualizujesz.</li><li><strong>Logo firmy</strong> — małe logo wzmacnia rozpoznawalność marki.</li><li><strong>Przycisk CTA</strong> — czyli wezwanie do działania. Może to być przycisk Umów spotkanie lub Zobacz naszą ofertę. CTA to skrót od angielskiego Call To Action — dosłownie wezwanie do działania.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Czego unikać? Najczęstsze błędy w stopkach mailowych</h2><p>Widzieliśmy setki stopek firmowych i zauważyliśmy, że pewne błędy powtarzają się bardzo często. Oto one:</p><br/><h3 class='h4 mb-2 mt-4'>1. Za dużo informacji</h3><p>Stopka, która ma 15 linijek tekstu i 6 różnych linków, przytłacza odbiorcę. Nikt tego nie przeczyta. Lepiej mniej, ale konkretnie.</p><br/><h3 class='h4 mb-2 mt-4'>2. Nieaktualne dane</h3><p>Stary numer telefonu, nieistniejący adres strony lub stanowisko sprzed trzech lat. Regularnie sprawdzaj, czy Twoja stopka jest aktualna.</p><br/><h3 class='h4 mb-2 mt-4'>3. Brak spójności w firmie</h3><p>Każdy pracownik ma inną stopkę — różne fonty, kolory, układy. To wygląda nieprofesjonalnie. Warto ustalić jeden wzór dla całej firmy.</p><br/><h3 class='h4 mb-2 mt-4'>4. Za duże obrazki lub logo</h3><p>Ogromne logo, które waży 500KB, może powodować problemy z dostarczaniem e-maili i spowalniać ich ładowanie. Logo powinno być małe i lekkie.</p><br/><h3 class='h4 mb-2 mt-4'>5. Długie cytaty i sentencje</h3><p>Sukces to podróż, nie cel końcowy... — takie cytaty zajmują miejsce i odwracają uwagę od tego, co naprawdę ważne.</p><br/><h3 class='h4 mb-2 mt-4'>6. Brak formatowania</h3><p>Wszystko w jednej linijce, bez podziału na sekcje. Trudno się w tym połapać. Dobra stopka jest czytelna i uporządkowana.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak stworzyć stopkę mailową? Przewodnik krok po kroku</h2><p>Masz dwie opcje:</p><br/><p><strong>Opcja 1: Zrobić samemu w HTML</strong> — wymaga znajomości kodu i dużo czasu. Nie polecamy, chyba że lubisz się bawić w programowanie.</p><br/><p><strong>Opcja 2: Użyć naszego darmowego generatora</strong> — wpisujesz dane, wybierasz styl, dostajesz gotową stopkę do wklejenia. Zajmuje to dosłownie kilka minut.</p><br/><p>Pokażemy Ci, jak korzystać z naszego narzędzia. Jest naprawdę proste.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Instrukcja: jak stworzyć stopkę w generatorze Arteon</h2><p>Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-stopki-mailowej'>darmowy generator stopki mailowej</a> działa w przeglądarce. Nie musisz niczego instalować ani zakładać konta.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 1: Otwórz generator</h3><p>Wejdź na stronę <a class='inline-link' href='/narzedzia/darmowy-generator-stopki-mailowej'>Generator stopki mailowej</a>. Zobaczysz edytor po lewej stronie i podgląd stopki po prawej.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 2: Wypełnij swoje dane</h3><p>W sekcji Dane wpisz:</p><ul class='list-disc ml-5'><li>Imię i nazwisko</li><li>Stanowisko</li><li>Nazwę firmy</li><li>Telefon</li><li>E-mail</li><li>Adres strony (jeśli masz)</li><li>Adres siedziby (opcjonalnie)</li></ul><br/><p>Na bieżąco widzisz, jak Twoja stopka wygląda w podglądzie po prawej stronie.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 3: Dodaj linki społecznościowe (opcjonalnie)</h3><p>W sekcji Social możesz wkleić linki do swoich profili: LinkedIn, Facebook, Instagram, YouTube, TikTok lub X (dawny Twitter). Pojawią się jako małe ikonki w stopce.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 4: Wybierz wygląd</h3><p>W sekcji Wygląd możesz:</p><ul class='list-disc ml-5'><li>Wybrać układ stopki (klasyczny, z paskiem akcentu, wyśrodkowany itp.)</li><li>Zmienić kolory (kolor akcentu, kolor tekstu)</li><li>Wybrać font i rozmiar tekstu</li><li>Włączyć lub wyłączyć separator (linia oddzielająca stopkę od treści e-maila)</li></ul><br/><h3 class='h4 mb-2 mt-4'>Krok 5: Dodaj przycisk CTA (opcjonalnie)</h3><p>W sekcji CTA możesz dodać przycisk z tekstem (np. Umów spotkanie) i linkiem. Przycisk pojawi się w stopce i będzie klikalny.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 6: Skopiuj stopkę</h3><p>Kiedy stopka wygląda tak, jak chcesz, kliknij przycisk Skopiuj stopkę. Stopka zostanie skopiowana do schowka (czyli do pamięci komputera) i będziesz mógł ją wkleić do swojego programu pocztowego.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak wkleić stopkę do Gmail?</h2><p>Gmail to jeden z najpopularniejszych programów do e-maili. Oto jak dodać do niego stopkę:</p><br/><p><strong>Krok 1:</strong> Otwórz Gmail i kliknij ikonę zębatki (ustawienia) w prawym górnym rogu.</p><br/><p><strong>Krok 2:</strong> Wybierz Zobacz wszystkie ustawienia.</p><br/><p><strong>Krok 3:</strong> W zakładce Ogólne przewiń w dół do sekcji Podpis.</p><br/><p><strong>Krok 4:</strong> Kliknij Utwórz nowy i nadaj mu nazwę (np. Podpis firmowy).</p><br/><p><strong>Krok 5:</strong> W polu tekstowym wklej skopiowaną stopkę (Ctrl+V na Windows lub Cmd+V na Mac).</p><br/><p><strong>Krok 6:</strong> Przewiń na sam dół strony i kliknij Zapisz zmiany.</p><br/><p>Od teraz Twoja stopka będzie automatycznie pojawiać się w każdym nowym e-mailu!</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak wkleić stopkę do Outlook?</h2><p>Outlook (zarówno wersja desktopowa, jak i webowa) również pozwala na dodanie stopki. Oto jak to zrobić:</p><br/><h3 class='h4 mb-2 mt-4'>Outlook w przeglądarce (Outlook.com)</h3><p><strong>Krok 1:</strong> Kliknij ikonę zębatki w prawym górnym rogu i wybierz Wyświetl wszystkie ustawienia programu Outlook.</p><br/><p><strong>Krok 2:</strong> Przejdź do: Poczta → Redagowanie i odpowiadanie.</p><br/><p><strong>Krok 3:</strong> W sekcji Podpis e-mail wklej skopiowaną stopkę.</p><br/><p><strong>Krok 4:</strong> Kliknij Zapisz.</p><br/><h3 class='h4 mb-2 mt-4'>Outlook na komputerze (wersja desktopowa)</h3><p><strong>Krok 1:</strong> Kliknij Plik → Opcje → Poczta → Podpisy.</p><br/><p><strong>Krok 2:</strong> Kliknij Nowy i nadaj podpisowi nazwę.</p><br/><p><strong>Krok 3:</strong> W polu edycji wklej skopiowaną stopkę.</p><br/><p><strong>Krok 4:</strong> Kliknij OK.</p><br/><p>Gotowe! Twoja stopka jest ustawiona.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Kilka wskazówek na koniec</h2><ul class='list-disc ml-5'><li><strong>Testuj przed wysłaniem</strong> — wyślij e-mail do siebie i sprawdź, czy stopka wygląda dobrze na komputerze i telefonie.</li><li><strong>Aktualizuj regularnie</strong> — zmienił się numer telefonu? Awansowałeś? Zaktualizuj stopkę.</li><li><strong>Ustal jeden wzór dla firmy</strong> — jeśli masz pracowników, zadbaj o to, żeby wszyscy używali takiego samego stylu stopki. To buduje spójny wizerunek.</li><li><strong>Nie dodawaj załączników do stopki</strong> — obrazki powinny być linkowane z serwera (tzw. URL), a nie wklejane jako załączniki. Nasz generator robi to automatycznie, jeśli podasz link do swojego logo.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Stopka mailowa to mały element, który robi dużą różnicę. Dzięki niej:</p><br/><ul class='list-disc ml-5'><li>wyglądasz profesjonalnie,</li><li>ułatwiasz kontakt,</li><li>budujesz rozpoznawalność marki,</li><li>oszczędzasz czas.</li></ul><br/><p>Stworzenie dobrej stopki nie musi być trudne ani czasochłonne. Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-stopki-mailowej'>darmowy generator stopki mailowej</a> pozwala zrobić to w kilka minut — bez znajomości kodu, bez płacenia, bez zakładania konta.</p><br/><p>Wypróbuj i zobacz, jak łatwo to działa.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Stwórz swoją stopkę mailową w kilka minut",
+        "description": "Skorzystaj z naszego darmowego generatora. Wpisz dane, wybierz styl, skopiuj i wklej do Gmail lub Outlook. To naprawdę takie proste.",
+        "btnOne": "Otwórz generator stopki",
+        "btnOneLink": "/narzedzia/darmowy-generator-stopki-mailowej",
+        "btnTwo": "Zobacz ofertę identyfikacji wizualnej",
+        "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+        "backgroundImage": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy stopka mailowa jest obowiązkowa?",
+          "answer": "Prawnie nie jest obowiązkowa dla wszystkich firm, ale w praktyce bardzo warto ją mieć. W niektórych krajach i branżach (np. w Niemczech) firmy muszą umieszczać w e-mailach określone informacje prawne. Nawet jeśli prawo tego nie wymaga, profesjonalna stopka buduje zaufanie i ułatwia kontakt."
+        },
+        {
+          "question": "Czy mogę dodać logo do stopki?",
+          "answer": "Tak, możesz. W naszym generatorze wystarczy podać link do logo (adres URL obrazka w internecie). Logo powinno być małe — zalecamy rozmiar około 100-150 pikseli szerokości. Zbyt duże logo może powodować problemy z wyświetlaniem w niektórych programach pocztowych."
+        },
+        {
+          "question": "Dlaczego moja stopka wygląda inaczej w różnych programach pocztowych?",
+          "answer": "Każdy program pocztowy (Gmail, Outlook, Apple Mail) interpretuje kod HTML trochę inaczej. Dlatego stopka może wyglądać nieco inaczej w różnych programach. Nasz generator tworzy stopki w sposób maksymalnie kompatybilny, ale drobne różnice są normalne. Warto wysłać e-mail testowy do siebie i sprawdzić, jak stopka wygląda w praktyce."
+        },
+        {
+          "question": "Czy mogę mieć różne stopki dla różnych celów?",
+          "answer": "Tak, zarówno Gmail, jak i Outlook pozwalają na tworzenie wielu podpisów. Możesz mieć jeden formalny (do klientów) i jeden mniej formalny (do znajomych). Przy tworzeniu nowego e-maila wybierasz, którego podpisu chcesz użyć."
+        },
+        {
+          "question": "Jak często powinienem aktualizować stopkę?",
+          "answer": "Zawsze, gdy zmienia się coś istotnego: numer telefonu, stanowisko, adres firmy, strona internetowa. Warto też raz na kilka miesięcy sprawdzić, czy wszystkie linki działają i czy dane są aktualne."
+        },
+        {
+          "question": "Czy generator Arteon jest naprawdę darmowy?",
+          "answer": "Tak, nasz generator stopki mailowej jest całkowicie darmowy. Nie ma limitów, nie trzeba zakładać konta, nie ma ukrytych opłat. Tworzysz stopkę, kopiujesz i używasz — bez żadnych zobowiązań."
+        }
+      ]
+    },
+    {
+      "slug": "favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie",
+      "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
+      "excerpt": "Favicon to mała ikonka przy nazwie Twojej strony w przeglądarce. Dowiedz się, jakie pliki są potrzebne, skąd biorą się problemy i jak przygotować cały zestaw w kilka minut.",
+      "primaryCategory": "Zdjęcia",
+      "category": ["Design", "SEO"],
+      "tags": ["favicon", "ikona strony", "apple-touch-icon", "pwa", "lighthouse", "manifest.json", "przeglądarki", "seo", "web design"],
+      "seo": {
+        "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie? | Arteon",
+"description": "Dowiedz się, czym jest favicon, jak ją stworzyć i przygotować, aby działała poprawnie.",        
+"canonical": "https://www.arteonagency.pl/edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie"
+      },
+      "cover": "/assets/blog/favicon-i-ikony-strony-co-przygotowac/favicon-i-ikony-strony-co-przygotowac.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-19",
+      "dateModified": "2025-12-19",
+      "readingTime": 6,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Pewnie widzisz to codziennie, ale możesz nie zwracać na to uwagi. Otwórz przeglądarkę i popatrz na zakładki — przy każdej stronie jest mała ikonka. To właśnie <strong>favicon</strong>.</p><br/><p>Favicon (skrót od favorites icon) to taka wizualna wizytówka Twojej strony w przeglądarce. Pojawia się w zakładkach, na liście ulubionych, w historii przeglądania, a nawet w wynikach wyszukiwania Google na urządzeniach mobilnych.</p><br/><p>Brzmi prosto? W teorii tak. W praktyce wielu właścicieli stron ma z tym problem — favicon nie wyświetla się prawidłowo, Lighthouse (narzędzie Google do testowania stron) zgłasza błędy, a na telefonie zamiast ładnej ikonki pojawia się szary kwadrat.</p><br/><p>W tym poradniku wyjaśnimy:</p><br/><ul class='list-disc ml-5'><li>czym dokładnie jest favicon i dlaczego jest ważny,</li><li>jakie pliki są potrzebne, żeby wszystko działało,</li><li>jak uniknąć typowych błędów,</li><li>jak stworzyć cały zestaw w kilka minut za darmo.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest favicon i dlaczego warto go mieć?</h2><p>Favicon to mały obrazek (najczęściej 16x16 lub 32x32 pikseli), który przeglądarka wyświetla przy nazwie Twojej strony.</p><br/><p><strong>Pomyśl o tym jak o logo na wizytówce.</strong> Kiedy ktoś ma otwartych 20 zakładek w przeglądarce, to właśnie favicon pomaga szybko znaleźć Twoją stronę. Bez niego użytkownik widzi tylko generyczną ikonkę — i Twoja strona ginie w tłumie.</p><br/><p><strong>Dlaczego to ważne?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Rozpoznawalność</strong> — użytkownik od razu wie, która zakładka to Twoja strona.</li><li><strong>Profesjonalizm</strong> — strona bez favicon wygląda na niedokończoną lub amatorską.</li><li><strong>SEO i Lighthouse</strong> — Google Lighthouse (narzędzie do audytu stron) sprawdza, czy favicon jest poprawnie skonfigurowany. Brak favicon może obniżyć ocenę strony.</li><li><strong>PWA</strong> — jeśli chcesz, żeby użytkownicy mogli dodać Twoją stronę do ekranu głównego telefonu, potrzebujesz odpowiednich ikon.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jakie pliki są potrzebne?</h2><p>Tu zaczyna się zamieszanie. Kiedyś wystarczył jeden plik <code>favicon.ico</code>. Dziś, żeby wszystko działało poprawnie na wszystkich urządzeniach i w każdej przeglądarce, potrzebujesz kilku plików:</p><br/><h3 class='h4 mb-2 mt-4'>Pliki podstawowe</h3><ul class='list-disc ml-5'><li><strong>favicon.ico</strong> — klasyczny format rozpoznawany przez wszystkie przeglądarki. Może zawierać kilka rozmiarów w jednym pliku (np. 16x16 i 32x32).</li><li><strong>favicon-16x16.png</strong> — mała wersja w formacie PNG, używana w zakładkach.</li><li><strong>favicon-32x32.png</strong> — nieco większa wersja, używana w niektórych kontekstach.</li></ul><br/><h3 class='h4 mb-2 mt-4'>Ikony dla urządzeń Apple</h3><ul class='list-disc ml-5'><li><strong>apple-touch-icon.png</strong> (180x180 pikseli) — ikona wyświetlana, gdy użytkownik iPhone'a lub iPada doda Twoją stronę do ekranu głównego. Bez niej pojawi się zrzut ekranu strony zamiast ładnej ikonki.</li></ul><br/><h3 class='h4 mb-2 mt-4'>Ikony dla Android i PWA</h3><ul class='list-disc ml-5'><li><strong>android-chrome-192x192.png</strong> — ikona dla urządzeń z Androidem.</li><li><strong>android-chrome-512x512.png</strong> — większa ikona używana przy instalacji PWA (Progressive Web App).</li><li><strong>site.webmanifest</strong> (lub manifest.json) — plik konfiguracyjny, który mówi przeglądarce, jakich ikon użyć.</li></ul><br/><p>Brzmi skomplikowanie? Spokojnie — nasz generator przygotuje wszystkie te pliki automatycznie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Najczęstsze błędy z favicon</h2><p>Oto problemy, które widzimy najczęściej:</p><br/><h3 class='h4 mb-2 mt-4'>1. Brak favicon w ogóle</h3><p>Strona nie ma żadnego favicon. W zakładce wyświetla się domyślna ikonka przeglądarki lub szary kwadrat. Wygląda to nieprofesjonalnie.</p><br/><h3 class='h4 mb-2 mt-4'>2. Tylko favicon.ico, bez innych rozmiarów</h3><p>Favicon.ico działa w przeglądarkach na komputerze, ale na telefonach (szczególnie iPhone) potrzebujesz apple-touch-icon. Bez niego użytkownik widzi zrzut ekranu zamiast ikonki.</p><br/><h3 class='h4 mb-2 mt-4'>3. Zła ścieżka do pliku</h3><p>Favicon jest, ale przeglądarka go nie znajduje, bo ścieżka w kodzie HTML jest nieprawidłowa. Sprawdź, czy plik jest tam, gdzie wskazuje tag <code>&lt;link&gt;</code>.</p><br/><h3 class='h4 mb-2 mt-4'>4. Favicon w złym formacie</h3><p>Niektórzy wrzucają plik JPG i zmieniają mu rozszerzenie na .ico. To nie działa. Format ICO ma specyficzną strukturę, a favicon.ico musi być prawdziwym plikiem ICO.</p><br/><h3 class='h4 mb-2 mt-4'>5. Zbyt skomplikowana grafika</h3><p>Logo firmy z mnóstwem detali nie sprawdzi się jako favicon. W rozmiarze 16x16 pikseli wszystko się zlewa. Favicon powinien być prosty — najlepiej jedna litera, kształt lub uproszczona wersja logo.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak stworzyć favicon? Dwie opcje</h2><p>Masz dwie drogi:</p><br/><p><strong>Opcja 1: Zrobić ręcznie</strong> — musisz przygotować grafikę w programie graficznym, wyeksportować ją w różnych rozmiarach, skonwertować do formatu ICO i utworzyć plik manifest. Czasochłonne i wymaga wiedzy technicznej.</p><br/><p><strong>Opcja 2: Użyć naszego generatora</strong> — wrzucasz jeden obrazek (np. swoje logo), a generator tworzy wszystkie potrzebne pliki. Pobierasz paczkę ZIP i wrzucasz na serwer. Zajmuje to dosłownie kilka minut.</p><br/><p>Pokażemy Ci, jak skorzystać z naszego narzędzia.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Instrukcja: jak stworzyć favicon w generatorze Arteon</h2><p>Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>darmowy generator favicon</a> działa w przeglądarce. Nie musisz niczego instalować ani zakładać konta.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 1: Otwórz generator</h3><p>Wejdź na stronę <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>Generator favicon</a>.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 2: Wrzuć swój obrazek</h3><p>Kliknij w obszar do przesyłania pliku i wybierz obrazek ze swojego komputera. Najlepiej sprawdza się kwadratowy obrazek o rozmiarze co najmniej 512x512 pikseli. Może to być Twoje logo lub uproszczona jego wersja.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 3: Zobacz podgląd</h3><p>Generator pokaże Ci, jak favicon będzie wyglądał w różnych rozmiarach. Jeśli coś jest nieczytelne — wróć do poprzedniego kroku i użyj prostszej grafiki.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 4: Pobierz paczkę</h3><p>Kliknij przycisk Pobierz. Dostaniesz plik ZIP ze wszystkimi potrzebnymi plikami: favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png i site.webmanifest.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 5: Wgraj pliki na serwer</h3><p>Rozpakuj ZIP i wgraj pliki do głównego folderu swojej strony (tam, gdzie jest index.html). Większość hostingów pozwala to zrobić przez panel administracyjny.</p><br/><h3 class='h4 mb-2 mt-4'>Krok 6: Dodaj tagi do HTML</h3><p>W sekcji <code>&lt;head&gt;</code> swojej strony dodaj odpowiednie tagi (generator poda Ci gotowy kod do skopiowania). Jeśli używasz WordPressa lub innego CMSa, poszukaj opcji Favicon lub Site Icon w ustawieniach.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak sprawdzić, czy favicon działa?</h2><p>Po wgraniu plików warto sprawdzić, czy wszystko jest w porządku:</p><br/><ul class='list-disc ml-5'><li><strong>Otwórz stronę w przeglądarce</strong> — zobacz, czy favicon pojawia się w zakładce. Czasem trzeba wyczyścić cache (Ctrl+F5).</li><li><strong>Użyj Lighthouse</strong> — w Chrome DevTools (F12) przejdź do zakładki Lighthouse i uruchom audyt. Sprawdź, czy nie ma błędów związanych z favicon.</li><li><strong>Sprawdź na telefonie</strong> — dodaj stronę do ekranu głównego na iPhone i Androidzie. Czy wyświetla się ładna ikonka?</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Kilka wskazówek na koniec</h2><ul class='list-disc ml-5'><li><strong>Używaj prostej grafiki</strong> — favicon ma tylko 16-32 pikseli. Szczegółowe logo będzie nieczytelne. Lepiej użyć jednej litery, prostego symbolu lub uproszczonej wersji logo.</li><li><strong>Zadbaj o kontrast</strong> — jasny favicon na jasnym tle przeglądarki będzie niewidoczny. Dodaj subtelne tło lub obramowanie.</li><li><strong>Testuj w różnych przeglądarkach</strong> — Chrome, Firefox, Safari, Edge — każda może wyświetlać favicon nieco inaczej.</li><li><strong>Nie zapomnij o apple-touch-icon</strong> — użytkownicy iPhone'ów są ważną grupą. Bez tej ikonki Twoja strona wygląda źle na ich ekranach głównych.</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Favicon to mały detal, który robi dużą różnicę. Dzięki niemu:</p><br/><ul class='list-disc ml-5'><li>Twoja strona jest łatwo rozpoznawalna w zakładkach,</li><li>wyglądasz profesjonalnie,</li><li>Lighthouse nie zgłasza błędów,</li><li>użytkownicy telefonów widzą ładną ikonkę na ekranie głównym.</li></ul><br/><p>Przygotowanie wszystkich potrzebnych plików nie musi być trudne. Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>darmowy generator favicon</a> zrobi to za Ciebie w kilka minut — bez znajomości grafiki, bez płacenia, bez zakładania konta.</p><br/><p>Wypróbuj i zobacz, jak prosto to działa.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Stwórz favicon dla swojej strony w kilka minut",
+        "description": "Skorzystaj z naszego darmowego generatora. Wrzuć logo, pobierz paczkę plików, wgraj na serwer. Gotowe!",
+        "btnOne": "Otwórz generator favicon",
+        "btnOneLink": "/narzedzia/darmowy-generator-favicon-ico",
+        "btnTwo": "Zobacz ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/blog/favicon-i-ikony-strony-co-przygotowac/favicon-i-ikony-strony-co-przygotowac.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy favicon wpływa na SEO?",
+          "answer": "Bezpośrednio nie — Google nie używa favicon jako czynnika rankingowego. Pośrednio jednak tak: Google Lighthouse sprawdza obecność favicon i może obniżyć ocenę strony, jeśli go brakuje. Poza tym favicon wpływa na wizerunek i rozpoznawalność, co przekłada się na zaufanie użytkowników."
+        },
+        {
+          "question": "Jaki rozmiar powinien mieć obrazek źródłowy?",
+          "answer": "Najlepiej użyć kwadratowego obrazka o rozmiarze co najmniej 512x512 pikseli. Generator przeskaluje go do wszystkich potrzebnych rozmiarów. Im większy i lepszej jakości obrazek źródłowy, tym lepiej będą wyglądać wygenerowane ikony."
+        },
+        {
+          "question": "Czy mogę użyć zdjęcia jako favicon?",
+          "answer": "Technicznie tak, ale nie zalecamy. Zdjęcia mają dużo detali, które w rozmiarze 16x16 pikseli będą nieczytelne. Favicon powinien być prosty — najlepiej sprawdzają się logo, litery lub proste kształty."
+        },
+        {
+          "question": "Dlaczego favicon nie wyświetla się mimo że wgrałem plik?",
+          "answer": "Najczęstsze przyczyny: zły ścieżka do pliku w kodzie HTML, cache przeglądarki (spróbuj Ctrl+F5), brak tagów link w sekcji head strony, lub plik nie jest prawdziwym favicon.ico (np. to PNG ze zmienionym rozszerzeniem)."
+        },
+        {
+          "question": "Co to jest site.webmanifest?",
+          "answer": "To plik konfiguracyjny w formacie JSON, który mówi przeglądarce o Twojej stronie — jakie ikony użyć, jaki jest kolor motywu, jak nazywa się aplikacja. Jest potrzebny głównie dla PWA (Progressive Web Apps) i ikon na Androidzie."
+        },
+        {
+          "question": "Czy generator Arteon jest darmowy?",
+          "answer": "Tak, nasz generator favicon jest całkowicie darmowy. Nie ma limitów, nie trzeba zakładać konta, nie ma ukrytych opłat. Wrzucasz obrazek, pobierasz paczkę i używasz — bez żadnych zobowiązań."
+        }
+      ]
+    },
+    {
       "slug": "faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony",
       "title": "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?",
       "excerpt": "Dobrze zaplanowane FAQ skraca drogę do decyzji, porządkuje informacje i pomaga przechwytywać ruch z długich zapytań. Zobacz, skąd brać pytania, jak je grupować, jak pisać odpowiedzi oraz kiedy warto stosować FAQ schema.",

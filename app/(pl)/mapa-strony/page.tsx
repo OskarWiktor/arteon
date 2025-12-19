@@ -1,20 +1,12 @@
-import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import Wrapper from '@/components/ui/Wrapper';
-import AppLink from '@/components/ui/Link';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 import blogData from '@/data/pl/blog.json';
 import projectsData from '@/data/pl/projects.json';
+import Wrapper from '@/components/ui/Wrapper';
 import { slugify } from '@/utils/slug';
 
 const BASE_URL = 'https://www.arteonagency.pl';
-
-export const metadata: Metadata = {
-  title: 'Mapa strony | Arteon',
-  description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
-  alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
-};
 
 type NavItem = { title: string; href: string; children?: NavItem[] };
 
@@ -119,9 +111,41 @@ const infoPages: NavItem[] = [
   { title: 'Mapa strony', href: '/mapa-strony' },
 ];
 
-export default function SitemapPage() {
-  const showAllPortfolio = portfolioItems.length > 0 && portfolioItems.length <= 40;
+export const metadata: Metadata = {
+  title: 'Mapa strony | Arteon',
+  description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
+  alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
+};
 
+function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
+  return (
+    <section className="mb-8">
+      <h2 className="h4 mb-4">{title}</h2>
+      <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        {items.map((item) => (
+          <li key={item.href}>
+            <Link href={item.href} className="text-sm text-slate-700 hover:text-slate-900 hover:underline">
+              {item.title}
+            </Link>
+            {item.children && item.children.length > 0 && (
+              <ul className="mt-1 ml-4 space-y-1">
+                {item.children.map((child) => (
+                  <li key={child.href}>
+                    <Link href={child.href} className="text-sm text-slate-500 hover:text-slate-700 hover:underline">
+                      {child.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+export default function SitemapPage() {
   const jsonLd = buildJsonLd({
     services,
     portfolioItems,
@@ -133,111 +157,33 @@ export default function SitemapPage() {
 
   return (
     <>
-      <Gap size="sm" />
-
-      <Wrapper>
-        <header>
-          <h1>Mapa strony</h1>
-          <p className="mt-2">Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do interesującej Cię treści.</p>
-        </header>
-
-        <Gap size="sm" />
-
-        <nav aria-label="Mapa strony">
-          <SectionInfo title="Usługi">
-            <NestedList items={services} />
-          </SectionInfo>
-
-          <Gap variant="line" size="sm" />
-
-          <SectionInfo title="Realizacje">
-            <p>
-              <AppLink href={portfolioIndex.href} className="font-medium">
-                {portfolioIndex.title}
-              </AppLink>
-            </p>
-            {showAllPortfolio ? (
-              <ul className="mt-2 space-y-2">
-                {portfolioItems.map((item) => (
-                  <li key={item.href}>
-                    <AppLink href={item.href}>{item.title}</AppLink>
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </SectionInfo>
-
-          <Gap variant="line" size="sm" />
-
-          <SectionInfo title="Edukacja">
-            <p>
-              <AppLink href="/edukacja" className="font-medium">
-                Wszystkie artykuły
-              </AppLink>
-            </p>
-            <NestedList items={blogCategories} />
-          </SectionInfo>
-
-          <Gap variant="line" size="sm" />
-
-          <SectionInfo title="Narzędzia">
-            <p>
-              <AppLink href="/narzedzia" className="font-medium">
-                Wszystkie narzędzia
-              </AppLink>
-            </p>
-            <ul className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 2xl:grid-cols-10">
-              {tools.map((tool) => (
-                <li key={tool.href}>
-                  <AppLink href={tool.href}>{tool.title}</AppLink>
-                </li>
-              ))}
-            </ul>
-          </SectionInfo>
-
-          <Gap variant="line" size="sm" />
-
-          <SectionInfo title="Informacje">
-            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-10">
-              {infoPages.map((p) => (
-                <li key={p.href}>
-                  <AppLink href={p.href} className="font-medium">
-                    {p.title}
-                  </AppLink>
-                </li>
-              ))}
-            </ul>
-          </SectionInfo>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Wrapper className="py-12">
+        <nav aria-label="okruszki" className="mb-6">
+          <ol className="flex gap-2 text-sm">
+            <li>
+              <Link href="/" className="text-slate-700 hover:underline">
+                Strona główna
+              </Link>
+              <span className="ml-2 text-slate-400">/</span>
+            </li>
+            <li>
+              <span className="text-slate-500" aria-current="page">
+                Mapa strony
+              </span>
+            </li>
+          </ol>
         </nav>
 
-        <Gap size="sm" />
+        <h1 className="h2 mb-8">Mapa strony</h1>
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <SitemapSection title="Usługi" items={services} />
+        <SitemapSection title="Realizacje" items={[portfolioIndex, ...portfolioItems]} />
+        <SitemapSection title="Edukacja" items={blogArticleItems} />
+        <SitemapSection title="Narzędzia" items={tools} />
+        <SitemapSection title="Informacje" items={infoPages} />
       </Wrapper>
     </>
-  );
-}
-
-function NestedList({ items }: { items: NavItem[] }) {
-  return (
-    <ul className="space-y-2">
-      {items.map((item) => (
-        <li key={item.href}>
-          <AppLink href={item.href} className="font-medium">
-            {item.title}
-          </AppLink>
-          {item.children && item.children.length > 0 && (
-            <ul className="mt-1 ml-5 space-y-1 text-sm">
-              {item.children.map((child) => (
-                <li key={child.href}>
-                  <AppLink href={child.href}>{child.title}</AppLink>
-                </li>
-              ))}
-            </ul>
-          )}
-        </li>
-      ))}
-    </ul>
   );
 }
 

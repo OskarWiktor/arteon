@@ -452,3 +452,23 @@ Uwagi dot. środowiska:
   - **[DOM]** tworzy canvas w pamięci.
 - **Uwagi**:
   - Moduł browser-only.
+
+## `useSearch` (`hooks/useSearch.ts`)
+
+- **Co robi**: Obsługuje logikę wyszukiwania w site search — debounce zapytań, filtrowanie wyników i grupowanie po kategoriach.
+- **Sygnatura**: `useSearch(options?: { debounceMs?: number; limit?: number })`
+- **Parametry**:
+  - **`debounceMs`**: czas debounce w ms (domyślnie 150).
+  - **`limit`**: maksymalna liczba wyników (domyślnie 20).
+- **Zwraca**:
+  - **`query`**: `string` - aktualne zapytanie.
+  - **`setQuery`**: `(query: string) => void` - ustawienie zapytania.
+  - **`results`**: `SearchItem[]` - wyniki wyszukiwania (flat).
+  - **`groupedResults`**: `Record<SearchCategory, SearchItem[]>` - wyniki pogrupowane.
+  - **`isSearching`**: `boolean` - czy trwa debounce/wyszukiwanie.
+  - **`hasResults`**: `boolean` - czy są jakiekolwiek wyniki.
+  - **`clearSearch`**: `() => void` - czyści zapytanie i wyniki.
+- **Zależności**:
+  - `lib/search/searchIndex.ts` — `searchItems`, `groupSearchResults`, typy.
+- **Side effecty**:
+  - **[timery]**: `setTimeout` dla debounce.
