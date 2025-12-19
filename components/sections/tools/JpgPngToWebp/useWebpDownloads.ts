@@ -4,8 +4,8 @@ import { useCallback, useState, type Dispatch, type SetStateAction } from 'react
 import { getWebpFileName } from '@/lib/tools/image/webp';
 import { buildWebpConversionReportCsv } from '@/lib/tools/image/webpReport';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
+import { downloadBlob } from '@/lib/tools/downloadBlob';
 import { createZipBlob, type ZipFileInput } from '@/lib/tools/zip';
-import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { sleep } from '@/lib/tools/sleep';
 
 type UseWebpDownloadsOptions = {
@@ -81,9 +81,7 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
         }
 
         const zipBlob = createZipBlob(files);
-        const zipUrl = URL.createObjectURL(zipBlob);
-        options.triggerDownloadFromUrl(zipUrl, 'webp.zip');
-        setTimeout(() => revokeObjectUrl(zipUrl), 2000);
+        downloadBlob(zipBlob, 'webp.zip', { downloadFromUrl: options.triggerDownloadFromUrl });
 
         const downloadedIds = new Set(ready.map((f) => f.id));
         options.setFiles((prev) =>

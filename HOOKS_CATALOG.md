@@ -43,6 +43,7 @@ Uwagi dot. środowiska:
   - **`copied`**: `boolean`
   - **`copy`**: `async (text: string, options?: { resetAfterMs?: number; onCopy?: () => void; onError?: () => void }) => Promise<boolean>`
 - **Zależności**:
+  - **`lib/tools/clipboard.ts`**: wspólny helper (capability detection + copy text + fallback).
   - **`navigator.clipboard.writeText`**: ścieżka preferowana.
   - **Fallback DOM**: `textarea` + `document.execCommand('copy')`.
   - **Timery**: `window.setTimeout` / `window.clearTimeout`.
@@ -148,6 +149,20 @@ Uwagi dot. środowiska:
   - **Timery**: `window.setTimeout` / `window.clearTimeout`.
 - **Side effecty**:
   - **[timeout]**: tworzy timeout i czyści go na unmount.
+
+## `useDebouncedEffect` (`hooks/useDebouncedEffect.ts`)
+
+- **Co robi**: Uruchamia `callback` z opóźnieniem (debounce) i resetuje timer przy zmianie zależności (jak `useEffect`, tylko debounced).
+- **Sygnatura**: `useDebouncedEffect(callback, delayMs, deps, options?)`
+- **Parametry**:
+  - **`callback`**: funkcja do wykonania po czasie (może być `async`).
+  - **`delayMs`**: czas debounce w ms.
+  - **`deps`**: dependency list (jak w `useEffect`) - zmiana którejkolwiek wartości resetuje timer.
+  - **`options.enabled`**: `boolean` (domyślnie `true`) - pozwala wyłączyć debounce.
+- **Zależności**:
+  - **Timery**: `window.setTimeout` / `window.clearTimeout`.
+- **Side effecty**:
+  - **[timeout]**: tworzy timeout i czyści go przy zmianie deps/unmount.
 
 ## `useLocale` + `LocaleProvider` (`lib/LocaleContext.tsx`)
 
@@ -284,6 +299,33 @@ Uwagi dot. środowiska:
 - **Side effecty**:
   - **[DOM]** tworzy i klika element `<a>`.
 
+## `Clipboard helpers` (`lib/tools/clipboard.ts`)
+
+- **Co robi**: Ujednolica kopiowanie do schowka (tekst i HTML) oraz fallbacki.
+- **Wybrane API**:
+  - `copyTextToClipboard(text: string): Promise<void>`
+  - `copyHtmlWithExecCommand(html: string): boolean`
+  - `canWriteTextToClipboard(): boolean`
+  - `writeTextToClipboard(text: string): Promise<void>`
+- **Zależności**:
+  - **Clipboard API**: `navigator.clipboard.writeText`.
+  - **Fallback DOM**: `textarea` + `document.execCommand('copy')`.
+  - **HTML copy**: selection/range + `document.execCommand('copy')`.
+- **Side effecty**:
+  - **[clipboard]** zapis do schowka.
+  - **[DOM]** tworzy i usuwa tymczasowe elementy do kopiowania.
+
+## `downloadBlob` (`lib/tools/downloadBlob.ts`)
+
+- **Co robi**: Triggeruje download `Blob` jako pliku (tworzy `ObjectURL`, wywołuje pobranie, a potem robi auto-cleanup przez `URL.revokeObjectURL`).
+- **Sygnatura**: `downloadBlob(blob: Blob, filename: string, options?: { revokeDelayMs?: number; downloadFromUrl?: (url: string, filename: string) => void }): void`
+- **Zależności**:
+  - `URL.createObjectURL` / `URL.revokeObjectURL`.
+  - `downloadFromUrl`.
+- **Side effecty**:
+  - **[DOM]** wywołuje pobranie przez `<a download>`.
+  - **[timeout]** używa `setTimeout` do auto-revoke.
+
 ## `sleep` (`lib/tools/sleep.ts`)
 
 - **Co robi**: Promise wrapper na `setTimeout` (pomocnicze opóźnienia, np. przy batch-download).
@@ -323,6 +365,15 @@ Uwagi dot. środowiska:
   - **[network]** pobiera zasób obrazu.
 - **Uwagi**:
   - Moduł browser-only.
+
+## `Image upload types` (`lib/tools/image/uploadTypes.ts`)
+
+- **Co robi**: Ujednolica listę obsługiwanych MIME typów dla uploadu obrazów w narzędziach oraz zapewnia helper do walidacji.
+- **API**:
+  - `SUPPORTED_IMAGE_UPLOAD_TYPES`
+  - `isSupportedImageUploadType(file: File | null | undefined): boolean`
+- **Side effecty**:
+  - **[brak]** (pure).
 
 ## `canvasToBlob` (`lib/tools/canvasToBlob.ts`)
 
@@ -471,4 +522,4 @@ Uwagi dot. środowiska:
 - **Zależności**:
   - `lib/search/searchIndex.ts` — `searchItems`, `groupSearchResults`, typy.
 - **Side effecty**:
-  - **[timery]**: `setTimeout` dla debounce.
+  - **[timery]**: debounce przez `useDebouncedEffect`.

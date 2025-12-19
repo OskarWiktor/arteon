@@ -1,11 +1,12 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
+import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 import {
   generateQrPng,
   generateQrSvg,
@@ -168,12 +169,13 @@ export default function QrCodeGenerator() {
     }
   }, [qrData, size, margin, darkColor, lightColor, errorLevel]);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      generateQr();
-    }, 300);
-    return () => clearTimeout(timeout);
-  }, [generateQr]);
+  useDebouncedEffect(
+    () => {
+      void generateQr();
+    },
+    300,
+    [generateQr],
+  );
 
   const handleDownloadPng = () => {
     if (!qrDataUrl) return;

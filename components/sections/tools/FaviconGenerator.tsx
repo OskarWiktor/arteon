@@ -12,6 +12,7 @@ import { rgbToHex } from '@/lib/tools/color/convert';
 import { downloadFromUrl } from '@/lib/tools/download';
 import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/favicon/generator';
 import { formatBytes } from '@/lib/tools/formatBytes';
+import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/tools/image/uploadTypes';
 import { loadImage } from '@/lib/tools/loadImage';
 import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/lib/tools/zip';
@@ -86,8 +87,6 @@ type FileStatus = 'idle' | 'processing' | 'done' | 'error';
 
 const PNG_SIZES = [16, 32, 180, 192, 512];
 
-const SUPPORTED_TYPES = ['image/png', 'image/jpeg', 'image/jpg', 'image/svg+xml'] as const;
-
 const DEFAULT_BACKGROUND_COLOR = rgbToHex({ r: 255, g: 255, b: 255 });
 
 export default function FaviconGenerator() {
@@ -115,7 +114,7 @@ export default function FaviconGenerator() {
     const file = files?.[0];
     if (!file) return;
 
-    if (!SUPPORTED_TYPES.includes(file.type as (typeof SUPPORTED_TYPES)[number])) {
+    if (!isSupportedImageUploadType(file)) {
       setError(t.supportedFormatsOnly);
       setSourceFile(null);
       if (sourcePreviewUrl) {
@@ -267,7 +266,7 @@ export default function FaviconGenerator() {
             <div>
               <p className="mb-2 font-semibold uppercase">{t.addBaseImageLabel}</p>
               <ToolFileDropzone
-                accept={SUPPORTED_TYPES.join(',')}
+                accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
                 onFiles={handleFiles}
                 className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
               >

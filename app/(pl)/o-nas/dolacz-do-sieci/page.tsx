@@ -5,11 +5,11 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
+import { toAbsoluteUrl } from '@/lib/url';
 import type { Metadata } from 'next';
 import { RiAppsLine, RiPantoneLine, RiShareForwardLine } from 'react-icons/ri';
 
-const SITE_URL = 'https://www.arteonagency.pl';
-const PAGE_URL = `${SITE_URL}/o-nas/dolacz-do-sieci`;
+const PAGE_URL = toAbsoluteUrl('/o-nas/dolacz-do-sieci');
 
 export const metadata: Metadata = {
   title: 'Dołącz do sieci Arteon',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: 'Stale rozwijamy sieć partnerów, mając na celu stworzenie przestrzeni, w której można zrealizować wszystko. Sprawdź, kogo szukamy teraz.',
     url: PAGE_URL,
     type: 'website',
-    images: [{ url: `${SITE_URL}/assets/arteon-logo-on-mockup.webp` }],
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp') }],
   },
 };
 

@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { searchItems, groupSearchResults, type SearchItem, type SearchCategory } from '@/lib/search/searchIndex';
+import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 
 type UseSearchOptions = {
   debounceMs?: number;
@@ -31,13 +32,17 @@ export function useSearch(options: UseSearchOptions = {}): UseSearchReturn {
     }
 
     setIsSearching(true);
-    const timer = setTimeout(() => {
+  }, [query, debounceMs]);
+
+  useDebouncedEffect(
+    () => {
       setDebouncedQuery(query);
       setIsSearching(false);
-    }, debounceMs);
-
-    return () => clearTimeout(timer);
-  }, [query, debounceMs]);
+    },
+    debounceMs,
+    [query],
+    { enabled: Boolean(query.trim()) },
+  );
 
   const results = useMemo(() => {
     if (!debouncedQuery.trim()) return [];

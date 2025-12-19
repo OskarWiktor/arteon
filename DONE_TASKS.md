@@ -2,6 +2,107 @@
 
 ## 2025-12-19
 
+- ✅ **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
+
+  - **Zakres**: Przeanalizowano 8 artykułów w `data/pl/blog.json` (wszystkie oprócz 2 wzorcowych: stopka mailowa, favicon) pod kątem zgodności z nowymi wytycznymi tonu marki Arteon.
+  - **Kryteria oceny**: prostota języka, wyjaśnianie terminów, analogie/przykłady z życia, płynna narracja, ludzki język, instrukcje do narzędzi, benefit-first, brak checklisty.
+  - **Wyniki**:
+    - 2 artykuły wzorcowe (OK): `jak-przygotowac-profesjonalna-stopke-mailowa`, `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`.
+    - 8 artykułów wymaga poprawy w różnym stopniu (szczegółowy raport w TASKS.md pod AUDIT-008).
+    - Główne problemy: brak wyjaśniania terminów technicznych, brak analogii, styl formalny/korporacyjny zamiast mentorskiego, brak FAQ, checklisty zamiast podsumowań, 1 artykuł ma zduplikowane sekcje.
+  - **Follow-up (nowe zadania)**:
+    - `CONTENT-002` — przepisać 3 artykuły priorytet 1 (najgorsze: kolorystyka, pozycjonowanie, identyfikacja wizualna).
+    - `CONTENT-003` — przepisać 3 artykuły priorytet 2 (średnie: FAQ, blog lokalny, strona w Google).
+    - `CONTENT-004` — naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton).
+
+- ✅ **[CLEANUP-012] Tools: ujednolicić `SUPPORTED_TYPES` (upload obrazów) jako shared const + helper**
+
+  - Pliki:
+    - `lib/tools/image/uploadTypes.ts`
+    - `components/sections/tools/FaviconGenerator.tsx`
+    - `components/sections/tools/PaletteExtractor.tsx`
+    - `HOOKS_CATALOG.md`
+  - **Zrobione**:
+    - Dodano shared const `SUPPORTED_IMAGE_UPLOAD_TYPES` oraz helper `isSupportedImageUploadType(file)`.
+    - Zastąpiono lokalne `SUPPORTED_TYPES` w obu narzędziach importem z utila (bez zmiany UI/UX).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[TOOLS-018] Search/QR: ujednolicić debounce (hook) bez duplikacji `setTimeout`**
+
+  - Pliki:
+    - `hooks/useDebouncedEffect.ts`
+    - `hooks/useSearch.ts`
+    - `components/sections/tools/QrCodeGenerator.tsx`
+    - `HOOKS_CATALOG.md`
+  - **Zrobione**:
+    - Dodano shared hook `useDebouncedEffect` i użyto go do debounce side-effectów.
+    - Przepięto `useSearch` (debounce query, 150ms) na hook.
+    - Przepięto generator QR (debounce podglądu, 300ms) na hook.
+    - Usunięto lokalne `setTimeout`/`clearTimeout` w obu miejscach (bez zmiany UI/UX).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[AUDIT-003] Repo: audyt cleanup (puste pliki, martwe exporty, nieużywany kod/warianty)**
+
+  - **Sprawdzono**:
+    - Puste pliki (0B / whitespace-only) poza `node_modules` / `.next` / `.git` (brak).
+    - Puste katalogi poza `.git` (brak).
+    - Użycie potencjalnie „martwych” wariantów: `Gap variant="line"`, `ToolHelper variant="error"`, `CopyButton variant="dark"` (używane).
+    - Re-export `data/pl/calculator/index.ts` (używany przez `components/sections/Calculator.tsx`).
+  - **Dodano zadania**: brak.
+
+- ✅ **[AUDIT-007] Audyt prawdziwości informacji i źródeł w istniejących artykułach**
+  - Zakres: Przegląd artykułów w `data/pl/blog.json` pod kątem dokładności informacji i wiarygodności źródeł.
+  - Wynik: Większość treści jest zgodna z faktami i opiera się na wiarygodnych źródłach. Jeden artykuł wymaga poprawy merytorycznej.
+  - Follow-up: Dodano zadanie `CONTENT-001` do poprawy cytowań w artykule o kolorystyce.
+
+
+- ✅ **[SEO-016] Ujednolicić źródło `SITE_URL` (żeby nie driftowało między plikami)**
+
+  - Pliki:
+    - `lib/url.ts`
+    - `app/layout.tsx`
+    - `components/shared/Footer.tsx`
+    - `app/(pl)/o-nas/dolacz-do-sieci/page.tsx`
+    - `app/(pl)/o-nas/faq/page.tsx`
+  - **Zrobione**:
+    - Usunięto duplikacje `SITE_URL`/`BASE_URL` w ww. plikach i zastąpiono je re-usem `siteUrl`/`toAbsoluteUrl()` z `lib/url.ts`.
+    - Bez zmian w UI/UX i bez zmian w finalnych URL-ach.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[TOOLS-020] Clipboard: ujednolicić kopiowanie (text/html) i fallbacki**
+
+  - Pliki:
+    - `lib/tools/clipboard.ts`
+    - `hooks/useCopyToClipboard.ts`
+    - `components/sections/tools/EmailSignatureGenerator/useSignatureCopy.ts`
+    - `HOOKS_CATALOG.md`
+  - **Zrobione**:
+    - Dodano wspólny helper do kopiowania tekstu i HTML oraz capability detection.
+    - Przepięto oba miejsca na helper i usunięto duplikację (bez zmian w UI/UX).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[TOOLS-019] Tools: helper do pobierania ZIP (ObjectURL + auto revoke) bez powtarzania `setTimeout(...revoke...)`**
+
+  - Pliki:
+    - `lib/tools/downloadBlob.ts`
+    - `components/sections/tools/FaviconGenerator.tsx`
+    - `components/sections/tools/JpgPngToWebp/useWebpDownloads.ts`
+    - `HOOKS_CATALOG.md`
+  - **Zrobione**:
+    - Dodano shared helper `downloadBlob` (ObjectURL + pobranie + auto-revoke po czasie).
+    - Przepięto pobieranie ZIP w `FaviconGenerator` i `useWebpDownloads` na `downloadBlob` (bez zmiany UI/UX).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[COPY-043] O nas/FAQ: poprawić literówki, polskie znaki i spójność tonu w odpowiedziach**
+
+  - Plik:
+    - `app/(pl)/o-nas/faq/page.tsx`
+  - **Zrobione**:
+    - Poprawiono literówki, polskie znaki, interpunkcję oraz spacje w nawiasach w `FAQ_ITEMS`.
+    - Usunięto emotikony i ujednolicono styl odpowiedzi na mentorski (bez slangu).
+    - Ujednolicono `answerSchemaText`, aby odpowiadało treści odpowiedzi.
+  - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
+
 - ✅ **[UI-002] SearchDialog: dopasować style do reszty serwisu (kolory + wysokość inputa)**
 
   - Pliki:
@@ -25,6 +126,30 @@
     - Zmniejszono wysokość inputa (py-3→py-2, text-base→text-sm).
     - Dodano ikonę wyszukiwania na desktop w Navigation pomiędzy linkami a `#MadeWithNext.js`.
   - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- 🟡 **[AUDIT-001] Repo: audyt treści (literówki, ortografia, interpunkcja, spójność copy)**
+
+  - **Sprawdzono**:
+    - `app/(pl)/**` (szybki skan grep pod kątem typowych literówek/ASCII i niespójności)
+    - `data/pl/blog.json` (weryfikacja placeholderów/artefaktów typu `lorem`)
+    - `data/pl/projects.json` (placeholdery w polach typu `task`)
+    - Spot-check: `app/(pl)/o-nas/faq/page.tsx` (spójność tonu + język)
+  - **Wykryte problemy**:
+    - `/o-nas/faq`: literówki, brak polskich znaków oraz emotikony w odpowiedziach FAQ.
+    - `projects.json`: placeholder `"task": "test"` dla `colgate` (follow-up już opisany w `PROJECT-006`).
+  - **Dodano zadania**: `COPY-043`
+
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły”**
+
+  - **Zrobione 2025-12-19**:
+    - Dodano 5 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-039`-`IDEA-043`.
+    - Dodano 6 pomysłów (artykuły) do sekcji „Pomysły” w `TASKS.md`: `IDEA-044`-`IDEA-049`.
+
+- 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty)**
+
+  - **Zrobione 2025-12-19**:
+    - Skan duplikacji: debounce/timery (`hooks/useSearch.ts`, `components/sections/tools/QrCodeGenerator.tsx`), upload image MIME (`components/sections/tools/FaviconGenerator.tsx`, `components/sections/tools/PaletteExtractor.tsx`), ObjectURL + revoke po pobraniu ZIP (`components/sections/tools/FaviconGenerator.tsx`, `components/sections/tools/JpgPngToWebp/useWebpDownloads.ts`), kopiowanie (`hooks/useCopyToClipboard.ts`, `components/sections/tools/EmailSignatureGenerator/useSignatureCopy.ts`).
+    - Dodano zadania: `TOOLS-018`, `CLEANUP-012`, `TOOLS-019`, `TOOLS-020`.
 
 - 🟡 **[AUDIT-001] Audyt zgodności artykułów z wytycznymi pisania treści**
   - Plik: `data/pl/blog.json` (15 artykułów)
@@ -125,7 +250,7 @@
   - Dodano instrukcję krok po kroku do generatora palet Arteon.
   - Uproszczono wyjaśnienia psychologii kolorów.
   - Dodano link do testera kontrastu WCAG.
-  - Sprawdzone: `npm run lint` (OK).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[IDEA-032] Rewrite: „FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?"**
 
@@ -133,7 +258,7 @@
   - Przepisano artykuł w przyjaznym tonie.
   - Wyjaśniono wszystkie terminy (FAQ, SEO, long-tail, FAQ schema, dane strukturalne).
   - Dodano analogie i przykłady z życia.
-  - Sprawdzone: `npm run lint` (OK).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[IDEA-033] Rewrite: „Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?"**
 
@@ -142,7 +267,7 @@
   - Dodano wyjaśnienie czym jest SEO/pozycjonowanie.
   - Dodano analogię „SEO to jak sadzenie drzewa".
   - Uproszczono język techniczny.
-  - Sprawdzone: `npm run lint` (OK).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[IDEA-034] Rewrite: Pozostałe artykuły — audyt i dostosowanie tonu**
 
@@ -162,7 +287,7 @@
     - Zaktualizowano wytyczne artykułów w `TASKS.md` o nowe zasady tonu (sekcja „KLUCZOWE: Maksymalna prostota i przyjazność").
     - Zawiera 6 FAQ oraz CTA do generatora i oferty identyfikacji wizualnej.
     - Poprawione polskie znaki diakrytyczne (ą, ę, ó, ś, ć, ż, ź, ł, ń).
-    - Sprawdzone: `npm run lint` (OK).
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[IDEA-029] Artykuł: „Favicon i ikony strony: co przygotować, żeby działały w przeglądarkach i Lighthouse?"**
 
@@ -172,7 +297,7 @@
     - Artykuł wyjaśnia: czym jest favicon, jakie pliki są potrzebne, najczęstsze błędy, jak stworzyć zestaw w generatorze Arteon.
     - Instrukcja krok po kroku dla generatora favicon.
     - Zawiera 6 FAQ oraz CTA do generatora i oferty stron internetowych.
-    - Sprawdzone: `npm run lint` (OK).
+    - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — narzędzia, usługi, artykuły, cross-linking**
 
@@ -939,35 +1064,42 @@
     - Poprawiono `Teorytycznie` → `Teoretycznie` w sekcji FAQ.
     - Poprawiono `answerSchemaText`: dodano „Audyt SEO” i uporządkowano zdanie.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (zgodnie z zasadą dla COPY).
+
 - ✅ **[COPY-011] Projekt logo: poprawić literówki w FAQ**
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-logo/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono literówki w FAQ: `rundę`, `pewien, jakie`, `ekspresową`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[CLEANUP-003] Repo: skan i usunięcie pustych plików/komponentów**
   - **Zrobione 2025-12-14**:
     - Przeskanowano repo (git-tracked) pod kątem plików 0B, whitespace-only oraz JS/TS zawierających tylko komentarze/whitespace — brak wyników.
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[SEO-011] Schema OG + URL**
   - **Zrobione 2025-12-14**:
     - Ujednolicono bezwzględne URL-e (`https://www.arteonagency.pl/...`) w OpenGraph (`openGraph.url`, `openGraph.images[].url`) oraz w schema (JSON-LD `url`) na stronach.
     - Dla stron dynamicznych dopięto prefiks `siteUrl` dla obrazków OG/Twitter, gdy źródło było relatywne (`/assets/...`) (`/realizacje/[slug]`, `/edukacja/[category]/[slug]`).
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[COPY-003] Strony internetowe: poprawić „w ciągu” + interpunkcję i literówki**
   - Plik: `app/(pl)/uslugi/strony-internetowe/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono interpunkcję i zapis w sekcji statystyk (m.in. `w przeciągu` → `w ciągu`, `osób, szukających` → `osób szukających`, usunięto zbędny przecinek po `Google`, `,a` → `, a`).
     - Poprawiono treści w FAQ (m.in. kapitalizacja pytania, `jest zależy` → `zależy`, usunięto spacje w nawiasach, `cookies` → `pliki cookie`, `wszystkie kroku` → `wszystkie kroki`).
+
 - ✅ **[COPY-006] Portfolio: poprawić literówkę w opisie OpenGraph**
   - Plik: `app/(pl)/realizacje/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono literówkę w `metadata.openGraph.description`: `przejrzty proces` → `przejrzysty proces`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (zgodnie z prośbą).
+
 - ✅ **[COPY-009] Usługi (listy): poprawić „hierarchią” i składnię opisu szablonów postów**
   - **Zrobione 2025-12-14**:
     - Poprawiono opis „Szablony postów na social media” na stronach list usług: `/uslugi` oraz `/uslugi/projekty-graficzne`.
     - Zmieniono składnię zdania (`ułatwiające regularne publikację, tworząc` → `ułatwiające regularne publikowanie i pomagające utrzymać`) oraz poprawiono literówkę `hieratchią` → `hierarchią`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[CLEANUP-002] Karuzele: rename `*Overview` → `*Carousel`**
   - **Zrobione 2025-12-14**:
     - Zaktualizowano importy i użycia: `ArticlesOverview` → `ArticlesCarousel`, `ProjectsOverview` → `ProjectsCarousel` (w tym `app/(pl)/uslugi/projekty-graficzne/**`).
@@ -975,6 +1107,7 @@
     - Usunięto puste aliasy: `components/sections/blog/ArticlesOverview.tsx`, `components/sections/projects/ProjectsOverview.tsx`.
     - Naprawiono błąd ESLint blokujący build w `components/ui/TableBlock.tsx`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[COPY-008] Marketing: poprawić literówki i interpunkcję w sekcji korzyści**
 
   - Plik: `app/(pl)/uslugi/marketing/page.tsx`
@@ -1005,22 +1138,26 @@
     - Dopisano wpisy m.in. dla: `utils/slug`, `lib/blog`, `lib/serviceSchema`, `lib/site`, `lib/config/site/*`, `lib/consent/*`, `lib/tools/*`.
     - Doprecyzowano uwagi dot. środowiska (SSR-safe vs browser-only).
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[TOOLS-013] ImageResizeTool: dodać presety WWW (w tym OG image)**
   - **Zrobione 2025-12-14**:
     - Dodano presety `WWW`: `OG image` (1200×630), `Grafika do artykułu` (1600×900), `Baner strony` (1920×600).
     - Zaktualizowano `TOOLS_CATALOG.md`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[TOOLS-005] MetaTitleDescriptionTool**: wydzielić pomiar (canvas) + heurystyki statusów + snippet preview; zero zmian UI/UX
   - **Zrobione 2025-12-14**:
     - Wydzielono logikę analizy długości meta do `lib/tools/seo/metaLength.ts` (pomiar px, heurystyki statusów, truncation do podglądu).
     - `MetaTitleDescriptionTool` korzysta z nowych utili (UI/UX bez zmian).
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[NAV-001] Dane nawigacji: single source of truth**
   - Mobile i Desktop korzystają z tego samego źródła. Stworzenie nowego komponentu w którym będą wspólne linki dzięki czemu wystarczy będzie dodać kolejne lub zmienić istniejące linki w jednym pliku. Rozbicie nawigacji na mniejsze komponenty i użycie hooków, które już są lub stworzenie nowych jeśli jest to potrzebne. Zachowaj w 100% ten sam wygląd i działanie. Jeśli zauważysz opcję ulepszenia działania lub jakiś błąd poinformuj mnie o tym
   - **Zrobione 2025-12-14**:
     - Dodano SSOT: `components/shared/navigation-data/pl.ts` (nav + sekcje usług + sekcje narzędzi + linki prawne).
     - `DesktopNavigation` i `MobileNavigation` pobierają dane z SSOT (bez zmian UI/UX).
     - `npm run lint` i `npm run build` przechodzą.
+
 - ✅ **[COOKIE-001] CookieConsent: rozdzielenie odpowiedzialności**
   - Wydzielić storage/gtag/UI (mniej “god component”); UX bez zmian.
   - **Zrobione 2025-12-14**:
@@ -1030,13 +1167,16 @@
       - `lib/consent/ga.ts` (lazy-load GA po zgodzie)
     - `CookieConsent` korzysta z tych modułów i wystawia globalne `window.ArteonConsent.open()` (dla `CookieSettingsButton`).
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[DOCS-001] `PAGES_CATALOG.md`: katalog stron (App Router)**
   - **Zrobione 2025-12-14**:
     - Utworzono `PAGES_CATALOG.md` z listą wszystkich route’ów z `app/` (w tym route groups i dynamic segments).
     - Dla stron opisano: cel, kluczowe komponenty oraz SEO (`metadata` + schema.org JSON-LD/microdata).
     - Uwzględniono pliki specjalne: `app/layout.tsx`, `app/error.tsx`, `app/not-found.tsx` oraz `app/(pl)/narzedzia/(tools)/layout.tsx`.
+
 - ✅ **[SEO-001] Canonical: audyt i poprawki**
   - Zapewnić canonical wg zasad powyżej na wszystkich stronach. **Zrobione 2025-12-14**: wszystkie canonical URLs używają formatu `https://www.arteonagency.pl/`
+
 - ✅ **[SEO-003] Schema.org: backlog**
   - Spisać możliwe schema i wskazać strony-kandydatów. **Zrobione 2025-12-14**
   - **Schema (propozycje) + strony-kandydaci:**
@@ -1051,6 +1191,7 @@
     - `BreadcrumbList` (okruszki) — komponent `components/sections/BreadCrumbs.tsx`
     - `AboutPage` (o firmie) — `/o-nas`
     - `PrivacyPolicyPage` (`/polityka-prywatnosci`) i `TermsOfServicePage` (`/regulamin`) — do rozważenia
+
 - ✅ **[SEO-004] Schema.org: pokrycie + sanity-check**
   - Sprawdzić czy strony z listy [SEO-003] faktycznie emitują schema (JSON-LD lub microdata). **Zrobione 2025-12-14**
   - **Jest (OK):**
@@ -1080,30 +1221,36 @@
     - `/realizacje/[slug]` — rozważyć `CaseStudy` zamiast `Article`
     - `/polityka-prywatnosci` — rozważyć `PrivacyPolicy` zamiast `Article`
     - `/regulamin` — rozważyć `TermsOfService` zamiast `Article`
+
 - ✅ **[SEO-005] Schema: `/uslugi` (OfferCatalog / ItemList)**
   - Dodać schema dla strony listy usług: `CollectionPage` + `ItemList` (lub `OfferCatalog`).
   - **Zrobione 2025-12-14**:
     - Dodano JSON-LD `CollectionPage` + `ItemList` (ListItem: `url` + `name`) na `app/(pl)/uslugi/page.tsx` na podstawie listy `SERVICES` w tym pliku.
     - `npm run lint` i `npm run build` przechodzą.
+
 - ✅ **[SEO-006] Schema: `/realizacje` (CollectionPage + ItemList)**
   - Dodać schema listy realizacji (kolekcja + lista elementów z URL).
   - **Zrobione 2025-12-14**:
     - Dodano JSON-LD `CollectionPage` + `ItemList` (ListItem: `url` + `name`) na `app/(pl)/realizacje/page.tsx` na podstawie `data/pl/projects.json`.
     - `npm run lint` i `npm run build` przechodzą.
+
 - ✅ **[SEO-007] Schema: `/edukacja` (CollectionPage + ItemList)**
   - Dodać schema listy artykułów (kolekcja + lista elementów z URL).
   - **Zrobione 2025-12-14**:
     - Dodano JSON-LD `CollectionPage` + `ItemList` (ListItem: `url` + `name`) na `app/(pl)/edukacja/page.tsx` na podstawie `data/pl/blog.json`.
     - `npm run lint` i `npm run build` przechodzą.
+
 - ✅ **[SEO-008] Schema/URLs: naprawa slugów w narzędziu Image Resize**
   - Naprawić mismatch URL w schema i breadcrumbs dla `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`.
   - **Zrobione 2025-12-14**:
     - Poprawiono `schema.url` na `https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia` w `app/(pl)/narzedzia/(tools)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`.
     - Poprawiono URL w breadcrumbs (3. poziom) na `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
+
 - ✅ **[SEO-009] Schema: deduplikacja `BreadcrumbList`**
   - Usunąć duplikaty `BreadcrumbList` na `/edukacja/[category]/[slug]` i `/realizacje/[slug]` (zostawić jedno źródło).
   - **Zrobione 2025-12-14**:
+
 - ✅ **[CLEANUP-001] `tool-pill*`: weryfikacja i ewentualne usunięcie martwego CSS**
 
   - **Zrobione 2025-12-14**:

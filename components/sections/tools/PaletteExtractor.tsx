@@ -12,6 +12,7 @@ import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { formatBytes } from '@/lib/tools/formatBytes';
 import { getFileFormatLabel } from '@/lib/tools/fileFormat';
 import { getDownscaledImageDataFromUrl } from '@/lib/tools/image/canvas';
+import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/tools/image/uploadTypes';
 import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
 
 const ui = {
@@ -36,8 +37,6 @@ const ui = {
 
 type Status = 'idle' | 'processing' | 'done' | 'error';
 
-const SUPPORTED_TYPES = ['image/png', 'image/jpeg', 'image/jpg', 'image/svg+xml'] as const;
-
 export default function PaletteExtractor() {
   const t = ui.pl;
 
@@ -54,7 +53,7 @@ export default function PaletteExtractor() {
   const fileSize = useMemo(() => (file ? formatBytes(file.size) : null), [file]);
 
   function handleFileSelected(next: File) {
-    if (!SUPPORTED_TYPES.includes(next.type as (typeof SUPPORTED_TYPES)[number])) {
+    if (!isSupportedImageUploadType(next)) {
       setError(t.unsupportedFormatsOnly);
       setFile(null);
       setColors([]);
@@ -124,7 +123,7 @@ export default function PaletteExtractor() {
       <ToolSection className="space-y-4">
         <div>
           <p className="mb-2 font-semibold uppercase">{t.addImageLabel}</p>
-          <ToolFileDropzone accept={SUPPORTED_TYPES.join(',')} disabled={isProcessing} onFiles={handleFiles} className={`tool-upload-area ${isProcessing ? 'cursor-not-allowed opacity-60' : ''}`}>
+          <ToolFileDropzone accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')} disabled={isProcessing} onFiles={handleFiles} className={`tool-upload-area ${isProcessing ? 'cursor-not-allowed opacity-60' : ''}`}>
             <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
             <span className="text-light mb-2 text-xs">{t.clickToSelect}</span>
             <Badge variant="default" size="sm" className="bg-white shadow-sm">

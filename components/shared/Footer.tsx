@@ -3,6 +3,7 @@ import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
 import Image from 'next/image';
 import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
+import { siteUrl, toAbsoluteUrl } from '@/lib/url';
 
 const ui = {
   pl: {
@@ -28,8 +29,6 @@ const ui = {
   },
 } as const;
 
-const BASE_URL = 'https://www.arteonagency.pl';
-
 const ORG = {
   name: 'Arteon',
   phoneE164: '+48516466255',
@@ -41,10 +40,10 @@ function FooterSchemas() {
   const professionalService = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    '@id': `${BASE_URL}#local`,
+    '@id': `${siteUrl}#local`,
     name: ORG.name,
-    url: BASE_URL,
-    image: `${BASE_URL}/icon-512x512.png`,
+    url: siteUrl,
+    image: toAbsoluteUrl('/icon-512x512.png'),
     telephone: ORG.phoneE164,
     email: 'kontakt@arteonagency.pl',
     openingHoursSpecification: [

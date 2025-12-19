@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useRef, useState } from 'react';
+import { copyTextToClipboard } from '@/lib/tools/clipboard';
 
 type Options = {
   resetAfterMs?: number;
@@ -16,18 +17,7 @@ export function useCopyToClipboard() {
     const resetAfterMs = options?.resetAfterMs ?? 1200;
 
     try {
-      if (navigator.clipboard) {
-        await navigator.clipboard.writeText(text);
-      } else {
-        const textArea = document.createElement('textarea');
-        textArea.value = text;
-        textArea.style.position = 'fixed';
-        textArea.style.opacity = '0';
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-      }
+      await copyTextToClipboard(text);
 
       setCopied(true);
       options?.onCopy?.();

@@ -14,23 +14,17 @@ import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { LocaleProvider, type Locale } from '@/lib/LocaleContext';
 import { getActiveSiteKey } from '@/lib/site';
 import { SiteProvider } from '@/lib/SiteContext';
+import { siteUrl, toAbsoluteUrl } from '@/lib/url';
 
 import './globals.css';
 
 // site scaffold only — no production behavior changes while flag disabled
-const SITE_URL = 'https://www.arteonagency.pl';
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
 
-const ORG_LOGO = `${SITE_URL}/icon-512x512.png`;
-const metadataBase = (() => {
-  try {
-    return new URL(SITE_URL);
-  } catch {
-    return new URL('https://www.arteonagency.pl');
-  }
-})();
+const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
+const metadataBase = new URL(siteUrl);
 
 export const metadata: Metadata = {
   metadataBase,
@@ -43,10 +37,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'Arteon',
-    url: SITE_URL,
+    url: siteUrl,
     images: [
       {
-        url: `${SITE_URL}/assets/arteon-logo-on-mockup.webp`,
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
         width: 1200,
         height: 630,
         alt: 'Logo Arteon na plakacie',
@@ -58,9 +52,9 @@ export const metadata: Metadata = {
 const orgJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  '@id': `${SITE_URL}#organization`,
+  '@id': `${siteUrl}#organization`,
   name: 'Arteon',
-  url: SITE_URL,
+  url: siteUrl,
   logo: {
     '@type': 'ImageObject',
     url: ORG_LOGO,
@@ -97,10 +91,10 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Arteon',
-  url: SITE_URL,
+  url: siteUrl,
   inLanguage: 'pl',
   publisher: {
-    '@id': `${SITE_URL}#organization`,
+    '@id': `${siteUrl}#organization`,
   },
 };
 
