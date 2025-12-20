@@ -16,7 +16,7 @@ Celem katalogu jest:
 - **Źródło danych**: `data/pl/blog.json`.
 - **Routing**: `/edukacja/[category]/[slug]`.
 - **Kategoria kanoniczna (routing)**:
-  - jest wyliczana z **pierwszego elementu** tablicy `category[]`.
+  - jest wyliczana z `primaryCategory` (jeśli istnieje), a jeśli nie — z pierwszego elementu tablicy `category[]`.
   - implementacja: `getPrimaryCategorySlug(a)` w `lib/blog.ts`.
 - **Canonical URL (w danych artykułu)**:
   - oczekiwany format: `https://www.arteonagency.pl/edukacja/{primaryCategorySlug}/{slug}`.
@@ -28,8 +28,8 @@ Celem katalogu jest:
 - **Jak kolorystyka wpływa na decyzje zakupowe klientów?**
 
   - **Slug**: `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
-  - **URL**: `/edukacja/design/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
-  - **Kategorie**: `Design`, `Psychologia`, `Branding`
+  - **URL**: `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+  - **Kategorie**: `Grafika`, `Psychologia`, `Branding`
 
 - **Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?**
 
@@ -58,8 +58,8 @@ Celem katalogu jest:
 - **Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?**
 
   - **Slug**: `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
-  - **URL**: `/edukacja/design/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow` (wg routingu)
-  - **Kategorie**: `Design`, `Branding`
+  - **URL**: `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+  - **Kategorie**: `Grafika`, `Branding`
 
 - **Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?**
   - **Slug**: `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
@@ -73,18 +73,20 @@ Celem katalogu jest:
 ## Jak kolorystyka wpływa na decyzje zakupowe klientów?
 
 - **Slug**: `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
-- **Kategorie**: `Design` (primary), `Psychologia`, `Branding`
+- **Kategorie**: `Grafika` (primary), `Psychologia`, `Branding`
 - **Daty**:
   - **`datePublished`**: `2025-12-09`
   - **`dateModified`**: `2025-12-19`
-- **Szacowany czas czytania**: `4 min`
+- **Szacowany czas czytania**: `6 min`
+- **Tagi**: występują (8): `kolorystyka`, `psychologia kolorów`, `branding`, `identyfikacja wizualna`, `ux`, `konwersja`, `cta`, `wcag`
+- **FAQ**: występuje (5).
 - **Format treści (`contentBlocks`)**:
   - **Typy bloków**: tylko `richtext`.
   - **Konsekwencja**: dużo nagłówków `H2` i `H3` (dobry „szkielet” pod TOC), ale brak wzbogacenia o `image` / `table`.
 - **SEO (meta)**:
   - **`seo.title`**: identyczny jak `title` - poprawne, ale bez wyróżnika marki.
   - **`seo.description`**: bardzo mocne - zawiera obietnicę wartości i wiarygodne źródła.
-  - **`seo.canonical`**: wygląda spójnie z routingiem (`/edukacja/design/...`).
+  - **`seo.canonical`**: wygląda spójnie z routingiem (`/edukacja/grafika/...`).
 - **CTA**:
 
   - **Występuje**.
@@ -99,28 +101,23 @@ Celem katalogu jest:
 
 - **Minusy / ryzyka**:
 
-  - **[brak tagów]** utrudnia budowę klastrów tematycznych i powiązanych wpisów w obrębie bloga.
-  - **[brak FAQ]** ogranicza pokrycie long-tail (PAA) i możliwość rozbudowy o dodatkowe intencje.
-  - **[brak linkowania wewnętrznego w treści]** poza CTA artykuł nie prowadzi czytelnika do powiązanych zasobów (narzędzia/usługi/inne wpisy).
+  - **[mało linkowania do innych artykułów]** poza linkami do narzędzi/CTA, wpis nie buduje mocnego klastra tematycznego (np. z artykułem o identyfikacji wizualnej).
   - **[brak materiału wizualnego]** przy temacie „kolor” brak przykładów palet i kontrastów osłabia UX.
 
 - **Braki (co ma / czego nie ma)**:
 
-  - **[ma]** jasne nagłówki, listy, źródła, konkretne wnioski, CTA.
-  - **[nie ma]** tagów, FAQ, obrazów/diagramów, tabel podsumowujących, linków wewnętrznych w środku tekstu.
+  - **[ma]** jasne nagłówki, listy, źródła, konkretne wnioski, CTA, tagi, FAQ.
+  - **[nie ma]** obrazów/diagramów, tabel podsumowujących, mocniejszego linkowania do innych artykułów w obrębie klastra.
 
 - **Ton i charakter**:
 
-  - **[ekspercki]** odwołania do badań i danych.
+  - **[mentorski]** proste prowadzenie i szybkie doprecyzowania terminów (CTR/CTA/UX/WCAG).
   - **[praktyczny]** nastawiony na wdrożenie (jak dobrać kolor, jak wpływa na CTA).
   - **[marketingowo-sprzedażowy]** wnioski prowadzą do konwersji, ale bez agresywnego języka.
 
 - **Sugestie ulepszeń (SEO + UX)**:
-  - **[tagi]** dodać spójny zestaw, np.: `psychologia kolorów`, `UX`, `konwersja`, `branding`, `identyfikacja wizualna`, `CTA`.
-  - **[FAQ]** dodać 4-7 pytań (pod long-tail), np.:
-    - „Jaki kolor przycisku CTA zwiększa konwersję?”
-    - „Ile kolorów powinna mieć identyfikacja wizualna?”
-    - „Jak sprawdzić kontrast kolorów na stronie?”
+  - **[tagi]** utrzymać i ewentualnie doprecyzować w czasie (spójne słownictwo w całym blogu).
+  - **[FAQ]** rozważyć rozbudowę do 6-8 pytań (pod long-tail), jeśli temat zacznie zbierać ruch z PAA.
   - **[linkowanie wewnętrzne]** dodać w treści 3-6 linków:
     - do narzędzi (generator palet, checker kontrastu),
     - do oferty brandingu/identyfikacji,
@@ -136,13 +133,15 @@ Celem katalogu jest:
 - **Kategorie**: `SEO` (primary), `Widoczność`
 - **Daty**:
   - **`datePublished`**: `2025-12-09`
-  - **`dateModified`**: `2025-12-09`
-- **Szacowany czas czytania**: `4 min`
+  - **`dateModified`**: `2025-12-19`
+- **Szacowany czas czytania**: `6 min`
+- **Tagi**: występują (8): `pozycjonowanie`, `seo`, `czas seo`, `audyt seo`, `core web vitals`, `treści seo`, `link building`, `google search console`
+- **FAQ**: występuje (5).
 - **Format treści (`contentBlocks`)**:
   - **Typy bloków**: tylko `richtext`.
   - **Konsekwencja**: materiał jest „tekstowy” - bez tabel/wykresów, mimo że temat dobrze się do nich nadaje.
 - **SEO (meta)**:
-  - **`seo.title`**: bardzo długi (ryzyko ucięcia w SERP).
+  - **`seo.title`**: skrócony + dopisek `| Arteon`.
   - **`seo.description`**: rzeczowy, zgodny z intencją (czas + czynniki).
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
 - **CTA**:
@@ -159,14 +158,12 @@ Celem katalogu jest:
 
 - **Minusy / ryzyka**:
 
-  - **[brak tagów]** trudniej zbudować klaster SEO (czas, indeksacja, audyt, treści) i powiązania między wpisami.
-  - **[brak FAQ]** w temacie „czas SEO” FAQ zwykle zbiera dużo long-tail (PAA).
-  - **[brak linkowania wewnętrznego w treści]** można naturalnie linkować do audytu SEO, artykułu o indeksacji oraz o treściach.
+  - **[brak tabel/wykresów]** mimo że temat dobrze się do nich nadaje.
 
 - **Braki (co ma / czego nie ma)**:
 
   - **[ma]** dane i źródła, strukturę czasową, logiczne argumenty, CTA.
-  - **[nie ma]** tagów, FAQ, tabel/wykresów, sekcji „TL;DR”, linków wewnętrznych w środku tekstu.
+  - **[nie ma]** tabel/wykresów, sekcji „TL;DR” na samym początku.
 
 - **Ton i charakter**:
 
@@ -174,19 +171,9 @@ Celem katalogu jest:
   - **[konsultacyjny]** tłumaczy czynniki i prowadzi do działania (CTA).
 
 - **Sugestie ulepszeń (SEO + UX)**:
-  - **[meta title]** skrócić (i ewentualnie ustandaryzować dopisek marki) - tak, by nie przekraczać sensownego limitu.
-  - **[FAQ]** dodać 5-8 pytań, np.:
-    - „Czy da się przyspieszyć efekty SEO?”
-    - „Kiedy pojawią się pierwsze leady z Google?”
-    - „Dlaczego nowa domena rośnie wolniej?”
-    - „Co jest ważniejsze: treści czy linki?”
-  - **[tagi]** dodać m.in.: `czas SEO`, `pozycjonowanie stron`, `link building`, `audyt SEO`, `content`.
   - **[format danych]** dodać tabelę „czynnik → wpływ na czas → co zrobić → jak mierzyć”.
-  - **[linkowanie wewnętrzne]** wpleść 3-6 linków do:
-    - audytu SEO,
-    - artykułu o indeksacji (brak widoczności w Google),
-    - artykułu o treściach (SEO copywriting).
-  - **[porządek w HTML]** ujednolicić `<br/>`.
+  - **[TL;DR]** dodać na początku 4-6 punktów „co zrobić najpierw, żeby SEO ruszyło”.
+  - **[porządek w HTML]** utrzymać spójne łamania linii (`<br/>`).
 
 ---
 
@@ -391,10 +378,10 @@ Celem katalogu jest:
 ## Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?
 
 - **Slug**: `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
-- **Kategorie**: `Design` (primary), `Branding`
+- **Kategorie**: `Grafika` (primary), `Branding`
 - **Daty**:
   - **`datePublished`**: `2025-10-28`
-  - **`dateModified`**: `2025-10-28`
+  - **`dateModified`**: `2025-12-19`
 - **Szacowany czas czytania**: `7 min`
 - **Tagi**: występują (9):
   - `identyfikacja wizualna`
@@ -413,9 +400,7 @@ Celem katalogu jest:
 - **SEO (meta)**:
   - **`seo.title`**: zawiera dopisek marki `| Arteon`, ale jest dość długi.
   - **`seo.description`**: merytoryczny i „sprzedażowy” (zachęca do wdrożenia).
-  - **`seo.canonical`**: **niespójny z routingiem**.
-    - w danych: `https://www.arteonagency.pl/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
-    - wg routingu (primary category = `Design`): `/edukacja/design/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+  - **`seo.canonical`**: spójny z routingiem (`/edukacja/grafika/...`).
 - **CTA**:
 
   - **Występuje**.
@@ -426,18 +411,17 @@ Celem katalogu jest:
   - **[silny temat biznesowy]** „zaufanie” jest bezpośrednio powiązane z konwersją i decyzją zakupową.
   - **[tagi + FAQ]** dobry zestaw pod semantykę i long-tail.
   - **[obrazy]** wspierają UX i wiarygodność (pokazują przykłady w praktyce).
-  - **[linkowanie do usług]** w treści pojawiają się linki do ofert (identyfikacja / logo / projekt graficzny) - spójna ścieżka.
+  - **[linkowanie wewnętrzne]** w treści jest sekcja „Zobacz też” (powiązane artykuły i narzędzia) + linki do usług.
 
 - **Minusy / ryzyka**:
 
-  - **[canonical vs primary category]** realne ryzyko konfliktu URL (redirecty, niespójne udostępnienia, rozmycie sygnałów).
-  - **[mało źródeł zewnętrznych]** w porównaniu do artykułów „SEO” brak cytowań raportów/badań, które wzmocniłyby E‑E‑A‑T.
+  - **[mało źródeł zewnętrznych]** w porównaniu do artykułów „SEO” przydałyby się 2-3 cytowania raportów/badań (spójność marki, first impression).
   - **[brak H3]** miejscami przydałaby się głębsza hierarchia (lepsza skanowalność i TOC).
 
 - **Braki (co ma / czego nie ma)**:
 
   - **[ma]** tagi, FAQ, obrazy, linki do usług, logiczne podsumowanie.
-  - **[nie ma]** mocnych danych/źródeł, spójnego canonical z routingiem, pogłębienia nagłówków H3.
+  - **[nie ma]** mocnych danych/źródeł, pogłębienia nagłówków H3.
 
 - **Ton i charakter**:
 
@@ -445,9 +429,6 @@ Celem katalogu jest:
   - **[sprzedażowy]** w naturalny sposób domyka się ofertą.
 
 - **Sugestie ulepszeń (SEO + UX)**:
-  - **[naprawa canonical]** zdecydować jedną wersję:
-    - jeśli primary ma być `Branding`: przestawić kolejność kategorii na `['Branding', 'Design']`,
-    - jeśli primary ma być `Design`: zmienić `seo.canonical` na `/edukacja/design/...`.
   - **[linkowanie wewnętrzne]** dodać link do wpisu o kolorystyce (naturalny klaster: kolorystyka ↔ identyfikacja).
   - **[E‑E‑A‑T]** dodać 2-4 źródła (np. dane o brand consistency, first impression, wpływie spójności na zaufanie).
   - **[struktura]** dodać kilka H3 jako podsekcje (np. logo/kolorystyka/typografia jako osobne warstwy).

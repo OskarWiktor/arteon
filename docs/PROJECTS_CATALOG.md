@@ -92,13 +92,14 @@ W każdej realizacji opisuję:
 - **Co ma (w danych)**:
   - **`short` + `description`**: tak
   - **`process_steps`**: tak
+  - **`testimonial`**: tak
   - **`contentBlocks`**: tak (4 obrazy + `alt`)
   - **`cta`**: tak
+  - **`faq`**: tak
   - **`seo`**: tak
 - **Czego brakuje / do dopracowania**:
   - **`deliverables`**: brak (np. finalny format PDF, przygotowanie do druku, spady)
   - **`outcomes`**: brak (np. skuteczność QR, lepsza konwersja na kontakt)
-  - **`faq`**: brak
   - **Jakość copy**: w tekście są literówki i nielogiczne fragmenty (to obniża wiarygodność).
 - **Plusy**:
   - **Jasny cel biznesowy**: korzyści, oferta, QR do realizacji.

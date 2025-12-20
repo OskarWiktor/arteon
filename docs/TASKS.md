@@ -1,142 +1,10 @@
-# Arteon - Refactor Master Plan (single source of truth)
+# Arteon - TASKS
 
-## Spis treści
-
-- [Ustawienia projektu (stack)](#ustawienia-projektu-stack)
-- [Źródła kontekstu (katalogi)](#źródła-kontekstu-katalogi)
-- [Zasady ogólne (zawsze)](#zasady-ogólne-zawsze)
-- [Instrukcje operacyjne](#instrukcje-operacyjne)
-- [Instrukcje: Treści i artykuły](#instrukcje-treści-i-artykuły)
-- [Definition of Done (dla każdego zadania)](#definition-of-done-dla-każdego-zadania)
-- [Zadania](#zadania)
-- [Zadania: Artykuły (backlog)](#zadania-artykuły-backlog)
-- [Pomysły](#pomysły)
-
-## Ustawienia projektu (stack)
-
-- Framework: Next.js `15.3.6` (App Router) + React `19.2.1`
-- Dev/build: `next dev --turbopack`, `next build`, `next start`
-- TypeScript: `5` (strict) + alias importów `@/*`
-- Style: Tailwind CSS `4` + PostCSS (`@tailwindcss/postcss`) + pluginy: forms, typography, aspect-ratio, container-queries, tailwindcss-children, tailwind-scrollbar, tailwindcss-fluid-type
-- Lint/format: ESLint `9` (Next + TS + a11y/security/unused-imports/react-hooks) + Prettier `3` (+ `prettier-plugin-tailwindcss`)
-- SEO: `next-sitemap` (postbuild) + `next-sitemap.config.cjs`
-- Analytics: `@vercel/analytics`, `@vercel/speed-insights`
-- Narzędzia/media: `sharp`, `react-easy-crop`, `react-icons`, `framer-motion`, `gray-matter`
-- `next.config.ts`: poza produkcją dodaje `X-Robots-Tag: noindex, nofollow`; wymusza host `arteonagency.pl` → `https://www.arteonagency.pl`
-
-## Źródła kontekstu (katalogi)
-
-Możesz się z nimi zapoznawać przed rozpoczęciem zadania, w szczególności jeśli zadanie dotyczy danego typu treści / komponentów / stron czy hooków:
-
-- `COMPONENTS_CATALOG.md` - opis wszystkich komponentów,
-- `HOOKS_CATALOG.md` - opis wszystkich hooków i utilis i lib,
-- `TOOLS_CATALOG.md` - opis wszystkich narzędzi,
-- `PROJECTS_CATALOG.md` - opis wszystkich realizacji / projektów firmowych,
-- `PAGES_CATALOG.md` - opis wszystkich stron,
-- `BLOG_CATALOG.md` - opis wszystkich artykułów na blogu,
-
-Legenda statusów:
-
-- ✅ zrobione
-- 🟡 w toku / częściowo
-- ❌ nie zrobione
-
-Ostatnia weryfikacja statusów w kodzie: **2025-12-15**
-
-## Zasady ogólne (zawsze)
-
-### Kod / refactor (bez zmian UI)
-
-- Refaktory nie mają zmieniać UI/UX ani treści.
-- Na etapie „porządkowania” zachowujemy klasy Tailwinda 1:1 (chyba że zadanie mówi inaczej).
-- Content renderer: wspólny `HTMLContent` + wspólny `RenderBlocks` (warianty dla typów danych).
-
-### UI / styl (spójność serwisu)
-
-- Typografia: **globals-first** (bazujemy na `.h*` i `.p` / globalnych regułach), a wyjątki rozwiązujemy przez klasy.
-- Kolory tekstu: wymuszamy użycie `.text-light/.text-mid/.text-dark` (eliminujemy `text-gray-*`/`text-neutral-*`/raw hexy dla tekstu).
-- Badge/Tag/Tool pills: konsolidujemy do `Badge` (jeden komponent + warianty); `Tag` docelowo nie istnieje.
-- `Button`: warianty „jednorazowe” nie wchodzą do API; `totop` jest lokalny w `ButtonToTop`.
-- `Tooltip`: zostaje (jedyny wyjątek - może być chwilowo nieużywany).
-- Ikony mają zawsze mieć kolor `text-slate-700`.
-
-### SEO (inwarianty)
-
-- Canonical: **bezwzględne (absolute)** i zawsze na `https://www.arteonagency.pl`.
-- OpenGraph: **unikalne per typ strony**; gdy fallback, dodajemy komentarz TODO w pliku strony.
-
-### Nawigacja / IA
-
-- Nowe strony w grupach „Usługi”, „Realizacje”, „O nas”, „Edukacja” i „Narzędzia” po utworzeniu muszą być automatycznie dodawane do wszystkich wariantów nawigacji (desktop + mobile, w tym dropdowny/submenu).
-
-### Inne
-
-- Multi-domain/multi-language: w planie na później; domena determinuje język dla wybranych wspólnych komponentów (np. tools).
-
-### Workflow: jak domykamy zadania
-
-- po zakończeniu zadania:
-  - pod zadaniem zapisz co zostało zrobione oraz dodaj odpowiednią ikonę statusu (✅/🟡/❌)
-  - jeśli zadanie nie jest z grupy `AUDIT-*`: przenieś wykonane zadanie do `DONE_TASKS.md` (z datą i podsumowaniem); najnowsze wpisy umieszczaj najwyżej pod daną datą; nowe daty twórz na górze pliku
-  - jeśli zadanie jest z grupy `AUDIT-*`: zadanie zawsze zostaje w `TASKS.md`, a do `DONE_TASKS.md` dodaj tylko wpis z zakresem wykonanej pracy (np. co sprawdzono + jakie zadania/pomysły dopisano)
-  - Zadania artykułowe (sekcja „Zadania: Artykuły”) domykamy tak samo jak resztę: wpis do `DONE_TASKS.md` + aktualizacja `BLOG_CATALOG.md`.
-- **KRYTYCZNE (obowiązkowe): po każdym zadaniu/modyfikacji aktualizujesz odpowiedni plik katalogu** (`COMPONENTS_CATALOG.md`, `HOOKS_CATALOG.md`, `TOOLS_CATALOG.md`, `PROJECTS_CATALOG.md`, `PAGES_CATALOG.md`, `BLOG_CATALOG.md`).
-  - Dotyczy zarówno dodania nowych elementów, jak i modyfikacji istniejących.
-  - Dotyczy także zmian „małych” (np. dopisanie propsa, poprawka w istniejącym komponencie, zmiana treści artykułu).
-  - **To jest krok wymagany do domknięcia zadania** (robimy go razem z wpisem do `DONE_TASKS.md`).
-
-### Dodatkowe reguły
-
-- każdy komponent i cały kod powinien być zgodny z najlepszymi praktykami Next
-- przy tworzeniu nowych hooków lub komponentów sprawdź raport mówiący o tych które już są, jeśli są już podobne to ich użyj lub stwórz nowy wariant / propsy (bez require), które będą przydatne
-- nie zmieniaj wyglądu, treści ani funkcjonalności, chyba że wskazano inaczej
-- nie wprowadzaj w `robots.tsx` globalnej blokady indeksacji całej witryny (blokowanie `/` jest zabronione)
-- nigdy nie zmieniaj numerów zadań
-
-
----
-
-## Instrukcje operacyjne
-
-### Instrukcja przed każdym zadaniem (obowiązkowo)
-
-- Jeśli w trakcie zadania edytujesz/refaktorujesz plik tak, że staje się pusty (0B / tylko whitespace / tymczasowy „barrel” bez wartości), usuń go od razu i popraw wszystkie importy.
-
-- Przed zadaniem, które dotyka komponentów/hooków/narzędzi/stron/artykułów, możesz (i warto) szybko sprawdzić odpowiedni plik katalogu (`*_CATALOG.md`), żeby być zaznajomionym z istniejącymi elementami i nie dublować rozwiązań.
-
-  **KRYTYCZNE: NIE MODYFIKOWAĆ plików konfiguracji SEO (sitemap/robots)**
-
-  - Pliki chronione:
-    - `next-sitemap.config.cjs` - konfiguracja generowania sitemap i robots.txt
-    - `public/robots.txt` - plik robots (generowany automatycznie przez `next-sitemap`)
-  - Zasady:
-    - **NIE EDYTOWAĆ** tych plików bez wyraźnego polecenia użytkownika.
-    - **NIE DODAWAĆ** dodatkowej logiki skanowania stron w `additionalPaths` (strony statyczne są już obsługiwane przez `transform`).
-    - `additionalPaths` służy WYŁĄCZNIE do dynamicznych ścieżek (projekty z `projects.json`, kategorie/artykuły edukacji).
-    - Każda modyfikacja tych plików wymaga pełnej weryfikacji sitemapy po `npm run build`.
-  - Uzasadnienie:
-    - Historia: duplikacje w sitemapie spowodowane przez podwójne skanowanie plików (raz w `transform`, drugi raz w `additionalPaths`).
-    - Sitemap jest krytyczna dla SEO - błędy mogą wpłynąć na indeksację całej witryny.
-
----
-
-## Definition of Done (dla każdego zadania)
-
-Dla każdego zadania:
-
-- Domyślnie: `npm run lint` i `npm run build` przechodzą.
-- Weryfikacji nie wykonujemy (nie odpalamy `npm run lint` ani `npm run build`) dla:
-  - zadań z grupy **COPY** (`COPY-*`)
-  - zadań z grupy **AUDIT** (`AUDIT-*`)
-  - zadań content-only / docs-only, które w treści mają wpis `Weryfikacja: nie jest wymagana`
-- Zachowana dostępność (focus ring, aria, keyboard).
-- Aktualizacja odpowiedniego `*_CATALOG.md` wykonana (patrz: „Workflow: jak domykamy zadania”).
-
----
+**KRYTYCZNE:** przed tworzeniem i realizowaniem zadań zawsze zapoznaj się z `docs/INSTRUCTIONS.md`.
 
 ## Zadania
 
-Zrobione zadania: `DONE_TASKS.md`.
+Zrobione zadania: `docs/DONE_TASKS.md`.
 
 - 🟡 **[AUDIT-001] Repo: audyt treści (literówki, ortografia, interpunkcja, spójność copy)**
 
@@ -146,7 +14,7 @@ Zrobione zadania: `DONE_TASKS.md`.
     - `data/pl/blog.json`, `data/pl/projects.json`
     - komponenty zawierające dłuższe copy (sekcje, narzędzia, FAQ)
   - Raportowanie:
-    - Jeśli wykryjesz problem — dopisz osobne zadanie w `TASKS.md` (np. `COPY-*`, `CLEANUP-*`, `PROJECT-*`) z kryteriami akceptacji.
+    - Jeśli wykryjesz problem — dopisz osobne zadanie w `TASKS.md` (np. `COPY-*`, `CONTENT-*`, `CLEANUP-*`) z kryteriami akceptacji.
     - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu (co sprawdzono + jakie zadania/pomysły dopisano).
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
@@ -220,6 +88,10 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Do `DONE_TASKS.md` dodaj wpis: ile pomysłów dodano + ID dodanych pomysłów.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
+  - **Zrobione 2025-12-19**:
+    - Dodano pomysły wspierające klaster usług `/uslugi/projekty-graficzne` (projekty graficzne) + uporządkowano brakujące nagłówki w sekcji „Pomysły”.
+    - Dodane ID: `IDEA-048`, `IDEA-049`, `IDEA-050`, `IDEA-051`, `IDEA-052`, `IDEA-053`.
+
 - 🟡 **[AUDIT-007] Repo: audyt prawdziwości informacji i źródeł w istniejących artykułach**
 
 - 🟡 **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
@@ -227,15 +99,15 @@ Zrobione zadania: `DONE_TASKS.md`.
   - Cel: przeanalizować istniejące artykuły i zidentyfikować, co wymaga poprawy, aby były zgodne z nowymi wytycznymi tonu marki Arteon (mentorski, maksymalnie prosty, bez żargonu).
   - Zakres:
     - Wszystkie artykuły w `data/pl/blog.json` z wyjątkiem dwóch najnowszych (wzorcowych): `jak-przygotowac-profesjonalna-stopke-mailowa` i `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`.
-  - Kryteria oceny (wg wytycznych z sekcji „Instrukcje: Treści i artykuły"):
-    1. **Prostota języka** — czy tekst jest zrozumiały dla osoby bez wiedzy technicznej?
-    2. **Wyjaśnianie terminów** — czy każdy termin techniczny jest od razu wyjaśniony (co to jest, po co to)?
-    3. **Analogie i przykłady** — czy są użyte porównania z życia („Pomyśl o tym jak o...")?
-    4. **Płynna narracja** — czy każde zdanie jest logicznym ciągiem dalszym (bez skoków myślowych)?
-    5. **Ludzki język** — czy ton jest jak rozmowa przy kawie, a nie korpo-broszura?
-    6. **Instrukcje do narzędzi Arteon** — czy artykuły o narzędziach mają sekcję „Jak to zrobić w naszym narzędziu"?
-    7. **Benefit-first** — czy korzyść jest przed informacją techniczną?
-    8. **Brak checklisty** — czy artykuł nie zawiera sekcji „Checklista" (zamiast tego: kroki + podsumowanie priorytetów)?
+  - Kryteria oceny (wg wytycznych z `docs/INSTRUCTIONS.md`):
+    1.  **Prostota języka** — czy tekst jest zrozumiały dla osoby bez wiedzy technicznej?
+    2.  **Wyjaśnianie terminów** — czy każdy termin techniczny jest od razu wyjaśniony (co to jest, po co to)?
+    3.  **Przykłady i konkrety** — czy są konkretne przykłady z praktyki (bez wstawek typu "Wyobraź sobie...")?
+    4.  **Płynna narracja** — czy każde zdanie jest logicznym ciągiem dalszym (bez skoków myślowych)?
+    5.  **Ludzki język** — czy ton jest jak rozmowa przy kawie, a nie korpo-broszura?
+    6.  **Instrukcje do narzędzi Arteon** — czy artykuły o narzędziach mają sekcję „Jak to zrobić w naszym narzędziu"?
+    7.  **Benefit-first** — czy korzyść jest przed informacją techniczną?
+    8.  **Brak checklisty** — czy artykuł nie zawiera sekcji „Checklista" (zamiast tego: kroki + podsumowanie priorytetów)?
   - Raportowanie:
     - Dla każdego artykułu wypisz konkretne problemy i co wymaga poprawy.
     - Dopisz osobne zadania `CONTENT-*` z listą artykułów do poprawy i kryteriami akceptacji.
@@ -243,25 +115,27 @@ Zrobione zadania: `DONE_TASKS.md`.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
   - **Zrobione 2025-12-19**:
+
     - Przeanalizowano 8 artykułów (wszystkie oprócz 2 wzorcowych).
     - Wzorcowe (OK): `jak-przygotowac-profesjonalna-stopke-mailowa`, `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`.
     - Raport problemów dla każdego artykułu — patrz poniżej.
-    - Dodano zadania: `CONTENT-002`, `CONTENT-003`, `CONTENT-004`.
+    - Dodano zadania (1 artykuł = 1 zadanie): `CONTENT-006`, `CONTENT-007`, `CONTENT-008`, `CONTENT-009`, `CONTENT-010`, `CONTENT-011`, `CONTENT-012` (oraz wcześniej: `CONTENT-004`).
+    - `CONTENT-002` i `CONTENT-003` zostają jako zadania zbiorcze (epiki) z linkami do powyższych.
 
   - **Raport szczegółowy (problemy vs wytyczne)**:
 
-    | Slug | Problemy |
-    |------|----------|
-    | `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony` | Brak analogii; terminy (long-tail, FAQ schema, topical authority) bez wyjaśnienia; ton ekspercki zamiast mentorskiego; brak FAQ |
-    | `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow` | Styl raportowy/naukowy; brak analogii; terminy (CTR, CTA, WCAG, UX) bez wyjaśnienia; brak FAQ |
-    | `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty` | Styl formalny/korporacyjny; brak analogii; terminy (Core Web Vitals, autorytet domeny, topical authority) bez wyjaśnienia; brak FAQ |
-    | `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google` | Lepszy ton, ale: terminy (long-tail, CAC) bez wyjaśnienia; brak FAQ |
+    | Slug                                                                                | Problemy                                                                                                                                                                    |
+    | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`                   | Brak analogii; terminy (long-tail, FAQ schema, topical authority) bez wyjaśnienia; ton ekspercki zamiast mentorskiego; brak FAQ                                             |
+    | `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`                               | Styl raportowy/naukowy; brak analogii; terminy (CTR, CTA, WCAG, UX) bez wyjaśnienia; brak FAQ                                                                               |
+    | `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`                | Styl formalny/korporacyjny; brak analogii; terminy (Core Web Vitals, autorytet domeny, topical authority) bez wyjaśnienia; brak FAQ                                         |
+    | `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`    | Lepszy ton, ale: terminy (long-tail, CAC) bez wyjaśnienia; brak FAQ                                                                                                         |
     | `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp` | Terminy (LCP, CLS, INP, kompresja stratna/bezstratna) bez wyjaśnienia; **zduplikowane sekcje** (błąd techniczny!); brak FAQ; ma checklistę zamiast podsumowania priorytetów |
-    | `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google` | Bardzo długi (22 min); styl podręcznikowy; terminy (E-E-A-T, klaster tematyczny, meta title, intencja użytkownika) bez wyjaśnienia; brak analogii |
-    | `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow` | Styl formalny/korpo; brak analogii; terminy (brandbook, typografia) bez wyjaśnienia; emoji w tekście |
-    | `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic` | Ma checklistę (tabela); terminy (robots.txt, noindex, sitemap, Googlebot) bez wyjaśnienia "po co to"; styl techniczny |
+    | `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`      | Bardzo długi (22 min); styl podręcznikowy; terminy (E-E-A-T, klaster tematyczny, meta title, intencja użytkownika) bez wyjaśnienia; brak analogii                           |
+    | `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`                             | Styl formalny/korpo; brak analogii; terminy (brandbook, typografia) bez wyjaśnienia; emoji w tekście                                                                        |
+    | `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`          | Ma checklistę (tabela); terminy (robots.txt, noindex, sitemap, Googlebot) bez wyjaśnienia "po co to"; styl techniczny                                                       |
 
-- 🟡 **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
+- ❌ **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
 
   - Cel: podnieść pozycje istniejących artykułów przez realne wzmocnienie treści (topical coverage), lepsze zaspokojenie intencji użytkownika i mocniejsze linkowanie wewnętrzne.
   - Zakres:
@@ -290,38 +164,241 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Do `DONE_TASKS.md` po wykonaniu audytu dopisz wpis: ile artykułów przeanalizowano + ID utworzonych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
+- ❌ **[AUDIT-010] Repo: audyt tonu marki na stronach — elementy globalne i copy „wspólne” (bez artykułów)**
+
+  - Cel:
+    - Sprawdzić, czy teksty w elementach globalnych (widoczne na wielu stronach) są zgodne z nowymi zasadami tonu (mentorski, prosty, „przy kawie”, bez skoków myślowych).
+    - Wychwycić miejsca, gdzie pojawia się „korpo-ton”, żargon bez wyjaśnienia albo obietnice nie do obrony.
+  - Zakres (minimum):
+    - `app/layout.tsx` (globalne elementy UI/copy, jeśli występują)
+    - `components/shared/**` (nawigacja, footer, CTA, itp.)
+    - `components/shared/CookieConsent.tsx`
+    - `components/ui/SearchDialog.tsx`
+    - `app/error.tsx`, `app/not-found.tsx`
+  - Kryteria oceny (skrót):
+    - Prostota języka (zrozumiałe dla osoby nietechnicznej).
+    - Termin techniczny → od razu „co to jest?” i „po co to?” (jeśli pada).
+    - Spójność narracji (bez przeskoków myślowych).
+    - Ludzki język (bez broszury/korpo).
+    - Prawdziwość i jednoznaczność (bez „100% gwarancji”/niejasnych obietnic, jeśli nie są literalnie prawdziwe).
+  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - Dla każdego problemu podaj:
+      - URL (jeśli dotyczy) + plik (ścieżka) + sekcja/komponent
+      - dokładny cytat (1–3 zdania)
+      - dlaczego to jest niespójne z tonem (konkretnie: co łamie wytyczne)
+      - propozycja poprawki (2–4 zdania w nowym tonie)
+  - Jeśli wykryjesz problemy:
+    - Dopisz osobne zadania `COPY-###` (1 strona/obszar = 1 zadanie) z:
+      - listą cytatów do poprawy,
+      - kryteriami akceptacji (np. „brak żargonu bez wyjaśnienia”, „spójny mentorski ton”),
+      - `Weryfikacja: nie jest wymagana (COPY-only)`.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+  - **Zrobione 2025-12-19**:
+
+    - Sprawdzono pliki z zakresu (minimum):
+
+      - `app/layout.tsx`
+      - `components/shared/**` (Navigation + Desktop/Mobile + Footer + SkipToContent + CookieConsent)
+      - `components/ui/SearchDialog.tsx`
+      - `app/error.tsx`, `app/not-found.tsx`
+
+    - **Wykryte problemy (URL + plik + cytat + propozycja)**:
+
+      - **[/ (global)] `components/shared/SkipToContent.tsx` / `SkipToContent`**
+
+        - Cytat: `Skip to content`
+        - Dlaczego: angielski tekst w polskiej wersji serwisu — brzmi obco i nie prowadzi użytkownika „za rękę”.
+        - Propozycja poprawki: `Przejdź do treści` albo `Przejdź do głównej treści`.
+
+      - **[/ (header)] `components/shared/navigation-data/pl.ts` / opisy w menu usług**
+
+        - Cytaty:
+          - `WCAG 2.2 AA, projekt na miarę`
+          - `Płatności, integracje, automatyzacje`
+          - `Architektura treści i CMS`
+          - `On-page, technikalia, treści`
+          - `Strategia, linki, wzrost fraz`
+        - Dlaczego: żargon i skróty bez wyjaśnienia (np. WCAG, on-page) — dla części osób to „korpo/technicznie” i nie jest oczywiste, co realnie dostaną.
+        - Propozycja poprawki (wzorzec): krótkie, proste zdania z efektem dla użytkownika, np. `Strona, którą łatwo czytać i klikać` / `Sklep, który sprzedaje i działa szybko` / `Porządek w treściach, żeby Google je lepiej rozumiał`.
+
+      - **[/ (footer)] `components/shared/Footer.tsx` / opis firmy w stopce**
+
+        - Cytat: `Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.`
+        - Dlaczego: brzmi „broszurowo” i mało „po ludzku”; do dopracowania również interpunkcja (dywiz zamiast pauzy).
+        - Propozycja poprawki: `Pomagamy polskim firmom (także tym za granicą). Pracujemy z Małopolski, spod Krakowa.`
+
+      - **[/ (cookies)] `components/shared/CookieConsent.tsx` / opis i nazwy kategorii**
+
+        - Cytaty:
+          - `Używamy technologii niezbędnych do działania serwisu oraz analityki do ulepszania strony.`
+          - `Analityka (GA4)` / `Włącza Google Analytics 4 po Twojej zgodzie.`
+        - Dlaczego: dla części osób „analityka/GA4” to skrót myślowy; brakuje prostego „co to jest?” i „po co to?”.
+        - Propozycja poprawki: prosto wyjaśnić cel, np. `Te statystyki pokazują nam, które podstrony są najczęściej odwiedzane. Dzięki temu możemy poprawiać stronę.`
+
+      - **[/ (search)] `components/ui/SearchDialog.tsx` / mikrocopy i cytaty**
+
+        - Cytaty:
+          - `Wpisz frazę, aby wyszukać usługi, narzędzia, artykuły lub realizacje`
+          - `Brak wyników dla „{query}"`
+        - Dlaczego: komunikat można uprościć i uczynić bardziej „prowadzącym”; dodatkowo są mieszane cudzysłowy.
+        - Propozycja poprawki: `Wpisz frazę, np. "audyt SEO" albo "favicon".` oraz `Nie znaleźliśmy nic dla "{query}". Spróbuj innej frazy.`
+
+      - **[/404 i /error] `app/not-found.tsx`, `app/error.tsx` / komunikaty błędów**
+        - Cytat (404): `Kliknij przycisk aby wrócić na stronę główną.`
+        - Cytat (error): `Wystąpił nieoczekiwany błąd.`
+        - Dlaczego: 404 ma błąd interpunkcyjny; komunikaty są poprawne, ale można je lekko „uczłowieczyć” i doprecyzować kolejny krok.
+        - Propozycja poprawki: 404: `Kliknij przycisk, aby wrócić na stronę główną.`; error: `Coś poszło nie tak po naszej stronie. Spróbuj ponownie za chwilę...`.
+
+    - **Dodano zadania**: `COPY-044`, `COPY-045`, `COPY-046`, `COPY-047`, `COPY-048`, `COPY-049`.
+
+- ❌ **[AUDIT-011] Strony informacyjne: audyt tonu (bez artykułów)**
+
+  - Cel: upewnić się, że tone-of-voice na stronach informacyjnych jest spójny z nowymi zasadami (mentorski, prosty, „ludzki”).
+  - Zakres (strony):
+    - `/`
+    - `/o-nas`, `/o-nas/faq`, `/o-nas/dolacz-do-sieci`
+    - `/kontakt`
+    - `/mapa-strony`
+    - `/polityka-prywatnosci`, `/regulamin` (bez zmiany znaczenia prawnego — oceniamy głównie „warstwę ludzką”: nagłówki, wstępy, mikrocopy)
+  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - Format jak w `AUDIT-010` (URL + plik + cytat + dlaczego + propozycja poprawki).
+  - Jeśli wykryjesz problemy:
+    - Dopisz osobne zadania `COPY-###` per strona.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+- ❌ **[AUDIT-012] Usługi: audyt tonu (marketing + witryny/treści)**
+
+  - Cel: sprawdzić, czy oferta jest napisana prosto, mentorsko i bez „sprzedażowego nadmuchania”.
+  - Zakres (strony):
+    - `/uslugi`
+    - `/uslugi/marketing`
+    - `/uslugi/marketing/audyt-seo`
+    - `/uslugi/marketing/optymalizacja-seo`
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
+    - `/uslugi/sklepy-internetowe`
+    - `/uslugi/blogi-internetowe`
+    - `/uslugi/tworzenie-tresci`
+  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - Format jak w `AUDIT-010`.
+    - Dodatkowo: wypisz każde miejsce, gdzie pada termin typu SEO/UX/CTR/WCAG/CWV itp. bez wyjaśnienia.
+  - Jeśli wykryjesz problemy:
+    - Dopisz osobne zadania `COPY-###` per strona.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+- ❌ **[AUDIT-013] Usługi: audyt tonu (projekty graficzne)**
+
+  - Cel: dopasować ton do nowego stylu marki na stronach usług graficznych (bez „agencji kreatywnej”, bardziej „prosto i konkretnie”).
+  - Zakres (strony):
+    - `/uslugi/projekty-graficzne`
+    - wszystkie podstrony z `app/(pl)/uslugi/projekty-graficzne/**` (wg `PAGES_CATALOG.md`)
+  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - Format jak w `AUDIT-010`.
+  - Jeśli wykryjesz problemy:
+    - Dopisz osobne zadania `COPY-###` per strona.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+- ❌ **[AUDIT-014] Narzędzia: audyt tonu (strona listy + strony narzędzi, bez artykułów)**
+
+  - Cel: sprawdzić, czy opisy narzędzi i mikrocopy UI prowadzą użytkownika „za rękę” (prosto, bez żargonu, krok po kroku).
+  - Zakres (strony):
+    - `/narzedzia`
+    - wszystkie strony narzędzi `/narzedzia/*` (wg `PAGES_CATALOG.md`, w tym desktop-only komunikaty/layout)
+  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - Format jak w `AUDIT-010`.
+    - Dodatkowo: wypisz miejsca, gdzie instrukcja jest zbyt techniczna lub pomija „po co to?” (np. tylko „kliknij X”, bez wyjaśnienia efektu).
+  - Jeśli wykryjesz problemy:
+    - Dopisz osobne zadania `COPY-###` per strona narzędzia.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+- ❌ **[AUDIT-015] Realizacje: audyt tonu (lista + case studies)**
+
+  - Cel: sprawdzić spójność tonu w portfolio (bez „case-study korpo”), w tym w treściach pobieranych z `projects.json`.
+  - Zakres (strony i dane):
+    - `/realizacje`
+    - `/realizacje/[slug]`
+    - `data/pl/projects.json` (tylko pola renderowane na stronach realizacji)
+  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - Format jak w `AUDIT-010`.
+  - Jeśli wykryjesz problemy:
+    - Dopisz osobne zadania `COPY-###` per realizacja (slug).
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+- ❌ **[AUDIT-016] Edukacja (huby, bez artykułów): audyt tonu list i kategorii**
+
+  - Cel: sprawdzić ton na stronach listujących edukację (intro/hero/teksty pomocnicze), bez wchodzenia w treści artykułów.
+  - Zakres (strony):
+    - `/edukacja`
+    - `/edukacja/[category]`
+  - Wykluczenia (ważne):
+    - NIE obejmuje `/edukacja/[category]/[slug]`.
+    - NIE obejmuje treści artykułów w `data/pl/blog.json` (to jest osobny proces).
+  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - Format jak w `AUDIT-010`.
+  - Jeśli wykryjesz problemy:
+    - Dopisz osobne zadania `COPY-###` per strona.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
 - ❌ **[CONTENT-002] Blog: przepisać artykuły do nowego tonu (priorytet 1 — najgorsze)**
 
   - Cel: przepisać artykuły, które najbardziej odbiegają od nowego tonu.
-  - Zakres (3 artykuły):
-    - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
-    - `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
-    - `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
-  - Co poprawić w każdym:
-    - Zamienić styl raportowy/formalny na mentorski („Pomyśl o tym jak o...", „Wyobraź sobie...").
+  - Uwaga: zadanie rozbite na mniejsze (1 artykuł = 1 zadanie). Realizacja: `CONTENT-006`, `CONTENT-007`, `CONTENT-008`.
+  - Wspólne wytyczne (dla każdego artykułu):
+    - Zamienić styl raportowy/formalny na mentorski (prosto, jasno, benefit-first).
     - Każdy termin techniczny wyjaśnić od razu po użyciu (1-2 zdania: co to jest, po co to).
-    - Dodać analogie i przykłady z życia.
+    - Dodać konkretne przykłady z praktyki (bez wstawek typu "Wyobraź sobie...").
     - Dodać sekcję FAQ (min. 4 pytania).
     - Usunąć emoji z tekstu (jeśli są).
-  - Kryteria akceptacji:
-    - Artykuł jest zrozumiały dla osoby bez wiedzy technicznej.
-    - Każdy termin techniczny jest wyjaśniony.
-    - Są min. 2 analogie/porównania z życia.
-    - Jest sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
 - ❌ **[CONTENT-003] Blog: przepisać artykuły do nowego tonu (priorytet 2 — średnie)**
 
   - Cel: przepisać artykuły, które częściowo odbiegają od nowego tonu.
-  - Zakres (3 artykuły):
-    - `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`
-    - `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
-    - `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
-  - Co poprawić w każdym:
+  - Uwaga: zadanie rozbite na mniejsze (1 artykuł = 1 zadanie). Realizacja: `CONTENT-009`, `CONTENT-010`, `CONTENT-011`.
+  - Wspólne wytyczne (dla każdego artykułu):
     - Wyjaśnić wszystkie terminy techniczne od razu po użyciu.
     - Dodać analogie i przykłady z życia.
     - Zamienić checklistę/tabelę na podsumowanie priorytetów w tekście (jeśli dotyczy).
     - Dodać sekcję FAQ (jeśli brak).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[CONTENT-009] Blog: przepisać artykuł — `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`**
+
+  - Plik: `data/pl/blog.json`
+  - Co poprawić:
+    - Dodać analogie/przykłady z życia (np. rozmowa ze sprzedawcą, pytania na recepcji, FAQ jak „sekcja wątpliwości").
+    - Wyjaśnić terminy techniczne od razu po użyciu (m.in. long-tail, FAQ schema, topical authority — i inne użyte w tekście).
+    - Uprościć ton (mniej „ekspercko”, bardziej „mentorsko").
+    - Dodać sekcję FAQ (min. 4 pytania).
+  - Kryteria akceptacji:
+    - Każdy termin techniczny jest wyjaśniony.
+    - Są min. 2 analogie/porównania z życia.
+    - Jest sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[CONTENT-010] Blog: przepisać artykuł — `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`**
+
+  - Plik: `data/pl/blog.json`
+  - Co poprawić:
+    - Wyjaśnić terminy techniczne od razu po użyciu (m.in. long-tail, CAC — i inne użyte w tekście).
+    - Dodać min. 2 analogie/porównania (np. „tablica ogłoszeń w mieście”, „polecanie z ust do ust, tylko w Google").
+    - Dodać sekcję FAQ (min. 4 pytania).
+  - Kryteria akceptacji:
+    - Każdy termin techniczny jest wyjaśniony.
+    - Są min. 2 analogie/porównania z życia.
+    - Jest sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[CONTENT-011] Blog: przepisać artykuł — `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`**
+
+  - Plik: `data/pl/blog.json`
+  - Co poprawić:
+    - Zamienić checklistę/tabelę na „podsumowanie priorytetów” w tekście (kroki, co sprawdzić najpierw).
+    - Wyjaśnić terminy techniczne od razu po użyciu (m.in. robots.txt, noindex, sitemap, Googlebot — i inne użyte w tekście).
+    - Dodać analogie/przykłady (np. „adres vs droga do sklepu”, „Google jak kurier, który nie może wejść do budynku").
+    - Dodać sekcję FAQ (min. 4 pytania).
   - Kryteria akceptacji:
     - Każdy termin techniczny jest wyjaśniony.
     - Są min. 2 analogie/porównania z życia.
@@ -329,65 +406,22 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Jest sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ✅ **[CONTENT-004] Blog: naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton)**
+- ❌ **[CONTENT-012] Blog: przepisać artykuł — `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`**
 
-  - Cel: naprawić błąd techniczny (zduplikowane sekcje) i dostosować ton.
-  - Zakres:
-    - `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+  - Plik: `data/pl/blog.json`
   - Co poprawić:
-    - Usunąć zduplikowane sekcje (powtórzone fragmenty o formatach JPEG/PNG/SVG/WebP).
-    - Wyjaśnić terminy techniczne (LCP, CLS, INP, kompresja stratna/bezstratna).
-    - Zamienić checklistę na podsumowanie priorytetów.
+    - Skrócić artykuł (obecnie bardzo długi) i wyciąć lanie wody, celując w **5-8 minut** czytania.
+    - Zamienić styl „podręcznikowy” na mentorski (proste prowadzenie, konkretne przykłady).
+    - Wyjaśnić terminy techniczne od razu po użyciu (m.in. E-E-A-T, klaster tematyczny, meta title, intencja użytkownika — i inne użyte w tekście).
+    - Dodać min. 2 analogie/porównania.
     - Dodać sekcję FAQ (min. 4 pytania).
   - Kryteria akceptacji:
-    - Brak duplikatów treści.
+    - Artykuł jest zrozumiały dla osoby bez wiedzy technicznej.
     - Każdy termin techniczny jest wyjaśniony.
-    - Brak checklisty — zamiast tego podsumowanie priorytetów.
-    - Jest sekcja FAQ.
+    - Są min. 2 analogie/porównania z życia.
+    - Jest sekcja FAQ (min. 4 pytania).
+    - Artykuł jest wyraźnie krótszy i bardziej konkretny.
   - Weryfikacja: nie jest wymagana (content-only).
-
-  - **Zrobione 2025-12-19**:
-    - Usunięto zduplikowane sekcje (powtórzone bloki o formatach JPEG/PNG/SVG/WebP + kolejne duplikaty w dalszej części wpisu).
-    - Dodano proste wyjaśnienia terminów: LCP/CLS/INP oraz kompresja stratna/bezstratna.
-    - Zamieniono checklistę na sekcję „Podsumowanie priorytetów: co zrobić najpierw?”.
-    - Dodano sekcję FAQ (4 pytania).
-
-- ❌ **[CONTENT-005] Edukacja: lepszy content na stronach kategorii artykułów (fallback dla nowych kategorii)**
-
-  - Cel:
-    - Podnieść jakość i dopasowanie do nowego tonu (mentorski, prosty, benefit-first) treści na stronach kategorii edukacji (`/edukacja/[category]`).
-    - Zostawić obecną treść jako domyślną dla kategorii, które pojawią się w przyszłości.
-  - Pliki:
-    - `app/(pl)/edukacja/[category]/page.tsx`
-    - `PAGES_CATALOG.md`
-  - Zakres:
-    - Dodać mapę treści per znana kategoria (np. SEO/Design/Zdjęcia/Branding/Treści/Widoczność/Psychologia): opis w hero + opis do `metadata`.
-    - Dla nieznanej kategorii (nieobecnej w mapie) użyć dotychczasowego opisu hero i dotychczasowego `metadata.description`.
-  - Kryteria akceptacji:
-    - Dla znanych kategorii wyświetlany jest dopasowany opis w `HeroBanner` oraz bardziej konkretny opis w meta.
-    - Dla nowych kategorii działa fallback: **dokładnie dotychczasowy** opis hero i dotychczasowe `metadata.description`.
-    - Brak zmian w layout/komponentach (tylko treść).
-    - `npm run lint` i `npm run build` przechodzą.
-
-- ❌ **[BLOG-001] Edukacja: karuzela artykułów na stronie artykułu ma pokazywać wpisy z tej samej kategorii + dynamiczny nagłówek**
-
-  - Cel:
-    - Na stronie pojedynczego artykułu (`/edukacja/.../...`) na dole mają pojawiać się artykuły z tej samej kategorii/tematu (np. SEO → SEO).
-    - Nagłówek karuzeli ma dopasowywać się do kategorii (np. `Sprawdź nasze artykuły na temat: SEO`).
-    - Obok nagłówka ma zostać link do wszystkich artykułów (jak dotychczas).
-  - Pliki:
-    - `app/(pl)/edukacja/[category]/[slug]/page.tsx`
-    - (opcjonalnie) `components/sections/blog/ArticlesCarousel.tsx`
-  - Zakres:
-    - Wykorzystać kanoniczną kategorię artykułu (`canonicalCat`) jako filtr: przekazać do `ArticlesCarousel` prop `categorySlug={canonicalCat}`.
-    - Wyliczyć czytelną nazwę kategorii (tą samą logiką co w breadcrumbs) i zbudować dynamiczny tytuł karuzeli w formacie: `Sprawdź nasze artykuły na temat: {Kategoria}`.
-    - Zostawić wykluczenie bieżącego artykułu: `excludeSlug={article.slug}`.
-    - Upewnić się, że link akcji w nagłówku karuzeli prowadzi do listy artykułów danej kategorii (`/edukacja/{canonicalCat}`) i pozostaje widoczny.
-  - Kryteria akceptacji:
-    - Dla artykułu w kategorii (np. SEO) karuzela pokazuje wyłącznie artykuły z tej kategorii (bez bieżącego wpisu).
-    - Tytuł karuzeli jest dynamiczny i zawiera nazwę kategorii, a nie slug.
-    - Link „Zobacz wszystkie artykuły” jest obecny i prowadzi do właściwego widoku (kategoria lub ogólna lista).
-    - `npm run lint` i `npm run build` przechodzą.
 
 - ❌ **[SEO-013] OG images: dedykowane grafiki dla kluczowych stron (hub pages)**
 
@@ -422,20 +456,6 @@ Zrobione zadania: `DONE_TASKS.md`.
     - Oba URL-e zwracają 200 i serwują właściwe pliki.
     - W schema (logo/publisher/image) używane są absolutne URL-e do ikon.
     - `npm run lint` i `npm run build` przechodzą.
-
-  - Plik: `app/(pl)/o-nas/faq/page.tsx`
-  - Zakres:
-    - Poprawić literówki i polskie znaki w `FAQ_ITEMS` (m.in. `relizacji`, `Cie`, `szybkosc`, `zawzsze`, `kazdego`, `roboczyć`, `szubko`, `dokłądny`).
-    - Usunąć emotikony (`:D`) i ujednolicić styl na mentorski (bez slangu).
-    - Poprawić interpunkcję oraz spacje w nawiasach w treściach (np. `(np. ...)`).
-  - Kryteria akceptacji:
-    - Copy jest poprawne językowo i spójne stylistycznie na całej stronie.
-    - Weryfikacja: nie jest wymagana (COPY-only).
-
-  - **Zrobione 2025-12-19**:
-    - Poprawiono literówki, polskie znaki, interpunkcję oraz spacje w nawiasach w `FAQ_ITEMS`.
-    - Usunięto emotikony i ujednolicono styl odpowiedzi na bardziej mentorski.
-    - Ujednolicono `answerSchemaText`, aby odpowiadało treści odpowiedzi (schema bez artefaktów w stylu „skontaktować się z przez”).
 
 - ❌ **[PERF-001] Assets: odchudzić największe obrazy w `public/assets/**` (bez zmiany wyglądu)\*\*
 
@@ -621,132 +641,6 @@ Zrobione zadania: `DONE_TASKS.md`.
 
 ---
 
-## Instrukcje: Treści i artykuły
-
-- **ZASADY TECHNICZNE (aktualizacja 2025-12-18):**
-  1. **Tytuł = pytanie**: Każdy artykuł musi mieć tytuł w formie pytania (np. „Dlaczego strona nie wyświetla się w Google i jak to naprawić?”).
-  2. **Polskie znaki**: Treść artykułu MUSI zawierać polskie znaki diakrytyczne (ą, ę, ć, ł, ń, ó, ś, ź, ż). NIE używaj ASCII bez polskich znaków.
-  3. **URL = tytuł**: Slug URL musi być 1:1 zgodny z tytułem (bez polskich znaków, z myślnikami zamiast spacji).
-  4. **Czas czytania**: Obliczany na podstawie realnej liczby słów. 200 słów = 1 minuta. Celuj w **5-8 minut** (1000-1600 słów).
-  5. **Wsparcie klastra usług**: Artykuły i narzędzia zawsze wspierają klaster tematyczny usług na stronie. Linkuj do odpowiednich usług.
-  6. **Nie rozdrabniaj**: Jeśli temat jest odpowiedzią na jedno pytanie główne, zrób jeden kompleksowy artykuł zamiast kilku małych.
-
-- **Cel serii**: zwiększać widoczność SEO ofert, domeny i narzędzi Arteon poprzez edukację w mentorskim tonie, bez żargonu (prowadź czytelnika do zrozumienia i działania, ale bez presji).
-- **Docelowy czytelnik**: MŚP (usługi + e-commerce), często bez wiedzy technicznej. Tekst ma być zrozumiały bez znajomości SEO/UX, ale nie może być infantylny.
-- **Ton**: konkretnie, spokojnie, bez korpo-języka i wodolejstwa. Każde pojęcie „z branży” wyjaśnij w 1-2 zdaniach i od razu pokaż zastosowanie.
-- **WAŻNE: Ten styl dotyczy całego serwisu** — nie tylko artykułów. Stosuj go także na podstronach usług (`/uslugi/...`), narzędzi (`/narzedzia/...`), realizacji (`/realizacje/...`) oraz stronach informacyjnych (np. O nas, FAQ, Kontakt, Mapa strony).
-- **Spójność z istniejącymi stronami ofert i narzędzi**:
-  - Używaj podobnych typów sekcji i nagłówków jak na istniejących podstronach (np. „Co zyskujesz…”, „Na czym polega… i dlaczego działa?”, „Kiedy ma sens?”, „Proces”, „Jak mierzyć efekty?”, „Najczęstsze błędy”, „FAQ”, „Podsumowanie”).
-  - Jeśli podajesz liczby/statystyki, dodaj źródło w formie linku (np. „(źródło)”) tak jak na stronach ofert.
-- **Ton i rola autora**:
-  - Występujesz jako mentor i przewodnik.
-  - Pozycja komunikacyjna: „Jestem kilka kroków dalej, rozumiem proces i spokojnie przeprowadzę Cię przez decyzję.”
-  - Nie popisujesz się wiedzą techniczną i nie „sprzedajesz się” w treści.
-- **KLUCZOWE: Maksymalna prostota i przyjazność** (aktualizacja 2025-12-18):
-  - **Pisz tak, żeby zrozumiało 5-letnie dziecko i 60-letnia osoba bez wiedzy technicznej.**
-  - **Każdy termin techniczny natychmiast wyjaśniaj** — po użyciu terminu od razu odpowiedz na pytania: „Co to jest?” i „Po co to?”.
-  - **Każde zdanie = logiczny ciąg dalszy** — bez skoków myślowych, płynna narracja jak opowieść.
-  - **Ludzki język** — pisz jak do znajomego przy kawie, nie jak korporacyjna broszura.
-  - **Instrukcje krok po kroku** — przy podstronach narzędzi Arteon (oraz artykułach o narzędziach) dodawaj sekcję „Jak to zrobić w naszym narzędziu” z prostym przewodnikiem.
-  - Przykład dobrego wyjaśnienia:
-    - ❌ „Wygeneruj favicon.ico i apple-touch-icon.png”
-    - ✅ „Stwórz małą ikonkę, która pojawi się na karcie przeglądarki (to właśnie favicon — miniaturowa ikona Twojej strony). Dzięki niej Twoja strona wygląda profesjonalnie i łatwiej ją znaleźć wśród wielu otwartych kart.”
-- **Styl językowy**:
-  - Pełne, poprawne zdania (bez równoważników zdań).
-  - Naturalny rytm (jak w dobrej rozmowie): spokojnie, rzeczowo, klarownie.
-  - Bez slangu i kolokwializmów.
-- **Narracja**:
-  - Druga osoba liczby pojedynczej („Twoja firma”, „zyskujesz”, „widzisz efekt”).
-- **Zakazane formy**:
-  - Hasła marketingowe bez treści („kompleksowe rozwiązania”, „nowoczesne podejście”).
-  - Żargon techniczny bez wyjaśnienia.
-  - Clickbait.
-- **Zasada benefit-first (kluczowa)**: każdą informację techniczną poprzedź korzyścią.
-  - Schemat: co zyskujesz → dlaczego to ważne → jakim narzędziem jest to realizowane.
-  - Przykład:
-    - ❌ „Strona jest oparta o Next.js”
-    - ✅ „Strona działa szybciej, jest stabilna i łatwa w rozwoju. Dlatego korzystamy z nowoczesnych technologii takich jak Next.js.”
-- **Struktura** (aktualizacja 2025-12-18):
-  - Poniższy układ to **punkt wyjścia**, nie sztywny szablon:
-    - Wstęp (o czym artykuł, co czytelnik zyska)
-    - Wyjaśnienie problemu/tematu (co to jest, dlaczego ważne)
-    - Rozwiązanie / kroki / proces
-    - Najczęstsze błędy lub pułapki
-    - Podsumowanie + CTA
-  - **Dopasuj strukturę do tematu**. Jeśli logiczny podział wymaga innego układu — zrób inaczej. Ważne, żeby artykuł miał sens i płynnie prowadził czytelnika, nie żeby pasował do szablonu.
-  - Przykłady elastyczności:
-    - Artykuł o narzędziu → może mieć dużą sekcję „Jak to zrobić krok po kroku”.
-    - Artykuł porównawczy → może mieć strukturę „Opcja A vs Opcja B”.
-    - Artykuł o procesie → może mieć oś czasu zamiast sekcji.
-
-### Co robić, a czego NIE robić (aktualizacja 2025-12-18)
-
-**✅ TAK — rób to:**
-- Zacznij od konkretu, nie od wstępu o wstępie
-- Wyjaśniaj terminy od razu po ich użyciu (w nawiasie lub w następnym zdaniu)
-- Używaj analogii i przykładów z życia („Pomyśl o tym jak o...”, „Wyobraź sobie, że...”)
-- Pisz jak do znajomego — naturalnie, bez sztywności
-- Dodawaj instrukcje krok po kroku do narzędzi Arteon
-- Linkuj do powiązanych artykułów i usług tam, gdzie ma to sens
-- Używaj pytań jako nagłówków (np. „Ile to kosztuje?”, „Kiedy warto?”)
-- Kończ podsumowaniem z 3-5 konkretnymi wnioskami
-
-**❌ NIE — unikaj tego:**
-- Nie zaczyniaj od ogólników („W dzisiejszych czasach...”, „Jak wszyscy wiemy...”)
-- Nie używaj żargonu bez wyjaśnienia (SEO, CTA, long-tail — zawsze wyjaśnij)
-- Nie pisz korpo-językiem („kompleksowe rozwiązania”, „innowacyjne podejście”)
-- Nie kopiuj struktury bezmyślnie — dopasuj do tematu
-- Nie twórz checklist ani list do odhaczania
-- Nie obiecuj rezultatów ani gwarancji
-- Nie upychaj słów kluczowych sztucznie
-- Nie pisz długich wstępów przed przejściem do sedna
-
-- **Zakaz checklist**: nie twórz w artykułach sekcji „Checklista” ani list „do odhaczania”. Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety”.
-- **Konkret zamiast ogólników**: jeśli temat jest odpowiedzią na jedno pytanie główne, zrób jeden kompleksowy artykuł zamiast kilku małych.
-- **Ludzki język** — pisz jak do znajomego przy kawie, nie jak korporacyjna broszura.
-- **Instrukcje krok po kroku** — przy podstronach narzędzi Arteon (oraz artykułach o narzędziach) dodawaj sekcję „Jak to zrobić w naszym narzędziu” z prostym przewodnikiem.
-- Przykład dobrego wyjaśnienia:
-    - ❌ „Wygeneruj favicon.ico i apple-touch-icon.png”
-    - ✅ „Stwórz małą ikonkę, która pojawi się na karcie przeglądarki (to właśnie favicon — miniaturowa ikona Twojej strony). Dzięki niej Twoja strona wygląda profesjonalnie i łatwiej ją znaleźć wśród wielu otwartych kart.”
-- **Styl językowy**:
-  - Pełne, poprawne zdania (bez równoważników zdań).
-  - Naturalny rytm (jak w dobrej rozmowie): spokojnie, rzeczowo, klarownie.
-  - Bez slangu i kolokwializmów.
-- **Narracja**:
-  - Druga osoba liczby pojedynczej („Twoja firma”, „zyskujesz”, „widzisz efekt”).
-- **Zakazane formy**:
-  - Hasła marketingowe bez treści („kompleksowe rozwiązania”, „nowoczesne podejście”).
-  - Żargon techniczny bez wyjaśnienia.
-  - Clickbait.
-- **Zasada benefit-first (kluczowa)**: każdą informację techniczną poprzedź korzyścią.
-  - Schemat: co zyskujesz → dlaczego to ważne → jakim narzędziem jest to realizowane.
-  - Przykład:
-    - ❌ „Strona jest oparta o Next.js”
-    - ✅ „Strona działa szybciej, jest stabilna i łatwa w rozwoju. Dlatego korzystamy z nowoczesnych technologii takich jak Next.js.”
-- **Struktura** (aktualizacja 2025-12-18):
-  - Poniższy układ to **punkt wyjścia**, nie sztywny szablon:
-    - Wstęp (o czym artykuł, co czytelnik zyska)
-    - Wyjaśnienie problemu/tematu (co to jest, dlaczego ważne)
-    - Rozwiązanie / kroki / proces
-    - Najczęstsze błędy lub pułapki
-    - Podsumowanie + CTA
-  - **Dopasuj strukturę do tematu**. Jeśli logiczny podział wymaga innego układu — zrób inaczej. Ważne, żeby artykuł miał sens i płynnie prowadził czytelnika, nie żeby pasował do szablonu.
-  - Przykłady elastyczności:
-    - Artykuł o narzędziu → może mieć dużą sekcję „Jak to zrobić krok po kroku”.
-    - Artykuł porównawczy → może mieć strukturę „Opcja A vs Opcja B”.
-    - Artykuł o procesie → może mieć oś czasu zamiast sekcji.
-
-### Dodatkowe reguły
-
-- każdy komponent i cały kod powinien być zgodny z najlepszymi praktykami Next
-- przy tworzeniu nowych hooków lub komponentów sprawdź raport mówiący o tych które już są, jeśli są już podobne to ich użyj lub stwórz nowy wariant / propsy (bez require), które będą przydatne
-- nie zmieniaj wyglądu, treści ani funkcjonalności, chyba że wskazano inaczej
-- nie wprowadzaj w `robots.tsx` globalnej blokady indeksacji całej witryny (blokowanie `/` jest zabronione)
-- nigdy nie zmieniaj numerów zadań
-
-
----
-
 ## Zadania: Artykuły (backlog)
 
 - ❌ **[2] Blog: Jakie materiały są potrzebne, żeby móc zlecić stronę internetową?**
@@ -859,170 +753,6 @@ Zrobione zadania: `DONE_TASKS.md`.
 ---
 
 ## Pomysły
-
-Backlog rozwoju generowany przez `AUDIT-006`. Dopisuj pomysły jako osobne zadania `IDEA-*`.
-
-Wymagany format (kopiuj i uzupełnij):
-
-- ❌ **[IDEA-XXX] [Tytuł pomysłu]**
-
-  - Cel i uzasadnienie:
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-  - Pliki i ścieżki:
-  - SEO:
-    - URL/slug:
-    - `metadata.title`:
-    - `metadata.description`:
-    - OG image:
-    - Schema:
-  - Kryteria akceptacji:
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
-
-  - Cel i uzasadnienie:
-    - Użytkownik często ma prosty problem: „strona nie rośnie w Google” i nie wie od czego zacząć.
-    - Artykuł będzie lead magnetem do usługi `/uslugi/marketing/audyt-seo` i uporządkuje temat bez żargonu.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł z planem krok po kroku: techniczne minimum (indeksacja, sitemap, canonical), treść, linkowanie, podstawy PageSpeed.
-    - Sekcja „Jak zebrać dane w 5 minut” (GSC + Lighthouse) + jak interpretować wynik.
-  - Pliki i ścieżki:
-    - `data/pl/blog.json` (nowy wpis na górze listy `articles[]`)
-    - `public/assets/blog/jak-zrobic-audyt-seo-samemu-i-co-sprawdzic-jako-pierwsze/jak-zrobic-audyt-seo-samemu-i-co-sprawdzic-jako-pierwsze.webp`
-  - SEO:
-    - URL/slug: `/edukacja/seo/jak-zrobic-audyt-seo-samemu-i-co-sprawdzic-jako-pierwsze`
-    - `metadata.title`: `Jak zrobić audyt SEO samemu i co sprawdzić jako pierwsze? | Arteon`
-    - `metadata.description`: `Prosty plan audytu SEO w 30 minut: co sprawdzić, jak zebrać dane i jak ustawić priorytety. Bez żargonu, z przykładami.`
-    - OG image: `public/assets/blog/jak-zrobic-audyt-seo-samemu-i-co-sprawdzic-jako-pierwsze/jak-zrobic-audyt-seo-samemu-i-co-sprawdzic-jako-pierwsze.webp`
-    - Schema: `Article` + `BreadcrumbList`
-  - Kryteria akceptacji:
-    - Artykuł ma 6–9 minut czytania i zawiera min. 6 FAQ.
-    - Zawiera link do: `/uslugi/marketing/audyt-seo` oraz do min. 2 powiązanych artykułów.
-    - Zawiera 1 sekcję „priorytety” (co robić najpierw i dlaczego) zamiast checklisty.
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
-
-- ❌ **[IDEA-045] Artykuł: „Co to jest canonical URL i jak sprawdzić, czy Twoja strona ma go ustawionego?”**
-
-  - Cel i uzasadnienie:
-    - Canonical to częsty, „niewidoczny” problem: duplikacja adresów, parametry, http/https, www/non-www.
-    - Artykuł wspiera usługę SEO i zmniejsza liczbę błędnych wdrożeń (szczególnie przy WordPress).
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Artykuł wyjaśnia: co to jest canonical, po co jest, jak go sprawdzić (view-source/devtools), typowe błędy i scenariusze.
-    - Przykłady do skopiowania: kiedy canonical ma sens, a kiedy szkodzi.
-  - Pliki i ścieżki:
-    - `data/pl/blog.json` (nowy wpis na górze listy `articles[]`)
-    - `public/assets/blog/co-to-jest-canonical-url-i-jak-sprawdzic-czy-twoja-strona-ma-go-ustawionego/co-to-jest-canonical-url-i-jak-sprawdzic-czy-twoja-strona-ma-go-ustawionego.webp`
-  - SEO:
-    - URL/slug: `/edukacja/seo/co-to-jest-canonical-url-i-jak-sprawdzic-czy-twoja-strona-ma-go-ustawionego`
-    - `metadata.title`: `Co to jest canonical URL i jak sprawdzić, czy Twoja strona ma go ustawionego? | Arteon`
-    - `metadata.description`: `Wyjaśniamy canonical prostym językiem. Zobacz, jak sprawdzić ustawienie, kiedy pomaga, a kiedy może zaszkodzić SEO.`
-    - OG image: `public/assets/blog/co-to-jest-canonical-url-i-jak-sprawdzic-czy-twoja-strona-ma-go-ustawionego/co-to-jest-canonical-url-i-jak-sprawdzic-czy-twoja-strona-ma-go-ustawionego.webp`
-    - Schema: `Article` + `BreadcrumbList`
-  - Kryteria akceptacji:
-    - Artykuł ma min. 5 minut czytania.
-    - Zawiera min. 6 FAQ + 2 krótkie przykłady scenariuszy (np. parametry UTM, duplikaty kategorii/stron).
-    - Zawiera CTA do `/uslugi/marketing/optymalizacja-seo` lub `/uslugi/marketing/audyt-seo`.
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
-
-- ❌ **[IDEA-046] Artykuł: „Jak sprawdzić kontrast kolorów i zrobić to dobrze (WCAG AA/AAA)?”**
-
-  - Cel i uzasadnienie:
-    - Kontrast to szybka do naprawy rzecz, która poprawia czytelność i zmniejsza frustrację użytkownika.
-    - Artykuł prowadzi do narzędzia kontrastu i usług WCAG/UX.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Artykuł tłumaczy: co to jest kontrast, progi AA/AAA, typowe pułapki (placeholder, linki, disabled), i jak dobrać kolor.
-    - Sekcja „Jak to zrobić w naszym narzędziu” krok po kroku.
-  - Pliki i ścieżki:
-    - `data/pl/blog.json` (nowy wpis na górze listy `articles[]`)
-    - `public/assets/blog/jak-sprawdzic-kontrast-kolorow-i-zrobic-to-dobrze-wcag-aa-aaa/jak-sprawdzic-kontrast-kolorow-i-zrobic-to-dobrze-wcag-aa-aaa.webp`
-  - SEO:
-    - URL/slug: `/edukacja/design/jak-sprawdzic-kontrast-kolorow-i-zrobic-to-dobrze-wcag-aa-aaa`
-    - `metadata.title`: `Jak sprawdzić kontrast kolorów i zrobić to dobrze (WCAG AA/AAA)? | Arteon`
-    - `metadata.description`: `Proste wyjaśnienie kontrastu i WCAG. Sprawdź kolory, zobacz wynik AA/AAA i dobierz wariant, który będzie czytelny dla użytkowników.`
-    - OG image: `public/assets/blog/jak-sprawdzic-kontrast-kolorow-i-zrobic-to-dobrze-wcag-aa-aaa/jak-sprawdzic-kontrast-kolorow-i-zrobic-to-dobrze-wcag-aa-aaa.webp`
-    - Schema: `Article` + `BreadcrumbList`
-  - Kryteria akceptacji:
-    - Artykuł zawiera min. 5 minut czytania i zawiera min. 6 FAQ.
-    - Zawiera link do narzędzia: `/narzedzia/tester-kontrastu-kolorow-wcag`.
-    - Zawiera 3–5 przykładów „częstych błędów” z krótkim wyjaśnieniem, dlaczego są problemem.
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
-
-- ❌ **[IDEA-047] Artykuł: „Jak zrobić kod QR, który działa w druku i na telefonie?”**
-
-  - Cel i uzasadnienie:
-    - Wiele kodów QR nie działa, bo są za małe, mają za niski kontrast albo złe marginesy.
-    - Artykuł wspiera generator QR i ofertę projektów do druku.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Wyjaśnienie: jak działa QR, co to jest „margines” (quiet zone), jaka wielkość do druku, jak testować.
-    - Sekcja „Jak to zrobić w naszym narzędziu” (rozmiar, margines, korekcja błędów, kolory).
-  - Pliki i ścieżki:
-    - `data/pl/blog.json` (nowy wpis na górze listy `articles[]`)
-    - `public/assets/blog/jak-zrobic-kod-qr-ktory-dziala-w-druku-i-na-telefonie/jak-zrobic-kod-qr-ktory-dziala-w-druku-i-na-telefonie.webp`
-  - SEO:
-    - URL/slug: `/edukacja/branding/jak-zrobic-kod-qr-ktory-dziala-w-druku-i-na-telefonie`
-    - `metadata.title`: `Jak zrobić kod QR, który działa w druku i na telefonie? | Arteon`
-    - `metadata.description`: `Zobacz, jak zrobić kod QR, który naprawdę działa: dobry rozmiar, margines, kontrast i testy. Z instrukcją w naszym generatorze.`
-    - OG image: `public/assets/blog/jak-zrobic-kod-qr-ktory-dziala-w-druku-i-na-telefonie/jak-zrobic-kod-qr-ktory-dziala-w-druku-i-na-telefonie.webp`
-    - Schema: `Article` + `BreadcrumbList`
-  - Kryteria akceptacji:
-    - Artykuł zawiera min. 5 konkretnych przykładów zastosowań (wizytówka, menu, ulotka, plakat, strona www).
-    - Zawiera link do narzędzia: `/narzedzia/generator-kodu-qr`.
-    - Zawiera min. 6 FAQ.
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
-
-  - Cel i uzasadnienie:
-    - Użytkownik chce „ładne zdjęcie”, ale często wrzuca plik 4000px i 5MB, który spowalnia stronę.
-    - Artykuł poprowadzi do 2 narzędzi: kadrowania/resize oraz konwersji WebP.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Prosty proces: wybór kadru, docelowy rozmiar, eksport do WebP, test przed publikacją.
-    - Sekcja „Jak to zrobić w naszych narzędziach” z krokami.
-  - Pliki i ścieżki:
-    - `data/pl/blog.json` (nowy wpis na górze listy `articles[]`)
-    - `public/assets/blog/jak-przygotowac-zdjecia-na-strone-i-social-media-kadrowanie-i-webp/jak-przygotowac-zdjecia-na-strone-i-social-media-kadrowanie-i-webp.webp`
-  - SEO:
-    - URL/slug: `/edukacja/zdjecia/jak-przygotowac-zdjecia-na-strone-i-social-media-kadrowanie-i-webp`
-    - `metadata.title`: `Jak przygotować zdjęcia na stronę i social media (kadrowanie + WebP)? | Arteon`
-    - `metadata.description`: `Prosty sposób na szybkie zdjęcia: dobry kadr, rozsądny rozmiar i lekki format WebP. Z instrukcją w narzędziach Arteon.`
-    - OG image: `public/assets/blog/jak-przygotowac-zdjecia-na-strone-i-social-media-kadrowanie-i-webp/jak-przygotowac-zdjecia-na-strone-i-social-media-kadrowanie-i-webp.webp`
-    - Schema: `Article` + `BreadcrumbList`
-  - Kryteria akceptacji:
-    - Zawiera linki do narzędzi: `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia` oraz `/narzedzia/jpg-png-na-webp-bez-limitu`.
-    - Zawiera min. 6 FAQ i 3 scenariusze (strona główna, blog, social media).
-    - Zawiera jasne rekomendacje „co jest za duże” i „co jest OK” (bez obietnic wyników).
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
-
-  - Cel i uzasadnienie:
-    - W praktyce wiele firm ma tylko plik z Canvy lub JPG z białym tłem i nie wie, co z tym zrobić.
-    - Artykuł wspiera ofertę projektu logo/identyfikacji oraz narzędzie favicon (logo → ikony).
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Wyjaśnienie formatów: kiedy PNG, kiedy SVG, jak przygotować tło, jak dobrać rozmiar i wagę.
-    - Sekcja „Jak zrobić z logo zestaw ikon” (favicon + apple/android) w naszym narzędziu.
-  - Pliki i ścieżki:
-    - `data/pl/blog.json` (nowy wpis na górze listy `articles[]`)
-    - `public/assets/blog/jak-przygotowac-logo-do-internetu-png-svg-tlo-i-rozmiary/jak-przygotowac-logo-do-internetu-png-svg-tlo-i-rozmiary.webp`
-  - SEO:
-    - URL/slug: `/edukacja/branding/jak-przygotowac-logo-do-internetu-png-svg-tlo-i-rozmiary`
-    - `metadata.title`: `Jak przygotować logo do internetu: PNG, SVG, tło i rozmiary? | Arteon`
-    - `metadata.description`: `Prosty przewodnik: jakie formaty plików logo są potrzebne w internecie i jak je przygotować. Z instrukcją tworzenia ikon favicon.`
-    - OG image: `public/assets/blog/jak-przygotowac-logo-do-internetu-png-svg-tlo-i-rozmiary/jak-przygotowac-logo-do-internetu-png-svg-tlo-i-rozmiary.webp`
-    - Schema: `Article` + `BreadcrumbList`
-  - Kryteria akceptacji:
-    - Artykuł ma 5–8 minut czytania i zawiera min. 6 FAQ.
-    - Zawiera link do narzędzia: `/narzedzia/darmowy-generator-favicon-ico`.
-    - Zawiera CTA do: `/uslugi/projekty-graficzne/projekt-logo` lub `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`.
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
 
 - ❌ **[IDEA-019] O nas: „Jak pracujemy” — podstrona procesu współpracy (krok po kroku)**
 
@@ -1213,6 +943,7 @@ Wymagany format (kopiuj i uzupełnij):
     - `hooks/useSearch.ts` (debounce query)
     - `components/sections/tools/QrCodeGenerator.tsx` (debounce generowania podglądu QR)
   - Plan migracji (bez zmiany UI/UX):
+
     - Dodać hook do `hooks/`.
     - Przepiąć oba miejsca na hook i usunąć lokalne `setTimeout`/`clearTimeout`.
     - Zachować aktualne opóźnienia (`150ms` i `300ms`).
@@ -1224,6 +955,7 @@ Wymagany format (kopiuj i uzupełnij):
     - `components/sections/tools/FaviconGenerator.tsx`
     - `components/sections/tools/PaletteExtractor.tsx`
   - Plan migracji (bez zmiany UI/UX):
+
     - Dodać shared util (np. `lib/tools/image/uploadTypes.ts`).
     - Zastąpić lokalne `SUPPORTED_TYPES` importem z utila.
 
@@ -1232,6 +964,7 @@ Wymagany format (kopiuj i uzupełnij):
     - `components/sections/tools/FaviconGenerator.tsx` (zipUrl)
     - `components/sections/tools/JpgPngToWebp/useWebpDownloads.ts` (zipUrl)
   - Plan migracji (bez zmiany UI/UX):
+
     - Dodać util obok `lib/tools/download.ts`.
     - Przepiąć oba miejsca na util (w środku: `URL.createObjectURL`, `downloadFromUrl`, revoke po czasie).
 

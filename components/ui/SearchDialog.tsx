@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { RiSearchLine, RiCloseLine, RiArrowRightLine } from 'react-icons/ri';
+import { createPortal } from 'react-dom';
 import { useSearch } from '@/hooks/useSearch';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import type { SearchCategory, SearchItem } from '@/lib/search/searchIndex';
@@ -29,12 +30,17 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [mounted, setMounted] = useState(false);
 
   const { query, setQuery, results, groupedResults, hasResults, clearSearch } = useSearch({ debounceMs: 150, limit: 24 });
 
   const flatResults = results;
 
   useEscapeKey(onClose, isOpen);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -93,13 +99,13 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
   const renderResults = () => {
     if (!query.trim()) {
-      return <div className="text-light px-4 py-8 text-center text-sm">Wpisz frazę, aby wyszukać usługi, narzędzia, artykuły lub realizacje</div>;
+      return <div className="text-light px-4 py-8 text-center text-sm">Wpisz frazę, np. „strony internetowe”, „generator favicon” albo „realizacje” a zobaczysz powiązaną z nią stronę.</div>;
     }
 
     if (!hasResults) {
       return (
         <div className="px-4 py-8 text-center">
-          <p className="text-light text-sm">Brak wyników dla „{query}"</p>
+          <p className="text-light text-sm">Brak wyników dla „{query}”</p>
           <Link href="/kontakt" onClick={onClose} className="text-dark inline-link mt-2 inline-block text-sm font-medium">
             Skontaktuj się z nami
           </Link>
@@ -129,7 +135,9 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     );
   };
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {isOpen && (
         <motion.div
@@ -159,7 +167,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Szukaj usług, narzędzi, artykułów..."
-                className="text-mid h-7 flex-1 bg-transparent text-sm placeholder:text-light placeholder:opacity-80 focus:outline-none"
+                className="text-mid placeholder:text-light h-7 flex-1 bg-transparent text-sm placeholder:opacity-80 focus:outline-none"
                 aria-label="Wyszukaj"
               />
               <button type="button" onClick={onClose} className="rounded p-0.5 text-slate-700 hover:bg-slate-100" aria-label="Zamknij">
@@ -171,7 +179,8 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
           </motion.div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body,
   );
 }
 

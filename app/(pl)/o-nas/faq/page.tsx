@@ -39,8 +39,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: 'Czy możecie pomóc mi wymyślić plan działania?',
-    answer:
-      'Tak. Jeśli masz kilka pomysłów na rozwój i nie wiesz, od czego zacząć, podzielimy pracę na etapy. Dzięki temu mógł/mogła szybciej wystartować i nie przepalić budżetu.',
+    answer: 'Tak. Jeśli masz kilka pomysłów na rozwój i nie wiesz, od czego zacząć, podzielimy pracę na etapy. Dzięki temu mógł/mogła szybciej wystartować i nie przepalić budżetu.',
   },
   {
     question: 'Jak wygląda proces współpracy?',

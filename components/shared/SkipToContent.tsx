@@ -1,6 +1,6 @@
 const ui = {
   pl: {
-    skipToContent: 'Skip to content',
+    skipToContent: 'Przejdź do treści',
   },
 } as const;
 

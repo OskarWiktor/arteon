@@ -82,7 +82,7 @@ Struktura repo (w uproszczeniu):
 
 ### `SkipToContent` (`components/shared/SkipToContent.tsx`)
 
-- **Co robi**: Link „skip to content” (a11y) do przeskoku na `main`.
+- **Co robi**: Link „Przejdź do treści” (a11y) do przeskoku na `main`.
 - **Odpowiedzialności**:
   - **[a11y]** udostępnia szybki skok do treści (zwykle widoczny po focus).
 
@@ -652,6 +652,7 @@ Struktura repo (w uproszczeniu):
 - **Co robi**: Modal wyszukiwania strony (site search) z instant wynikami podczas pisania.
 - **Odpowiedzialności**:
   - **[input]** pole wyszukiwania z debounce (zmniejszona wysokość: `py-1` w headerze, `h-7`, `text-sm`).
+  - **[microcopy]** podpowiedź startowa z przykładami fraz + spójne cudzysłowy w komunikatach.
   - **[wyniki]** grupowanie wyników (Usługi / Narzędzia / Edukacja / Realizacje / Strony).
   - **[keyboard nav]** `↑↓` nawigacja, `Enter` przejście, `Esc` zamknięcie.
   - **[close]** przycisk zamknięcia z ikoną X (bez tekstu „Esc").

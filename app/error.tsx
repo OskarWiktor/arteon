@@ -16,10 +16,12 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
     <Wrapper>
       <div className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center">
         <h1 className="mb-4">Coś poszło nie tak</h1>
-        <p className="text-light mb-8 max-w-md text-lg leading-relaxed">Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę lub skontaktuj się z nami, jeśli problem się powtarza.</p>
+        <p className="text-light mb-8 max-w-md text-lg leading-relaxed">
+          Wystąpił nieoczekiwany błąd. Spróbuj odświeżyć stronę. Jeśli problem się powtórzy skontaktuj się z nami poprzez stronę kontakt lub email: kontakt@arteonagency.pl.
+        </p>
         <div className="flex flex-wrap gap-3">
           <Button onClick={reset} variant="accent" arrow>
-            Spróbuj ponownie
+            Odświerz stronę
           </Button>
           <Button link="/" variant="dark">
             Wróć na stronę główną

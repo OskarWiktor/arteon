@@ -123,7 +123,12 @@ export default function PaletteExtractor() {
       <ToolSection className="space-y-4">
         <div>
           <p className="mb-2 font-semibold uppercase">{t.addImageLabel}</p>
-          <ToolFileDropzone accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')} disabled={isProcessing} onFiles={handleFiles} className={`tool-upload-area ${isProcessing ? 'cursor-not-allowed opacity-60' : ''}`}>
+          <ToolFileDropzone
+            accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
+            disabled={isProcessing}
+            onFiles={handleFiles}
+            className={`tool-upload-area ${isProcessing ? 'cursor-not-allowed opacity-60' : ''}`}
+          >
             <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
             <span className="text-light mb-2 text-xs">{t.clickToSelect}</span>
             <Badge variant="default" size="sm" className="bg-white shadow-sm">

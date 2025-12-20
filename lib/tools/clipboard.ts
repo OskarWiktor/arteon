@@ -1,8 +1,5 @@
 export function canWriteTextToClipboard(): boolean {
-  return (
-    typeof navigator !== 'undefined' &&
-    typeof navigator.clipboard?.writeText === 'function'
-  );
+  return typeof navigator !== 'undefined' && typeof navigator.clipboard?.writeText === 'function';
 }
 
 export async function writeTextToClipboard(text: string): Promise<void> {

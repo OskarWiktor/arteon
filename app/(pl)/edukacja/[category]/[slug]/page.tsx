@@ -298,7 +298,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
     article.category?.find((c) => slugify(c) === canonicalCat) ||
     canonicalCat.replace(/-/g, ' ').toUpperCase();
 
-  const articlesCarouselTitle = `Sprawdź nasze artykuły na temat: ${categoryLabel}`;
+  const articlesCarouselTitle = `Sprawdź inne artykuły na temat: ${categoryLabel}`;
   if (params.category !== canonicalCat) {
     permanentRedirect(`/edukacja/${canonicalCat}/${article.slug}`);
   }

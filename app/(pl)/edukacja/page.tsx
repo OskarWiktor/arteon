@@ -8,12 +8,12 @@ import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '
 import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata: Metadata = {
-  title: 'Edukacja - poradniki i wiedza | Arteon',
-  description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+  title: 'Edukacja | Arteon',
+  description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
   alternates: { canonical: toAbsoluteUrl('/edukacja') },
   openGraph: {
-    title: 'Edukacja - poradniki i wiedza | Arteon',
-    description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+    title: 'Edukacja | Arteon',
+    description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
     url: toAbsoluteUrl('/edukacja'),
     type: 'website',
     // TODO: Add unique OpenGraph image for education/blog page: /assets/og/edukacja.webp (1200x630px)
@@ -32,8 +32,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': `${toAbsoluteUrl('/edukacja')}#collection`,
-  name: 'Edukacja - poradniki i wiedza | Arteon',
-  description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+  name: 'Edukacja | Arteon',
+  description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
   url: toAbsoluteUrl('/edukacja'),
   mainEntity: {
     '@type': 'ItemList',
@@ -53,7 +53,13 @@ export default function EdukacjaPage() {
 
   return (
     <>
-      <HeroBanner title="Edukacja" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
+      <HeroBanner
+        title="Edukacja"
+        description="Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci."
+        variant="center"
+        backgroundImage="/assets/bg/abstract-bg13.webp"
+        overlay="black"
+      />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} />

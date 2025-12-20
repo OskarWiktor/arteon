@@ -1,6 +1,185 @@
 # DONE_TASKS
 
+## 2025-12-20
+
+- ✅ **[COPY-050] Edukacja: uprościć tytuły i opisy kategorii (huby)**
+
+  - Pliki:
+    - `app/(pl)/edukacja/page.tsx`
+    - `app/(pl)/edukacja/[category]/page.tsx`
+  - **Zrobione**:
+    - Usunięto prefix „Edukacja:" z tytułów kategorii (HERO, meta title, OG title, schema).
+    - Uproszczono opisy kategorii — krótkie, ogólne zdania bez technicznych detali.
+    - Opisy są elastyczne i uniwersalne, nie zawężają do jednego kanału (np. „na stronie").
+    - Zaktualizowano `PAGES_CATALOG.md`.
+    - Dodano instrukcję do `INSTRUCTIONS.md` zapobiegającą podobnym błędom.
+  - Weryfikacja: pominięto (COPY-only).
+
+- ✅ **[UI-003] SearchDialog: blur po otwarciu wyszukiwarki ma obejmować całe tło (nie tylko okno wyszukiwania)**
+
+  - Plik:
+    - `components/ui/SearchDialog.tsx`
+  - **Zrobione**:
+    - Przeniesiono render `SearchDialog` do portalu (`document.body`), żeby `backdrop-blur` obejmował całe tło strony.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[COPY-046] CookieConsent: uprościć copy i wytłumaczyć „analitykę/GA4” po ludzku**
+
+  - Plik:
+    - `components/shared/CookieConsent.tsx`
+  - **Zrobione**:
+    - Skrócono teksty w banerze cookie oraz w opisie analityki (bez „ściany tekstu”).
+    - Dodano proste wyjaśnienie czym jest GA4 (statystyki odwiedzin) i po co jest.
+  - Weryfikacja: pominięto (COPY-only).
+
+- ✅ **[COPY-047] SearchDialog: poprawić mikrocopy (bardziej prowadzące, spójne cudzysłowy)**
+
+  - Plik:
+    - `components/ui/SearchDialog.tsx`
+  - **Zrobione**:
+    - Uproszczono tekst startowy (puste wyszukiwanie) i dodano przykłady fraz.
+    - Ujednolicono cudzysłowy w komunikacie „Brak wyników…”.
+  - Weryfikacja: pominięto (COPY-only).
+
+- ✅ **[COPY-044] Skip link: spolszczyć „Skip to content” (global a11y microcopy)**
+
+  - Plik:
+    - `components/shared/SkipToContent.tsx`
+  - **Zrobione**:
+    - Zmieniono tekst skip linka na `Przejdź do treści`.
+  - Weryfikacja: pominięto (COPY-only).
+
+- ✅ **[COPY-048] Strony systemowe: dopracować komunikaty 404 i error (interpunkcja + ton)**
+
+  - Pliki:
+    - `app/not-found.tsx`
+    - `app/error.tsx`
+  - **Zrobione**:
+    - Poprawiono interpunkcję i doprecyzowano komunikat 404 (jaśniej, co zrobić dalej).
+    - Uproszczono i „uodporacyjniono” komunikat strony błędu (spokojny ton + jasne następne kroki).
+  - Weryfikacja: pominięto (COPY-only).
+
+- ✅ **[COPY-045] Nawigacja (header): uprościć opisy w menu (bez żargonu i skrótów)**
+
+  - Plik:
+    - `components/shared/navigation-data/pl.ts`
+  - **Zrobione**:
+    - Usunięto teksty opisów, które nie pojawiają się w menu.
+  - Weryfikacja: pominięto (COPY-only).
+
 ## 2025-12-19
+
+- ✅ **[AUDIT-010] Repo: audyt tonu marki na stronach — elementy globalne i copy „wspólne” (bez artykułów)**
+
+  - **Zakres**: sprawdzono copy w elementach globalnych (header/footer, modal cookie, wyszukiwarka, strony systemowe 404/error).
+  - **Wykryte problemy**:
+    - `SkipToContent`: angielski tekst `Skip to content` w polskiej wersji serwisu.
+    - Nawigacja (opisy w dropdownach): skróty i żargon bez wyjaśnienia (np. WCAG, on-page).
+    - Stopka: opis firmy brzmi „broszurowo”.
+    - CookieConsent: „analityka/GA4” bez prostego wyjaśnienia „co to jest?” i „po co to?”.
+    - SearchDialog: mikrocopy do uproszczenia + spójność cudzysłowów.
+    - 404/error: drobne dopracowanie interpunkcji/tonu.
+  - **Dodano zadania**: `COPY-044`, `COPY-045`, `COPY-046`, `COPY-047`, `COPY-048`, `COPY-049`.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+- ✅ **[CONTENT-008] Blog: przepisać artykuł — `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`**
+
+  - Plik:
+    - `data/pl/blog.json`
+  - **Zrobione**:
+    - Przepisano artykuł w mentorskim tonie (mocno od nowa), z naciskiem na konkrety i praktyczne wdrożenie.
+    - Dodano analogie z życia (m.in. ubranie na spotkanie, pierwsze wrażenie w lokalu) i wyjaśniono pojęcia (brandbook, typografia, CTA, WCAG).
+    - Dodano linkowanie wewnętrzne + sekcję „Zobacz też” (powiązane artykuły i narzędzia).
+    - Odświeżono `excerpt`, `seo.description`, `dateModified`, oraz zaktualizowano `faq` (5 pytań) i `cta`.
+  - Weryfikacja: pominięto `npm run lint` i `npm run build` (content-only).
+
+- ✅ **[CONTENT-006] Blog: przepisać artykuł — `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`**
+
+  - Plik:
+    - `data/pl/blog.json`
+  - **Zrobione**:
+    - Przepisano artykuł do nowego tonu (mentorsko, prosto, benefit-first) z analogiami.
+    - Dodano wyjaśnienia terminów: CTR, CTA, UX oraz WCAG.
+    - Dodano `tags[]` oraz sekcję `faq[]` (4 pytania).
+    - Zaktualizowano `dateModified` i `readingTime`.
+    - Naprawiono problemy z parsowaniem JSON spowodowane przez cudzysłowy w HTML (bezpieczne encje w `contentBlocks.richtext.html`).
+  - Weryfikacja: pominięto `npm run lint` i `npm run build` (content-only).
+
+- ✅ **[SEO-019] Redirecty (`next.config.ts`): czy Google je widzi + indeksacja tylko realnych stron z sitemapy**
+
+  - Pliki:
+    - `next.config.ts`
+    - `public/sitemap.xml`, `public/sitemap-0.xml`
+    - `TASKS.md`
+  - **Zrobione**:
+    - Potwierdzono, że sitemap zawiera wyłącznie realne strony docelowe (brak legacy URL-i typu `/services`, `/projects`, `/contact`, `/offer`, `/calculator`).
+    - Potwierdzono, że redirecty z `next.config.ts` są server-side i permanent (`permanent: true` → 308), więc są widoczne dla Google.
+    - Naprawiono drobne ryzyka SEO: usunięto potencjalny łańcuch redirectów (trailing slash) oraz ustawiono poprawną kolejność reguł dla `/projects/*` (najpierw wyjątki, potem ogólny `/:slug`).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[SEO-018] Blog/Edukacja: zmienić kategorię `Design` na `Grafika` (URL + canonical + redirecty)**
+
+  - Pliki:
+    - `data/pl/blog.json`
+    - `app/(pl)/edukacja/[category]/page.tsx`
+    - `next.config.ts`
+    - `BLOG_CATALOG.md`
+    - `PAGES_CATALOG.md`
+    - `TASKS.md`
+  - **Zrobione**:
+    - Zmieniono kategorię `Design` → `Grafika` (primary + secondary) oraz canonicale artykułów na `/edukacja/grafika/...`.
+    - Dodano redirecty 301: `/edukacja/design` i `/edukacja/design/:path*` → `/edukacja/grafika/...` oraz zaktualizowano istniejące redirecty artykułów.
+    - Zaktualizowano dokumentację (blog/pages catalogs) pod nową nazwę kategorii.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[PROJECT-007] Realizacje: dodać opinię Sebastiana do projektu Simba Group PL**
+
+  - Pliki:
+    - `data/pl/projects.json`
+    - `PROJECTS_CATALOG.md`
+  - **Zrobione**:
+    - Dodano `testimonial` do projektu `folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group` (quote/author/role/link) na podstawie istniejącej opinii Sebastiana w `data/pl/testimonials.json`.
+    - Zaktualizowano wpis realizacji w `PROJECTS_CATALOG.md` (uwzględniono `testimonial` i faktyczny stan `faq`).
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny (pomysły rozwoju treści) — klaster usług: projekty graficzne**
+
+  - **Zakres**: zaproponowano rozwój treści (artykuły) wspierujący ofertę `/uslugi/projekty-graficzne`.
+  - **Dodano pomysły (6)**: `IDEA-048`, `IDEA-049`, `IDEA-050`, `IDEA-051`, `IDEA-052`, `IDEA-053`.
+
+- ✅ **[CONTENT-007] Blog: przepisać artykuł — `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`**
+
+  - Plik:
+    - `data/pl/blog.json`
+  - **Zrobione**:
+    - Przepisano artykuł do nowego tonu (mentorsko, prosto, benefit-first) z analogiami (trening/remont) i „krok po kroku”.
+    - Dodano wyjaśnienia terminów: Core Web Vitals (LCP/CLS/INP), autorytet domeny, topical authority, link building.
+    - Dodano `tags[]`, sekcję `faq[]` (5 pytań) oraz linkowanie wewnętrzne + „Zobacz też”.
+    - Zaktualizowano `seo.title` (krótsze + `| Arteon`), `excerpt`, `dateModified`, `readingTime`.
+  - Weryfikacja: pominięto `npm run lint` i `npm run build` (content-only).
+
+- ✅ **[CONTENT-005] Edukacja: lepszy content na stronach kategorii artykułów (fallback dla nowych kategorii)**
+
+  - Pliki:
+    - `app/(pl)/edukacja/[category]/page.tsx`
+    - `PAGES_CATALOG.md`
+  - **Zrobione**:
+    - Dodano mapę treści per kategoria (hero + meta + OpenGraph) dla `/edukacja/[category]`.
+    - Zachowano dotychczasowe opisy jako fallback dla nowych kategorii.
+    - Zaktualizowano wpis strony w `PAGES_CATALOG.md`.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
+
+- ✅ **[BLOG-001] Edukacja: karuzela artykułów na stronie artykułu ma pokazywać wpisy z tej samej kategorii + dynamiczny nagłówek**
+
+  - Pliki:
+    - `app/(pl)/edukacja/[category]/[slug]/page.tsx`
+    - `PAGES_CATALOG.md`
+  - **Zrobione**:
+    - Karuzela artykułów na dole strony artykułu filtruje wpisy po kategorii bieżącego artykułu (`categorySlug={canonicalCat}`) i wyklucza bieżący wpis (`excludeSlug`).
+    - Tytuł karuzeli jest dynamiczny i zawiera czytelną nazwę kategorii.
+    - Link „Zobacz wszystkie artykuły” prowadzi do listy artykułów danej kategorii (`/edukacja/[category]`).
+    - Zaktualizowano opis strony w `PAGES_CATALOG.md`.
+  - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[CONTENT-004] Blog: naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton)**
 
@@ -73,10 +252,10 @@
   - **Dodano zadania**: brak.
 
 - ✅ **[AUDIT-007] Audyt prawdziwości informacji i źródeł w istniejących artykułach**
+
   - Zakres: Przegląd artykułów w `data/pl/blog.json` pod kątem dokładności informacji i wiarygodności źródeł.
   - Wynik: Większość treści jest zgodna z faktami i opiera się na wiarygodnych źródłach. Jeden artykuł wymaga poprawy merytorycznej.
   - Follow-up: Dodano zadanie `CONTENT-001` do poprawy cytowań w artykule o kolorystyce.
-
 
 - ✅ **[SEO-016] Ujednolicić źródło `SITE_URL` (żeby nie driftowało między plikami)**
 
@@ -165,7 +344,7 @@
 
   - **Zrobione 2025-12-19**:
     - Dodano 5 pomysłów do sekcji „Pomysły” w `TASKS.md`: `IDEA-039`-`IDEA-043`.
-    - Dodano 6 pomysłów (artykuły) do sekcji „Pomysły” w `TASKS.md`: `IDEA-044`-`IDEA-049`.
+    - Dodano 5 pomysłów (artykuły) do sekcji „Pomysły” w `TASKS.md`: `IDEA-045`-`IDEA-049`.
 
 - 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty)**
 
@@ -1081,6 +1260,7 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (zgodnie z prośbą).
 
 - ✅ **[COPY-013] Optymalizacja SEO: poprawić „Teoretycznie” + zdanie w schema**
+
   - Plik: `app/(pl)/uslugi/marketing/optymalizacja-seo/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono `Teorytycznie` → `Teoretycznie` w sekcji FAQ.
@@ -1088,41 +1268,48 @@
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (zgodnie z zasadą dla COPY).
 
 - ✅ **[COPY-011] Projekt logo: poprawić literówki w FAQ**
+
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-logo/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono literówki w FAQ: `rundę`, `pewien, jakie`, `ekspresową`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[CLEANUP-003] Repo: skan i usunięcie pustych plików/komponentów**
+
   - **Zrobione 2025-12-14**:
     - Przeskanowano repo (git-tracked) pod kątem plików 0B, whitespace-only oraz JS/TS zawierających tylko komentarze/whitespace — brak wyników.
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[SEO-011] Schema OG + URL**
+
   - **Zrobione 2025-12-14**:
     - Ujednolicono bezwzględne URL-e (`https://www.arteonagency.pl/...`) w OpenGraph (`openGraph.url`, `openGraph.images[].url`) oraz w schema (JSON-LD `url`) na stronach.
     - Dla stron dynamicznych dopięto prefiks `siteUrl` dla obrazków OG/Twitter, gdy źródło było relatywne (`/assets/...`) (`/realizacje/[slug]`, `/edukacja/[category]/[slug]`).
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[COPY-003] Strony internetowe: poprawić „w ciągu” + interpunkcję i literówki**
+
   - Plik: `app/(pl)/uslugi/strony-internetowe/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono interpunkcję i zapis w sekcji statystyk (m.in. `w przeciągu` → `w ciągu`, `osób, szukających` → `osób szukających`, usunięto zbędny przecinek po `Google`, `,a` → `, a`).
     - Poprawiono treści w FAQ (m.in. kapitalizacja pytania, `jest zależy` → `zależy`, usunięto spacje w nawiasach, `cookies` → `pliki cookie`, `wszystkie kroku` → `wszystkie kroki`).
 
 - ✅ **[COPY-006] Portfolio: poprawić literówkę w opisie OpenGraph**
+
   - Plik: `app/(pl)/realizacje/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono literówkę w `metadata.openGraph.description`: `przejrzty proces` → `przejrzysty proces`.
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (zgodnie z prośbą).
 
 - ✅ **[COPY-009] Usługi (listy): poprawić „hierarchią” i składnię opisu szablonów postów**
+
   - **Zrobione 2025-12-14**:
     - Poprawiono opis „Szablony postów na social media” na stronach list usług: `/uslugi` oraz `/uslugi/projekty-graficzne`.
     - Zmieniono składnię zdania (`ułatwiające regularne publikację, tworząc` → `ułatwiające regularne publikowanie i pomagające utrzymać`) oraz poprawiono literówkę `hieratchią` → `hierarchią`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[CLEANUP-002] Karuzele: rename `*Overview` → `*Carousel`**
+
   - **Zrobione 2025-12-14**:
     - Zaktualizowano importy i użycia: `ArticlesOverview` → `ArticlesCarousel`, `ProjectsOverview` → `ProjectsCarousel` (w tym `app/(pl)/uslugi/projekty-graficzne/**`).
     - Zaktualizowano dokumentację: `COMPONENTS_CATALOG.md`, `PAGES_CATALOG.md`.
@@ -1154,6 +1341,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[DOCS-002] HOOKS_CATALOG: rozszerzyć o hooks/utils/lib**
+
   - Cel: od teraz `HOOKS_CATALOG.md` ma opisywać wszystkie hooki z `hooks/` oraz wszystkie współdzielone helpery z `utils/` i `lib/`.
   - **Zrobione 2025-12-14**:
     - Zaktualizowano `HOOKS_CATALOG.md` tak, aby obejmował `hooks/`, `utils/` oraz kluczowe moduły z `lib/`.
@@ -1162,18 +1350,21 @@
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[TOOLS-013] ImageResizeTool: dodać presety WWW (w tym OG image)**
+
   - **Zrobione 2025-12-14**:
     - Dodano presety `WWW`: `OG image` (1200×630), `Grafika do artykułu` (1600×900), `Baner strony` (1920×600).
     - Zaktualizowano `TOOLS_CATALOG.md`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[TOOLS-005] MetaTitleDescriptionTool**: wydzielić pomiar (canvas) + heurystyki statusów + snippet preview; zero zmian UI/UX
+
   - **Zrobione 2025-12-14**:
     - Wydzielono logikę analizy długości meta do `lib/tools/seo/metaLength.ts` (pomiar px, heurystyki statusów, truncation do podglądu).
     - `MetaTitleDescriptionTool` korzysta z nowych utili (UI/UX bez zmian).
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[NAV-001] Dane nawigacji: single source of truth**
+
   - Mobile i Desktop korzystają z tego samego źródła. Stworzenie nowego komponentu w którym będą wspólne linki dzięki czemu wystarczy będzie dodać kolejne lub zmienić istniejące linki w jednym pliku. Rozbicie nawigacji na mniejsze komponenty i użycie hooków, które już są lub stworzenie nowych jeśli jest to potrzebne. Zachowaj w 100% ten sam wygląd i działanie. Jeśli zauważysz opcję ulepszenia działania lub jakiś błąd poinformuj mnie o tym
   - **Zrobione 2025-12-14**:
     - Dodano SSOT: `components/shared/navigation-data/pl.ts` (nav + sekcje usług + sekcje narzędzi + linki prawne).
@@ -1181,6 +1372,7 @@
     - `npm run lint` i `npm run build` przechodzą.
 
 - ✅ **[COOKIE-001] CookieConsent: rozdzielenie odpowiedzialności**
+
   - Wydzielić storage/gtag/UI (mniej “god component”); UX bez zmian.
   - **Zrobione 2025-12-14**:
     - Wydzielono warstwę zgód do `lib/consent/*`:
@@ -1191,15 +1383,18 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[DOCS-001] `PAGES_CATALOG.md`: katalog stron (App Router)**
+
   - **Zrobione 2025-12-14**:
     - Utworzono `PAGES_CATALOG.md` z listą wszystkich route’ów z `app/` (w tym route groups i dynamic segments).
     - Dla stron opisano: cel, kluczowe komponenty oraz SEO (`metadata` + schema.org JSON-LD/microdata).
     - Uwzględniono pliki specjalne: `app/layout.tsx`, `app/error.tsx`, `app/not-found.tsx` oraz `app/(pl)/narzedzia/(tools)/layout.tsx`.
 
 - ✅ **[SEO-001] Canonical: audyt i poprawki**
+
   - Zapewnić canonical wg zasad powyżej na wszystkich stronach. **Zrobione 2025-12-14**: wszystkie canonical URLs używają formatu `https://www.arteonagency.pl/`
 
 - ✅ **[SEO-003] Schema.org: backlog**
+
   - Spisać możliwe schema i wskazać strony-kandydatów. **Zrobione 2025-12-14**
   - **Schema (propozycje) + strony-kandydaci:**
     - `Organization` + `WebSite` (global) — `app/layout.tsx`
@@ -1215,6 +1410,7 @@
     - `PrivacyPolicyPage` (`/polityka-prywatnosci`) i `TermsOfServicePage` (`/regulamin`) — do rozważenia
 
 - ✅ **[SEO-004] Schema.org: pokrycie + sanity-check**
+
   - Sprawdzić czy strony z listy [SEO-003] faktycznie emitują schema (JSON-LD lub microdata). **Zrobione 2025-12-14**
   - **Jest (OK):**
     - `app/layout.tsx` — `Organization` + `WebSite` (JSON-LD)
@@ -1245,24 +1441,28 @@
     - `/regulamin` — rozważyć `TermsOfService` zamiast `Article`
 
 - ✅ **[SEO-005] Schema: `/uslugi` (OfferCatalog / ItemList)**
+
   - Dodać schema dla strony listy usług: `CollectionPage` + `ItemList` (lub `OfferCatalog`).
   - **Zrobione 2025-12-14**:
     - Dodano JSON-LD `CollectionPage` + `ItemList` (ListItem: `url` + `name`) na `app/(pl)/uslugi/page.tsx` na podstawie listy `SERVICES` w tym pliku.
     - `npm run lint` i `npm run build` przechodzą.
 
 - ✅ **[SEO-006] Schema: `/realizacje` (CollectionPage + ItemList)**
+
   - Dodać schema listy realizacji (kolekcja + lista elementów z URL).
   - **Zrobione 2025-12-14**:
     - Dodano JSON-LD `CollectionPage` + `ItemList` (ListItem: `url` + `name`) na `app/(pl)/realizacje/page.tsx` na podstawie `data/pl/projects.json`.
     - `npm run lint` i `npm run build` przechodzą.
 
 - ✅ **[SEO-007] Schema: `/edukacja` (CollectionPage + ItemList)**
+
   - Dodać schema listy artykułów (kolekcja + lista elementów z URL).
   - **Zrobione 2025-12-14**:
     - Dodano JSON-LD `CollectionPage` + `ItemList` (ListItem: `url` + `name`) na `app/(pl)/edukacja/page.tsx` na podstawie `data/pl/blog.json`.
     - `npm run lint` i `npm run build` przechodzą.
 
 - ✅ **[SEO-008] Schema/URLs: naprawa slugów w narzędziu Image Resize**
+
   - Naprawić mismatch URL w schema i breadcrumbs dla `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`.
   - **Zrobione 2025-12-14**:
     - Poprawiono `schema.url` na `https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia` w `app/(pl)/narzedzia/(tools)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`.
@@ -1270,6 +1470,7 @@
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[SEO-009] Schema: deduplikacja `BreadcrumbList`**
+
   - Usunąć duplikaty `BreadcrumbList` na `/edukacja/[category]/[slug]` i `/realizacje/[slug]` (zostawić jedno źródło).
   - **Zrobione 2025-12-14**:
 
