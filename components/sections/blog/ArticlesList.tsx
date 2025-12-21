@@ -48,7 +48,8 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
                   ) : null}
                   {a.datePublished ? (
                     <span className="text-light text-sm" aria-label={t.publicationDate}>
-                      • {a.datePublished}
+                      <span className="mx-1">•   </span>
+                      {a.datePublished.split('-').reverse().join('.')}
                     </span>
                   ) : null}
                 </div>

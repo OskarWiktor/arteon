@@ -101,7 +101,8 @@ export function CarouselCard(props: CarouselCardProps) {
             ) : null}
             {a.datePublished ? (
               <span className="text-light text-sm" aria-label={publicationDateLabel}>
-                • {a.datePublished}
+                <span className="mx-1">•</span>
+                {a.datePublished.split('-').reverse().join('.')}
               </span>
             ) : null}
           </div>

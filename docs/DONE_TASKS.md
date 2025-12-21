@@ -2,6 +2,21 @@
 
 ## 2025-12-21
 
+- ✅ **[IDEA-069] Blog: Czym jest responsywność strony i dlaczego ma znaczenie?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, prosty).
+    - 6 sekcji H2: co to responsywność, znaczenie dla użytkowników, wpływ na SEO, jak sprawdzić, na co zwrócić uwagę, podsumowanie.
+    - 4 linki wewnętrzne (2 usługi + 1 artykuł SEO + kontakt).
+    - 4 linki zewnętrzne (StatCounter, Google Search Central, Mobile-Friendly Test, PageSpeed Insights).
+    - 5 pytań FAQ.
+    - CTA: Strony internetowe + Sklepy internetowe.
+    - Czas czytania: 6 min.
+  - Weryfikacja: nie wymagana (content-only).
+
 - ✅ **[IDEA-071] Blog: Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?**
 
   - Plik: `data/pl/blog.json`

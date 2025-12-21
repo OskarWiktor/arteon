@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czym jest responsywność strony i dlaczego ma znaczenie?**
+
+  - **Slug**: `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+  - **URL**: `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+  - **Kategorie**: `UX`, `Strony`, `SEO`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 6 min
+  - **Opis**: Artykuł o responsywności stron. Co to jest RWD, jak działa, dlaczego ma znaczenie dla użytkowników (60% ruchu z mobile), wpływ na SEO (mobile-first indexing), jak sprawdzić responsywność, typowe problemy (za małe przyciski, tekst, przewijanie poziome).
+  - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/kontakt`
+  - **Linki zewnętrzne**: StatCounter, Google Search Central, Mobile-Friendly Test, PageSpeed Insights
+  - **FAQ**: 5 pytań
+  - **CTA**: Strony internetowe + Sklepy internetowe
+
 - **Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?**
 
   - **Slug**: `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`

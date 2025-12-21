@@ -1,11 +1,99 @@
 {
   "articles": [
     {
+      "slug": "czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie",
+      "title": "Czym jest responsywność strony i dlaczego ma znaczenie?",
+      "excerpt": "Responsywność strony to jej zdolność do dopasowania się do różnych rozmiarów ekranów. W tym artykule dowiesz się, czym jest responsywność, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy Twoja strona jest responsywna.",
+      "primaryCategory": "UX",
+      "category": ["Strony", "SEO"],
+      "tags": ["responsywność", "RWD", "mobile-first", "UX", "strona mobilna", "SEO", "Google", "strona internetowa"],
+      "seo": {
+        "title": "Czym jest responsywność strony i dlaczego ma znaczenie? | Arteon",
+        "description": "Dowiedz się, czym jest responsywność strony, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy Twoja strona jest responsywna.",
+        "canonical": "https://www.arteonagency.pl/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie"
+      },
+      "cover": "/assets/blog/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-21",
+      "dateModified": "2025-12-21",
+      "readingTime": 6,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Otwierasz stronę na telefonie i wszystko jest czytelne — tekst ma odpowiedni rozmiar, przyciski są łatwe do kliknięcia, a zdjęcia dopasowują się do ekranu. To właśnie responsywność.</p><br/><p>Responsywna strona automatycznie dostosowuje swój wygląd do urządzenia, na którym jest wyświetlana — czy to smartfon, tablet czy duży monitor. Dzięki temu użytkownik nie musi powiększać treści ani przewijać strony w poziomie, żeby zobaczyć całą zawartość.</p><br/><p>W tym artykule dowiesz się, czym dokładnie jest responsywność, dlaczego ma znaczenie dla użytkowników i pozycji w Google oraz jak sprawdzić, czy Twoja strona jest responsywna.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest responsywność strony?</h2><p><strong>Responsywność</strong> (ang. Responsive Web Design, RWD) to podejście do projektowania stron, w którym układ i elementy strony automatycznie dopasowują się do rozmiaru ekranu użytkownika.</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Strona responsywna używa elastycznych siatek, proporcjonalnych obrazów i reguł CSS (tzw. media queries), które określają, jak strona ma wyglądać na różnych urządzeniach. Na przykład:</p><br/><ul class='list-disc ml-5'><li><strong>Na telefonie</strong> — menu zamienia się w hamburger (trzy poziome kreski), kolumny układają się jedna pod drugą</li><li><strong>Na tablecie</strong> — elementy mają więcej przestrzeni, przyciski są większe, żeby można je było wygodnie kliknąć palcem</li><li><strong>Na komputerze</strong> — pełny układ z wieloma kolumnami i szczegółową nawigacją</li></ul><br/><p>Strona responsywna to jedno rozwiązanie dla wszystkich urządzeń. Nie trzeba tworzyć osobnej wersji mobilnej (np. m.example.pl) ani aplikacji — ta sama strona automatycznie dostosowuje się do telefonu, tabletu i komputera.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego responsywność ma znaczenie dla użytkowników?</h2><p>Ponad połowa ruchu w internecie pochodzi z urządzeń mobilnych. Według danych <a class='inline-link' href='https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet' target='_blank' rel='noopener noreferrer'>StatCounter</a>, w 2024 roku telefony odpowiadały za około 60% globalnego ruchu internetowego.</p><br/><p><strong>Co to oznacza dla Twojej strony?</strong></p><br/><p>Nawet jeśli strona technicznie działa na telefonie, może mieć problemy z responsywnością — na przykład za małe przyciski, tekst wymagający powiększania, elementy wychodzące poza ekran lub wolne ładowanie. Takie niedociągnięcia frustrują użytkowników i zniechęcają do dalszego korzystania ze strony.</p><br/><p><strong>Konsekwencje słabej responsywności:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wysoki współczynnik odrzuceń</strong> — użytkownicy opuszczają stronę po kilku sekundach</li><li><strong>Mniejsza liczba konwersji</strong> — trudno wypełnić formularz lub dokonać zakupu, gdy przyciski są za małe</li><li><strong>Słabsze wrażenie o marce</strong> — niedopracowana strona mobilna może sugerować, że firma nie dba o szczegóły</li></ul><br/><p>Dla restauracji, gabinetu lekarskiego czy biura nieruchomości to może oznaczać utratę klientów, którzy szukają informacji w drodze — na telefonie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak responsywność wpływa na SEO i pozycję w Google?</h2><p>Google od 2015 roku oficjalnie faworyzuje strony przyjazne urządzeniom mobilnym. Od 2021 roku stosuje tzw. mobile-first indexing — czyli ocenia stronę przede wszystkim na podstawie jej wersji mobilnej.</p><br/><p><strong>Co to oznacza w praktyce?</strong></p><br/><p>Według dokumentacji <a class='inline-link' href='https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing' target='_blank' rel='noopener noreferrer'>Google Search Central</a>, robot Google (Googlebot) przegląda i indeksuje stronę w wersji mobilnej. Jeśli ta wersja jest słabsza niż desktopowa — masz mniej treści, wolniej się ładuje lub jest trudna w obsłudze — może to wpłynąć na pozycję w wynikach wyszukiwania.</p><br/><p><strong>Dodatkowe korzyści SEO z responsywności:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Jeden URL dla wszystkich urządzeń</strong> — łatwiejsze zarządzanie linkami i sygnałami SEO</li><li><strong>Niższy współczynnik odrzuceń</strong> — Google traktuje to jako sygnał jakości</li><li><strong>Szybsze ładowanie</strong> — responsywne strony często są lepiej zoptymalizowane</li><li><strong>Lepsze Core Web Vitals</strong> — metryki wydajności, które Google uwzględnia w rankingu</li></ul><br/><p>Jeśli Twoja strona <a class='inline-link' href='/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic'>nie wyświetla się w Google</a> tak wysoko, jak byś chciał, brak responsywności może być jedną z przyczyn.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak sprawdzić, czy strona jest responsywna?</h2><p>Sprawdzenie responsywności zajmuje kilka minut i nie wymaga wiedzy technicznej.</p><br/><p><strong>1. Test na własnym telefonie</strong></p><br/><p>Najprostszy sposób — otwórz swoją stronę na telefonie i sprawdź:</p><br/><ul class='list-disc ml-5'><li>Czy tekst jest czytelny bez powiększania?</li><li>Czy przyciski są łatwe do kliknięcia palcem?</li><li>Czy nie musisz przewijać w poziomie?</li><li>Czy menu działa poprawnie?</li></ul><br/><p><strong>2. Narzędzie Google do testowania</strong></p><br/><p>Skorzystaj z <a class='inline-link' href='https://search.google.com/test/mobile-friendly' target='_blank' rel='noopener noreferrer'>Mobile-Friendly Test</a> od Google. Wpisz adres strony, a narzędzie powie Ci, czy strona jest przyjazna urządzeniom mobilnym i wskaże ewentualne problemy.</p><br/><p><strong>3. Narzędzia deweloperskie w przeglądarce</strong></p><br/><p>W Chrome, Firefox lub Edge możesz symulować różne urządzenia:</p><br/><ul class='list-disc ml-5'><li>Kliknij prawym przyciskiem na stronie → Zbadaj (Inspect)</li><li>Kliknij ikonę urządzenia mobilnego (Toggle device toolbar)</li><li>Wybierz różne urządzenia z listy (iPhone, Galaxy, iPad itp.)</li></ul><br/><p><strong>4. PageSpeed Insights</strong></p><br/><p><a class='inline-link' href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> pokazuje osobne wyniki dla wersji mobilnej i desktopowej. Jeśli wynik mobilny jest znacznie niższy — to sygnał, że strona wymaga optymalizacji.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Na co zwrócić uwagę przy responsywności?</h2><p><strong>Zbyt małe elementy dotykowe</strong></p><br/><p>Przyciski i linki powinny mieć co najmniej 44×44 piksele, żeby można je było wygodnie kliknąć palcem. Zbyt małe elementy prowadzą do przypadkowych kliknięć i frustracji użytkowników.</p><br/><p><strong>Tekst wymagający powiększania</strong></p><br/><p>Podstawowy rozmiar czcionki na mobile powinien wynosić co najmniej 16 pikseli. Mniejszy tekst wymusza powiększanie, co psuje doświadczenie użytkownika.</p><br/><p><strong>Elementy wychodzące poza ekran</strong></p><br/><p>Szerokie tabele, obrazy bez określonej maksymalnej szerokości lub elementy z ustalonymi pikselowymi wymiarami mogą powodować przewijanie w poziomie.</p><br/><p><strong>Wolne ładowanie na mobile</strong></p><br/><p>Użytkownicy mobilni często korzystają z wolniejszego internetu (3G, słaby zasięg LTE). Strona powinna ładować się szybko nawet w takich warunkach — optymalizacja obrazów i minimalizacja kodu są kluczowe.</p><br/><p><strong>Niedziałające menu mobilne</strong></p><br/><p>Menu hamburger powinno działać płynnie, być łatwe do otwarcia i zamknięcia, a elementy menu powinny być wystarczająco duże do kliknięcia.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Responsywność strony to dziś standard — nie opcja. Ponad połowa użytkowników przegląda internet na telefonach, a Google ocenia stronę przede wszystkim w wersji mobilnej.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Responsywność = dopasowanie do ekranu</strong> — strona automatycznie dostosowuje się do telefonu, tabletu i komputera</li><li><strong>Brak responsywności odstrasza użytkowników</strong> — nieczytelna strona oznacza utraconych klientów</li><li><strong>Google preferuje strony mobilne</strong> — mobile-first indexing od 2021 roku</li><li><strong>Łatwo to sprawdzić</strong> — test na telefonie lub Mobile-Friendly Test od Google</li><li><strong>Typowe problemy</strong> — za małe przyciski, za mały tekst, przewijanie w poziomie</li></ul><br/><p>Jeśli Twoja strona nie jest responsywna lub chcesz ją zoptymalizować pod urządzenia mobilne, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>. Tworzymy <a class='inline-link' href='/uslugi/strony-internetowe'>strony internetowe</a> i <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepy</a>, które działają płynnie na każdym urządzeniu.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz responsywnej strony?",
+        "description": "Tworzymy strony internetowe i sklepy, które wyglądają świetnie i działają płynnie na każdym urządzeniu — od telefonu po duży monitor.",
+        "btnOne": "Strony internetowe",
+        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnTwo": "Sklepy internetowe",
+        "btnTwoLink": "/uslugi/sklepy-internetowe",
+        "backgroundImage": "/assets/blog/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy każda strona musi być responsywna?",
+          "answer": "W praktyce tak. Ponad połowa ruchu internetowego pochodzi z urządzeń mobilnych, a Google ocenia stronę przede wszystkim w wersji mobilnej. Strona bez responsywności traci użytkowników i pozycję w wyszukiwarce."
+        },
+        {
+          "question": "Jak sprawdzić, czy moja strona jest responsywna?",
+          "answer": "Najprostszy sposób to otworzyć stronę na telefonie i sprawdzić, czy tekst jest czytelny, przyciski łatwe do kliknięcia i nie trzeba przewijać w poziomie. Możesz też użyć narzędzia Mobile-Friendly Test od Google: https://search.google.com/test/mobile-friendly"
+        },
+        {
+          "question": "Czy responsywność wpływa na pozycję w Google?",
+          "answer": "Tak. Od 2021 roku Google stosuje mobile-first indexing — ocenia stronę przede wszystkim na podstawie wersji mobilnej. Strona nieresponsywna może mieć niższą pozycję w wynikach wyszukiwania."
+        },
+        {
+          "question": "Ile kosztuje przerobienie strony na responsywną?",
+          "answer": "Koszt zależy od złożoności strony i technologii, w której została zbudowana. Czasem wystarczą poprawki CSS, czasem potrzebna jest przebudowa całego szablonu. Skontaktuj się z nami po wycenę: https://www.arteonagency.pl/kontakt"
+        },
+        {
+          "question": "Czy responsywność to samo co wersja mobilna?",
+          "answer": "Nie do końca. Osobna wersja mobilna (np. m.example.pl) to oddzielna strona dla telefonów. Responsywność oznacza, że jedna strona automatycznie dopasowuje się do wszystkich urządzeń. Google zaleca responsywność jako lepsze rozwiązanie."
+        }
+      ]
+    },
+
+    {
       "slug": "czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje",
       "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
       "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. W tym artykule dowiesz się, czym jest SSL, jak wpływa na zaufanie użytkowników i SEO oraz jak sprawdzić, czy Twoja strona go ma.",
       "primaryCategory": "Bezpieczeństwo",
-      "category": ["SEO"],
+      "category": ["SEO", "Strony"],
       "tags": ["SSL", "certyfikat SSL", "HTTPS", "bezpieczeństwo strony", "szyfrowanie", "SEO", "zaufanie użytkowników", "strona internetowa"],
       "seo": {
         "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje? | Arteon",
@@ -16,7 +104,7 @@
       "author": { "name": "Arteon" },
       "datePublished": "2025-12-21",
       "dateModified": "2025-12-21",
-      "readingTime": 6,
+      "readingTime": 7,
       "contentBlocks": [
         {
           "type": "richtext",
@@ -98,7 +186,7 @@
       "title": "Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?",
       "excerpt": "Meta title i description to krótkie teksty, które pojawiają się w wynikach wyszukiwania Google. W tym artykule dowiesz się, czym są, dlaczego mają znaczenie i jak je napisać, żeby zwiększyć klikalność.",
       "primaryCategory": "SEO",
-      "category": ["Treści", "Widoczność"],
+      "category": ["Treści", "Strony", "Widoczność"],
       "tags": ["meta title", "meta description", "SEO", "wyniki wyszukiwania", "Google", "klikalność", "CTR", "optymalizacja"],
       "seo": {
         "title": "Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google? | Arteon",
@@ -109,7 +197,7 @@
       "author": { "name": "Arteon" },
       "datePublished": "2025-12-21",
       "dateModified": "2025-12-21",
-      "readingTime": 6,
+      "readingTime": 7,
       "contentBlocks": [
         {
           "type": "richtext",
@@ -207,7 +295,7 @@
       "author": { "name": "Arteon" },
       "datePublished": "2025-12-21",
       "dateModified": "2025-12-21",
-      "readingTime": 7,
+      "readingTime": 6,
       "contentBlocks": [
         {
           "type": "richtext",
@@ -300,7 +388,7 @@
       "author": { "name": "Arteon" },
       "datePublished": "2025-12-21",
       "dateModified": "2025-12-21",
-      "readingTime": 6,
+      "readingTime": 7,
       "contentBlocks": [
         {
           "type": "richtext",
@@ -447,7 +535,7 @@
       "title": "Jak dobrać kolory do strony internetowej lub sklepu?",
       "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Konkretne kroki, dane z badań i narzędzia, które pomogą Ci wybrać paletę kolorów wspierającą cele biznesowe.",
       "primaryCategory": "Grafika",
-      "category": ["Branding", "UX"],
+      "category": ["Branding", "UX", "Strony"],
       "tags": ["kolory na stronie", "paleta kolorów", "koło barw", "zasada 60-30-10", "kontrast kolorów", "identyfikacja wizualna", "branding", "UX design", "konwersja"],
       "seo": {
         "title": "Jak dobrać kolory do strony internetowej lub sklepu? | Arteon",
@@ -595,7 +683,7 @@
       "title": "Jak przygotować sklep internetowy do pozycjonowania?",
       "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Zobacz, jak przygotować strukturę, treści i techniczne podstawy sklepu, aby działania SEO miały realne szanse przełożyć się na widoczność i sprzedaż.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność", "Treści"],
+      "category": ["Sklepy", "Widoczność", "Treści"],
       "tags": [
         "pozycjonowanie sklepu",
         "seo e-commerce",
@@ -814,12 +902,13 @@
         }
       ]
     },
+
     {
       "slug": "favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie",
       "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
       "excerpt": "Favicon to mała ikonka przy nazwie Twojej strony w przeglądarce. Dowiedz się, jakie pliki są potrzebne, skąd biorą się problemy i jak przygotować cały zestaw w kilka minut.",
       "primaryCategory": "Zdjęcia",
-      "category": ["Grafika", "SEO"],
+      "category": ["Grafika", "Strony", "SEO"],
       "tags": ["favicon", "ikona strony", "apple-touch-icon", "pwa", "lighthouse", "manifest.json", "przeglądarki", "seo", "web Grafika"],
       "seo": {
         "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie? | Arteon",
@@ -915,12 +1004,13 @@
         }
       ]
     },
+
     {
       "slug": "faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony",
       "title": "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?",
       "excerpt": "Dobrze zaplanowane FAQ skraca drogę do decyzji, porządkuje informacje i pomaga przechwytywać ruch z długich zapytań. Zobacz, skąd brać pytania, jak je grupować, jak pisać odpowiedzi oraz kiedy warto stosować FAQ schema.",
       "primaryCategory": "SEO",
-      "category": ["Treści", "Widoczność"],
+      "category": ["Treści", "Strony", "Widoczność"],
       "tags": ["faq", "faq seo", "pytania i odpowiedzi", "schema faq", "linkowanie wewnętrzne", "long tail", "copywriting", "google search console", "struktura treści", "konwersja"],
       "seo": {
         "title": "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony? | Arteon",
@@ -1131,7 +1221,7 @@
       "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
       "excerpt": "Pozycjonowanie strony firmowej w 2025 roku wymaga czasu i konsekwentnych działań, ale przy dobrze ułożonej strategii pierwsze realne efekty możesz zobaczyć już po kilku tygodniach. Zobacz, od czego zależy tempo wyników SEO i jak wygląda realistyczna oś czasu.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność"],
+      "category": ["Widoczność", "Strony"],
       "seo": {
         "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
         "description": "Sprawdź, ile czasu realnie trwa pozycjonowanie strony firmowej w 2025 roku, kiedy widać pierwsze efekty i jakie czynniki najbardziej wpływają na tempo wyników SEO.",
@@ -1224,7 +1314,7 @@
       "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
       "excerpt": "Lokalne firmy, które prowadzą blog na swojej stronie internetowej, zdobywają więcej ruchu z Google, częściej pojawiają się w Google Maps i obniżają koszt pozyskania klienta. Zobacz, jak blog pomaga małym biznesom rosnąć bez płatnych reklam.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność", "Treści"],
+      "category": ["Treści", "Strony"],
       "seo": {
         "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
         "description": "Sprawdź, dlaczego blog na stronie zwiększa widoczność w Google, Google Maps i obniża koszt pozyskania klienta",
@@ -1292,7 +1382,7 @@
       "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
       "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Jeśli nie zadbasz o ich format, rozmiar i kompresję, Twoja strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie Twoją stronę nie sprawdzając oferty.",
       "primaryCategory": "Zdjęcia",
-      "category": ["SEO"],
+      "category": ["SEO", "Strony"],
       "seo": {
         "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
         "description": "Dowiedz się, jak zoptymalizować zdjęcia na stronę WWW, aby strona była szybsza, lżejsza i lepiej oceniana przez Google",
@@ -1405,12 +1495,13 @@
         }
       ]
     },
+
     {
       "slug": "jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google",
       "title": "Jak pisać treści na stronie internetowej, aby być wyżej w wyszukiwarce Google?",
       "excerpt": "Dowiedz się, jak pisać treści na stronę internetową, które przyciągają klientów i zajmują wyższe pozycje w Google. Praktyczne zasady SEO i przykłady.",
       "primaryCategory": "SEO",
-      "category": ["Treści"],
+      "category": ["Treści", "Strony"],
       "tags": [
         "seo copywriting",
         "treści seo",
@@ -1758,7 +1849,7 @@
       "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",
       "excerpt": "Twoja strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania Google. Kompletny przewodnik.",
       "primaryCategory": "SEO",
-      "category": ["Widoczność"],
+      "category": ["Widoczność", "Strony"],
       "tags": ["google", "indeksacja", "google search console", "pozycjonowanie", "robot google", "widoczność strony", "sitemap", "plik robots.txt", "algorytm google", "strona internetowa"],
       "seo": {
         "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",

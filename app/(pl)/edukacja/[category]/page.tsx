@@ -59,6 +59,31 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
     metaDescription: 'Artykuły o psychologii decyzji i zachowaniach klientów.',
     openGraphDescription: 'Artykuły o psychologii decyzji i zachowaniach klientów.',
   },
+  strony: {
+    heroDescription: 'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji.',
+    metaDescription: 'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji.',
+    openGraphDescription: 'Artykuły o stronach internetowych, ich tworzeniu i optymalizacji.',
+  },
+  sklepy: {
+    heroDescription: 'Artykuły o sklepach internetowych i e-commerce.',
+    metaDescription: 'Artykuły o sklepach internetowych i e-commerce.',
+    openGraphDescription: 'Artykuły o sklepach internetowych i e-commerce.',
+  },
+  ux: {
+    heroDescription: 'Artykuły o użyteczności i doświadczeniach użytkowników.',
+    metaDescription: 'Artykuły o użyteczności i doświadczeniach użytkowników.',
+    openGraphDescription: 'Artykuły o użyteczności i doświadczeniach użytkowników.',
+  },
+  bezpieczenstwo: {
+    heroDescription: 'Artykuły o bezpieczeństwie stron i danych w internecie.',
+    metaDescription: 'Artykuły o bezpieczeństwie stron i danych w internecie.',
+    openGraphDescription: 'Artykuły o bezpieczeństwie stron i danych w internecie.',
+  },
+  druk: {
+    heroDescription: 'Artykuły o materiałach drukowanych i poligrafii.',
+    metaDescription: 'Artykuły o materiałach drukowanych i poligrafii.',
+    openGraphDescription: 'Artykuły o materiałach drukowanych i poligrafii.',
+  },
 };
 
 export const dynamicParams = false;
