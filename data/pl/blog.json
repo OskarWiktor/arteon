@@ -1,6 +1,99 @@
 {
   "articles": [
     {
+      "slug": "czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje",
+      "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
+      "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. W tym artykule dowiesz się, czym jest SSL, jak wpływa na zaufanie użytkowników i SEO oraz jak sprawdzić, czy Twoja strona go ma.",
+      "primaryCategory": "Bezpieczeństwo",
+      "category": ["SEO"],
+      "tags": ["SSL", "certyfikat SSL", "HTTPS", "bezpieczeństwo strony", "szyfrowanie", "SEO", "zaufanie użytkowników", "strona internetowa"],
+      "seo": {
+        "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje? | Arteon",
+        "description": "Dowiedz się, czym jest certyfikat SSL, jak wpływa na bezpieczeństwo i SEO oraz jak sprawdzić, czy Twoja strona go ma.",
+        "canonical": "https://www.arteonagency.pl/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje"
+      },
+      "cover": "/assets/blog/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-21",
+      "dateModified": "2025-12-21",
+      "readingTime": 6,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Gdy wchodzisz na stronę internetową, w pasku adresu przeglądarki widzisz albo kłódkę, albo ostrzeżenie. Ta kłódka oznacza, że strona ma certyfikat SSL — czyli że połączenie między Twoją przeglądarką a serwerem jest szyfrowane.</p><br/><p>SSL (Secure Sockets Layer) to technologia, która chroni dane przesyłane przez internet. Dzięki niej informacje, które wpisujesz na stronie — hasła, dane kontaktowe, numery kart — nie mogą zostać przechwycone przez osoby trzecie.</p><br/><p>W tym artykule dowiesz się, czym dokładnie jest certyfikat SSL, dlaczego ma znaczenie dla bezpieczeństwa i zaufania użytkowników oraz jak sprawdzić, czy Twoja strona go posiada.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest certyfikat SSL i jak działa?</h2><p><strong>Certyfikat SSL</strong> to cyfrowy dokument, który potwierdza tożsamość strony internetowej i umożliwia szyfrowane połączenie. Gdy strona ma SSL, jej adres zaczyna się od <strong>https://</strong> zamiast http:// — ta dodatkowa litera s oznacza secure (bezpieczne).</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Gdy wchodzisz na stronę z SSL, Twoja przeglądarka i serwer wymieniają się kluczami szyfrującymi. Od tego momentu wszystkie dane przesyłane między Tobą a stroną są zaszyfrowane — nawet jeśli ktoś przechwyci tę komunikację, zobaczy tylko nieczytelny ciąg znaków.</p><br/><p>Pomyśl o tym jak o zamkniętej kopercie. Bez SSL dane są jak kartka pocztowa — każdy po drodze może je przeczytać. Z SSL dane są zamknięte w kopercie, którą może otworzyć tylko adresat.</p><br/><p><strong>Gdzie widzisz, że strona ma SSL?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Kłódka w pasku adresu</strong> — symbol zamkniętej kłódki obok adresu strony</li><li><strong>HTTPS w adresie</strong> — adres zaczyna się od https:// zamiast http://</li><li><strong>Informacje o certyfikacie</strong> — po kliknięciu w kłódkę zobaczysz szczegóły certyfikatu</li></ul>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego SSL jest ważny dla bezpieczeństwa i zaufania użytkowników?</h2><p>Certyfikat SSL chroni dane użytkowników przed przechwyceniem. To szczególnie istotne w kilku sytuacjach:</p><br/><p><strong>1. Formularze kontaktowe i logowanie</strong></p><br/><p>Gdy ktoś wypełnia formularz na stronie — podaje imię, e-mail, telefon lub hasło — te dane są przesyłane do serwera. Bez SSL ktoś mógłby je przechwycić w drodze. Z SSL są zaszyfrowane i bezpieczne.</p><br/><p><strong>2. Sklepy internetowe i płatności</strong></p><br/><p>Każdy <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklep internetowy</a> musi mieć SSL. Bez niego operatorzy płatności (jak PayU, Przelewy24, Stripe) nie pozwolą na integrację systemu płatności. To wymóg bezpieczeństwa — dane kart płatniczych muszą być szyfrowane.</p><br/><p><strong>3. Zaufanie użytkowników</strong></p><br/><p>Przeglądarki (Chrome, Firefox, Safari) wyraźnie oznaczają strony bez SSL jako niezabezpieczone. Użytkownik widzi ostrzeżenie, a czasem przeglądarka w ogóle blokuje wejście na stronę. Według danych <a class='inline-link' href='https://www.globalsign.com/en/blog/what-happens-to-unsecured-website' target='_blank' rel='noopener noreferrer'>GlobalSign</a>, ponad 80% użytkowników opuszcza stronę, gdy widzą ostrzeżenie o braku bezpieczeństwa.</p><br/><p>Dla kancelarii prawnej, gabinetu lekarskiego czy biura nieruchomości to może oznaczać utratę potencjalnych klientów — zanim jeszcze zobaczą ofertę.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak SSL wpływa na SEO i pozycję w Google?</h2><p>Google od 2014 roku oficjalnie traktuje HTTPS jako czynnik rankingowy. Strony z certyfikatem SSL mają przewagę w wynikach wyszukiwania nad stronami bez niego.</p><br/><p><strong>Co to oznacza w praktyce?</strong></p><br/><p>Według dokumentacji <a class='inline-link' href='https://developers.google.com/search/docs/fundamentals/security' target='_blank' rel='noopener noreferrer'>Google Search Central</a>, bezpieczeństwo strony jest jednym z sygnałów jakości. Nie jest to najważniejszy czynnik (treść i linki mają większą wagę), ale przy dwóch podobnych stronach — ta z HTTPS może wyświetlić się wyżej.</p><br/><p><strong>Dodatkowe korzyści SEO:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Niższy współczynnik odrzuceń</strong> — użytkownicy nie uciekają ze strony widząc ostrzeżenie</li><li><strong>Lepsze doświadczenie użytkownika</strong> — Google mierzy, jak użytkownicy zachowują się na stronie</li><li><strong>Dostęp do pełnych danych w Analytics</strong> — ruch z HTTPS na HTTP traci informacje o źródle</li></ul><br/><p>Jeśli Twoja strona <a class='inline-link' href='/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic'>nie wyświetla się w Google</a> tak, jak byś chciał, brak SSL może być jedną z przyczyn.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Rodzaje certyfikatów SSL — który wybrać?</h2><p>Istnieje kilka rodzajów certyfikatów SSL, które różnią się poziomem weryfikacji i ceną. Oto najważniejsze:</p><br/><p><strong>DV (Domain Validation) — podstawowa weryfikacja domeny</strong></p><br/><p>Najprostszy i najtańszy rodzaj certyfikatu. Potwierdza tylko, że masz kontrolę nad domeną. Wystarczy odpowiedzieć na e-mail weryfikacyjny lub dodać specjalny rekord DNS. Wydanie trwa minuty.</p><br/><p>Dla kogo: strony firmowe, blogi, portfolio, małe sklepy.</p><br/><p><strong>OV (Organization Validation) — weryfikacja organizacji</strong></p><br/><p>Wymaga potwierdzenia, że firma istnieje — weryfikowane są dane rejestrowe. Trwa kilka dni. W szczegółach certyfikatu widoczna jest nazwa firmy.</p><br/><p>Dla kogo: firmy, które chcą pokazać, że są zweryfikowane (np. biura rachunkowe, kancelarie).</p><br/><p><strong>EV (Extended Validation) — rozszerzona weryfikacja</strong></p><br/><p>Najbardziej rygorystyczna weryfikacja. Firma musi przejść szczegółową kontrolę tożsamości. Kiedyś przeglądarki pokazywały zielony pasek z nazwą firmy — dziś to już nie działa, ale certyfikat EV nadal daje najwyższy poziom zaufania.</p><br/><p>Dla kogo: banki, duże sklepy, instytucje finansowe.</p><br/><p><strong>Który wybrać?</strong></p><br/><p>Dla większości <a class='inline-link' href='/uslugi/strony-internetowe'>stron internetowych</a> wystarczy certyfikat DV. Jest tani (często darmowy, np. Let's Encrypt) i zapewnia takie samo szyfrowanie jak droższe opcje. Różnica polega tylko na poziomie weryfikacji właściciela.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak sprawdzić, czy strona ma SSL?</h2><p>Sprawdzenie, czy strona ma certyfikat SSL, zajmuje kilka sekund:</p><br/><p><strong>1. Sprawdź adres strony</strong></p><br/><p>Wejdź na swoją stronę i popatrz na pasek adresu. Jeśli adres zaczyna się od <strong>https://</strong> i widzisz kłódkę — strona ma SSL.</p><br/><p><strong>2. Kliknij w kłódkę</strong></p><br/><p>Po kliknięciu zobaczysz informacje o certyfikacie: kto go wydał, do kiedy jest ważny i dla jakiej domeny został wystawiony.</p><br/><p><strong>3. Użyj narzędzia online</strong></p><br/><p>Możesz też skorzystać z darmowych narzędzi, które szczegółowo sprawdzą konfigurację SSL:</p><br/><ul class='list-disc ml-5'><li><a class='inline-link' href='https://www.ssllabs.com/ssltest/' target='_blank' rel='noopener noreferrer'>SSL Labs</a> — szczegółowy raport o konfiguracji SSL</li><li><a class='inline-link' href='https://www.sslshopper.com/ssl-checker.html' target='_blank' rel='noopener noreferrer'>SSL Shopper</a> — szybkie sprawdzenie certyfikatu</li></ul><br/><p><strong>Co zrobić, jeśli strona nie ma SSL?</strong></p><br/><p>Jeśli Twoja strona nie ma certyfikatu SSL, warto to zmienić jak najszybciej. Większość firm hostingowych oferuje darmowe certyfikaty Let's Encrypt, które można aktywować w panelu administracyjnym. Jeśli nie wiesz, jak to zrobić, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a> — pomożemy skonfigurować SSL i upewnić się, że wszystko działa poprawnie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Na co zwrócić uwagę przy SSL?</h2><p><strong>Ważność certyfikatu</strong></p><br/><p>Certyfikaty SSL mają datę ważności — zwykle 1 rok (dawniej do 3 lat). Po wygaśnięciu strona zaczyna wyświetlać ostrzeżenie. Warto ustawić przypomnienie o odnowieniu lub skorzystać z automatycznego odnawiania (np. Let's Encrypt odnawia się automatycznie co 90 dni).</p><br/><p><strong>Przekierowanie HTTP na HTTPS</strong></p><br/><p>Po instalacji SSL upewnij się, że strona automatycznie przekierowuje z http:// na https://. Inaczej użytkownicy wchodzący przez stare linki zobaczą niezabezpieczoną wersję.</p><br/><p><strong>Mieszana zawartość (mixed content)</strong></p><br/><p>Jeśli strona ma HTTPS, ale ładuje obrazy lub skrypty z HTTP, przeglądarka może zablokować te elementy lub wyświetlić ostrzeżenie. Wszystkie zasoby na stronie powinny być ładowane przez HTTPS.</p><br/><p><strong>Certyfikat dla właściwej domeny</strong></p><br/><p>Certyfikat musi być wystawiony dla dokładnie tej domeny, której używasz. Certyfikat dla example.pl nie zadziała dla www.example.pl (chyba że jest to certyfikat wielodomenowy lub wildcard).</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Certyfikat SSL to dziś standard — nie opcja. Chroni dane użytkowników, buduje zaufanie i wpływa na pozycję strony w Google.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>SSL szyfruje połączenie</strong> — dane przesyłane między przeglądarką a serwerem są chronione</li><li><strong>Brak SSL odstrasza użytkowników</strong> — przeglądarki wyświetlają ostrzeżenia o niezabezpieczonej stronie</li><li><strong>Google preferuje HTTPS</strong> — strony z SSL mają przewagę w wynikach wyszukiwania</li><li><strong>Dla większości stron wystarczy darmowy certyfikat DV</strong> — zapewnia takie samo szyfrowanie jak płatne opcje</li><li><strong>Certyfikat trzeba odnawiać</strong> — wygasły certyfikat to ostrzeżenie dla użytkowników</li></ul><br/><p>Jeśli Twoja strona nie ma SSL lub chcesz upewnić się, że wszystko jest skonfigurowane poprawnie, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>. Zajmujemy się <a class='inline-link' href='/uslugi/strony-internetowe'>tworzeniem stron internetowych</a> i <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepów</a>, które są bezpieczne i zgodne z najlepszymi praktykami.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz bezpiecznej strony z certyfikatem SSL?",
+        "description": "Tworzymy strony internetowe i sklepy, które są bezpieczne, szybkie i zgodne z najlepszymi praktykami. Certyfikat SSL to dla nas standard.",
+        "btnOne": "Strony internetowe",
+        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnTwo": "Sklepy internetowe",
+        "btnTwoLink": "/uslugi/sklepy-internetowe",
+        "backgroundImage": "/assets/blog/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy certyfikat SSL jest obowiązkowy?",
+          "answer": "Formalnie nie jest obowiązkowy, ale w praktyce tak. Przeglądarki oznaczają strony bez SSL jako niezabezpieczone, co odstrasza użytkowników. Google preferuje strony z HTTPS. Dla sklepów internetowych SSL jest wymagany przez operatorów płatności."
+        },
+        {
+          "question": "Ile kosztuje certyfikat SSL?",
+          "answer": "Podstawowe certyfikaty DV są często darmowe (np. Let's Encrypt). Płatne certyfikaty DV kosztują od kilkudziesięciu złotych rocznie. Certyfikaty OV i EV są droższe — od kilkuset do kilku tysięcy złotych rocznie, w zależności od dostawcy i poziomu weryfikacji."
+        },
+        {
+          "question": "Czy darmowy certyfikat SSL jest gorszy od płatnego?",
+          "answer": "Pod względem szyfrowania — nie. Darmowy certyfikat Let's Encrypt zapewnia takie samo szyfrowanie jak płatne certyfikaty DV. Różnica polega na poziomie weryfikacji właściciela i wsparciu technicznym. Dla większości stron firmowych darmowy certyfikat jest wystarczający."
+        },
+        {
+          "question": "Co się stanie, gdy certyfikat SSL wygaśnie?",
+          "answer": "Przeglądarka wyświetli ostrzeżenie, że połączenie nie jest bezpieczne. Użytkownicy zobaczą komunikat o błędzie i prawdopodobnie opuszczą stronę. Warto ustawić przypomnienie o odnowieniu lub korzystać z automatycznego odnawiania."
+        },
+        {
+          "question": "Jak zainstalować certyfikat SSL na swojej stronie?",
+          "answer": "Sposób instalacji zależy od hostingu. Większość firm hostingowych oferuje darmowe certyfikaty Let's Encrypt z automatyczną instalacją w panelu administracyjnym. Jeśli nie wiesz, jak to zrobić, skontaktuj się z nami — pomożemy skonfigurować SSL. Link do kontaktu: https://www.arteonagency.pl/kontakt"
+        }
+      ]
+    },
+
+    {
       "slug": "meta-title-i-description-jak-je-napisac",
       "title": "Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?",
       "excerpt": "Meta title i description to krótkie teksty, które pojawiają się w wynikach wyszukiwania Google. W tym artykule dowiesz się, czym są, dlaczego mają znaczenie i jak je napisać, żeby zwiększyć klikalność.",

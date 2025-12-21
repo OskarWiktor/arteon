@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?**
+
+  - **Slug**: `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+  - **URL**: `/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+  - **Kategorie**: `Strony`, `Bezpieczeństwo`, `SEO`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 6 min
+  - **Opis**: Artykuł o certyfikatach SSL. Co to jest SSL i jak działa (szyfrowanie, HTTPS), dlaczego jest ważny dla bezpieczeństwa i zaufania użytkowników, wpływ na SEO i pozycję w Google, rodzaje certyfikatów (DV, OV, EV), jak sprawdzić czy strona ma SSL.
+  - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/kontakt`
+  - **Linki zewnętrzne**: GlobalSign, Google Search Central, SSL Labs, SSL Shopper
+  - **FAQ**: 5 pytań
+  - **CTA**: Strony internetowe + Sklepy internetowe
+
 - **Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?**
 
   - **Slug**: `meta-title-i-description-jak-je-napisac`

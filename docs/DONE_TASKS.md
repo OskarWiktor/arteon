@@ -2,6 +2,21 @@
 
 ## 2025-12-21
 
+- ✅ **[IDEA-071] Blog: Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, prosty).
+    - 7 sekcji H2: co to SSL, bezpieczeństwo i zaufanie, wpływ na SEO, rodzaje certyfikatów, jak sprawdzić, na co zwrócić uwagę, podsumowanie.
+    - 4 linki wewnętrzne (2 usługi + 1 artykuł SEO + kontakt).
+    - 4 linki zewnętrzne (GlobalSign, Google Search Central, SSL Labs, SSL Shopper).
+    - 5 pytań FAQ.
+    - CTA: Strony internetowe + Sklepy internetowe.
+    - Czas czytania: 6 min.
+  - Weryfikacja: nie wymagana (content-only).
+
 - ✅ **[IDEA-064] Blog: Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?**
 
   - Plik: `data/pl/blog.json`

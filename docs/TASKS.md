@@ -1072,3 +1072,258 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Min. 4 linki wewnętrzne + CTA do usługi.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-067] Blog: Jak założyć i zoptymalizować profil Google Moja Firma?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster lokalnego SEO + kierować do usług pozycjonowania.
+    - Profil Google Business Profile to podstawa widoczności lokalnej — bardzo popularne zapytanie.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — czym jest Google Moja Firma i dlaczego jest ważne dla lokalnych firm
+    - H2: Jak założyć profil Google Moja Firma krok po kroku?
+    - H2: Jakie informacje warto uzupełnić, żeby wyróżnić się w mapach?
+    - H2: Jak zdobywać i odpowiadać na opinie klientów?
+    - H2: Najczęstsze błędy przy prowadzeniu profilu
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+    - `/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
+  - SEO:
+    - URL/slug: `/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+    - `metadata.title`: `Jak założyć i zoptymalizować profil Google Moja Firma? | Arteon`
+    - `metadata.description`: `Dowiedz się, jak założyć profil Google Moja Firma, jakie informacje uzupełnić i jak zdobywać opinie, żeby wyróżnić się w mapach Google.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-068] Blog: Jak napisać skuteczny tekst na stronę główną firmy?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługę tworzenia treści + klaster copywriting/UX.
+    - Artykuł edukuje o strukturze i treściach strony głównej.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — rola strony głównej w komunikacji z klientem
+    - H2: Co powinno znaleźć się na stronie głównej? (sekcje i ich funkcje)
+    - H2: Jak pisać nagłówki i teksty, które przyciągają uwagę?
+    - H2: Najczęstsze błędy na stronach głównych firm
+    - H2: Jak dostosować treści do grupy docelowej?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/tworzenie-tresci`
+    - `/uslugi/strony-internetowe`
+    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+  - SEO:
+    - URL/slug: `/edukacja/tresci/jak-napisac-tekst-na-strone-glowna-firmy`
+    - `metadata.title`: `Jak napisać skuteczny tekst na stronę główną firmy? | Arteon`
+    - `metadata.description`: `Dowiedz się, co powinno znaleźć się na stronie głównej firmy, jak pisać nagłówki i jakich błędów unikać.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-069] Blog: Czym jest responsywność strony i dlaczego ma znaczenie?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługi strony/sklepy + klaster UX/mobile.
+    - Artykuł edukuje o znaczeniu responsywności dla użytkowników i SEO.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — co to jest responsywność strony
+    - H2: Dlaczego responsywność ma znaczenie dla użytkowników?
+    - H2: Jak responsywność wpływa na SEO i pozycję w Google?
+    - H2: Jak sprawdzić, czy strona jest responsywna?
+    - H2: Najczęstsze problemy z responsywnością i jak je rozwiązać
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+  - SEO:
+    - URL/slug: `/edukacja/ux/czym-jest-responsywnosc-strony`
+    - `metadata.title`: `Czym jest responsywność strony i dlaczego ma znaczenie? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest responsywność strony, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy Twoja strona jest responsywna.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-070] Blog: Jak przyspieszyć stronę internetową? Core Web Vitals w praktyce**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługi strony/optymalizacja + klaster SEO/wydajność.
+    - Artykuł edukuje o szybkości strony i wskaźnikach Core Web Vitals.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — dlaczego szybkość strony ma znaczenie
+    - H2: Co to są Core Web Vitals? (LCP, INP, CLS)
+    - H2: Jak sprawdzić szybkość swojej strony?
+    - H2: Najczęstsze przyczyny wolnego działania strony
+    - H2: Co można zrobić, żeby strona działała szybciej?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
+    - `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+    - `/narzedzia/jpg-png-na-webp-bez-limitu`
+  - SEO:
+    - URL/slug: `/edukacja/seo/jak-przyspieszyc-strone-internetowa-core-web-vitals`
+    - `metadata.title`: `Jak przyspieszyć stronę internetową? Core Web Vitals w praktyce | Arteon`
+    - `metadata.description`: `Dowiedz się, co to są Core Web Vitals, jak sprawdzić szybkość strony i co zrobić, żeby strona działała szybciej.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-072] Blog: Strona internetowa czy reklamy Google Ads: od czego zacząć promocję firmy?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługi strony + pozycjonowanie vs płatne reklamy.
+    - Bardzo popularne pytanie wśród firm rozpoczynających działania online.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — dwie drogi do klientów online
+    - H2: Czym jest strona internetowa i SEO jako fundament?
+    - H2: Czym są reklamy Google Ads i kiedy działają najlepiej?
+    - H2: Porównanie: koszty, czas, efekty długoterminowe
+    - H2: Kiedy zacząć od strony, a kiedy od reklam?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+  - SEO:
+    - URL/slug: `/edukacja/marketing/strona-internetowa-czy-reklamy-google-ads-od-czego-zaczac`
+    - `metadata.title`: `Strona internetowa czy reklamy Google Ads: od czego zacząć promocję firmy? | Arteon`
+    - `metadata.description`: `Dowiedz się, czy lepiej zainwestować w stronę internetową i SEO, czy w reklamy Google Ads. Porównanie kosztów, czasu i efektów.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty, bez DIY).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-073] Blog: Czym jest UX i jak wpływa na skuteczność strony internetowej?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługi strony/sklepy + klaster UX/konwersja.
+    - Artykuł edukuje o podstawach UX i jego wpływie na biznes.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — co to jest UX (user experience)
+    - H2: Dlaczego UX ma znaczenie dla strony firmowej?
+    - H2: Elementy dobrego UX na stronie internetowej
+    - H2: Jak rozpoznać problemy z UX na swojej stronie?
+    - H2: Przykłady dobrych praktyk UX
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
+    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
+  - SEO:
+    - URL/slug: `/edukacja/ux/czym-jest-ux-i-jak-wplywa-na-skutecznosc-strony`
+    - `metadata.title`: `Czym jest UX i jak wpływa na skuteczność strony internetowej? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest UX, dlaczego ma znaczenie dla strony firmowej i jak rozpoznać problemy z doświadczeniem użytkownika.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-074] Blog: Jak przygotować grafikę na posty w mediach społecznościowych?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługę szablonów social media + narzędzia (kadrowanie, palety).
+    - Artykuł edukuje o wymiarach, formatach i spójności wizualnej w social media.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — dlaczego grafika ma znaczenie w mediach społecznościowych
+    - H2: Jakie wymiary grafik dla poszczególnych platform? (Facebook, Instagram, LinkedIn)
+    - H2: Jak zachować spójność wizualną w postach?
+    - H2: Jakich błędów unikać przy tworzeniu grafik?
+    - H2: Kiedy warto zlecić szablony profesjonaliście?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/projekty-graficzne/szablony-postow-social-media`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`
+    - `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+  - SEO:
+    - URL/slug: `/edukacja/grafika/jak-przygotowac-grafike-na-posty-w-mediach-spolecznosciowych`
+    - `metadata.title`: `Jak przygotować grafikę na posty w mediach społecznościowych? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie wymiary grafik używać na Facebooku, Instagramie i LinkedIn oraz jak zachować spójność wizualną w postach.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-075] Blog: Jak mierzyć skuteczność strony internetowej? Podstawy analityki**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługi strony/SEO + edukacja o analityce.
+    - Pomaga firmom zrozumieć, czy ich strona działa — bez DIY, pokazuje wartość danych.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — dlaczego warto mierzyć skuteczność strony
+    - H2: Jakie wskaźniki są najważniejsze? (ruch, konwersje, czas na stronie)
+    - H2: Czym jest Google Analytics i jak pomaga?
+    - H2: Jak interpretować podstawowe dane?
+    - H2: Kiedy warto zlecić analizę specjaliście?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/uslugi/marketing/audyt-seo`
+  - SEO:
+    - URL/slug: `/edukacja/marketing/jak-mierzyc-skutecznosc-strony-internetowej`
+    - `metadata.title`: `Jak mierzyć skuteczność strony internetowej? Podstawy analityki | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie wskaźniki mierzyć na stronie internetowej, czym jest Google Analytics i kiedy warto zlecić analizę specjaliście.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty, bez DIY).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-076] Blog: Jak wybrać domenę i hosting dla strony firmowej?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługi strony/sklepy + edukacja dla początkujących.
+    - Artykuł edukuje o podstawach technicznych przed uruchomieniem strony.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — czym jest domena i hosting
+    - H2: Jak wybrać dobrą domenę dla firmy?
+    - H2: Na co zwrócić uwagę przy wyborze hostingu?
+    - H2: Czy warto kupować domenę i hosting w jednym miejscu?
+    - H2: Najczęstsze błędy przy wyborze domeny i hostingu
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/seo/co-sprawdzic-przed-uruchomieniem-strony`
+  - SEO:
+    - URL/slug: `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+    - `metadata.title`: `Jak wybrać domenę i hosting dla strony firmowej? | Arteon`
+    - `metadata.description`: `Dowiedz się, jak wybrać dobrą domenę i hosting dla strony firmowej oraz na co zwrócić uwagę przed zakupem.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
