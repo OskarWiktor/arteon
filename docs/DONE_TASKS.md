@@ -1,5 +1,22 @@
 # DONE_TASKS
 
+## 2025-12-22
+
+- ✅ **[IDEA-076] Blog: Jak wybrać domenę i hosting dla strony firmowej?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, prosty, bez DIY).
+    - 6 sekcji H2: czym jest domena i hosting, jak wybrać domenę, na co zwrócić uwagę przy hostingu, czy kupować w jednym miejscu, typowe błędy, podsumowanie.
+    - 4 linki wewnętrzne (strony internetowe, sklepy internetowe, kontakt, artykuł o SSL).
+    - Rozbudowane wyjaśnienie polskich znaków w domenach z przykładami punycode (żółć.pl → xn--kda4b0koi.pl).
+    - 5 pytań FAQ.
+    - CTA: Strony internetowe + Kontakt.
+    - Czas czytania: 7 min.
+  - Weryfikacja: nie wymagana (content-only).
+
 ## 2025-12-21
 
 - ✅ **[IDEA-075] Blog: Jak mierzyć skuteczność strony internetowej? Podstawy analityki**

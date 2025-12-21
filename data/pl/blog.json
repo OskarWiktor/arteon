@@ -1,6 +1,93 @@
 {
   "articles": [
     {
+      "slug": "jak-wybrac-domene-i-hosting-dla-strony-firmowej",
+      "title": "Jak wybrać domenę i hosting dla strony firmowej?",
+      "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. W tym artykule dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę i jakich błędów unikać.",
+      "primaryCategory": "Strony",
+      "category": ["Bezpieczeństwo"],
+      "tags": ["domena", "hosting", "strona firmowa", "serwer", "adres strony", "rejestracja domeny", "wybór hostingu", "strona internetowa"],
+      "seo": {
+        "title": "Jak wybrać domenę i hosting dla strony firmowej? | Arteon",
+        "description": "Dowiedz się, jak wybrać dobrą domenę i hosting dla strony firmowej oraz na co zwrócić uwagę przed zakupem.",
+        "canonical": "https://www.arteonagency.pl/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej"
+      },
+      "cover": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-22",
+      "dateModified": "2025-12-22",
+      "readingTime": 7,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Zanim strona internetowa zacznie działać, potrzebuje dwóch rzeczy: adresu, pod którym będzie dostępna, oraz miejsca, gdzie będą przechowywane jej pliki. Adres to domena (np. mojafirma.pl), a miejsce przechowywania to hosting.</p><br/><p>Dla właściciela restauracji, gabinetu stomatologicznego czy biura rachunkowego wybór domeny i hostingu może wydawać się techniczny i skomplikowany. W rzeczywistości to decyzje, które wpływają na to, jak łatwo klienci znajdą stronę i jak szybko będzie się ona ładować.</p><br/><p>W tym artykule wyjaśnię, czym są domena i hosting, jak je wybrać i jakich błędów unikać.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Czym jest domena i hosting?</h2><p><strong>Domena</strong> to adres strony internetowej — ciąg znaków, który wpisujesz w przeglądarkę, żeby wejść na stronę. Przykłady: google.pl, allegro.pl, mojafirma.com. Domena składa się z nazwy (np. mojafirma) i rozszerzenia (np. .pl, .com, .eu).</p><br/><p>Domenę kupujesz (a właściwie wynajmujesz) na określony czas — zwykle na rok lub dłużej. Po tym czasie musisz ją odnowić, inaczej ktoś inny może ją zarejestrować.</p><br/><p><strong>Hosting</strong> to usługa, która zapewnia miejsce na serwerze, gdzie przechowywane są pliki strony — teksty, zdjęcia, kod. Kiedy ktoś wpisuje adres strony w przeglądarkę, serwer hostingowy wysyła mu te pliki, a przeglądarka wyświetla stronę.</p><br/><p>Można to porównać do adresu i budynku. Domena to adres (ul. Główna 10), a hosting to budynek, w którym mieści się firma. Klient zna adres i wie, dokąd przyjść — ale potrzebuje też miejsca, gdzie faktycznie coś znajdzie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak wybrać dobrą domenę dla firmy?</h2><p>Domena to pierwszy kontakt klienta z firmą w internecie. Powinna być łatwa do zapamiętania, prosta do wpisania i powiązana z nazwą firmy lub branżą.</p><br/><p><strong>Krótka i prosta</strong></p><br/><p>Im krótsza domena, tym łatwiej ją zapamiętać i wpisać bez błędów. Unikaj długich nazw z wieloma wyrazami, myślnikami czy cyframi. Zamiast najlepsza-pizzeria-w-krakowie-2024.pl lepiej pizzeria-krakow.pl lub nawet samo pizzeriakrakow.pl.</p><br/><p><strong>Zgodna z nazwą firmy</strong></p><br/><p>Jeśli firma ma rozpoznawalną nazwę, domena powinna ją odzwierciedlać. Klienci szukający Kancelaria Nowak będą wpisywać kancelarianowak.pl, a nie prawnik-z-krakowa.pl. Spójność między nazwą firmy a domeną buduje zaufanie.</p><br/><p><strong>Odpowiednie rozszerzenie</strong></p><br/><p>Dla polskich firm naturalnym wyborem jest .pl — klienci kojarzą je z lokalnymi usługami. Rozszerzenie .com sprawdza się, gdy firma działa międzynarodowo lub gdy .pl jest już zajęte. Istnieją też rozszerzenia branżowe (.shop, .law, .restaurant), ale są mniej rozpoznawalne i mogą kosztować więcej.</p><br/><p><strong>Bez polskich znaków</strong></p><br/><p>Technicznie możliwe jest zarejestrowanie domeny z polskimi znakami (np. żółć.pl), ale w praktyce lepiej ich unikać. Polskie znaki w domenie są konwertowane na tzw. punycode — specjalny format zrozumiały dla serwerów DNS. W praktyce wygląda to tak:</p><br/><ul class='list-disc ml-5'><li>Domena <strong>żółć.pl</strong> zamienia się w <strong>xn--kda4b0koi.pl</strong></li><li>Domena <strong>łódź.pl</strong> zamienia się w <strong>xn--d1a0d.pl</strong></li><li>Domena <strong>kraków.pl</strong> zamienia się w <strong>xn--krakw-3ta.pl</strong></li></ul><br/><p>Taki adres może pojawić się w linkach, e-mailach czy systemach analitycznych. Wygląda nieczytelnie i może budzić nieufność — niektórzy użytkownicy mogą pomyśleć, że to spam lub podejrzana strona. Dodatkowo nie każdy system poprawnie obsługuje polskie znaki, co może powodować problemy z przekierowaniami, certyfikatami SSL czy integracjami z innymi usługami.</p><br/><p><strong>Sprawdź dostępność</strong></p><br/><p>Zanim zdecydujesz się na nazwę, sprawdź, czy domena jest wolna. Możesz to zrobić na stronie dowolnego rejestratora domen (np. home.pl, OVH, nazwa.pl). Jeśli wybrana nazwa jest zajęta, zastanów się nad innym rozszerzeniem lub lekką modyfikacją nazwy.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Na co zwrócić uwagę przy wyborze hostingu?</h2><p>Hosting wpływa na szybkość działania strony, jej dostępność i bezpieczeństwo. Tani hosting może okazać się kosztowny, jeśli strona będzie wolna lub często niedostępna.</p><br/><p><strong>Rodzaj hostingu</strong></p><br/><p>Istnieje kilka rodzajów hostingu, różniących się ceną i możliwościami:</p><br/><ul class='list-disc ml-5'><li><strong>Hosting współdzielony</strong> — najtańszy, ale zasoby serwera są dzielone z innymi stronami. Sprawdza się dla małych stron firmowych z niewielkim ruchem.</li><li><strong>VPS (Virtual Private Server)</strong> — wirtualny serwer z wydzielonymi zasobami. Daje większą kontrolę i stabilność, ale wymaga wiedzy technicznej.</li><li><strong>Serwer dedykowany</strong> — cały serwer dla jednej strony. Najdroższy, ale daje pełną kontrolę. Potrzebny głównie dla dużych serwisów z wysokim ruchem.</li><li><strong>Hosting w chmurze</strong> — elastyczny, skaluje się automatycznie wraz z ruchem. Płacisz za faktyczne zużycie zasobów.</li></ul><br/><p>Dla większości małych i średnich firm hosting współdzielony lub prosty VPS będzie wystarczający.</p><br/><p><strong>Szybkość i lokalizacja serwerów</strong></p><br/><p>Im bliżej serwera są użytkownicy, tym szybciej ładuje się strona. Dla polskich firm najlepiej wybrać hosting z serwerami w Polsce lub Europie. Strona hostowana na serwerze w USA będzie ładować się wolniej dla polskich użytkowników.</p><br/><p><strong>Uptime — dostępność serwera</strong></p><br/><p>Uptime to procent czasu, przez który serwer działa bez awarii. Dobry hosting gwarantuje uptime na poziomie 99,9% lub wyższym. To oznacza, że strona może być niedostępna maksymalnie kilka godzin rocznie. Niższy uptime (np. 99%) oznacza nawet kilkadziesiąt godzin niedostępności.</p><br/><p><strong>Wsparcie techniczne</strong></p><br/><p>Problemy z serwerem mogą pojawić się o każdej porze. Sprawdź, czy dostawca oferuje wsparcie 24/7 i w jakim języku. Dla polskich firm warto wybrać hosting z polskojęzyczną obsługą.</p><br/><p><strong>Certyfikat SSL</strong></p><br/><p><a class='inline-link' href='/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje'>SSL to protokół, który szyfruje połączenie</a> między przeglądarką a serwerem. Strony z SSL mają adres zaczynający się od https:// i ikonę kłódki w pasku adresu. Bez SSL przeglądarka oznacza stronę jako niezabezpieczoną, co odstrasza użytkowników i może obniżyć pozycję w wynikach wyszukiwania. Większość hostingów oferuje darmowy certyfikat SSL (np. Let's Encrypt) — wystarczy go aktywować w panelu administracyjnym.</p><br/><p><strong>Kopie zapasowe</strong></p><br/><p>Regularne kopie zapasowe chronią przed utratą danych w razie awarii lub włamania. Sprawdź, czy hosting automatycznie tworzy kopie i jak łatwo można je przywrócić.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Czy warto kupować domenę i hosting w jednym miejscu?</h2><p>Wielu dostawców oferuje pakiety łączące domenę i hosting. Ma to swoje zalety i wady.</p><br/><p><strong>Zalety kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Prostota</strong> — jeden panel, jedna faktura, jedno miejsce do zarządzania.</li><li><strong>Automatyczna konfiguracja</strong> — domena jest od razu podpięta do hostingu, bez ręcznej konfiguracji DNS.</li><li><strong>Promocje</strong> — dostawcy często oferują darmową domenę przy zakupie hostingu na rok lub dłużej.</li></ul><br/><p><strong>Wady kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Uzależnienie od jednego dostawcy</strong> — jeśli zdecydujesz się zmienić hosting, przeniesienie domeny może być utrudnione.</li><li><strong>Różna jakość usług</strong> — firma, która dobrze prowadzi hosting, niekoniecznie ma najlepsze ceny domen (i odwrotnie).</li></ul><br/><p><strong>Kiedy rozdzielić?</strong></p><br/><p>Jeśli zależy Ci na elastyczności i możesz poświęcić chwilę na konfigurację, warto kupić domenę u rejestratora (np. nazwa.pl, OVH), a hosting osobno u wyspecjalizowanego dostawcy. Dzięki temu łatwiej zmienisz hosting w przyszłości, zachowując domenę.</p><br/><p>Dla małych firm, które cenią prostotę, pakiet domena + hosting w jednym miejscu jest wygodnym rozwiązaniem.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Na co zwrócić uwagę przy wyborze domeny i hostingu?</h2><p><strong>Zbyt długa lub skomplikowana domena</strong></p><br/><p>Klienci nie zapamiętają adresu typu najlepsza-firma-budowlana-jan-kowalski-krakow.pl. Im krócej i prościej, tym lepiej.</p><br/><p><strong>Najtańszy hosting bez sprawdzenia parametrów</strong></p><br/><p>Hosting za kilka złotych miesięcznie może mieć wolne serwery, niski uptime i słabe wsparcie. Strona, która ładuje się 10 sekund lub często jest niedostępna, odstrasza klientów. Warto porównać parametry, nie tylko cenę.</p><br/><p><strong>Brak odnowienia domeny</strong></p><br/><p>Domena wymaga corocznego odnowienia. Jeśli zapomnisz opłacić, ktoś inny może ją zarejestrować. Ustaw automatyczne odnowienie lub przypomnienia w kalendarzu.</p><br/><p><strong>Brak własności domeny</strong></p><br/><p>Upewnij się, że domena jest zarejestrowana na Ciebie (dane firmy w WHOIS), a nie na osobę lub agencję, która tworzyła stronę. Domena to Twoja własność i powinieneś mieć do niej pełny dostęp.</p><br/><p><strong>Ignorowanie SSL</strong></p><br/><p>Strona bez <a class='inline-link' href='/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje'>certyfikatu SSL</a> jest oznaczana przez przeglądarki jako niezabezpieczona. To odstrasza użytkowników i może obniżyć pozycję w Google. Większość hostingów oferuje darmowy SSL — wystarczy go aktywować w panelu administracyjnym.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Domena i hosting to fundament każdej strony internetowej. Domena to adres, pod którym klienci znajdą firmę w internecie. Hosting to miejsce, gdzie strona jest przechowywana i z którego jest serwowana użytkownikom.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Domena powinna być krótka i prosta</strong> — łatwa do zapamiętania i wpisania</li><li><strong>Dla polskich firm .pl jest naturalnym wyborem</strong> — kojarzy się z lokalnymi usługami</li><li><strong>Hosting wpływa na szybkość strony</strong> — wolna strona odstrasza klientów</li><li><strong>Sprawdź uptime i wsparcie</strong> — dostępność 99,9% i pomoc 24/7 to standard</li><li><strong>Nie zapomnij o SSL</strong> — szyfrowanie jest dziś wymagane</li><li><strong>Odnawiaj domenę na czas</strong> — inaczej możesz ją stracić</li></ul><br/><p>Jeśli planujesz <a class='inline-link' href='/uslugi/strony-internetowe'>stworzenie strony internetowej</a> lub <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepu internetowego</a>, możemy pomóc Ci również z wyborem i konfiguracją domeny oraz hostingu. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, żeby omówić szczegóły.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Planujesz stronę internetową?",
+        "description": "Pomożemy Ci od podstaw — od wyboru domeny i hostingu, przez projekt, po wdrożenie. Wszystko w jednym miejscu.",
+        "btnOne": "Strony internetowe",
+        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnTwo": "Skontaktuj się",
+        "btnTwoLink": "/kontakt",
+        "backgroundImage": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Ile kosztuje domena i hosting?",
+          "answer": "Domena .pl kosztuje zwykle 50-150 zł rocznie, zależnie od rejestratora. Hosting współdzielony to koszt od kilkunastu do kilkudziesięciu złotych miesięcznie. Niektórzy dostawcy oferują darmową domenę przy zakupie hostingu na rok lub dłużej."
+        },
+        {
+          "question": "Czy mogę przenieść domenę do innego dostawcy?",
+          "answer": "Tak, domenę można przenieść do innego rejestratora. Proces wymaga uzyskania kodu autoryzacyjnego (AuthCode) od obecnego dostawcy i zlecenia transferu u nowego. Transfer trwa zwykle kilka dni."
+        },
+        {
+          "question": "Co się stanie, jeśli nie odnowię domeny?",
+          "answer": "Po wygaśnięciu domeny przestaje działać — strona nie jest dostępna pod tym adresem. Przez krótki czas (zwykle 30 dni) można ją jeszcze odnowić z dodatkową opłatą. Po tym okresie domena trafia do puli i może ją zarejestrować ktoś inny."
+        },
+        {
+          "question": "Czy potrzebuję hostingu, jeśli mam stronę na platformie typu Wix lub Squarespace?",
+          "answer": "Platformy typu Wix, Squarespace czy Shopify zapewniają hosting w ramach abonamentu — nie musisz kupować go osobno. Potrzebujesz tylko domeny, którą możesz podpiąć do takiej platformy."
+        },
+        {
+          "question": "Jak sprawdzić, czy domena jest wolna?",
+          "answer": "Wpisz wybraną nazwę na stronie dowolnego rejestratora domen (np. nazwa.pl, OVH, home.pl). System od razu pokaże, czy domena jest dostępna i w jakiej cenie. Możesz też sprawdzić różne rozszerzenia (.pl, .com, .eu)."
+        }
+      ]
+    },
+    {
       "slug": "jak-mierzyc-skutecznosc-strony-internetowej",
       "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki",
       "excerpt": "Strona internetowa to inwestycja, która powinna przynosić efekty. W tym artykule dowiesz się, jakie wskaźniki mierzyć, czym jest Google Analytics i kiedy warto zlecić analizę specjaliście.",

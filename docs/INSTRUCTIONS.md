@@ -274,7 +274,8 @@ Dla każdego zadania:
 - Używaj konkretnych przykładów z praktyki (bez wstawek typu "Wyobraź sobie..." i bez „scenek”)
 - Pisz jak do znajomego — naturalnie, bez sztywności, ale bez potocznych sformułowań
 - Dodawaj instrukcje krok po kroku do narzędzi Arteon
-- Linkuj do powiązanych artykułów i usług tam, gdzie ma to sens (wplecione w zdania)
+- Linkuj do powiązanych artykułów i usług tam, gdzie ma to sens (wplecione w zdania) — **szczególnie do istniejących artykułów na powiązane tematy**
+- **Zagłębiaj się w szczegóły** — podawaj konkretne przykłady, pokazuj jak coś wygląda w praktyce (np. jak wygląda URL z polskimi znakami po konwersji do punycode), wyjaśniaj mechanizmy. Wartość artykułu powinna wynikać z głębi wiedzy, nie z ogólników.
 - Używaj pytań jako nagłówków (np. „Ile to kosztuje?”, „Kiedy warto?”)
 - Kończ podsumowaniem z 3-5 konkretnymi wnioskami (to nie jest checklista „do odhaczania”)
 

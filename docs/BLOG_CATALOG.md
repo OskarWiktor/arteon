@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Jak wybrać domenę i hosting dla strony firmowej?**
+
+  - **Slug**: `jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+  - **URL**: `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+  - **Kategorie**: `Strony`
+  - **Data publikacji**: 2025-12-22
+  - **Czas czytania**: 7 min
+  - **Opis**: Artykuł o domenach i hostingu. Czym są domena i hosting, jak wybrać dobrą domenę dla firmy (krótka, prosta, rozszerzenie .pl, przykłady punycode dla polskich znaków), na co zwrócić uwagę przy wyborze hostingu (rodzaj, szybkość, uptime, wsparcie, SSL, kopie zapasowe), czy warto kupować domenę i hosting w jednym miejscu, typowe błędy.
+  - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/kontakt`, `/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+  - **Linki zewnętrzne**: brak
+  - **FAQ**: 5 pytań
+  - **CTA**: Strony internetowe + Kontakt
+
 - **Jak mierzyć skuteczność strony internetowej? Podstawy analityki**
 
   - **Slug**: `jak-mierzyc-skutecznosc-strony-internetowej`
