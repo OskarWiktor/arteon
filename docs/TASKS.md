@@ -89,6 +89,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
   - **Zrobione 2025-12-19**:
+
     - Dodano pomysły wspierające klaster usług `/uslugi/projekty-graficzne` (projekty graficzne) + uporządkowano brakujące nagłówki w sekcji „Pomysły".
     - Dodane ID: `IDEA-048`, `IDEA-049`, `IDEA-050`, `IDEA-051`, `IDEA-052`, `IDEA-053`.
 
@@ -722,6 +723,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - H2: Najczęstsze błędy (duplikaty, brak konkretu, obietnice bez pokrycia)
     - H2: Jak sprawdzać i poprawiać meta szybko (narzędzie: licznik meta title/description)
     - H2: Podsumowanie: 5 priorytetów na start + CTA (pozycjonowanie stron / konsultacja)
+
 ---
 
 ## Pomysły
@@ -984,3 +986,89 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Każdy pomysł z opisem i przykładowym zastosowaniem.
     - Lista zapisana jako osobne zadania `COMPONENTS-*` lub notatka w `DONE_TASKS.md`.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+- ❌ **[IDEA-063] Blog: Jak powstaje dobre logo i na co zwrócić uwagę przy jego projektowaniu?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługę projekt logo + edukacja o brandingu.
+    - Artykuł pokazuje proces i wartość profesjonalnego projektu logo.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — rola logo w identyfikacji firmy
+    - H2: Cechy dobrego logo (prostota, skalowalność, unikalność)
+    - H2: Rodzaje logo (typograficzne, symboliczne, kombinowane)
+    - H2: Jak wygląda proces projektowania logo?
+    - H2: Co powinieneś przygotować przed zleceniem projektu?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/projekty-graficzne/projekt-logo`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+  - SEO:
+    - URL/slug: `/edukacja/grafika/jak-powstaje-dobre-logo`
+    - `metadata.title`: `Jak powstaje dobre logo i na co zwrócić uwagę przy jego projektowaniu? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie cechy ma dobre logo, jak wygląda proces projektowania i co przygotować przed zleceniem projektu logo.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-065] Blog: Od czego zacząć budowanie identyfikacji wizualnej małej firmy?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługę identyfikacji wizualnej + klaster branding/grafika.
+    - Artykuł pokazuje kolejność działań i wartość spójnego wizerunku.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — co to jest identyfikacja wizualna
+    - H2: Dlaczego nawet mała firma potrzebuje spójnego wizerunku?
+    - H2: Z czego składa się identyfikacja wizualna? (logo, kolory, typografia, materiały)
+    - H2: Od czego zacząć i w jakiej kolejności?
+    - H2: Co przygotować przed zleceniem identyfikacji?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/uslugi/projekty-graficzne/projekt-logo`
+    - `/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic`
+  - SEO:
+    - URL/slug: `/edukacja/grafika/od-czego-zaczac-budowanie-identyfikacji-wizualnej`
+    - `metadata.title`: `Od czego zacząć budowanie identyfikacji wizualnej małej firmy? | Arteon`
+    - `metadata.description`: `Dowiedz się, z czego składa się identyfikacja wizualna, w jakiej kolejności ją budować i co przygotować przed zleceniem projektu.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość).
+    - Min. 3 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-066] Blog: Co sprawdzić przed uruchomieniem nowej strony internetowej?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić usługi strony/sklepy + klaster SEO/UX.
+    - Artykuł edukuje o checkliście przed publikacją strony.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Wstęp — dlaczego warto sprawdzić stronę przed publikacją
+    - H2: Treści i meta dane (title, description, teksty)
+    - H2: Funkcjonalność (formularze, linki, nawigacja)
+    - H2: Wydajność i zdjęcia (optymalizacja, formaty)
+    - H2: SEO techniczne (indeksacja, sitemap, robots)
+    - H2: Prawne (polityka prywatności, regulamin, cookies)
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+  - SEO:
+    - URL/slug: `/edukacja/seo/co-sprawdzic-przed-uruchomieniem-strony`
+    - `metadata.title`: `Co sprawdzić przed uruchomieniem nowej strony internetowej? | Arteon`
+    - `metadata.description`: `Dowiedz się, co sprawdzić przed publikacją strony: treści, funkcjonalność, wydajność, SEO i kwestie prawne.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA do usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).

@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?**
+
+  - **Slug**: `meta-title-i-description-jak-je-napisac`
+  - **URL**: `/edukacja/seo/meta-title-i-description-jak-je-napisac`
+  - **Kategorie**: `SEO`, `Treści`, `Widoczność`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 6 min
+  - **Opis**: Artykuł o meta title i description. Co to jest, dlaczego ma znaczenie dla SEO i klikalności, jak napisać skuteczny tytuł i opis, przykłady dobrych i słabych meta tagów, jak sprawdzić długość w narzędziu Arteon.
+  - **Linki wewnętrzne**: `/narzedzia/licznik-dlugosci-meta-title-i-description`, `/uslugi/marketing/optymalizacja-seo`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+  - **Linki zewnętrzne**: Backlinko
+  - **FAQ**: 5 pytań
+  - **CTA**: Licznik meta tagów + Optymalizacja SEO
+
 - **Materiały drukowane dla firmy: które zamówić na start?**
 
   - **Slug**: `materialy-drukowane-dla-firmy-ktore-zamowic`

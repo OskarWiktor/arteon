@@ -138,6 +138,7 @@ Dla każdego zadania:
 - Aktualizacja odpowiedniego `*_CATALOG.md` wykonana (patrz: „Workflow: jak domykamy zadania”).
 
 ---
+
 ## Instrukcje: Treści i artykuły
 
 - **ZASADA NADRZĘDNA (zawsze, cały serwis)**: wytyczne tonu i sposobu pisania z tej sekcji stosujesz przy tworzeniu każdej treści w repo (artykuły, strony usług, strony narzędzi, realizacje, strony informacyjne, mikrocopy w komponentach/sekcjach, `metadata.description`, OpenGraph, schema, FAQ, CTA).
@@ -228,6 +229,7 @@ Dla każdego zadania:
     - ✅ „Stwórz małą ikonkę, która pojawi się na karcie przeglądarki (to właśnie favicon — miniaturowa ikona Twojej strony). Dzięki niej Twoja strona wygląda profesjonalnie i łatwiej ją znaleźć wśród wielu otwartych kart.”
 
 - **Styl językowy**:
+
   - Pełne, poprawne zdania (bez równoważników zdań).
   - Naturalny rytm (jak w dobrej rozmowie): spokojnie, rzeczowo, klarownie.
   - Bez slangu i kolokwializmów.
@@ -302,6 +304,7 @@ Dla każdego zadania:
   - **Zasada języka neutralnego**: mów o możliwościach i konsekwencjach w sposób rzeczowy, bez ironii i bez skrótów myślowych. Jeśli coś jest zależne od wielu czynników, nazywaj je wprost i doprecyzuj warunki.
 
 - **PRZYKŁADY ZAMIANY (referencja przy redakcji)**:
+
   - ❌ „traktowane po macoszemu" → ✅ „często pozostają puste lub ogólnikowe"
   - ❌ „Nie musisz pisać encyklopedii" → ✅ „Opis nie musi być rozbudowany"
   - ❌ „W SEO kolejność ma znaczenie, bo każda godzina pracy ma swoją cenę" → ✅ „Dzięki temu pierwsze efekty pojawią się szybciej"
@@ -328,7 +331,6 @@ Dla każdego zadania:
 
 - **Zakaz checklist (doprecyzowanie, bez konfliktów)**: nie twórz w artykułach sekcji „Checklista" ani list „do odhaczania". Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety". Krótkie listy informacyjne (np. 3–5 wniosków) są dozwolone, o ile nie mają formy „odfajkuj to”.
 
-
 ### Dodatkowe zasady jezykowe i redakcyjne (aktualizacja 2025-12-21)
 
 - **Intencja wyszukiwania (obowiazkowo)**: Wstep i poczatkowe sekcje artykulu musza bezposrednio odpowiadac na pytanie z tytulu. Nie zaczynaj od mowienia, ze temat jest wazny. Zamiast tego od razu pokaz, co czytelnik znajdzie.
@@ -337,7 +339,21 @@ Dla każdego zadania:
 
 - **Unikanie duplikacji miedzy artykulami (obowiazkowo)**: Jesli istnieje powiazany artykul na zblizony temat, nie duplikuj jego tresci. Odnies sie do niego linkiem.
 
-- **Zrodla zewnetrzne (zalecane)**: W artykulach uzywaj linkow do badan i wiarygodnych zrodel (target=_blank rel=noopener noreferrer). 3-5 linkow na artykul.
+- **Zrodla zewnetrzne (zalecane)**: W artykulach uzywaj linkow do badan i wiarygodnych zrodel (target=\_blank rel=noopener noreferrer). 3-5 linkow na artykul.
+
+- **Anglicyzmy a polskie odpowiedniki (obowiązkowo)**: Używaj polskich odpowiedników tam, gdzie brzmią naturalnie. Zamiast „social media" pisz „media społecznościowe" (odmienione odpowiednio do kontekstu). Anglicyzmy dozwolone tylko gdy polski odpowiednik brzmi sztucznie lub jest nieznany.
+
+- **Przykłady z innych branż (obowiązkowo)**: W artykułach edukacyjnych nie używaj przykładów z branży Arteon (grafika, marketing, strony WWW). Podawaj przykłady z innych branż (prawo, medycyna, gastronomia, nieruchomości, e-commerce, produkcja itp.) — to buduje większy autorytet i uniwersalność treści.
+
+- **Linki do zewnętrznych narzędzi (obowiązkowo)**: Gdy wspominasz o zewnętrznych narzędziach (Google Search Console, PageSpeed Insights, Ahrefs itp.), zawsze dodawaj do nich link z atrybutami `target='_blank' rel='noopener noreferrer'`.
+
+- **Zaimki dzierżawcze w kontekście czytelnika (obowiązkowo)**: W zwrotach typu „na Twojej stronie" używaj formy „na swojej stronie" — jest bardziej naturalna i poprawna gramatycznie w kontekście instrukcji dla czytelnika.
+
+- **Zakaz rekomendowania konkurencji (obowiązkowo)**: Nigdy nie sugeruj kontaktu z innymi firmami ani osobami trzecimi. Zamiast „skontaktuj się z osobą, która tworzyła stronę" pisz „skontaktuj się z nami" i linkuj do `/kontakt`. Arteon jest jedynym rekomendowanym źródłem pomocy.
+
+- **Unikanie kategorycznych określeń (zalecane)**: Zamiast mocnych słów typu „słabe", „złe", „fatalne" używaj łagodniejszych form: „słabsze", „mniej skuteczne", „wymagające poprawy". Wyjątek: gdy kontrast jest celowy i uzasadniony merytorycznie.
+
+- **Weryfikacja zgodności z instrukcją (OBOWIĄZKOWO)**: Przed napisaniem jakiegokolwiek tekstu zawsze najpierw przeczytaj pełną instrukcję. Po napisaniu tekstu sprawdź go ponownie pod kątem zgodności z tą instrukcją. To dotyczy każdego artykułu, opisu usługi, narzędzia i każdej innej treści.
 
 ### Dodatkowe reguły
 
@@ -346,3 +362,4 @@ Dla każdego zadania:
 - nie zmieniaj wyglądu, treści ani funkcjonalności, chyba że wskazano inaczej
 - nie wprowadzaj w `robots.tsx` globalnej blokady indeksacji całej witryny (blokowanie `/` jest zabronione)
 - nigdy nie zmieniaj numerów zadań
+- **przed proponowaniem nowych ID zadań/pomysłów (IDEA-_, COPY-_, SEO-\* itp.) zawsze sprawdź istniejące ID w `TASKS.md` i `DONE_TASKS.md`**, żeby uniknąć kolizji numerów

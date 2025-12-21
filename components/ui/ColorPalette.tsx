@@ -13,13 +13,7 @@ export default function ColorPalette({ colors }: ColorPaletteProps) {
     <div>
       <div className="flex gap-1">
         {colors.map((color, index) => (
-          <div
-            key={index}
-            className="h-10 w-10 rounded border border-black/10"
-            style={{ backgroundColor: color }}
-            title={color}
-            aria-label={`Kolor ${index + 1}: ${color}`}
-          />
+          <div key={index} className="h-10 w-10 rounded border border-black/10" style={{ backgroundColor: color }} title={color} aria-label={`Kolor ${index + 1}: ${color}`} />
         ))}
       </div>
     </div>

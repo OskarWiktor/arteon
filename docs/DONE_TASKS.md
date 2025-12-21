@@ -2,6 +2,21 @@
 
 ## 2025-12-21
 
+- ✅ **[IDEA-064] Blog: Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `meta-title-i-description-jak-je-napisac`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, prosty).
+    - 8 sekcji H2: wyjaśnienie meta title i description, jak je pisać, przykłady, narzędzie Arteon.
+    - 3 linki wewnętrzne (narzędzie + usługa + artykuł SEO).
+    - 1 link zewnętrzny (Backlinko).
+    - 5 pytań FAQ.
+    - CTA: Licznik meta tagów + Optymalizacja SEO.
+    - Czas czytania: 6 min.
+  - Weryfikacja: JSON valid (node parse OK).
+
 - ✅ **[IDEA-057] Blog: Materiały drukowane dla firmy: które zamówić na start?**
 
   - Plik: `data/pl/blog.json`
