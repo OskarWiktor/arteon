@@ -1,4 +1,4 @@
-# Arteon - INSTRUCTIONS (read before every task)
+﻿# Arteon - INSTRUCTIONS (read before every task)
 
 ## Spis treści
 
@@ -310,7 +310,18 @@ Dla każdego zadania:
   - ❌ „Jeśli nie jesteś techniczny..." → ✅ „Nawet bez wiedzy technicznej możesz..."
   - ❌ „to proste", „to oczywiste" → ✅ (usuń lub opisz konkretnie co i dlaczego)
 
-- **Zakaz checklist (doprecyzowanie, bez konfliktów)**: nie twórz w artykułach sekcji „Checklista” ani list „do odhaczania”. Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety”. Krótkie listy informacyjne (np. 3–5 wniosków) są dozwolone, o ile nie mają formy „odfajkuj to”.
+- **Zakaz checklist (doprecyzowanie, bez konfliktów)**: nie twórz w artykułach sekcji „Checklista" ani list „do odhaczania". Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety". Krótkie listy informacyjne (np. 3–5 wniosków) są dozwolone, o ile nie mają formy „odfajkuj to”.
+
+
+### Dodatkowe zasady jezykowe i redakcyjne (aktualizacja 2025-12-21)
+
+- **Intencja wyszukiwania (obowiazkowo)**: Wstep i poczatkowe sekcje artykulu musza bezposrednio odpowiadac na pytanie z tytulu. Nie zaczynaj od mowienia, ze temat jest wazny. Zamiast tego od razu pokaz, co czytelnik znajdzie.
+
+- **Spojnosc gramatyczna liczby (obowiazkowo)**: Podmiot i orzeczenie musza sie zgadzac w liczbie. Szczegolna uwaga przy opisach zbiorczych (np. Kolory...Tworza, nie Kolory...Tworzy).
+
+- **Unikanie duplikacji miedzy artykulami (obowiazkowo)**: Jesli istnieje powiazany artykul na zblizony temat, nie duplikuj jego tresci. Odnies sie do niego linkiem.
+
+- **Zrodla zewnetrzne (zalecane)**: W artykulach uzywaj linkow do badan i wiarygodnych zrodel (target=_blank rel=noopener noreferrer). 3-5 linkow na artykul.
 
 ### Dodatkowe reguły
 

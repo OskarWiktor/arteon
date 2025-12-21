@@ -1,6 +1,164 @@
 {
   "articles": [
 {
+  "slug": "jak-dobrac-kolory-do-strony-internetowej",
+  "title": "Jak dobrać kolory do strony internetowej lub sklepu?",
+  "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Konkretne kroki, dane z badań i narzędzia, które pomogą Ci wybrać paletę kolorów wspierającą cele biznesowe.",
+  "primaryCategory": "Grafika",
+  "category": ["Branding", "UX"],
+  "tags": [
+    "kolory na stronie",
+    "paleta kolorów",
+    "koło barw",
+    "zasada 60-30-10",
+    "kontrast kolorów",
+    "identyfikacja wizualna",
+    "branding",
+    "UX design",
+    "konwersja"
+  ],
+  "seo": {
+    "title": "Jak dobrać kolory do strony internetowej lub sklepu? | Arteon",
+    "description": "Praktyczny przewodnik po doborze kolorów na stronę. Konkretne kroki, dane z badań i narzędzia do wyboru palety kolorów.",
+    "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej"
+  },
+  "cover": "/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp",
+  "author": { "name": "Arteon" },
+  "datePublished": "2025-12-21",
+  "dateModified": "2025-12-21",
+  "readingTime": 8,
+  "contentBlocks": [
+    {
+      "type": "richtext",
+      "html": "<p>Dobieranie kolorów do strony internetowej lub sklepu to decyzja, która wpływa na to, jak odwiedzający postrzegają markę, jak długo zostają na stronie i czy podejmują działanie (np. kontakt, zakup).</p><br/><p>W tym artykule znajdziesz konkretny proces doboru kolorów w 5 krokach, dane z badań pokazujące wpływ kolorów na zachowania użytkowników oraz narzędzia, które ułatwią Ci pracę.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego wybór kolorów na stronie ma znaczenie? Dane z badań</h2><p>Zanim przejdziemy do konkretnych kroków, warto zrozumieć skalę wpływu kolorów na zachowania użytkowników.</p><br/><p><strong>Pierwsze wrażenie powstaje błyskawicznie.</strong> Badania opublikowane w czasopiśmie <a class='inline-link' href='https://www.tandfonline.com/doi/abs/10.1080/01449290500330448' target='_blank' rel='noopener noreferrer'>Behaviour & Information Technology</a> wskazują, że użytkownicy formułują opinię o stronie w ciągu 50 milisekund. W tak krótkim czasie kolory są jednym z głównych czynników kształtujących to wrażenie.</p><br/><p><strong>Kolor wpływa na rozpoznawalność marki.</strong> Według badań University of Loyola (cytowanych przez <a class='inline-link' href='https://www.colorcom.com/research/why-color-matters' target='_blank' rel='noopener noreferrer'>Colorcom</a>), kolor zwiększa rozpoznawalność marki o 80%. Oznacza to, że spójna paleta kolorów na stronie pomaga klientom zapamiętać i rozpoznać Twoją firmę.</p><br/><p><strong>Kolory przycisków wpływają na konwersję.</strong> W teście A/B opisanym przez <a class='inline-link' href='https://blog.hubspot.com/blog/tabid/6307/bid/20566/the-button-color-a-b-test-red-beats-green.aspx' target='_blank' rel='noopener noreferrer'>HubSpot</a> zmiana koloru przycisku CTA z zielonego na czerwony zwiększyła współczynnik klikalności o 21%. To nie oznacza, że czerwony jest zawsze lepszy — kluczowy był kontrast z resztą strony.</p><br/><p>Te dane pokazują, że wybór kolorów to decyzja biznesowa, nie tylko estetyczna.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Krok 1: Określ punkt wejścia — skąd wziąć kolory?</h2><p>Dobór kolorów zaczyna się od jednego z trzech scenariuszy:</p><br/><h3 class='h4 mb-2 mt-4'>Scenariusz A: Masz logo z określonymi kolorami</h3><p>Jeśli Twoja firma ma już logo, jego kolory są naturalnym punktem wejścia. Kolor główny z logo może stać się kolorem akcentu na stronie (przyciski, linki, wyróżniki), a pozostałe elementy budujesz wokół niego.</p><br/><p><strong>Przykład:</strong> logo w kolorze granatowym (#1E3A5F) → granatowy jako kolor akcentu, jasne tło (biały/jasnoszary), ciemny tekst, sekcje w odcieniach szarości lub bardzo rozbielonego granatu.</p><br/><h3 class='h4 mb-2 mt-4'>Scenariusz B: Zaczynasz od zera, ale znasz branżę</h3><p>Niektóre branże mają utrwalone skojarzenia kolorystyczne. Nie są to sztywne reguły, ale warto je znać:</p><ul class='list-disc ml-5'><li><strong>Finanse, technologia, B2B:</strong> niebieski (zaufanie, profesjonalizm) — używają go m.in. PayPal, IBM, LinkedIn.</li><li><strong>Zdrowie, ekologia, wellness:</strong> zieleń (natura, równowaga) — np. Whole Foods, Animal Planet.</li><li><strong>Luksus, premium, moda:</strong> czerń, biel, złoto (elegancja) — np. Chanel, Rolex.</li><li><strong>Energia, jedzenie, promocje:</strong> czerwony, pomarańczowy (działanie, apetyt) — np. McDonald's, YouTube, Netflix.</li></ul><p>Możesz świadomie podążać za konwencją branży lub ją łamać, żeby się wyróżnić — ale decyzja powinna być przemyślana.</p><br/><h3 class='h4 mb-2 mt-4'>Scenariusz C: Masz inspirację wizualną (zdjęcie, grafika, moodboard)</h3><p>Jeśli masz zdjęcie produktu, grafikę lub zbiór inspiracji, możesz wyciągnąć z nich dominujące kolory. Nasz <a class='inline-link' href='/narzedzia/generator-palety-kolorow-z-obrazu'>Generator palety kolorów z obrazu</a> robi to automatycznie — wgrywasz obraz, a narzędzie zwraca paletę kolorów.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Krok 2: Wybierz schemat kolorystyczny</h2><p>Kiedy masz już kolor bazowy (z logo, branży lub inspiracji), następny krok to zbudowanie palety. Schematy kolorystyczne oparte na kole barw pomagają wybrać kolory, które ze sobą współgrają.</p>",
+      "breakAfter": false
+    },
+    {
+      "type": "colorPalette",
+      "colors": ["#1E3A5F", "#2D4A6F", "#3C5A7F", "#4B6A8F", "#5A7A9F"]
+    },
+    {
+      "type": "richtext",
+      "html": "<h3 class='h4 mb-2 mt-4'>Monochromatyczny</h3><p>Różne odcienie, nasycenia i jasności jednego koloru. Daje spójny, elegancki efekt. Sprawdza się w minimalistycznych stronach firmowych i portfolio.</p>",
+      "breakAfter": false
+    },
+    {
+      "type": "colorPalette",
+      "colors": ["#2563EB", "#0891B2", "#10B981"]
+    },
+    {
+      "type": "richtext",
+      "html": "<h3 class='h4 mb-2 mt-4'>Analogiczny</h3><p>Kolory sąsiadujące na kole barw (np. niebieski, turkusowy, zielony). Tworzą harmonijną, spokojną kompozycję. Dobry wybór, gdy chcesz uniknąć mocnych kontrastów.</p>",
+      "breakAfter": false
+    },
+    {
+      "type": "colorPalette",
+      "colors": ["#2563EB", "#F97316"]
+    },
+    {
+      "type": "richtext",
+      "html": "<h3 class='h4 mb-2 mt-4'>Komplementarny</h3><p>Kolory leżące naprzeciwko siebie na kole barw (np. niebieski i pomarańczowy). Dają wysoki kontrast i dynamikę. Kolor komplementarny sprawdza się jako akcent (np. przycisk CTA), a kolor bazowy jako tło lub elementy nawigacji.</p>",
+      "breakAfter": false
+    },
+    {
+      "type": "colorPalette",
+      "colors": ["#EF4444", "#EAB308", "#2563EB"]
+    },
+    {
+      "type": "richtext",
+      "html": "<h3 class='h4 mb-2 mt-4'>Triadyczny</h3><p>Trzy kolory równo rozłożone na kole barw (np. czerwony, żółty, niebieski). Dają żywy, zrównoważony efekt. Wymagają uwagi przy proporcjach, żeby nie przytłoczyć odbiorcy.</p><br/><p>Nasz <a class='inline-link' href='/narzedzia/generator-palet-kolorow-online'>Generator palet kolorów online</a> pozwala wybrać kolor bazowy i automatycznie generuje palety we wszystkich tych schematach.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Krok 3: Ustal proporcje — zasada 60-30-10</h2><p>Sama paleta kolorów to za mało. Równie ważne jest to, w jakich proporcjach kolory występują na stronie. Sprawdzona zasada to podział 60-30-10:</p><br/><ul class='list-disc ml-5'><li><strong>60% — kolor dominujący:</strong> tło strony, główne powierzchnie. Najczęściej jest to kolor neutralny (biały, jasnoszary, kremowy) lub bardzo rozbielony odcień koloru marki.</li><li><strong>30% — kolor wspierający:</strong> nagłówki, karty, sekcje, elementy nawigacji. Może to być ciemniejszy wariant koloru dominującego lub drugi kolor z palety.</li><li><strong>10% — kolor akcentu:</strong> przyciski CTA, linki, ikony, ważne wyróżniki. To kolor, który przyciąga wzrok i kieruje uwagę na kluczowe elementy.</li></ul><br/><p><strong>Dlaczego ta proporcja działa?</strong> Strona z zachowaną hierarchią kolorów jest czytelniejsza. Użytkownik intuicyjnie wie, gdzie patrzeć i co jest ważne. Zbyt wiele intensywnych kolorów rozprasza uwagę i utrudnia nawigację.</p><br/><p><strong>Praktyczny przykład dla sklepu internetowego:</strong></p>",
+      "breakAfter": false
+    },
+    {
+      "type": "colorPalette",
+      "colors": ["#FFFFFF", "#F5F5F5", "#FF6B35"]
+    },
+    {
+      "type": "richtext",
+      "html": "<ul class='list-disc ml-5'><li>Tło: biały (#FFFFFF) — 60%</li><li>Sekcje, karty produktów, stopka: jasnoszary (#F5F5F5) — 30%</li><li>Przyciski Dodaj do koszyka, Kup teraz: kolor akcentu (pomarańczowy #FF6B35) — 10%</li></ul>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Krok 4: Sprawdź kontrast i dostępność</h2><p>Paleta może wyglądać atrakcyjnie w projekcie, ale musi też działać w praktyce. Kluczowy parametr to kontrast między tekstem a tłem.</p><br/><h3 class='h4 mb-2 mt-4'>Standardy WCAG</h3><p>Wytyczne <a class='inline-link' href='https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html' target='_blank' rel='noopener noreferrer'>WCAG (Web Content Accessibility Guidelines)</a> określają minimalne wartości kontrastu:</p><ul class='list-disc ml-5'><li><strong>4.5:1</strong> — dla zwykłego tekstu (poziom AA)</li><li><strong>3:1</strong> — dla dużych nagłówków i elementów graficznych</li><li><strong>7:1</strong> — dla poziomu AAA (wyższa dostępność)</li></ul><br/><p><strong>Dlaczego to ważne?</strong> Niski kontrast oznacza, że część użytkowników (osoby starsze, osoby z wadami wzroku, osoby przeglądające stronę w słońcu na telefonie) będzie miała trudności z odczytaniem treści. To nie tylko kwestia dostępności — to też kwestia konwersji. Jeśli użytkownik nie może wygodnie przeczytać oferty, prawdopodobnie opuści stronę.</p><br/><p><strong>Jak sprawdzić kontrast?</strong> Użyj naszego <a class='inline-link' href='/narzedzia/tester-kontrastu-kolorow-wcag'>Testera kontrastu kolorów WCAG</a>. Narzędzie pokazuje współczynnik kontrastu i informuje, czy zestawienie przechodzi progi AA i AAA.</p><br/><h3 class='h4 mb-2 mt-4'>Typowe błędy kontrastowe</h3><ul class='list-disc ml-5'><li>Jasnoszary tekst na białym tle</li><li>Biały tekst na jasnym kolorowym tle (np. jasnoniebieski, jasnopomarańczowy)</li><li>Kolorowy tekst na kolorowym tle bez wystarczającego kontrastu</li></ul>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Krok 5: Przetestuj paletę w kontekście strony</h2><p>Kolory, które wyglądają dobrze osobno, mogą zachowywać się inaczej w kontekście całej strony. Przed wdrożeniem warto sprawdzić kilka rzeczy:</p><br/><h3 class='h4 mb-2 mt-4'>Test na urządzeniach mobilnych</h3><p>Ponad 60% ruchu w internecie pochodzi z urządzeń mobilnych (dane <a class='inline-link' href='https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/' target='_blank' rel='noopener noreferrer'>Statista</a>). Kolory mogą wyglądać inaczej na różnych ekranach — warto sprawdzić paletę na telefonie, tablecie i monitorze.</p><br/><h3 class='h4 mb-2 mt-4'>Test w różnych sekcjach strony</h3><p>Sprawdź, jak kolory wyglądają w różnych kontekstach:</p><ul class='list-disc ml-5'><li>nagłówek i nawigacja,</li><li>sekcja hero (główny baner),</li><li>karty produktów lub usług,</li><li>formularze kontaktowe,</li><li>stopka.</li></ul><br/><h3 class='h4 mb-2 mt-4'>Test z prawdziwą treścią</h3><p>Paleta testowana na lorem ipsum może wyglądać inaczej z prawdziwymi tekstami i zdjęciami. Warto jak najwcześniej podstawić rzeczywistą treść.</p><br/><h3 class='h4 mb-2 mt-4'>Spójność z innymi materiałami</h3><p>Jeśli marka ma już wizytówki, ulotki, profile w mediach społecznościowych — kolory na stronie powinny być z nimi spójne. Niespójność kolorystyczna osłabia rozpoznawalność marki.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Najczęstsze błędy przy doborze kolorów na stronę</h2><p>Na podstawie projektów, które analizujemy w Arteon, najczęstsze błędy to:</p><br/><ul class='list-disc ml-5'><li><strong>Zbyt wiele intensywnych kolorów</strong> — rozprasza uwagę i utrudnia nawigację. Rozwiązanie: ogranicz paletę do 3-5 kolorów i stosuj zasadę 60-30-10.</li><li><strong>Brak wyróżnienia elementów CTA</strong> — przyciski Kup teraz lub Kontakt giną na tle. Rozwiązanie: kolor akcentu powinien wyraźnie kontrastować z resztą strony.</li><li><strong>Niewystarczający kontrast tekstu</strong> — szczególnie na urządzeniach mobilnych w słońcu. Rozwiązanie: sprawdź kontrast narzędziem WCAG.</li><li><strong>Niespójność między stroną a innymi materiałami</strong> — logo ma inne kolory niż strona. Rozwiązanie: zbuduj paletę wokół kolorów z logo.</li><li><strong>Ignorowanie kontekstu branżowego</strong> — kolory, które nie pasują do oczekiwań klientów (np. jaskrawy róż dla kancelarii prawnej). Rozwiązanie: poznaj konwencje branży, zanim świadomie je złamiesz.</li></ul>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Narzędzia Arteon do pracy z kolorami</h2><p>Przygotowaliśmy trzy darmowe narzędzia, które ułatwiają dobór i weryfikację kolorów:</p><br/><ul class='list-disc ml-5'><li><a class='inline-link' href='/narzedzia/generator-palet-kolorow-online'>Generator palet kolorów online</a> — wybierz kolor bazowy i wygeneruj harmonijne palety w różnych schematach (monochromatyczny, analogiczny, komplementarny, triadyczny).</li><li><a class='inline-link' href='/narzedzia/generator-palety-kolorow-z-obrazu'>Generator palety kolorów z obrazu</a> — wgraj zdjęcie lub grafikę i wyciągnij z niej dominujące kolory.</li><li><a class='inline-link' href='/narzedzia/tester-kontrastu-kolorow-wcag'>Tester kontrastu kolorów WCAG</a> — sprawdź, czy zestawienie kolorów spełnia standardy dostępności.</li></ul><br/><p>Wszystkie narzędzia działają w przeglądarce, bez logowania i bez ograniczeń.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie: 5 kroków doboru kolorów</h2><ol class='list-decimal ml-5'><li><strong>Określ punkt wejścia</strong> — logo, branża lub inspiracja wizualna.</li><li><strong>Wybierz schemat kolorystyczny</strong> — monochromatyczny, analogiczny, komplementarny lub triadyczny.</li><li><strong>Ustal proporcje 60-30-10</strong> — dominujący, wspierający, akcent.</li><li><strong>Sprawdź kontrast</strong> — minimum 4.5:1 dla tekstu (WCAG AA).</li><li><strong>Przetestuj w kontekście</strong> — urządzenia mobilne, różne sekcje, prawdziwa treść.</li></ol><br/><p>Jeśli potrzebujesz wsparcia w stworzeniu pełnej identyfikacji wizualnej, w tym profesjonalnej palety kolorów dopasowanej do Twojej branży i celów biznesowych, zapoznaj się z naszą ofertą: <a class='inline-link' href='/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'>Projekt identyfikacji wizualnej</a>.</p>",
+      "breakAfter": true
+    }
+  ],
+  "cta": {
+    "title": "Potrzebujesz profesjonalnej palety kolorów?",
+    "description": "Skorzystaj z naszych darmowych narzędzi do generowania palet lub skontaktuj się — pomożemy Ci stworzyć spójną identyfikację wizualną.",
+    "btnOne": "Generator palet kolorów",
+    "btnOneLink": "/narzedzia/generator-palet-kolorow-online",
+    "btnTwo": "Identyfikacja wizualna",
+    "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
+    "backgroundImage": "/assets/blog/jak-dobrac-kolory-do-strony-internetowej/jak-dobrac-kolory-do-strony-internetowej.webp",
+    "overlay": "black"
+  },
+  "faq": [
+    {
+      "question": "Ile kolorów powinna mieć strona internetowa?",
+      "answer": "Optymalna liczba to 3-5 kolorów: jeden dominujący (tło), jeden wspierający (sekcje, nagłówki) i jeden akcent (przyciski, linki). Zasada 60-30-10 pomaga zachować równowagę i czytelność."
+    },
+    {
+      "question": "Jak wybrać kolor akcentu na stronę?",
+      "answer": "Kolor akcentu powinien kontrastować z resztą strony i przyciągać wzrok. Jeśli masz logo — użyj koloru z logo. Jeśli nie — wybierz kolor komplementarny do dominującego lub kolor, który wyróżnia się na tle palety."
+    },
+    {
+      "question": "Czy kolor przycisku wpływa na konwersję?",
+      "answer": "Tak, ale nie chodzi o konkretny kolor — liczy się kontrast z resztą strony. Przycisk musi wyróżniać się na tle, żeby użytkownik go zauważył. Testy A/B pokazują różnice w konwersji nawet o 20-30% przy zmianie koloru CTA."
+    },
+    {
+      "question": "Co to jest kontrast WCAG i dlaczego jest ważny?",
+      "answer": "WCAG to wytyczne dostępności określające minimalny kontrast między tekstem a tłem: 4.5:1 dla zwykłego tekstu, 3:1 dla nagłówków. Niski kontrast utrudnia czytanie, szczególnie osobom starszym i osobom z wadami wzroku."
+    },
+    {
+      "question": "Jak sprawdzić, czy moje kolory są czytelne?",
+      "answer": "Użyj testera kontrastu zgodnego z WCAG. Nasz darmowy Tester kontrastu kolorów WCAG pokazuje współczynnik kontrastu i informuje, czy zestawienie spełnia standardy AA i AAA."
+    }
+  ]
+},
+
+{
   "slug": "jak-przygotowac-sklep-internetowy-do-pozycjonowania",
   "title": "Jak przygotować sklep internetowy do pozycjonowania?",
   "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Zobacz, jak przygotować strukturę, treści i techniczne podstawy sklepu, aby działania SEO miały realne szanse przełożyć się na widoczność i sprzedaż.",
@@ -450,8 +608,21 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Psychologia koloru w procesie zakupowym (dane naukowe)</h2><h3 class='h4 mb-2 mt-4'>Czerwony - energia, działanie, pilność</h3><p>Badania Journal of Business Research potwierdzają, że czerwony:</p><br/><ul class='list-disc ml-5'><li>zwiększa poczucie pilności,</li><li>podnosi CTR (w testach A/B nawet o 20-30%),</li><li>przyciąga wzrok szybciej niż inne barwy.</li></ul><br/><p>Źródło: <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://www.sciencedirect.com/journal/journal-of-business-research'>Journal of Business Research</a></p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Psychologia koloru w procesie zakupowym (dane naukowe)</h2>",
           "breakAfter": false
+        },
+        {
+          "type": "colorPalette",
+          "colors": ["#DC2626", "#EF4444", "#F87171"]
+        },
+        {
+          "type": "richtext",
+          "html": "<h3 class='h4 mb-2 mt-4'>Czerwony - energia, działanie, pilność</h3><p>Badania Journal of Business Research potwierdzają, że czerwony:</p><br/><ul class='list-disc ml-5'><li>zwiększa poczucie pilności,</li><li>podnosi CTR (w testach A/B nawet o 20-30%),</li><li>przyciąga wzrok szybciej niż inne barwy.</li></ul><br/><p>Źródło: <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://www.sciencedirect.com/journal/journal-of-business-research'>Journal of Business Research</a></p>",
+          "breakAfter": false
+        },
+        {
+          "type": "colorPalette",
+          "colors": ["#1E40AF", "#2563EB", "#3B82F6"]
         },
         {
           "type": "richtext",
@@ -459,14 +630,26 @@
           "breakAfter": false
         },
         {
+          "type": "colorPalette",
+          "colors": ["#166534", "#16A34A", "#22C55E"]
+        },
+        {
           "type": "richtext",
           "html": "<h3 class='h4 mb-2 mt-4'>Zielony - ekologia, stabilność, równowaga</h3><p>Badania Environmental Psychology wskazują, że zielony:</p><br/><ul class='list-disc ml-5'><li>obniża poziom stresu,</li><li>wzmacnia skojarzenia z naturalnością,</li><li>pomaga budować wizerunek marki odpowiedzialnej.</li></ul><br/><p>Źródło: <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://www.journals.elsevier.com/journal-of-environmental-psychology'>Journal of Environmental Psychology</a></p>",
           "breakAfter": false
         },
         {
+          "type": "colorPalette",
+          "colors": ["#000000", "#1F2937", "#374151"]
+        },
+        {
           "type": "richtext",
           "html": "<h3 class='h4 mb-2 mt-4'>Czarny - luksus, elegancja, wysoka jakość</h3><p>Według analiz Pantone Institute:</p><br/><ul class='list-disc ml-5'><li>czarny zwiększa postrzeganą wartość produktu,</li><li>wzmacnia wrażenie prestiżu,</li><li>jest kolorem dominującym w branży fashion i high-end.</li></ul><br/><p>Źródło: <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://www.pantone.com/articles/color-psychology'>Pantone - Color Psychology</a></p>",
           "breakAfter": false
+        },
+        {
+          "type": "colorPalette",
+          "colors": ["#CA8A04", "#EAB308", "#FACC15"]
         },
         {
           "type": "richtext",

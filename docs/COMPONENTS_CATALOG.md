@@ -518,6 +518,17 @@ Struktura repo (w uproszczeniu):
 - **Odpowiedzialności**:
   - **[a11y]** `aria-label`, domyślne `target`/`rel` dla zewnętrznych.
 
+### `ColorPalette` (`components/ui/ColorPalette.tsx`)
+
+- **Co robi**: Wyświetla paletę kolorów jako rząd małych kwadratów (2-6 kolorów).
+- **Odpowiedzialności**:
+  - **[render]** renderuje kwadraty kolorów z wartościami HEX.
+  - **[a11y]** `aria-label` i `title` z wartością koloru.
+- **Props**:
+  - `colors: string[]` — tablica kolorów HEX (2-6 elementów).
+  - `label?: string` — opcjonalna etykieta nad paletą.
+- **Użycie**: blok `colorPalette` w `contentBlocks` artykułów.
+
 ### `TableBlock` (`components/ui/TableBlock.tsx`)
 
 - **Co robi**: Stylowana tabela z caption/note/align i striping.

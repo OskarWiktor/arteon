@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Jak dobrać kolory do strony internetowej lub sklepu?**
+
+  - **Slug**: `jak-dobrac-kolory-do-strony-internetowej`
+  - **URL**: `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
+  - **Kategorie**: `Grafika`, `Branding`, `UX`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 8 min
+  - **Opis**: Praktyczny przewodnik po doborze kolorów na stronę w 5 krokach. Dane z badań (50ms pierwsze wrażenie, +80% rozpoznawalność marki, +21% konwersja CTA), linki do źródeł zewnętrznych (WCAG, Colorcom, HubSpot, Statista), narzędzia Arteon.
+  - **Linki wewnętrzne**: `/narzedzia/generator-palet-kolorow-online`, `/narzedzia/generator-palety-kolorow-z-obrazu`, `/narzedzia/tester-kontrastu-kolorow-wcag`, `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+  - **Linki zewnętrzne**: Behaviour & Information Technology, Colorcom, HubSpot, WCAG W3C, Statista
+  - **FAQ**: 5 pytań
+  - **CTA**: Generator palet kolorów + Identyfikacja wizualna
+
 - **Jak przygotować sklep internetowy do pozycjonowania?**
 
   - **Slug**: `jak-przygotowac-sklep-internetowy-do-pozycjonowania`

@@ -19,6 +19,7 @@ import CodeBlock from '@/components/ui/CodeBlock';
 import TableBlock from '@/components/ui/TableBlock';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import ShareBlock from '@/components/sections/ShareBlock';
+import ColorPalette from '@/components/ui/ColorPalette';
 
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
 
@@ -72,10 +73,10 @@ function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' |
   return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
-type FlowBlock = Extract<Article['contentBlocks'][number], { type: 'richtext' | 'code' | 'table' | 'quote' }>;
+type FlowBlock = Extract<Article['contentBlocks'][number], { type: 'richtext' | 'code' | 'table' | 'quote' | 'colorPalette' }>;
 
 function isFlowBlock(b: Article['contentBlocks'][number]): b is FlowBlock {
-  return b.type === 'richtext' || b.type === 'code' || b.type === 'table' || b.type === 'quote';
+  return b.type === 'richtext' || b.type === 'code' || b.type === 'table' || b.type === 'quote' || b.type === 'colorPalette';
 }
 
 function FlowGroup({ items }: { items: FlowBlock[] }) {
@@ -121,6 +122,13 @@ function FlowGroup({ items }: { items: FlowBlock[] }) {
                   </figcaption>
                 )}
               </figure>
+            </div>
+          );
+        }
+        if (b.type === 'colorPalette') {
+          return (
+            <div key={`f-cp-${i}`} className="not-prose mt-3 mb-1">
+              <ColorPalette colors={b.colors} />
             </div>
           );
         }

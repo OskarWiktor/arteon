@@ -1,5 +1,21 @@
 # DONE_TASKS
 
+## 2025-12-21
+
+- ✅ **[IDEA-055] Blog: Jak dobrać kolory do strony internetowej lub sklepu?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `jak-dobrac-kolory-do-strony-internetowej`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, bez potocznych zwrotów, bez DIY).
+    - 8 sekcji H2 zgodnych z konspektem.
+    - 5 linków wewnętrznych (3 narzędzia + 1 usługa + 1 artykuł powiązany).
+    - 5 pytań FAQ.
+    - CTA: Generator palet kolorów + Identyfikacja wizualna.
+    - Czas czytania: 6 min (1188 słów).
+  - Weryfikacja: JSON valid (node parse OK).
+
 ## 2025-12-20
 
 - ✅ **[IDEA-059] Blog: Jak przygotować sklep internetowy do pozycjonowania?**

@@ -936,36 +936,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ❌ **[IDEA-055] Blog: Jak dobrać kolory do strony internetowej lub sklepu?**
-
-  - Cel i uzasadnienie:
-    - Wzmocnić klaster Grafika/Branding + dać kontekst dla generatora palet i ekstraktora palet.
-    - Artykuł odpowiada na częste pytanie klientów przed zleceniem strony.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2/H3):
-    - H2: Dlaczego dobór kolorów ma znaczenie (pierwsze wrażenie, emocje, konwersja)
-    - H2: Od czego zacząć: paleta z logo, branży czy inspiracji?
-    - H2: Ile kolorów potrzebujesz (zasada 60-30-10)
-    - H2: Jak wybrać kolory, które pasują do siebie (koło barw, narzędzia)
-    - H2: Jak sprawdzić, czy kolory działają na stronie (kontrast, czytelność, mobile)
-    - H2: Narzędzia Arteon, które pomogą Ci dobrać paletę
-    - H2: Podsumowanie + CTA (generator palet / oferta identyfikacji wizualnej)
-  - Linkowanie wewnętrzne:
-    - `/narzedzia/generator-palet-kolorow-online`
-    - `/narzedzia/generator-palety-kolorow-z-obrazu`
-    - `/narzedzia/tester-kontrastu-kolorow-wcag`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
-  - SEO:
-    - URL/slug: `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
-    - `metadata.title`: `Jak dobrać kolory do strony internetowej lub sklepu? | Arteon`
-    - `metadata.description`: `Praktyczny przewodnik po doborze kolorów na stronę. Dowiedz się, ile kolorów potrzebujesz, jak je łączyć i jak sprawdzić, czy działają.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki.
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
 
 - ❌ **[IDEA-056] Blog: Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?**
 
@@ -1059,8 +1029,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ✅ **[IDEA-059] Blog: Jak przygotować sklep internetowy do pozycjonowania?**
-
   - Cel i uzasadnienie:
     - Wzmocnić klaster E-commerce + SEO + dać kontekst dla usługi sklepów i pozycjonowania.
     - Artykuł odpowiada na pytanie właścicieli sklepów „co zrobić, żeby sklep był widoczny w Google?".
@@ -1095,3 +1063,21 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Slug: `jak-przygotowac-sklep-internetowy-do-pozycjonowania`
     - 5 linków wewnętrznych + CTA do usług.
     - 5 pytań FAQ.
+
+- ❌ **[IDEA-060] Audyt: przegląd artykułów i stron pod kątem pomysłów na nowe komponenty**
+
+  - Cel i uzasadnienie:
+    - Zwiększyć różnorodność wizualną strony poprzez dodanie nowych komponentów do artykułów i stron.
+    - Zidentyfikować miejsca, gdzie dodatkowe komponenty (np. wizualizacje, interaktywne elementy, porównania) wzbogaciłyby treść.
+  - Zakres:
+    - Przegląd wszystkich artykułów w `data/pl/blog.json`.
+    - Przegląd stron usług, narzędzi i realizacji.
+    - Analiza innych stron internetowych pod kątem inspiracji.
+  - Oczekiwany wynik:
+    - Lista pomysłów na nowe komponenty (np. porównanie przed/po, timeline, karty z ikonami, interaktywne kalkulatory, wizualizacje danych).
+    - Dla każdego pomysłu: nazwa, opis, przykładowe użycie, priorytety.
+  - Kryteria akceptacji:
+    - Min. 5-10 pomysłów na nowe komponenty.
+    - Każdy pomysł z opisem i przykładowym zastosowaniem.
+    - Lista zapisana jako osobne zadania `COMPONENTS-*` lub notatka w `DONE_TASKS.md`.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
