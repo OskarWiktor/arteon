@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Materiały drukowane dla firmy: które zamówić na start?**
+
+  - **Slug**: `materialy-drukowane-dla-firmy-ktore-zamowic`
+  - **URL**: `/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic`
+  - **Kategorie**: `Grafika`, `Branding`, `Druk`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 7 min
+  - **Opis**: Artykuł o materiałach drukowanych dla firm. Kiedy mają sens, co zamówić na start (wizytówki), rozszerzenie (ulotki, papier firmowy), pełny zestaw (katalog, teczka). Jak zaplanować spójny zestaw zgodny z identyfikacją wizualną.
+  - **Linki wewnętrzne**: `/uslugi/projekty-graficzne/projekt-wizytowki`, `/uslugi/projekty-graficzne/projekt-ulotki`, `/uslugi/projekty-graficzne/projekt-katalogu`, `/uslugi/projekty-graficzne/projekt-papieru-firmowego`, `/uslugi/projekty-graficzne/projekt-teczki-ofertowej`, `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+  - **Linki zewnętrzne**: MarketingProfs, Statista
+  - **FAQ**: 5 pytań
+  - **CTA**: Projekty graficzne + Identyfikacja wizualna
+
 - **Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?**
 
   - **Slug**: `kody-qr-w-materialach-reklamowych`

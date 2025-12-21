@@ -2,6 +2,22 @@
 
 ## 2025-12-21
 
+- ✅ **[IDEA-057] Blog: Materiały drukowane dla firmy: które zamówić na start?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `materialy-drukowane-dla-firmy-ktore-zamowic`
+  - **Zrobione**:
+    - Zmieniony tytuł i konspekt (bardziej SEO-friendly).
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, bez oceniania).
+    - 7 sekcji H2 zgodnych z nowym konspektem.
+    - 6 linków wewnętrznych do usług graficznych.
+    - 2 linki zewnętrzne ze źródłami (MarketingProfs, Statista).
+    - 5 pytań FAQ.
+    - CTA: Projekty graficzne + Identyfikacja wizualna.
+    - Czas czytania: 7 min.
+  - Weryfikacja: JSON valid (node parse OK).
+
 - ✅ **[IDEA-056] Blog: Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?**
 
   - Plik: `data/pl/blog.json`

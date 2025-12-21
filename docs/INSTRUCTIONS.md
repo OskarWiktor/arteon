@@ -309,6 +309,22 @@ Dla każdego zadania:
   - ❌ „Przydatne linki:\n👉 Link1\n👉 Link2" → ✅ (wpleć linki naturalnie w ostatni akapit, np. „Zajmujemy się [budową sklepów](/uslugi/sklepy-internetowe) oraz [pozycjonowaniem](/uslugi/marketing/pozycjonowanie-stron).")
   - ❌ „Jeśli nie jesteś techniczny..." → ✅ „Nawet bez wiedzy technicznej możesz..."
   - ❌ „to proste", „to oczywiste" → ✅ (usuń lub opisz konkretnie co i dlaczego)
+  - ❌ „Problem w tym, że wiele firm stosuje X bez przemyślenia. Efekt? Y" → ✅ „X działa najlepiej w konkretnych kontekstach" (bez oceny innych)
+  - ❌ „to absurd", „wręcz szkodzi", „wręcz przeszkadza" → ✅ „nie jest potrzebny", „wydłuża drogę do celu"
+  - ❌ „bez zaśmiecania etykiety tekstem" → ✅ „nie powiększając etykiety ani nie zmniejszając czcionki"
+  - ❌ „Najczęstsze błędy przy X" → ✅ „Na co zwrócić uwagę przy X?" (mentorski ton zamiast wytykania błędów)
+  - ❌ Pytania retoryczne typu „Billboard przy autostradzie? Baner na dachu?" → ✅ Pełne zdania opisowe
+  - ❌ „stosowany z głową" → ✅ „w konkretnych kontekstach" (bez sugerowania, że ktoś robi coś bez głowy)
+  - ❌ „gdzie klienci mogą ją zabrać" → ✅ „skąd klienci mogą ją zabrać" (poprawna składnia z przyimkiem „skąd")
+  - ❌ „wymaga więcej pracy" → ✅ „wymaga większej ilości pracy" (poprawna składnia)
+  - ❌ „z nagłówkiem zawierającym X, Y i stopkę" → ✅ „z nagłówkiem (X, Y u góry) oraz stopką (Z na dole)" (rozdziel elementy logicznie)
+  - ❌ „wizytówka to pierwszy kontakt z marką" → ✅ „wizytówka zostaje z klientem i ułatwia późniejszy kontakt" (konkretna korzyść)
+
+- **Zakaz anglicyzmów bez wyjaśnienia (obowiązkowo)**: Nie używaj angielskich terminów marketingowych (np. „direct mail", „response rate") bez natychmiastowego wyjaśnienia po polsku. Zamiast „4,4% response rate" napisz „4-5 osób na 100 odpowiada". Czytelnik musi zrozumieć przekaz bez znajomości angielskiego.
+
+- **Nie odsyłaj do konkurencji (obowiązkowo)**: W FAQ i CTA nigdy nie sugeruj, że czytelnik może zamówić usługi „u projektanta lub agencji" (ogólnie). Zawsze kieruj do Arteon. Zamiast „zamawiając u tego samego projektanta..." napisz „W Arteon możesz zamówić wszystko w jednym miejscu..."
+
+- **Statystyki muszą być zrozumiałe (obowiązkowo)**: Podając dane liczbowe, przelicz je na konkretne przykłady. Zamiast „4,4% wskaźnik odpowiedzi" napisz „na 100 wysłanych ulotek, 4-5 osób odpowiada". Zamiast „0,12%" napisz „1 osoba na 1000".
 
 - **Zakaz checklist (doprecyzowanie, bez konfliktów)**: nie twórz w artykułach sekcji „Checklista" ani list „do odhaczania". Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety". Krótkie listy informacyjne (np. 3–5 wniosków) są dozwolone, o ile nie mają formy „odfajkuj to”.
 
