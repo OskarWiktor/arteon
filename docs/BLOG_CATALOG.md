@@ -25,6 +25,18 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Jak przygotować sklep internetowy do pozycjonowania?**
+
+  - **Slug**: `jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+  - **URL**: `/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+  - **Kategorie**: `SEO`, `Widoczność`, `Treści`
+  - **Data publikacji**: 2025-12-20
+  - **Czas czytania**: 11 min
+  - **Opis**: Artykuł o przygotowaniu sklepu e-commerce do SEO — struktura kategorii, opisy produktów, techniczne podstawy, linkowanie wewnętrzne, blog w sklepie.
+  - **Linki wewnętrzne**: `/uslugi/sklepy-internetowe`, `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/tworzenie-tresci`, `/edukacja/seo/jak-pisac-tresci-...`
+  - **FAQ**: 5 pytań
+  - **CTA**: Sklepy internetowe + Pozycjonowanie stron
+
 - **Jak kolorystyka wpływa na decyzje zakupowe klientów?**
 
   - **Slug**: `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`

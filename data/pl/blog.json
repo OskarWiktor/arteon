@@ -1,5 +1,123 @@
 {
   "articles": [
+{
+  "slug": "jak-przygotowac-sklep-internetowy-do-pozycjonowania",
+  "title": "Jak przygotować sklep internetowy do pozycjonowania?",
+  "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Zobacz, jak przygotować strukturę, treści i techniczne podstawy sklepu, aby działania SEO miały realne szanse przełożyć się na widoczność i sprzedaż.",
+  "primaryCategory": "SEO",
+  "category": ["Widoczność", "Treści"],
+  "tags": [
+    "pozycjonowanie sklepu",
+    "seo e-commerce",
+    "sklep internetowy",
+    "opisy produktów",
+    "struktura kategorii",
+    "dane strukturalne",
+    "linkowanie wewnętrzne",
+    "blog w sklepie",
+    "seo techniczne"
+  ],
+  "seo": {
+    "title": "Jak przygotować sklep internetowy do pozycjonowania? | Arteon",
+    "description": "Dowiedz się, jak przygotować sklep online do SEO: struktura kategorii, opisy produktów, filtry, dane strukturalne, szybkość i linkowanie wewnętrzne.",
+    "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania"
+  },
+  "cover": "/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp",
+  "author": { "name": "Arteon" },
+  "datePublished": "2025-12-20",
+  "dateModified": "2025-12-20",
+  "readingTime": 11,
+  "contentBlocks": [
+    {
+      "type": "richtext",
+      "html": "<p>Jeśli prowadzisz sklep internetowy, naturalnym pytaniem jest to, jak sprawić, aby klienci regularnie trafiali do niego z Google.</p><br/><p><strong>Pozycjonowanie sklepu internetowego</strong> różni się od SEO klasycznej strony firmowej, ponieważ sklep jest systemem. Masz kategorie, produkty, filtry, warianty, strony koszyka, konta i dziesiątki miejsc, w których może powstać bałagan.</p><br/><p>Ten artykuł pomoże Ci przygotować sklep do SEO w sposób spokojny i uporządkowany. Dostaniesz konkretne przykłady, proste wyjaśnienia i jasne priorytety. Nie po to, aby zastąpić pracę specjalisty, tylko po to, abyś rozumiał, co ma znaczenie i o co warto zadbać, zanim zaczniesz inwestować czas i budżet.</p><br/><p>W trakcie czytania przydadzą Ci się trzy darmowe narzędzia, które pokazują stan techniczny i podpowiadają, gdzie są problemy: <a class='inline-link' href='https://pagespeed.web.dev/' target='_blank'>PageSpeed Insights</a>, <a class='inline-link' href='https://search.google.com/test/rich-results' target='_blank'>Google Rich Results Test</a> oraz dokumentacja Google o <a class='inline-link' href='https://developers.google.com/search/blog/2016/11/mobile-first-indexing' target='_blank'>mobile-first indexing</a>.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego pozycjonowanie sklepu różni się od pozycjonowania strony firmowej?</h2><p>Strona firmowa zwykle składa się z kilku lub kilkunastu podstron. Sklep internetowy potrafi mieć setki, tysiące, a czasem dziesiątki tysięcy adresów URL.</p><br/><p>W typowym sklepie występują:</p><ul class='list-disc ml-5'><li>kategorie i podkategorie,</li><li>produkty oraz ich warianty,</li><li>filtry i sortowanie (np. rozmiar, kolor, cena, marka),</li><li>paginacja (kolejne strony list produktów),</li><li>strony koszyka, zamówień i kont użytkowników.</li></ul><br/><p>Dla Google oznacza to więcej pracy: robot musi te adresy znaleźć, zrozumieć i zdecydować, które z nich są wartościowe. Bez przemyślanej struktury łatwo o problemy: duplikację treści, indeksowanie stron bez wartości, zbyt wiele podobnych adresów lub brak czytelnej hierarchii.</p><br/><p>Jeśli chcesz, aby SEO w sklepie miało sens, warto podejść do niego systemowo. Wtedy treści, technikalia i nawigacja zaczynają wspierać się wzajemnie, zamiast działać w izolacji.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak ułożyć strukturę kategorii, aby pomagała SEO i klientom?</h2><p><strong>Struktura kategorii</strong> wpływa na dwa kluczowe obszary: to, jak łatwo klient znajdzie produkt oraz to, jak Google zrozumie Twoją ofertę.</p><br/><p>W praktyce dobra struktura jest prosta, logiczna i oparta o język klientów. Jeżeli sprzedajesz buty, to klient częściej szuka kategorii typu Buty do biegania lub Buty trekkingowe, a rzadziej kategorii typu Obuwie sportowe premium 2025.</p><br/><p>Przykład czytelnej struktury (2–3 poziomy, bez nadmiernego zagnieżdżania):</p><ul class='list-disc ml-5'><li>Buty</li><li class='ml-5'>Buty do biegania</li><li class='ml-10'>Buty do biegania damskie</li><li class='ml-10'>Buty do biegania meskie</li><li class='ml-5'>Buty trekkingowe</li><li>Odziez</li><li class='ml-5'>Kurtki</li><li class='ml-5'>Bluzy</li></ul><br/><p>Najczęstszy problem w sklepach to kategorie tworzone pod magazyn, a nie pod wyszukiwarkę. Klient szuka prostego punktu wejścia. Google również.</p><br/><p><strong>Co warto dopilnować na poziomie kategorii:</strong></p><ul class='list-disc ml-5'><li>Każda ważna kategoria ma unikalny tytuł i sensowny opis, a nie puste pole.</li><li>Adres URL kategorii jest krótki i czytelny (bez losowych parametrów i liczb).</li><li>Kategorie nie dublują się znaczeniowo (np. osobno: Koszulki meskie oraz T-shirty meskie, jeśli to ten sam zbiór produktów).</li></ul><br/><p>Jeśli struktura jest jasna, łatwiej planować treści, linkowanie i dalszy rozwój sklepu. Jeżeli struktura jest chaotyczna, SEO staje się droższe, ponieważ większość pracy idzie na naprawianie fundamentów.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak przygotować opisy kategorii, które realnie wspierają widoczność?</h2><p>W e-commerce dużo uwagi poświęca się opisom produktów, natomiast opisy kategorii często pozostają puste lub ogólnikowe. To przeoczenie, bo to właśnie kategorie bardzo często zbierają ruch z Google na frazy ogólne.</p><br/><p>Dobrze przygotowany opis kategorii działa w dwóch warstwach. Po pierwsze pomaga Google zrozumieć, co dokładnie znajduje się w tej kategorii. Po drugie pomaga klientowi zdecydować, czy to właściwe miejsce, zanim zacznie przeglądać produkty.</p><br/><p><strong>Praktyczny przykład, co może zawierać opis kategorii Buty do biegania damskie:</strong></p><ul class='list-disc ml-5'><li>1–2 zdania wprowadzające: dla kogo i do czego są te produkty.</li><li>Krótka sekcja poradnicza: na co zwrócić uwagę przy wyborze (np. nawierzchnia, amortyzacja, dopasowanie).</li><li>Odpowiedzi na typowe pytania klientów w formie naturalnych akapitów.</li></ul><br/><p>Opis nie musi być rozbudowany. Wystarczy, że odpowiada na realne wątpliwości kupującego i nie jest kopią z innego sklepu.</p><br/><p>Jeżeli masz dużo kategorii, warto zacząć od tych, które są najważniejsze sprzedażowo. Dzięki temu pierwsze efekty pojawią się szybciej.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak pisać opisy produktów, aby pomagały i Google, i klientowi?</h2><p>Opis produktu w sklepie ma dwa zadania. Ma pokazać, co to jest i dlaczego warto, a jednocześnie ma dać Google jasny sygnał, na jakie zapytania ten produkt pasuje.</p><br/><p>Najczęstszy problem to opisy skopiowane od producenta. Wtedy wiele sklepów konkuruje identyczną treścią i Google nie ma powodu, aby promować akurat Twój produkt.</p><br/><p><strong>Opis, który działa, zwykle zawiera:</strong></p><ul class='list-disc ml-5'><li>Jasny kontekst: dla kogo jest produkt i do jakiego zastosowania pasuje.</li><li>Konkrety: materiał, wymiary, kompatybilność, najważniejsze parametry podane w ludzkim języku.</li><li>Korzyści: co klient zyskuje w praktyce, a nie tylko lista cech.</li><li>Odpowiedzi na 2–3 typowe pytania, które pojawiają się przed zakupem (np. czy pasuje do X, jak dobrać rozmiar, czy nadaje się na Y).</li></ul><br/><p>Dobry opis ma podobną strukturę: najpierw rozpoznanie potrzeby, potem dopasowanie produktu, a na końcu rozwiązanie typowych wątpliwości.</p><br/><p><strong>Co z długością?</strong> 100–300 słów to często dobry zakres, ale nie jest to sztywna reguła. Niektóre produkty potrzebują dwóch zdań, inne potrzebują wyjaśnienia. Najważniejsze, aby opis był konkretny i unikalny.</p><br/><p>Jeżeli masz w sklepie 1000 produktów, nie zaczynaj od wszystkich. Zacznij od tych, które mają największą marżę, największą sprzedaż lub największy potencjał wyszukiwań. Taka kolejność zwykle daje najlepszy zwrot z pracy nad treścią.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak filtry i warianty produktów wpływają na SEO sklepu?</h2><p>Filtry są wygodne dla klienta, ale potrafią być trudne dla SEO. Dlaczego? Ponieważ jeden katalog produktów może wygenerować setki lub tysiące kombinacji adresów URL, które wyglądają podobnie, ale nie wnoszą unikalnej wartości.</p><br/><p>Przykład: jeśli klient filtruje Buty do biegania damskie po rozmiarze, kolorze i marce, sklep może tworzyć wiele podobnych podstron. Google może zacząć indeksować je masowo, a wtedy budżet indeksowania i moc SEO rozlewają się na strony, które nie są priorytetem.</p><br/><p>To temat, który warto omówić technicznie na etapie wdrożenia lub audytu, bo decyzja zależy od branży i zachowań klientów. W wielu sklepach część filtrów ma realną wartość (np. Buty do biegania damskie rozmiar 38), a część jest czysto pomocnicza (np. sortowanie od najtanszych).</p><br/><p>Jeżeli chcesz przygotować się do rozmowy z wykonawcą, pomyśl o dwóch rzeczach:</p><ul class='list-disc ml-5'><li>Jakie filtry odpowiadają realnym zapytaniom klientów w Google.</li><li>Które kombinacje filtrów mają sens jako osobne strony docelowe, a które powinny pozostać tylko funkcją na stronie.</li></ul><br/><p>Dzięki temu rozmowa z wykonawcą będzie konkretna, a decyzje techniczne — świadome.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jakie techniczne podstawy trzeba mieć, aby SEO nie bylo blokowane?</h2><p>Sklep internetowy jest z natury bardziej rozbudowany niż strona firmowa, więc technikalia potrafią realnie ograniczyć widoczność, nawet jeśli masz dobre treści.</p><br/><h3 class='h4 mb-2 mt-4'>Szybkość i Core Web Vitals</h3><p>Szybkość wpływa na doświadczenie użytkownika i na to, czy klient dokończy zakup. Google opisuje podstawowe metryki jakości strony jako Core Web Vitals. Są to m.in. LCP (czyli czas, po którym użytkownik widzi główną treść), INP (czyli responsywnosc po kliknięciu) oraz CLS (czyli stabilnosc ukladu strony). Proste wyjaśnienie i aktualne progi znajdziesz na <a class='inline-link' href='https://web.dev/articles/vitals' target='_blank'>web.dev</a>.</p><br/><p>Stan sklepu sprawdzisz w <a class='inline-link' href='https://pagespeed.web.dev/' target='_blank'>PageSpeed Insights</a>. Jeśli wynik mobilny jest niski, to nie zawsze znaczy, że sklep jest zły, ale zwykle oznacza, że warto przyjrzeć się obrazom, skryptom i wtyczkom. W e-commerce drobne opóźnienia potrafią wpływać na decyzje zakupowe, ponieważ użytkownicy oczekują szybkiego działania strony.</p><br/><h3 class='h4 mb-2 mt-4'>Wersja mobilna</h3><p>Google indeksuje strony w podejściu mobile-first, czyli ocenia Twoją witrynę głównie na podstawie wersji mobilnej. Opis tego podejścia jest w komunikacie Google: <a class='inline-link' href='https://developers.google.com/search/blog/2016/11/mobile-first-indexing' target='_blank'>Mobile-first indexing</a>.</p><br/><p>W praktyce oznacza to, że jeśli na telefonie brakuje ważnych treści, kategorie są nieczytelne lub kluczowe elementy są schowane, to sklep traci potencjał w wyszukiwarce.</p><br/><h3 class='h4 mb-2 mt-4'>Dane strukturalne (schema) dla produktów i okruszków</h3><p>Dane strukturalne to fragmenty kodu, które pomagają Google zrozumieć, co jest na stronie. W sklepie najczęściej chodzi o oznaczenie produktu: nazwa, cena, dostępność, czasem oceny. Oficjalne wytyczne Google są tutaj: <a class='inline-link' href='https://developers.google.com/search/docs/appearance/structured-data/product' target='_blank'>Product structured data</a>.</p><br/><p>Poprawnosc wdrożenia sprawdzisz w <a class='inline-link' href='https://search.google.com/test/rich-results' target='_blank'>Rich Results Test</a>. Jeżeli narzędzie pokazuje błędy lub brak danych, to sygnał, że warto dopracować implementację.</p><br/><h3 class='h4 mb-2 mt-4'>Zdjęcia, waga strony i czytelnosc</h3><p>Zdjęcia są sercem e-commerce, ale są też częstą przyczyną wolnego działania sklepu. Warto, aby zdjęcia były zoptymalizowane (format, waga, rozdzielczosc) i miały sensowne opisy alternatywne (alt), bo to pomaga w dostępności i w Google Grafika.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak zaplanować linkowanie wewnętrzne, żeby sklep prowadzil do zakupu?</h2><p><strong>Linkowanie wewnętrzne</strong> to sposób, w jaki Twoje strony łączą się ze sobą. Pomaga klientowi poruszać się po ofercie i pomaga Google zrozumieć, które strony są najważniejsze.</p><br/><p>W sklepie najczęściej działa to na czterech poziomach:</p><ul class='list-disc ml-5'><li><strong>Menu i nawigacja</strong>: klient ma szybki dostęp do głównych kategorii.</li><li><strong>Breadcrumbs (okruszki)</strong>: pokazują ścieżkę, np. Strona glowna → Buty → Buty do biegania → Produkt.</li><li><strong>Powiązane produkty</strong>: sekcje typu Podobne produkty lub Klienci kupili rowniez pomagają w sprzedaży i w SEO.</li><li><strong>Linki w treści</strong>: w opisach kategorii i artykułach możesz prowadzić do konkretnych produktów i podkategorii.</li></ul><br/><p>Praktyczny przykład: jeśli masz kategorię Kurtki zimowe, to w jej opisie warto naturalnie wskazać podkategorie (np. Parki, Kurtki narciarskie) oraz kilka bestsellerów. Dzięki temu klient szybciej dociera do celu, a Google widzi, które strony mają priorytet.</p><br/><p>Linkowanie wewnętrzne to jeden z obszarów, w których systematyczna praca porządkowa często daje widoczne efekty.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Czy blog w sklepie internetowym ma sens i jak podejsc do niego mądrze?</h2><p>Blog w sklepie nie jest obowiązkowy, ale bywa bardzo opłacalny, jeśli Twoi klienci szukają informacji przed zakupem. Schemat jest prosty: ktoś wpisuje pytanie w Google, trafia na artykuł, a stamtąd przechodzi do produktów.</p><br/><p>Tematy, które zwykle działają najlepiej w e-commerce, to treści odpowiadające na realne pytania, np. jak dobrać rozmiar, na co zwrócić uwagę przy wyborze, jaka jest różnica między wariantami, co lepiej sprawdzi się w konkretnym zastosowaniu.</p><br/><p>Jeśli blog ma działać sprzedażowo, warto pamiętać o jednej zasadzie: artykuł powinien naturalnie prowadzić do kategorii i produktów, a nie kończyć się na teorii. Linki w treści są elementem doświadczenia użytkownika, a nie dodatkiem.</p><br/><p>Jeżeli chcesz zobaczyć, jak piszemy treści pod widoczność i decyzje zakupowe, możesz podejrzeć nasz materiał: <a class='inline-link' href='/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google'>Jak pisać treści, które wspierają pozycje w Google?</a></p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak sprawdzic, czy sklep jest przygotowany do SEO, zanim zaczniesz inwestowac budżet?</h2><p>Nawet bez wiedzy technicznej możesz spokojnie ocenić kilka rzeczy, które zwykle najszybciej blokują efekty.</p><br/><p>Po pierwsze, sprawdź, czy kategorie mają sensowne nazwy i opisy oraz czy da się dojść do kluczowych produktów bez błądzenia. Jeśli klient się gubi, Google zwykle też ma trudniej.</p><br/><p>Po drugie, zobacz wynik w <a class='inline-link' href='https://pagespeed.web.dev/' target='_blank'>PageSpeed Insights</a>, zwłaszcza na telefonie. To nie jest wyrocznia, ale jeśli raport pokazuje poważne problemy, warto je potraktować jako sygnał do poprawy.</p><br/><p>Po trzecie, wklej link do produktu w <a class='inline-link' href='https://search.google.com/test/rich-results' target='_blank'>Rich Results Test</a>. Jeśli dane produktowe są widoczne i nie ma błędów, to dobry znak. Jeśli ich nie ma, sklep może tracić dodatkową widoczność w wynikach.</p><br/><p>Po czwarte, jeśli masz dostęp do Search Console, obserwuj, czy Google indeksuje strony, które mają wartość, a nie przypadkowe kombinacje filtrów. Wprowadzenie do Search Console jest tutaj: <a class='inline-link' href='https://developers.google.com/search/docs/monitor-debug/search-console-start' target='_blank'>Get started with Search Console</a>.</p><br/><p>To są proste kroki diagnostyczne, które pomagają rozmawiać z wykonawcą lub specjalistą konkretnie i rzeczowo.</p>",
+      "breakAfter": true
+    },
+    {
+      "type": "richtext",
+      "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie: co ma największy wpływ na przygotowanie sklepu do pozycjonowania?</h2><p>SEO sklepu internetowego daje najlepsze efekty wtedy, gdy jest oparte na porządnych fundamentach, a nie na przypadkowych działaniach.</p><br/><p>Najważniejsze obszary to:</p><ul class='list-disc ml-5'><li>czytelna struktura kategorii i sensowne opisy kategorii,</li><li>unikalne opisy produktów, które odpowiadają na realne pytania klientów,</li><li>rozsądne podejście do filtrów i wariantów, żeby sklep nie generował chaosu adresów,</li><li>techniczna sprawnosc: szybkość, mobilnosc, poprawne dane strukturalne,</li><li>linkowanie wewnętrzne, które prowadzi użytkownika przez ofertę i wzmacnia kluczowe strony.</li></ul><br/><p>Jeżeli chcesz, możemy spojrzeć na Twój sklep całościowo i ułożyć plan działań w dobrej kolejności: co poprawić najpierw, co rozbudować później i które działania zwykle dają najszybsze rezultaty. Zajmujemy się <a class='inline-link' href='/uslugi/sklepy-internetowe'>budową i rozwojem sklepów internetowych</a>, <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniem stron</a> oraz <a class='inline-link' href='/uslugi/tworzenie-tresci'>tworzeniem treści</a>, które wspierają widoczność i sprzedaż.</p>",
+      "breakAfter": true
+    }
+  ],
+  "cta": {
+    "title": "Przygotuj sklep do pozycjonowania",
+    "description": "Sprawdź, czy Twój sklep ma solidne fundamenty pod SEO. Pomożemy uporządkować strukturę, treści i technikalia, aby pozycjonowanie miało realny sens.",
+    "btnOne": "Sklepy internetowe",
+    "btnOneLink": "/uslugi/sklepy-internetowe",
+    "btnTwo": "Pozycjonowanie stron",
+    "btnTwoLink": "/uslugi/marketing/pozycjonowanie-stron",
+    "backgroundImage": "/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp",
+    "overlay": "black"
+  },
+  "faq": [
+    {
+      "question": "Ile czasu potrzeba, aby zobaczyc efekty pozycjonowania sklepu internetowego?",
+      "answer": "To zależy od punktu startowego, konkurencji i skali sklepu. W praktyce widoczność często zaczyna rosnąć stopniowo w ciągu kilku miesięcy, natomiast stabilniejsze efekty zwykle wymagają dłuższej, regularnej pracy. SEO w e-commerce jest procesem, w którym porządek w strukturze i treściach ma duże znaczenie dla tempa wyników."
+    },
+    {
+      "question": "Czy każdy produkt musi miec unikalny opis, aby SEO mialo sens?",
+      "answer": "Nie musisz zaczynać od całej bazy. Najczęściej najlepszy zwrot daje praca nad produktami i kategoriami, które są kluczowe sprzedażowo. Z czasem możesz rozszerzać unikalne opisy na kolejne segmenty oferty."
+    },
+    {
+      "question": "Czy filtry w sklepie mogą szkodzic SEO?",
+      "answer": "Mogą, jeśli generują bardzo dużo podobnych adresów URL, które Google zaczyna indeksować bez wartości. W wielu sklepach część stron filtrów ma sens jako strony docelowe, a część powinna pozostać tylko funkcją na stronie. To warto ustalić technicznie, bo zależy od branży i zachowań klientów."
+    },
+    {
+      "question": "Jak sprawdzic, czy sklep ma poprawnie wdrożone dane strukturalne produktu?",
+      "answer": "Najprościej użyć narzędzia Google Rich Results Test i wkleić adres karty produktu. Narzędzie pokaże, czy dane są widoczne i czy nie ma błędów. Dokumentacja Google o danych produktowych jest tutaj: https://developers.google.com/search/docs/appearance/structured-data/product"
+    },
+    {
+      "question": "Od czego zacząć, jeśli mam malo czasu i chce zrobic to rozsądnie?",
+      "answer": "Zacznij od priorytetów: uporządkuj strukturę kategorii, dopracuj opisy najważniejszych kategorii i produktów oraz sprawdź podstawy techniczne (szybkość i dane strukturalne). Te elementy zwykle najszybciej decydują o tym, czy dalsze działania SEO będą miały dobrą bazę."
+    }
+  ]
+},
+
     {
       "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
       "title": "Jak przygotować profesjonalną stopkę mailową?",

@@ -2,6 +2,33 @@
 
 ## 2025-12-20
 
+- ✅ **[IDEA-059] Blog: Jak przygotować sklep internetowy do pozycjonowania?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, bez DIY).
+    - 5 linków wewnętrznych do usług + CTA.
+    - 5 pytań FAQ.
+    - Cover: `/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp`
+  - Weryfikacja: JSON valid (node parse OK).
+
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny — artykuły wzmacniające klastry (2025-12-20)**
+
+  - Zakres: analiza istniejących artykułów, usług i narzędzi pod kątem luk w klastrach tematycznych.
+  - **Zidentyfikowane luki**:
+    - Narzędzia bez artykułów: generator palet, tester kontrastu WCAG, generator QR.
+    - Usługi słabo wsparte: projekty graficzne (druk), sklepy internetowe, audyt SEO.
+  - **Dodane pomysły (6 artykułów)**:
+    - `IDEA-054` — Kontrast kolorów na stronie (WCAG + narzędzie tester kontrastu)
+    - `IDEA-055` — Jak dobrać kolory do strony (generator palet + ekstraktor)
+    - `IDEA-056` — Kody QR w materiałach reklamowych (generator QR + usługi graficzne)
+    - `IDEA-057` — Jakie materiały drukowane warto mieć dla firmy (wizytówki/ulotki/katalogi)
+    - `IDEA-058` — Audyt SEO strony: co sprawdzamy (usługa audytu SEO + pozycjonowanie)
+    - `IDEA-059` — Jak przygotować sklep do pozycjonowania (sklepy + SEO)
+  - Weryfikacja: nie była wymagana (AUDIT-only).
+
 - ✅ **[COPY-050] Edukacja: uprościć tytuły i opisy kategorii (huby)**
 
   - Pliki:

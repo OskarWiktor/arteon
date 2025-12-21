@@ -89,8 +89,13 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
   - **Zrobione 2025-12-19**:
-    - Dodano pomysły wspierające klaster usług `/uslugi/projekty-graficzne` (projekty graficzne) + uporządkowano brakujące nagłówki w sekcji „Pomysły”.
+    - Dodano pomysły wspierające klaster usług `/uslugi/projekty-graficzne` (projekty graficzne) + uporządkowano brakujące nagłówki w sekcji „Pomysły".
     - Dodane ID: `IDEA-048`, `IDEA-049`, `IDEA-050`, `IDEA-051`, `IDEA-052`, `IDEA-053`.
+
+  - **Zrobione 2025-12-20**:
+    - Dodano 6 pomysłów na artykuły wzmacniające klastry tematyczne (narzędzia + usługi).
+    - Klastry wzmocnione: Dostępność/WCAG, Grafika/Branding, Projekty graficzne (druk), SEO/Marketing, E-commerce.
+    - Dodane ID: `IDEA-054`, `IDEA-055`, `IDEA-056`, `IDEA-057`, `IDEA-058`, `IDEA-059`.
 
 - 🟡 **[AUDIT-007] Repo: audyt prawdziwości informacji i źródeł w istniejących artykułach**
 
@@ -113,27 +118,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Dopisz osobne zadania `CONTENT-*` z listą artykułów do poprawy i kryteriami akceptacji.
     - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu + ID nowych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
-
-  - **Zrobione 2025-12-19**:
-
-    - Przeanalizowano 8 artykułów (wszystkie oprócz 2 wzorcowych).
-    - Wzorcowe (OK): `jak-przygotowac-profesjonalna-stopke-mailowa`, `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`.
-    - Raport problemów dla każdego artykułu — patrz poniżej.
-    - Dodano zadania (1 artykuł = 1 zadanie): `CONTENT-006`, `CONTENT-007`, `CONTENT-008`, `CONTENT-009`, `CONTENT-010`, `CONTENT-011`, `CONTENT-012` (oraz wcześniej: `CONTENT-004`).
-    - `CONTENT-002` i `CONTENT-003` zostają jako zadania zbiorcze (epiki) z linkami do powyższych.
-
-  - **Raport szczegółowy (problemy vs wytyczne)**:
-
-    | Slug                                                                                | Problemy                                                                                                                                                                    |
-    | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`                   | Brak analogii; terminy (long-tail, FAQ schema, topical authority) bez wyjaśnienia; ton ekspercki zamiast mentorskiego; brak FAQ                                             |
-    | `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`                               | Styl raportowy/naukowy; brak analogii; terminy (CTR, CTA, WCAG, UX) bez wyjaśnienia; brak FAQ                                                                               |
-    | `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`                | Styl formalny/korporacyjny; brak analogii; terminy (Core Web Vitals, autorytet domeny, topical authority) bez wyjaśnienia; brak FAQ                                         |
-    | `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`    | Lepszy ton, ale: terminy (long-tail, CAC) bez wyjaśnienia; brak FAQ                                                                                                         |
-    | `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp` | Terminy (LCP, CLS, INP, kompresja stratna/bezstratna) bez wyjaśnienia; **zduplikowane sekcje** (błąd techniczny!); brak FAQ; ma checklistę zamiast podsumowania priorytetów |
-    | `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`      | Bardzo długi (22 min); styl podręcznikowy; terminy (E-E-A-T, klaster tematyczny, meta title, intencja użytkownika) bez wyjaśnienia; brak analogii                           |
-    | `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`                             | Styl formalny/korpo; brak analogii; terminy (brandbook, typografia) bez wyjaśnienia; emoji w tekście                                                                        |
-    | `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`          | Ma checklistę (tabela); terminy (robots.txt, noindex, sitemap, Googlebot) bez wyjaśnienia "po co to"; styl techniczny                                                       |
 
 - ❌ **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
 
@@ -923,3 +907,191 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Weryfikacja:
     - `npm run lint`
     - `npm run build`
+
+- ❌ **[IDEA-054] Blog: Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster dostępności/WCAG + dać kontekst dla narzędzia tester kontrastu.
+    - Artykuł edukuje, dlaczego kontrast wpływa na czytelność i dostępność, oraz kieruje do narzędzia Arteon.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2/H3):
+    - H2: Co to jest kontrast kolorów i dlaczego ma znaczenie dla użytkowników
+    - H2: Kto korzysta z dobrego kontrastu (osoby słabowidzące, seniorzy, użytkownicy w słońcu)
+    - H2: Standard WCAG: co oznaczają poziomy AA i AAA (proste wyjaśnienie)
+    - H2: Jak sprawdzić kontrast na swojej stronie (narzędzie Arteon + inne metody)
+    - H2: Najczęstsze błędy kontrastowe i jak je poprawić (przykłady)
+    - H2: Podsumowanie + CTA (tester kontrastu / oferta stron)
+  - Linkowanie wewnętrzne:
+    - `/narzedzia/tester-kontrastu-kolorow-wcag`
+    - `/uslugi/strony-internetowe`
+    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+  - SEO:
+    - URL/slug: `/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
+    - `metadata.title`: `Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest kontrast kolorów, jak wpływa na czytelność i dostępność strony oraz jak sprawdzić, czy Twoja strona spełnia standardy WCAG.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 3 linki wewnętrzne + CTA do narzędzia lub usługi.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-055] Blog: Jak dobrać kolory do strony internetowej lub sklepu?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster Grafika/Branding + dać kontekst dla generatora palet i ekstraktora palet.
+    - Artykuł odpowiada na częste pytanie klientów przed zleceniem strony.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2/H3):
+    - H2: Dlaczego dobór kolorów ma znaczenie (pierwsze wrażenie, emocje, konwersja)
+    - H2: Od czego zacząć: paleta z logo, branży czy inspiracji?
+    - H2: Ile kolorów potrzebujesz (zasada 60-30-10)
+    - H2: Jak wybrać kolory, które pasują do siebie (koło barw, narzędzia)
+    - H2: Jak sprawdzić, czy kolory działają na stronie (kontrast, czytelność, mobile)
+    - H2: Narzędzia Arteon, które pomogą Ci dobrać paletę
+    - H2: Podsumowanie + CTA (generator palet / oferta identyfikacji wizualnej)
+  - Linkowanie wewnętrzne:
+    - `/narzedzia/generator-palet-kolorow-online`
+    - `/narzedzia/generator-palety-kolorow-z-obrazu`
+    - `/narzedzia/tester-kontrastu-kolorow-wcag`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+  - SEO:
+    - URL/slug: `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
+    - `metadata.title`: `Jak dobrać kolory do strony internetowej lub sklepu? | Arteon`
+    - `metadata.description`: `Praktyczny przewodnik po doborze kolorów na stronę. Dowiedz się, ile kolorów potrzebujesz, jak je łączyć i jak sprawdzić, czy działają.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki.
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-056] Blog: Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster projektów graficznych + dać kontekst dla generatora QR.
+    - Artykuł edukuje, kiedy QR ma sens, a kiedy jest zbędny, oraz kieruje do narzędzia.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2/H3):
+    - H2: Co to jest kod QR i jak działa (proste wyjaśnienie)
+    - H2: Kiedy kod QR ma sens (ulotki, wizytówki, plakaty, opakowania)
+    - H2: Kiedy kod QR jest zbędny lub wręcz przeszkadza
+    - H2: Najczęstsze błędy przy stosowaniu QR (rozmiar, kontrast, brak testów)
+    - H2: Jak stworzyć kod QR w kilka sekund (narzędzie Arteon)
+    - H2: Podsumowanie + CTA (generator QR / oferta ulotek / wizytówek)
+  - Linkowanie wewnętrzne:
+    - `/narzedzia/generator-kodu-qr`
+    - `/uslugi/projekty-graficzne/projekt-ulotki`
+    - `/uslugi/projekty-graficzne/projekt-wizytowki`
+    - `/uslugi/projekty-graficzne/projekt-katalogu`
+  - SEO:
+    - URL/slug: `/edukacja/grafika/kody-qr-w-materialach-reklamowych`
+    - `metadata.title`: `Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać? | Arteon`
+    - `metadata.description`: `Dowiedz się, kiedy kod QR na ulotce lub wizytówce ma sens, jakich błędów unikać i jak stworzyć QR w kilka sekund.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki.
+    - Min. 3 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-057] Blog: Jakie materiały drukowane warto mieć dla firmy usługowej?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić cały klaster projektów graficznych (wizytówki, ulotki, katalogi, teczki, papier firmowy).
+    - Artykuł odpowiada na pytanie klientów „co mi się przyda?" i kieruje do konkretnych usług.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2/H3):
+    - H2: Dlaczego materiały drukowane nadal mają sens w erze cyfrowej
+    - H2: Wizytówka: minimum, które warto mieć (kiedy i jak używać)
+    - H2: Ulotka i folder: kiedy się przydają, a kiedy są stratą pieniędzy
+    - H2: Katalog produktów lub usług: dla kogo ma sens
+    - H2: Papier firmowy i teczka ofertowa: profesjonalizm w szczegółach
+    - H2: Jak zaplanować materiały, żeby były spójne z identyfikacją wizualną
+    - H2: Podsumowanie: co zamówić na start + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/projekty-graficzne/projekt-wizytowki`
+    - `/uslugi/projekty-graficzne/projekt-ulotki`
+    - `/uslugi/projekty-graficzne/projekt-katalogu`
+    - `/uslugi/projekty-graficzne/projekt-papieru-firmowego`
+    - `/uslugi/projekty-graficzne/projekt-teczki-ofertowej`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+  - SEO:
+    - URL/slug: `/edukacja/grafika/jakie-materialy-drukowane-warto-miec-dla-firmy`
+    - `metadata.title`: `Jakie materiały drukowane warto mieć dla firmy usługowej? | Arteon`
+    - `metadata.description`: `Wizytówki, ulotki, katalogi, teczki — dowiedz się, które materiały drukowane przydadzą się Twojej firmie i jak je zaplanować.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki.
+    - Min. 5 linków wewnętrznych do usług graficznych + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-058] Blog: Audyt SEO strony: co sprawdzamy i po co to robić przed pozycjonowaniem?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster SEO/Marketing + dać kontekst dla usługi audytu SEO.
+    - Artykuł edukuje, czym jest audyt, co obejmuje i dlaczego warto zacząć od niego.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2/H3):
+    - H2: Co to jest audyt SEO i dlaczego warto go zrobić przed pozycjonowaniem
+    - H2: Co sprawdzamy w audycie technicznym (indeksacja, szybkość, mobile, błędy)
+    - H2: Co sprawdzamy w audycie treści (struktura, słowa kluczowe, thin content)
+    - H2: Co sprawdzamy w audycie linków (profil linków, linkowanie wewnętrzne)
+    - H2: Jak wygląda raport z audytu i co z nim zrobić
+    - H2: Kiedy audyt jest konieczny, a kiedy można go pominąć
+    - H2: Podsumowanie + CTA (audyt SEO / pozycjonowanie)
+  - Linkowanie wewnętrzne:
+    - `/uslugi/marketing/audyt-seo`
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/uslugi/marketing/optymalizacja-seo`
+    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+    - `/narzedzia/licznik-dlugosci-meta-title-i-description`
+  - SEO:
+    - URL/slug: `/edukacja/seo/audyt-seo-strony-co-sprawdzamy`
+    - `metadata.title`: `Audyt SEO strony: co sprawdzamy i po co to robić przed pozycjonowaniem? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest audyt SEO, co obejmuje i dlaczego warto go zrobić przed rozpoczęciem pozycjonowania strony.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość, nie instrukcję samodzielnego audytu).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[IDEA-059] Blog: Jak przygotować sklep internetowy do pozycjonowania?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster E-commerce + SEO + dać kontekst dla usługi sklepów i pozycjonowania.
+    - Artykuł odpowiada na pytanie właścicieli sklepów „co zrobić, żeby sklep był widoczny w Google?".
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2/H3):
+    - H2: Dlaczego pozycjonowanie sklepu różni się od pozycjonowania strony firmowej
+    - H2: Struktura kategorii i produktów: fundament SEO sklepu
+    - H2: Opisy produktów: co muszą zawierać, żeby Google je docenił
+    - H2: Techniczne podstawy: szybkość, mobile, dane strukturalne Product
+    - H2: Linkowanie wewnętrzne w sklepie: jak prowadzić użytkownika i robota
+    - H2: Blog w sklepie: kiedy ma sens i jak go prowadzić
+    - H2: Podsumowanie + CTA (sklepy internetowe / pozycjonowanie)
+  - Linkowanie wewnętrzne:
+    - `/uslugi/sklepy-internetowe`
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/uslugi/marketing/optymalizacja-seo`
+    - `/uslugi/tworzenie-tresci`
+    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+  - SEO:
+    - URL/slug: `/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+    - `metadata.title`: `Jak przygotować sklep internetowy do pozycjonowania? | Arteon`
+    - `metadata.description`: `Dowiedz się, jak przygotować sklep online do SEO: struktura kategorii, opisy produktów, techniczne podstawy i linkowanie wewnętrzne.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+  - **Zrobione 2025-12-20**:
+    - Dodano artykuł do `data/pl/blog.json` (na górze listy).
+    - Slug: `jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+    - 5 linków wewnętrznych + CTA do usług.
+    - 5 pytań FAQ.
