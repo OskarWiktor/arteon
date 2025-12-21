@@ -25,6 +25,18 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?**
+
+  - **Slug**: `kody-qr-w-materialach-reklamowych`
+  - **URL**: `/edukacja/grafika/kody-qr-w-materialach-reklamowych`
+  - **Kategorie**: `Grafika`, `Marketing`, `Druk`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 6 min
+  - **Opis**: Artykuł edukacyjny o stosowaniu kodów QR w materiałach drukowanych. Kiedy QR ma sens (ulotki, wizytówki, plakaty, opakowania, katalogi), kiedy jest zbędny (strona, e-mail, krótkie linki, billboardy), najczęstsze błędy (rozmiar, kontrast, brak testów, nieresponsywna strona, brak CTA).
+  - **Linki wewnętrzne**: `/narzedzia/generator-kodu-qr`, `/uslugi/projekty-graficzne/projekt-ulotki`, `/uslugi/projekty-graficzne/projekt-wizytowki`, `/uslugi/projekty-graficzne/projekt-katalogu`
+  - **FAQ**: 5 pytań
+  - **CTA**: Generator kodów QR + Projekty graficzne
+
 - **Jak dobrać kolory do strony internetowej lub sklepu?**
 
   - **Slug**: `jak-dobrac-kolory-do-strony-internetowej`

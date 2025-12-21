@@ -2,6 +2,20 @@
 
 ## 2025-12-21
 
+- ✅ **[IDEA-056] Blog: Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `kody-qr-w-materialach-reklamowych`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, bez DIY).
+    - 6 sekcji H2 zgodnych z konspektem.
+    - 4 linki wewnętrzne (1 narzędzie + 3 usługi).
+    - 5 pytań FAQ.
+    - CTA: Generator kodów QR + Projekty graficzne.
+    - Czas czytania: 6 min.
+  - Weryfikacja: JSON valid (node parse OK).
+
 - ✅ **[IDEA-055] Blog: Jak dobrać kolory do strony internetowej lub sklepu?**
 
   - Plik: `data/pl/blog.json`
