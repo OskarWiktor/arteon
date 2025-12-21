@@ -25,6 +25,32 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Jak mierzyć skuteczność strony internetowej? Podstawy analityki**
+
+  - **Slug**: `jak-mierzyc-skutecznosc-strony-internetowej`
+  - **URL**: `/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej`
+  - **Kategorie**: `SEO`, `Widoczność`, `Strony`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 6 min
+  - **Opis**: Artykuł o analityce stron internetowych. Dlaczego warto mierzyć skuteczność strony, jakie wskaźniki są najważniejsze (ruch, źródła, współczynnik odrzuceń, czas na stronie, konwersje), czym jest Google Analytics, jak interpretować dane, kiedy zlecić analizę specjaliście.
+  - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/audyt-seo`, `/kontakt`
+  - **Linki zewnętrzne**: Google Analytics
+  - **FAQ**: 5 pytań
+  - **CTA**: Audyt SEO + Kontakt
+
+- **Jak założyć i zoptymalizować profil Google Moja Firma?**
+
+  - **Slug**: `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+  - **URL**: `/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+  - **Kategorie**: `SEO`, `Widoczność`, `Strony`
+  - **Data publikacji**: 2025-12-21
+  - **Czas czytania**: 7 min
+  - **Opis**: Artykuł o Google Moja Firma (Google Business Profile). Czym jest GMB i dlaczego jest ważne dla lokalnych firm, jak założyć profil krok po kroku, jakie informacje uzupełnić (kategorie, godziny, opis, zdjęcia, usługi, atrybuty), jak zdobywać i odpowiadać na opinie, na co zwrócić uwagę przy prowadzeniu profilu.
+  - **Linki wewnętrzne**: `/uslugi/marketing/pozycjonowanie-stron`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`, `/kontakt`
+  - **Linki zewnętrzne**: Think with Google, google.com/business, BrightLocal
+  - **FAQ**: 5 pytań
+  - **CTA**: Pozycjonowanie stron + Kontakt
+
 - **Czym jest responsywność strony i dlaczego ma znaczenie?**
 
   - **Slug**: `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`

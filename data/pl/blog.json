@@ -1,6 +1,182 @@
 {
   "articles": [
     {
+      "slug": "jak-mierzyc-skutecznosc-strony-internetowej",
+      "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki",
+      "excerpt": "Strona internetowa to inwestycja, która powinna przynosić efekty. W tym artykule dowiesz się, jakie wskaźniki mierzyć, czym jest Google Analytics i kiedy warto zlecić analizę specjaliście.",
+      "primaryCategory": "SEO",
+      "category": ["Widoczność", "Strony"],
+      "tags": ["analityka", "Google Analytics", "wskaźniki strony", "ruch na stronie", "konwersje", "współczynnik odrzuceń", "czas na stronie", "mierzenie efektów"],
+      "seo": {
+        "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki | Arteon",
+        "description": "Dowiedz się, jakie wskaźniki mierzyć na stronie internetowej, czym jest Google Analytics i kiedy warto zlecić analizę specjaliście.",
+        "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej"
+      },
+      "cover": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-21",
+      "dateModified": "2025-12-21",
+      "readingTime": 6,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Masz stronę internetową, ale nie wiesz, czy przynosi rezultaty. Ile osób ją odwiedza? Skąd przychodzą? Co robią na stronie?</p><br/><p>Odpowiedzi na te pytania daje analityka internetowa — zestaw narzędzi i wskaźników, które pokazują, jak strona działa w praktyce. Dla kancelarii prawnej, gabinetu weterynaryjnego czy biura rachunkowego te dane pomagają zrozumieć, czy strona faktycznie przyciąga klientów, czy tylko istnieje w internecie.</p><br/><p>W tym artykule dowiesz się, jakie wskaźniki warto śledzić, czym jest Google Analytics i kiedy ma sens zlecić analizę specjaliście.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego warto mierzyć skuteczność strony?</h2><p>Strona internetowa to narzędzie, które ma realizować konkretne cele — przyciągać klientów, budować zaufanie, generować zapytania ofertowe lub sprzedaż. Bez danych nie wiesz, czy te cele są realizowane.</p><br/><p><strong>Co zyskujesz dzięki analityce?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wiesz, skąd przychodzą odwiedzający</strong> — czy z Google, mediów społecznościowych, czy z polecenia. To pomaga ocenić, które kanały działają.</li><li><strong>Rozumiesz zachowanie użytkowników</strong> — które strony oglądają najdłużej, gdzie rezygnują, co ich interesuje.</li><li><strong>Możesz podejmować decyzje na podstawie faktów</strong> — zamiast zgadywać, co poprawić, widzisz konkretne dane.</li><li><strong>Mierzysz zwrot z inwestycji</strong> — jeśli wydajesz na reklamę lub pozycjonowanie, dane pokazują, czy to się opłaca.</li></ul><br/><p>Dla firmy produkcyjnej, która zainwestowała w nową stronę, analityka pokaże, czy strona faktycznie generuje więcej zapytań ofertowych. Dla restauracji — czy rezerwacje online rosną po wprowadzeniu formularza.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jakie wskaźniki są najważniejsze?</h2><p>Analityka oferuje dziesiątki wskaźników, ale na początek wystarczy skupić się na kilku podstawowych.</p><br/><p><strong>Liczba użytkowników i sesji</strong></p><br/><p>Użytkownicy to unikalne osoby, które odwiedziły stronę w danym okresie. Sesje to liczba wizyt — jedna osoba może wejść na stronę kilka razy, generując kilka sesji. Te liczby pokazują ogólną skalę ruchu na stronie.</p><br/><p><strong>Źródła ruchu</strong></p><br/><p>Skąd przychodzą odwiedzający? Najczęstsze źródła to:</p><br/><ul class='list-disc ml-5'><li><strong>Organic Search</strong> — ruch z wyszukiwarki Google (bezpłatny, wynikający z pozycjonowania)</li><li><strong>Direct</strong> — wejścia bezpośrednie (ktoś wpisał adres w przeglądarkę)</li><li><strong>Referral</strong> — kliknięcia z innych stron (np. katalogów, artykułów)</li><li><strong>Social</strong> — ruch z mediów społecznościowych</li><li><strong>Paid Search</strong> — ruch z płatnych reklam Google Ads</li></ul><br/><p><strong>Współczynnik odrzuceń</strong></p><br/><p>Pokazuje, jaki procent osób opuszcza stronę bez żadnej interakcji — nie klika w nic, nie przewija, nie przechodzi dalej. Wysoki współczynnik (np. powyżej 70%) może oznaczać, że strona nie odpowiada na potrzeby odwiedzających lub ładuje się zbyt wolno.</p><br/><p><strong>Średni czas na stronie</strong></p><br/><p>Im dłużej użytkownicy zostają, tym bardziej angażuje ich treść. Krótki czas (poniżej 30 sekund) może sugerować, że strona nie dostarcza tego, czego szukali.</p><br/><p><strong>Konwersje</strong></p><br/><p>Konwersja to pożądane działanie użytkownika — wypełnienie formularza kontaktowego, wykonanie telefonu, zapisanie się na newsletter, dokonanie zakupu. To najważniejszy wskaźnik, bo pokazuje, czy strona realizuje swoje cele biznesowe.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Czym jest Google Analytics i jak pomaga?</h2><p><a class='inline-link' href='https://analytics.google.com/' target='_blank' rel='noopener noreferrer'>Google Analytics</a> to bezpłatne narzędzie od Google, które zbiera i prezentuje dane o ruchu na stronie. Jest standardem w branży — większość stron internetowych ma je zainstalowane.</p><br/><p><strong>Jak działa?</strong></p><br/><p>Na stronie umieszczany jest niewielki fragment kodu (tzw. tag śledzący). Ten kod rejestruje każdą wizytę i wysyła informacje do Google Analytics. W panelu narzędzia widzisz zebrane dane w formie raportów i wykresów.</p><br/><p><strong>Co znajdziesz w Google Analytics?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Raporty w czasie rzeczywistym</strong> — ile osób jest teraz na stronie</li><li><strong>Dane demograficzne</strong> — skąd geograficznie pochodzą użytkownicy, z jakich urządzeń korzystają</li><li><strong>Raporty źródeł ruchu</strong> — skąd przychodzą odwiedzający</li><li><strong>Raporty zachowań</strong> — które strony są najpopularniejsze, jak użytkownicy poruszają się po serwisie</li><li><strong>Raporty konwersji</strong> — ile osób wykonało pożądane działania</li></ul><br/><p>Obecna wersja narzędzia to Google Analytics 4 (GA4), która zastąpiła poprzednią wersję Universal Analytics w 2023 roku.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak interpretować podstawowe dane?</h2><p>Same liczby niewiele mówią bez kontekstu. Oto jak podejść do interpretacji podstawowych danych.</p><br/><p><strong>Porównuj okresy</strong></p><br/><p>Zamiast patrzeć na pojedyncze liczby, porównuj je z poprzednimi okresami. Czy ruch rośnie miesiąc do miesiąca? Czy współczynnik odrzuceń maleje po wprowadzeniu zmian na stronie?</p><br/><p><strong>Szukaj trendów, nie anomalii</strong></p><br/><p>Jeden dzień ze skokiem ruchu może być wynikiem wzmianki w mediach lub błędu w danych. Patrz na trendy tygodniowe i miesięczne, żeby wyciągać wnioski.</p><br/><p><strong>Łącz dane ze źródłami ruchu</strong></p><br/><p>Jeśli ruch z Google rośnie, ale konwersje nie — może to oznaczać, że przyciągasz niewłaściwych użytkowników lub strona nie odpowiada na ich potrzeby. Jeśli ruch z mediów społecznościowych ma wysoki współczynnik odrzuceń — może treści w postach nie pasują do zawartości strony.</p><br/><p><strong>Ustal cele i mierz ich realizację</strong></p><br/><p>W Google Analytics możesz zdefiniować cele — np. wypełnienie formularza kontaktowego lub wejście na stronę z cennikiem. Dzięki temu zobaczysz, jaki procent odwiedzających wykonuje pożądane działania.</p><br/><p><strong>Przykład praktyczny</strong></p><br/><p>Biuro nieruchomości zauważa, że strona ma 2000 odwiedzających miesięcznie, ale tylko 5 zapytań przez formularz. Analiza pokazuje, że 80% ruchu trafia na bloga z poradami, a nie na oferty mieszkań. Rozwiązanie: lepsze linkowanie z artykułów do aktualnych ofert.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Kiedy warto zlecić analizę specjaliście?</h2><p>Podstawowe dane możesz przeglądać samodzielnie, ale głębsza analiza wymaga doświadczenia i znajomości kontekstu biznesowego.</p><br/><p><strong>Sygnały, że warto skorzystać z pomocy:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Nie wiesz, co oznaczają dane</strong> — widzisz liczby, ale nie potrafisz wyciągnąć z nich wniosków.</li><li><strong>Strona ma ruch, ale nie ma konwersji</strong> — coś nie działa, ale nie wiesz co.</li><li><strong>Planujesz zmiany na stronie</strong> — przed przebudową warto wiedzieć, co działa dobrze i co wymaga poprawy.</li><li><strong>Inwestujesz w reklamę lub pozycjonowanie</strong> — potrzebujesz wiedzieć, czy te działania przynoszą efekty.</li><li><strong>Chcesz regularnych raportów</strong> — zamiast logować się do narzędzi, wolisz otrzymywać podsumowanie z rekomendacjami.</li></ul><br/><p>Specjalista pomoże nie tylko odczytać dane, ale też zaproponować konkretne działania — co zmienić na stronie, jak poprawić treści, gdzie kierować ruch. To część szerszej strategii, którą realizujemy w ramach <a class='inline-link' href='/uslugi/marketing/audyt-seo'>audytu SEO</a> i <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowania stron</a>.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Mierzenie skuteczności strony to podstawa świadomego zarządzania obecnością w internecie. Dzięki danym wiesz, czy strona realizuje swoje cele i gdzie są możliwości poprawy.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Analityka pokazuje fakty</strong> — zamiast zgadywać, podejmujesz decyzje na podstawie danych</li><li><strong>Podstawowe wskaźniki</strong> — ruch, źródła, współczynnik odrzuceń, czas na stronie, konwersje</li><li><strong>Google Analytics</strong> — bezpłatne narzędzie, standard w branży</li><li><strong>Porównuj okresy</strong> — pojedyncze liczby mówią mniej niż trendy</li><li><strong>Konwersje są najważniejsze</strong> — to one pokazują realną wartość strony</li></ul><br/><p>Jeśli chcesz lepiej zrozumieć, jak działa Twoja strona i co można poprawić, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>. Zajmujemy się <a class='inline-link' href='/uslugi/strony-internetowe'>tworzeniem stron internetowych</a> i <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniem</a>, które opieramy na danych i mierzalnych efektach.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Chcesz wiedzieć, czy Twoja strona działa?",
+        "description": "Przeanalizujemy Twoją stronę i pokażemy, co działa dobrze, a co wymaga poprawy. Działamy w oparciu o dane, nie domysły.",
+        "btnOne": "Audyt SEO",
+        "btnOneLink": "/uslugi/marketing/audyt-seo",
+        "btnTwo": "Skontaktuj się",
+        "btnTwoLink": "/kontakt",
+        "backgroundImage": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy Google Analytics jest bezpłatne?",
+          "answer": "Tak, Google Analytics jest całkowicie bezpłatne. Istnieje też płatna wersja (Analytics 360) dla dużych firm z milionami użytkowników, ale standardowa wersja wystarcza dla zdecydowanej większości stron."
+        },
+        {
+          "question": "Czy instalacja Google Analytics jest trudna?",
+          "answer": "Podstawowa instalacja wymaga dodania fragmentu kodu do strony. Jeśli strona jest zbudowana na popularnym systemie (WordPress, Shopify), zwykle wystarczy zainstalować wtyczkę i podać identyfikator konta. Konfiguracja celów i zaawansowanych funkcji wymaga większej wiedzy."
+        },
+        {
+          "question": "Jak często powinienem sprawdzać dane analityczne?",
+          "answer": "Dla większości firm wystarczy przegląd raz w miesiącu. Jeśli prowadzisz aktywne kampanie reklamowe lub wprowadzasz zmiany na stronie, warto sprawdzać częściej — nawet co tydzień. Codzienne sprawdzanie rzadko jest potrzebne."
+        },
+        {
+          "question": "Co oznacza wysoki współczynnik odrzuceń?",
+          "answer": "Współczynnik odrzuceń powyżej 70% może sygnalizować problem — np. strona nie odpowiada na potrzeby użytkowników, ładuje się wolno lub ma nieczytelną treść. Ale kontekst ma znaczenie: dla bloga z długimi artykułami wysoki współczynnik może być naturalny."
+        },
+        {
+          "question": "Czy analityka narusza prywatność użytkowników?",
+          "answer": "Google Analytics zbiera dane anonimowe (nie identyfikuje konkretnych osób). Jednak zgodnie z RODO musisz informować użytkowników o używaniu plików cookie i dać im możliwość wyrażenia zgody. Dlatego strony wyświetlają banner cookie."
+        }
+      ]
+    },
+
+    {
+      "slug": "jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma",
+      "title": "Jak założyć i zoptymalizować profil Google Moja Firma?",
+      "excerpt": "Google Moja Firma (Google Business Profile) to bezpłatne narzędzie, które pozwala lokalnym firmom wyświetlać się w Mapach Google i wynikach wyszukiwania. W tym artykule dowiesz się, jak założyć profil, jakie informacje uzupełnić i jak zdobywać opinie klientów.",
+      "primaryCategory": "SEO",
+      "category": ["Widoczność"],
+      "tags": ["Google Moja Firma", "Google Business Profile", "lokalne SEO", "Mapy Google", "opinie klientów", "wizytówka Google", "pozycjonowanie lokalne", "widoczność w Google"],
+      "seo": {
+        "title": "Jak założyć i zoptymalizować profil Google Moja Firma? | Arteon",
+        "description": "Dowiedz się, jak założyć profil Google Moja Firma, jakie informacje uzupełnić i jak zdobywać opinie, żeby wyróżnić się w mapach Google.",
+        "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma"
+      },
+      "cover": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-21",
+      "dateModified": "2025-12-21",
+      "readingTime": 7,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Szukasz restauracji w pobliżu, a Google pokazuje Ci listę miejsc z adresami, godzinami otwarcia, zdjęciami i opiniami. To właśnie efekt działania Google Moja Firma — bezpłatnego narzędzia, które pozwala lokalnym firmom wyświetlać się w Mapach Google i w wynikach wyszukiwania.</p><br/><p>Dla kancelarii prawnej, gabinetu stomatologicznego czy warsztatu samochodowego profil Google Moja Firma to często pierwsze miejsce, gdzie potencjalni klienci sprawdzają godziny otwarcia, numer telefonu i opinie innych osób.</p><br/><p>W tym artykule dowiesz się, jak założyć profil Google Moja Firma, jakie informacje warto uzupełnić i jak zdobywać opinie, które budują zaufanie do Twojej firmy.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Czym jest Google Moja Firma i dlaczego jest ważne?</h2><p><strong>Google Moja Firma</strong> (oficjalnie Google Business Profile) to bezpłatne narzędzie od Google, które pozwala zarządzać tym, jak Twoja firma wyświetla się w wyszukiwarce i w Mapach Google.</p><br/><p>Gdy ktoś wpisuje w Google nazwę Twojej firmy lub szuka usług w okolicy (np. fryzjer Kraków, mechanik Wrocław), Google może wyświetlić tzw. panel wiedzy — ramkę z podstawowymi informacjami o firmie: adresem, telefonem, godzinami otwarcia, zdjęciami i opiniami.</p><br/><p><strong>Dlaczego to ważne dla lokalnych firm?</strong></p><br/><p>Według danych <a class='inline-link' href='https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-statistics/' target='_blank' rel='noopener noreferrer'>Think with Google</a>, 76% osób, które szukają lokalnych usług lub miejsc na telefonie (np. fryzjer w pobliżu, restauracja otwarta teraz), odwiedza znalezione miejsce jeszcze tego samego dnia. To oznacza, że klient, który właśnie szuka mechanika lub dentysty, prawdopodobnie pójdzie do firmy, którą znajdzie jako pierwszą w Google. Dobrze uzupełniony profil Google Moja Firma zwiększa szansę, że to właśnie Twoja firma pojawi się w wynikach i zostanie wybrana.</p><br/><p>Profil Google Moja Firma pomaga też w pozycjonowaniu lokalnym. Firmy z kompletnymi profilami, dobrymi opiniami i aktualnymi informacjami częściej pojawiają się w tzw. Local Pack — trójce wyników wyświetlanych nad mapą w Google.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak założyć profil Google Moja Firma?</h2><p>Założenie profilu zajmuje kilkanaście minut, ale wymaga weryfikacji, która może potrwać od kilku dni do kilku tygodni.</p><br/><p><strong>Krok 1: Wejdź na stronę Google Business Profile</strong></p><br/><p>Otwórz <a class='inline-link' href='https://www.google.com/business/' target='_blank' rel='noopener noreferrer'>google.com/business</a> i zaloguj się na konto Google (lub utwórz nowe, jeśli go nie masz).</p><br/><p><strong>Krok 2: Wyszukaj swoją firmę</strong></p><br/><p>Wpisz nazwę firmy. Jeśli firma już istnieje w bazie Google (np. ktoś dodał ją wcześniej lub Google ją wykrył automatycznie), możesz zgłosić własność. Jeśli nie ma jej w wynikach, kliknij opcję dodania nowej firmy.</p><br/><p><strong>Krok 3: Uzupełnij podstawowe informacje</strong></p><br/><p>Podaj nazwę firmy, kategorię działalności (np. kancelaria prawna, salon fryzjerski, sklep spożywczy), adres i dane kontaktowe. Jeśli firma nie przyjmuje klientów pod adresem (np. usługi mobilne), możesz ukryć adres i wskazać obszar działania.</p><br/><p><strong>Krok 4: Przejdź weryfikację</strong></p><br/><p>Google musi potwierdzić, że faktycznie reprezentujesz tę firmę. Metody weryfikacji zależą od rodzaju działalności i mogą obejmować weryfikację przez telefon, e-mail, połączenie wideo lub natychmiastową weryfikację (jeśli masz powiązane konto Google Search Console). Cały proces trwa zwykle od kilku minut do kilku dni.</p><br/><p><strong>Krok 5: Uzupełnij profil</strong></p><br/><p>Po weryfikacji uzyskujesz pełny dostęp do panelu zarządzania. Teraz możesz uzupełnić wszystkie informacje, dodać zdjęcia i zacząć zbierać opinie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jakie informacje uzupełnić, żeby wyróżnić się w mapach?</h2><p>Im więcej informacji uzupełnisz, tym lepiej Google zrozumie, czym zajmuje się Twoja firma i komu może ją polecić.</p><br/><p><strong>Kategorie działalności</strong></p><br/><p>Wybierz kategorię główną (np. restauracja, gabinet stomatologiczny) i dodaj kategorie dodatkowe, jeśli pasują (np. catering, stomatologia dziecięca). Kategorie pomagają Google dopasować Twoją firmę do zapytań użytkowników.</p><br/><p><strong>Godziny otwarcia</strong></p><br/><p>Podaj standardowe godziny otwarcia i pamiętaj o aktualizacji w święta oraz dni specjalne. Firmy z nieaktualnymi godzinami tracą zaufanie klientów, którzy przyjeżdżają i zastają zamknięte drzwi.</p><br/><p><strong>Opis firmy</strong></p><br/><p>Masz 750 znaków na opisanie swojej działalności. Skup się na tym, co oferujesz, dla kogo i co wyróżnia Twoją firmę. Unikaj ogólników i pisz konkretnie — np. zamiast najlepsza obsługa napisz doradztwo w języku ukraińskim lub bezpłatna wycena w ciągu 24 godzin.</p><br/><p><strong>Zdjęcia i logo</strong></p><br/><p>Dodaj logo, zdjęcie okładkowe i zdjęcia pokazujące firmę od środka — wnętrze lokalu, zespół, produkty lub efekty pracy. Według Google, firmy ze zdjęciami otrzymują o 42% więcej zapytań o wskazówki dojazdu i o 35% więcej kliknięć do strony internetowej.</p><br/><p><strong>Usługi i produkty</strong></p><br/><p>Jeśli prowadzisz np. salon kosmetyczny, możesz dodać listę usług z opisami i cenami. Dla sklepów Google umożliwia prezentację produktów. Te informacje pomagają klientom podjąć decyzję jeszcze przed kontaktem.</p><br/><p><strong>Atrybuty</strong></p><br/><p>Google pozwala zaznaczyć dodatkowe cechy firmy — np. dostępność dla osób na wózkach, Wi-Fi, płatność kartą, rezerwacje online. Uzupełnij te, które dotyczą Twojej działalności.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak zdobywać i odpowiadać na opinie klientów?</h2><p>Opinie w Google Moja Firma to jeden z najważniejszych czynników wpływających na decyzje klientów i pozycję w wynikach lokalnych.</p><br/><p><strong>Jak zachęcać klientów do wystawiania opinii?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Poproś bezpośrednio</strong> — po zakończonej usłudze lub transakcji poproś zadowolonego klienta o opinię. Możesz to zrobić osobiście, przez SMS lub e-mail.</li><li><strong>Ułatw proces</strong> — wygeneruj bezpośredni link do wystawiania opinii (znajdziesz go w panelu Google Business Profile) i udostępnij klientom.</li><li><strong>Umieść informację w widocznym miejscu</strong> — naklejka z kodem QR przy kasie lub na wizytówce może przypominać o możliwości wystawienia opinii.</li></ul><br/><p><strong>Jak odpowiadać na opinie?</strong></p><br/><p>Odpowiadaj na wszystkie opinie — zarówno pozytywne, jak i negatywne. Podziękuj za pozytywne i odnieś się do konkretów (np. Cieszymy się, że smakowała Ci kawa z Etiopii). Przy negatywnych zachowaj spokój, przeproś za niedogodności i zaproponuj rozwiązanie (np. kontakt telefoniczny). Profesjonalna odpowiedź na negatywną opinię pokazuje innym klientom, że firma dba o relacje.</p><br/><p>Według badań <a class='inline-link' href='https://www.brightlocal.com/research/local-consumer-review-survey/' target='_blank' rel='noopener noreferrer'>BrightLocal</a>, 88% konsumentów ufa opiniom online tak samo jak rekomendacjom znajomych, a 57% korzysta z usług firmy tylko wtedy, gdy ma ona ocenę 4 gwiazdki lub wyższą.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Na co zwrócić uwagę przy prowadzeniu profilu?</h2><p><strong>Nieaktualne informacje</strong></p><br/><p>Zmienione godziny otwarcia, nowy numer telefonu lub przeprowadzka — każda taka zmiana powinna być od razu zaktualizowana w profilu. Klient, który przyjedzie pod stary adres lub zadzwoni na nieaktualny numer, raczej nie wróci.</p><br/><p><strong>Brak odpowiedzi na opinie</strong></p><br/><p>Pozostawianie opinii bez odpowiedzi — szczególnie negatywnych — może sprawiać wrażenie, że firma nie dba o klientów. Nawet krótkie podziękowanie za pozytywną opinię buduje relację.</p><br/><p><strong>Zbyt mało zdjęć lub nieaktualne zdjęcia</strong></p><br/><p>Profil bez zdjęć wygląda mniej wiarygodnie. Z kolei zdjęcia sprzed kilku lat mogą wprowadzać w błąd, jeśli od tego czasu zmienił się wystrój lokalu lub oferta.</p><br/><p><strong>Ignorowanie pytań i wiadomości</strong></p><br/><p>Google Moja Firma umożliwia klientom zadawanie pytań i wysyłanie wiadomości bezpośrednio z profilu. Brak odpowiedzi oznacza utracone szanse na pozyskanie klienta.</p><br/><p><strong>Niezgodność nazwy i kategorii</strong></p><br/><p>Nazwa firmy w profilu powinna być zgodna z rzeczywistą nazwą (nie upychaj w niej słów kluczowych typu Fryzjer Kraków Najlepszy). Kategoria powinna precyzyjnie opisywać działalność. Niezgodności mogą skutkować zawieszeniem profilu przez Google.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Google Moja Firma to podstawowe narzędzie dla każdej firmy, która obsługuje klientów lokalnie. Dobrze uzupełniony profil zwiększa widoczność w Mapach Google i wynikach wyszukiwania, buduje zaufanie poprzez opinie i ułatwia klientom kontakt.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Profil jest bezpłatny</strong> — założenie i prowadzenie nie kosztuje</li><li><strong>Weryfikacja wymaga czasu</strong> — od kilku minut do kilku dni, zależnie od metody</li><li><strong>Uzupełnij wszystko</strong> — kategorie, godziny, opis, zdjęcia, usługi i atrybuty</li><li><strong>Opinie są kluczowe</strong> — proś o nie i odpowiadaj na wszystkie</li><li><strong>Aktualizuj regularnie</strong> — nieaktualne dane odstraszają klientów</li></ul><br/><p>Profil Google Moja Firma to jeden z elementów <a class='inline-link' href='/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty'>pozycjonowania lokalnego</a>. Jeśli chcesz, żeby Twoja firma była lepiej widoczna w Google, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>. Zajmujemy się <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniem stron</a> i pomagamy firmom docierać do klientów w ich okolicy.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Chcesz być lepiej widoczny w Google?",
+        "description": "Profil Google Moja Firma to dopiero początek. Zajmujemy się pozycjonowaniem lokalnym i pomagamy firmom docierać do klientów w ich okolicy.",
+        "btnOne": "Pozycjonowanie stron",
+        "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
+        "btnTwo": "Skontaktuj się",
+        "btnTwoLink": "/kontakt",
+        "backgroundImage": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy Google Moja Firma jest bezpłatne?",
+          "answer": "Tak, założenie i prowadzenie profilu Google Moja Firma (Google Business Profile) jest całkowicie bezpłatne. Google oferuje to narzędzie, żeby pomagać firmom i użytkownikom łatwiej się odnajdywać."
+        },
+        {
+          "question": "Ile trwa weryfikacja profilu Google Moja Firma?",
+          "answer": "Czas weryfikacji zależy od metody. Weryfikacja przez telefon, e-mail lub połączenie wideo może zająć kilka minut. Jeśli masz powiązane konto Google Search Console, weryfikacja może być natychmiastowa. W niektórych przypadkach proces może potrwać kilka dni."
+        },
+        {
+          "question": "Czy mogę mieć profil Google Moja Firma bez adresu fizycznego?",
+          "answer": "Tak. Jeśli Twoja firma nie przyjmuje klientów pod adresem (np. usługi mobilne, hydraulik, fotograf), możesz ukryć adres w profilu i wskazać obszar działania. Nadal musisz jednak podać adres do weryfikacji — Google go nie wyświetli publicznie."
+        },
+        {
+          "question": "Jak usunąć negatywną opinię w Google?",
+          "answer": "Nie możesz samodzielnie usunąć opinii innego użytkownika. Możesz jednak zgłosić opinię do Google, jeśli narusza regulamin (np. zawiera spam, fałszywe informacje lub obraźliwe treści). Google rozpatrzy zgłoszenie i może usunąć opinię. Lepszą strategią jest jednak profesjonalna odpowiedź na negatywną opinię."
+        },
+        {
+          "question": "Czy profil Google Moja Firma wpływa na pozycję w wyszukiwarce?",
+          "answer": "Tak. Dobrze uzupełniony profil z pozytywnymi opiniami i aktualnymi informacjami zwiększa szanse na pojawienie się w tzw. Local Pack — trójce wyników wyświetlanych nad mapą w Google. To szczególnie ważne dla firm, które obsługują klientów lokalnie."
+        }
+      ]
+    },
+
+    {
       "slug": "czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie",
       "title": "Czym jest responsywność strony i dlaczego ma znaczenie?",
       "excerpt": "Responsywność strony to jej zdolność do dopasowania się do różnych rozmiarów ekranów. W tym artykule dowiesz się, czym jest responsywność, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy Twoja strona jest responsywna.",

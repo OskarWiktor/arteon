@@ -2,6 +2,36 @@
 
 ## 2025-12-21
 
+- ✅ **[IDEA-075] Blog: Jak mierzyć skuteczność strony internetowej? Podstawy analityki**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `jak-mierzyc-skutecznosc-strony-internetowej`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, prosty, bez DIY).
+    - 6 sekcji H2: dlaczego mierzyć, jakie wskaźniki, Google Analytics, interpretacja danych, kiedy zlecić specjaliście, podsumowanie.
+    - 4 linki wewnętrzne (strony internetowe, pozycjonowanie, audyt SEO, kontakt).
+    - 1 link zewnętrzny (Google Analytics).
+    - 5 pytań FAQ.
+    - CTA: Audyt SEO + Kontakt.
+    - Czas czytania: 6 min (1172 słów).
+  - Weryfikacja: nie wymagana (content-only).
+
+- ✅ **[IDEA-067] Blog: Jak założyć i zoptymalizować profil Google Moja Firma?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, prosty).
+    - 6 sekcji H2: czym jest GMB, jak założyć, jakie info uzupełnić, opinie klientów, na co uważać, podsumowanie.
+    - 3 linki wewnętrzne (pozycjonowanie stron + 2 artykuły SEO + kontakt).
+    - 3 linki zewnętrzne (Think with Google, google.com/business, BrightLocal).
+    - 5 pytań FAQ.
+    - CTA: Pozycjonowanie stron + Kontakt.
+    - Czas czytania: 7 min (1337 słów).
+  - Weryfikacja: nie wymagana (content-only).
+
 - ✅ **[IDEA-069] Blog: Czym jest responsywność strony i dlaczego ma znaczenie?**
 
   - Plik: `data/pl/blog.json`
