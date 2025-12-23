@@ -1,5 +1,22 @@
 # DONE_TASKS
 
+## 2025-12-23
+
+- ✅ **[IDEA-066] Blog: Co sprawdzić przed uruchomieniem nowej strony internetowej?**
+
+  - **Co zrobiono**:
+    - Utworzono artykuł w `data/pl/blog.json` (na początku listy `articles[]`).
+    - Slug: `co-sprawdzic-przed-uruchomieniem-strony`, URL: `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`.
+    - Sekcje: wstęp, dlaczego warto sprawdzić stronę, treści i meta dane, funkcjonalność, wydajność i zdjęcia, SEO techniczne, kwestie prawne, podsumowanie + CTA.
+    - Linki wewnętrzne (8): `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/narzedzia/licznik-dlugosci-meta-title-i-description`, `/kontakt`.
+    - Linki zewnętrzne: PageSpeed Insights, Google Search Console, Think with Google (źródło danych o szybkości ładowania).
+    - FAQ: 5 pytań.
+    - CTA: Strony internetowe + Kontakt.
+    - Zaktualizowano `BLOG_CATALOG.md`.
+    - **Poprawki po review**: usunięto ogólnikowe frazy („buduje zaufanie od pierwszej sekundy"), usunięto wymienienie branż bez konkretnych przykładów, dodano źródło dla danych o szybkości (Think with Google), dodano linki do artykułu o meta i narzędzia licznika meta, poprawiono CTA końcowe (nie-DIY).
+    - **Zaktualizowano INSTRUCTIONS.md** o nowe reguły: maksymalizacja linków wewnętrznych, zakaz ogólnikowych fraz, źródła dla danych, CTA bez DIY, maksymalizacja wartości treści, dokładne zapoznanie z instrukcjami.
+  - **Weryfikacja**: nie wymagana (content-only).
+
 ## 2025-12-22
 
 

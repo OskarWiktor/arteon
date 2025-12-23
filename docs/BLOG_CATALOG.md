@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Co sprawdzić przed uruchomieniem nowej strony internetowej?**
+
+  - **Slug**: `co-sprawdzic-przed-uruchomieniem-strony`
+  - **URL**: `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
+  - **Kategorie**: `Strony`, `SEO`
+  - **Data publikacji**: 2025-12-23
+  - **Czas czytania**: 7 min
+  - **Opis**: Artykuł o weryfikacji strony przed publikacją. Dlaczego warto sprawdzić stronę przed uruchomieniem, treści i meta dane (title, description, nagłówki), funkcjonalność (formularze, linki, nawigacja, responsywność), wydajność i zdjęcia (optymalizacja, WebP, PageSpeed), SEO techniczne (robots.txt, sitemap, SSL, adresy URL, przekierowania), kwestie prawne (polityka prywatności, regulamin, cookies, RODO).
+  - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/narzedzia/licznik-dlugosci-meta-title-i-description`, `/kontakt`
+  - **Linki zewnętrzne**: PageSpeed Insights, Google Search Console, Think with Google (źródło danych o szybkości)
+  - **FAQ**: 5 pytań
+  - **CTA**: Strony internetowe + Kontakt
+
 - **Jak przygotować grafikę do postów w mediach społecznościowych?**
 
   - **Slug**: `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`

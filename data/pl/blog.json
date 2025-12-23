@@ -1,6 +1,98 @@
 {
   "articles": [
     {
+      "slug": "co-sprawdzic-przed-uruchomieniem-strony",
+      "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej?",
+      "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. W tym artykule dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych.",
+      "primaryCategory": "Strony",
+      "category": ["SEO"],
+      "tags": ["uruchomienie strony", "publikacja strony", "pre-launch", "weryfikacja strony", "meta dane", "formularze", "wydajność", "SEO techniczne", "polityka prywatności", "RODO"],
+      "seo": {
+        "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej? | Arteon",
+        "description": "Dowiedz się, co sprawdzić przed publikacją strony: treści, funkcjonalność, wydajność, SEO i kwestie prawne.",
+        "canonical": "https://www.arteonagency.pl/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony"
+      },
+      "cover": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
+      "author": { "name": "Arteon" },
+      "datePublished": "2025-12-23",
+      "dateModified": "2025-12-23",
+      "readingTime": 7,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Strona internetowa jest gotowa do publikacji. Projekt zatwierdzony, treści napisane, wszystko wygląda dobrze. Zanim jednak strona trafi do użytkowników, warto poświęcić chwilę na sprawdzenie, czy wszystko działa tak, jak powinno.</p><br/><p>W tym artykule przedstawiamy kluczowe obszary do weryfikacji przed uruchomieniem strony: treści i meta dane, funkcjonalność, wydajność, SEO techniczne oraz kwestie prawne. Każdy z tych elementów wpływa na to, jak strona będzie odbierana przez użytkowników i wyszukiwarki.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego warto sprawdzić stronę przed publikacją?</h2><p>Publikacja strony z błędami może kosztować więcej niż kilka godzin poświęconych na weryfikację. Niedziałający formularz kontaktowy oznacza utracone zapytania od potencjalnych klientów. Brakujące meta dane sprawiają, że strona gorzej prezentuje się w wynikach wyszukiwania. Wolno ładujące się zdjęcia zniechęcają użytkowników, zanim zdążą zobaczyć ofertę.</p><br/><p>Strona internetowa to często pierwszy kontakt potencjalnego klienta z firmą. Jeśli formularz nie działa, użytkownik nie wyśle zapytania. Jeśli strona ładuje się 10 sekund, większość osób zamknie kartę. Jeśli brakuje polityki prywatności, firma naraża się na kary.</p><br/><p>Sprawdzenie strony przed publikacją to inwestycja kilku godzin, która zapobiega problemom trwającym tygodnie lub miesiące.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Treści i meta dane</h2><p>Treści to fundament strony — to one przekazują informacje i przekonują do działania. Meta dane (title i description) decydują o tym, jak strona prezentuje się w wynikach wyszukiwania Google. Więcej o pisaniu treści pod SEO znajdziesz w artykule <a class='inline-link' href='/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google'>jak pisać treści, aby być wyżej w Google</a>.</p><br/><p><strong>Tytuły stron (meta title)</strong></p><br/><p>Każda podstrona powinna mieć unikalny tytuł, który opisuje jej zawartość. Tytuł pojawia się w karcie przeglądarki i w wynikach wyszukiwania. Optymalna długość to 50-60 znaków — dłuższe tytuły mogą zostać ucięte. Do sprawdzenia długości tytułów i opisów możesz użyć naszego <a class='inline-link' href='/narzedzia/licznik-dlugosci-meta-title-i-description'>licznika meta title i description</a>.</p><br/><p>Przykład: zamiast generycznego tytułu typu Strona główna, lepszy będzie Kancelaria Prawna Nowak — Prawo Cywilne i Rodzinne | Kraków.</p><br/><p><strong>Opisy stron (meta description)</strong></p><br/><p>Opis pojawia się pod tytułem w wynikach wyszukiwania. Powinien zachęcać do kliknięcia i zawierać najważniejsze informacje o stronie. Optymalna długość to 150-160 znaków.</p><br/><p>Opis nie wpływa bezpośrednio na pozycję w Google, ale wpływa na to, czy użytkownik kliknie w wynik. Dobrze napisany opis zwiększa liczbę wejść na stronę.</p><br/><p><strong>Treści na stronach</strong></p><br/><p>Przeczytaj wszystkie teksty jeszcze raz. Sprawdź, czy nie ma literówek, błędów interpunkcyjnych i niezrozumiałych sformułowań. Upewnij się, że dane kontaktowe (adres, telefon, e-mail) są aktualne i poprawne. Błędny numer telefonu na stronie kontaktowej to stracone połączenia od klientów.</p><br/><p><strong>Nagłówki</strong></p><br/><p>Struktura nagłówków (H1, H2, H3) powinna być logiczna. Każda strona powinna mieć dokładnie jeden nagłówek H1, który opisuje główny temat. Nagłówki niższego poziomu (H2, H3) organizują treść w sekcje.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Funkcjonalność</h2><p>Strona może wyglądać doskonale, ale jeśli nie działa poprawnie, użytkownicy szybko ją opuszczą.</p><br/><p><strong>Formularze kontaktowe</strong></p><br/><p>Wyślij testową wiadomość przez każdy formularz na stronie. Sprawdź, czy wiadomość dociera na właściwy adres e-mail. Upewnij się, że użytkownik widzi potwierdzenie wysłania — brak informacji zwrotnej powoduje niepewność, czy wiadomość dotarła.</p><br/><p>Jeśli formularz zbiera dane osobowe (imię, e-mail, telefon), musi zawierać zgodę na przetwarzanie danych i link do polityki prywatności.</p><br/><p><strong>Linki wewnętrzne i zewnętrzne</strong></p><br/><p>Kliknij w każdy link na stronie. Linki wewnętrzne (do innych podstron) powinny prowadzić do istniejących stron. Linki zewnętrzne (do innych serwisów) powinny otwierać się w nowej karcie i prowadzić do działających stron.</p><br/><p>Uszkodzone linki (tzw. broken links) to sygnał dla wyszukiwarek, że strona nie jest dobrze utrzymana. Dla użytkowników to frustracja — kliknięcie, które prowadzi donikąd.</p><br/><p><strong>Nawigacja</strong></p><br/><p>Menu główne powinno działać na wszystkich urządzeniach. Sprawdź, czy rozwijane menu (dropdown) działa poprawnie, czy wszystkie pozycje są widoczne i klikalne. Na urządzeniach mobilnych menu często przyjmuje formę ikony hamburgera — upewnij się, że po kliknięciu menu się rozwija i wszystkie elementy są dostępne.</p><br/><p><strong>Responsywność</strong></p><br/><p>Strona powinna wyglądać i działać poprawnie na różnych urządzeniach: komputerach, tabletach i telefonach. Przetestuj stronę na kilku rozdzielczościach ekranu. Zwróć uwagę na czytelność tekstu, rozmiar przycisków i układ elementów.</p><br/><p>Narzędzia deweloperskie w przeglądarce (F12 w Chrome lub Firefox) pozwalają symulować różne rozmiary ekranów bez fizycznego dostępu do wielu urządzeń.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Wydajność i zdjęcia</h2><p>Szybkość ładowania strony wpływa na doświadczenie użytkownika i pozycję w wyszukiwarce. Według danych Google, gdy czas ładowania strony wzrasta z 1 do 3 sekund, prawdopodobieństwo opuszczenia strony przez użytkownika wzrasta o 32% (<a class='inline-link' href='https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/' target='_blank' rel='noopener noreferrer'>źródło: Think with Google</a>).</p><br/><p><strong>Optymalizacja zdjęć</strong></p><br/><p>Zdjęcia to często najcięższe elementy strony. Plik graficzny o wadze 5 MB ładuje się kilka sekund, podczas gdy zoptymalizowane zdjęcie o wadze 200 KB wygląda równie dobrze i ładuje się błyskawicznie.</p><br/><p>Przed publikacją sprawdź, czy wszystkie zdjęcia są zoptymalizowane. Format WebP oferuje lepszą kompresję niż tradycyjne JPG czy PNG, zachowując wysoką jakość obrazu. Więcej o optymalizacji zdjęć znajdziesz w artykule <a class='inline-link' href='/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp'>jak zoptymalizować zdjęcia na stronę WWW</a>.</p><br/><p>Jeśli potrzebujesz szybko przekonwertować zdjęcia do formatu WebP, możesz skorzystać z naszego <a class='inline-link' href='/narzedzia/jpg-png-na-webp-bez-limitu'>darmowego konwertera</a>.</p><br/><p><strong>Test szybkości</strong></p><br/><p>Narzędzie <a class='inline-link' href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> od Google pokazuje, jak szybko ładuje się strona i co można poprawić. Wynik powyżej 90 punktów na urządzeniach mobilnych to dobry rezultat. Niższy wynik wskazuje na elementy wymagające optymalizacji.</p><br/><p><strong>Rozmiary plików</strong></p><br/><p>Poza zdjęciami sprawdź też inne zasoby: pliki CSS, JavaScript, fonty. Nowoczesne strony często korzystają z wielu bibliotek i skryptów, które wydłużają czas ładowania. Usunięcie nieużywanych zasobów przyspiesza stronę.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>SEO techniczne</h2><p>SEO techniczne to elementy strony, które pomagają wyszukiwarkom zrozumieć jej zawartość i prawidłowo ją indeksować. Błędy w tej warstwie mogą sprawić, że strona <a class='inline-link' href='/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic'>nie wyświetla się w Google</a> mimo dobrej treści.</p><br/><p><strong>Plik robots.txt</strong></p><br/><p>Plik robots.txt informuje wyszukiwarki, które części strony mogą indeksować. Błędna konfiguracja może zablokować całą stronę przed indeksacją. Przed publikacją sprawdź, czy plik nie zawiera zbyt restrykcyjnych reguł.</p><br/><p>Plik powinien znajdować się pod adresem twojastrona.pl/robots.txt. Jeśli nie masz pewności, czy jest poprawnie skonfigurowany, warto skonsultować to z osobą odpowiedzialną za stronę.</p><br/><p><strong>Mapa strony (sitemap)</strong></p><br/><p>Sitemap to plik XML zawierający listę wszystkich podstron. Ułatwia wyszukiwarkom odkrycie i zaindeksowanie całej zawartości strony. Sitemap powinien być automatycznie generowany przy każdej zmianie struktury strony.</p><br/><p>Typowa lokalizacja to twojastrona.pl/sitemap.xml. Po publikacji strony warto zgłosić sitemapę w <a class='inline-link' href='https://search.google.com/search-console/' target='_blank' rel='noopener noreferrer'>Google Search Console</a>.</p><br/><p><strong>Certyfikat SSL</strong></p><br/><p>Strona powinna działać przez protokół HTTPS (widoczny jako kłódka w pasku adresu przeglądarki). Brak SSL oznacza ostrzeżenie w przeglądarce o niezabezpieczonej stronie — to zniechęca użytkowników i obniża pozycję w wynikach wyszukiwania.</p><br/><p><strong>Adresy URL</strong></p><br/><p>Adresy podstron powinny być czytelne i opisowe. Zamiast twojastrona.pl/page?id=123 lepszy jest adres twojastrona.pl/uslugi/projektowanie-stron. Czytelne adresy URL pomagają zarówno użytkownikom, jak i wyszukiwarkom zrozumieć zawartość strony.</p><br/><p><strong>Przekierowania</strong></p><br/><p>Jeśli nowa strona zastępuje poprzednią, upewnij się, że stare adresy URL przekierowują na odpowiednie nowe strony (przekierowanie 301). Brak przekierowań oznacza utratę pozycji w wyszukiwarce i błędy 404 dla użytkowników, którzy mają zapisane stare linki.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Kwestie prawne</h2><p>Strona internetowa musi spełniać określone wymogi prawne. Brak wymaganych dokumentów może skutkować karami lub problemami z zaufaniem użytkowników.</p><br/><p><strong>Polityka prywatności</strong></p><br/><p>Jeśli strona zbiera jakiekolwiek dane osobowe (przez formularze, analitykę, cookies), musi mieć politykę prywatności. Dokument powinien informować, jakie dane są zbierane, w jakim celu i jak długo przechowywane.</p><br/><p>Polityka prywatności powinna być łatwo dostępna — najczęściej link znajduje się w stopce strony.</p><br/><p><strong>Regulamin</strong></p><br/><p>Regulamin jest wymagany dla sklepów internetowych i serwisów świadczących usługi. Określa zasady korzystania ze strony, warunki sprzedaży, procedury reklamacji i zwrotów.</p><br/><p><strong>Informacja o cookies</strong></p><br/><p>Jeśli strona używa plików cookies (a większość stron je używa — do analityki, zapamiętywania preferencji czy reklam), użytkownik musi wyrazić na to zgodę. Banner z informacją o cookies powinien pojawić się przy pierwszej wizycie i umożliwiać zaakceptowanie lub odrzucenie poszczególnych kategorii cookies.</p><br/><p>Wymagania dotyczące cookies reguluje RODO (Rozporządzenie o Ochronie Danych Osobowych) oraz Prawo telekomunikacyjne. Zgoda musi być dobrowolna, konkretna i świadoma.</p><br/><p><strong>Dane firmy</strong></p><br/><p>Strona firmowa powinna zawierać podstawowe dane identyfikacyjne: nazwę firmy, adres siedziby, NIP, numer w rejestrze (KRS dla spółek). Dla sklepów internetowych te informacje są obowiązkowe.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Sprawdzenie strony przed publikacją to inwestycja czasu, która zapobiega wielu problemom. Kilka godzin poświęconych na weryfikację może zaoszczędzić tygodnie naprawiania błędów i utraconych zapytań od klientów.</p><br/><p><strong>Najważniejsze obszary do sprawdzenia:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Treści i meta dane</strong> — unikalne tytuły i opisy dla każdej podstrony, brak literówek, aktualne dane kontaktowe</li><li><strong>Funkcjonalność</strong> — działające formularze, poprawne linki, responsywne menu</li><li><strong>Wydajność</strong> — zoptymalizowane zdjęcia, szybkie ładowanie na urządzeniach mobilnych</li><li><strong>SEO techniczne</strong> — poprawny robots.txt, sitemap, certyfikat SSL, czytelne adresy URL</li><li><strong>Kwestie prawne</strong> — polityka prywatności, informacja o cookies, dane firmy</li></ul><br/><p>W Arteon <a class='inline-link' href='/uslugi/strony-internetowe'>tworzymy strony internetowe</a> i <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepy internetowe</a> od podstaw, z pełną weryfikacją przed publikacją. Jeśli masz już stronę i potrzebujesz pomocy z jej optymalizacją lub poprawkami, również możemy pomóc. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz profesjonalnej strony internetowej?",
+        "description": "Tworzymy strony, które działają sprawnie od pierwszego dnia. Kompleksowa weryfikacja przed publikacją w cenie usługi.",
+        "btnOne": "Strony internetowe",
+        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnTwo": "Skontaktuj się",
+        "btnTwoLink": "/kontakt",
+        "backgroundImage": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Jak długo trwa weryfikacja strony przed publikacją?",
+          "answer": "Czas zależy od wielkości strony. Prosta strona firmowa (5-10 podstron) wymaga kilku godzin na dokładne sprawdzenie. Większe serwisy lub sklepy internetowe mogą wymagać 1-2 dni pracy. Warto zaplanować ten czas w harmonogramie projektu."
+        },
+        {
+          "question": "Czy mogę sprawdzić stronę samodzielnie?",
+          "answer": "Podstawową weryfikację (działanie linków, formularzy, czytelność tekstów) można przeprowadzić samodzielnie. Elementy techniczne (SEO, wydajność, konfiguracja serwera) wymagają wiedzy specjalistycznej. Warto zlecić kompleksową weryfikację osobie z doświadczeniem."
+        },
+        {
+          "question": "Co zrobić, jeśli po publikacji znajdę błędy?",
+          "answer": "Większość błędów można naprawić po publikacji. Priorytetem są problemy wpływające na funkcjonalność (niedziałające formularze, uszkodzone linki) i kwestie prawne (brak polityki prywatności). Mniejsze błędy (literówki, drobne poprawki wizualne) można poprawić sukcesywnie."
+        },
+        {
+          "question": "Czy muszę mieć politykę prywatności, jeśli nie mam sklepu?",
+          "answer": "Tak, jeśli strona zbiera jakiekolwiek dane osobowe. Formularz kontaktowy z imieniem i e-mailem, Google Analytics, pliki cookies — to wszystko wymaga polityki prywatności. Nawet prosta strona wizytówkowa zwykle zbiera takie dane."
+        },
+        {
+          "question": "Jak sprawdzić, czy strona jest widoczna w Google?",
+          "answer": "Wpisz w wyszukiwarkę site:twojastrona.pl (podstaw swoją domenę). Google pokaże wszystkie zaindeksowane podstrony. Jeśli lista jest pusta lub niekompletna, strona może mieć problemy z indeksacją. Narzędzie Google Search Console pokazuje szczegółowe informacje o widoczności strony."
+        }
+      ]
+    },
+    {
       "slug": "jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych",
       "title": "Jak przygotować grafikę do postów w mediach społecznościowych?",
       "excerpt": "Grafika w mediach społecznościowych decyduje o tym, czy ktoś zatrzyma się na poście, czy przewinie dalej. W tym artykule dowiesz się, jak przygotować grafiki, które przyciągają uwagę i budują spójny wizerunek marki.",

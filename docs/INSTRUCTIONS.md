@@ -359,6 +359,20 @@ Dla każdego zadania:
 
 - **Weryfikacja zgodności z instrukcją (OBOWIĄZKOWO)**: Przed napisaniem jakiegokolwiek tekstu zawsze najpierw przeczytaj pełną instrukcję. Po napisaniu tekstu sprawdź go ponownie pod kątem zgodności z tą instrukcją. To dotyczy każdego artykułu, opisu usługi, narzędzia i każdej innej treści.
 
+### Zasady linkowania i wartości treści (aktualizacja 2025-12-23)
+
+- **Maksymalizacja linków wewnętrznych (OBOWIĄZKOWO)**: Artykuły mają wzmacniać wszystkie inne strony serwisu. Im więcej naturalnych linków do innych artykułów i narzędzi Arteon, tym lepiej. Przy każdym temacie sprawdź, czy istnieje powiązany artykuł lub narzędzie i podlinkuj je w treści. Linki muszą być wplecione naturalnie w zdania.
+
+- **Zakaz ogólnikowych fraz bez wartości (OBOWIĄZKOWO)**: Nie używaj pustych fraz typu „buduje zaufanie", „profesjonalnie wygląda", „robi dobre wrażenie" bez konkretnego wyjaśnienia, co to oznacza w praktyce. Każde stwierdzenie musi nieść konkretną informację lub wartość dla czytelnika.
+
+- **Źródła dla wszystkich danych i badań (OBOWIĄZKOWO)**: Jeśli powołujesz się na badania, statystyki lub dane liczbowe, MUSISZ podać konkretne źródło z linkiem. Sformułowania typu „badania pokazują" bez źródła są zabronione — obniżają autorytet treści. Jeśli nie masz źródła, opisz zjawisko bez odwoływania się do badań.
+
+- **CTA bez tonu DIY (OBOWIĄZKOWO)**: W podsumowaniach i CTA nie sugeruj, że czytelnik może coś zrobić samodzielnie z pomocą artykułu. Zamiast „zajmujemy się weryfikacją przed publikacją" (sugeruje tylko jeden element usługi) pisz „tworzymy strony od podstaw" lub „możemy pomóc z [konkretna rzecz]". Arteon oferuje kompleksowe usługi, nie pojedyncze elementy.
+
+- **Maksymalizacja wartości i głębokości treści (OBOWIĄZKOWO)**: Artykuły mają zawierać jak najwięcej konkretnych, praktycznych informacji. Każda sekcja powinna wnosić realną wartość. Unikaj akapitów, które można by usunąć bez straty merytorycznej. Głębokość i szczegółowość treści bezpośrednio wpływa na pozycję strony w wyszukiwarce.
+
+- **Dokładne zapoznanie się z instrukcjami przed tworzeniem treści (OBOWIĄZKOWO)**: Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis) MUSISZ przeczytać pełną instrukcję INSTRUCTIONS.md i upewnić się, że rozumiesz wszystkie zasady. To nie jest opcjonalne — błędy wynikające z nieznajomości instrukcji są niedopuszczalne.
+
 ### Dodatkowe reguły
 
 - każdy komponent i cały kod powinien być zgodny z najlepszymi praktykami Next
