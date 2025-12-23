@@ -18,27 +18,26 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',
   description: 'Papier firmowy, który wzmacnia wizerunek w korespondencji. Szablony Word/PDF oraz wersje gotowe do druku.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego'),
   },
   openGraph: {
     title: 'Projekt papieru firmowego | Arteon',
     description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     serviceName: 'Projekt papieru firmowego',
     description: 'Papier firmowy i szablony korespondencji: układ zgodny z identyfikacją, wersje do druku i PDF/DOC.',
@@ -260,7 +259,7 @@ export default function OfferDesignLetterheadPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego')}
           title="Najczęstsze pytania o projekt papieru firmowego"
           items={[
             {

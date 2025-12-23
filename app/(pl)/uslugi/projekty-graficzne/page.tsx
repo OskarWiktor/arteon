@@ -39,12 +39,24 @@ import {
 } from 'react-icons/ri';
 
 import Script from 'next/script';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 
 const SERVICES = [
-  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
-  { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne/projekt-ulotki' },
-  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
+  { name: 'Projekt wizytówki', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki') },
+  { name: 'Projekt ulotki', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki') },
+  { name: 'Teczka ofertowa', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej') },
+  { name: 'Papier firmowy', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego') },
+  { name: 'Odzież firmowa', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej') },
+  { name: 'Projekt logo', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo') },
+  { name: 'Projekt katalogu', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-katalogu') },
+  { name: 'Identyfikacja wizualna', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej') },
+  { name: 'Projekt graficzny strony', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony') },
+  { name: 'Szablony postów na social media', path: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media') },
+  { name: 'Kupony rabatowe i vouchery', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera') },
+  { name: 'Projekt cennika', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika') },
+  { name: 'Karty lojalnościowe', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej') },
+  { name: 'Projekt menu restauracji', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji') },
   { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
   { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
   { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
@@ -59,17 +71,16 @@ const SERVICES = [
 ];
 
 function ItemListSchema() {
-  const base = 'https://www.arteonagency.pl';
   const json = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': `${base}/#projekty-graficzne-itemlist`,
+    '@id': `${siteUrl}/#projekty-graficzne-itemlist`,
     name: 'Projekty graficzne - oferta usług',
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: SERVICES.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${base}${s.path}`,
+      url: s.path,
       name: s.name,
     })),
   };
@@ -84,13 +95,13 @@ function ItemListSchema() {
 export const metadata = {
   title: 'Projekty graficzne do druku i online | Arteon',
   description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne') },
   openGraph: {
     title: 'Projekty graficzne do druku i online | Arteon',
     description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
   },
 } as const;
 
@@ -495,7 +506,7 @@ export default function OfferDesignPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne')}
           title="Najczęstsze pytania o projekty graficzne"
           items={[
             {

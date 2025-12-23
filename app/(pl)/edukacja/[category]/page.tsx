@@ -7,8 +7,7 @@ import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
 import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blog';
 import { slugify } from '@/utils/slug';
-
-const siteUrl = 'https://www.arteonagency.pl';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 const DEFAULT_META_DESCRIPTION = (label: string) => `Artykuły i poradniki: ${label}.`;
 
@@ -106,7 +105,7 @@ export async function generateMetadata({ params }: { params: { category: string 
   return {
     title: `${label} | Arteon`,
     description,
-    alternates: { canonical: `https://www.arteonagency.pl/edukacja/${params.category}` },
+    alternates: { canonical: toAbsoluteUrl(`/edukacja/${params.category}`) },
     openGraph: { title: label, description: openGraphDescription, url, type: 'website' },
   };
 }

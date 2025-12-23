@@ -18,25 +18,24 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
   description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo') },
   openGraph: {
     title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
-    url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
+    url: toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg5.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/marketing/optymalizacja-seo',
     serviceName: 'Optymalizacja SEO',
     description: 'Wdrożenia po audycie: poprawa szybkości strony, porządek w treściach i dodatkowe dane, które pomagają Google lepiej zrozumieć witrynę. Testy przed i po, mierzalne wyniki.',
@@ -318,7 +317,7 @@ export default function OfferOptimizationSEO() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo"
+          pageUrl={toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo')}
           items={[
             {
               question: 'Czy mogę zrobić optymalizację bez audytu?',

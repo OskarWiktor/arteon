@@ -5,8 +5,7 @@ import blogData from '@/data/pl/blog.json';
 import projectsData from '@/data/pl/projects.json';
 import Wrapper from '@/components/ui/Wrapper';
 import { slugify } from '@/utils/slug';
-
-const BASE_URL = 'https://www.arteonagency.pl';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 type NavItem = { title: string; href: string; children?: NavItem[] };
 
@@ -114,7 +113,13 @@ const infoPages: NavItem[] = [
 export const metadata: Metadata = {
   title: 'Mapa strony | Arteon',
   description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
-  alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
+  alternates: { canonical: toAbsoluteUrl('/mapa-strony') },
+  openGraph: {
+    title: 'Mapa strony | Arteon',
+    description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
+    url: toAbsoluteUrl('/mapa-strony'),
+    type: 'website',
+  },
 };
 
 function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
@@ -188,7 +193,7 @@ export default function SitemapPage() {
 }
 
 function abs(url: string) {
-  return url.startsWith('http') ? url : `${BASE_URL}${url}`;
+  return url.startsWith('http') ? url : `${siteUrl}${url}`;
 }
 
 function toListElements(arr: NavItem[]) {
@@ -252,49 +257,49 @@ function buildJsonLd({
     '@graph': [
       {
         '@type': 'WebPage',
-        '@id': `${BASE_URL}/mapa-strony`,
+        '@id': `${siteUrl}/mapa-strony`,
         name: 'Mapa strony',
-        url: `${BASE_URL}/mapa-strony`,
+        url: `${siteUrl}/mapa-strony`,
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${BASE_URL}/#nav-uslugi`,
+        '@id': `${siteUrl}/#nav-uslugi`,
         name: 'Usługi',
-        url: `${BASE_URL}/uslugi`,
+        url: `${siteUrl}/uslugi`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-uslugi`,
+        '@id': `${siteUrl}/#sitemap-uslugi`,
         name: 'Mapa strony - Usługi',
         itemListElement: toListElements([...services, ...servicesChildren]),
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${BASE_URL}/#nav-edukacja`,
+        '@id': `${siteUrl}/#nav-edukacja`,
         name: 'Edukacja',
-        url: `${BASE_URL}/edukacja`,
+        url: `${siteUrl}/edukacja`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-edukacja`,
+        '@id': `${siteUrl}/#sitemap-edukacja`,
         name: 'Mapa strony - Edukacja',
         itemListElement: toListElements([{ title: 'Edukacja', href: '/edukacja' }, ...blogCategories, ...blogArticleItems]),
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${BASE_URL}/#nav-narzedzia`,
+        '@id': `${siteUrl}/#nav-narzedzia`,
         name: 'Narzędzia',
-        url: `${BASE_URL}/narzedzia`,
+        url: `${siteUrl}/narzedzia`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-narzedzia`,
+        '@id': `${siteUrl}/#sitemap-narzedzia`,
         name: 'Mapa strony - Narzędzia',
         itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools]),
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-realizacje`,
+        '@id': `${siteUrl}/#sitemap-realizacje`,
         name: 'Mapa strony - Realizacje',
         itemListElement:
           portfolioItems.length > 0
@@ -310,13 +315,13 @@ function buildJsonLd({
       },
       {
         '@type': 'ItemList',
-        '@id': `${BASE_URL}/#sitemap-informacje`,
+        '@id': `${siteUrl}/#sitemap-informacje`,
         name: 'Mapa strony - Informacje',
         itemListElement: toListElements(infoPages),
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': `${BASE_URL}/#breadcrumbs`,
+        '@id': `${siteUrl}/#breadcrumbs`,
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Start', item: abs('/') },
           {

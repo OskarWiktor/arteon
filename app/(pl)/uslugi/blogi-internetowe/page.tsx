@@ -33,25 +33,24 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
   description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/blogi-internetowe' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/blogi-internetowe') },
   openGraph: {
     title: 'Blogi internetowe - projekt i realizacja | Arteon',
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
-    url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
+    url: toAbsoluteUrl('/uslugi/blogi-internetowe'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg3.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg3.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/blogi-internetowe',
     serviceName: 'Tworzenie blogów internetowych',
     description: 'Projektujemy i wdrażamy blogi, które przyciągają ruch z Google: przejrzysta struktura, wygodny edytor, kategorie i wsparcie w publikacji.',
@@ -305,7 +304,7 @@ export default function OfferBlogPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/blogi-internetowe"
+          pageUrl={toAbsoluteUrl('/uslugi/blogi-internetowe')}
           items={[
             { question: 'Ile trwa stworzenie bloga?', answer: 'Standardowo projekt zajmuje od 7 do 20 dni roboczych, w zależności od złożoności i dostępnych materiałów' },
             {

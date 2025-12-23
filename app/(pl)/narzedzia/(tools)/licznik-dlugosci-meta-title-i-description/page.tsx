@@ -7,21 +7,22 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Licznik długości meta title i description',
   description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description') },
   openGraph: {
     title: 'Licznik długości meta title i description',
     description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
-    url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
+    url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp'),
       },
     ],
   },
@@ -32,7 +33,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Licznik długości meta title i meta description',
   alternateName: 'Licznik meta title i meta description z podglądem Google',
-  url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
+  url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
   applicationCategory: 'SEOApplication',
   operatingSystem: 'Any',
   description:
@@ -47,7 +48,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: 'https://www.arteonagency.pl',
+    url: siteUrl,
   },
 };
 

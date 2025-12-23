@@ -18,25 +18,24 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt identyfikacji wizualnej | Arteon',
   description: 'Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Spójność w każdym punkcie styku.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej') },
   openGraph: {
     title: 'Projekt identyfikacji wizualnej | Arteon',
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     serviceName: 'Projekt identyfikacji wizualnej',
     description: 'Kompletna identyfikacja: logo, paleta, typografia i wzory. Podstawowa księga znaku i spójność we wszystkich kanałach.',
@@ -267,7 +266,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej')}
           items={[
             {
               question: 'Ile kosztuje identyfikacja wizualna?',

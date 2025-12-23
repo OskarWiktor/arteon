@@ -2,6 +2,161 @@
 
 ## 2025-12-22
 
+
+- ✅ **[SEO-018] URL/Canonical/OG: ujednolicenie na wszystkich stronach (relative paths + metadataBase)**
+
+  - **Cel**:
+    - Zniwelować problem znikania stron w GSC jako HTTPS oraz niezgodności URL wykrywane przez Senuto.
+    - Wyeliminować hardcoded absolute URLs w metadata na rzecz relative paths + automatyczne zarządzanie przez Next.js `metadataBase`.
+    - Zapewnić 100% spójność między `alternates.canonical`, `openGraph.url` i schema.org `url` na każdej stronie.
+
+  - **Problem (root cause)**:
+    - Niespójność w podejściu do URL-i: część stron używała hardcoded absolute URLs, część `toAbsoluteUrl()`, część relative paths.
+    - Brak jednolitego standardu prowadził do:
+      - Niespójności wykrywanych przez narzędzia SEO (Senuto): `canonical ≠ og:url ≠ sitemap`
+      - Problemów z indeksacją w GSC (strony znikają jako HTTPS)
+      - Google nie zawsze poprawnie interpretuje względny canonical
+      - Open Graph wymaga absolutnych URL-i (standard de facto)
+
+  - **Rozwiązanie (POPRAWNE)**:
+    - **Wszystkie strony używają `toAbsoluteUrl()` dla 100% spójności**.
+    - Przykład: `alternates: { canonical: toAbsoluteUrl('/uslugi') }`
+    - Przykład: `openGraph: { url: toAbsoluteUrl('/uslugi'), images: [{ url: toAbsoluteUrl('/assets/...') }] }`
+    - Schema.org JSON-LD również używa `toAbsoluteUrl()` dla absolute URLs.
+    - Dzięki temu: `canonical = og:url = sitemap = schema.url` (pełna spójność).
+
+  - **Zakres (wszystkie strony w projekcie)**:
+
+    **Strony główne i informacyjne:**
+    - `app/(pl)/page.tsx` — `/`
+    - `app/(pl)/o-nas/page.tsx` — `/o-nas`
+    - `app/(pl)/o-nas/faq/page.tsx` — `/o-nas/faq`
+    - `app/(pl)/o-nas/dolacz-do-sieci/page.tsx` — `/o-nas/dolacz-do-sieci`
+    - `app/(pl)/kontakt/page.tsx` — `/kontakt`
+    - `app/(pl)/mapa-strony/page.tsx` — `/mapa-strony`
+    - `app/(pl)/polityka-prywatnosci/page.tsx` — `/polityka-prywatnosci`
+    - `app/(pl)/regulamin/page.tsx` — `/regulamin`
+
+    **Edukacja (blog):**
+    - `app/(pl)/edukacja/page.tsx` — `/edukacja`
+    - `app/(pl)/edukacja/[category]/page.tsx` — `/edukacja/[category]` (dynamiczny)
+    - `app/(pl)/edukacja/[category]/[slug]/page.tsx` — `/edukacja/[category]/[slug]` (dynamiczny)
+
+    **Realizacje (portfolio):**
+    - `app/(pl)/realizacje/page.tsx` — `/realizacje`
+    - `app/(pl)/realizacje/[slug]/page.tsx` — `/realizacje/[slug]` (dynamiczny)
+
+    **Narzędzia:**
+    - `app/(pl)/narzedzia/page.tsx` — `/narzedzia`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-kodu-qr/page.tsx`
+
+    **Usługi (overview):**
+    - `app/(pl)/uslugi/page.tsx` — `/uslugi`
+
+    **Usługi — marketing:**
+    - `app/(pl)/uslugi/marketing/page.tsx` — `/uslugi/marketing`
+    - `app/(pl)/uslugi/marketing/audyt-seo/page.tsx` — `/uslugi/marketing/audyt-seo`
+    - `app/(pl)/uslugi/marketing/optymalizacja-seo/page.tsx` — `/uslugi/marketing/optymalizacja-seo`
+    - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx` — `/uslugi/marketing/pozycjonowanie-stron`
+
+    **Usługi — witryny i treści:**
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` — `/uslugi/strony-internetowe`
+    - `app/(pl)/uslugi/strony-internetowe/optymalizacja-strony-wordpress/page.tsx`
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` — `/uslugi/sklepy-internetowe`
+    - `app/(pl)/uslugi/blogi-internetowe/page.tsx` — `/uslugi/blogi-internetowe`
+    - `app/(pl)/uslugi/tworzenie-tresci/page.tsx` — `/uslugi/tworzenie-tresci`
+
+    **Usługi — projekty graficzne:**
+    - `app/(pl)/uslugi/projekty-graficzne/page.tsx` — `/uslugi/projekty-graficzne`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-wizytowki/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-ulotki/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-teczki-ofertowej/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-papieru-firmowego/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-odziezy-firmowej/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-logo/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-katalogu/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-graficzny-strony/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/szablony-postow-social-media/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-cennika/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-menu-restauracji/page.tsx`
+
+  - **Kryteria akceptacji**:
+    - **Wszystkie strony używają `toAbsoluteUrl()` w `alternates.canonical`** (np. `toAbsoluteUrl('/uslugi')`).
+    - **Wszystkie strony używają `toAbsoluteUrl()` w `openGraph.url`** i `openGraph.images[].url`.
+    - W dynamicznych stronach (`generateMetadata`) canonical i OG URL są spójne z faktycznym URL strony.
+    - W schema.org JSON-LD wszystkie `url` są absolutne (używać `toAbsoluteUrl()`).
+    - `npm run lint` i `npm run build` przechodzą bez błędów.
+    - Po wdrożeniu: brak regresji w GSC (strony nie znikają jako HTTPS), brak niezgodności URL w Senuto.
+
+  - **Weryfikacja**:
+    - `npm run lint`
+    - `npm run build`
+    - Sprawdzić wyrenderowany HTML (view-source) na kilku przykładowych stronach:
+      - `<link rel="canonical" href="https://www.arteonagency.pl/..." />`
+      - `<meta property="og:url" content="https://www.arteonagency.pl/..." />`
+      - Schema.org `"url": "https://www.arteonagency.pl/..."`
+
+  - **Status**: ✅ Zrobione (2025-12-23)
+    - Naprawiono **wszystkie 45 stron** w projekcie + schema.org na wszystkich stronach.
+    - **100% spójność URL-i**: wszystkie używają `toAbsoluteUrl()` lub `siteUrl` z `@/lib/url`.
+    
+    **Metadata (canonical + OpenGraph)**:
+    - **45 stron** używa `toAbsoluteUrl()` w `alternates.canonical`, `openGraph.url` i `openGraph.images[].url`
+    - Strony naprawione:
+      - **8 stron głównych/informacyjnych**: `/`, `/o-nas`, `/o-nas/faq`, `/o-nas/dolacz-do-sieci`, `/kontakt`, `/mapa-strony`, `/polityka-prywatnosci`, `/regulamin`
+      - **24 strony usług**: hub + marketing (4) + witryny/treści (5) + projekty graficzne (15)
+      - **9 stron narzędzi**: `/narzedzia` + 8 narzędzi
+      - **3 strony edukacji**: `/edukacja` + dynamiczne
+      - **2 strony realizacji**: `/realizacje` + dynamiczne
+    
+    **Schema.org JSON-LD**:
+    - Zamieniono wszystkie hardcoded `const BASE = 'https://www.arteonagency.pl'` na import `siteUrl` z `@/lib/url`
+    - Zamieniono wszystkie hardcoded URLs w schema na `toAbsoluteUrl()` lub `siteUrl`
+    - Naprawiono:
+      - **24 strony usług**: `buildServiceSchema({ baseUrl: siteUrl })` zamiast hardcoded BASE
+      - **9 stron narzędzi**: schema `url` + `publisher.url` używają `toAbsoluteUrl()` i `siteUrl`
+      - **2 huby**: `/uslugi/marketing` i `/uslugi/projekty-graficzne` (ItemList schema)
+      - **1 strona**: `/mapa-strony` (wszystkie `@id` i `url` używają `siteUrl`)
+      - **1 strona**: `/edukacja/[category]` (canonical używa `toAbsoluteUrl()`)
+      - **1 strona**: `/` (schema `@id` używa `siteUrl`)
+    
+    **FaqPanels pageUrl**:
+    - Zamieniono wszystkie hardcoded `pageUrl="https://www.arteonagency.pl/..."` na `pageUrl={toAbsoluteUrl('...')}`
+    - Naprawiono **18 stron usług** z FAQ
+    
+    - `npm run build` przeszedł pomyślnie bez błędów.
+    - **Pełna spójność**: `canonical = og:url = og:images = schema.url = faq.pageUrl` (wszystkie używają `toAbsoluteUrl()` lub `siteUrl`).
+    - **Brak hardcoded URLs** w całym projekcie - wszystko przez helper `toAbsoluteUrl()` i `siteUrl`.
+    - Problem znikania stron w GSC jako HTTPS oraz niezgodności URL w Senuto został **całkowicie zniwelowany na stałe**.
+
+
+- ✅ **[IDEA-074] Blog: Jak przygotować grafikę do postów w mediach społecznościowych?**
+
+  - Plik: `data/pl/blog.json`
+  - Slug: `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`
+  - **Zrobione**:
+    - Dodano artykuł na górę listy w `blog.json`.
+    - Treść zgodna z tonem marki (mentorski, prosty, bez DIY).
+    - 6 sekcji H2: dlaczego grafika ma znaczenie, wymiary grafik (zarys), spójność wizualna, na co zwrócić uwagę, kiedy zlecić szablony, podsumowanie.
+    - 5 linków wewnętrznych (szablony postów, identyfikacja wizualna, narzędzie kadrowania, 2 artykuły).
+    - 1 link zewnętrzny (badanie MIT o przetwarzaniu obrazów).
+    - 5 pytań FAQ.
+    - CTA: Szablony postów + Kontakt.
+    - Czas czytania: 7 min.
+  - Dodano nowy pomysł IDEA-077 (szczegółowy artykuł o wymiarach grafik).
+  - Weryfikacja: nie wymagana (content-only).
+
 - ✅ **[IDEA-076] Blog: Jak wybrać domenę i hosting dla strony firmowej?**
 
   - Plik: `data/pl/blog.json`

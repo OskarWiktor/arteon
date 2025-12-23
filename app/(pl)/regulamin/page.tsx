@@ -3,15 +3,16 @@ import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Regulamin świadczenia usług | Arteon',
   description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',
-  alternates: { canonical: 'https://www.arteonagency.pl/regulamin' },
+  alternates: { canonical: toAbsoluteUrl('/regulamin') },
   openGraph: {
     title: 'Regulamin świadczenia usług | Arteon',
     description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',
-    url: 'https://www.arteonagency.pl/regulamin',
+    url: toAbsoluteUrl('/regulamin'),
     type: 'website',
   },
 };

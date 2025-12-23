@@ -19,27 +19,26 @@ import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
   description: 'Projekt wizytówki firmowej, która wyjaśnia ofertę w kilka sekund i buduje zaufanie od pierwszego spojrzenia. Pliki źródłowe i gotowe do druku.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki'),
   },
   openGraph: {
     title: 'Projekt wizytówki | Arteon',
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-wizytowki',
     serviceName: 'Projekt wizytówki',
     description: 'Czytelne, eleganckie wizytówki spójne z identyfikacją marki. Pliki do druku + wersje do użycia w sieci.',
@@ -238,7 +237,7 @@ export default function OfferDesignBusinessCardPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki')}
           title="Najczęstsze pytania o projekt wizytówki"
           items={[
             {

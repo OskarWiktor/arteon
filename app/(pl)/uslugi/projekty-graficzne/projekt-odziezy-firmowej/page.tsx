@@ -18,27 +18,26 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt odzieży firmowej | Arteon',
   description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej'),
   },
   openGraph: {
     title: 'Projekt odzieży firmowej | Arteon',
     description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     serviceName: 'Projekt odzieży firmowej',
     description: 'Nadruki na odzież (T-shirt, bluza, polo) spójne z marką. Pliki produkcyjne dla sitodruku/DTF.',
@@ -238,7 +237,7 @@ export default function OfferDesignCorporateApparelPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej')}
           title="Najczęstsze pytania o projekt odzieży firmowej"
           items={[
             {

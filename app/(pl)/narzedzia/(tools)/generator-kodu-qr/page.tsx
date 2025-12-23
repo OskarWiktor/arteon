@@ -9,21 +9,18 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
-
-const BASE_URL = 'https://www.arteonagency.pl';
-const PAGE_URL = `${BASE_URL}/narzedzia/generator-kodu-qr`;
-const OG_IMAGE = `${BASE_URL}/assets/tools/narzedzia-generator-kodu-qr.webp`;
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator kodu QR online - dla firm i materiałów drukowanych',
   description: 'Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ, kolor i rozmiar, a następnie pobierz gotowy plik PNG lub SVG. Bez logowania i bez limitu.',
-  alternates: { canonical: PAGE_URL },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-kodu-qr') },
   openGraph: {
     title: 'Darmowy generator kodu QR online - dla firm i materiałów drukowanych',
     description: 'Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ, kolor i rozmiar, a następnie pobierz gotowy plik PNG lub SVG. Bez logowania i bez limitu.',
-    url: PAGE_URL,
+    url: toAbsoluteUrl('/narzedzia/generator-kodu-qr'),
     type: 'website',
-    images: [{ url: OG_IMAGE }],
+    images: [{ url: toAbsoluteUrl('/assets/tools/narzedzia-generator-kodu-qr.webp') }],
   },
 };
 
@@ -32,7 +29,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Darmowy generator kodu QR online',
   alternateName: 'Generator kodu QR dla firm i materiałów drukowanych',
-  url: PAGE_URL,
+  url: toAbsoluteUrl('/narzedzia/generator-kodu-qr'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description: 'Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ, kolor i rozmiar, a następnie pobierz gotowy plik PNG lub SVG. Bez logowania i bez limitu.',
@@ -46,7 +43,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: BASE_URL,
+    url: siteUrl,
   },
 };
 

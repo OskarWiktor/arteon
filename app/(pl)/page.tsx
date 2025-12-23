@@ -19,7 +19,7 @@ import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiF
 import testimonialsPl from '@/data/pl/testimonials.json';
 import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blog';
-import { toAbsoluteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
@@ -50,7 +50,7 @@ function HomePageSchemas() {
   const aggregateRating = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://www.arteonagency.pl#organization',
+    '@id': `${siteUrl}#organization`,
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: avgRating.toFixed(1),

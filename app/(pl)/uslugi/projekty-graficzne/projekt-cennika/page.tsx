@@ -19,27 +19,26 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt cennika | Arteon',
   description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika'),
   },
   openGraph: {
     title: 'Projekt cennika | Arteon',
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/cennik-mockup.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/cennik-mockup.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-cennika',
     serviceName: 'Projekt cennika',
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
@@ -230,7 +229,7 @@ export default function OfferDesignPriceListPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika')}
           title="Najczęstsze pytania o projekt cennika"
           items={[
             {

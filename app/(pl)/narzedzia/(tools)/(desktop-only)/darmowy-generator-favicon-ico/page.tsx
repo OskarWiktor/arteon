@@ -9,19 +9,20 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
   description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico') },
   openGraph: {
     title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
     description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',
-    url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
+    url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp'),
       },
     ],
   },
@@ -32,7 +33,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Darmowy generator favicon online',
   alternateName: 'Generator favicon.ico i ikon PNG',
-  url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
+  url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description: 'Darmowy generator favicon online po polsku. Twórz favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 bez limitów i bez wysyłania plików na serwer.',
@@ -46,7 +47,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: 'https://www.arteonagency.pl',
+    url: siteUrl,
   },
 };
 

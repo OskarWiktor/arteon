@@ -19,28 +19,27 @@ import { RiSpeedFill, RiToolsLine, RiShieldCheckLine, RiDeviceLine, RiBarChart2F
 
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-
-const BASE = 'https://www.arteonagency.pl';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
   description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
+    canonical: toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress'),
   },
   openGraph: {
     title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
     description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
-    url: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
+    url: toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress'),
     type: 'website',
     siteName: 'Arteon',
-    images: [{ url: `${BASE}/assets/bg/abstract-bg12.webp` }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg12.webp') }],
   },
 } as const;
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
     serviceName: 'Optymalizacja strony WordPress',
     description: 'Optymalizacja stron WordPress z naciskiem na wydajność, stabilność i wersję mobilną. Strona zyskuje lepsze wyniki w testach szybkości i solidne podstawy pod SEO.',
@@ -358,7 +357,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe/optymalizacja-strony-wordpress"
+          pageUrl={toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress')}
           title="Najczęstsze pytania o optymalizację WordPress"
           items={[
             {

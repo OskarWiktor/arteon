@@ -19,27 +19,26 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt menu restauracji | Arteon',
   description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji'),
   },
   openGraph: {
     title: 'Projekt menu restauracji | Arteon',
     description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
     serviceName: 'Projekt menu restauracji',
     description: 'Projekt graficzny menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
@@ -259,7 +258,7 @@ export default function OfferDesignMenuPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji')}
           title="Najczęstsze pytania dotyczące projektów menu restauracyjnego"
           items={[
             {

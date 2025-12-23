@@ -15,22 +15,22 @@ import Button from '@/components/ui/buttons/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Script from 'next/script';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
   description: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing') },
   openGraph: {
     title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
-    url: 'https://www.arteonagency.pl/uslugi/marketing',
+    url: toAbsoluteUrl('/uslugi/marketing'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg5.webp') }],
   },
 } as const;
 
 function ItemListSchema() {
-  const base = 'https://www.arteonagency.pl';
   const services = [
     { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
     { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },
@@ -39,13 +39,13 @@ function ItemListSchema() {
   const json = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': `${base}/uslugi/marketing#itemlist`,
+    '@id': `${siteUrl}/uslugi/marketing#itemlist`,
     name: 'Usługi marketingowe - Arteon',
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: services.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${base}${s.path}`,
+      url: toAbsoluteUrl(s.path),
       name: s.name,
     })),
   };

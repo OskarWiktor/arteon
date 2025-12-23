@@ -18,20 +18,19 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-
-const BASE = 'https://www.arteonagency.pl';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/audyt-seo' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/audyt-seo') },
   openGraph: {
     title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
     description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-    url: `${BASE}/uslugi/marketing/audyt-seo`,
+    url: toAbsoluteUrl('/uslugi/marketing/audyt-seo'),
     siteName: 'Arteon',
     type: 'website',
-    images: [{ url: `${BASE}/assets/bg/abstract-bg5.webp` }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg5.webp') }],
     //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {
@@ -45,7 +44,7 @@ export const metadata = {
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/marketing/audyt-seo',
     serviceName: 'Audyt SEO',
     description: 'Audyt SEO dla stron i sklepów internetowych - analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
@@ -335,7 +334,7 @@ export default function OfferMarketingPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
+          pageUrl={toAbsoluteUrl('/uslugi/marketing/audyt-seo')}
           items={[
             {
               question: 'Co dokładnie sprawdza audyt SEO i jakie są najczęstsze blokery?',

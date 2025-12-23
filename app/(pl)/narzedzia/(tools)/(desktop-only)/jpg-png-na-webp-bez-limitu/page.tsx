@@ -3,6 +3,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import JpgPngToWebp from '@/components/sections/tools/JpgPngToWebp';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -13,15 +14,15 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
   description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu') },
   openGraph: {
     title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
     description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',
-    url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
+    url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp'),
       },
     ],
   },
@@ -32,7 +33,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
   alternateName: 'Konwerter JPG na WebP i PNG na WebP',
-  url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
+  url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description:
@@ -47,7 +48,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: 'https://www.arteonagency.pl',
+    url: siteUrl,
   },
 };
 

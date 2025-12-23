@@ -19,27 +19,26 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine,
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Szablony postów social media | Arteon',
   description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media'),
   },
   openGraph: {
     title: 'Szablony postów social media | Arteon',
     description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/szablony-postow-social-media',
     serviceName: 'Szablony postów social media',
     description: 'Szablony postów do social mediów: spójne z marką, łatwe do edycji, przygotowane pod wybrane media społecznościowe. Gotowe zestawy + instrukcja użycia.',
@@ -259,7 +258,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media')}
           title="Najczęstsze pytania o szablony postów"
           items={[
             {

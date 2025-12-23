@@ -9,19 +9,20 @@ import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata: Metadata = {
   title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
   description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag') },
   openGraph: {
     title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
     description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',
-    url: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag',
+    url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp'),
       },
     ],
   },
@@ -32,7 +33,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Tester kontrastu kolorów WCAG online',
   alternateName: 'Sprawdzanie kontrastu kolorów zgodnie z WCAG 2.1',
-  url: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag',
+  url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description:
@@ -47,7 +48,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: 'https://www.arteonagency.pl',
+    url: siteUrl,
   },
 };
 

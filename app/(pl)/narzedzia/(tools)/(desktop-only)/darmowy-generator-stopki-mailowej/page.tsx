@@ -9,19 +9,20 @@ import EmailSignatureGenerator from '@/components/sections/tools/EmailSignatureG
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej HTML - bez limitu',
   description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej') },
   openGraph: {
     title: 'Darmowy generator stopki mailowej HTML - bez limitu',
     description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
-    url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
+    url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp'),
       },
     ],
   },
@@ -32,7 +33,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Darmowy generator stopki mailowej HTML bez limitu',
   alternateName: 'Generator podpisu e-mail w HTML',
-  url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
+  url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description:
@@ -47,7 +48,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: 'https://www.arteonagency.pl',
+    url: siteUrl,
   },
 };
 

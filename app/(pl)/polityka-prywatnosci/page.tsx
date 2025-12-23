@@ -3,15 +3,16 @@ import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Polityka prywatności | Arteon',
   description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
-  alternates: { canonical: 'https://www.arteonagency.pl/polityka-prywatnosci' },
+  alternates: { canonical: toAbsoluteUrl('/polityka-prywatnosci') },
   openGraph: {
     title: 'Polityka prywatności | Arteon',
     description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
-    url: 'https://www.arteonagency.pl/polityka-prywatnosci',
+    url: toAbsoluteUrl('/polityka-prywatnosci'),
     type: 'website',
   },
 };

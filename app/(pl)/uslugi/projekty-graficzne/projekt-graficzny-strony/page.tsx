@@ -18,25 +18,24 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt graficzny strony | Arteon',
   description: 'Makiety i layouty stron internetowych tworzone z myślą o czytelności i konwersji. Estetyka, UX i SEO w jednym projekcie.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony') },
   openGraph: {
     title: 'Projekt graficzny strony | Arteon',
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
     serviceName: 'Projekt graficzny strony',
     description: 'Makieta i projekt UI strony: czytelny layout, system komponentów, zgodność z WCAG i przygotowanie pod realizację.',
@@ -255,7 +254,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony')}
           items={[
             {
               question: 'Ile kosztuje projekt graficzny strony?',

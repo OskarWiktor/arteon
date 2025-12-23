@@ -19,27 +19,26 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Kupony rabatowe i vouchery | Arteon',
   description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'),
   },
   openGraph: {
     title: 'Kupony rabatowe i vouchery | Arteon',
     description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     serviceName: 'Kupony rabatowe i vouchery',
     description: 'Projekt kuponów rabatowych i voucherów prezentowych: elegancka forma, pliki gotowe do druku oraz wersje cyfrowe.',
@@ -258,7 +257,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera')}
           title="Najczęstsze pytania dotyczące kuponów i voucherów"
           items={[
             {

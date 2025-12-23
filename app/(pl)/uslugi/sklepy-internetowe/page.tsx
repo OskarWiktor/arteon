@@ -35,25 +35,24 @@ import { GoLaw } from 'react-icons/go';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i realizacja | Arteon',
   description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/sklepy-internetowe') },
   openGraph: {
     title: 'Sklepy internetowe - projekt i realizacja | Arteon',
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-    url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
+    url: toAbsoluteUrl('/uslugi/sklepy-internetowe'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-trilllizo.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baners-trilllizo.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/sklepy-internetowe',
     serviceName: 'Tworzenie sklepów internetowych',
     description: 'Budujemy sklepy online, które konwertują: szybkie karty produktu, prosty koszyk, płatności i wysyłki, analityka sprzedaży oraz SEO.',
@@ -350,7 +349,7 @@ export default function OfferWebPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/sklepy-internetowe"
+          pageUrl={toAbsoluteUrl('/uslugi/sklepy-internetowe')}
           items={[
             {
               question: 'Ile kosztuje stworzenie sklepu internetowego?',

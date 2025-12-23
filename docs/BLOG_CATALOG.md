@@ -25,6 +25,19 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Jak przygotować grafikę do postów w mediach społecznościowych?**
+
+  - **Slug**: `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`
+  - **URL**: `/edukacja/grafika/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`
+  - **Kategorie**: `Grafika`, `Marketing`
+  - **Data publikacji**: 2025-12-22
+  - **Czas czytania**: 7 min
+  - **Opis**: Artykuł o przygotowywaniu grafik do mediów społecznościowych. Dlaczego grafika ma znaczenie (pierwsze wrażenie, rozpoznawalność, przekaz bez słów), podstawowe wymiary dla Facebook/Instagram/LinkedIn (zarys), jak zachować spójność wizualną (paleta kolorów, fonty, szablony), na co zwrócić uwagę (tekst, jakość, marginesy, typografia, Stories), kiedy zlecić szablony profesjonaliście.
+  - **Linki wewnętrzne**: `/uslugi/projekty-graficzne/szablony-postow-social-media`, `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`, `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`, `/kontakt`
+  - **Linki zewnętrzne**: MIT (badanie o przetwarzaniu obrazów)
+  - **FAQ**: 5 pytań
+  - **CTA**: Szablony postów + Kontakt
+
 - **Jak wybrać domenę i hosting dla strony firmowej?**
 
   - **Slug**: `jak-wybrac-domene-i-hosting-dla-strony-firmowej`

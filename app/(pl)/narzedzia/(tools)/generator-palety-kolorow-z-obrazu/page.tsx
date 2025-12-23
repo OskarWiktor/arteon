@@ -3,6 +3,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import PaletteExtractor from '@/components/sections/tools/PaletteExtractor';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -13,15 +14,15 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
   description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu') },
   openGraph: {
     title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
     description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
-    url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
+    url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp'),
       },
     ],
   },
@@ -32,7 +33,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Generator palety kolorów z obrazu online',
   alternateName: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
-  url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
+  url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
@@ -46,7 +47,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: 'https://www.arteonagency.pl',
+    url: siteUrl,
   },
 };
 

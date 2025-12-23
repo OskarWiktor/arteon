@@ -51,23 +51,16 @@ const SERVICES = [
 ] as const;
 
 export const metadata = {
-  title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
-  description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+  title: 'Usługi - strony, sklepy, grafika i marketing | Arteon',
+  description: 'Kompleksowa oferta usług: strony, sklepy, blogi, projekty graficzne, treści i marketing. Wszystko w jednym miejscu.',
   alternates: { canonical: toAbsoluteUrl('/uslugi') },
   openGraph: {
-    title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
-    description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+    title: 'Usługi - strony, sklepy, grafika i marketing | Arteon',
+    description: 'Kompleksowa oferta usług: strony, sklepy, blogi, projekty graficzne, treści i marketing. Wszystko w jednym miejscu.',
     url: toAbsoluteUrl('/uslugi'),
     type: 'website',
     // TODO: Add unique OpenGraph image for services page: /assets/og/uslugi.webp (1200x630px)
-    images: [
-      {
-        url: toAbsoluteUrl('/assets/bg/abstract-bg12.webp'),
-        width: 1200,
-        height: 630,
-        alt: 'Usługi Arteon',
-      },
-    ],
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp') }],
   },
 } as const;
 

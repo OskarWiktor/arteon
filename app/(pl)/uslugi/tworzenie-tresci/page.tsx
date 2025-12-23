@@ -33,12 +33,11 @@ import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-
-const BASE = 'https://www.arteonagency.pl';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/tworzenie-tresci',
     serviceName: 'Tworzenie treści',
     description: 'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy - pod intencje użytkownika i SEO.',
@@ -56,13 +55,13 @@ function ServiceSchema() {
 export const metadata = {
   title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
   description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/tworzenie-tresci') },
   openGraph: {
     title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-    url: `${BASE}/uslugi/tworzenie-tresci`,
+    url: toAbsoluteUrl('/uslugi/tworzenie-tresci'),
     type: 'website',
-    images: [{ url: `${BASE}/assets/bg/abstract-bg6.webp` }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg6.webp') }],
   },
 } as const;
 
@@ -273,7 +272,7 @@ export default function OfferContentPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-tresci"
+          pageUrl={toAbsoluteUrl('/uslugi/tworzenie-tresci')}
           items={[
             {
               question: 'Ile czasu trwa przygotowanie treści?',

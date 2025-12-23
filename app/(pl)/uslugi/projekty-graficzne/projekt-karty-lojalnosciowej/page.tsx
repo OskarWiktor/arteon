@@ -17,25 +17,24 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt karty lojalnościowej | Arteon',
   description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej') },
   openGraph: {
     title: 'Projekt karty lojalnościowej | Arteon',
     description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     serviceName: 'Projekt karty lojalnościowej',
     description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
@@ -254,7 +253,7 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej')}
           title="Najczęstsze pytania o karty lojalnościowe"
           items={[
             {

@@ -238,6 +238,7 @@ Dla każdego zadania:
 - **Narracja**:
 
   - Druga osoba liczby pojedynczej („Twoja firma”, „zyskujesz”, „widzisz efekt”).
+  - **Pierwsza osoba liczby mnogiej dla Arteon** — zawsze „wyjaśniamy”, „pokazujemy”, „przygotowujemy”, nigdy „wyjaśnię”, „pokażę” (liczba pojedyncza). Arteon to zespół, nie jedna osoba.
 
 - **Zakazane formy**:
 
@@ -345,6 +346,8 @@ Dla każdego zadania:
 - **Anglicyzmy a polskie odpowiedniki (obowiązkowo)**: Używaj polskich odpowiedników tam, gdzie brzmią naturalnie. Zamiast „social media" pisz „media społecznościowe" (odmienione odpowiednio do kontekstu). Anglicyzmy dozwolone tylko gdy polski odpowiednik brzmi sztucznie lub jest nieznany.
 
 - **Przykłady z innych branż (obowiązkowo)**: W artykułach edukacyjnych nie używaj przykładów z branży Arteon (grafika, marketing, strony WWW). Podawaj przykłady z innych branż (prawo, medycyna, gastronomia, nieruchomości, e-commerce, produkcja itp.) — to buduje większy autorytet i uniwersalność treści.
+
+- **Wymienianie branż tylko przy konkretnych przykładach (obowiązkowo)**: Nie wymieniaj branż ogólnikowo (np. „dla właściciela kancelarii, gabinetu czy sklepu to może być wyzwaniem" — to dotyczy każdej branży). Wymieniaj branże **tylko** gdy podajesz konkretny, praktyczny przykład dla danej branży (np. „Gabinet stomatologiczny może używać bieli i błękitu — kolorów kojarzonych z czystością"). Jeśli stwierdzenie jest uniwersalne, pisz ogólnie bez wyliczania branż.
 
 - **Linki do zewnętrznych narzędzi (obowiązkowo)**: Gdy wspominasz o zewnętrznych narzędziach (Google Search Console, PageSpeed Insights, Ahrefs itp.), zawsze dodawaj do nich link z atrybutami `target='_blank' rel='noopener noreferrer'`.
 

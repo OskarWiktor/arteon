@@ -8,8 +8,6 @@ import { toAbsoluteUrl } from '@/lib/url';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
-const PAGE_URL = toAbsoluteUrl('/o-nas/faq');
-
 type FaqItem = {
   question: string;
   answer: string | ReactNode;
@@ -146,7 +144,7 @@ const FAQ_ITEMS: FaqItem[] = [
 const FAQ_JSON_LD = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntityOfPage: PAGE_URL,
+  mainEntityOfPage: toAbsoluteUrl('/o-nas/faq'),
   mainEntity: FAQ_ITEMS.map((it) => {
     const textForSchema = typeof it.answer === 'string' ? it.answer : (it.answerSchemaText ?? '');
     return {
@@ -160,11 +158,11 @@ const FAQ_JSON_LD = {
 export const metadata: Metadata = {
   title: 'FAQ - najczęstsze pytania dotyczące współpracy | Arteon',
   description: 'Odpowiadamy na najczęstsze pytania dotyczące współpracy: proces, terminy, wycena, treści, SEO, utrzymanie i odpowiedzialność po wdrożeniu.',
-  alternates: { canonical: PAGE_URL },
+  alternates: { canonical: toAbsoluteUrl('/o-nas/faq') },
   openGraph: {
     title: 'FAQ - najczęstsze pytania dotyczące współpracy | Arteon',
     description: 'Odpowiadamy na najczęstsze pytania dotyczące współpracy: proces, terminy, wycena, treści, SEO, utrzymanie i odpowiedzialność po wdrożeniu.',
-    url: PAGE_URL,
+    url: toAbsoluteUrl('/o-nas/faq'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp') }],
   },
@@ -186,7 +184,7 @@ export default function AboutFaqPage() {
       <Wrapper as="article" itemScope itemType="https://schema.org/FAQPage">
         <Gap size="xs" />
 
-        <FaqPanels items={FAQ_ITEMS} openByDefault={1} generateSchema={false} pageUrl={PAGE_URL} />
+        <FaqPanels items={FAQ_ITEMS} openByDefault={1} generateSchema={false} pageUrl={toAbsoluteUrl('/o-nas/faq')} />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }} />
 

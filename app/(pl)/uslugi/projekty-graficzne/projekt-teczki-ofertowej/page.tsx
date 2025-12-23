@@ -19,27 +19,26 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
   description: 'Teczka ofertowa podnosi prestiż spotkań i porządkuje dokumenty. Projekt spójny z identyfikacją wizualną Twojej marki.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej'),
   },
   openGraph: {
     title: 'Projekt teczki ofertowej | Arteon',
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     serviceName: 'Projekt teczki ofertowej',
     description: 'Teczka firmowa spójna z identyfikacją: estetyka i funkcja, poprawne spady oraz makiety pod druk.',
@@ -270,7 +269,7 @@ export default function OfferDesignPresentationFolderPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej')}
           title="Najczęstsze pytania o projekt teczki ofertowej"
           items={[
             {

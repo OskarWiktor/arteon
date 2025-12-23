@@ -7,21 +7,22 @@ import ColorPaletteGenerator from '@/components/sections/tools/ColorPaletteGener
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
   title: 'Generator palet kolorów online - system barw z jednego koloru',
   description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online' },
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online') },
   openGraph: {
     title: 'Generator palet kolorów online - system barw z jednego koloru',
     description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
-    url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
+    url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-generator-palet-kolorow-online.webp'),
       },
     ],
   },
@@ -32,7 +33,7 @@ const schema = {
   '@type': 'WebApplication',
   name: 'Generator palet kolorów online - system barw z jednego koloru',
   alternateName: 'Generator schematów barw HEX i HSL dla brandingu i UI',
-  url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
+  url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
   description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
@@ -46,7 +47,7 @@ const schema = {
   publisher: {
     '@type': 'Organization',
     name: 'Arteon Agency',
-    url: 'https://www.arteonagency.pl',
+    url: siteUrl,
   },
 };
 

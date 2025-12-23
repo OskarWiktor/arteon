@@ -18,25 +18,24 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
   description: 'Długofalowe pozycjonowanie stron: plan treści, porządek na stronie i bezpieczne linki. Comiesięczny raport i jasne priorytety działań.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron') },
   openGraph: {
     title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
-    url: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
+    url: toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg6.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg6.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/marketing/pozycjonowanie-stron',
     serviceName: 'Pozycjonowanie stron',
     description: 'Stała współpraca SEO dla stron firmowych: strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc i jasne priorytety.',
@@ -334,7 +333,7 @@ export default function OfferSeoSubscription() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron"
+          pageUrl={toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron')}
           items={[
             {
               question: 'Ile trwa pozycjonowanie i kiedy widać efekty?',

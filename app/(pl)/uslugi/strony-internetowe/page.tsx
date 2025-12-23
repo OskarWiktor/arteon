@@ -33,25 +33,24 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Strony internetowe - projekt i realizacja | Arteon',
   description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/strony-internetowe') },
   openGraph: {
     title: 'Strony internetowe - projekt i realizacja | Arteon',
     description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
-    url: 'https://www.arteonagency.pl/uslugi/strony-internetowe',
+    url: toAbsoluteUrl('/uslugi/strony-internetowe'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baners-msc.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/strony-internetowe',
     serviceName: 'Tworzenie stron internetowych',
     description: 'Projektujemy i wdrażamy szybkie, dostępne strony firmowe, które sprzedają. Prosta nawigacja, SEO-ready treści i opieka po wdrożeniu.',
@@ -299,7 +298,7 @@ export default function OfferWebPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe"
+          pageUrl={toAbsoluteUrl('/uslugi/strony-internetowe')}
           items={[
             {
               question: 'Ile kosztuje stworzenie strony internetowej?',

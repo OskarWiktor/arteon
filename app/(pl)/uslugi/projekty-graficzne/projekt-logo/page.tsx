@@ -30,25 +30,24 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
 import { IoColorPalette } from 'react-icons/io5';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt logo | Arteon',
   description: 'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo') },
   openGraph: {
     title: 'Projekt logo | Arteon',
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-logo',
     serviceName: 'Projekt logo',
     description: 'Znak marki z podstawową księgą znaku: warianty, siatka, wersje kolorystyczne. Pliki wektorowe gotowe do użycia.',
@@ -281,7 +280,7 @@ export default function OfferDesignLogoPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo')}
           items={[
             {
               question: 'Ile kosztuje profesjonalne logo?',

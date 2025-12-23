@@ -18,25 +18,24 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import Button from '@/components/ui/buttons/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt katalogu | Arteon',
   description: 'Katalog produktów lub ofert z czytelnym składem DTP. Zdjęcia, typografia i układ, które podnoszą sprzedaż i wizerunek.',
-  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu' },
+  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-katalogu') },
   openGraph: {
     title: 'Projekt katalogu | Arteon',
     description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-katalogu'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/gazetka-mockup.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/gazetka-mockup.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-katalogu',
     serviceName: 'Projekt katalogu',
     description: 'Katalog produktowy/usługowy: układ, typografia, infografiki i zdjęcia. Gotowe pliki do druku oraz PDF online.',
@@ -254,7 +253,7 @@ export default function OfferDesignCatalogPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-katalogu')}
           items={[
             {
               question: 'Ile kosztuje projekt katalogu?',

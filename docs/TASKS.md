@@ -1187,32 +1187,33 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ❌ **[IDEA-074] Blog: Jak przygotować grafikę na posty w mediach społecznościowych?**
+- ❌ **[IDEA-077] Blog: Jakie wymiary grafik na Facebooku, Instagramie i LinkedIn?**
 
   - Cel i uzasadnienie:
-    - Wzmocnić usługę szablonów social media + narzędzia (kadrowanie, palety).
-    - Artykuł edukuje o wymiarach, formatach i spójności wizualnej w social media.
+    - Rozwinięcie tematu wymiarów grafik z IDEA-074 w formie kompletnego przewodnika.
+    - Artykuł będzie szczegółowym źródłem wiedzy o wymiarach dla każdej platformy.
   - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
     - Nowy artykuł w `data/pl/blog.json`.
   - Konspekt (H2):
-    - H2: Wstęp — dlaczego grafika ma znaczenie w mediach społecznościowych
-    - H2: Jakie wymiary grafik dla poszczególnych platform? (Facebook, Instagram, LinkedIn)
-    - H2: Jak zachować spójność wizualną w postach?
-    - H2: Jakich błędów unikać przy tworzeniu grafik?
-    - H2: Kiedy warto zlecić szablony profesjonaliście?
+    - H2: Wstęp — dlaczego wymiary mają znaczenie
+    - H2: Wymiary grafik na Facebooku (post, cover, story, reklama)
+    - H2: Wymiary grafik na Instagramie (post kwadratowy, pionowy, poziomy, stories, reels, profil)
+    - H2: Wymiary grafik na LinkedIn (post, banner firmowy, cover)
+    - H2: Wymiary grafik na innych platformach (TikTok, YouTube, Pinterest)
+    - H2: Co się dzieje, gdy wymiary są niepoprawne?
     - H2: Podsumowanie + CTA
   - Linkowanie wewnętrzne:
     - `/uslugi/projekty-graficzne/szablony-postow-social-media`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
     - `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`
-    - `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+    - `/edukacja/grafika/jak-przygotowac-grafike-na-posty-w-mediach-spolecznosciowych`
   - SEO:
-    - URL/slug: `/edukacja/grafika/jak-przygotowac-grafike-na-posty-w-mediach-spolecznosciowych`
-    - `metadata.title`: `Jak przygotować grafikę na posty w mediach społecznościowych? | Arteon`
-    - `metadata.description`: `Dowiedz się, jakie wymiary grafik używać na Facebooku, Instagramie i LinkedIn oraz jak zachować spójność wizualną w postach.`
+    - URL/slug: `/edukacja/grafika/jakie-wymiary-grafik-na-facebooku-instagramie-i-linkedin`
+    - `metadata.title`: `Jakie wymiary grafik na Facebooku, Instagramie i LinkedIn? | Arteon`
+    - `metadata.description`: `Kompletny przewodnik po wymiarach grafik na media społecznościowe. Poznaj dokładne rozmiary dla postów, stories, reklam i banerów na każdej platformie.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 4 linki wewnętrzne + CTA do usługi.
+    - Szczegółowe wymiary dla każdej platformy z konkretnymi wartościami px.
+    - Min. 3 linki wewnętrzne + CTA do usługi.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 

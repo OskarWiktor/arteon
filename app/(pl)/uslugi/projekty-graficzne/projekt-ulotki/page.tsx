@@ -18,27 +18,26 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
+import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
   title: 'Projekt ulotki | Arteon',
   description: 'Ulotka, która przyciąga uwagę i kieruje do kontaktu lub zakupu. Projekt dopasowany do Twojej oferty i lokalnych działań.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
+    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki'),
   },
   openGraph: {
     title: 'Projekt ulotki | Arteon',
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
+    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki'),
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp' }],
+    images: [{ url: toAbsoluteUrl('/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp') }],
   },
 } as const;
 
-const BASE = 'https://www.arteonagency.pl';
-
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: BASE,
+    baseUrl: siteUrl,
     path: '/uslugi/projekty-graficzne/projekt-ulotki',
     serviceName: 'Projekt ulotki',
     description: 'Skuteczne ulotki reklamowe: jasne CTA, czytelna hierarchia, formaty pod druk i wersje cyfrowe.',
@@ -272,7 +271,7 @@ export default function OfferDesignFlyerPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki"
+          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki')}
           title="Najczęstsze pytania o projekt ulotki"
           items={[
             {

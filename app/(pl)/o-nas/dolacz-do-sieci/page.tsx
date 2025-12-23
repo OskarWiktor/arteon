@@ -5,20 +5,18 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { toAbsoluteUrl } from '@/lib/url';
 import type { Metadata } from 'next';
 import { RiAppsLine, RiPantoneLine, RiShareForwardLine } from 'react-icons/ri';
-
-const PAGE_URL = toAbsoluteUrl('/o-nas/dolacz-do-sieci');
+import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata: Metadata = {
   title: 'Dołącz do sieci Arteon',
   description: 'Stale rozwijamy sieć partnerów, mając na celu stworzenie przestrzeni, w której można zrealizować wszystko. Sprawdź, kogo szukamy teraz.',
-  alternates: { canonical: PAGE_URL },
+  alternates: { canonical: toAbsoluteUrl('/o-nas/dolacz-do-sieci') },
   openGraph: {
     title: 'Dołącz do sieci Arteon',
     description: 'Stale rozwijamy sieć partnerów, mając na celu stworzenie przestrzeni, w której można zrealizować wszystko. Sprawdź, kogo szukamy teraz.',
-    url: PAGE_URL,
+    url: toAbsoluteUrl('/o-nas/dolacz-do-sieci'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp') }],
   },
