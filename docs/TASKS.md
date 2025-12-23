@@ -98,6 +98,11 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Klastry wzmocnione: Dostępność/WCAG, Grafika/Branding, Projekty graficzne (druk), SEO/Marketing, E-commerce.
     - Dodane ID: `IDEA-054`, `IDEA-055`, `IDEA-056`, `IDEA-057`, `IDEA-058`, `IDEA-059`.
 
+  - **Zrobione 2025-12-23**:
+    - Dodano 12 pomysłów na artykuły dla kategorii z małą liczbą artykułów.
+    - Kategorie wzmocnione: Bezpieczeństwo (2), Druk (2), Psychologia (2), Sklepy (2), UX (2), Marketing (2).
+    - Dodane ID: `IDEA-078`, `IDEA-079`, `IDEA-080`, `IDEA-081`, `IDEA-082`, `IDEA-083`, `IDEA-084`, `IDEA-085`, `IDEA-086`, `IDEA-087`, `IDEA-088`, `IDEA-089`.
+
 - 🟡 **[AUDIT-007] Repo: audyt prawdziwości informacji i źródeł w istniejących artykułach**
 
 - 🟡 **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
@@ -568,6 +573,271 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Kryteria akceptacji:
     - Każdy slug z listy ma `faq.length >= 4`.
     - Pytania i odpowiedzi są unikalne i konkretne (bez lania wody).
+
+- ❌ **[TOOLS-021] Narzędzia: rozbudowana instrukcja — Generator palet kolorów online**
+
+  - Cel: dodać szczegółową instrukcję użytkowania narzędzia, która wyjaśnia każdą pojedynczą funkcję w prostym, mentorskim tonie.
+  - **Etap 1 — Analiza funkcjonalności** (co narzędzie robi):
+    - Input: picker + pole HEX (walidacja `#rgb`/`#rrggbb`).
+    - Akcje: `Zaktualizuj kolor`, `Losowy kolor`.
+    - Output: 9 typów palet (monochromatyczna, analogiczna, komplementarna, triadyczna, split-complementary, pastelowa, ciemna, tonalna, apple-minimal).
+    - Kopiowanie: HEX i HSL pojedynczego koloru.
+    - Edge cases: niepoprawny HEX, brak prefixu `#`.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące do wykorzystania: `SectionInfo`, `SectionSteps`, `FaqPanels`, `ToolHelper`, `Gap`.
+    - Rozważyć nowy komponent: `ToolInstructionStep` (krok z numerem + screenshot/ikona + opis) — uniwersalny dla wszystkich narzędzi.
+    - Sprawdzić czy obecna sekcja „Jak korzystać z generatora?" jest wystarczająca.
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Jak wybrać kolor bazowy?" (picker vs wpisywanie HEX, co jeśli nie masz koloru).
+    - Sekcja: „Jak działają poszczególne palety?" (wyjaśnienie każdego typu palety — do czego służy, kiedy użyć).
+    - Sekcja: „Jak skopiować kolor?" (gdzie kliknąć, co trafia do schowka).
+    - Sekcja: „Najczęstsze problemy" (zły format HEX, kolor nie aktualizuje się).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/page.tsx`
+    - (opcjonalnie) nowy komponent `components/ui/tools/ToolInstructionStep.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdą funkcję narzędzia krok po kroku.
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-022] Narzędzia: rozbudowana instrukcja — Generator palety kolorów z obrazu**
+
+  - Cel: dodać szczegółową instrukcję użytkowania narzędzia ekstrakcji palety z obrazu/logo.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Upload: drag&drop lub wybór pliku (PNG/JPG/SVG).
+    - Processing: downscale + bucketing + filtrowanie podobnych kolorów.
+    - Output: do 12 dominujących kolorów (HEX + RGB).
+    - Kopiowanie: pojedynczy kolor lub cała paleta.
+    - Edge cases: przezroczyste tło (ignorowane), bardzo jednorodny obraz, duży plik.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `FaqPanels`, `ToolFileDropzone`, `ToolAlert`.
+    - Rozważyć: sekcja „Jakie obrazy działają najlepiej?" z przykładami.
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Jak dodać obraz?" (drag&drop vs klik, jakie formaty).
+    - Sekcja: „Co robi narzędzie z obrazem?" (wyjaśnienie algorytmu prostym językiem).
+    - Sekcja: „Jak skopiować kolory?" (pojedynczo vs cała paleta).
+    - Sekcja: „Jakie obrazy dają najlepsze wyniki?" (logo vs zdjęcie, kontrast, tło).
+    - Sekcja: „Najczęstsze problemy" (mało kolorów, dziwne wyniki).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdą funkcję narzędzia.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-023] Narzędzia: rozbudowana instrukcja — Licznik długości meta title i description**
+
+  - Cel: dodać szczegółową instrukcję dla narzędzia SEO do analizy meta tagów.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Inputy: URL (opcjonalny), title, description.
+    - Metryki: znaki, słowa, szerokość w px (symulacja SERP).
+    - Statusy: empty/too-short/ideal/too-long.
+    - Podgląd: snippet Google (title + URL + description).
+    - Truncation: automatyczne obcinanie do 65/165 znaków.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `ToolFieldRow`, `ToolHelper`.
+    - Rozważyć: wizualne wyjaśnienie „dlaczego szerokość w px ma znaczenie" (różne znaki mają różną szerokość).
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Co to jest meta title i description?" (wyjaśnienie dla początkujących).
+    - Sekcja: „Dlaczego długość ma znaczenie?" (obcinanie w Google, CTR).
+    - Sekcja: „Jak korzystać z narzędzia?" (krok po kroku).
+    - Sekcja: „Jak interpretować wyniki?" (co oznaczają statusy, co robić gdy za krótki/długi).
+    - Sekcja: „Podgląd snippet — co pokazuje?" (jak to wygląda w Google).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdą metrykę i status.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-024] Narzędzia: rozbudowana instrukcja — Tester kontrastu kolorów WCAG**
+
+  - Cel: dodać szczegółową instrukcję dla narzędzia dostępności WCAG.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Inputy: foreground (tekst), background (tło), próbka tekstu.
+    - Formaty kolorów: HEX (`#rgb`, `#rrggbb`), RGB(A), HSL(A).
+    - Wyniki: ratio (X.XX:1), pass/fail dla AA/AAA (normal/large text, UI).
+    - Akcje: zamień kolory, reset, dopasuj (auto-suggest).
+    - Podgląd: tekst i ikona na tle.
+    - Edge cases: alpha channel, niepoprawny format.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `ToolFieldRow`, `Badge`, `ToolHelper`.
+    - Rozważyć: tabela wyjaśniająca progi WCAG (AA vs AAA, normal vs large).
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Co to jest kontrast i dlaczego jest ważny?" (dostępność, czytelność).
+    - Sekcja: „Co oznaczają poziomy WCAG AA i AAA?" (progi, kiedy który wymagany).
+    - Sekcja: „Jak korzystać z testera?" (krok po kroku).
+    - Sekcja: „Jak interpretować wyniki?" (co oznacza ratio, co robić gdy fail).
+    - Sekcja: „Funkcja Dopasuj — co robi?" (auto-suggest wyjaśnienie).
+    - Sekcja: „Jakie formaty kolorów są obsługiwane?" (HEX/RGB/HSL z przykładami).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia progi WCAG i interpretację wyników.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-025] Narzędzia: rozbudowana instrukcja — Darmowy generator favicon**
+
+  - Cel: dodać szczegółową instrukcję dla generatora favicon.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Upload: drag&drop lub wybór pliku (PNG/JPG/SVG).
+    - Konfiguracja: wybór rozmiarów PNG (16/32/180/192/512), include ICO, tło (transparent/kolor), manifest, auto-download.
+    - Output: pliki PNG + opcjonalnie favicon.ico + opcjonalnie site.webmanifest.
+    - Pobieranie: pojedynczo, wszystkie, paczka ZIP.
+    - Edge cases: za mały obraz źródłowy, złożona grafika vs proste logo.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `ToolAlert`, `Badge`.
+    - Obecna strona ma już sekcje „Jak korzystać?" i „Gdzie wgrać pliki?" — rozbudować.
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Co to jest favicon i do czego służy?" (karty przeglądarki, zakładki, PWA).
+    - Sekcja: „Jakie rozmiary ikon są potrzebne?" (wyjaśnienie każdego rozmiaru).
+    - Sekcja: „Jak korzystać z generatora?" (rozbudowane kroki).
+    - Sekcja: „Opcje generowania" (tło, manifest, auto-download — co każda robi).
+    - Sekcja: „Jak pobrać pliki?" (pojedynczo vs ZIP).
+    - Sekcja: „Gdzie i jak wgrać favicon?" (WordPress, HTML, Next.js).
+    - Sekcja: „Jaki obraz źródłowy działa najlepiej?" (proste logo, kwadratowe, min. rozmiar).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdą opcję i rozmiar.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-026] Narzędzia: rozbudowana instrukcja — Konwerter JPG/PNG na WebP**
+
+  - Cel: dodać szczegółową instrukcję dla batch konwertera do WebP.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Upload: drag&drop lub wybór wielu plików (JPG/PNG).
+    - Kolejka: statusy per plik (pending/processing/done/error).
+    - Smart quality: automatyczne obniżanie jakości jeśli wynik większy od oryginału.
+    - Opcje: jakość (60-100%), auto-download.
+    - Pobieranie: pojedynczo, wszystkie, raport oszczędności.
+    - Edge cases: już mały plik, bardzo duży plik, duplikaty.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `ToolAlert`, `Badge`.
+    - Rozważyć: sekcja wyjaśniająca „Smart Quality" z przykładem.
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Co to jest WebP i dlaczego warto konwertować?" (rozmiar, wsparcie przeglądarek).
+    - Sekcja: „Jak dodać pliki do konwersji?" (drag&drop, wybór wielu).
+    - Sekcja: „Co oznaczają statusy plików?" (pending/processing/done/error).
+    - Sekcja: „Jak działa Smart Quality?" (automatyczne dostosowanie jakości).
+    - Sekcja: „Ustawienia jakości — co wybrać?" (kiedy 80%, kiedy wyższa).
+    - Sekcja: „Jak pobrać przekonwertowane pliki?" (pojedynczo, wszystkie, raport).
+    - Sekcja: „Raport oszczędności — co pokazuje?" (ile zaoszczędzono).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdą funkcję i status.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-027] Narzędzia: rozbudowana instrukcja — Zmiana rozmiaru i kadrowanie zdjęcia**
+
+  - Cel: dodać szczegółową instrukcję dla narzędzia do resize/crop.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Upload: drag&drop lub wybór pliku (dowolny obraz).
+    - Tryby rozmiaru: pixels (ręcznie) vs preset (social/web).
+    - Presety: IG (1080×1080, 1080×1350, 1080×1920), FB, LinkedIn, OG image, baner, hero.
+    - Kadrowanie: interaktywne (move + resize handles), zoom, siatka 3×3.
+    - Kształty: prostokąt (aspect ratio), kwadrat, koło.
+    - Eksport: JPG/PNG/WebP, jakość (60-100%).
+    - Edge cases: koło wymaga PNG (alpha), bardzo mały oryginał.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `ToolAlert`, `Badge`.
+    - Rozważyć: tabela presetów z zastosowaniami.
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Jak dodać obraz?" (drag&drop, formaty).
+    - Sekcja: „Tryby ustawiania rozmiaru" (pixels vs preset).
+    - Sekcja: „Presety — który wybrać?" (tabela: preset → do czego służy).
+    - Sekcja: „Jak kadrować obraz?" (przeciąganie, uchwyty, zoom).
+    - Sekcja: „Siatka 3×3 — do czego służy?" (kompozycja, reguła trójpodziału).
+    - Sekcja: „Kształty kadru" (prostokąt, kwadrat, koło — kiedy który).
+    - Sekcja: „Eksport — jaki format wybrać?" (JPG vs PNG vs WebP, jakość).
+    - Sekcja: „Proporcje (aspect ratio) — co to znaczy?" (4:5, 16:9 itp.).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdą funkcję, preset i opcję eksportu.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-028] Narzędzia: rozbudowana instrukcja — Generator stopki mailowej**
+
+  - Cel: dodać szczegółową instrukcję dla generatora e-mail signature.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Dane: imię, email, telefon, strona, adres, firma, stanowisko, avatar URL.
+    - CTA: label + URL.
+    - Social: LinkedIn, Instagram, Facebook, TikTok, YouTube, X.
+    - Układy: standard, accent-bar, top-banner, label-column, centered.
+    - Style: kolor akcentu, kolor tekstu, tło, font, rozmiar, padding, radius CTA, divider.
+    - Klauzula prawna: textarea (wieloliniowa).
+    - Kopiowanie: rich HTML (Gmail/Outlook) lub plain text fallback.
+    - Edge cases: brak wymaganych pól, długa klauzula.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `Button`, `Badge`.
+    - Rozważyć: galeria układów z podglądem.
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Co to jest stopka mailowa i do czego służy?" (profesjonalizm, kontakt).
+    - Sekcja: „Jak wypełnić dane?" (które pola są wymagane, które opcjonalne).
+    - Sekcja: „Układy stopki — który wybrać?" (opis każdego układu z zastosowaniem).
+    - Sekcja: „Jak dodać przycisk CTA?" (co wpisać, gdzie prowadzi).
+    - Sekcja: „Jak dodać linki do social media?" (które pola wypełnić).
+    - Sekcja: „Personalizacja wyglądu" (kolory, font, rozmiar — co każde ustawienie robi).
+    - Sekcja: „Klauzula prawna/RODO — kiedy dodać?" (przykłady).
+    - Sekcja: „Jak skopiować stopkę do Gmail/Outlook?" (krok po kroku).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdy panel i opcję.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-029] Narzędzia: rozbudowana instrukcja — Generator kodów QR**
+
+  - Cel: dodać szczegółową instrukcję dla generatora kodów QR.
+  - **Etap 1 — Analiza funkcjonalności**:
+    - Inputy: tekst/URL do zakodowania.
+    - Opcje: rozmiar, kolor QR, kolor tła, poziom korekcji błędów.
+    - Podgląd: live preview kodu QR.
+    - Pobieranie: PNG/SVG.
+    - Edge cases: za długi tekst, specjalne znaki.
+  - **Etap 2 — Analiza komponentów**:
+    - Istniejące: `SectionInfo`, `SectionSteps`, `ToolFieldRow`, `ToolHelper`.
+    - Rozważyć: sekcja „Gdzie używać kodów QR?" z przykładami (wizytówki, plakaty, opakowania).
+  - **Etap 3 — Stworzenie instrukcji**:
+    - Sekcja: „Co to jest kod QR i jak działa?" (skanowanie, pojemność).
+    - Sekcja: „Co można zakodować w QR?" (URL, tekst, vCard, Wi-Fi).
+    - Sekcja: „Jak wygenerować kod QR?" (krok po kroku).
+    - Sekcja: „Opcje personalizacji" (rozmiar, kolory, korekcja błędów — co każde robi).
+    - Sekcja: „Poziomy korekcji błędów — który wybrać?" (L/M/Q/H, kiedy który).
+    - Sekcja: „Jak pobrać kod QR?" (PNG vs SVG, do czego który).
+    - Sekcja: „Gdzie używać kodów QR?" (przykłady zastosowań).
+    - Sekcja: „Jak przetestować kod przed drukiem?" (skanowanie telefonem).
+    - Sekcja FAQ (min. 4 pytania).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/generator-kodu-qr/page.tsx`
+  - Kryteria akceptacji:
+    - Instrukcja wyjaśnia każdą opcję i format.
+    - Ton zgodny z INSTRUCTIONS.md.
+    - Min. 4 FAQ.
+    - `npm run lint` i `npm run build` przechodzą.
 
 - ❌ **[PROJECT-006] Realizacje: komplet danych case study (client/deliverables/stack/process/task) + higiena treści**
 
@@ -1185,5 +1455,347 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Szczegółowe wymiary dla każdej platformy z konkretnymi wartościami px.
     - Min. 3 linki wewnętrzne + CTA do usługi.
     - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-078] Blog: Jak zabezpieczyć stronę WordPress przed atakami i włamaniami?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Bezpieczeństwo (obecnie 1 artykuł o SSL).
+    - WordPress to najpopularniejszy CMS — temat ma duży potencjał wyszukiwań.
+    - Artykuł edukuje o zagrożeniach i kieruje do usługi optymalizacji/wsparcia.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego strony WordPress są częstym celem ataków?
+    - H2: Najczęstsze rodzaje zagrożeń (brute force, malware, SQL injection, XSS)
+    - H2: Podstawy bezpieczeństwa: aktualizacje, hasła, użytkownicy
+    - H2: Wtyczki bezpieczeństwa: co robią i kiedy warto je mieć
+    - H2: Kopie zapasowe jako ostatnia linia obrony
+    - H2: Kiedy zlecić audyt bezpieczeństwa specjaliście?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
+    - `/uslugi/strony-internetowe`
+    - `/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/bezpieczenstwo/jak-zabezpieczyc-strone-wordpress-przed-atakami`
+    - `metadata.title`: `Jak zabezpieczyć stronę WordPress przed atakami i włamaniami? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie zagrożenia czyhają na strony WordPress, jak się przed nimi chronić i kiedy warto zlecić audyt bezpieczeństwa.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, bez DIY — pokazuje zagrożenia i wartość profesjonalnej opieki).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-079] Blog: Kopie zapasowe strony: dlaczego są ważne i jak często je robić?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Bezpieczeństwo.
+    - Temat często pomijany przez właścicieli stron, a kluczowy dla ciągłości działania.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Co to jest kopia zapasowa strony i co zawiera?
+    - H2: Kiedy kopia zapasowa ratuje firmę? (przykłady scenariuszy)
+    - H2: Jak często robić kopie zapasowe? (zależy od typu strony)
+    - H2: Gdzie przechowywać kopie? (hosting, chmura, lokalnie)
+    - H2: Automatyczne vs ręczne kopie zapasowe
+    - H2: Jak sprawdzić, czy hosting robi kopie?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
+    - `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/bezpieczenstwo/kopie-zapasowe-strony-dlaczego-sa-wazne`
+    - `metadata.title`: `Kopie zapasowe strony: dlaczego są ważne i jak często je robić? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym są kopie zapasowe strony, jak często je wykonywać i gdzie przechowywać, żeby nie stracić danych.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-080] Blog: Co powinien zawierać dobry projekt wizytówki firmowej?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Druk (obecnie 1 artykuł o materiałach drukowanych).
+    - Wizytówki to najpopularniejszy materiał drukowany — temat ma duży potencjał.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Rola wizytówki w kontakcie z klientem
+    - H2: Jakie informacje powinny znaleźć się na wizytówce?
+    - H2: Format i wymiary wizytówki (standardowe vs niestandardowe)
+    - H2: Papier i wykończenie: co wybrać i dlaczego ma znaczenie
+    - H2: Najczęstsze błędy przy projektowaniu wizytówek
+    - H2: Jak przygotować się do zlecenia projektu wizytówki?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/projekty-graficzne/projekt-wizytowki`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/druk/co-powinien-zawierac-dobry-projekt-wizytowki`
+    - `metadata.title`: `Co powinien zawierać dobry projekt wizytówki firmowej? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie informacje umieścić na wizytówce, jaki format wybrać i na co zwrócić uwagę przy zamawianiu projektu.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, bez DIY).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-081] Blog: Jak przygotować skuteczną ulotkę reklamową dla firmy?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Druk.
+    - Ulotki to drugi najpopularniejszy materiał drukowany po wizytówkach.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Kiedy ulotka ma sens jako narzędzie marketingowe?
+    - H2: Formaty ulotek i ich zastosowania (DL, A5, A4, składane)
+    - H2: Co powinno znaleźć się na ulotce? (struktura treści)
+    - H2: Jak przyciągnąć uwagę i zachęcić do działania?
+    - H2: Papier i wykończenie: wpływ na odbiór ulotki
+    - H2: Najczęstsze błędy przy projektowaniu ulotek
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/projekty-graficzne/projekt-ulotki`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic`
+    - `/edukacja/grafika/kody-qr-w-materialach-reklamowych`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/druk/jak-przygotowac-skuteczna-ulotke-reklamowa`
+    - `metadata.title`: `Jak przygotować skuteczną ulotkę reklamową dla firmy? | Arteon`
+    - `metadata.description`: `Dowiedz się, jaki format ulotki wybrać, co na niej umieścić i jak zaprojektować ulotkę, która przyciągnie uwagę i zachęci do kontaktu.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, bez DIY).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-082] Blog: Jak psychologia wpływa na zachowania użytkowników na stronie internetowej?**
+
+  - Cel i uzasadnienie:
+    - Stworzyć kategorię Psychologia (obecnie 0 artykułów jako primary).
+    - Temat łączy UX z marketingiem i wspiera usługi stron/sklepów.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego zrozumienie użytkownika jest kluczowe dla strony?
+    - H2: Efekt pierwszego wrażenia (pierwsze 3-5 sekund)
+    - H2: Zasada Hicka: jak liczba opcji wpływa na decyzje
+    - H2: Społeczny dowód słuszności: opinie, liczby, logotypy klientów
+    - H2: Strach przed utratą (FOMO) i pilność: kiedy działają, a kiedy irytują
+    - H2: Jak wykorzystać te zasady na stronie firmowej?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/psychologia/jak-psychologia-wplywa-na-zachowania-uzytkownikow`
+    - `metadata.title`: `Jak psychologia wpływa na zachowania użytkowników na stronie internetowej? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie mechanizmy psychologiczne wpływają na decyzje użytkowników i jak wykorzystać je na stronie firmowej.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-083] Blog: Efekt pierwszego wrażenia: jak strona buduje zaufanie w kilka sekund?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Psychologia.
+    - Temat bezpośrednio wpływa na konwersję i wspiera usługi stron.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Co decyduje o pierwszym wrażeniu na stronie?
+    - H2: Ile czasu masz na przekonanie użytkownika? (dane z badań)
+    - H2: Elementy budujące zaufanie powyżej linii załamania
+    - H2: Sygnały ostrzegawcze: co odstrasza użytkowników
+    - H2: Jak sprawdzić pierwsze wrażenie swojej strony?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
+    - `/edukacja/psychologia/jak-psychologia-wplywa-na-zachowania-uzytkownikow`
+    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/psychologia/efekt-pierwszego-wrazenia-jak-strona-buduje-zaufanie`
+    - `metadata.title`: `Efekt pierwszego wrażenia: jak strona buduje zaufanie w kilka sekund? | Arteon`
+    - `metadata.description`: `Dowiedz się, co decyduje o pierwszym wrażeniu na stronie, ile czasu masz na przekonanie użytkownika i jakie elementy budują zaufanie.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Źródła dla danych z badań (np. Google, Stanford Web Credibility).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-084] Blog: Czym różni się sklep internetowy od strony firmowej i kiedy warto go mieć?**
+
+  - Cel i uzasadnienie:
+    - Stworzyć kategorię Sklepy jako primary (obecnie 0 artykułów).
+    - Popularne pytanie wśród firm rozważających sprzedaż online.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Strona firmowa vs sklep internetowy: podstawowe różnice
+    - H2: Kiedy wystarczy strona z formularzem zamówienia?
+    - H2: Kiedy warto zainwestować w pełny sklep internetowy?
+    - H2: Co jest potrzebne do uruchomienia sklepu? (koszty, czas, obowiązki prawne)
+    - H2: Hybrydowe rozwiązania: strona + koszyk lub integracja z marketplace
+    - H2: Jak podjąć decyzję? (pytania do przemyślenia)
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/sklepy-internetowe`
+    - `/uslugi/strony-internetowe`
+    - `/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/sklepy/czym-rozni-sie-sklep-internetowy-od-strony-firmowej`
+    - `metadata.title`: `Czym różni się sklep internetowy od strony firmowej i kiedy warto go mieć? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie są różnice między stroną firmową a sklepem internetowym, kiedy warto zainwestować w e-commerce i co jest potrzebne do startu.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-085] Blog: Jak zwiększyć konwersję w sklepie internetowym bez obniżania cen?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Sklepy.
+    - Temat bezpośrednio wpływa na wyniki biznesowe klientów e-commerce.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Co to jest konwersja i dlaczego warto ją mierzyć?
+    - H2: Karta produktu: elementy, które zwiększają sprzedaż
+    - H2: Proces zakupowy: jak nie stracić klienta przy kasie
+    - H2: Zaufanie i bezpieczeństwo: opinie, gwarancje, zwroty
+    - H2: Szybkość i wygoda: wpływ wydajności na sprzedaż
+    - H2: Jak mierzyć i testować zmiany? (podstawy A/B testing)
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/sklepy-internetowe`
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+    - `/edukacja/psychologia/jak-psychologia-wplywa-na-zachowania-uzytkownikow`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/sklepy/jak-zwiekszyc-konwersje-w-sklepie-internetowym`
+    - `metadata.title`: `Jak zwiększyć konwersję w sklepie internetowym bez obniżania cen? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie elementy sklepu internetowego wpływają na konwersję i jak zwiększyć sprzedaż bez obniżania cen.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, bez DIY).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-086] Blog: Nawigacja na stronie: jak ułatwić użytkownikom znalezienie tego, czego szukają?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię UX (obecnie 1 artykuł + IDEA-073).
+    - Nawigacja to fundament UX — temat praktyczny i konkretny.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego nawigacja decyduje o skuteczności strony?
+    - H2: Rodzaje nawigacji: główna, stopka, breadcrumbs, wyszukiwarka
+    - H2: Ile pozycji w menu to optymalna liczba?
+    - H2: Nazewnictwo: jak nazywać podstrony, żeby były zrozumiałe
+    - H2: Nawigacja mobilna: hamburgery, sticky menu, bottom nav
+    - H2: Najczęstsze błędy w nawigacji i jak ich unikać
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/ux/nawigacja-na-stronie-jak-ulatwic-uzytkownikom-znalezienie`
+    - `metadata.title`: `Nawigacja na stronie: jak ułatwić użytkownikom znalezienie tego, czego szukają? | Arteon`
+    - `metadata.description`: `Dowiedz się, jak zaprojektować nawigację na stronie, żeby użytkownicy szybko znajdowali to, czego szukają.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-087] Blog: Formularze na stronie: jak je projektować, żeby użytkownicy je wypełniali?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię UX.
+    - Formularze to kluczowy element konwersji — temat praktyczny.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego formularze są tak ważne dla strony firmowej?
+    - H2: Ile pól powinien mieć formularz kontaktowy?
+    - H2: Etykiety, placeholdery i komunikaty błędów
+    - H2: Walidacja: jak pomagać, a nie frustrować użytkownika
+    - H2: Przycisk wysyłania i co dzieje się po kliknięciu
+    - H2: Formularze wieloetapowe: kiedy mają sens
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/ux/nawigacja-na-stronie-jak-ulatwic-uzytkownikom-znalezienie`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/ux/formularze-na-stronie-jak-projektowac`
+    - `metadata.title`: `Formularze na stronie: jak je projektować, żeby użytkownicy je wypełniali? | Arteon`
+    - `metadata.description`: `Dowiedz się, ile pól powinien mieć formularz, jak pisać etykiety i komunikaty błędów oraz jak zwiększyć liczbę wypełnień.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-088] Blog: Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Marketing (obecnie 0 jako primary + IDEA-072).
+    - Content marketing to fundament długofalowej strategii — temat edukacyjny.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Co to jest content marketing i czym różni się od reklamy?
+    - H2: Dlaczego content marketing działa? (mechanizm i korzyści)
+    - H2: Formy content marketingu: blog, video, poradniki, case studies
+    - H2: Jak content marketing wspiera SEO i pozycjonowanie?
+    - H2: Jak mierzyć efekty content marketingu?
+    - H2: Od czego zacząć content marketing w małej firmie?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne:
+    - `/uslugi/tworzenie-tresci`
+    - `/uslugi/blogi-internetowe`
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
+    - `/kontakt`
+  - SEO:
+    - URL/slug: `/edukacja/marketing/czym-jest-content-marketing`
+    - `metadata.title`: `Czym jest content marketing i jak pomaga firmom pozyskiwać klientów? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest content marketing, jak działa, jakie formy może przyjąć i jak zacząć go stosować w swojej firmie.`
+  - Kryteria akceptacji:
+    - Artykuł zgodny z tonem marki (mentorski, prosty).
+    - Min. 4 linki wewnętrzne + CTA.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[IDEA-089] Blog: E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?**
+
+  - **Zrobione 2025-12-23**: Artykuł zrealizowany w stylu nie-DIY.
+  - Zmieniono tytuł z "od czego zacząć i jakich błędów unikać" na "dlaczego warto i na co zwrócić uwagę" (zgodnie z zasadą nie-DIY).
   - Weryfikacja: nie jest wymagana (content-only).
 

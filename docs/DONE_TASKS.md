@@ -2,6 +2,40 @@
 
 ## 2025-12-23
 
+- ✅ **[IDEA-089] Blog: E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?**
+
+  - **Co zrobiono**:
+    - Utworzono artykuł w `data/pl/blog.json` (na początku listy `articles[]`).
+    - Slug: `e-mail-marketing-dla-malych-firm`, URL: `/edukacja/marketing/e-mail-marketing-dla-malych-firm`.
+    - **Zmieniono tytuł** z "od czego zacząć i jakich błędów unikać" na "dlaczego warto i na co zwrócić uwagę" — zgodnie z zasadą nie-DIY.
+    - Sekcje: wstęp, dlaczego e-mail marketing działa (ROI, bezpośredni dostęp, własność listy), rodzaje e-maili (newsletter, automatyczne, transakcyjne, kampanie), co powinien zawierać skuteczny mailing, na co zwrócić uwagę (RODO, dostarczalność, częstotliwość), najczęstsze problemy, jak mierzyć skuteczność, podsumowanie + CTA.
+    - Linki wewnętrzne (4): `/uslugi/tworzenie-tresci`, `/narzedzia/darmowy-generator-stopki-mailowej`, `/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa`, `/kontakt`.
+    - Linki zewnętrzne: DMA (źródło danych o ROI e-mail marketingu).
+    - FAQ: 5 pytań.
+    - CTA: Tworzenie treści + Kontakt.
+    - Zaktualizowano `BLOG_CATALOG.md`.
+    - **Ton**: Mentorski, edukacyjny, nie-DIY — wyjaśnia czym jest e-mail marketing i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu".
+  - **Weryfikacja**: nie wymagana (content-only).
+
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny — pomysły na artykuły dla kategorii z małą liczbą artykułów**
+
+  - **Zakres**: Analiza istniejących artykułów w `data/pl/blog.json` pod kątem `primaryCategory`. Identyfikacja kategorii z małą liczbą artykułów.
+  - **Wyniki analizy**:
+    - Bezpieczeństwo: 1 artykuł (SSL)
+    - Druk: 1 artykuł (materiały drukowane)
+    - Psychologia: 0 artykułów jako primary
+    - Sklepy: 0 artykułów jako primary
+    - UX: 1 artykuł (responsywność)
+    - Marketing: 0 artykułów jako primary
+  - **Dodano 12 pomysłów na artykuły** (po 2 dla każdej kategorii):
+    - **Bezpieczeństwo**: `IDEA-078` (WordPress security), `IDEA-079` (kopie zapasowe)
+    - **Druk**: `IDEA-080` (projekt wizytówki), `IDEA-081` (ulotka reklamowa)
+    - **Psychologia**: `IDEA-082` (psychologia użytkowników), `IDEA-083` (efekt pierwszego wrażenia)
+    - **Sklepy**: `IDEA-084` (sklep vs strona), `IDEA-085` (konwersja w sklepie)
+    - **UX**: `IDEA-086` (nawigacja), `IDEA-087` (formularze)
+    - **Marketing**: `IDEA-088` (content marketing), `IDEA-089` (e-mail marketing)
+  - **Weryfikacja**: nie wymagana (AUDIT-only).
+
 - ✅ **[IDEA-066] Blog: Co sprawdzić przed uruchomieniem nowej strony internetowej?**
 
   - **Co zrobiono**:
