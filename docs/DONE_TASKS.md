@@ -2,6 +2,20 @@
 
 ## 2025-12-23
 
+- ✅ **[IDEA-088] Blog: Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?**
+
+  - **Co zrobiono**:
+    - Utworzono artykuł w `data/pl/blog.json` (na początku listy `articles[]`).
+    - Slug: `czym-jest-content-marketing`, URL: `/edukacja/marketing/czym-jest-content-marketing`.
+    - Sekcje: wstęp, co to jest content marketing i czym różni się od reklamy, dlaczego content marketing działa (odpowiada na potrzeby, buduje zaufanie, wspiera SEO, obniża koszt pozyskania), formy content marketingu (blog, poradniki, video, case studies, infografiki, newslettery), jak content marketing wspiera SEO, jak mierzyć efekty, od czego zacząć w małej firmie, podsumowanie + CTA.
+    - Linki wewnętrzne (5): `/uslugi/tworzenie-tresci`, `/uslugi/blogi-internetowe`, `/uslugi/marketing/pozycjonowanie-stron`, `/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`, `/kontakt`.
+    - Linki zewnętrzne: HubSpot (źródło danych o długowieczności artykułów), Google Analytics, Google Search Console.
+    - FAQ: 5 pytań.
+    - CTA: Tworzenie treści + Kontakt.
+    - Zaktualizowano `BLOG_CATALOG.md`.
+    - **Ton**: Mentorski, edukacyjny, nie-DIY — wyjaśnia czym jest content marketing, jak działa i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu".
+  - **Weryfikacja**: nie wymagana (content-only).
+
 - ✅ **[IDEA-089] Blog: E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?**
 
   - **Co zrobiono**:

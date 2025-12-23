@@ -25,6 +25,20 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?**
+
+  - **Slug**: `czym-jest-content-marketing`
+  - **URL**: `/edukacja/marketing/czym-jest-content-marketing`
+  - **Kategorie**: `Marketing`, `Treści`, `SEO`
+  - **Data publikacji**: 2025-12-23
+  - **Czas czytania**: 7 min
+  - **Opis**: Artykuł o content marketingu. Co to jest content marketing i czym różni się od reklamy (przerywa vs przyciąga, krótko vs długo, rozpoznawalność vs autorytet), dlaczego content marketing działa (odpowiada na potrzeby, buduje zaufanie, wspiera SEO, obniża koszt pozyskania), formy content marketingu (blog firmowy, poradniki i e-booki, video, case studies, infografiki, newslettery), jak content marketing wspiera SEO (więcej fraz, odpowiedzi na pytania, linkowanie wewnętrzne, świeżość treści, naturalny link building), jak mierzyć efekty (ruch, pozycje, czas na stronie, konwersje, zaangażowanie), od czego zacząć w małej firmie (grupa docelowa, pytania klientów, forma, regularność, promocja, analiza).
+  - **Linki wewnętrzne**: `/uslugi/tworzenie-tresci`, `/uslugi/blogi-internetowe`, `/uslugi/marketing/pozycjonowanie-stron`, `/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`, `/kontakt`
+  - **Linki zewnętrzne**: HubSpot (źródło danych o długowieczności artykułów), Google Analytics, Google Search Console
+  - **FAQ**: 5 pytań
+  - **CTA**: Tworzenie treści + Kontakt
+  - **Ton**: Mentorski, edukacyjny, nie-DIY — wyjaśnia czym jest content marketing, jak działa i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu"
+
 - **E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?**
 
   - **Slug**: `e-mail-marketing-dla-malych-firm`
