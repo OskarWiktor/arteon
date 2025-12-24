@@ -948,6 +948,8 @@
       ],
 
       "seo": {
+        "title": "Redesign bloga PiłkaNożna.pl na EURO 2024 - Arteon",
+        "description": "Case study: redesign serwisu sportowego PiłkaNożna.pl przed EURO 2024. Nowy system CMS, dedykowane szablony artykułów i dokumentacja dla redakcji.",
         "canonical": "https://www.arteonagency.pl/realizacje/blog-sportowy-pilka-nozna-pl"
       }
     },
@@ -1293,7 +1295,7 @@
       },
 
       "seo": {
-        "title": "Lokalizacje serwisów - spójny wygląd i treść | Case study Colgate x VML",
+        "title": "Lokalizacje serwisów Colgate - case study - Arteon",
         "description": "Case study: lokalizacja serwisów Colgate na rynki lokalne. Przeniesienie treści i UI z wersji master .",
         "canonical": "https://www.arteonagency.pl/realizacje/colgate"
       }

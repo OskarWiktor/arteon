@@ -11,7 +11,7 @@ const EDUKACJA_HERO_IMAGE = '/assets/blog/e-mail-marketing-dla-malych-firm/e-mai
 
 export const metadata: Metadata = {
   title: 'Edukacja - Arteon',
-  description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
+  description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci. Dowiedz się, jak rozwijać firmę online.',
   alternates: { canonical: toAbsoluteUrl('/edukacja') },
   openGraph: {
     title: 'Edukacja - Arteon',

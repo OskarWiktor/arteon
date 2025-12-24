@@ -2,6 +2,35 @@
 
 ## 2025-12-24
 
+- ✅ **[SEO-021] Meta title: skrócić za długie tytuły i wydłużyć za krótkie (Ahrefs audit)**
+
+  - **Źródło**: Ahrefs Site Audit — wykryto 20 stron z za długim meta title (>70 zn.) i 3 strony z za krótkim (<30 zn.).
+  - **Co zrobiono**:
+    - **Tytuły skrócone (20 stron)**:
+      - Narzędzia: generator-palety-kolorow-z-obrazu (70→48), instrukcja (71→53), zmiana-rozmiaru/instrukcja (73→53), jpg-png-webp/instrukcja (73→48), optymalizacja-wordpress (71→57)
+      - Artykuły: kontrast-kolorow (79→55), content-marketing (77→52), e-mail-marketing (80→51), grafika-do-postow (71→55), mierzyc-skutecznosc (72→57), ssl (72→56), meta-title (95→56), kody-qr (77→52), faq-na-stronie (75→54), identyfikacja-wizualna (75→55), blog-lokalne-firmy (80→50), zoptymalizowac-zdjecia (85→55), strona-nie-wyswietla (73→59), favicon (88→49)
+      - Realizacje: colgate (71→51)
+    - **Tytuły wydłużone (3 kategorie)**:
+      - /edukacja/seo: 12→48 zn.
+      - /edukacja/druk: 13→50 zn.
+      - /edukacja/ux: 11→44 zn.
+    - **Opisy wydłużone (2 strony)**:
+      - /edukacja: 89→140 zn.
+      - favicon artykuł: 86→130 zn.
+    - **Brakujący opis dodany (1 strona)**:
+      - /realizacje/blog-sportowy-pilka-nozna-pl: dodano seo.title i seo.description
+  - **Pliki**:
+    - `data/pl/blog.json` (14 artykułów)
+    - `data/pl/projects.json` (2 realizacje)
+    - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`
+    - `app/(pl)/uslugi/strony-internetowe/optymalizacja-strony-wordpress/page.tsx`
+    - `app/(pl)/edukacja/page.tsx`
+    - `app/(pl)/edukacja/[category]/page.tsx`
+  - **Weryfikacja**: nie wymagana (COPY-only).
+
 - ✅ **[SEO-020] Sitemap: brakujące strony narzędzi (favicon generator)**
 
   - **Źródło**: Ahrefs Site Audit — wykryto 2 strony nieobecne w sitemap:

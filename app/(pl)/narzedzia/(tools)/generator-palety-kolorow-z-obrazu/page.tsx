@@ -11,11 +11,11 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
+  title: 'Generator palety kolorów z obrazu online - Arteon',
   description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu') },
   openGraph: {
-    title: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
+    title: 'Generator palety kolorów z obrazu online - Arteon',
     description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
     url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
     type: 'website',

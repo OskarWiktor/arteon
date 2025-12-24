@@ -8,7 +8,7 @@
       "category": ["UX", "Grafika"],
       "tags": ["kontrast kolorów", "WCAG", "dostępność", "czytelność", "kolory na stronie", "AA", "AAA", "accessibility", "UX", "relative luminance", "współczynnik kontrastu"],
       "seo": {
-        "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić? - Arteon",
+        "title": "Kontrast kolorów na stronie: znaczenie i weryfikacja - Arteon",
         "description": "Dowiedz się, czym jest kontrast kolorów, jak działa wzór WCAG, co oznaczają poziomy AA i AAA oraz jak sprawdzić i poprawić kontrast na stronie internetowej.",
         "canonical": "https://www.arteonagency.pl/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie"
       },
@@ -115,7 +115,7 @@
       "category": ["Treści", "SEO"],
       "tags": ["content marketing", "marketing treści", "strategia marketingowa", "blog firmowy", "pozyskiwanie klientów", "SEO", "artykuły eksperckie"],
       "seo": {
-        "title": "Czym jest content marketing i jak pomaga firmom pozyskiwać klientów? - Arteon",
+        "title": "Content marketing: czym jest i jak działa? - Arteon",
         "description": "Dowiedz się, czym jest content marketing, jak działa, jakie formy może przyjąć i jak zacząć go stosować w swojej firmie.",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/czym-jest-content-marketing"
       },
@@ -207,7 +207,7 @@
       "category": ["Treści"],
       "tags": ["e-mail marketing", "newsletter", "mailing", "marketing dla firm", "komunikacja z klientami", "automatyzacja marketingu", "RODO"],
       "seo": {
-        "title": "E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę? - Arteon",
+        "title": "E-mail marketing dla małych firm: poradnik - Arteon",
         "description": "Dowiedz się, dlaczego e-mail marketing jest skuteczny dla małych firm, jakie rodzaje mailingów przynoszą najlepsze efekty i na co zwrócić uwagę.",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/e-mail-marketing-dla-malych-firm"
       },
@@ -391,7 +391,7 @@
       "category": ["Grafika", "Marketing"],
       "tags": ["media społecznościowe", "grafika", "posty", "Facebook", "Instagram", "LinkedIn", "wymiary grafik", "spójność wizualna", "szablony postów"],
       "seo": {
-        "title": "Jak przygotować grafikę do postów w mediach społecznościowych? - Arteon",
+        "title": "Grafika do postów w mediach społecznościowych - Arteon",
         "description": "Dowiedz się, jakie wymiary grafik używać na Facebooku, Instagramie i LinkedIn oraz jak zachować spójność wizualną w postach.",
         "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych"
       },
@@ -565,7 +565,7 @@
       "category": ["Widoczność", "Strony"],
       "tags": ["analityka", "Google Analytics", "wskaźniki strony", "ruch na stronie", "konwersje", "współczynnik odrzuceń", "czas na stronie", "mierzenie efektów"],
       "seo": {
-        "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki - Arteon",
+        "title": "Jak mierzyć skuteczność strony? Podstawy analityki - Arteon",
         "description": "Dowiedz się, jakie wskaźniki mierzyć na stronie internetowej, czym jest Google Analytics i kiedy warto zlecić analizę specjaliście.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej"
       },
@@ -829,7 +829,7 @@
       "category": ["SEO", "Strony"],
       "tags": ["SSL", "certyfikat SSL", "HTTPS", "bezpieczeństwo strony", "szyfrowanie", "SEO", "zaufanie użytkowników", "strona internetowa"],
       "seo": {
-        "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje? - Arteon",
+        "title": "Certyfikat SSL: co to jest i dlaczego jest ważny? - Arteon",
         "description": "Dowiedz się, czym jest certyfikat SSL, jak wpływa na bezpieczeństwo i SEO oraz jak sprawdzić, czy Twoja strona go ma.",
         "canonical": "https://www.arteonagency.pl/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje"
       },
@@ -922,7 +922,7 @@
       "category": ["Treści", "Strony", "Widoczność"],
       "tags": ["meta title", "meta description", "SEO", "wyniki wyszukiwania", "Google", "klikalność", "CTR", "optymalizacja"],
       "seo": {
-        "title": "Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google? - Arteon",
+        "title": "Meta title i description: jak je dobrze napisać? - Arteon",
         "description": "Dowiedz się, czym są meta title i description, dlaczego mają znaczenie dla SEO i jak je napisać, żeby zwiększyć klikalność w Google.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/meta-title-i-description-jak-je-napisac"
       },
@@ -1113,7 +1113,7 @@
       "category": ["Marketing", "Druk"],
       "tags": ["kod QR", "QR code", "materiały reklamowe", "ulotki", "wizytówki", "plakaty", "marketing offline", "druk"],
       "seo": {
-        "title": "Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać? - Arteon",
+        "title": "Kody QR w materiałach reklamowych: poradnik - Arteon",
         "description": "Dowiedz się, kiedy kod QR na ulotce lub wizytówce ma sens, jakich błędów unikać i jak stworzyć QR w kilka sekund.",
         "canonical": "https://www.arteonagency.pl/edukacja/grafika/kody-qr-w-materialach-reklamowych"
       },
@@ -1644,8 +1644,8 @@
       "category": ["Grafika", "Strony", "SEO"],
       "tags": ["favicon", "ikona strony", "apple-touch-icon", "pwa", "lighthouse", "manifest.json", "przeglądarki", "seo", "web Grafika"],
       "seo": {
-        "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie? - Arteon",
-        "description": "Dowiedz się, czym jest favicon, jak ją stworzyć i przygotować, aby działała poprawnie.",
+        "title": "Favicon: co to jest i jak ją przygotować? - Arteon",
+        "description": "Dowiedz się, czym jest favicon, jakie pliki są potrzebne i jak przygotować kompletny zestaw ikon dla strony internetowej.",
         "canonical": "https://www.arteonagency.pl/edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie"
       },
       "cover": "/assets/blog/favicon-i-ikony-strony-co-przygotowac/favicon-i-ikony-strony-co-przygotowac.webp",
@@ -1746,7 +1746,7 @@
       "category": ["Treści", "Strony", "Widoczność"],
       "tags": ["faq", "faq seo", "pytania i odpowiedzi", "schema faq", "linkowanie wewnętrzne", "long tail", "copywriting", "google search console", "struktura treści", "konwersja"],
       "seo": {
-        "title": "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony? - Arteon",
+        "title": "FAQ na stronie: jak pisać pytania wspierające SEO? - Arteon",
         "description": "Dowiedz się, jak zaplanować FAQ na stronie: skąd brać pytania, jak je grupować, jak pisać odpowiedzi i kiedy używać FAQ schema, aby wspierać SEO i konwersję.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony"
       },
@@ -2049,7 +2049,7 @@
       "primaryCategory": "SEO",
       "category": ["Treści", "Strony"],
       "seo": {
-        "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
+        "title": "Blog na stronie lokalnej firmy: czy warto? - Arteon",
         "description": "Sprawdź, dlaczego blog na stronie zwiększa widoczność w Google, Google Maps i obniża koszt pozyskania klienta",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google"
       },
@@ -2117,7 +2117,7 @@
       "primaryCategory": "Zdjęcia",
       "category": ["SEO", "Strony"],
       "seo": {
-        "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
+        "title": "Optymalizacja zdjęć na stronę WWW: formaty i WebP - Arteon",
         "description": "Dowiedz się, jak zoptymalizować zdjęcia na stronę WWW, aby strona była szybsza, lżejsza i lepiej oceniana przez Google",
         "canonical": "https://www.arteonagency.pl/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp"
       },
@@ -2457,7 +2457,7 @@
       "category": ["Branding"],
       "tags": ["identyfikacja wizualna", "identyfikacja wizualna firmy", "logo", "kolorystyka", "typografia", "brandbook", "zaufanie klientów", "branding", "spójność wizualna"],
       "seo": {
-        "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów? - Arteon",
+        "title": "Identyfikacja wizualna firmy a zaufanie klientów - Arteon",
         "description": "Spójna identyfikacja wizualna, logo, kolorystyka i typografia wzmacniają wiarygodność i skracają decyzje zakupowe. Praktyczne wskazówki dla firm.",
         "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow"
       },
@@ -2585,7 +2585,7 @@
       "category": ["Widoczność", "Strony"],
       "tags": ["google", "indeksacja", "google search console", "pozycjonowanie", "robot google", "widoczność strony", "sitemap", "plik robots.txt", "algorytm google", "strona internetowa"],
       "seo": {
-        "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",
+        "title": "Strona nie wyświetla się w Google? Przyczyny i rozwiązania - Arteon",
         "description": "Twoja strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania Google. Kompletny przewodnik.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic"
       },

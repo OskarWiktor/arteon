@@ -128,8 +128,15 @@ export async function generateMetadata({ params }: { params: { category: string 
   const openGraphDescription = content?.openGraphDescription ?? DEFAULT_OPEN_GRAPH_DESCRIPTION(label);
   const ogImage = content?.heroImage ? toAbsoluteUrl(content.heroImage) : toAbsoluteUrl('/assets/ogien.webp');
 
+  const expandedTitles: Record<string, string> = {
+    seo: 'Artykuły o SEO i pozycjonowaniu stron - Arteon',
+    druk: 'Artykuły o druku i materiałach reklamowych - Arteon',
+    ux: 'Artykuły o UX i użyteczności stron - Arteon',
+  };
+  const finalTitle = expandedTitles[params.category] || `${label} - Arteon`;
+
   return {
-    title: `${label} - Arteon`,
+    title: finalTitle,
     description,
     alternates: { canonical: toAbsoluteUrl(`/edukacja/${params.category}`) },
     openGraph: {

@@ -22,13 +22,13 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty - Arteon',
+  title: 'Optymalizacja strony WordPress - gwarancja 90+/100 - Arteon',
   description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress'),
   },
   openGraph: {
-    title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty - Arteon',
+    title: 'Optymalizacja strony WordPress - gwarancja 90+/100 - Arteon',
     description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
     url: toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress'),
     type: 'website',

@@ -13,11 +13,11 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Jak używać generatora palety kolorów z obrazu? Instrukcja krok po kroku',
+  title: 'Instrukcja generatora palety kolorów z obrazu - Arteon',
   description: 'Poznaj wszystkie funkcje generatora palety kolorów z obrazu. Dowiedz się, jak wgrać obraz, skopiować kolory i które zdjęcia dają najlepsze rezultaty.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja') },
   openGraph: {
-    title: 'Jak używać generatora palety kolorów z obrazu? Instrukcja krok po kroku',
+    title: 'Instrukcja generatora palety kolorów z obrazu - Arteon',
     description: 'Poznaj wszystkie funkcje generatora palety kolorów z obrazu. Dowiedz się, jak wgrać obraz, skopiować kolory i które zdjęcia dają najlepsze rezultaty.',
     url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja'),
     type: 'website',
