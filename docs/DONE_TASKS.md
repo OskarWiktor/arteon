@@ -792,7 +792,7 @@
     - Przepisano artykuł do nowego tonu (mentorsko, prosto, benefit-first) z analogiami (trening/remont) i „krok po kroku”.
     - Dodano wyjaśnienia terminów: Core Web Vitals (LCP/CLS/INP), autorytet domeny, topical authority, link building.
     - Dodano `tags[]`, sekcję `faq[]` (5 pytań) oraz linkowanie wewnętrzne + „Zobacz też”.
-    - Zaktualizowano `seo.title` (krótsze + `| Arteon`), `excerpt`, `dateModified`, `readingTime`.
+    - Zaktualizowano `seo.title` (krótsze + `- Arteon`), `excerpt`, `dateModified`, `readingTime`.
   - Weryfikacja: pominięto `npm run lint` i `npm run build` (content-only).
 
 - ✅ **[CONTENT-005] Edukacja: lepszy content na stronach kategorii artykułów (fallback dla nowych kategorii)**

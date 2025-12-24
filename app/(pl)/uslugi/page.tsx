@@ -51,11 +51,11 @@ const SERVICES = [
 ] as const;
 
 export const metadata = {
-  title: 'Usługi - strony, sklepy, grafika i marketing | Arteon',
+  title: 'Usługi - strony, sklepy, grafika i marketing - Arteon',
   description: 'Kompleksowa oferta usług: strony, sklepy, blogi, projekty graficzne, treści i marketing. Wszystko w jednym miejscu.',
   alternates: { canonical: toAbsoluteUrl('/uslugi') },
   openGraph: {
-    title: 'Usługi - strony, sklepy, grafika i marketing | Arteon',
+    title: 'Usługi - strony, sklepy, grafika i marketing - Arteon',
     description: 'Kompleksowa oferta usług: strony, sklepy, blogi, projekty graficzne, treści i marketing. Wszystko w jednym miejscu.',
     url: toAbsoluteUrl('/uslugi'),
     type: 'website',
@@ -543,7 +543,7 @@ export default function OfferPage() {
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
             '@id': `${toAbsoluteUrl('/uslugi')}#collection`,
-            name: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+            name: 'Usługi - witryny, projekty graficzne i marketing - Arteon',
             description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
             url: toAbsoluteUrl('/uslugi'),
             mainEntity: {

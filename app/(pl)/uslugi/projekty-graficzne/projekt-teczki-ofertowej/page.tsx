@@ -22,13 +22,13 @@ import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt teczki ofertowej | Arteon',
+  title: 'Projekt teczki ofertowej - Arteon',
   description: 'Teczka ofertowa podnosi prestiż spotkań i porządkuje dokumenty. Projekt spójny z identyfikacją wizualną Twojej marki.',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej'),
   },
   openGraph: {
-    title: 'Projekt teczki ofertowej | Arteon',
+    title: 'Projekt teczki ofertowej - Arteon',
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej'),
     type: 'website',

@@ -6,11 +6,11 @@ import Wrapper from '@/components/ui/Wrapper';
 import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Regulamin świadczenia usług | Arteon',
+  title: 'Regulamin świadczenia usług - Arteon',
   description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',
   alternates: { canonical: toAbsoluteUrl('/regulamin') },
   openGraph: {
-    title: 'Regulamin świadczenia usług | Arteon',
+    title: 'Regulamin świadczenia usług - Arteon',
     description: 'Zasady współpracy, płatności, prawa autorskie, reklamacje i wsparcie - regulamin świadczenia usług Arteon.',
     url: toAbsoluteUrl('/regulamin'),
     type: 'website',

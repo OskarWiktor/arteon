@@ -485,7 +485,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Dodać `seo.title` i `seo.description` (canonical już jest).
     - Unikalność: `seo.title` nie może duplikować innych realizacji.
     - Długości (best practice):
-      - `seo.title`: ~35-65 znaków (brand na końcu, np. `| Arteon`).
+      - `seo.title`: ~35-65 znaków (brand na końcu, np. `- Arteon`).
       - `seo.description`: ~100-165 znaków (1-2 zdania, konkret: co zrobiono + dla kogo).
   - Kryteria akceptacji:
     - `npm run lint` i `npm run build` przechodzą.
@@ -776,7 +776,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/jak-pracujemy`
-    - `metadata.title`: `Jak pracujemy — proces współpracy krok po kroku | Arteon`
+    - `metadata.title`: `Jak pracujemy — proces współpracy krok po kroku - Arteon`
     - `metadata.description`: `Zobacz, jak wygląda współpraca z Arteon: etapy, komunikacja i deliverables. Jasny proces bez chaosu.`
     - OG image: `public/assets/og/o-nas-jak-pracujemy.webp`
     - Schema: `HowTo` + `BreadcrumbList`
@@ -820,7 +820,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/standardy-jakosci`
-    - `metadata.title`: `Standardy jakości — WCAG, SEO, performance i bezpieczeństwo | Arteon`
+    - `metadata.title`: `Standardy jakości — WCAG, SEO, performance i bezpieczeństwo - Arteon`
     - `metadata.description`: `Jak dbamy o jakość: dostępność WCAG, SEO techniczne, Core Web Vitals, bezpieczeństwo i analityka.`
     - OG image: `public/assets/og/o-nas-standardy-jakosci.webp`
     - Schema: `WebPage` + `BreadcrumbList`
@@ -862,7 +862,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/materialy-do-startu`
-    - `metadata.title`: `Materiały do strony — lista na start | Arteon`
+    - `metadata.title`: `Materiały do strony — lista na start - Arteon`
     - `metadata.description`: `Zobacz listę materiałów, które przyspieszają wycenę i realizację: cele, treści, zdjęcia, inspiracje i dostępy.`
     - OG image: `public/assets/og/o-nas-materialy-do-startu.webp`
     - Schema: `HowTo` lub `WebPage` + `BreadcrumbList`
@@ -970,7 +970,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/narzedzia/licznik-dlugosci-meta-title-i-description`
   - SEO:
     - URL/slug: `/edukacja/seo/audyt-seo-strony-co-sprawdzamy`
-    - `metadata.title`: `Audyt SEO strony: co sprawdzamy i po co to robić przed pozycjonowaniem? | Arteon`
+    - `metadata.title`: `Audyt SEO strony: co sprawdzamy i po co to robić przed pozycjonowaniem? - Arteon`
     - `metadata.description`: `Dowiedz się, czym jest audyt SEO, co obejmuje i dlaczego warto go zrobić przed rozpoczęciem pozycjonowania strony.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość, nie instrukcję samodzielnego audytu).
@@ -1016,7 +1016,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
   - SEO:
     - URL/slug: `/edukacja/grafika/jak-powstaje-dobre-logo`
-    - `metadata.title`: `Jak powstaje dobre logo i na co zwrócić uwagę przy jego projektowaniu? | Arteon`
+    - `metadata.title`: `Jak powstaje dobre logo i na co zwrócić uwagę przy jego projektowaniu? - Arteon`
     - `metadata.description`: `Dowiedz się, jakie cechy ma dobre logo, jak wygląda proces projektowania i co przygotować przed zleceniem projektu logo.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość).
@@ -1044,7 +1044,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic`
   - SEO:
     - URL/slug: `/edukacja/grafika/od-czego-zaczac-budowanie-identyfikacji-wizualnej`
-    - `metadata.title`: `Od czego zacząć budowanie identyfikacji wizualnej małej firmy? | Arteon`
+    - `metadata.title`: `Od czego zacząć budowanie identyfikacji wizualnej małej firmy? - Arteon`
     - `metadata.description`: `Dowiedz się, z czego składa się identyfikacja wizualna, w jakiej kolejności ją budować i co przygotować przed zleceniem projektu.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość).
@@ -1072,7 +1072,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
   - SEO:
     - URL/slug: `/edukacja/tresci/jak-napisac-tekst-na-strone-glowna-firmy`
-    - `metadata.title`: `Jak napisać skuteczny tekst na stronę główną firmy? | Arteon`
+    - `metadata.title`: `Jak napisać skuteczny tekst na stronę główną firmy? - Arteon`
     - `metadata.description`: `Dowiedz się, co powinno znaleźć się na stronie głównej firmy, jak pisać nagłówki i jakich błędów unikać.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty).
@@ -1101,7 +1101,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/narzedzia/jpg-png-na-webp-bez-limitu`
   - SEO:
     - URL/slug: `/edukacja/seo/jak-przyspieszyc-strone-internetowa-core-web-vitals`
-    - `metadata.title`: `Jak przyspieszyć stronę internetową? Core Web Vitals w praktyce | Arteon`
+    - `metadata.title`: `Jak przyspieszyć stronę internetową? Core Web Vitals w praktyce - Arteon`
     - `metadata.description`: `Dowiedz się, co to są Core Web Vitals, jak sprawdzić szybkość strony i co zrobić, żeby strona działała szybciej.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty).
@@ -1129,7 +1129,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
   - SEO:
     - URL/slug: `/edukacja/marketing/strona-internetowa-czy-reklamy-google-ads-od-czego-zaczac`
-    - `metadata.title`: `Strona internetowa czy reklamy Google Ads: od czego zacząć promocję firmy? | Arteon`
+    - `metadata.title`: `Strona internetowa czy reklamy Google Ads: od czego zacząć promocję firmy? - Arteon`
     - `metadata.description`: `Dowiedz się, czy lepiej zainwestować w stronę internetową i SEO, czy w reklamy Google Ads. Porównanie kosztów, czasu i efektów.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty, bez DIY).
@@ -1158,7 +1158,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
   - SEO:
     - URL/slug: `/edukacja/ux/czym-jest-ux-i-jak-wplywa-na-skutecznosc-strony`
-    - `metadata.title`: `Czym jest UX i jak wpływa na skuteczność strony internetowej? | Arteon`
+    - `metadata.title`: `Czym jest UX i jak wpływa na skuteczność strony internetowej? - Arteon`
     - `metadata.description`: `Dowiedz się, czym jest UX, dlaczego ma znaczenie dla strony firmowej i jak rozpoznać problemy z doświadczeniem użytkownika.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty).
@@ -1187,7 +1187,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/edukacja/grafika/jak-przygotowac-grafike-na-posty-w-mediach-spolecznosciowych`
   - SEO:
     - URL/slug: `/edukacja/grafika/jakie-wymiary-grafik-na-facebooku-instagramie-i-linkedin`
-    - `metadata.title`: `Jakie wymiary grafik na Facebooku, Instagramie i LinkedIn? | Arteon`
+    - `metadata.title`: `Jakie wymiary grafik na Facebooku, Instagramie i LinkedIn? - Arteon`
     - `metadata.description`: `Kompletny przewodnik po wymiarach grafik na media społecznościowe. Poznaj dokładne rozmiary dla postów, stories, reklam i banerów na każdej platformie.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty).
@@ -1219,7 +1219,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/kontakt`
   - SEO:
     - URL/slug: `/edukacja/bezpieczenstwo/jak-zabezpieczyc-strone-wordpress-przed-atakami`
-    - `metadata.title`: `Jak zabezpieczyć stronę WordPress przed atakami i włamaniami? | Arteon`
+    - `metadata.title`: `Jak zabezpieczyć stronę WordPress przed atakami i włamaniami? - Arteon`
     - `metadata.description`: `Dowiedz się, jakie zagrożenia czyhają na strony WordPress, jak się przed nimi chronić i kiedy warto zlecić audyt bezpieczeństwa.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, bez DIY — pokazuje zagrożenia i wartość profesjonalnej opieki).
@@ -1249,7 +1249,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/kontakt`
   - SEO:
     - URL/slug: `/edukacja/bezpieczenstwo/kopie-zapasowe-strony-dlaczego-sa-wazne`
-    - `metadata.title`: `Kopie zapasowe strony: dlaczego są ważne i jak często je robić? | Arteon`
+    - `metadata.title`: `Kopie zapasowe strony: dlaczego są ważne i jak często je robić? - Arteon`
     - `metadata.description`: `Dowiedz się, czym są kopie zapasowe strony, jak często je wykonywać i gdzie przechowywać, żeby nie stracić danych.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty).
@@ -1280,7 +1280,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/kontakt`
   - SEO:
     - URL/slug: `/edukacja/sklepy/jak-zwiekszyc-konwersje-w-sklepie-internetowym`
-    - `metadata.title`: `Jak zwiększyć konwersję w sklepie internetowym bez obniżania cen? | Arteon`
+    - `metadata.title`: `Jak zwiększyć konwersję w sklepie internetowym bez obniżania cen? - Arteon`
     - `metadata.description`: `Dowiedz się, jakie elementy sklepu internetowego wpływają na konwersję i jak zwiększyć sprzedaż bez obniżania cen.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, bez DIY).
@@ -1310,7 +1310,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/kontakt`
   - SEO:
     - URL/slug: `/edukacja/ux/nawigacja-na-stronie-jak-ulatwic-uzytkownikom-znalezienie`
-    - `metadata.title`: `Nawigacja na stronie: jak ułatwić użytkownikom znalezienie tego, czego szukają? | Arteon`
+    - `metadata.title`: `Nawigacja na stronie: jak ułatwić użytkownikom znalezienie tego, czego szukają? - Arteon`
     - `metadata.description`: `Dowiedz się, jak zaprojektować nawigację na stronie, żeby użytkownicy szybko znajdowali to, czego szukają.`
   - Kryteria akceptacji:
     - Artykuł zgodny z tonem marki (mentorski, prosty).
@@ -1349,7 +1349,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Ministerstwo Cyfryzacji (dostepnoscplus.gov.pl)
   - SEO:
     - URL/slug: `/edukacja/dostepnosc/co-to-jest-dostepnosc-cyfrowa-european-accessibility-act-2025`
-    - `metadata.title`: `Co to jest dostępność cyfrowa i kogo dotyczy European Accessibility Act 2025? | Arteon`
+    - `metadata.title`: `Co to jest dostępność cyfrowa i kogo dotyczy European Accessibility Act 2025? - Arteon`
     - `metadata.description`: `Dowiedz się, czym jest dostępność cyfrowa, jakie wymagania wprowadza European Accessibility Act i które firmy muszą dostosować strony do przepisów od 2025 roku.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania (1800-2800 słów).
@@ -1390,7 +1390,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - axe DevTools
   - SEO:
     - URL/slug: `/edukacja/dostepnosc/jak-przygotowac-strone-dla-osob-niewidomych`
-    - `metadata.title`: `Jak przygotować stronę do obsługi osób niewidomych i słabowidzących? | Arteon`
+    - `metadata.title`: `Jak przygotować stronę do obsługi osób niewidomych i słabowidzących? - Arteon`
     - `metadata.description`: `Dowiedz się, jak osoby niewidome korzystają ze stron internetowych, czym jest czytnik ekranu i na co zwrócić uwagę przy projektowaniu dostępnej strony.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1430,7 +1430,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - PageSpeed Insights
   - SEO:
     - URL/slug: `/edukacja/ux/dlaczego-strona-musi-dzialac-na-telefonie`
-    - `metadata.title`: `Dlaczego strona internetowa musi działać na telefonie i jak to sprawdzić? | Arteon`
+    - `metadata.title`: `Dlaczego strona internetowa musi działać na telefonie i jak to sprawdzić? - Arteon`
     - `metadata.description`: `Dowiedz się, jaki odsetek użytkowników korzysta z telefonu, czym jest mobile-first indexing i jak sprawdzić, czy strona działa poprawnie na urządzeniach mobilnych.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1469,7 +1469,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - HubSpot (research o stronach firmowych)
   - SEO:
     - URL/slug: `/edukacja/strony/jakie-informacje-powinny-byc-na-stronie-firmy-uslugowej`
-    - `metadata.title`: `Jakie informacje powinny znajdować się na stronie firmy usługowej? | Arteon`
+    - `metadata.title`: `Jakie informacje powinny znajdować się na stronie firmy usługowej? - Arteon`
     - `metadata.description`: `Dowiedz się, jakie informacje musi zawierać strona firmy usługowej, żeby budować zaufanie klientów i ułatwiać kontakt.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1506,7 +1506,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - NBP (dane o płatnościach elektronicznych w Polsce)
   - SEO:
     - URL/slug: `/edukacja/sklepy/jak-wybrac-system-platnosci-dla-sklepu-internetowego`
-    - `metadata.title`: `Jak wybrać system płatności dla sklepu internetowego? | Arteon`
+    - `metadata.title`: `Jak wybrać system płatności dla sklepu internetowego? - Arteon`
     - `metadata.description`: `Dowiedz się, jakie rodzaje systemów płatności są dostępne, na co zwrócić uwagę przy wyborze i jak wpływają na konwersję w sklepie.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1544,7 +1544,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Badania o wpływie polityki zwrotów na konwersję (Baymard, Narvar)
   - SEO:
     - URL/slug: `/edukacja/sklepy/polityka-zwrotow-w-sklepie-internetowym`
-    - `metadata.title`: `Polityka zwrotów w sklepie internetowym: co musi zawierać i jak wpływa na sprzedaż? | Arteon`
+    - `metadata.title`: `Polityka zwrotów w sklepie internetowym: co musi zawierać i jak wpływa na sprzedaż? - Arteon`
     - `metadata.description`: `Dowiedz się, co musi zawierać polityka zwrotów zgodna z prawem, jak ją prezentować na stronie i jak wpływa na decyzje zakupowe klientów.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1584,7 +1584,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Google Blog (oficjalne komunikaty o Core Updates)
   - SEO:
     - URL/slug: `/edukacja/seo/jak-dziala-algorytm-google`
-    - `metadata.title`: `Jak działa algorytm Google i co wpływa na pozycję strony w wynikach wyszukiwania? | Arteon`
+    - `metadata.title`: `Jak działa algorytm Google i co wpływa na pozycję strony w wynikach wyszukiwania? - Arteon`
     - `metadata.description`: `Dowiedz się, jak Google indeksuje i ocenia strony, czym są czynniki rankingowe, E-E-A-T i Core Updates oraz co naprawdę wpływa na pozycję w wyszukiwarce.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1623,7 +1623,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Ahrefs (cluster content)
   - SEO:
     - URL/slug: `/edukacja/seo/czym-jest-linkowanie-wewnetrzne`
-    - `metadata.title`: `Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony? | Arteon`
+    - `metadata.title`: `Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony? - Arteon`
     - `metadata.description`: `Dowiedz się, czym jest linkowanie wewnętrzne, jak wpływa na pozycjonowanie strony i jak budować klastry tematyczne.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1663,7 +1663,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Colour Affects (Angela Wright)
   - SEO:
     - URL/slug: `/edukacja/psychologia/jak-psychologia-kolorow-wplywa-na-zachowania-uzytkownikow`
-    - `metadata.title`: `Jak psychologia kolorów wpływa na zachowania użytkowników na stronie? | Arteon`
+    - `metadata.title`: `Jak psychologia kolorów wpływa na zachowania użytkowników na stronie? - Arteon`
     - `metadata.description`: `Dowiedz się, jak mózg przetwarza kolory, jakie emocje wywołują różne barwy i jak świadomie wykorzystać psychologię kolorów przy projektowaniu strony.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1702,7 +1702,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Nielsen Norman Group (trust and credibility)
   - SEO:
     - URL/slug: `/edukacja/psychologia/jak-pierwsze-wrazenie-o-stronie-wplywa-na-decyzje`
-    - `metadata.title`: `Jak pierwsze wrażenie o stronie wpływa na decyzje użytkowników? | Arteon`
+    - `metadata.title`: `Jak pierwsze wrażenie o stronie wpływa na decyzje użytkowników? - Arteon`
     - `metadata.description`: `Dowiedz się, ile czasu użytkownik potrzebuje na ocenę strony, co mózg analizuje w pierwszych sekundach i jak projektować stronę, która budzi zaufanie.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1741,7 +1741,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Printing Industry Standards (Fogra, ISO 12647)
   - SEO:
     - URL/slug: `/edukacja/druk/jak-przygotowac-materialy-do-druku`
-    - `metadata.title`: `Jak prawidłowo przygotować materiały do druku? Rozdzielczość, spaddy, kolory CMYK | Arteon`
+    - `metadata.title`: `Jak prawidłowo przygotować materiały do druku? Rozdzielczość, spaddy, kolory CMYK - Arteon`
     - `metadata.description`: `Dowiedz się, czym są DPI, spaddy i CMYK, dlaczego mają znaczenie dla druku i na co zwrócić uwagę przy odbiorze projektu od grafika.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1778,7 +1778,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Badania o percepcji materiałów drukowanych
   - SEO:
     - URL/slug: `/edukacja/druk/wizytowka-firmowa-co-powinna-zawierac`
-    - `metadata.title`: `Wizytówka firmowa: co powinna zawierać i jakie są standardowe wymiary? | Arteon`
+    - `metadata.title`: `Wizytówka firmowa: co powinna zawierać i jakie są standardowe wymiary? - Arteon`
     - `metadata.description`: `Dowiedz się, jakie są standardowe wymiary wizytówek, co powinna zawierać dobra wizytówka firmowa i na co zwrócić uwagę przy zamawianiu projektu.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1817,7 +1817,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Google Web Fundamentals
   - SEO:
     - URL/slug: `/edukacja/strony/jak-wyglada-proces-tworzenia-strony-internetowej`
-    - `metadata.title`: `Jak wygląda proces tworzenia strony internetowej krok po kroku? | Arteon`
+    - `metadata.title`: `Jak wygląda proces tworzenia strony internetowej krok po kroku? - Arteon`
     - `metadata.description`: `Dowiedz się, jakie etapy obejmuje tworzenie strony internetowej, czego możesz oczekiwać na każdym kroku i jak przygotować się do współpracy.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1855,7 +1855,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - HostingAdvice / WebsiteSetup (porównania)
   - SEO:
     - URL/slug: `/edukacja/strony/czym-jest-hosting-jak-wplywa-na-dzialanie-strony`
-    - `metadata.title`: `Czym jest hosting i jak wpływa na działanie strony internetowej? | Arteon`
+    - `metadata.title`: `Czym jest hosting i jak wpływa na działanie strony internetowej? - Arteon`
     - `metadata.description`: `Dowiedz się, czym jest hosting, jakie są jego rodzaje, jak wpływa na szybkość i bezpieczeństwo strony oraz na co zwrócić uwagę przy wyborze.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.
@@ -1893,7 +1893,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Google Business Profile Help
   - SEO:
     - URL/slug: `/edukacja/psychologia/jak-opinie-klientow-wplywaja-na-zaufanie-i-sprzedaz`
-    - `metadata.title`: `Jak opinie klientów wpływają na zaufanie i sprzedaż? | Arteon`
+    - `metadata.title`: `Jak opinie klientów wpływają na zaufanie i sprzedaż? - Arteon`
     - `metadata.description`: `Dowiedz się, dlaczego opinie innych ludzi wpływają na decyzje zakupowe, gdzie zbierać recenzje i jak prezentować je na stronie.`
   - Kryteria akceptacji:
     - Artykuł 9-14 min czytania.

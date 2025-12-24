@@ -22,11 +22,11 @@ import { getAllArticlePreviews } from '@/lib/blog';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Strony, sklepy, treści i marketing | Arteon',
+  title: 'Strony, sklepy, treści i marketing - Arteon',
   description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
   alternates: { canonical: toAbsoluteUrl('/') },
   openGraph: {
-    title: 'Strony, sklepy, treści i marketing | Arteon',
+    title: 'Strony, sklepy, treści i marketing - Arteon',
     description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
     url: toAbsoluteUrl('/'),
     type: 'website',

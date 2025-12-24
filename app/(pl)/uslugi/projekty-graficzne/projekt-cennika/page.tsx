@@ -22,13 +22,13 @@ import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt cennika | Arteon',
+  title: 'Projekt cennika - Arteon',
   description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika'),
   },
   openGraph: {
-    title: 'Projekt cennika | Arteon',
+    title: 'Projekt cennika - Arteon',
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika'),
     type: 'website',

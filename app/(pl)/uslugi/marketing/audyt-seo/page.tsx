@@ -21,11 +21,11 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
+  title: 'Audyt SEO - plan pozycjonowania Twojej witryny - Arteon',
   description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/audyt-seo') },
   openGraph: {
-    title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
+    title: 'Audyt SEO - plan pozycjonowania Twojej witryny - Arteon',
     description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
     url: toAbsoluteUrl('/uslugi/marketing/audyt-seo'),
     siteName: 'Arteon',
@@ -35,7 +35,7 @@ export const metadata = {
   },
   //twitter: {
   //  card: 'summary_large_image',
-  //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
+  //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny - Arteon',
   //  description:
   //    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
   //  images: [`${BASE}/assets/og/audyt-seo.webp`],

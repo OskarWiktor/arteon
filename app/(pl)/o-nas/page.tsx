@@ -16,11 +16,11 @@ import { RiCodeSSlashFill, RiLightbulbFlashLine, RiMegaphoneLine, RiPaletteLine 
 import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'O nas - strategia, kreacja i widoczność | Arteon',
+  title: 'O nas - strategia, kreacja i widoczność - Arteon',
   description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
   alternates: { canonical: toAbsoluteUrl('/o-nas') },
   openGraph: {
-    title: 'O nas - strategia, kreacja i widoczność | Arteon',
+    title: 'O nas - strategia, kreacja i widoczność - Arteon',
     description: 'Poznaj Arteon: łączymy strategię, branding, technologię i marketing w jeden proces. Zobacz, jak pracujemy i dlaczego klienci nam ufają.',
     url: toAbsoluteUrl('/o-nas'),
     type: 'website',

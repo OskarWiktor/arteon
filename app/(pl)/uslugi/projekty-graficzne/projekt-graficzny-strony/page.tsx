@@ -21,11 +21,11 @@ import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt graficzny strony | Arteon',
+  title: 'Projekt graficzny strony - Arteon',
   description: 'Makiety i layouty stron internetowych tworzone z myślą o czytelności i konwersji. Estetyka, UX i SEO w jednym projekcie.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony') },
   openGraph: {
-    title: 'Projekt graficzny strony | Arteon',
+    title: 'Projekt graficzny strony - Arteon',
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony'),
     type: 'website',

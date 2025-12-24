@@ -53,11 +53,11 @@ function ServiceSchema() {
 }
 
 export const metadata = {
-  title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
+  title: 'Tworzenie treści - strony, blogi, e-commerce - Arteon',
   description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/tworzenie-tresci') },
   openGraph: {
-    title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
+    title: 'Tworzenie treści - strony, blogi, e-commerce - Arteon',
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
     url: toAbsoluteUrl('/uslugi/tworzenie-tresci'),
     type: 'website',

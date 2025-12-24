@@ -338,7 +338,7 @@ Celem katalogu jest:
   - **Typy bloków**: tylko `richtext`.
   - **Konsekwencja**: materiał jest „tekstowy” - bez tabel/wykresów, mimo że temat dobrze się do nich nadaje.
 - **SEO (meta)**:
-  - **`seo.title`**: skrócony + dopisek `| Arteon`.
+  - **`seo.title`**: skrócony + dopisek `- Arteon`.
   - **`seo.description`**: rzeczowy, zgodny z intencją (czas + czynniki).
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
 - **CTA**:
@@ -523,7 +523,7 @@ Celem katalogu jest:
   - **Typy bloków**: `richtext` + `image`.
   - **Charakter**: bardzo rozbudowany poradnik, z wieloma przykładami w różnych branżach.
 - **SEO (meta)**:
-  - **`seo.title`**: zawiera dopisek marki `| Arteon` (spójne z częścią wpisów).
+  - **`seo.title`**: zawiera dopisek marki `- Arteon` (spójne z częścią wpisów).
   - **`seo.description`**: konkretna, blisko „idealnej” długości pod SERP.
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
 - **CTA**:
@@ -595,7 +595,7 @@ Celem katalogu jest:
   - **Typy bloków**: `richtext` + `image`.
   - **Struktura**: sporo `H2`, praktycznie brak głębszej warstwy `H3`.
 - **SEO (meta)**:
-  - **`seo.title`**: zawiera dopisek marki `| Arteon`, ale jest dość długi.
+  - **`seo.title`**: zawiera dopisek marki `- Arteon`, ale jest dość długi.
   - **`seo.description`**: merytoryczny i „sprzedażowy” (zachęca do wdrożenia).
   - **`seo.canonical`**: spójny z routingiem (`/edukacja/grafika/...`).
 - **CTA**:
@@ -737,7 +737,7 @@ Celem katalogu jest:
 
 - **[Standaryzacja meta]**
 
-  - Część wpisów ma dopisek `| Arteon` w `seo.title`, część nie.
+  - Część wpisów ma dopisek `- Arteon` w `seo.title`, część nie.
   - Rekomendacja: ujednolicić format meta title i pilnować długości (CTR + brak ucięcia w SERP).
 
 - **[Multimedia / struktury danych]**

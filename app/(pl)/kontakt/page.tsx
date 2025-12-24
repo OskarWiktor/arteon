@@ -7,11 +7,11 @@ import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
 import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Kontakt - wycena Twojego planu | Arteon',
+  title: 'Kontakt - wycena Twojego planu - Arteon',
   description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
   alternates: { canonical: toAbsoluteUrl('/kontakt') },
   openGraph: {
-    title: 'Kontakt - wycena Twojego planu | Arteon',
+    title: 'Kontakt - wycena Twojego planu - Arteon',
     description: 'Strona kontaktowa Arteon. Napisz, co chcesz stworzyć. Przygotujemy dla Ciebie darmową wycenę i jasny plan działania.',
     url: toAbsoluteUrl('/kontakt'),
     siteName: 'Arteon',

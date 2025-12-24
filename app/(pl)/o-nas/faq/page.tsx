@@ -156,11 +156,11 @@ const FAQ_JSON_LD = {
 } as const;
 
 export const metadata: Metadata = {
-  title: 'FAQ - najczęstsze pytania dotyczące współpracy | Arteon',
+  title: 'FAQ - najczęstsze pytania dotyczące współpracy - Arteon',
   description: 'Odpowiadamy na najczęstsze pytania dotyczące współpracy: proces, terminy, wycena, treści, SEO, utrzymanie i odpowiedzialność po wdrożeniu.',
   alternates: { canonical: toAbsoluteUrl('/o-nas/faq') },
   openGraph: {
-    title: 'FAQ - najczęstsze pytania dotyczące współpracy | Arteon',
+    title: 'FAQ - najczęstsze pytania dotyczące współpracy - Arteon',
     description: 'Odpowiadamy na najczęstsze pytania dotyczące współpracy: proces, terminy, wycena, treści, SEO, utrzymanie i odpowiedzialność po wdrożeniu.',
     url: toAbsoluteUrl('/o-nas/faq'),
     type: 'website',

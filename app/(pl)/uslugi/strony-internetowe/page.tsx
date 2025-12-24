@@ -36,11 +36,11 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Strony internetowe - projekt i realizacja | Arteon',
+  title: 'Strony internetowe - projekt i realizacja - Arteon',
   description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/strony-internetowe') },
   openGraph: {
-    title: 'Strony internetowe - projekt i realizacja | Arteon',
+    title: 'Strony internetowe - projekt i realizacja - Arteon',
     description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
     url: toAbsoluteUrl('/uslugi/strony-internetowe'),
     type: 'website',

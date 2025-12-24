@@ -22,13 +22,13 @@ import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Kupony rabatowe i vouchery | Arteon',
+  title: 'Kupony rabatowe i vouchery - Arteon',
   description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'),
   },
   openGraph: {
-    title: 'Kupony rabatowe i vouchery | Arteon',
+    title: 'Kupony rabatowe i vouchery - Arteon',
     description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'),
     type: 'website',

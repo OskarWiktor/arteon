@@ -21,11 +21,11 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt katalogu | Arteon',
+  title: 'Projekt katalogu - Arteon',
   description: 'Katalog produktów lub ofert z czytelnym składem DTP. Zdjęcia, typografia i układ, które podnoszą sprzedaż i wizerunek.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-katalogu') },
   openGraph: {
-    title: 'Projekt katalogu | Arteon',
+    title: 'Projekt katalogu - Arteon',
     description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-katalogu'),
     type: 'website',

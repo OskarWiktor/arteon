@@ -18,7 +18,7 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
+  title: 'Marketing internetowy - SEO, reklamy i komunikacja - Arteon',
   description: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
   alternates: { canonical: toAbsoluteUrl('/uslugi/marketing') },
   openGraph: {

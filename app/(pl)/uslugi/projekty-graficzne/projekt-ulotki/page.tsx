@@ -21,13 +21,13 @@ import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt ulotki | Arteon',
+  title: 'Projekt ulotki - Arteon',
   description: 'Ulotka, która przyciąga uwagę i kieruje do kontaktu lub zakupu. Projekt dopasowany do Twojej oferty i lokalnych działań.',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki'),
   },
   openGraph: {
-    title: 'Projekt ulotki | Arteon',
+    title: 'Projekt ulotki - Arteon',
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki'),
     type: 'website',

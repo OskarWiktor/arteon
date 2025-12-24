@@ -22,13 +22,13 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt wizytówki | Arteon',
+  title: 'Projekt wizytówki - Arteon',
   description: 'Projekt wizytówki firmowej, która wyjaśnia ofertę w kilka sekund i buduje zaufanie od pierwszego spojrzenia. Pliki źródłowe i gotowe do druku.',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki'),
   },
   openGraph: {
-    title: 'Projekt wizytówki | Arteon',
+    title: 'Projekt wizytówki - Arteon',
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki'),
     type: 'website',

@@ -21,11 +21,11 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
+  title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność - Arteon',
   description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
   alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo') },
   openGraph: {
-    title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
+    title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność - Arteon',
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
     url: toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo'),
     type: 'website',

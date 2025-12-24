@@ -21,11 +21,11 @@ import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt identyfikacji wizualnej | Arteon',
+  title: 'Projekt identyfikacji wizualnej - Arteon',
   description: 'Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Spójność w każdym punkcie styku.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej') },
   openGraph: {
-    title: 'Projekt identyfikacji wizualnej | Arteon',
+    title: 'Projekt identyfikacji wizualnej - Arteon',
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'),
     type: 'website',

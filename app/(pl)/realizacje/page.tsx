@@ -17,7 +17,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': `${toAbsoluteUrl('/realizacje')}#collection`,
-  name: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie | Arteon',
+  name: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie - Arteon',
   description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
   url: toAbsoluteUrl('/realizacje'),
   mainEntity: {
@@ -34,7 +34,7 @@ const schema = {
 };
 
 export const metadata = {
-  title: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie | Arteon',
+  title: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie - Arteon',
   description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
   alternates: { canonical: toAbsoluteUrl('/realizacje') },
   openGraph: {

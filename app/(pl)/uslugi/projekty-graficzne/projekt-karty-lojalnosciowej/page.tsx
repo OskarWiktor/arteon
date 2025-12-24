@@ -20,11 +20,11 @@ import SectionPrices from '@/components/ui/sections/SectionPrices';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt karty lojalnościowej | Arteon',
+  title: 'Projekt karty lojalnościowej - Arteon',
   description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej') },
   openGraph: {
-    title: 'Projekt karty lojalnościowej | Arteon',
+    title: 'Projekt karty lojalnościowej - Arteon',
     description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej'),
     type: 'website',

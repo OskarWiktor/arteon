@@ -6,11 +6,11 @@ import Wrapper from '@/components/ui/Wrapper';
 import { toAbsoluteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Polityka prywatności | Arteon',
+  title: 'Polityka prywatności - Arteon',
   description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
   alternates: { canonical: toAbsoluteUrl('/polityka-prywatnosci') },
   openGraph: {
-    title: 'Polityka prywatności | Arteon',
+    title: 'Polityka prywatności - Arteon',
     description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
     url: toAbsoluteUrl('/polityka-prywatnosci'),
     type: 'website',

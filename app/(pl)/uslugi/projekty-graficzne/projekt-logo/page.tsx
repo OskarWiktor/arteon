@@ -33,11 +33,11 @@ import { IoColorPalette } from 'react-icons/io5';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt logo | Arteon',
+  title: 'Projekt logo - Arteon',
   description: 'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo') },
   openGraph: {
-    title: 'Projekt logo | Arteon',
+    title: 'Projekt logo - Arteon',
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo'),
     type: 'website',

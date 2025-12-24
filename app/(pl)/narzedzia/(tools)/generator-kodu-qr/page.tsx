@@ -11,11 +11,11 @@ import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
-  title: 'Darmowy generator kodu QR online - dla firm i materiałów drukowanych',
+  title: 'Darmowy generator kodu QR online - Arteon',
   description: 'Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ, kolor i rozmiar, a następnie pobierz gotowy plik PNG lub SVG. Bez logowania i bez limitu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-kodu-qr') },
   openGraph: {
-    title: 'Darmowy generator kodu QR online - dla firm i materiałów drukowanych',
+    title: 'Darmowy generator kodu QR online - Arteon',
     description: 'Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ, kolor i rozmiar, a następnie pobierz gotowy plik PNG lub SVG. Bez logowania i bez limitu.',
     url: toAbsoluteUrl('/narzedzia/generator-kodu-qr'),
     type: 'website',

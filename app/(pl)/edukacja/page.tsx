@@ -10,11 +10,11 @@ import { toAbsoluteUrl } from '@/lib/url';
 const EDUKACJA_HERO_IMAGE = '/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp';
 
 export const metadata: Metadata = {
-  title: 'Edukacja | Arteon',
+  title: 'Edukacja - Arteon',
   description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
   alternates: { canonical: toAbsoluteUrl('/edukacja') },
   openGraph: {
-    title: 'Edukacja | Arteon',
+    title: 'Edukacja - Arteon',
     description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
     url: toAbsoluteUrl('/edukacja'),
     type: 'website',
@@ -33,7 +33,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': `${toAbsoluteUrl('/edukacja')}#collection`,
-  name: 'Edukacja | Arteon',
+  name: 'Edukacja - Arteon',
   description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
   url: toAbsoluteUrl('/edukacja'),
   mainEntity: {

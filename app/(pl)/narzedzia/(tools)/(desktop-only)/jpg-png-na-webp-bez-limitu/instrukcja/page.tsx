@@ -17,7 +17,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Button from '@/components/ui/buttons/Button';
 
 export const metadata: Metadata = {
-  title: 'Jak używać konwertera JPG/PNG na WebP — instrukcja krok po kroku | Arteon',
+  title: 'Jak używać konwertera JPG/PNG na WebP — instrukcja krok po kroku - Arteon',
   description:
     'Szczegółowa instrukcja obsługi darmowego konwertera JPG/PNG na WebP. Dowiedz się jak dodawać pliki, ustawiać jakość, korzystać ze Smart Quality i pobierać przekonwertowane obrazy.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja') },

@@ -156,7 +156,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[Kluczowe komponenty]** `HeroBanner`, `FilterBar`, `ArticlesList`, `Wrapper`, `Gap`.
 - **[Dane / źródła]** `lib/blog` (`getAllArticles`, `getCategoriesWithCount`).
 - **[SEO]**
-  - **[metadata]** title: `Edukacja | Arteon`, description: krótka i ogólna. canonical: `https://www.arteonagency.pl/edukacja`.
+  - **[metadata]** title: `Edukacja - Arteon`, description: krótka i ogólna. canonical: `https://www.arteonagency.pl/edukacja`.
   - **[schema]** JSON-LD: `CollectionPage` + `ItemList` (linki do artykułów).
 
 ### `/edukacja/[category]` — Lista artykułów w kategorii
@@ -165,7 +165,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[Cel / content]** Lista artykułów dla danej kategorii (SSR/SSG). Tytuły bez prefixu „Edukacja:" — sama nazwa kategorii. Opisy krótkie i ogólne (1-2 zdania).
 - **[Generowanie]**
   - `generateStaticParams()` — generuje strony kategorii.
-  - `generateMetadata()` — tytuł: `{label} | Arteon`, opis per kategoria (krótki, ogólny).
+  - `generateMetadata()` — tytuł: `{label} - Arteon`, opis per kategoria (krótki, ogólny).
 - **[Kluczowe komponenty]** `HeroBanner`, `FilterBar`, `ArticlesList`, `Wrapper`, `Gap`.
 - **[Dane / źródła]** `lib/blog` + `utils/slug` (`slugify`).
 - **[Content]** Mapowanie treści per znane kategorie (SEO/Grafika/Zdjęcia/Branding/Treści/Widoczność/Psychologia) + fallback dla nowych kategorii. Opisy są krótkie i elastyczne — bez technicznych detali.

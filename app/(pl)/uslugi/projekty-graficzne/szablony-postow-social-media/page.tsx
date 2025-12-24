@@ -22,13 +22,13 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Szablony postów social media | Arteon',
+  title: 'Szablony postów social media - Arteon',
   description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media'),
   },
   openGraph: {
-    title: 'Szablony postów social media | Arteon',
+    title: 'Szablony postów social media - Arteon',
     description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media'),
     type: 'website',

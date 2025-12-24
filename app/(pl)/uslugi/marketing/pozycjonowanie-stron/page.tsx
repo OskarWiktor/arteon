@@ -21,11 +21,11 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
+  title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań - Arteon',
   description: 'Długofalowe pozycjonowanie stron: plan treści, porządek na stronie i bezpieczne linki. Comiesięczny raport i jasne priorytety działań.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron') },
   openGraph: {
-    title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
+    title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań - Arteon',
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
     url: toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron'),
     type: 'website',

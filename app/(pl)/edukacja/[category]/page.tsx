@@ -123,7 +123,7 @@ export async function generateMetadata({ params }: { params: { category: string 
   const ogImage = content?.heroImage ? toAbsoluteUrl(content.heroImage) : toAbsoluteUrl('/assets/ogien.webp');
 
   return {
-    title: `${label} | Arteon`,
+    title: `${label} - Arteon`,
     description,
     alternates: { canonical: toAbsoluteUrl(`/edukacja/${params.category}`) },
     openGraph: {

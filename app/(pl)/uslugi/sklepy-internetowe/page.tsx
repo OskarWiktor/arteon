@@ -38,11 +38,11 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Sklepy internetowe - projekt i realizacja | Arteon',
+  title: 'Sklepy internetowe - projekt i realizacja - Arteon',
   description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
   alternates: { canonical: toAbsoluteUrl('/uslugi/sklepy-internetowe') },
   openGraph: {
-    title: 'Sklepy internetowe - projekt i realizacja | Arteon',
+    title: 'Sklepy internetowe - projekt i realizacja - Arteon',
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
     url: toAbsoluteUrl('/uslugi/sklepy-internetowe'),
     type: 'website',

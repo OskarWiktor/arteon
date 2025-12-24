@@ -36,11 +36,11 @@ import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Blogi internetowe - projekt i realizacja | Arteon',
+  title: 'Blogi internetowe - projekt i realizacja - Arteon',
   description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
   alternates: { canonical: toAbsoluteUrl('/uslugi/blogi-internetowe') },
   openGraph: {
-    title: 'Blogi internetowe - projekt i realizacja | Arteon',
+    title: 'Blogi internetowe - projekt i realizacja - Arteon',
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
     url: toAbsoluteUrl('/uslugi/blogi-internetowe'),
     type: 'website',

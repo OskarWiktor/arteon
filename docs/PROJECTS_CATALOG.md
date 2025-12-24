@@ -169,7 +169,7 @@ W każdej realizacji opisuję:
   - **Dodać FAQ**: „voucher do druku — co musi zawierać”, „jak przygotować do drukarni”.
   - **Rozszerzyć opis o warianty sezonowe** (Dzień Kobiet, święta) i podlinkować do usług.
 
-### `Strona internetowa z wynajmem kamperów w Albanii | Arteon` (`strona-internetowa-dla-camper-albania`)
+### `Strona internetowa z wynajmem kamperów w Albanii - Arteon` (`strona-internetowa-dla-camper-albania`)
 
 - **Kategorie**: `strona`, `grafika`
 - **Klient / branża**: Camper Albania — Wynajem kamperów (Albania)
@@ -193,7 +193,7 @@ W każdej realizacji opisuję:
   - **Dostępność jako element jakości**: wspomniane WCAG 2.1 AA (kontrast) buduje zaufanie.
   - **Before/after**: czytelna forma pokazania zmiany.
 - **Minusy / ryzyka**:
-  - **`title` zawiera „| Arteon”**: jeśli `title` jest używane jako H1, brand w H1 bywa mniej naturalny.
+  - **`title` zawiera „- Arteon”**: jeśli `title` jest używane jako H1, brand w H1 bywa mniej naturalny.
   - **`stack` jest semantycznie mylący**: wartości są raczej „zakresem prac”, nie stackiem technologicznym.
   - **Opis jest krótki**: przy dobrym wyniku warto dopisać, co konkretnie poprawiono (bez zdradzania wrażliwych danych).
 - **Sugestie ulepszeń (SEO)**:

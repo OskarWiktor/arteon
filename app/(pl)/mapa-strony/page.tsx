@@ -148,11 +148,11 @@ const infoPages: NavItem[] = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Mapa strony | Arteon',
+  title: 'Mapa strony - Arteon',
   description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
   alternates: { canonical: toAbsoluteUrl('/mapa-strony') },
   openGraph: {
-    title: 'Mapa strony | Arteon',
+    title: 'Mapa strony - Arteon',
     description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
     url: toAbsoluteUrl('/mapa-strony'),
     type: 'website',

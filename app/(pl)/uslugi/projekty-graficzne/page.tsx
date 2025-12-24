@@ -93,11 +93,11 @@ function ItemListSchema() {
 }
 
 export const metadata = {
-  title: 'Projekty graficzne do druku i online | Arteon',
+  title: 'Projekty graficzne do druku i online - Arteon',
   description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
   alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne') },
   openGraph: {
-    title: 'Projekty graficzne do druku i online | Arteon',
+    title: 'Projekty graficzne do druku i online - Arteon',
     description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne'),
     type: 'website',

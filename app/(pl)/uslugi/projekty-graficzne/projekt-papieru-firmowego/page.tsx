@@ -21,13 +21,13 @@ import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt papieru firmowego | Arteon',
+  title: 'Projekt papieru firmowego - Arteon',
   description: 'Papier firmowy, który wzmacnia wizerunek w korespondencji. Szablony Word/PDF oraz wersje gotowe do druku.',
   alternates: {
     canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego'),
   },
   openGraph: {
-    title: 'Projekt papieru firmowego | Arteon',
+    title: 'Projekt papieru firmowego - Arteon',
     description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
     url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego'),
     type: 'website',
