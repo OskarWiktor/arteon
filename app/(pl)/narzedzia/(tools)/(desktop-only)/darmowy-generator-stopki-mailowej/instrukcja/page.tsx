@@ -18,7 +18,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 export const metadata: Metadata = {
   title: 'Jak używać generatora stopki mailowej - instrukcja krok po kroku',
   description:
-    'Szczegółowa instrukcja obsługi darmowego generatora stopki mailowej HTML. Dowiedz się, jak wypełnić dane, wybrać układ, dodać CTA i skopiować gotową stopkę do Gmail lub Outlook.',
+    'Instrukcja generatora stopki mailowej HTML. Dowiedz się, jak wypełnić dane, wybrać układ, dodać CTA i skopiować stopkę do Gmail lub Outlook.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej/instrukcja') },
   openGraph: {
     title: 'Jak używać generatora stopki mailowej - instrukcja krok po kroku',

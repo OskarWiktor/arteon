@@ -170,6 +170,16 @@ module.exports = {
   additionalPaths: async () => {
     const add = [];
 
+    // Explicitly add all /narzedzia/* routes to ensure they're always in sitemap
+    // (next-sitemap may filter routes with file-extension-like patterns, e.g. "favicon-ico")
+    for (const [loc, last] of ROUTE_LASTMOD.entries()) {
+      if (loc.startsWith('/narzedzia/') && loc !== '/narzedzia') {
+        const entry = { loc, changefreq: 'weekly', priority: 0.7 };
+        if (last) entry.lastmod = last;
+        add.push(entry);
+      }
+    }
+
     for (const p of PROJECTS) {
       const loc = `/realizacje/${p.slug}`;
       const iso = (p.updatedAt && parseISO(p.updatedAt)) || projectLastmodFromFiles(p.slug) || ROUTE_LASTMOD.get(loc) || null;

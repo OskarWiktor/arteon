@@ -17,7 +17,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 export const metadata: Metadata = {
   title: 'Jak używać generatora palet kolorów online | Instrukcja krok po kroku',
   description:
-    'Szczegółowa instrukcja obsługi generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają poszczególne palety i jak skopiować kolory do swojego projektu.',
+    'Instrukcja generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają palety i jak skopiować kolory do projektu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja') },
   openGraph: {
     title: 'Jak używać generatora palet kolorów online | Instrukcja krok po kroku',

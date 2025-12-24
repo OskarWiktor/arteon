@@ -554,6 +554,59 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Każdy slug z listy ma min. 2 `outcomes`.
     - Brak placeholderów typu „test”.
 
+- ✅ **[SEO-018] Meta description: wydłużyć za krótkie opisy (Ahrefs audit)**
+
+  - Cel: poprawić meta description na stronach wykrytych przez Ahrefs jako za krótkie (<100 znaków).
+  - Wytyczne (wg artykułu Arteon „Meta title i description"):
+    - Optymalna długość: 140-155 znaków
+    - Odpowiada na intencję użytkownika
+    - Zawiera wezwanie do działania (Dowiedz się..., Sprawdź..., Zobacz...)
+    - Spójny z treścią strony
+  - Pliki:
+    - `app/(pl)/edukacja/page.tsx` (strona główna /edukacja)
+    - `app/(pl)/edukacja/[category]/page.tsx` (kategorie: seo, druk, strony, bezpieczenstwo, branding, zdjecia, grafika, marketing, ux, dostepnosc, psychologia, sklepy, widocznosc, tresci)
+    - `data/pl/projects.json` (realizacje: sanex-accessibility, elmex-accessibility, meridol-accessibility, palmolive, detergent-regulations, sanex, colgate, sklep-dla-firmy-odziezowej-trilllizo)
+  - Kryteria akceptacji:
+    - Każdy meta description ma 140-155 znaków
+    - Zawiera wezwanie do działania
+    - `npm run lint` przechodzi
+  - Weryfikacja: nie jest wymagana (COPY-only).
+
+- ✅ **[SEO-019] Meta description: skrócić za długie opisy (Ahrefs audit)**
+
+  - Cel: poprawić meta description na stronach wykrytych przez Ahrefs jako za długie (>160 znaków).
+  - Wytyczne (wg instrukcji narzędzia licznika meta title i description Arteon):
+    - Optymalna długość: 120-160 znaków (max 160)
+    - Zachować wezwanie do działania (Dowiedz się..., Sprawdź..., Zobacz...)
+    - Spójny z treścią strony
+    - Zachować kluczowe informacje
+  - Strony do poprawy (10):
+    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow` (165 zn.)
+    - `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty` (163 zn.)
+    - `/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja` (187 zn.)
+    - `/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja` (176 zn.)
+    - `/narzedzia/darmowy-generator-favicon-ico/instrukcja` (167 zn.)
+    - `/narzedzia/generator-kodu-qr/instrukcja` (170 zn.)
+    - `/narzedzia/darmowy-generator-stopki-mailowej/instrukcja` (177 zn.)
+    - `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja` (168 zn.)
+    - `/narzedzia/generator-palet-kolorow-online/instrukcja` (171 zn.)
+    - `/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja` (179 zn.)
+  - Pliki:
+    - `data/pl/blog.json` (2 artykuły)
+    - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-kodu-qr/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`
+  - Kryteria akceptacji:
+    - Każdy meta description ma max 160 znaków
+    - Zachowane wezwanie do działania
+    - Spójność z treścią strony
+  - Weryfikacja: nie jest wymagana (COPY-only).
+
 - ❌ **[PROJECT-004] Realizacje: dodać `faq[]` dla projektów bez FAQ (long-tail + intent)**
 
   - Plik: `data/pl/projects.json`

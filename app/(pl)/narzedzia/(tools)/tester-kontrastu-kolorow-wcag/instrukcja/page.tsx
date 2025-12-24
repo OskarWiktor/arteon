@@ -18,7 +18,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 export const metadata: Metadata = {
   title: 'Jak używać testera kontrastu kolorów WCAG | Instrukcja',
   description:
-    'Szczegółowa instrukcja testera kontrastu kolorów WCAG. Dowiedz się, jak sprawdzić kontrast, co oznaczają poziomy AA i AAA, jakie formaty kolorów są obsługiwane i jak interpretować wyniki.',
+    'Instrukcja testera kontrastu WCAG. Dowiedz się, jak sprawdzić kontrast, co oznaczają poziomy AA i AAA oraz jak interpretować wyniki.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja') },
   openGraph: {
     title: 'Jak używać testera kontrastu kolorów WCAG | Instrukcja',

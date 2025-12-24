@@ -18,7 +18,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 export const metadata: Metadata = {
   title: 'Jak używać generatora kodów QR | Instrukcja krok po kroku',
   description:
-    'Szczegółowa instrukcja obsługi generatora kodów QR. Dowiedz się, jak zakodować adres URL, wizytówkę vCard czy e-mail, jak dostosować wygląd kodu i jak go pobrać do druku.',
+    'Instrukcja generatora kodów QR. Dowiedz się, jak zakodować URL, wizytówkę vCard, e-mail, jak dostosować wygląd kodu i pobrać go do druku.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-kodu-qr/instrukcja') },
   openGraph: {
     title: 'Jak używać generatora kodów QR | Instrukcja krok po kroku',

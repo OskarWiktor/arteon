@@ -17,7 +17,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
   title: 'Jak używać generatora favicon - instrukcja krok po kroku - Arteon',
-  description: 'Szczegółowa instrukcja obsługi darmowego generatora favicon. Dowiedz się, jakie rozmiary ikon są potrzebne, jak korzystać z narzędzia i gdzie wgrać wygenerowane pliki.',
+  description: 'Instrukcja generatora favicon. Dowiedz się, jakie rozmiary ikon są potrzebne, jak korzystać z narzędzia i gdzie wgrać pliki.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico/instrukcja') },
   openGraph: {
     title: 'Jak używać generatora favicon - instrukcja krok po kroku - Arteon',

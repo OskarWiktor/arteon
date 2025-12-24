@@ -2,6 +2,54 @@
 
 ## 2025-12-24
 
+- ✅ **[SEO-020] Sitemap: brakujące strony narzędzi (favicon generator)**
+
+  - **Źródło**: Ahrefs Site Audit — wykryto 2 strony nieobecne w sitemap:
+    - `/narzedzia/darmowy-generator-favicon-ico`
+    - `/narzedzia/darmowy-generator-favicon-ico/instrukcja`
+  - **Przyczyna problemu**:
+    - `next-sitemap` filtruje automatycznie odkryte ścieżki zawierające wzorce przypominające rozszerzenia plików (np. `favicon-ico` interpretowane jako `.ico`).
+    - Strony były poprawnie generowane przez Next.js (widoczne w `prerender-manifest.json` i `routes-manifest.json`), ale next-sitemap je pomijał.
+  - **Co zrobiono**:
+    - Zmodyfikowano `next-sitemap.config.cjs` — dodano jawne dodawanie wszystkich ścieżek `/narzedzia/*` przez `additionalPaths` (linie 173-181).
+    - Dzięki temu wszystkie narzędzia są zawsze w sitemap, niezależnie od automatycznego odkrywania next-sitemap.
+  - **Pliki**:
+    - `next-sitemap.config.cjs`
+  - **Weryfikacja**: `npm run build` — OK, sitemap zawiera obie brakujące strony.
+
+- ✅ **[SEO-019] Meta description: skrócić za długie opisy (Ahrefs audit)**
+
+  - **Źródło**: Ahrefs Site Audit — wykryto 10 stron z za długim meta description (>160 znaków).
+  - **Co zrobiono**:
+    - Poprawiono meta description dla 2 artykułów (`data/pl/blog.json`):
+      - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`: 165 → 148 zn.
+      - `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`: 163 → 138 zn.
+    - Poprawiono meta description dla 8 instrukcji narzędzi:
+      - tester-kontrastu-kolorow-wcag/instrukcja: 187 → 137 zn.
+      - licznik-dlugosci-meta-title-i-description/instrukcja: 176 → 145 zn.
+      - darmowy-generator-favicon-ico/instrukcja: 167 → 128 zn.
+      - generator-kodu-qr/instrukcja: 170 → 144 zn.
+      - darmowy-generator-stopki-mailowej/instrukcja: 177 → 148 zn.
+      - zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja: 168 → 147 zn.
+      - generator-palet-kolorow-online/instrukcja: 171 → 135 zn.
+      - jpg-png-na-webp-bez-limitu/instrukcja: 179 → 139 zn.
+    - Wszystkie nowe opisy: max 160 znaków, z zachowaniem wezwania do działania (Dowiedz się..., Sprawdź...).
+  - **Weryfikacja**: nie wymagana (COPY-only).
+
+- ✅ **[SEO-018] Meta description: wydłużyć za krótkie opisy (Ahrefs audit)**
+
+  - **Źródło**: Ahrefs Site Audit — wykryto 24 strony z za krótkim meta description (<100 znaków).
+  - **Co zrobiono**:
+    - Poprawiono meta description dla 14 kategorii edukacji (`/edukacja/[category]`):
+      - seo, widocznosc, tresci, grafika, branding, zdjecia, psychologia, strony, sklepy, ux, bezpieczenstwo, druk, marketing, dostepnosc
+    - Poprawiono meta description dla 8 realizacji (`/realizacje/[slug]`):
+      - sklep-dla-firmy-odziezowej-trilllizo, meridol-accessibility, elmex-accessibility, sanex-accessibility, sanex, palmolive, colgate, detergent-regulations
+    - Wszystkie nowe opisy: 140-155 znaków, z wezwaniem do działania (Dowiedz się..., Sprawdź..., Zobacz...).
+  - **Pliki**:
+    - `app/(pl)/edukacja/[category]/page.tsx`
+    - `data/pl/projects.json`
+  - **Weryfikacja**: nie wymagana (COPY-only).
+
 - 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — generowanie backlogu pomysłów na artykuły**
 
   - **Zakres audytu**:

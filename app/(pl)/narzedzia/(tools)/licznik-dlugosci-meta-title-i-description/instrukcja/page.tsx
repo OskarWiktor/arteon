@@ -18,7 +18,7 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Jak używać licznika długości meta title i description?',
   description:
-    'Szczegółowa instrukcja obsługi licznika meta title i meta description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność strony w Google.',
+    'Instrukcja licznika meta title i description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja') },
   openGraph: {
     title: 'Jak używać licznika długości meta title i description?',

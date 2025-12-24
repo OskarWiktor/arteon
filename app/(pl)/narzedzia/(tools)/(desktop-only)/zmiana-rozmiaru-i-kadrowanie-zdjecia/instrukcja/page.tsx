@@ -18,7 +18,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 export const metadata: Metadata = {
   title: 'Jak używać narzędzia do zmiany rozmiaru i kadrowania zdjęcia | Instrukcja',
   description:
-    'Szczegółowa instrukcja obsługi narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować gotowy plik.',
+    'Instrukcja narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować plik.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja') },
   openGraph: {
     title: 'Jak używać narzędzia do zmiany rozmiaru i kadrowania zdjęcia | Instrukcja',
