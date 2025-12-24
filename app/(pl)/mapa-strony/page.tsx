@@ -85,14 +85,51 @@ const blogArticleItems: NavItem[] = articles.map((a) => ({
 }));
 
 const tools: NavItem[] = [
-  { title: 'Konwerter JPG/PNG na WebP', href: '/narzedzia/jpg-png-na-webp-bez-limitu' },
-  { title: 'Zmiana rozmiaru i kadrowanie zdjęcia', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia' },
-  { title: 'Generator favicon online', href: '/narzedzia/darmowy-generator-favicon-ico' },
-  { title: 'Licznik długości meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
-  { title: 'Darmowy generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
-  { title: 'Tester kontrastu kolorów WCAG', href: '/narzedzia/tester-kontrastu-kolorow-wcag' },
-  { title: 'Paleta kolorów z obrazu', href: '/narzedzia/generator-palety-kolorow-z-obrazu' },
-  { title: 'Generator palet kolorów online', href: '/narzedzia/generator-palet-kolorow-online' },
+  {
+    title: 'Konwerter JPG/PNG na WebP',
+    href: '/narzedzia/jpg-png-na-webp-bez-limitu',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja' }],
+  },
+  {
+    title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
+    href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja' }],
+  },
+  {
+    title: 'Generator favicon online',
+    href: '/narzedzia/darmowy-generator-favicon-ico',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/darmowy-generator-favicon-ico/instrukcja' }],
+  },
+  {
+    title: 'Licznik długości meta title i description',
+    href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja' }],
+  },
+  {
+    title: 'Darmowy generator stopki mailowej HTML',
+    href: '/narzedzia/darmowy-generator-stopki-mailowej',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja' }],
+  },
+  {
+    title: 'Tester kontrastu kolorów WCAG',
+    href: '/narzedzia/tester-kontrastu-kolorow-wcag',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja' }],
+  },
+  {
+    title: 'Paleta kolorów z obrazu',
+    href: '/narzedzia/generator-palety-kolorow-z-obrazu',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja' }],
+  },
+  {
+    title: 'Generator palet kolorów online',
+    href: '/narzedzia/generator-palet-kolorow-online',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/generator-palet-kolorow-online/instrukcja' }],
+  },
+  {
+    title: 'Generator kodu QR',
+    href: '/narzedzia/generator-kodu-qr',
+    children: [{ title: 'Instrukcja', href: '/narzedzia/generator-kodu-qr/instrukcja' }],
+  },
 ];
 
 const infoPages: NavItem[] = [
@@ -251,6 +288,7 @@ function buildJsonLd({
   tools: NavItem[];
 }) {
   const servicesChildren = services.flatMap((s) => s.children ?? []);
+  const toolsChildren = tools.flatMap((t) => t.children ?? []);
 
   return {
     '@context': 'https://schema.org',
@@ -295,7 +333,7 @@ function buildJsonLd({
         '@type': 'ItemList',
         '@id': `${siteUrl}/#sitemap-narzedzia`,
         name: 'Mapa strony - Narzędzia',
-        itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools]),
+        itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools, ...toolsChildren]),
       },
       {
         '@type': 'ItemList',

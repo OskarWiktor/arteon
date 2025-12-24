@@ -243,51 +243,107 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
 - **[Cel / content]** Konwersja obrazów do WebP w przeglądarce.
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `JpgPngToWebp`, `SectionInfo`, `CTABanner`, `Wrapper`, `Gap`.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `JpgPngToWebp`, `SectionInfo`, `SectionSteps`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[metadata]** canonical dla narzędzia.
   - **[schema]** JSON-LD: `WebApplication`.
+  - **[uwagi]** Link do pełnej instrukcji w sekcji kroków.
+
+### `/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja` — Instrukcja konwertera WebP
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania konwertera JPG/PNG na WebP. Wyjaśnia: co to jest WebP, jak dodać pliki (drag&drop, wybór), statusy plików (Oczekuje/Przetwarzanie/Gotowe/Błąd), mechanizm Smart Quality, ustawienia jakości, pobieranie (pojedynczo, wszystkie, ZIP), raport oszczędności. Zawiera FAQ (5 pytań).
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` (4 kroki).
 
 ### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia` — Zmiana rozmiaru i kadrowanie
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
 - **[Cel / content]** Zmiana rozmiaru / kadrowanie zdjęcia (client-side).
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `ImageResizeTool`, `CTABanner`, `Wrapper`, `Gap`.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `ImageResizeTool`, `SectionInfo`, `SectionSteps`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
-  - **[uwagi]** URL w `schema.url` i breadcrumbs jest spójny z canonical.
+  - **[uwagi]** URL w `schema.url` i breadcrumbs jest spójny z canonical. Link do pełnej instrukcji.
+
+### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja` — Instrukcja kadrowania i zmiany rozmiaru
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania narzędzia do kadrowania i zmiany rozmiaru zdjęć. Wyjaśnia jak dodać obraz, tryby ustawiania rozmiaru (pixels vs preset), tabelę presetów z zastosowaniami, jak kadrować (przeciąganie, uchwyty, zoom), siatkę 3×3 i regułę trójpodziału, kształty kadru (prostokąt, kwadrat, koło), formaty eksportu (JPG/PNG/WebP) i proporcje (aspect ratio). Zawiera FAQ.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
 ### `/narzedzia/darmowy-generator-favicon-ico` — Generator favicon (.ico)
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
 - **[Cel / content]** Generowanie favicon i paczki assetów.
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `FaviconGenerator`, `SectionInfo`, `CTABanner`, `Wrapper`, `Gap`.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `FaviconGenerator`, `SectionInfo`, `SectionSteps`, `Button`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
+  - **[uwagi]** Link do pełnej instrukcji.
+
+### `/narzedzia/darmowy-generator-favicon-ico/instrukcja` — Instrukcja generatora favicon
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania generatora favicon. Wyjaśnia: co to jest favicon i do czego służy, jakie rozmiary ikon są potrzebne (favicon.ico, 16x16, 32x32, 180x180, 192x192, 512x512), jak korzystać z generatora (4 kroki), opcje generowania (tło, manifest, auto-download), jak pobrać pliki (ZIP vs pojedynczo), gdzie i jak wgrać favicon (WordPress, HTML, Next.js), jaki obraz źródłowy działa najlepiej. Zawiera FAQ (5 pytań).
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `Button`, `CTABanner`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList`.
 
 ### `/narzedzia/licznik-dlugosci-meta-title-i-description` — Licznik meta title/description
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
 - **[Cel / content]** Pomiar długości meta tagów (znaki/piksele) i podgląd.
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `MetaTitleDescriptionTool`, `SectionInfo`, `CTABanner`, `Wrapper`, `Gap`.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `MetaTitleDescriptionTool`, `SectionInfo`, `SectionSteps`, `Button`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
+
+### `/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja` — Instrukcja licznika meta title/description
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania licznika meta title i description. Wyjaśnia czym są meta tagi, dlaczego długość ma znaczenie, jak interpretować wyniki (statusy, metryki), jak działa podgląd snippet i zawiera FAQ.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `Button`, `CTABanner`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
 ### `/narzedzia/tester-kontrastu-kolorow-wcag` — Tester kontrastu WCAG
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
 - **[Cel / content]** Sprawdzenie kontrastu (WCAG) dla kolorów.
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `WcagContrastChecker`, `SectionInfo`, `CTABanner`, `Wrapper`, `Gap`.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `WcagContrastChecker`, `SectionInfo`, `SectionSteps`, `Button`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
+
+### `/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja` — Instrukcja testera kontrastu WCAG
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania testera kontrastu kolorów WCAG. Wyjaśnia poziomy AA/AAA, formaty kolorów, interpretację wyników, funkcję Dopasuj i zawiera FAQ.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `Button`, `CTABanner`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
 ### `/narzedzia/generator-palety-kolorow-z-obrazu` — Paleta kolorów z obrazu
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
-- **[Cel / content]** Ekstrakcja dominujących kolorów z obrazu/logo (client-side) i kopiowanie palety jako HEX.
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `PaletteExtractor`, `SectionInfo`, `CTABanner`, `Wrapper`, `Gap`.
+- **[Cel / content]** Ekstrakcja dominujących kolorów z obrazu/logo (client-side) i kopiowanie palety jako HEX. Skrócona instrukcja (3 kroki) + link do pełnej instrukcji.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `PaletteExtractor`, `SectionInfo`, `SectionSteps`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
+
+### `/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja` — Instrukcja generatora palety kolorów z obrazu
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania generatora palety kolorów z obrazu. Wyjaśnia jak dodać obraz (drag&drop vs klik, formaty PNG/JPG/SVG), co robi narzędzie z obrazem (algorytm prostym językiem), jak skopiować kolory, jakie obrazy dają najlepsze wyniki (logo vs zdjęcie, przezroczyste tło), najczęstsze problemy i ich rozwiązania. Zawiera FAQ (5 pytań) i linki do powiązanych narzędzi.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
 ### `/narzedzia/generator-palet-kolorow-online` — Generator palet kolorów
 
@@ -297,13 +353,48 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
+### `/narzedzia/generator-palet-kolorow-online/instrukcja` — Instrukcja generatora palet kolorów
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania generatora palet kolorów. Wyjaśnia jak wybrać kolor bazowy, jak działają poszczególne palety (monochromatyczna, analogiczna, komplementarna, triadyczna, split-complementary, pastelowa, ciemna, tonalna, minimalistyczna), jak skopiować kolory i najczęstsze problemy. Zawiera FAQ.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList`.
+
+### `/narzedzia/generator-kodu-qr` — Generator kodu QR
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/generator-kodu-qr/page.tsx`
+- **[Cel / content]** Generowanie kodów QR (URL, tekst, vCard, e-mail, telefon) z opcjami personalizacji (rozmiar, kolory, poziom korekcji błędów). Pobieranie w PNG/SVG.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `QrCodeGenerator`, `SectionInfo`, `SectionSteps`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[schema]** JSON-LD: `WebApplication`.
+
+### `/narzedzia/generator-kodu-qr/instrukcja` — Instrukcja generatora kodów QR
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/generator-kodu-qr/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja użytkowania generatora kodów QR. Wyjaśnia co to jest kod QR, co można zakodować (URL, tekst, vCard, e-mail, telefon), jak wygenerować kod krok po kroku, opcje personalizacji (rozmiar, margines, kolory), poziomy korekcji błędów, formaty pobierania (PNG vs SVG), zastosowania i jak przetestować kod przed drukiem. Zawiera FAQ.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/generator-kodu-qr/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList`.
+
 ### `/narzedzia/darmowy-generator-stopki-mailowej` — Generator stopki mailowej
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/page.tsx`
 - **[Cel / content]** Generator HTML stopki mailowej.
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `EmailSignatureGenerator`, `SectionInfo`, `CTABanner`, `Wrapper`, `Gap`.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `EmailSignatureGenerator`, `SectionInfo`, `SectionSteps`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
+
+### `/narzedzia/darmowy-generator-stopki-mailowej/instrukcja` — Instrukcja generatora stopki mailowej
+
+- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja krok po kroku: jak wypełnić dane, wybrać układ, dodać CTA, linki do mediów społecznościowych, dostosować wygląd i skopiować stopkę do Gmail/Outlook.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[SEO]**
+  - **[metadata]** title: „Jak używać generatora stopki mailowej - instrukcja krok po kroku", canonical: `https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej/instrukcja`.
+  - **[schema]** JSON-LD: `HowTo` (6 kroków), `BreadcrumbList`.
 
 ---
 

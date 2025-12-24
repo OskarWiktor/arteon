@@ -4,12 +4,11 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import QrCodeGenerator from '@/components/sections/tools/QrCodeGenerator';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator kodu QR online - dla firm i materiałów drukowanych',
@@ -66,18 +65,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-        <SectionInfo title="Czym jest kod QR i do czego służy?">
-          <p className="text-mid">
-            Kod QR (od angielskiego <em>Quick Response</em> – szybka odpowiedź) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem w telefonie. Po zeskanowaniu telefon automatycznie otworzy
-            stronę internetową, zapisze kontakt, połączy się z Wi-Fi lub wykona inną akcję – zależnie od tego, co zakodowałeś.
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Gdzie stosować kody QR?</strong> Na wizytówkach, ulotkach, plakatach, menu restauracji, opakowaniach produktów, banerach reklamowych i wszędzie tam, gdzie chcesz szybko
-            przekierować klienta do konkretnej treści bez wpisywania adresu ręcznie.
-          </p>
-        </SectionInfo>
-
-        <Gap size="sm" />
 
         <QrCodeGenerator />
 
@@ -85,75 +72,26 @@ export default function Page() {
 
         <SectionSteps
           title="Jak korzystać z generatora?"
-          description="Generowanie kodu QR zajmuje dosłownie kilka sekund. Oto jak to zrobić:"
-          grid="four"
+          description="Stworzenie kodu QR to dosłownie kilka sekund:"
+          grid="three"
           items={[
             {
-              title: '1. Wybierz typ danych',
-              description: 'Zdecyduj, co ma zawierać kod: adres URL, tekst, wizytówkę (vCard), e-mail lub numer telefonu.',
+              title: '1. Wybierz typ',
+              description: 'Wybierz typ danych: URL, tekst, wizytówka (vCard), e-mail lub telefon.',
             },
             {
               title: '2. Wpisz dane',
-              description: 'Wypełnij odpowiednie pola. Dla URL wpisz adres strony, dla vCard podaj dane kontaktowe itd.',
+              description: 'Wypełnij odpowiednie pola — np. adres strony, dane kontaktowe.',
             },
             {
-              title: '3. Dostosuj wygląd',
-              description: 'Wybierz rozmiar, margines, kolory kodu i tła. Dla materiałów drukowanych ustaw min. 300px i poziom korekcji H.',
-            },
-            {
-              title: '4. Pobierz kod',
-              description: 'Kliknij „Pobierz PNG” lub „Pobierz SVG”. PNG sprawdzi się w większości zastosowań, SVG jest idealny do druku w dużych formatach.',
+              title: '3. Pobierz kod',
+              description: 'Dostosuj wygląd (kolory, rozmiar) i pobierz jako PNG lub SVG.',
             },
           ]}
+          btnOne="Zobacz pełną instrukcję"
+          btnOneLink="/narzedzia/generator-kodu-qr/instrukcja"
+          btnOneVariant="accent"
         />
-
-        <Gap variant="line" />
-
-        <SectionSteps
-          title="Zastosowania kodów QR w firmie"
-          description="Kody QR mają wiele praktycznych zastosowań w codziennej działalności:"
-          grid="two"
-          items={[
-            {
-              title: 'Materiały drukowane',
-              description: (
-                <p>
-                  Dodaj kod QR do wizytówki, ulotki, katalogu lub plakatu. Klient zeskanuje go telefonem i od razu trafi na Twoją stronę, formularz kontaktowy lub ofertę – bez przepisywania długiego
-                  adresu.
-                </p>
-              ),
-            },
-            {
-              title: 'Wizytówki z vCard',
-              description: (
-                <p>
-                  Kod QR z wizytówką elektroniczną (vCard) pozwala zapisać Twoje dane kontaktowe bezpośrednio w telefonie klienta – imię, nazwisko, firmę, telefon, e-mail i adres jednym skanowaniem.
-                </p>
-              ),
-            },
-          ]}
-        />
-
-        <Gap variant="line" />
-
-        <SectionInfo title="Wskazówki do druku">
-          <p className="text-mid">
-            <strong>Rozmiar:</strong> Dla materiałów drukowanych (wizytówki, ulotki) zalecamy kod o wymiarach minimum 2×2 cm. W generatorze odpowiada to rozdzielczości 300 px przy standardowej jakości
-            druku.
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Poziom korekcji błędów:</strong> Wybierz poziom H (maksymalny, 30%) jeśli kod będzie drukowany na powierzchniach, które mogą być częściowo zasłonięte lub uszkodzone. Dla materiałów
-            cyfrowych wystarczy poziom M (15%).
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Kontrast kolorów:</strong> Narzędzie ostrzega, gdy kontrast między kolorami kodu i tła jest zbyt niski. Dla pewności skanowania zachowaj kontrast minimum 3:1 – najlepiej ciemny kod
-            na jasnym tle.
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Format pliku:</strong> PNG sprawdzi się w większości zastosowań (web, social media, druk do A4). SVG jest wektorowy – możesz go skalować do dowolnego rozmiaru bez utraty jakości,
-            idealny do banerów i billboardów.
-          </p>
-        </SectionInfo>
 
         <Gap variant="line" />
 

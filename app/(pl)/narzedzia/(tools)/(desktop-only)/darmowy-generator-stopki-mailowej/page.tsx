@@ -2,14 +2,13 @@ import Script from 'next/script';
 import HeroBanner from '@/components/sections/HeroBanner';
 import Wrapper from '@/components/ui/Wrapper';
 import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
 import type { Metadata } from 'next';
 import EmailSignatureGenerator from '@/components/sections/tools/EmailSignatureGenerator';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej HTML - bez limitu',
@@ -75,17 +74,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-        <SectionInfo title="Czym jest stopka mailowa i dlaczego warto ją mieć?">
-          <p className="text-mid">
-            Stopka mailowa (podpis e-mail) to blok informacji na końcu każdej wiadomości. Zawiera Twoje dane kontaktowe, stanowisko, link do strony lub kalendarza. Profesjonalna stopka buduje zaufanie
-            i ułatwia odbiorcom kontakt z Tobą.
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Kiedy warto użyć generatora?</strong> Gdy chcesz szybko stworzyć spójny podpis dla siebie lub całego zespołu — bez znajomości HTML i bez płacenia grafikowi.
-          </p>
-        </SectionInfo>
-
-        <Gap size="sm" />
 
         <EmailSignatureGenerator />
 
@@ -93,40 +81,26 @@ export default function Page() {
 
         <SectionSteps
           title="Jak korzystać z generatora?"
-          description="Stworzenie profesjonalnej stopki mailowej zajmuje dosłownie kilka minut:"
-          grid="four"
+          description="Stworzenie profesjonalnej stopki to dosłownie kilka minut:"
+          grid="three"
           items={[
             {
               title: '1. Wpisz dane',
-              description: 'Uzupełnij imię, nazwisko, stanowisko, firmę i dane kontaktowe. Możesz też dodać linki do social mediów.',
+              description: 'Uzupełnij imię, nazwisko, stanowisko, firmę i dane kontaktowe.',
             },
             {
               title: '2. Dostosuj wygląd',
-              description: 'Wybierz kolory, czcionkę i układ. Dodaj przycisk CTA (np. „Umów spotkanie”) i klauzulę prawną, jeśli potrzebujesz.',
+              description: 'Wybierz kolory, dodaj zdjęcie lub logo, skonfiguruj linki do social mediów.',
             },
             {
-              title: '3. Podgląd na żywo',
-              description: 'Zobacz, jak stopka będzie wyglądać w e-mailu. Podgląd aktualizuje się natychmiast po każdej zmianie.',
-            },
-            {
-              title: '4. Skopiuj kod',
-              description: 'Kliknij „Skopiuj HTML” i wklej stopkę w ustawieniach swojego klienta pocztowego (Gmail, Outlook, Apple Mail).',
+              title: '3. Skopiuj kod',
+              description: 'Kliknij „Kopiuj HTML" i wklej stopkę w ustawieniach Gmail, Outlook lub innego klienta.',
             },
           ]}
+          btnOne="Zobacz pełną instrukcję"
+          btnOneLink="/narzedzia/darmowy-generator-stopki-mailowej/instrukcja"
+          btnOneVariant="accent"
         />
-
-        <Gap variant="line" />
-
-        <SectionInfo title="Profesjonalna stopka mailowa bez grafika i bez kodowania">
-          <p className="mt-4">
-            Uzupełnij dane: imię i nazwisko, stanowisko, nazwę firmy, dane kontaktowe, link do kalendarza lub oferty oraz profile w social media. Narzędzie od razu buduje z tego przejrzystą stopkę
-            HTML, która dobrze wygląda w Gmailu, Outlooku i większości popularnych klientów pocztowych.
-          </p>
-          <p className="mt-4">
-            Możesz dopasować kolory, czcionkę, dodać przycisk CTA i klauzulę prawną. Na końcu jednym kliknięciem kopiujesz gotowy kod i wklejasz go w ustawieniach swojej skrzynki - bez logowania, bez
-            abonamentu i bez limitu użycia.
-          </p>
-        </SectionInfo>
 
         <Gap variant="line" />
 

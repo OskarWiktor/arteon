@@ -1,6 +1,238 @@
 # DONE_TASKS
 
+## 2025-12-24
+
+- ✅ **[IDEA-054] Blog: Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?**
+
+  - **Co zrobiono**:
+    - Dodano nowy artykuł do `data/pl/blog.json` (na górze listy).
+    - Slug: `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
+    - URL: `/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
+    - **Rozszerzono artykuł zgodnie z nowymi wytycznymi (9-14 min)**:
+      - Czas czytania: 11 min (z 7 min)
+      - Struktura: wstęp z tooltip WCAG → co to jest kontrast (wzór relative luminance, jak obliczany) → kto korzysta (słabowidzący WHO+GUS, daltonizm z tooltipami, seniorzy z badaniami NIH, trudne warunki, zmęczenie) → WCAG AA/AAA (dyrektywa UE, ustawa PL, EAA 2025, przykłady HEX) → jak sprawdzić (tester Arteon + instrukcja, DevTools, WAVE, axe, PageSpeed) → na co zwrócić uwagę (6 podsekcji z tooltipami) → podsumowanie z wieloma CTA
+      - Linki wewnętrzne (8): tester kontrastu, instrukcja testera, generator palet, ekstraktor kolorów, strony internetowe, artykuł o kolorystyce, kontakt
+      - Linki zewnętrzne (6+): WHO, GUS, NIH, Dyrektywa UE, Ustawa PL, EAA, PageSpeed, WAVE, axe
+      - Tooltips: WCAG, W3C, relative luminance, daltonizm, HEX, RGB, HSL, hover, focus
+      - 6 FAQ (dodano: duży tekst wg WCAG, przepisy dla firm prywatnych)
+    - Zaktualizowano `BLOG_CATALOG.md`.
+    - **Zaktualizowano INSTRUCTIONS.md** z nowymi wytycznymi artykułów:
+      - Czas czytania: 9-14 min (1800-2800 słów)
+      - Linki wewnętrzne: min. 6-8
+      - Linki zewnętrzne: min. 4-6
+      - Widoczne podkreślenie linków (class='underline' / 'inline-link')
+      - Tooltip dla trudnych terminów (abbr z title)
+      - Typy artykułów: edukacyjny, HowTo, porady/błędy, porównawczy
+      - Intent: edukacja + przekierowanie do oferty
+  - **Weryfikacja**: nie wymagana (content-only).
+
+- ✅ **[SEARCH-001] Wyszukiwarka: dodać strony instrukcji narzędzi do indeksu**
+
+  - **Co zrobiono**:
+    - Dodano funkcję `buildToolInstructionsIndex()` w `lib/search/searchIndex.ts`.
+    - Funkcja generuje wpisy dla wszystkich 9 stron instrukcji narzędzi na podstawie `TOOLS_SECTIONS_PL`.
+    - Każda instrukcja ma tytuł „Instrukcja: [nazwa narzędzia]" i keywords: `instrukcja`, `jak używać`, `poradnik`.
+    - Wyszukiwanie „instrukcja" lub nazwy narzędzia zwraca teraz także strony instrukcji.
+  - **Pliki zmienione**:
+    - `lib/search/searchIndex.ts`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-030] Refactoring instrukcji narzędzi — poprawa struktury i wizualizacji UI**
+
+  - **Co zrobiono**:
+    - Zmieniono wszystkie importy ikon z `lucide-react` na `react-icons/ri` we wszystkich instrukcjach narzędzi.
+    - Dodano ikony do `SectionSteps` we wszystkich instrukcjach dla lepszej wizualizacji.
+    - Stworzono nowy komponent `SectionDemo` (`components/ui/sections/SectionDemo.tsx`) — jak `SectionBasic`, ale z możliwością renderowania elementów UI zamiast zdjęć (proporcje 40% demo / 60% tekst).
+    - Dodano wizualizację UI z Badge'ami dla statusów plików w instrukcji konwertera WebP (`jpg-png-na-webp-bez-limitu/instrukcja`).
+    - Poprawiono instrukcję generatora stopek mailowych (`darmowy-generator-stopki-mailowej/instrukcja`):
+      - Przeniesiono sekcję "Najczęstsze problemy i rozwiązania" do FAQ (4 nowe pytania).
+      - Zmieniono sekcję "Podsumowanie" na `SectionInfo` z przyciskami `btnOne`/`btnTwo`.
+    - Poprawiono instrukcję testera kontrastu WCAG (`tester-kontrastu-kolorow-wcag/instrukcja`):
+      - Przeniesiono sekcję "Najczęstsze problemy" do FAQ (3 nowe pytania).
+      - Usunięto redundantną sekcję "Przydatne zasoby".
+    - Ujednolicono strukturę końcowych sekcji we wszystkich instrukcjach (FAQ → SectionInfo z CTA → ToolsCarousel → CTABanner).
+    - **Wdrożono wizualizacje UI 1:1 z SectionDemo**:
+      - `jpg-png-na-webp-bez-limitu/instrukcja` — suwak jakości, opcje automatycznego pobierania, raport oszczędności
+      - `tester-kontrastu-kolorow-wcag/instrukcja` — wyniki testu kontrastu z Badge'ami AA/AAA i podglądem
+      - `darmowy-generator-stopki-mailowej/instrukcja` — wybór układów stopki z podglądem
+      - `generator-palet-kolorow-online/instrukcja` — wizualizacja palety monochromatycznej z przyciskiem kopiowania
+      - `licznik-dlugosci-meta/instrukcja` — wizualizacja metryk (znaki, słowa, piksele) z Badge'ami statusu
+      - `generator-kodu-qr/instrukcja` — wizualizacja poziomów korekcji błędów (L/M/Q/H) z Badge'ami
+      - `zmiana-rozmiaru/instrukcja` — wizualizacja trybów ustawiania rozmiaru (wymiary w px, gotowe formaty)
+      - `generator-favicon/instrukcja` — wizualizacja opcji generowania (rozmiary, tło, manifest)
+    - **Poprawiono nagłówki h3→h4**:
+      - `tester-kontrastu-kolorow-wcag/instrukcja` — sekcje WCAG AA/AAA, formaty kolorów (HEX, RGB, HSL)
+      - `licznik-dlugosci-meta/instrukcja` — sekcje metryki, statusy, zalecane zakresy, problemy
+      - `darmowy-generator-stopki-mailowej/instrukcja` — sekcje pola danych, CTA, motywy, kolory, czcionka
+  - **Pliki zmienione**:
+    - `components/ui/sections/SectionDemo.tsx` (nowy)
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-kodu-qr/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/instrukcja/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[SEO-019] Edukacja: unikalne zdjęcia banerów i OG dla kategorii i strony głównej**
+
+  - **Co zrobiono**:
+    - Rozszerzono `CATEGORY_CONTENT_BY_SLUG` w `app/(pl)/edukacja/[category]/page.tsx` o pole `heroImage` z unikalnym zdjęciem dla każdej kategorii.
+    - Dodano kategorię `marketing` do konfiguracji.
+    - Zaktualizowano `generateMetadata` — dodano `openGraph.images` z unikalnym zdjęciem per kategoria.
+    - Zaktualizowano `EdukacjaCategoryPage` — HeroBanner używa teraz `heroImage` z konfiguracji.
+    - Zaktualizowano stronę główną `/edukacja` (`app/(pl)/edukacja/page.tsx`) — dodano unikalne zdjęcie (`e-mail-marketing-dla-malych-firm`) w HeroBanner i OpenGraph.
+    - Usunięto TODO komentarz dotyczący OG image dla `/edukacja`.
+  - **Przypisanie zdjęć** (unikalne, bez powtórzeń):
+    - `/edukacja` — e-mail-marketing-dla-malych-firm
+    - `/edukacja/seo` — meta-title-i-description-jak-je-napisac
+    - `/edukacja/strony` — co-sprawdzic-przed-uruchomieniem-strony
+    - `/edukacja/grafika` — jak-dobrac-kolory-do-strony-internetowej
+    - `/edukacja/branding` — jak-przygotowac-profesjonalna-stopke-mailowa
+    - `/edukacja/marketing` — czym-jest-content-marketing
+    - `/edukacja/bezpieczenstwo` — czym-jest-certyfikat-ssl
+    - `/edukacja/ux` — czym-jest-responsywnosc-strony
+    - `/edukacja/druk` — materialy-drukowane-dla-firmy
+    - `/edukacja/zdjecia` — jak-zoptymalizowac-zdjecia-na-strone-www
+    - `/edukacja/tresci` — faq-na-stronie-jak-pisac-pytania
+    - `/edukacja/widocznosc` — jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma
+    - `/edukacja/psychologia` — jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow
+    - `/edukacja/sklepy` — jak-przygotowac-sklep-internetowy-do-pozycjonowania
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
 ## 2025-12-23
+
+- ✅ **[TOOLS-022] Narzędzia: rozbudowana instrukcja — Generator palety kolorów z obrazu**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/instrukcja/page.tsx`.
+    - URL: `/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja`, H1: „Jak używać generatora palety kolorów z obrazu".
+    - Sekcje instrukcji: Jak dodać obraz (drag&drop vs klik, formaty PNG/JPG/SVG), Co robi narzędzie z obrazem (wyjaśnienie algorytmu prostym językiem: downscale, analiza pikseli, grupowanie podobnych kolorów, ignorowanie przezroczystości), Jak skopiować kolory (3 kroki), Jakie obrazy dają najlepsze wyniki (logo/grafiki wektorowe, zdjęcia z wyraźnym motywem, przezroczyste tło, unikanie dużego jednokolorowego tła), Najczęstsze problemy i rozwiązania (mało kolorów, nieoczekiwane kolory, dominujące tło, nieobsługiwany format).
+    - FAQ: 5 pytań (formaty obrazów, ile kolorów, prywatność, nieoczekiwane wyniki, kopiowanie wszystkich kolorów naraz).
+    - Schema JSON-LD: `HowTo` (3 kroki) + `BreadcrumbList` + `FAQPage`.
+    - Linki wewnętrzne do powiązanych narzędzi (generator palet kolorów, tester kontrastu WCAG) i usługi (identyfikacja wizualna).
+    - Skrócono instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano link „Zobacz pełną instrukcję".
+    - Zaktualizowano `PAGES_CATALOG.md`.
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-021] Narzędzia: rozbudowana instrukcja — Generator palet kolorów online**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/instrukcja/page.tsx`.
+    - URL: `/narzedzia/generator-palet-kolorow-online/instrukcja`, H1: „Jak używać generatora palet kolorów online".
+    - Sekcje instrukcji: Jak wybrać kolor bazowy (picker vs HEX), Jak działają poszczególne palety (9 typów: monochromatyczna, analogiczna, komplementarna, triadyczna, split-complementary, pastelowa, ciemna, tonalna, minimalistyczna — każda z opisem kiedy używać), Jak skopiować kolor (HEX i HSL), Najczęstsze problemy i rozwiązania.
+    - FAQ: 5 pytań (formaty kolorów, prywatność, ile kolorów w palecie, jak wybrać paletę, użycie komercyjne).
+    - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList`.
+    - Skrócono instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano link „Zobacz pełną instrukcję obsługi generatora →".
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-024] Narzędzia: rozbudowana instrukcja — Tester kontrastu kolorów WCAG**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/instrukcja/page.tsx`.
+    - URL: `/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja`, H1: „Jak używać testera kontrastu kolorów WCAG".
+    - Sekcje instrukcji: Co to jest kontrast kolorów i dlaczego jest ważny, Co oznaczają poziomy WCAG AA i AAA (progi dla tekstu zwykłego/dużego/ikon), Jak korzystać z testera (4 kroki), Jak interpretować wyniki (tekst zwykły/duży/ikona, badge'e pass/fail, podgląd na żywo), Funkcja Dopasuj — co robi (algorytm szukania jasności), Jakie formaty kolorów są obsługiwane (HEX/RGB/RGBA/HSL/HSLA z przykładami), Najczęstsze problemy i rozwiązania.
+    - FAQ: 5 pytań (różnica AA vs AAA, duży tekst wg WCAG, kontrast ikon, subiektywne postrzeganie koloru, działanie funkcji Dopasuj).
+    - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList` + `FAQPage`.
+    - Skrócono instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano link „Zobacz pełną instrukcję →".
+    - Zaktualizowano `PAGES_CATALOG.md` (wpisy dla narzędzia i strony instrukcji).
+    - Zaktualizowano `TOOLS_CATALOG.md` (dodano referencję do strony instrukcji).
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+  - **Weryfikacja**: `npm run build` przechodzi (lint ma pre-existing issue z eslint-plugin-unused-imports).
+
+- ✅ **[TOOLS-025] Narzędzia: rozbudowana instrukcja — Darmowy generator favicon**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/instrukcja/page.tsx`.
+    - URL: `/narzedzia/darmowy-generator-favicon-ico/instrukcja`, H1: „Jak używać generatora favicon".
+    - Sekcje instrukcji: Co to jest favicon i do czego służy, Jakie rozmiary ikon są potrzebne (favicon.ico, 16x16, 32x32, 180x180, 192x192, 512x512 z opisami zastosowań), Jak korzystać z generatora (4 kroki), Opcje generowania (tło, manifest, auto-download), Jak pobrać wygenerowane pliki (ZIP vs pojedynczo), Gdzie i jak wgrać favicon (WordPress/CMS, HTML, Next.js), Jaki obraz źródłowy działa najlepiej (proste kształty, kwadrat, min. rozmiar, SVG, kontrastowe kolory).
+    - FAQ: 5 pytań (prywatność plików, minimalny rozmiar, wybór rozmiarów, manifest, format SVG).
+    - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList`.
+    - Skrócono instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano link „Zobacz pełną instrukcję".
+    - Zaktualizowano `PAGES_CATALOG.md` i `TOOLS_CATALOG.md`.
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-027] Narzędzia: rozbudowana instrukcja — Zmiana rozmiaru i kadrowanie zdjęcia**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`.
+    - URL: `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja`, H1: „Jak używać narzędzia do zmiany rozmiaru i kadrowania zdjęcia".
+    - Sekcje instrukcji: Jak dodać obraz (drag&drop, formaty), Tryby ustawiania rozmiaru (pixels vs preset), Presety - który wybrać (12 presetów z opisami zastosowań: IG post/story/reels, FB post/cover, LinkedIn post/baner, OG image, grafika do artykułu, baner strony, miniatura, hero), Jak kadrować obraz (przeciąganie, uchwyty, zoom, pozycja), Siatka 3×3 i reguła trójpodziału, Kształty kadru (prostokąt/kwadrat/koło), Eksport - jaki format wybrać (JPG/PNG/WebP + jakość), Proporcje (aspect ratio) - co to znaczy (1:1, 4:5, 3:2, 16:9, 9:16).
+    - FAQ: 5 pytań (prywatność plików, wybór formatu, koło a JPG, proporcje, suwak jakości).
+    - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList` + `FAQPage`.
+    - Dodano link do pełnej instrukcji na głównej stronie narzędzia.
+    - Zaktualizowano `PAGES_CATALOG.md` (wpisy dla narzędzia i strony instrukcji).
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-029] Narzędzia: rozbudowana instrukcja — Generator kodów QR**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/generator-kodu-qr/instrukcja/page.tsx`.
+    - URL: `/narzedzia/generator-kodu-qr/instrukcja`, H1: „Jak używać generatora kodów QR".
+    - Sekcje instrukcji: Co to jest kod QR i jak działa, Co można zakodować w QR (URL/tekst/vCard/e-mail/telefon z zastosowaniami), Jak wygenerować kod QR (5 kroków), Opcje personalizacji (rozmiar/margines/kolory), Poziomy korekcji błędów (L/M/Q/H - kiedy który wybrać), Jak pobrać kod QR (PNG vs SVG), Gdzie używać kodów QR (4 zastosowania), Jak przetestować kod przed drukiem, FAQ (6 pytań).
+    - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList`.
+    - Skrócono instrukcję na głównej stronie narzędzia + dodano link „Zobacz pełną instrukcję z opisem wszystkich opcji".
+    - Usunięto szczegółową sekcję „Wskazówki do druku" z głównej strony (przeniesiona do instrukcji).
+    - Zaktualizowano `PAGES_CATALOG.md` (wpisy dla generatora QR i strony instrukcji).
+    - Zaktualizowano `TOOLS_CATALOG.md` (wpis dla `QrCodeGenerator`).
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-028] Narzędzia: rozbudowana instrukcja — Generator stopki mailowej**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`.
+    - URL: `/narzedzia/darmowy-generator-stopki-mailowej/instrukcja`, H1: „Jak używać generatora stopki mailowej".
+    - Sekcje instrukcji: co to jest stopka mailowa, jak wypełnić dane (opis każdego pola), układy stopki (opis 5 układów), jak dodać przycisk CTA, jak dodać linki do mediów społecznościowych, personalizacja wyglądu (motywy, kolory, czcionka, rozmiar, margines, zaokrąglenie CTA, linia oddzielająca), klauzula prawna/RODO, jak skopiować do Gmail/Outlook (3 kroki), najczęstsze problemy i rozwiązania, FAQ (5 pytań), podsumowanie + CTA.
+    - Schema JSON-LD: `HowTo` (6 kroków) + `BreadcrumbList`.
+    - Skrócono mini instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano link „Zobacz pełną instrukcję krok po kroku".
+    - Zaktualizowano `PAGES_CATALOG.md` o nową stronę instrukcji.
+    - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-026] Narzędzia: rozbudowana instrukcja — Konwerter JPG/PNG na WebP**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`.
+    - URL: `/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja`.
+    - H1: „Jak używać konwertera JPG/PNG na WebP".
+    - Sekcje instrukcji: Co to jest WebP, Jak dodać pliki, Co oznaczają statusy (Oczekuje/Przetwarzanie/Gotowe/Błąd), Jak działa Smart Quality, Ustawienia jakości, Jak pobrać pliki, Raport oszczędności, Na co zwrócić uwagę.
+    - FAQ: 5 pytań (prywatność plików, Smart Quality, poziom jakości, formaty, większy plik).
+    - Linki wewnętrzne: artykuł o optymalizacji zdjęć, narzędzie do zmiany rozmiaru, usługi, kontakt.
+    - Link zewnętrzny: PageSpeed Insights.
+    - Schema.org: HowTo z 4 krokami.
+    - Skrócono instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano przycisk „Zobacz pełną instrukcję".
+    - Zaktualizowano `PAGES_CATALOG.md`.
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-023] Narzędzia: rozbudowana instrukcja — Licznik długości meta title i description**
+
+  - **Co zrobiono**:
+    - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/instrukcja/page.tsx`.
+    - URL: `/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja`.
+    - H1: „Jak używać licznika długości meta title i description".
+    - Sekcje instrukcji:
+      - Co to jest meta title i meta description? (wyjaśnienie dla początkujących)
+      - Dlaczego długość meta tagów ma znaczenie? (obcinanie, piksele vs znaki, CTR)
+      - Jak korzystać z narzędzia? (4 kroki)
+      - Jak interpretować wyniki? (metryki: znaki/słowa/piksele, statusy: dobra długość/za krótki/za długi)
+      - Podgląd snippet — co pokazuje? (URL, tytuł, opis)
+      - Najczęstsze problemy i rozwiązania
+      - FAQ (5 pytań)
+    - Zmodyfikowano główną stronę narzędzia (`page.tsx`):
+      - Skrócono sekcję „Jak korzystać z licznika?" z 4 do 3 kroków.
+      - Dodano przycisk „Zobacz pełną instrukcję" → `/instrukcja`.
+    - SEO: metadata (title/description/canonical/OG), schema.org `HowTo`, `BreadcrumbList`, `FAQPage`.
+    - Zaktualizowano `PAGES_CATALOG.md` (nowy wpis dla strony instrukcji).
+    - Zaktualizowano `TOOLS_CATALOG.md` (dodano referencję do strony instrukcji).
+  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
 
 - ✅ **[IDEA-088] Blog: Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?**
 

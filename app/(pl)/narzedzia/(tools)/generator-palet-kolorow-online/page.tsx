@@ -8,7 +8,6 @@ import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
@@ -74,18 +73,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-        <SectionInfo title="Czym jest paleta kolorów i do czego służy?">
-          <p className="text-mid">
-            Paleta kolorów to zestaw barw, które do siebie pasują i tworzą spójną całość. Dobrze dobrana paleta sprawia, że strona, grafika czy marka wygląda profesjonalnie i przyjemnie dla oka.
-            Generator tworzy palety automatycznie na podstawie jednego koloru bazowego.
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Jak to działa?</strong> Podajesz jeden kolor (np. kolor Twojego logo), a narzędzie generuje kilka różnych palet: monochromatyczną, analogiczną, komplementarną i inne — zgodnie z
-            teorią koloru.
-          </p>
-        </SectionInfo>
-
-        <Gap size="sm" />
 
         <ColorPaletteGenerator />
 
@@ -94,43 +81,24 @@ export default function Page() {
         <SectionSteps
           title="Jak korzystać z generatora?"
           description="Wygenerowanie palet kolorów to dosłownie kilka sekund:"
-          grid="four"
+          grid="three"
           items={[
             {
               title: '1. Wybierz kolor bazowy',
-              description: 'Wpisz kod HEX lub użyj próbnika, żeby wybrać kolor, od którego chcesz zacząć.',
+              description: 'Wpisz kod HEX w pole tekstowe lub kliknij kolorowy kwadrat, aby otworzyć próbnik kolorów.',
             },
             {
-              title: '2. Przeglądaj palety',
-              description: 'Narzędzie automatycznie wygeneruje kilka różnych palet: monochromatyczną, analogiczną, komplementarną i inne.',
+              title: '2. Wygeneruj palety',
+              description: 'Kliknij „Zaktualizuj kolor" — narzędzie automatycznie stworzy 9 różnych palet.',
             },
             {
-              title: '3. Kopiuj kolory',
-              description: 'Kliknij na dowolny kolor, żeby skopiować jego kod HEX lub HSL do schowka.',
-            },
-            {
-              title: '4. Użyj w projekcie',
-              description: 'Wklej skopiowane kody bezpośrednio do CSS, Figmy, Photoshopa lub dowolnego narzędzia graficznego.',
+              title: '3. Skopiuj kolory',
+              description: 'Kliknij „Kopiuj" przy wybranym kolorze, a kod HEX trafi do schowka.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <SectionSteps
-          title="Rodzaje generowanych palet"
-          description="Generator tworzy różne typy palet zgodnie z teorią koloru:"
-          grid="two"
-          items={[
-            {
-              title: 'Paleta monochromatyczna',
-              description: <p>Różne odcienie jednego koloru — od jasnego do ciemnego. Idealna do eleganckich, minimalistycznych projektów.</p>,
-            },
-            {
-              title: 'Paleta komplementarna',
-              description: <p>Kolory z przeciwnych stron koła barw. Tworzą silny kontrast i przyciągają uwagę — świetne do CTA i akcentów.</p>,
-            },
-          ]}
+          btnOne="Zobacz pełną instrukcję"
+          btnOneLink="/narzedzia/generator-palet-kolorow-online/instrukcja"
+          btnOneVariant="accent"
         />
 
         <Gap variant="line" />

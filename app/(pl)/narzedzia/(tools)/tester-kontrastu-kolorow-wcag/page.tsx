@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import Wrapper from '@/components/ui/Wrapper';
 import Gap from '@/components/ui/Gap';
 import type { Metadata } from 'next';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker';
 import CTABanner from '@/components/sections/CTABanner';
@@ -71,18 +70,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-        <SectionInfo title="Czym jest kontrast kolorów i dlaczego ma znaczenie?">
-          <p className="text-mid">
-            Kontrast to różnica jasności między dwoma kolorami — na przykład między tekstem a tłem. Im wyższy kontrast, tym łatwiej przeczytać tekst. Wytyczne WCAG (Web Content Accessibility
-            Guidelines) określają, jaki minimalny kontrast jest wymagany, żeby strona była dostępna dla osób z wadami wzroku.
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Dlaczego to ważne?</strong> Słaby kontrast utrudnia czytanie nie tylko osobom niedowidzącym, ale też wszystkim korzystającym z telefonu w słońcu czy na starszych monitorach. Dobry
-            kontrast = lepsza czytelność dla wszystkich.
-          </p>
-        </SectionInfo>
-
-        <Gap size="sm" />
 
         <WcagContrastChecker />
 
@@ -90,48 +77,26 @@ export default function Page() {
 
         <SectionSteps
           title="Jak korzystać z testera?"
-          description="Sprawdzenie kontrastu kolorów to dosłownie kilka sekund:"
-          grid="four"
+          description="Sprawdzenie kontrastu to dosłownie kilka sekund:"
+          grid="three"
           items={[
             {
-              title: '1. Wybierz kolor tekstu',
-              description: 'Wpisz kod HEX lub użyj próbnika kolorów, żeby wybrać kolor pierwszego planu (tekstu).',
+              title: '1. Wpisz kolor tekstu',
+              description: 'Podaj kolor tekstu jako HEX, RGB lub HSL (np. #000000).',
             },
             {
-              title: '2. Wybierz kolor tła',
-              description: 'Analogicznie wybierz kolor tła, na którym będzie wyświetlany tekst.',
+              title: '2. Wpisz kolor tła',
+              description: 'Podaj kolor tła na którym będzie wyświetlany tekst.',
             },
             {
               title: '3. Sprawdź wynik',
-              description: 'Narzędzie od razu pokaże współczynnik kontrastu i czy spełniasz poziom AA lub AAA.',
-            },
-            {
-              title: '4. Dostosuj kolory',
-              description: 'Jeśli kontrast jest za niski, zmień któryś z kolorów i sprawdź ponownie.',
+              description: 'Zobacz współczynnik kontrastu i czy spełniasz poziom AA lub AAA.',
             },
           ]}
+          btnOne="Zobacz pełną instrukcję"
+          btnOneLink="/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja"
+          btnOneVariant="accent"
         />
-
-        <Gap variant="line" />
-
-        <SectionInfo title="Jak działa tester kontrastu kolorów WCAG?">
-          <p className="mb-6">
-            To narzędzie liczy kontrast kolorów dokładnie według oficjalnego wzoru WCAG 2.1 (relative luminance). Na podstawie wprowadzonych kolorów oblicza współczynnik kontrastu w skali od{' '}
-            <strong>1:1</strong> do <strong>21:1</strong> i sprawdza, czy spełnione są wymagania:
-          </p>
-          <ul className="mb-6 list-disc pl-5">
-            <li>
-              <strong>Tekst zwykły</strong> - poziom AA wymaga kontrastu co najmniej <strong>4.5:1</strong>, a AAA co najmniej <strong>7:1</strong>.
-            </li>
-            <li>
-              <strong>Tekst duży</strong> - minimalny kontrast to <strong>3:1</strong>.
-            </li>
-            <li>
-              <strong>Ikony i elementy UI</strong> - minimalny kontrast to <strong>3:1</strong>.
-            </li>
-          </ul>
-          <p className="text-light">Wszystkie obliczenia wykonywane są lokalnie w Twojej przeglądarce</p>
-        </SectionInfo>
 
         <Gap variant="line" />
 

@@ -184,15 +184,19 @@ Dla każdego zadania:
   - **Precyzja zamiast skrótów**: zamiast „Google premiuje szybkie strony” preferuj: „wydajność wpływa na doświadczenie użytkownika i jest częścią sygnałów jakości strony”.
   - **Spójność z UI/mikrocopy (obowiązkowo)**: jeśli w tekście podajesz instrukcję „kliknij X / wybierz Y”, nazwa przycisku/etykiety musi być 1:1 zgodna z realnym UI (nie wymyślaj elementów). Przykład: jeśli przycisk ma tekst `Kopiuj stopkę (Gmail / Outlook)`, instrukcja nie może mówić „Kliknij „Skopiuj HTML””.
 
-- **ZASADY TECHNICZNE DLA ARTYKUŁÓW (blog) (aktualizacja 2025-12-18):**
+- **ZASADY TECHNICZNE DLA ARTYKUŁÓW (blog) (aktualizacja 2025-12-24):**
 
-  1. **Tytuł = pytanie**: Każdy artykuł blogowy musi mieć tytuł w formie pytania (np. „Dlaczego strona nie wyświetla się w Google i jak to naprawić?”).
+  1. **Tytuł = pytanie**: Każdy artykuł blogowy musi mieć tytuł w formie pytania (np. „Dlaczego strona nie wyświetla się w Google i jak to naprawić?").
   2. **Polskie znaki**: Treść artykułu blogowego MUSI zawierać polskie znaki diakrytyczne (ą, ę, ć, ł, ń, ó, ś, ź, ż). NIE używaj ASCII bez polskich znaków.
   3. **URL = tytuł**: Slug URL artykułu musi być 1:1 zgodny z tytułem (bez polskich znaków, z myślnikami zamiast spacji).
-  4. **Czas czytania**: Obliczany na podstawie realnej liczby słów. 200 słów = 1 minuta. Celuj w **5-8 minut** (1000-1600 słów). **Po każdej rozbudowie tekstu przelicz liczbę słów i zaktualizuj `readingTime`.**
+  4. **Czas czytania (AKTUALIZACJA 2025-12-24)**: Obliczany na podstawie realnej liczby słów. 200 słów = 1 minuta. Celuj w **9-14 minut** (1800-2800 słów). Artykuły mają być wnikliwe i kompleksowe — odpowiadać na główne pytanie z tytułu w sposób dogłębny. **Po każdej rozbudowie tekstu przelicz liczbę słów i zaktualizuj `readingTime`.**
   5. **Wsparcie klastra usług**: Artykuły i narzędzia zawsze wspierają klaster tematyczny usług na stronie. Linkuj do odpowiednich usług.
   6. **Nie rozdrabniaj**: Jeśli temat artykułu jest odpowiedzią na jedno pytanie główne, zrób jeden kompleksowy artykuł zamiast kilku małych.
-  7. **ZAKAZ polskich cudzysłowów w JSON (aktualizacja 2025-12-20)**: W plikach JSON (np. `data/pl/blog.json`) **NIE UŻYWAJ** polskich cudzysłowów typograficznych „ i ". Te znaki psują parser JSON. Zamiast tego:
+  7. **Linki wewnętrzne — minimum (AKTUALIZACJA 2025-12-24)**: Każdy artykuł musi zawierać **minimum 6-8 linków wewnętrznych** do innych stron serwisu (usługi, narzędzia, inne artykuły). Linki muszą być naturalnie wplecione w tekst. Proporcjonalnie do dłuższego czasu czytania (9-14 min) wymagana jest większa gęstość linkowania.
+  8. **Linki zewnętrzne — minimum (AKTUALIZACJA 2025-12-24)**: Każdy artykuł musi zawierać **minimum 4-6 linków zewnętrznych** do wiarygodnych źródeł (dokumentacja, badania, narzędzia, oficjalne strony organizacji). Wszystkie z atrybutami `target='_blank' rel='noopener noreferrer'`.
+  9. **Widoczność linków w tekście (AKTUALIZACJA 2025-12-24)**: Każdy link w treści artykułu MUSI mieć widoczne podkreślenie. Używaj klasy `class='underline'` dla linków zewnętrznych i `class='inline-link'` dla linków wewnętrznych (ta klasa już zawiera podkreślenie).
+  10. **Tooltip dla trudnych terminów (AKTUALIZACJA 2025-12-24)**: Dla skrótów, terminów technicznych i trudnych pojęć używaj komponentu `Tooltip` ze zwięzłym wyjaśnieniem. Tooltip zwiększa czytelność i pozwala osobom wnikliwym poznać znaczenie terminu bez przerywania lektury. Jeśli termin jest już wyjaśniony w tekście, Tooltip może zawierać dodatkowy kontekst lub ciekawostkę. Format w HTML: `<span data-tooltip='Wyjaśnienie terminu'>termin</span>`.
+  11. **ZAKAZ polskich cudzysłowów w JSON (aktualizacja 2025-12-20)**: W plikach JSON (np. `data/pl/blog.json`) **NIE UŻYWAJ** polskich cudzysłowów typograficznych „ i ". Te znaki psują parser JSON. Zamiast tego:
      - Usuń cudzysłowy z tekstu (np. zamiast „pozycjonować" napisz: pozycjonować)
      - Lub użyj encji HTML `&quot;` (np. `&quot;pozycjonować&quot;`)
      - Lub użyj apostrofów (np. 'pozycjonować')
@@ -253,17 +257,48 @@ Dla każdego zadania:
     - ❌ „Strona jest oparta o Next.js”
     - ✅ „Strona działa szybciej, jest stabilna i łatwa w rozwoju. Dlatego korzystamy z nowoczesnych technologii takich jak Next.js.”
 
-- **Struktura** (aktualizacja 2025-12-18):
-  - Poniższy układ to **punkt wyjścia**, nie sztywny szablon:
+- **Intent artykułów (AKTUALIZACJA 2025-12-24)**: Główny cel każdego artykułu to **edukacja budująca autorytet firmy + naturalne przekierowanie do oferty lub narzędzi**. Artykuł ma:
+  - Odpowiadać wnikliwie na pytanie z tytułu (czytelnik musi wyjść z pełnym zrozumieniem tematu).
+  - Budować zaufanie do Arteon jako eksperta w danej dziedzinie.
+  - Naturalnie prowadzić do usług lub narzędzi Arteon (bez agresywnej sprzedaży, ale z jasną ścieżką „co dalej”).
+  - Być wartościowy sam w sobie — nawet jeśli czytelnik nie skorzysta z oferty, powinien zyskać wiedzę.
+
+- **Typy artykułów (AKTUALIZACJA 2025-12-24)**: Artykuły mogą przyjmować różne formy w zależności od tematu. Poniżej główne typy z ich strukturą:
+
+  **1. Artykuł edukacyjny (domyślny)**
+  - Odpowiada na pytanie „Co to jest X i dlaczego ma znaczenie?"
+  - Struktura: Wstęp → Wyjaśnienie tematu → Dla kogo to ważne → Jak to działa / standardy → Jak sprawdzić/ocenić → Na co zwrócić uwagę → Podsumowanie + CTA
+  - Przykład: „Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?”
+
+  **2. Artykuł HowTo (instrukcja)**
+  - Odpowiada na pytanie „Jak zrobić X?" lub „Jak osiągnąć Y?"
+  - Struktura: Wstęp (co osiągniesz) → Wymagania/przygotowanie → Kroki (numerowane) → Typowe problemy i rozwiązania → Podsumowanie + CTA
+  - UWAGA: Instrukcje dotyczą narzędzi Arteon lub ogólnych procesów. NIE twórz instrukcji zastępujących usługi.
+  - Przykład: „Jak sprawdzić kontrast kolorów na stronie?”
+
+  **3. Artykuł z poradami i błędami**
+  - Odpowiada na pytanie „Na co zwrócić uwagę przy X?" lub „Jakie błędy popełniają firmy przy Y?"
+  - Struktura: Wstęp → Kontekst (dlaczego to ważne) → Lista porad/błędów (każdy z wyjaśnieniem i przykładem) → Jak unikać problemów → Podsumowanie + CTA
+  - Ton: mentorski, nie wytykający — „na co zwrócić uwagę" zamiast „najczęstsze błędy"
+  - Przykład: „Na co zwrócić uwagę przy wyborze kolorów na stronę?”
+
+  **4. Artykuł porównawczy**
+  - Odpowiada na pytanie „X czy Y — co wybrać?" lub „Różnice między X a Y"
+  - Struktura: Wstęp (po co porównanie) → Wyjaśnienie obu opcji → Porównanie punkt po punkcie → Kiedy wybrać X, kiedy Y → Podsumowanie + CTA
+  - Ton: obiektywny, bez faworyzowania (chyba że jedna opcja jest obiektywnie lepsza w danym kontekście)
+  - Przykład: „JPG czy WebP — który format wybrać na stronę?”
+
+- **Struktura** (aktualizacja 2025-12-24):
+  - Struktura zależy od **typu artykułu** (patrz wyżej). Poniższy układ to punkt wyjścia dla artykułu edukacyjnego:
     - Wstęp (o czym artykuł, co czytelnik zyska)
     - Wyjaśnienie problemu/tematu (co to jest, dlaczego ważne)
     - Rozwiązanie / kroki / proces
     - Najczęstsze błędy lub pułapki
     - Podsumowanie + CTA
-  - **Dopasuj strukturę do tematu**. Jeśli logiczny podział wymaga innego układu — zrób inaczej. Ważne, żeby artykuł miał sens i płynnie prowadził czytelnika, nie żeby pasował do szablonu.
+  - **Dopasuj strukturę do tematu i typu**. Jeśli logiczny podział wymaga innego układu — zrób inaczej. Ważne, żeby artykuł miał sens i płynnie prowadził czytelnika, nie żeby pasował do szablonu.
   - Przykłady elastyczności:
-    - Artykuł o narzędziu → może mieć dużą sekcję „Jak to zrobić krok po kroku” (dla narzędzia Arteon).
-    - Artykuł porównawczy → może mieć strukturę „Opcja A vs Opcja B”.
+    - Artykuł o narzędziu → może mieć dużą sekcję „Jak to zrobić krok po kroku" (dla narzędzia Arteon).
+    - Artykuł porównawczy → może mieć strukturę „Opcja A vs Opcja B".
     - Artykuł o procesie → może mieć oś czasu zamiast sekcji.
 
 ### Co robić, a czego NIE robić (aktualizacja 2025-12-18)

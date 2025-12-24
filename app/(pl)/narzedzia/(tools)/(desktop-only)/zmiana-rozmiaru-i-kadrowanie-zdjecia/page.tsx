@@ -5,11 +5,10 @@ import ImageResizeTool from '@/components/sections/tools/ImageResizeTool';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import Gap from '@/components/ui/Gap';
-import SectionInfo from '@/components/ui/sections/SectionInfo';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
   title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
@@ -73,18 +72,6 @@ export default function ImageResizerPage() {
       <Wrapper>
         <Gap size="sm" />
 
-        <SectionInfo title="Do czego służy narzędzie do kadrowania i zmiany rozmiaru?">
-          <p className="text-mid">
-            Kadrowanie pozwala wyciąć wybrany fragment zdjęcia i dopasować go do konkretnych wymiarów. Zmiana rozmiaru z kolei zmniejsza lub powiększa całą grafikę. Dzięki temu możesz przygotować
-            jedno zdjęcie pod różne formaty — post na Instagram, baner na stronę czy miniaturkę na YouTube.
-          </p>
-          <p className="text-mid mt-3">
-            <strong>Gdzie to się przydaje?</strong> Przy tworzeniu grafik na social media, przygotowywaniu zdjęć na stronę WWW, dopasowywaniu obrazów do szablonów i wszędzie tam, gdzie obraz musi mieć
-            konkretne wymiary.
-          </p>
-        </SectionInfo>
-
-        <Gap size="sm" />
 
         <ImageResizeTool />
 
@@ -92,51 +79,25 @@ export default function ImageResizerPage() {
 
         <SectionSteps
           title="Jak korzystać z narzędzia?"
-          description="Kadrowanie i zmiana rozmiaru zdjęcia to kilka prostych kroków:"
-          grid="four"
+          description="Kadrowanie i zmiana rozmiaru to dosłownie kilka sekund:"
+          grid="three"
           items={[
             {
               title: '1. Dodaj zdjęcie',
-              description: 'Przeciągnij plik na obszar uploadu lub kliknij, żeby wybrać obraz z dysku.',
+              description: 'Przeciągnij plik na pole do dodania pliku lub kliknij, żeby wybrać zdjęcie z dysku.',
             },
             {
-              title: '2. Wybierz proporcje',
-              description: 'Wybierz gotowy format (np. Instagram, Facebook, YouTube) lub ustaw własne wymiary.',
+              title: '2. Wybierz format',
+              description: 'Wybierz gotowy format (Instagram, Facebook, YouTube) lub ustaw własne wymiary.',
             },
             {
-              title: '3. Dopasuj kadr',
-              description: 'Przesuń i przybliż obraz, żeby wybrać najlepszy fragment. Podgląd pokazuje dokładnie to, co zostanie wyeksportowane.',
-            },
-            {
-              title: '4. Pobierz',
-              description: 'Wybierz format pliku (JPG, PNG lub WebP) i pobierz gotowe zdjęcie.',
+              title: '3. Pobierz',
+              description: 'Dopasuj kadr, wybierz format pliku (JPG, PNG, WebP) i pobierz gotowe zdjęcie.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <SectionSteps
-          title="Popularne zastosowania"
-          description="Narzędzie przyda się w wielu sytuacjach:"
-          grid="two"
-          items={[
-            {
-              title: 'Grafiki na social media',
-              description: (
-                <p>
-                  Każda platforma ma swoje wymagania: Instagram post (1:1), Instagram story (9:16), Facebook cover (820×312), LinkedIn banner. Zamiast tworzyć osobne pliki, przytnij jedno zdjęcie do
-                  różnych formatów.
-                </p>
-              ),
-            },
-            {
-              title: 'Zdjęcia na stronę WWW',
-              description: (
-                <p>Dopasuj zdjęcia produktów, banerów i miniatur do wymiarów wymaganych przez Twój sklep lub CMS. Mniejsze, dopasowane pliki to szybsze ładowanie i lepsza jakość wyświetlania.</p>
-              ),
-            },
-          ]}
+          btnOne="Zobacz pełną instrukcję"
+          btnOneLink="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja"
+          btnOneVariant="accent"
         />
 
         <Gap variant="line" />

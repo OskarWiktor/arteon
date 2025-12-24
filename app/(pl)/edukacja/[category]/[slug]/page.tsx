@@ -20,6 +20,7 @@ import TableBlock from '@/components/ui/TableBlock';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import ShareBlock from '@/components/sections/ShareBlock';
 import ColorPalette from '@/components/ui/ColorPalette';
+import AbbrTouchHandler from '@/components/ui/AbbrTouchHandler';
 
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
 
@@ -317,6 +318,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
 
   return (
     <>
+      <AbbrTouchHandler />
       <HeroBanner backgroundImage={article.cover || '/assets/bg/abstract-bg13.webp'} />
 
       <Breadcrumbs

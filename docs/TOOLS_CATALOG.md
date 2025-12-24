@@ -58,6 +58,53 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 
 ---
 
+## `QrCodeGenerator` (`components/sections/tools/QrCodeGenerator.tsx`)
+
+- **Co robi**: Generator kodów QR obsługujący różne typy danych (URL, tekst, vCard, e-mail, telefon) z opcjami personalizacji wyglądu.
+- **Strona narzędzia**: `/narzedzia/generator-kodu-qr` (`app/(pl)/narzedzia/(tools)/generator-kodu-qr/page.tsx`)
+- **Strona instrukcji**: `/narzedzia/generator-kodu-qr/instrukcja` (`app/(pl)/narzedzia/(tools)/generator-kodu-qr/instrukcja/page.tsx`)
+- **Wejście (UI)**:
+  - **[typ danych]** wybór z listy: URL, tekst, wizytówka (vCard), e-mail, telefon.
+  - **[formularze]** dynamiczne pola w zależności od wybranego typu:
+    - URL: pole tekstowe z adresem strony.
+    - Tekst: textarea z dowolnym tekstem.
+    - vCard: imię, nazwisko, firma, stanowisko, telefon, e-mail, strona, adres.
+    - E-mail: adres, temat, treść wiadomości.
+    - Telefon: numer w formacie międzynarodowym.
+  - **[opcje wyglądu]**:
+    - rozmiar (150-1000 px),
+    - margines (quiet zone: 0-4),
+    - kolor kodu QR (picker + HEX),
+    - kolor tła (picker + HEX),
+    - poziom korekcji błędów (L/M/Q/H).
+- **Stan i dane**:
+  - **`dataType`**: wybrany typ danych (`url`/`text`/`vcard`/`email`/`phone`).
+  - **`qrData`**: wyliczony string do zakodowania.
+  - **`qrDataUrl`**: data URL wygenerowanego PNG.
+  - **`qrSvg`**: string SVG.
+  - **`isGenerating`**: flaga w trakcie generowania.
+- **Algorytm generowania**:
+  - **[lib]** `lib/tools/qr/generateQr.ts`:
+    - `generateQrPng()`: generuje kod QR jako PNG data URL.
+    - `generateQrSvg()`: generuje kod QR jako string SVG.
+    - `buildVCardString()`: buduje string vCard z danych kontaktowych.
+    - `buildEmailString()`: buduje mailto: URI.
+    - `buildPhoneString()`: buduje tel: URI.
+  - **[debounce]** generowanie jest opóźnione o 300ms przez `useDebouncedEffect`.
+  - **[kontrast]** `isContrastSufficient()` i `calculateContrast()` sprawdzają kontrast kolorów i ostrzegają gdy jest zbyt niski.
+- **Pobieranie**:
+  - **[PNG]** `downloadFromUrl()` pobiera wygenerowany PNG.
+  - **[SVG]** tworzy Blob z SVG string i pobiera przez `downloadFromUrl()`.
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolInfo`, `ToolHelper`, `ToolAlert`, `Button`.
+  - **Lib**: `lib/tools/qr/generateQr.ts`, `lib/tools/download.ts`.
+  - **Hook**: `useDebouncedEffect`.
+- **Side effecty**:
+  - **[debounce]** timer opóźniający generowanie.
+  - **[ObjectURL]** dla SVG blob (revokowany po pobraniu).
+
+---
+
 ## `PaletteExtractor` (`components/sections/tools/PaletteExtractor.tsx`)
 
 - **Co robi**: Wyciąga dominujące kolory z obrazu i prezentuje je jako paletę z kodami HEX. Każdy kolor można skopiować jednym kliknięciem.
@@ -101,6 +148,8 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 
 ## `MetaTitleDescriptionTool` (`components/sections/tools/MetaTitleDescriptionTool.tsx`)
 
+- **Strona narzędzia**: `/narzedzia/licznik-dlugosci-meta-title-i-description` (`app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`)
+- **Strona instrukcji**: `/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja` (`app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/instrukcja/page.tsx`)
 - **Co robi**: Analizator długości `meta title` i `meta description`.
   - Liczy:
     - **liczbę znaków**,
@@ -144,6 +193,8 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 
 ## `WcagContrastChecker` (`components/sections/tools/WcagContrastChecker.tsx`)
 
+- **Strona narzędzia**: `/narzedzia/tester-kontrastu-kolorow-wcag` (`app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`)
+- **Strona instrukcji**: `/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja` (`app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/instrukcja/page.tsx`)
 - **Co robi**: Tester kontrastu kolorów zgodny z WCAG 2.1.
   - oblicza współczynnik kontrastu `ratio`,
   - ocenia pass/fail dla:
@@ -203,6 +254,8 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 
 ## `FaviconGenerator` (`components/sections/tools/FaviconGenerator.tsx`)
 
+- **Strona narzędzia**: `/narzedzia/darmowy-generator-favicon-ico` (`app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`)
+- **Strona instrukcji**: `/narzedzia/darmowy-generator-favicon-ico/instrukcja` (`app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/instrukcja/page.tsx`)
 - **Co robi**: Generator zestawu favicon.
   - Wspiera wygenerowanie:
     - ikon PNG w wybranych rozmiarach,

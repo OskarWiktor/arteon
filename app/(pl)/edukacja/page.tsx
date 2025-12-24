@@ -7,6 +7,8 @@ import FilterBar from '@/components/sections/blog/FilterBar';
 import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blog';
 import { toAbsoluteUrl } from '@/lib/url';
 
+const EDUKACJA_HERO_IMAGE = '/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp';
+
 export const metadata: Metadata = {
   title: 'Edukacja | Arteon',
   description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
@@ -16,10 +18,9 @@ export const metadata: Metadata = {
     description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
     url: toAbsoluteUrl('/edukacja'),
     type: 'website',
-    // TODO: Add unique OpenGraph image for education/blog page: /assets/og/edukacja.webp (1200x630px)
     images: [
       {
-        url: toAbsoluteUrl('/assets/ogien.webp'),
+        url: toAbsoluteUrl(EDUKACJA_HERO_IMAGE),
         width: 1200,
         height: 630,
         alt: 'Edukacja - Arteon',
@@ -57,7 +58,7 @@ export default function EdukacjaPage() {
         title="Edukacja"
         description="Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci."
         variant="center"
-        backgroundImage="/assets/bg/abstract-bg13.webp"
+        backgroundImage={EDUKACJA_HERO_IMAGE}
         overlay="black"
       />
       <Wrapper>
