@@ -2,6 +2,26 @@
 
 ## 2025-12-24
 
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — generowanie backlogu pomysłów na artykuły**
+
+  - **Zakres audytu**:
+    - Przeanalizowano istniejące artykuły w `data/pl/blog.json` i `BLOG_CATALOG.md`.
+    - Przeanalizowano kategorie z niską liczbą artykułów: Dostępność (1), UX (2), Sklepy (1), Psychologia (0), Druk (3), Strony (4).
+    - Zapoznano się z nowymi wytycznymi INSTRUCTIONS.md (aktualizacja 2025-12-24): 9-14 min czytania, min. 6-8 linków wew., min. 4-6 zew., tooltips, nie-DIY.
+  - **Co zrobiono**:
+    - Dodano 15 nowych pomysłów na artykuły zgodnych z nowymi wytycznymi.
+    - Każdy pomysł zawiera: cel i uzasadnienie, konspekt H2, listę linków wewnętrznych (6-8), zewnętrznych (4-6), SEO (URL/title/description), tooltips, kryteria akceptacji.
+  - **Kategorie wzmocnione**:
+    - Dostępność: 2 (IDEA-090, IDEA-091)
+    - UX: 1 (IDEA-092)
+    - Strony: 3 (IDEA-093, IDEA-102, IDEA-103)
+    - Sklepy: 2 (IDEA-094, IDEA-095)
+    - SEO: 2 (IDEA-096, IDEA-097)
+    - Psychologia: 3 (IDEA-098, IDEA-099, IDEA-104)
+    - Druk: 2 (IDEA-100, IDEA-101)
+  - **Dodane ID**: `IDEA-090`, `IDEA-091`, `IDEA-092`, `IDEA-093`, `IDEA-094`, `IDEA-095`, `IDEA-096`, `IDEA-097`, `IDEA-098`, `IDEA-099`, `IDEA-100`, `IDEA-101`, `IDEA-102`, `IDEA-103`, `IDEA-104`.
+  - **Weryfikacja**: nie wymagana (AUDIT-only).
+
 - ✅ **[IDEA-054] Blog: Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?**
 
   - **Co zrobiono**:

@@ -103,6 +103,12 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Kategorie wzmocnione: Bezpieczeństwo (2), Druk (2), Psychologia (2), Sklepy (2), UX (2), Marketing (2).
     - Dodane ID: `IDEA-078`, `IDEA-079`, `IDEA-080`, `IDEA-081`, `IDEA-082`, `IDEA-083`, `IDEA-084`, `IDEA-085`, `IDEA-086`, `IDEA-087`, `IDEA-088`, `IDEA-089`.
 
+  - **Zrobione 2025-12-24**:
+    - Dodano 15 pomysłów na artykuły zgodnych z nowymi wytycznymi INSTRUCTIONS.md (aktualizacja 2025-12-24).
+    - Kategorie wzmocnione: Dostępność (2), UX (1), Strony (3), Sklepy (2), SEO (2), Psychologia (3), Druk (2).
+    - Wszystkie pomysły zawierają: konspekt H2, min. 6-8 linków wewnętrznych, min. 4-6 zewnętrznych, tooltips dla trudnych terminów, kryteria 9-14 min czytania, ton nie-DIY.
+    - Dodane ID: `IDEA-090`, `IDEA-091`, `IDEA-092`, `IDEA-093`, `IDEA-094`, `IDEA-095`, `IDEA-096`, `IDEA-097`, `IDEA-098`, `IDEA-099`, `IDEA-100`, `IDEA-101`, `IDEA-102`, `IDEA-103`, `IDEA-104`.
+
 - 🟡 **[AUDIT-007] Repo: audyt prawdziwości informacji i źródeł w istniejących artykułach**
 
 - 🟡 **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
@@ -1251,120 +1257,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ❌ **[IDEA-080] Blog: Co powinien zawierać dobry projekt wizytówki firmowej?**
-
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Druk (obecnie 1 artykuł o materiałach drukowanych).
-    - Wizytówki to najpopularniejszy materiał drukowany — temat ma duży potencjał.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Rola wizytówki w kontakcie z klientem
-    - H2: Jakie informacje powinny znaleźć się na wizytówce?
-    - H2: Format i wymiary wizytówki (standardowe vs niestandardowe)
-    - H2: Papier i wykończenie: co wybrać i dlaczego ma znaczenie
-    - H2: Najczęstsze błędy przy projektowaniu wizytówek
-    - H2: Jak przygotować się do zlecenia projektu wizytówki?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/projekty-graficzne/projekt-wizytowki`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/druk/co-powinien-zawierac-dobry-projekt-wizytowki`
-    - `metadata.title`: `Co powinien zawierać dobry projekt wizytówki firmowej? | Arteon`
-    - `metadata.description`: `Dowiedz się, jakie informacje umieścić na wizytówce, jaki format wybrać i na co zwrócić uwagę przy zamawianiu projektu.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, bez DIY).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Druk.
-    - Ulotki to drugi najpopularniejszy materiał drukowany po wizytówkach.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Kiedy ulotka ma sens jako narzędzie marketingowe?
-    - H2: Formaty ulotek i ich zastosowania (DL, A5, A4, składane)
-    - H2: Co powinno znaleźć się na ulotce? (struktura treści)
-    - H2: Jak przyciągnąć uwagę i zachęcić do działania?
-    - H2: Papier i wykończenie: wpływ na odbiór ulotki
-    - H2: Najczęstsze błędy przy projektowaniu ulotek
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/projekty-graficzne/projekt-ulotki`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic`
-    - `/edukacja/grafika/kody-qr-w-materialach-reklamowych`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/druk/jak-przygotowac-skuteczna-ulotke-reklamowa`
-    - `metadata.title`: `Jak przygotować skuteczną ulotkę reklamową dla firmy? | Arteon`
-    - `metadata.description`: `Dowiedz się, jaki format ulotki wybrać, co na niej umieścić i jak zaprojektować ulotkę, która przyciągnie uwagę i zachęci do kontaktu.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, bez DIY).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
-  - Cel i uzasadnienie:
-    - Stworzyć kategorię Psychologia (obecnie 0 artykułów jako primary).
-    - Temat łączy UX z marketingiem i wspiera usługi stron/sklepów.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego zrozumienie użytkownika jest kluczowe dla strony?
-    - H2: Efekt pierwszego wrażenia (pierwsze 3-5 sekund)
-    - H2: Zasada Hicka: jak liczba opcji wpływa na decyzje
-    - H2: Społeczny dowód słuszności: opinie, liczby, logotypy klientów
-    - H2: Strach przed utratą (FOMO) i pilność: kiedy działają, a kiedy irytują
-    - H2: Jak wykorzystać te zasady na stronie firmowej?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/sklepy-internetowe`
-    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
-    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/psychologia/jak-psychologia-wplywa-na-zachowania-uzytkownikow`
-    - `metadata.title`: `Jak psychologia wpływa na zachowania użytkowników na stronie internetowej? | Arteon`
-    - `metadata.description`: `Dowiedz się, jakie mechanizmy psychologiczne wpływają na decyzje użytkowników i jak wykorzystać je na stronie firmowej.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Psychologia.
-    - Temat bezpośrednio wpływa na konwersję i wspiera usługi stron.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Co decyduje o pierwszym wrażeniu na stronie?
-    - H2: Ile czasu masz na przekonanie użytkownika? (dane z badań)
-    - H2: Elementy budujące zaufanie powyżej linii załamania
-    - H2: Sygnały ostrzegawcze: co odstrasza użytkowników
-    - H2: Jak sprawdzić pierwsze wrażenie swojej strony?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
-    - `/edukacja/psychologia/jak-psychologia-wplywa-na-zachowania-uzytkownikow`
-    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/psychologia/efekt-pierwszego-wrazenia-jak-strona-buduje-zaufanie`
-    - `metadata.title`: `Efekt pierwszego wrażenia: jak strona buduje zaufanie w kilka sekund? | Arteon`
-    - `metadata.description`: `Dowiedz się, co decyduje o pierwszym wrażeniu na stronie, ile czasu masz na przekonanie użytkownika i jakie elementy budują zaufanie.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Źródła dla danych z badań (np. Google, Stanford Web Credibility).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
-
 - ❌ **[IDEA-085] Blog: Jak zwiększyć konwersję w sklepie internetowym bez obniżania cen?**
 
   - Cel i uzasadnienie:
@@ -1426,33 +1318,587 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ❌ **[IDEA-087] Blog: Formularze na stronie: jak je projektować, żeby użytkownicy je wypełniali?**
+- ❌ **[IDEA-090] Blog: Co to jest dostępność cyfrowa i kogo dotyczy European Accessibility Act 2025?**
 
   - Cel i uzasadnienie:
-    - Wzmocnić kategorię UX.
-    - Formularze to kluczowy element konwersji — temat praktyczny.
+    - Wzmocnić kategorię Dostępność (obecnie 1 artykuł o kontraście).
+    - Temat aktualny — EAA wchodzi w życie w czerwcu 2025, wiele firm nie wie o obowiązkach.
+    - Artykuł edukuje o przepisach i kieruje do usług Arteon.
   - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
     - Nowy artykuł w `data/pl/blog.json`.
   - Konspekt (H2):
-    - H2: Dlaczego formularze są tak ważne dla strony firmowej?
-    - H2: Ile pól powinien mieć formularz kontaktowy?
-    - H2: Etykiety, placeholdery i komunikaty błędów
-    - H2: Walidacja: jak pomagać, a nie frustrować użytkownika
-    - H2: Przycisk wysyłania i co dzieje się po kliknięciu
-    - H2: Formularze wieloetapowe: kiedy mają sens
+    - H2: Co to jest dostępność cyfrowa i dlaczego ma znaczenie?
+    - H2: European Accessibility Act — co to za przepis i kogo dotyczy?
+    - H2: Jakie wymagania wprowadza EAA dla stron i aplikacji?
+    - H2: Które firmy muszą dostosować się do przepisów?
+    - H2: Co grozi za brak dostępności? (sankcje, odpowiedzialność)
+    - H2: Jak sprawdzić, czy strona spełnia wymagania dostępności?
     - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
+  - Linkowanie wewnętrzne (min. 6-8):
     - `/uslugi/strony-internetowe`
     - `/uslugi/sklepy-internetowe`
-    - `/edukacja/ux/nawigacja-na-stronie-jak-ulatwic-uzytkownikom-znalezienie`
+    - `/narzedzia/tester-kontrastu-kolorow-wcag`
+    - `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
+    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
     - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - European Accessibility Act (EUR-Lex)
+    - Dyrektywa 2016/2102 (EUR-Lex)
+    - Ustawa o dostępności cyfrowej (ISAP)
+    - WCAG 2.1 (W3C)
+    - Ministerstwo Cyfryzacji (dostepnoscplus.gov.pl)
   - SEO:
-    - URL/slug: `/edukacja/ux/formularze-na-stronie-jak-projektowac`
-    - `metadata.title`: `Formularze na stronie: jak je projektować, żeby użytkownicy je wypełniali? | Arteon`
-    - `metadata.description`: `Dowiedz się, ile pól powinien mieć formularz, jak pisać etykiety i komunikaty błędów oraz jak zwiększyć liczbę wypełnień.`
+    - URL/slug: `/edukacja/dostepnosc/co-to-jest-dostepnosc-cyfrowa-european-accessibility-act-2025`
+    - `metadata.title`: `Co to jest dostępność cyfrowa i kogo dotyczy European Accessibility Act 2025? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest dostępność cyfrowa, jakie wymagania wprowadza European Accessibility Act i które firmy muszą dostosować strony do przepisów od 2025 roku.`
   - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 4 linki wewnętrzne + CTA.
+    - Artykuł 9-14 min czytania (1800-2800 słów).
+    - Ton mentorski, nie-DIY — wyjaśnia przepisy, nie instruuje jak samemu wdrożyć.
+    - Tooltips dla: WCAG, EAA, a11y, screen reader.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
     - Sekcja FAQ (min. 4 pytania).
   - Weryfikacja: nie jest wymagana (content-only).
 
+- ❌ **[IDEA-091] Blog: Jak przygotować stronę do obsługi osób niewidomych i słabowidzących?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Dostępność — praktyczny artykuł o a11y.
+    - Duży potencjał long-tail (screen reader, czytnik ekranu, NVDA, VoiceOver).
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Jak osoby niewidome korzystają ze stron internetowych?
+    - H2: Czym jest czytnik ekranu i jak działa?
+    - H2: Struktura nagłówków — dlaczego kolejność H1-H6 ma znaczenie
+    - H2: Teksty alternatywne dla obrazów — co powinien zawierać dobry alt
+    - H2: Formularze dostępne dla czytników ekranu
+    - H2: Nawigacja klawiaturowa — focus, skip links, tabindex
+    - H2: Jak przetestować stronę czytnikiem ekranu?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/strony-internetowe`
+    - `/narzedzia/tester-kontrastu-kolorow-wcag`
+    - `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
+    - `/edukacja/dostepnosc/co-to-jest-dostepnosc-cyfrowa-european-accessibility-act-2025` (gdy powstanie)
+    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - NVDA (nvaccess.org)
+    - VoiceOver (Apple)
+    - WCAG 2.1 — Success Criterion 1.1.1 (W3C)
+    - WebAIM (webaim.org)
+    - axe DevTools
+  - SEO:
+    - URL/slug: `/edukacja/dostepnosc/jak-przygotowac-strone-dla-osob-niewidomych`
+    - `metadata.title`: `Jak przygotować stronę do obsługi osób niewidomych i słabowidzących? | Arteon`
+    - `metadata.description`: `Dowiedz się, jak osoby niewidome korzystają ze stron internetowych, czym jest czytnik ekranu i na co zwrócić uwagę przy projektowaniu dostępnej strony.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski, nie-DIY — wyjaśnia zasady, nie instruuje wdrożenia.
+    - Tooltips dla: screen reader, NVDA, VoiceOver, alt, aria, focus.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-092] Blog: Dlaczego strona internetowa musi działać na telefonie i jak to sprawdzić?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię UX + powiązanie z responsywnością.
+    - Temat fundamentalny — ponad 60% ruchu z mobile.
+    - Artykuł łączy UX z SEO (mobile-first indexing).
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Jak wygląda ruch mobilny w Polsce i na świecie?
+    - H2: Czym jest mobile-first indexing i dlaczego Google indeksuje wersję mobilną?
+    - H2: Najczęstsze problemy stron na telefonie
+    - H2: Jak sprawdzić, czy strona działa poprawnie na mobile?
+    - H2: Na co zwrócić uwagę przy projektowaniu strony mobilnej?
+    - H2: Kiedy zlecić audyt mobilny?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+    - `/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - StatCounter (statcounter.com)
+    - Google Search Central (mobile-first indexing)
+    - Mobile-Friendly Test (Google)
+    - PageSpeed Insights
+  - SEO:
+    - URL/slug: `/edukacja/ux/dlaczego-strona-musi-dzialac-na-telefonie`
+    - `metadata.title`: `Dlaczego strona internetowa musi działać na telefonie i jak to sprawdzić? | Arteon`
+    - `metadata.description`: `Dowiedz się, jaki odsetek użytkowników korzysta z telefonu, czym jest mobile-first indexing i jak sprawdzić, czy strona działa poprawnie na urządzeniach mobilnych.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski, prosty — dane + praktyczne wskazówki.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-093] Blog: Jakie informacje powinny znajdować się na stronie firmy usługowej?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster Strony + wsparcie usługi stron internetowych.
+    - Temat uniwersalny — dotyka każdej firmy usługowej.
+    - Artykuł edukuje o strukturze, nie instruuje budowy strony.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego kompletność informacji wpływa na zaufanie klientów?
+    - H2: Strona główna — co użytkownik musi zrozumieć w pierwszych sekundach
+    - H2: Strona usług — jak opisać ofertę bez żargonu
+    - H2: Strona O nas — jak budować wiarygodność bez pustych fraz
+    - H2: Strona kontaktowa — elementy obowiązkowe i dobre praktyki
+    - H2: Dodatkowe elementy: realizacje, opinie, FAQ, blog
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/tworzenie-tresci`
+    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
+    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+    - `/edukacja/seo/meta-title-i-description-jak-je-napisac`
+    - `/narzedzia/licznik-dlugosci-meta-title-i-description`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Nielsen Norman Group (nngroup.com)
+    - Think with Google
+    - HubSpot (research o stronach firmowych)
+  - SEO:
+    - URL/slug: `/edukacja/strony/jakie-informacje-powinny-byc-na-stronie-firmy-uslugowej`
+    - `metadata.title`: `Jakie informacje powinny znajdować się na stronie firmy usługowej? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie informacje musi zawierać strona firmy usługowej, żeby budować zaufanie klientów i ułatwiać kontakt.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — pokazuje co powinno być, nie jak zrobić samemu.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-094] Blog: Jak wybrać system płatności dla sklepu internetowego?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Sklepy (obecnie mało artykułów).
+    - Temat praktyczny dla każdego właściciela e-commerce.
+    - Linkowanie do usługi sklepów internetowych.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego wybór systemu płatności wpływa na sprzedaż?
+    - H2: Rodzaje systemów płatności: operatorzy, bramki, BLIK, karty
+    - H2: Na co zwrócić uwagę przy wyborze? (prowizje, integracje, wsparcie)
+    - H2: Bezpieczeństwo płatności — certyfikaty, PCI DSS, 3D Secure
+    - H2: Popularne rozwiązania na polskim rynku
+    - H2: Kiedy warto zmienić operatora płatności?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+    - `/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - PCI Security Standards Council
+    - Przelewy24, PayU, Stripe (oficjalne strony)
+    - NBP (dane o płatnościach elektronicznych w Polsce)
+  - SEO:
+    - URL/slug: `/edukacja/sklepy/jak-wybrac-system-platnosci-dla-sklepu-internetowego`
+    - `metadata.title`: `Jak wybrać system płatności dla sklepu internetowego? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie rodzaje systemów płatności są dostępne, na co zwrócić uwagę przy wyborze i jak wpływają na konwersję w sklepie.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — pokazuje co rozważyć, nie jak wdrożyć.
+    - Tooltips dla: PCI DSS, 3D Secure, BLIK, gateway.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-095] Blog: Polityka zwrotów w sklepie internetowym: co musi zawierać i jak wpływa na sprzedaż?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Sklepy.
+    - Temat łączy aspekty prawne, UX i konwersję.
+    - Duży potencjał long-tail (prawo konsumenta, 14 dni, zwroty e-commerce).
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego polityka zwrotów wpływa na decyzje zakupowe?
+    - H2: Co mówi prawo? (ustawa o prawach konsumenta, 14 dni)
+    - H2: Co powinna zawierać dobra polityka zwrotów?
+    - H2: Jak prezentować informacje o zwrotach na stronie sklepu?
+    - H2: Czy wydłużona polityka zwrotów zwiększa sprzedaż?
+    - H2: Najczęstsze błędy w politykach zwrotów
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/sklepy/jak-zwiekszyc-konwersje-w-sklepie-internetowym` (gdy powstanie)
+    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Ustawa o prawach konsumenta (ISAP)
+    - UOKiK
+    - Dyrektywa 2011/83/UE (EUR-Lex)
+    - Badania o wpływie polityki zwrotów na konwersję (Baymard, Narvar)
+  - SEO:
+    - URL/slug: `/edukacja/sklepy/polityka-zwrotow-w-sklepie-internetowym`
+    - `metadata.title`: `Polityka zwrotów w sklepie internetowym: co musi zawierać i jak wpływa na sprzedaż? | Arteon`
+    - `metadata.description`: `Dowiedz się, co musi zawierać polityka zwrotów zgodna z prawem, jak ją prezentować na stronie i jak wpływa na decyzje zakupowe klientów.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia przepisy i dobre praktyki.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-096] Blog: Jak działa algorytm Google i co wpływa na pozycję strony w wynikach wyszukiwania?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster SEO — artykuł fundamentalny o mechanizmach Google.
+    - Duży potencjał ruchu — temat wiecznie aktualny.
+    - Linkowanie do usług pozycjonowania i audytu SEO.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Jak Google indeksuje i ocenia strony internetowe?
+    - H2: Czym są czynniki rankingowe i ile ich jest?
+    - H2: Najważniejsze sygnały jakości strony (E-E-A-T, content, linki)
+    - H2: Core Updates — czym są i jak wpływają na pozycje?
+    - H2: Czego Google oficjalnie szuka na stronach?
+    - H2: Mity o pozycjonowaniu — co nie działa
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/uslugi/marketing/audyt-seo`
+    - `/uslugi/marketing/optymalizacja-seo`
+    - `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Google Search Central
+    - Google Quality Raters Guidelines (PDF)
+    - Ahrefs/Semrush (badania o czynnikach rankingowych)
+    - Google Blog (oficjalne komunikaty o Core Updates)
+  - SEO:
+    - URL/slug: `/edukacja/seo/jak-dziala-algorytm-google`
+    - `metadata.title`: `Jak działa algorytm Google i co wpływa na pozycję strony w wynikach wyszukiwania? | Arteon`
+    - `metadata.description`: `Dowiedz się, jak Google indeksuje i ocenia strony, czym są czynniki rankingowe, E-E-A-T i Core Updates oraz co naprawdę wpływa na pozycję w wyszukiwarce.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia mechanizmy bez obietnic gwarancji.
+    - Tooltips dla: E-E-A-T, Core Update, crawler, indeksacja, PageRank.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-097] Blog: Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster SEO — temat często pomijany przez właścicieli stron.
+    - Bezpośrednio wspiera praktykę budowania klastrów tematycznych.
+    - Linkowanie do usług pozycjonowania i tworzenia treści.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Co to jest linkowanie wewnętrzne i jak działa?
+    - H2: Dlaczego linkowanie wewnętrzne ma znaczenie dla SEO?
+    - H2: Rodzaje linków wewnętrznych (nawigacja, kontekstowe, breadcrumbs)
+    - H2: Co to są klastry tematyczne i jak je budować?
+    - H2: Anchor text — jak pisać tekst linku?
+    - H2: Najczęstsze błędy w linkowaniu wewnętrznym
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/marketing/pozycjonowanie-stron`
+    - `/uslugi/marketing/optymalizacja-seo`
+    - `/uslugi/tworzenie-tresci`
+    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Google Search Central (internal linking)
+    - Moz (internal linking guide)
+    - Ahrefs (cluster content)
+  - SEO:
+    - URL/slug: `/edukacja/seo/czym-jest-linkowanie-wewnetrzne`
+    - `metadata.title`: `Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest linkowanie wewnętrzne, jak wpływa na pozycjonowanie strony i jak budować klastry tematyczne.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia zasady i dobre praktyki.
+    - Tooltips dla: anchor text, klaster tematyczny, PageRank, crawl budget.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-098] Blog: Jak psychologia kolorów wpływa na zachowania użytkowników na stronie?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Psychologia (obecnie brak dedykowanych artykułów).
+    - Rozwinięcie tematu z istniejącego artykułu o kolorystyce i decyzjach zakupowych.
+    - Linkowanie do narzędzi kolorystycznych i usług.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Jak mózg przetwarza kolory i co to oznacza dla stron internetowych?
+    - H2: Znaczenie kolorów w różnych kulturach i kontekstach
+    - H2: Kolory a emocje — co mówią badania?
+    - H2: Jak kolory wpływają na postrzeganie marki?
+    - H2: Kolory przycisków CTA — czy czerwony naprawdę konwertuje lepiej?
+    - H2: Na co zwrócić uwagę przy doborze kolorów?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/narzedzia/generator-palet-kolorow-online`
+    - `/narzedzia/generator-palety-kolorow-z-obrazu`
+    - `/narzedzia/tester-kontrastu-kolorow-wcag`
+    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Badania o psychologii kolorów (Journal of Business Research, Color Research & Application)
+    - Nielsen Norman Group
+    - Colour Affects (Angela Wright)
+  - SEO:
+    - URL/slug: `/edukacja/psychologia/jak-psychologia-kolorow-wplywa-na-zachowania-uzytkownikow`
+    - `metadata.title`: `Jak psychologia kolorów wpływa na zachowania użytkowników na stronie? | Arteon`
+    - `metadata.description`: `Dowiedz się, jak mózg przetwarza kolory, jakie emocje wywołują różne barwy i jak świadomie wykorzystać psychologię kolorów przy projektowaniu strony.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia badania i praktyczne implikacje.
+    - Źródła dla wszystkich danych o psychologii kolorów.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-099] Blog: Jak pierwsze wrażenie o stronie wpływa na decyzje użytkowników?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Psychologia.
+    - Temat łączy UX, design i psychologię — uniwersalny dla wszystkich stron.
+    - Klasyczne badania (50ms first impression) dają mocne argumenty.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Ile czasu użytkownik potrzebuje, żeby ocenić stronę?
+    - H2: Co mózg ocenia w pierwszych sekundach?
+    - H2: Efekt halo — jak pierwsze wrażenie wpływa na dalsze postrzeganie
+    - H2: Zaufanie wizualne — elementy, które budują lub niszczą wiarygodność
+    - H2: Mobile vs desktop — czy pierwsze wrażenie różni się na urządzeniach?
+    - H2: Na co zwrócić uwagę przy projektowaniu strony głównej?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
+    - `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
+    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Badanie 50ms (Behaviour & Information Technology, Lindgaard et al.)
+    - Stanford Web Credibility Research
+    - Nielsen Norman Group (trust and credibility)
+  - SEO:
+    - URL/slug: `/edukacja/psychologia/jak-pierwsze-wrazenie-o-stronie-wplywa-na-decyzje`
+    - `metadata.title`: `Jak pierwsze wrażenie o stronie wpływa na decyzje użytkowników? | Arteon`
+    - `metadata.description`: `Dowiedz się, ile czasu użytkownik potrzebuje na ocenę strony, co mózg analizuje w pierwszych sekundach i jak projektować stronę, która budzi zaufanie.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia badania i daje praktyczne wskazówki.
+    - Źródła dla badań o pierwszym wrażeniu.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-100] Blog: Jak prawidłowo przygotować materiały do druku? Rozdzielczość, spaddy, kolory CMYK**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Druk — temat praktyczny dla wszystkich projektów drukowanych.
+    - Artykuł edukuje o wymaganiach, nie instruuje jak projektować samemu.
+    - Linkowanie do usług projektów graficznych.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego przygotowanie pliku do druku wymaga wiedzy technicznej?
+    - H2: Rozdzielczość — co to jest DPI i ile powinno być dla druku?
+    - H2: Spaddy (bleed) — czym są i dlaczego drukarnia ich wymaga?
+    - H2: Przestrzenie kolorów — RGB vs CMYK i co się dzieje przy konwersji
+    - H2: Fonty i krzywe — dlaczego tekst może wyglądać inaczej po druku?
+    - H2: Formaty plików — PDF, TIFF, EPS i ich zastosowanie
+    - H2: Na co zwrócić uwagę przy odbiorze projektu od grafika?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/projekty-graficzne/projekt-wizytowki`
+    - `/uslugi/projekty-graficzne/projekt-ulotki`
+    - `/uslugi/projekty-graficzne/projekt-katalogu`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Adobe (color management)
+    - Printing Industry Standards (Fogra, ISO 12647)
+  - SEO:
+    - URL/slug: `/edukacja/druk/jak-przygotowac-materialy-do-druku`
+    - `metadata.title`: `Jak prawidłowo przygotować materiały do druku? Rozdzielczość, spaddy, kolory CMYK | Arteon`
+    - `metadata.description`: `Dowiedz się, czym są DPI, spaddy i CMYK, dlaczego mają znaczenie dla druku i na co zwrócić uwagę przy odbiorze projektu od grafika.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia wymagania, nie instruuje jak projektować.
+    - Tooltips dla: DPI, bleed, CMYK, RGB, bezier, PDF/X.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-101] Blog: Wizytówka firmowa: co powinna zawierać i jakie są standardowe wymiary?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Druk + klaster projektów graficznych.
+    - Temat wiecznie aktualny — wizytówka to podstawowy materiał firmowy.
+    - Linkowanie do usługi projektowania wizytówek.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Czy wizytówki są jeszcze potrzebne w erze cyfrowej?
+    - H2: Standardowe wymiary wizytówek w Polsce i na świecie
+    - H2: Co powinna zawierać dobra wizytówka firmowa?
+    - H2: Papier i wykończenie — jak wpływają na odbiór?
+    - H2: Wizytówka jednostronna czy dwustronna?
+    - H2: Najczęstsze błędy przy projektowaniu wizytówek
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/projekty-graficzne/projekt-wizytowki`
+    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+    - `/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic`
+    - `/edukacja/druk/jak-przygotowac-materialy-do-druku` (gdy powstanie)
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - ISO 7810 (standardy wymiarów kart)
+    - Badania o percepcji materiałów drukowanych
+  - SEO:
+    - URL/slug: `/edukacja/druk/wizytowka-firmowa-co-powinna-zawierac`
+    - `metadata.title`: `Wizytówka firmowa: co powinna zawierać i jakie są standardowe wymiary? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie są standardowe wymiary wizytówek, co powinna zawierać dobra wizytówka firmowa i na co zwrócić uwagę przy zamawianiu projektu.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia standardy i dobre praktyki.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-102] Blog: Jak wygląda proces tworzenia strony internetowej krok po kroku?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster Strony — artykuł demistyfikuje proces dla potencjalnych klientów.
+    - Temat redukuje niepewność przed zleceniem projektu.
+    - Linkowanie do usług stron i kontaktu.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego warto znać etapy tworzenia strony przed zleceniem projektu?
+    - H2: Etap 1: Brief i analiza potrzeb
+    - H2: Etap 2: Strategia i struktura strony
+    - H2: Etap 3: Projekt graficzny (UX/UI)
+    - H2: Etap 4: Wdrożenie i programowanie
+    - H2: Etap 5: Testy i poprawki
+    - H2: Etap 6: Publikacja i przekazanie
+    - H2: Co dzieje się po uruchomieniu strony?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
+    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
+    - `/edukacja/strony/jakie-informacje-powinny-byc-na-stronie-firmy-uslugowej` (gdy powstanie)
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Nielsen Norman Group (UX process)
+    - Google Web Fundamentals
+  - SEO:
+    - URL/slug: `/edukacja/strony/jak-wyglada-proces-tworzenia-strony-internetowej`
+    - `metadata.title`: `Jak wygląda proces tworzenia strony internetowej krok po kroku? | Arteon`
+    - `metadata.description`: `Dowiedz się, jakie etapy obejmuje tworzenie strony internetowej, czego możesz oczekiwać na każdym kroku i jak przygotować się do współpracy.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia proces, nie instruuje jak zrobić stronę samemu.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-103] Blog: Czym jest hosting i jak wpływa na działanie strony internetowej?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić klaster Strony — temat fundamentalny, często niezrozumiany.
+    - Rozwinięcie istniejącego artykułu o domenach i hostingu.
+    - Linkowanie do usług stron internetowych.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Co to jest hosting i jak działa?
+    - H2: Rodzaje hostingu: shared, VPS, dedykowany, cloud
+    - H2: Jak hosting wpływa na szybkość strony?
+    - H2: Czym jest uptime i dlaczego 99,9% to nie 100%?
+    - H2: Bezpieczeństwo hostingu — certyfikaty, kopie zapasowe, ochrona DDoS
+    - H2: Na co zwrócić uwagę przy wyborze hostingu?
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/strony-internetowe`
+    - `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+    - `/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+    - `/edukacja/bezpieczenstwo/kopie-zapasowe-strony-dlaczego-sa-wazne` (gdy powstanie)
+    - `/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej`
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - Google Web Vitals (wpływ serwera na LCP)
+    - Cloudflare (wyjaśnienie CDN)
+    - HostingAdvice / WebsiteSetup (porównania)
+  - SEO:
+    - URL/slug: `/edukacja/strony/czym-jest-hosting-jak-wplywa-na-dzialanie-strony`
+    - `metadata.title`: `Czym jest hosting i jak wpływa na działanie strony internetowej? | Arteon`
+    - `metadata.description`: `Dowiedz się, czym jest hosting, jakie są jego rodzaje, jak wpływa na szybkość i bezpieczeństwo strony oraz na co zwrócić uwagę przy wyborze.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia techniczne aspekty prostym językiem.
+    - Tooltips dla: VPS, uptime, CDN, DDoS, SSL, LCP.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[IDEA-104] Blog: Jak opinie klientów wpływają na zaufanie i sprzedaż?**
+
+  - Cel i uzasadnienie:
+    - Wzmocnić kategorię Psychologia + Marketing.
+    - Temat uniwersalny — opinie wpływają na wszystkie branże.
+    - Linkowanie do usług stron, sklepów i kontaktu.
+  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
+    - Nowy artykuł w `data/pl/blog.json`.
+  - Konspekt (H2):
+    - H2: Dlaczego opinie innych ludzi wpływają na nasze decyzje?
+    - H2: Social proof — co to jest i jak działa w internecie?
+    - H2: Gdzie zbierać opinie? (Google, Facebook, własna strona, platformy branżowe)
+    - H2: Jak prezentować opinie na stronie?
+    - H2: Jak reagować na negatywne opinie?
+    - H2: Opinie a SEO — wpływ na widoczność w wyszukiwarce
+    - H2: Podsumowanie + CTA
+  - Linkowanie wewnętrzne (min. 6-8):
+    - `/uslugi/strony-internetowe`
+    - `/uslugi/sklepy-internetowe`
+    - `/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+    - `/edukacja/psychologia/jak-pierwsze-wrazenie-o-stronie-wplywa-na-decyzje` (gdy powstanie)
+    - `/kontakt`
+  - Linkowanie zewnętrzne (min. 4-6):
+    - BrightLocal (Local Consumer Review Survey)
+    - Spiegel Research Center (badania o opiniach)
+    - Google Business Profile Help
+  - SEO:
+    - URL/slug: `/edukacja/psychologia/jak-opinie-klientow-wplywaja-na-zaufanie-i-sprzedaz`
+    - `metadata.title`: `Jak opinie klientów wpływają na zaufanie i sprzedaż? | Arteon`
+    - `metadata.description`: `Dowiedz się, dlaczego opinie innych ludzi wpływają na decyzje zakupowe, gdzie zbierać recenzje i jak prezentować je na stronie.`
+  - Kryteria akceptacji:
+    - Artykuł 9-14 min czytania.
+    - Ton mentorski — wyjaśnia psychologię i dobre praktyki.
+    - Tooltips dla: social proof, UGC, review schema.
+    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
+    - Sekcja FAQ (min. 4 pytania).
+  - Weryfikacja: nie jest wymagana (content-only).
