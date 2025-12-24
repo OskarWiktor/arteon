@@ -453,6 +453,8 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - W schema (logo/publisher/image) używane są absolutne URL-e do ikon.
     - `npm run lint` i `npm run build` przechodzą.
 
+- ✅ **[SEO-022] Ahrefs Web Analytics: dodać snippet + podpiąć pod cookie consent (zgodność prawna)** — DONE 2024-12-24
+
 - ❌ **[PERF-001] Assets: odchudzić największe obrazy w `public/assets/**` (bez zmiany wyglądu)\*\*
 
   - Pliki (największe):

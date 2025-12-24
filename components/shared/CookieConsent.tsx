@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Button from '../ui/buttons/Button';
+import { loadAhrefs } from '@/lib/consent/ahrefs';
 import { loadGA } from '@/lib/consent/ga';
 import { updateGtagConsent } from '@/lib/consent/gtag';
 import { readConsent, writeConsent } from '@/lib/consent/storage';
@@ -75,7 +76,10 @@ export default function CookieConsent() {
     if (saved) {
       updateGtag(saved.analytics);
       // zakładam, że gdzieś globalnie masz zdefiniowane window.__GA_ID
-      if (saved.analytics) loadGA(window.__GA_ID);
+      if (saved.analytics) {
+        loadGA(window.__GA_ID);
+        loadAhrefs();
+      }
       setVisible(false);
     } else {
       setVisible(true);
@@ -91,7 +95,10 @@ export default function CookieConsent() {
       updatedAt: new Date().toISOString(),
     });
     updateGtag(next.analytics);
-    if (next.analytics) loadGA(window.__GA_ID);
+    if (next.analytics) {
+      loadGA(window.__GA_ID);
+      loadAhrefs();
+    }
 
     setVisible(false);
     setPanel(false);

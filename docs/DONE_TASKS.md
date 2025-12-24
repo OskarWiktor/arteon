@@ -2,6 +2,18 @@
 
 ## 2025-12-24
 
+- ✅ **[SEO-022] Ahrefs Web Analytics: dodać snippet + podpiąć pod cookie consent**
+
+  - **Co zrobiono**:
+    - Utworzono `lib/consent/ahrefs.ts` z funkcją `loadAhrefs()` ładującą skrypt Ahrefs (analogicznie do `loadGA`).
+    - Zmodyfikowano `components/shared/CookieConsent.tsx` — Ahrefs ładowany jest razem z GA po wyrażeniu zgody na analitykę.
+    - Zaktualizowano politykę prywatności (`app/(pl)/polityka-prywatnosci/page.tsx`) — dodano Ahrefs Web Analytics do listy narzędzi analitycznych i odbiorców danych.
+  - **Pliki**:
+    - `lib/consent/ahrefs.ts` (nowy)
+    - `components/shared/CookieConsent.tsx`
+    - `app/(pl)/polityka-prywatnosci/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+
 - ✅ **[SEO-021] Meta title: skrócić za długie tytuły i wydłużyć za krótkie (Ahrefs audit)**
 
   - **Źródło**: Ahrefs Site Audit — wykryto 20 stron z za długim meta title (>70 zn.) i 3 strony z za krótkim (<30 zn.).

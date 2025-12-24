@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>dane podane w formularzu kontaktowym (imię, nazwisko, e-mail, treść wiadomości),</li>
               <li>dane techniczne zbierane automatycznie (adres IP, informacje o urządzeniu, pliki cookie),</li>
-              <li>dane analityczne z Google Analytics 4 i Vercel Analytics,</li>
+              <li>dane analityczne z Google Analytics 4, Ahrefs Web Analytics i Vercel Analytics,</li>
               <li>logi serwera i zdarzeń bezpieczeństwa (np. znaczniki czasu, adres IP, nagłówki żądania).</li>
             </ul>
           </SectionInfo>
@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
             <p>Strona wykorzystuje pliki cookie w celu:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>zapewnienia prawidłowego działania serwisu,</li>
-              <li>analizy ruchu (Google Analytics 4, Vercel Analytics),</li>
+              <li>analizy ruchu (Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics),</li>
               <li>celów marketingowych.</li>
             </ul>
             <p>Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki. Ograniczenie plików cookie może wpłynąć na niektóre funkcje serwisu.</p>
@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
             <p>Dane mogą być przekazywane podmiotom wspierającym nas w świadczeniu usług, takim jak:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>dostawcy hostingu/aplikacji (np. Vercel),</li>
-              <li>dostawcy narzędzi analitycznych (Google Ireland Ltd., Vercel Inc.),</li>
+              <li>dostawcy narzędzi analitycznych (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc.),</li>
               <li>biuro rachunkowe, podmioty obsługujące płatności lub prawo - jeśli zajdzie taka potrzeba.</li>
             </ul>
             <p>Wszyscy odbiorcy przetwarzają dane zgodnie z RODO na podstawie odpowiednich umów.</p>
