@@ -2,6 +2,46 @@
 
 ## 2025-12-25
 
+- ✅ **[EEAT-010] Przepisanie według nowych standardów: Materiały drukowane dla firmy**
+
+  - **Co zrobiono**:
+    - Przepisano artykuł od zera według nowych standardów jakości
+    - Dodano sekcję "Mechanizm psychologiczny" z badaniami (ScienceDirect, MarketingProfs, JSTOR)
+    - Dodano sekcję "Przykłady z różnych branż" (gabinet stomatologiczny, kancelaria prawna, sklep B2B)
+    - Dodano sekcję "Papiery i wykończenia" z tooltips (gramatura, retencja)
+    - Dodano sekcję "Spójność materiałów a brand recognition" z badaniem Lucidpress
+    - 8 linków wewnętrznych, 5 linków zewnętrznych, 5 tooltips
+    - Czas czytania: 9 min (1767 słów)
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK
+
+- ✅ **[EEAT-019] Przepisanie według nowych standardów: Optymalizacja zdjęć na stronę WWW**
+
+  - **Co zrobiono**:
+    - Rozbudowano intro z linkiem do strony-internetowe
+    - Dodano sekcję AVIF z danymi Netflix (50% lżejszy niż JPEG)
+    - Dodano sekcję "Responsive images — srcset i lazy loading" z tooltips
+    - Rozbudowano sekcję SEO z linkami do pozycjonowanie i sklepy-internetowe
+    - 7 linków wewnętrznych, 8 linków zewnętrznych, 3 tooltips
+    - Czas czytania: 9 min (1774 słów)
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK
+
+- ✅ **[EEAT-020] Przepisanie według nowych standardów: Identyfikacja wizualna a zaufanie klientów**
+
+  - **Co zrobiono**:
+    - Przepisano artykuł od zera według nowych standardów jakości
+    - Dodano intro z linkami wewnętrznymi (strony, materiały drukowane)
+    - Dodano sekcję "Logo jako punkt rozpoznawalny" z badaniem Journal of Product & Brand Management
+    - Dodano sekcję "Przykłady z różnych branż" (gabinet, kancelaria, e-commerce)
+    - Dodano sekcję "Punkty styku z klientem" z listą touchpointów
+    - Dodano sekcję "Fluencja poznawcza" z badaniem Journal of Consumer Psychology
+    - Dodano sekcję "Najczęstsze błędy w identyfikacji wizualnej"
+    - 10 linków wewnętrznych, 4 linki zewnętrzne, 2 tooltips
+    - Czas czytania: 9 min (1661 słów)
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK
+
 - ✅ **[EEAT-018] Przepisanie: Czy lokalne firmy potrzebują bloga na stronie?**
 
   - **Co zrobiono**:
