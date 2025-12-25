@@ -641,18 +641,6 @@ Zadania EEAT to NIE "dopisywanie treści do istniejącego artykułu". To **przep
     - Linkowanie do usług pozycjonowania i audytu SEO.
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ❌ **[EEAT-007] Rozbudowa: Czym jest responsywność strony i dlaczego ma znaczenie?**
-
-  - Slug: `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
-  - Obecny czas czytania: **6 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej szczegółów o mobile-first indexing.
-    - Rozbudować sekcję o testowaniu responsywności.
-    - Dodać przykłady problemów i ich rozwiązań.
-    - Linkowanie do usług stron internetowych i UX.
-  - Weryfikacja: nie jest wymagana (content-only).
-
 - ❌ **[EEAT-008] Rozbudowa: Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?**
 
   - Slug: `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
@@ -713,29 +701,6 @@ Zadania EEAT to NIE "dopisywanie treści do istniejącego artykułu". To **przep
     - Linkowanie do generatora stopki mailowej Arteon.
   - Weryfikacja: nie jest wymagana (content-only).
 
-- ❌ **[EEAT-014] Rozbudowa: Favicon: co to za ikona, jak ją stworzyć i przygotować?**
-
-  - Slug: `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`
-  - Obecny czas czytania: **6 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej szczegółów o formatach i rozmiarach.
-    - Rozbudować sekcję o PWA i manifest.json.
-    - Dodać wskazówki o testowaniu w różnych przeglądarkach.
-    - Linkowanie do generatora favicon Arteon.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-015] Rozbudowa: FAQ na stronie: jak pisać pytania wspierające SEO?**
-
-  - Slug: `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`
-  - Obecny czas czytania: **6 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej przykładów pytań dla różnych branż.
-    - Rozbudować sekcję o FAQ schema i rich snippets.
-    - Dodać wskazówki o organizacji i nawigacji FAQ.
-    - Linkowanie do usług tworzenia treści i SEO.
-  - Weryfikacja: nie jest wymagana (content-only).
 
 ---
 

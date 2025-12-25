@@ -2,6 +2,49 @@
 
 ## 2025-12-25
 
+- ✅ **[EEAT-007] Przepisanie według nowych standardów: Czym jest responsywność strony i dlaczego ma znaczenie?**
+
+  - **Co zrobiono**:
+    - Rozbudowano artykuł według nowych standardów jakości
+    - Dodano sekcję "Mechanizm działania: media queries" z wyjaśnieniem technicznym
+    - Dodano sekcję "Elastyczne jednostki zamiast stałych pikseli" z tooltips (viewport, vw, vh)
+    - Dodano sekcję "Psychologia użytkownika mobilnego"
+    - Dodano sekcję "Core Web Vitals i responsywność" z tooltips (LCP, FID, CLS)
+    - Dodano sekcję "Responsywność w różnych branżach" (restauracje, e-commerce, usługi lokalne, B2B)
+    - Dodano sekcję "Responsywność a wydajność strony" (srcset, lazy loading)
+    - 7 linków wewnętrznych, 6 linków zewnętrznych, 6 tooltips
+    - Czas czytania: 10 min (1811 słów)
+    - FAQ rozbudowane do 7 pytań
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK
+
+- ✅ **[EEAT-014] Przepisanie według nowych standardów: Favicon - co to za ikona?**
+
+  - **Co zrobiono**:
+    - Rozbudowano artykuł według nowych standardów jakości
+    - Dodano sekcję "Jak przeglądarka wybiera właściwy plik?" z wyjaśnieniem mechanizmu
+    - Rozbudowano sekcję "Najczęstsze błędy" z rozwiązaniami (6 błędów z wyjaśnieniem dlaczego występują)
+    - Dodano sekcję "Favicon a SEO i wydajność strony" z Lighthouse
+    - 6 linków wewnętrznych, 2 linki zewnętrzne, 4 tooltips (favicon, Lighthouse, ICO, PWA)
+    - Czas czytania: 10 min (1808 słów)
+    - FAQ rozbudowane do 9 pytań
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK
+
+- ✅ **[EEAT-015] Przepisanie według nowych standardów: FAQ na stronie - jak pisać pytania wspierające SEO?**
+
+  - **Co zrobiono**:
+    - Rozbudowano artykuł według nowych standardów jakości
+    - Dodano sekcję "Jak FAQ wspiera SEO?" i "Jak FAQ wspiera konwersję?" z mechanizmami
+    - Rozbudowano sekcję "Jak pisać odpowiedzi" z przykładami i strukturą
+    - Dodano sekcję "FAQ w różnych branżach" (B2B, e-commerce, usługi lokalne)
+    - Dodano sekcję "FAQ schema" z linkiem do Google Search Central
+    - 7 linków wewnętrznych, 4 linki zewnętrzne, 3 tooltips (long-tail, FAQPage)
+    - Czas czytania: 10 min (1832 słów)
+    - FAQ rozbudowane do 7 pytań
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK
+
 - ✅ **[EEAT-010] Przepisanie według nowych standardów: Materiały drukowane dla firmy**
 
   - **Co zrobiono**:
