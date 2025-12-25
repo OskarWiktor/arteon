@@ -340,6 +340,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
             <div className="text-light mt-5 flex flex-wrap items-center gap-2 text-sm md:gap-4">
               {article.author?.name ? <Badge text={article.author.name} /> : null}
               {article.datePublished ? <Badge text={`Publikacja: ${article.datePublished}`} /> : null}
+              {article.dateModified && article.dateModified !== article.datePublished ? <Badge text={`Aktualizacja: ${article.dateModified}`} /> : null}
               {article.readingTime ? <Badge text={`${article.readingTime} min czytania`} /> : null}
               {article.category?.map((c) => <Badge key={c} text={c} />)}
             </div>

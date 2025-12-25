@@ -1,5 +1,111 @@
 # DONE_TASKS
 
+## 2025-12-25
+
+- ✅ **[EEAT-018] Przepisanie: Czy lokalne firmy potrzebują bloga na stronie?**
+
+  - **Co zrobiono**:
+    - Przepisano artykuł według nowych standardów jakości.
+    - Dodano sekcje wyjaśniające MECHANIZMY:
+      - Jak Google ocenia strony lokalnych firm (sygnały wiarygodności)
+      - Topical authority — autorytet tematyczny
+      - Jak blog wpływa na pozycję w Google Maps (z przykładem warsztatu)
+      - Kiedy blog NIE ma sensu (brak zasobów, brak pytań informacyjnych, potrzeba szybkich wyników)
+    - Dodano FAQ (5 pytań).
+    - Dodano tooltips: Google Business Profile, topical authority.
+    - Czas czytania: 7 min (1205 słów).
+    - Linki wewnętrzne: pozycjonowanie stron, kontakt.
+    - Linki zewnętrzne: BrightLocal, Ahrefs, Neil Patel.
+  - **Pliki**:
+    - `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK.
+
+- ✅ **[EEAT-017] Przepisanie od zera: Ile czasu trwa pozycjonowanie strony firmowej?**
+
+  - **Co zrobiono**:
+    - Przepisano kluczowe sekcje artykułu według nowych standardów jakości.
+    - Dodano sekcje wyjaśniające MECHANIZMY:
+      - Dlaczego SEO wymaga czasu (crawling, indeksowanie, ocena jakości)
+      - Autorytet domeny (dlaczego nowe strony potrzebują więcej czasu, badanie Ahrefs o wieku stron w Top10)
+      - Realne terminy w różnych branżach z uzasadnieniem DLACZEGO się różnią
+      - Co przyspiesza efekty SEO (audyt techniczny, linkowanie wewnętrzne, aktualizacja treści)
+    - Dodano tooltips: Googlebot, DA/DR, GBP, E-E-A-T, klaster tematyczny.
+    - Czas czytania: 10 min (1989 słów).
+    - Linki wewnętrzne: audyt SEO, pozycjonowanie stron, linkowanie wewnętrzne, kontakt.
+    - Linki zewnętrzne: Google Search Central, Ahrefs, BrightLocal, Semrush, Google Search Console.
+  - **Pliki**:
+    - `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK.
+
+- ✅ **[EEAT-016] Przepisanie od zera: Jak kolorystyka wpływa na decyzje zakupowe klientów?**
+
+  - **Co zrobiono**:
+    - Przepisano artykuł OD ZERA według nowych standardów jakości (wzorzec: artykuł o linkowaniu wewnętrznym).
+    - Usunięto problemy starego artykułu: powtarzające się statystyki, listy bez narracji, powierzchowne omówienie, ton DIY.
+    - Nowa struktura artykułu (10 min czytania):
+      - Jak mózg przetwarza kolory (mechanizmy, ciało migdałowate, ewolucja)
+      - Mechanizmy psychologiczne (pobudzenie fizjologiczne, skojarzenia kulturowe, oczekiwania branżowe)
+      - Kolorystyka w różnych branżach (finanse, medycyna, gastronomia, technologia, luksus) — z uzasadnieniem wyborów
+      - Testy A/B kolorów — analiza DLACZEGO zadziałały (HubSpot, SAP, Beamax) z wnioskiem o kontraście
+      - Kolor a kontrast i dostępność (WCAG, daltonizm)
+    - Dodano tooltips: ciało migdałowate, CTA, WCAG.
+    - FAQ (5 pytań z pogłębionymi odpowiedziami).
+    - Linki wewnętrzne: identyfikacja wizualna, strony internetowe, sklepy internetowe, kontrast kolorów, tester kontrastu WCAG, generator palet, kontakt.
+    - Linki zewnętrzne: Management Decision (Singh 2006), Journal of Business Research (Bellizzi & Hite), Journal of Academy of Marketing Science (Labrecque & Milne), HubSpot, WiderFunnel, VWO.
+  - **Dodano instrukcję do TASKS.md**: Wszystkie zadania EEAT muszą być przepisywane od zera według nowych standardów.
+  - **Pliki**:
+    - `data/pl/blog.json`
+    - `docs/TASKS.md` (dodano krytyczną instrukcję dla EEAT)
+  - **Weryfikacja**: JSON OK.
+
+- ✅ **[EEAT-017] Rozbudowa: Ile czasu trwa pozycjonowanie strony firmowej?**
+
+  - **Co zrobiono**:
+    - Rozbudowano artykuł z 4 min do 11 min czytania (~2200 słów).
+    - Dodano nowe sekcje:
+      - Czas SEO w różnych branżach (usługi lokalne, gabinety medyczne, e-commerce, B2B)
+      - Co przyspiesza efekty SEO (audyt techniczny, optymalizacja treści, klastry tematyczne, dane strukturalne)
+      - Jak mierzyć postępy SEO (Google Search Console, kolejność zmian)
+      - Najczęstsze błędy opóźniające efekty SEO
+    - Dodano FAQ (5 pytań): czas dla nowej strony, SEO lokalne, przyspieszanie efektów, mierzenie postępów, brak efektów.
+    - Rozbudowano podsumowanie z linkami do usług.
+    - Dodano linki wewnętrzne: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`, `/edukacja/seo/jak-pisac-tresci-ktore-pozycjonuja-sie-w-google-praktyczny-poradnik`, `/kontakt`.
+    - Dodano linki zewnętrzne: Semrush Site Audit, Google Search Console, Google structured data.
+    - Dodano tooltips: GBP, klaster tematyczny.
+    - Zaktualizowano `dateModified` na 2025-12-25.
+  - **Pliki**:
+    - `data/pl/blog.json`
+    - `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: nie wymagana (content-only).
+
+- ✅ **[UI-XXX] Strony artykułów: dodać wyświetlanie daty ostatniej edycji**
+
+  - **Co zrobiono**:
+    - Dodano Badge z datą aktualizacji (`dateModified`) obok daty publikacji na stronach artykułów.
+    - Badge wyświetla się tylko gdy `dateModified` różni się od `datePublished`.
+  - **Pliki**:
+    - `app/(pl)/edukacja/[category]/[slug]/page.tsx`
+  - **Weryfikacja**: nie wymagana (drobna zmiana UI).
+
+- ✅ **[EEAT-016] Rozbudowa: Jak kolorystyka wpływa na decyzje zakupowe klientów?**
+
+  - **Co zrobiono**:
+    - Rozbudowano artykuł z 4 min do 11 min czytania (~2200 słów).
+    - Dodano nowe sekcje:
+      - Kolorystyka w e-commerce (kolor a zaufanie, kolor przycisku, kolor tła strony produktowej)
+      - Testy A/B kolorów (SAP, Ript Apparel, HubSpot/Performable, Beamax)
+      - Psychologia kolorów - pogłębione badania naukowe (Singh 2006, Labrecque & Milne 2012, Bellizzi & Hite 1992)
+      - Narzędzia do pracy z kolorami (linki do narzędzi Arteon)
+    - Dodano FAQ (4 pytania): najlepszy kolor przycisku, psychologia kolorów w różnych krajach, ile kolorów w palecie, jak sprawdzić czytelność.
+    - Rozbudowano podsumowanie z linkami do usług.
+    - Dodano 10+ linków wewnętrznych: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, `/narzedzia/generator-palet-kolorow-online`, `/narzedzia/generator-palety-kolorow-z-obrazu`, `/narzedzia/tester-kontrastu-kolorow-wcag`, `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/kontakt`.
+    - Dodano 10+ linków zewnętrznych z nowymi źródłami: Neil Patel, VWO, WiderFunnel, Emerald, Springer, ScienceDirect.
+    - Zaktualizowano `dateModified` na 2025-12-25.
+  - **Pliki**:
+    - `data/pl/blog.json`
+    - `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: nie wymagana (content-only).
+
 ## 2025-12-24
 
 - ✅ **[UI-001] Usługi: dodać karuzele powiązanych artykułów na stronach usługowych**

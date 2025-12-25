@@ -718,6 +718,257 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
 ---
 
+## Zadania: Rozbudowa artykułów (EEAT)
+
+**Cel:** Rozszerzyć istniejące artykuły do min. 9-14 minut czytania (1800-2800 słów), aby zwiększyć EEAT i głębię tematyczną zgodnie z wytycznymi w `INSTRUCTIONS.md`.
+
+**⚠️ KRYTYCZNA INSTRUKCJA: PRZEPISYWANIE OD ZERA**
+
+Zadania EEAT to NIE "dopisywanie treści do istniejącego artykułu". To **przepisanie artykułu od zera** według aktualnych standardów jakości. Wzorcem jest artykuł `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony` (opublikowany 2025-12-25).
+
+**Problemy starych artykułów, których należy unikać:**
+- Powtarzające się statystyki i informacje w różnych sekcjach
+- Listy punktowane bez narracji i wyjaśnienia mechanizmów
+- Powierzchowne omówienie (CO zamiast JAK i DLACZEGO)
+- Ton DIY ("jak to zrobić samemu")
+- Generyczne frazy ("buduje zaufanie", "zwiększa konwersję") bez wyjaśnienia
+- Brak konkretnych przykładów branżowych
+
+**Co musi zawierać nowy artykuł:**
+- Wyjaśnienie MECHANIZMÓW — nie tylko CO, ale JAK i DLACZEGO coś działa
+- Konkretne przykłady z różnych branż (kancelaria prawna, gabinet stomatologiczny, sklep internetowy — NIE z branży Arteon)
+- Płynna narracja zamiast list punktowanych
+- Tooltips/abbr dla terminów technicznych z natychmiastowym wyjaśnieniem
+- Źródła z linkami dla wszystkich danych i badań
+- Analiza testów A/B z wyjaśnieniem DLACZEGO zadziałały (kontekst, nie sam wynik)
+
+**Wytyczne rozbudowy:**
+- Min. 6-8 linków wewnętrznych, min. 4-6 linków zewnętrznych.
+- Rozbudować FAQ (min. 4-5 pytań z pogłębionymi odpowiedziami).
+- Dodać Tooltipy dla trudnych terminów.
+- Zachować ton marki (przyjazny, mentorski, bez żargonu).
+- Wszystkie dane/statystyki muszą mieć źródło z linkiem.
+
+---
+
+- ❌ **[EEAT-001] Rozbudowa: Czym jest content marketing i jak może pomóc Twojej firmie?**
+
+  - Slug: `czym-jest-content-marketing`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów zastosowania content marketingu w różnych branżach.
+    - Rozbudować sekcję o mierzeniu efektów (ROI, KPI).
+    - Dodać porównanie content marketing vs tradycyjna reklama.
+    - Wzmocnić linkowanie wewnętrzne (usługi, narzędzia, inne artykuły).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-002] Rozbudowa: Co sprawdzić przed uruchomieniem strony internetowej?**
+
+  - Slug: `co-sprawdzic-przed-uruchomieniem-strony`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o testach technicznych (Core Web Vitals, mobile).
+    - Rozbudować sekcję o bezpieczeństwie (SSL, backup, RODO).
+    - Dodać checklistę SEO przed publikacją.
+    - Wzmocnić linkowanie do usług i narzędzi Arteon.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-003] Rozbudowa: Jak przygotować grafikę do postów w mediach społecznościowych?**
+
+  - Slug: `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o formatach i wymiarach dla różnych platform.
+    - Rozbudować sekcję o typografii i czytelności.
+    - Dodać wskazówki dotyczące spójności wizualnej z marką.
+    - Linkowanie do narzędzi Arteon (kadrowanie, palety kolorów).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-004] Rozbudowa: Jak wybrać domenę i hosting dla strony firmowej?**
+
+  - Slug: `jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej kryteriów wyboru hostingu (SSL, backup, wsparcie).
+    - Rozbudować sekcję o domenach (rozszerzenia, polskie znaki, SEO).
+    - Dodać porównanie typów hostingu (shared vs VPS vs dedykowany).
+    - Wzmocnić linkowanie do usług stron internetowych.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-005] Rozbudowa: Jak mierzyć skuteczność strony internetowej?**
+
+  - Slug: `jak-mierzyc-skutecznosc-strony-internetowej`
+  - Obecny czas czytania: **6 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej metryk (bounce rate, session duration, conversion rate).
+    - Rozbudować sekcję o narzędziach analitycznych (GA4, GSC, Hotjar).
+    - Dodać praktyczne przykłady interpretacji danych.
+    - Linkowanie do usług analityki i optymalizacji SEO.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-006] Rozbudowa: Jak założyć i zoptymalizować profil Google Moja Firma?**
+
+  - Slug: `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o optymalizacji zdjęć i postów.
+    - Rozbudować sekcję o opiniach i odpowiadaniu na recenzje.
+    - Dodać wskazówki o local SEO i wpływie na widoczność.
+    - Linkowanie do usług pozycjonowania i audytu SEO.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-007] Rozbudowa: Czym jest responsywność strony i dlaczego ma znaczenie?**
+
+  - Slug: `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+  - Obecny czas czytania: **6 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o mobile-first indexing.
+    - Rozbudować sekcję o testowaniu responsywności.
+    - Dodać przykłady problemów i ich rozwiązań.
+    - Linkowanie do usług stron internetowych i UX.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-008] Rozbudowa: Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?**
+
+  - Slug: `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o typach certyfikatów (DV, OV, EV).
+    - Rozbudować sekcję o wpływie SSL na SEO.
+    - Dodać wskazówki o odnowieniu i automatyzacji.
+    - Linkowanie do usług bezpieczeństwa i stron internetowych.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-009] Rozbudowa: Meta title i description: jak je napisać?**
+
+  - Slug: `meta-title-i-description-jak-je-napisac`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów dla różnych branż.
+    - Rozbudować sekcję o testowaniu i optymalizacji CTR.
+    - Dodać wskazówki o dynamicznych meta tagach.
+    - Linkowanie do narzędzia licznik meta title/description.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-010] Rozbudowa: Materiały drukowane dla firmy: które zamówić na start?**
+
+  - Slug: `materialy-drukowane-dla-firmy-ktore-zamowic`
+  - Obecny czas czytania: **6 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o papierach i wykończeniach.
+    - Rozbudować sekcję o budżetowaniu i priorytetach.
+    - Dodać wskazówki o spójności z identyfikacją wizualną.
+    - Linkowanie do usług projektów graficznych.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-011] Rozbudowa: Kody QR w materiałach reklamowych**
+
+  - Slug: `kody-qr-w-materialach-reklamowych`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów zastosowań (menu, wizytówki, plakaty).
+    - Rozbudować sekcję o śledzeniu i analityce QR.
+    - Dodać wskazówki o designie i umiejscowieniu QR.
+    - Linkowanie do usług projektów graficznych i materiałów drukowanych.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-012] Rozbudowa: Jak dobrać kolory do strony internetowej lub sklepu?**
+
+  - Slug: `jak-dobrac-kolory-do-strony-internetowej`
+  - Obecny czas czytania: **8 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów z różnych branż.
+    - Rozbudować sekcję o dostępności kolorów (WCAG).
+    - Dodać wskazówki o testowaniu palet.
+    - Linkowanie do narzędzi Arteon (generator palet, tester kontrastu).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-013] Rozbudowa: Jak przygotować profesjonalną stopkę mailową?**
+
+  - Slug: `jak-przygotowac-profesjonalna-stopke-mailowa`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów dla różnych ról/branż.
+    - Rozbudować sekcję o responsywności stopek.
+    - Dodać wskazówki o spójności z marką.
+    - Linkowanie do generatora stopki mailowej Arteon.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-014] Rozbudowa: Favicon: co to za ikona, jak ją stworzyć i przygotować?**
+
+  - Slug: `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`
+  - Obecny czas czytania: **6 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o formatach i rozmiarach.
+    - Rozbudować sekcję o PWA i manifest.json.
+    - Dodać wskazówki o testowaniu w różnych przeglądarkach.
+    - Linkowanie do generatora favicon Arteon.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-015] Rozbudowa: FAQ na stronie: jak pisać pytania wspierające SEO?**
+
+  - Slug: `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`
+  - Obecny czas czytania: **6 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów pytań dla różnych branż.
+    - Rozbudować sekcję o FAQ schema i rich snippets.
+    - Dodać wskazówki o organizacji i nawigacji FAQ.
+    - Linkowanie do usług tworzenia treści i SEO.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-018] Rozbudowa: Czy lokalne firmy potrzebują bloga na stronie?**
+
+  - Slug: `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
+  - Obecny czas czytania: **4 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów tematów dla firm lokalnych.
+    - Rozbudować sekcję o strategii contentowej.
+    - Dodać wskazówki o częstotliwości publikacji.
+    - Linkowanie do usług tworzenia treści i pozycjonowania.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-019] Rozbudowa: Jak zoptymalizować zdjęcia na stronę WWW?**
+
+  - Slug: `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+  - Obecny czas czytania: **8 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej szczegółów o AVIF i nowych formatach.
+    - Rozbudować sekcję o lazy loading i srcset.
+    - Dodać wskazówki o automatyzacji optymalizacji.
+    - Linkowanie do narzędzi Arteon (konwerter WebP, kadrowanie).
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ❌ **[EEAT-020] Rozbudowa: Jak identyfikacja wizualna zwiększa zaufanie klientów?**
+
+  - Slug: `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+  - Obecny czas czytania: **7 min** → cel: **10-12 min**
+  - Plik: `data/pl/blog.json`
+  - Zakres rozbudowy:
+    - Dodać więcej przykładów i case studies.
+    - Rozbudować sekcję o elementach identyfikacji (kolory, typografia).
+    - Dodać wskazówki o wdrażaniu spójności.
+    - Linkowanie do usług identyfikacji wizualnej i logo.
+  - Weryfikacja: nie jest wymagana (content-only).
+
+---
+
 ## Zadania: Artykuły (backlog)
 
 - ❌ **[2] Blog: Jakie materiały są potrzebne, żeby móc zlecić stronę internetową?**

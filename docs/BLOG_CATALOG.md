@@ -288,54 +288,21 @@ Celem katalogu jest:
 - **Kategorie**: `Grafika` (primary), `Psychologia`, `Branding`
 - **Daty**:
   - **`datePublished`**: `2025-12-09`
-  - **`dateModified`**: `2025-12-19`
-- **Szacowany czas czytania**: `6 min`
-- **Tagi**: występują (8): `kolorystyka`, `psychologia kolorów`, `branding`, `identyfikacja wizualna`, `ux`, `konwersja`, `cta`, `wcag`
-- **FAQ**: występuje (5).
-- **Format treści (`contentBlocks`)**:
-  - **Typy bloków**: tylko `richtext`.
-  - **Konsekwencja**: dużo nagłówków `H2` i `H3` (dobry „szkielet” pod TOC), ale brak wzbogacenia o `image` / `table`.
-- **SEO (meta)**:
-  - **`seo.title`**: identyczny jak `title` - poprawne, ale bez wyróżnika marki.
-  - **`seo.description`**: bardzo mocne - zawiera obietnicę wartości i wiarygodne źródła.
-  - **`seo.canonical`**: wygląda spójnie z routingiem (`/edukacja/grafika/...`).
-- **CTA**:
-
-  - **Występuje**.
-  - **Spójność**: bardzo dobra (narzędzie do palet + oferta identyfikacji).
-
-- **Plusy**:
-
-  - **[duża wiarygodność]** tekst opiera się na źródłach (CCICOLOR, Lucidpress, NN/g, HubSpot itd.), co wzmacnia E‑E‑A‑T.
-  - **[dobra struktura edukacyjna]** logiczny podział na: psychologia → marka → UX → konwersja → praktyka.
-  - **[język „dla biznesu”]** łączy design z mierzalnymi efektami (CTR, konwersja, rozpoznawalność).
-  - **[wysoka skanowalność]** krótkie sekcje, listy punktowane - przyjazne dla czytelnika.
-
-- **Minusy / ryzyka**:
-
-  - **[mało linkowania do innych artykułów]** poza linkami do narzędzi/CTA, wpis nie buduje mocnego klastra tematycznego (np. z artykułem o identyfikacji wizualnej).
-  - **[brak materiału wizualnego]** przy temacie „kolor” brak przykładów palet i kontrastów osłabia UX.
-
-- **Braki (co ma / czego nie ma)**:
-
-  - **[ma]** jasne nagłówki, listy, źródła, konkretne wnioski, CTA, tagi, FAQ.
-  - **[nie ma]** obrazów/diagramów, tabel podsumowujących, mocniejszego linkowania do innych artykułów w obrębie klastra.
-
-- **Ton i charakter**:
-
-  - **[mentorski]** proste prowadzenie i szybkie doprecyzowania terminów (CTR/CTA/UX/WCAG).
-  - **[praktyczny]** nastawiony na wdrożenie (jak dobrać kolor, jak wpływa na CTA).
-  - **[marketingowo-sprzedażowy]** wnioski prowadzą do konwersji, ale bez agresywnego języka.
-
-- **Sugestie ulepszeń (SEO + UX)**:
-  - **[tagi]** utrzymać i ewentualnie doprecyzować w czasie (spójne słownictwo w całym blogu).
-  - **[FAQ]** rozważyć rozbudowę do 6-8 pytań (pod long-tail), jeśli temat zacznie zbierać ruch z PAA.
-  - **[linkowanie wewnętrzne]** dodać w treści 3-6 linków:
-    - do narzędzi (generator palet, checker kontrastu),
-    - do oferty brandingu/identyfikacji,
-    - do powiązanego wpisu o identyfikacji wizualnej.
-  - **[multimedia]** dodać 1-2 grafiki (przykłady palet + przykłady CTA na różnych tłach) oraz krótką tabelę „kolor → skojarzenie → zastosowanie w branżach”.
-  - **[snippet/TL;DR]** dodać na początku krótkie podsumowanie w punktach (łatwiej o featured snippet).
+  - **`dateModified`**: `2025-12-25`
+- **Szacowany czas czytania**: `10 min` (przepisanie od zera EEAT-016)
+- **FAQ**: występuje (5 pytań z pogłębionymi odpowiedziami).
+- **Format treści**: tylko `richtext` (usunięto colorPalette na rzecz narracji).
+- **CTA**: Występuje (narzędzie do palet + oferta identyfikacji).
+- **Struktura artykułu** (przepisany od zera 2025-12-25):
+  - Jak mózg przetwarza kolory (mechanizmy, ciało migdałowate, ewolucja)
+  - Mechanizmy psychologiczne (pobudzenie fizjologiczne, skojarzenia kulturowe, oczekiwania branżowe)
+  - Kolorystyka w różnych branżach (finanse, medycyna, gastronomia, technologia, luksus) — z uzasadnieniem wyborów
+  - Testy A/B kolorów — analiza DLACZEGO zadziałały (kontekst, nie sam wynik)
+  - Kolor a kontrast i dostępność (WCAG, daltonizm)
+- **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, `/narzedzia/generator-palet-kolorow-online`, `/narzedzia/tester-kontrastu-kolorow-wcag`, `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/kontakt`.
+- **Linki zewnętrzne**: Management Decision (Singh 2006), Journal of Business Research (Bellizzi & Hite 1992), Journal of Academy of Marketing Science (Labrecque & Milne 2012), HubSpot, WiderFunnel, VWO.
+- **Tooltips**: ciało migdałowate, CTA, WCAG.
+- **Plusy**: głęboka analiza mechanizmów (nie tylko CO ale JAK i DLACZEGO), konkretne przykłady branżowe z uzasadnieniem, analiza testów A/B z kontekstem, sekcja o dostępności i daltonizmie, płynna narracja zamiast list.
 
 ---
 
@@ -345,47 +312,20 @@ Celem katalogu jest:
 - **Kategorie**: `SEO` (primary), `Widoczność`
 - **Daty**:
   - **`datePublished`**: `2025-12-09`
-  - **`dateModified`**: `2025-12-19`
-- **Szacowany czas czytania**: `6 min`
-- **Tagi**: występują (8): `pozycjonowanie`, `seo`, `czas seo`, `audyt seo`, `core web vitals`, `treści seo`, `link building`, `google search console`
-- **FAQ**: występuje (5).
-- **Format treści (`contentBlocks`)**:
-  - **Typy bloków**: tylko `richtext`.
-  - **Konsekwencja**: materiał jest „tekstowy” - bez tabel/wykresów, mimo że temat dobrze się do nich nadaje.
-- **SEO (meta)**:
-  - **`seo.title`**: skrócony + dopisek `- Arteon`.
-  - **`seo.description`**: rzeczowy, zgodny z intencją (czas + czynniki).
-  - **`seo.canonical`**: spójny z routingiem (`/edukacja/seo/...`).
-- **CTA**:
-
-  - **Występuje**.
-  - **Spójność**: bardzo dobra (prowadzi do usługi pozycjonowania).
-
-- **Plusy**:
-
-  - **[świetnie dopasowana intencja]** użytkownik chce konkretu („ile trwa i kiedy efekty”) i artykuł daje model czasowy.
-  - **[mocne źródła]** Ahrefs, Semrush, BrightLocal, Google Search Central - wzmacnia E‑E‑A‑T.
-  - **[dobry układ sekcji]** czytelne bloki: nowe strony vs istniejące, czynniki wpływu, realistyczna oś czasu.
-  - **[nadaje się na featured snippet]** fragmenty typu „0-2 miesiące / 2-4 miesiące…” są gotowe pod snippet.
-
-- **Minusy / ryzyka**:
-
-  - **[brak tabel/wykresów]** mimo że temat dobrze się do nich nadaje.
-
-- **Braki (co ma / czego nie ma)**:
-
-  - **[ma]** dane i źródła, strukturę czasową, logiczne argumenty, CTA.
-  - **[nie ma]** tabel/wykresów, sekcji „TL;DR” na samym początku.
-
-- **Ton i charakter**:
-
-  - **[ekspercki i realistyczny]** „SEO to proces” - bez przesadnych obietnic.
-  - **[konsultacyjny]** tłumaczy czynniki i prowadzi do działania (CTA).
-
-- **Sugestie ulepszeń (SEO + UX)**:
-  - **[format danych]** dodać tabelę „czynnik → wpływ na czas → co zrobić → jak mierzyć”.
-  - **[TL;DR]** dodać na początku 4-6 punktów „co zrobić najpierw, żeby SEO ruszyło”.
-  - **[porządek w HTML]** utrzymać spójne łamania linii (`<br/>`).
+  - **`dateModified`**: `2025-12-25`
+- **Szacowany czas czytania**: `10 min` (przepisanie od zera EEAT-017)
+- **Struktura artykułu** (przepisany 2025-12-25):
+  - Dlaczego SEO wymaga czasu (mechanizmy Google: crawling, indeksowanie, ocena jakości)
+  - Autorytet domeny (dlaczego nowe strony potrzebują więcej czasu, badanie Ahrefs)
+  - Realne terminy SEO w różnych branżach (lokalne, B2B, e-commerce) z uzasadnieniem
+  - Co przyspiesza efekty SEO (audyt techniczny, linkowanie wewnętrzne, aktualizacja treści)
+- **FAQ**: występuje (5 pytań).
+- **Format treści**: tylko `richtext`.
+- **CTA**: Występuje (prowadzi do usługi pozycjonowania).
+- **Linki wewnętrzne**: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`, `/edukacja/seo/jak-pisac-tresci-ktore-pozycjonuja-sie-w-google-praktyczny-poradnik`, `/kontakt`.
+- **Linki zewnętrzne**: Ahrefs, Semrush, BrightLocal, Google Search Central, Google Search Console, HubSpot.
+- **Tooltips**: GBP, klaster tematyczny.
+- **Plusy**: świetnie dopasowana intencja, mocne źródła, dobry układ sekcji, rozbudowana sekcja o różnicach między branżami, konkretne metody przyspieszania efektów SEO.
 
 ---
 
