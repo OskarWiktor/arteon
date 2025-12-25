@@ -33,7 +33,17 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'czym-jest-content-marketing',
+  'czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google',
+  'faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony',
+  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
+  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
+];
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja - Arteon',
@@ -66,6 +76,8 @@ function ServiceSchema() {
 }
 
 export default function OfferBlogPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -334,6 +346,15 @@ export default function OfferBlogPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące blogów"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -15,9 +14,16 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'materialy-drukowane-dla-firmy-ktore-zamowic',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'jak-dobrac-kolory-do-strony-internetowej',
+  'kody-qr-w-materialach-reklamowych',
+];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
@@ -53,6 +59,8 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignLetterheadPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -292,54 +300,18 @@ export default function OfferDesignLetterheadPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Jak jeszcze możesz wzmocnić wizerunek w korespondencji?"
-          subtitle="Zobacz też"
-          description="Najlepszy efekt daje spójny system: papier firmowy, wizytówki, teczki i oferta, które razem budują doświadczenie klienta."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki firmowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu zauważy spójność co wzbudzi większe zaufanie i stworzy jeszcze bardziej profesjonalny wizerunek.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiBookOpenLine className="h-8 w-8" />,
-              title: 'Projekt teczki ofertowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta - od papieru po oprawę - staje się spójnym doświadczeniem dla klienta.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
-                      Zobacz projekt teczki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące materiałów firmowych"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
         />
-
-        <Gap variant="line" />
-
-        <ServicesSteps />
 
         <Gap size="sm" />
       </Wrapper>
 
       <CTABanner
-        title="Profesjonalny wygląd dokumentów"
+        title="Zbuduj profesjonalny wizerunek w korespondencji"
         description="Stworzymy papier firmowy, który zwiększa zaufanie i profesjonalny wizerunek Twojej firmy."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"

@@ -16,6 +16,15 @@ import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'materialy-drukowane-dla-firmy-ktore-zamowic',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'jak-dobrac-kolory-do-strony-internetowej',
+  'kody-qr-w-materialach-reklamowych',
+];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
@@ -54,6 +63,8 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignPresentationFolderPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -335,6 +346,15 @@ export default function OfferDesignPresentationFolderPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące materiałów drukowanych"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

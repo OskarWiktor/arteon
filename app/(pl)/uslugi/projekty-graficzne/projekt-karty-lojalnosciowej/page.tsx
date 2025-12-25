@@ -3,7 +3,6 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -16,6 +15,15 @@ import { RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiVipCrownLine, 
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'materialy-drukowane-dla-firmy-ktore-zamowic',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'kody-qr-w-materialach-reklamowych',
+  'jak-dobrac-kolory-do-strony-internetowej',
+];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
@@ -49,7 +57,9 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferDesignLoyaltyCardPage() {
+export default function OfferLoyaltyCard() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -276,49 +286,14 @@ export default function OfferDesignLoyaltyCardPage() {
           ]}
         />
 
-        {/* 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym warto połączyć karty lojalnościowe?"
-          subtitle="Zobacz też"
-          description="Karty lojalnościowe działają jeszcze lepiej, gdy klienci widzą je w kilku miejscach: w lokalu, w materiałach promocyjnych i online."
-          items={[
-            {
-              icon: <RiCoupon2Line className="h-8 w-8" />,
-              title: 'Kupony rabatowe i vouchery',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Kupony i vouchery świetnie uzupełniają program lojalnościowy - możesz nagradzać klientów dodatkowymi zaproszeniami lub zniżkami na specjalne okazje.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera">
-                      Zobacz projekty voucherów
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Plakaty i grafiki informujące o programie',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dobrze widoczna informacja przy ladzie, w recepcji lub w social mediach powoduje, że więcej osób pyta o program i zaczyna z niego korzystać.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-plakatu">
-                      Sprawdź projekty plakatów
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        /> */}
-
-        <Gap variant="line" />
-
-        <ServicesSteps />
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące materiałów promocyjnych"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

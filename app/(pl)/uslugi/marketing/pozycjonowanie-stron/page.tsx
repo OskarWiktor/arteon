@@ -18,7 +18,9 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
 
 export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań - Arteon',
@@ -50,7 +52,18 @@ function ServiceSchema() {
   );
 }
 
+const RELATED_ARTICLE_SLUGS = [
+  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
+  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
+  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+  'ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty',
+  'meta-title-i-description-jak-je-napisac',
+  'faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony',
+];
+
 export default function OfferSeoSubscription() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -362,6 +375,15 @@ export default function OfferSeoSubscription() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące pozycjonowania"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

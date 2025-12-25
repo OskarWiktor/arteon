@@ -25,6 +25,21 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?**
+
+  - **Slug**: `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`
+  - **URL**: `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`
+  - **Kategorie**: `SEO`, `Widoczność`, `Treści`
+  - **Data publikacji**: 2025-12-24
+  - **Czas czytania**: 11 min
+  - **Opis**: Kompleksowy artykuł o linkowaniu wewnętrznym zgodny z nowymi wytycznymi (9-14 min). Obejmuje: wyjaśnienie czym jest linkowanie wewnętrzne i jak działają crawlery (z linkiem do Google Search Central), dlaczego linkowanie wewnętrzne ma znaczenie dla SEO (PageRank z tooltipem, crawl budget z tooltipem, budowanie tematycznej spójności), rodzaje linków wewnętrznych (nawigacyjne, kontekstowe, breadcrumbs z linkiem do dokumentacji Google, stopka/sidebar), klastry tematyczne (struktura klastra, pillar page, cluster content, przykład klastra SEO, dlaczego klastry działają z linkiem do Ahrefs), anchor text (rodzaje: exact match, partial match, opisowy, markowy, generyczny; dobre praktyki z linkiem do Moz), na co zwrócić uwagę (strony-sieroty z linkami do GSC i Ahrefs, zbyt głęboka struktura, broken links, zbyt wiele linków, generyczne anchor texty, brak linkowania do nowych treści).
+  - **Linki wewnętrzne (7)**: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/optymalizacja-seo`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/kontakt`
+  - **Linki zewnętrzne (6)**: Google Search Console, Google Search Central (dokumentacja o linkach), Google (dane strukturalne breadcrumbs), Ahrefs (topic clusters), Moz (anchor text guide), Ahrefs Site Audit
+  - **Tooltips**: anchor text, PageRank, crawl budget, klaster tematyczny
+  - **FAQ**: 5 pytań (ile linków w artykule, wartość linków w menu/stopce, jak znaleźć strony bez linków, kolejność linków, nofollow dla linków wewnętrznych)
+  - **CTA**: Pozycjonowanie stron + Kontakt
+  - **Ton**: Mentorski, edukacyjny, wnikliwy — szczegółowo wyjaśnia wszystkie aspekty linkowania wewnętrznego z tooltipami dla trudnych terminów i wieloma źródłami zewnętrznymi
+
 - **Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?**
 
   - **Slug**: `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`

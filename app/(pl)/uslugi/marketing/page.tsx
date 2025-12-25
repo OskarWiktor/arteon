@@ -15,7 +15,18 @@ import Button from '@/components/ui/buttons/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Script from 'next/script';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
+  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
+  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+  'meta-title-i-description-jak-je-napisac',
+  'ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty',
+  'jak-mierzyc-skutecznosc-strony-internetowej',
+];
 
 export const metadata = {
   title: 'Marketing internetowy - SEO, reklamy i komunikacja - Arteon',
@@ -56,7 +67,9 @@ function ItemListSchema() {
   );
 }
 
-export default function OfferMarketingHubPage() {
+export default function OfferMarketing() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -207,6 +220,15 @@ export default function OfferMarketingHubPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące marketingu"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

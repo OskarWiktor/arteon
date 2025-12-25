@@ -14,6 +14,16 @@ import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+  'czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie',
+  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+  'meta-title-i-description-jak-je-napisac',
+  'co-sprawdzic-przed-uruchomieniem-strony',
+];
 
 import { RiSpeedFill, RiToolsLine, RiShieldCheckLine, RiDeviceLine, RiBarChart2Fill, RiFileList2Line } from 'react-icons/ri';
 
@@ -55,6 +65,8 @@ function ServiceSchema() {
 }
 
 export default function OfferOptimizationWordPressPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -391,6 +403,15 @@ export default function OfferOptimizationWordPressPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące optymalizacji WordPress"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

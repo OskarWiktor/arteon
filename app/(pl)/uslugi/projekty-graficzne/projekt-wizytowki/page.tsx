@@ -19,7 +19,16 @@ import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'materialy-drukowane-dla-firmy-ktore-zamowic',
+  'kody-qr-w-materialach-reklamowych',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'jak-dobrac-kolory-do-strony-internetowej',
+];
 
 export const metadata = {
   title: 'Projekt wizytówki - Arteon',
@@ -54,6 +63,8 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignBusinessCardPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -307,6 +318,15 @@ export default function OfferDesignBusinessCardPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące wizytówek"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

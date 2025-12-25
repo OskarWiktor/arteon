@@ -19,6 +19,15 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine,
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'jak-dobrac-kolory-do-strony-internetowej',
+  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+];
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
@@ -54,6 +63,8 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignSocialMediaPostTemplatesPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -321,6 +332,15 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące social media"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

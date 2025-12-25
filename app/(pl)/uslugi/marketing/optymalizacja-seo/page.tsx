@@ -18,7 +18,17 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
+  'meta-title-i-description-jak-je-napisac',
+  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
+  'jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+];
 
 export const metadata = {
   title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność - Arteon',
@@ -51,6 +61,8 @@ function ServiceSchema() {
 }
 
 export default function OfferOptimizationSEO() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -361,6 +373,15 @@ export default function OfferOptimizationSEO() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące optymalizacji SEO"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

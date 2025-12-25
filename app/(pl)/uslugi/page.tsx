@@ -4,6 +4,17 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { toAbsoluteUrl } from '@/lib/url';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'co-sprawdzic-przed-uruchomieniem-strony',
+  'jak-wybrac-domene-i-hosting-dla-strony-firmowej',
+  'czym-jest-content-marketing',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
+  'jak-mierzyc-skutecznosc-strony-internetowej',
+];
 import {
   RiFileList2Line,
   RiSearchEyeLine,
@@ -65,6 +76,8 @@ export const metadata = {
 } as const;
 
 export default function OfferPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner backgroundImage="/assets/bg/abstract-bg12.webp" overlay="black" title="Nasze usługi" variant="center" />
@@ -531,6 +544,15 @@ export default function OfferPage() {
               ),
             },
           ]}
+        />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
         />
 
         <Gap size="sm" />

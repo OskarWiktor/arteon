@@ -35,7 +35,17 @@ import { GoLaw } from 'react-icons/go';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'jak-przygotowac-sklep-internetowy-do-pozycjonowania',
+  'czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
+  'czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie',
+  'jak-mierzyc-skutecznosc-strony-internetowej',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+];
 
 export const metadata = {
   title: 'Sklepy internetowe - projekt i realizacja - Arteon',
@@ -67,7 +77,9 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferWebPage() {
+export default function OfferOnlineStore() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -405,6 +417,15 @@ export default function OfferWebPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące sklepów internetowych"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

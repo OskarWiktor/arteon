@@ -16,6 +16,15 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine,
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'materialy-drukowane-dla-firmy-ktore-zamowic',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'kody-qr-w-materialach-reklamowych',
+  'jak-dobrac-kolory-do-strony-internetowej',
+];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
@@ -54,6 +63,8 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignCouponsAndVouchersPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -287,7 +298,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
               title: 'Ulotki i informujące o promocji',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ulotki pomagą Ci dotrzeć do jeszcze większej grupy osób, przedstawiając szczegółowy zakres Twoich usług.</p>
+                  <p className="mb-3 text-sm">Ulotki pomagają Ci dotrzeć do jeszcze większej grupy osób, przedstawiając szczegółowy zakres Twoich usług.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
                       Zobacz projekty ulotek
@@ -317,6 +328,15 @@ export default function OfferDesignCouponsAndVouchersPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące materiałów promocyjnych"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

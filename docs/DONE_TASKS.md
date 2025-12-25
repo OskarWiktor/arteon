@@ -2,6 +2,48 @@
 
 ## 2025-12-24
 
+- ✅ **[UI-001] Usługi: dodać karuzele powiązanych artykułów na stronach usługowych**
+
+  - **Co zrobiono**:
+    - Dodano komponent `ArticlesCarousel` do 8 stron usługowych z tematycznie dopasowanymi artykułami.
+    - Strony zaktualizowane:
+      - `/uslugi/marketing/pozycjonowanie-stron` (6 artykułów SEO)
+      - `/uslugi/marketing/optymalizacja-seo` (5 artykułów SEO)
+      - `/uslugi/marketing/audyt-seo` (5 artykułów SEO)
+      - `/uslugi/strony-internetowe` (5 artykułów: strony, bezpieczeństwo, UX)
+      - `/uslugi/sklepy-internetowe` (5 artykułów: e-commerce, SEO, grafika)
+      - `/uslugi/blogi-internetowe` (5 artykułów: content marketing, treści)
+      - `/uslugi/tworzenie-tresci` (5 artykułów: content, SEO, marketing)
+      - `/uslugi/projekty-graficzne` (6 artykułów: grafika, kolorystyka, druk)
+    - Karuzela wyświetla się przed sekcją CTA na końcu każdej strony.
+  - **Pliki**:
+    - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx`
+    - `app/(pl)/uslugi/marketing/optymalizacja-seo/page.tsx`
+    - `app/(pl)/uslugi/marketing/audyt-seo/page.tsx`
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx`
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx`
+    - `app/(pl)/uslugi/blogi-internetowe/page.tsx`
+    - `app/(pl)/uslugi/tworzenie-tresci/page.tsx`
+    - `app/(pl)/uslugi/projekty-graficzne/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+
+- ✅ **[IDEA-097] Blog: Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?**
+
+  - **Co zrobiono**:
+    - Utworzono nowy artykuł w `data/pl/blog.json` o linkowaniu wewnętrznym i SEO.
+    - Artykuł 11 min czytania (~2200 słów), zgodny z wytycznymi INSTRUCTIONS.md (9-14 min).
+    - Struktura: co to jest linkowanie wewnętrzne, dlaczego ma znaczenie dla SEO (PageRank, crawl budget), rodzaje linków (nawigacyjne, kontekstowe, breadcrumbs), klastry tematyczne, anchor text, najczęstsze błędy.
+    - 7 linków wewnętrznych: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/optymalizacja-seo`, `/edukacja/seo/jak-pisac-tresci-...`, `/edukacja/seo/dlaczego-strona-nie-wyswietla-sie...`, `/kontakt`.
+    - 6 linków zewnętrznych: Google Search Console, Google Search Central (dokumentacja), Google (breadcrumbs schema), Ahrefs (topic clusters), Moz (anchor text), Ahrefs Site Audit.
+    - 4 tooltips: anchor text, PageRank, crawl budget, klaster tematyczny.
+    - 5 FAQ.
+    - CTA: Pozycjonowanie stron + Kontakt.
+    - Zaktualizowano `BLOG_CATALOG.md`.
+  - **Pliki**:
+    - `data/pl/blog.json`
+    - `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: nie wymagana (content-only).
+
 - ✅ **[SEO-022] Ahrefs Web Analytics: dodać snippet + podpiąć pod cookie consent**
 
   - **Co zrobiono**:

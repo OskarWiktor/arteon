@@ -3,8 +3,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine, RiLayoutLine } from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -15,10 +14,17 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import Button from '@/components/ui/buttons/Button';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'materialy-drukowane-dla-firmy-ktore-zamowic',
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'jak-dobrac-kolory-do-strony-internetowej',
+  'jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych',
+];
 
 export const metadata = {
   title: 'Projekt katalogu - Arteon',
@@ -51,6 +57,8 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignCatalogPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -292,52 +300,18 @@ export default function OfferDesignCatalogPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym najlepiej połączyć projekt katalogu?"
-          subtitle="Zobacz też"
-          description="Katalog najlepiej działa, gdy wspiera go strona internetowa lub sklep."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Sklep internetowy z ofertą katalogową',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Przy tworzeniu katalogu warto rozważyć stworzenie sklepu internetowego, w którym klienci będą mogli zakupić przedstawione w katalogu produkty</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/sklepy-internetowe">
-                      Zobacz ofertę sklepów internetowych
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Strona internetowa z usługami z katalogu',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli Twój katalog jest skupiony wokół usług, warto rozważyć stronę internetową, przez którą Twoi klienci będą mogli się z Tobą skontaktować</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
-                      Zobacz ofertę stworzenia strony internetowej
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące katalogów"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
         />
-
-        <Gap variant="line" />
-
-        <ServicesSteps />
 
         <Gap size="sm" />
       </Wrapper>
 
       <CTABanner
-        title="Zaprezentuj swoją ofertę w eleganckiej formie"
+        title="Pokaż ofertę w najlepszym świetle"
         description="Zaprojektujemy katalog, który ułatwi sprzedaż i wzmocni wizerunek Twojej marki."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"

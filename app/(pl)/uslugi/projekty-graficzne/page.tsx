@@ -41,6 +41,17 @@ import {
 import Script from 'next/script';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
+  'jak-dobrac-kolory-do-strony-internetowej',
+  'jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych',
+  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  'materialy-drukowane-dla-firmy-ktore-zamowic',
+  'kody-qr-w-materialach-reklamowych',
+];
 
 const SERVICES = [
   { name: 'Projekt wizytówki', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki') },
@@ -105,7 +116,9 @@ export const metadata = {
   },
 } as const;
 
-export default function OfferDesignPage() {
+export default function OfferGraphicDesign() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -559,6 +572,15 @@ export default function OfferDesignPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące projektów graficznych"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

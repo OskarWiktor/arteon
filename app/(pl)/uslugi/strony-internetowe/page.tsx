@@ -33,7 +33,17 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'co-sprawdzic-przed-uruchomieniem-strony',
+  'jak-wybrac-domene-i-hosting-dla-strony-firmowej',
+  'czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie',
+  'czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
+  'favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
+];
 
 export const metadata = {
   title: 'Strony internetowe - projekt i realizacja - Arteon',
@@ -66,6 +76,8 @@ function ServiceSchema() {
 }
 
 export default function OfferWebPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -354,6 +366,15 @@ export default function OfferWebPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące stron internetowych"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>

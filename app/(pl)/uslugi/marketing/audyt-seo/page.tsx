@@ -18,7 +18,17 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticlePreviews } from '@/lib/blog';
+
+const RELATED_ARTICLE_SLUGS = [
+  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
+  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
+  'meta-title-i-description-jak-je-napisac',
+  'faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony',
+  'jak-mierzyc-skutecznosc-strony-internetowej',
+];
 
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny - Arteon',
@@ -60,6 +70,8 @@ function ServiceSchema() {
 }
 
 export default function OfferMarketingPage() {
+  const articles = getAllArticlePreviews();
+
   return (
     <>
       <HeroBanner
@@ -383,6 +395,15 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel
+          title="Sprawdź nasze artykuły dotyczące audytu SEO"
+          subtitle="Edukacja"
+          articles={articles}
+          slugs={RELATED_ARTICLE_SLUGS}
+        />
 
         <Gap size="sm" />
       </Wrapper>
