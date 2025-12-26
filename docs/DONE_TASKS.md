@@ -222,7 +222,7 @@
       - Najczęstsze błędy opóźniające efekty SEO
     - Dodano FAQ (5 pytań): czas dla nowej strony, SEO lokalne, przyspieszanie efektów, mierzenie postępów, brak efektów.
     - Rozbudowano podsumowanie z linkami do usług.
-    - Dodano linki wewnętrzne: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`, `/edukacja/seo/jak-pisac-tresci-ktore-pozycjonuja-sie-w-google-praktyczny-poradnik`, `/kontakt`.
+    - Dodano linki wewnętrzne: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/kontakt`.
     - Dodano linki zewnętrzne: Semrush Site Audit, Google Search Console, Google structured data.
     - Dodano tooltips: GBP, klaster tematyczny.
     - Zaktualizowano `dateModified` na 2025-12-25.

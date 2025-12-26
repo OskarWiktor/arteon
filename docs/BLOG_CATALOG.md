@@ -34,7 +34,7 @@ Celem katalogu jest:
   - **Data modyfikacji**: 2025-12-27 (CONTENT-009: zmiana terminologii na polską, dodanie linków wewnętrznych)
   - **Czas czytania**: 11 min
   - **Opis**: Kompleksowy artykuł o mechanizmie społecznego dowodu słuszności (ang. social proof) zgodny z wytycznymi. Obejmuje: skąd bierze się siła społecznego dowodu słuszności (ewolucja, badania Cialdiniego, skrót poznawczy, dane BrightLocal), rodzaje społecznego dowodu słuszności (opinie i recenzje, liczby i statystyki, studia przypadków, rekomendacje ekspertów, certyfikaty i nagrody, aktywność w mediach społecznościowych), jak wykorzystać społeczny dowód słuszności na stronie (strona główna, podstrony usług, koszyk/finalizacja zamówienia, formularze kontaktowe), jak zbierać opinie klientów (odpowiedni moment, ułatwianie procesu, platformy zewnętrzne), na co zwrócić uwagę (autentyczność, konkret zamiast ogólników, odpowiadanie na negatywne opinie, dopasowanie do odbiorcy), społeczny dowód słuszności a budowanie marki (spójność komunikacji, integracja z innymi elementami, aktualizacja i świeżość).
-  - **Linki wewnętrzne (7)**: `/uslugi/sklepy-internetowe`, `/edukacja/seo/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`, `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony-internetowej`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/realizacje`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki wewnętrzne (7)**: `/uslugi/sklepy-internetowe`, `/edukacja/seo/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`, `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/realizacje`, `/uslugi/strony-internetowe`, `/kontakt`
   - **Linki zewnętrzne (3)**: Robert Cialdini - Influence at Work (6 zasad wpływu), BrightLocal (badania o opiniach konsumentów), Google Moja Firma (dokumentacja)
   - **Tooltips**: społeczny dowód słuszności, efekt owczego pędu
   - **FAQ**: 5 pytań (czy działa w każdej branży, ile opinii potrzeba, jak radzić sobie z negatywnymi opiniami, czy można oferować rabaty za opinie, jak wyświetlać opinie zgodnie z prawem)
@@ -354,7 +354,7 @@ Celem katalogu jest:
 - **FAQ**: występuje (5 pytań).
 - **Format treści**: tylko `richtext`.
 - **CTA**: Występuje (prowadzi do usługi pozycjonowania).
-- **Linki wewnętrzne**: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`, `/edukacja/seo/jak-pisac-tresci-ktore-pozycjonuja-sie-w-google-praktyczny-poradnik`, `/kontakt`.
+- **Linki wewnętrzne**: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/kontakt`.
 - **Linki zewnętrzne**: Ahrefs, Semrush, BrightLocal, Google Search Central, Google Search Console, HubSpot.
 - **Tooltips**: GBP, klaster tematyczny.
 - **Plusy**: świetnie dopasowana intencja, mocne źródła, dobry układ sekcji, rozbudowana sekcja o różnicach między branżami, konkretne metody przyspieszania efektów SEO.
