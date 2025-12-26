@@ -398,12 +398,7 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel
-          title="Sprawdź nasze artykuły dotyczące audytu SEO"
-          subtitle="Edukacja"
-          articles={articles}
-          slugs={RELATED_ARTICLE_SLUGS}
-        />
+        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące audytu SEO" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>

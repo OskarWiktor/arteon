@@ -65,7 +65,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-
         <QrCodeGenerator />
 
         <Gap size="sm" />

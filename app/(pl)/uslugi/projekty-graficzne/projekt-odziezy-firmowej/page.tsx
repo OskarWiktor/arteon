@@ -325,12 +325,7 @@ export default function OfferDesignCorporateApparelPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel
-          title="Sprawdź nasze artykuły dotyczące brandingu"
-          subtitle="Edukacja"
-          articles={articles}
-          slugs={RELATED_ARTICLE_SLUGS}
-        />
+        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące brandingu" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>

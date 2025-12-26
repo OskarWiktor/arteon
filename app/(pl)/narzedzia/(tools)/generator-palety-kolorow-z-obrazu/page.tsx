@@ -69,7 +69,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-
         <PaletteExtractor />
 
         <Gap size="sm" />

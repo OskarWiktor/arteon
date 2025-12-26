@@ -17,8 +17,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
   title: 'Jak używać testera kontrastu kolorów WCAG | Instrukcja',
-  description:
-    'Instrukcja testera kontrastu WCAG. Dowiedz się, jak sprawdzić kontrast, co oznaczają poziomy AA i AAA oraz jak interpretować wyniki.',
+  description: 'Instrukcja testera kontrastu WCAG. Dowiedz się, jak sprawdzić kontrast, co oznaczają poziomy AA i AAA oraz jak interpretować wyniki.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja') },
   openGraph: {
     title: 'Jak używać testera kontrastu kolorów WCAG | Instrukcja',
@@ -38,8 +37,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak używać testera kontrastu kolorów WCAG',
-  description:
-    'Instrukcja krok po kroku jak korzystać z testera kontrastu kolorów zgodnego z wytycznymi WCAG 2.1. Sprawdź, czy kolory na swojej stronie spełniają wymagania dostępności.',
+  description: 'Instrukcja krok po kroku jak korzystać z testera kontrastu kolorów zgodnego z wytycznymi WCAG 2.1. Sprawdź, czy kolory na swojej stronie spełniają wymagania dostępności.',
   url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja'),
   step: [
     {
@@ -146,8 +144,8 @@ export default function InstrukcjaPage() {
             Kontrast to różnica jasności między dwoma kolorami — na przykład między kolorem tekstu a kolorem tła. Im wyższa ta różnica, tym łatwiej odróżnić tekst od tła i go przeczytać.
           </p>
           <p className="text-mid mt-3">
-            Dlaczego to ma znaczenie? Około 300 milionów ludzi na świecie ma różne formy zaburzeń widzenia kolorów, a kolejne miliony mają osłabiony wzrok z powodu wieku lub chorób oczu. Słaby kontrast
-            sprawia, że tekst staje się dla nich nieczytelny.
+            Dlaczego to ma znaczenie? Około 300 milionów ludzi na świecie ma różne formy zaburzeń widzenia kolorów, a kolejne miliony mają osłabiony wzrok z powodu wieku lub chorób oczu. Słaby
+            kontrast sprawia, że tekst staje się dla nich nieczytelny.
           </p>
           <p className="text-mid mt-3">
             Ale nie tylko osoby z wadami wzroku korzystają z dobrego kontrastu. Wyobraź sobie przeglądanie strony na telefonie w pełnym słońcu lub na starszym, wyblakłym monitorze — wysoki kontrast
@@ -218,14 +216,12 @@ export default function InstrukcjaPage() {
             {
               icon: <RiCheckboxCircleLine className="h-6 w-6" />,
               title: '3. Sprawdź wynik',
-              description:
-                'Narzędzie automatycznie obliczy współczynnik kontrastu i pokaże, czy spełniasz poziomy AA i AAA dla tekstu zwykłego, tekstu dużego oraz elementów graficznych.',
+              description: 'Narzędzie automatycznie obliczy współczynnik kontrastu i pokaże, czy spełniasz poziomy AA i AAA dla tekstu zwykłego, tekstu dużego oraz elementów graficznych.',
             },
             {
               icon: <RiEqualizerLine className="h-6 w-6" />,
               title: '4. Dostosuj kolory',
-              description:
-                'Jeśli kontrast jest za niski — użyj funkcji Dopasuj, żeby narzędzie zaproponowało poprawiony kolor. Możesz też ręcznie zmienić któryś z kolorów i sprawdzić ponownie.',
+              description: 'Jeśli kontrast jest za niski — użyj funkcji Dopasuj, żeby narzędzie zaproponowało poprawiony kolor. Możesz też ręcznie zmienić któryś z kolorów i sprawdzić ponownie.',
             },
           ]}
         />
@@ -240,22 +236,28 @@ export default function InstrukcjaPage() {
                 <p className="text-dark text-sm font-medium uppercase">Współczynnik kontrastu</p>
                 <p className="text-dark text-xl font-semibold">8.59:1</p>
               </div>
-              <div className="rounded-lg border border-neutral-200 bg-white p-3 space-y-2">
+              <div className="space-y-2 rounded-lg border border-neutral-200 bg-white p-3">
                 <div className="flex items-center justify-between">
                   <p className="text-dark text-sm font-semibold uppercase">Tekst zwykły</p>
                   <div className="flex gap-1">
-                    <Badge variant="success" size="sm">AA (min. 4.5:1)</Badge>
-                    <Badge variant="success" size="sm">AAA (min. 7:1)</Badge>
+                    <Badge variant="success" size="sm">
+                      AA (min. 4.5:1)
+                    </Badge>
+                    <Badge variant="success" size="sm">
+                      AAA (min. 7:1)
+                    </Badge>
                   </div>
                 </div>
                 <div className="rounded-lg border border-neutral-200 px-3 py-2" style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}>
                   <p className="text-sm">Przykładowy tekst zwykły</p>
                 </div>
               </div>
-              <div className="rounded-lg border border-neutral-200 bg-white p-3 space-y-2">
+              <div className="space-y-2 rounded-lg border border-neutral-200 bg-white p-3">
                 <div className="flex items-center justify-between">
                   <p className="text-dark text-sm font-semibold uppercase">Ikona</p>
-                  <Badge variant="success" size="sm">AA (min. 3:1)</Badge>
+                  <Badge variant="success" size="sm">
+                    AA (min. 3:1)
+                  </Badge>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-200" style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}>
@@ -268,9 +270,15 @@ export default function InstrukcjaPage() {
         >
           <p className="text-mid mb-4">Po wprowadzeniu kolorów narzędzie wyświetla trzy sekcje wyników:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
-            <li><strong>Tekst zwykły</strong> — wymagany kontrast 4.5:1 (AA) lub 7:1 (AAA).</li>
-            <li><strong>Tekst duży / pogrubiony</strong> — wymagany kontrast 3:1 (AA) lub 4.5:1 (AAA).</li>
-            <li><strong>Ikona</strong> — wymagany kontrast 3:1 (AA) dla elementów graficznych.</li>
+            <li>
+              <strong>Tekst zwykły</strong> — wymagany kontrast 4.5:1 (AA) lub 7:1 (AAA).
+            </li>
+            <li>
+              <strong>Tekst duży / pogrubiony</strong> — wymagany kontrast 3:1 (AA) lub 4.5:1 (AAA).
+            </li>
+            <li>
+              <strong>Ikona</strong> — wymagany kontrast 3:1 (AA) dla elementów graficznych.
+            </li>
           </ul>
           <p className="text-mid mt-3">Zielony badge oznacza spełniony wymóg, czerwony — wymaga poprawy.</p>
         </SectionDemo>
@@ -361,23 +369,14 @@ export default function InstrukcjaPage() {
 
         <Gap variant="line" />
 
-        <FaqPanels
-          title="Najczęściej zadawane pytania"
-          items={faqItems}
-          generateSchema
-        />
+        <FaqPanels title="Najczęściej zadawane pytania" items={faqItems} generateSchema />
 
         <Gap variant="line" />
 
-        <SectionInfo
-          title="Wypróbuj narzędzie"
-          btnOne="Przejdź do testera kontrastu WCAG"
-          btnOneLink="/narzedzia/tester-kontrastu-kolorow-wcag"
-          btnTwo="Zobacz inne narzędzia"
-          btnTwoLink="/narzedzia"
-        >
+        <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do testera kontrastu WCAG" btnOneLink="/narzedzia/tester-kontrastu-kolorow-wcag" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa tester kontrastu, możesz sprawdzić kolory na swojej stronie. Jeśli potrzebujesz pomocy z dostępnością i optymalizacją strony — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> zgodnych z wytycznymi WCAG.
+            Teraz, gdy wiesz jak działa tester kontrastu, możesz sprawdzić kolory na swojej stronie. Jeśli potrzebujesz pomocy z dostępnością i optymalizacją strony —{' '}
+            <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> zgodnych z wytycznymi WCAG.
           </p>
         </SectionInfo>
 

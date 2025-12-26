@@ -71,8 +71,7 @@ const schema = {
 const faqItems = [
   {
     question: 'Czy mój obraz jest wysyłany na serwer?',
-    answer:
-      'Nie. Wszystkie operacje wykonywane są lokalnie w przeglądarce. Obraz nie opuszcza komputera — narzędzie działa całkowicie offline po załadowaniu strony.',
+    answer: 'Nie. Wszystkie operacje wykonywane są lokalnie w przeglądarce. Obraz nie opuszcza komputera — narzędzie działa całkowicie offline po załadowaniu strony.',
   },
   {
     question: 'Jaki minimalny rozmiar powinien mieć obraz źródłowy?',
@@ -81,8 +80,7 @@ const faqItems = [
   },
   {
     question: 'Czy mogę wygenerować tylko niektóre rozmiary ikon?',
-    answer:
-      'Tak. Przed wygenerowaniem możesz wybrać, które rozmiary ikon potrzebujesz. Nie musisz generować wszystkich — zaznacz tylko te, które będą używane na stronie.',
+    answer: 'Tak. Przed wygenerowaniem możesz wybrać, które rozmiary ikon potrzebujesz. Nie musisz generować wszystkich — zaznacz tylko te, które będą używane na stronie.',
   },
   {
     question: 'Co to jest plik site.webmanifest i czy go potrzebuję?',
@@ -91,8 +89,7 @@ const faqItems = [
   },
   {
     question: 'Dlaczego warto użyć formatu SVG jako źródła?',
-    answer:
-      'Format SVG to grafika wektorowa, która skaluje się bez utraty jakości. Jeśli masz logo w formacie SVG, użyj go jako źródła — ikony we wszystkich rozmiarach będą ostre i wyraźne.',
+    answer: 'Format SVG to grafika wektorowa, która skaluje się bez utraty jakości. Jeśli masz logo w formacie SVG, użyj go jako źródła — ikony we wszystkich rozmiarach będą ostre i wyraźne.',
   },
 ];
 
@@ -122,15 +119,16 @@ export default function Page() {
 
         <SectionInfo title="Co to jest favicon i do czego służy?">
           <p className="mb-4">
-            Favicon (skrót od <em>favorite icon</em>) to mała ikona, która pojawia się w kilku miejscach: na karcie przeglądarki obok tytułu strony, w zakładkach (ulubionych) oraz na ekranie głównym telefonu, gdy ktoś
-            doda stronę jako skrót.
+            Favicon (skrót od <em>favorite icon</em>) to mała ikona, która pojawia się w kilku miejscach: na karcie przeglądarki obok tytułu strony, w zakładkach (ulubionych) oraz na ekranie głównym
+            telefonu, gdy ktoś doda stronę jako skrót.
           </p>
           <p className="mb-4">
-            Ta niepozorna grafika pełni ważną funkcję — pomaga użytkownikom szybko rozpoznać stronę wśród wielu otwartych kart. Gdy masz kilkanaście kart w przeglądarce, favicon jest często jedynym widocznym elementem
-            identyfikującym stronę.
+            Ta niepozorna grafika pełni ważną funkcję — pomaga użytkownikom szybko rozpoznać stronę wśród wielu otwartych kart. Gdy masz kilkanaście kart w przeglądarce, favicon jest często jedynym
+            widocznym elementem identyfikującym stronę.
           </p>
           <p>
-            Dla aplikacji webowych (PWA — Progressive Web Apps) favicon w odpowiednich rozmiarach jest niezbędny do prawidłowego wyświetlania ikony aplikacji na urządzeniach mobilnych i w sklepach z aplikacjami.
+            Dla aplikacji webowych (PWA — Progressive Web Apps) favicon w odpowiednich rozmiarach jest niezbędny do prawidłowego wyświetlania ikony aplikacji na urządzeniach mobilnych i w sklepach z
+            aplikacjami.
           </p>
         </SectionInfo>
 
@@ -138,10 +136,10 @@ export default function Page() {
 
         <SectionInfo title="Jakie rozmiary ikon są potrzebne?">
           <p className="mb-6">Generator tworzy zestaw ikon zgodny z aktualnymi wytycznymi (2024-2025). Każdy rozmiar ma swoje zastosowanie:</p>
-          <ul className="mb-6 list-disc pl-5 space-y-3">
+          <ul className="mb-6 list-disc space-y-3 pl-5">
             <li>
-              <strong>favicon.ico (32x32)</strong> — klasyczny format ikony rozpoznawany przez wszystkie przeglądarki. Wyświetla się na karcie przeglądarki w starszych systemach i jako domyślna ikona w przypadku braku
-              innych.
+              <strong>favicon.ico (32x32)</strong> — klasyczny format ikony rozpoznawany przez wszystkie przeglądarki. Wyświetla się na karcie przeglądarki w starszych systemach i jako domyślna ikona
+              w przypadku braku innych.
             </li>
             <li>
               <strong>16x16 PNG</strong> — najmniejsza ikona, używana w niektórych przeglądarkach na kartach oraz w interfejsie (np. obok adresu URL).
@@ -197,7 +195,7 @@ export default function Page() {
               description: (
                 <div>
                   <p className="mb-2">Ustaw dodatkowe opcje:</p>
-                  <ul className="list-disc pl-5 text-light">
+                  <ul className="text-light list-disc pl-5">
                     <li>
                       <strong>Tło</strong> — przezroczyste lub wybrany kolor
                     </li>
@@ -283,18 +281,14 @@ export default function Page() {
               icon: <RiFolderZipLine className="h-6 w-6" />,
               title: 'Pobierz wszystko jako ZIP',
               description: (
-                <p>
-                  Kliknij przycisk „Pobierz wszystko". Wszystkie wygenerowane pliki zostaną spakowane do jednego archiwum ZIP. To najwygodniejsza opcja, gdy potrzebujesz wszystkich ikon.
-                </p>
+                <p>Kliknij przycisk „Pobierz wszystko". Wszystkie wygenerowane pliki zostaną spakowane do jednego archiwum ZIP. To najwygodniejsza opcja, gdy potrzebujesz wszystkich ikon.</p>
               ),
             },
             {
               icon: <RiFileDownloadLine className="h-6 w-6" />,
               title: 'Pobierz pojedyncze pliki',
               description: (
-                <p>
-                  Każda wygenerowana ikona ma własny przycisk pobierania. Kliknij na konkretny plik, żeby pobrać tylko tę jedną ikonę. Przydatne, gdy chcesz zaktualizować tylko jeden rozmiar.
-                </p>
+                <p>Każda wygenerowana ikona ma własny przycisk pobierania. Kliknij na konkretny plik, żeby pobrać tylko tę jedną ikonę. Przydatne, gdy chcesz zaktualizować tylko jeden rozmiar.</p>
               ),
             },
           ]}
@@ -313,14 +307,15 @@ export default function Page() {
                 <strong>Wygląd → Dostosuj → Tożsamość witryny → Ikona witryny</strong>
               </p>
               <p className="text-light">
-                Wgraj tam plik 512x512 — WordPress automatycznie wygeneruje mniejsze rozmiary. Jeśli chcesz mieć pełną kontrolę nad ikonami, możesz też wgrać pliki bezpośrednio do katalogu głównego strony przez FTP.
+                Wgraj tam plik 512x512 — WordPress automatycznie wygeneruje mniejsze rozmiary. Jeśli chcesz mieć pełną kontrolę nad ikonami, możesz też wgrać pliki bezpośrednio do katalogu głównego
+                strony przez FTP.
               </p>
             </div>
 
             <div>
               <h3 className="h4 mb-2">Własna strona HTML</h3>
               <p className="mb-2">Umieść wygenerowane pliki w katalogu głównym strony (tam, gdzie jest plik index.html). Następnie dodaj w sekcji &lt;head&gt; odpowiednie tagi:</p>
-              <pre className="bg-slate-100 p-4 rounded-lg overflow-x-auto text-sm mb-2">
+              <pre className="mb-2 overflow-x-auto rounded-lg bg-slate-100 p-4 text-sm">
                 <code>{`<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/icon-32x32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">`}</code>
@@ -330,8 +325,10 @@ export default function Page() {
 
             <div>
               <h3 className="h4 mb-2">Next.js / React</h3>
-              <p className="mb-2">W Next.js (App Router) umieść pliki favicon w katalogu <code>app/</code> lub <code>public/</code>:</p>
-              <ul className="list-disc pl-5 text-light mb-2">
+              <p className="mb-2">
+                W Next.js (App Router) umieść pliki favicon w katalogu <code>app/</code> lub <code>public/</code>:
+              </p>
+              <ul className="text-light mb-2 list-disc pl-5">
                 <li>
                   <code>app/favicon.ico</code> — automatycznie rozpoznawany przez Next.js
                 </li>
@@ -364,28 +361,24 @@ export default function Page() {
 
             <div>
               <h3 className="h4 mb-1">Kwadratowy format</h3>
-              <p className="text-light">Favicon jest kwadratowy. Jeśli źródłowy obraz ma proporcje inne niż 1:1, zostanie przycięty lub rozciągnięty. Przed generowaniem przytnij grafikę do kwadratu.</p>
+              <p className="text-light">
+                Favicon jest kwadratowy. Jeśli źródłowy obraz ma proporcje inne niż 1:1, zostanie przycięty lub rozciągnięty. Przed generowaniem przytnij grafikę do kwadratu.
+              </p>
             </div>
 
             <div>
               <h3 className="h4 mb-1">Wystarczająco duży rozmiar</h3>
-              <p className="text-light">
-                Zalecamy obraz źródłowy o wymiarach co najmniej 512x512 pikseli. Mniejsze obrazy będą skalowane w górę, co może obniżyć jakość większych ikon.
-              </p>
+              <p className="text-light">Zalecamy obraz źródłowy o wymiarach co najmniej 512x512 pikseli. Mniejsze obrazy będą skalowane w górę, co może obniżyć jakość większych ikon.</p>
             </div>
 
             <div>
               <h3 className="h4 mb-1">Format SVG jako idealne źródło</h3>
-              <p className="text-light">
-                Jeśli masz logo w formacie SVG (grafika wektorowa), użyj go. SVG skaluje się bez utraty jakości, więc ikony we wszystkich rozmiarach będą ostre.
-              </p>
+              <p className="text-light">Jeśli masz logo w formacie SVG (grafika wektorowa), użyj go. SVG skaluje się bez utraty jakości, więc ikony we wszystkich rozmiarach będą ostre.</p>
             </div>
 
             <div>
               <h3 className="h4 mb-1">Kontrastowe kolory</h3>
-              <p className="text-light">
-                Favicon musi być widoczny na różnych tłach (jasne karty, ciemny tryb). Wybierz kolory, które zachowują czytelność w obu przypadkach.
-              </p>
+              <p className="text-light">Favicon musi być widoczny na różnych tłach (jasne karty, ciemny tryb). Wybierz kolory, które zachowują czytelność w obu przypadkach.</p>
             </div>
           </div>
         </SectionInfo>
@@ -396,15 +389,11 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo
-          title="Wypróbuj narzędzie"
-          btnOne="Przejdź do generatora favicon"
-          btnOneLink="/narzedzia/darmowy-generator-favicon-ico"
-          btnTwo="Zobacz inne narzędzia"
-          btnTwoLink="/narzedzia"
-        >
+        <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do generatora favicon" btnOneLink="/narzedzia/darmowy-generator-favicon-ico" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa generator, możesz stworzyć favicon dla swojej strony. Jeśli potrzebujesz pomocy przy tworzeniu strony lub identyfikacji wizualnej — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> i <Link href="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">projektowaniem identyfikacji wizualnej</Link>.
+            Teraz, gdy wiesz jak działa generator, możesz stworzyć favicon dla swojej strony. Jeśli potrzebujesz pomocy przy tworzeniu strony lub identyfikacji wizualnej —{' '}
+            <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> i{' '}
+            <Link href="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">projektowaniem identyfikacji wizualnej</Link>.
           </p>
         </SectionInfo>
 

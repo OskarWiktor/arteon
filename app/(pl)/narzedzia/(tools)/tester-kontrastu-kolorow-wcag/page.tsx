@@ -70,7 +70,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-
         <WcagContrastChecker />
 
         <Gap size="sm" />

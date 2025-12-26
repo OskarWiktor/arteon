@@ -16,13 +16,11 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
   title: 'Jak używać generatora palet kolorów online | Instrukcja krok po kroku',
-  description:
-    'Instrukcja generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają palety i jak skopiować kolory do projektu.',
+  description: 'Instrukcja generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają palety i jak skopiować kolory do projektu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja') },
   openGraph: {
     title: 'Jak używać generatora palet kolorów online | Instrukcja krok po kroku',
-    description:
-      'Szczegółowa instrukcja obsługi generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają poszczególne palety i jak skopiować kolory do swojego projektu.',
+    description: 'Szczegółowa instrukcja obsługi generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają poszczególne palety i jak skopiować kolory do swojego projektu.',
     url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja'),
     type: 'website',
     images: [
@@ -77,8 +75,7 @@ const faqItems = [
   },
   {
     question: 'Czy moje kolory są wysyłane na serwer?',
-    answer:
-      'Nie. Wszystkie obliczenia są wykonywane lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer - narzędzie działa całkowicie offline po załadowaniu strony.',
+    answer: 'Nie. Wszystkie obliczenia są wykonywane lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer - narzędzie działa całkowicie offline po załadowaniu strony.',
   },
   {
     question: 'Ile kolorów zawiera każda paleta?',
@@ -125,26 +122,27 @@ export default function Page() {
             Paleta kolorów to zestaw barw, które do siebie pasują i tworzą spójną całość. Dobrze dobrana paleta sprawia, że strona, grafika czy marka wygląda profesjonalnie i przyjemnie dla oka.
           </p>
           <p className="text-mid mt-3">
-            Generator tworzy palety automatycznie na podstawie jednego koloru bazowego — podajesz jeden kolor (np. kolor Twojego logo), a narzędzie generuje kilka różnych palet: monochromatyczną, analogiczną, komplementarną i inne, zgodnie z teorią koloru.
+            Generator tworzy palety automatycznie na podstawie jednego koloru bazowego — podajesz jeden kolor (np. kolor Twojego logo), a narzędzie generuje kilka różnych palet: monochromatyczną,
+            analogiczną, komplementarną i inne, zgodnie z teorią koloru.
           </p>
         </SectionInfo>
 
         <Gap variant="line" />
 
         <SectionInfo title="Jak wybrać kolor bazowy?">
-          <p className="text-mid">
-            Kolor bazowy to punkt wyjścia dla wszystkich generowanych palet. Możesz go wprowadzić na dwa sposoby:
-          </p>
-          <ul className="text-mid mt-3 list-disc pl-5 space-y-2">
+          <p className="text-mid">Kolor bazowy to punkt wyjścia dla wszystkich generowanych palet. Możesz go wprowadzić na dwa sposoby:</p>
+          <ul className="text-mid mt-3 list-disc space-y-2 pl-5">
             <li>
               <strong>Próbnik kolorów (color picker)</strong> - kliknij kolorowy kwadrat po lewej stronie, aby otworzyć systemowy próbnik kolorów. To najszybszy sposób, jeśli szukasz koloru wizualnie.
             </li>
             <li>
-              <strong>Pole tekstowe HEX</strong> - wpisz kod koloru w formacie HEX, np. <code className="rounded bg-black/5 px-1">#4F6BF5</code> lub skrócony <code className="rounded bg-black/5 px-1">#F00</code> (czerwony). Użyj tego sposobu, jeśli masz już konkretny kolor z brandingu lub projektu.
+              <strong>Pole tekstowe HEX</strong> - wpisz kod koloru w formacie HEX, np. <code className="rounded bg-black/5 px-1">#4F6BF5</code> lub skrócony{' '}
+              <code className="rounded bg-black/5 px-1">#F00</code> (czerwony). Użyj tego sposobu, jeśli masz już konkretny kolor z brandingu lub projektu.
             </li>
           </ul>
           <p className="text-mid mt-3">
-            Po wpisaniu koloru kliknij przycisk <strong>Zaktualizuj kolor</strong>, aby wygenerować palety. Jeśli nie masz jeszcze koloru, użyj przycisku <strong>Losowy kolor</strong> - narzędzie wybierze losowy kolor, od którego możesz zacząć eksperymentować.
+            Po wpisaniu koloru kliknij przycisk <strong>Zaktualizuj kolor</strong>, aby wygenerować palety. Jeśli nie masz jeszcze koloru, użyj przycisku <strong>Losowy kolor</strong> - narzędzie
+            wybierze losowy kolor, od którego możesz zacząć eksperymentować.
           </p>
           <div className="mt-4">
             <Button link="/narzedzia/generator-palet-kolorow-online" variant="accent">
@@ -307,9 +305,7 @@ export default function Page() {
                     <p className="text-dark text-sm leading-tight font-medium">#1a3a8f</p>
                     <p className="text-light truncate text-[11px]!">hsl(227, 69%, 33%)</p>
                   </div>
-                  <button className="flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium text-dark hover:bg-neutral-100">
-                    Kopiuj
-                  </button>
+                  <button className="text-dark flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium hover:bg-neutral-100">Kopiuj</button>
                 </div>
                 <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
                   <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: '#4F6BF5' }} />
@@ -317,9 +313,7 @@ export default function Page() {
                     <p className="text-dark text-sm leading-tight font-medium">#4F6BF5</p>
                     <p className="text-light truncate text-[11px]!">hsl(231, 88%, 64%)</p>
                   </div>
-                  <button className="flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium text-dark hover:bg-neutral-100">
-                    Kopiuj
-                  </button>
+                  <button className="text-dark flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium hover:bg-neutral-100">Kopiuj</button>
                 </div>
               </div>
             </div>
@@ -343,13 +337,15 @@ export default function Page() {
             <div>
               <p className="text-dark font-semibold">Komunikat o błędnym formacie koloru</p>
               <p className="text-mid mt-1">
-                Generator akceptuje tylko format HEX. Upewnij się, że wpisujesz kolor z hashem na początku, np. <code className="rounded bg-black/5 px-1">#FF5500</code>, a nie <code className="rounded bg-black/5 px-1">FF5500</code> lub <code className="rounded bg-black/5 px-1">rgb(255,85,0)</code>.
+                Generator akceptuje tylko format HEX. Upewnij się, że wpisujesz kolor z hashem na początku, np. <code className="rounded bg-black/5 px-1">#FF5500</code>, a nie{' '}
+                <code className="rounded bg-black/5 px-1">FF5500</code> lub <code className="rounded bg-black/5 px-1">rgb(255,85,0)</code>.
               </p>
             </div>
             <div>
               <p className="text-dark font-semibold">Skrócony format HEX (#RGB)</p>
               <p className="text-mid mt-1">
-                Możesz używać zarówno pełnego formatu <code className="rounded bg-black/5 px-1">#RRGGBB</code>, jak i skróconego <code className="rounded bg-black/5 px-1">#RGB</code>. Generator automatycznie rozpozna oba formaty.
+                Możesz używać zarówno pełnego formatu <code className="rounded bg-black/5 px-1">#RRGGBB</code>, jak i skróconego <code className="rounded bg-black/5 px-1">#RGB</code>. Generator
+                automatycznie rozpozna oba formaty.
               </p>
             </div>
           </div>
@@ -362,9 +358,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Wypróbuj narzędzie">
-          <p className="text-mid">
-            Teraz, gdy wiesz jak działają poszczególne palety, możesz stworzyć własny zestaw kolorów.
-          </p>
+          <p className="text-mid">Teraz, gdy wiesz jak działają poszczególne palety, możesz stworzyć własny zestaw kolorów.</p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Button link="/narzedzia/generator-palet-kolorow-online" variant="accent">
               Przejdź do generatora

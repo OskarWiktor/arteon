@@ -139,11 +139,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
       </div>
 
       {/* Mobile Modal */}
-      {mounted &&
-        createPortal(
-          <FilterModal isOpen={isModalOpen} onClose={closeModal} cats={cats} active={active} isRoot={isRoot} t={t} />,
-          document.body,
-        )}
+      {mounted && createPortal(<FilterModal isOpen={isModalOpen} onClose={closeModal} cats={cats} active={active} isRoot={isRoot} t={t} />, document.body)}
     </>
   );
 }

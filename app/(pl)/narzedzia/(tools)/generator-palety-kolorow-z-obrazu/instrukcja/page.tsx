@@ -72,8 +72,7 @@ const faqItems = [
   },
   {
     question: 'Czy moje zdjęcia są wysyłane na serwer?',
-    answer:
-      'Nie. Cała analiza odbywa się bezpośrednio w przeglądarce, na Twoim urządzeniu. Obraz nie jest nigdzie wysyłany ani przechowywany. Po zamknięciu strony dane znikają.',
+    answer: 'Nie. Cała analiza odbywa się bezpośrednio w przeglądarce, na Twoim urządzeniu. Obraz nie jest nigdzie wysyłany ani przechowywany. Po zamknięciu strony dane znikają.',
   },
   {
     question: 'Dlaczego narzędzie wyciągnęło inne kolory niż się spodziewałem?',
@@ -113,10 +112,12 @@ export default function Page() {
 
         <SectionInfo title="Do czego służy generator palety kolorów z obrazu?">
           <p className="text-mid">
-            To narzędzie analizuje wgrane zdjęcie i wyciąga z niego dominujące kolory. Dzięki temu możesz szybko stworzyć paletę barw na podstawie inspirującego zdjęcia, logo konkurencji czy zdjęcia produktu.
+            To narzędzie analizuje wgrane zdjęcie i wyciąga z niego dominujące kolory. Dzięki temu możesz szybko stworzyć paletę barw na podstawie inspirującego zdjęcia, logo konkurencji czy zdjęcia
+            produktu.
           </p>
           <p className="text-mid mt-3">
-            <strong>Gdzie to się przydaje?</strong> Przy projektowaniu identyfikacji wizualnej, tworzeniu spójnych grafik, dobieraniu kolorów do strony WWW i wszędzie tam, gdzie potrzebujesz wyciągnąć kolory z gotowego obrazu.
+            <strong>Gdzie to się przydaje?</strong> Przy projektowaniu identyfikacji wizualnej, tworzeniu spójnych grafik, dobieraniu kolorów do strony WWW i wszędzie tam, gdzie potrzebujesz wyciągnąć
+            kolory z gotowego obrazu.
           </p>
         </SectionInfo>
 
@@ -124,8 +125,8 @@ export default function Page() {
 
         <SectionInfo title="Jak dodać obraz?">
           <p className="text-mid">
-            Narzędzie oferuje dwa sposoby dodawania obrazu. Pierwszy to <strong>przeciągnięcie pliku</strong> bezpośrednio na wyznaczony obszar (tzw. drag and drop). Wystarczy otworzyć folder z obrazem,
-            chwycić plik myszką i upuścić go na pole z napisem zachęcającym do dodania pliku.
+            Narzędzie oferuje dwa sposoby dodawania obrazu. Pierwszy to <strong>przeciągnięcie pliku</strong> bezpośrednio na wyznaczony obszar (tzw. drag and drop). Wystarczy otworzyć folder z
+            obrazem, chwycić plik myszką i upuścić go na pole z napisem zachęcającym do dodania pliku.
           </p>
           <p className="text-mid mt-3">
             Drugi sposób to <strong>kliknięcie w pole do dodania pliku</strong>. Po kliknięciu otworzy się systemowe okno wyboru pliku, w którym możesz wskazać obraz z dowolnego miejsca na dysku.
@@ -139,7 +140,7 @@ export default function Page() {
 
         <SectionInfo title="Co robi narzędzie z obrazem?">
           <p className="text-mid">Po wgraniu obrazu narzędzie wykonuje kilka kroków w tle — wszystko dzieje się w przeglądarce, bez wysyłania pliku na serwer:</p>
-          <ol className="list-decimal list-inside text-mid mt-3 space-y-2">
+          <ol className="text-mid mt-3 list-inside list-decimal space-y-2">
             <li>
               <strong>Zmniejsza obraz</strong> do mniejszej rozdzielczości (około 240 pikseli). Dzięki temu analiza jest szybka nawet dla dużych zdjęć.
             </li>
@@ -166,16 +167,12 @@ export default function Page() {
               <div className="tool-upload-area">
                 <span className="mb-1 text-sm font-medium">Przeciągnij i upuść obraz tutaj</span>
                 <span className="text-light mb-2 text-xs">lub kliknij, aby wybrać plik z dysku</span>
-                <span className="inline-flex items-center rounded-full border border-neutral-200 bg-white px-2.5 py-0.5 text-xs font-medium shadow-sm">
-                  Obsługiwane: PNG, JPG/JPEG, SVG
-                </span>
+                <span className="inline-flex items-center rounded-full border border-neutral-200 bg-white px-2.5 py-0.5 text-xs font-medium shadow-sm">Obsługiwane: PNG, JPG/JPEG, SVG</span>
               </div>
             </div>
           }
         >
-          <p className="text-mid">
-            Przeciągnij plik bezpośrednio na pole do dodania pliku lub kliknij, aby otworzyć systemowe okno wyboru pliku.
-          </p>
+          <p className="text-mid">Przeciągnij plik bezpośrednio na pole do dodania pliku lub kliknij, aby otworzyć systemowe okno wyboru pliku.</p>
         </SectionDemo>
 
         <Gap variant="line" />
@@ -192,9 +189,7 @@ export default function Page() {
                     <p className="text-dark text-sm leading-tight font-medium">#2C5F2D</p>
                     <p className="text-light truncate text-[11px]!">rgb(44, 95, 45)</p>
                   </div>
-                  <button className="flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium text-dark hover:bg-neutral-100">
-                    Kopiuj
-                  </button>
+                  <button className="text-dark flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium hover:bg-neutral-100">Kopiuj</button>
                 </div>
                 <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
                   <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: '#97BC62' }} />
@@ -202,17 +197,13 @@ export default function Page() {
                     <p className="text-dark text-sm leading-tight font-medium">#97BC62</p>
                     <p className="text-light truncate text-[11px]!">rgb(151, 188, 98)</p>
                   </div>
-                  <button className="flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium text-dark hover:bg-neutral-100">
-                    Kopiuj
-                  </button>
+                  <button className="text-dark flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2.5 py-1.5 text-xs font-medium hover:bg-neutral-100">Kopiuj</button>
                 </div>
               </div>
             </div>
           }
         >
-          <p className="text-mid">
-            Kliknij przycisk kopiowania przy wybranym kolorze, a kod HEX trafi do schowka. Możesz go wkleić bezpośrednio do Figmy, Photoshopa, CSS lub innego narzędzia.
-          </p>
+          <p className="text-mid">Kliknij przycisk kopiowania przy wybranym kolorze, a kod HEX trafi do schowka. Możesz go wkleić bezpośrednio do Figmy, Photoshopa, CSS lub innego narzędzia.</p>
         </SectionDemo>
 
         <Gap variant="line" />
@@ -229,8 +220,8 @@ export default function Page() {
             <div>
               <p className="text-dark font-semibold">Zdjęcia z wyraźnym motywem</p>
               <p className="text-mid">
-                Zdjęcia produktów, wnętrz czy krajobrazów również działają dobrze, ale wynik będzie zawierał więcej odcieni. Jeśli szukasz konkretnego koloru (np. kolor produktu), upewnij się, że zajmuje on
-                dużą część obrazu.
+                Zdjęcia produktów, wnętrz czy krajobrazów również działają dobrze, ale wynik będzie zawierał więcej odcieni. Jeśli szukasz konkretnego koloru (np. kolor produktu), upewnij się, że
+                zajmuje on dużą część obrazu.
               </p>
             </div>
             <div>
@@ -262,21 +253,22 @@ export default function Page() {
             <div>
               <p className="text-dark font-semibold">Wyniki zawierają kolory, których nie widzę na obrazie</p>
               <p className="text-mid">
-                Mogą to być kolory cieni, gradientów lub odbić światła, które zajmują dużą część pikseli. Ludzkie oko może je ignorować, ale algorytm je wykrywa. Spróbuj użyć obrazu z bardziej jednolitymi
-                kolorami lub przyciąć fragmenty z cieniami.
+                Mogą to być kolory cieni, gradientów lub odbić światła, które zajmują dużą część pikseli. Ludzkie oko może je ignorować, ale algorytm je wykrywa. Spróbuj użyć obrazu z bardziej
+                jednolitymi kolorami lub przyciąć fragmenty z cieniami.
               </p>
             </div>
             <div>
               <p className="text-dark font-semibold">Dominuje kolor tła zamiast głównego obiektu</p>
               <p className="text-mid">
-                Jeśli tło zajmuje większą powierzchnię niż obiekt, jego kolor będzie na pierwszym miejscu. Rozwiązanie: użyj obrazu z przezroczystym tłem lub przytnij obraz tak, żeby obiekt zajmował większą
-                część.
+                Jeśli tło zajmuje większą powierzchnię niż obiekt, jego kolor będzie na pierwszym miejscu. Rozwiązanie: użyj obrazu z przezroczystym tłem lub przytnij obraz tak, żeby obiekt zajmował
+                większą część.
               </p>
             </div>
             <div>
               <p className="text-dark font-semibold">Plik nie jest akceptowany</p>
               <p className="text-mid">
-                Upewnij się, że plik jest w formacie PNG, JPG lub SVG. Inne formaty (np. GIF, TIFF, HEIC, PDF) nie są obsługiwane. Jeśli masz plik w nieobsługiwanym formacie, skonwertuj go przed wgraniem.
+                Upewnij się, że plik jest w formacie PNG, JPG lub SVG. Inne formaty (np. GIF, TIFF, HEIC, PDF) nie są obsługiwane. Jeśli masz plik w nieobsługiwanym formacie, skonwertuj go przed
+                wgraniem.
               </p>
             </div>
           </div>
@@ -293,15 +285,11 @@ export default function Page() {
           <div className="mt-4 space-y-4">
             <div>
               <p className="text-dark font-semibold">Inspiracja do brandingu</p>
-              <p className="text-mid">
-                Wgraj zdjęcie, które oddaje klimat Twojej marki — krajobraz, wnętrze, produkt. Wyciągnij z niego kolory i użyj jako bazy do identyfikacji wizualnej.
-              </p>
+              <p className="text-mid">Wgraj zdjęcie, które oddaje klimat Twojej marki — krajobraz, wnętrze, produkt. Wyciągnij z niego kolory i użyj jako bazy do identyfikacji wizualnej.</p>
             </div>
             <div>
               <p className="text-dark font-semibold">Spójne grafiki social media</p>
-              <p className="text-mid">
-                Masz zdjęcie produktu i chcesz dobrać do niego tło lub akcenty? Wyciągnij kolory ze zdjęcia i użyj ich w grafice — całość będzie spójna.
-              </p>
+              <p className="text-mid">Masz zdjęcie produktu i chcesz dobrać do niego tło lub akcenty? Wyciągnij kolory ze zdjęcia i użyj ich w grafice — całość będzie spójna.</p>
             </div>
           </div>
         </SectionInfo>
@@ -309,9 +297,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Wypróbuj narzędzie">
-          <p className="text-mid">
-            Teraz, gdy wiesz jak działa generator, możesz wyciągnąć kolory ze swojego obrazu.
-          </p>
+          <p className="text-mid">Teraz, gdy wiesz jak działa generator, możesz wyciągnąć kolory ze swojego obrazu.</p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Button link="/narzedzia/generator-palety-kolorow-z-obrazu" variant="accent">
               Przejdź do generatora

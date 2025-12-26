@@ -84,7 +84,7 @@ export default function HeroBanner({
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center md:bg-fixed' : ''} ${baseBg} flex h-auto min-h-[420px] items-center overflow-hidden py-10 md:min-h-[460px] md:py-0 lg:min-h-[520px]`}
+        className={`relative ${hasBg ? 'bg-cover bg-center md:bg-fixed' : ''} ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[480px]`}
         style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
       >
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}

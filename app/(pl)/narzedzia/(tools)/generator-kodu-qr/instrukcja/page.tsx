@@ -11,19 +11,31 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import FaqPanels from '@/components/ui/FaqPanels';
 import Link from 'next/link';
-import { RiLink, RiFileTextLine, RiContactsLine, RiMailLine, RiPhoneLine, RiFullscreenLine, RiLayoutGridLine, RiPaletteLine, RiPaintBrushLine, RiPrinterLine, RiBookOpenLine, RiRestaurantLine, RiVerifiedBadgeLine } from 'react-icons/ri';
+import {
+  RiLink,
+  RiFileTextLine,
+  RiContactsLine,
+  RiMailLine,
+  RiPhoneLine,
+  RiFullscreenLine,
+  RiLayoutGridLine,
+  RiPaletteLine,
+  RiPaintBrushLine,
+  RiPrinterLine,
+  RiBookOpenLine,
+  RiRestaurantLine,
+  RiVerifiedBadgeLine,
+} from 'react-icons/ri';
 import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
   title: 'Jak używać generatora kodów QR | Instrukcja krok po kroku',
-  description:
-    'Instrukcja generatora kodów QR. Dowiedz się, jak zakodować URL, wizytówkę vCard, e-mail, jak dostosować wygląd kodu i pobrać go do druku.',
+  description: 'Instrukcja generatora kodów QR. Dowiedz się, jak zakodować URL, wizytówkę vCard, e-mail, jak dostosować wygląd kodu i pobrać go do druku.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-kodu-qr/instrukcja') },
   openGraph: {
     title: 'Jak używać generatora kodów QR | Instrukcja krok po kroku',
-    description:
-      'Szczegółowa instrukcja obsługi generatora kodów QR. Dowiedz się, jak zakodować adres URL, wizytówkę vCard czy e-mail, jak dostosować wygląd kodu i jak go pobrać do druku.',
+    description: 'Szczegółowa instrukcja obsługi generatora kodów QR. Dowiedz się, jak zakodować adres URL, wizytówkę vCard czy e-mail, jak dostosować wygląd kodu i jak go pobrać do druku.',
     url: toAbsoluteUrl('/narzedzia/generator-kodu-qr/instrukcja'),
     type: 'website',
     images: [
@@ -128,8 +140,8 @@ export default function Page() {
 
         <SectionInfo title="Co to jest kod QR i jak działa?">
           <p className="text-mid">
-            Kod QR (od angielskiego <em>Quick Response</em> - szybka odpowiedź) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem w telefonie. Po zeskanowaniu telefon automatycznie wykonuje
-            zapisaną akcję: otwiera stronę internetową, zapisuje kontakt w książce adresowej, rozpoczyna połączenie telefoniczne lub tworzy wiadomość e-mail.
+            Kod QR (od angielskiego <em>Quick Response</em> - szybka odpowiedź) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem w telefonie. Po zeskanowaniu telefon automatycznie
+            wykonuje zapisaną akcję: otwiera stronę internetową, zapisuje kontakt w książce adresowej, rozpoczyna połączenie telefoniczne lub tworzy wiadomość e-mail.
           </p>
           <p className="text-mid mt-3">
             W przeciwieństwie do tradycyjnych kodów kreskowych (które przechowują tylko ciąg cyfr), kody QR mogą zawierać różne typy danych: adresy URL, tekst, wizytówki elektroniczne (vCard), adresy
@@ -217,8 +229,8 @@ export default function Page() {
               <strong>Wybierz typ danych</strong> - z listy rozwijanej wybierz, co chcesz zakodować: adres URL, tekst, wizytówkę (vCard), e-mail lub telefon.
             </li>
             <li>
-              <strong>Wpisz dane</strong> - wypełnij odpowiednie pola. Dla URL wpisz pełny adres strony (z <code className="rounded bg-black/5 px-1">https://</code>). Dla vCard podaj przynajmniej imię i
-              nazwisko (pozostałe pola są opcjonalne).
+              <strong>Wpisz dane</strong> - wypełnij odpowiednie pola. Dla URL wpisz pełny adres strony (z <code className="rounded bg-black/5 px-1">https://</code>). Dla vCard podaj przynajmniej imię
+              i nazwisko (pozostałe pola są opcjonalne).
             </li>
             <li>
               <strong>Dostosuj wygląd</strong> - wybierz rozmiar (w pikselach), margines, kolory kodu i tła oraz poziom korekcji błędów.
@@ -289,27 +301,33 @@ export default function Page() {
             <div className="space-y-3">
               <p className="text-dark text-sm font-semibold uppercase">Poziom korekcji</p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="default" size="sm">L (7%)</Badge>
-                <Badge variant="selected" size="sm">M (15%)</Badge>
-                <Badge variant="default" size="sm">Q (25%)</Badge>
-                <Badge variant="default" size="sm">H (30%)</Badge>
+                <Badge variant="default" size="sm">
+                  L (7%)
+                </Badge>
+                <Badge variant="selected" size="sm">
+                  M (15%)
+                </Badge>
+                <Badge variant="default" size="sm">
+                  Q (25%)
+                </Badge>
+                <Badge variant="default" size="sm">
+                  H (30%)
+                </Badge>
               </div>
               <div className="mt-3 rounded-lg border border-neutral-200 bg-white p-3">
-                <p className="text-mid text-sm">Poziom <strong>M</strong> — kod może być uszkodzony do 15% i nadal będzie czytelny.</p>
-                <p className="text-light text-xs mt-1">Zalecany dla większości zastosowań drukowanych.</p>
+                <p className="text-mid text-sm">
+                  Poziom <strong>M</strong> — kod może być uszkodzony do 15% i nadal będzie czytelny.
+                </p>
+                <p className="text-light mt-1 text-xs">Zalecany dla większości zastosowań drukowanych.</p>
               </div>
             </div>
           }
         >
-          <p className="text-mid">
-            Poziom korekcji błędów określa, jaka część kodu może być uszkodzona lub zasłonięta, a kod nadal będzie czytelny.
-          </p>
+          <p className="text-mid">Poziom korekcji błędów określa, jaka część kodu może być uszkodzona lub zasłonięta, a kod nadal będzie czytelny.</p>
           <div className="mt-4 space-y-3">
             <div>
               <p className="text-dark font-semibold">L - Niski (7%)</p>
-              <p className="text-mid mt-1">
-                Najmniejszy kod, ale najmniej odporny na uszkodzenia. Dla materiałów cyfrowych.
-              </p>
+              <p className="text-mid mt-1">Najmniejszy kod, ale najmniej odporny na uszkodzenia. Dla materiałów cyfrowych.</p>
             </div>
             <div>
               <p className="text-dark font-semibold">M - Średni (15%) - domyślny</p>
@@ -372,7 +390,8 @@ export default function Page() {
               title: 'Opakowania produktów',
               description: (
                 <p>
-                  Link do instrukcji obsługi, karty produktu, filmu instruktażowego lub formularza rejestracji gwarancji. Oszczędza miejsce na opakowaniu i pozwala aktualizować treści bez zmiany druku.
+                  Link do instrukcji obsługi, karty produktu, filmu instruktażowego lub formularza rejestracji gwarancji. Oszczędza miejsce na opakowaniu i pozwala aktualizować treści bez zmiany
+                  druku.
                 </p>
               ),
             },
@@ -380,19 +399,13 @@ export default function Page() {
               icon: <RiRestaurantLine className="h-6 w-6" />,
               title: 'Menu restauracji',
               description: (
-                <p>
-                  Naklejki na stolikach z kodem QR prowadzącym do menu online. Higieniczne (bez dotykania wspólnych kart) i łatwe do aktualizacji - zmiana menu nie wymaga ponownego druku.
-                </p>
+                <p>Naklejki na stolikach z kodem QR prowadzącym do menu online. Higieniczne (bez dotykania wspólnych kart) i łatwe do aktualizacji - zmiana menu nie wymaga ponownego druku.</p>
               ),
             },
             {
               icon: <RiVerifiedBadgeLine className="h-6 w-6" />,
               title: 'Identyfikatory i konferencje',
-              description: (
-                <p>
-                  Kod QR z wizytówką vCard na identyfikatorze. Po zeskanowaniu kontakt zostaje automatycznie zapisany w telefonie rozmówcy - bez wymiany papierowych wizytówek.
-                </p>
-              ),
+              description: <p>Kod QR z wizytówką vCard na identyfikatorze. Po zeskanowaniu kontakt zostaje automatycznie zapisany w telefonie rozmówcy - bez wymiany papierowych wizytówek.</p>,
             },
           ]}
         />
@@ -423,15 +436,10 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo
-          title="Wypróbuj narzędzie"
-          btnOne="Przejdź do generatora kodów QR"
-          btnOneLink="/narzedzia/generator-kodu-qr"
-          btnTwo="Zobacz inne narzędzia"
-          btnTwoLink="/narzedzia"
-        >
+        <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do generatora kodów QR" btnOneLink="/narzedzia/generator-kodu-qr" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa generator, możesz stworzyć własny kod QR. Jeśli potrzebujesz profesjonalnych materiałów drukowanych z kodami QR — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/projekty-graficzne">projektami graficznymi</Link>, w tym wizytówkami, ulotkami i katalogami.
+            Teraz, gdy wiesz jak działa generator, możesz stworzyć własny kod QR. Jeśli potrzebujesz profesjonalnych materiałów drukowanych z kodami QR —{' '}
+            <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/projekty-graficzne">projektami graficznymi</Link>, w tym wizytówkami, ulotkami i katalogami.
           </p>
         </SectionInfo>
 

@@ -349,12 +349,7 @@ export default function OfferBlogPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel
-          title="Sprawdź nasze artykuły dotyczące blogów"
-          subtitle="Edukacja"
-          articles={articles}
-          slugs={RELATED_ARTICLE_SLUGS}
-        />
+        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące blogów" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>

@@ -17,13 +17,11 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
   title: 'Instrukcja zmiany rozmiaru i kadrowania zdjęć - Arteon',
-  description:
-    'Instrukcja narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować plik.',
+  description: 'Instrukcja narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować plik.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja') },
   openGraph: {
     title: 'Instrukcja zmiany rozmiaru i kadrowania zdjęć - Arteon',
-    description:
-      'Szczegółowa instrukcja obsługi narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować gotowy plik.',
+    description: 'Szczegółowa instrukcja obsługi narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować gotowy plik.',
     url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja'),
     type: 'website',
     images: [
@@ -123,9 +121,7 @@ export default function Page() {
         <Gap size="sm" />
 
         <SectionInfo title="Jak dodać obraz?">
-          <p className="text-mid">
-            Narzędzie przyjmuje obrazy w formatach JPG, PNG i WebP. Możesz dodać zdjęcie na dwa sposoby:
-          </p>
+          <p className="text-mid">Narzędzie przyjmuje obrazy w formatach JPG, PNG i WebP. Możesz dodać zdjęcie na dwa sposoby:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-5">
             <li>
               <strong>Przeciągnij i upuść</strong> - chwyć plik z folderu na komputerze i upuść go na pole do dodania pliku (pole z przerywaną ramką).
@@ -134,9 +130,7 @@ export default function Page() {
               <strong>Kliknij i wybierz</strong> - kliknij w pole do dodania pliku, a otworzy się okno wyboru pliku z dysku.
             </li>
           </ul>
-          <p className="text-mid mt-3">
-            Po dodaniu obrazu narzędzie automatycznie odczyta jego oryginalne wymiary i wyświetli podgląd. Możesz teraz przejść do ustawień kadru.
-          </p>
+          <p className="text-mid mt-3">Po dodaniu obrazu narzędzie automatycznie odczyta jego oryginalne wymiary i wyświetli podgląd. Możesz teraz przejść do ustawień kadru.</p>
           <p className="text-mid mt-3">
             <Link href="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia" className="inline-link">
               Przejdź do narzędzia →
@@ -161,9 +155,7 @@ export default function Page() {
             </div>
           }
         >
-          <p className="text-mid">
-            Przeciągnij plik bezpośrednio na pole do dodania pliku lub kliknij, aby otworzyć systemowe okno wyboru pliku.
-          </p>
+          <p className="text-mid">Przeciągnij plik bezpośrednio na pole do dodania pliku lub kliknij, aby otworzyć systemowe okno wyboru pliku.</p>
         </SectionDemo>
 
         <Gap variant="line" />
@@ -173,7 +165,7 @@ export default function Page() {
           demo={
             <div className="tool-section space-y-3">
               <div className="flex flex-wrap gap-2">
-                <button className="flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! bg-slate-600 text-white">
+                <button className="flex items-center gap-2 rounded-md border bg-slate-600 px-3 py-1.5 text-[14px]! text-white">
                   <span>Wymiary w px</span>
                 </button>
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
@@ -214,110 +206,62 @@ export default function Page() {
             {
               icon: <RiInstagramLine className="h-6 w-6" />,
               title: 'Instagram - post kwadrat (1080×1080)',
-              description: (
-                <p>
-                  Standardowy format posta na Instagramie. Proporcje 1:1. Sprawdza się w feedzie i wygląda dobrze zarówno na telefonie, jak i komputerze.
-                </p>
-              ),
+              description: <p>Standardowy format posta na Instagramie. Proporcje 1:1. Sprawdza się w feedzie i wygląda dobrze zarówno na telefonie, jak i komputerze.</p>,
             },
             {
               icon: <RiInstagramLine className="h-6 w-6" />,
               title: 'Instagram - post pion (1080×1350)',
-              description: (
-                <p>
-                  Pionowy format posta (proporcje 4:5). Zajmuje więcej miejsca w feedzie niż kwadrat, co może zwiększyć zaangażowanie.
-                </p>
-              ),
+              description: <p>Pionowy format posta (proporcje 4:5). Zajmuje więcej miejsca w feedzie niż kwadrat, co może zwiększyć zaangażowanie.</p>,
             },
             {
               icon: <RiInstagramLine className="h-6 w-6" />,
               title: 'Instagram - story / reels (1080×1920)',
-              description: (
-                <p>
-                  Pełnoekranowy format pionowy (proporcje 9:16). Używany w relacjach i rolkach. Wypełnia cały ekran telefonu.
-                </p>
-              ),
+              description: <p>Pełnoekranowy format pionowy (proporcje 9:16). Używany w relacjach i rolkach. Wypełnia cały ekran telefonu.</p>,
             },
             {
               icon: <RiFacebookLine className="h-6 w-6" />,
               title: 'Facebook - post (1200×630)',
-              description: (
-                <p>
-                  Optymalny format dla postów na Facebooku i udostępnianych linków. Proporcje zbliżone do 16:9.
-                </p>
-              ),
+              description: <p>Optymalny format dla postów na Facebooku i udostępnianych linków. Proporcje zbliżone do 16:9.</p>,
             },
             {
               icon: <RiFacebookLine className="h-6 w-6" />,
               title: 'Facebook - cover strony (820×360)',
-              description: (
-                <p>
-                  Zdjęcie w tle na stronie firmowej Facebook. Szeroki, panoramiczny format - pamiętaj, że na różnych urządzeniach może być przycinane inaczej.
-                </p>
-              ),
+              description: <p>Zdjęcie w tle na stronie firmowej Facebook. Szeroki, panoramiczny format - pamiętaj, że na różnych urządzeniach może być przycinane inaczej.</p>,
             },
             {
               icon: <RiLinkedinLine className="h-6 w-6" />,
               title: 'LinkedIn - post (1200×1200)',
-              description: (
-                <p>
-                  Kwadratowy format dla postów na LinkedIn. Dobrze prezentuje się w feedzie i na urządzeniach mobilnych.
-                </p>
-              ),
+              description: <p>Kwadratowy format dla postów na LinkedIn. Dobrze prezentuje się w feedzie i na urządzeniach mobilnych.</p>,
             },
             {
               icon: <RiLinkedinLine className="h-6 w-6" />,
               title: 'LinkedIn - baner profilu (1584×396)',
-              description: (
-                <p>
-                  Zdjęcie w tle na profilu osobistym lub firmowym LinkedIn. Bardzo szeroki format - centralny element powinien być na środku kadru.
-                </p>
-              ),
+              description: <p>Zdjęcie w tle na profilu osobistym lub firmowym LinkedIn. Bardzo szeroki format - centralny element powinien być na środku kadru.</p>,
             },
             {
               icon: <RiImageLine className="h-6 w-6" />,
               title: 'OG image (1200×630)',
-              description: (
-                <p>
-                  Grafika wyświetlana przy udostępnianiu linku w mediach społecznościowych (Open Graph). Standard dla Facebooka, Twittera, LinkedIna i innych platform.
-                </p>
-              ),
+              description: <p>Grafika wyświetlana przy udostępnianiu linku w mediach społecznościowych (Open Graph). Standard dla Facebooka, Twittera, LinkedIna i innych platform.</p>,
             },
             {
               icon: <RiFileImageLine className="h-6 w-6" />,
               title: 'Grafika do artykułu (1600×900)',
-              description: (
-                <p>
-                  Szeroki format odpowiedni na nagłówki artykułów blogowych. Proporcje 16:9 dobrze wyglądają na stronach z dużą ilością tekstu.
-                </p>
-              ),
+              description: <p>Szeroki format odpowiedni na nagłówki artykułów blogowych. Proporcje 16:9 dobrze wyglądają na stronach z dużą ilością tekstu.</p>,
             },
             {
               icon: <RiAspectRatioLine className="h-6 w-6" />,
               title: 'Baner strony (1920×600)',
-              description: (
-                <p>
-                  Bardzo szeroki format do banerów na stronach WWW. Sprawdza się jako tło pod nagłówkiem lub w sekcjach promocyjnych.
-                </p>
-              ),
+              description: <p>Bardzo szeroki format do banerów na stronach WWW. Sprawdza się jako tło pod nagłówkiem lub w sekcjach promocyjnych.</p>,
             },
             {
               icon: <RiCropLine className="h-6 w-6" />,
               title: 'Miniatura artykułu (800×600)',
-              description: (
-                <p>
-                  Mniejszy format do miniatur na listach artykułów, w karuzeli produktów lub jako podgląd w wynikach wyszukiwania.
-                </p>
-              ),
+              description: <p>Mniejszy format do miniatur na listach artykułów, w karuzeli produktów lub jako podgląd w wynikach wyszukiwania.</p>,
             },
             {
               icon: <RiLayoutGridLine className="h-6 w-6" />,
               title: 'Hero sekcji (1920×1080)',
-              description: (
-                <p>
-                  Pełnoekranowy format Full HD. Używany jako tło sekcji hero na stronach głównych lub landing page.
-                </p>
-              ),
+              description: <p>Pełnoekranowy format Full HD. Używany jako tło sekcji hero na stronach głównych lub landing page.</p>,
             },
           ]}
         />
@@ -332,7 +276,7 @@ export default function Page() {
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
                   <span>Wymiary w px</span>
                 </button>
-                <button className="flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! bg-slate-600 text-white">
+                <button className="flex items-center gap-2 rounded-md border bg-slate-600 px-3 py-1.5 text-[14px]! text-white">
                   <span>Gotowe formaty</span>
                 </button>
               </div>
@@ -369,9 +313,7 @@ export default function Page() {
           <div className="mt-4 space-y-4">
             <div>
               <p className="text-dark font-semibold">Przeciąganie kadru</p>
-              <p className="text-mid mt-1">
-                Chwyć jasny obszar i przeciągnij go w dowolne miejsce obrazu. W ten sposób wybierasz, który fragment zdjęcia zostanie wyeksportowany.
-              </p>
+              <p className="text-mid mt-1">Chwyć jasny obszar i przeciągnij go w dowolne miejsce obrazu. W ten sposób wybierasz, który fragment zdjęcia zostanie wyeksportowany.</p>
             </div>
             <div>
               <p className="text-dark font-semibold">Zmiana rozmiaru przez uchwyty</p>
@@ -382,7 +324,8 @@ export default function Page() {
             <div>
               <p className="text-dark font-semibold">Przybliżenie (zoom)</p>
               <p className="text-mid mt-1">
-                W zakładce <strong>Przybliżenie</strong> znajdziesz suwak do regulacji zoomu (100-300%). Wyższa wartość oznacza, że kadr obejmuje mniejszy fragment oryginalnego zdjęcia - przydatne, gdy chcesz wyciąć konkretny detal.
+                W zakładce <strong>Przybliżenie</strong> znajdziesz suwak do regulacji zoomu (100-300%). Wyższa wartość oznacza, że kadr obejmuje mniejszy fragment oryginalnego zdjęcia - przydatne,
+                gdy chcesz wyciąć konkretny detal.
               </p>
             </div>
             <div>
@@ -448,9 +391,7 @@ export default function Page() {
             </div>
           }
         >
-          <p className="text-mid">
-            Wybierz format wyjściowy (JPG, PNG lub WebP) i ustaw jakość kompresji. Dla formatów JPG i WebP niższa jakość oznacza mniejszy plik.
-          </p>
+          <p className="text-mid">Wybierz format wyjściowy (JPG, PNG lub WebP) i ustaw jakość kompresji. Dla formatów JPG i WebP niższa jakość oznacza mniejszy plik.</p>
         </SectionDemo>
 
         <Gap variant="line" />
@@ -460,7 +401,8 @@ export default function Page() {
             Na obszarze kadru widoczna jest siatka dzieląca obraz na 9 równych części. To wizualizacja <strong>reguły trójpodziału</strong> - jednej z podstawowych zasad kompozycji fotograficznej.
           </p>
           <p className="text-mid mt-3">
-            Reguła mówi, że najważniejsze elementy zdjęcia (twarz, produkt, punkt zainteresowania) powinny znajdować się na przecięciach linii siatki lub wzdłuż nich. Taka kompozycja jest bardziej dynamiczna i przyjemna dla oka niż umieszczenie obiektu dokładnie na środku.
+            Reguła mówi, że najważniejsze elementy zdjęcia (twarz, produkt, punkt zainteresowania) powinny znajdować się na przecięciach linii siatki lub wzdłuż nich. Taka kompozycja jest bardziej
+            dynamiczna i przyjemna dla oka niż umieszczenie obiektu dokładnie na środku.
           </p>
           <p className="text-mid mt-3">
             W zakładce <strong>Kolor siatki</strong> możesz zmienić kolor linii (zielony, biały, czarny, czerwony, żółty), żeby siatka była dobrze widoczna na różnych zdjęciach.
@@ -483,7 +425,7 @@ export default function Page() {
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
                   <span>Kształty kadru</span>
                 </button>
-                <button className="flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! bg-slate-600 text-white">
+                <button className="flex items-center gap-2 rounded-md border bg-slate-600 px-3 py-1.5 text-[14px]! text-white">
                   <span>Przybliżenie</span>
                 </button>
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
@@ -502,39 +444,39 @@ export default function Page() {
             </div>
           }
         >
-          <p className="text-mid">
-            Narzędzia kadrowania pozwalają precyzyjnie ustawić wymiary, wybrać gotowe formaty, zmienić kształt, przybliżyć obraz i ustawić dokładną pozycję kadru.
-          </p>
+          <p className="text-mid">Narzędzia kadrowania pozwalają precyzyjnie ustawić wymiary, wybrać gotowe formaty, zmienić kształt, przybliżyć obraz i ustawić dokładną pozycję kadru.</p>
         </SectionDemo>
 
         <Gap variant="line" />
 
         <SectionInfo title="Eksport - jaki format wybrać?">
-          <p className="text-mid">
-            Na dole lewego panelu wybierasz format wyjściowy i jakość kompresji:
-          </p>
+          <p className="text-mid">Na dole lewego panelu wybierasz format wyjściowy i jakość kompresji:</p>
           <div className="mt-4 space-y-4">
             <div>
               <p className="text-dark font-semibold">JPG</p>
               <p className="text-mid mt-1">
-                Najpopularniejszy format dla zdjęć. Dobre kompresowanie przy zachowaniu jakości wizualnej. Nie obsługuje przezroczystości - tło zawsze będzie wypełnione kolorem. Dobry wybór dla zdjęć produktowych, portretów i większości grafik na stronę.
+                Najpopularniejszy format dla zdjęć. Dobre kompresowanie przy zachowaniu jakości wizualnej. Nie obsługuje przezroczystości - tło zawsze będzie wypełnione kolorem. Dobry wybór dla zdjęć
+                produktowych, portretów i większości grafik na stronę.
               </p>
             </div>
             <div>
               <p className="text-dark font-semibold">PNG</p>
               <p className="text-mid mt-1">
-                Format bezstratny - zachowuje pełną jakość, ale pliki są większe. Obsługuje przezroczystość (wymagany przy kształcie koła). Dobry wybór dla grafik z tekstem, ikon i obrazów wymagających ostrych krawędzi.
+                Format bezstratny - zachowuje pełną jakość, ale pliki są większe. Obsługuje przezroczystość (wymagany przy kształcie koła). Dobry wybór dla grafik z tekstem, ikon i obrazów
+                wymagających ostrych krawędzi.
               </p>
             </div>
             <div>
               <p className="text-dark font-semibold">WebP</p>
               <p className="text-mid mt-1">
-                Nowoczesny format łączący zalety JPG i PNG - małe pliki, dobra jakość, obsługa przezroczystości. Obsługiwany przez wszystkie nowoczesne przeglądarki. Zalecany dla stron WWW - mniejsze pliki oznaczają szybsze ładowanie.
+                Nowoczesny format łączący zalety JPG i PNG - małe pliki, dobra jakość, obsługa przezroczystości. Obsługiwany przez wszystkie nowoczesne przeglądarki. Zalecany dla stron WWW - mniejsze
+                pliki oznaczają szybsze ładowanie.
               </p>
             </div>
           </div>
           <p className="text-mid mt-4">
-            <strong>Suwak jakości (60-100%)</strong> dostępny jest dla formatów JPG i WebP. Wyższa wartość = lepsza jakość, ale większy plik. Dla mediów społecznościowych 70-85% to zazwyczaj optymalny kompromis.
+            <strong>Suwak jakości (60-100%)</strong> dostępny jest dla formatów JPG i WebP. Wyższa wartość = lepsza jakość, ale większy plik. Dla mediów społecznościowych 70-85% to zazwyczaj optymalny
+            kompromis.
           </p>
           <p className="text-mid mt-3">
             Po ustawieniu wszystkich parametrów kliknij przycisk <strong>Zmień rozmiar i pobierz</strong>. Plik zostanie wygenerowany i automatycznie pobrany na dysk.
@@ -544,9 +486,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Proporcje (aspect ratio) - co to znaczy?">
-          <p className="text-mid">
-            Proporcje obrazu (aspect ratio) to stosunek jego szerokości do wysokości. Zapisuje się je jako dwie liczby oddzielone dwukropkiem, np. 16:9 lub 4:5.
-          </p>
+          <p className="text-mid">Proporcje obrazu (aspect ratio) to stosunek jego szerokości do wysokości. Zapisuje się je jako dwie liczby oddzielone dwukropkiem, np. 16:9 lub 4:5.</p>
           <div className="mt-4 space-y-3">
             <div>
               <p className="text-dark font-semibold">1:1 (kwadrat)</p>
@@ -585,7 +525,9 @@ export default function Page() {
           btnTwoLink="/narzedzia"
         >
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa narzędzie, możesz przyciąć swoje zdjęcia do idealnych wymiarów. Po zmianie rozmiaru możesz też <Link href="/narzedzia/jpg-png-na-webp-bez-limitu">przekonwertować obrazy na WebP</Link>, żeby zmniejszyć ich rozmiar. Jeśli potrzebujesz profesjonalnych grafik — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/projekty-graficzne">projektami graficznymi</Link>.
+            Teraz, gdy wiesz jak działa narzędzie, możesz przyciąć swoje zdjęcia do idealnych wymiarów. Po zmianie rozmiaru możesz też{' '}
+            <Link href="/narzedzia/jpg-png-na-webp-bez-limitu">przekonwertować obrazy na WebP</Link>, żeby zmniejszyć ich rozmiar. Jeśli potrzebujesz profesjonalnych grafik —{' '}
+            <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/projekty-graficzne">projektami graficznymi</Link>.
           </p>
         </SectionInfo>
 

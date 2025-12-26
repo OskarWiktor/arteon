@@ -73,7 +73,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-
         <ColorPaletteGenerator />
 
         <Gap size="sm" />

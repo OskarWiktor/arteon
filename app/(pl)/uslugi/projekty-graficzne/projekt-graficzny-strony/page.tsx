@@ -307,12 +307,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel
-          title="Sprawdź nasze artykuły dotyczące projektowania stron"
-          subtitle="Edukacja"
-          articles={articles}
-          slugs={RELATED_ARTICLE_SLUGS}
-        />
+        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące projektowania stron" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap variant="line" />
 

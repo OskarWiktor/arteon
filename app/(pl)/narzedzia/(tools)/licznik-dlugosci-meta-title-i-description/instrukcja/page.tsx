@@ -17,13 +17,11 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Jak używać licznika długości meta title i description?',
-  description:
-    'Instrukcja licznika meta title i description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność.',
+  description: 'Instrukcja licznika meta title i description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja') },
   openGraph: {
     title: 'Jak używać licznika długości meta title i description?',
-    description:
-      'Szczegółowa instrukcja obsługi licznika meta title i meta description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność strony w Google.',
+    description: 'Szczegółowa instrukcja obsługi licznika meta title i meta description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność strony w Google.',
     url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja'),
     type: 'website',
     images: [
@@ -38,8 +36,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak używać licznika długości meta title i description',
-  description:
-    'Instrukcja krok po kroku, jak sprawdzić długość meta title i meta description za pomocą darmowego narzędzia online. Dowiedz się, jak interpretować wyniki i optymalizować tagi SEO.',
+  description: 'Instrukcja krok po kroku, jak sprawdzić długość meta title i meta description za pomocą darmowego narzędzia online. Dowiedz się, jak interpretować wyniki i optymalizować tagi SEO.',
   url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja'),
   totalTime: 'PT3M',
   step: [
@@ -97,15 +94,13 @@ const faqItems = [
     question: 'Czy meta description wpływa na pozycję strony w Google?',
     answer:
       'Meta description nie jest bezpośrednim czynnikiem rankingowym. Google nie bierze go pod uwagę przy ustalaniu pozycji strony. Jednak dobry opis zwiększa klikalność (CTR) w wynikach wyszukiwania, a wyższy CTR może pośrednio wpłynąć na pozycję. Opis działa jak krótka reklama strony.',
-    answerSchemaText:
-      'Meta description nie jest bezpośrednim czynnikiem rankingowym. Jednak dobry opis zwiększa klikalność (CTR) w wynikach wyszukiwania, co może pośrednio wpłynąć na pozycję.',
+    answerSchemaText: 'Meta description nie jest bezpośrednim czynnikiem rankingowym. Jednak dobry opis zwiększa klikalność (CTR) w wynikach wyszukiwania, co może pośrednio wpłynąć na pozycję.',
   },
   {
     question: 'Co zrobić, gdy mój tytuł jest za długi?',
     answer:
       'Skróć tytuł, zachowując najważniejsze słowa na początku. Usuń zbędne słowa (np. "najlepszy", "profesjonalny") i skup się na konkretnej wartości dla użytkownika. Jeśli dodajesz nazwę marki, umieść ją na końcu po myślniku lub pionowej kresce.',
-    answerSchemaText:
-      'Skróć tytuł, zachowując najważniejsze słowa na początku. Usuń zbędne słowa i skup się na konkretnej wartości dla użytkownika. Nazwę marki umieść na końcu.',
+    answerSchemaText: 'Skróć tytuł, zachowując najważniejsze słowa na początku. Usuń zbędne słowa i skup się na konkretnej wartości dla użytkownika. Nazwę marki umieść na końcu.',
   },
 ];
 
@@ -165,8 +160,8 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-2">Dlaczego piksele, a nie tylko znaki?</h3>
           <p className="text-mid">
-            Litery mają różną szerokość. Porównaj &quot;iiii&quot; i &quot;WWWW&quot; - obie mają 4 znaki, ale szerokość jest zupełnie inna. Google mierzy szerokość w pikselach, nie w znakach.
-            Dlatego narzędzie pokazuje obie wartości: liczbę znaków (łatwiejszą do ogarnięcia) i szerokość w pikselach (dokładniejszą dla Google).
+            Litery mają różną szerokość. Porównaj &quot;iiii&quot; i &quot;WWWW&quot; - obie mają 4 znaki, ale szerokość jest zupełnie inna. Google mierzy szerokość w pikselach, nie w znakach. Dlatego
+            narzędzie pokazuje obie wartości: liczbę znaków (łatwiejszą do ogarnięcia) i szerokość w pikselach (dokładniejszą dla Google).
           </p>
 
           <h3 className="h4 mt-6 mb-2">Wpływ na klikalność</h3>
@@ -192,8 +187,7 @@ export default function Page() {
             {
               icon: <RiFileTextLine className="h-6 w-6" />,
               title: '2. Wpisz opis strony',
-              description:
-                'Dodaj meta description w drugie pole. Zobaczysz te same metryki dla opisu. Pole jest większe, bo opisy są dłuższe niż tytuły - możesz wpisać 2-3 krótkie zdania.',
+              description: 'Dodaj meta description w drugie pole. Zobaczysz te same metryki dla opisu. Pole jest większe, bo opisy są dłuższe niż tytuły - możesz wpisać 2-3 krótkie zdania.',
             },
             {
               icon: <RiEyeLine className="h-6 w-6" />,
@@ -204,8 +198,7 @@ export default function Page() {
             {
               icon: <RiToolsLine className="h-6 w-6" />,
               title: '4. Popraw według wskazówek',
-              description:
-                'Jeśli status pokazuje Za krótki lub Za długi, dostosuj tekst. Zmiany widać od razu - możesz eksperymentować, aż uzyskasz optymalną długość i treść.',
+              description: 'Jeśli status pokazuje Za krótki lub Za długi, dostosuj tekst. Zmiany widać od razu - możesz eksperymentować, aż uzyskasz optymalną długość i treść.',
             },
           ]}
         />
@@ -217,22 +210,38 @@ export default function Page() {
           demo={
             <div className="space-y-3">
               <div className="rounded-lg border border-neutral-200 bg-white p-3">
-                <p className="text-dark text-sm font-medium mb-2">Meta title</p>
+                <p className="text-dark mb-2 text-sm font-medium">Meta title</p>
                 <div className="flex flex-wrap gap-2 text-sm">
-                  <span className="text-mid">Znaki: <strong>52</strong></span>
-                  <span className="text-mid">Słowa: <strong>7</strong></span>
-                  <span className="text-mid">Piksele: <strong>456px</strong></span>
+                  <span className="text-mid">
+                    Znaki: <strong>52</strong>
+                  </span>
+                  <span className="text-mid">
+                    Słowa: <strong>7</strong>
+                  </span>
+                  <span className="text-mid">
+                    Piksele: <strong>456px</strong>
+                  </span>
                 </div>
-                <Badge variant="success" size="sm" className="mt-2">Dobra długość</Badge>
+                <Badge variant="success" size="sm" className="mt-2">
+                  Dobra długość
+                </Badge>
               </div>
               <div className="rounded-lg border border-neutral-200 bg-white p-3">
-                <p className="text-dark text-sm font-medium mb-2">Meta description</p>
+                <p className="text-dark mb-2 text-sm font-medium">Meta description</p>
                 <div className="flex flex-wrap gap-2 text-sm">
-                  <span className="text-mid">Znaki: <strong>142</strong></span>
-                  <span className="text-mid">Słowa: <strong>21</strong></span>
-                  <span className="text-mid">Piksele: <strong>812px</strong></span>
+                  <span className="text-mid">
+                    Znaki: <strong>142</strong>
+                  </span>
+                  <span className="text-mid">
+                    Słowa: <strong>21</strong>
+                  </span>
+                  <span className="text-mid">
+                    Piksele: <strong>812px</strong>
+                  </span>
                 </div>
-                <Badge variant="success" size="sm" className="mt-2">Dobra długość</Badge>
+                <Badge variant="success" size="sm" className="mt-2">
+                  Dobra długość
+                </Badge>
               </div>
             </div>
           }
@@ -240,7 +249,7 @@ export default function Page() {
           <p className="text-mid mb-4">Narzędzie pokazuje trzy metryki dla każdego pola oraz kolorowy status oceny długości:</p>
 
           <h3 className="h4 mt-6 mb-2">Metryki</h3>
-          <ul className="list-disc pl-5 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
               <strong>Znaki</strong> - łączna liczba znaków w tekście (łącznie ze spacjami). Łatwa do zrozumienia, ale mniej precyzyjna niż piksele.
             </li>
@@ -253,7 +262,7 @@ export default function Page() {
           </ul>
 
           <h3 className="h4 mt-6 mb-2">Statusy oceny</h3>
-          <ul className="list-disc pl-5 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
               <strong className="text-emerald-700">Dobra długość</strong> (zielony) - tekst mieści się w zalecanym zakresie. Google powinien wyświetlić go w całości.
             </li>
@@ -286,7 +295,7 @@ export default function Page() {
           </p>
 
           <h3 className="h4 mt-6 mb-2">Elementy podglądu</h3>
-          <ul className="list-disc pl-5 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
               <strong>URL</strong> - adres strony wyświetlany nad tytułem. Możesz go wpisać w opcjonalnym polu, żeby podgląd był bardziej realistyczny.
             </li>
@@ -321,7 +330,9 @@ export default function Page() {
           </p>
 
           <h3 className="h4 mb-2">Podgląd pokazuje placeholder zamiast mojego tekstu</h3>
-          <p className="text-mid mb-4">Pola tytułu i opisu są puste. Narzędzie wyświetla wtedy przykładowy tekst, żeby pokazać strukturę podglądu. Wpisz swoje meta tagi, a podgląd się zaktualizuje.</p>
+          <p className="text-mid mb-4">
+            Pola tytułu i opisu są puste. Narzędzie wyświetla wtedy przykładowy tekst, żeby pokazać strukturę podglądu. Wpisz swoje meta tagi, a podgląd się zaktualizuje.
+          </p>
 
           <h3 className="h4 mb-2">Szerokość w pikselach jest inna niż oczekiwana</h3>
           <p className="text-mid">
@@ -340,7 +351,9 @@ export default function Page() {
           btnTwoLink="/narzedzia"
         >
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa licznik, możesz zacząć optymalizować swoje meta tagi. Jeśli potrzebujesz pomocy z kompleksową optymalizacją SEO — meta tagów, treści, struktury strony i widoczności w Google — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/marketing/pozycjonowanie-stron">pozycjonowaniem stron</Link> i <Link href="/uslugi/marketing/optymalizacja-seo">optymalizacją SEO</Link>.
+            Teraz, gdy wiesz jak działa licznik, możesz zacząć optymalizować swoje meta tagi. Jeśli potrzebujesz pomocy z kompleksową optymalizacją SEO — meta tagów, treści, struktury strony i
+            widoczności w Google — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/marketing/pozycjonowanie-stron">pozycjonowaniem stron</Link> i{' '}
+            <Link href="/uslugi/marketing/optymalizacja-seo">optymalizacją SEO</Link>.
           </p>
         </SectionInfo>
 

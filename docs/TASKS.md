@@ -536,274 +536,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
 ---
 
-## Zadania: Rozbudowa artykułów (EEAT)
-
-**Cel:** Rozszerzyć istniejące artykuły do min. 9-14 minut czytania (1800-2800 słów), aby zwiększyć EEAT i głębię tematyczną zgodnie z wytycznymi w `INSTRUCTIONS.md`.
-
-**⚠️ KRYTYCZNA INSTRUKCJA: PRZEPISYWANIE OD ZERA**
-
-Zadania EEAT to NIE "dopisywanie treści do istniejącego artykułu". To **przepisanie artykułu od zera** według aktualnych standardów jakości. Wzorcem jest artykuł `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony` (opublikowany 2025-12-25).
-
-**Problemy starych artykułów, których należy unikać:**
-- Powtarzające się statystyki i informacje w różnych sekcjach
-- Listy punktowane bez narracji i wyjaśnienia mechanizmów
-- Powierzchowne omówienie (CO zamiast JAK i DLACZEGO)
-- Ton DIY ("jak to zrobić samemu")
-- Generyczne frazy ("buduje zaufanie", "zwiększa konwersję") bez wyjaśnienia
-- Brak konkretnych przykładów branżowych
-
-**Co musi zawierać nowy artykuł:**
-- Wyjaśnienie MECHANIZMÓW — nie tylko CO, ale JAK i DLACZEGO coś działa
-- Konkretne przykłady z różnych branż (kancelaria prawna, gabinet stomatologiczny, sklep internetowy — NIE z branży Arteon)
-- Płynna narracja zamiast list punktowanych
-- Tooltips/abbr dla terminów technicznych z natychmiastowym wyjaśnieniem
-- Źródła z linkami dla wszystkich danych i badań
-- Analiza testów A/B z wyjaśnieniem DLACZEGO zadziałały (kontekst, nie sam wynik)
-
-**Wytyczne rozbudowy:**
-- Min. 6-8 linków wewnętrznych, min. 4-6 linków zewnętrznych.
-- Rozbudować FAQ (min. 4-5 pytań z pogłębionymi odpowiedziami).
-- Dodać Tooltipy dla trudnych terminów.
-- Zachować ton marki (przyjazny, mentorski, bez żargonu).
-- Wszystkie dane/statystyki muszą mieć źródło z linkiem.
-
----
-
-- ❌ **[EEAT-001] Rozbudowa: Czym jest content marketing i jak może pomóc Twojej firmie?**
-
-  - Slug: `czym-jest-content-marketing`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej przykładów zastosowania content marketingu w różnych branżach.
-    - Rozbudować sekcję o mierzeniu efektów (ROI, KPI).
-    - Dodać porównanie content marketing vs tradycyjna reklama.
-    - Wzmocnić linkowanie wewnętrzne (usługi, narzędzia, inne artykuły).
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-002] Rozbudowa: Co sprawdzić przed uruchomieniem strony internetowej?**
-
-  - Slug: `co-sprawdzic-przed-uruchomieniem-strony`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej szczegółów o testach technicznych (Core Web Vitals, mobile).
-    - Rozbudować sekcję o bezpieczeństwie (SSL, backup, RODO).
-    - Dodać checklistę SEO przed publikacją.
-    - Wzmocnić linkowanie do usług i narzędzi Arteon.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-003] Rozbudowa: Jak przygotować grafikę do postów w mediach społecznościowych?**
-
-  - Slug: `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej szczegółów o formatach i wymiarach dla różnych platform.
-    - Rozbudować sekcję o typografii i czytelności.
-    - Dodać wskazówki dotyczące spójności wizualnej z marką.
-    - Linkowanie do narzędzi Arteon (kadrowanie, palety kolorów).
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-004] Rozbudowa: Jak wybrać domenę i hosting dla strony firmowej?**
-
-  - Slug: `jak-wybrac-domene-i-hosting-dla-strony-firmowej`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej kryteriów wyboru hostingu (SSL, backup, wsparcie).
-    - Rozbudować sekcję o domenach (rozszerzenia, polskie znaki, SEO).
-    - Dodać porównanie typów hostingu (shared vs VPS vs dedykowany).
-    - Wzmocnić linkowanie do usług stron internetowych.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-005] Rozbudowa: Jak mierzyć skuteczność strony internetowej?**
-
-  - Slug: `jak-mierzyc-skutecznosc-strony-internetowej`
-  - Obecny czas czytania: **6 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej metryk (bounce rate, session duration, conversion rate).
-    - Rozbudować sekcję o narzędziach analitycznych (GA4, GSC, Hotjar).
-    - Dodać praktyczne przykłady interpretacji danych.
-    - Linkowanie do usług analityki i optymalizacji SEO.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-006] Rozbudowa: Jak założyć i zoptymalizować profil Google Moja Firma?**
-
-  - Slug: `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej szczegółów o optymalizacji zdjęć i postów.
-    - Rozbudować sekcję o opiniach i odpowiadaniu na recenzje.
-    - Dodać wskazówki o local SEO i wpływie na widoczność.
-    - Linkowanie do usług pozycjonowania i audytu SEO.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-008] Rozbudowa: Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?**
-
-  - Slug: `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej szczegółów o typach certyfikatów (DV, OV, EV).
-    - Rozbudować sekcję o wpływie SSL na SEO.
-    - Dodać wskazówki o odnowieniu i automatyzacji.
-    - Linkowanie do usług bezpieczeństwa i stron internetowych.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-009] Rozbudowa: Meta title i description: jak je napisać?**
-
-  - Slug: `meta-title-i-description-jak-je-napisac`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej przykładów dla różnych branż.
-    - Rozbudować sekcję o testowaniu i optymalizacji CTR.
-    - Dodać wskazówki o dynamicznych meta tagach.
-    - Linkowanie do narzędzia licznik meta title/description.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-011] Rozbudowa: Kody QR w materiałach reklamowych**
-
-  - Slug: `kody-qr-w-materialach-reklamowych`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej przykładów zastosowań (menu, wizytówki, plakaty).
-    - Rozbudować sekcję o śledzeniu i analityce QR.
-    - Dodać wskazówki o designie i umiejscowieniu QR.
-    - Linkowanie do usług projektów graficznych i materiałów drukowanych.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-012] Rozbudowa: Jak dobrać kolory do strony internetowej lub sklepu?**
-
-  - Slug: `jak-dobrac-kolory-do-strony-internetowej`
-  - Obecny czas czytania: **8 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej przykładów z różnych branż.
-    - Rozbudować sekcję o dostępności kolorów (WCAG).
-    - Dodać wskazówki o testowaniu palet.
-    - Linkowanie do narzędzi Arteon (generator palet, tester kontrastu).
-  - Weryfikacja: nie jest wymagana (content-only).
-
-- ❌ **[EEAT-013] Rozbudowa: Jak przygotować profesjonalną stopkę mailową?**
-
-  - Slug: `jak-przygotowac-profesjonalna-stopke-mailowa`
-  - Obecny czas czytania: **7 min** → cel: **10-12 min**
-  - Plik: `data/pl/blog.json`
-  - Zakres rozbudowy:
-    - Dodać więcej przykładów dla różnych ról/branż.
-    - Rozbudować sekcję o responsywności stopek.
-    - Dodać wskazówki o spójności z marką.
-    - Linkowanie do generatora stopki mailowej Arteon.
-  - Weryfikacja: nie jest wymagana (content-only).
-
-
----
-
-## Zadania: Artykuły (backlog)
-
-- ❌ **[2] Blog: Jakie materiały są potrzebne, żeby móc zlecić stronę internetową?**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Dlaczego przygotowane materiały przyspieszają realizację i obniżają koszt
-    - H2: Minimum na start: co jest niezbędne, żeby stworzyć stronę internetową?
-    - H3: Informacje o firmie i ofercie (dla kogo, co sprzedajesz, przewagi)
-    - H3: Cele i priorytety (leady, sprzedaż, marka, rekrutacja) + co mierzymy
-    - H3: Treści na podstrony (home/usługi/o nas/kontakt) + jaka długość i styl
-    - H3: Materiały wizualne (logo, kolory, fonty, zdjęcia: własne vs stock)
-    - H3: Dowody zaufania (opinie, realizacje, case studies, liczby)
-    - H3: Dostępy i technikalia (domena/DNS/hosting/poczta/GA4/GSC)
-    - H3: Funkcje i integracje (formularze, CRM, newsletter, kalendarz) - jak je spisać
-    - H2: Najczęstsze braki, które opóźniają realizację strony i jak ich uniknąć
-
-- ❌ **[3] Blog: Struktura strony usługowej: jak ułożyć sekcje, żeby użytkownik łatwiej zrozumiał ofertę?**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Co użytkownik musi zrozumieć w 10 sekund (co, dla kogo, efekt)
-    - H2: Proponowany układ strony usługi (sekcje krok po kroku)
-    - H2: Hero i pierwsza sekcja: jak pisać nagłówki i leady (bez żargonu)
-    - H2: Zakres usługi: jak opisać „co dostaję” (deliverables) + granice
-    - H2: Proces współpracy: jak pokazać etapy i skrócić niepewność
-    - H2: Dowody i wiarygodność (opinie, case study, liczby, realizacje)
-    - H2: FAQ i obiekcje (co dodać, żeby odciążyć sprzedaż)
-    - H2: CTA i konwersja (gdzie i ile CTA, jak nie być nachalnym)
-    - H2: Podsumowanie: priorytety strony usługowej (co poprawić najpierw i dlaczego)
-
-- ❌ **[6] Blog: 10 najczęstszych błędów w sekcji „O nas” i jak je poprawić**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Po co jest „O nas” (zaufanie, domykanie decyzji, wiarygodność)
-    - H2: 10 najczęstszych błędów (lista + dlaczego to szkodzi)
-    - H3: Ogólniki („dynamiczna firma”) - jak przerobić na konkrety (przykłady zdań)
-    - H3: Brak ludzi i kompetencji - jak to pokazać bez „ściany CV”
-    - H3: Brak dowodów (opinie, liczby, realizacje) - co dodać zamiast obietnic
-    - H3: Historia firmy zamiast wartości dla klienta - jak zmienić narrację
-    - H2: Proponowana struktura sekcji/strony „O nas” (układ do skopiowania)
-    - H2: Jak wpleść CTA i next-step (bez agresywnego tonu)
-    - H2: Podsumowanie: czy „O nas” buduje zaufanie (najważniejsze sygnały)
-
-- ❌ **[7] Blog: Jak zaprojektować stronę kontaktową, która zwiększa liczbę zapytań?**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Cel strony kontaktowej: więcej zapytań vs lepsza jakość leadów
-    - H2: Elementy obowiązkowe (telefon/e-mail/formularz/adres/godziny/mapa)
-    - H2: Formularz: minimum pól + kiedy dodać pytania kwalifikacyjne
-    - H2: Mikrocopy, które zwiększa wysyłkę (czas odpowiedzi, co dalej, „bez spamu”)
-    - H2: Wiarygodność i bezpieczeństwo (RODO, polityka prywatności, antyspam)
-    - H2: Mobile UX (czytelność, kliknięcie w numer, błędy walidacji)
-    - H2: Jak mierzyć efekty (konwersje: formularz/telefon/mail)
-    - H2: Najczęstsze błędy + szybkie poprawki
-
-- ❌ **[18] Blog: Mapa strony dla użytkownika: jak ją wykorzystać do lepszej indeksacji?**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Mapa strony dla użytkownika vs sitemap.xml (różnice)
-    - H2: Kiedy mapa strony ma sens (rozbudowana oferta/blog/narzędzia)
-    - H2: Jak zbudować strukturę (kategorie, głębokość, priorytety)
-    - H2: Jak mapa strony wspiera SEO (linkowanie wewnętrzne i crawl)
-    - H2: Czego nie dodawać (noindex, duplikaty, strony techniczne)
-    - H2: Jak utrzymać aktualność (proces i owner)
-    - H2: Podsumowanie wdrożenia + najczęstsze błędy
-
-- ❌ **[25] Blog: Kiedy przebudowa strony ma sens, a kiedy wystarczy jej optymalizacja?**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Jak rozpoznać, co jest problemem (treść/UX/SEO/technologia)
-    - H2: Kiedy wystarczy optymalizacja (quick wins: treści, szybkość, konwersja)
-    - H2: Kiedy przebudowa jest konieczna (architektura, skalowanie, bezpieczeństwo)
-    - H2: Ryzyka przebudowy dla SEO i jak je ograniczyć (audyt, 301, canonical)
-    - H2: Podejście etapowe (co robić po kolei, żeby nie zatrzymać biznesu)
-    - H2: Proste drzewko decyzyjne (pytania „tak/nie”)
-    - H2: Co dalej (CTA: audyt + plan działań)
-
-- ❌ **[107] Blog: Karta produktu na stronie: 15 elementów, które zwiększają sprzedaż bez obniżania ceny**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Co użytkownik musi zrozumieć w 10 sekund (co, dla kogo, efekt)
-    - H2: 15 elementów skutecznej karty produktu (lista + krótkie uzasadnienia)
-    - H2: Opis produktu: język korzyści + konkrety (jak pisać, żeby sprzedawało)
-    - H2: Redukcja obiekcji (dostawa, zwroty, gwarancja, płatności, zaufanie)
-    - H2: UX i mobile (czytelność, kolejność sekcji, sticky CTA, zdjęcia)
-    - H2: SEO karty produktu (unikalny content + dane strukturalne Product/Offer)
-    - H2: Analityka i testy (add-to-cart, porzucone koszyki, A/B w realnych warunkach)
-
-- ❌ **[108] Blog: Meta title i meta description: jak pisać, żeby zwiększyć CTR i nie być uciętym w Google?**
-
-  - **Konspekt (H2/H3)**:
-    - H2: Po co są meta title i description (co zyskujesz: więcej wejść z tych samych pozycji)
-    - H2: Jak Google realnie je wyświetla (kiedy podmienia, a kiedy trzyma Twoją wersję)
-    - H2: Długość i czytelność: zasady, które działają (bez „magicznych liczb”)
-    - H2: Wzory do skopiowania (usługa lokalna / usługa B2B / sklep / artykuł)
-    - H2: Najczęstsze błędy (duplikaty, brak konkretu, obietnice bez pokrycia)
-    - H2: Jak sprawdzać i poprawiać meta szybko (narzędzie: licznik meta title/description)
-    - H2: Podsumowanie: 5 priorytetów na start + CTA (pozycjonowanie stron / konsultacja)
-
----
-
 ## Pomysły
 
 - ❌ **[IDEA-019] O nas: „Jak pracujemy” — podstrona procesu współpracy (krok po kroku)**
@@ -988,37 +720,6 @@ Zadania EEAT to NIE "dopisywanie treści do istniejącego artykułu". To **przep
     - `npm run lint`
     - `npm run build`
 
-- ❌ **[IDEA-058] Blog: Audyt SEO strony: co sprawdzamy i po co to robić przed pozycjonowaniem?**
-
-  - Cel i uzasadnienie:
-    - Wzmocnić klaster SEO/Marketing + dać kontekst dla usługi audytu SEO.
-    - Artykuł edukuje, czym jest audyt, co obejmuje i dlaczego warto zacząć od niego.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2/H3):
-    - H2: Co to jest audyt SEO i dlaczego warto go zrobić przed pozycjonowaniem
-    - H2: Co sprawdzamy w audycie technicznym (indeksacja, szybkość, mobile, błędy)
-    - H2: Co sprawdzamy w audycie treści (struktura, słowa kluczowe, thin content)
-    - H2: Co sprawdzamy w audycie linków (profil linków, linkowanie wewnętrzne)
-    - H2: Jak wygląda raport z audytu i co z nim zrobić
-    - H2: Kiedy audyt jest konieczny, a kiedy można go pominąć
-    - H2: Podsumowanie + CTA (audyt SEO / pozycjonowanie)
-  - Linkowanie wewnętrzne:
-    - `/uslugi/marketing/audyt-seo`
-    - `/uslugi/marketing/pozycjonowanie-stron`
-    - `/uslugi/marketing/optymalizacja-seo`
-    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
-    - `/narzedzia/licznik-dlugosci-meta-title-i-description`
-  - SEO:
-    - URL/slug: `/edukacja/seo/audyt-seo-strony-co-sprawdzamy`
-    - `metadata.title`: `Audyt SEO strony: co sprawdzamy i po co to robić przed pozycjonowaniem? - Arteon`
-    - `metadata.description`: `Dowiedz się, czym jest audyt SEO, co obejmuje i dlaczego warto go zrobić przed rozpoczęciem pozycjonowania strony.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość, nie instrukcję samodzielnego audytu).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
-
 - ❌ **[IDEA-060] Audyt: przegląd artykułów i stron pod kątem pomysłów na nowe komponenty**
 
   - Cel i uzasadnienie:
@@ -1037,870 +738,315 @@ Zadania EEAT to NIE "dopisywanie treści do istniejącego artykułu". To **przep
     - Lista zapisana jako osobne zadania `COMPONENTS-*` lub notatka w `DONE_TASKS.md`.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
-- ❌ **[IDEA-063] Blog: Jak powstaje dobre logo i na co zwrócić uwagę przy jego projektowaniu?**
+---
 
-  - Cel i uzasadnienie:
-    - Wzmocnić usługę projekt logo + edukacja o brandingu.
-    - Artykuł pokazuje proces i wartość profesjonalnego projektu logo.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Wstęp — rola logo w identyfikacji firmy
-    - H2: Cechy dobrego logo (prostota, skalowalność, unikalność)
-    - H2: Rodzaje logo (typograficzne, symboliczne, kombinowane)
-    - H2: Jak wygląda proces projektowania logo?
-    - H2: Co powinieneś przygotować przed zleceniem projektu?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/projekty-graficzne/projekt-logo`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
-  - SEO:
-    - URL/slug: `/edukacja/grafika/jak-powstaje-dobre-logo`
-    - `metadata.title`: `Jak powstaje dobre logo i na co zwrócić uwagę przy jego projektowaniu? - Arteon`
-    - `metadata.description`: `Dowiedz się, jakie cechy ma dobre logo, jak wygląda proces projektowania i co przygotować przed zleceniem projektu logo.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość).
-    - Min. 3 linki wewnętrzne + CTA do usługi.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+## Pomysły na artykuły (60 szczegółowych tematów)
 
-- ❌ **[IDEA-065] Blog: Od czego zacząć budowanie identyfikacji wizualnej małej firmy?**
+**Charakterystyka:** Tematy pozwalające na głębokie zagłębienie się w jeden wąski aspekt. Formaty: mity, błędy, porównania, konkretne pytania. Zgodne z tonem mentorskim, bez DIY.
 
-  - Cel i uzasadnienie:
-    - Wzmocnić usługę identyfikacji wizualnej + klaster branding/grafika.
-    - Artykuł pokazuje kolejność działań i wartość spójnego wizerunku.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Wstęp — co to jest identyfikacja wizualna
-    - H2: Dlaczego nawet mała firma potrzebuje spójnego wizerunku?
-    - H2: Z czego składa się identyfikacja wizualna? (logo, kolory, typografia, materiały)
-    - H2: Od czego zacząć i w jakiej kolejności?
-    - H2: Co przygotować przed zleceniem identyfikacji?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/uslugi/projekty-graficzne/projekt-logo`
-    - `/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic`
-  - SEO:
-    - URL/slug: `/edukacja/grafika/od-czego-zaczac-budowanie-identyfikacji-wizualnej`
-    - `metadata.title`: `Od czego zacząć budowanie identyfikacji wizualnej małej firmy? - Arteon`
-    - `metadata.description`: `Dowiedz się, z czego składa się identyfikacja wizualna, w jakiej kolejności ją budować i co przygotować przed zleceniem projektu.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (bez DIY — pokazuje proces i wartość).
-    - Min. 3 linki wewnętrzne + CTA do usługi.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+### SEO i Widoczność (15 tematów)
 
-- ❌ **[IDEA-068] Blog: Jak napisać skuteczny tekst na stronę główną firmy?**
+1. ❌ **Czym jest indeksowanie i dlaczego Google może nie widzieć mojej strony?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić usługę tworzenia treści + klaster copywriting/UX.
-    - Artykuł edukuje o strukturze i treściach strony głównej.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Wstęp — rola strony głównej w komunikacji z klientem
-    - H2: Co powinno znaleźć się na stronie głównej? (sekcje i ich funkcje)
-    - H2: Jak pisać nagłówki i teksty, które przyciągają uwagę?
-    - H2: Najczęstsze błędy na stronach głównych firm
-    - H2: Jak dostosować treści do grupy docelowej?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/tworzenie-tresci`
-    - `/uslugi/strony-internetowe`
-    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
-  - SEO:
-    - URL/slug: `/edukacja/tresci/jak-napisac-tekst-na-strone-glowna-firmy`
-    - `metadata.title`: `Jak napisać skuteczny tekst na stronę główną firmy? - Arteon`
-    - `metadata.description`: `Dowiedz się, co powinno znaleźć się na stronie głównej firmy, jak pisać nagłówki i jakich błędów unikać.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 3 linki wewnętrzne + CTA do usługi.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO, Widoczność
+   - Uzasadnienie: Fundamentalny temat, wyjaśnia mechanizm crawlera i indeksacji krok po kroku.
 
-- ❌ **[IDEA-070] Blog: Jak przyspieszyć stronę internetową? Core Web Vitals w praktyce**
+2. ❌ **5 mitów o pozycjonowaniu, w które wciąż wierzą właściciele firm**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić usługi strony/optymalizacja + klaster SEO/wydajność.
-    - Artykuł edukuje o szybkości strony i wskaźnikach Core Web Vitals.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Wstęp — dlaczego szybkość strony ma znaczenie
-    - H2: Co to są Core Web Vitals? (LCP, INP, CLS)
-    - H2: Jak sprawdzić szybkość swojej strony?
-    - H2: Najczęstsze przyczyny wolnego działania strony
-    - H2: Co można zrobić, żeby strona działała szybciej?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
-    - `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
-    - `/narzedzia/jpg-png-na-webp-bez-limitu`
-  - SEO:
-    - URL/slug: `/edukacja/seo/jak-przyspieszyc-strone-internetowa-core-web-vitals`
-    - `metadata.title`: `Jak przyspieszyć stronę internetową? Core Web Vitals w praktyce - Arteon`
-    - `metadata.description`: `Dowiedz się, co to są Core Web Vitals, jak sprawdzić szybkość strony i co zrobić, żeby strona działała szybciej.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 4 linki wewnętrzne + CTA do usługi.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO
+   - Uzasadnienie: Format "mity" przyciąga uwagę, obala błędne przekonania o SEO.
 
-- ❌ **[IDEA-072] Blog: Strona internetowa czy reklamy Google Ads: od czego zacząć promocję firmy?**
+3. ❌ **Pozycjonowanie lokalne vs ogólnopolskie: czym się różnią i które wybrać?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić usługi strony + pozycjonowanie vs płatne reklamy.
-    - Bardzo popularne pytanie wśród firm rozpoczynających działania online.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Wstęp — dwie drogi do klientów online
-    - H2: Czym jest strona internetowa i SEO jako fundament?
-    - H2: Czym są reklamy Google Ads i kiedy działają najlepiej?
-    - H2: Porównanie: koszty, czas, efekty długoterminowe
-    - H2: Kiedy zacząć od strony, a kiedy od reklam?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/marketing/pozycjonowanie-stron`
-    - `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
-  - SEO:
-    - URL/slug: `/edukacja/marketing/strona-internetowa-czy-reklamy-google-ads-od-czego-zaczac`
-    - `metadata.title`: `Strona internetowa czy reklamy Google Ads: od czego zacząć promocję firmy? - Arteon`
-    - `metadata.description`: `Dowiedz się, czy lepiej zainwestować w stronę internetową i SEO, czy w reklamy Google Ads. Porównanie kosztów, czasu i efektów.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty, bez DIY).
-    - Min. 3 linki wewnętrzne + CTA do usługi.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO, Widoczność
+   - Uzasadnienie: Porównanie pomaga podjąć decyzję, wyjaśnia różnice w strategii.
 
-- ❌ **[IDEA-073] Blog: Czym jest UX i jak wpływa na skuteczność strony internetowej?**
+4. ❌ **Co to jest crawl budget i czy mała firma powinna się tym przejmować?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić usługi strony/sklepy + klaster UX/konwersja.
-    - Artykuł edukuje o podstawach UX i jego wpływie na biznes.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Wstęp — co to jest UX (user experience)
-    - H2: Dlaczego UX ma znaczenie dla strony firmowej?
-    - H2: Elementy dobrego UX na stronie internetowej
-    - H2: Jak rozpoznać problemy z UX na swojej stronie?
-    - H2: Przykłady dobrych praktyk UX
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/sklepy-internetowe`
-    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
-    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
-  - SEO:
-    - URL/slug: `/edukacja/ux/czym-jest-ux-i-jak-wplywa-na-skutecznosc-strony`
-    - `metadata.title`: `Czym jest UX i jak wpływa na skuteczność strony internetowej? - Arteon`
-    - `metadata.description`: `Dowiedz się, czym jest UX, dlaczego ma znaczenie dla strony firmowej i jak rozpoznać problemy z doświadczeniem użytkownika.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 4 linki wewnętrzne + CTA do usługi.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO
+   - Uzasadnienie: Wyjaśnia techniczny termin w kontekście realnych potrzeb małych firm.
 
-- ❌ **[IDEA-077] Blog: Jakie wymiary grafik na Facebooku, Instagramie i LinkedIn?**
+5. ❌ **Dlaczego fraza kluczowa nie wystarczy, żeby być wysoko w Google?**
 
-  - Cel i uzasadnienie:
-    - Rozwinięcie tematu wymiarów grafik z IDEA-074 w formie kompletnego przewodnika.
-    - Artykuł będzie szczegółowym źródłem wiedzy o wymiarach dla każdej platformy.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Wstęp — dlaczego wymiary mają znaczenie
-    - H2: Wymiary grafik na Facebooku (post, cover, story, reklama)
-    - H2: Wymiary grafik na Instagramie (post kwadratowy, pionowy, poziomy, stories, reels, profil)
-    - H2: Wymiary grafik na LinkedIn (post, banner firmowy, cover)
-    - H2: Wymiary grafik na innych platformach (TikTok, YouTube, Pinterest)
-    - H2: Co się dzieje, gdy wymiary są niepoprawne?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/projekty-graficzne/szablony-postow-social-media`
-    - `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`
-    - `/edukacja/grafika/jak-przygotowac-grafike-na-posty-w-mediach-spolecznosciowych`
-  - SEO:
-    - URL/slug: `/edukacja/grafika/jakie-wymiary-grafik-na-facebooku-instagramie-i-linkedin`
-    - `metadata.title`: `Jakie wymiary grafik na Facebooku, Instagramie i LinkedIn? - Arteon`
-    - `metadata.description`: `Kompletny przewodnik po wymiarach grafik na media społecznościowe. Poznaj dokładne rozmiary dla postów, stories, reklam i banerów na każdej platformie.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Szczegółowe wymiary dla każdej platformy z konkretnymi wartościami px.
-    - Min. 3 linki wewnętrzne + CTA do usługi.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO, Treści
+   - Uzasadnienie: Tłumaczy, że SEO to więcej niż słowa kluczowe — intencja, jakość, linki.
 
-- ❌ **[IDEA-078] Blog: Jak zabezpieczyć stronę WordPress przed atakami i włamaniami?**
+6. ❌ **Jak Google ocenia jakość treści? E-E-A-T wyjaśnione prostym językiem**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Bezpieczeństwo (obecnie 1 artykuł o SSL).
-    - WordPress to najpopularniejszy CMS — temat ma duży potencjał wyszukiwań.
-    - Artykuł edukuje o zagrożeniach i kieruje do usługi optymalizacji/wsparcia.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego strony WordPress są częstym celem ataków?
-    - H2: Najczęstsze rodzaje zagrożeń (brute force, malware, SQL injection, XSS)
-    - H2: Podstawy bezpieczeństwa: aktualizacje, hasła, użytkownicy
-    - H2: Wtyczki bezpieczeństwa: co robią i kiedy warto je mieć
-    - H2: Kopie zapasowe jako ostatnia linia obrony
-    - H2: Kiedy zlecić audyt bezpieczeństwa specjaliście?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
-    - `/uslugi/strony-internetowe`
-    - `/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/bezpieczenstwo/jak-zabezpieczyc-strone-wordpress-przed-atakami`
-    - `metadata.title`: `Jak zabezpieczyć stronę WordPress przed atakami i włamaniami? - Arteon`
-    - `metadata.description`: `Dowiedz się, jakie zagrożenia czyhają na strony WordPress, jak się przed nimi chronić i kiedy warto zlecić audyt bezpieczeństwa.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, bez DIY — pokazuje zagrożenia i wartość profesjonalnej opieki).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO, Treści
+   - Uzasadnienie: Kluczowy koncept Google wyjaśniony bez żargonu.
 
-- ❌ **[IDEA-079] Blog: Kopie zapasowe strony: dlaczego są ważne i jak często je robić?**
+7. ❌ **Czym jest kanibalizacja słów kluczowych i jak ją rozpoznać?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Bezpieczeństwo.
-    - Temat często pomijany przez właścicieli stron, a kluczowy dla ciągłości działania.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Co to jest kopia zapasowa strony i co zawiera?
-    - H2: Kiedy kopia zapasowa ratuje firmę? (przykłady scenariuszy)
-    - H2: Jak często robić kopie zapasowe? (zależy od typu strony)
-    - H2: Gdzie przechowywać kopie? (hosting, chmura, lokalnie)
-    - H2: Automatyczne vs ręczne kopie zapasowe
-    - H2: Jak sprawdzić, czy hosting robi kopie?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
-    - `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/bezpieczenstwo/kopie-zapasowe-strony-dlaczego-sa-wazne`
-    - `metadata.title`: `Kopie zapasowe strony: dlaczego są ważne i jak często je robić? - Arteon`
-    - `metadata.description`: `Dowiedz się, czym są kopie zapasowe strony, jak często je wykonywać i gdzie przechowywać, żeby nie stracić danych.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO
+   - Uzasadnienie: Konkretny problem techniczny z praktycznymi przykładami.
 
-- ❌ **[IDEA-085] Blog: Jak zwiększyć konwersję w sklepie internetowym bez obniżania cen?**
+8. ❌ **Google Search Console: 5 raportów, które powinieneś sprawdzać co miesiąc**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Sklepy.
-    - Temat bezpośrednio wpływa na wyniki biznesowe klientów e-commerce.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Co to jest konwersja i dlaczego warto ją mierzyć?
-    - H2: Karta produktu: elementy, które zwiększają sprzedaż
-    - H2: Proces zakupowy: jak nie stracić klienta przy kasie
-    - H2: Zaufanie i bezpieczeństwo: opinie, gwarancje, zwroty
-    - H2: Szybkość i wygoda: wpływ wydajności na sprzedaż
-    - H2: Jak mierzyć i testować zmiany? (podstawy A/B testing)
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/sklepy-internetowe`
-    - `/uslugi/marketing/pozycjonowanie-stron`
-    - `/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania`
-    - `/edukacja/psychologia/jak-psychologia-wplywa-na-zachowania-uzytkownikow`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/sklepy/jak-zwiekszyc-konwersje-w-sklepie-internetowym`
-    - `metadata.title`: `Jak zwiększyć konwersję w sklepie internetowym bez obniżania cen? - Arteon`
-    - `metadata.description`: `Dowiedz się, jakie elementy sklepu internetowego wpływają na konwersję i jak zwiększyć sprzedaż bez obniżania cen.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, bez DIY).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO, Widoczność
+   - Uzasadnienie: Praktyczny przewodnik po najważniejszych danych GSC.
 
-- ❌ **[IDEA-086] Blog: Nawigacja na stronie: jak ułatwić użytkownikom znalezienie tego, czego szukają?**
+9. ❌ **Czym jest featured snippet i jak zwiększyć szanse na jego zdobycie?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię UX (obecnie 1 artykuł + IDEA-073).
-    - Nawigacja to fundament UX — temat praktyczny i konkretny.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego nawigacja decyduje o skuteczności strony?
-    - H2: Rodzaje nawigacji: główna, stopka, breadcrumbs, wyszukiwarka
-    - H2: Ile pozycji w menu to optymalna liczba?
-    - H2: Nazewnictwo: jak nazywać podstrony, żeby były zrozumiałe
-    - H2: Nawigacja mobilna: hamburgery, sticky menu, bottom nav
-    - H2: Najczęstsze błędy w nawigacji i jak ich unikać
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne:
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/sklepy-internetowe`
-    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
-    - `/kontakt`
-  - SEO:
-    - URL/slug: `/edukacja/ux/nawigacja-na-stronie-jak-ulatwic-uzytkownikom-znalezienie`
-    - `metadata.title`: `Nawigacja na stronie: jak ułatwić użytkownikom znalezienie tego, czego szukają? - Arteon`
-    - `metadata.description`: `Dowiedz się, jak zaprojektować nawigację na stronie, żeby użytkownicy szybko znajdowali to, czego szukają.`
-  - Kryteria akceptacji:
-    - Artykuł zgodny z tonem marki (mentorski, prosty).
-    - Min. 4 linki wewnętrzne + CTA.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+   - Kategoria: SEO, Widoczność
+   - Uzasadnienie: Wyjaśnia mechanizm "pozycji zero" i strategie jej zdobycia.
 
-- ❌ **[IDEA-090] Blog: Co to jest dostępność cyfrowa i kogo dotyczy European Accessibility Act 2025?**
+10. ❌ **Dlaczego nowa strona potrzebuje więcej czasu na pozycjonowanie niż stara?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Dostępność (obecnie 1 artykuł o kontraście).
-    - Temat aktualny — EAA wchodzi w życie w czerwcu 2025, wiele firm nie wie o obowiązkach.
-    - Artykuł edukuje o przepisach i kieruje do usług Arteon.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Co to jest dostępność cyfrowa i dlaczego ma znaczenie?
-    - H2: European Accessibility Act — co to za przepis i kogo dotyczy?
-    - H2: Jakie wymagania wprowadza EAA dla stron i aplikacji?
-    - H2: Które firmy muszą dostosować się do przepisów?
-    - H2: Co grozi za brak dostępności? (sankcje, odpowiedzialność)
-    - H2: Jak sprawdzić, czy strona spełnia wymagania dostępności?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/sklepy-internetowe`
-    - `/narzedzia/tester-kontrastu-kolorow-wcag`
-    - `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
-    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - European Accessibility Act (EUR-Lex)
-    - Dyrektywa 2016/2102 (EUR-Lex)
-    - Ustawa o dostępności cyfrowej (ISAP)
-    - WCAG 2.1 (W3C)
-    - Ministerstwo Cyfryzacji (dostepnoscplus.gov.pl)
-  - SEO:
-    - URL/slug: `/edukacja/dostepnosc/co-to-jest-dostepnosc-cyfrowa-european-accessibility-act-2025`
-    - `metadata.title`: `Co to jest dostępność cyfrowa i kogo dotyczy European Accessibility Act 2025? - Arteon`
-    - `metadata.description`: `Dowiedz się, czym jest dostępność cyfrowa, jakie wymagania wprowadza European Accessibility Act i które firmy muszą dostosować strony do przepisów od 2025 roku.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania (1800-2800 słów).
-    - Ton mentorski, nie-DIY — wyjaśnia przepisy, nie instruuje jak samemu wdrożyć.
-    - Tooltips dla: WCAG, EAA, a11y, screen reader.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: SEO
+    - Uzasadnienie: Wyjaśnia pojęcie autorytetu domeny i sandbox effect.
 
-- ❌ **[IDEA-091] Blog: Jak przygotować stronę do obsługi osób niewidomych i słabowidzących?**
+11. ❌ **Robots.txt vs meta robots: jaka jest różnica i kiedy używać którego?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Dostępność — praktyczny artykuł o a11y.
-    - Duży potencjał long-tail (screen reader, czytnik ekranu, NVDA, VoiceOver).
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Jak osoby niewidome korzystają ze stron internetowych?
-    - H2: Czym jest czytnik ekranu i jak działa?
-    - H2: Struktura nagłówków — dlaczego kolejność H1-H6 ma znaczenie
-    - H2: Teksty alternatywne dla obrazów — co powinien zawierać dobry alt
-    - H2: Formularze dostępne dla czytników ekranu
-    - H2: Nawigacja klawiaturowa — focus, skip links, tabindex
-    - H2: Jak przetestować stronę czytnikiem ekranu?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/narzedzia/tester-kontrastu-kolorow-wcag`
-    - `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
-    - `/edukacja/dostepnosc/co-to-jest-dostepnosc-cyfrowa-european-accessibility-act-2025` (gdy powstanie)
-    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - NVDA (nvaccess.org)
-    - VoiceOver (Apple)
-    - WCAG 2.1 — Success Criterion 1.1.1 (W3C)
-    - WebAIM (webaim.org)
-    - axe DevTools
-  - SEO:
-    - URL/slug: `/edukacja/dostepnosc/jak-przygotowac-strone-dla-osob-niewidomych`
-    - `metadata.title`: `Jak przygotować stronę do obsługi osób niewidomych i słabowidzących? - Arteon`
-    - `metadata.description`: `Dowiedz się, jak osoby niewidome korzystają ze stron internetowych, czym jest czytnik ekranu i na co zwrócić uwagę przy projektowaniu dostępnej strony.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski, nie-DIY — wyjaśnia zasady, nie instruuje wdrożenia.
-    - Tooltips dla: screen reader, NVDA, VoiceOver, alt, aria, focus.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: SEO
+    - Uzasadnienie: Dwa mechanizmy kontroli indeksacji — jasne rozróżnienie.
 
-- ❌ **[IDEA-092] Blog: Dlaczego strona internetowa musi działać na telefonie i jak to sprawdzić?**
+12. ❌ **Co to jest anchor text i dlaczego ma znaczenie dla linkowania?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię UX + powiązanie z responsywnością.
-    - Temat fundamentalny — ponad 60% ruchu z mobile.
-    - Artykuł łączy UX z SEO (mobile-first indexing).
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Jak wygląda ruch mobilny w Polsce i na świecie?
-    - H2: Czym jest mobile-first indexing i dlaczego Google indeksuje wersję mobilną?
-    - H2: Najczęstsze problemy stron na telefonie
-    - H2: Jak sprawdzić, czy strona działa poprawnie na mobile?
-    - H2: Na co zwrócić uwagę przy projektowaniu strony mobilnej?
-    - H2: Kiedy zlecić audyt mobilny?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/sklepy-internetowe`
-    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
-    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
-    - `/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - StatCounter (statcounter.com)
-    - Google Search Central (mobile-first indexing)
-    - Mobile-Friendly Test (Google)
-    - PageSpeed Insights
-  - SEO:
-    - URL/slug: `/edukacja/ux/dlaczego-strona-musi-dzialac-na-telefonie`
-    - `metadata.title`: `Dlaczego strona internetowa musi działać na telefonie i jak to sprawdzić? - Arteon`
-    - `metadata.description`: `Dowiedz się, jaki odsetek użytkowników korzysta z telefonu, czym jest mobile-first indexing i jak sprawdzić, czy strona działa poprawnie na urządzeniach mobilnych.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski, prosty — dane + praktyczne wskazówki.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: SEO
+    - Uzasadnienie: Szczegółowe wyjaśnienie jednego elementu linkowania.
 
-- ❌ **[IDEA-093] Blog: Jakie informacje powinny znajdować się na stronie firmy usługowej?**
+13. ❌ **Jak długo utrzymują się efekty pozycjonowania po zakończeniu współpracy?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić klaster Strony + wsparcie usługi stron internetowych.
-    - Temat uniwersalny — dotyka każdej firmy usługowej.
-    - Artykuł edukuje o strukturze, nie instruuje budowy strony.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego kompletność informacji wpływa na zaufanie klientów?
-    - H2: Strona główna — co użytkownik musi zrozumieć w pierwszych sekundach
-    - H2: Strona usług — jak opisać ofertę bez żargonu
-    - H2: Strona O nas — jak budować wiarygodność bez pustych fraz
-    - H2: Strona kontaktowa — elementy obowiązkowe i dobre praktyki
-    - H2: Dodatkowe elementy: realizacje, opinie, FAQ, blog
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/tworzenie-tresci`
-    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
-    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
-    - `/edukacja/seo/meta-title-i-description-jak-je-napisac`
-    - `/narzedzia/licznik-dlugosci-meta-title-i-description`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Nielsen Norman Group (nngroup.com)
-    - Think with Google
-    - HubSpot (research o stronach firmowych)
-  - SEO:
-    - URL/slug: `/edukacja/strony/jakie-informacje-powinny-byc-na-stronie-firmy-uslugowej`
-    - `metadata.title`: `Jakie informacje powinny znajdować się na stronie firmy usługowej? - Arteon`
-    - `metadata.description`: `Dowiedz się, jakie informacje musi zawierać strona firmy usługowej, żeby budować zaufanie klientów i ułatwiać kontakt.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — pokazuje co powinno być, nie jak zrobić samemu.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: SEO
+    - Uzasadnienie: Częste pytanie klientów, uczciwa odpowiedź buduje zaufanie.
 
-- ❌ **[IDEA-094] Blog: Jak wybrać system płatności dla sklepu internetowego?**
+14. ❌ **Czym jest sitemap.xml i dlaczego każda strona firmowa go potrzebuje?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Sklepy (obecnie mało artykułów).
-    - Temat praktyczny dla każdego właściciela e-commerce.
-    - Linkowanie do usługi sklepów internetowych.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego wybór systemu płatności wpływa na sprzedaż?
-    - H2: Rodzaje systemów płatności: operatorzy, bramki, BLIK, karty
-    - H2: Na co zwrócić uwagę przy wyborze? (prowizje, integracje, wsparcie)
-    - H2: Bezpieczeństwo płatności — certyfikaty, PCI DSS, 3D Secure
-    - H2: Popularne rozwiązania na polskim rynku
-    - H2: Kiedy warto zmienić operatora płatności?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/sklepy-internetowe`
-    - `/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania`
-    - `/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
-    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - PCI Security Standards Council
-    - Przelewy24, PayU, Stripe (oficjalne strony)
-    - NBP (dane o płatnościach elektronicznych w Polsce)
-  - SEO:
-    - URL/slug: `/edukacja/sklepy/jak-wybrac-system-platnosci-dla-sklepu-internetowego`
-    - `metadata.title`: `Jak wybrać system płatności dla sklepu internetowego? - Arteon`
-    - `metadata.description`: `Dowiedz się, jakie rodzaje systemów płatności są dostępne, na co zwrócić uwagę przy wyborze i jak wpływają na konwersję w sklepie.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — pokazuje co rozważyć, nie jak wdrożyć.
-    - Tooltips dla: PCI DSS, 3D Secure, BLIK, gateway.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: SEO
+    - Uzasadnienie: Prosty temat techniczny z konkretną wartością.
 
-- ❌ **[IDEA-095] Blog: Polityka zwrotów w sklepie internetowym: co musi zawierać i jak wpływa na sprzedaż?**
+15. ❌ **Nofollow, sponsored, ugc: czym są atrybuty linków i kiedy ich używać?**
+    - Kategoria: SEO
+    - Uzasadnienie: Wyjaśnia rodzaje linków i ich wpływ na SEO.
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Sklepy.
-    - Temat łączy aspekty prawne, UX i konwersję.
-    - Duży potencjał long-tail (prawo konsumenta, 14 dni, zwroty e-commerce).
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego polityka zwrotów wpływa na decyzje zakupowe?
-    - H2: Co mówi prawo? (ustawa o prawach konsumenta, 14 dni)
-    - H2: Co powinna zawierać dobra polityka zwrotów?
-    - H2: Jak prezentować informacje o zwrotach na stronie sklepu?
-    - H2: Czy wydłużona polityka zwrotów zwiększa sprzedaż?
-    - H2: Najczęstsze błędy w politykach zwrotów
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/sklepy-internetowe`
-    - `/edukacja/sklepy/jak-zwiekszyc-konwersje-w-sklepie-internetowym` (gdy powstanie)
-    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Ustawa o prawach konsumenta (ISAP)
-    - UOKiK
-    - Dyrektywa 2011/83/UE (EUR-Lex)
-    - Badania o wpływie polityki zwrotów na konwersję (Baymard, Narvar)
-  - SEO:
-    - URL/slug: `/edukacja/sklepy/polityka-zwrotow-w-sklepie-internetowym`
-    - `metadata.title`: `Polityka zwrotów w sklepie internetowym: co musi zawierać i jak wpływa na sprzedaż? - Arteon`
-    - `metadata.description`: `Dowiedz się, co musi zawierać polityka zwrotów zgodna z prawem, jak ją prezentować na stronie i jak wpływa na decyzje zakupowe klientów.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia przepisy i dobre praktyki.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+### Strony i UX (12 tematów)
 
-- ❌ **[IDEA-096] Blog: Jak działa algorytm Google i co wpływa na pozycję strony w wynikach wyszukiwania?**
+16. ❌ **Czym jest above the fold i dlaczego pierwsze 600 pikseli decyduje o konwersji?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić klaster SEO — artykuł fundamentalny o mechanizmach Google.
-    - Duży potencjał ruchu — temat wiecznie aktualny.
-    - Linkowanie do usług pozycjonowania i audytu SEO.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Jak Google indeksuje i ocenia strony internetowe?
-    - H2: Czym są czynniki rankingowe i ile ich jest?
-    - H2: Najważniejsze sygnały jakości strony (E-E-A-T, content, linki)
-    - H2: Core Updates — czym są i jak wpływają na pozycje?
-    - H2: Czego Google oficjalnie szuka na stronach?
-    - H2: Mity o pozycjonowaniu — co nie działa
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/marketing/pozycjonowanie-stron`
-    - `/uslugi/marketing/audyt-seo`
-    - `/uslugi/marketing/optymalizacja-seo`
-    - `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
-    - `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
-    - `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Google Search Central
-    - Google Quality Raters Guidelines (PDF)
-    - Ahrefs/Semrush (badania o czynnikach rankingowych)
-    - Google Blog (oficjalne komunikaty o Core Updates)
-  - SEO:
-    - URL/slug: `/edukacja/seo/jak-dziala-algorytm-google`
-    - `metadata.title`: `Jak działa algorytm Google i co wpływa na pozycję strony w wynikach wyszukiwania? - Arteon`
-    - `metadata.description`: `Dowiedz się, jak Google indeksuje i ocenia strony, czym są czynniki rankingowe, E-E-A-T i Core Updates oraz co naprawdę wpływa na pozycję w wyszukiwarce.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia mechanizmy bez obietnic gwarancji.
-    - Tooltips dla: E-E-A-T, Core Update, crawler, indeksacja, PageRank.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX, Strony
+    - Uzasadnienie: Konkretny element UX z wymiernym wpływem na wyniki.
 
-- ❌ **[IDEA-098] Blog: Jak psychologia kolorów wpływa na zachowania użytkowników na stronie?**
+17. ❌ **Hamburger menu vs rozwinięta nawigacja: co lepiej konwertuje na mobile?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Psychologia (obecnie brak dedykowanych artykułów).
-    - Rozwinięcie tematu z istniejącego artykułu o kolorystyce i decyzjach zakupowych.
-    - Linkowanie do narzędzi kolorystycznych i usług.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Jak mózg przetwarza kolory i co to oznacza dla stron internetowych?
-    - H2: Znaczenie kolorów w różnych kulturach i kontekstach
-    - H2: Kolory a emocje — co mówią badania?
-    - H2: Jak kolory wpływają na postrzeganie marki?
-    - H2: Kolory przycisków CTA — czy czerwony naprawdę konwertuje lepiej?
-    - H2: Na co zwrócić uwagę przy doborze kolorów?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/narzedzia/generator-palet-kolorow-online`
-    - `/narzedzia/generator-palety-kolorow-z-obrazu`
-    - `/narzedzia/tester-kontrastu-kolorow-wcag`
-    - `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
-    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Badania o psychologii kolorów (Journal of Business Research, Color Research & Application)
-    - Nielsen Norman Group
-    - Colour Affects (Angela Wright)
-  - SEO:
-    - URL/slug: `/edukacja/psychologia/jak-psychologia-kolorow-wplywa-na-zachowania-uzytkownikow`
-    - `metadata.title`: `Jak psychologia kolorów wpływa na zachowania użytkowników na stronie? - Arteon`
-    - `metadata.description`: `Dowiedz się, jak mózg przetwarza kolory, jakie emocje wywołują różne barwy i jak świadomie wykorzystać psychologię kolorów przy projektowaniu strony.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia badania i praktyczne implikacje.
-    - Źródła dla wszystkich danych o psychologii kolorów.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX, Strony
+    - Uzasadnienie: Porównanie dwóch podejść z danymi i kontekstem.
 
-- ❌ **[IDEA-099] Blog: Jak pierwsze wrażenie o stronie wpływa na decyzje użytkowników?**
+18. ❌ **7 błędów w formularzach kontaktowych, które zmniejszają liczbę zapytań**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Psychologia.
-    - Temat łączy UX, design i psychologię — uniwersalny dla wszystkich stron.
-    - Klasyczne badania (50ms first impression) dają mocne argumenty.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Ile czasu użytkownik potrzebuje, żeby ocenić stronę?
-    - H2: Co mózg ocenia w pierwszych sekundach?
-    - H2: Efekt halo — jak pierwsze wrażenie wpływa na dalsze postrzeganie
-    - H2: Zaufanie wizualne — elementy, które budują lub niszczą wiarygodność
-    - H2: Mobile vs desktop — czy pierwsze wrażenie różni się na urządzeniach?
-    - H2: Na co zwrócić uwagę przy projektowaniu strony głównej?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
-    - `/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
-    - `/edukacja/grafika/jak-dobrac-kolory-do-strony-internetowej`
-    - `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Badanie 50ms (Behaviour & Information Technology, Lindgaard et al.)
-    - Stanford Web Credibility Research
-    - Nielsen Norman Group (trust and credibility)
-  - SEO:
-    - URL/slug: `/edukacja/psychologia/jak-pierwsze-wrazenie-o-stronie-wplywa-na-decyzje`
-    - `metadata.title`: `Jak pierwsze wrażenie o stronie wpływa na decyzje użytkowników? - Arteon`
-    - `metadata.description`: `Dowiedz się, ile czasu użytkownik potrzebuje na ocenę strony, co mózg analizuje w pierwszych sekundach i jak projektować stronę, która budzi zaufanie.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia badania i daje praktyczne wskazówki.
-    - Źródła dla badań o pierwszym wrażeniu.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX, Strony
+    - Uzasadnienie: Format "błędy" z konkretnymi przykładami i rozwiązaniami.
 
-- ❌ **[IDEA-100] Blog: Jak prawidłowo przygotować materiały do druku? Rozdzielczość, spaddy, kolory CMYK**
+19. ❌ **Sticky header: kiedy pomaga, a kiedy przeszkadza użytkownikom?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Druk — temat praktyczny dla wszystkich projektów drukowanych.
-    - Artykuł edukuje o wymaganiach, nie instruuje jak projektować samemu.
-    - Linkowanie do usług projektów graficznych.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego przygotowanie pliku do druku wymaga wiedzy technicznej?
-    - H2: Rozdzielczość — co to jest DPI i ile powinno być dla druku?
-    - H2: Spaddy (bleed) — czym są i dlaczego drukarnia ich wymaga?
-    - H2: Przestrzenie kolorów — RGB vs CMYK i co się dzieje przy konwersji
-    - H2: Fonty i krzywe — dlaczego tekst może wyglądać inaczej po druku?
-    - H2: Formaty plików — PDF, TIFF, EPS i ich zastosowanie
-    - H2: Na co zwrócić uwagę przy odbiorze projektu od grafika?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/projekty-graficzne/projekt-wizytowki`
-    - `/uslugi/projekty-graficzne/projekt-ulotki`
-    - `/uslugi/projekty-graficzne/projekt-katalogu`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Adobe (color management)
-    - Printing Industry Standards (Fogra, ISO 12647)
-  - SEO:
-    - URL/slug: `/edukacja/druk/jak-przygotowac-materialy-do-druku`
-    - `metadata.title`: `Jak prawidłowo przygotować materiały do druku? Rozdzielczość, spaddy, kolory CMYK - Arteon`
-    - `metadata.description`: `Dowiedz się, czym są DPI, spaddy i CMYK, dlaczego mają znaczenie dla druku i na co zwrócić uwagę przy odbiorze projektu od grafika.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia wymagania, nie instruuje jak projektować.
-    - Tooltips dla: DPI, bleed, CMYK, RGB, bezier, PDF/X.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX
+    - Uzasadnienie: Konkretny element interfejsu z analizą za i przeciw.
 
-- ❌ **[IDEA-101] Blog: Wizytówka firmowa: co powinna zawierać i jakie są standardowe wymiary?**
+20. ❌ **Breadcrumbs na stronie: po co są i jak wpływają na SEO?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Druk + klaster projektów graficznych.
-    - Temat wiecznie aktualny — wizytówka to podstawowy materiał firmowy.
-    - Linkowanie do usługi projektowania wizytówek.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Czy wizytówki są jeszcze potrzebne w erze cyfrowej?
-    - H2: Standardowe wymiary wizytówek w Polsce i na świecie
-    - H2: Co powinna zawierać dobra wizytówka firmowa?
-    - H2: Papier i wykończenie — jak wpływają na odbiór?
-    - H2: Wizytówka jednostronna czy dwustronna?
-    - H2: Najczęstsze błędy przy projektowaniu wizytówek
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/projekty-graficzne/projekt-wizytowki`
-    - `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
-    - `/edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic`
-    - `/edukacja/druk/jak-przygotowac-materialy-do-druku` (gdy powstanie)
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - ISO 7810 (standardy wymiarów kart)
-    - Badania o percepcji materiałów drukowanych
-  - SEO:
-    - URL/slug: `/edukacja/druk/wizytowka-firmowa-co-powinna-zawierac`
-    - `metadata.title`: `Wizytówka firmowa: co powinna zawierać i jakie są standardowe wymiary? - Arteon`
-    - `metadata.description`: `Dowiedz się, jakie są standardowe wymiary wizytówek, co powinna zawierać dobra wizytówka firmowa i na co zwrócić uwagę przy zamawianiu projektu.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia standardy i dobre praktyki.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX, SEO
+    - Uzasadnienie: Łączy UX z SEO — podwójna wartość jednego elementu.
 
-- ❌ **[IDEA-102] Blog: Jak wygląda proces tworzenia strony internetowej krok po kroku?**
+21. ❌ **Czym jest CTA i dlaczego jeden przycisk działa lepiej niż pięć?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić klaster Strony — artykuł demistyfikuje proces dla potencjalnych klientów.
-    - Temat redukuje niepewność przed zleceniem projektu.
-    - Linkowanie do usług stron i kontaktu.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego warto znać etapy tworzenia strony przed zleceniem projektu?
-    - H2: Etap 1: Brief i analiza potrzeb
-    - H2: Etap 2: Strategia i struktura strony
-    - H2: Etap 3: Projekt graficzny (UX/UI)
-    - H2: Etap 4: Wdrożenie i programowanie
-    - H2: Etap 5: Testy i poprawki
-    - H2: Etap 6: Publikacja i przekazanie
-    - H2: Co dzieje się po uruchomieniu strony?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/sklepy-internetowe`
-    - `/uslugi/projekty-graficzne/projekt-graficzny-strony`
-    - `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`
-    - `/edukacja/strony/jakie-informacje-powinny-byc-na-stronie-firmy-uslugowej` (gdy powstanie)
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Nielsen Norman Group (UX process)
-    - Google Web Fundamentals
-  - SEO:
-    - URL/slug: `/edukacja/strony/jak-wyglada-proces-tworzenia-strony-internetowej`
-    - `metadata.title`: `Jak wygląda proces tworzenia strony internetowej krok po kroku? - Arteon`
-    - `metadata.description`: `Dowiedz się, jakie etapy obejmuje tworzenie strony internetowej, czego możesz oczekiwać na każdym kroku i jak przygotować się do współpracy.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia proces, nie instruuje jak zrobić stronę samemu.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX, Strony
+    - Uzasadnienie: Wyjaśnia call-to-action i paradoks wyboru.
 
-- ❌ **[IDEA-103] Blog: Czym jest hosting i jak wpływa na działanie strony internetowej?**
+22. ❌ **Whitespace na stronie: dlaczego pusta przestrzeń zwiększa czytelność?**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić klaster Strony — temat fundamentalny, często niezrozumiany.
-    - Rozwinięcie istniejącego artykułu o domenach i hostingu.
-    - Linkowanie do usług stron internetowych.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Co to jest hosting i jak działa?
-    - H2: Rodzaje hostingu: shared, VPS, dedykowany, cloud
-    - H2: Jak hosting wpływa na szybkość strony?
-    - H2: Czym jest uptime i dlaczego 99,9% to nie 100%?
-    - H2: Bezpieczeństwo hostingu — certyfikaty, kopie zapasowe, ochrona DDoS
-    - H2: Na co zwrócić uwagę przy wyborze hostingu?
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`
-    - `/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
-    - `/edukacja/bezpieczenstwo/kopie-zapasowe-strony-dlaczego-sa-wazne` (gdy powstanie)
-    - `/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej`
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - Google Web Vitals (wpływ serwera na LCP)
-    - Cloudflare (wyjaśnienie CDN)
-    - HostingAdvice / WebsiteSetup (porównania)
-  - SEO:
-    - URL/slug: `/edukacja/strony/czym-jest-hosting-jak-wplywa-na-dzialanie-strony`
-    - `metadata.title`: `Czym jest hosting i jak wpływa na działanie strony internetowej? - Arteon`
-    - `metadata.description`: `Dowiedz się, czym jest hosting, jakie są jego rodzaje, jak wpływa na szybkość i bezpieczeństwo strony oraz na co zwrócić uwagę przy wyborze.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia techniczne aspekty prostym językiem.
-    - Tooltips dla: VPS, uptime, CDN, DDoS, SSL, LCP.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX, Grafika
+    - Uzasadnienie: Kontraintuicyjny temat — mniej znaczy więcej.
 
-- ❌ **[IDEA-104] Blog: Jak opinie klientów wpływają na zaufanie i sprzedaż?**
+23. ❌ **Jak projektować strony dla osób starszych? Dostępność bez kompromisów**
 
-  - Cel i uzasadnienie:
-    - Wzmocnić kategorię Psychologia + Marketing.
-    - Temat uniwersalny — opinie wpływają na wszystkie branże.
-    - Linkowanie do usług stron, sklepów i kontaktu.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Nowy artykuł w `data/pl/blog.json`.
-  - Konspekt (H2):
-    - H2: Dlaczego opinie innych ludzi wpływają na nasze decyzje?
-    - H2: Social proof — co to jest i jak działa w internecie?
-    - H2: Gdzie zbierać opinie? (Google, Facebook, własna strona, platformy branżowe)
-    - H2: Jak prezentować opinie na stronie?
-    - H2: Jak reagować na negatywne opinie?
-    - H2: Opinie a SEO — wpływ na widoczność w wyszukiwarce
-    - H2: Podsumowanie + CTA
-  - Linkowanie wewnętrzne (min. 6-8):
-    - `/uslugi/strony-internetowe`
-    - `/uslugi/sklepy-internetowe`
-    - `/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
-    - `/edukacja/psychologia/jak-pierwsze-wrazenie-o-stronie-wplywa-na-decyzje` (gdy powstanie)
-    - `/kontakt`
-  - Linkowanie zewnętrzne (min. 4-6):
-    - BrightLocal (Local Consumer Review Survey)
-    - Spiegel Research Center (badania o opiniach)
-    - Google Business Profile Help
-  - SEO:
-    - URL/slug: `/edukacja/psychologia/jak-opinie-klientow-wplywaja-na-zaufanie-i-sprzedaz`
-    - `metadata.title`: `Jak opinie klientów wpływają na zaufanie i sprzedaż? - Arteon`
-    - `metadata.description`: `Dowiedz się, dlaczego opinie innych ludzi wpływają na decyzje zakupowe, gdzie zbierać recenzje i jak prezentować je na stronie.`
-  - Kryteria akceptacji:
-    - Artykuł 9-14 min czytania.
-    - Ton mentorski — wyjaśnia psychologię i dobre praktyki.
-    - Tooltips dla: social proof, UGC, review schema.
-    - Min. 6 linków wewnętrznych + min. 4 zewnętrzne.
-    - Sekcja FAQ (min. 4 pytania).
-  - Weryfikacja: nie jest wymagana (content-only).
+    - Kategoria: UX, Dostępność
+    - Uzasadnienie: Konkretna grupa docelowa z jasnymi wytycznymi.
+
+24. ❌ **Czym jest dark pattern i dlaczego warto go unikać na swojej stronie?**
+
+    - Kategoria: UX, Psychologia
+    - Uzasadnienie: Edukuje o nieetycznych praktykach i ich konsekwencjach.
+
+25. ❌ **404 vs soft 404: jaka jest różnica i która opcja jest lepsza?**
+
+    - Kategoria: UX, SEO
+    - Uzasadnienie: Techniczny temat z praktycznymi implikacjami.
+
+26. ❌ **Jak zaprojektować stronę FAQ, która faktycznie odpowiada na pytania klientów?**
+
+    - Kategoria: UX, Treści
+    - Uzasadnienie: Głęboka analiza jednej sekcji strony.
+
+27. ❌ **Czym jest loading skeleton i dlaczego poprawia wrażenie szybkości strony?**
+    - Kategoria: UX, Strony
+    - Uzasadnienie: Konkretna technika UX z psychologicznym uzasadnieniem.
+
+### Grafika i Branding (10 tematów)
+
+28. ❌ **RGB vs CMYK: dlaczego logo na ekranie wygląda inaczej niż na wizytówce?**
+
+    - Kategoria: Grafika, Druk
+    - Uzasadnienie: Wyjaśnia różnicę przestrzeni kolorów w praktyce.
+
+29. ❌ **Czym jest księga znaku i czy mała firma jej potrzebuje?**
+
+    - Kategoria: Branding, Grafika
+    - Uzasadnienie: Demistyfikuje brand book, pokazuje minimalny zakres.
+
+30. ❌ **5 błędów przy wyborze kolorów firmowych i jak ich uniknąć**
+
+    - Kategoria: Grafika, Branding
+    - Uzasadnienie: Format "błędy" z konkretnymi przykładami.
+
+31. ❌ **Fonty szeryfowe vs bezszeryfowe: kiedy używać których na stronie?**
+
+    - Kategoria: Grafika, UX
+    - Uzasadnienie: Porównanie z kontekstem czytelności i brandingu.
+
+32. ❌ **Czym jest paleta kolorów i ile kolorów powinna mieć marka?**
+
+    - Kategoria: Grafika, Branding
+    - Uzasadnienie: Podstawy teorii koloru dla firm.
+
+33. ❌ **Logo w formacie PNG vs SVG vs EPS: kiedy używać którego?**
+
+    - Kategoria: Grafika
+    - Uzasadnienie: Praktyczny przewodnik po formatach plików graficznych.
+
+34. ❌ **Dlaczego logo ze stocka to zły pomysł? Ryzyka gotowych rozwiązań**
+
+    - Kategoria: Branding, Grafika
+    - Uzasadnienie: Wyjaśnia wartość unikalnego logo vs szablony.
+
+35. ❌ **Czym jest visual hierarchy i jak prowadzić wzrok użytkownika na stronie?**
+
+    - Kategoria: Grafika, UX
+    - Uzasadnienie: Podstawowa zasada projektowa z praktycznymi przykładami.
+
+36. ❌ **Retina i HiDPI: dlaczego grafiki wyglądają rozmyto na nowych ekranach?**
+
+    - Kategoria: Grafika, Strony
+    - Uzasadnienie: Techniczny problem z jasnym rozwiązaniem.
+
+37. ❌ **Aspect ratio: dlaczego proporcje zdjęć mają znaczenie przy projektowaniu?**
+    - Kategoria: Grafika, Zdjęcia
+    - Uzasadnienie: Fundamentalna zasada kompozycji w kontekście stron.
+
+### Bezpieczeństwo (8 tematów)
+
+38. ❌ **HTTP vs HTTPS: dlaczego kłódka w przeglądarce ma znaczenie dla firmy?**
+
+    - Kategoria: Bezpieczeństwo, Strony
+    - Uzasadnienie: Podstawa bezpieczeństwa wyjaśniona prostym językiem.
+
+39. ❌ **Czym jest atak DDoS i jak może wpłynąć na dostępność strony firmowej?**
+
+    - Kategoria: Bezpieczeństwo
+    - Uzasadnienie: Wyjaśnia zagrożenie bez technicznego żargonu.
+
+40. ❌ **Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?**
+
+    - Kategoria: Bezpieczeństwo, Strony
+    - Uzasadnienie: Konkretna praktyka z uzasadnieniem.
+
+41. ❌ **Czym jest phishing i jak rozpoznać fałszywe e-maile dotyczące domeny?**
+
+    - Kategoria: Bezpieczeństwo
+    - Uzasadnienie: Praktyczny temat ochrony przed oszustwami.
+
+42. ❌ **Two-factor authentication: dlaczego samo hasło już nie wystarczy?**
+
+    - Kategoria: Bezpieczeństwo
+    - Uzasadnienie: Podstawa bezpieczeństwa kont z prostym wyjaśnieniem.
+
+43. ❌ **Czym jest WAF (Web Application Firewall) i kiedy warto go mieć?**
+
+    - Kategoria: Bezpieczeństwo, Strony
+    - Uzasadnienie: Wyjaśnia warstwę ochrony dla właścicieli stron.
+
+44. ❌ **RODO a strona internetowa: jakie dane zbierasz i co musisz o tym powiedzieć?**
+
+    - Kategoria: Bezpieczeństwo, Strony
+    - Uzasadnienie: Praktyczne aspekty RODO dla właścicieli stron.
+
+45. ❌ **Czym jest malware na stronie i jak sprawdzić, czy strona nie jest zainfekowana?**
+    - Kategoria: Bezpieczeństwo
+    - Uzasadnienie: Praktyczny temat diagnostyczny.
+
+### Sklepy i E-commerce (8 tematów)
+
+46. ❌ **Karta produktu vs strona kategorii: która jest ważniejsza dla SEO sklepu?**
+
+    - Kategoria: Sklepy, SEO
+    - Uzasadnienie: Porównanie strategii optymalizacji w e-commerce.
+
+47. ❌ **Czym jest porzucony koszyk i dlaczego 70% klientów nie kończy zakupów?**
+
+    - Kategoria: Sklepy, Psychologia
+    - Uzasadnienie: Kluczowy problem e-commerce z danymi.
+
+48. ❌ **Trust badges w sklepie: które odznaczenia faktycznie zwiększają zaufanie?**
+
+    - Kategoria: Sklepy, Psychologia
+    - Uzasadnienie: Konkretne elementy budujące wiarygodność.
+
+49. ❌ **Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?**
+
+    - Kategoria: Sklepy, Psychologia
+    - Uzasadnienie: Porównanie strategii cenowych z badaniami.
+
+50. ❌ **Czym jest cross-selling i up-selling? Różnice i przykłady zastosowania**
+
+    - Kategoria: Sklepy
+    - Uzasadnienie: Dwa terminy często mylone, jasne rozróżnienie.
+
+51. ❌ **Filtry i sortowanie w sklepie: jak ułatwić znalezienie produktu?**
+
+    - Kategoria: Sklepy, UX
+    - Uzasadnienie: Konkretny element UX sklepu z wpływem na konwersję.
+
+52. ❌ **Opisy produktów: co pisać, żeby klient nie musiał szukać informacji?**
+
+    - Kategoria: Sklepy, Treści
+    - Uzasadnienie: Praktyczne wskazówki copywriterskie dla e-commerce.
+
+53. ❌ **Guest checkout vs rejestracja: która opcja zwiększa sprzedaż?**
+    - Kategoria: Sklepy, UX
+    - Uzasadnienie: Porównanie z danymi o konwersji.
+
+### Psychologia i Marketing (7 tematów)
+
+54. ✅ **Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?**
+
+    - Kategoria: Psychologia, Marketing
+    - Uzasadnienie: Fundamentalna zasada psychologii społecznej w marketingu.
+    - Status: Zrealizowane 2025-12-26
+
+55. ❌ **Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?**
+
+    - Kategoria: Psychologia
+    - Uzasadnienie: Konkretny mechanizm psychologiczny z przykładami.
+
+56. ❌ **FOMO w marketingu: kiedy ograniczenie czasu działa, a kiedy odstrasza?**
+
+    - Kategoria: Psychologia, Marketing
+    - Uzasadnienie: Analiza techniki z etycznymi granicami.
+
+57. ❌ **Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?**
+
+    - Kategoria: Psychologia
+    - Uzasadnienie: Klasyczne badanie z praktycznymi implikacjami.
+
+58. ❌ **Jak działa reguła wzajemności w marketingu? Dawanie, które buduje relacje**
+
+    - Kategoria: Psychologia, Marketing
+    - Uzasadnienie: Zasada Cialdiniego wyjaśniona w kontekście biznesowym.
+
+59. ❌ **Storytelling w biznesie: dlaczego historie sprzedają lepiej niż fakty?**
+
+    - Kategoria: Marketing, Treści
+    - Uzasadnienie: Wyjaśnia mechanizm narracji w komunikacji marki.
+
+60. ❌ **Czym jest brand awareness i jak mierzyć rozpoznawalność marki?**
+    - Kategoria: Marketing, Branding
+    - Uzasadnienie: Podstawowy termin marketingowy z metodyką pomiaru.

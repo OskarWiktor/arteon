@@ -72,7 +72,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-
         <MetaTitleDescriptionTool />
 
         <Gap size="sm" />

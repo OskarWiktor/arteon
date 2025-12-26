@@ -25,6 +25,38 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?**
+
+  - **Slug**: `czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`
+  - **URL**: `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`
+  - **Kategorie**: `Psychologia`, `Marketing`, `UX`
+  - **Data publikacji**: 2025-12-26
+  - **Data modyfikacji**: 2025-12-27 (CONTENT-009: zmiana terminologii na polską, dodanie linków wewnętrznych)
+  - **Czas czytania**: 11 min
+  - **Opis**: Kompleksowy artykuł o mechanizmie społecznego dowodu słuszności (ang. social proof) zgodny z wytycznymi. Obejmuje: skąd bierze się siła społecznego dowodu słuszności (ewolucja, badania Cialdiniego, skrót poznawczy, dane BrightLocal), rodzaje społecznego dowodu słuszności (opinie i recenzje, liczby i statystyki, studia przypadków, rekomendacje ekspertów, certyfikaty i nagrody, aktywność w mediach społecznościowych), jak wykorzystać społeczny dowód słuszności na stronie (strona główna, podstrony usług, koszyk/finalizacja zamówienia, formularze kontaktowe), jak zbierać opinie klientów (odpowiedni moment, ułatwianie procesu, platformy zewnętrzne), na co zwrócić uwagę (autentyczność, konkret zamiast ogólników, odpowiadanie na negatywne opinie, dopasowanie do odbiorcy), społeczny dowód słuszności a budowanie marki (spójność komunikacji, integracja z innymi elementami, aktualizacja i świeżość).
+  - **Linki wewnętrzne (7)**: `/uslugi/sklepy-internetowe`, `/edukacja/seo/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`, `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony-internetowej`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/realizacje`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki zewnętrzne (3)**: Robert Cialdini - Influence at Work (6 zasad wpływu), BrightLocal (badania o opiniach konsumentów), Google Moja Firma (dokumentacja)
+  - **Tooltips**: społeczny dowód słuszności, efekt owczego pędu
+  - **FAQ**: 5 pytań (czy działa w każdej branży, ile opinii potrzeba, jak radzić sobie z negatywnymi opiniami, czy można oferować rabaty za opinie, jak wyświetlać opinie zgodnie z prawem)
+  - **CTA**: Strony internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (stomatologia, prawo, gastronomia, e-commerce, rachunkowość, rekrutacja)
+
+- **Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać?**
+
+  - **Slug**: `mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec`
+  - **URL**: `/edukacja/ux/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec`
+  - **Kategorie**: `UX`, `SEO`, `Strony`
+  - **Data publikacji**: 2025-12-26
+  - **Data modyfikacji**: 2025-12-27 (CONTENT-010: wyjaśnienie anglicyzmów, dodanie linku wewnętrznego)
+  - **Czas czytania**: 10 min
+  - **Opis**: Kompleksowy artykuł o mapie strony HTML (dla użytkowników) zgodny z wytycznymi (9-14 min). Obejmuje: czym jest mapa strony i czym różni się od sitemap.xml (z tooltipami dla sitemap.xml i Googlebot), kluczowe różnice (odbiorca, format, lokalizacja, zawartość), korzyści z posiadania mapy strony (nawigacja dla zgubionych użytkowników, dostępność dla osób z niepełnosprawnościami z tooltipem dla czytnika ekranu i odniesieniem do WCAG 2.1, szybkie dotarcie do głęboko ukrytych podstron, wsparcie SEO przez linkowanie wewnętrzne z odniesieniem do badań Nielsen Norman Group), kto korzysta z mapy strony (osoby szukające informacji, osoby z niepełnosprawnościami, osoby starsze, specjaliści SEO), jak powinna wyglądać dobra mapa strony (logiczna organizacja, hierarchia wizualna z przykładem dla gabinetu stomatologicznego, czytelne nazwy linków, kompletność lub świadomy wybór, aktualizacja), gdzie umieścić link do mapy strony (stopka, strona błędu 404, strona pomocy/FAQ, wyszukiwarka wewnętrzna).
+  - **Linki wewnętrzne (8)**: `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony` (2x), `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/edukacja/seo/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`, `/mapa-strony`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki zewnętrzne (3)**: Google Search Console, WCAG 2.1 (kryterium 2.4.5 Multiple Ways), Nielsen Norman Group (site map usability)
+  - **Tooltips**: sitemap.xml, Googlebot, czytnik ekranu, breadcrumbs
+  - **FAQ**: 5 pytań (czy mapa strony jest wymagana przez Google, czy mała strona potrzebuje mapy strony, jak często aktualizować, czy pomaga w pozycjonowaniu, różnica między mapą strony a breadcrumbs)
+  - **CTA**: Strony internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny, wnikliwy — szczegółowo wyjaśnia korzyści z posiadania mapy strony HTML z przykładami z różnych branż (sklep ogrodniczy, kancelaria prawna, gabinet stomatologiczny) i tooltipami dla trudnych terminów
+
 - **Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?**
 
   - **Slug**: `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`

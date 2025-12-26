@@ -197,10 +197,11 @@ Dla każdego zadania:
   9. **Widoczność linków w tekście (AKTUALIZACJA 2025-12-24)**: Każdy link w treści artykułu MUSI mieć widoczne podkreślenie. Używaj klasy `class='underline'` dla linków zewnętrznych i `class='inline-link'` dla linków wewnętrznych (ta klasa już zawiera podkreślenie).
   10. **Tooltip dla trudnych terminów (AKTUALIZACJA 2025-12-24)**: Dla skrótów, terminów technicznych i trudnych pojęć używaj komponentu `Tooltip` ze zwięzłym wyjaśnieniem. Tooltip zwiększa czytelność i pozwala osobom wnikliwym poznać znaczenie terminu bez przerywania lektury. Jeśli termin jest już wyjaśniony w tekście, Tooltip może zawierać dodatkowy kontekst lub ciekawostkę. Format w HTML: `<span data-tooltip='Wyjaśnienie terminu'>termin</span>`.
   11. **ZAKAZ polskich cudzysłowów w JSON (aktualizacja 2025-12-20)**: W plikach JSON (np. `data/pl/blog.json`) **NIE UŻYWAJ** polskich cudzysłowów typograficznych „ i ". Te znaki psują parser JSON. Zamiast tego:
-     - Usuń cudzysłowy z tekstu (np. zamiast „pozycjonować" napisz: pozycjonować)
-     - Lub użyj encji HTML `&quot;` (np. `&quot;pozycjonować&quot;`)
-     - Lub użyj apostrofów (np. 'pozycjonować')
-     - Dotyczy wszystkich pól HTML w JSON (`html`, `answer`, `description` itp.)
+
+  - Usuń cudzysłowy z tekstu (np. zamiast „pozycjonować" napisz: pozycjonować)
+  - Lub użyj encji HTML `&quot;` (np. `&quot;pozycjonować&quot;`)
+  - Lub użyj apostrofów (np. 'pozycjonować')
+  - Dotyczy wszystkich pól HTML w JSON (`html`, `answer`, `description` itp.)
 
 - **Cel serii**: zwiększać widoczność SEO ofert, domeny i narzędzi Arteon poprzez edukację w mentorskim tonie, bez żargonu (prowadź czytelnika do zrozumienia i działania, ale bez presji).
 - **Docelowy czytelnik**: MŚP (usługi + e-commerce), często bez wiedzy technicznej. Tekst ma być zrozumiały bez znajomości SEO/UX, ale nie może być infantylny.
@@ -258,6 +259,7 @@ Dla każdego zadania:
     - ✅ „Strona działa szybciej, jest stabilna i łatwa w rozwoju. Dlatego korzystamy z nowoczesnych technologii takich jak Next.js.”
 
 - **Intent artykułów (AKTUALIZACJA 2025-12-24)**: Główny cel każdego artykułu to **edukacja budująca autorytet firmy + naturalne przekierowanie do oferty lub narzędzi**. Artykuł ma:
+
   - Odpowiadać wnikliwie na pytanie z tytułu (czytelnik musi wyjść z pełnym zrozumieniem tematu).
   - Budować zaufanie do Arteon jako eksperta w danej dziedzinie.
   - Naturalnie prowadzić do usług lub narzędzi Arteon (bez agresywnej sprzedaży, ale z jasną ścieżką „co dalej”).
@@ -266,23 +268,44 @@ Dla każdego zadania:
 - **Typy artykułów (AKTUALIZACJA 2025-12-24)**: Artykuły mogą przyjmować różne formy w zależności od tematu. Poniżej główne typy z ich strukturą:
 
   **1. Artykuł edukacyjny (domyślny)**
+
   - Odpowiada na pytanie „Co to jest X i dlaczego ma znaczenie?"
   - Struktura: Wstęp → Wyjaśnienie tematu → Dla kogo to ważne → Jak to działa / standardy → Jak sprawdzić/ocenić → Na co zwrócić uwagę → Podsumowanie + CTA
   - Przykład: „Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?”
 
   **2. Artykuł HowTo (instrukcja)**
+
   - Odpowiada na pytanie „Jak zrobić X?" lub „Jak osiągnąć Y?"
   - Struktura: Wstęp (co osiągniesz) → Wymagania/przygotowanie → Kroki (numerowane) → Typowe problemy i rozwiązania → Podsumowanie + CTA
   - UWAGA: Instrukcje dotyczą narzędzi Arteon lub ogólnych procesów. NIE twórz instrukcji zastępujących usługi.
   - Przykład: „Jak sprawdzić kontrast kolorów na stronie?”
 
   **3. Artykuł z poradami i błędami**
+
   - Odpowiada na pytanie „Na co zwrócić uwagę przy X?" lub „Jakie błędy popełniają firmy przy Y?"
   - Struktura: Wstęp → Kontekst (dlaczego to ważne) → Lista porad/błędów (każdy z wyjaśnieniem i przykładem) → Jak unikać problemów → Podsumowanie + CTA
-  - Ton: mentorski, nie wytykający — „na co zwrócić uwagę" zamiast „najczęstsze błędy"
+  - Ton: mentorski, nie wytykający — wyjaśniaj dlaczego coś nie działa, zamiast krytykować
   - Przykład: „Na co zwrócić uwagę przy wyborze kolorów na stronę?”
 
+  **3a. Artykuł obalający mity (dozwolony format)**
+
+  - Odpowiada na pytanie „Co jest prawdą, a co mitem w temacie X?"
+  - Struktura: Wstęp (skąd biorą się mity) → Lista mitów (każdy z wyjaśnieniem, dlaczego to mit i jaka jest prawda) → Podsumowanie + CTA
+  - Ton: edukacyjny, bez wyśmiewania — pokazuj fakty i badania, nie krytykuj osób wierzących w mity
+  - Dozwolone tytuły: „5 mitów o X", „Mity o X — co jest prawdą?", „X mitów, w które wciąż wierzą właściciele firm"
+  - Przykład: „5 mitów o pozycjonowaniu, w które wciąż wierzą właściciele firm”
+
+  **3b. Artykuł o błędach (dozwolony format z zastrzeżeniami)**
+
+  - Odpowiada na pytanie „Jakich błędów unikać przy X?"
+  - Struktura: Wstęp → Lista błędów (każdy z wyjaśnieniem konsekwencji i lepszym podejściem) → Podsumowanie + CTA
+  - Ton: pomocny, nie oskarżający — „wiele firm nieświadomie popełnia..." zamiast „firmy robią źle”
+  - Dozwolone tytuły: „X błędów przy Y", „Najczęstsze błędy przy X i jak ich uniknąć"
+  - WAŻNE: Treść artykułu musi być konstruktywna — każdy błąd omawiaj z perspektywy „dlaczego to się zdarza" i „jak zrobić lepiej”
+  - Przykład: „7 błędów w formularzach kontaktowych, które zmniejszają liczbę zapytań”
+
   **4. Artykuł porównawczy**
+
   - Odpowiada na pytanie „X czy Y — co wybrać?" lub „Różnice między X a Y"
   - Struktura: Wstęp (po co porównanie) → Wyjaśnienie obu opcji → Porównanie punkt po punkcie → Kiedy wybrać X, kiedy Y → Podsumowanie + CTA
   - Ton: obiektywny, bez faworyzowania (chyba że jedna opcja jest obiektywnie lepsza w danym kontekście)
@@ -352,7 +375,7 @@ Dla każdego zadania:
   - ❌ „Problem w tym, że wiele firm stosuje X bez przemyślenia. Efekt? Y" → ✅ „X działa najlepiej w konkretnych kontekstach" (bez oceny innych)
   - ❌ „to absurd", „wręcz szkodzi", „wręcz przeszkadza" → ✅ „nie jest potrzebny", „wydłuża drogę do celu"
   - ❌ „bez zaśmiecania etykiety tekstem" → ✅ „nie powiększając etykiety ani nie zmniejszając czcionki"
-  - ❌ „Najczęstsze błędy przy X" → ✅ „Na co zwrócić uwagę przy X?" (mentorski ton zamiast wytykania błędów)
+  - ⚠️ „Najczęstsze błędy przy X" → dozwolone w tytułach (patrz typ 3b), ale treść musi być konstruktywna — wyjaśniaj „dlaczego to się zdarza" i „jak zrobić lepiej", bez oskarżania
   - ❌ Pytania retoryczne typu „Billboard przy autostradzie? Baner na dachu?" → ✅ Pełne zdania opisowe
   - ❌ „stosowany z głową" → ✅ „w konkretnych kontekstach" (bez sugerowania, że ktoś robi coś bez głowy)
   - ❌ „gdzie klienci mogą ją zabrać" → ✅ „skąd klienci mogą ją zabrać" (poprawna składnia z przyimkiem „skąd")
@@ -392,6 +415,14 @@ Dla każdego zadania:
 
 - **Unikanie kategorycznych określeń (zalecane)**: Zamiast mocnych słów typu „słabe", „złe", „fatalne" używaj łagodniejszych form: „słabsze", „mniej skuteczne", „wymagające poprawy". Wyjątek: gdy kontrast jest celowy i uzasadniony merytorycznie.
 
+- **Zakaz komentarzy bez wartości merytorycznej (OBOWIAZKOWO)**: Nie dodawaj zdań, które oceniają temat bez wnoszenia informacji. Zakazane sa sformulowania typu:
+  - „X moze wydawac sie elementem z poprzedniej epoki" — to ocena, nie informacja
+  - „Wiekszosc uzytkownikow nigdy tego nie uzyje — i to jest w porzadku" — komentarz bez wartosci
+  - „To nie jest cos, co przyciaga tlumy" — deprecjonuje temat zamiast go wyjasniać
+  Zamiast tego: przejdz do konkretow. Jesli cos ma ograniczone zastosowanie, opisz dla kogo jest przydatne i dlaczego.
+
+- **Wspominanie alternatywnych rozwiazan (zalecane)**: Przy opisywaniu problemu lub rozwiazania mozesz wspomnieć o innych metodach osiagniecia podobnego celu (np. wyszukiwarka na stronie jako alternatywa dla mapy strony). To daje wartość czytelnikowi i otwiera mozliwość linkowania do przyszlych artykulow. Nie odbiegaj jednak od glownego tematu — wzmianka ma byc krotka i naturalna.
+
 - **Weryfikacja zgodności z instrukcją (OBOWIĄZKOWO)**: Przed napisaniem jakiegokolwiek tekstu zawsze najpierw przeczytaj pełną instrukcję. Po napisaniu tekstu sprawdź go ponownie pod kątem zgodności z tą instrukcją. To dotyczy każdego artykułu, opisu usługi, narzędzia i każdej innej treści.
 
 ### Zasady linkowania i wartości treści (aktualizacja 2025-12-23)
@@ -407,6 +438,23 @@ Dla każdego zadania:
 - **Maksymalizacja wartości i głębokości treści (OBOWIĄZKOWO)**: Artykuły mają zawierać jak najwięcej konkretnych, praktycznych informacji. Każda sekcja powinna wnosić realną wartość. Unikaj akapitów, które można by usunąć bez straty merytorycznej. Głębokość i szczegółowość treści bezpośrednio wpływa na pozycję strony w wyszukiwarce.
 
 - **Dokładne zapoznanie się z instrukcjami przed tworzeniem treści (OBOWIĄZKOWO)**: Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis) MUSISZ przeczytać pełną instrukcję INSTRUCTIONS.md i upewnić się, że rozumiesz wszystkie zasady. To nie jest opcjonalne — błędy wynikające z nieznajomości instrukcji są niedopuszczalne.
+
+### Tematy artykułów i Google Discover (aktualizacja 2025-12-26)
+
+- **Przyjazne tematy dla użytkowników nietechnicznych (OBOWIĄZKOWO)**: Tematy artykułów muszą być zrozumiałe i atrakcyjne dla przeciętnego użytkownika, nie tylko dla specjalistów. Unikaj tytułów z żargonem technicznym, który nie ma potencjału wyszukiwania. Zamiast „Jak zoptymalizować LCP i CLS?" pisz „Dlaczego strona ładuje się wolno i jak to poprawić?". Tytuł ma odpowiadać na pytanie, które realnie zadaje właściciel firmy.
+
+- **Zgodność z Google Discover (OBOWIĄZKOWO)**: Artykuły powinny spełniać wymagania Google Discover:
+  - **Tytuł przyciągający uwagę bez clickbaitu** — ma wzbudzać ciekawość, ale nie wprowadzać w błąd
+  - **Temat angażujący szerszą publiczność** — nie tylko specjalistów z branży
+  - **Wartość informacyjna** — artykuł musi dostarczać realnej wiedzy, nie być tylko reklamą usług
+  - **Unikanie technicznego żargonu w tytułach** — Discover pokazuje treści osobom, które mogą nie znać terminologii
+  - **Evergreen lub aktualny temat** — treści ponadczasowe lub związane z aktualnymi trendami
+  Dokumentacja: https://developers.google.com/search/docs/appearance/google-discover
+
+- **Potencjał SEO tematów (zalecane)**: Przed wyborem tematu artykułu rozważ, czy fraza z tytułu ma realny potencjał wyszukiwania. Tematy zbyt niszowe lub zbyt techniczne mogą nie przynosić ruchu. Preferuj tematy, które:
+  - Odpowiadają na pytania zadawane przez właścicieli firm
+  - Używają języka naturalnego (jak ludzie pytają)
+  - Mają szersze zastosowanie (nie tylko jedna wąska branża)
 
 ### Dodatkowe reguły
 

@@ -74,7 +74,6 @@ export default function Page() {
       <Wrapper>
         <Gap size="sm" />
 
-
         <EmailSignatureGenerator />
 
         <Gap size="sm" />

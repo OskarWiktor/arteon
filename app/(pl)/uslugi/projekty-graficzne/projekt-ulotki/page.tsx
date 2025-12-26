@@ -356,12 +356,7 @@ export default function OfferDesignFlyerPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel
-          title="Sprawdź nasze artykuły dotyczące ulotek"
-          subtitle="Edukacja"
-          articles={articles}
-          slugs={RELATED_ARTICLE_SLUGS}
-        />
+        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące ulotek" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>

@@ -17,13 +17,11 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
   title: 'Jak używać generatora stopki mailowej - instrukcja krok po kroku',
-  description:
-    'Instrukcja generatora stopki mailowej HTML. Dowiedz się, jak wypełnić dane, wybrać układ, dodać CTA i skopiować stopkę do Gmail lub Outlook.',
+  description: 'Instrukcja generatora stopki mailowej HTML. Dowiedz się, jak wypełnić dane, wybrać układ, dodać CTA i skopiować stopkę do Gmail lub Outlook.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej/instrukcja') },
   openGraph: {
     title: 'Jak używać generatora stopki mailowej - instrukcja krok po kroku',
-    description:
-      'Szczegółowa instrukcja obsługi darmowego generatora stopki mailowej HTML. Dowiedz się, jak wypełnić dane, wybrać układ, dodać CTA i skopiować gotową stopkę do Gmail lub Outlook.',
+    description: 'Szczegółowa instrukcja obsługi darmowego generatora stopki mailowej HTML. Dowiedz się, jak wypełnić dane, wybrać układ, dodać CTA i skopiować gotową stopkę do Gmail lub Outlook.',
     url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej/instrukcja'),
     type: 'website',
     images: [
@@ -113,12 +111,12 @@ export default function Page() {
 
         <SectionInfo title="Co to jest stopka mailowa i do czego służy?">
           <p className="text-mid">
-            Stopka mailowa (nazywana też podpisem e-mail lub sygnaturką) to blok informacji, który pojawia się na końcu każdej wysyłanej przez Ciebie wiadomości. Zawiera dane kontaktowe, stanowisko, nazwę
-            firmy i często link do strony internetowej lub kalendarza spotkań.
+            Stopka mailowa (nazywana też podpisem e-mail lub sygnaturką) to blok informacji, który pojawia się na końcu każdej wysyłanej przez Ciebie wiadomości. Zawiera dane kontaktowe, stanowisko,
+            nazwę firmy i często link do strony internetowej lub kalendarza spotkań.
           </p>
           <p className="text-mid mt-3">
-            Profesjonalna stopka ułatwia odbiorcom kontakt z Tobą. Zamiast szukać numeru telefonu w poprzednich e-mailach, odbiorca ma wszystkie dane pod ręką. Stopka pokazuje też, że dbasz o szczegóły
-            i profesjonalny wizerunek swojej firmy.
+            Profesjonalna stopka ułatwia odbiorcom kontakt z Tobą. Zamiast szukać numeru telefonu w poprzednich e-mailach, odbiorca ma wszystkie dane pod ręką. Stopka pokazuje też, że dbasz o
+            szczegóły i profesjonalny wizerunek swojej firmy.
           </p>
           <p className="text-mid mt-3">
             <Link href="/narzedzia/darmowy-generator-stopki-mailowej" className="inline-link">
@@ -132,12 +130,12 @@ export default function Page() {
 
         <SectionInfo title="Jak wypełnić dane w stopce?">
           <p className="text-mid">
-            W zakładce <strong>Dane</strong> znajdziesz wszystkie pola, które możesz uzupełnić. Tylko dwa z nich są wymagane: imię i nazwisko oraz adres e-mail. Pozostałe pola są opcjonalne i pojawią się
-            w stopce tylko wtedy, gdy je wypełnisz.
+            W zakładce <strong>Dane</strong> znajdziesz wszystkie pola, które możesz uzupełnić. Tylko dwa z nich są wymagane: imię i nazwisko oraz adres e-mail. Pozostałe pola są opcjonalne i pojawią
+            się w stopce tylko wtedy, gdy je wypełnisz.
           </p>
 
           <h3 className="h4 mt-6 mb-3">Pola w zakładce Dane</h3>
-          <ul className="list-disc pl-6 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
               <strong>Linia nad imieniem</strong> — dodatkowy tekst wyświetlany nad imieniem i nazwiskiem. Możesz tu wpisać nazwę firmy, hasło lub slogan.
             </li>
@@ -185,11 +183,21 @@ export default function Page() {
             <div className="space-y-3">
               <p className="text-dark text-sm font-semibold uppercase">Układ stopki</p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="selected" size="sm">Standard</Badge>
-                <Badge variant="default" size="sm">Pasek akcentu</Badge>
-                <Badge variant="default" size="sm">Pasek u góry</Badge>
-                <Badge variant="default" size="sm">Etykiety z lewej</Badge>
-                <Badge variant="default" size="sm">Wyśrodkowany</Badge>
+                <Badge variant="selected" size="sm">
+                  Standard
+                </Badge>
+                <Badge variant="default" size="sm">
+                  Pasek akcentu
+                </Badge>
+                <Badge variant="default" size="sm">
+                  Pasek u góry
+                </Badge>
+                <Badge variant="default" size="sm">
+                  Etykiety z lewej
+                </Badge>
+                <Badge variant="default" size="sm">
+                  Wyśrodkowany
+                </Badge>
               </div>
               <div className="mt-4 rounded-lg border border-neutral-200 bg-white p-4">
                 <p className="text-dark font-semibold">Jan Kowalski</p>
@@ -203,15 +211,23 @@ export default function Page() {
             </div>
           }
         >
-          <p className="text-mid">
-            Generator oferuje pięć gotowych układów. Każdy prezentuje te same dane w inny sposób.
-          </p>
-          <ul className="list-disc pl-6 space-y-2 text-mid mt-3">
-            <li><strong>Standard</strong> — klasyczny układ pionowy, pasuje do większości zastosowań.</li>
-            <li><strong>Pasek akcentu</strong> — pionowy pasek z lewej, nowoczesny wygląd.</li>
-            <li><strong>Pasek u góry</strong> — poziomy pasek oddziela stopkę od treści.</li>
-            <li><strong>Etykiety z lewej</strong> — dwie kolumny: etykiety i wartości.</li>
-            <li><strong>Wyśrodkowany</strong> — formalny charakter, dane na środku.</li>
+          <p className="text-mid">Generator oferuje pięć gotowych układów. Każdy prezentuje te same dane w inny sposób.</p>
+          <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
+            <li>
+              <strong>Standard</strong> — klasyczny układ pionowy, pasuje do większości zastosowań.
+            </li>
+            <li>
+              <strong>Pasek akcentu</strong> — pionowy pasek z lewej, nowoczesny wygląd.
+            </li>
+            <li>
+              <strong>Pasek u góry</strong> — poziomy pasek oddziela stopkę od treści.
+            </li>
+            <li>
+              <strong>Etykiety z lewej</strong> — dwie kolumny: etykiety i wartości.
+            </li>
+            <li>
+              <strong>Wyśrodkowany</strong> — formalny charakter, dane na środku.
+            </li>
           </ul>
         </SectionDemo>
 
@@ -219,12 +235,12 @@ export default function Page() {
 
         <SectionInfo title="Jak dodać przycisk CTA?">
           <p className="text-mid">
-            Przycisk CTA (z ang. call-to-action, czyli wezwanie do działania) to klikalny element, który kieruje odbiorcę do wybranej strony. Może to być link do kalendarza spotkań, formularza kontaktowego
-            lub oferty.
+            Przycisk CTA (z ang. call-to-action, czyli wezwanie do działania) to klikalny element, który kieruje odbiorcę do wybranej strony. Może to być link do kalendarza spotkań, formularza
+            kontaktowego lub oferty.
           </p>
 
           <h3 className="h4 mt-6 mb-3">Jak to zrobić w naszym narzędziu</h3>
-          <ol className="list-decimal pl-6 space-y-2 text-mid">
+          <ol className="text-mid list-decimal space-y-2 pl-6">
             <li>
               Kliknij zakładkę <strong>Link</strong> w edytorze.
             </li>
@@ -250,7 +266,7 @@ export default function Page() {
           </p>
 
           <h3 className="h4 mt-6 mb-3">Jak to zrobić w naszym narzędziu</h3>
-          <ol className="list-decimal pl-6 space-y-2 text-mid">
+          <ol className="text-mid list-decimal space-y-2 pl-6">
             <li>
               Kliknij zakładkę <strong>Media społecznościowe</strong> w edytorze.
             </li>
@@ -258,7 +274,9 @@ export default function Page() {
             <li>Wypełnij tylko te pola, które Cię interesują. Puste pola nie pojawią się w stopce.</li>
           </ol>
 
-          <p className="text-mid mt-4">W stopce linki do mediów społecznościowych wyświetlają się jako nazwy platform (np. LinkedIn, Instagram), bez ikon. Dzięki temu stopka jest lżejsza i szybciej się ładuje.</p>
+          <p className="text-mid mt-4">
+            W stopce linki do mediów społecznościowych wyświetlają się jako nazwy platform (np. LinkedIn, Instagram), bez ikon. Dzięki temu stopka jest lżejsza i szybciej się ładuje.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -270,12 +288,12 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-3">Motywy kolorystyczne</h3>
           <p className="text-mid">
-            Na górze zakładki znajdziesz pięć gotowych motywów: Ciemny, Niebieski, Fioletowy, Zielony i Szary. Kliknięcie motywu automatycznie ustawia kolor akcentu i kolor tekstu. To najszybszy sposób na
-            spójny wygląd stopki.
+            Na górze zakładki znajdziesz pięć gotowych motywów: Ciemny, Niebieski, Fioletowy, Zielony i Szary. Kliknięcie motywu automatycznie ustawia kolor akcentu i kolor tekstu. To najszybszy
+            sposób na spójny wygląd stopki.
           </p>
 
           <h3 className="h4 mt-6 mb-3">Kolory</h3>
-          <ul className="list-disc pl-6 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
               <strong>Kolor akcentu</strong> — używany w pasku bocznym/górnym, przycisku CTA i linkach. Możesz wybrać dowolny kolor z palety.
             </li>
@@ -288,7 +306,7 @@ export default function Page() {
           </ul>
 
           <h3 className="h4 mt-6 mb-3">Czcionka i rozmiar</h3>
-          <ul className="list-disc pl-6 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
               <strong>Czcionka</strong> — do wyboru: Arial, Verdana, Tahoma, Trebuchet MS i Georgia. Wszystkie są bezpieczne dla e-maili i wyświetlą się poprawnie u odbiorcy.
             </li>
@@ -298,7 +316,7 @@ export default function Page() {
           </ul>
 
           <h3 className="h4 mt-6 mb-3">Dodatkowe ustawienia</h3>
-          <ul className="list-disc pl-6 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
               <strong>Margines wewnętrzny stopki</strong> — odstęp między zawartością a krawędziami stopki. Trzy opcje: 8 px (mały), 16 px (średni) i 24 px (duży).
             </li>
@@ -319,7 +337,7 @@ export default function Page() {
           </p>
 
           <h3 className="h4 mt-6 mb-3">Kiedy warto dodać klauzulę?</h3>
-          <ul className="list-disc pl-6 space-y-2 text-mid">
+          <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
               <strong>Korespondencja biznesowa</strong> — informacja o poufności wiadomości i prośba o usunięcie w przypadku błędnego doręczenia.
             </li>
@@ -347,20 +365,17 @@ export default function Page() {
             {
               icon: <RiClipboardLine className="h-6 w-6" />,
               title: '1. Skopiuj kod',
-              description:
-                'Kliknij przycisk Kopiuj stopkę (Gmail / Outlook) pod podglądem. Stopka zostanie skopiowana do schowka jako sformatowany HTML.',
+              description: 'Kliknij przycisk Kopiuj stopkę (Gmail / Outlook) pod podglądem. Stopka zostanie skopiowana do schowka jako sformatowany HTML.',
             },
             {
               icon: <RiSettings3Line className="h-6 w-6" />,
               title: '2. Otwórz ustawienia podpisu',
-              description:
-                'W Gmail: Ustawienia → Zobacz wszystkie ustawienia → Podpis. W Outlook: Plik → Opcje → Poczta → Podpisy.',
+              description: 'W Gmail: Ustawienia → Zobacz wszystkie ustawienia → Podpis. W Outlook: Plik → Opcje → Poczta → Podpisy.',
             },
             {
               icon: <RiSaveLine className="h-6 w-6" />,
               title: '3. Wklej i zapisz',
-              description:
-                'W polu podpisu użyj skrótu Ctrl+V (Windows) lub Cmd+V (Mac). Stopka pojawi się ze wszystkimi kolorami i formatowaniem. Zapisz zmiany.',
+              description: 'W polu podpisu użyj skrótu Ctrl+V (Windows) lub Cmd+V (Mac). Stopka pojawi się ze wszystkimi kolorami i formatowaniem. Zapisz zmiany.',
             },
           ]}
         />
@@ -389,18 +404,15 @@ export default function Page() {
             },
             {
               question: 'Jak często mogę zmieniać stopkę?',
-              answer:
-                'Nie ma żadnych limitów. Możesz wracać do generatora i tworzyć nowe stopki tak często, jak potrzebujesz. Narzędzie jest całkowicie darmowe i nie wymaga rejestracji.',
+              answer: 'Nie ma żadnych limitów. Możesz wracać do generatora i tworzyć nowe stopki tak często, jak potrzebujesz. Narzędzie jest całkowicie darmowe i nie wymaga rejestracji.',
             },
             {
               question: 'Czy moje dane są zapisywane?',
-              answer:
-                'Nie. Generator działa w całości w Twojej przeglądarce. Dane, które wpisujesz, nie są wysyłane na żaden serwer ani zapisywane. Po zamknięciu strony wszystkie dane znikają.',
+              answer: 'Nie. Generator działa w całości w Twojej przeglądarce. Dane, które wpisujesz, nie są wysyłane na żaden serwer ani zapisywane. Po zamknięciu strony wszystkie dane znikają.',
             },
             {
               question: 'Przycisk kopiowania jest nieaktywny — dlaczego?',
-              answer:
-                'Aby skopiować stopkę, musisz uzupełnić przynajmniej dwa pola: imię i nazwisko oraz adres e-mail. Sprawdź, czy oba pola są wypełnione.',
+              answer: 'Aby skopiować stopkę, musisz uzupełnić przynajmniej dwa pola: imię i nazwisko oraz adres e-mail. Sprawdź, czy oba pola są wypełnione.',
             },
             {
               question: 'Avatar lub logo nie wyświetla się — co zrobić?',
@@ -414,23 +426,17 @@ export default function Page() {
             },
             {
               question: 'Przycisk CTA nie pojawia się — co zrobić?',
-              answer:
-                'Przycisk wymaga obu pól: tekstu i linku. Sprawdź, czy w zakładce Link oba pola są wypełnione i czy adres URL zaczyna się od https://.',
+              answer: 'Przycisk wymaga obu pól: tekstu i linku. Sprawdź, czy w zakładce Link oba pola są wypełnione i czy adres URL zaczyna się od https://.',
             },
           ]}
         />
 
         <Gap variant="line" />
 
-        <SectionInfo
-          title="Wypróbuj narzędzie"
-          btnOne="Przejdź do generatora"
-          btnOneLink="/narzedzia/darmowy-generator-stopki-mailowej"
-          btnTwo="Zobacz inne narzędzia"
-          btnTwoLink="/narzedzia"
-        >
+        <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do generatora" btnOneLink="/narzedzia/darmowy-generator-stopki-mailowej" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Generator stopki mailowej pozwala stworzyć profesjonalny podpis e-mail w kilka minut. Wypełniasz dane, wybierasz układ i kolory, a następnie kopiujesz gotowy kod do Gmail, Outlook lub innego klienta pocztowego.
+            Generator stopki mailowej pozwala stworzyć profesjonalny podpis e-mail w kilka minut. Wypełniasz dane, wybierasz układ i kolory, a następnie kopiujesz gotowy kod do Gmail, Outlook lub
+            innego klienta pocztowego.
           </p>
         </SectionInfo>
 

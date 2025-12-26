@@ -18,13 +18,11 @@ import Button from '@/components/ui/buttons/Button';
 
 export const metadata: Metadata = {
   title: 'Instrukcja konwertera JPG/PNG na WebP - Arteon',
-  description:
-    'Instrukcja konwertera JPG/PNG na WebP. Dowiedz się, jak dodawać pliki, ustawiać jakość, korzystać ze Smart Quality i pobierać obrazy.',
+  description: 'Instrukcja konwertera JPG/PNG na WebP. Dowiedz się, jak dodawać pliki, ustawiać jakość, korzystać ze Smart Quality i pobierać obrazy.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja') },
   openGraph: {
     title: 'Instrukcja konwertera JPG/PNG na WebP - Arteon',
-    description:
-      'Szczegółowa instrukcja obsługi darmowego konwertera JPG/PNG na WebP. Dowiedz się jak dodawać pliki, ustawiać jakość, korzystać ze Smart Quality i pobierać przekonwertowane obrazy.',
+    description: 'Szczegółowa instrukcja obsługi darmowego konwertera JPG/PNG na WebP. Dowiedz się jak dodawać pliki, ustawiać jakość, korzystać ze Smart Quality i pobierać przekonwertowane obrazy.',
     url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja'),
     type: 'website',
     images: [
@@ -147,8 +145,8 @@ export default function Page() {
           <p className="text-mid">Narzędzie oferuje dwa sposoby dodawania plików:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>Przeciągnij i upuść</strong> — po prostu chwyć pliki z folderu na komputerze i upuść je na obszar z napisem &quot;Przeciągnij i upuść obrazy tutaj&quot;. Możesz przeciągnąć
-              wiele plików naraz.
+              <strong>Przeciągnij i upuść</strong> — po prostu chwyć pliki z folderu na komputerze i upuść je na obszar z napisem &quot;Przeciągnij i upuść obrazy tutaj&quot;. Możesz przeciągnąć wiele
+              plików naraz.
             </li>
             <li>
               <strong>Kliknij, aby wybrać</strong> — kliknij w pole do dodania plików, a otworzy się okno wyboru plików. Przytrzymaj Ctrl (lub Cmd na Mac), aby wybrać kilka plików jednocześnie.
@@ -158,8 +156,8 @@ export default function Page() {
             Narzędzie akceptuje tylko pliki JPG i PNG. Jeśli przypadkowo dodasz plik w innym formacie (np. GIF lub BMP), zostanie on automatycznie pominięty i zobaczysz komunikat informacyjny.
           </p>
           <p className="text-mid mt-3">
-            <strong>Prywatność:</strong> Wszystkie pliki są przetwarzane lokalnie w Twojej przeglądarce. Nie są nigdzie wysyłane — nie trafiają na żaden serwer. Po zamknięciu karty lub
-            przeglądarki pliki zostają usunięte z pamięci.
+            <strong>Prywatność:</strong> Wszystkie pliki są przetwarzane lokalnie w Twojej przeglądarce. Nie są nigdzie wysyłane — nie trafiają na żaden serwer. Po zamknięciu karty lub przeglądarki
+            pliki zostają usunięte z pamięci.
           </p>
         </SectionInfo>
 
@@ -169,20 +167,31 @@ export default function Page() {
           <p className="text-mid">Każdy plik w kolejce ma jeden z czterech statusów, które informują o postępie konwersji:</p>
           <div className="mt-4 space-y-4">
             <div className="flex items-start gap-3">
-              <Badge variant="neutral" size="md">Oczekuje</Badge>
+              <Badge variant="neutral" size="md">
+                Oczekuje
+              </Badge>
               <p className="text-mid">Plik jest w kolejce i czeka na przetworzenie. Konwersja jeszcze się nie rozpoczęła.</p>
             </div>
             <div className="flex items-start gap-3">
-              <Badge variant="neutral" size="md">Przetwarzanie…</Badge>
+              <Badge variant="neutral" size="md">
+                Przetwarzanie…
+              </Badge>
               <p className="text-mid">Plik jest w trakcie konwersji. Dla większości obrazów trwa to ułamek sekundy, ale bardzo duże pliki mogą wymagać kilku sekund.</p>
             </div>
             <div className="flex items-start gap-3">
-              <Badge variant="success" size="md">Gotowe</Badge>
+              <Badge variant="success" size="md">
+                Gotowe
+              </Badge>
               <p className="text-mid">Konwersja zakończyła się pomyślnie. Plik WebP jest gotowy do pobrania. Przy statusie zobaczysz też informację o rozmiarze przed i po konwersji.</p>
             </div>
             <div className="flex items-start gap-3">
-              <Badge variant="error" size="md">Błąd</Badge>
-              <p className="text-mid">Coś poszło nie tak podczas konwersji. Może to być uszkodzony plik źródłowy lub problem z pamięcią przeglądarki przy bardzo dużych obrazach. Możesz spróbować ponownie klikając „Konwertuj ponownie”.</p>
+              <Badge variant="error" size="md">
+                Błąd
+              </Badge>
+              <p className="text-mid">
+                Coś poszło nie tak podczas konwersji. Może to być uszkodzony plik źródłowy lub problem z pamięcią przeglądarki przy bardzo dużych obrazach. Możesz spróbować ponownie klikając
+                „Konwertuj ponownie”.
+              </p>
             </div>
           </div>
         </SectionInfo>
@@ -203,9 +212,7 @@ export default function Page() {
             Dzięki temu nie musisz ręcznie eksperymentować z ustawieniami. Jeśli masz obraz, który jest już mocno skompresowany (np. JPG o jakości 60%), narzędzie automatycznie dostosuje parametry,
             aby nadal osiągnąć oszczędność rozmiaru.
           </p>
-          <p className="text-mid mt-3">
-            Przy każdym pliku zobaczysz informację &quot;Użyta jakość WebP&quot; — to faktyczna jakość zastosowana po ewentualnym dostosowaniu przez Smart Quality.
-          </p>
+          <p className="text-mid mt-3">Przy każdym pliku zobaczysz informację &quot;Użyta jakość WebP&quot; — to faktyczna jakość zastosowana po ewentualnym dostosowaniu przez Smart Quality.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -227,19 +234,27 @@ export default function Page() {
                 <span className="text-mid pl-2 text-sm">Automatycznie pobierz po konwersji</span>
               </div>
               <div className="ml-6 flex flex-wrap gap-2">
-                <Badge variant="selected" size="sm">Pobierz osobno</Badge>
-                <Badge variant="default" size="sm">Pobierz jako ZIP</Badge>
+                <Badge variant="selected" size="sm">
+                  Pobierz osobno
+                </Badge>
+                <Badge variant="default" size="sm">
+                  Pobierz jako ZIP
+                </Badge>
               </div>
             </div>
           }
         >
-          <p className="text-mid">
-            Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.
-          </p>
+          <p className="text-mid">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
-            <li><strong>80% (domyślne)</strong> — doskonały kompromis dla większości zastosowań.</li>
-            <li><strong>85-90%</strong> — dla zdjęć produktowych, portfolio fotograficznych.</li>
-            <li><strong>60-70%</strong> — gdy priorytetem jest minimalizacja rozmiaru.</li>
+            <li>
+              <strong>80% (domyślne)</strong> — doskonały kompromis dla większości zastosowań.
+            </li>
+            <li>
+              <strong>85-90%</strong> — dla zdjęć produktowych, portfolio fotograficznych.
+            </li>
+            <li>
+              <strong>60-70%</strong> — gdy priorytetem jest minimalizacja rozmiaru.
+            </li>
           </ul>
         </SectionDemo>
 
@@ -251,27 +266,45 @@ export default function Page() {
           demo={
             <div className="space-y-3">
               <div className="flex flex-wrap gap-2">
-                <Button variant="accent" size="small" disabled>Konwertuj</Button>
-                <Button size="small" disabled>Pobierz wszystkie</Button>
-                <Button size="small" disabled>Pobierz jako ZIP</Button>
+                <Button variant="accent" size="small" disabled>
+                  Konwertuj
+                </Button>
+                <Button size="small" disabled>
+                  Pobierz wszystkie
+                </Button>
+                <Button size="small" disabled>
+                  Pobierz jako ZIP
+                </Button>
               </div>
               <div className="flex items-center">
                 <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" disabled />
                 <span className="text-mid pl-2 text-sm">Dołącz raport CSV do ZIP</span>
               </div>
               <div className="rounded-lg border border-neutral-200 bg-white p-3 text-sm">
-                <p className="text-light">Rozmiar wejściowy: <strong className="text-dark">2.4 MB</strong></p>
-                <p className="text-light">Rozmiar po konwersji: <strong className="text-dark">890 KB</strong></p>
-                <p className="text-light">Zaoszczędzono: <strong className="text-emerald-600">1.5 MB (~63%)</strong></p>
+                <p className="text-light">
+                  Rozmiar wejściowy: <strong className="text-dark">2.4 MB</strong>
+                </p>
+                <p className="text-light">
+                  Rozmiar po konwersji: <strong className="text-dark">890 KB</strong>
+                </p>
+                <p className="text-light">
+                  Zaoszczędzono: <strong className="text-emerald-600">1.5 MB (~63%)</strong>
+                </p>
               </div>
             </div>
           }
         >
           <p className="text-mid">Po zakończeniu konwersji masz kilka opcji pobierania:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
-            <li><strong>Pobierz</strong> (przy każdym pliku) — pobiera pojedynczy plik WebP.</li>
-            <li><strong>Pobierz wszystkie</strong> — pobiera wszystkie pliki jeden po drugim.</li>
-            <li><strong>Pobierz jako ZIP</strong> — tworzy archiwum ze wszystkimi plikami.</li>
+            <li>
+              <strong>Pobierz</strong> (przy każdym pliku) — pobiera pojedynczy plik WebP.
+            </li>
+            <li>
+              <strong>Pobierz wszystkie</strong> — pobiera wszystkie pliki jeden po drugim.
+            </li>
+            <li>
+              <strong>Pobierz jako ZIP</strong> — tworzy archiwum ze wszystkimi plikami.
+            </li>
           </ul>
           <p className="text-mid mt-3">
             <strong>Opcja raportu CSV:</strong> Dołącz raport z podsumowaniem konwersji do archiwum ZIP.
@@ -294,8 +327,8 @@ export default function Page() {
             </li>
           </ul>
           <p className="text-mid mt-3">
-            <strong>Skopiuj podsumowanie:</strong> Klikając ten przycisk skopiujesz raport do schowka w formacie tekstowym. Możesz go wkleić do notatek, e-maila lub dokumentu — przydatne, gdy
-            musisz udokumentować optymalizację grafik.
+            <strong>Skopiuj podsumowanie:</strong> Klikając ten przycisk skopiujesz raport do schowka w formacie tekstowym. Możesz go wkleić do notatek, e-maila lub dokumentu — przydatne, gdy musisz
+            udokumentować optymalizację grafik.
           </p>
         </SectionInfo>
 
@@ -355,16 +388,10 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo
-          title="Wypróbuj narzędzie"
-          btnOne="Przejdź do konwertera"
-          btnOneLink="/narzedzia/jpg-png-na-webp-bez-limitu"
-          btnTwo="Zobacz inne narzędzia"
-          btnTwoLink="/narzedzia"
-        >
+        <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do konwertera" btnOneLink="/narzedzia/jpg-png-na-webp-bez-limitu" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa konwerter, możesz zacząć optymalizować swoje obrazy. Jeśli potrzebujesz pomocy z kompleksową optymalizacją strony — obrazów, kodu, hostingu i SEO technicznego
-            — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> i{' '}
+            Teraz, gdy wiesz jak działa konwerter, możesz zacząć optymalizować swoje obrazy. Jeśli potrzebujesz pomocy z kompleksową optymalizacją strony — obrazów, kodu, hostingu i SEO technicznego —{' '}
+            <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> i{' '}
             <Link href="/uslugi/sklepy-internetowe">sklepów online</Link>, które ładują się błyskawicznie.
           </p>
         </SectionInfo>

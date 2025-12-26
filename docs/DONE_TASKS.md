@@ -1,5 +1,75 @@
 # DONE_TASKS
 
+## 2025-12-27
+
+- ✅ **[CONTENT-009] Blog: zredagować artykuł `czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje` zgodnie z instrukcjami**
+
+  - **Co zrobiono**:
+    - Zmieniono wstęp z formy wyobrażeniowej ("Gdy stoisz przed wyborem...") na bezpośredni opis mechanizmu
+    - Zmieniono główny termin z "social proof" na "społeczny dowód słuszności" (ang. social proof w nawiasie)
+    - Przetłumaczono anglicyzmy: case studies → studia przypadków, checkout → finalizacja zamówienia, incentivized reviews → opinie motywowane
+    - Dodano 5 nowych linków wewnętrznych (łącznie 7): `/uslugi/sklepy-internetowe`, `/edukacja/seo/faq-na-stronie...`, `/edukacja/strony/co-sprawdzic-przed-uruchomieniem...`, `/edukacja/branding/jak-identyfikacja-wizualna...`, `/realizacje`
+    - Zaktualizowano FAQ (polish odpowiedniki terminów)
+    - **Usunięto oceniający fragment**: "nie jest kaprysem ani słabością" → "ma głębokie korzenie ewolucyjne"
+    - **Usunięto straszący fragment**: "może zniszczyć zaufanie szybciej, niż je budowało" → "osłabia wiarygodność firmy w oczach klientów"
+    - **Usunięto straszący fragment**: "Niespójność... szybko wyjdzie na jaw" → "Spójność... wzmacnia wiarygodność opinii"
+    - **Usunięto oceniający fragment**: "Strona z datą... nie budzi zaufania" → "Świeże opinie... są bardziej przekonujące"
+    - **Usunięto straszący fragment w podsumowaniu**: "fałszywe opinie mogą zniszczyć reputację" → "autentyczne i konkretne opinie budują trwałe zaufanie"
+    - **Usunięto pouczający fragment w FAQ**: "Nigdy nie usuwaj... to pogarsza sytuację" → "Usuwanie... rzadko przynosi pozytywne efekty"
+    - **Usunięto pouczające 'Pamiętaj' w FAQ**: "Pamiętaj, że opinie za wynagrodzenie..." → "Opinie za wynagrodzenie bywają..."
+    - Zaktualizowano `dateModified` na 2025-12-27
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: nie wymagana (content-only), JSON OK
+
+- ✅ **[CONTENT-010] Blog: zredagować artykuł `mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec` zgodnie z instrukcjami**
+
+  - **Co zrobiono**:
+    - Wyjaśniono anglicyzm "hover" → "efekty pojawiające się po najechaniu kursorem (tzw. hover)"
+    - Dodano link wewnętrzny do artykułu o linkowaniu wewnętrznym (łącznie 7 linków wewnętrznych)
+    - Poprawiono FAQ: "breadcrumbs" → "okruszki nawigacyjne (ang. breadcrumbs)"
+    - **Usunięto deprecjonujący fragment w FAQ**: "nie szkodzi i może pomóc" → konkretnymi korzyściami (czytniki ekranu, użytkownicy)
+    - **Usunięto oceniający fragment**: "Źle zaprojektowana mapa strony może być równie nieużyteczna jak jej brak" → "Dobrze zaprojektowana mapa strony jest łatwiejsza w użyciu"
+    - **Usunięto dramatyzujący fragment**: "ostatnia szansa na zatrzymanie użytkownika, który trafił na ślepą uliczkę" → "oferuje użytkownikowi alternatywną ścieżkę nawigacji"
+    - **Usunięto pouczające 'pamiętaj'**: "Jeśli dodajesz lub usuwasz podstrony, pamiętaj o aktualizacji" → "Aktualizacja mapy strony przy zmianach w strukturze witryny zapewnia jej aktualność"
+    - Zaktualizowano `dateModified` na 2025-12-27
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: nie wymagana (content-only), JSON OK
+
+## 2025-12-26
+
+- ✅ **[ARTICLE] Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?**
+
+  - **Co zrobiono**:
+    - Utworzono nowy artykuł o social proof (zadanie #54 z TASKS.md)
+    - Artykuł wyjaśnia mechanizm psychologiczny, rodzaje social proof, zastosowanie na stronie
+    - Zgodny z wytycznymi INSTRUCTIONS.md (11 min czytania, ~2200 słów)
+    - 5 linków wewnętrznych, 3 linki zewnętrzne (Cialdini, BrightLocal, Google Moja Firma)
+    - 2 tooltips (social proof, efekt owczego pędu)
+    - 5 pytań FAQ
+    - Przykłady z branż: stomatologia, prawo, gastronomia, e-commerce, rachunkowość
+  - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: JSON OK
+
+- ✅ **[ARTICLE] Mapa strony dla użytkowników: poprawki zgodnie z uwagami**
+
+  - **Co zrobiono**:
+    - Poprawiono artykuł o mapie strony usuwając oceniające komentarze
+    - Usunięto: "może wydawać się elementem z poprzedniej epoki internetu"
+    - Usunięto: "nie jest elementem, który przyciąga tłumy odwiedzających"
+    - Dodano wzmiankę o wyszukiwarce wewnętrznej jako alternatywie
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: JSON OK
+
+- ✅ **[INSTRUCTIONS] Aktualizacja wytycznych tworzenia treści**
+
+  - **Co zrobiono**:
+    - Dodano zakaz komentarzy bez wartości merytorycznej (oceniających, deprecjonujących)
+    - Dodano wytyczne o wspominaniu alternatywnych rozwiązań
+    - Dodano sekcję o przyjaznych tematach dla użytkowników nietechnicznych
+    - Dodano wytyczne zgodności z Google Discover
+    - Dodano wytyczne o potencjale SEO tematów
+  - **Pliki**: `docs/INSTRUCTIONS.md`
+
 ## 2025-12-25
 
 - ✅ **[EEAT-007] Przepisanie według nowych standardów: Czym jest responsywność strony i dlaczego ma znaczenie?**
@@ -639,15 +709,16 @@
 
 ## 2025-12-22
 
-
 - ✅ **[SEO-018] URL/Canonical/OG: ujednolicenie na wszystkich stronach (relative paths + metadataBase)**
 
   - **Cel**:
+
     - Zniwelować problem znikania stron w GSC jako HTTPS oraz niezgodności URL wykrywane przez Senuto.
     - Wyeliminować hardcoded absolute URLs w metadata na rzecz relative paths + automatyczne zarządzanie przez Next.js `metadataBase`.
     - Zapewnić 100% spójność między `alternates.canonical`, `openGraph.url` i schema.org `url` na każdej stronie.
 
   - **Problem (root cause)**:
+
     - Niespójność w podejściu do URL-i: część stron używała hardcoded absolute URLs, część `toAbsoluteUrl()`, część relative paths.
     - Brak jednolitego standardu prowadził do:
       - Niespójności wykrywanych przez narzędzia SEO (Senuto): `canonical ≠ og:url ≠ sitemap`
@@ -656,6 +727,7 @@
       - Open Graph wymaga absolutnych URL-i (standard de facto)
 
   - **Rozwiązanie (POPRAWNE)**:
+
     - **Wszystkie strony używają `toAbsoluteUrl()` dla 100% spójności**.
     - Przykład: `alternates: { canonical: toAbsoluteUrl('/uslugi') }`
     - Przykład: `openGraph: { url: toAbsoluteUrl('/uslugi'), images: [{ url: toAbsoluteUrl('/assets/...') }] }`
@@ -665,6 +737,7 @@
   - **Zakres (wszystkie strony w projekcie)**:
 
     **Strony główne i informacyjne:**
+
     - `app/(pl)/page.tsx` — `/`
     - `app/(pl)/o-nas/page.tsx` — `/o-nas`
     - `app/(pl)/o-nas/faq/page.tsx` — `/o-nas/faq`
@@ -675,15 +748,18 @@
     - `app/(pl)/regulamin/page.tsx` — `/regulamin`
 
     **Edukacja (blog):**
+
     - `app/(pl)/edukacja/page.tsx` — `/edukacja`
     - `app/(pl)/edukacja/[category]/page.tsx` — `/edukacja/[category]` (dynamiczny)
     - `app/(pl)/edukacja/[category]/[slug]/page.tsx` — `/edukacja/[category]/[slug]` (dynamiczny)
 
     **Realizacje (portfolio):**
+
     - `app/(pl)/realizacje/page.tsx` — `/realizacje`
     - `app/(pl)/realizacje/[slug]/page.tsx` — `/realizacje/[slug]` (dynamiczny)
 
     **Narzędzia:**
+
     - `app/(pl)/narzedzia/page.tsx` — `/narzedzia`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
@@ -696,15 +772,18 @@
     - `app/(pl)/narzedzia/(tools)/generator-kodu-qr/page.tsx`
 
     **Usługi (overview):**
+
     - `app/(pl)/uslugi/page.tsx` — `/uslugi`
 
     **Usługi — marketing:**
+
     - `app/(pl)/uslugi/marketing/page.tsx` — `/uslugi/marketing`
     - `app/(pl)/uslugi/marketing/audyt-seo/page.tsx` — `/uslugi/marketing/audyt-seo`
     - `app/(pl)/uslugi/marketing/optymalizacja-seo/page.tsx` — `/uslugi/marketing/optymalizacja-seo`
     - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx` — `/uslugi/marketing/pozycjonowanie-stron`
 
     **Usługi — witryny i treści:**
+
     - `app/(pl)/uslugi/strony-internetowe/page.tsx` — `/uslugi/strony-internetowe`
     - `app/(pl)/uslugi/strony-internetowe/optymalizacja-strony-wordpress/page.tsx`
     - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` — `/uslugi/sklepy-internetowe`
@@ -712,6 +791,7 @@
     - `app/(pl)/uslugi/tworzenie-tresci/page.tsx` — `/uslugi/tworzenie-tresci`
 
     **Usługi — projekty graficzne:**
+
     - `app/(pl)/uslugi/projekty-graficzne/page.tsx` — `/uslugi/projekty-graficzne`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-wizytowki/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-ulotki/page.tsx`
@@ -729,6 +809,7 @@
     - `app/(pl)/uslugi/projekty-graficzne/projekt-menu-restauracji/page.tsx`
 
   - **Kryteria akceptacji**:
+
     - **Wszystkie strony używają `toAbsoluteUrl()` w `alternates.canonical`** (np. `toAbsoluteUrl('/uslugi')`).
     - **Wszystkie strony używają `toAbsoluteUrl()` w `openGraph.url`** i `openGraph.images[].url`.
     - W dynamicznych stronach (`generateMetadata`) canonical i OG URL są spójne z faktycznym URL strony.
@@ -737,6 +818,7 @@
     - Po wdrożeniu: brak regresji w GSC (strony nie znikają jako HTTPS), brak niezgodności URL w Senuto.
 
   - **Weryfikacja**:
+
     - `npm run lint`
     - `npm run build`
     - Sprawdzić wyrenderowany HTML (view-source) na kilku przykładowych stronach:
@@ -745,10 +827,12 @@
       - Schema.org `"url": "https://www.arteonagency.pl/..."`
 
   - **Status**: ✅ Zrobione (2025-12-23)
+
     - Naprawiono **wszystkie 45 stron** w projekcie + schema.org na wszystkich stronach.
     - **100% spójność URL-i**: wszystkie używają `toAbsoluteUrl()` lub `siteUrl` z `@/lib/url`.
-    
+
     **Metadata (canonical + OpenGraph)**:
+
     - **45 stron** używa `toAbsoluteUrl()` w `alternates.canonical`, `openGraph.url` i `openGraph.images[].url`
     - Strony naprawione:
       - **8 stron głównych/informacyjnych**: `/`, `/o-nas`, `/o-nas/faq`, `/o-nas/dolacz-do-sieci`, `/kontakt`, `/mapa-strony`, `/polityka-prywatnosci`, `/regulamin`
@@ -756,8 +840,9 @@
       - **9 stron narzędzi**: `/narzedzia` + 8 narzędzi
       - **3 strony edukacji**: `/edukacja` + dynamiczne
       - **2 strony realizacji**: `/realizacje` + dynamiczne
-    
+
     **Schema.org JSON-LD**:
+
     - Zamieniono wszystkie hardcoded `const BASE = 'https://www.arteonagency.pl'` na import `siteUrl` z `@/lib/url`
     - Zamieniono wszystkie hardcoded URLs w schema na `toAbsoluteUrl()` lub `siteUrl`
     - Naprawiono:
@@ -767,16 +852,15 @@
       - **1 strona**: `/mapa-strony` (wszystkie `@id` i `url` używają `siteUrl`)
       - **1 strona**: `/edukacja/[category]` (canonical używa `toAbsoluteUrl()`)
       - **1 strona**: `/` (schema `@id` używa `siteUrl`)
-    
+
     **FaqPanels pageUrl**:
+
     - Zamieniono wszystkie hardcoded `pageUrl="https://www.arteonagency.pl/..."` na `pageUrl={toAbsoluteUrl('...')}`
     - Naprawiono **18 stron usług** z FAQ
-    
     - `npm run build` przeszedł pomyślnie bez błędów.
     - **Pełna spójność**: `canonical = og:url = og:images = schema.url = faq.pageUrl` (wszystkie używają `toAbsoluteUrl()` lub `siteUrl`).
     - **Brak hardcoded URLs** w całym projekcie - wszystko przez helper `toAbsoluteUrl()` i `siteUrl`.
     - Problem znikania stron w GSC jako HTTPS oraz niezgodności URL w Senuto został **całkowicie zniwelowany na stałe**.
-
 
 - ✅ **[IDEA-074] Blog: Jak przygotować grafikę do postów w mediach społecznościowych?**
 
