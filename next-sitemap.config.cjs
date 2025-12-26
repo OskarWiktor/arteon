@@ -215,7 +215,28 @@ module.exports = {
   },
 
   robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
+    policies: [
+      {
+        userAgent: '*',
+        disallow: ['/_next/', '/api/', '/fonts/', '/favicon.ico', '/*.json$'],
+        allow: ['/_next/image'],
+      },
+    ],
     additionalSitemaps: [],
+    transformRobotsTxt: async () => {
+      return [
+        'User-agent: *',
+        'Disallow: /_next/',
+        'Allow: /_next/image',
+        'Disallow: /api/',
+        'Disallow: /fonts/',
+        'Disallow: /favicon.ico',
+        'Disallow: /*.json$',
+        '',
+        `Host: ${SITE_URL}`,
+        '',
+        `Sitemap: ${SITE_URL}/sitemap.xml`,
+      ].join('\n');
+    },
   },
 };

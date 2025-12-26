@@ -1,14 +1,11 @@
 User-agent: *
 Disallow: /_next/
 Allow: /_next/image
-
 Disallow: /api/
 Disallow: /fonts/
 Disallow: /favicon.ico
 Disallow: /*.json$
 
-# Host
 Host: https://www.arteonagency.pl
 
-# Sitemap
 Sitemap: https://www.arteonagency.pl/sitemap.xml

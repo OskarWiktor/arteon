@@ -1,5 +1,17 @@
 # DONE_TASKS
 
+## 2025-12-26
+
+- ✅ **[SEO-018] robots.txt: optymalizacja reguł blokowania i konfiguracji next-sitemap**
+
+  - **Co zrobiono**:
+    - Zaktualizowano `robotsTxtOptions` w `next-sitemap.config.cjs`
+    - Użyto `transformRobotsTxt` do pełnej kontroli nad wygenerowanym `robots.txt`
+    - Generowany plik zawiera reguły: blokowanie `/_next/`, `/api/`, `/fonts/`, `/favicon.ico`, `/*.json$`; pozwolenie na `/_next/image`; Host i Sitemap
+    - Brak komentarzy w wygenerowanym pliku
+  - **Pliki**: `next-sitemap.config.cjs`, `public/robots.txt` (generowany)
+  - **Weryfikacja**: `npm run build` OK
+
 ## 2025-12-27
 
 - ✅ **[CONTENT-009] Blog: zredagować artykuł `czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje` zgodnie z instrukcjami**
