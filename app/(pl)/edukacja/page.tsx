@@ -51,7 +51,7 @@ export default function EdukacjaPage() {
 
   return (
     <>
-      <HeroBanner title="Edukacja" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
+      <HeroBanner title="Edukacja" variant="center" backgroundImage="/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp" overlay="black" />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} />
