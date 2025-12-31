@@ -11,11 +11,11 @@ import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
-  title: '"Stwórz profesjonalną stopkę mailową HTML',
+  title: 'Stwórz profesjonalną stopkę mailową HTML',
   description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej') },
   openGraph: {
-    title: '"Stwórz profesjonalną stopkę mailową HTML',
+    title: 'Stwórz profesjonalną stopkę mailową HTML',
     description: 'Stwórz profesjonalną stopkę mailową HTML w kilka minut. Skorzystaj z naszego darmowego generator podpisu email, stwórz własny podpis i skopiuj gotowy kod',
     url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: '"Stwórz profesjonalną stopkę mailowej HTML',
+  name: 'Stwórz profesjonalną stopkę mailowej HTML',
   alternateName: 'Generator podpisu e-mail w HTML',
   url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
   applicationCategory: 'UtilityApplication',
