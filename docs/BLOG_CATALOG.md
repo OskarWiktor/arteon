@@ -171,7 +171,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2025-12-23
   - **Czas czytania**: 7 min
   - **Opis**: Artykuł o e-mail marketingu dla małych firm. Dlaczego e-mail marketing wciąż działa (ROI, bezpośredni dostęp, własność listy, personalizacja), rodzaje e-maili marketingowych (newsletter, automatyczne, transakcyjne, kampanie), co powinien zawierać skuteczny mailing (temat, preheader, struktura, CTA, stopka), na co zwrócić uwagę przy planowaniu (RODO, dostarczalność, częstotliwość, responsywność), najczęstsze problemy (niski open rate, wypisy, klikalność, spam, nieaktualna lista), jak mierzyć skuteczność (open rate, CTR, konwersja, bounce rate).
-  - **Linki wewnętrzne**: `/uslugi/tworzenie-tresci`, `/narzedzia /darmowy-generator-stopki-mailowej`, `/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa`, `/kontakt`
+  - **Linki wewnętrzne**: `/uslugi/tworzenie-tresci`, `/narzedzia/darmowy-generator-stopki-mailowej`, `/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa`, `/kontakt`
   - **Linki zewnętrzne**: DMA (Data & Marketing Association) - źródło danych o ROI
   - **FAQ**: 5 pytań
   - **CTA**: Tworzenie treści + Kontakt
