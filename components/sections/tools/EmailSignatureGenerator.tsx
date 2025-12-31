@@ -20,6 +20,11 @@ const ui = {
       topBanner: 'Pasek u góry',
       labelColumn: 'Etykiety z lewej',
       centered: 'Wyśrodkowany',
+      compact: 'Kompaktowy',
+      twoColumn: 'Dwie kolumny',
+      bordered: 'Z ramką',
+      minimal: 'Minimalistyczny',
+      bottomBar: 'Pasek na dole',
     },
     editorTitle: 'Edytor stopki HTML',
     panels: {
@@ -289,7 +294,7 @@ export default function EmailSignatureGenerator() {
               {t.layoutLabel}
             </Eyebrow>
             <div className="flex flex-wrap gap-1">
-              {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered'] as LayoutType[]).map((lt) => (
+              {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered', 'compact', 'two-column', 'bordered', 'minimal', 'bottom-bar'] as LayoutType[]).map((lt) => (
                 <Badge
                   key={lt}
                   as="button"
@@ -303,6 +308,11 @@ export default function EmailSignatureGenerator() {
                   {lt === 'top-banner' && t.layouts.topBanner}
                   {lt === 'label-column' && t.layouts.labelColumn}
                   {lt === 'centered' && t.layouts.centered}
+                  {lt === 'compact' && t.layouts.compact}
+                  {lt === 'two-column' && t.layouts.twoColumn}
+                  {lt === 'bordered' && t.layouts.bordered}
+                  {lt === 'minimal' && t.layouts.minimal}
+                  {lt === 'bottom-bar' && t.layouts.bottomBar}
                 </Badge>
               ))}
             </div>

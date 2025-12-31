@@ -44,6 +44,7 @@ function toRoute(file) {
   if (file === 'page.tsx' || file === 'page.ts' || file === 'page.mdx') return '/';
   let r = '/' + file.replace(/\\/g, '/').replace(/\/page\.(ts|tsx|mdx)$/, '');
   r = r.replace(/\/\([^/]+\)/g, '');
+  if (r === '') r = '/'; // Fix: route group at root becomes empty string
   if (/\[.+?\]/.test(r)) return null;
   if (r === '/index') r = '/';
   if (r === '/_not-found' || r === '/api') return null;

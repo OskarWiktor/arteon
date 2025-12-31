@@ -2,6 +2,36 @@
 
 ## 2025-12-31
 
+- ✅ **[AUDIT-018] Repo: audyt sitemap — kompletność, duplikaty, poprawność lastmod**
+
+  - **Co zrobiono**:
+    - Sprawdzono kompletność sitemap: wszystkie 53 strony statyczne są obecne ✓
+    - Wykryto i usunięto **duplikat katalogu** `generator-stopki-mailowej/` (stary katalog obok `darmowy-generator-stopki-mailowej/`) — tworzył dostępne URL-e `/narzedzia/generator-stopki-mailowej` i `/instrukcja`, które nie były w sitemap.
+    - Naprawiono **bug w `next-sitemap.config.cjs`** — strona główna `/` nie miała `lastmod` (route group `(pl)` po usunięciu dawał pusty string zamiast `/`).
+    - Zweryfikowano daty `lastmod` — poprawne, pobierane z git commit date.
+  - **Pliki zmienione**:
+    - Usunięto: `app/(pl)/narzedzia/(tools)/(desktop-only)/generator-stopki-mailowej/` (cały katalog z page.tsx i instrukcja/page.tsx)
+    - Edytowano: `next-sitemap.config.cjs` (dodano `if (r === '') r = '/';` w funkcji `toRoute`)
+  - **Weryfikacja**: `npm run build` przechodzi, sitemap zregenerowana poprawnie.
+
+- ✅ **[TOOLS-044] Generator stopki mailowej: dodać 5 nowych wariantów układu**
+
+  - **Co zrobiono**:
+    - Dodano 5 nowych układów stopki mailowej:
+      1. `compact` - kompaktowy, jednoliniowy układ (imię + stanowisko | kontakt)
+      2. `two-column` - dane osobowe po lewej, kontakt po prawej z separatorem
+      3. `bordered` - cała stopka otoczona elegancką ramką w kolorze akcentu
+      4. `minimal` - minimalistyczny, tylko podstawowe dane bez ozdobników
+      5. `bottom-bar` - dane u góry, kolorowy pasek na dole z CTA i nazwą firmy
+    - Zaktualizowano `LayoutType` w `types.ts`.
+    - Dodano etykiety UI w `EmailSignatureGenerator.tsx`.
+    - Zaimplementowano generowanie HTML dla wszystkich nowych układów w `buildSignatureHtml.ts`.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
 - ✅ **[REVERT-001] Narzędzia: przywrócenie starych URL-i i usunięcie redirectów SEO-019**
 
   - **Co zrobiono**:

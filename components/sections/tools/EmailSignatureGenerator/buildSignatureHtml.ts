@@ -320,6 +320,186 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
         </tr>
       </table>
     `;
+  } else if (layout === 'compact') {
+    const compactName = `<span style="font-weight:bold;color:${accentColor};">${escapeHtml(config.fullName || '')}</span>`;
+    const compactTitle = hasJobTitle ? `<span style="color:${textColor};"> · ${escapeHtml(config.jobTitle.trim())}</span>` : '';
+    const compactCompany = hasCompany ? `<span style="color:${textColor};"> · ${escapeHtml(config.company.trim())}</span>` : '';
+
+    const compactContactItems: string[] = [];
+    if (config.phone.trim()) {
+      const phone = formatPhone(config.phone);
+      compactContactItems.push(`<a href="tel:${escapeHtml(phone)}" style="color:${accentColor};text-decoration:none;">${escapeHtml(phone)}</a>`);
+    }
+    if (config.email.trim()) {
+      compactContactItems.push(`<a href="mailto:${escapeHtml(config.email.trim())}" style="color:${accentColor};text-decoration:none;">${escapeHtml(config.email.trim())}</a>`);
+    }
+    if (config.website.trim()) {
+      const normalized = sanitizeHrefUrl(config.website);
+      if (normalized) {
+        compactContactItems.push(`<a href="${escapeHtml(normalized)}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a>`);
+      }
+    }
+
+    const compactContact = compactContactItems.length ? ` <span style="color:${SIGNATURE_COLOR_DIVIDER};">|</span> ${compactContactItems.join(' · ')}` : '';
+
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          <td style="padding:${paddingAll};">
+            ${hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="32" height="32" style="border-radius:999px;vertical-align:middle;margin-right:10px;" />` : ''}${compactName}${compactTitle}${compactCompany}${compactContact}
+            ${socialLinks.length ? `<div style="margin-top:6px;">${socialLinks.join('')}</div>` : ''}
+            ${config.legalNote.trim() ? `<div style="margin-top:8px;font-size:10px;color:${textColor};opacity:0.7;">${formatMultiline(config.legalNote.trim())}</div>` : ''}
+          </td>
+        </tr>
+      </table>
+    `;
+  } else if (layout === 'two-column') {
+    const leftColumn = `
+      <td style="vertical-align:top;padding-right:20px;">
+        ${hasAvatar ? `<div style="margin-bottom:8px;"><img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" /></div>` : ''}
+        ${hasTopLine ? `<div style="font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};margin-bottom:4px;">${escapeHtml(config.topLine.trim())}</div>` : ''}
+        <div style="font-size:15px;font-weight:bold;color:${accentColor};margin-bottom:4px;">${escapeHtml(config.fullName || '')}${hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''}</div>
+        ${hasJobTitle || hasCompany ? `<div style="color:${textColor};margin-bottom:4px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>` : ''}
+        ${hasExtraLine ? `<div style="color:${textColor};margin-bottom:4px;">${escapeHtml(config.extraLine.trim())}</div>` : ''}
+      </td>
+    `;
+
+    const rightColumnItems: string[] = [];
+    if (config.phone.trim()) {
+      const phone = formatPhone(config.phone);
+      rightColumnItems.push(`<div style="margin-bottom:4px;"><span style="font-weight:bold;">${telLabel}:</span> <a href="tel:${escapeHtml(phone)}" style="color:${accentColor};text-decoration:none;">${escapeHtml(phone)}</a></div>`);
+    }
+    if (config.email.trim()) {
+      rightColumnItems.push(`<div style="margin-bottom:4px;"><span style="font-weight:bold;">${mailLabel}:</span> <a href="mailto:${escapeHtml(config.email.trim())}" style="color:${accentColor};text-decoration:none;">${escapeHtml(config.email.trim())}</a></div>`);
+    }
+    if (config.website.trim()) {
+      const normalized = sanitizeHrefUrl(config.website);
+      if (normalized) {
+        rightColumnItems.push(`<div style="margin-bottom:4px;"><span style="font-weight:bold;">${webLabel}:</span> <a href="${escapeHtml(normalized)}" style="color:${accentColor};text-decoration:none;">${escapeHtml(normalized)}</a></div>`);
+      }
+    }
+    if (hasAddress) {
+      rightColumnItems.push(`<div style="margin-bottom:4px;">${formatMultiline(config.address.trim())}</div>`);
+    }
+
+    const rightColumn = `
+      <td style="vertical-align:top;border-left:1px solid ${SIGNATURE_COLOR_DIVIDER};padding-left:20px;">
+        ${rightColumnItems.join('')}
+        ${socialLinks.length ? `<div style="margin-top:6px;">${socialLinks.join('')}</div>` : ''}
+        ${config.ctaLabel.trim() && config.ctaUrl.trim() ? (() => { const ctaUrl = sanitizeHrefUrl(config.ctaUrl); return ctaUrl ? `<div style="margin-top:10px;"><a href="${escapeHtml(ctaUrl)}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:${SIGNATURE_COLOR_WHITE};text-decoration:none;font-size:${baseFontSize};">${escapeHtml(config.ctaLabel.trim())}</a></div>` : ''; })() : ''}
+      </td>
+    `;
+
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          <td style="padding:${paddingAll};">
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};">
+              <tr>
+                ${leftColumn}
+                ${rightColumn}
+              </tr>
+            </table>
+            ${hasFormalLine || config.legalNote.trim() ? `<div style="margin-top:12px;padding-top:10px;border-top:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:11px;color:${textColor};">${hasFormalLine ? formatMultiline(config.formalLine.trim()) + '<br/>' : ''}${config.legalNote.trim() ? formatMultiline(config.legalNote.trim()) : ''}</div>` : ''}
+          </td>
+        </tr>
+      </table>
+    `;
+  } else if (layout === 'bordered') {
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};border:2px solid ${accentColor};border-radius:8px;">
+        <tr>
+          <td style="padding:${paddingAll};vertical-align:top;">
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+              <tr>
+                ${avatarCellInline}
+                <td style="vertical-align:top;">
+                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+                    ${innerRows}
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    `;
+  } else if (layout === 'minimal') {
+    const minimalName = `<div style="font-size:15px;font-weight:bold;color:${accentColor};margin-bottom:2px;">${escapeHtml(config.fullName || '')}</div>`;
+    const minimalTitle = hasJobTitle || hasCompany ? `<div style="color:${textColor};margin-bottom:6px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ', ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>` : '';
+
+    const minimalContactItems: string[] = [];
+    if (config.email.trim()) {
+      minimalContactItems.push(`<a href="mailto:${escapeHtml(config.email.trim())}" style="color:${accentColor};text-decoration:none;">${escapeHtml(config.email.trim())}</a>`);
+    }
+    if (config.phone.trim()) {
+      const phone = formatPhone(config.phone);
+      minimalContactItems.push(`<a href="tel:${escapeHtml(phone)}" style="color:${accentColor};text-decoration:none;">${escapeHtml(phone)}</a>`);
+    }
+
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          <td style="padding:${paddingAll};">
+            ${minimalName}
+            ${minimalTitle}
+            ${minimalContactItems.length ? `<div>${minimalContactItems.join(' · ')}</div>` : ''}
+          </td>
+        </tr>
+      </table>
+    `;
+  } else if (layout === 'bottom-bar') {
+    const topSection = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          ${avatarCellInline}
+          <td style="vertical-align:top;">
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+              ${topLineHtml}
+              ${nameRowHtml}
+              ${titleCompanyHtml}
+              ${extraLineHtml}
+              ${addressHtml}
+              ${contactHtml}
+              ${socialsHtml}
+            </table>
+          </td>
+        </tr>
+      </table>
+    `;
+
+    const bottomBarContent: string[] = [];
+    if (config.ctaLabel.trim() && config.ctaUrl.trim()) {
+      const ctaUrl = sanitizeHrefUrl(config.ctaUrl);
+      if (ctaUrl) {
+        bottomBarContent.push(`<a href="${escapeHtml(ctaUrl)}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${SIGNATURE_COLOR_WHITE};color:${accentColor};text-decoration:none;font-size:${baseFontSize};font-weight:bold;">${escapeHtml(config.ctaLabel.trim())}</a>`);
+      }
+    }
+    if (hasCompany) {
+      bottomBarContent.push(`<span style="opacity:0.9;">${escapeHtml(config.company.trim())}</span>`);
+    }
+
+    const bottomBar = `
+      <div style="background-color:${accentColor};color:${SIGNATURE_COLOR_WHITE};padding:10px 16px;margin-top:12px;border-radius:0 0 6px 6px;">
+        ${bottomBarContent.length ? bottomBarContent.join(' <span style="opacity:0.5;margin:0 8px;">|</span> ') : ''}
+      </div>
+    `;
+
+    layoutWrapper = `
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+        <tr>
+          <td style="padding:${paddingAll};padding-bottom:0;">
+            ${topSection}
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0 ${paddingAll};">
+            ${bottomBar}
+            ${hasFormalLine || config.legalNote.trim() ? `<div style="margin-top:10px;font-size:11px;color:${textColor};">${hasFormalLine ? formatMultiline(config.formalLine.trim()) + '<br/>' : ''}${config.legalNote.trim() ? formatMultiline(config.legalNote.trim()) : ''}</div>` : ''}
+          </td>
+        </tr>
+      </table>
+    `;
   }
 
   return layoutWrapper.replace(/\s{2,}/g, ' ').trim();

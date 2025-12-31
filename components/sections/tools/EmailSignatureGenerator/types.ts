@@ -4,7 +4,7 @@ export type MarginOption = 'small' | 'medium' | 'large';
 export type CtaRadiusOption = 'none' | 'small' | 'full';
 export type SocialKey = 'linkedin' | 'instagram' | 'facebook' | 'tiktok' | 'youtube' | 'x';
 export type ActivePanel = 'identity' | 'cta' | 'social' | 'appearance' | 'legal';
-export type LayoutType = 'standard' | 'accent-bar' | 'top-banner' | 'label-column' | 'centered';
+export type LayoutType = 'standard' | 'accent-bar' | 'top-banner' | 'label-column' | 'centered' | 'compact' | 'two-column' | 'bordered' | 'minimal' | 'bottom-bar';
 
 export interface SignatureConfig {
   fullName: string;
