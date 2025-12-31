@@ -35,34 +35,25 @@ import { GoLaw } from 'react-icons/go';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-przygotowac-sklep-internetowy-do-pozycjonowania',
-  'czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
-  'czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie',
-  'jak-mierzyc-skutecznosc-strony-internetowej',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-];
 
 export const metadata = {
-  title: 'Sklepy internetowe - projekt i realizacja - Arteon',
+  title: 'Sklepy internetowe - projekt i realizacja | Arteon',
   description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/sklepy-internetowe') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe' },
   openGraph: {
-    title: 'Sklepy internetowe - projekt i realizacja - Arteon',
+    title: 'Sklepy internetowe - projekt i realizacja | Arteon',
     description: 'Funkcjonalne sklepy, prosta obsługa i czytelny zakup. Treści i widoczność w Google w pakiecie. Gwarancja i wsparcie.',
-    url: toAbsoluteUrl('/uslugi/sklepy-internetowe'),
+    url: 'https://www.arteonagency.pl/uslugi/sklepy-internetowe',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baners-trilllizo.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-trilllizo.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/sklepy-internetowe',
     serviceName: 'Tworzenie sklepów internetowych',
     description: 'Budujemy sklepy online, które konwertują: szybkie karty produktu, prosty koszyk, płatności i wysyłki, analityka sprzedaży oraz SEO.',
@@ -77,9 +68,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferOnlineStore() {
-  const articles = getAllArticlePreviews();
-
+export default function OfferWebPage() {
   return (
     <>
       <HeroBanner
@@ -192,62 +181,62 @@ export default function OfferOnlineStore() {
             {
               title: 'Indywidualny projekt graficzny sklepu',
               description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Twój sklep</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Redakcję treści sprzedażowych dla lepszej pozycji w Google',
               description: <>Opisy, które jasno mówią o korzyściach i prowadzą do zakupu</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dobór i obróbka zdjęć produktów',
               description: <>Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do sklepu: kadry, tło, rozmiary, waga.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wsparcie prawne przy politykach i regulaminach',
               description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
-              icon: <GoLaw className="h-6 w-6 text-slate-700" />,
+              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Sklep online dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Szybkość i stabilność',
               description: <>Sklep online który działa szybko, bez awarii</>,
-              icon: <RiSpeedLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiSpeedLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Termin i plan z kamieniami milowymi',
               description: <>Tworzymy harmonogram i trzymamy się go. Wiesz, co będzie gotowe i kiedy</>,
-              icon: <RiCalendarCheckLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiCalendarCheckLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: <>Informujemy Cię regularnie o postępach naszych prac nad Twoim sklepem</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi sklepu',
               description: <>Proste instrukcje, stworzone tak, abyś samodzielnie mógł dodać produkty, ceny i promocje</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: <>Po publikacji pomagamy w dalszym rozwoju i skalowaniu sklepu internetowego. Ewentualne błędy poprawiamy w ramach gwarancji</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -361,7 +350,7 @@ export default function OfferOnlineStore() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/sklepy-internetowe')}
+          pageUrl="https://www.arteonagency.pl/uslugi/sklepy-internetowe"
           items={[
             {
               question: 'Ile kosztuje stworzenie sklepu internetowego?',
@@ -417,10 +406,6 @@ export default function OfferOnlineStore() {
         <Gap variant="line" />
 
         <ServicesSteps />
-
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące sklepów internetowych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>

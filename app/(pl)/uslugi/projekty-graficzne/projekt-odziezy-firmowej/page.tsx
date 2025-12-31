@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -15,38 +15,30 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt odzieży firmowej - Arteon',
-  description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
+  title: 'Projekt odzieży firmowej | Arteon',
+  description: 'Projekt nadruków i haftów na odzież firmową: koszulki, bluzy, czapki. Pliki techniczne dla drukarni i hafciarni.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
   },
   openGraph: {
-    title: 'Projekt odzieży firmowej - Arteon',
-    description: 'Projekt nadruków i haftów na odzież firmową - spójny wygląd zespołu i lepsza rozpoznawalność marki w terenie',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej'),
+    title: 'Projekt odzieży firmowej | Arteon',
+    description: 'Projekt nadruków i haftów na odzież firmową: koszulki, bluzy, czapki. Pliki techniczne dla drukarni i hafciarni.',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     serviceName: 'Projekt odzieży firmowej',
     description: 'Nadruki na odzież (T-shirt, bluza, polo) spójne z marką. Pliki produkcyjne dla sitodruku/DTF.',
@@ -62,15 +54,13 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignCorporateApparelPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
         title="Projekt odzieży firmowej"
         description={
           <>
-            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z Twoją identyfikacją i realiami produkcji.
+            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z identyfikacją wizualną i realiami produkcji.
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -104,7 +94,7 @@ export default function OfferDesignCorporateApparelPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt odzieży firmowej?">
           <p>
-            <strong>Spójny wygląd odzieży Twojego zespołu buduje zaufanie w kilka sekund.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i
+            <strong>Spójny wygląd odzieży zespołu ułatwia identyfikację firmy.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i
             wzmacnia wiarygodność - zarówno w siedzibie, jak i w terenie. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
           </p>
 
@@ -129,27 +119,27 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Spójny wygląd zespołu',
               description: <>Projekt buduje rozpoznawalność marki w terenie, na hali, w salonie i podczas wydarzeń.</>,
-              icon: <RiTShirt2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiTShirt2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wizualizacje i warianty',
               description: <>Przygotowujemy podglądy na koszulkach, bluzach i innych elementach, aby łatwiej było podjąć decyzję.</>,
-              icon: <RiImageLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiImageLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dopasowanie do wybranej technologii',
               description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków - sitodruk, haft, DTF.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pliki gotowe do produkcji',
               description: <>Otrzymujesz materiały, które możesz od razu przekazać wykonawcy odzieży.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -248,7 +238,7 @@ export default function OfferDesignCorporateApparelPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej"
           title="Najczęstsze pytania o projekt odzieży firmowej"
           items={[
             {
@@ -323,10 +313,6 @@ export default function OfferDesignCorporateApparelPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące brandingu" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -345,3 +331,5 @@ export default function OfferDesignCorporateApparelPage() {
     </>
   );
 }
+
+

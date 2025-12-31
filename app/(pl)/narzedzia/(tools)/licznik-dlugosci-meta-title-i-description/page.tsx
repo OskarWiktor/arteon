@@ -6,16 +6,16 @@ import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Licznik długości meta title i description',
+  title: 'Sprawdź długość tytułu i opisu strony w Google',
   description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description') },
   openGraph: {
-    title: 'Licznik długości meta title i description',
+    title: 'Sprawdź długość tytułu i opisu strony w Google',
     description: 'Sprawdź liczbę znaków, słów, szerokość w pikselach oraz ocenę długości meta title i meta description dla swojej strony. Darmowy licznik bez limitu',
     url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Licznik długości meta title i meta description',
+  name: 'Sprawdź długość tytułu i opisu strony w Google',
   alternateName: 'Licznik meta title i meta description z podglądem Google',
   url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
   applicationCategory: 'SEOApplication',
@@ -57,7 +57,7 @@ export default function Page() {
       <Script id="ld-json-meta-length-tool" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <HeroBanner
-        title="Licznik długości meta title i description"
+        title="Sprawdź długość tytułu i opisu strony w Google"
         description="Wpisz tytuł i opis strony, a narzędzie obliczy liczbę znaków, słów, szerokość w pikselach i pokaże, czy długość jest zgodna z zasadami SEO"
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
@@ -65,7 +65,7 @@ export default function Page() {
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzie' }}
-        third={{ href: `/narzedzia/licznik-dlugosci-meta-title-i-description`, label: 'Licznik długości meta title i description' }}
+        third={{ href: `/narzedzia/licznik-dlugosci-meta-title-i-description`, label: 'Sprawdź długość tytułu i opisu strony w Google' }}
         includeJsonLd
       />
 

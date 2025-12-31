@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -16,38 +16,30 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine,
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'kody-qr-w-materialach-reklamowych',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt menu restauracji - Arteon',
+  title: 'Projekt menu restauracji | Arteon',
   description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
   },
   openGraph: {
-    title: 'Projekt menu restauracji - Arteon',
+    title: 'Projekt menu restauracji | Arteon',
     description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-menu-restauracji',
     serviceName: 'Projekt menu restauracji',
     description: 'Projekt graficzny menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
@@ -63,8 +55,6 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignMenuPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -135,22 +125,22 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Układ dopasowany do oferty',
               description: <>Projektujemy logiczne sekcje - przystawki, dania główne, napoje, desery - z czytelną hierarchią, która ułatwia podjęcie decyzji i kieruje wzrok na kluczowe pozycje.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z klimatem lokalu',
               description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji - nowoczesnego, klasycznego, rustykalnego czy street foodowego.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Gotowe pliki do druku i online',
               description: <>Dostarczamy pliki przygotowane do druku oraz wersje online, które bez problemu dodasz na stronę, do social mediów lub do kodu QR.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Możliwość samodzielnej aktualizacji',
               description: <>Na życzenie przygotowujemy łatwe w edycji pliki źródłowe, dzięki czemu samodzielnie zaktualizujesz sezonowe dania, ceny czy nowe pozycje.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -269,7 +259,7 @@ export default function OfferDesignMenuPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji"
           title="Najczęstsze pytania dotyczące projektów menu restauracyjnego"
           items={[
             {
@@ -354,10 +344,6 @@ export default function OfferDesignMenuPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące materiałów drukowanych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -376,3 +362,5 @@ export default function OfferDesignMenuPage() {
     </>
   );
 }
+
+

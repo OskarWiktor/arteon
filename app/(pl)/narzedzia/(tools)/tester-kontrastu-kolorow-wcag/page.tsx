@@ -8,14 +8,14 @@ import WcagContrastChecker from '@/components/sections/tools/WcagContrastChecker
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 
 export const metadata: Metadata = {
-  title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
+  title: 'Sprawdź kontrast kolorów pod kątem dostępności',
   description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag') },
   openGraph: {
-    title: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
+    title: 'Sprawdź kontrast kolorów pod kątem dostępności',
     description: 'Sprawdź kontrast kolorów zgodnie z wytycznymi WCAG 2.1. Wpisz kolory, zobacz czy spełniasz współczynnik kontrastu na poziomie AA i AAA',
     url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Tester kontrastu kolorów WCAG online',
+  name: 'Sprawdź kontrast kolorów pod kątem dostępności',
   alternateName: 'Sprawdzanie kontrastu kolorów zgodnie z WCAG 2.1',
   url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag'),
   applicationCategory: 'UtilityApplication',
@@ -59,13 +59,13 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Tester kontrastu kolorów WCAG"
+        title="Sprawdź kontrast kolorów pod kątem dostępności"
         description="Sprawdź, czy kolory na Twojej stronie spełniają wymagania WCAG 2.1. Wpisz kolory, zobacz współczynnik kontrastu i od razu dowiedz się, czy masz poziom AA lub AAA."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
-      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/tester-kontrastu-kolorow-wcag`, label: 'Tester kontrastu kolorów WCAG' }} includeJsonLd />
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/tester-kontrastu-kolorow-wcag`, label: 'Sprawdź kontrast kolorów pod kątem dostępności' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

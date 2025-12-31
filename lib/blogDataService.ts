@@ -1,9 +1,25 @@
-import 'server-only';
+﻿import 'server-only';
+
+/**
+ * Blog Data Service
+ *
+ * ZASADY ZERO DOPISAŃ — ZERO NIEPRAWDY (docs/INSTRUCTIONS.md)
+ * ----------------------------------------------------------
+ * Wszystkie artykuły w blog.json MUSZĄ spełniać następujące wymagania:
+ *
+ * 1. ŹRÓDŁA: Każda liczba/statystyka musi mieć źródło (nazwa, rok, działający URL)
+ * 2. PRAWO: Treści o cenach/promocjach zgodne z Omnibus (30 dni),
+ *    treści o prywatności zgodne z RODO/GDPR
+ * 3. PRZYKŁADY HIPOTETYCZNE: Muszą być oznaczone jako takie
+ * 4. ZAKAZ DOPISYWANIA: Żadnych nieprawdziwych/niesprawdzonych twierdzeń
+ *
+ * Przed dodaniem nowego artykułu sprawdź checklistę w INSTRUCTIONS.md
+ */
 
 import blogData from '@/data/pl/blog.json';
 import type { Article, ArticlePreview } from '@/types/article';
 import { getPrimaryCategorySlug as getPrimaryCategorySlugBase } from '@/utils/blogCategory';
-import { slugify } from '@/utils/slug';
+import { slugify } from '@/utils/slugify';
 
 interface BlogData {
   articles: Article[];

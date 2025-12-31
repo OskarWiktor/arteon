@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -15,33 +15,22 @@ import Button from '@/components/ui/buttons/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Script from 'next/script';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
-  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
-  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
-  'meta-title-i-description-jak-je-napisac',
-  'ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty',
-  'jak-mierzyc-skutecznosc-strony-internetowej',
-];
 
 export const metadata = {
-  title: 'Marketing internetowy - SEO, reklamy i komunikacja - Arteon',
+  title: 'Marketing internetowy - SEO, reklamy i komunikacja | Arteon',
   description: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing' },
   openGraph: {
     title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
-    url: toAbsoluteUrl('/uslugi/marketing'),
+    url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg5.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
   },
 } as const;
 
 function ItemListSchema() {
+  const base = 'https://www.arteonagency.pl';
   const services = [
     { name: 'Audyt SEO', path: '/uslugi/marketing/audyt-seo' },
     { name: 'Optymalizacja SEO', path: '/uslugi/marketing/optymalizacja-seo' },
@@ -50,13 +39,13 @@ function ItemListSchema() {
   const json = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': `${siteUrl}/uslugi/marketing#itemlist`,
+    '@id': `${base}/uslugi/marketing#itemlist`,
     name: 'Usługi marketingowe - Arteon',
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: services.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: toAbsoluteUrl(s.path),
+      url: `${base}${s.path}`,
       name: s.name,
     })),
   };
@@ -67,9 +56,7 @@ function ItemListSchema() {
   );
 }
 
-export default function OfferMarketing() {
-  const articles = getAllArticlePreviews();
-
+export default function OfferMarketingHubPage() {
   return (
     <>
       <HeroBanner
@@ -101,44 +88,42 @@ export default function OfferMarketing() {
             {
               title: 'Jasną strategię działania',
               description: <>Plan działań oparty na psychologii w biznesie z podziałem na szybkie wygrane i strategiczne działania długoterminowe.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Raporty i decyzje oparte na danych',
               description: <>Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak, abyś miał pewność, że marketing z nami będzie skuteczny.</>,
-              icon: <IoAnalytics className="h-6 w-6 text-slate-700" />,
+              icon: <IoAnalytics className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełna własność danych i kont',
               description: <>Masz dostęp do wszystkich narzędzi, z których korzystamy, dzięki czemu w dowolnej chwili możesz sprawdzić wyniki naszych działań.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'SEO techniczne + treściowe',
-              description: (
-                <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>
-              ),
-              icon: <RiSearchLine className="h-6 w-6 text-slate-700" />,
+              description: <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>,
+              icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Lokalne lub krajowe SEO',
               description: <>Prowadzimy działania SEO krajowe oraz lokalne, dzięki czemu Twój biznes może rozwijać się w Twoim mieście i jednocześnie za granicą lub w całym kraju</>,
-              icon: <RiSearchEyeLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiSearchEyeLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Reklamy Google i Meta',
               description: <>Tworzymy kampanie oparte na realnych problemach klientów. Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to, co działa.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-700" />,
+              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i terminy są rozpisane przed startem działań.</>,
-              icon: <RiCustomerService2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiCustomerService2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wsparcie po wdrożeniu',
               description: <>Stale informujemy Cię o wynikach naszych działań, dajemy Ci jasne podsumowanie w mailu oraz prowadzimy darmowe konsultacje online</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -221,10 +206,6 @@ export default function OfferMarketing() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące marketingu" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -241,3 +222,5 @@ export default function OfferMarketing() {
     </>
   );
 }
+
+

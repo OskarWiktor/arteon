@@ -9,20 +9,20 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import Link from 'next/link';
 import { RiPaletteLine, RiPaintBrushLine, RiCheckboxCircleLine, RiEqualizerLine, RiContrast2Line } from 'react-icons/ri';
 import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
-  title: 'Jak używać testera kontrastu kolorów WCAG | Instrukcja',
-  description: 'Instrukcja testera kontrastu WCAG. Dowiedz się, jak sprawdzić kontrast, co oznaczają poziomy AA i AAA oraz jak interpretować wyniki.',
+  title: 'Jak sprawdzić kontrast kolorów WCAG? | Tester dostępności online',
+  description: 'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL — tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja') },
   openGraph: {
-    title: 'Jak używać testera kontrastu kolorów WCAG | Instrukcja',
+    title: 'Jak sprawdzić kontrast kolorów WCAG? | Tester dostępności online',
     description:
-      'Szczegółowa instrukcja testera kontrastu kolorów WCAG. Dowiedz się, jak sprawdzić kontrast, co oznaczają poziomy AA i AAA, jakie formaty kolorów są obsługiwane i jak interpretować wyniki.',
+      'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL — tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
     url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja'),
     type: 'website',
     images: [
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak używać testera kontrastu kolorów WCAG',
-  description: 'Instrukcja krok po kroku jak korzystać z testera kontrastu kolorów zgodnego z wytycznymi WCAG 2.1. Sprawdź, czy kolory na swojej stronie spełniają wymagania dostępności.',
+  name: 'Jak sprawdzić kontrast kolorów według WCAG',
+  description: 'Instrukcja sprawdzania kontrastu tekstu i tła według WCAG 2.1. Wpisz kolory (HEX, RGB, HSL), sprawdź poziomy AA i AAA, użyj funkcji Dopasuj do automatycznej korekty.',
   url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja'),
   step: [
     {
@@ -123,8 +123,8 @@ export default function InstrukcjaPage() {
       </Script>
 
       <HeroBanner
-        title="Jak używać testera kontrastu kolorów WCAG"
-        description="Szczegółowa instrukcja narzędzia do sprawdzania kontrastu kolorów. Dowiesz się, co oznaczają poziomy WCAG, jak interpretować wyniki i jak poprawić kontrast na swojej stronie."
+        title="Jak sprawdzić kontrast kolorów według WCAG"
+        description="Sprawdź, czy kolory na stronie spełniają wymagania dostępności WCAG 2.1. Instrukcja z wyjaśnieniem poziomów AA i AAA, formatów kolorów (HEX, RGB, HSL) i funkcji automatycznej korekty."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

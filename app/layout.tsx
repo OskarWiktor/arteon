@@ -12,9 +12,9 @@ import FocusManager from '@/components/systems/FocusManager';
 import RevealObserver from '@/components/systems/RevealObserver';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { LocaleProvider, type Locale } from '@/lib/LocaleContext';
-import { getActiveSiteKey } from '@/lib/site';
+import { getActiveSiteKey } from '@/lib/siteKeyDetection';
 import { SiteProvider } from '@/lib/SiteContext';
-import { siteUrl, toAbsoluteUrl } from '@/lib/url';
+import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 import './globals.css';
 

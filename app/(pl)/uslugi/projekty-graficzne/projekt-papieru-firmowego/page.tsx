@@ -1,8 +1,9 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
+import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
@@ -14,36 +15,30 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'kody-qr-w-materialach-reklamowych',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import Button from '@/components/ui/buttons/Button';
 
 export const metadata = {
-  title: 'Projekt papieru firmowego - Arteon',
-  description: 'Papier firmowy, który wzmacnia wizerunek w korespondencji. Szablony Word/PDF oraz wersje gotowe do druku.',
+  title: 'Projekt papieru firmowego | Arteon',
+  description: 'Papier firmowy z nagłówkiem i stopką. Szablony edytowalne (Word/PDF) oraz pliki do druku.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
   },
   openGraph: {
-    title: 'Projekt papieru firmowego - Arteon',
+    title: 'Projekt papieru firmowego | Arteon',
     description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     serviceName: 'Projekt papieru firmowego',
     description: 'Papier firmowy i szablony korespondencji: układ zgodny z identyfikacją, wersje do druku i PDF/DOC.',
@@ -59,15 +54,11 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignLetterheadPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
         title="Projekt papieru firmowego"
-        description={
-          <>Każda korespondencja może wzmacniać markę. Projektujemy papier firmowy z prawidłowymi szablonami Word/PDF i plikami do druku - czytelny, spójny i profesjonalny w codziennej pracy.</>
-        }
+        description={<>Projektujemy papier firmowy z szablonami Word/PDF i plikami do druku - czytelny i spójny z identyfikacją wizualną.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -128,27 +119,27 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Spójny wygląd korespondencji',
               description: <>Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i wiadomości.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Szablony do codziennej pracy',
               description: <>Otrzymujesz gotowe do użycia pliki w wersji do druku oraz praktyczne szablony elektroniczne.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dopasowanie danych i układu',
               description: <>Dbamy o czytelność, hierarchię informacji i zgodność z pozostałymi materiałami marki.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Szybka realizacja i poprawki',
               description: <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -267,7 +258,7 @@ export default function OfferDesignLetterheadPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego"
           title="Najczęstsze pytania o projekt papieru firmowego"
           items={[
             {
@@ -300,13 +291,54 @@ export default function OfferDesignLetterheadPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące materiałów firmowych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
+        <SectionSteps
+          title="Jak jeszcze możesz wzmocnić wizerunek w korespondencji?"
+          subtitle="Zobacz też"
+          description="Najlepszy efekt daje spójny system: papier firmowy, wizytówki, teczki i oferta, które razem budują doświadczenie klienta."
+          items={[
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Projekt wizytówki firmowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">
+                    Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu zauważy spójność co wzbudzi większe zaufanie i stworzy jeszcze bardziej profesjonalny wizerunek.
+                  </p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
+                      Zobacz projekt wizytówki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiBookOpenLine className="h-8 w-8" />,
+              title: 'Projekt teczki ofertowej',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta - od papieru po oprawę - staje się spójnym doświadczeniem dla klienta.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
+                      Zobacz projekt teczki
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        />
+
+        <Gap variant="line" />
+
+        <ServicesSteps />
 
         <Gap size="sm" />
       </Wrapper>
 
       <CTABanner
-        title="Zbuduj profesjonalny wizerunek w korespondencji"
+        title="Profesjonalny wygląd dokumentów"
         description="Stworzymy papier firmowy, który zwiększa zaufanie i profesjonalny wizerunek Twojej firmy."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
@@ -320,3 +352,5 @@ export default function OfferDesignLetterheadPage() {
     </>
   );
 }
+
+

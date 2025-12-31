@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -15,36 +15,28 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-];
 
 export const metadata = {
-  title: 'Projekt identyfikacji wizualnej - Arteon',
+  title: 'Projekt identyfikacji wizualnej | Arteon',
   description: 'Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Spójność w każdym punkcie styku.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   openGraph: {
-    title: 'Projekt identyfikacji wizualnej - Arteon',
+    title: 'Projekt identyfikacji wizualnej | Arteon',
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     serviceName: 'Projekt identyfikacji wizualnej',
     description: 'Kompletna identyfikacja: logo, paleta, typografia i wzory. Podstawowa księga znaku i spójność we wszystkich kanałach.',
@@ -60,8 +52,6 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignBrandIdentityDesignPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -159,27 +149,27 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Spójny system marki',
               description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały - online i offline - działały razem.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Materiały do codziennej komunikacji',
               description: <>Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i grafiki do prezentacji marki.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Proste zasady stosowania',
               description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie - także osobom nietechnicznym.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełna gotowość do druku i online',
               description: <>Otrzymujesz komplet plików do codziennej pracy: wersje do druku, internetu i mediów społecznościowych.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -277,7 +267,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
           items={[
             {
               question: 'Ile kosztuje identyfikacja wizualna?',
@@ -347,8 +337,8 @@ export default function OfferDesignBrandIdentityDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
-                    myślą o SEO i wyższej konwersji.
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
+                    o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
@@ -365,10 +355,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
-
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące identyfikacji wizualnej" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>
@@ -388,3 +374,5 @@ export default function OfferDesignBrandIdentityDesignPage() {
     </>
   );
 }
+
+

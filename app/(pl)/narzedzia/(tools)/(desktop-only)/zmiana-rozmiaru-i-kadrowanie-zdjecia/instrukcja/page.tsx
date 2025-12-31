@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -16,12 +16,12 @@ import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
-  title: 'Instrukcja zmiany rozmiaru i kadrowania zdjęć - Arteon',
-  description: 'Instrukcja narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować plik.',
+  title: 'Jak zmienić rozmiar zdjęcia online? | Kadrowanie do Instagram i Facebook',
+  description: 'Zmień rozmiar zdjęcia i wykadruj do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Darmowe narzędzie online z presetami social media, eksportem do JPG, PNG i WebP.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja') },
   openGraph: {
-    title: 'Instrukcja zmiany rozmiaru i kadrowania zdjęć - Arteon',
-    description: 'Szczegółowa instrukcja obsługi narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać preset, dopasować kadr i wyeksportować gotowy plik.',
+    title: 'Jak zmienić rozmiar zdjęcia online? | Kadrowanie do Instagram i Facebook',
+    description: 'Zmień rozmiar zdjęcia i wykadruj do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Darmowe narzędzie online z presetami social media, eksportem do JPG, PNG i WebP.',
     url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja'),
     type: 'website',
     images: [
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak używać narzędzia do zmiany rozmiaru i kadrowania zdjęcia',
-  description: 'Szczegółowa instrukcja obsługi narzędzia do kadrowania i zmiany rozmiaru zdjęć - od dodania obrazu po eksport w wybranym formacie.',
+  name: 'Jak zmienić rozmiar zdjęcia i wykadrować do social media',
+  description: 'Instrukcja zmiany rozmiaru zdjęcia i kadrowania do Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn i OG image. Presety social media, eksport do JPG, PNG i WebP.',
   url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja'),
   inLanguage: 'pl-PL',
   step: [
@@ -104,8 +104,8 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Jak używać narzędzia do zmiany rozmiaru i kadrowania zdjęcia"
-        description="Szczegółowa instrukcja obsługi narzędzia do kadrowania i zmiany rozmiaru zdjęć. Dowiedz się, jak dodać obraz, wybrać odpowiedni preset, dopasować kadr i wyeksportować gotowy plik."
+        title="Jak zmienić rozmiar zdjęcia i wykadrować do social media"
+        description="Zmień rozmiar zdjęcia do Instagram (post, story, reels), Facebook, LinkedIn i OG image. Instrukcja z gotowymi presetami, kadrowanie z siatką 3×3, eksport do JPG, PNG i WebP."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

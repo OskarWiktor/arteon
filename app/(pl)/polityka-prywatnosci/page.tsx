@@ -3,7 +3,7 @@ import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
-import { toAbsoluteUrl } from '@/lib/url';
+import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 export const metadata = {
   title: 'Polityka prywatności - Arteon',

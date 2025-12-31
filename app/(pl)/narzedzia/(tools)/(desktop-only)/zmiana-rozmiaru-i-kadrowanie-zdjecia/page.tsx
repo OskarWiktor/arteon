@@ -3,7 +3,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import ImageResizeTool from '@/components/sections/tools/ImageResizeTool';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
@@ -11,11 +11,11 @@ import Script from 'next/script';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
-  title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
+  title: 'Przygotuj zdjęcie pod Instagram, Facebook i stronę',
   description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia') },
   openGraph: {
-    title: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
+    title: 'Przygotuj zdjęcie pod Instagram, Facebook i stronę',
     description: 'Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.',
     url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
+  name: 'Przygotuj zdjęcie pod Instagram, Facebook i stronę',
   alternateName: 'Darmowe narzędzie do zmiany rozmiaru i kadrowania zdjęć online',
   url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia'),
   applicationCategory: 'UtilityApplication',
@@ -57,7 +57,7 @@ export default function ImageResizerPage() {
       <Script id="ld-json-image-resizer" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <HeroBanner
-        title="Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund"
+        title="Przygotuj zdjęcie pod Instagram, Facebook i stronę"
         description="Dopasuj zdjęcie do konkretnych wymiarów, proporcji lub gotowych formatów pod social media i WWW. Wszystko dzieje się w Twojej przeglądarce - plik nie jest nigdzie wysyłany."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
@@ -65,7 +65,7 @@ export default function ImageResizerPage() {
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzie' }}
-        third={{ href: `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`, label: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund' }}
+        third={{ href: `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`, label: 'Przygotuj zdjęcie pod Instagram, Facebook i stronę' }}
         includeJsonLd
       />
 

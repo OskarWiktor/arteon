@@ -4,24 +4,20 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine, RiQrCodeLine } from 'react-icons/ri';
-import { toAbsoluteUrl } from '@/lib/url';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla stron i firm online',
   description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepsz swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia') },
+  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia' },
   openGraph: {
     title: 'Darmowe narzędzia online dla stron i firm online',
     description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepsz swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-    url: toAbsoluteUrl('/narzedzia'),
+    url: 'https://www.arteonagency.pl/narzedzia',
     type: 'website',
     images: [
       {
-        url: toAbsoluteUrl('/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp'),
-        width: 1200,
-        height: 630,
-        alt: 'Narzędzia - Arteon',
+        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
       },
     ],
   },
@@ -39,7 +35,7 @@ const toolsJsonLd = {
       position: 1,
       name: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
       description: 'Konwerter JPG/PNG na WebP, który zmniejsza wagę zdjęć bez utraty jakości. Działa w całości w przeglądarce - bez wysyłania plików na serwer, bez logowania i bez limitu użycia.',
-      url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
+      url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -49,7 +45,7 @@ const toolsJsonLd = {
       name: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
       description:
         'Narzędzie do szybkiego kadrowania i zmiany rozmiaru zdjęć pod social media i strony WWW. Gotowe presety wymiarów, własne wymiary w pikselach oraz możliwość tworzenia okrągłych avatarów.',
-      url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia'),
+      url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -58,7 +54,7 @@ const toolsJsonLd = {
       position: 3,
       name: 'Darmowy generator favicon online',
       description: 'Generator favicon online, który z jednego obrazu tworzy favicon.ico oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.',
-      url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
+      url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -68,7 +64,7 @@ const toolsJsonLd = {
       name: 'Licznik długości meta title i meta description',
       description:
         'Licznik długości meta title i meta description z podglądem wyglądu w Google. Pomaga dopasować liczbę znaków, słów i szerokość w pikselach tak, aby tytuł i opis nie były ucinane w wynikach wyszukiwania.',
-      url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
+      url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
       applicationCategory: 'SEOApplication',
       operatingSystem: 'Any',
     },
@@ -78,7 +74,7 @@ const toolsJsonLd = {
       name: 'Darmowy generator stopki mailowej HTML',
       description:
         'Darmowy generator stopki mailowej HTML po polsku. Dodaj dane kontaktowe, link CTA i profile social mediów, a następnie skopiuj gotowy kod podpisu do Gmaila, Outlooka i innych klientów pocztowych.',
-      url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
+      url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -88,7 +84,7 @@ const toolsJsonLd = {
       name: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
       description:
         'Tester kontrastu kolorów online zgodny z WCAG 2.1. Oblicza współczynnik kontrastu między dwoma kolorami i pokazuje, czy para spełnia wymagania poziomów AA i AAA dla zwykłego i dużego tekstu oraz elementów UI.',
-      url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag'),
+      url: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -96,8 +92,9 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 7,
       name: 'Generator palety kolorów z obrazu',
-      description: 'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
-      url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
+      description:
+      'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+      url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -107,16 +104,7 @@ const toolsJsonLd = {
       name: 'Generator palet kolorów online z jednego koloru',
       description:
         'Generator palet kolorów online, który z jednego koloru bazowego buduje klasyczne schematy (monochromatyczne, triadyczne, analogiczne, komplementarne) oraz nowoczesne palety pastelowe, ciemne, tonalne i minimalistyczne inspirowane Material Design i Apple.',
-      url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online'),
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 9,
-      name: 'Darmowy generator kodu QR online',
-      description: 'Generator kodu QR online dla firm i materiałów drukowanych. Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG.',
-      url: toAbsoluteUrl('/narzedzia/generator-kodu-qr'),
+      url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -196,7 +184,7 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Gap size="sm" />
 
         <SectionSteps
           title="Meta i SEO"
@@ -222,7 +210,7 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Gap size="sm" />
 
         <SectionSteps
           title="E-mail i komunikacja"
@@ -248,7 +236,7 @@ export default function ToolsIndexPage() {
           ]}
         />
 
-        <Gap variant="line" />
+        <Gap size="sm" />
 
         <SectionSteps
           title="Kolory i dostępność"
@@ -314,37 +302,11 @@ export default function ToolsIndexPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Druk i materiały"
-          description="Narzędzia do przygotowania materiałów drukowanych i kodów QR."
-          grid="two"
-          items={[
-            {
-              icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Generator kodu QR',
-              topImageAlt: 'Generator kodu QR Arteon',
-              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>Stwórz kod QR do strony, wizytówki, menu lub ulotki. Wybierz typ danych (URL, vCard, e-mail, telefon), dostosuj kolory i rozmiar, pobierz gotowy plik PNG lub SVG.</p>
-                  <div className="mt-4">
-                    <Button arrow link="/narzedzia/generator-kodu-qr">
-                      Otwórz narzędzie
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-        />
-
-        <Gap variant="line" />
-
         <SectionInfo
           title="Jak korzystać z narzędzi Arteon?"
           description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci."
         >
-          <p className="text-light mt-4 text-xs">
+          <p className="mt-4 text-xs text-light">
             Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
             kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online.
           </p>
@@ -357,3 +319,5 @@ export default function ToolsIndexPage() {
     </>
   );
 }
+
+

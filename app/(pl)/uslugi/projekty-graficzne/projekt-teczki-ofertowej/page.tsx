@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -16,38 +16,30 @@ import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'kody-qr-w-materialach-reklamowych',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt teczki ofertowej - Arteon',
-  description: 'Teczka ofertowa podnosi prestiż spotkań i porządkuje dokumenty. Projekt spójny z identyfikacją wizualną Twojej marki.',
+  title: 'Projekt teczki ofertowej | Arteon',
+  description: 'Teczka ofertowa na dokumenty i materiały sprzedażowe. Projekt spójny z identyfikacją wizualną, pliki do druku.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
   },
   openGraph: {
-    title: 'Projekt teczki ofertowej - Arteon',
+    title: 'Projekt teczki ofertowej | Arteon',
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     serviceName: 'Projekt teczki ofertowej',
     description: 'Teczka firmowa spójna z identyfikacją: estetyka i funkcja, poprawne spady oraz makiety pod druk.',
@@ -63,8 +55,6 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignPresentationFolderPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -101,7 +91,7 @@ export default function OfferDesignPresentationFolderPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt teczki ofertowej?">
           <p>
-            <strong>Własna firmowa teczka buduje zaufanie i robi wrażenie od pierwszej sekundy.</strong> Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie marki
+            <strong>Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność materiałów.</strong> Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie marki
             oraz buduje jej autorytet. Materiały drukowane zostają w pamięci dłużej niż przekaz cyfrowy (mniejsze obciążenie poznawcze, wyższa zapamiętywalność)
             <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (Canada Post - neuromarketing)
@@ -141,27 +131,27 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Prestiż na każdym spotkaniu',
               description: <>Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie materiałów robi dobre wrażenie.</>,
-              icon: <RiFolderOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFolderOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale nawiązują do Twojej identyfikacji wizualnej, aby wszystkie materiały mówiły jednym językiem.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Przemyślane rozwiązania konstrukcyjne',
               description: <>Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka była trwała, wygodna i funkcjonalna w codziennym użyciu.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz od razu przekazać je do produkcji.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -280,7 +270,7 @@ export default function OfferDesignPresentationFolderPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej"
           title="Najczęstsze pytania o projekt teczki ofertowej"
           items={[
             {
@@ -347,10 +337,6 @@ export default function OfferDesignPresentationFolderPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące materiałów drukowanych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -369,3 +355,5 @@ export default function OfferDesignPresentationFolderPage() {
     </>
   );
 }
+
+

@@ -1,4 +1,4 @@
-﻿import Script from 'next/script';
+import Script from 'next/script';
 import { IoSparkles } from 'react-icons/io5';
 import {
   RiBarChart2Fill,
@@ -33,21 +33,12 @@ import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
 
-const RELATED_ARTICLE_SLUGS = [
-  'czym-jest-content-marketing',
-  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
-  'faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony',
-  'meta-title-i-description-jak-je-napisac',
-  'e-mail-marketing-dla-malych-firm',
-];
+const BASE = 'https://www.arteonagency.pl';
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/tworzenie-tresci',
     serviceName: 'Tworzenie treści',
     description: 'Treści dla stron, sklepów i blogów: oferty, artykuły, opisy produktów i microcopy - pod intencje użytkownika i SEO.',
@@ -63,26 +54,24 @@ function ServiceSchema() {
 }
 
 export const metadata = {
-  title: 'Tworzenie treści - strony, blogi, e-commerce - Arteon',
-  description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/tworzenie-tresci') },
+  title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
+  description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-tresci' },
   openGraph: {
-    title: 'Tworzenie treści - strony, blogi, e-commerce - Arteon',
-    description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły, opisy i treści sprzedażowe, które budują widoczność i zaufanie.',
-    url: toAbsoluteUrl('/uslugi/tworzenie-tresci'),
+    title: 'Tworzenie treści - strony, blogi, e-commerce | Arteon',
+    description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
+    url: `${BASE}/uslugi/tworzenie-tresci`,
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg6.webp') }],
+    images: [{ url: `${BASE}/assets/bg/abstract-bg6.webp` }],
   },
 } as const;
 
-export default function OfferContent() {
-  const articles = getAllArticlePreviews();
-
+export default function OfferContentPage() {
   return (
     <>
       <HeroBanner
         title="Tworzenie treści"
-        description={<>Przyciągnij nowych klientów poprzez treści, które trafiają idealnie do wymarzonych odbiorców</>}
+        description={<>Tworzymy artykuły, opisy produktów i treści na strony. Redakcja pod SEO i spójny język marki.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -110,35 +99,35 @@ export default function OfferContent() {
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileSearchLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className="h-6 w-6 text-slate-700" />,
+              icon: <IoSparkles className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiTeamLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -284,7 +273,7 @@ export default function OfferContent() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/tworzenie-tresci')}
+          pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-tresci"
           items={[
             {
               question: 'Ile czasu trwa przygotowanie treści?',
@@ -317,10 +306,6 @@ export default function OfferContent() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące tworzenia treści" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -336,3 +321,5 @@ export default function OfferContent() {
     </>
   );
 }
+
+

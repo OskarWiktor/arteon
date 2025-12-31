@@ -7,7 +7,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import { RiAppsLine, RiPantoneLine, RiShareForwardLine } from 'react-icons/ri';
-import { toAbsoluteUrl } from '@/lib/url';
+import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 export const metadata: Metadata = {
   title: 'Dołącz do sieci Arteon',

@@ -93,7 +93,349 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Dodano pomysły wspierające klaster usług `/uslugi/projekty-graficzne` (projekty graficzne) + uporządkowano brakujące nagłówki w sekcji „Pomysły".
     - Dodane ID: `IDEA-048`, `IDEA-049`, `IDEA-050`, `IDEA-051`, `IDEA-052`, `IDEA-053`.
 
+- ✅ **[AUDIT-017] Repo: audyt nazw plików (logika/core/utils/hooks/components)**
+
+  - Cel:
+    - Zidentyfikować pliki z niejasnymi/generycznymi nazwami i przygotować listę zmian.
+  - Zakres:
+    - `app/`, `components/`, `lib/`, `utils/`, `hooks/`, `types/`
+  - Kryteria oceny:
+    - Nazwa mówi, co plik robi
+    - Nazwa odróżnia typ (komponent vs util vs hook)
+    - Nazwa jest spójna z resztą repo
+  - Raportowanie:
+    - Wynik audytu → zadanie `REFACTOR-001` do wdrożenia.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+  - **Zrobione 2025-12-30**:
+
+    - Przejrzano całą strukturę katalogów: `lib/`, `utils/`, `hooks/`, `components/`, `types/`.
+    - Zidentyfikowano **10 plików** z niejasnymi/generycznymi nazwami do zmiany.
+    - Utworzono zadanie `REFACTOR-001` z pełną listą zmian i planem migracji.
+    - Zidentyfikowano pliki OK (hooki, komponenty UI, typy) — zgodne ze standardem.
+
+- ✅ **[REFACTOR-001] Repo: zmiana nazw plików z niejasnymi nazwami + aktualizacja importów**
+
+  - Cel:
+    - Zmienić nazwy plików zidentyfikowanych w AUDIT-017 i poprawić wszystkie importy.
+  - Lista zmian (wykonane):
+    1. `lib/site.ts` → `lib/siteKeyDetection.ts` (funkcje do wykrywania klucza strony z domeny)
+    2. `lib/url.ts` → `lib/absoluteUrl.ts` (funkcje do budowania absolutnych URL-i)
+    3. `lib/blog.ts` → `lib/blogDataService.ts` (serwis do pobierania artykułów)
+    4. `lib/projects.ts` → `lib/projectsDataService.ts` (serwis do pobierania projektów)
+    5. `lib/consent/storage.ts` → `lib/consent/consentCookie.ts` (obsługa cookie zgody)
+    6. `utils/slug.ts` → `utils/slugify.ts` (funkcja slugify)
+  - Pliki zachowane bez zmian (uzasadnienie):
+    - `components/ui/Gap.tsx` — standardowa nazwa w ekosystemie React (jak Box, Stack)
+    - `components/ui/Wrapper.tsx` — powszechnie używana nazwa dla kontenerów
+    - `components/ui/Link.tsx` — już istnieje `AppLink.tsx`, Link nie był używany
+    - `components/sections/projects/Filters.tsx` — kontekst katalogu wystarczający
+  - Kryteria akceptacji:
+    - Wszystkie importy zaktualizowane.
+    - `npm run lint` i `npm run build` przechodzą.
+    - Brak broken imports.
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+  - **Zrobione 2025-12-31**:
+
+    - Zmieniono nazwy 6 plików.
+    - Zaktualizowano importy w ~100 plikach.
+    - `npm run lint` i `npm run build` przechodzą.
+    - Zaktualizowano INSTRUCTIONS.md o standard nazewnictwa plików.
+
 - 🟡 **[AUDIT-007] Repo: audyt prawdziwości informacji i źródeł w istniejących artykułach**
+
+- ✅ **[CONTENT-025] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (1/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne z zasadami ZERO DOPISAŃ. Źródła poprawne, brak twierdzeń wprowadzających w błąd.
+
+  - Artykuły do weryfikacji:
+    1. `czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`
+    2. `efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`
+    3. `czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`
+  - Zakres weryfikacji (wg sekcji ZERO DOPISAŃ — ZERO NIEPRAWDY):
+    - Czy artykuł zawiera przykłady hipotetyczne bez oznaczenia?
+    - Czy artykuł wspomina o cenach/promocjach bez uwzględnienia Omnibus?
+    - Czy artykuł wspomina o danych użytkowników bez uwzględnienia RODO?
+    - Czy artykuł zawiera twierdzenia, które mogą wprowadzać w błąd?
+  - Kryteria akceptacji:
+    - Przykłady hipotetyczne oznaczone: `*(przykład hipotetyczny — nie oparty o dane historyczne)*`
+    - Treści o cenach/promocjach zgodne z Omnibus (30 dni)
+    - Treści o prywatności zgodne z RODO
+    - Brak twierdzeń wprowadzających w błąd
+    - Zaktualizowane `dateModified` dla zmienionych artykułów
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-026] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (2/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne. Artykuł o kontraście WZORCOWY — prawidłowo cytuje EU directives i polskie prawo.
+
+  - Artykuły do weryfikacji:
+    1. `mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec`
+    2. `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`
+    3. `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-027] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (3/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne. RODO prawidłowo omówione w email-marketing i co-sprawdzic-przed-uruchomieniem.
+
+  - Artykuły do weryfikacji:
+    1. `czym-jest-content-marketing`
+    2. `e-mail-marketing-dla-malych-firm`
+    3. `co-sprawdzic-przed-uruchomieniem-strony`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-028] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (4/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne. Źródła: MIT, Think with Google.
+
+  - Artykuły do weryfikacji:
+    1. `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`
+    2. `jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+    3. `jak-mierzyc-skutecznosc-strony-internetowej`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-029] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (5/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne. Źródła: StatCounter, Google Search Central, WCAG 2.1, Baymard Institute.
+
+  - Artykuły do weryfikacji:
+    1. `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+    2. `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+    3. `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-030] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (6/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne. Źródła: ScienceDirect, MarketingProfs, Journal of Consumer Research, Lucidpress.
+
+  - Artykuły do weryfikacji:
+    1. `meta-title-i-description-jak-je-napisac`
+    2. `materialy-drukowane-dla-firmy-ktore-zamowic`
+    3. `kody-qr-w-materialach-reklamowych`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-031] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (7/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne.
+
+  - Artykuły do weryfikacji:
+    1. `jak-dobrac-kolory-do-strony-internetowej`
+    2. `jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+    3. `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-032] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (8/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne.
+
+  - Artykuły do weryfikacji:
+    1. `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+    2. `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+    3. `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-033] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (9/10)**
+
+  - **Zrobione 2025-12-30**: Wszystkie 3 artykuły zgodne. Artykuł o pisaniu treści SEO szczegółowo omawia E-E-A-T.
+
+  - Artykuły do weryfikacji:
+    1. `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+    2. `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+    3. `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[CONTENT-034] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne (10/10)**
+
+  - **Zrobione 2025-12-30**: Ostatni artykuł zgodny.
+
+  - Artykuły do weryfikacji:
+    1. `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+  - Zakres weryfikacji: jak w CONTENT-025
+  - Kryteria akceptacji: jak w CONTENT-025
+  - Weryfikacja: nie jest wymagana (content-only).
+
+- ✅ **[VERIFY-001] Blog: weryfikacja merytoryczna i prawna — efekt zakotwiczenia + paradoks wyboru**
+
+  - **Zrobione 2025-12-31**:
+    - **efekt-zakotwiczenia**: Naprawiono KRYTYCZNY BŁĄD — usunięto fałszywe twierdzenie "Klient nie wie, czy telewizor kiedykolwiek kosztował 4999 zł" (niezgodne z Dyrektywą Omnibus). Dodano informację o wymogu podania najniższej ceny z 30 dni + źródło UOKiK + oznaczono przykład jako hipotetyczny.
+    - **paradoks-wyboru**: Artykuł merytorycznie poprawny, źródła podane (Iyengar & Lepper 2000, Schwartz).
+    - `dateModified` zaktualizowane.
+    - `npm run lint` OK, `npm run build` OK.
+
+  - Artykuły do weryfikacji:
+    1. `efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`
+    2. `czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`
+  - Zakres weryfikacji:
+    - Zgodność z prawem polskim (Omnibus, RODO, ustawa o prawach konsumenta)
+    - Poprawność faktów o psychologii i ekonomii
+    - Brak twierdzeń fałszywych lub wprowadzających w błąd
+    - Źródła dla wszystkich statystyk i badań
+  - Kryteria akceptacji:
+    - Wszystkie fragmenty dot. cen promocyjnych uwzględniają wymóg Omnibus (najniższa cena z 30 dni)
+    - Przykłady cenowe oznaczone jako hipotetyczne lub zgodne z prawem
+    - Brak twierdzeń sugerujących, że klient nie ma dostępu do informacji o cenach (bo ma — Omnibus)
+    - Zaktualizowane `dateModified`
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-002] Blog: weryfikacja merytoryczna i prawna — social-proof + mapa-strony**
+
+  - **Zrobione 2025-12-31**: Oba artykuły merytorycznie poprawne. Źródła: Cialdini, BrightLocal 2023, Google Search Console.
+
+  - Artykuły do weryfikacji:
+    1. `czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`
+    2. `mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-003] Blog: weryfikacja merytoryczna i prawna — linkowanie-wewnetrzne + kontrast-kolorow**
+
+  - **Zrobione 2025-12-31**: Oba artykuły merytorycznie poprawne. Źródła: WCAG 2.1, EU directive 2016/2102.
+
+  - Artykuły do weryfikacji:
+    1. `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`
+    2. `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-004] Blog: weryfikacja merytoryczna i prawna — content-marketing + email-marketing**
+
+  - **Zrobione 2025-12-31**: Oba artykuły merytorycznie poprawne. RODO prawidłowo omówione. Źródła: DMA, Campaign Monitor 2023.
+
+  - Artykuły do weryfikacji:
+    1. `czym-jest-content-marketing`
+    2. `e-mail-marketing-dla-malych-firm`
+  - Zakres weryfikacji: jak w VERIFY-001 (szczególna uwaga na RODO w email-marketing)
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-005] Blog: weryfikacja merytoryczna i prawna — co-sprawdzic + grafika-social-media**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne.
+
+  - Artykuły do weryfikacji:
+    1. `co-sprawdzic-przed-uruchomieniem-strony`
+    2. `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-006] Blog: weryfikacja merytoryczna i prawna — domena-hosting + mierzenie-skutecznosci**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne.
+
+  - Artykuły do weryfikacji:
+    1. `jak-wybrac-domene-i-hosting-dla-strony-firmowej`
+    2. `jak-mierzyc-skutecznosc-strony-internetowej`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-007] Blog: weryfikacja merytoryczna i prawna — google-moja-firma + responsywnosc**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne. Źródła: StatCounter, Google.
+
+  - Artykuły do weryfikacji:
+    1. `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`
+    2. `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-008] Blog: weryfikacja merytoryczna i prawna — ssl + meta-title-description**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne.
+
+  - Artykuły do weryfikacji:
+    1. `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`
+    2. `meta-title-i-description-jak-je-napisac`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-009] Blog: weryfikacja merytoryczna i prawna — materialy-drukowane + kody-qr**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne.
+
+  - Artykuły do weryfikacji:
+    1. `materialy-drukowane-dla-firmy-ktore-zamowic`
+    2. `kody-qr-w-materialach-reklamowych`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-010] Blog: weryfikacja merytoryczna i prawna — identyfikacja-wizualna + kolorystyka**
+
+  - **Zrobione 2025-12-31**:
+    - **jak-dobrac-kolory**: Usunięto statystykę bez źródła ("20-30% różnicy w konwersji") — zastąpiono ogólniejszym stwierdzeniem zgodnym z zasadami ZERO DOPISAŃ.
+    - Pozostałe artykuły merytorycznie poprawne, źródła podane.
+    - `dateModified` zaktualizowane.
+    - `npm run lint` OK, `npm run build` OK.
+
+  - Artykuły do weryfikacji:
+    1. `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+    2. `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-011] Blog: weryfikacja merytoryczna i prawna — faq-seo + czas-pozycjonowania**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne.
+
+  - Artykuły do weryfikacji:
+    1. `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`
+    2. `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-012] Blog: weryfikacja merytoryczna i prawna — blog-dla-firm + optymalizacja-zdjec**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne.
+
+  - Artykuły do weryfikacji:
+    1. `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`
+    2. `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-013] Blog: weryfikacja merytoryczna i prawna — pisanie-tresci-seo + kolorystyka-strony**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne. Naprawiono błąd w `jak-dobrac-kolory` (statystyka bez źródła).
+
+  - Artykuły do weryfikacji:
+    1. `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+    2. `jak-dobrac-kolory-do-strony-internetowej`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-014] Blog: weryfikacja merytoryczna i prawna — sklep-pozycjonowanie + widocznosc-google**
+
+  - **Zrobione 2025-12-31**: Artykuły merytorycznie poprawne.
+
+  - Artykuły do weryfikacji:
+    1. `jak-przygotowac-sklep-internetowy-do-pozycjonowania`
+    2. `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
+
+- ✅ **[VERIFY-015] Blog: weryfikacja merytoryczna i prawna — pozostałe artykuły**
+
+  - **Zrobione 2025-12-31**: Wszystkie artykuły zweryfikowane. Wykryto i naprawiono 2 błędy (patrz VERIFY-001 i VERIFY-010).
+
+  - Artykuły do weryfikacji: wszystkie pozostałe artykuły w `data/pl/blog.json`
+  - Zakres weryfikacji: jak w VERIFY-001
+  - Weryfikacja: `npm run lint`, `npm run build`.
 
 - 🟡 **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
 
@@ -533,6 +875,57 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Kryteria akceptacji:
     - Powyższe pola są uzupełnione i spójne semantycznie.
     - `npm run lint` i `npm run build` przechodzą.
+
+- 🟡 **[TOOLS-030] Generator stopki mailowej: pełna weryfikacja działania narzędzia**
+
+  - Cel:
+    - Przeprowadzić pełną weryfikację UI, UX, logiki generowania HTML, kopiowania i pobierania.
+    - Zidentyfikować wszystkie błędy i braki do naprawy.
+  - Zakres weryfikacji:
+    - **UI/UX**: responsywność paneli, czytelność etykiet, spójność z resztą narzędzi.
+    - **Logo/Avatar**: czy upload URL działa poprawnie, czy obraz wyświetla się w podglądzie i wygenerowanym HTML.
+    - **Kolory**: czy system kolorów (akcent, tekst, tło) działa poprawnie; czy motywy aplikują kolory; czy personalizacja per-element jest możliwa.
+    - **Generowanie HTML**: czy wygenerowany kod jest poprawny, kompatybilny z Gmail/Outlook, responsywny.
+    - **Kopiowanie**: czy kopiowanie do schowka działa w różnych przeglądarkach.
+    - **Układy**: czy wszystkie 5 layoutów (standard, accent-bar, top-banner, label-column, centered) renderuje się poprawnie.
+  - Pliki do sprawdzenia:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `components/sections/tools/EmailSignatureGenerator/useSignatureCopy.ts`
+    - `components/sections/tools/EmailSignatureGenerator/sanitize.ts`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+  - Raportowanie:
+    - Wynik weryfikacji zapisz pod tym zadaniem z listą wykrytych problemów.
+    - Dla każdego problemu utwórz osobne zadanie `TOOLS-*` z kryteriami akceptacji.
+  - Weryfikacja: nie jest wymagana (AUDIT-only).
+
+  - **Zrobione 2025-12-30 — wyniki diagnozy**:
+
+    - **Logo/Avatar — PROBLEMY**:
+      - ❌ Brak podglądu miniaturki — użytkownik wkleja URL, ale nie widzi czy obraz jest poprawny.
+      - ❌ Brak walidacji URL — nie ma sprawdzenia czy URL prowadzi do rzeczywistego obrazu.
+      - ❌ Brak komunikatu błędu — gdy URL jest niepoprawny, użytkownik nie dostaje feedbacku.
+      - ➡️ Naprawa w: `TOOLS-031`
+
+    - **Kolory — PROBLEMY**:
+      - ❌ Tylko 3 kolory globalne: `accentColor`, `textColor`, `backgroundColor`.
+      - ❌ Brak personalizacji per-element — wszystkie teksty używają tego samego `textColor`.
+      - ❌ Linki, social, CTA — wszystkie używają `accentColor`, brak osobnych ustawień.
+      - ➡️ Naprawa w: `TOOLS-032`
+
+    - **Instrukcja vs UI — ROZBIEŻNOŚCI**:
+      - ❌ Instrukcja mówi "Standard (14 px)", ale kod używa `normal: '13px'`.
+      - ➡️ Naprawa w: `TOOLS-043`
+
+    - **HTML i kopiowanie — OK**:
+      - ✅ Kopiowanie działa przez `execCommand('copy')` + fallback do `navigator.clipboard`.
+      - ✅ HTML jest generowany poprawnie z tabelami.
+
+    - **Layouty — OK**:
+      - ✅ Wszystkie 5 layoutów (standard, accent-bar, top-banner, label-column, centered) renderuje się poprawnie.
+
+    - **Zadania follow-up utworzone**: `TOOLS-033` do `TOOLS-043` (bez TOOLS-040), `TEST-001` do `TEST-003`.
+    - **Ukończone**: `TOOLS-031`, `TOOLS-032` → przeniesione do `DONE_TASKS.md`.
 
 ---
 
@@ -1015,12 +1408,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Uzasadnienie: Porównanie z danymi o konwersji.
 
 ### Psychologia i Marketing (7 tematów)
-
-54. ✅ **Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?**
-
-    - Kategoria: Psychologia, Marketing
-    - Uzasadnienie: Fundamentalna zasada psychologii społecznej w marketingu.
-    - Status: Zrealizowane 2025-12-26
 
 55. ❌ **Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?**
 

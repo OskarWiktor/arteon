@@ -1,4 +1,4 @@
-﻿import HeroBanner from '@/components/sections/HeroBanner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
@@ -18,26 +18,25 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
 
 export const metadata = {
-  title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań - Arteon',
+  title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
   description: 'Długofalowe pozycjonowanie stron: plan treści, porządek na stronie i bezpieczne linki. Comiesięczny raport i jasne priorytety działań.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron' },
   openGraph: {
-    title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań - Arteon',
+    title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
-    url: toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron'),
+    url: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg6.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg6.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/marketing/pozycjonowanie-stron',
     serviceName: 'Pozycjonowanie stron',
     description: 'Stała współpraca SEO dla stron firmowych: strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc i jasne priorytety.',
@@ -52,18 +51,7 @@ function ServiceSchema() {
   );
 }
 
-const RELATED_ARTICLE_SLUGS = [
-  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
-  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
-  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
-  'ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty',
-  'meta-title-i-description-jak-je-napisac',
-  'faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony',
-];
-
 export default function OfferSeoSubscription() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -136,7 +124,7 @@ export default function OfferSeoSubscription() {
             {
               title: 'Strategia treści',
               description: <>Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie treści, budując Twoją widoczność tam, gdzie szukają Cię klienci.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Poprawa kluczowych podstron (on-page)',
@@ -146,17 +134,17 @@ export default function OfferSeoSubscription() {
                   użytkowników.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
               description: <>Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły branżowe, katalogi), dzięki temu autorytet Twojej witryny rośnie</>,
-              icon: <RiLinksFill className="h-6 w-6 text-slate-700" />,
+              icon: <RiLinksFill className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Monitoring i raport co miesiąc',
               description: <>Sprawdzamy widoczność, wejścia z Google i zapytania z WWW. Dostajesz prosty raport i rekomendacje na kolejny miesiąc.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-700" />,
+              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -346,7 +334,7 @@ export default function OfferSeoSubscription() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/marketing/pozycjonowanie-stron')}
+          pageUrl="https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron"
           items={[
             {
               question: 'Ile trwa pozycjonowanie i kiedy widać efekty?',
@@ -376,10 +364,6 @@ export default function OfferSeoSubscription() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące pozycjonowania" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -396,3 +380,5 @@ export default function OfferSeoSubscription() {
     </>
   );
 }
+
+

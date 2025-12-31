@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -15,38 +15,30 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'kody-qr-w-materialach-reklamowych',
-  'jak-dobrac-kolory-do-strony-internetowej',
-];
 
 export const metadata = {
-  title: 'Projekt ulotki - Arteon',
-  description: 'Ulotka, która przyciąga uwagę i kieruje do kontaktu lub zakupu. Projekt dopasowany do Twojej oferty i lokalnych działań.',
+  title: 'Projekt ulotki | Arteon',
+  description: 'Projekt ulotki reklamowej z układem, typografią i grafiką. Pliki do druku (CMYK) oraz wersja cyfrowa.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
   },
   openGraph: {
-    title: 'Projekt ulotki - Arteon',
+    title: 'Projekt ulotki | Arteon',
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-ulotki',
     serviceName: 'Projekt ulotki',
     description: 'Skuteczne ulotki reklamowe: jasne CTA, czytelna hierarchia, formaty pod druk i wersje cyfrowe.',
@@ -62,13 +54,11 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignFlyerPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
         title="Projekt ulotki"
-        description={<>Dotarcie lokalne zaczyna się od jasnego przekazu. Tworzymy ulotki, które przyciągają uwagę, wyjaśniają ofertę w kilka sekund i prowadzą prosto do kontaktu lub zakupu.</>}
+        description={<>Tworzymy ulotki reklamowe z jasnym przekazem i czytelnym układem. Pliki do druku (CMYK) oraz wersja cyfrowa.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -143,27 +133,27 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Jasny przekaz i mocne wezwanie do działania',
               description: <>Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Format dopasowany do celu',
               description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w dystrybucji.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
               description: <>Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w internecie lub mailingu.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dopracowanie detali',
               description: <>W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki Twojej oferty.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -282,7 +272,7 @@ export default function OfferDesignFlyerPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki"
           title="Najczęstsze pytania o projekt ulotki"
           items={[
             {
@@ -354,10 +344,6 @@ export default function OfferDesignFlyerPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące ulotek" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -376,3 +362,5 @@ export default function OfferDesignFlyerPage() {
     </>
   );
 }
+
+

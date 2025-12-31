@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -19,35 +19,27 @@ import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'kody-qr-w-materialach-reklamowych',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-];
 
 export const metadata = {
-  title: 'Projekt wizytówki - Arteon',
-  description: 'Projekt wizytówki firmowej, która wyjaśnia ofertę w kilka sekund i buduje zaufanie od pierwszego spojrzenia. Pliki źródłowe i gotowe do druku.',
+  title: 'Projekt wizytówki | Arteon',
+  description: 'Projekt wizytówki firmowej z danymi kontaktowymi i ofertą. Pliki źródłowe (AI/PDF) oraz wersje gotowe do druku.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
   },
   openGraph: {
-    title: 'Projekt wizytówki - Arteon',
+    title: 'Projekt wizytówki | Arteon',
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-wizytowki',
     serviceName: 'Projekt wizytówki',
     description: 'Czytelne, eleganckie wizytówki spójne z identyfikacją marki. Pliki do druku + wersje do użycia w sieci.',
@@ -63,13 +55,11 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignBusinessCardPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
         title="Projekt wizytówki"
-        description={<>Zadbaj o dobre pierwsze wrażenie. Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie, gotowe do druku.</>}
+        description={<>Projektujemy wizytówki dopasowane do swojej marki - czytelne, eleganckie, gotowe do druku. Pliki źródłowe i wersje do druku.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -133,22 +123,22 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Czytelny układ i profesjonalny wygląd',
               description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Otrzymujesz pliki przygotowane do druku</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
-              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki aby zachować spójność wizerunku.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              description: <>Dopasowujemy kolory, typografię i styl do swojej marki, aby zachować spójność wizerunku.</>,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -248,7 +238,7 @@ export default function OfferDesignBusinessCardPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
           title="Najczęstsze pytania o projekt wizytówki"
           items={[
             {
@@ -319,10 +309,6 @@ export default function OfferDesignBusinessCardPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące wizytówek" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -341,3 +327,5 @@ export default function OfferDesignBusinessCardPage() {
     </>
   );
 }
+
+

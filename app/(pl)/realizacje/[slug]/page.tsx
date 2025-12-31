@@ -1,4 +1,4 @@
-﻿import { notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -9,7 +9,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 
 import projectsData from '@/data/pl/projects.json';
 import type { Project } from '@/types/project';
-import { toAbsoluteUrl } from '@/lib/url';
+import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 import TableOfContents from '@/components/sections/TableOfContent';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';

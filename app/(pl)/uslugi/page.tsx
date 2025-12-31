@@ -1,20 +1,8 @@
-﻿import HeroBanner from '@/components/sections/HeroBanner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import { toAbsoluteUrl } from '@/lib/url';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'co-sprawdzic-przed-uruchomieniem-strony',
-  'jak-wybrac-domene-i-hosting-dla-strony-firmowej',
-  'czym-jest-content-marketing',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
-  'jak-mierzyc-skutecznosc-strony-internetowej',
-];
 import {
   RiFileList2Line,
   RiSearchEyeLine,
@@ -36,6 +24,8 @@ import {
   RiPriceTag3Line,
   RiRestaurant2Line,
 } from 'react-icons/ri';
+
+const siteUrl = 'https://www.arteonagency.pl';
 
 const SERVICES = [
   { name: 'Strony internetowe', path: '/uslugi/strony-internetowe' },
@@ -62,22 +52,24 @@ const SERVICES = [
 ] as const;
 
 export const metadata = {
-  title: 'Usługi - strony, sklepy, grafika i marketing - Arteon',
-  description: 'Kompleksowa oferta usług: strony, sklepy, blogi, projekty graficzne, treści i marketing. Wszystko w jednym miejscu.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi') },
+  title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+  description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi' },
   openGraph: {
-    title: 'Usługi - strony, sklepy, grafika i marketing - Arteon',
-    description: 'Kompleksowa oferta usług: strony, sklepy, blogi, projekty graficzne, treści i marketing. Wszystko w jednym miejscu.',
-    url: toAbsoluteUrl('/uslugi'),
+    title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+    description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+    url: `${siteUrl}/uslugi`,
     type: 'website',
     // TODO: Add unique OpenGraph image for services page: /assets/og/uslugi.webp (1200x630px)
-    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp') }],
+    images: [
+      {
+        url: `${siteUrl}/assets/bg/abstract-bg12.webp`,
+      },
+    ],
   },
 } as const;
 
 export default function OfferPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner backgroundImage="/assets/bg/abstract-bg12.webp" overlay="black" title="Nasze usługi" variant="center" />
@@ -297,8 +289,8 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe
-                    do edycji i eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
+                    eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
@@ -546,10 +538,6 @@ export default function OfferPage() {
           ]}
         />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -559,18 +547,19 @@ export default function OfferPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
-            '@id': `${toAbsoluteUrl('/uslugi')}#collection`,
-            name: 'Usługi - witryny, projekty graficzne i marketing - Arteon',
-            description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
-            url: toAbsoluteUrl('/uslugi'),
+            '@id': `${siteUrl}/uslugi#collection`,
+            name: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+            description:
+              'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+            url: `${siteUrl}/uslugi`,
             mainEntity: {
               '@type': 'ItemList',
-              '@id': `${toAbsoluteUrl('/uslugi')}#itemlist`,
+              '@id': `${siteUrl}/uslugi#itemlist`,
               itemListOrder: 'https://schema.org/ItemListOrderAscending',
               itemListElement: SERVICES.map((s, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
-                url: toAbsoluteUrl(s.path),
+                url: `${siteUrl}${s.path}`,
                 name: s.name,
               })),
             },

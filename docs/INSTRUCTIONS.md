@@ -6,6 +6,7 @@
 - [Źródła kontekstu (katalogi)](#źródła-kontekstu-katalogi)
 - [Zasady ogólne (zawsze)](#zasady-ogólne-zawsze)
 - [Instrukcje operacyjne](#instrukcje-operacyjne)
+  - [Kodowanie plików — UTF-8](#kodowanie-plików--utf-8-obowiązkowo-aktualizacja-2025-12-31)
 - [Definition of Done (dla każdego zadania)](#definition-of-done-dla-każdego-zadania)
 - [Instrukcje: Treści i artykuły](#instrukcje-treści-i-artykuły)
 
@@ -47,6 +48,32 @@ Ostatnia weryfikacja statusów w kodzie: **2025-12-15**
 - Refaktory nie mają zmieniać UI/UX ani treści.
 - Na etapie „porządkowania” zachowujemy klasy Tailwinda 1:1 (chyba że zadanie mówi inaczej).
 - Content renderer: wspólny `HTMLContent` + wspólny `RenderBlocks` (warianty dla typów danych).
+
+### Standard nazewnictwa plików (aktualizacja 2025-12-31)
+
+Każdy plik z kodem źródłowym musi mieć nazwę jasno wskazującą jego przeznaczenie i typ.
+
+**Konwencje nazewnictwa:**
+
+- **Komponenty React** (`components/`): `PascalCase.tsx` — nazwa = nazwa eksportowanego komponentu (np. `Button.tsx`, `HeroBanner.tsx`)
+- **Hooki** (`hooks/`): `useCamelCase.ts` — prefiks `use` + opisowa nazwa (np. `useEscapeKey.ts`, `useFocusTrap.ts`)
+- **Serwisy danych** (`lib/`): `camelCaseDataService.ts` — sufiks `DataService` dla plików pobierających dane (np. `blogDataService.ts`, `projectsDataService.ts`)
+- **Utile** (`utils/`, `lib/tools/`): `camelCase.ts` — nazwa funkcji głównej lub opisowa (np. `slugify.ts`, `colorConvert.ts`)
+- **Typy** (`types/`): `camelCase.ts` — nazwa domeny (np. `article.ts`, `project.ts`)
+- **Konfiguracja** (`lib/config/`): `camelCase.ts` — nazwa modułu konfiguracji
+
+**Zakazane nazwy (zbyt generyczne):**
+
+- ❌ `helper.ts`, `helpers.ts`, `utils.ts` (bez kontekstu)
+- ❌ `index.ts` jako barrel export (chyba że to root pakietu)
+- ❌ `data.ts`, `types.ts` (bez prefiksu domeny)
+
+**Checklist przed utworzeniem pliku:**
+
+1. Czy nazwa mówi, co plik robi? (nie gdzie jest)
+2. Czy nazwa odróżnia typ pliku? (komponent vs hook vs util)
+3. Czy nazwa jest spójna z istniejącymi plikami w katalogu?
+4. Czy eksportowana funkcja/komponent ma nazwę zgodną z nazwą pliku?
 
 ### UI / styl (spójność serwisu)
 
@@ -106,6 +133,43 @@ Ostatnia weryfikacja statusów w kodzie: **2025-12-15**
 
   - w treści preferuj zwykłe cudzysłowy ASCII `"` (żeby uniknąć problemów z automatycznymi edycjami),
   - a jeśli musisz wyszukiwać/patchować fragment z `„”` w parametrach narzędzi (tool-call JSON), używaj escape: `\u201e` (dla `„`) i `\u201d` (dla `”`) zamiast wklejać znaki bezpośrednio.
+
+### Kodowanie plików — UTF-8 (obowiązkowo, aktualizacja 2025-12-31)
+
+Wszystkie pliki tekstowe w repo MUSZĄ być zapisane w kodowaniu **UTF-8 bez BOM**.
+
+**Zasady:**
+
+1. **Nowe teksty**: mogą być dodawane do repo TYLKO w UTF-8. Niedopuszczalne są inne kodowania (Windows-1250, ISO-8859-2, CP1252 itp.).
+
+2. **Polskie znaki**: używaj prawidłowych polskich znaków diakrytycznych: `ą, ę, ć, ł, ń, ó, ś, ź, ż` (oraz wielkie: `Ą, Ę, Ć, Ł, Ń, Ó, Ś, Ź, Ż`).
+
+3. **Błędne znaki (ZABLOKOWANE)**: jeśli w tekście pojawiają się znaki typu `ê, ³, ¹, æ, œ, ¿, Ÿ, ñ, £` zamiast polskich — **commit jest ZABLOKOWANY**. Te znaki powstają z błędnej konwersji Windows-1250 → UTF-8.
+
+**Mapowanie błędnych znaków na poprawne:**
+
+| Błędny | Poprawny |
+|--------|----------|
+| `¹` | `ą` |
+| `ê` | `ę` |
+| `³` | `ł` |
+| `œ` | `ś` |
+| `¿` | `ż` |
+| `Ÿ` | `ź` |
+| `æ` | `ć` |
+| `ñ` | `ń` |
+| `£` | `Ł` |
+
+**Checklist redakcyjna przed commit (dla plików z tekstem polskim):**
+
+- [ ] Czy polskie znaki są prawidłowe? (nie ma `ê, ³, ¹, æ, œ, ¿`)
+- [ ] Czy plik jest zapisany jako UTF-8?
+- [ ] Czy w pliku nie ma BOM (Byte Order Mark)?
+
+**Konfiguracja wymuszająca UTF-8:**
+
+- `.editorconfig` — wymusza `charset = utf-8` dla wszystkich plików
+- `.gitattributes` — wymusza `working-tree-encoding=UTF-8` dla plików źródłowych
 
 - Przed zadaniem, które dotyka komponentów/hooków/narzędzi/stron/artykułów, możesz (i warto) szybko sprawdzić odpowiedni plik katalogu (`*_CATALOG.md`), żeby być zaznajomionym z istniejącymi elementami i nie dublować rozwiązań.
 
@@ -421,6 +485,47 @@ Dla każdego zadania:
   - „To nie jest cos, co przyciaga tlumy" — deprecjonuje temat zamiast go wyjasniać
   Zamiast tego: przejdz do konkretow. Jesli cos ma ograniczone zastosowanie, opisz dla kogo jest przydatne i dlaczego.
 
+- **🚨 ZAKAZ CHAMSKIEGO, NACHALNEGO I POUCZAJĄCEGO TONU (OBOWIĄZKOWO, aktualizacja 2025-12-31)**:
+
+  Treści Arteon mają być **mentorskie, życzliwe i pomocne** — nigdy nie mogą brzmieć jak pouczanie, karcenie, wyśmiewanie lub deprecjonowanie czytelnika. Ton ma budować zaufanie, nie dystans.
+
+  **Zakazane konstrukcje i formy:**
+
+  | Zakazana forma | Dlaczego jest zła | Zamiennik |
+  |----------------|-------------------|-----------|
+  | „To nie jest X, tylko Y" | Brzmienie korekcyjne, jakby czytelnik się mylił | „Y oznacza..." (neutralne wyjaśnienie) |
+  | „Wbrew pozorom..." | Sugeruje, że czytelnik ma błędne wyobrażenie | „W praktyce..." lub po prostu wyjaśnij |
+  | „Nie chodzi o X, chodzi o Y" | Ton poprawiania | „Kluczowe jest Y" |
+  | „To częsty błąd" (bez kontekstu) | Może brzmieć oskarżająco | „Wiele osób zaczyna od X, ale lepiej..." |
+  | „Musisz zrozumieć, że..." | Protekcjonalne | Usuń frazę, przejdź do sedna |
+  | „Nie wystarczy X" | Negatywne otwarcie | „Oprócz X warto też..." |
+  | „To oczywiste" / „To proste" | Umniejsza trudność dla czytelnika | Usuń lub wyjaśnij krok po kroku |
+  | „Każdy wie, że..." | Zakłada wiedzę, której czytelnik może nie mieć | Wyjaśnij bez zakładania |
+  | „Prawda jest taka, że..." | Pouczający ton | Po prostu podaj informację |
+  | „Niestety..." (wielokrotnie) | Buduje negatywny nastrój | Opisz neutralnie lub podaj rozwiązanie |
+  | „Błędem jest..." (bez konstruktywnej alternatywy) | Krytyka bez wartości | „Lepszym podejściem jest..." |
+  | Pytania retoryczne z ironią | Mogą brzmieć wyśmiewająco | Zamień na zdania oznajmujące |
+
+  **Zasady tonu:**
+
+  1. **Nigdy nie poprawiaj czytelnika** — zamiast korygować jego domniemane błędy, po prostu wyjaśniaj temat. Czytelnik przyszedł się nauczyć, nie być poprawiany.
+
+  2. **Nigdy nie zakładaj niewiedzy** — nie pisz „może nie wiesz, że...", „wielu nie zdaje sobie sprawy...". Po prostu podaj informację.
+
+  3. **Nigdy nie używaj ironii ani sarkazmu** — nawet subtelnego. Tekst ma być neutralny emocjonalnie.
+
+  4. **Nigdy nie deprecjonuj pytania/tematu** — każde pytanie jest ważne dla osoby, która je zadaje.
+
+  5. **Nigdy nie porównuj do „gorszych" praktyk innych** — zamiast „wiele firm robi źle", opisz dobre praktyki bez oceniania innych.
+
+  **Przykłady zamiany:**
+
+  - ❌ „To nie jest mapa strony, tylko sitemap.xml" → ✅ „Sitemap.xml to plik techniczny przeznaczony dla wyszukiwarek"
+  - ❌ „Wbrew pozorom, favicon nie jest tylko ozdobnikiem" → ✅ „Favicon pełni kilka praktycznych funkcji"
+  - ❌ „Musisz zrozumieć, że Google nie indeksuje stron natychmiast" → ✅ „Google potrzebuje czasu na zindeksowanie nowej strony"
+  - ❌ „To częsty błąd — firmy nie aktualizują treści" → ✅ „Regularna aktualizacja treści wspiera widoczność w wyszukiwarkach"
+  - ❌ „Niestety, większość stron nie spełnia standardów WCAG" → ✅ „Wiele stron można poprawić pod kątem dostępności"
+
 - **Wspominanie alternatywnych rozwiazan (zalecane)**: Przy opisywaniu problemu lub rozwiazania mozesz wspomnieć o innych metodach osiagniecia podobnego celu (np. wyszukiwarka na stronie jako alternatywa dla mapy strony). To daje wartość czytelnikowi i otwiera mozliwość linkowania do przyszlych artykulow. Nie odbiegaj jednak od glownego tematu — wzmianka ma byc krotka i naturalna.
 
 - **Weryfikacja zgodności z instrukcją (OBOWIĄZKOWO)**: Przed napisaniem jakiegokolwiek tekstu zawsze najpierw przeczytaj pełną instrukcję. Po napisaniu tekstu sprawdź go ponownie pod kątem zgodności z tą instrukcją. To dotyczy każdego artykułu, opisu usługi, narzędzia i każdej innej treści.
@@ -455,6 +560,195 @@ Dla każdego zadania:
   - Odpowiadają na pytania zadawane przez właścicieli firm
   - Używają języka naturalnego (jak ludzie pytają)
   - Mają szersze zastosowanie (nie tylko jedna wąska branża)
+
+### 🚨 ZERO DOPISAŃ — ZERO NIEPRAWDY (aktualizacja 2025-12-30)
+
+**Ta sekcja ma priorytet nad wszystkimi innymi zasadami dotyczącymi treści.**
+
+Dotyczy KAŻDEJ treści w serwisie: artykułów, stron ofert, opisów narzędzi, realizacji, FAQ, CTA, metadata — wszędzie, gdzie pojawiają się informacje, dane, przykłady lub odwołania.
+
+---
+
+#### 🔴 ZASADY ABSOLUTNE (bez wyjątków)
+
+##### 1. Każda liczba MUSI mieć źródło
+
+Dotyczy: procentów, kwot, zakresów czasowych, dat, statystyk, wyników badań.
+
+- **Format**: „wg [źródło] z [rok]" + działający link
+- **Przykład ✅**: „Wg raportu Ahrefs z 2023 roku, 5,7% stron w Top10 ma mniej niż rok ([źródło](https://ahrefs.com/blog/how-long-does-it-take-to-rank/))"
+- **Przykład ❌**: „90% użytkowników opuszcza stronę po 3 sekundach" (brak źródła = ZABRONIONE)
+
+##### 2. Każde powołanie na prawo MUSI być zgodne z aktualnym stanem prawnym PL
+
+**Kluczowe obszary prawne wymagające szczególnej uwagi:**
+
+| Obszar | Ustawa/Rozporządzenie | Kluczowe wymogi | Rok wejścia w życie |
+|--------|----------------------|-----------------|---------------------|
+| **Ceny w e-commerce** | Dyrektywa Omnibus (implementacja PL) | Obowiązek podawania najniższej ceny z 30 dni przy promocji | 2023 |
+| **Ochrona konsumenta** | Ustawa o prawach konsumenta | 14 dni na odstąpienie, informacje obowiązkowe | 2014 (nowelizacje) |
+| **Prywatność / cookies** | RODO (GDPR) + Prawo telekomunikacyjne | Zgoda na cookies, polityka prywatności, DPIA | 2018 |
+| **Dostępność cyfrowa** | Ustawa o dostępności cyfrowej | WCAG 2.1 AA dla podmiotów publicznych | 2019 |
+| **AI content disclosure** | AI Act (UE) | Oznaczanie treści generowanych przez AI | 2024+ |
+| **Reklama** | Ustawa o zwalczaniu nieuczciwej konkurencji | Zakaz reklamy wprowadzającej w błąd | 1993 (nowelizacje) |
+
+**⚠️ KRYTYCZNE**: Jeśli piszesz o promocjach/cenach w e-commerce, ZAWSZE uwzględnij wymóg Omnibus (najniższa cena z 30 dni). Pominięcie tego wymogu = wprowadzenie czytelnika w błąd co do prawa.
+
+##### 3. Każdy przykład MUSI być oznaczony
+
+- **Przykład oparty na faktach**: cytuj źródło
+- **Przykład hipotetyczny**: MUSI zawierać oznaczenie: „*(przykład hipotetyczny — nie oparty o dane historyczne)*"
+- **Przykład z praktyki Arteon**: dozwolony bez oznaczenia, ale musi być prawdziwy
+
+##### 4. Absolutny zakaz dopowiadania
+
+**ZABRONIONE:**
+- Wymyślanie statystyk, liczb, procentów
+- Tworzenie „prawdopodobnych" scenariuszy bez oznaczenia jako hipotetyczne
+- Upraszczanie badań w sposób zmieniający ich sens
+- Sugerowanie rzeczy nieprawdziwych lub niemożliwych do weryfikacji
+- Podawanie nieaktualnych informacji prawnych jako obowiązujących
+
+**DOZWOLONE:**
+- Ogólne stwierdzenia bez liczb: „większość", „często", „wiele firm"
+- Jasno oznaczone przykłady hipotetyczne
+- Cytaty ze źródeł z linkiem
+- Opisy procesów bez kwantyfikacji (gdy brak danych)
+
+---
+
+#### 📋 OBOWIĄZKI PRZED NAPISANIEM TREŚCI
+
+1. **Sprawdź źródła PRZED pisaniem**:
+   - Czy masz wiarygodne źródło dla każdej liczby/statystyki, którą chcesz podać?
+   - Czy źródło jest aktualne (max 2-4 lata dla SEO/marketingu, sprawdź aktualność dla prawa)?
+   - Czy link do źródła działa?
+
+2. **Sprawdź zgodność prawną PRZED pisaniem**:
+   - Czy temat dotyczy obszaru regulowanego prawem (e-commerce, prywatność, reklama)?
+   - Czy znasz aktualne wymogi prawne w PL?
+   - Czy treść nie będzie sugerować działań niezgodnych z prawem?
+
+3. **Oznacz niepewność**:
+   - Jeśli nie masz pewności — NIE PISZ
+   - Jeśli źródła są sprzeczne — zaznacz to w tekście
+   - Jeśli przykład jest hipotetyczny — oznacz to wyraźnie
+
+---
+
+#### 📋 CHECKLISTA PRZED PUBLIKACJĄ (obowiązkowa)
+
+Przed dodaniem jakiejkolwiek treści do repo, sprawdź:
+
+- [ ] **Czy każde zdanie jest prawdziwe?** — żadnych domysłów, założeń, „prawdopodobnie"
+- [ ] **Czy każda liczba/statystyka ma źródło z linkiem?** — brak źródła = usuń liczbę
+- [ ] **Czy przykłady są oznaczone?** — fakty vs hipotetyczne
+- [ ] **Czy treści dot. prawa PL są zgodne z aktualnym stanem?** — Omnibus, RODO, ustawa o prawach konsumenta
+- [ ] **Czy wszystkie linki działają?** — sprawdź każdy URL
+- [ ] **Czy cytaty są dokładne?** — nie zmieniaj sensu źródła
+
+---
+
+#### 🔒 TRYB RESTRYKCYJNY (RESTRICTIVE MODE)
+
+**Ta zasada obowiązuje od teraz przy każdym generowaniu treści:**
+
+> 🚫 **Jeśli generowany tekst zawiera zdanie/liczbę/fakt bez potwierdzonego źródła — NIE WOLNO go dodać do repo.**
+
+Moduł autoweryfikacji:
+```
+PRZED ZAPISEM KAŻDEJ TREŚCI:
+1. Czy są liczby bez źródeł? → TAK = NIE ZAPISUJ, popraw najpierw
+2. Czy są twierdzenia prawne? → TAK = sprawdź zgodność z prawem PL
+3. Czy są przykłady bez oznaczenia? → TAK = oznacz lub usuń
+4. Czy są linki? → TAK = sprawdź czy działają
+5. Wszystko OK? → ZAPISZ
+```
+
+---
+
+#### Standard źródeł dla różnych typów treści
+
+**Treści o SEO / marketingu / analityce**:
+- Preferowane źródła: dokumentacja Google (Search Central, web.dev), blogi i raporty uznanych firm SEO/analitycznych (Ahrefs, Semrush, Moz, HubSpot, Backlinko), oficjalne komunikaty Google.
+- Aktualność: źródła z ostatnich 2–4 lat; starsze źródła dopuszczalne tylko jeśli są nadal istotne i wyraźnie oznaczone jako starsze.
+
+**Treści o psychologii / biznesie / zachowaniach użytkowników**:
+- Preferowane źródła: uznane czasopisma naukowe (Journal of Consumer Research, Management Decision, itp.), uczelnie, znani autorzy (np. Kahneman, Cialdini).
+- Nie wolno „upraszczać" badań w sposób, który wypacza ich sens — cytować dokładnie to, co badanie wykazało.
+
+**Treści o technologii (Next.js, WordPress, narzędzia webowe)**:
+- Preferowane źródła: oficjalna dokumentacja, repozytoria GitHub, blogi twórców narzędzi, uznane źródła techniczne (MDN, web.dev).
+
+**Treści o prawie / regulacjach**:
+- Preferowane źródła: oficjalne dzienniki ustaw (isap.sejm.gov.pl), EUR-Lex, oficjalne strony UOKiK, UODO.
+- ZAWSZE podawaj datę stanu prawnego i rok wejścia w życie przepisu.
+- Przy zmianach prawa — aktualizuj treści niezwłocznie.
+
+**Case studies / przykłady realizacji**:
+- Treści muszą być zgodne z faktami: zakres, wyniki, terminy — bez dopisywania „sukcesów", które nie miały miejsca.
+- Jeśli brak danych o konkretnych wynikach, nie wymyślać ich — opisać zakres prac bez kwantyfikacji efektów.
+
+---
+
+#### Zasady weryfikacji linków i cytatów (OBOWIĄZKOWO)
+
+- **Sprawdzenie każdego linku przed publikacją**:
+  - Czy link działa (nie zwraca 404)?
+  - Czy prowadzi do właściwej strony (nie do strony głównej zamiast do konkretnego artykułu)?
+  - Czy treść na stronie odpowiada temu, na co się powołujemy?
+
+- **Sprawdzenie daty dla cytowanych danych**:
+  - Żadnych „bezczasowych" statystyk typu „90% użytkowników robi X" bez wskazania roku i źródła.
+  - Format: „wg raportu [nazwa] (2024)" lub „badanie [autorzy] z 2023 roku".
+
+- **Format cytowania w treści**:
+  - Wszystkie cytaty, dane, statystyki muszą być opisane źródłem w tekście.
+  - Link do źródła: w nawiasie `(źródło)` lub jako naturalny link w zdaniu.
+  - Dla linków zewnętrznych zawsze: `target='_blank' rel='noopener noreferrer'`.
+
+---
+
+#### Postępowanie w razie niepewności (OBOWIĄZKOWO)
+
+Jeśli podczas tworzenia treści:
+- nie ma pewności co do jakiejś liczby / faktu / interpretacji,
+- lub znajdują się sprzeczne informacje w źródłach,
+
+to:
+1. Wybrać najbardziej rzetelne i aktualne źródło.
+2. Jeśli są rozbieżności między źródłami — zaznaczyć to w tekście (np. „dane wahają się od X do Y w zależności od źródła").
+3. Jeśli nadal jest niepewność — **zrezygnować z podawania konkretu** (lepiej nie podać liczby niż wprowadzić czytelnika w błąd).
+
+---
+
+#### Przykłady dobrego i złego stosowania zasad
+
+**❌ ŹLE — brak źródła:**
+- „Badania pokazują, że 90% użytkowników opuszcza stronę po 3 sekundach"
+- „Według ekspertów, SEO zajmuje 6-12 miesięcy"
+- „Firmy ze spójnym brandingiem mają wyższe przychody"
+
+**❌ ŹLE — niezgodność z prawem PL:**
+- „Przy promocji wystarczy pokazać starą i nową cenę" (BŁĄD — Omnibus wymaga najniższej ceny z 30 dni)
+- „Cookies można zbierać bez zgody, wystarczy informacja" (BŁĄD — RODO wymaga zgody)
+
+**❌ ŹLE — nieoznaczony przykład hipotetyczny:**
+- „Firma X zwiększyła sprzedaż o 350% dzięki redesignowi strony" (jeśli to wymyślony przykład)
+
+**✅ DOBRZE — ze źródłem:**
+- „Wg badania Ahrefs z 2023 roku, średni wiek strony w Top10 Google wynosi ponad 2 lata ([źródło](https://ahrefs.com/blog/how-long-does-it-take-to-rank/))"
+- „Google oficjalnie potwierdził, że Core Web Vitals są czynnikiem rankingowym ([dokumentacja](https://developers.google.com/search/docs/appearance/core-web-vitals))"
+
+**✅ DOBRZE — zgodność z prawem:**
+- „Przy promocji w sklepie internetowym należy podać najniższą cenę z ostatnich 30 dni przed obniżką (wymóg Dyrektywy Omnibus, obowiązuje w PL od 2023 roku)"
+
+**✅ DOBRZE — oznaczony przykład:**
+- „Załóżmy, że sklep internetowy z elektroniką odnotowuje spadek konwersji *(przykład hipotetyczny — nie oparty o dane historyczne)*"
+
+**✅ DOBRZE — gdy brak źródła:**
+- „Czas potrzebny na efekty SEO zależy od wielu czynników: konkurencyjności branży, stanu technicznego strony, jakości treści i profilu linków"
+- „Większość użytkowników oczekuje szybkiego ładowania strony"
 
 ### Dodatkowe reguły
 

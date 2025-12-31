@@ -8,14 +8,14 @@ import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 
 export const metadata: Metadata = {
-  title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
+  title: 'Stwórz favicon i ikony dla swojej strony',
   description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico') },
   openGraph: {
-    title: 'Darmowy generator favicon online - favicon.ico dla Twojej strony',
+    title: 'Stwórz favicon i ikony dla swojej strony',
     description: 'Skorzystaj z darmowego narzędzia i stwórz favicon.ico oraz zestaw ikon PNG w różnych rozmiarach na swoją stronę. Dodaj obraz i pobierz gotowe pliki.',
     url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Darmowy generator favicon online',
+  name: 'Stwórz favicon i ikony dla swojej strony',
   alternateName: 'Generator favicon.ico i ikon PNG',
   url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
   applicationCategory: 'UtilityApplication',
@@ -58,13 +58,13 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Darmowy generator favicon online"
+        title="Stwórz favicon i ikony dla swojej strony"
         description="Stwórz favicon.ico oraz zestaw ikon PNG dla swojej strony. Dodaj obraz, wybierz rozmiary i pobierz gotowe pliki."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
-      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/darmowy-generator-favicon-ico`, label: 'Darmowy generator favicon online' }} includeJsonLd />
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/darmowy-generator-favicon-ico`, label: 'Stwórz favicon i ikony dla swojej strony' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

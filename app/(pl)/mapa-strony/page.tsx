@@ -1,19 +1,26 @@
+import Gap from '@/components/ui/Gap';
+import SectionInfo from '@/components/ui/sections/SectionInfo';
+import Wrapper from '@/components/ui/Wrapper';
+import AppLink from '@/components/ui/AppLink';
 import type { Metadata } from 'next';
-import Link from 'next/link';
 
 import blogData from '@/data/pl/blog.json';
 import projectsData from '@/data/pl/projects.json';
-import Wrapper from '@/components/ui/Wrapper';
-import { slugify } from '@/utils/slug';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+
+const BASE_URL = 'https://www.arteonagency.pl';
+
+export const metadata: Metadata = {
+  title: 'Mapa strony | Arteon',
+  description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
+  alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
+};
 
 type NavItem = { title: string; href: string; children?: NavItem[] };
 
 type Article = {
   slug: string;
   title: string;
-  primaryCategory?: string;
-  category?: string[];
+  category?: string | string[];
 };
 
 type Project = {
@@ -72,8 +79,18 @@ const portfolioItems: NavItem[] = ((projectsData as { projects: Project[] }).pro
 }));
 
 function getArticleUrl(article: Article): string {
-  const primaryCategory = article.primaryCategory || article.category?.[0] || 'Inne';
-  return `/edukacja/${slugify(primaryCategory)}/${article.slug}`;
+  const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : [];
+  const primaryCategory = categories[0] ?? 'Inne';
+  return `/edukacja/${slugifyCategory(primaryCategory)}/${article.slug}`;
+}
+
+function slugifyCategory(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');
 }
 
 const articles = (blogData as { articles: Article[] }).articles || [];
@@ -85,51 +102,15 @@ const blogArticleItems: NavItem[] = articles.map((a) => ({
 }));
 
 const tools: NavItem[] = [
-  {
-    title: 'Konwerter JPG/PNG na WebP',
-    href: '/narzedzia/jpg-png-na-webp-bez-limitu',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja' }],
-  },
-  {
-    title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
-    href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja' }],
-  },
-  {
-    title: 'Generator favicon online',
-    href: '/narzedzia/darmowy-generator-favicon-ico',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/darmowy-generator-favicon-ico/instrukcja' }],
-  },
-  {
-    title: 'Licznik długości meta title i description',
-    href: '/narzedzia/licznik-dlugosci-meta-title-i-description',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja' }],
-  },
-  {
-    title: 'Darmowy generator stopki mailowej HTML',
-    href: '/narzedzia/darmowy-generator-stopki-mailowej',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja' }],
-  },
-  {
-    title: 'Tester kontrastu kolorów WCAG',
-    href: '/narzedzia/tester-kontrastu-kolorow-wcag',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja' }],
-  },
-  {
-    title: 'Paleta kolorów z obrazu',
-    href: '/narzedzia/generator-palety-kolorow-z-obrazu',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja' }],
-  },
-  {
-    title: 'Generator palet kolorów online',
-    href: '/narzedzia/generator-palet-kolorow-online',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/generator-palet-kolorow-online/instrukcja' }],
-  },
-  {
-    title: 'Generator kodu QR',
-    href: '/narzedzia/generator-kodu-qr',
-    children: [{ title: 'Instrukcja', href: '/narzedzia/generator-kodu-qr/instrukcja' }],
-  },
+  { title: 'Konwerter JPG/PNG na WebP', href: '/narzedzia/jpg-png-na-webp-bez-limitu' },
+  { title: 'Zmiana rozmiaru i kadrowanie zdjęcia', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia' },
+  { title: 'Generator favicon online', href: '/narzedzia/darmowy-generator-favicon-ico' },
+  { title: 'Licznik meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
+  { title: 'Generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
+  { title: 'Tester kontrastu WCAG', href: '/narzedzia/tester-kontrastu-kolorow-wcag' },
+  { title: 'Generator palet kolorów', href: '/narzedzia/generator-palet-kolorow-online' },
+  { title: 'Paleta kolorów z obrazu', href: '/narzedzia/generator-palety-kolorow-z-obrazu' },
+  { title: 'Generator kodu QR', href: '/narzedzia/generator-kodu-qr' },
 ];
 
 const infoPages: NavItem[] = [
@@ -147,47 +128,9 @@ const infoPages: NavItem[] = [
   { title: 'Mapa strony', href: '/mapa-strony' },
 ];
 
-export const metadata: Metadata = {
-  title: 'Mapa strony - Arteon',
-  description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
-  alternates: { canonical: toAbsoluteUrl('/mapa-strony') },
-  openGraph: {
-    title: 'Mapa strony - Arteon',
-    description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
-    url: toAbsoluteUrl('/mapa-strony'),
-    type: 'website',
-  },
-};
-
-function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
-  return (
-    <section className="mb-8">
-      <h2 className="h4 mb-4">{title}</h2>
-      <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((item) => (
-          <li key={item.href}>
-            <Link href={item.href} className="text-sm text-slate-700 hover:text-slate-900 hover:underline">
-              {item.title}
-            </Link>
-            {item.children && item.children.length > 0 && (
-              <ul className="mt-1 ml-4 space-y-1">
-                {item.children.map((child) => (
-                  <li key={child.href}>
-                    <Link href={child.href} className="text-sm text-slate-500 hover:text-slate-700 hover:underline">
-                      {child.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
 export default function SitemapPage() {
+  const showAllPortfolio = portfolioItems.length > 0 && portfolioItems.length <= 40;
+
   const jsonLd = buildJsonLd({
     services,
     portfolioItems,
@@ -199,38 +142,119 @@ export default function SitemapPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <Wrapper className="py-12">
-        <nav aria-label="okruszki" className="mb-6">
-          <ol className="flex gap-2 text-sm">
-            <li>
-              <Link href="/" className="text-slate-700 hover:underline">
-                Strona główna
-              </Link>
-              <span className="ml-2 text-slate-400">/</span>
-            </li>
-            <li>
-              <span className="text-slate-500" aria-current="page">
-                Mapa strony
-              </span>
-            </li>
-          </ol>
+      <Gap size="sm" />
+
+      <Wrapper>
+        <header>
+          <h1>Mapa strony</h1>
+          <p className="mt-2">Szybki przegląd kluczowych sekcji i podstron. Użyj tej strony, aby szybko dotrzeć do interesującej Cię treści.</p>
+        </header>
+
+        <Gap size="sm" />
+
+        <nav aria-label="Mapa strony">
+          <SectionInfo title="Usługi">
+            <NestedList items={services} />
+          </SectionInfo>
+
+          <Gap variant="line" size="sm" />
+
+          <SectionInfo title="Realizacje">
+            <p>
+              <AppLink href={portfolioIndex.href} className="font-medium">
+                {portfolioIndex.title}
+              </AppLink>
+            </p>
+            {showAllPortfolio ? (
+              <ul className="mt-2 space-y-2">
+                {portfolioItems.map((item) => (
+                  <li key={item.href}>
+                    <AppLink href={item.href}>{item.title}</AppLink>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </SectionInfo>
+
+          <Gap variant="line" size="sm" />
+
+          <SectionInfo title="Edukacja">
+            <p>
+              <AppLink href="/edukacja" className="font-medium">
+                Wszystkie artykuły
+              </AppLink>
+            </p>
+            <NestedList items={blogCategories} />
+          </SectionInfo>
+
+          <Gap variant="line" size="sm" />
+
+          <SectionInfo title="Narzędzia">
+            <p>
+              <AppLink href="/narzedzia" className="font-medium">
+                Wszystkie narzędzia
+              </AppLink>
+            </p>
+            <ul className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {tools.map((tool) => (
+                <li key={tool.href}>
+                  <AppLink href={tool.href}>{tool.title}</AppLink>
+                </li>
+              ))}
+            </ul>
+          </SectionInfo>
+
+          <Gap variant="line" size="sm" />
+
+          <SectionInfo title="Informacje">
+            <ul>
+              {infoPages.map((p) => (
+                <li key={p.href}>
+                  <AppLink href={p.href} className="font-medium">
+                    {p.title}
+                  </AppLink>
+                </li>
+              ))}
+            </ul>
+          </SectionInfo>
         </nav>
 
-        <h1 className="h2 mb-8">Mapa strony</h1>
+        <Gap size="sm" />
 
-        <SitemapSection title="Usługi" items={services} />
-        <SitemapSection title="Realizacje" items={[portfolioIndex, ...portfolioItems]} />
-        <SitemapSection title="Edukacja" items={blogArticleItems} />
-        <SitemapSection title="Narzędzia" items={tools} />
-        <SitemapSection title="Informacje" items={infoPages} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </Wrapper>
     </>
   );
 }
 
+function NestedList({ items }: { items: NavItem[] }) {
+  return (
+    <ul className="space-y-2">
+      {items.map((item) => (
+        <li key={item.href}>
+          <AppLink href={item.href} className="font-medium">
+            {item.title}
+          </AppLink>
+          {item.children && item.children.length > 0 && (
+            <ul className="mt-1 ml-5 space-y-1 text-sm">
+              {item.children.map((child) => (
+                <li key={child.href}>
+                  <AppLink href={child.href}>{child.title}</AppLink>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function abs(url: string) {
-  return url.startsWith('http') ? url : `${siteUrl}${url}`;
+  return url.startsWith('http') ? url : `${BASE_URL}${url}`;
 }
 
 function toListElements(arr: NavItem[]) {
@@ -246,11 +270,10 @@ function buildBlogCategoriesFromArticles(articles: Article[]): NavItem[] {
   const categoryMap = new Map<string, NavItem>();
 
   for (const article of articles) {
-    const allCats = [article.primaryCategory, ...(article.category || [])].filter(Boolean) as string[];
-    const categories = allCats.length ? Array.from(new Set(allCats)) : ['Inne'];
+    const categories = Array.isArray(article.category) ? article.category : article.category ? [article.category] : ['Inne'];
 
     for (const catName of categories) {
-      const slug = slugify(catName);
+      const slug = slugifyCategory(catName);
       const key = slug;
 
       if (!categoryMap.has(key)) {
@@ -288,56 +311,55 @@ function buildJsonLd({
   tools: NavItem[];
 }) {
   const servicesChildren = services.flatMap((s) => s.children ?? []);
-  const toolsChildren = tools.flatMap((t) => t.children ?? []);
 
   return {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'WebPage',
-        '@id': `${siteUrl}/mapa-strony`,
+        '@id': `${BASE_URL}/mapa-strony`,
         name: 'Mapa strony',
-        url: `${siteUrl}/mapa-strony`,
+        url: `${BASE_URL}/mapa-strony`,
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${siteUrl}/#nav-uslugi`,
+        '@id': `${BASE_URL}/#nav-uslugi`,
         name: 'Usługi',
-        url: `${siteUrl}/uslugi`,
+        url: `${BASE_URL}/uslugi`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${siteUrl}/#sitemap-uslugi`,
+        '@id': `${BASE_URL}/#sitemap-uslugi`,
         name: 'Mapa strony - Usługi',
         itemListElement: toListElements([...services, ...servicesChildren]),
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${siteUrl}/#nav-edukacja`,
+        '@id': `${BASE_URL}/#nav-edukacja`,
         name: 'Edukacja',
-        url: `${siteUrl}/edukacja`,
+        url: `${BASE_URL}/edukacja`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${siteUrl}/#sitemap-edukacja`,
+        '@id': `${BASE_URL}/#sitemap-edukacja`,
         name: 'Mapa strony - Edukacja',
         itemListElement: toListElements([{ title: 'Edukacja', href: '/edukacja' }, ...blogCategories, ...blogArticleItems]),
       },
       {
         '@type': 'SiteNavigationElement',
-        '@id': `${siteUrl}/#nav-narzedzia`,
+        '@id': `${BASE_URL}/#nav-narzedzia`,
         name: 'Narzędzia',
-        url: `${siteUrl}/narzedzia`,
+        url: `${BASE_URL}/narzedzia`,
       },
       {
         '@type': 'ItemList',
-        '@id': `${siteUrl}/#sitemap-narzedzia`,
+        '@id': `${BASE_URL}/#sitemap-narzedzia`,
         name: 'Mapa strony - Narzędzia',
-        itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools, ...toolsChildren]),
+        itemListElement: toListElements([{ title: 'Narzędzia', href: '/narzedzia' }, ...tools]),
       },
       {
         '@type': 'ItemList',
-        '@id': `${siteUrl}/#sitemap-realizacje`,
+        '@id': `${BASE_URL}/#sitemap-realizacje`,
         name: 'Mapa strony - Realizacje',
         itemListElement:
           portfolioItems.length > 0
@@ -353,13 +375,13 @@ function buildJsonLd({
       },
       {
         '@type': 'ItemList',
-        '@id': `${siteUrl}/#sitemap-informacje`,
+        '@id': `${BASE_URL}/#sitemap-informacje`,
         name: 'Mapa strony - Informacje',
         itemListElement: toListElements(infoPages),
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': `${siteUrl}/#breadcrumbs`,
+        '@id': `${BASE_URL}/#breadcrumbs`,
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Start', item: abs('/') },
           {

@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -26,37 +26,29 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-];
 import Button from '@/components/ui/buttons/Button';
 import { IoColorPalette } from 'react-icons/io5';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt logo - Arteon',
+  title: 'Projekt logo | Arteon',
   description: 'Logo jako fundament identyfikacji wizualnej. Tworzymy czytelny znak z wersjami kolorystycznymi i mini-księgą znaku.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo' },
   openGraph: {
-    title: 'Projekt logo - Arteon',
+    title: 'Projekt logo | Arteon',
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-logo',
     serviceName: 'Projekt logo',
     description: 'Znak marki z podstawową księgą znaku: warianty, siatka, wersje kolorystyczne. Pliki wektorowe gotowe do użycia.',
@@ -71,9 +63,7 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferLogo() {
-  const articles = getAllArticlePreviews();
-
+export default function OfferDesignLogoPage() {
   return (
     <>
       <HeroBanner
@@ -152,27 +142,27 @@ export default function OfferLogo() {
             {
               title: 'Znak, który prowadzi markę',
               description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania - również w małych rozmiarach.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Warianty i zastosowania',
               description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do użycia na stronie, w social mediach i w druku.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Prosta instrukcja użycia',
               description: <>Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie wie, jak poprawnie korzystać z logo.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełna własność i pliki źródłowe',
               description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -291,7 +281,7 @@ export default function OfferLogo() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo"
           items={[
             {
               question: 'Ile kosztuje profesjonalne logo?',
@@ -329,10 +319,6 @@ export default function OfferLogo() {
             },
           ]}
         />
-
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące logo" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap variant="line" />
 
@@ -399,3 +385,5 @@ export default function OfferLogo() {
     </>
   );
 }
+
+

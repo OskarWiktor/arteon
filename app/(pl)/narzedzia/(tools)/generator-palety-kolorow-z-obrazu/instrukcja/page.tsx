@@ -1,7 +1,7 @@
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import Gap from '@/components/ui/Gap';
 import FaqPanels from '@/components/ui/FaqPanels';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
@@ -13,12 +13,12 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Instrukcja generatora palety kolorów z obrazu - Arteon',
-  description: 'Poznaj wszystkie funkcje generatora palety kolorów z obrazu. Dowiedz się, jak wgrać obraz, skopiować kolory i które zdjęcia dają najlepsze rezultaty.',
+  title: 'Jak wyciągnąć kolory ze zdjęcia? | Generator palety z obrazu online',
+  description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie online, bez wysyłania plików na serwer. Idealne do brandingu i grafik.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja') },
   openGraph: {
-    title: 'Instrukcja generatora palety kolorów z obrazu - Arteon',
-    description: 'Poznaj wszystkie funkcje generatora palety kolorów z obrazu. Dowiedz się, jak wgrać obraz, skopiować kolory i które zdjęcia dają najlepsze rezultaty.',
+    title: 'Jak wyciągnąć kolory ze zdjęcia? | Generator palety z obrazu online',
+    description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie online, bez wysyłania plików na serwer. Idealne do brandingu i grafik.',
     url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja'),
     type: 'website',
     images: [
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak używać generatora palety kolorów z obrazu',
-  description: 'Instrukcja korzystania z narzędzia do wyciągania dominujących kolorów ze zdjęcia lub logo.',
+  name: 'Jak wyciągnąć kolory ze zdjęcia lub logo',
+  description: 'Instrukcja wyciągania dominujących kolorów ze zdjęcia lub logo. Wgraj obraz (PNG, JPG, SVG), skopiuj do 12 kolorów HEX. Wszystko lokalnie w przeglądarce.',
   url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja'),
   step: [
     {
@@ -94,8 +94,8 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Jak używać generatora palety kolorów z obrazu"
-        description="Szczegółowa instrukcja korzystania z narzędzia. Dowiedz się, jak wgrać obraz, skopiować kolory i które zdjęcia dają najlepsze rezultaty."
+        title="Jak wyciągnąć kolory ze zdjęcia lub logo"
+        description="Wgraj zdjęcie lub logo i wyciągnij do 12 dominujących kolorów HEX. Instrukcja z wskazówkami, które obrazy dają najlepsze rezultaty i jak wykorzystać kolory w brandingu."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
@@ -299,7 +299,7 @@ export default function Page() {
         <SectionInfo title="Wypróbuj narzędzie">
           <p className="text-mid">Teraz, gdy wiesz jak działa generator, możesz wyciągnąć kolory ze swojego obrazu.</p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Button link="/narzedzia/generator-palety-kolorow-z-obrazu" variant="accent">
+            <Button link="/narzedzia/generator-palet-kolorow-online" variant="accent">
               Przejdź do generatora
             </Button>
             <Button link="/narzedzia" variant="normal">

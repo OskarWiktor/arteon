@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -16,38 +16,30 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine,
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'kody-qr-w-materialach-reklamowych',
-  'jak-dobrac-kolory-do-strony-internetowej',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Kupony rabatowe i vouchery - Arteon',
+  title: 'Kupony rabatowe i vouchery | Arteon',
   description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
   },
   openGraph: {
-    title: 'Kupony rabatowe i vouchery - Arteon',
+    title: 'Kupony rabatowe i vouchery | Arteon',
     description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     serviceName: 'Kupony rabatowe i vouchery',
     description: 'Projekt kuponów rabatowych i voucherów prezentowych: elegancka forma, pliki gotowe do druku oraz wersje cyfrowe.',
@@ -63,8 +55,6 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignCouponsAndVouchersPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -135,27 +125,27 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Dopasujemy projekt do Twojej kolorystyki, logo i tonu komunikacji, dzięki czemu voucher będzie spójnym elementem Twojej marki.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wersje do druku i online',
               description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych, mailingu lub sklepu internetowego.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Czytelne pola i zasady wykorzystania',
               description: <>Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis czy regulamin tak, aby voucher był piękny i praktyczny.</>,
-              icon: <RiTicket2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiTicket2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Warianty na różne okazje',
               description: <>Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z zachowaniem jednego spójnego stylu.</>,
-              icon: <RiGiftLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiGiftLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -268,7 +258,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera"
           title="Najczęstsze pytania dotyczące kuponów i voucherów"
           items={[
             {
@@ -298,7 +288,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
               title: 'Ulotki i informujące o promocji',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ulotki pomagają Ci dotrzeć do jeszcze większej grupy osób, przedstawiając szczegółowy zakres Twoich usług.</p>
+                  <p className="mb-3 text-sm">Ulotki pomagą Ci dotrzeć do jeszcze większej grupy osób, przedstawiając szczegółowy zakres Twoich usług.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
                       Zobacz projekty ulotek
@@ -329,10 +319,6 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące materiałów promocyjnych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -351,3 +337,5 @@ export default function OfferDesignCouponsAndVouchersPage() {
     </>
   );
 }
+
+

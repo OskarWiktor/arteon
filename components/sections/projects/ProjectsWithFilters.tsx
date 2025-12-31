@@ -1,5 +1,5 @@
 import ProjectsWithFiltersClient from './ProjectsWithFiltersClient';
-import { getAllProjectPreviews } from '@/lib/projects';
+import { getAllProjectPreviews } from '@/lib/projectsDataService';
 import type { ProjectPreview } from '@/types/project';
 
 type Props = {

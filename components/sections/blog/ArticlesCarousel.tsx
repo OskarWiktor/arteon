@@ -8,7 +8,7 @@ import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 
 import type { ArticlePreview } from '@/types/article';
-import { slugify } from '@/utils/slug';
+import { slugify } from '@/utils/slugify';
 import { getPrimaryCategorySlug } from '@/utils/blogCategory';
 
 const ui = {

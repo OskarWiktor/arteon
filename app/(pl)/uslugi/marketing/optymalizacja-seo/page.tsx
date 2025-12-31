@@ -1,4 +1,4 @@
-﻿import HeroBanner from '@/components/sections/HeroBanner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
@@ -18,34 +18,25 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
-  'meta-title-i-description-jak-je-napisac',
-  'jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google',
-  'jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
-  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
-];
 
 export const metadata = {
-  title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność - Arteon',
+  title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
   description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo' },
   openGraph: {
-    title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność - Arteon',
+    title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
-    url: toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo'),
+    url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg5.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/marketing/optymalizacja-seo',
     serviceName: 'Optymalizacja SEO',
     description: 'Wdrożenia po audycie: poprawa szybkości strony, porządek w treściach i dodatkowe dane, które pomagają Google lepiej zrozumieć witrynę. Testy przed i po, mierzalne wyniki.',
@@ -61,8 +52,6 @@ function ServiceSchema() {
 }
 
 export default function OfferOptimizationSEO() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -134,22 +123,22 @@ export default function OfferOptimizationSEO() {
             {
               title: 'Szybkość ładowania',
               description: <>Skracamy czas wczytywania strony, optymalizujemy grafiki i kod strony. Efekt: strona działa szybciej, a użytkownicy rzadziej rezygnują z przeglądania.</>,
-              icon: <RiSearchLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Tytuły i opisy widoczne w Google',
               description: <>Poprawiamy tytuły i opisy, by lepiej pasowały do zapytań użytkowników. Efekt: więcej trafnych zapytań i więcej wejść z wyników wyszukiwania.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Struktura treści i nawigacja',
               description: <>Porządkujemy nagłówki i menu, dodajemy logiczne połączenia między podstronami. Efekt: łatwiejsza nawigacja i lepsze rozumienie strony przez Google.</>,
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dodatkowe dane dla Google',
               description: <>Wprowadzamy dodatkowe informacje (np. sekcje pytań i odpowiedzi), które pomagają Google lepiej zrozumieć zawartość i to co dokładnie oferujesz.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -329,13 +318,13 @@ export default function OfferOptimizationSEO() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/marketing/optymalizacja-seo')}
+          pageUrl="https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo"
           items={[
             {
               question: 'Czy mogę zrobić optymalizację bez audytu?',
               answer: (
                 <p>
-                  Teoretycznie tak, ale nie polecamy takiego rozwiązania.{' '}
+                  Teoretycznie tak, ale nie polecamy takiego rozwiązania.{" "}
                   <a href="/uslugi/marketing/audyt-seo" className="inline-link">
                     Audyt SEO
                   </a>{' '}
@@ -374,10 +363,6 @@ export default function OfferOptimizationSEO() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące optymalizacji SEO" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -394,3 +379,5 @@ export default function OfferOptimizationSEO() {
     </>
   );
 }
+
+

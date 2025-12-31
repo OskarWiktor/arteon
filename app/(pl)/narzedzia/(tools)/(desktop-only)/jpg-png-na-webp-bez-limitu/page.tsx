@@ -3,7 +3,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import JpgPngToWebp from '@/components/sections/tools/JpgPngToWebp';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
@@ -11,11 +11,11 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
+  title: 'Zamień zdjęcia JPG i PNG na lżejszy format WebP',
   description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu') },
   openGraph: {
-    title: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
+    title: 'Zamień zdjęcia JPG i PNG na lżejszy format WebP',
     description: 'Skorzystaj z darmowego narzędzia i zamień JPG/PNG na WebP. Zmniejsz wagę zdjęć i przyspiesz ładowanie strony. Bez logowania, bez abonamentu i bez limitu.',
     url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
+  name: 'Zamień zdjęcia JPG i PNG na lżejszy format WebP',
   alternateName: 'Konwerter JPG na WebP i PNG na WebP',
   url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
   applicationCategory: 'UtilityApplication',
@@ -57,13 +57,13 @@ export default function Page() {
       <Script id="ld-json-webp-converter" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <HeroBanner
-        title="Konwerter JPG/PNG na WebP"
+        title="Zamień zdjęcia JPG i PNG na lżejszy format WebP"
         description="Zoptymalizuj grafiki dla szybszej prędkości Twojej witryny. Dodaj kilka plików, wybierz poziom jakości i pobierz zdjęcia w formacie WebP. Konwersja odbywa się w całości w Twojej przeglądarce - pliki nie są nigdzie wysyłane."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
-      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/jpg-png-na-webp-bez-limitu`, label: 'Konwerter JPG/PNG na WebP' }} includeJsonLd />
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/jpg-png-na-webp-bez-limitu`, label: 'Zamień zdjęcia JPG i PNG na lżejszy format WebP' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />

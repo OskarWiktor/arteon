@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import Button from '@/components/ui/buttons/Button';

@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -15,36 +15,28 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie',
-  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt graficzny strony - Arteon',
+  title: 'Projekt graficzny strony | Arteon',
   description: 'Makiety i layouty stron internetowych tworzone z myślą o czytelności i konwersji. Estetyka, UX i SEO w jednym projekcie.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony' },
   openGraph: {
-    title: 'Projekt graficzny strony - Arteon',
+    title: 'Projekt graficzny strony | Arteon',
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-graficzny-strony',
     serviceName: 'Projekt graficzny strony',
     description: 'Makieta i projekt UI strony: czytelny layout, system komponentów, zgodność z WCAG i przygotowanie pod realizację.',
@@ -60,8 +52,6 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignWebsiteGraphicDesignPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -147,27 +137,27 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Przemyślany układ i estetyka',
               description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie - od nagłówka po stopkę.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Responsywność i czytelność',
               description: <>Projekt działa na komputerze, tablecie i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Gotowość do wdrożenia',
               description: <>Dostarczamy pliki i rekomendacje, które przyspieszają pracę dewelopera i skracają czas publikacji.</>,
-              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-700" />,
+              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: <>Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji do pełnej akceptacji.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -265,7 +255,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony"
           items={[
             {
               question: 'Ile kosztuje projekt graficzny strony?',
@@ -295,8 +285,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer:
-                'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
+              answer: 'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
             },
             {
               question: 'Czy mogę zamówić tylko jedną podstronę?',
@@ -304,10 +293,6 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
           ]}
         />
-
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące projektowania stron" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap variant="line" />
 
@@ -336,8 +321,8 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
-                    myślą o SEO i wyższej konwersji.
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
+                    o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
@@ -373,3 +358,5 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
     </>
   );
 }
+
+

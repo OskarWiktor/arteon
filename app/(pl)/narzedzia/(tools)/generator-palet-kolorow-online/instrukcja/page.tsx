@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -15,12 +15,12 @@ import { RiDropLine, RiCursorLine, RiLayoutGridLine, RiPaletteLine, RiFileCopyLi
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
-  title: 'Jak używać generatora palet kolorów online | Instrukcja krok po kroku',
-  description: 'Instrukcja generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają palety i jak skopiować kolory do projektu.',
+  title: 'Jak wygenerować paletę kolorów? | Generator online z 9 typami palet',
+  description: 'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczna, komplementarna, triadyczna, pastelowa i inne. Kopiuj kody HEX jednym kliknięciem. Darmowy generator online.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja') },
   openGraph: {
-    title: 'Jak używać generatora palet kolorów online | Instrukcja krok po kroku',
-    description: 'Szczegółowa instrukcja obsługi generatora palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają poszczególne palety i jak skopiować kolory do swojego projektu.',
+    title: 'Jak wygenerować paletę kolorów? | Generator online z 9 typami palet',
+    description: 'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczna, komplementarna, triadyczna, pastelowa i inne. Kopiuj kody HEX jednym kliknięciem. Darmowy generator online.',
     url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja'),
     type: 'website',
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak używać generatora palet kolorów online',
-  description: 'Szczegółowa instrukcja obsługi generatora palet kolorów - od wyboru koloru bazowego po kopiowanie gotowych palet.',
+  name: 'Jak wygenerować paletę kolorów z jednego koloru',
+  description: 'Instrukcja generowania 9 palet kolorów z jednego koloru bazowego: monochromatyczna, komplementarna, triadyczna, pastelowa i inne. Kopiowanie kolorów HEX jednym kliknięciem.',
   url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja'),
   inLanguage: 'pl-PL',
   step: [
@@ -101,8 +101,8 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Jak używać generatora palet kolorów online"
-        description="Szczegółowa instrukcja obsługi narzędzia do generowania palet kolorów. Dowiedz się, jak wybrać kolor bazowy, jak działają poszczególne typy palet i jak skopiować gotowe kolory do swojego projektu."
+        title="Jak wygenerować paletę kolorów z jednego koloru bazowego"
+        description="Wygeneruj 9 palet kolorów z jednego koloru bazowego (np. z logo). Instrukcja z opisem palet: monochromatyczna, komplementarna, triadyczna, pastelowa, ciemna i minimalistyczna."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

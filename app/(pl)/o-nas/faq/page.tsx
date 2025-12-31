@@ -4,7 +4,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import Gap from '@/components/ui/Gap';
 import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
-import { toAbsoluteUrl } from '@/lib/url';
+import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 

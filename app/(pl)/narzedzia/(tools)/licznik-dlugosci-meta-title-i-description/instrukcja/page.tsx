@@ -11,17 +11,17 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Jak używać licznika długości meta title i description?',
-  description: 'Instrukcja licznika meta title i description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność.',
+  title: 'Jak sprawdzić długość meta title i description? | Instrukcja online',
+  description: 'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160), jak interpretować wyniki i uniknąć obcinania w Google.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja') },
   openGraph: {
-    title: 'Jak używać licznika długości meta title i description?',
-    description: 'Szczegółowa instrukcja obsługi licznika meta title i meta description. Dowiedz się, jak sprawdzić długość tagów SEO, interpretować wyniki i poprawić widoczność strony w Google.',
+    title: 'Jak sprawdzić długość meta title i description? | Instrukcja online',
+    description: 'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160), jak interpretować wyniki i uniknąć obcinania w Google.',
     url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja'),
     type: 'website',
     images: [
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak używać licznika długości meta title i description',
-  description: 'Instrukcja krok po kroku, jak sprawdzić długość meta title i meta description za pomocą darmowego narzędzia online. Dowiedz się, jak interpretować wyniki i optymalizować tagi SEO.',
+  name: 'Jak sprawdzić długość meta title i description',
+  description: 'Instrukcja krok po kroku: sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160) oraz jak uniknąć obcinania w Google.',
   url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja'),
   totalTime: 'PT3M',
   step: [
@@ -110,8 +110,8 @@ export default function Page() {
       <Script id="ld-json-meta-instruction" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <HeroBanner
-        title="Jak używać licznika długości meta title i description"
-        description="Szczegółowa instrukcja obsługi narzędzia do sprawdzania długości tagów SEO. Dowiedz się, jak interpretować wyniki i pisać skuteczne meta tagi"
+        title="Jak sprawdzić długość meta title i description"
+        description="Ile znaków powinien mieć meta title i description? Jak sprawdzić, czy Google nie obetnie tytułu? Instrukcja licznika z podglądem snippet i wskazówkami SEO."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

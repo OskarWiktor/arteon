@@ -3,6 +3,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
+import ServicesSteps from '@/components/sections/steps/ServicesSteps';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -15,37 +16,29 @@ import { RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiVipCrownLine, 
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'kody-qr-w-materialach-reklamowych',
-  'jak-dobrac-kolory-do-strony-internetowej',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt karty lojalnościowej - Arteon',
-  description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej') },
+  title: 'Projekt karty lojalnościowej | Arteon',
+  description: 'Projekt karty lojalnościowej dla salonów, kawiarni, butików i siłowni. Plik do druku + szablon cyfrowy.',
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
   openGraph: {
-    title: 'Projekt karty lojalnościowej - Arteon',
-    description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej'),
+    title: 'Projekt karty lojalnościowej | Arteon',
+    description: 'Projekt karty lojalnościowej dla salonów, kawiarni, butików i siłowni. Plik do druku + szablon cyfrowy.',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     serviceName: 'Projekt karty lojalnościowej',
-    description: 'Projektujemy karty lojalnościowe dla salonów, kawiarni, butików czy siłowni. Estetyka, która zachęca klientów do powrotu.',
+    description: 'Projekt karty lojalnościowej dla salonów, kawiarni, butików i siłowni. Plik do druku + szablon cyfrowy.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -57,17 +50,14 @@ function ServiceSchema() {
   );
 }
 
-export default function OfferLoyaltyCard() {
-  const articles = getAllArticlePreviews();
-
+export default function OfferDesignLoyaltyCardPage() {
   return (
     <>
       <HeroBanner
         title="Projekt karty lojalnościowej"
         description={
           <>
-            Zachęć klientów do powrotu dzięki estetycznym i czytelnym kartom lojalnościowym. Projektujemy karty, które wspierają sprzedaż, porządkują zasady programu i budują długotrwałą relację z
-            klientem.
+            Projektujemy czytelne karty lojalnościowe dla firm usługowych i handlowych. Karty wspierają sprzedaż i porządkują zasady programu lojalnościowego.
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -101,7 +91,7 @@ export default function OfferLoyaltyCard() {
 
         <SectionInfo title="Dlaczego warto zainwestować w karty lojalnościowe?">
           <p>
-            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> To proste narzędzie marketingowe, które wzmacnia lojalność Twoich klientów: „wracam do tej firmy, bo
+            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> To proste narzędzie marketingowe, które wzmacnia lojalność klientów: „wracam do tej firmy, bo
             dzięki temu mam dodatkowe korzyści”. W efekcie zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
           </p>
 
@@ -141,29 +131,29 @@ export default function OfferLoyaltyCard() {
                   Tworzymy karty dopasowane do specyfiki działalności - salonów, kawiarni, siłowni, butików i innych punktów usługowych. Zasady programu są czytelne zarówno dla Ciebie, jak i klientów.
                 </>
               ),
-              icon: <RiVipCrownLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiVipCrownLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale dopasowujemy do Twojej identyfikacji wizualnej. Karta naturalnie uzupełnia pozostałe materiały i wzmacnia profesjonalny wizerunek firmy.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Gotowość do druku',
               description: (
                 <>Dostarczamy pliki w formacie gotowym do druku, z odpowiednimi spadami i specyfikacją dla drukarni. Możesz od razu zamówić nakład bez dodatkowych przeróbek technicznych.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Numeracje i pola pieczątek',
               description: <>Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia nagród. Dzięki temu obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.</>,
-              icon: <RiCoupon2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiCoupon2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -263,7 +253,7 @@ export default function OfferLoyaltyCard() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej"
           title="Najczęstsze pytania o karty lojalnościowe"
           items={[
             {
@@ -286,9 +276,49 @@ export default function OfferLoyaltyCard() {
           ]}
         />
 
+        {/* 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące materiałów promocyjnych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
+        <SectionSteps
+          title="Z czym warto połączyć karty lojalnościowe?"
+          subtitle="Zobacz też"
+          description="Karty lojalnościowe działają jeszcze lepiej, gdy klienci widzą je w kilku miejscach: w lokalu, w materiałach promocyjnych i online."
+          items={[
+            {
+              icon: <RiCoupon2Line className="h-8 w-8" />,
+              title: 'Kupony rabatowe i vouchery',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Kupony i vouchery świetnie uzupełniają program lojalnościowy - możesz nagradzać klientów dodatkowymi zaproszeniami lub zniżkami na specjalne okazje.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera">
+                      Zobacz projekty voucherów
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Plakaty i grafiki informujące o programie',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p className="mb-3 text-sm">Dobrze widoczna informacja przy ladzie, w recepcji lub w social mediach powoduje, że więcej osób pyta o program i zaczyna z niego korzystać.</p>
+                  <div className="mt-auto">
+                    <Button arrow link="/uslugi/projekty-graficzne/projekt-plakatu">
+                      Sprawdź projekty plakatów
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+          grid="two"
+        /> */}
+
+        <Gap variant="line" />
+
+        <ServicesSteps />
 
         <Gap size="sm" />
       </Wrapper>

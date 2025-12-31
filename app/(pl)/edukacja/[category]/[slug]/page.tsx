@@ -12,9 +12,9 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import CTABanner from '@/components/sections/CTABanner';
 
 import type { Article } from '@/types/article';
-import { getAllArticles, getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blog';
-import { slugify } from '@/utils/slug';
-import { toAbsoluteUrl } from '@/lib/url';
+import { getAllArticles, getAllArticlePreviews, findArticleBySlug, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import { slugify } from '@/utils/slugify';
+import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 import CodeBlock from '@/components/ui/CodeBlock';
 import TableBlock from '@/components/ui/TableBlock';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';

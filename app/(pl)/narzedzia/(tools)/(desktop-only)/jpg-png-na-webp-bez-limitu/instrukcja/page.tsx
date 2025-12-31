@@ -2,7 +2,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -17,12 +17,12 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Button from '@/components/ui/buttons/Button';
 
 export const metadata: Metadata = {
-  title: 'Instrukcja konwertera JPG/PNG na WebP - Arteon',
-  description: 'Instrukcja konwertera JPG/PNG na WebP. Dowiedz się, jak dodawać pliki, ustawiać jakość, korzystać ze Smart Quality i pobierać obrazy.',
+  title: 'Jak zamienić JPG i PNG na WebP? | Konwerter online bez limitu',
+  description: 'Zamień JPG i PNG na WebP online — bez limitu plików, bez wysyłania na serwer. Ustaw jakość (60-95%), pobierz wszystko jako ZIP. Instrukcja konwersji z funkcją Smart Quality.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja') },
   openGraph: {
-    title: 'Instrukcja konwertera JPG/PNG na WebP - Arteon',
-    description: 'Szczegółowa instrukcja obsługi darmowego konwertera JPG/PNG na WebP. Dowiedz się jak dodawać pliki, ustawiać jakość, korzystać ze Smart Quality i pobierać przekonwertowane obrazy.',
+    title: 'Jak zamienić JPG i PNG na WebP? | Konwerter online bez limitu',
+    description: 'Zamień JPG i PNG na WebP online — bez limitu plików, bez wysyłania na serwer. Ustaw jakość (60-95%), pobierz wszystko jako ZIP. Instrukcja konwersji z funkcją Smart Quality.',
     url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja'),
     type: 'website',
     images: [
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak używać konwertera JPG/PNG na WebP',
-  description: 'Instrukcja krok po kroku, jak konwertować obrazy JPG i PNG na format WebP za pomocą darmowego narzędzia online.',
+  name: 'Jak zamienić JPG i PNG na WebP online',
+  description: 'Instrukcja konwersji obrazów JPG i PNG na format WebP bez limitu plików. Ustaw jakość (60-95%), skorzystaj ze Smart Quality i pobierz przekonwertowane pliki jako ZIP.',
   url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja'),
   inLanguage: 'pl-PL',
   step: [
@@ -107,8 +107,8 @@ export default function Page() {
       <Script id="ld-json-webp-instruction" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <HeroBanner
-        title="Jak używać konwertera JPG/PNG na WebP"
-        description="Szczegółowa instrukcja obsługi narzędzia do konwersji obrazów na format WebP. Dowiesz się jak dodawać pliki, ustawiać jakość, rozumieć statusy i pobierać przekonwertowane grafiki."
+        title="Jak zamienić JPG i PNG na WebP online"
+        description="Konwertuj obrazy JPG i PNG na WebP bez limitu plików — wszystko lokalnie w przeglądarce. Instrukcja z ustawianiem jakości (60-95%), funkcją Smart Quality i pobieraniem jako ZIP."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

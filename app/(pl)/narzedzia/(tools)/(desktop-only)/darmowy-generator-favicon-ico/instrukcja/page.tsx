@@ -10,18 +10,18 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import Link from 'next/link';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import { RiUploadLine, RiLayoutGridLine, RiSettings3Line, RiDownloadLine, RiFolderZipLine, RiFileDownloadLine } from 'react-icons/ri';
 import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
-  title: 'Jak używać generatora favicon - instrukcja krok po kroku - Arteon',
-  description: 'Instrukcja generatora favicon. Dowiedz się, jakie rozmiary ikon są potrzebne, jak korzystać z narzędzia i gdzie wgrać pliki.',
+  title: 'Jak stworzyć favicon dla strony? | Generator ikon krok po kroku',
+  description: 'Stwórz favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Dowiedz się, jakie rozmiary ikon są potrzebne na stronę, jak wgrać favicon do WordPress i Next.js.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico/instrukcja') },
   openGraph: {
-    title: 'Jak używać generatora favicon - instrukcja krok po kroku - Arteon',
-    description: 'Szczegółowa instrukcja obsługi darmowego generatora favicon. Dowiedz się, jakie rozmiary ikon są potrzebne, jak korzystać z narzędzia i gdzie wgrać wygenerowane pliki.',
+    title: 'Jak stworzyć favicon dla strony? | Generator ikon krok po kroku',
+    description: 'Stwórz favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Dowiedz się, jakie rozmiary ikon są potrzebne na stronę, jak wgrać favicon do WordPress i Next.js.',
     url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico/instrukcja'),
     type: 'website',
     images: [
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak używać generatora favicon',
-  description: 'Szczegółowa instrukcja obsługi darmowego generatora favicon online. Dowiedz się, jakie rozmiary ikon są potrzebne, jak korzystać z narzędzia i gdzie wgrać wygenerowane pliki.',
+  name: 'Jak stworzyć favicon dla strony internetowej',
+  description: 'Instrukcja generowania favicon.ico i ikon PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Dowiedz się, jakie rozmiary są potrzebne i jak wgrać favicon do WordPress, HTML i Next.js.',
   url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico/instrukcja'),
   inLanguage: 'pl-PL',
   step: [
@@ -101,8 +101,8 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Jak używać generatora favicon"
-        description="Szczegółowa instrukcja obsługi darmowego generatora favicon. Dowiedz się, jakie rozmiary ikon są potrzebne i jak wgrać pliki na stronę."
+        title="Jak stworzyć favicon dla strony internetowej"
+        description="Wygeneruj favicon.ico i wszystkie ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Instrukcja z opisem rozmiaru ikon, kodu HTML i wgrywania do WordPress oraz Next.js."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

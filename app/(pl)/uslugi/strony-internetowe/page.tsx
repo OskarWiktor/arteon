@@ -33,34 +33,25 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'co-sprawdzic-przed-uruchomieniem-strony',
-  'jak-wybrac-domene-i-hosting-dla-strony-firmowej',
-  'czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie',
-  'czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje',
-  'favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
-];
 
 export const metadata = {
-  title: 'Strony internetowe - projekt i realizacja - Arteon',
+  title: 'Strony internetowe - projekt i realizacja | Arteon',
   description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/strony-internetowe') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe' },
   openGraph: {
-    title: 'Strony internetowe - projekt i realizacja - Arteon',
+    title: 'Strony internetowe - projekt i realizacja | Arteon',
     description: 'Szybkie, czytelne i dostępne strony. Widoczność w Google i treści w standardzie. Gwarancja 60 dni i jasne rozliczenia.',
-    url: toAbsoluteUrl('/uslugi/strony-internetowe'),
+    url: 'https://www.arteonagency.pl/uslugi/strony-internetowe',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baners-msc.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/strony-internetowe',
     serviceName: 'Tworzenie stron internetowych',
     description: 'Projektujemy i wdrażamy szybkie, dostępne strony firmowe, które sprzedają. Prosta nawigacja, SEO-ready treści i opieka po wdrożeniu.',
@@ -76,8 +67,6 @@ function ServiceSchema() {
 }
 
 export default function OfferWebPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -110,8 +99,8 @@ export default function OfferWebPage() {
 
         <SectionInfo title="Co zyskujesz dzięki stronie internetowej?">
           <p>
-            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób szukających lokalnie usług w Google trafia do siedziby firmy w ciągu 24 godzin, a 28% tych
-            wyszukań kończy się zakupem{' '}
+            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób szukających lokalnie usług w Google trafia do siedziby firmy w ciągu 24 godzin, a 28%
+            tych wyszukań kończy się zakupem{' '}
             <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
               (źródło)
             </a>
@@ -153,52 +142,52 @@ export default function OfferWebPage() {
             {
               title: 'Indywidualny projekt graficzny strony',
               description: <>Wygląd, który od pierwszych sekund buduje zaufanie i wyróżnia Twoją stronę na tle konkurencji</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Redakcję treści dla lepszej pozycji w Google',
               description: <>Teksty, które jasno wyjaśniają ofertę i prowadzą do kontaktu</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dobór i obróbka zdjęć',
               description: <>Pomagamy wybrać spójne zdjęcia oraz dopasowujemy je do Twojej strony: kadry, tło, rozmiary, waga.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wsparcie prawne przy politykach i regulaminach',
               description: <>Przeprowadzamy Cię przez wszelkie wymogi prawne</>,
-              icon: <GoLaw className="h-6 w-6 text-slate-700" />,
+              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Stronę dostosowana do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi strony',
               description: <>Proste instrukcje, stworzone tak, abyś samodzielnie mógł edytować stronę</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: <>Informujemy Cię regularnie o postępach prac nad Twoją stronę</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: <>Po publikacji pomagamy w dalszym rozwoju strony internetowej. Ewentualne błędy poprawiamy w ramach gwarancji</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -310,7 +299,7 @@ export default function OfferWebPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/strony-internetowe')}
+          pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe"
           items={[
             {
               question: 'Ile kosztuje stworzenie strony internetowej?',
@@ -366,10 +355,6 @@ export default function OfferWebPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
-
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące stron internetowych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>

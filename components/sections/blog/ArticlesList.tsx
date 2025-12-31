@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getAllArticles, getPrimaryCategorySlug } from '@/lib/blog';
-import { slugify } from '@/utils/slug';
+import { getAllArticles, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import { slugify } from '@/utils/slugify';
 
 const ui = {
   pl: {

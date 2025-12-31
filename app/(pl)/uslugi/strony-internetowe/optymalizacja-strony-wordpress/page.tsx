@@ -14,42 +14,33 @@ import SectionBasic from '@/components/ui/sections/SectionBasic';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
-  'czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie',
-  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
-  'meta-title-i-description-jak-je-napisac',
-  'co-sprawdzic-przed-uruchomieniem-strony',
-];
 
 import { RiSpeedFill, RiToolsLine, RiShieldCheckLine, RiDeviceLine, RiBarChart2Fill, RiFileList2Line } from 'react-icons/ri';
 
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+
+const BASE = 'https://www.arteonagency.pl';
 
 export const metadata = {
-  title: 'Optymalizacja strony WordPress - gwarancja 90+/100 - Arteon',
-  description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
+  title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
+  description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed. Szybsze ładowanie, lepsze Core Web Vitals.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress'),
+    canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
   },
   openGraph: {
-    title: 'Optymalizacja strony WordPress - gwarancja 90+/100 - Arteon',
-    description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 dla telefonów w PageSpeed. Przyciągnij nowych klientów dzięki optymalizacji witryny',
-    url: toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress'),
+    title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
+    description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed. Szybsze ładowanie, lepsze Core Web Vitals.',
+    url: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
     type: 'website',
     siteName: 'Arteon',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg12.webp') }],
+    images: [{ url: `${BASE}/assets/bg/abstract-bg12.webp` }],
   },
 } as const;
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
     serviceName: 'Optymalizacja strony WordPress',
     description: 'Optymalizacja stron WordPress z naciskiem na wydajność, stabilność i wersję mobilną. Strona zyskuje lepsze wyniki w testach szybkości i solidne podstawy pod SEO.',
@@ -65,8 +56,6 @@ function ServiceSchema() {
 }
 
 export default function OfferOptimizationWordPressPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -154,7 +143,7 @@ export default function OfferOptimizationWordPressPage() {
                   Google, szczególnie na urządzeniach mobilnych.
                 </>
               ),
-              icon: <RiSpeedFill className="h-6 w-6 text-slate-700" />,
+              icon: <RiSpeedFill className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Porządki we wtyczkach i motywie',
@@ -164,22 +153,22 @@ export default function OfferOptimizationWordPressPage() {
                   przy dalszych aktualizacjach.
                 </>
               ),
-              icon: <RiToolsLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiToolsLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Obrazy dopasowane do urządzeń',
               description: (
                 <>
-                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze zużycie transferu i znacznie lepsza szybkość działania
-                  witryny.
+                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze zużycie transferu i znacznie lepsza
+                  szybkość działania witryny.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wersja mobilna i wygoda korzystania',
               description: <>Korygowane są marginesy, czcionki i przyciski na telefonach. Efekt: strona jest czytelna, łatwa w obsłudze i lepiej przygotowana na ruch z urządzeń mobilnych.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -369,7 +358,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/strony-internetowe/optymalizacja-strony-wordpress')}
+          pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe/optymalizacja-strony-wordpress"
           title="Najczęstsze pytania o optymalizację WordPress"
           items={[
             {
@@ -403,10 +392,6 @@ export default function OfferOptimizationWordPressPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
-
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące optymalizacji WordPress" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>

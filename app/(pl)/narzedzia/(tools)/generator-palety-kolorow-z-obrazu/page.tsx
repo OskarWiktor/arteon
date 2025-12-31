@@ -3,7 +3,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import PaletteExtractor from '@/components/sections/tools/PaletteExtractor';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
@@ -11,11 +11,11 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Generator palety kolorów z obrazu online - Arteon',
+  title: 'Wyciągnij kolory ze zdjęcia lub logo',
   description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu') },
   openGraph: {
-    title: 'Generator palety kolorów z obrazu online - Arteon',
+    title: 'Wyciągnij kolory ze zdjęcia lub logo',
     description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
     url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Generator palety kolorów z obrazu online',
+  name: 'Wyciągnij kolory ze zdjęcia lub logo',
   alternateName: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
   url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
   applicationCategory: 'UtilityApplication',
@@ -58,13 +58,13 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Generator palety kolorów z obrazu"
+        title="Wyciągnij kolory ze zdjęcia lub logo"
         description="Dodaj obraz, a narzędzie pokaże użyte na nim kolory i stworzy z nich paletę barw. Skopiuj kod koloru jednym kliknięciem i użyj w dowolnym miejscu."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
-      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/generator-palety-kolorow-z-obrazu`, label: 'Generator palety kolorów z obrazu' }} includeJsonLd />
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Wyciągnij kolory ze zdjęcia lub logo' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="sm" />
@@ -92,7 +92,7 @@ export default function Page() {
             },
           ]}
           btnOne="Zobacz pełną instrukcję"
-          btnOneLink="/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja"
+          btnOneLink="/narzedzia/generator-palet-kolorow-online/instrukcja"
           btnOneVariant="accent"
         />
 

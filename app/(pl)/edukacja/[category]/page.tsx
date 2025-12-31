@@ -5,9 +5,9 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
-import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blog';
-import { slugify } from '@/utils/slug';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blogDataService';
+import { slugify } from '@/utils/slugify';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 
 const DEFAULT_META_DESCRIPTION = (label: string) => `Artykuły i poradniki: ${label}.`;
 

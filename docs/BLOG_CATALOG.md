@@ -25,6 +25,36 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?**
+
+  - **Slug**: `czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`
+  - **URL**: `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`
+  - **Kategorie**: `Psychologia`, `Sklepy`, `UX`
+  - **Data publikacji**: 2025-12-26
+  - **Czas czytania**: 12 min
+  - **Opis**: Kompleksowy artykuł o paradoksie wyboru (ang. choice overload) zgodny z wytycznymi. Obejmuje: skąd wiemy o paradoksie wyboru (eksperyment z dżemami Iyengar i Leppera, TED Talk Barry'ego Schwartza, mechanizmy: obciążenie poznawcze, strach przed błędem, żal po zakupie), kiedy paradoks jest najsilniejszy (podobne opcje, brak kryteriów, ważne decyzje, brak domyślnej opcji), wpływ na sprzedaż (niższa konwersja, mniejsza satysfakcja, dłuższy czas decyzji), jak projektować ofertę (ograniczenie liczby opcji do 3-5, wyraźne różnicowanie, domyślne opcje i rekomendacje, filtry), przykłady z branż (gastronomia, usługi profesjonalne, e-commerce, usługi medyczne), równowaga między wyborem a prostotą (progresywne ujawnianie, personalizacja, asystowane podejmowanie decyzji), paradoks wyboru a efekt zakotwiczenia (jak łączyć mechanizmy, spójność w komunikacji).
+  - **Linki wewnętrzne (8)**: `/uslugi/sklepy-internetowe`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/uslugi/strony-internetowe`, `/edukacja/psychologia/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/kontakt`
+  - **Linki zewnętrzne (4)**: Iyengar & Lepper (2000) - eksperyment z dżemami, Barry Schwartz TED Talk (The Paradox of Choice)
+  - **Tooltips**: paradoks wyboru
+  - **FAQ**: 5 pytań (czy dotyczy wszystkich klientów, ile opcji to za dużo, czy oznaczenie jako rekomendowana to manipulacja, jak sprawdzić czy oferta przytłacza, czy usuwać produkty z oferty)
+  - **CTA**: Sklepy internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (gastronomia, usługi profesjonalne, e-commerce, medycyna)
+
+- **Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?**
+
+  - **Slug**: `efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`
+  - **URL**: `/edukacja/psychologia/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`
+  - **Kategorie**: `Psychologia`, `Marketing`, `Sklepy`
+  - **Data publikacji**: 2025-12-26
+  - **Czas czytania**: 11 min
+  - **Opis**: Kompleksowy artykuł o efekcie zakotwiczenia (ang. anchoring effect) zgodny z wytycznymi. Obejmuje: skąd bierze się efekt zakotwiczenia (Tversky i Kahneman 1974, eksperyment z kołem fortuny, Nagroda Nobla Kahnemana), jak wpływa na postrzeganie cen (cena przekreślona, produkty premium jako kotwica, pierwsza oferta w negocjacjach), kiedy działa najsilniej (nieznajomość wartości rynkowej, złożone decyzje, trudne porównania), przykłady z branż (gastronomia, nieruchomości, usługi profesjonalne, e-commerce), jak wykorzystać w strategii cenowej (prezentacja od najdroższej opcji, cena regularna jako kotwica, kontekst porównawczy, produkt-kotwica), etyczne granice (uczciwe vs manipulacyjne użycie, budowanie zaufania, regulacje prawne - Dyrektywa Omnibus), efekt na stronie internetowej (cennik, strona produktu, strona usług).
+  - **Linki wewnętrzne (8)**: `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/uslugi/sklepy-internetowe`, `/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/strony-internetowe`, `/realizacje`, `/kontakt`
+  - **Linki zewnętrzne (5)**: Tversky & Kahneman (1974) - Science, Nobel Prize (Kahneman 2002), UOKiK (ceny regularne), Dyrektywa Omnibus 2019/2161
+  - **Tooltips**: efekt zakotwiczenia
+  - **FAQ**: 5 pytań (czy działa na każdego, jak wykorzystać w małej firmie, czy stosowanie jest etyczne, jak bronić się jako klient, czy działa tylko przy cenach)
+  - **CTA**: Strony internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (gastronomia, nieruchomości, prawo, e-commerce)
+
 - **Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?**
 
   - **Slug**: `czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`
@@ -109,7 +139,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2025-12-23
   - **Czas czytania**: 7 min
   - **Opis**: Artykuł o e-mail marketingu dla małych firm. Dlaczego e-mail marketing wciąż działa (ROI, bezpośredni dostęp, własność listy, personalizacja), rodzaje e-maili marketingowych (newsletter, automatyczne, transakcyjne, kampanie), co powinien zawierać skuteczny mailing (temat, preheader, struktura, CTA, stopka), na co zwrócić uwagę przy planowaniu (RODO, dostarczalność, częstotliwość, responsywność), najczęstsze problemy (niski open rate, wypisy, klikalność, spam, nieaktualna lista), jak mierzyć skuteczność (open rate, CTR, konwersja, bounce rate).
-  - **Linki wewnętrzne**: `/uslugi/tworzenie-tresci`, `/narzedzia/darmowy-generator-stopki-mailowej`, `/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa`, `/kontakt`
+  - **Linki wewnętrzne**: `/uslugi/tworzenie-tresci`, `/narzedzia /darmowy-generator-stopki-mailowej`, `/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa`, `/kontakt`
   - **Linki zewnętrzne**: DMA (Data & Marketing Association) - źródło danych o ROI
   - **FAQ**: 5 pytań
   - **CTA**: Tworzenie treści + Kontakt

@@ -7,15 +7,15 @@ import ColorPaletteGenerator from '@/components/sections/tools/ColorPaletteGener
 import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
 export const metadata: Metadata = {
-  title: 'Generator palet kolorów online - system barw z jednego koloru',
+  title: 'Wygeneruj paletę kolorów z jednego koloru',
   description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online') },
   openGraph: {
-    title: 'Generator palet kolorów online - system barw z jednego koloru',
+    title: 'Wygeneruj paletę kolorów z jednego koloru',
     description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
     url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online'),
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Generator palet kolorów online - system barw z jednego koloru',
+  name: 'Wygeneruj paletę kolorów z jednego koloru',
   alternateName: 'Generator schematów barw HEX i HSL dla brandingu i UI',
   url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online'),
   applicationCategory: 'UtilityApplication',
@@ -58,7 +58,7 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Generator palet kolorów online - system barw z jednego koloru"
+        title="Wygeneruj paletę kolorów z jednego koloru"
         description="Podaj kolor bazowy, a narzędzie wygeneruje kompletne palety: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, system akcentów UI, paletę pastelową, ciemną i neutralną. Skopiuj HEX lub HSL i od razu użyj w brandingu, UI i projektach WWW."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
@@ -66,7 +66,7 @@ export default function Page() {
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzie' }}
-        third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Generator palet kolorów online - system barw z jednego koloru' }}
+        third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Wygeneruj paletę kolorów z jednego koloru' }}
         includeJsonLd
       />
 

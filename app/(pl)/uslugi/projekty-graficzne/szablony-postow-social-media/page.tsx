@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -19,38 +19,30 @@ import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine,
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-];
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Szablony postów social media - Arteon',
-  description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
+  title: 'Szablony postów do mediów społecznościowych | Arteon',
+  description: 'Projektujemy spójne szablony postów do mediów społecznościowych. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
   },
   openGraph: {
-    title: 'Szablony postów social media - Arteon',
-    description: 'Projektujemy spójne szablony postów do social mediów. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media'),
+    title: 'Szablony postów do mediów społecznościowych | Arteon',
+    description: 'Projektujemy spójne szablony postów do mediów społecznościowych. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/szablony-postow-social-media',
-    serviceName: 'Szablony postów social media',
-    description: 'Szablony postów do social mediów: spójne z marką, łatwe do edycji, przygotowane pod wybrane media społecznościowe. Gotowe zestawy + instrukcja użycia.',
+    serviceName: 'Szablony postów do mediów społecznościowych',
+    description: 'Szablony postów do mediów społecznościowych: spójne z marką, łatwe do edycji. Gotowe zestawy + instrukcja użycia.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -63,8 +55,6 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignSocialMediaPostTemplatesPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -96,7 +86,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{
           href: `/uslugi/projekty-graficzne/szablony-postow-social-media`,
-          label: 'Szablony postów social media',
+          label: 'Szablony postów do mediów społecznościowych',
         }}
         includeJsonLd
       />
@@ -107,7 +97,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         <SectionInfo title="Co zyskujesz dzięki szablonom postów?">
           <p>
             <strong>Stały, rozpoznawalny styl w całej komunikacji.</strong> Szablony utrzymują wspólny charakter postów, dzięki czemu odbiorca szybciej kojarzy Twoją markę, a profil wzbudza większe
-            zaufanie wsród Twoich klientów.
+            zaufanie wśród klientów.
           </p>
 
           <br />
@@ -137,25 +127,25 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
           items={[
             {
               title: 'Spójny system wizualny',
-              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              description: <>Dopasowujemy kolory, typografię i styl do swojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Edytowalne pliki',
               description: (
                 <>Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy kolory zmienisz bez znajomości zaawansowanych programów.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'System pod różne typy postów',
               description: <>Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta, opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -269,7 +259,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media"
           title="Najczęstsze pytania o szablony postów"
           items={[
             {
@@ -316,7 +306,9 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               title: 'Projekt identyfikacji wizualnej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.</p>
+                  <p className="mb-3 text-sm">
+                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.
+                  </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
                       Zobacz projekt identyfikacji wizualnej
@@ -332,10 +324,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         <Gap variant="line" />
 
         <ServicesSteps />
-
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące social media" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
 
         <Gap size="sm" />
       </Wrapper>
@@ -355,3 +343,5 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
     </>
   );
 }
+
+

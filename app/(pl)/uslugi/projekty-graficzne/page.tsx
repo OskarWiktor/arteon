@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -39,35 +39,12 @@ import {
 } from 'react-icons/ri';
 
 import Script from 'next/script';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych',
-  'kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'kody-qr-w-materialach-reklamowych',
-];
 
 const SERVICES = [
-  { name: 'Projekt wizytówki', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-wizytowki') },
-  { name: 'Projekt ulotki', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-ulotki') },
-  { name: 'Teczka ofertowa', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-teczki-ofertowej') },
-  { name: 'Papier firmowy', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-papieru-firmowego') },
-  { name: 'Odzież firmowa', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-odziezy-firmowej') },
-  { name: 'Projekt logo', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-logo') },
-  { name: 'Projekt katalogu', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-katalogu') },
-  { name: 'Identyfikacja wizualna', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej') },
-  { name: 'Projekt graficzny strony', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-graficzny-strony') },
-  { name: 'Szablony postów na social media', path: toAbsoluteUrl('/uslugi/projekty-graficzne/szablony-postow-social-media') },
-  { name: 'Kupony rabatowe i vouchery', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera') },
-  { name: 'Projekt cennika', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika') },
-  { name: 'Karty lojalnościowe', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej') },
-  { name: 'Projekt menu restauracji', path: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-menu-restauracji') },
+  { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
+  { name: 'Projekt ulotki', path: '/uslugi/projekty-graficzne/projekt-ulotki' },
+  { name: 'Teczka ofertowa', path: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej' },
   { name: 'Papier firmowy', path: '/uslugi/projekty-graficzne/projekt-papieru-firmowego' },
   { name: 'Odzież firmowa', path: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej' },
   { name: 'Projekt logo', path: '/uslugi/projekty-graficzne/projekt-logo' },
@@ -82,16 +59,17 @@ const SERVICES = [
 ];
 
 function ItemListSchema() {
+  const base = 'https://www.arteonagency.pl';
   const json = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': `${siteUrl}/#projekty-graficzne-itemlist`,
+    '@id': `${base}/#projekty-graficzne-itemlist`,
     name: 'Projekty graficzne - oferta usług',
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: SERVICES.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: s.path,
+      url: `${base}${s.path}`,
       name: s.name,
     })),
   };
@@ -104,21 +82,19 @@ function ItemListSchema() {
 }
 
 export const metadata = {
-  title: 'Projekty graficzne do druku i online - Arteon',
+  title: 'Projekty graficzne do druku i online | Arteon',
   description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/projekty-graficzne') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne' },
   openGraph: {
-    title: 'Projekty graficzne do druku i online - Arteon',
+    title: 'Projekty graficzne do druku i online | Arteon',
     description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg15.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
   },
 } as const;
 
-export default function OfferGraphicDesign() {
-  const articles = getAllArticlePreviews();
-
+export default function OfferDesignPage() {
   return (
     <>
       <HeroBanner
@@ -216,42 +192,42 @@ export default function OfferGraphicDesign() {
             {
               title: 'Pełną własność plików i praw',
               description: <>Po zakończeniu projektu przekazujemy komplet plików źródłowych i użytkowych wraz z licencjami. Masz pełną kontrolę nad materiałami firmowymi - dziś i w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Pliki gotowe do druku i wdrożenia online',
               description: <>Dostarczamy pakiet do druku a także warianty do sieci - wszystko zoptymalizowane i gotowe do użycia.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Konsekwentną identyfikację wizualną',
               description: <>Ustalamy system kolorów i typografii oraz reguły stosowania. Dzięki temu wszystkie materiały firmowe mówią jednym językiem i wzmacniają markę przy każdym kontakcie.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Skład DTP z dbałością o detale',
               description: <>Kontrolujemy hierarchię, kerning i siatki. Przy katalogach i ulotkach pilnujemy czytelności, marginesów bezpieczeństwa oraz logiki łamania treści.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dobór i obróbkę zdjęć',
               description: <>Pomagamy w wyborze zdjęć oraz dostosowujemy kadry, tła i kolory. Pliki przygotowujemy w zgodnych profilach barwnych do druku i na stronę internetową.</>,
-              icon: <RiImageLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiImageLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Dostępność i czytelność',
               description: <>Projektujemy tak, aby materiały były zrozumiałe i czytelne. Kontrast, wielkości fontów i hierarchia informacji wspierają odbiorcę w szybkim podjęciu decyzji.</>,
-              icon: <IoAccessibilityOutline className="h-6 w-6 text-slate-700" />,
+              icon: <IoAccessibilityOutline className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Gwarancję i wsparcie po wdrożeniu',
               description: <>Po finalizacji masz nasze wsparcie przez 2 miesiące. Ewentualne poprawki techniczne wykonujemy w ramach gwarancji, a na życzenie wprowadzamy płatne zmiany.</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Otrzymujesz ofertę z zakresem i terminami. Informujemy na bieżąco o ewentualnych kosztach dodatkowych, zanim podejmiemy kolejne kroki.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -424,8 +400,8 @@ export default function OfferGraphicDesign() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe
-                    do edycji i eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
+                    eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
@@ -519,7 +495,7 @@ export default function OfferGraphicDesign() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
           title="Najczęstsze pytania o projekty graficzne"
           items={[
             {
@@ -573,10 +549,6 @@ export default function OfferGraphicDesign() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące projektów graficznych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -592,3 +564,5 @@ export default function OfferGraphicDesign() {
     </>
   );
 }
+
+

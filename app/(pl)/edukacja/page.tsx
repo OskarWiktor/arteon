@@ -4,26 +4,23 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
-import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blog';
-import { toAbsoluteUrl } from '@/lib/url';
+import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blogDataService';
 
-const EDUKACJA_HERO_IMAGE = '/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp';
+const siteUrl = 'https://www.arteonagency.pl';
 
 export const metadata: Metadata = {
-  title: 'Edukacja - Arteon',
-  description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci. Dowiedz się, jak rozwijać firmę online.',
-  alternates: { canonical: toAbsoluteUrl('/edukacja') },
+  title: 'Edukacja - poradniki i wiedza | Arteon',
+  description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+  alternates: { canonical: 'https://www.arteonagency.pl/edukacja' },
   openGraph: {
-    title: 'Edukacja - Arteon',
-    description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
-    url: toAbsoluteUrl('/edukacja'),
+    title: 'Edukacja - poradniki i wiedza | Arteon',
+    description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+    url: `${siteUrl}/edukacja`,
     type: 'website',
+    // TODO: Add unique OpenGraph image for education/blog page: /assets/og/edukacja.webp (1200x630px)
     images: [
       {
-        url: toAbsoluteUrl(EDUKACJA_HERO_IMAGE),
-        width: 1200,
-        height: 630,
-        alt: 'Edukacja - Arteon',
+        url: `${siteUrl}/assets/ogien.webp`,
       },
     ],
   },
@@ -32,18 +29,18 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': `${toAbsoluteUrl('/edukacja')}#collection`,
-  name: 'Edukacja - Arteon',
-  description: 'Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci.',
-  url: toAbsoluteUrl('/edukacja'),
+  '@id': `${siteUrl}/edukacja#collection`,
+  name: 'Edukacja - poradniki i wiedza | Arteon',
+  description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
+  url: `${siteUrl}/edukacja`,
   mainEntity: {
     '@type': 'ItemList',
-    '@id': `${toAbsoluteUrl('/edukacja')}#itemlist`,
+    '@id': `${siteUrl}/edukacja#itemlist`,
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: getAllArticles().map((a, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: toAbsoluteUrl(`/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`),
+      url: `${siteUrl}/edukacja/${getPrimaryCategorySlug(a)}/${a.slug}`,
       name: a.seo?.title || a.title,
     })),
   },
@@ -54,13 +51,7 @@ export default function EdukacjaPage() {
 
   return (
     <>
-      <HeroBanner
-        title="Edukacja"
-        description="Artykuły i poradniki o stronach internetowych, marketingu, grafice i widoczności w sieci."
-        variant="center"
-        backgroundImage={EDUKACJA_HERO_IMAGE}
-        overlay="black"
-      />
+      <HeroBanner title="Edukacja" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
       <Wrapper>
         <Gap size="sm" />
         <FilterBar cats={cats} />

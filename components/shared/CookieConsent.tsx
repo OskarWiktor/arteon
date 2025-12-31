@@ -5,7 +5,7 @@ import Button from '../ui/buttons/Button';
 import { loadAhrefs } from '@/lib/consent/ahrefs';
 import { loadGA } from '@/lib/consent/ga';
 import { updateGtagConsent } from '@/lib/consent/gtag';
-import { readConsent, writeConsent } from '@/lib/consent/storage';
+import { readConsent, writeConsent } from '@/lib/consent/consentCookie';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useRestoreFocus } from '@/hooks/useRestoreFocus';

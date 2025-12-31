@@ -1,5 +1,621 @@
 # DONE_TASKS
 
+## 2025-12-31
+
+- ✅ **[REVERT-001] Narzędzia: przywrócenie starych URL-i i usunięcie redirectów SEO-019**
+
+  - **Co zrobiono**:
+    - Przywrócono stare URL-e narzędzi (przed zmianami SEO-019).
+    - Zmieniono nazwy folderów narzędzi z nowych na stare:
+      - `konwerter-webp` → `jpg-png-na-webp-bez-limitu`
+      - `kadrowanie-zdjec` → `zmiana-rozmiaru-i-kadrowanie-zdjecia`
+      - `generator-favicon` → `darmowy-generator-favicon-ico`
+      - `licznik-meta-tagow` → `licznik-dlugosci-meta-title-i-description`
+      - `generator-stopki-mailowej` → `darmowy-generator-stopki-mailowej`
+      - `tester-kontrastu-wcag` → `tester-kontrastu-kolorow-wcag`
+      - `paleta-kolorow-z-obrazu` → `generator-palety-kolorow-z-obrazu`
+      - `generator-palet-kolorow` → `generator-palet-kolorow-online`
+    - Usunięto `TOOL_REDIRECTS` z `lib/redirects.ts`.
+    - Zaktualizowano linki i schema JSON-LD w `app/(pl)/narzedzia/page.tsx`.
+    - Zaktualizowano linki w `components/shared/navigation-data/pl.ts`, `components/shared/Footer.tsx`, `app/(pl)/mapa-strony/page.tsx`.
+    - Zaktualizowano URL-e w plikach narzędzi (page.tsx, instrukcja/page.tsx) — canonical, OG, schema, breadcrumbs, linki.
+    - Linki w blogu (`data/pl/blog.json`) już były na starych URL-ach — teraz działają poprawnie.
+  - **Pliki zmienione**:
+    - `lib/redirects.ts`
+    - `app/(pl)/narzedzia/page.tsx`
+    - `app/(pl)/mapa-strony/page.tsx`
+    - `components/shared/navigation-data/pl.ts`
+    - `components/shared/Footer.tsx`
+    - `app/(pl)/narzedzia/(tools)/**` (wszystkie page.tsx i instrukcja/page.tsx)
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+## 2025-01-03
+
+- ✅ **[TOOLS-046] Generator stopki mailowej: naprawa UI zakładek Wygląd, Odstępy, Zaawansowane**
+
+  - **Co zrobiono**:
+    - Naprawiono crash zakładki Zaawansowane — dodano fallback dla customColors w loadFromStorage (stare dane w localStorage mogły nie mieć tej właściwości).
+    - Uproszczono zakładkę Odstępy — usunięto boxy, zmniejszono tekst, użyto prostego layoutu z przyciskami Mały/Standard/Duży.
+    - Naprawiono sekcję „Kolory i rozmiary elementów":
+      - Zwiększono ikony kolorów z `h-4 w-4` do `h-6 w-6`.
+      - Usunięto ramki przy elementach (`rounded-lg border border-neutral-200 bg-neutral-50`).
+      - Zwiększono przyciski A-/A+ z `px-2 py-1 text-[10px]` do `px-3 py-1.5 text-xs`.
+      - Naprawiono color picker — teraz jest `h-6 w-6` kwadratem z border.
+    - Usunięto ikonkę RiRefreshLine z przycisku „Resetuj wygląd".
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-045] Generator stopki mailowej: rozbudowa zakładek + modal potwierdzenia + reset**
+
+  - **Co zrobiono**:
+    - Przywrócono funkcjonalność własnych kolorów (customColors) w zakładce Zaawansowane.
+    - Usunięto predefiniowane kolory z ELEMENT_COLOR_OPTIONS (Ciemny, Niebieski, Fioletowy, Zielony, Szary) — teraz przy elementach są tylko własne kolory użytkownika + color picker.
+    - Stworzono nową zakładkę „Odstępy" z rozbudowanymi opcjami i przyciskami −/+ (przeniesiono z Zaawansowane).
+    - Stworzono reużywalny komponent `ConfirmDialog` (na podstawie SearchDialog).
+    - Dodano przycisk „Resetuj wygląd" z modelem potwierdzenia (resetuje styleConfig do domyślnych).
+    - Zaktualizowano stronę instrukcji — nowa zakładka Odstępy, własne kolory, przycisk Resetuj.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/ui/ConfirmDialog.tsx` (nowy)
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-044] Generator stopki mailowej: usunięcie własnych kolorów z zakładki Zaawansowane + naprawa stylów**
+
+  - **Co zrobiono**:
+    - Usunięto sekcję „Własne kolory" z zakładki Zaawansowane (color picker + przycisk „+ Dodaj" + renderowanie zapisanych kolorów).
+    - Usunięto renderowanie customColors przy elementach tekstowych.
+    - Naprawiono styl trzeciego przycisku odstępów „Treść → Stopka" — był niespójny z dwoma poprzednimi.
+    - Usunięto `customColors` z `StyleConfig` w `types.ts` oraz `DEFAULT_STYLE`.
+    - Usunięto niepotrzebny stan `customColorInput` i funkcję `handleAddCustomColor`.
+    - Zaktualizowano stronę instrukcji — usunięto wzmianki o „Własne kolory", „Dodaj do palety" oraz FAQ o zapisywaniu własnych kolorów.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-030] Generator stopki mailowej: refaktor UI — spójność przycisków i checkboxów z innymi narzędziami**
+
+  - **Co zrobiono**:
+    - Zmieniono etykietę z „Motyw kolorystyczny" na „Kolory i czcionki" (w zakładce Wygląd nie było przycisków motywów).
+    - Ujednolicono checkbox „Pokaż ikony zamiast nazw" — dodano `id` i `htmlFor`, użyto spójnych klas z checkboxem „Pokaż linię oddzielającą".
+    - Zmieniono styl przycisków A-/A+ (rozmiar czcionki elementów) na spójny z innymi przyciskami opcji (rounded-lg border, px-2 py-1).
+    - Zaktualizowano stronę instrukcji — usunięto wzmianki o „motywach kolorystycznych" (sekcja i schema HowTo).
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+## 2025-01-03
+
+- ✅ **[SEO-021] Usługi: optymalizacja SEO stron usługowych (usunięcie pustych haseł)**
+
+  - **Co zrobiono**:
+    - Usunięto puste hasła marketingowe z description zgodnie z INSTRUCTIONS.md (linia 537).
+    - Zmieniono "social media" na "media społecznościowe" (linia 468).
+    - Zmieniono "Twojej" na "swojej" gdzie właściwe (linia 476).
+  - **Zmienione strony (9 plików)**:
+    - `/uslugi/tworzenie-tresci` — usunięto "budują widoczność i zaufanie", "Przyciągnij klientów"
+    - `/uslugi/projekty-graficzne/projekt-wizytowki` — usunięto "buduje zaufanie od pierwszego spojrzenia"
+    - `/uslugi/projekty-graficzne/projekt-ulotki` — usunięto "przyciąga uwagę"
+    - `/uslugi/projekty-graficzne/projekt-teczki-ofertowej` — usunięto "podnosi prestiż", "buduje zaufanie"
+    - `/uslugi/projekty-graficzne/projekt-papieru-firmowego` — usunięto "wzmacnia wizerunek"
+    - `/uslugi/projekty-graficzne/projekt-odziezy-firmowej` — usunięto "lepsza rozpoznawalność", "buduje zaufanie"
+    - `/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej` — usunięto "zachęca klientów do powrotu"
+    - `/uslugi/projekty-graficzne/projekt-katalogu` — usunięto "podnoszą sprzedaż i wizerunek"
+    - `/uslugi/projekty-graficzne/szablony-postow-social-media` — zmieniono "social media" na "media społecznościowe"
+    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress` — usunięto "Przyciągnij nowych klientów"
+  - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[SEO-020] Repo: konsolidacja redirectów do jednego pliku (`lib/redirects.ts`)**
+
+  - **Co zrobiono**:
+    - Utworzono `lib/redirects.ts` z centralną konfiguracją wszystkich redirectów 301.
+    - Przeniesiono ~40 redirectów z `next.config.ts` do nowego pliku.
+    - Przeniesiono `TOOL_REDIRECTS` z `middleware.ts` do nowego pliku.
+    - Zaktualizowano `middleware.ts` — import z `lib/redirects.ts`, obsługa wszystkich redirectów (statycznych + dynamicznych wzorców).
+    - Usunięto funkcję `redirects()` z `next.config.ts` (pozostały tylko headers i webpack).
+  - **Pliki zmienione**:
+    - `lib/redirects.ts` (nowy) — TOOL_REDIRECTS, LEGACY_REDIRECTS, PROJECT_REDIRECTS, EDUCATION_REDIRECTS, ALL_STATIC_REDIRECTS
+    - `middleware.ts` — import + matchPatternRedirect dla /projects/:slug i /edukacja/design/:path*
+    - `next.config.ts` — usunięto async redirects()
+  - **Korzyści**: Jeden plik źródłowy dla wszystkich redirectów, łatwiejsze zarządzanie, middleware (edge) zamiast next.config.
+
+- ✅ **[COPY-TOOLS-001] Narzędzia: redakcja tekstów instrukcji zgodnie z praktykami SEO**
+
+  - **Co zrobiono**:
+    - Zweryfikowano 8 instrukcji narzędzi pod kątem 9 praktyk SEO.
+    - Wszystkie praktyki były już wdrożone w SEO-018:
+      - Tytuły w formie pytania z intentem wyszukiwania ✅
+      - Meta description 150-160 znaków ✅
+      - H1 spójne z meta title ✅
+      - Schema HowTo z jasnymi krokami ✅
+      - FAQ min. 5 pytań ✅
+      - CTA na końcu (link do narzędzia + kontakt) ✅
+      - Uniwersalność (bez ograniczeń "do strony") ✅
+    - Poprawiono tytuł generatora palet kolorów (usunięto "do strony").
+  - **Weryfikacja**: Wszystkie instrukcje spełniają 9 praktyk SEO.
+
+- ✅ **[SEO-019] Narzędzia: analiza potencjału SEO narzędzi (URL-e, meta, redirecty)**
+
+  - **Co zrobiono**:
+    - Skrócono URL-e 8 narzędzi dla lepszego SEO (frazy wyszukiwania):
+      - `/jpg-png-na-webp-bez-limitu` → `/jpg-png-na-webp-bez-limitu`
+      - `/zmiana-rozmiaru-i-kadrowanie-zdjecia` → `/zmiana-rozmiaru-i-kadrowanie-zdjecia`
+      - `/licznik-dlugosci-meta-title-i-description` → `/licznik-dlugosci-meta-title-i-description`
+      - `/darmowy-generator-favicon-ico` → `/darmowy-generator-favicon-ico`
+      - `/darmowy-generator-stopki-mailowej` → `/darmowy-generator-stopki-mailowej`
+      - `/generator-palet-kolorow-online` → `/generator-palet-kolorow`
+      - `/generator-palety-kolorow-z-obrazu` → `/generator-palet-kolorow-online`
+      - `/tester-kontrastu-kolorow-wcag` → `/tester-kontrastu-kolorow-wcag`
+    - Dodano redirecty 301 w `middleware.ts` ze starych URL na nowe.
+    - Zaktualizowano wszystkie linki wewnętrzne: nawigacja, stopka, mapa strony, strona /narzedzia.
+    - Zaktualizowano canonical URL i breadcrumbs we wszystkich plikach narzędzi.
+  - **Pliki zmienione**:
+    - `middleware.ts` — redirecty 301
+    - `components/shared/navigation-data/pl.ts` — nawigacja
+    - `components/shared/Footer.tsx` — stopka
+    - `app/(pl)/mapa-strony/page.tsx` — mapa strony
+    - `app/(pl)/narzedzia/page.tsx` — strona narzędzi
+    - Wszystkie pliki `page.tsx` i `instrukcja/page.tsx` w narzędziach
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[SEO-018] Narzędzia: optymalizacja SEO instrukcji narzędzi (tytuły, meta, FAQ, struktura)**
+
+  - **Co zrobiono**:
+    - Zoptymalizowano 8 stron instrukcji narzędzi pod kątem SEO.
+    - Zmieniono tytuły z technicznych ("Instrukcja X") na frazy z intentem wyszukiwania ("Jak zrobić X?").
+    - Rozbudowano meta description (150-160 znaków) z konkretnymi funkcjami i korzyściami.
+    - Zaktualizowano schema HowTo z lepszymi opisami.
+    - Ujednolicono H1 (HeroBanner) z tytułami stron.
+  - **Zmiany w plikach**:
+    - `licznik-dlugosci-meta-title-i-description/instrukcja` → "Jak sprawdzić długość meta title i description?"
+    - `darmowy-generator-favicon-ico/instrukcja` → "Jak stworzyć favicon dla strony?"
+    - `darmowy-generator-stopki-mailowej/instrukcja` → "Jak stworzyć stopkę mailową HTML?"
+    - `jpg-png-na-webp-bez-limitu/instrukcja` → "Jak zamienić JPG i PNG na WebP?"
+    - `zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja` → "Jak zmienić rozmiar zdjęcia online?"
+    - `generator-palet-kolorow-online/instrukcja` → "Jak dobrać kolory do strony?"
+    - `generator-palety-kolorow-z-obrazu/instrukcja` → "Jak wyciągnąć kolory ze zdjęcia?"
+    - `tester-kontrastu-kolorow-wcag/instrukcja` → "Jak sprawdzić kontrast kolorów WCAG?"
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+## 2025-01-02
+
+- ✅ **[TOOLS-033] Generator stopki mailowej: nowe formaty gotowych szablonów (design variations)**
+
+  - **Co zrobiono**:
+    - Dodano 5 gotowych szablonów: Minimalistyczny, Korporacyjny, Kreatywny, Profesjonalny, Social Media.
+    - Każdy szablon ma predefiniowany układ, kolory i widoczne pola.
+    - UI do wyboru szablonu na górze edytora (najeżdżając kursor widać opis szablonu).
+    - Wybór szablonu automatycznie konfiguruje layout i style.
+  - **Pliki**: `EmailSignatureGenerator.tsx`, `types.ts`
+  - **Weryfikacja**: `npm run build` OK
+
+- ✅ **[TOOLS-034] Generator stopki mailowej: upload logo z walidacją + automatyczny resize**
+
+  - **Co zrobiono**:
+    - Dodano przycisk "Wgraj" obok pola Avatar/logo.
+    - Obsługiwane formaty: PNG, JPG, WebP, SVG (max. 500 KB).
+    - Automatyczny resize do max. 120x120 px.
+    - Konwersja do base64 dla osadzenia w HTML.
+    - Podgląd wgranego obrazu z możliwością usunięcia.
+  - **Pliki**: `EmailSignatureGenerator.tsx`, `buildSignatureHtml.ts`, `types.ts`
+  - **Weryfikacja**: `npm run build` OK
+
+- ✅ **[TOOLS-035] Generator stopki mailowej: dodatkowe typy elementów (tagline, CTA2, banner, QR)**
+
+  - **Co zrobiono**:
+    - Nowa zakładka "Dodatki" w edytorze z elementami:
+      - **Tagline** — krótkie hasło/motto wyświetlane kursywą.
+      - **Drugi przycisk CTA** — z obramowaniem (wizualnie różny od pierwszego).
+      - **Banner graficzny** — nad lub pod stopką, opcjonalny link.
+      - **Kod QR z vCard** — automatycznie generowany z danych stopki, wybór rozmiaru i pozycji.
+    - Kontrolki ikon social media w zakładce "Media społecznościowe" (rozmiar, kolor).
+    - localStorage persistence — dane zapisywane automatycznie w przeglądarce.
+    - Przycisk "Pobierz HTML" do eksportu stopki jako plik.
+  - **Pliki**: `EmailSignatureGenerator.tsx`, `buildSignatureHtml.ts`, `types.ts`
+  - **Weryfikacja**: `npm run build` OK
+
+- ✅ **[DOCS-SIGNATURE] Redakcja strony instrukcji generatora stopki mailowej**
+
+  - **Co zrobiono**:
+    - Aktualizacja schematu HowTo o nowe kroki (szablony, extras, upload).
+    - Nowa sekcja "Szablony — szybki start" z opisem 5 szablonów.
+    - Aktualizacja opisu pola Avatar o funkcję wgrywania plików.
+    - Nowa sekcja "Zakładka Dodatki — elementy rozszerzone" (tagline, CTA2, banner, QR).
+    - Sekcja o ikonach social media z opcjami rozmiaru i koloru.
+    - Rozbudowane FAQ o nowe funkcje (14 pytań).
+  - **Plik**: `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run build` OK
+
+## 2025-12-31
+
+- ✅ **[TONE-001] Blog: audyt tonu artykułów — usunięcie chamskich/pouczających form**
+
+  - **Co zrobiono**:
+    - Dodano do `INSTRUCTIONS.md` szczegółowe wytyczne o zakazanym chamskim/pouczającym tonie (sekcja "ZAKAZ CHAMSKIEGO, NACHALNEGO I POUCZAJĄCEGO TONU")
+    - Przeszukano wszystkie artykuły pod kątem problematycznych fraz
+    - Naprawiono **4 problematyczne frazy** w 3 artykułach:
+      | Artykuł | Fragment przed | Fragment po |
+      |---------|----------------|-------------|
+      | `mapa-strony` | "To nie to samo co plik sitemap.xml" | "Plik sitemap.xml pełni inną funkcję" |
+      | `jak-przygotowac-grafike` | "Nie chodzi o to, żeby każdy post wyglądał identycznie, ale o to, żeby..." | "Posty mogą być różnorodne — kluczowe jest, żeby..." |
+      | `jak-identyfikacja-wizualna` | "Nie chodzi o pojedynczy projekt, tylko o zestaw zasad" | "Składa się z zestawu zasad" |
+    - Zaktualizowano `dateModified` dla 3 artykułów
+  - **Weryfikacja**: JSON OK, `npm run lint` OK
+  - **Uwaga**: Istniejące błędy ESLint w `EmailSignatureGenerator.tsx` (nieużywane importy) nie są związane z tym audytem
+
+- ✅ **[VERIFY-001 do VERIFY-015] Blog: audyt merytoryczny i prawny wszystkich artykułów**
+
+  - **Co zrobiono**:
+    - Przeprowadzono systematyczną weryfikację wszystkich 30 artykułów w `data/pl/blog.json`
+    - Sprawdzono zgodność z prawem polskim (Omnibus, RODO, ustawa o prawach konsumenta)
+    - Sprawdzono poprawność faktów, źródła dla statystyk, brak twierdzeń wprowadzających w błąd
+  - **Wykryte i naprawione błędy**:
+    | Artykuł | Fragment | Powód zmiany | Typ | Co zmieniono | Źródło dodane |
+    |---------|----------|--------------|-----|--------------|---------------|
+    | `efekt-zakotwiczenia` | "Klient nie wie, czy telewizor kiedykolwiek kosztował 4999 zł" | **FAŁSZ** — od 2023 r. Omnibus wymaga podania najniższej ceny z 30 dni | prawo | Dodano info o Dyrektywie Omnibus + oznaczono przykład jako hipotetyczny | ✅ UOKiK |
+    | `jak-dobrac-kolory` | "20-30% różnicy w konwersji" | Statystyka bez źródła | merytoryka | Usunięto konkretną liczbę, zastąpiono ogólniejszym stwierdzeniem | — |
+  - **Artykuły bez błędów**: Wszystkie pozostałe artykuły merytorycznie poprawne, źródła podane (Cialdini, BrightLocal 2023, DMA, Campaign Monitor, WCAG, Google, HubSpot, Colorcom, itp.)
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[ENCODING-001] Repo: systemowa naprawa błędnego kodowania znaków (Windows-1250 → UTF-8)**
+
+  - **Co zrobiono**:
+    - **ETAP 1 — DIAGNOZA**: Przeszukano wszystkie pliki .ts, .tsx, .json, .md w repozytorium i zidentyfikowano 7 plików z błędnym kodowaniem (znaki typu `ê, ³, ¹, æ, œ, ¿` zamiast polskich).
+    - **ETAP 2 — NAPRAWA**: Naprawiono wszystkie błędne znaki w 7 plikach:
+      - `app/not-found.tsx` (2 linie)
+      - `app/error.tsx` (6 linii)
+      - `app/(pl)/narzedzia/page.tsx` (51 wystąpień)
+      - `components/sections/tools/JpgPngToWebp.tsx` (43 wystąpienia)
+      - `components/sections/tools/ImageResizeTool.tsx` (38 wystąpień)
+      - `components/sections/tools/FaviconGenerator.tsx` (29 wystąpień)
+      - `components/sections/tools/WcagContrastChecker.tsx` (17 wystąpień)
+    - **ETAP 3 — ZAPOBIEGANIE**: Dodano konfigurację wymuszającą UTF-8:
+      - `.editorconfig` — wymusza `charset = utf-8` dla wszystkich plików
+      - `.gitattributes` — wymusza `working-tree-encoding=UTF-8` dla plików źródłowych
+      - Zaktualizowano `docs/INSTRUCTIONS.md` — dodano sekcję "Kodowanie plików — UTF-8" z zasadami, mapowaniem błędnych znaków i checklistą redakcyjną
+  - **Mapowanie naprawionych znaków**: `¹→ą`, `ê→ę`, `³→ł`, `œ→ś`, `¿→ż`, `Ÿ→ź`, `æ→ć`, `ñ→ń`, `£→Ł`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[AUDIT-017] + [REFACTOR-001] Repo: audyt nazw plików + refaktor**
+
+  - **Co zrobiono**:
+    - Przejrzano całą strukturę katalogów: `lib/`, `utils/`, `hooks/`, `components/`, `types/`
+    - Zidentyfikowano pliki z niejasnymi/generycznymi nazwami
+    - Zmieniono nazwy 6 plików:
+      - `lib/site.ts` → `lib/siteKeyDetection.ts`
+      - `lib/url.ts` → `lib/absoluteUrl.ts`
+      - `lib/blog.ts` → `lib/blogDataService.ts`
+      - `lib/projects.ts` → `lib/projectsDataService.ts`
+      - `lib/consent/storage.ts` → `lib/consent/consentCookie.ts`
+      - `utils/slug.ts` → `utils/slugify.ts`
+    - Zaktualizowano importy w ~100 plikach
+    - Dodano sekcję "Standard nazewnictwa plików" do INSTRUCTIONS.md
+  - **Pliki zachowane bez zmian** (uzasadnienie):
+    - `Gap.tsx`, `Wrapper.tsx` — standardowe nazwy w ekosystemie React
+    - `Filters.tsx` — kontekst katalogu wystarczający
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+## 2025-12-30
+
+- ✅ **[CONTENT-025 do CONTENT-034] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne**
+
+  - **Co zrobiono**:
+    - Przeprowadzono pełny audyt 30 artykułów pod kątem zasad ZERO DOPISAŃ — ZERO NIEPRAWDY
+    - Sprawdzono zgodność z przepisami: Omnibus, RODO, WCAG, European Accessibility Act
+    - Zweryfikowano poprawność źródeł i linków
+    - Sprawdzono czy przykłady hipotetyczne są prawidłowo oznaczone
+  - **Wyniki audytu**:
+    - **Wszystkie 30 artykułów zgodne** z zasadami ZERO DOPISAŃ
+    - **Wzorcowe artykuły** (prawidłowo cytują prawo):
+      - `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie` — EU directive 2016/2102, Polish law, EAA
+      - `efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci` — Omnibus directive
+      - `e-mail-marketing-dla-malych-firm` — RODO requirements
+      - `co-sprawdzic-przed-uruchomieniem-strony` — RODO, cookie consent
+    - **Źródła zweryfikowane**: WHO, GUS, National Eye Institute, Think with Google, StatCounter, BrightLocal, Google Search Central, WCAG 2.1, Baymard Institute, ScienceDirect, MarketingProfs, Journal of Consumer Research, Lucidpress
+    - **Brak zmian wymaganych** — artykuły już spełniają wszystkie kryteria
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[TEST-001] Generator stopki mailowej: testy regresyjne**
+
+  - **Co zrobiono**:
+    - Utworzono `docs/TEST_EMAIL_SIGNATURE.md` z checklistą testów.
+    - Smoke test (5 punktów, ~2 min przed deployem).
+    - Pełny test regresyjny obejmujący wszystkie panele, layouty, eksport i localStorage.
+  - **Pliki**: `docs/TEST_EMAIL_SIGNATURE.md`
+  - **Weryfikacja**: nie wymagana (dokumentacja)
+
+- ✅ **[TOOLS-043] Generator stopki mailowej: aktualizacja instrukcji**
+
+  - **Co zrobiono**:
+    - FAQ zaktualizowane o ikony social media i kod QR.
+    - Usunięte wzmianki o usuniętych funkcjach (JSON export/import, mobile preview).
+  - **Pliki**: `instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run build` OK
+
+- ✅ **[TOOLS-039] Generator stopki mailowej: QR code z danymi kontaktowymi (vCard)**
+
+  - **Co zrobiono**:
+    - Zintegrowano istniejący generator QR (`lib/tools/qr/generateQr.ts`) z generatorem stopki.
+    - Automatyczne budowanie vCard z danych stopki (imię, nazwisko, firma, telefon, email, www, adres).
+    - Toggle "Dodaj kod QR z vCard" w panelu Appearance.
+    - Wybór rozmiaru (mały/średni/duży) i pozycji (lewa/prawa).
+    - QR osadzany jako data URL w HTML stopki.
+  - **Pliki**: `types.ts`, `buildSignatureHtml.ts`, `EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[TOOLS-036] Generator stopki mailowej: ikony social media (SVG inline)**
+
+  - **Co zrobiono**:
+    - Utworzono moduł `lib/tools/email/socialIcons.ts` z ikonami SVG dla platform social media.
+    - Dodano toggle "Pokaż ikony zamiast nazw" w panelu Social.
+    - Dodano wybór rozmiaru ikon (małe/średnie/duże) i koloru (oryginalne/akcent).
+    - Ikony SVG inline kompatybilne z Gmail i Outlook.
+  - **Pliki**: `lib/tools/email/socialIcons.ts`, `buildSignatureHtml.ts`, `types.ts`, `EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[TOOLS-038] Generator stopki mailowej: localStorage auto-save**
+
+  - **Co zrobiono**:
+    - Dodano automatyczny zapis konfiguracji do localStorage przy każdej zmianie.
+    - Konfiguracja, styl i układ są przywracane po powrocie do narzędzia.
+  - **Pliki**: `EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+  - **Uwaga**: Usunięto dodatkowe funkcje (Eksport/Import JSON, podgląd mobile, Wyczyść dane) na prośbę użytkownika — niepotrzebne.
+
+- ✅ **[TOOLS-037] Generator stopki mailowej: eksport HTML**
+
+  - **Co zrobiono**:
+    - Utworzono moduł `lib/tools/email/exportSignature.ts` z funkcją `exportSignatureAsHtml()`.
+    - Dodano przycisk "Pobierz HTML" obok przycisku kopiowania.
+    - Eksportowany plik zawiera pełny dokument HTML z stopką.
+  - **Pliki**: `lib/tools/email/exportSignature.ts`, `EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[TOOLS-032] Generator stopki mailowej: personalizacja kolorów per-element**
+
+  - **Co zrobiono**:
+    - Dodano interfejs `ElementColors` w `types.ts` z kolorami dla 9 elementów (name, jobTitle, company, contact, links, social, cta, ctaText, legal).
+    - Rozszerzono `StyleConfig` o `elementColors` i `useElementColors`.
+    - Zaktualizowano `buildSignatureHtml.ts` — kolory stosowane do każdego elementu osobno.
+    - Dodano UI z checkboxem "Włącz personalizację kolorów per-element".
+    - Po włączeniu pojawia się siatka 9 pól wyboru koloru.
+    - Motywy automatycznie ustawiają kolory elementów przy wyborze.
+  - **Pliki**: `types.ts`, `buildSignatureHtml.ts`, `EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[TOOLS-031] Generator stopki mailowej: naprawa uploadu logo (URL → walidacja + podgląd)**
+
+  - **Co zrobiono**:
+    - Dodano stan `avatarStatus` (idle/loading/valid/error).
+    - Dodano walidację URL przez `Image.onload/onerror` z debounce 500ms.
+    - Dodano podgląd miniaturki (56x56 px, rounded) po prawej stronie inputa.
+    - Dodano komunikaty statusu: loading, valid (zielony), error (czerwony), idle.
+    - Input zmienia kolor obramowania w zależności od statusu.
+  - **Pliki**: `EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[AUDIT-017] Pełny audyt funkcji generowania obrazów (pobierania plików) w narzędziach**
+
+  - **Co zrobiono**:
+    - Przeprowadzono pełny audyt wszystkich narzędzi generujących obrazy do pobrania
+    - Zweryfikowano zgodność deklarowanego formatu z rzeczywistym MIME type w kodzie
+    - Sprawdzono wszystkie pliki `.webp` w `public/assets/**` pod kątem prawdziwości formatu (nagłówki binarne RIFF/WEBP)
+  - **Wyniki audytu**:
+    - **ImageResizeTool** (`/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`): ✅ OK
+      - UI oferuje: JPG, PNG, WebP
+      - Kod: `canvasToBlob(canvas, mime, quality)` z MIME `image/jpeg` / `image/png` / `image/webp`
+      - Pliki: `exportCroppedImage.ts`, `canvasToBlob.ts`
+    - **JpgPngToWebp** (`/narzedzia/jpg-png-na-webp-bez-limitu`): ✅ OK
+      - UI deklaruje: WebP
+      - Kod: `canvasToBlob(canvas, 'image/webp', quality)` via `convertImageFileToWebp()`
+      - Pliki: `lib/tools/image/webp.ts`, `useWebpConversion.ts`
+    - **FaviconGenerator** (`/narzedzia/darmowy-generator-favicon-ico`): ✅ OK
+      - UI deklaruje: PNG + ICO
+      - Kod: `canvasToBlob(canvas, 'image/png', 1)` + ICO container wrapper
+      - Pliki: `lib/tools/favicon/generator.ts`
+    - **QrCodeGenerator** (`/narzedzia/generator-kodu-qr`): ✅ OK
+      - UI oferuje: PNG + SVG
+      - Kod: `QRCode.toDataURL()` (PNG data URL) + `QRCode.toString()` (SVG string)
+      - Pliki: `lib/tools/qr/generateQr.ts`
+  - **Narzędzia bez generowania obrazów** (poza zakresem audytu):
+    - PaletteExtractor, ColorPaletteGenerator, WcagContrastChecker, EmailSignatureGenerator, MetaTitleDescriptionTool
+  - **Weryfikacja .webp w public/assets**:
+    - Sprawdzono 31 plików `.webp` w `public/assets/**`
+    - Wszystkie mają poprawny nagłówek `RIFF` + `WEBP` (prawdziwe pliki WebP)
+    - Brak fałszywych plików (JPG/PNG z rozszerzeniem .webp)
+  - **Wnioski**: Wszystkie narzędzia generują obrazy w deklarowanych formatach. Brak błędów do naprawy.
+  - **Follow-up**: brak (audyt zakończony pomyślnie)
+  - **Weryfikacja**: nie wymagana (AUDIT-only)
+
+- ✅ **[SEO-020] ROZSZERZONY AUDYT URL-i: pełna diagnoza linkowania, canonical, OG, JSON-LD, parametrów**
+
+  - **Co zrobiono**:
+    - Przeprowadzono kompletny, rozszerzony audyt całego projektu pod kątem URL-i i linkowania
+    - Zweryfikowano: `next.config.ts`, `middleware.ts`, `next-sitemap.config.cjs`, wszystkie metadata/canonical/og:url, JSON-LD, linkowanie wewnętrzne, searchParams, helpery URL
+    - **Wyniki pozytywne**: projekt w bardzo dobrej kondycji — poprzednie poprawki (SEO-018/019) działają prawidłowo
+    - **Znaleziono 1 drobny problem**: `FeesSteps.tsx` używał pełnego URL zamiast względnego
+    - **Wnioski**: brak problemów mogących realnie wpływać na SEO, GSC HTTPS, czy Senuto
+  - **Pliki**: `docs/TASKS.md` (dodano szczegółowy raport audytu)
+  - **Follow-up**: `SEO-021` (naprawa)
+  - **Weryfikacja**: nie wymagana (AUDIT-only)
+
+- ✅ **[SEO-021] Naprawa linkowania po rozszerzonym audycie URL-i**
+
+  - **Co zrobiono**:
+    - Zmieniono pełny URL na względny w `components/sections/steps/FeesSteps.tsx` linia 33
+    - `href="https://www.arteonagency.pl/regulamin"` → `href="/regulamin"`
+    - Wszystkie wewnętrzne linki używają teraz względnych ścieżek z leading slash
+  - **Pliki**: `components/sections/steps/FeesSteps.tsx`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
+
+- ✅ **[CONTENT-012] Blog: weryfikacja rzetelności źródeł — `czym-jest-linkowanie-wewnetrzne...` + `kontrast-kolorow...`**
+
+  - **Co zrobiono**:
+    - `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony` — zweryfikowano, wszystkie źródła poprawne (Google Search Console, Ahrefs)
+    - `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie` — poprawiono:
+      - Dodano źródło National Eye Institute (NEI) do statystyki o daltonizmie (8% mężczyzn, 0,5% kobiet)
+      - Zaktualizowano `dateModified` na 2025-12-30
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-013] Blog: weryfikacja rzetelności źródeł — `czym-jest-content-marketing` + `e-mail-marketing-dla-malych-firm`**
+
+  - **Co zrobiono**:
+    - `czym-jest-content-marketing` — zweryfikowano, źródło HubSpot poprawne
+    - `e-mail-marketing-dla-malych-firm` — poprawiono:
+      - Dodano źródło Campaign Monitor (2023) dla statystyk open rate (21%) i CTR (2-3%)
+      - Zmiękciono stwierdzenie o unsubscribe rate (usunięto konkretną wartość „normalną")
+      - Zmiękciono stwierdzenie o mobile („znaczna część" zamiast „ponad połowa")
+      - Zaktualizowano `dateModified` na 2025-12-30
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-014] Blog: weryfikacja rzetelności źródeł — `co-sprawdzic-przed-uruchomieniem-strony` + `jak-przygotowac-grafike-do-postow...`**
+
+  - **Co zrobiono**:
+    - `co-sprawdzic-przed-uruchomieniem-strony` — OK, źródło Think with Google poprawne (32% bounce rate)
+    - `jak-przygotowac-grafike-do-postow...` — OK, źródło MIT poprawne (13ms image processing)
+    - Bez zmian w artykułach
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-015] Blog: weryfikacja rzetelności źródeł — `jak-wybrac-domene-i-hosting...` + `jak-mierzyc-skutecznosc...`**
+
+  - **Co zrobiono**:
+    - `jak-wybrac-domene-i-hosting-dla-strony-firmowej` — zweryfikowano, brak statystyk wymagających źródeł (wiedza techniczna)
+    - `jak-mierzyc-skutecznosc-strony-internetowej` — zweryfikowano, link do Google Analytics poprawny, fakty o GA4 zgodne
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-016] Blog: weryfikacja rzetelności źródeł — `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma` + `czym-jest-responsywnosc...`**
+
+  - **Co zrobiono**:
+    - `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma` — poprawiono:
+      - Usunięto nieudokumentowaną statystykę o zdjęciach (42%/35%)
+      - Zastąpiono ogólnym stwierdzeniem o korzyściach ze zdjęć
+      - Zaktualizowano `dateModified` na 2025-12-30
+    - `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie` — zweryfikowano, wszystkie źródła poprawne (StatCounter, Google, WCAG 2.1, Think with Google, Baymard)
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-017] Blog: weryfikacja rzetelności źródeł — `czym-jest-certyfikat-ssl...` + `meta-title-i-description...`**
+
+  - **Co zrobiono**:
+    - `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje` — zweryfikowano, wszystkie źródła poprawne (GlobalSign, Google, SSL Labs)
+    - `meta-title-i-description-jak-je-napisac` — zweryfikowano, źródło Backlinko poprawne
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-018] Blog: weryfikacja rzetelności źródeł — `materialy-drukowane-dla-firmy...` + `kody-qr-w-materialach...`**
+
+  - **Co zrobiono**:
+    - `materialy-drukowane-dla-firmy-ktore-zamowic` — zweryfikowano, wszystkie źródła poprawne (ScienceDirect, MarketingProfs, Journal of Consumer Research, Lucidpress)
+    - `kody-qr-w-materialach-reklamowych` — zweryfikowano, wszystkie źródła poprawne (Statista, StatCounter)
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-019] Blog: weryfikacja rzetelności źródeł — `jak-dobrac-kolory-do-strony...` + `jak-przygotowac-sklep-internetowy...`**
+
+  - **Co zrobiono**:
+    - `jak-dobrac-kolory-do-strony-internetowej` — zweryfikowano, wszystkie źródła poprawne (Behaviour & IT, Colorcom, HubSpot, WCAG, Statista)
+    - `jak-przygotowac-sklep-internetowy-do-pozycjonowania` — zweryfikowano, wszystkie źródła poprawne (Google docs, web.dev)
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-020] Blog: weryfikacja rzetelności źródeł — `jak-przygotowac-profesjonalna-stopke...` + `favicon-co-to-za-ikona...`**
+
+  - **Co zrobiono**:
+    - `jak-przygotowac-profesjonalna-stopke-mailowa` — zweryfikowano, brak statystyk wymagających źródeł (poradnik praktyczny)
+    - `favicon-co-to-za-ikona...` — zweryfikowano, źródło Chrome Developers poprawne
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-021] Blog: weryfikacja rzetelności źródeł — `faq-na-stronie...` + `jak-kolorystyka-wplywa...`**
+
+  - **Co zrobiono**:
+    - `faq-na-stronie-jak-pisac-pytania...` — zweryfikowano, wszystkie źródła poprawne (AnswerThePublic, AlsoAsked, Google Search Console, Google FAQ schema)
+    - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow` — zweryfikowano, wszystkie źródła poprawne (Management Decision, Journal of Business Research, HubSpot, WiderFunnel)
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-022] Blog: weryfikacja rzetelności źródeł — `ile-czasu-trwa-pozycjonowanie...` + `czy-lokalne-firmy-potrzebuja-bloga...`**
+
+  - **Co zrobiono**:
+    - `ile-czasu-trwa-pozycjonowanie...` — zweryfikowano, wszystkie źródła poprawne (Google Search Central, Ahrefs, BrightLocal, Semrush, HubSpot)
+    - `czy-lokalne-firmy-potrzebuja-bloga...` — zweryfikowano, wszystkie źródła poprawne (BrightLocal, Ahrefs, Neil Patel)
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-023] Blog: weryfikacja rzetelności źródeł — `jak-zoptymalizowac-zdjecia...` + `jak-pisac-tresci-na-stronie...`**
+
+  - **Co zrobiono**:
+    - `jak-zoptymalizowac-zdjecia...` — zweryfikowano, wszystkie źródła poprawne (PageSpeed, web.dev, Google WebP Study, Netflix Tech Blog, Lighthouse)
+    - `jak-pisac-tresci-na-stronie...` — zweryfikowano, poradnik praktyczny z przykładami z różnych branż
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-024] Blog: weryfikacja rzetelności źródeł — `jak-identyfikacja-wizualna...` + `dlaczego-strona-internetowa-nie-wyswietla-sie...`**
+
+  - **Co zrobiono**:
+    - `jak-identyfikacja-wizualna...` — zweryfikowano, wszystkie źródła poprawne (Lucidpress, Journal of Product & Brand Management, MIT/Behaviour & IT)
+    - `dlaczego-strona-internetowa-nie-wyswietla-sie...` — zweryfikowano, wszystkie źródła poprawne (Google Search Console, PageSpeed Insights)
+    - Bez zmian w artykułach — wszystkie źródła poprawne
+  - **Pliki**: brak zmian
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[CONTENT-011] INSTRUCTIONS: rozszerzenie zasad rzetelności danych i źródeł w treściach**
+
+  - **Co zrobiono**:
+    - Dodano nową sekcję „Rzetelność danych i źródeł (aktualizacja 2025-12-30)" do `docs/INSTRUCTIONS.md`:
+      - Zasady nadrzędne: zero dopowiedzeń, zero wymyślonych danych, zero błędnych źródeł
+      - Standard źródeł dla różnych typów treści (SEO, psychologia, technologia, case studies)
+      - Zasady weryfikacji linków i cytatów
+      - Instrukcja postępowania w razie niepewności
+      - Przykłady dobrego i złego cytowania
+    - Zweryfikowano 2 najnowsze artykuły (2025-12-26):
+      - `czym-jest-paradoks-wyboru...` — poprawiono (dodano źródło Barry Schwartz do twierdzenia o żalu po wyborze)
+      - `efekt-zakotwiczenia...` — OK, wszystkie źródła poprawne
+    - Utworzono 13 zadań weryfikacji dla pozostałych 26 artykułów (CONTENT-012 do CONTENT-024, po 2 artykuły na zadanie)
+  - **Pliki**: `docs/INSTRUCTIONS.md`, `docs/TASKS.md`, `data/pl/blog.json`
+  - **Weryfikacja**: nie wymagana (content-only)
+
+- ✅ **[SEO-018] DIAGNOZA: Wielowariantowe URL-e w Next.js — przyczyny wypadania z HTTPS w GSC i niezgodności URL w Senuto**
+
+  - **Co zrobiono**:
+    - Przeprowadzono kompleksową diagnozę wszystkich źródeł generowania wariantów URL w projekcie
+    - Przeanalizowano: `next.config.ts`, brak `middleware.ts`, `next-sitemap.config.cjs`, `lib/url.ts`, `robots.txt`, wszystkie metadane, linkowanie wewnętrzne, JSON-LD schema
+    - **Wyniki pozytywne**: spójne użycie `toAbsoluteUrl()`, poprawna domena `https://www.arteonagency.pl`, brak trailing slash w linkach i metadanych
+    - **Zidentyfikowane problemy**: (1) brak middleware do wymuszania URL na edge, (2) brak jawnego `trailingSlash: false`, (3) redirect http→https tylko w produkcji, (4) potencjalne warianty z trailing slash
+  - **Pliki**: `docs/TASKS.md` (dodano szczegółowy raport diagnozy)
+  - **Follow-up**: `SEO-019` (naprawa)
+  - **Weryfikacja**: nie wymagana (AUDIT-only)
+
+- ✅ **[SEO-019] Ujednolicenie i wymuszenie jednego kanonicznego wariantu URL w całym projekcie**
+
+  - **Co zrobiono**:
+    - Dodano jawne `trailingSlash: false` w `next.config.ts` z komentarzem dokumentacyjnym
+    - Utworzono nowy plik `middleware.ts` wymuszający redirecty na edge:
+      - `http` → `https` (tylko produkcja)
+      - `arteonagency.pl` → `www.arteonagency.pl`
+      - URL z trailing slash → bez trailing slash (oprócz root `/`)
+    - Dodano szczegółową dokumentację w `lib/url.ts` opisującą zasady budowania URL-i w projekcie
+    - Middleware używa matcher wykluczający statyczne zasoby (`_next`, `assets`, `fonts`, itp.)
+  - **Pliki**: `next.config.ts`, `middleware.ts` (NOWY), `lib/url.ts`
+  - **Weryfikacja**: `npm run lint` OK, `npm run build` OK (middleware kompiluje się jako 33.1 kB)
+
 ## 2025-12-26
 
 - ✅ **[SEO-018] robots.txt: optymalizacja reguł blokowania i konfiguracji next-sitemap**

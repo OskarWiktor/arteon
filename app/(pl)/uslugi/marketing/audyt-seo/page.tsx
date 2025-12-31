@@ -1,4 +1,4 @@
-﻿import HeroBanner from '@/components/sections/HeroBanner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
@@ -18,34 +18,25 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
-import { getAllArticlePreviews } from '@/lib/blog';
 
-const RELATED_ARTICLE_SLUGS = [
-  'dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic',
-  'czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony',
-  'meta-title-i-description-jak-je-napisac',
-  'faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony',
-  'jak-mierzyc-skutecznosc-strony-internetowej',
-];
+const BASE = 'https://www.arteonagency.pl';
 
 export const metadata = {
-  title: 'Audyt SEO - plan pozycjonowania Twojej witryny - Arteon',
+  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-  alternates: { canonical: toAbsoluteUrl('/uslugi/marketing/audyt-seo') },
+  alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/audyt-seo' },
   openGraph: {
-    title: 'Audyt SEO - plan pozycjonowania Twojej witryny - Arteon',
+    title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
     description: 'Przeprowadź audyt SEO swojej witryny - przygotujemy plan, który sprawi, że Twoja witryna znajdzie się wyżej w wynikach wyszukiwarki Google.',
-    url: toAbsoluteUrl('/uslugi/marketing/audyt-seo'),
+    url: `${BASE}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/bg/abstract-bg5.webp') }],
+    images: [{ url: `${BASE}/assets/bg/abstract-bg5.webp` }],
     //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {
   //  card: 'summary_large_image',
-  //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny - Arteon',
+  //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   //  description:
   //    'Przeprowadź audyt SEO swojej witryny i sprawdź, co zrobić, aby wyświetlać się wyżej w Google.',
   //  images: [`${BASE}/assets/og/audyt-seo.webp`],
@@ -54,7 +45,7 @@ export const metadata = {
 
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/marketing/audyt-seo',
     serviceName: 'Audyt SEO',
     description: 'Audyt SEO dla stron i sklepów internetowych - analiza techniczna, treściowa i strukturalna strony z rekomendacjami działań.',
@@ -70,8 +61,6 @@ function ServiceSchema() {
 }
 
 export default function OfferMarketingPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -144,24 +133,24 @@ export default function OfferMarketingPage() {
               description: (
                 <>Weryfikujemy, czy strona pojawia się w Google, które podstrony są pomijane i dlaczego. Sprawdzimy mapę strony i ustawienia, które potrafią ukryć treści przed wyszukiwarką.</>
               ),
-              icon: <RiSearchLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Szybkość ładowania i wygodę korzystania',
               description: (
                 <>Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od strony technicznej. Wskazujemy proste zmiany, które przyspieszą działanie i poprawią wrażenia użytkowników.</>
               ),
-              icon: <RiCheckLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiCheckLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Czy treści są dopasowane do tego, czego szukają klienci',
               description: <>Sprawdzimy, czy Twoje treści odpowiadają na pytania użytkowników i czy nie konkurują ze sobą. Zaproponujemy tematy i układ, który ułatwi zdobywanie wyższych pozycji.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Strukturę strony oraz linki wewnętrzne',
               description: <>Uporządkujemy nawigację i połączenia między podstronami, aby ważne treści były łatwo dostępne dla użytkowników i wyszukiwarki.</>,
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -346,7 +335,7 @@ export default function OfferMarketingPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/marketing/audyt-seo')}
+          pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
           items={[
             {
               question: 'Co dokładnie sprawdza audyt SEO i jakie są najczęstsze blokery?',
@@ -396,10 +385,6 @@ export default function OfferMarketingPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące audytu SEO" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -416,3 +401,5 @@ export default function OfferMarketingPage() {
     </>
   );
 }
+
+

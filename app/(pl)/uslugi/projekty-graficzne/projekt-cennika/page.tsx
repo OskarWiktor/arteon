@@ -1,4 +1,4 @@
-﻿import WorkSteps from '@/components/sections/steps/WorkSteps';
+import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
@@ -16,38 +16,30 @@ import { RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine, RiMon
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
-import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blog';
-
-const RELATED_ARTICLE_SLUGS = [
-  'materialy-drukowane-dla-firmy-ktore-zamowic',
-  'jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow',
-  'jak-dobrac-kolory-do-strony-internetowej',
-  'kody-qr-w-materialach-reklamowych',
-];
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
-import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 
 export const metadata = {
-  title: 'Projekt cennika - Arteon',
+  title: 'Projekt cennika | Arteon',
   description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
   alternates: {
-    canonical: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika'),
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
   },
   openGraph: {
-    title: 'Projekt cennika - Arteon',
+    title: 'Projekt cennika | Arteon',
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
-    url: toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika'),
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/projects/cennik-mockup.webp') }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/cennik-mockup.webp' }],
   },
 } as const;
 
+const BASE = 'https://www.arteonagency.pl';
+
 function ServiceSchema() {
   const json = buildServiceSchema({
-    baseUrl: siteUrl,
+    baseUrl: BASE,
     path: '/uslugi/projekty-graficzne/projekt-cennika',
     serviceName: 'Projekt cennika',
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
@@ -63,8 +55,6 @@ function ServiceSchema() {
 }
 
 export default function OfferDesignPriceListPage() {
-  const articles = getAllArticlePreviews();
-
   return (
     <>
       <HeroBanner
@@ -135,22 +125,22 @@ export default function OfferDesignPriceListPage() {
             {
               title: 'Przejrzysty układ i hierarchia',
               description: <>Projektujemy logiczne sekcje, wyróżniamy kluczowe usługi i podkreślamy rekomendowane opcje, aby ułatwić wybór klientowi, ułatwiając przy tym rozmowę o cenach.</>,
-              icon: <RiTableLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiTableLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, czcionki i ikony dopasowujemy do stylu Twojej marki oraz branży. Cennik staje się integralną częścią Twojej komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-700" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Wersje do druku i online',
               description: <>Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do publikacji na stronie czy mediach społecznościowych. Dostajesz gotową paczkę plików.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
             },
           ]}
         />
@@ -240,7 +230,7 @@ export default function OfferDesignPriceListPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl={toAbsoluteUrl('/uslugi/projekty-graficzne/projekt-cennika')}
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika"
           title="Najczęstsze pytania o projekt cennika"
           items={[
             {
@@ -325,10 +315,6 @@ export default function OfferDesignPriceListPage() {
 
         <ServicesSteps />
 
-        <Gap variant="line" />
-
-        <ArticlesCarousel title="Sprawdź nasze artykuły dotyczące materiałów drukowanych" subtitle="Edukacja" articles={articles} slugs={RELATED_ARTICLE_SLUGS} />
-
         <Gap size="sm" />
       </Wrapper>
 
@@ -347,3 +333,5 @@ export default function OfferDesignPriceListPage() {
     </>
   );
 }
+
+
