@@ -25,6 +25,21 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?**
+
+  - **Slug**: `darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`
+  - **URL**: `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`
+  - **Kategorie**: `Sklepy`, `Psychologia`
+  - **Data publikacji**: 2025-12-31
+  - **Czas czytania**: 11 min
+  - **Opis**: Artykuł porównawczy o dwóch strategiach cenowych w e-commerce: darmowa dostawa i niższa cena produktu. Obejmuje: dlaczego koszty dostawy mają znaczenie (statystyki porzuconych koszyków z Baymard Institute), efekt zerowej ceny (zero price effect z eksperymentem Dana Ariely'ego), kiedy darmowa dostawa działa lepiej (niższa cena produktu, nowi klienci, konkurencyjne rynki), kiedy niższa cena produktu działa lepiej (droższe produkty, porównywarki cenowe, tanie opcje dostawy), porównanie obu strategii (wpływ na konwersję, średnią wartość zamówienia, postrzeganie marki), jak łączyć obie strategie (próg darmowej dostawy, różne kategorie, program lojalnościowy), aspekty prawne (Dyrektywa Omnibus, przejrzystość kosztów).
+  - **Linki wewnętrzne (6)**: `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/sklepy-internetowe` (x2), `/kontakt` (x2)
+  - **Linki zewnętrzne (3)**: Baymard Institute (cart abandonment), ResearchGate (free shipping vs dollar off), Shippo (state of shipping)
+  - **Tooltips**: efekt zerowej ceny
+  - **FAQ**: 5 pytań (czy darmowa dostawa zawsze zwiększa sprzedaż, jaki próg ustawić, darmowa dostawa dla nowych klientów, wpływ na zwroty, ukrywanie kosztu w cenie)
+  - **CTA**: Sklepy internetowe + Kontakt
+  - **Ton**: Mentorski, porównawczy — obiektywnie przedstawia obie strategie z konkretnymi danymi i wskazówkami, kiedy która działa lepiej
+
 - **Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?**
 
   - **Slug**: `czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych`

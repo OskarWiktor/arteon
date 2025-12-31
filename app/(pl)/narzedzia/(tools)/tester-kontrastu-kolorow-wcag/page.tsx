@@ -68,7 +68,7 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/tester-kontrastu-kolorow-wcag`, label: 'Sprawdź kontrast kolorów pod kątem dostępności' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <WcagContrastChecker />
 

@@ -70,7 +70,7 @@ export default function ImageResizerPage() {
       />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <ImageResizeTool />
 

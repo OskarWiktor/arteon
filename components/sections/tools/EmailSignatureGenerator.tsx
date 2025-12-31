@@ -5,10 +5,10 @@ import Badge from '@/components/ui/Badge';
 import Eyebrow from '@/components/ui/typography/Eyebrow';
 import { buildSignatureHtml } from '@/components/sections/tools/EmailSignatureGenerator/buildSignatureHtml';
 import { useSignatureCopy } from '@/components/sections/tools/EmailSignatureGenerator/useSignatureCopy';
-import type { ActivePanel, BorderSides, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, SpacingConfig, SpacingKey, StyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import type { ActivePanel, BorderSides, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, SpacingConfig, SpacingKey, StyleConfig, TextElementKey, TextStyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { useMemo, useState, type ReactNode } from 'react';
-import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line, RiSpace, RiAddLine, RiSubtractLine } from 'react-icons/ri';
+import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line, RiSpace, RiAddLine, RiSubtractLine, RiFontSize2, RiDeleteBinLine, RiRefreshLine } from 'react-icons/ri';
 
 const ui = {
   pl: {
@@ -39,6 +39,7 @@ const ui = {
       buttons: 'Przyciski',
       social: 'Media społecznościowe',
       appearance: 'Wygląd',
+      textStyle: 'Styl tekstu',
       spacing: 'Odstępy',
       legal: 'Klauzula / RODO',
     },
@@ -122,13 +123,28 @@ const ui = {
       title: 'Odstępy między elementami',
       helper: 'Dostosuj odstępy między poszczególnymi elementami stopki. Widoczne są tylko opcje dla elementów aktualnie obecnych w stopce.',
       padding: 'Margines wewnętrzny stopki',
-      afterName: 'Po imieniu i nazwisku',
-      afterTitle: 'Po stanowisku / firmie',
-      afterExtra: 'Po dodatkowej linii',
-      afterContact: 'Po danych kontaktowych',
-      afterSocials: 'Po mediach społecznościowych',
-      afterCta: 'Po przycisku CTA',
+      afterName: 'Przed stanowiskiem',
+      afterTitle: 'Przed dodatkową linią',
+      afterExtra: 'Przed danymi kontaktowymi',
+      afterContact: 'Przed mediami społ.',
+      afterSocials: 'Przed przyciskiem CTA',
+      afterCta: 'Przed linią oddzielającą',
       beforeLegal: 'Przed klauzulą',
+    },
+    textStyle: {
+      title: 'Styl tekstu',
+      helper: 'Dostosuj kolor i rozmiar każdego elementu tekstowego. Widoczne są tylko opcje dla elementów obecnych w stopce.',
+      customColors: 'Własne kolory',
+      addColor: 'Nowy kolor',
+      saveColor: 'Zapisz',
+      name: 'Imię i nazwisko',
+      jobTitle: 'Stanowisko',
+      company: 'Firma',
+      contact: 'Dane kontaktowe',
+      socials: 'Media społecznościowe',
+      legal: 'Klauzula prawna',
+      color: 'Kolor',
+      size: 'Rozmiar',
     },
     preview: {
       title: 'Podgląd stopki mailowej',
@@ -226,6 +242,16 @@ const DEFAULT_SPACING: SpacingConfig = {
   beforeLegal: 12,
 };
 
+const DEFAULT_TEXT_STYLE: TextStyleConfig = {
+  name: { color: null, sizeOffset: 0 },
+  jobTitle: { color: null, sizeOffset: 0 },
+  company: { color: null, sizeOffset: 0 },
+  contact: { color: null, sizeOffset: 0 },
+  socials: { color: null, sizeOffset: 0 },
+  legal: { color: null, sizeOffset: 0 },
+  customColors: [],
+};
+
 const LAYOUT_SPACING_MAP: Record<LayoutType, SpacingKey[]> = {
   standard: ['afterName', 'afterTitle', 'afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
   'top-banner': ['afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
@@ -297,6 +323,8 @@ export default function EmailSignatureGenerator() {
   const [config, setConfig] = useState<SignatureConfig>(DEFAULT_SIGNATURE);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);
   const [spacingConfig, setSpacingConfig] = useState<SpacingConfig>(DEFAULT_SPACING);
+  const [textStyleConfig, setTextStyleConfig] = useState<TextStyleConfig>(DEFAULT_TEXT_STYLE);
+  const [pendingCustomColor, setPendingCustomColor] = useState<string>('#000000');
   const { copyStatus, copyToGmail } = useSignatureCopy();
   const [activePanel, setActivePanel] = useState<ActivePanel>('identity');
   const [layout, setLayout] = useState<LayoutType>('standard');
@@ -304,7 +332,7 @@ export default function EmailSignatureGenerator() {
 
   const hasRequired = config.fullName.trim().length > 0 && config.email.trim().length > 0;
 
-  const signatureHtml = useMemo(() => buildSignatureHtml(config, styleConfig, spacingConfig, layout, SIGNATURE_LABELS), [config, styleConfig, spacingConfig, layout]);
+  const signatureHtml = useMemo(() => buildSignatureHtml(config, styleConfig, spacingConfig, layout, SIGNATURE_LABELS, textStyleConfig), [config, styleConfig, spacingConfig, layout, textStyleConfig]);
 
   function handleTextChange<K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) {
     setConfig((prev) => ({
@@ -334,6 +362,34 @@ export default function EmailSignatureGenerator() {
     setSpacingConfig((prev) => ({
       ...prev,
       [key]: Math.max(0, Math.min(32, prev[key] + delta)),
+    }));
+  }
+
+  function handleTextStyleColorChange(key: TextElementKey, color: string | null) {
+    setTextStyleConfig((prev) => ({
+      ...prev,
+      [key]: { ...prev[key], color },
+    }));
+  }
+
+  function handleTextStyleSizeChange(key: TextElementKey, delta: number) {
+    setTextStyleConfig((prev) => ({
+      ...prev,
+      [key]: { ...prev[key], sizeOffset: Math.max(-4, Math.min(4, prev[key].sizeOffset + delta)) },
+    }));
+  }
+
+  function addCustomColor(color: string) {
+    setTextStyleConfig((prev) => ({
+      ...prev,
+      customColors: prev.customColors.includes(color) ? prev.customColors : [...prev.customColors, color].slice(-8),
+    }));
+  }
+
+  function removeCustomColor(color: string) {
+    setTextStyleConfig((prev) => ({
+      ...prev,
+      customColors: prev.customColors.filter((c) => c !== color),
     }));
   }
 
@@ -398,6 +454,7 @@ export default function EmailSignatureGenerator() {
           <PanelButton id="buttons" current={activePanel} onClick={setActivePanel} icon={<RiShareLine className="text-base" />} label={t.panels.buttons} />
           <PanelButton id="social" current={activePanel} onClick={setActivePanel} icon={<RiMailLine className="text-base" />} label={t.panels.social} />
           <PanelButton id="appearance" current={activePanel} onClick={setActivePanel} icon={<RiPaletteLine className="text-base" />} label={t.panels.appearance} />
+          <PanelButton id="textStyle" current={activePanel} onClick={setActivePanel} icon={<RiFontSize2 className="text-base" />} label={t.panels.textStyle} />
           <PanelButton id="spacing" current={activePanel} onClick={setActivePanel} icon={<RiSpace className="text-base" />} label={t.panels.spacing} />
           <PanelButton id="legal" current={activePanel} onClick={setActivePanel} icon={<RiFileTextLine className="text-base" />} label={t.panels.legal} />
         </div>
@@ -953,6 +1010,376 @@ export default function EmailSignatureGenerator() {
                     </Badge>
                   </div>
                 </div>
+              </div>
+            )}
+
+            {activePanel === 'textStyle' && (
+              <div className="space-y-4">
+                <div>
+                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
+                    {t.textStyle.title}
+                  </Eyebrow>
+                  <p className="text-xs! text-light mb-3">{t.textStyle.helper}</p>
+                </div>
+
+                <div>
+                  <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.textStyle.addColor}</p>
+                  <div className="flex items-center gap-2">
+                    <div className="relative">
+                      <input
+                        type="color"
+                        value={pendingCustomColor}
+                        onChange={(e) => setPendingCustomColor(e.target.value)}
+                        className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                      />
+                      <div
+                        className="h-8 w-8 rounded border border-neutral-300 cursor-pointer"
+                        style={{ backgroundColor: pendingCustomColor }}
+                      />
+                    </div>
+                    <Badge
+                      onClick={() => addCustomColor(pendingCustomColor)}
+                      as="button"
+                      type="button"
+                      size="sm"
+                      variant="default"
+                      className="px-3 py-1 text-xs! font-medium hover:border-neutral-500"
+                    >
+                      {t.textStyle.saveColor}
+                    </Badge>
+                  </div>
+                </div>
+
+                {textStyleConfig.customColors.length > 0 && (
+                  <div>
+                    <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.textStyle.customColors}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {textStyleConfig.customColors.map((color) => (
+                        <div key={color} className="relative group">
+                          <div
+                            className="h-8 w-8 rounded border border-neutral-300"
+                            style={{ backgroundColor: color }}
+                            title={color}
+                          />
+                          <button
+                            type="button"
+                            onClick={() => removeCustomColor(color)}
+                            className="absolute -top-1.5 -right-1.5 hidden group-hover:flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white"
+                            aria-label="Usuń kolor"
+                          >
+                            <RiDeleteBinLine className="h-3 w-3" />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {config.fullName.trim() && (
+                  <div className="border-t border-neutral-200 pt-3 space-y-2">
+                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.name}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleColorChange('name', null)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        title="Reset"
+                      >
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <div
+                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.name.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
+                        style={{ backgroundColor: textStyleConfig.name.color || styleConfig.accentColor }}
+                      />
+                      {textStyleConfig.customColors.map((color) => (
+                        <button
+                          key={color}
+                          type="button"
+                          onClick={() => handleTextStyleColorChange('name', color)}
+                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.name.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
+                      <div className="relative">
+                        <input
+                          type="color"
+                          value={textStyleConfig.name.color || styleConfig.accentColor}
+                          onChange={(e) => handleTextStyleColorChange('name', e.target.value)}
+                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                        />
+                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('name', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.name.sizeOffset > 0 ? '+' : ''}{textStyleConfig.name.sizeOffset}</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('name', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {config.jobTitle.trim() && (
+                  <div className="border-t border-neutral-200 pt-3 space-y-2">
+                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.jobTitle}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleColorChange('jobTitle', null)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        title="Reset"
+                      >
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <div
+                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.jobTitle.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
+                        style={{ backgroundColor: textStyleConfig.jobTitle.color || styleConfig.textColor }}
+                      />
+                      {textStyleConfig.customColors.map((color) => (
+                        <button
+                          key={color}
+                          type="button"
+                          onClick={() => handleTextStyleColorChange('jobTitle', color)}
+                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.jobTitle.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
+                      <div className="relative">
+                        <input
+                          type="color"
+                          value={textStyleConfig.jobTitle.color || styleConfig.textColor}
+                          onChange={(e) => handleTextStyleColorChange('jobTitle', e.target.value)}
+                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                        />
+                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('jobTitle', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.jobTitle.sizeOffset > 0 ? '+' : ''}{textStyleConfig.jobTitle.sizeOffset}</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('jobTitle', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {config.company.trim() && (
+                  <div className="border-t border-neutral-200 pt-3 space-y-2">
+                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.company}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleColorChange('company', null)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        title="Reset"
+                      >
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <div
+                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.company.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
+                        style={{ backgroundColor: textStyleConfig.company.color || styleConfig.textColor }}
+                      />
+                      {textStyleConfig.customColors.map((color) => (
+                        <button
+                          key={color}
+                          type="button"
+                          onClick={() => handleTextStyleColorChange('company', color)}
+                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.company.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
+                      <div className="relative">
+                        <input
+                          type="color"
+                          value={textStyleConfig.company.color || styleConfig.textColor}
+                          onChange={(e) => handleTextStyleColorChange('company', e.target.value)}
+                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                        />
+                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('company', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.company.sizeOffset > 0 ? '+' : ''}{textStyleConfig.company.sizeOffset}</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('company', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {(config.email.trim() || config.phone.trim() || config.website.trim()) && (
+                  <div className="border-t border-neutral-200 pt-3 space-y-2">
+                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.contact}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleColorChange('contact', null)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        title="Reset"
+                      >
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <div
+                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.contact.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
+                        style={{ backgroundColor: textStyleConfig.contact.color || styleConfig.textColor }}
+                      />
+                      {textStyleConfig.customColors.map((color) => (
+                        <button
+                          key={color}
+                          type="button"
+                          onClick={() => handleTextStyleColorChange('contact', color)}
+                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.contact.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
+                      <div className="relative">
+                        <input
+                          type="color"
+                          value={textStyleConfig.contact.color || styleConfig.textColor}
+                          onChange={(e) => handleTextStyleColorChange('contact', e.target.value)}
+                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                        />
+                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('contact', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.contact.sizeOffset > 0 ? '+' : ''}{textStyleConfig.contact.sizeOffset}</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('contact', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {Object.values(config.socials).some((url) => url.trim()) && (
+                  <div className="border-t border-neutral-200 pt-3 space-y-2">
+                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.socials}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleColorChange('socials', null)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        title="Reset"
+                      >
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <div
+                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.socials.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
+                        style={{ backgroundColor: textStyleConfig.socials.color || styleConfig.accentColor }}
+                      />
+                      {textStyleConfig.customColors.map((color) => (
+                        <button
+                          key={color}
+                          type="button"
+                          onClick={() => handleTextStyleColorChange('socials', color)}
+                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.socials.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
+                      <div className="relative">
+                        <input
+                          type="color"
+                          value={textStyleConfig.socials.color || styleConfig.accentColor}
+                          onChange={(e) => handleTextStyleColorChange('socials', e.target.value)}
+                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                        />
+                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('socials', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.socials.sizeOffset > 0 ? '+' : ''}{textStyleConfig.socials.sizeOffset}</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('socials', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {config.legalNote.trim() && (
+                  <div className="border-t border-neutral-200 pt-3 space-y-2">
+                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.legal}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleColorChange('legal', null)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        title="Reset"
+                      >
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <div
+                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.legal.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
+                        style={{ backgroundColor: textStyleConfig.legal.color || styleConfig.textColor }}
+                      />
+                      {textStyleConfig.customColors.map((color) => (
+                        <button
+                          key={color}
+                          type="button"
+                          onClick={() => handleTextStyleColorChange('legal', color)}
+                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.legal.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
+                      <div className="relative">
+                        <input
+                          type="color"
+                          value={textStyleConfig.legal.color || styleConfig.textColor}
+                          onChange={(e) => handleTextStyleColorChange('legal', e.target.value)}
+                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                        />
+                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('legal', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.legal.sizeOffset > 0 ? '+' : ''}{textStyleConfig.legal.sizeOffset}</span>
+                      <button type="button" onClick={() => handleTextStyleSizeChange('legal', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 

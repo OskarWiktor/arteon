@@ -67,7 +67,7 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Wyciągnij kolory ze zdjęcia lub logo' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <PaletteExtractor />
 

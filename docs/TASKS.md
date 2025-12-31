@@ -113,6 +113,21 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
       - Edytowano: `next-sitemap.config.cjs` (linia 47: `if (r === '') r = '/';`)
     - `npm run build` przechodzi ✓
 
+- 🟡 **[AUDIT-007] Blog: audyt linków zewnętrznych w artykułach**
+
+  - Cel: zweryfikować poprawność linków zewnętrznych w artykułach — czy prowadzą do stron zgodnych z kontekstem tekstu.
+  - Zakres:
+    - Wszystkie artykuły w `data/pl/blog.json`
+    - Każdy link z `target='_blank'` i `rel='noopener noreferrer'` (linki zewnętrzne)
+  - Kryteria weryfikacji:
+    1. **Link działa** — strona się otwiera (nie 404/500)
+    2. **Link prowadzi do właściwej treści** — jeśli tekst mówi o badaniu Baymard Institute, link prowadzi do tego badania
+    3. **Link jest aktualny** — jeśli źródło ma nowszą wersję (np. raport 2024 vs 2021), zaktualizować
+  - Raportowanie:
+    - Poprawić błędne linki bezpośrednio w `blog.json`
+    - Do `DONE_TASKS.md` dodaj wpis z listą poprawionych linków
+  - Weryfikacja: JSON OK (content-only)
+
 - 🟡 **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
 
   - Cel: przeanalizować istniejące artykuły i zidentyfikować, co wymaga poprawy, aby były zgodne z nowymi wytycznymi tonu marki Arteon (mentorski, maksymalnie prosty, bez żargonu).
@@ -492,26 +507,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `colgate` (linia 972): usunąć placeholder `"task": "test"` i dodać realny opis.
   - Kryteria akceptacji:
     - Powyższe pola są uzupełnione i spójne semantycznie.
-    - `npm run lint` i `npm run build` przechodzą.
-
-- ❌ **[TOOLS-048] Generator stopki mailowej: personalizacja stylu tekstu per element (kolor + rozmiar)**
-
-  - Cel:
-    - Dodać nową zakładkę (np. „Styl tekstu") umożliwiającą edycję koloru i rozmiaru każdego elementu tekstowego osobno.
-    - Dodać możliwość zapisywania własnych kolorów do późniejszego użycia.
-  - Zakres:
-    - Dla każdego widocznego elementu tekstowego: wybór koloru (z zapisanych + ręczny picker) i rozmiaru (+/-).
-    - Sekcja „Własne kolory" na górze zakładki — dodawanie i zapisywanie kolorów.
-    - Zapisane kolory pojawiają się jako opcje przy każdym elemencie.
-  - Pliki:
-    - `components/sections/tools/EmailSignatureGenerator.tsx`
-    - `components/sections/tools/EmailSignatureGenerator/types.ts`
-    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
-    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
-  - Kryteria akceptacji:
-    - Zakładka z kontrolkami stylu per element.
-    - Możliwość dodawania/usuwania własnych kolorów.
-    - Instrukcja zaktualizowana.
     - `npm run lint` i `npm run build` przechodzą.
 
 - ❌ **[TOOLS-050] Generator stopki mailowej: LocalStorage + modal potwierdzenia resetu**
@@ -962,11 +957,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
     - Kategoria: Sklepy, Psychologia
     - Uzasadnienie: Konkretne elementy budujące wiarygodność.
-
-49. ❌ **Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?**
-
-    - Kategoria: Sklepy, Psychologia
-    - Uzasadnienie: Porównanie strategii cenowych z badaniami.
 
 50. ❌ **Czym jest cross-selling i up-selling? Różnice i przykłady zastosowania**
 

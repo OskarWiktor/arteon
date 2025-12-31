@@ -2,6 +2,20 @@
 
 ## 2025-12-31
 
+- ✅ **[49] Artykuł: Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?**
+
+  - **Co zrobiono**:
+    - Napisano artykuł porównawczy (11 min, ~2200 słów) o dwóch strategiach cenowych w e-commerce: darmowa dostawa vs niższa cena produktu.
+    - Struktura: dlaczego koszty dostawy mają znaczenie (statystyki Baymard Institute: 70% porzuconych koszyków, 39% przez dodatkowe koszty), efekt zerowej ceny (eksperyment Dana Ariely'ego z czekoladkami), kiedy darmowa dostawa działa lepiej (niższa cena produktu, nowi klienci, konkurencyjne rynki), kiedy niższa cena produktu działa lepiej (droższe produkty, porównywarki cenowe, tanie opcje dostawy), porównanie strategii (konwersja, średnia wartość zamówienia, postrzeganie marki), łączenie strategii (próg darmowej dostawy, różne kategorie, program lojalnościowy), aspekty prawne (Dyrektywa Omnibus).
+    - 6 linków wewnętrznych, 3 linki zewnętrzne ze źródłami, 1 tooltip, 5 FAQ.
+    - Dodano artykuł na górę listy w `data/pl/blog.json`.
+    - Zaktualizowano `docs/BLOG_CATALOG.md`.
+  - **Pliki zmienione**:
+    - `data/pl/blog.json`
+    - `docs/BLOG_CATALOG.md`
+  - **Uwaga**: Brakuje obrazu cover — do uzupełnienia: `public/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp`
+  - **Weryfikacja**: content-only.
+
 - ✅ **[31] Artykuł: Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?**
 
   - **Co zrobiono**:
@@ -19,6 +33,55 @@
     - `docs/BLOG_CATALOG.md`
   - **Uwaga**: Brakuje obrazu cover — do uzupełnienia: `public/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp`
   - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[TOOLS-058] Generator stopki mailowej: naprawienie stylów w układach Kompakt, Dwie kolumny, Minimalistyczny, Dolny pasek**
+
+  - **Co zrobiono**:
+    - Dodano `borderStyle` do layoutów: `compact`, `two-column`, `minimal`, `bottom-bar`.
+    - Użyto per-element text styles we wszystkich 4 layoutach: `nameColor`, `nameFontSize`, `jobTitleColor`, `jobTitleFontSize`, `companyColor`, `companyFontSize`, `contactColor`, `contactFontSize`, `socialsColor`, `socialsFontSize`, `legalColor`, `legalFontSize`.
+    - Zaktualizowano instrukcję: nowa sekcja „Styl tekstu — kolory i rozmiary poszczególnych elementów".
+    - Zaktualizowano FAQ o ikony SVG mediów społecznościowych.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[TOOLS-057] Generator stopki mailowej: aplikowanie stylów tekstu i ramek we wszystkich układach**
+
+  - **Co zrobiono**:
+    - Dodano `borderStyle` do wszystkich layoutów (top-banner, label-column, centered).
+    - Zaktualizowano layout `top-banner` — użycie `nameFontSize`, `jobTitleFontSize`, `companyFontSize` w bannerze.
+    - Teraz style tekstu (kolor, rozmiar) i ramki aplikują się we wszystkich 4 układach.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+  - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[TOOLS-056] Generator stopki mailowej: poprawki UI zakładki Styl tekstu**
+
+  - **Co zrobiono**:
+    - Color picker z przyciskiem „Zapisz" zamiast auto-dodawania przy przeciąganiu.
+    - Zmiana kółek kolorów na kwadraty 8x8 / 7x7 px, powiększenie ikon kosza.
+    - Dynamiczne wyświetlanie elementów (tylko jeśli dany element istnieje w stopce).
+    - Zamiana przycisku „Domyślny" na ikonę resetu (RiRefreshLine).
+    - Poprawa layoutu: Kolor w jednej linii, Rozmiar w drugiej z etykietą.
+    - Ukryty input color z widocznym podglądem koloru.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+  - **Weryfikacja**: `npx tsc --noEmit` przechodzi.
+
+- ✅ **[TOOLS-048] Generator stopki mailowej: personalizacja stylu tekstu per element (kolor + rozmiar)**
+
+  - **Co zrobiono**:
+    - Dodano nową zakładkę „Styl tekstu" z edycją koloru i rozmiaru dla każdego elementu tekstowego.
+    - Sekcja „Własne kolory" — dodawanie i zapisywanie kolorów (do 8), usuwanie przez hover.
+    - Elementy: Imię i nazwisko, Stanowisko, Firma, Dane kontaktowe, Media społecznościowe, Klauzula prawna.
+    - Dla każdego: przycisk „Domyślny", color picker, własne kolory jako kółka, przyciski +/- rozmiaru.
+    - Poprawiono etykiety w zakładce Odstępy: „Po X" → „Przed Y" (semantycznie poprawne).
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+  - **Weryfikacja**: `npx tsc --noEmit` przechodzi.
 
 - ✅ **[TOOLS-051] Generator stopki mailowej: ikony social media SVG + przeniesienie linii oddzielającej**
 

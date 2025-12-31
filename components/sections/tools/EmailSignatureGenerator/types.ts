@@ -11,7 +11,24 @@ export interface SocialIconSettings {
   iconSize: SocialIconSize;
   colorMode: SocialIconColorMode;
 }
-export type ActivePanel = 'identity' | 'buttons' | 'social' | 'appearance' | 'spacing' | 'legal';
+export type ActivePanel = 'identity' | 'buttons' | 'social' | 'appearance' | 'textStyle' | 'spacing' | 'legal';
+
+export type TextElementKey = 'name' | 'jobTitle' | 'company' | 'contact' | 'socials' | 'legal';
+
+export interface TextElementStyle {
+  color: string | null; // null = use default textColor
+  sizeOffset: number; // -2, 0, +2 relative to base size
+}
+
+export interface TextStyleConfig {
+  name: TextElementStyle;
+  jobTitle: TextElementStyle;
+  company: TextElementStyle;
+  contact: TextElementStyle;
+  socials: TextElementStyle;
+  legal: TextElementStyle;
+  customColors: string[]; // saved custom colors
+}
 export type LayoutType = 'standard' | 'top-banner' | 'label-column' | 'centered' | 'compact' | 'two-column' | 'minimal' | 'bottom-bar';
 export interface BorderSides {
   left: boolean;

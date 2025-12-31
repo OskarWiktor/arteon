@@ -66,7 +66,7 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/jpg-png-na-webp-bez-limitu`, label: 'Zamień zdjęcia JPG i PNG na lżejszy format WebP' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <JpgPngToWebp />
 

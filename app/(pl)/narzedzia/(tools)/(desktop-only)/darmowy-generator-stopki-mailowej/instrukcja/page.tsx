@@ -359,6 +359,52 @@ export default function Page() {
 
         <Gap variant="line" />
 
+        <SectionInfo title="Styl tekstu — kolory i rozmiary poszczególnych elementów">
+          <p className="text-mid">
+            W zakładce <strong>Styl tekstu</strong> możesz indywidualnie dostosować kolor i rozmiar czcionki dla każdego elementu tekstowego w stopce.
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Dostępne elementy</h3>
+          <p className="text-mid">
+            Widoczne są tylko te elementy, które aktualnie znajdują się w stopce (mają wypełnione dane). Dla każdego elementu możesz ustawić:
+          </p>
+          <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
+            <li>
+              <strong>Imię i nazwisko</strong> — domyślnie wyświetlane w kolorze akcentu.
+            </li>
+            <li>
+              <strong>Stanowisko</strong> — rola w firmie.
+            </li>
+            <li>
+              <strong>Firma</strong> — nazwa organizacji.
+            </li>
+            <li>
+              <strong>Dane kontaktowe</strong> — e-mail, telefon, strona (etykiety).
+            </li>
+            <li>
+              <strong>Media społecznościowe</strong> — linki do profili.
+            </li>
+            <li>
+              <strong>Klauzula prawna</strong> — tekst prawny na dole stopki.
+            </li>
+          </ul>
+
+          <h3 className="h4 mt-6 mb-3">Jak zmienić kolor?</h3>
+          <p className="text-mid">
+            Przy każdym elemencie znajdziesz rząd opcji kolorów. Kliknij kwadrat z kolorem, aby go wybrać. Możesz też dodać własny kolor klikając kolorowy kwadrat z plusem — wybierz kolor i kliknij Zapisz. Własne kolory (do 8) są współdzielone między wszystkimi elementami.
+          </p>
+          <p className="text-mid mt-3">
+            Przycisk z ikoną resetu przywraca domyślny kolor elementu.
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Jak zmienić rozmiar?</h3>
+          <p className="text-mid">
+            W drugiej linii znajdziesz kontrolkę rozmiaru z przyciskami - i +. Wartość pokazuje przesunięcie względem bazowego rozmiaru czcionki (ustawionego w zakładce Wygląd). Zakres: od -4 do +4 pikseli.
+          </p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
         <SectionInfo title="Odstępy między elementami">
           <p className="text-mid">
             W zakładce <strong>Odstępy</strong> możesz precyzyjnie kontrolować odległości między poszczególnymi elementami stopki.
@@ -477,7 +523,7 @@ export default function Page() {
             {
               question: 'Czy mogę dodać własne ikony mediów społecznościowych?',
               answer:
-                'Obecnie generator wyświetla linki do mediów społecznościowych jako tekst (np. LinkedIn, Instagram), bez ikon. To rozwiązanie jest bardziej niezawodne — ikony mogą nie wyświetlać się poprawnie we wszystkich klientach pocztowych.',
+                'Generator oferuje wbudowane ikony SVG dla sześciu platform (LinkedIn, Instagram, Facebook, TikTok, YouTube, X). Włącz opcję Pokaż ikony w zakładce Media społecznościowe. Możesz wybrać rozmiar ikon i ich kolor (kolory platform, kolor akcentu lub kolor tekstu).',
             },
             {
               question: 'Jak często mogę zmieniać stopkę?',
