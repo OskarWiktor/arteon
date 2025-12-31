@@ -5,17 +5,7 @@ import Badge from '@/components/ui/Badge';
 import Eyebrow from '@/components/ui/typography/Eyebrow';
 import { buildSignatureHtml } from '@/components/sections/tools/EmailSignatureGenerator/buildSignatureHtml';
 import { useSignatureCopy } from '@/components/sections/tools/EmailSignatureGenerator/useSignatureCopy';
-import type {
-  ActivePanel,
-  CtaRadiusOption,
-  FontSizeOption,
-  LayoutType,
-  MarginOption,
-  SignatureConfig,
-  SocialKey,
-  StyleConfig,
-  ThemePreset,
-} from '@/components/sections/tools/EmailSignatureGenerator/types';
+import type { ActivePanel, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, StyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { useMemo, useState, type ReactNode } from 'react';
 import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line } from 'react-icons/ri';
@@ -294,13 +284,20 @@ export default function EmailSignatureGenerator() {
       <section className="tool-section flex flex-wrap items-center justify-between gap-3 p-4!">
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
-            <RiLayout3Line className="text-base text-slate-700" />
+            <RiLayout3Line className="text-base text-slate-500" />
             <Eyebrow variant="dynamic" className="text-xs! font-semibold">
               {t.layoutLabel}
             </Eyebrow>
             <div className="flex flex-wrap gap-1">
               {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered'] as LayoutType[]).map((lt) => (
-                <Badge key={lt} as="button" type="button" onClick={() => setLayout(lt)} variant={layout === lt ? 'selected' : 'default'} size="sm">
+                <Badge
+                  key={lt}
+                  as="button"
+                  type="button"
+                  onClick={() => setLayout(lt)}
+                  variant={layout === lt ? 'selected' : 'default'}
+                  size="sm"
+                >
                   {lt === 'standard' && t.layouts.standard}
                   {lt === 'accent-bar' && t.layouts.accentBar}
                   {lt === 'top-banner' && t.layouts.topBanner}
@@ -311,7 +308,7 @@ export default function EmailSignatureGenerator() {
             </div>
           </div>
         </div>
-        <p className="text-light text-xs!">{t.moreLayoutsSoon}</p>
+        <p className="text-xs! text-light">{t.moreLayoutsSoon}</p>
       </section>
 
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
@@ -337,7 +334,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.topLine}</span>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.topLine}</span>
                   </label>
                   <input
                     type="text"
@@ -350,7 +347,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.avatar}</span>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.avatar}</span>
                   </label>
                   <input
                     type="url"
@@ -359,13 +356,13 @@ export default function EmailSignatureGenerator() {
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
                     placeholder={t.identity.avatarPlaceholder}
                   />
-                  <p className="text-light mt-1 text-xs!">{t.identity.avatarHelper}</p>
+                  <p className="mt-1 text-xs! text-light">{t.identity.avatarHelper}</p>
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.fullName}</span>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.fullName}</span>
                     </label>
                     <input
                       type="text"
@@ -377,7 +374,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.nameTag}</span>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.nameTag}</span>
                     </label>
                     <input
                       type="text"
@@ -391,7 +388,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="text-light mb-1 block text-xs! font-semibold uppercase">{t.identity.jobTitle}</label>
+                    <label className="mb-1 block text-xs! font-semibold text-light uppercase">{t.identity.jobTitle}</label>
                     <input
                       type="text"
                       value={config.jobTitle}
@@ -401,7 +398,7 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="text-light mb-1 block text-xs! font-semibold uppercase">{t.identity.company}</label>
+                    <label className="mb-1 block text-xs! font-semibold text-light uppercase">{t.identity.company}</label>
                     <input
                       type="text"
                       value={config.company}
@@ -414,7 +411,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.extraLine}</span>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.extraLine}</span>
                   </label>
                   <input
                     type="text"
@@ -428,7 +425,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.email}</span>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.email}</span>
                     </label>
                     <input
                       type="email"
@@ -440,7 +437,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.phone}</span>
+                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.phone}</span>
                     </label>
                     <input
                       type="tel"
@@ -454,7 +451,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.website}</span>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.website}</span>
                   </label>
                   <input
                     type="url"
@@ -467,7 +464,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.address}</span>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.address}</span>
                   </label>
                   <textarea
                     value={config.address}
@@ -480,7 +477,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.formalLine}</span>
+                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.formalLine}</span>
                   </label>
                   <textarea
                     value={config.formalLine}
@@ -496,13 +493,13 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'cta' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
+                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
                     {t.cta.title}
                   </Eyebrow>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-semibold uppercase">{t.cta.label}</span>
+                        <span className="text-xs! font-semibold uppercase text-light">{t.cta.label}</span>
                       </label>
                       <input
                         type="text"
@@ -514,7 +511,7 @@ export default function EmailSignatureGenerator() {
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-semibold uppercase">{t.cta.url}</span>
+                        <span className="text-xs! font-semibold uppercase text-light">{t.cta.url}</span>
                       </label>
                       <input
                         type="url"
@@ -525,7 +522,7 @@ export default function EmailSignatureGenerator() {
                       />
                     </div>
                   </div>
-                  <p className="text-light mt-1 text-xs!">{t.cta.helper}</p>
+                  <p className="mt-1 text-xs! text-light">{t.cta.helper}</p>
                 </div>
               </div>
             )}
@@ -538,7 +535,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">LinkedIn</span>
+                      <span className="text-xs! font-semibold uppercase text-light">LinkedIn</span>
                     </label>
                     <input
                       type="url"
@@ -550,7 +547,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">Instagram</span>
+                      <span className="text-xs! font-semibold uppercase text-light">Instagram</span>
                     </label>
                     <input
                       type="url"
@@ -564,7 +561,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">Facebook</span>
+                      <span className="text-xs! font-semibold uppercase text-light">Facebook</span>
                     </label>
                     <input
                       type="url"
@@ -576,7 +573,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">TikTok</span>
+                      <span className="text-xs! font-semibold uppercase text-light">TikTok</span>
                     </label>
                     <input
                       type="url"
@@ -590,7 +587,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">YouTube</span>
+                      <span className="text-xs! font-semibold uppercase text-light">YouTube</span>
                     </label>
                     <input
                       type="url"
@@ -602,7 +599,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">X (Twitter)</span>
+                      <span className="text-xs! font-semibold uppercase text-light">X (Twitter)</span>
                     </label>
                     <input
                       type="url"
@@ -613,14 +610,14 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                 </div>
-                <p className="text-light text-xs!">{t.social.helper}</p>
+                <p className="text-xs! text-light">{t.social.helper}</p>
               </div>
             )}
 
             {activePanel === 'appearance' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
+                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
                     {t.appearance.themeTitle}
                   </Eyebrow>
                   <div className="flex flex-wrap gap-2">
@@ -645,7 +642,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.accentColor}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.accentColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -656,13 +653,13 @@ export default function EmailSignatureGenerator() {
                     </div>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.textColor}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.textColor}</p>
                     <div className="flex items-center gap-2">
                       <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="h-9 w-9 cursor-pointer border-none bg-white p-0!" />
                     </div>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.backgroundColor}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.backgroundColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -676,7 +673,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.fontFamily}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.fontFamily}</p>
                     <select
                       value={styleConfig.fontFamily}
                       onChange={(e) => handleStyleChange('fontFamily', e.target.value)}
@@ -690,7 +687,7 @@ export default function EmailSignatureGenerator() {
                     </select>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.fontSize}</p>
+                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.fontSize}</p>
                     <div className="flex flex-wrap gap-2">
                       {(['small', 'normal', 'large'] as FontSizeOption[]).map((size) => (
                         <Badge
@@ -712,7 +709,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.padding}</p>
+                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
                       <Badge
@@ -733,7 +730,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.ctaRadius}</p>
+                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.ctaRadius}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
                       <Badge
@@ -761,7 +758,7 @@ export default function EmailSignatureGenerator() {
                     onChange={(e) => handleStyleChange('showDivider', e.target.checked)}
                     className="h-4! w-4! rounded border-neutral-300"
                   />
-                  <label htmlFor="divider-toggle" className="text-mid text-sm!">
+                  <label htmlFor="divider-toggle" className="text-sm! text-mid">
                     {t.appearance.showDivider}
                   </label>
                 </div>
@@ -789,7 +786,7 @@ export default function EmailSignatureGenerator() {
           <div className="flex items-center justify-between gap-2">
             <div>
               <h2 className="h6">{t.preview.title}</h2>
-              <p className="text-light text-xs!">{t.preview.helper}</p>
+              <p className="text-xs! text-light">{t.preview.helper}</p>
             </div>
           </div>
 
@@ -807,9 +804,13 @@ export default function EmailSignatureGenerator() {
             </Button>
           </div>
 
-          {!hasRequired && <p className="text-light text-xs!">{t.preview.requiredFields}</p>}
+          {!hasRequired && (
+            <p className="text-xs! text-light">{t.preview.requiredFields}</p>
+          )}
         </section>
       </div>
     </div>
   );
 }
+
+
