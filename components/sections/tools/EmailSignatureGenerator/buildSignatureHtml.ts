@@ -1,6 +1,7 @@
 import { escapeHtml, formatMultiline, formatPhone, sanitizeHrefUrl, sanitizeSrcUrl } from '@/components/sections/tools/EmailSignatureGenerator/sanitize';
-import type { FontSizeOption, LayoutType, MarginOption, CtaRadiusOption, SocialKey, SignatureConfig, StyleConfig } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import type { BorderSides, FontSizeOption, LayoutType, MarginOption, CtaRadiusOption, SocialKey, SignatureConfig, SpacingConfig, StyleConfig } from '@/components/sections/tools/EmailSignatureGenerator/types';
 import { rgbToHex } from '@/lib/tools/color/convert';
+import { getSocialIcon, type SocialPlatform, type IconSize } from '@/lib/tools/email/socialIcons';
 
 type BuildSignatureLabels = {
   tel: string;
@@ -18,12 +19,6 @@ const FONT_SIZE_MAP: Record<FontSizeOption, string> = {
   large: '14px',
 };
 
-const PADDING_NUM_MAP: Record<MarginOption, number> = {
-  small: 8,
-  medium: 16,
-  large: 24,
-};
-
 const PADDING_MAP: Record<MarginOption, string> = {
   small: '8px',
   medium: '16px',
@@ -36,17 +31,33 @@ const CTA_RADIUS_MAP: Record<CtaRadiusOption, string> = {
   full: '999px',
 };
 
-export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, layout: LayoutType, labels: BuildSignatureLabels): string {
+export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, spacing: SpacingConfig, layout: LayoutType, labels: BuildSignatureLabels): string {
   const fontFamily = style.fontFamily || 'Arial, sans-serif';
   const baseFontSize = FONT_SIZE_MAP[style.fontSize] || FONT_SIZE_MAP.normal;
   const accentColor = style.accentColor || SIGNATURE_COLOR_DARK;
   const textColor = style.textColor || SIGNATURE_COLOR_DARK;
   const backgroundColor = style.backgroundColor || SIGNATURE_COLOR_WHITE;
 
-  const paddingPx = PADDING_NUM_MAP[style.padding] ?? 16;
   const paddingAll = PADDING_MAP[style.padding] ?? '16px';
-  const paddingLeftAccent = `${paddingPx + 8}px`;
   const ctaBorderRadius = CTA_RADIUS_MAP[style.ctaRadius] ?? '999px';
+
+  const getBorderStyle = (border: BorderSides): string => {
+    const borderColor = accentColor;
+    const styles: string[] = [];
+    const allSelected = border.left && border.right && border.top && border.bottom;
+    
+    if (allSelected) {
+      return `border:2px solid ${borderColor};`;
+    }
+    
+    if (border.left) styles.push(`border-left:4px solid ${borderColor}`);
+    if (border.right) styles.push(`border-right:4px solid ${borderColor}`);
+    if (border.top) styles.push(`border-top:4px solid ${borderColor}`);
+    if (border.bottom) styles.push(`border-bottom:4px solid ${borderColor}`);
+    
+    return styles.length > 0 ? styles.join(';') + ';' : '';
+  };
+  const borderStyle = getBorderStyle(style.border);
 
   const hasTopLine = config.topLine.trim().length > 0;
   const hasAddress = config.address.trim().length > 0;
@@ -104,11 +115,35 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     { key: 'x', label: 'X' },
   ];
 
+  const socialKeyToPlatform: Record<SocialKey, SocialPlatform> = {
+    linkedin: 'linkedin',
+    instagram: 'instagram',
+    facebook: 'facebook',
+    tiktok: 'tiktok',
+    youtube: 'youtube',
+    x: 'twitter',
+  };
+
+  const getIconColor = (): string | undefined => {
+    if (style.socialIcons.colorMode === 'accent') return accentColor;
+    if (style.socialIcons.colorMode === 'text') return textColor;
+    return undefined; // platform colors
+  };
+
   const socialLinks = socials
     .filter((s) => config.socials[s.key] && config.socials[s.key]?.trim().length)
     .map((s) => {
       const url = sanitizeHrefUrl(config.socials[s.key]);
       if (!url) return '';
+      
+      if (style.socialIcons.showIcons) {
+        const platform = socialKeyToPlatform[s.key];
+        const iconSize = style.socialIcons.iconSize as IconSize;
+        const iconColor = getIconColor();
+        const icon = getSocialIcon(platform, iconSize, iconColor);
+        return `<a href="${escapeHtml(url)}" style="display:inline-block;margin-right:10px;margin-bottom:2px;text-decoration:none;vertical-align:middle;" title="${s.label}">${icon}</a>`;
+      }
+      
       return `<a href="${escapeHtml(url)}" style="display:inline-block;margin-right:10px;margin-bottom:2px;color:${accentColor};text-decoration:none;font-size:${baseFontSize};">${s.label}</a>`;
     })
     .filter(Boolean);
@@ -118,7 +153,7 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       ? (() => {
           const ctaUrl = sanitizeHrefUrl(config.ctaUrl);
           if (!ctaUrl) return '';
-          return `<tr><td style="padding-top:10px;"><a href="${escapeHtml(
+          return `<tr><td style="padding-top:${spacing.afterCta}px;"><a href="${escapeHtml(
             ctaUrl,
           )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:${SIGNATURE_COLOR_WHITE};text-decoration:none;font-size:${baseFontSize};">${escapeHtml(
             config.ctaLabel.trim(),
@@ -126,7 +161,20 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
         })()
       : '';
 
-  const legalHtml = config.legalNote.trim() ? `<tr><td style="padding-top:12px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.legalNote.trim())}</td></tr>` : '';
+  const cta2Html =
+    config.cta2Label.trim() && config.cta2Url.trim()
+      ? (() => {
+          const cta2Url = sanitizeHrefUrl(config.cta2Url);
+          if (!cta2Url) return '';
+          return `<tr><td style="padding-top:6px;"><a href="${escapeHtml(
+            cta2Url,
+          )}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:transparent;border:1px solid ${accentColor};color:${accentColor};text-decoration:none;font-size:${baseFontSize};">${escapeHtml(
+            config.cta2Label.trim(),
+          )}</a></td></tr>`;
+        })()
+      : '';
+
+  const legalHtml = config.legalNote.trim() ? `<tr><td style="padding-top:${spacing.beforeLegal}px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.legalNote.trim())}</td></tr>` : '';
 
   const dividerHtml = style.showDivider ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:1px solid ${SIGNATURE_COLOR_DIVIDER};width:100%;"></div></td></tr>` : '';
 
@@ -136,55 +184,36 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     ? `<tr><td style="padding:0 0 4px 0;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};">${escapeHtml(config.topLine.trim())}</td></tr>`
     : '';
 
-  const nameRowHtml = `<tr><td style="padding:0 0 4px 0;"><span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(config.fullName || '')}</span>${
+  const nameRowHtml = `<tr><td style="padding:0 0 ${spacing.afterName}px 0;"><span style="font-size:15px;font-weight:bold;color:${accentColor};">${escapeHtml(config.fullName || '')}</span>${
     hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''
   }</td></tr>`;
 
   const titleCompanyHtml =
     hasJobTitle || hasCompany
-      ? `<tr><td style="padding:0 0 4px 0;"><span style="color:${textColor};">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${
+      ? `<tr><td style="padding:0 0 ${spacing.afterTitle}px 0;"><span style="color:${textColor};">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${
           hasJobTitle && hasCompany ? ' · ' : ''
         }${hasCompany ? escapeHtml(config.company.trim()) : ''}</span></td></tr>`
       : '';
 
-  const extraLineHtml = hasExtraLine ? `<tr><td style="padding:0 0 6px 0;color:${textColor};">${escapeHtml(config.extraLine.trim())}</td></tr>` : '';
+  const extraLineHtml = hasExtraLine ? `<tr><td style="padding:0 0 ${spacing.afterExtra}px 0;color:${textColor};">${escapeHtml(config.extraLine.trim())}</td></tr>` : '';
 
   const addressHtml = hasAddress ? `<tr><td style="padding:0 0 6px 0;color:${textColor};font-size:${baseFontSize};">${formatMultiline(config.address.trim())}</td></tr>` : '';
 
-  const contactHtml = contactItems.length ? `<tr><td style="padding:4px 0 0 0;color:${textColor};">${contactItems.join('<span style="margin-right:4px;">&nbsp;</span>')}</td></tr>` : '';
+  const contactHtml = contactItems.length ? `<tr><td style="padding:${spacing.afterContact}px 0 0 0;color:${textColor};">${contactItems.join('<span style="margin-right:4px;">&nbsp;</span>')}</td></tr>` : '';
 
-  const socialsHtml = socialLinks.length ? `<tr><td style="padding-top:8px;color:${textColor};">${socialLinks.join('')}</td></tr>` : '';
+  const socialsHtml = socialLinks.length ? `<tr><td style="padding-top:${spacing.afterSocials}px;color:${textColor};">${socialLinks.join('')}</td></tr>` : '';
 
   const headerBlock = `${topLineHtml}${nameRowHtml}${titleCompanyHtml}`;
-  const contentBlock = `${extraLineHtml}${addressHtml}${contactHtml}${socialsHtml}${ctaHtml}${dividerHtml}${formalHtml}${legalHtml}`;
+  const contentBlock = `${extraLineHtml}${addressHtml}${contactHtml}${socialsHtml}${ctaHtml}${cta2Html}${dividerHtml}${formalHtml}${legalHtml}`;
   const innerRows = `${headerBlock}${contentBlock}`;
 
   let layoutWrapper = '';
 
   if (layout === 'standard') {
     layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
+      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};${borderStyle}">
         <tr>
           <td style="padding:${paddingAll};vertical-align:top;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              <tr>
-                ${avatarCellInline}
-                <td style="vertical-align:top;">
-                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-                    ${innerRows}
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    `;
-  } else if (layout === 'accent-bar') {
-    layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-        <tr>
-          <td style="padding:${paddingAll};border-left:4px solid ${accentColor};padding-left:${paddingLeftAccent};vertical-align:top;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
               <tr>
                 ${avatarCellInline}
@@ -292,6 +321,8 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       </table>
     `;
   } else if (layout === 'centered') {
+    const addCenterAlign = (html: string) => html.replace('<td style="', '<td style="text-align:center;');
+
     const avatarRowCentered = hasAvatar
       ? `<tr><td style="padding:0 0 8px 0;text-align:center;"><img src="${escapeHtml(
           sanitizedAvatarUrl,
@@ -304,17 +335,17 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
           <td style="padding:${paddingAll};text-align:center;">
             <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};margin:0 auto;">
               ${avatarRowCentered}
-              ${topLineHtml ? topLineHtml.replace('<td', '<td style="text-align:center;') : ''}
-              ${nameRowHtml.replace('<td', '<td style="text-align:center;')}
-              ${titleCompanyHtml ? titleCompanyHtml.replace('<td', '<td style="text-align:center;') : ''}
-              ${extraLineHtml ? extraLineHtml.replace('<td', '<td style="text-align:center;') : ''}
-              ${addressHtml ? addressHtml.replace('<td', '<td style="text-align:center;') : ''}
-              ${contactHtml ? contactHtml.replace('<td', '<td style="text-align:center;') : ''}
-              ${socialsHtml ? socialsHtml.replace('<td', '<td style="text-align:center;') : ''}
-              ${ctaHtml ? ctaHtml.replace('<td', '<td style="text-align:center;') : ''}
+              ${topLineHtml ? addCenterAlign(topLineHtml) : ''}
+              ${addCenterAlign(nameRowHtml)}
+              ${titleCompanyHtml ? addCenterAlign(titleCompanyHtml) : ''}
+              ${extraLineHtml ? addCenterAlign(extraLineHtml) : ''}
+              ${addressHtml ? addCenterAlign(addressHtml) : ''}
+              ${contactHtml ? addCenterAlign(contactHtml) : ''}
+              ${socialsHtml ? addCenterAlign(socialsHtml) : ''}
+              ${ctaHtml ? addCenterAlign(ctaHtml) : ''}
               ${dividerHtml}
-              ${formalHtml ? formalHtml.replace('<td', '<td style="text-align:center;') : ''}
-              ${legalHtml ? legalHtml.replace('<td', '<td style="text-align:center;') : ''}
+              ${formalHtml ? addCenterAlign(formalHtml) : ''}
+              ${legalHtml ? addCenterAlign(legalHtml) : ''}
             </table>
           </td>
         </tr>
@@ -347,8 +378,8 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
         <tr>
           <td style="padding:${paddingAll};">
             ${hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="32" height="32" style="border-radius:999px;vertical-align:middle;margin-right:10px;" />` : ''}${compactName}${compactTitle}${compactCompany}${compactContact}
-            ${socialLinks.length ? `<div style="margin-top:6px;">${socialLinks.join('')}</div>` : ''}
-            ${config.legalNote.trim() ? `<div style="margin-top:8px;font-size:10px;color:${textColor};opacity:0.7;">${formatMultiline(config.legalNote.trim())}</div>` : ''}
+            ${socialLinks.length ? `<div style="margin-top:${spacing.afterSocials}px;">${socialLinks.join('')}</div>` : ''}
+            ${config.legalNote.trim() ? `<div style="margin-top:${spacing.beforeLegal}px;font-size:10px;color:${textColor};opacity:0.7;">${formatMultiline(config.legalNote.trim())}</div>` : ''}
           </td>
         </tr>
       </table>
@@ -358,9 +389,9 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       <td style="vertical-align:top;padding-right:20px;">
         ${hasAvatar ? `<div style="margin-bottom:8px;"><img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" /></div>` : ''}
         ${hasTopLine ? `<div style="font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};margin-bottom:4px;">${escapeHtml(config.topLine.trim())}</div>` : ''}
-        <div style="font-size:15px;font-weight:bold;color:${accentColor};margin-bottom:4px;">${escapeHtml(config.fullName || '')}${hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''}</div>
-        ${hasJobTitle || hasCompany ? `<div style="color:${textColor};margin-bottom:4px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>` : ''}
-        ${hasExtraLine ? `<div style="color:${textColor};margin-bottom:4px;">${escapeHtml(config.extraLine.trim())}</div>` : ''}
+        <div style="font-size:15px;font-weight:bold;color:${accentColor};margin-bottom:${spacing.afterName}px;">${escapeHtml(config.fullName || '')}${hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''}</div>
+        ${hasJobTitle || hasCompany ? `<div style="color:${textColor};margin-bottom:${spacing.afterTitle}px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>` : ''}
+        ${hasExtraLine ? `<div style="color:${textColor};margin-bottom:${spacing.afterExtra}px;">${escapeHtml(config.extraLine.trim())}</div>` : ''}
       </td>
     `;
 
@@ -385,8 +416,8 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     const rightColumn = `
       <td style="vertical-align:top;border-left:1px solid ${SIGNATURE_COLOR_DIVIDER};padding-left:20px;">
         ${rightColumnItems.join('')}
-        ${socialLinks.length ? `<div style="margin-top:6px;">${socialLinks.join('')}</div>` : ''}
-        ${config.ctaLabel.trim() && config.ctaUrl.trim() ? (() => { const ctaUrl = sanitizeHrefUrl(config.ctaUrl); return ctaUrl ? `<div style="margin-top:10px;"><a href="${escapeHtml(ctaUrl)}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:${SIGNATURE_COLOR_WHITE};text-decoration:none;font-size:${baseFontSize};">${escapeHtml(config.ctaLabel.trim())}</a></div>` : ''; })() : ''}
+        ${socialLinks.length ? `<div style="margin-top:${spacing.afterSocials}px;">${socialLinks.join('')}</div>` : ''}
+        ${config.ctaLabel.trim() && config.ctaUrl.trim() ? (() => { const ctaUrl = sanitizeHrefUrl(config.ctaUrl); return ctaUrl ? `<div style="margin-top:${spacing.afterCta}px;"><a href="${escapeHtml(ctaUrl)}" style="display:inline-block;padding:6px 14px;border-radius:${ctaBorderRadius};background-color:${accentColor};color:${SIGNATURE_COLOR_WHITE};text-decoration:none;font-size:${baseFontSize};">${escapeHtml(config.ctaLabel.trim())}</a></div>` : ''; })() : ''}
       </td>
     `;
 
@@ -400,33 +431,14 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
                 ${rightColumn}
               </tr>
             </table>
-            ${hasFormalLine || config.legalNote.trim() ? `<div style="margin-top:12px;padding-top:10px;border-top:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:11px;color:${textColor};">${hasFormalLine ? formatMultiline(config.formalLine.trim()) + '<br/>' : ''}${config.legalNote.trim() ? formatMultiline(config.legalNote.trim()) : ''}</div>` : ''}
-          </td>
-        </tr>
-      </table>
-    `;
-  } else if (layout === 'bordered') {
-    layoutWrapper = `
-      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};border:2px solid ${accentColor};border-radius:8px;">
-        <tr>
-          <td style="padding:${paddingAll};vertical-align:top;">
-            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-              <tr>
-                ${avatarCellInline}
-                <td style="vertical-align:top;">
-                  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};">
-                    ${innerRows}
-                  </table>
-                </td>
-              </tr>
-            </table>
+            ${hasFormalLine || config.legalNote.trim() ? `<div style="margin-top:${spacing.beforeLegal}px;padding-top:10px;border-top:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:11px;color:${textColor};">${hasFormalLine ? formatMultiline(config.formalLine.trim()) + '<br/>' : ''}${config.legalNote.trim() ? formatMultiline(config.legalNote.trim()) : ''}</div>` : ''}
           </td>
         </tr>
       </table>
     `;
   } else if (layout === 'minimal') {
-    const minimalName = `<div style="font-size:15px;font-weight:bold;color:${accentColor};margin-bottom:2px;">${escapeHtml(config.fullName || '')}</div>`;
-    const minimalTitle = hasJobTitle || hasCompany ? `<div style="color:${textColor};margin-bottom:6px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ', ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>` : '';
+    const minimalName = `<div style="font-size:15px;font-weight:bold;color:${accentColor};margin-bottom:${spacing.afterName}px;">${escapeHtml(config.fullName || '')}</div>`;
+    const minimalTitle = hasJobTitle || hasCompany ? `<div style="color:${textColor};margin-bottom:${spacing.afterTitle}px;">${hasJobTitle ? escapeHtml(config.jobTitle.trim()) : ''}${hasJobTitle && hasCompany ? ', ' : ''}${hasCompany ? escapeHtml(config.company.trim()) : ''}</div>` : '';
 
     const minimalContactItems: string[] = [];
     if (config.email.trim()) {
@@ -495,7 +507,7 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
         <tr>
           <td style="padding:0 ${paddingAll};">
             ${bottomBar}
-            ${hasFormalLine || config.legalNote.trim() ? `<div style="margin-top:10px;font-size:11px;color:${textColor};">${hasFormalLine ? formatMultiline(config.formalLine.trim()) + '<br/>' : ''}${config.legalNote.trim() ? formatMultiline(config.legalNote.trim()) : ''}</div>` : ''}
+            ${hasFormalLine || config.legalNote.trim() ? `<div style="margin-top:${spacing.beforeLegal}px;font-size:11px;color:${textColor};">${hasFormalLine ? formatMultiline(config.formalLine.trim()) + '<br/>' : ''}${config.legalNote.trim() ? formatMultiline(config.legalNote.trim()) : ''}</div>` : ''}
           </td>
         </tr>
       </table>

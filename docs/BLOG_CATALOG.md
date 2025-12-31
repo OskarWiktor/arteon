@@ -25,6 +25,23 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?**
+
+  - **Slug**: `czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych`
+  - **URL**: `/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych`
+  - **Kategorie**: `Grafika`, `Branding`, `UX`
+  - **Data publikacji**: 2025-12-31
+  - **Data modyfikacji**: 2025-12-31 (CONTENT-031: wizualizacja czcionek inline + poprawki tonu)
+  - **Czas czytania**: 12 min
+  - **Opis**: Kompleksowy artykuł porównawczy o czcionkach szeryfowych i bezszeryfowych z szerokim kontekstem (nie tylko strony, ale też druk, branding, psychologia odbioru). Obejmuje: historię szeryfów (Rzym, Gutenberg, modernizm), różnice wizualne (grubość kresek, kształt liter, proporcje), czytelność w różnych kontekstach (druk vs ekrany, badania Nielsen Norman Group), kiedy używać szeryfowych (długie teksty, branże tradycyjne, materiały drukowane), kiedy używać bezszeryfowych (UI, nagłówki, branże technologiczne), psychologię odbioru (skojarzenia z tradycją vs nowoczesnością, badanie Communication Research), łączenie obu stylów (typowe kombinacje, zasady), czcionki a dostępność (dysleksja, WCAG 2.1), praktyczne aspekty wyboru (kontekst, charakter marki, licencje, wydajność), przykłady z branż (prawo, tech, medycyna, gastronomia).
+  - **Wizualizacja czcionek**: Nazwy czcionek wyświetlane są inline ich własnym krojem pisma dzięki @import Google Fonts + inline style font-family (np. Times New Roman, Georgia, Arial, Helvetica, Roboto, Garamond, Playfair Display itp.)
+  - **Linki wewnętrzne (8)**: `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`, `/narzedzia/tester-kontrastu-kolorow-wcag`, `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki zewnętrzne (5)**: Nielsen Norman Group (serif vs sans-serif), Google Fonts, Adobe Fonts, WCAG 2.1 (text-spacing), Communication Research (badanie o typografii i osobowości)
+  - **Tooltips**: czcionki szeryfowe, czcionki bezszeryfowe, PPI
+  - **FAQ**: 5 pytań (która lepsza, czy bezszeryfowe lepsze na ekranach, ile czcionek w projekcie, Google Fonts komercyjnie, polskie znaki)
+  - **CTA**: Identyfikacja wizualna + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia różnice między czcionkami z szerokim kontekstem (druk, web, branding) i przykładami z różnych branż (prawo, tech, medycyna, gastronomia)
+
 - **Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?**
 
   - **Slug**: `czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`

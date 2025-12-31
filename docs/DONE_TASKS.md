@@ -2,6 +2,128 @@
 
 ## 2025-12-31
 
+- ✅ **[31] Artykuł: Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?**
+
+  - **Co zrobiono**:
+    - Napisano kompleksowy artykuł porównawczy (12 min, ~2400 słów) o czcionkach szeryfowych i bezszeryfowych z szerokim kontekstem — nie tylko strony internetowe, ale też druk, branding, psychologia odbioru.
+    - Struktura: historia szeryfów (Rzym, Gutenberg, modernizm), różnice wizualne, czytelność (druk vs ekrany z badaniami NNGroup), kiedy używać szeryfowych, kiedy bezszeryfowych, psychologia odbioru, łączenie stylów, dostępność (dysleksja, WCAG), praktyczne aspekty wyboru, przykłady z branż.
+    - 8 linków wewnętrznych, 5 linków zewnętrznych, 3 tooltips, 5 FAQ.
+    - Dodano artykuł na górę listy w `data/pl/blog.json`.
+    - Zaktualizowano `docs/BLOG_CATALOG.md`.
+  - **Poprawki (CONTENT-031)**:
+    - Dodano wizualizację czcionek inline — nazwy czcionek wyświetlają się ich własnym krojem (np. <span style="font-family: Georgia">Georgia</span>, <span style="font-family: Roboto">Roboto</span>) dzięki @import Google Fonts + inline style font-family.
+    - Poprawiono ton — usunięto sformułowania pouczające ("To uproszczenie", "Oczywiście to nie są sztywne reguły", "Teoria to jedno, praktyka to drugie").
+    - Dodano źródło dla badań psychologicznych (Communication Research).
+  - **Pliki zmienione**:
+    - `data/pl/blog.json`
+    - `docs/BLOG_CATALOG.md`
+  - **Uwaga**: Brakuje obrazu cover — do uzupełnienia: `public/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp`
+  - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[TOOLS-051] Generator stopki mailowej: ikony social media SVG + przeniesienie linii oddzielającej**
+
+  - **Co zrobiono**:
+    - Przeniesiono opcję „Pokaż linię oddzielającą" z zakładki Wygląd do zakładki Klauzula/RODO.
+    - Dodano checkbox „Pokaż ikony obok nazw serwisów" na końcu zakładki Media społecznościowe.
+    - Po włączeniu ikon: wybór rozmiaru (Małe/Średnie/Duże) i koloru (Kolory platform/Kolor akcentu/Kolor tekstu).
+    - Ikony SVG inline renderowane bezpośrednio w HTML (kompatybilne z Gmail/Outlook).
+    - Zaktualizowano instrukcję narzędzia.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `lib/tools/email/socialIcons.ts` (już istniał, użyty)
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npx tsc --noEmit` przechodzi.
+
+- ✅ **[TOOLS-055] Generator stopki mailowej: wielokrotny wybór ramki**
+
+  - **Co zrobiono**:
+    - Zmieniono typ `BorderOption` na `BorderSides` z flagami dla każdej strony.
+    - UI: checkboxy dla każdej strony + przyciski "Pełna" / "Brak".
+    - Wybór wszystkich 4 stron automatycznie ustawia pełną ramkę.
+    - Zaktualizowano instrukcję narzędzia.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npx tsc --noEmit` przechodzi.
+
+- ✅ **[TOOLS-054] Generator stopki mailowej: refaktoryzacja UI + opcja ramki zamiast layoutów**
+
+  - **Co zrobiono**:
+    - Usunięto układy „Pasek akcentu" i „Z ramką" z listy layoutów (pozostało 8 układów).
+    - Dodano opcję ramki w zakładce Wygląd (brak / pełna / lewa / prawa / góra / dół).
+    - Przeniesiono zakładki edytora do osobnej sekcji nad dwiema kolumnami.
+    - Zaktualizowano instrukcję narzędzia i schemat HowTo.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npx tsc --noEmit` przechodzi. Build ma niezwiązany błąd z brakującymi stronami bloga.
+
+- ✅ **[TOOLS-049] Generator stopki mailowej: drugi przycisk CTA + przeniesienie zaokrąglenia przycisku**
+
+  - **Co zrobiono**:
+    - Zmieniono nazwę zakładki z „Link” na „Przyciski”.
+    - Dodano pola dla drugiego przycisku CTA (cta2Label, cta2Url) — styl outline (przezroczyste tło z obramowaniem).
+    - Przeniesiono opcję „Zaokrąglenie przycisku CTA” z zakładki Wygląd do zakładki Przyciski.
+    - Zaktualizowano instrukcję narzędzia i schemat HowTo.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[TOOLS-053] Generator stopki mailowej: poprawka spacing w układzie Wyśrodkowany**
+
+  - **Co zrobiono**:
+    - Naprawiono działanie spacing w układzie `centered` — zmieniono logikę z `.replace('<td', '<td style="text-align:center;')` na `.replace('<td style="', '<td style="text-align:center;')` aby dołączać text-align do istniejących stylów zamiast je nadpisywać.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+  - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[TOOLS-052] Generator stopki mailowej: poprawka spacing we wszystkich układach + dynamiczne ukrywanie**
+
+  - **Co zrobiono**:
+    - Zaktualizowano `buildSignatureHtml.ts` — spacing jest teraz stosowany we wszystkich 10 układach:
+      - `compact`: afterSocials, beforeLegal
+      - `two-column`: afterName, afterTitle, afterExtra, afterSocials, afterCta, beforeLegal
+      - `minimal`: afterName, afterTitle
+      - `bottom-bar`: beforeLegal
+    - Dodano mapowanie `LAYOUT_SPACING_MAP` w komponencie — określa które kontrolki spacing są dostępne dla danego layoutu.
+    - Zaktualizowano panel Odstępy — kontrolki są teraz dynamicznie ukrywane w zależności od wybranego layoutu.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
+- ✅ **[TOOLS-047] Generator stopki mailowej: nowa zakładka Odstępy (spacing między elementami)**
+
+  - **Co zrobiono**:
+    - Dodano nową zakładkę „Odstępy" w edytorze stopki mailowej.
+    - Przeniesiono opcję „Margines wewnętrzny stopki" z zakładki Wygląd do Odstępy.
+    - Dodano dynamiczne kontrolki +/- do regulacji odstępów między poszczególnymi elementami stopki:
+      - Po imieniu i nazwisku
+      - Po stanowisku / firmie
+      - Po dodatkowej linii
+      - Po danych kontaktowych
+      - Po mediach społecznościowych
+      - Po przycisku CTA
+      - Przed klauzulą
+    - Kontrolki są widoczne tylko dla elementów aktualnie obecnych w stopce (dynamiczne ukrywanie).
+    - Zaktualizowano instrukcję narzędzia z nową sekcją opisującą zakładkę Odstępy.
+    - Zaktualizowano schemat HowTo o nowy krok.
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
+
 - ✅ **[AUDIT-018] Repo: audyt sitemap — kompletność, duplikaty, poprawność lastmod**
 
   - **Co zrobiono**:

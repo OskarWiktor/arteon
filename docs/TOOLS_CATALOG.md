@@ -491,11 +491,13 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Model danych**:
   - **`SignatureConfig`** (dane i treści): m.in. `fullName`, `email`, `phone`, `website`, `address`, `company`, `jobTitle`, `ctaLabel`, `ctaUrl`, `socials[]`, `legalNote`, `formalLine`, `avatarUrl`.
   - **`StyleConfig`** (wygląd): `accentColor`, `textColor`, `backgroundColor`, `fontFamily`, `fontSize`, `padding`, `ctaRadius`, `showDivider`.
+  - **`SpacingConfig`** (odstępy między elementami): `afterName`, `afterTitle`, `afterExtra`, `afterContact`, `afterSocials`, `afterCta`, `beforeLegal` — wartości w px.
 - **Panele edycji (UI)**:
   - **[identity]**: dane osoby/firmy (w tym adres i dane formalne).
   - **[cta]**: tekst i link przycisku CTA.
   - **[social]**: linki do profili (LinkedIn/Instagram/Facebook/TikTok/YouTube/X) - pojawiają się tylko wypełnione.
-  - **[appearance]**: motyw i style (kolory, font, rozmiar tekstu, padding, radius CTA, divider).
+  - **[appearance]**: motyw i style (kolory, font, rozmiar tekstu, radius CTA, divider).
+  - **[spacing]**: margines wewnętrzny stopki + dynamiczne kontrolki +/- do regulacji odstępów między elementami (widoczne tylko dla aktywnych elementów).
   - **[legal]**: klauzula prawna/RODO (textarea, wspiera wielolinijkowość).
 - **Generowanie HTML** (`buildSignatureHtml()`):
   - **[escape]** wszystkie teksty przechodzą przez `escapeHtml()`.

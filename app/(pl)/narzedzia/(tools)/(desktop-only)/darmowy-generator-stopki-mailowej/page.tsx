@@ -109,11 +109,11 @@ export default function Page() {
       </Wrapper>
 
       <CTABanner
-        title="Chcesz w pełni profesjonalną identyfikację mailową dla Twojej firmy?"
-        description="Wykonamy dla Ciebie profesjonalną identyfikację mailową - dopasowaną do Twojej marki, spójną z Twoją stroną i social mediami."
-        btnOne="Umów rozmowę"
+        title="Chcesz podnieść profesjonalność swojej marki?"
+        description="Zajmujemy się stronami, projektami graficznymi, wraz ze składem do druku i marketingiem dla małych i średnich firm. Sprawdź nasze usługi lub napisz do nas - z chęcią pomożemy"
+        btnOne="Skontaktuj się"
         btnOneLink="/kontakt"
-        btnTwo="Sprawdź nasze usługi"
+        btnTwo="Sprawdź usługi"
         btnTwoLink="/uslugi"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"

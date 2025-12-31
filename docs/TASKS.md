@@ -494,6 +494,45 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Powyższe pola są uzupełnione i spójne semantycznie.
     - `npm run lint` i `npm run build` przechodzą.
 
+- ❌ **[TOOLS-048] Generator stopki mailowej: personalizacja stylu tekstu per element (kolor + rozmiar)**
+
+  - Cel:
+    - Dodać nową zakładkę (np. „Styl tekstu") umożliwiającą edycję koloru i rozmiaru każdego elementu tekstowego osobno.
+    - Dodać możliwość zapisywania własnych kolorów do późniejszego użycia.
+  - Zakres:
+    - Dla każdego widocznego elementu tekstowego: wybór koloru (z zapisanych + ręczny picker) i rozmiaru (+/-).
+    - Sekcja „Własne kolory" na górze zakładki — dodawanie i zapisywanie kolorów.
+    - Zapisane kolory pojawiają się jako opcje przy każdym elemencie.
+  - Pliki:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/sections/tools/EmailSignatureGenerator/types.ts`
+    - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - Kryteria akceptacji:
+    - Zakładka z kontrolkami stylu per element.
+    - Możliwość dodawania/usuwania własnych kolorów.
+    - Instrukcja zaktualizowana.
+    - `npm run lint` i `npm run build` przechodzą.
+
+- ❌ **[TOOLS-050] Generator stopki mailowej: LocalStorage + modal potwierdzenia resetu**
+
+  - Cel:
+    - Dodać pełną obsługę LocalStorage dla wszystkich opcji narzędzia.
+    - Dodać przycisk „Resetuj wygląd" z modalem potwierdzenia.
+  - Zakres:
+    - Automatyczny zapis wszystkich ustawień do localStorage.
+    - Przycisk bez ikony „Resetuj wygląd" otwierający reużywalny modal potwierdzenia.
+    - Modal na bazie SearchDialog — h3 z klasą h4, dwa przyciski (Tak / Anuluj).
+  - Pliki:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/ui/ConfirmModal.tsx` (nowy, reużywalny)
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - Kryteria akceptacji:
+    - Dane zapisywane w localStorage i przywracane po odświeżeniu.
+    - Modal potwierdzenia resetu działa poprawnie.
+    - Instrukcja zaktualizowana.
+    - `npm run lint` i `npm run build` przechodzą.
+
 ---
 
 ## Pomysły
@@ -836,10 +875,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Kategoria: Grafika, Branding
     - Uzasadnienie: Format "błędy" z konkretnymi przykładami.
 
-31. ❌ **Fonty szeryfowe vs bezszeryfowe: kiedy używać których na stronie?**
-
-    - Kategoria: Grafika, UX
-    - Uzasadnienie: Porównanie z kontekstem czytelności i brandingu.
 
 32. ❌ **Czym jest paleta kolorów i ile kolorów powinna mieć marka?**
 

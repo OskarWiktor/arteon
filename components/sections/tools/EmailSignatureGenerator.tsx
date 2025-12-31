@@ -5,10 +5,10 @@ import Badge from '@/components/ui/Badge';
 import Eyebrow from '@/components/ui/typography/Eyebrow';
 import { buildSignatureHtml } from '@/components/sections/tools/EmailSignatureGenerator/buildSignatureHtml';
 import { useSignatureCopy } from '@/components/sections/tools/EmailSignatureGenerator/useSignatureCopy';
-import type { ActivePanel, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, StyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import type { ActivePanel, BorderSides, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, SpacingConfig, SpacingKey, StyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { useMemo, useState, type ReactNode } from 'react';
-import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line } from 'react-icons/ri';
+import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line, RiSpace, RiAddLine, RiSubtractLine } from 'react-icons/ri';
 
 const ui = {
   pl: {
@@ -16,22 +16,30 @@ const ui = {
     moreLayoutsSoon: 'Wkrótce kolejne gotowe układy.',
     layouts: {
       standard: 'Standard',
-      accentBar: 'Pasek akcentu',
       topBanner: 'Pasek u góry',
       labelColumn: 'Etykiety z lewej',
       centered: 'Wyśrodkowany',
       compact: 'Kompaktowy',
       twoColumn: 'Dwie kolumny',
-      bordered: 'Z ramką',
       minimal: 'Minimalistyczny',
       bottomBar: 'Pasek na dole',
+    },
+    border: {
+      label: 'Ramka stopki',
+      none: 'Brak',
+      full: 'Pełna',
+      left: 'Lewa',
+      right: 'Prawa',
+      top: 'Góra',
+      bottom: 'Dół',
     },
     editorTitle: 'Edytor stopki HTML',
     panels: {
       identity: 'Dane',
-      cta: 'Link',
+      buttons: 'Przyciski',
       social: 'Media społecznościowe',
       appearance: 'Wygląd',
+      spacing: 'Odstępy',
       legal: 'Klauzula / RODO',
     },
     identity: {
@@ -62,17 +70,36 @@ const ui = {
       formalLine: 'Dane formalne (np. NIP, numer licencji)',
       formalLinePlaceholder: 'Np. NIP: 0000000000 • REGON: 000000000',
     },
-    cta: {
-      title: 'Przycisk CTA',
+    buttons: {
+      title: 'Przyciski CTA',
       label: 'Tekst przycisku',
       labelPlaceholder: 'Umów bezpłatną konsultację',
       url: 'Link CTA',
       urlPlaceholder: 'https://kalendarz.pl/twoje-spotkania',
       helper: 'Jeśli pole tekstu lub linku pozostanie puste, przycisk nie pojawi się w stopce.',
+      cta1Title: 'Przycisk główny',
+      cta2Title: 'Przycisk dodatkowy',
+      cta2Label: 'Tekst drugiego przycisku',
+      cta2LabelPlaceholder: 'Pobierz katalog',
+      cta2Url: 'Link drugiego przycisku',
+      cta2UrlPlaceholder: 'https://twojadomena.pl/katalog.pdf',
+      ctaRadius: 'Zaokrąglenie przycisków',
+      ctaRadiusNone: 'Brak',
+      ctaRadiusSmall: 'Lekkie',
+      ctaRadiusFull: 'Pełne',
     },
     social: {
       title: 'Media społecznościowe',
-      helper: 'Linki są opcjonalne - w stopce pojawią się tylko te serwisy, które mają uzupełniony adres URL (bez ikon, sama nazwa serwisu).',
+      helper: 'Linki są opcjonalne - w stopce pojawią się tylko te serwisy, które mają uzupełniony adres URL.',
+      showIcons: 'Pokaż ikony obok nazw serwisów',
+      iconSize: 'Rozmiar ikon',
+      iconSizeSmall: 'Małe',
+      iconSizeMedium: 'Średnie',
+      iconSizeLarge: 'Duże',
+      iconColor: 'Kolor ikon',
+      iconColorPlatform: 'Kolory platform',
+      iconColorAccent: 'Kolor akcentu',
+      iconColorText: 'Kolor tekstu',
     },
     appearance: {
       themeTitle: 'Motyw kolorystyczny',
@@ -85,15 +112,23 @@ const ui = {
       fontSizeNormal: 'Standard',
       fontSizeLarge: 'Większy',
       padding: 'Margines wewnętrzny stopki',
-      ctaRadius: 'Zaokrąglenie przycisku CTA',
-      ctaRadiusNone: 'Brak',
-      ctaRadiusSmall: 'Lekkie',
-      ctaRadiusFull: 'Pełne',
-      showDivider: 'Pokaż linię oddzielającą dane od klauzuli',
     },
     legal: {
       title: 'Klauzula prawna / RODO',
       placeholder: 'Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość.',
+      showDivider: 'Pokaż linię oddzielającą dane od klauzuli',
+    },
+    spacing: {
+      title: 'Odstępy między elementami',
+      helper: 'Dostosuj odstępy między poszczególnymi elementami stopki. Widoczne są tylko opcje dla elementów aktualnie obecnych w stopce.',
+      padding: 'Margines wewnętrzny stopki',
+      afterName: 'Po imieniu i nazwisku',
+      afterTitle: 'Po stanowisku / firmie',
+      afterExtra: 'Po dodatkowej linii',
+      afterContact: 'Po danych kontaktowych',
+      afterSocials: 'Po mediach społecznościowych',
+      afterCta: 'Po przycisku CTA',
+      beforeLegal: 'Przed klauzulą',
     },
     preview: {
       title: 'Podgląd stopki mailowej',
@@ -146,6 +181,8 @@ const DEFAULT_SIGNATURE: SignatureConfig = {
   extraLine: 'Projektuję szybkie i funkcjonalne strony WWW.',
   ctaLabel: 'Umów bezpłatną konsultację',
   ctaUrl: 'https://www.twojadomena.pl',
+  cta2Label: '',
+  cta2Url: '',
   socials: {
     linkedin: 'https://www.linkedin.com/in/jankowalski',
     instagram: '',
@@ -175,6 +212,29 @@ const DEFAULT_STYLE: StyleConfig = {
   padding: 'medium',
   ctaRadius: 'full',
   showDivider: true,
+  border: { left: false, right: false, top: false, bottom: false },
+  socialIcons: { showIcons: false, iconSize: 'medium', colorMode: 'platform' },
+};
+
+const DEFAULT_SPACING: SpacingConfig = {
+  afterName: 4,
+  afterTitle: 4,
+  afterExtra: 6,
+  afterContact: 4,
+  afterSocials: 8,
+  afterCta: 10,
+  beforeLegal: 12,
+};
+
+const LAYOUT_SPACING_MAP: Record<LayoutType, SpacingKey[]> = {
+  standard: ['afterName', 'afterTitle', 'afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
+  'top-banner': ['afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
+  'label-column': ['afterName', 'afterTitle', 'afterExtra', 'afterSocials', 'afterCta', 'beforeLegal'],
+  centered: ['afterName', 'afterTitle', 'afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
+  compact: ['afterSocials', 'beforeLegal'],
+  'two-column': ['afterName', 'afterTitle', 'afterExtra', 'afterSocials', 'afterCta', 'beforeLegal'],
+  minimal: ['afterName', 'afterTitle'],
+  'bottom-bar': ['afterName', 'afterTitle', 'afterExtra', 'afterContact', 'afterSocials', 'beforeLegal'],
 };
 
 const FONT_OPTIONS = [
@@ -236,6 +296,7 @@ export default function EmailSignatureGenerator() {
   const t = ui.pl;
   const [config, setConfig] = useState<SignatureConfig>(DEFAULT_SIGNATURE);
   const [styleConfig, setStyleConfig] = useState<StyleConfig>(DEFAULT_STYLE);
+  const [spacingConfig, setSpacingConfig] = useState<SpacingConfig>(DEFAULT_SPACING);
   const { copyStatus, copyToGmail } = useSignatureCopy();
   const [activePanel, setActivePanel] = useState<ActivePanel>('identity');
   const [layout, setLayout] = useState<LayoutType>('standard');
@@ -243,7 +304,7 @@ export default function EmailSignatureGenerator() {
 
   const hasRequired = config.fullName.trim().length > 0 && config.email.trim().length > 0;
 
-  const signatureHtml = useMemo(() => buildSignatureHtml(config, styleConfig, layout, SIGNATURE_LABELS), [config, styleConfig, layout]);
+  const signatureHtml = useMemo(() => buildSignatureHtml(config, styleConfig, spacingConfig, layout, SIGNATURE_LABELS), [config, styleConfig, spacingConfig, layout]);
 
   function handleTextChange<K extends keyof SignatureConfig>(key: K, value: SignatureConfig[K]) {
     setConfig((prev) => ({
@@ -266,6 +327,13 @@ export default function EmailSignatureGenerator() {
     setStyleConfig((prev) => ({
       ...prev,
       [key]: value,
+    }));
+  }
+
+  function handleSpacingChange(key: SpacingKey, delta: number) {
+    setSpacingConfig((prev) => ({
+      ...prev,
+      [key]: Math.max(0, Math.min(32, prev[key] + delta)),
     }));
   }
 
@@ -294,7 +362,7 @@ export default function EmailSignatureGenerator() {
               {t.layoutLabel}
             </Eyebrow>
             <div className="flex flex-wrap gap-1">
-              {(['standard', 'accent-bar', 'top-banner', 'label-column', 'centered', 'compact', 'two-column', 'bordered', 'minimal', 'bottom-bar'] as LayoutType[]).map((lt) => (
+              {(['standard', 'top-banner', 'label-column', 'centered', 'compact', 'two-column', 'minimal', 'bottom-bar'] as LayoutType[]).map((lt) => (
                 <Badge
                   key={lt}
                   as="button"
@@ -304,13 +372,11 @@ export default function EmailSignatureGenerator() {
                   size="sm"
                 >
                   {lt === 'standard' && t.layouts.standard}
-                  {lt === 'accent-bar' && t.layouts.accentBar}
                   {lt === 'top-banner' && t.layouts.topBanner}
                   {lt === 'label-column' && t.layouts.labelColumn}
                   {lt === 'centered' && t.layouts.centered}
                   {lt === 'compact' && t.layouts.compact}
                   {lt === 'two-column' && t.layouts.twoColumn}
-                  {lt === 'bordered' && t.layouts.bordered}
                   {lt === 'minimal' && t.layouts.minimal}
                   {lt === 'bottom-bar' && t.layouts.bottomBar}
                 </Badge>
@@ -321,21 +387,25 @@ export default function EmailSignatureGenerator() {
         <p className="text-xs! text-light">{t.moreLayoutsSoon}</p>
       </section>
 
+      <section className="tool-section flex flex-wrap items-center gap-3 p-4!">
+        <div className="flex items-center gap-2">
+          <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+            {t.editorTitle}
+          </Eyebrow>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <PanelButton id="identity" current={activePanel} onClick={setActivePanel} icon={<RiUser3Line className="text-base" />} label={t.panels.identity} />
+          <PanelButton id="buttons" current={activePanel} onClick={setActivePanel} icon={<RiShareLine className="text-base" />} label={t.panels.buttons} />
+          <PanelButton id="social" current={activePanel} onClick={setActivePanel} icon={<RiMailLine className="text-base" />} label={t.panels.social} />
+          <PanelButton id="appearance" current={activePanel} onClick={setActivePanel} icon={<RiPaletteLine className="text-base" />} label={t.panels.appearance} />
+          <PanelButton id="spacing" current={activePanel} onClick={setActivePanel} icon={<RiSpace className="text-base" />} label={t.panels.spacing} />
+          <PanelButton id="legal" current={activePanel} onClick={setActivePanel} icon={<RiFileTextLine className="text-base" />} label={t.panels.legal} />
+        </div>
+      </section>
+
       <div className="grid items-stretch gap-4 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
         <section className="tool-section flex min-h-[620px] flex-col space-y-4">
-          <div className="mb-2 flex items-center justify-between gap-2">
-            <h2 className="h6">{t.editorTitle}</h2>
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            <PanelButton id="identity" current={activePanel} onClick={setActivePanel} icon={<RiUser3Line className="text-base" />} label={t.panels.identity} />
-            <PanelButton id="cta" current={activePanel} onClick={setActivePanel} icon={<RiShareLine className="text-base" />} label={t.panels.cta} />
-            <PanelButton id="social" current={activePanel} onClick={setActivePanel} icon={<RiMailLine className="text-base" />} label={t.panels.social} />
-            <PanelButton id="appearance" current={activePanel} onClick={setActivePanel} icon={<RiPaletteLine className="text-base" />} label={t.panels.appearance} />
-            <PanelButton id="legal" current={activePanel} onClick={setActivePanel} icon={<RiFileTextLine className="text-base" />} label={t.panels.legal} />
-          </div>
-
-          <div className="mt-3 space-y-4 text-sm!">
+          <div className="space-y-4 text-sm!">
             {activePanel === 'identity' && (
               <div className="space-y-3">
                 <Eyebrow variant="dynamic" className="text-xs! font-semibold">
@@ -500,39 +570,92 @@ export default function EmailSignatureGenerator() {
               </div>
             )}
 
-            {activePanel === 'cta' && (
+            {activePanel === 'buttons' && (
               <div className="space-y-4">
+                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                  {t.buttons.title}
+                </Eyebrow>
+
                 <div>
-                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
-                    {t.cta.title}
-                  </Eyebrow>
+                  <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.buttons.cta1Title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-xs! font-semibold uppercase text-light">{t.cta.label}</span>
+                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.label}</span>
                       </label>
                       <input
                         type="text"
                         value={config.ctaLabel}
                         onChange={(e) => handleTextChange('ctaLabel', e.target.value)}
                         className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                        placeholder={t.cta.labelPlaceholder}
+                        placeholder={t.buttons.labelPlaceholder}
                       />
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-xs! font-semibold uppercase text-light">{t.cta.url}</span>
+                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.url}</span>
                       </label>
                       <input
                         type="url"
                         value={config.ctaUrl}
                         onChange={(e) => handleTextChange('ctaUrl', e.target.value)}
                         className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
-                        placeholder={t.cta.urlPlaceholder}
+                        placeholder={t.buttons.urlPlaceholder}
                       />
                     </div>
                   </div>
-                  <p className="mt-1 text-xs! text-light">{t.cta.helper}</p>
+                  <p className="mt-1 text-xs! text-light">{t.buttons.helper}</p>
+                </div>
+
+                <div>
+                  <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.buttons.cta2Title}</p>
+                  <div className="grid grid-cols-1 gap-3">
+                    <div>
+                      <label className="mb-1 block">
+                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.cta2Label}</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={config.cta2Label}
+                        onChange={(e) => handleTextChange('cta2Label', e.target.value)}
+                        className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                        placeholder={t.buttons.cta2LabelPlaceholder}
+                      />
+                    </div>
+                    <div>
+                      <label className="mb-1 block">
+                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.cta2Url}</span>
+                      </label>
+                      <input
+                        type="url"
+                        value={config.cta2Url}
+                        onChange={(e) => handleTextChange('cta2Url', e.target.value)}
+                        className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                        placeholder={t.buttons.cta2UrlPlaceholder}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.buttons.ctaRadius}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
+                      <Badge
+                        key={option}
+                        onClick={() => handleStyleChange('ctaRadius', option)}
+                        as="button"
+                        type="button"
+                        size="sm"
+                        variant={styleConfig.ctaRadius === option ? 'selected' : 'default'}
+                        className={`px-3 py-1 text-xs! font-medium ${styleConfig.ctaRadius === option ? '' : 'hover:border-neutral-500'}`}
+                      >
+                        {option === 'none' && t.buttons.ctaRadiusNone}
+                        {option === 'small' && t.buttons.ctaRadiusSmall}
+                        {option === 'full' && t.buttons.ctaRadiusFull}
+                      </Badge>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
@@ -621,6 +744,67 @@ export default function EmailSignatureGenerator() {
                   </div>
                 </div>
                 <p className="text-xs! text-light">{t.social.helper}</p>
+
+                <div className="border-t border-neutral-200 pt-4 mt-4 space-y-3">
+                  <div className="flex items-center gap-2">
+                    <input
+                      id="social-icons-toggle"
+                      type="checkbox"
+                      checked={styleConfig.socialIcons.showIcons}
+                      onChange={(e) => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, showIcons: e.target.checked })}
+                      className="h-4! w-4! rounded border-neutral-300"
+                    />
+                    <label htmlFor="social-icons-toggle" className="text-sm! text-mid">
+                      {t.social.showIcons}
+                    </label>
+                  </div>
+
+                  {styleConfig.socialIcons.showIcons && (
+                    <>
+                      <div>
+                        <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.social.iconSize}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {(['small', 'medium', 'large'] as const).map((size) => (
+                            <Badge
+                              key={size}
+                              onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, iconSize: size })}
+                              as="button"
+                              type="button"
+                              size="sm"
+                              variant={styleConfig.socialIcons.iconSize === size ? 'selected' : 'default'}
+                              className="px-3 py-1 text-xs! font-medium"
+                            >
+                              {size === 'small' && t.social.iconSizeSmall}
+                              {size === 'medium' && t.social.iconSizeMedium}
+                              {size === 'large' && t.social.iconSizeLarge}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.social.iconColor}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {(['platform', 'accent', 'text'] as const).map((mode) => (
+                            <Badge
+                              key={mode}
+                              onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, colorMode: mode })}
+                              as="button"
+                              type="button"
+                              size="sm"
+                              variant={styleConfig.socialIcons.colorMode === mode ? 'selected' : 'default'}
+                              className="px-3 py-1 text-xs! font-medium"
+                            >
+                              {mode === 'platform' && t.social.iconColorPlatform}
+                              {mode === 'accent' && t.social.iconColorAccent}
+                              {mode === 'text' && t.social.iconColorText}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
               </div>
             )}
 
@@ -719,7 +903,70 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.padding}</p>
+                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.border.label}</p>
+                  <div className="flex flex-wrap gap-3">
+                    {(['left', 'right', 'top', 'bottom'] as (keyof BorderSides)[]).map((side) => (
+                      <label key={side} className="flex items-center gap-1.5 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={styleConfig.border[side]}
+                          onChange={(e) => {
+                            const newBorder = { ...styleConfig.border, [side]: e.target.checked };
+                            const allSelected = newBorder.left && newBorder.right && newBorder.top && newBorder.bottom;
+                            if (allSelected) {
+                              handleStyleChange('border', { left: true, right: true, top: true, bottom: true });
+                            } else {
+                              handleStyleChange('border', newBorder);
+                            }
+                          }}
+                          className="h-4! w-4! rounded border-neutral-300"
+                        />
+                        <span className="text-sm! text-mid">
+                          {side === 'left' && t.border.left}
+                          {side === 'right' && t.border.right}
+                          {side === 'top' && t.border.top}
+                          {side === 'bottom' && t.border.bottom}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                  <div className="mt-2 flex gap-2">
+                    <Badge
+                      onClick={() => handleStyleChange('border', { left: true, right: true, top: true, bottom: true })}
+                      as="button"
+                      type="button"
+                      size="sm"
+                      variant={styleConfig.border.left && styleConfig.border.right && styleConfig.border.top && styleConfig.border.bottom ? 'selected' : 'default'}
+                      className="px-3 py-1 text-xs! font-medium"
+                    >
+                      {t.border.full}
+                    </Badge>
+                    <Badge
+                      onClick={() => handleStyleChange('border', { left: false, right: false, top: false, bottom: false })}
+                      as="button"
+                      type="button"
+                      size="sm"
+                      variant={!styleConfig.border.left && !styleConfig.border.right && !styleConfig.border.top && !styleConfig.border.bottom ? 'selected' : 'default'}
+                      className="px-3 py-1 text-xs! font-medium"
+                    >
+                      {t.border.none}
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {activePanel === 'spacing' && (
+              <div className="space-y-4">
+                <div>
+                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
+                    {t.spacing.title}
+                  </Eyebrow>
+                  <p className="text-xs! text-light mb-3">{t.spacing.helper}</p>
+                </div>
+
+                <div>
+                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.spacing.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
                       <Badge
@@ -739,39 +986,110 @@ export default function EmailSignatureGenerator() {
                   </div>
                 </div>
 
-                <div>
-                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.ctaRadius}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
-                      <Badge
-                        key={option}
-                        onClick={() => handleStyleChange('ctaRadius', option)}
-                        as="button"
-                        type="button"
-                        size="sm"
-                        variant={styleConfig.ctaRadius === option ? 'selected' : 'default'}
-                        className={`px-3 py-1 text-xs! font-medium ${styleConfig.ctaRadius === option ? '' : 'hover:border-neutral-500'}`}
-                      >
-                        {option === 'none' && t.appearance.ctaRadiusNone}
-                        {option === 'small' && t.appearance.ctaRadiusSmall}
-                        {option === 'full' && t.appearance.ctaRadiusFull}
-                      </Badge>
-                    ))}
+                {config.fullName.trim() && LAYOUT_SPACING_MAP[layout].includes('afterName') && (
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <span className="text-sm! text-mid">{t.spacing.afterName}</span>
+                    <div className="flex items-center gap-1">
+                      <button type="button" onClick={() => handleSpacingChange('afterName', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterName} px</span>
+                      <button type="button" onClick={() => handleSpacingChange('afterName', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                    </div>
                   </div>
-                </div>
+                )}
 
-                <div className="flex items-center gap-2">
-                  <input
-                    id="divider-toggle"
-                    type="checkbox"
-                    checked={styleConfig.showDivider}
-                    onChange={(e) => handleStyleChange('showDivider', e.target.checked)}
-                    className="h-4! w-4! rounded border-neutral-300"
-                  />
-                  <label htmlFor="divider-toggle" className="text-sm! text-mid">
-                    {t.appearance.showDivider}
-                  </label>
-                </div>
+                {(config.jobTitle.trim() || config.company.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterTitle') && (
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <span className="text-sm! text-mid">{t.spacing.afterTitle}</span>
+                    <div className="flex items-center gap-1">
+                      <button type="button" onClick={() => handleSpacingChange('afterTitle', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterTitle} px</span>
+                      <button type="button" onClick={() => handleSpacingChange('afterTitle', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {config.extraLine.trim() && LAYOUT_SPACING_MAP[layout].includes('afterExtra') && (
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <span className="text-sm! text-mid">{t.spacing.afterExtra}</span>
+                    <div className="flex items-center gap-1">
+                      <button type="button" onClick={() => handleSpacingChange('afterExtra', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterExtra} px</span>
+                      <button type="button" onClick={() => handleSpacingChange('afterExtra', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {(config.email.trim() || config.phone.trim() || config.website.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterContact') && (
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <span className="text-sm! text-mid">{t.spacing.afterContact}</span>
+                    <div className="flex items-center gap-1">
+                      <button type="button" onClick={() => handleSpacingChange('afterContact', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterContact} px</span>
+                      <button type="button" onClick={() => handleSpacingChange('afterContact', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {Object.values(config.socials).some((url) => url.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterSocials') && (
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <span className="text-sm! text-mid">{t.spacing.afterSocials}</span>
+                    <div className="flex items-center gap-1">
+                      <button type="button" onClick={() => handleSpacingChange('afterSocials', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterSocials} px</span>
+                      <button type="button" onClick={() => handleSpacingChange('afterSocials', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {config.ctaLabel.trim() && config.ctaUrl.trim() && LAYOUT_SPACING_MAP[layout].includes('afterCta') && (
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <span className="text-sm! text-mid">{t.spacing.afterCta}</span>
+                    <div className="flex items-center gap-1">
+                      <button type="button" onClick={() => handleSpacingChange('afterCta', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterCta} px</span>
+                      <button type="button" onClick={() => handleSpacingChange('afterCta', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {config.legalNote.trim() && LAYOUT_SPACING_MAP[layout].includes('beforeLegal') && (
+                  <div className="flex items-center justify-between gap-2 py-1">
+                    <span className="text-sm! text-mid">{t.spacing.beforeLegal}</span>
+                    <div className="flex items-center gap-1">
+                      <button type="button" onClick={() => handleSpacingChange('beforeLegal', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                      <span className="w-10 text-center text-xs! font-medium">{spacingConfig.beforeLegal} px</span>
+                      <button type="button" onClick={() => handleSpacingChange('beforeLegal', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 
@@ -787,6 +1105,18 @@ export default function EmailSignatureGenerator() {
                   rows={6}
                   placeholder={t.legal.placeholder}
                 />
+                <div className="flex items-center gap-2 pt-2">
+                  <input
+                    id="divider-toggle"
+                    type="checkbox"
+                    checked={styleConfig.showDivider}
+                    onChange={(e) => handleStyleChange('showDivider', e.target.checked)}
+                    className="h-4! w-4! rounded border-neutral-300"
+                  />
+                  <label htmlFor="divider-toggle" className="text-sm! text-mid">
+                    {t.legal.showDivider}
+                  </label>
+                </div>
               </div>
             )}
           </div>

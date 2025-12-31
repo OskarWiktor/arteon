@@ -45,7 +45,7 @@ const schema = {
       '@type': 'HowToStep',
       position: 1,
       name: 'Wybierz układ stopki',
-      text: 'Wybierz jeden z pięciu dostępnych układów: Standard, Pasek akcentu, Pasek u góry, Etykiety z lewej lub Wyśrodkowany.',
+      text: 'Wybierz jeden z ośmiu dostępnych układów: Standard, Pasek u góry, Etykiety z lewej, Wyśrodkowany, Kompaktowy, Dwie kolumny, Minimalistyczny lub Pasek na dole.',
     },
     {
       '@type': 'HowToStep',
@@ -56,8 +56,8 @@ const schema = {
     {
       '@type': 'HowToStep',
       position: 3,
-      name: 'Dodaj przycisk CTA',
-      text: 'W zakładce Link dodaj tekst przycisku i adres URL, na który ma prowadzić.',
+      name: 'Dodaj przyciski CTA',
+      text: 'W zakładce Przyciski dodaj tekst i adres URL dla głównego przycisku. Opcjonalnie możesz dodać drugi przycisk w stylu outline oraz wybrać zaokrąglenie przycisków.',
     },
     {
       '@type': 'HowToStep',
@@ -74,6 +74,12 @@ const schema = {
     {
       '@type': 'HowToStep',
       position: 6,
+      name: 'Dostosuj odstępy',
+      text: 'W zakładce Odstępy ustaw margines wewnętrzny stopki oraz odstępy między poszczególnymi elementami za pomocą przycisków + i -.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 7,
       name: 'Skopiuj stopkę',
       text: 'Kliknij przycisk Kopiuj stopkę (Gmail / Outlook) i wklej kod w ustawieniach swojego klienta pocztowego.',
     },
@@ -211,13 +217,10 @@ export default function Page() {
             </div>
           }
         >
-          <p className="text-mid">Generator oferuje pięć gotowych układów. Każdy prezentuje te same dane w inny sposób.</p>
+          <p className="text-mid">Generator oferuje osiem gotowych układów. Każdy prezentuje te same dane w inny sposób.</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
               <strong>Standard</strong> — klasyczny układ pionowy, pasuje do większości zastosowań.
-            </li>
-            <li>
-              <strong>Pasek akcentu</strong> — pionowy pasek z lewej, nowoczesny wygląd.
             </li>
             <li>
               <strong>Pasek u góry</strong> — poziomy pasek oddziela stopkę od treści.
@@ -228,29 +231,51 @@ export default function Page() {
             <li>
               <strong>Wyśrodkowany</strong> — formalny charakter, dane na środku.
             </li>
+            <li>
+              <strong>Kompaktowy</strong> — wszystko w jednej linii, minimalna wysokość.
+            </li>
+            <li>
+              <strong>Dwie kolumny</strong> — dane po lewej, kontakt po prawej.
+            </li>
+            <li>
+              <strong>Minimalistyczny</strong> — tylko najważniejsze informacje.
+            </li>
+            <li>
+              <strong>Pasek na dole</strong> — kolorowy pasek z kontaktem na dole stopki.
+            </li>
           </ul>
         </SectionDemo>
 
         <Gap variant="line" />
 
-        <SectionInfo title="Jak dodać przycisk CTA?">
+        <SectionInfo title="Jak dodać przyciski CTA?">
           <p className="text-mid">
             Przycisk CTA (z ang. call-to-action, czyli wezwanie do działania) to klikalny element, który kieruje odbiorcę do wybranej strony. Może to być link do kalendarza spotkań, formularza
-            kontaktowego lub oferty.
+            kontaktowego lub oferty. Generator umożliwia dodanie dwóch przycisków CTA.
           </p>
 
-          <h3 className="h4 mt-6 mb-3">Jak to zrobić w naszym narzędziu</h3>
+          <h3 className="h4 mt-6 mb-3">Przycisk główny</h3>
           <ol className="text-mid list-decimal space-y-2 pl-6">
             <li>
-              Kliknij zakładkę <strong>Link</strong> w edytorze.
+              Kliknij zakładkę <strong>Przyciski</strong> w edytorze.
             </li>
             <li>
-              W polu <strong>Tekst przycisku</strong> wpisz treść, którą zobaczy odbiorca, np. Umów bezpłatną konsultację lub Zobacz moją ofertę.
+              W sekcji <strong>Przycisk główny</strong> wpisz tekst, który zobaczy odbiorca, np. Umów bezpłatną konsultację.
             </li>
             <li>
-              W polu <strong>Link CTA</strong> wklej pełny adres URL strony, na którą ma prowadzić przycisk. Adres musi zaczynać się od https://.
+              W polu <strong>Link CTA</strong> wklej pełny adres URL strony. Adres musi zaczynać się od https://.
             </li>
           </ol>
+
+          <h3 className="h4 mt-6 mb-3">Przycisk dodatkowy</h3>
+          <p className="text-mid">
+            Możesz dodać drugi przycisk CTA w stylu outline (przezroczyste tło z obramowaniem). Wypełnij pola w sekcji <strong>Przycisk dodatkowy</strong> analogicznie jak dla przycisku głównego.
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Zaokrąglenie przycisków</h3>
+          <p className="text-mid">
+            Na dole zakładki Przyciski znajdziesz opcję <strong>Zaokrąglenie przycisków</strong>. Do wyboru masz trzy warianty: Brak (ostre rogi), Lekkie (delikatnie zaokrąglone) lub Pełne (owalny przycisk).
+          </p>
 
           <p className="text-mid mt-4">
             Jeśli zostawisz oba pola puste, przycisk nie pojawi się w stopce. Jeśli wypełnisz tylko jedno pole, przycisk również nie będzie widoczny — potrzebne są oba: tekst i link.
@@ -274,9 +299,18 @@ export default function Page() {
             <li>Wypełnij tylko te pola, które Cię interesują. Puste pola nie pojawią się w stopce.</li>
           </ol>
 
-          <p className="text-mid mt-4">
-            W stopce linki do mediów społecznościowych wyświetlają się jako nazwy platform (np. LinkedIn, Instagram), bez ikon. Dzięki temu stopka jest lżejsza i szybciej się ładuje.
+          <h3 className="h4 mt-6 mb-3">Ikony mediów społecznościowych</h3>
+          <p className="text-mid">
+            Na dole zakładki Media społecznościowe znajdziesz opcję <strong>Pokaż ikony obok nazw serwisów</strong>. Po jej włączeniu linki wyświetlą się jako kolorowe ikony SVG zamiast samych nazw.
           </p>
+          <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
+            <li>
+              <strong>Rozmiar ikon</strong> — do wyboru: Małe (16 px), Średnie (20 px) lub Duże (24 px).
+            </li>
+            <li>
+              <strong>Kolor ikon</strong> — Kolory platform (domyślne kolory każdej platformy), Kolor akcentu (jednolity kolor akcentu) lub Kolor tekstu.
+            </li>
+          </ul>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -318,15 +352,53 @@ export default function Page() {
           <h3 className="h4 mt-6 mb-3">Dodatkowe ustawienia</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Margines wewnętrzny stopki</strong> — odstęp między zawartością a krawędziami stopki. Trzy opcje: 8 px (mały), 16 px (średni) i 24 px (duży).
-            </li>
-            <li>
-              <strong>Zaokrąglenie przycisku CTA</strong> — kształt rogów przycisku. Brak (ostre rogi), Lekkie (delikatnie zaokrąglone) lub Pełne (owalny przycisk).
-            </li>
-            <li>
-              <strong>Linia oddzielająca</strong> — pozioma linia między danymi kontaktowymi a klauzulą prawną. Możesz ją włączyć lub wyłączyć.
+              <strong>Ramka stopki</strong> — możesz dodać ramkę do stopki wybierając dowolną kombinację stron (lewa, prawa, góra, dół). Zaznaczenie wszystkich stron automatycznie ustawia pełną ramkę. Ramka przyjmuje kolor akcentu.
             </li>
           </ul>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionInfo title="Odstępy między elementami">
+          <p className="text-mid">
+            W zakładce <strong>Odstępy</strong> możesz precyzyjnie kontrolować odległości między poszczególnymi elementami stopki.
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Margines wewnętrzny stopki</h3>
+          <p className="text-mid">
+            Na górze zakładki znajdziesz opcję marginesu wewnętrznego — czyli odstępu między zawartością stopki a jej krawędziami. Do wyboru masz trzy wartości: 8 px (mały), 16 px (średni) i 24 px (duży).
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Odstępy między elementami</h3>
+          <p className="text-mid">
+            Poniżej marginesu znajdziesz kontrolki dla poszczególnych elementów stopki. Każda kontrolka ma przyciski + i - do zwiększania lub zmniejszania odstępu. Widoczne są tylko opcje dla elementów, które aktualnie znajdują się w stopce.
+          </p>
+          <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
+            <li>
+              <strong>Po imieniu i nazwisku</strong> — odstęp pod linią z imieniem.
+            </li>
+            <li>
+              <strong>Po stanowisku / firmie</strong> — odstęp pod linią ze stanowiskiem i nazwą firmy.
+            </li>
+            <li>
+              <strong>Po dodatkowej linii</strong> — odstęp pod opisem (jeśli jest wypełniony).
+            </li>
+            <li>
+              <strong>Po danych kontaktowych</strong> — odstęp pod e-mailem, telefonem i stroną.
+            </li>
+            <li>
+              <strong>Po mediach społecznościowych</strong> — odstęp pod linkami do profili.
+            </li>
+            <li>
+              <strong>Po przycisku CTA</strong> — odstęp pod przyciskiem (jeśli jest włączony).
+            </li>
+            <li>
+              <strong>Przed klauzulą</strong> — odstęp nad tekstem klauzuli prawnej.
+            </li>
+          </ul>
+          <p className="text-mid mt-4">
+            Jeśli usuniesz dane z jakiegoś pola (np. wyczyścisz telefon), odpowiednia opcja odstępu automatycznie zniknie z zakładki.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -352,6 +424,11 @@ export default function Page() {
           <p className="text-mid mt-4">
             Domyślnie pole jest wypełnione przykładowym tekstem o poufności wiadomości. Możesz go edytować, usunąć lub zastąpić własną klauzulą. Jeśli zostawisz pole puste, klauzula nie pojawi się w
             stopce.
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Linia oddzielająca</h3>
+          <p className="text-mid">
+            Pod polem tekstowym znajdziesz opcję <strong>Pokaż linię oddzielającą dane od klauzuli</strong>. Włącz ją, aby dodać poziomą linię między danymi kontaktowymi a klauzulą prawną. Linia wizualnie oddziela treść stopki od tekstu prawnego.
           </p>
         </SectionInfo>
 
