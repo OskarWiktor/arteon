@@ -43,7 +43,7 @@ export const metadata = {
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
     url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg3.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-pilkanozna-pl.webp' }],
   },
 } as const;
 
@@ -75,7 +75,7 @@ export default function OfferBlogPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg3.webp"
+        backgroundImage="/assets/projects/arteon-baners-pilkanozna-pl.webp"
         overlay="black"
       />
 
@@ -344,7 +344,7 @@ export default function OfferBlogPage() {
         description="Wzmacniamy Twój autorytet w branży i wspieramy SEO prostymi narzędziami"
         btnOne="Wyceń projekt"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg3.webp"
+        backgroundImage="/assets/projects/arteon-baners-pilkanozna-pl.webp"
         overlay="black"
       />
 

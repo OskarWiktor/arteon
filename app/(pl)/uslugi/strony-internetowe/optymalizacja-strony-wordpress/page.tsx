@@ -34,7 +34,7 @@ export const metadata = {
     url: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
     type: 'website',
     siteName: 'Arteon',
-    images: [{ url: `${BASE}/assets/bg/abstract-bg12.webp` }],
+    images: [{ url: `${BASE}/assets/projects/arteon-baners-camper-albania-mockup.webp` }],
   },
 } as const;
 
@@ -69,7 +69,7 @@ export default function OfferOptimizationWordPressPage() {
         buttonAccent="Sprawdź swoją stronę za darmo"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg12.webp"
+        backgroundImage="/assets/projects/arteon-baners-camper-albania-mockup.webp"
         overlay="black"
         subtitle="Oferta specjalna: optymalizacja WordPress"
       />
@@ -401,7 +401,7 @@ export default function OfferOptimizationWordPressPage() {
         description="Szybsza, stabilniejsza strona ułatwia pozyskiwanie klientów, wspiera SEO i pozwala bez obaw kierować większy ruch z kampanii."
         btnOne="Sprawdź, co można poprawić"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg12.webp"
+        backgroundImage="/assets/projects/arteon-baners-camper-albania-mockup.webp"
         overlay="black"
       />
 

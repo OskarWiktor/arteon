@@ -28,7 +28,7 @@ export const metadata = {
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp' }],
   },
 } as const;
 
@@ -65,7 +65,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp"
         overlay="black"
       />
 
@@ -366,7 +366,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp"
         overlay="black"
       />
 

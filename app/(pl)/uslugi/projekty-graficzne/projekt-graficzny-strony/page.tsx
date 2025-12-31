@@ -28,7 +28,7 @@ export const metadata = {
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
   },
 } as const;
 
@@ -65,7 +65,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
       />
 
@@ -350,7 +350,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
       />
 

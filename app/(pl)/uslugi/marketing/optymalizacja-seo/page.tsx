@@ -28,7 +28,7 @@ export const metadata = {
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
     url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-camper-albania-mockup.webp' }],
   },
 } as const;
 
@@ -60,7 +60,7 @@ export default function OfferOptimizationSEO() {
         buttonAccent="Bezpłatna konsultacja"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg5.webp"
+        backgroundImage="/assets/projects/arteon-baners-camper-albania-mockup.webp"
         overlay="black"
       />
 
@@ -371,7 +371,7 @@ export default function OfferOptimizationSEO() {
         description="Szybsza strona, lepsze opisy i porządek w strukturze - wszystko, co potrzebne do wzrostu."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg5.webp"
+        backgroundImage="/assets/projects/arteon-baners-camper-albania-mockup.webp"
         overlay="black"
       />
 

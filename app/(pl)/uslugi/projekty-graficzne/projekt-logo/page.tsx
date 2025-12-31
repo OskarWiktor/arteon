@@ -40,7 +40,7 @@ export const metadata = {
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp' }],
   },
 } as const;
 
@@ -77,7 +77,7 @@ export default function OfferDesignLogoPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp"
         overlay="black"
       />
 
@@ -377,7 +377,7 @@ export default function OfferDesignLogoPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp"
         overlay="black"
       />
 

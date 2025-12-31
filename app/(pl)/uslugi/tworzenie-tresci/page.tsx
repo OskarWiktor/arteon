@@ -62,7 +62,7 @@ export const metadata = {
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
     url: `${BASE}/uslugi/tworzenie-tresci`,
     type: 'website',
-    images: [{ url: `${BASE}/assets/bg/abstract-bg6.webp` }],
+    images: [{ url: `${BASE}/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp` }],
   },
 } as const;
 
@@ -75,7 +75,7 @@ export default function OfferContentPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg6.webp"
+        backgroundImage="/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp"
         overlay="black"
       />
 
@@ -314,7 +314,7 @@ export default function OfferContentPage() {
         description="Tworzymy treści, które trafiają do ludzi oraz algorytmów, wspierając sprzedaż"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg6.webp"
+        backgroundImage="/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp"
         overlay="black"
       />
       <ServiceSchema />

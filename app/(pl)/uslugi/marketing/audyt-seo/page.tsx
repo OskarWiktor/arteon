@@ -31,7 +31,7 @@ export const metadata = {
     url: `${BASE}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
-    images: [{ url: `${BASE}/assets/bg/abstract-bg5.webp` }],
+    images: [{ url: `${BASE}/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp` }],
     //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {
@@ -69,7 +69,7 @@ export default function OfferMarketingPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg5.webp"
+        backgroundImage="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
         overlay="black"
       />
 
@@ -393,7 +393,7 @@ export default function OfferMarketingPage() {
         description="Audyt, który kończy się planem działania - nie tylko diagnozą."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg5.webp"
+        backgroundImage="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
         overlay="black"
       />
 

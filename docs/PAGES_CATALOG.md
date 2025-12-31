@@ -200,11 +200,11 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 ### `/realizacje` — Lista realizacji
 
 - **[Plik]** `app/(pl)/realizacje/page.tsx`
-- **[Cel / content]** Lista realizacji z filtrowaniem.
-- **[Kluczowe komponenty]** `HeroBanner`, `ProjectWithFilters`, `Wrapper`, `Gap`.
+- **[Cel / content]** Lista realizacji z filtrowaniem + CTA do kontaktu.
+- **[Kluczowe komponenty]** `HeroBanner` (z description), `ProjectWithFilters`, `CTABanner`, `Wrapper`, `Gap`.
 - **[Dane / źródła]** `data/pl/projects.json`.
 - **[SEO]**
-  - **[metadata]** canonical: `https://www.arteonagency.pl/realizacje`.
+  - **[metadata]** `title`: „Realizacje - strony internetowe, sklepy i projekty graficzne - Arteon", canonical: `https://www.arteonagency.pl/realizacje`, `openGraph` z obrazem realizacji.
   - **[schema]** JSON-LD: `CollectionPage` + `ItemList` (wszystkie realizacje).
 
 ### `/realizacje/[slug]` — Case study realizacji

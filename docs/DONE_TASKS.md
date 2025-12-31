@@ -1,6 +1,91 @@
 # DONE_TASKS
 
+## 2025-01-01
+
+- ✅ **[SEO-026] Realizacje: poprawa jakości obrazów i skrócenie tekstów**
+
+  - **Co zrobiono**:
+    - Zwiększono jakość obrazów w `ProjectCard.tsx` z 90 do 100.
+    - Skrócono i uproszczono teksty na `/realizacje`:
+      - HeroBanner: usunięto korpo-frazę "każdy projekt powstał we współpracy z klientem", skrócono do jednego zdania.
+      - CTABanner: skrócono description do minimum.
+    - Teksty zgodne z INSTRUCTIONS.md (bez keyword stuffing, naturalne, krótkie).
+  - **Pliki zmienione**:
+    - `components/ui/ProjectCard.tsx` (quality 90 → 100)
+    - `app/(pl)/realizacje/page.tsx` (HeroBanner + CTABanner texts)
+  - **Weryfikacja**: `npm run build` — OK.
+
+- ✅ **[SEO-019] Sitemap: stabilna, deterministyczna kolejność URL**
+
+  - **Co zrobiono**:
+    - Zidentyfikowano problem: kolejność URL w `sitemap-0.xml` była niedeterministyczna (zależna od kolejności skanowania plików przez `fast-glob` i iteracji po `Map.entries()`).
+    - Dodano skrypt `scripts/sort-sitemap.cjs` sortujący URL alfabetycznie po wygenerowaniu sitemap.
+    - Zaktualizowano `package.json` — postbuild uruchamia skrypt sortujący.
+    - Zachowano sortowanie w `additionalPaths` w `next-sitemap.config.cjs` (redundantne, ale bezpieczne).
+  - **Pliki zmienione**:
+    - `scripts/sort-sitemap.cjs` (nowy)
+    - `package.json` (postbuild)
+    - `next-sitemap.config.cjs` (sortowanie additionalPaths)
+  - **Wynik**: Sitemap posortowana alfabetycznie — kolejność: `/` → `/edukacja/**` → `/kontakt` → `/mapa-strony` → `/narzedzia/**` → `/o-nas/**` → `/polityka-prywatnosci` → `/realizacje/**` → `/regulamin` → `/uslugi/**`.
+  - **Wpływ na SEO**: Minimalny bezpośredni — Google nie sortuje URL według kolejności w sitemap. Pośrednie korzyści: łatwiejsze debugowanie, czytelniejsze diff-y w git, profesjonalny wygląd.
+  - **Weryfikacja**: `next build` + `next-sitemap` + `node scripts/sort-sitemap.cjs` — OK.
+
+- ✅ **[SEO-025] Usługi i Realizacje: usunięcie abstrakcyjnych teł, poprawa jakości obrazów i tekstów**
+
+  - **Co zrobiono**:
+    - Usunięto wszystkie obrazy z `/bg/` z 13 stron usługowych (HeroBanner + OpenGraph):
+      - `blogi-internetowe` → PiłkaNożna.pl
+      - `marketing` → MSC Psychotherapy
+      - `audyt-seo` → GSC screenshot
+      - `optymalizacja-seo` → Camper Albania
+      - `pozycjonowanie-stron` → SEO napis
+      - `projekty-graficzne` → LUX NOVA teczka
+      - `projekt-graficzny-strony` → MSC
+      - `projekt-identyfikacji-wizualnej` → identyfikacja blog
+      - `projekt-karty-lojalnosciowej` → social proof blog
+      - `projekt-logo` → logo warianty blog
+      - `projekt-odziezy-firmowej` → identyfikacja blog
+      - `optymalizacja-strony-wordpress` → Camper Albania
+      - `tworzenie-tresci` → content marketing blog
+    - Dodano brakujące obrazy na `/uslugi` (Odzież firmowa + Karty lojalnościowe) z artykułów blogowych.
+    - Poprawiono teksty na `/realizacje` (HeroBanner + CTABanner) - bardziej angażujące, benefit-first.
+    - Zwiększono jakość obrazów w `ProjectCard.tsx` z 85 do 90.
+  - **Pliki zmienione**:
+    - 13 stron usługowych w `app/(pl)/uslugi/`
+    - `app/(pl)/uslugi/page.tsx`
+    - `app/(pl)/realizacje/page.tsx`
+    - `components/ui/ProjectCard.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+
+- ✅ **[SEO-024] Usługi: rozbudowa strony `/uslugi` o zdjęcia realizacji, lepsze meta i CTA**
+
+  - **Co zrobiono**:
+    - Dodano zdjęcia realizacji (`topImageSrc` + `topImageAlt`) do wszystkich sekcji usługowych (Witryny, Projekty graficzne, Marketing, Tworzenie treści).
+    - Zdjęcia pochodzą z realizacji w `projects.json`, stron usługowych lub artykułów blogowych (fallback).
+    - Alt texty opisowe, zgodne z INSTRUCTIONS.md (bez keyword stuffing).
+    - Poprawiono `metadata.title` i `metadata.description` pod SEO (konkretne, benefit-first).
+    - Rozbudowano HeroBanner o opis (2 zdania o usługach).
+    - Zmieniono tło HeroBanner i OpenGraph na zdjęcie realizacji MSC Psychotherapy.
+    - Zaktualizowano schema JSON-LD do spójności z nowymi metadata.
+    - Dodano CTABanner na końcu strony (darmowa wycena → /kontakt).
+  - **Pliki zmienione**:
+    - `app/(pl)/uslugi/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+
 ## 2025-12-31
+
+- ✅ **[SEO-023] Realizacje: optymalizacja SEO strony portfolio `/realizacje`**
+
+  - **Co zrobiono**:
+    - Zmieniono tło Hero z abstrakcyjnego obrazu na zdjęcie realizacji (`luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp`).
+    - Dodano rozbudowany opis w Hero (3 zdania o portfolio i branżach).
+    - Poprawiono metadata (`title`, `description`) — bardziej konkretne i SEO-friendly.
+    - Zmieniono obraz OpenGraph na zdjęcie realizacji (zamiast abstrakcyjnego tła).
+    - Zaktualizowano schema JSON-LD do spójności z metadata.
+    - Dodano CTABanner na końcu strony z zachęceniem do kontaktu i darmowej wyceny.
+  - **Pliki zmienione**:
+    - `app/(pl)/realizacje/page.tsx`
+  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
 
 - ✅ **[TOOLS-050] Generator stopki mailowej: LocalStorage + modal potwierdzenia resetu**
 

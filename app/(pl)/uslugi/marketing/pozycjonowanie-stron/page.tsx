@@ -28,7 +28,7 @@ export const metadata = {
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
     url: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg6.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp' }],
   },
 } as const;
 
@@ -60,7 +60,7 @@ export default function OfferSeoSubscription() {
         buttonAccent="Bezpłatna konsultacja"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg6.webp"
+        backgroundImage="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp"
         overlay="black"
       />
 
@@ -372,7 +372,7 @@ export default function OfferSeoSubscription() {
         description="Strategia treści, porządek na stronie i bezpieczne linki - zestaw, który zwiększa liczbę zapytań."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg6.webp"
+        backgroundImage="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp"
         overlay="black"
       />
 

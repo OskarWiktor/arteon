@@ -25,7 +25,7 @@ export const metadata = {
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg5.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
   },
 } as const;
 
@@ -63,7 +63,7 @@ export default function OfferMarketingHubPage() {
         title="Marketing internetowy"
         description={<>Przyciągnij nowych klientów, przemyślanym działaniem marketingowym</>}
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg5.webp"
+        backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
       />
 
@@ -214,7 +214,7 @@ export default function OfferMarketingHubPage() {
         description="Od audytu i wdrożeń po kampanie i treści - planujemy i prowadzimy działania, które zwiększają sprzedaż"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg5.webp"
+        backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
       />
 

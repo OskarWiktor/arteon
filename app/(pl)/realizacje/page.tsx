@@ -1,4 +1,5 @@
 import HeroBanner from '@/components/sections/HeroBanner';
+import CTABanner from '@/components/sections/CTABanner';
 import ProjectWithFilters from '@/components/sections/projects/ProjectsWithFilters';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
@@ -17,8 +18,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': `${toAbsoluteUrl('/realizacje')}#collection`,
-  name: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie - Arteon',
-  description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
+  name: 'Realizacje - strony internetowe, sklepy i projekty graficzne - Arteon',
+  description: 'Zobacz nasze realizacje: strony WWW, sklepy internetowe, identyfikacje wizualne i materiały reklamowe. Każdy projekt to konkretne rozwiązanie dopasowane do potrzeb klienta.',
   url: toAbsoluteUrl('/realizacje'),
   mainEntity: {
     '@type': 'ItemList',
@@ -34,21 +35,20 @@ const schema = {
 };
 
 export const metadata = {
-  title: 'Portfolio: strony, sklepy, Projekty graficzne i kampanie - Arteon',
-  description: 'Zobacz wybrane realizacje: strony WWW, sklepy online, identyfikacje i kampanie. Projekty, które dowożą wynik.',
+  title: 'Realizacje - strony internetowe, sklepy i projekty graficzne - Arteon',
+  description: 'Zobacz nasze realizacje: strony WWW, sklepy internetowe, identyfikacje wizualne i materiały reklamowe. Każdy projekt to konkretne rozwiązanie dopasowane do potrzeb klienta.',
   alternates: { canonical: toAbsoluteUrl('/realizacje') },
   openGraph: {
-    title: 'Portfolio Arteon - projekty, które działają',
-    description: 'Strony, sklepy, identyfikacje i kampanie. Konkretne efekty i przejrzysty proces.',
+    title: 'Realizacje Arteon - strony, sklepy i projekty graficzne',
+    description: 'Przejrzyj nasze portfolio: strony internetowe, sklepy online, identyfikacje wizualne i materiały drukowane. Sprawdź, jak pomagamy firmom budować obecność w sieci.',
     url: toAbsoluteUrl('/realizacje'),
     type: 'website',
-    // TODO: Add unique OpenGraph image for portfolio page: /assets/og/realizacje.webp (1200x630px)
     images: [
       {
-        url: toAbsoluteUrl('/assets/bg/abstract-bg13.webp'),
+        url: toAbsoluteUrl('/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp'),
         width: 1200,
         height: 630,
-        alt: 'Portfolio Arteon',
+        alt: 'Portfolio realizacji Arteon - teczka ofertowa dla kancelarii',
       },
     ],
   },
@@ -57,7 +57,13 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <HeroBanner title="Wybrane realizacje" variant="center" backgroundImage="/assets/bg/abstract-bg13.webp" overlay="black" />
+      <HeroBanner
+        title="Realizacje"
+        description="Strony, sklepy, identyfikacje wizualne, materiały drukowane. Zobacz wybrane projekty."
+        variant="center"
+        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        overlay="black"
+      />
 
       <Wrapper>
         <Gap size="sm" />
@@ -66,6 +72,17 @@ export default function ProjectsPage() {
 
         <Gap size="sm" />
       </Wrapper>
+
+      <CTABanner
+        title="Twój projekt może być następny"
+        description="Napisz czego potrzebujesz - przygotujemy dla Ciebie darmową wycenę"
+        btnOne="Napisz do nas"
+        btnOneLink="/kontakt"
+        btnTwo="Poznaj usługi"
+        btnTwoLink="/uslugi"
+        backgroundImage="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
+        overlay="black"
+      />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </>

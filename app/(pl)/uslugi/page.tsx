@@ -1,30 +1,9 @@
-import HeroBanner from '@/components/sections/HeroBanner';
+﻿import HeroBanner from '@/components/sections/HeroBanner';
+import CTABanner from '@/components/sections/CTABanner';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
-import {
-  RiFileList2Line,
-  RiSearchEyeLine,
-  RiLineChartLine,
-  RiBookletLine,
-  RiFileTextLine,
-  RiFolderOpenLine,
-  RiIdCardLine,
-  RiLayoutLine,
-  RiPantoneLine,
-  RiQuillPenLine,
-  RiTShirt2Line,
-  RiArticleLine,
-  RiFilePdfLine,
-  RiPencilLine,
-  RiShareForwardLine,
-  RiShoppingCartLine,
-  RiCoupon2Line,
-  RiPriceTag3Line,
-  RiRestaurant2Line,
-} from 'react-icons/ri';
-
 const siteUrl = 'https://www.arteonagency.pl';
 
 const SERVICES = [
@@ -52,18 +31,17 @@ const SERVICES = [
 ] as const;
 
 export const metadata = {
-  title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
-  description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+  title: 'Usługi dla firm: strony, sklepy, grafika i marketing | Arteon',
+  description: 'Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Otrzymaj darmową wycenę projektu.',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi' },
   openGraph: {
-    title: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
-    description: 'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+    title: 'Usługi dla firm: strony, sklepy, grafika i marketing | Arteon',
+    description: 'Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Otrzymaj darmową wycenę projektu.',
     url: `${siteUrl}/uslugi`,
     type: 'website',
-    // TODO: Add unique OpenGraph image for services page: /assets/og/uslugi.webp (1200x630px)
     images: [
       {
-        url: `${siteUrl}/assets/bg/abstract-bg12.webp`,
+        url: `${siteUrl}/assets/projects/arteon-baners-msc.webp`,
       },
     ],
   },
@@ -72,7 +50,17 @@ export const metadata = {
 export default function OfferPage() {
   return (
     <>
-      <HeroBanner backgroundImage="/assets/bg/abstract-bg12.webp" overlay="black" title="Nasze usługi" variant="center" />
+      <HeroBanner
+        backgroundImage="/assets/projects/arteon-baners-msc.webp"
+        overlay="black"
+        title="Usługi dla Twojej firmy"
+        description={
+          <>
+            Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Wszystko w jednym miejscu, z naciskiem na jakość i wyniki.
+          </>
+        }
+        variant="center"
+      />
 
       <Wrapper>
         <Gap size="sm" />
@@ -81,7 +69,8 @@ export default function OfferPage() {
           title="Witryny internetowe"
           items={[
             {
-              icon: <RiFileList2Line className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageAlt: 'Strona internetowa dla gabinetu psychologicznego MSC Psychotherapy - realizacja Arteon',
               title: 'Strony internetowe',
               description: (
                 <div className="flex h-full flex-col">
@@ -97,7 +86,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiSearchEyeLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-trilllizo.webp',
+              topImageAlt: 'Sklep internetowy dla marki odzieżowej Trilllizo - realizacja Arteon',
               title: 'Sklepy internetowe',
               description: (
                 <div className="flex h-full flex-col">
@@ -111,7 +101,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiLineChartLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              topImageAlt: 'Redesign bloga sportowego PiłkaNożna.pl na EURO 2024 - realizacja Arteon',
               title: 'Blogi internetowe',
               description: (
                 <div className="flex h-full flex-col">
@@ -138,7 +129,8 @@ export default function OfferPage() {
           grid="two"
           items={[
             {
-              icon: <RiIdCardLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              topImageAlt: 'Projekt wizytówki dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Projekt wizytówki',
               description: (
                 <div className="flex h-full flex-col">
@@ -155,7 +147,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiFileList2Line className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+              topImageAlt: 'Folder reklamowy dla firmy wykańczającej wnętrza Simba Group - realizacja Arteon',
               title: 'Projekt ulotki',
               description: (
                 <div className="flex h-full flex-col">
@@ -172,7 +165,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiFolderOpenLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              topImageAlt: 'Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Teczka ofertowa',
               description: (
                 <div className="flex h-full flex-col">
@@ -188,7 +182,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
+              topImageAlt: 'Papier firmowy dla kancelarii adwokackiej LUX NOVA - realizacja Arteon',
               title: 'Papier firmowy',
               description: (
                 <div className="flex h-full flex-col">
@@ -202,7 +197,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiTShirt2Line className="h-8 w-8" />,
+              topImageSrc: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
+              topImageAlt: 'Spójna identyfikacja wizualna firmy - elementy brandingu',
               title: 'Odzież firmowa',
               description: (
                 <div className="flex h-full flex-col">
@@ -218,7 +214,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiQuillPenLine className="h-8 w-8" />,
+              topImageSrc: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
+              topImageAlt: 'Różne wersje logo firmy - warianty kolorystyczne i monochromatyczne',
               title: 'Projekt logo',
               description: (
                 <div className="flex h-full flex-col">
@@ -235,7 +232,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiBookletLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/gazetka-mockup.webp',
+              topImageAlt: 'Katalog produktów dla gastronomii RestoQuality - realizacja Arteon',
               title: 'Projekt katalogu',
               description: (
                 <div className="flex h-full flex-col">
@@ -252,7 +250,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiPantoneLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              topImageAlt: 'Identyfikacja wizualna dla kancelarii LUX NOVA - teczka, wizytówki, papier firmowy',
               title: 'Identyfikacja wizualna',
               description: (
                 <div className="flex h-full flex-col">
@@ -268,7 +267,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiLayoutLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageAlt: 'Projekt graficzny strony internetowej dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Projekt graficzny strony',
               description: (
                 <div className="flex h-full flex-col">
@@ -284,7 +284,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiLayoutLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              topImageAlt: 'Szablony postów na media społecznościowe dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Szablony postów na social media',
               description: (
                 <div className="flex h-full flex-col">
@@ -301,7 +302,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiCoupon2Line className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp',
+              topImageAlt: 'Bon walentynkowy dla salonu kosmetycznego Kasia - realizacja Arteon',
               title: 'Kupony rabatowe i vouchery',
               description: (
                 <div className="flex h-full flex-col">
@@ -317,7 +319,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiPriceTag3Line className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/cennik-mockup.webp',
+              topImageAlt: 'Projekt cennika usług - wizualizacja na drukowanym materiale',
               title: 'Projekt cennika',
               description: (
                 <div className="flex h-full flex-col">
@@ -333,7 +336,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiCoupon2Line className="h-8 w-8" />,
+              topImageSrc: '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
+              topImageAlt: 'Budowanie lojalności klientów - social proof i zaufanie',
               title: 'Karty lojalnościowe',
               description: (
                 <div className="flex h-full flex-col">
@@ -350,7 +354,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiRestaurant2Line className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp',
+              topImageAlt: 'Ekskluzywna karta koktajli dla baru Nocturna - realizacja Arteon',
               title: 'Projekt menu restauracji',
               description: (
                 <div className="flex h-full flex-col">
@@ -374,7 +379,8 @@ export default function OfferPage() {
           title="Marketing"
           items={[
             {
-              icon: <RiFileList2Line className="h-8 w-8" />,
+              topImageSrc: '/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp',
+              topImageAlt: 'Ekran Google Search Console podczas audytu SEO strony internetowej',
               title: 'Audyt SEO',
               subtitle: 'Diagnoza i priorytety działań',
               description: (
@@ -391,7 +397,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiSearchEyeLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
+              topImageAlt: 'Strona Camper Albania po optymalizacji SEO - wynik 95/100 w PageSpeed',
               title: 'Optymalizacja SEO',
               subtitle: 'Wdrożenia po audycie',
               description: (
@@ -406,7 +413,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiLineChartLine className="h-8 w-8" />,
+              topImageSrc: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              topImageAlt: 'Pozycjonowanie stron internetowych - strategia SEO dla firm',
               title: 'Pozycjonowanie stron',
               subtitle: 'Stały wzrost widoczności',
               description: (
@@ -429,7 +437,8 @@ export default function OfferPage() {
           title="Tworzenie treści"
           items={[
             {
-              icon: <RiFileTextLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageAlt: 'Treści na stronę internetową dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Strony www',
               description: (
                 <div className="flex h-full flex-col">
@@ -447,7 +456,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiArticleLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              topImageAlt: 'Artykuły eksperckie i wpisy blogowe - realizacja dla PiłkaNożna.pl',
               title: 'Artykuły eksperckie',
               description: (
                 <div className="flex h-full flex-col">
@@ -465,7 +475,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiShoppingCartLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-trilllizo.webp',
+              topImageAlt: 'Opisy produktów e-commerce dla sklepu odzieżowego Trilllizo',
               title: 'E-commerce: opisy',
               description: (
                 <div className="flex h-full flex-col">
@@ -483,7 +494,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiShareForwardLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              topImageAlt: 'Treści do mediów społecznościowych dla gabinetu psychologicznego MSC Psychotherapy',
               title: 'Social media: treści',
               description: (
                 <div className="flex h-full flex-col">
@@ -501,7 +513,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiFilePdfLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+              topImageAlt: 'Folder ofertowy dla firmy wykańczającej wnętrza Simba Group',
               title: 'Oferty i case studies',
               description: (
                 <div className="flex h-full flex-col">
@@ -518,7 +531,8 @@ export default function OfferPage() {
               ),
             },
             {
-              icon: <RiPencilLine className="h-8 w-8" />,
+              topImageSrc: '/assets/projects/arteon-baners-msc.webp',
+              topImageAlt: 'Korekta i redakcja treści na stronę internetową',
               title: 'Korekta i redakcja',
               description: (
                 <div className="flex h-full flex-col">
@@ -541,6 +555,15 @@ export default function OfferPage() {
         <Gap size="sm" />
       </Wrapper>
 
+      <CTABanner
+        title="Porozmawiajmy o Twoim projekcie"
+        description="Opisz, czego potrzebujesz - przygotujemy darmową wycenę i zaproponujemy rozwiązanie dopasowane do Twoich celów."
+        btnOne="Napisz do nas"
+        btnOneLink="/kontakt"
+        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+        overlay="black"
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -548,9 +571,9 @@ export default function OfferPage() {
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
             '@id': `${siteUrl}/uslugi#collection`,
-            name: 'Usługi - witryny, projekty graficzne i marketing | Arteon',
+            name: 'Usługi dla firm: strony, sklepy, grafika i marketing | Arteon',
             description:
-              'Komplet usług wokół Twojej firmy: projekty graficzne, witryny internetowe, tworzenie treści i marketing. Sprawdź nasze usługi',
+              'Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Otrzymaj darmową wycenę projektu.',
             url: `${siteUrl}/uslugi`,
             mainEntity: {
               '@type': 'ItemList',

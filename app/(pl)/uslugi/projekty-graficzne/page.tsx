@@ -90,7 +90,7 @@ export const metadata = {
     description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/bg/abstract-bg15.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
   },
 } as const;
 
@@ -108,7 +108,7 @@ export default function OfferDesignPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
         overlay="black"
       />
 
@@ -557,7 +557,7 @@ export default function OfferDesignPage() {
         description="Projektujemy logo, identyfikację i materiały, które zostają w pamięci"
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        backgroundImage="/assets/bg/abstract-bg15.webp"
+        backgroundImage="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
         overlay="black"
       />
       <ItemListSchema />
