@@ -27,6 +27,21 @@ const CANONICAL_HOST = 'www.arteonagency.pl';
 const CANONICAL_PROTOCOL = 'https';
 
 /**
+ * Helper: redirect 301 z poprawnym Content-Type
+ * NextResponse.redirect() domyślnie zwraca text/plain, co powoduje
+ * że crawlery (Ahrefs) zapisują te strony jako "plain text" zamiast HTML.
+ */
+function redirect301(url: URL): NextResponse {
+  return new NextResponse(null, {
+    status: 301,
+    headers: {
+      Location: url.toString(),
+      'Content-Type': 'text/html; charset=utf-8',
+    },
+  });
+}
+
+/**
  * Sprawdza czy ścieżka pasuje do wzorca z parametrami
  * Obsługuje :slug (pojedynczy segment) i :path* (wiele segmentów)
  */
@@ -59,14 +74,14 @@ export function middleware(request: NextRequest) {
   const staticRedirect = ALL_STATIC_REDIRECTS[url.pathname];
   if (staticRedirect) {
     url.pathname = staticRedirect;
-    return NextResponse.redirect(url, { status: 301 });
+    return redirect301(url);
   }
 
   // 0b. Dynamiczne redirecty (wzorce z parametrami)
   const patternRedirect = matchPatternRedirect(url.pathname);
   if (patternRedirect) {
     url.pathname = patternRedirect;
-    return NextResponse.redirect(url, { status: 301 });
+    return redirect301(url);
   }
 
   // 1. Wymuszenie HTTPS (tylko produkcja - Vercel automatycznie obsługuje to dla preview)
@@ -90,7 +105,7 @@ export function middleware(request: NextRequest) {
 
   // Wykonaj redirect 301 jeśli potrzebny
   if (shouldRedirect) {
-    return NextResponse.redirect(url, { status: 301 });
+    return redirect301(url);
   }
 
   return NextResponse.next();

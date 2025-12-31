@@ -1,5 +1,22 @@
 # DONE_TASKS
 
+## 2025-12-31
+
+- ✅ **[SEO-018] Middleware: naprawić Content-Type dla redirectów 301 (text/plain → text/html)**
+
+  - **Problem**: Ahrefs i inne crawlery zapisywały strony z redirect 301 jako „plain text" zamiast HTML.
+  - **Przyczyna**: `NextResponse.redirect()` domyślnie zwraca `Content-Type: text/plain`.
+  - **Rozwiązanie**: Dodano helper `redirect301()` który ustawia `Content-Type: text/html; charset=utf-8`.
+  - **URL-e dotknięte problemem** (6 artykułów z przekierowaniami kategorii):
+    - `/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`
+    - `/edukacja/widocznosc/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+    - `/edukacja/widocznosc/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`
+    - `/edukacja/seo/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+    - `/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
+    - `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
+  - **Plik zmieniony**: `middleware.ts`
+  - **Weryfikacja**: `npm run lint` + `npm run build` — OK.
+
 ## 2025-01-01
 
 - ✅ **[SEO-026] Realizacje: poprawa jakości obrazów i skrócenie tekstów**
