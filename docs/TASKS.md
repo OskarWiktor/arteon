@@ -113,21 +113,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
       - Edytowano: `next-sitemap.config.cjs` (linia 47: `if (r === '') r = '/';`)
     - `npm run build` przechodzi ✓
 
-- 🟡 **[AUDIT-007] Blog: audyt linków zewnętrznych w artykułach**
-
-  - Cel: zweryfikować poprawność linków zewnętrznych w artykułach — czy prowadzą do stron zgodnych z kontekstem tekstu.
-  - Zakres:
-    - Wszystkie artykuły w `data/pl/blog.json`
-    - Każdy link z `target='_blank'` i `rel='noopener noreferrer'` (linki zewnętrzne)
-  - Kryteria weryfikacji:
-    1. **Link działa** — strona się otwiera (nie 404/500)
-    2. **Link prowadzi do właściwej treści** — jeśli tekst mówi o badaniu Baymard Institute, link prowadzi do tego badania
-    3. **Link jest aktualny** — jeśli źródło ma nowszą wersję (np. raport 2024 vs 2021), zaktualizować
-  - Raportowanie:
-    - Poprawić błędne linki bezpośrednio w `blog.json`
-    - Do `DONE_TASKS.md` dodaj wpis z listą poprawionych linków
-  - Weryfikacja: JSON OK (content-only)
-
 - 🟡 **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
 
   - Cel: przeanalizować istniejące artykuły i zidentyfikować, co wymaga poprawy, aby były zgodne z nowymi wytycznymi tonu marki Arteon (mentorski, maksymalnie prosty, bez żargonu).
@@ -507,25 +492,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `colgate` (linia 972): usunąć placeholder `"task": "test"` i dodać realny opis.
   - Kryteria akceptacji:
     - Powyższe pola są uzupełnione i spójne semantycznie.
-    - `npm run lint` i `npm run build` przechodzą.
-
-- ❌ **[TOOLS-050] Generator stopki mailowej: LocalStorage + modal potwierdzenia resetu**
-
-  - Cel:
-    - Dodać pełną obsługę LocalStorage dla wszystkich opcji narzędzia.
-    - Dodać przycisk „Resetuj wygląd" z modalem potwierdzenia.
-  - Zakres:
-    - Automatyczny zapis wszystkich ustawień do localStorage.
-    - Przycisk bez ikony „Resetuj wygląd" otwierający reużywalny modal potwierdzenia.
-    - Modal na bazie SearchDialog — h3 z klasą h4, dwa przyciski (Tak / Anuluj).
-  - Pliki:
-    - `components/sections/tools/EmailSignatureGenerator.tsx`
-    - `components/ui/ConfirmModal.tsx` (nowy, reużywalny)
-    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
-  - Kryteria akceptacji:
-    - Dane zapisywane w localStorage i przywracane po odświeżeniu.
-    - Modal potwierdzenia resetu działa poprawnie.
-    - Instrukcja zaktualizowana.
     - `npm run lint` i `npm run build` przechodzą.
 
 ---

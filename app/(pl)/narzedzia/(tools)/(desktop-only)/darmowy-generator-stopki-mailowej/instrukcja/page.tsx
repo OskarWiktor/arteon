@@ -480,6 +480,24 @@ export default function Page() {
 
         <Gap variant="line" />
 
+        <SectionInfo title="Automatyczny zapis i resetowanie ustawień">
+          <p className="text-mid">
+            Generator automatycznie zapisuje wszystkie ustawienia w pamięci przeglądarki (localStorage). Po odświeżeniu strony lub ponownym otwarciu narzędzia Twoje dane, układ, kolory i wszystkie inne opcje zostaną przywrócone.
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Jak działa automatyczny zapis?</h3>
+          <p className="text-mid">
+            Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Nie musisz klikać żadnego przycisku „Zapisz" — wszystko dzieje się automatycznie w tle.
+          </p>
+
+          <h3 className="h4 mt-6 mb-3">Jak zresetować ustawienia?</h3>
+          <p className="text-mid">
+            Pod podglądem stopki znajdziesz przycisk <strong>Resetuj wygląd</strong>. Po kliknięciu pojawi się okno z prośbą o potwierdzenie. Zatwierdzenie resetu przywróci wszystkie dane i ustawienia do wartości domyślnych (przykładowe dane Jana Kowalskiego). Tej operacji nie można cofnąć.
+          </p>
+        </SectionInfo>
+
+        <Gap variant="line" />
+
         <SectionSteps
           title="Jak skopiować stopkę do Gmail lub Outlook?"
           description="Gdy stopka jest gotowa, wystarczy kilka kroków, żeby dodać ją do swojego klienta pocztowego:"

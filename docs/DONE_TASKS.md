@@ -2,6 +2,32 @@
 
 ## 2025-12-31
 
+- ✅ **[TOOLS-050] Generator stopki mailowej: LocalStorage + modal potwierdzenia resetu**
+
+  - **Co zrobiono**:
+    - Dodano automatyczny zapis wszystkich ustawień do localStorage (config, styleConfig, spacingConfig, textStyleConfig, layout, themeId).
+    - Ustawienia są przywracane po odświeżeniu strony.
+    - Stworzono nowy reużywalny komponent `ConfirmModal.tsx` (na bazie SearchDialog — AnimatePresence, createPortal, useEscapeKey).
+    - Dodano przycisk „Resetuj wygląd" pod podglądem stopki, otwierający modal potwierdzenia.
+    - Zaktualizowano instrukcję: nowa sekcja „Automatyczny zapis i resetowanie ustawień".
+  - **Pliki zmienione**:
+    - `components/sections/tools/EmailSignatureGenerator.tsx`
+    - `components/ui/ConfirmModal.tsx` (nowy)
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
+  - **Weryfikacja**: `npm run build` przechodzi.
+
+- ✅ **[AUDIT-007] Blog: audyt linków zewnętrznych w artykułach**
+
+  - **Co zrobiono**:
+    - Przeskanowano wszystkie artykuły w `blog.json` pod kątem linków zewnętrznych (~70 unikalnych linków).
+    - Zweryfikowano poprawność linków i ich zgodność z kontekstem tekstu.
+    - **Znaleziono i naprawiono 1 problem**:
+      - `https://try.goshippo.com/2021-state-of-shipping/` → `https://goshippo.com/resources/state-of-shipping-2023` (stary link przekierowywał do głównej strony, zaktualizowano na nowszy raport 2023)
+    - Pozostałe linki zewnętrzne są poprawne i prowadzą do właściwych źródeł.
+  - **Pliki zmienione**:
+    - `data/pl/blog.json` (artykuł: darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu)
+  - **Weryfikacja**: JSON OK (content-only)
+
 - ✅ **[49] Artykuł: Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?**
 
   - **Co zrobiono**:

@@ -7,8 +7,11 @@ import { buildSignatureHtml } from '@/components/sections/tools/EmailSignatureGe
 import { useSignatureCopy } from '@/components/sections/tools/EmailSignatureGenerator/useSignatureCopy';
 import type { ActivePanel, BorderSides, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, SpacingConfig, SpacingKey, StyleConfig, TextElementKey, TextStyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
 import { rgbToHex } from '@/lib/tools/color/convert';
-import { useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import ConfirmModal from '@/components/ui/ConfirmModal';
 import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line, RiSpace, RiAddLine, RiSubtractLine, RiFontSize2, RiDeleteBinLine, RiRefreshLine } from 'react-icons/ri';
+
+const STORAGE_KEY = 'arteon-email-signature-generator';
 
 const ui = {
   pl: {
@@ -153,6 +156,9 @@ const ui = {
       copyError: 'Błąd kopiowania',
       copyButton: 'Kopiuj stopkę (Gmail / Outlook)',
       requiredFields: 'Aby skopiować stopkę, uzupełnij przynajmniej imię i nazwisko oraz e-mail.',
+      resetButton: 'Resetuj wygląd',
+      resetModalTitle: 'Zresetować ustawienia?',
+      resetModalDescription: 'Wszystkie dane i ustawienia stopki zostaną przywrócone do wartości domyślnych. Tej operacji nie można cofnąć.',
     },
     labels: {
       tel: 'Tel.',
@@ -329,6 +335,36 @@ export default function EmailSignatureGenerator() {
   const [activePanel, setActivePanel] = useState<ActivePanel>('identity');
   const [layout, setLayout] = useState<LayoutType>('standard');
   const [themeId, setThemeId] = useState<string>('classic-dark');
+  const [showResetModal, setShowResetModal] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const data = JSON.parse(saved);
+        if (data.config) setConfig(data.config);
+        if (data.styleConfig) setStyleConfig(data.styleConfig);
+        if (data.spacingConfig) setSpacingConfig(data.spacingConfig);
+        if (data.textStyleConfig) setTextStyleConfig(data.textStyleConfig);
+        if (data.layout) setLayout(data.layout);
+        if (data.themeId) setThemeId(data.themeId);
+      }
+    } catch {
+      // Ignore localStorage errors
+    }
+    setIsHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isHydrated) return;
+    try {
+      const data = { config, styleConfig, spacingConfig, textStyleConfig, layout, themeId };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch {
+      // Ignore localStorage errors
+    }
+  }, [config, styleConfig, spacingConfig, textStyleConfig, layout, themeId, isHydrated]);
 
   const hasRequired = config.fullName.trim().length > 0 && config.email.trim().length > 0;
 
@@ -406,6 +442,16 @@ export default function EmailSignatureGenerator() {
 
   function handleCopyToGmail() {
     copyToGmail(signatureHtml);
+  }
+
+  function handleReset() {
+    setConfig(DEFAULT_SIGNATURE);
+    setStyleConfig(DEFAULT_STYLE);
+    setSpacingConfig(DEFAULT_SPACING);
+    setTextStyleConfig(DEFAULT_TEXT_STYLE);
+    setLayout('standard');
+    setThemeId('classic-dark');
+    setPendingCustomColor('#000000');
   }
 
   return (
@@ -1569,7 +1615,18 @@ export default function EmailSignatureGenerator() {
             <Button type="button" variant="accent" size="small" disabled={!hasRequired} onClick={handleCopyToGmail} className="disabled:opacity-60">
               {copyStatus === 'success' ? t.preview.copySuccess : copyStatus === 'error' ? t.preview.copyError : t.preview.copyButton}
             </Button>
+            <Button type="button" variant="normal" size="small" onClick={() => setShowResetModal(true)}>
+              {t.preview.resetButton}
+            </Button>
           </div>
+
+          <ConfirmModal
+            isOpen={showResetModal}
+            onClose={() => setShowResetModal(false)}
+            onConfirm={handleReset}
+            title={t.preview.resetModalTitle}
+            description={t.preview.resetModalDescription}
+          />
 
           {!hasRequired && (
             <p className="text-xs! text-light">{t.preview.requiredFields}</p>
