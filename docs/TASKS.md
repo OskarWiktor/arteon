@@ -82,57 +82,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Do `DONE_TASKS.md` dodaj wpis: ile pomysłów dodano + ID dodanych pomysłów.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
-- ✅ **[AUDIT-018] Repo: audyt sitemap — kompletność, duplikaty, poprawność lastmod**
-
-  - Cel:
-    - Sprawdzić czy wszystkie istniejące strony są w sitemap.
-    - Wykryć duplikaty tras/stron.
-    - Zweryfikować poprawność dat `lastmod`.
-  - Zakres:
-    - `public/sitemap-0.xml` (wygenerowana mapa)
-    - `next-sitemap.config.cjs` (konfiguracja)
-    - `app/(pl)/**` (wszystkie strony)
-    - `data/pl/blog.json` (artykuły)
-    - `data/pl/projects.json` (realizacje)
-  - Kryteria weryfikacji:
-    - Każda strona z `app/(pl)` jest w sitemap (bez dynamicznych `[slug]`).
-    - Brak zduplikowanych katalogów/tras (np. dwa katalogi prowadzące do tej samej strony).
-    - `lastmod` odpowiada rzeczywistej dacie ostatniej edycji.
-  - Raportowanie:
-    - Jeśli wykryjesz problemy — napraw je bezpośrednio lub dopisz osobne zadania.
-    - Do `DONE_TASKS.md` dodaj wpis z wynikami audytu + co naprawiono.
-  - Weryfikacja: `npm run build` (generuje nową sitemap).
-
-  - **Zrobione 2025-12-31**:
-
-    - **Kompletność**: Wszystkie 53 strony statyczne są w sitemap ✓
-    - **Duplikaty**: Wykryto i usunięto duplikat katalogu `generator-stopki-mailowej/` (stary katalog obok `darmowy-generator-stopki-mailowej/`) — 2 strony i 2 instrukcje usunięte.
-    - **Lastmod**: Naprawiono bug w `next-sitemap.config.cjs` — strona główna `/` nie miała `lastmod` (route group `(pl)` po usunięciu dawał pusty string zamiast `/`).
-    - **Naprawione pliki**:
-      - Usunięto: `app/(pl)/narzedzia/(tools)/(desktop-only)/generator-stopki-mailowej/` (cały katalog)
-      - Edytowano: `next-sitemap.config.cjs` (linia 47: `if (r === '') r = '/';`)
-    - `npm run build` przechodzi ✓
-
-- 🟡 **[AUDIT-008] Blog: audyt artykułów pod kątem nowego tonu (aktualizacja 2025-12-18)**
-
-  - Cel: przeanalizować istniejące artykuły i zidentyfikować, co wymaga poprawy, aby były zgodne z nowymi wytycznymi tonu marki Arteon (mentorski, maksymalnie prosty, bez żargonu).
-  - Zakres:
-    - Wszystkie artykuły w `data/pl/blog.json` z wyjątkiem dwóch najnowszych (wzorcowych): `jak-przygotowac-profesjonalna-stopke-mailowa` i `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`.
-  - Kryteria oceny (wg wytycznych z `docs/INSTRUCTIONS.md`):
-    1.  **Prostota języka** — czy tekst jest zrozumiały dla osoby bez wiedzy technicznej?
-    2.  **Wyjaśnianie terminów** — czy każdy termin techniczny jest od razu wyjaśniony (co to jest, po co to)?
-    3.  **Przykłady i konkrety** — czy są konkretne przykłady z praktyki (bez wstawek typu "Wyobraź sobie...")?
-    4.  **Płynna narracja** — czy każde zdanie jest logicznym ciągiem dalszym (bez skoków myślowych)?
-    5.  **Ludzki język** — czy ton jest jak rozmowa przy kawie, a nie korpo-broszura?
-    6.  **Instrukcje do narzędzi Arteon** — czy artykuły o narzędziach mają sekcję „Jak to zrobić w naszym narzędziu"?
-    7.  **Benefit-first** — czy korzyść jest przed informacją techniczną?
-    8.  **Brak checklisty** — czy artykuł nie zawiera sekcji „Checklista" (zamiast tego: kroki + podsumowanie priorytetów)?
-  - Raportowanie:
-    - Dla każdego artykułu wypisz konkretne problemy i co wymaga poprawy.
-    - Dopisz osobne zadania `CONTENT-*` z listą artykułów do poprawy i kryteriami akceptacji.
-    - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu + ID nowych zadań.
-  - Weryfikacja: nie jest wymagana (AUDIT-only).
-
 - ❌ **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
 
   - Cel: podnieść pozycje istniejących artykułów przez realne wzmocnienie treści (topical coverage), lepsze zaspokojenie intencji użytkownika i mocniejsze linkowanie wewnętrzne.
@@ -265,31 +214,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Jeśli wykryjesz problemy:
     - Dopisz osobne zadania `COPY-###` per realizacja (slug).
   - Weryfikacja: nie jest wymagana (AUDIT-only).
-
-- ❌ **[AUDIT-016] Edukacja (huby, bez artykułów): audyt tonu list i kategorii**
-
-  - Cel: sprawdzić ton na stronach listujących edukację (intro/hero/teksty pomocnicze), bez wchodzenia w treści artykułów.
-  - Zakres (strony):
-    - `/edukacja`
-    - `/edukacja/[category]`
-  - Wykluczenia (ważne):
-    - NIE obejmuje `/edukacja/[category]/[slug]`.
-    - NIE obejmuje treści artykułów w `data/pl/blog.json` (to jest osobny proces).
-  - Raportowanie (obowiązkowo — konkretne przykłady):
-    - Format jak w `AUDIT-010`.
-  - Jeśli wykryjesz problemy:
-    - Dopisz osobne zadania `COPY-###` per strona.
-  - Weryfikacja: nie jest wymagana (AUDIT-only).
-
-  - Cel: przepisać artykuły, które najbardziej odbiegają od nowego tonu.
-  - Uwaga: zadanie rozbite na mniejsze (1 artykuł = 1 zadanie). Realizacja: `CONTENT-006`, `CONTENT-007`, `CONTENT-008`.
-  - Wspólne wytyczne (dla każdego artykułu):
-    - Zamienić styl raportowy/formalny na mentorski (prosto, jasno, benefit-first).
-    - Każdy termin techniczny wyjaśnić od razu po użyciu (1-2 zdania: co to jest, po co to).
-    - Dodać konkretne przykłady z praktyki (bez wstawek typu "Wyobraź sobie...").
-    - Dodać sekcję FAQ (min. 4 pytania).
-    - Usunąć emoji z tekstu (jeśli są).
-  - Weryfikacja: nie jest wymagana (content-only).
 
 - ❌ **[SEO-013] OG images: dedykowane grafiki dla kluczowych stron (hub pages)**
 
@@ -878,7 +802,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Kategoria: Bezpieczeństwo
     - Uzasadnienie: Wyjaśnia zagrożenie bez technicznego żargonu.
 
-40. ❌ **Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?**
+40. ✅ **Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?** — DONE 2026-01-01
 
     - Kategoria: Bezpieczeństwo, Strony
     - Uzasadnienie: Konkretna praktyka z uzasadnieniem.
@@ -945,20 +869,10 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
 ### Psychologia i Marketing (7 tematów)
 
-55. ❌ **Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?**
-
-    - Kategoria: Psychologia
-    - Uzasadnienie: Konkretny mechanizm psychologiczny z przykładami.
-
 56. ❌ **FOMO w marketingu: kiedy ograniczenie czasu działa, a kiedy odstrasza?**
 
     - Kategoria: Psychologia, Marketing
     - Uzasadnienie: Analiza techniki z etycznymi granicami.
-
-57. ❌ **Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?**
-
-    - Kategoria: Psychologia
-    - Uzasadnienie: Klasyczne badanie z praktycznymi implikacjami.
 
 58. ❌ **Jak działa reguła wzajemności w marketingu? Dawanie, które buduje relacje**
 

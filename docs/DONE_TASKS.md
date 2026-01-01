@@ -1,5 +1,22 @@
 # DONE_TASKS
 
+## 2026-01-01
+
+- ✅ **[Artykuł 40] Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?**
+
+  - **Slug**: `dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa`
+  - **URL**: `/edukacja/bezpieczenstwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa`
+  - **Kategorie**: Bezpieczeństwo, Strony
+  - **Czas czytania**: 11 min (~2200 słów)
+  - **Zawartość**: Jak działają aktualizacje WordPressa (rdzeń, wtyczki, motywy), co się dzieje gdy strona nie jest aktualizowana (boty, konsekwencje ataku), dlaczego właściciele nie aktualizują, na co zwrócić uwagę przy aktualizacjach (backup, staging, kolejność), automatyczne aktualizacje za i przeciw, dodatkowe warstwy ochrony (SSL, 2FA, wtyczki bezpieczeństwa, hosting), jak sprawdzić bezpieczeństwo strony.
+  - **Linki wewnętrzne (8)**: optymalizacja-strony-wordpress (x3), SSL, co-sprawdzic-przed-uruchomieniem, dlaczego-strona-nie-wyswietla-sie-w-google, strony-internetowe, kontakt (x2)
+  - **Linki zewnętrzne (6)**: W3Techs, Sucuri (raport + SiteCheck), WPScan, Wordfence, Google Safe Browsing
+  - **Tooltips (6)**: wtyczka, motyw, bot, backup, staging, 2FA
+  - **FAQ**: 5 pytań
+  - **CTA**: Optymalizacja WordPress + Kontakt
+  - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: content-only (nie wymaga npm run build)
+
 ## 2025-12-31
 
 - ✅ **[SEO-018] Middleware: naprawić Content-Type dla redirectów 301 (text/plain → text/html)**
