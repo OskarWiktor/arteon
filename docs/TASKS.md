@@ -714,11 +714,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Kategoria: UX, Strony
     - Uzasadnienie: Wyjaśnia call-to-action i paradoks wyboru.
 
-22. ❌ **Whitespace na stronie: dlaczego pusta przestrzeń zwiększa czytelność?**
-
-    - Kategoria: UX, Grafika
-    - Uzasadnienie: Kontraintuicyjny temat — mniej znaczy więcej.
-
 23. ❌ **Jak projektować strony dla osób starszych? Dostępność bez kompromisów**
 
     - Kategoria: UX, Dostępność
@@ -760,7 +755,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Kategoria: Grafika, Branding
     - Uzasadnienie: Format "błędy" z konkretnymi przykładami.
 
-
 32. ❌ **Czym jest paleta kolorów i ile kolorów powinna mieć marka?**
 
     - Kategoria: Grafika, Branding
@@ -801,11 +795,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
     - Kategoria: Bezpieczeństwo
     - Uzasadnienie: Wyjaśnia zagrożenie bez technicznego żargonu.
-
-40. ✅ **Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?** — DONE 2026-01-01
-
-    - Kategoria: Bezpieczeństwo, Strony
-    - Uzasadnienie: Konkretna praktyka z uzasadnieniem.
 
 41. ❌ **Czym jest phishing i jak rozpoznać fałszywe e-maile dotyczące domeny?**
 

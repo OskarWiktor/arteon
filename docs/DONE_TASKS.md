@@ -2,6 +2,22 @@
 
 ## 2026-01-01
 
+- ✅ **[Artykuł 22] Dlaczego pusta przestrzeń na stronie zwiększa czytelność?**
+
+  - **Zmiana tytułu**: z "Whitespace na stronie: dlaczego pusta przestrzeń zwiększa czytelność?" na "Dlaczego pusta przestrzeń na stronie zwiększa czytelność?" (tytuł musi być pytaniem bez żargonu)
+  - **Slug**: `dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc`
+  - **URL**: `/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc`
+  - **Kategorie**: UX, Grafika
+  - **Czas czytania**: 11 min (~2200 słów)
+  - **Zawartość**: Czym jest pusta przestrzeń (makro i mikro), jak wpływa na odbiór (skanowanie, obciążenie poznawcze, kierowanie uwagi), gdzie stosować (sekcje, nagłówki, interlinia, formularze, mobile), jak ocenić proporcje (testy + narzędzia), pusta przestrzeń a typografia (interlinia, szerokość kolumny), najczęstsze obawy.
+  - **Linki wewnętrzne (6)**: responsywnosc-strony, kontrast-kolorow, czcionki-szeryfowe-bezszeryfowe, paradoks-wyboru, strony-internetowe, kontakt
+  - **Linki zewnętrzne (4)**: Nielsen Norman Group (whitespace), WCAG 2.1 (text-spacing), Material Design (spacing), PageSpeed/WAVE
+  - **Tooltips (3)**: pusta przestrzeń, obciążenie poznawcze, interlinia
+  - **FAQ**: 5 pytań
+  - **CTA**: Strony internetowe + Kontakt
+  - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: content-only (nie wymaga npm run build)
+
 - ✅ **[Artykuł 40] Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?**
 
   - **Slug**: `dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa`

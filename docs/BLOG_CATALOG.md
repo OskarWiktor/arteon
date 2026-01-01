@@ -25,6 +25,21 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Dlaczego pusta przestrzeń na stronie zwiększa czytelność?**
+
+  - **Slug**: `dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc`
+  - **URL**: `/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc`
+  - **Kategorie**: `UX`, `Grafika`
+  - **Data publikacji**: 2026-01-01
+  - **Czas czytania**: 11 min
+  - **Opis**: Artykuł edukacyjny o pustej przestrzeni (whitespace) na stronach internetowych i jej wpływie na czytelność. Obejmuje: czym jest pusta przestrzeń (makro-przestrzeń i mikro-przestrzeń), jak wpływa na odbiór treści (skanowanie, obciążenie poznawcze, kierowanie uwagi), gdzie stosować (między sekcjami, wokół nagłówków, interlinia, formularze i przyciski, urządzenia mobilne), jak ocenić proporcje (test skanowania, test czytelności, test mobilny, narzędzia), pusta przestrzeń a typografia (interlinia, szerokość kolumny 45-75 znaków), najczęstsze obawy (długość strony, marnowanie miejsca, zmieszczenie treści).
+  - **Linki wewnętrzne (6)**: `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki zewnętrzne (4)**: Nielsen Norman Group (whitespace research), WCAG 2.1 (text-spacing), Material Design (spacing guidelines), PageSpeed Insights, WAVE
+  - **Tooltips (3)**: pusta przestrzeń (whitespace), obciążenie poznawcze, interlinia
+  - **FAQ**: 5 pytań (pusta przestrzeń vs marginesy, ile przestrzeni, wpływ na szybkość, wpływ na SEO, jak przekonać klienta)
+  - **CTA**: Strony internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia funkcję pustej przestrzeni z konkretnymi przykładami i źródłami, bez pouczającego tonu
+
 - **Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?**
 
   - **Slug**: `dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa`
