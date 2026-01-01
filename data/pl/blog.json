@@ -77,7 +77,7 @@
         "btnOneLink": "/uslugi/strony-internetowe",
         "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
-        "backgroundImage": "/assets/blog/czym-sa-breadcrumbs-i-dlaczego-warto-je-miec-na-stronie/czym-sa-breadcrumbs-i-dlaczego-warto-je-miec-na-stronie.webp",
+        "backgroundImage": "/assets/blog/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc.webp",
         "overlay": "black"
       },
       "faq": [
@@ -4105,7 +4105,7 @@
         },
         {
           "type": "richtext",
-          "html": "<p>Googlebot nie będzie mógł odwiedzić żadnej podstrony.<br/>Sprawdź ten plik pod adresem <strong>twojadomena.pl/robots.txt</strong> i upewnij się, że nie blokuje witryny w Google.</p><br/><h3 class='h4 mb-3 mt-4'>2. Meta tag „noindex”</h3><p>W kodzie HTML w sekcji &lt;head&gt; nie powinno być:</p>"
+          "html": "<p>Googlebot nie będzie mógł odwiedzić żadnej podstrony.<br/>Sprawdź ten plik pod adresem <strong>twojadomena.pl/robots.txt</strong> i upewnij się, że nie blokuje witryny w Google.</p><br/><h3 class='h4 mb-3 mt-4'>2. Meta tag „noindex”</h3><p>W kodzie HTML w sekcji <head> nie powinno być:</p>"
         },
         {
           "type": "code",
