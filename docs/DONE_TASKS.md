@@ -2,6 +2,38 @@
 
 ## 2026-01-01
 
+- ✅ **[CONTENT-001] INSTRUCTIONS.md: skrócenie i uproszczenie dokumentu**
+
+  - **Rozmiar przed**: 53611 znaków / 764 linii
+  - **Rozmiar po**: 50135 znaków / 730 linii
+  - **Oszczędność**: 3476 znaków (~6.5%) / 34 linie
+  - **Usunięte duplikaty**:
+    - Sekcja "Dodatkowe reguły" (linie 756-764) — już była w liniach 116-123
+    - Zasada "Nie odsyłaj do konkurencji" — scalona z "Zakaz rekomendowania konkurencji"
+    - Zasada "Zakaz checklist" — powtórzona dwukrotnie
+    - Zasada "Weryfikacja zgodności z instrukcją" — powtórzona dwukrotnie
+    - Zasada "Unikanie duplikacji między artykułami" — powtórzona dwukrotnie
+  - **Uproszczenia**: Przykłady zamiany i przykłady dobrego/złego stosowania zasad zamienione na tabele
+  - **Dodana zasada**: Zakaz rekomendowania ogólnych profesjonalistów (rozszerzona)
+  - **Pliki**: `docs/INSTRUCTIONS.md`
+  - **Weryfikacja**: nie jest wymagana (CONTENT-only)
+
+- ✅ **[Artykuł 20] Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?**
+
+  - **Zmiana tytułu**: z "Breadcrumbs na stronie: po co są i jak wpływają na SEO?" na "Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?" (tytuł bez anglicyzmu, lepszy potencjał SEO)
+  - **Slug**: `czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec`
+  - **URL**: `/edukacja/ux/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec`
+  - **Kategorie**: UX, SEO
+  - **Czas czytania**: 10 min (~2000 słów)
+  - **Zawartość**: Jak wyglądają i działają breadcrumbs (3 rodzaje), dlaczego ułatwiają nawigację (orientacja, szybki powrót, zmniejszenie odrzuceń), wpływ na SEO (SERP, dane strukturalne, linki wewnętrzne), gdzie stosować (strony firmowe, sklepy, blogi), jak wdrożyć (umiejscowienie, nazwy, JSON-LD, dostępność), najczęstsze błędy.
+  - **Linki wewnętrzne (4)**: mapa-strony, dlaczego-strona-nie-wyswietla-sie-w-google, strony-internetowe, kontakt
+  - **Linki zewnętrzne (2)**: Google Search Central, WAI-ARIA
+  - **Tooltips (4)**: breadcrumbs, dane strukturalne, JSON-LD, landing page
+  - **FAQ**: 5 pytań
+  - **CTA**: Strony internetowe + Kontakt
+  - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: content-only (nie wymaga npm run build)
+
 - ✅ **[Artykuł 22] Dlaczego pusta przestrzeń na stronie zwiększa czytelność?**
 
   - **Zmiana tytułu**: z "Whitespace na stronie: dlaczego pusta przestrzeń zwiększa czytelność?" na "Dlaczego pusta przestrzeń na stronie zwiększa czytelność?" (tytuł musi być pytaniem bez żargonu)

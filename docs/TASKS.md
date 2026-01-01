@@ -249,6 +249,24 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - W schema (logo/publisher/image) używane są absolutne URL-e do ikon.
     - `npm run lint` i `npm run build` przechodzą.
 
+- ✅ **[CONTENT-001] INSTRUCTIONS.md: skrócenie i uproszczenie dokumentu (bez usuwania zasad)** — DONE 2026-01-01
+
+  - Cel:
+    - Skrócić `docs/INSTRUCTIONS.md` usuwając duplikaty i upraszczając formułowania.
+    - Wszystkie zasady muszą zostać zachowane — żadna wytyczna nie może być usunięta.
+    - Dokument ma być łatwiejszy do przeczytania przez AI.
+  - Zakres:
+    - Scalenie zduplikowanych zasad (np. zakaz konkurencji w dwóch miejscach).
+    - Uproszczenie wielokrotnych przykładów do tabel lub list.
+    - Usunięcie powtarzających się sformułowań.
+    - Zachowanie wszystkich merytorycznych wytycznych.
+  - Plik: `docs/INSTRUCTIONS.md`
+  - Kryteria akceptacji:
+    - Dokument jest krótszy o min. 10%.
+    - Żadna zasada nie została usunięta — tylko uproszczona lub scalona.
+    - Struktura jest bardziej przejrzysta.
+  - Weryfikacja: nie jest wymagana (CONTENT-only).
+
 - ❌ **[PERF-001] Assets: odchudzić największe obrazy w `public/assets/**` (bez zmiany wyglądu)\*\*
 
   - Pliki (największe):
@@ -704,27 +722,22 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Kategoria: UX
     - Uzasadnienie: Konkretny element interfejsu z analizą za i przeciw.
 
-20. ❌ **Breadcrumbs na stronie: po co są i jak wpływają na SEO?**
-
-    - Kategoria: UX, SEO
-    - Uzasadnienie: Łączy UX z SEO — podwójna wartość jednego elementu.
-
 21. ❌ **Czym jest CTA i dlaczego jeden przycisk działa lepiej niż pięć?**
 
     - Kategoria: UX, Strony
     - Uzasadnienie: Wyjaśnia call-to-action i paradoks wyboru.
 
-23. ❌ **Jak projektować strony dla osób starszych? Dostępność bez kompromisów**
+22. ❌ **Jak projektować strony dla osób starszych? Dostępność bez kompromisów**
 
     - Kategoria: UX, Dostępność
     - Uzasadnienie: Konkretna grupa docelowa z jasnymi wytycznymi.
 
-24. ❌ **Czym jest dark pattern i dlaczego warto go unikać na swojej stronie?**
+23. ❌ **Czym jest dark pattern i dlaczego warto go unikać na swojej stronie?**
 
     - Kategoria: UX, Psychologia
     - Uzasadnienie: Edukuje o nieetycznych praktykach i ich konsekwencjach.
 
-25. ❌ **404 vs soft 404: jaka jest różnica i która opcja jest lepsza?**
+24. ❌ **404 vs soft 404: jaka jest różnica i która opcja jest lepsza?**
 
     - Kategoria: UX, SEO
     - Uzasadnienie: Techniczny temat z praktycznymi implikacjami.

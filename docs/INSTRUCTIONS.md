@@ -429,41 +429,34 @@ Dla każdego zadania:
 
 - **PRZYKŁADY ZAMIANY (referencja przy redakcji)**:
 
-  - ❌ „traktowane po macoszemu" → ✅ „często pozostają puste lub ogólnikowe"
-  - ❌ „Nie musisz pisać encyklopedii" → ✅ „Opis nie musi być rozbudowany"
-  - ❌ „W SEO kolejność ma znaczenie, bo każda godzina pracy ma swoją cenę" → ✅ „Dzięki temu pierwsze efekty pojawią się szybciej"
-  - ❌ „nie jako lista do odhaczania" → ✅ (usuń meta-komentarz, po prostu użyj normalnych akapitów)
-  - ❌ „Przydatne linki:\n👉 Link1\n👉 Link2" → ✅ (wpleć linki naturalnie w ostatni akapit, np. „Zajmujemy się [budową sklepów](/uslugi/sklepy-internetowe) oraz [pozycjonowaniem](/uslugi/marketing/pozycjonowanie-stron).")
-  - ❌ „Jeśli nie jesteś techniczny..." → ✅ „Nawet bez wiedzy technicznej możesz..."
-  - ❌ „to proste", „to oczywiste" → ✅ (usuń lub opisz konkretnie co i dlaczego)
-  - ❌ „Problem w tym, że wiele firm stosuje X bez przemyślenia. Efekt? Y" → ✅ „X działa najlepiej w konkretnych kontekstach" (bez oceny innych)
-  - ❌ „to absurd", „wręcz szkodzi", „wręcz przeszkadza" → ✅ „nie jest potrzebny", „wydłuża drogę do celu"
-  - ❌ „bez zaśmiecania etykiety tekstem" → ✅ „nie powiększając etykiety ani nie zmniejszając czcionki"
-  - ⚠️ „Najczęstsze błędy przy X" → dozwolone w tytułach (patrz typ 3b), ale treść musi być konstruktywna — wyjaśniaj „dlaczego to się zdarza" i „jak zrobić lepiej", bez oskarżania
-  - ❌ Pytania retoryczne typu „Billboard przy autostradzie? Baner na dachu?" → ✅ Pełne zdania opisowe
-  - ❌ „stosowany z głową" → ✅ „w konkretnych kontekstach" (bez sugerowania, że ktoś robi coś bez głowy)
-  - ❌ „gdzie klienci mogą ją zabrać" → ✅ „skąd klienci mogą ją zabrać" (poprawna składnia z przyimkiem „skąd")
-  - ❌ „wymaga więcej pracy" → ✅ „wymaga większej ilości pracy" (poprawna składnia)
-  - ❌ „z nagłówkiem zawierającym X, Y i stopkę" → ✅ „z nagłówkiem (X, Y u góry) oraz stopką (Z na dole)" (rozdziel elementy logicznie)
-  - ❌ „wizytówka to pierwszy kontakt z marką" → ✅ „wizytówka zostaje z klientem i ułatwia późniejszy kontakt" (konkretna korzyść)
+  | ❌ Zakazane | ✅ Zamiennik |
+  |------------|-------------|
+  | „traktowane po macoszemu" | „często pozostają puste lub ogólnikowe" |
+  | „Nie musisz pisać encyklopedii" | „Opis nie musi być rozbudowany" |
+  | „każda godzina pracy ma swoją cenę" | „Dzięki temu efekty pojawią się szybciej" |
+  | „nie jako lista do odhaczania" | (usuń meta-komentarz) |
+  | „Przydatne linki: 👉" | (wpleć linki naturalnie w akapit) |
+  | „Jeśli nie jesteś techniczny..." | „Nawet bez wiedzy technicznej możesz..." |
+  | „to proste", „to oczywiste" | (usuń lub opisz konkretnie) |
+  | „wiele firm robi źle. Efekt? Y" | „X działa najlepiej w konkretnych kontekstach" |
+  | „to absurd", „wręcz szkodzi" | „nie jest potrzebny", „wydłuża drogę do celu" |
+  | pytania retoryczne z ironią | pełne zdania opisowe |
+  | „stosowany z głową" | „w konkretnych kontekstach" |
+  | „wymaga więcej pracy" | „wymaga większej ilości pracy" |
 
-- **Zakaz anglicyzmów bez wyjaśnienia (obowiązkowo)**: Nie używaj angielskich terminów marketingowych (np. „direct mail", „response rate") bez natychmiastowego wyjaśnienia po polsku. Zamiast „4,4% response rate" napisz „4-5 osób na 100 odpowiada". Czytelnik musi zrozumieć przekaz bez znajomości angielskiego.
+  ⚠️ „Najczęstsze błędy przy X" → dozwolone w tytułach, ale treść konstruktywna
 
-- **Nie odsyłaj do konkurencji (obowiązkowo)**: W FAQ i CTA nigdy nie sugeruj, że czytelnik może zamówić usługi „u projektanta lub agencji" (ogólnie). Zawsze kieruj do Arteon. Zamiast „zamawiając u tego samego projektanta..." napisz „W Arteon możesz zamówić wszystko w jednym miejscu..."
+- **Zakaz anglicyzmów bez wyjaśnienia (obowiązkowo)**: Nie używaj angielskich terminów marketingowych (np. „direct mail", „response rate") bez natychmiastowego wyjaśnienia po polsku. Zamiast „4,4% response rate" napisz „4-5 osób na 100 odpowiada”. Czytelnik musi zrozumieć przekaz bez znajomości angielskiego.
 
-- **Statystyki muszą być zrozumiałe (obowiązkowo)**: Podając dane liczbowe, przelicz je na konkretne przykłady. Zamiast „4,4% wskaźnik odpowiedzi" napisz „na 100 wysłanych ulotek, 4-5 osób odpowiada". Zamiast „0,12%" napisz „1 osoba na 1000".
+- **Statystyki muszą być zrozumiałe (obowiązkowo)**: Podając dane liczbowe, przelicz je na konkretne przykłady. Zamiast „4,4% wskaźnik odpowiedzi" napisz „na 100 wysłanych ulotek, 4-5 osób odpowiada”. Zamiast „0,12%" napisz „1 osoba na 1000”.
 
-- **Zakaz checklist (doprecyzowanie, bez konfliktów)**: nie twórz w artykułach sekcji „Checklista" ani list „do odhaczania". Jeśli chcesz dać część wdrożeniową, opisz kroki w tekście, a na końcu zrób „Podsumowanie: priorytety". Krótkie listy informacyjne (np. 3–5 wniosków) są dozwolone, o ile nie mają formy „odfajkuj to”.
+### Dodatkowe zasady językowe i redakcyjne (aktualizacja 2025-12-21)
 
-### Dodatkowe zasady jezykowe i redakcyjne (aktualizacja 2025-12-21)
+- **Intencja wyszukiwania (obowiązkowo)**: Wstęp i początkowe sekcje artykułu muszą bezpośrednio odpowiadać na pytanie z tytułu. Nie zaczynaj od mówienia, że temat jest ważny. Zamiast tego od razu pokaż, co czytelnik znajdzie.
 
-- **Intencja wyszukiwania (obowiazkowo)**: Wstep i poczatkowe sekcje artykulu musza bezposrednio odpowiadac na pytanie z tytulu. Nie zaczynaj od mowienia, ze temat jest wazny. Zamiast tego od razu pokaz, co czytelnik znajdzie.
+- **Spójność gramatyczna liczby (obowiązkowo)**: Podmiot i orzeczenie muszą się zgadzać w liczbie. Szczególna uwaga przy opisach zbiorczych (np. Kolory...Tworzą, nie Kolory...Tworzy).
 
-- **Spojnosc gramatyczna liczby (obowiazkowo)**: Podmiot i orzeczenie musza sie zgadzac w liczbie. Szczegolna uwaga przy opisach zbiorczych (np. Kolory...Tworza, nie Kolory...Tworzy).
-
-- **Unikanie duplikacji miedzy artykulami (obowiazkowo)**: Jesli istnieje powiazany artykul na zblizony temat, nie duplikuj jego tresci. Odnies sie do niego linkiem.
-
-- **Zrodla zewnetrzne (zalecane)**: W artykulach uzywaj linkow do badan i wiarygodnych zrodel (target=\_blank rel=noopener noreferrer). 3-5 linkow na artykul.
+- **Unikanie duplikacji między artykułami (obowiązkowo)**: Jeśli istnieje powiązany artykuł na zbliżony temat, nie duplikuj jego treści. Odnieś się do niego linkiem.
 
 - **Anglicyzmy a polskie odpowiedniki (obowiązkowo)**: Używaj polskich odpowiedników tam, gdzie brzmią naturalnie. Zamiast „social media" pisz „media społecznościowe" (odmienione odpowiednio do kontekstu). Anglicyzmy dozwolone tylko gdy polski odpowiednik brzmi sztucznie lub jest nieznany.
 
@@ -475,7 +468,12 @@ Dla każdego zadania:
 
 - **Zaimki dzierżawcze w kontekście czytelnika (obowiązkowo)**: W zwrotach typu „na Twojej stronie" używaj formy „na swojej stronie" — jest bardziej naturalna i poprawna gramatycznie w kontekście instrukcji dla czytelnika.
 
-- **Zakaz rekomendowania konkurencji (obowiązkowo)**: Nigdy nie sugeruj kontaktu z innymi firmami ani osobami trzecimi. Zamiast „skontaktuj się z osobą, która tworzyła stronę" pisz „skontaktuj się z nami" i linkuj do `/kontakt`. Arteon jest jedynym rekomendowanym źródłem pomocy.
+- **Zakaz rekomendowania konkurencji i ogólnych profesjonalistów (obowiązkowo)**: Wszystkie treści muszą prowadzić do oferty Arteon, nigdy do ogólnych profesjonalistów. Zakazane sformułowania:
+  - ❌ „skorzystaj z pomocy profesjonalisty" → ✅ „skontaktuj się z nami" + link do `/kontakt`
+  - ❌ „zatrudnij specjalistę" → ✅ „w Arteon zajmujemy się..."
+  - ❌ „skontaktuj się z osobą, która tworzyła stronę" → ✅ „skontaktuj się z nami"
+  - ❌ „zamów u projektanta lub agencji" → ✅ „W Arteon możesz zamówić wszystko w jednym miejscu"
+  Arteon jest jedynym rekomendowanym źródłem pomocy we wszystkich artykułach, CTA i FAQ.
 
 - **Unikanie kategorycznych określeń (zalecane)**: Zamiast mocnych słów typu „słabe", „złe", „fatalne" używaj łagodniejszych form: „słabsze", „mniej skuteczne", „wymagające poprawy". Wyjątek: gdy kontrast jest celowy i uzasadniony merytorycznie.
 
@@ -528,8 +526,6 @@ Dla każdego zadania:
 
 - **Wspominanie alternatywnych rozwiazan (zalecane)**: Przy opisywaniu problemu lub rozwiazania mozesz wspomnieć o innych metodach osiagniecia podobnego celu (np. wyszukiwarka na stronie jako alternatywa dla mapy strony). To daje wartość czytelnikowi i otwiera mozliwość linkowania do przyszlych artykulow. Nie odbiegaj jednak od glownego tematu — wzmianka ma byc krotka i naturalna.
 
-- **Weryfikacja zgodności z instrukcją (OBOWIĄZKOWO)**: Przed napisaniem jakiegokolwiek tekstu zawsze najpierw przeczytaj pełną instrukcję. Po napisaniu tekstu sprawdź go ponownie pod kątem zgodności z tą instrukcją. To dotyczy każdego artykułu, opisu usługi, narzędzia i każdej innej treści.
-
 ### Zasady linkowania i wartości treści (aktualizacja 2025-12-23)
 
 - **Maksymalizacja linków wewnętrznych (OBOWIĄZKOWO)**: Artykuły mają wzmacniać wszystkie inne strony serwisu. Im więcej naturalnych linków do innych artykułów i narzędzi Arteon, tym lepiej. Przy każdym temacie sprawdź, czy istnieje powiązany artykuł lub narzędzie i podlinkuj je w treści. Linki muszą być wplecione naturalnie w zdania.
@@ -560,6 +556,13 @@ Dla każdego zadania:
   - Odpowiadają na pytania zadawane przez właścicieli firm
   - Używają języka naturalnego (jak ludzie pytają)
   - Mają szersze zastosowanie (nie tylko jedna wąska branża)
+
+- **Maksymalizacja potencjału SEO w tytułach i slugach (OBOWIĄZKOWO, aktualizacja 2026-01-01)**: Każdy tytuł artykułu i slug URL musi być przemyślany pod kątem maksymalizacji szans na znalezienie przez użytkowników. Zasady:
+  - **Polskie odpowiedniki zamiast anglicyzmów**: W tytułach i slugach używaj polskich terminów, które ludzie wpisują w wyszukiwarkę. Zamiast "breadcrumbs" → "ścieżka nawigacji", zamiast "whitespace" → "pusta przestrzeń".
+  - **Slug = tytuł po polsku**: URL musi być zrozumiały bez znajomości angielskiego. Slug `czym-jest-sciezka-nawigacji` ma większy potencjał SEO niż `czym-sa-breadcrumbs`.
+  - **Frazy kluczowe w tytule**: Tytuł powinien zawierać frazy, które ludzie realnie wyszukują. Sprawdź, czy fraza ma potencjał wyszukiwania.
+  - **Dotyczy wszystkich treści**: Ta zasada dotyczy nie tylko artykułów, ale też stron usług, narzędzi, realizacji — wszędzie, gdzie jest tytuł i URL.
+  - **Wyjątek**: Anglicyzm dozwolony w treści artykułu (z tooltipem/wyjaśnieniem), ale NIE w tytule ani w slug URL.
 
 ### 🚨 ZERO DOPISAŃ — ZERO NIEPRAWDY (aktualizacja 2025-12-30)
 
@@ -724,37 +727,10 @@ to:
 
 #### Przykłady dobrego i złego stosowania zasad
 
-**❌ ŹLE — brak źródła:**
-- „Badania pokazują, że 90% użytkowników opuszcza stronę po 3 sekundach"
-- „Według ekspertów, SEO zajmuje 6-12 miesięcy"
-- „Firmy ze spójnym brandingiem mają wyższe przychody"
+| ❌ ŹLE | ✅ DOBRZE |
+|--------|----------|
+| „90% użytkowników opuszcza stronę po 3s" (brak źródła) | „Wg Ahrefs z 2023, średni wiek strony w Top10 to 2+ lata ([źródło])" |
+| „Przy promocji wystarczy stara i nowa cena" | „Należy podać najniższą cenę z 30 dni (Omnibus, PL 2023)" |
+| „Firma X zwiększyła sprzedaż o 350%" (wymyślone) | „Załóżmy... *(przykład hipotetyczny)*" |
+| „Badania pokazują, że..." (bez linku) | „Czas SEO zależy od wielu czynników: konkurencji, techniki, treści" |
 
-**❌ ŹLE — niezgodność z prawem PL:**
-- „Przy promocji wystarczy pokazać starą i nową cenę" (BŁĄD — Omnibus wymaga najniższej ceny z 30 dni)
-- „Cookies można zbierać bez zgody, wystarczy informacja" (BŁĄD — RODO wymaga zgody)
-
-**❌ ŹLE — nieoznaczony przykład hipotetyczny:**
-- „Firma X zwiększyła sprzedaż o 350% dzięki redesignowi strony" (jeśli to wymyślony przykład)
-
-**✅ DOBRZE — ze źródłem:**
-- „Wg badania Ahrefs z 2023 roku, średni wiek strony w Top10 Google wynosi ponad 2 lata ([źródło](https://ahrefs.com/blog/how-long-does-it-take-to-rank/))"
-- „Google oficjalnie potwierdził, że Core Web Vitals są czynnikiem rankingowym ([dokumentacja](https://developers.google.com/search/docs/appearance/core-web-vitals))"
-
-**✅ DOBRZE — zgodność z prawem:**
-- „Przy promocji w sklepie internetowym należy podać najniższą cenę z ostatnich 30 dni przed obniżką (wymóg Dyrektywy Omnibus, obowiązuje w PL od 2023 roku)"
-
-**✅ DOBRZE — oznaczony przykład:**
-- „Załóżmy, że sklep internetowy z elektroniką odnotowuje spadek konwersji *(przykład hipotetyczny — nie oparty o dane historyczne)*"
-
-**✅ DOBRZE — gdy brak źródła:**
-- „Czas potrzebny na efekty SEO zależy od wielu czynników: konkurencyjności branży, stanu technicznego strony, jakości treści i profilu linków"
-- „Większość użytkowników oczekuje szybkiego ładowania strony"
-
-### Dodatkowe reguły
-
-- każdy komponent i cały kod powinien być zgodny z najlepszymi praktykami Next
-- przy tworzeniu nowych hooków lub komponentów sprawdź raport mówiący o tych które już są, jeśli są już podobne to ich użyj lub stwórz nowy wariant / propsy (bez require), które będą przydatne
-- nie zmieniaj wyglądu, treści ani funkcjonalności, chyba że wskazano inaczej
-- nie wprowadzaj w `robots.tsx` globalnej blokady indeksacji całej witryny (blokowanie `/` jest zabronione)
-- nigdy nie zmieniaj numerów zadań
-- **przed proponowaniem nowych ID zadań/pomysłów (IDEA-_, COPY-_, SEO-\* itp.) zawsze sprawdź istniejące ID w `TASKS.md` i `DONE_TASKS.md`**, żeby uniknąć kolizji numerów
