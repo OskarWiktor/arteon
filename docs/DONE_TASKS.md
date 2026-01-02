@@ -2,6 +2,21 @@
 
 ## 2026-01-02
 
+- ✅ **[IDEA-103] Artykuł: Co to jest newsletter i czy warto go prowadzić?**
+
+  - **Slug**: `co-to-jest-newsletter-i-czy-warto-go-prowadzic`
+  - **URL**: `/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic`
+  - **Kategorie**: Marketing, Treści
+  - **Czas czytania**: 10 min (~2034 słów)
+  - **Zawartość**: Czym jest newsletter i jak działa (formy, częstotliwość), dlaczego firmy prowadzą newslettery (niezależność od algorytmów, budowanie listy kontaktów, regularny kontakt), korzyści (zwiększenie sprzedaży — ROI 36:1 wg Litmus 2023, budowanie pozycji eksperta, kierowanie ruchu, zbieranie informacji o odbiorcach), dla kogo newsletter ma sens, na co zwrócić uwagę (zgoda RODO, wartość dla odbiorcy, regularność), jak mierzyć skuteczność (open rate, CTR, wypisania, konwersje), narzędzia (Mailchimp, GetResponse, Brevo), budowanie listy subskrybentów, typowe wyzwania.
+  - **Linki wewnętrzne (6)**: strony-internetowe, social-proof, paradoks-wyboru, identyfikacja-wizualna, tworzenie-tresci, kontakt
+  - **Linki zewnętrzne (6)**: Litmus (ROI), UODO (RODO), Mailchimp (benchmarks + platforma), GetResponse, Brevo
+  - **Tooltips (3)**: newsletter, open rate, CTR
+  - **FAQ**: 6 pytań
+  - **CTA**: Tworzenie treści + Kontakt
+  - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
 - ✅ **[CONTENT-035] Blog: konsolidacja treści o Core Web Vitals — skrócenie sekcji + linki do nowego artykułu**
 
   - **Cel**: Skrócenie rozbudowanych sekcji o Core Web Vitals w starszych artykułach i dodanie linków do dedykowanego artykułu IDEA-064.

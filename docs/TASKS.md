@@ -942,14 +942,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/marketing/pozycjonowanie-stron`
   - Typ artykułu: Edukacyjny
 
-- ❌ **[IDEA-103] Artykuł: Co to jest newsletter i czy warto go prowadzić?**
-
-  - Kategorie: `Marketing`, `Treści`
-  - Slug: `co-to-jest-newsletter-i-czy-warto-go-prowadzic`
-  - Cel: Rola newslettera w marketingu, korzyści, na co zwrócić uwagę.
-  - Powiązane usługi: `/uslugi/tworzenie-tresci`
-  - Typ artykułu: Edukacyjny
-
 - ❌ **[IDEA-104] Artykuł: Dlaczego opisy usług na stronie są kluczowe dla pozyskiwania klientów?**
 
   - Kategorie: `Treści`, `Strony`, `Marketing`

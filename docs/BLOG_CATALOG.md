@@ -25,6 +25,21 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Co to jest newsletter i czy warto go prowadzić?**
+
+  - **Slug**: `co-to-jest-newsletter-i-czy-warto-go-prowadzic`
+  - **URL**: `/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic`
+  - **Kategorie**: `Marketing`, `Tresci`
+  - **Data publikacji**: 2026-01-02
+  - **Czas czytania**: 10 min
+  - **Opis**: Kompleksowy artykuł edukacyjny o newsletterze jako narzędziu komunikacji z klientami. Obejmuje: czym jest newsletter i jak działa (formy newslettera, częstotliwość wysyłki), dlaczego firmy prowadzą newslettery (niezależność od algorytmów, budowanie listy kontaktów, regularny kontakt), korzyści z newslettera (zwiększenie sprzedaży — dane Litmus 2023 o ROI 36:1, budowanie pozycji eksperta, kierowanie ruchu, zbieranie informacji), dla kogo newsletter ma sens a dla kogo nie, na co zwrócić uwagę (zgoda RODO, wartość dla odbiorcy, regularność), jak mierzyć skuteczność (open rate, CTR, wypisania, konwersje — dane Mailchimp), narzędzia (Mailchimp, GetResponse, Brevo), budowanie listy subskrybentów (wartość w zamian za zapis, widoczność formularza, jasna komunikacja), typowe wyzwania (regularność, dostarczalność, spadające zaangażowanie, balans wartość/promocja).
+  - **Linki wewnętrzne (6)**: `/uslugi/strony-internetowe`, `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/tworzenie-tresci`, `/kontakt`
+  - **Linki zewnętrzne (6)**: Litmus (e-mail marketing ROI 2023), UODO (RODO), Mailchimp (email marketing benchmarks), Mailchimp (platforma), GetResponse (platforma), Brevo (platforma)
+  - **Tooltips (3)**: newsletter, open rate, CTR
+  - **FAQ**: 6 pytań (jak często wysyłać, newsletter vs media społecznościowe, ile subskrybentów potrzeba, zgoda RODO, co pisać żeby nie irytować, jak zwiększyć open rate)
+  - **CTA**: Tworzenie treści + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia rolę newslettera w marketingu z praktycznymi wskazówkami, bez pouczania, z konkretnymi danymi i źródłami
+
 - **Dlaczego szybkość ładowania strony wpływa na pozycję w Google?**
 
   - **Slug**: `dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
