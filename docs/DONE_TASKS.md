@@ -2,6 +2,21 @@
 
 ## 2026-01-02
 
+- ✅ **[IDEA-088] Artykuł: Co to jest regulamin sklepu internetowego i co musi zawierać?**
+
+  - **Slug**: `co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
+  - **URL**: `/edukacja/sklepy/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
+  - **Kategorie**: Sklepy, Bezpieczeństwo
+  - **Czas czytania**: 11 min (~2147 słów)
+  - **Zawartość**: Dlaczego sklep musi mieć regulamin (Ustawa o prawach konsumenta), jakie przepisy regulują zawartość (Ustawa o prawach konsumenta, Kodeks cywilny, RODO, Dyrektywa Omnibus), obowiązkowe elementy (dane przedsiębiorcy, procedura zamówień), prawo odstąpienia od umowy (14 dni, wyjątki z art. 38), reklamacje i gwarancja (rękojmia 2 lata), dostawa i koszty (Omnibus — najniższa cena z 30 dni), ochrona danych osobowych (art. 13 RODO), pozasądowe rozwiązywanie sporów (platforma ODR), klauzule niedozwolone (rejestr UOKiK), jak udostępnić regulamin, konsekwencje braku (kary UOKiK do 10% obrotu, wydłużenie terminu odstąpienia do 12 miesięcy).
+  - **Linki wewnętrzne (4)**: sklepy-internetowe, efekt-zakotwiczenia, certyfikat-ssl, kontakt
+  - **Linki zewnętrzne (6)**: Ustawa o prawach konsumenta (ISAP), Kodeks cywilny (ISAP), UOKiK, UODO, Platforma ODR, Rejestr klauzul niedozwolonych
+  - **Tooltips (4)**: RODO, Dyrektywa Omnibus, rękojmia, klauzule abuzywne
+  - **FAQ**: 6 pytań
+  - **CTA**: Sklepy internetowe + Kontakt
+  - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
 - ✅ **[IDEA-103] Artykuł: Co to jest newsletter i czy warto go prowadzić?**
 
   - **Slug**: `co-to-jest-newsletter-i-czy-warto-go-prowadzic`

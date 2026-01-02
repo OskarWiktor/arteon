@@ -25,6 +25,21 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Co to jest regulamin sklepu internetowego i co musi zawierać?**
+
+  - **Slug**: `co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
+  - **URL**: `/edukacja/sklepy/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
+  - **Kategorie**: `Sklepy`, `Bezpieczenstwo`
+  - **Data publikacji**: 2026-01-02
+  - **Czas czytania**: 11 min
+  - **Opis**: Kompleksowy artykuł edukacyjny o regulaminie sklepu internetowego i wymogach prawnych. Obejmuje: dlaczego sklep musi mieć regulamin (Ustawa o prawach konsumenta), jakie przepisy regulują zawartość (Ustawa o prawach konsumenta, Kodeks cywilny, RODO, Dyrektywa Omnibus), obowiązkowe elementy regulaminu (dane przedsiębiorcy, procedura zamówień), prawo odstąpienia od umowy (14 dni, procedura, wyjątki z art. 38), reklamacje i gwarancja (rękojmia 2 lata, procedura reklamacyjna), dostawa i koszty (Omnibus - najniższa cena z 30 dni), ochrona danych osobowych (art. 13 RODO), pozasądowe rozwiązywanie sporów (platforma ODR), klauzule niedozwolone (rejestr UOKiK), jak udostępnić regulamin, konsekwencje braku regulaminu (kary UOKiK do 10% obrotu, wydłużenie terminu odstąpienia do 12 miesięcy).
+  - **Linki wewnętrzne (4)**: `/uslugi/sklepy-internetowe`, `/edukacja/psychologia/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`, `/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`, `/kontakt`
+  - **Linki zewnętrzne (6)**: Ustawa o prawach konsumenta (ISAP), Kodeks cywilny (ISAP), UOKiK, UODO, Platforma ODR (EC), Rejestr klauzul niedozwolonych (UOKiK)
+  - **Tooltips (4)**: RODO, Dyrektywa Omnibus, rękojmia, klauzule abuzywne
+  - **FAQ**: 6 pytań (czy każdy sklep musi mieć, czy można skopiować, jak często aktualizować, co grozi za brak, czy informować o Omnibus, czy osobna polityka prywatności)
+  - **CTA**: Sklepy internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia wymogi prawne dla regulaminu sklepu internetowego z odwołaniami do konkretnych przepisów, bez straszenia, z praktycznymi wskazówkami
+
 - **Co to jest newsletter i czy warto go prowadzić?**
 
   - **Slug**: `co-to-jest-newsletter-i-czy-warto-go-prowadzic`

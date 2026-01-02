@@ -818,14 +818,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Powiązane usługi: `/uslugi/sklepy-internetowe`, `/uslugi/projekty-graficzne`
   - Typ artykułu: Edukacyjny
 
-- ❌ **[IDEA-088] Artykuł: Co to jest regulamin sklepu internetowego i co musi zawierać?**
-
-  - Kategorie: `Sklepy`, `Bezpieczeństwo`
-  - Slug: `co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
-  - Cel: Wymagania prawne, kluczowe elementy regulaminu, konsekwencje braku.
-  - Powiązane usługi: `/uslugi/sklepy-internetowe`
-  - Typ artykułu: Edukacyjny
-
 - ❌ **[IDEA-089] Artykuł: Dlaczego wyszukiwarka w sklepie internetowym jest ważna?**
 
   - Kategorie: `Sklepy`, `UX`
