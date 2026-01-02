@@ -1,5 +1,36 @@
 # DONE_TASKS
 
+## 2026-01-02
+
+- ✅ **[CONTENT-035] Blog: konsolidacja treści o Core Web Vitals — skrócenie sekcji + linki do nowego artykułu**
+
+  - **Cel**: Skrócenie rozbudowanych sekcji o Core Web Vitals w starszych artykułach i dodanie linków do dedykowanego artykułu IDEA-064.
+  - **Artykuły edytowane**:
+    - `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie` — skrócona sekcja "Core Web Vitals i responsywność" + zaktualizowane FAQ
+    - `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp` — skrócona sekcja o CWV + zaktualizowane FAQ
+  - **Zmiany**:
+    - Usunięto szczegółowe wyjaśnienia LCP/FID/CLS (przeniesione do IDEA-064)
+    - Dodano linki wewnętrzne do `/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
+    - Zaktualizowano `dateModified` na `2026-01-02` w obu artykułach
+  - **Korzyści SEO**: unikanie kanibalizacji treści, wzmocnienie linkowania wewnętrznego, jeden autorytatywny artykuł o CWV
+  - **Pliki**: `data/pl/blog.json`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[IDEA-064] Artykuł: Dlaczego szybkość ładowania strony wpływa na pozycję w Google?**
+
+  - **Slug**: `dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
+  - **URL**: `/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
+  - **Kategorie**: SEO, UX, Strony
+  - **Czas czytania**: 11 min (~2200 słów)
+  - **Zawartość**: Czym są Core Web Vitals (LCP, INP, CLS — progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP — czas ładowania głównej treści; INP — responsywność, dlaczego zastąpił FID; CLS — stabilność wizualna), jak Core Web Vitals wpływają na ranking Google (treść najważniejsza, czynnik różnicujący, dane CrUX), wpływ szybkości na konwersję (opuszczanie stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JS/CSS, serwer, zewnętrzne skrypty).
+  - **Linki wewnętrzne (8)**: optymalizacja-zdjec, responsywnosc-strony, ile-czasu-trwa-pozycjonowanie, paradoks-wyboru, darmowa-dostawa-vs-nizsza-cena, social-proof, jpg-png-na-webp (narzędzie), domena-i-hosting, strony-internetowe, optymalizacja-seo, kontakt
+  - **Linki zewnętrzne (6)**: Google Search Central (Core Web Vitals), Google Developers Blog (Page Experience), Think with Google (mobile speed), PageSpeed Insights, Google Search Console, Web Vitals Extension
+  - **Tooltips (4)**: Core Web Vitals, LCP, INP, CLS
+  - **FAQ**: 6 pytań
+  - **CTA**: Strony internetowe + Kontakt
+  - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
+  - **Weryfikacja**: npm run lint, npm run build
+
 ## 2026-01-01
 
 - ✅ **[CONTENT-001] INSTRUCTIONS.md: skrócenie i uproszczenie dokumentu**

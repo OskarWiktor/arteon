@@ -25,6 +25,21 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Dlaczego szybkość ładowania strony wpływa na pozycję w Google?**
+
+  - **Slug**: `dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
+  - **URL**: `/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
+  - **Kategorie**: `SEO`, `UX`, `Strony`
+  - **Data publikacji**: 2026-01-02
+  - **Czas czytania**: 11 min
+  - **Opis**: Kompleksowy artykuł edukacyjny o wpływie szybkości ładowania strony na pozycję w Google. Obejmuje: czym są Core Web Vitals (LCP, INP, CLS — progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP — czas ładowania głównej treści, czynniki wpływające; INP — responsywność, dlaczego zastąpił FID; CLS — stabilność wizualna, przyczyny przesunięć), jak Core Web Vitals wpływają na ranking (treść najważniejsza, czynnik różnicujący, dane z rzeczywistego użytkowania CrUX), wpływ szybkości na konwersję (opuszczanie wolnych stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Google Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JavaScript/CSS, serwer/hosting, zewnętrzne skrypty).
+  - **Linki wewnętrzne (8)**: `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`, `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`, `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`, `/kontakt`
+  - **Linki zewnętrzne (6)**: Google Search Central (Core Web Vitals documentation), Google Developers Blog (Page Experience timing), Think with Google (mobile page speed benchmarks), PageSpeed Insights (tool), Google Search Console (tool), Web Vitals Chrome Extension
+  - **Tooltips (4)**: Core Web Vitals, LCP (Largest Contentful Paint), INP (Interaction to Next Paint), CLS (Cumulative Layout Shift)
+  - **FAQ**: 6 pytań (czy szybkość najważniejsza, jakie wyniki dobre, PageSpeed a pozycja, jak często Google aktualizuje, co to INP i dlaczego zastąpił FID, czy można poprawić bez wiedzy technicznej)
+  - **CTA**: Strony internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia Core Web Vitals prostym językiem z konkretnymi progami, źródłami i praktycznymi wskazówkami bez straszenia ani pouczania
+
 - **Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?**
 
   - **Slug**: `czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec`

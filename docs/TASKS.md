@@ -249,24 +249,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - W schema (logo/publisher/image) używane są absolutne URL-e do ikon.
     - `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[CONTENT-001] INSTRUCTIONS.md: skrócenie i uproszczenie dokumentu (bez usuwania zasad)** — DONE 2026-01-01
-
-  - Cel:
-    - Skrócić `docs/INSTRUCTIONS.md` usuwając duplikaty i upraszczając formułowania.
-    - Wszystkie zasady muszą zostać zachowane — żadna wytyczna nie może być usunięta.
-    - Dokument ma być łatwiejszy do przeczytania przez AI.
-  - Zakres:
-    - Scalenie zduplikowanych zasad (np. zakaz konkurencji w dwóch miejscach).
-    - Uproszczenie wielokrotnych przykładów do tabel lub list.
-    - Usunięcie powtarzających się sformułowań.
-    - Zachowanie wszystkich merytorycznych wytycznych.
-  - Plik: `docs/INSTRUCTIONS.md`
-  - Kryteria akceptacji:
-    - Dokument jest krótszy o min. 10%.
-    - Żadna zasada nie została usunięta — tylko uproszczona lub scalona.
-    - Struktura jest bardziej przejrzysta.
-  - Weryfikacja: nie jest wymagana (CONTENT-only).
-
 - ❌ **[PERF-001] Assets: odchudzić największe obrazy w `public/assets/**` (bez zmiany wyglądu)\*\*
 
   - Pliki (największe):
@@ -620,272 +602,492 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
 ---
 
-## Pomysły na artykuły (60 szczegółowych tematów)
+## Pomysły na artykuły
 
-**Charakterystyka:** Tematy pozwalające na głębokie zagłębienie się w jeden wąski aspekt. Formaty: mity, błędy, porównania, konkretne pytania. Zgodne z tonem mentorskim, bez DIY.
+### SEO i widoczność w wyszukiwarkach
 
-### SEO i Widoczność (15 tematów)
+- ❌ **[IDEA-061] Artykuł: Dlaczego strona zniknęła z wyników wyszukiwania i jak to zbadać?**
 
-1. ❌ **Czym jest indeksowanie i dlaczego Google może nie widzieć mojej strony?**
+  - Kategorie: `SEO`, `Widoczność`
+  - Slug: `dlaczego-strona-zniknela-z-wynikow-wyszukiwania`
+  - Cel: Wyjaśnienie przyczyn spadku widoczności (aktualizacje algorytmu, problemy techniczne, kary) i jak zdiagnozować problem w Google Search Console.
+  - Powiązane usługi: `/uslugi/marketing/audyt-seo`, `/uslugi/marketing/pozycjonowanie-stron`
+  - Typ artykułu: Edukacyjny z elementami diagnostycznymi
 
-   - Kategoria: SEO, Widoczność
-   - Uzasadnienie: Fundamentalny temat, wyjaśnia mechanizm crawlera i indeksacji krok po kroku.
+- ❌ **[IDEA-062] Artykuł: Czym są dane strukturalne i dlaczego pomagają w wyświetlaniu strony w Google?**
 
-2. ❌ **5 mitów o pozycjonowaniu, w które wciąż wierzą właściciele firm**
+  - Kategorie: `SEO`, `Strony`
+  - Slug: `czym-sa-dane-strukturalne-i-jak-pomagaja-w-google`
+  - Cel: Wyjaśnienie Schema.org, typów danych (FAQ, Product, LocalBusiness), jak wpływają na wyniki wyszukiwania (rich snippets).
+  - Powiązane usługi: `/uslugi/marketing/optymalizacja-seo`, `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO
-   - Uzasadnienie: Format "mity" przyciąga uwagę, obala błędne przekonania o SEO.
+- ❌ **[IDEA-063] Artykuł: Co to jest indeksowanie strony i dlaczego Google może nie widzieć wszystkich podstron?**
 
-3. ❌ **Pozycjonowanie lokalne vs ogólnopolskie: czym się różnią i które wybrać?**
+  - Kategorie: `SEO`, `Widoczność`
+  - Slug: `co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`
+  - Cel: Wyjaśnienie procesu indeksowania, crawl budget, przyczyn problemów z indeksacją.
+  - Powiązane usługi: `/uslugi/marketing/audyt-seo`, `/uslugi/marketing/optymalizacja-seo`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO, Widoczność
-   - Uzasadnienie: Porównanie pomaga podjąć decyzję, wyjaśnia różnice w strategii.
+- ❌ **[IDEA-065] Artykuł: Czym jest pozycjonowanie lokalne i dlaczego ma znaczenie dla firm usługowych?**
 
-4. ❌ **Co to jest crawl budget i czy mała firma powinna się tym przejmować?**
+  - Kategorie: `SEO`, `Widoczność`, `Marketing`
+  - Slug: `czym-jest-pozycjonowanie-lokalne-i-dlaczego-ma-znaczenie`
+  - Cel: Wyjaśnienie local SEO, roli Google Maps, czynników rankingowych dla firm lokalnych.
+  - Powiązane usługi: `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO
-   - Uzasadnienie: Wyjaśnia techniczny termin w kontekście realnych potrzeb małych firm.
+- ❌ **[IDEA-066] Artykuł: Jak Google ocenia jakość treści na stronie i co to oznacza dla właściciela firmy?**
 
-5. ❌ **Dlaczego fraza kluczowa nie wystarczy, żeby być wysoko w Google?**
+  - Kategorie: `SEO`, `Treści`
+  - Slug: `jak-google-ocenia-jakosc-tresci-na-stronie`
+  - Cel: Wyjaśnienie E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) i Helpful Content bez żargonu.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/marketing/pozycjonowanie-stron`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO, Treści
-   - Uzasadnienie: Tłumaczy, że SEO to więcej niż słowa kluczowe — intencja, jakość, linki.
+- ❌ **[IDEA-067] Artykuł: Dlaczego stare treści na stronie mogą szkodzić widoczności w Google?**
 
-6. ❌ **Jak Google ocenia jakość treści? E-E-A-T wyjaśnione prostym językiem**
+  - Kategorie: `SEO`, `Treści`
+  - Slug: `dlaczego-stare-tresci-moga-szkodzic-widocznosci-w-google`
+  - Cel: Wyjaśnienie content decay, znaczenia aktualizacji treści, sygnałów świeżości.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/blogi-internetowe`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO, Treści
-   - Uzasadnienie: Kluczowy koncept Google wyjaśniony bez żargonu.
+- ❌ **[IDEA-068] Artykuł: Czym jest kanibalizacja słów kluczowych i jak jej unikać?**
 
-7. ❌ **Czym jest kanibalizacja słów kluczowych i jak ją rozpoznać?**
+  - Kategorie: `SEO`, `Treści`
+  - Slug: `czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`
+  - Cel: Wyjaśnienie problemu konkurowania własnych stron o te same frazy, jak to diagnozować i rozwiązywać.
+  - Powiązane usługi: `/uslugi/marketing/audyt-seo`, `/uslugi/tworzenie-tresci`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO
-   - Uzasadnienie: Konkretny problem techniczny z praktycznymi przykładami.
+- ❌ **[IDEA-069] Artykuł: Co to są przekierowania 301 i kiedy są potrzebne na stronie?**
 
-8. ❌ **Google Search Console: 5 raportów, które powinieneś sprawdzać co miesiąc**
+  - Kategorie: `SEO`, `Strony`
+  - Slug: `co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`
+  - Cel: Wyjaśnienie przekierowań, kiedy je stosować (zmiana adresu, migracja), jak wpływają na SEO.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO, Widoczność
-   - Uzasadnienie: Praktyczny przewodnik po najważniejszych danych GSC.
+- ❌ **[IDEA-070] Artykuł: Dlaczego duplikaty treści mogą obniżać pozycję strony w Google?**
 
-9. ❌ **Czym jest featured snippet i jak zwiększyć szanse na jego zdobycie?**
+  - Kategorie: `SEO`, `Treści`
+  - Slug: `dlaczego-duplikaty-tresci-moga-obnizac-pozycje-w-google`
+  - Cel: Wyjaśnienie duplicate content, canonical URL, jak Google radzi sobie z duplikatami.
+  - Powiązane usługi: `/uslugi/marketing/audyt-seo`, `/uslugi/tworzenie-tresci`
+  - Typ artykułu: Edukacyjny
 
-   - Kategoria: SEO, Widoczność
-   - Uzasadnienie: Wyjaśnia mechanizm "pozycji zero" i strategie jej zdobycia.
+### Strony internetowe i UX
 
-10. ❌ **Dlaczego nowa strona potrzebuje więcej czasu na pozycjonowanie niż stara?**
+- ❌ **[IDEA-071] Artykuł: Co powinna zawierać strona główna firmy, żeby przyciągać klientów?**
 
-    - Kategoria: SEO
-    - Uzasadnienie: Wyjaśnia pojęcie autorytetu domeny i sandbox effect.
+  - Kategorie: `Strony`, `UX`, `Marketing`
+  - Slug: `co-powinna-zawierac-strona-glowna-firmy`
+  - Cel: Wyjaśnienie kluczowych elementów (propozycja wartości, nawigacja, CTA, dowód społeczny) bez instrukcji DIY.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-11. ❌ **Robots.txt vs meta robots: jaka jest różnica i kiedy używać którego?**
+- ❌ **[IDEA-072] Artykuł: Dlaczego formularz kontaktowy nie działa i co może być przyczyną?**
 
-    - Kategoria: SEO
-    - Uzasadnienie: Dwa mechanizmy kontroli indeksacji — jasne rozróżnienie.
+  - Kategorie: `Strony`, `UX`
+  - Slug: `dlaczego-formularz-kontaktowy-nie-dziala`
+  - Cel: Typowe problemy z formularzami (spam filtry, walidacja, UX), jak je diagnozować.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny z diagnostyką
 
-12. ❌ **Co to jest anchor text i dlaczego ma znaczenie dla linkowania?**
+- ❌ **[IDEA-073] Artykuł: Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?**
 
-    - Kategoria: SEO
-    - Uzasadnienie: Szczegółowe wyjaśnienie jednego elementu linkowania.
+  - Kategorie: `Strony`, `UX`
+  - Slug: `czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac`
+  - Cel: Wyjaśnienie błędów 404, jak dobra strona 404 pomaga użytkownikom i SEO.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-13. ❌ **Jak długo utrzymują się efekty pozycjonowania po zakończeniu współpracy?**
+- ❌ **[IDEA-074] Artykuł: Jak nawigacja na stronie wpływa na sprzedaż i zapytania?**
 
-    - Kategoria: SEO
-    - Uzasadnienie: Częste pytanie klientów, uczciwa odpowiedź buduje zaufanie.
+  - Kategorie: `UX`, `Strony`, `Sklepy`
+  - Slug: `jak-nawigacja-na-stronie-wplywa-na-sprzedaz`
+  - Cel: Znaczenie intuicyjnej nawigacji, typowe błędy, jak dobra nawigacja zwiększa konwersję.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-14. ❌ **Czym jest sitemap.xml i dlaczego każda strona firmowa go potrzebuje?**
+- ❌ **[IDEA-075] Artykuł: Dlaczego strona internetowa powinna mieć jasną hierarchię informacji?**
 
-    - Kategoria: SEO
-    - Uzasadnienie: Prosty temat techniczny z konkretną wartością.
+  - Kategorie: `UX`, `Strony`, `Treści`
+  - Slug: `dlaczego-strona-powinna-miec-jasna-hierarchie-informacji`
+  - Cel: Wyjaśnienie hierarchii wizualnej, nagłówków, skanowania treści przez użytkowników.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/tworzenie-tresci`
+  - Typ artykułu: Edukacyjny
 
-15. ❌ **Nofollow, sponsored, ugc: czym są atrybuty linków i kiedy ich używać?**
-    - Kategoria: SEO
-    - Uzasadnienie: Wyjaśnia rodzaje linków i ich wpływ na SEO.
+- ❌ **[IDEA-076] Artykuł: Co to jest wezwanie do działania i dlaczego każda strona go potrzebuje?**
 
-### Strony i UX (12 tematów)
+  - Kategorie: `UX`, `Marketing`, `Strony`
+  - Slug: `co-to-jest-wezwanie-do-dzialania-i-dlaczego-kazda-strona-go-potrzebuje`
+  - Cel: Wyjaśnienie CTA (Call to Action) prostym językiem, typy, umiejscowienie, błędy.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-16. ❌ **Czym jest above the fold i dlaczego pierwsze 600 pikseli decyduje o konwersji?**
+- ❌ **[IDEA-077] Artykuł: Dlaczego zdjęcia stockowe mogą obniżać zaufanie do firmy?**
 
-    - Kategoria: UX, Strony
-    - Uzasadnienie: Konkretny element UX z wymiernym wpływem na wyniki.
+  - Kategorie: `Grafika`, `UX`, `Branding`
+  - Slug: `dlaczego-zdjecia-stockowe-moga-obnizac-zaufanie-do-firmy`
+  - Cel: Wpływ autentycznych zdjęć vs stock na postrzeganie marki, kiedy stock jest OK.
+  - Powiązane usługi: `/uslugi/projekty-graficzne`, `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-17. ❌ **Hamburger menu vs rozwinięta nawigacja: co lepiej konwertuje na mobile?**
+- ❌ **[IDEA-078] Artykuł: Jak długo powinna ładować się strona internetowa?**
 
-    - Kategoria: UX, Strony
-    - Uzasadnienie: Porównanie dwóch podejść z danymi i kontekstem.
+  - Kategorie: `Strony`, `UX`, `SEO`
+  - Slug: `jak-dlugo-powinna-ladowac-sie-strona-internetowa`
+  - Cel: Benchmarki, wpływ na użytkowników i konwersję, co wpływa na szybkość.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`
+  - Typ artykułu: Edukacyjny
 
-18. ❌ **7 błędów w formularzach kontaktowych, które zmniejszają liczbę zapytań**
+- ❌ **[IDEA-079] Artykuł: Czym jest strona docelowa i kiedy warto ją mieć?**
 
-    - Kategoria: UX, Strony
-    - Uzasadnienie: Format "błędy" z konkretnymi przykładami i rozwiązaniami.
+  - Kategorie: `Strony`, `Marketing`
+  - Slug: `czym-jest-strona-docelowa-i-kiedy-warto-ja-miec`
+  - Cel: Wyjaśnienie landing page, różnica od strony głównej, kiedy i dla kogo.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/marketing`
+  - Typ artykułu: Edukacyjny
 
-19. ❌ **Sticky header: kiedy pomaga, a kiedy przeszkadza użytkownikom?**
+- ❌ **[IDEA-080] Artykuł: Dlaczego strona firmowa powinna mieć sekcję z opiniami klientów?**
 
-    - Kategoria: UX
-    - Uzasadnienie: Konkretny element interfejsu z analizą za i przeciw.
+  - Kategorie: `UX`, `Psychologia`, `Strony`
+  - Slug: `dlaczego-strona-firmowa-powinna-miec-opinie-klientow`
+  - Cel: Znaczenie opinii dla zaufania i konwersji, jak je prezentować, błędy.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-21. ❌ **Czym jest CTA i dlaczego jeden przycisk działa lepiej niż pięć?**
+- ❌ **[IDEA-081] Artykuł: Co to jest stopka strony i jakie informacje powinna zawierać?**
 
-    - Kategoria: UX, Strony
-    - Uzasadnienie: Wyjaśnia call-to-action i paradoks wyboru.
+  - Kategorie: `Strony`, `UX`
+  - Slug: `co-to-jest-stopka-strony-i-co-powinna-zawierac`
+  - Cel: Elementy stopki (dane kontaktowe, linki, informacje prawne), dobre praktyki.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-22. ❌ **Jak projektować strony dla osób starszych? Dostępność bez kompromisów**
+### Sklepy internetowe i e-commerce
 
-    - Kategoria: UX, Dostępność
-    - Uzasadnienie: Konkretna grupa docelowa z jasnymi wytycznymi.
+- ❌ **[IDEA-082] Artykuł: Dlaczego klienci porzucają koszyki i jak temu zapobiegać?**
 
-23. ❌ **Czym jest dark pattern i dlaczego warto go unikać na swojej stronie?**
+  - Kategorie: `Sklepy`, `Psychologia`, `UX`
+  - Slug: `dlaczego-klienci-porzucaja-koszyki-i-jak-temu-zapobiegac`
+  - Cel: Przyczyny porzucania koszyków (koszty dostawy, skomplikowany proces, brak zaufania), jak je diagnozować.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: UX, Psychologia
-    - Uzasadnienie: Edukuje o nieetycznych praktykach i ich konsekwencjach.
+- ❌ **[IDEA-083] Artykuł: Co powinna zawierać strona produktu, żeby zwiększać sprzedaż?**
 
-24. ❌ **404 vs soft 404: jaka jest różnica i która opcja jest lepsza?**
+  - Kategorie: `Sklepy`, `UX`, `Treści`
+  - Slug: `co-powinna-zawierac-strona-produktu`
+  - Cel: Elementy strony produktu (zdjęcia, opis, cena, dostępność, opinie), hierarchia informacji.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: UX, SEO
-    - Uzasadnienie: Techniczny temat z praktycznymi implikacjami.
+- ❌ **[IDEA-084] Artykuł: Dlaczego opisy produktów mają znaczenie dla sprzedaży i SEO?**
 
-26. ❌ **Jak zaprojektować stronę FAQ, która faktycznie odpowiada na pytania klientów?**
+  - Kategorie: `Sklepy`, `Treści`, `SEO`
+  - Slug: `dlaczego-opisy-produktow-maja-znaczenie-dla-sprzedazy-i-seo`
+  - Cel: Rola opisów w decyzji zakupowej i pozycjonowaniu, typowe błędy.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`, `/uslugi/tworzenie-tresci`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: UX, Treści
-    - Uzasadnienie: Głęboka analiza jednej sekcji strony.
+- ❌ **[IDEA-085] Artykuł: Jakie metody płatności powinien oferować sklep internetowy?**
 
-27. ❌ **Czym jest loading skeleton i dlaczego poprawia wrażenie szybkości strony?**
-    - Kategoria: UX, Strony
-    - Uzasadnienie: Konkretna technika UX z psychologicznym uzasadnieniem.
+  - Kategorie: `Sklepy`
+  - Slug: `jakie-metody-platnosci-powinien-oferowac-sklep-internetowy`
+  - Cel: Przegląd metod płatności w Polsce, znaczenie dla konwersji, zaufanie klientów.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-### Grafika i Branding (10 tematów)
+- ❌ **[IDEA-086] Artykuł: Czym jest cross-selling i up-selling w sklepie internetowym?**
 
-28. ❌ **RGB vs CMYK: dlaczego logo na ekranie wygląda inaczej niż na wizytówce?**
+  - Kategorie: `Sklepy`, `Psychologia`, `Marketing`
+  - Slug: `czym-jest-cross-selling-i-up-selling-w-sklepie-internetowym`
+  - Cel: Wyjaśnienie technik zwiększania wartości zamówienia, kiedy działają, kiedy irytują.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Grafika, Druk
-    - Uzasadnienie: Wyjaśnia różnicę przestrzeni kolorów w praktyce.
+- ❌ **[IDEA-087] Artykuł: Dlaczego zdjęcia produktów mają kluczowe znaczenie w e-commerce?**
 
-29. ❌ **Czym jest księga znaku i czy mała firma jej potrzebuje?**
+  - Kategorie: `Sklepy`, `Grafika`
+  - Slug: `dlaczego-zdjecia-produktow-maja-kluczowe-znaczenie-w-e-commerce`
+  - Cel: Wpływ jakości zdjęć na sprzedaż, co powinny pokazywać, błędy.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`, `/uslugi/projekty-graficzne`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Branding, Grafika
-    - Uzasadnienie: Demistyfikuje brand book, pokazuje minimalny zakres.
+- ❌ **[IDEA-088] Artykuł: Co to jest regulamin sklepu internetowego i co musi zawierać?**
 
-30. ❌ **5 błędów przy wyborze kolorów firmowych i jak ich uniknąć**
+  - Kategorie: `Sklepy`, `Bezpieczeństwo`
+  - Slug: `co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
+  - Cel: Wymagania prawne, kluczowe elementy regulaminu, konsekwencje braku.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Grafika, Branding
-    - Uzasadnienie: Format "błędy" z konkretnymi przykładami.
+- ❌ **[IDEA-089] Artykuł: Dlaczego wyszukiwarka w sklepie internetowym jest ważna?**
 
-32. ❌ **Czym jest paleta kolorów i ile kolorów powinna mieć marka?**
+  - Kategorie: `Sklepy`, `UX`
+  - Slug: `dlaczego-wyszukiwarka-w-sklepie-internetowym-jest-wazna`
+  - Cel: Znaczenie wyszukiwarki dla konwersji, cechy dobrej wyszukiwarki, błędy.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Grafika, Branding
-    - Uzasadnienie: Podstawy teorii koloru dla firm.
+- ❌ **[IDEA-090] Artykuł: Jak kategorie produktów wpływają na sprzedaż w sklepie internetowym?**
 
-33. ❌ **Logo w formacie PNG vs SVG vs EPS: kiedy używać którego?**
+  - Kategorie: `Sklepy`, `UX`, `SEO`
+  - Slug: `jak-kategorie-produktow-wplywaja-na-sprzedaz`
+  - Cel: Znaczenie struktury kategorii dla użytkowników i SEO, dobre praktyki.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Grafika
-    - Uzasadnienie: Praktyczny przewodnik po formatach plików graficznych.
+- ❌ **[IDEA-091] Artykuł: Czym jest polityka zwrotów i dlaczego wpływa na decyzje zakupowe?**
 
-34. ❌ **Dlaczego logo ze stocka to zły pomysł? Ryzyka gotowych rozwiązań**
+  - Kategorie: `Sklepy`, `Psychologia`
+  - Slug: `czym-jest-polityka-zwrotow-i-dlaczego-wplywa-na-decyzje-zakupowe`
+  - Cel: Znaczenie jasnej polityki zwrotów dla zaufania i konwersji, wymagania prawne.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Branding, Grafika
-    - Uzasadnienie: Wyjaśnia wartość unikalnego logo vs szablony.
+### Grafika i branding
 
-35. ❌ **Czym jest visual hierarchy i jak prowadzić wzrok użytkownika na stronie?**
+- ❌ **[IDEA-092] Artykuł: Czym jest logo i dlaczego firma go potrzebuje?**
 
-    - Kategoria: Grafika, UX
-    - Uzasadnienie: Podstawowa zasada projektowa z praktycznymi przykładami.
+  - Kategorie: `Grafika`, `Branding`
+  - Slug: `czym-jest-logo-i-dlaczego-firma-go-potrzebuje`
+  - Cel: Rola logo w budowaniu marki, co sprawia że logo jest dobre, typowe błędy.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-logo`
+  - Typ artykułu: Edukacyjny
 
-36. ❌ **Retina i HiDPI: dlaczego grafiki wyglądają rozmyto na nowych ekranach?**
+- ❌ **[IDEA-093] Artykuł: Dlaczego spójność wizualna marki ma znaczenie dla klientów?**
 
-    - Kategoria: Grafika, Strony
-    - Uzasadnienie: Techniczny problem z jasnym rozwiązaniem.
+  - Kategorie: `Branding`, `Grafika`
+  - Slug: `dlaczego-spojnosc-wizualna-marki-ma-znaczenie`
+  - Cel: Wpływ spójności na rozpoznawalność i zaufanie, co obejmuje, jak utrzymać.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+  - Typ artykułu: Edukacyjny
 
-37. ❌ **Aspect ratio: dlaczego proporcje zdjęć mają znaczenie przy projektowaniu?**
-    - Kategoria: Grafika, Zdjęcia
-    - Uzasadnienie: Fundamentalna zasada kompozycji w kontekście stron.
+- ❌ **[IDEA-094] Artykuł: Co to jest księga znaku i czy każda firma jej potrzebuje?**
 
-### Bezpieczeństwo (8 tematów)
+  - Kategorie: `Branding`, `Grafika`
+  - Slug: `co-to-jest-ksiega-znaku-i-czy-kazda-firma-jej-potrzebuje`
+  - Cel: Wyjaśnienie brand book/brandbook, co zawiera, kiedy jest potrzebny.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+  - Typ artykułu: Edukacyjny
 
-38. ❌ **HTTP vs HTTPS: dlaczego kłódka w przeglądarce ma znaczenie dla firmy?**
+- ❌ **[IDEA-095] Artykuł: Jakie formaty plików graficznych stosować w różnych sytuacjach?**
 
-    - Kategoria: Bezpieczeństwo, Strony
-    - Uzasadnienie: Podstawa bezpieczeństwa wyjaśniona prostym językiem.
+  - Kategorie: `Grafika`, `Strony`
+  - Slug: `jakie-formaty-plikow-graficznych-stosowac`
+  - Cel: Wyjaśnienie JPG, PNG, SVG, WebP, PDF - kiedy który, dla kogo.
+  - Powiązane usługi: `/uslugi/projekty-graficzne`, `/narzedzia/jpg-png-na-webp-bez-limitu`
+  - Typ artykułu: Edukacyjny / porównawczy
 
-39. ❌ **Czym jest atak DDoS i jak może wpłynąć na dostępność strony firmowej?**
+- ❌ **[IDEA-096] Artykuł: Dlaczego wizytówka firmowa wciąż ma znaczenie w erze cyfrowej?**
 
-    - Kategoria: Bezpieczeństwo
-    - Uzasadnienie: Wyjaśnia zagrożenie bez technicznego żargonu.
+  - Kategorie: `Grafika`, `Branding`, `Druk`
+  - Slug: `dlaczego-wizytowka-firmowa-wciaz-ma-znaczenie`
+  - Cel: Rola wizytówki w kontaktach biznesowych, co powinna zawierać, typowe błędy.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-wizytowki`
+  - Typ artykułu: Edukacyjny
 
-41. ❌ **Czym jest phishing i jak rozpoznać fałszywe e-maile dotyczące domeny?**
+- ❌ **[IDEA-097] Artykuł: Jak kolory marki wpływają na postrzeganie firmy przez klientów?**
 
-    - Kategoria: Bezpieczeństwo
-    - Uzasadnienie: Praktyczny temat ochrony przed oszustwami.
+  - Kategorie: `Branding`, `Psychologia`, `Grafika`
+  - Slug: `jak-kolory-marki-wplywaja-na-postrzeganie-firmy`
+  - Cel: Psychologia kolorów w kontekście brandingu, wybór kolorów dla różnych branż.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, `/narzedzia/generator-palet-kolorow-online`
+  - Typ artykułu: Edukacyjny
 
-42. ❌ **Two-factor authentication: dlaczego samo hasło już nie wystarczy?**
+- ❌ **[IDEA-098] Artykuł: Co to jest typografia i dlaczego ma znaczenie dla Twojej marki?**
 
-    - Kategoria: Bezpieczeństwo
-    - Uzasadnienie: Podstawa bezpieczeństwa kont z prostym wyjaśnieniem.
+  - Kategorie: `Grafika`, `Branding`
+  - Slug: `co-to-jest-typografia-i-dlaczego-ma-znaczenie-dla-marki`
+  - Cel: Podstawy typografii w kontekście brandingu, wybór czcionek, czytelność.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+  - Typ artykułu: Edukacyjny
 
-43. ❌ **Czym jest WAF (Web Application Firewall) i kiedy warto go mieć?**
+- ❌ **[IDEA-099] Artykuł: Dlaczego ulotka reklamowa wciąż może być skuteczna?**
 
-    - Kategoria: Bezpieczeństwo, Strony
-    - Uzasadnienie: Wyjaśnia warstwę ochrony dla właścicieli stron.
+  - Kategorie: `Grafika`, `Marketing`, `Druk`
+  - Slug: `dlaczego-ulotka-reklamowa-wciaz-moze-byc-skuteczna`
+  - Cel: Kiedy ulotki działają, co powinny zawierać, jak łączyć z digital.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-ulotki`
+  - Typ artykułu: Edukacyjny
 
-44. ❌ **RODO a strona internetowa: jakie dane zbierasz i co musisz o tym powiedzieć?**
+- ❌ **[IDEA-100] Artykuł: Co to jest infografika i kiedy warto ją wykorzystać?**
 
-    - Kategoria: Bezpieczeństwo, Strony
-    - Uzasadnienie: Praktyczne aspekty RODO dla właścicieli stron.
+  - Kategorie: `Grafika`, `Marketing`, `Treści`
+  - Slug: `co-to-jest-infografika-i-kiedy-warto-ja-wykorzystac`
+  - Cel: Rola infografik w komunikacji, kiedy działają, dobre praktyki.
+  - Powiązane usługi: `/uslugi/projekty-graficzne`
+  - Typ artykułu: Edukacyjny
 
-45. ❌ **Czym jest malware na stronie i jak sprawdzić, czy strona nie jest zainfekowana?**
-    - Kategoria: Bezpieczeństwo
-    - Uzasadnienie: Praktyczny temat diagnostyczny.
+### Marketing i treści
 
-### Sklepy i E-commerce (8 tematów)
+- ❌ **[IDEA-101] Artykuł: Czym jest strategia treści i dlaczego firma jej potrzebuje?**
 
-46. ❌ **Karta produktu vs strona kategorii: która jest ważniejsza dla SEO sklepu?**
+  - Kategorie: `Marketing`, `Treści`
+  - Slug: `czym-jest-strategia-tresci-i-dlaczego-firma-jej-potrzebuje`
+  - Cel: Wyjaśnienie content strategy, korzyści, elementy składowe.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/blogi-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Sklepy, SEO
-    - Uzasadnienie: Porównanie strategii optymalizacji w e-commerce.
+- ❌ **[IDEA-102] Artykuł: Dlaczego treści na stronie powinny odpowiadać na pytania klientów?**
 
-47. ❌ **Czym jest porzucony koszyk i dlaczego 70% klientów nie kończy zakupów?**
+  - Kategorie: `Treści`, `SEO`, `UX`
+  - Slug: `dlaczego-tresci-na-stronie-powinny-odpowiadac-na-pytania-klientow`
+  - Cel: Znaczenie intent-based content, jak identyfikować pytania, korzyści SEO.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/marketing/pozycjonowanie-stron`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Sklepy, Psychologia
-    - Uzasadnienie: Kluczowy problem e-commerce z danymi.
+- ❌ **[IDEA-103] Artykuł: Co to jest newsletter i czy warto go prowadzić?**
 
-48. ❌ **Trust badges w sklepie: które odznaczenia faktycznie zwiększają zaufanie?**
+  - Kategorie: `Marketing`, `Treści`
+  - Slug: `co-to-jest-newsletter-i-czy-warto-go-prowadzic`
+  - Cel: Rola newslettera w marketingu, korzyści, na co zwrócić uwagę.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Sklepy, Psychologia
-    - Uzasadnienie: Konkretne elementy budujące wiarygodność.
+- ❌ **[IDEA-104] Artykuł: Dlaczego opisy usług na stronie są kluczowe dla pozyskiwania klientów?**
 
-50. ❌ **Czym jest cross-selling i up-selling? Różnice i przykłady zastosowania**
+  - Kategorie: `Treści`, `Strony`, `Marketing`
+  - Slug: `dlaczego-opisy-uslug-na-stronie-sa-kluczowe`
+  - Cel: Rola opisów usług w konwersji, co powinny zawierać, typowe błędy.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Sklepy
-    - Uzasadnienie: Dwa terminy często mylone, jasne rozróżnienie.
+- ❌ **[IDEA-105] Artykuł: Czym jest ton komunikacji marki i jak go określić?**
 
-51. ❌ **Filtry i sortowanie w sklepie: jak ułatwić znalezienie produktu?**
+  - Kategorie: `Branding`, `Treści`, `Marketing`
+  - Slug: `czym-jest-ton-komunikacji-marki-i-jak-go-okreslic`
+  - Cel: Wyjaśnienie tone of voice, znaczenie dla spójności, przykłady z branż.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Sklepy, UX
-    - Uzasadnienie: Konkretny element UX sklepu z wpływem na konwersję.
+- ❌ **[IDEA-106] Artykuł: Dlaczego strona O nas ma znaczenie dla zaufania klientów?**
 
-52. ❌ **Opisy produktów: co pisać, żeby klient nie musiał szukać informacji?**
+  - Kategorie: `Treści`, `Strony`, `Branding`
+  - Slug: `dlaczego-strona-o-nas-ma-znaczenie-dla-zaufania`
+  - Cel: Rola strony O nas w budowaniu zaufania, co powinna zawierać, błędy.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/tworzenie-tresci`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Sklepy, Treści
-    - Uzasadnienie: Praktyczne wskazówki copywriterskie dla e-commerce.
+- ❌ **[IDEA-107] Artykuł: Co to są studia przypadków i dlaczego warto je mieć na stronie?**
 
-53. ❌ **Guest checkout vs rejestracja: która opcja zwiększa sprzedaż?**
-    - Kategoria: Sklepy, UX
-    - Uzasadnienie: Porównanie z danymi o konwersji.
+  - Kategorie: `Marketing`, `Treści`, `Strony`
+  - Slug: `co-to-sa-studia-przypadkow-i-dlaczego-warto-je-miec`
+  - Cel: Rola case studies w budowaniu autorytetu, co powinny zawierać.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/tworzenie-tresci`
+  - Typ artykułu: Edukacyjny
 
-### Psychologia i Marketing (7 tematów)
+- ❌ **[IDEA-108] Artykuł: Jak często aktualizować treści na stronie firmowej?**
 
-56. ❌ **FOMO w marketingu: kiedy ograniczenie czasu działa, a kiedy odstrasza?**
+  - Kategorie: `Treści`, `SEO`
+  - Slug: `jak-czesto-aktualizowac-tresci-na-stronie-firmowej`
+  - Cel: Znaczenie świeżości treści, co aktualizować, jak planować.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/blogi-internetowe`
+  - Typ artykułu: Edukacyjny
 
-    - Kategoria: Psychologia, Marketing
-    - Uzasadnienie: Analiza techniki z etycznymi granicami.
+### Psychologia sprzedaży
 
-58. ❌ **Jak działa reguła wzajemności w marketingu? Dawanie, które buduje relacje**
+- ❌ **[IDEA-109] Artykuł: Czym jest pilność w marketingu i kiedy działa uczciwie?**
 
-    - Kategoria: Psychologia, Marketing
-    - Uzasadnienie: Zasada Cialdiniego wyjaśniona w kontekście biznesowym.
+  - Kategorie: `Psychologia`, `Marketing`, `Sklepy`
+  - Slug: `czym-jest-pilnosc-w-marketingu-i-kiedy-dziala-uczciwie`
+  - Cel: Wyjaśnienie urgency/scarcity, etyczne vs manipulacyjne użycie, przepisy.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
 
-59. ❌ **Storytelling w biznesie: dlaczego historie sprzedają lepiej niż fakty?**
+- ❌ **[IDEA-110] Artykuł: Dlaczego pierwsze wrażenie na stronie decyduje o pozostaniu użytkownika?**
 
-    - Kategoria: Marketing, Treści
-    - Uzasadnienie: Wyjaśnia mechanizm narracji w komunikacji marki.
+  - Kategorie: `Psychologia`, `UX`, `Strony`
+  - Slug: `dlaczego-pierwsze-wrazenie-na-stronie-decyduje-o-pozostaniu-uzytkownika`
+  - Cel: Psychologia pierwszego kontaktu, co wpływa, badania o czasie oceny.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
 
-60. ❌ **Czym jest brand awareness i jak mierzyć rozpoznawalność marki?**
-    - Kategoria: Marketing, Branding
-    - Uzasadnienie: Podstawowy termin marketingowy z metodyką pomiaru.
+- ❌ **[IDEA-111] Artykuł: Czym jest efekt halo i jak wpływa na postrzeganie marki?**
+
+  - Kategorie: `Psychologia`, `Branding`
+  - Slug: `czym-jest-efekt-halo-i-jak-wplywa-na-postrzeganie-marki`
+  - Cel: Wyjaśnienie efektu halo, jak jakość jednego elementu wpływa na ocenę całości.
+  - Powiązane usługi: `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-112] Artykuł: Dlaczego ludzie ufają markom, które wyglądają profesjonalnie?**
+
+  - Kategorie: `Psychologia`, `Branding`, `UX`
+  - Slug: `dlaczego-ludzie-ufaja-markom-ktore-wygladaja-profesjonalnie`
+  - Cel: Związek między wyglądem a zaufaniem, badania, praktyczne implikacje.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/projekty-graficzne`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-113] Artykuł: Czym jest reguła wzajemności i jak działa w marketingu?**
+
+  - Kategorie: `Psychologia`, `Marketing`
+  - Slug: `czym-jest-regula-wzajemnosci-i-jak-dziala-w-marketingu`
+  - Cel: Wyjaśnienie reciprocity, przykłady etycznego użycia (content, narzędzia).
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/narzedzia`
+  - Typ artykułu: Edukacyjny
+
+### Bezpieczeństwo i dostępność
+
+- ❌ **[IDEA-114] Artykuł: Co to jest RODO i jakie obowiązki nakłada na właścicieli stron?**
+
+  - Kategorie: `Bezpieczeństwo`, `Strony`
+  - Slug: `co-to-jest-rodo-i-jakie-obowiazki-naklada-na-wlascicieli-stron`
+  - Cel: Podstawy RODO dla właścicieli stron, obowiązki, typowe błędy.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-115] Artykuł: Dlaczego polityka prywatności jest wymagana na każdej stronie?**
+
+  - Kategorie: `Bezpieczeństwo`, `Strony`
+  - Slug: `dlaczego-polityka-prywatnosci-jest-wymagana-na-kazdej-stronie`
+  - Cel: Wymagania prawne, co musi zawierać, konsekwencje braku.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-116] Artykuł: Co to jest dostępność cyfrowa i dlaczego ma znaczenie dla firm?**
+
+  - Kategorie: `Dostępność`, `UX`, `Strony`
+  - Slug: `co-to-jest-dostepnosc-cyfrowa-i-dlaczego-ma-znaczenie`
+  - Cel: Wyjaśnienie WCAG prostym językiem, kto korzysta, korzyści biznesowe.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/narzedzia/tester-kontrastu-kolorow-wcag`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-117] Artykuł: Dlaczego zgoda na pliki cookie musi być zgodna z przepisami?**
+
+  - Kategorie: `Bezpieczeństwo`, `Strony`
+  - Slug: `dlaczego-zgoda-na-pliki-cookie-musi-byc-zgodna-z-przepisami`
+  - Cel: Wymagania prawne dotyczące cookies, co jest zgodne, typowe błędy.
+  - Powiązane usługi: `/uslugi/strony-internetowe`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-118] Artykuł: Jak zabezpieczyć stronę przed atakami i włamaniami?**
+
+  - Kategorie: `Bezpieczeństwo`, `Strony`
+  - Slug: `jak-zabezpieczyc-strone-przed-atakami-i-wlamaniami`
+  - Cel: Podstawy bezpieczeństwa stron (aktualizacje, SSL, hasła, backup), na co zwrócić uwagę.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-119] Artykuł: Co to jest kopia zapasowa strony i dlaczego jest niezbędna?**
+
+  - Kategorie: `Bezpieczeństwo`, `Strony`
+  - Slug: `co-to-jest-kopia-zapasowa-strony-i-dlaczego-jest-niezbedna`
+  - Cel: Znaczenie backupów, rodzaje, częstotliwość, co może pójść nie tak bez kopii.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/strony-internetowe/optymalizacja-strony-wordpress`
+  - Typ artykułu: Edukacyjny
+
+- ❌ **[IDEA-120] Artykuł: Dlaczego European Accessibility Act zmieni wymagania dla stron firmowych?**
+
+  - Kategorie: `Dostępność`, `Strony`, `Bezpieczeństwo`
+  - Slug: `dlaczego-european-accessibility-act-zmieni-wymagania-dla-stron`
+  - Cel: Wyjaśnienie EAA 2025, kogo dotyczy, jakie zmiany wprowadza, jak się przygotować.
+  - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`
+  - Typ artykułu: Edukacyjny
+
+---
