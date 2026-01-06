@@ -147,7 +147,7 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="Obrazy i favicony"
           description="Narzędzia do przygotowania zdjęć, grafik i ikon pod strony WWW oraz social media."
-          grid="two"
+          grid="three"
           items={[
             {
               icon: <RiImageEditLine className="h-8 w-8" />,
@@ -209,7 +209,7 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="Meta i SEO"
           description="Narzędzia, które pomagają lepiej dopasować meta tagi i wygląd strony w wynikach wyszukiwania."
-          grid="two"
+          grid="three"
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
@@ -251,7 +251,7 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="E-mail i komunikacja"
           description="Narzędzia, które pomagają uporządkować komunikację mailową i wizerunek marki."
-          grid="two"
+          grid="three"
           items={[
             {
               icon: <RiMailLine className="h-8 w-8" />,
@@ -277,7 +277,7 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="Druk i materiały"
           description="Narzędzia do przygotowania materiałów drukowanych i oznaczeń dla Twojej marki."
-          grid="two"
+          grid="three"
           items={[
             {
               icon: <RiQrCodeLine className="h-8 w-8" />,
@@ -303,7 +303,7 @@ export default function ToolsIndexPage() {
         <SectionSteps
           title="Kolory i dostępność"
           description="Narzędzia do pracy z kolorami, kontrastem i dostępnością WCAG."
-          grid="two"
+          grid="three"
           items={[
             {
               icon: <RiContrast2Line className="h-8 w-8" />,
