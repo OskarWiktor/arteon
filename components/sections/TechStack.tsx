@@ -123,8 +123,8 @@ export default function TechStack() {
       >
         <motion.div ref={trackRef} style={{ x, willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
           {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
-            <IconText key={`${label}-${index}`} icon={<Icon className="h-auto w-6" aria-hidden="true" />} gap="2" className="shrink-0">
-              <span className="text-2xl">{label}</span>
+            <IconText key={`${label}-${index}`} icon={<Icon className="h-auto w-6 text-slate-800" aria-hidden="true" />} gap="2" className="shrink-0">
+              <span className="text-2xl text-slate-800">{label}</span>
             </IconText>
           ))}
         </motion.div>
