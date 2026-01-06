@@ -93,6 +93,7 @@ export function CarouselCard(props: CarouselCardProps) {
         ) : null}
         <div className="p-4">
           <h3 className="h6">{a.title}</h3>
+          {a.excerpt ? <p className="text-light mt-2 line-clamp-3 !text-sm">{a.excerpt}</p> : null}
           <div className="mt-3 flex flex-wrap items-center gap-2">
             {a.readingTime ? (
               <span className="text-light text-sm">
