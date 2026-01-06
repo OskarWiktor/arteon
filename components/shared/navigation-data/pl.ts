@@ -263,7 +263,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Licznik słów i znaków',
         description: 'Sprawdź długość tekstu i oceń, czy jest odpowiednia dla strony głównej, opisu usługi, artykułu czy opisu produktu.',
         image: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
-        icon: RiFileTextLine,
+        icon: RiArticleLine,
       },
     ],
   },

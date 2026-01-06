@@ -4,7 +4,7 @@ import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine } from 'react-icons/ri';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiArticleLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine, RiQrCodeLine } from 'react-icons/ri';
 
 export const metadata = {
   title: 'Darmowe narzędzia online dla stron i firm online',
@@ -108,6 +108,26 @@ const toolsJsonLd = {
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
+    {
+      '@type': 'WebApplication',
+      position: 9,
+      name: 'Licznik słów i znaków online — sprawdź długość tekstu',
+      description:
+        'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
+      url: 'https://www.arteonagency.pl/narzedzia/licznik-slow-i-znakow',
+      applicationCategory: 'UtilityApplication',
+      operatingSystem: 'Any',
+    },
+    {
+      '@type': 'WebApplication',
+      position: 10,
+      name: 'Generator kodu QR online — darmowy bez limitu',
+      description:
+        'Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG. Bez logowania, bez limitu użycia.',
+      url: 'https://www.arteonagency.pl/narzedzia/generator-kodu-qr',
+      applicationCategory: 'UtilityApplication',
+      operatingSystem: 'Any',
+    },
   ],
 };
 
@@ -207,6 +227,22 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiArticleLine className="h-8 w-8" />,
+              title: 'Licznik słów i znaków',
+              topImageAlt: 'Licznik słów i znaków Arteon',
+              topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Sprawdź długość tekstu i oceń, czy jest odpowiednia dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu. Narzędzie policzy słowa, znaki, akapity i czas czytania.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/licznik-slow-i-znakow">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -227,6 +263,32 @@ export default function ToolsIndexPage() {
                   <p>Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych.</p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/darmowy-generator-stopki-mailowej">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Druk i materiały"
+          description="Narzędzia do przygotowania materiałów drukowanych i oznaczeń dla Twojej marki."
+          grid="two"
+          items={[
+            {
+              icon: <RiQrCodeLine className="h-8 w-8" />,
+              title: 'Generator kodu QR',
+              topImageAlt: 'Generator kodu QR Arteon',
+              topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG i dodaj do materiałów drukowanych.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/generator-kodu-qr">
                       Otwórz narzędzie
                     </Button>
                   </div>

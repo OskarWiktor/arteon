@@ -2,6 +2,20 @@
 
 ## 2026-01-06
 
+- ✅ **[CONTENT-002] /narzedzia: dodanie brakujących narzędzi (licznik słów + generator QR) + zmiana ikony**
+
+  - **Pliki**:
+    - `components/shared/navigation-data/pl.ts` (ikona wordCounter)
+    - `app/(pl)/narzedzia/page.tsx` (sekcje + schema JSON-LD)
+  - **Zmiany**:
+    - Zmieniono ikonę wordCounter z `RiFileTextLine` na `RiArticleLine` (uniknięto duplikatu z metaCounter)
+    - Dodano "Licznik słów i znaków" do sekcji "Meta i SEO" (po "Licznik meta title i description")
+    - Dodano nową sekcję "Druk i materiały" z "Generatorem kodu QR"
+    - Zaktualizowano schema JSON-LD - dodano pozycje 9 (licznik słów) i 10 (generator QR)
+    - Dodano importy RiArticleLine i RiQrCodeLine
+  - **Rezultat**: Wszystkie 10 narzędzi z TOOLS_SECTIONS_PL są teraz widoczne na stronie /narzedzia i w karuzeli
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
 - ✅ **[TOOLS-030] Licznik słów: aktualizacja zakresów długości zgodnie z realnymi wytycznymi SEO 2025/2026**
 
   - **Pliki**:
