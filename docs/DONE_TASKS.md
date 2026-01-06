@@ -3330,7 +3330,7 @@
   - **Sprawdzono**:
     - Puste pliki (0B / whitespace-only) poza `node_modules` / `.next` / `.git` (brak).
     - Puste katalogi poza `.git` (brak).
-    - Użycie potencjalnie „martwych” wariantów: `Gap variant="line"`, `ToolHelper variant="error"`, `CopyButton variant="dark"` (używane).
+    - Użycie potencjalnie „martwych” wariantów: `Gap variant="line"`, `ToolHelper variant="error"`, `CopyButton variant="accent"` (używane).
     - Re-export `data/pl/calculator/index.ts` (używany przez `components/sections/Calculator.tsx`).
   - **Dodano zadania**: brak.
 

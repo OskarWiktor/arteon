@@ -34,7 +34,7 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
           {language ? <span className="inline-block rounded bg-white/10 px-2 py-0.5 text-xs text-white/70">{language}</span> : null}
           {filename ? <span className="truncate text-xs text-white/70">{filename}</span> : null}
         </div>
-        <CopyButton text={code} label={t.copy} copiedLabel={t.copied} variant="dark" className="gap-2 rounded-md px-2 py-1 text-xs" />
+        <CopyButton text={code} label={t.copy} copiedLabel={t.copied} variant="accent" className="gap-2 rounded-md px-2 py-1 text-xs" />
       </div>
 
       <pre

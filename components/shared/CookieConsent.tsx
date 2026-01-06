@@ -152,7 +152,7 @@ export default function CookieConsent() {
               <Button size="small" onClick={() => setPanel(true)}>
                 {t.settings}
               </Button>
-              <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="dark">
+              <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="accent">
                 {t.accept}
               </Button>
             </div>
@@ -205,7 +205,7 @@ export default function CookieConsent() {
                     })
                   }
                   size="small"
-                  variant="dark"
+                  variant="accent"
                 >
                   {t.save}
                 </Button>

@@ -21,7 +21,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
           <Button onClick={reset} variant="accent" arrow>
             Spróbuj ponownie
           </Button>
-          <Button link="/" variant="dark">
+          <Button link="/" variant="accent">
             Wróć na stronę główną
           </Button>
           <Button link="/kontakt" arrow>

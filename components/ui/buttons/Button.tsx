@@ -6,7 +6,7 @@ import { RiArrowRightLine } from 'react-icons/ri';
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: 'normal' | 'accent' | 'accent-reverse' | 'glass' | 'dark' | 'outline';
+  variant?: 'normal' | 'accent' | 'accent-reverse' | 'outline';
   size?: 'small' | 'medium';
   onClick?: () => void;
   disabled?: boolean;
@@ -44,16 +44,6 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
       break;
     case 'accent-reverse':
       variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-white text-slate-800 ' + 'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800';
-      break;
-    case 'dark':
-      variantClass =
-        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-mid bg-mid hover:border-slate-800 hover:bg-slate-800 text-[color:var(--background)] ' +
-        'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-mid';
-      break;
-    case 'glass':
-      variantClass =
-        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-gray-100 hover:bg-slate-800/60 backdrop-blur-sm bg-white/60 ' +
-        'focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800';
       break;
     case 'outline':
       variantClass =

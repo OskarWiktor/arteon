@@ -150,5 +150,5 @@ function getItems() {
 export default function ServicesSteps() {
   const t = ui.pl;
   const items = getItems();
-  return <SectionSteps items={items} title={t.title} subtitle={t.subtitle} description={t.description} btnOne={t.btnOne} btnOneVariant="dark" btnOneLink={t.urls.contact} />;
+  return <SectionSteps items={items} title={t.title} subtitle={t.subtitle} description={t.description} btnOne={t.btnOne} btnOnevariant="accent" btnOneLink={t.urls.contact} />;
 }

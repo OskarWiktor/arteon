@@ -86,7 +86,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
               )}
             >
               {plan.badgeLabel && (
-                <Badge variant="dark" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
+                <Badge variant="accent" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
                   {plan.badgeLabel}
                 </Badge>
               )}
