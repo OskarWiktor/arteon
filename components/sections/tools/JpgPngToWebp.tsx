@@ -277,7 +277,7 @@ export default function JpgPngToWebp() {
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
                   <div
-                    className="h-full rounded-full bg-slate-600 transition-all"
+                    className="h-full rounded-full bg-slate-800 transition-all"
                     style={{ width: `${visualProgress}%` }}
                     role="progressbar"
                     aria-valuemin={0}

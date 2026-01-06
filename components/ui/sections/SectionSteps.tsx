@@ -1,5 +1,8 @@
-import type { ElementType, JSX, ReactNode } from 'react';
+'use client';
+
+import { useState, type ElementType, type JSX, type ReactNode } from 'react';
 import Image from 'next/image';
+import { RiArrowDownSLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';
 import ButtonGroup from '../buttons/ButtonGroup';
 
@@ -18,6 +21,8 @@ interface SectionStepItem {
   title: ReactNode;
   subtitle?: string;
   description: ReactNode;
+  highlight?: boolean;
+  expandableContent?: ReactNode;
 }
 
 type HeadingLevel = 'h2' | 'h3';
@@ -38,6 +43,7 @@ interface SectionStepsProps {
   disclaimer?: ReactNode;
   headingLevel?: HeadingLevel;
   showIndex?: boolean;
+  variant?: 'default' | 'contact';
 }
 
 export default function SectionSteps({
@@ -56,12 +62,14 @@ export default function SectionSteps({
   disclaimer,
   headingLevel = 'h2',
   showIndex = false,
+  variant = 'default',
 }: SectionStepsProps) {
   const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
+  const isDark = overlay === 'black';
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
-  const toneTextClass = overlay === 'black' ? 'text-white' : 'text-dark';
-  const toneMutedClass = overlay === 'black' ? 'text-white' : 'text-mid';
+  const toneTextClass = isDark ? 'text-white' : 'text-dark';
+  const toneMutedClass = isDark ? 'text-white/80' : 'text-mid';
   const bgPadY = hasBg ? 'py-16 md:py-24' : '';
 
   const count = items?.length ?? 0;
@@ -117,58 +125,23 @@ export default function SectionSteps({
         {subtitle && <span className={`text-base tracking-wider uppercase ${hasBg ? 'text-white' : 'text-light'}`}>{subtitle}</span>}
 
         {title && (
-          <SectionHeadingTag id="steps-title" className={`${toneTextClass} h3 reveal-animation`}>
+          <SectionHeadingTag id="steps-title" className={`${toneTextClass} h4 reveal-animation`}>
             {title}
           </SectionHeadingTag>
         )}
 
         {description && <p className={`reveal-animation pt-3 pb-2 ${toneMutedClass}`}>{description}</p>}
 
-        <ol className={`mt-4 grid grid-cols-1 gap-4 md:mt-6 md:auto-rows-fr lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
-          {items.map(({ icon, imageSrc, imageAlt, topImageSrc, topImageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle }, index) => {
-            const hasVisual = showIndex || icon || imageSrc;
-
-            return (
-              <li key={index} className="flex flex-col items-stretch">
-                <article className="surface-card-lift flex h-full w-full flex-col border border-gray-200 p-4 md:p-6">
-                  {topImageSrc && (
-                    <div className="mb-4 md:mb-6">
-                      <div className="relative h-52 w-full overflow-hidden rounded-xl md:h-68">
-                        <Image
-                          src={topImageSrc}
-                          alt={topImageAlt ?? ''}
-                          fill
-                          className="pointer-events-none object-cover select-none"
-                          sizes="(min-width:1024px) 50vw, (min-width:768px) 50vw, 100vw"
-                          aria-hidden={topImageAlt ? undefined : true}
-                        />
-                      </div>
-                    </div>
-                  )}
-
-                  {hasVisual && (
-                    <div className="mb-4 flex justify-start">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-slate-700 shadow-sm ring-1 ring-black/5">
-                        {showIndex ? (
-                          <span className="text-base font-semibold">{index + 1}</span>
-                        ) : imageSrc ? (
-                          <Image src={imageSrc} alt={imageAlt ?? ''} width={28} height={28} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
-                        ) : (
-                          icon
-                        )}
-                      </div>
-                    </div>
-                  )}
-
-                  <ArticleHeadingTag className="h4 text-dark mb-1">{itemTitle}</ArticleHeadingTag>
-                  {itemSubtitle && <span className="text-light text-base">{itemSubtitle}</span>}
-
-                  <div className="z-10 mt-2 flex flex-1 flex-col">{itemDesc}</div>
-                </article>
-              </li>
-            );
-          })}
-        </ol>
+        <ExpandableStepsList
+          items={items}
+          gridColsSm={gridColsSm}
+          gridColsMd={gridColsMd}
+          gridColsLg={gridColsLg}
+          showIndex={showIndex}
+          variant={variant}
+          isHighlighted={(item) => item.highlight === true}
+          ArticleHeadingTag={ArticleHeadingTag}
+        />
 
         <ButtonGroup
           btnOne={btnOne}
@@ -188,5 +161,104 @@ export default function SectionSteps({
         )}
       </Tag>
     </section>
+  );
+}
+
+interface ExpandableStepsListProps {
+  items: SectionStepItem[];
+  gridColsSm: string;
+  gridColsMd: string;
+  gridColsLg: string;
+  showIndex: boolean;
+  variant: 'default' | 'contact';
+  isHighlighted: (item: SectionStepItem) => boolean;
+  ArticleHeadingTag: keyof JSX.IntrinsicElements;
+}
+
+function ExpandableStepsList({
+  items,
+  gridColsSm,
+  gridColsMd,
+  gridColsLg,
+  showIndex,
+  variant,
+  isHighlighted,
+  ArticleHeadingTag,
+}: ExpandableStepsListProps) {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  const toggleExpand = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  return (
+    <ol className={`mt-4 grid grid-cols-1 gap-4 md:mt-6 md:auto-rows-fr lg:mt-8 ${gridColsSm} ${gridColsMd} ${gridColsLg}`}>
+      {items.map((item, index) => {
+        const { icon, imageSrc, imageAlt, topImageSrc, topImageAlt, title: itemTitle, description: itemDesc, subtitle: itemSubtitle, expandableContent } = item;
+        const hasVisual = showIndex || icon || imageSrc;
+        const highlighted = isHighlighted(item);
+        const isExpanded = expandedIndex === index;
+        const hasExpandable = Boolean(expandableContent);
+
+        return (
+          <li key={index} className="flex flex-col items-stretch">
+            <article className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'rounded-2xl bg-slate-800 text-white shadow-lg' : 'surface-card-lift border border-gray-200'}`}>
+              {topImageSrc && (
+                <div className="mb-4 md:mb-6">
+                  <div className="relative h-52 w-full overflow-hidden rounded-xl md:h-68">
+                    <Image
+                      src={topImageSrc}
+                      alt={topImageAlt ?? ''}
+                      fill
+                      className="pointer-events-none object-cover select-none"
+                      sizes="(min-width:1024px) 50vw, (min-width:768px) 50vw, 100vw"
+                      aria-hidden={topImageAlt ? undefined : true}
+                    />
+                  </div>
+                </div>
+              )}
+
+              {hasVisual && (
+                <div className={`mb-4 flex ${variant === 'contact' ? 'justify-center' : 'justify-start'}`}>
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${highlighted ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-800'}`}>
+                    {showIndex ? (
+                      <span className="text-base font-semibold">{index + 1}</span>
+                    ) : imageSrc ? (
+                      <Image src={imageSrc} alt={imageAlt ?? ''} width={28} height={28} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
+                    ) : (
+                      icon
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {hasExpandable ? (
+                <button
+                  type="button"
+                  onClick={() => toggleExpand(index)}
+                  className={`flex w-full items-center justify-between text-left ${highlighted ? 'text-white' : 'text-dark'}`}
+                  aria-expanded={isExpanded}
+                >
+                  <ArticleHeadingTag className="h5 mb-1">{itemTitle}</ArticleHeadingTag>
+                  <RiArrowDownSLine className={`h-5 w-5 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+                </button>
+              ) : (
+                <ArticleHeadingTag className={`h5 mb-1 ${highlighted ? 'text-white' : 'text-dark'}`}>{itemTitle}</ArticleHeadingTag>
+              )}
+
+              {itemSubtitle && <span className={`text-base ${highlighted ? 'text-white/80' : 'text-light'}`}>{itemSubtitle}</span>}
+
+              <div className={`z-10 mt-2 flex flex-1 flex-col ${highlighted ? 'text-white/80' : ''}`}>{itemDesc}</div>
+
+              {hasExpandable && isExpanded && (
+                <div className={`mt-4 border-t pt-4 ${highlighted ? 'border-white/20' : 'border-gray-200'}`}>
+                  {expandableContent}
+                </div>
+              )}
+            </article>
+          </li>
+        );
+      })}
+    </ol>
   );
 }

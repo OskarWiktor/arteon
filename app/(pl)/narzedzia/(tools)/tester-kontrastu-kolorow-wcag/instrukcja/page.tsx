@@ -148,8 +148,7 @@ export default function InstrukcjaPage() {
             kontrast sprawia, że tekst staje się dla nich nieczytelny.
           </p>
           <p className="text-mid mt-3">
-            Ale nie tylko osoby z wadami wzroku korzystają z dobrego kontrastu. Wyobraź sobie przeglądanie strony na telefonie w pełnym słońcu lub na starszym, wyblakłym monitorze — wysoki kontrast
-            pomaga w każdej z tych sytuacji.
+            Ale nie tylko osoby z wadami wzroku korzystają z dobrego kontrastu. Przeglądanie strony na telefonie w pełnym słońcu lub na starszym, wyblakłym monitorze wymaga wysokiego kontrastu — w każdej z tych sytuacji dobra czytelność ma kluczowe znaczenie.
           </p>
           <p className="text-mid mt-3">
             <strong>WCAG</strong> (Web Content Accessibility Guidelines) to międzynarodowe wytyczne dostępności stron internetowych, które określają minimalne wartości kontrastu. Spełnienie tych

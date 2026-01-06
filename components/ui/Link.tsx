@@ -14,7 +14,7 @@ interface AppLinkProps {
 }
 
 export default function AppLink({ href, children, className = '', variant = 'default', display, 'aria-current': ariaCurrent, 'aria-label': ariaLabel, target, rel }: AppLinkProps) {
-  const baseClasses = 'hover-underline rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+  const baseClasses = 'hover-underline rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   const variantClasses = {
     default: 'text-base text-dark',

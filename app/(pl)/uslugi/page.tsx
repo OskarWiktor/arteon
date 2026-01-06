@@ -19,7 +19,7 @@ const SERVICES = [
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
   { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
-  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-social-media' },
+  { name: 'Szablony postów do mediów społecznościowych', path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe' },
   { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
   { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
   { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
@@ -171,7 +171,7 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Teczka ofertowa podnosi prestiż firmy i buduje zaufanie. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał firmowy.
+                    Teczka ofertowa podnosi prestiż firmy i zwiększa wiarygodność w oczach klientów. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał firmowy.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
@@ -286,7 +286,7 @@ export default function OfferPage() {
             {
               topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
               topImageAlt: 'Szablony postów na media społecznościowe dla gabinetu psychologicznego MSC Psychotherapy',
-              title: 'Szablony postów na social media',
+              title: 'Szablony postów do mediów społecznościowych',
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
@@ -294,7 +294,7 @@ export default function OfferPage() {
                     eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
+                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe">
                       Przejdź do oferty
                     </Button>
                   </div>
@@ -496,7 +496,7 @@ export default function OfferPage() {
             {
               topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
               topImageAlt: 'Treści do mediów społecznościowych dla gabinetu psychologicznego MSC Psychotherapy',
-              title: 'Social media: treści',
+              title: 'Media społecznościowe: treści',
               description: (
                 <div className="flex h-full flex-col">
                   <ul className="mb-3 list-disc space-y-1 pl-4">

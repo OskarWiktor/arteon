@@ -14,9 +14,9 @@ export function CarouselNavButtons({ isScrollable, onPrev, onNext, prevLabel, ne
   if (!isScrollable) return null;
 
   const navBtn =
-    'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-slate-600 bg-slate-600 p-1 md:p-2 text-white shadow-xl backdrop-blur-sm ' +
+    'group absolute bottom-[-31px] z-10 cursor-pointer rounded-full border border-slate-800 bg-slate-800 p-1 md:p-2 text-white shadow-xl backdrop-blur-sm ' +
     'transition hover:scale-105 hover:bg-white hover:text-mid focus:outline-none ' +
-    'focus-visible:ring-2 focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
+    'focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white md:block';
 
   return (
     <>

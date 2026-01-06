@@ -635,6 +635,74 @@ Struktura repo (w uproszczeniu):
 - **Odpowiedzialności**:
   - **[layout]** grid itemów.
   - **[background]** opcjonalne tło i overlay.
+  - **[variant contact]** variant `contact` z okrągłymi ikonami i wycentrowanym tekstem.
+- **Props** (kluczowe):
+  - **`variant`**: `'default' | 'contact'` — styl sekcji (domyślnie `'default'`).
+
+#### `SectionProcess` (`components/ui/sections/SectionProcess.tsx`)
+
+- **Co robi**: Kompaktowy komponent do prezentacji procesu w układzie poziomym.
+- **Odpowiedzialności**:
+  - **[layout]** układ poziomy na desktop, pionowy na mobile.
+  - **[arrows]** strzałki między krokami na desktop.
+  - **[steps]** każdy krok z numerem, tytułem i ikoną w ciemnym okrągłym kontenerze.
+- **Props**:
+  - **`title`**: `string` — opcjonalny nagłówek sekcji (klasa h6).
+  - **`steps`**: `{ number, title, icon }[]` — tablica kroków.
+
+#### `SectionMetrics` (`components/ui/sections/SectionMetrics.tsx`)
+
+- **Co robi**: Komponent do prezentacji metryk/statystyk z paskami postępu.
+- **Odpowiedzialności**:
+  - **[layout]** grid 4 kolumny na desktop, 2 na tablet, 1 na mobile.
+  - **[progress bars]** paski postępu z kolorami i wartościami procentowymi.
+  - **[inverse]** opcja odwróconego obliczania dla metryk gdzie niższa wartość jest lepsza.
+- **Props**:
+  - **`title`**: `string` — opcjonalny nagłówek sekcji.
+  - **`metrics`**: `{ label, value, unit, max, color, inverse? }[]` — tablica metryk.
+
+#### `SectionTabs` (`components/ui/sections/SectionTabs.tsx`)
+
+- **Co robi**: Komponent zakładek z ikonami i przełączaną treścią.
+- **Odpowiedzialności**:
+  - **[tabs]** interaktywne zakładki z płynnym przełączaniem.
+  - **[responsive]** ikony tylko na mobile, pełne nazwy na desktop.
+- **Props**:
+  - **`title`**: `string` — opcjonalny nagłówek sekcji.
+  - **`tabs`**: `{ title, icon, content }[]` — tablica zakładek.
+
+#### `SectionBento` (`components/ui/sections/SectionBento.tsx`)
+
+- **Co robi**: Dynamiczny układ kart o różnych rozmiarach (bento grid).
+- **Odpowiedzialności**:
+  - **[layout]** grid z kartami small/medium/large.
+  - **[background]** opcjonalne zdjęcie w tle z overlay.
+- **Props**:
+  - **`title`**: `string` — opcjonalny nagłówek sekcji.
+  - **`items`**: `{ title, description, icon, size, backgroundImage? }[]` — tablica elementów.
+
+#### `SectionInfoBanner` (`components/ui/sections/SectionInfoBanner.tsx`)
+
+- **Co robi**: Baner informacyjny na pełną szerokość.
+- **Odpowiedzialności**:
+  - **[layout]** ciemne tło, biały tekst, przycisk po prawej.
+  - **[responsive]** układ pionowy na mobile.
+- **Props**:
+  - **`icon`**: `ReactNode` — ikona po lewej.
+  - **`text`**: `string` — treść baneru.
+  - **`highlight`**: `string` — wyróżniony tekst (np. "Promocja:").
+  - **`btnLabel`**: `string` — etykieta przycisku.
+  - **`btnLink`**: `string` — link przycisku.
+
+#### `SectionFeatureList` (`components/ui/sections/SectionFeatureList.tsx`)
+
+- **Co robi**: Lista cech z checkmarkami w zielonych kółkach.
+- **Odpowiedzialności**:
+  - **[layout]** 2 kolumny na desktop, 1 na mobile.
+  - **[checkmarks]** zielone kółka z ikonami check.
+- **Props**:
+  - **`title`**: `string` — opcjonalny nagłówek sekcji.
+  - **`features`**: `string[]` — tablica cech.
 
 ### Tools UI (`components/ui/tools/*`)
 

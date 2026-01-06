@@ -30,8 +30,8 @@ export default function ButtonGroup({
   if (!btnOne && !btnTwo) return null;
 
   const spacingClasses = {
-    default: 'mt-4 md:mt-6 lg:mt-8',
-    loose: 'mt-6 md:mt-8 lg:mt-10',
+    default: 'mt-2 md:mt-4 lg:mt-6',
+    loose: 'mt-4 md:mt-6 lg:mt-8',
   };
 
   const alignClasses = {

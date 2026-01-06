@@ -209,7 +209,7 @@ export default function Page() {
             <li>Proces powtarza się, aż wynikowy plik będzie mniejszy lub jakość spadnie poniżej bezpiecznego minimum.</li>
           </ol>
           <p className="text-mid mt-3">
-            Dzięki temu nie musisz ręcznie eksperymentować z ustawieniami. Jeśli masz obraz, który jest już mocno skompresowany (np. JPG o jakości 60%), narzędzie automatycznie dostosuje parametry,
+            Narzędzie automatycznie dobiera optymalne ustawienia. Jeśli masz obraz, który jest już mocno skompresowany (np. JPG o jakości 60%), parametry zostaną automatycznie dostosowane,
             aby nadal osiągnąć oszczędność rozmiaru.
           </p>
           <p className="text-mid mt-3">Przy każdym pliku zobaczysz informację &quot;Użyta jakość WebP&quot; — to faktyczna jakość zastosowana po ewentualnym dostosowaniu przez Smart Quality.</p>

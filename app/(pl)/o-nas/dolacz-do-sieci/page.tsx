@@ -64,22 +64,22 @@ export default function JoinNetworkPage() {
           items={[
             {
               title: 'Wideo i montaż',
-              icon: <RiShareForwardLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiShareForwardLine className="h-6 w-6 text-slate-800" />,
               description: <p>Montaż rolek i krótkich formatów wideo do mediów społecznościowych.</p>,
             },
             {
               title: 'Animacje',
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-800" />,
               description: <p>Tworzenie animacji do krótkich filmów do mediów społecznościowych.</p>,
             },
             {
               title: 'Grafika 3D i wizualizacje',
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-800" />,
               description: <p>Tworzenie grafik 3D, w tym głównie wizualizacji produktów.</p>,
             },
             {
               title: 'Aplikacje mobilne',
-              icon: <RiAppsLine className="h-6 w-6 text-slate-700" />,
+              icon: <RiAppsLine className="h-6 w-6 text-slate-800" />,
               description: <p>Tworzenie dedykowanych rozwiązań biznesowych dla systemów Android i iOS (React Native).</p>,
             },
           ]}

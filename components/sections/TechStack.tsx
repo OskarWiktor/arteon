@@ -105,13 +105,13 @@ export default function TechStack() {
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
-      <h2 id="techstack-heading" className="reveal-animation">
+      <h2 id="techstack-heading" className="reveal-animation h4">
         {t.heading}
       </h2>
 
       <div
         ref={containerRef}
-        className="mt-6 overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+        className="mt-6 overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         aria-label={t.scrollableListAriaLabel}
         tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}

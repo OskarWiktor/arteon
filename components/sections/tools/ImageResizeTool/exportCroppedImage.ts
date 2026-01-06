@@ -36,33 +36,32 @@ type ExportCroppedImageOptions = {
 export async function exportCroppedImage(options: ExportCroppedImageOptions): Promise<{ size: number }> {
   const img = await loadImage(options.imageUrl, { errorMessage: options.imageLoadErrorMessage });
 
+  const W = options.dims.width;
+  const H = options.dims.height;
+
   const canvas = document.createElement('canvas');
-  canvas.width = options.dims.width;
-  canvas.height = options.dims.height;
+  canvas.width = W;
+  canvas.height = H;
 
   const ctx = canvas.getContext('2d');
   if (!ctx) {
     throw new Error(options.canvasNotSupportedErrorMessage);
   }
 
-  const targetAspect = options.dims.width / options.dims.height;
+  const targetAspect = W / H;
   const crop = getCropRect(options.originalWidth, options.originalHeight, targetAspect, options.cropX, options.cropY, options.cropZoom);
 
-  const W = options.dims.width;
-  const H = options.dims.height;
-
   ctx.save();
-  ctx.translate(W / 2, H / 2);
 
   if (options.shape === 'circle') {
     const r = Math.min(W, H) / 2;
     ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    ctx.arc(W / 2, H / 2, r, 0, Math.PI * 2);
     ctx.closePath();
     ctx.clip();
   }
 
-  ctx.drawImage(img, crop.x, crop.y, crop.cropW, crop.cropH, -W / 2, -H / 2, W, H);
+  ctx.drawImage(img, crop.x, crop.y, crop.cropW, crop.cropH, 0, 0, W, H);
   ctx.restore();
 
   const mime = getMime(options.outputFormat);

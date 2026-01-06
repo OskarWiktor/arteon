@@ -1,16 +1,16 @@
 'use client';
 
-import { RiFacebookCircleFill, RiLinkedinBoxFill, RiMailLine } from 'react-icons/ri';
+import { RiFacebookFill, RiLinkedinBoxFill, RiMailLine, RiTwitterXFill } from 'react-icons/ri';
 import CopyButton from '../ui/buttons/CopyButton';
 
 const ui = {
   pl: {
     defaultLabel: 'Ten materiał może komuś pomóc - udostępnij go dalej.',
     ariaLabel: 'Udostępnij ten materiał',
-    shareFacebook: 'Udostępnij na Facebooku',
-    shareLinkedIn: 'Udostępnij na LinkedIn',
-    shareTwitter: 'Udostępnij na X (Twitter)',
-    shareEmail: 'Wyślij link e-mailem',
+    shareFacebook: 'Facebook',
+    shareLinkedIn: 'LinkedIn',
+    shareTwitter: 'X',
+    shareEmail: 'E-mail',
     copyLink: 'Kopiuj link',
     copied: 'Skopiowano',
     copyPrompt: 'Skopiuj adres strony (Ctrl+C, Enter):',
@@ -37,58 +37,53 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
 
   return (
     <section className={`surface-panel w-fit p-4 ${className}`} aria-label={t.ariaLabel}>
-      <div className="flex items-start gap-3">
-        <div className="flex-1">
-          <div className="flex flex-wrap items-center gap-2">
-            <ShareIconLink href={facebookHref} label={t.shareFacebook}>
-              <RiFacebookCircleFill className="h-5 w-5" />
-              <span className="sr-only">{t.shareFacebook}</span>
-            </ShareIconLink>
+      <div className="flex flex-wrap items-center gap-2">
+        <a
+          href={facebookHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 rounded-xl bg-[#1877f2] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#1877f2] focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+          <RiFacebookFill className="h-5 w-5" />
+          {t.shareFacebook}
+        </a>
 
-            <ShareIconLink href={linkedinHref} label={t.shareLinkedIn}>
-              <RiLinkedinBoxFill className="h-5 w-5" />
-              <span className="sr-only">{t.shareLinkedIn}</span>
-            </ShareIconLink>
+        <a
+          href={twitterHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 rounded-xl bg-black px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+          <RiTwitterXFill className="h-5 w-5" />
+          {t.shareTwitter}
+        </a>
 
-            <ShareIconLink href={twitterHref} label={t.shareTwitter}>
-              <span className="text-xs font-semibold text-slate-700">X</span>
-              <span className="sr-only">{t.shareTwitter}</span>
-            </ShareIconLink>
+        <a
+          href={linkedinHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 rounded-xl bg-[#0a66c2] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#0a66c2] focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+          <RiLinkedinBoxFill className="h-5 w-5" />
+          {t.shareLinkedIn}
+        </a>
 
-            <ShareIconLink href={mailHref} label={t.shareEmail}>
-              <RiMailLine className="h-5 w-5" />
-              <span className="sr-only">{t.shareEmail}</span>
-            </ShareIconLink>
+        <a
+          href={mailHref}
+          className="flex items-center gap-2 rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-50 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+          <RiMailLine className="h-5 w-5" />
+          {t.shareEmail}
+        </a>
 
-            <CopyButton
-              text={url}
-              label={t.copyLink}
-              copiedLabel={t.copied}
-              onError={() => window.prompt(t.copyPrompt, url)}
-              className="text-mid gap-1.5 px-3 py-1.5 text-xs transition hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
-            />
-          </div>
-        </div>
+        <CopyButton
+          text={url}
+          label={t.copyLink}
+          copiedLabel={t.copied}
+          onError={() => window.prompt(t.copyPrompt, url)}
+          className="flex items-center gap-2 rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-50 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+        />
       </div>
     </section>
-  );
-}
-
-type ShareIconLinkProps = {
-  href: string;
-  label: string;
-  children: React.ReactNode;
-};
-
-function ShareIconLink({ href, children }: ShareIconLinkProps) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-slate-700 shadow-sm transition hover:-translate-y-[1px] hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
-    >
-      {children}
-    </a>
   );
 }

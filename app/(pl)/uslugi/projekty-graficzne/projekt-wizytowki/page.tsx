@@ -123,22 +123,22 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Czytelny układ i profesjonalny wygląd',
               description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Otrzymujesz pliki przygotowane do druku</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Dopasowujemy kolory, typografię i styl do swojej marki, aby zachować spójność wizerunku.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -295,7 +295,7 @@ export default function OfferDesignBusinessCardPage() {
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
-                      Zobacz szablony social media
+                      Zobacz szablony do mediów społecznościowych
                     </Button>
                   </div>
                 </div>

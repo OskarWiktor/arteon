@@ -124,7 +124,7 @@ export default function OfferSeoSubscription() {
             {
               title: 'Strategia treści',
               description: <>Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie treści, budując Twoją widoczność tam, gdzie szukają Cię klienci.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Poprawa kluczowych podstron (on-page)',
@@ -134,17 +134,17 @@ export default function OfferSeoSubscription() {
                   użytkowników.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
               description: <>Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły branżowe, katalogi), dzięki temu autorytet Twojej witryny rośnie</>,
-              icon: <RiLinksFill className="h-6 w-6 text-slate-500" />,
+              icon: <RiLinksFill className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Monitoring i raport co miesiąc',
               description: <>Sprawdzamy widoczność, wejścia z Google i zapytania z WWW. Dostajesz prosty raport i rekomendacje na kolejny miesiąc.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-500" />,
+              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />

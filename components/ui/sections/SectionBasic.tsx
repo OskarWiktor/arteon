@@ -32,7 +32,7 @@ export default function SectionBasic({ id, title, subtitle, description, imageSr
 
         <div className={`flex w-full lg:w-1/2 ${variant === 'left' ? 'lg:order-1' : ''}`}>
           <div className={`flex h-full flex-col justify-center py-6 md:py-8 lg:py-8 ${variant === 'right' ? 'md:pl-6' : 'md:pr-6'}`}>
-            <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h3" headingClassName="reveal-animation mb-2 lg:mb-4" descriptionClassName="reveal-animation" />
+            <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" headingClassName="reveal-animation h4 mb-2 lg:mb-4" descriptionClassName="reveal-animation" />
 
             {children && <div className="text-balance">{children}</div>}
 

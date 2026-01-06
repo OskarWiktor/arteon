@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-export type BadgeVariant = 'default' | 'selected' | 'success' | 'error' | 'neutral' | 'dark';
+export type BadgeVariant = 'default' | 'selected' | 'success' | 'error' | 'neutral' | 'dark' | 'warning' | 'info' | 'tech';
 export type BadgeSize = 'sm' | 'md' | 'lg';
 export type BadgeElement = 'span' | 'button' | 'label' | 'a';
 
@@ -44,18 +44,21 @@ export default function Badge({ children, text, variant, size, as: Component, cl
   const content = children ?? text;
 
   const sizeClasses: Record<BadgeSize, string> = {
-    sm: 'px-2 py-1 text-xs',
-    md: 'px-3 py-1 text-[11px]!',
-    lg: 'px-3 py-1 text-[14px]!',
+    sm: 'px-2 py-0.5 text-xs',
+    md: 'px-3 py-1 text-xs',
+    lg: 'px-4 py-1.5 text-sm',
   };
 
   const variantClasses: Record<BadgeVariant, string> = {
     default: 'border border-neutral-300 bg-white text-mid',
-    selected: 'border border-black bg-slate-600 text-white',
-    success: 'bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200',
-    error: 'bg-red-50 text-red-800 ring-1 ring-red-200',
-    neutral: 'border border-neutral-200 bg-neutral-100 text-mid',
+    selected: 'border border-black bg-slate-800 text-white',
+    success: 'bg-emerald-100 text-emerald-700',
+    error: 'bg-red-100 text-red-700',
+    neutral: 'bg-slate-100 text-slate-800',
     dark: 'bg-neutral-900 text-white',
+    warning: 'bg-amber-100 text-amber-700',
+    info: 'bg-blue-100 text-blue-700',
+    tech: 'rounded-lg! border border-slate-200 bg-white',
   };
 
   const baseClasses = 'inline-flex items-center rounded-full font-medium';

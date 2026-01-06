@@ -145,53 +145,53 @@ export default function OfferBlogPage() {
           items={[
             {
               title: 'Indywidualny projekt graficzny bloga online',
-              description: <>Wygląd, który od pierwszych sekund buduje zaufanie i zachęca do czytania</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              description: <>Wygląd, który od pierwszych sekund pokazuje profesjonalizm i zachęca do czytania</>,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dobór i obróbka grafik do wpisów',
               description: <>Pomagamy dobrać spójne grafiki i dopasowujemy je do bloga: kadry, proporcje, waga</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wsparcie prawne przy politykach i zgodach',
               description: <>Przeprowadzamy Cię przez wymagania (polityki, pliki cookie, zgody)</>,
-              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+              icon: <GoLaw className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Blog dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi bloga',
               description: <>Proste instrukcje: jak dodać wpis, zdjęcia i linki</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: <>Informujemy Cię regularnie o postępach prac nad Twoim blogiem</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Proste raporty wyników',
               description: <>Wdrażamy narzędzia analityczne pokazujące skąd jest ruch i które wpisy pracują najlepiej</>,
-              icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiBarChart2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: <>Po publikacji pomagamy w dalszym rozwoju bloga. Ewentualne błędy poprawiamy w ramach gwarancji</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -224,7 +224,7 @@ export default function OfferBlogPage() {
                   'Optymalizacja prędkości i zabezpieczenia',
                   'Wsparcie prawne - polityka prywatności, regulaminy',
                   'Prosty panel do samodzielnej edycji treści',
-                  'Darmowe szkolenie PDF z obsługi bloga',
+                  'Szkolenie PDF z obsługi bloga',
                 ],
                 btnOne: 'Zamów mały blog',
                 btnOneLink: '#kontakt',
@@ -241,7 +241,7 @@ export default function OfferBlogPage() {
                   'Przejrzysta struktura treści i nawigacji',
                   'Wsparcie prawne - polityka prywatności, regulaminy',
                   'Panel do edycji treści - WordPress lub Webflow',
-                  'Darmowe szkolenie PDF z obsługi bloga',
+                  'Szkolenie PDF z obsługi bloga',
                 ],
                 btnOne: 'Zamów blog średni',
                 btnOneLink: '#kontakt',
@@ -327,7 +327,7 @@ export default function OfferBlogPage() {
             },
             {
               question: 'Czy mogę liczyć na pomoc w strategii treści?',
-              answer: 'Tak, bezpłatnie pomagamy w budowie struktury bloga, tak, aby pojawił się wyżej w Google',
+              answer: 'Tak, pomagamy w budowie struktury bloga, tak, aby pojawił się wyżej w Google',
             },
           ]}
         />

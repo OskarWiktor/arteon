@@ -58,7 +58,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
   return (
     <>
       <HeroBanner
-        title="Szablony postów social media"
+        title="Szablony postów do mediów społecznościowych"
         description={
           <>
             Uporządkuj wygląd swoich profili i odzyskaj czas. Projektujemy edytowalne szablony do Instagrama, Facebooka, LinkedIna i TikToka - spójne z marką, gotowe do szybkiej edycji, pomagające w
@@ -128,24 +128,24 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Spójny system wizualny',
               description: <>Dopasowujemy kolory, typografię i styl do swojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Edytowalne pliki',
               description: (
                 <>Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy kolory zmienisz bez znajomości zaawansowanych programów.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'System pod różne typy postów',
               description: <>Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta, opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -234,7 +234,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
                 'Wszystko z pakietu Standard, a dodatkowo:',
                 'Dostosowanie szablonów do kilku profili lub języków',
                 'Rozszerzony zestaw widoków (np. LinkedIn, Pinterest, banery pod kampanie)',
-                'Mini-brandbook social media: zasady stosowania, przykłady dobrych i złych zastosowań',
+                'Mini-brandbook mediów społecznościowych: zasady stosowania, przykłady dobrych i złych zastosowań',
               ],
               btnOne: 'Porozmawiajmy o pakiecie Pro',
               btnOneLink: '#kontakt',
@@ -250,9 +250,9 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         <Gap variant="line" />
 
         <ContactForm
-          title="Zamów szablony postów social media"
+          title="Zamów szablony postów do mediów społecznościowych"
           description="Opisz, czym się zajmujesz, na jakich platformach publikujesz treści (Instagram, Facebook, LinkedIn, TikTok) i jakie szablony chciałbyś stworzyć. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
-          defaultSubject="Szablony postów social media"
+          defaultSubject="Szablony postów do mediów społecznościowych"
         />
 
         <Gap variant="line" />

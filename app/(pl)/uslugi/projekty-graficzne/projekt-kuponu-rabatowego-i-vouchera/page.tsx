@@ -125,27 +125,27 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Dopasujemy projekt do Twojej kolorystyki, logo i tonu komunikacji, dzięki czemu voucher będzie spójnym elementem Twojej marki.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wersje do druku i online',
               description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych, mailingu lub sklepu internetowego.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Czytelne pola i zasady wykorzystania',
               description: <>Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis czy regulamin tak, aby voucher był piękny i praktyczny.</>,
-              icon: <RiTicket2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiTicket2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Warianty na różne okazje',
               description: <>Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z zachowaniem jednego spójnego stylu.</>,
-              icon: <RiGiftLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiGiftLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />

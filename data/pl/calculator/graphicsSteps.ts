@@ -33,7 +33,7 @@ export const graphicsSteps: Step[] = [
           options: [
             { label: 'Logo', value: 'logo-online', price: 800, icon: 'FiAperture' },
             { label: 'Key visual marki (motywy graficzne)', value: 'key-visual', price: 1200, icon: 'FiGrid' },
-            { label: 'Szablony do social media (posty, stories, rolki)', value: 'social-templates', price: 500, icon: 'FiInstagram' },
+            { label: 'Szablony do mediów społecznościowych (posty, stories, rolki)', value: 'social-templates', price: 500, icon: 'FiInstagram' },
             { label: 'E-book', value: 'pdf-layout', price: 1200, icon: 'FiBookOpen' },
             { label: 'Baner reklamowy (Facebook, Instagram, Google)', value: 'ad-banner', price: 400, icon: 'FiMonitor' },
             { label: 'Projekt graficzny strony typu one-page (np. portfolio)', value: 'web-ui-onepage', price: 600, icon: 'FiLayout' },

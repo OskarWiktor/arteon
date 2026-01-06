@@ -1137,7 +1137,7 @@
       "faq": [
         {
           "question": "Czy efekt zakotwiczenia działa na każdego?",
-          "answer": "Tak, efekt zakotwiczenia działa na wszystkich ludzi, niezależnie od wykształcenia czy doświadczenia. Badania pokazują, że nawet eksperci w danej dziedzinie (np. agenci nieruchomości oceniający wartość domu) są podatni na zakotwiczenie. Świadomość mechanizmu może zmniejszyć jego wpływ, ale nie eliminuje go całkowicie. To automatyczny proces poznawczy, który trudno kontrolować."
+          "answer": "Tak, efekt zakotwiczenia działa na wszystkich ludzi, niezależnie od wykształcenia czy doświadczenia. Nawet eksperci w danej dziedzinie (np. agenci nieruchomości oceniający wartość domu) są podatni na zakotwiczenie. Świadomość mechanizmu może zmniejszyć jego wpływ, ale nie eliminuje go całkowicie. To automatyczny proces poznawczy, który trudno kontrolować."
         },
         {
           "question": "Jak mogę wykorzystać efekt zakotwiczenia w małej firmie?",
@@ -1149,7 +1149,7 @@
         },
         {
           "question": "Jak bronić się przed efektem zakotwiczenia jako klient?",
-          "answer": "Świadomość mechanizmu to pierwszy krok. Przed ważnymi zakupami warto zrobić własne rozeznanie cen rynkowych, zanim zobaczysz konkretną ofertę. Porównuj kilka niezależnych źródeł. Przy negocjacjach staraj się nie reagować na pierwszą propozycję — weź czas do namysłu. Pamiętaj też, że promocja 50 procent od bardzo wysokiej ceny nie oznacza automatycznie dobrej okazji."
+          "answer": "Świadomość mechanizmu to pierwszy krok. Przed ważnymi zakupami warto zrobić własne rozeznanie cen rynkowych, zanim zobaczysz konkretną ofertę. Porównuj kilka niezależnych źródeł. Przy negocjacjach staraj się nie reagować na pierwszą propozycję — weź czas do namysłu. Warto też sprawdzić, czy promocja 50 procent od bardzo wysokiej ceny rzeczywiście oznacza dobrą okazję."
         },
         {
           "question": "Czy zakotwiczenie działa tylko przy cenach?",
@@ -1247,7 +1247,7 @@
         },
         {
           "question": "Ile opinii potrzeba, żeby społeczny dowód słuszności działał?",
-          "answer": "Badania pokazują, że produkty z 5-10 opiniami sprzedają się znacznie lepiej niż te bez opinii. Jednak więcej nie zawsze znaczy lepiej — ważniejsza jest jakość i konkretność opinii. Kilka szczegółowych, wiarygodnych recenzji może być skuteczniejszych niż setki ogólnikowych. Dla wizytówki Google Moja Firma optymalna liczba to minimum 10-20 opinii z wysoką średnią oceną."
+          "answer": "Produkty z kilkoma opiniami (5-10) sprzedają się znacznie lepiej niż te bez opinii. Jednak więcej nie zawsze znaczy lepiej — ważniejsza jest jakość i konkretność opinii. Kilka szczegółowych, wiarygodnych recenzji może być skuteczniejszych niż setki ogólnikowych. Dla wizytówki Google Moja Firma optymalna liczba to minimum 10-20 opinii z wysoką średnią oceną."
         },
         {
           "question": "Jak radzić sobie z negatywnymi opiniami?",
@@ -1468,7 +1468,7 @@
         },
         {
           "question": "Czy powinienem używać atrybutu nofollow dla linków wewnętrznych?",
-          "answer": "W zdecydowanej większości przypadków nie. Atrybut nofollow mówi Google, żeby nie przekazywał wartości SEO przez dany link. Dla linków wewnętrznych zwykle chcesz przekazywać wartość, więc nofollow nie ma sensu. Wyjątkiem mogą być linki do stron technicznych (np. logowanie, koszyk), których nie chcesz indeksować — ale nawet wtedy lepszym rozwiązaniem jest często dyrektywa noindex na samej stronie."
+          "answer": "W zdecydowanej większości przypadków nie. Atrybut nofollow mówi Google, żeby nie przekazywał wartości SEO przez dany link. Dla linków wewnętrznych zwykle chcesz przekazywać wartość, więc nofollow nie jest zalecane. Wyjątkiem mogą być linki do stron technicznych (np. logowanie, koszyk), których nie chcesz indeksować — ale nawet wtedy lepszym rozwiązaniem jest często dyrektywa noindex na samej stronie."
         }
       ]
     },
@@ -1995,7 +1995,7 @@
         "title": "Potrzebujesz szablonów do mediów społecznościowych?",
         "description": "Przygotujemy dla Ciebie zestaw profesjonalnych szablonów dopasowanych do charakteru firmy. Spójna komunikacja wizualna bez konieczności projektowania każdego posta od zera.",
         "btnOne": "Szablony postów",
-        "btnOneLink": "/uslugi/projekty-graficzne/szablony-postow-social-media",
+        "btnOneLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
         "btnTwo": "Skontaktuj się",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych.webp",
@@ -2209,7 +2209,7 @@
         },
         {
           "question": "Czy instalacja Google Analytics jest trudna?",
-          "answer": "Podstawowa instalacja wymaga dodania fragmentu kodu do strony. Jeśli strona jest zbudowana na popularnym systemie (WordPress, Shopify), zwykle wystarczy zainstalować wtyczkę i podać identyfikator konta. Konfiguracja celów i zaawansowanych funkcji wymaga większej wiedzy."
+          "answer": "Podstawowa instalacja wymaga dodania fragmentu kodu do strony. Jeśli strona jest zbudowana na popularnym systemie (WordPress, Shopify), zainstaluj wtyczkę i podaj identyfikator konta. Konfiguracja celów i zaawansowanych funkcji wymaga większej wiedzy."
         },
         {
           "question": "Jak często powinienem sprawdzać dane analityczne?",
@@ -2483,7 +2483,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest certyfikat SSL i jak działa?</h2><p><strong>Certyfikat SSL</strong> to cyfrowy dokument, który potwierdza tożsamość strony internetowej i umożliwia szyfrowane połączenie. Gdy strona ma SSL, jej adres zaczyna się od <strong>https://</strong> zamiast http:// — ta dodatkowa litera s oznacza secure (bezpieczne).</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Gdy wchodzisz na stronę z SSL, Twoja przeglądarka i serwer wymieniają się kluczami szyfrującymi. Od tego momentu wszystkie dane przesyłane między Tobą a stroną są zaszyfrowane — nawet jeśli ktoś przechwyci tę komunikację, zobaczy tylko nieczytelny ciąg znaków.</p><br/><p>Pomyśl o tym jak o zamkniętej kopercie. Bez SSL dane są jak kartka pocztowa — każdy po drodze może je przeczytać. Z SSL dane są zamknięte w kopercie, którą może otworzyć tylko adresat.</p><br/><p><strong>Gdzie widzisz, że strona ma SSL?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Kłódka w pasku adresu</strong> — symbol zamkniętej kłódki obok adresu strony</li><li><strong>HTTPS w adresie</strong> — adres zaczyna się od https:// zamiast http://</li><li><strong>Informacje o certyfikacie</strong> — po kliknięciu w kłódkę zobaczysz szczegóły certyfikatu</li></ul>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest certyfikat SSL i jak działa?</h2><p><strong>Certyfikat SSL</strong> to cyfrowy dokument, który potwierdza tożsamość strony internetowej i umożliwia szyfrowane połączenie. Gdy strona ma SSL, jej adres zaczyna się od <strong>https://</strong> zamiast http:// — ta dodatkowa litera s oznacza secure (bezpieczne).</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Gdy wchodzisz na stronę z SSL, Twoja przeglądarka i serwer wymieniają się kluczami szyfrującymi. Od tego momentu wszystkie dane przesyłane między Tobą a stroną są zaszyfrowane — nawet jeśli ktoś przechwyci tę komunikację, zobaczy tylko nieczytelny ciąg znaków.</p><br/><p>Bez SSL dane są jak kartka pocztowa — każdy po drodze może je przeczytać. Z SSL dane są zaszyfrowane i może je odczytać tylko adresat.</p><br/><p><strong>Gdzie widzisz, że strona ma SSL?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Kłódka w pasku adresu</strong> — symbol zamkniętej kłódki obok adresu strony</li><li><strong>HTTPS w adresie</strong> — adres zaczyna się od https:// zamiast http://</li><li><strong>Informacje o certyfikacie</strong> — po kliknięciu w kłódkę zobaczysz szczegóły certyfikatu</li></ul>",
           "breakAfter": true
         },
         {
@@ -2857,7 +2857,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h3 class='h4 mb-3 mt-4'>Na stronie internetowej lub w e-mailu</h3><p>Jeśli użytkownik już jest online, wystarczy zwykły link. Skanowanie kodu QR z ekranu wymaga użycia drugiego urządzenia, co wydłuża drogę do celu zamiast ją skracać.</p><br/><p>Wyjątek: kod QR do pobrania aplikacji mobilnej na stronie przeglądanej na komputerze — wtedy użytkownik skanuje kod telefonem i od razu trafia do sklepu z aplikacjami.</p>",
+          "html": "<h3 class='h4 mb-3 mt-4'>Na stronie internetowej lub w e-mailu</h3><p>Jeśli użytkownik już jest online, lepiej użyć zwykłego linku. Skanowanie kodu QR z ekranu wymaga użycia drugiego urządzenia, co wydłuża drogę do celu zamiast ją skracać.</p><br/><p>Wyjątek: kod QR do pobrania aplikacji mobilnej na stronie przeglądanej na komputerze — wtedy użytkownik skanuje kod telefonem i od razu trafia do sklepu z aplikacjami.</p>",
           "breakAfter": false
         },
         {
@@ -3121,7 +3121,7 @@
         },
         {
           "question": "Czy kolor przycisku wpływa na konwersję?",
-          "answer": "Tak, ale nie chodzi o konkretny kolor — liczy się kontrast z resztą strony. Przycisk musi wyróżniać się na tle, żeby użytkownik go zauważył. Testy A/B często pokazują znaczące różnice w konwersji przy zmianie koloru CTA, ale wyniki zależą od kontekstu i reszty projektu strony."
+          "answer": "Tak, ale kluczowy jest kontrast z resztą strony, nie sam kolor. Przycisk musi wyróżniać się na tle, żeby użytkownik go zauważył. Testy A/B często pokazują znaczące różnice w konwersji przy zmianie koloru CTA, ale wyniki zależą od kontekstu i reszty projektu strony."
         },
         {
           "question": "Co to jest kontrast WCAG i dlaczego jest ważny?",
@@ -3290,12 +3290,12 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>Wyobraź sobie, że wysyłasz e-mail do potencjalnego klienta. Piszesz świetną wiadomość, ale na końcu widnieje tylko Twoje imię. Odbiorca nie wie, kim jesteś, czym się zajmujesz ani jak się z Tobą skontaktować w inny sposób.</p><br/><p>Właśnie dlatego <strong>stopka mailowa</strong> (nazywana też podpisem e-mail lub po angielsku email signature) jest tak ważna. To taki mały blok informacji na końcu każdego e-maila, który mówi: cześć, jestem taki i taki, pracuję w takiej firmie, a tutaj masz moje dane kontaktowe.</p><br/><p>W tym poradniku pokażemy Ci:</p><br/><ul class='list-disc ml-5'><li>co powinna zawierać dobra stopka,</li><li>jakie błędy najczęściej popełniają firmy,</li><li>jak stworzyć swoją stopkę w kilka minut (za darmo!).</li></ul><br/><p>Nie musisz znać się na kodowaniu ani projektowaniu. Wszystko wyjaśnimy prostym językiem.</p>",
+          "html": "<p>Wysyłasz e-mail do potencjalnego klienta. Piszesz świetną wiadomość, ale na końcu widnieje tylko Twoje imię. Odbiorca nie wie, kim jesteś, czym się zajmujesz ani jak się z Tobą skontaktować w inny sposób.</p><br/><p>Właśnie dlatego <strong>stopka mailowa</strong> (nazywana też podpisem e-mail lub po angielsku email signature) jest tak ważna. To taki mały blok informacji na końcu każdego e-maila, który mówi: cześć, jestem taki i taki, pracuję w takiej firmie, a tutaj masz moje dane kontaktowe.</p><br/><p>W tym poradniku pokażemy Ci:</p><br/><ul class='list-disc ml-5'><li>co powinna zawierać dobra stopka,</li><li>jakie błędy najczęściej popełniają firmy,</li><li>jak stworzyć swoją stopkę w kilka minut (za darmo!).</li></ul><br/><p>Nie musisz znać się na kodowaniu ani projektowaniu. Wszystko wyjaśnimy prostym językiem.</p>",
           "breakAfter": true
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest stopka mailowa i dlaczego warto ją mieć?</h2><p>Stopka mailowa to krótki blok tekstu (czasem z grafiką), który automatycznie pojawia się na końcu każdego e-maila, którego wysyłasz.</p><br/><p><strong>Pomyśl o niej jak o wizytówce.</strong> Kiedy spotykasz kogoś na spotkaniu biznesowym, dajesz mu wizytówkę. W świecie e-maili rolę wizytówki pełni właśnie stopka.</p><br/><p><strong>Dlaczego to ważne?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wyglądasz profesjonalnie</strong> — e-mail z dobrą stopką budzi większe zaufanie niż e-mail zakończony samym imieniem.</li><li><strong>Ułatwiasz kontakt</strong> — odbiorca od razu widzi Twój telefon, adres strony czy link do profilu LinkedIn.</li><li><strong>Budujesz rozpoznawalność marki</strong> — jeśli każdy pracownik firmy ma taką samą, spójną stopkę, firma wygląda na dobrze zorganizowaną.</li><li><strong>Oszczędzasz czas</strong> — nie musisz za każdym razem ręcznie wpisywać swoich danych.</li></ul>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest stopka mailowa i dlaczego warto ją mieć?</h2><p>Stopka mailowa to krótki blok tekstu (czasem z grafiką), który automatycznie pojawia się na końcu każdego e-maila, którego wysyłasz.</p><br/><p>Kiedy spotykasz kogoś na spotkaniu biznesowym, dajesz mu wizytówkę. W świecie e-maili rolę wizytówki pełni właśnie stopka.</p><br/><p><strong>Dlaczego to ważne?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wyglądasz profesjonalnie</strong> — e-mail z dobrą stopką budzi większe zaufanie niż e-mail zakończony samym imieniem.</li><li><strong>Ułatwiasz kontakt</strong> — odbiorca od razu widzi Twój telefon, adres strony czy link do profilu LinkedIn.</li><li><strong>Budujesz rozpoznawalność marki</strong> — jeśli każdy pracownik firmy ma taką samą, spójną stopkę, firma wygląda na dobrze zorganizowaną.</li><li><strong>Oszczędzasz czas</strong> — nie musisz za każdym razem ręcznie wpisywać swoich danych.</li></ul>",
           "breakAfter": true
         },
         {
@@ -3356,7 +3356,7 @@
         },
         {
           "question": "Czy mogę dodać logo do stopki?",
-          "answer": "Tak, możesz. W naszym generatorze wystarczy podać link do logo (adres URL obrazka w internecie). Logo powinno być małe — zalecamy rozmiar około 100-150 pikseli szerokości. Zbyt duże logo może powodować problemy z wyświetlaniem w niektórych programach pocztowych."
+          "answer": "Tak, możesz. W naszym generatorze podaj link do logo (adres URL obrazka w internecie). Logo powinno być małe — zalecamy rozmiar około 100-150 pikseli szerokości. Zbyt duże logo może powodować problemy z wyświetlaniem w niektórych programach pocztowych."
         },
         {
           "question": "Dlaczego moja stopka wygląda inaczej w różnych programach pocztowych?",
@@ -3417,7 +3417,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest favicon i dlaczego warto go mieć?</h2><p>Favicon to mały obrazek (najczęściej 16x16 lub 32x32 pikseli), który przeglądarka wyświetla przy nazwie Twojej strony.</p><br/><p><strong>Pomyśl o tym jak o logo na wizytówce.</strong> Kiedy ktoś ma otwartych 20 zakładek w przeglądarce, to właśnie favicon pomaga szybko znaleźć Twoją stronę. Bez niego użytkownik widzi tylko generyczną ikonkę — i Twoja strona ginie w tłumie.</p><br/><h3 class='h4 mb-3 mt-4'>Gdzie wyświetla się favicon?</h3><ul class='list-disc ml-5'><li><strong>Zakładki przeglądarki</strong> — mała ikonka przy tytule strony</li><li><strong>Lista ulubionych/zakładek</strong> — pomaga szybko rozpoznać stronę</li><li><strong>Historia przeglądania</strong> — ułatwia nawigację</li><li><strong>Wyniki wyszukiwania Google</strong> — na urządzeniach mobilnych favicon pojawia się przy wyniku</li><li><strong>Ekran główny telefonu</strong> — gdy użytkownik doda stronę jako skrót</li></ul><br/><h3 class='h4 mb-3 mt-4'>Dlaczego to ważne?</h3><ul class='list-disc ml-5'><li><strong>Rozpoznawalność</strong> — użytkownik od razu wie, która zakładka to Twoja strona</li><li><strong>Profesjonalizm</strong> — strona bez favicon wygląda na niedokończoną lub amatorską</li><li><strong>Spójność z <a class='inline-link' href='/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacją wizualną</a></strong> — favicon powinien być spójny z <a class='inline-link' href='/uslugi/projekty-graficzne/projekt-logo'>logo firmy</a></li><li><strong>SEO i Lighthouse</strong> — Google Lighthouse sprawdza, czy favicon jest poprawnie skonfigurowany</li><li><strong><span data-tooltip='PWA (Progressive Web App) to strona internetowa, która może działać jak aplikacja mobilna — można ją zainstalować na telefonie.'>PWA</span></strong> — jeśli chcesz, żeby użytkownicy mogli dodać Twoją stronę do ekranu głównego telefonu, potrzebujesz odpowiednich ikon</li></ul>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest favicon i dlaczego warto go mieć?</h2><p>Favicon to mały obrazek (najczęściej 16x16 lub 32x32 pikseli), który przeglądarka wyświetla przy nazwie Twojej strony.</p><br/><p>Kiedy ktoś ma otwartych 20 zakładek w przeglądarce, to właśnie favicon pomaga szybko znaleźć Twoją stronę. Bez niego użytkownik widzi tylko generyczną ikonkę — i Twoja strona ginie w tłumie.</p><br/><h3 class='h4 mb-3 mt-4'>Gdzie wyświetla się favicon?</h3><ul class='list-disc ml-5'><li><strong>Zakładki przeglądarki</strong> — mała ikonka przy tytule strony</li><li><strong>Lista ulubionych/zakładek</strong> — pomaga szybko rozpoznać stronę</li><li><strong>Historia przeglądania</strong> — ułatwia nawigację</li><li><strong>Wyniki wyszukiwania Google</strong> — na urządzeniach mobilnych favicon pojawia się przy wyniku</li><li><strong>Ekran główny telefonu</strong> — gdy użytkownik doda stronę jako skrót</li></ul><br/><h3 class='h4 mb-3 mt-4'>Dlaczego to ważne?</h3><ul class='list-disc ml-5'><li><strong>Rozpoznawalność</strong> — użytkownik od razu wie, która zakładka to Twoja strona</li><li><strong>Profesjonalizm</strong> — strona bez favicon wygląda na niedokończoną lub amatorską</li><li><strong>Spójność z <a class='inline-link' href='/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacją wizualną</a></strong> — favicon powinien być spójny z <a class='inline-link' href='/uslugi/projekty-graficzne/projekt-logo'>logo firmy</a></li><li><strong>SEO i Lighthouse</strong> — Google Lighthouse sprawdza, czy favicon jest poprawnie skonfigurowany</li><li><strong><span data-tooltip='PWA (Progressive Web App) to strona internetowa, która może działać jak aplikacja mobilna — można ją zainstalować na telefonie.'>PWA</span></strong> — jeśli chcesz, żeby użytkownicy mogli dodać Twoją stronę do ekranu głównego telefonu, potrzebujesz odpowiednich ikon</li></ul>",
           "breakAfter": true
         },
         {
@@ -4305,7 +4305,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p><strong>Identyfikacja wizualna</strong> to spójny wygląd firmy: logo, kolory, typografia oraz zasady, jak te elementy stosujesz wszędzie tam, gdzie klient ma z Tobą kontakt — na <a class='inline-link' href='/uslugi/strony-internetowe'>stronie internetowej</a>, w social mediach, w <a class='inline-link' href='/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic'>materiałach drukowanych</a>, w stopce e-maila.</p><br/><p>Dlaczego to ma znaczenie? Mózg ludzki przetwarza obrazy 60 000 razy szybciej niż tekst. Zanim klient przeczyta pierwsze słowo na stronie, jego mózg już ocenił wygląd i wyciągnął wnioski o wiarygodności firmy. Spójność wizualna sygnalizuje: ta firma ma porządek, dba o szczegóły, można jej zaufać.</p><br/><p>W tym artykule wyjaśniamy szczegółowo: jak działa mechanizm psychologiczny za zaufaniem do marek, które elementy identyfikacji wizualnej mają największy wpływ, jak spójność przekłada się na wyniki biznesowe, oraz jak utrzymać spójność w czasie.</p>",
+          "html": "<p><strong>Identyfikacja wizualna</strong> to spójny wygląd firmy: logo, kolory, typografia oraz zasady, jak te elementy stosujesz wszędzie tam, gdzie klient ma z Tobą kontakt — na <a class='inline-link' href='/uslugi/strony-internetowe'>stronie internetowej</a>, w mediach społecznościowych, w <a class='inline-link' href='/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic'>materiałach drukowanych</a>, w stopce e-maila.</p><br/><p>Dlaczego to ma znaczenie? Mózg ludzki przetwarza obrazy 60 000 razy szybciej niż tekst. Zanim klient przeczyta pierwsze słowo na stronie, jego mózg już ocenił wygląd i wyciągnął wnioski o wiarygodności firmy. Spójność wizualna sygnalizuje: ta firma ma porządek, dba o szczegóły, można jej zaufać.</p><br/><p>W tym artykule wyjaśniamy szczegółowo: jak działa mechanizm psychologiczny za zaufaniem do marek, które elementy identyfikacji wizualnej mają największy wpływ, jak spójność przekłada się na wyniki biznesowe, oraz jak utrzymać spójność w czasie.</p>",
           "breakAfter": true
         },
         {
@@ -4383,7 +4383,7 @@
         },
         {
           "question": "Jakie materiały warto zlecić w pierwszej kolejności?",
-          "answer": "Zależy od branży, ale najczęściej najważniejsze są: logo z wariantami, paleta kolorów, typografia i podstawowe szablony (wizytówki, papier firmowy, szablony do social media). Te materiały są najczęściej widziane przez klientów i kształtują pierwsze wrażenie."
+          "answer": "Zależy od branży, ale najczęściej najważniejsze są: logo z wariantami, paleta kolorów, typografia i podstawowe szablony (wizytówki, papier firmowy, szablony do mediów społecznościowych). Te materiały są najczęściej widziane przez klientów i kształtują pierwsze wrażenie."
         },
         {
           "question": "Czy identyfikacja wizualna naprawdę wpływa na sprzedaż?",
@@ -4742,7 +4742,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Zrób audyt SEO Twojej strony</h2> <p>Brak widoczności strony w Google to częsty problem, który skutkuje mniejszą liczbą klientów. Jeśli mimo wszystkich działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt SEO techniczny i contentowy.</p><p><strong>Analiza obejmuje:</strong></p><ul class='list-disc ml-5 mb-4'><li>Weryfikację indeksacji witryny,</li><li>Sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>Ocenę szybkości (Core Web Vitals),</li><li>Analizę treści i słów kluczowych,</li><li>Rekomendacje zmian i plan działań.</li></ul><p>👉 Skontaktuj się z nami - przeprowadzimy kompleksowy audyt SEO i wskażemy dokładnie, co blokuje Twoją widoczność według aktualnych wytycznych Google.</p><p>Efekt? Twoja strona zacznie się pojawiać tam, gdzie szukają Cię klienci.</p><div class='mt-6'><a href='/uslugi/marketing/audyt-seo' class='hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-500 transition w-fit inline-flex rounded-2xl items-center font-medium text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2'>Zobacz ofertę audytu SEO</a></div>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Zrób audyt SEO Twojej strony</h2> <p>Brak widoczności strony w Google to częsty problem, który skutkuje mniejszą liczbą klientów. Jeśli mimo wszystkich działań Twoja strona nadal jest mało widoczna w wynikach wyszukiwania, czas na audyt SEO techniczny i contentowy.</p><p><strong>Analiza obejmuje:</strong></p><ul class='list-disc ml-5 mb-4'><li>Weryfikację indeksacji witryny,</li><li>Sprawdzenie błędów w robots.txt, sitemap.xml i meta tagach,</li><li>Ocenę szybkości (Core Web Vitals),</li><li>Analizę treści i słów kluczowych,</li><li>Rekomendacje zmian i plan działań.</li></ul><p>👉 Skontaktuj się z nami - przeprowadzimy kompleksowy audyt SEO i wskażemy dokładnie, co blokuje Twoją widoczność według aktualnych wytycznych Google.</p><p>Efekt? Twoja strona zacznie się pojawiać tam, gdzie szukają Cię klienci.</p><div class='mt-6'><a href='/uslugi/marketing/audyt-seo' class='hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-[#080808] focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800 transition w-fit inline-flex rounded-2xl items-center font-medium text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2'>Zobacz ofertę audytu SEO</a></div>",
           "breakAfter": true
         }
       ],

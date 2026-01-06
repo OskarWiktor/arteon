@@ -38,7 +38,7 @@ export default function SectionHeader({
         </Eyebrow>
       )}
       {title && (
-        <TitleTag className={headingClassName} id={titleId}>
+        <TitleTag className={`${headingClassName} h4 mt-2`} id={titleId}>
           {title}
         </TitleTag>
       )}

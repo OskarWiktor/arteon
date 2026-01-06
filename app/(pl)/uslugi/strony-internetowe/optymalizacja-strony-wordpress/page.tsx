@@ -66,7 +66,7 @@ export default function OfferOptimizationWordPressPage() {
             <strong>90+/100 w PageSpeed</strong> albo nie ponosisz kosztu optymalizacji. Faktura wystawiana jest dopiero po realizacji prac.
           </>
         }
-        buttonAccent="Sprawdź swoją stronę za darmo"
+        buttonAccent="Sprawdź swoją stronę"
         buttonAccentLink="#kontakt"
         variant="left"
         backgroundImage="/assets/projects/arteon-baners-camper-albania-mockup.webp"
@@ -143,7 +143,7 @@ export default function OfferOptimizationWordPressPage() {
                   Google, szczególnie na urządzeniach mobilnych.
                 </>
               ),
-              icon: <RiSpeedFill className="h-6 w-6 text-slate-500" />,
+              icon: <RiSpeedFill className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Porządki we wtyczkach i motywie',
@@ -153,7 +153,7 @@ export default function OfferOptimizationWordPressPage() {
                   przy dalszych aktualizacjach.
                 </>
               ),
-              icon: <RiToolsLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiToolsLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Obrazy dopasowane do urządzeń',
@@ -163,12 +163,12 @@ export default function OfferOptimizationWordPressPage() {
                   szybkość działania witryny.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wersja mobilna i wygoda korzystania',
               description: <>Korygowane są marginesy, czcionki i przyciski na telefonach. Efekt: strona jest czytelna, łatwa w obsłudze i lepiej przygotowana na ruch z urządzeń mobilnych.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -349,7 +349,7 @@ export default function OfferOptimizationWordPressPage() {
         <Gap size="sm" />
 
         <ContactForm
-          title="Sprawdź swoją stronę WordPress za darmo"
+          title="Sprawdź swoją stronę WordPress"
           description="Podaj adres strony WordPress i krótko opisz, co najbardziej przeszkadza w jej działaniu (szybkość, wersja mobilna, błędy). W odpowiedzi otrzymasz propozycję zakresu prac, widełki cenowe 450-850 zł netto oraz informację, czy przy Twoim hostingu i motywie możliwe jest osiągnięcie wyniku 90+/100."
           defaultSubject="Kampania - optymalizacja strony WordPress"
         />

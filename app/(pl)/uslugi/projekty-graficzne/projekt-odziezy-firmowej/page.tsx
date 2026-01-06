@@ -119,27 +119,27 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Spójny wygląd zespołu',
               description: <>Projekt buduje rozpoznawalność marki w terenie, na hali, w salonie i podczas wydarzeń.</>,
-              icon: <RiTShirt2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiTShirt2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wizualizacje i warianty',
               description: <>Przygotowujemy podglądy na koszulkach, bluzach i innych elementach, aby łatwiej było podjąć decyzję.</>,
-              icon: <RiImageLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiImageLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dopasowanie do wybranej technologii',
               description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków - sitodruk, haft, DTF.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiQuillPenLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Pliki gotowe do produkcji',
               description: <>Otrzymujesz materiały, które możesz od razu przekazać wykonawcy odzieży.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />

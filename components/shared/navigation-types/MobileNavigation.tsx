@@ -194,7 +194,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             transition={{ type: 'spring', stiffness: 280, damping: 30 }}
           >
             <div className="flex items-center justify-end px-4 pt-3">
-              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2">
+              <button onClick={() => setIsOpen(false)} className="rounded px-3 pt-1 ring-slate-800 ring-offset-2 outline-none focus-visible:ring-2">
                 <span className="text-light text-sm font-medium">{t.close}</span>
               </button>
             </div>
@@ -214,7 +214,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           <Link
                             href={sec.hubHref}
                             onClick={() => setIsOpen(false)}
-                            className="text-dark inline-block rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                            className="text-dark inline-block rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                           >
                             {sec.title}
                           </Link>
@@ -227,7 +227,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                           aria-expanded={expanded}
                           aria-controls={`sec-${sec.key}`}
                           onClick={() => toggleKey(sec.key)}
-                          className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                          className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-800 transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                         >
                           <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
                             <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -258,9 +258,9 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                     <Link
                                       href={it.href}
                                       onClick={() => setIsOpen(false)}
-                                      className="group text-dark flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                                      className="group text-dark flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                                     >
-                                      <IconText icon={it.icon ? <span className="text-slate-700">{it.icon}</span> : undefined} gap="3" className="min-w-0">
+                                      <IconText icon={it.icon ? <span className="text-slate-800">{it.icon}</span> : undefined} gap="3" className="min-w-0">
                                         <span className="text-dark text-[15px]">{it.title}</span>
                                       </IconText>
                                     </Link>
@@ -285,7 +285,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     href={realizacjeNav.href}
                     onClick={() => setIsOpen(false)}
                     aria-current={pathname === realizacjeNav.href ? 'page' : pathname.startsWith(realizacjeNav.href) ? 'page' : undefined}
-                    className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                    className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-800 ring-offset-2 outline-none focus-visible:ring-2 ${
                       pathname.startsWith(realizacjeNav.href) ? 'text-dark bg-zinc-100 font-semibold' : 'text-dark hover:bg-neutral-100'
                     }`}
                   >
@@ -300,7 +300,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={aboutNav.href}
                         onClick={() => setIsOpen(false)}
                         aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
-                        className={`rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2 ${
+                        className={`rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 ${
                           pathname.startsWith(aboutNav.href) ? 'text-dark' : 'text-dark'
                         }`}
                       >
@@ -312,7 +312,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         aria-expanded={isAboutOpen}
                         aria-controls="about-submenu-mobile"
                         onClick={toggleAbout}
-                        className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                        className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-800 transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                       >
                         <motion.span animate={{ rotate: isAboutOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                           <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -339,11 +339,11 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                     href={aboutItem.href}
                                     onClick={() => setIsOpen(false)}
                                     aria-current={isSubActive ? 'page' : undefined}
-                                    className={`flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                                    className={`flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-slate-800 ring-offset-2 outline-none focus-visible:ring-2 ${
                                       isSubActive ? 'text-dark bg-zinc-100 font-semibold' : 'text-dark hover:bg-neutral-100'
                                     }`}
                                   >
-                                    {aboutItem.icon ? <span className="text-slate-700">{aboutItem.icon}</span> : null}
+                                    {aboutItem.icon ? <span className="text-slate-800">{aboutItem.icon}</span> : null}
                                     <span className="min-w-0">{aboutItem.title}</span>
                                   </Link>
                                 </li>
@@ -362,7 +362,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     href={edukacjaNav.href}
                     onClick={() => setIsOpen(false)}
                     aria-current={pathname.startsWith(edukacjaNav.href) ? 'page' : undefined}
-                    className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                    className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-800 ring-offset-2 outline-none focus-visible:ring-2 ${
                       pathname.startsWith(edukacjaNav.href) ? 'text-dark bg-zinc-100 font-semibold' : 'text-dark hover:bg-neutral-100'
                     }`}
                   >
@@ -377,7 +377,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         href={narzedziaNav.href}
                         onClick={() => setIsOpen(false)}
                         aria-current={pathname.startsWith(narzedziaNav.href) ? 'page' : undefined}
-                        className={`rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2 ${
+                        className={`rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 ${
                           pathname.startsWith(narzedziaNav.href) ? 'text-dark' : 'text-dark'
                         }`}
                       >
@@ -389,7 +389,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                         aria-expanded={isToolsOpen}
                         aria-controls="tools-submenu-mobile"
                         onClick={toggleTools}
-                        className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                        className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-800 transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                       >
                         <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                           <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
@@ -416,11 +416,11 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                     href={tool.href}
                                     onClick={() => setIsOpen(false)}
                                     aria-current={isToolActive ? 'page' : undefined}
-                                    className={`flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                                    className={`flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-slate-800 ring-offset-2 outline-none focus-visible:ring-2 ${
                                       isToolActive ? 'text-dark bg-zinc-100 font-semibold' : 'text-dark hover:bg-neutral-100'
                                     }`}
                                   >
-                                    {tool.icon ? <span className="text-slate-700">{tool.icon}</span> : null}
+                                    {tool.icon ? <span className="text-slate-800">{tool.icon}</span> : null}
                                     <span className="min-w-0">{tool.title}</span>
                                   </Link>
                                 </li>
@@ -439,7 +439,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     href={contactHref}
                     onClick={() => setIsOpen(false)}
                     aria-current={pathname.startsWith(contactHref) ? 'page' : undefined}
-                    className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-700 ring-offset-2 outline-none focus-visible:ring-2 ${
+                    className={`block rounded-xl px-3 py-[7px] text-[15px] ring-slate-800 ring-offset-2 outline-none focus-visible:ring-2 ${
                       pathname.startsWith(contactHref) ? 'text-dark bg-zinc-100 font-semibold' : 'text-dark hover:bg-neutral-100'
                     }`}
                   >
@@ -454,7 +454,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href={href}
                       onClick={() => setIsOpen(false)}
-                      className="text-dark block rounded-xl px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="text-dark block rounded-xl px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                     >
                       {label}
                     </Link>
@@ -468,14 +468,14 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <SocialIconLink
                       href="https://www.instagram.com/arteon.pl"
                       label={t.instagramLabel}
-                      className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
-                      icon={<RiInstagramLine className="h-5 w-5 text-slate-700" aria-hidden="true" />}
+                      className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
+                      icon={<RiInstagramLine className="h-5 w-5 text-slate-800" aria-hidden="true" />}
                     />
                     <SocialIconLink
                       href="https://www.facebook.com/people/Arteon/61583260915021/"
                       label={t.facebookLabel}
-                      className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
-                      icon={<RiFacebookFill className="h-5 w-5 text-slate-700" aria-hidden="true" />}
+                      className="rounded outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
+                      icon={<RiFacebookFill className="h-5 w-5 text-slate-800" aria-hidden="true" />}
                     />
                   </div>
 
@@ -483,7 +483,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     <Link
                       href={contactHref}
                       onClick={() => setIsOpen(false)}
-                      className="rounded-2xl bg-slate-600 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2"
+                      className="rounded-2xl bg-slate-800 px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                     >
                       {t.bookConsultation}
                     </Link>

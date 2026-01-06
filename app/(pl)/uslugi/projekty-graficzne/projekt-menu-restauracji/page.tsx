@@ -125,22 +125,22 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Układ dopasowany do oferty',
               description: <>Projektujemy logiczne sekcje - przystawki, dania główne, napoje, desery - z czytelną hierarchią, która ułatwia podjęcie decyzji i kieruje wzrok na kluczowe pozycje.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Spójność z klimatem lokalu',
               description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji - nowoczesnego, klasycznego, rustykalnego czy street foodowego.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Gotowe pliki do druku i online',
               description: <>Dostarczamy pliki przygotowane do druku oraz wersje online, które bez problemu dodasz na stronę, do social mediów lub do kodu QR.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Możliwość samodzielnej aktualizacji',
               description: <>Na życzenie przygotowujemy łatwe w edycji pliki źródłowe, dzięki czemu samodzielnie zaktualizujesz sezonowe dania, ceny czy nowe pozycje.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -178,7 +178,7 @@ export default function OfferDesignMenuPage() {
               <strong>Mniej pytań o podstawowe informacje,</strong> ponieważ karta rozwiewa większość wątpliwości dotyczących dań, dodatków i cen.
             </li>
             <li>
-              <strong>Spójny wizerunek online i offline,</strong> gdy ta sama estetyka pojawia się na kartach, stronie i w social mediach.
+              <strong>Spójny wizerunek online i offline,</strong> gdy ta sama estetyka pojawia się na kartach, stronie i w mediach społecznościowych.
             </li>
           </ul>
         </SectionInfo>

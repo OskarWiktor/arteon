@@ -487,7 +487,7 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-3">Jak działa automatyczny zapis?</h3>
           <p className="text-mid">
-            Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Nie musisz klikać żadnego przycisku „Zapisz" — wszystko dzieje się automatycznie w tle.
+            Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Zapis dzieje się automatycznie w tle — bez klikania przycisków.
           </p>
 
           <h3 className="h4 mt-6 mb-3">Jak zresetować ustawienia?</h3>
@@ -553,7 +553,7 @@ export default function Page() {
             },
             {
               question: 'Przycisk kopiowania jest nieaktywny — dlaczego?',
-              answer: 'Aby skopiować stopkę, musisz uzupełnić przynajmniej dwa pola: imię i nazwisko oraz adres e-mail. Sprawdź, czy oba pola są wypełnione.',
+              answer: 'Aby skopiować stopkę, uzupełnij przynajmniej dwa pola: imię i nazwisko oraz adres e-mail. Sprawdź, czy oba pola są wypełnione.',
             },
             {
               question: 'Avatar lub logo nie wyświetla się — co zrobić?',

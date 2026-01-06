@@ -98,7 +98,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
             <a href="https://www.marq.com/blog/brand-consistency-competitive-advantage" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
               (źródło)
             </a>
-            . Ten sam styl działa na stronie, w ofertach, w druku i w social mediach.
+            . Ten sam styl działa na stronie, w ofertach, w druku i w mediach społecznościowych.
           </p>
 
           <br />
@@ -149,27 +149,27 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Spójny system marki',
               description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały - online i offline - działały razem.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Materiały do codziennej komunikacji',
               description: <>Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i grafiki do prezentacji marki.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Proste zasady stosowania',
               description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie - także osobom nietechnicznym.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Pełna gotowość do druku i online',
               description: <>Otrzymujesz komplet plików do codziennej pracy: wersje do druku, internetu i mediów społecznościowych.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -242,7 +242,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
                 'Kompletny system logo, kolorów, typografii i ikonografii',
                 'Rozbudowany zestaw materiałów drukowanych i cyfrowych',
                 'Brandbook (PDF) z zasadami, siatkami, przykładami i zakazanymi użyciami',
-                'Rekomendacje wdrożenia identyfikacji w stronie www, social mediach i materiałach handlowych',
+                'Rekomendacje wdrożenia identyfikacji w stronie www, mediach społecznościowych i materiałach handlowych',
               ],
               btnOne: 'Zbudujmy pełny system identyfikacji',
               btnOneLink: '#kontakt',

@@ -82,7 +82,7 @@ Każdy plik z kodem źródłowym musi mieć nazwę jasno wskazującą jego przez
 - Badge/Tag/Tool pills: konsolidujemy do `Badge` (jeden komponent + warianty); `Tag` docelowo nie istnieje.
 - `Button`: warianty „jednorazowe” nie wchodzą do API; `totop` jest lokalny w `ButtonToTop`.
 - `Tooltip`: zostaje (jedyny wyjątek - może być chwilowo nieużywany).
-- Ikony mają zawsze mieć kolor `text-slate-700`.
+- Ikony mają zawsze mieć kolor `text-slate-800`.
 
 ### SEO (inwarianty)
 

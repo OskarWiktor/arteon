@@ -57,7 +57,7 @@ export const baseSteps: Step[] = [
         label: 'Marketing / Reklama',
         value: 'marketing',
         price: 0,
-        tooltip: 'Kampanie reklamowe, widoczność w Google, social media',
+        tooltip: 'Kampanie reklamowe, widoczność w Google, media społecznościowe',
         icon: 'FiTrendingUp',
       },
     ],

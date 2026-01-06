@@ -51,7 +51,7 @@ const SERVICES = [
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
   { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
-  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-social-media' },
+  { name: 'Szablony postów do mediów społecznościowych', path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe' },
   { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
   { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
   { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
@@ -192,42 +192,42 @@ export default function OfferDesignPage() {
             {
               title: 'Pełną własność plików i praw',
               description: <>Po zakończeniu projektu przekazujemy komplet plików źródłowych i użytkowych wraz z licencjami. Masz pełną kontrolę nad materiałami firmowymi - dziś i w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiKey2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Pliki gotowe do druku i wdrożenia online',
               description: <>Dostarczamy pakiet do druku a także warianty do sieci - wszystko zoptymalizowane i gotowe do użycia.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Konsekwentną identyfikację wizualną',
               description: <>Ustalamy system kolorów i typografii oraz reguły stosowania. Dzięki temu wszystkie materiały firmowe mówią jednym językiem i wzmacniają markę przy każdym kontakcie.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-500" />,
+              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Skład DTP z dbałością o detale',
               description: <>Kontrolujemy hierarchię, kerning i siatki. Przy katalogach i ulotkach pilnujemy czytelności, marginesów bezpieczeństwa oraz logiki łamania treści.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dobór i obróbkę zdjęć',
               description: <>Pomagamy w wyborze zdjęć oraz dostosowujemy kadry, tła i kolory. Pliki przygotowujemy w zgodnych profilach barwnych do druku i na stronę internetową.</>,
-              icon: <RiImageLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiImageLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dostępność i czytelność',
               description: <>Projektujemy tak, aby materiały były zrozumiałe i czytelne. Kontrast, wielkości fontów i hierarchia informacji wspierają odbiorcę w szybkim podjęciu decyzji.</>,
-              icon: <IoAccessibilityOutline className="h-6 w-6 text-slate-500" />,
+              icon: <IoAccessibilityOutline className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Gwarancję i wsparcie po wdrożeniu',
               description: <>Po finalizacji masz nasze wsparcie przez 2 miesiące. Ewentualne poprawki techniczne wykonujemy w ramach gwarancji, a na życzenie wprowadzamy płatne zmiany.</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Otrzymujesz ofertę z zakresem i terminami. Informujemy na bieżąco o ewentualnych kosztach dodatkowych, zanim podejmiemy kolejne kroki.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -288,7 +288,7 @@ export default function OfferDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Teczka ofertowa podnosi prestiż firmy i buduje zaufanie. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał firmowy.
+                    Teczka ofertowa podnosi prestiż firmy i zwiększa wiarygodność w oczach klientów. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał firmowy.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
@@ -368,7 +368,7 @@ export default function OfferDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Projektujemy identyfikację, która buduje zaufanie i spójność w każdym punkcie styku z klientem.
+                    Kompletny system wizualny marki: logo, kolory, typografia i materiały firmowe. Projektujemy identyfikację, która zwiększa rozpoznawalność i spójność w każdym punkcie styku z klientem.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
@@ -396,7 +396,7 @@ export default function OfferDesignPage() {
             },
             {
               icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Szablony postów na social media',
+              title: 'Szablony postów do mediów społecznościowych',
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
@@ -404,7 +404,7 @@ export default function OfferDesignPage() {
                     eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-social-media">
+                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe">
                       Przejdź do oferty
                     </Button>
                   </div>

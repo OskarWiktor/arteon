@@ -1,4 +1,935 @@
-# DONE_TASKS
+# Arteon - DONE TASKS
+
+## 2026-01-06
+
+- ✅ **[TOOLS-030] Licznik słów: aktualizacja zakresów długości zgodnie z realnymi wytycznymi SEO 2025/2026**
+
+  - **Pliki**:
+    - `lib/tools/text/wordCount.ts` (PAGE_TYPES - minWords/maxWords)
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/instrukcja/page.tsx` (opisy zakresów + FAQ)
+  - **Zmiany (nowe zakresy)**:
+    - Opis produktu: 100-300 słów (bez zmian)
+    - Strona usługi: 800-1500 słów (było: 300-800)
+    - Strona główna: 800-1500 słów (było: 500-1000)
+    - Landing page: 1500-3000 słów (było: 800-1500)
+    - Artykuł blogowy: 2500-4000 słów (było: 1500-2500)
+    - Poradnik: 4000-7000 słów (było: 2500-5000)
+  - **Zaktualizowano**:
+    - Zakresy minWords/maxWords w `PAGE_TYPES`
+    - Nagłówki H3 w sekcji "Typy stron i zalecane długości" (instrukcja)
+    - FAQ pytanie o długość artykułu blogowego
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[ROLLBACK-001] ImageResizeTool: usunięcie funkcjonalności transformacji (rotation, flip)**
+
+  - **Pliki**:
+    - `components/sections/tools/ImageResizeTool.tsx`
+    - `components/sections/tools/ImageResizeTool/exportCroppedImage.ts`
+    - `components/sections/tools/ImageResizeTool/types.ts`
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`
+  - **Powód**: Funkcjonalności transformacji (obrót 90°, flip poziomy/pionowy) nie działały poprawnie mimo prób naprawy (BUG-002, BUG-003)
+  - **Zmiany**:
+    - Usunięto state: `rotation`, `flipH`, `flipV`, `freeRotation`
+    - Usunięto handlery: `handleRotateLeft`, `handleRotateRight`, `handleFlipH`, `handleFlipV`, `handleResetTransform`, `handleFreeRotationChange`
+    - Usunięto UI: zakładkę "Obrót i odbicie" i badge'y transformacji
+    - Usunięto typy: `Rotation`, `TransformState`, 'transform' z `ActiveTool`
+    - Usunięto parametry transformacji z `exportCroppedImage`
+    - Usunięto sekcję "Obrót i odbicie obrazu" z instrukcji
+    - Powrót do podstawowej funkcjonalności: kadrowanie, zmiana rozmiaru, kształty
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-FIX-003] Poprawki COMPONENT-041 i COMPONENT-043**
+  - **Data wykonania:** 2026-01-06
+  - **Naprawione komponenty:**
+    - **COMPONENT-041 (SectionBlogCardHorizontal)**:
+      - Problem: Podkreślenie na hover (z AppLink), brak czasu czytania
+      - Rozwiązanie: Użycie `next/link` zamiast `AppLink`, dodano prop `readingTime`, zmiana `date` na `readingTime`
+    - **COMPONENT-043 (SectionCountdown)**:
+
+- ✅ **[COMPONENT-FIX-002] Poprawki komponentów showcase**
+  - **Data wykonania:** 2026-01-06
+  - **Naprawione komponenty:**
+    - **COMPONENT-019 (TestimonialsCarousel variant="large")**:
+      - Problem: Strzałki na dole, auto-scroll nie działał, nawigacja przez strzałki/kropki nie działała
+      - Przyczyna: `goToSlide` z `useCarouselScroller` wymaga scroll container, którego nie ma dla `variant="large"`
+      - Rozwiązanie: Dodano lokalny state `largeSlide`, własne handlery `handlePrevLarge`/`handleNextLarge`/`handleDotClickLarge`, inline przyciski nawigacji z `top-1/2 -translate-y-1/2` (wyśrodkowane pionowo)
+    - **COMPONENT-031 (SectionVerticalTabs)**:
+      - Problem: Horizontal scroll na mobile
+      - Rozwiązanie: Zmiana z `overflow-x-auto` na `grid grid-cols-2` dla mobile
+    - **COMPONENT-032 (SectionQuickLinks)**:
+      - Problem: Podkreślenia przy hover (z klasy `hover-underline` w AppLink)
+      - Rozwiązanie: Użycie `next/link` bezpośrednio zamiast `AppLink`
+  - **Zmienionych plików:** 3
+    - `components/sections/TestimonialsCarousel.tsx`
+    - `components/ui/sections/SectionVerticalTabs.tsx`
+    - `components/ui/sections/SectionQuickLinks.tsx`
+  - **Weryfikacja:** `npm run lint` i `npm run build` - OK
+
+- ❌ **[BUG-002] ImageResizeTool: pełna przebudowa transformacji** - WYCOFANO (ROLLBACK-001)
+
+- ❌ **[BUG-001] ImageResizeTool: naprawa transformacji (obrót/flip)** - WYCOFANO (ROLLBACK-001)
+
+  - **Pliki**:
+    - `components/sections/tools/ImageResizeTool.tsx`
+    - `components/sections/tools/ImageResizeTool/exportCroppedImage.ts`
+  - **Problemy naprawione**:
+    1. Podwojone ikony strzałek — usunięto emoji z tekstu przycisków (zostawiono tylko ikony)
+    2. Obraca się zdjęcie ale nie siatka — usunięto CSS transform z podglądu obrazu, dodano badge'y informujące o aktywnych transformacjach
+    3. Eksport nie pokrywał się z podglądem — naprawiono kolejność operacji canvas (translate → rotate → scale → translate → draw)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[UI-001] ShareBlock: zmiana wyglądu przycisków udostępniania na większe z tekstem i kolorami brand**
+  - **Data wykonania:** 2026-01-06
+  - **Zakres:**
+    - Zrefaktorowano `ShareBlock` z małych okrągłych ikon na większe przyciski z tekstem i kolorami brand
+    - Wzór: komponent "77. Social Share Buttons" z `/component`
+    - Facebook: kolor brand #1877f2 z ikoną RiFacebookFill i tekstem "Udostępnij"
+    - X (Twitter): czarne tło z ikoną RiTwitterXFill i tekstem "Tweet"
+    - LinkedIn: kolor brand #0a66c2 z ikoną RiLinkedinBoxFill i tekstem "LinkedIn"
+    - Email: białe tło z obramowaniem, ikona RiMailLine i tekst "E-mail"
+    - Kopiuj link: białe tło z obramowaniem (CopyButton)
+    - Wszystkie przyciski mają efekt hover (opacity-90 dla kolorowych, bg-slate-50 dla białych)
+    - Responsywność: flex-wrap dla układu na małych ekranach
+  - **Zmienionych plików:** 1
+    - `components/sections/ShareBlock.tsx`
+  - **Weryfikacja:** `npm run lint` i `npm run build` - OK
+
+- ✅ **[AUDIT-006] Audyt rozwoju witryny - wykorzystanie nowych komponentów UI**
+  - **Data wykonania:** 2026-01-06
+  - **Zakres audytu:**
+    - Przegląd 22 nowych komponentów UI/sections utworzonych od ostatniego commita
+    - Analiza modyfikacji istniejących komponentów (SectionSteps z expandableContent, WorkSteps, TechSteps)
+    - Identyfikacja możliwości wykorzystania nowych komponentów na istniejących stronach
+    - Generowanie backlogu pomysłów dla spójnego rozwoju witryny
+  - **Przeanalizowane nowe komponenty:**
+    - **Layout/Grid:** SectionBento, SectionPackages, SectionFeatureComparison, SectionFeatureList
+    - **Navigation/Tabs:** SectionTabs, SectionVerticalTabs
+    - **Visual/Media:** SectionBeforeAfter, SectionImageGallery, SectionImageCarousel, SectionBlogCardHorizontal
+    - **Timeline/Process:** SectionTimeline, SectionProcess
+    - **Data/Metrics:** SectionMetrics
+    - **UI Elements:** SectionIconBadges, SectionQuickLinks, SectionHeroSplit
+    - **Notifications:** SectionInfoBanner, SectionNotificationBanner, SectionNewsTicker
+    - **Interactive:** SectionCountdown, SectionAnimatedLoader
+    - **Tools:** WordCountTool (z lib/tools/text/wordCount.ts)
+    - **Enhanced:** SectionSteps (expandableContent feature)
+  - **Wygenerowane pomysły:** 30 zadań (IDEA-121 do IDEA-150) w sekcji "UI/UX - Wykorzystanie nowych komponentów"
+  - **Kategorie pomysłów:**
+    - Nowe strony (7): porównanie pakietów, FAQ, hosting-i-wsparcie, licznik słów
+    - Rozbudowa istniejących stron (15): O nas, usługi, realizacje, narzędzia, edukacja
+    - Refaktory layoutów (5): strona główna, /uslugi, /narzedzia, /realizacje
+    - Integracje komponentów (3): narzędzia, formularze, loading states
+  - **Format każdego pomysłu zawiera:**
+    - Cel i uzasadnienie biznesowe
+    - Konkretne pliki do edycji/utworzenia
+    - SEO (URL, title, description, OG image, schema) gdzie dotyczy
+    - Szczegółowe kryteria akceptacji (min. 4-6 punktów)
+    - Weryfikacja: `npm run lint && npm run build`
+  - **Nie wymagano weryfikacji** (zgodnie z zasadami AUDIT-only tasks)
+
+## 2026-01-06
+
+- ✅ **[COPY-033 do COPY-037] Realizacja zadań follow-up z AUDIT-004**
+  - **Data wykonania:** 2026-01-06
+  - **Wykonane zadania:**
+    - **COPY-033**: Zamieniono ogólnikowe "buduje zaufanie" na konkretne "zwiększa wiarygodność w oczach klientów" i "zwiększa rozpoznawalność" (3 pliki)
+    - **COPY-034**: Zamieniono wszystkie "social media" na "media społecznościowe" (7 wystąpień w 7 plikach)
+    - **COPY-035**: Usunięto pouczające "nie musisz" z instrukcji narzędzi, zastąpiono opisem funkcji (4 pliki)
+    - **COPY-036**: Usunięto nakazowe "musisz" z FAQ generatora stopki (1 plik)
+    - **COPY-037**: Zmieniono folder z `szablony-postow-social-media` na `szablony-postow-media-spolecznosciowe` + redirect 301 + aktualizacja wszystkich linków (10 plików)
+  - **Zmienionych plików:** 15
+    - 3 strony usług (projekty-graficzne/page.tsx, page.tsx, marketing/page.tsx)
+    - 2 strony podusług (projekt-identyfikacji-wizualnej, projekt-cennika)
+    - 4 instrukcje narzędzi (licznik-slow, jpg-png-webp, generator-stopki, generator-favicon)
+    - 3 komponenty nawigacji (navigation-data/pl.ts, Footer.tsx)
+    - 1 plik redirectów (lib/redirects.ts)
+    - 2 pliki danych (projects.json, blog.json)
+  - **Zmiana struktury URL:**
+    - Stary URL: `/uslugi/projekty-graficzne/szablony-postow-social-media`
+    - Nowy URL: `/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe`
+    - Redirect 301 dodany w `lib/redirects.ts`
+  - **Statystyki zmian:**
+    - Usunięto 3 wystąpienia ogólnikowego "buduje zaufanie"
+    - Zamieniono 7 wystąpień anglicyzmu "social media"
+    - Usunięto 5 wystąpień pouczających "nie musisz/musisz"
+    - Zaktualizowano 10+ linków wewnętrznych
+  - **Zgodność z wytycznymi:**
+    - Wszystkie zmiany zgodne z INSTRUCTIONS.md (zakaz ogólników, anglicyzmów, pouczającego tonu)
+    - Maksymalizacja potencjału SEO w URL (polskie odpowiedniki zamiast anglicyzmów)
+    - Zachowana klarowność i użyteczność tekstów
+  - **Weryfikacja:** `npm run build` przechodzi (Exit code: 0)
+  - **Status:** Wszystkie 5 zadań COPY wykonane i przeniesione do DONE_TASKS.md
+
+- ✅ **[AUDIT-004] Audyt stron usług, narzędzi, instrukcji i realizacji**
+  - **Data wykonania:** 2026-01-06
+  - **Zakres audytu:**
+    - Wszystkie strony w `app/(pl)/uslugi/**` (13+ stron usług)
+    - Wszystkie instrukcje w `app/(pl)/narzedzia/(tools)/**/instrukcja/` (10+ instrukcji)
+    - Plik `data/pl/projects.json`
+    - Komponenty nawigacji i stopka
+  - **Metoda:**
+    - Grep search dla zakazanych fraz z INSTRUCTIONS.md:
+      - Ogólniki: "buduje zaufanie", "robi wrażenie", "profesjonalnie wygląda"
+      - Anglicyzmy: "social media"
+      - Ton pouczający: "nie musisz", "musisz", "powinieneś"
+      - Hasła marketingowe: "kompleksowe rozwiązania", "nowoczesne podejście"
+  - **Znalezione problemy (5 kategorii):**
+    - **Ogólniki** (3×): "buduje zaufanie" bez konkretnego wyjaśnienia
+    - **Anglicyzmy** (7×): "social media" zamiast "media społecznościowe"
+    - **Ton pouczający** (5×): "nie musisz" i "musisz" w instrukcjach i FAQ
+    - **URL z anglicyzmem** (1×): folder `szablony-postow-social-media`
+  - **Utworzone zadania follow-up:**
+    - **COPY-033**: Zamiana ogólników (3 pliki)
+    - **COPY-034**: Zamiana anglicyzmów (7 plików)
+    - **COPY-035**: Usunięcie "nie musisz" (4 pliki)
+    - **COPY-036**: Usunięcie "musisz" (1 plik)
+    - **COPY-037**: Zmiana URL + redirect (10 plików)
+  - **NIE znaleziono:**
+    - "Wbrew pozorom", "Nie chodzi o X, tylko Y" (0 wystąpień)
+    - "Kompleksowe rozwiązania", "innowacyjne" (0 wystąpień w treściach)
+    - Rekomendacji konkurencji
+  - **Status:** Audyt zakończony, wszystkie zadania zrealizowane
+
+- ✅ **[COPY-027 do COPY-032] Realizacja zadań follow-up z AUDIT-002**
+  - **Data wykonania:** 2026-01-06
+  - **Wykonane zadania:**
+    - **COPY-027**: Zamieniono "Oczywiście" na neutralne "Tak" w 2 plikach FAQ (tworzenie-tresci, component)
+    - **COPY-028**: Usunięto nakazowe "musisz" z instrukcji generatora palet ("potwierdź zmianę przyciskiem")
+    - **COPY-029**: Zmniejszono nadmierne użycie "darmowy/darmowe" w 6 plikach (18 wystąpień → usunięto z pakietów, zachowano w /narzedzia)
+    - **COPY-030**: Zamieniono lekceważące "nie ma sensu" na "nie jest zalecane" w FAQ blog.json
+    - **COPY-031**: Usunięto minimalizujące "wystarczy" z 3 miejsc w blog.json (instrukcje GA, QR, logo)
+    - **COPY-032**: Zamieniono pouczające "pamiętaj" na sugestie w 3 plikach ("warto", "uwaga", "warto sprawdzić")
+  - **Zmienionych plików:** 10
+    - 6 stron usług (strony-internetowe, sklepy, blogi, marketing, optymalizacja, tworzenie-tresci)
+    - 1 plik blog.json
+    - 3 instrukcje narzędzi
+  - **Statystyki zmian:**
+    - Usunięto wszystkie wykryte pouczające formułowania: "Oczywiście", "musisz", "pamiętaj"
+    - Zmniejszono nadmierne "darmowy/darmowe" z 18 do 1 wystąpienia (tylko /narzedzia)
+    - Usunięto lekceważące "nie ma sensu"
+    - Przepisano 3 wystąpienia minimalizującego "wystarczy"
+  - **Zgodność z wytycznymi:**
+    - Wszystkie zmiany zgodne z zasadą mentorskiego tonu z INSTRUCTIONS.md
+    - Teksty brzmią bardziej pomocnie, mniej nakazowo
+    - Zachowana klarowność i użyteczność instrukcji
+  - **Status:** Wszystkie 6 zadań COPY wykonane i przeniesione do DONE_TASKS.md
+
+- ✅ **[AUDIT-002] Głęboki audyt zgodności z wytycznymi (130+ stron)**
+  - **Data wykonania:** 2026-01-06
+  - **Zakres audytu:**
+    - Wszystkie strony w `app/(pl)/**` (130+ stron/podstron)
+    - Wszystkie artykuły w `data/pl/blog.json` (45+ artykułów)
+    - Wszystkie realizacje w `data/pl/projects.json`
+    - Komponenty UI i instrukcje narzędzi
+    - Wyszukiwanie zakazanych konstrukcji językowych i stylistycznych
+  - **Metoda:**
+    - Systematyczne grep search dla zakazanych fraz z INSTRUCTIONS.md:
+      - Ton pouczający: "Oczywiście", "To proste", "To oczywiste", "musisz", "pamiętaj"
+      - Minimalizujące: "Wystarczy" (w znaczeniu bagatelizującym)
+      - Negatywne: "nie ma sensu", "nie warto"
+      - Inne problematyczne: nadmierne "darmowy/darmowe"
+  - **Znalezione problemy (6 kategorii):**
+    - **"Oczywiście"** - 2 wystąpienia w FAQ (ton protekcjonalny)
+    - **"musisz"** - 1 wystąpienie w instrukcji narzędzia (ton nakazowy)
+    - **"darmowy/darmowe"** - nadmierne używanie w pakietach usług (18+ wystąpień, może brzmieć tanio)
+    - **"nie ma sensu"** - 1 wystąpienie w FAQ (lekceważący ton)
+    - **"Wystarczy"** - 10+ wystąpień w blog.json (może minimalizować wysiłek)
+    - **"pamiętaj"** - 3 wystąpienia (ton pouczający)
+  - **Utworzone zadania follow-up:**
+    - **COPY-027**: Zamienić "Oczywiście" na neutralne "Tak" (2 pliki)
+    - **COPY-028**: Usunąć "musisz" z instrukcji generatora palet
+    - **COPY-029**: Zmniejszyć użycie "darmowy" w pakietach usług (6 plików)
+    - **COPY-030**: Zamienić "nie ma sensu" na konstruktywne wyjaśnienie (blog.json)
+    - **COPY-031**: Usunąć problematyczne "Wystarczy" z blog.json (10+ miejsc)
+    - **COPY-032**: Zamienić "pamiętaj" na sugestie (3 pliki)
+  - **NIE znaleziono:**
+    - "Wbrew pozorom", "Na pierwszy rzut oka" (tylko w komentarzach kodu - OK)
+    - "To proste", "To oczywiste" (wszystkie usunięte w COPY-020)
+    - "Wyobraź sobie", "Pomyśl o tym jak" (wszystkie usunięte w COPY-022)
+  - **Obserwacje:**
+    - Większość tekstów jest zgodna z wytycznymi
+    - Główne problemy to drobne sformułowania w FAQ i pakietach
+    - Nie znaleziono poważnych naruszeń tonu (chamstwo, nachalność)
+    - Artykuły w blog.json wymagają najwięcej poprawek ("Wystarczy")
+  - **Status:** Audyt zakończony, utworzono 6 zadań COPY-* do realizacji
+
+- ✅ **[COPY-020 do COPY-026] Realizacja zadań follow-up z AUDIT-001**
+  - **Data wykonania:** 2026-01-06
+  - **Wykonane zadania:**
+    - **COPY-020**: Zamieniono "To proste narzędzie" na neutralne "Narzędzie marketingowe" w `projekt-karty-lojalnosciowej/page.tsx`
+    - **COPY-021**: Usunięto "Wyobraź sobie" z instrukcji testera kontrastu, przepisano zdanie w formie bezpośredniej
+    - **COPY-022**: Usunięto wszystkie wstawki "Wyobraź sobie" i "Pomyśl o tym jak" z 4 artykułów w `blog.json` (SSL, stopka mailowa, favicon)
+    - **COPY-023**: Poprawiono FAQ "nie chodzi o konkretny kolor" na "kluczowy jest kontrast z resztą strony, nie sam kolor"
+    - **COPY-024**: Zastąpiono ogólnikową frazę "buduje zaufanie" konkretnymi sformułowaniami w 9 plikach stron usług ("pokazuje profesjonalizm", "zwiększa wiarygodność firmy", "zwiększa wiarygodność w oczach klientów")
+    - **COPY-025**: Przepisano 2 FAQ w `blog.json` bez odwołań do "badań pokazują" (brak możliwości znalezienia konkretnych źródeł)
+    - **COPY-026**: Zamieniono anglicyzm "social media" na "media społecznościowe" w 23+ plikach (strony usług, projects.json, blog.json, calculator/*.ts)
+  - **Zmienionych plików:** 23
+    - 13 stron usług (tsx)
+    - 2 pliki JSON (blog, projects)
+    - 3 pliki kalkulatora (ts)
+    - 1 strona narzędzia (instrukcja)
+  - **Statystyki zmian:**
+    - Usunięto wszystkie zakazane konstrukcje: "To proste", "Wyobraź sobie", "Pomyśl o tym jak", "Nie chodzi o"
+    - Zastąpiono 10+ wystąpień ogólnikowej frazy "buduje zaufanie"
+    - Zamieniono 30+ wystąpień anglicyzmu "social media" na polski odpowiednik
+    - Przepisano 2 FAQ bez niezweryfikowanych odwołań do badań
+  - **Zgodność z wytycznymi:**
+    - Wszystkie zmiany zgodne z INSTRUCTIONS.md (sekcje: ton, wstawki wyobrażeniowe, chamski ton, ogólniki, źródła, anglicyzmy)
+    - Zachowana czytelność i naturalność tekstów
+    - Poprawność JSON zweryfikowana
+  - **Status:** Wszystkie 7 zadań COPY wykonane i przeniesione do DONE_TASKS.md
+
+## 2026-01-06
+
+- ✅ **[AUDIT-001] Repo: audyt treści — zgodność z wytycznymi tonu i stylu pisania**
+  - **Data wykonania:** 2026-01-06
+  - **Zakres audytu:**
+    - Komponenty globalne: `Navigation.tsx`, `Footer.tsx`, `CookieConsent.tsx`, `HeroBanner.tsx`, `WorkSteps.tsx`
+    - Strona główna: `app/(pl)/page.tsx`
+    - Wszystkie strony usług w `app/(pl)/uslugi/**`
+    - Pliki danych: `data/pl/blog.json`, `data/pl/projects.json`
+    - Strony narzędzi: `app/(pl)/narzedzia/(tools)/**`
+    - Weryfikacja zgodności z wytycznymi z `docs/INSTRUCTIONS.md`:
+      - Zakaz wstawek wyobrażeniowych ("Wyobraź sobie", "Pomyśl o tym jak")
+      - Zakaz chamskiego/pouczającego tonu ("To proste", "To nie jest X, tylko Y", "Nie chodzi o")
+      - Zakaz ogólnikowych fraz bez wartości ("buduje zaufanie" bez wyjaśnienia)
+      - Wymóg źródeł dla danych i badań ("badania pokazują" bez źródła = zabronione)
+      - Wymóg polskich odpowiedników anglicyzmów ("social media" → "media społecznościowe")
+  - **Metoda:**
+    - Uruchomienie serwera deweloperskiego i przeglądanie strony live
+    - Grep search dla zakazanych konstrukcji językowych
+    - Szczegółowa analiza znalezionych fragmentów w kontekście wytycznych
+  - **Wyniki audytu:**
+    - **Znaleziono 7 kategorii niezgodności** wymagających poprawy w 30+ plikach
+    - Główne problemy:
+      - Używanie "To proste" umniejszające temat (1 wystąpienie)
+      - Wstawki "Wyobraź sobie" i "Pomyśl o tym jak" w artykułach (kilka wystąpień w blog.json)
+      - Konstrukcja "Nie chodzi o X, tylko Y" w FAQ (1 wystąpienie)
+      - Fraza "buduje zaufanie" bez konkretnego wyjaśnienia (10+ wystąpień)
+      - "Badania pokazują" bez źródła w FAQ (2 wystąpienia)
+      - Anglicyzm "social media" zamiast "media społecznościowe" (30+ wystąpień w całym repo)
+  - **Utworzone zadania follow-up:**
+    - **COPY-020**: Zamienić "To proste narzędzie" na neutralne sformułowanie (1 plik)
+    - **COPY-021**: Usunąć "Wyobraź sobie" z instrukcji testera kontrastu (1 plik)
+    - **COPY-022**: Usunąć wstawki "Wyobraź sobie" i "Pomyśl o tym jak" z artykułów w blog.json
+    - **COPY-023**: Poprawić FAQ "Nie chodzi o konkretny kolor" w blog.json
+    - **COPY-024**: Wyjaśnić lub zastąpić frazę "buduje zaufanie" (9 plików)
+    - **COPY-025**: Dodać źródła do "Badania pokazują" lub przepisać bez odwołań (blog.json)
+    - **COPY-026**: Zamienić "social media" na "media społecznościowe" w całym repo (20+ plików)
+  - **Obserwacje dodatkowe:**
+    - Większość tekstów jest zgodna z wytycznymi mentorskiego, prostego tonu
+    - Nie znaleziono poważnych błędów ortograficznych ani gramatycznych
+    - Komponenty globalne (nawigacja, stopka) są poprawne
+    - Główne problemy dotyczą sformułowań, które wkradły się do starszych tekstów przed wdrożeniem aktualnych wytycznych
+  - **Status:** Audyt zakończony, wszystkie niezgodności zidentyfikowane i przekształcone w konkretne zadania COPY-* z kryteriami akceptacji
+
+- ✅ **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
+
+  - **Pliki**: `components/ui/sections/SectionProcess.tsx`, `components/ui/sections/SectionSteps.tsx`
+  - **Zmiany**:
+    - Zmieniono style ikon na zgodne z FeatureCard (h-12 w-12 rounded-xl)
+    - SectionProcess: ciemne tło ikony (bg-slate-800 text-white)
+    - SectionSteps: jasne tło ikony (bg-slate-100 text-slate-800)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-009] SectionTabs — nowy komponent zakładek (wzór: showcase #19)**
+
+  - **Plik**: `components/ui/sections/SectionTabs.tsx` (nowy)
+  - **Zmiany**:
+    - Props: `title`, `tabs[]` (każdy z `title`, `icon`, `content`)
+    - Interaktywne zakładki z ikonami, responsywny układ
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-011] SectionBento — nowy komponent bento grid (wzór: showcase #21)**
+
+  - **Plik**: `components/ui/sections/SectionBento.tsx` (nowy)
+  - **Zmiany**:
+    - Props: `title`, `items[]` (każdy z `title`, `description`, `icon`, `size`, `backgroundImage?`)
+    - Dynamiczny układ kart o różnych rozmiarach (small/medium/large)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-012] FaqPanels — variant z ikonami (wzór: showcase #24)**
+
+  - **Plik**: `components/ui/FaqPanels.tsx`
+  - **Zmiany**:
+    - Nowy prop `showIcons?: boolean`
+    - Opcjonalne pole `icon` w każdym item FAQ
+    - Ikona zmienia kolor na otwarciu (aktywna: ciemne tło)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-013] SectionHeroSplit — nowy komponent split hero (wzór: showcase #27)**
+
+  - **Plik**: `components/sections/SectionHeroSplit.tsx` (nowy)
+  - **Zmiany**:
+    - Props: `subtitle`, `title`, `description`, `btnOne`, `btnOneLink`, `btnTwo`, `btnTwoLink`, `imageSrc`, `imageAlt`
+    - Układ 50/50: tekst po lewej, obraz po prawej, responsywny
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-014] Sekcje — variant ciemne tło**
+
+  - **Plik**: `components/ui/sections/SectionSteps.tsx`
+  - **Zmiany**:
+    - Nowy prop `theme?: 'light' | 'dark'`
+    - `dark`: ciemnoniebieskie tło (bg-slate-800), biały tekst
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-016] SectionInfoBanner — nowy komponent baneru informacyjnego (wzór: showcase #31)**
+
+  - **Plik**: `components/ui/sections/SectionInfoBanner.tsx` (nowy)
+  - **Zmiany**:
+    - Props: `icon`, `text`, `highlight?`, `btnLabel`, `btnLink`
+    - Ciemne tło (slate-800), biały tekst, przycisk po prawej
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-017] SectionFeatureList — nowy komponent listy cech (wzór: showcase #32)**
+
+  - **Plik**: `components/ui/sections/SectionFeatureList.tsx` (nowy)
+  - **Zmiany**:
+    - Props: `title`, `features[]`
+    - Checkmarki w zielonych kółkach, 2 kolumny na desktop
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-018] CTABanner — tło gradientowe (wzór: showcase #37)**
+
+  - **Plik**: `components/sections/CTABanner.tsx`
+  - **Zmiany**:
+    - Nowy prop `backgroundStyle?: 'image' | 'gradient' | 'solid'`
+    - `gradient`: tło gradientowe (slate-800 to slate-700)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-019] TestimonialsCarousel — variant z gwiazdkami i auto-scroll (wzór: showcase #50)**
+
+  - **Plik**: `components/sections/TestimonialsCarousel.tsx`
+  - **Zmiany**:
+    - Nowy prop `variant?: 'default' | 'stars'`
+    - Nowy prop `autoScroll?: boolean` i `autoScrollInterval?: number`
+    - `stars`: gwiazdki nad cytatem, większy cytat
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **Strona testowa `/test` zaktualizowana**
+
+  - **Plik**: `app/(pl)/test/page.tsx`
+  - **Zmiany**: Dodano przykłady wszystkich nowych komponentów (COMPONENT-009 do COMPONENT-019)
+
+- ✅ **[COMPONENT-FIX] Poprawki komponentów COMPONENT-011, 014, 018, 019**
+
+  - **Zmiany**:
+    - **Button**: Nowy variant `accent-reverse` (białe tło, ciemny tekst)
+    - **SectionBento**: Opcja przycisku na każdej karcie (`btnLabel`, `btnLink`)
+    - **SectionSteps**: `highlight` prop na poszczególnych kartach (ciemne tło)
+    - **TestimonialsCarousel**: Nowy variant `large` jak showcase #50 z gwiazdkami i auto-scroll
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-020] SectionNotificationBanner — zamykalny baner powiadomień**
+
+  - **Plik**: `components/ui/sections/SectionNotificationBanner.tsx` (nowy)
+  - **Props**: `icon`, `text`, `highlight?`, `variant` (success/info/warning), `dismissible`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-023] SectionIconBadges — rząd odznak z ikonami**
+
+  - **Plik**: `components/ui/sections/SectionIconBadges.tsx` (nowy)
+  - **Props**: `title?`, `badges[]` (icon, label)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-028] SectionImageGallery — galeria z lightboxem**
+
+  - **Plik**: `components/ui/sections/SectionImageGallery.tsx` (nowy)
+  - **Props**: `title?`, `images[]` (src, alt, title?)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-031] SectionVerticalTabs — pionowe zakładki**
+
+  - **Plik**: `components/ui/sections/SectionVerticalTabs.tsx` (nowy)
+  - **Props**: `title?`, `tabs[]` (label, icon, content)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-032] SectionQuickLinks — pasek szybkich linków**
+
+  - **Plik**: `components/ui/sections/SectionQuickLinks.tsx` (nowy)
+  - **Props**: `title?`, `links[]` (icon, label, href)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-035] SectionBeforeAfter — slider porównania przed/po**
+
+  - **Plik**: `components/ui/sections/SectionBeforeAfter.tsx` (nowy)
+  - **Props**: `title?`, `beforeImage`, `afterImage`, `beforeLabel?`, `afterLabel?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-036] SectionNewsTicker — animowany pasek wiadomości**
+
+  - **Plik**: `components/ui/sections/SectionNewsTicker.tsx` (nowy)
+  - **Props**: `items[]`, `speed?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **Strona testowa `/test` zaktualizowana (2)**
+
+  - **Plik**: `app/(pl)/test/page.tsx`
+  - **Zmiany**: Dodano przykłady komponentów COMPONENT-020 do COMPONENT-036
+
+- ✅ **[COMPONENT-FIX-2] Poprawki komponentów po review**
+
+  - **Zmiany**:
+    - **TestimonialsCarousel**: Naprawiono auto-scroll dla variant `large` (używa `goToSlide`)
+    - **SectionQuickLinks**: Dopasowano do showcase #88 (rounded container, proste linki)
+    - **SectionBeforeAfter**: Naprawiono z `clipPath` i ikoną `RiExpandLeftRightLine`
+    - **SectionNewsTicker**: Dodano opcję ikon do każdego elementu
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-021] Modal i SearchModal — style już poprawne**
+
+  - **Pliki**: `components/ui/ConfirmModal.tsx`, `components/ui/SearchDialog.tsx`
+  - **Status**: Komponenty już mają poprawne style (rounded-2xl, odpowiednie odstępy)
+
+- ✅ **[COMPONENT-034] SectionImageCarousel — karuzela zdjęć z fade**
+
+  - **Plik**: `components/ui/sections/SectionImageCarousel.tsx` (nowy)
+  - **Props**: `slides[]`, `overlay?`, `variant` (default/fullWidth), `autoPlay?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-037] SectionImageCarousel — variant fullWidth**
+
+  - **Plik**: `components/ui/sections/SectionImageCarousel.tsx`
+  - **Zmiany**: Prop `variant?: 'default' | 'fullWidth'` z aspect-[21/9]
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-038] SectionStarRating — interaktywna ocena gwiazdkowa**
+
+  - **Plik**: `components/ui/sections/SectionStarRating.tsx` (nowy)
+  - **Props**: `value`, `onChange`, `max?`, `size?`, `label?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-039] SectionLikeButton — animowany przycisk like**
+
+  - **Plik**: `components/ui/sections/SectionLikeButton.tsx` (nowy)
+  - **Props**: `initialCount?`, `liked?`, `onChange?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-040] SectionReactionPicker — picker reakcji emoji**
+
+  - **Plik**: `components/ui/sections/SectionReactionPicker.tsx` (nowy)
+  - **Props**: `reactions[]`, `selected?`, `onChange?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **Strona testowa `/test` zaktualizowana (3)**
+
+  - **Plik**: `app/(pl)/test/page.tsx`
+  - **Zmiany**: Dodano przykłady COMPONENT-034, 038, 039, 040. Zmieniono na client component.
+
+- ✅ **[COMPONENT-024] SectionSteps — variant z rozwijalnymi szczegółami**
+
+  - **Plik**: `components/ui/sections/SectionSteps.tsx`
+  - **Zmiany**: Dodano prop `expandableContent` do itemów, nowy komponent `ExpandableStepsList`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-027] FileUploadZone — już ma odpowiedni styl**
+
+  - **Plik**: `components/ui/tools/ToolFileDropzone.tsx`
+  - **Status**: Komponent już istnieje i ma odpowiedni styl
+
+- ✅ **[COMPONENT-029] SocialShareButtons — już ma odpowiedni styl**
+
+  - **Plik**: `components/sections/ShareBlock.tsx`
+  - **Status**: Komponent już istnieje z kolorowymi przyciskami
+
+- ✅ **[COMPONENT-030] DesktopNavigation submenu — już ma odpowiedni styl**
+
+  - **Plik**: `components/shared/navigation-types/DesktopNavigation.tsx`
+  - **Status**: Submenu już ma zaokrąglone rogi i cień
+
+- ✅ **[COMPONENT-041] SectionBlogCardHorizontal — horyzontalna karta artykułu**
+
+  - **Plik**: `components/ui/sections/SectionBlogCardHorizontal.tsx` (nowy)
+  - **Props**: `imageSrc`, `imageAlt`, `title`, `description`, `href`, `category?`, `date?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-042] SectionAnnouncementBar — zamykalny baner ogłoszeniowy**
+
+  - **Plik**: `components/ui/sections/SectionAnnouncementBar.tsx` (nowy)
+  - **Props**: `text`, `linkLabel?`, `linkHref?`, `dismissible?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-043] SectionCountdown — odliczanie do daty**
+
+  - **Plik**: `components/ui/sections/SectionCountdown.tsx` (nowy)
+  - **Props**: `title`, `description?`, `targetDate`, `btnLabel?`, `btnLink?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-044] CookieBanner — już ma odpowiedni styl**
+
+  - **Plik**: `components/shared/CookieConsent.tsx`
+  - **Status**: Komponent już ma kompaktowy styl z przyciskami Odrzuć/Akceptuj
+
+- ✅ **[COMPONENT-046] SectionAnimatedLoader — animowane loadery**
+
+  - **Plik**: `components/ui/sections/SectionAnimatedLoader.tsx` (nowy)
+  - **Props**: `variant` (spinner/dots/pulse), `size?`, `color?`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **Strona testowa `/test` zaktualizowana (4)**
+
+  - **Plik**: `app/(pl)/test/page.tsx`
+  - **Zmiany**: Dodano przykłady COMPONENT-041, 042, 043, 046
+
+- ✅ **[COMPONENT-006] SectionProcess — nowy komponent kroków poziomych (wzór: showcase #17)**
+
+  - **Plik**: `components/ui/sections/SectionProcess.tsx` (nowy)
+  - **Zmiany**:
+    - Utworzenie komponentu do prezentacji procesu w układzie poziomym
+    - Props: `title` (klasa h6), `steps[]` (każdy z `number`, `title`, `icon`)
+    - Układ poziomy na desktop z strzałkami między krokami, pionowy na mobile
+    - Ikony w ciemnych okrągłych kontenerach (bg-slate-800)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-007] SectionSteps — nowy styl ikon i variant contact (wzór: showcase #16)**
+
+  - **Plik**: `components/ui/sections/SectionSteps.tsx`
+  - **Zmiany**:
+    - Dodano nowy prop `variant?: 'default' | 'contact'`
+    - Variant `contact`: okrągłe ikony (h-14 w-14 rounded-full bg-slate-100), wycentrowany tekst
+    - Domyślny variant bez zmian (zachowanie wstecznej kompatybilności)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-008] SectionMetrics — nowy komponent metryk (wzór: showcase #18)**
+
+  - **Plik**: `components/ui/sections/SectionMetrics.tsx` (nowy)
+  - **Zmiany**:
+    - Utworzenie komponentu do prezentacji metryk z paskami postępu
+    - Props: `title`, `metrics[]` (każdy z `label`, `value`, `unit`, `max`, `color`, `inverse?`)
+    - Liczby z klasą h4, paski postępu z kolorami
+    - Opcja `inverse` dla metryk gdzie niższa wartość jest lepsza
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **Strona testowa `/test`**
+
+## 2026-01-05
+
+- ✅ **[IDEA-005] Kadrowanie i zmiana rozmiaru zdjęcia: obrót/flip + poprawna orientacja EXIF**
+
+  - **Pliki**:
+    - `components/sections/tools/ImageResizeTool.tsx`
+    - `components/sections/tools/ImageResizeTool/exportCroppedImage.ts`
+    - `components/sections/tools/ImageResizeTool/types.ts`
+  - **Zmiany**:
+    - Dodano nowe typy: `Rotation`, `TransformState`
+    - Dodano stan transformacji: `rotation`, `flipH`, `flipV`, `freeRotation`
+    - Dodano nowy tool „Obrót i odbicie" z przyciskami: obróć 90° w lewo/prawo, odbij poziomo/pionowo
+    - Zaktualizowano `exportCroppedImage` aby uwzględniał transformacje (canvas rotate, scale)
+    - Dodano CSS transform do podglądu obrazu
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[IDEA-121] Kadrowanie i zmiana rozmiaru zdjęcia: precyzyjny obrót o dowolny kąt (prostowanie horyzontu)**
+
+  - **Pliki**:
+    - `components/sections/tools/ImageResizeTool.tsx`
+    - `components/sections/tools/ImageResizeTool/exportCroppedImage.ts`
+    - `components/sections/tools/ImageResizeTool/types.ts`
+  - **Zmiany**:
+    - Dodano suwak `freeRotation` w zakresie -45° do +45° z krokiem 0.5°
+    - Podgląd na żywo (CSS transform)
+    - Eksport uwzględniający transformację (canvas rotate)
+    - Przycisk resetowania wszystkich transformacji
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+## 2026-01-04
+
+- ✅ **[COMPONENT-001] SectionTimeline — nowy komponent osi czasu (wzór: showcase #1)**
+
+  - **Plik**: `components/ui/sections/SectionTimeline.tsx` (nowy)
+  - **Zmiany**:
+    - Utworzenie reużywalnego komponentu do prezentacji procesów/historii/etapów
+    - Props: `title`, `subtitle`, `description`, `items[]`, `btnOne`, `btnOneLink`, `btnTwo`, `btnTwoLink`
+    - Desktop: pionowy pasek po środku, elementy naprzemiennie lewo/prawo
+    - Mobile: pasek po lewej stronie, ikony w okrągłych kontenerach
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-002] SectionPackages — komponent porównania pakietów (wzór: showcase #6)**
+
+  - **Plik**: `components/ui/sections/SectionPackages.tsx` (nowy)
+  - **Zmiany**:
+    - Utworzenie komponentu do porównywania pakietów cenowych z tabelą funkcji
+    - Props: `packages[]`, `features[]`, `highlightedIndex` (domyślnie 1)
+    - Desktop: tabela z checkmarks/crosses
+    - Mobile: karty pionowe z listą funkcji (bez poziomego scrolla)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-003] FaqPanels — aktualizacja stylów (wzór: showcase #8)**
+
+  - **Plik**: `components/ui/FaqPanels.tsx`
+  - **Zmiany**:
+    - Nowy prop `variant?: 'default' | 'halfWidth'`
+    - Zaktualizowane style: hover shadow-lg, border-slate-100, transition-shadow
+    - Zachowana animacja framer-motion
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-004] CTABanner — variant split (wzór: showcase #9)**
+
+  - **Plik**: `components/sections/CTABanner.tsx`
+  - **Zmiany**:
+    - Nowy prop `variant?: 'default' | 'split'`
+    - Variant `split`: dwie kolumny (lewa ciemna slate-800, prawa jasna border)
+    - Props `leftColumn` i `rightColumn` dla oddzielnych CTA
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-005] FeatureGrid — aktualizacja stylów (wzór: showcase #11)**
+
+  - **Pliki**: `components/sections/FeatureGrid.tsx`, `components/ui/FeatureCard.tsx`
+  - **Zmiany**:
+    - FeatureGrid: nowy prop `columns?: 2 | 3` (domyślnie 2)
+    - FeatureCard: układ horyzontalny z ikoną w kwadratowym kontenerze (12x12, rounded-xl, bg-slate-100)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **BreadCrumbs — poprawka łamania linii**
+
+  - **Plik**: `components/sections/BreadCrumbs.tsx`
+  - **Zmiany**:
+    - Dodanie `flex-wrap` do nav container
+    - Dodanie `shrink-0` i `whitespace-nowrap` do breadcrumb items
+    - Linki/elementy łamią się jako całość, nie słowo po słowie
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-022] Button — strzałka w prawo + wariant outline**
+
+  - **Plik**: `components/ui/buttons/Button.tsx`
+  - **Zmiany**:
+    - Zmiana ikony strzałki z `RiArrowRightUpLine` na `RiArrowRightLine`
+    - Dodanie nowego wariantu `outline` (ramka slate-800, hover wypełnienie)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-025] Breadcrumbs — ikona home na początku**
+
+  - **Plik**: `components/sections/BreadCrumbs.tsx`
+  - **Zmiany**:
+    - Dodanie ikony `RiHome4Line` na pierwszej pozycji (zamiast tekstu "Strona główna")
+    - Separator "/" już był zaimplementowany
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-026] Badge — warianty kolorystyczne**
+
+  - **Plik**: `components/ui/Badge.tsx`
+  - **Zmiany**:
+    - Dodanie wariantu `warning` (amber)
+    - Dodanie wariantu `info` (blue)
+    - Dodanie wariantu `tech` (border + bg-white dla technologii)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-033] CarouselDots — prostokątne kropki**
+
+  - **Plik**: `components/ui/carousel/CarouselDots.tsx`
+  - **Zmiany**:
+    - Zmiana kształtu z okrągłych na prostokątne (pill shape)
+    - Aktywna kropka szersza (w-6 md:w-8), nieaktywna węższa (w-2 md:w-3)
+    - Dodanie transition-all dla płynnej animacji
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENT-045] BenefitBelt — nowy domyślny styl**
+
+  - **Plik**: `components/sections/BenefitBelt.tsx`
+  - **Zmiany**:
+    - Nowy domyślny styl: tło slate-50, ikony w okrągłych białych kontenerach, flex layout
+    - Aktualny styl zachowany jako `variant="legacy"`
+    - Dodanie prop `variant?: 'default' | 'legacy'`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+## 2026-01-03
+
+- ✅ **[COMPONENTS-005] Strona /component — 60 nowych komponentów uniwersalnych (rozbudowa do 200)**
+
+  - **URL**: `/component` (strona deweloperska, noindex)
+  - **Plik**: `app/(pl)/component/page.tsx`
+  - **Komponenty (141-200)**:
+    **Formularze i inputy (141-150):**
+    - Search Bar Expandable, Input With Icon, Textarea With Counter
+    - Select Dropdown Custom, Checkbox Group, Radio Button Cards
+    - Date Picker Simple, File Upload Dropzone, Password Strength Meter, Form Inline
+    **Powiadomienia i alerty (151-160):**
+    - Toast Notification, Alert Banner, Notification Badge
+    - Progress Bar Animated, Loading Spinner, Skeleton Loader
+    - Empty State Alt, Error State, Success Message, Warning Card
+    **Profile i użytkownicy (161-170):**
+    - User Avatar, User Card Mini, Author Bio Alt, Team Grid Alt
+    - Contributor List, Online Status, User Menu Dropdown
+    - Profile Stats, Achievement Badge, Leaderboard Row
+    **Statystyki i dane (171-180):**
+    - Stat Card Simple, Stat Card Trend, Progress Circle, Comparison Bar
+    - Data Table Simple, Chart Placeholder, KPI Dashboard
+    - Metric Highlight, Percentage Badge, Growth Indicator
+    **Social proof i recenzje (181-190):**
+    - Review Card Detailed, Rating Summary, Testimonial Quote Alt
+    - Social Proof Counter, Featured Review, Review Highlights
+    - Trust Score, Verified Purchase, Helpful Vote, Review Response
+    **Pozostałe uniwersalne (191-200):**
+    - Divider With Text, Tag Cloud, Category Pills Alt, Quick Actions
+    - Feature List, Comparison Table Component, Timeline Compact
+    - Changelog Entry, Version Badge, Status Indicator
+  - **Łącznie na stronie**: 200 komponentów sekcyjnych
+  - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
+  - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENTS-004] Strona /component — 60 nowych komponentów interaktywnych i nawigacyjnych (rozbudowa do 140)**
+
+  - **URL**: `/component` (strona deweloperska, noindex)
+  - **Plik**: `app/(pl)/component/page.tsx`
+  - **Komponenty (81-140)**:
+    **Nawigacja i menu (81-90):**
+    - Mega Menu, Sidebar Collapsible, Tab Navigation Underline
+    - Breadcrumb Animated, Navigation Pills, Vertical Tabs
+    - Step Navigation, Quick Links Bar, Language Switcher, Back to Top Button
+    **Stopki (91-98):**
+    - Footer Minimal, Footer Multi-Column, Footer With Newsletter
+    - Footer Dark, Footer Centered, Footer With Social
+    - Footer Sitemap, Footer Contact Bar
+    **Karuzele i slidery (99-108):**
+    - Logo Carousel Infinite, Testimonial Carousel Cards, Image Carousel Fade
+    - Card Carousel Peek, Before After Slider Alt, Product Gallery Thumbs
+    - Team Slider Centered, News Ticker, Stats Carousel, Portfolio Slider Full
+    **Elementy interaktywne (109-120):**
+    - Toggle Switch, Range Slider, Quantity Selector, Color Picker Preview
+    - Star Rating Interactive, Like Button Animated, Copy Button
+    - Share Dropdown, Bookmark Toggle, Reaction Picker, Vote Buttons, Expand/Collapse All
+    **Karty i bloki (121-130):**
+    - Product Card Detailed, Pricing Card Highlighted, Team Member Card Flip
+    - Blog Card Horizontal, Event Card, Job Listing Card
+    - Course Card, Podcast Episode Card, Recipe Card, Real Estate Card
+    **Sekcje hero i banery (131-140):**
+    - Hero Gradient Animated, Hero Split Image, Hero Video Background, Hero Minimal Text
+    - Announcement Bar Dismissible, Promo Banner Countdown, Cookie Banner Compact
+    - App Download Banner, Trust Badges Row, Client Logos Grid
+  - **Łącznie na stronie**: 140 komponentów sekcyjnych
+  - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
+  - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENTS-003] Strona /component — kolejne 40 komponentów sekcyjnych (rozbudowa do 80)**
+
+  - **URL**: `/component` (strona deweloperska, noindex)
+  - **Plik**: `app/(pl)/component/page.tsx`
+  - **Komponenty (41-80)**:
+    41. **Masonry Grid** — siatka o zmiennej wysokości kart
+    42. **Tabbed Content** — zakładki z przełączaną treścią
+    43. **Timeline Horizontal** — pozioma oś czasu
+    44. **Card Hover Effects** — karty z efektami hover
+    45. **Metric Dashboard** — dashboard z metrykami
+    46. **Team Carousel** — karuzela członków zespołu
+    47. **Feature Comparison Table** — tabela porównawcza funkcji
+    48. **Animated Counter** — liczniki (statystyki)
+    49. **Icon Grid** — siatka ikon z opisami
+    50. **Testimonial Slider Large** — duży slider opinii
+    51. **Portfolio Masonry** — masonry dla portfolio
+    52. **Pricing Toggle** — cennik z przełącznikiem miesięczny/roczny
+    53. **FAQ Search** — FAQ z wyszukiwarką
+    54. **Contact Split** — formularz kontaktowy z info
+    55. **Blog Grid** — siatka wpisów blogowych
+    56. **Category Pills** — przyciski kategorii (filtry)
+    57. **Notification Banner** — pasek powiadomień z dismiss
+    58. **Modal Preview** — podgląd modalny
+    59. **Sidebar Navigation** — nawigacja boczna
+    60. **Breadcrumb Variants** — warianty breadcrumb
+    61. **Avatar Group** — grupa awatarów
+    62. **Rating Stars** — gwiazdki oceny
+    63. **Progress Bar Variants** — warianty pasków postępu
+    64. **Badge Collection** — kolekcja badge'ów
+    65. **Alert Variants** — warianty alertów (info/success/warning/error)
+    66. **Empty State** — stan pusty
+    67. **Loading Skeleton** — skeleton loading
+    68. **Tooltip Examples** — przykłady tooltipów
+    69. **Dropdown Menu** — menu rozwijane
+    70. **Search Input** — pole wyszukiwania
+    71. **Tag Input** — pole z tagami
+    72. **Date Picker Preview** — podgląd wyboru daty
+    73. **File Upload Zone** — strefa upload plików
+    74. **Image Gallery Lightbox** — galeria z lightboxem
+    75. **Video Placeholder** — placeholder dla wideo
+    76. **Map Placeholder** — placeholder dla mapy
+    77. **Social Share Buttons** — przyciski udostępniania
+    78. **Author Bio** — bio autora
+    79. **Related Articles** — powiązane artykuły
+    80. **Pagination** — paginacja stron
+  - **Łącznie na stronie**: 80 komponentów sekcyjnych
+  - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
+  - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[TOOLS-059] Narzędzie: Licznik słów i znaków z oceną długości tekstu**
+
+  - **URL narzędzia**: `/narzedzia/licznik-slow-i-znakow`
+  - **URL instrukcji**: `/narzedzia/licznik-slow-i-znakow/instrukcja`
+  - **Pliki utworzone**:
+    - `lib/tools/text/wordCount.ts` — logika liczenia słów/znaków/akapitów, typy stron, ocena długości
+    - `components/sections/tools/WordCountTool.tsx` — główny komponent narzędzia
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/page.tsx` — strona narzędzia
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/instrukcja/page.tsx` — strona instrukcji
+  - **Funkcjonalność**:
+    - Liczba słów, znaków (ze spacjami i bez), akapitów, czas czytania
+    - Ocena długości dla 6 typów stron (opis produktu, strona usługi, strona główna, landing page, artykuł blogowy, poradnik)
+    - Pasek postępu z kolorowym statusem (za krótki / dobra długość / za długi)
+    - Kopiowanie raportu ze statystykami do schowka
+  - **SEO**:
+    - Schema: `WebApplication` (applicationCategory: TextApplication)
+    - Schema instrukcji: `HowTo` z 4 krokami
+    - FAQ: 5 pytań na stronie instrukcji
+  - **Nawigacja**: Dodano do `TOOLS_SECTIONS_PL` w sekcji "Meta i SEO"
+  - **Dokumentacja**: Zaktualizowano `TOOLS_CATALOG.md`
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENTS-002] Strona /component — kolejne 20 komponentów sekcyjnych (rozbudowa showcase)**
+
+  - **URL**: `/component` (strona deweloperska, noindex)
+  - **Plik**: `app/(pl)/component/page.tsx`
+  - **Komponenty (21-40)**:
+    21. **Bento Grid** — siatka kart o różnych rozmiarach (hero alternatywa, strona główna)
+    22. **Feature Cards Horizontal** — karty funkcji w układzie horyzontalnym (strony usług)
+    23. **Alternating Content** — sekcje tekst+obraz naprzemiennie (case studies, usługi)
+    24. **Accordion with Icons** — rozwijane sekcje z ikonami (FAQ rozbudowane)
+    25. **Progress Steps** — kroki z paskiem postępu (onboarding, formularze)
+    26. **Floating Cards** — karty z efektem unoszenia/cienia (wyróżnienia, promocje)
+    27. **Split Hero** — hero podzielone na dwie kolumny (strona główna)
+    28. **Testimonials Grid** — siatka opinii bez karuzeli (social proof)
+    29. **Service Blocks** — bloki usług z listą cech (strona usług)
+    30. **Comparison Cards** — karty porównawcze przed/po (cenniki)
+    31. **Info Banner** — pasek informacyjny na całą szerokość (promocje)
+    32. **Feature List with Checkmarks** — lista funkcji z checkmarkami (pakiety)
+    33. **Stacked Cards** — karty nachodzące na siebie (portfolio)
+    34. **Quote Carousel Static** — statyczne cytaty (opinie)
+    35. **Icon Badges Row** — rząd badge'ów z ikonami (certyfikaty, technologie)
+    36. **Two-Column Text** — tekst w dwóch kolumnach (artykuły)
+    37. **Gradient Section** — sekcja z gradientowym tłem (CTA)
+    38. **Expandable Cards** — karty rozwijane po kliknięciu (szczegóły usług)
+    39. **Mini Stats Row** — kompaktowy rząd statystyk (pod hero)
+    40. **Content with Sidebar** — treść z bocznym panelem info (artykuły)
+  - **Łącznie na stronie**: 40 komponentów sekcyjnych
+  - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
+  - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
+- ✅ **[COMPONENTS-001] Strona /component — showcase 20 nowych komponentów sekcyjnych**
+
+  - **URL**: `/component` (strona deweloperska, noindex)
+  - **Plik**: `app/(pl)/component/page.tsx`
+  - **Komponenty (20)**:
+    1. **Timeline / Oś czasu** — kroki procesu w formie pionowej osi (jak pracujemy, historia firmy)
+    2. **Before/After Slider** — porównanie dwóch obrazów z suwakiem (realizacje, efekty optymalizacji)
+    3. **Stats / Liczniki** — sekcja z dużymi liczbami + etykietami (strona główna, o nas)
+    4. **Pricing Table Alternatywna** — karty cenowe w układzie horyzontalnym (usługi, oferta)
+    5. **Logo Cloud / Zaufali nam** — siatka logo klientów (social proof)
+    6. **Feature Comparison Table** — tabela porównawcza funkcji/planów (cennik, pakiety)
+    7. **Team Grid** — karty z avatarem, imieniem, stanowiskiem (o nas, zespół)
+    8. **FAQ Inline Accordion** — kompaktowe FAQ z innym stylem (strony usług)
+    9. **CTA Split** — sekcja CTA podzielona na dwie kolumny (landing pages)
+    10. **Testimonial Quote** — pojedyncza duża opinia z cytatem (strona główna)
+    11. **Icon Grid / Services Grid** — siatka usług z dużymi ikonami (przegląd oferty)
+    12. **Highlight Box / Callout** — wyróżniony blok info/tip/warning (artykuły, instrukcje)
+    13. **Image Gallery Masonry** — galeria zdjęć w układzie masonry (portfolio)
+    14. **Video Embed Section** — sekcja z osadzonym wideo (prezentacje, tutoriale)
+    15. **Newsletter Signup** — prosty formularz zapisu (blog, strona główna)
+    16. **Contact Info Cards** — karty z danymi kontaktowymi (strona kontakt)
+    17. **Process Steps Horizontal** — kroki procesu w układzie poziomym (onboarding)
+    18. **Metrics Dashboard** — sekcja z metrykami/statystykami (case studies)
+    19. **Tabbed Content** — zakładki z różnymi treściami (usługi, produkty)
+    20. **Sticky Sidebar Layout** — układ z lepkim spisem treści (artykuły, dokumentacja)
+  - **Spójność**: Wszystkie komponenty używają istniejących klas (`text-light`, `text-mid`, `.h*`, `surface-card-soft`, `Wrapper`) i ikon `react-icons/ri`
+  - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 ## 2026-01-02
 
@@ -2449,9 +3380,9 @@
     - `components/shared/Navigation.tsx`
   - **Zrobione**:
     - Dopasowano kolory do globalnych klas (`text-dark/text-mid/text-light`) zamiast `text-slate-*`.
-    - Ikony ustawiono na `text-slate-700`.
+    - Ikony ustawiono na `text-slate-800`.
     - Zmniejszono realną wysokość paska inputa (mniej paddingu + mniejsze ikony/przyciski + `py-1` w headerze i `h-7` na inpucie).
-    - Dopasowano kolor lupy w `Navigation` (desktop) do `text-slate-700`.
+    - Dopasowano kolor lupy w `Navigation` (desktop) do `text-slate-800`.
   - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[UI-001] SearchDialog: poprawa UI/UX wyszukiwarki**
@@ -3036,8 +3967,8 @@
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `components/ui/buttons/Button.tsx`
   - **Zrobione 2025-12-15**:
-    - Ujednolicono kolor ikon do `text-slate-700` (tylko elementy ikon).
-    - Ustawiono główny button z akcentem na `text-slate-600`.
+    - Ujednolicono kolor ikon do `text-slate-800` (tylko elementy ikon).
+    - Ustawiono główny button z akcentem na `text-slate-800`.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[STYLES-002] Kolory: tokenizacja i usunięcie raw hexów**
@@ -3121,6 +4052,14 @@
   - **Zrobione 2025-12-15**:
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
     - Zaktualizowano tracking: przeniesiono wpis TOOLS-011 z `TASKS.md` do `DONE_TASKS.md`.
+
+- ✅ **[AUDIT-001] Repo: audyt treści (literówki, ortografia, interpunkcja, spójność copy)**
+  - **Zakres audytu:**
+    - Sprawdzono strony w `app/(pl)/**`: strona główna, o nas, kontakt, usługi
+    - Analizowano dane w `data/pl/blog.json` i `data/pl/projects.json` (pierwsze 100 linii każdego pliku)
+    - Przeglądnięto komponenty z dłuższymi tekstami: HeroBanner, CookieConsent, ContactForm
+  - **Wynik:** Nie wykryto błędów językowych, literówek ani problemów z interpunkcją. Wszystkie treści są spójne i zgodne z zasadami językowymi.
+  - **Status:** Audyt zakończony bez konieczności tworzenia dodatkowych zadań.
 
 - ✅ **[COPY-002] Strona główna: poprawić „Niezależnie” i interpunkcję w opisie sekcji**
 

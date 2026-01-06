@@ -80,7 +80,7 @@ const faqItems = [
   },
   {
     question: 'Czy mogę wygenerować tylko niektóre rozmiary ikon?',
-    answer: 'Tak. Przed wygenerowaniem możesz wybrać, które rozmiary ikon potrzebujesz. Nie musisz generować wszystkich — zaznacz tylko te, które będą używane na stronie.',
+    answer: 'Tak. Przed wygenerowaniem możesz wybrać, które rozmiary ikon potrzebujesz. Możesz wygenerować tylko wybrane rozmiary — zaznacz te, które będą używane na stronie.',
   },
   {
     question: 'Co to jest plik site.webmanifest i czy go potrzebuję?',

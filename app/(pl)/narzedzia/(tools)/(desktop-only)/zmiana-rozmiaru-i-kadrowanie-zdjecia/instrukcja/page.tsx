@@ -165,7 +165,7 @@ export default function Page() {
           demo={
             <div className="tool-section space-y-3">
               <div className="flex flex-wrap gap-2">
-                <button className="flex items-center gap-2 rounded-md border bg-slate-600 px-3 py-1.5 text-[14px]! text-white">
+                <button className="flex items-center gap-2 rounded-md border bg-slate-800 px-3 py-1.5 text-[14px]! text-white">
                   <span>Wymiary w px</span>
                 </button>
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
@@ -226,7 +226,7 @@ export default function Page() {
             {
               icon: <RiFacebookLine className="h-6 w-6" />,
               title: 'Facebook - cover strony (820×360)',
-              description: <p>Zdjęcie w tle na stronie firmowej Facebook. Szeroki, panoramiczny format - pamiętaj, że na różnych urządzeniach może być przycinane inaczej.</p>,
+              description: <p>Zdjęcie w tle na stronie firmowej Facebook. Szeroki, panoramiczny format - uwaga: na różnych urządzeniach może być przycinane inaczej.</p>,
             },
             {
               icon: <RiLinkedinLine className="h-6 w-6" />,
@@ -276,7 +276,7 @@ export default function Page() {
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
                   <span>Wymiary w px</span>
                 </button>
-                <button className="flex items-center gap-2 rounded-md border bg-slate-600 px-3 py-1.5 text-[14px]! text-white">
+                <button className="flex items-center gap-2 rounded-md border bg-slate-800 px-3 py-1.5 text-[14px]! text-white">
                   <span>Gotowe formaty</span>
                 </button>
               </div>
@@ -425,7 +425,7 @@ export default function Page() {
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
                   <span>Kształty kadru</span>
                 </button>
-                <button className="flex items-center gap-2 rounded-md border bg-slate-600 px-3 py-1.5 text-[14px]! text-white">
+                <button className="flex items-center gap-2 rounded-md border bg-slate-800 px-3 py-1.5 text-[14px]! text-white">
                   <span>Przybliżenie</span>
                 </button>
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">

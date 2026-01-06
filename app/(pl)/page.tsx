@@ -247,27 +247,27 @@ export default function HomePage() {
           items={[
             {
               title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Spójne projekty graficzne online oraz offline',
-              icon: <RiBrushLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBrushLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: <GoLaw className="h-6 w-6 text-slate-500" />,
+              icon: <GoLaw className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: <RiBarChart2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiBarChart2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: <MdSupportAgent className="h-6 w-6 text-slate-500" />,
+              icon: <MdSupportAgent className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />

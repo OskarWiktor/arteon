@@ -133,24 +133,24 @@ export default function OfferMarketingPage() {
               description: (
                 <>Weryfikujemy, czy strona pojawia się w Google, które podstrony są pomijane i dlaczego. Sprawdzimy mapę strony i ustawienia, które potrafią ukryć treści przed wyszukiwarką.</>
               ),
-              icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiSearchLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Szybkość ładowania i wygodę korzystania',
               description: (
                 <>Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od strony technicznej. Wskazujemy proste zmiany, które przyspieszą działanie i poprawią wrażenia użytkowników.</>
               ),
-              icon: <RiCheckLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiCheckLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Czy treści są dopasowane do tego, czego szukają klienci',
               description: <>Sprawdzimy, czy Twoje treści odpowiadają na pytania użytkowników i czy nie konkurują ze sobą. Zaproponujemy tematy i układ, który ułatwi zdobywanie wyższych pozycji.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Strukturę strony oraz linki wewnętrzne',
               description: <>Uporządkujemy nawigację i połączenia między podstronami, aby ważne treści były łatwo dostępne dla użytkowników i wyszukiwarki.</>,
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />

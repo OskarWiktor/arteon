@@ -92,7 +92,7 @@ export default function Page() {
             },
           ]}
           btnOne="Zobacz pełną instrukcję"
-          btnOneLink="/narzedzia/generator-palet-kolorow-online/instrukcja"
+          btnOneLink="/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja"
           btnOneVariant="accent"
         />
 

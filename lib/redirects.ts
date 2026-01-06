@@ -74,6 +74,7 @@ export const PATTERN_REDIRECTS = {
  * Używane przez middleware do szybkiego lookup
  */
 export const ALL_STATIC_REDIRECTS: Record<string, string> = {
+  '/uslugi/projekty-graficzne/szablony-postow-social-media': '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
   ...LEGACY_REDIRECTS,
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,

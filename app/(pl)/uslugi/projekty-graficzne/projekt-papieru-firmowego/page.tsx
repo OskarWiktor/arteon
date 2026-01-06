@@ -119,27 +119,27 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Spójny wygląd korespondencji',
               description: <>Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i wiadomości.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Szablony do codziennej pracy',
               description: <>Otrzymujesz gotowe do użycia pliki w wersji do druku oraz praktyczne szablony elektroniczne.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dopasowanie danych i układu',
               description: <>Dbamy o czytelność, hierarchię informacji i zgodność z pozostałymi materiałami marki.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Szybka realizacja i poprawki',
               description: <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -158,7 +158,7 @@ export default function OfferDesignLetterheadPage() {
               <strong>Dla organizacji, instytucji i NGO,</strong> które komunikują się oficjalnie z partnerami, urzędami i beneficjentami.
             </li>
             <li>
-              <strong>Dla marek budujących prestiż również w dokumentach,</strong> a nie tylko na stronie www czy w social mediach.
+              <strong>Dla marek budujących prestiż również w dokumentach,</strong> a nie tylko na stronie www czy w mediach społecznościowych.
             </li>
           </ul>
         </SectionInfo>

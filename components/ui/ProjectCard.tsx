@@ -20,7 +20,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
   return (
     <Link
       href={`${t.projectUrlPrefix}/${project.slug}`}
-      className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+      className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
     >
       <article className="surface-card-lift flex h-full flex-col overflow-hidden">
         <div className={`relative ${sizeClass} w-full`}>

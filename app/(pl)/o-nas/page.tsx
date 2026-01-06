@@ -42,10 +42,10 @@ export default function AboutPage() {
       <HeroBanner title="O nas" description="Arteon - strategia, kreacja i widoczność, które dowożą wynik" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
       <BenefitBelt
         items={[
-          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-700" />, label: 'Strategia i plan działania' },
-          { icon: <RiPaletteLine className="h-6 w-6 text-slate-700" />, label: 'Branding i design' },
-          { icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-700" />, label: 'Technologia (strony i sklepy)' },
-          { icon: <RiMegaphoneLine className="h-6 w-6 text-slate-700" />, label: 'Widoczność i marketing' },
+          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />, label: 'Strategia i plan działania' },
+          { icon: <RiPaletteLine className="h-6 w-6 text-slate-800" />, label: 'Branding i design' },
+          { icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-800" />, label: 'Technologia (strony i sklepy)' },
+          { icon: <RiMegaphoneLine className="h-6 w-6 text-slate-800" />, label: 'Widoczność i marketing' },
         ]}
       />
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">

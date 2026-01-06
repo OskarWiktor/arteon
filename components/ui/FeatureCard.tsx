@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import IconText from './IconText';
 
 type FeatureCardProps = {
   idx?: number;
@@ -22,30 +21,33 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
     <section
       aria-labelledby={headingId}
       aria-describedby={descId}
-      className="surface-card-soft flex h-full flex-col px-5 py-3 md:px-6 md:py-4"
+      className="surface-card-soft flex h-full gap-4 p-4"
       {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
     >
-      <IconText icon={displayIcon} iconClassName="inline-flex items-center justify-center">
-        <h3 id={headingId} className="h6 text-dark font-semibold" itemProp="name">
+      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800">
+        {displayIcon}
+      </div>
+      <div className="flex flex-col">
+        <h3 id={headingId} className="h6 text-dark mb-1" itemProp="name">
           {title}
         </h3>
-      </IconText>
 
-      {description && (
-        <div id={descId} className="text-light mt-1 text-sm leading-6" itemProp="description">
-          {description}
-        </div>
-      )}
+        {description && (
+          <div id={descId} className="text-light text-sm leading-6" itemProp="description">
+            {description}
+          </div>
+        )}
 
-      {Array.isArray(points) && points.length > 0 && (
-        <ul className="mt-2 space-y-2" role="list">
-          {points.map((pt, i) => (
-            <li key={i} className="flex items-start gap-1">
-              <span className="text-light text-base">{pt}</span>
-            </li>
-          ))}
-        </ul>
-      )}
+        {Array.isArray(points) && points.length > 0 && (
+          <ul className="mt-2 space-y-2" role="list">
+            {points.map((pt, i) => (
+              <li key={i} className="flex items-start gap-1">
+                <span className="text-light text-base">{pt}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </section>
   );
 }

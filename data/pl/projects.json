@@ -128,7 +128,7 @@
         },
         {
           "question": "Czy dostanę wersję do druku i wersję do publikacji online?",
-          "answer": "Tak. Przygotowujemy pliki do drukarni oraz wersję cyfrową (np. PDF) gotową do publikacji na stronie lub w social media."
+          "answer": "Tak. Przygotowujemy pliki do drukarni oraz wersję cyfrową (np. PDF) gotową do publikacji na stronie lub w mediach społecznościowych."
         }
       ],
       "seo": {
@@ -235,7 +235,7 @@
         "location": "Camberley, UK"
       },
       "process_steps": [
-        "Analiza dotychczasowej komunikacji w social mediach i ustalenie głównych typów postów (nowy wpis, webinary, przypomnienia, aktualności).",
+        "Analiza dotychczasowej komunikacji w mediach społecznościowych i ustalenie głównych typów postów (nowy wpis, webinary, przypomnienia, aktualności).",
         "Przygotowanie moodboardu oraz palety kolorów spójnej ze stroną MSC Psychotherapy.",
         "Zaprojektowanie układu szablonów pod posty i stories (tekst, zdjęcia, miejsce na wezwanie do działania np. „Link w opisie”).",
         "Test czytelności na urządzeniach mobilnych i dopracowanie detali typograficznych.",
@@ -255,7 +255,7 @@
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
         "btnTwo": "Zobacz ofertę szablonów do mediów społecznośiowych",
-        "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-social-media",
+        "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
         "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
         "overlay": "black"
       },
@@ -685,7 +685,7 @@
         "Plan <strong>marketingu dla psychologa</strong> - blog + krótkie rolki (TikTok/IG)"
       ],
 
-      "goals": "<p>1) Jasny przekaz oferty: terapia indywidualna, par, rodzin, grupowa - z naciskiem na <strong>lęk i nerwicę</strong>, depresję, zaburzenia odżywiania, tematykę seksuologiczną oraz <strong>hipnozę terapeutyczną</strong>.</p><p>2) <strong>Pozycjonowanie dla psychologa</strong> w Camberley i Londynie - frazy: <em>psychoterapia po polsku</em>, <em>polski psychoterapeuta</em> oraz zapytania dotyczące lęku i nerwicy.</p><p>3) <strong>Promocja książki psychologicznej</strong> i przygotowanie do sprzedaży <strong>ebooka</strong> i <strong>audiobooka</strong> na stronie.</p><p>4) Spójność identyfikacji: nowoczesne <strong>logo dla psychologa</strong>, te same kolory i typografia w serwisie i social media.</p>",
+      "goals": "<p>1) Jasny przekaz oferty: terapia indywidualna, par, rodzin, grupowa - z naciskiem na <strong>lęk i nerwicę</strong>, depresję, zaburzenia odżywiania, tematykę seksuologiczną oraz <strong>hipnozę terapeutyczną</strong>.</p><p>2) <strong>Pozycjonowanie dla psychologa</strong> w Camberley i Londynie - frazy: <em>psychoterapia po polsku</em>, <em>polski psychoterapeuta</em> oraz zapytania dotyczące lęku i nerwicy.</p><p>3) <strong>Promocja książki psychologicznej</strong> i przygotowanie do sprzedaży <strong>ebooka</strong> i <strong>audiobooka</strong> na stronie.</p><p>4) Spójność identyfikacji: nowoczesne <strong>logo dla psychologa</strong>, te same kolory i typografia w serwisie i mediach społecznościowych.</p>",
 
       "challenges": "<p>Rozproszony wizerunek (inna estetyka na stronie, FB i IG), edukacyjne treści bez jasnego wskazania na możliwość umówienia się na terapię oraz słaba widoczność lokalna w Google. </p>",
 
@@ -694,7 +694,7 @@
       "outcomes": [
         { "value": "Nowa zoptymalizowana strona", "label": "97/100", "note": "Po optymalizacji (wcześniej ok. 64%)" },
         { "value": "Widoczność lokalna", "label": "W trakcie wzrostu", "note": "Kolejny etap: blog i redakcja treści" },
-        { "value": "Promocja książki", "label": "W trakcie realizacji", "note": "Kolejny etap: funkcje sklepu i rolki w social mediach" }
+        { "value": "Promocja książki", "label": "W trakcie realizacji", "note": "Kolejny etap: funkcje sklepu i rolki w mediach społecznościowych" }
       ],
 
       "process_steps": [

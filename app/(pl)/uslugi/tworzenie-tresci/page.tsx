@@ -99,35 +99,35 @@ export default function OfferContentPage() {
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileSearchLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className="h-6 w-6 text-slate-500" />,
+              icon: <IoSparkles className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiShareForwardLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiTeamLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -196,7 +196,7 @@ export default function OfferContentPage() {
             },
             {
               icon: <RiShareForwardLine className="h-8 w-8" />,
-              title: 'Social media: treści',
+              title: 'Media społecznościowe: treści',
               subtitle: 'od 30 zł',
               description: (
                 <div className="flex h-full flex-col">
@@ -285,7 +285,7 @@ export default function OfferContentPage() {
             },
             {
               question: 'Czy możemy mieć wpływ na styl i język treści?',
-              answer: 'Oczywiście. Na początku wspólnie ustalamy ton komunikacji i dostosowujemy treści do Twojej marki oraz grupy docelowej',
+              answer: 'Tak. Na początku wspólnie ustalamy ton komunikacji i dostosowujemy treści do Twojej marki oraz grupy docelowej',
             },
             {
               question: 'Czy oferujecie też korektę i redakcję istniejących treści?',

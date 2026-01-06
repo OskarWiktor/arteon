@@ -9,7 +9,7 @@ export const marketingSteps: Step[] = [
       { label: 'Pozycjonowanie strony (SEO)', value: 'seo', price: 0, tooltip: 'Poprawa widoczności strony w wynikach wyszukiwania Google.', icon: 'FiTrendingUp' },
       { label: 'Reklamy płatne (PPC)', value: 'ppc', price: 0, icon: 'FiCreditCard', tooltip: 'Płatne kampanie, np. Google Ads, gdzie płacisz za kliknięcie.' },
       { label: 'Marketing treści (Content)', value: 'content', price: 0, icon: 'FiFileText', tooltip: 'Tworzenie tekstów, które przyciągają klientów i poprawiają SEO.' },
-      { label: 'Social Media', value: 'social', price: 0, icon: 'FiShare2', tooltip: 'Obecność i aktywność Twojej marki w mediach społecznościowych.' },
+      { label: 'Media Społecznościowe', value: 'social', price: 0, icon: 'FiShare2', tooltip: 'Obecność i aktywność Twojej marki w mediach społecznościowych.' },
       { label: 'Analityka / Optymalizacja', value: 'analytics', price: 0, icon: 'FiBarChart2', tooltip: 'Analiza danych oraz poprawa skuteczności działań marketingowych.' },
     ],
     branches: {

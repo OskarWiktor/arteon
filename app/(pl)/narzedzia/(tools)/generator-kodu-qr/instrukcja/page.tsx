@@ -276,7 +276,7 @@ export default function Page() {
               title: 'Kolor kodu QR',
               description: (
                 <p>
-                  Kolor ciemnych modułów (domyślnie czarny). Możesz zmienić na dowolny kolor, pamiętając o zachowaniu kontrastu z tłem. Narzędzie ostrzega, gdy kontrast jest zbyt niski (poniżej 3:1).
+                  Kolor ciemnych modułów (domyślnie czarny). Możesz zmienić na dowolny kolor, warto zachować kontrast z tłem. Narzędzie ostrzega, gdy kontrast jest zbyt niski (poniżej 3:1).
                 </p>
               ),
             },

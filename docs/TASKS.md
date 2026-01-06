@@ -6,19 +6,7 @@
 
 Zrobione zadania: `docs/DONE_TASKS.md`.
 
-- 🟡 **[AUDIT-001] Repo: audyt treści (literówki, ortografia, interpunkcja, spójność copy)**
-
-  - Cel: wychwycić błędy językowe i niespójności w treściach (strony/oferta/blog/realizacje/narzędzia).
-  - Zakres (minimum):
-    - `app/(pl)/**` (teksty na stronach)
-    - `data/pl/blog.json`, `data/pl/projects.json`
-    - komponenty zawierające dłuższe copy (sekcje, narzędzia, FAQ)
-  - Raportowanie:
-    - Jeśli wykryjesz problem — dopisz osobne zadanie w `TASKS.md` (np. `COPY-*`, `CONTENT-*`, `CLEANUP-*`) z kryteriami akceptacji.
-    - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu (co sprawdzono + jakie zadania/pomysły dopisano).
-  - Weryfikacja: nie jest wymagana (AUDIT-only).
-
-- 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty)**
+- ✅ **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty)**
 
   - Cel: znaleźć powtarzalne wzorce w kodzie i zaproponować re-use (bez zmiany UI/UX).
   - Zakres (przykłady do sprawdzenia):
@@ -66,21 +54,12 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu + ID nowych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
-- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły”**
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły"**
 
-  - Cel: proponować spójny rozwój serwisu (rozbudowa istniejących obszarów: usługi/realizacje/blog/narzędzia).
-  - Zasada: propozycje zapisuj jako osobne zadania w sekcji **„Pomysły”** na dole pliku.
-  - ID pomysłu: `IDEA-###` (np. `IDEA-001`).
-
-  - Format każdego pomysłu (wymagane):
-    - cel i uzasadnienie (dlaczego to ma sens dla Arteon)
-    - konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - pliki i ścieżki (co najmniej: gdzie powstanie nowa strona w `app/` i jakie komponenty/dane wykorzysta)
-    - SEO: proponowany URL/slug + `metadata.title`/`description` + OG image + schema (jeśli dotyczy)
-    - kryteria akceptacji (konkretne, mierzalne)
-  - Raportowanie:
-    - Do `DONE_TASKS.md` dodaj wpis: ile pomysłów dodano + ID dodanych pomysłów.
-  - Weryfikacja: nie jest wymagana (AUDIT-only).
+  - **Status:** Wykonano 2026-01-06
+  - **Zakres:** Przegląd 22 nowych komponentów UI + analiza modyfikacji istniejących
+  - **Rezultat:** Wygenerowano 30 pomysłów (IDEA-121 do IDEA-150) w sekcji "UI/UX - Wykorzystanie nowych komponentów"
+  - **Szczegóły:** Zobacz wpis w `DONE_TASKS.md` (2026-01-06)
 
 - ❌ **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
 
@@ -89,10 +68,10 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Wszystkie artykuły w `data/pl/blog.json`.
     - Priorytet: zacznij od artykułów, które już mają potencjał (jeśli masz dane z GSC/GA4: pozycje ~4–20, wysoki potencjał CTR/ruchu; jeśli nie masz danych: wybierz 8–12 najważniejszych tematycznie dla usług Arteon).
   - Co analizujemy (dla każdego artykułu):
-    - Czy odpowiada wprost na główne pytanie/intencję i czy ma brakujące „pod-pytania”, które warto dopisać jako nowe H2/H3.
+    - Czy odpowiada wprost na główne pytanie/intencję i czy ma brakujące „pod-pytania", które warto dopisać jako nowe H2/H3.
     - Czy są miejsca, gdzie warto dodać:
       - nowe sekcje (np. "Najczęstsze błędy", "Przykłady", "Kroki", "Porównanie opcji", "FAQ")
-      - rozwinięcia wyjaśnień (definicje + „po co to?”)
+      - rozwinięcia wyjaśnień (definicje + „po co to?")
       - linki wewnętrzne do:
         - usług (`/uslugi/...`),
         - narzędzi (`/narzedzia/...`),
@@ -107,7 +86,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
       - listą konkretnych linków wewnętrznych do wplecenia (dokładne URL),
       - kryteriami akceptacji (konkret, mierzalne),
       - plikami do edycji (min. `data/pl/blog.json`).
-    - Nie dodawaj `IDEA-*` ani wpisów do sekcji „Pomysły” — wynik ma być egzekwowalnym backlogiem.
+    - Nie dodawaj `IDEA-*` ani wpisów do sekcji „Pomysły" — wynik ma być egzekwowalnym backlogiem.
     - Do `DONE_TASKS.md` po wykonaniu audytu dopisz wpis: ile artykułów przeanalizowano + ID utworzonych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
@@ -214,63 +193,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Jeśli wykryjesz problemy:
     - Dopisz osobne zadania `COPY-###` per realizacja (slug).
   - Weryfikacja: nie jest wymagana (AUDIT-only).
-
-- ❌ **[SEO-013] OG images: dedykowane grafiki dla kluczowych stron (hub pages)**
-
-  - Cel:
-    - Unikalne, spójne grafiki OpenGraph dla kluczowych stron (huby) + usunięcie TODO.
-  - Zakres (strony):
-    - `/uslugi`, `/realizacje`, `/o-nas`, `/kontakt`, `/edukacja`
-  - Pliki (co najmniej):
-    - `app/(pl)/uslugi/page.tsx`
-    - `app/(pl)/realizacje/page.tsx`
-    - `app/(pl)/o-nas/page.tsx`
-    - `app/(pl)/kontakt/page.tsx`
-    - `app/(pl)/edukacja/page.tsx`
-    - `public/assets/og/*` (docelowe pliki 1200x630px)
-  - Kryteria akceptacji:
-    - Każda z ww. stron ma unikalny `openGraph.images[].url` wskazujący na dedykowany plik.
-    - Wszystkie URL-e w OG są absolutne (na `https://www.arteonagency.pl`).
-    - `npm run lint` i `npm run build` przechodzą.
-
-- ❌ **[SEO-017] Ikony: potwierdzić publiczną dostępność + spójne linkowanie (`apple-touch-icon`, `icon-512x512`)**
-
-  - Cel:
-    - Brak 404 dla `/apple-touch-icon.png` oraz `/icon-512x512.png` (Lighthouse) + spójne użycie w `metadata` i schema.
-  - Pliki:
-    - `public/apple-touch-icon.png`
-    - `public/icon-512x512.png`
-    - `app/layout.tsx`
-    - `components/shared/Footer.tsx`
-    - `app/(pl)/edukacja/[category]/[slug]/page.tsx`
-    - `app/(pl)/realizacje/[slug]/page.tsx`
-  - Kryteria akceptacji:
-    - Oba URL-e zwracają 200 i serwują właściwe pliki.
-    - W schema (logo/publisher/image) używane są absolutne URL-e do ikon.
-    - `npm run lint` i `npm run build` przechodzą.
-
-- ❌ **[PERF-001] Assets: odchudzić największe obrazy w `public/assets/**` (bez zmiany wyglądu)\*\*
-
-  - Pliki (największe):
-    - `public/assets/projects/arteon-a-msc2.webp` (~791KB)
-    - `public/assets/bg/abstract-bg1.webp` (~344KB)
-    - `public/assets/blog/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp.webp` (~312KB)
-    - `public/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp` (~299KB)
-  - Kryteria akceptacji:
-    - Rozmiary plików są mniejsze (w szczególności tła wykorzystywane jako CSS background).
-    - Brak broken image paths.
-    - `npm run lint` i `npm run build` przechodzą.
-
-- ❌ **[PERF-003] Edukacja: `CodeBlock` jako Server Component (JS tylko dla kopiowania)**
-
-  - Pliki:
-    - `components/ui/CodeBlock.tsx`
-    - `components/ui/buttons/CopyButton.tsx`
-  - Zakres:
-    - Usunąć `'use client'` z `CodeBlock` i zostawić client boundary tylko dla `CopyButton`.
-  - Kryteria akceptacji:
-    - Brak zmian w UI/UX.
-    - `npm run lint` i `npm run build` przechodzą.
 
 - ❌ **[PROJECT-001] Realizacje: uzupełnić brakujące `seo.title` i `seo.description`**
 
@@ -418,11 +340,12 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Powyższe pola są uzupełnione i spójne semantycznie.
     - `npm run lint` i `npm run build` przechodzą.
 
+
 ---
 
 ## Pomysły
 
-- ❌ **[IDEA-019] O nas: „Jak pracujemy” — podstrona procesu współpracy (krok po kroku)**
+- ❌ **[IDEA-019] O nas: „Jak pracujemy"” — podstrona procesu współpracy (krok po kroku)**
 
   - Cel i uzasadnienie:
     - Strona domykająca decyzję: klarowny proces + mniejsza niepewność przed kontaktem.
@@ -524,34 +447,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Schema: `WebPage` + `BreadcrumbList`
   - Kryteria akceptacji:
     - Strona jasno rozróżnia „dla klientów” vs „dla partnerów” i prowadzi do właściwego CTA.
-  - Weryfikacja:
-    - `npm run lint`
-    - `npm run build`
-
-- ❌ **[IDEA-005] Kadrowanie i zmiana rozmiaru zdjęcia: obrót/flip + poprawna orientacja EXIF**
-
-  - Cel i uzasadnienie:
-    - Zdjęcia z telefonu często mają orientację EXIF i w edytorze wyglądają na obrócone — to psuje kadrowanie i eksport.
-    - Dodać brakujące podstawy edycji (obrót/odbicie) bez przenoszenia użytkownika do zewnętrznych narzędzi.
-  - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
-    - Przy imporcie poprawnie uwzględniać `EXIF Orientation` (podgląd = realny kadr).
-    - Dodać akcje: `Obróć 90° w lewo/prawo`, `Odbij w poziomie/pionie`.
-    - Ująć transformacje w eksporcie (`exportCroppedImage`) tak, aby wynik był zgodny z preview.
-  - Pliki i ścieżki:
-    - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
-    - `components/sections/tools/ImageResizeTool.tsx`
-    - `components/sections/tools/ImageResizeTool/exportCroppedImage.ts`
-    - (opcjonalnie nowe) `lib/tools/image/exifOrientation.ts` (odczyt orientacji)
-  - SEO:
-    - URL/slug: `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`
-    - `metadata.title`: `Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund`
-    - `metadata.description`: `Darmowe narzędzie do zmiany kadru i rozmiaru zdjęcia. Wybierz gotowy format i przygotuj zdjęcie pod media społecznościowe lub stronę. Bez limitu kreacji.`
-    - OG image: `public/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp`
-    - Schema: `WebApplication`
-  - Kryteria akceptacji:
-    - Zdjęcia z orientacją EXIF (np. portrait z iPhone) są wyświetlane poprawnie bez ręcznego obracania.
-    - Eksport uwzględnia obrót/flip i jest w 100% zgodny z podglądem.
-    - Brak regresji w ograniczeniach formatu (np. `circle` wymusza alpha → JPG niedostępny).
   - Weryfikacja:
     - `npm run lint`
     - `npm run build`
@@ -1073,5 +968,520 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Cel: Wyjaśnienie EAA 2025, kogo dotyczy, jakie zmiany wprowadza, jak się przygotować.
   - Powiązane usługi: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`
   - Typ artykułu: Edukacyjny
+
+### UI/UX - Wykorzystanie nowych komponentów
+
+- ❌ **[IDEA-121] Strona porównawcza pakietów usług - SectionPackages**
+
+  - Cel: Utworzenie dedykowanej strony `/uslugi/porownanie-pakietow` prezentującej pakiety usług dla różnych typów firm (startup, mała firma, średnia firma) z wykorzystaniem SectionPackages.
+  - Uzasadnienie: Ułatwienie klientom wyboru odpowiedniego zakresu współpracy, zwiększenie transparentności oferty.
+  - Pliki:
+    - `app/(pl)/uslugi/porownanie-pakietow/page.tsx` (nowa strona)
+    - `components/ui/sections/SectionPackages.tsx` (istniejący)
+  - SEO:
+    - URL: `/uslugi/porownanie-pakietow`
+    - Title: `Porównanie pakietów usług - znajdź odpowiedni dla swojej firmy | Arteon`
+    - Description: `Sprawdź, który pakiet usług Arteon najlepiej odpowiada potrzebom Twojej firmy. Porównaj zakres, funkcje i korzyści.`
+    - OG Image: `/assets/og/porownanie-pakietow.webp` (1200x630px)
+    - Schema: WebPage + Table
+  - Kryteria akceptacji:
+    - Tabela porównująca 3 pakiety (Basic, Professional, Enterprise)
+    - Min. 8 funkcji do porównania
+    - Responsywność mobile (karty) i desktop (tabela)
+    - CTA do kontaktu po każdym pakiecie
+    - Metadata i OG complete
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-122] Timeline historii Arteon na stronie O nas - SectionTimeline**
+
+  - Cel: Dodanie sekcji SectionTimeline na stronie `/o-nas` pokazującej kamienie milowe rozwoju agencji.
+  - Uzasadnienie: Budowanie zaufania poprzez pokazanie doświadczenia i rozwoju firmy.
+  - Pliki:
+    - `app/(pl)/o-nas/page.tsx` (edycja)
+    - `components/ui/sections/SectionTimeline.tsx` (istniejący)
+  - SEO: Wzbogacenie istniejącej strony /o-nas o structured content
+  - Kryteria akceptacji:
+    - Min. 5 etapów timeline (np. założenie, pierwsze projekty, rozwój zespołu, nowe usługi, obecność)
+    - Ikony z react-icons/ri dla każdego etapu
+    - Treść zgodna z faktami (zasada z memory)
+    - Layout alternating desktop, vertical mobile
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-123] Proces realizacji projektu z rozwijanymi szczegółami - SectionSteps expandable**
+
+  - Cel: Rozbudowa sekcji WorkSteps na stronach usług o expandableContent z dodatkowymi szczegółami każdego etapu.
+  - Uzasadnienie: Zwiększenie transparentności procesu bez przytłaczania użytkownika na pierwszy rzut oka.
+  - Pliki:
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` (edycja)
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` (edycja)
+    - `components/sections/steps/WorkSteps.tsx` (wykorzystanie istniejącej funkcji expandable)
+  - SEO: Wzbogacenie content existing pages
+  - Kryteria akceptacji:
+    - Każdy krok procesu ma expandableContent z min. 2-3 bullet points szczegółów
+    - Smooth animation przy rozwijaniu
+    - Ikona strzałki wskazująca stan (rozwinięte/zwinięte)
+    - Tylko jeden krok może być rozwinięty jednocześnie
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-124] Galeria realizacji z lightboxem - SectionImageGallery**
+
+  - Cel: Dodanie SectionImageGallery na stronie `/realizacje` do prezentacji portfolio projektów graficznych.
+  - Uzasadnienie: Lepsze UX przy przeglądaniu portfolio, możliwość powiększenia i porównywania realizacji.
+  - Pliki:
+    - `app/(pl)/realizacje/page.tsx` (edycja)
+    - `components/ui/sections/SectionImageGallery.tsx` (istniejący)
+  - SEO: Enhancement existing /realizacje page
+  - Kryteria akceptacji:
+    - Grid 2/3/4 kolumny (mobile/tablet/desktop)
+    - Lightbox z nawigacją klawiszową (← →)
+    - Każdy obraz ma alt text zgodny z projektem
+    - Counter pokazujący pozycję (np. "3 / 12")
+    - Loading na mobile <768px bez przesunięcia layoutu
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-125] Porównanie przed/po dla realizacji - SectionBeforeAfter**
+
+  - Cel: Dodanie SectionBeforeAfter na wybranych stronach realizacji (np. rebrandingi, redesigny) pokazujących transformację.
+  - Uzasadnienie: Wizualne pokazanie wartości usług Arteon, case study impact.
+  - Pliki:
+    - `app/(pl)/realizacje/[slug]/page.tsx` (edycja warunkowa - tylko dla projektów z before/after)
+    - `components/ui/sections/SectionBeforeAfter.tsx` (istniejący)
+    - `data/pl/projects.json` (dodanie pól beforeImage/afterImage)
+  - SEO: Enhancement project case studies
+  - Kryteria akceptacji:
+    - Slider działa smooth na touch i mouse
+    - Labels "Przed" i "Po" wyraźnie widoczne
+    - Responsywny aspect ratio
+    - Warunkowe renderowanie (tylko jeśli beforeImage i afterImage są zdefiniowane)
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-126] Bento grid na stronie głównej z usługami - SectionBento**
+
+  - Cel: Zastąpienie obecnej sekcji usług na stronie głównej componentem SectionBento dla bardziej dynamicznej prezentacji.
+  - Uzasadnienie: Nowoczesny layout, lepsze wykorzystanie przestrzeni, wizualna hierarchia usług.
+  - Pliki:
+    - `app/(pl)/page.tsx` (edycja)
+    - `components/ui/sections/SectionBento.tsx` (istniejący)
+  - SEO: Enhancement homepage
+  - Kryteria akceptacji:
+    - 6-8 elementów bento (główne usługi + narzędzia)
+    - Mix rozmiarów (large dla głównych, medium/small dla pozostałych)
+    - Ikony z react-icons/ri
+    - 2-3 elementy z backgroundImage (realizacje)
+    - CTA buttons do kluczowych usług
+    - Grid responsive 2 cols mobile, 4 cols desktop
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-127] Metryki projektów na case studies - SectionMetrics**
+
+  - Cel: Dodanie SectionMetrics na stronach realizacji pokazujących kluczowe metryki sukcesu (wzrost ruchu, konwersji, czasu na stronie).
+  - Uzasadnienie: Data-driven storytelling, pokazanie wymiernych rezultatów współpracy.
+  - Pliki:
+    - `app/(pl)/realizacje/[slug]/page.tsx` (edycja)
+    - `components/ui/sections/SectionMetrics.tsx` (istniejący)
+    - `data/pl/projects.json` (dodanie pola metrics[])
+  - SEO: Enhanced case studies with measurable results
+  - Kryteria akceptacji:
+    - 4 metryki na realizację (np. +150% ruch, 3.2s czas ładowania, 45% bounce rate, 98/100 Lighthouse)
+    - Progress bars z animacją przy scroll into view
+    - Kolory bars zgodne z znaczeniem (zielony = dobry, czerwony = do poprawy z inverse)
+    - Warunkowe renderowanie (tylko jeśli project.metrics istnieje)
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-128] Quick links do popularnych stron - SectionQuickLinks**
+
+  - Cel: Dodanie SectionQuickLinks w footer przed główną stopką z szybkimi linkami do najczęściej odwiedzanych stron.
+  - Uzasadnienie: Poprawa nawigacji, zmniejszenie bounce rate, ułatwienie dostępu do kluczowych sekcji.
+  - Pliki:
+    - `components/shared/Footer.tsx` (edycja)
+    - `components/ui/sections/SectionQuickLinks.tsx` (istniejący)
+  - SEO: Internal linking boost, UX improvement
+  - Kryteria akceptacji:
+    - 8-12 linków (usługi, narzędzia, popularne artykuły, realizacje)
+    - Ikony z react-icons/ri dla każdego linka
+    - Layout flex wrap, center align
+    - Hover states z subtle shadow
+    - Tło slate-50 dla wizualnego oddzielenia od głównej stopki
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-129] Tabs z kategoriami usług - SectionTabs**
+
+  - Cel: Refactor strony `/uslugi` na SectionTabs grupujące usługi po kategoriach (Web, Grafika, Marketing, Content).
+  - Uzasadnienie: Lepszy UX przy dużej liczbie usług, łatwiejsze skanowanie oferty.
+  - Pliki:
+    - `app/(pl)/uslugi/page.tsx` (refactor)
+    - `components/ui/sections/SectionTabs.tsx` (istniejący)
+  - SEO: Improved content organization on /uslugi
+  - Kryteria akceptacji:
+    - 4 zakładki (Strony i sklepy, Projekty graficzne, Marketing i SEO, Treści)
+    - Każda zakładka zawiera cards z usługami danej kategorii
+    - Active state wyraźnie widoczny
+    - Keyboard navigation (tab, arrows)
+    - Mobile: ikony bez tekstu w tablist
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-130] Vertical tabs FAQ na dedykowanej stronie - SectionVerticalTabs**
+
+  - Cel: Utworzenie strony `/faq` z SectionVerticalTabs grupującymi FAQ po kategoriach (Usługi, Wycena, Proces, Technologia, SEO).
+  - Uzasadnienie: Centralne miejsce na najczęściej zadawane pytania, better SEO dla long-tail queries.
+  - Pliki:
+    - `app/(pl)/faq/page.tsx` (nowa strona)
+    - `components/ui/sections/SectionVerticalTabs.tsx` (istniejący)
+  - SEO:
+    - URL: `/faq`
+    - Title: `Najczęściej zadawane pytania (FAQ) - Arteon`
+    - Description: `Odpowiedzi na najczęstsze pytania dotyczące usług, procesu współpracy, wyceny i technologii. Sprawdź FAQ Arteon.`
+    - OG Image: `/assets/og/faq.webp` (1200x630px)
+    - Schema: FAQPage
+  - Kryteria akceptacji:
+    - 5 kategorii tabs, min. 4 pytania w każdej
+    - Content z istniejących FAQ ze stron usług + nowe
+    - Mobile: horizontal scroll tabs
+    - Desktop: fixed sidebar z tabs
+    - Każde pytanie jako <h3> dla SEO
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-131] Icon badges ze stosami technologicznymi - SectionIconBadges**
+
+  - Cel: Dodanie SectionIconBadges na stronach usług pokazujących technologie używane w projektach.
+  - Uzasadnienie: Transparency, pokazanie expertise w konkretnych technologiach.
+  - Pliki:
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` (edycja)
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` (edycja)
+    - `components/ui/sections/SectionIconBadges.tsx` (istniejący)
+  - SEO: Keyword enrichment (Next.js, React, WordPress, WooCommerce itp.)
+  - Kryteria akceptacji:
+    - 6-10 badges per strona usług
+    - Ikony z react-icons/ri lub logos jako SVG
+    - Rounded pills layout
+    - Flex wrap, center alignment
+    - Subtle border + shadow
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-132] Karuzela obrazów realizacji na case study - SectionImageCarousel**
+
+  - Cel: Dodanie SectionImageCarousel na stronach realizacji pokazującej różne widoki/screeny projektu.
+  - Uzasadnienie: Lepsze pokazanie zakresu projektu, multiple perspectives.
+  - Pliki:
+    - `app/(pl)/realizacje/[slug]/page.tsx` (edycja)
+    - `components/ui/sections/SectionImageCarousel.tsx` (istniejący)
+    - `data/pl/projects.json` (dodanie pola carouselImages[])
+  - SEO: Enhanced visual content on case studies
+  - Kryteria akceptacji:
+    - 4-8 slajdów per realizacja
+    - Autoplay: false (user control)
+    - Dots navigation + arrow buttons
+    - Overlay z opisem każdego widoku
+    - Variant: default (aspect-video)
+    - Lazy loading obrazów
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-133] Hero split na stronach usług - SectionHeroSplit**
+
+  - Cel: Zastąpienie HeroBanner componentem SectionHeroSplit na wybranych stronach usług dla lepszej prezentacji.
+  - Uzasadnienie: Więcej miejsca na content, image wspiera przekaz, nowocześniejszy layout.
+  - Pliki:
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-logo/page.tsx` (edycja)
+    - `app/(pl)/uslugi/projekty-graficzne/projekt-wizytowki/page.tsx` (edycja)
+    - `components/sections/SectionHeroSplit.tsx` (istniejący)
+  - SEO: Enhanced hero section z image + structured content
+  - Kryteria akceptacji:
+    - Image po prawej, content po lewej
+    - ButtonGroup z primary + secondary CTA
+    - Subtitle (eyebrow) dla context
+    - Aspect square dla images
+    - Responsive: stack na mobile
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-134] Feature comparison dla planów hostingowych - SectionFeatureComparison**
+
+  - Cel: Utworzenie strony `/uslugi/hosting-i-wsparcie` z SectionFeatureComparison pokazującą różne plany wsparcia technicznego.
+  - Uzasadnienie: Nowa usługa recurring revenue, jasne porównanie planów.
+  - Pliki:
+    - `app/(pl)/uslugi/hosting-i-wsparcie/page.tsx` (nowa strona)
+    - `components/ui/sections/SectionFeatureComparison.tsx` (istniejący)
+  - SEO:
+    - URL: `/uslugi/hosting-i-wsparcie`
+    - Title: `Hosting i wsparcie techniczne stron internetowych | Arteon`
+    - Description: `Profesjonalny hosting i wsparcie techniczne dla stron i sklepów internetowych. Porównaj plany i wybierz odpowiedni dla siebie.`
+    - OG Image: `/assets/og/hosting-i-wsparcie.webp` (1200x630px)
+    - Schema: WebPage + Service
+  - Kryteria akceptacji:
+    - 3 plany (Basic, Pro, Enterprise)
+    - Min. 10 funkcji do porównania
+    - Highlighted column dla recommended plan
+    - Mobile: karty zamiast tabeli
+    - Check/X icons dla features
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-135] Feature list korzyści na landing pages - SectionFeatureList**
+
+  - Cel: Dodanie SectionFeatureList na stronach landing pages dla kampanii pokazującą kluczowe korzyści.
+  - Uzasadnienie: Quick scan benefits, conversion optimization.
+  - Pliki:
+    - Przygotowanie komponentu dla przyszłych landing pages
+    - `components/ui/sections/SectionFeatureList.tsx` (istniejący)
+  - SEO: Structured benefits for conversion pages
+  - Kryteria akceptacji:
+    - Centered card max-w-2xl
+    - 2 kolumny grid dla features
+    - Green checkmarks w circle bg
+    - Border + shadow na karcie
+    - Reusable dla różnych LP
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-136] Info banner dla promocji/ogłoszeń - SectionInfoBanner**
+
+  - Cel: Dodanie SectionInfoBanner na top of page dla ważnych komunikatów (promocje, wydarzenia, nowe usługi).
+  - Uzasadnienie: Zwiększenie visibility ważnych informacji, conversion boost dla ofert czasowych.
+  - Pliki:
+    - `app/(pl)/layout.tsx` lub warunkowe na `page.tsx` (edycja)
+    - `components/ui/sections/SectionInfoBanner.tsx` (istniejący)
+  - SEO: Announcement visibility
+  - Kryteria akceptacji:
+    - Sticky top lub static w headerze
+    - Icon (amber) + text + CTA button
+    - Dark bg (slate-800) + white text
+    - Highlight text bold
+    - Warunkowe renderowanie (controlled via config/env)
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-137] Notification banner dla alertów systemowych - SectionNotificationBanner**
+
+  - Cel: Wykorzystanie SectionNotificationBanner dla komunikatów o statusie (sukces, info, warning) po akcjach użytkownika.
+  - Uzasadnienie: Better UX feedback, clear system state communication.
+  - Pliki:
+    - `app/(pl)/kontakt/page.tsx` (po wysłaniu formularza)
+    - `components/ui/sections/SectionNotificationBanner.tsx` (istniejący)
+  - SEO: N/A (UI component)
+  - Kryteria akceptacji:
+    - 3 variants (success, info, warning)
+    - Dismissible z X button
+    - Auto-dismiss po 5s dla success
+    - Ikony z react-icons/ri
+    - Kolory tła/tekstu zgodne z variant
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-138] News ticker dla aktualności - SectionNewsTicker**
+
+  - Cel: Dodanie SectionNewsTicker na stronie głównej lub /aktualnosci z bieżącymi informacjami o projektach/nagrodach.
+  - Uzasadnienie: Dynamic content, pokazanie aktywności firmy, trust building.
+  - Pliki:
+    - `app/(pl)/page.tsx` (opcjonalne umieszczenie)
+    - `components/ui/sections/SectionNewsTicker.tsx` (istniejący)
+  - SEO: Fresh content signals
+  - Kryteria akceptacji:
+    - Marquee animation smooth 30s
+    - Dark bg (slate-800)
+    - Ikony opcjonalne dla każdego item
+    - Duplicated items dla seamless loop
+    - Pause on hover (opcjonalne)
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-139] Process steps na stronach narzędzi - SectionProcess**
+
+  - Cel: Dodanie SectionProcess na stronach instrukcji narzędzi pokazującego uproszczony 3-4 krokowy proces użycia.
+  - Uzasadnienie: Quick start guide, onboarding UX dla narzędzi.
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx` (edycja)
+    - `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/instrukcja/page.tsx` (edycja)
+    - `components/ui/sections/SectionProcess.tsx` (istniejący)
+  - SEO: How-to content enhancement
+  - Kryteria akceptacji:
+    - 3-4 kroki per narzędzie
+    - Ikony z react-icons/ri
+    - Numbered steps z label "Krok X"
+    - Arrow icons między krokami (desktop only)
+    - Stack na mobile, row na desktop
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-140] Countdown dla limitowanych ofert - SectionCountdown**
+
+  - Cel: Przygotowanie SectionCountdown dla przyszłych kampanii z limitowanymi ofertami.
+  - Uzasadnienie: FOMO, urgency dla conversion, seasonal campaigns.
+  - Pliki:
+    - Component ready w systemie dla przyszłego użycia
+    - `components/ui/sections/SectionCountdown.tsx` (istniejący)
+  - SEO: Seasonal campaign support
+  - Kryteria akceptacji:
+    - Real-time countdown (dni, godz, min, sek)
+    - Gradient bg (red to orange) dla urgency
+    - CTA button w center
+    - Responsive boxes dla liczb
+    - Auto-update co 1s
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-141] Blog card horizontal dla featured posts - SectionBlogCardHorizontal**
+
+  - Cel: Wykorzystanie SectionBlogCardHorizontal na stronie głównej dla featured/latest blog posts.
+  - Uzasadnienie: Better visual hierarchy, więcej info na pierwszy rzut oka, lepsze CTR.
+  - Pliki:
+    - `app/(pl)/page.tsx` (edycja blog section)
+    - `components/ui/sections/SectionBlogCardHorizontal.tsx` (istniejący)
+  - SEO: Enhanced blog promotion na homepage
+  - Kryteria akceptacji:
+    - 2-3 featured posts horizontal layout
+    - Image po lewej (square), content po prawej
+    - Category + date metadata visible
+    - Hover scale effect na image
+    - Responsive: stack na mobile, row na desktop
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-142] Licznik słów jako standalone narzędzie - WordCountTool dedykowana strona**
+
+  - Cel: Utworzenie dedykowanej strony `/narzedzia/licznik-slow-i-znakow` z pełną integracją WordCountTool.
+  - Uzasadnienie: Standalone tool dla content writers, SEO opportunity (high search volume keyword).
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/page.tsx` (nowa strona)
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/instrukcja/page.tsx` (nowa instrukcja)
+    - `components/sections/tools/WordCountTool.tsx` (istniejący)
+    - `lib/tools/text/wordCount.ts` (istniejący)
+  - SEO:
+    - URL: `/narzedzia/licznik-slow-i-znakow`
+    - Title: `Darmowy licznik słów i znaków online - sprawdź długość tekstu | Arteon`
+    - Description: `Zlicz słowa, znaki, akapity i sprawdź czas czytania tekstu. Darmowe narzędzie online z oceną długości dla różnych typów treści.`
+    - OG Image: `/assets/og/narzedzia/licznik-slow-i-znakow.webp`
+    - Schema: WebApplication + HowTo
+  - Kryteria akceptacji:
+    - Tool funkcjonalny z wszystkimi metrykami
+    - Wybór typu strony (blog, landing, product itp.)
+    - Ocena długości z progress bar
+    - Copy report button
+    - Instrukcja z FAQ
+    - Mobile support (non-desktop-only)
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-143] Animated loaders dla tool loading states - SectionAnimatedLoader**
+
+  - Cel: Integracja SectionAnimatedLoader w narzędziach przy długich operacjach (image processing, generation).
+  - Uzasadnienie: Better UX podczas wait time, professional feel.
+  - Pliki:
+    - `components/sections/tools/JpgPngToWebp.tsx` (edycja)
+    - `components/sections/tools/ImageResizeTool.tsx` (edycja)
+    - `components/ui/sections/SectionAnimatedLoader.tsx` (istniejący)
+  - SEO: N/A (UX improvement)
+  - Kryteria akceptacji:
+    - Spinner variant dla image processing
+    - Dots variant dla multi-step operations
+    - 3 rozmiary (small, medium, large)
+    - Accessibility (role="status", aria-label)
+    - Replace existing loading states
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-144] Rozwijane FAQ w SectionSteps na stronach usług**
+
+  - Cel: Wykorzystanie expandableContent w SectionSteps do dodania FAQ bezpośrednio w sekcjach procesowych na stronach usług.
+  - Uzasadnienie: Contextual help, reduce scrolling, answer objections inline.
+  - Pliki:
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` (edycja WorkSteps)
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` (edycja WorkSteps)
+    - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx` (edycja TechSteps)
+  - SEO: FAQ content embedded w process flow
+  - Kryteria akceptacji:
+    - 1-2 FAQ per krok procesu w expandableContent
+    - Click to expand z arrow icon rotation
+    - Smooth accordion animation
+    - Only one step expanded at a time
+    - FAQ jako <h4> dla SEO
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-145] Bento grid dla narzędzi na /narzedzia - SectionBento**
+
+  - Cel: Refactor strony `/narzedzia` z ToolsCarousel na SectionBento dla lepszej organizacji i visual hierarchy.
+  - Uzasadnienie: Więcej narzędzi visible at once, kategorie size = priority, lepsze UX.
+  - Pliki:
+    - `app/(pl)/narzedzia/page.tsx` (refactor)
+    - `components/ui/sections/SectionBento.tsx` (istniejący)
+  - SEO: Better tools page organization
+  - Kryteria akceptacji:
+    - 8-10 narzędzi w bento grid
+    - Large size dla popularnych (kontrast WCAG, WebP converter)
+    - Medium dla średnio używanych
+    - Small dla niszowych
+    - Ikony z react-icons/ri
+    - CTA "Użyj narzędzia" na każdym
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-146] Timeline procesu projektowego dla case studies - SectionTimeline**
+
+  - Cel: Dodanie SectionTimeline na wybrane strony realizacji pokazującej timeline projektu (brief, design, development, launch).
+  - Uzasadnienie: Story-telling, pokazanie profesjonalnego procesu, trust building.
+  - Pliki:
+    - `app/(pl)/realizacje/[slug]/page.tsx` (edycja warunkowa)
+    - `components/ui/sections/SectionTimeline.tsx` (istniejący)
+    - `data/pl/projects.json` (dodanie pola timeline[])
+  - SEO: Process documentation w case studies
+  - Kryteria akceptacji:
+    - 4-6 kroków timeline per projekt
+    - Alternating layout (desktop)
+    - Vertical line przez środek
+    - Ikony dla każdego milestone
+    - Opis każdego etapu 2-3 zdania
+    - Warunkowe renderowanie
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-147] Tabs dla kategorii projektów na /realizacje - SectionTabs**
+
+  - Cel: Dodanie SectionTabs na stronie `/realizacje` grupującej projekty po typie (Strony, Sklepy, Branding, Marketing).
+  - Uzasadnienie: Łatwiejsze filtrowanie portfolio, better UX przy dużej liczbie projektów.
+  - Pliki:
+    - `app/(pl)/realizacje/page.tsx` (refactor)
+    - `components/ui/sections/SectionTabs.tsx` (istniejący)
+  - SEO: Better content organization
+  - Kryteria akceptacji:
+    - 4-5 zakładek kategorie
+    - ProjectCard grid w każdej zakładce
+    - Active state wyraźny
+    - Persist active tab w URL query (?category=strony)
+    - Mobile: icons only w tablist
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-148] Metryki wydajności na stronach technicznych - SectionMetrics**
+
+  - Cel: Dodanie SectionMetrics na stronie `/uslugi/strony-internetowe` i `/uslugi/sklepy-internetowe` pokazującej typowe metryki Arteon projects.
+  - Uzasadnienie: Data-driven marketing, pokazanie expertise w performance.
+  - Pliki:
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` (edycja)
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` (edycja)
+    - `components/ui/sections/SectionMetrics.tsx` (istniejący)
+  - SEO: Performance keyword enrichment
+  - Kryteria akceptacji:
+    - 4 metryki (Lighthouse score, Time to Interactive, CLS, LCP)
+    - Progress bars z kolorami (green = good, amber = needs improvement)
+    - Dane averaged z real Arteon projects
+    - Tooltip explaining każdej metryki (opcjonalne)
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-149] Vertical tabs dla kategorii artykułów na /edukacja - SectionVerticalTabs**
+
+  - Cel: Dodanie SectionVerticalTabs na głównej stronie `/edukacja` jako alternatywna nawigacja po kategoriach.
+  - Uzasadnienie: Rich navigation, preview treści kategorii, SEO boost.
+  - Pliki:
+    - `app/(pl)/edukacja/page.tsx` (edycja lub alternativna sekcja)
+    - `components/ui/sections/SectionVerticalTabs.tsx` (istniejący)
+  - SEO: Category navigation enhancement
+  - Kryteria akceptacji:
+    - Tabs dla każdej kategorii bloga
+    - Content: top 3 artykuły z kategorii + button "Zobacz wszystkie"
+    - Desktop: fixed sidebar tabs
+    - Mobile: horizontal scroll
+    - Lazy load content w tabs
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-150] Icon badges dla certyfikatów/partnerstw - SectionIconBadges**
+
+  - Cel: Dodanie SectionIconBadges na stronie `/o-nas` pokazującej certyfikaty, partnerstwa, narzędzia których Arteon używa.
+  - Uzasadnienie: Trust signals, pokazanie profesjonalizmu, partnerships visibility.
+  - Pliki:
+    - `app/(pl)/o-nas/page.tsx` (edycja)
+    - `components/ui/sections/SectionIconBadges.tsx` (istniejący)
+  - SEO: Authority signals
+  - Kryteria akceptacji:
+    - 8-12 badges (np. Google Partner, Facebook Partner, Semrush, Figma, React, Next.js)
+    - Real logos/icons
+    - Grayscale z color on hover (opcjonalne)
+    - Pills layout centered
+    - Alt text dla każdego badge
+  - Weryfikacja: `npm run lint && npm run build`
 
 ---

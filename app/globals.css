@@ -84,7 +84,7 @@ h1,
 h2,
 .h2 {
   font-weight: 600;
-  font-size: clamp(32px, calc(32px + 12 * ((100vw - 360px) / 1080)), 44px);
+  font-size: clamp(34px, calc(34px + 10 * ((100vw - 360px) / 1080)), 44px);
   line-height: 100%;
   letter-spacing: -2px;
 }
@@ -92,7 +92,7 @@ h2,
 h3,
 .h3 {
   font-weight: 600;
-  font-size: clamp(32px, calc(32px + 12 * ((100vw - 360px) / 1080)), 44px);
+  font-size: clamp(32px, calc(32px + 10 * ((100vw - 360px) / 1080)), 42px);
   line-height: 100%;
   letter-spacing: -1px;
 }
@@ -100,15 +100,15 @@ h3,
 h4,
 .h4 {
   font-weight: 600;
-  font-size: clamp(22px, calc(22px + 12 * ((100vw - 360px) / 1080)), 34px);
+  font-size: clamp(28px, calc(28px + 8 * ((100vw - 360px) / 1080)), 36px);
   line-height: 110%;
   letter-spacing: -1px;
 }
 
 h5,
 .h5 {
-  font-weight: 500;
-  font-size: clamp(18px, calc(18px + 8 * ((100vw - 360px) / 1080)), 26px);
+  font-weight: 600;
+  font-size: clamp(22px, calc(22px + 8 * ((100vw - 360px) / 1080)), 30px);
   line-height: 120%;
   letter-spacing: -1px;
 }
@@ -116,8 +116,8 @@ h5,
 h6,
 .h6,
 label {
-  font-weight: 500;
-  font-size: clamp(16px, calc(16px + 3 * ((100vw - 360px) / 1080)), 20px);
+  font-weight: 600;
+  font-size: clamp(16px, calc(16px + 4 * ((100vw - 360px) / 1080)), 20px);
   line-height: 120%;
   letter-spacing: 0px;
 }
@@ -288,7 +288,7 @@ textarea {
 }
 
 .tool-button-active {
-  @apply bg-slate-600 text-white;
+  @apply bg-slate-800 text-white;
 }
 
 /* Color picker inputs */

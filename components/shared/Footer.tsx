@@ -83,7 +83,7 @@ const offerLinksThree = [
   { href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji' },
   { href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa' },
   { href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy' },
-  { href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony social media' },
+  { href: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe', title: 'Szablony do mediów społecznościowych' },
   { href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe' },
   { href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki' },
   { href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki' },
@@ -162,18 +162,18 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram Arteon"
-                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                 >
-                  <RiInstagramLine className="h-6 w-6 text-slate-700" aria-hidden="true" />
+                  <RiInstagramLine className="h-6 w-6 text-slate-800" aria-hidden="true" />
                 </a>
                 <a
                   href="https://www.facebook.com/people/Arteon/61583260915021/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook Arteon"
-                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
                 >
-                  <RiFacebookFill className="h-6 w-6 text-slate-700" aria-hidden="true" />
+                  <RiFacebookFill className="h-6 w-6 text-slate-800" aria-hidden="true" />
                 </a>
               </div>
             </section>

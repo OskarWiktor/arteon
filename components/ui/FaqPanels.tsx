@@ -9,6 +9,7 @@ interface FaqPanelsItem {
   question: string;
   answer: string | ReactNode;
   answerSchemaText?: string;
+  icon?: ReactNode;
 }
 
 interface FaqPanelsProps {
@@ -18,6 +19,8 @@ interface FaqPanelsProps {
   generateSchema?: boolean;
   pageUrl?: string;
   openByDefault?: number;
+  variant?: 'default' | 'halfWidth';
+  showIcons?: boolean;
 }
 
 const ui = {
@@ -27,7 +30,7 @@ const ui = {
   },
 } as const;
 
-export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle = ui.pl.defaultSubtitle, generateSchema = true, pageUrl, openByDefault = 0 }: FaqPanelsProps) {
+export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle = ui.pl.defaultSubtitle, generateSchema = true, pageUrl, openByDefault = 0, variant = 'default', showIcons = false }: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
@@ -91,10 +94,13 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
     };
   }, [generateSchema, items, pageUrl]);
 
+  const containerClass = variant === 'halfWidth' ? 'mx-auto max-w-2xl' : '';
+
   return (
     <section aria-labelledby="faq-heading">
-      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="reveal-animation h3 mb-2" titleId="faq-heading" />
+      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="reveal-animation h4 mb-8" titleId="faq-heading" />
 
+      <div className={containerClass}>
       {items.map((item, index) => {
         const isOpen = activeIndex === index;
         const buttonId = `faq-q-${index}`;
@@ -104,10 +110,9 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
           <div
             key={index}
             className={[
-              'my-4 overflow-hidden rounded-2xl border bg-white',
+              'my-2 overflow-hidden rounded-xl border bg-white transition-shadow',
               'hover:border-slate-300 hover:shadow-md',
-              isOpen ? 'border-slate-300' : 'border-gray-300',
-              'focus-within:ring-2 focus-within:ring-slate-500 focus-within:ring-offset-2 focus-within:ring-offset-white',
+              isOpen ? 'border-slate-300 shadow-sm' : 'border-gray-200',
             ].join(' ')}
           >
             <button
@@ -119,14 +124,20 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
               onClick={() => toggle(index)}
               onKeyDown={(e) => onKeyDown(e, index)}
               className={[
-                'flex w-full cursor-pointer items-center justify-between px-5 py-3 text-left transition',
-                'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-600',
-                'md:px-6 md:py-4',
+                'flex w-full cursor-pointer items-center justify-between p-3 text-left transition',
+                'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-800',
+                'md:p-4',
+                showIcons && item.icon ? 'gap-4' : '',
               ].join(' ')}
               aria-expanded={isOpen}
               aria-controls={panelId}
             >
-              <h3 className="h6">{item.question}</h3>
+              {showIcons && item.icon && (
+                <div className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl transition ${isOpen ? 'bg-slate-800 text-white' : 'bg-slate-100 text-slate-800'}`}>
+                  {item.icon}
+                </div>
+              )}
+              <h3 className="h6 flex-1">{item.question}</h3>
               <span className="ml-2" aria-hidden="true">
                 {isOpen ? <FiMinus /> : <FiPlus />}
               </span>
@@ -142,11 +153,14 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
               transition={{ duration: 0.25, ease: 'easeInOut' }}
               aria-hidden={!isOpen}
             >
-              <div className="px-6 pb-4">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
+              <div className="border-t border-slate-100 p-4">
+                <div className="text-light leading-relaxed">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
+              </div>
             </motion.div>
           </div>
         );
       })}
+      </div>
 
       {faqJsonLd && <script id={`faq-jsonld-${scriptId}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
     </section>

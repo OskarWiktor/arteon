@@ -78,7 +78,7 @@ export default function DesktopNavigation() {
   const navigationItems = DESKTOP_NAV_ITEMS_PL;
 
   const offerSections = OFFER_SECTIONS_PL.map((section) => {
-    const iconClassName = section.key === 'grafika' ? 'h-5 w-5 text-slate-700' : 'h-6 w-6 text-slate-700';
+    const iconClassName = section.key === 'grafika' ? 'h-5 w-5 text-slate-800' : 'h-6 w-6 text-slate-800';
 
     return {
       ...section,
@@ -98,7 +98,7 @@ export default function DesktopNavigation() {
       const Icon = item.icon;
       return {
         ...item,
-        icon: Icon ? <Icon className="h-5 w-5 text-slate-700" /> : undefined,
+        icon: Icon ? <Icon className="h-5 w-5 text-slate-800" /> : undefined,
       };
     }),
   }));
@@ -107,7 +107,7 @@ export default function DesktopNavigation() {
     const Icon = item.icon;
     return {
       ...item,
-      icon: Icon ? <Icon className="h-5 w-5 text-slate-700" /> : undefined,
+      icon: Icon ? <Icon className="h-5 w-5 text-slate-800" /> : undefined,
     };
   });
 
@@ -165,7 +165,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-800 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -193,7 +193,7 @@ export default function DesktopNavigation() {
                                   {section.hubHref ? (
                                     <Link
                                       href={section.hubHref}
-                                      className="text-dark inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="text-dark inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-800"
                                     >
                                       {section.title}
                                     </Link>
@@ -207,7 +207,7 @@ export default function DesktopNavigation() {
                                     <Link
                                       key={item.href + item.title}
                                       href={item.href}
-                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
                                     >
                                       {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
                                       <span className="text-mid block text-sm font-medium">{item.title}</span>
@@ -242,7 +242,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isToolsOpen}
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-800 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                   >
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -273,7 +273,7 @@ export default function DesktopNavigation() {
                                     <Link
                                       key={item.href + item.title}
                                       href={item.href}
-                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
                                     >
                                       {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
                                       <span className="text-mid block text-sm font-medium">{item.title}</span>
@@ -308,7 +308,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isAboutOpen}
                     aria-controls={aboutMenuId}
                     ref={aboutBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-800 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isAboutOpen ? t.closeAboutList : t.openAboutList}
                   >
                     <motion.span animate={{ rotate: isAboutOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -334,9 +334,9 @@ export default function DesktopNavigation() {
                               <Link
                                 key={item.href}
                                 href={item.href}
-                                className="group/link flex items-start gap-3 rounded-2xl border border-slate-200 px-3 py-3 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                                className="group/link flex items-start gap-3 rounded-2xl border border-slate-200 px-3 py-3 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
                               >
-                                {item.icon ? <span className="mt-0.5 shrink-0 text-slate-700">{item.icon}</span> : null}
+                                {item.icon ? <span className="mt-0.5 shrink-0 text-slate-800">{item.icon}</span> : null}
                                 <span className="text-mid block text-sm font-medium">{item.title}</span>
                               </Link>
                             ))}

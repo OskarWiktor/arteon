@@ -316,7 +316,7 @@ function PanelButton({ id, current, icon, label, onClick }: PanelButtonProps) {
     <button
       type="button"
       onClick={() => onClick(id)}
-      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-600 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-800 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
     >
       {icon}
       <span>{label}</span>
@@ -459,7 +459,7 @@ export default function EmailSignatureGenerator() {
       <section className="tool-section flex flex-wrap items-center justify-between gap-3 p-4!">
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
-            <RiLayout3Line className="text-base text-slate-500" />
+            <RiLayout3Line className="text-base text-slate-800" />
             <Eyebrow variant="dynamic" className="text-xs! font-semibold">
               {t.layoutLabel}
             </Eyebrow>
@@ -1132,7 +1132,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
                         title="Reset"
                       >
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
                         className={`h-7 w-7 rounded border-2 ${textStyleConfig.name.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
@@ -1162,11 +1162,11 @@ export default function EmailSignatureGenerator() {
                     <div className="flex items-center gap-2">
                       <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('name', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.name.sizeOffset > 0 ? '+' : ''}{textStyleConfig.name.sizeOffset}</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('name', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1183,7 +1183,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
                         title="Reset"
                       >
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
                         className={`h-7 w-7 rounded border-2 ${textStyleConfig.jobTitle.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
@@ -1213,11 +1213,11 @@ export default function EmailSignatureGenerator() {
                     <div className="flex items-center gap-2">
                       <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('jobTitle', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.jobTitle.sizeOffset > 0 ? '+' : ''}{textStyleConfig.jobTitle.sizeOffset}</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('jobTitle', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1234,7 +1234,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
                         title="Reset"
                       >
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
                         className={`h-7 w-7 rounded border-2 ${textStyleConfig.company.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
@@ -1264,11 +1264,11 @@ export default function EmailSignatureGenerator() {
                     <div className="flex items-center gap-2">
                       <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('company', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.company.sizeOffset > 0 ? '+' : ''}{textStyleConfig.company.sizeOffset}</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('company', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1285,7 +1285,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
                         title="Reset"
                       >
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
                         className={`h-7 w-7 rounded border-2 ${textStyleConfig.contact.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
@@ -1315,11 +1315,11 @@ export default function EmailSignatureGenerator() {
                     <div className="flex items-center gap-2">
                       <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('contact', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.contact.sizeOffset > 0 ? '+' : ''}{textStyleConfig.contact.sizeOffset}</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('contact', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1336,7 +1336,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
                         title="Reset"
                       >
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
                         className={`h-7 w-7 rounded border-2 ${textStyleConfig.socials.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
@@ -1366,11 +1366,11 @@ export default function EmailSignatureGenerator() {
                     <div className="flex items-center gap-2">
                       <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('socials', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.socials.sizeOffset > 0 ? '+' : ''}{textStyleConfig.socials.sizeOffset}</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('socials', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1387,7 +1387,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
                         title="Reset"
                       >
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
                         className={`h-7 w-7 rounded border-2 ${textStyleConfig.legal.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
@@ -1417,11 +1417,11 @@ export default function EmailSignatureGenerator() {
                     <div className="flex items-center gap-2">
                       <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('legal', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.legal.sizeOffset > 0 ? '+' : ''}{textStyleConfig.legal.sizeOffset}</span>
                       <button type="button" onClick={() => handleTextStyleSizeChange('legal', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-700" />
+                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1464,11 +1464,11 @@ export default function EmailSignatureGenerator() {
                     <span className="text-sm! text-mid">{t.spacing.afterName}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterName', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterName} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterName', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                        <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1479,11 +1479,11 @@ export default function EmailSignatureGenerator() {
                     <span className="text-sm! text-mid">{t.spacing.afterTitle}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterTitle', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterTitle} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterTitle', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                        <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1494,11 +1494,11 @@ export default function EmailSignatureGenerator() {
                     <span className="text-sm! text-mid">{t.spacing.afterExtra}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterExtra', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterExtra} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterExtra', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                        <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1509,11 +1509,11 @@ export default function EmailSignatureGenerator() {
                     <span className="text-sm! text-mid">{t.spacing.afterContact}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterContact', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterContact} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterContact', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                        <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1524,11 +1524,11 @@ export default function EmailSignatureGenerator() {
                     <span className="text-sm! text-mid">{t.spacing.afterSocials}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterSocials', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterSocials} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterSocials', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                        <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1539,11 +1539,11 @@ export default function EmailSignatureGenerator() {
                     <span className="text-sm! text-mid">{t.spacing.afterCta}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterCta', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterCta} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterCta', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                        <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
                   </div>
@@ -1554,11 +1554,11 @@ export default function EmailSignatureGenerator() {
                     <span className="text-sm! text-mid">{t.spacing.beforeLegal}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('beforeLegal', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-700" />
+                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.beforeLegal} px</span>
                       <button type="button" onClick={() => handleSpacingChange('beforeLegal', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-700" />
+                        <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
                   </div>

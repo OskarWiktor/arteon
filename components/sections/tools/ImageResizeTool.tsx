@@ -161,7 +161,7 @@ function ToolButton({ id, activeTool, onClick, icon, label }: ToolButtonProps) {
     <button
       type="button"
       onClick={() => onClick(id)}
-      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-600 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-800 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
     >
       {icon}
       <span>{label}</span>
@@ -489,6 +489,7 @@ export default function ImageResizeTool() {
       shape: 'rect',
     }));
   };
+
 
   const handleDownload = () => {
     if (!state.file || !state.imageUrl) {
@@ -946,10 +947,15 @@ export default function ImageResizeTool() {
                 )}
               </div>
 
-              <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-600" style={{ paddingBottom: `${previewPadding}%` }}>
+              <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-800" style={{ paddingBottom: `${previewPadding}%` }}>
                 <div className="absolute inset-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={state.imageUrl!} alt={state.file?.name || 'Podgląd'} className="h-full w-full object-contain" draggable={false} />
+                  <img
+                    src={state.imageUrl!}
+                    alt={state.file?.name || 'Podgląd'}
+                    className="h-full w-full object-contain"
+                    draggable={false}
+                  />
 
                   {cropRectPreview && (
                     <div

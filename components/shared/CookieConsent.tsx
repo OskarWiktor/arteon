@@ -144,7 +144,7 @@ export default function CookieConsent() {
               <button
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: false })}
-                className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
               >
                 {t.reject}
               </button>
@@ -194,7 +194,7 @@ export default function CookieConsent() {
               <div className="flex gap-2">
                 <button
                   onClick={() => saveAndClose({ analytics: false })}
-                  className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500"
+                  className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
                 >
                   {t.reject}
                 </button>

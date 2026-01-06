@@ -93,7 +93,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt graficzny strony?">
           <p>
-            <strong>Przejrzysty projekt strony, bloga czy sklepu buduje zaufanie w pierwszych sekundach.</strong>
+            <strong>Przejrzysty projekt strony, bloga czy sklepu zwiększa wiarygodność firmy w oczach odbiorców od pierwszych sekund.</strong>
             Odbiorcy bardzo mocno oceniają firmę przez wygląd ich strony oraz materiałów - nawet
             <strong> ~75%</strong> wrażeń o wiarygodności wynika z jakości oprawy wizualnej
             <a href="https://credibility.stanford.edu/guidelines/index.html" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
@@ -137,27 +137,27 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Przemyślany układ i estetyka',
               description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie - od nagłówka po stopkę.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Responsywność i czytelność',
               description: <>Projekt działa na komputerze, tablecie i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Gotowość do wdrożenia',
               description: <>Dostarczamy pliki i rekomendacje, które przyspieszają pracę dewelopera i skracają czas publikacji.</>,
-              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-500" />,
+              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: <>Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji do pełnej akceptacji.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />

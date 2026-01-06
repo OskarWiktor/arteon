@@ -222,7 +222,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalPr
             {/* Header */}
             <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
               <h3 className="text-base font-semibold">{t.chooseCategory}</h3>
-              <button type="button" onClick={onClose} className="rounded-full p-1.5 text-slate-700 hover:bg-slate-100" aria-label={t.close}>
+              <button type="button" onClick={onClose} className="rounded-full p-1.5 text-slate-800 hover:bg-slate-100" aria-label={t.close}>
                 <RiCloseLine className="h-5 w-5" />
               </button>
             </div>
@@ -247,7 +247,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalPr
                       <span className="font-medium">{item.label}</span>
                       {!item.isAll && <span className="text-light text-sm">({item.count})</span>}
                     </span>
-                    {isActive && <RiCheckLine className="h-5 w-5 text-slate-600" aria-hidden="true" />}
+                    {isActive && <RiCheckLine className="h-5 w-5 text-slate-800" aria-hidden="true" />}
                   </Link>
                 );
               })}

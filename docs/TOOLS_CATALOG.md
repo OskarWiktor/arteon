@@ -536,3 +536,53 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[clipboard]** zapis do schowka (execCommand / navigator.clipboard).
   - **[DOM]** tworzenie i usuwanie tymczasowego elementu do zaznaczenia HTML.
   - **[timeout]** reset statusu kopiowania.
+
+---
+
+## `WordCountTool` (`components/sections/tools/WordCountTool.tsx`)
+
+- **Strona narzędzia**: `/narzedzia/licznik-slow-i-znakow` (`app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/page.tsx`)
+- **Strona instrukcji**: `/narzedzia/licznik-slow-i-znakow/instrukcja` (`app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/instrukcja/page.tsx`)
+- **Co robi**: Licznik słów i znaków z oceną długości tekstu.
+  - Liczy:
+    - **liczbę słów**,
+    - **liczbę znaków** (ze spacjami i bez),
+    - **liczbę akapitów**,
+    - **szacowany czas czytania** (200 słów = 1 minuta).
+  - Ocenia długość tekstu dla 6 typów stron:
+    - Opis produktu w sklepie (100-300 słów),
+    - Strona usługi (300-800 słów),
+    - Strona główna (500-1000 słów),
+    - Landing page (800-1500 słów),
+    - Artykuł blogowy (1500-2500 słów),
+    - Poradnik/przewodnik (2500-5000 słów).
+  - Pokazuje pasek postępu i kolorowy status (za krótki / dobra długość / za długi).
+  - Pozwala skopiować raport ze statystykami do schowka.
+- **Wejście (UI)**:
+  - **[select]** wybór typu strony z listy rozwijalnej.
+  - **[textarea]** pole tekstowe na wklejenie lub wpisanie tekstu.
+- **Stan i dane**:
+  - **`text`**: wklejony/wpisany tekst.
+  - **`selectedPageType`**: wybrany typ strony (`product` / `service` / `homepage` / `landing` / `blog` / `guide`).
+- **Algorytm analizy** (`lib/tools/text/wordCount.ts`):
+  - **[countWords]** dzieli tekst po whitespace i liczy elementy.
+  - **[countCharsWithSpaces]** zwraca `text.length`.
+  - **[countCharsWithoutSpaces]** usuwa whitespace i liczy znaki.
+  - **[countParagraphs]** dzieli po podwójnych newline i liczy niepuste bloki.
+  - **[calculateReadingTime]** `Math.ceil(words / 200)`.
+  - **[evaluateLength]** porównuje liczbę słów z zakresem `minWords`-`maxWords` dla wybranego typu strony.
+- **Statusy oceny**:
+  - **`empty`**: brak tekstu.
+  - **`too-short`**: poniżej minimum dla typu strony.
+  - **`ideal`**: w zalecanym zakresie.
+  - **`too-long`**: powyżej maksimum dla typu strony.
+- **Kopiowanie raportu**:
+  - **[formatReportText]** generuje tekstowy raport ze statystykami i oceną.
+  - **[useCopyToClipboard]** kopiuje raport do schowka z feedbackiem.
+- **Zależności**:
+  - **UI**: `ToolSection`, `ToolFieldRow`, `ToolHelper`, `Button`.
+  - **Lib**: `lib/tools/text/wordCount.ts`.
+  - **Hook**: `useCopyToClipboard`.
+  - **Ikony**: `react-icons/ri`.
+- **Side effecty**:
+  - **[clipboard]** zapis raportu do schowka.

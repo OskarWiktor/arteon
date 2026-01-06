@@ -58,7 +58,7 @@ export default function ContactForm({ title, description, defaultSubject, action
 
   const fieldClass =
     'h-11 w-full rounded-2xl border border-gray-300 bg-transparent px-3 py-2 text-dark transition ' +
-    'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+    'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
   return (
     <section id="kontakt" className="scroll-mt-26">

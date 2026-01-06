@@ -331,7 +331,7 @@ export default function Page() {
             <div>
               <p className="text-dark font-semibold">Kolor nie aktualizuje się po wpisaniu</p>
               <p className="text-mid mt-1">
-                Upewnij się, że kliknąłeś przycisk <strong>Zaktualizuj kolor</strong>. Samo wpisanie kodu HEX nie generuje palet automatycznie - musisz zatwierdzić zmianę.
+                Upewnij się, że kliknąłeś przycisk <strong>Zaktualizuj kolor</strong>. Samo wpisanie kodu HEX nie generuje palet automatycznie - potwierdź zmianę przyciskiem.
               </p>
             </div>
             <div>

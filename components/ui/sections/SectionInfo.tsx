@@ -24,7 +24,7 @@ export default function SectionInfo({ title, subtitle, description, btnOne, btnO
   const t = ui.pl;
   return (
     <div id={id}>
-      <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" headingClassName="reveal-animation mb-2 scroll-mt-26 lg:mb-4" />
+      <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" headingClassName="reveal-animation h4 mb-2 scroll-mt-26 lg:mb-4" />
 
       {children}
 

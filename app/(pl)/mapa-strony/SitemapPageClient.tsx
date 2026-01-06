@@ -22,14 +22,14 @@ function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
       <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <li key={item.href}>
-            <Link href={item.href} className="text-sm text-slate-700 hover:text-slate-900 hover:underline">
+            <Link href={item.href} className="text-sm text-slate-800 hover:text-slate-900 hover:underline">
               {item.title}
             </Link>
             {item.children && item.children.length > 0 && (
               <ul className="mt-1 ml-4 space-y-1">
                 {item.children.map((child) => (
                   <li key={child.href}>
-                    <Link href={child.href} className="text-sm text-slate-500 hover:text-slate-700 hover:underline">
+                    <Link href={child.href} className="text-sm text-slate-800 hover:text-slate-800 hover:underline">
                       {child.title}
                     </Link>
                   </li>
@@ -51,13 +51,13 @@ export default function SitemapPageClient({ services, portfolioIndex, portfolioI
         <nav aria-label="okruszki" className="mb-6">
           <ol className="flex gap-2 text-sm">
             <li>
-              <Link href="/" className="text-slate-700 hover:underline">
+              <Link href="/" className="text-slate-800 hover:underline">
                 Strona główna
               </Link>
               <span className="ml-2 text-slate-400">/</span>
             </li>
             <li>
-              <span className="text-slate-500" aria-current="page">
+              <span className="text-slate-800" aria-current="page">
                 Mapa strony
               </span>
             </li>

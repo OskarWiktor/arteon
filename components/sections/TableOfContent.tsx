@@ -86,9 +86,9 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       {items.map((i) => {
         const isActive = activeId === i.id;
         return (
-          <li key={i.id} className={i.level === 3 ? 'border-l border-black/10 pl-3' : ''}>
-            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`flex items-center gap-1 rounded-2xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
-              <span className="line-clamp-1 text-[15px]">{i.text}</span>
+          <li key={i.id} className={i.level === 3 ? 'border-l border-black/10' : ''}>
+            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`flex items-center gap-1 text-light rounded-2xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
+              <span className="line-clamp-1 text-[14px]">{i.text}</span>
             </a>
           </li>
         );
@@ -101,7 +101,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       {/* Mobile */}
       <aside className={`block lg:hidden ${widthClass}`}>
         <div className="relative rounded-xl border border-black/10 bg-white/95 shadow-sm backdrop-blur">
-          <div className="flex items-center justify-between px-3 py-2">
+          <div className="flex items-center justify-between p-2">
             <p className="text-light text-xs font-medium tracking-wider uppercase">
               {t.tableOfContents} <span className="opacity-60">({items.length})</span>
             </p>
@@ -123,7 +123,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
 
       {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
-        <div className="surface-panel-solid p-3">
+        <div className="surface-panel-solid p-4">
           <p className="text-light mb-2 text-xs tracking-wider uppercase">{t.tableOfContents}</p>
           <nav aria-label={t.tableOfContents}>
             <LinkList />

@@ -22,7 +22,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing' },
   openGraph: {
     title: 'Sprawdź naszą rozbudowaną ofertę marketingu internetowego. Przeprowadź audyt swojej obecności w sieci i przyciągnij właściwych klientów',
-    description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, social media i spójny branding.',
+    description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, media społecznościowe i spójny branding.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
     images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
@@ -88,42 +88,42 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Jasną strategię działania',
               description: <>Plan działań oparty na psychologii w biznesie z podziałem na szybkie wygrane i strategiczne działania długoterminowe.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Raporty i decyzje oparte na danych',
               description: <>Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak, abyś miał pewność, że marketing z nami będzie skuteczny.</>,
-              icon: <IoAnalytics className="h-6 w-6 text-slate-500" />,
+              icon: <IoAnalytics className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Pełna własność danych i kont',
               description: <>Masz dostęp do wszystkich narzędzi, z których korzystamy, dzięki czemu w dowolnej chwili możesz sprawdzić wyniki naszych działań.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'SEO techniczne + treściowe',
               description: <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>,
-              icon: <RiSearchLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiSearchLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Lokalne lub krajowe SEO',
               description: <>Prowadzimy działania SEO krajowe oraz lokalne, dzięki czemu Twój biznes może rozwijać się w Twoim mieście i jednocześnie za granicą lub w całym kraju</>,
-              icon: <RiSearchEyeLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiSearchEyeLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Reklamy Google i Meta',
               description: <>Tworzymy kampanie oparte na realnych problemach klientów. Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to, co działa.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-500" />,
+              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i terminy są rozpisane przed startem działań.</>,
-              icon: <RiCustomerService2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiCustomerService2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Wsparcie po wdrożeniu',
-              description: <>Stale informujemy Cię o wynikach naszych działań, dajemy Ci jasne podsumowanie w mailu oraz prowadzimy darmowe konsultacje online</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-500" />,
+              description: <>Stale informujemy Cię o wynikach naszych działań, dajemy Ci jasne podsumowanie w mailu oraz prowadzimy konsultacje online</>,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />

@@ -173,7 +173,7 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
       { key: 'restaurantMenu', href: '/uslugi/projekty-graficzne/projekt-menu-restauracji', title: 'Menu restauracji', icon: RiRestaurant2Line },
       { key: 'companyClothing', href: '/uslugi/projekty-graficzne/projekt-odziezy-firmowej', title: 'Odzież firmowa', icon: RiTShirt2Line },
       { key: 'companyPaper', href: '/uslugi/projekty-graficzne/projekt-papieru-firmowego', title: 'Papier firmowy', icon: RiFileTextLine },
-      { key: 'socialTemplates', href: '/uslugi/projekty-graficzne/szablony-postow-social-media', title: 'Szablony social media', icon: RiLayoutLine },
+      { key: 'socialTemplates', href: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe', title: 'Szablony do mediów społecznościowych', icon: RiLayoutLine },
       { key: 'offerFolder', href: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej', title: 'Teczki ofertowe', icon: RiFolderOpenLine },
       { key: 'flyers', href: '/uslugi/projekty-graficzne/projekt-ulotki', title: 'Ulotki', icon: RiFileList2Line },
       { key: 'businessCards', href: '/uslugi/projekty-graficzne/projekt-wizytowki', title: 'Wizytówki', icon: RiIdCardLine },
@@ -197,7 +197,7 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
 
 export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk';
 
-export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette' | 'qrCode';
+export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'wordCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette' | 'qrCode';
 
 export type ToolSectionItem = {
   key: ToolItemKey;
@@ -255,6 +255,14 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         title: 'Licznik meta title i description',
         description: 'Sprawdź liczbę znaków i podgląd wyniku w Google. Uniknij uciętych tytułów i opisów w wynikach wyszukiwania.',
         image: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
+        icon: RiFileTextLine,
+      },
+      {
+        key: 'wordCounter',
+        href: '/narzedzia/licznik-slow-i-znakow',
+        title: 'Licznik słów i znaków',
+        description: 'Sprawdź długość tekstu i oceń, czy jest odpowiednia dla strony głównej, opisu usługi, artykułu czy opisu produktu.',
+        image: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
         icon: RiFileTextLine,
       },
     ],

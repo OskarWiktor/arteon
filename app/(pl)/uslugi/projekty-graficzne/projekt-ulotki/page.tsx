@@ -133,27 +133,27 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Jasny przekaz i mocne wezwanie do działania',
               description: <>Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiArticleLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Format dopasowany do celu',
               description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w dystrybucji.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
               description: <>Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w internecie lub mailingu.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Dopracowanie detali',
               description: <>W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki Twojej oferty.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-500" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-500" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
             },
           ]}
         />
@@ -172,7 +172,7 @@ export default function OfferDesignFlyerPage() {
               <strong>Dla organizatorów wydarzeń,</strong> szkoleń i konferencji, którzy potrzebują materiału informacyjnego z kluczowymi danymi: gdzie, kiedy i jak się zapisać.
             </li>
             <li>
-              <strong>Dla firm łączących offline z online,</strong> które chcą, aby ulotka kierowała na stronę www, landing page lub profil w social media (np. QR kod + krótkie CTA).
+              <strong>Dla firm łączących offline z online,</strong> które chcą, aby ulotka kierowała na stronę www, landing page lub profil w mediach społecznościowych (np. QR kod + krótkie CTA).
             </li>
           </ul>
         </SectionInfo>
@@ -191,7 +191,7 @@ export default function OfferDesignFlyerPage() {
               <strong>Większa rozpoznawalność marki offline,</strong> bo logo, kolory i kluczowy komunikat powtarzają się na ulotce, stronie i innych materiałach.
             </li>
             <li>
-              <strong>Lepsze wsparcie kampanii online,</strong> gdy ulotka jest przedłużeniem reklamy w Google Ads, Meta Ads lub działań w social mediach, a nie osobnym komunikatem.
+              <strong>Lepsze wsparcie kampanii online,</strong> gdy ulotka jest przedłużeniem reklamy w Google Ads, Meta Ads lub działań w mediach społecznościowych, a nie osobnym komunikatem.
             </li>
           </ul>
         </SectionInfo>
