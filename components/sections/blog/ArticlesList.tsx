@@ -40,6 +40,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
               ) : null}
               <div className="p-4">
                 <h3 className="h6">{a.title}</h3>
+                <p className='text-light !text-sm mt-2'>{a.excerpt}</p>
                 <div className="mt-3 flex flex-wrap items-center gap-2">
                   {a.readingTime ? (
                     <span className="text-light text-sm">
