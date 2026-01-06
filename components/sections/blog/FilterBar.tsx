@@ -27,7 +27,7 @@ const ui = {
 type Cat = { label: string; slug: string; count: number };
 
 // Height of one row of buttons (button height ~36px + gap 8px + padding for shadow)
-const COLLAPSED_HEIGHT = 40;
+const COLLAPSED_HEIGHT = 48;
 
 export default function FilterBar({ cats, active }: { cats: Cat[]; active?: string }) {
   const t = ui.pl;
@@ -49,7 +49,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
     const checkOverflow = () => {
       if (navRef.current) {
         const scrollHeight = navRef.current.scrollHeight;
-        setNeedsExpand(scrollHeight > COLLAPSED_HEIGHT + 10);
+        setNeedsExpand(scrollHeight > COLLAPSED_HEIGHT + 16);
       }
     };
     checkOverflow();
