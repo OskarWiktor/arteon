@@ -3,10 +3,10 @@ import Button from './Button';
 interface ButtonGroupProps {
   btnOne?: string;
   btnOneLink?: string;
-  btnOneVariant?: 'accent' | 'normal' | 'dark';
+  btnOneVariant?: 'accent' | 'normal';
   btnTwo?: string;
   btnTwoLink?: string;
-  btnTwoVariant?: 'accent' | 'normal' | 'dark';
+  btnTwoVariant?: 'accent' | 'normal';
   className?: string;
   spacing?: 'default' | 'loose';
   align?: 'left' | 'center' | 'right';
