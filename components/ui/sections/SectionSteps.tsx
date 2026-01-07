@@ -146,7 +146,7 @@ export default function SectionSteps({
         <ButtonGroup
           btnOne={btnOne}
           btnOneLink={btnOneLink}
-          btnOneVariant={btnOneVariant === 'dark' ? 'dark' : btnOneVariant}
+          btnOneVariant={btnOneVariant === 'dark' ? 'normal' : btnOneVariant}
           btnTwo={btnTwo}
           btnTwoLink={btnTwoLink}
           spacing="loose"

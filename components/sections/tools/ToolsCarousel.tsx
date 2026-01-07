@@ -33,7 +33,7 @@ type Props = {
   subtitle?: string;
 };
 
-export default function ToolsCarousel({ max = 8, title = ui.pl.defaultTitle, subtitle }: Props) {
+export default function ToolsCarousel({ max = 10, title = ui.pl.defaultTitle, subtitle }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);

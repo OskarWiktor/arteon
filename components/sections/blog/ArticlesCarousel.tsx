@@ -41,7 +41,7 @@ type Props = {
   excludeSlug?: string;
 };
 
-export default function ArticlesCarousel({ articles, max = 7, title = ui.pl.defaultTitle, subtitle, categorySlug, slugs, excludeSlug }: Props) {
+export default function ArticlesCarousel({ articles, max = 10, title = ui.pl.defaultTitle, subtitle, categorySlug, slugs, excludeSlug }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);

@@ -108,7 +108,7 @@ h4,
 h5,
 .h5 {
   font-weight: 600;
-  font-size: clamp(22px, calc(22px + 8 * ((100vw - 360px) / 1080)), 30px);
+  font-size: clamp(22px, calc(22px + 4 * ((100vw - 360px) / 1080)), 26px);
   line-height: 120%;
   letter-spacing: -1px;
 }

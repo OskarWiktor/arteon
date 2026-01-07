@@ -37,7 +37,7 @@ type Props = {
   excludeSlug?: string;
 };
 
-export default function ProjectsCarouselClient({ projects, max = 7, title = ui.pl.defaultTitle, subtitle, category, slugs, excludeSlug }: Props) {
+export default function ProjectsCarouselClient({ projects, max = 10, title = ui.pl.defaultTitle, subtitle, category, slugs, excludeSlug }: Props) {
   const t = ui.pl;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);

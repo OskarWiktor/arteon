@@ -1,5 +1,25 @@
 # Arteon - DONE TASKS
 
+## 2026-01-07
+
+- ✅ **[UI-001] Karuzele: zwiększenie limitu wyświetlanych elementów do 10**
+
+  - **Pliki**:
+    - `components/sections/tools/ToolsCarousel.tsx`
+    - `components/sections/blog/ArticlesCarousel.tsx`
+    - `components/sections/projects/ProjectsCarouselClient.tsx`
+  - **Zmiany**:
+    - ToolsCarousel: zmiana domyślnego `max` z 8 na 10 (wszystkie 10 narzędzi są teraz widoczne)
+    - ArticlesCarousel: zmiana domyślnego `max` z 7 na 10
+    - ProjectsCarouselClient: zmiana domyślnego `max` z 7 na 10
+  - **Dodatkowe naprawy** (błędy TypeScript wykryte podczas build):
+    - `components/sections/steps/ServicesSteps.tsx`: naprawa literówki `btnOnevariant` → `btnOneVariant`
+    - `components/ui/CodeBlock.tsx`: zmiana `variant="accent"` na `variant="dark"` (dopasowanie do dostępnych wariantów CopyButton)
+    - `components/ui/sections/SectionPrices.tsx`: zmiana `variant="accent"` na `variant="warning"` dla Badge oraz `btnOneVariant` z `'dark'` na `'normal'` (dopasowanie do dostępnych wariantów)
+    - `components/ui/sections/SectionSteps.tsx`: zmiana mapowania wariantu z `'dark'` na `'normal'` dla ButtonGroup
+  - **Rezultat**: Wszystkie karuzele (narzędzia, artykuły, realizacje) wyświetlają domyślnie do 10 elementów. Karuzele działają poprawnie na wszystkich breakpointach (mobile, tablet, desktop).
+  - **Weryfikacja**: npm run lint ✓, npm run build ✓
+
 ## 2026-01-06
 
 - ✅ **[CONTENT-002] /narzedzia: dodanie brakujących narzędzi (licznik słów + generator QR) + zmiana ikony**

@@ -62,7 +62,7 @@ export function CarouselCard(props: CarouselCardProps) {
         </Link>
         <div className="flex flex-1 flex-col p-4 md:p-5">
           <h3 className="h5 text-dark mb-2">{props.title}</h3>
-          <p className="text-light mb-4 line-clamp-2 text-sm">{props.description}</p>
+          <p className="text-light mb-4 line-clamp-3 !text-sm">{props.description}</p>
           <div className="mt-auto">
             <Link
               href={props.href}

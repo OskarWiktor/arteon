@@ -86,7 +86,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
               )}
             >
               {plan.badgeLabel && (
-                <Badge variant="accent" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
+                <Badge variant="warning" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
                   {plan.badgeLabel}
                 </Badge>
               )}
@@ -133,7 +133,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
                 <ButtonGroup
                   btnOne={plan.btnOne}
                   btnOneLink={plan.btnOneLink}
-                  btnOneVariant={plan.lastPlan ? 'dark' : 'accent'}
+                  btnOneVariant={plan.lastPlan ? 'normal' : 'accent'}
                   btnTwo={plan.btnTwo}
                   btnTwoLink={plan.btnTwoLink}
                   spacing="default"
