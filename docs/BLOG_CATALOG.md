@@ -78,7 +78,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2026-01-01
   - **Czas czytania**: 10 min
   - **Opis**: Artykuł edukacyjny o breadcrumbs (ścieżce nawigacji). Obejmuje: jak wyglądają i działają (3 rodzaje: hierarchiczne, atrybutowe, historyczne), dlaczego ułatwiają nawigację (orientacja, szybki powrót, zmniejszenie odrzuceń), wpływ na SEO (wyświetlanie w SERP, dane strukturalne, linki wewnętrzne), gdzie stosować (strony firmowe, sklepy, blogi, kiedy nie potrzebne), jak wdrożyć (umiejscowienie, nazwy, JSON-LD, dostępność WAI-ARIA), najczęstsze błędy (niespójna struktura, brak linków, zbyt długie ścieżki).
-  - **Linki wewnętrzne (4)**: `/edukacja/ux/do-czego-sluzy-mapa-strony-i-czy-kazda-strona-jej-potrzebuje`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki wewnętrzne (4)**: `/edukacja/ux/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/uslugi/strony-internetowe`, `/kontakt`
   - **Linki zewnętrzne (2)**: Google Search Central (breadcrumb structured data), WAI-ARIA (breadcrumb pattern)
   - **Tooltips (4)**: breadcrumbs, dane strukturalne (Schema.org), JSON-LD, landing page
   - **FAQ**: 5 pytań (obowiązkowe?, Google wyświetla?, ile poziomów?, ostatni element link?, zastępują menu?)
