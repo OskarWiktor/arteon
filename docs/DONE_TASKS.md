@@ -2,6 +2,13 @@
 
 ## 2026-01-17
 
+- ✅ **[UI-001] Breadcrumbs: naprawić łamanie tekstu na mniejszych szerokościach ekranu**
+
+  - **Plik**: `components/sections/BreadCrumbs.tsx`
+  - **Problem**: Na mniejszych urządzeniach breadcrumbs nie łamią się poprawnie — tekst wymuszał rozszerzenie strony.
+  - **Rozwiązanie**: Usunięto klasy `shrink-0` i `whitespace-nowrap` z elementów breadcrumb (zachowano `shrink-0` tylko dla ikony home).
+  - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
+
 - ✅ **[CONTENT-006] Realizacje: redakcja treści + SEO + nowe komponenty (wszystkie oprócz Perly Mocy i Izoluk)**
 
   - **Plik**: `data/pl/projects.json`

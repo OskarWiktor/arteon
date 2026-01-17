@@ -53,7 +53,7 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
           {items.slice(1).map((it, idx) => {
             const isLast = idx === items.slice(1).length - 1;
             return (
-              <span key={`${it.href}-${idx}`} className="!text-medium flex shrink-0 items-center gap-2 whitespace-nowrap text-slate-400">
+              <span key={`${it.href}-${idx}`} className="!text-medium flex items-center gap-2 text-slate-400">
                 /
                 {isLast ? (
                   <span className="text-medium text-slate-800" aria-current="page">
