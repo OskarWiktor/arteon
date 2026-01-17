@@ -99,8 +99,8 @@ export default function OfferWebPage() {
 
         <SectionInfo title="Co zyskujesz dzięki stronie internetowej?">
           <p>
-            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób szukających lokalnie usług w Google trafia do siedziby firmy w ciągu 24 godzin, a 28%
-            tych wyszukań kończy się zakupem{' '}
+            <strong>Własna strona internetowa daje Twojej firmie nowe źródło klientów.</strong> Aż 76% osób szukających lokalnie usług w Google trafia do siedziby firmy w ciągu 24 godzin, a 28% tych
+            wyszukań kończy się zakupem{' '}
             <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/">
               (źródło)
             </a>

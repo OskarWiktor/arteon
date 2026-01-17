@@ -65,7 +65,11 @@ export default function Page() {
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
-      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/tester-kontrastu-kolorow-wcag`, label: 'Sprawdź kontrast kolorów pod kątem dostępności' }} includeJsonLd />
+      <Breadcrumbs
+        second={{ href: '/narzedzia', label: 'Narzędzie' }}
+        third={{ href: `/narzedzia/tester-kontrastu-kolorow-wcag`, label: 'Sprawdź kontrast kolorów pod kątem dostępności' }}
+        includeJsonLd
+      />
 
       <Wrapper>
         <Gap size="xs" />

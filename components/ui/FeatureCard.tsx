@@ -18,15 +18,8 @@ export default function FeatureCard({ idx = 0, title, description, points, icon 
   const displayIcon = icon || <span className="inline-block h-2 w-2 rounded-[2px] bg-black" />;
 
   return (
-    <section
-      aria-labelledby={headingId}
-      aria-describedby={descId}
-      className="surface-card-soft flex h-full gap-4 p-4"
-      {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}
-    >
-      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800">
-        {displayIcon}
-      </div>
+    <section aria-labelledby={headingId} aria-describedby={descId} className="surface-card-soft flex h-full gap-4 p-4" {...{ itemScope: true, itemType: 'https://schema.org/Thing' }}>
+      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800">{displayIcon}</div>
       <div className="flex flex-col">
         <h3 id={headingId} className="h6 text-dark mb-1" itemProp="name">
           {title}

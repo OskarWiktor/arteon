@@ -306,9 +306,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               title: 'Projekt identyfikacji wizualnej',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.
-                  </p>
+                  <p className="mb-3 text-sm">Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
                       Zobacz projekt identyfikacji wizualnej
@@ -343,5 +341,3 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
     </>
   );
 }
-
-

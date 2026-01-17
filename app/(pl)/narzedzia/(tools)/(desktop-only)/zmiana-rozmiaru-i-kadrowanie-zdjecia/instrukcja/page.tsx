@@ -21,7 +21,8 @@ export const metadata: Metadata = {
   alternates: { canonical: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja') },
   openGraph: {
     title: 'Jak zmienić rozmiar zdjęcia online? | Kadrowanie do Instagram i Facebook',
-    description: 'Zmień rozmiar zdjęcia i wykadruj do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Darmowe narzędzie online z presetami social media, eksportem do JPG, PNG i WebP.',
+    description:
+      'Zmień rozmiar zdjęcia i wykadruj do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Darmowe narzędzie online z presetami social media, eksportem do JPG, PNG i WebP.',
     url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja'),
     type: 'website',
     images: [

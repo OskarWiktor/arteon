@@ -43,14 +43,14 @@ export default function BenefitBelt({ items, ariaLabel = ui.pl.defaultAriaLabel,
 
   return (
     <section className={`relative ${className}`} aria-label={ariaLabel}>
-        <ul className="flex flex-wrap items-center justify-center gap-6 rounded-2xl bg-white p-6">
-          {data.map((item, i) => (
-            <li key={i} className="flex items-center gap-2 text-slate-800">
-              <span className="[&_svg]:h-6 [&_svg]:w-6">{item.icon}</span>
-              <span className="text-sm font-medium">{item.label}</span>
-            </li>
-          ))}
-        </ul>
+      <ul className="flex flex-wrap items-center justify-center gap-6 rounded-2xl bg-white p-6">
+        {data.map((item, i) => (
+          <li key={i} className="flex items-center gap-2 text-slate-800">
+            <span className="[&_svg]:h-6 [&_svg]:w-6">{item.icon}</span>
+            <span className="text-sm font-medium">{item.label}</span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

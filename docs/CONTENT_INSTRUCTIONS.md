@@ -1,0 +1,497 @@
+# Arteon - Instrukcje tworzenia treści
+
+**KRYTYCZNE:** Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis, FAQ, CTA, metadata) przeczytaj ten dokument w całości.
+
+Ten dokument zawiera wszystkie wytyczne dotyczące tworzenia treści w repo Arteon. Dotyczy: artykułów blogowych, stron usług, stron narzędzi, realizacji, stron informacyjnych, mikrocopy, `metadata.description`, OpenGraph, schema, FAQ i CTA.
+
+---
+
+## Spis treści
+
+1. [Intencja wyszukiwania (KLUCZOWE)](#1-intencja-wyszukiwania)
+2. [Ton i styl](#2-ton-i-styl)
+3. [Struktura artykułów](#3-struktura-artykułów)
+4. [Zasady techniczne dla artykułów](#4-zasady-techniczne-dla-artykułów)
+5. [Linkowanie](#5-linkowanie)
+6. [Źródła i prawdziwość](#6-źródła-i-prawdziwość)
+7. [Balans DIY vs oferta](#7-balans-diy-vs-oferta)
+8. [CTA i przyciski](#8-cta-i-przyciski)
+9. [Zakazy stylistyczne](#9-zakazy-stylistyczne)
+10. [Google Discover — cel jakościowy](#9a-google-discover--cel-jakościowy-ważne)
+11. [Checklista przed publikacją](#10-checklista-przed-publikacją--google-discover)
+12. [Po zakończeniu zadania](#11-po-zakończeniu-zadania)
+
+---
+
+## 1. Intencja wyszukiwania (KLUCZOWE)
+
+**Każdy artykuł MUSI być napisany z myślą o intencji wyszukiwanej frazy.** To fundament SEO i decyduje o tym, czy artykuł będzie rankować w Google.
+
+### Czym jest intencja wyszukiwania?
+
+Intencja (search intent) to powód, dla którego użytkownik wpisuje daną frazę w Google. Google premiuje treści, które najlepiej odpowiadają na tę intencję.
+
+### Typy intencji
+
+| Typ intencji     | Co użytkownik chce                 | Przykład frazy                            | Jak pisać                                              |
+| ---------------- | ---------------------------------- | ----------------------------------------- | ------------------------------------------------------ |
+| **Informacyjna** | Zrozumieć temat, poznać definicję  | "czym jest kanibalizacja słów kluczowych" | Wyjaśnij koncept, pokaż przyczyny, skutki, rozwiązania |
+| **Nawigacyjna**  | Znaleźć konkretną stronę/narzędzie | "Google Search Console login"             | Podaj link, krótki opis                                |
+| **Transakcyjna** | Kupić, zamówić, skontaktować się   | "audyt SEO cena"                          | Jasna oferta, CTA, korzyści                            |
+| **Komercyjna**   | Porównać opcje przed decyzją       | "JPG vs WebP który lepszy"                | Porównanie, zalety/wady, rekomendacja                  |
+
+### Jak określić intencję przed pisaniem?
+
+1. **Wpisz frazę w Google** — zobacz, jakie treści są w TOP 10 (format, długość, struktura)
+2. **Przeanalizuj SERP** — czy są featured snippets, listy, tabele?
+3. **Zadaj sobie pytanie** — "Czego szuka osoba wpisująca tę frazę? Co chce osiągnąć?"
+
+### Zasady dopasowania do intencji
+
+1. **Wstęp MUSI bezpośrednio odpowiadać na pytanie z tytułu** — nie zaczynaj od mówienia, że temat jest ważny
+2. **Struktura musi pasować do intencji** — jeśli użytkownik szuka definicji, daj definicję w pierwszym akapicie
+3. **Nie wyłaż poza intencję** — jeśli ktoś szuka "co to jest X", nie pisz 80% artykułu o "jak zrobić X"
+4. **Odpowiedz na pytania podrzędne** — jeśli pytanie główne to "Czym jest X?", naturalne pytania to "Jak rozpoznać X?", "Jak naprawić X?"
+
+### Przykład: fraza "czym jest kanibalizacja słów kluczowych"
+
+**Intencja:** Informacyjna — użytkownik chce zrozumieć koncept, nie wie co to jest.
+
+**Co MUSI być w artykule:**
+
+- Jasna definicja w pierwszym akapicie
+- Wyjaśnienie mechanizmu (dlaczego to problem)
+- Jak rozpoznać (Google Search Console)
+- Jak naprawić (opcje rozwiązań)
+- Jak zapobiegać
+
+**Czego NIE robić:**
+
+- Nie zaczynaj od "SEO jest ważne w dzisiejszych czasach..."
+- Nie pisz 50% artykułu o historii SEO
+- Nie zakładaj, że czytelnik wie, czym jest kanibalizacja
+
+---
+
+## 2. Ton i styl
+
+### Trzy style pisania (obowiązkowo)
+
+Każda treść MUSI łączyć trzy wzajemnie uzupełniające się style:
+
+#### 1.1 Język afirmatywno-informacyjny
+
+Stwierdzaj fakty bezpośrednio, bez zbędnych zastrzeżeń i wstępów. Używaj prostego języka zrozumiałego bez wiedzy technicznej.
+
+- ✅ „Błąd 404 oznacza, że strona pod danym adresem nie istnieje"
+- ✅ „Google Search Console to darmowe narzędzie, które pokazuje błędy na Twojej stronie"
+- ❌ „W dzisiejszych czasach każdy właściciel strony powinien wiedzieć, że..."
+
+**Zasady:**
+
+- Rozpoczynaj od sedna, nie od wstępu o wstępie
+- Termin techniczny = natychmiastowe wyjaśnienie prostym językiem
+- Bez wodolejstwa typu „w dzisiejszych czasach", „jak wszyscy wiemy"
+
+#### 1.2 Język heurystyczno-edukacyjny
+
+Prowadź czytelnika przez temat pytaniami i instrukcjami krok po kroku. Wyjaśniaj „dlaczego" przy każdym kroku.
+
+- ✅ Nagłówek: „Skąd biorą się błędy 404?" (pytanie prowadzące)
+- ✅ „Krok 1: Otwórz raport Strony. Krok 2: Znajdź błędy 404."
+- ❌ Nagłówek: „Przyczyny błędów 404" (suchy, nieprowadzący)
+
+**Zasady:**
+
+- Nagłówki jako pytania prowadzące przez artykuł
+- Instrukcje numerowane krok po kroku
+- Po każdej informacji technicznej odpowiedz „Dlaczego to ważne?"
+
+#### 1.3 Język analityczno-diagnostyczny
+
+Dawaj czytelnikowi konkretne kryteria decyzyjne. Pokazuj, jak ocenić sytuację i co z nią zrobić.
+
+- ✅ „Sprawdź, skąd pochodzi link: link wewnętrzny → popraw, link zewnętrzny → przekierowanie 301, literówka → ignoruj"
+- ✅ „Jeden błąd z literówki? Można zignorować. Setki błędów po migracji? Wymaga systematycznych przekierowań."
+- ❌ „Błędy 404 mogą mieć różne źródła i wymagają różnego podejścia" (brak konkretów)
+
+**Zasady:**
+
+- Decyzyjne drzewka: jeśli X → zrób Y, jeśli Z → zrób W
+- Konkretne scenariusze z rozwiązaniami
+- Skala problemu + odpowiednia reakcja
+
+### Rola autora
+
+- Występujesz jako **mentor i przewodnik**
+- Pozycja: „Jestem kilka kroków dalej, rozumiem proces i spokojnie przeprowadzę Cię przez decyzję."
+- Nie popisujesz się wiedzą techniczną i nie „sprzedajesz się" w treści
+
+### Narracja
+
+- **Druga osoba liczby pojedynczej** dla czytelnika: „Twoja firma", „zyskujesz", „widzisz efekt"
+- **Pierwsza osoba liczby mnogiej** dla Arteon: „wyjaśniamy", „pokazujemy", „przygotowujemy" (nigdy „wyjaśnię" — Arteon to zespół)
+- **Zaimki dzierżawcze**: „na swojej stronie" zamiast „na Twojej stronie"
+
+### Prostota i przyjazność
+
+- Pisz tak, żeby zrozumiał każdy, ale bez protekcjonalnego tonu
+- **Każdy termin techniczny natychmiast wyjaśniaj** — po użyciu odpowiedz: „Co to jest?" i „Po co to?"
+- Każde zdanie = logiczny ciąg dalszy — bez skoków myślowych
+- Ludzki język — spokojnie i naturalnie, bez potocznych skrótów i slangu
+
+**Przykład dobrego wyjaśnienia:**
+
+- ❌ „Wygeneruj favicon.ico i apple-touch-icon.png"
+- ✅ „Stwórz małą ikonkę, która pojawi się na karcie przeglądarki (to właśnie favicon — miniaturowa ikona Twojej strony). Dzięki niej Twoja strona wygląda profesjonalnie i łatwiej ją znaleźć wśród wielu otwartych kart."
+
+---
+
+## 3. Struktura artykułów
+
+### Typy artykułów
+
+**1. Artykuł edukacyjny (domyślny)**
+
+- Odpowiada na pytanie „Co to jest X i dlaczego ma znaczenie?"
+- Struktura: Wstęp → Wyjaśnienie tematu → Dla kogo to ważne → Jak to działa → Jak sprawdzić/ocenić → Na co zwrócić uwagę → Podsumowanie + CTA
+
+**2. Artykuł HowTo (instrukcja)**
+
+- Odpowiada na pytanie „Jak zrobić X?" lub „Jak osiągnąć Y?"
+- Struktura: Wstęp (co osiągniesz) → Wymagania/przygotowanie → Kroki (numerowane) → Typowe problemy → Podsumowanie + CTA
+- UWAGA: Instrukcje dotyczą narzędzi Arteon lub ogólnych procesów. NIE twórz instrukcji zastępujących usługi.
+
+**3. Artykuł z poradami i błędami**
+
+- Odpowiada na pytanie „Na co zwrócić uwagę przy X?"
+- Struktura: Wstęp → Kontekst → Lista porad/błędów (każdy z wyjaśnieniem) → Jak unikać problemów → Podsumowanie + CTA
+- Ton: mentorski, nie wytykający
+
+**4. Artykuł porównawczy**
+
+- Odpowiada na pytanie „X czy Y — co wybrać?"
+- Struktura: Wstęp → Wyjaśnienie obu opcji → Porównanie punkt po punkcie → Kiedy wybrać X, kiedy Y → Podsumowanie + CTA
+
+### Struktura ogólna
+
+1. **Wstęp** — 2-3 zdania: co się dzieje (prosty język), co czytelnik znajdzie w artykule
+2. **Sekcje diagnostyczne** — pytające nagłówki, instrukcje krok po kroku
+3. **Sekcje decyzyjne** — kiedy reagować, kiedy ignorować, jakie opcje
+4. **Przykład hipotetyczny** — konkretny scenariusz z opcjami rozwiązań (oznaczony jako hipotetyczny)
+5. **Podsumowanie** — 3-5 konkretnych wniosków + naturalny CTA
+
+---
+
+## 4. Zasady techniczne dla artykułów
+
+| Parametr             | Wymaganie                                                   |
+| -------------------- | ----------------------------------------------------------- |
+| **Tytuł**            | Pytanie (np. „Dlaczego strona nie wyświetla się w Google?") |
+| **Excerpt**          | 220-230 znaków (ze spacjami), zachęcający do kliknięcia     |
+| **Slug URL**         | 1:1 zgodny z tytułem, bez polskich znaków, z myślnikami     |
+| **Czas czytania**    | 9-14 minut (1800-2800 słów), obliczany: 200 słów = 1 min    |
+| **Polskie znaki**    | Obowiązkowo (ą, ę, ć, ł, ń, ó, ś, ź, ż)                     |
+| **Linki wewnętrzne** | Minimum 6-8                                                 |
+| **Linki zewnętrzne** | Minimum 4-6 (z `target='_blank' rel='noopener noreferrer'`) |
+
+### Widoczność linków
+
+- Linki zewnętrzne: `class='underline'`
+- Linki wewnętrzne: `class='inline-link'`
+
+### Tooltip dla trudnych terminów
+
+Format: `<span data-tooltip='Wyjaśnienie terminu'>termin</span>`
+
+### Polskie cudzysłowy w JSON
+
+**ZAKAZ** używania polskich cudzysłowów typograficznych „ i " w plikach JSON — psują parser. Alternatywy:
+
+- Usuń cudzysłowy
+- Użyj encji HTML `&quot;`
+- Użyj apostrofów `'`
+
+### SEO w tytułach i slugach
+
+- Polskie odpowiedniki zamiast anglicyzmów (zamiast „breadcrumbs" → „ścieżka nawigacji")
+- Frazy kluczowe w tytule
+- Anglicyzm dozwolony w treści z tooltipem, ale NIE w tytule ani w slug URL
+
+---
+
+## 5. Linkowanie
+
+### Linki wewnętrzne
+
+- Im więcej naturalnych linków do innych artykułów i narzędzi Arteon, tym lepiej
+- Przy każdym temacie sprawdź, czy istnieje powiązany artykuł/narzędzie i podlinkuj
+- Linki wplecione naturalnie w zdania (bez sekcji „Przydatne linki")
+
+### Linki zewnętrzne
+
+- Gdy wspominasz o zewnętrznych narzędziach (Google Search Console, PageSpeed Insights), zawsze dodawaj link
+- Atrybuty: `target='_blank' rel='noopener noreferrer'`
+
+---
+
+## 6. Źródła i prawdziwość
+
+### Zasady absolutne
+
+1. **Każda liczba MUSI mieć źródło**
+
+   - Format: „wg [źródło] z [rok]" + działający link
+   - ❌ „90% użytkowników opuszcza stronę po 3 sekundach" (brak źródła = ZABRONIONE)
+
+2. **Każde powołanie na prawo MUSI być zgodne z aktualnym stanem prawnym PL**
+
+   - Kluczowe: Omnibus (ceny w e-commerce), RODO, ustawa o prawach konsumenta
+
+3. **Każdy przykład MUSI być oznaczony**
+   - Przykład oparty na faktach: cytuj źródło
+   - Przykład hipotetyczny: oznacz jako „_(przykład hipotetyczny)_"
+   - Wystarczy słowo „hipotetyczny" — nie pisz „(wymyślony, nie oparty o realny sklep)"
+
+### Dozwolone bez źródeł
+
+- Ogólne stwierdzenia: „większość", „często", „wiele firm"
+- Jasno oznaczone przykłady hipotetyczne
+- Opisy procesów bez kwantyfikacji
+
+### Standard źródeł
+
+| Typ treści         | Preferowane źródła                                   |
+| ------------------ | ---------------------------------------------------- |
+| SEO/marketing      | Google Search Central, web.dev, Ahrefs, Semrush, Moz |
+| Psychologia/biznes | Journal of Consumer Research, Kahneman, Cialdini     |
+| Technologia        | Oficjalna dokumentacja, MDN, web.dev                 |
+| Prawo              | isap.sejm.gov.pl, EUR-Lex, UOKiK, UODO               |
+
+---
+
+## 7. Balans DIY vs oferta
+
+Artykuły dostarczają **realną wartość edukacyjną**. Piszemy z pozycji eksperta, który dzieli się wiedzą.
+
+### Zasady
+
+1. **Delikatne DIY jest OK** — jeśli coś jest nieskomplikowane, wyjaśnij jak to zrobić. Nie każdy temat wymaga kierowania do kontaktu.
+
+   - ✅ Wyjaśnić co to jest plik robots.txt i jak wygląda jego struktura
+   - ✅ Pokazać gdzie w Google Search Console znaleźć błędy 404
+   - ❌ Przy każdym temacie pisać „skontaktuj się z nami" bez realnego wyjaśnienia
+
+2. **Przy złożonych kwestiach — opcja pomocy** — przy naprawdę technicznych zagadnieniach dodaj naturalnie wplecioną informację o możliwości pomocy
+
+3. **Nigdy nie oceniaj czytelnika** — unikaj sformułowań sugerujących brak wiedzy
+
+   - ❌ „Jeśli nie masz doświadczenia, lepiej skonsultować..."
+   - ❌ „Dla osób nietechnicznych może to być trudne..."
+   - ✅ Po prostu wyjaśnij temat bez oceny
+
+4. **Unikaj niejasnych instrukcji** — wyjaśnij kontekst i mechanizm
+
+   - ❌ „Skonfiguruj serwer, żeby zwracał kod 404 zamiast 200."
+   - ✅ „Kod 200 oznacza: strona istnieje. Kod 404 oznacza: strona nie istnieje. Jeśli strona faktycznie nie istnieje, ale serwer zwraca 200, to problem w konfiguracji."
+
+5. **Zakładaj różne scenariusze** — nie zakładaj jednej przyczyny problemu
+
+### Przykłady podejścia
+
+| Temat                | Podejście                                                                                                |
+| -------------------- | -------------------------------------------------------------------------------------------------------- |
+| robots.txt           | Wyjaśnij co to za plik, gdzie się znajduje, jak wygląda struktura. To proste — można pokazać.            |
+| Przekierowania 301   | Wyjaśnij co to jest i dlaczego ważne. Przy szczegółach technicznych można wspomnieć o możliwości pomocy. |
+| Konfiguracja serwera | To bardziej techniczne — wyjaśnij co i dlaczego, a przy praktyce zaproponuj wsparcie.                    |
+
+---
+
+## 8. CTA i przyciski
+
+### Cel biznesowy
+
+Każda treść prowadzi do oferty Arteon:
+
+- Edukujesz, żeby użytkownik wiedział co zrobić i dlaczego to działa
+- Na końcu prosta ścieżka „co dalej" (link do usługi/kontaktu), bez agresji i presji
+- Linki i CTA wplatasz naturalnie w zdania
+
+### Opisowe teksty przycisków CTA
+
+Tekst przycisku musi jasno komunikować, co się stanie po kliknięciu:
+
+| ❌ Źle               | ✅ Dobrze                            |
+| -------------------- | ------------------------------------ |
+| „Strony internetowe" | „Sprawdź ofertę stron internetowych" |
+| „Sklepy"             | „Zobacz jak tworzymy sklepy"         |
+| „Kontakt"            | „Skontaktuj się z nami"              |
+
+### Zakaz rekomendowania konkurencji
+
+- ❌ „skorzystaj z pomocy profesjonalisty" → ✅ „skontaktuj się z nami" + link do `/kontakt`
+- ❌ „zatrudnij specjalistę" → ✅ „w Arteon zajmujemy się..."
+- Arteon jest jedynym rekomendowanym źródłem pomocy
+
+## 9. Zakazy stylistyczne
+
+### ZAKAZANE wstawki wyobrażeniowe i konstrukcje (KRYTYCZNE)
+
+**Nigdy nie używaj tych konstrukcji:**
+
+| ❌ ZAKAZANE                       | Dlaczego złe                | ✅ Zamiennik                       |
+| --------------------------------- | --------------------------- | ---------------------------------- |
+| "Wyobraź sobie..."                | Infantylne, wydłuża tekst   | Załóżmy, że... / Przykład:         |
+| "Pomyśl o tym jak o..."           | Zbędna analogia             | (wyjaśnij bezpośrednio)            |
+| "Pewnie zastanawiasz się..."      | Zakładanie myśli czytelnika | (przejdź do sedna)                 |
+| "Teraz wyobraź sobie..."          | Wstawka wyobrażeniowa       | Załóżmy... / Przykład:             |
+| "Co by było, gdyby..."            | Retoryczne, bez wartości    | (podaj fakt lub przykład)          |
+| "Spójrzmy na to z perspektywy..." | Zbędny wstęp                | (przejdź do sedna)                 |
+| "X krok po kroku"                 | Brzmi jak AI, bez wartości  | "Jak zrobić X?" / "Jak wygląda X?" |
+
+### DOZWOLONE konstrukcje prowadzące
+
+| ✅ DOZWOLONE      | Przykład użycia                                                         |
+| ----------------- | ----------------------------------------------------------------------- |
+| "Załóżmy, że..."  | Załóżmy, że masz dwie strony o tym samym temacie.                       |
+| "Przykład:"       | Przykład: kancelaria prawna ma artykuły o rozwodach i prawie rodzinnym. |
+| "W praktyce..."   | W praktyce oznacza to, że Google widzi dwie konkurujące strony.         |
+| "Jak to wygląda?" | Jak to wygląda? Obie strony otrzymują mniej ruchu.                      |
+
+### ZAKAZANE frazy brzmiące jak AI (KRYTYCZNE)
+
+Treści muszą brzmieć naturalnie — jak napisane przez człowieka, nie przez AI. Unikaj fraz, które są "sygnaturą" generowanych tekstów:
+
+| ❌ ZAKAZANE                       | Dlaczego złe             | ✅ Zamiennik                       |
+| --------------------------------- | ------------------------ | ---------------------------------- |
+| "X krok po kroku" w nagłówku      | Typowa fraza AI, banalna | "Jak zrobić X?" / "Jak wygląda X?" |
+| "Kompletny przewodnik po X"       | Przesadzona obietnica    | "Co warto wiedzieć o X"            |
+| "Wszystko co musisz wiedzieć o X" | Clickbaitowa, niemożliwa | (konkretny tytuł pytający)         |
+| "Odkryj sekrety X"                | Marketingowy żargon      | (przejdź do sedna)                 |
+| "Dowiedz się, jak..." w nagłówku  | Zbędny wstęp             | (zacznij od "Jak...")              |
+
+**Zasada:** Jeśli fraza brzmi jak mogła być wygenerowana przez ChatGPT — usuń ją lub przeformułuj.
+
+### Zakazane formy stylistyczne i zamienniki
+
+| ❌ Zakazane                       | ✅ Zamiennik                   |
+| --------------------------------- | ------------------------------ |
+| „W dzisiejszych czasach...”       | (usuń, zacznij od sedna)       |
+| „To nie jest X, tylko Y”          | „Y oznacza...”                 |
+| „Wbrew pozorom...”                | „W praktyce...”                |
+| „Musisz zrozumieć, że...”         | (usuń, przejdź do sedna)       |
+| „To oczywiste” / „To proste”      | (usuń lub wyjaśnij)            |
+| „Jeśli nie masz doświadczenia...” | (wyjaśnij bez oceny)           |
+| „traktowane po macoszemu”         | „często pozostają puste”       |
+| „kompleksowe rozwiązania”         | (konkret zamiast korpo-języka) |
+| Emotki 👉 ✅ ❌                   | (bez emotek w treściach)       |
+| Sekcja „Przydatne linki”          | (wpleć linki w tekst)          |
+
+### Zasady tonu
+
+1. Nigdy nie poprawiaj czytelnika
+2. Nigdy nie zakładaj niewiedzy
+3. Nigdy nie używaj ironii ani sarkazmu
+4. Nigdy nie deprecjonuj pytania/tematu
+5. Nigdy nie porównuj do „gorszych” praktyk innych
+
+### Anglicyzmy
+
+Używaj polskich odpowiedników tam, gdzie brzmią naturalnie:
+
+- „social media” → „media społecznościowe”
+- Anglicyzmy dozwolone tylko gdy polski odpowiednik brzmi sztucznie
+
+### Przykłady z innych branż
+
+W artykułach edukacyjnych nie używaj przykładów z branży Arteon (grafika, marketing, strony WWW). Podawaj przykłady z: prawo, medycyna, gastronomia, nieruchomości, e-commerce, produkcja.
+
+---
+
+## 9a. Google Discover — cel jakościowy (WAŻNE)
+
+Piszemy treści z myślą o Google Discover. To oznacza najwyższy standard jakości — artykuły muszą być na tyle dobre, żeby Google uznał je za warte pokazania użytkownikom bez ich aktywnego wyszukiwania.
+
+### Czym jest Google Discover?
+
+Google Discover to personalizowany feed treści w aplikacji Google i na stronie google.com. Google wybiera artykuły na podstawie:
+
+- Jakości treści (E-E-A-T: Experience, Expertise, Authoritativeness, Trustworthiness)
+- Zaangażowania użytkowników (CTR, czas na stronie)
+- Świeżości i aktualności tematu
+- Jakości technicznej strony (Core Web Vitals)
+
+### Jak pisać dla Google Discover?
+
+| Czynnik       | Wymaganie                                                                           |
+| ------------- | ----------------------------------------------------------------------------------- |
+| **Tytuł**     | Intrygujący, ale nie clickbaitowy. Odpowiada na pytanie, nie obiecuje "wszystkiego" |
+| **Wstęp**     | Natychmiast daje wartość — definicja, odpowiedź, konkret                            |
+| **Treść**     | Unikalna perspektywa, nie przepisany TOP 10 z Google                                |
+| **Głębia**    | Konkretne przykłady, dane, mechanizmy — nie ogólniki                                |
+| **Język**     | Naturalny, ludzki, bez fraz typowych dla AI                                         |
+| **Struktura** | Czytelna, skanowalna, z pytającymi nagłówkami                                       |
+| **Obrazy**    | Wysokiej jakości, min. 1200px szerokości (wymóg Discover)                           |
+
+### Czego unikać?
+
+- **Clickbait** — tytuły obiecujące więcej niż treść dostarcza
+- **Frazy AI** — "krok po kroku", "kompletny przewodnik", "wszystko co musisz wiedzieć"
+- **Ogólniki** — "SEO jest ważne", "w dzisiejszych czasach"
+- **Kopiowanie** — przepisywanie treści z innych źródeł
+- **Brak unikalności** — powtarzanie tego, co już jest w TOP 10
+
+### Cel
+
+Każdy artykuł powinien odpowiadać na pytanie: **"Czy ten artykuł jest na tyle dobry, żeby Google pokazał go komuś, kto go nie szukał?"**
+
+Jeśli odpowiedź brzmi "nie" — przepisz.
+
+---
+
+## 10. Checklista przed publikacją (+ Google Discover)
+
+### Intencja wyszukiwania
+
+- [ ] Czy określiłem intencję frazy kluczowej?
+- [ ] Czy wstęp bezpośrednio odpowiada na pytanie z tytułu?
+- [ ] Czy struktura pasuje do intencji (informacyjna/transakcyjna/porównawcza)?
+- [ ] Czy odpowiadam na pytania podrzędne, które naturalnie wynikają z głównego?
+
+### Ton i styl
+
+- [ ] Wstęp zaczyna od sedna (nie od „W dzisiejszych czasach...”)?
+- [ ] Nagłówki są pytaniami prowadzącymi przez artykuł?
+- [ ] Instrukcje są ponumerowane krok po kroku?
+- [ ] Każdy termin techniczny jest natychmiast wyjaśniony?
+- [ ] Są konkretne scenariusze „jeśli X → zrób Y”?
+- [ ] Brak wstawek wyobrażeniowych ("Wyobraź sobie...")?
+- [ ] Brak fraz typowych dla AI ("krok po kroku" w nagłówku, "kompletny przewodnik")?
+- [ ] Używam "Załóżmy..." lub "Przykład:" zamiast "Wyobraź sobie..."?
+
+### Prawdziwość
+
+- [ ] Każde zdanie jest prawdziwe? (żadnych domysłów)
+- [ ] Każda liczba/statystyka ma źródło z linkiem?
+- [ ] Przykłady hipotetyczne są oznaczone?
+- [ ] Wszystkie linki działają?
+
+### Techniczne
+
+- [ ] Excerpt ma 220-230 znaków?
+- [ ] Minimum 6-8 linków wewnętrznych?
+- [ ] Minimum 4-6 linków zewnętrznych?
+- [ ] Przyciski CTA są opisowe?
+- [ ] Brak polskich cudzysłowów w JSON?
+
+---
+
+## 11. Po zakończeniu zadania
+
+**OBOWIĄZKOWO:** Po zakończeniu każdego zadania dotyczącego treści (artykuł, strona, edycja) przedstaw zmiany w formie tabeli:
+
+| Element             | Przed           | Po             |
+| ------------------- | --------------- | -------------- |
+| (element zmieniony) | (stara wartość) | (nowa wartość) |
+
+Tabela powinna zawierać wszystkie istotne zmiany: tytuły, CTA, fragmenty tekstu, linki, itp.

@@ -17,11 +17,13 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Jak sprawdzić długość meta title i description? | Instrukcja online',
-  description: 'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160), jak interpretować wyniki i uniknąć obcinania w Google.',
+  description:
+    'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160), jak interpretować wyniki i uniknąć obcinania w Google.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja') },
   openGraph: {
     title: 'Jak sprawdzić długość meta title i description? | Instrukcja online',
-    description: 'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160), jak interpretować wyniki i uniknąć obcinania w Google.',
+    description:
+      'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160), jak interpretować wyniki i uniknąć obcinania w Google.',
     url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja'),
     type: 'website',
     images: [
@@ -36,7 +38,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak sprawdzić długość meta title i description',
-  description: 'Instrukcja krok po kroku: sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160) oraz jak uniknąć obcinania w Google.',
+  description:
+    'Instrukcja krok po kroku: sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160) oraz jak uniknąć obcinania w Google.',
   url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja'),
   totalTime: 'PT3M',
   step: [

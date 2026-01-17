@@ -170,7 +170,8 @@ export default function OfferDesignPresentationFolderPage() {
               <strong>Dla szkół, uczelni, instytucji i organizatorów szkoleń,</strong> którzy przekazują materiały edukacyjne i informacje o programach.
             </li>
             <li>
-              <strong>Dla marek budujących prestiż offline,</strong> które chcą, aby doświadczenie klienta „na żywo” było równie dopracowane, jak strona internetowa czy profil w mediach społecznościowych.
+              <strong>Dla marek budujących prestiż offline,</strong> które chcą, aby doświadczenie klienta „na żywo” było równie dopracowane, jak strona internetowa czy profil w mediach
+              społecznościowych.
             </li>
           </ul>
         </SectionInfo>
@@ -355,5 +356,3 @@ export default function OfferDesignPresentationFolderPage() {
     </>
   );
 }
-
-

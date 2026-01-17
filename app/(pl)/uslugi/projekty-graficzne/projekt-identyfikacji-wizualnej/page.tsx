@@ -337,8 +337,8 @@ export default function OfferDesignBrandIdentityDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
-                    o SEO i wyższej konwersji.
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
+                    myślą o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
@@ -374,5 +374,3 @@ export default function OfferDesignBrandIdentityDesignPage() {
     </>
   );
 }
-
-

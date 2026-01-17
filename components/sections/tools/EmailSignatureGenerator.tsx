@@ -5,7 +5,22 @@ import Badge from '@/components/ui/Badge';
 import Eyebrow from '@/components/ui/typography/Eyebrow';
 import { buildSignatureHtml } from '@/components/sections/tools/EmailSignatureGenerator/buildSignatureHtml';
 import { useSignatureCopy } from '@/components/sections/tools/EmailSignatureGenerator/useSignatureCopy';
-import type { ActivePanel, BorderSides, CtaRadiusOption, FontSizeOption, LayoutType, MarginOption, SignatureConfig, SocialKey, SpacingConfig, SpacingKey, StyleConfig, TextElementKey, TextStyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import type {
+  ActivePanel,
+  BorderSides,
+  CtaRadiusOption,
+  FontSizeOption,
+  LayoutType,
+  MarginOption,
+  SignatureConfig,
+  SocialKey,
+  SpacingConfig,
+  SpacingKey,
+  StyleConfig,
+  TextElementKey,
+  TextStyleConfig,
+  ThemePreset,
+} from '@/components/sections/tools/EmailSignatureGenerator/types';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import ConfirmModal from '@/components/ui/ConfirmModal';
@@ -465,14 +480,7 @@ export default function EmailSignatureGenerator() {
             </Eyebrow>
             <div className="flex flex-wrap gap-1">
               {(['standard', 'top-banner', 'label-column', 'centered', 'compact', 'two-column', 'minimal', 'bottom-bar'] as LayoutType[]).map((lt) => (
-                <Badge
-                  key={lt}
-                  as="button"
-                  type="button"
-                  onClick={() => setLayout(lt)}
-                  variant={layout === lt ? 'selected' : 'default'}
-                  size="sm"
-                >
+                <Badge key={lt} as="button" type="button" onClick={() => setLayout(lt)} variant={layout === lt ? 'selected' : 'default'} size="sm">
                   {lt === 'standard' && t.layouts.standard}
                   {lt === 'top-banner' && t.layouts.topBanner}
                   {lt === 'label-column' && t.layouts.labelColumn}
@@ -486,7 +494,7 @@ export default function EmailSignatureGenerator() {
             </div>
           </div>
         </div>
-        <p className="text-xs! text-light">{t.moreLayoutsSoon}</p>
+        <p className="text-light text-xs!">{t.moreLayoutsSoon}</p>
       </section>
 
       <section className="tool-section flex flex-wrap items-center gap-3 p-4!">
@@ -517,7 +525,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.topLine}</span>
+                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.topLine}</span>
                   </label>
                   <input
                     type="text"
@@ -530,7 +538,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.avatar}</span>
+                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.avatar}</span>
                   </label>
                   <input
                     type="url"
@@ -539,13 +547,13 @@ export default function EmailSignatureGenerator() {
                     className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
                     placeholder={t.identity.avatarPlaceholder}
                   />
-                  <p className="mt-1 text-xs! text-light">{t.identity.avatarHelper}</p>
+                  <p className="text-light mt-1 text-xs!">{t.identity.avatarHelper}</p>
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.fullName}</span>
+                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.fullName}</span>
                     </label>
                     <input
                       type="text"
@@ -557,7 +565,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.nameTag}</span>
+                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.nameTag}</span>
                     </label>
                     <input
                       type="text"
@@ -571,7 +579,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-light uppercase">{t.identity.jobTitle}</label>
+                    <label className="text-light mb-1 block text-xs! font-semibold uppercase">{t.identity.jobTitle}</label>
                     <input
                       type="text"
                       value={config.jobTitle}
@@ -581,7 +589,7 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="mb-1 block text-xs! font-semibold text-light uppercase">{t.identity.company}</label>
+                    <label className="text-light mb-1 block text-xs! font-semibold uppercase">{t.identity.company}</label>
                     <input
                       type="text"
                       value={config.company}
@@ -594,7 +602,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.extraLine}</span>
+                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.extraLine}</span>
                   </label>
                   <input
                     type="text"
@@ -608,7 +616,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.email}</span>
+                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.email}</span>
                     </label>
                     <input
                       type="email"
@@ -620,7 +628,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">{t.identity.phone}</span>
+                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.phone}</span>
                     </label>
                     <input
                       type="tel"
@@ -634,7 +642,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.website}</span>
+                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.website}</span>
                   </label>
                   <input
                     type="url"
@@ -647,7 +655,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.address}</span>
+                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.address}</span>
                   </label>
                   <textarea
                     value={config.address}
@@ -660,7 +668,7 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-xs! font-semibold uppercase text-light">{t.identity.formalLine}</span>
+                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.formalLine}</span>
                   </label>
                   <textarea
                     value={config.formalLine}
@@ -680,11 +688,11 @@ export default function EmailSignatureGenerator() {
                 </Eyebrow>
 
                 <div>
-                  <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.buttons.cta1Title}</p>
+                  <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.buttons.cta1Title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.label}</span>
+                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.label}</span>
                       </label>
                       <input
                         type="text"
@@ -696,7 +704,7 @@ export default function EmailSignatureGenerator() {
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.url}</span>
+                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.url}</span>
                       </label>
                       <input
                         type="url"
@@ -707,15 +715,15 @@ export default function EmailSignatureGenerator() {
                       />
                     </div>
                   </div>
-                  <p className="mt-1 text-xs! text-light">{t.buttons.helper}</p>
+                  <p className="text-light mt-1 text-xs!">{t.buttons.helper}</p>
                 </div>
 
                 <div>
-                  <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.buttons.cta2Title}</p>
+                  <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.buttons.cta2Title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.cta2Label}</span>
+                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.cta2Label}</span>
                       </label>
                       <input
                         type="text"
@@ -727,7 +735,7 @@ export default function EmailSignatureGenerator() {
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-xs! font-semibold uppercase text-light">{t.buttons.cta2Url}</span>
+                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.cta2Url}</span>
                       </label>
                       <input
                         type="url"
@@ -741,7 +749,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.buttons.ctaRadius}</p>
+                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.buttons.ctaRadius}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
                       <Badge
@@ -771,7 +779,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">LinkedIn</span>
+                      <span className="text-light text-xs! font-semibold uppercase">LinkedIn</span>
                     </label>
                     <input
                       type="url"
@@ -783,7 +791,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">Instagram</span>
+                      <span className="text-light text-xs! font-semibold uppercase">Instagram</span>
                     </label>
                     <input
                       type="url"
@@ -797,7 +805,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">Facebook</span>
+                      <span className="text-light text-xs! font-semibold uppercase">Facebook</span>
                     </label>
                     <input
                       type="url"
@@ -809,7 +817,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">TikTok</span>
+                      <span className="text-light text-xs! font-semibold uppercase">TikTok</span>
                     </label>
                     <input
                       type="url"
@@ -823,7 +831,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">YouTube</span>
+                      <span className="text-light text-xs! font-semibold uppercase">YouTube</span>
                     </label>
                     <input
                       type="url"
@@ -835,7 +843,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-xs! font-semibold uppercase text-light">X (Twitter)</span>
+                      <span className="text-light text-xs! font-semibold uppercase">X (Twitter)</span>
                     </label>
                     <input
                       type="url"
@@ -846,9 +854,9 @@ export default function EmailSignatureGenerator() {
                     />
                   </div>
                 </div>
-                <p className="text-xs! text-light">{t.social.helper}</p>
+                <p className="text-light text-xs!">{t.social.helper}</p>
 
-                <div className="border-t border-neutral-200 pt-4 mt-4 space-y-3">
+                <div className="mt-4 space-y-3 border-t border-neutral-200 pt-4">
                   <div className="flex items-center gap-2">
                     <input
                       id="social-icons-toggle"
@@ -857,7 +865,7 @@ export default function EmailSignatureGenerator() {
                       onChange={(e) => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, showIcons: e.target.checked })}
                       className="h-4! w-4! rounded border-neutral-300"
                     />
-                    <label htmlFor="social-icons-toggle" className="text-sm! text-mid">
+                    <label htmlFor="social-icons-toggle" className="text-mid text-sm!">
                       {t.social.showIcons}
                     </label>
                   </div>
@@ -865,7 +873,7 @@ export default function EmailSignatureGenerator() {
                   {styleConfig.socialIcons.showIcons && (
                     <>
                       <div>
-                        <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.social.iconSize}</p>
+                        <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.social.iconSize}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['small', 'medium', 'large'] as const).map((size) => (
                             <Badge
@@ -886,7 +894,7 @@ export default function EmailSignatureGenerator() {
                       </div>
 
                       <div>
-                        <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.social.iconColor}</p>
+                        <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.social.iconColor}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['platform', 'accent', 'text'] as const).map((mode) => (
                             <Badge
@@ -914,7 +922,7 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'appearance' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
+                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
                     {t.appearance.themeTitle}
                   </Eyebrow>
                   <div className="flex flex-wrap gap-2">
@@ -939,7 +947,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.accentColor}</p>
+                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.accentColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -950,13 +958,13 @@ export default function EmailSignatureGenerator() {
                     </div>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.textColor}</p>
+                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.textColor}</p>
                     <div className="flex items-center gap-2">
                       <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="h-9 w-9 cursor-pointer border-none bg-white p-0!" />
                     </div>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.backgroundColor}</p>
+                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.backgroundColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
@@ -970,7 +978,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.fontFamily}</p>
+                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.fontFamily}</p>
                     <select
                       value={styleConfig.fontFamily}
                       onChange={(e) => handleStyleChange('fontFamily', e.target.value)}
@@ -984,7 +992,7 @@ export default function EmailSignatureGenerator() {
                     </select>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.appearance.fontSize}</p>
+                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.fontSize}</p>
                     <div className="flex flex-wrap gap-2">
                       {(['small', 'normal', 'large'] as FontSizeOption[]).map((size) => (
                         <Badge
@@ -1006,10 +1014,10 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.border.label}</p>
+                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.border.label}</p>
                   <div className="flex flex-wrap gap-3">
                     {(['left', 'right', 'top', 'bottom'] as (keyof BorderSides)[]).map((side) => (
-                      <label key={side} className="flex items-center gap-1.5 cursor-pointer">
+                      <label key={side} className="flex cursor-pointer items-center gap-1.5">
                         <input
                           type="checkbox"
                           checked={styleConfig.border[side]}
@@ -1024,7 +1032,7 @@ export default function EmailSignatureGenerator() {
                           }}
                           className="h-4! w-4! rounded border-neutral-300"
                         />
-                        <span className="text-sm! text-mid">
+                        <span className="text-mid text-sm!">
                           {side === 'left' && t.border.left}
                           {side === 'right' && t.border.right}
                           {side === 'top' && t.border.top}
@@ -1062,35 +1070,20 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'textStyle' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
+                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
                     {t.textStyle.title}
                   </Eyebrow>
-                  <p className="text-xs! text-light mb-3">{t.textStyle.helper}</p>
+                  <p className="text-light mb-3 text-xs!">{t.textStyle.helper}</p>
                 </div>
 
                 <div>
-                  <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.textStyle.addColor}</p>
+                  <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.textStyle.addColor}</p>
                   <div className="flex items-center gap-2">
                     <div className="relative">
-                      <input
-                        type="color"
-                        value={pendingCustomColor}
-                        onChange={(e) => setPendingCustomColor(e.target.value)}
-                        className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
-                      />
-                      <div
-                        className="h-8 w-8 rounded border border-neutral-300 cursor-pointer"
-                        style={{ backgroundColor: pendingCustomColor }}
-                      />
+                      <input type="color" value={pendingCustomColor} onChange={(e) => setPendingCustomColor(e.target.value)} className="absolute inset-0 h-full w-full cursor-pointer opacity-0" />
+                      <div className="h-8 w-8 cursor-pointer rounded border border-neutral-300" style={{ backgroundColor: pendingCustomColor }} />
                     </div>
-                    <Badge
-                      onClick={() => addCustomColor(pendingCustomColor)}
-                      as="button"
-                      type="button"
-                      size="sm"
-                      variant="default"
-                      className="px-3 py-1 text-xs! font-medium hover:border-neutral-500"
-                    >
+                    <Badge onClick={() => addCustomColor(pendingCustomColor)} as="button" type="button" size="sm" variant="default" className="px-3 py-1 text-xs! font-medium hover:border-neutral-500">
                       {t.textStyle.saveColor}
                     </Badge>
                   </div>
@@ -1098,19 +1091,15 @@ export default function EmailSignatureGenerator() {
 
                 {textStyleConfig.customColors.length > 0 && (
                   <div>
-                    <p className="mb-2 text-xs! font-semibold text-light uppercase">{t.textStyle.customColors}</p>
+                    <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.textStyle.customColors}</p>
                     <div className="flex flex-wrap gap-2">
                       {textStyleConfig.customColors.map((color) => (
-                        <div key={color} className="relative group">
-                          <div
-                            className="h-8 w-8 rounded border border-neutral-300"
-                            style={{ backgroundColor: color }}
-                            title={color}
-                          />
+                        <div key={color} className="group relative">
+                          <div className="h-8 w-8 rounded border border-neutral-300" style={{ backgroundColor: color }} title={color} />
                           <button
                             type="button"
                             onClick={() => removeCustomColor(color)}
-                            className="absolute -top-1.5 -right-1.5 hidden group-hover:flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white"
+                            className="absolute -top-1.5 -right-1.5 hidden h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white group-hover:flex"
                             aria-label="Usuń kolor"
                           >
                             <RiDeleteBinLine className="h-3 w-3" />
@@ -1122,16 +1111,11 @@ export default function EmailSignatureGenerator() {
                 )}
 
                 {config.fullName.trim() && (
-                  <div className="border-t border-neutral-200 pt-3 space-y-2">
-                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.name}</p>
+                  <div className="space-y-2 border-t border-neutral-200 pt-3">
+                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.name}</p>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleColorChange('name', null)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        title="Reset"
-                      >
+                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
+                      <button type="button" onClick={() => handleTextStyleColorChange('name', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
                         <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
@@ -1152,20 +1136,33 @@ export default function EmailSignatureGenerator() {
                           type="color"
                           value={textStyleConfig.name.color || styleConfig.accentColor}
                           onChange={(e) => handleTextStyleColorChange('name', e.target.value)}
-                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
                         />
-                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
                           <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('name', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('name', -2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zmniejsz rozmiar"
+                      >
                         <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
-                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.name.sizeOffset > 0 ? '+' : ''}{textStyleConfig.name.sizeOffset}</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('name', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                      <span className="w-10 text-center text-xs! font-medium">
+                        {textStyleConfig.name.sizeOffset > 0 ? '+' : ''}
+                        {textStyleConfig.name.sizeOffset}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('name', 2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zwiększ rozmiar"
+                      >
                         <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
@@ -1173,16 +1170,11 @@ export default function EmailSignatureGenerator() {
                 )}
 
                 {config.jobTitle.trim() && (
-                  <div className="border-t border-neutral-200 pt-3 space-y-2">
-                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.jobTitle}</p>
+                  <div className="space-y-2 border-t border-neutral-200 pt-3">
+                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.jobTitle}</p>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleColorChange('jobTitle', null)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        title="Reset"
-                      >
+                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
+                      <button type="button" onClick={() => handleTextStyleColorChange('jobTitle', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
                         <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
@@ -1203,20 +1195,33 @@ export default function EmailSignatureGenerator() {
                           type="color"
                           value={textStyleConfig.jobTitle.color || styleConfig.textColor}
                           onChange={(e) => handleTextStyleColorChange('jobTitle', e.target.value)}
-                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
                         />
-                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
                           <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('jobTitle', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('jobTitle', -2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zmniejsz rozmiar"
+                      >
                         <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
-                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.jobTitle.sizeOffset > 0 ? '+' : ''}{textStyleConfig.jobTitle.sizeOffset}</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('jobTitle', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                      <span className="w-10 text-center text-xs! font-medium">
+                        {textStyleConfig.jobTitle.sizeOffset > 0 ? '+' : ''}
+                        {textStyleConfig.jobTitle.sizeOffset}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('jobTitle', 2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zwiększ rozmiar"
+                      >
                         <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
@@ -1224,16 +1229,11 @@ export default function EmailSignatureGenerator() {
                 )}
 
                 {config.company.trim() && (
-                  <div className="border-t border-neutral-200 pt-3 space-y-2">
-                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.company}</p>
+                  <div className="space-y-2 border-t border-neutral-200 pt-3">
+                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.company}</p>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleColorChange('company', null)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        title="Reset"
-                      >
+                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
+                      <button type="button" onClick={() => handleTextStyleColorChange('company', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
                         <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
@@ -1254,20 +1254,33 @@ export default function EmailSignatureGenerator() {
                           type="color"
                           value={textStyleConfig.company.color || styleConfig.textColor}
                           onChange={(e) => handleTextStyleColorChange('company', e.target.value)}
-                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
                         />
-                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
                           <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('company', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('company', -2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zmniejsz rozmiar"
+                      >
                         <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
-                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.company.sizeOffset > 0 ? '+' : ''}{textStyleConfig.company.sizeOffset}</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('company', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                      <span className="w-10 text-center text-xs! font-medium">
+                        {textStyleConfig.company.sizeOffset > 0 ? '+' : ''}
+                        {textStyleConfig.company.sizeOffset}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('company', 2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zwiększ rozmiar"
+                      >
                         <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
@@ -1275,16 +1288,11 @@ export default function EmailSignatureGenerator() {
                 )}
 
                 {(config.email.trim() || config.phone.trim() || config.website.trim()) && (
-                  <div className="border-t border-neutral-200 pt-3 space-y-2">
-                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.contact}</p>
+                  <div className="space-y-2 border-t border-neutral-200 pt-3">
+                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.contact}</p>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleColorChange('contact', null)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        title="Reset"
-                      >
+                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
+                      <button type="button" onClick={() => handleTextStyleColorChange('contact', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
                         <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
@@ -1305,20 +1313,33 @@ export default function EmailSignatureGenerator() {
                           type="color"
                           value={textStyleConfig.contact.color || styleConfig.textColor}
                           onChange={(e) => handleTextStyleColorChange('contact', e.target.value)}
-                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
                         />
-                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
                           <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('contact', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('contact', -2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zmniejsz rozmiar"
+                      >
                         <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
-                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.contact.sizeOffset > 0 ? '+' : ''}{textStyleConfig.contact.sizeOffset}</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('contact', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                      <span className="w-10 text-center text-xs! font-medium">
+                        {textStyleConfig.contact.sizeOffset > 0 ? '+' : ''}
+                        {textStyleConfig.contact.sizeOffset}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('contact', 2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zwiększ rozmiar"
+                      >
                         <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
@@ -1326,16 +1347,11 @@ export default function EmailSignatureGenerator() {
                 )}
 
                 {Object.values(config.socials).some((url) => url.trim()) && (
-                  <div className="border-t border-neutral-200 pt-3 space-y-2">
-                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.socials}</p>
+                  <div className="space-y-2 border-t border-neutral-200 pt-3">
+                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.socials}</p>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleColorChange('socials', null)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        title="Reset"
-                      >
+                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
+                      <button type="button" onClick={() => handleTextStyleColorChange('socials', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
                         <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
@@ -1356,20 +1372,33 @@ export default function EmailSignatureGenerator() {
                           type="color"
                           value={textStyleConfig.socials.color || styleConfig.accentColor}
                           onChange={(e) => handleTextStyleColorChange('socials', e.target.value)}
-                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
                         />
-                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
                           <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('socials', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('socials', -2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zmniejsz rozmiar"
+                      >
                         <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
-                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.socials.sizeOffset > 0 ? '+' : ''}{textStyleConfig.socials.sizeOffset}</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('socials', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                      <span className="w-10 text-center text-xs! font-medium">
+                        {textStyleConfig.socials.sizeOffset > 0 ? '+' : ''}
+                        {textStyleConfig.socials.sizeOffset}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('socials', 2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zwiększ rozmiar"
+                      >
                         <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
@@ -1377,16 +1406,11 @@ export default function EmailSignatureGenerator() {
                 )}
 
                 {config.legalNote.trim() && (
-                  <div className="border-t border-neutral-200 pt-3 space-y-2">
-                    <p className="text-xs! font-semibold text-light uppercase">{t.textStyle.legal}</p>
+                  <div className="space-y-2 border-t border-neutral-200 pt-3">
+                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.legal}</p>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.color}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleColorChange('legal', null)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        title="Reset"
-                      >
+                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
+                      <button type="button" onClick={() => handleTextStyleColorChange('legal', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
                         <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                       <div
@@ -1407,20 +1431,33 @@ export default function EmailSignatureGenerator() {
                           type="color"
                           value={textStyleConfig.legal.color || styleConfig.textColor}
                           onChange={(e) => handleTextStyleColorChange('legal', e.target.value)}
-                          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
                         />
-                        <div className="h-7 w-7 rounded border border-dashed border-neutral-400 flex items-center justify-center cursor-pointer hover:border-neutral-600">
+                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
                           <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs! text-light w-12">{t.textStyle.size}:</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('legal', -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('legal', -2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zmniejsz rozmiar"
+                      >
                         <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
-                      <span className="w-10 text-center text-xs! font-medium">{textStyleConfig.legal.sizeOffset > 0 ? '+' : ''}{textStyleConfig.legal.sizeOffset}</span>
-                      <button type="button" onClick={() => handleTextStyleSizeChange('legal', 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+                      <span className="w-10 text-center text-xs! font-medium">
+                        {textStyleConfig.legal.sizeOffset > 0 ? '+' : ''}
+                        {textStyleConfig.legal.sizeOffset}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleTextStyleSizeChange('legal', 2)}
+                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
+                        aria-label="Zwiększ rozmiar"
+                      >
                         <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
                       </button>
                     </div>
@@ -1432,14 +1469,14 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'spacing' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="text-xs! font-semibold mb-2">
+                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
                     {t.spacing.title}
                   </Eyebrow>
-                  <p className="text-xs! text-light mb-3">{t.spacing.helper}</p>
+                  <p className="text-light mb-3 text-xs!">{t.spacing.helper}</p>
                 </div>
 
                 <div>
-                  <p className="mb-1 text-xs! font-semibold text-light uppercase">{t.spacing.padding}</p>
+                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.spacing.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
                       <Badge
@@ -1461,7 +1498,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.fullName.trim() && LAYOUT_SPACING_MAP[layout].includes('afterName') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-sm! text-mid">{t.spacing.afterName}</span>
+                    <span className="text-mid text-sm!">{t.spacing.afterName}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterName', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
                         <RiSubtractLine className="h-4 w-4 text-slate-800" />
@@ -1476,9 +1513,14 @@ export default function EmailSignatureGenerator() {
 
                 {(config.jobTitle.trim() || config.company.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterTitle') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-sm! text-mid">{t.spacing.afterTitle}</span>
+                    <span className="text-mid text-sm!">{t.spacing.afterTitle}</span>
                     <div className="flex items-center gap-1">
-                      <button type="button" onClick={() => handleSpacingChange('afterTitle', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                      <button
+                        type="button"
+                        onClick={() => handleSpacingChange('afterTitle', -2)}
+                        className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
+                        aria-label="Zmniejsz odstęp"
+                      >
                         <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterTitle} px</span>
@@ -1491,9 +1533,14 @@ export default function EmailSignatureGenerator() {
 
                 {config.extraLine.trim() && LAYOUT_SPACING_MAP[layout].includes('afterExtra') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-sm! text-mid">{t.spacing.afterExtra}</span>
+                    <span className="text-mid text-sm!">{t.spacing.afterExtra}</span>
                     <div className="flex items-center gap-1">
-                      <button type="button" onClick={() => handleSpacingChange('afterExtra', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                      <button
+                        type="button"
+                        onClick={() => handleSpacingChange('afterExtra', -2)}
+                        className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
+                        aria-label="Zmniejsz odstęp"
+                      >
                         <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterExtra} px</span>
@@ -1506,13 +1553,23 @@ export default function EmailSignatureGenerator() {
 
                 {(config.email.trim() || config.phone.trim() || config.website.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterContact') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-sm! text-mid">{t.spacing.afterContact}</span>
+                    <span className="text-mid text-sm!">{t.spacing.afterContact}</span>
                     <div className="flex items-center gap-1">
-                      <button type="button" onClick={() => handleSpacingChange('afterContact', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                      <button
+                        type="button"
+                        onClick={() => handleSpacingChange('afterContact', -2)}
+                        className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
+                        aria-label="Zmniejsz odstęp"
+                      >
                         <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterContact} px</span>
-                      <button type="button" onClick={() => handleSpacingChange('afterContact', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                      <button
+                        type="button"
+                        onClick={() => handleSpacingChange('afterContact', 2)}
+                        className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
+                        aria-label="Zwiększ odstęp"
+                      >
                         <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
@@ -1521,13 +1578,23 @@ export default function EmailSignatureGenerator() {
 
                 {Object.values(config.socials).some((url) => url.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterSocials') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-sm! text-mid">{t.spacing.afterSocials}</span>
+                    <span className="text-mid text-sm!">{t.spacing.afterSocials}</span>
                     <div className="flex items-center gap-1">
-                      <button type="button" onClick={() => handleSpacingChange('afterSocials', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                      <button
+                        type="button"
+                        onClick={() => handleSpacingChange('afterSocials', -2)}
+                        className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
+                        aria-label="Zmniejsz odstęp"
+                      >
                         <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterSocials} px</span>
-                      <button type="button" onClick={() => handleSpacingChange('afterSocials', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
+                      <button
+                        type="button"
+                        onClick={() => handleSpacingChange('afterSocials', 2)}
+                        className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
+                        aria-label="Zwiększ odstęp"
+                      >
                         <RiAddLine className="h-4 w-4 text-slate-800" />
                       </button>
                     </div>
@@ -1536,7 +1603,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.ctaLabel.trim() && config.ctaUrl.trim() && LAYOUT_SPACING_MAP[layout].includes('afterCta') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-sm! text-mid">{t.spacing.afterCta}</span>
+                    <span className="text-mid text-sm!">{t.spacing.afterCta}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterCta', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
                         <RiSubtractLine className="h-4 w-4 text-slate-800" />
@@ -1551,9 +1618,14 @@ export default function EmailSignatureGenerator() {
 
                 {config.legalNote.trim() && LAYOUT_SPACING_MAP[layout].includes('beforeLegal') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-sm! text-mid">{t.spacing.beforeLegal}</span>
+                    <span className="text-mid text-sm!">{t.spacing.beforeLegal}</span>
                     <div className="flex items-center gap-1">
-                      <button type="button" onClick={() => handleSpacingChange('beforeLegal', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
+                      <button
+                        type="button"
+                        onClick={() => handleSpacingChange('beforeLegal', -2)}
+                        className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
+                        aria-label="Zmniejsz odstęp"
+                      >
                         <RiSubtractLine className="h-4 w-4 text-slate-800" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.beforeLegal} px</span>
@@ -1586,7 +1658,7 @@ export default function EmailSignatureGenerator() {
                     onChange={(e) => handleStyleChange('showDivider', e.target.checked)}
                     className="h-4! w-4! rounded border-neutral-300"
                   />
-                  <label htmlFor="divider-toggle" className="text-sm! text-mid">
+                  <label htmlFor="divider-toggle" className="text-mid text-sm!">
                     {t.legal.showDivider}
                   </label>
                 </div>
@@ -1599,7 +1671,7 @@ export default function EmailSignatureGenerator() {
           <div className="flex items-center justify-between gap-2">
             <div>
               <h2 className="h6">{t.preview.title}</h2>
-              <p className="text-xs! text-light">{t.preview.helper}</p>
+              <p className="text-light text-xs!">{t.preview.helper}</p>
             </div>
           </div>
 
@@ -1620,21 +1692,11 @@ export default function EmailSignatureGenerator() {
             </Button>
           </div>
 
-          <ConfirmModal
-            isOpen={showResetModal}
-            onClose={() => setShowResetModal(false)}
-            onConfirm={handleReset}
-            title={t.preview.resetModalTitle}
-            description={t.preview.resetModalDescription}
-          />
+          <ConfirmModal isOpen={showResetModal} onClose={() => setShowResetModal(false)} onConfirm={handleReset} title={t.preview.resetModalTitle} description={t.preview.resetModalDescription} />
 
-          {!hasRequired && (
-            <p className="text-xs! text-light">{t.preview.requiredFields}</p>
-          )}
+          {!hasRequired && <p className="text-light text-xs!">{t.preview.requiredFields}</p>}
         </section>
       </div>
     </div>
   );
 }
-
-

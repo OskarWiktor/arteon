@@ -30,7 +30,16 @@ const ui = {
   },
 } as const;
 
-export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle = ui.pl.defaultSubtitle, generateSchema = true, pageUrl, openByDefault = 0, variant = 'default', showIcons = false }: FaqPanelsProps) {
+export default function FaqPanels({
+  items,
+  title = ui.pl.defaultTitle,
+  subtitle = ui.pl.defaultSubtitle,
+  generateSchema = true,
+  pageUrl,
+  openByDefault = 0,
+  variant = 'default',
+  showIcons = false,
+}: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
@@ -101,65 +110,65 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle 
       <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="reveal-animation h4 mb-8" titleId="faq-heading" />
 
       <div className={containerClass}>
-      {items.map((item, index) => {
-        const isOpen = activeIndex === index;
-        const buttonId = `faq-q-${index}`;
-        const panelId = `faq-a-${index}`;
+        {items.map((item, index) => {
+          const isOpen = activeIndex === index;
+          const buttonId = `faq-q-${index}`;
+          const panelId = `faq-a-${index}`;
 
-        return (
-          <div
-            key={index}
-            className={[
-              'my-2 overflow-hidden rounded-xl border bg-white transition-shadow',
-              'hover:border-slate-300 hover:shadow-md',
-              isOpen ? 'border-slate-300 shadow-sm' : 'border-gray-200',
-            ].join(' ')}
-          >
-            <button
-              id={buttonId}
-              type="button"
-              ref={(el) => {
-                btnRefs.current[index] = el;
-              }}
-              onClick={() => toggle(index)}
-              onKeyDown={(e) => onKeyDown(e, index)}
+          return (
+            <div
+              key={index}
               className={[
-                'flex w-full cursor-pointer items-center justify-between p-3 text-left transition',
-                'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-800',
-                'md:p-4',
-                showIcons && item.icon ? 'gap-4' : '',
+                'my-2 overflow-hidden rounded-xl border bg-white transition-shadow',
+                'hover:border-slate-300 hover:shadow-md',
+                isOpen ? 'border-slate-300 shadow-sm' : 'border-gray-200',
               ].join(' ')}
-              aria-expanded={isOpen}
-              aria-controls={panelId}
             >
-              {showIcons && item.icon && (
-                <div className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl transition ${isOpen ? 'bg-slate-800 text-white' : 'bg-slate-100 text-slate-800'}`}>
-                  {item.icon}
-                </div>
-              )}
-              <h3 className="h6 flex-1">{item.question}</h3>
-              <span className="ml-2" aria-hidden="true">
-                {isOpen ? <FiMinus /> : <FiPlus />}
-              </span>
-            </button>
+              <button
+                id={buttonId}
+                type="button"
+                ref={(el) => {
+                  btnRefs.current[index] = el;
+                }}
+                onClick={() => toggle(index)}
+                onKeyDown={(e) => onKeyDown(e, index)}
+                className={[
+                  'flex w-full cursor-pointer items-center justify-between p-3 text-left transition',
+                  'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-800',
+                  'md:p-4',
+                  showIcons && item.icon ? 'gap-4' : '',
+                ].join(' ')}
+                aria-expanded={isOpen}
+                aria-controls={panelId}
+              >
+                {showIcons && item.icon && (
+                  <div className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl transition ${isOpen ? 'bg-slate-800 text-white' : 'bg-slate-100 text-slate-800'}`}>
+                    {item.icon}
+                  </div>
+                )}
+                <h3 className="h6 flex-1">{item.question}</h3>
+                <span className="ml-2" aria-hidden="true">
+                  {isOpen ? <FiMinus /> : <FiPlus />}
+                </span>
+              </button>
 
-            <motion.div
-              id={panelId}
-              role="region"
-              aria-labelledby={buttonId}
-              initial={false}
-              animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
-              style={{ overflow: 'hidden' }}
-              transition={{ duration: 0.25, ease: 'easeInOut' }}
-              aria-hidden={!isOpen}
-            >
-              <div className="border-t border-slate-100 p-4">
-                <div className="text-light leading-relaxed">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
-              </div>
-            </motion.div>
-          </div>
-        );
-      })}
+              <motion.div
+                id={panelId}
+                role="region"
+                aria-labelledby={buttonId}
+                initial={false}
+                animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
+                style={{ overflow: 'hidden' }}
+                transition={{ duration: 0.25, ease: 'easeInOut' }}
+                aria-hidden={!isOpen}
+              >
+                <div className="border-t border-slate-100 p-4">
+                  <div className="text-light leading-relaxed">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
+                </div>
+              </motion.div>
+            </div>
+          );
+        })}
       </div>
 
       {faqJsonLd && <script id={`faq-jsonld-${scriptId}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}

@@ -22,10 +22,7 @@ export default function SectionInfoBanner({ icon, text, highlight, btnLabel, btn
               {text}
             </p>
           </div>
-          <AppLink
-            href={btnLink}
-            className="flex-shrink-0 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-100"
-          >
+          <AppLink href={btnLink} className="flex-shrink-0 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-100">
             {btnLabel}
           </AppLink>
         </div>

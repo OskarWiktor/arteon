@@ -1,25 +1,223 @@
 {
   "articles": [
     {
-      "slug": "co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac",
+      "slug": "czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac",
+      "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?",
+      "excerpt": "Błąd 404 pojawia się, gdy strona nie istnieje. Wyjaśniamy, skąd biorą się takie błędy, jak je znaleźć w Google Search Console, kiedy wymagają reakcji i co umieścić na stronie błędu, by użytkownicy mogli wrócić do treści.",
+      "primaryCategory": "Strony",
+      "category": ["UX"],
+      "tags": ["błąd 404", "strona błędu", "UX", "nawigacja", "SEO", "użyteczność"],
+      "seo": {
+        "title": "Czym jest strona błędu 404 i dlaczego warto ją zaprojektować? - Arteon",
+        "description": "Błąd 404 oznacza, że strona nie istnieje. Wyjaśniamy, skąd się bierze, jak go znaleźć w Google Search Console i co umieścić na stronie błędu.",
+        "canonical": "https://www.arteonagency.pl/edukacja/strony/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac"
+      },
+      "cover": "/assets/blog/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac.webp",
+      "author": {
+        "name": "Arteon"
+      },
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "readingTime": 11,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Gdy wpisujesz w przeglądarkę adres strony, która nie istnieje, serwer odpowiada kodem 404. To informacja techniczna, która mówi: pod tym adresem nic nie ma. Przeglądarka pokazuje wtedy komunikat o błędzie.</p><br/><p>Co to oznacza w praktyce? Użytkownik trafia w ślepy zaułek. Nie widzi treści, której szukał. Jeśli witryna nie ma przygotowanej strony obsługującej ten błąd, użytkownik zostaje sam z komunikatem typu Error 404: Not Found.</p><br/><p>W tym artykule wyjaśniamy: skąd biorą się błędy 404, jak je znaleźć w <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a>, kiedy wymagają reakcji i co umieścić na stronie błędu, żeby użytkownicy mogli łatwo wrócić do właściwych treści.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Skąd biorą się błędy 404?</h2><p>Błąd 404 pojawia się w kilku sytuacjach. Żeby zrozumieć, czy wymaga reakcji, trzeba najpierw wiedzieć, skąd się wziął.</p><br/><h3 class='h4 mb-3 mt-4'>Strona została usunięta lub przeniesiona</h3><p>Gdy usuwasz stronę ze swojej witryny lub zmieniasz jej adres, wszystkie linki prowadzące do starego adresu przestają działać. Dotyczy to <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linków wewnętrznych</a>, linków z zewnętrznych serwisów, zakładek użytkowników i wyników wyszukiwania Google.</p><br/><p>Rozwiązanie: przekierowanie 301. To ustawienie, które mówi przeglądarce i Google: ta strona jest teraz pod innym adresem. Przeglądarka automatycznie przenosi użytkownika w nowe miejsce.</p><br/><h3 class='h4 mb-3 mt-4'>Literówka w adresie</h3><p>Użytkownik może błędnie wpisać adres w pasku przeglądarki. Może też kliknąć link, który ktoś źle skopiował. W obu przypadkach żądanie trafia pod adres, który nigdy nie istniał.</p><br/><h3 class='h4 mb-3 mt-4'>Zmiana struktury witryny</h3><p>Przy redesignie, zmianie systemu (np. z WordPress na inny CMS) lub reorganizacji treści często zmieniają się adresy URL. Jeśli nowa struktura nie uwzględnia przekierowań ze starych adresów, wszystkie historyczne linki przestają działać. </p><br/><h3 class='h4 mb-3 mt-4'>Wycofany produkt w sklepie</h3><p>W sklepach internetowych usunięcie produktu z katalogu powoduje błąd 404 na jego stronie. Jeśli produkt był linkowany z innych stron, kampanii reklamowych lub wyników wyszukiwania, użytkownicy trafią na błąd. </p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak znaleźć błędy 404 w Google Search Console?</h2><p>Google Search Console to darmowe narzędzie, które pokazuje, jakie błędy 404 wykrywa Google na danej witrynie. Poniżej dokładna instrukcja, jak je znaleźć.</p><br/><h3 class='h4 mb-3 mt-4'>Krok 1: Otwórz raport Strony</h3><p>W <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> wybierz swoją witrynę. W menu po lewej stronie kliknij Indeksowanie, potem Strony.</p><br/><h3 class='h4 mb-3 mt-4'>Krok 2: Znajdź błędy 404</h3><p>Na wykresie zobaczysz podział stron na kategorie. Szukaj pozycji Nie znaleziono (404) w sekcji Dlaczego strony nie są indeksowane. Kliknij tę pozycję, żeby zobaczyć listę konkretnych adresów.</p><br/><h3 class='h4 mb-3 mt-4'>Krok 3: Sprawdź szczegóły każdego błędu</h3><p>Dla każdego adresu możesz kliknąć ikonę lupy (Sprawdź adres URL). Zobaczysz:</p><br/><ul class='list-disc ml-5'><li><strong>Kiedy Google ostatnio próbował otworzyć stronę</strong> — data ostatniego skanowania</li><li><strong>Skąd Google znalazł link</strong> — czy z innej strony danej witryny, z zewnętrznego serwisu, czy z sitemapy</li></ul><br/><p>Te informacje pomagają ustalić, czy błąd wymaga reakcji. </p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Kiedy błąd 404 wymaga reakcji?</h2><p>Nie każdy błąd 404 wymaga działania. Oto jak ocenić, czy trzeba coś zrobić.</p><br/><h3 class='h4 mb-3 mt-4'>Sprawdź, skąd pochodzi link</h3><p>W Google Search Console (szczegóły błędu → Strona odsyłająca) zobaczysz, skąd Google znalazł link do nieistniejącej strony:</p><br/><ul class='list-disc ml-5'><li><strong>Link z innej strony danej witryny</strong> — popraw ten link lub ustaw przekierowanie. To błąd, który możesz naprawić.</li><li><strong>Link z zewnętrznego serwisu</strong> — jeśli strona istnieje pod nowym adresem, ustaw przekierowanie 301. Jeśli strona została celowo usunięta, możesz zostawić błąd 404.</li><li><strong>Adres z literówką</strong> — jeśli to przypadkowy adres (np. /kontaktt zamiast /kontakt), zazwyczaj możesz go zignorować.</li></ul><br/><h3 class='h4 mb-3 mt-4'>Sprawdź, czy strona miała linki z innych witryn</h3><p>Jeśli usunięta strona miała linki z innych serwisów (tzw. linki zwrotne), przekierowanie 301 przenosi część tej wartości na nowy adres. Żeby to sprawdzić, możesz użyć narzędzi takich jak <a class='underline' href='https://ahrefs.com/' target='_blank' rel='noopener noreferrer'>Ahrefs</a> (płatne) lub <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> (sekcja Linki → Najpopularniejsze strony docelowe z linkami zewnętrznymi).</p><br/><h3 class='h4 mb-3 mt-4'>Oceń skalę problemu</h3><p>Jeden błąd 404 z przypadkowej literówki? Można zignorować. Setki błędów po zmianie struktury witryny? Wymaga systematycznego ustawienia przekierowań.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co to jest soft 404 i jak go rozpoznać?</h2><p>Soft 404 to sytuacja, gdy strona wygląda jak błąd 404 (pokazuje komunikat Nie znaleziono), ale serwer zwraca kod 200 OK zamiast 404. Dlaczego to problem?</p><br/><p>Google analizuje nie tylko kod odpowiedzi serwera, ale też treść strony. Gdy wykryje, że strona z kodem 200 tak naprawdę nie zawiera treści (tylko komunikat o błędzie), oznacza ją jako soft 404 w Search Console.</p><br/><h3 class='h4 mb-3 mt-4'>Jak rozpoznać soft 404?</h3><p>W Google Search Console (Indeksowanie → Strony) szukaj kategorii Soft 404. Jeśli widzisz tam swoje strony, oznacza to, że serwer zwraca kod 200 dla stron, które nie mają treści.</p><br/><h3 class='h4 mb-3 mt-4'>Typowe przyczyny soft 404</h3><ul class='list-disc ml-5'><li><strong>Strona produktu z komunikatem Produkt niedostępny</strong> — serwer zwraca kod 200, ale treść mówi, że produktu nie ma</li><li><strong>Strona kategorii bez produktów</strong> — pusta lista, ale kod 200</li><li><strong>Strona z minimalną treścią</strong> — tylko nagłówek, stopka i komunikat typu Nie znaleziono</li></ul><br/><h3 class='h4 mb-3 mt-4'>Jak to naprawić?</h3><p>Problem soft 404 można rozwiązać na kilka sposobów, w zależności od sytuacji:</p><br/><ul class='list-disc ml-5'><li><strong>Strona produktu, który wróci do sprzedaży</strong> — zostaw stronę z informacją o chwilowej niedostępności i datą powrotu (jeśli ją znasz). Serwer zwraca kod 200, ale strona ma wartościową treść.</li><li><strong>Strona produktu wycofanego na stałe</strong> — ustaw przekierowanie 301 na podobny produkt lub kategorię. Ewentualnie zwróć kod 410 (Gone), który mówi Google: ta strona została celowo usunięta.</li><li><strong>Strona z komunikatem Nie znaleziono, która zwraca kod 200</strong> — to wymaga zmiany w konfiguracji serwera lub CMS. W WordPress są wtyczki do obsługi przekierowań. W innych systemach (Shopify, Next.js) ustawienia są w panelu lub w kodzie.</li></ul><br/><p>Jeśli nie masz pewności, jak to skonfigurować, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a> — pomożemy ustalić właściwe rozwiązanie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co umieścić na stronie błędu 404?</h2><p>Strona błędu 404 ma jeden cel: pomóc użytkownikowi wrócić do właściwych treści. Oto elementy, które to umożliwiają.</p><br/><h3 class='h4 mb-3 mt-4'>Komunikat wyjaśniający sytuację</h3><p>Zamiast technicznego Error 404: Not Found napisz prostym językiem, co się stało. Przykład:</p><br/><p><em>Strona, której szukasz, nie istnieje. Mogła zostać usunięta, przeniesiona lub adres zawiera błąd.</em></p><br/><p>Taki komunikat wyjaśnia sytuację bez żargonu technicznego.</p><br/><h3 class='h4 mb-3 mt-4'>Menu i nawigacja</h3><p>Strona 404 powinna wyglądać jak pozostałe strony witryny — z pełnym menu, logo (które prowadzi do strony głównej) i stopką. Dzięki temu użytkownik może przejść do dowolnej sekcji bez ręcznego wpisywania adresu. Warto też dodać <a class='inline-link' href='/edukacja/ux/breadcrumbs-sciezka-nawigacji-na-stronie'>ścieżkę nawigacji (breadcrumbs)</a>, która ułatwia orientację.</p><br/><h3 class='h4 mb-3 mt-4'>Przycisk Wróć do strony głównej</h3><p>Wyraźny przycisk lub link, który prowadzi do strony głównej. To najprostsza droga ucieczki z błędu.</p><br/><h3 class='h4 mb-3 mt-4'>Wyszukiwarka (opcjonalnie)</h3><p>Jeśli witryna ma wyszukiwarkę, umieść ją na stronie 404. Użytkownik może wpisać, czego szukał, i znaleźć właściwą stronę bez przechodzenia przez menu.</p><br/><h3 class='h4 mb-3 mt-4'>Linki do głównych sekcji</h3><p>Lista 3-5 linków do najważniejszych sekcji witryny (np. główne usługi, kategorie produktów, popularne artykuły) daje użytkownikowi konkretne opcje do wyboru. </p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Przykład: jak obsłużyć usunięty produkt w sklepie?</h2><p>Poniżej pokazujemy przykład hipotetyczny, który ilustruje różne podejścia do obsługi usuniętego produktu w <a class='inline-link' href='/uslugi/sklepy-internetowe'>sklepie internetowym</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Sytuacja</h3><p>Sklep z elektroniką wycofuje ze sprzedaży model słuchawek Sony WH-1000XM4. Strona produktu miała linki z kilku blogów technologicznych i generowała ruch z Google.</p><br/><h3 class='h4 mb-3 mt-4'>Opcja 1: Przekierowanie 301 na następcę</h3><p>Jeśli w ofercie jest nowszy model (np. WH-1000XM5), przekierowanie 301 ze starego adresu na nowy przenosi część wartości SEO. Użytkownicy szukający starego modelu trafiają na aktualny produkt.</p><br/><h3 class='h4 mb-3 mt-4'>Opcja 2: Przekierowanie 301 na kategorię</h3><p>Jeśli nie ma bezpośredniego następcy, przekierowanie na stronę kategorii (np. /sluchawki-bezprzewodowe) daje użytkownikowi możliwość wyboru innego produktu.</p><br/><h3 class='h4 mb-3 mt-4'>Opcja 3: Kod 410 Gone</h3><p>Jeśli produkt nie wróci do sprzedaży i strona nie miała wartościowych linków, kod 410 informuje Google, że strona została celowo usunięta. Google szybciej usuwa ją z indeksu.</p><br/><h3 class='h4 mb-3 mt-4'>Opcja 4: Strona z informacją</h3><p>Strona z kodem 200, która informuje o wycofaniu produktu i proponuje alternatywy. Uwaga: jeśli treść jest minimalna (tylko komunikat Produkt wycofany), Google może oznaczyć ją jako soft 404.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Czy błędy 404 wpływają na pozycję w Google?</h2><p>Krótka odpowiedź: same w sobie nie. Google traktuje błędy 404 jako normalną część funkcjonowania witryny. Strony są usuwane, przenoszone, zmieniane — to naturalne.</p><br/><p>Ale są sytuacje, gdy błąd 404 może mieć wpływ na SEO:</p><br/><h3 class='h4 mb-3 mt-4'>Utrata linków z innych witryn</h3><p>Jeśli usunięta strona miała linki z innych serwisów (tzw. linki zwrotne), a nie ustawisz przekierowania, ta wartość przepada. Linki zwrotne to jeden z czynników, które Google bierze pod uwagę przy ocenie strony.</p><br/><h3 class='h4 mb-3 mt-4'>Soft 404</h3><p>Strony zwracające kod 200 zamiast 404 mogą być indeksowane jako strony niskiej jakości. Google może obniżyć ogólną ocenę witryny, jeśli znajdzie wiele takich stron.</p><br/><h3 class='h4 mb-3 mt-4'>Masowe błędy po migracji</h3><p>Setki lub tysiące błędów 404 po zmianie struktury witryny mogą sygnalizować Google problemy z jakością. Rozwiązanie: przygotuj mapę przekierowań przed migracją. <a class='inline-link' href='/uslugi/marketing/audyt-seo'>Audyt SEO</a> może pomóc zidentyfikować takie problemy.</p><br/><p>W praktyce dla większości witryn pojedyncze błędy 404 nie stanowią problemu. Problem pojawia się, gdy dotyczą stron z wartościowymi linkami lub występują masowo.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Błąd 404 oznacza, że strona pod danym adresem nie istnieje. Może to być wynik usunięcia strony, zmiany adresu lub literówki.</p><br/><p><strong>Co warto zapamiętać:</strong></p><ul class='list-disc ml-5 mb-4'><li>Błędy 404 znajdziesz w Google Search Console (Indeksowanie → Strony → Nie znaleziono)</li><li>Nie każdy błąd wymaga reakcji — sprawdź, skąd pochodzi link i czy strona miała wartość</li><li>Jeśli usunięta strona miała linki z innych witryn, ustaw przekierowanie 301</li><li>Soft 404 (kod 200 dla nieistniejącej strony) to osobny problem — serwer powinien zwracać kod 404</li><li>Strona błędu 404 powinna pomagać użytkownikowi wrócić do właściwych treści</li></ul><br/><p><a class='inline-link' href='/uslugi/strony-internetowe'>Tworzymy strony internetowe</a> z poprawnie skonfigurowaną obsługą błędów i przekierowań. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, jeśli potrzebujesz pomocy.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Potrzebujesz pomocy z konfiguracją witryny?",
+        "description": "Tworzymy strony internetowe z poprawnie skonfigurowaną obsługą błędów, przekierowań i strukturą URL.",
+        "btnOne": "Sprawdź ofertę stron internetowych",
+        "btnOneLink": "/uslugi/strony-internetowe",
+        "btnTwo": "Skontaktuj się z nami",
+        "btnTwoLink": "/kontakt",
+        "backgroundImage": "/assets/blog/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy błędy 404 obniżają pozycję witryny w Google?",
+          "answer": "Błędy 404 same w sobie nie obniżają pozycji. Google traktuje je jako normalną część funkcjonowania witryny. Wpływ na SEO może mieć utrata linków zwrotnych (jeśli usunięta strona miała wartościowe linki i nie ma przekierowania) lub masowe występowanie błędów sygnalizujące problemy z jakością."
+        },
+        {
+          "question": "Czym różni się kod 404 od 410?",
+          "answer": "Kod 404 oznacza, że zasób nie został znaleziony (może nigdy nie istniał lub został usunięty). Kod 410 (Gone) jawnie komunikuje, że zasób istniał i został celowo, trwale usunięty. Google traktuje oba podobnie, ale 410 może przyspieszyć usunięcie strony z indeksu."
+        },
+        {
+          "question": "Co to jest soft 404 i dlaczego jest problematyczny?",
+          "answer": "Soft 404 to sytuacja, gdy serwer zwraca kod 200 OK dla strony, która faktycznie nie istnieje lub zawiera tylko komunikat o błędzie. Google może indeksować takie strony jako pełnowartościowe, a następnie obniżyć ocenę witryny za niską jakość treści. Rozwiązanie: skonfiguruj serwer, aby zwracał kod 404 lub 410."
+        },
+        {
+          "question": "Kiedy ustawić przekierowanie 301 zamiast zostawiać błąd 404?",
+          "answer": "Przekierowanie 301 ustaw, gdy usunięta strona miała linki zwrotne z innych witryn lub gdy istnieje logiczny odpowiednik pod nowym adresem. Jeśli strona nigdy nie istniała, nie miała linków lub była błędnym adresem z literówką — błąd 404 można pozostawić."
+        },
+        {
+          "question": "Jak często sprawdzać błędy 404?",
+          "answer": "Sprawdzaj błędy 404 w Google Search Console przynajmniej raz w miesiącu. Po większych zmianach w witrynie (redesign, migracja, usunięcie wielu stron) sprawdzaj częściej — co tydzień przez kilka miesięcy. Search Console pokazuje też trendy, więc zobaczysz, czy liczba błędów rośnie."
+        },
+        {
+          "question": "Czy strona 404 powinna automatycznie przekierowywać na stronę główną?",
+          "answer": "Nie. Automatyczne przekierowanie (HTTP 302 lub 301) ze strony błędu na stronę główną może być traktowane przez Google jako soft 404. Użytkownik też nie otrzymuje informacji, że żądana strona nie istnieje. Strona 404 powinna wyświetlać komunikat i oferować nawigację, ale nie przekierowywać automatycznie."
+        }
+      ]
+    },
+
+    {
+      "slug": "czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac",
+      "title": "Czym jest kanibalizacja słów kluczowych i jak jej unikać?",
+      "excerpt": "Kanibalizacja słów kluczowych występuje, gdy kilka stron w jednej witrynie konkuruje o te same frazy w Google. Wyjaśniamy, dlaczego to problem dla SEO, jak wykryć kanibalizację w Search Console i jak ją naprawić.",
+      "primaryCategory": "SEO",
+      "category": ["Treści"],
+      "tags": ["SEO", "słowa kluczowe", "optymalizacja", "treści", "ranking", "widoczność"],
+      "seo": {
+        "title": "Czym jest kanibalizacja słów kluczowych i jak jej unikać? - Arteon",
+        "description": "Kanibalizacja słów kluczowych to konkurencja między własnymi stronami o te same frazy. Wyjaśniamy, jak ją wykryć w Google Search Console i jak naprawić.",
+        "canonical": "https://www.arteonagency.pl/edukacja/seo/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac"
+      },
+      "cover": "/assets/blog/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac.webp",
+      "author": {
+        "name": "Arteon"
+      },
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "readingTime": 11,
+      "contentBlocks": [
+        {
+          "type": "richtext",
+          "html": "<p>Kanibalizacja słów kluczowych to sytuacja, w której kilka stron w jednej witrynie konkuruje o te same pozycje w Google. Zamiast wzmacniać się nawzajem, te strony osłabiają swoje szanse na wysokie pozycje — Google nie wie, którą z nich pokazać użytkownikowi.</p><br/><p>W tym artykule wyjaśniamy: czym dokładnie jest kanibalizacja, skąd się bierze, jak ją wykryć w <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> i jakie są sprawdzone sposoby na jej naprawienie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego kanibalizacja osłabia widoczność w Google?</h2><p>Google ocenia strony na podstawie wielu sygnałów: ile innych witryn linkuje do danej strony, jak długo użytkownicy na niej zostają, jak szybko się ładuje. Każdy z tych sygnałów wzmacnia pozycję strony w wynikach wyszukiwania.</p><br/><p>Problem pojawia się, gdy te sygnały rozpraszają się między kilka stron zamiast wzmacniać jedną. Załóżmy, że masz dwie strony o tym samym temacie. Część linków zewnętrznych prowadzi do pierwszej, część do drugiej. Użytkownicy trafiają raz tu, raz tam. Google widzi dwie konkurujące strony z tej samej witryny i nie wie, którą pokazać wyżej.</p><br/><p>Efekt? Obie strony zajmują niższe pozycje, niż zajęłaby jedna, silniejsza strona z połączonymi sygnałami.</p><br/><h3 class='h4 mb-3 mt-4'>Przykład z praktyki</h3><p>Kancelaria prawna ma dwie strony: jedną o rozwodach i drugą o prawie rodzinnym, która też opisuje rozwody. Dla zapytania 'adwokat rozwód' Google raz wyświetla pierwszą stronę, raz drugą. Żadna nie buduje stabilnej pozycji, bo konkurują ze sobą zamiast się wzmacniać.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak rozpoznać kanibalizację słów kluczowych?</h2><p>Kanibalizacja nie zawsze jest oczywista na pierwszy rzut oka. Czasami zauważasz spadek pozycji lub dziwne wahania w rankingu, ale nie wiesz, co je powoduje. Poniżej przedstawiamy metody, które pomogą Ci wykryć problem.</p><br/><h3 class='h4 mb-3 mt-4'>Google Search Console — raport wydajności</h3><p>Najprościej sprawdzić kanibalizację w <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a>. To bezpłatne narzędzie Google pokazuje, które strony wyświetlają się dla jakich zapytań.</p><br/><p><strong>Jak to zrobić:</strong></p><ol class='list-decimal ml-5'><li>Zaloguj się do Google Search Console i wybierz swoją witrynę.</li><li>Przejdź do sekcji Wydajność (Performance).</li><li>Kliknij na filtr Zapytania i wpisz frazę, którą chcesz sprawdzić.</li><li>Przejdź do zakładki Strony — zobaczysz listę adresów URL, które wyświetlały się dla tej frazy.</li></ol><br/><p>Jeśli kilka stron ma wyświetlenia lub kliknięcia dla tej samej frazy — masz kanibalizację.</p><br/><h3 class='h4 mb-3 mt-4'>Wyszukiwanie site: w Google</h3><p>Możesz też sprawdzić problem ręcznie, wpisując w Google zapytanie w formacie:</p><br/><p><code>site:twojadomena.pl fraza kluczowa</code></p><br/><p>Zamień twojadomena.pl na własną domenę, a fraza kluczowa na frazę, którą sprawdzasz. Google pokaże, ile stron z danej witryny zawiera tę frazę. Jeśli wyników jest więcej niż jeden lub dwa, warto przyjrzeć się, czy ich treść rzeczywiście jest unikalna, czy tylko powtarza to samo w różnych słowach.</p><br/><h3 class='h4 mb-3 mt-4'>Audyt SEO witryny</h3><p>Profesjonalny <a class='inline-link' href='/uslugi/marketing/audyt-seo'>audyt SEO</a> obejmuje analizę struktury treści i identyfikację kanibalizacji. Narzędzia takie jak <a class='underline' href='https://ahrefs.com/' target='_blank' rel='noopener noreferrer'>Ahrefs</a> czy <a class='underline' href='https://www.semrush.com/' target='_blank' rel='noopener noreferrer'>Semrush</a> pozwalają sprawdzić, które strony rankują na te same frazy. Audyt sprawdza nie tylko pojedyncze frazy, ale też zbiera szerszy obraz: jakie strony konkurują, jakie mają wyniki i jak uporządkować treści, by wzmocnić ranking.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Skąd bierze się kanibalizacja?</h2><p>Kanibalizacja zwykle nie jest celowa — pojawia się stopniowo, gdy witryna rośnie. Poniżej pokazujemy najczęstsze sytuacje, w których to zjawisko występuje.</p><br/><h3 class='h4 mb-3 mt-4'>Kilka artykułów na podobny temat</h3><p>Publikujesz artykuły przez rok, dwa lata — i nie zawsze pamiętasz, że już pisałeś o danym zagadnieniu. W rezultacie masz na przykład trzy artykuły o dostępności stron internetowych — jeden ogólny, drugi o <span data-tooltip='WCAG (Web Content Accessibility Guidelines) to międzynarodowe wytyczne dotyczące dostępności treści internetowych dla osób z niepełnosprawnościami.'>WCAG</span>, trzeci o czytnikach ekranu. Wszystkie trzy używają podobnych fraz i wszystkie konkurują w Google.</p><br/><p>Jak temu zapobiec? Warto prowadzić listę opublikowanych treści — może to być zwykły arkusz lub dokument z tematami i datami publikacji. Przed napisaniem nowego artykułu sprawdzasz, czy nie masz już czegoś podobnego. Jeśli tak — możesz rozbudować stary artykuł zamiast tworzyć nowy.</p><br/><h3 class='h4 mb-3 mt-4'>Ten sam produkt w kilku kategoriach</h3><p>W sklepach internetowych często jeden produkt trafia do kilku kategorii. Przykład: buty trekkingowe mogą być w kategorii Buty sportowe i w kategorii Turystyka. Sklep tworzy dwa adresy URL dla tego samego produktu — i oba konkurują w wyszukiwarce.</p><br/><p>Podobnie w witrynach usługowych: kancelaria prawna może mieć stronę Prawo rodzinne (gdzie wspomina o rozwodach) i osobną stronę Rozwody. Obie strony mogą wyświetlać się dla tego samego zapytania.</p><br/><h3 class='h4 mb-3 mt-4'>Strony archiwum i tagów</h3><p>Wiele blogów automatycznie tworzy dodatkowe strony: archiwa miesięczne, strony kategorii, strony tagów. Jeśli masz artykuł o pozycjonowaniu, który jest w kategorii SEO i ma tag pozycjonowanie — powstają trzy dodatkowe adresy URL wyświetlające ten sam lub podobny content.</p><br/><p>Te dodatkowe strony mogą konkurować z głównym artykułem. Dlatego wiele platform pozwala zablokować ich indeksowanie — dodajesz znacznik noindex (który mówi Google: nie wyświetlaj tej strony w wynikach) lub wykluczasz je w pliku robots.txt (plik, który informuje Google, których stron nie skanować).</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co możesz zrobić, gdy masz kanibalizację?</h2><p>Gdy wykryjesz, że kilka stron konkuruje o te same frazy, masz kilka opcji. Poniżej pokazujemy najskuteczniejsze sposoby uporządkowania treści.</p><br/><h3 class='h4 mb-3 mt-4'>Połącz artykuły w jeden</h3><p>Najczęstsze rozwiązanie: zbierasz treści z kilku podobnych artykułów i tworzysz jeden, kompleksowy materiał. Przykład: masz trzy artykuły o certyfikatach SSL — jeden ogólny, drugi o typach certyfikatów, trzeci o ich instalacji. Możesz połączyć je w jeden artykuł, który odpowiada na wszystkie te pytania.</p><br/><p>Po połączeniu robisz przekierowanie 301 — to techniczne ustawienie, które mówi Google: stara strona została przeniesiona pod nowy adres. Dzięki temu wszystkie linki, które prowadziły do starych stron, automatycznie przekierowują użytkowników i Google na nową, połączoną stronę. Więcej o tym mechanizmie znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne'>przekierowaniach 301</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Zmień temat każdej strony</h3><p>Jeśli artykuły dotyczą pokrewnych, ale jednak innych zagadnień, możesz zmienić ich kierunek. Przykład z kancelarii prawnej: jeden artykuł skupia się na procesie rozwodu (jak przebiega, jakie dokumenty, ile trwa), a drugi na kosztach rozwodu (opłaty sądowe, koszty adwokata, alimenty). Każdy odpowiada na inne pytanie, więc nie konkurują ze sobą.</p><br/><p>Żeby to zrobić, zmieniasz tytuł, nagłówki i treść każdego artykułu — tak, by było jasne, że dotyczą innych aspektów tematu.</p><br/><h3 class='h4 mb-3 mt-4'>Wskaż Google, która strona jest główna</h3><p>Gdy masz kilka stron i chcesz, żeby jedna była priorytetowa, możesz wzmocnić ją przez linkowanie. To działa tak: z pozostałych stron dodajesz linki prowadzące do tej głównej. Przykład: artykuł o kosztach rozwodu ma link do głównego artykułu o rozwodach.</p><br/><p>Google widzi te linki i rozumie: ta strona, do której prowadzi najwięcej linków wewnętrznych, jest najważniejsza dla tego tematu. Dzięki temu wyświetla ją w wynikach wyszukiwania częściej niż pozostałe. Więcej o tym mechanizmie znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/jak-linki-wewnetrzne-wplywaja-na-pozycjonowanie'>linkach wewnętrznych</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Ukryj strony przed Google</h3><p>Czasami masz stronę, która jest potrzebna użytkownikom, ale nie chcesz, żeby wyświetlała się w Google. Przykład: archiwum artykułów z 2020 roku lub strona z tagiem pozycjonowanie, która pokazuje listę artykułów na ten temat.</p><br/><p>Możesz dodać znacznik noindex — to krótki kod w sekcji head strony, który mówi Google: nie wyświetlaj tej strony w wynikach wyszukiwania. Użytkownicy wciąż mogą ją odwiedzić (jeśli klikną link z innej strony w witrynie), ale Google jej nie pokaże w wynikach.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak unikać kanibalizacji od początku?</h2><p>Najskuteczniejszy sposób to zapobieganie problemowi zanim się pojawi. Poniżej pokazujemy praktyczne kroki, które pomogą Ci utrzymać porządek w treściach.</p><br/><h3 class='h4 mb-3 mt-4'>Prowadź listę wszystkich artykułów</h3><p>Zanim napiszesz nowy artykuł, sprawdź, czy nie masz już czegoś podobnego. Jak to zrobić? Stwórz prosty dokument lub arkusz (Google Sheets, Excel, zwykły plik tekstowy), w którym zapiszesz:</p><br/><ul class='list-disc ml-5'><li>Tytuł każdego artykułu</li><li>Data publikacji</li><li>Główna fraza, na którą celuje artykuł</li><li>Link do artykułu</li></ul><br/><p>Przed publikacją nowego artykułu przejrzyj tę listę. Jeśli temat już był — możesz rozbudować stary artykuł zamiast pisać nowy od zera.</p><br/><h3 class='h4 mb-3 mt-4'>Aktualizuj stare artykuły zamiast pisać nowe</h3><p>Masz artykuł o certyfikatach SSL z 2022 roku i chcesz dodać informacje o nowych typach certyfikatów? Zamiast pisać nowy artykuł, rozbuduj ten stary. Dodaj nową sekcję, zaktualizuj przykłady, popraw przestarzałe informacje.</p><br/><p>Dlaczego to działa? Artykuł, który istnieje od lat i ma linki z innych stron, ma większą wartość dla Google niż zupełnie nowy, nawet jeśli nowy jest lepiej napisany. Więcej o tym mechanizmie znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/dlaczego-stare-tresci-moga-szkodzic-widocznosci-w-google'>starych treściach</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Wybierz jedną główną stronę dla każdej frazy</h3><p>Jeśli piszesz o pozycjonowaniu lokalnym, zdecyduj: która strona ma być główna dla tej frazy? Może to być kompleksowy artykuł, który odpowiada na wszystkie pytania związane z tym tematem.</p><br/><p>Pozostałe artykuły mogą wspominać o pozycjonowaniu lokalnym, ale ich tytuły i nagłówki celują w inne frazy. Przykład: jeden artykuł ma tytuł Pozycjonowanie lokalne — jak działać?, drugi Widoczność w Google Maps — czym się różni od pozycjonowania?. Oba dotyczą podobnych zagadnień, ale odpowiadają na różne pytania.</p><br/><h3 class='h4 mb-3 mt-4'>Sprawdzaj Google Search Console co miesiąc</h3><p>Co miesiąc (lub co kilka miesięcy, jeśli masz małą witrynę) zaglądaj do <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> i sprawdzaj, które strony wyświetlają się dla jakich fraz. Jeśli zauważysz, że dwie strony mają wyświetlenia dla tej samej frazy — wiesz, że zaczyna się kanibalizacja. Możesz ją naprawić zanim problem się pogłębi.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Co z synonimami i podobnymi frazami?</h2><p>Google rozumie język coraz lepiej. Od 2019 roku używa technologii zwanej <a class='underline' href='https://blog.google/products/search/search-language-understanding-bert/' target='_blank' rel='noopener noreferrer'>BERT</a>, która rozpoznaje kontekst i intencję zapytań. Czym to jest w praktyce? Google wie, że optymalizacja strony i przyspieszenie witryny często oznaczają to samo.</p><br/><p>Przykład: masz dwa artykuły — jeden o optymalizacji strony, drugi o przyspieszeniu witryny. Oba odpowiadają na pytanie: jak sprawić, żeby strona ładowała się szybciej? Google może traktować je jak konkurentów, nawet jeśli używają różnych słów.</p><br/><p>Co to oznacza dla Ciebie? Gdy planujesz treści, pomyśl o pytaniu, na które odpowiada artykuł — nie tylko o dokładnej frazie. Jeśli dwa artykuły odpowiadają na to samo pytanie, mogą konkurować ze sobą. Więcej o tym, jak Google ocenia treści, znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie'>kryteriach jakości</a>.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak wygląda naprawa kanibalizacji?</h2><p>Poniżej pokazujemy przykład hipotetyczny, który ilustruje cały proces — od diagnozy do naprawy.</p><br/><h3 class='h4 mb-3 mt-4'>Sytuacja wyjściowa</h3><p>Kancelaria prawna prowadzi blog z trzema artykułami:</p><br/><ul class='list-disc ml-5'><li>Kiedy potrzebujesz adwokata do rozwodu?</li><li>Jak przebiega rozwód z orzekaniem o winie?</li><li>Ile kosztuje rozwód w Polsce?</li></ul><br/><p>Wszystkie trzy używają podobnych fraz: rozwód, adwokat, kancelaria. W Google Search Console widać, że dla zapytania 'adwokat rozwód' wyświetlają się wszystkie trzy strony — każda z niskim CTR i niestabilną pozycją.</p><br/><h3 class='h4 mb-3 mt-4'>Zastosowane rozwiązanie</h3><p>Kancelaria uporządkowała treści według zasady: jeden artykuł = jedna główna fraza.</p><br/><ol class='list-decimal ml-5'><li><strong>Artykuł główny:</strong> 'Kiedy potrzebujesz adwokata do rozwodu?' został wybrany jako główna strona dla frazy 'adwokat rozwód'. Tytuł zmieniono na: 'Adwokat od spraw rozwodowych — kiedy potrzebujesz pomocy?'</li><li><strong>Artykuł o procesie:</strong> 'Jak przebiega rozwód z orzekaniem o winie?' skupia się teraz wyłącznie na procedurze. Główna fraza: 'rozwód z orzekaniem o winie'. Dodano link do artykułu głównego.</li><li><strong>Artykuł o kosztach:</strong> 'Ile kosztuje rozwód?' skupia się na finansach: opłaty sądowe, honorarium, alimenty. Główna fraza: 'koszt rozwodu'. Linkuje do artykułu głównego.</li></ol><br/><p><strong>Efekt:</strong> Po kilku tygodniach artykuł główny zaczął stabilnie wyświetlać się dla zapytania 'adwokat rozwód', a pozostałe dwa — dla swoich unikalnych fraz. CTR wzrósł, bo użytkownicy trafiają na stronę dopasowana do ich intencji.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Kanibalizacja słów kluczowych pojawia się, gdy kilka stron w jednej witrynie konkuruje o te same pozycje w Google. W praktyce oznacza to, że żadna z tych stron nie osiąga pełnego potencjału — sygnały (linki, czas użytkowników, udostępnienia) rozpraszają się między kilka miejsc zamiast wzmacniać jedną stronę.</p><br/><p><strong>Co możesz zrobić już dziś:</strong></p><br/><ul class='list-disc ml-5 mb-4'><li>Sprawdź w Google Search Console, które strony wyświetlają się dla tych samych fraz — jeśli widzisz kilka adresów URL dla jednej frazy, masz kanibalizację.</li><li>Połącz podobne artykuły w jeden i ustaw przekierowanie 301 ze starych adresów na nowy.</li><li>Prowadź listę opublikowanych treści (arkusz, dokument) — przed napisaniem nowego artykułu sprawdzaj, czy nie masz już czegoś podobnego.</li><li>Aktualizuj stare artykuły zamiast pisać nowe na ten sam temat — artykuł z historią ma większą wartość dla Google.</li><li>Wybierz jedną główną stronę dla każdej ważnej frazy i linkuj do niej z pozostałych artykułów.</li></ul><br/><p>Jeśli potrzebujesz pomocy w uporządkowaniu treści w witrynie, <a class='inline-link' href='/uslugi/marketing/audyt-seo'>przeprowadzamy audyty SEO</a>, które pokazują, gdzie występuje kanibalizacja i jak ją naprawić. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, jeśli chcesz poprawić widoczność swojej witryny.</p>",
+          "breakAfter": true
+        }
+      ],
+      "cta": {
+        "title": "Chcesz poprawić widoczność swojej strony?",
+        "description": "Przeprowadzamy audyty SEO, które identyfikują problemy z kanibalizacją i pomagają uporządkować strukturę treści.",
+        "btnOne": "Sprawdź ofertę audytu SEO",
+        "btnOneLink": "/uslugi/marketing/audyt-seo",
+        "btnTwo": "Skontaktuj się z nami",
+        "btnTwoLink": "/kontakt",
+        "backgroundImage": "/assets/blog/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac.webp",
+        "overlay": "black"
+      },
+      "faq": [
+        {
+          "question": "Czy kanibalizacja zawsze jest problemem?",
+          "answer": "W większości przypadków tak — gdy kilka stron konkuruje o tę samą frazę, sygnały (linki, czas użytkowników) rozpraszają się między nimi i żadna nie osiąga pełnego potencjału. Wyjątek to sytuacja, gdy każda strona odpowiada na inne pytanie mimo podobnej frazy. Przykład: jeden artykuł odpowiada na pytanie czym jest rozwód, drugi na pytanie ile kosztuje rozwód — to różne intencje, więc nie konkurują ze sobą."
+        },
+        {
+          "question": "Jak długo trzeba czekać na efekty po naprawieniu kanibalizacji?",
+          "answer": "Zależy, jak często Google skanuje witrynę. Małe strony mogą zobaczyć zmiany w ciągu kilku dni, większe w ciągu tygodni. Możesz przyspieszyć proces: w Google Search Console zgłoś zaktualizowane strony do ponownego przeskanowania (opcja Sprawdź adres URL, potem Poproś o indeksację)."
+        },
+        {
+          "question": "Czy mogę mieć kilka artykułów na podobny temat?",
+          "answer": "Tak, jeśli każdy odpowiada na inne pytanie. Przykład: masz artykuł Czym jest certyfikat SSL i dlaczego go potrzebujesz? i artykuł Jak wybrać odpowiedni certyfikat SSL dla firmy?. Pierwszy wyjaśnia podstawy, drugi pomaga w wyborze — to różne pytania, więc nie ma kanibalizacji. Ważne, żeby tytuły i nagłówki jasno pokazywały tę różnicę."
+        },
+        {
+          "question": "Jak sprawdzić, czy mam kanibalizację?",
+          "answer": "Najprościej w Google Search Console: przejdź do Wydajność, kliknij na frazę, która Cię interesuje, i sprawdź zakładkę Strony. Jeśli widzisz kilka adresów URL z wyświetleniami dla tej samej frazy — masz kanibalizację. Możesz też wpisać w Google: site:twojadomena.pl nazwa frazy — zobaczysz, ile stron z witryny wyświetla się dla tego zapytania."
+        },
+        {
+          "question": "Co z produktami w kilku kategoriach w sklepie?",
+          "answer": "Jeśli ten sam produkt jest dostępny pod kilkoma adresami URL (np. w różnych kategoriach), wybierz jeden główny adres i dodaj na pozostałych znacznik canonical — to kod, który mówi Google: ta strona to kopia, indeksuj tylko główną wersję. Druga opcja: zróżnicuj treść na każdej stronie (np. jedna pokazuje opis produktu, druga porównanie z konkurencją)."
+        },
+        {
+          "question": "Czy usunięcie artykułu nie spowoduje utraty ruchu?",
+          "answer": "Nie, jeśli ustawisz przekierowanie 301. To techniczne ustawienie, które automatycznie przekierowuje użytkowników i Google ze starego adresu URL na nowy. Google widzi, że strona została przeniesiona, i przekazuje całą jej wartość (linki, pozycję) na nowy adres. Dzięki temu zachowujesz ruch i wszystkie linki, które prowadziły do starej strony."
+        }
+      ]
+    },
+    {
+      "slug": "regulamin-sklepu-internetowego-co-musi-zawierac",
       "title": "Co to jest regulamin sklepu internetowego i co musi zawierać?",
-      "excerpt": "Regulamin sklepu internetowego to dokument określający zasady korzystania ze sklepu i zawierania umów. W tym artykule wyjaśniamy, jakie elementy musi zawierać regulamin zgodnie z polskim prawem i na co zwrócić uwagę przy jego tworzeniu.",
+      "excerpt": "Regulamin sklepu internetowego określa zasady korzystania ze sklepu i zawierania umów. Wyjaśniamy, jakie elementy musi zawierać zgodnie z polskim prawem i na co zwrócić uwagę przy jego tworzeniu lub aktualizacji w sklepie.",
       "primaryCategory": "Sklepy",
-      "category": [
-        "Bezpieczenstwo"
-      ],
-      "tags": [
-        "regulamin",
-        "sklep internetowy",
-        "e-commerce",
-        "prawo konsumenckie",
-        "RODO",
-        "prawa konsumenta"
-      ],
+      "category": ["Bezpieczenstwo"],
+      "tags": ["regulamin", "sklep internetowy", "e-commerce", "prawo konsumenckie", "RODO", "prawa konsumenta"],
       "seo": {
         "title": "Co to jest regulamin sklepu internetowego i co musi zawierać? - Arteon",
-        "description": "Dowiedz się, jakie elementy musi zawierać regulamin sklepu internetowego zgodnie z polskim prawem. Praktyczny przewodnik po obowiązkowych zapisach i wymaganiach prawnych.",
-        "canonical": "https://www.arteonagency.pl/edukacja/sklepy/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac"
+        "description": "Regulamin sklepu internetowego musi zawierać określone elementy zgodnie z polskim prawem. Wyjaśniamy obowiązkowe zapisy i wymagania prawne dla e-commerce.",
+        "canonical": "https://www.arteonagency.pl/edukacja/sklepy/regulamin-sklepu-internetowego-co-musi-zawierac"
       },
       "cover": "/assets/blog/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac.webp",
       "author": {
@@ -36,7 +234,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego sklep internetowy musi mieć regulamin?</h2><p>Obowiązek posiadania regulaminu wynika z <a class='underline' href='https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20140000827' target='_blank' rel='noopener noreferrer'>Ustawy o prawach konsumenta</a> z 30 maja 2014 roku (z późniejszymi nowelizacjami). Ustawa ta nakłada na przedsiębiorców prowadzących sprzedaż na odległość obowiązek przekazania konsumentowi określonych informacji przed zawarciem umowy.</p><br/><p>Regulamin pełni kilka istotnych funkcji w działalności sklepu internetowego:</p><br/><ul class='list-disc ml-5'><li>Informuje klientów o zasadach działania sklepu, procedurach zakupowych i warunkach umowy.</li><li>Określa prawa i obowiązki obu stron umowy sprzedaży w sposób jasny i przejrzysty.</li><li>Stanowi podstawę prawną relacji między sprzedawcą a kupującym.</li><li>Chroni zarówno interesy przedsiębiorcy, jak i konsumenta, definiując procedury postępowania w różnych sytuacjach.</li><li>Buduje zaufanie klientów poprzez transparentność zasad działania sklepu.</li></ul><br/><p>Brak regulaminu lub regulamin niezgodny z prawem może prowadzić do poważnych problemów prawnych, w tym kar nakładanych przez <a class='underline' href='https://uokik.gov.pl/' target='_blank' rel='noopener noreferrer'>Urząd Ochrony Konkurencji i Konsumentów (UOKiK)</a>. Warto zadbać o prawidłowy regulamin już na etapie uruchamiania sklepu.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego sklep internetowy musi mieć regulamin?</h2><p>Obowiązek posiadania regulaminu wynika z <a class='underline' href='https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20140000827' target='_blank' rel='noopener noreferrer'>Ustawy o prawach konsumenta</a> z 30 maja 2014 roku (z późniejszymi nowelizacjami). Ustawa ta nakłada na przedsiębiorców prowadzących sprzedaż na odległość obowiązek przekazania konsumentowi określonych informacji przed zawarciem umowy.</p><br/><p>Regulamin pełni kilka istotnych funkcji w działalności sklepu internetowego:</p><br/><ul class='list-disc ml-5'><li>Informuje klientów o zasadach działania sklepu, procedurach zakupowych i warunkach umowy.</li><li>Określa prawa i obowiązki obu stron umowy sprzedaży w sposób jasny i przejrzysty.</li><li>Stanowi podstawę prawną relacji między sprzedawcą a kupującym.</li><li>Chroni zarówno interesy przedsiębiorcy, jak i konsumenta, definiując procedury postępowania w różnych sytuacjach.</li><li>Buduje zaufanie klientów poprzez transparentność zasad działania sklepu — więcej o budowaniu zaufania znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci'>społecznym dowodzie słuszności</a>.</li></ul><br/><p>Brak regulaminu lub regulamin niezgodny z prawem może prowadzić do poważnych problemów prawnych, w tym kar nakładanych przez <a class='underline' href='https://uokik.gov.pl/' target='_blank' rel='noopener noreferrer'>Urząd Ochrony Konkurencji i Konsumentów (UOKiK)</a>. Warto zadbać o prawidłowy regulamin już na etapie uruchamiania sklepu.</p>",
           "breakAfter": true
         },
         {
@@ -98,9 +296,9 @@
       "cta": {
         "title": "Planujesz uruchomić sklep internetowy?",
         "description": "Tworzymy sklepy internetowe zgodne z obowiązującymi przepisami prawa i najlepszymi praktykami e-commerce.",
-        "btnOne": "Sklepy internetowe",
+        "btnOne": "Sprawdź ofertę sklepów internetowych",
         "btnOneLink": "/uslugi/sklepy-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac.webp",
         "overlay": "black"
@@ -135,22 +333,13 @@
     {
       "slug": "co-to-jest-newsletter-i-czy-warto-go-prowadzic",
       "title": "Co to jest newsletter i czy warto go prowadzić?",
-      "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły na nią zgodę. W tym artykule wyjaśniamy, czym jest newsletter, jakie korzyści może przynieść firmie i na co zwrócić uwagę przy jego prowadzeniu.",
+      "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły zgodę. Wyjaśniamy, jakie korzyści może przynieść firmie i na co zwrócić uwagę przy jego prowadzeniu oraz zbieraniu subskrybentów.",
       "primaryCategory": "Marketing",
-      "category": [
-        "Tresci"
-      ],
-      "tags": [
-        "newsletter",
-        "e-mail marketing",
-        "marketing",
-        "komunikacja",
-        "klienci",
-        "sprzedaz"
-      ],
+      "category": ["Tresci"],
+      "tags": ["newsletter", "e-mail marketing", "marketing", "komunikacja", "klienci", "sprzedaz"],
       "seo": {
         "title": "Co to jest newsletter i czy warto go prowadzić? - Arteon",
-        "description": "Dowiedz się, czym jest newsletter, jakie korzyści przynosi firmie i na co zwrócić uwagę przy jego prowadzeniu. Praktyczny poradnik dla właścicieli firm.",
+        "description": "Newsletter to regularny e-mail do subskrybentów. Wyjaśniamy, jakie korzyści przynosi firmie i na co zwrócić uwagę przy jego prowadzeniu.",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic"
       },
       "cover": "/assets/blog/co-to-jest-newsletter-i-czy-warto-go-prowadzic/co-to-jest-newsletter-i-czy-warto-go-prowadzic.webp",
@@ -173,7 +362,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego firmy prowadzą newslettery?</h2><p>Newsletter daje firmie bezpośredni kanał komunikacji z osobami zainteresowanymi jej ofertą. W odróżnieniu od mediów społecznościowych, gdzie zasięg zależy od algorytmów platformy, e-mail trafia bezpośrednio do skrzynki odbiorcy.</p><br/><h3 class='h4 mb-3 mt-4'>Niezależność od algorytmów platform</h3><p>Na platformach społecznościowych zasięg postów zależy od algorytmów, które firma nie kontroluje. Post może dotrzeć tylko do niewielkiego procenta obserwujących, a zasięg organiczny systematycznie spada. W przypadku newslettera wiadomość trafia do każdego subskrybenta, a jej otwarcie zależy wyłącznie od zainteresowania odbiorcy i jakości tematu wiadomości.</p><br/><h3 class='h4 mb-3 mt-4'>Budowanie listy kontaktów</h3><p>Lista subskrybentów newslettera to zasób, który należy do firmy. Nawet jeśli platforma społecznościowa zmieni zasady, ograniczy zasięgi lub przestanie istnieć, kontakty e-mailowe pozostają. To szczególnie istotne dla firm, które budują długoterminowe relacje z klientami i nie chcą uzależniać się od jednego kanału komunikacji.</p><br/><h3 class='h4 mb-3 mt-4'>Regularny kontakt z odbiorcami</h3><p>Newsletter pozwala utrzymywać stały kontakt z osobami, które wykazały zainteresowanie firmą. Regularnie pojawiając się w skrzynce odbiorczej, firma pozostaje w świadomości potencjalnych klientów. Gdy pojawi się potrzeba skorzystania z usług lub zakupu produktu, subskrybent może pomyśleć właśnie o tej firmie, ponieważ regularnie otrzymywał od niej wartościowe treści.</p><br/><p>Więcej o tym, jak opinie i rekomendacje wpływają na decyzje zakupowe, znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje'>social proof</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Dlaczego firmy prowadzą newslettery?</h2><p>Newsletter daje firmie bezpośredni kanał komunikacji z osobami zainteresowanymi jej ofertą. W odróżnieniu od mediów społecznościowych, gdzie zasięg zależy od algorytmów platformy, e-mail trafia bezpośrednio do skrzynki odbiorcy.</p><br/><h3 class='h4 mb-3 mt-4'>Niezależność od algorytmów platform</h3><p>Na platformach społecznościowych zasięg postów zależy od algorytmów, które firma nie kontroluje. Post może dotrzeć tylko do niewielkiego procenta obserwujących, a zasięg organiczny systematycznie spada. W przypadku newslettera wiadomość trafia do każdego subskrybenta, a jej otwarcie zależy wyłącznie od zainteresowania odbiorcy i jakości tematu wiadomości.</p><br/><h3 class='h4 mb-3 mt-4'>Budowanie listy kontaktów</h3><p>Lista subskrybentów newslettera to zasób, który należy do firmy. Nawet jeśli platforma społecznościowa zmieni zasady, ograniczy zasięgi lub przestanie istnieć, kontakty e-mailowe pozostają. To szczególnie istotne dla firm, które budują długoterminowe relacje z klientami i nie chcą uzależniać się od jednego kanału komunikacji.</p><br/><h3 class='h4 mb-3 mt-4'>Regularny kontakt z odbiorcami</h3><p>Newsletter pozwala utrzymywać stały kontakt z osobami, które wykazały zainteresowanie firmą. Regularnie pojawiając się w skrzynce odbiorczej, firma pozostaje w świadomości potencjalnych klientów. Gdy pojawi się potrzeba skorzystania z usług lub zakupu produktu, subskrybent może pomyśleć właśnie o tej firmie, ponieważ regularnie otrzymywał od niej wartościowe treści.</p><br/><p>Więcej o tym, jak opinie i rekomendacje wpływają na decyzje zakupowe, znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci'>social proof</a>.</p>",
           "breakAfter": true
         },
         {
@@ -220,9 +409,9 @@
       "cta": {
         "title": "Potrzebujesz wsparcia w tworzeniu treści dla swojej firmy?",
         "description": "Pomagamy firmom w tworzeniu treści, które angażują odbiorców i wspierają cele biznesowe.",
-        "btnOne": "Tworzenie treści",
+        "btnOne": "Sprawdź ofertę tworzenia treści",
         "btnOneLink": "/uslugi/tworzenie-tresci",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/co-to-jest-newsletter-i-czy-warto-go-prowadzic/co-to-jest-newsletter-i-czy-warto-go-prowadzic.webp",
         "overlay": "black"
@@ -255,27 +444,16 @@
       ]
     },
     {
-      "slug": "dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google",
+      "slug": "szybkosc-ladowania-strony-a-pozycja-w-google",
       "title": "Dlaczego szybkość ładowania strony wpływa na pozycję w Google?",
-      "excerpt": "Szybkość ładowania strony to jeden z czynników, które Google bierze pod uwagę przy ustalaniu pozycji w wynikach wyszukiwania. W tym artykule wyjaśniamy, jak działają wskaźniki Core Web Vitals, co oznaczają dla właściciela strony i dlaczego warto się nimi zainteresować.",
+      "excerpt": "Szybkość ładowania strony wpływa na pozycję w Google i doświadczenie użytkowników. Wyjaśniamy, jak działają wskaźniki Core Web Vitals, co oznaczają dla właściciela strony i dlaczego warto je regularnie monitorować w praktyce.",
       "primaryCategory": "SEO",
-      "category": [
-        "Widoczność",
-        "Strony"
-      ],
-      "tags": [
-        "SEO",
-        "szybkosc strony",
-        "Core Web Vitals",
-        "wydajnosc",
-        "UX",
-        "Google",
-        "optymalizacja"
-      ],
+      "category": ["Widoczność", "Strony"],
+      "tags": ["SEO", "szybkosc strony", "Core Web Vitals", "wydajnosc", "UX", "Google", "optymalizacja"],
       "seo": {
         "title": "Dlaczego szybkość ładowania strony wpływa na pozycję w Google? - Arteon",
-        "description": "Dowiedz się, jak szybkość ładowania strony wpływa na pozycję w Google. Wyjaśniamy wskaźniki Core Web Vitals (LCP, CLS, INP) prostym językiem i pokazujemy, na co zwrócić uwagę.",
-        "canonical": "https://www.arteonagency.pl/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google"
+        "description": "Szybkość ładowania strony wpływa na pozycję w Google. Wyjaśniamy wskaźniki Core Web Vitals (LCP, CLS, INP) i pokazujemy, na co zwrócić uwagę.",
+        "canonical": "https://www.arteonagency.pl/edukacja/seo/szybkosc-ladowania-strony-a-pozycja-w-google"
       },
       "cover": "/assets/blog/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google.webp",
       "author": {
@@ -312,7 +490,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak Core Web Vitals wpływają na pozycję w Google?</h2><p>Google oficjalnie potwierdza, że Core Web Vitals są jednym z czynników rankingowych. Wg <a class='underline' href='https://developers.google.com/search/blog/2020/11/timing-for-page-experience' target='_blank' rel='noopener noreferrer'>komunikatu Google z 2020 roku</a> wskaźniki Page Experience są brane pod uwagę przy ustalaniu pozycji stron.</p><br/><h3 class='h4 mb-3 mt-4'>Treść pozostaje najważniejsza</h3><p>Google wielokrotnie podkreślało, że jakość i trafność treści są ważniejsze niż wskaźniki techniczne. Core Web Vitals działają jako czynnik różnicujący, gdy strony są porównywalne pod względem treści.</p><br/><h3 class='h4 mb-3 mt-4'>Dane z rzeczywistego użytkowania</h3><p>Google zbiera dane Core Web Vitals z Chrome User Experience Report (CrUX) — to dane od rzeczywistych użytkowników, nie wyniki testów laboratoryjnych.</p><br/><p>Więcej o czynnikach wpływających na pozycję znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty'>czasie pozycjonowania strony firmowej</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak Core Web Vitals wpływają na pozycję w Google?</h2><p>Google oficjalnie potwierdza, że Core Web Vitals są jednym z czynników rankingowych. Wg <a class='underline' href='https://developers.google.com/search/blog/2020/11/timing-for-page-experience' target='_blank' rel='noopener noreferrer'>komunikatu Google z 2020 roku</a> wskaźniki Page Experience są brane pod uwagę przy ustalaniu pozycji stron.</p><br/><h3 class='h4 mb-3 mt-4'>Treść pozostaje najważniejsza</h3><p>Google wielokrotnie podkreślało, że jakość i trafność treści są ważniejsze niż wskaźniki techniczne. Core Web Vitals działają jako czynnik różnicujący, gdy strony są porównywalne pod względem treści.</p><br/><h3 class='h4 mb-3 mt-4'>Dane z rzeczywistego użytkowania</h3><p>Google zbiera dane Core Web Vitals z Chrome User Experience Report (CrUX) — to dane od rzeczywistych użytkowników, nie wyniki testów laboratoryjnych.</p><br/><p>Więcej o czynnikach wpływających na pozycję znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony'>czasie pozycjonowania strony firmowej</a>.</p>",
           "breakAfter": true
         },
         {
@@ -339,9 +517,9 @@
       "cta": {
         "title": "Chcesz mieć szybką stronę z dobrymi wynikami Core Web Vitals?",
         "description": "Tworzymy strony internetowe zoptymalizowane pod kątem wydajności.",
-        "btnOne": "Strony internetowe",
+        "btnOne": "Sprawdź ofertę stron internetowych",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google.webp",
         "overlay": "black"
@@ -374,27 +552,16 @@
       ]
     },
     {
-      "slug": "czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec",
+      "slug": "breadcrumbs-sciezka-nawigacji-na-stronie",
       "title": "Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?",
-      "excerpt": "Ścieżka nawigacji to element strony, który pokazuje użytkownikowi, gdzie się znajduje w strukturze witryny. W tym artykule wyjaśniamy, jak działa ścieżka nawigacji, dlaczego ułatwia poruszanie się po stronie i jak wpływa na widoczność w Google.",
+      "excerpt": "Ścieżka nawigacji pokazuje użytkownikowi, gdzie się znajduje w strukturze witryny. Wyjaśniamy, jak działa, dlaczego ułatwia poruszanie się po stronie, jak wpływa na widoczność w Google i kiedy warto ją dodać do swojej witryny.",
       "primaryCategory": "UX",
-      "category": [
-        "SEO",
-        "Strony",
-        "Dostępność"
-      ],
-      "tags": [
-        "UX",
-        "SEO",
-        "nawigacja",
-        "struktura strony",
-        "Google",
-        "dostepnosc"
-      ],
+      "category": ["SEO", "Strony", "Dostępność"],
+      "tags": ["UX", "SEO", "nawigacja", "struktura strony", "Google", "dostepnosc"],
       "seo": {
         "title": "Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć? - Arteon",
-        "description": "Dowiedz się, czym jest ścieżka nawigacji (breadcrumbs), jak ułatwia poruszanie się po stronie i dlaczego Google wyświetla ją w wynikach wyszukiwania.",
-        "canonical": "https://www.arteonagency.pl/edukacja/ux/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec"
+        "description": "Ścieżka nawigacji (breadcrumbs) ułatwia poruszanie się po stronie i może być wyświetlana w wynikach Google. Wyjaśniamy, jak działa i kiedy warto ją wdrożyć.",
+        "canonical": "https://www.arteonagency.pl/edukacja/ux/breadcrumbs-sciezka-nawigacji-na-stronie"
       },
       "cover": "/assets/blog/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec.webp",
       "author": {
@@ -448,9 +615,9 @@
       "cta": {
         "title": "Potrzebujesz strony z przemyślaną nawigacją?",
         "description": "Tworzymy strony internetowe z czytelną strukturą, poprawnymi breadcrumbs i oznaczeniami dla wyszukiwarek — żeby użytkownicy łatwo znajdowali to, czego szukają.",
-        "btnOne": "Strony internetowe",
+        "btnOne": "Sprawdź ofertę stron internetowych",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc.webp",
         "overlay": "black"
@@ -481,23 +648,13 @@
     {
       "slug": "dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc",
       "title": "Dlaczego pusta przestrzeń na stronie zwiększa czytelność?",
-      "excerpt": "Strony z odpowiednią ilością pustej przestrzeni są łatwiejsze do czytania i nawigowania. W tym artykule wyjaśniamy, jak odstępy między elementami wpływają na odbiór treści, gdzie warto je stosować i jak ocenić, czy strona ma właściwe proporcje.",
+      "excerpt": "Strony z odpowiednią ilością pustej przestrzeni są łatwiejsze do czytania. Wyjaśniamy, jak odstępy między elementami wpływają na odbiór treści, gdzie je stosować i jak ocenić, czy witryna ma właściwe proporcje i dobry układ.",
       "primaryCategory": "UX",
-      "category": [
-        "Grafika",
-        "Dostępność"
-      ],
-      "tags": [
-        "UX",
-        "projektowanie stron",
-        "czytelnosc",
-        "typografia",
-        "dostepnosc",
-        "layout"
-      ],
+      "category": ["Grafika", "Dostępność"],
+      "tags": ["UX", "projektowanie stron", "czytelnosc", "typografia", "dostepnosc", "layout"],
       "seo": {
         "title": "Dlaczego pusta przestrzeń na stronie zwiększa czytelność? - Arteon",
-        "description": "Dowiedz się, jak pusta przestrzeń na stronie wpływa na czytelność i odbiór treści. Wyjaśniamy rodzaje odstępów, gdzie je stosować i jak ocenić proporcje na stronie.",
+        "description": "Pusta przestrzeń na stronie wpływa na czytelność i odbiór treści. Wyjaśniamy rodzaje odstępów, gdzie je stosować i jak ocenić proporcje.",
         "canonical": "https://www.arteonagency.pl/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc"
       },
       "cover": "/assets/blog/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc.webp",
@@ -535,7 +692,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Pusta przestrzeń a typografia</h2><p>Typografia i pusta przestrzeń są ze sobą ściśle powiązane. Wybór czcionki wpływa na to, ile przestrzeni potrzebuje tekst, żeby być czytelny.</p><br/><h3 class='h4 mb-3 mt-4'>Rozmiar czcionki a interlinia</h3><p>Większa czcionka zazwyczaj wymaga proporcjonalnie większej interlinii. Standardowa wartość 1.5 wysokości czcionki sprawdza się dla większości tekstów, ale przy bardzo dużych nagłówkach może być za duża, a przy bardzo małym tekście — za mała.</p><br/><h3 class='h4 mb-3 mt-4'>Szerokość kolumny tekstu</h3><p>Długość wiersza tekstu (liczba znaków w linii) również wpływa na czytelność. Zbyt długie wiersze męczą wzrok — trudno wrócić do początku następnej linii. Zbyt krótkie — przerywają płynność czytania.</p><br/><p>Wg badań typograficznych optymalna długość wiersza to 45-75 znaków dla tekstu głównego. Dla tekstów na ekranach często przyjmuje się wartość bliższą 60-70 znaków. Odpowiednia szerokość kolumny tekstu to forma pustej przestrzeni — marginesy po bokach tekstu ograniczają długość wiersza.</p><br/><p>Więcej o typografii i wyborze czcionek znajdziesz w artykule o <a class='inline-link' href='/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych'>czcionkach szeryfowych i bezszeryfowych</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Pusta przestrzeń a typografia</h2><p>Typografia i pusta przestrzeń są ze sobą ściśle powiązane. Wybór czcionki wpływa na to, ile przestrzeni potrzebuje tekst, żeby być czytelny.</p><br/><h3 class='h4 mb-3 mt-4'>Rozmiar czcionki a interlinia</h3><p>Większa czcionka zazwyczaj wymaga proporcjonalnie większej interlinii. Standardowa wartość 1.5 wysokości czcionki sprawdza się dla większości tekstów, ale przy bardzo dużych nagłówkach może być za duża, a przy bardzo małym tekście — za mała.</p><br/><h3 class='h4 mb-3 mt-4'>Szerokość kolumny tekstu</h3><p>Długość wiersza tekstu (liczba znaków w linii) również wpływa na czytelność. Zbyt długie wiersze męczą wzrok — trudno wrócić do początku następnej linii. Zbyt krótkie — przerywają płynność czytania.</p><br/><p>Wg badań typograficznych optymalna długość wiersza to 45-75 znaków dla tekstu głównego. Dla tekstów na ekranach często przyjmuje się wartość bliższą 60-70 znaków. Odpowiednia szerokość kolumny tekstu to forma pustej przestrzeni — marginesy po bokach tekstu ograniczają długość wiersza.</p><br/><p>Więcej o typografii i wyborze czcionek znajdziesz w artykule o <a class='inline-link' href='/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe'>czcionkach szeryfowych i bezszeryfowych</a>.</p>",
           "breakAfter": true
         },
         {
@@ -552,9 +709,9 @@
       "cta": {
         "title": "Chcesz mieć stronę, która jest czytelna i przejrzysta?",
         "description": "Projektujemy strony internetowe z przemyślaną strukturą i odpowiednimi proporcjami — żeby użytkownicy łatwo znajdowali to, czego szukają.",
-        "btnOne": "Strony internetowe",
+        "btnOne": "Sprawdź ofertę stron internetowych",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc.webp",
         "overlay": "black"
@@ -585,24 +742,13 @@
     {
       "slug": "dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa",
       "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?",
-      "excerpt": "WordPress napędza ponad 40% stron internetowych na świecie. Ta popularność sprawia, że jest też częstym celem ataków. W tym artykule wyjaśniamy, dlaczego aktualizacje są tak ważne, co się dzieje, gdy strona pozostaje nieaktualna, oraz na co zwrócić uwagę przy utrzymaniu WordPressa.",
+      "excerpt": "WordPress napędza ponad 40% stron na świecie, co czyni go częstym celem ataków. Wyjaśniamy, dlaczego aktualizacje są tak ważne, co się dzieje, gdy strona pozostaje nieaktualna i na co zwrócić uwagę przy utrzymaniu swojej witryny.",
       "primaryCategory": "Bezpieczenstwo",
-      "category": [
-        "Strony"
-      ],
-      "tags": [
-        "WordPress",
-        "bezpieczenstwo",
-        "aktualizacje",
-        "strony internetowe",
-        "wtyczki",
-        "motywy",
-        "hosting",
-        "backup"
-      ],
+      "category": ["Strony"],
+      "tags": ["WordPress", "bezpieczenstwo", "aktualizacje", "strony internetowe", "wtyczki", "motywy", "hosting", "backup"],
       "seo": {
         "title": "Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa? - Arteon",
-        "description": "Dowiedz się, dlaczego regularne aktualizacje WordPressa, wtyczek i motywów chronią stronę przed atakami. Wyjaśniamy mechanizmy zagrożeń i dobre praktyki utrzymania.",
+        "description": "Regularne aktualizacje WordPressa, wtyczek i motywów chronią stronę przed atakami. Wyjaśniamy mechanizmy zagrożeń i dobre praktyki utrzymania.",
         "canonical": "https://www.arteonagency.pl/edukacja/bezpieczenstwo/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa"
       },
       "cover": "/assets/blog/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa.webp",
@@ -664,7 +810,7 @@
         "description": "Zajmujemy się optymalizacją i utrzymaniem stron WordPress — w tym regularnym aktualizowaniem, monitorowaniem bezpieczeństwa i reagowaniem na incydenty.",
         "btnOne": "Optymalizacja WordPress",
         "btnOneLink": "/uslugi/strony-internetowe/optymalizacja-strony-wordpress",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa/dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa.webp",
         "overlay": "black"
@@ -693,27 +839,16 @@
       ]
     },
     {
-      "slug": "darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu",
+      "slug": "darmowa-dostawa-vs-nizsza-cena",
       "title": "Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?",
-      "excerpt": "Czy lepiej zaoferować klientowi darmową dostawę, czy obniżyć cenę produktu o tę samą kwotę? To jedno z częstszych dylematów w e-commerce. W tym artykule porównujemy obie strategie cenowe, analizujemy badania i pokazujemy, kiedy która opcja działa lepiej.",
+      "excerpt": "Darmowa dostawa czy niższa cena produktu? To częsty dylemat w e-commerce. Porównujemy obie strategie cenowe, analizujemy badania i pokazujemy, kiedy która opcja działa lepiej dla różnych typów sklepów internetowych w Polsce.",
       "primaryCategory": "Sklepy",
-      "category": [
-        "Psychologia"
-      ],
-      "tags": [
-        "darmowa dostawa",
-        "strategia cenowa",
-        "e-commerce",
-        "konwersja",
-        "porzucone koszyki",
-        "psychologia zakupów",
-        "sklep internetowy",
-        "ceny"
-      ],
+      "category": ["Psychologia"],
+      "tags": ["darmowa dostawa", "strategia cenowa", "e-commerce", "konwersja", "porzucone koszyki", "psychologia zakupów", "sklep internetowy", "ceny"],
       "seo": {
         "title": "Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu? - Arteon",
-        "description": "Porównanie dwóch strategii cenowych w e-commerce: darmowa dostawa i niższa cena produktu. Dowiedz się, która opcja skuteczniej przekonuje klientów do zakupu.",
-        "canonical": "https://www.arteonagency.pl/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu"
+        "description": "Porównanie dwóch strategii cenowych w e-commerce: darmowa dostawa i niższa cena produktu. Wyjaśniamy, która opcja skuteczniej przekonuje klientów.",
+        "canonical": "https://www.arteonagency.pl/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena"
       },
       "cover": "/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp",
       "author": {
@@ -779,7 +914,7 @@
         "description": "Tworzymy sklepy internetowe zaprojektowane z myślą o konwersji. Pomagamy też optymalizować istniejące sklepy — od UX po strategię cenową.",
         "btnOne": "Sklepy internetowe",
         "btnOneLink": "/uslugi/sklepy-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp",
         "overlay": "black"
@@ -808,30 +943,16 @@
       ]
     },
     {
-      "slug": "czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych",
+      "slug": "czcionki-szeryfowe-vs-bezszeryfowe",
       "title": "Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?",
-      "excerpt": "Czcionki szeryfowe i bezszeryfowe różnią się nie tylko wyglądem, ale też tym, gdzie sprawdzają się najlepiej. W tym artykule wyjaśniamy, skąd wzięły się te dwa style, jak wpływają na czytelność i odbiór, oraz kiedy wybrać którą — zarówno w druku, jak i na ekranie.",
+      "excerpt": "Czcionki szeryfowe i bezszeryfowe różnią się wyglądem i zastosowaniem. Wyjaśniamy, skąd wzięły się te dwa style, jak wpływają na czytelność i odbiór tekstu oraz kiedy wybrać którą — w druku i na ekranie monitora komputera.",
       "primaryCategory": "Grafika",
-      "category": [
-        "Branding",
-        "UX"
-      ],
-      "tags": [
-        "czcionki",
-        "fonty",
-        "typografia",
-        "serif",
-        "sans-serif",
-        "branding",
-        "identyfikacja wizualna",
-        "czytelność",
-        "druk",
-        "strony internetowe"
-      ],
+      "category": ["Branding", "UX"],
+      "tags": ["czcionki", "fonty", "typografia", "serif", "sans-serif", "branding", "identyfikacja wizualna", "czytelność", "druk", "strony internetowe"],
       "seo": {
         "title": "Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których? - Arteon",
-        "description": "Dowiedz się, czym różnią się czcionki szeryfowe od bezszeryfowych, jak wpływają na czytelność i odbiór marki oraz kiedy używać których — w druku, na ekranie i w brandingu.",
-        "canonical": "https://www.arteonagency.pl/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych"
+        "description": "Czcionki szeryfowe i bezszeryfowe różnią się wyglądem i zastosowaniem. Wyjaśniamy, jak wpływają na czytelność i kiedy używać których.",
+        "canonical": "https://www.arteonagency.pl/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe"
       },
       "cover": "/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp",
       "author": {
@@ -907,7 +1028,7 @@
         "description": "Projektujemy identyfikacje wizualne, w których typografia, kolory i inne elementy tworzą spójny wizerunek marki. Dobieramy czcionki dopasowane do charakteru firmy i jej odbiorców.",
         "btnOne": "Identyfikacja wizualna",
         "btnOneLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp",
         "overlay": "black"
@@ -938,25 +1059,13 @@
     {
       "slug": "czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz",
       "title": "Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?",
-      "excerpt": "Paradoks wyboru to zjawisko psychologiczne, w którym zbyt duża liczba opcji prowadzi do paraliżu decyzyjnego i mniejszej satysfakcji z zakupu. W tym artykule wyjaśniamy, jak działa ten mechanizm, dlaczego mniej opcji może zwiększyć sprzedaż i jak projektować ofertę, aby ułatwiać klientom decyzję.",
+      "excerpt": "Paradoks wyboru to zjawisko, w którym zbyt wiele opcji prowadzi do paraliżu decyzyjnego. Wyjaśniamy, jak działa ten mechanizm, dlaczego mniej opcji może zwiększyć sprzedaż i jak projektować ofertę produktową w swoim sklepie.",
       "primaryCategory": "Psychologia",
-      "category": [
-        "Sklepy",
-        "UX"
-      ],
-      "tags": [
-        "paradoks wyboru",
-        "choice overload",
-        "psychologia sprzedaży",
-        "decyzje zakupowe",
-        "UX",
-        "konwersja",
-        "oferta",
-        "e-commerce"
-      ],
+      "category": ["Sklepy", "UX"],
+      "tags": ["paradoks wyboru", "choice overload", "psychologia sprzedaży", "decyzje zakupowe", "UX", "konwersja", "oferta", "e-commerce"],
       "seo": {
         "title": "Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż? - Arteon",
-        "description": "Dowiedz się, czym jest paradoks wyboru, jak zbyt wiele opcji wpływa na decyzje zakupowe klientów i jak projektować ofertę, która ułatwia wybór i zwiększa sprzedaż.",
+        "description": "Paradoks wyboru pokazuje, jak zbyt wiele opcji utrudnia decyzje zakupowe. Wyjaśniamy, jak projektować ofertę ułatwiającą wybór.",
         "canonical": "https://www.arteonagency.pl/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz"
       },
       "cover": "/assets/blog/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz.webp",
@@ -984,7 +1093,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak paradoks wyboru wpływa na sprzedaż?</h2><p>Paradoks wyboru ma bezpośredni wpływ na wyniki sprzedażowe — zarówno w sklepach stacjonarnych, jak i online.</p><br/><h3 class='h4 mb-3 mt-4'>Niższa konwersja</h3><p>Jak pokazał eksperyment z dżemami, zbyt wiele opcji może drastycznie obniżyć współczynnik konwersji. Klient, który nie może się zdecydować, często odkłada zakup na później — a później często znaczy nigdy.</p><br/><p>W e-commerce ten efekt jest szczególnie widoczny na stronach kategorii z setkami produktów bez jasnego systemu filtrowania. Klient przegląda kilka stron, nie znajduje sposobu na zawężenie wyboru i opuszcza sklep. Więcej o projektowaniu skutecznych stron produktowych znajdziesz w artykule o <a class='inline-link' href='/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie'>responsywności i jej znaczeniu</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Mniejsza satysfakcja</h3><p>Nawet jeśli klient dokona zakupu, zbyt wiele opcji może obniżyć jego satysfakcję. Jak wskazuje Barry Schwartz w swoich badaniach opisanych w <a class='underline' href='https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice' target='_blank' rel='noopener noreferrer'>The Paradox of Choice</a>, osoby wybierające spośród wielu opcji częściej żałują swojej decyzji niż osoby wybierające spośród kilku.</p><br/><p>To ma konsekwencje dla lojalności klientów. Klient, który czuje się zadowolony z zakupu, wraca i poleca firmę innym. Klient, który ma wątpliwości, czy nie wybrał źle, jest mniej skłonny do ponownych zakupów. Więcej o budowaniu zaufania znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje'>społecznym dowodzie słuszności</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Dłuższy czas decyzji</h3><p>Więcej opcji oznacza dłuższy czas potrzebny na podjęcie decyzji. W niektórych kontekstach to nie jest problem — przy drogich zakupach klienci i tak analizują oferty przez dni lub tygodnie. Ale przy zakupach impulsowych lub codziennych, wydłużenie procesu decyzyjnego może prowadzić do rezygnacji.</p><br/><p>Restauracja, w której gość spędza 15 minut nad kartą, traci czas obsługi i ryzykuje, że gość się zniechęci. Sklep, w którym klient musi porównywać dziesiątki podobnych produktów, traci tych, którzy szukają szybkiego rozwiązania.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak paradoks wyboru wpływa na sprzedaż?</h2><p>Paradoks wyboru ma bezpośredni wpływ na wyniki sprzedażowe — zarówno w sklepach stacjonarnych, jak i online.</p><br/><h3 class='h4 mb-3 mt-4'>Niższa konwersja</h3><p>Jak pokazał eksperyment z dżemami, zbyt wiele opcji może drastycznie obniżyć współczynnik konwersji. Klient, który nie może się zdecydować, często odkłada zakup na później — a później często znaczy nigdy.</p><br/><p>W e-commerce ten efekt jest szczególnie widoczny na stronach kategorii z setkami produktów bez jasnego systemu filtrowania. Klient przegląda kilka stron, nie znajduje sposobu na zawężenie wyboru i opuszcza sklep. Więcej o projektowaniu skutecznych stron produktowych znajdziesz w artykule o <a class='inline-link' href='/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie'>responsywności i jej znaczeniu</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Mniejsza satysfakcja</h3><p>Nawet jeśli klient dokona zakupu, zbyt wiele opcji może obniżyć jego satysfakcję. Jak wskazuje Barry Schwartz w swoich badaniach opisanych w <a class='underline' href='https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice' target='_blank' rel='noopener noreferrer'>The Paradox of Choice</a>, osoby wybierające spośród wielu opcji częściej żałują swojej decyzji niż osoby wybierające spośród kilku.</p><br/><p>To ma konsekwencje dla lojalności klientów. Klient, który czuje się zadowolony z zakupu, wraca i poleca firmę innym. Klient, który ma wątpliwości, czy nie wybrał źle, jest mniej skłonny do ponownych zakupów. Więcej o budowaniu zaufania znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci'>społecznym dowodzie słuszności</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Dłuższy czas decyzji</h3><p>Więcej opcji oznacza dłuższy czas potrzebny na podjęcie decyzji. W niektórych kontekstach to nie jest problem — przy drogich zakupach klienci i tak analizują oferty przez dni lub tygodnie. Ale przy zakupach impulsowych lub codziennych, wydłużenie procesu decyzyjnego może prowadzić do rezygnacji.</p><br/><p>Restauracja, w której gość spędza 15 minut nad kartą, traci czas obsługi i ryzykuje, że gość się zniechęci. Sklep, w którym klient musi porównywać dziesiątki podobnych produktów, traci tych, którzy szukają szybkiego rozwiązania.</p>",
           "breakAfter": true
         },
         {
@@ -1018,7 +1127,7 @@
         "description": "Tworzymy strony internetowe i sklepy z przemyślaną architekturą oferty. Pomagamy zaprojektować strukturę produktów, pakietów i kategorii tak, aby klienci łatwo znajdowali to, czego szukają — i chętniej kupowali.",
         "btnOne": "Sklepy internetowe",
         "btnOneLink": "/uslugi/sklepy-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz.webp",
         "overlay": "black"
@@ -1049,25 +1158,13 @@
     {
       "slug": "efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci",
       "title": "Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?",
-      "excerpt": "Efekt zakotwiczenia to mechanizm psychologiczny, w którym pierwsza informacja (np. cena) wpływa na ocenę wszystkich kolejnych. W tym artykule wyjaśniamy, jak działa zakotwiczenie, dlaczego pierwsza cena ma tak duże znaczenie i jak firmy wykorzystują ten mechanizm w sprzedaży.",
+      "excerpt": "Efekt zakotwiczenia to mechanizm, w którym pierwsza cena wpływa na ocenę wszystkich kolejnych. Wyjaśniamy, jak działa zakotwiczenie, dlaczego pierwsza cena ma znaczenie i jak firmy wykorzystują ten mechanizm w codziennej praktyce.",
       "primaryCategory": "Psychologia",
-      "category": [
-        "Marketing",
-        "Sklepy"
-      ],
-      "tags": [
-        "efekt zakotwiczenia",
-        "anchoring",
-        "psychologia cen",
-        "pricing",
-        "sprzedaż",
-        "marketing",
-        "decyzje zakupowe",
-        "psychologia sprzedaży"
-      ],
+      "category": ["Marketing", "Sklepy"],
+      "tags": ["efekt zakotwiczenia", "anchoring", "psychologia cen", "pricing", "sprzedaż", "marketing", "decyzje zakupowe", "psychologia sprzedaży"],
       "seo": {
         "title": "Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości? - Arteon",
-        "description": "Dowiedz się, czym jest efekt zakotwiczenia, jak pierwsza cena kształtuje postrzeganie wartości produktów i usług, oraz jak firmy wykorzystują ten mechanizm psychologiczny w sprzedaży.",
+        "description": "Efekt zakotwiczenia to mechanizm, w którym pierwsza cena kształtuje postrzeganie wartości. Wyjaśniamy, jak firmy wykorzystują go w sprzedaży.",
         "canonical": "https://www.arteonagency.pl/edukacja/psychologia/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci"
       },
       "cover": "/assets/blog/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci.webp",
@@ -1090,7 +1187,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak efekt zakotwiczenia wpływa na postrzeganie cen?</h2><p>W kontekście sprzedaży efekt zakotwiczenia oznacza, że pierwsza cena, którą klient zobaczy, kształtuje jego oczekiwania wobec wszystkich kolejnych. Ta pierwsza cena niekoniecznie musi być ceną produktu, który klient kupi — może być ceną innego produktu, ceną przed promocją lub nawet sugerowaną ceną rynkową.</p><br/><h3 class='h4 mb-3 mt-4'>Cena przekreślona</h3><p>Klasyczny przykład zakotwiczenia w e-commerce to cena przekreślona obok ceny promocyjnej.   Sklep z elektroniką pokazuje telewizor z ceną 4999 zł przekreśloną i nową ceną 3499 zł. Od stycznia 2023 roku, zgodnie z <a class='underline' href='https://uokik.gov.pl/aktualnosci/od-1-stycznia-2023-r-nowe-obowiazki-przedsiebiorcow' target='_blank' rel='noopener noreferrer'>Dyrektywą Omnibus</a>, sklep musi pokazać też najniższą cenę z ostatnich 30 dni — dzięki temu klient może zweryfikować, czy promocja jest rzeczywista. Mimo to mechanizm zakotwiczenia nadal działa: pierwsza widoczna cena (przekreślona) staje się punktem odniesienia, który sprawia, że cena promocyjna wydaje się okazją.</p><br/><p>Podobny mechanizm stosują sklepy odzieżowe pokazując ceny regularne obok promocyjnych, apteki prezentujące ceny sugerowane przez producenta oraz serwisy z biletami lotniczymi porównujące ceny do średniej rynkowej.</p><br/><h3 class='h4 mb-3 mt-4'>Produkty premium jako kotwica</h3><p>Wiele firm celowo umieszcza w ofercie produkt lub usługę w bardzo wysokiej cenie — nie po to, żeby ją sprzedawać, ale żeby służyła jako kotwica dla pozostałych opcji. Producent zegarków może mieć w kolekcji model za 50 000 zł, który sprzedaje się rzadko. Ale jego obecność sprawia, że zegarki za 5000-10 000 zł wydają się rozsądną inwestycją, a nie luksusem.</p><br/><p>Ta strategia jest szczególnie widoczna w branży nieruchomości. Agent pokazujący mieszkania może zacząć od lokalu wyraźnie powyżej budżetu klienta. Kolejne mieszkania — nawet jeśli są drogie — wydają się bardziej przystępne w porównaniu. Więcej o psychologii decyzji zakupowych znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje'>społecznym dowodzie słuszności</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Pierwsza oferta w negocjacjach</h3><p>Badania nad negocjacjami konsekwentnie pokazują, że strona, która pierwsza poda cenę, ma przewagę. Ta pierwsza cena staje się kotwicą, wokół której toczy się dalsza rozmowa. Nawet jeśli jest odrzucona jako zbyt wysoka lub niska, wpływa na finalny wynik.</p><br/><p>Dlatego doświadczeni negocjatorzy często zaczynają od ambitnej propozycji. Kancelaria adwokacka może zaproponować honorarium wyższe niż oczekuje, wiedząc, że negocjacje i tak doprowadzą do niższej kwoty — ale tej bliższej oczekiwaniom kancelarii, niż gdyby zaczęła od niższej propozycji.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak efekt zakotwiczenia wpływa na postrzeganie cen?</h2><p>W kontekście sprzedaży efekt zakotwiczenia oznacza, że pierwsza cena, którą klient zobaczy, kształtuje jego oczekiwania wobec wszystkich kolejnych. Ta pierwsza cena niekoniecznie musi być ceną produktu, który klient kupi — może być ceną innego produktu, ceną przed promocją lub nawet sugerowaną ceną rynkową.</p><br/><h3 class='h4 mb-3 mt-4'>Cena przekreślona</h3><p>Klasyczny przykład zakotwiczenia w e-commerce to cena przekreślona obok ceny promocyjnej.   Sklep z elektroniką pokazuje telewizor z ceną 4999 zł przekreśloną i nową ceną 3499 zł. Od stycznia 2023 roku, zgodnie z <a class='underline' href='https://uokik.gov.pl/aktualnosci/od-1-stycznia-2023-r-nowe-obowiazki-przedsiebiorcow' target='_blank' rel='noopener noreferrer'>Dyrektywą Omnibus</a>, sklep musi pokazać też najniższą cenę z ostatnich 30 dni — dzięki temu klient może zweryfikować, czy promocja jest rzeczywista. Mimo to mechanizm zakotwiczenia nadal działa: pierwsza widoczna cena (przekreślona) staje się punktem odniesienia, który sprawia, że cena promocyjna wydaje się okazją.</p><br/><p>Podobny mechanizm stosują sklepy odzieżowe pokazując ceny regularne obok promocyjnych, apteki prezentujące ceny sugerowane przez producenta oraz serwisy z biletami lotniczymi porównujące ceny do średniej rynkowej.</p><br/><h3 class='h4 mb-3 mt-4'>Produkty premium jako kotwica</h3><p>Wiele firm celowo umieszcza w ofercie produkt lub usługę w bardzo wysokiej cenie — nie po to, żeby ją sprzedawać, ale żeby służyła jako kotwica dla pozostałych opcji. Producent zegarków może mieć w kolekcji model za 50 000 zł, który sprzedaje się rzadko. Ale jego obecność sprawia, że zegarki za 5000-10 000 zł wydają się rozsądną inwestycją, a nie luksusem.</p><br/><p>Ta strategia jest szczególnie widoczna w branży nieruchomości. Agent pokazujący mieszkania może zacząć od lokalu wyraźnie powyżej budżetu klienta. Kolejne mieszkania — nawet jeśli są drogie — wydają się bardziej przystępne w porównaniu. Więcej o psychologii decyzji zakupowych znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci'>społecznym dowodzie słuszności</a>.</p><br/><h3 class='h4 mb-3 mt-4'>Pierwsza oferta w negocjacjach</h3><p>Badania nad negocjacjami konsekwentnie pokazują, że strona, która pierwsza poda cenę, ma przewagę. Ta pierwsza cena staje się kotwicą, wokół której toczy się dalsza rozmowa. Nawet jeśli jest odrzucona jako zbyt wysoka lub niska, wpływa na finalny wynik.</p><br/><p>Dlatego doświadczeni negocjatorzy często zaczynają od ambitnej propozycji. Kancelaria adwokacka może zaproponować honorarium wyższe niż oczekuje, wiedząc, że negocjacje i tak doprowadzą do niższej kwoty — ale tej bliższej oczekiwaniom kancelarii, niż gdyby zaczęła od niższej propozycji.</p>",
           "breakAfter": true
         },
         {
@@ -1129,7 +1226,7 @@
         "description": "Tworzymy strony internetowe i sklepy z przemyślaną strategią prezentacji produktów i usług. Pomagamy zaprojektować cenniki, strony produktów i całą architekturę informacji tak, aby wspierała decyzje zakupowe klientów.",
         "btnOne": "Strony internetowe",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci.webp",
         "overlay": "black"
@@ -1158,28 +1255,16 @@
       ]
     },
     {
-      "slug": "czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje",
+      "slug": "social-proof-spoleczny-dowod-slusznosci",
       "title": "Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?",
-      "excerpt": "Social proof (społeczny dowód słuszności) to mechanizm psychologiczny, przez który ludzie kierują się zachowaniami innych przy podejmowaniu decyzji. W tym artykule wyjaśniamy, jak działa ten mechanizm, jakie są jego rodzaje i jak firmy mogą go wykorzystać na swoich stronach internetowych.",
+      "excerpt": "Social proof to mechanizm psychologiczny, przez który ludzie kierują się zachowaniami innych. Wyjaśniamy, jak działa, jakie są jego rodzaje i jak wykorzystać go na stronie, by zwiększyć zaufanie klientów i sprzedaż w sklepie.",
       "primaryCategory": "Psychologia",
-      "category": [
-        "Marketing",
-        "UX"
-      ],
-      "tags": [
-        "social proof",
-        "społeczny dowód słuszności",
-        "opinie klientów",
-        "recenzje",
-        "psychologia",
-        "marketing",
-        "zaufanie",
-        "konwersja"
-      ],
+      "category": ["Marketing", "UX"],
+      "tags": ["social proof", "społeczny dowód słuszności", "opinie klientów", "recenzje", "psychologia", "marketing", "zaufanie", "konwersja"],
       "seo": {
         "title": "Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje? - Arteon",
-        "description": "Dowiedz się, czym jest social proof (społeczny dowód słuszności), jak działa ten mechanizm psychologiczny i jak wykorzystać go na stronie internetowej, aby budować zaufanie klientów.",
-        "canonical": "https://www.arteonagency.pl/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje"
+        "description": "Social proof (społeczny dowód słuszności) to mechanizm psychologiczny budujący zaufanie. Wyjaśniamy, jak wykorzystać go na stronie internetowej.",
+        "canonical": "https://www.arteonagency.pl/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci"
       },
       "cover": "/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp",
       "author": {
@@ -1235,7 +1320,7 @@
         "description": "Tworzymy strony internetowe, które skutecznie prezentują opinie klientów, realizacje i wszystkie elementy budujące wiarygodność firmy. Pomagamy zaplanować strategię budowania zaufania dopasowaną do Twojej branży.",
         "btnOne": "Strony internetowe",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp",
         "overlay": "black"
@@ -1266,25 +1351,13 @@
     {
       "slug": "mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec",
       "title": "Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać?",
-      "excerpt": "Mapa strony to podstrona, która pokazuje strukturę całej witryny w jednym miejscu. W tym artykule wyjaśniamy, czym różni się mapa strony od pliku sitemap.xml, jakie korzyści daje użytkownikom i SEO, kto z niej korzysta oraz jak powinna wyglądać dobrze zaprojektowana mapa strony.",
+      "excerpt": "Mapa strony pokazuje strukturę witryny w jednym miejscu. Wyjaśniamy, czym różni się od sitemap.xml, jakie korzyści daje użytkownikom i SEO, kto z niej korzysta oraz jak powinna wyglądać poprawnie zaprojektowana mapa strony.",
       "primaryCategory": "UX",
-      "category": [
-        "SEO",
-        "Strony"
-      ],
-      "tags": [
-        "mapa strony",
-        "sitemap",
-        "nawigacja",
-        "UX",
-        "dostępność",
-        "struktura strony",
-        "linkowanie wewnętrzne",
-        "SEO"
-      ],
+      "category": ["SEO", "Strony"],
+      "tags": ["mapa strony", "sitemap", "nawigacja", "UX", "dostępność", "struktura strony", "linkowanie wewnętrzne", "SEO"],
       "seo": {
         "title": "Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać? - Arteon",
-        "description": "Dowiedz się, czym jest mapa strony dla użytkowników, jak różni się od sitemap.xml, jakie korzyści daje i jak ją zaprojektować. Praktyczny przewodnik.",
+        "description": "Mapa strony dla użytkowników ułatwia nawigację i różni się od sitemap.xml. Wyjaśniamy, jakie korzyści daje i jak ją zaprojektować.",
         "canonical": "https://www.arteonagency.pl/edukacja/ux/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec"
       },
       "cover": "/assets/blog/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec.webp",
@@ -1336,7 +1409,7 @@
         "description": "Tworzymy strony internetowe, które są łatwe w obsłudze dla użytkowników i zoptymalizowane pod SEO. Zadbamy o strukturę, mapę strony i wszystkie elementy, które wpływają na widoczność i użyteczność.",
         "btnOne": "Strony internetowe",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec/mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec.webp",
         "overlay": "black"
@@ -1367,27 +1440,13 @@
     {
       "slug": "czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony",
       "title": "Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?",
-      "excerpt": "Linkowanie wewnętrzne to jeden z fundamentów skutecznego SEO, który często jest pomijany przez właścicieli stron. W tym artykule wyjaśniamy, czym są linki wewnętrzne, jak pomagają wyszukiwarkom zrozumieć strukturę strony, czym są klastry tematyczne i jak pisać anchor texty, które wspierają pozycjonowanie.",
+      "excerpt": "Linkowanie wewnętrzne łączy podstrony witryny i wspiera SEO. Wyjaśniamy, jak działa, dlaczego ma znaczenie dla pozycjonowania, czym są klastry tematyczne i jak pisać anchor texty, które wspierają widoczność witryny w Google.",
       "primaryCategory": "SEO",
-      "category": [
-        "Widoczność",
-        "Treści"
-      ],
-      "tags": [
-        "linkowanie wewnętrzne",
-        "SEO",
-        "klastry tematyczne",
-        "anchor text",
-        "struktura strony",
-        "pozycjonowanie",
-        "nawigacja",
-        "breadcrumbs",
-        "PageRank",
-        "crawl budget"
-      ],
+      "category": ["Widoczność", "Treści"],
+      "tags": ["linkowanie wewnętrzne", "SEO", "klastry tematyczne", "anchor text", "struktura strony", "pozycjonowanie", "nawigacja", "breadcrumbs", "PageRank", "crawl budget"],
       "seo": {
         "title": "Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony? - Arteon",
-        "description": "Dowiedz się, czym jest linkowanie wewnętrzne, jak wpływa na pozycjonowanie strony i jak budować klastry tematyczne. Praktyczny przewodnik po linkach wewnętrznych.",
+        "description": "Linkowanie wewnętrzne wpływa na pozycjonowanie strony i pomaga budować klastry tematyczne. Wyjaśniamy, jak stosować linki wewnętrzne.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony"
       },
       "cover": "/assets/blog/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony.webp",
@@ -1400,7 +1459,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>Linkowanie wewnętrzne to linki prowadzące z jednej podstrony Twojej witryny do innej podstrony tej samej witryny. Brzmi prosto, ale w praktyce to jeden z najbardziej niedocenianych elementów SEO. Wiele firm koncentruje się na zdobywaniu linków zewnętrznych (z innych stron), zapominając, że linki wewnętrzne mają ogromny wpływ na to, jak wyszukiwarki rozumieją strukturę strony i które podstrony są najważniejsze.</p><br/><p>W tym artykule wyjaśniamy szczegółowo: czym dokładnie jest linkowanie wewnętrzne i jak działa, dlaczego ma znaczenie dla SEO, jakie są rodzaje linków wewnętrznych, czym są klastry tematyczne i jak je budować, jak pisać anchor texty (teksty linków), oraz jakich błędów unikać.</p>",
+          "html": "<p>Linkowanie wewnętrzne to linki prowadzące z jednej podstrony danej witryny do innej podstrony tej samej witryny. Brzmi prosto, ale w praktyce to jeden z najbardziej niedocenianych elementów SEO. Wiele firm koncentruje się na zdobywaniu linków zewnętrznych (z innych stron), zapominając, że linki wewnętrzne mają ogromny wpływ na to, jak wyszukiwarki rozumieją strukturę strony i które podstrony są najważniejsze.</p><br/><p>W tym artykule wyjaśniamy szczegółowo: czym dokładnie jest linkowanie wewnętrzne i jak działa, dlaczego ma znaczenie dla SEO, jakie są rodzaje linków wewnętrznych, czym są klastry tematyczne i jak je budować, jak pisać anchor texty (teksty linków), oraz jakich błędów unikać.</p>",
           "breakAfter": true
         },
         {
@@ -1435,7 +1494,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Linkowanie wewnętrzne to jeden z fundamentów skutecznego SEO, który jest całkowicie pod Twoją kontrolą. W przeciwieństwie do linków zewnętrznych, które zależą od innych stron, linki wewnętrzne możesz planować i wdrażać samodzielnie.</p><br/><p><strong>Co warto zapamiętać z tego artykułu:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Linki wewnętrzne pomagają Google odkrywać i rozumieć strukturę strony</strong> — strona bez linków wewnętrznych jest praktycznie niewidoczna dla wyszukiwarek</li><li><strong>Dystrybucja wartości SEO</strong> — strony, do których prowadzi wiele linków wewnętrznych, są traktowane jako ważniejsze; świadomie linkuj do stron, które chcesz wypozycjonować</li><li><strong>Rodzaje linków</strong> — nawigacyjne (menu), kontekstowe (w treści), breadcrumbs, stopka; linki kontekstowe są najcenniejsze, bo mają unikalny kontekst i opisowe anchor texty</li><li><strong>Klastry tematyczne</strong> — grupuj powiązane treści wokół pillar page i łącz je linkami; to buduje topical authority i wzmacnia pozycje całego klastra</li><li><strong>Anchor texty</strong> — pisz opisowo, różnicuj, unikaj generycznych sformułowań typu &quot;kliknij tutaj&quot;</li><li><strong>Unikaj typowych pułapek</strong> — strony-sieroty, zbyt głęboka struktura, niedziałające linki, brak linkowania do nowych treści</li></ul><br/><p>Jeśli chcesz poprawić widoczność swojej strony w Google, zacznij od przeglądu struktury linków wewnętrznych. Często proste zmiany — dodanie linków do ważnych stron, poprawienie anchor textów, skrócenie ścieżki do głęboko zakopanych podstron — mogą przynieść zauważalne efekty.</p><br/><p>Potrzebujesz pomocy z optymalizacją strony? W Arteon zajmujemy się <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniem stron</a> oraz <a class='inline-link' href='/uslugi/marketing/optymalizacja-seo'>optymalizacją SEO</a>. Możemy przeanalizować strukturę Twojej witryny i zaproponować konkretne usprawnienia. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, żeby omówić potrzeby swojej strony.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Linkowanie wewnętrzne to jeden z fundamentów skutecznego SEO, który jest całkowicie pod Twoją kontrolą. W przeciwieństwie do linków zewnętrznych, które zależą od innych stron, linki wewnętrzne możesz planować i wdrażać samodzielnie.</p><br/><p><strong>Co warto zapamiętać z tego artykułu:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Linki wewnętrzne pomagają Google odkrywać i rozumieć strukturę strony</strong> — strona bez linków wewnętrznych jest praktycznie niewidoczna dla wyszukiwarek</li><li><strong>Dystrybucja wartości SEO</strong> — strony, do których prowadzi wiele linków wewnętrznych, są traktowane jako ważniejsze; świadomie linkuj do stron, które chcesz wypozycjonować</li><li><strong>Rodzaje linków</strong> — nawigacyjne (menu), kontekstowe (w treści), breadcrumbs, stopka; linki kontekstowe są najcenniejsze, bo mają unikalny kontekst i opisowe anchor texty</li><li><strong>Klastry tematyczne</strong> — grupuj powiązane treści wokół pillar page i łącz je linkami; to buduje topical authority i wzmacnia pozycje całego klastra</li><li><strong>Anchor texty</strong> — pisz opisowo, różnicuj, unikaj generycznych sformułowań typu &quot;kliknij tutaj&quot;</li><li><strong>Unikaj typowych pułapek</strong> — strony-sieroty, zbyt głęboka struktura, niedziałające linki, brak linkowania do nowych treści</li></ul><br/><p>Jeśli chcesz poprawić widoczność swojej strony w Google, zacznij od przeglądu struktury linków wewnętrznych. Często proste zmiany — dodanie linków do ważnych stron, poprawienie anchor textów, skrócenie ścieżki do głęboko zakopanych podstron — mogą przynieść zauważalne efekty.</p><br/><p>Potrzebujesz pomocy z optymalizacją strony? W Arteon zajmujemy się <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniem stron</a> oraz <a class='inline-link' href='/uslugi/marketing/optymalizacja-seo'>optymalizacją SEO</a>. Możemy przeanalizować strukturę danej witryny i zaproponować konkretne usprawnienia. <a class='inline-link' href='/kontakt'>Skontaktuj się z nami</a>, żeby omówić potrzeby swojej strony.</p>",
           "breakAfter": true
         }
       ],
@@ -1444,7 +1503,7 @@
         "description": "Analizujemy strukturę witryny, linkowanie wewnętrzne i treści. Pomagamy budować klastry tematyczne, które zwiększają pozycję w wynikach wyszukiwania.",
         "btnOne": "Pozycjonowanie stron",
         "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony.webp",
         "overlay": "black"
@@ -1475,28 +1534,13 @@
     {
       "slug": "kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie",
       "title": "Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?",
-      "excerpt": "Kontrast kolorów decyduje o tym, czy tekst na stronie jest czytelny dla wszystkich użytkowników. W tym artykule wyjaśniamy, czym jest kontrast, jak działa wzór matematyczny obliczający jego wartość, co oznaczają poziomy WCAG AA i AAA, kto korzysta z dobrego kontrastu oraz jak sprawdzić i poprawić kontrast na stronie.",
+      "excerpt": "Kontrast kolorów decyduje o czytelności tekstu na stronie. Wyjaśniamy, czym jest kontrast, co oznaczają poziomy WCAG AA i AAA, kto korzysta z dobrego kontrastu oraz jak sprawdzić i poprawić kolory na swojej stronie internetowej.",
       "primaryCategory": "Dostępność",
-      "category": [
-        "UX",
-        "Grafika"
-      ],
-      "tags": [
-        "kontrast kolorów",
-        "WCAG",
-        "dostępność",
-        "czytelność",
-        "kolory na stronie",
-        "AA",
-        "AAA",
-        "accessibility",
-        "UX",
-        "relative luminance",
-        "współczynnik kontrastu"
-      ],
+      "category": ["UX", "Grafika"],
+      "tags": ["kontrast kolorów", "WCAG", "dostępność", "czytelność", "kolory na stronie", "AA", "AAA", "accessibility", "UX", "relative luminance", "współczynnik kontrastu"],
       "seo": {
         "title": "Kontrast kolorów na stronie: znaczenie i weryfikacja - Arteon",
-        "description": "Dowiedz się, czym jest kontrast kolorów, jak działa wzór WCAG, co oznaczają poziomy AA i AAA oraz jak sprawdzić i poprawić kontrast na stronie internetowej.",
+        "description": "Kontrast kolorów wpływa na czytelność i dostępność strony. Wyjaśniamy wzór WCAG, poziomy AA i AAA oraz jak sprawdzić kontrast.",
         "canonical": "https://www.arteonagency.pl/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie"
       },
       "cover": "/assets/blog/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie.webp",
@@ -1528,13 +1572,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#333333",
-            "#666666",
-            "#767676",
-            "#999999",
-            "#0066cc"
-          ]
+          "colors": ["#333333", "#666666", "#767676", "#999999", "#0066cc"]
         },
         {
           "type": "richtext",
@@ -1552,11 +1590,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#666666",
-            "#999999",
-            "#ffffff"
-          ]
+          "colors": ["#666666", "#999999", "#ffffff"]
         },
         {
           "type": "richtext",
@@ -1574,7 +1608,7 @@
         "description": "Tworzymy strony internetowe, które są czytelne i dostępne dla wszystkich użytkowników. Od projektu kolorystyki po wdrożenie zgodne z wytycznymi dostępności.",
         "btnOne": "Sprawdź kontrast kolorów",
         "btnOneLink": "/narzedzia/tester-kontrastu-kolorow-wcag",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie.webp",
         "overlay": "black"
@@ -1609,24 +1643,13 @@
     {
       "slug": "czym-jest-content-marketing",
       "title": "Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?",
-      "excerpt": "Content marketing to strategia polegająca na tworzeniu wartościowych treści, które przyciągają potencjalnych klientów. W tym artykule wyjaśniamy, jak działa, jakie formy może przyjąć i jak zacząć go stosować w swojej firmie.",
+      "excerpt": "Content marketing to strategia polegająca na tworzeniu wartościowych treści, które przyciągają potencjalnych klientów. Wyjaśniamy, jak działa, jakie formy może przyjąć i jak zacząć stosować go w swojej firmie lub sklepie.",
       "primaryCategory": "Marketing",
-      "category": [
-        "Treści",
-        "SEO"
-      ],
-      "tags": [
-        "content marketing",
-        "marketing treści",
-        "strategia marketingowa",
-        "blog firmowy",
-        "pozyskiwanie klientów",
-        "SEO",
-        "artykuły eksperckie"
-      ],
+      "category": ["Treści", "SEO"],
+      "tags": ["content marketing", "marketing treści", "strategia marketingowa", "blog firmowy", "pozyskiwanie klientów", "SEO", "artykuły eksperckie"],
       "seo": {
         "title": "Content marketing: czym jest i jak działa? - Arteon",
-        "description": "Dowiedz się, czym jest content marketing, jak działa, jakie formy może przyjąć i jak zacząć go stosować w swojej firmie.",
+        "description": "Content marketing to strategia oparta na tworzeniu wartościowych treści. Wyjaśniamy, jak działa i jak zacząć go stosować w firmie.",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/czym-jest-content-marketing"
       },
       "cover": "/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp",
@@ -1683,7 +1706,7 @@
         "description": "Pomagamy firmom budować widoczność poprzez wartościowe treści. Od artykułów na blog po kompleksową strategię content marketingu.",
         "btnOne": "Tworzenie treści",
         "btnOneLink": "/uslugi/tworzenie-tresci",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp",
         "overlay": "black"
@@ -1714,23 +1737,13 @@
     {
       "slug": "e-mail-marketing-dla-malych-firm",
       "title": "E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?",
-      "excerpt": "E-mail marketing to jeden z najbardziej opłacalnych kanałów komunikacji z klientami. W tym artykule wyjaśniamy, dlaczego warto go stosować, jakie rodzaje e-maili przynoszą najlepsze efekty i na co zwrócić uwagę przy planowaniu kampanii.",
+      "excerpt": "E-mail marketing to opłacalny kanał komunikacji z klientami. Wyjaśniamy, dlaczego warto go stosować, jakie rodzaje e-maili przynoszą najlepsze efekty i na co zwrócić uwagę przy planowaniu kampanii mailingowej dla małej firmy.",
       "primaryCategory": "Marketing",
-      "category": [
-        "Treści"
-      ],
-      "tags": [
-        "e-mail marketing",
-        "newsletter",
-        "mailing",
-        "marketing dla firm",
-        "komunikacja z klientami",
-        "automatyzacja marketingu",
-        "RODO"
-      ],
+      "category": ["Treści"],
+      "tags": ["e-mail marketing", "newsletter", "mailing", "marketing dla firm", "komunikacja z klientami", "automatyzacja marketingu", "RODO"],
       "seo": {
         "title": "E-mail marketing dla małych firm: poradnik - Arteon",
-        "description": "Dowiedz się, dlaczego e-mail marketing jest skuteczny dla małych firm, jakie rodzaje mailingów przynoszą najlepsze efekty i na co zwrócić uwagę.",
+        "description": "E-mail marketing jest skuteczny dla małych firm dzięki niskim kosztom i bezpośredniemu dostępowi do klientów. Wyjaśniamy, jak zacząć.",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/e-mail-marketing-dla-malych-firm"
       },
       "cover": "/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp",
@@ -1787,7 +1800,7 @@
         "description": "Pomagamy firmom tworzyć treści, które budują relacje z odbiorcami. Od tekstów na stronę po mailingi i materiały marketingowe.",
         "btnOne": "Tworzenie treści",
         "btnOneLink": "/uslugi/tworzenie-tresci",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp",
         "overlay": "black"
@@ -1818,26 +1831,13 @@
     {
       "slug": "co-sprawdzic-przed-uruchomieniem-strony",
       "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej?",
-      "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. W tym artykule dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych.",
+      "excerpt": "Przed publikacją strony warto upewnić się, że wszystko działa poprawnie. Dowiesz się, co sprawdzić w zakresie treści, funkcjonalności, wydajności, SEO i kwestii prawnych przed uruchomieniem nowej witryny internetowej w sieci.",
       "primaryCategory": "Strony",
-      "category": [
-        "SEO"
-      ],
-      "tags": [
-        "uruchomienie strony",
-        "publikacja strony",
-        "pre-launch",
-        "weryfikacja strony",
-        "meta dane",
-        "formularze",
-        "wydajność",
-        "SEO techniczne",
-        "polityka prywatności",
-        "RODO"
-      ],
+      "category": ["SEO"],
+      "tags": ["uruchomienie strony", "publikacja strony", "pre-launch", "weryfikacja strony", "meta dane", "formularze", "wydajność", "SEO techniczne", "polityka prywatności", "RODO"],
       "seo": {
         "title": "Co sprawdzić przed uruchomieniem nowej strony internetowej? - Arteon",
-        "description": "Dowiedz się, co sprawdzić przed publikacją strony: treści, funkcjonalność, wydajność, SEO i kwestie prawne.",
+        "description": "Przed publikacją strony warto sprawdzić treści, funkcjonalność, wydajność, SEO i kwestie prawne. Lista kontrolna.",
         "canonical": "https://www.arteonagency.pl/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony"
       },
       "cover": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
@@ -1894,7 +1894,7 @@
         "description": "Tworzymy strony, które działają sprawnie od pierwszego dnia. Kompleksowa weryfikacja przed publikacją w cenie usługi.",
         "btnOne": "Strony internetowe",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/co-sprawdzic-przed-uruchomieniem-strony/co-sprawdzic-przed-uruchomieniem-strony.webp",
         "overlay": "black"
@@ -1925,26 +1925,13 @@
     {
       "slug": "jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych",
       "title": "Jak przygotować grafikę do postów w mediach społecznościowych?",
-      "excerpt": "Grafika w mediach społecznościowych decyduje o tym, czy ktoś zatrzyma się na poście, czy przewinie dalej. W tym artykule dowiesz się, jak przygotować grafiki, które przyciągają uwagę i budują spójny wizerunek marki.",
+      "excerpt": "Grafika w mediach społecznościowych decyduje, czy ktoś zatrzyma się na poście. Dowiesz się, jak przygotować grafiki, które przyciągają uwagę, budują spójny wizerunek marki i jakie wymiary stosować na różnych platformach.",
       "primaryCategory": "Grafika",
-      "category": [
-        "Grafika",
-        "Marketing"
-      ],
-      "tags": [
-        "media społecznościowe",
-        "grafika",
-        "posty",
-        "Facebook",
-        "Instagram",
-        "LinkedIn",
-        "wymiary grafik",
-        "spójność wizualna",
-        "szablony postów"
-      ],
+      "category": ["Grafika", "Marketing"],
+      "tags": ["media społecznościowe", "grafika", "posty", "Facebook", "Instagram", "LinkedIn", "wymiary grafik", "spójność wizualna", "szablony postów"],
       "seo": {
         "title": "Grafika do postów w mediach społecznościowych - Arteon",
-        "description": "Dowiedz się, jakie wymiary grafik używać na Facebooku, Instagramie i LinkedIn oraz jak zachować spójność wizualną w postach.",
+        "description": "Wymiary grafik na Facebooku, Instagramie i LinkedIn różnią się między platformami. Wyjaśniamy aktualne rozmiary i zasady spójności.",
         "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych"
       },
       "cover": "/assets/blog/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych.webp",
@@ -1996,7 +1983,7 @@
         "description": "Przygotujemy dla Ciebie zestaw profesjonalnych szablonów dopasowanych do charakteru firmy. Spójna komunikacja wizualna bez konieczności projektowania każdego posta od zera.",
         "btnOne": "Szablony postów",
         "btnOneLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych/jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych.webp",
         "overlay": "black"
@@ -2027,24 +2014,13 @@
     {
       "slug": "jak-wybrac-domene-i-hosting-dla-strony-firmowej",
       "title": "Jak wybrać domenę i hosting dla strony firmowej?",
-      "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. W tym artykule dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę i jakich błędów unikać.",
+      "excerpt": "Domena to adres strony w internecie, a hosting to miejsce, gdzie strona jest przechowywana. Dowiesz się, jak wybrać obie te usługi, na co zwrócić uwagę przy zakupie i jakich błędów unikać przy ich wyborze dla swojej firmy.",
       "primaryCategory": "Strony",
-      "category": [
-        "Bezpieczeństwo"
-      ],
-      "tags": [
-        "domena",
-        "hosting",
-        "strona firmowa",
-        "serwer",
-        "adres strony",
-        "rejestracja domeny",
-        "wybór hostingu",
-        "strona internetowa"
-      ],
+      "category": ["Bezpieczeństwo"],
+      "tags": ["domena", "hosting", "strona firmowa", "serwer", "adres strony", "rejestracja domeny", "wybór hostingu", "strona internetowa"],
       "seo": {
         "title": "Jak wybrać domenę i hosting dla strony firmowej? - Arteon",
-        "description": "Dowiedz się, jak wybrać dobrą domenę i hosting dla strony firmowej oraz na co zwrócić uwagę przed zakupem.",
+        "description": "Domena i hosting to podstawa każdej strony firmowej. Wyjaśniamy, jak je wybrać i na co zwrócić uwagę przed zakupem.",
         "canonical": "https://www.arteonagency.pl/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej"
       },
       "cover": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
@@ -2096,7 +2072,7 @@
         "description": "Pomożemy Ci od podstaw — od wyboru domeny i hostingu, przez projekt, po wdrożenie. Wszystko w jednym miejscu.",
         "btnOne": "Strony internetowe",
         "btnOneLink": "/uslugi/strony-internetowe",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-wybrac-domene-i-hosting-dla-strony-firmowej/jak-wybrac-domene-i-hosting-dla-strony-firmowej.webp",
         "overlay": "black"
@@ -2127,25 +2103,13 @@
     {
       "slug": "jak-mierzyc-skutecznosc-strony-internetowej",
       "title": "Jak mierzyć skuteczność strony internetowej? Podstawy analityki",
-      "excerpt": "Strona internetowa to inwestycja, która powinna przynosić efekty. W tym artykule dowiesz się, jakie wskaźniki mierzyć, czym jest Google Analytics i kiedy warto zlecić analizę specjaliście.",
+      "excerpt": "Strona internetowa to inwestycja, która powinna przynosić efekty. Dowiesz się, jakie wskaźniki mierzyć w Google Analytics, jak interpretować dane o ruchu i konwersjach oraz kiedy warto zlecić analizę doświadczonemu specjaliście.",
       "primaryCategory": "SEO",
-      "category": [
-        "Widoczność",
-        "Strony"
-      ],
-      "tags": [
-        "analityka",
-        "Google Analytics",
-        "wskaźniki strony",
-        "ruch na stronie",
-        "konwersje",
-        "współczynnik odrzuceń",
-        "czas na stronie",
-        "mierzenie efektów"
-      ],
+      "category": ["Widoczność", "Strony"],
+      "tags": ["analityka", "Google Analytics", "wskaźniki strony", "ruch na stronie", "konwersje", "współczynnik odrzuceń", "czas na stronie", "mierzenie efektów"],
       "seo": {
         "title": "Jak mierzyć skuteczność strony? Podstawy analityki - Arteon",
-        "description": "Dowiedz się, jakie wskaźniki mierzyć na stronie internetowej, czym jest Google Analytics i kiedy warto zlecić analizę specjaliście.",
+        "description": "Analityka strony pomaga ocenić jej skuteczność. Wyjaśniamy kluczowe wskaźniki, Google Analytics i kiedy zlecić analizę.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej"
       },
       "cover": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
@@ -2193,11 +2157,11 @@
         }
       ],
       "cta": {
-        "title": "Chcesz wiedzieć, czy Twoja strona działa?",
-        "description": "Przeanalizujemy Twoją stronę i pokażemy, co działa dobrze, a co wymaga poprawy. Działamy w oparciu o dane, nie domysły.",
+        "title": "Chcesz wiedzieć, czy strona działa prawidłowo?",
+        "description": "Przeanalizujemy stronę i pokażemy, co działa dobrze, a co wymaga poprawy. Działamy w oparciu o dane, nie domysły.",
         "btnOne": "Audyt SEO",
         "btnOneLink": "/uslugi/marketing/audyt-seo",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-mierzyc-skutecznosc-strony-internetowej/jak-mierzyc-skutecznosc-strony-internetowej.webp",
         "overlay": "black"
@@ -2228,24 +2192,13 @@
     {
       "slug": "jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma",
       "title": "Jak założyć i zoptymalizować profil Google Moja Firma?",
-      "excerpt": "Google Moja Firma (Google Business Profile) to bezpłatne narzędzie, które pozwala lokalnym firmom wyświetlać się w Mapach Google i wynikach wyszukiwania. W tym artykule dowiesz się, jak założyć profil, jakie informacje uzupełnić i jak zdobywać opinie klientów.",
+      "excerpt": "Google Moja Firma pozwala lokalnym firmom wyświetlać się w Mapach Google i wynikach wyszukiwania. Dowiesz się, jak założyć profil, jakie informacje uzupełnić i jak skutecznie zdobywać pozytywne opinie od swoich klientów.",
       "primaryCategory": "SEO",
-      "category": [
-        "Widoczność"
-      ],
-      "tags": [
-        "Google Moja Firma",
-        "Google Business Profile",
-        "lokalne SEO",
-        "Mapy Google",
-        "opinie klientów",
-        "wizytówka Google",
-        "pozycjonowanie lokalne",
-        "widoczność w Google"
-      ],
+      "category": ["Widoczność"],
+      "tags": ["Google Moja Firma", "Google Business Profile", "lokalne SEO", "Mapy Google", "opinie klientów", "wizytówka Google", "pozycjonowanie lokalne", "widoczność w Google"],
       "seo": {
         "title": "Jak założyć i zoptymalizować profil Google Moja Firma? - Arteon",
-        "description": "Dowiedz się, jak założyć profil Google Moja Firma, jakie informacje uzupełnić i jak zdobywać opinie, żeby wyróżnić się w mapach Google.",
+        "description": "Profil Google Moja Firma pomaga wyróżnić się w mapach Google. Wyjaśniamy, jak go założyć, uzupełnić i zdobywać opinie.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma"
       },
       "cover": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
@@ -2288,7 +2241,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Google Moja Firma to podstawowe narzędzie dla każdej firmy, która obsługuje klientów lokalnie. Dobrze uzupełniony profil zwiększa widoczność w Mapach Google i wynikach wyszukiwania, buduje zaufanie poprzez opinie i ułatwia klientom kontakt.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Profil jest bezpłatny</strong> — założenie i prowadzenie nie kosztuje</li><li><strong>Weryfikacja wymaga czasu</strong> — od kilku minut do kilku dni, zależnie od metody</li><li><strong>Uzupełnij wszystko</strong> — kategorie, godziny, opis, zdjęcia, usługi i atrybuty</li><li><strong>Opinie są kluczowe</strong> — proś o nie i odpowiadaj na wszystkie</li><li><strong>Aktualizuj regularnie</strong> — nieaktualne dane odstraszają klientów</li></ul><br/><p>Profil Google Moja Firma to jeden z elementów <a class='inline-link' href='/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty'>pozycjonowania lokalnego</a>. Jeśli chcesz, żeby Twoja firma była lepiej widoczna w Google, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>. Zajmujemy się <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniem stron</a> i pomagamy firmom docierać do klientów w ich okolicy.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie</h2><p>Google Moja Firma to podstawowe narzędzie dla każdej firmy, która obsługuje klientów lokalnie. Dobrze uzupełniony profil zwiększa widoczność w Mapach Google i wynikach wyszukiwania, buduje zaufanie poprzez opinie i ułatwia klientom kontakt.</p><br/><p><strong>Co warto zapamiętać:</strong></p><br/><ul class='list-disc ml-5'><li><strong>Profil jest bezpłatny</strong> — założenie i prowadzenie nie kosztuje</li><li><strong>Weryfikacja wymaga czasu</strong> — od kilku minut do kilku dni, zależnie od metody</li><li><strong>Uzupełnij wszystko</strong> — kategorie, godziny, opis, zdjęcia, usługi i atrybuty</li><li><strong>Opinie są kluczowe</strong> — proś o nie i odpowiadaj na wszystkie</li><li><strong>Aktualizuj regularnie</strong> — nieaktualne dane odstraszają klientów</li></ul><br/><p>Profil Google Moja Firma to jeden z elementów <a class='inline-link' href='/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony'>pozycjonowania lokalnego</a>. Jeśli chcesz, żeby Twoja firma była lepiej widoczna w Google, <a class='inline-link' href='/kontakt'>skontaktuj się z nami</a>. Zajmujemy się <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniem stron</a> i pomagamy firmom docierać do klientów w ich okolicy.</p>",
           "breakAfter": true
         }
       ],
@@ -2297,7 +2250,7 @@
         "description": "Profil Google Moja Firma to dopiero początek. Zajmujemy się pozycjonowaniem lokalnym i pomagamy firmom docierać do klientów w ich okolicy.",
         "btnOne": "Pozycjonowanie stron",
         "btnOneLink": "/uslugi/marketing/pozycjonowanie-stron",
-        "btnTwo": "Skontaktuj się",
+        "btnTwo": "Skontaktuj się z nami",
         "btnTwoLink": "/kontakt",
         "backgroundImage": "/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp",
         "overlay": "black"
@@ -2328,25 +2281,13 @@
     {
       "slug": "czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie",
       "title": "Czym jest responsywność strony i dlaczego ma znaczenie?",
-      "excerpt": "Responsywność strony to jej zdolność do dopasowania się do różnych rozmiarów ekranów. W tym artykule dowiesz się, czym jest responsywność, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy Twoja strona jest responsywna.",
+      "excerpt": "Responsywność strony to jej zdolność do dopasowania się do różnych rozmiarów ekranów. Wyjaśniamy, czym jest responsywność, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy dana strona lub witryna jest responsywna.",
       "primaryCategory": "UX",
-      "category": [
-        "Strony",
-        "SEO"
-      ],
-      "tags": [
-        "responsywność",
-        "RWD",
-        "mobile-first",
-        "UX",
-        "strona mobilna",
-        "SEO",
-        "Google",
-        "strona internetowa"
-      ],
+      "category": ["Strony", "SEO"],
+      "tags": ["responsywność", "RWD", "mobile-first", "UX", "strona mobilna", "SEO", "Google", "strona internetowa"],
       "seo": {
         "title": "Czym jest responsywność strony i dlaczego ma znaczenie? - Arteon",
-        "description": "Dowiedz się, czym jest responsywność strony, jak wpływa na użytkowników i SEO oraz jak sprawdzić, czy Twoja strona jest responsywna.",
+        "description": "Responsywność strony wpływa na użytkowników i SEO. Wyjaśniamy, czym jest i jak sprawdzić, czy strona dostosowuje się do ekranów.",
         "canonical": "https://www.arteonagency.pl/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie"
       },
       "cover": "/assets/blog/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie.webp",
@@ -2436,7 +2377,7 @@
         },
         {
           "question": "Co to są Core Web Vitals i jak wpływają na responsywność?",
-          "answer": "Core Web Vitals to wskaźniki wydajności strony (szybkość ładowania, responsywność, stabilność wizualna), które Google uwzględnia w rankingu. Strony nieresponsywne często mają gorsze wyniki. Szczegółowe omówienie znajdziesz w artykule: https://www.arteonagency.pl/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google"
+          "answer": "Core Web Vitals to wskaźniki wydajności strony (szybkość ładowania, responsywność, stabilność wizualna), które Google uwzględnia w rankingu. Strony nieresponsywne często mają gorsze wyniki. Szczegółowe omówienie znajdziesz w artykule: https://www.arteonagency.pl/edukacja/seo/szybkosc-ladowania-strony-a-pozycja-w-google"
         },
         {
           "question": "Jak długo trwa przerobienie strony na responsywną?",
@@ -2447,25 +2388,13 @@
     {
       "slug": "czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje",
       "title": "Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?",
-      "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. W tym artykule dowiesz się, czym jest SSL, jak wpływa na zaufanie użytkowników i SEO oraz jak sprawdzić, czy Twoja strona go ma.",
+      "excerpt": "Certyfikat SSL to podstawa bezpieczeństwa każdej strony internetowej. Dowiesz się, czym jest SSL, jak działa szyfrowanie, jak wpływa na zaufanie użytkowników i SEO oraz jakie są rodzaje certyfikatów dostępnych na rynku w Polsce.",
       "primaryCategory": "Bezpieczeństwo",
-      "category": [
-        "SEO",
-        "Strony"
-      ],
-      "tags": [
-        "SSL",
-        "certyfikat SSL",
-        "HTTPS",
-        "bezpieczeństwo strony",
-        "szyfrowanie",
-        "SEO",
-        "zaufanie użytkowników",
-        "strona internetowa"
-      ],
+      "category": ["SEO", "Strony"],
+      "tags": ["SSL", "certyfikat SSL", "HTTPS", "bezpieczeństwo strony", "szyfrowanie", "SEO", "zaufanie użytkowników", "strona internetowa"],
       "seo": {
         "title": "Certyfikat SSL: co to jest i dlaczego jest ważny? - Arteon",
-        "description": "Dowiedz się, czym jest certyfikat SSL, jak wpływa na bezpieczeństwo i SEO oraz jak sprawdzić, czy Twoja strona go ma.",
+        "description": "Certyfikat SSL szyfruje połączenie i wpływa na bezpieczeństwo oraz SEO. Wyjaśniamy, jak działa i jak sprawdzić jego obecność.",
         "canonical": "https://www.arteonagency.pl/edukacja/bezpieczenstwo/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje"
       },
       "cover": "/assets/blog/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje.webp",
@@ -2553,26 +2482,13 @@
     {
       "slug": "meta-title-i-description-jak-je-napisac",
       "title": "Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?",
-      "excerpt": "Meta title i description to krótkie teksty, które pojawiają się w wynikach wyszukiwania Google. W tym artykule dowiesz się, czym są, dlaczego mają znaczenie i jak je napisać, żeby zwiększyć klikalność.",
+      "excerpt": "Meta title i description to krótkie teksty w wynikach wyszukiwania Google. Dowiesz się, czym są, dlaczego mają znaczenie dla SEO, jak je napisać i jakich błędów unikać, żeby zwiększyć klikalność strony w wynikach wyszukiwarki.",
       "primaryCategory": "SEO",
-      "category": [
-        "Treści",
-        "Strony",
-        "Widoczność"
-      ],
-      "tags": [
-        "meta title",
-        "meta description",
-        "SEO",
-        "wyniki wyszukiwania",
-        "Google",
-        "klikalność",
-        "CTR",
-        "optymalizacja"
-      ],
+      "category": ["Treści", "Strony", "Widoczność"],
+      "tags": ["meta title", "meta description", "SEO", "wyniki wyszukiwania", "Google", "klikalność", "CTR", "optymalizacja"],
       "seo": {
         "title": "Meta title i description: jak je dobrze napisać? - Arteon",
-        "description": "Dowiedz się, czym są meta title i description, dlaczego mają znaczenie dla SEO i jak je napisać, żeby zwiększyć klikalność w Google.",
+        "description": "Meta title i description wpływają na SEO i klikalność w Google. Wyjaśniamy, jak je napisać i jakich błędów unikać.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/meta-title-i-description-jak-je-napisac"
       },
       "cover": "/assets/blog/meta-title-i-description-jak-je-napisac/meta-title-i-description-jak-je-napisac.webp",
@@ -2665,25 +2581,13 @@
     {
       "slug": "materialy-drukowane-dla-firmy-ktore-zamowic",
       "title": "Materiały drukowane dla firmy: które zamówić na start?",
-      "excerpt": "Wizytówki, ulotki, katalogi, teczki — które materiały drukowane przydadzą się Twojej firmie? W tym artykule znajdziesz konkretne wskazówki, od czego zacząć i jak zaplanować spójny zestaw.",
+      "excerpt": "Wizytówki, ulotki, katalogi, teczki — które materiały drukowane przydadzą się firmie? Znajdziesz tu wskazówki, od czego zacząć, jak zaplanować spójny zestaw i jak jakość papieru wpływa na wizerunek Twojej marki w praktyce.",
       "primaryCategory": "Druk",
-      "category": [
-        "Branding",
-        "Grafika"
-      ],
-      "tags": [
-        "materiały drukowane",
-        "wizytówki",
-        "ulotki",
-        "katalogi",
-        "teczki ofertowe",
-        "papier firmowy",
-        "identyfikacja wizualna",
-        "branding"
-      ],
+      "category": ["Branding", "Grafika"],
+      "tags": ["materiały drukowane", "wizytówki", "ulotki", "katalogi", "teczki ofertowe", "papier firmowy", "identyfikacja wizualna", "branding"],
       "seo": {
         "title": "Materiały drukowane dla firmy: które zamówić na start? - Arteon",
-        "description": "Wizytówki, ulotki, katalogi, teczki — dowiedz się, które materiały drukowane przydadzą się Twojej firmie i jak je zaplanować.",
+        "description": "Wizytówki, ulotki, katalogi, teczki — wyjaśniamy, które materiały drukowane są potrzebne na start firmy i jak je zaplanować.",
         "canonical": "https://www.arteonagency.pl/edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic"
       },
       "cover": "/assets/blog/materialy-drukowane-dla-firmy-ktore-zamowic/materialy-drukowane-dla-firmy-ktore-zamowic.webp",
@@ -2781,25 +2685,13 @@
     {
       "slug": "kody-qr-w-materialach-reklamowych",
       "title": "Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?",
-      "excerpt": "Kody QR łączą materiały drukowane z treściami online. W tym artykule znajdziesz konkretne wskazówki: gdzie kod QR działa najlepiej, czego unikać i jak go wygenerować.",
+      "excerpt": "Kody QR łączą materiały drukowane z treściami online. Znajdziesz tu konkretne wskazówki: gdzie kod QR działa najlepiej, czego unikać przy projektowaniu, jak wygenerować kod i jak testować go przed drukiem reklamowych materiałów.",
       "primaryCategory": "Grafika",
-      "category": [
-        "Marketing",
-        "Druk"
-      ],
-      "tags": [
-        "kod QR",
-        "QR code",
-        "materiały reklamowe",
-        "ulotki",
-        "wizytówki",
-        "plakaty",
-        "marketing offline",
-        "druk"
-      ],
+      "category": ["Marketing", "Druk"],
+      "tags": ["kod QR", "QR code", "materiały reklamowe", "ulotki", "wizytówki", "plakaty", "marketing offline", "druk"],
       "seo": {
         "title": "Kody QR w materiałach reklamowych: poradnik - Arteon",
-        "description": "Dowiedz się, kiedy kod QR na ulotce lub wizytówce ma sens, jakich błędów unikać i jak stworzyć QR w kilka sekund.",
+        "description": "Kod QR na ulotce lub wizytówce może ułatwić kontakt. Wyjaśniamy, kiedy ma sens, jakich błędów unikać i jak go stworzyć.",
         "canonical": "https://www.arteonagency.pl/edukacja/grafika/kody-qr-w-materialach-reklamowych"
       },
       "cover": "/assets/blog/kody-qr-w-materialach-reklamowych/kody-qr-w-materialach-reklamowych.webp",
@@ -2952,24 +2844,10 @@
     {
       "slug": "jak-dobrac-kolory-do-strony-internetowej",
       "title": "Jak dobrać kolory do strony internetowej lub sklepu?",
-      "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Konkretne kroki, dane z badań i narzędzia, które pomogą Ci wybrać paletę kolorów wspierającą cele biznesowe.",
+      "excerpt": "Praktyczny przewodnik po doborze kolorów na stronę lub sklep internetowy. Znajdziesz tu konkretne kroki, dane z badań i narzędzia online, które pomogą wybrać odpowiednią paletę kolorów wspierającą cele biznesowe Twojej firmy.",
       "primaryCategory": "Grafika",
-      "category": [
-        "Branding",
-        "UX",
-        "Strony"
-      ],
-      "tags": [
-        "kolory na stronie",
-        "paleta kolorów",
-        "koło barw",
-        "zasada 60-30-10",
-        "kontrast kolorów",
-        "identyfikacja wizualna",
-        "branding",
-        "UX design",
-        "konwersja"
-      ],
+      "category": ["Branding", "UX", "Strony"],
+      "tags": ["kolory na stronie", "paleta kolorów", "koło barw", "zasada 60-30-10", "kontrast kolorów", "identyfikacja wizualna", "branding", "UX design", "konwersja"],
       "seo": {
         "title": "Jak dobrać kolory do strony internetowej lub sklepu? - Arteon",
         "description": "Praktyczny przewodnik po doborze kolorów na stronę. Konkretne kroki, dane z badań i narzędzia do wyboru palety kolorów.",
@@ -3005,13 +2883,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#1E3A5F",
-            "#2D4A6F",
-            "#3C5A7F",
-            "#4B6A8F",
-            "#5A7A9F"
-          ]
+          "colors": ["#1E3A5F", "#2D4A6F", "#3C5A7F", "#4B6A8F", "#5A7A9F"]
         },
         {
           "type": "richtext",
@@ -3020,11 +2892,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#2563EB",
-            "#0891B2",
-            "#10B981"
-          ]
+          "colors": ["#2563EB", "#0891B2", "#10B981"]
         },
         {
           "type": "richtext",
@@ -3033,10 +2901,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#2563EB",
-            "#F97316"
-          ]
+          "colors": ["#2563EB", "#F97316"]
         },
         {
           "type": "richtext",
@@ -3045,11 +2910,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#EF4444",
-            "#EAB308",
-            "#2563EB"
-          ]
+          "colors": ["#EF4444", "#EAB308", "#2563EB"]
         },
         {
           "type": "richtext",
@@ -3063,11 +2924,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#FFFFFF",
-            "#F5F5F5",
-            "#FF6B35"
-          ]
+          "colors": ["#FFFFFF", "#F5F5F5", "#FF6B35"]
         },
         {
           "type": "richtext",
@@ -3136,13 +2993,9 @@
     {
       "slug": "jak-przygotowac-sklep-internetowy-do-pozycjonowania",
       "title": "Jak przygotować sklep internetowy do pozycjonowania?",
-      "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Zobacz, jak przygotować strukturę, treści i techniczne podstawy sklepu, aby działania SEO miały realne szanse przełożyć się na widoczność i sprzedaż.",
+      "excerpt": "Pozycjonowanie sklepu internetowego wymaga innego podejścia niż SEO strony firmowej. Zobacz, jak przygotować strukturę, treści i techniczne podstawy sklepu, żeby działania SEO przełożyły się na lepszą widoczność w Google.",
       "primaryCategory": "SEO",
-      "category": [
-        "Sklepy",
-        "Widoczność",
-        "Treści"
-      ],
+      "category": ["Sklepy", "Widoczność", "Treści"],
       "tags": [
         "pozycjonowanie sklepu",
         "seo e-commerce",
@@ -3156,7 +3009,7 @@
       ],
       "seo": {
         "title": "Jak przygotować sklep internetowy do pozycjonowania? - Arteon",
-        "description": "Dowiedz się, jak przygotować sklep online do SEO: struktura kategorii, opisy produktów, filtry, dane strukturalne, szybkość i linkowanie wewnętrzne.",
+        "description": "Przygotowanie sklepu do SEO obejmuje strukturę kategorii, opisy produktów, filtry i dane strukturalne. Wyjaśniamy kluczowe elementy.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-przygotowac-sklep-internetowy-do-pozycjonowania"
       },
       "cover": "/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp",
@@ -3225,7 +3078,7 @@
       ],
       "cta": {
         "title": "Przygotuj sklep do pozycjonowania",
-        "description": "Sprawdź, czy Twój sklep ma solidne fundamenty pod SEO. Pomożemy uporządkować strukturę, treści i technikalia, aby pozycjonowanie miało realny sens.",
+        "description": "Sprawdź, czy sklep ma solidne fundamenty pod SEO. Pomagamy uporządkować strukturę, treści i technikalia, aby pozycjonowanie miało realny sens.",
         "btnOne": "Sklepy internetowe",
         "btnOneLink": "/uslugi/sklepy-internetowe",
         "btnTwo": "Pozycjonowanie stron",
@@ -3259,25 +3112,13 @@
     {
       "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
       "title": "Jak przygotować profesjonalną stopkę mailową?",
-      "excerpt": "Stopka mailowa to Twoja wizytówka w każdym e-mailu. Dowiedz się, co powinna zawierać, jak uniknąć typowych błędów i jak stworzyć ją w kilka minut za pomocą naszego darmowego narzędzia.",
+      "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Wyjaśniamy, co powinna zawierać, jakich błędów unikać i jak stworzyć podpis za pomocą generatora.",
       "primaryCategory": "Branding",
-      "category": [
-        "Grafika"
-      ],
-      "tags": [
-        "stopka mailowa",
-        "podpis e-mail",
-        "email signature",
-        "branding",
-        "identyfikacja wizualna",
-        "gmail",
-        "outlook",
-        "profesjonalny e-mail",
-        "komunikacja firmowa"
-      ],
+      "category": ["Grafika"],
+      "tags": ["stopka mailowa", "podpis e-mail", "email signature", "branding", "identyfikacja wizualna", "gmail", "outlook", "profesjonalny e-mail", "komunikacja firmowa"],
       "seo": {
         "title": "Jak przygotować profesjonalną stopkę mailową? - Arteon",
-        "description": "Dowiedz się, co powinna zawierać firmowa stopka e-mail, jak uniknąć typowych błędów i jak stworzyć podpis w kilka minut. Prosty przewodnik krok po kroku.",
+        "description": "Firmowa stopka e-mail powinna zawierać dane kontaktowe i wyglądać profesjonalnie. Wyjaśniamy kluczowe elementy i typowe błędy.",
         "canonical": "https://www.arteonagency.pl/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa"
       },
       "cover": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
@@ -3379,27 +3220,13 @@
     {
       "slug": "favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie",
       "title": "Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?",
-      "excerpt": "Favicon to mała ikonka przy nazwie Twojej strony w przeglądarce. Dowiedz się, jakie pliki są potrzebne, skąd biorą się problemy i jak przygotować cały zestaw w kilka minut.",
+      "excerpt": "Favicon to mała ikonka przy nazwie strony w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon za pomocą generatora.",
       "primaryCategory": "Zdjęcia",
-      "category": [
-        "Grafika",
-        "Strony",
-        "SEO"
-      ],
-      "tags": [
-        "favicon",
-        "ikona strony",
-        "apple-touch-icon",
-        "pwa",
-        "lighthouse",
-        "manifest.json",
-        "przeglądarki",
-        "seo",
-        "web Grafika"
-      ],
+      "category": ["Grafika", "Strony", "SEO"],
+      "tags": ["favicon", "ikona strony", "apple-touch-icon", "pwa", "lighthouse", "manifest.json", "przeglądarki", "seo", "web Grafika"],
       "seo": {
         "title": "Favicon: co to jest i jak ją przygotować? - Arteon",
-        "description": "Dowiedz się, czym jest favicon, jakie pliki są potrzebne i jak przygotować kompletny zestaw ikon dla strony internetowej.",
+        "description": "Favicon to ikona strony wyświetlana w przeglądarce. Wyjaśniamy, jakie pliki są potrzebne i jak przygotować zestaw ikon.",
         "canonical": "https://www.arteonagency.pl/edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie"
       },
       "cover": "/assets/blog/favicon-i-ikony-strony-co-przygotowac/favicon-i-ikony-strony-co-przygotowac.webp",
@@ -3490,7 +3317,7 @@
         },
         {
           "question": "Co to jest site.webmanifest?",
-          "answer": "To plik konfiguracyjny w formacie JSON, który mówi przeglądarce o Twojej stronie — jakie ikony użyć, jaki jest kolor motywu, jak nazywa się aplikacja. Jest potrzebny głównie dla PWA (Progressive Web Apps) i ikon na Androidzie."
+          "answer": "To plik konfiguracyjny w formacie JSON, który mówi przeglądarce o danej stronie — jakie ikony użyć, jaki jest kolor motywu, jak nazywa się aplikacja. Jest potrzebny głównie dla PWA (Progressive Web Apps) i ikon na Androidzie."
         },
         {
           "question": "Czy generator Arteon jest darmowy?",
@@ -3513,28 +3340,13 @@
     {
       "slug": "faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony",
       "title": "FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?",
-      "excerpt": "Dobrze zaplanowane FAQ skraca drogę do decyzji, porządkuje informacje i pomaga przechwytywać ruch z długich zapytań. Zobacz, skąd brać pytania, jak je grupować, jak pisać odpowiedzi oraz kiedy warto stosować FAQ schema.",
+      "excerpt": "Dobrze zaplanowane FAQ skraca drogę do decyzji i pomaga przechwytywać ruch z długich zapytań. Zobacz, skąd brać pytania, jak je grupować, jak pisać odpowiedzi oraz kiedy stosować FAQ schema i linki wewnętrzne na stronie.",
       "primaryCategory": "SEO",
-      "category": [
-        "Treści",
-        "Strony",
-        "Widoczność"
-      ],
-      "tags": [
-        "faq",
-        "faq seo",
-        "pytania i odpowiedzi",
-        "schema faq",
-        "linkowanie wewnętrzne",
-        "long tail",
-        "copywriting",
-        "google search console",
-        "struktura treści",
-        "konwersja"
-      ],
+      "category": ["Treści", "Strony", "Widoczność"],
+      "tags": ["faq", "faq seo", "pytania i odpowiedzi", "schema faq", "linkowanie wewnętrzne", "long tail", "copywriting", "google search console", "struktura treści", "konwersja"],
       "seo": {
         "title": "FAQ na stronie: jak pisać pytania wspierające SEO? - Arteon",
-        "description": "Dowiedz się, jak zaplanować FAQ na stronie: skąd brać pytania, jak je grupować, jak pisać odpowiedzi i kiedy używać FAQ schema, aby wspierać SEO i konwersję.",
+        "description": "FAQ na stronie wspiera SEO i konwersję. Wyjaśniamy, skąd brać pytania, jak pisać odpowiedzi i kiedy używać FAQ schema.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony"
       },
       "cover": "/assets/blog/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony/faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony.webp",
@@ -3640,27 +3452,13 @@
     {
       "slug": "jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow",
       "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów?",
-      "excerpt": "Kolor wpływa na to, czy klient zaufa marce, jak długo zostanie na stronie i czy zdecyduje się na zakup. W tym artykule wyjaśniamy mechanizmy psychologiczne stojące za percepcją kolorów, pokazujemy wyniki testów A/B z konkretnymi liczbami oraz omawiamy, jak różne branże wykorzystują kolorystykę do budowania wizerunku.",
+      "excerpt": "Kolor wpływa na to, czy klient zaufa marce i zdecyduje się na zakup. Wyjaśniamy mechanizmy psychologiczne percepcji kolorów, pokazujemy wyniki testów A/B oraz jak różne branże wykorzystują kolorystykę w codziennej praktyce.",
       "primaryCategory": "Grafika",
-      "category": [
-        "Psychologia",
-        "Branding"
-      ],
-      "tags": [
-        "psychologia kolorów",
-        "kolorystyka",
-        "branding",
-        "konwersja",
-        "UX",
-        "identyfikacja wizualna",
-        "testy A/B",
-        "e-commerce",
-        "CTA",
-        "WCAG"
-      ],
+      "category": ["Psychologia", "Branding"],
+      "tags": ["psychologia kolorów", "kolorystyka", "branding", "konwersja", "UX", "identyfikacja wizualna", "testy A/B", "e-commerce", "CTA", "WCAG"],
       "seo": {
         "title": "Jak kolorystyka wpływa na decyzje zakupowe klientów? - Arteon",
-        "description": "Dowiedz się, jak kolory wpływają na decyzje zakupowe klientów. Wyjaśniamy mechanizmy psychologiczne, pokazujemy wyniki testów A/B i przykłady z różnych branż.",
+        "description": "Kolory wpływają na decyzje zakupowe klientów. Wyjaśniamy mechanizmy psychologiczne i pokazujemy przykłady z różnych branż.",
         "canonical": "https://www.arteonagency.pl/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow"
       },
       "cover": "/assets/blog/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow.webp",
@@ -3741,29 +3539,16 @@
       }
     },
     {
-      "slug": "ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty",
+      "slug": "ile-czasu-trwa-pozycjonowanie-strony",
       "title": "Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?",
-      "excerpt": "SEO nie działa natychmiast — ale dlaczego? W tym artykule wyjaśniamy mechanizmy stojące za czasem potrzebnym na efekty pozycjonowania: jak Google indeksuje strony, dlaczego nowe domeny potrzebują więcej czasu, i co realnie wpływa na tempo wyników w różnych branżach.",
+      "excerpt": "SEO nie działa natychmiast — ale dlaczego? Wyjaśniamy mechanizmy za czasem potrzebnym na efekty: jak Google indeksuje strony, dlaczego nowe domeny potrzebują więcej czasu i co wpływa na tempo wyników w różnych branżach w Polsce.",
       "primaryCategory": "SEO",
-      "category": [
-        "Widoczność",
-        "Strony"
-      ],
-      "tags": [
-        "pozycjonowanie",
-        "SEO",
-        "czas SEO",
-        "efekty SEO",
-        "Google",
-        "indeksowanie",
-        "autorytet domeny",
-        "lokalne SEO",
-        "e-commerce SEO"
-      ],
+      "category": ["Widoczność", "Strony"],
+      "tags": ["pozycjonowanie", "SEO", "czas SEO", "efekty SEO", "Google", "indeksowanie", "autorytet domeny", "lokalne SEO", "e-commerce SEO"],
       "seo": {
         "title": "Ile czasu trwa pozycjonowanie strony firmowej? Mechanizmy i realne terminy - Arteon",
         "description": "Wyjaśniamy, dlaczego SEO wymaga czasu: mechanizmy indeksowania Google, budowanie autorytetu domeny i realne terminy dla różnych branż.",
-        "canonical": "https://www.arteonagency.pl/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty"
+        "canonical": "https://www.arteonagency.pl/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony"
       },
       "cover": "/assets/blog/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty.webp",
       "author": {
@@ -3858,21 +3643,10 @@
     {
       "slug": "czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google",
       "title": "Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?",
-      "excerpt": "Blog na stronie lokalnej firmy to nie kwestia mody — to mechanizm, który wpływa na to, jak Google ocenia wiarygodność firmy i jak często pokazuje ją w wynikach wyszukiwania. W tym artykule wyjaśniamy, dlaczego treści edukacyjne wzmacniają widoczność lokalnego biznesu, jak blog wpływa na pozycję w Google Maps i kiedy inwestycja w content ma sens.",
+      "excerpt": "Blog na stronie lokalnej firmy wpływa na to, jak Google ocenia wiarygodność firmy. Wyjaśniamy, dlaczego treści edukacyjne wzmacniają widoczność, jak blog wpływa na pozycję w Google Maps i kiedy taka inwestycja się opłaca.",
       "primaryCategory": "SEO",
-      "category": [
-        "Treści",
-        "Strony"
-      ],
-      "tags": [
-        "blog firmowy",
-        "lokalne SEO",
-        "content marketing",
-        "Google Maps",
-        "widoczność w Google",
-        "małe firmy",
-        "treści na stronę"
-      ],
+      "category": ["Treści", "Strony"],
+      "tags": ["blog firmowy", "lokalne SEO", "content marketing", "Google Maps", "widoczność w Google", "małe firmy", "treści na stronę"],
       "seo": {
         "title": "Blog na stronie lokalnej firmy: jak wpływa na widoczność w Google? - Arteon",
         "description": "Wyjaśniamy mechanizmy: jak blog wpływa na widoczność lokalnej firmy w Google i Google Maps, i kiedy inwestycja w treści ma sens.",
@@ -3937,7 +3711,7 @@
         },
         {
           "question": "Czy warto prowadzić blog, jeśli konkurencja tego nie robi?",
-          "answer": "Tak — to idealna sytuacja. Jeśli konkurencyjne firmy nie mają bloga, łatwiej zbudować przewagę w wynikach wyszukiwania. Google pokazuje strony, które najlepiej odpowiadają na zapytania użytkowników. Jeśli jako jedyny w okolicy odpowiadasz na pytania klientów, Google będzie preferował Twoją stronę."
+          "answer": "Tak — to idealna sytuacja. Jeśli konkurencyjne firmy nie mają bloga, łatwiej zbudować przewagę w wynikach wyszukiwania. Google pokazuje strony, które najlepiej odpowiadają na zapytania użytkowników. Jeśli jako jedyny w okolicy odpowiadasz na pytania klientów, Google będzie preferował taką stronę."
         },
         {
           "question": "Czy mogę prowadzić blog sam, czy potrzebuję agencji?",
@@ -3956,15 +3730,12 @@
     {
       "slug": "jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp",
       "title": "Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP",
-      "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Jeśli nie zadbasz o ich format, rozmiar i kompresję, Twoja strona będzie wczytywać się wolno, wynik w PageSpeed będzie niższy, a użytkownik zamknie Twoją stronę nie sprawdzając oferty.",
+      "excerpt": "Zdjęcia i grafiki potrafią ważyć więcej niż cała reszta strony razem wzięta. Wyjaśniamy, jak wybrać format (JPEG, PNG, WebP, AVIF), dobrać rozmiar i kompresję, aby strona ładowała się szybko i wyglądała dobrze w wynikach Google.",
       "primaryCategory": "Zdjęcia",
-      "category": [
-        "SEO",
-        "Strony"
-      ],
+      "category": ["SEO", "Strony"],
       "seo": {
         "title": "Optymalizacja zdjęć na stronę WWW: formaty i WebP - Arteon",
-        "description": "Dowiedz się, jak zoptymalizować zdjęcia na stronę WWW, aby strona była szybsza, lżejsza i lepiej oceniana przez Google",
+        "description": "Optymalizacja zdjęć przyspiesza stronę i poprawia ocenę Google. Wyjaśniamy formaty, rozmiary i konwersję do WebP.",
         "canonical": "https://www.arteonagency.pl/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp"
       },
       "cover": "/assets/blog/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp.webp",
@@ -4039,7 +3810,7 @@
       ],
       "cta": {
         "title": "Przyspiesz stronę bez utraty jakości zdjęć",
-        "description": "Jeśli Twoja strona działa wolno, w większości przypadków zdjęcia są głównym powodem. Pokażemy Ci, jak je zoptymalizować i przygotować pod SEO oraz szybkość.",
+        "description": "Jeśli strona działa wolno, w większości przypadków zdjęcia są głównym powodem. Pomagamy je zoptymalizować i przygotować pod SEO oraz szybkość.",
         "btnOne": "Skontaktuj się",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź nasze bezpłatne narzędzia do optymalizacji",
@@ -4062,7 +3833,7 @@
         },
         {
           "question": "Czy samo zmniejszenie wagi zdjęć wystarczy, żeby poprawić Core Web Vitals?",
-          "answer": "Zmniejszenie wagi zdjęć to ważny krok, ale nie jedyny. Poza wagą liczą się też wymiary (żeby strona nie skakała), sposób ładowania (lazy loading) oraz szybkość ładowania największego elementu. Więcej o Core Web Vitals: https://www.arteonagency.pl/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google"
+          "answer": "Zmniejszenie wagi zdjęć to ważny krok, ale nie jedyny. Poza wagą liczą się też wymiary (żeby strona nie skakała), sposób ładowania (lazy loading) oraz szybkość ładowania największego elementu. Więcej o Core Web Vitals: https://www.arteonagency.pl/edukacja/seo/szybkosc-ladowania-strony-a-pozycja-w-google"
         },
         {
           "question": "Co to jest srcset i czy muszę go używać?",
@@ -4073,12 +3844,9 @@
     {
       "slug": "jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google",
       "title": "Jak pisać treści na stronie internetowej, aby być wyżej w wyszukiwarce Google?",
-      "excerpt": "Dowiedz się, jak pisać treści na stronę internetową, które przyciągają klientów i zajmują wyższe pozycje w Google. Praktyczne zasady SEO i przykłady.",
+      "excerpt": "Treści na stronie wpływają na pozycję w Google. Wyjaśniamy zasady SEO, strukturę nagłówków, intencję użytkownika i pokazujemy przykłady z różnych branż.",
       "primaryCategory": "SEO",
-      "category": [
-        "Treści",
-        "Strony"
-      ],
+      "category": ["Treści", "Strony"],
       "tags": [
         "seo copywriting",
         "treści seo",
@@ -4093,7 +3861,7 @@
       ],
       "seo": {
         "title": "Jak pisać treści na stronę, aby być wyżej w Google? - Arteon",
-        "description": "Dowiedz się, jak pisać treści na stronę internetową, które przyciągają klientów i zajmują wyższe pozycje w Google. Praktyczne zasady SEO i przykłady.",
+        "description": "Treści na stronie wpływają na pozycję w Google. Wyjaśniamy zasady SEO, strukturę nagłówków i intencję użytkownika z przykładami.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google"
       },
       "cover": "/assets/blog/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google.webp",
@@ -4129,7 +3897,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak budować strukturę artykułu, żeby Google lepiej zrozumiał zawartość strony?</h2><p>Robot Google analizuje układ nagłówków, podział na akapity i linkowanie wewnętrzne, żeby zrozumieć hierarchię przedstawianych tematów.</p><br/><p><strong>Jak wygląda skuteczna struktura treści:</strong></p><ul class='list-disc ml-5'><li><strong>H1</strong> - główny temat artykułu (np. „Jak pisać treści na stronie internetowej aby być wyżej w Google”).</li><li><strong>H2</strong> - podtematy związane z konkretnymi pytaniami użytkownika (np. „Jak dopasować treść do intencji użytkownika”).</li><li><strong>H3</strong> - dodatkowe rozwinięcia lub przykłady (np. „Jak Google czyta dłuższe teksty”).</li></ul><br/><p>Każdy nagłówek powinien być <em>opisowy</em>, zawierać naturalne frazy i tworzyć strukturę, którą Google może łatwo przetworzyć.</p><br/><p><strong>Przykłady w różnych branżach:</strong></p><p><strong>Sklep zoologiczny:</strong> artykuł „Jak dbać o wodę w akwarium” może mieć strukturę: H2 „Jak często czyścić akwarium” czy H2 „Jakie filtry są najskuteczniejsze”. Każdy podpunkt odpowiada na pytanie i może prowadzić linkiem do produktu (akcesoria, filtry).</p><p><strong>Gabinet psychoterapeutyczny:</strong> tekst „Jak poradzić sobie z lękiem społecznym” może mieć H2 „Jak rozpoznać objawy”, H2 „Jak wygląda terapia lęku społecznego”, H2 „Jak długo trwa proces leczenia”. Każdy segment zwiększa zaufanie czytelnika, który może stać się nowym pacjentem.</p><p><strong>Usługi remontowe:</strong> artykuł „Jak zaprojektować małą łazienkę” z podziałem H2 „Jak dobrać kolory”, „Jak ustawić oświetlenie”, „Jak oszczędzić miejsce”.</p><p><strong>Sklep odzieżowy:</strong> wpis „Jak stworzyć kapsułową garderobę” - H2 „Jakie ubrania warto mieć zawsze”, H2 „Jak dopasować kolory”, H2 „Jak planować zakupy z myślą o sezonie”.</p><br/><p>Taka struktura pomaga Google zrozumieć zawartość i ofertę Twojej witryny, wzmacnia autorytet firmy i sprawia, że użytkownik łatwiej znajduje potrzebne informacje a firma staje się ekspertem w branży.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak budować strukturę artykułu, żeby Google lepiej zrozumiał zawartość strony?</h2><p>Robot Google analizuje układ nagłówków, podział na akapity i linkowanie wewnętrzne, żeby zrozumieć hierarchię przedstawianych tematów.</p><br/><p><strong>Jak wygląda skuteczna struktura treści:</strong></p><ul class='list-disc ml-5'><li><strong>H1</strong> - główny temat artykułu (np. „Jak pisać treści na stronie internetowej aby być wyżej w Google”).</li><li><strong>H2</strong> - podtematy związane z konkretnymi pytaniami użytkownika (np. „Jak dopasować treść do intencji użytkownika”).</li><li><strong>H3</strong> - dodatkowe rozwinięcia lub przykłady (np. „Jak Google czyta dłuższe teksty”).</li></ul><br/><p>Każdy nagłówek powinien być <em>opisowy</em>, zawierać naturalne frazy i tworzyć strukturę, którą Google może łatwo przetworzyć.</p><br/><p><strong>Przykłady w różnych branżach:</strong></p><p><strong>Sklep zoologiczny:</strong> artykuł „Jak dbać o wodę w akwarium” może mieć strukturę: H2 „Jak często czyścić akwarium” czy H2 „Jakie filtry są najskuteczniejsze”. Każdy podpunkt odpowiada na pytanie i może prowadzić linkiem do produktu (akcesoria, filtry).</p><p><strong>Gabinet psychoterapeutyczny:</strong> tekst „Jak poradzić sobie z lękiem społecznym” może mieć H2 „Jak rozpoznać objawy”, H2 „Jak wygląda terapia lęku społecznego”, H2 „Jak długo trwa proces leczenia”. Każdy segment zwiększa zaufanie czytelnika, który może stać się nowym pacjentem.</p><p><strong>Usługi remontowe:</strong> artykuł „Jak zaprojektować małą łazienkę” z podziałem H2 „Jak dobrać kolory”, „Jak ustawić oświetlenie”, „Jak oszczędzić miejsce”.</p><p><strong>Sklep odzieżowy:</strong> wpis „Jak stworzyć kapsułową garderobę” - H2 „Jakie ubrania warto mieć zawsze”, H2 „Jak dopasować kolory”, H2 „Jak planować zakupy z myślą o sezonie”.</p><br/><p>Taka struktura pomaga Google zrozumieć zawartość i ofertę danej witryny, wzmacnia autorytet firmy i sprawia, że użytkownik łatwiej znajduje potrzebne informacje a firma staje się ekspertem w branży.</p>",
           "breakAfter": true
         },
         {
@@ -4144,7 +3912,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak linkowanie wewnętrzne wpływa na pozycjonowanie strony w Google?</h2><p><strong>Linkowanie wewnętrzne</strong> to jeden z najprostszych sposobów, aby Google zrozumiał strukturę Twojej witryny i priorytety tematyczne. Każdy link w tekście to dla robota Google wskazówka, które strony są powiązane i najbardziej wartościowe.</p><br/><p>Dobrze zbudowany system linków działa jak mapa myśli dla Google. Pomaga zwiększyć widoczność całej witryny i ułatwia użytkownikowi poruszanie się po stronie.</p><br/><p><strong>Praktyczne zastosowanie:</strong></p><p><strong>Sklep zoologiczny:</strong> w artykule o diecie dla psów z alergią można dodać link do kategorii „Karma bez zbóż” oraz do poradnika „Jak rozpoznać nietolerancję pokarmową u psa”. Użytkownik ma więcej wiedzy, a Google rozumie, że wszystkie te strony tworzą spójny klaster tematyczny.</p><p><strong>Gabinet psychoterapeutyczny:</strong> tekst „Jak rozpoznać objawy wypalenia zawodowego” może linkować do strony usługi „Terapia indywidualna” oraz do artykułu „Jak radzić sobie ze stresem w pracy”.</p><p><strong>Usługi remontowe:</strong> poradnik „Jak zaprojektować kuchnię w bloku” może zawierać link do realizacji projektu oraz do formularza „Zamów bezpłatną wycenę remontu”.</p><p><strong>Sklep odzieżowy:</strong> w artykule „Jak dobrać kolor marynarki do spodni” warto dodać linki do produktów oraz do poradnika „Jak zbudować styl smart casual”.</p><br/><p>Google ocenia takie linki jako dowód <em>spójności tematycznej</em> i uznaje, że strona jest dobrze zorganizowana. To realnie zwiększa pozycję nie tylko poszczególnych stron a całej witryny.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak linkowanie wewnętrzne wpływa na pozycjonowanie strony w Google?</h2><p><strong>Linkowanie wewnętrzne</strong> to jeden z najprostszych sposobów, aby Google zrozumiał strukturę danej witryny i priorytety tematyczne. Każdy link w tekście to dla robota Google wskazówka, które strony są powiązane i najbardziej wartościowe.</p><br/><p>Dobrze zbudowany system linków działa jak mapa myśli dla Google. Pomaga zwiększyć widoczność całej witryny i ułatwia użytkownikowi poruszanie się po stronie.</p><br/><p><strong>Praktyczne zastosowanie:</strong></p><p><strong>Sklep zoologiczny:</strong> w artykule o diecie dla psów z alergią można dodać link do kategorii „Karma bez zbóż” oraz do poradnika „Jak rozpoznać nietolerancję pokarmową u psa”. Użytkownik ma więcej wiedzy, a Google rozumie, że wszystkie te strony tworzą spójny klaster tematyczny.</p><p><strong>Gabinet psychoterapeutyczny:</strong> tekst „Jak rozpoznać objawy wypalenia zawodowego” może linkować do strony usługi „Terapia indywidualna” oraz do artykułu „Jak radzić sobie ze stresem w pracy”.</p><p><strong>Usługi remontowe:</strong> poradnik „Jak zaprojektować kuchnię w bloku” może zawierać link do realizacji projektu oraz do formularza „Zamów bezpłatną wycenę remontu”.</p><p><strong>Sklep odzieżowy:</strong> w artykule „Jak dobrać kolor marynarki do spodni” warto dodać linki do produktów oraz do poradnika „Jak zbudować styl smart casual”.</p><br/><p>Google ocenia takie linki jako dowód <em>spójności tematycznej</em> i uznaje, że strona jest dobrze zorganizowana. To realnie zwiększa pozycję nie tylko poszczególnych stron a całej witryny.</p>",
           "breakAfter": true
         },
         {
@@ -4274,22 +4042,10 @@
     {
       "slug": "jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow",
       "title": "Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?",
-      "excerpt": "Identyfikacja wizualna buduje wiarygodność, skraca decyzje zakupowe i wzmacnia rozpoznawalność. Zobacz, jak logo, kolorystyka i typografia wpływają na zaufanie klientów.",
+      "excerpt": "Identyfikacja wizualna buduje wiarygodność, skraca decyzje zakupowe i wzmacnia rozpoznawalność marki. Zobacz, jak logo, kolorystyka i typografia wpływają na zaufanie klientów oraz co powinien zawierać profesjonalny brandbook.",
       "primaryCategory": "Grafika",
-      "category": [
-        "Branding"
-      ],
-      "tags": [
-        "identyfikacja wizualna",
-        "identyfikacja wizualna firmy",
-        "logo",
-        "kolorystyka",
-        "typografia",
-        "brandbook",
-        "zaufanie klientów",
-        "branding",
-        "spójność wizualna"
-      ],
+      "category": ["Branding"],
+      "tags": ["identyfikacja wizualna", "identyfikacja wizualna firmy", "logo", "kolorystyka", "typografia", "brandbook", "zaufanie klientów", "branding", "spójność wizualna"],
       "seo": {
         "title": "Identyfikacja wizualna firmy a zaufanie klientów - Arteon",
         "description": "Spójna identyfikacja wizualna, logo, kolorystyka i typografia wzmacniają wiarygodność i skracają decyzje zakupowe. Praktyczne wskazówki dla firm.",
@@ -4404,27 +4160,13 @@
     {
       "slug": "dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic",
       "title": "Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?",
-      "excerpt": "Twoja strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania Google. Kompletny przewodnik.",
+      "excerpt": "Strona nie wyświetla się w Google? Sprawdź najczęstsze błędy wpływające na indeksację: robots.txt, sitemap.xml, meta tagi noindex, szybkość ładowania i jakość treści. Kompletny przewodnik z rozwiązaniami tych problemów w witrynie.",
       "primaryCategory": "SEO",
-      "category": [
-        "Widoczność",
-        "Strony"
-      ],
-      "tags": [
-        "google",
-        "indeksacja",
-        "google search console",
-        "pozycjonowanie",
-        "robot google",
-        "widoczność strony",
-        "sitemap",
-        "plik robots.txt",
-        "algorytm google",
-        "strona internetowa"
-      ],
+      "category": ["Widoczność", "Strony"],
+      "tags": ["google", "indeksacja", "google search console", "pozycjonowanie", "robot google", "widoczność strony", "sitemap", "plik robots.txt", "algorytm google", "strona internetowa"],
       "seo": {
         "title": "Strona nie wyświetla się w Google? Przyczyny i rozwiązania - Arteon",
-        "description": "Twoja strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania Google. Kompletny przewodnik.",
+        "description": "Strona internetowa nie wyświetla się w Google? Sprawdź najczęstsze błędy, które wpływają na wyniki wyszukiwania. Wyjaśniamy przyczyny i rozwiązania.",
         "canonical": "https://www.arteonagency.pl/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic"
       },
       "cover": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic.webp",
@@ -4437,12 +4179,12 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>Twoja strona nie jest widoczna, mimo że jest już opublikowana?</p><p>Nie jesteś sam - według danych z Google Search Central nawet 30% nowych witryn nie zostaje zaindeksowanych w ciągu pierwszych tygodni.</p><br/><p>Brak widoczności w wynikach wyszukiwania może mieć wiele przyczyn: od błędów technicznych w pliku <strong>robots.txt</strong>, przez brak mapy strony sitemap.xml, po zbyt słabe treści.</p><p>Na szczęście większość błędów można łatwo naprawić - wystarczy zrozumieć, <strong>w jaki sposób Google indeksuje strony i jak działa algorytm wyszukiwarki</strong>. W tym artykule opowiemy, co zrobić, aby pojawić się w wynikach wyszukiwania.</p>",
+          "html": "<p>Strona nie jest widoczna, mimo że jest już opublikowana?</p><p>Nie jesteś sam - według danych z Google Search Central nawet 30% nowych witryn nie zostaje zaindeksowanych w ciągu pierwszych tygodni.</p><br/><p>Brak widoczności w wynikach wyszukiwania może mieć wiele przyczyn: od błędów technicznych w pliku <strong>robots.txt</strong>, przez brak mapy strony sitemap.xml, po zbyt słabe treści.</p><p>Na szczęście większość błędów można łatwo naprawić - wystarczy zrozumieć, <strong>w jaki sposób Google indeksuje strony i jak działa algorytm wyszukiwarki</strong>. W tym artykule opowiemy, co zrobić, aby pojawić się w wynikach wyszukiwania.</p>",
           "breakAfter": true
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak działa Google i dlaczego nie widzi strony?</h2><p>Algorytm Google korzysta z tzw. <strong>robota indeksującego</strong>, znanego jako <strong>Googlebot</strong>. Ten robot odwiedza domeny, czyta ich treść, analizuje linki i zapisuje dane w indeksie. Kiedy ktoś wpisuje zapytanie w wyszukiwarkę, algorytmy porównują setki miliardów stron i wybierają te, które najlepiej pasują do intencji użytkownika.</p><br/><p>Jeśli Twojej strony nie ma w Google, oznacza to, że algorytm:</p><br/><ul class='list-disc ml-5'><li>jeszcze jej nie znalazł (brak linków lub mapy),</li><li>nie może jej odczytać (blokada w pliku robots.txt lub noindex),</li><li>nie uznał jej za wartościową (za mało treści lub niska jej jakość).</li></ul>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Jak działa Google i dlaczego nie widzi strony?</h2><p>Algorytm Google korzysta z tzw. <strong>robota indeksującego</strong>, znanego jako <strong>Googlebot</strong>. Ten robot odwiedza domeny, czyta ich treść, analizuje linki i zapisuje dane w indeksie. Kiedy ktoś wpisuje zapytanie w wyszukiwarkę, algorytmy porównują setki miliardów stron i wybierają te, które najlepiej pasują do intencji użytkownika.</p><br/><p>Jeśli strony nie ma w Google, oznacza to, że algorytm:</p><br/><ul class='list-disc ml-5'><li>jeszcze jej nie znalazł (brak linków lub mapy),</li><li>nie może jej odczytać (blokada w pliku robots.txt lub noindex),</li><li>nie uznał jej za wartościową (za mało treści lub niska jej jakość).</li></ul>",
           "breakAfter": true
         },
         {
@@ -4507,36 +4249,12 @@
             }
           ],
           "rows": [
-            [
-              "Indeksacja",
-              "site:twojadomena.pl",
-              "Wyszukiwarka"
-            ],
-            [
-              "Plik robots.txt",
-              "Usuń Disallow: /",
-              "twojadomena.pl/robots.txt"
-            ],
-            [
-              "Meta tagi",
-              "Usuń noindex",
-              "Kod źródłowy strony"
-            ],
-            [
-              "Sitemap",
-              "Dodaj sitemap.xml",
-              "Google Search Console"
-            ],
-            [
-              "Błędy 404",
-              "Napraw przekierowania",
-              "GSC → Stan"
-            ],
-            [
-              "Prędkość strony",
-              "LCP < 2,5 s",
-              "PageSpeed Insights"
-            ]
+            ["Indeksacja", "site:twojadomena.pl", "Wyszukiwarka"],
+            ["Plik robots.txt", "Usuń Disallow: /", "twojadomena.pl/robots.txt"],
+            ["Meta tagi", "Usuń noindex", "Kod źródłowy strony"],
+            ["Sitemap", "Dodaj sitemap.xml", "Google Search Console"],
+            ["Błędy 404", "Napraw przekierowania", "GSC → Stan"],
+            ["Prędkość strony", "LCP < 2,5 s", "PageSpeed Insights"]
           ],
           "breakAfter": true
         },
@@ -4605,24 +4323,9 @@
             }
           ],
           "rows": [
-            [
-              "LCP",
-              "Largest Contentful Paint",
-              "czas wczytania głównej treści",
-              "&lt; 2,5 s"
-            ],
-            [
-              "INP",
-              "Interaction to Next Paint",
-              "czas reakcji na kliknięcia",
-              "&lt; 200 ms"
-            ],
-            [
-              "CLS",
-              "Cumulative Layout Shift",
-              "stabilność wizualna",
-              "&lt; 0,1"
-            ]
+            ["LCP", "Largest Contentful Paint", "czas wczytania głównej treści", "&lt; 2,5 s"],
+            ["INP", "Interaction to Next Paint", "czas reakcji na kliknięcia", "&lt; 200 ms"],
+            ["CLS", "Cumulative Layout Shift", "stabilność wizualna", "&lt; 0,1"]
           ]
         },
         {
@@ -4668,56 +4371,16 @@
             }
           ],
           "rows": [
-            [
-              "Indeksacja",
-              "Czy strona jest w indeksie (site:twojadomena.pl)?",
-              "Wyszukiwarka Google"
-            ],
-            [
-              "Plik robots.txt",
-              "Brak blokady Disallow: /",
-              "twojadomena.pl/robots.txt"
-            ],
-            [
-              "Mapa witryny (sitemap.xml)",
-              "Aktualna, zgłoszona do GSC",
-              "Google Search Console"
-            ],
-            [
-              "Błędy 404 / 500",
-              "Napraw przekierowania 301",
-              "GSC → Stan"
-            ],
-            [
-              "Meta tagi",
-              "Usuń noindex, dodaj canonical",
-              "Kod strony"
-            ],
-            [
-              "Szybkość strony",
-              "LCP < 2,5 s, INP < 200 ms",
-              "PageSpeed Insights"
-            ],
-            [
-              "Mobile-Friendly",
-              "Popraw czytelność na smartfonach",
-              "Mobile-Friendly Test"
-            ],
-            [
-              "Dane strukturalne",
-              "Article / FAQPage / Organization",
-              "Rich Results Test"
-            ],
-            [
-              "Duplikaty treści",
-              "Usuń powielone teksty",
-              "Ahrefs / Screaming Frog"
-            ],
-            [
-              "Linki zewnętrzne",
-              "Jakość i kontekst",
-              "Ahrefs / Semrush"
-            ]
+            ["Indeksacja", "Czy strona jest w indeksie (site:twojadomena.pl)?", "Wyszukiwarka Google"],
+            ["Plik robots.txt", "Brak blokady Disallow: /", "twojadomena.pl/robots.txt"],
+            ["Mapa witryny (sitemap.xml)", "Aktualna, zgłoszona do GSC", "Google Search Console"],
+            ["Błędy 404 / 500", "Napraw przekierowania 301", "GSC → Stan"],
+            ["Meta tagi", "Usuń noindex, dodaj canonical", "Kod strony"],
+            ["Szybkość strony", "LCP < 2,5 s, INP < 200 ms", "PageSpeed Insights"],
+            ["Mobile-Friendly", "Popraw czytelność na smartfonach", "Mobile-Friendly Test"],
+            ["Dane strukturalne", "Article / FAQPage / Organization", "Rich Results Test"],
+            ["Duplikaty treści", "Usuń powielone teksty", "Ahrefs / Screaming Frog"],
+            ["Linki zewnętrzne", "Jakość i kontekst", "Ahrefs / Semrush"]
           ],
           "breakAfter": true
         },
@@ -4728,7 +4391,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie - jak sprawić, by strona była widoczna w Google</h2><p>Widoczność w wyszukiwarce Google nie jest dziełem przypadku.<br/>To wynik połączenia <strong>techniki, treści i zaufania.</strong></p><br/><p>Aby Twoja strona internetowa regularnie pojawiała się w wynikach wyszukiwania, wykonaj te kroki w kolejności:</p><br/><ol class='list-decimal ml-5'><li><strong>Sprawdź zaindeksowane strony</strong> - upewnij się, że Google ma dostęp do Twojej witryny (polecenie site:twojadomena.pl).</li><li><strong>Napraw błędy techniczne</strong> - usuń blokady robots.txt, meta noindex i przekierowania łańcuchowe.</li><li><strong>Dodaj i zgłoś sitemap.xml</strong> - w GSC → „Mapy witryn”.</li><li><strong>Popraw strukturę i linkowanie</strong> - każda strona powinna prowadzić do innych ważnych podstron.</li><li><strong>Optymalizuj treść</strong> - pisz jasno, z przykładami, używaj nagłówków z pytaniami.</li><li><strong>Zadbaj o szybkość i mobile</strong> - Google ocenia realne dane użytkowników (Core Web Vitals).</li><li><strong>Buduj zaufanie</strong> - zdobywaj linki zewnętrzne, opinie, aktualizuj treści.</li></ol><br/><p>Pamiętaj: pozycjonowanie stron (SEO) nie działa z dnia na dzień.<br/>Google potrzebuje czasu, by zaufać nowej witrynie i powiązać ją z konkretnymi zapytaniami.<br/>Ale jeśli zastosujesz powyższe kroki, Twoja strona zacznie pojawiać się coraz częściej - nie tylko na nazwę marki, lecz także na frazy sprzedażowe i informacyjne.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 reveal-animation'>Podsumowanie - jak sprawić, by strona była widoczna w Google</h2><p>Widoczność w wyszukiwarce Google nie jest dziełem przypadku.<br/>To wynik połączenia <strong>techniki, treści i zaufania.</strong></p><br/><p>Aby Twoja strona internetowa regularnie pojawiała się w wynikach wyszukiwania, wykonaj te kroki w kolejności:</p><br/><ol class='list-decimal ml-5'><li><strong>Sprawdź zaindeksowane strony</strong> - upewnij się, że Google ma dostęp do danej witryny (polecenie site:twojadomena.pl).</li><li><strong>Napraw błędy techniczne</strong> - usuń blokady robots.txt, meta noindex i przekierowania łańcuchowe.</li><li><strong>Dodaj i zgłoś sitemap.xml</strong> - w GSC → „Mapy witryn”.</li><li><strong>Popraw strukturę i linkowanie</strong> - każda strona powinna prowadzić do innych ważnych podstron.</li><li><strong>Optymalizuj treść</strong> - pisz jasno, z przykładami, używaj nagłówków z pytaniami.</li><li><strong>Zadbaj o szybkość i mobile</strong> - Google ocenia realne dane użytkowników (Core Web Vitals).</li><li><strong>Buduj zaufanie</strong> - zdobywaj linki zewnętrzne, opinie, aktualizuj treści.</li></ol><br/><p>Pamiętaj: pozycjonowanie stron (SEO) nie działa z dnia na dzień.<br/>Google potrzebuje czasu, by zaufać nowej witrynie i powiązać ją z konkretnymi zapytaniami.<br/>Ale jeśli zastosujesz powyższe kroki, Twoja strona zacznie pojawiać się coraz częściej - nie tylko na nazwę marki, lecz także na frazy sprzedażowe i informacyjne.</p>",
           "breakAfter": true
         },
         {
@@ -4748,7 +4411,7 @@
       ],
       "cta": {
         "title": "Zróbmy audyt SEO Twojej strony",
-        "description": "Dowiedz się, dlaczego Twoja strona internetowa nie pojawia się w Google i co można poprawić, by odzyskać widoczność. Przeprowadzimy pełny audyt techniczny, SEO i contentowy.",
+        "description": "Strona nie pojawia się w Google? Wyjaśniamy przyczyny i co można poprawić. Oferujemy audyt techniczny, SEO i contentowy.",
         "btnOne": "Umów konsultację",
         "btnOneLink": "/kontakt",
         "backgroundImage": "/assets/blog/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic.webp",
@@ -4761,7 +4424,7 @@
         },
         {
           "question": "Dlaczego moja strona jest niewidoczna pomimo zaindeksowania?",
-          "answer": "Powodem może być zbyt słaba treść, brak linków lub niska jakość domeny. Google może też uznać, że Twoja strona nie odpowiada na konkretne zapytania użytkowników. Rozbuduj teksty, dodaj frazy kluczowe i wewnętrzne linki - to główny czynnik wysokiej pozycji w Google."
+          "answer": "Powodem może być zbyt słaba treść, brak linków lub niska jakość domeny. Google może też uznać, że strona nie odpowiada na konkretne zapytania użytkowników. Rozbuduj teksty, dodaj frazy kluczowe i wewnętrzne linki - to główny czynnik wysokiej pozycji w Google."
         },
         {
           "question": "Co zrobić, gdy Google nie widzi Twojej strony mimo poprawnej konfiguracji?",

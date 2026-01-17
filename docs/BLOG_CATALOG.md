@@ -25,10 +25,40 @@ Celem katalogu jest:
 
 ## Spis artykułów (kolejność wg `blog.json`)
 
+- **Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?**
+
+  - **Slug**: `czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac`
+  - **URL**: `/edukacja/strony/czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac`
+  - **Kategorie**: `Strony`, `UX`
+  - **Data publikacji**: 2026-01-12
+  - **Czas czytania**: 11 min
+  - **Opis**: Kompleksowy artykuł edukacyjny o stronie błędu 404 i jej znaczeniu dla doświadczenia użytkowników oraz SEO. Obejmuje: czym jest błąd 404 (kod statusu HTTP, pochodzenie nazwy, specyfikacja HTTP/1.1), dlaczego powstają błędy 404 (usunięta/przeniesiona strona, literówka w URL, nieprawidłowy link zewnętrzny, zmiany w strukturze witryny, wygasła oferta), dlaczego dobra strona 404 ma znaczenie (pomaga zrozumieć sytuację, zatrzymuje użytkownika, buduje zaufanie do marki, wspiera SEO przez zmniejszenie bounce rate), co powinna zawierać strona 404 (prosty komunikat bez żargonu, link do strony głównej, wyszukiwarka wewnętrzna, linki do popularnych sekcji, spójna stylizacja, opcjonalny formularz zgłoszenia błędu), jak strona 404 wpływa na SEO (błędy w Google Search Console, przekierowania 301 vs 404, soft 404 jako błąd konfiguracji), najczęstsze błędy w projektowaniu (brak informacji co dalej, techniczny żargon, brak nawigacji, automatyczne przekierowanie, kreatywność ponad funkcjonalnością), przykłady dobrych praktyk dla różnych typów witryn (sklepy — podobne produkty, blogi — najnowsze artykuły, witryny usługowe — strona kontaktowa), jak monitorować i naprawiać błędy 404 (Google Search Console raport Coverage, Google Analytics, regularne audyty linków narzędziami Ahrefs/Screaming Frog).
+  - **Linki wewnętrzne (10)**: `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`, `/edukacja/strony/dlaczego-strona-powinna-miec-jasna-hierarchie-informacji`, `/edukacja/ux/jak-nawigacja-na-stronie-wplywa-na-sprzedaz`, `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie`, `/edukacja/grafika/co-to-jest-identyfikacja-wizualna-i-dlaczego-kazda-firma-ja-potrzebuje`, `/edukacja/seo/co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`, `/edukacja/sklepy/dlaczego-klienci-porzucaja-koszyki-i-jak-temu-zapobiegac`, `/uslugi/marketing/audyt-seo`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki zewnętrzne (6)**: W3C HTTP/1.1 specification (protokół), Google Search Console (narzędzie — 3x link), Google Analytics (narzędzie), Ahrefs (audyt), Screaming Frog (audyt)
+  - **Tooltips (5)**: SEO (Search Engine Optimization), HTTP (Hypertext Transfer Protocol), branding, współczynnik odrzuceń (bounce rate), soft 404
+  - **FAQ**: 6 pytań (czy błędy 404 szkodzą pozycji w Google, czy przekierowywać automatycznie na stronę główną, różnica między 404 a soft 404, jak często sprawdzać błędy 404, czy strona 404 powinna mieć wyszukiwarkę, co zrobić z wycofanym produktem)
+  - **CTA**: Strony internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia błąd 404 prostym językiem, z konkretnymi przykładami dla różnych typów witryn i praktycznymi wskazówkami projektowymi
+
+- **Czym jest kanibalizacja słów kluczowych i jak jej unikać?**
+
+  - **Slug**: `czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`
+  - **URL**: `/edukacja/seo/czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`
+  - **Kategorie**: `SEO`, `Treści`
+  - **Data publikacji**: 2026-01-12
+  - **Czas czytania**: 11 min
+  - **Opis**: Kompleksowy artykuł edukacyjny o kanibalizacji słów kluczowych w SEO. Obejmuje: czym jest kanibalizacja (kilka stron konkuruje o te same frazy), dlaczego to problem (rozmycie sygnałów rankingowych, niestabilność w rankingu, marnowanie budżetu indeksowania), jak rozpoznać (Google Search Console — raport wydajności, zapytanie site: w Google, audyt SEO), najczęstsze przyczyny (kilka podobnych artykułów, produkty w wielu kategoriach, paginacja, tagi i archiwum), jak naprawić (połączenie stron w jedną + przekierowanie 301, zmiana focusu każdej strony, linkowanie wewnętrzne, canonical URL, de-indeksacja), jak unikać w przyszłości (planowanie struktury treści, aktualizacja zamiast tworzenia nowych, jedna strona główna per fraza, monitorowanie w GSC), kanibalizacja a synonimy (algorytm BERT, intencja zapytań), praktyczny przykład (kancelaria prawna — 3 artykuły o rozwodach).
+  - **Linki wewnętrzne (8)**: `/edukacja/seo/co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`, `/edukacja/seo/jak-linki-wewnetrzne-wplywaja-na-pozycjonowanie`, `/edukacja/seo/dlaczego-stare-tresci-moga-szkodzic-widocznosci-w-google`, `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie`, `/uslugi/tworzenie-tresci`, `/kontakt`
+  - **Linki zewnętrzne (4)**: Google Search Console (tool — 3x link), Google BERT blog (algorytm)
+  - **Tooltips (5)**: Google nie wie którą stronę wyświetlić, linki zwrotne, budżet indeksowania, WCAG, przekierowanie 301, architektura informacji
+  - **FAQ**: 6 pytań (czy zawsze szkodzi, jak szybko Google zauważy zmiany, czy można mieć 2 artykuły na podobny temat, jak sprawdzić, co z produktami w sklepie, czy usunięcie artykułu spowoduje utratę ruchu)
+  - **CTA**: Audyt SEO + Kontakt
+  - **Ton**: Mentorski, edukacyjny — wyjaśnia problem kanibalizacji z konkretnymi metodami diagnostyki i naprawy, z praktycznymi przykładami i źródłami
+
 - **Co to jest regulamin sklepu internetowego i co musi zawierać?**
 
-  - **Slug**: `co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
-  - **URL**: `/edukacja/sklepy/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
+  - **Slug**: `regulamin-sklepu-internetowego-co-musi-zawierac`
+  - **URL**: `/edukacja/sklepy/regulamin-sklepu-internetowego-co-musi-zawierac`
   - **Kategorie**: `Sklepy`, `Bezpieczenstwo`
   - **Data publikacji**: 2026-01-02
   - **Czas czytania**: 11 min
@@ -48,7 +78,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2026-01-02
   - **Czas czytania**: 10 min
   - **Opis**: Kompleksowy artykuł edukacyjny o newsletterze jako narzędziu komunikacji z klientami. Obejmuje: czym jest newsletter i jak działa (formy newslettera, częstotliwość wysyłki), dlaczego firmy prowadzą newslettery (niezależność od algorytmów, budowanie listy kontaktów, regularny kontakt), korzyści z newslettera (zwiększenie sprzedaży — dane Litmus 2023 o ROI 36:1, budowanie pozycji eksperta, kierowanie ruchu, zbieranie informacji), dla kogo newsletter ma sens a dla kogo nie, na co zwrócić uwagę (zgoda RODO, wartość dla odbiorcy, regularność), jak mierzyć skuteczność (open rate, CTR, wypisania, konwersje — dane Mailchimp), narzędzia (Mailchimp, GetResponse, Brevo), budowanie listy subskrybentów (wartość w zamian za zapis, widoczność formularza, jasna komunikacja), typowe wyzwania (regularność, dostarczalność, spadające zaangażowanie, balans wartość/promocja).
-  - **Linki wewnętrzne (6)**: `/uslugi/strony-internetowe`, `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/tworzenie-tresci`, `/kontakt`
+  - **Linki wewnętrzne (6)**: `/uslugi/strony-internetowe`, `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/tworzenie-tresci`, `/kontakt`
   - **Linki zewnętrzne (6)**: Litmus (e-mail marketing ROI 2023), UODO (RODO), Mailchimp (email marketing benchmarks), Mailchimp (platforma), GetResponse (platforma), Brevo (platforma)
   - **Tooltips (3)**: newsletter, open rate, CTR
   - **FAQ**: 6 pytań (jak często wysyłać, newsletter vs media społecznościowe, ile subskrybentów potrzeba, zgoda RODO, co pisać żeby nie irytować, jak zwiększyć open rate)
@@ -57,13 +87,13 @@ Celem katalogu jest:
 
 - **Dlaczego szybkość ładowania strony wpływa na pozycję w Google?**
 
-  - **Slug**: `dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
-  - **URL**: `/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
+  - **Slug**: `szybkosc-ladowania-strony-a-pozycja-w-google`
+  - **URL**: `/edukacja/seo/szybkosc-ladowania-strony-a-pozycja-w-google`
   - **Kategorie**: `SEO`, `UX`, `Strony`
   - **Data publikacji**: 2026-01-02
   - **Czas czytania**: 11 min
   - **Opis**: Kompleksowy artykuł edukacyjny o wpływie szybkości ładowania strony na pozycję w Google. Obejmuje: czym są Core Web Vitals (LCP, INP, CLS — progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP — czas ładowania głównej treści, czynniki wpływające; INP — responsywność, dlaczego zastąpił FID; CLS — stabilność wizualna, przyczyny przesunięć), jak Core Web Vitals wpływają na ranking (treść najważniejsza, czynnik różnicujący, dane z rzeczywistego użytkowania CrUX), wpływ szybkości na konwersję (opuszczanie wolnych stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Google Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JavaScript/CSS, serwer/hosting, zewnętrzne skrypty).
-  - **Linki wewnętrzne (8)**: `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`, `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`, `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`, `/kontakt`
+  - **Linki wewnętrzne (8)**: `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`, `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`, `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`, `/kontakt`
   - **Linki zewnętrzne (6)**: Google Search Central (Core Web Vitals documentation), Google Developers Blog (Page Experience timing), Think with Google (mobile page speed benchmarks), PageSpeed Insights (tool), Google Search Console (tool), Web Vitals Chrome Extension
   - **Tooltips (4)**: Core Web Vitals, LCP (Largest Contentful Paint), INP (Interaction to Next Paint), CLS (Cumulative Layout Shift)
   - **FAQ**: 6 pytań (czy szybkość najważniejsza, jakie wyniki dobre, PageSpeed a pozycja, jak często Google aktualizuje, co to INP i dlaczego zastąpił FID, czy można poprawić bez wiedzy technicznej)
@@ -72,8 +102,8 @@ Celem katalogu jest:
 
 - **Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?**
 
-  - **Slug**: `czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec`
-  - **URL**: `/edukacja/ux/czym-jest-sciezka-nawigacji-na-stronie-i-dlaczego-warto-ja-miec`
+  - **Slug**: `breadcrumbs-sciezka-nawigacji-na-stronie`
+  - **URL**: `/edukacja/ux/breadcrumbs-sciezka-nawigacji-na-stronie`
   - **Kategorie**: `UX`, `SEO`
   - **Data publikacji**: 2026-01-01
   - **Czas czytania**: 10 min
@@ -93,7 +123,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2026-01-01
   - **Czas czytania**: 11 min
   - **Opis**: Artykuł edukacyjny o pustej przestrzeni (whitespace) na stronach internetowych i jej wpływie na czytelność. Obejmuje: czym jest pusta przestrzeń (makro-przestrzeń i mikro-przestrzeń), jak wpływa na odbiór treści (skanowanie, obciążenie poznawcze, kierowanie uwagi), gdzie stosować (między sekcjami, wokół nagłówków, interlinia, formularze i przyciski, urządzenia mobilne), jak ocenić proporcje (test skanowania, test czytelności, test mobilny, narzędzia), pusta przestrzeń a typografia (interlinia, szerokość kolumny 45-75 znaków), najczęstsze obawy (długość strony, marnowanie miejsca, zmieszczenie treści).
-  - **Linki wewnętrzne (6)**: `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki wewnętrzne (6)**: `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/uslugi/strony-internetowe`, `/kontakt`
   - **Linki zewnętrzne (4)**: Nielsen Norman Group (whitespace research), WCAG 2.1 (text-spacing), Material Design (spacing guidelines), PageSpeed Insights, WAVE
   - **Tooltips (3)**: pusta przestrzeń (whitespace), obciążenie poznawcze, interlinia
   - **FAQ**: 5 pytań (pusta przestrzeń vs marginesy, ile przestrzeni, wpływ na szybkość, wpływ na SEO, jak przekonać klienta)
@@ -117,8 +147,8 @@ Celem katalogu jest:
 
 - **Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?**
 
-  - **Slug**: `darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`
-  - **URL**: `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`
+  - **Slug**: `darmowa-dostawa-vs-nizsza-cena`
+  - **URL**: `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena`
   - **Kategorie**: `Sklepy`, `Psychologia`
   - **Data publikacji**: 2025-12-31
   - **Czas czytania**: 11 min
@@ -132,8 +162,8 @@ Celem katalogu jest:
 
 - **Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?**
 
-  - **Slug**: `czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych`
-  - **URL**: `/edukacja/grafika/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych`
+  - **Slug**: `czcionki-szeryfowe-vs-bezszeryfowe`
+  - **URL**: `/edukacja/grafika/czcionki-szeryfowe-vs-bezszeryfowe`
   - **Kategorie**: `Grafika`, `Branding`, `UX`
   - **Data publikacji**: 2025-12-31
   - **Data modyfikacji**: 2025-12-31 (CONTENT-031: wizualizacja czcionek inline + poprawki tonu)
@@ -155,7 +185,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2025-12-26
   - **Czas czytania**: 12 min
   - **Opis**: Kompleksowy artykuł o paradoksie wyboru (ang. choice overload) zgodny z wytycznymi. Obejmuje: skąd wiemy o paradoksie wyboru (eksperyment z dżemami Iyengar i Leppera, TED Talk Barry'ego Schwartza, mechanizmy: obciążenie poznawcze, strach przed błędem, żal po zakupie), kiedy paradoks jest najsilniejszy (podobne opcje, brak kryteriów, ważne decyzje, brak domyślnej opcji), wpływ na sprzedaż (niższa konwersja, mniejsza satysfakcja, dłuższy czas decyzji), jak projektować ofertę (ograniczenie liczby opcji do 3-5, wyraźne różnicowanie, domyślne opcje i rekomendacje, filtry), przykłady z branż (gastronomia, usługi profesjonalne, e-commerce, usługi medyczne), równowaga między wyborem a prostotą (progresywne ujawnianie, personalizacja, asystowane podejmowanie decyzji), paradoks wyboru a efekt zakotwiczenia (jak łączyć mechanizmy, spójność w komunikacji).
-  - **Linki wewnętrzne (8)**: `/uslugi/sklepy-internetowe`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/uslugi/strony-internetowe`, `/edukacja/psychologia/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/kontakt`
+  - **Linki wewnętrzne (8)**: `/uslugi/sklepy-internetowe`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/uslugi/strony-internetowe`, `/edukacja/psychologia/efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/kontakt`
   - **Linki zewnętrzne (4)**: Iyengar & Lepper (2000) - eksperyment z dżemami, Barry Schwartz TED Talk (The Paradox of Choice)
   - **Tooltips**: paradoks wyboru
   - **FAQ**: 5 pytań (czy dotyczy wszystkich klientów, ile opcji to za dużo, czy oznaczenie jako rekomendowana to manipulacja, jak sprawdzić czy oferta przytłacza, czy usuwać produkty z oferty)
@@ -170,7 +200,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2025-12-26
   - **Czas czytania**: 11 min
   - **Opis**: Kompleksowy artykuł o efekcie zakotwiczenia (ang. anchoring effect) zgodny z wytycznymi. Obejmuje: skąd bierze się efekt zakotwiczenia (Tversky i Kahneman 1974, eksperyment z kołem fortuny, Nagroda Nobla Kahnemana), jak wpływa na postrzeganie cen (cena przekreślona, produkty premium jako kotwica, pierwsza oferta w negocjacjach), kiedy działa najsilniej (nieznajomość wartości rynkowej, złożone decyzje, trudne porównania), przykłady z branż (gastronomia, nieruchomości, usługi profesjonalne, e-commerce), jak wykorzystać w strategii cenowej (prezentacja od najdroższej opcji, cena regularna jako kotwica, kontekst porównawczy, produkt-kotwica), etyczne granice (uczciwe vs manipulacyjne użycie, budowanie zaufania, regulacje prawne - Dyrektywa Omnibus), efekt na stronie internetowej (cennik, strona produktu, strona usług).
-  - **Linki wewnętrzne (8)**: `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`, `/uslugi/sklepy-internetowe`, `/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/strony-internetowe`, `/realizacje`, `/kontakt`
+  - **Linki wewnętrzne (8)**: `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/uslugi/sklepy-internetowe`, `/edukacja/psychologia/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/strony-internetowe`, `/realizacje`, `/kontakt`
   - **Linki zewnętrzne (5)**: Tversky & Kahneman (1974) - Science, Nobel Prize (Kahneman 2002), UOKiK (ceny regularne), Dyrektywa Omnibus 2019/2161
   - **Tooltips**: efekt zakotwiczenia
   - **FAQ**: 5 pytań (czy działa na każdego, jak wykorzystać w małej firmie, czy stosowanie jest etyczne, jak bronić się jako klient, czy działa tylko przy cenach)
@@ -179,8 +209,8 @@ Celem katalogu jest:
 
 - **Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?**
 
-  - **Slug**: `czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`
-  - **URL**: `/edukacja/psychologia/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje`
+  - **Slug**: `social-proof-spoleczny-dowod-slusznosci`
+  - **URL**: `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`
   - **Kategorie**: `Psychologia`, `Marketing`, `UX`
   - **Data publikacji**: 2025-12-26
   - **Data modyfikacji**: 2025-12-27 (CONTENT-009: zmiana terminologii na polską, dodanie linków wewnętrznych)
@@ -327,7 +357,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2025-12-21
   - **Czas czytania**: 7 min
   - **Opis**: Artykuł o Google Moja Firma (Google Business Profile). Czym jest GMB i dlaczego jest ważne dla lokalnych firm, jak założyć profil krok po kroku, jakie informacje uzupełnić (kategorie, godziny, opis, zdjęcia, usługi, atrybuty), jak zdobywać i odpowiadać na opinie, na co zwrócić uwagę przy prowadzeniu profilu.
-  - **Linki wewnętrzne**: `/uslugi/marketing/pozycjonowanie-stron`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`, `/kontakt`
+  - **Linki wewnętrzne**: `/uslugi/marketing/pozycjonowanie-stron`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony`, `/kontakt`
   - **Linki zewnętrzne**: Think with Google, google.com/business, BrightLocal
   - **FAQ**: 5 pytań
   - **CTA**: Pozycjonowanie stron + Kontakt
@@ -429,8 +459,8 @@ Celem katalogu jest:
 
 - **Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?**
 
-  - **Slug**: `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
-  - **URL**: `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+  - **Slug**: `ile-czasu-trwa-pozycjonowanie-strony`
+  - **URL**: `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony`
   - **Kategorie**: `SEO`, `Widoczność`
 
 - **Czy lokalne firmy potrzebują bloga na stronie internetowej aby rosnąć w Google?**
@@ -492,7 +522,7 @@ Celem katalogu jest:
 
 ## Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?
 
-- **Slug**: `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`
+- **Slug**: `ile-czasu-trwa-pozycjonowanie-strony`
 - **Kategorie**: `SEO` (primary), `Widoczność`
 - **Daty**:
   - **`datePublished`**: `2025-12-09`

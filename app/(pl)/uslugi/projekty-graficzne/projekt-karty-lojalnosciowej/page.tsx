@@ -27,7 +27,11 @@ export const metadata = {
     description: 'Projekt karty lojalnościowej dla salonów, kawiarni, butików i siłowni. Plik do druku + szablon cyfrowy.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp' }],
+    images: [
+      {
+        url: 'https://www.arteonagency.pl/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
+      },
+    ],
   },
 } as const;
 
@@ -55,11 +59,7 @@ export default function OfferDesignLoyaltyCardPage() {
     <>
       <HeroBanner
         title="Projekt karty lojalnościowej"
-        description={
-          <>
-            Projektujemy czytelne karty lojalnościowe dla firm usługowych i handlowych. Karty wspierają sprzedaż i porządkują zasady programu lojalnościowego.
-          </>
-        }
+        description={<>Projektujemy czytelne karty lojalnościowe dla firm usługowych i handlowych. Karty wspierają sprzedaż i porządkują zasady programu lojalnościowego.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -91,8 +91,8 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <SectionInfo title="Dlaczego warto zainwestować w karty lojalnościowe?">
           <p>
-            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> Narzędzie marketingowe, które wzmacnia lojalność klientów: „wracam do tej firmy, bo
-            dzięki temu mam dodatkowe korzyści". W efekcie zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
+            <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> Narzędzie marketingowe, które wzmacnia lojalność klientów: „wracam do tej firmy, bo dzięki temu mam
+            dodatkowe korzyści". W efekcie zwiększa się częstotliwość wizyt oraz średnia wartość zakupu.
           </p>
 
           <br />

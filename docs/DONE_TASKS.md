@@ -1,5 +1,138 @@
 # Arteon - DONE TASKS
 
+## 2026-01-17
+
+- ✅ **[CONTENT-006] Realizacje: redakcja treści + SEO + nowe komponenty (wszystkie oprócz Perly Mocy i Izoluk)**
+
+  - **Plik**: `data/pl/projects.json`
+  - **Zakres**: 22 realizacje (wszystkie oprócz Perly Mocy i Izoluk)
+  - **Wykonane zmiany**:
+    - CTA: zmieniono przyciski na opisowe ("Skontaktuj się z nami", "Sprawdź ofertę...")
+    - FAQ: rozbudowano odpowiedzi, dodano szczegóły techniczne (CMYK, 300 DPI, spady)
+    - SEO: poprawiono opisy meta (dłuższe, zachęcające, z nazwą realizacji)
+    - contentBlocks: dodano nowe komponenty (`steps`, `featureList`) do realizacji: Nocturna, Simba Group, MSC szablony, Kasia, LUX NOVA wizytówka, TALIA
+    - Usunięto pole `process_steps` tam gdzie dodano blok `steps` w contentBlocks
+  - **Weryfikacja**: JSON parsuje się bez błędów ✅
+
+## 2026-01-16
+
+- ✅ **[PROJECT-010] Realizacje: ujednolicić system contentBlocks z artykułami + dodać nowe komponenty**
+
+  - **Pliki**:
+    - `types/project.ts` — rozszerzono `ContentBlock` o 13 typów bloków
+    - `app/(pl)/realizacje/[slug]/page.tsx` — rozbudowano `RenderBlocks` o obsługę wszystkich nowych typów
+    - `data/pl/projects.json` — zaktualizowano realizację Brewerynka jako przykład nowego systemu
+  - **Nowe typy bloków w realizacjach**:
+    - `richtext`, `image`, `imageText` (istniejące, rozszerzone o `breakBefore`/`breakAfter`)
+    - `quote`, `callout` — cytaty i wyróżnienia
+    - `steps` — kroki z ikonami (używa `SectionSteps`)
+    - `metrics` — metryki ze słupkami postępu (używa `SectionMetrics`)
+    - `featureList` — lista cech z checkmarkami (używa `SectionFeatureList`)
+    - `process` — kompaktowe kroki poziome (używa `SectionProcess`)
+    - `infoBanner` — baner informacyjny (używa `SectionInfoBanner`)
+    - `deliverables`, `outcomes`, `testimonial`, `beforeAfter` — bloki case study
+  - **Zachowana kompatybilność wsteczna** z istniejącymi polami (`process_steps`, `outcomes`, `deliverables` itp.)
+  - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
+  - **Follow-up**: `CONTENT-005` — naprawić placeholder dane w realizacjach Perly Mocy i Izoluk
+
+- ✅ **[DOCS-001] Refaktoryzacja INSTRUCTIONS.md — wydzielenie instrukcji tworzenia treści do osobnego pliku**
+
+  - **Pliki**: `docs/INSTRUCTIONS.md`, `docs/CONTENT_INSTRUCTIONS.md` (nowy)
+  - **Wykonane zmiany**:
+    - Stworzono nowy plik `CONTENT_INSTRUCTIONS.md` z uporządkowanymi wytycznymi tworzenia treści (10 sekcji)
+    - W `INSTRUCTIONS.md` dodano odnośnik do nowego pliku + skrót kluczowych zasad
+    - Usunięto duplikaty i połączono nakładające się wytyczne
+    - Dodano zasadę: po zakończeniu zadania przedstawiać zmiany w formie tabeli
+  - **Weryfikacja**: nie wymagana (DOCS-only)
+
+- ✅ **[CONTENT-004] Blog: redakcja artykułu o kanibalizacji słów kluczowych zgodnie z nowymi wytycznymi**
+
+  - **Plik**: `data/pl/blog.json`, artykuł `czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`
+  - **Wykonane zmiany**:
+    - Usunięto wstawkę wyobrażeniową ("Teraz wyobraź sobie" → "Załóżmy")
+    - Skrócono oznaczenie przykładu hipotetycznego (bez "(wymyślony, nie oparty o realną kancelarię)")
+    - Zmieniono przyciski CTA: "Audyt SEO" → "Sprawdź ofertę audytu SEO", "Skontaktuj się" → "Skontaktuj się z nami"
+    - Zaktualizowano dateModified na 2026-01-16
+  - **Weryfikacja**: nie wymagana (COPY-only)
+
+- ✅ **[CONTENT-002] Blog: poprawić excerpty wszystkich artykułów do 220-230 znaków**
+
+  - **Plik**: `data/pl/blog.json`
+  - **Zakres**: Wszystkie 40 artykułów
+  - **Wykonane zmiany**:
+    - Poprawiono excerpty artykułów 0-39 do zakresu 220-230 znaków (ze spacjami)
+    - Każdy excerpt zachowuje kontekst i ton artykułu
+    - Excerpty są angażujące i zachęcają do kliknięcia
+  - **Weryfikacja**: JSON poprawny, skrypt `check-excerpts.cjs` potwierdza 40/40 OK
+  - **Cleanup**: Usunięto pomocniczy skrypt `scripts/check-excerpts.cjs`
+
+## 2026-01-15
+
+- 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty) — iteracja 2026-01-15**
+
+  - **Zakres audytu:**
+    - Drag & drop/upload: wykorzystanie wspólnych `useFileDropzone` + `ToolFileDropzone` (bez rozjazdów — OK).
+    - Clipboard: porównanie `useCopyToClipboard` vs `useSignatureCopy` (różne mechanizmy resetu timera).
+    - Object URL: wzorce `URL.createObjectURL` + revoke w narzędziach (SVG/PNG/ZIP) vs shared `downloadBlob` + `objectUrl`.
+    - ZIP: dublowana logika pobierania plików po URL → `arrayBuffer` → ZIP w 2 miejscach.
+  - **Nowe zadania (follow-up):**
+    - `CLEANUP-013` — ujednolicić pobieranie Blob → URL przez `downloadBlob` (QrCode SVG, ImageResize export, exportSignature, Favicon ZIP handler).
+    - `CLEANUP-014` — ujednolicić timery w `useCopyToClipboard` przez `useTimeout`.
+    - `TOOLS-060` — dodać helper `zipFromUrls` i użyć w Favicon/WebP ZIP.
+  - **Uwagi:**
+    - Brak zmian w UI/UX; audyt-only. Implementacja w osobnych zadaniach.
+
+## 2026-01-12
+
+- ✅ **[IDEA-073] Artykuł: Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?**
+
+  - **Plik**: `data/pl/blog.json`
+  - **Slug**: `czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac`
+  - **Data publikacji**: 2026-01-12
+  - **Czas czytania**: 11 min (około 2200 słów)
+  - **Kategorie**: Strony, UX
+  - **Zakres artykułu**:
+    - Czym jest błąd 404 (kod statusu HTTP, pochodzenie nazwy)
+    - Dlaczego powstają błędy 404 (usunięta strona, literówka, nieprawidłowy link, zmiany struktury, wygasła oferta)
+    - Dlaczego dobra strona 404 ma znaczenie (zrozumienie sytuacji, zatrzymanie użytkownika, budowanie zaufania, wsparcie SEO)
+    - Co powinna zawierać strona 404 (prosty komunikat, link do strony głównej, wyszukiwarka, linki do sekcji, spójna stylizacja, formularz zgłoszenia błędu)
+    - Jak strona 404 wpływa na SEO (błędy w GSC, przekierowania 301, soft 404)
+    - Najczęstsze błędy w projektowaniu (brak informacji, techniczny żargon, brak nawigacji, automatyczne przekierowanie, kreatywność ponad funkcjonalnością)
+    - Przykłady dobrych praktyk dla różnych typów witryn (sklepy, blogi, witryny usługowe)
+    - Jak monitorować i naprawiać błędy 404 (Google Search Console, Google Analytics, audyty linków)
+  - **Linki wewnętrzne (8)**: `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`, `/edukacja/strony/dlaczego-strona-powinna-miec-jasna-hierarchie-informacji`, `/edukacja/ux/jak-nawigacja-na-stronie-wplywa-na-sprzedaz`, `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie`, `/edukacja/grafika/co-to-jest-identyfikacja-wizualna-i-dlaczego-kazda-firma-ja-potrzebuje`, `/edukacja/seo/co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`, `/edukacja/sklepy/dlaczego-klienci-porzucaja-koszyki-i-jak-temu-zapobiegac`, `/uslugi/marketing/audyt-seo`, `/uslugi/strony-internetowe`, `/kontakt`
+  - **Linki zewnętrzne (6)**: W3C HTTP/1.1 specification, Google Search Console (3x), Google Analytics, Ahrefs, Screaming Frog
+  - **Tooltips (5)**: SEO, HTTP, branding, współczynnik odrzuceń, soft 404
+  - **FAQ**: 6 pytań z odpowiedziami
+  - **CTA**: Strony internetowe + Kontakt
+  - **Ton**: Mentorski, edukacyjny — bez pouczania, z konkretnymi przykładami dla różnych typów witryn
+  - **Zgodność z INSTRUCTIONS**: Artykuł spełnia wszystkie wymogi (około 2200 słów = 11 min czytania, 10 linków wewnętrznych, 6 linków zewnętrznych, tooltips dla terminów technicznych, wszystkie linki zewnętrzne z target='\_blank' rel='noopener noreferrer', linki widoczne z underline/inline-link)
+  - **Weryfikacja**: Zaktualizowano `BLOG_CATALOG.md` i `TASKS.md`
+
+- ✅ **[IDEA-068] Artykuł: Czym jest kanibalizacja słów kluczowych i jak jej unikać?**
+
+  - **Plik**: `data/pl/blog.json`
+  - **Slug**: `czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`
+  - **Data publikacji**: 2026-01-12
+  - **Czas czytania**: 11 min (około 2200 słów)
+  - **Kategorie**: SEO, Treści
+  - **Zakres artykułu**:
+    - Czym jest kanibalizacja i dlaczego to problem (rozmycie sygnałów, niestabilność rankingu, budżet indeksowania)
+    - Jak rozpoznać kanibalizację (Google Search Console raport wydajności, zapytanie site:, audyt SEO)
+    - Najczęstsze przyczyny (podobne artykuły, produkty w wielu kategoriach, paginacja, tagi)
+    - Jak naprawić (połączenie stron + 301, zmiana focusu, linkowanie wewnętrzne, canonical, de-indeksacja)
+    - Jak unikać w przyszłości (planowanie struktury, aktualizacja zamiast nowych, jedna strona główna, monitorowanie GSC)
+    - Kanibalizacja a synonimy (algorytm BERT, intencja zapytań)
+    - Praktyczny przykład hipotetyczny (kancelaria prawna — rozwody)
+  - **Linki wewnętrzne (8)**: `/edukacja/seo/co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`, `/edukacja/seo/jak-linki-wewnetrzne-wplywaja-na-pozycjonowanie`, `/edukacja/seo/dlaczego-stare-tresci-moga-szkodzic-widocznosci-w-google`, `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie`, `/uslugi/tworzenie-tresci`, `/kontakt`
+  - **Linki zewnętrzne (4)**: Google Search Console (3x), Google BERT blog
+  - **Tooltips (6)**: Google nie wie którą stronę wyświetlić, linki zwrotne, budżet indeksowania, WCAG, przekierowanie 301, architektura informacji
+  - **FAQ**: 6 pytań z odpowiedziami
+  - **CTA**: Audyt SEO + Kontakt
+  - **Ton**: Mentorski, edukacyjny — bez pouczania, z konkretnymi metodami diagnostyki i naprawy
+  - **Zgodność z INSTRUCTIONS**: Artykuł spełnia wszystkie wymogi (1800-2800 słów, min. 6-8 linków wewnętrznych, min. 4-6 zewnętrznych, tooltips dla terminów, przykład oznaczony jako hipotetyczny, wszystkie linki zewnętrzne z target='\_blank' rel='noopener noreferrer', linki widoczne z underline)
+  - **Weryfikacja**: Zaktualizowano `BLOG_CATALOG.md`
+
 ## 2026-01-07
 
 - ✅ **[UI-001] Karuzele: zwiększenie limitu wyświetlanych elementów do 10**
@@ -73,6 +206,7 @@
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[COMPONENT-FIX-003] Poprawki COMPONENT-041 i COMPONENT-043**
+
   - **Data wykonania:** 2026-01-06
   - **Naprawione komponenty:**
     - **COMPONENT-041 (SectionBlogCardHorizontal)**:
@@ -81,6 +215,7 @@
     - **COMPONENT-043 (SectionCountdown)**:
 
 - ✅ **[COMPONENT-FIX-002] Poprawki komponentów showcase**
+
   - **Data wykonania:** 2026-01-06
   - **Naprawione komponenty:**
     - **COMPONENT-019 (TestimonialsCarousel variant="large")**:
@@ -113,6 +248,7 @@
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[UI-001] ShareBlock: zmiana wyglądu przycisków udostępniania na większe z tekstem i kolorami brand**
+
   - **Data wykonania:** 2026-01-06
   - **Zakres:**
     - Zrefaktorowano `ShareBlock` z małych okrągłych ikon na większe przyciski z tekstem i kolorami brand
@@ -163,6 +299,7 @@
 ## 2026-01-06
 
 - ✅ **[COPY-033 do COPY-037] Realizacja zadań follow-up z AUDIT-004**
+
   - **Data wykonania:** 2026-01-06
   - **Wykonane zadania:**
     - **COPY-033**: Zamieniono ogólnikowe "buduje zaufanie" na konkretne "zwiększa wiarygodność w oczach klientów" i "zwiększa rozpoznawalność" (3 pliki)
@@ -194,6 +331,7 @@
   - **Status:** Wszystkie 5 zadań COPY wykonane i przeniesione do DONE_TASKS.md
 
 - ✅ **[AUDIT-004] Audyt stron usług, narzędzi, instrukcji i realizacji**
+
   - **Data wykonania:** 2026-01-06
   - **Zakres audytu:**
     - Wszystkie strony w `app/(pl)/uslugi/**` (13+ stron usług)
@@ -224,6 +362,7 @@
   - **Status:** Audyt zakończony, wszystkie zadania zrealizowane
 
 - ✅ **[COPY-027 do COPY-032] Realizacja zadań follow-up z AUDIT-002**
+
   - **Data wykonania:** 2026-01-06
   - **Wykonane zadania:**
     - **COPY-027**: Zamieniono "Oczywiście" na neutralne "Tak" w 2 plikach FAQ (tworzenie-tresci, component)
@@ -248,6 +387,7 @@
   - **Status:** Wszystkie 6 zadań COPY wykonane i przeniesione do DONE_TASKS.md
 
 - ✅ **[AUDIT-002] Głęboki audyt zgodności z wytycznymi (130+ stron)**
+
   - **Data wykonania:** 2026-01-06
   - **Zakres audytu:**
     - Wszystkie strony w `app/(pl)/**` (130+ stron/podstron)
@@ -284,7 +424,7 @@
     - Główne problemy to drobne sformułowania w FAQ i pakietach
     - Nie znaleziono poważnych naruszeń tonu (chamstwo, nachalność)
     - Artykuły w blog.json wymagają najwięcej poprawek ("Wystarczy")
-  - **Status:** Audyt zakończony, utworzono 6 zadań COPY-* do realizacji
+  - **Status:** Audyt zakończony, utworzono 6 zadań COPY-\* do realizacji
 
 - ✅ **[COPY-020 do COPY-026] Realizacja zadań follow-up z AUDIT-001**
   - **Data wykonania:** 2026-01-06
@@ -295,7 +435,7 @@
     - **COPY-023**: Poprawiono FAQ "nie chodzi o konkretny kolor" na "kluczowy jest kontrast z resztą strony, nie sam kolor"
     - **COPY-024**: Zastąpiono ogólnikową frazę "buduje zaufanie" konkretnymi sformułowaniami w 9 plikach stron usług ("pokazuje profesjonalizm", "zwiększa wiarygodność firmy", "zwiększa wiarygodność w oczach klientów")
     - **COPY-025**: Przepisano 2 FAQ w `blog.json` bez odwołań do "badań pokazują" (brak możliwości znalezienia konkretnych źródeł)
-    - **COPY-026**: Zamieniono anglicyzm "social media" na "media społecznościowe" w 23+ plikach (strony usług, projects.json, blog.json, calculator/*.ts)
+    - **COPY-026**: Zamieniono anglicyzm "social media" na "media społecznościowe" w 23+ plikach (strony usług, projects.json, blog.json, calculator/\*.ts)
   - **Zmienionych plików:** 23
     - 13 stron usług (tsx)
     - 2 pliki JSON (blog, projects)
@@ -315,6 +455,7 @@
 ## 2026-01-06
 
 - ✅ **[AUDIT-001] Repo: audyt treści — zgodność z wytycznymi tonu i stylu pisania**
+
   - **Data wykonania:** 2026-01-06
   - **Zakres audytu:**
     - Komponenty globalne: `Navigation.tsx`, `Footer.tsx`, `CookieConsent.tsx`, `HeroBanner.tsx`, `WorkSteps.tsx`
@@ -354,7 +495,7 @@
     - Nie znaleziono poważnych błędów ortograficznych ani gramatycznych
     - Komponenty globalne (nawigacja, stopka) są poprawne
     - Główne problemy dotyczą sformułowań, które wkradły się do starszych tekstów przed wdrożeniem aktualnych wytycznych
-  - **Status:** Audyt zakończony, wszystkie niezgodności zidentyfikowane i przekształcone w konkretne zadania COPY-* z kryteriami akceptacji
+  - **Status:** Audyt zakończony, wszystkie niezgodności zidentyfikowane i przekształcone w konkretne zadania COPY-\* z kryteriami akceptacji
 
 - ✅ **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
 
@@ -775,23 +916,23 @@
     - Search Bar Expandable, Input With Icon, Textarea With Counter
     - Select Dropdown Custom, Checkbox Group, Radio Button Cards
     - Date Picker Simple, File Upload Dropzone, Password Strength Meter, Form Inline
-    **Powiadomienia i alerty (151-160):**
+      **Powiadomienia i alerty (151-160):**
     - Toast Notification, Alert Banner, Notification Badge
     - Progress Bar Animated, Loading Spinner, Skeleton Loader
     - Empty State Alt, Error State, Success Message, Warning Card
-    **Profile i użytkownicy (161-170):**
+      **Profile i użytkownicy (161-170):**
     - User Avatar, User Card Mini, Author Bio Alt, Team Grid Alt
     - Contributor List, Online Status, User Menu Dropdown
     - Profile Stats, Achievement Badge, Leaderboard Row
-    **Statystyki i dane (171-180):**
+      **Statystyki i dane (171-180):**
     - Stat Card Simple, Stat Card Trend, Progress Circle, Comparison Bar
     - Data Table Simple, Chart Placeholder, KPI Dashboard
     - Metric Highlight, Percentage Badge, Growth Indicator
-    **Social proof i recenzje (181-190):**
+      **Social proof i recenzje (181-190):**
     - Review Card Detailed, Rating Summary, Testimonial Quote Alt
     - Social Proof Counter, Featured Review, Review Highlights
     - Trust Score, Verified Purchase, Helpful Vote, Review Response
-    **Pozostałe uniwersalne (191-200):**
+      **Pozostałe uniwersalne (191-200):**
     - Divider With Text, Tag Cloud, Category Pills Alt, Quick Actions
     - Feature List, Comparison Table Component, Timeline Compact
     - Changelog Entry, Version Badge, Status Indicator
@@ -809,23 +950,23 @@
     - Mega Menu, Sidebar Collapsible, Tab Navigation Underline
     - Breadcrumb Animated, Navigation Pills, Vertical Tabs
     - Step Navigation, Quick Links Bar, Language Switcher, Back to Top Button
-    **Stopki (91-98):**
+      **Stopki (91-98):**
     - Footer Minimal, Footer Multi-Column, Footer With Newsletter
     - Footer Dark, Footer Centered, Footer With Social
     - Footer Sitemap, Footer Contact Bar
-    **Karuzele i slidery (99-108):**
+      **Karuzele i slidery (99-108):**
     - Logo Carousel Infinite, Testimonial Carousel Cards, Image Carousel Fade
     - Card Carousel Peek, Before After Slider Alt, Product Gallery Thumbs
     - Team Slider Centered, News Ticker, Stats Carousel, Portfolio Slider Full
-    **Elementy interaktywne (109-120):**
+      **Elementy interaktywne (109-120):**
     - Toggle Switch, Range Slider, Quantity Selector, Color Picker Preview
     - Star Rating Interactive, Like Button Animated, Copy Button
     - Share Dropdown, Bookmark Toggle, Reaction Picker, Vote Buttons, Expand/Collapse All
-    **Karty i bloki (121-130):**
+      **Karty i bloki (121-130):**
     - Product Card Detailed, Pricing Card Highlighted, Team Member Card Flip
     - Blog Card Horizontal, Event Card, Job Listing Card
     - Course Card, Podcast Episode Card, Recipe Card, Real Estate Card
-    **Sekcje hero i banery (131-140):**
+      **Sekcje hero i banery (131-140):**
     - Hero Gradient Animated, Hero Split Image, Hero Video Background, Hero Minimal Text
     - Announcement Bar Dismissible, Promo Banner Countdown, Cookie Banner Compact
     - App Download Banner, Trust Badges Row, Client Logos Grid
@@ -838,47 +979,7 @@
 
   - **URL**: `/component` (strona deweloperska, noindex)
   - **Plik**: `app/(pl)/component/page.tsx`
-  - **Komponenty (41-80)**:
-    41. **Masonry Grid** — siatka o zmiennej wysokości kart
-    42. **Tabbed Content** — zakładki z przełączaną treścią
-    43. **Timeline Horizontal** — pozioma oś czasu
-    44. **Card Hover Effects** — karty z efektami hover
-    45. **Metric Dashboard** — dashboard z metrykami
-    46. **Team Carousel** — karuzela członków zespołu
-    47. **Feature Comparison Table** — tabela porównawcza funkcji
-    48. **Animated Counter** — liczniki (statystyki)
-    49. **Icon Grid** — siatka ikon z opisami
-    50. **Testimonial Slider Large** — duży slider opinii
-    51. **Portfolio Masonry** — masonry dla portfolio
-    52. **Pricing Toggle** — cennik z przełącznikiem miesięczny/roczny
-    53. **FAQ Search** — FAQ z wyszukiwarką
-    54. **Contact Split** — formularz kontaktowy z info
-    55. **Blog Grid** — siatka wpisów blogowych
-    56. **Category Pills** — przyciski kategorii (filtry)
-    57. **Notification Banner** — pasek powiadomień z dismiss
-    58. **Modal Preview** — podgląd modalny
-    59. **Sidebar Navigation** — nawigacja boczna
-    60. **Breadcrumb Variants** — warianty breadcrumb
-    61. **Avatar Group** — grupa awatarów
-    62. **Rating Stars** — gwiazdki oceny
-    63. **Progress Bar Variants** — warianty pasków postępu
-    64. **Badge Collection** — kolekcja badge'ów
-    65. **Alert Variants** — warianty alertów (info/success/warning/error)
-    66. **Empty State** — stan pusty
-    67. **Loading Skeleton** — skeleton loading
-    68. **Tooltip Examples** — przykłady tooltipów
-    69. **Dropdown Menu** — menu rozwijane
-    70. **Search Input** — pole wyszukiwania
-    71. **Tag Input** — pole z tagami
-    72. **Date Picker Preview** — podgląd wyboru daty
-    73. **File Upload Zone** — strefa upload plików
-    74. **Image Gallery Lightbox** — galeria z lightboxem
-    75. **Video Placeholder** — placeholder dla wideo
-    76. **Map Placeholder** — placeholder dla mapy
-    77. **Social Share Buttons** — przyciski udostępniania
-    78. **Author Bio** — bio autora
-    79. **Related Articles** — powiązane artykuły
-    80. **Pagination** — paginacja stron
+  - **Komponenty (41-80)**: 41. **Masonry Grid** — siatka o zmiennej wysokości kart 42. **Tabbed Content** — zakładki z przełączaną treścią 43. **Timeline Horizontal** — pozioma oś czasu 44. **Card Hover Effects** — karty z efektami hover 45. **Metric Dashboard** — dashboard z metrykami 46. **Team Carousel** — karuzela członków zespołu 47. **Feature Comparison Table** — tabela porównawcza funkcji 48. **Animated Counter** — liczniki (statystyki) 49. **Icon Grid** — siatka ikon z opisami 50. **Testimonial Slider Large** — duży slider opinii 51. **Portfolio Masonry** — masonry dla portfolio 52. **Pricing Toggle** — cennik z przełącznikiem miesięczny/roczny 53. **FAQ Search** — FAQ z wyszukiwarką 54. **Contact Split** — formularz kontaktowy z info 55. **Blog Grid** — siatka wpisów blogowych 56. **Category Pills** — przyciski kategorii (filtry) 57. **Notification Banner** — pasek powiadomień z dismiss 58. **Modal Preview** — podgląd modalny 59. **Sidebar Navigation** — nawigacja boczna 60. **Breadcrumb Variants** — warianty breadcrumb 61. **Avatar Group** — grupa awatarów 62. **Rating Stars** — gwiazdki oceny 63. **Progress Bar Variants** — warianty pasków postępu 64. **Badge Collection** — kolekcja badge'ów 65. **Alert Variants** — warianty alertów (info/success/warning/error) 66. **Empty State** — stan pusty 67. **Loading Skeleton** — skeleton loading 68. **Tooltip Examples** — przykłady tooltipów 69. **Dropdown Menu** — menu rozwijane 70. **Search Input** — pole wyszukiwania 71. **Tag Input** — pole z tagami 72. **Date Picker Preview** — podgląd wyboru daty 73. **File Upload Zone** — strefa upload plików 74. **Image Gallery Lightbox** — galeria z lightboxem 75. **Video Placeholder** — placeholder dla wideo 76. **Map Placeholder** — placeholder dla mapy 77. **Social Share Buttons** — przyciski udostępniania 78. **Author Bio** — bio autora 79. **Related Articles** — powiązane artykuły 80. **Pagination** — paginacja stron
   - **Łącznie na stronie**: 80 komponentów sekcyjnych
   - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
   - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
@@ -910,27 +1011,7 @@
 
   - **URL**: `/component` (strona deweloperska, noindex)
   - **Plik**: `app/(pl)/component/page.tsx`
-  - **Komponenty (21-40)**:
-    21. **Bento Grid** — siatka kart o różnych rozmiarach (hero alternatywa, strona główna)
-    22. **Feature Cards Horizontal** — karty funkcji w układzie horyzontalnym (strony usług)
-    23. **Alternating Content** — sekcje tekst+obraz naprzemiennie (case studies, usługi)
-    24. **Accordion with Icons** — rozwijane sekcje z ikonami (FAQ rozbudowane)
-    25. **Progress Steps** — kroki z paskiem postępu (onboarding, formularze)
-    26. **Floating Cards** — karty z efektem unoszenia/cienia (wyróżnienia, promocje)
-    27. **Split Hero** — hero podzielone na dwie kolumny (strona główna)
-    28. **Testimonials Grid** — siatka opinii bez karuzeli (social proof)
-    29. **Service Blocks** — bloki usług z listą cech (strona usług)
-    30. **Comparison Cards** — karty porównawcze przed/po (cenniki)
-    31. **Info Banner** — pasek informacyjny na całą szerokość (promocje)
-    32. **Feature List with Checkmarks** — lista funkcji z checkmarkami (pakiety)
-    33. **Stacked Cards** — karty nachodzące na siebie (portfolio)
-    34. **Quote Carousel Static** — statyczne cytaty (opinie)
-    35. **Icon Badges Row** — rząd badge'ów z ikonami (certyfikaty, technologie)
-    36. **Two-Column Text** — tekst w dwóch kolumnach (artykuły)
-    37. **Gradient Section** — sekcja z gradientowym tłem (CTA)
-    38. **Expandable Cards** — karty rozwijane po kliknięciu (szczegóły usług)
-    39. **Mini Stats Row** — kompaktowy rząd statystyk (pod hero)
-    40. **Content with Sidebar** — treść z bocznym panelem info (artykuły)
+  - **Komponenty (21-40)**: 21. **Bento Grid** — siatka kart o różnych rozmiarach (hero alternatywa, strona główna) 22. **Feature Cards Horizontal** — karty funkcji w układzie horyzontalnym (strony usług) 23. **Alternating Content** — sekcje tekst+obraz naprzemiennie (case studies, usługi) 24. **Accordion with Icons** — rozwijane sekcje z ikonami (FAQ rozbudowane) 25. **Progress Steps** — kroki z paskiem postępu (onboarding, formularze) 26. **Floating Cards** — karty z efektem unoszenia/cienia (wyróżnienia, promocje) 27. **Split Hero** — hero podzielone na dwie kolumny (strona główna) 28. **Testimonials Grid** — siatka opinii bez karuzeli (social proof) 29. **Service Blocks** — bloki usług z listą cech (strona usług) 30. **Comparison Cards** — karty porównawcze przed/po (cenniki) 31. **Info Banner** — pasek informacyjny na całą szerokość (promocje) 32. **Feature List with Checkmarks** — lista funkcji z checkmarkami (pakiety) 33. **Stacked Cards** — karty nachodzące na siebie (portfolio) 34. **Quote Carousel Static** — statyczne cytaty (opinie) 35. **Icon Badges Row** — rząd badge'ów z ikonami (certyfikaty, technologie) 36. **Two-Column Text** — tekst w dwóch kolumnach (artykuły) 37. **Gradient Section** — sekcja z gradientowym tłem (CTA) 38. **Expandable Cards** — karty rozwijane po kliknięciu (szczegóły usług) 39. **Mini Stats Row** — kompaktowy rząd statystyk (pod hero) 40. **Content with Sidebar** — treść z bocznym panelem info (artykuły)
   - **Łącznie na stronie**: 40 komponentów sekcyjnych
   - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
   - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
@@ -1554,7 +1635,7 @@
     - Usunięto funkcję `redirects()` z `next.config.ts` (pozostały tylko headers i webpack).
   - **Pliki zmienione**:
     - `lib/redirects.ts` (nowy) — TOOL_REDIRECTS, LEGACY_REDIRECTS, PROJECT_REDIRECTS, EDUCATION_REDIRECTS, ALL_STATIC_REDIRECTS
-    - `middleware.ts` — import + matchPatternRedirect dla /projects/:slug i /edukacja/design/:path*
+    - `middleware.ts` — import + matchPatternRedirect dla /projects/:slug i /edukacja/design/:path\*
     - `next.config.ts` — usunięto async redirects()
   - **Korzyści**: Jeden plik źródłowy dla wszystkich redirectów, łatwiejsze zarządzanie, middleware (edge) zamiast next.config.
 
@@ -4088,6 +4169,7 @@
     - Zaktualizowano tracking: przeniesiono wpis TOOLS-011 z `TASKS.md` do `DONE_TASKS.md`.
 
 - ✅ **[AUDIT-001] Repo: audyt treści (literówki, ortografia, interpunkcja, spójność copy)**
+
   - **Zakres audytu:**
     - Sprawdzono strony w `app/(pl)/**`: strona główna, o nas, kontakt, usługi
     - Analizowano dane w `data/pl/blog.json` i `data/pl/projects.json` (pierwsze 100 linii każdego pliku)

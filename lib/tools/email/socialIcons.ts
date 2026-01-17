@@ -37,11 +37,7 @@ const PLATFORM_COLORS: Record<SocialPlatform, string> = {
   behance: '#1769FF',
 };
 
-export function getSocialIcon(
-  platform: SocialPlatform,
-  size: IconSize = 'medium',
-  color?: string
-): string {
+export function getSocialIcon(platform: SocialPlatform, size: IconSize = 'medium', color?: string): string {
   const sizeValue = ICON_SIZES[size];
   const fillColor = color || PLATFORM_COLORS[platform];
   const pathData = SOCIAL_ICONS[platform];
@@ -49,11 +45,7 @@ export function getSocialIcon(
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${sizeValue}" height="${sizeValue}" viewBox="0 0 24 24" fill="${fillColor}" style="display:inline-block;vertical-align:middle;">${pathData}</svg>`;
 }
 
-export function getSocialIconDataUrl(
-  platform: SocialPlatform,
-  size: IconSize = 'medium',
-  color?: string
-): string {
+export function getSocialIconDataUrl(platform: SocialPlatform, size: IconSize = 'medium', color?: string): string {
   const svg = getSocialIcon(platform, size, color);
   const encoded = encodeURIComponent(svg);
   return `data:image/svg+xml,${encoded}`;

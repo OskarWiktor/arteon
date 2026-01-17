@@ -1,6 +1,34 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import {
+  RiCheckLine,
+  RiArrowRightLine,
+  RiFlashlightLine,
+  RiFocus3Line,
+  RiLineChartLine,
+  RiShieldLine,
+  RiUserLine,
+  RiStarLine,
+  RiTimeLine,
+  RiAwardLine,
+  RiBriefcaseLine,
+  RiSettingsLine,
+  RiFileTextLine,
+  RiStackLine,
+  RiPaletteLine,
+  RiCodeLine,
+  RiGlobalLine,
+  RiShoppingCartLine,
+  RiPencilLine,
+  RiSearchLine,
+  RiLayoutLine,
+  RiEyeLine,
+  RiBankCardLine,
+  RiLinksLine,
+  RiBookOpenLine,
+  RiMessageLine,
+} from 'react-icons/ri';
 
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
@@ -8,7 +36,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import HeroBanner from '@/components/sections/HeroBanner';
 
 import projectsData from '@/data/pl/projects.json';
-import type { Project } from '@/types/project';
+import type { Project, ContentBlock } from '@/types/project';
 import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 import TableOfContents from '@/components/sections/TableOfContent';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
@@ -18,6 +46,11 @@ import CTABanner from '@/components/sections/CTABanner';
 import FaqPanels from '@/components/ui/FaqPanels';
 import ShareBlock from '@/components/sections/ShareBlock';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
+import SectionSteps from '@/components/ui/sections/SectionSteps';
+import SectionMetrics from '@/components/ui/sections/SectionMetrics';
+import SectionFeatureList from '@/components/ui/sections/SectionFeatureList';
+import SectionProcess from '@/components/ui/sections/SectionProcess';
+import SectionInfoBanner from '@/components/ui/sections/SectionInfoBanner';
 
 interface ProjectsData {
   projects: Project[];
@@ -92,20 +125,62 @@ function Aspect({ ratio = '16/9', children }: { ratio?: '16/9' | '4/3' | '1/1' |
   return <div className={`relative overflow-hidden rounded-2xl border border-black/10 ${map[ratio] || ''}`}>{children}</div>;
 }
 
-function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
+const ICON_MAP: Record<string, React.ElementType> = {
+  zap: RiFlashlightLine,
+  target: RiFocus3Line,
+  trending: RiLineChartLine,
+  shield: RiShieldLine,
+  users: RiUserLine,
+  star: RiStarLine,
+  clock: RiTimeLine,
+  award: RiAwardLine,
+  briefcase: RiBriefcaseLine,
+  settings: RiSettingsLine,
+  file: RiFileTextLine,
+  layers: RiStackLine,
+  palette: RiPaletteLine,
+  code: RiCodeLine,
+  globe: RiGlobalLine,
+  cart: RiShoppingCartLine,
+  pen: RiPencilLine,
+  check: RiCheckLine,
+  arrow: RiArrowRightLine,
+  search: RiSearchLine,
+  layout: RiLayoutLine,
+  eye: RiEyeLine,
+  'credit-card': RiBankCardLine,
+  link: RiLinksLine,
+  'book-open': RiBookOpenLine,
+  'message-circle': RiMessageLine,
+};
+
+function getIcon(iconName?: string) {
+  if (!iconName) return null;
+  const IconComponent = ICON_MAP[iconName.toLowerCase()];
+  return IconComponent ? <IconComponent className="h-5 w-5" /> : null;
+}
+
+function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
   if (!blocks?.length) return null;
 
   return (
     <>
       {blocks.map((b, i) => {
+        const wrapperClass = b.breakBefore ? 'mt-8' : b.breakAfter ? 'mb-8' : '';
+
         if (b.type === 'richtext') {
-          return <div key={`rt-${i}`} dangerouslySetInnerHTML={{ __html: b.html }} />;
+          return (
+            <div key={`rt-${i}`} className={wrapperClass}>
+              <div dangerouslySetInnerHTML={{ __html: b.html }} />
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
         }
 
         if (b.type === 'image') {
           const isAuto = b.ratio === 'auto';
           return (
-            <div key={`img-${i}`}>
+            <div key={`img-${i}`} className={wrapperClass}>
               <Gap size="xs" />
               <figure>
                 {isAuto ? (
@@ -128,6 +203,7 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
                 )}
                 {b.caption && <figcaption className="text-light mt-2 text-sm">{b.caption}</figcaption>}
               </figure>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
             </div>
           );
         }
@@ -154,7 +230,7 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
             );
 
           return (
-            <div key={`imgt-${i}`}>
+            <div key={`imgt-${i}`} className={wrapperClass}>
               <Gap size="xs" />
               <div className="grid items-start gap-6 md:grid-cols-2">
                 {b.imageSide === 'right' ? (
@@ -169,6 +245,199 @@ function RenderBlocks({ blocks }: { blocks?: Project['contentBlocks'] }) {
                   </>
                 )}
               </div>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'quote') {
+          return (
+            <div key={`quote-${i}`} className={wrapperClass}>
+              <figure className="rounded-2xl bg-white p-6 shadow-md">
+                <blockquote>
+                  <p className="text-lg leading-relaxed">"{b.text}"</p>
+                </blockquote>
+                {(b.author || b.role) && (
+                  <figcaption className="text-light mt-3 text-sm">
+                    {b.author}
+                    {b.role ? `, ${b.role}` : ''}
+                  </figcaption>
+                )}
+              </figure>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'callout') {
+          const calloutIcon = getIcon(b.icon);
+          return (
+            <div key={`callout-${i}`} className={wrapperClass}>
+              <div className="border-accent flex gap-4 rounded-2xl border-l-4 bg-white p-6 shadow-md">
+                {calloutIcon && <div className="text-accent mt-1 shrink-0">{calloutIcon}</div>}
+                <div>
+                  {b.title && <h4 className="h5 mb-2">{b.title}</h4>}
+                  {b.html ? <div dangerouslySetInnerHTML={{ __html: b.html }} /> : b.text && <p>{b.text}</p>}
+                </div>
+              </div>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'steps') {
+          const stepsItems = b.items.map((item) => ({
+            icon: getIcon(item.icon),
+            title: item.title,
+            description: item.description,
+          }));
+          return (
+            <div key={`steps-${i}`} className={wrapperClass}>
+              <SectionSteps title={b.title} items={stepsItems} variant={b.variant} />
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'metrics') {
+          const metricsWithDefaults = b.items.map((m) => ({
+            label: m.label,
+            value: m.value,
+            unit: m.unit || '%',
+            max: m.max || 100,
+            color: m.color || 'bg-accent',
+            inverse: m.inverse,
+          }));
+          return (
+            <div key={`metrics-${i}`} className={wrapperClass}>
+              <SectionMetrics title={b.title} metrics={metricsWithDefaults} />
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'featureList') {
+          return (
+            <div key={`features-${i}`} className={wrapperClass}>
+              <SectionFeatureList title={b.title} features={b.items} />
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'process') {
+          const processSteps = b.items.map((item) => ({
+            number: item.number,
+            title: item.title,
+            icon: getIcon(item.icon),
+          }));
+          return (
+            <div key={`process-${i}`} className={wrapperClass}>
+              <SectionProcess title={b.title} steps={processSteps} />
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'infoBanner') {
+          if (!b.btnLabel || !b.btnLink) return null;
+          return (
+            <div key={`banner-${i}`} className={wrapperClass}>
+              <SectionInfoBanner icon={getIcon(b.icon)} text={b.text} highlight={b.highlight} btnLabel={b.btnLabel} btnLink={b.btnLink} />
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'deliverables') {
+          return (
+            <div key={`deliverables-${i}`} className={wrapperClass}>
+              <SectionInfo title={b.title || 'Zakres prac'}>
+                <ul className="ml-6 list-disc">
+                  {b.items.map((d, idx) => (
+                    <li key={idx} dangerouslySetInnerHTML={{ __html: d }} />
+                  ))}
+                </ul>
+              </SectionInfo>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'outcomes') {
+          return (
+            <div key={`outcomes-${i}`} className={wrapperClass}>
+              <SectionInfo title={b.title || 'Rezultaty'}>
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {b.items.map((o, idx) => (
+                    <Stat key={idx} label={o.label} value={o.value} note={o.note} />
+                  ))}
+                </div>
+              </SectionInfo>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'testimonial') {
+          return (
+            <div key={`testimonial-${i}`} className={wrapperClass}>
+              <SectionInfo title="Ocena współpracy">
+                <blockquote className="rounded-2xl bg-white p-6 shadow-md">
+                  <p className="text-lg leading-relaxed">"{b.quote}"</p>
+                  {(b.author || b.role) && (
+                    <footer className="mt-2">
+                      <h5 className="mt-5">{b.author}</h5>
+                      {b.role && <p className="text-light mt-1 mb-3">{b.role}</p>}
+                      {b.link && (
+                        <Button variant="accent" size="small" arrow link={b.link}>
+                          Link do opinii
+                        </Button>
+                      )}
+                    </footer>
+                  )}
+                </blockquote>
+              </SectionInfo>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
+        if (b.type === 'beforeAfter') {
+          return (
+            <div key={`beforeAfter-${i}`} className={wrapperClass}>
+              <SectionInfo title={b.title || 'Jak było - jak jest'}>
+                <div className="grid grid-cols-1 items-start gap-6 md:grid-cols-2">
+                  <figure>
+                    <div className="overflow-hidden rounded-2xl border border-black/10">
+                      <Image
+                        src={b.beforeImage}
+                        alt={b.beforeLabel || 'Widok przed zmianami'}
+                        width={800}
+                        height={1200}
+                        className="h-auto w-full object-contain object-top"
+                        sizes="(min-width:768px) 50vw, 100vw"
+                      />
+                    </div>
+                    <figcaption className="text-light mt-2 text-sm">{b.beforeLabel || 'Przed'}</figcaption>
+                  </figure>
+                  <figure>
+                    <div className="overflow-hidden rounded-2xl border border-black/10">
+                      <Image
+                        src={b.afterImage}
+                        alt={b.afterLabel || 'Widok po wdrożeniu'}
+                        width={800}
+                        height={1200}
+                        className="h-auto w-full object-contain object-top"
+                        sizes="(min-width:768px) 50vw, 100vw"
+                      />
+                    </div>
+                    <figcaption className="text-light mt-2 text-sm font-semibold">{b.afterLabel || 'Po'}</figcaption>
+                  </figure>
+                </div>
+                {b.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: b.note }} />}
+              </SectionInfo>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
             </div>
           );
         }
@@ -267,21 +536,23 @@ export default function ProjectPage({ params }: PageProps) {
                   </p>
                 )}
               </SectionInfo>
-              <Gap size="sm" variant="line" />
             </>
           )}
 
           {project.goals ? (
             <>
+              <Gap size="sm" variant="line" />
+
               <SectionInfo title="Cele biznesowe">
                 <Block content={project.goals} />
               </SectionInfo>
-              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
           {project.process_steps?.length ? (
             <>
+              <Gap size="sm" variant="line" />
+
               <SectionInfo title="Proces">
                 <ul className="grid gap-3 md:grid-cols-2">
                   {project.process_steps.map((step, i) => (
@@ -292,21 +563,23 @@ export default function ProjectPage({ params }: PageProps) {
                   ))}
                 </ul>
               </SectionInfo>
-              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
           {project.deliverables?.length ? (
             <>
+              <Gap size="sm" variant="line" />
+
               <SectionInfo title="Zakres prac">
                 <ul className="ml-6 list-disc">{project.deliverables.map((d, i) => (typeof d === 'string' ? <li key={i} dangerouslySetInnerHTML={{ __html: d }} /> : <li key={i}>{d}</li>))}</ul>
               </SectionInfo>
-              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
           {project.beforeAfter && (project.beforeAfter.beforeImage || project.beforeAfter.afterImage) ? (
             <>
+              <Gap size="sm" variant="line" />
+
               <SectionInfo title="Jak było - jak jest">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <figure>
@@ -326,25 +599,26 @@ export default function ProjectPage({ params }: PageProps) {
 
                 {project.beforeAfter.note && <div className="mt-3 text-sm" dangerouslySetInnerHTML={{ __html: project.beforeAfter.note }} />}
               </SectionInfo>
-              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
           {project.challenges ? (
             <>
+              <Gap size="sm" variant="line" />
+
               <SectionInfo title="Wyzwania">
                 <Block content={project.challenges} />
               </SectionInfo>
-              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
           {project.solutions ? (
             <>
+              <Gap size="sm" variant="line" />
+
               <SectionInfo title="Rozwiązania">
                 <Block content={project.solutions} />
               </SectionInfo>
-              <Gap size="sm" variant="line" />
             </>
           ) : null}
 
@@ -352,6 +626,8 @@ export default function ProjectPage({ params }: PageProps) {
 
           {project.outcomes?.length ? (
             <>
+              <Gap size="sm" variant="line" />
+
               <SectionInfo title="Rezultaty">
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {project.outcomes.map((o, i) => (
@@ -362,15 +638,9 @@ export default function ProjectPage({ params }: PageProps) {
             </>
           ) : null}
 
-          {project.faq?.length ? (
-            <>
-              <Gap size="sm" variant="line" />
-              <FaqPanels openByDefault={1} title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} pageUrl={projectUrl(project.slug)} />
-            </>
-          ) : null}
-
           {project.testimonial?.quote ? (
             <>
+              <Gap size="sm" variant="line" />
               <SectionInfo title="Ocena współpracy">
                 <blockquote className="rounded-2xl bg-white p-6 shadow-md">
                   <p className="text-lg leading-relaxed">“{project.testimonial.quote}”</p>
@@ -387,7 +657,13 @@ export default function ProjectPage({ params }: PageProps) {
                   )}
                 </blockquote>
               </SectionInfo>
+            </>
+          ) : null}
+
+          {project.faq?.length ? (
+            <>
               <Gap size="sm" variant="line" />
+              <FaqPanels openByDefault={1} title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} pageUrl={projectUrl(project.slug)} />
             </>
           ) : null}
 
@@ -396,7 +672,7 @@ export default function ProjectPage({ params }: PageProps) {
 
         <div>
           <ShareBlock url={url} title={shareTitle} className="mb-12" />
-          <TableOfContents rootSelector="#article-root" />
+          <TableOfContents rootSelector="#article-root" levels="h2" />
         </div>
       </Wrapper>
 

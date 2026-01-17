@@ -104,7 +104,7 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
       <section className="w-full" aria-labelledby="testimonials-heading">
         <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="reveal-animation md:mb-2" titleId="testimonials-heading" />
 
-        <div className="relative py-8 px-12 md:px-16">
+        <div className="relative px-12 py-8 md:px-16">
           <div className="mx-auto max-w-3xl text-center" role="region" aria-roledescription="carousel" aria-label={t.carouselLabel} aria-live="polite">
             <div className="mb-6 flex justify-center gap-1">
               {[...Array(5)].map((_, starIdx) => (

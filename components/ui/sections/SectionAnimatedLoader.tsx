@@ -3,10 +3,7 @@ interface SectionAnimatedLoaderProps {
   size?: 'small' | 'medium' | 'large';
 }
 
-export default function SectionAnimatedLoader({
-  variant = 'spinner',
-  size = 'medium',
-}: SectionAnimatedLoaderProps) {
+export default function SectionAnimatedLoader({ variant = 'spinner', size = 'medium' }: SectionAnimatedLoaderProps) {
   const sizeClasses = {
     small: { container: 'h-6 w-6', dot: 'h-1.5 w-1.5', border: 'border-2' },
     medium: { container: 'h-8 w-8', dot: 'h-2 w-2', border: 'border-4' },
@@ -15,11 +12,7 @@ export default function SectionAnimatedLoader({
 
   if (variant === 'spinner') {
     return (
-      <div
-        className={`${sizeClasses[size].container} ${sizeClasses[size].border} animate-spin rounded-full border-slate-200 border-t-slate-800`}
-        role="status"
-        aria-label="Ładowanie..."
-      >
+      <div className={`${sizeClasses[size].container} ${sizeClasses[size].border} animate-spin rounded-full border-slate-200 border-t-slate-800`} role="status" aria-label="Ładowanie...">
         <span className="sr-only">Ładowanie...</span>
       </div>
     );
@@ -29,11 +22,7 @@ export default function SectionAnimatedLoader({
     return (
       <div className="flex items-center gap-2" role="status" aria-label="Ładowanie...">
         {[0, 1, 2].map((i) => (
-          <div
-            key={i}
-            className={`${sizeClasses[size].dot} animate-bounce rounded-full bg-slate-800`}
-            style={{ animationDelay: `${i * 150}ms` }}
-          />
+          <div key={i} className={`${sizeClasses[size].dot} animate-bounce rounded-full bg-slate-800`} style={{ animationDelay: `${i * 150}ms` }} />
         ))}
         <span className="sr-only">Ładowanie...</span>
       </div>
@@ -42,11 +31,7 @@ export default function SectionAnimatedLoader({
 
   if (variant === 'pulse') {
     return (
-      <div
-        className={`${sizeClasses[size].container} animate-pulse rounded-full bg-slate-800`}
-        role="status"
-        aria-label="Ładowanie..."
-      >
+      <div className={`${sizeClasses[size].container} animate-pulse rounded-full bg-slate-800`} role="status" aria-label="Ładowanie...">
         <span className="sr-only">Ładowanie...</span>
       </div>
     );

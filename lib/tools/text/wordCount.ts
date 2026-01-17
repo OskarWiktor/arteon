@@ -84,9 +84,7 @@ export function countCharsWithoutSpaces(text: string): number {
 
 export function countParagraphs(text: string): number {
   if (!text.trim()) return 0;
-  return text
-    .split(/\n\s*\n/)
-    .filter((p) => p.trim().length > 0).length;
+  return text.split(/\n\s*\n/).filter((p) => p.trim().length > 0).length;
 }
 
 export function calculateReadingTime(words: number): number {
@@ -137,7 +135,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig): LengthE
   }
 
   const percentage = Math.round(((words - minWords) / (maxWords - minWords)) * 100);
-  
+
   if (words < midPoint) {
     return {
       status: 'ideal',

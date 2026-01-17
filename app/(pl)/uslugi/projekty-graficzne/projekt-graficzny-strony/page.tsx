@@ -285,7 +285,8 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
-              answer: 'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
+              answer:
+                'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
             },
             {
               question: 'Czy mogę zamówić tylko jedną podstronę?',
@@ -321,8 +322,8 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z myślą
-                    o SEO i wyższej konwersji.
+                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
+                    myślą o SEO i wyższej konwersji.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-tresci">
@@ -358,5 +359,3 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
     </>
   );
 }
-
-

@@ -60,7 +60,8 @@ export default function OfferDesignCorporateApparelPage() {
         title="Projekt odzieży firmowej"
         description={
           <>
-            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z identyfikacją wizualną i realiami produkcji.
+            Zespół wygląda spójnie, a marka zyskuje widoczność. Przygotowujemy projekty nadruków i haftów - pod sitodruk, DTF i haft komputerowy - zgodnie z identyfikacją wizualną i realiami
+            produkcji.
           </>
         }
         buttonAccent="Bezpłatna wycena"
@@ -94,8 +95,8 @@ export default function OfferDesignCorporateApparelPage() {
 
         <SectionInfo title="Co zyskujesz zamawiając projekt odzieży firmowej?">
           <p>
-            <strong>Spójny wygląd odzieży zespołu ułatwia identyfikację firmy.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i
-            wzmacnia wiarygodność - zarówno w siedzibie, jak i w terenie. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
+            <strong>Spójny wygląd odzieży zespołu ułatwia identyfikację firmy.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i wzmacnia
+            wiarygodność - zarówno w siedzibie, jak i w terenie. Dzięki temu Twoja marka jest widoczna wszędzie tam, gdzie pojawia się zespół, a to działa jak darmowa reklama mobilna.
           </p>
 
           <br />
@@ -331,5 +332,3 @@ export default function OfferDesignCorporateApparelPage() {
     </>
   );
 }
-
-

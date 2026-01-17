@@ -21,7 +21,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
     <section data-section="tabs" aria-labelledby={title ? 'tabs-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="tabs-title" className="h4 mb-6 reveal-animation">
+          <h2 id="tabs-title" className="h4 reveal-animation mb-6">
             {title}
           </h2>
         )}
@@ -38,9 +38,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
                 id={`tab-${index}`}
                 onClick={() => setActiveTab(index)}
                 className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition ${
-                  activeTab === index
-                    ? 'bg-white text-slate-800 shadow-sm'
-                    : 'text-slate-600 hover:text-slate-800'
+                  activeTab === index ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-600 hover:text-slate-800'
                 }`}
               >
                 {tab.icon}
@@ -49,12 +47,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
             ))}
           </div>
 
-          <div
-            id={`tabpanel-${activeTab}`}
-            role="tabpanel"
-            aria-labelledby={`tab-${activeTab}`}
-            className="rounded-2xl border border-black/10 bg-white p-6"
-          >
+          <div id={`tabpanel-${activeTab}`} role="tabpanel" aria-labelledby={`tab-${activeTab}`} className="rounded-2xl border border-black/10 bg-white p-6">
             <h3 className="h5 mb-3 flex items-center gap-2">
               {tabs[activeTab].icon}
               {tabs[activeTab].title}

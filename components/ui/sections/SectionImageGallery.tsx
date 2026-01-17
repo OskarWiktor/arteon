@@ -36,7 +36,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
     <section data-section="image-gallery" aria-labelledby={title ? 'gallery-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="gallery-title" className="h4 mb-6 reveal-animation">
+          <h2 id="gallery-title" className="h4 reveal-animation mb-6">
             {title}
           </h2>
         )}
@@ -49,13 +49,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
               onClick={() => openLightbox(index)}
               className="group relative aspect-square overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover transition group-hover:scale-105"
-                sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw"
-              />
+              <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" />
               {image.title && (
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
                   <span className="text-sm font-medium text-white">{image.title}</span>
@@ -67,19 +61,8 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
       </Wrapper>
 
       {lightboxIndex !== null && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
-          onClick={closeLightbox}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Podgląd zdjęcia"
-        >
-          <button
-            type="button"
-            onClick={closeLightbox}
-            className="absolute right-4 top-4 text-white hover:text-gray-300"
-            aria-label="Zamknij"
-          >
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onClick={closeLightbox} role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+          <button type="button" onClick={closeLightbox} className="absolute top-4 right-4 text-white hover:text-gray-300" aria-label="Zamknij">
             <RiCloseLine className="h-8 w-8" />
           </button>
 
@@ -96,16 +79,8 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
           </button>
 
           <div className="relative max-h-[80vh] max-w-[90vw]" onClick={(e) => e.stopPropagation()}>
-            <Image
-              src={images[lightboxIndex].src}
-              alt={images[lightboxIndex].alt}
-              width={1200}
-              height={800}
-              className="max-h-[80vh] w-auto object-contain"
-            />
-            {images[lightboxIndex].title && (
-              <p className="mt-4 text-center text-white">{images[lightboxIndex].title}</p>
-            )}
+            <Image src={images[lightboxIndex].src} alt={images[lightboxIndex].alt} width={1200} height={800} className="max-h-[80vh] w-auto object-contain" />
+            {images[lightboxIndex].title && <p className="mt-4 text-center text-white">{images[lightboxIndex].title}</p>}
           </div>
 
           <button

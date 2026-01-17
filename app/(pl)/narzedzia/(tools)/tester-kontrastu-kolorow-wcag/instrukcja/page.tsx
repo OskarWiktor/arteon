@@ -17,7 +17,8 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
   title: 'Jak sprawdzić kontrast kolorów WCAG? | Tester dostępności online',
-  description: 'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL — tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
+  description:
+    'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL — tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja') },
   openGraph: {
     title: 'Jak sprawdzić kontrast kolorów WCAG? | Tester dostępności online',
@@ -148,7 +149,8 @@ export default function InstrukcjaPage() {
             kontrast sprawia, że tekst staje się dla nich nieczytelny.
           </p>
           <p className="text-mid mt-3">
-            Ale nie tylko osoby z wadami wzroku korzystają z dobrego kontrastu. Przeglądanie strony na telefonie w pełnym słońcu lub na starszym, wyblakłym monitorze wymaga wysokiego kontrastu — w każdej z tych sytuacji dobra czytelność ma kluczowe znaczenie.
+            Ale nie tylko osoby z wadami wzroku korzystają z dobrego kontrastu. Przeglądanie strony na telefonie w pełnym słońcu lub na starszym, wyblakłym monitorze wymaga wysokiego kontrastu — w
+            każdej z tych sytuacji dobra czytelność ma kluczowe znaczenie.
           </p>
           <p className="text-mid mt-3">
             <strong>WCAG</strong> (Web Content Accessibility Guidelines) to międzynarodowe wytyczne dostępności stron internetowych, które określają minimalne wartości kontrastu. Spełnienie tych

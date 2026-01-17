@@ -8,7 +8,7 @@
 - [Instrukcje operacyjne](#instrukcje-operacyjne)
   - [Kodowanie plików — UTF-8](#kodowanie-plików--utf-8-obowiązkowo-aktualizacja-2025-12-31)
 - [Definition of Done (dla każdego zadania)](#definition-of-done-dla-każdego-zadania)
-- [Instrukcje: Treści i artykuły](#instrukcje-treści-i-artykuły)
+- [Instrukcje: Treści i artykuły](#instrukcje-treści-i-artykuły) → **osobny plik: `docs/CONTENT_INSTRUCTIONS.md`**
 
 ## Ustawienia projektu (stack)
 
@@ -149,16 +149,16 @@ Wszystkie pliki tekstowe w repo MUSZĄ być zapisane w kodowaniu **UTF-8 bez BOM
 **Mapowanie błędnych znaków na poprawne:**
 
 | Błędny | Poprawny |
-|--------|----------|
-| `¹` | `ą` |
-| `ê` | `ę` |
-| `³` | `ł` |
-| `œ` | `ś` |
-| `¿` | `ż` |
-| `Ÿ` | `ź` |
-| `æ` | `ć` |
-| `ñ` | `ń` |
-| `£` | `Ł` |
+| ------ | -------- |
+| `¹`    | `ą`      |
+| `ê`    | `ę`      |
+| `³`    | `ł`      |
+| `œ`    | `ś`      |
+| `¿`    | `ż`      |
+| `Ÿ`    | `ź`      |
+| `æ`    | `ć`      |
+| `ñ`    | `ń`      |
+| `£`    | `Ł`      |
 
 **Checklist redakcyjna przed commit (dla plików z tekstem polskim):**
 
@@ -205,27 +205,27 @@ Dla każdego zadania:
 
 ## Instrukcje: Treści i artykuły
 
-- **ZASADA NADRZĘDNA (zawsze, cały serwis)**: wytyczne tonu i sposobu pisania z tej sekcji stosujesz przy tworzeniu każdej treści w repo (artykuły, strony usług, strony narzędzi, realizacje, strony informacyjne, mikrocopy w komponentach/sekcjach, `metadata.description`, OpenGraph, schema, FAQ, CTA).
+**⚠️ PEŁNE WYTYCZNE PRZENIESIONE DO OSOBNEGO PLIKU: `docs/CONTENT_INSTRUCTIONS.md`**
 
-- **Cel biznesowy (obowiązkowo)**: każda treść ma prowadzić do realnej sprzedaży (lead do oferty). W praktyce:
+Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis, FAQ, CTA, metadata) przeczytaj plik `CONTENT_INSTRUCTIONS.md` w całości.
 
-  - edukujesz po to, żeby użytkownik wiedział, co zrobić i dlaczego to działa,
-  - a na końcu dostaje prostą ścieżkę „co dalej” (link do usługi/narzędzia/kontaktu), bez agresji i bez presji,
-  - linki sprzedażowe i CTA wplatasz **naturalnie w zdania**, bez emotek, bez strzałek typu „👉”, bez sekcji „Przydatne linki”.
+**Kiedy czytać CONTENT_INSTRUCTIONS.md:**
 
-- **Pomocne, ale nie DIY (obowiązkowo)**: treści mają pomagać zrozumieć temat i podjąć dobrą decyzję, ale nie mogą być tak szczegółowe, żeby zastępowały usługę (np. audyt SEO, strategię, projekt graficzny).
+- Tworzenie nowego artykułu blogowego
+- Edycja istniejącego artykułu
+- Tworzenie/edycja strony usługi, narzędzia, realizacji
+- Pisanie FAQ, CTA, metadata.description, OpenGraph
+- Pisanie mikrocopy w komponentach
 
-  - Zamiast „jak zrobić X samemu krok po kroku” preferuj: „co powinno zawierać”, „na co zwrócić uwagę”, „jak wygląda proces”, „jakie są ryzyka i typowe błędy”, „co przygotować przed zleceniem”.
-  - **Doprecyzowanie (żeby nie wchodził ton nieprzyjemny):** unikaj sformułowań typu „nie będziemy uczyć”, „to zbyt złożone”, „lepiej zlecić”. Zamiast tego prowadź spokojnie: „pokażę Ci, jak to ocenić i jak ustawić priorytety, żeby decyzje miały sens”.
-  - Przykłady złego kierunku:
-    - ❌ „Jak zrobić audyt SEO samemu i co sprawdzić jako pierwsze?”
-    - ❌ „Jak przygotować plik do druku, żeby drukarnia nie odrzuciła projektu?”
-  - Przykład dobrego kierunku:
-    - ✅ „Co powinien zawierać dobrze przygotowany plik do druku?”
+**Kluczowe zasady (skrót):**
 
-- **Bez wstawek wyobrażeniowych (obowiązkowo)**: nie używaj sformułowań typu "Wyobraź sobie…", "Pomyśl o tym jak o…" itp. Na stronach list/hubów (np. `/edukacja`, `/edukacja/[category]`) opis ma być prosty i informacyjny: co tu jest i do czego to prowadzi.
-
-- **Strony hub/kategorii — tytuły i opisy (obowiązkowo)**:
+- Ton: afirmatywno-informacyjny, heurystyczno-edukacyjny, analityczno-diagnostyczny
+- Excerpt: 220-230 znaków
+- Linki wewnętrzne: minimum 6-8, zewnętrzne: minimum 4-6
+- Przyciski CTA: opisowe („Sprawdź ofertę stron" zamiast „Strony internetowe”)
+- Przykłady hipotetyczne: oznaczone jako „hipotetyczny" (bez przesady)
+- Źródła: każda liczba/statystyka musi mieć źródło z linkiem
+- Po zakończeniu zadania: zmiany przedstaw w formie tabeli
 
   - **Tytuły**: bez prefixów typu „Edukacja:", „Usługi:" itp. — sama nazwa kategorii (np. „Widoczność", „SEO", „Grafika").
   - **Opisy**: krótkie (maks. 2 zdania), ogólne, bez technicznych detali. Wzorzec: „Artykuły o [temat]." lub „Poradniki dotyczące [temat]."
@@ -248,19 +248,20 @@ Dla każdego zadania:
   - **Precyzja zamiast skrótów**: zamiast „Google premiuje szybkie strony” preferuj: „wydajność wpływa na doświadczenie użytkownika i jest częścią sygnałów jakości strony”.
   - **Spójność z UI/mikrocopy (obowiązkowo)**: jeśli w tekście podajesz instrukcję „kliknij X / wybierz Y”, nazwa przycisku/etykiety musi być 1:1 zgodna z realnym UI (nie wymyślaj elementów). Przykład: jeśli przycisk ma tekst `Kopiuj stopkę (Gmail / Outlook)`, instrukcja nie może mówić „Kliknij „Skopiuj HTML””.
 
-- **ZASADY TECHNICZNE DLA ARTYKUŁÓW (blog) (aktualizacja 2025-12-24):**
+- **ZASADY TECHNICZNE DLA ARTYKUŁÓW (blog) (aktualizacja 2026-01-16):**
 
   1. **Tytuł = pytanie**: Każdy artykuł blogowy musi mieć tytuł w formie pytania (np. „Dlaczego strona nie wyświetla się w Google i jak to naprawić?").
-  2. **Polskie znaki**: Treść artykułu blogowego MUSI zawierać polskie znaki diakrytyczne (ą, ę, ć, ł, ń, ó, ś, ź, ż). NIE używaj ASCII bez polskich znaków.
-  3. **URL = tytuł**: Slug URL artykułu musi być 1:1 zgodny z tytułem (bez polskich znaków, z myślnikami zamiast spacji).
-  4. **Czas czytania (AKTUALIZACJA 2025-12-24)**: Obliczany na podstawie realnej liczby słów. 200 słów = 1 minuta. Celuj w **9-14 minut** (1800-2800 słów). Artykuły mają być wnikliwe i kompleksowe — odpowiadać na główne pytanie z tytułu w sposób dogłębny. **Po każdej rozbudowie tekstu przelicz liczbę słów i zaktualizuj `readingTime`.**
-  5. **Wsparcie klastra usług**: Artykuły i narzędzia zawsze wspierają klaster tematyczny usług na stronie. Linkuj do odpowiednich usług.
-  6. **Nie rozdrabniaj**: Jeśli temat artykułu jest odpowiedzią na jedno pytanie główne, zrób jeden kompleksowy artykuł zamiast kilku małych.
-  7. **Linki wewnętrzne — minimum (AKTUALIZACJA 2025-12-24)**: Każdy artykuł musi zawierać **minimum 6-8 linków wewnętrznych** do innych stron serwisu (usługi, narzędzia, inne artykuły). Linki muszą być naturalnie wplecione w tekst. Proporcjonalnie do dłuższego czasu czytania (9-14 min) wymagana jest większa gęstość linkowania.
-  8. **Linki zewnętrzne — minimum (AKTUALIZACJA 2025-12-24)**: Każdy artykuł musi zawierać **minimum 4-6 linków zewnętrznych** do wiarygodnych źródeł (dokumentacja, badania, narzędzia, oficjalne strony organizacji). Wszystkie z atrybutami `target='_blank' rel='noopener noreferrer'`.
-  9. **Widoczność linków w tekście (AKTUALIZACJA 2025-12-24)**: Każdy link w treści artykułu MUSI mieć widoczne podkreślenie. Używaj klasy `class='underline'` dla linków zewnętrznych i `class='inline-link'` dla linków wewnętrznych (ta klasa już zawiera podkreślenie).
-  10. **Tooltip dla trudnych terminów (AKTUALIZACJA 2025-12-24)**: Dla skrótów, terminów technicznych i trudnych pojęć używaj komponentu `Tooltip` ze zwięzłym wyjaśnieniem. Tooltip zwiększa czytelność i pozwala osobom wnikliwym poznać znaczenie terminu bez przerywania lektury. Jeśli termin jest już wyjaśniony w tekście, Tooltip może zawierać dodatkowy kontekst lub ciekawostkę. Format w HTML: `<span data-tooltip='Wyjaśnienie terminu'>termin</span>`.
-  11. **ZAKAZ polskich cudzysłowów w JSON (aktualizacja 2025-12-20)**: W plikach JSON (np. `data/pl/blog.json`) **NIE UŻYWAJ** polskich cudzysłowów typograficznych „ i ". Te znaki psują parser JSON. Zamiast tego:
+  2. **Excerpt 220-230 znaków (OBOWIĄZKOWO)**: Pole `excerpt` musi mieć **dokładnie 220-230 znaków** (ze spacjami). Excerpt wyświetla się wszędzie, gdzie pojawiają się artykuły (listy, karuzele, linki). Ma zachęcać do kliknięcia, być spójny z tonem marki i kontekstem artykułu. Nie może być za krótki (za mało informacji) ani za długi (obcinany w UI).
+  3. **Polskie znaki**: Treść artykułu blogowego MUSI zawierać polskie znaki diakrytyczne (ą, ę, ć, ł, ń, ó, ś, ź, ż). NIE używaj ASCII bez polskich znaków.
+  4. **URL = tytuł**: Slug URL artykułu musi być 1:1 zgodny z tytułem (bez polskich znaków, z myślnikami zamiast spacji).
+  5. **Czas czytania (AKTUALIZACJA 2025-12-24)**: Obliczany na podstawie realnej liczby słów. 200 słów = 1 minuta. Celuj w **9-14 minut** (1800-2800 słów). Artykuły mają być wnikliwe i kompleksowe — odpowiadać na główne pytanie z tytułu w sposób dogłębny. **Po każdej rozbudowie tekstu przelicz liczbę słów i zaktualizuj `readingTime`.**
+  6. **Wsparcie klastra usług**: Artykuły i narzędzia zawsze wspierają klaster tematyczny usług na stronie. Linkuj do odpowiednich usług.
+  7. **Nie rozdrabniaj**: Jeśli temat artykułu jest odpowiedzią na jedno pytanie główne, zrób jeden kompleksowy artykuł zamiast kilku małych.
+  8. **Linki wewnętrzne — minimum (AKTUALIZACJA 2025-12-24)**: Każdy artykuł musi zawierać **minimum 6-8 linków wewnętrznych** do innych stron serwisu (usługi, narzędzia, inne artykuły). Linki muszą być naturalnie wplecione w tekst. Proporcjonalnie do dłuższego czasu czytania (9-14 min) wymagana jest większa gęstość linkowania.
+  9. **Linki zewnętrzne — minimum (AKTUALIZACJA 2025-12-24)**: Każdy artykuł musi zawierać **minimum 4-6 linków zewnętrznych** do wiarygodnych źródeł (dokumentacja, badania, narzędzia, oficjalne strony organizacji). Wszystkie z atrybutami `target='_blank' rel='noopener noreferrer'`.
+  10. **Widoczność linków w tekście (AKTUALIZACJA 2025-12-24)**: Każdy link w treści artykułu MUSI mieć widoczne podkreślenie. Używaj klasy `class='underline'` dla linków zewnętrznych i `class='inline-link'` dla linków wewnętrznych (ta klasa już zawiera podkreślenie).
+  11. **Tooltip dla trudnych terminów (AKTUALIZACJA 2025-12-24)**: Dla skrótów, terminów technicznych i trudnych pojęć używaj komponentu `Tooltip` ze zwięzłym wyjaśnieniem. Tooltip zwiększa czytelność i pozwala osobom wnikliwym poznać znaczenie terminu bez przerywania lektury. Jeśli termin jest już wyjaśniony w tekście, Tooltip może zawierać dodatkowy kontekst lub ciekawostkę. Format w HTML: `<span data-tooltip='Wyjaśnienie terminu'>termin</span>`.
+  12. **ZAKAZ polskich cudzysłowów w JSON (aktualizacja 2025-12-20)**: W plikach JSON (np. `data/pl/blog.json`) **NIE UŻYWAJ** polskich cudzysłowów typograficznych „ i ". Te znaki psują parser JSON. Zamiast tego:
 
   - Usuń cudzysłowy z tekstu (np. zamiast „pozycjonować" napisz: pozycjonować)
   - Lub użyj encji HTML `&quot;` (np. `&quot;pozycjonować&quot;`)
@@ -429,20 +430,20 @@ Dla każdego zadania:
 
 - **PRZYKŁADY ZAMIANY (referencja przy redakcji)**:
 
-  | ❌ Zakazane | ✅ Zamiennik |
-  |------------|-------------|
-  | „traktowane po macoszemu" | „często pozostają puste lub ogólnikowe" |
-  | „Nie musisz pisać encyklopedii" | „Opis nie musi być rozbudowany" |
-  | „każda godzina pracy ma swoją cenę" | „Dzięki temu efekty pojawią się szybciej" |
-  | „nie jako lista do odhaczania" | (usuń meta-komentarz) |
-  | „Przydatne linki: 👉" | (wpleć linki naturalnie w akapit) |
-  | „Jeśli nie jesteś techniczny..." | „Nawet bez wiedzy technicznej możesz..." |
-  | „to proste", „to oczywiste" | (usuń lub opisz konkretnie) |
-  | „wiele firm robi źle. Efekt? Y" | „X działa najlepiej w konkretnych kontekstach" |
-  | „to absurd", „wręcz szkodzi" | „nie jest potrzebny", „wydłuża drogę do celu" |
-  | pytania retoryczne z ironią | pełne zdania opisowe |
-  | „stosowany z głową" | „w konkretnych kontekstach" |
-  | „wymaga więcej pracy" | „wymaga większej ilości pracy" |
+  | ❌ Zakazane                         | ✅ Zamiennik                                   |
+  | ----------------------------------- | ---------------------------------------------- |
+  | „traktowane po macoszemu"           | „często pozostają puste lub ogólnikowe"        |
+  | „Nie musisz pisać encyklopedii"     | „Opis nie musi być rozbudowany"                |
+  | „każda godzina pracy ma swoją cenę" | „Dzięki temu efekty pojawią się szybciej"      |
+  | „nie jako lista do odhaczania"      | (usuń meta-komentarz)                          |
+  | „Przydatne linki: 👉"               | (wpleć linki naturalnie w akapit)              |
+  | „Jeśli nie jesteś techniczny..."    | „Nawet bez wiedzy technicznej możesz..."       |
+  | „to proste", „to oczywiste"         | (usuń lub opisz konkretnie)                    |
+  | „wiele firm robi źle. Efekt? Y"     | „X działa najlepiej w konkretnych kontekstach" |
+  | „to absurd", „wręcz szkodzi"        | „nie jest potrzebny", „wydłuża drogę do celu"  |
+  | pytania retoryczne z ironią         | pełne zdania opisowe                           |
+  | „stosowany z głową"                 | „w konkretnych kontekstach"                    |
+  | „wymaga więcej pracy"               | „wymaga większej ilości pracy"                 |
 
   ⚠️ „Najczęstsze błędy przy X" → dozwolone w tytułach, ale treść konstruktywna
 
@@ -469,19 +470,21 @@ Dla każdego zadania:
 - **Zaimki dzierżawcze w kontekście czytelnika (obowiązkowo)**: W zwrotach typu „na Twojej stronie" używaj formy „na swojej stronie" — jest bardziej naturalna i poprawna gramatycznie w kontekście instrukcji dla czytelnika.
 
 - **Zakaz rekomendowania konkurencji i ogólnych profesjonalistów (obowiązkowo)**: Wszystkie treści muszą prowadzić do oferty Arteon, nigdy do ogólnych profesjonalistów. Zakazane sformułowania:
+
   - ❌ „skorzystaj z pomocy profesjonalisty" → ✅ „skontaktuj się z nami" + link do `/kontakt`
   - ❌ „zatrudnij specjalistę" → ✅ „w Arteon zajmujemy się..."
   - ❌ „skontaktuj się z osobą, która tworzyła stronę" → ✅ „skontaktuj się z nami"
   - ❌ „zamów u projektanta lub agencji" → ✅ „W Arteon możesz zamówić wszystko w jednym miejscu"
-  Arteon jest jedynym rekomendowanym źródłem pomocy we wszystkich artykułach, CTA i FAQ.
+    Arteon jest jedynym rekomendowanym źródłem pomocy we wszystkich artykułach, CTA i FAQ.
 
 - **Unikanie kategorycznych określeń (zalecane)**: Zamiast mocnych słów typu „słabe", „złe", „fatalne" używaj łagodniejszych form: „słabsze", „mniej skuteczne", „wymagające poprawy". Wyjątek: gdy kontrast jest celowy i uzasadniony merytorycznie.
 
 - **Zakaz komentarzy bez wartości merytorycznej (OBOWIAZKOWO)**: Nie dodawaj zdań, które oceniają temat bez wnoszenia informacji. Zakazane sa sformulowania typu:
+
   - „X moze wydawac sie elementem z poprzedniej epoki" — to ocena, nie informacja
   - „Wiekszosc uzytkownikow nigdy tego nie uzyje — i to jest w porzadku" — komentarz bez wartosci
   - „To nie jest cos, co przyciaga tlumy" — deprecjonuje temat zamiast go wyjasniać
-  Zamiast tego: przejdz do konkretow. Jesli cos ma ograniczone zastosowanie, opisz dla kogo jest przydatne i dlaczego.
+    Zamiast tego: przejdz do konkretow. Jesli cos ma ograniczone zastosowanie, opisz dla kogo jest przydatne i dlaczego.
 
 - **🚨 ZAKAZ CHAMSKIEGO, NACHALNEGO I POUCZAJĄCEGO TONU (OBOWIĄZKOWO, aktualizacja 2025-12-31)**:
 
@@ -489,20 +492,20 @@ Dla każdego zadania:
 
   **Zakazane konstrukcje i formy:**
 
-  | Zakazana forma | Dlaczego jest zła | Zamiennik |
-  |----------------|-------------------|-----------|
-  | „To nie jest X, tylko Y" | Brzmienie korekcyjne, jakby czytelnik się mylił | „Y oznacza..." (neutralne wyjaśnienie) |
-  | „Wbrew pozorom..." | Sugeruje, że czytelnik ma błędne wyobrażenie | „W praktyce..." lub po prostu wyjaśnij |
-  | „Nie chodzi o X, chodzi o Y" | Ton poprawiania | „Kluczowe jest Y" |
-  | „To częsty błąd" (bez kontekstu) | Może brzmieć oskarżająco | „Wiele osób zaczyna od X, ale lepiej..." |
-  | „Musisz zrozumieć, że..." | Protekcjonalne | Usuń frazę, przejdź do sedna |
-  | „Nie wystarczy X" | Negatywne otwarcie | „Oprócz X warto też..." |
-  | „To oczywiste" / „To proste" | Umniejsza trudność dla czytelnika | Usuń lub wyjaśnij krok po kroku |
-  | „Każdy wie, że..." | Zakłada wiedzę, której czytelnik może nie mieć | Wyjaśnij bez zakładania |
-  | „Prawda jest taka, że..." | Pouczający ton | Po prostu podaj informację |
-  | „Niestety..." (wielokrotnie) | Buduje negatywny nastrój | Opisz neutralnie lub podaj rozwiązanie |
-  | „Błędem jest..." (bez konstruktywnej alternatywy) | Krytyka bez wartości | „Lepszym podejściem jest..." |
-  | Pytania retoryczne z ironią | Mogą brzmieć wyśmiewająco | Zamień na zdania oznajmujące |
+  | Zakazana forma                                    | Dlaczego jest zła                               | Zamiennik                                |
+  | ------------------------------------------------- | ----------------------------------------------- | ---------------------------------------- |
+  | „To nie jest X, tylko Y"                          | Brzmienie korekcyjne, jakby czytelnik się mylił | „Y oznacza..." (neutralne wyjaśnienie)   |
+  | „Wbrew pozorom..."                                | Sugeruje, że czytelnik ma błędne wyobrażenie    | „W praktyce..." lub po prostu wyjaśnij   |
+  | „Nie chodzi o X, chodzi o Y"                      | Ton poprawiania                                 | „Kluczowe jest Y"                        |
+  | „To częsty błąd" (bez kontekstu)                  | Może brzmieć oskarżająco                        | „Wiele osób zaczyna od X, ale lepiej..." |
+  | „Musisz zrozumieć, że..."                         | Protekcjonalne                                  | Usuń frazę, przejdź do sedna             |
+  | „Nie wystarczy X"                                 | Negatywne otwarcie                              | „Oprócz X warto też..."                  |
+  | „To oczywiste" / „To proste"                      | Umniejsza trudność dla czytelnika               | Usuń lub wyjaśnij krok po kroku          |
+  | „Każdy wie, że..."                                | Zakłada wiedzę, której czytelnik może nie mieć  | Wyjaśnij bez zakładania                  |
+  | „Prawda jest taka, że..."                         | Pouczający ton                                  | Po prostu podaj informację               |
+  | „Niestety..." (wielokrotnie)                      | Buduje negatywny nastrój                        | Opisz neutralnie lub podaj rozwiązanie   |
+  | „Błędem jest..." (bez konstruktywnej alternatywy) | Krytyka bez wartości                            | „Lepszym podejściem jest..."             |
+  | Pytania retoryczne z ironią                       | Mogą brzmieć wyśmiewająco                       | Zamień na zdania oznajmujące             |
 
   **Zasady tonu:**
 
@@ -536,6 +539,16 @@ Dla każdego zadania:
 
 - **CTA bez tonu DIY (OBOWIĄZKOWO)**: W podsumowaniach i CTA nie sugeruj, że czytelnik może coś zrobić samodzielnie z pomocą artykułu. Zamiast „zajmujemy się weryfikacją przed publikacją" (sugeruje tylko jeden element usługi) pisz „tworzymy strony od podstaw" lub „możemy pomóc z [konkretna rzecz]". Arteon oferuje kompleksowe usługi, nie pojedyncze elementy.
 
+- **Opisowe teksty przycisków CTA (OBOWIĄZKOWO, aktualizacja 2026-01-16)**: Tekst przycisku w sekcji CTA musi jasno komunikować, co się stanie po kliknięciu. Unikaj ogólnych nazw kategorii — używaj fraz opisujących akcję lub ofertę.
+
+  - Źle: "Strony internetowe" (brzmi jak nazwa kategorii, nie akcja)
+  - Dobrze: "Sprawdź ofertę stron internetowych", "Zobacz ofertę tworzenia stron", "Zamów stronę internetową"
+  - Źle: "Sklepy" (za ogólne)
+  - Dobrze: "Sprawdź ofertę sklepów internetowych", "Zobacz jak tworzymy sklepy"
+  - Źle: "Kontakt" (poprawne, ale można lepiej)
+  - Dobrze: "Skontaktuj się z nami", "Porozmawiajmy o projekcie", "Napisz do nas"
+    Przycisk ma brzmieć naturalnie i zachęcać do działania, nie być suchą etykietą.
+
 - **Maksymalizacja wartości i głębokości treści (OBOWIĄZKOWO)**: Artykuły mają zawierać jak najwięcej konkretnych, praktycznych informacji. Każda sekcja powinna wnosić realną wartość. Unikaj akapitów, które można by usunąć bez straty merytorycznej. Głębokość i szczegółowość treści bezpośrednio wpływa na pozycję strony w wyszukiwarce.
 
 - **Dokładne zapoznanie się z instrukcjami przed tworzeniem treści (OBOWIĄZKOWO)**: Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis) MUSISZ przeczytać pełną instrukcję INSTRUCTIONS.md i upewnić się, że rozumiesz wszystkie zasady. To nie jest opcjonalne — błędy wynikające z nieznajomości instrukcji są niedopuszczalne.
@@ -545,14 +558,16 @@ Dla każdego zadania:
 - **Przyjazne tematy dla użytkowników nietechnicznych (OBOWIĄZKOWO)**: Tematy artykułów muszą być zrozumiałe i atrakcyjne dla przeciętnego użytkownika, nie tylko dla specjalistów. Unikaj tytułów z żargonem technicznym, który nie ma potencjału wyszukiwania. Zamiast „Jak zoptymalizować LCP i CLS?" pisz „Dlaczego strona ładuje się wolno i jak to poprawić?". Tytuł ma odpowiadać na pytanie, które realnie zadaje właściciel firmy.
 
 - **Zgodność z Google Discover (OBOWIĄZKOWO)**: Artykuły powinny spełniać wymagania Google Discover:
+
   - **Tytuł przyciągający uwagę bez clickbaitu** — ma wzbudzać ciekawość, ale nie wprowadzać w błąd
   - **Temat angażujący szerszą publiczność** — nie tylko specjalistów z branży
   - **Wartość informacyjna** — artykuł musi dostarczać realnej wiedzy, nie być tylko reklamą usług
   - **Unikanie technicznego żargonu w tytułach** — Discover pokazuje treści osobom, które mogą nie znać terminologii
   - **Evergreen lub aktualny temat** — treści ponadczasowe lub związane z aktualnymi trendami
-  Dokumentacja: https://developers.google.com/search/docs/appearance/google-discover
+    Dokumentacja: https://developers.google.com/search/docs/appearance/google-discover
 
 - **Potencjał SEO tematów (zalecane)**: Przed wyborem tematu artykułu rozważ, czy fraza z tytułu ma realny potencjał wyszukiwania. Tematy zbyt niszowe lub zbyt techniczne mogą nie przynosić ruchu. Preferuj tematy, które:
+
   - Odpowiadają na pytania zadawane przez właścicieli firm
   - Używają języka naturalnego (jak ludzie pytają)
   - Mają szersze zastosowanie (nie tylko jedna wąska branża)
@@ -586,26 +601,27 @@ Dotyczy: procentów, kwot, zakresów czasowych, dat, statystyk, wyników badań.
 
 **Kluczowe obszary prawne wymagające szczególnej uwagi:**
 
-| Obszar | Ustawa/Rozporządzenie | Kluczowe wymogi | Rok wejścia w życie |
-|--------|----------------------|-----------------|---------------------|
-| **Ceny w e-commerce** | Dyrektywa Omnibus (implementacja PL) | Obowiązek podawania najniższej ceny z 30 dni przy promocji | 2023 |
-| **Ochrona konsumenta** | Ustawa o prawach konsumenta | 14 dni na odstąpienie, informacje obowiązkowe | 2014 (nowelizacje) |
-| **Prywatność / cookies** | RODO (GDPR) + Prawo telekomunikacyjne | Zgoda na cookies, polityka prywatności, DPIA | 2018 |
-| **Dostępność cyfrowa** | Ustawa o dostępności cyfrowej | WCAG 2.1 AA dla podmiotów publicznych | 2019 |
-| **AI content disclosure** | AI Act (UE) | Oznaczanie treści generowanych przez AI | 2024+ |
-| **Reklama** | Ustawa o zwalczaniu nieuczciwej konkurencji | Zakaz reklamy wprowadzającej w błąd | 1993 (nowelizacje) |
+| Obszar                    | Ustawa/Rozporządzenie                       | Kluczowe wymogi                                            | Rok wejścia w życie |
+| ------------------------- | ------------------------------------------- | ---------------------------------------------------------- | ------------------- |
+| **Ceny w e-commerce**     | Dyrektywa Omnibus (implementacja PL)        | Obowiązek podawania najniższej ceny z 30 dni przy promocji | 2023                |
+| **Ochrona konsumenta**    | Ustawa o prawach konsumenta                 | 14 dni na odstąpienie, informacje obowiązkowe              | 2014 (nowelizacje)  |
+| **Prywatność / cookies**  | RODO (GDPR) + Prawo telekomunikacyjne       | Zgoda na cookies, polityka prywatności, DPIA               | 2018                |
+| **Dostępność cyfrowa**    | Ustawa o dostępności cyfrowej               | WCAG 2.1 AA dla podmiotów publicznych                      | 2019                |
+| **AI content disclosure** | AI Act (UE)                                 | Oznaczanie treści generowanych przez AI                    | 2024+               |
+| **Reklama**               | Ustawa o zwalczaniu nieuczciwej konkurencji | Zakaz reklamy wprowadzającej w błąd                        | 1993 (nowelizacje)  |
 
 **⚠️ KRYTYCZNE**: Jeśli piszesz o promocjach/cenach w e-commerce, ZAWSZE uwzględnij wymóg Omnibus (najniższa cena z 30 dni). Pominięcie tego wymogu = wprowadzenie czytelnika w błąd co do prawa.
 
 ##### 3. Każdy przykład MUSI być oznaczony
 
 - **Przykład oparty na faktach**: cytuj źródło
-- **Przykład hipotetyczny**: MUSI zawierać oznaczenie: „*(przykład hipotetyczny — nie oparty o dane historyczne)*"
+- **Przykład hipotetyczny**: MUSI zawierać oznaczenie: „_(przykład hipotetyczny — nie oparty o dane historyczne)_"
 - **Przykład z praktyki Arteon**: dozwolony bez oznaczenia, ale musi być prawdziwy
 
 ##### 4. Absolutny zakaz dopowiadania
 
 **ZABRONIONE:**
+
 - Wymyślanie statystyk, liczb, procentów
 - Tworzenie „prawdopodobnych" scenariuszy bez oznaczenia jako hipotetyczne
 - Upraszczanie badań w sposób zmieniający ich sens
@@ -613,6 +629,7 @@ Dotyczy: procentów, kwot, zakresów czasowych, dat, statystyk, wyników badań.
 - Podawanie nieaktualnych informacji prawnych jako obowiązujących
 
 **DOZWOLONE:**
+
 - Ogólne stwierdzenia bez liczb: „większość", „często", „wiele firm"
 - Jasno oznaczone przykłady hipotetyczne
 - Cytaty ze źródeł z linkiem
@@ -623,11 +640,13 @@ Dotyczy: procentów, kwot, zakresów czasowych, dat, statystyk, wyników badań.
 #### 📋 OBOWIĄZKI PRZED NAPISANIEM TREŚCI
 
 1. **Sprawdź źródła PRZED pisaniem**:
+
    - Czy masz wiarygodne źródło dla każdej liczby/statystyki, którą chcesz podać?
    - Czy źródło jest aktualne (max 2-4 lata dla SEO/marketingu, sprawdź aktualność dla prawa)?
    - Czy link do źródła działa?
 
 2. **Sprawdź zgodność prawną PRZED pisaniem**:
+
    - Czy temat dotyczy obszaru regulowanego prawem (e-commerce, prywatność, reklama)?
    - Czy znasz aktualne wymogi prawne w PL?
    - Czy treść nie będzie sugerować działań niezgodnych z prawem?
@@ -659,6 +678,7 @@ Przed dodaniem jakiejkolwiek treści do repo, sprawdź:
 > 🚫 **Jeśli generowany tekst zawiera zdanie/liczbę/fakt bez potwierdzonego źródła — NIE WOLNO go dodać do repo.**
 
 Moduł autoweryfikacji:
+
 ```
 PRZED ZAPISEM KAŻDEJ TREŚCI:
 1. Czy są liczby bez źródeł? → TAK = NIE ZAPISUJ, popraw najpierw
@@ -673,22 +693,27 @@ PRZED ZAPISEM KAŻDEJ TREŚCI:
 #### Standard źródeł dla różnych typów treści
 
 **Treści o SEO / marketingu / analityce**:
+
 - Preferowane źródła: dokumentacja Google (Search Central, web.dev), blogi i raporty uznanych firm SEO/analitycznych (Ahrefs, Semrush, Moz, HubSpot, Backlinko), oficjalne komunikaty Google.
 - Aktualność: źródła z ostatnich 2–4 lat; starsze źródła dopuszczalne tylko jeśli są nadal istotne i wyraźnie oznaczone jako starsze.
 
 **Treści o psychologii / biznesie / zachowaniach użytkowników**:
+
 - Preferowane źródła: uznane czasopisma naukowe (Journal of Consumer Research, Management Decision, itp.), uczelnie, znani autorzy (np. Kahneman, Cialdini).
 - Nie wolno „upraszczać" badań w sposób, który wypacza ich sens — cytować dokładnie to, co badanie wykazało.
 
 **Treści o technologii (Next.js, WordPress, narzędzia webowe)**:
+
 - Preferowane źródła: oficjalna dokumentacja, repozytoria GitHub, blogi twórców narzędzi, uznane źródła techniczne (MDN, web.dev).
 
 **Treści o prawie / regulacjach**:
+
 - Preferowane źródła: oficjalne dzienniki ustaw (isap.sejm.gov.pl), EUR-Lex, oficjalne strony UOKiK, UODO.
 - ZAWSZE podawaj datę stanu prawnego i rok wejścia w życie przepisu.
 - Przy zmianach prawa — aktualizuj treści niezwłocznie.
 
 **Case studies / przykłady realizacji**:
+
 - Treści muszą być zgodne z faktami: zakres, wyniki, terminy — bez dopisywania „sukcesów", które nie miały miejsca.
 - Jeśli brak danych o konkretnych wynikach, nie wymyślać ich — opisać zakres prac bez kwantyfikacji efektów.
 
@@ -697,11 +722,13 @@ PRZED ZAPISEM KAŻDEJ TREŚCI:
 #### Zasady weryfikacji linków i cytatów (OBOWIĄZKOWO)
 
 - **Sprawdzenie każdego linku przed publikacją**:
+
   - Czy link działa (nie zwraca 404)?
   - Czy prowadzi do właściwej strony (nie do strony głównej zamiast do konkretnego artykułu)?
   - Czy treść na stronie odpowiada temu, na co się powołujemy?
 
 - **Sprawdzenie daty dla cytowanych danych**:
+
   - Żadnych „bezczasowych" statystyk typu „90% użytkowników robi X" bez wskazania roku i źródła.
   - Format: „wg raportu [nazwa] (2024)" lub „badanie [autorzy] z 2023 roku".
 
@@ -715,10 +742,12 @@ PRZED ZAPISEM KAŻDEJ TREŚCI:
 #### Postępowanie w razie niepewności (OBOWIĄZKOWO)
 
 Jeśli podczas tworzenia treści:
+
 - nie ma pewności co do jakiejś liczby / faktu / interpretacji,
 - lub znajdują się sprzeczne informacje w źródłach,
 
 to:
+
 1. Wybrać najbardziej rzetelne i aktualne źródło.
 2. Jeśli są rozbieżności między źródłami — zaznaczyć to w tekście (np. „dane wahają się od X do Y w zależności od źródła").
 3. Jeśli nadal jest niepewność — **zrezygnować z podawania konkretu** (lepiej nie podać liczby niż wprowadzić czytelnika w błąd).
@@ -727,10 +756,9 @@ to:
 
 #### Przykłady dobrego i złego stosowania zasad
 
-| ❌ ŹLE | ✅ DOBRZE |
-|--------|----------|
+| ❌ ŹLE                                                 | ✅ DOBRZE                                                            |
+| ------------------------------------------------------ | -------------------------------------------------------------------- |
 | „90% użytkowników opuszcza stronę po 3s" (brak źródła) | „Wg Ahrefs z 2023, średni wiek strony w Top10 to 2+ lata ([źródło])" |
-| „Przy promocji wystarczy stara i nowa cena" | „Należy podać najniższą cenę z 30 dni (Omnibus, PL 2023)" |
-| „Firma X zwiększyła sprzedaż o 350%" (wymyślone) | „Załóżmy... *(przykład hipotetyczny)*" |
-| „Badania pokazują, że..." (bez linku) | „Czas SEO zależy od wielu czynników: konkurencji, techniki, treści" |
-
+| „Przy promocji wystarczy stara i nowa cena"            | „Należy podać najniższą cenę z 30 dni (Omnibus, PL 2023)"            |
+| „Firma X zwiększyła sprzedaż o 350%" (wymyślone)       | „Załóżmy... _(przykład hipotetyczny)_"                               |
+| „Badania pokazują, że..." (bez linku)                  | „Czas SEO zależy od wielu czynników: konkurencji, techniki, treści"  |

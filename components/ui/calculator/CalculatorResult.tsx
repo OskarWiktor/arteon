@@ -41,9 +41,7 @@ export default function CalculatorResult({ totalPrice, onReset, pathKey, title, 
       )}
 
       <div className="mt-8">
-        <Button onClick={onReset}>
-          {startAgain}
-        </Button>
+        <Button onClick={onReset}>{startAgain}</Button>
       </div>
     </div>
   );

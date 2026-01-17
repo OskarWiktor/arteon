@@ -1,6 +1,292 @@
 {
   "projects": [
     {
+      "slug": "strona-internetowa-dla-firmy-budowlanej-ocieplenia-budynkow-izoluk",
+      "title": "Strona internetowa dla firmy budowlanej - ocieplenia budynków Izoluk",
+      "short": "Rozbudowana strona internetowa dla firmy z branży izolacji budowlanych. WordPress z blogiem, formularz wyceny, podstrony ofertowe, kolory zgodne z WCAG i wydajność 98/100 dla mobile.",
+      "description": "<p>Realizacja <strong>strony internetowej dla firmy budowlanej</strong> z branży izolacji natryskowych. Klient zgłosił się z chęcią stworzenia nowej strony internetowej dla swojej firmy. Poprzednią stronę wykonał samodzielnie na Wix, jednak nie spełniała ona jego oczekiwań.</p><br /><p>Głównym celem było stworzenie strony, która <strong>będzie widoczna w wyszukiwarce</strong> i zacznie generować zapytania od potencjalnych klientów. Firma oferuje kilka typów usług (piana PUR, membrany natryskowe, izolacja wdmuchiwana, posadzki żywiczne), dlatego zaproponowaliśmy rozbudowaną strukturę z osobnymi podstronami dla każdej kategorii.</p><br /><p>Strona została zbudowana na <strong>WordPress z Elementorem Pro</strong>. Kolory dobrano zgodnie z <strong>wytycznymi dostępności WCAG</strong>, dodaliśmy politykę prywatności i wszystkie niezbędne elementy prawne. Klient otrzymał też szczegółowe porady dotyczące prowadzenia strony oraz bloga aby mógł samodzielnie tworzyć artykuły, które zwiększą widoczność w Google.</p>",
+      "image": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
+      "category": ["strona", "grafika", "blog", "treść"],
+      "link": "https://izoluk.pl/",
+      "client": {
+        "name": "Izoluk",
+        "sector": "Budownictwo - izolacje natryskowe"
+      },
+
+      "task": "Zaprojektowanie i wdrożenie strony internetowej z myślą o widoczności w Google, z rozbudowaną strukturą ofertową, blogiem i formularzem wyceny.",
+
+      "goals": "<p>Klient potrzebował strony, która:</p><ul><li>Będzie <strong>widoczna w Google</strong> na frazy związane z izolacjami natryskowymi i ociepleniami budynków</li><li>Pozwoli przedstawić <strong>pełną ofertę</strong> firmy w sposób uporządkowany (każda usługa na osobnej podstronie)</li><li>Da możliwość <strong>publikowania artykułów</strong> na blogu, które będą wspierać pozycjonowanie</li><li>Będzie działać <strong>szybko na telefonach</strong> (większość potencjalnych klientów przegląda strony na mobile)</li></ul>",
+
+      "process_steps": [
+        "Analiza potrzeb klienta oraz oferty firmy",
+        "Przygotowanie propozycji wyglądu strony głównej i ustalenie struktury podstron",
+        "Wdrożenie WordPress z Elementorem Pro i pełna konfiguracja systemu",
+        "Stworzenie podstron ofertowych wraz z stworzeniem treści, na podstawie istniejącej strony, zoptymalizowanych pod SEO",
+        "Konfiguracja formularza wyceny i integracja z mailem klienta",
+        "Optymalizacja wydajności i przeniesienie strony z domeny testowej na domenę produkcyjną"
+      ],
+
+      "deliverables": [
+        "Strona główna z sekcjami: baner, kafle oferty, wyróżniki, realizacje wraz z filmami, FAQ, formularz kontaktowy",
+        "Podstrony dla każdego typu usługi (piana PUR, membrany, izolacja wdmuchiwana, posadzki)",
+        "Blog z automatyczną karuzelą najnowszych artykułów i szablonem ze spisem treści",
+        "Formularz wyceny z opcjami wyboru typu budynku i technologii",
+        "Strona O nas z informacjami o firmie",
+        "Polityka prywatności i wszystkie wymagane elementy prawne (Complianz)",
+        "Kolory zgodne z wytycznymi dostępności WCAG AA",
+        "Licencja Elementor Pro (koszty po stronie Arteon)",
+        "Konfiguracja wtyczek: UpdraftPlus (kopie zapasowe), Converter for Media (optymalizacja obrazów), Rank Math SEO, Wordfence Security, WPS Hide Login (zabezpieczenie panelu)",
+        "Przeniesienie domeny i konfiguracja certyfikatu SSL",
+        "Szczegółowe porady dotyczące SEO, katalogów branżowych, opinii w Google i prowadzenia bloga"
+      ],
+
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
+          "alt": "Mockup strony dla firmy budowlanej zajmującej się izolacjami - Izoluk",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Dlaczego klient potrzebował nowej strony?</h2><p>Dotychczasowa strona na Wix była przestarzała i nie przynosiła dostatecznej widoczności firmie.</p><p>Klient prowadzi firmę oferującą kilka typów usług, które różnią się technologią i zastosowaniem.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "beforeAfter",
+          "title": "Przed i po",
+          "beforeImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-wczesniejszy-wyglad-strony-stworzony-w-wix.webp",
+          "afterImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp",
+          "beforeLabel": "Poprzednia strona na Wix",
+          "afterLabel": "Nowy projekt w Figma",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Jak przebiegała realizacja?",
+          "items": [
+            { "icon": "search", "title": "Analiza i propozycja", "description": "Przeanalizowaliśmy poprzednią stronę i przygotowaliśmy propozycję wyglądu z pełną strukturą podstron." },
+            { "icon": "palette", "title": "Projekt i akceptacja", "description": "Po akceptacji wyglądu strony głównej rozpoczęliśmy prace nad całą witryną." },
+            { "icon": "code", "title": "Wdrożenie WordPress", "description": "Zbudowaliśmy stronę na WordPress z Elementorem Pro, dodając blog i formularz wyceny." },
+            { "icon": "globe", "title": "Przeniesienie domeny", "description": "Skonfigurowaliśmy hosting, przenieśliśmy domenę i uruchomiliśmy stronę pod adresem izoluk.pl." }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Co wyróżnia tę realizację?</h2><p><strong>Rozbudowana struktura ofertowa</strong> - każda usługa (piana PUR, membrany natryskowe, izolacja wdmuchiwana, posadzki żywiczne) ma osobną podstronę z dedykowanymi treściami. Dzięki temu strona może pojawiać się w wynikach wyszukiwania na więcej fraz.</p><p><strong>Zgodność z wytycznymi</strong> - kolory dobrano zgodnie z WCAG (wytyczne dostępności), a strona zawiera politykę prywatności i wszystkie niezbędne elementy prawne.</p><p><strong>Formularz wyceny zamiast kalkulatora</strong> - początkowo planowaliśmy kalkulator cenowy, ale okazało się, że wycena izolacji zależy od zbyt wielu czynników. Zamiast tego stworzyliśmy formularz, który pozwala klientom opisać swoje potrzeby i otrzymać indywidualną wycenę.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wtyczki i zabezpieczenia</h2><p>Strona została wyposażona w zestaw wtyczek, które zabezpieczają witrynę:</p><p><strong>UpdraftPlus</strong> - automatyczne kopie zapasowe raz w tygodniu z możliwością wysyłki na Google Drive.</p><p><strong>Converter for Media</strong> - automatyczna konwersja zdjęć do formatu WebP dla lepszej wydajności.</p><p><strong>Rank Math SEO</strong> - narzędzie do optymalizacji treści pod kątem wyszukiwarek.</p><p><strong>Wordfence Security</strong> - ochrona przed atakami i nieautoryzowanym dostępem.</p><p><strong>WPS Hide Login</strong> - zmiana domyślnego adresu logowania dla dodatkowego bezpieczeństwa.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wsparcie i porady</h2><p>Klient otrzymał szczegółowe wskazówki dotyczące prowadzenia strony i budowania widoczności w Google:</p><p><strong>Katalogi branżowe</strong> - wpis do darmowych katalogów firmowych dla dodatkowych linków do domeny.</p><p><strong>Opinie w Google</strong> - znaczenie opinii z frazami kluczowymi dla pozycji lokalnej.</p><p><strong>Google Search Console</strong> - konfiguracja i wyjaśnienie jak monitorować frazy i pozycje.</p><p><strong>Zdjęcia i opisy</strong> - jak prawidłowo opisywać zdjęcia dla lepszej widoczności w wyszukiwarce grafiki.</p><p><strong>Artykuły na blogu</strong> - jak tworzyć treści odpowiadające na pytania potencjalnych klientów.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp",
+          "alt": "Wynik optymalizacji strony Izoluk w PageSpeed Insights - 98/100 dla urządzeń mobilnych",
+          "ratio": "16/9"
+        }
+      ],
+
+      "outcomes": [
+        { "label": "Wydajność mobile (PageSpeed)", "value": "98/100", "note": "Zgodnie z wymogami Google" },
+        { "label": "Podstrony ofertowe", "value": "4+", "note": "Każda usługa na osobnej stronie z unikalnymi treściami" },
+        { "label": "Czas realizacji", "value": "8 dni", "note": "Od pierwszego kontaktu do uruchomienia strony" }
+      ],
+
+      "cta": {
+        "title": "Potrzebujesz strony dla firmy budowlanej lub usługowej?",
+        "description": "Tworzymy strony, które są nastawione na pozyskiwanie klientów z Google. Każda realizacja obejmuje indywidualny projekt, optymalizację wydajności i pomoc z treściami.",
+        "btnOne": "Skontaktuj się z nami",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp",
+        "overlay": "black"
+      },
+
+      "faq": [
+        {
+          "question": "Ile kosztuje strona internetowa dla firmy budowlanej?",
+          "answer": "Koszt zależy od zakresu: liczby podstron, funkcji (blog, formularz wyceny, galeria realizacji) i poziomu rozbudowy treści. Rozbudowana strona z blogiem i kilkoma podstronami ofertowymi to zazwyczaj 2500-4000 zł."
+        },
+        {
+          "question": "Czy mogę samodzielnie dodawać artykuły i zmieniać treści?",
+          "answer": "Tak. Strony na WordPress z Elementorem dają pełną kontrolę nad treścią. Po zakończeniu realizacji przekazujemy instrukcję obsługi i dostęp do panelu administracyjnego."
+        },
+        {
+          "question": "Jak długo trwa stworzenie takiej strony?",
+          "answer": "Standardowy czas realizacji to 5-10 dni roboczych, w zależności od zakresu oraz dostępności materiałów (teksty, zdjęcia, logo)."
+        },
+        {
+          "question": "Czy pomagacie z tekstami na stronę?",
+          "answer": "Tak. Pomagamy ułożyć strukturę treści i przygotować teksty zoptymalizowane pod kątem widoczności w Google. W przypadku firm usługowych kluczowe jest odpowiednie opisanie oferty i użycie fraz, które wpisują potencjalni klienci."
+        }
+      ],
+
+      "seo": {
+        "title": "Strona internetowa dla firmy budowlanej - Izoluk - Arteon",
+        "description": "Rozbudowana strona dla firmy izolacyjnej. WordPress, blog, formularz wyceny, kolory zgodne z WCAG, wydajność 98/100 dla mobile. Zobacz realizację.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-firmy-budowlanej-ocieplenia-budynkow-izoluk"
+      }
+    },
+
+    {
+      "slug": "strona-internetowa-dla-osrodka-psychoterapii-dzieci-i-mlodziezy-perly-mocy",
+      "title": "Strona internetowa dla ośrodka psychoterapii dzieci i młodzieży - Perły Mocy",
+      "short": "Kompleksowa rozbudowa strony na Wix dla ośrodka psychoterapii. 11 dedykowanych podstron dla zespołu, nowa strona główna, sekcja Ośrodek, sklep z produktami cyfrowymi, płatności online, poprawki WCAG i przekierowanie domeny.",
+      "description": "<p>Realizacja dla <strong>ośrodka psychoterapii dzieci i młodzieży Perły Mocy</strong> ze Skierniewic. Klientka zgłosiła się z istniejącą stroną na platformie Wix, nad którą poprzedni wykonawca przerwał pracę ze względów losowych.</p><br /><p>Oprócz dokończenia rozpoczętych elementów, stworzyliśmy <strong>11 dedykowanych podstron dla każdego członka zespołu</strong>, nową wersję strony głównej, sekcję Ośrodek oraz uzupełniliśmy podzakładki w sekcji Rodzice (konsultacje, warsztaty, kursy, materiały, grupa wsparcia, programy wspierające).</p><br /><p>Dodatkowo skonfigurowaliśmy <strong>sklep z produktami cyfrowymi</strong> (pliki audio i wideo), zintegrowaliśmy <strong>płatności online</strong> (BLIK/Przelewy24), uporządkowaliśmy strukturę URL-i i poprawiliśmy <strong>kontrast kolorów zgodnie z WCAG 2.1 AA</strong>. Stara domena zawierała polską literę Ł, co powodowało problemy z wyświetlaniem - wykonaliśmy przekierowanie na nowy adres. Klientka otrzymała 40-stronicową instrukcję obsługi strony oraz szczegółowe porady dotyczące SEO i prowadzenia witryny.</p>",
+      "image": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp",
+      "category": ["strona", "treść", "sklep"],
+      "link": "https://www.perlymocyskierniewice.com/",
+      "client": {
+        "name": "Perły Mocy",
+        "sector": "Psychoterapia dzieci i młodzieży",
+        "location": "Skierniewice"
+      },
+
+      "task": "Kompleksowa rozbudowa strony na Wix, integracja płatności i sklepu, przekierowanie domeny.",
+
+      "goals": "<p>Klientka potrzebowała dokończenia prac po poprzednim wykonawcy oraz rozbudowy strony:</p><ul><li>Wdrożenie sekcji <strong>O zespole</strong> z dedykowanymi podstronami dla 11 specjalistów</li><li>Integracja <strong>płatności online</strong> (BLIK/Przelewy24) - poprzednia konfiguracja PayPal nie działała poprawnie</li><li>Stworzenie <strong>sklepu z produktami cyfrowymi</strong> (pliki audio, wideo, PDF)</li><li>Uporządkowanie <strong>struktury URL-i</strong> i usunięcie duplikatów stron</li><li>Uzupełnienie podzakładek w sekcji <strong>Rodzice</strong> (konsultacje, warsztaty, kursy, materiały, grupa wsparcia)</li><li>Poprawienie wyglądu zakładek <strong>Artykuły</strong> i <strong>Pliki do pobrania</strong></li><li>Stworzenie nowej zakładki <strong>Ośrodek</strong> i nowej wersji <strong>strony głównej</strong></li><li>Poprawki <strong>dostępności</strong> zgodnie z WCAG 2.1 AA (kontrast, nawigacja)</li><li><strong>Przekierowanie domeny</strong> - stary adres zawierał polską literę Ł</li></ul>",
+
+      "process_steps": [
+        "Analiza istniejącej strony i określenie pełnego zakresu prac",
+        "Uporządkowanie struktury nawigacji, URL-i i usunięcie duplikatów",
+        "Stworzenie 11 dedykowanych podstron dla członków zespołu",
+        "Nowa wersja strony głównej i nowa zakładka Ośrodek",
+        "Uzupełnienie podzakładek w sekcji Rodzice",
+        "Konfiguracja sklepu z produktami cyfrowymi i płatności BLIK/Przelewy24",
+        "Poprawki dostępności zgodnie z WCAG 2.1 AA",
+        "Przekierowanie domeny i konfiguracja GSC",
+        "Przygotowanie 40-stronicowej instrukcji obsługi strony"
+      ],
+
+      "deliverables": [
+        "11 dedykowanych podstron dla każdego członka zespołu z pełnym opisem kwalifikacji",
+        "Strona hub Zespół z linkami do wszystkich specjalistów",
+        "Nowa wersja strony głównej z przeprojektowanym układem",
+        "Nowa zakładka Ośrodek z informacjami o placówce",
+        "Uzupełnione podzakładki w sekcji Rodzice (konsultacje, warsztaty, kursy, materiały, grupa wsparcia, programy wspierające)",
+        "Osobna strona FAQ przeniesiona ze strony głównej",
+        "Poprawiony wygląd zakładek Artykuły i Pliki do pobrania (szczególnie na mobile)",
+        "Sklep z produktami cyfrowymi (audio, wideo, PDF) z automatyczną wysyłką linków",
+        "Integracja płatności online BLIK/Przelewy24",
+        "Uporządkowana struktura URL-i i usunięte duplikaty stron",
+        "Poprawki dostępności zgodne z WCAG 2.1 AA (kontrast kolorów)",
+        "Przekierowanie domeny i konfiguracja Google Analytics + GSC",
+        "Kopia bezpieczeństwa z autozapisem",
+        "40-stronicowa instrukcja PDF z dokładnym opisem obsługi strony"
+      ],
+
+      "contentBlocks": [
+        {
+          "type": "image",
+          "src": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp",
+          "alt": "Mockup realiazacji strony dla ośrodka psychoterapii dzieci i młodzieży - Perły Mocy",
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Punkt wyjścia</h2><p>Klientka zgłosiła się z istniejącą stroną na Wix. Początkowe założenia obejmowały dokończenie sekcji zespołu, podpięcie płatności i dodanie kilku produktów do sklepu.</p><p>Po przeanalizowaniu sytuacji zakres prac został zwiększony. Oprócz dokończenia rozpoczętych elementów, strona wymagała przeprojektowania strony głównej, stworzenia nowej zakładki Ośrodek, uporządkowania struktury URL-i oraz poprawek dostępności.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Zakres realizacji",
+          "items": [
+            { "icon": "users", "title": "11 podstron dla zespołu", "description": "Dedykowana strona dla każdego specjalisty z pełnym opisem kwalifikacji, doświadczenia i specjalizacji." },
+            { "icon": "layout", "title": "Nowa strona główna + Ośrodek", "description": "Przeprojektowana strona główna oraz nowa zakładka z informacjami o placówce." },
+            { "icon": "file", "title": "Sekcja Rodzice", "description": "Uzupełnione podzakładki: konsultacje, warsztaty, kursy, materiały, grupa wsparcia, programy wspierające." },
+            { "icon": "cart", "title": "Sklep z produktami cyfrowymi", "description": "Konfiguracja sklepu z plikami audio, wideo i PDF z automatyczną wysyłką linków po zakupie." },
+            { "icon": "credit-card", "title": "Płatności BLIK/Przelewy24", "description": "Integracja płatności online - poprzednia konfiguracja PayPal nie działała poprawnie." },
+            { "icon": "eye", "title": "Dostępność WCAG 2.1 AA", "description": "Poprawki kontrastu kolorów i nawigacji zgodnie z wytycznymi dostępności." },
+            { "icon": "link", "title": "Przekierowanie domeny", "description": "Stara domena zawierała polską literę Ł - przekierowanie na nowy adres bez znaków specjalnych." },
+            {
+              "icon": "book-open",
+              "title": "Instrukcja PDF (40 stron)",
+              "description": "Dokładny opis jak edytować stronę, dodawać produkty, zarządzać zamówieniami - wszystko wyjaśnione prostym językiem."
+            }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "image",
+          "src": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-wyglad-strony-glownej-na-zywo.webp",
+          "alt": "Wygląd strony głównej Perły Mocy na żywo",
+          "ratio": "auto",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Co zostało zrobione dodatkowo?</h2><p><strong>Uporządkowanie struktury URL-i</strong> - usunięcie duplikatów stron i korekta błędnych adresów w ramach możliwości systemu Wix.</p><p><strong>Poprawiony wygląd zakładek</strong> - zakładki Artykuły i Pliki do pobrania zostały przeprojektowane, szczególnie pod kątem wyświetlania na urządzeniach mobilnych.</p><p><strong>Zmiana kolejności w menu</strong> - nawigacja została uporządkowana według wskazówek klientki.</p><p><strong>Kopia bezpieczeństwa</strong> - skonfigurowany autozapis w ramach możliwości planu Wix.</p><p><strong>Google Analytics i Search Console</strong> - konfiguracja narzędzi analitycznych wraz z utworzeniem dedykowanego konta e-mail do obsługi.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wsparcie i porady</h2><p>Oprócz samej realizacji, klientka otrzymała szczegółowe wyjaśnienia dotyczące działania SEO, pozycjonowania lokalnego oraz tego, jak Google łączy frazy z treściami na stronie. Omówiliśmy znaczenie opinii w wizytówce Google, rolę artykułów na blogu oraz jak budować widoczność strony w dłuższej perspektywie.</p><p>Wszystkie porady zostały przekazane prostym językiem, bez technicznego żargonu - tak aby klientka mogła samodzielnie rozwijać stronę i rozumieć, dlaczego poszczególne działania mają sens.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "callout",
+          "icon": "book-open",
+          "title": "40-stronicowa instrukcja obsługi",
+          "text": "Klientka otrzymała obszerny dokument PDF z dokładnym opisem jak edytować każdą sekcję strony, dodawać nowe podstrony dla członków zespołu, zarządzać sklepem i zamówieniami, obsługiwać płatności."
+        }
+      ],
+
+      "outcomes": [
+        { "label": "Podstrony dla zespołu", "value": "11", "note": "Dedykowana strona dla każdego specjalisty" },
+        { "label": "Nowe/przeprojektowane strony", "value": "20+", "note": "Zespół, Ośrodek, strona główna, sekcja Rodzice, FAQ i inne" },
+        { "label": "Instrukcja obsługi", "value": "40 stron", "note": "Dokument PDF z dokładnym opisem jak edytować stronę" }
+      ],
+
+      "cta": {
+        "title": "Potrzebujesz rozbudowy lub poprawek na swojej stronie?",
+        "description": "Pomagamy z istniejącymi stronami na Wix, WordPress i innych platformach. Uporządkujemy strukturę, dodamy brakujące funkcje i skonfigurujemy analitykę.",
+        "btnOne": "Skontaktuj się z nami",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Zobacz ofertę stron internetowych",
+        "btnTwoLink": "/uslugi/strony-internetowe",
+        "backgroundImage": "/assets/projects/perly-mocy/strona-internetowa-osrodek-psychoterapii-dzieci-i-mlodziezy-perla-mocy-mockup-realizacji-arteon.webp",
+        "overlay": "black"
+      },
+
+      "faq": [
+        {
+          "question": "Czy pomagacie z istniejącymi stronami na Wix?",
+          "answer": "Tak. Możemy rozbudować istniejącą stronę, dodać nowe funkcje, uporządkować strukturę lub pomóc z konfiguracją domeny i analityki. Nie musisz przenosić strony na inną platformę, jeśli Wix spełnia Twoje potrzeby."
+        },
+        {
+          "question": "Ile kosztuje rozbudowa strony na Wix?",
+          "answer": "Koszt zależy od zakresu prac. Proste poprawki i dodanie kilku podstron to zazwyczaj 500-1500 zł. Bardziej rozbudowane realizacje z integracją płatności i sklepu mogą kosztować więcej."
+        },
+        {
+          "question": "Czy mogę samodzielnie edytować stronę po zakończeniu prac?",
+          "answer": "Tak. Wix pozwala na samodzielne wprowadzanie zmian przez panel administracyjny. Przekazujemy również wskazówki dotyczące obsługi nowych funkcji."
+        },
+        {
+          "question": "Czy pomagacie z przekierowaniem domeny?",
+          "answer": "Tak. Konfigurujemy przekierowania domen, certyfikaty SSL i integrację z usługami zewnętrznymi (Google Analytics, Search Console)."
+        }
+      ],
+
+      "seo": {
+        "title": "Strona internetowa dla ośrodka psychoterapii - Perły Mocy - Arteon",
+        "description": "Kompleksowa rozbudowa strony na Wix dla ośrodka psychoterapii. 11 podstron dla zespołu, sklep z produktami cyfrowymi, płatności BLIK, poprawki WCAG i 40-stronicowa instrukcja obsługi.",
+        "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-osrodka-psychoterapii-dzieci-i-mlodziezy-perly-mocy"
+      }
+    },
+
+    {
       "slug": "plakat-sezonowy-dla-kawiarni-brewerynka",
       "title": "Plakat sezonowy dla kawiarni Brewerynka",
       "short": "Minimalistyczny plakat promocyjny dla kawiarni Brewerynka - część większej kampanii zimowej obejmującej materiały w lokalu i posty do mediów społecznościowych",
@@ -12,19 +298,36 @@
         "sector": "Gastronomia"
       },
 
-      "process_steps": [
-        "Stworzenie konceptu Brewerynka oraz określenie charakteru wizualnego marki.",
-        "Opracowanie koncepcji kampanii zimowej - motyw typograficzny, paleta kolorów i estetyka produktu.",
-        "Projekt formatu plakatowego z myślą o witrynach kawiarni oraz materiałach drukowanych.",
-        "Umieszczenie projektu na realistycznym mockupie witryny w celu prezentacji zastosowania."
-      ],
-
       "contentBlocks": [
         {
           "type": "image",
           "src": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
           "alt": "Plakat sezonowy Brewerynka Coffee Roasters - mockup ekspozycji w witrynie kawiarni",
-          "ratio": "16/9"
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            { "icon": "palette", "title": "Koncept wizualny", "description": "Stworzenie konceptu Brewerynka oraz określenie charakteru wizualnego marki." },
+            { "icon": "layers", "title": "Koncepcja kampanii", "description": "Opracowanie koncepcji kampanii zimowej - motyw typograficzny, paleta kolorów i estetyka produktu." },
+            { "icon": "pen", "title": "Projekt plakatu", "description": "Projekt formatu plakatowego z myślą o witrynach kawiarni oraz materiałach drukowanych." },
+            { "icon": "globe", "title": "Mockup prezentacyjny", "description": "Umieszczenie projektu na realistycznym mockupie witryny w celu prezentacji zastosowania." }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Projekt plakatu sezonowego w formacie A2/A3",
+            "Dobór palety kolorów (stonowane beże i chłodny błękit)",
+            "Kompozycja produktowa z minimalistycznym key visualem",
+            "Przygotowanie pliku do druku w wysokiej rozdzielczości",
+            "Mockup witryny kawiarni do prezentacji"
+          ],
+          "breakAfter": true
         },
         {
           "type": "image",
@@ -35,11 +338,11 @@
       ],
 
       "cta": {
-        "title": "Potrzebujesz plakatów promocyjnych lub kampanii sezonowej?",
-        "description": "Tworzymy spójne plakaty, grafiki do mediów społecznościowych i rozbudowane materiały promocyjne",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz plakatu promocyjnego dla swojej firmy?",
+        "description": "Zaprojektujemy spójny plakat sezonowy z przygotowaniem do druku i wersją do mediów społecznościowych.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę projektów graficznych",
+        "btnTwo": "Sprawdź ofertę projektów graficznych",
         "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/brewerynka/brewerynka-plakat-z-limitowana-oferta-mockup.webp",
         "overlay": "black"
@@ -47,26 +350,26 @@
 
       "faq": [
         {
-          "question": "W jakich formatach możecie przygotować plakat sezonowy?",
-          "answer": "Najczęściej przygotowujemy plakaty w formatach A3/A2. Jeśli plakat ma wisieć w konkretnym miejscu (np. szyba, tablica), dopasujemy wymiary i marginesy pod tę ekspozycję."
+          "question": "W jakich formatach przygotowujecie plakaty sezonowe?",
+          "answer": "Standardowo projektujemy plakaty w formatach A3 i A2 - to najpopularniejsze rozmiary do ekspozycji w witrynach i na tablicach. Jeśli plakat ma wisieć w konkretnym miejscu, dopasujemy wymiary i marginesy pod tę przestrzeń."
         },
         {
-          "question": "Czy dostanę plik gotowy do druku?",
-          "answer": "Tak. Przekazujemy pliki produkcyjne ze spadami i eksportem pod druk. Jeśli masz wytyczne drukarni (np. profil, spady, format), dopasujemy pliki pod te wymagania."
+          "question": "Czy pliki są gotowe do druku w drukarni?",
+          "answer": "Tak. Przekazujemy pliki produkcyjne ze spadami (3-5 mm), w odpowiednim profilu kolorów (CMYK) i rozdzielczości (300 DPI). Jeśli drukarnia ma własne wytyczne, dopasujemy eksport pod ich wymagania."
         },
         {
-          "question": "Czy na bazie plakatu możecie przygotować też wersje do mediów społecznościowych?",
-          "answer": "Tak. Możemy przygotować warianty (np. post i stories) utrzymane w tej samej koncepcji tak aby kampania była spójna offline i online."
+          "question": "Czy możecie przygotować też wersje do mediów społecznościowych?",
+          "answer": "Tak. Na bazie plakatu przygotowujemy warianty w formatach do Instagrama i Facebooka (post kwadratowy, pionowy, stories). Dzięki temu kampania jest spójna offline i online."
         },
         {
-          "question": "Co jest potrzebne, żeby wystartować z projektem?",
-          "answer": "Wystarczy: treść (oferta, data, cena), logo, ewentualne zdjęcia/produkty oraz informacja gdzie plakat będzie używany. Jeśli nie jesteś pewien co chcesz umieścić na plakacie to opowiedź nam co ma on promować."
+          "question": "Jakie materiały są potrzebne do rozpoczęcia projektu?",
+          "answer": "Potrzebujemy: treść do umieszczenia na plakacie (oferta, data, cena), logo w wersji wektorowej oraz informację gdzie plakat będzie eksponowany. Jeśli masz zdjęcia produktów - prześlij je. Jeśli nie masz jeszcze treści, pomożemy ją dopracować."
         }
       ],
 
       "seo": {
-        "title": "Plakat sezonowy dla kawiarni - Brewerynka - Arteon",
-        "description": "Projekt koncepcyjny plakatu promocyjnego dla rzemieślniczej kawiarni Brewerynka. Minimalistyczny key visual, estetyka calm geometry i makieta witryny kawiarni.",
+        "title": "Plakat sezonowy dla kawiarni Brewerynka - realizacja - Arteon",
+        "description": "Projekt plakatu promocyjnego dla kawiarni Brewerynka. Minimalistyczna kompozycja, stonowana paleta kolorów i mockup witryny. Zobacz realizację i zamów plakat dla swojej firmy.",
         "canonical": "https://www.arteonagency.pl/realizacje/plakat-sezonowy-dla-kawiarni-brewerynka"
       }
     },
@@ -75,25 +378,44 @@
       "slug": "karta-koktajli-dla-baru-nocturna",
       "title": "Karta koktajli dla baru Nocturna",
       "short": "Ekskluzywna karta koktajli dla baru Nocturna - nastrojowego cocktail baru w klimacie speakeasy.",
-      "description": "<p>Projekt koncepcyjnej <strong>karty koktajli</strong> dla Nocturna - ekskluzywnego, nocnego cocktail baru, w którym estetyka, światło i smak tworzą spójną atmosferę. Celem realizacji było stworzenie <strong>menu premium</strong> o wysokim stopniu dopracowania wizualnego: czytelnego, klimatycznego i budującego charakter miejsca przy pierwszym spojrzeniu.</p><br /><p>Karta została oparta o połączenie głębokiej czerwieni oraz <strong>beżowo-złotych akcentów</strong>, inspirowanych światłem świec i klasycznymi barami typu speakeasy. Delikatne, <strong>ilustracje drinków</strong>, przygotowane specjalnie do tego projektu, podkreślają rzemieślniczy charakter lokalu i tworzą ilustracyjną warstwę tła bez obciążania treści.</p><br /><p>W menu znalazły się autorskie koktajle, klasyki w reinterpretacjach oraz sekcja low-alcohol. Uzupełnieniem całości są <strong>House Rules</strong>, motto lokalu oraz informacje organizacyjne, dzięki czemu projekt może funkcjonować zarówno przy barze, jak i w wersji do druku lub publikacji online.</p><br /><p>Projekt został przygotowany w pełnej rozdzielczości, w dwóch wariantach kolorystycznych oraz z makietą w formie <strong>profesjonalnego mockupu</strong>, gotowego do prezentacji na stronie i mediach społecznościowych.</p>",
+      "description": "<p>Projekt koncepcyjnej <strong>karty koktajli</strong> dla Nocturna - ekskluzywnego cocktail baru, w którym estetyka, światło i smak tworzą spójną atmosferę. Celem było stworzenie <strong>menu premium</strong>: czytelnego, klimatycznego i budującego charakter miejsca przy pierwszym spojrzeniu.</p><br /><p>Karta opiera się na połączeniu głębokiej czerwieni i <strong>beżowo-złotych akcentów</strong>, inspirowanych światłem świec i klasycznymi barami typu speakeasy. Delikatne <strong>ilustracje drinków</strong> podkreślają rzemieślniczy charakter lokalu.</p><br /><p>W menu znalazły się autorskie koktajle, klasyki w reinterpretacjach oraz sekcja low-alcohol. Projekt został przygotowany w pełnej rozdzielczości, w dwóch wariantach kolorystycznych oraz z <strong>profesjonalnym mockupem</strong>.</p>",
       "image": "/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp",
       "category": ["grafika"],
       "client": {
         "name": "Nocturna Cocktail Atelier",
         "sector": "Gastronomia"
       },
-      "process_steps": [
-        "Określenie estetyki lokalu i stylu wizualnego (speakeasy, nocturnal, elegancja).",
-        "Stworzenie ilustracji drinków w technice szkicu ołówkowego i przygotowanie tła.",
-        "Projekt układu menu, typografii oraz tonalnej palety kolorów.",
-        "Dopasowanie wersji do druku oraz przygotowanie makiety produktowej (mockup)."
-      ],
       "contentBlocks": [
         {
           "type": "image",
           "src": "/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp",
           "alt": "Ekskluzywna karta koktajli Nocturna - mockup projektu graficznego",
-          "ratio": "16/9"
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            { "icon": "palette", "title": "Estetyka lokalu", "description": "Określenie stylu wizualnego: speakeasy, nocturnal, elegancja." },
+            { "icon": "pen", "title": "Ilustracje drinków", "description": "Stworzenie ilustracji w technice szkicu ołówkowego i przygotowanie tła." },
+            { "icon": "layers", "title": "Projekt menu", "description": "Układ menu, typografia oraz tonalna paleta kolorów." },
+            { "icon": "file", "title": "Pliki końcowe", "description": "Wersja do druku oraz mockup do prezentacji." }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Projekt karty koktajli w formacie pojedynczej karty",
+            "Autorskie ilustracje drinków w technice szkicu",
+            "Paleta kolorów: głęboka czerwień + beżowo-złote akcenty",
+            "Sekcje: autorskie koktajle, klasyki, low-alcohol",
+            "Wersja do druku i PDF do publikacji online",
+            "Profesjonalny mockup do prezentacji"
+          ],
+          "breakAfter": true
         },
         {
           "type": "image",
@@ -103,11 +425,11 @@
         }
       ],
       "cta": {
-        "title": "Potrzebujesz projektu karty koktajli lub menu dla swojego lokalu?",
-        "description": "Stworzymy elegancką, spójną wizualnie kartę dopasowaną do charakteru Twojego baru lub restauracji - wraz z ilustracjami, wersją do druku i profesjonalnym mockupem.",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz karty koktajli lub menu dla swojego lokalu?",
+        "description": "Zaprojektujemy eleganckie menu dopasowane do charakteru lokalu - wraz z ilustracjami i plikami do druku.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę projektów graficznych",
+        "btnTwo": "Sprawdź ofertę projektów menu",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-menu-restauracji",
         "backgroundImage": "/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp",
         "overlay": "black"
@@ -115,25 +437,25 @@
 
       "faq": [
         {
-          "question": "W jakich formatach może być przygotowana karta koktajli?",
-          "answer": "Menu możemy przygotować jako pojedynczą kartę, składane menu lub booklet (kilka stron). Format dobieramy do liczby pozycji i tego, jak karta będzie używana w lokalu."
+          "question": "W jakich formatach przygotowujecie karty koktajli?",
+          "answer": "Menu możemy przygotować jako pojedynczą kartę, składane menu lub booklet (kilka stron). Format dobieramy do liczby pozycji i sposobu użycia w lokalu - inna forma sprawdzi się przy barze, inna przy stolikach."
         },
         {
-          "question": "Czy projekt uwzględnia czytelność menu w półmroku?",
-          "answer": "Tak. Dobieramy kontrast, wielkości fontów i hierarchię typografii tak, aby menu było wygodne w czytaniu także przy nastrojowym oświetleniu."
+          "question": "Czy projekt uwzględnia czytelność w słabym oświetleniu?",
+          "answer": "Tak. Przy projektach dla barów i restauracji z nastrojowym oświetleniem dobieramy odpowiedni kontrast, wielkości fontów i hierarchię typografii. Menu musi być czytelne także w półmroku."
         },
         {
-          "question": "Czy w projekcie mogą znaleźć się ilustracje lub ikony drinków?",
-          "answer": "Tak. Możemy przygotować autorskie ilustracje (np. szkice) lub zestaw ikon, które podkreślą charakter lokalu i ułatwią nawigację po menu."
+          "question": "Czy możecie przygotować autorskie ilustracje drinków?",
+          "answer": "Tak. Tworzymy ilustracje w różnych technikach - od minimalistycznych ikon po szczegółowe szkice. Ilustracje podkreślają charakter lokalu i pomagają gościom wybrać napój."
         },
         {
-          "question": "Czy dostanę wersję do druku i wersję do publikacji online?",
-          "answer": "Tak. Przygotowujemy pliki do drukarni oraz wersję cyfrową (np. PDF) gotową do publikacji na stronie lub w mediach społecznościowych."
+          "question": "Jakie pliki otrzymam po zakończeniu projektu?",
+          "answer": "Przekazujemy pliki do druku (ze spadami, w CMYK, 300 DPI) oraz wersję cyfrową PDF do publikacji na stronie lub w mediach społecznościowych. Na życzenie przygotowujemy też mockup do prezentacji."
         }
       ],
       "seo": {
-        "title": "Ekskluzywna karta koktajli - Nocturna - Arteon",
-        "description": "Projekt ekskluzywnej karty koktajli dla konceptu Nocturna. Autorskie ilustracje drinków, elegancka typografia i profesjonalny mockup w stylistyce speakeasy.",
+        "title": "Karta koktajli dla baru Nocturna - realizacja menu - Arteon",
+        "description": "Projekt ekskluzywnej karty koktajli dla cocktail baru Nocturna. Autorskie ilustracje drinków, elegancka typografia i mockup w stylistyce speakeasy. Zobacz realizację.",
         "canonical": "https://www.arteonagency.pl/realizacje/karta-koktajli-dla-baru-nocturna"
       }
     },
@@ -141,8 +463,8 @@
     {
       "slug": "folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group",
       "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
-      "short": "Składany folder reklamowy w formacie A3 (składany na A4) dla polskiej firmy wykańczającej wnętrza domów i mieszkań",
-      "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Celem projektu było przygotowanie folderu w wersji cyfrowej oraz do druku, który opisuje jasno ofertę firmy, korzyści płynące ze współpracy (projekt, dobór materiałów i realizacja u jednego wykonawcy) oraz przekierowuje do wirtualnego spaceru po ostatniej realizacji tej firmy</p><br /><p>Połączone zostały delikatne odcienie brązu i beżu, spójne ze zdjęciami realizacji. Na pierwszej stronie umieszczone zostało zdjęcie łazienki, wykończonej przez firmę, zachęta do kontaktu oraz informacja o cenie za metr kwadratowy</p><br /><p>W środku znajdziemy jasno przedstawione korzyści ze współpracy z tym wykonawcą wraz z ikonami, dla lepszej czytelności oraz kodem QR do najnowszej realizacji wraz ze szczegółowym opisem co udało się zrobić w tej cenie.</p><br /><p>Projekt został <strong>przygotowany do druku wraz z wersją PDF</strong> do wysyłki potencjalnym klientom poprzez wiadomości mailowe. Realizacja obejmowała <strong>3 kierunki wizualne</strong> wraz z rundą poprawek oraz pomoc przy stworzeniu tekstu do folderu reklamowego",
+      "short": "Składany folder reklamowy w formacie A3 (składany na A4) dla polskiej firmy wykańczającej wnętrza domów i mieszkań.",
+      "description": "<p>Projekt składanego folderu reklamowego dla firmy <strong>wykańczającej wnętrza domów i mieszkań</strong>. Folder opisuje ofertę firmy, korzyści ze współpracy (projekt, dobór materiałów i realizacja u jednego wykonawcy) oraz zawiera kod QR do wirtualnego spaceru po ostatniej realizacji.</p><br /><p>Kolorystyka oparta na delikatnych odcieniach brązu i beżu, spójnych ze zdjęciami realizacji. Na pierwszej stronie: zdjęcie wykończonej łazienki, zachęta do kontaktu i cena za metr kwadratowy. W środku: jasno przedstawione korzyści z ikonami oraz szczegółowy opis realizacji.</p><br /><p>Projekt przygotowany do druku i jako PDF do wysyłki mailowej. Realizacja obejmowała <strong>3 kierunki wizualne</strong> oraz pomoc przy stworzeniu tekstu.</p>",
       "image": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
       "category": ["grafika"],
       "client": {
@@ -150,25 +472,30 @@
         "sector": "Wykończenie wnętrz domów i mieszkań"
       },
 
-      "testimonial": {
-        "quote": "Bardzo polecam. Porzadny folder reklamowy w dobrej cenie.",
-        "author": "Sebastian",
-        "role": "Foldery reklamowe",
-        "link": "https://fixly.pl/profil/d963Jrae"
-      },
-
-      "process_steps": [
-        "Ustalenie formatu oraz treści.",
-        "Stworzenie 3 kierunków estetycznych.",
-        "Dopasowanie spójnej kolorystyki i typografii.",
-        "Dopracowanie wraz z przygotowaniem pliku do druku i wysyłki w formie PDF."
-      ],
       "contentBlocks": [
         {
           "type": "image",
           "src": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
           "alt": "Folder reklamowy dla firmy wykańczającej wnętrza - wizualizacja pierwszej wersji środek folderu",
-          "ratio": "16/9"
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            { "icon": "file", "title": "Ustalenie formatu i treści", "description": "Określenie rozmiaru folderu i zawartości do umieszczenia." },
+            { "icon": "palette", "title": "3 kierunki estetyczne", "description": "Przygotowanie trzech propozycji wizualnych do wyboru." },
+            { "icon": "layers", "title": "Kolorystyka i typografia", "description": "Dopasowanie spójnej palety kolorów i krojów pisma." },
+            { "icon": "check", "title": "Pliki końcowe", "description": "Przygotowanie do druku i wersji PDF do wysyłki." }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": ["Folder składany A3 → A4", "3 kierunki wizualne do wyboru", "Pomoc przy stworzeniu tekstu", "Kod QR do wirtualnego spaceru", "Plik do druku + PDF do wysyłki mailowej"],
+          "breakAfter": true
         },
         {
           "type": "image",
@@ -190,12 +517,19 @@
         }
       ],
 
+      "testimonial": {
+        "quote": "Bardzo polecam. Porządny folder reklamowy w dobrej cenie.",
+        "author": "Sebastian",
+        "role": "Foldery reklamowe",
+        "link": "https://fixly.pl/profil/d963Jrae"
+      },
+
       "cta": {
-        "title": "Potrzebujesz projektu ulotki lub foldera reklamowego dla swojej firmy?",
-        "description": "Opisz nam czym się zajmujesz, przygotujemy projekt graficzny wraz z wersją do druku",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz folderu reklamowego dla swojej firmy?",
+        "description": "Zaprojektujemy folder z przygotowaniem do druku i wersją PDF do wysyłki mailowej.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę ulotek",
+        "btnTwo": "Sprawdź ofertę ulotek i folderów",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-ulotki",
         "backgroundImage": "/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp",
         "overlay": "black"
@@ -204,20 +538,24 @@
       "faq": [
         {
           "question": "Czy przygotujecie folder zarówno do druku, jak i do wysyłki e-mailem?",
-          "answer": "Tak. Możemy przygotować plik produkcyjny do drukarni oraz osobny, zoptymalizowany PDF do wysyłki mailowej z mniejszą wagą i zachowaną czytelnością."
+          "answer": "Tak. Przygotowujemy plik produkcyjny do drukarni (ze spadami, w CMYK, 300 DPI) oraz osobny, zoptymalizowany PDF do wysyłki mailowej - z mniejszą wagą pliku, ale zachowaną czytelnością."
         },
         {
           "question": "Czy możecie pomóc w dopracowaniu tekstów i układu oferty?",
-          "answer": "Tak. Możemy uporządkować treści, skrócić i doprecyzować komunikaty oraz ułożyć ofertę."
+          "answer": "Tak. Pomagamy uporządkować treści, skrócić i doprecyzować komunikaty oraz ułożyć ofertę w sposób czytelny dla odbiorcy. Jeśli nie masz gotowych tekstów - pomożemy je stworzyć."
         },
         {
-          "question": "Czy w folderze można umieścić kod QR do wirtualnego spaceru lub realizacji?",
-          "answer": "Tak. Kod QR to wygodny sposób, aby przenieść odbiorcę do galerii realizacji, filmu lub wirtualnego spaceru. Dobieramy miejsce i rozmiar tak, aby kod był łatwy do zeskanowania."
+          "question": "Czy w folderze można umieścić kod QR?",
+          "answer": "Tak. Kod QR to wygodny sposób, aby przenieść odbiorcę do galerii realizacji, wirtualnego spaceru lub strony kontaktowej. Dobieramy miejsce i rozmiar kodu tak, aby był łatwy do zeskanowania telefonem."
+        },
+        {
+          "question": "Ile kierunków wizualnych otrzymam do wyboru?",
+          "answer": "Standardowo przygotowujemy 2-3 kierunki wizualne. Każdy różni się układem, kolorystyką lub akcentami. Po wyborze jednego kierunku dopracowujemy szczegóły i wprowadzamy poprawki."
         }
       ],
       "seo": {
-        "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group",
-        "description": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group. Sprawdź naszą realizację i zamów własny katalog, ulotkę lub folder reklamowy",
+        "title": "Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group - Arteon",
+        "description": "Projekt folderu reklamowego dla firmy wykańczającej wnętrza Simba Group. Składany format A3, 3 kierunki wizualne, plik do druku i PDF. Zobacz realizację i zamów folder.",
         "canonical": "https://www.arteonagency.pl/realizacje/folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group"
       }
     },
@@ -225,8 +563,8 @@
     {
       "slug": "szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc",
       "title": "Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK",
-      "short": "Spójny zestaw szablonów postów i stories na media społecznościowe dla gabinetu psychologicznego",
-      "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami i podkreślą spokojny, wspierający charakter gabinetu.</p><p>Stworzyliśmy serię kadrów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli w połączeniu z klasyczną typografią buduje wrażenie bezpieczeństwa, profesjonalizmu i łagodnej, niedyrektywnej obecności psychoterapeuty.</p>",
+      "short": "Spójny zestaw szablonów postów i stories na media społecznościowe dla gabinetu psychologicznego.",
+      "description": "<p>Projekt szablonów postów i stories na Instagram oraz Facebook dla <strong>gabinetu psychologicznego MSC Psychotherapy</strong> w UK. Celem było przygotowanie spójnego wizualnie zestawu grafik, które ułatwią regularną komunikację z pacjentami.</p><p>Stworzyliśmy serię szablonów pod <strong>nowe wpisy na blogu</strong>, przypomnienia o terapii online, webinary oraz tygodniowe podsumowania. Stonowana paleta granatu, beżu i złamanej bieli buduje wrażenie bezpieczeństwa i profesjonalizmu.</p>",
       "image": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
       "category": ["grafika"],
       "client": {
@@ -234,27 +572,43 @@
         "sector": "Psychoterapia",
         "location": "Camberley, UK"
       },
-      "process_steps": [
-        "Analiza dotychczasowej komunikacji w mediach społecznościowych i ustalenie głównych typów postów (nowy wpis, webinary, przypomnienia, aktualności).",
-        "Przygotowanie moodboardu oraz palety kolorów spójnej ze stroną MSC Psychotherapy.",
-        "Zaprojektowanie układu szablonów pod posty i stories (tekst, zdjęcia, miejsce na wezwanie do działania np. „Link w opisie”).",
-        "Test czytelności na urządzeniach mobilnych i dopracowanie detali typograficznych.",
-        "Przekazanie plików roboczych i gotowych wersji do publikacji na Instagramie."
-      ],
       "contentBlocks": [
         {
           "type": "image",
           "src": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
           "alt": "Szablony postów na Instagram dla gabinetu psychologicznego MSC Psychotherapy UK",
-          "ratio": "16/9"
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            { "icon": "file", "title": "Analiza komunikacji", "description": "Przegląd dotychczasowych postów i ustalenie głównych typów treści." },
+            { "icon": "palette", "title": "Moodboard i paleta", "description": "Przygotowanie palety kolorów spójnej ze stroną gabinetu." },
+            { "icon": "layers", "title": "Projekt szablonów", "description": "Układ pod posty i stories z miejscem na tekst i wezwanie do działania." },
+            { "icon": "check", "title": "Testy i przekazanie", "description": "Weryfikacja czytelności na telefonach i przekazanie plików." }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Szablony postów kwadratowych (1080x1080)",
+            "Szablony stories (1080x1920)",
+            "Paleta kolorów: granat, beż, złamana biel",
+            "Warianty: wpisy blogowe, webinary, przypomnienia, aktualności",
+            "Pliki do samodzielnej edycji"
+          ]
         }
       ],
       "cta": {
-        "title": "Chcesz usprawnić proces tworzenia treści do swoich mediów społecznościowych?",
-        "description": "Opisz, jak czym się zajmujesz i kim są Twoi klienci. Przygotujemy spójny zestaw szablonów do Instagrama i innych mediów społecznościowych, który zbuduje profesjonalny wizerunek i uprości proces pozyskiwania nowych klientów.",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz szablonów postów do mediów społecznościowych?",
+        "description": "Zaprojektujemy spójny zestaw szablonów, który ułatwi regularną publikację i zbuduje profesjonalny wizerunek.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę szablonów do mediów społecznośiowych",
+        "btnTwo": "Sprawdź ofertę szablonów",
         "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
         "backgroundImage": "/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp",
         "overlay": "black"
@@ -263,24 +617,24 @@
       "faq": [
         {
           "question": "Jakie formaty obejmują szablony?",
-          "answer": "Format szablonu dopasowujemy do indywidualnych potrzeb. Możemy przygotować szablony pod najczęściej używane formaty, m.in. posty i stories na Instagramie. W razie potrzeby dodamy też warianty pod Facebook lub inne kanały."
+          "answer": "Przygotowujemy szablony w najpopularniejszych formatach: posty kwadratowe (1080x1080), pionowe (1080x1350) i stories (1080x1920). W razie potrzeby dodajemy warianty pod Facebook, LinkedIn lub inne kanały."
         },
         {
-          "question": "Czy mogę samodzielnie edytować teksty i zdjęcia w szablonach?",
-          "answer": "Tak. Układ jest zaprojektowany tak, aby szybko podmieniać treści bez psucia kompozycji. Dzięki temu możesz publikować regularnie, zachowując spójny styl."
+          "question": "Czy mogę samodzielnie edytować teksty i zdjęcia?",
+          "answer": "Tak. Szablony są zaprojektowane tak, aby łatwo podmieniać treści bez psucia kompozycji. Przekazujemy pliki w formacie umożliwiającym edycję (np. Canva, Figma lub PSD) - zależnie od preferencji."
         },
         {
           "question": "Czy projekt uwzględnia czytelność na telefonach?",
-          "answer": "Tak. Dobieramy wielkości fontów, kontrast i odstępy tak, aby treści były czytelna, na różnych urządzeniach mobilnych."
+          "answer": "Tak. Dobieramy wielkości fontów (min. 24px dla głównego tekstu), kontrast i odstępy tak, aby treść była czytelna na ekranach smartfonów - tam gdzie większość osób przegląda media społecznościowe."
         },
         {
-          "question": "Czy szablony mogą być dopasowane do identyfikacji marki gabinetu?",
-          "answer": "Tak. Dopasowujemy paletę kolorów, typografię i elementy graficzne do Twojej strony lub materiałów, aby komunikacja w mediach społecznościowych była spójna z wizerunkiem gabinetu."
+          "question": "Czy szablony będą spójne z identyfikacją mojej marki?",
+          "answer": "Tak. Dopasowujemy paletę kolorów, typografię i elementy graficzne do strony internetowej lub innych materiałów. Dzięki temu komunikacja w mediach społecznościowych jest spójna z całym wizerunkiem firmy."
         }
       ],
       "seo": {
         "title": "Szablony postów dla psychologa - MSC Psychotherapy - Arteon",
-        "description": "Realizacja szablonów postów na media społecznościowe dla gabinetu psychologicznego w Anglii. Zobacz realizację i zamów własny projekt",
+        "description": "Projekt szablonów postów na media społecznościowe dla gabinetu psychologicznego w UK. Posty i stories na Instagram, spójna paleta kolorów. Zobacz realizację.",
         "canonical": "https://www.arteonagency.pl/realizacje/szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc"
       }
     },
@@ -288,8 +642,8 @@
     {
       "slug": "bon-walentynkowy-dla-salonu-kosmetycznego-kasia",
       "title": "Bon walentynkowy dla salonu kosmetycznego Kasia",
-      "short": "Elegancki bon walentynkowy w formacie DL dla gabinetu kosmetycznego w Krakowie. Gotowe pliki do druku i wręczenia jako prezent.",
-      "description": "<p>Projekt bonu walentynkowego w formacie DL dla <strong>salonu kosmetycznego w Krakowie</strong>. Celem było stworzenie eleganckiego i czytelnego vouchera, który bezpośrednio nawiązuje do walentynek.</p><p>Połączony został motyw róż z delikatnymi pasami i klasyczną typografią. Na froncie dominuje spokojna kompozycja zdjęcia z tytułem i nazwą salonu, a na rewersie znajdują się <strong>czytelne pola do wypełnienia</strong> (dla kogo, na jaki zabieg, ważny do) oraz szczegółowe dane gabinetu.</p>",
+      "short": "Elegancki bon walentynkowy w formacie DL dla gabinetu kosmetycznego w Krakowie. Gotowe pliki do druku.",
+      "description": "<p>Projekt bonu walentynkowego w formacie DL dla <strong>salonu kosmetycznego w Krakowie</strong>. Celem było stworzenie eleganckiego vouchera nawiązującego do walentynek.</p><p>Motyw róż połączony z delikatnymi pasami i klasyczną typografią. Na froncie: spokojna kompozycja z tytułem i nazwą salonu. Na rewersie: <strong>czytelne pola do wypełnienia</strong> (dla kogo, na jaki zabieg, ważny do) oraz dane gabinetu.</p>",
       "image": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
       "category": ["grafika"],
       "client": {
@@ -297,27 +651,38 @@
         "sector": "Salon kosmetyczny",
         "location": "Kraków"
       },
-      "process_steps": [
-        "Ustalenie formatu oraz treści bonu walentynkowego.",
-        "Dobór zdjęcia i zaprojektowanie układu.",
-        "Dopasowanie spójnej kolorystyki i typografii.",
-        "Finalne dopracowanie wraz z przygotowaniem pliku do druku."
-      ],
       "contentBlocks": [
         {
           "type": "image",
           "src": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
           "alt": "Bon walentynkowy dla salonu kosmetycznego",
-          "ratio": "16/9"
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "steps",
+          "title": "Proces realizacji",
+          "items": [
+            { "icon": "file", "title": "Ustalenie formatu i treści", "description": "Określenie rozmiaru bonu i informacji do umieszczenia." },
+            { "icon": "palette", "title": "Dobór zdjęcia i układu", "description": "Wybór zdjęcia i zaprojektowanie kompozycji." },
+            { "icon": "layers", "title": "Kolorystyka i typografia", "description": "Dopasowanie palety walentynkowej i krojów pisma." },
+            { "icon": "check", "title": "Plik do druku", "description": "Finalne dopracowanie i przygotowanie do produkcji." }
+          ],
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": ["Bon w formacie DL (99x210 mm)", "Front: kompozycja z motywem róż", "Rewers: pola do wypełnienia + dane gabinetu", "Plik do druku (CMYK, spady, 300 DPI)"]
         }
       ],
 
       "cta": {
-        "title": "Potrzebujesz vouchera lub kuponu promocyjnego dla swojej firmy?",
-        "description": "Opisz nam czym się zajmujesz, przygotujemy projekt graficzny wraz z wersją do druku",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz vouchera lub bonu podarunkowego?",
+        "description": "Zaprojektujemy elegancki voucher z plikami gotowymi do druku.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę voucherów i kuponów",
+        "btnTwo": "Sprawdź ofertę voucherów",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera",
         "backgroundImage": "/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp",
         "overlay": "black"
@@ -325,25 +690,25 @@
 
       "faq": [
         {
-          "question": "Czy voucher może mieć dedykowane pola do wypełnienia?",
-          "answer": "Tak. Projektujemy voucher tak, aby był praktyczny w użyciu - z czytelnymi polami do wypełnienia oraz miejscem na najważniejsze informacje (np. wartość, usługa, termin ważności)."
+          "question": "Czy voucher może mieć pola do wypełnienia ręcznie?",
+          "answer": "Tak. Projektujemy vouchery z czytelnymi polami do wypełnienia - miejscem na imię obdarowanej osoby, rodzaj usługi, wartość i termin ważności. Pola są zaprojektowane tak, aby wpis długopisem wyglądał estetycznie."
         },
         {
-          "question": "Czy przygotujecie plik do druku i wersję do wysyłki online?",
-          "answer": "Tak. Dostarczamy pliki gotowe do druku oraz wersję cyfrową (np. PDF) do np. wysyłki e-mailem."
+          "question": "Czy przygotujecie plik do druku i wersję cyfrową?",
+          "answer": "Tak. Dostarczamy plik produkcyjny do drukarni (ze spadami, w CMYK, 300 DPI) oraz wersję PDF do wysyłki e-mailem - jeśli chcesz oferować vouchery także online."
         },
         {
-          "question": "Czy można przygotować serię voucherów sezonowych w jednym stylu?",
-          "answer": "Tak. Możemy zaprojektować zestaw voucherów na różne okazje (Walentynki, Dzień Kobiet, święta), zachowując spójny układ i identyfikację, aby materiały wyglądały jak jedna kolekcja."
+          "question": "Czy można zamówić serię voucherów na różne okazje?",
+          "answer": "Tak. Możemy zaprojektować zestaw voucherów na Walentynki, Dzień Kobiet, Dzień Matki i święta - wszystkie w spójnym stylu, aby wyglądały jak jedna kolekcja."
         },
         {
-          "question": "Jakie informacje są potrzebne, żeby rozpocząć projekt vouchera?",
-          "answer": "Wystarczą: logo, dane kontaktowe i zasady realizacji."
+          "question": "Jakie informacje są potrzebne do rozpoczęcia projektu?",
+          "answer": "Potrzebujemy: logo (najlepiej w wersji wektorowej), dane kontaktowe gabinetu, informację o tym jakie pola mają być do wypełnienia oraz ewentualne zdjęcia lub grafiki, które chcesz wykorzystać."
         }
       ],
       "seo": {
         "title": "Bon walentynkowy dla salonu kosmetycznego Kasia - Arteon",
-        "description": "Elegancki bon walentynkowy dla gabinetu kosmetycznego. Gotowe pliki do druku. Sprawdź naszą realizację i samów własny projekt",
+        "description": "Projekt bonu walentynkowego dla gabinetu kosmetycznego w Krakowie. Elegancki voucher w formacie DL z polami do wypełnienia. Zobacz realizację i zamów voucher.",
         "canonical": "https://www.arteonagency.pl/realizacje/bon-walentynkowy-dla-salonu-kosmetycznego-kasia"
       }
     },
@@ -392,34 +757,37 @@
         "afterImage": "/assets/projects/arteon-camper-albania-a.webp"
       },
 
+      "faq": [
+        {
+          "question": "Czy można poprawić wynik PageSpeed bez przebudowy całej strony?",
+          "answer": "Tak. Przeprowadzamy audyt i wdrażamy poprawki punktowo - optymalizujemy obrazy, skrypty i zasoby. Jeśli problem leży w układzie lub treści, rekomendujemy redesign tylko wybranych sekcji, nie całej strony."
+        },
+        {
+          "question": "Jakie elementy najczęściej obniżają wydajność strony?",
+          "answer": "Najczęstsze przyczyny to: zbyt duże obrazy (brak kompresji, niewłaściwe formaty), ciężkie skrypty JavaScript ładowane synchronicznie, niezoptymalizowane animacje oraz zbyt wiele zasobów ładowanych od razu po otwarciu strony (render-blocking resources)."
+        },
+        {
+          "question": "Czy po optymalizacji strona zachowa dotychczasowy wygląd?",
+          "answer": "Tak. Celem optymalizacji jest szybsza strona bez utraty estetyki. Zmiany dotyczą głównie warstwy technicznej - kompresji, ładowania zasobów, kodu. Układ i styl pozostają bez zmian, chyba że kontrast wymaga poprawy pod kątem dostępności."
+        },
+        {
+          "question": "Jak mierzycie efekty optymalizacji?",
+          "answer": "Efekty mierzymy w Google PageSpeed Insights - sprawdzamy wynik przed i po optymalizacji, zarówno dla wersji mobilnej, jak i desktopowej. Dodatkowo weryfikujemy Core Web Vitals: LCP, FID/INP i CLS."
+        }
+      ],
       "cta": {
         "title": "Potrzebujesz szybszej i czytelniejszej strony?",
-        "description": "Prześlij link do swojej strony, sprawdzimy jak można ją poprawić ",
-        "btnOne": "Skontaktuj się",
+        "description": "Prześlij link do swojej strony - sprawdzimy co można poprawić i przygotujemy wycenę.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę stron internetowych",
+        "btnTwo": "Sprawdź ofertę optymalizacji stron",
         "btnTwoLink": "/uslugi/strony-internetowe",
         "backgroundImage": "/assets/projects/arteon-baners-camper-albania-mockup.webp",
         "overlay": "black"
       },
-
-      "faq": [
-        {
-          "question": "Czy można poprawić wynik PageSpeed bez przebudowy całej strony?",
-          "answer": "Tak, w przypadku optymalizacji zawsze przeprowadzamy najpierw krótki audyt a następnie wdrażamy poprawki. Jeśli problem leży w układzie lub treści, wtedy rekomendujemy redesign tylko wybranych sekcji."
-        },
-        {
-          "question": "Jakie elementy najczęściej obniżają wydajność strony na telefonach?",
-          "answer": "Najczęściej są to zbyt duże obrazy, zbyt ciężkie skrypty, skomplikowane i nie zoptymalizowane animacje a także zbyt dużo zasobów ładowanych zaraz po otworzeniu strony. Porządkujemy te obszary a następnie testujemy w Google PageSpeed Insights."
-        },
-        {
-          "question": "Czy po optymalizacji strona zachowa spójny wygląd i będzie responsywna?",
-          "answer": "Tak, celem optymalizacji jest szybsza strona bez utraty estetyki, zawsze wdrażamy zmiany mając na uwadzę zachowanie, w miarę możliwości, tego samego stylu i układu."
-        }
-      ],
       "seo": {
-        "title": "Strona internetowa z wynajmem kamperów w Albanii - Arteon",
-        "description": "Redesign i optymalizacja strony internetowej z wynajmem kamperów w Albanii - Camper Albania. Lepszy kontrast, czytelność  i optymalizacja",
+        "title": "Redesign strony Camper Albania - optymalizacja i dostępność - Arteon",
+        "description": "Redesign i optymalizacja strony wypożyczalni kamperów Camper Albania. Wynik PageSpeed z 65 do 95 punktów, lepszy kontrast WCAG 2.1 AA. Zobacz realizację.",
         "canonical": "https://www.arteonagency.pl/realizacje/strona-internetowa-dla-camper-albania"
       }
     },
@@ -441,38 +809,54 @@
         { "value": "Prestiż", "label": "Motyw", "note": "Delikatny gryf buduje rozpoznawalność bez przytłoczenia" }
       ],
       "process_steps": ["Analiza istniejących materiałów (logo, wizytówki, teczka)", "Ustalenie siatki i marginesów pod format A4", "Projekt motywu tła oraz stopki i nagłówka papieru firmowego"],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt papieru firmowego?",
-          "answer": "Projekt papieru firmowego kosztuje od 180 do 280 zł brutto - w zależności od ilości wariantów oraz informacji, które muszą być zawarte na papierze firmowym"
-        }
-      ],
       "contentBlocks": [
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Paleta i typografia</h2><p>Kolory: <strong>bordo</strong> i <strong>beż</strong> - stabilność i zaufanie. Typografia łączy elegancki serif z nowoczesnym groteskiem. Taki duet gwarantuje czytelność na papierze i w PDF.</p>"
-        },
         {
           "type": "image",
           "src": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
           "alt": "Papier firmowy LUX NOVA - wizualizacja na biurku",
           "caption": "Wizualizacja 3D - elegancja i porządek na pierwszym planie",
-          "ratio": "16/9"
+          "ratio": "16/9",
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Projekt papieru firmowego A4 (nagłówek + tło + stopka)",
+            "Motyw gryfa jako subtelny wzór tła",
+            "Stopka z danymi kontaktowymi i kodem QR",
+            "Paleta: bordo i beż",
+            "Plik do druku + wersja cyfrowa PDF"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt papieru firmowego?",
+          "answer": "Projekt papieru firmowego kosztuje od 180 do 280 zł brutto - zależnie od liczby wariantów i złożoności. W cenie: projekt nagłówka, stopki, tła oraz pliki do druku i PDF."
+        },
+        {
+          "question": "Czy papier firmowy może zawierać kod QR?",
+          "answer": "Tak. Kod QR w stopce to wygodny sposób na przekierowanie odbiorcy do strony internetowej lub wizytówki Google. Dobieramy rozmiar i miejsce tak, aby kod był łatwy do zeskanowania."
+        },
+        {
+          "question": "Jakie pliki otrzymam po zakończeniu projektu?",
+          "answer": "Przekazujemy pliki do druku (PDF w CMYK, ze spadami, 300 DPI) oraz wersję cyfrową do użycia jako szablon w programach biurowych (Word, Google Docs) - zależnie od potrzeb."
         }
       ],
       "cta": {
-        "title": "Zamów papier firmowy dla swojej firmy",
-        "description": "Zrealizujemy dla Ciebie projekt z przygotowaniem do druku",
-        "btnOne": "Zamów papier firmowy",
+        "title": "Potrzebujesz papieru firmowego dla swojej firmy?",
+        "description": "Zaprojektujemy elegancki papier firmowy z przygotowaniem do druku i wersją cyfrową.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Projekty graficzne",
+        "btnTwo": "Sprawdź ofertę projektów graficznych",
         "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp",
         "overlay": "black"
       },
       "seo": {
-        "title": "Papier firmowy dla kancelarii adwokackiej - Arteon",
-        "description": "Projekt papieru firmowego dla kancelarii. Sprawdź realizację i zamów papier firmowy dla swojej firmy",
+        "title": "Papier firmowy dla kancelarii adwokackiej LUX NOVA - Arteon",
+        "description": "Projekt papieru firmowego dla kancelarii adwokackiej LUX NOVA. Elegancki nagłówek, motyw gryfa, stopka z kodem QR. Zobacz realizację i zamów papier firmowy.",
         "canonical": "https://www.arteonagency.pl/realizacje/papier-firmowy-dla-kancelarii-adwokackiej-lux-nova"
       }
     },
@@ -504,35 +888,17 @@
         "Opracowanie zewnętrznej i wewnętrznej kompozycji teczki",
         "Przygotowanie wersji do druku i prezentacji 3D"
       ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt teczki ofertowej?",
-          "answer": "Projekt teczki ofertowej kosztuje od 250 do 450 zł brutto, w zależności od stopnia personalizacji i przygotowania do druku."
-        },
-        {
-          "question": "Jak długo trwa realizacja projektu?",
-          "answer": "Projekt wraz z wizualizacją i plikami do druku realizujemy w ciągu 2-4 dni roboczych."
-        },
-        {
-          "question": "Czy przygotowujecie projekty teczek ofertowych dla innych branż?",
-          "answer": "Tak, projektujemy teczki ofertowe dla kancelarii, biur, deweloperów, gabinetów medycznych i innych firm, dopasowując styl do charakteru branży."
-        },
-        {
-          "question": "Czy mogę zamówić zestaw: teczka + wizytówka + papier firmowy?",
-          "answer": "Tak, oferujemy komplet materiałów firmowych w spójnej identyfikacji graficznej. W pakiecie cena jest niższa."
-        }
-      ],
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Paleta i typografia</h2><p>Projekt utrzymany jest w kolorystyce <strong>bordo i beżu</strong> - symbolizujących stabilność, doświadczenie i klasę. Typografia łączy nowoczesność z tradycją: elegancki <em>Beaufort Pro</em> z geometrycznym <em>Neue Haas Grotesk Display Pro</em>. Taki zestaw podkreśla profesjonalizm i wysoką kulturę komunikacji marki prawniczej.</p>"
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Paleta i typografia</h2><p>Projekt utrzymany jest w kolorystyce <strong>bordo i beżu</strong> - symbolizujących stabilność, doświadczenie i klasę. Typografia łączy nowoczesność z tradycją: elegancki <em>Beaufort Pro</em> z geometrycznym <em>Neue Haas Grotesk Display Pro</em>. Taki zestaw podkreśla profesjonalizm i wysoką kulturę komunikacji marki prawniczej.</p>"
         },
         {
           "type": "imageText",
           "src": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
           "alt": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - projekt koncepcyjny",
           "imageSide": "left",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Projekt teczki ofertowej dla kancelarii adwokackiej</h2><p>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy elegancką formę, która idealnie reprezentuje kancelarię podczas spotkań i przekazywania dokumentów.</p>"
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Projekt teczki ofertowej dla kancelarii adwokackiej</h2><p>Na froncie teczki umieszczono sygnet gryfa - symbol siły i mądrości - w centralnej kompozycji. Wnętrze utrzymane jest w głębokim odcieniu bordo, z precyzyjnie rozmieszczonymi danymi kontaktowymi i kodem QR. Całość tworzy elegancką formę, która idealnie reprezentuje kancelarię podczas spotkań i przekazywania dokumentów.</p>"
         },
         {
           "type": "image",
@@ -556,19 +922,37 @@
           "ratio": "auto"
         }
       ],
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt teczki ofertowej?",
+          "answer": "Projekt teczki ofertowej kosztuje od 250 do 450 zł brutto, w zależności od stopnia personalizacji i przygotowania do druku."
+        },
+        {
+          "question": "Jak długo trwa realizacja projektu?",
+          "answer": "Projekt wraz z wizualizacją i plikami do druku realizujemy w ciągu 2-4 dni roboczych."
+        },
+        {
+          "question": "Czy przygotowujecie projekty teczek ofertowych dla innych branż?",
+          "answer": "Tak, projektujemy teczki ofertowe dla kancelarii, biur, deweloperów, gabinetów medycznych i innych firm, dopasowując styl do charakteru branży."
+        },
+        {
+          "question": "Czy mogę zamówić zestaw: teczka + wizytówka + papier firmowy?",
+          "answer": "Tak, oferujemy komplet materiałów firmowych w spójnej identyfikacji graficznej. W pakiecie cena jest niższa."
+        }
+      ],
       "cta": {
         "title": "Potrzebujesz teczki ofertowej dla swojej firmy?",
-        "description": "Skontaktuj się z nami lub sprawdź szczegóły naszej oferty",
-        "btnOne": "Zamów teczkę",
+        "description": "Zaprojektujemy elegancką teczkę spójną z identyfikacją wizualną - z przygotowaniem do druku.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Projekty graficzne",
+        "btnTwo": "Sprawdź ofertę projektów graficznych",
         "btnTwoLink": "/uslugi/projekty-graficzne",
         "backgroundImage": "/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp",
         "overlay": "black"
       },
       "seo": {
-        "title": "Teczka ofertowa dla kancelarii adwokackiej - Arteon",
-        "description": "Projekt teczki ofertowej dla kancelarii adwokackiej. Zobacz, naszą realizację i zamów projekt teczki sprzedażowej dla swojej firmy",
+        "title": "Teczka ofertowa dla kancelarii adwokackiej LUX NOVA - Arteon",
+        "description": "Projekt teczki ofertowej dla kancelarii adwokackiej LUX NOVA. Sygnet gryfa, paleta bordo i beż, kod QR. Zobacz realizację i zamów teczkę dla swojej firmy.",
         "canonical": "https://www.arteonagency.pl/realizacje/teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova"
       }
     },
@@ -599,35 +983,26 @@
         "Stworzenie 2 wersji wizytówki w kompozycji poziomej",
         "Zdjęcia 3D projektu oraz opis"
       ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt wizytówki?",
-          "answer": "Projekt wizytówki kosztuje u nas od 150 do 250 zł brutto"
-        },
-        {
-          "question": "Ile trwa realizacja projektu wizytówki?",
-          "answer": "Realizacja projektu, wraz z przygotowaniem do druku, zajmuje od 1 do 3 dni roboczych, po ustaleniu co ma się znaleźć na wizytówce"
-        },
-        {
-          "question": "Czy tworzycie i przerabiacie projekty wizytówek do druku?",
-          "answer": "Tak, możemy stworzyć gotowe pliku do druku, według wskazanych przez Państwa drukarnie preferencji"
-        },
-        {
-          "question": "Czy warto dodać kod QR na wizytówce?",
-          "answer": "Kod QR ułatwia szybkie przejście do strony kontaktowej, dzięki temu użytkownik nie musi przepisywać danych ręcznie, co pozytywnie wpływa na sprzedaż"
-        }
-      ],
       "contentBlocks": [
-        {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Paleta i typografia</h2><p>Użyliśmy połączenia bordo i beżu, dla wzmacnia wrażenie autorytetu i stabilności. Typografia oparta jest na krojach Beaufort Pro i Neue Haas Grotesk Display Pro - budują one wrażenie nowoczesnej klasyki oraz utrzymują wysoką czytelność w małych rozmiarach.</p>"
-        },
         {
           "type": "imageText",
           "src": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
           "alt": "Wizytówka dla kancelarii - LUX NOVA (widok ogólny)",
           "imageSide": "left",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówka dla adwokata - hierarchia i porządek</h2><p>Na froncie zaakcentowaliśmy mocno logo firmy, aby odbiorca mógł szybko zapamiętać znak kancelarii. Na rewersie ponownie zaakcentowaliśmy logo wraz z kodem QR do strony firmowej, na dole uporządkowaliśmy najważniejsze dane firmy</p>"
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówka dla adwokata - hierarchia i porządek</h2><p>Na froncie zaakcentowaliśmy logo firmy, aby odbiorca szybko zapamiętał znak kancelarii. Na rewersie: logo z kodem QR do strony firmowej oraz uporządkowane dane kontaktowe.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Wizytówka w układzie poziomym (front + rewers)",
+            "Logo z gryfem jako element identyfikacji",
+            "Paleta: bordo i beż",
+            "Kod QR do strony firmowej",
+            "Plik do druku (CMYK, spady, 300 DPI)"
+          ],
+          "breakAfter": true
         },
         {
           "type": "image",
@@ -644,21 +1019,38 @@
           "ratio": "16/9"
         }
       ],
-
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt wizytówki?",
+          "answer": "Projekt wizytówki kosztuje od 150 do 250 zł brutto - zależnie od liczby wariantów i złożoności. W cenie: projekt frontu i rewersu, pliki do druku oraz mockup do prezentacji."
+        },
+        {
+          "question": "Ile trwa realizacja projektu wizytówki?",
+          "answer": "Realizacja zajmuje od 1 do 3 dni roboczych po ustaleniu treści i układu. Czas zależy od liczby poprawek i wariantów do przygotowania."
+        },
+        {
+          "question": "Czy przygotowujecie pliki gotowe do druku?",
+          "answer": "Tak. Przekazujemy pliki produkcyjne zgodne z wytycznymi drukarni - ze spadami, w CMYK, 300 DPI. Jeśli drukarnia ma własne wymagania (np. profil kolorów), dopasujemy eksport."
+        },
+        {
+          "question": "Czy warto dodać kod QR na wizytówce?",
+          "answer": "Kod QR ułatwia szybkie przejście do strony, wizytówki Google lub profilu LinkedIn. Odbiorca nie musi przepisywać danych ręcznie - skanuje kod i ma wszystko pod ręką."
+        }
+      ],
       "cta": {
         "title": "Potrzebujesz wizytówki dla swojej firmy?",
-        "description": "Zaprojektujemy wizytówkę przygotowaną do druku, spójną z charakterem Twojej branży",
-        "btnOne": "Zamów wizytówkę",
+        "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - spójną z identyfikacją wizualną.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę projektu wizytówki",
+        "btnTwo": "Sprawdź ofertę projektu wizytówki",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp",
         "overlay": "black"
       },
 
       "seo": {
-        "title": "Wizytówka dla kancelarii - Arteon",
-        "description": "Projekt wizytówki dla kancelarii adwokackiej. Sprawdź jak wyglądają stworzone przez nas wizytówki i zamów wizytówkę dla siebie",
+        "title": "Wizytówka dla kancelarii adwokackiej LUX NOVA - Arteon",
+        "description": "Projekt wizytówki dla kancelarii adwokackiej LUX NOVA. Elegancki układ z kodem QR, paleta bordo i beż. Zobacz realizację i zamów wizytówkę dla swojej firmy.",
         "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-kancelarii-adwokackiej-lux-nova"
       }
     },
@@ -712,7 +1104,6 @@
         "afterImage": "/assets/projects/arteon-a-msc2.webp",
         "note": "Przed: różne style i wolne ładowanie. Po: jedna linia wizualna, jasny przekaz i treści pod <strong>pozycjonowanie dla psychologa</strong>."
       },
-
       "faq": [
         {
           "question": "Ile kosztuje strona dla psychologa?",
@@ -753,9 +1144,9 @@
       ],
 
       "cta": {
-        "title": "Potrzebujesz strony dla swojego gabinetu psychologicznego?",
-        "description": "Zaprojektujemy czytelną stronę z treściami pod SEO i prostą ścieżką do kontaktu",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz strony dla gabinetu psychologicznego?",
+        "description": "Zaprojektujemy czytelną stronę z treściami pod SEO, prostą ścieżką do kontaktu i opcją rezerwacji wizyt.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
@@ -764,8 +1155,8 @@
       },
 
       "seo": {
-        "title": "Strona dla psychologa - MSC Psychotherapy - Arteon",
-        "description": "Realizacja strony dla psychologa w Anglii. Pozycjonowanie lokalne, logo, marketing i promocja książki. Sprawdź naszą realizację",
+        "title": "Strona dla psychologa MSC Psychotherapy UK - Arteon",
+        "description": "Realizacja strony dla gabinetu psychologicznego w UK. Pozycjonowanie lokalne, nowy wygląd, wynik PageSpeed 97/100. Zobacz case study i zamów stronę.",
         "canonical": "https://www.arteonagency.pl/realizacje/strona-dla-psychologa-msc-psychotherapy"
       }
     },
@@ -792,28 +1183,10 @@
         "Skład katalogu: strony kategorii, karty produktów, sekcje cenowe",
         "Prezentacja na mockupach i przygotowanie plików poglądowych"
       ],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt katalogu produktów?",
-          "answer": "Cena projektu katalogu sprzedażowego zależy od liczby stron, złożoności grafik oraz potrzebnych do przygotowania materiałów. Przeciętny zakres cenowy to 50 - 200 zł brutto za stronę"
-        },
-        {
-          "question": "Jakie materiały są potrzebne do katalogu produktów?",
-          "answer": "Lista produktów, parametry techniczne, ceny, zdjęcia i logotyp. Jeśli potrzebujesz dedykowanych materiałów (np. ikon), możemy je dla Ciebie stworzyć."
-        },
-        {
-          "question": "Czy możecie zaprojektować ikony i piktogramy do katalogu sprzedażowego?",
-          "answer": "Tak. Możemy stworzyć autorskie ikony cech produktu oraz inne elementy potrzebne do prawidłowego pokazania produktów"
-        },
-        {
-          "question": "Ile trwa stworzenie projektu katalogu produktów?",
-          "answer": "Przygotowanie katalogu produktów najczęściej trwa 5-15 dni roboczych, zależnie od liczby stron, złożoności grafik oraz potrzebnych do przygotowania materiałów"
-        }
-      ],
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Struktura i hierarchia</h2><p>Czytelne kategorie, powtarzalna karta produktu, wyróżnione ceny. Szybkie porównania wspierają decyzję zakupu.</p>"
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Struktura i hierarchia</h2><p>Czytelne kategorie, powtarzalna karta produktu, wyróżnione ceny. Szybkie porównania wspierają decyzję zakupu.</p>"
         },
         {
           "type": "image",
@@ -823,21 +1196,38 @@
           "ratio": "16/9"
         }
       ],
-
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt katalogu produktów?",
+          "answer": "Cena projektu katalogu sprzedażowego zależy od liczby stron, złożoności grafik oraz potrzebnych do przygotowania materiałów. Przeciętny zakres cenowy to 50-200 zł brutto za stronę."
+        },
+        {
+          "question": "Jakie materiały są potrzebne do katalogu produktów?",
+          "answer": "Lista produktów, parametry techniczne, ceny, zdjęcia i logotyp. Jeśli potrzebujesz dedykowanych materiałów (np. ikon), możemy je dla Ciebie stworzyć."
+        },
+        {
+          "question": "Czy możecie zaprojektować ikony i piktogramy do katalogu sprzedażowego?",
+          "answer": "Tak. Możemy stworzyć autorskie ikony cech produktu oraz inne elementy potrzebne do prawidłowego pokazania produktów."
+        },
+        {
+          "question": "Ile trwa stworzenie projektu katalogu produktów?",
+          "answer": "Przygotowanie katalogu produktów najczęściej trwa 5-15 dni roboczych, zależnie od liczby stron, złożoności grafik oraz potrzebnych do przygotowania materiałów."
+        }
+      ],
       "cta": {
         "title": "Potrzebujesz katalogu produktów dla swojej firmy?",
-        "description": "Zaprojektujemy czytelny katalog gotowy do druku",
-        "btnOne": "Skontaktuj się",
+        "description": "Zaprojektujemy czytelny katalog z kartami produktów, parametrami i cenami - gotowy do druku.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę projektu katalogu",
+        "btnTwo": "Sprawdź ofertę projektu katalogu",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-katalogu",
         "backgroundImage": "/assets/projects/gazetka-mockup.webp",
         "overlay": "black"
       },
 
       "seo": {
-        "title": "Katalog produktów dla gastronomii - Arteon",
-        "description": "Projekt katalogu produktów (A5) dla gastronomii. Czytelne karty produktów, parametry, ceny i ikony pochodzenia. Zobacz naszą realizację katalogu produktów",
+        "title": "Katalog produktów dla gastronomii RestoQuality - Arteon",
+        "description": "Projekt katalogu produktów dla gastronomii RestoQuality. Karty produktów z parametrami, cenami i ikonami pochodzenia. Zobacz realizację i zamów katalog.",
         "canonical": "https://www.arteonagency.pl/realizacje/katalog-produktow-restoquality"
       }
     },
@@ -858,44 +1248,59 @@
         "Ustalenie zgodnej palety i typografii (Warbler Display)",
         "Makieta 3D i finalna prezentacja"
       ],
-      "faq": [
-        {
-          "question": "Jaki jest koszt projektu wizytówki?",
-          "answer": "Projekt wizytówki kosztuje u nas od 150 do 250 zł brutto"
-        },
-        {
-          "question": "Jak długo trwa realizacja projektu wizytówki?",
-          "answer": "Realizacja projektu, wraz z przygotowaniem do druku, zajmuje od 1 do 3 dni roboczych, po ustaleniu co ma się znaleźć na wizytówce"
-        },
-        {
-          "question": "Czy tworzycie i przerabiacie projekty wizytówek do druku?",
-          "answer": "Tak, możemy stworzyć gotowe pliku do druku, według wskazanych przez Państwa drukarnie preferencji"
-        }
-      ],
       "contentBlocks": [
         {
           "type": "imageText",
           "src": "/assets/projects/wizytowka-talia.webp",
           "alt": "Wizytówka dla SPA - TALIA (front i tył)",
           "imageSide": "left",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>"
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla SPA - spokój i klasa</h2><p>Malarstwo natury na froncie i elegancki układ danych na rewersie. Połączenie zieleni i beżu buduje wrażenie jakości i bliskości natury.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "featureList",
+          "title": "Zakres prac",
+          "items": [
+            "Wizytówka w układzie poziomym (front + rewers)",
+            "Malarskie tło lasu (akryl) na froncie",
+            "Typografia: Warbler Display",
+            "Paleta: zieleń #182519, beż #e1d2c2, biel",
+            "Plik do druku (CMYK, spady, 300 DPI)"
+          ]
         }
       ],
-
+      "faq": [
+        {
+          "question": "Ile kosztuje projekt wizytówki dla SPA?",
+          "answer": "Projekt wizytówki kosztuje od 150 do 250 zł brutto - zależnie od liczby wariantów i złożoności. W cenie: projekt frontu i rewersu oraz pliki do druku."
+        },
+        {
+          "question": "Jak długo trwa realizacja projektu?",
+          "answer": "Realizacja zajmuje od 1 do 3 dni roboczych po ustaleniu treści i układu. Czas zależy od liczby poprawek i wariantów."
+        },
+        {
+          "question": "Czy przygotowujecie pliki gotowe do druku?",
+          "answer": "Tak. Przekazujemy pliki produkcyjne zgodne z wytycznymi drukarni - ze spadami, w CMYK, 300 DPI. Jeśli drukarnia ma własne wymagania, dopasujemy eksport."
+        },
+        {
+          "question": "Czy wizytówka może mieć nietypowe wykończenie?",
+          "answer": "Tak. Możemy przygotować projekt pod druk na papierze fakturowanym, z lakierem wybiórczym, złoceniem lub tłoczeniem. Dobieramy wykończenie do charakteru marki."
+        }
+      ],
       "cta": {
-        "title": "Potrzebujesz wizytówki premium dla swojej marki?",
-        "description": "Zaprojektujemy elegancką wizytówkę i przygotujemy pliki gotowe do druku",
-        "btnOne": "Zamów wizytówkę",
+        "title": "Potrzebujesz wizytówki dla swojego SPA lub gabinetu?",
+        "description": "Zaprojektujemy elegancką wizytówkę z przygotowaniem do druku - dopasowaną do charakteru marki.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę projektu wizytówki",
+        "btnTwo": "Sprawdź ofertę projektu wizytówki",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/wizytowka-talia.webp",
         "overlay": "black"
       },
 
       "seo": {
-        "title": "Projekt wizytówki dla SPA - Arteon",
-        "description": "Wizytówka dla SPA w estetyce premium & nature. Warbler Display, zieleń #182519 i beż #e1d2c2. Projekt koncepcyjny - zobacz realizację.",
+        "title": "Wizytówka dla SPA TALIA - projekt premium - Arteon",
+        "description": "Projekt wizytówki dla SPA TALIA. Estetyka premium z motywem natury, typografia Warbler Display, paleta zieleń i beż. Zobacz realizację i zamów wizytówkę.",
         "canonical": "https://www.arteonagency.pl/realizacje/wizytowka-dla-spa-talia"
       }
     },
@@ -917,36 +1322,34 @@
       "category": ["blog"],
       "stack": ["WordPress", "Gutenberg", "PHP", "Blade"],
 
-      "cta": {
-        "title": "Potrzebujesz bloga, którego możesz łatwo rozwijać",
-        "description": "Wdrożymy dedykowane system i szablony artykułów z myślą o komforcie redaktorów",
-        "btnOne": "Skontaktuj się",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę blogów internetowych",
-        "btnTwoLink": "/uslugi/blogi-internetowe",
-        "backgroundImage": "/assets/projects/arteon-baners-pilkanozna-pl.webp",
-        "overlay": "black"
-      },
-
       "faq": [
         {
-          "question": "Czy redesign bloga obejmuje też usprawnienie edycji treści dla redakcji?",
-          "answer": "Tak. Poza wyglądem, dbamy o wygodny proces publikacji (np. bloki, szablony sekcji, spójne style), aby redaktorzy mogli szybciej tworzyć artykuły bez grzebania w kodzie."
+          "question": "Czy redesign bloga obejmuje usprawnienie edycji dla redakcji?",
+          "answer": "Tak. Poza wyglądem dbamy o wygodny proces publikacji - bloki Gutenberga, szablony sekcji, spójne style. Redaktorzy mogą szybciej tworzyć artykuły bez konieczności edycji kodu."
         },
         {
-          "question": "Czy da się przygotować szablony pod różne typy artykułów (np. zapowiedź meczu, relacja, analiza)?",
-          "answer": "Tak. Projektujemy powtarzalne układy i komponenty, które pozwalają składać różne formaty treści, zachowując spójny wygląd w całym serwisie."
+          "question": "Czy można przygotować szablony pod różne typy artykułów?",
+          "answer": "Tak. Projektujemy powtarzalne układy i komponenty pod różne formaty (zapowiedź meczu, relacja, analiza, wywiad). Każdy szablon zachowuje spójny wygląd i przyspiesza publikację."
         },
         {
-          "question": "Jak zabezpieczacie SEO podczas zmian na stronie?",
-          "answer": "Przy redesignie zwracamy uwagę na strukturę nagłówków, linkowanie wewnętrzne, meta dane i zachowanie adresów URL. Jeśli URL-e muszą się zmienić, planujemy przekierowania, aby nie tracić ruchu."
+          "question": "Jak zabezpieczacie SEO podczas redesignu?",
+          "answer": "Zwracamy uwagę na strukturę nagłówków, linkowanie wewnętrzne, meta dane i zachowanie adresów URL. Jeśli URL-e muszą się zmienić, planujemy przekierowania 301, aby nie tracić ruchu i pozycji."
         },
         {
           "question": "Czy po wdrożeniu dostanę dokumentację i szkolenie dla zespołu?",
           "answer": "Tak. Przy większych serwisach przygotowujemy dokumentację oraz szkolenie (lub instrukcję), żeby redakcja wiedziała jak korzystać z nowych szablonów i publikować szybciej."
         }
       ],
-
+      "cta": {
+        "title": "Potrzebujesz bloga z wygodnym systemem publikacji?",
+        "description": "Wdrożymy dedykowany system i szablony artykułów z myślą o komforcie redaktorów.",
+        "btnOne": "Skontaktuj się z nami",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę blogów internetowych",
+        "btnTwoLink": "/uslugi/blogi-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-pilkanozna-pl.webp",
+        "overlay": "black"
+      },
       "seo": {
         "title": "Redesign bloga PiłkaNożna.pl na EURO 2024 - Arteon",
         "description": "Case study: redesign serwisu sportowego PiłkaNożna.pl przed EURO 2024. Nowy system CMS, dedykowane szablony artykułów i dokumentacja dla redakcji.",
@@ -973,21 +1376,10 @@
       "link": "https://trilllizo.com",
       "category": ["sklep"],
 
-      "cta": {
-        "title": "Potrzebujesz sklepu internetowego, który możesz łatwo rozwijać?",
-        "description": "Wdrożymy sklep, płatności i dostawy oraz przygotujemy fundamenty pod SEO",
-        "btnOne": "Skontaktuj się",
-        "btnOneLink": "/kontakt",
-        "btnTwo": "Sprawdź ofertę sklepów internetowych",
-        "btnTwoLink": "/uslugi/sklepy-internetowe",
-        "backgroundImage": "/assets/projects/arteon-baners-trilllizo.webp",
-        "overlay": "black"
-      },
-
       "faq": [
         {
-          "question": "Czy w sklepie da się wdrożyć płatności i dostawy (np. InPost)?",
-          "answer": "Tak. Konfigurujemy płatności oraz metody dostawy i testujemy cały proces zakupowy (koszyk → checkout → potwierdzenia), żeby klient mógł kupić bez problemu na telefonie i desktopie."
+          "question": "Czy wdrożycie płatności i dostawy (np. InPost)?",
+          "answer": "Tak. Konfigurujemy płatności (Przelewy24, PayU, Stripe) oraz metody dostawy (InPost Paczkomaty, kurier) i testujemy cały proces zakupowy - od koszyka przez checkout po potwierdzenia e-mail."
         },
         {
           "question": "Czy sklep może działać w dwóch wersjach językowych (.pl i .com)?",
@@ -1002,7 +1394,16 @@
           "answer": "Tak. Przekazujemy instrukcję (np. PDF) i pokazujemy najważniejsze elementy w panelu: produkty, zamówienia, kupony, wysyłki i podstawowe ustawienia sklepu."
         }
       ],
-
+      "cta": {
+        "title": "Potrzebujesz sklepu internetowego z płatnościami i dostawami?",
+        "description": "Wdrożymy sklep na WooCommerce z płatnościami, InPost i przygotowaniem pod SEO.",
+        "btnOne": "Skontaktuj się z nami",
+        "btnOneLink": "/kontakt",
+        "btnTwo": "Sprawdź ofertę sklepów internetowych",
+        "btnTwoLink": "/uslugi/sklepy-internetowe",
+        "backgroundImage": "/assets/projects/arteon-baners-trilllizo.webp",
+        "overlay": "black"
+      },
       "seo": {
         "title": "Sklep dla firmy odzieżowej - Trilllizo - Arteon",
         "description": "Realizacja sklepu internetowego dla marki odzieżowej Trilllizo. Motyw 1:1, płatności, InPost, dwie wersje językowe i szkolenie. Zobacz case study.",
@@ -1028,37 +1429,16 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
-
       "cta": {
-        "title": "Chcesz poprawić dostępność swojej strony (WCAG)?",
-        "description": "Uporządkujemy nawigację klawiaturą, kontrasty i etykiety, żeby strona była wygodna dla wszystkich",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz poprawić dostępność strony (WCAG)?",
+        "description": "Uporządkujemy nawigację klawiaturą, kontrasty i etykiety ARIA - strona będzie wygodna dla wszystkich użytkowników.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
         "backgroundImage": "/assets/projects/arteon-baners-meridol.webp",
         "overlay": "black"
       },
-
-      "faq": [
-        {
-          "question": "Czy da się wdrożyć poprawki WCAG w AEM bez przebudowy całego frontu?",
-          "answer": "Tak. Tam, gdzie AEM ogranicza bezpośrednią ingerencję w HTML, da się wdrażać poprawki warstwą CSS/JS (np. jQuery) - m.in. porządkowanie fokusa, etykiety ARIA czy poprawa stanów interakcji."
-        },
-        {
-          "question": "Jakie obszary najczęściej poprawiacie przy audycie dostępności?",
-          "answer": "Najczęściej: nawigacja klawiaturą, widoczny fokus, kontrast tekstu i przycisków, etykiety formularzy, komunikaty błędów oraz role/atrybuty ARIA dla komponentów interaktywnych."
-        },
-        {
-          "question": "Jak testujecie dostępność (klawiatura i czytniki ekranu)?",
-          "answer": "Testujemy ręcznie przejście klawiaturą (tab order) oraz zachowanie kluczowych komponentów. Dodatkowo sprawdzamy odczyt i komunikaty w czytnikach ekranu oraz weryfikujemy kontrast w narzędziach wspierających."
-        },
-        {
-          "question": "Czy można dodać narzędzie do zmiany kontrastu (contrast tool)?",
-          "answer": "Tak. Możemy wdrożyć przełącznik kontrastu i zasady stylowania tak, aby był dostępny z klawiatury, czytelny i spójny z UI - bez rozbijania istniejących komponentów."
-        }
-      ],
-
       "seo": {
         "title": "Dostępność WCAG w AEM - we współpracy z VML | Case study Meridol",
         "description": "Case study: poprawa dostępności WCAG na meridol.de. Nawigacja klawiaturą, contrast tool, etykiety ARIA — wdrożone w ograniczeniach AEM.",
@@ -1085,44 +1465,29 @@
         { "value": "Szybkość", "label": "Wdrożenie", "note": "Łatwe generowanie kolejnych wizytówek" }
       ],
       "process_steps": ["Analiza identyfikacji i materiałów marki", "Warianty kompozycji i test czytelności", "Makiety 3D i finalne pliki poglądowe"],
-      "faq": [
-        {
-          "question": "Ile kosztuje projekt wizytówek?",
-          "answer": "Podstawowy projekt wizytówki to 150-250 zł brutto"
-        },
-        {
-          "question": "Ile trwa wykonanie szablonu wizytówki?",
-          "answer": "Zwykle 1-3 dni robocze po przekazaniu danych kontaktowych i wytycznych brandu"
-        },
-        {
-          "question": "Czy przygotujecie pliki wizytówek do druku?",
-          "answer": "Tak. Dostarczamy pliki produkcyjne ze spadami, według wskazanych przez Państwa drukarnie preferencji"
-        }
-      ],
       "contentBlocks": [
         {
           "type": "imageText",
           "src": "/assets/projects/resto-wiz.webp",
           "alt": "Szablon wizytówek dla handlowców w gastronomii - RestoQuality ",
           "imageSide": "left",
-          "html": "<h2 class='h3 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla restauracji i firm gastro</h2><p>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"
+          "html": "<h2 class='h4 mb-2 scroll-mt-26 lg:mb-4 reveal-animation'>Wizytówki dla restauracji i firm gastro</h2><p>Szablon dla działu sprzedaży. Styl techniczny, czytelny układ, dane w logicznej hierarchii. Kolory i krój spójne z identyfikacją RestoQuality.</p>"
         }
       ],
-
       "cta": {
-        "title": "Potrzebujesz wizytówek dla swojego zespołu?",
-        "description": "Zaprojektujemy spójny szablon i przygotujemy pliki do druku dla całej firmy",
-        "btnOne": "Zamów wizytówki",
+        "title": "Potrzebujesz wizytówek dla zespołu handlowego?",
+        "description": "Zaprojektujemy spójny szablon i przygotujemy pliki do druku dla całej firmy.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
-        "btnTwo": "Zobacz ofertę projektu wizytówki",
+        "btnTwo": "Sprawdź ofertę projektu wizytówki",
         "btnTwoLink": "/uslugi/projekty-graficzne/projekt-wizytowki",
         "backgroundImage": "/assets/projects/resto-wiz.webp",
         "overlay": "black"
       },
 
       "seo": {
-        "title": "Wizytówki dla gastronomii - Arteon",
-        "description": "Projekt wizytówek dla gastronomii. Czytelny szablon dla handlowców, spójny z identyfikacją marki. Zobacz naszą realizację wizytówek.",
+        "title": "Wizytówki dla gastronomii RestoQuality - Arteon",
+        "description": "Projekt wizytówek dla zespołu handlowego RestoQuality. Spójny szablon dla całej firmy, czytelny układ danych. Zobacz realizację i zamów wizytówki.",
         "canonical": "https://www.arteonagency.pl/realizacje/wizytowki-dla-gastronomii-restoquality"
       }
     },
@@ -1145,11 +1510,10 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
-
       "cta": {
-        "title": "Chcesz poprawić dostępność na swojej stronie?",
-        "description": "Dopracujemy stany, etykiety i kontrast, żeby wszystko było czytelne i wygodne",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz poprawić dostępność komponentów (WCAG)?",
+        "description": "Dopracujemy stany, etykiety ARIA i kontrast - strona będzie czytelna i wygodna dla wszystkich.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
@@ -1182,11 +1546,10 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
-
       "cta": {
-        "title": "Chcesz poprawić dostępność interakcji zgodnie z WCAG 2.1 AA?",
-        "description": "Dopracujemy nawigację klawiaturą, kontrasty i etykiety w filtrach oraz karuzelach",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz poprawić dostępność filtrów i karuzel (WCAG)?",
+        "description": "Dopracujemy nawigację klawiaturą, kontrasty i etykiety w interaktywnych elementach.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
@@ -1215,11 +1578,10 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
-
       "cta": {
         "title": "Planujesz lokalizację serwisu na nowe rynki?",
-        "description": "Przeniesiemy treści i elementy interfejsu z wersji master, dbając o spójny wygląd",
-        "btnOne": "Skontaktuj się",
+        "description": "Przeniesiemy treści i elementy UI z wersji master - z zachowaniem spójnego wyglądu i struktury.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
@@ -1228,8 +1590,8 @@
       },
 
       "seo": {
-        "title": "Lokalizacje serwisu na rynki zagraniczne | Case study Sanex x VML",
-        "description": "Case study: lokalizacja serwisu Sanex na rynki zagraniczne. Przeniesienie treści i UI z wersji master przy zachowaniu spójnego wyglądu.",
+        "title": "Lokalizacja serwisu Sanex na rynki zagraniczne - Arteon x VML",
+        "description": "Case study: lokalizacja serwisu Sanex na rynki zagraniczne. Przeniesienie treści i UI z wersji master przy zachowaniu spójnej struktury i wyglądu.",
         "canonical": "https://www.arteonagency.pl/realizacje/sanex"
       }
     },
@@ -1248,11 +1610,10 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
-
       "cta": {
         "title": "Potrzebujesz lokalizacji serwisu na nowy rynek?",
-        "description": "Zaadaptujemy treści i UI na bazie wersji master, dbając o spójność layoutu i komunikacji",
-        "btnOne": "Skontaktuj się",
+        "description": "Zaadaptujemy treści i UI na bazie wersji master - z zachowaniem spójnego wyglądu i komunikacji.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
@@ -1261,8 +1622,8 @@
       },
 
       "seo": {
-        "title": "Lokalizacje serwisów na rynki zagraniczne | Case study Palmolive x VML",
-        "description": "Case study: lokalizacja serwisów Palmolive na rynki lokalne. Adaptacja treści i elementów UI z mastera przy zachowaniu spójności brandu.",
+        "title": "Lokalizacja serwisu Palmolive na rynki zagraniczne - Arteon x VML",
+        "description": "Case study: lokalizacja serwisów Palmolive na rynki lokalne. Adaptacja treści i elementów UI z mastera przy zachowaniu spójności brandu i wyglądu.",
         "canonical": "https://www.arteonagency.pl/realizacje/palmolive"
       }
     },
@@ -1282,11 +1643,10 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
-
       "cta": {
         "title": "Planujesz lokalizację serwisu na nowe rynki?",
-        "description": "Zaadaptujemy treści i UI na bazie wersji master, dbając o spójny wygląd i komunikację",
-        "btnOne": "Skontaktuj się",
+        "description": "Zaadaptujemy treści i UI na bazie wersji master - z zachowaniem spójnego wyglądu i komunikacji.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę stron internetowych",
         "btnTwoLink": "/uslugi/strony-internetowe",
@@ -1295,8 +1655,8 @@
       },
 
       "seo": {
-        "title": "Lokalizacje serwisów Colgate - case study - Arteon",
-        "description": "Case study: lokalizacja serwisów Colgate na rynki lokalne. Przeniesienie treści i UI z wersji master .",
+        "title": "Lokalizacja serwisu Colgate na rynki zagraniczne - Arteon x VML",
+        "description": "Case study: lokalizacja serwisów Colgate na rynki lokalne. Przeniesienie treści i UI z wersji master przy zachowaniu spójności brandu.",
         "canonical": "https://www.arteonagency.pl/realizacje/colgate"
       }
     },
@@ -1316,11 +1676,10 @@
         "role": "Head of PMO & Digital Content",
         "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
       },
-
       "cta": {
-        "title": "Chcesz wdrożyć analitykę GA4 i GTM na stronie?",
-        "description": "Skonfigurujemy pomiar i podstawowe zdarzenia oraz przetestujemy poprawność zbierania danych",
-        "btnOne": "Skontaktuj się",
+        "title": "Potrzebujesz wdrożyć analitykę GA4 i GTM?",
+        "description": "Skonfigurujemy pomiar, podstawowe zdarzenia i przetestujemy poprawność zbierania danych.",
+        "btnOne": "Skontaktuj się z nami",
         "btnOneLink": "/kontakt",
         "btnTwo": "Sprawdź ofertę audytu SEO",
         "btnTwoLink": "/uslugi/marketing/audyt-seo",
@@ -1329,7 +1688,7 @@
       },
 
       "seo": {
-        "title": "Analityka i konfiguracja | Case study Detergent Regulations x VML",
+        "title": "Wdrożenie analityki GA4 i GTM - Detergent Regulations - Arteon x VML",
         "description": "Case study: wdrożenie analityki GA4 i GTM na wielu lokalizacjach serwisu. Konfiguracja tagów, zdarzeń i testy poprawności pomiaru.",
         "canonical": "https://www.arteonagency.pl/realizacje/detergent-regulations"
       }

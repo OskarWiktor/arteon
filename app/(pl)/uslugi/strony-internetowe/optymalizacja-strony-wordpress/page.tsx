@@ -159,8 +159,8 @@ export default function OfferOptimizationWordPressPage() {
               title: 'Obrazy dopasowane do urządzeń',
               description: (
                 <>
-                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze zużycie transferu i znacznie lepsza
-                  szybkość działania witryny.
+                  Kompresujemy grafiki, ustawiamy właściwe rozmiary i formaty (np. WebP) oraz wdrażamy poprawne ładowanie. Efekt: mniejsze zużycie transferu i znacznie lepsza szybkość działania
+                  witryny.
                 </>
               ),
               icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,

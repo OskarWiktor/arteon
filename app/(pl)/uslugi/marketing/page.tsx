@@ -102,7 +102,9 @@ export default function OfferMarketingHubPage() {
             },
             {
               title: 'SEO techniczne + treściowe',
-              description: <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>,
+              description: (
+                <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>
+              ),
               icon: <RiSearchLine className="h-6 w-6 text-slate-800" />,
             },
             {
@@ -222,5 +224,3 @@ export default function OfferMarketingHubPage() {
     </>
   );
 }
-
-

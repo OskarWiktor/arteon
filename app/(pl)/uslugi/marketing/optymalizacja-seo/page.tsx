@@ -324,7 +324,7 @@ export default function OfferOptimizationSEO() {
               question: 'Czy mogę zrobić optymalizację bez audytu?',
               answer: (
                 <p>
-                  Teoretycznie tak, ale nie polecamy takiego rozwiązania.{" "}
+                  Teoretycznie tak, ale nie polecamy takiego rozwiązania.{' '}
                   <a href="/uslugi/marketing/audyt-seo" className="inline-link">
                     Audyt SEO
                   </a>{' '}
@@ -379,5 +379,3 @@ export default function OfferOptimizationSEO() {
     </>
   );
 }
-
-

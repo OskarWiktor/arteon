@@ -19,16 +19,14 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
     <section data-section="metrics" aria-labelledby={title ? 'metrics-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="metrics-title" className="h6 mb-6 reveal-animation">
+          <h2 id="metrics-title" className="h6 reveal-animation mb-6">
             {title}
           </h2>
         )}
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {metrics.map((metric, index) => {
-            const percentage = metric.inverse
-              ? ((metric.max - metric.value) / metric.max) * 100
-              : (metric.value / metric.max) * 100;
+            const percentage = metric.inverse ? ((metric.max - metric.value) / metric.max) * 100 : (metric.value / metric.max) * 100;
 
             return (
               <div key={index} className="surface-card-soft p-5">

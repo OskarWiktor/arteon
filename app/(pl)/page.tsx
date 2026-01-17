@@ -201,9 +201,9 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz kompleksowym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci. Zajmujemy się
-                    również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc zaproponować działania,
-                    które trafiają dokładnie w Twoją grupę odbiorców.
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz kompleksowym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci.
+                    Zajmujemy się również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc
+                    zaproponować działania, które trafiają dokładnie w Twoją grupę odbiorców.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/marketing">
@@ -316,5 +316,3 @@ export default function HomePage() {
     </>
   );
 }
-
-

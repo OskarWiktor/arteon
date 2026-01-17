@@ -79,9 +79,8 @@ export default function SectionSteps({
 
     if (count === 1) return 'one';
     if (count === 2) return 'two';
-    if (count === 3) return 'three';
-    if (count === 4) return 'four';
-    if (count === 6 || count === 9) return 'three';
+    if (count === 3 || count === 6 || count === 9) return 'three';
+    if (count === 4 || count === 8 || count === 12) return 'four';
 
     return 'one';
   })();
@@ -175,16 +174,7 @@ interface ExpandableStepsListProps {
   ArticleHeadingTag: keyof JSX.IntrinsicElements;
 }
 
-function ExpandableStepsList({
-  items,
-  gridColsSm,
-  gridColsMd,
-  gridColsLg,
-  showIndex,
-  variant,
-  isHighlighted,
-  ArticleHeadingTag,
-}: ExpandableStepsListProps) {
+function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIndex, variant, isHighlighted, ArticleHeadingTag }: ExpandableStepsListProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const toggleExpand = (index: number) => {
@@ -202,7 +192,9 @@ function ExpandableStepsList({
 
         return (
           <li key={index} className="flex flex-col items-stretch">
-            <article className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'rounded-2xl bg-slate-800 text-white shadow-lg' : 'surface-card-lift border border-gray-200'}`}>
+            <article
+              className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'rounded-2xl bg-slate-800 text-white shadow-lg' : 'surface-card-lift border border-gray-200'}`}
+            >
               {topImageSrc && (
                 <div className="mb-4 md:mb-6">
                   <div className="relative h-52 w-full overflow-hidden rounded-xl md:h-68">
@@ -250,11 +242,7 @@ function ExpandableStepsList({
 
               <div className={`z-10 mt-2 flex flex-1 flex-col ${highlighted ? 'text-white/80' : ''}`}>{itemDesc}</div>
 
-              {hasExpandable && isExpanded && (
-                <div className={`mt-4 border-t pt-4 ${highlighted ? 'border-white/20' : 'border-gray-200'}`}>
-                  {expandableContent}
-                </div>
-              )}
+              {hasExpandable && isExpanded && <div className={`mt-4 border-t pt-4 ${highlighted ? 'border-white/20' : 'border-gray-200'}`}>{expandableContent}</div>}
             </article>
           </li>
         );

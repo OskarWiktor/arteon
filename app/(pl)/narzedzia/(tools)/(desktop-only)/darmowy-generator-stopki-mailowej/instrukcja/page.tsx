@@ -274,7 +274,8 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-3">Zaokrąglenie przycisków</h3>
           <p className="text-mid">
-            Na dole zakładki Przyciski znajdziesz opcję <strong>Zaokrąglenie przycisków</strong>. Do wyboru masz trzy warianty: Brak (ostre rogi), Lekkie (delikatnie zaokrąglone) lub Pełne (owalny przycisk).
+            Na dole zakładki Przyciski znajdziesz opcję <strong>Zaokrąglenie przycisków</strong>. Do wyboru masz trzy warianty: Brak (ostre rogi), Lekkie (delikatnie zaokrąglone) lub Pełne (owalny
+            przycisk).
           </p>
 
           <p className="text-mid mt-4">
@@ -352,7 +353,8 @@ export default function Page() {
           <h3 className="h4 mt-6 mb-3">Dodatkowe ustawienia</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Ramka stopki</strong> — możesz dodać ramkę do stopki wybierając dowolną kombinację stron (lewa, prawa, góra, dół). Zaznaczenie wszystkich stron automatycznie ustawia pełną ramkę. Ramka przyjmuje kolor akcentu.
+              <strong>Ramka stopki</strong> — możesz dodać ramkę do stopki wybierając dowolną kombinację stron (lewa, prawa, góra, dół). Zaznaczenie wszystkich stron automatycznie ustawia pełną ramkę.
+              Ramka przyjmuje kolor akcentu.
             </li>
           </ul>
         </SectionInfo>
@@ -365,9 +367,7 @@ export default function Page() {
           </p>
 
           <h3 className="h4 mt-6 mb-3">Dostępne elementy</h3>
-          <p className="text-mid">
-            Widoczne są tylko te elementy, które aktualnie znajdują się w stopce (mają wypełnione dane). Dla każdego elementu możesz ustawić:
-          </p>
+          <p className="text-mid">Widoczne są tylko te elementy, które aktualnie znajdują się w stopce (mają wypełnione dane). Dla każdego elementu możesz ustawić:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
               <strong>Imię i nazwisko</strong> — domyślnie wyświetlane w kolorze akcentu.
@@ -391,15 +391,15 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-3">Jak zmienić kolor?</h3>
           <p className="text-mid">
-            Przy każdym elemencie znajdziesz rząd opcji kolorów. Kliknij kwadrat z kolorem, aby go wybrać. Możesz też dodać własny kolor klikając kolorowy kwadrat z plusem — wybierz kolor i kliknij Zapisz. Własne kolory (do 8) są współdzielone między wszystkimi elementami.
+            Przy każdym elemencie znajdziesz rząd opcji kolorów. Kliknij kwadrat z kolorem, aby go wybrać. Możesz też dodać własny kolor klikając kolorowy kwadrat z plusem — wybierz kolor i kliknij
+            Zapisz. Własne kolory (do 8) są współdzielone między wszystkimi elementami.
           </p>
-          <p className="text-mid mt-3">
-            Przycisk z ikoną resetu przywraca domyślny kolor elementu.
-          </p>
+          <p className="text-mid mt-3">Przycisk z ikoną resetu przywraca domyślny kolor elementu.</p>
 
           <h3 className="h4 mt-6 mb-3">Jak zmienić rozmiar?</h3>
           <p className="text-mid">
-            W drugiej linii znajdziesz kontrolkę rozmiaru z przyciskami - i +. Wartość pokazuje przesunięcie względem bazowego rozmiaru czcionki (ustawionego w zakładce Wygląd). Zakres: od -4 do +4 pikseli.
+            W drugiej linii znajdziesz kontrolkę rozmiaru z przyciskami - i +. Wartość pokazuje przesunięcie względem bazowego rozmiaru czcionki (ustawionego w zakładce Wygląd). Zakres: od -4 do +4
+            pikseli.
           </p>
         </SectionInfo>
 
@@ -412,12 +412,14 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-3">Margines wewnętrzny stopki</h3>
           <p className="text-mid">
-            Na górze zakładki znajdziesz opcję marginesu wewnętrznego — czyli odstępu między zawartością stopki a jej krawędziami. Do wyboru masz trzy wartości: 8 px (mały), 16 px (średni) i 24 px (duży).
+            Na górze zakładki znajdziesz opcję marginesu wewnętrznego — czyli odstępu między zawartością stopki a jej krawędziami. Do wyboru masz trzy wartości: 8 px (mały), 16 px (średni) i 24 px
+            (duży).
           </p>
 
           <h3 className="h4 mt-6 mb-3">Odstępy między elementami</h3>
           <p className="text-mid">
-            Poniżej marginesu znajdziesz kontrolki dla poszczególnych elementów stopki. Każda kontrolka ma przyciski + i - do zwiększania lub zmniejszania odstępu. Widoczne są tylko opcje dla elementów, które aktualnie znajdują się w stopce.
+            Poniżej marginesu znajdziesz kontrolki dla poszczególnych elementów stopki. Każda kontrolka ma przyciski + i - do zwiększania lub zmniejszania odstępu. Widoczne są tylko opcje dla
+            elementów, które aktualnie znajdują się w stopce.
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
@@ -442,9 +444,7 @@ export default function Page() {
               <strong>Przed klauzulą</strong> — odstęp nad tekstem klauzuli prawnej.
             </li>
           </ul>
-          <p className="text-mid mt-4">
-            Jeśli usuniesz dane z jakiegoś pola (np. wyczyścisz telefon), odpowiednia opcja odstępu automatycznie zniknie z zakładki.
-          </p>
+          <p className="text-mid mt-4">Jeśli usuniesz dane z jakiegoś pola (np. wyczyścisz telefon), odpowiednia opcja odstępu automatycznie zniknie z zakładki.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -474,7 +474,8 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-3">Linia oddzielająca</h3>
           <p className="text-mid">
-            Pod polem tekstowym znajdziesz opcję <strong>Pokaż linię oddzielającą dane od klauzuli</strong>. Włącz ją, aby dodać poziomą linię między danymi kontaktowymi a klauzulą prawną. Linia wizualnie oddziela treść stopki od tekstu prawnego.
+            Pod polem tekstowym znajdziesz opcję <strong>Pokaż linię oddzielającą dane od klauzuli</strong>. Włącz ją, aby dodać poziomą linię między danymi kontaktowymi a klauzulą prawną. Linia
+            wizualnie oddziela treść stopki od tekstu prawnego.
           </p>
         </SectionInfo>
 
@@ -482,17 +483,17 @@ export default function Page() {
 
         <SectionInfo title="Automatyczny zapis i resetowanie ustawień">
           <p className="text-mid">
-            Generator automatycznie zapisuje wszystkie ustawienia w pamięci przeglądarki (localStorage). Po odświeżeniu strony lub ponownym otwarciu narzędzia Twoje dane, układ, kolory i wszystkie inne opcje zostaną przywrócone.
+            Generator automatycznie zapisuje wszystkie ustawienia w pamięci przeglądarki (localStorage). Po odświeżeniu strony lub ponownym otwarciu narzędzia Twoje dane, układ, kolory i wszystkie
+            inne opcje zostaną przywrócone.
           </p>
 
           <h3 className="h4 mt-6 mb-3">Jak działa automatyczny zapis?</h3>
-          <p className="text-mid">
-            Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Zapis dzieje się automatycznie w tle — bez klikania przycisków.
-          </p>
+          <p className="text-mid">Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Zapis dzieje się automatycznie w tle — bez klikania przycisków.</p>
 
           <h3 className="h4 mt-6 mb-3">Jak zresetować ustawienia?</h3>
           <p className="text-mid">
-            Pod podglądem stopki znajdziesz przycisk <strong>Resetuj wygląd</strong>. Po kliknięciu pojawi się okno z prośbą o potwierdzenie. Zatwierdzenie resetu przywróci wszystkie dane i ustawienia do wartości domyślnych (przykładowe dane Jana Kowalskiego). Tej operacji nie można cofnąć.
+            Pod podglądem stopki znajdziesz przycisk <strong>Resetuj wygląd</strong>. Po kliknięciu pojawi się okno z prośbą o potwierdzenie. Zatwierdzenie resetu przywróci wszystkie dane i ustawienia
+            do wartości domyślnych (przykładowe dane Jana Kowalskiego). Tej operacji nie można cofnąć.
           </p>
         </SectionInfo>
 

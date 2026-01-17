@@ -11,31 +11,15 @@ interface SectionBlogCardHorizontalProps {
   readingTime?: string;
 }
 
-export default function SectionBlogCardHorizontal({
-  imageSrc,
-  imageAlt,
-  title,
-  description,
-  href,
-  category,
-  readingTime,
-}: SectionBlogCardHorizontalProps) {
+export default function SectionBlogCardHorizontal({ imageSrc, imageAlt, title, description, href, category, readingTime }: SectionBlogCardHorizontalProps) {
   return (
     <Link href={href} className="group flex flex-col gap-4 overflow-hidden rounded-2xl border border-black/10 bg-white p-4 transition hover:shadow-lg sm:flex-row sm:gap-6">
       <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-xl sm:w-48">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          className="object-cover transition group-hover:scale-105"
-          sizes="(min-width:640px) 192px, 100vw"
-        />
+        <Image src={imageSrc} alt={imageAlt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:640px) 192px, 100vw" />
       </div>
 
       <div className="flex flex-1 flex-col justify-center">
-        {category && (
-          <span className="text-xs font-medium uppercase tracking-wider text-slate-400">{category}</span>
-        )}
+        {category && <span className="text-xs font-medium tracking-wider text-slate-400 uppercase">{category}</span>}
 
         <h3 className="mt-1 font-semibold transition group-hover:text-slate-600">{title}</h3>
 

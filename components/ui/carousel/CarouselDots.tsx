@@ -25,10 +25,7 @@ export function CarouselDots({ isScrollable, currentSlide, maxSlides, onDotClick
             aria-current={i === currentSlide ? 'true' : undefined}
             className="cursor-pointer p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
-            <span
-              aria-hidden="true"
-              className={`mx-auto block h-2 w-4 md:w-6 rounded-full transition ${i === currentSlide ? 'bg-slate-800' : 'bg-slate-300'}`}
-            />
+            <span aria-hidden="true" className={`mx-auto block h-2 w-4 rounded-full transition md:w-6 ${i === currentSlide ? 'bg-slate-800' : 'bg-slate-300'}`} />
           </button>
         ))}
       </div>

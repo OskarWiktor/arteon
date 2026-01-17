@@ -36,7 +36,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak stworzyć favicon dla strony internetowej',
-  description: 'Instrukcja generowania favicon.ico i ikon PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Dowiedz się, jakie rozmiary są potrzebne i jak wgrać favicon do WordPress, HTML i Next.js.',
+  description:
+    'Instrukcja generowania favicon.ico i ikon PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Dowiedz się, jakie rozmiary są potrzebne i jak wgrać favicon do WordPress, HTML i Next.js.',
   url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico/instrukcja'),
   inLanguage: 'pl-PL',
   step: [

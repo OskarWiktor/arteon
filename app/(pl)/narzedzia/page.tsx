@@ -92,8 +92,7 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 7,
       name: 'Generator palety kolorów z obrazu',
-      description:
-      'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+      description: 'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
       url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -112,8 +111,7 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 9,
       name: 'Licznik słów i znaków online — sprawdź długość tekstu',
-      description:
-        'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
+      description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
       url: 'https://www.arteonagency.pl/narzedzia/licznik-slow-i-znakow',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -122,8 +120,7 @@ const toolsJsonLd = {
       '@type': 'WebApplication',
       position: 10,
       name: 'Generator kodu QR online — darmowy bez limitu',
-      description:
-        'Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG. Bez logowania, bez limitu użycia.',
+      description: 'Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG. Bez logowania, bez limitu użycia.',
       url: 'https://www.arteonagency.pl/narzedzia/generator-kodu-qr',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -234,7 +231,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-slow-i-znakow.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Sprawdź długość tekstu i oceń, czy jest odpowiednia dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu. Narzędzie policzy słowa, znaki, akapity i czas czytania.</p>
+                  <p>
+                    Sprawdź długość tekstu i oceń, czy jest odpowiednia dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu. Narzędzie policzy słowa, znaki, akapity i czas
+                    czytania.
+                  </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/licznik-slow-i-znakow">
                       Otwórz narzędzie
@@ -368,7 +368,7 @@ export default function ToolsIndexPage() {
           title="Jak korzystać z narzędzi Arteon?"
           description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci."
         >
-          <p className="mt-4 text-xs text-light">
+          <p className="text-light mt-4 text-xs">
             Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
             kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online.
           </p>
@@ -381,5 +381,3 @@ export default function ToolsIndexPage() {
     </>
   );
 }
-
-

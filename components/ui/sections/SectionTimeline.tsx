@@ -27,16 +27,7 @@ interface SectionTimelineProps {
   btnTwoLink?: string;
 }
 
-export default function SectionTimeline({
-  title,
-  subtitle,
-  description,
-  items,
-  btnOne,
-  btnOneLink,
-  btnTwo,
-  btnTwoLink,
-}: SectionTimelineProps) {
+export default function SectionTimeline({ title, subtitle, description, items, btnOne, btnOneLink, btnTwo, btnTwoLink }: SectionTimelineProps) {
   const t = ui.pl;
 
   return (
@@ -58,19 +49,14 @@ export default function SectionTimeline({
 
           <ol className="space-y-8 md:space-y-12">
             {items.map((step, index) => (
-              <li
-                key={index}
-                className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
-              >
+              <li key={index} className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 <div className="hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-full md:bg-slate-800 md:text-white md:shadow-lg">
                   {step.icon}
                 </div>
 
                 <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
                   <div className="surface-card-soft ml-16 p-6 md:ml-0">
-                    <div className="absolute left-0 top-6 flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white shadow-lg md:hidden">
-                      {step.icon}
-                    </div>
+                    <div className="absolute top-6 left-0 flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white shadow-lg md:hidden">{step.icon}</div>
                     <h3 className="h5 mb-2">{step.title}</h3>
                     <p className="text-light">{step.description}</p>
                   </div>
@@ -82,15 +68,7 @@ export default function SectionTimeline({
           </ol>
         </div>
 
-        <ButtonGroup
-          btnOne={btnOne}
-          btnOneLink={btnOneLink}
-          btnTwo={btnTwo}
-          btnTwoLink={btnTwoLink}
-          spacing="loose"
-          ariaLabel={t.sectionActions}
-          role="group"
-        />
+        <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" ariaLabel={t.sectionActions} role="group" />
       </Wrapper>
     </section>
   );

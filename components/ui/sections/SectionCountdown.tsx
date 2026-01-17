@@ -19,13 +19,7 @@ interface TimeLeft {
   seconds: number;
 }
 
-export default function SectionCountdown({
-  title,
-  description,
-  targetDate,
-  btnLabel,
-  btnLink,
-}: SectionCountdownProps) {
+export default function SectionCountdown({ title, description, targetDate, btnLabel, btnLink }: SectionCountdownProps) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
@@ -74,10 +68,7 @@ export default function SectionCountdown({
           </div>
 
           {btnLabel && btnLink && (
-            <Link
-              href={btnLink}
-              className="mt-8 inline-block rounded-xl bg-white px-8 py-3 font-medium text-red-500 transition hover:bg-white/90"
-            >
+            <Link href={btnLink} className="mt-8 inline-block rounded-xl bg-white px-8 py-3 font-medium text-red-500 transition hover:bg-white/90">
               {btnLabel}
             </Link>
           )}

@@ -34,7 +34,21 @@ interface CTABannerProps {
   rightColumn?: CTASplitColumn;
 }
 
-export default function CTABanner({ variant = 'default', title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, backgroundImage, backgroundStyle = 'image', overlay = 'none', leftColumn, rightColumn }: CTABannerProps) {
+export default function CTABanner({
+  variant = 'default',
+  title,
+  subtitle,
+  description,
+  btnOne,
+  btnOneLink,
+  btnTwo,
+  btnTwoLink,
+  backgroundImage,
+  backgroundStyle = 'image',
+  overlay = 'none',
+  leftColumn,
+  rightColumn,
+}: CTABannerProps) {
   const t = ui.pl;
 
   if (variant === 'split') {
@@ -60,7 +74,10 @@ export default function CTABanner({ variant = 'default', title, subtitle, descri
                 {rightColumn?.description && <p className="text-light mb-6">{rightColumn.description}</p>}
               </div>
               {rightColumn?.btnLabel && rightColumn?.btnLink && (
-                <AppLink href={rightColumn.btnLink} className="inline-flex w-fit items-center gap-2 rounded-xl border border-slate-800 px-6 py-3 font-medium text-slate-800 transition hover:bg-slate-50">
+                <AppLink
+                  href={rightColumn.btnLink}
+                  className="inline-flex w-fit items-center gap-2 rounded-xl border border-slate-800 px-6 py-3 font-medium text-slate-800 transition hover:bg-slate-50"
+                >
                   {rightColumn.btnLabel}
                   <RiArrowRightLine className="h-5 w-5" />
                 </AppLink>
@@ -76,13 +93,7 @@ export default function CTABanner({ variant = 'default', title, subtitle, descri
   const isGradient = backgroundStyle === 'gradient';
   const isSolid = backgroundStyle === 'solid';
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
-  const baseBg = isGradient
-    ? 'bg-gradient-to-r from-slate-800 to-slate-700'
-    : isSolid
-      ? 'bg-slate-800'
-      : overlay === 'black'
-        ? 'bg-neutral-900'
-        : 'bg-white';
+  const baseBg = isGradient ? 'bg-gradient-to-r from-slate-800 to-slate-700' : isSolid ? 'bg-slate-800' : overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
 
   const toneTextClass = isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
   const toneMutedClass = isGradient || isSolid || overlay === 'black' ? 'text-white/90' : 'text-light';
@@ -96,7 +107,9 @@ export default function CTABanner({ variant = 'default', title, subtitle, descri
       {hasBg && !isGradient && !isSolid && overlay !== 'none' && <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ${overlayClass}`} />}
 
       <Wrapper className="relative flex h-auto justify-center md:items-center">
-        <div className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${isGradient || isSolid ? 'bg-transparent' : overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}>
+        <div
+          className={`mt-6 mb-6 max-w-[100vw] rounded-2xl p-2 md:m-0 md:max-w-[65%] md:p-5 md:text-center lg:p-7 ${toneTextClass} ${isGradient || isSolid ? 'bg-transparent' : overlay === 'black' ? 'bg-black/50' : 'bg-white/70'}`}
+        >
           <SectionHeader
             subtitle={subtitle}
             title={title}

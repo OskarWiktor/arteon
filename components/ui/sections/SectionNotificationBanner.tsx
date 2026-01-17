@@ -12,13 +12,7 @@ interface SectionNotificationBannerProps {
   dismissible?: boolean;
 }
 
-export default function SectionNotificationBanner({
-  icon,
-  text,
-  highlight,
-  variant = 'info',
-  dismissible = true,
-}: SectionNotificationBannerProps) {
+export default function SectionNotificationBanner({ icon, text, highlight, variant = 'info', dismissible = true }: SectionNotificationBannerProps) {
   const [visible, setVisible] = useState(true);
 
   if (!visible) return null;
@@ -58,12 +52,7 @@ export default function SectionNotificationBanner({
             </p>
           </div>
           {dismissible && (
-            <button
-              type="button"
-              onClick={() => setVisible(false)}
-              className={styles.close}
-              aria-label="Zamknij powiadomienie"
-            >
+            <button type="button" onClick={() => setVisible(false)} className={styles.close} aria-label="Zamknij powiadomienie">
               <RiCloseLine className="h-5 w-5" />
             </button>
           )}

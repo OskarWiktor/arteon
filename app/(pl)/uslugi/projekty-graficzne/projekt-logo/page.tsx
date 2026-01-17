@@ -307,7 +307,8 @@ export default function OfferDesignLogoPage() {
             },
             {
               question: 'Gdzie mogę używać logo?',
-              answer: 'Logo projektujemy tak, aby dobrze działało na stronie WWW, w mediach społecznościowych, w druku, na gadżetach i odzieży. Dbamy o skalowalność i czytelność w różnych rozmiarach.',
+              answer:
+                'Logo projektujemy tak, aby dobrze działało na stronie WWW, w mediach społecznościowych, w druku, na gadżetach i odzieży. Dbamy o skalowalność i czytelność w różnych rozmiarach.',
             },
             {
               question: 'Czy dostaję prawa autorskie do logo?',
@@ -385,5 +386,3 @@ export default function OfferDesignLogoPage() {
     </>
   );
 }
-
-

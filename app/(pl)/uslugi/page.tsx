@@ -54,11 +54,7 @@ export default function OfferPage() {
         backgroundImage="/assets/projects/arteon-baners-msc.webp"
         overlay="black"
         title="Usługi dla Twojej firmy"
-        description={
-          <>
-            Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Wszystko w jednym miejscu, z naciskiem na jakość i wyniki.
-          </>
-        }
+        description={<>Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Wszystko w jednym miejscu, z naciskiem na jakość i wyniki.</>}
         variant="center"
       />
 
@@ -171,7 +167,8 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Teczka ofertowa podnosi prestiż firmy i zwiększa wiarygodność w oczach klientów. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał firmowy.
+                    Teczka ofertowa podnosi prestiż firmy i zwiększa wiarygodność w oczach klientów. Projekt teczki dopasowujemy do Twojej identyfikacji wizualnej, tworząc spójny i elegancki materiał
+                    firmowy.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
@@ -290,8 +287,8 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
-                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe do edycji i
-                    eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
+                    Łatwe w edycji gotowe szablony dla Instagrama, Facebooka czy LinkedIn, ułatwiające regularne publikowanie i pomagające utrzymać spójny styl Twojej marki. Otrzymujesz pliki gotowe
+                    do edycji i eksportu z czytelną hierarchią treści i miejscem na wezwanie do działania.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe">
@@ -572,8 +569,7 @@ export default function OfferPage() {
             '@type': 'CollectionPage',
             '@id': `${siteUrl}/uslugi#collection`,
             name: 'Usługi dla firm: strony, sklepy, grafika i marketing | Arteon',
-            description:
-              'Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Otrzymaj darmową wycenę projektu.',
+            description: 'Projektujemy strony internetowe, sklepy, materiały graficzne i prowadzimy działania marketingowe. Otrzymaj darmową wycenę projektu.',
             url: `${siteUrl}/uslugi`,
             mainEntity: {
               '@type': 'ItemList',

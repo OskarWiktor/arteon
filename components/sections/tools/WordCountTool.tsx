@@ -6,15 +6,7 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import Button from '@/components/ui/buttons/Button';
-import {
-  analyzeText,
-  evaluateLength,
-  formatReadingTime,
-  formatReportText,
-  PAGE_TYPES,
-  type PageType,
-  type LengthStatus,
-} from '@/lib/tools/text/wordCount';
+import { analyzeText, evaluateLength, formatReadingTime, formatReportText, PAGE_TYPES, type PageType, type LengthStatus } from '@/lib/tools/text/wordCount';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 
 const ui = {
@@ -139,10 +131,7 @@ export default function WordCountTool() {
           </div>
 
           <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
-            <div
-              className={`h-full transition-all duration-300 ${getProgressBarColor(evaluation.status)}`}
-              style={{ width: `${Math.min(evaluation.percentage, 100)}%` }}
-            />
+            <div className={`h-full transition-all duration-300 ${getProgressBarColor(evaluation.status)}`} style={{ width: `${Math.min(evaluation.percentage, 100)}%` }} />
           </div>
 
           <div className="flex items-center justify-between text-xs">
@@ -155,14 +144,7 @@ export default function WordCountTool() {
           {evaluation.status !== 'empty' && <p className="text-light mt-2 text-sm">{evaluation.message}</p>}
         </div>
 
-        <Button
-          variant="normal"
-          size="small"
-          onClick={handleCopyReport}
-          disabled={metrics.words === 0}
-          className="w-full"
-          aria-label={copied ? t.copied : t.copyReport}
-        >
+        <Button variant="normal" size="small" onClick={handleCopyReport} disabled={metrics.words === 0} className="w-full" aria-label={copied ? t.copied : t.copyReport}>
           {copied ? (
             <>
               <RiCheckLine className="mr-2 h-4 w-4" />
@@ -179,11 +161,7 @@ export default function WordCountTool() {
 
       <ToolSection className="space-y-5">
         <ToolFieldRow label={t.pageType} helper={t.pageTypeHelper}>
-          <select
-            value={selectedPageType}
-            onChange={(e) => setSelectedPageType(e.target.value as PageType)}
-            className="tool-input"
-          >
+          <select value={selectedPageType} onChange={(e) => setSelectedPageType(e.target.value as PageType)} className="tool-input">
             {PAGE_TYPES.map((pt) => (
               <option key={pt.key} value={pt.key}>
                 {pt.label} ({pt.minWords}–{pt.maxWords} słów)
@@ -197,12 +175,7 @@ export default function WordCountTool() {
         </div>
 
         <ToolFieldRow label={t.pasteText}>
-          <textarea
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            className="tool-textarea min-h-[320px] resize-y"
-            placeholder={t.textPlaceholder}
-          />
+          <textarea value={text} onChange={(e) => setText(e.target.value)} className="tool-textarea min-h-[320px] resize-y" placeholder={t.textPlaceholder} />
         </ToolFieldRow>
       </ToolSection>
     </div>

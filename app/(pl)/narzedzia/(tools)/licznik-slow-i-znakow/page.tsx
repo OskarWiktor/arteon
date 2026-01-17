@@ -12,13 +12,11 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Licznik słów i znaków online — sprawdź długość tekstu',
-  description:
-    'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
+  description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow') },
   openGraph: {
     title: 'Licznik słów i znaków online — sprawdź długość tekstu',
-    description:
-      'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
+    description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
     url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
     type: 'website',
     images: [
@@ -65,11 +63,7 @@ export default function Page() {
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
-      <Breadcrumbs
-        second={{ href: '/narzedzia', label: 'Narzędzia' }}
-        third={{ href: '/narzedzia/licznik-slow-i-znakow', label: 'Licznik słów i znaków' }}
-        includeJsonLd
-      />
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzia' }} third={{ href: '/narzedzia/licznik-slow-i-znakow', label: 'Licznik słów i znaków' }} includeJsonLd />
 
       <Wrapper>
         <Gap size="xs" />

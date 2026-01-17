@@ -13,11 +13,7 @@ interface SectionReactionPickerProps {
   onChange?: (emoji: string) => void;
 }
 
-export default function SectionReactionPicker({
-  reactions,
-  selected: initialSelected,
-  onChange,
-}: SectionReactionPickerProps) {
+export default function SectionReactionPicker({ reactions, selected: initialSelected, onChange }: SectionReactionPickerProps) {
   const [selected, setSelected] = useState<string | undefined>(initialSelected);
 
   const handleSelect = (emoji: string) => {
@@ -37,9 +33,7 @@ export default function SectionReactionPicker({
               key={reaction.emoji}
               type="button"
               onClick={() => handleSelect(reaction.emoji)}
-              className={`rounded-lg p-2 text-2xl transition hover:scale-110 hover:bg-slate-100 ${
-                isSelected ? 'scale-110 bg-slate-100' : ''
-              }`}
+              className={`rounded-lg p-2 text-2xl transition hover:scale-110 hover:bg-slate-100 ${isSelected ? 'scale-110 bg-slate-100' : ''}`}
               aria-label={reaction.label}
               aria-pressed={isSelected}
             >
@@ -48,9 +42,7 @@ export default function SectionReactionPicker({
           );
         })}
       </div>
-      <p className="text-light text-sm">
-        {selected ? `Twoja reakcja: ${selected}` : 'Wybierz reakcję'}
-      </p>
+      <p className="text-light text-sm">{selected ? `Twoja reakcja: ${selected}` : 'Wybierz reakcję'}</p>
     </div>
   );
 }

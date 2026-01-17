@@ -352,5 +352,3 @@ export default function OfferDesignCatalogPage() {
     </>
   );
 }
-
-

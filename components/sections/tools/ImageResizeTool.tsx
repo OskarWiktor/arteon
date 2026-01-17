@@ -490,7 +490,6 @@ export default function ImageResizeTool() {
     }));
   };
 
-
   const handleDownload = () => {
     if (!state.file || !state.imageUrl) {
       setError(t.addImageFirst);
@@ -950,12 +949,7 @@ export default function ImageResizeTool() {
               <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-800" style={{ paddingBottom: `${previewPadding}%` }}>
                 <div className="absolute inset-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={state.imageUrl!}
-                    alt={state.file?.name || 'Podgląd'}
-                    className="h-full w-full object-contain"
-                    draggable={false}
-                  />
+                  <img src={state.imageUrl!} alt={state.file?.name || 'Podgląd'} className="h-full w-full object-contain" draggable={false} />
 
                   {cropRectPreview && (
                     <div

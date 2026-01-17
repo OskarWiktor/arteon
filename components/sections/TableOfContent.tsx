@@ -87,7 +87,7 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
         const isActive = activeId === i.id;
         return (
           <li key={i.id} className={i.level === 3 ? 'border-l border-black/10' : ''}>
-            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`flex items-center gap-1 text-light rounded-2xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
+            <a href={`#${i.id}`} aria-current={isActive ? 'location' : undefined} className={`text-mid flex items-center gap-1 rounded-2xl px-2 py-1 hover:underline ${isActive ? 'bg-black/5' : ''}`}>
               <span className="line-clamp-1 text-[14px]">{i.text}</span>
             </a>
           </li>

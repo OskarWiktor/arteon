@@ -58,11 +58,7 @@ export default function CalculatorSteps({ step, currentStep, activeSteps, select
 
       {(currentStep > 0 || hasSelection) && (
         <div className="mt-8 flex gap-6">
-          {currentStep > 0 && (
-            <Button onClick={onPrev}>
-              {ui.pl.back}
-            </Button>
-          )}
+          {currentStep > 0 && <Button onClick={onPrev}>{ui.pl.back}</Button>}
           <Button variant="accent" disabled={disableNext} onClick={onNext}>
             {currentStep === activeSteps.length - 1 ? ui.pl.showEstimate : ui.pl.next}
           </Button>

@@ -11,13 +11,7 @@ interface SectionStarRatingProps {
   label?: string;
 }
 
-export default function SectionStarRating({
-  value,
-  onChange,
-  max = 5,
-  size = 'medium',
-  label,
-}: SectionStarRatingProps) {
+export default function SectionStarRating({ value, onChange, max = 5, size = 'medium', label }: SectionStarRatingProps) {
   const [hoverValue, setHoverValue] = useState<number | null>(null);
 
   const sizeClasses = {
@@ -32,12 +26,7 @@ export default function SectionStarRating({
     <div className="inline-flex flex-col items-center gap-2">
       {label && <span className="text-sm font-medium text-slate-800">{label}</span>}
 
-      <div
-        className="flex gap-1"
-        role="group"
-        aria-label={label || 'Ocena gwiazdkowa'}
-        onMouseLeave={() => setHoverValue(null)}
-      >
+      <div className="flex gap-1" role="group" aria-label={label || 'Ocena gwiazdkowa'} onMouseLeave={() => setHoverValue(null)}>
         {Array.from({ length: max }, (_, index) => {
           const starValue = index + 1;
           const isFilled = starValue <= displayValue;
@@ -51,11 +40,7 @@ export default function SectionStarRating({
               className="transition-transform hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2"
               aria-label={`${starValue} z ${max} gwiazdek`}
             >
-              {isFilled ? (
-                <RiStarFill className={`${sizeClasses[size]} text-amber-400`} />
-              ) : (
-                <RiStarLine className={`${sizeClasses[size]} text-slate-300`} />
-              )}
+              {isFilled ? <RiStarFill className={`${sizeClasses[size]} text-amber-400`} /> : <RiStarLine className={`${sizeClasses[size]} text-slate-300`} />}
             </button>
           );
         })}

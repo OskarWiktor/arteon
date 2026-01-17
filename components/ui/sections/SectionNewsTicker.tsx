@@ -13,9 +13,7 @@ interface SectionNewsTickerProps {
 }
 
 export default function SectionNewsTicker({ items, speed = 30 }: SectionNewsTickerProps) {
-  const normalizedItems = items.map((item) =>
-    typeof item === 'string' ? { text: item, icon: undefined } : item
-  );
+  const normalizedItems = items.map((item) => (typeof item === 'string' ? { text: item, icon: undefined } : item));
   const duplicatedItems = [...normalizedItems, ...normalizedItems];
 
   return (

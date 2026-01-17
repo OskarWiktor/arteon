@@ -25,11 +25,7 @@ export default function SectionQuickLinks({ title, links }: SectionQuickLinksPro
 
         <div className="flex flex-wrap items-center justify-center gap-4 rounded-2xl bg-slate-50 px-6 py-4">
           {links.map((link, index) => (
-            <Link
-              key={index}
-              href={link.href}
-              className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm"
-            >
+            <Link key={index} href={link.href} className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
               {link.icon}
               {link.label}
             </Link>

@@ -275,9 +275,7 @@ export default function Page() {
               icon: <RiPaletteLine className="h-6 w-6" />,
               title: 'Kolor kodu QR',
               description: (
-                <p>
-                  Kolor ciemnych modułów (domyślnie czarny). Możesz zmienić na dowolny kolor, warto zachować kontrast z tłem. Narzędzie ostrzega, gdy kontrast jest zbyt niski (poniżej 3:1).
-                </p>
+                <p>Kolor ciemnych modułów (domyślnie czarny). Możesz zmienić na dowolny kolor, warto zachować kontrast z tłem. Narzędzie ostrzega, gdy kontrast jest zbyt niski (poniżej 3:1).</p>
               ),
             },
             {
