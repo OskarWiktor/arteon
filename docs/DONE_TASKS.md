@@ -2,6 +2,20 @@
 
 ## 2026-01-17
 
+- ✅ **[SEO-027] Blog: naprawa błędnych linków 404 w artykule o kanibalizacji słów kluczowych**
+
+  - **Plik**: `data/pl/blog.json`
+  - **Źródło**: Ahrefs Site Audit — 4 linki wewnętrzne zwracające 404
+  - **Artykuł**: `czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`
+  - **Naprawione linki**:
+    | Błędny URL | Rozwiązanie |
+    |---|---|
+    | `/edukacja/seo/jak-linki-wewnetrzne-wplywaja-na-pozycjonowanie` | Zamieniono na istniejący `/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony` |
+    | `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne` | Usunięto link (artykuł nie istnieje) |
+    | `/edukacja/seo/dlaczego-stare-tresci-moga-szkodzic-widocznosci-w-google` | Usunięto link (artykuł nie istnieje) |
+    | `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie` | Usunięto link (artykuł nie istnieje) |
+  - **Weryfikacja**: nie wymagana (COPY-only)
+
 - ✅ **[UI-001] Breadcrumbs: naprawić łamanie tekstu na mniejszych szerokościach ekranu**
 
   - **Plik**: `components/sections/BreadCrumbs.tsx`
