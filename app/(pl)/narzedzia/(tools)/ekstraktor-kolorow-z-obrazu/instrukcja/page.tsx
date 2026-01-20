@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak wyciągnąć kolory ze zdjęcia lub logo',
+  name: 'Jak wyciągnąć kolory ze zdjęcia lub obrazu',
   description: 'Instrukcja wyciągania dominujących kolorów ze zdjęcia lub logo. Wgraj obraz (PNG, JPG, SVG), skopiuj do 12 kolorów HEX. Wszystko lokalnie w przeglądarce.',
   url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja'),
   step: [
@@ -94,7 +94,7 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Jak wyciągnąć kolory ze zdjęcia lub logo"
+        title="Jak wyciągnąć kolory ze zdjęcia lub obrazu"
         description="Wgraj zdjęcie lub logo i wyciągnij do 12 dominujących kolorów HEX. Instrukcja z wskazówkami, które obrazy dają najlepsze rezultaty."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"

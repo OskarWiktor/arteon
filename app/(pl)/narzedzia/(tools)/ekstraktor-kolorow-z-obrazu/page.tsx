@@ -60,7 +60,7 @@ export default function Page() {
 
       <HeroBanner
         title="Wyciągnij dominujące kolory z obrazu"
-        description="Wgraj zdjęcie, logo lub grafikę, a narzędzie automatycznie wyciągnie z niego dominujące kolory. Skopiuj kody HEX jednym kliknięciem."
+        description="Wgraj zdjęcie, logo lub grafikę, a narzędzie automatycznie wyciągnie z niego dominujące kolory. Skopiuj kody wygenerowanych kolorów jednym kliknięciem."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

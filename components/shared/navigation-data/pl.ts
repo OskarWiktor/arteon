@@ -297,7 +297,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         key: 'paletteExtractor',
         href: '/narzedzia/ekstraktor-kolorow-z-obrazu',
         title: 'Ekstraktor kolorów z obrazu',
-        description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory. Skopiuj kody HEX jednym kliknięciem.',
+        description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory. Skopiuj kody wygenerowanych kolorów jednym kliknięciem.',
         image: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
         icon: RiPantoneLine,
       },

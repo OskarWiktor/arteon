@@ -102,7 +102,7 @@ export default function Page() {
 
       <HeroBanner
         title="Jak wygenerować schematy kolorów z jednego koloru bazowego"
-        description="Wygeneruj 9 schematów kolorów z jednego koloru bazowego (np. z logo). Instrukcja z opisem schematów: monochromatyczny, komplementarny, triadyczny, pastelowy, ciemny i minimalistyczny."
+        description="Wygeneruj 9 schematów kolorów z jednego koloru bazowego. Instrukcja z opisem schematów: monochromatyczny, komplementarny, triadyczny, pastelowy, ciemny i minimalistyczny."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />

@@ -60,7 +60,7 @@ export default function Page() {
 
       <HeroBanner
         title="Wygeneruj schematy kolorów z jednego koloru bazowego"
-        description="Podaj kolor bazowy, a narzędzie wygeneruje 9 schematów kolorów: monochromatyczny, analogiczny, komplementarny, triadyczny, split-complementary, akcenty UI, pastelowy, ciemny i neutralny. Skopiuj HEX lub HSL jednym kliknięciem."
+        description="Podaj kolor bazowy, a narzędzie wygeneruje 9 schematów kolorów: monochromatyczny, analogiczny, komplementarny, triadyczny, split-complementary, akcenty UI, pastelowy, ciemny i neutralny. Skopiuj kody wygenerowanych kolorów jednym kliknięciem."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
