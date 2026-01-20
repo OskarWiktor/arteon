@@ -12,44 +12,44 @@ export const PAGE_TYPES: PageTypeConfig[] = [
   {
     key: 'product',
     label: 'Opis produktu w sklepie',
-    minWords: 100,
-    maxWords: 300,
-    description: 'Krótki, konkretny opis produktu z najważniejszymi informacjami dla kupującego.',
+    minWords: 80,
+    maxWords: 400,
+    description: 'Długość zależy od złożoności produktu. Prosty artykuł spożywczy — 80-150 słów. Elektronika lub sprzęt — 250-400 słów.',
   },
   {
     key: 'service',
     label: 'Strona usługi',
-    minWords: 800,
+    minWords: 500,
     maxWords: 1500,
-    description: 'Opis usługi z korzyściami, procesem i odpowiedziami na typowe pytania.',
+    description: 'Prosta usługa lokalna może mieć 500 słów. Złożona usługa B2B z FAQ i procesem — do 1500 słów.',
   },
   {
     key: 'homepage',
     label: 'Strona główna',
-    minWords: 800,
-    maxWords: 1500,
-    description: 'Prezentacja firmy, najważniejsze usługi i zachęta do dalszego poznania oferty.',
+    minWords: 400,
+    maxWords: 1000,
+    description: 'Nowoczesne strony główne są wizualne. Tekst ma jasno komunikować wartość, nie zasypać informacjami.',
   },
   {
     key: 'landing',
     label: 'Landing page',
-    minWords: 1500,
-    maxWords: 3000,
-    description: 'Strona sprzedażowa z pełną argumentacją, dowodami i wezwaniem do działania.',
+    minWords: 600,
+    maxWords: 2500,
+    description: 'Krótki LP dla prostej oferty: 600-1000 słów. Long-form dla drogich produktów/usług: 1500-2500 słów.',
   },
   {
     key: 'blog',
     label: 'Artykuł blogowy',
-    minWords: 2500,
-    maxWords: 4000,
-    description: 'Wnikliwy artykuł odpowiadający na konkretne pytanie, budujący autorytet.',
+    minWords: 1200,
+    maxWords: 3000,
+    description: 'Długość powinna wynikać z tematu, nie z ambicji SEO. Krótszy artykuł wyczerpujący temat > dłuższy rozwodniony.',
   },
   {
     key: 'guide',
     label: 'Poradnik / przewodnik',
-    minWords: 4000,
-    maxWords: 7000,
-    description: 'Kompleksowy materiał omawiający temat dogłębnie, często z podziałem na rozdziały.',
+    minWords: 2500,
+    maxWords: 6000,
+    description: 'Kompleksowe opracowanie tematu. Długość zależy od zakresu — nie każdy poradnik wymaga 5000 słów.',
   },
 ];
 
@@ -121,7 +121,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig): LengthE
     return {
       status: 'too-short',
       percentage: Math.min(percentage, 99),
-      message: `Tekst jest za krótki. Brakuje około ${missing} słów do minimum dla ${pageType.label.toLowerCase()}.`,
+      message: `Tekst poniżej orientacyjnego minimum (${minWords} słów). Jeśli temat jest wyczerpany — to może wystarczyć. Brakuje około ${missing} słów.`,
     };
   }
 
@@ -130,7 +130,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig): LengthE
     return {
       status: 'too-long',
       percentage: 100,
-      message: `Tekst przekracza zalecany zakres o ${excess} słów. Rozważ podzielenie na mniejsze części lub skrócenie.`,
+      message: `Tekst powyżej orientacyjnego maksimum o ${excess} słów. Jeśli każde zdanie wnosi wartość — długość jest uzasadniona.`,
     };
   }
 
@@ -140,14 +140,14 @@ export function evaluateLength(words: number, pageType: PageTypeConfig): LengthE
     return {
       status: 'ideal',
       percentage: Math.max(percentage, 1),
-      message: `Długość jest w zalecanym zakresie. Możesz dodać więcej treści, aby wyczerpać temat.`,
+      message: `Długość w zalecanym zakresie. Pamiętaj: liczy się wartość dla czytelnika, nie sama liczba słów.`,
     };
   }
 
   return {
     status: 'ideal',
     percentage,
-    message: `Idealna długość dla ${pageType.label.toLowerCase()}. Tekst powinien dobrze pozycjonować się w Google.`,
+    message: `Dobra długość dla ${pageType.label.toLowerCase()}. Upewnij się, że każdy akapit wnosi konkretną wartość.`,
   };
 }
 

@@ -69,33 +69,33 @@ const schema = {
 
 const faqItems = [
   {
-    question: 'Ile słów powinien mieć artykuł blogowy?',
+    question: 'Czy długość tekstu wpływa na pozycję w Google?',
     answer:
-      'Artykuł blogowy powinien mieć od 2500 do 4000 słów. To pozwala wyczerpująco omówić temat i odpowiedzieć na pytania czytelnika. Krótsze artykuły (poniżej 2000 słów) rzadko pozycjonują się dobrze w konkurencyjnych frazach. Dłuższe artykuły (powyżej 4000 słów) warto rozważyć jako kompleksowe poradniki lub podzielić na serię powiązanych artykułów.',
-    answerSchemaText: 'Artykuł blogowy powinien mieć od 2500 do 4000 słów. To pozwala wyczerpująco omówić temat i odpowiedzieć na pytania czytelnika.',
+      'Długość tekstu NIE jest bezpośrednim czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest wartościowa. Tekst z 800 słowami, który wyczerpuje temat, może pozycjonować się lepiej niż rozwodniony artykuł z 3000 słów.',
+    answerSchemaText: 'Długość tekstu nie jest bezpośrednim czynnikiem rankingowym. Google ocenia wartość treści dla użytkownika.',
   },
   {
-    question: 'Czy dłuższy tekst zawsze jest lepszy dla SEO?',
+    question: 'Dlaczego zakresy słów są takie szerokie?',
     answer:
-      'Nie zawsze. Długość tekstu powinna być dopasowana do tematu i intencji użytkownika. Opis produktu w sklepie nie musi mieć 2000 słów - wystarczy 100-300 słów z konkretnymi informacjami. Artykuł odpowiadający na złożone pytanie powinien być dłuższy. Najważniejsza jest wartość dla czytelnika, nie sama liczba słów.',
-    answerSchemaText: 'Nie zawsze. Długość tekstu powinna być dopasowana do tematu i intencji użytkownika. Najważniejsza jest wartość dla czytelnika.',
+      'Bo ten sam typ strony może wymagać różnej długości w zależności od kontekstu. Opis prostego produktu to 80-150 słów, złożonej elektroniki — 300-400 słów. Prosta usługa lokalna wymaga 500 słów, złożona B2B z FAQ — 1500 słów. Szeroki zakres pozwala dopasować długość do rzeczywistych potrzeb.',
+    answerSchemaText: 'Szeroki zakres pozwala dopasować długość do kontekstu — prosty produkt wymaga mniej słów niż złożony.',
+  },
+  {
+    question: 'Jak interpretować ocenę "za krótki" lub "za długi"?',
+    answer:
+      'To sygnał, że tekst jest poza orientacyjnym zakresem — nie wyrok. Jeśli tekst "za krótki" wyczerpuje temat, może być wystarczający. Jeśli "za długi" każdy akapit wnosi wartość, długość jest uzasadniona. Traktuj ocenę jako punkt wyjścia do refleksji.',
+    answerSchemaText: 'Ocena to sygnał, nie wyrok. Jeśli tekst wyczerpuje temat, długość jest odpowiednia niezależnie od wyniku.',
   },
   {
     question: 'Jak licznik oblicza czas czytania?',
     answer:
-      'Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna - niektórzy czytają szybciej, inni wolniej. Tekst techniczny lub wymagający skupienia będzie czytany wolniej niż lekki artykuł. Wynik zaokrąglamy w górę, więc 150 słów to 1 minuta.',
+      'Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna — niektórzy czytają szybciej, inni wolniej. Tekst techniczny będzie czytany wolniej niż lekki artykuł.',
     answerSchemaText: 'Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna dla typowego tekstu.',
-  },
-  {
-    question: 'Skąd pochodzą zalecane zakresy długości?',
-    answer:
-      'Zakresy opierają się na analizach SEO i praktykach tworzenia treści. Artykuły pozycjonujące się wysoko w Google mają zwykle od 1500 do 2500 słów. Opisy produktów skuteczne w e-commerce to 100-300 słów. Landing page z pełną argumentacją sprzedażową wymaga 800-1500 słów. To orientacyjne wartości, które sprawdzają się w większości przypadków.',
-    answerSchemaText: 'Zakresy opierają się na analizach SEO i praktykach tworzenia treści. To orientacyjne wartości sprawdzające się w większości przypadków.',
   },
   {
     question: 'Czy mogę skopiować raport ze statystykami?',
     answer:
-      'Tak. Po wklejeniu tekstu kliknij przycisk Kopiuj raport pod statystykami. Do schowka trafi podsumowanie z liczbą słów, znaków, akapitów, czasem czytania i oceną długości. Możesz wkleić raport do dokumentu, e-maila lub narzędzia do zarządzania projektem.',
+      'Tak. Po wklejeniu tekstu kliknij przycisk Kopiuj raport pod statystykami. Do schowka trafi podsumowanie z liczbą słów, znaków, akapitów, czasem czytania i oceną długości.',
     answerSchemaText: 'Tak. Kliknij przycisk Kopiuj raport pod statystykami. Do schowka trafi podsumowanie ze wszystkimi metrykami i oceną.',
   },
 ];
@@ -124,48 +124,56 @@ export default function Page() {
 
         <SectionInfo title="Po co liczyć słowa na stronie?">
           <p className="text-mid">
-            Długość tekstu ma znaczenie dla pozycjonowania w Google i dla czytelnika. Zbyt krótki tekst może nie wyczerpywać tematu. Zbyt długi może zniechęcać do czytania. Optymalny zakres zależy od
-            typu strony.
+            <strong>Długość tekstu nie jest czynnikiem rankingowym w Google.</strong> Liczy się wartość treści dla czytelnika i wyczerpanie tematu. Narzędzie pomaga ocenić, czy tekst mieści się w
+            typowym zakresie dla danego typu strony.
           </p>
           <p className="text-mid mt-3">
-            Opis produktu w sklepie internetowym nie musi być rozbudowany - wystarczy 100-300 słów z konkretnymi informacjami. Artykuł blogowy, który ma się pozycjonować w Google, powinien mieć
-            1500-2500 słów, aby wyczerpująco odpowiedzieć na pytanie czytelnika.
+            Zakresy słów to <strong>orientacyjne widełki</strong>, nie sztywne normy. Opis produktu może mieć 80 słów (prosty produkt) lub 400 słów (złożony sprzęt). Artykuł blogowy może mieć 1200
+            słów (prosty temat) lub 3000 słów (kompleksowe zagadnienie).
           </p>
-          <p className="text-mid mt-3">Narzędzie pokazuje, czy tekst mieści się w zalecanym zakresie dla danego typu strony. Wklej tekst, wybierz rodzaj strony i natychmiast zobacz wynik.</p>
+          <p className="text-mid mt-3">Traktuj wynik jako punkt wyjścia do refleksji, nie jako regułę. Jeśli tekst wyczerpuje temat i odpowiada na pytania czytelnika — długość jest odpowiednia.</p>
         </SectionInfo>
 
         <Gap variant="line" />
 
-        <SectionInfo title="Typy stron i zalecane długości">
-          <p className="text-mid mb-4">Każdy typ strony ma inny cel i wymaga innej ilości treści. Poniżej znajdziesz orientacyjne zakresy, które sprawdzają się w praktyce:</p>
-
-          <h3 className="h4 mt-6 mb-2">Opis produktu w sklepie (100-300 słów)</h3>
-          <p className="text-mid">
-            Krótki, konkretny tekst z najważniejszymi informacjami: co to jest, dla kogo, jakie ma cechy, dlaczego warto kupić. Zbyt długi opis może zniechęcić - klient chce szybko podjąć decyzję.
+        <SectionInfo title="Typy stron i orientacyjne zakresy">
+          <p className="text-mid mb-4">
+            Poniższe zakresy to <strong>widełki, nie normy</strong>. Długość zależy od kontekstu — ten sam typ strony może wymagać różnej ilości słów.
           </p>
 
-          <h3 className="h4 mt-6 mb-2">Strona usługi (800-1500 słów)</h3>
-          <p className="text-mid">Opis usługi z korzyściami dla klienta, procesem realizacji i odpowiedziami na typowe pytania. Tekst powinien przekonać, że rozwiązujesz konkretny problem.</p>
-
-          <h3 className="h4 mt-6 mb-2">Strona główna (800-1500 słów)</h3>
+          <h3 className="h4 mt-6 mb-2">Opis produktu (80–400 słów)</h3>
           <p className="text-mid">
-            Prezentacja firmy, najważniejsze usługi, dowody społeczne (opinie, realizacje) i zachęta do dalszego poznania oferty. Strona główna to wizytówka - powinna być treściwa, ale nie
-            przytłaczająca.
+            <strong>Prosty produkt</strong> (np. spożywczy): 80-150 słów. <strong>Złożony produkt</strong> (elektronika, sprzęt): 250-400 słów z specyfikacją i zastosowaniami. Długość powinna
+            odpowiadać złożoności produktu i pytaniom kupującego.
           </p>
 
-          <h3 className="h4 mt-6 mb-2">Landing page (1500-3000 słów)</h3>
+          <h3 className="h4 mt-6 mb-2">Strona usługi (500–1500 słów)</h3>
           <p className="text-mid">
-            Strona sprzedażowa z pełną argumentacją: problem, rozwiązanie, korzyści, dowody, cena, wezwanie do działania. Dłuższy tekst pozwala rozwiać wątpliwości i przekonać do zakupu lub kontaktu.
+            <strong>Prosta usługa lokalna</strong>: 500-700 słów. <strong>Złożona usługa B2B</strong> z procesem, FAQ i case studies: do 1500 słów. Celem jest odpowiedź na pytania klienta, nie
+            osiągnięcie konkretnej liczby.
           </p>
 
-          <h3 className="h4 mt-6 mb-2">Artykuł blogowy (2500-4000 słów)</h3>
+          <h3 className="h4 mt-6 mb-2">Strona główna (400–1000 słów)</h3>
           <p className="text-mid">
-            Wnikliwy materiał odpowiadający na konkretne pytanie. Artykuły tej długości dobrze pozycjonują się w Google, bo wyczerpują temat. Powinny edukować, budować autorytet i naturalnie prowadzić
-            do oferty.
+            Nowoczesne strony główne są wizualne. Tekst ma jasno komunikować wartość, nie zasypać informacjami. Mniej tekstu z wyraźnym przekazem &gt; więcej tekstu bez jasnej struktury.
           </p>
 
-          <h3 className="h4 mt-6 mb-2">Poradnik / przewodnik (4000-7000 słów)</h3>
-          <p className="text-mid">Kompleksowy materiał omawiający temat dogłębnie, często z podziałem na rozdziały. Poradniki to świetne zasoby linkowania - inne strony chętnie do nich odsyłają.</p>
+          <h3 className="h4 mt-6 mb-2">Landing page (600–2500 słów)</h3>
+          <p className="text-mid">
+            <strong>Krótki LP</strong> dla prostej oferty: 600-1000 słów. <strong>Long-form LP</strong> dla drogich produktów/usług wymagających edukacji: 1500-2500 słów. Długość zależy od złożoności
+            decyzji zakupowej.
+          </p>
+
+          <h3 className="h4 mt-6 mb-2">Artykuł blogowy (1200–3000 słów)</h3>
+          <p className="text-mid">
+            Długość powinna wynikać z tematu, nie z ambicji SEO. Krótszy artykuł wyczerpujący temat jest lepszy niż dłuższy rozwodniony. Proste pytanie: 1200-1800 słów. Złożone zagadnienie: 2000-3000
+            słów.
+          </p>
+
+          <h3 className="h4 mt-6 mb-2">Poradnik / przewodnik (2500–6000 słów)</h3>
+          <p className="text-mid">
+            Kompleksowe opracowanie tematu. Nie każdy poradnik wymaga 5000 słów — długość zależy od zakresu. Wąski temat: 2500-3500 słów. Szeroki temat z wieloma aspektami: 4000-6000 słów.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -204,34 +212,37 @@ export default function Page() {
           <h3 className="h4 mb-2">Statystyki tekstu</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Słowa</strong> - łączna liczba słów w tekście. To główna metryka oceny długości.
+              <strong>Słowa</strong> — łączna liczba słów. To główny wskaźnik długości tekstu.
             </li>
             <li>
-              <strong>Znaki (ze spacjami)</strong> - wszystkie znaki, łącznie ze spacjami. Przydatne przy limitach znaków (np. w systemach CMS).
+              <strong>Znaki (ze spacjami)</strong> — wszystkie znaki. Przydatne przy limitach w CMS (np. Allegro, OLX).
             </li>
             <li>
-              <strong>Znaki (bez spacji)</strong> - tylko litery, cyfry i znaki interpunkcyjne. Czasem wymagane przez drukarnie lub systemy.
+              <strong>Znaki (bez spacji)</strong> — tylko litery, cyfry i interpunkcja. Czasem wymagane przez drukarnie.
             </li>
             <li>
-              <strong>Akapity</strong> - liczba bloków tekstu oddzielonych pustymi liniami. Pokazuje strukturę tekstu.
+              <strong>Akapity</strong> — ile bloków tekstu oddzielonych pustymi liniami. Pokazuje strukturę.
             </li>
             <li>
-              <strong>Czas czytania</strong> - szacowany czas w minutach przy średniej prędkości 200 słów/minutę.
+              <strong>Czas czytania</strong> — szacowany czas przy 200 słów/minutę.
             </li>
           </ul>
 
-          <h3 className="h4 mt-6 mb-2">Statusy oceny</h3>
+          <h3 className="h4 mt-6 mb-2">Statusy oceny — sygnały, nie wyroki</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong className="text-emerald-700">Dobra długość</strong> (zielony) - tekst mieści się w zalecanym zakresie dla wybranego typu strony.
+              <strong className="text-emerald-700">Dobra długość</strong> (zielony) — tekst mieści się w orientacyjnym zakresie.
             </li>
             <li>
-              <strong className="text-amber-700">Za krótki</strong> (żółty) - tekst jest poniżej minimum. Rozważ dodanie treści.
+              <strong className="text-amber-700">Poniżej zakresu</strong> (żółty) — tekst jest krótszy niż typowy. Jeśli wyczerpuje temat, może być wystarczający.
             </li>
             <li>
-              <strong className="text-red-700">Za długi</strong> (czerwony) - tekst przekracza zalecany zakres. Rozważ skrócenie lub podział na części.
+              <strong className="text-red-700">Powyżej zakresu</strong> (czerwony) — tekst jest dłuższy niż typowy. Jeśli każdy akapit wnosi wartość, długość jest uzasadniona.
             </li>
           </ul>
+          <p className="text-mid mt-4">
+            <strong>Pamiętaj:</strong> zakresy to orientacyjne widełki, nie sztywne normy. Najważniejsza jest wartość treści dla czytelnika.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />

@@ -1546,6 +1546,53 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Alt text dla każdego badge
   - Weryfikacja: `npm run lint && npm run build`
 
+### Treści i narzędzia — licznik słów
+
+- ❌ **[IDEA-151] Artykuł: Ile słów powinien mieć artykuł blogowy w 2025?**
+
+  - Kategorie: `SEO`, `Treści`
+  - Slug: `ile-slow-powinien-miec-artykul-blogowy`
+  - Cel: Wyjaśnienie optymalnej długości artykułów blogowych w kontekście SEO, różnic między typami treści, badań na temat korelacji długości i pozycji w Google.
+  - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/blogi-internetowe`
+  - Powiązane narzędzia: `/narzedzia/licznik-slow-i-znakow`
+  - Typ artykułu: Edukacyjny
+  - Wpływ SEO: Wysoki — topical authority dla klastra "treści"
+  - Linkowanie: naturalny link do licznika słów jako narzędzia do sprawdzenia długości
+
+- ❌ **[IDEA-152] Artykuł: Jak pisać opisy produktów w sklepie internetowym?**
+
+  - Kategorie: `Sklepy`, `Treści`, `SEO`
+  - Slug: `jak-pisac-opisy-produktow-w-sklepie-internetowym`
+  - Cel: Wyjaśnienie struktury dobrego opisu produktu, optymalnej długości, elementów wpływających na konwersję i SEO, typowych błędów.
+  - Powiązane usługi: `/uslugi/sklepy-internetowe`, `/uslugi/tworzenie-tresci`
+  - Powiązane narzędzia: `/narzedzia/licznik-slow-i-znakow`
+  - Typ artykułu: Edukacyjny
+  - Wpływ SEO: Wysoki — long-tail frazy e-commerce
+  - Linkowanie: naturalny link do licznika słów przy sekcji o optymalnej długości opisów
+
+- ❌ **[IDEA-153] Narzędzie: Licznik znaków dla Allegro/OLX z limitami platform**
+
+  - Cel: Wariant licznika słów/znaków z predefiniowanymi limitami dla platform e-commerce (Allegro, OLX, Amazon, eBay).
+  - Uzasadnienie: Nowe frazy kluczowe (licznik znaków allegro, ile znaków opis olx), dedykowane UX dla sprzedawców.
+  - Pliki:
+    - `app/(pl)/narzedzia/(tools)/licznik-znakow-allegro-olx/page.tsx` (nowa strona)
+    - `app/(pl)/narzedzia/(tools)/licznik-znakow-allegro-olx/instrukcja/page.tsx` (nowa instrukcja)
+    - `lib/tools/text/platformLimits.ts` (nowy plik z limitami platform)
+    - `components/sections/tools/PlatformCharCountTool.tsx` (nowy komponent lub wariant WordCountTool)
+  - SEO:
+    - URL: `/narzedzia/licznik-znakow-allegro-olx`
+    - Title: `Licznik znaków dla Allegro i OLX — sprawdź limit opisu`
+    - Description: `Darmowy licznik znaków z limitami dla Allegro, OLX, Amazon i eBay. Sprawdź, czy Twój opis produktu mieści się w limicie platformy.`
+    - Schema: SoftwareApplication z featureList
+  - Kryteria akceptacji:
+    - Wybór platformy (Allegro, OLX, Amazon, eBay + opcja "Własny limit")
+    - Wyświetlanie aktualnego limitu znaków dla wybranej platformy
+    - Wizualna ocena (progress bar + kolor: zielony/żółty/czerwony)
+    - Informacja o limitach dla tytułu i opisu (osobno)
+    - FAQ z pytaniami o limity konkretnych platform
+  - Wpływ SEO: Średni — nowe frazy, dedykowany intent
+  - Weryfikacja: `npm run lint && npm run build`
+
 ---
 
 # Zadania redakcyjne artykułów (CONTENT-EDIT)

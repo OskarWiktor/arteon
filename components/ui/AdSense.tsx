@@ -35,9 +35,7 @@ export default function AdSense({ adClient, adSlot, adFormat = 'auto', width, he
   const isFixed = adFormat === 'fixed' && width && height;
   const isInArticle = adFormat === 'in-article';
 
-  const insStyle: React.CSSProperties = isFixed
-    ? { display: 'inline-block', width: `${width}px`, height: `${height}px` }
-    : { display: 'block', textAlign: isInArticle ? 'center' : undefined };
+  const insStyle: React.CSSProperties = isFixed ? { display: 'inline-block', width: `${width}px`, height: `${height}px` } : { display: 'block', textAlign: isInArticle ? 'center' : undefined };
 
   const getAdAttributes = () => {
     if (isFixed) return {};
@@ -55,14 +53,7 @@ export default function AdSense({ adClient, adSlot, adFormat = 'auto', width, he
 
   return (
     <div className={className}>
-      <ins
-        ref={adRef}
-        className="adsbygoogle"
-        style={insStyle}
-        data-ad-client={adClient}
-        data-ad-slot={adSlot}
-        {...getAdAttributes()}
-      />
+      <ins ref={adRef} className="adsbygoogle" style={insStyle} data-ad-client={adClient} data-ad-slot={adSlot} {...getAdAttributes()} />
     </div>
   );
 }

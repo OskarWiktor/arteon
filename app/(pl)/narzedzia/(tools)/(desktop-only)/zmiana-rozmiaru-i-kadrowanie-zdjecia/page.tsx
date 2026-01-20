@@ -71,14 +71,7 @@ export default function ImageResizerPage() {
       />
 
       <Wrapper>
-        <AdSense
-          adClient="ca-pub-7845947936813012"
-          adSlot="7551147298"
-          adFormat="fixed"
-          width={728}
-          height={90}
-          className="my-3"
-        />
+        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
 
         <ImageResizeTool />
 

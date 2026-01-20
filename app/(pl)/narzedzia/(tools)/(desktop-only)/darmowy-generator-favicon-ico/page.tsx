@@ -68,14 +68,7 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/darmowy-generator-favicon-ico`, label: 'Stwórz favicon i ikony dla swojej strony' }} includeJsonLd />
 
       <Wrapper>
-        <AdSense
-          adClient="ca-pub-7845947936813012"
-          adSlot="7551147298"
-          adFormat="fixed"
-          width={728}
-          height={90}
-          className="my-3"
-        />
+        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
 
         <FaviconGenerator />
 

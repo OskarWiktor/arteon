@@ -72,7 +72,7 @@ export default function Navigation() {
               #MadeWithNext.js
             </a>
 
-{/* NAV-001: Tymczasowo ukryte linki do social media
+            {/* NAV-001: Tymczasowo ukryte linki do social media
             <SocialIconLink
               href="https://www.instagram.com/arteon.pl"
               label={t.instagramLabel}

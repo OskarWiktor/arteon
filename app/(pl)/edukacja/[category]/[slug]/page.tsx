@@ -258,11 +258,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'ad') {
           return (
             <div key={`grp-ad-${i}`} className="not-prose my-8">
-              <AdSense
-                adClient="ca-pub-7845947936813012"
-                adSlot={b.slot || '9459125335'}
-                adFormat="in-article"
-              />
+              <AdSense adClient="ca-pub-7845947936813012" adSlot={b.slot || '9459125335'} adFormat="in-article" />
             </div>
           );
         }
