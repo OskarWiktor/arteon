@@ -77,6 +77,7 @@ export type Article = {
     | { type: 'quote'; text: string; author?: string; role?: string; breakBefore?: boolean; breakAfter?: boolean }
     | { type: 'callout'; title?: string; html: string; breakBefore?: boolean; breakAfter?: boolean }
     | { type: 'colorPalette'; colors: string[]; breakBefore?: boolean; breakAfter?: boolean }
+    | { type: 'ad'; slot?: string; breakBefore?: boolean; breakAfter?: boolean }
   >;
   seo?: { title?: string; description?: string; canonical?: string };
 

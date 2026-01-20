@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 export interface AdSenseProps {
   adClient: string;
   adSlot: string;
-  adFormat?: 'auto' | 'fixed';
+  adFormat?: 'auto' | 'fixed' | 'in-article';
   width?: number;
   height?: number;
   className?: string;
@@ -33,10 +33,25 @@ export default function AdSense({ adClient, adSlot, adFormat = 'auto', width, he
   }, []);
 
   const isFixed = adFormat === 'fixed' && width && height;
+  const isInArticle = adFormat === 'in-article';
 
   const insStyle: React.CSSProperties = isFixed
     ? { display: 'inline-block', width: `${width}px`, height: `${height}px` }
-    : { display: 'block' };
+    : { display: 'block', textAlign: isInArticle ? 'center' : undefined };
+
+  const getAdAttributes = () => {
+    if (isFixed) return {};
+    if (isInArticle) {
+      return {
+        'data-ad-layout': 'in-article',
+        'data-ad-format': 'fluid',
+      };
+    }
+    return {
+      'data-ad-format': 'auto',
+      'data-full-width-responsive': 'true',
+    };
+  };
 
   return (
     <div className={className}>
@@ -46,7 +61,7 @@ export default function AdSense({ adClient, adSlot, adFormat = 'auto', width, he
         style={insStyle}
         data-ad-client={adClient}
         data-ad-slot={adSlot}
-        {...(!isFixed && { 'data-ad-format': 'auto', 'data-full-width-responsive': 'true' })}
+        {...getAdAttributes()}
       />
     </div>
   );

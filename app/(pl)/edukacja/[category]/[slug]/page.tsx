@@ -21,6 +21,7 @@ import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import ShareBlock from '@/components/sections/ShareBlock';
 import ColorPalette from '@/components/ui/ColorPalette';
 import AbbrTouchHandler from '@/components/ui/AbbrTouchHandler';
+import AdSense from '@/components/ui/AdSense';
 
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
 
@@ -250,6 +251,18 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                 )}
               </div>
               <Gap size={GAP} variant="line" />
+            </div>
+          );
+        }
+
+        if (b.type === 'ad') {
+          return (
+            <div key={`grp-ad-${i}`} className="not-prose my-8">
+              <AdSense
+                adClient="ca-pub-7845947936813012"
+                adSlot={b.slot || '9459125335'}
+                adFormat="in-article"
+              />
             </div>
           );
         }
