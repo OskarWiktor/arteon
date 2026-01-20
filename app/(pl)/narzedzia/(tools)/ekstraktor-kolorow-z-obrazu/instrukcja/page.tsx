@@ -13,13 +13,13 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Jak wyciągnąć kolory ze zdjęcia? | Generator palety z obrazu online',
-  description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie online, bez wysyłania plików na serwer. Idealne do brandingu i grafik.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja') },
+  title: 'Jak wyciągnąć kolory ze zdjęcia? | Ekstraktor kolorów z obrazu',
+  description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie bez wysyłania plików na serwer. Idealne do brandingu.',
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja') },
   openGraph: {
-    title: 'Jak wyciągnąć kolory ze zdjęcia? | Generator palety z obrazu online',
-    description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie online, bez wysyłania plików na serwer. Idealne do brandingu i grafik.',
-    url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja'),
+    title: 'Jak wyciągnąć kolory ze zdjęcia? | Ekstraktor kolorów z obrazu',
+    description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie bez wysyłania plików na serwer. Idealne do brandingu.',
+    url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja'),
     type: 'website',
     images: [
       {
@@ -34,7 +34,7 @@ const schema = {
   '@type': 'HowTo',
   name: 'Jak wyciągnąć kolory ze zdjęcia lub logo',
   description: 'Instrukcja wyciągania dominujących kolorów ze zdjęcia lub logo. Wgraj obraz (PNG, JPG, SVG), skopiuj do 12 kolorów HEX. Wszystko lokalnie w przeglądarce.',
-  url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja'),
+  url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja'),
   step: [
     {
       '@type': 'HowToStep',
@@ -95,22 +95,22 @@ export default function Page() {
 
       <HeroBanner
         title="Jak wyciągnąć kolory ze zdjęcia lub logo"
-        description="Wgraj zdjęcie lub logo i wyciągnij do 12 dominujących kolorów HEX. Instrukcja z wskazówkami, które obrazy dają najlepsze rezultaty i jak wykorzystać kolory w brandingu."
+        description="Wgraj zdjęcie lub logo i wyciągnij do 12 dominujących kolorów HEX. Instrukcja z wskazówkami, które obrazy dają najlepsze rezultaty."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzia' }}
-        third={{ href: '/narzedzia/generator-palety-kolorow-z-obrazu', label: 'Generator palety kolorów z obrazu' }}
-        fourth={{ href: '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja', label: 'Instrukcja' }}
+        third={{ href: '/narzedzia/ekstraktor-kolorow-z-obrazu', label: 'Ekstraktor kolorów z obrazu' }}
+        fourth={{ href: '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja', label: 'Instrukcja' }}
         includeJsonLd
       />
 
       <Wrapper>
         <Gap size="sm" />
 
-        <SectionInfo title="Do czego służy generator palety kolorów z obrazu?">
+        <SectionInfo title="Do czego służy ekstraktor kolorów z obrazu?">
           <p className="text-mid">
             To narzędzie analizuje wgrane zdjęcie i wyciąga z niego dominujące kolory. Dzięki temu możesz szybko stworzyć paletę barw na podstawie inspirującego zdjęcia, logo konkurencji czy zdjęcia
             produktu.
@@ -297,10 +297,10 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Wypróbuj narzędzie">
-          <p className="text-mid">Teraz, gdy wiesz jak działa generator, możesz wyciągnąć kolory ze swojego obrazu.</p>
+          <p className="text-mid">Teraz, gdy wiesz jak działa ekstraktor, możesz wyciągnąć kolory ze swojego obrazu.</p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Button link="/narzedzia/generator-palet-kolorow-online" variant="accent">
-              Przejdź do generatora
+            <Button link="/narzedzia/ekstraktor-kolorow-z-obrazu" variant="accent">
+              Przejdź do ekstraktora
             </Button>
             <Button link="/narzedzia" variant="normal">
               Zobacz inne narzędzia

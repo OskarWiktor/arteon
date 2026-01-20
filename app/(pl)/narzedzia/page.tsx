@@ -91,19 +91,19 @@ const toolsJsonLd = {
     {
       '@type': 'WebApplication',
       position: 7,
-      name: 'Generator palety kolorów z obrazu',
-      description: 'Wgraj dowolne zdjęcia, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
-      url: 'https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu',
+      name: 'Ekstraktor kolorów z obrazu',
+      description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory i stworzy paletę z kodami HEX. Darmowe narzędzie bez logowania.',
+      url: 'https://www.arteonagency.pl/narzedzia/ekstraktor-kolorow-z-obrazu',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
     {
       '@type': 'WebApplication',
       position: 8,
-      name: 'Generator palet kolorów online z jednego koloru',
+      name: 'Generator schematów kolorów',
       description:
-        'Generator palet kolorów online, który z jednego koloru bazowego buduje klasyczne schematy (monochromatyczne, triadyczne, analogiczne, komplementarne) oraz nowoczesne palety pastelowe, ciemne, tonalne i minimalistyczne inspirowane Material Design i Apple.',
-      url: 'https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online',
+        'Generator schematów kolorów, który z jednego koloru bazowego buduje klasyczne schematy (monochromatyczne, triadyczne, analogiczne, komplementarne) oraz nowoczesne palety pastelowe, ciemne, tonalne i minimalistyczne.',
+      url: 'https://www.arteonagency.pl/narzedzia/generator-schematow-kolorow',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -326,14 +326,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Generator palety kolorów z obrazu',
-              topImageAlt: 'Paleta kolorów z obrazu i logo Arteon',
+              title: 'Ekstraktor kolorów z obrazu',
+              topImageAlt: 'Ekstraktor kolorów z obrazu Arteon',
               topImageSrc: '/assets/tools/narzedzia-generator-palety-kolorow-z-obrazu.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Dodaj obraz, a narzędzie pokaże użyte na nim kolory i stworzy z nich paletę barw. Skopiuj kod koloru jednym kliknięciem i użyj w dowolnym miejscu.</p>
+                  <p>Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory. Skopiuj kody HEX jednym kliknięciem i użyj w dowolnym miejscu.</p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/generator-palety-kolorow-z-obrazu">
+                    <Button arrow link="/narzedzia/ekstraktor-kolorow-z-obrazu">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -342,17 +342,17 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Generator palet kolorów z jednego koloru',
-              topImageAlt: 'Generator palet kolorów z jednego koloru Arteon',
+              title: 'Generator schematów kolorów',
+              topImageAlt: 'Generator schematów kolorów Arteon',
               topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Wybierz jeden kolor bazowy i wygeneruj klasyczne i nowoczesne palety: monochromatyczne, triadyczne, pastelowe, ciemne, tonalne czy minimalistyczne inspirowane Apple i Material
-                    Design. Sprawdź, jakie kolory będą idealne dla Twojej marki.
+                    Wybierz jeden kolor bazowy i wygeneruj 9 schematów kolorów: monochromatyczny, komplementarny, triadyczny, pastelowy, ciemny i inne. Sprawdź, jakie kolory będą idealne dla Twojej
+                    marki.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/generator-palet-kolorow-online">
+                    <Button arrow link="/narzedzia/generator-schematow-kolorow">
                       Otwórz narzędzie
                     </Button>
                   </div>

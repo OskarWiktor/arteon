@@ -108,8 +108,8 @@ const tools: NavItem[] = [
   { title: 'Licznik meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
   { title: 'Generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
   { title: 'Tester kontrastu WCAG', href: '/narzedzia/tester-kontrastu-kolorow-wcag' },
-  { title: 'Generator palet kolorów', href: '/narzedzia/generator-palet-kolorow-online' },
-  { title: 'Paleta kolorów z obrazu', href: '/narzedzia/generator-palety-kolorow-z-obrazu' },
+  { title: 'Generator schematów kolorów', href: '/narzedzia/generator-schematow-kolorow' },
+  { title: 'Ekstraktor kolorów z obrazu', href: '/narzedzia/ekstraktor-kolorow-z-obrazu' },
   { title: 'Generator kodu QR', href: '/narzedzia/generator-kodu-qr' },
 ];
 

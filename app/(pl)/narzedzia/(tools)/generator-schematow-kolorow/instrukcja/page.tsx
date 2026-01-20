@@ -15,13 +15,13 @@ import { RiDropLine, RiCursorLine, RiLayoutGridLine, RiPaletteLine, RiFileCopyLi
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
-  title: 'Jak wygenerować paletę kolorów? | Generator online z 9 typami palet',
-  description: 'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczna, komplementarna, triadyczna, pastelowa i inne. Kopiuj kody HEX jednym kliknięciem. Darmowy generator online.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja') },
+  title: 'Jak wygenerować schematy kolorów? | 9 typów palet z jednego koloru',
+  description: 'Wygeneruj 9 schematów kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Kopiuj kody HEX jednym kliknięciem. Darmowe narzędzie.',
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow/instrukcja') },
   openGraph: {
-    title: 'Jak wygenerować paletę kolorów? | Generator online z 9 typami palet',
-    description: 'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczna, komplementarna, triadyczna, pastelowa i inne. Kopiuj kody HEX jednym kliknięciem. Darmowy generator online.',
-    url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja'),
+    title: 'Jak wygenerować schematy kolorów? | 9 typów palet z jednego koloru',
+    description: 'Wygeneruj 9 schematów kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Kopiuj kody HEX jednym kliknięciem. Darmowe narzędzie.',
+    url: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow/instrukcja'),
     type: 'website',
     images: [
       {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak wygenerować paletę kolorów z jednego koloru',
-  description: 'Instrukcja generowania 9 palet kolorów z jednego koloru bazowego: monochromatyczna, komplementarna, triadyczna, pastelowa i inne. Kopiowanie kolorów HEX jednym kliknięciem.',
-  url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online/instrukcja'),
+  name: 'Jak wygenerować schematy kolorów z jednego koloru',
+  description: 'Instrukcja generowania 9 schematów kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Kopiowanie kolorów HEX jednym kliknięciem.',
+  url: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow/instrukcja'),
   inLanguage: 'pl-PL',
   step: [
     {
@@ -101,16 +101,16 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Jak wygenerować paletę kolorów z jednego koloru bazowego"
-        description="Wygeneruj 9 palet kolorów z jednego koloru bazowego (np. z logo). Instrukcja z opisem palet: monochromatyczna, komplementarna, triadyczna, pastelowa, ciemna i minimalistyczna."
+        title="Jak wygenerować schematy kolorów z jednego koloru bazowego"
+        description="Wygeneruj 9 schematów kolorów z jednego koloru bazowego (np. z logo). Instrukcja z opisem schematów: monochromatyczny, komplementarny, triadyczny, pastelowy, ciemny i minimalistyczny."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzia' }}
-        third={{ href: '/narzedzia/generator-palet-kolorow-online', label: 'Generator palet kolorów' }}
-        fourth={{ href: '/narzedzia/generator-palet-kolorow-online/instrukcja', label: 'Instrukcja' }}
+        third={{ href: '/narzedzia/generator-schematow-kolorow', label: 'Generator schematów kolorów' }}
+        fourth={{ href: '/narzedzia/generator-schematow-kolorow/instrukcja', label: 'Instrukcja' }}
         includeJsonLd
       />
 
@@ -145,7 +145,7 @@ export default function Page() {
             wybierze losowy kolor, od którego możesz zacząć eksperymentować.
           </p>
           <div className="mt-4">
-            <Button link="/narzedzia/generator-palet-kolorow-online" variant="accent">
+            <Button link="/narzedzia/generator-schematow-kolorow" variant="accent">
               Przejdź do generatora
             </Button>
           </div>
@@ -360,7 +360,7 @@ export default function Page() {
         <SectionInfo title="Wypróbuj narzędzie">
           <p className="text-mid">Teraz, gdy wiesz jak działają poszczególne palety, możesz stworzyć własny zestaw kolorów.</p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Button link="/narzedzia/generator-palet-kolorow-online" variant="accent">
+            <Button link="/narzedzia/generator-schematow-kolorow" variant="accent">
               Przejdź do generatora
             </Button>
             <Button link="/narzedzia" variant="normal">

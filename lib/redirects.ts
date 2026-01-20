@@ -79,6 +79,17 @@ export const PATTERN_REDIRECTS = {
 } as const;
 
 /**
+ * Redirecty dla narzędzi (zmienione URL-e)
+ */
+export const TOOLS_REDIRECTS: Record<string, string> = {
+  // Zmiana URL narzędzi kolorów (2026-01-20) - eliminacja kanibalizacji SEO
+  '/narzedzia/generator-palet-kolorow-online': '/narzedzia/generator-schematow-kolorow',
+  '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-schematow-kolorow/instrukcja',
+  '/narzedzia/generator-palety-kolorow-z-obrazu': '/narzedzia/ekstraktor-kolorow-z-obrazu',
+  '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja',
+};
+
+/**
  * Wszystkie statyczne redirecty (bez wzorców)
  * Używane przez middleware do szybkiego lookup
  */
@@ -87,4 +98,5 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...LEGACY_REDIRECTS,
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,
+  ...TOOLS_REDIRECTS,
 };

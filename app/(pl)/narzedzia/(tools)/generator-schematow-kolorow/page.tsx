@@ -12,13 +12,13 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
-  title: 'Wygeneruj paletę kolorów z jednego koloru',
-  description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online') },
+  title: 'Schematy kolorów - palety monochromatyczne, komplementarne i więcej',
+  description: 'Wpisz jeden kolor HEX i wygeneruj 9 schematów kolorów: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Darmowe narzędzie bez logowania.',
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow') },
   openGraph: {
-    title: 'Wygeneruj paletę kolorów z jednego koloru',
-    description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
-    url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online'),
+    title: 'Schematy kolorów - palety monochromatyczne, komplementarne i więcej',
+    description: 'Wpisz jeden kolor HEX i wygeneruj 9 schematów kolorów: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Darmowe narzędzie bez logowania.',
+    url: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow'),
     type: 'website',
     images: [
       {
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Wygeneruj paletę kolorów z jednego koloru',
-  alternateName: 'Generator schematów barw HEX i HSL dla brandingu i UI',
-  url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow-online'),
+  name: 'Generator schematów kolorów',
+  alternateName: 'Schematy kolorów - palety monochromatyczne, komplementarne i więcej',
+  url: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
-  description: 'Wpisz jeden kolor i wygeneruj kompletne palety barw dla swojej identyfikacji wizualnej. Darmowe narzędzie bez logowania, limitu, reklam i opłat',
+  description: 'Wpisz jeden kolor HEX i wygeneruj 9 schematów kolorów: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Darmowe narzędzie bez logowania.',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {
@@ -59,15 +59,15 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Wygeneruj paletę kolorów z jednego koloru"
-        description="Podaj kolor bazowy, a narzędzie wygeneruje kompletne palety: monochromatyczną, analogiczną, komplementarną, triadyczną, split-complementary, system akcentów UI, paletę pastelową, ciemną i neutralną. Skopiuj HEX lub HSL i od razu użyj w brandingu, UI i projektach WWW."
+        title="Wygeneruj schematy kolorów z jednego koloru bazowego"
+        description="Podaj kolor bazowy, a narzędzie wygeneruje 9 schematów kolorów: monochromatyczny, analogiczny, komplementarny, triadyczny, split-complementary, akcenty UI, pastelowy, ciemny i neutralny. Skopiuj HEX lub HSL jednym kliknięciem."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzie' }}
-        third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Wygeneruj paletę kolorów z jednego koloru' }}
+        third={{ href: `/narzedzia/generator-schematow-kolorow`, label: 'Generator schematów kolorów' }}
         includeJsonLd
       />
 
@@ -86,8 +86,8 @@ export default function Page() {
         <Gap size="sm" />
 
         <SectionSteps
-          title="Jak korzystać z generatora?"
-          description="Wygenerowanie palet kolorów to dosłownie kilka sekund:"
+          title="Jak korzystać z generatora schematów?"
+          description="Wygenerowanie schematów kolorów to dosłownie kilka sekund:"
           grid="three"
           items={[
             {
@@ -104,7 +104,7 @@ export default function Page() {
             },
           ]}
           btnOne="Zobacz pełną instrukcję"
-          btnOneLink="/narzedzia/generator-palet-kolorow-online/instrukcja"
+          btnOneLink="/narzedzia/generator-schematow-kolorow/instrukcja"
           btnOneVariant="accent"
         />
 

@@ -114,8 +114,8 @@ const legalLinks = [
 const toolsLinks = [
   { href: '/narzedzia/licznik-dlugosci-meta-title-i-description', label: 'Licznik meta title i description' },
   { href: '/narzedzia/tester-kontrastu-kolorow-wcag', label: 'Tester kontrastu kolorów WCAG' },
-  { href: '/narzedzia/generator-palety-kolorow-z-obrazu', label: 'Paleta kolorów z obrazu' },
-  { href: '/narzedzia/generator-palet-kolorow-online', label: 'Generator palet kolorów' },
+  { href: '/narzedzia/ekstraktor-kolorow-z-obrazu', label: 'Ekstraktor kolorów z obrazu' },
+  { href: '/narzedzia/generator-schematow-kolorow', label: 'Generator schematów kolorów' },
   { href: '/narzedzia/jpg-png-na-webp-bez-limitu', label: 'Konwerter JPG/PNG na WebP' },
   { href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
   { href: '/narzedzia/darmowy-generator-favicon-ico', label: 'Generator favicon' },

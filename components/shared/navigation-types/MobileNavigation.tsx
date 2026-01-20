@@ -82,8 +82,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
   const MOBILE_TOOL_KEYS: ToolSectionLink['href'][] = [
     '/narzedzia/licznik-dlugosci-meta-title-i-description',
     '/narzedzia/tester-kontrastu-kolorow-wcag',
-    '/narzedzia/generator-palety-kolorow-z-obrazu',
-    '/narzedzia/generator-palet-kolorow-online',
+    '/narzedzia/ekstraktor-kolorow-z-obrazu',
+    '/narzedzia/generator-schematow-kolorow',
   ];
 
   const TOOLS_SECTIONS_MOBILE: ToolSection[] = TOOLS_SECTIONS_PL.map((section) => ({

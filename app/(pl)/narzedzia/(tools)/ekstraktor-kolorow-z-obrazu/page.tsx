@@ -12,13 +12,13 @@ import Script from 'next/script';
 import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
-  title: 'Wyciągnij kolory ze zdjęcia lub logo',
-  description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu') },
+  title: 'Ekstraktor kolorów z obrazu - pobierz paletę ze zdjęcia',
+  description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory i stworzy paletę z kodami HEX. Darmowe narzędzie bez logowania i bez limitu.',
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu') },
   openGraph: {
-    title: 'Wyciągnij kolory ze zdjęcia lub logo',
-    description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
-    url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
+    title: 'Ekstraktor kolorów z obrazu - pobierz paletę ze zdjęcia',
+    description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory i stworzy paletę z kodami HEX. Darmowe narzędzie bez logowania i bez limitu.',
+    url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
     type: 'website',
     images: [
       {
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Wyciągnij kolory ze zdjęcia lub logo',
-  alternateName: 'Generator palety kolorów z obrazu - wyciągnij dominujące kolory ze zdjęcia',
-  url: toAbsoluteUrl('/narzedzia/generator-palety-kolorow-z-obrazu'),
+  name: 'Ekstraktor kolorów z obrazu',
+  alternateName: 'Pobierz paletę kolorów ze zdjęcia lub logo',
+  url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
   applicationCategory: 'UtilityApplication',
   operatingSystem: 'Any',
-  description: 'Wgraj dowolne zdjęcie, a narzędzie pokaże użyte na nim kolory i kody kolorów do skopiowania. Bez logowania, bez limitu, bez abonamentu.',
+  description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory i stworzy paletę z kodami HEX. Darmowe narzędzie bez logowania i bez limitu.',
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {
@@ -59,13 +59,13 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Wyciągnij kolory ze zdjęcia lub logo"
-        description="Dodaj obraz, a narzędzie pokaże użyte na nim kolory i stworzy z nich paletę barw. Skopiuj kod koloru jednym kliknięciem i użyj w dowolnym miejscu."
+        title="Wyciągnij dominujące kolory z obrazu"
+        description="Wgraj zdjęcie, logo lub grafikę, a narzędzie automatycznie wyciągnie z niego dominujące kolory. Skopiuj kody HEX jednym kliknięciem."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
-      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Wyciągnij kolory ze zdjęcia lub logo' }} includeJsonLd />
+      <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/ekstraktor-kolorow-z-obrazu`, label: 'Ekstraktor kolorów z obrazu' }} includeJsonLd />
 
       <Wrapper>
         <AdSense
@@ -82,7 +82,7 @@ export default function Page() {
         <Gap size="sm" />
 
         <SectionSteps
-          title="Jak korzystać z generatora?"
+          title="Jak korzystać z ekstraktora?"
           description="Wyciągnięcie kolorów ze zdjęcia to dosłownie kilka sekund:"
           grid="three"
           items={[
@@ -100,7 +100,7 @@ export default function Page() {
             },
           ]}
           btnOne="Zobacz pełną instrukcję"
-          btnOneLink="/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja"
+          btnOneLink="/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja"
           btnOneVariant="accent"
         />
 
