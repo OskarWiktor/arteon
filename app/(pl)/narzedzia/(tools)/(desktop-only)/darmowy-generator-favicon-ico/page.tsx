@@ -9,6 +9,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
   title: 'Stwórz favicon i ikony dla swojej strony',
@@ -67,7 +68,14 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/darmowy-generator-favicon-ico`, label: 'Stwórz favicon i ikony dla swojej strony' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense
+          adClient="ca-pub-7845947936813012"
+          adSlot="7551147298"
+          adFormat="fixed"
+          width={728}
+          height={90}
+          className="my-3"
+        />
 
         <FaviconGenerator />
 

@@ -9,6 +9,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
   title: 'Przygotuj zdjęcie pod Instagram, Facebook i stronę',
@@ -70,7 +71,14 @@ export default function ImageResizerPage() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense
+          adClient="ca-pub-7845947936813012"
+          adSlot="7551147298"
+          adFormat="fixed"
+          width={728}
+          height={90}
+          className="my-3"
+        />
 
         <ImageResizeTool />
 

@@ -9,6 +9,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
   title: 'Stwórz kod QR do strony, wizytówki lub menu',
@@ -63,7 +64,14 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzia' }} third={{ href: '/narzedzia/generator-kodu-qr', label: 'Stwórz kod QR do strony, wizytówki lub menu' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense
+          adClient="ca-pub-7845947936813012"
+          adSlot="7551147298"
+          adFormat="fixed"
+          width={728}
+          height={90}
+          className="my-3"
+        />
 
         <QrCodeGenerator />
 

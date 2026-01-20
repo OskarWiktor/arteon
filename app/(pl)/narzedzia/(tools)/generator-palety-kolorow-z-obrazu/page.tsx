@@ -9,6 +9,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
   title: 'Wyciągnij kolory ze zdjęcia lub logo',
@@ -67,7 +68,14 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzie' }} third={{ href: `/narzedzia/generator-palet-kolorow-online`, label: 'Wyciągnij kolory ze zdjęcia lub logo' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense
+          adClient="ca-pub-7845947936813012"
+          adSlot="7551147298"
+          adFormat="fixed"
+          width={728}
+          height={90}
+          className="my-3"
+        />
 
         <PaletteExtractor />
 

@@ -9,6 +9,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
   title: 'Zamień zdjęcia JPG i PNG na lżejszy format WebP',
@@ -70,7 +71,14 @@ export default function Page() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense
+          adClient="ca-pub-7845947936813012"
+          adSlot="7551147298"
+          adFormat="fixed"
+          width={728}
+          height={90}
+          className="my-3"
+        />
 
         <JpgPngToWebp />
 
