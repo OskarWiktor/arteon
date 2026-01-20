@@ -77,7 +77,9 @@ export default function Page() {
         <AdSense
           adClient="ca-pub-7845947936813012"
           adSlot="7551147298"
-          adFormat="horizontal"
+          adFormat="fixed"
+          width={728}
+          height={90}
           className="my-3"
         />
 

@@ -5,10 +5,10 @@ import { useEffect, useRef } from 'react';
 export interface AdSenseProps {
   adClient: string;
   adSlot: string;
-  adFormat?: 'auto' | 'horizontal' | 'vertical' | 'rectangle';
-  fullWidthResponsive?: boolean;
+  adFormat?: 'auto' | 'fixed';
+  width?: number;
+  height?: number;
   className?: string;
-  style?: React.CSSProperties;
 }
 
 declare global {
@@ -17,14 +17,7 @@ declare global {
   }
 }
 
-const CONTAINER_STYLES: Record<string, React.CSSProperties> = {
-  auto: {},
-  horizontal: { maxHeight: '90px', overflow: 'hidden' },
-  vertical: { maxWidth: '160px', maxHeight: '600px', overflow: 'hidden' },
-  rectangle: { maxWidth: '336px', maxHeight: '280px', overflow: 'hidden' },
-};
-
-export default function AdSense({ adClient, adSlot, adFormat = 'auto', fullWidthResponsive = true, className = '', style }: AdSenseProps) {
+export default function AdSense({ adClient, adSlot, adFormat = 'auto', width, height, className = '' }: AdSenseProps) {
   const adRef = useRef<HTMLModElement>(null);
   const isAdPushed = useRef(false);
 
@@ -39,18 +32,21 @@ export default function AdSense({ adClient, adSlot, adFormat = 'auto', fullWidth
     }
   }, []);
 
-  const containerStyle = CONTAINER_STYLES[adFormat] || CONTAINER_STYLES.auto;
+  const isFixed = adFormat === 'fixed' && width && height;
+
+  const insStyle: React.CSSProperties = isFixed
+    ? { display: 'inline-block', width: `${width}px`, height: `${height}px` }
+    : { display: 'block' };
 
   return (
-    <div className={className} style={containerStyle}>
+    <div className={className}>
       <ins
         ref={adRef}
         className="adsbygoogle"
-        style={style ?? { display: 'block' }}
+        style={insStyle}
         data-ad-client={adClient}
         data-ad-slot={adSlot}
-        data-ad-format="auto"
-        data-full-width-responsive={fullWidthResponsive ? 'true' : 'false'}
+        {...(!isFixed && { 'data-ad-format': 'auto', 'data-full-width-responsive': 'true' })}
       />
     </div>
   );
