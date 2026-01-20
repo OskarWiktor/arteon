@@ -115,11 +115,10 @@ export default function Page() {
         <Gap size="xs" />
 
         <SectionInfo title="Policz słowa i sprawdź długość tekstu">
-          <p className="text-mid">
-            Wklej tekst, a narzędzie policzy słowa, znaki i akapity. Zobaczysz, ile minut zajmie czytanie i czy długość pasuje do typu strony, który wybierzesz.
-          </p>
+          <p className="text-mid">Wklej tekst, a narzędzie policzy słowa, znaki i akapity. Zobaczysz, ile minut zajmie czytanie i czy długość pasuje do typu strony, który wybierzesz.</p>
           <p className="text-mid mt-3">
-            Każdy typ strony ma inny cel - opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma. Licznik pokazuje zakresy dla każdego z tych typów oparte na analizach treści, które dobrze się pozycjonują.
+            Każdy typ strony ma inny cel - opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma. Licznik pokazuje zakresy dla
+            każdego z tych typów oparte na analizach treści, które dobrze się pozycjonują.
           </p>
         </SectionInfo>
 
@@ -178,7 +177,8 @@ export default function Page() {
 
         <SectionInfo title="Ile słów powinien mieć tekst?" btnOne="Zobacz pełne zalecenia" btnOneLink="/narzedzia/licznik-slow-i-znakow/instrukcja">
           <p className="text-mid mb-4">
-            Poniższe zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Długość tekstu sama w sobie nie wpływa na pozycję w Google - liczy się to, czy treść odpowiada na pytania czytelnika.
+            Poniższe zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Długość tekstu sama w sobie nie wpływa na pozycję w Google - liczy się to, czy treść
+            odpowiada na pytania czytelnika.
           </p>
           <div className="overflow-x-auto">
             <table className="text-mid w-full text-left">

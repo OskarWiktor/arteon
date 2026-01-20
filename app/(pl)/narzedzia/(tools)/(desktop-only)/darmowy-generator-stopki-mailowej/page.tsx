@@ -16,11 +16,13 @@ import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej online - stwórz podpis email HTML',
-  description: 'Darmowy generator stopki mailowej po polsku. Stwórz profesjonalny podpis email HTML bez rejestracji. Dodaj dane kontaktowe, logo, media społecznościowe i skopiuj do Gmail lub Outlook.',
+  description:
+    'Darmowy generator stopki mailowej po polsku. Stwórz profesjonalny podpis email HTML bez rejestracji. Dodaj dane kontaktowe, logo, media społecznościowe i skopiuj do Gmail lub Outlook.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej') },
   openGraph: {
     title: 'Darmowy generator stopki mailowej online - stwórz podpis email HTML',
-    description: 'Darmowy generator stopki mailowej po polsku. Stwórz profesjonalny podpis email HTML bez rejestracji. Dodaj dane kontaktowe, logo, media społecznościowe i skopiuj do Gmail lub Outlook.',
+    description:
+      'Darmowy generator stopki mailowej po polsku. Stwórz profesjonalny podpis email HTML bez rejestracji. Dodaj dane kontaktowe, logo, media społecznościowe i skopiuj do Gmail lub Outlook.',
     url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
     type: 'website',
     images: [
@@ -187,11 +189,7 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo
-          title="Jak wkleić stopkę mailową do Gmail lub Outlook?"
-          btnOne="Zobacz szczegółową instrukcję"
-          btnOneLink="/narzedzia/darmowy-generator-stopki-mailowej/instrukcja"
-        >
+        <SectionInfo title="Jak wkleić stopkę mailową do Gmail lub Outlook?" btnOne="Zobacz szczegółową instrukcję" btnOneLink="/narzedzia/darmowy-generator-stopki-mailowej/instrukcja">
           <p className="text-mid">
             Kliknij przycisk <strong>Kopiuj stopkę (Gmail / Outlook)</strong> pod podglądem. Stopka zostanie skopiowana do schowka jako sformatowany HTML.
           </p>
@@ -243,13 +241,11 @@ export default function Page() {
           items={[
             {
               question: 'Czy narzędzie jest naprawdę darmowe?',
-              answer:
-                'Tak. Generator jest w pełni darmowy, bez ukrytych opłat, bez limitu użycia i bez rejestracji. Możesz tworzyć dowolną liczbę stopek.',
+              answer: 'Tak. Generator jest w pełni darmowy, bez ukrytych opłat, bez limitu użycia i bez rejestracji. Możesz tworzyć dowolną liczbę stopek.',
             },
             {
               question: 'Czy muszę się rejestrować?',
-              answer:
-                'Nie. Generator nie wymaga logowania ani rejestracji. Po prostu otwórz stronę i zacznij tworzyć stopkę.',
+              answer: 'Nie. Generator nie wymaga logowania ani rejestracji. Po prostu otwórz stronę i zacznij tworzyć stopkę.',
             },
             {
               question: 'Czy moje dane są zapisywane na serwerze?',
@@ -263,8 +259,7 @@ export default function Page() {
             },
             {
               question: 'Czy mogę dodać logo firmy?',
-              answer:
-                'Tak. W zakładce Dane wklej adres URL do obrazu (logo lub zdjęcie profilowe). Obraz powinien być kwadratowy (min. 120×120 px) i publicznie dostępny w internecie.',
+              answer: 'Tak. W zakładce Dane wklej adres URL do obrazu (logo lub zdjęcie profilowe). Obraz powinien być kwadratowy (min. 120×120 px) i publicznie dostępny w internecie.',
             },
             {
               question: 'Jak skopiować stopkę do programu pocztowego?',

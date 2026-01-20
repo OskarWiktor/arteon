@@ -34,8 +34,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak używać licznika słów i znaków',
-  description:
-    'Sprawdź długość tekstu i oceń, czy jest odpowiednia dla danego typu strony. Dowiedz się, ile słów powinien mieć opis produktu, strona usługi, artykuł blogowy czy poradnik.',
+  description: 'Sprawdź długość tekstu i oceń, czy jest odpowiednia dla danego typu strony. Dowiedz się, ile słów powinien mieć opis produktu, strona usługi, artykuł blogowy czy poradnik.',
   url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow/instrukcja'),
   totalTime: 'PT2M',
   step: [
@@ -124,10 +123,12 @@ export default function Page() {
 
         <SectionInfo title="Po co liczyć słowa na stronie?">
           <p className="text-mid">
-            Licznik słów pomaga zorientować się, gdzie znajduje się tekst względem typowych treści danego typu. Każdy typ strony ma inny cel i inną strukturę - opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma.
+            Licznik słów pomaga zorientować się, gdzie znajduje się tekst względem typowych treści danego typu. Każdy typ strony ma inny cel i inną strukturę - opis produktu odpowiada na pytania
+            kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma.
           </p>
           <p className="text-mid mt-3">
-            Długość tekstu sama w sobie nie wpływa na pozycję w Google. Wyszukiwarka ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.
+            Długość tekstu sama w sobie nie wpływa na pozycję w Google. Wyszukiwarka ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Zakresy w narzędziu opierają
+            się na analizach treści, które dobrze się pozycjonują.
           </p>
           <p className="text-mid mt-3">Jeśli tekst odpowiada na pytania czytelnika i każdy akapit wnosi wartość, długość jest odpowiednia niezależnie od wyniku w liczniku.</p>
         </SectionInfo>
@@ -135,38 +136,42 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Typy stron i zakresy słów">
-          <p className="text-mid mb-4">
-            Zakresy opierają się na analizach SEO i praktykach tworzenia treści. Długość zależy od złożoności tematu i pytań, na które tekst ma odpowiedzieć.
-          </p>
+          <p className="text-mid mb-4">Zakresy opierają się na analizach SEO i praktykach tworzenia treści. Długość zależy od złożoności tematu i pytań, na które tekst ma odpowiedzieć.</p>
 
           <h3 className="h4 mt-6 mb-2">Opis produktu (80–400 słów)</h3>
           <p className="text-mid">
-            Prosty produkt (np. kubek, długopis) wymaga 80-150 słów - wystarczy podać materiał, wymiary i przeznaczenie. Złożony produkt (np. laptop, sprzęt AGD) wymaga 300-400 słów, bo kupujący ma więcej pytań: o specyfikację, kompatybilność, gwarancję, porównanie z innymi modelami.
+            Prosty produkt (np. kubek, długopis) wymaga 80-150 słów - wystarczy podać materiał, wymiary i przeznaczenie. Złożony produkt (np. laptop, sprzęt AGD) wymaga 300-400 słów, bo kupujący ma
+            więcej pytań: o specyfikację, kompatybilność, gwarancję, porównanie z innymi modelami.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Strona usługi (500–1500 słów)</h3>
           <p className="text-mid">
-            Lokalna usługa (np. hydraulik, fryzjer) wymaga 500-700 słów - zakres prac, cennik orientacyjny, obszar działania. Usługa B2B z procesem (np. wdrożenie systemu, audyt) wymaga 1200-1500 słów, bo klient chce znać etapy, terminy, co dostanie na każdym kroku.
+            Lokalna usługa (np. hydraulik, fryzjer) wymaga 500-700 słów - zakres prac, cennik orientacyjny, obszar działania. Usługa B2B z procesem (np. wdrożenie systemu, audyt) wymaga 1200-1500
+            słów, bo klient chce znać etapy, terminy, co dostanie na każdym kroku.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Strona główna (400–1000 słów)</h3>
           <p className="text-mid">
-            Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej do podstron. Tekst ma wspierać nawigację, nie zastępować podstron usług czy ofert. 400-600 słów wystarcza dla prostej firmy, 800-1000 słów dla firmy z wieloma usługami i sekcjami.
+            Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej do podstron. Tekst ma wspierać nawigację, nie zastępować podstron usług czy ofert. 400-600 słów wystarcza dla
+            prostej firmy, 800-1000 słów dla firmy z wieloma usługami i sekcjami.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Strona ofertowa (600–2500 słów)</h3>
           <p className="text-mid">
-            Prosta oferta (np. jeden produkt, jasna cena) wymaga 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów, odpowiedzi na obiekcje i budowania zaufania wymaga 1500-2500 słów. Im większa decyzja zakupowa, tym więcej pytań ma potencjalny klient.
+            Prosta oferta (np. jeden produkt, jasna cena) wymaga 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów, odpowiedzi na obiekcje i budowania zaufania wymaga 1500-2500 słów. Im
+            większa decyzja zakupowa, tym więcej pytań ma potencjalny klient.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Artykuł blogowy (1200–3000 słów)</h3>
           <p className="text-mid">
-            Odpowiedź na proste pytanie (np. "Czym jest X?") wymaga 1200-1800 słów - definicja, wyjaśnienie, przykłady. Kompleksowe zagadnienie z wieloma aspektami (np. "Jak wybrać X? Porównanie opcji") wymaga 2000-3000 słów, bo temat ma więcej warstw.
+            Odpowiedź na proste pytanie (np. "Czym jest X?") wymaga 1200-1800 słów - definicja, wyjaśnienie, przykłady. Kompleksowe zagadnienie z wieloma aspektami (np. "Jak wybrać X? Porównanie
+            opcji") wymaga 2000-3000 słów, bo temat ma więcej warstw.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Poradnik / przewodnik (2500–6000 słów)</h3>
           <p className="text-mid">
-            Wąski temat (np. "Jak skonfigurować X") wymaga 2500-3500 słów - kroki, przykłady, typowe problemy. Szeroki temat z wieloma krokami i wariantami (np. "Kompletny przewodnik po X") wymaga 4000-6000 słów, bo każdy aspekt wymaga osobnego omówienia.
+            Wąski temat (np. "Jak skonfigurować X") wymaga 2500-3500 słów - kroki, przykłady, typowe problemy. Szeroki temat z wieloma krokami i wariantami (np. "Kompletny przewodnik po X") wymaga
+            4000-6000 słów, bo każdy aspekt wymaga osobnego omówienia.
           </p>
         </SectionInfo>
 
@@ -228,7 +233,8 @@ export default function Page() {
               <strong className="text-emerald-700">Dobra długość</strong> (zielony) - tekst mieści się w orientacyjnym zakresie dla wybranego typu strony.
             </li>
             <li>
-              <strong className="text-amber-700">Poniżej zakresu</strong> (żółty) - tekst jest krótszy niż typowy dla tego typu strony. Jeśli odpowiada na pytania czytelnika, długość może być odpowiednia.
+              <strong className="text-amber-700">Poniżej zakresu</strong> (żółty) - tekst jest krótszy niż typowy dla tego typu strony. Jeśli odpowiada na pytania czytelnika, długość może być
+              odpowiednia.
             </li>
             <li>
               <strong className="text-red-700">Powyżej zakresu</strong> (czerwony) - tekst jest dłuższy niż typowy. Jeśli każdy akapit wnosi nową informację, długość jest uzasadniona.

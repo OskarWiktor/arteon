@@ -19,19 +19,19 @@ Ten dokument zawiera wytyczne dotyczące **wszystkich treści** w repo Arteon:
 
 ### Co dotyczy wszystkich treści?
 
-| Sekcja | Dotyczy |
-|--------|----------|
-| **2. Ton i styl** | ✅ Wszystkich treści |
-| **4a. Nasycenie fraz kluczowych w nagłówkach** | ✅ Wszystkich treści ze strukturą nagłówków |
-| **6. Źródła i prawdziwość** | ✅ Wszystkich treści |
-| **7. Balans DIY vs oferta** | ✅ Wszystkich treści |
-| **8. CTA i przyciski** | ✅ Wszystkich treści |
-| **9. Zakazy stylistyczne** | ✅ Wszystkich treści |
-| **1. Intencja wyszukiwania** | ✅ Wszystkich treści (w uproszczonej formie dla krótkich treści) |
-| **3. Struktura artykułów** | ⚠️ Tylko artykułów blogowych |
-| **4. Zasady techniczne dla artykułów** | ⚠️ Tylko artykułów blogowych |
-| **5. Linkowanie** | ⚠️ Wymagania ilościowe tylko dla artykułów, zasady ogólne dla wszystkich |
-| **10. Checklista** | ⚠️ Część punktów tylko dla artykułów |
+| Sekcja                                         | Dotyczy                                                                  |
+| ---------------------------------------------- | ------------------------------------------------------------------------ |
+| **2. Ton i styl**                              | ✅ Wszystkich treści                                                     |
+| **4a. Nasycenie fraz kluczowych w nagłówkach** | ✅ Wszystkich treści ze strukturą nagłówków                              |
+| **6. Źródła i prawdziwość**                    | ✅ Wszystkich treści                                                     |
+| **7. Balans DIY vs oferta**                    | ✅ Wszystkich treści                                                     |
+| **8. CTA i przyciski**                         | ✅ Wszystkich treści                                                     |
+| **9. Zakazy stylistyczne**                     | ✅ Wszystkich treści                                                     |
+| **1. Intencja wyszukiwania**                   | ✅ Wszystkich treści (w uproszczonej formie dla krótkich treści)         |
+| **3. Struktura artykułów**                     | ⚠️ Tylko artykułów blogowych                                             |
+| **4. Zasady techniczne dla artykułów**         | ⚠️ Tylko artykułów blogowych                                             |
+| **5. Linkowanie**                              | ⚠️ Wymagania ilościowe tylko dla artykułów, zasady ogólne dla wszystkich |
+| **10. Checklista**                             | ⚠️ Część punktów tylko dla artykułów                                     |
 
 ### Co NIE dotyczy innych treści niż artykuły?
 
@@ -54,7 +54,7 @@ Następujące wymagania dotyczą **tylko artykułów blogowych**:
 2. [Ton i styl](#2-ton-i-styl) - **dotyczy wszystkich treści**
 3. [Struktura artykułów](#3-struktura-artykułów) - tylko artykuły
 4. [Zasady techniczne dla artykułów](#4-zasady-techniczne-dla-artykułów) - tylko artykuły
-4a. [Nasycenie fraz kluczowych w nagłówkach H2/H3](#4a-nasycenie-fraz-kluczowych-w-nagłówkach-h2h3) - **dotyczy wszystkich treści**
+   4a. [Nasycenie fraz kluczowych w nagłówkach H2/H3](#4a-nasycenie-fraz-kluczowych-w-nagłówkach-h2h3) - **dotyczy wszystkich treści**
 5. [Linkowanie](#5-linkowanie)
 6. [Źródła i prawdziwość](#6-źródła-i-prawdziwość) - **dotyczy wszystkich treści**
 7. [Balans DIY vs oferta](#7-balans-diy-vs-oferta) - **dotyczy wszystkich treści**
@@ -284,6 +284,7 @@ Format: `<span data-tooltip='Wyjaśnienie terminu'>termin</span>`
 1. **Zidentyfikuj główne frazy strony** - sprawdź tytuł, meta description, URL. To są Twoje frazy bazowe.
 
 2. **Użyj odmian i synonimów** - nie powtarzaj tej samej frazy. Używaj:
+
    - Odmian gramatycznych (stopka mailowa / stopki mailowej / stopkę mailową)
    - Synonimów (generator / kreator / narzędzie)
    - Wariantów (stopka mailowa / podpis email / sygnaturka)
@@ -293,22 +294,22 @@ Format: `<span data-tooltip='Wyjaśnienie terminu'>termin</span>`
 
 ### Przykłady transformacji nagłówków
 
-| ❌ Przed (zbyt ogólne) | ✅ Po (z frazą kluczową) |
-|------------------------|--------------------------|
-| "Jak korzystać z narzędzia?" | "Jak korzystać z generatora stopki mailowej?" |
-| "Co możesz skonfigurować?" | "Co możesz skonfigurować w generatorze podpisu email?" |
-| "Dla kogo jest to narzędzie?" | "Dla kogo jest generator stopki mailowej?" |
-| "Dlaczego warto?" | "Dlaczego warto mieć profesjonalną stopkę mailową?" |
-| "Jak wkleić stopkę?" | "Jak wkleić stopkę mailową do Gmail lub Outlook?" |
-| "Najczęstsze pytania" | "Najczęstsze pytania o generator stopki mailowej" |
+| ❌ Przed (zbyt ogólne)        | ✅ Po (z frazą kluczową)                               |
+| ----------------------------- | ------------------------------------------------------ |
+| "Jak korzystać z narzędzia?"  | "Jak korzystać z generatora stopki mailowej?"          |
+| "Co możesz skonfigurować?"    | "Co możesz skonfigurować w generatorze podpisu email?" |
+| "Dla kogo jest to narzędzie?" | "Dla kogo jest generator stopki mailowej?"             |
+| "Dlaczego warto?"             | "Dlaczego warto mieć profesjonalną stopkę mailową?"    |
+| "Jak wkleić stopkę?"          | "Jak wkleić stopkę mailową do Gmail lub Outlook?"      |
+| "Najczęstsze pytania"         | "Najczęstsze pytania o generator stopki mailowej"      |
 
 ### Czego unikać (keyword stuffing)
 
-| ❌ Źle (keyword stuffing) | ✅ Dobrze (naturalne) |
-|---------------------------|----------------------|
-| "Generator stopki mailowej - jak używać generatora stopki mailowej" | "Jak korzystać z generatora stopki mailowej?" |
-| "Darmowy generator stopki mailowej online za darmo" | "Darmowy generator stopki mailowej online" |
-| "Stopka mailowa: profesjonalna stopka mailowa HTML" | "Jak stworzyć profesjonalną stopkę mailową HTML?" |
+| ❌ Źle (keyword stuffing)                                           | ✅ Dobrze (naturalne)                             |
+| ------------------------------------------------------------------- | ------------------------------------------------- |
+| "Generator stopki mailowej - jak używać generatora stopki mailowej" | "Jak korzystać z generatora stopki mailowej?"     |
+| "Darmowy generator stopki mailowej online za darmo"                 | "Darmowy generator stopki mailowej online"        |
+| "Stopka mailowa: profesjonalna stopka mailowa HTML"                 | "Jak stworzyć profesjonalną stopkę mailową HTML?" |
 
 ### Zasady bezpieczeństwa
 
@@ -570,6 +571,7 @@ Jeśli odpowiedź brzmi "nie" - przepisz.
 ### Dla wszystkich treści
 
 **Ton i styl:**
+
 - [ ] Wstęp/opis zaczyna od sedna (nie od „W dzisiejszych czasach...")?
 - [ ] Każdy termin techniczny jest natychmiast wyjaśniony?
 - [ ] Brak wstawek wyobrażeniowych ("Wyobraź sobie...")?
@@ -577,32 +579,38 @@ Jeśli odpowiedź brzmi "nie" - przepisz.
 - [ ] Używam "Załóżmy..." lub "Przykład:" zamiast "Wyobraź sobie..."?
 
 **Prawdziwość:**
+
 - [ ] Każde zdanie jest prawdziwe? (żadnych domysłów)
 - [ ] Każda liczba/statystyka ma źródło z linkiem?
 - [ ] Przykłady hipotetyczne są oznaczone?
 - [ ] Wszystkie linki działają?
 
 **CTA:**
+
 - [ ] Przyciski CTA są opisowe (nie "Kontakt" tylko "Skontaktuj się z nami")?
 - [ ] Brak rekomendowania konkurencji?
 
 **Techniczne:**
+
 - [ ] Brak polskich cudzysłowów w JSON?
 
 ### Tylko dla artykułów blogowych
 
 **Intencja wyszukiwania:**
+
 - [ ] Czy określiłem intencję frazy kluczowej?
 - [ ] Czy wstęp bezpośrednio odpowiada na pytanie z tytułu?
 - [ ] Czy struktura pasuje do intencji (informacyjna/transakcyjna/porównawcza)?
 - [ ] Czy odpowiadam na pytania podrzędne, które naturalnie wynikają z głównego?
 
 **Struktura:**
+
 - [ ] Nagłówki są pytaniami prowadzącymi przez artykuł?
 - [ ] Instrukcje są ponumerowane krok po kroku?
 - [ ] Są konkretne scenariusze „jeśli X → zrób Y"?
 
 **Wymagania ilościowe:**
+
 - [ ] Excerpt ma 220-230 znaków?
 - [ ] Czas czytania 9-14 minut (1800-2800 słów)?
 - [ ] Minimum 6-8 linków wewnętrznych?
