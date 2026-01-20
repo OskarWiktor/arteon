@@ -1,5 +1,36 @@
 # Arteon - DONE TASKS
 
+## 2026-01-20
+
+- ✅ **[NAV-001] Nawigacja: tymczasowo ukryć linki do social media (Instagram, Facebook)**
+
+  - **Pliki**:
+    - `components/shared/Footer.tsx`
+    - `components/shared/navigation-types/MobileNavigation.tsx`
+    - `components/shared/Navigation.tsx` (nawigacja główna desktop)
+  - **Zakres**: Zakomentowano linki do Instagram i Facebook w stopce, nawigacji mobilnej i nawigacji desktopowej.
+  - **Powód**: Profile social media nie są jeszcze gotowe.
+  - **Przywrócenie**: Odkomentować sekcje oznaczone `NAV-001` we wszystkich 3 plikach.
+  - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
+
+- ✅ **[ADS-001] Reklamy: stworzyć reużywalny komponent AdSense i umieścić testowo nad generatorem stopki mailowej**
+
+  - **Pliki**:
+    - `components/ui/AdSense.tsx` (nowy komponent)
+    - `app/layout.tsx` (globalny skrypt AdSense w `<head>`)
+    - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/page.tsx`
+  - **Zakres**:
+    - Stworzono uniwersalny komponent `AdSense` z propsami: `adClient`, `adSlot`, `adFormat` (`'auto' | 'horizontal' | 'vertical' | 'rectangle'`), `fullWidthResponsive`, `className`, `style`.
+    - Skrypt AdSense (`adsbygoogle.js`) dodany **globalnie** w `app/layout.tsx` (w `<head>`).
+    - Dodano testową reklamę displayową (`horizontal` = pasek 90px) nad generatorem stopki mailowej.
+  - **Formaty reklam**:
+    - `auto` — domyślny, responsywny
+    - `horizontal` — pasek 90px (leaderboard)
+    - `vertical` — 160x600px (skyscraper)
+    - `rectangle` — 336x280px (medium rectangle)
+  - **Użycie**: `<AdSense adClient="ca-pub-XXX" adSlot="XXX" adFormat="horizontal" className="mb-4" />`
+  - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
+
 ## 2026-01-17
 
 - ✅ **[SEO-027] Blog: naprawa błędnych linków 404 w artykule o kanibalizacji słów kluczowych**

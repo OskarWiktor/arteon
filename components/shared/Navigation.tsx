@@ -1,13 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { RiMenuLine, RiCloseLine, RiInstagramLine, RiFacebookFill, RiSearchLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine, RiSearchLine } from 'react-icons/ri';
+// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile social media będą gotowe
+// import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import Image from 'next/image';
 
 import MobileNavigation from './navigation-types/MobileNavigation';
 import DesktopNavigation from './navigation-types/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
-import SocialIconLink from '@/components/ui/SocialIconLink';
+// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile social media będą gotowe
+// import SocialIconLink from '@/components/ui/SocialIconLink';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
@@ -69,6 +72,7 @@ export default function Navigation() {
               #MadeWithNext.js
             </a>
 
+{/* NAV-001: Tymczasowo ukryte linki do social media
             <SocialIconLink
               href="https://www.instagram.com/arteon.pl"
               label={t.instagramLabel}
@@ -81,6 +85,7 @@ export default function Navigation() {
               className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               icon={<RiFacebookFill className="h-6 w-6 text-slate-800" aria-hidden="true" />}
             />
+            */}
           </div>
 
           <div className="flex items-center gap-1 lg:hidden">

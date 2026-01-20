@@ -9,6 +9,7 @@ import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/lib/url';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
   title: 'Stwórz profesjonalną stopkę mailową HTML',
@@ -72,7 +73,13 @@ export default function Page() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+
+        <AdSense
+          adClient="ca-pub-7845947936813012"
+          adSlot="7551147298"
+          adFormat="horizontal"
+          className="my-3"
+        />
 
         <EmailSignatureGenerator />
 

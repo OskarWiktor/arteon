@@ -2,7 +2,8 @@ import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
 import Image from 'next/image';
-import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
+// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile social media będą gotowe
+// import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 const ui = {
@@ -156,6 +157,7 @@ export default function Footer() {
                   </a>
                 </p>
               </address>
+              {/* NAV-001: Tymczasowo ukryte linki do social media
               <div className="flex items-center gap-3">
                 <a
                   href="https://www.instagram.com/arteon.pl"
@@ -176,6 +178,7 @@ export default function Footer() {
                   <RiFacebookFill className="h-6 w-6 text-slate-800" aria-hidden="true" />
                 </a>
               </div>
+              */}
             </section>
 
             {/* 1.2 Witryny */}

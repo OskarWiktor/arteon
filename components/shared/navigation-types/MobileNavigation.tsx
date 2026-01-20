@@ -7,7 +7,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 import Eyebrow from '../../ui/typography/Eyebrow';
 import IconText from '../../ui/IconText';
-import SocialIconLink from '../../ui/SocialIconLink';
+// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile social media będą gotowe
+// import SocialIconLink from '../../ui/SocialIconLink';
 import { ABOUT_NAV_ITEMS_PL, LEGAL_LINKS_PL, MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
@@ -15,7 +16,9 @@ import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
-import { RiArrowDownSLine, RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
+import { RiArrowDownSLine } from 'react-icons/ri';
+// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile social media będą gotowe
+// import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
 const ui = {
   pl: {
@@ -464,6 +467,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
               <div className="mt-auto border-t border-zinc-200 pt-3">
                 <div className="flex items-center justify-between">
+                  {/* NAV-001: Tymczasowo ukryte linki do social media
                   <div className="flex items-center gap-3">
                     <SocialIconLink
                       href="https://www.instagram.com/arteon.pl"
@@ -478,6 +482,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       icon={<RiFacebookFill className="h-5 w-5 text-slate-800" aria-hidden="true" />}
                     />
                   </div>
+                  */}
 
                   <div className="flex items-center gap-2">
                     <Link
