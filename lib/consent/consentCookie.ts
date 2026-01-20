@@ -1,4 +1,9 @@
-export type ConsentState = { v: number; analytics: boolean; updatedAt: string };
+export type ConsentState = {
+  v: number;
+  analytics: boolean;
+  ads: boolean;
+  updatedAt: string;
+};
 
 const COOKIE_NAME = 'arteon_consent';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 180;

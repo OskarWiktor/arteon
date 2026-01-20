@@ -73,14 +73,6 @@ const orgJsonLd = {
       areaServed: 'Worldwide',
     },
   ],
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'ul. Jaśminowa 36',
-    addressLocality: 'Zagacie',
-    addressRegion: 'małopolskie',
-    addressCountry: 'PL',
-    postalCode: '32-070',
-  },
   areaServed: 'Worldwide',
   knowsLanguage: ['pl'],
   foundingDate: '2020',
@@ -107,6 +99,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang={locale}>
       <head>
+        {/* Google Consent Mode v2 - MUSI być PRZED wszystkimi skryptami Google (GA, AdSense) */}
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent','default',{
+              analytics_storage:'denied',
+              ad_storage:'denied',
+              ad_user_data:'denied',
+              ad_personalization:'denied',
+              wait_for_update: 500
+            });
+          `}
+        </Script>
+
         {GA_MEASUREMENT_ID && (
           <>
             <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
@@ -116,19 +123,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', '${GA_MEASUREMENT_ID}');
-              `}
-            </Script>
-
-            <Script id="ga-consent-default" strategy="beforeInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('consent','default',{
-                  analytics_storage:'denied',
-                  ad_user_data:'denied',
-                  ad_personalization:'denied',
-                  ad_storage:'denied'
-                });
               `}
             </Script>
           </>

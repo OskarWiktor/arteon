@@ -14,14 +14,14 @@ import { useTimeout } from '@/hooks/useTimeout';
 const ui = {
   pl: {
     title: 'Pliki cookie i prywatność',
-    description: 'Używamy technologii niezbędnych do działania serwisu oraz <strong>analityki</strong> do ulepszania strony. <strong>Google Analytics 4</strong> włączymy wyłącznie po Twojej zgodzie.',
+    description: 'Używamy technologii niezbędnych do działania serwisu, <strong>analityki</strong> do ulepszania strony oraz <strong>reklam</strong>. Włączymy je wyłącznie po Twojej zgodzie.',
     setPreferences: 'Ustaw preferencje',
     privacyPolicy: 'Polityka prywatności',
-    reject: 'Odrzuć',
+    reject: 'Odrzuć wszystkie',
     settings: 'Ustawienia',
-    accept: 'Akceptuj',
+    accept: 'Akceptuj wszystkie',
     panelTitle: 'Preferencje prywatności',
-    panelDescription: 'Ustawienia zgód na przetwarzanie danych w celach analitycznych.',
+    panelDescription: 'Ustawienia zgód na przetwarzanie danych.',
     categoriesLegend: 'Kategorie',
     essentialTitle: 'Niezbędne',
     essentialDescription: 'Bez nich serwis nie działa. Nie zbierają danych do marketingu.',
@@ -29,20 +29,23 @@ const ui = {
     analyticsTitle: 'Analityka (GA4)',
     analyticsDescription: 'Statystyki odwiedzin. Włącza Google Analytics 4 po Twojej zgodzie.',
     analyticsLabel: 'Włącz analitykę GA4',
+    adsTitle: 'Reklamy (Google AdSense)',
+    adsDescription: 'Personalizowane reklamy na podstawie Twoich zainteresowań.',
+    adsLabel: 'Włącz personalizowane reklamy',
     changeDecision: 'W każdej chwili możesz zmienić decyzję',
     save: 'Zapisz',
   },
 } as const;
 
-// 🔧 uproszczony typ gtag - zamiast kombinować z interfejsami Next/TS
-function updateGtag(analytics: boolean) {
-  updateGtagConsent(analytics);
+function updateGtag(analytics: boolean, ads: boolean) {
+  updateGtagConsent({ analytics, ads });
 }
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const [panel, setPanel] = useState(false);
   const [analyticsChoice, setAnalyticsChoice] = useState(false);
+  const [adsChoice, setAdsChoice] = useState(false);
 
   const dialogRef = useRef<HTMLDivElement>(null);
   const firstNativeBtnRef = useRef<HTMLButtonElement>(null);
@@ -53,7 +56,7 @@ export default function CookieConsent() {
 
   useEscapeKey((e) => {
     e.preventDefault();
-    saveAndClose({ analytics: false });
+    saveAndClose({ analytics: false, ads: false });
   }, visible);
 
   useFocusTrap(dialogRef, visible);
@@ -62,6 +65,7 @@ export default function CookieConsent() {
     const open = () => {
       const saved = readConsent();
       setAnalyticsChoice(saved?.analytics ?? false);
+      setAdsChoice(saved?.ads ?? false);
       setVisible(true);
       setPanel(true);
       focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
@@ -74,8 +78,9 @@ export default function CookieConsent() {
   useEffect(() => {
     const saved = readConsent();
     if (saved) {
-      updateGtag(saved.analytics);
-      // zakładam, że gdzieś globalnie masz zdefiniowane window.__GA_ID
+      // Migracja starych ciasteczek bez pola ads
+      const ads = saved.ads ?? false;
+      updateGtag(saved.analytics, ads);
       if (saved.analytics) {
         loadGA(window.__GA_ID);
         loadAhrefs();
@@ -88,13 +93,14 @@ export default function CookieConsent() {
     }
   }, []);
 
-  function saveAndClose(next: { analytics: boolean }) {
+  function saveAndClose(next: { analytics: boolean; ads: boolean }) {
     writeConsent({
-      v: 1,
+      v: 2,
       analytics: next.analytics,
+      ads: next.ads,
       updatedAt: new Date().toISOString(),
     });
-    updateGtag(next.analytics);
+    updateGtag(next.analytics, next.ads);
     if (next.analytics) {
       loadGA(window.__GA_ID);
       loadAhrefs();
@@ -143,7 +149,7 @@ export default function CookieConsent() {
             <div className="flex gap-2">
               <button
                 ref={firstNativeBtnRef}
-                onClick={() => saveAndClose({ analytics: false })}
+                onClick={() => saveAndClose({ analytics: false, ads: false })}
                 className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-base font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
               >
                 {t.reject}
@@ -152,7 +158,7 @@ export default function CookieConsent() {
               <Button size="small" onClick={() => setPanel(true)}>
                 {t.settings}
               </Button>
-              <Button onClick={() => saveAndClose({ analytics: true })} size="small" variant="accent">
+              <Button onClick={() => saveAndClose({ analytics: true, ads: true })} size="small" variant="accent">
                 {t.accept}
               </Button>
             </div>
@@ -186,6 +192,16 @@ export default function CookieConsent() {
                   <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" aria-label={t.analyticsLabel} checked={analyticsChoice} onChange={() => setAnalyticsChoice((v) => !v)} />
                 </div>
               </div>
+
+              <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
+                <div>
+                  <span className="text-base font-medium">{t.adsTitle}</span>
+                  <span className="text-dark ml-2 text-sm font-medium">{t.adsDescription}</span>
+                </div>
+                <div className="flex w-[24px] items-center justify-center">
+                  <input type="checkbox" className="h-4 w-4 rounded border-neutral-300" aria-label={t.adsLabel} checked={adsChoice} onChange={() => setAdsChoice((v) => !v)} />
+                </div>
+              </div>
             </fieldset>
 
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -193,7 +209,7 @@ export default function CookieConsent() {
 
               <div className="flex gap-2">
                 <button
-                  onClick={() => saveAndClose({ analytics: false })}
+                  onClick={() => saveAndClose({ analytics: false, ads: false })}
                   className="text-dark inline-flex w-fit items-center rounded-2xl border border-slate-300 bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
                 >
                   {t.reject}
@@ -202,6 +218,7 @@ export default function CookieConsent() {
                   onClick={() =>
                     saveAndClose({
                       analytics: analyticsChoice,
+                      ads: adsChoice,
                     })
                   }
                   size="small"
