@@ -1,4 +1,4 @@
-// site scaffold only — no production behavior changes while flag disabled
+// site scaffold only - no production behavior changes while flag disabled
 
 import type { SiteKey } from './pl';
 

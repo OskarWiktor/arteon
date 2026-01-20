@@ -506,7 +506,7 @@ Uwagi dot. środowiska:
 
 ## `useSearch` (`hooks/useSearch.ts`)
 
-- **Co robi**: Obsługuje logikę wyszukiwania w site search — debounce zapytań, filtrowanie wyników i grupowanie po kategoriach.
+- **Co robi**: Obsługuje logikę wyszukiwania w site search - debounce zapytań, filtrowanie wyników i grupowanie po kategoriach.
 - **Sygnatura**: `useSearch(options?: { debounceMs?: number; limit?: number })`
 - **Parametry**:
   - **`debounceMs`**: czas debounce w ms (domyślnie 150).
@@ -520,6 +520,6 @@ Uwagi dot. środowiska:
   - **`hasResults`**: `boolean` - czy są jakiekolwiek wyniki.
   - **`clearSearch`**: `() => void` - czyści zapytanie i wyniki.
 - **Zależności**:
-  - `lib/search/searchIndex.ts` — `searchItems`, `groupSearchResults`, typy.
+  - `lib/search/searchIndex.ts` - `searchItems`, `groupSearchResults`, typy.
 - **Side effecty**:
   - **[timery]**: debounce przez `useDebouncedEffect`.

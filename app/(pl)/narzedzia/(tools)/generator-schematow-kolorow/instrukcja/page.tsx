@@ -122,7 +122,7 @@ export default function Page() {
             Paleta kolorów to zestaw barw, które do siebie pasują i tworzą spójną całość. Dobrze dobrana paleta sprawia, że strona, grafika czy marka wygląda profesjonalnie i przyjemnie dla oka.
           </p>
           <p className="text-mid mt-3">
-            Generator tworzy palety automatycznie na podstawie jednego koloru bazowego — podajesz jeden kolor (np. kolor Twojego logo), a narzędzie generuje kilka różnych palet: monochromatyczną,
+            Generator tworzy palety automatycznie na podstawie jednego koloru bazowego - podajesz jeden kolor (np. kolor Twojego logo), a narzędzie generuje kilka różnych palet: monochromatyczną,
             analogiczną, komplementarną i inne, zgodnie z teorią koloru.
           </p>
         </SectionInfo>

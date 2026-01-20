@@ -77,19 +77,19 @@ const faqItems = [
   {
     question: 'Dlaczego zakresy słów są takie szerokie?',
     answer:
-      'Ten sam typ strony może wymagać różnej długości w zależności od złożoności tematu. Opis prostego produktu (np. kubek) to 80-150 słów — wystarczy podać materiał, pojemność i przeznaczenie. Opis laptopa to 300-400 słów, bo kupujący pyta o procesor, pamięć, ekran, baterię. Podobnie z usługami: lokalna usługa hydraulika to 500-700 słów, a kompleksowa usługa wdrożenia systemu B2B to 1200-1500 słów.',
-    answerSchemaText: 'Szeroki zakres pozwala dopasować długość do kontekstu — prosty produkt wymaga mniej słów niż złożony.',
+      'Ten sam typ strony może wymagać różnej długości w zależności od złożoności tematu. Opis prostego produktu (np. kubek) to 80-150 słów - wystarczy podać materiał, pojemność i przeznaczenie. Opis laptopa to 300-400 słów, bo kupujący pyta o procesor, pamięć, ekran, baterię. Podobnie z usługami: lokalna usługa hydraulika to 500-700 słów, a kompleksowa usługa wdrożenia systemu B2B to 1200-1500 słów.',
+    answerSchemaText: 'Szeroki zakres pozwala dopasować długość do kontekstu - prosty produkt wymaga mniej słów niż złożony.',
   },
   {
     question: 'Jak interpretować ocenę "za krótki" lub "za długi"?',
     answer:
-      'Ocena pokazuje, gdzie tekst znajduje się względem typowych treści danego typu. Jeśli tekst jest oznaczony jako "za krótki", ale odpowiada na wszystkie pytania czytelnika — długość jest odpowiednia. Jeśli jest "za długi", ale każdy akapit wnosi nową informację — długość jest uzasadniona.',
+      'Ocena pokazuje, gdzie tekst znajduje się względem typowych treści danego typu. Jeśli tekst jest oznaczony jako "za krótki", ale odpowiada na wszystkie pytania czytelnika - długość jest odpowiednia. Jeśli jest "za długi", ale każdy akapit wnosi nową informację - długość jest uzasadniona.',
     answerSchemaText: 'Ocena pokazuje pozycję tekstu względem typowych treści. Jeśli tekst odpowiada na pytania czytelnika, długość jest odpowiednia.',
   },
   {
     question: 'Jak licznik oblicza czas czytania?',
     answer:
-      'Narzędzie dzieli liczbę słów przez 200 — to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy — szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.',
+      'Narzędzie dzieli liczbę słów przez 200 - to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy - szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.',
     answerSchemaText: 'Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna dla typowego tekstu.',
   },
   {
@@ -124,7 +124,7 @@ export default function Page() {
 
         <SectionInfo title="Po co liczyć słowa na stronie?">
           <p className="text-mid">
-            Licznik słów pomaga zorientować się, gdzie znajduje się tekst względem typowych treści danego typu. Każdy typ strony ma inny cel i inną strukturę — opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma.
+            Licznik słów pomaga zorientować się, gdzie znajduje się tekst względem typowych treści danego typu. Każdy typ strony ma inny cel i inną strukturę - opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma.
           </p>
           <p className="text-mid mt-3">
             Długość tekstu sama w sobie nie wpływa na pozycję w Google. Wyszukiwarka ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.
@@ -141,12 +141,12 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-2">Opis produktu (80–400 słów)</h3>
           <p className="text-mid">
-            Prosty produkt (np. kubek, długopis) wymaga 80-150 słów — wystarczy podać materiał, wymiary i przeznaczenie. Złożony produkt (np. laptop, sprzęt AGD) wymaga 300-400 słów, bo kupujący ma więcej pytań: o specyfikację, kompatybilność, gwarancję, porównanie z innymi modelami.
+            Prosty produkt (np. kubek, długopis) wymaga 80-150 słów - wystarczy podać materiał, wymiary i przeznaczenie. Złożony produkt (np. laptop, sprzęt AGD) wymaga 300-400 słów, bo kupujący ma więcej pytań: o specyfikację, kompatybilność, gwarancję, porównanie z innymi modelami.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Strona usługi (500–1500 słów)</h3>
           <p className="text-mid">
-            Lokalna usługa (np. hydraulik, fryzjer) wymaga 500-700 słów — zakres prac, cennik orientacyjny, obszar działania. Usługa B2B z procesem (np. wdrożenie systemu, audyt) wymaga 1200-1500 słów, bo klient chce znać etapy, terminy, co dostanie na każdym kroku.
+            Lokalna usługa (np. hydraulik, fryzjer) wymaga 500-700 słów - zakres prac, cennik orientacyjny, obszar działania. Usługa B2B z procesem (np. wdrożenie systemu, audyt) wymaga 1200-1500 słów, bo klient chce znać etapy, terminy, co dostanie na każdym kroku.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Strona główna (400–1000 słów)</h3>
@@ -161,12 +161,12 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-2">Artykuł blogowy (1200–3000 słów)</h3>
           <p className="text-mid">
-            Odpowiedź na proste pytanie (np. "Czym jest X?") wymaga 1200-1800 słów — definicja, wyjaśnienie, przykłady. Kompleksowe zagadnienie z wieloma aspektami (np. "Jak wybrać X? Porównanie opcji") wymaga 2000-3000 słów, bo temat ma więcej warstw.
+            Odpowiedź na proste pytanie (np. "Czym jest X?") wymaga 1200-1800 słów - definicja, wyjaśnienie, przykłady. Kompleksowe zagadnienie z wieloma aspektami (np. "Jak wybrać X? Porównanie opcji") wymaga 2000-3000 słów, bo temat ma więcej warstw.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Poradnik / przewodnik (2500–6000 słów)</h3>
           <p className="text-mid">
-            Wąski temat (np. "Jak skonfigurować X") wymaga 2500-3500 słów — kroki, przykłady, typowe problemy. Szeroki temat z wieloma krokami i wariantami (np. "Kompletny przewodnik po X") wymaga 4000-6000 słów, bo każdy aspekt wymaga osobnego omówienia.
+            Wąski temat (np. "Jak skonfigurować X") wymaga 2500-3500 słów - kroki, przykłady, typowe problemy. Szeroki temat z wieloma krokami i wariantami (np. "Kompletny przewodnik po X") wymaga 4000-6000 słów, bo każdy aspekt wymaga osobnego omówienia.
           </p>
         </SectionInfo>
 
@@ -206,32 +206,32 @@ export default function Page() {
           <h3 className="h4 mb-2">Statystyki tekstu</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Słowa</strong> — łączna liczba słów w tekście. To główny wskaźnik długości, na którym opiera się ocena.
+              <strong>Słowa</strong> - łączna liczba słów w tekście. To główny wskaźnik długości, na którym opiera się ocena.
             </li>
             <li>
-              <strong>Znaki (ze spacjami)</strong> — wszystkie znaki łącznie ze spacjami. Przydatne przy limitach w CMS (np. opis produktu na Allegro ma limit 4000 znaków).
+              <strong>Znaki (ze spacjami)</strong> - wszystkie znaki łącznie ze spacjami. Przydatne przy limitach w CMS (np. opis produktu na Allegro ma limit 4000 znaków).
             </li>
             <li>
-              <strong>Znaki (bez spacji)</strong> — tylko litery, cyfry i interpunkcja. Czasem wymagane przez drukarnie lub przy rozliczeniach za tekst.
+              <strong>Znaki (bez spacji)</strong> - tylko litery, cyfry i interpunkcja. Czasem wymagane przez drukarnie lub przy rozliczeniach za tekst.
             </li>
             <li>
-              <strong>Akapity</strong> — ile bloków tekstu oddzielonych pustymi liniami. Pomaga ocenić, czy tekst jest dobrze podzielony na sekcje.
+              <strong>Akapity</strong> - ile bloków tekstu oddzielonych pustymi liniami. Pomaga ocenić, czy tekst jest dobrze podzielony na sekcje.
             </li>
             <li>
-              <strong>Czas czytania</strong> — szacowany czas przy 200 słów na minutę. Pomaga zorientować się, ile czasu czytelnik spędzi z tekstem.
+              <strong>Czas czytania</strong> - szacowany czas przy 200 słów na minutę. Pomaga zorientować się, ile czasu czytelnik spędzi z tekstem.
             </li>
           </ul>
 
           <h3 className="h4 mt-6 mb-2">Statusy oceny</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong className="text-emerald-700">Dobra długość</strong> (zielony) — tekst mieści się w orientacyjnym zakresie dla wybranego typu strony.
+              <strong className="text-emerald-700">Dobra długość</strong> (zielony) - tekst mieści się w orientacyjnym zakresie dla wybranego typu strony.
             </li>
             <li>
-              <strong className="text-amber-700">Poniżej zakresu</strong> (żółty) — tekst jest krótszy niż typowy dla tego typu strony. Jeśli odpowiada na pytania czytelnika, długość może być odpowiednia.
+              <strong className="text-amber-700">Poniżej zakresu</strong> (żółty) - tekst jest krótszy niż typowy dla tego typu strony. Jeśli odpowiada na pytania czytelnika, długość może być odpowiednia.
             </li>
             <li>
-              <strong className="text-red-700">Powyżej zakresu</strong> (czerwony) — tekst jest dłuższy niż typowy. Jeśli każdy akapit wnosi nową informację, długość jest uzasadniona.
+              <strong className="text-red-700">Powyżej zakresu</strong> (czerwony) - tekst jest dłuższy niż typowy. Jeśli każdy akapit wnosi nową informację, długość jest uzasadniona.
             </li>
           </ul>
           <p className="text-mid mt-4">
@@ -243,7 +243,7 @@ export default function Page() {
 
         <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do licznika słów" btnOneLink="/narzedzia/licznik-slow-i-znakow" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa licznik, możesz sprawdzić długość swoich tekstów. Jeśli potrzebujesz pomocy z tworzeniem treści na stronę, blog czy sklep —{' '}
+            Teraz, gdy wiesz jak działa licznik, możesz sprawdzić długość swoich tekstów. Jeśli potrzebujesz pomocy z tworzeniem treści na stronę, blog czy sklep -{' '}
             <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/tworzenie-tresci">profesjonalnym tworzeniem treści</Link>, które pozycjonują się w Google i przekonują
             do działania.
           </p>

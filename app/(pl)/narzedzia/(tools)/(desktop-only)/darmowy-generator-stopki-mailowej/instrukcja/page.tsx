@@ -143,40 +143,40 @@ export default function Page() {
           <h3 className="h4 mt-6 mb-3">Pola w zakładce Dane</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Linia nad imieniem</strong> — dodatkowy tekst wyświetlany nad imieniem i nazwiskiem. Możesz tu wpisać nazwę firmy, hasło lub slogan.
+              <strong>Linia nad imieniem</strong> - dodatkowy tekst wyświetlany nad imieniem i nazwiskiem. Możesz tu wpisać nazwę firmy, hasło lub slogan.
             </li>
             <li>
-              <strong>Avatar / logo (URL obrazu)</strong> — adres URL do zdjęcia profilowego lub logo firmy. Obraz powinien być kwadratowy (min. 120x120 px) i publicznie dostępny w internecie.
+              <strong>Avatar / logo (URL obrazu)</strong> - adres URL do zdjęcia profilowego lub logo firmy. Obraz powinien być kwadratowy (min. 120x120 px) i publicznie dostępny w internecie.
             </li>
             <li>
-              <strong>Imię i nazwisko</strong> — pole wymagane. Wpisz swoje pełne imię i nazwisko.
+              <strong>Imię i nazwisko</strong> - pole wymagane. Wpisz swoje pełne imię i nazwisko.
             </li>
             <li>
-              <strong>Tag przy imieniu</strong> — krótki tekst obok imienia, np. zaimki lub skrócone stanowisko.
+              <strong>Tag przy imieniu</strong> - krótki tekst obok imienia, np. zaimki lub skrócone stanowisko.
             </li>
             <li>
-              <strong>Stanowisko</strong> — Twoja rola w firmie, np. Kierownik sprzedaży, Specjalista ds. marketingu.
+              <strong>Stanowisko</strong> - Twoja rola w firmie, np. Kierownik sprzedaży, Specjalista ds. marketingu.
             </li>
             <li>
-              <strong>Nazwa firmy</strong> — nazwa organizacji, którą reprezentujesz.
+              <strong>Nazwa firmy</strong> - nazwa organizacji, którą reprezentujesz.
             </li>
             <li>
-              <strong>Dodatkowa linia</strong> — krótki opis tego, czym się zajmujesz lub co oferujesz.
+              <strong>Dodatkowa linia</strong> - krótki opis tego, czym się zajmujesz lub co oferujesz.
             </li>
             <li>
-              <strong>E-mail</strong> — pole wymagane. Wpisz swój służbowy adres e-mail.
+              <strong>E-mail</strong> - pole wymagane. Wpisz swój służbowy adres e-mail.
             </li>
             <li>
-              <strong>Telefon</strong> — numer kontaktowy. Format dowolny, np. +48 600 000 000.
+              <strong>Telefon</strong> - numer kontaktowy. Format dowolny, np. +48 600 000 000.
             </li>
             <li>
-              <strong>Strona internetowa</strong> — pełny adres URL swojej strony, zaczynający się od https://.
+              <strong>Strona internetowa</strong> - pełny adres URL swojej strony, zaczynający się od https://.
             </li>
             <li>
-              <strong>Adres</strong> — fizyczny adres firmy (ulica, miasto, kod pocztowy).
+              <strong>Adres</strong> - fizyczny adres firmy (ulica, miasto, kod pocztowy).
             </li>
             <li>
-              <strong>Dane formalne</strong> — NIP, REGON, numer licencji lub inne dane wymagane w Twojej branży.
+              <strong>Dane formalne</strong> - NIP, REGON, numer licencji lub inne dane wymagane w Twojej branży.
             </li>
           </ul>
         </SectionInfo>
@@ -184,7 +184,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionDemo
-          title="Układy stopki — który wybrać?"
+          title="Układy stopki - który wybrać?"
           demo={
             <div className="space-y-3">
               <p className="text-dark text-sm font-semibold uppercase">Układ stopki</p>
@@ -220,28 +220,28 @@ export default function Page() {
           <p className="text-mid">Generator oferuje osiem gotowych układów. Każdy prezentuje te same dane w inny sposób.</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Standard</strong> — klasyczny układ pionowy, pasuje do większości zastosowań.
+              <strong>Standard</strong> - klasyczny układ pionowy, pasuje do większości zastosowań.
             </li>
             <li>
-              <strong>Pasek u góry</strong> — poziomy pasek oddziela stopkę od treści.
+              <strong>Pasek u góry</strong> - poziomy pasek oddziela stopkę od treści.
             </li>
             <li>
-              <strong>Etykiety z lewej</strong> — dwie kolumny: etykiety i wartości.
+              <strong>Etykiety z lewej</strong> - dwie kolumny: etykiety i wartości.
             </li>
             <li>
-              <strong>Wyśrodkowany</strong> — formalny charakter, dane na środku.
+              <strong>Wyśrodkowany</strong> - formalny charakter, dane na środku.
             </li>
             <li>
-              <strong>Kompaktowy</strong> — wszystko w jednej linii, minimalna wysokość.
+              <strong>Kompaktowy</strong> - wszystko w jednej linii, minimalna wysokość.
             </li>
             <li>
-              <strong>Dwie kolumny</strong> — dane po lewej, kontakt po prawej.
+              <strong>Dwie kolumny</strong> - dane po lewej, kontakt po prawej.
             </li>
             <li>
-              <strong>Minimalistyczny</strong> — tylko najważniejsze informacje.
+              <strong>Minimalistyczny</strong> - tylko najważniejsze informacje.
             </li>
             <li>
-              <strong>Pasek na dole</strong> — kolorowy pasek z kontaktem na dole stopki.
+              <strong>Pasek na dole</strong> - kolorowy pasek z kontaktem na dole stopki.
             </li>
           </ul>
         </SectionDemo>
@@ -279,7 +279,7 @@ export default function Page() {
           </p>
 
           <p className="text-mid mt-4">
-            Jeśli zostawisz oba pola puste, przycisk nie pojawi się w stopce. Jeśli wypełnisz tylko jedno pole, przycisk również nie będzie widoczny — potrzebne są oba: tekst i link.
+            Jeśli zostawisz oba pola puste, przycisk nie pojawi się w stopce. Jeśli wypełnisz tylko jedno pole, przycisk również nie będzie widoczny - potrzebne są oba: tekst i link.
           </p>
         </SectionInfo>
 
@@ -306,10 +306,10 @@ export default function Page() {
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Rozmiar ikon</strong> — do wyboru: Małe (16 px), Średnie (20 px) lub Duże (24 px).
+              <strong>Rozmiar ikon</strong> - do wyboru: Małe (16 px), Średnie (20 px) lub Duże (24 px).
             </li>
             <li>
-              <strong>Kolor ikon</strong> — Kolory platform (domyślne kolory każdej platformy), Kolor akcentu (jednolity kolor akcentu) lub Kolor tekstu.
+              <strong>Kolor ikon</strong> - Kolory platform (domyślne kolory każdej platformy), Kolor akcentu (jednolity kolor akcentu) lub Kolor tekstu.
             </li>
           </ul>
         </SectionInfo>
@@ -330,30 +330,30 @@ export default function Page() {
           <h3 className="h4 mt-6 mb-3">Kolory</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Kolor akcentu</strong> — używany w pasku bocznym/górnym, przycisku CTA i linkach. Możesz wybrać dowolny kolor z palety.
+              <strong>Kolor akcentu</strong> - używany w pasku bocznym/górnym, przycisku CTA i linkach. Możesz wybrać dowolny kolor z palety.
             </li>
             <li>
-              <strong>Kolor tekstu</strong> — kolor wszystkich tekstów w stopce (imię, dane kontaktowe, klauzula).
+              <strong>Kolor tekstu</strong> - kolor wszystkich tekstów w stopce (imię, dane kontaktowe, klauzula).
             </li>
             <li>
-              <strong>Kolor tła</strong> — kolor tła całej stopki. Domyślnie biały, ale możesz go zmienić.
+              <strong>Kolor tła</strong> - kolor tła całej stopki. Domyślnie biały, ale możesz go zmienić.
             </li>
           </ul>
 
           <h3 className="h4 mt-6 mb-3">Czcionka i rozmiar</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Czcionka</strong> — do wyboru: Arial, Verdana, Tahoma, Trebuchet MS i Georgia. Wszystkie są bezpieczne dla e-maili i wyświetlą się poprawnie u odbiorcy.
+              <strong>Czcionka</strong> - do wyboru: Arial, Verdana, Tahoma, Trebuchet MS i Georgia. Wszystkie są bezpieczne dla e-maili i wyświetlą się poprawnie u odbiorcy.
             </li>
             <li>
-              <strong>Rozmiar tekstu</strong> — trzy opcje: Mały (12 px), Standard (14 px) i Większy (16 px).
+              <strong>Rozmiar tekstu</strong> - trzy opcje: Mały (12 px), Standard (14 px) i Większy (16 px).
             </li>
           </ul>
 
           <h3 className="h4 mt-6 mb-3">Dodatkowe ustawienia</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Ramka stopki</strong> — możesz dodać ramkę do stopki wybierając dowolną kombinację stron (lewa, prawa, góra, dół). Zaznaczenie wszystkich stron automatycznie ustawia pełną ramkę.
+              <strong>Ramka stopki</strong> - możesz dodać ramkę do stopki wybierając dowolną kombinację stron (lewa, prawa, góra, dół). Zaznaczenie wszystkich stron automatycznie ustawia pełną ramkę.
               Ramka przyjmuje kolor akcentu.
             </li>
           </ul>
@@ -361,7 +361,7 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Styl tekstu — kolory i rozmiary poszczególnych elementów">
+        <SectionInfo title="Styl tekstu - kolory i rozmiary poszczególnych elementów">
           <p className="text-mid">
             W zakładce <strong>Styl tekstu</strong> możesz indywidualnie dostosować kolor i rozmiar czcionki dla każdego elementu tekstowego w stopce.
           </p>
@@ -370,28 +370,28 @@ export default function Page() {
           <p className="text-mid">Widoczne są tylko te elementy, które aktualnie znajdują się w stopce (mają wypełnione dane). Dla każdego elementu możesz ustawić:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Imię i nazwisko</strong> — domyślnie wyświetlane w kolorze akcentu.
+              <strong>Imię i nazwisko</strong> - domyślnie wyświetlane w kolorze akcentu.
             </li>
             <li>
-              <strong>Stanowisko</strong> — rola w firmie.
+              <strong>Stanowisko</strong> - rola w firmie.
             </li>
             <li>
-              <strong>Firma</strong> — nazwa organizacji.
+              <strong>Firma</strong> - nazwa organizacji.
             </li>
             <li>
-              <strong>Dane kontaktowe</strong> — e-mail, telefon, strona (etykiety).
+              <strong>Dane kontaktowe</strong> - e-mail, telefon, strona (etykiety).
             </li>
             <li>
-              <strong>Media społecznościowe</strong> — linki do profili.
+              <strong>Media społecznościowe</strong> - linki do profili.
             </li>
             <li>
-              <strong>Klauzula prawna</strong> — tekst prawny na dole stopki.
+              <strong>Klauzula prawna</strong> - tekst prawny na dole stopki.
             </li>
           </ul>
 
           <h3 className="h4 mt-6 mb-3">Jak zmienić kolor?</h3>
           <p className="text-mid">
-            Przy każdym elemencie znajdziesz rząd opcji kolorów. Kliknij kwadrat z kolorem, aby go wybrać. Możesz też dodać własny kolor klikając kolorowy kwadrat z plusem — wybierz kolor i kliknij
+            Przy każdym elemencie znajdziesz rząd opcji kolorów. Kliknij kwadrat z kolorem, aby go wybrać. Możesz też dodać własny kolor klikając kolorowy kwadrat z plusem - wybierz kolor i kliknij
             Zapisz. Własne kolory (do 8) są współdzielone między wszystkimi elementami.
           </p>
           <p className="text-mid mt-3">Przycisk z ikoną resetu przywraca domyślny kolor elementu.</p>
@@ -412,7 +412,7 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-3">Margines wewnętrzny stopki</h3>
           <p className="text-mid">
-            Na górze zakładki znajdziesz opcję marginesu wewnętrznego — czyli odstępu między zawartością stopki a jej krawędziami. Do wyboru masz trzy wartości: 8 px (mały), 16 px (średni) i 24 px
+            Na górze zakładki znajdziesz opcję marginesu wewnętrznego - czyli odstępu między zawartością stopki a jej krawędziami. Do wyboru masz trzy wartości: 8 px (mały), 16 px (średni) i 24 px
             (duży).
           </p>
 
@@ -423,25 +423,25 @@ export default function Page() {
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Po imieniu i nazwisku</strong> — odstęp pod linią z imieniem.
+              <strong>Po imieniu i nazwisku</strong> - odstęp pod linią z imieniem.
             </li>
             <li>
-              <strong>Po stanowisku / firmie</strong> — odstęp pod linią ze stanowiskiem i nazwą firmy.
+              <strong>Po stanowisku / firmie</strong> - odstęp pod linią ze stanowiskiem i nazwą firmy.
             </li>
             <li>
-              <strong>Po dodatkowej linii</strong> — odstęp pod opisem (jeśli jest wypełniony).
+              <strong>Po dodatkowej linii</strong> - odstęp pod opisem (jeśli jest wypełniony).
             </li>
             <li>
-              <strong>Po danych kontaktowych</strong> — odstęp pod e-mailem, telefonem i stroną.
+              <strong>Po danych kontaktowych</strong> - odstęp pod e-mailem, telefonem i stroną.
             </li>
             <li>
-              <strong>Po mediach społecznościowych</strong> — odstęp pod linkami do profili.
+              <strong>Po mediach społecznościowych</strong> - odstęp pod linkami do profili.
             </li>
             <li>
-              <strong>Po przycisku CTA</strong> — odstęp pod przyciskiem (jeśli jest włączony).
+              <strong>Po przycisku CTA</strong> - odstęp pod przyciskiem (jeśli jest włączony).
             </li>
             <li>
-              <strong>Przed klauzulą</strong> — odstęp nad tekstem klauzuli prawnej.
+              <strong>Przed klauzulą</strong> - odstęp nad tekstem klauzuli prawnej.
             </li>
           </ul>
           <p className="text-mid mt-4">Jeśli usuniesz dane z jakiegoś pola (np. wyczyścisz telefon), odpowiednia opcja odstępu automatycznie zniknie z zakładki.</p>
@@ -449,7 +449,7 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Klauzula prawna / RODO — kiedy dodać?">
+        <SectionInfo title="Klauzula prawna / RODO - kiedy dodać?">
           <p className="text-mid">
             W zakładce <strong>Klauzula / RODO</strong> możesz dodać tekst prawny, który pojawi się na dole stopki mniejszą czcionką.
           </p>
@@ -457,13 +457,13 @@ export default function Page() {
           <h3 className="h4 mt-6 mb-3">Kiedy warto dodać klauzulę?</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Korespondencja biznesowa</strong> — informacja o poufności wiadomości i prośba o usunięcie w przypadku błędnego doręczenia.
+              <strong>Korespondencja biznesowa</strong> - informacja o poufności wiadomości i prośba o usunięcie w przypadku błędnego doręczenia.
             </li>
             <li>
-              <strong>Wymogi branżowe</strong> — niektóre branże (np. prawnicza, medyczna, finansowa) wymagają określonych informacji w każdej wiadomości.
+              <strong>Wymogi branżowe</strong> - niektóre branże (np. prawnicza, medyczna, finansowa) wymagają określonych informacji w każdej wiadomości.
             </li>
             <li>
-              <strong>RODO</strong> — informacja o przetwarzaniu danych osobowych, jeśli Twoja firma jest administratorem danych.
+              <strong>RODO</strong> - informacja o przetwarzaniu danych osobowych, jeśli Twoja firma jest administratorem danych.
             </li>
           </ul>
 
@@ -488,7 +488,7 @@ export default function Page() {
           </p>
 
           <h3 className="h4 mt-6 mb-3">Jak działa automatyczny zapis?</h3>
-          <p className="text-mid">Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Zapis dzieje się automatycznie w tle — bez klikania przycisków.</p>
+          <p className="text-mid">Każda zmiana (tekst, kolor, układ, odstępy) jest natychmiast zapisywana w pamięci przeglądarki. Zapis dzieje się automatycznie w tle - bez klikania przycisków.</p>
 
           <h3 className="h4 mt-6 mb-3">Jak zresetować ustawienia?</h3>
           <p className="text-mid">
@@ -553,21 +553,21 @@ export default function Page() {
               answer: 'Nie. Generator działa w całości w Twojej przeglądarce. Dane, które wpisujesz, nie są wysyłane na żaden serwer ani zapisywane. Po zamknięciu strony wszystkie dane znikają.',
             },
             {
-              question: 'Przycisk kopiowania jest nieaktywny — dlaczego?',
+              question: 'Przycisk kopiowania jest nieaktywny - dlaczego?',
               answer: 'Aby skopiować stopkę, uzupełnij przynajmniej dwa pola: imię i nazwisko oraz adres e-mail. Sprawdź, czy oba pola są wypełnione.',
             },
             {
-              question: 'Avatar lub logo nie wyświetla się — co zrobić?',
+              question: 'Avatar lub logo nie wyświetla się - co zrobić?',
               answer:
                 'Obraz musi być publicznie dostępny w internecie. Adres URL powinien prowadzić bezpośrednio do pliku graficznego (kończyć się na .jpg, .png lub .webp). Obrazy z Google Drive lub Dropbox wymagają specjalnego linku do udostępniania.',
             },
             {
-              question: 'Stopka wygląda inaczej u odbiorcy — dlaczego?',
+              question: 'Stopka wygląda inaczej u odbiorcy - dlaczego?',
               answer:
                 'Różne klienty pocztowe (Gmail, Outlook, Apple Mail) mogą nieznacznie różnić się w wyświetlaniu HTML. Generator używa bezpiecznych stylów, które działają w większości programów. Jeśli widzisz duże różnice, upewnij się, że wklejasz stopkę używając Ctrl+V, a nie Wklej jako zwykły tekst.',
             },
             {
-              question: 'Przycisk CTA nie pojawia się — co zrobić?',
+              question: 'Przycisk CTA nie pojawia się - co zrobić?',
               answer: 'Przycisk wymaga obu pól: tekstu i linku. Sprawdź, czy w zakładce Link oba pola są wypełnione i czy adres URL zaczyna się od https://.',
             },
           ]}
@@ -591,7 +591,7 @@ export default function Page() {
 
       <CTABanner
         title="Potrzebujesz profesjonalnej identyfikacji mailowej dla firmy?"
-        description="Stworzymy spójną identyfikację wizualną — dopasowaną do Twojej marki, strony internetowej i materiałów marketingowych."
+        description="Stworzymy spójną identyfikację wizualną - dopasowaną do Twojej marki, strony internetowej i materiałów marketingowych."
         btnOne="Umów rozmowę"
         btnOneLink="/kontakt"
         btnTwo="Sprawdź nasze usługi"

@@ -96,7 +96,7 @@ export default function Page() {
             },
             {
               title: '2. Wpisz dane',
-              description: 'Wypełnij odpowiednie pola — np. adres strony, dane kontaktowe.',
+              description: 'Wypełnij odpowiednie pola - np. adres strony, dane kontaktowe.',
             },
             {
               title: '3. Pobierz kod',

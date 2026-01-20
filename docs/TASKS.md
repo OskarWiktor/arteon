@@ -38,7 +38,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Zakres:
     - puste pliki/komponenty, martwe exporty, nieużywany kod/warianty (zostaw `Tooltip`, nawet jeśli chwilowo nieużywany)
   - Raportowanie:
-    - Jeśli wykryjesz problem — dopisz osobne zadanie `CLEANUP-*` z listą plików i kryteriami akceptacji.
+    - Jeśli wykryjesz problem - dopisz osobne zadanie `CLEANUP-*` z listą plików i kryteriami akceptacji.
     - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu + ID nowych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
@@ -51,7 +51,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Schema.org: URL absolute; brak duplikacji encji.
     - Robots + sitemap: bez regresji (nie wprowadzać globalnej blokady `/` w `robots.tsx`).
   - Raportowanie:
-    - Jeśli wykryjesz problem — dopisz osobne zadanie (np. `SEO-*`) z konkretnymi plikami i kryteriami akceptacji.
+    - Jeśli wykryjesz problem - dopisz osobne zadanie (np. `SEO-*`) z konkretnymi plikami i kryteriami akceptacji.
     - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu + ID nowych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
@@ -62,7 +62,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - nadmiarowe `use client`, brak memoization, niepotrzebne re-render
     - obrazy: duże assety, brak `alt`, brak optymalizacji/rozsądnych rozmiarów
   - Raportowanie:
-    - Jeśli wykryjesz problem — dopisz osobne zadanie (np. `CLEANUP-*`, `TOOLS-*`) z listą plików i planem zmian.
+    - Jeśli wykryjesz problem - dopisz osobne zadanie (np. `CLEANUP-*`, `TOOLS-*`) z listą plików i planem zmian.
     - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu + ID nowych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
@@ -92,17 +92,17 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Czy artykuł ma sensowny zestaw "Zobacz też" (2–4 linki) oraz pasujące CTA.
     - Czy nagłówki i kolejność sekcji da się poprawić pod czytelność i crawl (bez lania wody, bez upychania słów kluczowych).
   - Raportowanie (WYNIK AUDYTU = zadania do wdrożenia, nie pomysły):
-    - Dla każdego przeanalizowanego artykułu dopisz osobne zadanie `CONTENT-*` (a jeśli dotyczy stricte SEO/linkowania poza blogiem — `SEO-*`) z:
+    - Dla każdego przeanalizowanego artykułu dopisz osobne zadanie `CONTENT-*` (a jeśli dotyczy stricte SEO/linkowania poza blogiem - `SEO-*`) z:
       - slugiem artykułu,
       - listą konkretnych dopisków (nowe sekcje H2/H3 + 1–3 zdania opisu co w nich ma być),
       - listą konkretnych linków wewnętrznych do wplecenia (dokładne URL),
       - kryteriami akceptacji (konkret, mierzalne),
       - plikami do edycji (min. `data/pl/blog.json`).
-    - Nie dodawaj `IDEA-*` ani wpisów do sekcji „Pomysły" — wynik ma być egzekwowalnym backlogiem.
+    - Nie dodawaj `IDEA-*` ani wpisów do sekcji „Pomysły" - wynik ma być egzekwowalnym backlogiem.
     - Do `DONE_TASKS.md` po wykonaniu audytu dopisz wpis: ile artykułów przeanalizowano + ID utworzonych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
-- ❌ **[AUDIT-010] Repo: audyt tonu marki na stronach — elementy globalne i copy „wspólne” (bez artykułów)**
+- ❌ **[AUDIT-010] Repo: audyt tonu marki na stronach - elementy globalne i copy „wspólne” (bez artykułów)**
 
   - Cel:
     - Sprawdzić, czy teksty w elementach globalnych (widoczne na wielu stronach) są zgodne z nowymi zasadami tonu (mentorski, prosty, „przy kawie”, bez skoków myślowych).
@@ -119,7 +119,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Spójność narracji (bez przeskoków myślowych).
     - Ludzki język (bez broszury/korpo).
     - Prawdziwość i jednoznaczność (bez „100% gwarancji”/niejasnych obietnic, jeśli nie są literalnie prawdziwe).
-  - Raportowanie (obowiązkowo — konkretne przykłady):
+  - Raportowanie (obowiązkowo - konkretne przykłady):
     - Dla każdego problemu podaj:
       - URL (jeśli dotyczy) + plik (ścieżka) + sekcja/komponent
       - dokładny cytat (1–3 zdania)
@@ -140,8 +140,8 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/o-nas`, `/o-nas/faq`, `/o-nas/dolacz-do-sieci`
     - `/kontakt`
     - `/mapa-strony`
-    - `/polityka-prywatnosci`, `/regulamin` (bez zmiany znaczenia prawnego — oceniamy głównie „warstwę ludzką”: nagłówki, wstępy, mikrocopy)
-  - Raportowanie (obowiązkowo — konkretne przykłady):
+    - `/polityka-prywatnosci`, `/regulamin` (bez zmiany znaczenia prawnego - oceniamy głównie „warstwę ludzką”: nagłówki, wstępy, mikrocopy)
+  - Raportowanie (obowiązkowo - konkretne przykłady):
     - Format jak w `AUDIT-010` (URL + plik + cytat + dlaczego + propozycja poprawki).
   - Jeśli wykryjesz problemy:
     - Dopisz osobne zadania `COPY-###` per strona.
@@ -161,7 +161,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/uslugi/sklepy-internetowe`
     - `/uslugi/blogi-internetowe`
     - `/uslugi/tworzenie-tresci`
-  - Raportowanie (obowiązkowo — konkretne przykłady):
+  - Raportowanie (obowiązkowo - konkretne przykłady):
     - Format jak w `AUDIT-010`.
     - Dodatkowo: wypisz każde miejsce, gdzie pada termin typu SEO/UX/CTR/WCAG/CWV itp. bez wyjaśnienia.
   - Jeśli wykryjesz problemy:
@@ -174,7 +174,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Zakres (strony):
     - `/uslugi/projekty-graficzne`
     - wszystkie podstrony z `app/(pl)/uslugi/projekty-graficzne/**` (wg `PAGES_CATALOG.md`)
-  - Raportowanie (obowiązkowo — konkretne przykłady):
+  - Raportowanie (obowiązkowo - konkretne przykłady):
     - Format jak w `AUDIT-010`.
   - Jeśli wykryjesz problemy:
     - Dopisz osobne zadania `COPY-###` per strona.
@@ -186,7 +186,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Zakres (strony):
     - `/narzedzia`
     - wszystkie strony narzędzi `/narzedzia/*` (wg `PAGES_CATALOG.md`, w tym desktop-only komunikaty/layout)
-  - Raportowanie (obowiązkowo — konkretne przykłady):
+  - Raportowanie (obowiązkowo - konkretne przykłady):
     - Format jak w `AUDIT-010`.
     - Dodatkowo: wypisz miejsca, gdzie instrukcja jest zbyt techniczna lub pomija „po co to?” (np. tylko „kliknij X”, bez wyjaśnienia efektu).
   - Jeśli wykryjesz problemy:
@@ -200,7 +200,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `/realizacje`
     - `/realizacje/[slug]`
     - `data/pl/projects.json` (tylko pola renderowane na stronach realizacji)
-  - Raportowanie (obowiązkowo — konkretne przykłady):
+  - Raportowanie (obowiązkowo - konkretne przykłady):
     - Format jak w `AUDIT-010`.
   - Jeśli wykryjesz problemy:
     - Dopisz osobne zadania `COPY-###` per realizacja (slug).
@@ -391,7 +391,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Obsługa błędów w miejscu wywołania pozostaje (komunikaty bez zmian).
   - `npm run lint` i `npm run build` przechodzą.
 
-- ❌ **[CONTENT-001] Blog: zaktualizować INSTRUCTIONS.md — excerpt artykułu 220-230 znaków**
+- ❌ **[CONTENT-001] Blog: zaktualizować INSTRUCTIONS.md - excerpt artykułu 220-230 znaków**
 
   - Plik: `docs/INSTRUCTIONS.md`
   - Zakres:
@@ -406,14 +406,14 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Pliki: `data/pl/blog.json`, wszystkie artykuły
   - Zakres:
     - Sprawdzić każdy artykuł pod kątem:
-      1. **Niejasne instrukcje techniczne** — fragmenty typu "Skonfiguruj serwer" bez wyjaśnienia dla osób nietechnicznych
-      2. **Brak opcji pomocy** — instrukcje techniczne bez informacji "możemy pomóc / skontaktuj się z nami"
-      3. **Zakładanie jednego scenariusza** — brak rozważenia różnych przyczyn problemu
-      4. **Zbyt szczegółowe DIY** — instrukcje, które mogłyby zastępować usługę
+      1. **Niejasne instrukcje techniczne** - fragmenty typu "Skonfiguruj serwer" bez wyjaśnienia dla osób nietechnicznych
+      2. **Brak opcji pomocy** - instrukcje techniczne bez informacji "możemy pomóc / skontaktuj się z nami"
+      3. **Zakładanie jednego scenariusza** - brak rozważenia różnych przyczyn problemu
+      4. **Zbyt szczegółowe DIY** - instrukcje, które mogłyby zastępować usługę
     - Dla każdego artykułu z problemami: zidentyfikować konkretne fragmenty do poprawy
   - Przykłady problemów (z artykułu o 404):
-    - "Skonfiguruj serwer lub CMS, żeby zwracał kod 404 zamiast 200" — niejasne, brak opcji pomocy
-    - "W większości systemów można to ustawić w konfiguracji lub przez wtyczkę" — zbyt ogólne
+    - "Skonfiguruj serwer lub CMS, żeby zwracał kod 404 zamiast 200" - niejasne, brak opcji pomocy
+    - "W większości systemów można to ustawić w konfiguracji lub przez wtyczkę" - zbyt ogólne
   - Kryteria akceptacji:
     - Lista artykułów z problemami + konkretne fragmenty do poprawy
     - Każdy problem ma zaproponowaną poprawkę zgodną z wytycznymi z INSTRUCTIONS.md (sekcja "Balans DIY vs kierowanie do oferty")
@@ -423,7 +423,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
 ## Pomysły
 
-- ❌ **[IDEA-019] O nas: „Jak pracujemy"” — podstrona procesu współpracy (krok po kroku)**
+- ❌ **[IDEA-019] O nas: „Jak pracujemy"” - podstrona procesu współpracy (krok po kroku)**
 
   - Cel i uzasadnienie:
     - Strona domykająca decyzję: klarowny proces + mniejsza niepewność przed kontaktem.
@@ -434,7 +434,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/jak-pracujemy`
-    - `metadata.title`: `Jak pracujemy — proces współpracy krok po kroku - Arteon`
+    - `metadata.title`: `Jak pracujemy - proces współpracy krok po kroku - Arteon`
     - `metadata.description`: `Zobacz, jak wygląda współpraca z Arteon: etapy, komunikacja i deliverables. Jasny proces bez chaosu.`
     - OG image: `public/assets/og/o-nas-jak-pracujemy.webp`
     - Schema: `HowTo` + `BreadcrumbList`
@@ -445,7 +445,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `npm run lint`
     - `npm run build`
 
-- ❌ **[IDEA-021] O nas: „Standardy jakości” — WCAG, SEO, performance i bezpieczeństwo (w jednym miejscu)**
+- ❌ **[IDEA-021] O nas: „Standardy jakości” - WCAG, SEO, performance i bezpieczeństwo (w jednym miejscu)**
 
   - Cel i uzasadnienie:
     - Strona referencyjna do pytań „czy robicie WCAG/SEO/szybkość/bezpieczeństwo?”.
@@ -456,7 +456,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/standardy-jakosci`
-    - `metadata.title`: `Standardy jakości — WCAG, SEO, performance i bezpieczeństwo - Arteon`
+    - `metadata.title`: `Standardy jakości - WCAG, SEO, performance i bezpieczeństwo - Arteon`
     - `metadata.description`: `Jak dbamy o jakość: dostępność WCAG, SEO techniczne, Core Web Vitals, bezpieczeństwo i analityka.`
     - OG image: `public/assets/og/o-nas-standardy-jakosci.webp`
     - Schema: `WebPage` + `BreadcrumbList`
@@ -466,7 +466,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `npm run lint`
     - `npm run build`
 
-- ❌ **[IDEA-022] O nas: „Dlaczego Arteon” — podstrona na obiekcje (dla niezdecydowanych)**
+- ❌ **[IDEA-022] O nas: „Dlaczego Arteon” - podstrona na obiekcje (dla niezdecydowanych)**
 
   - Cel i uzasadnienie:
     - Domykać decyzję: zebrać „dla kogo / dla kogo nie”, rozliczenia, ryzyko i co po wdrożeniu.
@@ -477,7 +477,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/dlaczego-arteon`
-    - `metadata.title`: `Dlaczego Arteon — jak zmniejszamy ryzyko współpracy`
+    - `metadata.title`: `Dlaczego Arteon - jak zmniejszamy ryzyko współpracy`
     - `metadata.description`: `Zobacz, jak pracujemy, jak rozliczamy projekty i jak dbamy o przewidywalność współpracy.`
     - OG image: `public/assets/og/o-nas-dlaczego-arteon.webp`
     - Schema: `WebPage` + `BreadcrumbList`
@@ -487,7 +487,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `npm run lint`
     - `npm run build`
 
-- ❌ **[IDEA-023] O nas: „Materiały do startu” — podstrona briefu i listy rzeczy do przygotowania**
+- ❌ **[IDEA-023] O nas: „Materiały do startu” - podstrona briefu i listy rzeczy do przygotowania**
 
   - Cel i uzasadnienie:
     - Skrócić czas startu projektu i poprawić jakość zapytań.
@@ -498,7 +498,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/materialy-do-startu`
-    - `metadata.title`: `Materiały do strony — lista na start - Arteon`
+    - `metadata.title`: `Materiały do strony - lista na start - Arteon`
     - `metadata.description`: `Zobacz listę materiałów, które przyspieszają wycenę i realizację: cele, treści, zdjęcia, inspiracje i dostępy.`
     - OG image: `public/assets/og/o-nas-materialy-do-startu.webp`
     - Schema: `HowTo` lub `WebPage` + `BreadcrumbList`
@@ -508,7 +508,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `npm run lint`
     - `npm run build`
 
-- ❌ **[IDEA-024] O nas: „Partnerzy” — hub dla współpracy (klienci vs partnerzy)**
+- ❌ **[IDEA-024] O nas: „Partnerzy” - hub dla współpracy (klienci vs partnerzy)**
 
   - Cel i uzasadnienie:
     - Uporządkować komunikację: osobna ścieżka dla partnerów + linkowanie do `/o-nas/dolacz-do-sieci`.
@@ -519,7 +519,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/shared/navigation-data/pl.ts` (`ABOUT_NAV_ITEMS_PL`)
   - SEO:
     - URL/slug: `/o-nas/partnerzy`
-    - `metadata.title`: `Partnerzy Arteon — współpraca projektowa`
+    - `metadata.title`: `Partnerzy Arteon - współpraca projektowa`
     - `metadata.description`: `Jak wygląda współpraca partnerska z Arteon: zasady, komunikacja, rozliczenia i kiedy wracamy do siebie.`
     - OG image: `public/assets/og/o-nas-partnerzy.webp`
     - Schema: `WebPage` + `BreadcrumbList`
@@ -532,7 +532,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 - ❌ **[IDEA-007] Licznik meta title/description: podgląd SERP desktop/mobile + wzory do skopiowania**
 
   - Cel i uzasadnienie:
-    - W Google długość title/description realnie zależy od urządzenia — przełącznik desktop/mobile zwiększy użyteczność.
+    - W Google długość title/description realnie zależy od urządzenia - przełącznik desktop/mobile zwiększy użyteczność.
     - Wzory do skopiowania skracają czas pracy i podnoszą jakość meta (CTR) bez „zgadywania”.
   - Konkret: co dodajemy/zmieniamy (strona/narzędzie/artykuł/rozbudowa)
     - Dodać przełącznik urządzenia (desktop/mobile) z podglądem SERP.
@@ -1546,7 +1546,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Alt text dla każdego badge
   - Weryfikacja: `npm run lint && npm run build`
 
-### Treści i narzędzia — licznik słów
+### Treści i narzędzia - licznik słów
 
 - ❌ **[IDEA-151] Artykuł: Ile słów powinien mieć artykuł blogowy w 2025?**
 
@@ -1556,7 +1556,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Powiązane usługi: `/uslugi/tworzenie-tresci`, `/uslugi/blogi-internetowe`
   - Powiązane narzędzia: `/narzedzia/licznik-slow-i-znakow`
   - Typ artykułu: Edukacyjny
-  - Wpływ SEO: Wysoki — topical authority dla klastra "treści"
+  - Wpływ SEO: Wysoki - topical authority dla klastra "treści"
   - Linkowanie: naturalny link do licznika słów jako narzędzia do sprawdzenia długości
 
 - ❌ **[IDEA-152] Artykuł: Jak pisać opisy produktów w sklepie internetowym?**
@@ -1567,7 +1567,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Powiązane usługi: `/uslugi/sklepy-internetowe`, `/uslugi/tworzenie-tresci`
   - Powiązane narzędzia: `/narzedzia/licznik-slow-i-znakow`
   - Typ artykułu: Edukacyjny
-  - Wpływ SEO: Wysoki — long-tail frazy e-commerce
+  - Wpływ SEO: Wysoki - long-tail frazy e-commerce
   - Linkowanie: naturalny link do licznika słów przy sekcji o optymalnej długości opisów
 
 - ❌ **[IDEA-153] Narzędzie: Licznik znaków dla Allegro/OLX z limitami platform**
@@ -1581,7 +1581,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `components/sections/tools/PlatformCharCountTool.tsx` (nowy komponent lub wariant WordCountTool)
   - SEO:
     - URL: `/narzedzia/licznik-znakow-allegro-olx`
-    - Title: `Licznik znaków dla Allegro i OLX — sprawdź limit opisu`
+    - Title: `Licznik znaków dla Allegro i OLX - sprawdź limit opisu`
     - Description: `Darmowy licznik znaków z limitami dla Allegro, OLX, Amazon i eBay. Sprawdź, czy Twój opis produktu mieści się w limicie platformy.`
     - Schema: SoftwareApplication z featureList
   - Kryteria akceptacji:
@@ -1590,7 +1590,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Wizualna ocena (progress bar + kolor: zielony/żółty/czerwony)
     - Informacja o limitach dla tytułu i opisu (osobno)
     - FAQ z pytaniami o limity konkretnych platform
-  - Wpływ SEO: Średni — nowe frazy, dedykowany intent
+  - Wpływ SEO: Średni - nowe frazy, dedykowany intent
   - Weryfikacja: `npm run lint && npm run build`
 
 ---
@@ -1620,14 +1620,14 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
 ## Zakres redakcji każdego artykułu
 
-1. **Intencja wyszukiwania** — czy wstęp odpowiada na pytanie z tytułu
-2. **Ton** — usunięcie fraz AI ("krok po kroku", "wyobraź sobie", "kompletny przewodnik")
-3. **Nagłówki** — czy są pytaniami prowadzącymi
-4. **Linkowanie wewnętrzne** — min. 6-8 linków
-5. **Linkowanie zewnętrzne** — min. 4-6 linków z `target='_blank' rel='noopener noreferrer'`
-6. **Excerpt** — 220-230 znaków
-7. **FAQ** — czy pytania są zgodne z intencją
-8. **CTA** — czy przyciski są opisowe
+1. **Intencja wyszukiwania** - czy wstęp odpowiada na pytanie z tytułu
+2. **Ton** - usunięcie fraz AI ("krok po kroku", "wyobraź sobie", "kompletny przewodnik")
+3. **Nagłówki** - czy są pytaniami prowadzącymi
+4. **Linkowanie wewnętrzne** - min. 6-8 linków
+5. **Linkowanie zewnętrzne** - min. 4-6 linków z `target='_blank' rel='noopener noreferrer'`
+6. **Excerpt** - 220-230 znaków
+7. **FAQ** - czy pytania są zgodne z intencją
+8. **CTA** - czy przyciski są opisowe
 
 ## Lista zadań
 

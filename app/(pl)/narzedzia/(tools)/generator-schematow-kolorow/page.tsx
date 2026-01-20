@@ -101,7 +101,7 @@ export default function Page() {
             },
             {
               title: '2. Wygeneruj palety',
-              description: 'Kliknij „Zaktualizuj kolor" — narzędzie automatycznie stworzy 9 różnych palet.',
+              description: 'Kliknij „Zaktualizuj kolor" - narzędzie automatycznie stworzy 9 różnych palet.',
             },
             {
               title: '3. Skopiuj kolory',

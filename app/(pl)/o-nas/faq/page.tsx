@@ -20,7 +20,7 @@ const FAQ_ITEMS: FaqItem[] = [
     answer: (
       <p>
         Zawsze zaczynamy od rozmowy i poznania Twoich indywidualnych potrzeb. Cały plan i wycenę dostosowujemy do Twoich celów, odbiorców, zakresu prac i priorytetów. Do pierwszej wyceny zwykle
-        wystarczy zarys zakresu prac oraz Twoje oczekiwania — resztę dopracujemy po dokładniejszym zapoznaniu się z tematem. Najszybciej możesz skontaktować się przez{' '}
+        wystarczy zarys zakresu prac oraz Twoje oczekiwania - resztę dopracujemy po dokładniejszym zapoznaniu się z tematem. Najszybciej możesz skontaktować się przez{' '}
         <a href="/kontakt" className="inline-link">
           formularz kontaktowy
         </a>
@@ -28,7 +28,7 @@ const FAQ_ITEMS: FaqItem[] = [
       </p>
     ),
     answerSchemaText:
-      'Zawsze zaczynamy od rozmowy i poznania Twoich indywidualnych potrzeb. Cały plan i wycenę dostosowujemy do Twoich celów, odbiorców, zakresu prac i priorytetów. Do pierwszej wyceny zwykle wystarczy zarys zakresu prac oraz Twoje oczekiwania — resztę dopracujemy po dokładniejszym zapoznaniu się z tematem. Najszybciej możesz skontaktować się przez formularz kontaktowy.',
+      'Zawsze zaczynamy od rozmowy i poznania Twoich indywidualnych potrzeb. Cały plan i wycenę dostosowujemy do Twoich celów, odbiorców, zakresu prac i priorytetów. Do pierwszej wyceny zwykle wystarczy zarys zakresu prac oraz Twoje oczekiwania - resztę dopracujemy po dokładniejszym zapoznaniu się z tematem. Najszybciej możesz skontaktować się przez formularz kontaktowy.',
   },
   {
     question: 'Jak szybko dostanę wstępną wycenę?',
@@ -42,7 +42,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Jak wygląda proces współpracy?',
     answer:
-      'Najczęściej zaczynamy od krótkiej rozmowy, tworzymy wycenę, wyznaczamy kroki współpracy i ustalamy terminy. Każdy proces jest indywidualny — mamy elastyczne podejście do planowania i realizacji.',
+      'Najczęściej zaczynamy od krótkiej rozmowy, tworzymy wycenę, wyznaczamy kroki współpracy i ustalamy terminy. Każdy proces jest indywidualny - mamy elastyczne podejście do planowania i realizacji.',
   },
   {
     question: 'Czy zajmujecie się tworzeniem treści i pozycjonowaniem? Czy mogę to zlecić po czasie?',
@@ -66,7 +66,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Czy mogę poprosić o jakąś poradę np. związaną z pozycjonowaniem?',
     answer:
-      'Tak, jak najbardziej. Jeśli potrzebujesz porady związanej z rozwojem swojej firmy, możesz śmiało do nas napisać — nawet jeśli jeszcze nie wiesz, co chcesz zbudować albo dopiero zbierasz budżet. Chętnie pomożemy.',
+      'Tak, jak najbardziej. Jeśli potrzebujesz porady związanej z rozwojem swojej firmy, możesz śmiało do nas napisać - nawet jeśli jeszcze nie wiesz, co chcesz zbudować albo dopiero zbierasz budżet. Chętnie pomożemy.',
   },
   {
     question: 'Czy po realizacji projektu mogę zlecić utrzymanie i rozwój serwisu?',
@@ -81,7 +81,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Czy mogę rozliczać projekt etapami?',
     answer:
-      'Tak, jak najbardziej. Często, gdy projekt jest bardziej złożony, dzielimy go na etapy w sposób, który ułatwia rozliczenie. Jeśli np. nie masz jeszcze części materiałów, ale chcesz zacząć realizację, napisz do nas — podzielimy pracę tak, żebyś mógł/mogła szybko i bezpiecznie wystartować.',
+      'Tak, jak najbardziej. Często, gdy projekt jest bardziej złożony, dzielimy go na etapy w sposób, który ułatwia rozliczenie. Jeśli np. nie masz jeszcze części materiałów, ale chcesz zacząć realizację, napisz do nas - podzielimy pracę tak, żebyś mógł/mogła szybko i bezpiecznie wystartować.',
   },
   {
     question: 'Ile trwa realizacja strony internetowej?',
@@ -99,7 +99,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: 'Czy wdrożycie analitykę od razu (GA4, GTM, Pixel)?',
-    answer: 'Zawsze rekomendujemy analitykę, bo dzięki niej widać, jak radzi sobie witryna. Nie jest to jednak domyślna modyfikacja — wdrażamy ją po Twoim zatwierdzeniu.',
+    answer: 'Zawsze rekomendujemy analitykę, bo dzięki niej widać, jak radzi sobie witryna. Nie jest to jednak domyślna modyfikacja - wdrażamy ją po Twoim zatwierdzeniu.',
   },
   {
     question: 'Czy mogę mieć wersję wielojęzyczną strony?',
@@ -112,7 +112,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Czy zapewniacie hosting i domenę?',
     answer:
-      'Możemy pomóc w wyborze i konfiguracji hostingu oraz domeny. Najważniejsze pod tym kątem jest dla nas bezpieczeństwo, kopie zapasowe i stabilność — na tym opieramy się przy rekomendacjach.',
+      'Możemy pomóc w wyborze i konfiguracji hostingu oraz domeny. Najważniejsze pod tym kątem jest dla nas bezpieczeństwo, kopie zapasowe i stabilność - na tym opieramy się przy rekomendacjach.',
   },
   {
     question: 'Czy będę mógł/mogła samodzielnie edytować treści?',
@@ -127,7 +127,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Czy pomożecie z RODO/cookies i zgodnością witryny z prawem?',
     answer:
-      'Tak, w każdym projekcie witryny przewidujemy pomoc w zakresie dostosowania witryny do standardów, w tym również do WCAG 2.1 AA. Jeśli nie jesteś pewien, co jest potrzebne na Twojej stronie, możesz bez obaw nam to powierzyć — jesteśmy tu, żeby jak najlepiej Ci pomóc.',
+      'Tak, w każdym projekcie witryny przewidujemy pomoc w zakresie dostosowania witryny do standardów, w tym również do WCAG 2.1 AA. Jeśli nie jesteś pewien, co jest potrzebne na Twojej stronie, możesz bez obaw nam to powierzyć - jesteśmy tu, żeby jak najlepiej Ci pomóc.',
   },
   {
     question: 'Jak wygląda komunikacja w trakcie projektu?',
@@ -137,7 +137,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Kto jest właścicielem strony, plików i dostępu po zakończeniu?',
     answer:
-      'Ty. Po wdrożeniu przekazujemy pełne dostępy i wszystkie materiały. Domyślnie wszystkie prawa są Twoje — jeśli masz obawy, możemy podpisać kontrakt B2B lub umowę o przekazanie pełnych praw.',
+      'Ty. Po wdrożeniu przekazujemy pełne dostępy i wszystkie materiały. Domyślnie wszystkie prawa są Twoje - jeśli masz obawy, możemy podpisać kontrakt B2B lub umowę o przekazanie pełnych praw.',
   },
 ];
 

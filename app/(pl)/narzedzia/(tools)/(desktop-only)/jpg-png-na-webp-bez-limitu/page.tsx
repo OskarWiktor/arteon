@@ -101,7 +101,7 @@ export default function Page() {
             },
             {
               title: '2. Ustaw jakość',
-              description: 'Wybierz poziom jakości (domyślnie 80%) — niższa wartość = mniejszy plik.',
+              description: 'Wybierz poziom jakości (domyślnie 80%) - niższa wartość = mniejszy plik.',
             },
             {
               title: '3. Pobierz WebP',

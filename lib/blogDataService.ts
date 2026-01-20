@@ -3,7 +3,7 @@
 /**
  * Blog Data Service
  *
- * ZASADY ZERO DOPISAŃ — ZERO NIEPRAWDY (docs/INSTRUCTIONS.md)
+ * ZASADY ZERO DOPISAŃ - ZERO NIEPRAWDY (docs/INSTRUCTIONS.md)
  * ----------------------------------------------------------
  * Wszystkie artykuły w blog.json MUSZĄ spełniać następujące wymagania:
  *

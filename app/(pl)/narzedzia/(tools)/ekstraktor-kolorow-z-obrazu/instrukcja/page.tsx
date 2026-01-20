@@ -14,11 +14,11 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Jak wyciągnąć kolory ze zdjęcia? | Ekstraktor kolorów z obrazu',
-  description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie bez wysyłania plików na serwer. Idealne do brandingu.',
+  description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo - do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie bez wysyłania plików na serwer. Idealne do brandingu.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja') },
   openGraph: {
     title: 'Jak wyciągnąć kolory ze zdjęcia? | Ekstraktor kolorów z obrazu',
-    description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo — do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie bez wysyłania plików na serwer. Idealne do brandingu.',
+    description: 'Wyciągnij dominujące kolory ze zdjęcia lub logo - do 12 kolorów HEX jednym kliknięciem. Darmowe narzędzie bez wysyłania plików na serwer. Idealne do brandingu.',
     url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja'),
     type: 'website',
     images: [
@@ -139,7 +139,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Co robi narzędzie z obrazem?">
-          <p className="text-mid">Po wgraniu obrazu narzędzie wykonuje kilka kroków w tle — wszystko dzieje się w przeglądarce, bez wysyłania pliku na serwer:</p>
+          <p className="text-mid">Po wgraniu obrazu narzędzie wykonuje kilka kroków w tle - wszystko dzieje się w przeglądarce, bez wysyłania pliku na serwer:</p>
           <ol className="text-mid mt-3 list-inside list-decimal space-y-2">
             <li>
               <strong>Zmniejsza obraz</strong> do mniejszej rozdzielczości (około 240 pikseli). Dzięki temu analiza jest szybka nawet dla dużych zdjęć.
@@ -148,7 +148,7 @@ export default function Page() {
               <strong>Analizuje każdy piksel</strong> i grupuje podobne kolory razem. Kolory, które różnią się tylko odcieniem (np. dwa prawie identyczne niebieskie), są łączone w jeden.
             </li>
             <li>
-              <strong>Wybiera dominujące kolory</strong> — te, które występują najczęściej. Wynik to lista do 12 kolorów posortowanych od najczęstszego.
+              <strong>Wybiera dominujące kolory</strong> - te, które występują najczęściej. Wynik to lista do 12 kolorów posortowanych od najczęstszego.
             </li>
             <li>
               <strong>Ignoruje przezroczyste piksele</strong>. Jeśli obraz ma przezroczyste tło (np. logo w formacie PNG), te obszary nie są brane pod uwagę.
@@ -285,11 +285,11 @@ export default function Page() {
           <div className="mt-4 space-y-4">
             <div>
               <p className="text-dark font-semibold">Inspiracja do brandingu</p>
-              <p className="text-mid">Wgraj zdjęcie, które oddaje klimat Twojej marki — krajobraz, wnętrze, produkt. Wyciągnij z niego kolory i użyj jako bazy do identyfikacji wizualnej.</p>
+              <p className="text-mid">Wgraj zdjęcie, które oddaje klimat Twojej marki - krajobraz, wnętrze, produkt. Wyciągnij z niego kolory i użyj jako bazy do identyfikacji wizualnej.</p>
             </div>
             <div>
               <p className="text-dark font-semibold">Spójne grafiki social media</p>
-              <p className="text-mid">Masz zdjęcie produktu i chcesz dobrać do niego tło lub akcenty? Wyciągnij kolory ze zdjęcia i użyj ich w grafice — całość będzie spójna.</p>
+              <p className="text-mid">Masz zdjęcie produktu i chcesz dobrać do niego tło lub akcenty? Wyciągnij kolory ze zdjęcia i użyj ich w grafice - całość będzie spójna.</p>
             </div>
           </div>
         </SectionInfo>

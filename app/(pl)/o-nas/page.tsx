@@ -53,7 +53,7 @@ export default function AboutPage() {
 
         <SectionBasic imageSrc="/assets/arteon-sygnet-01.webp" imageAlt="logo arteon" title="Kim jesteśmy">
           <p>
-            W Arteon łączymy strategię, design i technologię w jeden proces. Wdrażamy doświadczenie z pracy dla globalnych marek w małych i średnich biznesach — tak, żeby Twoja marka była spójna, a
+            W Arteon łączymy strategię, design i technologię w jeden proces. Wdrażamy doświadczenie z pracy dla globalnych marek w małych i średnich biznesach - tak, żeby Twoja marka była spójna, a
             działania dowoziły wynik.
           </p>
           <p className="mt-2">

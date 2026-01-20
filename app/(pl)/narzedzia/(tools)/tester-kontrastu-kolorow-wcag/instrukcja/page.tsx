@@ -18,12 +18,12 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 export const metadata: Metadata = {
   title: 'Jak sprawdzić kontrast kolorów WCAG? | Tester dostępności online',
   description:
-    'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL — tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
+    'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL - tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja') },
   openGraph: {
     title: 'Jak sprawdzić kontrast kolorów WCAG? | Tester dostępności online',
     description:
-      'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL — tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
+      'Sprawdź kontrast tekstu i tła według WCAG 2.1 (poziomy AA i AAA). Wpisz kolory HEX, RGB lub HSL - tester pokaże współczynnik kontrastu i zaproponuje poprawki. Darmowe narzędzie online.',
     url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja'),
     type: 'website',
     images: [
@@ -77,7 +77,7 @@ const faqItems = [
   {
     question: 'Jaka jest różnica między poziomem AA a AAA?',
     answer:
-      'Poziom AA to minimalny standard dostępności wymagany przez większość przepisów (np. ADA w USA, dyrektywy UE). Wymaga kontrastu co najmniej 4.5:1 dla zwykłego tekstu i 3:1 dla dużego tekstu. Poziom AAA to wyższy standard — wymaga kontrastu co najmniej 7:1 dla zwykłego tekstu i 4.5:1 dla dużego tekstu. AAA zapewnia lepszą czytelność dla osób z poważniejszymi wadami wzroku, ale nie zawsze jest praktyczny do osiągnięcia dla wszystkich elementów interfejsu.',
+      'Poziom AA to minimalny standard dostępności wymagany przez większość przepisów (np. ADA w USA, dyrektywy UE). Wymaga kontrastu co najmniej 4.5:1 dla zwykłego tekstu i 3:1 dla dużego tekstu. Poziom AAA to wyższy standard - wymaga kontrastu co najmniej 7:1 dla zwykłego tekstu i 4.5:1 dla dużego tekstu. AAA zapewnia lepszą czytelność dla osób z poważniejszymi wadami wzroku, ale nie zawsze jest praktyczny do osiągnięcia dla wszystkich elementów interfejsu.',
   },
   {
     question: 'Co to jest duży tekst według WCAG?',
@@ -87,30 +87,30 @@ const faqItems = [
   {
     question: 'Czy muszę sprawdzać kontrast ikon i przycisków?',
     answer:
-      'Tak. Wytyczne WCAG 2.1 (kryterium 1.4.11) wymagają minimalnego kontrastu 3:1 dla graficznych elementów interfejsu — ikon, przycisków, pól formularzy i innych elementów, które przekazują informację lub umożliwiają interakcję. To oznacza, że np. ikona koszyka zakupowego musi mieć wystarczający kontrast z tłem, żeby użytkownik mógł ją zauważyć.',
+      'Tak. Wytyczne WCAG 2.1 (kryterium 1.4.11) wymagają minimalnego kontrastu 3:1 dla graficznych elementów interfejsu - ikon, przycisków, pól formularzy i innych elementów, które przekazują informację lub umożliwiają interakcję. To oznacza, że np. ikona koszyka zakupowego musi mieć wystarczający kontrast z tłem, żeby użytkownik mógł ją zauważyć.',
   },
   {
     question: 'Dlaczego mój kolor nie spełnia wymagań, mimo że dobrze go widzę?',
     answer:
-      'Osobiste postrzeganie koloru różni się w zależności od warunków oświetlenia, jakości monitora i indywidualnych zdolności wzrokowych. Wytyczne WCAG opierają się na obiektywnym wzorze matematycznym (relative luminance), który uwzględnia różne rodzaje zaburzeń widzenia — w tym daltonizm i osłabienie wzroku związane z wiekiem. Dlatego nawet jeśli Ty dobrze widzisz dany kolor, może być nieczytelny dla części użytkowników.',
+      'Osobiste postrzeganie koloru różni się w zależności od warunków oświetlenia, jakości monitora i indywidualnych zdolności wzrokowych. Wytyczne WCAG opierają się na obiektywnym wzorze matematycznym (relative luminance), który uwzględnia różne rodzaje zaburzeń widzenia - w tym daltonizm i osłabienie wzroku związane z wiekiem. Dlatego nawet jeśli Ty dobrze widzisz dany kolor, może być nieczytelny dla części użytkowników.',
   },
   {
     question: 'Jak działa funkcja Dopasuj?',
     answer:
-      'Funkcja Dopasuj automatycznie szuka wariantu koloru tekstu, który spełnia wybrany próg kontrastu (np. AA dla tekstu zwykłego). Narzędzie zachowuje odcień (hue) i nasycenie (saturation) oryginalnego koloru, zmieniając tylko jasność (lightness) — tak żeby proponowany kolor był jak najbardziej zbliżony do oryginału, ale już zgodny z WCAG. Jeśli znajdzie odpowiedni wariant, wyświetla go z możliwością skopiowania lub ustawienia jako nowy kolor tekstu.',
+      'Funkcja Dopasuj automatycznie szuka wariantu koloru tekstu, który spełnia wybrany próg kontrastu (np. AA dla tekstu zwykłego). Narzędzie zachowuje odcień (hue) i nasycenie (saturation) oryginalnego koloru, zmieniając tylko jasność (lightness) - tak żeby proponowany kolor był jak najbardziej zbliżony do oryginału, ale już zgodny z WCAG. Jeśli znajdzie odpowiedni wariant, wyświetla go z możliwością skopiowania lub ustawienia jako nowy kolor tekstu.',
   },
   {
-    question: 'Widzę komunikat o błędzie formatu koloru — co zrobić?',
+    question: 'Widzę komunikat o błędzie formatu koloru - co zrobić?',
     answer:
       'Sprawdź format koloru. Kod HEX powinien zaczynać się od # i zawierać 3 lub 6 znaków (np. #fff lub #ffffff). Dla formatu RGB sprawdź, czy wartości są oddzielone przecinkami i mieszczą się w zakresie 0-255.',
   },
   {
-    question: 'Funkcja Dopasuj nie znajduje odpowiedniego koloru — dlaczego?',
+    question: 'Funkcja Dopasuj nie znajduje odpowiedniego koloru - dlaczego?',
     answer:
       'Gdy tło i tekst mają zbliżoną jasność w tym samym odcieniu, algorytm może nie znaleźć wariantu spełniającego wymagania bez zmiany odcienia. W takim przypadku rozważ zmianę koloru tła lub wybór zupełnie innego koloru tekstu.',
   },
   {
-    question: 'Kolor w próbniku nie odpowiada wpisanemu kodowi — dlaczego?',
+    question: 'Kolor w próbniku nie odpowiada wpisanemu kodowi - dlaczego?',
     answer:
       'Próbnik kolorów w przeglądarce obsługuje tylko format HEX bez przezroczystości. Jeśli wpiszesz kolor w formacie RGBA lub HSLA z przezroczystością, próbnik pokaże tylko część kolorową (bez alpha). Obliczenia kontrastu nadal uwzględniają przezroczystość.',
   },
@@ -142,19 +142,19 @@ export default function InstrukcjaPage() {
 
         <SectionInfo title="Co to jest kontrast kolorów i dlaczego jest ważny?">
           <p className="text-mid">
-            Kontrast to różnica jasności między dwoma kolorami — na przykład między kolorem tekstu a kolorem tła. Im wyższa ta różnica, tym łatwiej odróżnić tekst od tła i go przeczytać.
+            Kontrast to różnica jasności między dwoma kolorami - na przykład między kolorem tekstu a kolorem tła. Im wyższa ta różnica, tym łatwiej odróżnić tekst od tła i go przeczytać.
           </p>
           <p className="text-mid mt-3">
             Dlaczego to ma znaczenie? Około 300 milionów ludzi na świecie ma różne formy zaburzeń widzenia kolorów, a kolejne miliony mają osłabiony wzrok z powodu wieku lub chorób oczu. Słaby
             kontrast sprawia, że tekst staje się dla nich nieczytelny.
           </p>
           <p className="text-mid mt-3">
-            Ale nie tylko osoby z wadami wzroku korzystają z dobrego kontrastu. Przeglądanie strony na telefonie w pełnym słońcu lub na starszym, wyblakłym monitorze wymaga wysokiego kontrastu — w
+            Ale nie tylko osoby z wadami wzroku korzystają z dobrego kontrastu. Przeglądanie strony na telefonie w pełnym słońcu lub na starszym, wyblakłym monitorze wymaga wysokiego kontrastu - w
             każdej z tych sytuacji dobra czytelność ma kluczowe znaczenie.
           </p>
           <p className="text-mid mt-3">
             <strong>WCAG</strong> (Web Content Accessibility Guidelines) to międzynarodowe wytyczne dostępności stron internetowych, które określają minimalne wartości kontrastu. Spełnienie tych
-            wytycznych oznacza, że strona jest czytelna dla jak największej liczby użytkowników — i często jest wymagane prawnie w wielu krajach (w tym w Unii Europejskiej).
+            wytycznych oznacza, że strona jest czytelna dla jak największej liczby użytkowników - i często jest wymagane prawnie w wielu krajach (w tym w Unii Europejskiej).
           </p>
         </SectionInfo>
 
@@ -163,7 +163,7 @@ export default function InstrukcjaPage() {
         <SectionInfo title="Co oznaczają poziomy WCAG AA i AAA?">
           <p className="text-mid mb-4">Wytyczne WCAG definiują dwa główne poziomy zgodności dla kontrastu kolorów:</p>
 
-          <h3 className="h4 mb-2">Poziom AA — standard minimalny</h3>
+          <h3 className="h4 mb-2">Poziom AA - standard minimalny</h3>
           <p className="text-mid mb-4">
             Poziom AA jest uznawany za minimalny akceptowalny standard dostępności. Większość przepisów prawnych dotyczących dostępności (np. dyrektywa UE o dostępności stron internetowych) wymaga
             właśnie tego poziomu. Wymagania:
@@ -180,7 +180,7 @@ export default function InstrukcjaPage() {
             </li>
           </ul>
 
-          <h3 className="h4 mb-2">Poziom AAA — standard rozszerzony</h3>
+          <h3 className="h4 mb-2">Poziom AAA - standard rozszerzony</h3>
           <p className="text-mid mb-4">Poziom AAA zapewnia lepszą czytelność dla osób z poważniejszymi wadami wzroku. Wymagania:</p>
           <ul className="text-mid mb-6 list-disc space-y-1 pl-5">
             <li>
@@ -192,7 +192,7 @@ export default function InstrukcjaPage() {
           </ul>
 
           <p className="text-mid">
-            <strong>Która wartość oznacza lepszy kontrast?</strong> Wyższa. Skala idzie od 1:1 (brak kontrastu — np. biały tekst na białym tle) do 21:1 (maksymalny kontrast — czarny tekst na białym
+            <strong>Która wartość oznacza lepszy kontrast?</strong> Wyższa. Skala idzie od 1:1 (brak kontrastu - np. biały tekst na białym tle) do 21:1 (maksymalny kontrast - czarny tekst na białym
             tle lub odwrotnie).
           </p>
         </SectionInfo>
@@ -212,7 +212,7 @@ export default function InstrukcjaPage() {
             {
               icon: <RiPaintBrushLine className="h-6 w-6" />,
               title: '2. Wybierz kolor tła',
-              description: 'Analogicznie wprowadź kolor tła (background). Może to być kolor sekcji, bloku lub całej strony — zależnie od tego, co testujesz.',
+              description: 'Analogicznie wprowadź kolor tła (background). Może to być kolor sekcji, bloku lub całej strony - zależnie od tego, co testujesz.',
             },
             {
               icon: <RiCheckboxCircleLine className="h-6 w-6" />,
@@ -222,7 +222,7 @@ export default function InstrukcjaPage() {
             {
               icon: <RiEqualizerLine className="h-6 w-6" />,
               title: '4. Dostosuj kolory',
-              description: 'Jeśli kontrast jest za niski — użyj funkcji Dopasuj, żeby narzędzie zaproponowało poprawiony kolor. Możesz też ręcznie zmienić któryś z kolorów i sprawdzić ponownie.',
+              description: 'Jeśli kontrast jest za niski - użyj funkcji Dopasuj, żeby narzędzie zaproponowało poprawiony kolor. Możesz też ręcznie zmienić któryś z kolorów i sprawdzić ponownie.',
             },
           ]}
         />
@@ -272,36 +272,36 @@ export default function InstrukcjaPage() {
           <p className="text-mid mb-4">Po wprowadzeniu kolorów narzędzie wyświetla trzy sekcje wyników:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Tekst zwykły</strong> — wymagany kontrast 4.5:1 (AA) lub 7:1 (AAA).
+              <strong>Tekst zwykły</strong> - wymagany kontrast 4.5:1 (AA) lub 7:1 (AAA).
             </li>
             <li>
-              <strong>Tekst duży / pogrubiony</strong> — wymagany kontrast 3:1 (AA) lub 4.5:1 (AAA).
+              <strong>Tekst duży / pogrubiony</strong> - wymagany kontrast 3:1 (AA) lub 4.5:1 (AAA).
             </li>
             <li>
-              <strong>Ikona</strong> — wymagany kontrast 3:1 (AA) dla elementów graficznych.
+              <strong>Ikona</strong> - wymagany kontrast 3:1 (AA) dla elementów graficznych.
             </li>
           </ul>
-          <p className="text-mid mt-3">Zielony badge oznacza spełniony wymóg, czerwony — wymaga poprawy.</p>
+          <p className="text-mid mt-3">Zielony badge oznacza spełniony wymóg, czerwony - wymaga poprawy.</p>
         </SectionDemo>
 
         <Gap variant="line" />
 
-        <SectionInfo title="Funkcja Dopasuj — co robi?">
+        <SectionInfo title="Funkcja Dopasuj - co robi?">
           <p className="text-mid mb-4">
             Funkcja <strong>Dopasuj</strong> automatycznie szuka wariantu koloru tekstu, który spełni wybrany próg kontrastu. Jak to działa:
           </p>
           <ol className="text-mid mb-4 list-decimal space-y-2 pl-5">
             <li>
-              <strong>Wybierz cel dopasowania</strong> — z rozwijanej listy wybierz, jaki poziom kontrastu chcesz osiągnąć (np. AA dla tekstu zwykłego, AAA dla tekstu dużego).
+              <strong>Wybierz cel dopasowania</strong> - z rozwijanej listy wybierz, jaki poziom kontrastu chcesz osiągnąć (np. AA dla tekstu zwykłego, AAA dla tekstu dużego).
             </li>
             <li>
-              <strong>Kliknij Dopasuj</strong> — narzędzie przeszuka warianty jasności koloru tekstu, szukając takiego, który spełnia wymagania.
+              <strong>Kliknij Dopasuj</strong> - narzędzie przeszuka warianty jasności koloru tekstu, szukając takiego, który spełnia wymagania.
             </li>
             <li>
-              <strong>Sprawdź propozycję</strong> — jeśli narzędzie znajdzie odpowiedni wariant, wyświetli go wraz z obliczonym współczynnikiem kontrastu.
+              <strong>Sprawdź propozycję</strong> - jeśli narzędzie znajdzie odpowiedni wariant, wyświetli go wraz z obliczonym współczynnikiem kontrastu.
             </li>
             <li>
-              <strong>Zastosuj lub skopiuj</strong> — kliknij Ustaw, żeby użyć zaproponowanego koloru jako nowego koloru tekstu, lub skopiuj kod koloru do schowka.
+              <strong>Zastosuj lub skopiuj</strong> - kliknij Ustaw, żeby użyć zaproponowanego koloru jako nowego koloru tekstu, lub skopiuj kod koloru do schowka.
             </li>
           </ol>
           <p className="text-mid">
@@ -309,7 +309,7 @@ export default function InstrukcjaPage() {
             oryginału, ale już zgodny z wybranym poziomem WCAG.
           </p>
           <p className="text-mid mt-3">
-            <strong>Uwaga:</strong> Nie zawsze możliwe jest znalezienie odpowiedniego wariantu — np. gdy tło jest bardzo jasne, a kolor tekstu również jasny, może nie istnieć wariant tego samego
+            <strong>Uwaga:</strong> Nie zawsze możliwe jest znalezienie odpowiedniego wariantu - np. gdy tło jest bardzo jasne, a kolor tekstu również jasny, może nie istnieć wariant tego samego
             odcienia spełniający wymagania. W takim przypadku narzędzie wyświetli komunikat o błędzie.
           </p>
         </SectionInfo>
@@ -321,45 +321,45 @@ export default function InstrukcjaPage() {
 
           <h3 className="h4 mb-2">HEX</h3>
           <p className="text-mid mb-2">
-            Format szesnastkowy — najpopularniejszy w projektowaniu stron. Zaczyna się od znaku <code className="rounded bg-black/5 px-1">#</code> i zawiera 3 lub 6 znaków (cyfry 0-9 i litery A-F).
+            Format szesnastkowy - najpopularniejszy w projektowaniu stron. Zaczyna się od znaku <code className="rounded bg-black/5 px-1">#</code> i zawiera 3 lub 6 znaków (cyfry 0-9 i litery A-F).
           </p>
           <ul className="text-mid mb-4 list-disc space-y-1 pl-5">
             <li>
-              <code className="rounded bg-black/5 px-1">#fff</code> — biały (skrócona forma)
+              <code className="rounded bg-black/5 px-1">#fff</code> - biały (skrócona forma)
             </li>
             <li>
-              <code className="rounded bg-black/5 px-1">#ffffff</code> — biały (pełna forma)
+              <code className="rounded bg-black/5 px-1">#ffffff</code> - biały (pełna forma)
             </li>
             <li>
-              <code className="rounded bg-black/5 px-1">#1a73e8</code> — niebieski
+              <code className="rounded bg-black/5 px-1">#1a73e8</code> - niebieski
             </li>
           </ul>
 
           <h3 className="h4 mb-2">RGB / RGBA</h3>
           <p className="text-mid mb-2">
-            Format oparty na trzech kanałach: czerwony (Red), zielony (Green), niebieski (Blue). Każdy kanał przyjmuje wartość od 0 do 255. Wariant RGBA dodaje czwarty parametr — przezroczystość
+            Format oparty na trzech kanałach: czerwony (Red), zielony (Green), niebieski (Blue). Każdy kanał przyjmuje wartość od 0 do 255. Wariant RGBA dodaje czwarty parametr - przezroczystość
             (alpha) od 0 do 1.
           </p>
           <ul className="text-mid mb-4 list-disc space-y-1 pl-5">
             <li>
-              <code className="rounded bg-black/5 px-1">rgb(255, 255, 255)</code> — biały
+              <code className="rounded bg-black/5 px-1">rgb(255, 255, 255)</code> - biały
             </li>
             <li>
-              <code className="rounded bg-black/5 px-1">rgba(0, 0, 0, 0.8)</code> — czarny z 80% krycia
+              <code className="rounded bg-black/5 px-1">rgba(0, 0, 0, 0.8)</code> - czarny z 80% krycia
             </li>
           </ul>
 
           <h3 className="h4 mb-2">HSL / HSLA</h3>
           <p className="text-mid mb-2">
             Format oparty na odcieniu (Hue, 0-360°), nasyceniu (Saturation, 0-100%) i jasności (Lightness, 0-100%). Wariant HSLA dodaje przezroczystość. Ten format jest przydatny, gdy chcesz
-            modyfikować jasność lub nasycenie koloru — każdy parametr jest niezależny.
+            modyfikować jasność lub nasycenie koloru - każdy parametr jest niezależny.
           </p>
           <ul className="text-mid mb-4 list-disc space-y-1 pl-5">
             <li>
-              <code className="rounded bg-black/5 px-1">hsl(0, 0%, 100%)</code> — biały
+              <code className="rounded bg-black/5 px-1">hsl(0, 0%, 100%)</code> - biały
             </li>
             <li>
-              <code className="rounded bg-black/5 px-1">hsla(217, 91%, 60%, 0.9)</code> — niebieski z 90% krycia
+              <code className="rounded bg-black/5 px-1">hsla(217, 91%, 60%, 0.9)</code> - niebieski z 90% krycia
             </li>
           </ul>
 
@@ -376,7 +376,7 @@ export default function InstrukcjaPage() {
 
         <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do testera kontrastu WCAG" btnOneLink="/narzedzia/tester-kontrastu-kolorow-wcag" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa tester kontrastu, możesz sprawdzić kolory na swojej stronie. Jeśli potrzebujesz pomocy z dostępnością i optymalizacją strony —{' '}
+            Teraz, gdy wiesz jak działa tester kontrastu, możesz sprawdzić kolory na swojej stronie. Jeśli potrzebujesz pomocy z dostępnością i optymalizacją strony -{' '}
             <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> zgodnych z wytycznymi WCAG.
           </p>
         </SectionInfo>

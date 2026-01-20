@@ -18,7 +18,7 @@ import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 import './globals.css';
 
-// site scaffold only — no production behavior changes while flag disabled
+// site scaffold only - no production behavior changes while flag disabled
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
@@ -91,7 +91,7 @@ const websiteJsonLd = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // site scaffold only — no production behavior changes while flag disabled
+  // site scaffold only - no production behavior changes while flag disabled
   const locale: Locale = 'pl';
   // When SITE_BY_DOMAIN_ENABLED=false, getActiveSiteKey() always returns 'pl'
   const siteKey = getActiveSiteKey();

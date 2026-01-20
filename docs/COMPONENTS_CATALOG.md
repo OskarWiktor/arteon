@@ -525,8 +525,8 @@ Struktura repo (w uproszczeniu):
   - **[render]** renderuje kwadraty kolorów z wartościami HEX.
   - **[a11y]** `aria-label` i `title` z wartością koloru.
 - **Props**:
-  - `colors: string[]` — tablica kolorów HEX (2-6 elementów).
-  - `label?: string` — opcjonalna etykieta nad paletą.
+  - `colors: string[]` - tablica kolorów HEX (2-6 elementów).
+  - `label?: string` - opcjonalna etykieta nad paletą.
 - **Użycie**: blok `colorPalette` w `contentBlocks` artykułów.
 
 ### `TableBlock` (`components/ui/TableBlock.tsx`)
@@ -637,7 +637,7 @@ Struktura repo (w uproszczeniu):
   - **[background]** opcjonalne tło i overlay.
   - **[variant contact]** variant `contact` z okrągłymi ikonami i wycentrowanym tekstem.
 - **Props** (kluczowe):
-  - **`variant`**: `'default' | 'contact'` — styl sekcji (domyślnie `'default'`).
+  - **`variant`**: `'default' | 'contact'` - styl sekcji (domyślnie `'default'`).
 
 #### `SectionProcess` (`components/ui/sections/SectionProcess.tsx`)
 
@@ -647,8 +647,8 @@ Struktura repo (w uproszczeniu):
   - **[arrows]** strzałki między krokami na desktop.
   - **[steps]** każdy krok z numerem, tytułem i ikoną w ciemnym okrągłym kontenerze.
 - **Props**:
-  - **`title`**: `string` — opcjonalny nagłówek sekcji (klasa h6).
-  - **`steps`**: `{ number, title, icon }[]` — tablica kroków.
+  - **`title`**: `string` - opcjonalny nagłówek sekcji (klasa h6).
+  - **`steps`**: `{ number, title, icon }[]` - tablica kroków.
 
 #### `SectionMetrics` (`components/ui/sections/SectionMetrics.tsx`)
 
@@ -658,8 +658,8 @@ Struktura repo (w uproszczeniu):
   - **[progress bars]** paski postępu z kolorami i wartościami procentowymi.
   - **[inverse]** opcja odwróconego obliczania dla metryk gdzie niższa wartość jest lepsza.
 - **Props**:
-  - **`title`**: `string` — opcjonalny nagłówek sekcji.
-  - **`metrics`**: `{ label, value, unit, max, color, inverse? }[]` — tablica metryk.
+  - **`title`**: `string` - opcjonalny nagłówek sekcji.
+  - **`metrics`**: `{ label, value, unit, max, color, inverse? }[]` - tablica metryk.
 
 #### `SectionTabs` (`components/ui/sections/SectionTabs.tsx`)
 
@@ -668,8 +668,8 @@ Struktura repo (w uproszczeniu):
   - **[tabs]** interaktywne zakładki z płynnym przełączaniem.
   - **[responsive]** ikony tylko na mobile, pełne nazwy na desktop.
 - **Props**:
-  - **`title`**: `string` — opcjonalny nagłówek sekcji.
-  - **`tabs`**: `{ title, icon, content }[]` — tablica zakładek.
+  - **`title`**: `string` - opcjonalny nagłówek sekcji.
+  - **`tabs`**: `{ title, icon, content }[]` - tablica zakładek.
 
 #### `SectionBento` (`components/ui/sections/SectionBento.tsx`)
 
@@ -678,8 +678,8 @@ Struktura repo (w uproszczeniu):
   - **[layout]** grid z kartami small/medium/large.
   - **[background]** opcjonalne zdjęcie w tle z overlay.
 - **Props**:
-  - **`title`**: `string` — opcjonalny nagłówek sekcji.
-  - **`items`**: `{ title, description, icon, size, backgroundImage? }[]` — tablica elementów.
+  - **`title`**: `string` - opcjonalny nagłówek sekcji.
+  - **`items`**: `{ title, description, icon, size, backgroundImage? }[]` - tablica elementów.
 
 #### `SectionInfoBanner` (`components/ui/sections/SectionInfoBanner.tsx`)
 
@@ -688,11 +688,11 @@ Struktura repo (w uproszczeniu):
   - **[layout]** ciemne tło, biały tekst, przycisk po prawej.
   - **[responsive]** układ pionowy na mobile.
 - **Props**:
-  - **`icon`**: `ReactNode` — ikona po lewej.
-  - **`text`**: `string` — treść baneru.
-  - **`highlight`**: `string` — wyróżniony tekst (np. "Promocja:").
-  - **`btnLabel`**: `string` — etykieta przycisku.
-  - **`btnLink`**: `string` — link przycisku.
+  - **`icon`**: `ReactNode` - ikona po lewej.
+  - **`text`**: `string` - treść baneru.
+  - **`highlight`**: `string` - wyróżniony tekst (np. "Promocja:").
+  - **`btnLabel`**: `string` - etykieta przycisku.
+  - **`btnLink`**: `string` - link przycisku.
 
 #### `SectionFeatureList` (`components/ui/sections/SectionFeatureList.tsx`)
 
@@ -701,8 +701,8 @@ Struktura repo (w uproszczeniu):
   - **[layout]** 2 kolumny na desktop, 1 na mobile.
   - **[checkmarks]** zielone kółka z ikonami check.
 - **Props**:
-  - **`title`**: `string` — opcjonalny nagłówek sekcji.
-  - **`features`**: `string[]` — tablica cech.
+  - **`title`**: `string` - opcjonalny nagłówek sekcji.
+  - **`features`**: `string[]` - tablica cech.
 
 ### Tools UI (`components/ui/tools/*`)
 
@@ -741,7 +741,7 @@ Struktura repo (w uproszczeniu):
   - **`isOpen`**: `boolean` - czy modal jest otwarty.
   - **`onClose`**: `() => void` - callback zamknięcia.
 - **Zależności**:
-  - `hooks/useSearch` — logika wyszukiwania.
-  - `hooks/useEscapeKey` — zamykanie na Escape.
-  - `next/navigation` — `useRouter` do nawigacji.
+  - `hooks/useSearch` - logika wyszukiwania.
+  - `hooks/useEscapeKey` - zamykanie na Escape.
+  - `next/navigation` - `useRouter` do nawigacji.
 - **UI (2025-12-19)**: Usunięto stopkę z podpowiedziami skrótów, przycisk zamknięcia to ikona X, kolory dopasowane do `text-dark/text-mid/text-light`.

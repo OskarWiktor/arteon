@@ -354,8 +354,8 @@ export default function Page() {
           btnTwoLink="/narzedzia"
         >
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa licznik, możesz zacząć optymalizować swoje meta tagi. Jeśli potrzebujesz pomocy z kompleksową optymalizacją SEO — meta tagów, treści, struktury strony i
-            widoczności w Google — <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/marketing/pozycjonowanie-stron">pozycjonowaniem stron</Link> i{' '}
+            Teraz, gdy wiesz jak działa licznik, możesz zacząć optymalizować swoje meta tagi. Jeśli potrzebujesz pomocy z kompleksową optymalizacją SEO - meta tagów, treści, struktury strony i
+            widoczności w Google - <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/marketing/pozycjonowanie-stron">pozycjonowaniem stron</Link> i{' '}
             <Link href="/uslugi/marketing/optymalizacja-seo">optymalizacją SEO</Link>.
           </p>
         </SectionInfo>

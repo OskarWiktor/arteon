@@ -527,7 +527,7 @@ export default function Page() {
         >
           <p className="text-mid">
             Teraz, gdy wiesz jak działa narzędzie, możesz przyciąć swoje zdjęcia do idealnych wymiarów. Po zmianie rozmiaru możesz też{' '}
-            <Link href="/narzedzia/jpg-png-na-webp-bez-limitu">przekonwertować obrazy na WebP</Link>, żeby zmniejszyć ich rozmiar. Jeśli potrzebujesz profesjonalnych grafik —{' '}
+            <Link href="/narzedzia/jpg-png-na-webp-bez-limitu">przekonwertować obrazy na WebP</Link>, żeby zmniejszyć ich rozmiar. Jeśli potrzebujesz profesjonalnych grafik -{' '}
             <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/projekty-graficzne">projektami graficznymi</Link>.
           </p>
         </SectionInfo>

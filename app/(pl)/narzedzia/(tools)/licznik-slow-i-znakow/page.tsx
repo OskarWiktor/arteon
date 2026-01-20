@@ -14,11 +14,11 @@ import Script from 'next/script';
 import AdSense from '@/components/ui/AdSense';
 
 export const metadata: Metadata = {
-  title: 'Licznik słów i znaków online — sprawdź długość tekstu',
+  title: 'Licznik słów i znaków online - sprawdź długość tekstu',
   description: 'Darmowy licznik słów i znaków online. Policz słowa, znaki, akapity i czas czytania. Sprawdź, czy tekst ma odpowiednią długość dla artykułu, opisu produktu czy strony usługi.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow') },
   openGraph: {
-    title: 'Licznik słów i znaków online — sprawdź długość tekstu',
+    title: 'Licznik słów i znaków online - sprawdź długość tekstu',
     description: 'Darmowy licznik słów i znaków online. Policz słowa, znaki, akapity i czas czytania. Sprawdź, czy tekst ma odpowiednią długość dla artykułu, opisu produktu czy strony usługi.',
     url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
     type: 'website',
@@ -74,19 +74,19 @@ const faqItems = [
   {
     question: 'Dlaczego zakresy słów są takie szerokie?',
     answer:
-      'Ten sam typ strony może wymagać różnej długości w zależności od złożoności tematu. Opis prostego produktu (np. kubek) to 80-150 słów — wystarczy podać materiał, pojemność i przeznaczenie. Opis laptopa to 300-400 słów, bo kupujący pyta o procesor, pamięć, ekran, baterię. Podobnie z usługami: lokalna usługa hydraulika to 500-700 słów, a kompleksowa usługa wdrożenia systemu B2B z procesem, etapami i FAQ to 1200-1500 słów.',
-    answerSchemaText: 'Szeroki zakres pozwala dopasować długość do kontekstu — prosty produkt wymaga mniej słów niż złożony.',
+      'Ten sam typ strony może wymagać różnej długości w zależności od złożoności tematu. Opis prostego produktu (np. kubek) to 80-150 słów - wystarczy podać materiał, pojemność i przeznaczenie. Opis laptopa to 300-400 słów, bo kupujący pyta o procesor, pamięć, ekran, baterię. Podobnie z usługami: lokalna usługa hydraulika to 500-700 słów, a kompleksowa usługa wdrożenia systemu B2B z procesem, etapami i FAQ to 1200-1500 słów.',
+    answerSchemaText: 'Szeroki zakres pozwala dopasować długość do kontekstu - prosty produkt wymaga mniej słów niż złożony.',
   },
   {
     question: 'Jak interpretować ocenę "za krótki" lub "za długi"?',
     answer:
-      'Ocena pokazuje, gdzie tekst znajduje się względem typowych treści danego typu. Jeśli tekst jest oznaczony jako "za krótki", ale odpowiada na wszystkie pytania czytelnika — długość jest odpowiednia. Jeśli jest "za długi", ale każdy akapit wnosi nową informację — długość jest uzasadniona.',
+      'Ocena pokazuje, gdzie tekst znajduje się względem typowych treści danego typu. Jeśli tekst jest oznaczony jako "za krótki", ale odpowiada na wszystkie pytania czytelnika - długość jest odpowiednia. Jeśli jest "za długi", ale każdy akapit wnosi nową informację - długość jest uzasadniona.',
     answerSchemaText: 'Ocena pokazuje pozycję tekstu względem typowych treści. Jeśli tekst odpowiada na pytania czytelnika, długość jest odpowiednia.',
   },
   {
     question: 'Jak licznik oblicza czas czytania?',
     answer:
-      'Narzędzie dzieli liczbę słów przez 200 — to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy — szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.',
+      'Narzędzie dzieli liczbę słów przez 200 - to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy - szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.',
     answerSchemaText: 'Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna dla typowego tekstu.',
   },
   {
@@ -112,18 +112,16 @@ export default function Page() {
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzia' }} third={{ href: '/narzedzia/licznik-slow-i-znakow', label: 'Licznik słów i znaków' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <SectionInfo title="Policz słowa i sprawdź długość tekstu">
           <p className="text-mid">
             Wklej tekst, a narzędzie policzy słowa, znaki i akapity. Zobaczysz, ile minut zajmie czytanie i czy długość pasuje do typu strony, który wybierzesz.
           </p>
           <p className="text-mid mt-3">
-            Każdy typ strony ma inny cel — opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma. Licznik pokazuje zakresy dla każdego z tych typów oparte na analizach treści, które dobrze się pozycjonują.
+            Każdy typ strony ma inny cel - opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma. Licznik pokazuje zakresy dla każdego z tych typów oparte na analizach treści, które dobrze się pozycjonują.
           </p>
         </SectionInfo>
-
-        <Gap size="sm" />
 
         <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
 
@@ -159,19 +157,19 @@ export default function Page() {
         <SectionInfo title="Co mierzy licznik?">
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Słowa</strong> — łączna liczba słów. To główny wskaźnik długości tekstu.
+              <strong>Słowa</strong> - łączna liczba słów. To główny wskaźnik długości tekstu.
             </li>
             <li>
-              <strong>Znaki (ze spacjami)</strong> — wszystkie znaki łącznie ze spacjami. Przydatne, gdy system CMS ma limit znaków (np. przy opisach na Allegro czy OLX).
+              <strong>Znaki (ze spacjami)</strong> - wszystkie znaki łącznie ze spacjami. Przydatne, gdy system CMS ma limit znaków (np. przy opisach na Allegro czy OLX).
             </li>
             <li>
-              <strong>Znaki (bez spacji)</strong> — tylko litery, cyfry i interpunkcja. Czasem wymagane przez drukarnie lub przy rozliczeniach za tekst.
+              <strong>Znaki (bez spacji)</strong> - tylko litery, cyfry i interpunkcja. Czasem wymagane przez drukarnie lub przy rozliczeniach za tekst.
             </li>
             <li>
-              <strong>Akapity</strong> — ile masz bloków tekstu oddzielonych pustymi liniami. Pomaga ocenić, czy tekst jest dobrze podzielony.
+              <strong>Akapity</strong> - ile masz bloków tekstu oddzielonych pustymi liniami. Pomaga ocenić, czy tekst jest dobrze podzielony.
             </li>
             <li>
-              <strong>Czas czytania</strong> — ile minut zajmie przeczytanie tekstu przy średniej prędkości 200 słów na minutę.
+              <strong>Czas czytania</strong> - ile minut zajmie przeczytanie tekstu przy średniej prędkości 200 słów na minutę.
             </li>
           </ul>
         </SectionInfo>
@@ -180,7 +178,7 @@ export default function Page() {
 
         <SectionInfo title="Ile słów powinien mieć tekst?" btnOne="Zobacz pełne zalecenia" btnOneLink="/narzedzia/licznik-slow-i-znakow/instrukcja">
           <p className="text-mid mb-4">
-            Poniższe zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Długość tekstu sama w sobie nie wpływa na pozycję w Google — liczy się to, czy treść odpowiada na pytania czytelnika.
+            Poniższe zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Długość tekstu sama w sobie nie wpływa na pozycję w Google - liczy się to, czy treść odpowiada na pytania czytelnika.
           </p>
           <div className="overflow-x-auto">
             <table className="text-mid w-full text-left">
@@ -195,32 +193,32 @@ export default function Page() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Opis produktu</td>
                   <td className="py-2 pr-4 whitespace-nowrap">80–400 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Prosty produkt (np. kubek) — 80-150 słów. Złożony sprzęt (np. laptop) — 300-400 słów, bo kupujący ma więcej pytań.</td>
+                  <td className="py-2 text-sm text-neutral-600">Prosty produkt (np. kubek) - 80-150 słów. Złożony sprzęt (np. laptop) - 300-400 słów, bo kupujący ma więcej pytań.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona usługi</td>
                   <td className="py-2 pr-4 whitespace-nowrap">500–1500 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Lokalna usługa (np. hydraulik) — 500-700 słów. Usługa B2B z procesem i FAQ — 1200-1500 słów.</td>
+                  <td className="py-2 text-sm text-neutral-600">Lokalna usługa (np. hydraulik) - 500-700 słów. Usługa B2B z procesem i FAQ - 1200-1500 słów.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona główna</td>
                   <td className="py-2 pr-4 whitespace-nowrap">400–1000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej — tekst ma wspierać nawigację, nie zastępować podstrony.</td>
+                  <td className="py-2 text-sm text-neutral-600">Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej - tekst ma wspierać nawigację, nie zastępować podstrony.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona ofertowa</td>
                   <td className="py-2 pr-4 whitespace-nowrap">600–2500 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Prosta oferta — 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów i odpowiedzi na obiekcje — 1500-2500 słów.</td>
+                  <td className="py-2 text-sm text-neutral-600">Prosta oferta - 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów i odpowiedzi na obiekcje - 1500-2500 słów.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Artykuł blogowy</td>
                   <td className="py-2 pr-4 whitespace-nowrap">1200–3000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Odpowiedź na proste pytanie — 1200-1800 słów. Kompleksowe zagadnienie z wieloma aspektami — 2000-3000 słów.</td>
+                  <td className="py-2 text-sm text-neutral-600">Odpowiedź na proste pytanie - 1200-1800 słów. Kompleksowe zagadnienie z wieloma aspektami - 2000-3000 słów.</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4">Poradnik</td>
                   <td className="py-2 pr-4 whitespace-nowrap">2500–6000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Wąski temat — 2500-3500 słów. Szeroki temat z wieloma krokami i przykładami — 4000-6000 słów.</td>
+                  <td className="py-2 text-sm text-neutral-600">Wąski temat - 2500-3500 słów. Szeroki temat z wieloma krokami i przykładami - 4000-6000 słów.</td>
                 </tr>
               </tbody>
             </table>

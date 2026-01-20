@@ -110,7 +110,7 @@ const toolsJsonLd = {
     {
       '@type': 'WebApplication',
       position: 9,
-      name: 'Licznik słów i znaków online — sprawdź długość tekstu',
+      name: 'Licznik słów i znaków online - sprawdź długość tekstu',
       description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
       url: 'https://www.arteonagency.pl/narzedzia/licznik-slow-i-znakow',
       applicationCategory: 'UtilityApplication',
@@ -119,7 +119,7 @@ const toolsJsonLd = {
     {
       '@type': 'WebApplication',
       position: 10,
-      name: 'Generator kodu QR online — darmowy bez limitu',
+      name: 'Generator kodu QR online - darmowy bez limitu',
       description: 'Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG. Bez logowania, bez limitu użycia.',
       url: 'https://www.arteonagency.pl/narzedzia/generator-kodu-qr',
       applicationCategory: 'UtilityApplication',

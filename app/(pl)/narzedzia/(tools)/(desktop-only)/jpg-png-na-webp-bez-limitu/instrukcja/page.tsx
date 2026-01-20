@@ -18,11 +18,11 @@ import Button from '@/components/ui/buttons/Button';
 
 export const metadata: Metadata = {
   title: 'Jak zamienić JPG i PNG na WebP? | Konwerter online bez limitu',
-  description: 'Zamień JPG i PNG na WebP online — bez limitu plików, bez wysyłania na serwer. Ustaw jakość (60-95%), pobierz wszystko jako ZIP. Instrukcja konwersji z funkcją Smart Quality.',
+  description: 'Zamień JPG i PNG na WebP online - bez limitu plików, bez wysyłania na serwer. Ustaw jakość (60-95%), pobierz wszystko jako ZIP. Instrukcja konwersji z funkcją Smart Quality.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja') },
   openGraph: {
     title: 'Jak zamienić JPG i PNG na WebP? | Konwerter online bez limitu',
-    description: 'Zamień JPG i PNG na WebP online — bez limitu plików, bez wysyłania na serwer. Ustaw jakość (60-95%), pobierz wszystko jako ZIP. Instrukcja konwersji z funkcją Smart Quality.',
+    description: 'Zamień JPG i PNG na WebP online - bez limitu plików, bez wysyłania na serwer. Ustaw jakość (60-95%), pobierz wszystko jako ZIP. Instrukcja konwersji z funkcją Smart Quality.',
     url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja'),
     type: 'website',
     images: [
@@ -77,7 +77,7 @@ const faqItems = [
   {
     question: 'Czy moje pliki są wysyłane na serwer?',
     answer:
-      'Nie. Cała konwersja odbywa się bezpośrednio w Twojej przeglądarce. Pliki nie opuszczają Twojego urządzenia — narzędzie działa całkowicie lokalnie, bez przesyłania danych na zewnętrzne serwery.',
+      'Nie. Cała konwersja odbywa się bezpośrednio w Twojej przeglądarce. Pliki nie opuszczają Twojego urządzenia - narzędzie działa całkowicie lokalnie, bez przesyłania danych na zewnętrzne serwery.',
   },
   {
     question: 'Co to jest Smart Quality i jak działa?',
@@ -92,12 +92,12 @@ const faqItems = [
   {
     question: 'Czy mogę konwertować pliki inne niż JPG i PNG?',
     answer:
-      'Narzędzie jest zoptymalizowane dla formatów JPG i PNG. Inne formaty (np. GIF, BMP, TIFF) są automatycznie pomijane przy dodawaniu. Jeśli potrzebujesz konwertować inne formaty, <a href="/kontakt">skontaktuj się z nami</a> — pomożemy dobrać odpowiednie rozwiązanie.',
+      'Narzędzie jest zoptymalizowane dla formatów JPG i PNG. Inne formaty (np. GIF, BMP, TIFF) są automatycznie pomijane przy dodawaniu. Jeśli potrzebujesz konwertować inne formaty, <a href="/kontakt">skontaktuj się z nami</a> - pomożemy dobrać odpowiednie rozwiązanie.',
   },
   {
     question: 'Co oznacza komunikat o pliku większym niż oryginał?',
     answer:
-      'Jeśli widzisz ostrzeżenie, że plik wynikowy jest większy niż oryginał, oznacza to, że oryginalny obraz był już bardzo mocno skompresowany. W takim przypadku konwersja do WebP nie przyniesie oszczędności — lepiej zostać przy oryginalnym formacie lub spróbować niższej jakości.',
+      'Jeśli widzisz ostrzeżenie, że plik wynikowy jest większy niż oryginał, oznacza to, że oryginalny obraz był już bardzo mocno skompresowany. W takim przypadku konwersja do WebP nie przyniesie oszczędności - lepiej zostać przy oryginalnym formacie lub spróbować niższej jakości.',
   },
 ];
 
@@ -108,7 +108,7 @@ export default function Page() {
 
       <HeroBanner
         title="Jak zamienić JPG i PNG na WebP online"
-        description="Konwertuj obrazy JPG i PNG na WebP bez limitu plików — wszystko lokalnie w przeglądarce. Instrukcja z ustawianiem jakości (60-95%), funkcją Smart Quality i pobieraniem jako ZIP."
+        description="Konwertuj obrazy JPG i PNG na WebP bez limitu plików - wszystko lokalnie w przeglądarce. Instrukcja z ustawianiem jakości (60-95%), funkcją Smart Quality i pobieraniem jako ZIP."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
@@ -125,7 +125,7 @@ export default function Page() {
 
         <SectionInfo title="Co to jest WebP i dlaczego warto konwertować obrazy?">
           <p className="text-mid">
-            WebP to format obrazów stworzony przez Google, który pozwala zmniejszyć rozmiar plików graficznych nawet o 25-35% w porównaniu z JPG i PNG — przy zachowaniu porównywalnej jakości
+            WebP to format obrazów stworzony przez Google, który pozwala zmniejszyć rozmiar plików graficznych nawet o 25-35% w porównaniu z JPG i PNG - przy zachowaniu porównywalnej jakości
             wizualnej. Mniejsze pliki oznaczają szybsze ładowanie strony, co przekłada się na lepsze doświadczenie użytkowników i wyższe wyniki w narzędziach takich jak{' '}
             <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">
               PageSpeed Insights
@@ -145,18 +145,18 @@ export default function Page() {
           <p className="text-mid">Narzędzie oferuje dwa sposoby dodawania plików:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>Przeciągnij i upuść</strong> — po prostu chwyć pliki z folderu na komputerze i upuść je na obszar z napisem &quot;Przeciągnij i upuść obrazy tutaj&quot;. Możesz przeciągnąć wiele
+              <strong>Przeciągnij i upuść</strong> - po prostu chwyć pliki z folderu na komputerze i upuść je na obszar z napisem &quot;Przeciągnij i upuść obrazy tutaj&quot;. Możesz przeciągnąć wiele
               plików naraz.
             </li>
             <li>
-              <strong>Kliknij, aby wybrać</strong> — kliknij w pole do dodania plików, a otworzy się okno wyboru plików. Przytrzymaj Ctrl (lub Cmd na Mac), aby wybrać kilka plików jednocześnie.
+              <strong>Kliknij, aby wybrać</strong> - kliknij w pole do dodania plików, a otworzy się okno wyboru plików. Przytrzymaj Ctrl (lub Cmd na Mac), aby wybrać kilka plików jednocześnie.
             </li>
           </ul>
           <p className="text-mid mt-3">
             Narzędzie akceptuje tylko pliki JPG i PNG. Jeśli przypadkowo dodasz plik w innym formacie (np. GIF lub BMP), zostanie on automatycznie pominięty i zobaczysz komunikat informacyjny.
           </p>
           <p className="text-mid mt-3">
-            <strong>Prywatność:</strong> Wszystkie pliki są przetwarzane lokalnie w Twojej przeglądarce. Nie są nigdzie wysyłane — nie trafiają na żaden serwer. Po zamknięciu karty lub przeglądarki
+            <strong>Prywatność:</strong> Wszystkie pliki są przetwarzane lokalnie w Twojej przeglądarce. Nie są nigdzie wysyłane - nie trafiają na żaden serwer. Po zamknięciu karty lub przeglądarki
             pliki zostają usunięte z pamięci.
           </p>
         </SectionInfo>
@@ -212,13 +212,13 @@ export default function Page() {
             Narzędzie automatycznie dobiera optymalne ustawienia. Jeśli masz obraz, który jest już mocno skompresowany (np. JPG o jakości 60%), parametry zostaną automatycznie dostosowane, aby nadal
             osiągnąć oszczędność rozmiaru.
           </p>
-          <p className="text-mid mt-3">Przy każdym pliku zobaczysz informację &quot;Użyta jakość WebP&quot; — to faktyczna jakość zastosowana po ewentualnym dostosowaniu przez Smart Quality.</p>
+          <p className="text-mid mt-3">Przy każdym pliku zobaczysz informację &quot;Użyta jakość WebP&quot; - to faktyczna jakość zastosowana po ewentualnym dostosowaniu przez Smart Quality.</p>
         </SectionInfo>
 
         <Gap variant="line" />
 
         <SectionDemo
-          title="Ustawienia jakości — co wybrać?"
+          title="Ustawienia jakości - co wybrać?"
           demo={
             <div className="space-y-4">
               <div>
@@ -247,13 +247,13 @@ export default function Page() {
           <p className="text-mid">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>80% (domyślne)</strong> — doskonały kompromis dla większości zastosowań.
+              <strong>80% (domyślne)</strong> - doskonały kompromis dla większości zastosowań.
             </li>
             <li>
-              <strong>85-90%</strong> — dla zdjęć produktowych, portfolio fotograficznych.
+              <strong>85-90%</strong> - dla zdjęć produktowych, portfolio fotograficznych.
             </li>
             <li>
-              <strong>60-70%</strong> — gdy priorytetem jest minimalizacja rozmiaru.
+              <strong>60-70%</strong> - gdy priorytetem jest minimalizacja rozmiaru.
             </li>
           </ul>
         </SectionDemo>
@@ -297,13 +297,13 @@ export default function Page() {
           <p className="text-mid">Po zakończeniu konwersji masz kilka opcji pobierania:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>Pobierz</strong> (przy każdym pliku) — pobiera pojedynczy plik WebP.
+              <strong>Pobierz</strong> (przy każdym pliku) - pobiera pojedynczy plik WebP.
             </li>
             <li>
-              <strong>Pobierz wszystkie</strong> — pobiera wszystkie pliki jeden po drugim.
+              <strong>Pobierz wszystkie</strong> - pobiera wszystkie pliki jeden po drugim.
             </li>
             <li>
-              <strong>Pobierz jako ZIP</strong> — tworzy archiwum ze wszystkimi plikami.
+              <strong>Pobierz jako ZIP</strong> - tworzy archiwum ze wszystkimi plikami.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -313,21 +313,21 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Raport oszczędności — co pokazuje?">
+        <SectionInfo title="Raport oszczędności - co pokazuje?">
           <p className="text-mid">Pod przyciskami konwersji znajduje się podsumowanie z informacjami o oszczędności:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>Łączny rozmiar wejściowy</strong> — suma rozmiarów wszystkich oryginalnych plików.
+              <strong>Łączny rozmiar wejściowy</strong> - suma rozmiarów wszystkich oryginalnych plików.
             </li>
             <li>
-              <strong>Łączny rozmiar po konwersji</strong> — suma rozmiarów wszystkich plików WebP.
+              <strong>Łączny rozmiar po konwersji</strong> - suma rozmiarów wszystkich plików WebP.
             </li>
             <li>
-              <strong>Zaoszczędzono</strong> — ile miejsca zyskałeś dzięki konwersji (w KB/MB i procentach).
+              <strong>Zaoszczędzono</strong> - ile miejsca zyskałeś dzięki konwersji (w KB/MB i procentach).
             </li>
           </ul>
           <p className="text-mid mt-3">
-            <strong>Skopiuj podsumowanie:</strong> Klikając ten przycisk skopiujesz raport do schowka w formacie tekstowym. Możesz go wkleić do notatek, e-maila lub dokumentu — przydatne, gdy musisz
+            <strong>Skopiuj podsumowanie:</strong> Klikając ten przycisk skopiujesz raport do schowka w formacie tekstowym. Możesz go wkleić do notatek, e-maila lub dokumentu - przydatne, gdy musisz
             udokumentować optymalizację grafik.
           </p>
         </SectionInfo>
@@ -354,7 +354,7 @@ export default function Page() {
               title: 'Już skompresowane obrazy',
               description: (
                 <p>
-                  Jeśli oryginalny JPG był zapisany z bardzo niską jakością, konwersja do WebP może nie przynieść dużych oszczędności. W skrajnych przypadkach plik WebP może być nawet większy — wtedy
+                  Jeśli oryginalny JPG był zapisany z bardzo niską jakością, konwersja do WebP może nie przynieść dużych oszczędności. W skrajnych przypadkach plik WebP może być nawet większy - wtedy
                   Smart Quality obniży jakość automatycznie.
                 </p>
               ),
@@ -390,7 +390,7 @@ export default function Page() {
 
         <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do konwertera" btnOneLink="/narzedzia/jpg-png-na-webp-bez-limitu" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa konwerter, możesz zacząć optymalizować swoje obrazy. Jeśli potrzebujesz pomocy z kompleksową optymalizacją strony — obrazów, kodu, hostingu i SEO technicznego —{' '}
+            Teraz, gdy wiesz jak działa konwerter, możesz zacząć optymalizować swoje obrazy. Jeśli potrzebujesz pomocy z kompleksową optymalizacją strony - obrazów, kodu, hostingu i SEO technicznego -{' '}
             <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> i{' '}
             <Link href="/uslugi/sklepy-internetowe">sklepów online</Link>, które ładują się błyskawicznie.
           </p>

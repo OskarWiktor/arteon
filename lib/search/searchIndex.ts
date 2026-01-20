@@ -16,7 +16,7 @@ export type SearchItem = {
 const STATIC_PAGES: SearchItem[] = [
   {
     title: 'Strona główna',
-    description: 'Arteon — strony internetowe, sklepy, marketing i projekty graficzne',
+    description: 'Arteon - strony internetowe, sklepy, marketing i projekty graficzne',
     href: '/',
     category: 'inne',
     categoryLabel: 'Strony',
@@ -24,7 +24,7 @@ const STATIC_PAGES: SearchItem[] = [
   },
   {
     title: 'Realizacje',
-    description: 'Portfolio projektów — strony, sklepy, grafika',
+    description: 'Portfolio projektów - strony, sklepy, grafika',
     href: '/realizacje',
     category: 'realizacje',
     categoryLabel: 'Realizacje',
@@ -32,7 +32,7 @@ const STATIC_PAGES: SearchItem[] = [
   },
   {
     title: 'Usługi',
-    description: 'Oferta usług — witryny, marketing, projekty graficzne, treści',
+    description: 'Oferta usług - witryny, marketing, projekty graficzne, treści',
     href: '/uslugi',
     category: 'uslugi',
     categoryLabel: 'Usługi',
@@ -48,7 +48,7 @@ const STATIC_PAGES: SearchItem[] = [
   },
   {
     title: 'Kontakt',
-    description: 'Skontaktuj się z nami — formularz, e-mail, telefon',
+    description: 'Skontaktuj się z nami - formularz, e-mail, telefon',
     href: '/kontakt',
     category: 'inne',
     categoryLabel: 'Strony',
@@ -64,7 +64,7 @@ const STATIC_PAGES: SearchItem[] = [
   },
   {
     title: 'Narzędzia',
-    description: 'Darmowe narzędzia online — konwertery, generatory, testery',
+    description: 'Darmowe narzędzia online - konwertery, generatory, testery',
     href: '/narzedzia',
     category: 'narzedzia',
     categoryLabel: 'Narzędzia',

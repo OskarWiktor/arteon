@@ -40,17 +40,17 @@ export default function JoinNetworkPage() {
 
         <SectionInfo
           title="Przestrzeń do rozwoju"
-          description="Budujemy przestrzeń dla utalentowanych ludzi, którzy stawiają na rozwój i jakość — w swoim tempie, w swoim kierunku, według własnych schematów."
+          description="Budujemy przestrzeń dla utalentowanych ludzi, którzy stawiają na rozwój i jakość - w swoim tempie, w swoim kierunku, według własnych schematów."
         >
           <p className="mt-2">
             Naszą misją jest stworzenie przestrzeni, w której każdy może się rozwinąć w dowolnym kierunku, niezależnie od tego, z jakiego miejsca startuje. Dotyczy to zarówno naszych klientów, jak i
-            naszych partnerów wykonawczych. Możesz być specjalistą od jednej rzeczy, ale możesz też łączyć kompetencje — na przykład robić projekty do druku i animacje. Nie narzucamy ścieżki.
+            naszych partnerów wykonawczych. Możesz być specjalistą od jednej rzeczy, ale możesz też łączyć kompetencje - na przykład robić projekty do druku i animacje. Nie narzucamy ścieżki.
             Interesuje nas to, co Ty lubisz tworzyć i w czym chcesz być coraz lepszy.
           </p>
 
           <p className="mt-3">
             W praktyce działa to tak: gdy pojawia się zlecenie, dopasowujemy projekt do osoby, której profil i styl pracy najlepiej pasują do oczekiwań klienta. Czasem przekazujemy konkretny etap, a
-            czasem cały projekt — w zależności od zakresu i od tego, co będzie dla obu stron najwygodniejsze.
+            czasem cały projekt - w zależności od zakresu i od tego, co będzie dla obu stron najwygodniejsze.
           </p>
 
           <p className="mt-3">Jeśli interesuje Cię rozwój w kierunku realizowania projektów dla różnych przedsiębiorców, napisz do nas.</p>
@@ -103,7 +103,7 @@ export default function JoinNetworkPage() {
 
         <SectionInfo
           title="Jak wygląda współpraca?"
-          description="W pierwszej kolejności chcemy poznać Ciebie jako człowieka — Twoje cele, wartości i to, w jakim kierunku chcesz iść. Po pierwszej rozmowie sprawdzamy Twój sposób myślenia i podejście do klienta na przykładowym, koncepcyjnym projekcie, który opieramy na ramach Twoich umiejętności. Po takim wstępnym projekcie decydujemy o formie współpracy. A jak ona wygląda w praktyce?"
+          description="W pierwszej kolejności chcemy poznać Ciebie jako człowieka - Twoje cele, wartości i to, w jakim kierunku chcesz iść. Po pierwszej rozmowie sprawdzamy Twój sposób myślenia i podejście do klienta na przykładowym, koncepcyjnym projekcie, który opieramy na ramach Twoich umiejętności. Po takim wstępnym projekcie decydujemy o formie współpracy. A jak ona wygląda w praktyce?"
         >
           <ul className="mt-4 list-disc pl-5">
             <li>Przekazujemy Ci klientów, dla których Twoje umiejętności są idealne.</li>
@@ -117,7 +117,7 @@ export default function JoinNetworkPage() {
         <ContactForm
           title="Napisz kilka słów o sobie"
           description="Napisz, co tworzysz, co lubisz robić i w jakim kierunku chcesz się rozwijać."
-          defaultSubject="Sieć Arteon — współpraca partnerska"
+          defaultSubject="Sieć Arteon - współpraca partnerska"
           messagePlaceholder="Hej! Zajmuję się tworzeniem... oraz... Poszukuję klientów w obszarze..."
         />
 

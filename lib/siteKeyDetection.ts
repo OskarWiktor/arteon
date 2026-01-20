@@ -1,4 +1,4 @@
-// site scaffold only — no production behavior changes while flag disabled
+// site scaffold only - no production behavior changes while flag disabled
 
 import type { SiteKey } from './config/site/pl';
 
@@ -18,7 +18,7 @@ export function getSiteKeyFromHost(host: string): SiteKey {
     return 'pl';
   }
 
-  // site scaffold only — no production behavior changes while flag disabled
+  // site scaffold only - no production behavior changes while flag disabled
   if (host.endsWith('.pl')) {
     return 'pl';
   }
@@ -41,7 +41,7 @@ export function getActiveSiteKey(host?: string): SiteKey {
     return 'pl';
   }
 
-  // site scaffold only — no production behavior changes while flag disabled
+  // site scaffold only - no production behavior changes while flag disabled
   if (!host) {
     return 'pl';
   }

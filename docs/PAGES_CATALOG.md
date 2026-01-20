@@ -57,7 +57,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[Route]** `/narzedzia/*` (wewnątrz segmentu `(tools)`)
 - **[Plik]** `app/(pl)/narzedzia/(tools)/layout.tsx`
 - **[Cel]**
-  - Layout neutralny — renderuje `children` na każdym ekranie (m.in. narzędzia wspierające mobile).
+  - Layout neutralny - renderuje `children` na każdym ekranie (m.in. narzędzia wspierające mobile).
   - Narzędzia desktop-only są w route group `(desktop-only)` i mają osobny layout blokujący na `< lg`.
 
 ### `DesktopOnlyToolsLayout` (layout dla narzędzi desktop-only)
@@ -73,7 +73,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ## Strony główne i informacyjne
 
-### `/` — Strona główna (PL)
+### `/` - Strona główna (PL)
 
 - **[Plik]** `app/(pl)/page.tsx`
 - **[Cel / content]** Landing z overview usług, krokami współpracy, tech stackiem, portfolio, opiniami i CTA.
@@ -92,7 +92,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
     - `Organization` (z `AggregateRating` + `Review`)
     - `HowTo` (proces współpracy)
 
-### `/o-nas` — O firmie
+### `/o-nas` - O firmie
 
 - **[Plik]** `app/(pl)/o-nas/page.tsx`
 - **[Cel / content]** Misja, wyróżniki, proces, tech stack, CTA.
@@ -101,7 +101,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/o-nas`.
   - **[schema]** microdata na wrapperze: `https://schema.org/AboutPage`.
 
-### `/o-nas/faq` — FAQ (współpraca)
+### `/o-nas/faq` - FAQ (współpraca)
 
 - **[Plik]** `app/(pl)/o-nas/faq/page.tsx`
 - **[Cel / content]** Obszerna strona FAQ odpowiadająca na pytania i obawy klientów (proces, wycena, terminy, SEO, utrzymanie). Wspiera SEO long-tail i ułatwia podjęcie decyzji o współpracy.
@@ -113,7 +113,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
     - JSON-LD: `BreadcrumbList` (przez `Breadcrumbs(includeJsonLd)`).
     - Microdata: `FAQPage` na wrapperze (`itemScope` + `itemType`).
 
-### `/o-nas/dolacz-do-sieci` — Dołącz do sieci
+### `/o-nas/dolacz-do-sieci` - Dołącz do sieci
 
 - **[Plik]** `app/(pl)/o-nas/dolacz-do-sieci/page.tsx`
 - **[Cel / content]** Strona partnerska (nie rekrutacyjna): zaproszenie do współpracy projektowej i dołączenia do sieci kontaktów (web/mobile/wideo/3D/animacja) + formularz kontaktowy z domyślnym tematem.
@@ -124,7 +124,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
     - JSON-LD: `BreadcrumbList` (przez `Breadcrumbs(includeJsonLd)`).
     - Microdata: `WebPage` na wrapperze (`itemScope` + `itemType`).
 
-### `/kontakt` — Kontakt
+### `/kontakt` - Kontakt
 
 - **[Plik]** `app/(pl)/kontakt/page.tsx`
 - **[Cel / content]** Kontakt + opis procesu i formularz.
@@ -132,11 +132,11 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[metadata]** canonical: `https://www.arteonagency.pl/kontakt`.
   - **[schema]** JSON-LD:
-    - `ProfessionalService` (global — `components/shared/Footer.tsx`)
+    - `ProfessionalService` (global - `components/shared/Footer.tsx`)
     - `BreadcrumbList`
     - `HowTo` (kroki kontaktu)
 
-### `/mapa-strony` — Mapa strony (dla użytkownika)
+### `/mapa-strony` - Mapa strony (dla użytkownika)
 
 - **[Plik]** `app/(pl)/mapa-strony/page.tsx`
 - **[Cel / content]** Manualna mapa strony: strony główne, usługi, realizacje, blog, narzędzia.
@@ -149,7 +149,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ## Edukacja (blog)
 
-### `/edukacja` — Lista artykułów
+### `/edukacja` - Lista artykułów
 
 - **[Plik]** `app/(pl)/edukacja/page.tsx`
 - **[Cel / content]** Lista artykułów + filtr kategorii. Opis w hero: „Artykuły i poradniki o marketingu, grafice i widoczności w sieci."
@@ -159,27 +159,27 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** title: `Edukacja - Arteon`, description: krótka i ogólna. canonical: `https://www.arteonagency.pl/edukacja`.
   - **[schema]** JSON-LD: `CollectionPage` + `ItemList` (linki do artykułów).
 
-### `/edukacja/[category]` — Lista artykułów w kategorii
+### `/edukacja/[category]` - Lista artykułów w kategorii
 
 - **[Plik]** `app/(pl)/edukacja/[category]/page.tsx`
-- **[Cel / content]** Lista artykułów dla danej kategorii (SSR/SSG). Tytuły bez prefixu „Edukacja:" — sama nazwa kategorii. Opisy krótkie i ogólne (1-2 zdania).
+- **[Cel / content]** Lista artykułów dla danej kategorii (SSR/SSG). Tytuły bez prefixu „Edukacja:" - sama nazwa kategorii. Opisy krótkie i ogólne (1-2 zdania).
 - **[Generowanie]**
-  - `generateStaticParams()` — generuje strony kategorii.
-  - `generateMetadata()` — tytuł: `{label} - Arteon`, opis per kategoria (krótki, ogólny).
+  - `generateStaticParams()` - generuje strony kategorii.
+  - `generateMetadata()` - tytuł: `{label} - Arteon`, opis per kategoria (krótki, ogólny).
 - **[Kluczowe komponenty]** `HeroBanner`, `FilterBar`, `ArticlesList`, `Wrapper`, `Gap`.
 - **[Dane / źródła]** `lib/blog` + `utils/slug` (`slugify`).
-- **[Content]** Mapowanie treści per znane kategorie (SEO/Grafika/Zdjęcia/Branding/Treści/Widoczność/Psychologia) + fallback dla nowych kategorii. Opisy są krótkie i elastyczne — bez technicznych detali.
+- **[Content]** Mapowanie treści per znane kategorie (SEO/Grafika/Zdjęcia/Branding/Treści/Widoczność/Psychologia) + fallback dla nowych kategorii. Opisy są krótkie i elastyczne - bez technicznych detali.
 - **[SEO]**
   - **[metadata]** canonical: `https://www.arteonagency.pl/edukacja/[category]`.
   - **[schema]** JSON-LD: `CollectionPage` + `ItemList` (artykuły w kategorii).
 
-### `/edukacja/[category]/[slug]` — Strona artykułu
+### `/edukacja/[category]/[slug]` - Strona artykułu
 
 - **[Plik]** `app/(pl)/edukacja/[category]/[slug]/page.tsx`
 - **[Cel / content]** Artykuł z TOC, blokami contentu, udostępnianiem i CTA.
 - **[Generowanie]**
-  - `generateStaticParams()` — generuje strony artykułów.
-  - `generateMetadata()` — metadata per artykuł.
+  - `generateStaticParams()` - generuje strony artykułów.
+  - `generateMetadata()` - metadata per artykuł.
 - **[Kluczowe komponenty]**
   - `HeroBanner`, `Breadcrumbs`, `TableOfContents`, `ButtonToTop`
   - `Badge`, `FaqPanels`, `CTABanner`
@@ -197,7 +197,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ## Realizacje (portfolio)
 
-### `/realizacje` — Lista realizacji
+### `/realizacje` - Lista realizacji
 
 - **[Plik]** `app/(pl)/realizacje/page.tsx`
 - **[Cel / content]** Lista realizacji z filtrowaniem + CTA do kontaktu.
@@ -207,13 +207,13 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** `title`: „Realizacje - strony internetowe, sklepy i projekty graficzne - Arteon", canonical: `https://www.arteonagency.pl/realizacje`, `openGraph` z obrazem realizacji.
   - **[schema]** JSON-LD: `CollectionPage` + `ItemList` (wszystkie realizacje).
 
-### `/realizacje/[slug]` — Case study realizacji
+### `/realizacje/[slug]` - Case study realizacji
 
 - **[Plik]** `app/(pl)/realizacje/[slug]/page.tsx`
 - **[Cel / content]** Szczegóły realizacji (opis, bloki contentu, statystyki, FAQ, CTA).
 - **[Generowanie]**
-  - `generateStaticParams()` — generuje strony realizacji.
-  - `generateMetadata()` — metadata per realizacja.
+  - `generateStaticParams()` - generuje strony realizacji.
+  - `generateMetadata()` - metadata per realizacja.
 - **[Kluczowe komponenty]**
   - `HeroBanner`, `Breadcrumbs`, `Wrapper`, `Gap`, `Badge`
   - `TableOfContents`, `SectionInfo`
@@ -230,7 +230,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ## Narzędzia
 
-### `/narzedzia` — Lista narzędzi
+### `/narzedzia` - Lista narzędzi
 
 - **[Plik]** `app/(pl)/narzedzia/page.tsx`
 - **[Cel / content]** Lista narzędzi online (karty/sekcje) + opis.
@@ -239,7 +239,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia`.
   - **[schema]** JSON-LD: `ItemList` z elementami typu `WebApplication`.
 
-### `/narzedzia/jpg-png-na-webp-bez-limitu` — Konwerter JPG/PNG → WebP
+### `/narzedzia/jpg-png-na-webp-bez-limitu` - Konwerter JPG/PNG → WebP
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
 - **[Cel / content]** Konwersja obrazów do WebP w przeglądarce.
@@ -249,7 +249,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[schema]** JSON-LD: `WebApplication`.
   - **[uwagi]** Link do pełnej instrukcji w sekcji kroków.
 
-### `/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja` — Instrukcja konwertera WebP
+### `/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja` - Instrukcja konwertera WebP
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania konwertera JPG/PNG na WebP. Wyjaśnia: co to jest WebP, jak dodać pliki (drag&drop, wybór), statusy plików (Oczekuje/Przetwarzanie/Gotowe/Błąd), mechanizm Smart Quality, ustawienia jakości, pobieranie (pojedynczo, wszystkie, ZIP), raport oszczędności. Zawiera FAQ (5 pytań).
@@ -258,7 +258,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` (4 kroki).
 
-### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia` — Zmiana rozmiaru i kadrowanie
+### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia` - Zmiana rozmiaru i kadrowanie
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
 - **[Cel / content]** Zmiana rozmiaru / kadrowanie zdjęcia (client-side).
@@ -267,7 +267,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[schema]** JSON-LD: `WebApplication`.
   - **[uwagi]** URL w `schema.url` i breadcrumbs jest spójny z canonical. Link do pełnej instrukcji.
 
-### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja` — Instrukcja kadrowania i zmiany rozmiaru
+### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja` - Instrukcja kadrowania i zmiany rozmiaru
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania narzędzia do kadrowania i zmiany rozmiaru zdjęć. Wyjaśnia jak dodać obraz, tryby ustawiania rozmiaru (pixels vs preset), tabelę presetów z zastosowaniami, jak kadrować (przeciąganie, uchwyty, zoom), siatkę 3×3 i regułę trójpodziału, kształty kadru (prostokąt, kwadrat, koło), formaty eksportu (JPG/PNG/WebP) i proporcje (aspect ratio). Zawiera FAQ.
@@ -276,7 +276,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
-### `/narzedzia/darmowy-generator-favicon-ico` — Generator favicon (.ico)
+### `/narzedzia/darmowy-generator-favicon-ico` - Generator favicon (.ico)
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
 - **[Cel / content]** Generowanie favicon i paczki assetów.
@@ -285,7 +285,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[schema]** JSON-LD: `WebApplication`.
   - **[uwagi]** Link do pełnej instrukcji.
 
-### `/narzedzia/darmowy-generator-favicon-ico/instrukcja` — Instrukcja generatora favicon
+### `/narzedzia/darmowy-generator-favicon-ico/instrukcja` - Instrukcja generatora favicon
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania generatora favicon. Wyjaśnia: co to jest favicon i do czego służy, jakie rozmiary ikon są potrzebne (favicon.ico, 16x16, 32x32, 180x180, 192x192, 512x512), jak korzystać z generatora (4 kroki), opcje generowania (tło, manifest, auto-download), jak pobrać pliki (ZIP vs pojedynczo), gdzie i jak wgrać favicon (WordPress, HTML, Next.js), jaki obraz źródłowy działa najlepiej. Zawiera FAQ (5 pytań).
@@ -294,7 +294,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList`.
 
-### `/narzedzia/licznik-dlugosci-meta-title-i-description` — Licznik meta title/description
+### `/narzedzia/licznik-dlugosci-meta-title-i-description` - Licznik meta title/description
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/page.tsx`
 - **[Cel / content]** Pomiar długości meta tagów (znaki/piksele) i podgląd.
@@ -302,7 +302,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
-### `/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja` — Instrukcja licznika meta title/description
+### `/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja` - Instrukcja licznika meta title/description
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania licznika meta title i description. Wyjaśnia czym są meta tagi, dlaczego długość ma znaczenie, jak interpretować wyniki (statusy, metryki), jak działa podgląd snippet i zawiera FAQ.
@@ -311,7 +311,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
-### `/narzedzia/tester-kontrastu-kolorow-wcag` — Tester kontrastu WCAG
+### `/narzedzia/tester-kontrastu-kolorow-wcag` - Tester kontrastu WCAG
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
 - **[Cel / content]** Sprawdzenie kontrastu (WCAG) dla kolorów.
@@ -319,7 +319,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
-### `/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja` — Instrukcja testera kontrastu WCAG
+### `/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja` - Instrukcja testera kontrastu WCAG
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania testera kontrastu kolorów WCAG. Wyjaśnia poziomy AA/AAA, formaty kolorów, interpretację wyników, funkcję Dopasuj i zawiera FAQ.
@@ -328,7 +328,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
-### `/narzedzia/generator-palety-kolorow-z-obrazu` — Paleta kolorów z obrazu
+### `/narzedzia/generator-palety-kolorow-z-obrazu` - Paleta kolorów z obrazu
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/page.tsx`
 - **[Cel / content]** Ekstrakcja dominujących kolorów z obrazu/logo (client-side) i kopiowanie palety jako HEX. Skrócona instrukcja (3 kroki) + link do pełnej instrukcji.
@@ -336,7 +336,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
-### `/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja` — Instrukcja generatora palety kolorów z obrazu
+### `/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja` - Instrukcja generatora palety kolorów z obrazu
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania generatora palety kolorów z obrazu. Wyjaśnia jak dodać obraz (drag&drop vs klik, formaty PNG/JPG/SVG), co robi narzędzie z obrazem (algorytm prostym językiem), jak skopiować kolory, jakie obrazy dają najlepsze wyniki (logo vs zdjęcie, przezroczyste tło), najczęstsze problemy i ich rozwiązania. Zawiera FAQ (5 pytań) i linki do powiązanych narzędzi.
@@ -345,7 +345,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
-### `/narzedzia/generator-palet-kolorow-online` — Generator palet kolorów
+### `/narzedzia/generator-palet-kolorow-online` - Generator palet kolorów
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/page.tsx`
 - **[Cel / content]** Generowanie palet kolorów (client-side).
@@ -353,7 +353,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
-### `/narzedzia/generator-palet-kolorow-online/instrukcja` — Instrukcja generatora palet kolorów
+### `/narzedzia/generator-palet-kolorow-online/instrukcja` - Instrukcja generatora palet kolorów
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania generatora palet kolorów. Wyjaśnia jak wybrać kolor bazowy, jak działają poszczególne palety (monochromatyczna, analogiczna, komplementarna, triadyczna, split-complementary, pastelowa, ciemna, tonalna, minimalistyczna), jak skopiować kolory i najczęstsze problemy. Zawiera FAQ.
@@ -362,7 +362,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/generator-palet-kolorow-online/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList`.
 
-### `/narzedzia/generator-kodu-qr` — Generator kodu QR
+### `/narzedzia/generator-kodu-qr` - Generator kodu QR
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-kodu-qr/page.tsx`
 - **[Cel / content]** Generowanie kodów QR (URL, tekst, vCard, e-mail, telefon) z opcjami personalizacji (rozmiar, kolory, poziom korekcji błędów). Pobieranie w PNG/SVG.
@@ -370,7 +370,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
-### `/narzedzia/generator-kodu-qr/instrukcja` — Instrukcja generatora kodów QR
+### `/narzedzia/generator-kodu-qr/instrukcja` - Instrukcja generatora kodów QR
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/generator-kodu-qr/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja użytkowania generatora kodów QR. Wyjaśnia co to jest kod QR, co można zakodować (URL, tekst, vCard, e-mail, telefon), jak wygenerować kod krok po kroku, opcje personalizacji (rozmiar, margines, kolory), poziomy korekcji błędów, formaty pobierania (PNG vs SVG), zastosowania i jak przetestować kod przed drukiem. Zawiera FAQ.
@@ -379,7 +379,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/generator-kodu-qr/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList`.
 
-### `/narzedzia/darmowy-generator-stopki-mailowej` — Generator stopki mailowej
+### `/narzedzia/darmowy-generator-stopki-mailowej` - Generator stopki mailowej
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/page.tsx`
 - **[Cel / content]** Generator HTML stopki mailowej.
@@ -387,7 +387,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `WebApplication`.
 
-### `/narzedzia/darmowy-generator-stopki-mailowej/instrukcja` — Instrukcja generatora stopki mailowej
+### `/narzedzia/darmowy-generator-stopki-mailowej/instrukcja` - Instrukcja generatora stopki mailowej
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
 - **[Cel / content]** Szczegółowa instrukcja krok po kroku: jak wypełnić dane, wybrać układ, dodać CTA, linki do mediów społecznościowych, dostosować wygląd i skopiować stopkę do Gmail/Outlook.
@@ -400,7 +400,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ## Usługi (overview)
 
-### `/uslugi` — Strona zbiorcza usług
+### `/uslugi` - Strona zbiorcza usług
 
 - **[Plik]** `app/(pl)/uslugi/page.tsx`
 - **[Cel / content]** Lista usług (sekcje: witryny, projekty graficzne, marketing, tworzenie treści) + linkowanie do podstron.
@@ -411,9 +411,9 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ---
 
-## Usługi — marketing
+## Usługi - marketing
 
-### `/uslugi/marketing` — Hub marketingu
+### `/uslugi/marketing` - Hub marketingu
 
 - **[Plik]** `app/(pl)/uslugi/marketing/page.tsx`
 - **[Cel / content]** Oferta marketingu + korzyści, proces, cennik, kontakt.
@@ -421,7 +421,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `ItemList` (podstrony usług marketingowych) + często `BreadcrumbList`.
 
-### `/uslugi/marketing/audyt-seo` — Audyt SEO
+### `/uslugi/marketing/audyt-seo` - Audyt SEO
 
 - **[Plik]** `app/(pl)/uslugi/marketing/audyt-seo/page.tsx`
 - **[Cel / content]** Opis audytu, proces, pricing, FAQ, kontakt.
@@ -429,7 +429,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `Service` (przez `buildServiceSchema`) + `BreadcrumbList` + (opcjonalnie) `FAQPage`.
 
-### `/uslugi/marketing/optymalizacja-seo` — Optymalizacja SEO
+### `/uslugi/marketing/optymalizacja-seo` - Optymalizacja SEO
 
 - **[Plik]** `app/(pl)/uslugi/marketing/optymalizacja-seo/page.tsx`
 - **[Cel / content]** Wdrożenia techniczne/treściowe po audycie + pricing + FAQ.
@@ -437,7 +437,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `Service` (przez `buildServiceSchema`) + (zwykle) breadcrumbs/FAQ.
 
-### `/uslugi/marketing/pozycjonowanie-stron` — Pozycjonowanie
+### `/uslugi/marketing/pozycjonowanie-stron` - Pozycjonowanie
 
 - **[Plik]** `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx`
 - **[Cel / content]** Stała usługa SEO (strategia + treści + linkowanie) + pricing + FAQ.
@@ -447,9 +447,9 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ---
 
-## Usługi — witryny i treści
+## Usługi - witryny i treści
 
-### `/uslugi/strony-internetowe` — Strony internetowe
+### `/uslugi/strony-internetowe` - Strony internetowe
 
 - **[Plik]** `app/(pl)/uslugi/strony-internetowe/page.tsx`
 - **[Cel / content]** Oferta tworzenia stron (proces, tech, pricing, FAQ, portfolio).
@@ -457,7 +457,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `Service` (przez `buildServiceSchema`) + breadcrumbs/FAQ.
 
-### `/uslugi/strony-internetowe/optymalizacja-strony-wordpress` — Optymalizacja WordPress
+### `/uslugi/strony-internetowe/optymalizacja-strony-wordpress` - Optymalizacja WordPress
 
 - **[Plik]** `app/(pl)/uslugi/strony-internetowe/optymalizacja-strony-wordpress/page.tsx`
 - **[Cel / content]** Usprawnienie i optymalizacja strony na WP (SEO/szybkość/UX) + pricing + FAQ.
@@ -465,7 +465,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `Service` (przez `buildServiceSchema`) + breadcrumbs/FAQ.
 
-### `/uslugi/sklepy-internetowe` — Sklepy internetowe
+### `/uslugi/sklepy-internetowe` - Sklepy internetowe
 
 - **[Plik]** `app/(pl)/uslugi/sklepy-internetowe/page.tsx`
 - **[Cel / content]** Oferta tworzenia sklepów (proces, tech, pricing, FAQ, portfolio).
@@ -473,7 +473,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `Service` (przez `buildServiceSchema`) + breadcrumbs/FAQ.
 
-### `/uslugi/blogi-internetowe` — Blogi internetowe
+### `/uslugi/blogi-internetowe` - Blogi internetowe
 
 - **[Plik]** `app/(pl)/uslugi/blogi-internetowe/page.tsx`
 - **[Cel / content]** Oferta blogów (CMS, SEO, proces) + pricing + FAQ + portfolio.
@@ -481,7 +481,7 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[schema]** JSON-LD: `Service` (przez `buildServiceSchema`) + breadcrumbs/FAQ.
 
-### `/uslugi/tworzenie-tresci` — Tworzenie treści
+### `/uslugi/tworzenie-tresci` - Tworzenie treści
 
 - **[Plik]** `app/(pl)/uslugi/tworzenie-tresci/page.tsx`
 - **[Cel / content]** Copywriting/treści dla stron, SEO i social + proces + FAQ + kontakt.
@@ -491,9 +491,9 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 
 ---
 
-## Usługi — projekty graficzne
+## Usługi - projekty graficzne
 
-### `/uslugi/projekty-graficzne` — Hub projektów graficznych
+### `/uslugi/projekty-graficzne` - Hub projektów graficznych
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/page.tsx`
 - **[Cel / content]** Opis oferty projektów graficznych + lista pod-usług + portfolio + pricing + FAQ.
@@ -511,72 +511,72 @@ Większość podstron w `app/(pl)/uslugi/projekty-graficzne/**` ma podobny ukła
 
 Poniżej lista konkretnych route’ów:
 
-### `/uslugi/projekty-graficzne/projekt-wizytowki` — Projekt wizytówki
+### `/uslugi/projekty-graficzne/projekt-wizytowki` - Projekt wizytówki
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-wizytowki/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-ulotki` — Projekt ulotki
+### `/uslugi/projekty-graficzne/projekt-ulotki` - Projekt ulotki
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-ulotki/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-teczki-ofertowej` — Teczka ofertowa
+### `/uslugi/projekty-graficzne/projekt-teczki-ofertowej` - Teczka ofertowa
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-teczki-ofertowej/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-papieru-firmowego` — Papier firmowy
+### `/uslugi/projekty-graficzne/projekt-papieru-firmowego` - Papier firmowy
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-papieru-firmowego/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-odziezy-firmowej` — Odzież firmowa
+### `/uslugi/projekty-graficzne/projekt-odziezy-firmowej` - Odzież firmowa
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-odziezy-firmowej/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-logo` — Projekt logo
+### `/uslugi/projekty-graficzne/projekt-logo` - Projekt logo
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-logo/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-katalogu` — Projekt katalogu
+### `/uslugi/projekty-graficzne/projekt-katalogu` - Projekt katalogu
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-katalogu/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej` — Identyfikacja wizualna
+### `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej` - Identyfikacja wizualna
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-graficzny-strony` — Projekt graficzny strony
+### `/uslugi/projekty-graficzne/projekt-graficzny-strony` - Projekt graficzny strony
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-graficzny-strony/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/szablony-postow-social-media` — Szablony social media
+### `/uslugi/projekty-graficzne/szablony-postow-social-media` - Szablony social media
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/szablony-postow-social-media/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera` — Kupony i vouchery
+### `/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera` - Kupony i vouchery
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-cennika` — Projekt cennika
+### `/uslugi/projekty-graficzne/projekt-cennika` - Projekt cennika
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-cennika/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej` — Karta lojalnościowa
+### `/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej` - Karta lojalnościowa
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/projekt-menu-restauracji` — Menu restauracji
+### `/uslugi/projekty-graficzne/projekt-menu-restauracji` - Menu restauracji
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-menu-restauracji/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
@@ -585,7 +585,7 @@ Poniżej lista konkretnych route’ów:
 
 ## Strony prawne
 
-### `/polityka-prywatnosci` — Polityka prywatności
+### `/polityka-prywatnosci` - Polityka prywatności
 
 - **[Plik]** `app/(pl)/polityka-prywatnosci/page.tsx`
 - **[Cel / content]** Dokument prawny z TOC, sekcjami i linkiem do PDF.
@@ -594,7 +594,7 @@ Poniżej lista konkretnych route’ów:
   - **[metadata]** canonical: `https://www.arteonagency.pl/polityka-prywatnosci`.
   - **[schema]** microdata na wrapperze: `https://schema.org/Article`.
 
-### `/regulamin` — Regulamin świadczenia usług
+### `/regulamin` - Regulamin świadczenia usług
 
 - **[Plik]** `app/(pl)/regulamin/page.tsx`
 - **[Cel / content]** Dokument regulaminu z TOC, sekcjami i linkiem do PDF.

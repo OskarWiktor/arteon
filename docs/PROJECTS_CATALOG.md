@@ -30,7 +30,7 @@ W każdej realizacji opisuję:
 ### `Plakat sezonowy dla kawiarni Brewerynka` (`plakat-sezonowy-dla-kawiarni-brewerynka`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: Brewerynka Coffee Roasters — Gastronomia
+- **Klient / branża**: Brewerynka Coffee Roasters - Gastronomia
 - **Link**: brak
 - **Ton i charakter**: minimalistyczny, spokojny, „slow coffee” + estetyka skandynawska; narracja o spójnej kampanii sezonowej.
 - **Co ma (w danych)**:
@@ -58,7 +58,7 @@ W każdej realizacji opisuję:
 ### `Karta koktajli dla baru Nocturna` (`karta-koktajli-dla-baru-nocturna`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: Nocturna Cocktail Atelier — Gastronomia
+- **Klient / branża**: Nocturna Cocktail Atelier - Gastronomia
 - **Link**: brak
 - **Ton i charakter**: premium, nastrojowy klimat speakeasy; opowieść o atmosferze (światło świec, klasyka, elegancja).
 - **Co ma (w danych)**:
@@ -86,7 +86,7 @@ W każdej realizacji opisuję:
 ### `Folder reklamowy dla firmy wykańczającej wnętrza - Simba Group` (`folder-reklamowy-firmy-wykanczajacej-wnetrza-simba-group`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: Simba Group PL — Wykończenie wnętrz domów i mieszkań
+- **Klient / branża**: Simba Group PL - Wykończenie wnętrz domów i mieszkań
 - **Link**: brak
 - **Ton i charakter**: sprzedażowy, praktyczny; nacisk na korzyści i „materiał do kontaktu” (PDF + druk).
 - **Co ma (w danych)**:
@@ -109,14 +109,14 @@ W każdej realizacji opisuję:
   - **Korekta językowa**: błędy w treści i opisach działają przeciw SEO i konwersji.
   - **Brak opisu struktury folderu**: nie wiadomo, jakie sekcje są na poszczególnych stronach.
 - **Sugestie ulepszeń (SEO)**:
-  - **Wykonać korektę copy i HTML** (literówki, interpunkcja, domknięcia) — to „tani” i skuteczny boost jakości.
+  - **Wykonać korektę copy i HTML** (literówki, interpunkcja, domknięcia) - to „tani” i skuteczny boost jakości.
   - **Dodać sekcję H2 „Układ folderu (strona po stronie)”** z krótką listą.
   - **Dodać FAQ**: „ile kosztuje folder reklamowy”, „co dostarczyć”, „czy robicie teksty”.
 
 ### `Szablony postów dla gabinetu psychologicznego - MSC Psychotherapy UK` (`szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: Mental Support Centre — Psychoterapia (Camberley, UK)
+- **Klient / branża**: Mental Support Centre - Psychoterapia (Camberley, UK)
 - **Link**: brak
 - **Ton i charakter**: spokojny, wspierający, profesjonalny; komunikacja „bez presji”, z naciskiem na bezpieczeństwo i zaufanie.
 - **Co ma (w danych)**:
@@ -144,7 +144,7 @@ W każdej realizacji opisuję:
 ### `Bon walentynkowy dla salonu kosmetycznego Kasia` (`bon-walentynkowy-dla-salonu-kosmetycznego-kasia`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: Gabinet kosmetyczny Kasia — Salon kosmetyczny (Kraków)
+- **Klient / branża**: Gabinet kosmetyczny Kasia - Salon kosmetyczny (Kraków)
 - **Link**: brak
 - **Ton i charakter**: elegancki, prezentowy, sezonowy; nacisk na czytelność i szybkie użycie „od ręki”.
 - **Co ma (w danych)**:
@@ -166,13 +166,13 @@ W każdej realizacji opisuję:
   - **Błędy językowe**: obniżają zaufanie.
 - **Sugestie ulepszeń (SEO)**:
   - **Dodać drugi obraz**: rewers z polami + ewentualnie mockup druku.
-  - **Dodać FAQ**: „voucher do druku — co musi zawierać”, „jak przygotować do drukarni”.
+  - **Dodać FAQ**: „voucher do druku - co musi zawierać”, „jak przygotować do drukarni”.
   - **Rozszerzyć opis o warianty sezonowe** (Dzień Kobiet, święta) i podlinkować do usług.
 
 ### `Strona internetowa z wynajmem kamperów w Albanii - Arteon` (`strona-internetowa-dla-camper-albania`)
 
 - **Kategorie**: `strona`, `grafika`
-- **Klient / branża**: Camper Albania — Wynajem kamperów (Albania)
+- **Klient / branża**: Camper Albania - Wynajem kamperów (Albania)
 - **Link**: `https://camper-albania.eu`
 - **Ton i charakter**: techniczny i efektowy (performance + dostępność); nacisk na konkrety typu WCAG i wynik PageSpeed.
 - **Co ma (w danych)**:
@@ -204,7 +204,7 @@ W każdej realizacji opisuję:
 ### `Papier firmowy dla kancelarii - LUX NOVA` (`papier-firmowy-dla-kancelarii-adwokackiej-lux-nova`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: LUX NOVA — Prawo
+- **Klient / branża**: LUX NOVA - Prawo
 - **Link**: brak
 - **Ton i charakter**: formalny, „premium w granicach klasyki”; nacisk na porządek, prestiż i praktyczność (PDF + druk).
 - **Co ma (w danych)**:
@@ -235,7 +235,7 @@ W każdej realizacji opisuję:
 ### `Teczka ofertowa dla kancelarii - LUX NOVA` (`teczka-ofertowa-dla-kancelarii-adwokackiej-lux-nova`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: LUX NOVA — Prawo
+- **Klient / branża**: LUX NOVA - Prawo
 - **Link**: brak
 - **Ton i charakter**: prestiż, reprezentacja i „porządek w dokumentach”; materiał ma wyglądać jak element większego systemu identyfikacji.
 - **Co ma (w danych)**:
@@ -266,7 +266,7 @@ W każdej realizacji opisuję:
 ### `Wizytówka dla kancelarii - LUX NOVA` (`wizytowka-dla-kancelarii-adwokackiej-lux-nova`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: LUX NOVA — Prawo
+- **Klient / branża**: LUX NOVA - Prawo
 - **Link**: brak
 - **Ton i charakter**: formalny, rzeczowy; nacisk na hierarchię informacji, czytelność i autorytet.
 - **Co ma (w danych)**:
@@ -287,16 +287,16 @@ W każdej realizacji opisuję:
   - **Spójność systemu**: powiązanie z teczką i papierem firmowym.
 - **Minusy / ryzyka**:
   - **Błąd merytoryczny w CTA**: obniża zaufanie i psuje intencję strony.
-  - **Powtarzalne FAQ**: część pytań powtarza się z innych realizacji — warto różnicować odpowiedzi.
+  - **Powtarzalne FAQ**: część pytań powtarza się z innych realizacji - warto różnicować odpowiedzi.
 - **Sugestie ulepszeń (SEO)**:
   - **Naprawić CTA** (tekst i linki) pod „wizytówkę dla kancelarii”.
   - **Uzupełnić `seo.title` o markę** i doprecyzować „wizytówka adwokacka/kancelaria”.
-  - **Dodać 1-2 zdania o produkcji** (papier, uszlachetnienia, minimalne rozmiary tekstu) — zwiększa wiarygodność.
+  - **Dodać 1-2 zdania o produkcji** (papier, uszlachetnienia, minimalne rozmiary tekstu) - zwiększa wiarygodność.
 
 ### `Strona dla psychologa - MSC Psychotherapy UK` (`strona-dla-psychologa-msc-psychotherapy`)
 
 - **Kategorie**: `strona`, `sklep`, `blog`, `treść`, `grafika`, `marketing`
-- **Klient / branża**: Mental Support Centre — Psychoterapia (Camberley, UK)
+- **Klient / branża**: Mental Support Centre - Psychoterapia (Camberley, UK)
 - **Link**: `https://msc-psychotherapy.co.uk/`
 - **Ton i charakter**: wspierający i ekspercki; wyraźnie nastawiony na „marketing bez agresji” + lokalne SEO.
 - **Co ma (w danych)**:
@@ -321,12 +321,12 @@ W każdej realizacji opisuję:
 - **Sugestie ulepszeń (SEO)**:
   - **Zbalansować frazy**: część powtórzeń zastąpić synonimami i bardziej naturalnymi konstrukcjami.
   - **Dodać galerię** (np. 4-8 screenów sekcji strony) z altami.
-  - **Dodać 1-2 konkretne metryki** (np. poprawa CWV, CTR, liczba klików w kontakt) — jeśli są dostępne.
+  - **Dodać 1-2 konkretne metryki** (np. poprawa CWV, CTR, liczba klików w kontakt) - jeśli są dostępne.
 
 ### `Katalog produktów - RestoQuality` (`katalog-produktow-restoquality`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: brak obiektu `client` w danych (w treści: RestoQuality — gastronomia)
+- **Klient / branża**: brak obiektu `client` w danych (w treści: RestoQuality - gastronomia)
 - **Link**: brak
 - **Ton i charakter**: B2B, techniczny i uporządkowany; nacisk na porównanie parametrów i szybkie skanowanie oferty.
 - **Co ma (w danych)**:
@@ -357,7 +357,7 @@ W każdej realizacji opisuję:
 ### `Wizytówka dla SPA - TALIA` (`wizytowka-dla-spa-talia`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: TALIA — Wellness & SPA
+- **Klient / branża**: TALIA - Wellness & SPA
 - **Link**: brak
 - **Ton i charakter**: premium & nature; spokojny luksus, organiczna estetyka (malarstwo + zieleń/beż).
 - **Co ma (w danych)**:
@@ -473,7 +473,7 @@ W każdej realizacji opisuję:
 ### `Wizytówki dla gastronomii - RestoQuality` (`wizytowki-dla-gastronomii-restoquality`)
 
 - **Kategorie**: `grafika`
-- **Klient / branża**: brak obiektu `client` w danych (w treści: RestoQuality — gastronomia)
+- **Klient / branża**: brak obiektu `client` w danych (w treści: RestoQuality - gastronomia)
 - **Link**: brak
 - **Ton i charakter**: techniczny, solidny; „szablon systemowy” dla zespołu sprzedaży.
 - **Co ma (w danych)**:
@@ -591,7 +591,7 @@ W każdej realizacji opisuję:
 - **Kategorie**: `strona`, `sklep`
 - **Klient / branża**: brak obiektu `client` w danych
 - **Link**: `https://palmolive.de`
-- **Ton i charakter**: podobny do Sanex — adaptacja treści i UI „bez rozbudowy funkcji”.
+- **Ton i charakter**: podobny do Sanex - adaptacja treści i UI „bez rozbudowy funkcji”.
 - **Co ma (w danych)**:
   - **`short` + `description`**: tak
   - **`testimonial`**: tak

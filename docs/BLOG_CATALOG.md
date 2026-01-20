@@ -16,7 +16,7 @@ Celem katalogu jest:
 - **Źródło danych**: `data/pl/blog.json`.
 - **Routing**: `/edukacja/[category]/[slug]`.
 - **Kategoria kanoniczna (routing)**:
-  - jest wyliczana z `primaryCategory` (jeśli istnieje), a jeśli nie — z pierwszego elementu tablicy `category[]`.
+  - jest wyliczana z `primaryCategory` (jeśli istnieje), a jeśli nie - z pierwszego elementu tablicy `category[]`.
   - implementacja: `getPrimaryCategorySlug(a)` w `lib/blog.ts`.
 - **Canonical URL (w danych artykułu)**:
   - oczekiwany format: `https://www.arteonagency.pl/edukacja/{primaryCategorySlug}/{slug}`.
@@ -32,13 +32,13 @@ Celem katalogu jest:
   - **Kategorie**: `Strony`, `UX`
   - **Data publikacji**: 2026-01-12
   - **Czas czytania**: 11 min
-  - **Opis**: Kompleksowy artykuł edukacyjny o stronie błędu 404 i jej znaczeniu dla doświadczenia użytkowników oraz SEO. Obejmuje: czym jest błąd 404 (kod statusu HTTP, pochodzenie nazwy, specyfikacja HTTP/1.1), dlaczego powstają błędy 404 (usunięta/przeniesiona strona, literówka w URL, nieprawidłowy link zewnętrzny, zmiany w strukturze witryny, wygasła oferta), dlaczego dobra strona 404 ma znaczenie (pomaga zrozumieć sytuację, zatrzymuje użytkownika, buduje zaufanie do marki, wspiera SEO przez zmniejszenie bounce rate), co powinna zawierać strona 404 (prosty komunikat bez żargonu, link do strony głównej, wyszukiwarka wewnętrzna, linki do popularnych sekcji, spójna stylizacja, opcjonalny formularz zgłoszenia błędu), jak strona 404 wpływa na SEO (błędy w Google Search Console, przekierowania 301 vs 404, soft 404 jako błąd konfiguracji), najczęstsze błędy w projektowaniu (brak informacji co dalej, techniczny żargon, brak nawigacji, automatyczne przekierowanie, kreatywność ponad funkcjonalnością), przykłady dobrych praktyk dla różnych typów witryn (sklepy — podobne produkty, blogi — najnowsze artykuły, witryny usługowe — strona kontaktowa), jak monitorować i naprawiać błędy 404 (Google Search Console raport Coverage, Google Analytics, regularne audyty linków narzędziami Ahrefs/Screaming Frog).
+  - **Opis**: Kompleksowy artykuł edukacyjny o stronie błędu 404 i jej znaczeniu dla doświadczenia użytkowników oraz SEO. Obejmuje: czym jest błąd 404 (kod statusu HTTP, pochodzenie nazwy, specyfikacja HTTP/1.1), dlaczego powstają błędy 404 (usunięta/przeniesiona strona, literówka w URL, nieprawidłowy link zewnętrzny, zmiany w strukturze witryny, wygasła oferta), dlaczego dobra strona 404 ma znaczenie (pomaga zrozumieć sytuację, zatrzymuje użytkownika, buduje zaufanie do marki, wspiera SEO przez zmniejszenie bounce rate), co powinna zawierać strona 404 (prosty komunikat bez żargonu, link do strony głównej, wyszukiwarka wewnętrzna, linki do popularnych sekcji, spójna stylizacja, opcjonalny formularz zgłoszenia błędu), jak strona 404 wpływa na SEO (błędy w Google Search Console, przekierowania 301 vs 404, soft 404 jako błąd konfiguracji), najczęstsze błędy w projektowaniu (brak informacji co dalej, techniczny żargon, brak nawigacji, automatyczne przekierowanie, kreatywność ponad funkcjonalnością), przykłady dobrych praktyk dla różnych typów witryn (sklepy - podobne produkty, blogi - najnowsze artykuły, witryny usługowe - strona kontaktowa), jak monitorować i naprawiać błędy 404 (Google Search Console raport Coverage, Google Analytics, regularne audyty linków narzędziami Ahrefs/Screaming Frog).
   - **Linki wewnętrzne (10)**: `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`, `/edukacja/strony/dlaczego-strona-powinna-miec-jasna-hierarchie-informacji`, `/edukacja/ux/jak-nawigacja-na-stronie-wplywa-na-sprzedaz`, `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie`, `/edukacja/grafika/co-to-jest-identyfikacja-wizualna-i-dlaczego-kazda-firma-ja-potrzebuje`, `/edukacja/seo/co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`, `/edukacja/sklepy/dlaczego-klienci-porzucaja-koszyki-i-jak-temu-zapobiegac`, `/uslugi/marketing/audyt-seo`, `/uslugi/strony-internetowe`, `/kontakt`
-  - **Linki zewnętrzne (6)**: W3C HTTP/1.1 specification (protokół), Google Search Console (narzędzie — 3x link), Google Analytics (narzędzie), Ahrefs (audyt), Screaming Frog (audyt)
+  - **Linki zewnętrzne (6)**: W3C HTTP/1.1 specification (protokół), Google Search Console (narzędzie - 3x link), Google Analytics (narzędzie), Ahrefs (audyt), Screaming Frog (audyt)
   - **Tooltips (5)**: SEO (Search Engine Optimization), HTTP (Hypertext Transfer Protocol), branding, współczynnik odrzuceń (bounce rate), soft 404
   - **FAQ**: 6 pytań (czy błędy 404 szkodzą pozycji w Google, czy przekierowywać automatycznie na stronę główną, różnica między 404 a soft 404, jak często sprawdzać błędy 404, czy strona 404 powinna mieć wyszukiwarkę, co zrobić z wycofanym produktem)
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia błąd 404 prostym językiem, z konkretnymi przykładami dla różnych typów witryn i praktycznymi wskazówkami projektowymi
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia błąd 404 prostym językiem, z konkretnymi przykładami dla różnych typów witryn i praktycznymi wskazówkami projektowymi
 
 - **Czym jest kanibalizacja słów kluczowych i jak jej unikać?**
 
@@ -47,13 +47,13 @@ Celem katalogu jest:
   - **Kategorie**: `SEO`, `Treści`
   - **Data publikacji**: 2026-01-12
   - **Czas czytania**: 11 min
-  - **Opis**: Kompleksowy artykuł edukacyjny o kanibalizacji słów kluczowych w SEO. Obejmuje: czym jest kanibalizacja (kilka stron konkuruje o te same frazy), dlaczego to problem (rozmycie sygnałów rankingowych, niestabilność w rankingu, marnowanie budżetu indeksowania), jak rozpoznać (Google Search Console — raport wydajności, zapytanie site: w Google, audyt SEO), najczęstsze przyczyny (kilka podobnych artykułów, produkty w wielu kategoriach, paginacja, tagi i archiwum), jak naprawić (połączenie stron w jedną + przekierowanie 301, zmiana focusu każdej strony, linkowanie wewnętrzne, canonical URL, de-indeksacja), jak unikać w przyszłości (planowanie struktury treści, aktualizacja zamiast tworzenia nowych, jedna strona główna per fraza, monitorowanie w GSC), kanibalizacja a synonimy (algorytm BERT, intencja zapytań), praktyczny przykład (kancelaria prawna — 3 artykuły o rozwodach).
+  - **Opis**: Kompleksowy artykuł edukacyjny o kanibalizacji słów kluczowych w SEO. Obejmuje: czym jest kanibalizacja (kilka stron konkuruje o te same frazy), dlaczego to problem (rozmycie sygnałów rankingowych, niestabilność w rankingu, marnowanie budżetu indeksowania), jak rozpoznać (Google Search Console - raport wydajności, zapytanie site: w Google, audyt SEO), najczęstsze przyczyny (kilka podobnych artykułów, produkty w wielu kategoriach, paginacja, tagi i archiwum), jak naprawić (połączenie stron w jedną + przekierowanie 301, zmiana focusu każdej strony, linkowanie wewnętrzne, canonical URL, de-indeksacja), jak unikać w przyszłości (planowanie struktury treści, aktualizacja zamiast tworzenia nowych, jedna strona główna per fraza, monitorowanie w GSC), kanibalizacja a synonimy (algorytm BERT, intencja zapytań), praktyczny przykład (kancelaria prawna - 3 artykuły o rozwodach).
   - **Linki wewnętrzne (8)**: `/edukacja/seo/co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`, `/edukacja/seo/jak-linki-wewnetrzne-wplywaja-na-pozycjonowanie`, `/edukacja/seo/dlaczego-stare-tresci-moga-szkodzic-widocznosci-w-google`, `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie`, `/uslugi/tworzenie-tresci`, `/kontakt`
-  - **Linki zewnętrzne (4)**: Google Search Console (tool — 3x link), Google BERT blog (algorytm)
+  - **Linki zewnętrzne (4)**: Google Search Console (tool - 3x link), Google BERT blog (algorytm)
   - **Tooltips (5)**: Google nie wie którą stronę wyświetlić, linki zwrotne, budżet indeksowania, WCAG, przekierowanie 301, architektura informacji
   - **FAQ**: 6 pytań (czy zawsze szkodzi, jak szybko Google zauważy zmiany, czy można mieć 2 artykuły na podobny temat, jak sprawdzić, co z produktami w sklepie, czy usunięcie artykułu spowoduje utratę ruchu)
   - **CTA**: Audyt SEO + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia problem kanibalizacji z konkretnymi metodami diagnostyki i naprawy, z praktycznymi przykładami i źródłami
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia problem kanibalizacji z konkretnymi metodami diagnostyki i naprawy, z praktycznymi przykładami i źródłami
 
 - **Co to jest regulamin sklepu internetowego i co musi zawierać?**
 
@@ -68,7 +68,7 @@ Celem katalogu jest:
   - **Tooltips (4)**: RODO, Dyrektywa Omnibus, rękojmia, klauzule abuzywne
   - **FAQ**: 6 pytań (czy każdy sklep musi mieć, czy można skopiować, jak często aktualizować, co grozi za brak, czy informować o Omnibus, czy osobna polityka prywatności)
   - **CTA**: Sklepy internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia wymogi prawne dla regulaminu sklepu internetowego z odwołaniami do konkretnych przepisów, bez straszenia, z praktycznymi wskazówkami
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia wymogi prawne dla regulaminu sklepu internetowego z odwołaniami do konkretnych przepisów, bez straszenia, z praktycznymi wskazówkami
 
 - **Co to jest newsletter i czy warto go prowadzić?**
 
@@ -77,13 +77,13 @@ Celem katalogu jest:
   - **Kategorie**: `Marketing`, `Tresci`
   - **Data publikacji**: 2026-01-02
   - **Czas czytania**: 10 min
-  - **Opis**: Kompleksowy artykuł edukacyjny o newsletterze jako narzędziu komunikacji z klientami. Obejmuje: czym jest newsletter i jak działa (formy newslettera, częstotliwość wysyłki), dlaczego firmy prowadzą newslettery (niezależność od algorytmów, budowanie listy kontaktów, regularny kontakt), korzyści z newslettera (zwiększenie sprzedaży — dane Litmus 2023 o ROI 36:1, budowanie pozycji eksperta, kierowanie ruchu, zbieranie informacji), dla kogo newsletter ma sens a dla kogo nie, na co zwrócić uwagę (zgoda RODO, wartość dla odbiorcy, regularność), jak mierzyć skuteczność (open rate, CTR, wypisania, konwersje — dane Mailchimp), narzędzia (Mailchimp, GetResponse, Brevo), budowanie listy subskrybentów (wartość w zamian za zapis, widoczność formularza, jasna komunikacja), typowe wyzwania (regularność, dostarczalność, spadające zaangażowanie, balans wartość/promocja).
+  - **Opis**: Kompleksowy artykuł edukacyjny o newsletterze jako narzędziu komunikacji z klientami. Obejmuje: czym jest newsletter i jak działa (formy newslettera, częstotliwość wysyłki), dlaczego firmy prowadzą newslettery (niezależność od algorytmów, budowanie listy kontaktów, regularny kontakt), korzyści z newslettera (zwiększenie sprzedaży - dane Litmus 2023 o ROI 36:1, budowanie pozycji eksperta, kierowanie ruchu, zbieranie informacji), dla kogo newsletter ma sens a dla kogo nie, na co zwrócić uwagę (zgoda RODO, wartość dla odbiorcy, regularność), jak mierzyć skuteczność (open rate, CTR, wypisania, konwersje - dane Mailchimp), narzędzia (Mailchimp, GetResponse, Brevo), budowanie listy subskrybentów (wartość w zamian za zapis, widoczność formularza, jasna komunikacja), typowe wyzwania (regularność, dostarczalność, spadające zaangażowanie, balans wartość/promocja).
   - **Linki wewnętrzne (6)**: `/uslugi/strony-internetowe`, `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`, `/uslugi/tworzenie-tresci`, `/kontakt`
   - **Linki zewnętrzne (6)**: Litmus (e-mail marketing ROI 2023), UODO (RODO), Mailchimp (email marketing benchmarks), Mailchimp (platforma), GetResponse (platforma), Brevo (platforma)
   - **Tooltips (3)**: newsletter, open rate, CTR
   - **FAQ**: 6 pytań (jak często wysyłać, newsletter vs media społecznościowe, ile subskrybentów potrzeba, zgoda RODO, co pisać żeby nie irytować, jak zwiększyć open rate)
   - **CTA**: Tworzenie treści + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia rolę newslettera w marketingu z praktycznymi wskazówkami, bez pouczania, z konkretnymi danymi i źródłami
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia rolę newslettera w marketingu z praktycznymi wskazówkami, bez pouczania, z konkretnymi danymi i źródłami
 
 - **Dlaczego szybkość ładowania strony wpływa na pozycję w Google?**
 
@@ -92,13 +92,13 @@ Celem katalogu jest:
   - **Kategorie**: `SEO`, `UX`, `Strony`
   - **Data publikacji**: 2026-01-02
   - **Czas czytania**: 11 min
-  - **Opis**: Kompleksowy artykuł edukacyjny o wpływie szybkości ładowania strony na pozycję w Google. Obejmuje: czym są Core Web Vitals (LCP, INP, CLS — progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP — czas ładowania głównej treści, czynniki wpływające; INP — responsywność, dlaczego zastąpił FID; CLS — stabilność wizualna, przyczyny przesunięć), jak Core Web Vitals wpływają na ranking (treść najważniejsza, czynnik różnicujący, dane z rzeczywistego użytkowania CrUX), wpływ szybkości na konwersję (opuszczanie wolnych stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Google Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JavaScript/CSS, serwer/hosting, zewnętrzne skrypty).
+  - **Opis**: Kompleksowy artykuł edukacyjny o wpływie szybkości ładowania strony na pozycję w Google. Obejmuje: czym są Core Web Vitals (LCP, INP, CLS - progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP - czas ładowania głównej treści, czynniki wpływające; INP - responsywność, dlaczego zastąpił FID; CLS - stabilność wizualna, przyczyny przesunięć), jak Core Web Vitals wpływają na ranking (treść najważniejsza, czynnik różnicujący, dane z rzeczywistego użytkowania CrUX), wpływ szybkości na konwersję (opuszczanie wolnych stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Google Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JavaScript/CSS, serwer/hosting, zewnętrzne skrypty).
   - **Linki wewnętrzne (8)**: `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`, `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`, `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`, `/kontakt`
   - **Linki zewnętrzne (6)**: Google Search Central (Core Web Vitals documentation), Google Developers Blog (Page Experience timing), Think with Google (mobile page speed benchmarks), PageSpeed Insights (tool), Google Search Console (tool), Web Vitals Chrome Extension
   - **Tooltips (4)**: Core Web Vitals, LCP (Largest Contentful Paint), INP (Interaction to Next Paint), CLS (Cumulative Layout Shift)
   - **FAQ**: 6 pytań (czy szybkość najważniejsza, jakie wyniki dobre, PageSpeed a pozycja, jak często Google aktualizuje, co to INP i dlaczego zastąpił FID, czy można poprawić bez wiedzy technicznej)
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia Core Web Vitals prostym językiem z konkretnymi progami, źródłami i praktycznymi wskazówkami bez straszenia ani pouczania
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia Core Web Vitals prostym językiem z konkretnymi progami, źródłami i praktycznymi wskazówkami bez straszenia ani pouczania
 
 - **Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?**
 
@@ -113,7 +113,7 @@ Celem katalogu jest:
   - **Tooltips (4)**: breadcrumbs, dane strukturalne (Schema.org), JSON-LD, landing page
   - **FAQ**: 5 pytań (obowiązkowe?, Google wyświetla?, ile poziomów?, ostatni element link?, zastępują menu?)
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia funkcję breadcrumbs z przykładami (sklep obuwniczy) i źródłami technicznymi
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia funkcję breadcrumbs z przykładami (sklep obuwniczy) i źródłami technicznymi
 
 - **Dlaczego pusta przestrzeń na stronie zwiększa czytelność?**
 
@@ -128,7 +128,7 @@ Celem katalogu jest:
   - **Tooltips (3)**: pusta przestrzeń (whitespace), obciążenie poznawcze, interlinia
   - **FAQ**: 5 pytań (pusta przestrzeń vs marginesy, ile przestrzeni, wpływ na szybkość, wpływ na SEO, jak przekonać klienta)
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia funkcję pustej przestrzeni z konkretnymi przykładami i źródłami, bez pouczającego tonu
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia funkcję pustej przestrzeni z konkretnymi przykładami i źródłami, bez pouczającego tonu
 
 - **Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?**
 
@@ -137,13 +137,13 @@ Celem katalogu jest:
   - **Kategorie**: `Bezpieczenstwo`, `Strony`
   - **Data publikacji**: 2026-01-01
   - **Czas czytania**: 11 min
-  - **Opis**: Kompleksowy artykuł o bezpieczeństwie stron WordPress i znaczeniu regularnych aktualizacji. Obejmuje: jak działają aktualizacje WordPressa (rdzeń, wtyczki, motywy — dane z WPScan o źródłach podatności), co się dzieje gdy strona nie jest aktualizowana (automatyczne skanowanie botów, konsekwencje ataku — dane z Wordfence), dlaczego właściciele nie aktualizują (brak świadomości, obawa przed uszkodzeniem, brak zasobów, porzucone wtyczki), na co zwrócić uwagę przy aktualizacjach (backup, środowisko stagingowe, kolejność, sprawdzenie po aktualizacji), automatyczne aktualizacje za i przeciw (rekomendacja dla różnych typów stron), dodatkowe warstwy ochrony (SSL, 2FA, wtyczka bezpieczeństwa, hosting, minimalizacja wtyczek), jak sprawdzić czy strona jest bezpieczna (panel WP, narzędzia zewnętrzne — Sucuri SiteCheck, Google Safe Browsing).
+  - **Opis**: Kompleksowy artykuł o bezpieczeństwie stron WordPress i znaczeniu regularnych aktualizacji. Obejmuje: jak działają aktualizacje WordPressa (rdzeń, wtyczki, motywy - dane z WPScan o źródłach podatności), co się dzieje gdy strona nie jest aktualizowana (automatyczne skanowanie botów, konsekwencje ataku - dane z Wordfence), dlaczego właściciele nie aktualizują (brak świadomości, obawa przed uszkodzeniem, brak zasobów, porzucone wtyczki), na co zwrócić uwagę przy aktualizacjach (backup, środowisko stagingowe, kolejność, sprawdzenie po aktualizacji), automatyczne aktualizacje za i przeciw (rekomendacja dla różnych typów stron), dodatkowe warstwy ochrony (SSL, 2FA, wtyczka bezpieczeństwa, hosting, minimalizacja wtyczek), jak sprawdzić czy strona jest bezpieczna (panel WP, narzędzia zewnętrzne - Sucuri SiteCheck, Google Safe Browsing).
   - **Linki wewnętrzne (8)**: `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/uslugi/strony-internetowe/optymalizacja-strony-wordpress` (x3), `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`, `/edukacja/strony/czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`, `/uslugi/strony-internetowe`, `/kontakt` (x2)
   - **Linki zewnętrzne (6)**: W3Techs (udział WordPress w rynku), Sucuri (raport o zhakowanych stronach), WPScan (statystyki podatności), Wordfence (statystyki ataków), Sucuri SiteCheck (narzędzie), Google Safe Browsing (narzędzie)
   - **Tooltips**: wtyczka, motyw, bot, backup, środowisko stagingowe, dwuetapowa weryfikacja
   - **FAQ**: 5 pytań (jak często aktualizować, czy aktualizacja może zepsuć stronę, co zrobić przy dużych zaległościach, czy automatyczne aktualizacje są bezpieczne, jak sprawdzić bezpieczeństwo strony)
   - **CTA**: Optymalizacja WordPress + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia mechanizmy zagrożeń i dobre praktyki utrzymania WordPressa bez straszenia, z konkretnymi danymi i źródłami
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia mechanizmy zagrożeń i dobre praktyki utrzymania WordPressa bez straszenia, z konkretnymi danymi i źródłami
 
 - **Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?**
 
@@ -158,7 +158,7 @@ Celem katalogu jest:
   - **Tooltips**: efekt zerowej ceny
   - **FAQ**: 5 pytań (czy darmowa dostawa zawsze zwiększa sprzedaż, jaki próg ustawić, darmowa dostawa dla nowych klientów, wpływ na zwroty, ukrywanie kosztu w cenie)
   - **CTA**: Sklepy internetowe + Kontakt
-  - **Ton**: Mentorski, porównawczy — obiektywnie przedstawia obie strategie z konkretnymi danymi i wskazówkami, kiedy która działa lepiej
+  - **Ton**: Mentorski, porównawczy - obiektywnie przedstawia obie strategie z konkretnymi danymi i wskazówkami, kiedy która działa lepiej
 
 - **Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?**
 
@@ -175,7 +175,7 @@ Celem katalogu jest:
   - **Tooltips**: czcionki szeryfowe, czcionki bezszeryfowe, PPI
   - **FAQ**: 5 pytań (która lepsza, czy bezszeryfowe lepsze na ekranach, ile czcionek w projekcie, Google Fonts komercyjnie, polskie znaki)
   - **CTA**: Identyfikacja wizualna + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia różnice między czcionkami z szerokim kontekstem (druk, web, branding) i przykładami z różnych branż (prawo, tech, medycyna, gastronomia)
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia różnice między czcionkami z szerokim kontekstem (druk, web, branding) i przykładami z różnych branż (prawo, tech, medycyna, gastronomia)
 
 - **Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?**
 
@@ -190,7 +190,7 @@ Celem katalogu jest:
   - **Tooltips**: paradoks wyboru
   - **FAQ**: 5 pytań (czy dotyczy wszystkich klientów, ile opcji to za dużo, czy oznaczenie jako rekomendowana to manipulacja, jak sprawdzić czy oferta przytłacza, czy usuwać produkty z oferty)
   - **CTA**: Sklepy internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (gastronomia, usługi profesjonalne, e-commerce, medycyna)
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (gastronomia, usługi profesjonalne, e-commerce, medycyna)
 
 - **Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?**
 
@@ -205,7 +205,7 @@ Celem katalogu jest:
   - **Tooltips**: efekt zakotwiczenia
   - **FAQ**: 5 pytań (czy działa na każdego, jak wykorzystać w małej firmie, czy stosowanie jest etyczne, jak bronić się jako klient, czy działa tylko przy cenach)
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (gastronomia, nieruchomości, prawo, e-commerce)
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (gastronomia, nieruchomości, prawo, e-commerce)
 
 - **Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?**
 
@@ -221,7 +221,7 @@ Celem katalogu jest:
   - **Tooltips**: społeczny dowód słuszności, efekt owczego pędu
   - **FAQ**: 5 pytań (czy działa w każdej branży, ile opinii potrzeba, jak radzić sobie z negatywnymi opiniami, czy można oferować rabaty za opinie, jak wyświetlać opinie zgodnie z prawem)
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (stomatologia, prawo, gastronomia, e-commerce, rachunkowość, rekrutacja)
+  - **Ton**: Mentorski, edukacyjny - wyjaśnia mechanizm psychologiczny z przykładami z różnych branż (stomatologia, prawo, gastronomia, e-commerce, rachunkowość, rekrutacja)
 
 - **Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać?**
 
@@ -237,7 +237,7 @@ Celem katalogu jest:
   - **Tooltips**: sitemap.xml, Googlebot, czytnik ekranu, breadcrumbs
   - **FAQ**: 5 pytań (czy mapa strony jest wymagana przez Google, czy mała strona potrzebuje mapy strony, jak często aktualizować, czy pomaga w pozycjonowaniu, różnica między mapą strony a breadcrumbs)
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny, wnikliwy — szczegółowo wyjaśnia korzyści z posiadania mapy strony HTML z przykładami z różnych branż (sklep ogrodniczy, kancelaria prawna, gabinet stomatologiczny) i tooltipami dla trudnych terminów
+  - **Ton**: Mentorski, edukacyjny, wnikliwy - szczegółowo wyjaśnia korzyści z posiadania mapy strony HTML z przykładami z różnych branż (sklep ogrodniczy, kancelaria prawna, gabinet stomatologiczny) i tooltipami dla trudnych terminów
 
 - **Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?**
 
@@ -252,7 +252,7 @@ Celem katalogu jest:
   - **Tooltips**: anchor text, PageRank, crawl budget, klaster tematyczny
   - **FAQ**: 5 pytań (ile linków w artykule, wartość linków w menu/stopce, jak znaleźć strony bez linków, kolejność linków, nofollow dla linków wewnętrznych)
   - **CTA**: Pozycjonowanie stron + Kontakt
-  - **Ton**: Mentorski, edukacyjny, wnikliwy — szczegółowo wyjaśnia wszystkie aspekty linkowania wewnętrznego z tooltipami dla trudnych terminów i wieloma źródłami zewnętrznymi
+  - **Ton**: Mentorski, edukacyjny, wnikliwy - szczegółowo wyjaśnia wszystkie aspekty linkowania wewnętrznego z tooltipami dla trudnych terminów i wieloma źródłami zewnętrznymi
 
 - **Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?**
 
@@ -267,7 +267,7 @@ Celem katalogu jest:
   - **Tooltips**: WCAG, W3C, relative luminance, daltonizm, deuteranopia/protanopia, HEX, RGB, HSL, hover, focus
   - **FAQ**: 6 pytań (dodano: duży tekst wg WCAG, przepisy dla firm prywatnych)
   - **CTA**: Tester kontrastu + Kontakt
-  - **Ton**: Mentorski, edukacyjny, wnikliwy — szczegółowo wyjaśnia wszystkie aspekty kontrastu z tooltipami dla trudnych terminów i wieloma źródłami zewnętrznymi
+  - **Ton**: Mentorski, edukacyjny, wnikliwy - szczegółowo wyjaśnia wszystkie aspekty kontrastu z tooltipami dla trudnych terminów i wieloma źródłami zewnętrznymi
 
 - **Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?**
 
@@ -281,7 +281,7 @@ Celem katalogu jest:
   - **Linki zewnętrzne**: HubSpot (źródło danych o długowieczności artykułów), Google Analytics, Google Search Console
   - **FAQ**: 5 pytań
   - **CTA**: Tworzenie treści + Kontakt
-  - **Ton**: Mentorski, edukacyjny, nie-DIY — wyjaśnia czym jest content marketing, jak działa i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu"
+  - **Ton**: Mentorski, edukacyjny, nie-DIY - wyjaśnia czym jest content marketing, jak działa i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu"
 
 - **E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?**
 
@@ -295,7 +295,7 @@ Celem katalogu jest:
   - **Linki zewnętrzne**: DMA (Data & Marketing Association) - źródło danych o ROI
   - **FAQ**: 5 pytań
   - **CTA**: Tworzenie treści + Kontakt
-  - **Ton**: Mentorski, edukacyjny, nie-DIY — wyjaśnia czym jest e-mail marketing i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu"
+  - **Ton**: Mentorski, edukacyjny, nie-DIY - wyjaśnia czym jest e-mail marketing i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu"
 
 - **Co sprawdzić przed uruchomieniem nowej strony internetowej?**
 
@@ -446,7 +446,7 @@ Celem katalogu jest:
   - **Kategorie**: `SEO`, `Widoczność`, `Treści`
   - **Data publikacji**: 2025-12-20
   - **Czas czytania**: 11 min
-  - **Opis**: Artykuł o przygotowaniu sklepu e-commerce do SEO — struktura kategorii, opisy produktów, techniczne podstawy, linkowanie wewnętrzne, blog w sklepie.
+  - **Opis**: Artykuł o przygotowaniu sklepu e-commerce do SEO - struktura kategorii, opisy produktów, techniczne podstawy, linkowanie wewnętrzne, blog w sklepie.
   - **Linki wewnętrzne**: `/uslugi/sklepy-internetowe`, `/uslugi/marketing/pozycjonowanie-stron`, `/uslugi/tworzenie-tresci`, `/edukacja/seo/jak-pisac-tresci-...`
   - **FAQ**: 5 pytań
   - **CTA**: Sklepy internetowe + Pozycjonowanie stron
@@ -510,8 +510,8 @@ Celem katalogu jest:
 - **Struktura artykułu** (przepisany od zera 2025-12-25):
   - Jak mózg przetwarza kolory (mechanizmy, ciało migdałowate, ewolucja)
   - Mechanizmy psychologiczne (pobudzenie fizjologiczne, skojarzenia kulturowe, oczekiwania branżowe)
-  - Kolorystyka w różnych branżach (finanse, medycyna, gastronomia, technologia, luksus) — z uzasadnieniem wyborów
-  - Testy A/B kolorów — analiza DLACZEGO zadziałały (kontekst, nie sam wynik)
+  - Kolorystyka w różnych branżach (finanse, medycyna, gastronomia, technologia, luksus) - z uzasadnieniem wyborów
+  - Testy A/B kolorów - analiza DLACZEGO zadziałały (kontekst, nie sam wynik)
   - Kolor a kontrast i dostępność (WCAG, daltonizm)
 - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej`, `/narzedzia/generator-palet-kolorow-online`, `/narzedzia/tester-kontrastu-kolorow-wcag`, `/edukacja/dostepnosc/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`, `/kontakt`.
 - **Linki zewnętrzne**: Management Decision (Singh 2006), Journal of Business Research (Bellizzi & Hite 1992), Journal of Academy of Marketing Science (Labrecque & Milne 2012), HubSpot, WiderFunnel, VWO.

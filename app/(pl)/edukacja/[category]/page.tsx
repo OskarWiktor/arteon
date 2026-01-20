@@ -33,7 +33,7 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
   widocznosc: {
     heroDescription: 'Artykuły o widoczności Twojej marki w sieci.',
     metaDescription: 'Sprawdź, jak zwiększyć widoczność firmy w internecie. Artykuły o Google Moja Firma, katalogach i obecności marki online  .',
-    openGraphDescription: 'Artykuły o widoczności firmy w internecie — Google Moja Firma, katalogi i obecność online.',
+    openGraphDescription: 'Artykuły o widoczności firmy w internecie - Google Moja Firma, katalogi i obecność online.',
     heroImage: '/assets/blog/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma.webp',
   },
   tresci: {

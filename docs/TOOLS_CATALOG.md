@@ -491,7 +491,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Model danych**:
   - **`SignatureConfig`** (dane i treści): m.in. `fullName`, `email`, `phone`, `website`, `address`, `company`, `jobTitle`, `ctaLabel`, `ctaUrl`, `socials[]`, `legalNote`, `formalLine`, `avatarUrl`.
   - **`StyleConfig`** (wygląd): `accentColor`, `textColor`, `backgroundColor`, `fontFamily`, `fontSize`, `padding`, `ctaRadius`, `showDivider`.
-  - **`SpacingConfig`** (odstępy między elementami): `afterName`, `afterTitle`, `afterExtra`, `afterContact`, `afterSocials`, `afterCta`, `beforeLegal` — wartości w px.
+  - **`SpacingConfig`** (odstępy między elementami): `afterName`, `afterTitle`, `afterExtra`, `afterContact`, `afterSocials`, `afterCta`, `beforeLegal` - wartości w px.
 - **Panele edycji (UI)**:
   - **[identity]**: dane osoby/firmy (w tym adres i dane formalne).
   - **[cta]**: tekst i link przycisku CTA.

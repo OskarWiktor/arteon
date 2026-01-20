@@ -1441,7 +1441,7 @@
       },
       "seo": {
         "title": "Dostępność WCAG w AEM - we współpracy z VML | Case study Meridol",
-        "description": "Case study: poprawa dostępności WCAG na meridol.de. Nawigacja klawiaturą, contrast tool, etykiety ARIA — wdrożone w ograniczeniach AEM.",
+        "description": "Case study: poprawa dostępności WCAG na meridol.de. Nawigacja klawiaturą, contrast tool, etykiety ARIA - wdrożone w ograniczeniach AEM.",
         "canonical": "https://www.arteonagency.pl/realizacje/meridol-accessibility"
       }
     },
@@ -1523,7 +1523,7 @@
 
       "seo": {
         "title": "Dostępne komponenty i formularze | Case study Elmex x VML",
-        "description": "Case study: poprawa dostępności komponentów na elmex.de. Role ARIA, widoczny fokus, czytelne stany interakcji — zgodnie ze standardem WCAG 2.1.",
+        "description": "Case study: poprawa dostępności komponentów na elmex.de. Role ARIA, widoczny fokus, czytelne stany interakcji - zgodnie ze standardem WCAG 2.1.",
         "canonical": "https://www.arteonagency.pl/realizacje/elmex-accessibility"
       }
     },
@@ -1559,7 +1559,7 @@
 
       "seo": {
         "title": "WCAG dla interakcji - filtry i karuzele | Case study Sanex x VML",
-        "description": "Case study: poprawa dostępności filtrów i karuzel na sanex.co.uk. Contrast tool, nawigacja klawiaturą, etykiety ARIA — zgodnie z WCAG 2.1.",
+        "description": "Case study: poprawa dostępności filtrów i karuzel na sanex.co.uk. Contrast tool, nawigacja klawiaturą, etykiety ARIA - zgodnie z WCAG 2.1.",
         "canonical": "https://www.arteonagency.pl/realizacje/sanex-accessibility"
       }
     },

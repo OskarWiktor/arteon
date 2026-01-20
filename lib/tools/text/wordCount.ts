@@ -21,7 +21,7 @@ export const PAGE_TYPES: PageTypeConfig[] = [
     label: 'Strona usługi',
     minWords: 500,
     maxWords: 1500,
-    description: 'Prosta usługa lokalna wymaga mniej słów. Złożona oferta z wieloma etapami i pytaniami klientów — więcej.',
+    description: 'Prosta usługa lokalna wymaga mniej słów. Złożona oferta z wieloma etapami i pytaniami klientów - więcej.',
   },
   {
     key: 'homepage',
@@ -121,7 +121,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig): LengthE
     return {
       status: 'too-short',
       percentage: Math.min(percentage, 99),
-      message: `Tekst poniżej orientacyjnego minimum (${minWords} słów). Jeśli temat jest wyczerpany — to może wystarczyć. Brakuje około ${missing} słów.`,
+      message: `Tekst poniżej orientacyjnego minimum (${minWords} słów). Jeśli temat jest wyczerpany - to może wystarczyć. Brakuje około ${missing} słów.`,
     };
   }
 
@@ -130,7 +130,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig): LengthE
     return {
       status: 'too-long',
       percentage: 100,
-      message: `Tekst powyżej orientacyjnego maksimum o ${excess} słów. Jeśli każde zdanie wnosi wartość — długość jest uzasadniona.`,
+      message: `Tekst powyżej orientacyjnego maksimum o ${excess} słów. Jeśli każde zdanie wnosi wartość - długość jest uzasadniona.`,
     };
   }
 
@@ -171,7 +171,7 @@ export function formatReportText(metrics: TextMetrics, pageType: PageTypeConfig,
     `• Akapity: ${metrics.paragraphs}`,
     `• Czas czytania: ${formatReadingTime(metrics.readingTimeMinutes)}`,
     '',
-    `📈 OCENA: ${evaluation.status === 'ideal' ? '✅ Dobra długość' : evaluation.status === 'too-short' ? '⚠️ Za krótki' : evaluation.status === 'too-long' ? '⚠️ Za długi' : '—'}`,
+    `📈 OCENA: ${evaluation.status === 'ideal' ? '✅ Dobra długość' : evaluation.status === 'too-short' ? '⚠️ Za krótki' : evaluation.status === 'too-long' ? '⚠️ Za długi' : '-'}`,
     evaluation.message,
     '',
     '─'.repeat(30),

@@ -48,10 +48,10 @@
     - Skrypt AdSense (`adsbygoogle.js`) dodany **globalnie** w `app/layout.tsx` (w `<head>`).
     - Dodano testową reklamę displayową (`horizontal` = pasek 90px) nad generatorem stopki mailowej.
   - **Formaty reklam**:
-    - `auto` — domyślny, responsywny
-    - `horizontal` — pasek 90px (leaderboard)
-    - `vertical` — 160x600px (skyscraper)
-    - `rectangle` — 336x280px (medium rectangle)
+    - `auto` - domyślny, responsywny
+    - `horizontal` - pasek 90px (leaderboard)
+    - `vertical` - 160x600px (skyscraper)
+    - `rectangle` - 336x280px (medium rectangle)
   - **Użycie**: `<AdSense adClient="ca-pub-XXX" adSlot="XXX" adFormat="horizontal" className="mb-4" />`
   - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
 
@@ -60,7 +60,7 @@
 - ✅ **[SEO-027] Blog: naprawa błędnych linków 404 w artykule o kanibalizacji słów kluczowych**
 
   - **Plik**: `data/pl/blog.json`
-  - **Źródło**: Ahrefs Site Audit — 4 linki wewnętrzne zwracające 404
+  - **Źródło**: Ahrefs Site Audit - 4 linki wewnętrzne zwracające 404
   - **Artykuł**: `czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`
   - **Naprawione linki**:
     | Błędny URL | Rozwiązanie |
@@ -74,7 +74,7 @@
 - ✅ **[UI-001] Breadcrumbs: naprawić łamanie tekstu na mniejszych szerokościach ekranu**
 
   - **Plik**: `components/sections/BreadCrumbs.tsx`
-  - **Problem**: Na mniejszych urządzeniach breadcrumbs nie łamią się poprawnie — tekst wymuszał rozszerzenie strony.
+  - **Problem**: Na mniejszych urządzeniach breadcrumbs nie łamią się poprawnie - tekst wymuszał rozszerzenie strony.
   - **Rozwiązanie**: Usunięto klasy `shrink-0` i `whitespace-nowrap` z elementów breadcrumb (zachowano `shrink-0` tylko dla ikony home).
   - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
 
@@ -95,23 +95,23 @@
 - ✅ **[PROJECT-010] Realizacje: ujednolicić system contentBlocks z artykułami + dodać nowe komponenty**
 
   - **Pliki**:
-    - `types/project.ts` — rozszerzono `ContentBlock` o 13 typów bloków
-    - `app/(pl)/realizacje/[slug]/page.tsx` — rozbudowano `RenderBlocks` o obsługę wszystkich nowych typów
-    - `data/pl/projects.json` — zaktualizowano realizację Brewerynka jako przykład nowego systemu
+    - `types/project.ts` - rozszerzono `ContentBlock` o 13 typów bloków
+    - `app/(pl)/realizacje/[slug]/page.tsx` - rozbudowano `RenderBlocks` o obsługę wszystkich nowych typów
+    - `data/pl/projects.json` - zaktualizowano realizację Brewerynka jako przykład nowego systemu
   - **Nowe typy bloków w realizacjach**:
     - `richtext`, `image`, `imageText` (istniejące, rozszerzone o `breakBefore`/`breakAfter`)
-    - `quote`, `callout` — cytaty i wyróżnienia
-    - `steps` — kroki z ikonami (używa `SectionSteps`)
-    - `metrics` — metryki ze słupkami postępu (używa `SectionMetrics`)
-    - `featureList` — lista cech z checkmarkami (używa `SectionFeatureList`)
-    - `process` — kompaktowe kroki poziome (używa `SectionProcess`)
-    - `infoBanner` — baner informacyjny (używa `SectionInfoBanner`)
-    - `deliverables`, `outcomes`, `testimonial`, `beforeAfter` — bloki case study
+    - `quote`, `callout` - cytaty i wyróżnienia
+    - `steps` - kroki z ikonami (używa `SectionSteps`)
+    - `metrics` - metryki ze słupkami postępu (używa `SectionMetrics`)
+    - `featureList` - lista cech z checkmarkami (używa `SectionFeatureList`)
+    - `process` - kompaktowe kroki poziome (używa `SectionProcess`)
+    - `infoBanner` - baner informacyjny (używa `SectionInfoBanner`)
+    - `deliverables`, `outcomes`, `testimonial`, `beforeAfter` - bloki case study
   - **Zachowana kompatybilność wsteczna** z istniejącymi polami (`process_steps`, `outcomes`, `deliverables` itp.)
   - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
-  - **Follow-up**: `CONTENT-005` — naprawić placeholder dane w realizacjach Perly Mocy i Izoluk
+  - **Follow-up**: `CONTENT-005` - naprawić placeholder dane w realizacjach Perly Mocy i Izoluk
 
-- ✅ **[DOCS-001] Refaktoryzacja INSTRUCTIONS.md — wydzielenie instrukcji tworzenia treści do osobnego pliku**
+- ✅ **[DOCS-001] Refaktoryzacja INSTRUCTIONS.md - wydzielenie instrukcji tworzenia treści do osobnego pliku**
 
   - **Pliki**: `docs/INSTRUCTIONS.md`, `docs/CONTENT_INSTRUCTIONS.md` (nowy)
   - **Wykonane zmiany**:
@@ -144,17 +144,17 @@
 
 ## 2026-01-15
 
-- 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty) — iteracja 2026-01-15**
+- 🟡 **[AUDIT-002] Repo: audyt duplikacji logiki (hooks/utils/komponenty) - iteracja 2026-01-15**
 
   - **Zakres audytu:**
-    - Drag & drop/upload: wykorzystanie wspólnych `useFileDropzone` + `ToolFileDropzone` (bez rozjazdów — OK).
+    - Drag & drop/upload: wykorzystanie wspólnych `useFileDropzone` + `ToolFileDropzone` (bez rozjazdów - OK).
     - Clipboard: porównanie `useCopyToClipboard` vs `useSignatureCopy` (różne mechanizmy resetu timera).
     - Object URL: wzorce `URL.createObjectURL` + revoke w narzędziach (SVG/PNG/ZIP) vs shared `downloadBlob` + `objectUrl`.
     - ZIP: dublowana logika pobierania plików po URL → `arrayBuffer` → ZIP w 2 miejscach.
   - **Nowe zadania (follow-up):**
-    - `CLEANUP-013` — ujednolicić pobieranie Blob → URL przez `downloadBlob` (QrCode SVG, ImageResize export, exportSignature, Favicon ZIP handler).
-    - `CLEANUP-014` — ujednolicić timery w `useCopyToClipboard` przez `useTimeout`.
-    - `TOOLS-060` — dodać helper `zipFromUrls` i użyć w Favicon/WebP ZIP.
+    - `CLEANUP-013` - ujednolicić pobieranie Blob → URL przez `downloadBlob` (QrCode SVG, ImageResize export, exportSignature, Favicon ZIP handler).
+    - `CLEANUP-014` - ujednolicić timery w `useCopyToClipboard` przez `useTimeout`.
+    - `TOOLS-060` - dodać helper `zipFromUrls` i użyć w Favicon/WebP ZIP.
   - **Uwagi:**
     - Brak zmian w UI/UX; audyt-only. Implementacja w osobnych zadaniach.
 
@@ -181,7 +181,7 @@
   - **Tooltips (5)**: SEO, HTTP, branding, współczynnik odrzuceń, soft 404
   - **FAQ**: 6 pytań z odpowiedziami
   - **CTA**: Strony internetowe + Kontakt
-  - **Ton**: Mentorski, edukacyjny — bez pouczania, z konkretnymi przykładami dla różnych typów witryn
+  - **Ton**: Mentorski, edukacyjny - bez pouczania, z konkretnymi przykładami dla różnych typów witryn
   - **Zgodność z INSTRUCTIONS**: Artykuł spełnia wszystkie wymogi (około 2200 słów = 11 min czytania, 10 linków wewnętrznych, 6 linków zewnętrznych, tooltips dla terminów technicznych, wszystkie linki zewnętrzne z target='\_blank' rel='noopener noreferrer', linki widoczne z underline/inline-link)
   - **Weryfikacja**: Zaktualizowano `BLOG_CATALOG.md` i `TASKS.md`
 
@@ -199,13 +199,13 @@
     - Jak naprawić (połączenie stron + 301, zmiana focusu, linkowanie wewnętrzne, canonical, de-indeksacja)
     - Jak unikać w przyszłości (planowanie struktury, aktualizacja zamiast nowych, jedna strona główna, monitorowanie GSC)
     - Kanibalizacja a synonimy (algorytm BERT, intencja zapytań)
-    - Praktyczny przykład hipotetyczny (kancelaria prawna — rozwody)
+    - Praktyczny przykład hipotetyczny (kancelaria prawna - rozwody)
   - **Linki wewnętrzne (8)**: `/edukacja/seo/co-to-jest-indeksowanie-strony-i-dlaczego-google-nie-widzi-podstron`, `/uslugi/marketing/audyt-seo`, `/edukacja/seo/co-to-sa-przekierowania-301-i-kiedy-sa-potrzebne`, `/edukacja/seo/jak-linki-wewnetrzne-wplywaja-na-pozycjonowanie`, `/edukacja/seo/dlaczego-stare-tresci-moga-szkodzic-widocznosci-w-google`, `/edukacja/seo/jak-google-ocenia-jakosc-tresci-na-stronie`, `/uslugi/tworzenie-tresci`, `/kontakt`
   - **Linki zewnętrzne (4)**: Google Search Console (3x), Google BERT blog
   - **Tooltips (6)**: Google nie wie którą stronę wyświetlić, linki zwrotne, budżet indeksowania, WCAG, przekierowanie 301, architektura informacji
   - **FAQ**: 6 pytań z odpowiedziami
   - **CTA**: Audyt SEO + Kontakt
-  - **Ton**: Mentorski, edukacyjny — bez pouczania, z konkretnymi metodami diagnostyki i naprawy
+  - **Ton**: Mentorski, edukacyjny - bez pouczania, z konkretnymi metodami diagnostyki i naprawy
   - **Zgodność z INSTRUCTIONS**: Artykuł spełnia wszystkie wymogi (1800-2800 słów, min. 6-8 linków wewnętrznych, min. 4-6 zewnętrznych, tooltips dla terminów, przykład oznaczony jako hipotetyczny, wszystkie linki zewnętrzne z target='\_blank' rel='noopener noreferrer', linki widoczne z underline)
   - **Weryfikacja**: Zaktualizowano `BLOG_CATALOG.md`
 
@@ -318,9 +318,9 @@
     - `components/sections/tools/ImageResizeTool.tsx`
     - `components/sections/tools/ImageResizeTool/exportCroppedImage.ts`
   - **Problemy naprawione**:
-    1. Podwojone ikony strzałek — usunięto emoji z tekstu przycisków (zostawiono tylko ikony)
-    2. Obraca się zdjęcie ale nie siatka — usunięto CSS transform z podglądu obrazu, dodano badge'y informujące o aktywnych transformacjach
-    3. Eksport nie pokrywał się z podglądem — naprawiono kolejność operacji canvas (translate → rotate → scale → translate → draw)
+    1. Podwojone ikony strzałek - usunięto emoji z tekstu przycisków (zostawiono tylko ikony)
+    2. Obraca się zdjęcie ale nie siatka - usunięto CSS transform z podglądu obrazu, dodano badge'y informujące o aktywnych transformacjach
+    3. Eksport nie pokrywał się z podglądem - naprawiono kolejność operacji canvas (translate → rotate → scale → translate → draw)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[UI-001] ShareBlock: zmiana wyglądu przycisków udostępniania na większe z tekstem i kolorami brand**
@@ -530,7 +530,7 @@
 
 ## 2026-01-06
 
-- ✅ **[AUDIT-001] Repo: audyt treści — zgodność z wytycznymi tonu i stylu pisania**
+- ✅ **[AUDIT-001] Repo: audyt treści - zgodność z wytycznymi tonu i stylu pisania**
 
   - **Data wykonania:** 2026-01-06
   - **Zakres audytu:**
@@ -582,7 +582,7 @@
     - SectionSteps: jasne tło ikony (bg-slate-100 text-slate-800)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-009] SectionTabs — nowy komponent zakładek (wzór: showcase #19)**
+- ✅ **[COMPONENT-009] SectionTabs - nowy komponent zakładek (wzór: showcase #19)**
 
   - **Plik**: `components/ui/sections/SectionTabs.tsx` (nowy)
   - **Zmiany**:
@@ -590,7 +590,7 @@
     - Interaktywne zakładki z ikonami, responsywny układ
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-011] SectionBento — nowy komponent bento grid (wzór: showcase #21)**
+- ✅ **[COMPONENT-011] SectionBento - nowy komponent bento grid (wzór: showcase #21)**
 
   - **Plik**: `components/ui/sections/SectionBento.tsx` (nowy)
   - **Zmiany**:
@@ -598,7 +598,7 @@
     - Dynamiczny układ kart o różnych rozmiarach (small/medium/large)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-012] FaqPanels — variant z ikonami (wzór: showcase #24)**
+- ✅ **[COMPONENT-012] FaqPanels - variant z ikonami (wzór: showcase #24)**
 
   - **Plik**: `components/ui/FaqPanels.tsx`
   - **Zmiany**:
@@ -607,7 +607,7 @@
     - Ikona zmienia kolor na otwarciu (aktywna: ciemne tło)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-013] SectionHeroSplit — nowy komponent split hero (wzór: showcase #27)**
+- ✅ **[COMPONENT-013] SectionHeroSplit - nowy komponent split hero (wzór: showcase #27)**
 
   - **Plik**: `components/sections/SectionHeroSplit.tsx` (nowy)
   - **Zmiany**:
@@ -615,7 +615,7 @@
     - Układ 50/50: tekst po lewej, obraz po prawej, responsywny
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-014] Sekcje — variant ciemne tło**
+- ✅ **[COMPONENT-014] Sekcje - variant ciemne tło**
 
   - **Plik**: `components/ui/sections/SectionSteps.tsx`
   - **Zmiany**:
@@ -623,7 +623,7 @@
     - `dark`: ciemnoniebieskie tło (bg-slate-800), biały tekst
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-016] SectionInfoBanner — nowy komponent baneru informacyjnego (wzór: showcase #31)**
+- ✅ **[COMPONENT-016] SectionInfoBanner - nowy komponent baneru informacyjnego (wzór: showcase #31)**
 
   - **Plik**: `components/ui/sections/SectionInfoBanner.tsx` (nowy)
   - **Zmiany**:
@@ -631,7 +631,7 @@
     - Ciemne tło (slate-800), biały tekst, przycisk po prawej
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-017] SectionFeatureList — nowy komponent listy cech (wzór: showcase #32)**
+- ✅ **[COMPONENT-017] SectionFeatureList - nowy komponent listy cech (wzór: showcase #32)**
 
   - **Plik**: `components/ui/sections/SectionFeatureList.tsx` (nowy)
   - **Zmiany**:
@@ -639,7 +639,7 @@
     - Checkmarki w zielonych kółkach, 2 kolumny na desktop
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-018] CTABanner — tło gradientowe (wzór: showcase #37)**
+- ✅ **[COMPONENT-018] CTABanner - tło gradientowe (wzór: showcase #37)**
 
   - **Plik**: `components/sections/CTABanner.tsx`
   - **Zmiany**:
@@ -647,7 +647,7 @@
     - `gradient`: tło gradientowe (slate-800 to slate-700)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-019] TestimonialsCarousel — variant z gwiazdkami i auto-scroll (wzór: showcase #50)**
+- ✅ **[COMPONENT-019] TestimonialsCarousel - variant z gwiazdkami i auto-scroll (wzór: showcase #50)**
 
   - **Plik**: `components/sections/TestimonialsCarousel.tsx`
   - **Zmiany**:
@@ -670,43 +670,43 @@
     - **TestimonialsCarousel**: Nowy variant `large` jak showcase #50 z gwiazdkami i auto-scroll
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-020] SectionNotificationBanner — zamykalny baner powiadomień**
+- ✅ **[COMPONENT-020] SectionNotificationBanner - zamykalny baner powiadomień**
 
   - **Plik**: `components/ui/sections/SectionNotificationBanner.tsx` (nowy)
   - **Props**: `icon`, `text`, `highlight?`, `variant` (success/info/warning), `dismissible`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-023] SectionIconBadges — rząd odznak z ikonami**
+- ✅ **[COMPONENT-023] SectionIconBadges - rząd odznak z ikonami**
 
   - **Plik**: `components/ui/sections/SectionIconBadges.tsx` (nowy)
   - **Props**: `title?`, `badges[]` (icon, label)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-028] SectionImageGallery — galeria z lightboxem**
+- ✅ **[COMPONENT-028] SectionImageGallery - galeria z lightboxem**
 
   - **Plik**: `components/ui/sections/SectionImageGallery.tsx` (nowy)
   - **Props**: `title?`, `images[]` (src, alt, title?)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-031] SectionVerticalTabs — pionowe zakładki**
+- ✅ **[COMPONENT-031] SectionVerticalTabs - pionowe zakładki**
 
   - **Plik**: `components/ui/sections/SectionVerticalTabs.tsx` (nowy)
   - **Props**: `title?`, `tabs[]` (label, icon, content)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-032] SectionQuickLinks — pasek szybkich linków**
+- ✅ **[COMPONENT-032] SectionQuickLinks - pasek szybkich linków**
 
   - **Plik**: `components/ui/sections/SectionQuickLinks.tsx` (nowy)
   - **Props**: `title?`, `links[]` (icon, label, href)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-035] SectionBeforeAfter — slider porównania przed/po**
+- ✅ **[COMPONENT-035] SectionBeforeAfter - slider porównania przed/po**
 
   - **Plik**: `components/ui/sections/SectionBeforeAfter.tsx` (nowy)
   - **Props**: `title?`, `beforeImage`, `afterImage`, `beforeLabel?`, `afterLabel?`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-036] SectionNewsTicker — animowany pasek wiadomości**
+- ✅ **[COMPONENT-036] SectionNewsTicker - animowany pasek wiadomości**
 
   - **Plik**: `components/ui/sections/SectionNewsTicker.tsx` (nowy)
   - **Props**: `items[]`, `speed?`
@@ -726,36 +726,36 @@
     - **SectionNewsTicker**: Dodano opcję ikon do każdego elementu
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-021] Modal i SearchModal — style już poprawne**
+- ✅ **[COMPONENT-021] Modal i SearchModal - style już poprawne**
 
   - **Pliki**: `components/ui/ConfirmModal.tsx`, `components/ui/SearchDialog.tsx`
   - **Status**: Komponenty już mają poprawne style (rounded-2xl, odpowiednie odstępy)
 
-- ✅ **[COMPONENT-034] SectionImageCarousel — karuzela zdjęć z fade**
+- ✅ **[COMPONENT-034] SectionImageCarousel - karuzela zdjęć z fade**
 
   - **Plik**: `components/ui/sections/SectionImageCarousel.tsx` (nowy)
   - **Props**: `slides[]`, `overlay?`, `variant` (default/fullWidth), `autoPlay?`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-037] SectionImageCarousel — variant fullWidth**
+- ✅ **[COMPONENT-037] SectionImageCarousel - variant fullWidth**
 
   - **Plik**: `components/ui/sections/SectionImageCarousel.tsx`
   - **Zmiany**: Prop `variant?: 'default' | 'fullWidth'` z aspect-[21/9]
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-038] SectionStarRating — interaktywna ocena gwiazdkowa**
+- ✅ **[COMPONENT-038] SectionStarRating - interaktywna ocena gwiazdkowa**
 
   - **Plik**: `components/ui/sections/SectionStarRating.tsx` (nowy)
   - **Props**: `value`, `onChange`, `max?`, `size?`, `label?`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-039] SectionLikeButton — animowany przycisk like**
+- ✅ **[COMPONENT-039] SectionLikeButton - animowany przycisk like**
 
   - **Plik**: `components/ui/sections/SectionLikeButton.tsx` (nowy)
   - **Props**: `initialCount?`, `liked?`, `onChange?`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-040] SectionReactionPicker — picker reakcji emoji**
+- ✅ **[COMPONENT-040] SectionReactionPicker - picker reakcji emoji**
 
   - **Plik**: `components/ui/sections/SectionReactionPicker.tsx` (nowy)
   - **Props**: `reactions[]`, `selected?`, `onChange?`
@@ -766,51 +766,51 @@
   - **Plik**: `app/(pl)/test/page.tsx`
   - **Zmiany**: Dodano przykłady COMPONENT-034, 038, 039, 040. Zmieniono na client component.
 
-- ✅ **[COMPONENT-024] SectionSteps — variant z rozwijalnymi szczegółami**
+- ✅ **[COMPONENT-024] SectionSteps - variant z rozwijalnymi szczegółami**
 
   - **Plik**: `components/ui/sections/SectionSteps.tsx`
   - **Zmiany**: Dodano prop `expandableContent` do itemów, nowy komponent `ExpandableStepsList`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-027] FileUploadZone — już ma odpowiedni styl**
+- ✅ **[COMPONENT-027] FileUploadZone - już ma odpowiedni styl**
 
   - **Plik**: `components/ui/tools/ToolFileDropzone.tsx`
   - **Status**: Komponent już istnieje i ma odpowiedni styl
 
-- ✅ **[COMPONENT-029] SocialShareButtons — już ma odpowiedni styl**
+- ✅ **[COMPONENT-029] SocialShareButtons - już ma odpowiedni styl**
 
   - **Plik**: `components/sections/ShareBlock.tsx`
   - **Status**: Komponent już istnieje z kolorowymi przyciskami
 
-- ✅ **[COMPONENT-030] DesktopNavigation submenu — już ma odpowiedni styl**
+- ✅ **[COMPONENT-030] DesktopNavigation submenu - już ma odpowiedni styl**
 
   - **Plik**: `components/shared/navigation-types/DesktopNavigation.tsx`
   - **Status**: Submenu już ma zaokrąglone rogi i cień
 
-- ✅ **[COMPONENT-041] SectionBlogCardHorizontal — horyzontalna karta artykułu**
+- ✅ **[COMPONENT-041] SectionBlogCardHorizontal - horyzontalna karta artykułu**
 
   - **Plik**: `components/ui/sections/SectionBlogCardHorizontal.tsx` (nowy)
   - **Props**: `imageSrc`, `imageAlt`, `title`, `description`, `href`, `category?`, `date?`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-042] SectionAnnouncementBar — zamykalny baner ogłoszeniowy**
+- ✅ **[COMPONENT-042] SectionAnnouncementBar - zamykalny baner ogłoszeniowy**
 
   - **Plik**: `components/ui/sections/SectionAnnouncementBar.tsx` (nowy)
   - **Props**: `text`, `linkLabel?`, `linkHref?`, `dismissible?`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-043] SectionCountdown — odliczanie do daty**
+- ✅ **[COMPONENT-043] SectionCountdown - odliczanie do daty**
 
   - **Plik**: `components/ui/sections/SectionCountdown.tsx` (nowy)
   - **Props**: `title`, `description?`, `targetDate`, `btnLabel?`, `btnLink?`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-044] CookieBanner — już ma odpowiedni styl**
+- ✅ **[COMPONENT-044] CookieBanner - już ma odpowiedni styl**
 
   - **Plik**: `components/shared/CookieConsent.tsx`
   - **Status**: Komponent już ma kompaktowy styl z przyciskami Odrzuć/Akceptuj
 
-- ✅ **[COMPONENT-046] SectionAnimatedLoader — animowane loadery**
+- ✅ **[COMPONENT-046] SectionAnimatedLoader - animowane loadery**
 
   - **Plik**: `components/ui/sections/SectionAnimatedLoader.tsx` (nowy)
   - **Props**: `variant` (spinner/dots/pulse), `size?`, `color?`
@@ -821,7 +821,7 @@
   - **Plik**: `app/(pl)/test/page.tsx`
   - **Zmiany**: Dodano przykłady COMPONENT-041, 042, 043, 046
 
-- ✅ **[COMPONENT-006] SectionProcess — nowy komponent kroków poziomych (wzór: showcase #17)**
+- ✅ **[COMPONENT-006] SectionProcess - nowy komponent kroków poziomych (wzór: showcase #17)**
 
   - **Plik**: `components/ui/sections/SectionProcess.tsx` (nowy)
   - **Zmiany**:
@@ -831,7 +831,7 @@
     - Ikony w ciemnych okrągłych kontenerach (bg-slate-800)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-007] SectionSteps — nowy styl ikon i variant contact (wzór: showcase #16)**
+- ✅ **[COMPONENT-007] SectionSteps - nowy styl ikon i variant contact (wzór: showcase #16)**
 
   - **Plik**: `components/ui/sections/SectionSteps.tsx`
   - **Zmiany**:
@@ -840,7 +840,7 @@
     - Domyślny variant bez zmian (zachowanie wstecznej kompatybilności)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-008] SectionMetrics — nowy komponent metryk (wzór: showcase #18)**
+- ✅ **[COMPONENT-008] SectionMetrics - nowy komponent metryk (wzór: showcase #18)**
 
   - **Plik**: `components/ui/sections/SectionMetrics.tsx` (nowy)
   - **Zmiany**:
@@ -883,7 +883,7 @@
 
 ## 2026-01-04
 
-- ✅ **[COMPONENT-001] SectionTimeline — nowy komponent osi czasu (wzór: showcase #1)**
+- ✅ **[COMPONENT-001] SectionTimeline - nowy komponent osi czasu (wzór: showcase #1)**
 
   - **Plik**: `components/ui/sections/SectionTimeline.tsx` (nowy)
   - **Zmiany**:
@@ -893,7 +893,7 @@
     - Mobile: pasek po lewej stronie, ikony w okrągłych kontenerach
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-002] SectionPackages — komponent porównania pakietów (wzór: showcase #6)**
+- ✅ **[COMPONENT-002] SectionPackages - komponent porównania pakietów (wzór: showcase #6)**
 
   - **Plik**: `components/ui/sections/SectionPackages.tsx` (nowy)
   - **Zmiany**:
@@ -903,7 +903,7 @@
     - Mobile: karty pionowe z listą funkcji (bez poziomego scrolla)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-003] FaqPanels — aktualizacja stylów (wzór: showcase #8)**
+- ✅ **[COMPONENT-003] FaqPanels - aktualizacja stylów (wzór: showcase #8)**
 
   - **Plik**: `components/ui/FaqPanels.tsx`
   - **Zmiany**:
@@ -912,7 +912,7 @@
     - Zachowana animacja framer-motion
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-004] CTABanner — variant split (wzór: showcase #9)**
+- ✅ **[COMPONENT-004] CTABanner - variant split (wzór: showcase #9)**
 
   - **Plik**: `components/sections/CTABanner.tsx`
   - **Zmiany**:
@@ -921,7 +921,7 @@
     - Props `leftColumn` i `rightColumn` dla oddzielnych CTA
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-005] FeatureGrid — aktualizacja stylów (wzór: showcase #11)**
+- ✅ **[COMPONENT-005] FeatureGrid - aktualizacja stylów (wzór: showcase #11)**
 
   - **Pliki**: `components/sections/FeatureGrid.tsx`, `components/ui/FeatureCard.tsx`
   - **Zmiany**:
@@ -929,7 +929,7 @@
     - FeatureCard: układ horyzontalny z ikoną w kwadratowym kontenerze (12x12, rounded-xl, bg-slate-100)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **BreadCrumbs — poprawka łamania linii**
+- ✅ **BreadCrumbs - poprawka łamania linii**
 
   - **Plik**: `components/sections/BreadCrumbs.tsx`
   - **Zmiany**:
@@ -938,7 +938,7 @@
     - Linki/elementy łamią się jako całość, nie słowo po słowie
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-022] Button — strzałka w prawo + wariant outline**
+- ✅ **[COMPONENT-022] Button - strzałka w prawo + wariant outline**
 
   - **Plik**: `components/ui/buttons/Button.tsx`
   - **Zmiany**:
@@ -946,7 +946,7 @@
     - Dodanie nowego wariantu `outline` (ramka slate-800, hover wypełnienie)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-025] Breadcrumbs — ikona home na początku**
+- ✅ **[COMPONENT-025] Breadcrumbs - ikona home na początku**
 
   - **Plik**: `components/sections/BreadCrumbs.tsx`
   - **Zmiany**:
@@ -954,7 +954,7 @@
     - Separator "/" już był zaimplementowany
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-026] Badge — warianty kolorystyczne**
+- ✅ **[COMPONENT-026] Badge - warianty kolorystyczne**
 
   - **Plik**: `components/ui/Badge.tsx`
   - **Zmiany**:
@@ -963,7 +963,7 @@
     - Dodanie wariantu `tech` (border + bg-white dla technologii)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-033] CarouselDots — prostokątne kropki**
+- ✅ **[COMPONENT-033] CarouselDots - prostokątne kropki**
 
   - **Plik**: `components/ui/carousel/CarouselDots.tsx`
   - **Zmiany**:
@@ -972,7 +972,7 @@
     - Dodanie transition-all dla płynnej animacji
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENT-045] BenefitBelt — nowy domyślny styl**
+- ✅ **[COMPONENT-045] BenefitBelt - nowy domyślny styl**
 
   - **Plik**: `components/sections/BenefitBelt.tsx`
   - **Zmiany**:
@@ -983,7 +983,7 @@
 
 ## 2026-01-03
 
-- ✅ **[COMPONENTS-005] Strona /component — 60 nowych komponentów uniwersalnych (rozbudowa do 200)**
+- ✅ **[COMPONENTS-005] Strona /component - 60 nowych komponentów uniwersalnych (rozbudowa do 200)**
 
   - **URL**: `/component` (strona deweloperska, noindex)
   - **Plik**: `app/(pl)/component/page.tsx`
@@ -1017,7 +1017,7 @@
   - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENTS-004] Strona /component — 60 nowych komponentów interaktywnych i nawigacyjnych (rozbudowa do 140)**
+- ✅ **[COMPONENTS-004] Strona /component - 60 nowych komponentów interaktywnych i nawigacyjnych (rozbudowa do 140)**
 
   - **URL**: `/component` (strona deweloperska, noindex)
   - **Plik**: `app/(pl)/component/page.tsx`
@@ -1051,11 +1051,11 @@
   - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENTS-003] Strona /component — kolejne 40 komponentów sekcyjnych (rozbudowa do 80)**
+- ✅ **[COMPONENTS-003] Strona /component - kolejne 40 komponentów sekcyjnych (rozbudowa do 80)**
 
   - **URL**: `/component` (strona deweloperska, noindex)
   - **Plik**: `app/(pl)/component/page.tsx`
-  - **Komponenty (41-80)**: 41. **Masonry Grid** — siatka o zmiennej wysokości kart 42. **Tabbed Content** — zakładki z przełączaną treścią 43. **Timeline Horizontal** — pozioma oś czasu 44. **Card Hover Effects** — karty z efektami hover 45. **Metric Dashboard** — dashboard z metrykami 46. **Team Carousel** — karuzela członków zespołu 47. **Feature Comparison Table** — tabela porównawcza funkcji 48. **Animated Counter** — liczniki (statystyki) 49. **Icon Grid** — siatka ikon z opisami 50. **Testimonial Slider Large** — duży slider opinii 51. **Portfolio Masonry** — masonry dla portfolio 52. **Pricing Toggle** — cennik z przełącznikiem miesięczny/roczny 53. **FAQ Search** — FAQ z wyszukiwarką 54. **Contact Split** — formularz kontaktowy z info 55. **Blog Grid** — siatka wpisów blogowych 56. **Category Pills** — przyciski kategorii (filtry) 57. **Notification Banner** — pasek powiadomień z dismiss 58. **Modal Preview** — podgląd modalny 59. **Sidebar Navigation** — nawigacja boczna 60. **Breadcrumb Variants** — warianty breadcrumb 61. **Avatar Group** — grupa awatarów 62. **Rating Stars** — gwiazdki oceny 63. **Progress Bar Variants** — warianty pasków postępu 64. **Badge Collection** — kolekcja badge'ów 65. **Alert Variants** — warianty alertów (info/success/warning/error) 66. **Empty State** — stan pusty 67. **Loading Skeleton** — skeleton loading 68. **Tooltip Examples** — przykłady tooltipów 69. **Dropdown Menu** — menu rozwijane 70. **Search Input** — pole wyszukiwania 71. **Tag Input** — pole z tagami 72. **Date Picker Preview** — podgląd wyboru daty 73. **File Upload Zone** — strefa upload plików 74. **Image Gallery Lightbox** — galeria z lightboxem 75. **Video Placeholder** — placeholder dla wideo 76. **Map Placeholder** — placeholder dla mapy 77. **Social Share Buttons** — przyciski udostępniania 78. **Author Bio** — bio autora 79. **Related Articles** — powiązane artykuły 80. **Pagination** — paginacja stron
+  - **Komponenty (41-80)**: 41. **Masonry Grid** - siatka o zmiennej wysokości kart 42. **Tabbed Content** - zakładki z przełączaną treścią 43. **Timeline Horizontal** - pozioma oś czasu 44. **Card Hover Effects** - karty z efektami hover 45. **Metric Dashboard** - dashboard z metrykami 46. **Team Carousel** - karuzela członków zespołu 47. **Feature Comparison Table** - tabela porównawcza funkcji 48. **Animated Counter** - liczniki (statystyki) 49. **Icon Grid** - siatka ikon z opisami 50. **Testimonial Slider Large** - duży slider opinii 51. **Portfolio Masonry** - masonry dla portfolio 52. **Pricing Toggle** - cennik z przełącznikiem miesięczny/roczny 53. **FAQ Search** - FAQ z wyszukiwarką 54. **Contact Split** - formularz kontaktowy z info 55. **Blog Grid** - siatka wpisów blogowych 56. **Category Pills** - przyciski kategorii (filtry) 57. **Notification Banner** - pasek powiadomień z dismiss 58. **Modal Preview** - podgląd modalny 59. **Sidebar Navigation** - nawigacja boczna 60. **Breadcrumb Variants** - warianty breadcrumb 61. **Avatar Group** - grupa awatarów 62. **Rating Stars** - gwiazdki oceny 63. **Progress Bar Variants** - warianty pasków postępu 64. **Badge Collection** - kolekcja badge'ów 65. **Alert Variants** - warianty alertów (info/success/warning/error) 66. **Empty State** - stan pusty 67. **Loading Skeleton** - skeleton loading 68. **Tooltip Examples** - przykłady tooltipów 69. **Dropdown Menu** - menu rozwijane 70. **Search Input** - pole wyszukiwania 71. **Tag Input** - pole z tagami 72. **Date Picker Preview** - podgląd wyboru daty 73. **File Upload Zone** - strefa upload plików 74. **Image Gallery Lightbox** - galeria z lightboxem 75. **Video Placeholder** - placeholder dla wideo 76. **Map Placeholder** - placeholder dla mapy 77. **Social Share Buttons** - przyciski udostępniania 78. **Author Bio** - bio autora 79. **Related Articles** - powiązane artykuły 80. **Pagination** - paginacja stron
   - **Łącznie na stronie**: 80 komponentów sekcyjnych
   - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
   - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
@@ -1066,10 +1066,10 @@
   - **URL narzędzia**: `/narzedzia/licznik-slow-i-znakow`
   - **URL instrukcji**: `/narzedzia/licznik-slow-i-znakow/instrukcja`
   - **Pliki utworzone**:
-    - `lib/tools/text/wordCount.ts` — logika liczenia słów/znaków/akapitów, typy stron, ocena długości
-    - `components/sections/tools/WordCountTool.tsx` — główny komponent narzędzia
-    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/page.tsx` — strona narzędzia
-    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/instrukcja/page.tsx` — strona instrukcji
+    - `lib/tools/text/wordCount.ts` - logika liczenia słów/znaków/akapitów, typy stron, ocena długości
+    - `components/sections/tools/WordCountTool.tsx` - główny komponent narzędzia
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/page.tsx` - strona narzędzia
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/instrukcja/page.tsx` - strona instrukcji
   - **Funkcjonalność**:
     - Liczba słów, znaków (ze spacjami i bez), akapitów, czas czytania
     - Ocena długości dla 6 typów stron (opis produktu, strona usługi, strona główna, landing page, artykuł blogowy, poradnik)
@@ -1083,41 +1083,41 @@
   - **Dokumentacja**: Zaktualizowano `TOOLS_CATALOG.md`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENTS-002] Strona /component — kolejne 20 komponentów sekcyjnych (rozbudowa showcase)**
+- ✅ **[COMPONENTS-002] Strona /component - kolejne 20 komponentów sekcyjnych (rozbudowa showcase)**
 
   - **URL**: `/component` (strona deweloperska, noindex)
   - **Plik**: `app/(pl)/component/page.tsx`
-  - **Komponenty (21-40)**: 21. **Bento Grid** — siatka kart o różnych rozmiarach (hero alternatywa, strona główna) 22. **Feature Cards Horizontal** — karty funkcji w układzie horyzontalnym (strony usług) 23. **Alternating Content** — sekcje tekst+obraz naprzemiennie (case studies, usługi) 24. **Accordion with Icons** — rozwijane sekcje z ikonami (FAQ rozbudowane) 25. **Progress Steps** — kroki z paskiem postępu (onboarding, formularze) 26. **Floating Cards** — karty z efektem unoszenia/cienia (wyróżnienia, promocje) 27. **Split Hero** — hero podzielone na dwie kolumny (strona główna) 28. **Testimonials Grid** — siatka opinii bez karuzeli (social proof) 29. **Service Blocks** — bloki usług z listą cech (strona usług) 30. **Comparison Cards** — karty porównawcze przed/po (cenniki) 31. **Info Banner** — pasek informacyjny na całą szerokość (promocje) 32. **Feature List with Checkmarks** — lista funkcji z checkmarkami (pakiety) 33. **Stacked Cards** — karty nachodzące na siebie (portfolio) 34. **Quote Carousel Static** — statyczne cytaty (opinie) 35. **Icon Badges Row** — rząd badge'ów z ikonami (certyfikaty, technologie) 36. **Two-Column Text** — tekst w dwóch kolumnach (artykuły) 37. **Gradient Section** — sekcja z gradientowym tłem (CTA) 38. **Expandable Cards** — karty rozwijane po kliknięciu (szczegóły usług) 39. **Mini Stats Row** — kompaktowy rząd statystyk (pod hero) 40. **Content with Sidebar** — treść z bocznym panelem info (artykuły)
+  - **Komponenty (21-40)**: 21. **Bento Grid** - siatka kart o różnych rozmiarach (hero alternatywa, strona główna) 22. **Feature Cards Horizontal** - karty funkcji w układzie horyzontalnym (strony usług) 23. **Alternating Content** - sekcje tekst+obraz naprzemiennie (case studies, usługi) 24. **Accordion with Icons** - rozwijane sekcje z ikonami (FAQ rozbudowane) 25. **Progress Steps** - kroki z paskiem postępu (onboarding, formularze) 26. **Floating Cards** - karty z efektem unoszenia/cienia (wyróżnienia, promocje) 27. **Split Hero** - hero podzielone na dwie kolumny (strona główna) 28. **Testimonials Grid** - siatka opinii bez karuzeli (social proof) 29. **Service Blocks** - bloki usług z listą cech (strona usług) 30. **Comparison Cards** - karty porównawcze przed/po (cenniki) 31. **Info Banner** - pasek informacyjny na całą szerokość (promocje) 32. **Feature List with Checkmarks** - lista funkcji z checkmarkami (pakiety) 33. **Stacked Cards** - karty nachodzące na siebie (portfolio) 34. **Quote Carousel Static** - statyczne cytaty (opinie) 35. **Icon Badges Row** - rząd badge'ów z ikonami (certyfikaty, technologie) 36. **Two-Column Text** - tekst w dwóch kolumnach (artykuły) 37. **Gradient Section** - sekcja z gradientowym tłem (CTA) 38. **Expandable Cards** - karty rozwijane po kliknięciu (szczegóły usług) 39. **Mini Stats Row** - kompaktowy rząd statystyk (pod hero) 40. **Content with Sidebar** - treść z bocznym panelem info (artykuły)
   - **Łącznie na stronie**: 40 komponentów sekcyjnych
   - **Spójność**: Wszystkie komponenty używają istniejących klas i ikon `react-icons/ri`
   - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[COMPONENTS-001] Strona /component — showcase 20 nowych komponentów sekcyjnych**
+- ✅ **[COMPONENTS-001] Strona /component - showcase 20 nowych komponentów sekcyjnych**
 
   - **URL**: `/component` (strona deweloperska, noindex)
   - **Plik**: `app/(pl)/component/page.tsx`
   - **Komponenty (20)**:
-    1. **Timeline / Oś czasu** — kroki procesu w formie pionowej osi (jak pracujemy, historia firmy)
-    2. **Before/After Slider** — porównanie dwóch obrazów z suwakiem (realizacje, efekty optymalizacji)
-    3. **Stats / Liczniki** — sekcja z dużymi liczbami + etykietami (strona główna, o nas)
-    4. **Pricing Table Alternatywna** — karty cenowe w układzie horyzontalnym (usługi, oferta)
-    5. **Logo Cloud / Zaufali nam** — siatka logo klientów (social proof)
-    6. **Feature Comparison Table** — tabela porównawcza funkcji/planów (cennik, pakiety)
-    7. **Team Grid** — karty z avatarem, imieniem, stanowiskiem (o nas, zespół)
-    8. **FAQ Inline Accordion** — kompaktowe FAQ z innym stylem (strony usług)
-    9. **CTA Split** — sekcja CTA podzielona na dwie kolumny (landing pages)
-    10. **Testimonial Quote** — pojedyncza duża opinia z cytatem (strona główna)
-    11. **Icon Grid / Services Grid** — siatka usług z dużymi ikonami (przegląd oferty)
-    12. **Highlight Box / Callout** — wyróżniony blok info/tip/warning (artykuły, instrukcje)
-    13. **Image Gallery Masonry** — galeria zdjęć w układzie masonry (portfolio)
-    14. **Video Embed Section** — sekcja z osadzonym wideo (prezentacje, tutoriale)
-    15. **Newsletter Signup** — prosty formularz zapisu (blog, strona główna)
-    16. **Contact Info Cards** — karty z danymi kontaktowymi (strona kontakt)
-    17. **Process Steps Horizontal** — kroki procesu w układzie poziomym (onboarding)
-    18. **Metrics Dashboard** — sekcja z metrykami/statystykami (case studies)
-    19. **Tabbed Content** — zakładki z różnymi treściami (usługi, produkty)
-    20. **Sticky Sidebar Layout** — układ z lepkim spisem treści (artykuły, dokumentacja)
+    1. **Timeline / Oś czasu** - kroki procesu w formie pionowej osi (jak pracujemy, historia firmy)
+    2. **Before/After Slider** - porównanie dwóch obrazów z suwakiem (realizacje, efekty optymalizacji)
+    3. **Stats / Liczniki** - sekcja z dużymi liczbami + etykietami (strona główna, o nas)
+    4. **Pricing Table Alternatywna** - karty cenowe w układzie horyzontalnym (usługi, oferta)
+    5. **Logo Cloud / Zaufali nam** - siatka logo klientów (social proof)
+    6. **Feature Comparison Table** - tabela porównawcza funkcji/planów (cennik, pakiety)
+    7. **Team Grid** - karty z avatarem, imieniem, stanowiskiem (o nas, zespół)
+    8. **FAQ Inline Accordion** - kompaktowe FAQ z innym stylem (strony usług)
+    9. **CTA Split** - sekcja CTA podzielona na dwie kolumny (landing pages)
+    10. **Testimonial Quote** - pojedyncza duża opinia z cytatem (strona główna)
+    11. **Icon Grid / Services Grid** - siatka usług z dużymi ikonami (przegląd oferty)
+    12. **Highlight Box / Callout** - wyróżniony blok info/tip/warning (artykuły, instrukcje)
+    13. **Image Gallery Masonry** - galeria zdjęć w układzie masonry (portfolio)
+    14. **Video Embed Section** - sekcja z osadzonym wideo (prezentacje, tutoriale)
+    15. **Newsletter Signup** - prosty formularz zapisu (blog, strona główna)
+    16. **Contact Info Cards** - karty z danymi kontaktowymi (strona kontakt)
+    17. **Process Steps Horizontal** - kroki procesu w układzie poziomym (onboarding)
+    18. **Metrics Dashboard** - sekcja z metrykami/statystykami (case studies)
+    19. **Tabbed Content** - zakładki z różnymi treściami (usługi, produkty)
+    20. **Sticky Sidebar Layout** - układ z lepkim spisem treści (artykuły, dokumentacja)
   - **Spójność**: Wszystkie komponenty używają istniejących klas (`text-light`, `text-mid`, `.h*`, `surface-card-soft`, `Wrapper`) i ikon `react-icons/ri`
   - **Responsywność**: Mobile-first, wszystkie breakpointy (sm/md/lg)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
@@ -1130,7 +1130,7 @@
   - **URL**: `/edukacja/sklepy/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac`
   - **Kategorie**: Sklepy, Bezpieczeństwo
   - **Czas czytania**: 11 min (~2147 słów)
-  - **Zawartość**: Dlaczego sklep musi mieć regulamin (Ustawa o prawach konsumenta), jakie przepisy regulują zawartość (Ustawa o prawach konsumenta, Kodeks cywilny, RODO, Dyrektywa Omnibus), obowiązkowe elementy (dane przedsiębiorcy, procedura zamówień), prawo odstąpienia od umowy (14 dni, wyjątki z art. 38), reklamacje i gwarancja (rękojmia 2 lata), dostawa i koszty (Omnibus — najniższa cena z 30 dni), ochrona danych osobowych (art. 13 RODO), pozasądowe rozwiązywanie sporów (platforma ODR), klauzule niedozwolone (rejestr UOKiK), jak udostępnić regulamin, konsekwencje braku (kary UOKiK do 10% obrotu, wydłużenie terminu odstąpienia do 12 miesięcy).
+  - **Zawartość**: Dlaczego sklep musi mieć regulamin (Ustawa o prawach konsumenta), jakie przepisy regulują zawartość (Ustawa o prawach konsumenta, Kodeks cywilny, RODO, Dyrektywa Omnibus), obowiązkowe elementy (dane przedsiębiorcy, procedura zamówień), prawo odstąpienia od umowy (14 dni, wyjątki z art. 38), reklamacje i gwarancja (rękojmia 2 lata), dostawa i koszty (Omnibus - najniższa cena z 30 dni), ochrona danych osobowych (art. 13 RODO), pozasądowe rozwiązywanie sporów (platforma ODR), klauzule niedozwolone (rejestr UOKiK), jak udostępnić regulamin, konsekwencje braku (kary UOKiK do 10% obrotu, wydłużenie terminu odstąpienia do 12 miesięcy).
   - **Linki wewnętrzne (4)**: sklepy-internetowe, efekt-zakotwiczenia, certyfikat-ssl, kontakt
   - **Linki zewnętrzne (6)**: Ustawa o prawach konsumenta (ISAP), Kodeks cywilny (ISAP), UOKiK, UODO, Platforma ODR, Rejestr klauzul niedozwolonych
   - **Tooltips (4)**: RODO, Dyrektywa Omnibus, rękojmia, klauzule abuzywne
@@ -1145,7 +1145,7 @@
   - **URL**: `/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic`
   - **Kategorie**: Marketing, Treści
   - **Czas czytania**: 10 min (~2034 słów)
-  - **Zawartość**: Czym jest newsletter i jak działa (formy, częstotliwość), dlaczego firmy prowadzą newslettery (niezależność od algorytmów, budowanie listy kontaktów, regularny kontakt), korzyści (zwiększenie sprzedaży — ROI 36:1 wg Litmus 2023, budowanie pozycji eksperta, kierowanie ruchu, zbieranie informacji o odbiorcach), dla kogo newsletter ma sens, na co zwrócić uwagę (zgoda RODO, wartość dla odbiorcy, regularność), jak mierzyć skuteczność (open rate, CTR, wypisania, konwersje), narzędzia (Mailchimp, GetResponse, Brevo), budowanie listy subskrybentów, typowe wyzwania.
+  - **Zawartość**: Czym jest newsletter i jak działa (formy, częstotliwość), dlaczego firmy prowadzą newslettery (niezależność od algorytmów, budowanie listy kontaktów, regularny kontakt), korzyści (zwiększenie sprzedaży - ROI 36:1 wg Litmus 2023, budowanie pozycji eksperta, kierowanie ruchu, zbieranie informacji o odbiorcach), dla kogo newsletter ma sens, na co zwrócić uwagę (zgoda RODO, wartość dla odbiorcy, regularność), jak mierzyć skuteczność (open rate, CTR, wypisania, konwersje), narzędzia (Mailchimp, GetResponse, Brevo), budowanie listy subskrybentów, typowe wyzwania.
   - **Linki wewnętrzne (6)**: strony-internetowe, social-proof, paradoks-wyboru, identyfikacja-wizualna, tworzenie-tresci, kontakt
   - **Linki zewnętrzne (6)**: Litmus (ROI), UODO (RODO), Mailchimp (benchmarks + platforma), GetResponse, Brevo
   - **Tooltips (3)**: newsletter, open rate, CTR
@@ -1154,12 +1154,12 @@
   - **Pliki**: `data/pl/blog.json`, `docs/BLOG_CATALOG.md`
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
-- ✅ **[CONTENT-035] Blog: konsolidacja treści o Core Web Vitals — skrócenie sekcji + linki do nowego artykułu**
+- ✅ **[CONTENT-035] Blog: konsolidacja treści o Core Web Vitals - skrócenie sekcji + linki do nowego artykułu**
 
   - **Cel**: Skrócenie rozbudowanych sekcji o Core Web Vitals w starszych artykułach i dodanie linków do dedykowanego artykułu IDEA-064.
   - **Artykuły edytowane**:
-    - `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie` — skrócona sekcja "Core Web Vitals i responsywność" + zaktualizowane FAQ
-    - `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp` — skrócona sekcja o CWV + zaktualizowane FAQ
+    - `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie` - skrócona sekcja "Core Web Vitals i responsywność" + zaktualizowane FAQ
+    - `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp` - skrócona sekcja o CWV + zaktualizowane FAQ
   - **Zmiany**:
     - Usunięto szczegółowe wyjaśnienia LCP/FID/CLS (przeniesione do IDEA-064)
     - Dodano linki wewnętrzne do `/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
@@ -1174,7 +1174,7 @@
   - **URL**: `/edukacja/seo/dlaczego-szybkosc-ladowania-strony-wplywa-na-pozycje-w-google`
   - **Kategorie**: SEO, UX, Strony
   - **Czas czytania**: 11 min (~2200 słów)
-  - **Zawartość**: Czym są Core Web Vitals (LCP, INP, CLS — progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP — czas ładowania głównej treści; INP — responsywność, dlaczego zastąpił FID; CLS — stabilność wizualna), jak Core Web Vitals wpływają na ranking Google (treść najważniejsza, czynnik różnicujący, dane CrUX), wpływ szybkości na konwersję (opuszczanie stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JS/CSS, serwer, zewnętrzne skrypty).
+  - **Zawartość**: Czym są Core Web Vitals (LCP, INP, CLS - progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP - czas ładowania głównej treści; INP - responsywność, dlaczego zastąpił FID; CLS - stabilność wizualna), jak Core Web Vitals wpływają na ranking Google (treść najważniejsza, czynnik różnicujący, dane CrUX), wpływ szybkości na konwersję (opuszczanie stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JS/CSS, serwer, zewnętrzne skrypty).
   - **Linki wewnętrzne (8)**: optymalizacja-zdjec, responsywnosc-strony, ile-czasu-trwa-pozycjonowanie, paradoks-wyboru, darmowa-dostawa-vs-nizsza-cena, social-proof, jpg-png-na-webp (narzędzie), domena-i-hosting, strony-internetowe, optymalizacja-seo, kontakt
   - **Linki zewnętrzne (6)**: Google Search Central (Core Web Vitals), Google Developers Blog (Page Experience), Think with Google (mobile speed), PageSpeed Insights, Google Search Console, Web Vitals Extension
   - **Tooltips (4)**: Core Web Vitals, LCP, INP, CLS
@@ -1191,11 +1191,11 @@
   - **Rozmiar po**: 50135 znaków / 730 linii
   - **Oszczędność**: 3476 znaków (~6.5%) / 34 linie
   - **Usunięte duplikaty**:
-    - Sekcja "Dodatkowe reguły" (linie 756-764) — już była w liniach 116-123
-    - Zasada "Nie odsyłaj do konkurencji" — scalona z "Zakaz rekomendowania konkurencji"
-    - Zasada "Zakaz checklist" — powtórzona dwukrotnie
-    - Zasada "Weryfikacja zgodności z instrukcją" — powtórzona dwukrotnie
-    - Zasada "Unikanie duplikacji między artykułami" — powtórzona dwukrotnie
+    - Sekcja "Dodatkowe reguły" (linie 756-764) - już była w liniach 116-123
+    - Zasada "Nie odsyłaj do konkurencji" - scalona z "Zakaz rekomendowania konkurencji"
+    - Zasada "Zakaz checklist" - powtórzona dwukrotnie
+    - Zasada "Weryfikacja zgodności z instrukcją" - powtórzona dwukrotnie
+    - Zasada "Unikanie duplikacji między artykułami" - powtórzona dwukrotnie
   - **Uproszczenia**: Przykłady zamiany i przykłady dobrego/złego stosowania zasad zamienione na tabele
   - **Dodana zasada**: Zakaz rekomendowania ogólnych profesjonalistów (rozszerzona)
   - **Pliki**: `docs/INSTRUCTIONS.md`
@@ -1263,7 +1263,7 @@
     - `/edukacja/tresci/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`
     - `/edukacja/branding/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`
   - **Plik zmieniony**: `middleware.ts`
-  - **Weryfikacja**: `npm run lint` + `npm run build` — OK.
+  - **Weryfikacja**: `npm run lint` + `npm run build` - OK.
 
 ## 2025-01-01
 
@@ -1278,22 +1278,22 @@
   - **Pliki zmienione**:
     - `components/ui/ProjectCard.tsx` (quality 90 → 100)
     - `app/(pl)/realizacje/page.tsx` (HeroBanner + CTABanner texts)
-  - **Weryfikacja**: `npm run build` — OK.
+  - **Weryfikacja**: `npm run build` - OK.
 
 - ✅ **[SEO-019] Sitemap: stabilna, deterministyczna kolejność URL**
 
   - **Co zrobiono**:
     - Zidentyfikowano problem: kolejność URL w `sitemap-0.xml` była niedeterministyczna (zależna od kolejności skanowania plików przez `fast-glob` i iteracji po `Map.entries()`).
     - Dodano skrypt `scripts/sort-sitemap.cjs` sortujący URL alfabetycznie po wygenerowaniu sitemap.
-    - Zaktualizowano `package.json` — postbuild uruchamia skrypt sortujący.
+    - Zaktualizowano `package.json` - postbuild uruchamia skrypt sortujący.
     - Zachowano sortowanie w `additionalPaths` w `next-sitemap.config.cjs` (redundantne, ale bezpieczne).
   - **Pliki zmienione**:
     - `scripts/sort-sitemap.cjs` (nowy)
     - `package.json` (postbuild)
     - `next-sitemap.config.cjs` (sortowanie additionalPaths)
-  - **Wynik**: Sitemap posortowana alfabetycznie — kolejność: `/` → `/edukacja/**` → `/kontakt` → `/mapa-strony` → `/narzedzia/**` → `/o-nas/**` → `/polityka-prywatnosci` → `/realizacje/**` → `/regulamin` → `/uslugi/**`.
-  - **Wpływ na SEO**: Minimalny bezpośredni — Google nie sortuje URL według kolejności w sitemap. Pośrednie korzyści: łatwiejsze debugowanie, czytelniejsze diff-y w git, profesjonalny wygląd.
-  - **Weryfikacja**: `next build` + `next-sitemap` + `node scripts/sort-sitemap.cjs` — OK.
+  - **Wynik**: Sitemap posortowana alfabetycznie - kolejność: `/` → `/edukacja/**` → `/kontakt` → `/mapa-strony` → `/narzedzia/**` → `/o-nas/**` → `/polityka-prywatnosci` → `/realizacje/**` → `/regulamin` → `/uslugi/**`.
+  - **Wpływ na SEO**: Minimalny bezpośredni - Google nie sortuje URL według kolejności w sitemap. Pośrednie korzyści: łatwiejsze debugowanie, czytelniejsze diff-y w git, profesjonalny wygląd.
+  - **Weryfikacja**: `next build` + `next-sitemap` + `node scripts/sort-sitemap.cjs` - OK.
 
 - ✅ **[SEO-025] Usługi i Realizacje: usunięcie abstrakcyjnych teł, poprawa jakości obrazów i tekstów**
 
@@ -1320,7 +1320,7 @@
     - `app/(pl)/uslugi/page.tsx`
     - `app/(pl)/realizacje/page.tsx`
     - `components/ui/ProjectCard.tsx`
-  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+  - **Weryfikacja**: `npm run lint` i `npm run build` - OK.
 
 - ✅ **[SEO-024] Usługi: rozbudowa strony `/uslugi` o zdjęcia realizacji, lepsze meta i CTA**
 
@@ -1335,7 +1335,7 @@
     - Dodano CTABanner na końcu strony (darmowa wycena → /kontakt).
   - **Pliki zmienione**:
     - `app/(pl)/uslugi/page.tsx`
-  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+  - **Weryfikacja**: `npm run lint` i `npm run build` - OK.
 
 ## 2025-12-31
 
@@ -1344,20 +1344,20 @@
   - **Co zrobiono**:
     - Zmieniono tło Hero z abstrakcyjnego obrazu na zdjęcie realizacji (`luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp`).
     - Dodano rozbudowany opis w Hero (3 zdania o portfolio i branżach).
-    - Poprawiono metadata (`title`, `description`) — bardziej konkretne i SEO-friendly.
+    - Poprawiono metadata (`title`, `description`) - bardziej konkretne i SEO-friendly.
     - Zmieniono obraz OpenGraph na zdjęcie realizacji (zamiast abstrakcyjnego tła).
     - Zaktualizowano schema JSON-LD do spójności z metadata.
     - Dodano CTABanner na końcu strony z zachęceniem do kontaktu i darmowej wyceny.
   - **Pliki zmienione**:
     - `app/(pl)/realizacje/page.tsx`
-  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+  - **Weryfikacja**: `npm run lint` i `npm run build` - OK.
 
 - ✅ **[TOOLS-050] Generator stopki mailowej: LocalStorage + modal potwierdzenia resetu**
 
   - **Co zrobiono**:
     - Dodano automatyczny zapis wszystkich ustawień do localStorage (config, styleConfig, spacingConfig, textStyleConfig, layout, themeId).
     - Ustawienia są przywracane po odświeżeniu strony.
-    - Stworzono nowy reużywalny komponent `ConfirmModal.tsx` (na bazie SearchDialog — AnimatePresence, createPortal, useEscapeKey).
+    - Stworzono nowy reużywalny komponent `ConfirmModal.tsx` (na bazie SearchDialog - AnimatePresence, createPortal, useEscapeKey).
     - Dodano przycisk „Resetuj wygląd" pod podglądem stopki, otwierający modal potwierdzenia.
     - Zaktualizowano instrukcję: nowa sekcja „Automatyczny zapis i resetowanie ustawień".
   - **Pliki zmienione**:
@@ -1389,25 +1389,25 @@
   - **Pliki zmienione**:
     - `data/pl/blog.json`
     - `docs/BLOG_CATALOG.md`
-  - **Uwaga**: Brakuje obrazu cover — do uzupełnienia: `public/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp`
+  - **Uwaga**: Brakuje obrazu cover - do uzupełnienia: `public/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp`
   - **Weryfikacja**: content-only.
 
 - ✅ **[31] Artykuł: Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?**
 
   - **Co zrobiono**:
-    - Napisano kompleksowy artykuł porównawczy (12 min, ~2400 słów) o czcionkach szeryfowych i bezszeryfowych z szerokim kontekstem — nie tylko strony internetowe, ale też druk, branding, psychologia odbioru.
+    - Napisano kompleksowy artykuł porównawczy (12 min, ~2400 słów) o czcionkach szeryfowych i bezszeryfowych z szerokim kontekstem - nie tylko strony internetowe, ale też druk, branding, psychologia odbioru.
     - Struktura: historia szeryfów (Rzym, Gutenberg, modernizm), różnice wizualne, czytelność (druk vs ekrany z badaniami NNGroup), kiedy używać szeryfowych, kiedy bezszeryfowych, psychologia odbioru, łączenie stylów, dostępność (dysleksja, WCAG), praktyczne aspekty wyboru, przykłady z branż.
     - 8 linków wewnętrznych, 5 linków zewnętrznych, 3 tooltips, 5 FAQ.
     - Dodano artykuł na górę listy w `data/pl/blog.json`.
     - Zaktualizowano `docs/BLOG_CATALOG.md`.
   - **Poprawki (CONTENT-031)**:
-    - Dodano wizualizację czcionek inline — nazwy czcionek wyświetlają się ich własnym krojem (np. <span style="font-family: Georgia">Georgia</span>, <span style="font-family: Roboto">Roboto</span>) dzięki @import Google Fonts + inline style font-family.
-    - Poprawiono ton — usunięto sformułowania pouczające ("To uproszczenie", "Oczywiście to nie są sztywne reguły", "Teoria to jedno, praktyka to drugie").
+    - Dodano wizualizację czcionek inline - nazwy czcionek wyświetlają się ich własnym krojem (np. <span style="font-family: Georgia">Georgia</span>, <span style="font-family: Roboto">Roboto</span>) dzięki @import Google Fonts + inline style font-family.
+    - Poprawiono ton - usunięto sformułowania pouczające ("To uproszczenie", "Oczywiście to nie są sztywne reguły", "Teoria to jedno, praktyka to drugie").
     - Dodano źródło dla badań psychologicznych (Communication Research).
   - **Pliki zmienione**:
     - `data/pl/blog.json`
     - `docs/BLOG_CATALOG.md`
-  - **Uwaga**: Brakuje obrazu cover — do uzupełnienia: `public/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp`
+  - **Uwaga**: Brakuje obrazu cover - do uzupełnienia: `public/assets/blog/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych/czcionki-szeryfowe-i-bezszeryfowe-czym-sie-roznia-i-kiedy-uzywac-ktorych.webp`
   - **Weryfikacja**: `npm run build` przechodzi.
 
 - ✅ **[TOOLS-058] Generator stopki mailowej: naprawienie stylów w układach Kompakt, Dwie kolumny, Minimalistyczny, Dolny pasek**
@@ -1415,7 +1415,7 @@
   - **Co zrobiono**:
     - Dodano `borderStyle` do layoutów: `compact`, `two-column`, `minimal`, `bottom-bar`.
     - Użyto per-element text styles we wszystkich 4 layoutach: `nameColor`, `nameFontSize`, `jobTitleColor`, `jobTitleFontSize`, `companyColor`, `companyFontSize`, `contactColor`, `contactFontSize`, `socialsColor`, `socialsFontSize`, `legalColor`, `legalFontSize`.
-    - Zaktualizowano instrukcję: nowa sekcja „Styl tekstu — kolory i rozmiary poszczególnych elementów".
+    - Zaktualizowano instrukcję: nowa sekcja „Styl tekstu - kolory i rozmiary poszczególnych elementów".
     - Zaktualizowano FAQ o ikony SVG mediów społecznościowych.
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
@@ -1426,7 +1426,7 @@
 
   - **Co zrobiono**:
     - Dodano `borderStyle` do wszystkich layoutów (top-banner, label-column, centered).
-    - Zaktualizowano layout `top-banner` — użycie `nameFontSize`, `jobTitleFontSize`, `companyFontSize` w bannerze.
+    - Zaktualizowano layout `top-banner` - użycie `nameFontSize`, `jobTitleFontSize`, `companyFontSize` w bannerze.
     - Teraz style tekstu (kolor, rozmiar) i ramki aplikują się we wszystkich 4 układach.
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
@@ -1449,7 +1449,7 @@
 
   - **Co zrobiono**:
     - Dodano nową zakładkę „Styl tekstu" z edycją koloru i rozmiaru dla każdego elementu tekstowego.
-    - Sekcja „Własne kolory" — dodawanie i zapisywanie kolorów (do 8), usuwanie przez hover.
+    - Sekcja „Własne kolory" - dodawanie i zapisywanie kolorów (do 8), usuwanie przez hover.
     - Elementy: Imię i nazwisko, Stanowisko, Firma, Dane kontaktowe, Media społecznościowe, Klauzula prawna.
     - Dla każdego: przycisk „Domyślny", color picker, własne kolory jako kółka, przyciski +/- rozmiaru.
     - Poprawiono etykiety w zakładce Odstępy: „Po X" → „Przed Y" (semantycznie poprawne).
@@ -1507,7 +1507,7 @@
 
   - **Co zrobiono**:
     - Zmieniono nazwę zakładki z „Link” na „Przyciski”.
-    - Dodano pola dla drugiego przycisku CTA (cta2Label, cta2Url) — styl outline (przezroczyste tło z obramowaniem).
+    - Dodano pola dla drugiego przycisku CTA (cta2Label, cta2Url) - styl outline (przezroczyste tło z obramowaniem).
     - Przeniesiono opcję „Zaokrąglenie przycisku CTA” z zakładki Wygląd do zakładki Przyciski.
     - Zaktualizowano instrukcję narzędzia i schemat HowTo.
   - **Pliki zmienione**:
@@ -1520,7 +1520,7 @@
 - ✅ **[TOOLS-053] Generator stopki mailowej: poprawka spacing w układzie Wyśrodkowany**
 
   - **Co zrobiono**:
-    - Naprawiono działanie spacing w układzie `centered` — zmieniono logikę z `.replace('<td', '<td style="text-align:center;')` na `.replace('<td style="', '<td style="text-align:center;')` aby dołączać text-align do istniejących stylów zamiast je nadpisywać.
+    - Naprawiono działanie spacing w układzie `centered` - zmieniono logikę z `.replace('<td', '<td style="text-align:center;')` na `.replace('<td style="', '<td style="text-align:center;')` aby dołączać text-align do istniejących stylów zamiast je nadpisywać.
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
   - **Weryfikacja**: `npm run build` przechodzi.
@@ -1528,13 +1528,13 @@
 - ✅ **[TOOLS-052] Generator stopki mailowej: poprawka spacing we wszystkich układach + dynamiczne ukrywanie**
 
   - **Co zrobiono**:
-    - Zaktualizowano `buildSignatureHtml.ts` — spacing jest teraz stosowany we wszystkich 10 układach:
+    - Zaktualizowano `buildSignatureHtml.ts` - spacing jest teraz stosowany we wszystkich 10 układach:
       - `compact`: afterSocials, beforeLegal
       - `two-column`: afterName, afterTitle, afterExtra, afterSocials, afterCta, beforeLegal
       - `minimal`: afterName, afterTitle
       - `bottom-bar`: beforeLegal
-    - Dodano mapowanie `LAYOUT_SPACING_MAP` w komponencie — określa które kontrolki spacing są dostępne dla danego layoutu.
-    - Zaktualizowano panel Odstępy — kontrolki są teraz dynamicznie ukrywane w zależności od wybranego layoutu.
+    - Dodano mapowanie `LAYOUT_SPACING_MAP` w komponencie - określa które kontrolki spacing są dostępne dla danego layoutu.
+    - Zaktualizowano panel Odstępy - kontrolki są teraz dynamicznie ukrywane w zależności od wybranego layoutu.
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
@@ -1563,13 +1563,13 @@
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[AUDIT-018] Repo: audyt sitemap — kompletność, duplikaty, poprawność lastmod**
+- ✅ **[AUDIT-018] Repo: audyt sitemap - kompletność, duplikaty, poprawność lastmod**
 
   - **Co zrobiono**:
     - Sprawdzono kompletność sitemap: wszystkie 53 strony statyczne są obecne ✓
-    - Wykryto i usunięto **duplikat katalogu** `generator-stopki-mailowej/` (stary katalog obok `darmowy-generator-stopki-mailowej/`) — tworzył dostępne URL-e `/narzedzia/generator-stopki-mailowej` i `/instrukcja`, które nie były w sitemap.
-    - Naprawiono **bug w `next-sitemap.config.cjs`** — strona główna `/` nie miała `lastmod` (route group `(pl)` po usunięciu dawał pusty string zamiast `/`).
-    - Zweryfikowano daty `lastmod` — poprawne, pobierane z git commit date.
+    - Wykryto i usunięto **duplikat katalogu** `generator-stopki-mailowej/` (stary katalog obok `darmowy-generator-stopki-mailowej/`) - tworzył dostępne URL-e `/narzedzia/generator-stopki-mailowej` i `/instrukcja`, które nie były w sitemap.
+    - Naprawiono **bug w `next-sitemap.config.cjs`** - strona główna `/` nie miała `lastmod` (route group `(pl)` po usunięciu dawał pusty string zamiast `/`).
+    - Zweryfikowano daty `lastmod` - poprawne, pobierane z git commit date.
   - **Pliki zmienione**:
     - Usunięto: `app/(pl)/narzedzia/(tools)/(desktop-only)/generator-stopki-mailowej/` (cały katalog z page.tsx i instrukcja/page.tsx)
     - Edytowano: `next-sitemap.config.cjs` (dodano `if (r === '') r = '/';` w funkcji `toRoute`)
@@ -1609,8 +1609,8 @@
     - Usunięto `TOOL_REDIRECTS` z `lib/redirects.ts`.
     - Zaktualizowano linki i schema JSON-LD w `app/(pl)/narzedzia/page.tsx`.
     - Zaktualizowano linki w `components/shared/navigation-data/pl.ts`, `components/shared/Footer.tsx`, `app/(pl)/mapa-strony/page.tsx`.
-    - Zaktualizowano URL-e w plikach narzędzi (page.tsx, instrukcja/page.tsx) — canonical, OG, schema, breadcrumbs, linki.
-    - Linki w blogu (`data/pl/blog.json`) już były na starych URL-ach — teraz działają poprawnie.
+    - Zaktualizowano URL-e w plikach narzędzi (page.tsx, instrukcja/page.tsx) - canonical, OG, schema, breadcrumbs, linki.
+    - Linki w blogu (`data/pl/blog.json`) już były na starych URL-ach - teraz działają poprawnie.
   - **Pliki zmienione**:
     - `lib/redirects.ts`
     - `app/(pl)/narzedzia/page.tsx`
@@ -1625,13 +1625,13 @@
 - ✅ **[TOOLS-046] Generator stopki mailowej: naprawa UI zakładek Wygląd, Odstępy, Zaawansowane**
 
   - **Co zrobiono**:
-    - Naprawiono crash zakładki Zaawansowane — dodano fallback dla customColors w loadFromStorage (stare dane w localStorage mogły nie mieć tej właściwości).
-    - Uproszczono zakładkę Odstępy — usunięto boxy, zmniejszono tekst, użyto prostego layoutu z przyciskami Mały/Standard/Duży.
+    - Naprawiono crash zakładki Zaawansowane - dodano fallback dla customColors w loadFromStorage (stare dane w localStorage mogły nie mieć tej właściwości).
+    - Uproszczono zakładkę Odstępy - usunięto boxy, zmniejszono tekst, użyto prostego layoutu z przyciskami Mały/Standard/Duży.
     - Naprawiono sekcję „Kolory i rozmiary elementów":
       - Zwiększono ikony kolorów z `h-4 w-4` do `h-6 w-6`.
       - Usunięto ramki przy elementach (`rounded-lg border border-neutral-200 bg-neutral-50`).
       - Zwiększono przyciski A-/A+ z `px-2 py-1 text-[10px]` do `px-3 py-1.5 text-xs`.
-      - Naprawiono color picker — teraz jest `h-6 w-6` kwadratem z border.
+      - Naprawiono color picker - teraz jest `h-6 w-6` kwadratem z border.
     - Usunięto ikonkę RiRefreshLine z przycisku „Resetuj wygląd".
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator.tsx`
@@ -1641,11 +1641,11 @@
 
   - **Co zrobiono**:
     - Przywrócono funkcjonalność własnych kolorów (customColors) w zakładce Zaawansowane.
-    - Usunięto predefiniowane kolory z ELEMENT_COLOR_OPTIONS (Ciemny, Niebieski, Fioletowy, Zielony, Szary) — teraz przy elementach są tylko własne kolory użytkownika + color picker.
+    - Usunięto predefiniowane kolory z ELEMENT_COLOR_OPTIONS (Ciemny, Niebieski, Fioletowy, Zielony, Szary) - teraz przy elementach są tylko własne kolory użytkownika + color picker.
     - Stworzono nową zakładkę „Odstępy" z rozbudowanymi opcjami i przyciskami −/+ (przeniesiono z Zaawansowane).
     - Stworzono reużywalny komponent `ConfirmDialog` (na podstawie SearchDialog).
     - Dodano przycisk „Resetuj wygląd" z modelem potwierdzenia (resetuje styleConfig do domyślnych).
-    - Zaktualizowano stronę instrukcji — nowa zakładka Odstępy, własne kolory, przycisk Resetuj.
+    - Zaktualizowano stronę instrukcji - nowa zakładka Odstępy, własne kolory, przycisk Resetuj.
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `components/sections/tools/EmailSignatureGenerator/types.ts`
@@ -1658,23 +1658,23 @@
   - **Co zrobiono**:
     - Usunięto sekcję „Własne kolory" z zakładki Zaawansowane (color picker + przycisk „+ Dodaj" + renderowanie zapisanych kolorów).
     - Usunięto renderowanie customColors przy elementach tekstowych.
-    - Naprawiono styl trzeciego przycisku odstępów „Treść → Stopka" — był niespójny z dwoma poprzednimi.
+    - Naprawiono styl trzeciego przycisku odstępów „Treść → Stopka" - był niespójny z dwoma poprzednimi.
     - Usunięto `customColors` z `StyleConfig` w `types.ts` oraz `DEFAULT_STYLE`.
     - Usunięto niepotrzebny stan `customColorInput` i funkcję `handleAddCustomColor`.
-    - Zaktualizowano stronę instrukcji — usunięto wzmianki o „Własne kolory", „Dodaj do palety" oraz FAQ o zapisywaniu własnych kolorów.
+    - Zaktualizowano stronę instrukcji - usunięto wzmianki o „Własne kolory", „Dodaj do palety" oraz FAQ o zapisywaniu własnych kolorów.
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `components/sections/tools/EmailSignatureGenerator/types.ts`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-030] Generator stopki mailowej: refaktor UI — spójność przycisków i checkboxów z innymi narzędziami**
+- ✅ **[TOOLS-030] Generator stopki mailowej: refaktor UI - spójność przycisków i checkboxów z innymi narzędziami**
 
   - **Co zrobiono**:
     - Zmieniono etykietę z „Motyw kolorystyczny" na „Kolory i czcionki" (w zakładce Wygląd nie było przycisków motywów).
-    - Ujednolicono checkbox „Pokaż ikony zamiast nazw" — dodano `id` i `htmlFor`, użyto spójnych klas z checkboxem „Pokaż linię oddzielającą".
+    - Ujednolicono checkbox „Pokaż ikony zamiast nazw" - dodano `id` i `htmlFor`, użyto spójnych klas z checkboxem „Pokaż linię oddzielającą".
     - Zmieniono styl przycisków A-/A+ (rozmiar czcionki elementów) na spójny z innymi przyciskami opcji (rounded-lg border, px-2 py-1).
-    - Zaktualizowano stronę instrukcji — usunięto wzmianki o „motywach kolorystycznych" (sekcja i schema HowTo).
+    - Zaktualizowano stronę instrukcji - usunięto wzmianki o „motywach kolorystycznych" (sekcja i schema HowTo).
   - **Pliki zmienione**:
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
@@ -1689,16 +1689,16 @@
     - Zmieniono "social media" na "media społecznościowe" (linia 468).
     - Zmieniono "Twojej" na "swojej" gdzie właściwe (linia 476).
   - **Zmienione strony (9 plików)**:
-    - `/uslugi/tworzenie-tresci` — usunięto "budują widoczność i zaufanie", "Przyciągnij klientów"
-    - `/uslugi/projekty-graficzne/projekt-wizytowki` — usunięto "buduje zaufanie od pierwszego spojrzenia"
-    - `/uslugi/projekty-graficzne/projekt-ulotki` — usunięto "przyciąga uwagę"
-    - `/uslugi/projekty-graficzne/projekt-teczki-ofertowej` — usunięto "podnosi prestiż", "buduje zaufanie"
-    - `/uslugi/projekty-graficzne/projekt-papieru-firmowego` — usunięto "wzmacnia wizerunek"
-    - `/uslugi/projekty-graficzne/projekt-odziezy-firmowej` — usunięto "lepsza rozpoznawalność", "buduje zaufanie"
-    - `/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej` — usunięto "zachęca klientów do powrotu"
-    - `/uslugi/projekty-graficzne/projekt-katalogu` — usunięto "podnoszą sprzedaż i wizerunek"
-    - `/uslugi/projekty-graficzne/szablony-postow-social-media` — zmieniono "social media" na "media społecznościowe"
-    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress` — usunięto "Przyciągnij nowych klientów"
+    - `/uslugi/tworzenie-tresci` - usunięto "budują widoczność i zaufanie", "Przyciągnij klientów"
+    - `/uslugi/projekty-graficzne/projekt-wizytowki` - usunięto "buduje zaufanie od pierwszego spojrzenia"
+    - `/uslugi/projekty-graficzne/projekt-ulotki` - usunięto "przyciąga uwagę"
+    - `/uslugi/projekty-graficzne/projekt-teczki-ofertowej` - usunięto "podnosi prestiż", "buduje zaufanie"
+    - `/uslugi/projekty-graficzne/projekt-papieru-firmowego` - usunięto "wzmacnia wizerunek"
+    - `/uslugi/projekty-graficzne/projekt-odziezy-firmowej` - usunięto "lepsza rozpoznawalność", "buduje zaufanie"
+    - `/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej` - usunięto "zachęca klientów do powrotu"
+    - `/uslugi/projekty-graficzne/projekt-katalogu` - usunięto "podnoszą sprzedaż i wizerunek"
+    - `/uslugi/projekty-graficzne/szablony-postow-social-media` - zmieniono "social media" na "media społecznościowe"
+    - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress` - usunięto "Przyciągnij nowych klientów"
   - **Weryfikacja**: `npm run build` przechodzi.
 
 - ✅ **[SEO-020] Repo: konsolidacja redirectów do jednego pliku (`lib/redirects.ts`)**
@@ -1707,12 +1707,12 @@
     - Utworzono `lib/redirects.ts` z centralną konfiguracją wszystkich redirectów 301.
     - Przeniesiono ~40 redirectów z `next.config.ts` do nowego pliku.
     - Przeniesiono `TOOL_REDIRECTS` z `middleware.ts` do nowego pliku.
-    - Zaktualizowano `middleware.ts` — import z `lib/redirects.ts`, obsługa wszystkich redirectów (statycznych + dynamicznych wzorców).
+    - Zaktualizowano `middleware.ts` - import z `lib/redirects.ts`, obsługa wszystkich redirectów (statycznych + dynamicznych wzorców).
     - Usunięto funkcję `redirects()` z `next.config.ts` (pozostały tylko headers i webpack).
   - **Pliki zmienione**:
-    - `lib/redirects.ts` (nowy) — TOOL_REDIRECTS, LEGACY_REDIRECTS, PROJECT_REDIRECTS, EDUCATION_REDIRECTS, ALL_STATIC_REDIRECTS
-    - `middleware.ts` — import + matchPatternRedirect dla /projects/:slug i /edukacja/design/:path\*
-    - `next.config.ts` — usunięto async redirects()
+    - `lib/redirects.ts` (nowy) - TOOL_REDIRECTS, LEGACY_REDIRECTS, PROJECT_REDIRECTS, EDUCATION_REDIRECTS, ALL_STATIC_REDIRECTS
+    - `middleware.ts` - import + matchPatternRedirect dla /projects/:slug i /edukacja/design/:path\*
+    - `next.config.ts` - usunięto async redirects()
   - **Korzyści**: Jeden plik źródłowy dla wszystkich redirectów, łatwiejsze zarządzanie, middleware (edge) zamiast next.config.
 
 - ✅ **[COPY-TOOLS-001] Narzędzia: redakcja tekstów instrukcji zgodnie z praktykami SEO**
@@ -1746,11 +1746,11 @@
     - Zaktualizowano wszystkie linki wewnętrzne: nawigacja, stopka, mapa strony, strona /narzedzia.
     - Zaktualizowano canonical URL i breadcrumbs we wszystkich plikach narzędzi.
   - **Pliki zmienione**:
-    - `middleware.ts` — redirecty 301
-    - `components/shared/navigation-data/pl.ts` — nawigacja
-    - `components/shared/Footer.tsx` — stopka
-    - `app/(pl)/mapa-strony/page.tsx` — mapa strony
-    - `app/(pl)/narzedzia/page.tsx` — strona narzędzi
+    - `middleware.ts` - redirecty 301
+    - `components/shared/navigation-data/pl.ts` - nawigacja
+    - `components/shared/Footer.tsx` - stopka
+    - `app/(pl)/mapa-strony/page.tsx` - mapa strony
+    - `app/(pl)/narzedzia/page.tsx` - strona narzędzi
     - Wszystkie pliki `page.tsx` i `instrukcja/page.tsx` w narzędziach
   - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
 
@@ -1800,12 +1800,12 @@
 
   - **Co zrobiono**:
     - Nowa zakładka "Dodatki" w edytorze z elementami:
-      - **Tagline** — krótkie hasło/motto wyświetlane kursywą.
-      - **Drugi przycisk CTA** — z obramowaniem (wizualnie różny od pierwszego).
-      - **Banner graficzny** — nad lub pod stopką, opcjonalny link.
-      - **Kod QR z vCard** — automatycznie generowany z danych stopki, wybór rozmiaru i pozycji.
+      - **Tagline** - krótkie hasło/motto wyświetlane kursywą.
+      - **Drugi przycisk CTA** - z obramowaniem (wizualnie różny od pierwszego).
+      - **Banner graficzny** - nad lub pod stopką, opcjonalny link.
+      - **Kod QR z vCard** - automatycznie generowany z danych stopki, wybór rozmiaru i pozycji.
     - Kontrolki ikon social media w zakładce "Media społecznościowe" (rozmiar, kolor).
-    - localStorage persistence — dane zapisywane automatycznie w przeglądarce.
+    - localStorage persistence - dane zapisywane automatycznie w przeglądarce.
     - Przycisk "Pobierz HTML" do eksportu stopki jako plik.
   - **Pliki**: `EmailSignatureGenerator.tsx`, `buildSignatureHtml.ts`, `types.ts`
   - **Weryfikacja**: `npm run build` OK
@@ -1814,9 +1814,9 @@
 
   - **Co zrobiono**:
     - Aktualizacja schematu HowTo o nowe kroki (szablony, extras, upload).
-    - Nowa sekcja "Szablony — szybki start" z opisem 5 szablonów.
+    - Nowa sekcja "Szablony - szybki start" z opisem 5 szablonów.
     - Aktualizacja opisu pola Avatar o funkcję wgrywania plików.
-    - Nowa sekcja "Zakładka Dodatki — elementy rozszerzone" (tagline, CTA2, banner, QR).
+    - Nowa sekcja "Zakładka Dodatki - elementy rozszerzone" (tagline, CTA2, banner, QR).
     - Sekcja o ikonach social media z opcjami rozmiaru i koloru.
     - Rozbudowane FAQ o nowe funkcje (14 pytań).
   - **Plik**: `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
@@ -1824,7 +1824,7 @@
 
 ## 2025-12-31
 
-- ✅ **[TONE-001] Blog: audyt tonu artykułów — usunięcie chamskich/pouczających form**
+- ✅ **[TONE-001] Blog: audyt tonu artykułów - usunięcie chamskich/pouczających form**
 
   - **Co zrobiono**:
     - Dodano do `INSTRUCTIONS.md` szczegółowe wytyczne o zakazanym chamskim/pouczającym tonie (sekcja "ZAKAZ CHAMSKIEGO, NACHALNEGO I POUCZAJĄCEGO TONU")
@@ -1833,7 +1833,7 @@
       | Artykuł | Fragment przed | Fragment po |
       |---------|----------------|-------------|
       | `mapa-strony` | "To nie to samo co plik sitemap.xml" | "Plik sitemap.xml pełni inną funkcję" |
-      | `jak-przygotowac-grafike` | "Nie chodzi o to, żeby każdy post wyglądał identycznie, ale o to, żeby..." | "Posty mogą być różnorodne — kluczowe jest, żeby..." |
+      | `jak-przygotowac-grafike` | "Nie chodzi o to, żeby każdy post wyglądał identycznie, ale o to, żeby..." | "Posty mogą być różnorodne - kluczowe jest, żeby..." |
       | `jak-identyfikacja-wizualna` | "Nie chodzi o pojedynczy projekt, tylko o zestaw zasad" | "Składa się z zestawu zasad" |
     - Zaktualizowano `dateModified` dla 3 artykułów
   - **Weryfikacja**: JSON OK, `npm run lint` OK
@@ -1848,16 +1848,16 @@
   - **Wykryte i naprawione błędy**:
     | Artykuł | Fragment | Powód zmiany | Typ | Co zmieniono | Źródło dodane |
     |---------|----------|--------------|-----|--------------|---------------|
-    | `efekt-zakotwiczenia` | "Klient nie wie, czy telewizor kiedykolwiek kosztował 4999 zł" | **FAŁSZ** — od 2023 r. Omnibus wymaga podania najniższej ceny z 30 dni | prawo | Dodano info o Dyrektywie Omnibus + oznaczono przykład jako hipotetyczny | ✅ UOKiK |
-    | `jak-dobrac-kolory` | "20-30% różnicy w konwersji" | Statystyka bez źródła | merytoryka | Usunięto konkretną liczbę, zastąpiono ogólniejszym stwierdzeniem | — |
+    | `efekt-zakotwiczenia` | "Klient nie wie, czy telewizor kiedykolwiek kosztował 4999 zł" | **FAŁSZ** - od 2023 r. Omnibus wymaga podania najniższej ceny z 30 dni | prawo | Dodano info o Dyrektywie Omnibus + oznaczono przykład jako hipotetyczny | ✅ UOKiK |
+    | `jak-dobrac-kolory` | "20-30% różnicy w konwersji" | Statystyka bez źródła | merytoryka | Usunięto konkretną liczbę, zastąpiono ogólniejszym stwierdzeniem | - |
   - **Artykuły bez błędów**: Wszystkie pozostałe artykuły merytorycznie poprawne, źródła podane (Cialdini, BrightLocal 2023, DMA, Campaign Monitor, WCAG, Google, HubSpot, Colorcom, itp.)
   - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
 
 - ✅ **[ENCODING-001] Repo: systemowa naprawa błędnego kodowania znaków (Windows-1250 → UTF-8)**
 
   - **Co zrobiono**:
-    - **ETAP 1 — DIAGNOZA**: Przeszukano wszystkie pliki .ts, .tsx, .json, .md w repozytorium i zidentyfikowano 7 plików z błędnym kodowaniem (znaki typu `ê, ³, ¹, æ, œ, ¿` zamiast polskich).
-    - **ETAP 2 — NAPRAWA**: Naprawiono wszystkie błędne znaki w 7 plikach:
+    - **ETAP 1 - DIAGNOZA**: Przeszukano wszystkie pliki .ts, .tsx, .json, .md w repozytorium i zidentyfikowano 7 plików z błędnym kodowaniem (znaki typu `ê, ³, ¹, æ, œ, ¿` zamiast polskich).
+    - **ETAP 2 - NAPRAWA**: Naprawiono wszystkie błędne znaki w 7 plikach:
       - `app/not-found.tsx` (2 linie)
       - `app/error.tsx` (6 linii)
       - `app/(pl)/narzedzia/page.tsx` (51 wystąpień)
@@ -1865,10 +1865,10 @@
       - `components/sections/tools/ImageResizeTool.tsx` (38 wystąpień)
       - `components/sections/tools/FaviconGenerator.tsx` (29 wystąpień)
       - `components/sections/tools/WcagContrastChecker.tsx` (17 wystąpień)
-    - **ETAP 3 — ZAPOBIEGANIE**: Dodano konfigurację wymuszającą UTF-8:
-      - `.editorconfig` — wymusza `charset = utf-8` dla wszystkich plików
-      - `.gitattributes` — wymusza `working-tree-encoding=UTF-8` dla plików źródłowych
-      - Zaktualizowano `docs/INSTRUCTIONS.md` — dodano sekcję "Kodowanie plików — UTF-8" z zasadami, mapowaniem błędnych znaków i checklistą redakcyjną
+    - **ETAP 3 - ZAPOBIEGANIE**: Dodano konfigurację wymuszającą UTF-8:
+      - `.editorconfig` - wymusza `charset = utf-8` dla wszystkich plików
+      - `.gitattributes` - wymusza `working-tree-encoding=UTF-8` dla plików źródłowych
+      - Zaktualizowano `docs/INSTRUCTIONS.md` - dodano sekcję "Kodowanie plików - UTF-8" z zasadami, mapowaniem błędnych znaków i checklistą redakcyjną
   - **Mapowanie naprawionych znaków**: `¹→ą`, `ê→ę`, `³→ł`, `œ→ś`, `¿→ż`, `Ÿ→ź`, `æ→ć`, `ñ→ń`, `£→Ł`
   - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
 
@@ -1887,28 +1887,28 @@
     - Zaktualizowano importy w ~100 plikach
     - Dodano sekcję "Standard nazewnictwa plików" do INSTRUCTIONS.md
   - **Pliki zachowane bez zmian** (uzasadnienie):
-    - `Gap.tsx`, `Wrapper.tsx` — standardowe nazwy w ekosystemie React
-    - `Filters.tsx` — kontekst katalogu wystarczający
+    - `Gap.tsx`, `Wrapper.tsx` - standardowe nazwy w ekosystemie React
+    - `Filters.tsx` - kontekst katalogu wystarczający
   - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
 
 ## 2025-12-30
 
-- ✅ **[CONTENT-025 do CONTENT-034] Blog: audyt ZERO DOPISAŃ — zgodność prawna + przykłady hipotetyczne**
+- ✅ **[CONTENT-025 do CONTENT-034] Blog: audyt ZERO DOPISAŃ - zgodność prawna + przykłady hipotetyczne**
 
   - **Co zrobiono**:
-    - Przeprowadzono pełny audyt 30 artykułów pod kątem zasad ZERO DOPISAŃ — ZERO NIEPRAWDY
+    - Przeprowadzono pełny audyt 30 artykułów pod kątem zasad ZERO DOPISAŃ - ZERO NIEPRAWDY
     - Sprawdzono zgodność z przepisami: Omnibus, RODO, WCAG, European Accessibility Act
     - Zweryfikowano poprawność źródeł i linków
     - Sprawdzono czy przykłady hipotetyczne są prawidłowo oznaczone
   - **Wyniki audytu**:
     - **Wszystkie 30 artykułów zgodne** z zasadami ZERO DOPISAŃ
     - **Wzorcowe artykuły** (prawidłowo cytują prawo):
-      - `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie` — EU directive 2016/2102, Polish law, EAA
-      - `efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci` — Omnibus directive
-      - `e-mail-marketing-dla-malych-firm` — RODO requirements
-      - `co-sprawdzic-przed-uruchomieniem-strony` — RODO, cookie consent
+      - `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie` - EU directive 2016/2102, Polish law, EAA
+      - `efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci` - Omnibus directive
+      - `e-mail-marketing-dla-malych-firm` - RODO requirements
+      - `co-sprawdzic-przed-uruchomieniem-strony` - RODO, cookie consent
     - **Źródła zweryfikowane**: WHO, GUS, National Eye Institute, Think with Google, StatCounter, BrightLocal, Google Search Central, WCAG 2.1, Baymard Institute, ScienceDirect, MarketingProfs, Journal of Consumer Research, Lucidpress
-    - **Brak zmian wymaganych** — artykuły już spełniają wszystkie kryteria
+    - **Brak zmian wymaganych** - artykuły już spełniają wszystkie kryteria
   - **Weryfikacja**: nie wymagana (content-only)
 
 - ✅ **[TEST-001] Generator stopki mailowej: testy regresyjne**
@@ -1956,7 +1956,7 @@
     - Konfiguracja, styl i układ są przywracane po powrocie do narzędzia.
   - **Pliki**: `EmailSignatureGenerator.tsx`
   - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
-  - **Uwaga**: Usunięto dodatkowe funkcje (Eksport/Import JSON, podgląd mobile, Wyczyść dane) na prośbę użytkownika — niepotrzebne.
+  - **Uwaga**: Usunięto dodatkowe funkcje (Eksport/Import JSON, podgląd mobile, Wyczyść dane) na prośbę użytkownika - niepotrzebne.
 
 - ✅ **[TOOLS-037] Generator stopki mailowej: eksport HTML**
 
@@ -1972,7 +1972,7 @@
   - **Co zrobiono**:
     - Dodano interfejs `ElementColors` w `types.ts` z kolorami dla 9 elementów (name, jobTitle, company, contact, links, social, cta, ctaText, legal).
     - Rozszerzono `StyleConfig` o `elementColors` i `useElementColors`.
-    - Zaktualizowano `buildSignatureHtml.ts` — kolory stosowane do każdego elementu osobno.
+    - Zaktualizowano `buildSignatureHtml.ts` - kolory stosowane do każdego elementu osobno.
     - Dodano UI z checkboxem "Włącz personalizację kolorów per-element".
     - Po włączeniu pojawia się siatka 9 pól wyboru koloru.
     - Motywy automatycznie ustawiają kolory elementów przy wyborze.
@@ -2028,7 +2028,7 @@
   - **Co zrobiono**:
     - Przeprowadzono kompletny, rozszerzony audyt całego projektu pod kątem URL-i i linkowania
     - Zweryfikowano: `next.config.ts`, `middleware.ts`, `next-sitemap.config.cjs`, wszystkie metadata/canonical/og:url, JSON-LD, linkowanie wewnętrzne, searchParams, helpery URL
-    - **Wyniki pozytywne**: projekt w bardzo dobrej kondycji — poprzednie poprawki (SEO-018/019) działają prawidłowo
+    - **Wyniki pozytywne**: projekt w bardzo dobrej kondycji - poprzednie poprawki (SEO-018/019) działają prawidłowo
     - **Znaleziono 1 drobny problem**: `FeesSteps.tsx` używał pełnego URL zamiast względnego
     - **Wnioski**: brak problemów mogących realnie wpływać na SEO, GSC HTTPS, czy Senuto
   - **Pliki**: `docs/TASKS.md` (dodano szczegółowy raport audytu)
@@ -2044,21 +2044,21 @@
   - **Pliki**: `components/sections/steps/FeesSteps.tsx`
   - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
 
-- ✅ **[CONTENT-012] Blog: weryfikacja rzetelności źródeł — `czym-jest-linkowanie-wewnetrzne...` + `kontrast-kolorow...`**
+- ✅ **[CONTENT-012] Blog: weryfikacja rzetelności źródeł - `czym-jest-linkowanie-wewnetrzne...` + `kontrast-kolorow...`**
 
   - **Co zrobiono**:
-    - `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony` — zweryfikowano, wszystkie źródła poprawne (Google Search Console, Ahrefs)
-    - `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie` — poprawiono:
+    - `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony` - zweryfikowano, wszystkie źródła poprawne (Google Search Console, Ahrefs)
+    - `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie` - poprawiono:
       - Dodano źródło National Eye Institute (NEI) do statystyki o daltonizmie (8% mężczyzn, 0,5% kobiet)
       - Zaktualizowano `dateModified` na 2025-12-30
   - **Pliki**: `data/pl/blog.json`
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-013] Blog: weryfikacja rzetelności źródeł — `czym-jest-content-marketing` + `e-mail-marketing-dla-malych-firm`**
+- ✅ **[CONTENT-013] Blog: weryfikacja rzetelności źródeł - `czym-jest-content-marketing` + `e-mail-marketing-dla-malych-firm`**
 
   - **Co zrobiono**:
-    - `czym-jest-content-marketing` — zweryfikowano, źródło HubSpot poprawne
-    - `e-mail-marketing-dla-malych-firm` — poprawiono:
+    - `czym-jest-content-marketing` - zweryfikowano, źródło HubSpot poprawne
+    - `e-mail-marketing-dla-malych-firm` - poprawiono:
       - Dodano źródło Campaign Monitor (2023) dla statystyk open rate (21%) i CTR (2-3%)
       - Zmiękciono stwierdzenie o unsubscribe rate (usunięto konkretną wartość „normalną")
       - Zmiękciono stwierdzenie o mobile („znaczna część" zamiast „ponad połowa")
@@ -2066,104 +2066,104 @@
   - **Pliki**: `data/pl/blog.json`
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-014] Blog: weryfikacja rzetelności źródeł — `co-sprawdzic-przed-uruchomieniem-strony` + `jak-przygotowac-grafike-do-postow...`**
+- ✅ **[CONTENT-014] Blog: weryfikacja rzetelności źródeł - `co-sprawdzic-przed-uruchomieniem-strony` + `jak-przygotowac-grafike-do-postow...`**
 
   - **Co zrobiono**:
-    - `co-sprawdzic-przed-uruchomieniem-strony` — OK, źródło Think with Google poprawne (32% bounce rate)
-    - `jak-przygotowac-grafike-do-postow...` — OK, źródło MIT poprawne (13ms image processing)
+    - `co-sprawdzic-przed-uruchomieniem-strony` - OK, źródło Think with Google poprawne (32% bounce rate)
+    - `jak-przygotowac-grafike-do-postow...` - OK, źródło MIT poprawne (13ms image processing)
     - Bez zmian w artykułach
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-015] Blog: weryfikacja rzetelności źródeł — `jak-wybrac-domene-i-hosting...` + `jak-mierzyc-skutecznosc...`**
+- ✅ **[CONTENT-015] Blog: weryfikacja rzetelności źródeł - `jak-wybrac-domene-i-hosting...` + `jak-mierzyc-skutecznosc...`**
 
   - **Co zrobiono**:
-    - `jak-wybrac-domene-i-hosting-dla-strony-firmowej` — zweryfikowano, brak statystyk wymagających źródeł (wiedza techniczna)
-    - `jak-mierzyc-skutecznosc-strony-internetowej` — zweryfikowano, link do Google Analytics poprawny, fakty o GA4 zgodne
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `jak-wybrac-domene-i-hosting-dla-strony-firmowej` - zweryfikowano, brak statystyk wymagających źródeł (wiedza techniczna)
+    - `jak-mierzyc-skutecznosc-strony-internetowej` - zweryfikowano, link do Google Analytics poprawny, fakty o GA4 zgodne
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-016] Blog: weryfikacja rzetelności źródeł — `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma` + `czym-jest-responsywnosc...`**
+- ✅ **[CONTENT-016] Blog: weryfikacja rzetelności źródeł - `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma` + `czym-jest-responsywnosc...`**
 
   - **Co zrobiono**:
-    - `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma` — poprawiono:
+    - `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma` - poprawiono:
       - Usunięto nieudokumentowaną statystykę o zdjęciach (42%/35%)
       - Zastąpiono ogólnym stwierdzeniem o korzyściach ze zdjęć
       - Zaktualizowano `dateModified` na 2025-12-30
-    - `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie` — zweryfikowano, wszystkie źródła poprawne (StatCounter, Google, WCAG 2.1, Think with Google, Baymard)
+    - `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie` - zweryfikowano, wszystkie źródła poprawne (StatCounter, Google, WCAG 2.1, Think with Google, Baymard)
   - **Pliki**: `data/pl/blog.json`
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-017] Blog: weryfikacja rzetelności źródeł — `czym-jest-certyfikat-ssl...` + `meta-title-i-description...`**
+- ✅ **[CONTENT-017] Blog: weryfikacja rzetelności źródeł - `czym-jest-certyfikat-ssl...` + `meta-title-i-description...`**
 
   - **Co zrobiono**:
-    - `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje` — zweryfikowano, wszystkie źródła poprawne (GlobalSign, Google, SSL Labs)
-    - `meta-title-i-description-jak-je-napisac` — zweryfikowano, źródło Backlinko poprawne
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje` - zweryfikowano, wszystkie źródła poprawne (GlobalSign, Google, SSL Labs)
+    - `meta-title-i-description-jak-je-napisac` - zweryfikowano, źródło Backlinko poprawne
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-018] Blog: weryfikacja rzetelności źródeł — `materialy-drukowane-dla-firmy...` + `kody-qr-w-materialach...`**
+- ✅ **[CONTENT-018] Blog: weryfikacja rzetelności źródeł - `materialy-drukowane-dla-firmy...` + `kody-qr-w-materialach...`**
 
   - **Co zrobiono**:
-    - `materialy-drukowane-dla-firmy-ktore-zamowic` — zweryfikowano, wszystkie źródła poprawne (ScienceDirect, MarketingProfs, Journal of Consumer Research, Lucidpress)
-    - `kody-qr-w-materialach-reklamowych` — zweryfikowano, wszystkie źródła poprawne (Statista, StatCounter)
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `materialy-drukowane-dla-firmy-ktore-zamowic` - zweryfikowano, wszystkie źródła poprawne (ScienceDirect, MarketingProfs, Journal of Consumer Research, Lucidpress)
+    - `kody-qr-w-materialach-reklamowych` - zweryfikowano, wszystkie źródła poprawne (Statista, StatCounter)
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-019] Blog: weryfikacja rzetelności źródeł — `jak-dobrac-kolory-do-strony...` + `jak-przygotowac-sklep-internetowy...`**
+- ✅ **[CONTENT-019] Blog: weryfikacja rzetelności źródeł - `jak-dobrac-kolory-do-strony...` + `jak-przygotowac-sklep-internetowy...`**
 
   - **Co zrobiono**:
-    - `jak-dobrac-kolory-do-strony-internetowej` — zweryfikowano, wszystkie źródła poprawne (Behaviour & IT, Colorcom, HubSpot, WCAG, Statista)
-    - `jak-przygotowac-sklep-internetowy-do-pozycjonowania` — zweryfikowano, wszystkie źródła poprawne (Google docs, web.dev)
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `jak-dobrac-kolory-do-strony-internetowej` - zweryfikowano, wszystkie źródła poprawne (Behaviour & IT, Colorcom, HubSpot, WCAG, Statista)
+    - `jak-przygotowac-sklep-internetowy-do-pozycjonowania` - zweryfikowano, wszystkie źródła poprawne (Google docs, web.dev)
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-020] Blog: weryfikacja rzetelności źródeł — `jak-przygotowac-profesjonalna-stopke...` + `favicon-co-to-za-ikona...`**
+- ✅ **[CONTENT-020] Blog: weryfikacja rzetelności źródeł - `jak-przygotowac-profesjonalna-stopke...` + `favicon-co-to-za-ikona...`**
 
   - **Co zrobiono**:
-    - `jak-przygotowac-profesjonalna-stopke-mailowa` — zweryfikowano, brak statystyk wymagających źródeł (poradnik praktyczny)
-    - `favicon-co-to-za-ikona...` — zweryfikowano, źródło Chrome Developers poprawne
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `jak-przygotowac-profesjonalna-stopke-mailowa` - zweryfikowano, brak statystyk wymagających źródeł (poradnik praktyczny)
+    - `favicon-co-to-za-ikona...` - zweryfikowano, źródło Chrome Developers poprawne
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-021] Blog: weryfikacja rzetelności źródeł — `faq-na-stronie...` + `jak-kolorystyka-wplywa...`**
+- ✅ **[CONTENT-021] Blog: weryfikacja rzetelności źródeł - `faq-na-stronie...` + `jak-kolorystyka-wplywa...`**
 
   - **Co zrobiono**:
-    - `faq-na-stronie-jak-pisac-pytania...` — zweryfikowano, wszystkie źródła poprawne (AnswerThePublic, AlsoAsked, Google Search Console, Google FAQ schema)
-    - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow` — zweryfikowano, wszystkie źródła poprawne (Management Decision, Journal of Business Research, HubSpot, WiderFunnel)
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `faq-na-stronie-jak-pisac-pytania...` - zweryfikowano, wszystkie źródła poprawne (AnswerThePublic, AlsoAsked, Google Search Console, Google FAQ schema)
+    - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow` - zweryfikowano, wszystkie źródła poprawne (Management Decision, Journal of Business Research, HubSpot, WiderFunnel)
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-022] Blog: weryfikacja rzetelności źródeł — `ile-czasu-trwa-pozycjonowanie...` + `czy-lokalne-firmy-potrzebuja-bloga...`**
+- ✅ **[CONTENT-022] Blog: weryfikacja rzetelności źródeł - `ile-czasu-trwa-pozycjonowanie...` + `czy-lokalne-firmy-potrzebuja-bloga...`**
 
   - **Co zrobiono**:
-    - `ile-czasu-trwa-pozycjonowanie...` — zweryfikowano, wszystkie źródła poprawne (Google Search Central, Ahrefs, BrightLocal, Semrush, HubSpot)
-    - `czy-lokalne-firmy-potrzebuja-bloga...` — zweryfikowano, wszystkie źródła poprawne (BrightLocal, Ahrefs, Neil Patel)
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `ile-czasu-trwa-pozycjonowanie...` - zweryfikowano, wszystkie źródła poprawne (Google Search Central, Ahrefs, BrightLocal, Semrush, HubSpot)
+    - `czy-lokalne-firmy-potrzebuja-bloga...` - zweryfikowano, wszystkie źródła poprawne (BrightLocal, Ahrefs, Neil Patel)
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-023] Blog: weryfikacja rzetelności źródeł — `jak-zoptymalizowac-zdjecia...` + `jak-pisac-tresci-na-stronie...`**
+- ✅ **[CONTENT-023] Blog: weryfikacja rzetelności źródeł - `jak-zoptymalizowac-zdjecia...` + `jak-pisac-tresci-na-stronie...`**
 
   - **Co zrobiono**:
-    - `jak-zoptymalizowac-zdjecia...` — zweryfikowano, wszystkie źródła poprawne (PageSpeed, web.dev, Google WebP Study, Netflix Tech Blog, Lighthouse)
-    - `jak-pisac-tresci-na-stronie...` — zweryfikowano, poradnik praktyczny z przykładami z różnych branż
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `jak-zoptymalizowac-zdjecia...` - zweryfikowano, wszystkie źródła poprawne (PageSpeed, web.dev, Google WebP Study, Netflix Tech Blog, Lighthouse)
+    - `jak-pisac-tresci-na-stronie...` - zweryfikowano, poradnik praktyczny z przykładami z różnych branż
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[CONTENT-024] Blog: weryfikacja rzetelności źródeł — `jak-identyfikacja-wizualna...` + `dlaczego-strona-internetowa-nie-wyswietla-sie...`**
+- ✅ **[CONTENT-024] Blog: weryfikacja rzetelności źródeł - `jak-identyfikacja-wizualna...` + `dlaczego-strona-internetowa-nie-wyswietla-sie...`**
 
   - **Co zrobiono**:
-    - `jak-identyfikacja-wizualna...` — zweryfikowano, wszystkie źródła poprawne (Lucidpress, Journal of Product & Brand Management, MIT/Behaviour & IT)
-    - `dlaczego-strona-internetowa-nie-wyswietla-sie...` — zweryfikowano, wszystkie źródła poprawne (Google Search Console, PageSpeed Insights)
-    - Bez zmian w artykułach — wszystkie źródła poprawne
+    - `jak-identyfikacja-wizualna...` - zweryfikowano, wszystkie źródła poprawne (Lucidpress, Journal of Product & Brand Management, MIT/Behaviour & IT)
+    - `dlaczego-strona-internetowa-nie-wyswietla-sie...` - zweryfikowano, wszystkie źródła poprawne (Google Search Console, PageSpeed Insights)
+    - Bez zmian w artykułach - wszystkie źródła poprawne
   - **Pliki**: brak zmian
   - **Weryfikacja**: nie wymagana (content-only)
 
@@ -2177,13 +2177,13 @@
       - Instrukcja postępowania w razie niepewności
       - Przykłady dobrego i złego cytowania
     - Zweryfikowano 2 najnowsze artykuły (2025-12-26):
-      - `czym-jest-paradoks-wyboru...` — poprawiono (dodano źródło Barry Schwartz do twierdzenia o żalu po wyborze)
-      - `efekt-zakotwiczenia...` — OK, wszystkie źródła poprawne
+      - `czym-jest-paradoks-wyboru...` - poprawiono (dodano źródło Barry Schwartz do twierdzenia o żalu po wyborze)
+      - `efekt-zakotwiczenia...` - OK, wszystkie źródła poprawne
     - Utworzono 13 zadań weryfikacji dla pozostałych 26 artykułów (CONTENT-012 do CONTENT-024, po 2 artykuły na zadanie)
   - **Pliki**: `docs/INSTRUCTIONS.md`, `docs/TASKS.md`, `data/pl/blog.json`
   - **Weryfikacja**: nie wymagana (content-only)
 
-- ✅ **[SEO-018] DIAGNOZA: Wielowariantowe URL-e w Next.js — przyczyny wypadania z HTTPS w GSC i niezgodności URL w Senuto**
+- ✅ **[SEO-018] DIAGNOZA: Wielowariantowe URL-e w Next.js - przyczyny wypadania z HTTPS w GSC i niezgodności URL w Senuto**
 
   - **Co zrobiono**:
     - Przeprowadzono kompleksową diagnozę wszystkich źródeł generowania wariantów URL w projekcie
@@ -2352,7 +2352,7 @@
   - **Co zrobiono**:
     - Rozbudowano intro z linkiem do strony-internetowe
     - Dodano sekcję AVIF z danymi Netflix (50% lżejszy niż JPEG)
-    - Dodano sekcję "Responsive images — srcset i lazy loading" z tooltips
+    - Dodano sekcję "Responsive images - srcset i lazy loading" z tooltips
     - Rozbudowano sekcję SEO z linkami do pozycjonowanie i sklepy-internetowe
     - 7 linków wewnętrznych, 8 linków zewnętrznych, 3 tooltips
     - Czas czytania: 9 min (1774 słów)
@@ -2380,7 +2380,7 @@
     - Przepisano artykuł według nowych standardów jakości.
     - Dodano sekcje wyjaśniające MECHANIZMY:
       - Jak Google ocenia strony lokalnych firm (sygnały wiarygodności)
-      - Topical authority — autorytet tematyczny
+      - Topical authority - autorytet tematyczny
       - Jak blog wpływa na pozycję w Google Maps (z przykładem warsztatu)
       - Kiedy blog NIE ma sensu (brak zasobów, brak pytań informacyjnych, potrzeba szybkich wyników)
     - Dodano FAQ (5 pytań).
@@ -2417,8 +2417,8 @@
     - Nowa struktura artykułu (10 min czytania):
       - Jak mózg przetwarza kolory (mechanizmy, ciało migdałowate, ewolucja)
       - Mechanizmy psychologiczne (pobudzenie fizjologiczne, skojarzenia kulturowe, oczekiwania branżowe)
-      - Kolorystyka w różnych branżach (finanse, medycyna, gastronomia, technologia, luksus) — z uzasadnieniem wyborów
-      - Testy A/B kolorów — analiza DLACZEGO zadziałały (HubSpot, SAP, Beamax) z wnioskiem o kontraście
+      - Kolorystyka w różnych branżach (finanse, medycyna, gastronomia, technologia, luksus) - z uzasadnieniem wyborów
+      - Testy A/B kolorów - analiza DLACZEGO zadziałały (HubSpot, SAP, Beamax) z wnioskiem o kontraście
       - Kolor a kontrast i dostępność (WCAG, daltonizm)
     - Dodano tooltips: ciało migdałowate, CTA, WCAG.
     - FAQ (5 pytań z pogłębionymi odpowiedziami).
@@ -2503,7 +2503,7 @@
     - `app/(pl)/uslugi/blogi-internetowe/page.tsx`
     - `app/(pl)/uslugi/tworzenie-tresci/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/page.tsx`
-  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+  - **Weryfikacja**: `npm run lint` i `npm run build` - OK.
 
 - ✅ **[IDEA-097] Blog: Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?**
 
@@ -2526,17 +2526,17 @@
 
   - **Co zrobiono**:
     - Utworzono `lib/consent/ahrefs.ts` z funkcją `loadAhrefs()` ładującą skrypt Ahrefs (analogicznie do `loadGA`).
-    - Zmodyfikowano `components/shared/CookieConsent.tsx` — Ahrefs ładowany jest razem z GA po wyrażeniu zgody na analitykę.
-    - Zaktualizowano politykę prywatności (`app/(pl)/polityka-prywatnosci/page.tsx`) — dodano Ahrefs Web Analytics do listy narzędzi analitycznych i odbiorców danych.
+    - Zmodyfikowano `components/shared/CookieConsent.tsx` - Ahrefs ładowany jest razem z GA po wyrażeniu zgody na analitykę.
+    - Zaktualizowano politykę prywatności (`app/(pl)/polityka-prywatnosci/page.tsx`) - dodano Ahrefs Web Analytics do listy narzędzi analitycznych i odbiorców danych.
   - **Pliki**:
     - `lib/consent/ahrefs.ts` (nowy)
     - `components/shared/CookieConsent.tsx`
     - `app/(pl)/polityka-prywatnosci/page.tsx`
-  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+  - **Weryfikacja**: `npm run lint` i `npm run build` - OK.
 
 - ✅ **[SEO-021] Meta title: skrócić za długie tytuły i wydłużyć za krótkie (Ahrefs audit)**
 
-  - **Źródło**: Ahrefs Site Audit — wykryto 20 stron z za długim meta title (>70 zn.) i 3 strony z za krótkim (<30 zn.).
+  - **Źródło**: Ahrefs Site Audit - wykryto 20 stron z za długim meta title (>70 zn.) i 3 strony z za krótkim (<30 zn.).
   - **Co zrobiono**:
     - **Tytuły skrócone (20 stron)**:
       - Narzędzia: generator-palety-kolorow-z-obrazu (70→48), instrukcja (71→53), zmiana-rozmiaru/instrukcja (73→53), jpg-png-webp/instrukcja (73→48), optymalizacja-wordpress (71→57)
@@ -2565,22 +2565,22 @@
 
 - ✅ **[SEO-020] Sitemap: brakujące strony narzędzi (favicon generator)**
 
-  - **Źródło**: Ahrefs Site Audit — wykryto 2 strony nieobecne w sitemap:
+  - **Źródło**: Ahrefs Site Audit - wykryto 2 strony nieobecne w sitemap:
     - `/narzedzia/darmowy-generator-favicon-ico`
     - `/narzedzia/darmowy-generator-favicon-ico/instrukcja`
   - **Przyczyna problemu**:
     - `next-sitemap` filtruje automatycznie odkryte ścieżki zawierające wzorce przypominające rozszerzenia plików (np. `favicon-ico` interpretowane jako `.ico`).
     - Strony były poprawnie generowane przez Next.js (widoczne w `prerender-manifest.json` i `routes-manifest.json`), ale next-sitemap je pomijał.
   - **Co zrobiono**:
-    - Zmodyfikowano `next-sitemap.config.cjs` — dodano jawne dodawanie wszystkich ścieżek `/narzedzia/*` przez `additionalPaths` (linie 173-181).
+    - Zmodyfikowano `next-sitemap.config.cjs` - dodano jawne dodawanie wszystkich ścieżek `/narzedzia/*` przez `additionalPaths` (linie 173-181).
     - Dzięki temu wszystkie narzędzia są zawsze w sitemap, niezależnie od automatycznego odkrywania next-sitemap.
   - **Pliki**:
     - `next-sitemap.config.cjs`
-  - **Weryfikacja**: `npm run build` — OK, sitemap zawiera obie brakujące strony.
+  - **Weryfikacja**: `npm run build` - OK, sitemap zawiera obie brakujące strony.
 
 - ✅ **[SEO-019] Meta description: skrócić za długie opisy (Ahrefs audit)**
 
-  - **Źródło**: Ahrefs Site Audit — wykryto 10 stron z za długim meta description (>160 znaków).
+  - **Źródło**: Ahrefs Site Audit - wykryto 10 stron z za długim meta description (>160 znaków).
   - **Co zrobiono**:
     - Poprawiono meta description dla 2 artykułów (`data/pl/blog.json`):
       - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`: 165 → 148 zn.
@@ -2599,7 +2599,7 @@
 
 - ✅ **[SEO-018] Meta description: wydłużyć za krótkie opisy (Ahrefs audit)**
 
-  - **Źródło**: Ahrefs Site Audit — wykryto 24 strony z za krótkim meta description (<100 znaków).
+  - **Źródło**: Ahrefs Site Audit - wykryto 24 strony z za krótkim meta description (<100 znaków).
   - **Co zrobiono**:
     - Poprawiono meta description dla 14 kategorii edukacji (`/edukacja/[category]`):
       - seo, widocznosc, tresci, grafika, branding, zdjecia, psychologia, strony, sklepy, ux, bezpieczenstwo, druk, marketing, dostepnosc
@@ -2611,7 +2611,7 @@
     - `data/pl/projects.json`
   - **Weryfikacja**: nie wymagana (COPY-only).
 
-- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — generowanie backlogu pomysłów na artykuły**
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny - generowanie backlogu pomysłów na artykuły**
 
   - **Zakres audytu**:
     - Przeanalizowano istniejące artykuły w `data/pl/blog.json` i `BLOG_CATALOG.md`.
@@ -2666,12 +2666,12 @@
     - `lib/search/searchIndex.ts`
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-030] Refactoring instrukcji narzędzi — poprawa struktury i wizualizacji UI**
+- ✅ **[TOOLS-030] Refactoring instrukcji narzędzi - poprawa struktury i wizualizacji UI**
 
   - **Co zrobiono**:
     - Zmieniono wszystkie importy ikon z `lucide-react` na `react-icons/ri` we wszystkich instrukcjach narzędzi.
     - Dodano ikony do `SectionSteps` we wszystkich instrukcjach dla lepszej wizualizacji.
-    - Stworzono nowy komponent `SectionDemo` (`components/ui/sections/SectionDemo.tsx`) — jak `SectionBasic`, ale z możliwością renderowania elementów UI zamiast zdjęć (proporcje 40% demo / 60% tekst).
+    - Stworzono nowy komponent `SectionDemo` (`components/ui/sections/SectionDemo.tsx`) - jak `SectionBasic`, ale z możliwością renderowania elementów UI zamiast zdjęć (proporcje 40% demo / 60% tekst).
     - Dodano wizualizację UI z Badge'ami dla statusów plików w instrukcji konwertera WebP (`jpg-png-na-webp-bez-limitu/instrukcja`).
     - Poprawiono instrukcję generatora stopek mailowych (`darmowy-generator-stopki-mailowej/instrukcja`):
       - Przeniesiono sekcję "Najczęstsze problemy i rozwiązania" do FAQ (4 nowe pytania).
@@ -2681,18 +2681,18 @@
       - Usunięto redundantną sekcję "Przydatne zasoby".
     - Ujednolicono strukturę końcowych sekcji we wszystkich instrukcjach (FAQ → SectionInfo z CTA → ToolsCarousel → CTABanner).
     - **Wdrożono wizualizacje UI 1:1 z SectionDemo**:
-      - `jpg-png-na-webp-bez-limitu/instrukcja` — suwak jakości, opcje automatycznego pobierania, raport oszczędności
-      - `tester-kontrastu-kolorow-wcag/instrukcja` — wyniki testu kontrastu z Badge'ami AA/AAA i podglądem
-      - `darmowy-generator-stopki-mailowej/instrukcja` — wybór układów stopki z podglądem
-      - `generator-palet-kolorow-online/instrukcja` — wizualizacja palety monochromatycznej z przyciskiem kopiowania
-      - `licznik-dlugosci-meta/instrukcja` — wizualizacja metryk (znaki, słowa, piksele) z Badge'ami statusu
-      - `generator-kodu-qr/instrukcja` — wizualizacja poziomów korekcji błędów (L/M/Q/H) z Badge'ami
-      - `zmiana-rozmiaru/instrukcja` — wizualizacja trybów ustawiania rozmiaru (wymiary w px, gotowe formaty)
-      - `generator-favicon/instrukcja` — wizualizacja opcji generowania (rozmiary, tło, manifest)
+      - `jpg-png-na-webp-bez-limitu/instrukcja` - suwak jakości, opcje automatycznego pobierania, raport oszczędności
+      - `tester-kontrastu-kolorow-wcag/instrukcja` - wyniki testu kontrastu z Badge'ami AA/AAA i podglądem
+      - `darmowy-generator-stopki-mailowej/instrukcja` - wybór układów stopki z podglądem
+      - `generator-palet-kolorow-online/instrukcja` - wizualizacja palety monochromatycznej z przyciskiem kopiowania
+      - `licznik-dlugosci-meta/instrukcja` - wizualizacja metryk (znaki, słowa, piksele) z Badge'ami statusu
+      - `generator-kodu-qr/instrukcja` - wizualizacja poziomów korekcji błędów (L/M/Q/H) z Badge'ami
+      - `zmiana-rozmiaru/instrukcja` - wizualizacja trybów ustawiania rozmiaru (wymiary w px, gotowe formaty)
+      - `generator-favicon/instrukcja` - wizualizacja opcji generowania (rozmiary, tło, manifest)
     - **Poprawiono nagłówki h3→h4**:
-      - `tester-kontrastu-kolorow-wcag/instrukcja` — sekcje WCAG AA/AAA, formaty kolorów (HEX, RGB, HSL)
-      - `licznik-dlugosci-meta/instrukcja` — sekcje metryki, statusy, zalecane zakresy, problemy
-      - `darmowy-generator-stopki-mailowej/instrukcja` — sekcje pola danych, CTA, motywy, kolory, czcionka
+      - `tester-kontrastu-kolorow-wcag/instrukcja` - sekcje WCAG AA/AAA, formaty kolorów (HEX, RGB, HSL)
+      - `licznik-dlugosci-meta/instrukcja` - sekcje metryki, statusy, zalecane zakresy, problemy
+      - `darmowy-generator-stopki-mailowej/instrukcja` - sekcje pola danych, CTA, motywy, kolory, czcionka
   - **Pliki zmienione**:
     - `components/ui/sections/SectionDemo.tsx` (nowy)
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`
@@ -2711,30 +2711,30 @@
   - **Co zrobiono**:
     - Rozszerzono `CATEGORY_CONTENT_BY_SLUG` w `app/(pl)/edukacja/[category]/page.tsx` o pole `heroImage` z unikalnym zdjęciem dla każdej kategorii.
     - Dodano kategorię `marketing` do konfiguracji.
-    - Zaktualizowano `generateMetadata` — dodano `openGraph.images` z unikalnym zdjęciem per kategoria.
-    - Zaktualizowano `EdukacjaCategoryPage` — HeroBanner używa teraz `heroImage` z konfiguracji.
-    - Zaktualizowano stronę główną `/edukacja` (`app/(pl)/edukacja/page.tsx`) — dodano unikalne zdjęcie (`e-mail-marketing-dla-malych-firm`) w HeroBanner i OpenGraph.
+    - Zaktualizowano `generateMetadata` - dodano `openGraph.images` z unikalnym zdjęciem per kategoria.
+    - Zaktualizowano `EdukacjaCategoryPage` - HeroBanner używa teraz `heroImage` z konfiguracji.
+    - Zaktualizowano stronę główną `/edukacja` (`app/(pl)/edukacja/page.tsx`) - dodano unikalne zdjęcie (`e-mail-marketing-dla-malych-firm`) w HeroBanner i OpenGraph.
     - Usunięto TODO komentarz dotyczący OG image dla `/edukacja`.
   - **Przypisanie zdjęć** (unikalne, bez powtórzeń):
-    - `/edukacja` — e-mail-marketing-dla-malych-firm
-    - `/edukacja/seo` — meta-title-i-description-jak-je-napisac
-    - `/edukacja/strony` — co-sprawdzic-przed-uruchomieniem-strony
-    - `/edukacja/grafika` — jak-dobrac-kolory-do-strony-internetowej
-    - `/edukacja/branding` — jak-przygotowac-profesjonalna-stopke-mailowa
-    - `/edukacja/marketing` — czym-jest-content-marketing
-    - `/edukacja/bezpieczenstwo` — czym-jest-certyfikat-ssl
-    - `/edukacja/ux` — czym-jest-responsywnosc-strony
-    - `/edukacja/druk` — materialy-drukowane-dla-firmy
-    - `/edukacja/zdjecia` — jak-zoptymalizowac-zdjecia-na-strone-www
-    - `/edukacja/tresci` — faq-na-stronie-jak-pisac-pytania
-    - `/edukacja/widocznosc` — jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma
-    - `/edukacja/psychologia` — jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow
-    - `/edukacja/sklepy` — jak-przygotowac-sklep-internetowy-do-pozycjonowania
+    - `/edukacja` - e-mail-marketing-dla-malych-firm
+    - `/edukacja/seo` - meta-title-i-description-jak-je-napisac
+    - `/edukacja/strony` - co-sprawdzic-przed-uruchomieniem-strony
+    - `/edukacja/grafika` - jak-dobrac-kolory-do-strony-internetowej
+    - `/edukacja/branding` - jak-przygotowac-profesjonalna-stopke-mailowa
+    - `/edukacja/marketing` - czym-jest-content-marketing
+    - `/edukacja/bezpieczenstwo` - czym-jest-certyfikat-ssl
+    - `/edukacja/ux` - czym-jest-responsywnosc-strony
+    - `/edukacja/druk` - materialy-drukowane-dla-firmy
+    - `/edukacja/zdjecia` - jak-zoptymalizowac-zdjecia-na-strone-www
+    - `/edukacja/tresci` - faq-na-stronie-jak-pisac-pytania
+    - `/edukacja/widocznosc` - jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma
+    - `/edukacja/psychologia` - jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow
+    - `/edukacja/sklepy` - jak-przygotowac-sklep-internetowy-do-pozycjonowania
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
 ## 2025-12-23
 
-- ✅ **[TOOLS-022] Narzędzia: rozbudowana instrukcja — Generator palety kolorów z obrazu**
+- ✅ **[TOOLS-022] Narzędzia: rozbudowana instrukcja - Generator palety kolorów z obrazu**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/generator-palety-kolorow-z-obrazu/instrukcja/page.tsx`.
@@ -2748,24 +2748,24 @@
     - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-021] Narzędzia: rozbudowana instrukcja — Generator palet kolorów online**
+- ✅ **[TOOLS-021] Narzędzia: rozbudowana instrukcja - Generator palet kolorów online**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/generator-palet-kolorow-online/instrukcja/page.tsx`.
     - URL: `/narzedzia/generator-palet-kolorow-online/instrukcja`, H1: „Jak używać generatora palet kolorów online".
-    - Sekcje instrukcji: Jak wybrać kolor bazowy (picker vs HEX), Jak działają poszczególne palety (9 typów: monochromatyczna, analogiczna, komplementarna, triadyczna, split-complementary, pastelowa, ciemna, tonalna, minimalistyczna — każda z opisem kiedy używać), Jak skopiować kolor (HEX i HSL), Najczęstsze problemy i rozwiązania.
+    - Sekcje instrukcji: Jak wybrać kolor bazowy (picker vs HEX), Jak działają poszczególne palety (9 typów: monochromatyczna, analogiczna, komplementarna, triadyczna, split-complementary, pastelowa, ciemna, tonalna, minimalistyczna - każda z opisem kiedy używać), Jak skopiować kolor (HEX i HSL), Najczęstsze problemy i rozwiązania.
     - FAQ: 5 pytań (formaty kolorów, prywatność, ile kolorów w palecie, jak wybrać paletę, użycie komercyjne).
     - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList`.
     - Skrócono instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano link „Zobacz pełną instrukcję obsługi generatora →".
     - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-024] Narzędzia: rozbudowana instrukcja — Tester kontrastu kolorów WCAG**
+- ✅ **[TOOLS-024] Narzędzia: rozbudowana instrukcja - Tester kontrastu kolorów WCAG**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/instrukcja/page.tsx`.
     - URL: `/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja`, H1: „Jak używać testera kontrastu kolorów WCAG".
-    - Sekcje instrukcji: Co to jest kontrast kolorów i dlaczego jest ważny, Co oznaczają poziomy WCAG AA i AAA (progi dla tekstu zwykłego/dużego/ikon), Jak korzystać z testera (4 kroki), Jak interpretować wyniki (tekst zwykły/duży/ikona, badge'e pass/fail, podgląd na żywo), Funkcja Dopasuj — co robi (algorytm szukania jasności), Jakie formaty kolorów są obsługiwane (HEX/RGB/RGBA/HSL/HSLA z przykładami), Najczęstsze problemy i rozwiązania.
+    - Sekcje instrukcji: Co to jest kontrast kolorów i dlaczego jest ważny, Co oznaczają poziomy WCAG AA i AAA (progi dla tekstu zwykłego/dużego/ikon), Jak korzystać z testera (4 kroki), Jak interpretować wyniki (tekst zwykły/duży/ikona, badge'e pass/fail, podgląd na żywo), Funkcja Dopasuj - co robi (algorytm szukania jasności), Jakie formaty kolorów są obsługiwane (HEX/RGB/RGBA/HSL/HSLA z przykładami), Najczęstsze problemy i rozwiązania.
     - FAQ: 5 pytań (różnica AA vs AAA, duży tekst wg WCAG, kontrast ikon, subiektywne postrzeganie koloru, działanie funkcji Dopasuj).
     - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList` + `FAQPage`.
     - Skrócono instrukcję na głównej stronie narzędzia z 4 do 3 kroków + dodano link „Zobacz pełną instrukcję →".
@@ -2774,7 +2774,7 @@
     - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
   - **Weryfikacja**: `npm run build` przechodzi (lint ma pre-existing issue z eslint-plugin-unused-imports).
 
-- ✅ **[TOOLS-025] Narzędzia: rozbudowana instrukcja — Darmowy generator favicon**
+- ✅ **[TOOLS-025] Narzędzia: rozbudowana instrukcja - Darmowy generator favicon**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/instrukcja/page.tsx`.
@@ -2787,7 +2787,7 @@
     - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-027] Narzędzia: rozbudowana instrukcja — Zmiana rozmiaru i kadrowanie zdjęcia**
+- ✅ **[TOOLS-027] Narzędzia: rozbudowana instrukcja - Zmiana rozmiaru i kadrowanie zdjęcia**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`.
@@ -2800,7 +2800,7 @@
     - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-029] Narzędzia: rozbudowana instrukcja — Generator kodów QR**
+- ✅ **[TOOLS-029] Narzędzia: rozbudowana instrukcja - Generator kodów QR**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/generator-kodu-qr/instrukcja/page.tsx`.
@@ -2814,7 +2814,7 @@
     - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-028] Narzędzia: rozbudowana instrukcja — Generator stopki mailowej**
+- ✅ **[TOOLS-028] Narzędzia: rozbudowana instrukcja - Generator stopki mailowej**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`.
@@ -2826,7 +2826,7 @@
     - Ton zgodny z INSTRUCTIONS.md (mentorski, prosty, bez żargonu).
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-026] Narzędzia: rozbudowana instrukcja — Konwerter JPG/PNG na WebP**
+- ✅ **[TOOLS-026] Narzędzia: rozbudowana instrukcja - Konwerter JPG/PNG na WebP**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/instrukcja/page.tsx`.
@@ -2841,7 +2841,7 @@
     - Zaktualizowano `PAGES_CATALOG.md`.
   - **Weryfikacja**: `npm run lint` i `npm run build` przechodzą.
 
-- ✅ **[TOOLS-023] Narzędzia: rozbudowana instrukcja — Licznik długości meta title i description**
+- ✅ **[TOOLS-023] Narzędzia: rozbudowana instrukcja - Licznik długości meta title i description**
 
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/licznik-dlugosci-meta-title-i-description/instrukcja/page.tsx`.
@@ -2852,7 +2852,7 @@
       - Dlaczego długość meta tagów ma znaczenie? (obcinanie, piksele vs znaki, CTR)
       - Jak korzystać z narzędzia? (4 kroki)
       - Jak interpretować wyniki? (metryki: znaki/słowa/piksele, statusy: dobra długość/za krótki/za długi)
-      - Podgląd snippet — co pokazuje? (URL, tytuł, opis)
+      - Podgląd snippet - co pokazuje? (URL, tytuł, opis)
       - Najczęstsze problemy i rozwiązania
       - FAQ (5 pytań)
     - Zmodyfikowano główną stronę narzędzia (`page.tsx`):
@@ -2861,7 +2861,7 @@
     - SEO: metadata (title/description/canonical/OG), schema.org `HowTo`, `BreadcrumbList`, `FAQPage`.
     - Zaktualizowano `PAGES_CATALOG.md` (nowy wpis dla strony instrukcji).
     - Zaktualizowano `TOOLS_CATALOG.md` (dodano referencję do strony instrukcji).
-  - **Weryfikacja**: `npm run lint` i `npm run build` — OK.
+  - **Weryfikacja**: `npm run lint` i `npm run build` - OK.
 
 - ✅ **[IDEA-088] Blog: Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?**
 
@@ -2874,7 +2874,7 @@
     - FAQ: 5 pytań.
     - CTA: Tworzenie treści + Kontakt.
     - Zaktualizowano `BLOG_CATALOG.md`.
-    - **Ton**: Mentorski, edukacyjny, nie-DIY — wyjaśnia czym jest content marketing, jak działa i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu".
+    - **Ton**: Mentorski, edukacyjny, nie-DIY - wyjaśnia czym jest content marketing, jak działa i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu".
   - **Weryfikacja**: nie wymagana (content-only).
 
 - ✅ **[IDEA-089] Blog: E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?**
@@ -2882,17 +2882,17 @@
   - **Co zrobiono**:
     - Utworzono artykuł w `data/pl/blog.json` (na początku listy `articles[]`).
     - Slug: `e-mail-marketing-dla-malych-firm`, URL: `/edukacja/marketing/e-mail-marketing-dla-malych-firm`.
-    - **Zmieniono tytuł** z "od czego zacząć i jakich błędów unikać" na "dlaczego warto i na co zwrócić uwagę" — zgodnie z zasadą nie-DIY.
+    - **Zmieniono tytuł** z "od czego zacząć i jakich błędów unikać" na "dlaczego warto i na co zwrócić uwagę" - zgodnie z zasadą nie-DIY.
     - Sekcje: wstęp, dlaczego e-mail marketing działa (ROI, bezpośredni dostęp, własność listy), rodzaje e-maili (newsletter, automatyczne, transakcyjne, kampanie), co powinien zawierać skuteczny mailing, na co zwrócić uwagę (RODO, dostarczalność, częstotliwość), najczęstsze problemy, jak mierzyć skuteczność, podsumowanie + CTA.
     - Linki wewnętrzne (4): `/uslugi/tworzenie-tresci`, `/narzedzia/darmowy-generator-stopki-mailowej`, `/edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa`, `/kontakt`.
     - Linki zewnętrzne: DMA (źródło danych o ROI e-mail marketingu).
     - FAQ: 5 pytań.
     - CTA: Tworzenie treści + Kontakt.
     - Zaktualizowano `BLOG_CATALOG.md`.
-    - **Ton**: Mentorski, edukacyjny, nie-DIY — wyjaśnia czym jest e-mail marketing i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu".
+    - **Ton**: Mentorski, edukacyjny, nie-DIY - wyjaśnia czym jest e-mail marketing i na co zwrócić uwagę, bez instrukcji "jak to zrobić samemu".
   - **Weryfikacja**: nie wymagana (content-only).
 
-- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny — pomysły na artykuły dla kategorii z małą liczbą artykułów**
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny - pomysły na artykuły dla kategorii z małą liczbą artykułów**
 
   - **Zakres**: Analiza istniejących artykułów w `data/pl/blog.json` pod kątem `primaryCategory`. Identyfikacja kategorii z małą liczbą artykułów.
   - **Wyniki analizy**:
@@ -2957,29 +2957,29 @@
 
     **Strony główne i informacyjne:**
 
-    - `app/(pl)/page.tsx` — `/`
-    - `app/(pl)/o-nas/page.tsx` — `/o-nas`
-    - `app/(pl)/o-nas/faq/page.tsx` — `/o-nas/faq`
-    - `app/(pl)/o-nas/dolacz-do-sieci/page.tsx` — `/o-nas/dolacz-do-sieci`
-    - `app/(pl)/kontakt/page.tsx` — `/kontakt`
-    - `app/(pl)/mapa-strony/page.tsx` — `/mapa-strony`
-    - `app/(pl)/polityka-prywatnosci/page.tsx` — `/polityka-prywatnosci`
-    - `app/(pl)/regulamin/page.tsx` — `/regulamin`
+    - `app/(pl)/page.tsx` - `/`
+    - `app/(pl)/o-nas/page.tsx` - `/o-nas`
+    - `app/(pl)/o-nas/faq/page.tsx` - `/o-nas/faq`
+    - `app/(pl)/o-nas/dolacz-do-sieci/page.tsx` - `/o-nas/dolacz-do-sieci`
+    - `app/(pl)/kontakt/page.tsx` - `/kontakt`
+    - `app/(pl)/mapa-strony/page.tsx` - `/mapa-strony`
+    - `app/(pl)/polityka-prywatnosci/page.tsx` - `/polityka-prywatnosci`
+    - `app/(pl)/regulamin/page.tsx` - `/regulamin`
 
     **Edukacja (blog):**
 
-    - `app/(pl)/edukacja/page.tsx` — `/edukacja`
-    - `app/(pl)/edukacja/[category]/page.tsx` — `/edukacja/[category]` (dynamiczny)
-    - `app/(pl)/edukacja/[category]/[slug]/page.tsx` — `/edukacja/[category]/[slug]` (dynamiczny)
+    - `app/(pl)/edukacja/page.tsx` - `/edukacja`
+    - `app/(pl)/edukacja/[category]/page.tsx` - `/edukacja/[category]` (dynamiczny)
+    - `app/(pl)/edukacja/[category]/[slug]/page.tsx` - `/edukacja/[category]/[slug]` (dynamiczny)
 
     **Realizacje (portfolio):**
 
-    - `app/(pl)/realizacje/page.tsx` — `/realizacje`
-    - `app/(pl)/realizacje/[slug]/page.tsx` — `/realizacje/[slug]` (dynamiczny)
+    - `app/(pl)/realizacje/page.tsx` - `/realizacje`
+    - `app/(pl)/realizacje/[slug]/page.tsx` - `/realizacje/[slug]` (dynamiczny)
 
     **Narzędzia:**
 
-    - `app/(pl)/narzedzia/page.tsx` — `/narzedzia`
+    - `app/(pl)/narzedzia/page.tsx` - `/narzedzia`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
     - `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-favicon-ico/page.tsx`
@@ -2992,26 +2992,26 @@
 
     **Usługi (overview):**
 
-    - `app/(pl)/uslugi/page.tsx` — `/uslugi`
+    - `app/(pl)/uslugi/page.tsx` - `/uslugi`
 
-    **Usługi — marketing:**
+    **Usługi - marketing:**
 
-    - `app/(pl)/uslugi/marketing/page.tsx` — `/uslugi/marketing`
-    - `app/(pl)/uslugi/marketing/audyt-seo/page.tsx` — `/uslugi/marketing/audyt-seo`
-    - `app/(pl)/uslugi/marketing/optymalizacja-seo/page.tsx` — `/uslugi/marketing/optymalizacja-seo`
-    - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx` — `/uslugi/marketing/pozycjonowanie-stron`
+    - `app/(pl)/uslugi/marketing/page.tsx` - `/uslugi/marketing`
+    - `app/(pl)/uslugi/marketing/audyt-seo/page.tsx` - `/uslugi/marketing/audyt-seo`
+    - `app/(pl)/uslugi/marketing/optymalizacja-seo/page.tsx` - `/uslugi/marketing/optymalizacja-seo`
+    - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx` - `/uslugi/marketing/pozycjonowanie-stron`
 
-    **Usługi — witryny i treści:**
+    **Usługi - witryny i treści:**
 
-    - `app/(pl)/uslugi/strony-internetowe/page.tsx` — `/uslugi/strony-internetowe`
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` - `/uslugi/strony-internetowe`
     - `app/(pl)/uslugi/strony-internetowe/optymalizacja-strony-wordpress/page.tsx`
-    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` — `/uslugi/sklepy-internetowe`
-    - `app/(pl)/uslugi/blogi-internetowe/page.tsx` — `/uslugi/blogi-internetowe`
-    - `app/(pl)/uslugi/tworzenie-tresci/page.tsx` — `/uslugi/tworzenie-tresci`
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` - `/uslugi/sklepy-internetowe`
+    - `app/(pl)/uslugi/blogi-internetowe/page.tsx` - `/uslugi/blogi-internetowe`
+    - `app/(pl)/uslugi/tworzenie-tresci/page.tsx` - `/uslugi/tworzenie-tresci`
 
-    **Usługi — projekty graficzne:**
+    **Usługi - projekty graficzne:**
 
-    - `app/(pl)/uslugi/projekty-graficzne/page.tsx` — `/uslugi/projekty-graficzne`
+    - `app/(pl)/uslugi/projekty-graficzne/page.tsx` - `/uslugi/projekty-graficzne`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-wizytowki/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-ulotki/page.tsx`
     - `app/(pl)/uslugi/projekty-graficzne/projekt-teczki-ofertowej/page.tsx`
@@ -3247,19 +3247,19 @@
     - Cover: `/assets/blog/jak-przygotowac-sklep-internetowy-do-pozycjonowania/jak-przygotowac-sklep-internetowy-do-pozycjonowania.webp`
   - Weryfikacja: JSON valid (node parse OK).
 
-- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny — artykuły wzmacniające klastry (2025-12-20)**
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny - artykuły wzmacniające klastry (2025-12-20)**
 
   - Zakres: analiza istniejących artykułów, usług i narzędzi pod kątem luk w klastrach tematycznych.
   - **Zidentyfikowane luki**:
     - Narzędzia bez artykułów: generator palet, tester kontrastu WCAG, generator QR.
     - Usługi słabo wsparte: projekty graficzne (druk), sklepy internetowe, audyt SEO.
   - **Dodane pomysły (6 artykułów)**:
-    - `IDEA-054` — Kontrast kolorów na stronie (WCAG + narzędzie tester kontrastu)
-    - `IDEA-055` — Jak dobrać kolory do strony (generator palet + ekstraktor)
-    - `IDEA-056` — Kody QR w materiałach reklamowych (generator QR + usługi graficzne)
-    - `IDEA-057` — Jakie materiały drukowane warto mieć dla firmy (wizytówki/ulotki/katalogi)
-    - `IDEA-058` — Audyt SEO strony: co sprawdzamy (usługa audytu SEO + pozycjonowanie)
-    - `IDEA-059` — Jak przygotować sklep do pozycjonowania (sklepy + SEO)
+    - `IDEA-054` - Kontrast kolorów na stronie (WCAG + narzędzie tester kontrastu)
+    - `IDEA-055` - Jak dobrać kolory do strony (generator palet + ekstraktor)
+    - `IDEA-056` - Kody QR w materiałach reklamowych (generator QR + usługi graficzne)
+    - `IDEA-057` - Jakie materiały drukowane warto mieć dla firmy (wizytówki/ulotki/katalogi)
+    - `IDEA-058` - Audyt SEO strony: co sprawdzamy (usługa audytu SEO + pozycjonowanie)
+    - `IDEA-059` - Jak przygotować sklep do pozycjonowania (sklepy + SEO)
   - Weryfikacja: nie była wymagana (AUDIT-only).
 
 - ✅ **[COPY-050] Edukacja: uprościć tytuły i opisy kategorii (huby)**
@@ -3269,7 +3269,7 @@
     - `app/(pl)/edukacja/[category]/page.tsx`
   - **Zrobione**:
     - Usunięto prefix „Edukacja:" z tytułów kategorii (HERO, meta title, OG title, schema).
-    - Uproszczono opisy kategorii — krótkie, ogólne zdania bez technicznych detali.
+    - Uproszczono opisy kategorii - krótkie, ogólne zdania bez technicznych detali.
     - Opisy są elastyczne i uniwersalne, nie zawężają do jednego kanału (np. „na stronie").
     - Zaktualizowano `PAGES_CATALOG.md`.
     - Dodano instrukcję do `INSTRUCTIONS.md` zapobiegającą podobnym błędom.
@@ -3329,7 +3329,7 @@
 
 ## 2025-12-19
 
-- ✅ **[AUDIT-010] Repo: audyt tonu marki na stronach — elementy globalne i copy „wspólne” (bez artykułów)**
+- ✅ **[AUDIT-010] Repo: audyt tonu marki na stronach - elementy globalne i copy „wspólne” (bez artykułów)**
 
   - **Zakres**: sprawdzono copy w elementach globalnych (header/footer, modal cookie, wyszukiwarka, strony systemowe 404/error).
   - **Wykryte problemy**:
@@ -3342,7 +3342,7 @@
   - **Dodano zadania**: `COPY-044`, `COPY-045`, `COPY-046`, `COPY-047`, `COPY-048`, `COPY-049`.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
-- ✅ **[CONTENT-008] Blog: przepisać artykuł — `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`**
+- ✅ **[CONTENT-008] Blog: przepisać artykuł - `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`**
 
   - Plik:
     - `data/pl/blog.json`
@@ -3353,7 +3353,7 @@
     - Odświeżono `excerpt`, `seo.description`, `dateModified`, oraz zaktualizowano `faq` (5 pytań) i `cta`.
   - Weryfikacja: pominięto `npm run lint` i `npm run build` (content-only).
 
-- ✅ **[CONTENT-006] Blog: przepisać artykuł — `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`**
+- ✅ **[CONTENT-006] Blog: przepisać artykuł - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`**
 
   - Plik:
     - `data/pl/blog.json`
@@ -3402,12 +3402,12 @@
     - Zaktualizowano wpis realizacji w `PROJECTS_CATALOG.md` (uwzględniono `testimonial` i faktyczny stan `faq`).
   - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
-- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny (pomysły rozwoju treści) — klaster usług: projekty graficzne**
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny (pomysły rozwoju treści) - klaster usług: projekty graficzne**
 
   - **Zakres**: zaproponowano rozwój treści (artykuły) wspierujący ofertę `/uslugi/projekty-graficzne`.
   - **Dodano pomysły (6)**: `IDEA-048`, `IDEA-049`, `IDEA-050`, `IDEA-051`, `IDEA-052`, `IDEA-053`.
 
-- ✅ **[CONTENT-007] Blog: przepisać artykuł — `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`**
+- ✅ **[CONTENT-007] Blog: przepisać artykuł - `ile-czasu-trwa-pozycjonowanie-strony-firmowej-i-kiedy-widac-efekty`**
 
   - Plik:
     - `data/pl/blog.json`
@@ -3472,9 +3472,9 @@
     - 8 artykułów wymaga poprawy w różnym stopniu (szczegółowy raport w TASKS.md pod AUDIT-008).
     - Główne problemy: brak wyjaśniania terminów technicznych, brak analogii, styl formalny/korporacyjny zamiast mentorskiego, brak FAQ, checklisty zamiast podsumowań, 1 artykuł ma zduplikowane sekcje.
   - **Follow-up (nowe zadania)**:
-    - `CONTENT-002` — przepisać 3 artykuły priorytet 1 (najgorsze: kolorystyka, pozycjonowanie, identyfikacja wizualna).
-    - `CONTENT-003` — przepisać 3 artykuły priorytet 2 (średnie: FAQ, blog lokalny, strona w Google).
-    - `CONTENT-004` — naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton).
+    - `CONTENT-002` - przepisać 3 artykuły priorytet 1 (najgorsze: kolorystyka, pozycjonowanie, identyfikacja wizualna).
+    - `CONTENT-003` - przepisać 3 artykuły priorytet 2 (średnie: FAQ, blog lokalny, strona w Google).
+    - `CONTENT-004` - naprawić artykuł o optymalizacji zdjęć (zduplikowane sekcje + ton).
 
 - ✅ **[CLEANUP-012] Tools: ujednolicić `SUPPORTED_TYPES` (upload obrazów) jako shared const + helper**
 
@@ -3652,11 +3652,11 @@
 - ✅ **[IDEA-037] Wyszukiwarka w nawigacji (site search)**
 
   - Pliki:
-    - `lib/search/searchIndex.ts` — generowanie indeksu z pl.ts, blog.json, projects.json
-    - `hooks/useSearch.ts` — logika wyszukiwania z debounce i grupowaniem
-    - `components/ui/SearchDialog.tsx` — modal z inputem, instant wynikami, keyboard nav
-    - `components/shared/navigation-types/DesktopNavigation.tsx` — ikona lupy, `Ctrl+K` shortcut
-    - `components/shared/Navigation.tsx` — ikona lupy na mobile
+    - `lib/search/searchIndex.ts` - generowanie indeksu z pl.ts, blog.json, projects.json
+    - `hooks/useSearch.ts` - logika wyszukiwania z debounce i grupowaniem
+    - `components/ui/SearchDialog.tsx` - modal z inputem, instant wynikami, keyboard nav
+    - `components/shared/navigation-types/DesktopNavigation.tsx` - ikona lupy, `Ctrl+K` shortcut
+    - `components/shared/Navigation.tsx` - ikona lupy na mobile
   - **Zrobione**:
     - Client-side search z prebuilt index (usługi, narzędzia, artykuły, realizacje, strony statyczne).
     - Modal z instant wynikami podczas pisania (debounce 150ms).
@@ -3730,13 +3730,13 @@
   - Uproszczono język techniczny.
   - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
-- ✅ **[IDEA-034] Rewrite: Pozostałe artykuły — audyt i dostosowanie tonu**
+- ✅ **[IDEA-034] Rewrite: Pozostałe artykuły - audyt i dostosowanie tonu**
 
   - Pliki: `data/pl/blog.json`, `TASKS.md`
   - Przeprowadzono audyt pozostałych artykułów.
-  - Artykuły o optymalizacji zdjęć i blogu lokalnym mają akceptowalny ton — nie wymagają natychmiastowej przeróbki.
+  - Artykuły o optymalizacji zdjęć i blogu lokalnym mają akceptowalny ton - nie wymagają natychmiastowej przeróbki.
   - Dodano sekcję DO/DON'T do instrukcji artykułów w `TASKS.md`.
-  - Zaktualizowano sekcję Struktura — elastyczna, dopasowana do tematu.
+  - Zaktualizowano sekcję Struktura - elastyczna, dopasowana do tematu.
 
 - ✅ **[IDEA-028] Artykuł: „Jak przygotować profesjonalną stopkę mailową dla firmy?"**
 
@@ -3760,18 +3760,18 @@
     - Zawiera 6 FAQ oraz CTA do generatora i oferty stron internetowych.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
-- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — narzędzia, usługi, artykuły, cross-linking**
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny - narzędzia, usługi, artykuły, cross-linking**
 
   - **Zrobione 2025-12-18**:
     - Audyt ogólny: przegląd `PAGES_CATALOG.md`, `TOOLS_CATALOG.md`, `BLOG_CATALOG.md`.
     - Zidentyfikowano luki: brak nowych narzędzi od czasu launch, brak usługi opieki/konsultacji, brak artykułów wspierających istniejące narzędzia.
     - Dodano 6 nowych pomysłów w `TASKS.md` (sekcja Pomysły):
-      - `IDEA-025` — Generator kodu QR (nowe narzędzie)
-      - `IDEA-026` — Usługa „Opieka nad stroną" (pakiety utrzymania)
-      - `IDEA-027` — Usługa „Konsultacje" (sesje doradcze UX/SEO)
-      - `IDEA-028` — Artykuł o stopce mailowej (wspiera narzędzie)
-      - `IDEA-029` — Artykuł o favicon (wspiera narzędzie)
-      - `IDEA-030` — ToolsCarousel na stronach usług (cross-linking)
+      - `IDEA-025` - Generator kodu QR (nowe narzędzie)
+      - `IDEA-026` - Usługa „Opieka nad stroną" (pakiety utrzymania)
+      - `IDEA-027` - Usługa „Konsultacje" (sesje doradcze UX/SEO)
+      - `IDEA-028` - Artykuł o stopce mailowej (wspiera narzędzie)
+      - `IDEA-029` - Artykuł o favicon (wspiera narzędzie)
+      - `IDEA-030` - ToolsCarousel na stronach usług (cross-linking)
 
 ## 2025-12-17
 
@@ -3783,7 +3783,7 @@
     - Dodano linkowanie wewnętrzne do powiązanych treści oraz CTA do oferty (`/uslugi/marketing/audyt-seo`).
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
-- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny — O nas (propozycje nowych podstron)**
+- 🟡 **[AUDIT-006] Repo: audyt rozwoju witryny - O nas (propozycje nowych podstron)**
 
   - **Zrobione 2025-12-17**:
     - Przegląd istniejących stron: `/o-nas`, `/o-nas/faq`, `/o-nas/dolacz-do-sieci`.
@@ -3846,7 +3846,7 @@
   - **Zrobione 2025-12-17**:
     - Dodano opcjonalne generowanie PNG `16x16` i `32x32` (obok `180/192/512`) + spójne nazwy plików.
     - Dodano `Pobierz paczkę (.zip)` (wybrane pliki + opcjonalnie `site.webmanifest`).
-    - Snippet do `<head>`: **nie wdrożono** — **decyzja użytkownika**.
+    - Snippet do `<head>`: **nie wdrożono** - **decyzja użytkownika**.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[IDEA-004] Konwerter JPG/PNG na WebP: pobieranie paczki ZIP + eksport raportu oszczędności**
@@ -3867,7 +3867,7 @@
     - `components/ui/ProjectCard.tsx`
   - **Zrobione 2025-12-17**:
     - Obniżono jakość w `ProjectCard` z `quality={100}` do `quality={85}` (karty/miniatury/karuzele) bez regresji UI/UX.
-    - Zweryfikowano: `app/(pl)/realizacje/[slug]/page.tsx`, `app/(pl)/edukacja/[category]/[slug]/page.tsx` — brak `quality={100}`.
+    - Zweryfikowano: `app/(pl)/realizacje/[slug]/page.tsx`, `app/(pl)/edukacja/[category]/[slug]/page.tsx` - brak `quality={100}`.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 ## 2025-12-16
@@ -3880,7 +3880,7 @@
     - `TOOLS_CATALOG.md`
   - **Zrobione 2025-12-16**:
     - Uproszczono copy/UX: mniej technicznie, więcej o korzyściach.
-    - Usunięto akcje `Kopiuj paletę` i `Wyczyść` — pozostawiono kopiowanie per kolor oraz prostą podmianę obrazu przez ponowne wgranie pliku.
+    - Usunięto akcje `Kopiuj paletę` i `Wyczyść` - pozostawiono kopiowanie per kolor oraz prostą podmianę obrazu przez ponowne wgranie pliku.
     - Ujednolicono implementację z innymi narzędziami: spójna struktura `ToolSection`/`ToolInfo`/`ToolAlert`, inline upload.
     - Spłaszczono strukturę komponentu (usunięto folder i subkomponenty `PaletteExtractor/*`).
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
@@ -3912,7 +3912,7 @@
     - `hooks/useFileDropzone.ts`
   - **Zrobione 2025-12-16**:
     - Przepięto UI uploadu w `ImageResizeTool` i `JpgPngToWebp` na wspólny komponent `ToolFileDropzone` (copy i klasy bez zmian).
-    - WebP: uproszczono `useWebpQueue` — `addFiles()` jest jedynym wejściem, usunięto zduplikowane handlery (`onDrop`/`onDragOver`/`onChange`).
+    - WebP: uproszczono `useWebpQueue` - `addFiles()` jest jedynym wejściem, usunięto zduplikowane handlery (`onDrop`/`onDragOver`/`onChange`).
     - Zachowano reset inputa po wyborze oraz działanie drag&drop.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
@@ -4005,7 +4005,7 @@
     - Zmieniono narrację strony „O nas” tak, aby opisywała szerszą ofertę (strategia, branding, technologia, marketing) zamiast komunikacji skupionej na „samej stronie”.
     - Zaktualizowano: `HeroBanner`, `BenefitBelt`, copy w `SectionBasic`, opis w `SectionInfo` oraz pierwszy wyróżnik w `SectionSteps`.
     - Dodano sekcje proof: `ProjectsCarousel` + `TestimonialsCarousel` po `WorkSteps`.
-    - Zaktualizowano `metadata.title` i `metadata.description` (bez zmian OG image — osobno w `SEO-013`).
+    - Zaktualizowano `metadata.title` i `metadata.description` (bez zmian OG image - osobno w `SEO-013`).
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - 🟡 **[AUDIT-004] Repo: audyt SEO sanity-check (canonical/OG/schema/robots/sitemap)**
@@ -4515,7 +4515,7 @@
     - `app/(pl)/uslugi/page.tsx`
   - **Zrobione 2025-12-14**:
     - Poprawiono `co miesiąć` → `co miesiąc` w opisach pozycjonowania na `/uslugi/marketing` i `/uslugi`.
-    - Sprawdzone: `npm run lint` (OK). (`npm run build` pominięto — zmiana tylko literówek).
+    - Sprawdzone: `npm run lint` (OK). (`npm run build` pominięto - zmiana tylko literówek).
     - Poprawiono zapis: `ulotki,papier` → `ulotki, papier` (linia 277).
 
 - ✅ **[COPY-004] Sklepy internetowe: poprawić literówki i składnię w FAQ**
@@ -4546,7 +4546,7 @@
 - ✅ **[CLEANUP-003] Repo: skan i usunięcie pustych plików/komponentów**
 
   - **Zrobione 2025-12-14**:
-    - Przeskanowano repo (git-tracked) pod kątem plików 0B, whitespace-only oraz JS/TS zawierających tylko komentarze/whitespace — brak wyników.
+    - Przeskanowano repo (git-tracked) pod kątem plików 0B, whitespace-only oraz JS/TS zawierających tylko komentarze/whitespace - brak wyników.
     - Weryfikacja: `npm run lint`, `npm run build` (OK).
 
 - ✅ **[SEO-011] Schema OG + URL**
@@ -4666,48 +4666,48 @@
 
   - Spisać możliwe schema i wskazać strony-kandydatów. **Zrobione 2025-12-14**
   - **Schema (propozycje) + strony-kandydaci:**
-    - `Organization` + `WebSite` (global) — `app/layout.tsx`
-    - `ProfessionalService` / `LocalBusiness` (kontakt / dane firmy) — `app/(pl)/kontakt/page.tsx`, `components/shared/Footer.tsx`
-    - `Service` (strony usług) — `app/(pl)/uslugi/**/page.tsx` + helper `lib/serviceSchema.ts`
-    - `ItemList` / `OfferCatalog` (huby/listy) — `/uslugi`, `/uslugi/marketing`, `/narzedzia`, `/realizacje`
-    - `WebApplication` (pojedyncze narzędzia) — `app/(pl)/narzedzia/(tools)/*/page.tsx`
-    - `BlogPosting` (artykuły) — `app/(pl)/edukacja/[category]/[slug]/page.tsx`
-    - `CollectionPage` + `ItemList` (listy treści) — `/edukacja`, `/edukacja/[category]`, `/realizacje`, `/narzedzia`
-    - `FAQPage` (sekcje FAQ) — komponent `components/ui/FaqPanels.tsx`
-    - `BreadcrumbList` (okruszki) — komponent `components/sections/BreadCrumbs.tsx`
-    - `AboutPage` (o firmie) — `/o-nas`
-    - `PrivacyPolicyPage` (`/polityka-prywatnosci`) i `TermsOfServicePage` (`/regulamin`) — do rozważenia
+    - `Organization` + `WebSite` (global) - `app/layout.tsx`
+    - `ProfessionalService` / `LocalBusiness` (kontakt / dane firmy) - `app/(pl)/kontakt/page.tsx`, `components/shared/Footer.tsx`
+    - `Service` (strony usług) - `app/(pl)/uslugi/**/page.tsx` + helper `lib/serviceSchema.ts`
+    - `ItemList` / `OfferCatalog` (huby/listy) - `/uslugi`, `/uslugi/marketing`, `/narzedzia`, `/realizacje`
+    - `WebApplication` (pojedyncze narzędzia) - `app/(pl)/narzedzia/(tools)/*/page.tsx`
+    - `BlogPosting` (artykuły) - `app/(pl)/edukacja/[category]/[slug]/page.tsx`
+    - `CollectionPage` + `ItemList` (listy treści) - `/edukacja`, `/edukacja/[category]`, `/realizacje`, `/narzedzia`
+    - `FAQPage` (sekcje FAQ) - komponent `components/ui/FaqPanels.tsx`
+    - `BreadcrumbList` (okruszki) - komponent `components/sections/BreadCrumbs.tsx`
+    - `AboutPage` (o firmie) - `/o-nas`
+    - `PrivacyPolicyPage` (`/polityka-prywatnosci`) i `TermsOfServicePage` (`/regulamin`) - do rozważenia
 
 - ✅ **[SEO-004] Schema.org: pokrycie + sanity-check**
 
   - Sprawdzić czy strony z listy [SEO-003] faktycznie emitują schema (JSON-LD lub microdata). **Zrobione 2025-12-14**
   - **Jest (OK):**
-    - `app/layout.tsx` — `Organization` + `WebSite` (JSON-LD)
-    - `/` — `Organization` (AggregateRating/Review) + `HowTo`
-    - `/kontakt` — `ProfessionalService` + `BreadcrumbList` + `HowTo`
-    - `/uslugi/**` (podstrony usług) — `Service` (`lib/serviceSchema.ts`) + breadcrumbs; często `FAQPage`
-    - `/uslugi/marketing` — `ItemList` (marketing services)
-    - `/uslugi/projekty-graficzne` — `ItemList` + `FAQPage`
-    - `/narzedzia` — `ItemList` (lista `WebApplication`)
-    - `/narzedzia/*` (podstrony narzędzi) — `WebApplication`
-    - `/edukacja/[category]` — `CollectionPage` + `ItemList`
-    - `/edukacja/[category]/[slug]` — `BlogPosting` (JSON-LD) + breadcrumbs; opcjonalnie `FAQPage`
-    - `/realizacje/[slug]` — `Article` (JSON-LD) + breadcrumbs; opcjonalnie `FAQPage`
-    - `/o-nas` — microdata `AboutPage`
-    - `/polityka-prywatnosci`, `/regulamin` — microdata `Article`
-    - `components/sections/BreadCrumbs.tsx` — `BreadcrumbList` (JSON-LD)
-    - `components/ui/FaqPanels.tsx` — `FAQPage` (JSON-LD)
+    - `app/layout.tsx` - `Organization` + `WebSite` (JSON-LD)
+    - `/` - `Organization` (AggregateRating/Review) + `HowTo`
+    - `/kontakt` - `ProfessionalService` + `BreadcrumbList` + `HowTo`
+    - `/uslugi/**` (podstrony usług) - `Service` (`lib/serviceSchema.ts`) + breadcrumbs; często `FAQPage`
+    - `/uslugi/marketing` - `ItemList` (marketing services)
+    - `/uslugi/projekty-graficzne` - `ItemList` + `FAQPage`
+    - `/narzedzia` - `ItemList` (lista `WebApplication`)
+    - `/narzedzia/*` (podstrony narzędzi) - `WebApplication`
+    - `/edukacja/[category]` - `CollectionPage` + `ItemList`
+    - `/edukacja/[category]/[slug]` - `BlogPosting` (JSON-LD) + breadcrumbs; opcjonalnie `FAQPage`
+    - `/realizacje/[slug]` - `Article` (JSON-LD) + breadcrumbs; opcjonalnie `FAQPage`
+    - `/o-nas` - microdata `AboutPage`
+    - `/polityka-prywatnosci`, `/regulamin` - microdata `Article`
+    - `components/sections/BreadCrumbs.tsx` - `BreadcrumbList` (JSON-LD)
+    - `components/ui/FaqPanels.tsx` - `FAQPage` (JSON-LD)
   - **Brak (do dodania wg SEO-003):**
-    - `/uslugi` — brak `ItemList`/`OfferCatalog`
-    - `/realizacje` — brak `CollectionPage`/`ItemList`
-    - `/edukacja` — brak `CollectionPage`/`ItemList`
+    - `/uslugi` - brak `ItemList`/`OfferCatalog`
+    - `/realizacje` - brak `CollectionPage`/`ItemList`
+    - `/edukacja` - brak `CollectionPage`/`ItemList`
   - **Problemy / uwagi jakościowe (do poprawy):**
-    - `/kontakt` + global footer — możliwa duplikacja `ProfessionalService` (ten sam `@id` `#local` na wielu stronach)
-    - `components/ui/FaqPanels.tsx` jest `use client` — `FAQPage` pojawia się dopiero po hydracji (warto zweryfikować w Rich Results Test)
-    - W wielu miejscach JSON-LD jest ładowane przez `next/script` z `strategy='afterInteractive'` — do rozważenia inline `<script type='application/ld+json'>` w SSR
-    - `/realizacje/[slug]` — rozważyć `CaseStudy` zamiast `Article`
-    - `/polityka-prywatnosci` — rozważyć `PrivacyPolicy` zamiast `Article`
-    - `/regulamin` — rozważyć `TermsOfService` zamiast `Article`
+    - `/kontakt` + global footer - możliwa duplikacja `ProfessionalService` (ten sam `@id` `#local` na wielu stronach)
+    - `components/ui/FaqPanels.tsx` jest `use client` - `FAQPage` pojawia się dopiero po hydracji (warto zweryfikować w Rich Results Test)
+    - W wielu miejscach JSON-LD jest ładowane przez `next/script` z `strategy='afterInteractive'` - do rozważenia inline `<script type='application/ld+json'>` w SSR
+    - `/realizacje/[slug]` - rozważyć `CaseStudy` zamiast `Article`
+    - `/polityka-prywatnosci` - rozważyć `PrivacyPolicy` zamiast `Article`
+    - `/regulamin` - rozważyć `TermsOfService` zamiast `Article`
 
 - ✅ **[SEO-005] Schema: `/uslugi` (OfferCatalog / ItemList)**
 

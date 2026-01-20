@@ -314,7 +314,7 @@ export default function Page() {
               </div>
               <div className="mt-3 rounded-lg border border-neutral-200 bg-white p-3">
                 <p className="text-mid text-sm">
-                  Poziom <strong>M</strong> — kod może być uszkodzony do 15% i nadal będzie czytelny.
+                  Poziom <strong>M</strong> - kod może być uszkodzony do 15% i nadal będzie czytelny.
                 </p>
                 <p className="text-light mt-1 text-xs">Zalecany dla większości zastosowań drukowanych.</p>
               </div>
@@ -436,7 +436,7 @@ export default function Page() {
 
         <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do generatora kodów QR" btnOneLink="/narzedzia/generator-kodu-qr" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa generator, możesz stworzyć własny kod QR. Jeśli potrzebujesz profesjonalnych materiałów drukowanych z kodami QR —{' '}
+            Teraz, gdy wiesz jak działa generator, możesz stworzyć własny kod QR. Jeśli potrzebujesz profesjonalnych materiałów drukowanych z kodami QR -{' '}
             <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/projekty-graficzne">projektami graficznymi</Link>, w tym wizytówkami, ulotkami i katalogami.
           </p>
         </SectionInfo>

@@ -72,7 +72,7 @@ const schema = {
 const faqItems = [
   {
     question: 'Czy mój obraz jest wysyłany na serwer?',
-    answer: 'Nie. Wszystkie operacje wykonywane są lokalnie w przeglądarce. Obraz nie opuszcza komputera — narzędzie działa całkowicie offline po załadowaniu strony.',
+    answer: 'Nie. Wszystkie operacje wykonywane są lokalnie w przeglądarce. Obraz nie opuszcza komputera - narzędzie działa całkowicie offline po załadowaniu strony.',
   },
   {
     question: 'Jaki minimalny rozmiar powinien mieć obraz źródłowy?',
@@ -81,7 +81,7 @@ const faqItems = [
   },
   {
     question: 'Czy mogę wygenerować tylko niektóre rozmiary ikon?',
-    answer: 'Tak. Przed wygenerowaniem możesz wybrać, które rozmiary ikon potrzebujesz. Możesz wygenerować tylko wybrane rozmiary — zaznacz te, które będą używane na stronie.',
+    answer: 'Tak. Przed wygenerowaniem możesz wybrać, które rozmiary ikon potrzebujesz. Możesz wygenerować tylko wybrane rozmiary - zaznacz te, które będą używane na stronie.',
   },
   {
     question: 'Co to jest plik site.webmanifest i czy go potrzebuję?',
@@ -90,7 +90,7 @@ const faqItems = [
   },
   {
     question: 'Dlaczego warto użyć formatu SVG jako źródła?',
-    answer: 'Format SVG to grafika wektorowa, która skaluje się bez utraty jakości. Jeśli masz logo w formacie SVG, użyj go jako źródła — ikony we wszystkich rozmiarach będą ostre i wyraźne.',
+    answer: 'Format SVG to grafika wektorowa, która skaluje się bez utraty jakości. Jeśli masz logo w formacie SVG, użyj go jako źródła - ikony we wszystkich rozmiarach będą ostre i wyraźne.',
   },
 ];
 
@@ -124,11 +124,11 @@ export default function Page() {
             telefonu, gdy ktoś doda stronę jako skrót.
           </p>
           <p className="mb-4">
-            Ta niepozorna grafika pełni ważną funkcję — pomaga użytkownikom szybko rozpoznać stronę wśród wielu otwartych kart. Gdy masz kilkanaście kart w przeglądarce, favicon jest często jedynym
+            Ta niepozorna grafika pełni ważną funkcję - pomaga użytkownikom szybko rozpoznać stronę wśród wielu otwartych kart. Gdy masz kilkanaście kart w przeglądarce, favicon jest często jedynym
             widocznym elementem identyfikującym stronę.
           </p>
           <p>
-            Dla aplikacji webowych (PWA — Progressive Web Apps) favicon w odpowiednich rozmiarach jest niezbędny do prawidłowego wyświetlania ikony aplikacji na urządzeniach mobilnych i w sklepach z
+            Dla aplikacji webowych (PWA - Progressive Web Apps) favicon w odpowiednich rozmiarach jest niezbędny do prawidłowego wyświetlania ikony aplikacji na urządzeniach mobilnych i w sklepach z
             aplikacjami.
           </p>
         </SectionInfo>
@@ -139,23 +139,23 @@ export default function Page() {
           <p className="mb-6">Generator tworzy zestaw ikon zgodny z aktualnymi wytycznymi (2024-2025). Każdy rozmiar ma swoje zastosowanie:</p>
           <ul className="mb-6 list-disc space-y-3 pl-5">
             <li>
-              <strong>favicon.ico (32x32)</strong> — klasyczny format ikony rozpoznawany przez wszystkie przeglądarki. Wyświetla się na karcie przeglądarki w starszych systemach i jako domyślna ikona
+              <strong>favicon.ico (32x32)</strong> - klasyczny format ikony rozpoznawany przez wszystkie przeglądarki. Wyświetla się na karcie przeglądarki w starszych systemach i jako domyślna ikona
               w przypadku braku innych.
             </li>
             <li>
-              <strong>16x16 PNG</strong> — najmniejsza ikona, używana w niektórych przeglądarkach na kartach oraz w interfejsie (np. obok adresu URL).
+              <strong>16x16 PNG</strong> - najmniejsza ikona, używana w niektórych przeglądarkach na kartach oraz w interfejsie (np. obok adresu URL).
             </li>
             <li>
-              <strong>32x32 PNG</strong> — standardowy rozmiar favicon dla nowoczesnych przeglądarek. Wyświetla się na kartach i w zakładkach.
+              <strong>32x32 PNG</strong> - standardowy rozmiar favicon dla nowoczesnych przeglądarek. Wyświetla się na kartach i w zakładkach.
             </li>
             <li>
-              <strong>180x180 PNG (apple-touch-icon)</strong> — ikona dla urządzeń Apple (iPhone, iPad). Wyświetla się, gdy użytkownik doda stronę do ekranu głównego.
+              <strong>180x180 PNG (apple-touch-icon)</strong> - ikona dla urządzeń Apple (iPhone, iPad). Wyświetla się, gdy użytkownik doda stronę do ekranu głównego.
             </li>
             <li>
-              <strong>192x192 PNG</strong> — ikona dla urządzeń z Androidem i przeglądarki Chrome. Używana w manifestach PWA jako mniejsza ikona aplikacji.
+              <strong>192x192 PNG</strong> - ikona dla urządzeń z Androidem i przeglądarki Chrome. Używana w manifestach PWA jako mniejsza ikona aplikacji.
             </li>
             <li>
-              <strong>512x512 PNG</strong> — największa ikona, wymagana przez manifesty PWA. Wyświetla się w ekranach startowych aplikacji i jako ikona w sklepach z aplikacjami.
+              <strong>512x512 PNG</strong> - największa ikona, wymagana przez manifesty PWA. Wyświetla się w ekranach startowych aplikacji i jako ikona w sklepach z aplikacjami.
             </li>
           </ul>
           <p className="text-light">
@@ -198,13 +198,13 @@ export default function Page() {
                   <p className="mb-2">Ustaw dodatkowe opcje:</p>
                   <ul className="text-light list-disc pl-5">
                     <li>
-                      <strong>Tło</strong> — przezroczyste lub wybrany kolor
+                      <strong>Tło</strong> - przezroczyste lub wybrany kolor
                     </li>
                     <li>
-                      <strong>Manifest</strong> — plik konfiguracyjny dla PWA
+                      <strong>Manifest</strong> - plik konfiguracyjny dla PWA
                     </li>
                     <li>
-                      <strong>Auto-download</strong> — automatyczne pobieranie po wygenerowaniu
+                      <strong>Auto-download</strong> - automatyczne pobieranie po wygenerowaniu
                     </li>
                   </ul>
                 </div>
@@ -215,7 +215,7 @@ export default function Page() {
               title: '4. Wygeneruj i pobierz pliki',
               description: (
                 <div>
-                  <p className="mb-2">Kliknij przycisk generowania. Narzędzie przetworzy obraz lokalnie — nic nie jest wysyłane na serwer.</p>
+                  <p className="mb-2">Kliknij przycisk generowania. Narzędzie przetworzy obraz lokalnie - nic nie jest wysyłane na serwer.</p>
                   <p className="text-light">Pobierz wszystkie pliki jako archiwum ZIP lub pobierz pojedyncze ikony osobno.</p>
                 </div>
               ),
@@ -226,7 +226,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionDemo
-          title="Opcje generowania — co robi każda z nich?"
+          title="Opcje generowania - co robi każda z nich?"
           demo={
             <div className="tool-section space-y-4">
               <div className="tool-info-box">
@@ -308,7 +308,7 @@ export default function Page() {
                 <strong>Wygląd → Dostosuj → Tożsamość witryny → Ikona witryny</strong>
               </p>
               <p className="text-light">
-                Wgraj tam plik 512x512 — WordPress automatycznie wygeneruje mniejsze rozmiary. Jeśli chcesz mieć pełną kontrolę nad ikonami, możesz też wgrać pliki bezpośrednio do katalogu głównego
+                Wgraj tam plik 512x512 - WordPress automatycznie wygeneruje mniejsze rozmiary. Jeśli chcesz mieć pełną kontrolę nad ikonami, możesz też wgrać pliki bezpośrednio do katalogu głównego
                 strony przez FTP.
               </p>
             </div>
@@ -331,13 +331,13 @@ export default function Page() {
               </p>
               <ul className="text-light mb-2 list-disc pl-5">
                 <li>
-                  <code>app/favicon.ico</code> — automatycznie rozpoznawany przez Next.js
+                  <code>app/favicon.ico</code> - automatycznie rozpoznawany przez Next.js
                 </li>
                 <li>
-                  <code>app/apple-icon.png</code> — ikona dla Apple
+                  <code>app/apple-icon.png</code> - ikona dla Apple
                 </li>
                 <li>
-                  <code>public/</code> — pozostałe ikony (192x192, 512x512)
+                  <code>public/</code> - pozostałe ikony (192x192, 512x512)
                 </li>
               </ul>
               <p className="text-light">
@@ -350,13 +350,13 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Jaki obraz źródłowy działa najlepiej?">
-          <p className="mb-4">Favicon to bardzo mała grafika — nawet 16x16 pikseli. Dlatego nie każdy obraz sprawdzi się jako źródło. Oto kilka wskazówek:</p>
+          <p className="mb-4">Favicon to bardzo mała grafika - nawet 16x16 pikseli. Dlatego nie każdy obraz sprawdzi się jako źródło. Oto kilka wskazówek:</p>
 
           <div className="space-y-4">
             <div>
               <h3 className="h4 mb-1">Proste kształty i czytelne symbole</h3>
               <p className="text-light">
-                Najlepiej sprawdzają się proste logotypy, pojedyncze litery lub symbole. Unikaj złożonych grafik z wieloma detalami — przy małych rozmiarach staną się nieczytelne.
+                Najlepiej sprawdzają się proste logotypy, pojedyncze litery lub symbole. Unikaj złożonych grafik z wieloma detalami - przy małych rozmiarach staną się nieczytelne.
               </p>
             </div>
 
@@ -392,7 +392,7 @@ export default function Page() {
 
         <SectionInfo title="Wypróbuj narzędzie" btnOne="Przejdź do generatora favicon" btnOneLink="/narzedzia/darmowy-generator-favicon-ico" btnTwo="Zobacz inne narzędzia" btnTwoLink="/narzedzia">
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa generator, możesz stworzyć favicon dla swojej strony. Jeśli potrzebujesz pomocy przy tworzeniu strony lub identyfikacji wizualnej —{' '}
+            Teraz, gdy wiesz jak działa generator, możesz stworzyć favicon dla swojej strony. Jeśli potrzebujesz pomocy przy tworzeniu strony lub identyfikacji wizualnej -{' '}
             <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/strony-internetowe">tworzeniem stron internetowych</Link> i{' '}
             <Link href="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">projektowaniem identyfikacji wizualnej</Link>.
           </p>
@@ -407,7 +407,7 @@ export default function Page() {
 
       <CTABanner
         title="Potrzebujesz pomocy przy tworzeniu strony?"
-        description="Jeśli masz pytania dotyczące ikon, grafiki lub całej strony internetowej — skontaktuj się z nami. Pomożemy Ci stworzyć spójną identyfikację wizualną."
+        description="Jeśli masz pytania dotyczące ikon, grafiki lub całej strony internetowej - skontaktuj się z nami. Pomożemy Ci stworzyć spójną identyfikację wizualną."
         btnOne="Skontaktuj się z nami"
         btnOneLink="/kontakt"
         btnTwo="Sprawdź nasze usługi"
