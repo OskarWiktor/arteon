@@ -258,22 +258,23 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` (4 kroki).
 
-### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia` - Zmiana rozmiaru i kadrowanie
+### `/narzedzia/edytor-zdjec-online` - Edytor zdjęć online
 
-- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/page.tsx`
-- **[Cel / content]** Zmiana rozmiaru / kadrowanie zdjęcia (client-side).
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `ImageResizeTool`, `SectionInfo`, `SectionSteps`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/edytor-zdjec-online/page.tsx`
+- **[Cel / content]** Darmowy edytor zdjęć online - zmiana rozmiaru, kadrowanie, konwersja formatów, okrągłe avatary (client-side).
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `ImageResizeTool`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
-  - **[schema]** JSON-LD: `WebApplication`.
-  - **[uwagi]** URL w `schema.url` i breadcrumbs jest spójny z canonical. Link do pełnej instrukcji.
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/edytor-zdjec-online`.
+  - **[schema]** JSON-LD: `SoftwareApplication` z alternateName array.
+  - **[uwagi]** Redirect z `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`. Rozbudowana treść z tabelą wymiarów social media i FAQ.
 
-### `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja` - Instrukcja kadrowania i zmiany rozmiaru
+### `/narzedzia/edytor-zdjec-online/instrukcja` - Instrukcja edytora zdjęć
 
-- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`
-- **[Cel / content]** Szczegółowa instrukcja użytkowania narzędzia do kadrowania i zmiany rozmiaru zdjęć. Wyjaśnia jak dodać obraz, tryby ustawiania rozmiaru (pixels vs preset), tabelę presetów z zastosowaniami, jak kadrować (przeciąganie, uchwyty, zoom), siatkę 3×3 i regułę trójpodziału, kształty kadru (prostokąt, kwadrat, koło), formaty eksportu (JPG/PNG/WebP) i proporcje (aspect ratio). Zawiera FAQ.
-- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
+- **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/edytor-zdjec-online/instrukcja/page.tsx`
+- **[Cel / content]** Szczegółowa instrukcja edytora zdjęć online. Wyjaśnia jak dodać obraz, tryby ustawiania rozmiaru (pixels vs preset), tabelę presetów z zastosowaniami, jak kadrować (przeciąganie, uchwyty, zoom), siatkę 3×3 i regułę trójpodziału, kształty kadru (prostokąt, kwadrat, koło), formaty eksportu (JPG/PNG/WebP) i proporcje (aspect ratio). Zawiera FAQ.
+- **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `SectionDemo`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
-  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja`.
+  - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/edytor-zdjec-online/instrukcja`.
   - **[schema]** JSON-LD: `HowTo` + `BreadcrumbList` + `FAQPage`.
 
 ### `/narzedzia/darmowy-generator-favicon-ico` - Generator favicon (.ico)

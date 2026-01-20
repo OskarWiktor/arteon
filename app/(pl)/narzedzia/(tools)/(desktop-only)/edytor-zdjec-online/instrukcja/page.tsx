@@ -16,14 +16,14 @@ import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
-  title: 'Jak zmienić rozmiar zdjęcia online? | Kadrowanie do Instagram i Facebook',
-  description: 'Zmień rozmiar zdjęcia i wykadruj do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Darmowe narzędzie online z presetami social media, eksportem do JPG, PNG i WebP.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja') },
+  title: 'Jak zmienić rozmiar zdjęcia online? | Instrukcja edytora zdjęć',
+  description: 'Instrukcja edytora zdjęć online. Zmień rozmiar do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Kadrowanie, konwersja JPG na WebP, okrągłe avatary.',
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/edytor-zdjec-online/instrukcja') },
   openGraph: {
-    title: 'Jak zmienić rozmiar zdjęcia online? | Kadrowanie do Instagram i Facebook',
+    title: 'Jak zmienić rozmiar zdjęcia online? | Instrukcja edytora zdjęć',
     description:
-      'Zmień rozmiar zdjęcia i wykadruj do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Darmowe narzędzie online z presetami social media, eksportem do JPG, PNG i WebP.',
-    url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja'),
+      'Instrukcja edytora zdjęć online. Zmień rozmiar do Instagram (1080x1080, 1080x1350), Facebook, LinkedIn i OG image. Kadrowanie, konwersja JPG na WebP, okrągłe avatary.',
+    url: toAbsoluteUrl('/narzedzia/edytor-zdjec-online/instrukcja'),
     type: 'website',
     images: [
       {
@@ -37,8 +37,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak zmienić rozmiar zdjęcia i wykadrować do social media',
-  description: 'Instrukcja zmiany rozmiaru zdjęcia i kadrowania do Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn i OG image. Presety social media, eksport do JPG, PNG i WebP.',
-  url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja'),
+  description: 'Instrukcja edytora zdjęć online. Zmiana rozmiaru do Instagram (1080x1080, 1080x1350, story), Facebook, LinkedIn i OG image. Konwersja JPG na WebP, okrągłe avatary.',
+  url: toAbsoluteUrl('/narzedzia/edytor-zdjec-online/instrukcja'),
   inLanguage: 'pl-PL',
   step: [
     {
@@ -100,21 +100,21 @@ const faqItems = [
 export default function Page() {
   return (
     <>
-      <Script id="ld-json-image-resize-instruction" type="application/ld+json" strategy="afterInteractive">
+      <Script id="ld-json-image-editor-instruction" type="application/ld+json" strategy="afterInteractive">
         {JSON.stringify(schema)}
       </Script>
 
       <HeroBanner
         title="Jak zmienić rozmiar zdjęcia i wykadrować do social media"
-        description="Zmień rozmiar zdjęcia do Instagram (post, story, reels), Facebook, LinkedIn i OG image. Instrukcja z gotowymi presetami, kadrowanie z siatką 3×3, eksport do JPG, PNG i WebP."
+        description="Instrukcja edytora zdjęć online. Zmień rozmiar do Instagram (post, story, reels), Facebook, LinkedIn i OG image. Kadrowanie z siatką 3×3, eksport do JPG, PNG i WebP."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzia' }}
-        third={{ href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', label: 'Kadrowanie i zmiana rozmiaru zdjęcia' }}
-        fourth={{ href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja', label: 'Instrukcja' }}
+        third={{ href: '/narzedzia/edytor-zdjec-online', label: 'Edytor zdjęć online' }}
+        fourth={{ href: '/narzedzia/edytor-zdjec-online/instrukcja', label: 'Instrukcja' }}
         includeJsonLd
       />
 
@@ -133,8 +133,8 @@ export default function Page() {
           </ul>
           <p className="text-mid mt-3">Po dodaniu obrazu narzędzie automatycznie odczyta jego oryginalne wymiary i wyświetli podgląd. Możesz teraz przejść do ustawień kadru.</p>
           <p className="text-mid mt-3">
-            <Link href="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia" className="inline-link">
-              Przejdź do narzędzia →
+            <Link href="/narzedzia/edytor-zdjec-online" className="inline-link">
+              Przejdź do edytora zdjęć →
             </Link>
           </p>
         </SectionInfo>
@@ -519,16 +519,26 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo
-          title="Wypróbuj narzędzie"
-          btnOne="Przejdź do narzędzia kadrowania"
-          btnOneLink="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia"
+          title="Wypróbuj edytor zdjęć"
+          btnOne="Przejdź do edytora zdjęć"
+          btnOneLink="/narzedzia/edytor-zdjec-online"
           btnTwo="Zobacz inne narzędzia"
           btnTwoLink="/narzedzia"
         >
           <p className="text-mid">
-            Teraz, gdy wiesz jak działa narzędzie, możesz przyciąć swoje zdjęcia do idealnych wymiarów. Po zmianie rozmiaru możesz też{' '}
-            <Link href="/narzedzia/jpg-png-na-webp-bez-limitu">przekonwertować obrazy na WebP</Link>, żeby zmniejszyć ich rozmiar. Jeśli potrzebujesz profesjonalnych grafik -{' '}
-            <Link href="/kontakt">skontaktuj się z nami</Link>. Zajmujemy się <Link href="/uslugi/projekty-graficzne">projektami graficznymi</Link>.
+            Teraz, gdy wiesz jak działa narzędzie, możesz zmienić rozmiar swoich zdjęć do idealnych wymiarów. Po edycji możesz też{' '}
+            <Link href="/narzedzia/jpg-png-na-webp-bez-limitu" className="inline-link">
+              przekonwertować obrazy na WebP
+            </Link>
+            , żeby zmniejszyć ich rozmiar. Jeśli potrzebujesz profesjonalnych grafik -{' '}
+            <Link href="/kontakt" className="inline-link">
+              skontaktuj się z nami
+            </Link>
+            . Zajmujemy się{' '}
+            <Link href="/uslugi/projekty-graficzne" className="inline-link">
+              projektami graficznymi
+            </Link>
+            .
           </p>
         </SectionInfo>
 
@@ -540,12 +550,12 @@ export default function Page() {
       </Wrapper>
 
       <CTABanner
-        title="Potrzebujesz profesjonalnych grafik na stronę lub do mediów społecznościowych?"
-        description="Tworzymy spójne materiały wizualne dopasowane do Twojej marki - od zdjęć produktowych po grafiki reklamowe."
+        title="Potrzebujesz profesjonalnych grafik do social media?"
+        description="Tworzymy spójne materiały wizualne dopasowane do Twojej marki - od zdjęć produktowych po szablony postów na Instagram i Facebook."
         btnOne="Umów rozmowę"
         btnOneLink="/kontakt"
-        btnTwo="Sprawdź nasze usługi graficzne"
-        btnTwoLink="/uslugi/projekty-graficzne"
+        btnTwo="Sprawdź szablony postów"
+        btnTwoLink="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />

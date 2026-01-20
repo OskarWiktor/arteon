@@ -87,6 +87,9 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
   '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-schematow-kolorow/instrukcja',
   '/narzedzia/generator-palety-kolorow-z-obrazu': '/narzedzia/ekstraktor-kolorow-z-obrazu',
   '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja',
+  // Zmiana URL edytora zdjęć (2026-01-20) - lepsza fraza kluczowa
+  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia': '/narzedzia/edytor-zdjec-online',
+  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja': '/narzedzia/edytor-zdjec-online/instrukcja',
 };
 
 /**

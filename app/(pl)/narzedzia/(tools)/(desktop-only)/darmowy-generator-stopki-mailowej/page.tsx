@@ -96,11 +96,12 @@ export default function Page() {
 
         <SectionInfo title="Dlaczego warto mieć profesjonalną stopkę mailową?">
           <p className="text-mid">
-            Stopka mailowa (nazywana też podpisem e-mail lub sygnaturką) to blok informacji na końcu każdej wysyłanej wiadomości. Zawiera dane kontaktowe, stanowisko, nazwę firmy i często link do
-            strony internetowej lub kalendarza spotkań.
+            Stopka mailowa (nazywana też podpisem e-mail lub sygnaturką) to blok informacji na końcu każdej wysyłanej wiadomości. Zawiera dane kontaktowe, stanowisko,
+            nazwę firmy i często link do strony internetowej lub kalendarza spotkań.
           </p>
           <p className="text-mid mt-3">
-            Odbiorca nie musi szukać numeru telefonu w poprzednich wiadomościach - wszystkie dane ma pod ręką. Stopka pokazuje też, że dbasz o szczegóły i spójny wizerunek firmy w korespondencji.
+            Odbiorca nie musi szukać numeru telefonu w poprzednich wiadomościach - wszystkie dane ma pod ręką. Profesjonalny podpis mailowy pokazuje też, że dbasz o szczegóły i spójny wizerunek
+            firmy w korespondencji biznesowej.
           </p>
         </SectionInfo>
 
@@ -135,8 +136,10 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Co możesz skonfigurować w generatorze podpisu email?">
-          <p className="text-mid mb-4">Generator oferuje pełną personalizację stopki bez znajomości HTML. Wszystkie ustawienia są widoczne w podglądzie na żywo.</p>
+        <SectionInfo title="Co możesz skonfigurować w kreatorze podpisu mailowego?">
+          <p className="text-mid mb-4">
+            Nasz kreator stopki mailowej online oferuje pełną personalizację bez znajomości HTML. Wszystkie ustawienia są widoczne w podglądzie na żywo - każda zmiana pojawia się natychmiast.
+          </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
               <strong>Dane kontaktowe</strong> - imię i nazwisko, stanowisko, firma, e-mail, telefon, adres strony WWW, adres fizyczny.
@@ -170,10 +173,11 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Dla kogo jest generator stopki mailowej?">
+        <SectionInfo title="Dla kogo jest kreator podpisu email?">
+          <p className="text-mid mb-4">Narzędzie do tworzenia stopek mailowych przydaje się każdemu, kto wysyła służbowe e-maile:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Przedsiębiorcy i freelancerzy</strong> - spójna stopka we wszystkich wiadomościach bez zlecania projektowania.
+              <strong>Przedsiębiorcy i freelancerzy</strong> - profesjonalna sygnaturka we wszystkich wiadomościach bez zlecania projektowania.
             </li>
             <li>
               <strong>Zespoły firmowe</strong> - każdy pracownik tworzy własną stopkę w tym samym stylu (układ, kolory, czcionka). Spójna identyfikacja w całej firmie.
@@ -210,10 +214,11 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Dlaczego wybrać nasz generator podpisu email?">
+        <SectionInfo title="Dlaczego wybrać nasz generator podpisu email HTML?">
+          <p className="text-mid mb-4">Nasz kreator sygnaturki email wyróżnia się na tle konkurencji:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Darmowy i bez limitu</strong> - tworzysz dowolną liczbę stopek bez opłat. Nie ma ukrytych kosztów ani wersji premium.
+              <strong>Darmowy i bez limitu</strong> - tworzysz dowolną liczbę podpisów mailowych bez opłat. Nie ma ukrytych kosztów ani wersji premium.
             </li>
             <li>
               <strong>Bez rejestracji</strong> - nie musisz zakładać konta ani podawać adresu e-mail. Generator działa od razu po otwarciu strony.
@@ -228,7 +233,10 @@ export default function Page() {
               <strong>Kompatybilność</strong> - wygenerowany kod HTML działa w Gmail, Outlook, Apple Mail, Thunderbird i innych klientach pocztowych.
             </li>
             <li>
-              <strong>Podgląd na żywo</strong> - każda zmiana jest widoczna natychmiast. Nie musisz klikac przycisku, żeby zobaczyć efekt.
+              <strong>Podgląd na żywo</strong> - każda zmiana jest widoczna natychmiast. Nie musisz klikać przycisku, żeby zobaczyć efekt.
+            </li>
+            <li>
+              <strong>Eksport HTML</strong> - wygenerowany kod podpisu email HTML działa we wszystkich popularnych klientach pocztowych.
             </li>
           </ul>
         </SectionInfo>

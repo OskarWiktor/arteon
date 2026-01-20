@@ -229,8 +229,8 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
       },
       {
         key: 'imageResize',
-        href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
-        title: 'Kadrowanie i zmiana rozmiaru',
+        href: '/narzedzia/edytor-zdjec-online',
+        title: 'Edytor zdjęć online',
         description: 'Przygotuj idealny kadr pod social media lub stronę WWW. Wybierz gotowy format lub wpisz własne wymiary.',
         image: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
         icon: RiCropLine,

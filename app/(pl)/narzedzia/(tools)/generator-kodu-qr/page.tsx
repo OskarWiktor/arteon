@@ -96,12 +96,12 @@ export default function Page() {
 
         <SectionInfo title="Czym jest kod QR i do czego służy?">
           <p className="text-mid">
-            Kod QR (z angielskiego Quick Response - szybka odpowiedź) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem w telefonie. Po zeskanowaniu telefon automatycznie wykonuje zapisaną
-            akcję: otwiera stronę internetową, zapisuje kontakt w książce adresowej, rozpoczyna połączenie telefoniczne lub tworzy wiadomość e-mail.
+            Kod QR (z angielskiego Quick Response - szybka odpowiedź, nazywany też QR code) to dwuwymiarowy kod kreskowy, który można zeskanować aparatem w telefonie. W odróżnieniu od tradycyjnego
+            kodu kreskowego 1D, kod QR przechowuje dane w obu wymiarach, dzięki czemu mieści znacznie więcej informacji.
           </p>
           <p className="text-mid mt-3">
-            Kody QR są powszechnie stosowane na wizytówkach, ulotkach, plakatach, opakowaniach produktów i w menu restauracji. Pozwalają szybko przekierować klienta na stronę bez konieczności
-            przepisywania długiego adresu URL.
+            Po zeskanowaniu telefon automatycznie wykonuje zapisaną akcję: otwiera stronę internetową, zapisuje kontakt w książce adresowej, rozpoczyna połączenie telefoniczne lub tworzy wiadomość
+            e-mail. Kody QR są powszechnie stosowane na wizytówkach, ulotkach, plakatach, opakowaniach produktów i w menu restauracji.
           </p>
         </SectionInfo>
 
@@ -137,7 +137,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Co możesz wygenerować - typy kodów QR">
-          <p className="text-mid mb-4">Generator obsługuje pięć typów danych - każdy przydatny w innych sytuacjach:</p>
+          <p className="text-mid mb-4">Nasz kreator kodów QR online obsługuje pięć typów danych - każdy przydatny w innych sytuacjach:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
               <strong>Adres URL</strong> - link do strony internetowej. Po zeskanowaniu telefon otworzy stronę w przeglądarce. Idealne do wizytówek, ulotek i plakatów.
@@ -147,6 +147,7 @@ export default function Page() {
             </li>
             <li>
               <strong>Wizytówka vCard</strong> - elektroniczna wizytówka z danymi kontaktowymi (imię, nazwisko, firma, telefon, e-mail, adres). Po zeskanowaniu telefon zaproponuje zapisanie kontaktu.
+              Generator wizytówki elektronicznej vCard jest idealny do profesjonalnych wizytówek firmowych.
             </li>
             <li>
               <strong>E-mail</strong> - adres e-mail z opcjonalnym tematem i treścią. Po zeskanowaniu telefon otworzy aplikację pocztową z wypełnionym formularzem.
@@ -159,7 +160,8 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Gdzie używać kodów QR - wizytówki, ulotki, menu?">
+        <SectionInfo title="Gdzie używać kodów QR - wizytówki, ulotki, menu restauracji?">
+          <p className="text-mid mb-4">Narzędzie do tworzenia kodów QR przydaje się w wielu zastosowaniach biznesowych:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
               <strong>Wizytówki firmowe</strong> - kod QR z wizytówką vCard pozwala zapisać kontakt jednym zeskanowaniem. Nie trzeba przepisywać danych ręcznie.
@@ -168,7 +170,8 @@ export default function Page() {
               <strong>Ulotki i plakaty</strong> - link do strony, formularza kontaktowego lub oferty. Klient zeskanuje kod i od razu trafi we właściwe miejsce.
             </li>
             <li>
-              <strong>Menu restauracji</strong> - naklejka na stoliku z kodem prowadzącym do menu online. Higieniczne i łatwe do aktualizacji - zmiana menu nie wymaga ponownego druku.
+              <strong>Menu restauracji</strong> - naklejka na stoliku z kodem prowadzącym do menu online. Kreator menu QR dla restauracji pozwala szybko wygenerować kod do druku. Higieniczne i łatwe
+              do aktualizacji - zmiana menu nie wymaga ponownego druku.
             </li>
             <li>
               <strong>Opakowania produktów</strong> - link do instrukcji obsługi, karty produktu lub formularza rejestracji gwarancji.
@@ -182,7 +185,9 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Jak przygotować kod QR do druku - PNG czy SVG?">
-          <p className="text-mid mb-4">Kilka wskazówek, które pomogą przygotować kod QR do materiałów drukowanych:</p>
+          <p className="text-mid mb-4">
+            Generator kodu QR do druku oferuje eksport w dwóch formatach. Kilka wskazówek, które pomogą przygotować kod do materiałów drukowanych:
+          </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
               <strong>Rozmiar</strong> - dla wizytówek i ulotek zalecamy minimum 2x2 cm. W generatorze odpowiada to rozdzielczości 300 px przy standardowej jakości druku (300 DPI).
@@ -212,10 +217,11 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Dlaczego wybrać nasz generator kodów QR?">
+        <SectionInfo title="Dlaczego wybrać nasz darmowy generator kodów QR online?">
+          <p className="text-mid mb-4">Nasz generator kodów QR wyróżnia się na tle konkurencji:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Darmowy i bez limitu</strong> - tworzysz dowolną liczbę kodów bez opłat. Nie ma ukrytych kosztów ani wersji premium.
+              <strong>Darmowy i bez limitu</strong> - tworzysz dowolną liczbę kodów QR bez opłat. Nie ma ukrytych kosztów ani wersji premium.
             </li>
             <li>
               <strong>Bez rejestracji</strong> - nie musisz zakładać konta ani podawać adresu e-mail. Generator działa od razu po otwarciu strony.

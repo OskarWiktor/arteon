@@ -45,7 +45,7 @@ const toolsJsonLd = {
       name: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
       description:
         'Narzędzie do szybkiego kadrowania i zmiany rozmiaru zdjęć pod social media i strony WWW. Gotowe presety wymiarów, własne wymiary w pikselach oraz możliwość tworzenia okrągłych avatarów.',
-      url: 'https://www.arteonagency.pl/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia',
+      url: 'https://www.arteonagency.pl/narzedzia/edytor-zdjec-online',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
     },
@@ -166,14 +166,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiCropLine className="h-8 w-8" />,
-              title: 'Zmiana rozmiaru i kadrowanie zdjęcia',
-              topImageAlt: 'Zmiana rozmiaru i kadrowanie zdjęcia Arteon',
+              title: 'Edytor zdjęć online',
+              topImageAlt: 'Edytor zdjęć online Arteon',
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Przygotuj idealny kadr ze zdjęcia pod social media lub stronę WWW. Wybierz gotowy format albo wpisz własne wymiary w pikselach i pobierz gotowe zdjęcie w PNG, JPG lub WebP.</p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia">
+                    <Button arrow link="/narzedzia/edytor-zdjec-online">
                       Otwórz narzędzie
                     </Button>
                   </div>
