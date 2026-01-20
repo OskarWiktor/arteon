@@ -2,6 +2,30 @@
 
 ## 2026-01-20
 
+- ✅ **[COPY-006] Narzędzia: redakcja treści na stronie /licznik-slow-i-znakow i instrukcji**
+
+  - **Pliki**:
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/page.tsx`
+    - `app/(pl)/narzedzia/(tools)/licznik-slow-i-znakow/instrukcja/page.tsx`
+  - **Zakres redakcji (runda 1)**:
+    - Usunięto pouczający ton ("Pamiętaj:", "Traktuj wynik jako regułę", "nie jako cel do osiągnięcia")
+    - Usunięto negatywny framing ("Zbyt krótki może nie przekonać", "Zbyt długi zniechęci")
+    - Zmieniono nagłówek tabeli z "Uwagi" na "Kiedy krótszy, kiedy dłuższy?"
+    - Dodano konkretne przykłady zamiast ogólnikowych stwierdzeń (kubek vs laptop, hydraulik vs B2B, Allegro limit 4000 znaków)
+    - Wyjaśniono mechanizmy (dzielenie przez 200 słów/min)
+    - Usunięto suche tabelaryczne uwagi typu "Długość zależy od zakresu, nie od ambicji"
+  - **Zakres redakcji (runda 2)**:
+    - Usunięto ", nie wyrok" z FAQ (zbędne pouczanie)
+    - Usunięto "Pamiętaj:" z wstępu tabeli
+    - Usunięto "ostateczna ocena należy do Ciebie" (protekcjonalne)
+    - Usunięto nadmiarowe "orientacyjne widełki" (powtarzane wielokrotnie)
+    - Usunięto ", nie sztywne normy" z answerSchemaText
+    - Zmieniono nagłówek "Typy stron i orientacyjne zakresy" → "Typy stron i zakresy słów"
+  - **Poprawione sekcje**:
+    - Strona główna: "Policz słowa i sprawdź długość tekstu", "Ile słów powinien mieć tekst?", FAQ (5 pytań)
+    - Instrukcja: "Po co liczyć słowa na stronie?", "Typy stron i zakresy słów" (6 typów), "Jak interpretować wyniki?", FAQ (5 pytań)
+  - **Weryfikacja**: nie wymagana (COPY-only)
+
 - ✅ **[NAV-001] Nawigacja: tymczasowo ukryć linki do social media (Instagram, Facebook)**
 
   - **Pliki**:

@@ -68,32 +68,32 @@ const faqItems = [
   {
     question: 'Czy długość tekstu wpływa na pozycję w Google?',
     answer:
-      'Długość tekstu NIE jest bezpośrednim czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest wartościowa. Tekst z 800 słowami, który wyczerpuje temat, może pozycjonować się lepiej niż rozwodniony artykuł z 3000 słów. Zakresy w narzędziu to orientacyjne widełki, nie cele do osiągnięcia.',
+      'Długość tekstu sama w sobie nie jest czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Artykuł z 800 słowami, który wyczerpująco odpowiada na pytanie, może pozycjonować się lepiej niż artykuł z 3000 słów, który nie trafia w sedno. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.',
     answerSchemaText: 'Długość tekstu nie jest bezpośrednim czynnikiem rankingowym. Google ocenia wartość treści dla użytkownika.',
   },
   {
     question: 'Dlaczego zakresy słów są takie szerokie?',
     answer:
-      'Bo ten sam typ strony może wymagać różnej długości w zależności od kontekstu. Opis prostego produktu spożywczego to 80-150 słów. Opis złożonego urządzenia elektronicznego — 300-400 słów. Prosta usługa lokalna wymaga 500 słów, złożona usługa B2B z procesem i FAQ — 1500 słów. Szeroki zakres pozwala dopasować długość do rzeczywistych potrzeb.',
+      'Ten sam typ strony może wymagać różnej długości w zależności od złożoności tematu. Opis prostego produktu (np. kubek) to 80-150 słów — wystarczy podać materiał, pojemność i przeznaczenie. Opis laptopa to 300-400 słów, bo kupujący pyta o procesor, pamięć, ekran, baterię. Podobnie z usługami: lokalna usługa hydraulika to 500-700 słów, a kompleksowa usługa wdrożenia systemu B2B z procesem, etapami i FAQ to 1200-1500 słów.',
     answerSchemaText: 'Szeroki zakres pozwala dopasować długość do kontekstu — prosty produkt wymaga mniej słów niż złożony.',
   },
   {
     question: 'Jak interpretować ocenę "za krótki" lub "za długi"?',
     answer:
-      'To sygnał, że tekst jest poza orientacyjnym zakresem — nie wyrok. Jeśli tekst jest "za krótki", ale wyczerpuje temat i odpowiada na pytania czytelnika, może być wystarczający. Jeśli jest "za długi", ale każdy akapit wnosi wartość, długość jest uzasadniona. Traktuj ocenę jako punkt wyjścia do refleksji, nie jako regułę.',
-    answerSchemaText: 'Ocena to sygnał, nie wyrok. Jeśli tekst wyczerpuje temat, długość jest odpowiednia niezależnie od wyniku.',
+      'Ocena pokazuje, gdzie tekst znajduje się względem typowych treści danego typu. Jeśli tekst jest oznaczony jako "za krótki", ale odpowiada na wszystkie pytania czytelnika — długość jest odpowiednia. Jeśli jest "za długi", ale każdy akapit wnosi nową informację — długość jest uzasadniona.',
+    answerSchemaText: 'Ocena pokazuje pozycję tekstu względem typowych treści. Jeśli tekst odpowiada na pytania czytelnika, długość jest odpowiednia.',
   },
   {
     question: 'Jak licznik oblicza czas czytania?',
     answer:
-      'Narzędzie przyjmuje średnią prędkość 200 słów na minutę. To przybliżona wartość — niektórzy czytają szybciej, inni wolniej. Tekst techniczny lub wymagający skupienia będzie czytany wolniej niż lekki artykuł lifestylowy.',
+      'Narzędzie dzieli liczbę słów przez 200 — to średnia prędkość czytania dla typowego tekstu. Tekst techniczny lub wymagający skupienia (np. dokumentacja, regulamin) będzie czytany wolniej. Lekki artykuł lifestylowy — szybciej. Wynik to orientacyjna wartość, która pomaga ocenić, ile czasu czytelnik spędzi z tekstem.',
     answerSchemaText: 'Narzędzie przyjmuje średnią prędkość czytania 200 słów na minutę. To wartość orientacyjna dla typowego tekstu.',
   },
   {
     question: 'Skąd pochodzą zalecane zakresy?',
     answer:
-      'Zakresy bazują na analizach treści, które dobrze pozycjonują się w Google, oraz na praktykach tworzenia treści. Są celowo szerokie, aby uwzględniać różne konteksty. Pamiętaj: to orientacyjne widełki, nie sztywne normy. Najważniejsza jest wartość treści dla czytelnika i wyczerpanie tematu.',
-    answerSchemaText: 'Zakresy opierają się na analizach SEO i praktykach tworzenia treści. To orientacyjne widełki, nie sztywne normy.',
+      'Zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach, oraz na praktykach tworzenia treści. Są celowo szerokie, ponieważ ten sam typ strony może wymagać różnej długości w zależności od branży, złożoności tematu i potrzeb czytelnika. Zakresy to punkt wyjścia do oceny, czy tekst mieści się w typowym przedziale dla danego typu strony.',
+    answerSchemaText: 'Zakresy opierają się na analizach SEO i praktykach tworzenia treści.',
   },
 ];
 
@@ -116,10 +116,10 @@ export default function Page() {
 
         <SectionInfo title="Policz słowa i sprawdź długość tekstu">
           <p className="text-mid">
-            Piszesz artykuł na bloga, opis produktu albo tekst na stronę usługi? Wklej go tutaj, a narzędzie policzy słowa, znaki i akapity. Zobaczysz też, ile minut zajmie czytanie i czy długość jest odpowiednia dla danego typu strony.
+            Wklej tekst, a narzędzie policzy słowa, znaki i akapity. Zobaczysz, ile minut zajmie czytanie i czy długość pasuje do typu strony, który wybierzesz.
           </p>
           <p className="text-mid mt-3">
-            Dlaczego to ważne? Google lepiej ocenia teksty, które wyczerpują temat, ale nie są przesadnie rozwlekłe. Zbyt krótki opis produktu może nie przekonać do zakupu. Zbyt długi artykuł — zniechęcić do czytania. Sprawdź, czy Twój tekst mieści się w zalecanym zakresie.
+            Każdy typ strony ma inny cel — opis produktu odpowiada na pytania kupującego, artykuł blogowy wyczerpuje temat, a strona usługi wyjaśnia, co klient otrzyma. Licznik pokazuje zakresy dla każdego z tych typów oparte na analizach treści, które dobrze się pozycjonują.
           </p>
         </SectionInfo>
 
@@ -180,8 +180,7 @@ export default function Page() {
 
         <SectionInfo title="Ile słów powinien mieć tekst?" btnOne="Zobacz pełne zalecenia" btnOneLink="/narzedzia/licznik-slow-i-znakow/instrukcja">
           <p className="text-mid mb-4">
-            Poniższe zakresy to <strong>orientacyjne widełki</strong>, nie sztywne normy. Długość tekstu nie jest czynnikiem rankingowym w Google — liczy się wartość dla
-            czytelnika i wyczerpanie tematu.
+            Poniższe zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Długość tekstu sama w sobie nie wpływa na pozycję w Google — liczy się to, czy treść odpowiada na pytania czytelnika.
           </p>
           <div className="overflow-x-auto">
             <table className="text-mid w-full text-left">
@@ -189,39 +188,39 @@ export default function Page() {
                 <tr className="border-b border-neutral-200">
                   <th className="py-2 pr-4 font-semibold">Typ strony</th>
                   <th className="py-2 pr-4 font-semibold">Zakres</th>
-                  <th className="py-2 font-semibold">Uwagi</th>
+                  <th className="py-2 font-semibold">Kiedy krótszy, kiedy dłuższy?</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Opis produktu</td>
                   <td className="py-2 pr-4 whitespace-nowrap">80–400 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Im prostszy produkt, tym krótszy opis. Złożony sprzęt wymaga więcej wyjaśnień.</td>
+                  <td className="py-2 text-sm text-neutral-600">Prosty produkt (np. kubek) — 80-150 słów. Złożony sprzęt (np. laptop) — 300-400 słów, bo kupujący ma więcej pytań.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona usługi</td>
                   <td className="py-2 pr-4 whitespace-nowrap">500–1500 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Prosta usługa lokalna wymaga mniej słów niż złożona oferta z wieloma etapami.</td>
+                  <td className="py-2 text-sm text-neutral-600">Lokalna usługa (np. hydraulik) — 500-700 słów. Usługa B2B z procesem i FAQ — 1200-1500 słów.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona główna</td>
                   <td className="py-2 pr-4 whitespace-nowrap">400–1000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Mniej tekstu z jasnym przekazem działa lepiej niż dużo tekstu bez struktury.</td>
+                  <td className="py-2 text-sm text-neutral-600">Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej — tekst ma wspierać nawigację, nie zastępować podstrony.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona ofertowa</td>
                   <td className="py-2 pr-4 whitespace-nowrap">600–2500 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Droższa oferta wymaga więcej wyjaśnień i budowania zaufania.</td>
+                  <td className="py-2 text-sm text-neutral-600">Prosta oferta — 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów i odpowiedzi na obiekcje — 1500-2500 słów.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Artykuł blogowy</td>
                   <td className="py-2 pr-4 whitespace-nowrap">1200–3000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Krótszy tekst, który wyczerpuje temat, jest lepszy niż dłuższy z wodą.</td>
+                  <td className="py-2 text-sm text-neutral-600">Odpowiedź na proste pytanie — 1200-1800 słów. Kompleksowe zagadnienie z wieloma aspektami — 2000-3000 słów.</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4">Poradnik</td>
                   <td className="py-2 pr-4 whitespace-nowrap">2500–6000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Kompleksowe opracowanie tematu. Długość zależy od zakresu, nie od ambicji.</td>
+                  <td className="py-2 text-sm text-neutral-600">Wąski temat — 2500-3500 słów. Szeroki temat z wieloma krokami i przykładami — 4000-6000 słów.</td>
                 </tr>
               </tbody>
             </table>
