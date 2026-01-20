@@ -30,13 +30,26 @@ export const metadata: Metadata = {
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'WebApplication',
+  '@type': 'SoftwareApplication',
   name: 'Ekstraktor kolorów z obrazu',
   alternateName: 'Pobierz paletę kolorów ze zdjęcia lub logo',
   url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
-  applicationCategory: 'UtilityApplication',
+  applicationCategory: 'DesignApplication',
+  applicationSubCategory: 'ColorExtractor',
   operatingSystem: 'Any',
   description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory i stworzy paletę z kodami HEX. Darmowe narzędzie bez logowania i bez limitu.',
+  featureList: [
+    'Automatyczna ekstrakcja dominujących kolorów',
+    'Analiza zdjęć, logo i grafik',
+    'Generowanie palety kolorów',
+    'Kody kolorów w formacie HEX',
+    'Kopiowanie koloru jednym kliknięciem',
+    'Obsługa plików PNG, JPG i SVG',
+    'Wybór liczby kolorów w palecie',
+    'Przetwarzanie w przeglądarce (pliki nie są wysyłane na serwer)',
+    'Bez logowania i rejestracji',
+    'Bez limitu użycia',
+  ],
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

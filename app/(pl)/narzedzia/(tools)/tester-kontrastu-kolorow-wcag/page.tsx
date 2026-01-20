@@ -30,14 +30,29 @@ export const metadata: Metadata = {
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'WebApplication',
+  '@type': 'SoftwareApplication',
   name: 'Sprawdź kontrast kolorów pod kątem dostępności',
   alternateName: 'Sprawdzanie kontrastu kolorów zgodnie z WCAG 2.1',
   url: toAbsoluteUrl('/narzedzia/tester-kontrastu-kolorow-wcag'),
-  applicationCategory: 'UtilityApplication',
+  applicationCategory: 'DesignApplication',
+  applicationSubCategory: 'AccessibilityTool',
   operatingSystem: 'Any',
   description:
     'Darmowy tester kontrastu kolorów online zgodny z WCAG 2.1. Sprawdź współczynnik kontrastu między dwoma kolorami i zobacz, czy spełniasz poziomy AA oraz AAA dla zwykłego i dużego tekstu.',
+  featureList: [
+    'Obliczanie współczynnika kontrastu (contrast ratio)',
+    'Weryfikacja zgodności z WCAG 2.1 poziom AA',
+    'Weryfikacja zgodności z WCAG 2.1 poziom AAA',
+    'Testowanie dla zwykłego tekstu (normal text)',
+    'Testowanie dla dużego tekstu (large text)',
+    'Testowanie dla elementów UI i grafik',
+    'Obsługa kolorów w formacie HEX',
+    'Obsługa kolorów w formacie RGB',
+    'Obsługa kolorów w formacie HSL',
+    'Wybór koloru z palety (color picker)',
+    'Podgląd tekstu na żywo',
+    'Bez logowania i rejestracji',
+  ],
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

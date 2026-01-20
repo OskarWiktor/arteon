@@ -196,32 +196,32 @@ export default function Page() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Opis produktu</td>
                   <td className="py-2 pr-4 whitespace-nowrap">80–400 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Prosty produkt: 80-150. Złożony (elektronika, sprzęt): 250-400.</td>
+                  <td className="py-2 text-sm text-neutral-600">Im prostszy produkt, tym krótszy opis. Złożony sprzęt wymaga więcej wyjaśnień.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona usługi</td>
                   <td className="py-2 pr-4 whitespace-nowrap">500–1500 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Prosta usługa lokalna: 500. Złożona B2B z FAQ: do 1500.</td>
+                  <td className="py-2 text-sm text-neutral-600">Prosta usługa lokalna wymaga mniej słów niż złożona oferta z wieloma etapami.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona główna</td>
                   <td className="py-2 pr-4 whitespace-nowrap">400–1000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Nowoczesne strony są wizualne. Tekst ma jasno komunikować wartość.</td>
+                  <td className="py-2 text-sm text-neutral-600">Mniej tekstu z jasnym przekazem działa lepiej niż dużo tekstu bez struktury.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">Landing page</td>
+                  <td className="py-2 pr-4">Strona ofertowa</td>
                   <td className="py-2 pr-4 whitespace-nowrap">600–2500 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Krótki LP: 600-1000. Long-form dla drogich ofert: 1500-2500.</td>
+                  <td className="py-2 text-sm text-neutral-600">Droższa oferta wymaga więcej wyjaśnień i budowania zaufania.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Artykuł blogowy</td>
                   <td className="py-2 pr-4 whitespace-nowrap">1200–3000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Długość wynika z tematu. Krótszy wyczerpujący &gt; dłuższy rozwodniony.</td>
+                  <td className="py-2 text-sm text-neutral-600">Krótszy tekst, który wyczerpuje temat, jest lepszy niż dłuższy z wodą.</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4">Poradnik</td>
                   <td className="py-2 pr-4 whitespace-nowrap">2500–6000 słów</td>
-                  <td className="py-2 text-sm text-neutral-600">Kompleksowe opracowanie. Nie każdy temat wymaga 5000 słów.</td>
+                  <td className="py-2 text-sm text-neutral-600">Kompleksowe opracowanie tematu. Długość zależy od zakresu, nie od ambicji.</td>
                 </tr>
               </tbody>
             </table>

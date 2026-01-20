@@ -30,14 +30,27 @@ export const metadata: Metadata = {
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'WebApplication',
+  '@type': 'SoftwareApplication',
   name: 'Zamień zdjęcia JPG i PNG na lżejszy format WebP',
   alternateName: 'Konwerter JPG na WebP i PNG na WebP',
   url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
-  applicationCategory: 'UtilityApplication',
+  applicationCategory: 'MultimediaApplication',
+  applicationSubCategory: 'ImageConverter',
   operatingSystem: 'Any',
   description:
     'Darmowy konwerter JPG/PNG na WebP po polsku. Zmniejsz wagę zdjęć, popraw prędkość ładowania strony i wyniki Core Web Vitals. Konwersja odbywa się w całości w przeglądarce - bez wysyłania plików na serwer, bez logowania i bez limitu.',
+  featureList: [
+    'Konwersja JPG do WebP',
+    'Konwersja PNG do WebP',
+    'Regulacja poziomu jakości (1-100%)',
+    'Konwersja wielu plików jednocześnie (batch)',
+    'Podgląd rozmiaru przed i po konwersji',
+    'Pobieranie pojedynczych plików',
+    'Pobieranie wszystkich plików jako ZIP',
+    'Przetwarzanie w przeglądarce (pliki nie są wysyłane na serwer)',
+    'Bez logowania i rejestracji',
+    'Bez limitu liczby konwersji',
+  ],
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

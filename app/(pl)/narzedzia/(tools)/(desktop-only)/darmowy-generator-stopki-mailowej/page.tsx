@@ -30,14 +30,28 @@ export const metadata: Metadata = {
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Stwórz profesjonalną stopkę mailowej HTML',
+  '@type': 'SoftwareApplication',
+  name: 'Stwórz profesjonalną stopkę mailową HTML',
   alternateName: 'Generator podpisu e-mail w HTML',
   url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
-  applicationCategory: 'UtilityApplication',
+  applicationCategory: 'BusinessApplication',
+  applicationSubCategory: 'EmailSignatureGenerator',
   operatingSystem: 'Any',
   description:
     'Darmowy generator stopki mailowej HTML po polsku. Dodaj dane kontaktowe, link CTA i profile social mediów, a następnie skopiuj gotowy kod podpisu do Gmaila, Outlooka i innych klientów pocztowych.',
+  featureList: [
+    'Dane kontaktowe (imię, nazwisko, stanowisko, firma)',
+    'Telefon, e-mail i adres strony WWW',
+    'Logo lub zdjęcie profilowe',
+    'Ikony mediów społecznościowych (Facebook, Instagram, LinkedIn, X)',
+    'Konfigurowalne kolory (tekst, akcent, tło)',
+    'Przycisk CTA z własnym tekstem i linkiem',
+    'Podgląd stopki na żywo',
+    'Kopiowanie kodu HTML jednym kliknięciem',
+    'Kompatybilność z Gmail, Outlook, Apple Mail',
+    'Bez logowania i rejestracji',
+    'Bez limitu użycia',
+  ],
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

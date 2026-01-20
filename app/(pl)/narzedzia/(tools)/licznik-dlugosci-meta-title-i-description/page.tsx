@@ -30,14 +30,27 @@ export const metadata: Metadata = {
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'WebApplication',
+  '@type': 'SoftwareApplication',
   name: 'Sprawdź długość tytułu i opisu strony w Google',
   alternateName: 'Licznik meta title i meta description z podglądem Google',
   url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
-  applicationCategory: 'SEOApplication',
+  applicationCategory: 'BusinessApplication',
+  applicationSubCategory: 'SEOTool',
   operatingSystem: 'Any',
   description:
     'Darmowy licznik długości meta title i meta description po polsku. Sprawdza liczbę znaków, słów, szerokość w pikselach i pokazuje podgląd tytułu oraz opisu w wynikach Google - bez limitów i bez logowania.',
+  featureList: [
+    'Licznik znaków dla meta title',
+    'Licznik znaków dla meta description',
+    'Pomiar szerokości w pikselach (zgodny z Google)',
+    'Licznik słów w tytule i opisie',
+    'Podgląd wyglądu w wynikach wyszukiwania Google',
+    'Kolorowa ocena długości (za krótki / optymalny / za długi)',
+    'Ostrzeżenie przed ucięciem tytułu lub opisu',
+    'Zalecenia dotyczące optymalnej długości',
+    'Bez logowania i rejestracji',
+    'Bez limitu użycia',
+  ],
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {

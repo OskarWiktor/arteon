@@ -35,14 +35,14 @@ const schema = {
   '@type': 'HowTo',
   name: 'Jak używać licznika słów i znaków',
   description:
-    'Instrukcja krok po kroku: sprawdź długość tekstu i oceń, czy jest odpowiednia dla danego typu strony. Dowiedz się, ile słów powinien mieć opis produktu, strona usługi, artykuł blogowy czy poradnik.',
+    'Sprawdź długość tekstu i oceń, czy jest odpowiednia dla danego typu strony. Dowiedz się, ile słów powinien mieć opis produktu, strona usługi, artykuł blogowy czy poradnik.',
   url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow/instrukcja'),
   totalTime: 'PT2M',
   step: [
     {
       '@type': 'HowToStep',
       name: 'Wybierz typ strony',
-      text: 'Wybierz z listy, dla jakiego typu strony piszesz tekst: opis produktu, strona usługi, strona główna, landing page, artykuł blogowy lub poradnik.',
+      text: 'Wybierz z listy, dla jakiego typu strony piszesz tekst: opis produktu, strona usługi, strona główna, strona ofertowa, artykuł blogowy lub poradnik.',
     },
     {
       '@type': 'HowToStep',
@@ -143,25 +143,24 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-2">Opis produktu (80–400 słów)</h3>
           <p className="text-mid">
-            <strong>Prosty produkt</strong> (np. spożywczy): 80-150 słów. <strong>Złożony produkt</strong> (elektronika, sprzęt): 250-400 słów z specyfikacją i zastosowaniami. Długość powinna
-            odpowiadać złożoności produktu i pytaniom kupującego.
+            Im prostszy produkt, tym krótszy opis. Złożony sprzęt (np. elektronika) wymaga więcej wyjaśnień, specyfikacji i przykładów zastosowań. Długość powinna odpowiadać złożoności produktu
+            i pytaniom kupującego.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Strona usługi (500–1500 słów)</h3>
           <p className="text-mid">
-            <strong>Prosta usługa lokalna</strong>: 500-700 słów. <strong>Złożona usługa B2B</strong> z procesem, FAQ i case studies: do 1500 słów. Celem jest odpowiedź na pytania klienta, nie
-            osiągnięcie konkretnej liczby.
+            Prosta usługa lokalna wymaga mniej słów. Złożona oferta z wieloma etapami, pytaniami klientów i przykładami realizacji — więcej. Celem jest odpowiedź na pytania klienta, nie osiągnięcie
+            konkretnej liczby.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Strona główna (400–1000 słów)</h3>
           <p className="text-mid">
-            Nowoczesne strony główne są wizualne. Tekst ma jasno komunikować wartość, nie zasypać informacjami. Mniej tekstu z wyraźnym przekazem &gt; więcej tekstu bez jasnej struktury.
+            Mniej tekstu z jasnym przekazem działa lepiej niż dużo tekstu bez wyraźnej struktury. Tekst ma komunikować wartość, nie zasypać informacjami.
           </p>
 
-          <h3 className="h4 mt-6 mb-2">Landing page (600–2500 słów)</h3>
+          <h3 className="h4 mt-6 mb-2">Strona ofertowa (600–2500 słów)</h3>
           <p className="text-mid">
-            <strong>Krótki LP</strong> dla prostej oferty: 600-1000 słów. <strong>Long-form LP</strong> dla drogich produktów/usług wymagających edukacji: 1500-2500 słów. Długość zależy od złożoności
-            decyzji zakupowej.
+            Droższa oferta wymaga więcej wyjaśnień i budowania zaufania — stąd większa liczba słów. Prosta oferta może być krótsza. Długość zależy od złożoności decyzji zakupowej.
           </p>
 
           <h3 className="h4 mt-6 mb-2">Artykuł blogowy (1200–3000 słów)</h3>

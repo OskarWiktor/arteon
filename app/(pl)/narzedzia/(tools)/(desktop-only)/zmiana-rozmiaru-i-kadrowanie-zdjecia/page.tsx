@@ -30,14 +30,29 @@ export const metadata: Metadata = {
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'WebApplication',
+  '@type': 'SoftwareApplication',
   name: 'Przygotuj zdjęcie pod Instagram, Facebook i stronę',
   alternateName: 'Darmowe narzędzie do zmiany rozmiaru i kadrowania zdjęć online',
   url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia'),
-  applicationCategory: 'UtilityApplication',
+  applicationCategory: 'MultimediaApplication',
+  applicationSubCategory: 'ImageEditor',
   operatingSystem: 'Any',
   description:
     'Zaawansowane, darmowe narzędzie do zmiany rozmiaru i kadrowania zdjęć online. Pozwala dopasować grafikę do konkretnych wymiarów, proporcji i gotowych formatów pod social media oraz strony WWW - wszystko w przeglądarce, bez wysyłania plików na serwer i bez limitu użycia.',
+  featureList: [
+    'Zmiana rozmiaru zdjęcia do dowolnych wymiarów',
+    'Kadrowanie z interaktywnym wyborem obszaru',
+    'Gotowe formaty dla Instagram (post, story, reels)',
+    'Gotowe formaty dla Facebook (post, okładka, wydarzenie)',
+    'Gotowe formaty dla YouTube (miniatura, baner)',
+    'Własne wymiary w pikselach',
+    'Zachowanie proporcji lub dowolne skalowanie',
+    'Eksport do JPG, PNG lub WebP',
+    'Tworzenie okrągłych avatarów',
+    'Przetwarzanie w przeglądarce (pliki nie są wysyłane na serwer)',
+    'Bez logowania i rejestracji',
+    'Bez limitu użycia',
+  ],
   inLanguage: 'pl-PL',
   isAccessibleForFree: true,
   offers: {
