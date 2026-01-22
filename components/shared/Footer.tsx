@@ -117,7 +117,7 @@ const toolsLinks = [
   { href: '/narzedzia/ekstraktor-kolorow-z-obrazu', label: 'Ekstraktor kolorów z obrazu' },
   { href: '/narzedzia/generator-schematow-kolorow', label: 'Generator schematów kolorów' },
   { href: '/narzedzia/jpg-png-na-webp-bez-limitu', label: 'Konwerter JPG/PNG na WebP' },
-  { href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
+  { href: '/narzedzia/edytor-zdjec-online', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
   { href: '/narzedzia/darmowy-generator-favicon-ico', label: 'Generator favicon' },
   { href: '/narzedzia/darmowy-generator-stopki-mailowej', label: 'Generator stopki mailowej HTML' },
   { href: '/narzedzia/generator-kodu-qr', label: 'Generator kodu QR' },

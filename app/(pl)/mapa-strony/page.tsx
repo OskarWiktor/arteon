@@ -38,7 +38,7 @@ const GRAPHIC_SERVICES_SOURCE = [
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
   { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
-  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-social-media' },
+  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe' },
   { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
   { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
   { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
@@ -103,7 +103,7 @@ const blogArticleItems: NavItem[] = articles.map((a) => ({
 
 const tools: NavItem[] = [
   { title: 'Konwerter JPG/PNG na WebP', href: '/narzedzia/jpg-png-na-webp-bez-limitu' },
-  { title: 'Zmiana rozmiaru i kadrowanie zdjęcia', href: '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia' },
+  { title: 'Zmiana rozmiaru i kadrowanie zdjęcia', href: '/narzedzia/edytor-zdjec-online' },
   { title: 'Generator favicon online', href: '/narzedzia/darmowy-generator-favicon-ico' },
   { title: 'Licznik meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
   { title: 'Generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },

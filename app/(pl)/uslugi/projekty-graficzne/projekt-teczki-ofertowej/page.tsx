@@ -3,8 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import SectionBento from '@/components/ui/sections/SectionBento';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiIdCardLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -336,7 +336,47 @@ export default function OfferDesignPresentationFolderPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiPantoneLine className="h-6 w-6" />,
+              title: 'Identyfikacja wizualna',
+              description: 'Spójna tożsamość marki od A do Z',
+              size: 'large',
+              backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+            },
+            {
+              icon: <RiIdCardLine className="h-6 w-6" />,
+              title: 'Projekt wizytówki',
+              description: 'Elegancka wizytówka dla Twojej firmy',
+              size: 'medium',
+              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
+            },
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka w sieci',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiFolderOpenLine className="h-6 w-6" />,
+              title: 'Projekt ulotki',
+              description: 'Skuteczna promocja Twojej oferty',
+              size: 'small',
+              backgroundImage: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-ulotki',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

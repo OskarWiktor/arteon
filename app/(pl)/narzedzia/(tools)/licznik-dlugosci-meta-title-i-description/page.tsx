@@ -86,7 +86,7 @@ export default function Page() {
         title="Sprawdź długość tytułu i opisu strony w Google"
         description="Wpisz tytuł i opis strony, a narzędzie obliczy liczbę znaków, słów, szerokość w pikselach i pokaże, czy długość jest zgodna z zasadami SEO"
         overlay="black"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
       />
 
       <Breadcrumbs
@@ -96,7 +96,11 @@ export default function Page() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
+
+        <MetaTitleDescriptionTool />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Czym są meta title i meta description?">
           <p className="text-mid">
@@ -108,10 +112,6 @@ export default function Page() {
             przez Google mogą zniechęcić, nawet jeśli strona jest świetna.
           </p>
         </SectionInfo>
-
-        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
-
-        <MetaTitleDescriptionTool />
 
         <Gap size="sm" />
 

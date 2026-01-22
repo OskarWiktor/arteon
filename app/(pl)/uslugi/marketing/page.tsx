@@ -4,8 +4,8 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiBarChart2Fill, RiCustomerService2Line, RiFileList2Line, RiLightbulbFlashLine, RiLineChartLine, RiSearchEyeLine, RiSearchLine, RiShieldCheckLine } from 'react-icons/ri';
+import SectionBento from '@/components/ui/sections/SectionBento';
+import { RiBarChart2Fill, RiCustomerService2Line, RiFileList2Line, RiLightbulbFlashLine, RiLineChartLine, RiSearchEyeLine, RiSearchLine, RiShieldCheckLine, RiComputerLine, RiShoppingCartLine, RiPaletteLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -206,7 +206,47 @@ export default function OfferMarketingHubPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'large',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiShoppingCartLine className="h-6 w-6" />,
+              title: 'Sklepy internetowe',
+              description: 'Sprzedawaj produkty we własnym sklepie online',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/sklepy-internetowe',
+            },
+            {
+              icon: <RiPaletteLine className="h-6 w-6" />,
+              title: 'Projekty graficzne',
+              description: 'Logo, wizytówki, ulotki i więcej',
+              size: 'small',
+              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne',
+            },
+            {
+              icon: <RiFileList2Line className="h-6 w-6" />,
+              title: 'Tworzenie treści',
+              description: 'Teksty, które przyciągają klientów',
+              size: 'small',
+              backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/tworzenie-tresci',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

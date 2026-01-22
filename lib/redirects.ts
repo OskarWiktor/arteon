@@ -82,14 +82,23 @@ export const PATTERN_REDIRECTS = {
  * Redirecty dla narzędzi (zmienione URL-e)
  */
 export const TOOLS_REDIRECTS: Record<string, string> = {
-  // Zmiana URL narzędzi kolorów (2026-01-20) - eliminacja kanibalizacji SEO
-  '/narzedzia/generator-palet-kolorow-online': '/narzedzia/generator-schematow-kolorow',
-  '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-schematow-kolorow/instrukcja',
+  // Zmiana URL generatora palet kolorów (2026-01-20) - lepsza fraza kluczowa
+  '/narzedzia/generator-schematow-kolorow': '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/generator-schematow-kolorow/instrukcja': '/narzedzia/generator-palet-kolorow/instrukcja',
+  '/narzedzia/generator-palet-kolorow-online': '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-palet-kolorow/instrukcja',
+  // Zmiana URL ekstraktora kolorów (2026-01-20)
   '/narzedzia/generator-palety-kolorow-z-obrazu': '/narzedzia/ekstraktor-kolorow-z-obrazu',
   '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja',
   // Zmiana URL edytora zdjęć (2026-01-20) - lepsza fraza kluczowa
   '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia': '/narzedzia/edytor-zdjec-online',
   '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja': '/narzedzia/edytor-zdjec-online/instrukcja',
+  // Zmiana URL generatora kodów QR (2026-01-22) - dodanie "darmowy" dla lepszego SEO
+  '/narzedzia/generator-kodu-qr': '/narzedzia/darmowy-generator-kodow-qr',
+  '/narzedzia/generator-kodu-qr/instrukcja': '/narzedzia/darmowy-generator-kodow-qr/instrukcja',
+  // Zmiana URL testera kontrastu (2026-01-22) - szersze pozycjonowanie na "czytelność kolorów"
+  '/narzedzia/tester-kontrastu-kolorow-wcag': '/narzedzia/sprawdz-czytelnosc-kolorow',
+  '/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja': '/narzedzia/sprawdz-czytelnosc-kolorow/instrukcja',
 };
 
 /**

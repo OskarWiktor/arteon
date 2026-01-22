@@ -1,139 +1,188 @@
 ﻿import HeroBanner from '@/components/sections/HeroBanner';
+import CTABanner from '@/components/sections/CTABanner';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
+import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiArticleLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine, RiQrCodeLine } from 'react-icons/ri';
+import Script from 'next/script';
+import Link from 'next/link';
+import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiArticleLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine, RiQrCodeLine, RiShieldCheckLine, RiInfinityFill, RiGlobalLine, RiLockLine } from 'react-icons/ri';
+import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 
 export const metadata = {
-  title: 'Darmowe narzędzia online dla stron i firm online',
-  description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepsz swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-  alternates: { canonical: 'https://www.arteonagency.pl/narzedzia' },
+  title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
+  description:
+    '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+  alternates: { canonical: toAbsoluteUrl('/narzedzia') },
   openGraph: {
-    title: 'Darmowe narzędzia online dla stron i firm online',
-    description: 'Darmowe narzędzia online dla stron i firm. Zoptymalizuj zdjęcia, popraw SEO i ulepsz swoją identyfikację. Wszystko bez reklam, logowania i opłat',
-    url: 'https://www.arteonagency.pl/narzedzia',
+    title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
+    description:
+      '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+    url: toAbsoluteUrl('/narzedzia'),
     type: 'website',
     images: [
       {
-        url: 'https://www.arteonagency.pl/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp',
+        url: toAbsoluteUrl('/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp'),
       },
     ],
   },
 };
 
-const toolsJsonLd = {
+const schema = {
   '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  name: 'Darmowe narzędzia online dla stron i firm online',
+  '@type': 'CollectionPage',
+  name: 'Darmowe narzędzia online',
   description:
-    'Zestaw darmowych narzędzi online od Arteon: konwerter JPG/PNG na WebP, zmiana rozmiaru zdjęć, generator favicon, licznik długości meta title i description, tester kontrastu kolorów WCAG, paleta kolorów z obrazu/logo oraz generator palet kolorów z jednego koloru bazowego.',
-  itemListElement: [
-    {
-      '@type': 'WebApplication',
-      position: 1,
-      name: 'Darmowy konwerter JPG/PNG na WebP online bez limitu',
-      description: 'Konwerter JPG/PNG na WebP, który zmniejsza wagę zdjęć bez utraty jakości. Działa w całości w przeglądarce - bez wysyłania plików na serwer, bez logowania i bez limitu użycia.',
-      url: 'https://www.arteonagency.pl/narzedzia/jpg-png-na-webp-bez-limitu',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 2,
-      name: 'Kadrowanie i zmiana rozmiaru zdjęcia w kilka sekund',
-      description:
-        'Narzędzie do szybkiego kadrowania i zmiany rozmiaru zdjęć pod social media i strony WWW. Gotowe presety wymiarów, własne wymiary w pikselach oraz możliwość tworzenia okrągłych avatarów.',
-      url: 'https://www.arteonagency.pl/narzedzia/edytor-zdjec-online',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 3,
-      name: 'Darmowy generator favicon online',
-      description: 'Generator favicon online, który z jednego obrazu tworzy favicon.ico oraz ikony PNG 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.',
-      url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-favicon-ico',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 4,
-      name: 'Licznik długości meta title i meta description',
-      description:
-        'Licznik długości meta title i meta description z podglądem wyglądu w Google. Pomaga dopasować liczbę znaków, słów i szerokość w pikselach tak, aby tytuł i opis nie były ucinane w wynikach wyszukiwania.',
-      url: 'https://www.arteonagency.pl/narzedzia/licznik-dlugosci-meta-title-i-description',
-      applicationCategory: 'SEOApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 5,
-      name: 'Darmowy generator stopki mailowej HTML',
-      description:
-        'Darmowy generator stopki mailowej HTML po polsku. Dodaj dane kontaktowe, link CTA i profile social mediów, a następnie skopiuj gotowy kod podpisu do Gmaila, Outlooka i innych klientów pocztowych.',
-      url: 'https://www.arteonagency.pl/narzedzia/darmowy-generator-stopki-mailowej',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 6,
-      name: 'Tester kontrastu kolorów WCAG 2.1 AA i AAA',
-      description:
-        'Tester kontrastu kolorów online zgodny z WCAG 2.1. Oblicza współczynnik kontrastu między dwoma kolorami i pokazuje, czy para spełnia wymagania poziomów AA i AAA dla zwykłego i dużego tekstu oraz elementów UI.',
-      url: 'https://www.arteonagency.pl/narzedzia/tester-kontrastu-kolorow-wcag',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 7,
-      name: 'Ekstraktor kolorów z obrazu',
-      description: 'Wgraj zdjęcie lub logo, a narzędzie wyciągnie dominujące kolory i stworzy paletę z kodami HEX. Darmowe narzędzie bez logowania.',
-      url: 'https://www.arteonagency.pl/narzedzia/ekstraktor-kolorow-z-obrazu',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 8,
-      name: 'Generator schematów kolorów',
-      description:
-        'Generator schematów kolorów, który z jednego koloru bazowego buduje klasyczne schematy (monochromatyczne, triadyczne, analogiczne, komplementarne) oraz nowoczesne palety pastelowe, ciemne, tonalne i minimalistyczne.',
-      url: 'https://www.arteonagency.pl/narzedzia/generator-schematow-kolorow',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 9,
-      name: 'Licznik słów i znaków online - sprawdź długość tekstu',
-      description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy Twój tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu blogowego czy opisu produktu.',
-      url: 'https://www.arteonagency.pl/narzedzia/licznik-slow-i-znakow',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@type': 'WebApplication',
-      position: 10,
-      name: 'Generator kodu QR online - darmowy bez limitu',
-      description: 'Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG. Bez logowania, bez limitu użycia.',
-      url: 'https://www.arteonagency.pl/narzedzia/generator-kodu-qr',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'Any',
-    },
+    '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+  url: toAbsoluteUrl('/narzedzia'),
+  inLanguage: 'pl-PL',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Arteon Agency',
+    url: siteUrl,
+  },
+  about: [
+    { '@type': 'Thing', name: 'Optymalizacja obrazów' },
+    { '@type': 'Thing', name: 'SEO' },
+    { '@type': 'Thing', name: 'Kolory i branding' },
+    { '@type': 'Thing', name: 'Generatory online' },
   ],
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: 10,
+    itemListElement: [
+      {
+        '@type': 'WebApplication',
+        position: 1,
+        name: 'Konwerter JPG i PNG na WebP online',
+        description: 'Darmowy konwerter JPG i PNG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Bez rejestracji, bez wysyłania plików na serwer.',
+        url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 2,
+        name: 'Edytor zdjęć online',
+        description: 'Kadrowanie i zmiana rozmiaru zdjęć pod media społecznościowe i strony WWW. Gotowe presety wymiarów, własne wymiary w pikselach oraz możliwość tworzenia okrągłych avatarów.',
+        url: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 3,
+        name: 'Generator favicon online',
+        description: 'Darmowy generator favicon online. Z jednego obrazu tworzy favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 — zgodne z wymaganiami przeglądarek i Lighthouse.',
+        url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 4,
+        name: 'Licznik długości meta title i description',
+        description: 'Licznik długości meta title i meta description z podglądem wyglądu w Google. Pomaga dopasować liczbę znaków i szerokość w pikselach, aby tytuł i opis nie były ucinane.',
+        url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 5,
+        name: 'Generator stopki mailowej HTML',
+        description: 'Darmowy generator stopki mailowej HTML. Dodaj dane kontaktowe, link CTA i profile w mediach społecznościowych, a następnie skopiuj gotowy kod podpisu do Gmaila lub Outlooka.',
+        url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 6,
+        name: 'Sprawdź czytelność kolorów online',
+        description: 'Sprawdź czy kolory tekstu i tła są czytelne. Narzędzie oblicza współczynnik kontrastu według WCAG i pomoże dobrać odpowiedni kolor za pomocą funkcji automatycznego dopasowania.',
+        url: toAbsoluteUrl('/narzedzia/sprawdz-czytelnosc-kolorow'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 7,
+        name: 'Ekstraktor kolorów z obrazu online',
+        description: 'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie lub logo i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB.',
+        url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 8,
+        name: 'Generator palet kolorów online',
+        description: 'Generator palet kolorów z jednego koloru bazowego. Schematy monochromatyczne, triadyczne, analogiczne, komplementarne oraz palety pastelowe, ciemne i minimalistyczne.',
+        url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 9,
+        name: 'Licznik słów i znaków online',
+        description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu lub opisu produktu.',
+        url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 10,
+        name: 'Generator kodów QR online',
+        description: 'Darmowy generator kodów QR online. Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport PNG i SVG, bez logowania, bez limitu.',
+        url: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
+        applicationCategory: 'UtilityApplication',
+        operatingSystem: 'Any',
+      },
+    ],
+  },
 };
+
+const faqItems = [
+  {
+    question: 'Ile kosztują narzędzia?',
+    answer: 'Nic. Wszystkie narzędzia są darmowe, bez abonamentu i bez ukrytych opłat.',
+  },
+  {
+    question: 'Czy moje pliki są wysyłane na serwer?',
+    answer:
+      'Nie. Wszystkie narzędzia działają w całości w przeglądarce. Pliki nie opuszczają komputera i nie są nigdzie przechowywane.',
+  },
+  {
+    question: 'Czy potrzebuję konta?',
+    answer: 'Nie. Korzystasz od razu, bez logowania i bez zakładania konta.',
+  },
+  {
+    question: 'Czy jest limit użycia?',
+    answer: 'Nie. Korzystasz bez ograniczeń — bez dziennych limitów, bez limitu plików, bez limitu konwersji.',
+  },
+  {
+    question: 'Do czego służą te narzędzia?',
+    answer:
+      'Pomagają przygotować materiały do strony internetowej, mediów społecznościowych i druku: zoptymalizować obrazy, stworzyć favicon, sprawdzić długość tekstu, wygenerować kod QR, dobrać kolory i zweryfikować ich czytelność.',
+  },
+  {
+    question: 'Czy narzędzia działają na telefonie?',
+    answer:
+      'Tak, ale niektóre (konwerter WebP, generator favicon) działają lepiej na komputerze ze względu na przetwarzanie większych plików.',
+  },
+];
 
 export default function ToolsIndexPage() {
   return (
     <>
       <HeroBanner
-        title="Darmowe narzędzia dla stron i marek online"
-        description="W jednym miejscu znajdziesz praktyczne, w pełni darmowe narzędzia do pracy nad stroną: od obrazów, przez favicon i meta tagi, po kontrast i palety kolorów. Bez logowania, bez abonamentu, bez limitów."
+        title="Darmowe narzędzia online"
+        description="Konwerter obrazów, generator favicon, licznik tekstu, narzędzia do kolorów i kody QR. Bez rejestracji, bez limitu — wszystko działa w przeglądarce."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -143,7 +192,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Obrazy i favicony"
-          description="Narzędzia do przygotowania zdjęć, grafik i ikon pod strony WWW oraz social media."
+          description="Narzędzia do przygotowania zdjęć, grafik i ikon pod strony WWW i media społecznościowe."
           grid="three"
           items={[
             {
@@ -204,8 +253,8 @@ export default function ToolsIndexPage() {
         <Gap size="sm" />
 
         <SectionSteps
-          title="Meta i SEO"
-          description="Narzędzia, które pomagają lepiej dopasować meta tagi i wygląd strony w wynikach wyszukiwania."
+          title="Tekst i SEO"
+          description="Narzędzia do sprawdzania długości tekstu, meta tagów i podglądu strony w wynikach wyszukiwania."
           grid="three"
           items={[
             {
@@ -275,20 +324,20 @@ export default function ToolsIndexPage() {
         <Gap size="sm" />
 
         <SectionSteps
-          title="Druk i materiały"
-          description="Narzędzia do przygotowania materiałów drukowanych i oznaczeń dla Twojej marki."
+          title="Kody QR"
+          description="Generator kodów QR do stron, wizytówek, menu i materiałów drukowanych."
           grid="three"
           items={[
             {
               icon: <RiQrCodeLine className="h-8 w-8" />,
-              title: 'Generator kodu QR',
-              topImageAlt: 'Generator kodu QR Arteon',
+              title: 'Darmowy generator kodów QR',
+              topImageAlt: 'Darmowy generator kodów QR Arteon',
               topImageSrc: '/assets/tools/narzedzia-generator-kodu-qr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG i dodaj do materiałów drukowanych.</p>
+                  <p>Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport PNG i SVG, bez logowania, bez limitu.</p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/generator-kodu-qr">
+                    <Button arrow link="/narzedzia/darmowy-generator-kodow-qr">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -307,17 +356,17 @@ export default function ToolsIndexPage() {
           items={[
             {
               icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Tester kontrastu kolorów WCAG',
-              topImageAlt: 'Tester kontrastu kolorów WCAG Arteon',
+              title: 'Sprawdź czytelność kolorów',
+              topImageAlt: 'Sprawdź czytelność kolorów Arteon',
               topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Sprawdź, czy kolory na Twojej stronie spełniają wymagania <strong>WCAG 2.1</strong>. Wpisz kolory tekstu i tła, zobacz współczynnik kontrastu i od razu sprawdź poziomy{' '}
-                    <strong>AA</strong> i <strong>AAA</strong> dla tekstu, nagłówków oraz ikon i elementów UI.
+                    Sprawdź czy kolory tekstu i tła są czytelne. Wpisz kody kolorów, zobacz współczynnik kontrastu według <strong>WCAG</strong> i użyj funkcji{' '}
+                    <strong>Dopasuj</strong> do automatycznej korekty.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/tester-kontrastu-kolorow-wcag">
+                    <Button arrow link="/narzedzia/sprawdz-czytelnosc-kolorow">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -342,17 +391,16 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiPaletteLine className="h-8 w-8" />,
-              title: 'Generator schematów kolorów',
-              topImageAlt: 'Generator schematów kolorów Arteon',
+              title: 'Generator palet kolorów',
+              topImageAlt: 'Generator palet kolorów Arteon',
               topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Wybierz jeden kolor bazowy i wygeneruj 9 schematów kolorów: monochromatyczny, komplementarny, triadyczny, pastelowy, ciemny i inne. Sprawdź, jakie kolory będą idealne dla Twojej
-                    marki.
+                    Wybierz jeden kolor bazowy i wygeneruj 9 palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową, ciemną i inne. Kopiuj kody HEX jednym kliknięciem.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/generator-schematow-kolorow">
+                    <Button arrow link="/narzedzia/generator-palet-kolorow">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -364,20 +412,69 @@ export default function ToolsIndexPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo
-          title="Jak korzystać z narzędzi Arteon?"
-          description="Narzędzia są tworzone z myślą o właścicielach firm i osobach, które samodzielnie rozwijają swoje platformy i wizerunek w sieci."
-        >
-          <p className="text-light mt-4 text-xs">
-            Korzystasz bez logowania, bez zakładania konta i bez abonamentu. Wybierasz narzędzie, dodajesz dane lub pliki i od razu pobierasz gotowy efekt. Z czasem ta sekcja będzie rozbudowywana o
-            kolejne moduły: obrazy, SEO, analitykę, wyceny i inne narzędzia ułatwiające pracę nad stroną i marką online.
+        <SectionInfo title="Czym są narzędzia Arteon?">
+          <p className="mb-4">
+            Zestaw 10 darmowych narzędzi online do przygotowania materiałów na stronę internetową, do mediów społecznościowych i do druku. Konwerter obrazów na WebP, generator favicon, licznik długości
+            tekstu, ekstraktor kolorów, generator palet i kody QR.
+          </p>
+          <p className="mb-4">
+            Wszystkie narzędzia działają w przeglądarce — pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.
+          </p>
+          <p>
+            Jeśli potrzebujesz pomocy z projektem strony lub identyfikacji wizualnej, <Link href="/kontakt">skontaktuj się z nami</Link>.
           </p>
         </SectionInfo>
+
+        <Gap variant="line" />
+
+        <SectionSteps
+          title="Dlaczego warto korzystać z narzędzi Arteon?"
+          grid="two"
+          items={[
+            {
+              icon: <RiShieldCheckLine className="h-6 w-6" />,
+              title: 'Pełna prywatność',
+              description: 'Wszystkie narzędzia przetwarzają pliki lokalnie w przeglądarce. Nic nie jest wysyłane na serwer — dane znikają po zamknięciu karty.',
+            },
+            {
+              icon: <RiInfinityFill className="h-6 w-6" />,
+              title: 'Bez limitu użycia',
+              description: 'Korzystasz bez ograniczeń — bez dziennych limitów, bez limitu plików, bez limitu konwersji. Tyle razy, ile potrzebujesz.',
+            },
+            {
+              icon: <RiLockLine className="h-6 w-6" />,
+              title: 'Bez rejestracji',
+              description: 'Nie musisz zakładać konta ani się logować. Otwierasz narzędzie, korzystasz i gotowe.',
+            },
+            {
+              icon: <RiGlobalLine className="h-6 w-6" />,
+              title: 'Po polsku',
+              description: 'Wszystkie narzędzia są w języku polskim — interfejs, instrukcje i komunikaty. Bez szukania tłumaczeń.',
+            },
+          ]}
+        />
+
+        <Gap variant="line" />
+
+        <FaqPanels items={faqItems} title="Najczęściej zadawane pytania" />
 
         <Gap size="sm" />
       </Wrapper>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(toolsJsonLd) }} />
+      <CTABanner
+        title="Potrzebujesz pomocy z projektem?"
+        description="Jeśli szukasz kompleksowego wsparcia przy stronie, sklepie lub identyfikacji wizualnej — skontaktuj się z nami. Pomożemy dobrać rozwiązanie dopasowane do potrzeb."
+        btnOne="Skontaktuj się"
+        btnOneLink="/kontakt"
+        btnTwo="Zobacz usługi"
+        btnTwoLink="/uslugi"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+      />
+
+      <Script id="ld-json-tools" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify(schema)}
+      </Script>
     </>
   );
 }

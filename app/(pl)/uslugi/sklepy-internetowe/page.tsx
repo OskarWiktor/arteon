@@ -6,8 +6,10 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import {
+  RiComputerLine,
+  RiPaletteLine,
   RiShieldCheckLine,
   RiBarChart2Fill,
   RiCustomerService2Line,
@@ -405,7 +407,47 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'large',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google i nie tylko',
+              size: 'medium',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+            {
+              icon: <RiPaletteLine className="h-6 w-6" />,
+              title: 'Projekt logo',
+              description: 'Zbuduj rozpoznawalny znak firmowy',
+              size: 'small',
+              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-logo',
+            },
+            {
+              icon: <RiBrushLine className="h-6 w-6" />,
+              title: 'Szablony social media',
+              description: 'Gotowe projekty do Twoich postów',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

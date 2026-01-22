@@ -1,5 +1,56 @@
 # Arteon - DONE TASKS
 
+## 2026-01-22
+
+- ✅ **[AUDIT-006] Repo: audyt rozwoju witryny - aktualizacja (analiza nieużywanych komponentów)**
+
+  - **Zakres**: Głęboka analiza wszystkich komponentów w `components/` pod kątem użycia w codebase
+  - **Metoda**: grep_search każdego komponentu z `COMPONENTS_CATALOG.md`, analiza stron usług, narzędzi i realizacji
+  - **Kluczowe ustalenia**:
+    | Kategoria | Komponenty |
+    |-----------|------------|
+    | **Kompletnie nieużywane** | `SectionTabs`, `SectionBento` |
+    | **Tylko w realizacjach** | `SectionProcess`, `SectionMetrics`, `SectionInfoBanner`, `SectionFeatureList` |
+    | **Tylko w artykułach** | `TableBlock`, `CodeBlock`, `ColorPalette` |
+    | **Powtarzalność** | Strony usług używają ręcznych `<ul>` zamiast `SectionFeatureList` |
+  - **Wygenerowane pomysły**: IDEA-154 do IDEA-165 (12 nowych zadań)
+    - IDEA-154: SectionFeatureList na stronach usług
+    - IDEA-155: SectionMetrics na stronie O nas
+    - IDEA-156: SectionInfoBanner cross-sell na stronach usług
+    - IDEA-157: SectionProcess na stronie Kontakt
+    - IDEA-158: ColorPalette w artykułach o kolorach
+    - IDEA-159: TableBlock na stronach usług
+    - IDEA-160: SectionTabs na stronie O nas
+    - IDEA-161: Tooltip (data-tooltip) w artykułach
+    - IDEA-162: CodeBlock w artykułach technicznych
+    - IDEA-163: SectionBento na stronie głównej
+    - IDEA-164: SectionSteps expandable na stronach narzędzi
+    - IDEA-165: Unifikacja FAQ z FaqPanels
+  - **Wpływ**: UI/UX improvement, SEO enhancement, code consistency
+  - **Weryfikacja**: nie wymagana (AUDIT-only)
+
+- ✅ **[IDEA-163] SectionBento na stronie usługowej - sekcja "Poznaj pozostałe usługi"**
+
+  - **Pliki**:
+    - `components/ui/sections/SectionBento.tsx` (refaktor komponentu)
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` (implementacja)
+  - **Zmiany w komponencie SectionBento**:
+    - `backgroundImage` teraz wymagane (nie opcjonalne)
+    - Gradient overlay: `from-black/70 via-black/20 to-transparent` dla lepszej widoczności
+    - Biały półprzezroczysty kontener na tekst (`bg-white/95 backdrop-blur-sm`) dla czytelności
+    - Ikona w osobnym kontenerze (`bg-white/90`)
+  - **Zawartość sekcji** (4 elementy zgodnie z założeniem 1 large + 1 medium + 2 small):
+    | Element | Rozmiar | Obraz |
+    |---------|---------|-------|
+    | Sklepy internetowe | large | `/assets/projects/arteon-baners-msc.webp` |
+    | Pozycjonowanie stron | medium | `/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp` |
+    | Projekt logo | small | `/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp` |
+    | Szablony do social mediów | small | `/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp` |
+  - **Treści zgodne z CONTENT_INSTRUCTIONS** (bez żargonu):
+    - ❌ "Sprzedawaj online" → ✅ "Twój własny sklep z koszykiem, płatnościami i wysyłką"
+    - ❌ "Zwiększ widoczność" → ✅ "Pomagamy, żeby Twoja strona pojawiała się wyżej w wynikach Google"
+  - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
+
 ## 2026-01-20
 
 - ✅ **[COPY-006] Narzędzia: redakcja treści na stronie /licznik-slow-i-znakow i instrukcji**

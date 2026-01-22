@@ -82,7 +82,7 @@ export default function Page() {
         title="Stwórz profesjonalną stopkę mailową HTML"
         description="Zbuduj profesjonalny podpis e-mail w kilka minut. Wpisz dane, wybierz kolory i skopiuj gotowy kod HTML do Gmaila, Outlooka i innych klientów pocztowych"
         overlay="black"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
       />
 
       <Breadcrumbs
@@ -92,7 +92,11 @@ export default function Page() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
+
+        <EmailSignatureGenerator />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Dlaczego warto mieć profesjonalną stopkę mailową?">
           <p className="text-mid">
@@ -104,10 +108,6 @@ export default function Page() {
             firmy w korespondencji biznesowej.
           </p>
         </SectionInfo>
-
-        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
-
-        <EmailSignatureGenerator />
 
         <Gap size="sm" />
 

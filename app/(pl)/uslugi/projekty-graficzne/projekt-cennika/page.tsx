@@ -3,7 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
+import { RiPantoneLine, RiComputerLine, RiIdCardLine, RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -12,7 +13,6 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import { IoColorPalette } from 'react-icons/io5';
-import { RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -313,7 +313,47 @@ export default function OfferDesignPriceListPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiPantoneLine className="h-6 w-6" />,
+              title: 'Identyfikacja wizualna',
+              description: 'Spójna tożsamość marki od A do Z',
+              size: 'large',
+              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+            },
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiIdCardLine className="h-6 w-6" />,
+              title: 'Projekt wizytówki',
+              description: 'Elegancka wizytówka dla Twojej firmy',
+              size: 'small',
+              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
+            },
+            {
+              icon: <IoColorPalette className="h-6 w-6" />,
+              title: 'Projekt katalogu',
+              description: 'Rozbudowana prezentacja oferty',
+              size: 'small',
+              backgroundImage: '/assets/projects/gazetka-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-katalogu',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

@@ -15,6 +15,8 @@ import {
   RiFileTextLine,
   RiPencilLine,
   RiShoppingCartLine,
+  RiComputerLine,
+  RiPaletteLine,
 } from 'react-icons/ri';
 
 import BenefitBelt from '@/components/sections/BenefitBelt';
@@ -24,7 +26,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBanner from '@/components/sections/HeroBanner';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import Button from '@/components/ui/buttons/Button';
@@ -304,7 +306,47 @@ export default function OfferContentPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google i nie tylko',
+              size: 'large',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiArticleLine className="h-6 w-6" />,
+              title: 'Blogi internetowe',
+              description: 'Buduj autorytet i pozycję w Google',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/blogi-internetowe',
+            },
+            {
+              icon: <RiPaletteLine className="h-6 w-6" />,
+              title: 'Szablony social media',
+              description: 'Gotowe projekty do Twoich postów',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

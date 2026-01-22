@@ -15,13 +15,15 @@ import { RiDropLine, RiCursorLine, RiLayoutGridLine, RiPaletteLine, RiFileCopyLi
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 
 export const metadata: Metadata = {
-  title: 'Jak wygenerować schematy kolorów? | 9 typów palet z jednego koloru',
-  description: 'Wygeneruj 9 schematów kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Kopiuj kody HEX jednym kliknięciem. Darmowe narzędzie.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow/instrukcja') },
+  title: 'Jak wygenerować paletę kolorów? | Instrukcja generatora palet',
+  description:
+    'Instrukcja generatora palet kolorów. Poznaj 9 typów schematów: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Dowiedz się, kiedy używać której palety.',
+  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow/instrukcja') },
   openGraph: {
-    title: 'Jak wygenerować schematy kolorów? | 9 typów palet z jednego koloru',
-    description: 'Wygeneruj 9 schematów kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Kopiuj kody HEX jednym kliknięciem. Darmowe narzędzie.',
-    url: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow/instrukcja'),
+    title: 'Jak wygenerować paletę kolorów? | Instrukcja generatora palet',
+    description:
+      'Instrukcja generatora palet kolorów. Poznaj 9 typów schematów: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Dowiedz się, kiedy używać której palety.',
+    url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow/instrukcja'),
     type: 'website',
     images: [
       {
@@ -34,9 +36,10 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Jak wygenerować schematy kolorów z jednego koloru',
-  description: 'Instrukcja generowania 9 schematów kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Kopiowanie kolorów HEX jednym kliknięciem.',
-  url: toAbsoluteUrl('/narzedzia/generator-schematow-kolorow/instrukcja'),
+  name: 'Jak wygenerować paletę kolorów z jednego koloru bazowego',
+  description:
+    'Instrukcja generowania 9 palet kolorów z jednego koloru bazowego: monochromatyczny, komplementarny, triadyczny, pastelowy i inne. Kopiowanie kolorów HEX jednym kliknięciem.',
+  url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow/instrukcja'),
   inLanguage: 'pl-PL',
   step: [
     {
@@ -74,10 +77,6 @@ const faqItems = [
       'Generator przyjmuje kolory w formacie HEX - zarówno skróconym (#RGB), jak i pełnym (#RRGGBB). Możesz wpisać kolor ręcznie lub użyć próbnika kolorów. Wygenerowane palety pokazują zarówno kody HEX, jak i wartości HSL.',
   },
   {
-    question: 'Czy moje kolory są wysyłane na serwer?',
-    answer: 'Nie. Wszystkie obliczenia są wykonywane lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer - narzędzie działa całkowicie offline po załadowaniu strony.',
-  },
-  {
     question: 'Ile kolorów zawiera każda paleta?',
     answer:
       'Każda paleta zawiera od 4 do 6 kolorów, w zależności od typu. Palety monochromatyczne i tonalne mają więcej odcieni (różne poziomy jasności), podczas gdy palety komplementarne i triadyczne skupiają się na kontrastujących barwach.',
@@ -89,7 +88,8 @@ const faqItems = [
   },
   {
     question: 'Czy mogę używać wygenerowanych palet komercyjnie?',
-    answer: 'Tak. Wygenerowane palety kolorów możesz swobodnie używać w dowolnych projektach - komercyjnych i niekomercyjnych, bez żadnych ograniczeń.',
+    answer:
+      'Tak. Wygenerowane palety kolorów możesz swobodnie używać w dowolnych projektach - komercyjnych i niekomercyjnych, bez żadnych ograniczeń.',
   },
 ];
 
@@ -101,16 +101,16 @@ export default function Page() {
       </Script>
 
       <HeroBanner
-        title="Jak wygenerować schematy kolorów z jednego koloru bazowego"
-        description="Wygeneruj 9 schematów kolorów z jednego koloru bazowego. Instrukcja z opisem schematów: monochromatyczny, komplementarny, triadyczny, pastelowy, ciemny i minimalistyczny."
+        title="Jak wygenerować paletę kolorów z jednego koloru bazowego"
+        description="Instrukcja generatora palet kolorów. Poznaj 9 typów schematów i dowiedz się, kiedy używać której palety w swoich projektach."
         overlay="black"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
       />
 
       <Breadcrumbs
         second={{ href: '/narzedzia', label: 'Narzędzia' }}
-        third={{ href: '/narzedzia/generator-schematow-kolorow', label: 'Generator schematów kolorów' }}
-        fourth={{ href: '/narzedzia/generator-schematow-kolorow/instrukcja', label: 'Instrukcja' }}
+        third={{ href: '/narzedzia/generator-palet-kolorow', label: 'Generator palet kolorów' }}
+        fourth={{ href: '/narzedzia/generator-palet-kolorow/instrukcja', label: 'Instrukcja' }}
         includeJsonLd
       />
 
@@ -122,7 +122,7 @@ export default function Page() {
             Paleta kolorów to zestaw barw, które do siebie pasują i tworzą spójną całość. Dobrze dobrana paleta sprawia, że strona, grafika czy marka wygląda profesjonalnie i przyjemnie dla oka.
           </p>
           <p className="text-mid mt-3">
-            Generator tworzy palety automatycznie na podstawie jednego koloru bazowego - podajesz jeden kolor (np. kolor Twojego logo), a narzędzie generuje kilka różnych palet: monochromatyczną,
+            Generator tworzy palety automatycznie na podstawie jednego koloru bazowego - podajesz jeden kolor (np. kolor logo), a narzędzie generuje kilka różnych palet: monochromatyczną,
             analogiczną, komplementarną i inne, zgodnie z teorią koloru.
           </p>
         </SectionInfo>
@@ -133,7 +133,8 @@ export default function Page() {
           <p className="text-mid">Kolor bazowy to punkt wyjścia dla wszystkich generowanych palet. Możesz go wprowadzić na dwa sposoby:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-5">
             <li>
-              <strong>Próbnik kolorów (color picker)</strong> - kliknij kolorowy kwadrat po lewej stronie, aby otworzyć systemowy próbnik kolorów. To najszybszy sposób, jeśli szukasz koloru wizualnie.
+              <strong>Próbnik kolorów (color picker)</strong> - kliknij kolorowy kwadrat po lewej stronie, aby otworzyć systemowy próbnik kolorów. To najszybszy sposób, jeśli szukasz koloru
+              wizualnie.
             </li>
             <li>
               <strong>Pole tekstowe HEX</strong> - wpisz kod koloru w formacie HEX, np. <code className="rounded bg-black/5 px-1">#4F6BF5</code> lub skrócony{' '}
@@ -145,7 +146,7 @@ export default function Page() {
             wybierze losowy kolor, od którego możesz zacząć eksperymentować.
           </p>
           <div className="mt-4">
-            <Button link="/narzedzia/generator-schematow-kolorow" variant="accent">
+            <Button link="/narzedzia/generator-palet-kolorow" variant="accent">
               Przejdź do generatora
             </Button>
           </div>
@@ -207,7 +208,7 @@ export default function Page() {
               title: 'Paleta split-complementary',
               description: (
                 <p>
-                  Odmiana komplementarnej - zamiast jednego przeciwnego koloru, używa dwóch kolorów przesunietych o ±30° od dopełnienia.
+                  Odmiana komplementarnej - zamiast jednego przeciwnego koloru, używa dwóch kolorów przesuniętych o ±30° od dopełnienia.
                   <br />
                   <strong>Kiedy używać:</strong> Gdy potrzebujesz kontrastu, ale chcesz uniknąć napięcia wizualnego typowego dla palety komplementarnej.
                 </p>
@@ -357,16 +358,14 @@ export default function Page() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Wypróbuj narzędzie">
+        <SectionInfo
+          title="Wygeneruj paletę kolorów"
+          btnOne="Przejdź do generatora"
+          btnOneLink="/narzedzia/generator-palet-kolorow"
+          btnTwo="Zobacz inne narzędzia"
+          btnTwoLink="/narzedzia"
+        >
           <p className="text-mid">Teraz, gdy wiesz jak działają poszczególne palety, możesz stworzyć własny zestaw kolorów.</p>
-          <div className="mt-4 flex flex-wrap gap-3">
-            <Button link="/narzedzia/generator-schematow-kolorow" variant="accent">
-              Przejdź do generatora
-            </Button>
-            <Button link="/narzedzia" variant="normal">
-              Zobacz inne narzędzia
-            </Button>
-          </div>
         </SectionInfo>
 
         <Gap size="sm" />

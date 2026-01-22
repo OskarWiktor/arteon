@@ -345,7 +345,7 @@ export default function Page() {
               description: (
                 <p>
                   Konwersja obrazów o rozdzielczości powyżej 4000×4000 pikseli może być wolniejsza i obciążać przeglądarkę. Jeśli przetwarzasz wiele dużych plików, rozważ dzielenie ich na partie lub
-                  użycie <Link href="/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia">narzędzia do zmiany rozmiaru</Link> przed konwersją.
+                  użycie <Link href="/narzedzia/edytor-zdjec-online">narzędzia do zmiany rozmiaru</Link> przed konwersją.
                 </p>
               ),
             },

@@ -3,7 +3,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -391,7 +391,47 @@ export default function OfferOptimizationWordPressPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google i nie tylko',
+              size: 'large',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+            {
+              icon: <RiDeviceLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiShieldCheckLine className="h-6 w-6" />,
+              title: 'Audyt SEO',
+              description: 'Diagnoza stanu optymalizacji witryny',
+              size: 'small',
+              backgroundImage: '/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/marketing/audyt-seo',
+            },
+            {
+              icon: <RiToolsLine className="h-6 w-6" />,
+              title: 'Optymalizacja SEO',
+              description: 'Wdrożenia po audycie dla lepszych wyników',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/marketing/optymalizacja-seo',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

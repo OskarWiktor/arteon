@@ -20,18 +20,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Do `DONE_TASKS.md` dodaj wpis z zakresem audytu + ID nowych zadań.
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
-- ❌ **[CONTENT-005] Realizacje: naprawić placeholder dane w projektach Perly Mocy i Izoluk**
-
-  - Plik: `data/pl/projects.json`
-  - Zakres:
-    - Projekty 0 i 1 mają placeholder dane z Brewerynka (short, description, process_steps, contentBlocks, cta, faq, seo)
-    - Zastąpić placeholder dane prawdziwymi informacjami o tych realizacjach
-    - Użyć nowych typów bloków (steps, featureList, metrics) gdzie pasują
-  - Kryteria akceptacji:
-    - Wszystkie dane w projektach są zgodne z tytułem i klientem
-    - Realizacje renderują się bez błędów
-  - Weryfikacja: nie jest wymagana (COPY-only).
-
 - 🟡 **[AUDIT-003] Repo: audyt cleanup (puste pliki, martwe exporty, nieużywany kod/warianty)**
 
   - Cel: utrzymać repo „lean” i bez śmieci (bez zmian w UI/UX).
@@ -68,10 +56,16 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 
 - ✅ **[AUDIT-006] Repo: audyt rozwoju witryny (nowe strony/narzędzia/artykuły) + generowanie backlogu „Pomysły"**
 
-  - **Status:** Wykonano 2026-01-06
-  - **Zakres:** Przegląd 22 nowych komponentów UI + analiza modyfikacji istniejących
-  - **Rezultat:** Wygenerowano 30 pomysłów (IDEA-121 do IDEA-150) w sekcji "UI/UX - Wykorzystanie nowych komponentów"
-  - **Szczegóły:** Zobacz wpis w `DONE_TASKS.md` (2026-01-06)
+  - **Status:** Wykonano 2026-01-22 (aktualizacja)
+  - **Zakres poprzedni (2026-01-06):** Przegląd 22 nowych komponentów UI + analiza modyfikacji istniejących → IDEA-121 do IDEA-150
+  - **Zakres aktualizacji (2026-01-22):** Głęboka analiza nieużywanych/niedostatecznie używanych komponentów + identyfikacja powtarzalnych wzorców
+  - **Rezultat aktualizacji:** Wygenerowano 12 nowych pomysłów (IDEA-154 do IDEA-165) w sekcji "UI/UX - Rozszerzenie wykorzystania komponentów"
+  - **Kluczowe ustalenia:**
+    - **Kompletnie nieużywane:** `SectionTabs`, `SectionBento` (poza definicją)
+    - **Używane tylko w realizacjach:** `SectionProcess`, `SectionMetrics`, `SectionInfoBanner`, `SectionFeatureList`
+    - **Używane tylko w artykułach:** `TableBlock`, `CodeBlock`, `ColorPalette`
+    - **Powtarzalność:** Strony usług mają ręcznie pisane listy cech zamiast `SectionFeatureList`
+  - **Szczegóły:** Zobacz wpis w `DONE_TASKS.md` (2026-01-22)
 
 - ❌ **[AUDIT-009] Blog: audyt rozbudowy istniejących artykułów pod SEO (nowe sekcje, linkowanie wewnętrzne, rozwinięcia tematów)**
 
@@ -399,24 +393,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Excerpt ma zachęcać do kliknięcia, być spójny z tonem marki i kontekstem artykułu.
   - Kryteria akceptacji:
     - Wytyczna dodana do INSTRUCTIONS.md.
-  - Weryfikacja: nie jest wymagana (COPY-only).
-
-- ❌ **[CONTENT-003] Blog: audyt artykułów pod kątem balansu DIY vs kierowanie do oferty**
-
-  - Pliki: `data/pl/blog.json`, wszystkie artykuły
-  - Zakres:
-    - Sprawdzić każdy artykuł pod kątem:
-      1. **Niejasne instrukcje techniczne** - fragmenty typu "Skonfiguruj serwer" bez wyjaśnienia dla osób nietechnicznych
-      2. **Brak opcji pomocy** - instrukcje techniczne bez informacji "możemy pomóc / skontaktuj się z nami"
-      3. **Zakładanie jednego scenariusza** - brak rozważenia różnych przyczyn problemu
-      4. **Zbyt szczegółowe DIY** - instrukcje, które mogłyby zastępować usługę
-    - Dla każdego artykułu z problemami: zidentyfikować konkretne fragmenty do poprawy
-  - Przykłady problemów (z artykułu o 404):
-    - "Skonfiguruj serwer lub CMS, żeby zwracał kod 404 zamiast 200" - niejasne, brak opcji pomocy
-    - "W większości systemów można to ustawić w konfiguracji lub przez wtyczkę" - zbyt ogólne
-  - Kryteria akceptacji:
-    - Lista artykułów z problemami + konkretne fragmenty do poprawy
-    - Każdy problem ma zaproponowaną poprawkę zgodną z wytycznymi z INSTRUCTIONS.md (sekcja "Balans DIY vs kierowanie do oferty")
   - Weryfikacja: nie jest wymagana (COPY-only).
 
 ---
@@ -1593,6 +1569,161 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Wpływ SEO: Średni - nowe frazy, dedykowany intent
   - Weryfikacja: `npm run lint && npm run build`
 
+### UI/UX - Rozszerzenie wykorzystania komponentów (AUDIT-006, 2026-01-22)
+
+- ❌ **[IDEA-154] SectionFeatureList na stronach usług zamiast ręcznych list**
+
+  - Cel: Zastąpienie ręcznie pisanych list `<ul>` w sekcjach SectionInfo componentem SectionFeatureList dla spójnego UX.
+  - Uzasadnienie: Lepszy wygląd, spójność z realizacjami, mniejsza duplikacja kodu.
+  - Pliki do edycji:
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` (linia ~121-126: lista "co robi dobra strona")
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` (analogiczne listy korzyści)
+    - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx`
+  - Kryteria akceptacji:
+    - Min. 3 strony usług używają SectionFeatureList zamiast `<ul className="list-disc">`
+    - Zielone checkmarki w kółkach (jak w realizacjach)
+    - Brak regresji w layoucie mobile/desktop
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-155] SectionMetrics na stronie O nas - statystyki firmy**
+
+  - Cel: Dodanie sekcji z metrykami Arteon na stronie `/o-nas` (liczba zrealizowanych projektów, lat doświadczenia, zadowolonych klientów).
+  - Uzasadnienie: Trust signals, social proof, różnorodność wizualna strony O nas.
+  - Pliki:
+    - `app/(pl)/o-nas/page.tsx` (dodać po sekcji "Kim jesteśmy")
+    - `components/ui/sections/SectionMetrics.tsx` (istniejący)
+  - Kryteria akceptacji:
+    - 4 metryki: np. "50+ projektów", "5+ lat", "100% zadowolonych klientów", "10+ narzędzi online"
+    - Dane zgodne z rzeczywistością (zasada z memory)
+    - Progress bars z kolorami accent
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-156] SectionInfoBanner na stronach usług - cross-sell powiązanych usług**
+
+  - Cel: Dodanie SectionInfoBanner na dole stron usług promującego powiązane usługi (np. na /strony-internetowe banner o SEO).
+  - Uzasadnienie: Cross-selling, zwiększenie page views, internal linking.
+  - Pliki:
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` (banner: "Chcesz być widoczny w Google? Sprawdź pozycjonowanie")
+    - `app/(pl)/uslugi/sklepy-internetowe/page.tsx` (banner: "Potrzebujesz treści produktowych?")
+    - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx` (banner: "Nie masz jeszcze strony?")
+  - Kryteria akceptacji:
+    - Banner z ikoną, tekstem i CTA
+    - Ciemne tło (slate-800), biały tekst
+    - Responsywny layout
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-157] SectionProcess na stronie Kontakt - wizualizacja procesu współpracy**
+
+  - Cel: Zastąpienie obecnego SectionSteps na `/kontakt` componentem SectionProcess dla bardziej kompaktowej wizualizacji.
+  - Uzasadnienie: Mniejszy footprint wizualny, strzałki między krokami, nowoczesny wygląd.
+  - Pliki:
+    - `app/(pl)/kontakt/page.tsx` (zamiana SectionSteps na SectionProcess)
+  - Kryteria akceptacji:
+    - 4 kroki procesu kontaktu (jak obecnie)
+    - Strzałki między krokami na desktop
+    - Stack na mobile
+    - Ikony z react-icons/ri
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-158] ColorPalette w artykułach o kolorach i brandingu**
+
+  - Cel: Dodanie bloków ColorPalette do artykułów o tematyce kolorystycznej dla lepszej ilustracji konceptów.
+  - Uzasadnienie: Wizualna reprezentacja treści, SEO (rich content), engagement.
+  - Pliki:
+    - `data/pl/blog.json` - artykuły do wzbogacenia:
+      - `jak-dobrac-kolory-do-strony-internetowej` - palety przykładowe
+      - `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow` - palety emocji
+      - `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie` - palety kontrastowe
+  - Kryteria akceptacji:
+    - Min. 2 bloki colorPalette per artykuł
+    - Palety sensownie powiązane z treścią
+    - Labels opisujące zastosowanie
+  - Weryfikacja: nie jest wymagana (COPY-only)
+
+- ❌ **[IDEA-159] TableBlock na stronach usług - porównanie planów/funkcji**
+
+  - Cel: Użycie TableBlock na stronach usług do prezentacji porównań (np. różnice między typami stron).
+  - Uzasadnienie: Łatwiejsze porównanie ofert, SEO (table snippets), spójność z artykułami.
+  - Pliki:
+    - `app/(pl)/uslugi/strony-internetowe/page.tsx` - tabela: "Wizytówka vs Firmowa vs Premium"
+    - `app/(pl)/uslugi/marketing/page.tsx` - tabela: "Audyt vs Optymalizacja vs Pozycjonowanie"
+  - Kryteria akceptacji:
+    - Tabele z caption i note
+    - Responsywne (scroll na mobile)
+    - Striping dla czytelności
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-160] SectionTabs na stronie O nas - "Co nas wyróżnia" jako zakładki**
+
+  - Cel: Przekształcenie sekcji "Co nas wyróżnia?" na `/o-nas` z SectionSteps na SectionTabs dla interaktywności.
+  - Uzasadnienie: Mniejszy footprint, użytkownik wybiera interesujące go punkty, nowoczesny UX.
+  - Pliki:
+    - `app/(pl)/o-nas/page.tsx` (zamiana SectionSteps na SectionTabs)
+  - Kryteria akceptacji:
+    - 4 zakładki (obecne 4 punkty)
+    - Ikony z react-icons/ri
+    - Content w zakładkach (obecne opisy)
+    - Keyboard navigation
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-161] Tooltip w artykułach - rozbudowa data-tooltip dla trudnych terminów**
+
+  - Cel: Systematyczne dodanie data-tooltip do wszystkich trudnych terminów w artykułach (SEO, WCAG, CTA, UX, CMS itp.).
+  - Uzasadnienie: Edukacja czytelnika, dłuższy czas na stronie, zgodność z CONTENT_INSTRUCTIONS.md.
+  - Pliki:
+    - `data/pl/blog.json` - wszystkie artykuły
+    - `components/ui/AbbrTouchHandler.tsx` (obsługuje data-tooltip)
+  - Kryteria akceptacji:
+    - Min. 5 terminów z tooltip per artykuł (gdzie sensowne)
+    - Wyjaśnienia 1-2 zdania
+    - Spójne formatowanie: `<span data-tooltip="wyjaśnienie">termin</span>`
+  - Weryfikacja: nie jest wymagana (COPY-only)
+
+- ❌ **[IDEA-162] CodeBlock w artykułach technicznych - przykłady kodu**
+
+  - Cel: Dodanie bloków kodu do artykułów technicznych (robots.txt, meta tagi, strukturalne dane).
+  - Uzasadnienie: Praktyczna wartość dla czytelnika, SEO (rich content), różnorodność wizualna.
+  - Pliki:
+    - `data/pl/blog.json` - artykuły do wzbogacenia:
+      - `meta-title-i-description-jak-je-napisac` - przykład HTML meta tagów
+      - `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje` - przykład przekierowania HTTP→HTTPS
+      - `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic` - przykład robots.txt
+  - Kryteria akceptacji:
+    - Min. 1 blok kodu per artykuł techniczny
+    - Filename i caption gdzie sensowne
+    - Line numbers dla dłuższych bloków
+  - Weryfikacja: nie jest wymagana (COPY-only)
+
+- ❌ **[IDEA-164] SectionSteps expandable na stronach narzędzi - rozwijane szczegóły**
+
+  - Cel: Dodanie expandableContent do kroków instrukcji narzędzi dla dodatkowych wskazówek.
+  - Uzasadnienie: Nie przytłaczać użytkownika, ale dać opcję pogłębienia wiedzy.
+  - Pliki:
+    - Strony instrukcji narzędzi:
+      - `app/(pl)/narzedzia/(tools)/generator-palet-kolorow/page.tsx`
+      - `app/(pl)/narzedzia/(tools)/tester-kontrastu-kolorow-wcag/page.tsx`
+      - `app/(pl)/narzedzia/(tools)/(desktop-only)/jpg-png-na-webp-bez-limitu/page.tsx`
+  - Kryteria akceptacji:
+    - 2-3 bullet points w expandableContent per krok
+    - Smooth accordion animation
+    - Arrow icon rotation
+  - Weryfikacja: `npm run lint && npm run build`
+
+- ❌ **[IDEA-165] Unifikacja sekcji FAQ - FaqPanels z openByDefault na wszystkich stronach**
+
+  - Cel: Upewnienie się, że wszystkie sekcje FAQ używają FaqPanels z openByDefault={1} i pageUrl dla schema.
+  - Uzasadnienie: Spójność UX, SEO (FAQPage schema), a11y.
+  - Pliki do audytu:
+    - Wszystkie strony usług `/uslugi/**`
+    - Wszystkie strony narzędzi `/narzedzia/**`
+    - `/o-nas/faq`
+  - Kryteria akceptacji:
+    - Wszystkie FAQ używają FaqPanels (nie ręczne <details>)
+    - openByDefault={1} wszędzie
+    - pageUrl przekazywane dla schema
+    - Min. 4 pytania per strona
+  - Weryfikacja: `npm run lint && npm run build`
+
 ---
 
 # Zadania redakcyjne artykułów (CONTENT-EDIT)
@@ -1628,97 +1759,3 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
 6. **Excerpt** - 220-230 znaków
 7. **FAQ** - czy pytania są zgodne z intencją
 8. **CTA** - czy przyciski są opisowe
-
-## Lista zadań
-
-Plik: `data/pl/blog.json` | Weryfikacja: nie wymagana (COPY-only)
-
-| #   | ID              | Slug                                                                                | Kategoria      | Ahrefs |
-| --- | --------------- | ----------------------------------------------------------------------------------- | -------------- | ------ |
-| 1   | CONTENT-EDIT-01 | `czym-jest-strona-bledu-404-i-dlaczego-warto-ja-zaprojektowac`                      | Strony         |        |
-| 2   | CONTENT-EDIT-02 | `czym-jest-kanibalizacja-slow-kluczowych-i-jak-jej-unikac`                          | SEO            |        |
-| 3   | CONTENT-EDIT-03 | `regulamin-sklepu-internetowego-co-musi-zawierac`                                   | Sklepy         | ✓      |
-| 4   | CONTENT-EDIT-04 | `co-to-jest-newsletter-i-czy-warto-go-prowadzic`                                    | Marketing      |        |
-| 5   | CONTENT-EDIT-05 | `szybkosc-ladowania-strony-a-pozycja-w-google`                                      | SEO            |        |
-| 6   | CONTENT-EDIT-06 | `breadcrumbs-sciezka-nawigacji-na-stronie`                                          | UX             |        |
-| 7   | CONTENT-EDIT-07 | `dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc`                          | UX             |        |
-| 8   | CONTENT-EDIT-08 | `dlaczego-regularne-aktualizacje-wordpressa-sa-kluczowe-dla-bezpieczenstwa`         | Bezpieczenstwo |        |
-| 9   | CONTENT-EDIT-09 | `darmowa-dostawa-vs-nizsza-cena`                                                    | Sklepy         |        |
-| 10  | CONTENT-EDIT-10 | `czcionki-szeryfowe-vs-bezszeryfowe`                                                | Grafika        | ✓      |
-| 11  | CONTENT-EDIT-11 | `czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`          | Psychologia    |        |
-| 12  | CONTENT-EDIT-12 | `efekt-zakotwiczenia-jak-pierwsza-cena-wplywa-na-postrzeganie-wartosci`             | Psychologia    | ✓      |
-| 13  | CONTENT-EDIT-13 | `social-proof-spoleczny-dowod-slusznosci`                                           | Psychologia    | ✓      |
-| 14  | CONTENT-EDIT-14 | `mapa-strony-dla-uzytkownikow-dlaczego-warto-ja-miec`                               | UX             |        |
-| 15  | CONTENT-EDIT-15 | `czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony`                        | SEO            |        |
-| 16  | CONTENT-EDIT-16 | `kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie`                                 | Dostępność     |        |
-| 17  | CONTENT-EDIT-17 | `czym-jest-content-marketing`                                                       | Marketing      | ✓      |
-| 18  | CONTENT-EDIT-18 | `e-mail-marketing-dla-malych-firm`                                                  | Marketing      |        |
-| 19  | CONTENT-EDIT-19 | `co-sprawdzic-przed-uruchomieniem-strony`                                           | Strony         |        |
-| 20  | CONTENT-EDIT-20 | `jak-przygotowac-grafike-do-postow-w-mediach-spolecznosciowych`                     | Grafika        |        |
-| 21  | CONTENT-EDIT-21 | `jak-wybrac-domene-i-hosting-dla-strony-firmowej`                                   | Strony         |        |
-| 22  | CONTENT-EDIT-22 | `jak-mierzyc-skutecznosc-strony-internetowej`                                       | SEO            |        |
-| 23  | CONTENT-EDIT-23 | `jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma`                             | SEO            | ✓      |
-| 24  | CONTENT-EDIT-24 | `czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`                            | UX             | ✓      |
-| 25  | CONTENT-EDIT-25 | `czym-jest-certyfikat-ssl-i-dlaczego-kazda-strona-go-potrzebuje`                    | Bezpieczeństwo | ✓      |
-| 26  | CONTENT-EDIT-26 | `meta-title-i-description-jak-je-napisac`                                           | SEO            | ✓      |
-| 27  | CONTENT-EDIT-27 | `materialy-drukowane-dla-firmy-ktore-zamowic`                                       | Druk           |        |
-| 28  | CONTENT-EDIT-28 | `kody-qr-w-materialach-reklamowych`                                                 | Grafika        |        |
-| 29  | CONTENT-EDIT-29 | `jak-dobrac-kolory-do-strony-internetowej`                                          | Grafika        |        |
-| 30  | CONTENT-EDIT-30 | `jak-przygotowac-sklep-internetowy-do-pozycjonowania`                               | SEO            |        |
-| 31  | CONTENT-EDIT-31 | `jak-przygotowac-profesjonalna-stopke-mailowa`                                      | Branding       | ✓      |
-| 32  | CONTENT-EDIT-32 | `favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie`       | Zdjęcia        | ✓      |
-| 33  | CONTENT-EDIT-33 | `faq-na-stronie-jak-pisac-pytania-ktore-wspieraja-pozycje-strony`                   | SEO            |        |
-| 34  | CONTENT-EDIT-34 | `jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow`                               | Grafika        |        |
-| 35  | CONTENT-EDIT-35 | `ile-czasu-trwa-pozycjonowanie-strony`                                              | SEO            |        |
-| 36  | CONTENT-EDIT-36 | `czy-lokalne-firmy-potrzebuja-bloga-na-stronie-internetowej-aby-rosnac-w-google`    | SEO            |        |
-| 37  | CONTENT-EDIT-37 | `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp` | Zdjęcia        | ✓      |
-| 38  | CONTENT-EDIT-38 | `jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`      | SEO            |        |
-| 39  | CONTENT-EDIT-39 | `jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow`                             | Grafika        |        |
-| 40  | CONTENT-EDIT-40 | `dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`          | SEO            |        |
-
-## Tytuły artykułów (pełne)
-
-1. Czym jest strona błędu 404 i dlaczego warto ją zaprojektować?
-2. Czym jest kanibalizacja słów kluczowych i jak jej unikać?
-3. Co to jest regulamin sklepu internetowego i co musi zawierać?
-4. Co to jest newsletter i czy warto go prowadzić?
-5. Dlaczego szybkość ładowania strony wpływa na pozycję w Google?
-6. Czym jest ścieżka nawigacji na stronie i dlaczego warto ją mieć?
-7. Dlaczego pusta przestrzeń na stronie zwiększa czytelność?
-8. Dlaczego regularne aktualizacje WordPressa są kluczowe dla bezpieczeństwa?
-9. Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu?
-10. Czcionki szeryfowe i bezszeryfowe: czym się różnią i kiedy używać których?
-11. Czym jest paradoks wyboru i dlaczego mniej opcji może zwiększyć sprzedaż?
-12. Efekt zakotwiczenia: jak pierwsza cena wpływa na postrzeganie wartości?
-13. Czym jest social proof i dlaczego opinie innych wpływają na nasze decyzje?
-14. Mapa strony dla użytkowników: dlaczego warto ją mieć i jak powinna wyglądać?
-15. Czym jest linkowanie wewnętrzne i jak wpływa na SEO strony?
-16. Kontrast kolorów na stronie: dlaczego ma znaczenie i jak go sprawdzić?
-17. Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?
-18. E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?
-19. Co sprawdzić przed uruchomieniem nowej strony internetowej?
-20. Jak przygotować grafikę do postów w mediach społecznościowych?
-21. Jak wybrać domenę i hosting dla strony firmowej?
-22. Jak mierzyć skuteczność strony internetowej? Podstawy analityki
-23. Jak założyć i zoptymalizować profil Google Moja Firma?
-24. Czym jest responsywność strony i dlaczego ma znaczenie?
-25. Czym jest certyfikat SSL i dlaczego każda strona go potrzebuje?
-26. Meta title i description: jak je napisać, żeby strona wyświetlała się lepiej w Google?
-27. Materiały drukowane dla firmy: które zamówić na start?
-28. Kody QR w materiałach reklamowych: gdzie je stosować i na co uważać?
-29. Jak dobrać kolory do strony internetowej lub sklepu?
-30. Jak przygotować sklep internetowy do pozycjonowania?
-31. Jak przygotować profesjonalną stopkę mailową?
-32. Favicon: co to za ikona, jak ją stworzyć i przygotować, aby działała poprawnie?
-33. FAQ na stronie: jak pisać pytania, które wspierają pozycję strony?
-34. Jak kolorystyka wpływa na decyzje zakupowe klientów?
-35. Ile czasu trwa pozycjonowanie strony firmowej i kiedy widać efekty?
-36. Czy lokalne firmy potrzebują bloga na stronie internetowej, aby rosnąć w Google?
-37. Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP
-38. Jak pisać treści na stronie internetowej, aby być wyżej w wyszukiwarce Google?
-39. Jak identyfikacja wizualna firmy zwiększa zaufanie wśród klientów?
-40. Dlaczego strona internetowa nie wyświetla się w Google i jak to naprawić?
-
----
-
-**Status:** Do wklejenia do `TASKS.md` po zatwierdzeniu przez użytkownika.

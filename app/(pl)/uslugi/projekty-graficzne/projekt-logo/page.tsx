@@ -3,8 +3,10 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import {
+  RiComputerLine,
+  RiShoppingCartLine,
   RiPencilRuler2Line,
   RiBrushLine,
   RiBarChart2Fill,
@@ -366,7 +368,47 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiPantoneLine className="h-6 w-6" />,
+              title: 'Identyfikacja wizualna',
+              description: 'Spójna tożsamość marki od A do Z',
+              size: 'large',
+              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+            },
+            {
+              icon: <RiIdCardLine className="h-6 w-6" />,
+              title: 'Projekt wizytówki',
+              description: 'Elegancka wizytówka dla Twojej firmy',
+              size: 'medium',
+              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
+            },
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka w sieci',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiShoppingCartLine className="h-6 w-6" />,
+              title: 'Sklepy internetowe',
+              description: 'Sprzedawaj produkty online',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/sklepy-internetowe',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

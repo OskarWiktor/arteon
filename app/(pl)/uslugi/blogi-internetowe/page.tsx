@@ -6,8 +6,11 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import {
+  RiComputerLine,
+  RiPaletteLine,
+  RiPencilLine,
   RiArticleLine,
   RiSearchLine,
   RiShieldCheckLine,
@@ -334,7 +337,47 @@ export default function OfferBlogPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'large',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiBarChart2Line className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google i nie tylko',
+              size: 'medium',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+            {
+              icon: <RiPencilLine className="h-6 w-6" />,
+              title: 'Tworzenie treści',
+              description: 'Teksty, które przyciągają klientów',
+              size: 'small',
+              backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/tworzenie-tresci',
+            },
+            {
+              icon: <RiPaletteLine className="h-6 w-6" />,
+              title: 'Projekt logo',
+              description: 'Zbuduj rozpoznawalny znak firmowy',
+              size: 'small',
+              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-logo',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

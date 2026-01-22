@@ -3,8 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import SectionBento from '@/components/ui/sections/SectionBento';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiIdCardLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -332,7 +332,47 @@ export default function OfferDesignLetterheadPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiPantoneLine className="h-6 w-6" />,
+              title: 'Identyfikacja wizualna',
+              description: 'Spójna tożsamość marki od A do Z',
+              size: 'large',
+              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+            },
+            {
+              icon: <RiIdCardLine className="h-6 w-6" />,
+              title: 'Projekt wizytówki',
+              description: 'Elegancka wizytówka dla Twojej firmy',
+              size: 'medium',
+              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
+            },
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka w sieci',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiBookOpenLine className="h-6 w-6" />,
+              title: 'Projekt teczki ofertowej',
+              description: 'Elegancka oprawa dla dokumentów',
+              size: 'small',
+              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

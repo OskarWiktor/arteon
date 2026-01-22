@@ -54,7 +54,7 @@ function HomePageSchemas() {
       bestRating: '5',
       worstRating: '1',
     },
-    review: testimonials.slice(0, 5).map((t) => ({
+    review: testimonials.map((t) => ({
       '@type': 'Review',
       author: {
         '@type': 'Person',

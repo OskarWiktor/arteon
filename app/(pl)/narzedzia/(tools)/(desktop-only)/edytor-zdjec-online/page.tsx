@@ -125,7 +125,7 @@ export default function ImageEditorPage() {
         title="Darmowy edytor zdjęć online"
         description="Zmień rozmiar, wykadruj i konwertuj zdjęcia do Instagram, Facebook i LinkedIn. Gotowe presety, okrągłe avatary, eksport do JPG, PNG i WebP. Przetwarzanie lokalne w przeglądarce."
         overlay="black"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp"
       />
 
       <Breadcrumbs
@@ -135,7 +135,11 @@ export default function ImageEditorPage() {
       />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
+
+        <ImageResizeTool />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Zmień rozmiar zdjęcia online - kadrowanie, konwersja i kompresja w jednym narzędziu">
           <p className="text-mid">
@@ -146,10 +150,6 @@ export default function ImageEditorPage() {
             Oprócz zmiany rozmiaru narzędzie oferuje konwersję formatów (JPG, PNG, WebP), tworzenie okrągłych avatarów i kontrolę jakości kompresji.
           </p>
         </SectionInfo>
-
-        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
-
-        <ImageResizeTool />
 
         <Gap size="sm" />
 

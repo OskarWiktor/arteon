@@ -3,8 +3,8 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiCheckLine } from 'react-icons/ri';
+import SectionBento from '@/components/ui/sections/SectionBento';
+import { RiComputerLine, RiShoppingCartLine, RiPencilLine, RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiCheckLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -383,7 +383,47 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Stałe działania SEO po audycie',
+              size: 'large',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiShoppingCartLine className="h-6 w-6" />,
+              title: 'Sklepy internetowe',
+              description: 'Sprzedawaj produkty online',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/sklepy-internetowe',
+            },
+            {
+              icon: <RiPencilLine className="h-6 w-6" />,
+              title: 'Tworzenie treści',
+              description: 'Teksty, które przyciągają klientów',
+              size: 'small',
+              backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/tworzenie-tresci',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

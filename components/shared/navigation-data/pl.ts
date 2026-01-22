@@ -287,9 +287,9 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
     items: [
       {
         key: 'contrastChecker',
-        href: '/narzedzia/tester-kontrastu-kolorow-wcag',
-        title: 'Tester kontrastu WCAG',
-        description: 'Sprawdź, czy kolory na Twojej stronie spełniają wymagania WCAG 2.1 dla poziomu AA i AAA.',
+        href: '/narzedzia/sprawdz-czytelnosc-kolorow',
+        title: 'Sprawdź czytelność kolorów',
+        description: 'Sprawdź czy kolory tekstu i tła są czytelne. Narzędzie oblicza kontrast według WCAG i pomoże dobrać odpowiedni kolor.',
         image: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
         icon: RiContrast2Line,
       },
@@ -303,9 +303,9 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
       },
       {
         key: 'colorPalette',
-        href: '/narzedzia/generator-schematow-kolorow',
-        title: 'Generator schematów kolorów',
-        description: 'Wybierz jeden kolor i wygeneruj 9 schematów kolorów: monochromatyczny, komplementarny, triadyczny i inne.',
+        href: '/narzedzia/generator-palet-kolorow',
+        title: 'Generator palet kolorów',
+        description: 'Wybierz jeden kolor i wygeneruj 9 palet kolorów: monochromatyczną, komplementarną, triadyczną i inne.',
         image: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
         icon: RiPaletteLine,
       },
@@ -317,9 +317,9 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
     items: [
       {
         key: 'qrCode',
-        href: '/narzedzia/generator-kodu-qr',
-        title: 'Generator kodu QR',
-        description: 'Stwórz kod QR do strony, wizytówki lub ulotki. Wybierz typ danych, kolor i rozmiar, pobierz PNG lub SVG.',
+        href: '/narzedzia/darmowy-generator-kodow-qr',
+        title: 'Darmowy generator kodów QR',
+        description: 'Stwórz kod QR do strony, wizytówki vCard, menu lub ulotki. Eksport PNG i SVG, bez logowania, bez limitu.',
         image: '/assets/tools/narzedzia-generator-kodu-qr.webp',
         icon: RiQrCodeLine,
       },

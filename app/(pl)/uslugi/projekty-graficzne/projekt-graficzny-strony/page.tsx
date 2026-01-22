@@ -3,8 +3,8 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
-import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import SectionBento from '@/components/ui/sections/SectionBento';
+import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiShoppingCartLine } from 'react-icons/ri';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -339,7 +339,47 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Wdrożenie projektu w działającą stronę',
+              size: 'large',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiShoppingCartLine className="h-6 w-6" />,
+              title: 'Sklepy internetowe',
+              description: 'Sprzedawaj produkty we własnym sklepie online',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/sklepy-internetowe',
+            },
+            {
+              icon: <RiPantoneLine className="h-6 w-6" />,
+              title: 'Identyfikacja wizualna',
+              description: 'Spójna tożsamość marki od A do Z',
+              size: 'small',
+              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+            },
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google',
+              size: 'small',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

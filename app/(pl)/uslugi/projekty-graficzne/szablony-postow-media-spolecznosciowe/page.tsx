@@ -3,7 +3,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -24,12 +24,12 @@ export const metadata = {
   title: 'Szablony postów do mediów społecznościowych | Arteon',
   description: 'Projektujemy spójne szablony postów do mediów społecznościowych. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
+    canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
   },
   openGraph: {
     title: 'Szablony postów do mediów społecznościowych | Arteon',
     description: 'Projektujemy spójne szablony postów do mediów społecznościowych. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
-    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media',
+    url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
     type: 'website',
     images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp' }],
   },
@@ -40,7 +40,7 @@ const BASE = 'https://www.arteonagency.pl';
 function ServiceSchema() {
   const json = buildServiceSchema({
     baseUrl: BASE,
-    path: '/uslugi/projekty-graficzne/szablony-postow-social-media',
+    path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
     serviceName: 'Szablony postów do mediów społecznościowych',
     description: 'Szablony postów do mediów społecznościowych: spójne z marką, łatwe do edycji. Gotowe zestawy + instrukcja użycia.',
     availableLanguages: ['pl'],
@@ -85,7 +85,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         second={{ href: '/uslugi', label: 'Usługi' }}
         third={{ href: `/uslugi/projekty-graficzne`, label: 'Projekty graficzne' }}
         fourth={{
-          href: `/uslugi/projekty-graficzne/szablony-postow-social-media`,
+          href: `/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe`,
           label: 'Szablony postów do mediów społecznościowych',
         }}
         includeJsonLd
@@ -259,7 +259,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-social-media"
+          pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe"
           title="Najczęstsze pytania o szablony postów"
           items={[
             {
@@ -321,7 +321,47 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiPencilRuler2Line className="h-6 w-6" />,
+              title: 'Identyfikacja wizualna',
+              description: 'Spójna tożsamość marki od A do Z',
+              size: 'large',
+              backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+            },
+            {
+              icon: <RiLayoutLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiLightbulbFlashLine className="h-6 w-6" />,
+              title: 'Projekt logo',
+              description: 'Zbuduj rozpoznawalny znak firmowy',
+              size: 'small',
+              backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-logo',
+            },
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google i nie tylko',
+              size: 'small',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

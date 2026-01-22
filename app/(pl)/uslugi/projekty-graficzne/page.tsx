@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -16,6 +16,9 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import {
+  RiComputerLine,
+  RiShoppingCartLine,
+  RiFileTextLine as RiContentLine,
   RiPencilRuler2Line,
   RiBrushLine,
   RiBarChart2Fill,
@@ -549,7 +552,47 @@ export default function OfferDesignPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiComputerLine className="h-6 w-6" />,
+              title: 'Strony internetowe',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              size: 'large',
+              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/strony-internetowe',
+            },
+            {
+              icon: <RiShoppingCartLine className="h-6 w-6" />,
+              title: 'Sklepy internetowe',
+              description: 'Sprzedawaj produkty we własnym sklepie online',
+              size: 'medium',
+              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/sklepy-internetowe',
+            },
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google i nie tylko',
+              size: 'small',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+            {
+              icon: <RiContentLine className="h-6 w-6" />,
+              title: 'Tworzenie treści',
+              description: 'Teksty, które przyciągają klientów',
+              size: 'small',
+              backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/tworzenie-tresci',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>

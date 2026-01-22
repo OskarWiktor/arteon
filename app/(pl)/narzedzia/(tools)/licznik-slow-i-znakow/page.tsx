@@ -115,13 +115,17 @@ export default function Page() {
         title="Licznik słów i znaków z oceną długości"
         description="Wklej tekst, wybierz typ strony, a narzędzie pokaże liczbę słów, znaków, akapitów i oceni, czy długość jest odpowiednia dla danego rodzaju treści"
         overlay="black"
-        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        backgroundImage="/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
       />
 
       <Breadcrumbs second={{ href: '/narzedzia', label: 'Narzędzia' }} third={{ href: '/narzedzia/licznik-slow-i-znakow', label: 'Licznik słów i znaków' }} includeJsonLd />
 
       <Wrapper>
-        <Gap size="xs" />
+        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
+
+        <WordCountTool />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Darmowy licznik słów online - policz i oceń długość tekstu">
           <p className="text-mid">
@@ -133,10 +137,6 @@ export default function Page() {
             każdego z tych typów oparte na analizach treści, które dobrze się pozycjonują.
           </p>
         </SectionInfo>
-
-        <AdSense adClient="ca-pub-7845947936813012" adSlot="7551147298" adFormat="fixed" width={728} height={90} className="my-3" />
-
-        <WordCountTool />
 
         <Gap size="sm" />
 
@@ -329,7 +329,7 @@ export default function Page() {
         <SectionInfo title="Dlaczego wybrać nasz licznik słów online?">
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Darmowy i bez limitu</strong> - korzystasz bez opłat, bez reklam zasłaniających ekran i bez ograniczeń liczby analiz.
+              <strong>Darmowy i bez limitu</strong> - korzystasz bez opłat i bez ograniczeń liczby analiz.
             </li>
             <li>
               <strong>Po polsku</strong> - cały interfejs w języku polskim. Nie musisz tłumaczyć opcji z angielskiego.

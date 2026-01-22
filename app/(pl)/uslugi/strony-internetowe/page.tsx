@@ -12,6 +12,8 @@ import {
   RiMessage2Line,
   RiMoneyDollarCircleLine,
   RiBrushLine,
+  RiShoppingCartLine,
+  RiPaletteLine,
 } from 'react-icons/ri';
 import WorkSteps from '@/components/sections/steps/WorkSteps';
 import HeroBanner from '@/components/sections/HeroBanner';
@@ -21,7 +23,7 @@ import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
-import ServicesSteps from '@/components/sections/steps/ServicesSteps';
+import SectionBento from '@/components/ui/sections/SectionBento';
 import ContactForm from '@/components/sections/ContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -354,7 +356,47 @@ export default function OfferWebPage() {
 
         <Gap variant="line" />
 
-        <ServicesSteps />
+        <SectionBento
+          title="Poznaj pozostałe usługi Arteon"
+          items={[
+            {
+              icon: <RiShoppingCartLine className="h-6 w-6" />,
+              title: 'Sklepy internetowe',
+              description: 'Sprzedawaj produkty we własnym sklepie online',
+              size: 'large',
+              backgroundImage: '/assets/projects/arteon-baners-msc.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/sklepy-internetowe',
+            },
+            {
+              icon: <RiBarChart2Fill className="h-6 w-6" />,
+              title: 'Pozycjonowanie stron',
+              description: 'Zwiększ widoczność w Google i nie tylko',
+              size: 'medium',
+              backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
+              btnLabel: 'Zobacz ofertę',
+              btnLink: '/uslugi/marketing/pozycjonowanie-stron',
+            },
+            {
+              icon: <RiPaletteLine className="h-6 w-6" />,
+              title: 'Projekt logo',
+              description: 'Zbuduj rozpoznawalny znak firmowy',
+              size: 'small',
+              backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/projekt-logo',
+            },
+            {
+              icon: <RiBrushLine className="h-6 w-6" />,
+              title: 'Szablony social media',
+              description: 'Gotowe projekty do Twoich postów',
+              size: 'small',
+              backgroundImage: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
+              btnLabel: 'Sprawdź',
+              btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
+            },
+          ]}
+        />
 
         <Gap size="sm" />
       </Wrapper>
