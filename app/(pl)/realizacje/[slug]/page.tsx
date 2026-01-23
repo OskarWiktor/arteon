@@ -67,7 +67,15 @@ function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;
   const description = project.seo?.description || '';
-  const image = toAbsoluteUrl(project.image || '');
+  const imageUrl = project.image ? toAbsoluteUrl(project.image) : undefined;
+  const imageObject = imageUrl
+    ? {
+        '@type': 'ImageObject' as const,
+        url: imageUrl,
+        width: 1200,
+        height: 630,
+      }
+    : undefined;
 
   return {
     '@context': 'https://schema.org',
@@ -75,12 +83,13 @@ function jsonLd(project: Project) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     headline,
     description,
-    image: [image],
+    image: imageObject ? [imageObject] : undefined,
+    thumbnailUrl: imageUrl,
     author: [{ '@type': 'Organization', name: 'Arteon' }],
     publisher: {
       '@type': 'Organization',
       name: 'Arteon',
-      logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/icon-512x512.png') },
+      logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/icon-512x512.png'), width: 512, height: 512 },
     },
     about: project.category,
   } as const;

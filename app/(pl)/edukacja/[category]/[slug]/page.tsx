@@ -47,7 +47,15 @@ function jsonLd(article: Article) {
   const url = articleUrl(canonicalCat, article.slug);
   const headline = article.seo?.title || article.title;
   const description = article.seo?.description || article.excerpt || '';
-  const image = article.cover ? toAbsoluteUrl(article.cover) : undefined;
+  const imageUrl = article.cover ? toAbsoluteUrl(article.cover) : undefined;
+  const imageObject = imageUrl
+    ? {
+        '@type': 'ImageObject' as const,
+        url: imageUrl,
+        width: 1200,
+        height: 630,
+      }
+    : undefined;
 
   return {
     '@context': 'https://schema.org',
@@ -55,12 +63,13 @@ function jsonLd(article: Article) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     headline,
     description,
-    image: image ? [image] : undefined,
+    image: imageObject ? [imageObject] : undefined,
+    thumbnailUrl: imageUrl,
     author: [{ '@type': 'Organization', name: article.author?.name || 'Arteon' }],
     publisher: {
       '@type': 'Organization',
       name: 'Arteon',
-      logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/icon-512x512.png') },
+      logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/icon-512x512.png'), width: 512, height: 512 },
     },
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,

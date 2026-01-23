@@ -17,10 +17,9 @@ export const metadata: Metadata = {
     description: 'Poradniki i artykuły eksperckie o stronach, sklepach, SEO, marketingu czy projektach graficznych. Odwiedź nas i sprawdź nasze poradniki.',
     url: `${siteUrl}/edukacja`,
     type: 'website',
-    // TODO: Add unique OpenGraph image for education/blog page: /assets/og/edukacja.webp (1200x630px)
     images: [
       {
-        url: `${siteUrl}/assets/ogien.webp`,
+        url: `${siteUrl}/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp`,
       },
     ],
   },

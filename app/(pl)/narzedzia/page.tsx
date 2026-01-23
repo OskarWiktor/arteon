@@ -24,7 +24,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: toAbsoluteUrl('/assets/tools/narzedzia-jpg-png-na-webp-bez-limitu.webp'),
+        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
       },
     ],
   },

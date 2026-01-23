@@ -3,6 +3,7 @@ import ButtonGroup from '../ui/buttons/ButtonGroup';
 import Eyebrow from '../ui/typography/Eyebrow';
 import type { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
+import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 const ui = {
   pl: {
@@ -78,8 +79,11 @@ export default function HeroBanner({
     { text: buttonTopFour, link: buttonTopFourLink },
   ].filter(({ text }) => Boolean(text));
 
+  const absoluteImageUrl = backgroundImage ? toAbsoluteUrl(backgroundImage) : undefined;
+
   return (
     <div className={baseBg}>
+      {absoluteImageUrl && <link itemProp="image" href={absoluteImageUrl} />}
       <section
         id="hero"
         aria-labelledby="hero-title"
