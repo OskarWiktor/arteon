@@ -77,7 +77,7 @@ const faqItems = [
   {
     question: 'Czy długość tekstu wpływa na pozycję w Google?',
     answer:
-      'Długość tekstu sama w sobie nie jest czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Artykuł z 800 słowami, który wyczerpująco odpowiada na pytanie, może pozycjonować się lepiej niż artykuł z 3000 słów, który nie trafia w sedno. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.',
+      'Długość tekstu sama w sobie nie jest czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Krótszy tekst, który wyczerpująco odpowiada na pytanie, może osiągać dobre pozycje - kluczowa jest wartość dla czytelnika. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.',
     answerSchemaText: 'Długość tekstu nie jest bezpośrednim czynnikiem rankingowym. Google ocenia wartość treści dla użytkownika.',
   },
   {

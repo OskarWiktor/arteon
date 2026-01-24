@@ -5,6 +5,18 @@ import type { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
 import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 
+function getFallbackAltFromImagePath(imagePath: string): string | undefined {
+  const filename = imagePath.split('/').pop();
+  if (!filename) return undefined;
+
+  const withoutQuery = filename.split('?')[0];
+  const withoutExt = withoutQuery.replace(/\.[a-z0-9]+$/i, '');
+  const decoded = decodeURIComponent(withoutExt);
+  const cleaned = decoded.replace(/[-_]+/g, ' ').trim();
+
+  return cleaned || undefined;
+}
+
 const ui = {
   pl: {
     quickLinks: 'Szybkie linki',
@@ -28,6 +40,8 @@ interface HeroBannerProps {
   buttonSecond?: string;
   buttonSecondLink?: string;
   backgroundImage?: string;
+  backgroundImageAlt?: string;
+  emitImageMicrodata?: boolean;
   variant?: 'left' | 'center' | 'right';
   overlay?: 'none' | 'black' | 'white';
   contentMaxWidthClass?: string;
@@ -50,6 +64,8 @@ export default function HeroBanner({
   buttonSecond,
   buttonSecondLink,
   backgroundImage,
+  backgroundImageAlt,
+  emitImageMicrodata = false,
   variant = 'left',
   overlay = 'none',
 }: HeroBannerProps) {
@@ -80,10 +96,16 @@ export default function HeroBanner({
   ].filter(({ text }) => Boolean(text));
 
   const absoluteImageUrl = backgroundImage ? toAbsoluteUrl(backgroundImage) : undefined;
+  const computedBackgroundAlt =
+    backgroundImageAlt ||
+    (typeof title === 'string' ? title : undefined) ||
+    (backgroundImage ? getFallbackAltFromImagePath(backgroundImage) : undefined);
 
   return (
     <div className={baseBg}>
-      {absoluteImageUrl && <link itemProp="image" href={absoluteImageUrl} />}
+      {absoluteImageUrl && computedBackgroundAlt && (
+        <img className="sr-only" src={absoluteImageUrl} alt={computedBackgroundAlt} itemProp={emitImageMicrodata ? 'image' : undefined} />
+      )}
       <section
         id="hero"
         aria-labelledby="hero-title"

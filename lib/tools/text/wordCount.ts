@@ -28,7 +28,7 @@ export const PAGE_TYPES: PageTypeConfig[] = [
     label: 'Strona główna',
     minWords: 400,
     maxWords: 1000,
-    description: 'Mniej tekstu z jasnym przekazem działa lepiej niż dużo tekstu bez wyraźnej struktury.',
+    description: 'Strona główna to miejsce, które kieruje dalej do podstron. Jasny przekaz i czytelna struktura ułatwiają nawigację.',
   },
   {
     key: 'landing',
@@ -42,14 +42,14 @@ export const PAGE_TYPES: PageTypeConfig[] = [
     label: 'Artykuł blogowy',
     minWords: 1200,
     maxWords: 3000,
-    description: 'Krótszy tekst, który wyczerpuje temat, jest lepszy niż dłuższy z wodą. Długość zależy od złożoności tematu.',
+    description: 'Długość zależy od złożoności tematu. Tekst powinien odpowiadać na pytania czytelnika w sposób wyczerpujący i konkretny.',
   },
   {
     key: 'guide',
     label: 'Poradnik / przewodnik',
     minWords: 2500,
     maxWords: 6000,
-    description: 'Kompleksowe opracowanie tematu. Długość zależy od zakresu, nie od ambicji.',
+    description: 'Szczegółowe opracowanie tematu z wieloma aspektami. Długość zależy od zakresu zagadnienia.',
   },
 ];
 
@@ -140,14 +140,14 @@ export function evaluateLength(words: number, pageType: PageTypeConfig): LengthE
     return {
       status: 'ideal',
       percentage: Math.max(percentage, 1),
-      message: `Długość w zalecanym zakresie. Pamiętaj: liczy się wartość dla czytelnika, nie sama liczba słów.`,
+      message: `Długość w zalecanym zakresie. Wartość dla czytelnika jest kluczowa, a zakresy służą jako punkt odniesienia.`,
     };
   }
 
   return {
     status: 'ideal',
     percentage,
-    message: `Dobra długość dla ${pageType.label.toLowerCase()}. Upewnij się, że każdy akapit wnosi konkretną wartość.`,
+    message: `Dobra długość dla ${pageType.label.toLowerCase()}. Każdy akapit powinien wnosić konkretną wartość dla czytelnika.`,
   };
 }
 

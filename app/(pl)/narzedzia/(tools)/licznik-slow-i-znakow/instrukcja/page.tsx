@@ -70,7 +70,7 @@ const faqItems = [
   {
     question: 'Czy długość tekstu wpływa na pozycję w Google?',
     answer:
-      'Długość tekstu sama w sobie nie jest czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Artykuł z 800 słowami, który wyczerpująco odpowiada na pytanie, może pozycjonować się lepiej niż artykuł z 3000 słów, który nie trafia w sedno. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.',
+      'Długość tekstu sama w sobie nie jest czynnikiem rankingowym. Google ocenia, czy treść odpowiada na pytanie użytkownika i czy jest dla niego wartościowa. Krótszy tekst, który wyczerpująco odpowiada na pytanie, może osiągać dobre pozycje - kluczowa jest wartość dla czytelnika. Zakresy w narzędziu opierają się na analizach treści, które dobrze się pozycjonują.',
     answerSchemaText: 'Długość tekstu nie jest bezpośrednim czynnikiem rankingowym. Google ocenia wartość treści dla użytkownika.',
   },
   {
@@ -170,7 +170,7 @@ export default function Page() {
 
           <h3 className="h4 mt-6 mb-2">Poradnik / przewodnik (2500–6000 słów)</h3>
           <p className="text-mid">
-            Wąski temat (np. "Jak skonfigurować X") wymaga 2500-3500 słów - kroki, przykłady, typowe problemy. Szeroki temat z wieloma krokami i wariantami (np. "Kompletny przewodnik po X") wymaga
+            Wąski temat (np. "Jak skonfigurować X") wymaga 2500-3500 słów - kroki, przykłady, typowe problemy. Szeroki temat z wieloma krokami i wariantami wymaga
             4000-6000 słów, bo każdy aspekt wymaga osobnego omówienia.
           </p>
         </SectionInfo>
