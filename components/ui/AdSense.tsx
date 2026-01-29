@@ -52,7 +52,7 @@ export default function AdSense({ adClient, adSlot, adFormat = 'auto', width, he
   };
 
   return (
-    <div className={className}>
+    <div className={`flex justify-center ${className}`}>
       <ins ref={adRef} className="adsbygoogle" style={insStyle} data-ad-client={adClient} data-ad-slot={adSlot} {...getAdAttributes()} />
     </div>
   );

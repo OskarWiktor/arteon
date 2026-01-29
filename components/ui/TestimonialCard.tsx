@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import type { Testimonial } from '@/types/testimonial';
 import { StarRating } from './StarRating';
@@ -13,7 +12,7 @@ const ui = {
 
 type Props = { item: Testimonial };
 
-const MAX_WORDS = 30;
+const MAX_WORDS = 32;
 
 function getDisplayedQuote(quote: string, maxWords: number) {
   if (!quote) return '';
@@ -30,35 +29,26 @@ export default function TestimonialCard({ item }: Props) {
   const displayedQuote = getDisplayedQuote(item.quote, MAX_WORDS);
 
   return (
-    <figure className="surface-card-lift flex h-full w-full flex-col justify-between border-gray-300 p-5 md:px-6 md:py-8">
-      <blockquote>
-        <StarRating value={item.rating} />
-        <p className="text-dark mt-2 text-base">"{displayedQuote}"</p>
-      </blockquote>
-
-      <figcaption className="mt-5 flex items-center gap-4">
-        {item.avatarUrl ? (
-          <Image src={item.avatarUrl} alt="" width={48} height={48} className="h-12 w-12 rounded-full object-cover" />
-        ) : (
-          <div aria-hidden className="h-12 w-12 rounded-full bg-gray-200" />
-        )}
-        <div className="min-w-0">
-          <span className="text-dark truncate text-base font-semibold">{item.author}</span>
-          {item.role && (
-            <>
-              <br />
-              <span className="text-light truncate text-sm">{item.role}</span>
-            </>
-          )}
-          {item.link && (
-            <p>
-              <Link href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm underline underline-offset-4 transition hover:opacity-80">
-                {ui.pl.viewSource}
-              </Link>
-            </p>
-          )}
+    <figure className="surface-card-lift flex h-full w-full flex-col justify-between border-gray-300 p-5 text-center md:px-6 md:py-8">
+      <figcaption>
+        <span className="text-dark text-xl font-semibold">{item.author}</span>
+        {item.role && <p className="text-light text-sm">{item.role}</p>}
+        <div className="flex justify-center">
+          <StarRating value={item.rating} />
         </div>
       </figcaption>
+
+      <blockquote className="mt-4">
+        <p className="text-dark text-base">"{displayedQuote}"</p>
+      </blockquote>
+
+      {item.link && (
+        <p className="mt-5">
+          <Link href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm underline underline-offset-4 transition hover:opacity-80">
+            {ui.pl.viewSource}
+          </Link>
+        </p>
+      )}
     </figure>
   );
 }

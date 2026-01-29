@@ -96,16 +96,11 @@ export default function HeroBanner({
   ].filter(({ text }) => Boolean(text));
 
   const absoluteImageUrl = backgroundImage ? toAbsoluteUrl(backgroundImage) : undefined;
-  const computedBackgroundAlt =
-    backgroundImageAlt ||
-    (typeof title === 'string' ? title : undefined) ||
-    (backgroundImage ? getFallbackAltFromImagePath(backgroundImage) : undefined);
+  const computedBackgroundAlt = backgroundImageAlt || (typeof title === 'string' ? title : undefined) || (backgroundImage ? getFallbackAltFromImagePath(backgroundImage) : undefined);
 
   return (
     <div className={baseBg}>
-      {absoluteImageUrl && computedBackgroundAlt && (
-        <img className="sr-only" src={absoluteImageUrl} alt={computedBackgroundAlt} itemProp={emitImageMicrodata ? 'image' : undefined} />
-      )}
+      {absoluteImageUrl && computedBackgroundAlt && <img className="sr-only" src={absoluteImageUrl} alt={computedBackgroundAlt} itemProp={emitImageMicrodata ? 'image' : undefined} />}
       <section
         id="hero"
         aria-labelledby="hero-title"

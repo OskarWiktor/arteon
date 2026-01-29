@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import Wrapper from '../Wrapper';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';
 
@@ -32,7 +31,6 @@ export default function SectionTimeline({ title, subtitle, description, items, b
 
   return (
     <section data-section="timeline" aria-labelledby={title ? 'timeline-title' : undefined}>
-      <Wrapper>
         <SectionHeader
           subtitle={subtitle}
           title={title}
@@ -43,11 +41,11 @@ export default function SectionTimeline({ title, subtitle, description, items, b
           descriptionClassName="reveal-animation mt-3"
         />
 
-        <div className="relative mt-8 md:mt-12">
+        <div className="relative mt-6 md:mt-8">
           <div className="absolute top-0 left-6 hidden h-full w-0.5 bg-slate-200 md:left-1/2 md:block md:-translate-x-1/2" aria-hidden="true" />
           <div className="absolute top-0 left-6 block h-full w-0.5 bg-slate-200 md:hidden" aria-hidden="true" />
 
-          <ol className="space-y-8 md:space-y-12">
+          <ol className="space-y-4">
             {items.map((step, index) => (
               <li key={index} className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 <div className="hidden md:absolute md:left-1/2 md:flex md:h-12 md:w-12 md:-translate-x-1/2 md:items-center md:justify-center md:rounded-full md:bg-slate-800 md:text-white md:shadow-lg">
@@ -69,7 +67,6 @@ export default function SectionTimeline({ title, subtitle, description, items, b
         </div>
 
         <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" ariaLabel={t.sectionActions} role="group" />
-      </Wrapper>
     </section>
   );
 }

@@ -1,14 +1,5 @@
 [
   {
-    "id": "vml-2025",
-    "author": "Paulina Nowakowska",
-    "role": "Head of PMO & Digital Content VML",
-    "rating": 5,
-    "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
-    "source": "linkedin",
-    "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
-  },  
-  {
     "id": "fixly-lukasz-2026",
     "author": "Łukasz",
     "role": "Projektowanie stron internetowych",
@@ -70,5 +61,14 @@
     "quote": "polecam! Super kontakt i sprawna realizacja projektu.",
     "source": "fixly",
     "link": "https://fixly.pl/profil/d963Jrae"
+  },
+  {
+    "id": "vml-2025",
+    "author": "Paulina Nowakowska",
+    "role": "Head of PMO & Digital Content VML",
+    "rating": 5,
+    "quote": "Miałam przyjemność współpracować z Oskarem i z pełnym przekonaniem mogę powiedzieć: to specjalista, na którym można polegać. Od samego początku wyróżniał się silną motywacją do rozwoju i konsekwencją w działaniu. Startując na stanowisku Webmastera/Content Editora, bardzo szybko zaczął rozwijać się w kierunku front-end developmentu - i robił to z imponującym tempem i determinacją. Oskar nie tylko chłonie wiedzę, ale też potrafi ją skutecznie przekładać na realne efekty. Poza umiejętnościami technicznymi Oskar wnosi do zespołu zaangażowanie i gotowość do współpracy - a to równie cenne, jak znajomość frameworków.",
+    "source": "linkedin",
+    "link": "https://www.linkedin.com/in/oskar-wiktor-9b637427a/"
   }
 ]

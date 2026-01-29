@@ -11,7 +11,7 @@ const ui = {
     emailLabel: 'Email',
     emailPlaceholder: 'jan.kowalski@gmail.com',
     subjectLabel: 'Temat',
-    subjectPlaceholder: 'np. Strona | Sklep | Social Media | Logo',
+    subjectPlaceholder: 'np. Strona | Sklep | media społecznościowe | Logo',
     messageLabel: 'Wiadomość',
     messagePlaceholder: 'Prowadzę firmę zajmującą się... chciałbym stworzyć...',
     submit: 'Wyślij',
