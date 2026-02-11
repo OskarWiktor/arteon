@@ -73,7 +73,8 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3">
-                    Tworzymy nowoczesne strony internetowe w oparciu o sprawdzone technologie. Każdy projekt obejmuje dedykowany wygląd oraz treści dopasowane do Twoich potrzeb i oczekiwań Twoich klientów.
+                    Tworzymy nowoczesne strony internetowe w oparciu o sprawdzone technologie. Każdy projekt obejmuje dedykowany wygląd oraz treści dopasowane do Twoich potrzeb i oczekiwań Twoich
+                    klientów.
                   </p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/tworzenie-stron-wordpress">

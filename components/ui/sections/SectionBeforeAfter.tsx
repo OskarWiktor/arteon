@@ -38,7 +38,7 @@ export default function SectionBeforeAfter({ title, beforeImage, afterImage, bef
             <div className="absolute inset-y-0" style={{ left: `${position}%` }}>
               <div className="absolute top-1/2 left-1/2 h-full w-1 -translate-x-1/2 bg-white shadow-lg" />
               <button type="button" className="absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg">
-                <RiExpandLeftRightLine className="h-5 w-5 text-primary" />
+                <RiExpandLeftRightLine className="text-primary h-5 w-5" />
               </button>
             </div>
 

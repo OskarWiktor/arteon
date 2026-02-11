@@ -36,9 +36,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10" aria-hidden="true" />
 
               <div className="relative z-10 p-4">
-                {item.icon && (
-                  <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white">{item.icon}</div>
-                )}
+                {item.icon && <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white">{item.icon}</div>}
                 <h3 className={item.size === 'large' ? 'h5 mb-1 text-white' : 'h6 mb-1 text-white'}>{item.title}</h3>
                 <p className="text-sm text-white/80">{item.description}</p>
                 {item.btnLabel && item.btnLink && (

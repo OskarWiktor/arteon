@@ -5,6 +5,7 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import { analyzeMetaDescription, analyzeMetaTitle, truncateForPreview, type FieldMetrics, type LengthStatus } from '@/lib/tools/seo/metaLength';
+import { useLocale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -38,15 +39,47 @@ const ui = {
     exampleTitle: 'Przykładowy tytuł strony - oferta / usługa',
     exampleDescription: 'Tu pojawi się podgląd opisu Twojej strony. Napisz krótko o tym, co oferujesz, jak pomagasz klientowi oraz dlaczego warto odwiedzić właśnie tę podstronę.',
   },
+  en: {
+    noData: 'No data',
+    enterTitle: 'Enter a meta title to see the length analysis.',
+    tooShort: 'Too short',
+    titleTooShort: 'The title is very short. Add more words to better describe the page and make use of the available space in search results.',
+    tooLong: 'Too long',
+    titleTooLong: 'The title exceeds the range Google typically shows in full (about 580-600 pixels wide, usually up to 50-60 characters). It may be truncated.',
+    goodLength: 'Good length',
+    titleGoodLength: 'The title fits within the range that most often displays in full in Google results (roughly 450-580 pixels and about 45-60 characters).',
+    enterDescription: 'Enter a meta description to see the length analysis.',
+    descriptionTooShort: 'The description is very short. Add more text that better explains what the user will find on the page and why it is worth clicking.',
+    descriptionTooLong:
+      'The description exceeds the range Google most often shows in full (about 150-160 characters or ~920 pixels). It may be truncated or replaced with another snippet from the page.',
+    descriptionGoodLength: 'The description fits within the typical range for search results (about 120-160 characters and up to ~920 pixels), which usually fits 2-3 short sentences.',
+    addUrl: 'Add URL (optional)',
+    urlPlaceholder: 'www.yourdomain.com/page',
+    urlHelper: 'The URL is only used in the preview — it does not affect the meta title and description length calculations.',
+    enterTitleLabel: 'Enter meta title',
+    titlePlaceholder: 'E.g. Website SEO Services - Arteon',
+    chars: 'Characters',
+    words: 'Words',
+    width: 'Width',
+    noTitle: 'No title',
+    enterDescriptionLabel: 'Enter meta description',
+    descriptionPlaceholder: 'Describe in 2-3 sentences what the user will find on the page and what benefit they will get. Naturally include your main keywords.',
+    noDescription: 'No description',
+    previewTitle: 'Google search result preview',
+    previewHelper: 'The preview is approximate — Google may trim or change the title and description depending on screen width and the text itself',
+    exampleTitle: 'Example page title - offer / service',
+    exampleDescription: 'A preview of your page description will appear here. Write briefly about what you offer, how you help the client, and why this page is worth visiting.',
+  },
 } as const;
+
+type UiTexts = { [K in keyof (typeof ui)['pl']]: string };
 
 interface FieldAnalysis extends FieldMetrics {
   statusLabel: string;
   helperText: string;
 }
 
-function analyzeTitle(text: string): FieldAnalysis {
-  const t = ui.pl;
+function analyzeTitle(text: string, t: UiTexts): FieldAnalysis {
   const metrics = analyzeMetaTitle(text);
 
   if (metrics.status === 'empty') {
@@ -64,8 +97,7 @@ function analyzeTitle(text: string): FieldAnalysis {
   return { ...metrics, statusLabel: t.goodLength, helperText: t.titleGoodLength };
 }
 
-function analyzeDescription(text: string): FieldAnalysis {
-  const t = ui.pl;
+function analyzeDescription(text: string, t: UiTexts): FieldAnalysis {
   const metrics = analyzeMetaDescription(text);
 
   if (metrics.status === 'empty') {
@@ -98,13 +130,14 @@ function getStatusClasses(status: LengthStatus): string {
 }
 
 export default function MetaTitleDescriptionTool() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [url, setUrl] = useState('www.twojadomena.pl/podstrona');
+  const [url, setUrl] = useState(locale === 'en' ? 'www.yourdomain.com/page' : 'www.twojadomena.pl/podstrona');
 
-  const titleAnalysis = useMemo(() => analyzeTitle(title), [title]);
-  const descriptionAnalysis = useMemo(() => analyzeDescription(description), [description]);
+  const titleAnalysis = useMemo(() => analyzeTitle(title, t), [title, t]);
+  const descriptionAnalysis = useMemo(() => analyzeDescription(description, t), [description, t]);
 
   const previewTitle = useMemo(() => truncateForPreview(title || t.exampleTitle, 65), [title, t.exampleTitle]);
   const previewDescription = useMemo(() => truncateForPreview(description || t.exampleDescription, 165), [description, t.exampleDescription]);
@@ -161,7 +194,7 @@ export default function MetaTitleDescriptionTool() {
           </div>
 
           <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm shadow-inner">
-            <p className="text-mid truncate text-[13px]!">{url || 'www.twojadomena.pl/podstrona'}</p>
+            <p className="text-mid truncate text-[13px]!">{url || t.urlPlaceholder}</p>
             <p className="text-mid mt-1 line-clamp-2 text-[18px]! font-normal">{previewTitle}</p>
             <p className="text-light mt-1 line-clamp-3 text-[13px]! leading-snug">{previewDescription}</p>
           </div>

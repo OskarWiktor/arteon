@@ -4,16 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiPencilRuler2Line,
-  RiBrushLine,
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiBookletLine,
-  RiFileTextLine,
-  RiImageLine,
-  RiMoneyDollarCircleLine,
-} from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -146,27 +137,27 @@ export default function OfferDesignCatalogPage() {
             {
               title: 'Klarowna prezentacja oferty',
               description: <>Układ, który ułatwia odbiorcy zrozumienie produktów, usług i różnic między pakietami - bez zgadywania i szukania drobnego druku.</>,
-              icon: <RiBookletLine className="h-6 w-6 text-primary" />,
+              icon: <RiBookletLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Dopracowane zdjęcia i typografia',
               description: <>Dbamy o spójność zdjęć, czytelne podpisy i hierarchię nagłówków, aby katalog był lekki w odbiorze, nawet przy dużej liczbie stron.</>,
-              icon: <RiImageLine className="h-6 w-6 text-primary" />,
+              icon: <RiImageLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wersja drukowana i cyfrowa',
               description: <>Dostarczamy katalog gotowy do druku oraz wygodną wersję do udostępniania online - idealną do mailingu i oferty PDF.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: <>W cenie przewidujemy poprawki. Razem ustalamy układ, kolejność sekcji, wyróżniki ofertowe i sposób prezentacji cen.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
+              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

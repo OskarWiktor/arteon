@@ -2,10 +2,13 @@ const ui = {
   pl: {
     skipToContent: 'Przejdź do treści',
   },
+  en: {
+    skipToContent: 'Skip to content',
+  },
 } as const;
 
-export default function SkipToContent() {
-  const t = ui.pl;
+export default function SkipToContent({ locale = 'pl' }: { locale?: 'pl' | 'en' }) {
+  const t = ui[locale];
 
   return (
     <div id="skip-link">

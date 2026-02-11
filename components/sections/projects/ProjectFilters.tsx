@@ -35,7 +35,7 @@ export default function Filters({ projects, selected, onToggle, onClear }: Props
 
   return (
     <section className="w-full">
-      <h2 className=" mb-4">{t.heading}</h2>
+      <h2 className="mb-4">{t.heading}</h2>
 
       <div role="toolbar" aria-label={t.filtersAriaLabel} className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-2xl pb-6 md:pb-8 lg:pb-10">
         <Button variant={hasSelection ? 'normal' : 'accent'} size="small" onClick={onClear} aria-pressed={!hasSelection}>

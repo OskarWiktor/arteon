@@ -60,7 +60,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
           </span>
         )}
         {title && (
-          <h3 className=" text-dark text-2xl font-semibold tracking-tight" id={headingId}>
+          <h3 className="text-dark text-2xl font-semibold tracking-tight" id={headingId}>
             {title}
           </h3>
         )}
@@ -91,7 +91,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
               )}
 
               <div>
-                <h4 id={itemHeadingId} className=" h5 text-dark text-xl font-semibold">
+                <h4 id={itemHeadingId} className="h5 text-dark text-xl font-semibold">
                   {plan.name}
                 </h4>
 
@@ -114,7 +114,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
                     <li key={`${itemId}-f-${i}`}>
                       <IconText
                         icon={
-                          <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300 group-hover:ring-primary8" title={t.includedInPlan}>
+                          <span className="group-hover:ring-primary8 mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300" title={t.includedInPlan}>
                             <RiCheckFill className="h-3.5 w-3.5" />
                           </span>
                         }

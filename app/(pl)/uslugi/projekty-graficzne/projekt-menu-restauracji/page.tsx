@@ -97,8 +97,8 @@ export default function OfferDesignMenuPage() {
 
         <SectionInfo title="Dlaczego warto zainwestować w profesjonalne menu?">
           <p>
-            <strong>Menu to najważniejszy materiał sprzedażowy w gastronomii.</strong> Dobrze zaprojektowana karta dań prowadzi gościa od pierwszego spojrzenia po finalne zamówienie.
-            Estetyczna, czytelna forma ułatwia wybór i ogranicza „paraliż decyzyjny”.
+            <strong>Menu to najważniejszy materiał sprzedażowy w gastronomii.</strong> Dobrze zaprojektowana karta dań prowadzi gościa od pierwszego spojrzenia po finalne zamówienie. Estetyczna,
+            czytelna forma ułatwia wybór i ogranicza „paraliż decyzyjny”.
           </p>
 
           <br />
@@ -129,22 +129,22 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Układ dopasowany do oferty',
               description: <>Projektujemy logiczne sekcje - przystawki, dania główne, napoje, desery - z czytelną hierarchią, która ułatwia podjęcie decyzji i kieruje wzrok na kluczowe pozycje.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
+              icon: <RiLayoutLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Spójność z klimatem lokalu',
               description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji - nowoczesnego, klasycznego, rustykalnego czy street foodowego.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Gotowe pliki do druku i online',
               description: <>Dostarczamy pliki przygotowane do druku oraz wersje online, które bez problemu dodasz na stronę, do mediów społecznościowych lub do kodu QR.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Możliwość samodzielnej aktualizacji',
               description: <>Na życzenie przygotowujemy łatwe w edycji pliki źródłowe, dzięki czemu samodzielnie zaktualizujesz sezonowe dania, ceny czy nowe pozycje.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
+              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

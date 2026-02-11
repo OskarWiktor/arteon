@@ -4,15 +4,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiShieldCheckLine,
-  RiLineChartLine,
-  RiSearchLine,
-  RiFileList2Line,
-  RiLinksFill,
-} from 'react-icons/ri';
+import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiLineChartLine, RiSearchLine, RiFileList2Line, RiLinksFill } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -96,8 +88,8 @@ export default function OfferSeoSubscription() {
         <SectionInfo title="Na czym polega pozycjonowanie stron i dlaczego działa?">
           <p>
             <strong>Pozycjonowanie SEO stron to praca polegająca na rozwijaniu Twojego serwisu w celu uzyskania jak najwyższej pozycji w wyszukiwarce Google.</strong> Nasza oferta pozycjonowania to
-            spójny system: rozwijamy treści, poprawiamy kluczowe podstrony, pozyskujemy linki, które wzmacniają wiarygodność domeny oraz stale dodajemy nowe strony abyś miał coraz więcej
-            klientów. Dzięki temu Twoja witryna częściej pojawia się tam, gdzie szukają Cię klienci.
+            spójny system: rozwijamy treści, poprawiamy kluczowe podstrony, pozyskujemy linki, które wzmacniają wiarygodność domeny oraz stale dodajemy nowe strony abyś miał coraz więcej klientów.
+            Dzięki temu Twoja witryna częściej pojawia się tam, gdzie szukają Cię klienci.
           </p>
           <br />
           <p>
@@ -134,7 +126,7 @@ export default function OfferSeoSubscription() {
             {
               title: 'Strategia treści',
               description: <>Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie treści, budując Twoją widoczność tam, gdzie szukają Cię klienci.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />,
+              icon: <RiLightbulbFlashLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Poprawa kluczowych podstron (on-page)',
@@ -144,17 +136,17 @@ export default function OfferSeoSubscription() {
                   użytkowników.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-primary" />,
+              icon: <RiFileList2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
               description: <>Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły branżowe, katalogi) - to wzmacnia autorytet Twojej witryny</>,
-              icon: <RiLinksFill className="h-6 w-6 text-primary" />,
+              icon: <RiLinksFill className="text-primary h-6 w-6" />,
             },
             {
               title: 'Monitoring i raport co miesiąc',
               description: <>Sprawdzamy widoczność, wejścia z Google i zapytania z WWW. Dostajesz prosty raport i rekomendacje na kolejny miesiąc.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-primary" />,
+              icon: <RiBarChart2Fill className="text-primary h-6 w-6" />,
             },
           ]}
         />
@@ -415,7 +407,7 @@ export default function OfferSeoSubscription() {
         <Gap variant="line" />
 
         <ArticlesCarousel title="Przydatne artykuły dotyczące SEO" categorySlug="seo" articles={getAllArticlePreviews()} />
-        
+
         <Gap size="sm" />
       </Wrapper>
 

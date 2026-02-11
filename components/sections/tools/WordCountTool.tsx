@@ -6,8 +6,9 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import Button from '@/components/ui/buttons/Button';
-import { analyzeText, evaluateLength, formatReadingTime, formatReportText, PAGE_TYPES, type PageType, type LengthStatus } from '@/lib/tools/text/wordCount';
+import { analyzeText, evaluateLength, formatReadingTime, formatReportText, getPageTypes, type PageType, type LengthStatus } from '@/lib/tools/text/wordCount';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { useLocale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -30,6 +31,31 @@ const ui = {
     tooShort: 'Za krótki',
     tooLong: 'Za długi',
     ideal: 'Dobra długość',
+    analysisFor: 'Analiza dla',
+    wordsUnit: 'słów',
+  },
+  en: {
+    pasteText: 'Paste or type text',
+    textPlaceholder: 'Paste the text you want to analyze here...',
+    pageType: 'Page type',
+    pageTypeHelper: 'Select the page type you are writing for. Each type has different length recommendations.',
+    words: 'Words',
+    charsWithSpaces: 'Characters (with spaces)',
+    charsWithoutSpaces: 'Characters (without spaces)',
+    paragraphs: 'Paragraphs',
+    readingTime: 'Reading time',
+    lengthEvaluation: 'Length evaluation',
+    recommendedRange: 'Recommended range',
+    copyReport: 'Copy report',
+    copied: 'Copied',
+    statistics: 'Text statistics',
+    noText: 'No text',
+    empty: 'Type text to see statistics.',
+    tooShort: 'Too short',
+    tooLong: 'Too long',
+    ideal: 'Good length',
+    analysisFor: 'Analysis for',
+    wordsUnit: 'words',
   },
 } as const;
 
@@ -47,8 +73,7 @@ function getStatusClasses(status: LengthStatus): string {
   }
 }
 
-function getStatusLabel(status: LengthStatus): string {
-  const t = ui.pl;
+function getStatusLabel(status: LengthStatus, t: { noText: string; tooShort: string; tooLong: string; ideal: string }): string {
   switch (status) {
     case 'ideal':
       return t.ideal;
@@ -77,19 +102,21 @@ function getProgressBarColor(status: LengthStatus): string {
 }
 
 export default function WordCountTool() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
   const [text, setText] = useState('');
   const [selectedPageType, setSelectedPageType] = useState<PageType>('blog');
 
   const { copy, copied } = useCopyToClipboard();
 
-  const pageTypeConfig = useMemo(() => PAGE_TYPES.find((pt) => pt.key === selectedPageType) ?? PAGE_TYPES[4], [selectedPageType]);
+  const pageTypes = useMemo(() => getPageTypes(locale), [locale]);
+  const pageTypeConfig = useMemo(() => pageTypes.find((pt) => pt.key === selectedPageType) ?? pageTypes[4], [pageTypes, selectedPageType]);
 
   const metrics = useMemo(() => analyzeText(text), [text]);
-  const evaluation = useMemo(() => evaluateLength(metrics.words, pageTypeConfig), [metrics.words, pageTypeConfig]);
+  const evaluation = useMemo(() => evaluateLength(metrics.words, pageTypeConfig, locale), [metrics.words, pageTypeConfig, locale]);
 
   const handleCopyReport = () => {
-    const report = formatReportText(metrics, pageTypeConfig, evaluation);
+    const report = formatReportText(metrics, pageTypeConfig, evaluation, locale);
     copy(report);
   };
 
@@ -98,7 +125,7 @@ export default function WordCountTool() {
       <ToolSection className="space-y-5">
         <div>
           <h2 className="h6 pb-2">{t.statistics}</h2>
-          <ToolHelper>{metrics.words === 0 ? t.empty : `Analiza dla: ${pageTypeConfig.label}`}</ToolHelper>
+          <ToolHelper>{metrics.words === 0 ? t.empty : `${t.analysisFor}: ${pageTypeConfig.label}`}</ToolHelper>
         </div>
 
         <div className="space-y-3">
@@ -120,14 +147,14 @@ export default function WordCountTool() {
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
             <span className="text-[14px]! font-medium">{t.readingTime}</span>
-            <strong className="text-dark">{formatReadingTime(metrics.readingTimeMinutes)}</strong>
+            <strong className="text-dark">{formatReadingTime(metrics.readingTimeMinutes, locale)}</strong>
           </div>
         </div>
 
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-[14px]! font-medium">{t.lengthEvaluation}</span>
-            <span className={`tool-badge ${getStatusClasses(evaluation.status)}`}>{getStatusLabel(evaluation.status)}</span>
+            <span className={`tool-badge ${getStatusClasses(evaluation.status)}`}>{getStatusLabel(evaluation.status, t)}</span>
           </div>
 
           <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
@@ -137,7 +164,7 @@ export default function WordCountTool() {
           <div className="flex items-center justify-between text-xs!">
             <span className="text-light text-xs!">{t.recommendedRange}:</span>
             <span className="text-xs! font-medium">
-              {pageTypeConfig.minWords}–{pageTypeConfig.maxWords} słów
+              {pageTypeConfig.minWords}–{pageTypeConfig.maxWords} {t.wordsUnit}
             </span>
           </div>
 
@@ -162,9 +189,9 @@ export default function WordCountTool() {
       <ToolSection className="space-y-5">
         <ToolFieldRow label={t.pageType} helper={t.pageTypeHelper}>
           <select value={selectedPageType} onChange={(e) => setSelectedPageType(e.target.value as PageType)} className="tool-select">
-            {PAGE_TYPES.map((pt) => (
+            {pageTypes.map((pt) => (
               <option key={pt.key} value={pt.key}>
-                {pt.label} ({pt.minWords}–{pt.maxWords} słów)
+                {pt.label} ({pt.minWords}–{pt.maxWords} {t.wordsUnit})
               </option>
             ))}
           </select>

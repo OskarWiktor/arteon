@@ -121,7 +121,7 @@ export default function DesktopNavigation() {
     const Icon = item.icon;
     return {
       ...item,
-      icon: Icon ? <Icon className="h-5 w-5 text-primary" /> : undefined,
+      icon: Icon ? <Icon className="text-primary h-5 w-5" /> : undefined,
     };
   });
 
@@ -179,14 +179,13 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-primary transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
                   </button>
-
                 </li>
               );
             }
@@ -208,14 +207,13 @@ export default function DesktopNavigation() {
                     aria-expanded={isToolsOpen}
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-primary transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                   >
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
                   </button>
-
                 </li>
               );
             }
@@ -237,14 +235,13 @@ export default function DesktopNavigation() {
                     aria-expanded={isAboutOpen}
                     aria-controls={aboutMenuId}
                     ref={aboutBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-primary transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isAboutOpen ? t.closeAboutList : t.openAboutList}
                   >
                     <motion.span animate={{ rotate: isAboutOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
                   </button>
-
                 </li>
               );
             }
@@ -278,7 +275,7 @@ export default function DesktopNavigation() {
               >
                 <Wrapper>
                   <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="grid grid-cols-5 gap-0">
-                    <div className="border-r border-primary-light pr-4">
+                    <div className="border-primary-light border-r pr-4">
                       <div className="flex flex-col gap-1">
                         {OFFER_SECTIONS_PL.map((section) => {
                           const isActiveCategory = activeOfferCategory === section.key;
@@ -289,8 +286,8 @@ export default function DesktopNavigation() {
                               href={section.hubHref || '#'}
                               onMouseEnter={() => handleCategoryHover(section.key)}
                               onFocus={() => handleCategoryHover(section.key)}
-                              className={`group/cat flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
-                                isActiveCategory ? 'bg-white text-primary' : 'text-primary-mid hover:bg-white hover:text-primary'
+                              className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
+                                isActiveCategory ? 'text-primary bg-white' : 'text-primary-mid hover:text-primary hover:bg-white'
                               }`}
                             >
                               <span className="flex items-center gap-3">
@@ -302,10 +299,7 @@ export default function DesktopNavigation() {
                                 )}
                                 <span className="text-sm font-medium">{section.title}</span>
                               </span>
-                              <RiArrowRightSLine
-                                className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'translate-x-0.5 text-primary' : 'text-primary-mid'}`}
-                                aria-hidden="true"
-                              />
+                              <RiArrowRightSLine className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'text-primary translate-x-0.5' : 'text-primary-mid'}`} aria-hidden="true" />
                             </Link>
                           );
                         })}
@@ -322,14 +316,14 @@ export default function DesktopNavigation() {
                                 <Link
                                   key={item.href}
                                   href={item.href}
-                                  className="group/link flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                                  className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                                 >
                                   {ItemIcon ? (
-                                    <ItemIcon className="h-5 w-5 shrink-0 text-primary-mid transition-colors group-hover/link:text-primary" aria-hidden="true" />
+                                    <ItemIcon className="text-primary-mid group-hover/link:text-primary h-5 w-5 shrink-0 transition-colors" aria-hidden="true" />
                                   ) : (
-                                    <span className="h-2 w-2 shrink-0 rounded-full bg-primary-light" />
+                                    <span className="bg-primary-light h-2 w-2 shrink-0 rounded-full" />
                                   )}
-                                  <span className="text-mid text-sm font-medium transition-colors group-hover/link:text-primary">{item.title}</span>
+                                  <span className="text-mid group-hover/link:text-primary text-sm font-medium transition-colors">{item.title}</span>
                                 </Link>
                               );
                             })}
@@ -363,7 +357,7 @@ export default function DesktopNavigation() {
               >
                 <Wrapper>
                   <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid grid-cols-5 gap-0">
-                    <div className="border-r border-primary-light pr-4">
+                    <div className="border-primary-light border-r pr-4">
                       <div className="flex flex-col gap-1">
                         {TOOLS_SECTIONS_PL.map((section) => {
                           const isActiveCategory = activeToolsCategory === section.key;
@@ -374,8 +368,8 @@ export default function DesktopNavigation() {
                               type="button"
                               onMouseEnter={() => handleToolsCategoryHover(section.key)}
                               onFocus={() => handleToolsCategoryHover(section.key)}
-                              className={`group/cat flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
-                                isActiveCategory ? 'bg-white text-primary' : 'text-primary-mid hover:bg-white hover:text-primary'
+                              className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
+                                isActiveCategory ? 'text-primary bg-white' : 'text-primary-mid hover:text-primary hover:bg-white'
                               }`}
                             >
                               <span className="flex items-center gap-3">
@@ -387,10 +381,7 @@ export default function DesktopNavigation() {
                                 )}
                                 <span className="text-sm font-medium">{section.title}</span>
                               </span>
-                              <RiArrowRightSLine
-                                className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'translate-x-0.5 text-primary' : 'text-primary-mid'}`}
-                                aria-hidden="true"
-                              />
+                              <RiArrowRightSLine className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'text-primary translate-x-0.5' : 'text-primary-mid'}`} aria-hidden="true" />
                             </button>
                           );
                         })}
@@ -407,14 +398,14 @@ export default function DesktopNavigation() {
                                 <Link
                                   key={item.href}
                                   href={item.href}
-                                  className="group/link flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                                  className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                                 >
                                   {ItemIcon ? (
-                                    <ItemIcon className="h-5 w-5 shrink-0 text-primary-mid transition-colors group-hover/link:text-primary" aria-hidden="true" />
+                                    <ItemIcon className="text-primary-mid group-hover/link:text-primary h-5 w-5 shrink-0 transition-colors" aria-hidden="true" />
                                   ) : (
-                                    <span className="h-2 w-2 shrink-0 rounded-full bg-primary-light" />
+                                    <span className="bg-primary-light h-2 w-2 shrink-0 rounded-full" />
                                   )}
-                                  <span className="text-sm font-medium text-primary transition-colors group-hover/link:text-primary">{item.title}</span>
+                                  <span className="text-primary group-hover/link:text-primary text-sm font-medium transition-colors">{item.title}</span>
                                 </Link>
                               );
                             })}
@@ -452,10 +443,10 @@ export default function DesktopNavigation() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="group/link flex items-center gap-3 rounded-xl px-4 py-3 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                        className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-4 py-3 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                       >
-                        {item.icon ? <span className="shrink-0 text-primary-mid transition-colors group-hover/link:text-primary">{item.icon}</span> : null}
-                        <span className="text-sm font-medium text-primary transition-colors group-hover/link:text-primary">{item.title}</span>
+                        {item.icon ? <span className="text-primary-mid group-hover/link:text-primary shrink-0 transition-colors">{item.icon}</span> : null}
+                        <span className="text-primary group-hover/link:text-primary text-sm font-medium transition-colors">{item.title}</span>
                       </Link>
                     ))}
                   </div>

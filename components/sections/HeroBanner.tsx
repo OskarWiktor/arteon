@@ -21,6 +21,9 @@ const ui = {
   pl: {
     quickLinks: 'Szybkie linki',
   },
+  en: {
+    quickLinks: 'Quick links',
+  },
 } as const;
 
 interface HeroBannerProps {
@@ -106,15 +109,7 @@ export default function HeroBanner({
         className={`relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[460px]`}
       >
         {hasBg && backgroundImage && (
-          <Image
-            src={backgroundImage}
-            alt={computedBackgroundAlt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-            itemProp={emitImageMicrodata ? 'image' : undefined}
-          />
+          <Image src={backgroundImage} alt={computedBackgroundAlt} fill priority sizes="100vw" className="object-cover object-center" itemProp={emitImageMicrodata ? 'image' : undefined} />
         )}
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
@@ -138,12 +133,12 @@ export default function HeroBanner({
               </nav>
             )}
             {title && (
-              <h1 id="hero-title" className=" text-wrap:pretty text-wrap">
+              <h1 id="hero-title" className="text-wrap:pretty text-wrap">
                 {title}
               </h1>
             )}
             {description && (
-              <p id="hero-description" className={` text-wrap:pretty mt-3 text-base leading-relaxed md:mt-5 ${isDarkOverlay ? 'text-white' : 'text-dark opacity-80'}`}>
+              <p id="hero-description" className={`text-wrap:pretty mt-3 text-base leading-relaxed md:mt-5 ${isDarkOverlay ? 'text-white' : 'text-dark opacity-80'}`}>
                 {description}
               </p>
             )}

@@ -4,17 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiPencilRuler2Line,
-  RiBrushLine,
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiBookOpenLine,
-  RiKey2Line,
-  RiPantoneLine,
-  RiQuillPenLine,
-  RiMoneyDollarCircleLine,
-} from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiKey2Line, RiPantoneLine, RiQuillPenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -144,27 +134,27 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Znak, który prowadzi markę',
               description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania - również w małych rozmiarach.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-primary" />,
+              icon: <RiQuillPenLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Warianty i zastosowania',
               description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do użycia na stronie, w mediach społecznościowych i w druku.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-primary" />,
+              icon: <RiPantoneLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Prosta instrukcja użycia',
               description: <>Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie wie, jak poprawnie korzystać z logo.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
+              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pełna własność i pliki źródłowe',
               description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-primary" />,
+              icon: <RiKey2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

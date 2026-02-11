@@ -100,7 +100,7 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
           <div className="mx-auto max-w-3xl text-center" role="region" aria-roledescription="carousel" aria-label={t.carouselLabel} aria-live="polite">
             <div className="mb-6 flex justify-center gap-1">
               {[...Array(5)].map((_, starIdx) => (
-                <RiStarFill key={starIdx} className="h-6 w-6 text-accent" />
+                <RiStarFill key={starIdx} className="text-accent h-6 w-6" />
               ))}
             </div>
             <p className="h6 mb-6">&ldquo;{items[largeSlide]?.quote}&rdquo;</p>
@@ -141,7 +141,7 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
       <div className="relative">
         <div
           ref={scrollRef}
-          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          className="no-scrollbar focus-visible:ring-primary flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
           aria-label={t.carouselLabel}

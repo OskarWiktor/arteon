@@ -73,7 +73,7 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
                 className="absolute top-1/2 left-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:bg-white"
                 aria-label="Poprzedni slajd"
               >
-                <RiArrowLeftLine className="h-5 w-5 text-primary" />
+                <RiArrowLeftLine className="text-primary h-5 w-5" />
               </button>
 
               <button
@@ -82,7 +82,7 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
                 className="absolute top-1/2 right-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:bg-white"
                 aria-label="Następny slajd"
               >
-                <RiArrowRightLine className="h-5 w-5 text-primary" />
+                <RiArrowRightLine className="text-primary h-5 w-5" />
               </button>
 
               <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">

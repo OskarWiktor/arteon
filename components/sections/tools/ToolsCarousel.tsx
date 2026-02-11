@@ -3,6 +3,8 @@
 import { useMemo, useRef } from 'react';
 
 import { TOOLS_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
+import { TOOLS_SECTIONS_EN } from '@/components/shared/navigation-data/en';
+import { useLocale } from '@/lib/LocaleContext';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
 import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
@@ -23,8 +25,25 @@ const ui = {
     of: 'z',
     slide: 'Slajd',
     tool: 'Narzędzie',
+    openTool: 'Otwórz narzędzie',
     urls: {
       tools: '/narzedzia',
+    },
+  },
+  en: {
+    defaultTitle: 'Free online tools',
+    seeAllTools: 'See all tools',
+    carouselLabel: 'Tools carousel',
+    scrollLeft: 'Scroll left',
+    scrollRight: 'Scroll right',
+    carouselNavigation: 'Carousel navigation',
+    goToSlide: 'Go to slide',
+    of: 'of',
+    slide: 'Slide',
+    tool: 'Tool',
+    openTool: 'Open tool',
+    urls: {
+      tools: '/en/tools',
     },
   },
 } as const;
@@ -35,14 +54,17 @@ type Props = {
   subtitle?: string;
 };
 
-export default function ToolsCarousel({ max = 10, title = ui.pl.defaultTitle, subtitle }: Props) {
-  const t = ui.pl;
+export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
+  const locale = useLocale();
+  const t = ui[locale];
+  const displayTitle = title ?? t.defaultTitle;
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
+  const toolsSections = locale === 'en' ? TOOLS_SECTIONS_EN : TOOLS_SECTIONS_PL;
   const items = useMemo(() => {
-    return TOOLS_SECTIONS_PL.flatMap((section) => section.items).slice(0, max);
-  }, [max]);
+    return toolsSections.flatMap((section) => section.items).slice(0, max);
+  }, [max, toolsSections]);
 
   const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } = useCarouselScroller({
     itemCount: items.length,
@@ -58,7 +80,7 @@ export default function ToolsCarousel({ max = 10, title = ui.pl.defaultTitle, su
     <section className="w-full" aria-labelledby="tools-heading">
       <SectionHeaderWithAction
         subtitle={subtitle}
-        title={title}
+        title={displayTitle}
         headingLevel="h2"
         headingClassName=""
         titleId="tools-heading"
@@ -70,7 +92,7 @@ export default function ToolsCarousel({ max = 10, title = ui.pl.defaultTitle, su
       <div className="relative">
         <div
           ref={scrollRef}
-          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          className="no-scrollbar focus-visible:ring-primary flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
           aria-label={t.carouselLabel}
@@ -91,7 +113,7 @@ export default function ToolsCarousel({ max = 10, title = ui.pl.defaultTitle, su
               className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
               aria-label={`${t.tool} ${i + 1} ${t.of} ${items.length}`}
             >
-              <CarouselCard variant="tool" title={tool.title} href={tool.href} description={tool.description} image={tool.image} />
+              <CarouselCard variant="tool" title={tool.title} href={tool.href} description={tool.description} image={tool.image} buttonLabel={t.openTool} />
             </div>
           ))}
         </div>

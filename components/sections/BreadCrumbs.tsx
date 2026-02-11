@@ -7,6 +7,10 @@ const ui = {
     home: 'Strona główna',
     ariaLabel: 'okruszki',
   },
+  en: {
+    home: 'Home',
+    ariaLabel: 'breadcrumbs',
+  },
 } as const;
 
 type Crumb = { href: string; label: string };
@@ -18,6 +22,7 @@ export type BreadcrumbsProps = {
   className?: string;
   includeJsonLd?: boolean;
   siteUrl?: string;
+  locale?: 'pl' | 'en';
 };
 
 const DEFAULT_SITE = 'https://www.arteonagency.pl';
@@ -26,8 +31,8 @@ function absoluteUrl(siteUrl: string, href: string) {
   return href.startsWith('http') ? href : `${siteUrl}${href}`;
 }
 
-export default function Breadcrumbs({ second, third, fourth, className = '', includeJsonLd = false, siteUrl = DEFAULT_SITE }: BreadcrumbsProps) {
-  const t = ui.pl;
+export default function Breadcrumbs({ second, third, fourth, className = '', includeJsonLd = false, siteUrl = DEFAULT_SITE, locale = 'pl' }: BreadcrumbsProps) {
+  const t = ui[locale];
   const items: Crumb[] = [{ href: '/', label: t.home }, second, third, ...(fourth ? [fourth] : [])];
 
   const jsonLd = includeJsonLd
@@ -48,19 +53,19 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
       <nav aria-label={t.ariaLabel} className={`py-6 ${className}`}>
         <nav className="flex flex-wrap items-center gap-2 text-sm">
           <AppLink href="/" variant="default" display="inline" aria-label={t.home} className="shrink-0">
-            <RiHomeLine className="text-medium h-4 w-4 text-primary-mid" />
+            <RiHomeLine className="text-medium text-primary-mid h-4 w-4" />
           </AppLink>
           {items.slice(1).map((it, idx) => {
             const isLast = idx === items.slice(1).length - 1;
             return (
-              <span key={`${it.href}-${idx}`} className="!text-medium flex items-center gap-2 text-primary-mid">
+              <span key={`${it.href}-${idx}`} className="!text-medium text-primary-mid flex items-center gap-2">
                 /
                 {isLast ? (
                   <span className="text-medium text-primary" aria-current="page">
                     {it.label}
                   </span>
                 ) : (
-                  <AppLink href={it.href} variant="default" display="inline" className="!text-[14px] !text-primary-mid">
+                  <AppLink href={it.href} variant="default" display="inline" className="!text-primary-mid !text-[14px]">
                     {it.label}
                   </AppLink>
                 )}

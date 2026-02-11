@@ -36,11 +36,13 @@ import {
 
 export const metadata: Metadata = {
   title: 'Darmowy generator palet kolorów - 9 schematów z jednego koloru',
-  description: 'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX i użyj ich na stronie, w logo lub projekcie graficznym.',
+  description:
+    'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX i użyj ich na stronie, w logo lub projekcie graficznym.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow') },
   openGraph: {
     title: 'Darmowy generator palet kolorów - 9 schematów z jednego koloru',
-    description: 'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX i użyj ich na stronie, w logo lub projekcie graficznym.',
+    description:
+      'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX i użyj ich na stronie, w logo lub projekcie graficznym.',
     url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
     type: 'website',
     images: [
@@ -200,11 +202,13 @@ export default function Page() {
 
         <SectionInfo title="Po co generować paletę kolorów?">
           <p className="text-mid">
-            Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga znajomości
-            teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 9 zestawów kolorów opartych na sprawdzonych schematach harmonii barw.
+            Spójna paleta kolorów to podstawa każdego projektu wizualnego - od strony internetowej, przez logo, po materiały drukowane. Ręczne dobieranie barw, które do siebie pasują, wymaga
+            znajomości teorii koloru. Generator robi to automatycznie: podajesz jeden kolor bazowy (np. kolor swojego logo), a narzędzie tworzy 9 zestawów kolorów opartych na sprawdzonych schematach
+            harmonii barw.
           </p>
           <p className="text-mid mt-3">
-            Każdy wygenerowany kolor ma podany kod HEX (np. #4F6BF5) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu graficznego.
+            Każdy wygenerowany kolor ma podany kod HEX (np. #4F6BF5) i wartość HSL (odcień, nasycenie, jasność). Kod HEX możesz wkleić bezpośrednio do CSS, Figmy, Canvy lub dowolnego programu
+            graficznego.
           </p>
         </SectionInfo>
 
@@ -242,8 +246,8 @@ export default function Page() {
               title: 'Paleta monochromatyczna',
               description: (
                 <p>
-                  Kilka odcieni jednego koloru - od jasnego do ciemnego. Wszystkie barwy mają ten sam odcień na kole barw, a różnią się tylko jasnością.
-                  Sprawdza się w eleganckich, minimalistycznych projektach, gdzie zależy na spójności bez ryzyka kolizji kolorów.
+                  Kilka odcieni jednego koloru - od jasnego do ciemnego. Wszystkie barwy mają ten sam odcień na kole barw, a różnią się tylko jasnością. Sprawdza się w eleganckich, minimalistycznych
+                  projektach, gdzie zależy na spójności bez ryzyka kolizji kolorów.
                 </p>
               ),
             },
@@ -252,8 +256,8 @@ export default function Page() {
               title: 'Paleta analogiczna',
               description: (
                 <p>
-                  Kolory sąsiadujące na kole barw (przesunięte o ok. 30° w obie strony od koloru bazowego). Tworzą harmonijne, płynne przejścia barwne.
-                  Dobrze pasuje do projektów, które mają budować ciepłą lub chłodną atmosferę - np. ilustracje, grafiki do mediów społecznościowych.
+                  Kolory sąsiadujące na kole barw (przesunięte o ok. 30° w obie strony od koloru bazowego). Tworzą harmonijne, płynne przejścia barwne. Dobrze pasuje do projektów, które mają budować
+                  ciepłą lub chłodną atmosferę - np. ilustracje, grafiki do mediów społecznościowych.
                 </p>
               ),
             },
@@ -262,8 +266,8 @@ export default function Page() {
               title: 'Paleta komplementarna',
               description: (
                 <p>
-                  Kolor bazowy i barwa leżąca naprzeciwko na kole barw (przesunięcie o 180°). Daje silny kontrast wizualny.
-                  Przydatna tam, gdzie element ma przyciągać wzrok - np. przycisk na stronie, wyróżniony nagłówek, baner promocyjny.
+                  Kolor bazowy i barwa leżąca naprzeciwko na kole barw (przesunięcie o 180°). Daje silny kontrast wizualny. Przydatna tam, gdzie element ma przyciągać wzrok - np. przycisk na stronie,
+                  wyróżniony nagłówek, baner promocyjny.
                 </p>
               ),
             },
@@ -272,8 +276,8 @@ export default function Page() {
               title: 'Paleta triadyczna',
               description: (
                 <p>
-                  Trzy kolory oddalone o 120° na kole barw - tworzą trójkąt równoboczny. Żywa, dynamiczna kombinacja.
-                  Sprawdza się w projektach kreatywnych: identyfikacja wizualna młodych marek, materiały reklamowe, plakaty.
+                  Trzy kolory oddalone o 120° na kole barw - tworzą trójkąt równoboczny. Żywa, dynamiczna kombinacja. Sprawdza się w projektach kreatywnych: identyfikacja wizualna młodych marek,
+                  materiały reklamowe, plakaty.
                 </p>
               ),
             },
@@ -282,8 +286,8 @@ export default function Page() {
               title: 'Paleta rozłożona komplementarna',
               description: (
                 <p>
-                  Łagodniejsza wersja palety komplementarnej. Zamiast jednej barwy przeciwstawnej używa dwóch kolorów przesuniętych o ok. 30° od dopełnienia.
-                  Daje wyraźny kontrast, ale bez tak silnego napięcia wizualnego jak klasyczny schemat komplementarny.
+                  Łagodniejsza wersja palety komplementarnej. Zamiast jednej barwy przeciwstawnej używa dwóch kolorów przesuniętych o ok. 30° od dopełnienia. Daje wyraźny kontrast, ale bez tak silnego
+                  napięcia wizualnego jak klasyczny schemat komplementarny.
                 </p>
               ),
             },
@@ -292,8 +296,8 @@ export default function Page() {
               title: 'Paleta pastelowa',
               description: (
                 <p>
-                  Ten sam odcień z obniżonym nasyceniem i podniesioną jasnością - miękkie, delikatne barwy.
-                  Popularna w branżach takich jak kosmetyka, moda dziecięca i gastronomia. Dobrze komponuje się z jasnym tłem i dużą ilością białej przestrzeni.
+                  Ten sam odcień z obniżonym nasyceniem i podniesioną jasnością - miękkie, delikatne barwy. Popularna w branżach takich jak kosmetyka, moda dziecięca i gastronomia. Dobrze komponuje
+                  się z jasnym tłem i dużą ilością białej przestrzeni.
                 </p>
               ),
             },
@@ -302,8 +306,8 @@ export default function Page() {
               title: 'Paleta ciemna',
               description: (
                 <p>
-                  Kolor bazowy przy wysokim nasyceniu i obniżonej jasności - głębokie, intensywne barwy.
-                  Przydatna przy projektowaniu ciemnych motywów stron i aplikacji, a także materiałów dla marek premium, gdzie mocne kolory na ciemnym tle budują charakter.
+                  Kolor bazowy przy wysokim nasyceniu i obniżonej jasności - głębokie, intensywne barwy. Przydatna przy projektowaniu ciemnych motywów stron i aplikacji, a także materiałów dla marek
+                  premium, gdzie mocne kolory na ciemnym tle budują charakter.
                 </p>
               ),
             },
@@ -312,8 +316,8 @@ export default function Page() {
               title: 'Paleta tonalna',
               description: (
                 <p>
-                  Kilka kroków jasności jednego odcienia - od bardzo jasnego po ciemny. Przypomina skale tonalne stosowane w systemach projektowych (np. odcienie od 50 do 900).
-                  Przydaje się przy budowaniu interfejsów, gdzie ten sam kolor potrzebuje wariantów: jaśniejszy dla tła, ciemniejszy dla tekstu, pośredni dla obramowań.
+                  Kilka kroków jasności jednego odcienia - od bardzo jasnego po ciemny. Przypomina skale tonalne stosowane w systemach projektowych (np. odcienie od 50 do 900). Przydaje się przy
+                  budowaniu interfejsów, gdzie ten sam kolor potrzebuje wariantów: jaśniejszy dla tła, ciemniejszy dla tekstu, pośredni dla obramowań.
                 </p>
               ),
             },
@@ -322,8 +326,8 @@ export default function Page() {
               title: 'Paleta minimalistyczna',
               description: (
                 <p>
-                  Jeden wyrazisty akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali. Reszta palety pozostaje stonowana.
-                  Sprawdza się w nowoczesnych interfejsach z dużą ilością białej przestrzeni - typowy styl stron produktowych i landing page&apos;y.
+                  Jeden wyrazisty akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali. Reszta palety pozostaje stonowana. Sprawdza się w nowoczesnych interfejsach z dużą ilością białej
+                  przestrzeni - typowy styl stron produktowych i landing page&apos;y.
                 </p>
               ),
             },
@@ -336,7 +340,10 @@ export default function Page() {
           title="Na czym opiera się generator palet kolorów?"
           demo={
             <div className="space-y-4">
-              <div className="mx-auto h-40 w-40 rounded-full" style={{ background: 'conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))' }} />
+              <div
+                className="mx-auto h-40 w-40 rounded-full"
+                style={{ background: 'conic-gradient(hsl(0,80%,60%), hsl(60,80%,60%), hsl(120,80%,60%), hsl(180,80%,60%), hsl(240,80%,60%), hsl(300,80%,60%), hsl(360,80%,60%))' }}
+              />
               <div className="space-y-1">
                 <div className="flex items-center justify-between text-sm!">
                   <span className="text-dark font-medium">H (odcień)</span>
@@ -355,12 +362,12 @@ export default function Page() {
           }
         >
           <p className="text-mid">
-            Wszystkie palety powstają z matematycznych przekształceń koloru bazowego w przestrzeni HSL. HSL opisuje kolor trzema wartościami: odcień (H) to pozycja na kole barw (0°–360°), nasycenie (S)
-            określa intensywność barwy, a jasność (L) - jak bardzo kolor jest jasny lub ciemny.
+            Wszystkie palety powstają z matematycznych przekształceń koloru bazowego w przestrzeni HSL. HSL opisuje kolor trzema wartościami: odcień (H) to pozycja na kole barw (0°–360°), nasycenie
+            (S) określa intensywność barwy, a jasność (L) - jak bardzo kolor jest jasny lub ciemny.
           </p>
           <p className="text-mid mt-3">
-            Palety komplementarna, triadyczna i rozłożona komplementarna bazują na geometrii koła barw - kolory są rozmieszczone w równych odstępach kątowych, co daje wizualną równowagę.
-            Palety monochromatyczna, pastelowa i ciemna zmieniają tylko jasność i nasycenie, zachowując ten sam odcień.
+            Palety komplementarna, triadyczna i rozłożona komplementarna bazują na geometrii koła barw - kolory są rozmieszczone w równych odstępach kątowych, co daje wizualną równowagę. Palety
+            monochromatyczna, pastelowa i ciemna zmieniają tylko jasność i nasycenie, zachowując ten sam odcień.
           </p>
         </SectionDemo>
 
@@ -409,7 +416,8 @@ export default function Page() {
               title: 'Palety nie zmieniają się po wpisaniu koloru',
               description: (
                 <p>
-                  Sam wpis kodu HEX nie generuje palet automatycznie - zmianę trzeba zatwierdzić przyciskiem <strong>Zaktualizuj kolor</strong>. Dopiero po zatwierdzeniu narzędzie przelicza wszystkie 9 schematów.
+                  Sam wpis kodu HEX nie generuje palet automatycznie - zmianę trzeba zatwierdzić przyciskiem <strong>Zaktualizuj kolor</strong>. Dopiero po zatwierdzeniu narzędzie przelicza wszystkie
+                  9 schematów.
                 </p>
               ),
             },
@@ -418,7 +426,8 @@ export default function Page() {
               title: 'Komunikat o nieprawidłowym formacie',
               description: (
                 <p>
-                  Generator przyjmuje wyłącznie format HEX z symbolem # na początku, np. <code className="rounded bg-black/5 px-1">#FF5500</code>. Formaty bez # (np. <code className="rounded bg-black/5 px-1">FF5500</code>) lub w zapisie RGB (np. <code className="rounded bg-black/5 px-1">rgb(255,85,0)</code>) nie są obsługiwane.
+                  Generator przyjmuje wyłącznie format HEX z symbolem # na początku, np. <code className="rounded bg-black/5 px-1">#FF5500</code>. Formaty bez # (np.{' '}
+                  <code className="rounded bg-black/5 px-1">FF5500</code>) lub w zapisie RGB (np. <code className="rounded bg-black/5 px-1">rgb(255,85,0)</code>) nie są obsługiwane.
                 </p>
               ),
             },
@@ -427,7 +436,8 @@ export default function Page() {
               title: 'Format skrócony i pełny HEX',
               description: (
                 <p>
-                  Obsługiwane są oba zapisy: pełny <code className="rounded bg-black/5 px-1">#RRGGBB</code> (np. #FF5500) i skrócony <code className="rounded bg-black/5 px-1">#RGB</code> (np. #F50). Generator automatycznie rozpoznaje oba formaty i traktuje je identycznie.
+                  Obsługiwane są oba zapisy: pełny <code className="rounded bg-black/5 px-1">#RRGGBB</code> (np. #FF5500) i skrócony <code className="rounded bg-black/5 px-1">#RGB</code> (np. #F50).
+                  Generator automatycznie rozpoznaje oba formaty i traktuje je identycznie.
                 </p>
               ),
             },

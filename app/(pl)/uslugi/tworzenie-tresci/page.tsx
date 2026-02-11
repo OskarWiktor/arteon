@@ -101,35 +101,35 @@ export default function OfferContentPage() {
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileSearchLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className="h-6 w-6 text-primary" />,
+              icon: <RiArticleLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className="h-6 w-6 text-primary" />,
+              icon: <RiChatQuoteLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className="h-6 w-6 text-primary" />,
+              icon: <IoSparkles className="text-primary h-6 w-6" />,
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
+              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className="h-6 w-6 text-primary" />,
+              icon: <RiShareForwardLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
+              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className="h-6 w-6 text-primary" />,
+              icon: <RiTeamLine className="text-primary h-6 w-6" />,
             },
           ]}
         />
@@ -356,7 +356,6 @@ export default function OfferContentPage() {
         <ArticlesCarousel title="Przydatne artykuły dotyczące tworzenia treści" categorySlug="tresci" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
-
       </Wrapper>
 
       <CTABanner

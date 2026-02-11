@@ -23,7 +23,7 @@ export default function SectionDemo({ id, title, subtitle, description, demo, va
 
         <div className={`flex w-full lg:w-3/5 ${variant === 'left' ? 'lg:order-1' : ''}`}>
           <div className={`flex h-full flex-col justify-center ${variant === 'right' ? 'lg:pl-2' : 'lg:pr-2'}`}>
-            <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h3" headingClassName="h4" descriptionClassName="" />
+            <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h3" headingClassName="h5" descriptionClassName="" />
 
             {children && <div className="text-balance">{children}</div>}
           </div>

@@ -30,7 +30,7 @@ export default function SectionInfoBanner({ items, animated = false, speed = 40 
         {item.linkText && item.linkHref && (
           <>
             {' '}
-            <Link href={item.linkHref} className="underline underline-offset-2 transition-colors hover:text-accent">
+            <Link href={item.linkHref} className="hover:text-accent underline underline-offset-2 transition-colors">
               {item.linkText}
             </Link>
           </>
@@ -41,7 +41,7 @@ export default function SectionInfoBanner({ items, animated = false, speed = 40 
 
   if (animated) {
     return (
-      <section data-section="info-banner" className="overflow-hidden bg-primary py-1.5">
+      <section data-section="info-banner" className="bg-primary overflow-hidden py-1.5">
         <div
           className="flex whitespace-nowrap"
           style={{
@@ -66,14 +66,10 @@ export default function SectionInfoBanner({ items, animated = false, speed = 40 
   }
 
   return (
-      <section data-section="info-banner" className="bg-primary py-1.5">
-            <Wrapper>
-
-        <div className="flex flex-wrap items-center gap-x-8 gap-y-1">
-          {items.map((item, index) => renderItem(item, index))}
-        </div>
-            </Wrapper>
-
-      </section>
+    <section data-section="info-banner" className="bg-primary py-1.5">
+      <Wrapper>
+        <div className="flex flex-wrap items-center gap-x-8 gap-y-1">{items.map((item, index) => renderItem(item, index))}</div>
+      </Wrapper>
+    </section>
   );
 }

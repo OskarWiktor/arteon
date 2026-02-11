@@ -152,7 +152,7 @@ export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle,
                 transition={{ duration: 0.25, ease: 'easeInOut' }}
                 aria-hidden={!isOpen}
               >
-                <div className="border-t border-primary-light p-4">
+                <div className="border-primary-light border-t p-4">
                   <div className="text-light leading-relaxed">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
                 </div>
               </motion.div>

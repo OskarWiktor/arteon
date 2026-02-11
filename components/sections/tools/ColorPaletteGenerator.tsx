@@ -10,6 +10,7 @@ import CopyButton from '@/components/ui/buttons/CopyButton';
 import { useTimeout } from '@/hooks/useTimeout';
 import { formatHsl, normalizeHex, randomHexColor, rgbToHex } from '@/lib/tools/color/convert';
 import { createPaletteFromHex, type PaletteColor, type PaletteGroupId } from '@/lib/tools/color/palette';
+import { useLocale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -65,24 +66,78 @@ const ui = {
       },
     },
   },
+  en: {
+    selectBaseColor: 'Select base color',
+    updateColor: 'Update color',
+    randomColor: 'Random color',
+    currentBaseColor: 'Current base color',
+    baseColorHelper: 'All palettes below are based on this color.',
+    colorPreview: 'Color preview',
+    copied: 'Copied',
+    copy: 'Copy',
+    generatedPalettes: 'Generated color palettes',
+    colorReadError: 'Could not read the color. Make sure you are using the format',
+    example: 'e.g.',
+    enterValidColor: 'Enter a valid HEX color to generate palettes. All calculations are performed locally in your browser.',
+    palettes: {
+      monochromatic: {
+        label: 'Monochromatic palette',
+        description: 'All colors share the same hue (H), differing mainly in lightness (L) in the HSL color space.',
+      },
+      analogous: {
+        label: 'Analogous palette',
+        description: 'Colors with similar hues — from about -30° to +30° around the base color on the classic color wheel (e.g. Itten).',
+      },
+      complementary: {
+        label: 'Complementary palette',
+        description: 'The base color and its complement shifted by 180° on the color wheel — one of the fundamental color contrasts described by Johannes Itten.',
+      },
+      triadic: {
+        label: 'Triadic palette',
+        description: 'Three hues spaced 120° apart on the color wheel (vertices of an equilateral triangle) — a geometry often used in branding and Bauhaus-inspired designs.',
+      },
+      splitComplementary: {
+        label: 'Split-complementary palette',
+        description:
+          'A variation of the complementary palette — instead of one complement (180°), two colors shifted by about ±30° from the complement are used, reducing visual tension while maintaining strong contrast.',
+      },
+      softPastel: {
+        label: 'Pastel palette',
+        description: 'The same hue with reduced saturation and increased lightness — a shift toward the center and top of the HSL space, producing soft, "creamy" colors.',
+      },
+      deepDark: {
+        label: 'Dark palette',
+        description: 'The same hue with high saturation (S) and reduced lightness (L) — a downward shift on the lightness axis, producing deep colors typical of dark mode and bold accents.',
+      },
+      materialTonal: {
+        label: 'Tonal palette (Material Design inspired)',
+        description: 'Several lightness steps of one hue — varied L and moderate S, similar to tonal ranges known from Material Design guidelines (e.g. 50-900).',
+      },
+      appleMinimal: {
+        label: 'Minimalist palette (Apple inspired)',
+        description: 'One bold color accent and several very light, soft neutrals — a layout typical of interfaces with plenty of white space and subtle shadows.',
+      },
+    },
+  },
 } as const;
 
-const PALETTE_META: Record<PaletteGroupId, { label: string; description: string }> = {
-  monochromatic: ui.pl.palettes.monochromatic,
-  analogous: ui.pl.palettes.analogous,
-  complementary: ui.pl.palettes.complementary,
-  triadic: ui.pl.palettes.triadic,
-  'split-complementary': ui.pl.palettes.splitComplementary,
-  'soft-pastel': ui.pl.palettes.softPastel,
-  'deep-dark': ui.pl.palettes.deepDark,
-  'material-tonal': ui.pl.palettes.materialTonal,
-  'apple-minimal': ui.pl.palettes.appleMinimal,
-};
+function getPaletteMeta(t: (typeof ui)['pl'] | (typeof ui)['en']): Record<PaletteGroupId, { label: string; description: string }> {
+  return {
+    monochromatic: t.palettes.monochromatic,
+    analogous: t.palettes.analogous,
+    complementary: t.palettes.complementary,
+    triadic: t.palettes.triadic,
+    'split-complementary': t.palettes.splitComplementary,
+    'soft-pastel': t.palettes.softPastel,
+    'deep-dark': t.palettes.deepDark,
+    'material-tonal': t.palettes.materialTonal,
+    'apple-minimal': t.palettes.appleMinimal,
+  };
+}
 
 const DEFAULT_BASE_COLOR = rgbToHex({ r: 79, g: 107, b: 245 });
 
-function Swatch({ color, onCopy, copied: _copied }: { color: PaletteColor; onCopy: (hex: string) => void; copied: boolean }) {
-  const t = ui.pl;
+function Swatch({ color, onCopy, copied: _copied, t }: { color: PaletteColor; onCopy: (hex: string) => void; copied: boolean; t: { colorPreview: string; copy: string; copied: string } }) {
   return (
     <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
       <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`${t.colorPreview} ${color.hex}`} />
@@ -96,22 +151,24 @@ function Swatch({ color, onCopy, copied: _copied }: { color: PaletteColor; onCop
 }
 
 export default function ColorPaletteGenerator() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
   const [baseColor, setBaseColor] = useState(DEFAULT_BASE_COLOR);
   const [inputColor, setInputColor] = useState(DEFAULT_BASE_COLOR);
   const [copiedHex, setCopiedHex] = useState<string | null>(null);
   const { start: startCopiedReset } = useTimeout();
 
   const normalizedBase = useMemo(() => normalizeHex(baseColor), [baseColor]);
+  const paletteMeta = useMemo(() => getPaletteMeta(t), [t]);
   const palettes = useMemo(
     () =>
       normalizedBase
         ? createPaletteFromHex(normalizedBase).map((group) => ({
             ...group,
-            ...PALETTE_META[group.id],
+            ...paletteMeta[group.id],
           }))
         : [],
-    [normalizedBase],
+    [normalizedBase, paletteMeta],
   );
 
   const handleSubmit = (e: FormEvent) => {
@@ -190,7 +247,7 @@ export default function ColorPaletteGenerator() {
                 </div>
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
                   {group.colors.map((color) => (
-                    <Swatch key={`${group.id}-${color.hex}-${color.hsl.l}`} color={color} onCopy={handleCopy} copied={copiedHex === color.hex} />
+                    <Swatch key={`${group.id}-${color.hex}-${color.hsl.l}`} color={color} onCopy={handleCopy} copied={copiedHex === color.hex} t={t} />
                   ))}
                 </div>
               </ToolInfo>

@@ -24,7 +24,7 @@ export default function SectionStarRating({ value, onChange, max = 5, size = 'me
 
   return (
     <div className="inline-flex flex-col items-center gap-2">
-      {label && <span className="text-sm font-medium text-primary">{label}</span>}
+      {label && <span className="text-primary text-sm font-medium">{label}</span>}
 
       <div className="flex gap-1" role="group" aria-label={label || 'Ocena gwiazdkowa'} onMouseLeave={() => setHoverValue(null)}>
         {Array.from({ length: max }, (_, index) => {
@@ -37,7 +37,7 @@ export default function SectionStarRating({ value, onChange, max = 5, size = 'me
               type="button"
               onClick={() => onChange(starValue)}
               onMouseEnter={() => setHoverValue(starValue)}
-              className="transition-transform hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+              className="focus-visible:ring-accent transition-transform hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
               aria-label={`${starValue} z ${max} gwiazdek`}
             >
               {isFilled ? <RiStarFill className={`${sizeClasses[size]} text-accent`} /> : <RiStarLine className={`${sizeClasses[size]} text-primary-light`} />}

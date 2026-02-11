@@ -5,16 +5,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiBarChart2Fill,
-  RiCustomerService2Line,
-  RiFileList2Line,
-  RiLightbulbFlashLine,
-  RiLineChartLine,
-  RiSearchEyeLine,
-  RiSearchLine,
-  RiShieldCheckLine,
-} from 'react-icons/ri';
+import { RiBarChart2Fill, RiCustomerService2Line, RiFileList2Line, RiLightbulbFlashLine, RiLineChartLine, RiSearchEyeLine, RiSearchLine, RiShieldCheckLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -97,44 +88,42 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Jasną strategię działania',
               description: <>Plan działań oparty na psychologii w biznesie z podziałem na szybkie wygrane i strategiczne działania długoterminowe.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />,
+              icon: <RiLightbulbFlashLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Raporty i decyzje oparte na danych',
               description: <>Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak, abyś miał pewność, że marketing z nami będzie skuteczny.</>,
-              icon: <IoAnalytics className="h-6 w-6 text-primary" />,
+              icon: <IoAnalytics className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pełna własność danych i kont',
               description: <>Masz dostęp do wszystkich narzędzi, z których korzystamy, dzięki czemu w dowolnej chwili możesz sprawdzić wyniki naszych działań.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-primary" />,
+              icon: <RiShieldCheckLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'SEO techniczne + treściowe',
-              description: (
-                <>Prowadzimy pełne działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>
-              ),
-              icon: <RiSearchLine className="h-6 w-6 text-primary" />,
+              description: <>Prowadzimy pełne działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>,
+              icon: <RiSearchLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Lokalne lub krajowe SEO',
               description: <>Prowadzimy działania SEO krajowe oraz lokalne, dzięki czemu Twój biznes może rozwijać się w Twoim mieście i jednocześnie za granicą lub w całym kraju</>,
-              icon: <RiSearchEyeLine className="h-6 w-6 text-primary" />,
+              icon: <RiSearchEyeLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Reklamy Google i Meta',
               description: <>Tworzymy kampanie oparte na realnych problemach klientów. Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to, co działa.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-primary" />,
+              icon: <RiBarChart2Fill className="text-primary h-6 w-6" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i terminy są rozpisane przed startem działań.</>,
-              icon: <RiCustomerService2Line className="h-6 w-6 text-primary" />,
+              icon: <RiCustomerService2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wsparcie po wdrożeniu',
               description: <>Stale informujemy Cię o wynikach naszych działań, dajemy Ci jasne podsumowanie w mailu oraz prowadzimy konsultacje online</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-primary" />,
+              icon: <RiShieldCheckLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

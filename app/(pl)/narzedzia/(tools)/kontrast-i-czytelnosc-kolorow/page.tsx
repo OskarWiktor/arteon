@@ -185,7 +185,8 @@ export default function Page() {
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank" rel="noopener noreferrer" className="underline">
               WCAG 2.1 (Web Content Accessibility Guidelines)
             </a>{' '}
-            - międzynarodowych wytycznych dostępności cyfrowej. Wynik pozwala obiektywnie ocenić, czy kolory są wystarczająco czytelne, niezależnie od ustawień monitora czy indywidualnego postrzegania barw.
+            - międzynarodowych wytycznych dostępności cyfrowej. Wynik pozwala obiektywnie ocenić, czy kolory są wystarczająco czytelne, niezależnie od ustawień monitora czy indywidualnego postrzegania
+            barw.
           </p>
         </SectionInfo>
 
@@ -230,12 +231,19 @@ export default function Page() {
               content: (
                 <div>
                   <p className="text-mid mb-3">
-                    Format szesnastkowy - najpopularniejszy w projektowaniu stron. Zaczyna się od znaku <code className="rounded bg-black/5 px-1">#</code> i zawiera 3 lub 6 znaków (cyfry 0-9 i litery A-F).
+                    Format szesnastkowy - najpopularniejszy w projektowaniu stron. Zaczyna się od znaku <code className="rounded bg-black/5 px-1">#</code> i zawiera 3 lub 6 znaków (cyfry 0-9 i litery
+                    A-F).
                   </p>
                   <ul className="text-mid list-disc space-y-1 pl-5">
-                    <li><code className="rounded bg-black/5 px-1">#fff</code> - biały (skrócona forma)</li>
-                    <li><code className="rounded bg-black/5 px-1">#ffffff</code> - biały (pełna forma)</li>
-                    <li><code className="rounded bg-black/5 px-1">#1a73e8</code> - niebieski</li>
+                    <li>
+                      <code className="rounded bg-black/5 px-1">#fff</code> - biały (skrócona forma)
+                    </li>
+                    <li>
+                      <code className="rounded bg-black/5 px-1">#ffffff</code> - biały (pełna forma)
+                    </li>
+                    <li>
+                      <code className="rounded bg-black/5 px-1">#1a73e8</code> - niebieski
+                    </li>
                   </ul>
                 </div>
               ),
@@ -246,11 +254,16 @@ export default function Page() {
               content: (
                 <div>
                   <p className="text-mid mb-3">
-                    Format oparty na trzech kanałach: czerwony (Red), zielony (Green), niebieski (Blue). Każdy kanał przyjmuje wartość od 0 do 255. Wariant RGBA dodaje czwarty parametr - przezroczystość (alpha) od 0 do 1.
+                    Format oparty na trzech kanałach: czerwony (Red), zielony (Green), niebieski (Blue). Każdy kanał przyjmuje wartość od 0 do 255. Wariant RGBA dodaje czwarty parametr -
+                    przezroczystość (alpha) od 0 do 1.
                   </p>
                   <ul className="text-mid list-disc space-y-1 pl-5">
-                    <li><code className="rounded bg-black/5 px-1">rgb(255, 255, 255)</code> - biały</li>
-                    <li><code className="rounded bg-black/5 px-1">rgba(0, 0, 0, 0.8)</code> - czarny z 80% krycia</li>
+                    <li>
+                      <code className="rounded bg-black/5 px-1">rgb(255, 255, 255)</code> - biały
+                    </li>
+                    <li>
+                      <code className="rounded bg-black/5 px-1">rgba(0, 0, 0, 0.8)</code> - czarny z 80% krycia
+                    </li>
                   </ul>
                 </div>
               ),
@@ -261,11 +274,16 @@ export default function Page() {
               content: (
                 <div>
                   <p className="text-mid mb-3">
-                    Format oparty na odcieniu (Hue, 0-360°), nasyceniu (Saturation, 0-100%) i jasności (Lightness, 0-100%). Wariant HSLA dodaje przezroczystość. Ten format jest przydatny, gdy chcesz modyfikować jasność lub nasycenie koloru.
+                    Format oparty na odcieniu (Hue, 0-360°), nasyceniu (Saturation, 0-100%) i jasności (Lightness, 0-100%). Wariant HSLA dodaje przezroczystość. Ten format jest przydatny, gdy chcesz
+                    modyfikować jasność lub nasycenie koloru.
                   </p>
                   <ul className="text-mid list-disc space-y-1 pl-5">
-                    <li><code className="rounded bg-black/5 px-1">hsl(0, 0%, 100%)</code> - biały</li>
-                    <li><code className="rounded bg-black/5 px-1">hsla(217, 91%, 60%, 0.9)</code> - niebieski z 90% krycia</li>
+                    <li>
+                      <code className="rounded bg-black/5 px-1">hsl(0, 0%, 100%)</code> - biały
+                    </li>
+                    <li>
+                      <code className="rounded bg-black/5 px-1">hsla(217, 91%, 60%, 0.9)</code> - niebieski z 90% krycia
+                    </li>
                   </ul>
                 </div>
               ),

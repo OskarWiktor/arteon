@@ -12,6 +12,7 @@ import Link from 'next/link';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import SearchDialog from '@/components/ui/SearchDialog';
 import SectionInfoBanner from '../ui/sections/SectionInfoBanner';
+import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 
 const ui = {
   pl: {
@@ -70,7 +71,7 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => setIsSearchOpen(true)}
-              className="flex h-8 w-8 items-center justify-center rounded-lg text-primary transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-label="Wyszukaj (Ctrl+K)"
             >
               <RiSearchLine className="h-5 w-5" aria-hidden="true" />
@@ -79,6 +80,8 @@ export default function Navigation() {
             <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-light mr-3 cursor-pointer text-sm font-normal">
               #MadeWithNext.js
             </a>
+
+            <LanguageSwitcher />
 
             {/* NAV-001: Tymczasowo ukryte linki do media społecznościowe
             <SocialIconLink
@@ -100,7 +103,7 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => setIsSearchOpen(true)}
-              className="flex h-10 w-10 items-center justify-center rounded-lg text-primary transition hover:bg-primary-light hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2"
               aria-label="Wyszukaj"
             >
               <RiSearchLine className="h-6 w-6" aria-hidden="true" />

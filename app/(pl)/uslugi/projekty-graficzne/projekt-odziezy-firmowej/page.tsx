@@ -4,17 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiPencilRuler2Line,
-  RiBrushLine,
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiFileTextLine,
-  RiImageLine,
-  RiQuillPenLine,
-  RiTShirt2Line,
-  RiMoneyDollarCircleLine,
-} from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -40,7 +30,9 @@ export const metadata = {
     description: 'Projekt nadruków i haftów na odzież firmową: koszulki, bluzy, czapki. Pliki techniczne dla drukarni i hafciarni.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp', width: 1200, height: 630 }],
+    images: [
+      { url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp', width: 1200, height: 630 },
+    ],
   },
 } as const;
 
@@ -134,27 +126,27 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Spójny wygląd zespołu',
               description: <>Projekt buduje rozpoznawalność marki w terenie, na hali, w salonie i podczas wydarzeń.</>,
-              icon: <RiTShirt2Line className="h-6 w-6 text-primary" />,
+              icon: <RiTShirt2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wizualizacje i warianty',
               description: <>Przygotowujemy podglądy na koszulkach, bluzach i innych elementach, aby łatwiej było podjąć decyzję.</>,
-              icon: <RiImageLine className="h-6 w-6 text-primary" />,
+              icon: <RiImageLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Dopasowanie do wybranej technologii',
               description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków - sitodruk, haft, DTF.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-primary" />,
+              icon: <RiQuillPenLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pliki gotowe do produkcji',
               description: <>Otrzymujesz materiały, które możesz od razu przekazać wykonawcy odzieży.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

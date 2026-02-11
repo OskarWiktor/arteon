@@ -60,8 +60,8 @@ export default function TermsPage() {
               stron, retusz i optymalizacja grafik, retusz zdjęć, treści do mediów społecznościowych (posty, stories, karuzele, szablony), montaż krótkich filmów.
             </p>
             <p>
-              3.3. <strong>Content:</strong> treści na strony (struktura i język dopasowany do branży), artykuły eksperckie i edukacyjne, opisy e-commerce (short i premium), treści do mediów społecznościowych,
-              oferty i case studies, redakcja i korekta, dostosowanie do SEO.
+              3.3. <strong>Content:</strong> treści na strony (struktura i język dopasowany do branży), artykuły eksperckie i edukacyjne, opisy e-commerce (short i premium), treści do mediów
+              społecznościowych, oferty i case studies, redakcja i korekta, dostosowanie do SEO.
             </p>
             <p>
               3.4. <strong>Marketing:</strong> audyt SEO, optymalizacja SEO, rozwój SEO (content + linki), reklamy (Google / Meta), prowadzenie social mediów, branding psychologiczny (archetyp, język

@@ -224,7 +224,9 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
   const dividerColor = style.dividerColor || SIGNATURE_COLOR_DIVIDER;
   const dividerWidth = style.dividerWidth || 1;
   const dividerStyle = style.dividerStyle || 'solid';
-  const dividerHtml = style.showDivider ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:${dividerWidth}px ${dividerStyle} ${dividerColor};width:100%;"></div></td></tr>` : '';
+  const dividerHtml = style.showDivider
+    ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:${dividerWidth}px ${dividerStyle} ${dividerColor};width:100%;"></div></td></tr>`
+    : '';
 
   const formalHtml = hasFormalLine ? `<tr><td style="padding-top:6px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.formalLine.trim())}</td></tr>` : '';
 

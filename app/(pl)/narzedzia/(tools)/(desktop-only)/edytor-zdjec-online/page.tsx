@@ -17,16 +17,7 @@ import Link from 'next/link';
 import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 import SectionTabs from '@/components/ui/sections/SectionTabs';
-import {
-  RiInstagramLine,
-  RiFacebookLine,
-  RiLinkedinLine,
-  RiImageLine,
-  RiCropLine,
-  RiLayoutGridLine,
-  RiFileImageLine,
-  RiAspectRatioLine,
-} from 'react-icons/ri';
+import { RiInstagramLine, RiFacebookLine, RiLinkedinLine, RiImageLine, RiCropLine, RiLayoutGridLine, RiFileImageLine, RiAspectRatioLine } from 'react-icons/ri';
 
 export const metadata: Metadata = {
   title: 'Darmowy edytor zdjęć online - zmiana rozmiaru, kadrowanie, konwersja',
@@ -241,7 +232,7 @@ export default function ImageEditorPage() {
           demo={
             <div className="tool-section space-y-3">
               <div className="flex flex-wrap gap-2">
-                <button className="flex items-center gap-2 rounded-md border bg-primary px-3 py-1.5 text-[14px]! text-white">
+                <button className="bg-primary flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! text-white">
                   <span>Wymiary w px</span>
                 </button>
                 <button className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! hover:bg-neutral-100">
@@ -509,9 +500,7 @@ export default function ImageEditorPage() {
               icon: <RiFileImageLine className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">
-                    Format bezstratny - zachowuje pełną jakość, ale pliki są większe. Obsługuje przezroczystość (wymagany przy kształcie koła).
-                  </p>
+                  <p className="text-mid mb-3">Format bezstratny - zachowuje pełną jakość, ale pliki są większe. Obsługuje przezroczystość (wymagany przy kształcie koła).</p>
                   <p className="text-mid">Dobry wybór dla grafik z tekstem, ikon i obrazów wymagających ostrych krawędzi.</p>
                 </div>
               ),
@@ -521,9 +510,7 @@ export default function ImageEditorPage() {
               icon: <RiCropLine className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">
-                    Nowoczesny format łączący zalety JPG i PNG - małe pliki, dobra jakość, obsługa przezroczystości. Obsługiwany przez wszystkie nowoczesne przeglądarki.
-                  </p>
+                  <p className="text-mid mb-3">Nowoczesny format łączący zalety JPG i PNG - małe pliki, dobra jakość, obsługa przezroczystości. Obsługiwany przez wszystkie nowoczesne przeglądarki.</p>
                   <p className="text-mid">
                     Zalecany dla stron WWW - mniejsze pliki oznaczają szybsze ładowanie. Więcej o WebP znajdziesz w naszym{' '}
                     <Link href="/narzedzia/jpg-png-na-webp-bez-limitu">konwerterze JPG/PNG na WebP</Link>.

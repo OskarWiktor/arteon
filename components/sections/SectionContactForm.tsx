@@ -12,9 +12,9 @@ type SectionContactFormProps = {
 };
 
 const benefits = [
-  { icon: <RiMailSendLine className="h-4 w-4 text-accent" />, label: 'Bezpłatna wycena bez zobowiązań' },
-  { icon: <RiTimeLine className="h-4 w-4 text-accent" />, label: 'Odpowiedź w ciągu 24 godzin' },
-  { icon: <RiFileList2Line className="h-4 w-4 text-accent" />, label: 'Faktura dopiero po realizacji' },
+  { icon: <RiMailSendLine className="text-accent h-4 w-4" />, label: 'Bezpłatna wycena bez zobowiązań' },
+  { icon: <RiTimeLine className="text-accent h-4 w-4" />, label: 'Odpowiedź w ciągu 24 godzin' },
+  { icon: <RiFileList2Line className="text-accent h-4 w-4" />, label: 'Faktura dopiero po realizacji' },
 ];
 
 export default function SectionContactForm({ title, description, imageSrc, imageAlt, defaultSubject, messagePlaceholder }: SectionContactFormProps) {
@@ -34,7 +34,7 @@ export default function SectionContactForm({ title, description, imageSrc, image
           <ul className="space-y-3">
             {benefits.map((item, i) => (
               <li key={i} className="flex items-center gap-3">
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-accent/10">{item.icon}</div>
+                <div className="bg-accent/10 flex h-6 w-6 items-center justify-center rounded-full">{item.icon}</div>
                 <span className="text-sm">{item.label}</span>
               </li>
             ))}

@@ -4,16 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiPencilRuler2Line,
-  RiBrushLine,
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiBookOpenLine,
-  RiFileTextLine,
-  RiMessage2Line,
-  RiMoneyDollarCircleLine,
-} from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -132,27 +123,27 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Spójny wygląd korespondencji',
               description: <>Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i wiadomości.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Szablony do codziennej pracy',
               description: <>Otrzymujesz gotowe do użycia pliki w wersji do druku oraz praktyczne szablony elektroniczne.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
+              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Dopasowanie danych i układu',
               description: <>Dbamy o czytelność, hierarchię informacji i zgodność z pozostałymi materiałami marki.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
+              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Szybka realizacja i poprawki',
               description: <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-primary" />,
+              icon: <RiMessage2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

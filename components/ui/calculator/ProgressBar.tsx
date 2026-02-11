@@ -8,7 +8,7 @@ export default function ProgressBar({ currentStep, totalSteps }: ProgressBarProp
 
   return (
     <div className="relative m-auto mb-12 h-[2px] w-full bg-neutral-200">
-      <div className="h-full bg-primary transition-all" style={{ width: `${percent}%` }} />
+      <div className="bg-primary h-full transition-all" style={{ width: `${percent}%` }} />
       <span className="text-light absolute top-[-1.5rem] text-xs">
         Krok {currentStep + 1}/{totalSteps}
       </span>

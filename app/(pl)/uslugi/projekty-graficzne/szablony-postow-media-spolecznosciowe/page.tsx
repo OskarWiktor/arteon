@@ -132,24 +132,24 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
             {
               title: 'Spójny system wizualny',
               description: <>Dopasowujemy kolory, typografię i styl do Twojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Edytowalne pliki',
               description: (
                 <>Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy kolory zmienisz bez znajomości zaawansowanych programów.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'System pod różne typy postów',
               description: <>Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta, opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
+              icon: <RiLayoutLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

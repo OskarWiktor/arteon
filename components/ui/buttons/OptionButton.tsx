@@ -24,7 +24,7 @@ export default function OptionButton({ optValue, label, tooltip, selected, onCli
 
   return (
     <button key={optValue} onClick={onClick} onKeyDown={handleKey} tabIndex={0} className={`calc-option-button ${selected ? 'calc-option-button-selected' : 'calc-option-button-unselected'}`}>
-      {IconComponent && <IconComponent className="mt-1 text-2xl text-primary" />}
+      {IconComponent && <IconComponent className="text-primary mt-1 text-2xl" />}
       <div>
         <h6 className="font-medium">{label}</h6>
         {tooltip && <span className="text-dark block">{tooltip}</span>}

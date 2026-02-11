@@ -129,22 +129,22 @@ export default function OfferDesignPriceListPage() {
             {
               title: 'Przejrzysty układ i hierarchia',
               description: <>Projektujemy logiczne sekcje, wyróżniamy kluczowe usługi i podkreślamy rekomendowane opcje, aby ułatwić wybór klientowi, ułatwiając przy tym rozmowę o cenach.</>,
-              icon: <RiTableLine className="h-6 w-6 text-primary" />,
+              icon: <RiTableLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, czcionki i ikony dopasowujemy do stylu Twojej marki oraz branży. Cennik staje się integralną częścią Twojej komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wersje do druku i online',
               description: <>Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do publikacji na stronie czy mediach społecznościowych. Dostajesz gotową paczkę plików.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

@@ -19,7 +19,7 @@ interface CalculatorResultProps {
 export default function CalculatorResult({ totalPrice, onReset, pathKey, title, disclaimer, inPrice, startAgain, from, to, currency }: CalculatorResultProps) {
   return (
     <div className="space-y-4">
-      <h3 className="inline border-b-2 border-b-primary-mid">{title}</h3>
+      <h3 className="border-b-primary-mid inline border-b-2">{title}</h3>
 
       <div className="pt-8">
         <p className="text-dark text-2xl font-medium">{`${from} ${Math.round(totalPrice * 0.8)} ${to} ${Math.round(totalPrice * 1.2)} ${currency}`}</p>

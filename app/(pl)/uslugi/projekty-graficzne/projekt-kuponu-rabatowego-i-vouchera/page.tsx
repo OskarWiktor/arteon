@@ -4,16 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiPencilRuler2Line,
-  RiBrushLine,
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiFileTextLine,
-  RiTicket2Line,
-  RiGiftLine,
-  RiMoneyDollarCircleLine,
-} from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiTicket2Line, RiGiftLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -138,27 +129,27 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Dopasujemy projekt do Twojej kolorystyki, logo i tonu komunikacji, dzięki czemu voucher będzie spójnym elementem Twojej marki.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wersje do druku i online',
               description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych, mailingu lub sklepu internetowego.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Czytelne pola i zasady wykorzystania',
               description: <>Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis czy regulamin tak, aby voucher był piękny i praktyczny.</>,
-              icon: <RiTicket2Line className="h-6 w-6 text-primary" />,
+              icon: <RiTicket2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Warianty na różne okazje',
               description: <>Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z zachowaniem jednego spójnego stylu.</>,
-              icon: <RiGiftLine className="h-6 w-6 text-primary" />,
+              icon: <RiGiftLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

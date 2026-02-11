@@ -94,8 +94,8 @@ export default function OfferDesignBusinessCardPage() {
         <Gap variant="line" />
         <SectionInfo title="Co zyskujesz zamawiając projekt wizytówki?">
           <p>
-            <strong>Profesjonalnie zaprojektowana wizytówka</strong> łączy schludny układ, czytelne dane i spójny styl, co ułatwia zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu. Wizytówka
-            staje się fizycznym śladem rozmowy, który może zamienić się w telefon lub wiadomość po kilku dniach czy tygodniach.
+            <strong>Profesjonalnie zaprojektowana wizytówka</strong> łączy schludny układ, czytelne dane i spójny styl, co ułatwia zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu.
+            Wizytówka staje się fizycznym śladem rozmowy, który może zamienić się w telefon lub wiadomość po kilku dniach czy tygodniach.
           </p>
 
           <br />
@@ -126,22 +126,22 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Czytelny układ i profesjonalny wygląd',
               description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-primary" />,
+              icon: <RiIdCardLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Otrzymujesz pliki przygotowane do druku w standardzie CMYK ze spadami.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Dopasowujemy kolory, typografię i styl do Twojej marki, aby zachować spójność wizerunku.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />
@@ -304,7 +304,7 @@ export default function OfferDesignBusinessCardPage() {
         <Gap variant="line" />
 
         <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
-      
+
         <Gap size="sm" />
       </Wrapper>
 

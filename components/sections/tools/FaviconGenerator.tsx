@@ -15,8 +15,9 @@ import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/
 import { loadImage } from '@/lib/tools/loadImage';
 import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/lib/tools/zip';
+import { useLocale } from '@/lib/LocaleContext';
 
-function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string) {
+function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string, locale: 'pl' | 'en' = 'pl') {
   const icons = outputs
     .filter((o) => o.type === 'png' && typeof o.size === 'number')
     .map((o) => ({
@@ -26,8 +27,8 @@ function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string
     }));
 
   const manifest = {
-    name: 'Twoja strona',
-    short_name: 'Strona',
+    name: locale === 'en' ? 'Your website' : 'Twoja strona',
+    short_name: locale === 'en' ? 'Site' : 'Strona',
     icons,
     theme_color: backgroundColor,
     background_color: backgroundColor,
@@ -80,6 +81,48 @@ const ui = {
     previewAndFilesLabel: 'Podgląd favicon i lista wygenerowanych plików',
     faviconIcoLabel: 'favicon.ico (32x32 w kontenerze ICO)',
   },
+  en: {
+    canvasNotSupported: 'Canvas is not supported in this browser.',
+    pngGenerationError: 'Failed to generate the PNG file.',
+    imageLoadError: 'Failed to load the image. Try again or use a different file.',
+    supportedFormatsOnly: 'Only PNG, JPG/JPEG and SVG files are supported.',
+    addBaseImage: 'First add a base image (PNG, JPG or SVG).',
+    selectAtLeastOne: 'Select at least one PNG size or the favicon.ico option.',
+    unexpectedError: 'An unexpected error occurred while generating the favicon.',
+    addBaseImageLabel: 'Add base image',
+    dragDropImage: 'Drag and drop an image here',
+    clickToSelect: 'or click to select a file from your device',
+    supportedFormats: 'Supported: PNG, JPG/JPEG, SVG',
+    selectedFile: 'Selected file:',
+    setSizesAndBackground: 'Set sizes and background',
+    pngSizes: 'PNG sizes',
+    transparentBackground: 'Transparent background (PNG/ICO)',
+    backgroundColor: 'Background color:',
+    generateFaviconIco: 'Generate favicon.ico file (32x32 base)',
+    includeWebmanifest: 'Include site.webmanifest (optional)',
+    autoDownload: 'Auto-download files after generation',
+    generateAndDownload: 'Generate and download favicon',
+    generating: 'Generating favicon\u2026',
+    generate: 'Generate favicon',
+    downloadAll: 'Download all',
+    downloadZip: 'Download package (.zip)',
+    zipping: 'Preparing ZIP archive\u2026',
+    zipGenerationError: 'Failed to prepare the ZIP archive.',
+    clear: 'Clear',
+    processing: 'Processing image and generating favicon files\u2026',
+    done: 'Done! Favicon files generated. See the file list below.',
+    previewAndFiles: 'Preview and favicon files',
+    totalSize: 'Total size:',
+    addImageToGenerate: 'Add an image on the left to generate favicon.ico and a set of PNG icons compliant with current guidelines.',
+    previewBaseImage: 'Base image preview',
+    previewFavicon: 'Favicon preview',
+    approximatePreview: 'Approximate favicon preview at small size',
+    largeIconPreview: 'Large icon (e.g. PWA)',
+    clickToPreview: 'Click to open preview in a new tab',
+    download: 'Download',
+    previewAndFilesLabel: 'Favicon preview and generated file list',
+    faviconIcoLabel: 'favicon.ico (32x32 in ICO container)',
+  },
 } as const;
 
 type FileStatus = 'idle' | 'processing' | 'done' | 'error';
@@ -89,7 +132,8 @@ const PNG_SIZES = [16, 32, 180, 192, 512];
 const DEFAULT_BACKGROUND_COLOR = rgbToHex({ r: 255, g: 255, b: 255 });
 
 export default function FaviconGenerator() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
   const [sourceFile, setSourceFile] = useState<File | null>(null);
   const [sourcePreviewUrl, setSourcePreviewUrl] = useState<string | null>(null);
   const [status, setStatus] = useState<FileStatus>('idle');
@@ -211,7 +255,7 @@ export default function FaviconGenerator() {
       }
 
       if (includeWebmanifest) {
-        const manifest = createWebmanifest(outputs, backgroundColor);
+        const manifest = createWebmanifest(outputs, backgroundColor, locale);
         const manifestBytes = new TextEncoder().encode(manifest);
         files.push({ path: 'site.webmanifest', data: manifestBytes });
       }
@@ -264,11 +308,7 @@ export default function FaviconGenerator() {
           <form onSubmit={handleGenerate} className="space-y-6">
             <div>
               <h2 className="h6 mb-2">{t.addBaseImageLabel}</h2>
-              <ToolFileDropzone
-                accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
-                onFiles={handleFiles}
-                className="tool-upload-area"
-              >
+              <ToolFileDropzone accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')} onFiles={handleFiles} className="tool-upload-area">
                 <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
                 <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
                 <Badge variant="default" size="sm" className="bg-white shadow-sm">
@@ -299,7 +339,7 @@ export default function FaviconGenerator() {
                       <label
                         key={size}
                         htmlFor={`size-${size}`}
-                        className={`inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${checked ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                        className={`inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${checked ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                       >
                         <input type="checkbox" id={`size-${size}`} checked={checked} onChange={() => toggleSize(size)} className="tool-checkbox mr-1.5 align-middle" />
                         {size}x{size}
@@ -311,13 +351,7 @@ export default function FaviconGenerator() {
 
               <ToolInfo className="mt-4 gap-2">
                 <div className="flex items-center gap-2">
-                  <input
-                    id="transparent-bg"
-                    type="checkbox"
-                    checked={transparentBackground}
-                    onChange={(e) => setTransparentBackground(e.target.checked)}
-                    className="tool-checkbox"
-                  />
+                  <input id="transparent-bg" type="checkbox" checked={transparentBackground} onChange={(e) => setTransparentBackground(e.target.checked)} className="tool-checkbox" />
                   <label htmlFor="transparent-bg" className="text-[14px]! font-medium">
                     {t.transparentBackground}
                   </label>
@@ -325,13 +359,7 @@ export default function FaviconGenerator() {
 
                 <div className="flex items-center gap-2">
                   <span className="text-light text-xs!">{t.backgroundColor}</span>
-                  <input
-                    type="color"
-                    value={backgroundColor}
-                    onChange={(e) => setBackgroundColor(e.target.value)}
-                    disabled={transparentBackground}
-                    className="tool-color-picker h-8! w-7!"
-                  />
+                  <input type="color" value={backgroundColor} onChange={(e) => setBackgroundColor(e.target.value)} disabled={transparentBackground} className="tool-color-picker h-8! w-7!" />
                 </div>
               </ToolInfo>
 
@@ -344,13 +372,7 @@ export default function FaviconGenerator() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <input
-                    id="include-webmanifest"
-                    type="checkbox"
-                    checked={includeWebmanifest}
-                    onChange={(e) => setIncludeWebmanifest(e.target.checked)}
-                    className="tool-checkbox"
-                  />
+                  <input id="include-webmanifest" type="checkbox" checked={includeWebmanifest} onChange={(e) => setIncludeWebmanifest(e.target.checked)} className="tool-checkbox" />
                   <label htmlFor="include-webmanifest" className="text-[14px]! font-medium">
                     {t.includeWebmanifest}
                   </label>
@@ -425,9 +447,13 @@ export default function FaviconGenerator() {
                 <div key={f.name} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
                   <div className="min-w-0 flex-1">
                     <p className="text-dark truncate text-[14px]! font-medium">{f.name}</p>
-                    <p className="text-light text-xs!">{f.label} · {f.size}</p>
+                    <p className="text-light text-xs!">
+                      {f.label} · {f.size}
+                    </p>
                   </div>
-                  <Badge variant="success" size="md">{t.done}</Badge>
+                  <Badge variant="success" size="md">
+                    {t.done}
+                  </Badge>
                 </div>
               ))}
             </div>
@@ -436,9 +462,7 @@ export default function FaviconGenerator() {
           {hasSource && (
             <ToolInfo className="flex flex-wrap items-center gap-4">
               <div>
-                <p className="mb-2 text-[14px]! font-medium">
-                  {t.previewBaseImage}
-                </p>
+                <p className="mb-2 text-[14px]! font-medium">{t.previewBaseImage}</p>
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white">

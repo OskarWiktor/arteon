@@ -19,9 +19,9 @@ export default function SectionBlogCardHorizontal({ imageSrc, imageAlt, title, d
       </div>
 
       <div className="flex flex-1 flex-col justify-center">
-        {category && <span className="text-xs font-medium tracking-wider text-primary-mid uppercase">{category}</span>}
+        {category && <span className="text-primary-mid text-xs font-medium tracking-wider uppercase">{category}</span>}
 
-        <h3 className="mt-1 font-semibold transition group-hover:text-primary-mid">{title}</h3>
+        <h3 className="group-hover:text-primary-mid mt-1 font-semibold transition">{title}</h3>
 
         <p className="text-light mt-2 line-clamp-2 text-sm">{description}</p>
 

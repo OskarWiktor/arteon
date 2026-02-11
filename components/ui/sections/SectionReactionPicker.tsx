@@ -33,7 +33,7 @@ export default function SectionReactionPicker({ reactions, selected: initialSele
               key={reaction.emoji}
               type="button"
               onClick={() => handleSelect(reaction.emoji)}
-              className={`rounded-lg p-2 text-2xl transition hover:scale-110 hover:bg-primary-light ${isSelected ? 'scale-110 bg-primary-light' : ''}`}
+              className={`hover:bg-primary-light rounded-lg p-2 text-2xl transition hover:scale-110 ${isSelected ? 'bg-primary-light scale-110' : ''}`}
               aria-label={reaction.label}
               aria-pressed={isSelected}
             >

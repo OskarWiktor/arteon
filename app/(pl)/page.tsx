@@ -205,9 +205,9 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz pełnym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci.
-                    Zajmujemy się również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc
-                    zaproponować działania, które trafiają dokładnie w Twoją grupę odbiorców.
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz pełnym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci. Zajmujemy
+                    się również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc zaproponować
+                    działania, które trafiają dokładnie w Twoją grupę odbiorców.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/uslugi/marketing">
@@ -251,27 +251,27 @@ export default function HomePage() {
           items={[
             {
               title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: <RiArticleLine className="h-6 w-6 text-primary" />,
+              icon: <RiArticleLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Spójne projekty graficzne online oraz offline',
-              icon: <RiBrushLine className="h-6 w-6 text-primary" />,
+              icon: <RiBrushLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: <GoLaw className="h-6 w-6 text-primary" />,
+              icon: <GoLaw className="text-primary h-6 w-6" />,
             },
             {
               title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: <RiBarChart2Line className="h-6 w-6 text-primary" />,
+              icon: <RiBarChart2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
-              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
+              icon: <RiBookOpenLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: <MdSupportAgent className="h-6 w-6 text-primary" />,
+              icon: <MdSupportAgent className="text-primary h-6 w-6" />,
             },
           ]}
         />

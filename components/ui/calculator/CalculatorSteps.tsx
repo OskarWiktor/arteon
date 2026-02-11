@@ -45,7 +45,7 @@ export default function CalculatorSteps({ step, currentStep, activeSteps, select
 
       <h3>{step.title.replace(/^BRANCH:\s*/, '')}</h3>
       {step.tooltip && <p className="text-light">{step.tooltip}</p>}
-      {error && <p className="mt-2 text-error-mid">{error}</p>}
+      {error && <p className="text-error-mid mt-2">{error}</p>}
 
       <div className="mt-8 grid gap-2 md:grid-cols-2">
         {step.options.map((opt) => {

@@ -196,42 +196,42 @@ export default function OfferDesignPage() {
             {
               title: 'Pełną własność plików i praw',
               description: <>Po zakończeniu projektu przekazujemy komplet plików źródłowych i użytkowych wraz z licencjami. Masz pełną kontrolę nad materiałami firmowymi - dziś i w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-primary" />,
+              icon: <RiKey2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pliki gotowe do druku i wdrożenia online',
               description: <>Dostarczamy pakiet do druku a także warianty do sieci - wszystko zoptymalizowane i gotowe do użycia.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Konsekwentną identyfikację wizualną',
               description: <>Ustalamy system kolorów i typografii oraz reguły stosowania. Dzięki temu wszystkie materiały firmowe mówią jednym językiem i wzmacniają markę przy każdym kontakcie.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Skład DTP z dbałością o detale',
               description: <>Kontrolujemy hierarchię, kerning i siatki. Przy katalogach i ulotkach pilnujemy czytelności, marginesów bezpieczeństwa oraz logiki łamania treści.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-primary" />,
+              icon: <RiBrushLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Dobór i obróbkę zdjęć',
               description: <>Pomagamy w wyborze zdjęć oraz dostosowujemy kadry, tła i kolory. Pliki przygotowujemy w zgodnych profilach barwnych do druku i na stronę internetową.</>,
-              icon: <RiImageLine className="h-6 w-6 text-primary" />,
+              icon: <RiImageLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Dostępność i czytelność',
               description: <>Projektujemy tak, aby materiały były zrozumiałe i czytelne. Kontrast, wielkości fontów i hierarchia informacji wspierają odbiorcę w szybkim podjęciu decyzji.</>,
-              icon: <IoAccessibilityOutline className="h-6 w-6 text-primary" />,
+              icon: <IoAccessibilityOutline className="text-primary h-6 w-6" />,
             },
             {
               title: 'Gwarancję i wsparcie po wdrożeniu',
               description: <>Po finalizacji masz nasze wsparcie przez 2 miesiące. Ewentualne poprawki techniczne wykonujemy w ramach gwarancji, a na życzenie wprowadzamy płatne zmiany.</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-primary" />,
+              icon: <RiLifebuoyLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Otrzymujesz ofertę z zakresem i terminami. Informujemy na bieżąco o ewentualnych kosztach dodatkowych, zanim podejmiemy kolejne kroki.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

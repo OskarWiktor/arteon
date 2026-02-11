@@ -4,15 +4,12 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Suspense } from 'react';
 
+import { headers } from 'next/headers';
+
 import CookieConsent from '@/components/shared/CookieConsent';
-import Footer from '@/components/shared/Footer';
-import Navigation from '@/components/shared/Navigation';
 import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
-import { LocaleProvider, type Locale } from '@/lib/LocaleContext';
-import { getActiveSiteKey } from '@/lib/siteKeyDetection';
-import { SiteProvider } from '@/lib/SiteContext';
 import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 import './globals.css';
@@ -27,9 +24,7 @@ const metadataBase = new URL(siteUrl);
 
 export const metadata: Metadata = {
   metadataBase,
-  robots: IS_PRODUCTION
-    ? { index: true, follow: true, 'max-image-preview': 'large' as const, 'max-snippet': -1, 'max-video-preview': -1 }
-    : { index: false, follow: false },
+  robots: IS_PRODUCTION ? { index: true, follow: true, 'max-image-preview': 'large' as const, 'max-snippet': -1, 'max-video-preview': -1 } : { index: false, follow: false },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -91,14 +86,13 @@ const websiteJsonLd = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // site scaffold only - no production behavior changes while flag disabled
-  const locale: Locale = 'pl';
-  // When SITE_BY_DOMAIN_ENABLED=false, getActiveSiteKey() always returns 'pl'
-  const siteKey = getActiveSiteKey();
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') ?? '';
+  const lang = pathname.startsWith('/en') ? 'en' : 'pl';
 
   return (
-    <html lang={locale}>
+    <html lang={lang}>
       <head>
         {/* Google Consent Mode v2 - MUSI być PRZED wszystkimi skryptami Google (GA, AdSense) */}
         <Script id="google-consent-default" strategy="beforeInteractive">
@@ -157,25 +151,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className="font-sans antialiased">
-        <CookieConsent />
-        <SkipToContent />
+        <CookieConsent locale={lang} />
+        <SkipToContent locale={lang} />
 
         <Suspense fallback={null}>
           <FocusManager />
           <RouteAnnouncer />
         </Suspense>
 
-        <SiteProvider siteKey={siteKey}>
-          <LocaleProvider value={locale}>
-            <Navigation />
-
-            <main id="main-content" tabIndex={-1}>
-              {children}
-            </main>
-
-            <Footer />
-          </LocaleProvider>
-        </SiteProvider>
+        {children}
 
         <Analytics />
         <SpeedInsights />

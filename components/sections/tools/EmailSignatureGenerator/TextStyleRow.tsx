@@ -21,12 +21,9 @@ export default function TextStyleRow({ elementKey, label, colorLabel, sizeLabel,
       <div className="flex items-center gap-2">
         <span className="text-light w-12 text-xs!">{colorLabel}:</span>
         <button type="button" onClick={() => onColorChange(elementKey, null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
-          <RiRefreshLine className="h-3.5 w-3.5 text-primary" />
+          <RiRefreshLine className="text-primary h-3.5 w-3.5" />
         </button>
-        <div
-          className={`h-7 w-7 rounded border-2 ${currentColor === null ? 'border-mid' : 'border-neutral-300'}`}
-          style={{ backgroundColor: currentColor || defaultColor }}
-        />
+        <div className={`h-7 w-7 rounded border-2 ${currentColor === null ? 'border-mid' : 'border-neutral-300'}`} style={{ backgroundColor: currentColor || defaultColor }} />
         {customColors.map((color) => (
           <button
             key={color}
@@ -37,38 +34,23 @@ export default function TextStyleRow({ elementKey, label, colorLabel, sizeLabel,
           />
         ))}
         <div className="relative">
-          <input
-            type="color"
-            value={currentColor || defaultColor}
-            onChange={(e) => onColorChange(elementKey, e.target.value)}
-            className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-          />
-          <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-primary8 hover:border-primary-light0">
-            <RiAddLine className="h-3.5 w-3.5 text-light" />
+          <input type="color" value={currentColor || defaultColor} onChange={(e) => onColorChange(elementKey, e.target.value)} className="absolute inset-0 h-full w-full cursor-pointer opacity-0" />
+          <div className="border-primary8 hover:border-primary-light0 flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed">
+            <RiAddLine className="text-light h-3.5 w-3.5" />
           </div>
         </div>
       </div>
       <div className="flex items-center gap-2">
         <span className="text-light w-12 text-xs!">{sizeLabel}:</span>
-        <button
-          type="button"
-          onClick={() => onSizeChange(elementKey, -2)}
-          className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-          aria-label="Zmniejsz rozmiar"
-        >
-          <RiSubtractLine className="h-3.5 w-3.5 text-primary" />
+        <button type="button" onClick={() => onSizeChange(elementKey, -2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zmniejsz rozmiar">
+          <RiSubtractLine className="text-primary h-3.5 w-3.5" />
         </button>
         <span className="w-10 text-center text-xs! font-medium">
           {sizeOffset > 0 ? '+' : ''}
           {sizeOffset}
         </span>
-        <button
-          type="button"
-          onClick={() => onSizeChange(elementKey, 2)}
-          className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-          aria-label="Zwiększ rozmiar"
-        >
-          <RiAddLine className="h-3.5 w-3.5 text-primary" />
+        <button type="button" onClick={() => onSizeChange(elementKey, 2)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" aria-label="Zwiększ rozmiar">
+          <RiAddLine className="text-primary h-3.5 w-3.5" />
         </button>
       </div>
     </div>

@@ -493,51 +493,51 @@ Treści muszą brzmieć naturalnie - jak napisane przez człowieka, nie przez AI
 
 Frazy, które AI nadużywa jako "klej zdaniowy". Nie wnoszą wartości, a sygnalizują tekst generowany.
 
-| ❌ ZAKAZANE                                | Dlaczego złe                    | ✅ Zamiennik                                  |
-| ------------------------------------------ | ------------------------------- | --------------------------------------------- |
-| „Jest to X" na początku zdania             | AI-filler definiujący           | „To X" / po prostu opisz                      |
+| ❌ ZAKAZANE                               | Dlaczego złe                    | ✅ Zamiennik                                 |
+| ----------------------------------------- | ------------------------------- | -------------------------------------------- |
+| „Jest to X" na początku zdania            | AI-filler definiujący           | „To X" / po prostu opisz                     |
 | „Dzięki temu" (nadużywane, >1× na sekcję) | AI uwielbia ten łącznik         | Max 1× na sekcję, reszta: „-", „więc", „to"  |
-| „W praktyce oznacza to, że..."             | Zbędne tłumaczenie oczywistości | Usuń i przejdź do sedna                       |
-| „co sprawia, że..."                        | Sztuczny łącznik                | Napisz wprost skutek                          |
-| „Przekłada się to na..."                   | Korpo-żargon                    | Napisz wprost co z czego wynika               |
-| „właśnie dlatego"                          | Zbędne wzmocnienie              | „dlatego"                                     |
-| „Warto zauważyć/podkreślić/wspomnieć"     | Wstęp o wstępie                 | Usuń ramę, przejdź do treści                  |
-| „Należy pamiętać, że..."                   | Bezosobowy filler               | Usuń, zacznij od treści                       |
-| „w erze cyfrowej/internetu"                | Pusty kontekst czasowy          | Usuń, zacznij od faktu                        |
-| „jest kluczowy/kluczowa/kluczowe"          | Ogólnik zamiast konkretu        | Opisz konkretną rolę                          |
-| „stanowi fundament/podstawę"               | Korpo-pustosłowie               | Napisz wprost co robi                         |
-| „ogromny wpływ/znaczenie/potencjał"        | Przesada, brak konkretu         | „duży", „istotny" lub podaj dane              |
-| „kompleksowy/kompleksowo"                  | Korpo-filler nr 1               | „pełny", „szczegółowy", „w pełnym zakresie"  |
-| „idealne rozwiązanie"                      | Marketingowa przesada           | „sprawdza się najlepiej w..." + konkret       |
-| „aspekt" (nadużywane)                      | AI-ulubieniec                   | „element", „cecha", „część" lub przeformułuj |
-| „z myślą o" (nadużywane, >1× na stronę)   | Powtarzalny wzorzec AI          | Max 1× na stronę                              |
-| „nie tylko X, ale także Y"                | Negative parallelism, sygnał AI | Napisz wprost oba elementy osobno             |
-| „odgrywa kluczową rolę"                   | Puste wzmocnienie               | Opisz konkretnie co robi i jaki ma wpływ      |
-| „niezwykle istotny/ważny"                 | Przesada bez konkretu            | „ważny" + wyjaśnij dlaczego                   |
-| „ma ogromne znaczenie"                    | Przesada, brak danych            | Opisz konkretny wpływ lub podaj dane          |
-| „rewolucjonizuje"                         | Marketingowa hiperbola           | „zmienia sposób" + opisz co konkretnie        |
-| „innowacyjny" (bez konkretu)              | Pusty przymiotnik                | Opisz co dokładnie jest nowe                   |
-| „bezproblemowa integracja"                | Korpo-filler                     | „łatwe połączenie z..." + konkret              |
-| „przełomowy"                              | Hiperbola AI                     | Opisz konkretną zmianę                         |
-| „szeroki wachlarz/zakres"                 | Ogólnik zamiast listy            | Wymień konkretne elementy                      |
-| „doskonale się sprawdza"                  | Przesada bez dowodu              | „sprawdza się w..." + konkretny kontekst       |
-| „nieodzowny element"                      | Korpo-pustosłowie                | Opisz konkretną funkcję                        |
-| „stanowi" / „służy jako" (zamiast „jest") | AI unika prostych kopulatywów   | Używaj „jest/są" tam, gdzie to naturalne       |
+| „W praktyce oznacza to, że..."            | Zbędne tłumaczenie oczywistości | Usuń i przejdź do sedna                      |
+| „co sprawia, że..."                       | Sztuczny łącznik                | Napisz wprost skutek                         |
+| „Przekłada się to na..."                  | Korpo-żargon                    | Napisz wprost co z czego wynika              |
+| „właśnie dlatego"                         | Zbędne wzmocnienie              | „dlatego"                                    |
+| „Warto zauważyć/podkreślić/wspomnieć"     | Wstęp o wstępie                 | Usuń ramę, przejdź do treści                 |
+| „Należy pamiętać, że..."                  | Bezosobowy filler               | Usuń, zacznij od treści                      |
+| „w erze cyfrowej/internetu"               | Pusty kontekst czasowy          | Usuń, zacznij od faktu                       |
+| „jest kluczowy/kluczowa/kluczowe"         | Ogólnik zamiast konkretu        | Opisz konkretną rolę                         |
+| „stanowi fundament/podstawę"              | Korpo-pustosłowie               | Napisz wprost co robi                        |
+| „ogromny wpływ/znaczenie/potencjał"       | Przesada, brak konkretu         | „duży", „istotny" lub podaj dane             |
+| „kompleksowy/kompleksowo"                 | Korpo-filler nr 1               | „pełny", „szczegółowy", „w pełnym zakresie"  |
+| „idealne rozwiązanie"                     | Marketingowa przesada           | „sprawdza się najlepiej w..." + konkret      |
+| „aspekt" (nadużywane)                     | AI-ulubieniec                   | „element", „cecha", „część" lub przeformułuj |
+| „z myślą o" (nadużywane, >1× na stronę)   | Powtarzalny wzorzec AI          | Max 1× na stronę                             |
+| „nie tylko X, ale także Y"                | Negative parallelism, sygnał AI | Napisz wprost oba elementy osobno            |
+| „odgrywa kluczową rolę"                   | Puste wzmocnienie               | Opisz konkretnie co robi i jaki ma wpływ     |
+| „niezwykle istotny/ważny"                 | Przesada bez konkretu           | „ważny" + wyjaśnij dlaczego                  |
+| „ma ogromne znaczenie"                    | Przesada, brak danych           | Opisz konkretny wpływ lub podaj dane         |
+| „rewolucjonizuje"                         | Marketingowa hiperbola          | „zmienia sposób" + opisz co konkretnie       |
+| „innowacyjny" (bez konkretu)              | Pusty przymiotnik               | Opisz co dokładnie jest nowe                 |
+| „bezproblemowa integracja"                | Korpo-filler                    | „łatwe połączenie z..." + konkret            |
+| „przełomowy"                              | Hiperbola AI                    | Opisz konkretną zmianę                       |
+| „szeroki wachlarz/zakres"                 | Ogólnik zamiast listy           | Wymień konkretne elementy                    |
+| „doskonale się sprawdza"                  | Przesada bez dowodu             | „sprawdza się w..." + konkretny kontekst     |
+| „nieodzowny element"                      | Korpo-pustosłowie               | Opisz konkretną funkcję                      |
+| „stanowi" / „służy jako" (zamiast „jest") | AI unika prostych kopulatywów   | Używaj „jest/są" tam, gdzie to naturalne     |
 
 ### ZAKAZANE wzorce strukturalne AI (KRYTYCZNE)
 
 AI-content ma charakterystyczne wzorce strukturalne, które algorytmy Google wykrywają przez pattern analysis. Źródła: Google Search Quality Guidelines, Wikipedia:Signs of AI writing, SiegeMedia, Stanford 2024.
 
-| Wzorzec | Opis problemu | Jak naprawić |
-|---------|---------------|--------------|
-| **Szablonowe otwarcia** | "W dzisiejszym konkurencyjnym świecie...", "W dobie cyfryzacji..." - AI zaczyna od ogólnika | Zacznij od konkretu, faktu, pytania lub danych |
-| **Wyrównane akapity** | AI tworzy akapity o zbliżonej długości (~3-4 zdania każdy) - sygnał niskiej burstiness | Celowo mieszaj długość: 1 zdanie, 3 zdania, 5 zdań, 1 zdanie |
-| **Formulaiczne podsumowania** | "Wdrażając X, Twoja firma zyska Y" - szablon zakończenia akapitu | Zamień na konkretną rekomendację lub CTA |
-| **Nadużycie trójek (rule of three)** | "szybkość, bezpieczeństwo i niezawodność" - AI lubi trójki przymiotników | Unikaj nadmiernego stosowania; jeśli lista, rozwiń każdy punkt |
-| **Negatywne paralelizmy** | "To nie tylko X, to także Y" - AI buduje efekt przez negację | Napisz wprost co to jest, bez negacji dla efektu |
-| **Podsumowanie bez wartości** | Powtórzenie punktów z artykułu bez nowego insightu | Dodaj konkretną rekomendację, następny krok lub nowy wniosek |
-| **Nadużycie myślników (-)** | AI nadużywa em dashes zamiast przecinków, nawiasów, dwukropków | Max 2 myślniki na sekcję; reszta: przecinki, nawiasy, dwukropki |
-| **Powtarzanie tej samej myśli** | AI lubi powiedzieć to samo 2-3 razy innymi słowami | Każde zdanie musi wnosić nową informację |
+| Wzorzec                              | Opis problemu                                                                               | Jak naprawić                                                    |
+| ------------------------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **Szablonowe otwarcia**              | "W dzisiejszym konkurencyjnym świecie...", "W dobie cyfryzacji..." - AI zaczyna od ogólnika | Zacznij od konkretu, faktu, pytania lub danych                  |
+| **Wyrównane akapity**                | AI tworzy akapity o zbliżonej długości (~3-4 zdania każdy) - sygnał niskiej burstiness      | Celowo mieszaj długość: 1 zdanie, 3 zdania, 5 zdań, 1 zdanie    |
+| **Formulaiczne podsumowania**        | "Wdrażając X, Twoja firma zyska Y" - szablon zakończenia akapitu                            | Zamień na konkretną rekomendację lub CTA                        |
+| **Nadużycie trójek (rule of three)** | "szybkość, bezpieczeństwo i niezawodność" - AI lubi trójki przymiotników                    | Unikaj nadmiernego stosowania; jeśli lista, rozwiń każdy punkt  |
+| **Negatywne paralelizmy**            | "To nie tylko X, to także Y" - AI buduje efekt przez negację                                | Napisz wprost co to jest, bez negacji dla efektu                |
+| **Podsumowanie bez wartości**        | Powtórzenie punktów z artykułu bez nowego insightu                                          | Dodaj konkretną rekomendację, następny krok lub nowy wniosek    |
+| **Nadużycie myślników (-)**          | AI nadużywa em dashes zamiast przecinków, nawiasów, dwukropków                              | Max 2 myślniki na sekcję; reszta: przecinki, nawiasy, dwukropki |
+| **Powtarzanie tej samej myśli**      | AI lubi powiedzieć to samo 2-3 razy innymi słowami                                          | Każde zdanie musi wnosić nową informację                        |
 
 ### Zasady anty-AI - jakość i E-E-A-T (KRYTYCZNE)
 

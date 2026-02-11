@@ -4,15 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiFileTextLine,
-  RiVipCrownLine,
-  RiCoupon2Line,
-  RiPencilRuler2Line,
-  RiMoneyDollarCircleLine,
-} from 'react-icons/ri';
+import { RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiVipCrownLine, RiCoupon2Line, RiPencilRuler2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -147,29 +139,29 @@ export default function OfferDesignLoyaltyCardPage() {
                   Tworzymy karty dopasowane do specyfiki działalności - salonów, kawiarni, siłowni, butików i innych punktów usługowych. Zasady programu są czytelne zarówno dla Ciebie, jak i klientów.
                 </>
               ),
-              icon: <RiVipCrownLine className="h-6 w-6 text-primary" />,
+              icon: <RiVipCrownLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale dopasowujemy do Twojej identyfikacji wizualnej. Karta naturalnie uzupełnia pozostałe materiały i wzmacnia profesjonalny wizerunek firmy.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Gotowość do druku',
               description: (
                 <>Dostarczamy pliki w formacie gotowym do druku, z odpowiednimi spadami i specyfikacją dla drukarni. Możesz od razu zamówić nakład bez dodatkowych przeróbek technicznych.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Numeracje i pola pieczątek',
               description: <>Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia nagród. Dzięki temu obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.</>,
-              icon: <RiCoupon2Line className="h-6 w-6 text-primary" />,
+              icon: <RiCoupon2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

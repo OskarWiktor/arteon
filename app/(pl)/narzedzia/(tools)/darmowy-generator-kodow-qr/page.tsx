@@ -273,7 +273,8 @@ export default function Page() {
           <p className="text-mid mb-4">Znajomość parametrów technicznych pomaga tworzyć kody QR, które będą czytelne w każdych warunkach:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Pojemność danych</strong> - kod QR może pomieścić do 7089 cyfr, 4296 znaków alfanumerycznych lub 2953 bajtów danych binarnych. W praktyce dla URL i wizytówek ta pojemność jest więcej niż wystarczająca.
+              <strong>Pojemność danych</strong> - kod QR może pomieścić do 7089 cyfr, 4296 znaków alfanumerycznych lub 2953 bajtów danych binarnych. W praktyce dla URL i wizytówek ta pojemność jest
+              więcej niż wystarczająca.
             </li>
             <li>
               <strong>Korekcja błędów Reed-Solomon</strong> - algorytm matematyczny pozwalający odczytać kod nawet gdy część jest uszkodzona lub zasłonięta. Poziomy: L (7%), M (15%), Q (25%), H (30%).
@@ -282,7 +283,8 @@ export default function Page() {
               <strong>Margines</strong> - biały obszar wokół kodu niezbędny do prawidłowego skanowania. Zalecane minimum to 4 moduły (jednostki kodu).
             </li>
             <li>
-              <strong>Minimalny rozmiar do druku</strong> - dla standardowych warunków skanowania kod powinien mieć minimum 2x2 cm. Dla druku na dużych formatach (banery, billboardy) - proporcjonalnie więcej.
+              <strong>Minimalny rozmiar do druku</strong> - dla standardowych warunków skanowania kod powinien mieć minimum 2x2 cm. Dla druku na dużych formatach (banery, billboardy) - proporcjonalnie
+              więcej.
             </li>
             <li>
               <strong>Kontrast</strong> - współczynnik kontrastu między kodem a tłem powinien wynosić minimum 3:1. Generator automatycznie ostrzega o zbyt niskim kontraście.
@@ -354,11 +356,15 @@ export default function Page() {
             <div className="space-y-3">
               <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3">
                 <span className="text-dark text-sm! font-medium">Rozmiar</span>
-                <Badge variant="default" size="sm">300 px</Badge>
+                <Badge variant="default" size="sm">
+                  300 px
+                </Badge>
               </div>
               <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3">
                 <span className="text-dark text-sm! font-medium">Margines</span>
-                <Badge variant="default" size="sm">4</Badge>
+                <Badge variant="default" size="sm">
+                  4
+                </Badge>
               </div>
               <div className="flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3">
                 <span className="text-dark text-sm! font-medium">Kolor kodu</span>
@@ -405,11 +411,15 @@ export default function Page() {
               ].map((item) => (
                 <div key={item.level} className="rounded-lg border border-neutral-200 bg-white p-3">
                   <div className="mb-2 flex items-center justify-between">
-                    <span className="text-dark text-sm! font-medium">{item.level} ({item.label})</span>
-                    <Badge variant={item.level === 'M' ? 'selected' : 'default'} size="sm">{item.pct}</Badge>
+                    <span className="text-dark text-sm! font-medium">
+                      {item.level} ({item.label})
+                    </span>
+                    <Badge variant={item.level === 'M' ? 'selected' : 'default'} size="sm">
+                      {item.pct}
+                    </Badge>
                   </div>
                   <div className="h-2 w-full rounded-full bg-neutral-100">
-                    <div className="h-2 rounded-full bg-primary" style={{ width: `${parseInt(item.pct)}%`, minWidth: '12px' }} />
+                    <div className="bg-primary h-2 rounded-full" style={{ width: `${parseInt(item.pct)}%`, minWidth: '12px' }} />
                   </div>
                 </div>
               ))}
@@ -430,7 +440,8 @@ export default function Page() {
               <strong>Q (Quartile / Wysoki) - 25%</strong> - większa odporność na uszkodzenia. Wybierz dla kodów drukowanych na materiałach narażonych na zabrudzenie.
             </li>
             <li>
-              <strong>H (High / Maksymalny) - 30%</strong> - najwyższa odporność. Zalecany do druku na materiałach zewnętrznych, opakowaniach i sytuacji, gdzie kod może być częściowo zasłonięty (np. logo w środku).
+              <strong>H (High / Maksymalny) - 30%</strong> - najwyższa odporność. Zalecany do druku na materiałach zewnętrznych, opakowaniach i sytuacji, gdzie kod może być częściowo zasłonięty (np.
+              logo w środku).
             </li>
           </ul>
           <p className="text-mid mt-3">

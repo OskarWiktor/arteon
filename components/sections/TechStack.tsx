@@ -105,13 +105,13 @@ export default function TechStack() {
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
-      <h2 id="techstack-heading" className=" h4 mb-4 md:mb-6 lg:mb-8">
+      <h2 id="techstack-heading" className="h4 mb-4 md:mb-6 lg:mb-8">
         {t.heading}
       </h2>
 
       <div
         ref={containerRef}
-        className="overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+        className="focus-visible:ring-primary overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         aria-label={t.scrollableListAriaLabel}
         tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}
@@ -123,8 +123,8 @@ export default function TechStack() {
       >
         <motion.div ref={trackRef} style={{ x, willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
           {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
-            <IconText key={`${label}-${index}`} icon={<Icon className="h-auto w-6 text-primary" aria-hidden="true" />} gap="2" className="shrink-0">
-              <span className="text-2xl text-primary">{label}</span>
+            <IconText key={`${label}-${index}`} icon={<Icon className="text-primary h-auto w-6" aria-hidden="true" />} gap="2" className="shrink-0">
+              <span className="text-primary text-2xl">{label}</span>
             </IconText>
           ))}
         </motion.div>

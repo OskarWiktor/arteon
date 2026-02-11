@@ -430,17 +430,17 @@ export default function Page() {
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Zdjęcie JPG (aparat)</p>
               <p className="text-light text-sm">2.4 MB → 890 KB</p>
-              <p className="mt-1 text-sm font-medium text-success-icon">Oszczędność: ~63%</p>
+              <p className="text-success-icon mt-1 text-sm font-medium">Oszczędność: ~63%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Grafika PNG (logo)</p>
               <p className="text-light text-sm">180 KB → 45 KB</p>
-              <p className="mt-1 text-sm font-medium text-success-icon">Oszczędność: ~75%</p>
+              <p className="text-success-icon mt-1 text-sm font-medium">Oszczędność: ~75%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Zdjęcie produktowe</p>
               <p className="text-light text-sm">500 KB → 185 KB</p>
-              <p className="mt-1 text-sm font-medium text-success-icon">Oszczędność: ~63%</p>
+              <p className="text-success-icon mt-1 text-sm font-medium">Oszczędność: ~63%</p>
             </div>
           </div>
           <p className="text-light mt-4 text-sm">

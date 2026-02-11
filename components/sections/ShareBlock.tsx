@@ -42,7 +42,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
           href={facebookHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-xl bg-brand-facebook px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-brand-facebook focus-visible:ring-offset-2 focus-visible:outline-none"
+          className="bg-brand-facebook focus-visible:ring-brand-facebook flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
         >
           <RiFacebookFill className="h-5 w-5" />
           {t.shareFacebook}
@@ -62,7 +62,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
           href={linkedinHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-xl bg-brand-linkedin px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-brand-linkedin focus-visible:ring-offset-2 focus-visible:outline-none"
+          className="bg-brand-linkedin focus-visible:ring-brand-linkedin flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
         >
           <RiLinkedinBoxFill className="h-5 w-5" />
           {t.shareLinkedIn}
@@ -70,7 +70,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
 
         <a
           href={mailHref}
-          className="flex items-center gap-2 rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-medium text-primary transition hover:bg-neutral-50 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+          className="text-primary flex items-center gap-2 rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-medium transition hover:bg-neutral-50 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
         >
           <RiMailLine className="h-5 w-5" />
           {t.shareEmail}
@@ -81,7 +81,7 @@ export default function ShareBlock({ url, title, className = '' }: ShareBlockPro
           label={t.copyLink}
           copiedLabel={t.copied}
           onError={() => window.prompt(t.copyPrompt, url)}
-          className="flex items-center gap-2 rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-medium text-primary transition hover:bg-neutral-50 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
+          className="text-primary flex items-center gap-2 rounded-xl border border-black/10 bg-white px-4 py-2 text-sm font-medium transition hover:bg-neutral-50 focus-visible:ring-2 focus-visible:ring-black/40 focus-visible:ring-offset-2 focus-visible:outline-none"
         />
       </div>
     </section>

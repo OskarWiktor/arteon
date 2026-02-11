@@ -40,15 +40,7 @@ export default function SectionPackages({ title, subtitle, description, packages
   return (
     <section data-section="packages" aria-labelledby={title ? 'packages-title' : undefined}>
       <Wrapper>
-        <SectionHeader
-          subtitle={subtitle}
-          title={title}
-          description={description}
-          headingLevel="h2"
-          titleId="packages-title"
-          headingClassName=""
-          descriptionClassName=""
-        />
+        <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" titleId="packages-title" headingClassName="" descriptionClassName="" />
 
         <div className="overflow-x-auto">
           <table className="w-full min-w-[600px] border-collapse">
@@ -56,7 +48,7 @@ export default function SectionPackages({ title, subtitle, description, packages
               <tr className="border-b border-black/10">
                 <th className="text-light p-4 text-left text-sm font-medium">{t.feature}</th>
                 {displayPackages.map((pkg, idx) => (
-                  <th key={idx} className={`p-4 text-center text-sm font-medium ${idx === highlightedIndex ? 'rounded-t-2xl bg-primary-light' : ''}`}>
+                  <th key={idx} className={`p-4 text-center text-sm font-medium ${idx === highlightedIndex ? 'bg-primary-light rounded-t-2xl' : ''}`}>
                     {pkg.name}
                   </th>
                 ))}
@@ -70,7 +62,7 @@ export default function SectionPackages({ title, subtitle, description, packages
                     const hasFeature = feature.values[pIdx] ?? false;
                     return (
                       <td key={pIdx} className={`p-4 text-center ${pIdx === highlightedIndex ? 'bg-neutral-50' : ''}`}>
-                        {hasFeature ? <RiCheckLine className="mx-auto h-5 w-5 text-success-icon" aria-label="Tak" /> : <RiCloseLine className="mx-auto h-5 w-5 text-primary-light" aria-label="Nie" />}
+                        {hasFeature ? <RiCheckLine className="text-success-icon mx-auto h-5 w-5" aria-label="Tak" /> : <RiCloseLine className="text-primary-light mx-auto h-5 w-5" aria-label="Nie" />}
                       </td>
                     );
                   })}
@@ -90,7 +82,7 @@ export default function SectionPackages({ title, subtitle, description, packages
                     .filter((f) => f.values[pIdx])
                     .map((feature, fIdx) => (
                       <li key={fIdx} className="flex items-center gap-2 text-sm">
-                        <RiCheckLine className="h-4 w-4 text-success-icon" />
+                        <RiCheckLine className="text-success-icon h-4 w-4" />
                         {feature.name}
                       </li>
                     ))}

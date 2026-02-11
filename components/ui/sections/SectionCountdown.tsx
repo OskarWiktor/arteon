@@ -52,7 +52,7 @@ export default function SectionCountdown({ title, description, targetDate, btnLa
   ];
 
   return (
-    <section data-section="countdown" className="bg-gradient-to-r from-error-icon to-accent-orange py-12 text-white">
+    <section data-section="countdown" className="from-error-icon to-accent-orange bg-gradient-to-r py-12 text-white">
       <Wrapper>
         <div className="text-center">
           <h2 className="text-2xl font-bold">{title}</h2>
@@ -68,7 +68,7 @@ export default function SectionCountdown({ title, description, targetDate, btnLa
           </div>
 
           {btnLabel && btnLink && (
-            <Link href={btnLink} className="mt-8 inline-block rounded-xl bg-white px-8 py-3 font-medium text-error-icon transition hover:bg-white/90">
+            <Link href={btnLink} className="text-error-icon mt-8 inline-block rounded-xl bg-white px-8 py-3 font-medium transition hover:bg-white/90">
               {btnLabel}
             </Link>
           )}

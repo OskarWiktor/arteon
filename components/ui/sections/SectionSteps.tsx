@@ -193,7 +193,7 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
         return (
           <li key={index} className="flex flex-col items-stretch">
             <article
-              className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'rounded-2xl bg-primary text-white shadow-lg' : 'surface-card-lift border border-neutral-200'}`}
+              className={`flex h-full w-full flex-col p-4 md:p-6 ${variant === 'contact' ? 'text-center' : ''} ${highlighted ? 'bg-primary rounded-2xl text-white shadow-lg' : 'surface-card-lift border border-neutral-200'}`}
             >
               {topImageSrc && (
                 <div className="mb-4 md:mb-6">

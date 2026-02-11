@@ -47,7 +47,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
               key={index}
               type="button"
               onClick={() => openLightbox(index)}
-              className="group relative aspect-square overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="group focus-visible:ring-primary relative aspect-square overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2"
             >
               <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" />
               {image.title && (

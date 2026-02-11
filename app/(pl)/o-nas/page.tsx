@@ -39,13 +39,19 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroBanner title="O nas" description="Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
+      <HeroBanner
+        title="O nas"
+        description="Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty"
+        backgroundImage="/assets/arteon-logo-on-mockup.webp"
+        overlay="black"
+        variant="center"
+      />
       <BenefitBelt
         items={[
-          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />, label: 'Strategia i plan działania' },
-          { icon: <RiPaletteLine className="h-6 w-6 text-primary" />, label: 'Branding i design' },
-          { icon: <RiCodeSSlashFill className="h-6 w-6 text-primary" />, label: 'Technologia (strony i sklepy)' },
-          { icon: <RiMegaphoneLine className="h-6 w-6 text-primary" />, label: 'Widoczność i marketing' },
+          { icon: <RiLightbulbFlashLine className="text-primary h-6 w-6" />, label: 'Strategia i plan działania' },
+          { icon: <RiPaletteLine className="text-primary h-6 w-6" />, label: 'Branding i design' },
+          { icon: <RiCodeSSlashFill className="text-primary h-6 w-6" />, label: 'Technologia (strony i sklepy)' },
+          { icon: <RiMegaphoneLine className="text-primary h-6 w-6" />, label: 'Widoczność i marketing' },
         ]}
       />
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">

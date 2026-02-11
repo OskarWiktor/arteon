@@ -81,7 +81,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
 
   return (
     <>
-      <h2 className=" mb-4">{t.filters}</h2>
+      <h2 className="mb-4">{t.filters}</h2>
 
       {/* Mobile: Button that opens modal */}
       <div className="pb-6 md:hidden">
@@ -222,7 +222,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalPr
             {/* Header */}
             <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
               <h3 className="text-base font-semibold">{t.chooseCategory}</h3>
-              <button type="button" onClick={onClose} className="rounded-full p-1.5 text-primary hover:bg-primary-light" aria-label={t.close}>
+              <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded-full p-1.5" aria-label={t.close}>
                 <RiCloseLine className="h-5 w-5" />
               </button>
             </div>
@@ -247,7 +247,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalPr
                       <span className="font-medium">{item.label}</span>
                       {!item.isAll && <span className="text-light text-sm">({item.count})</span>}
                     </span>
-                    {isActive && <RiCheckLine className="h-5 w-5 text-primary" aria-hidden="true" />}
+                    {isActive && <RiCheckLine className="text-primary h-5 w-5" aria-hidden="true" />}
                   </Link>
                 );
               })}

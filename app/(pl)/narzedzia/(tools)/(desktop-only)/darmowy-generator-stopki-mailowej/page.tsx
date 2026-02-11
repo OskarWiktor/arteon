@@ -235,8 +235,9 @@ export default function Page() {
               <strong>Linia nad imieniem</strong> - dodatkowy tekst wyświetlany nad imieniem i nazwiskiem. Możesz tu wpisać nazwę firmy, hasło lub slogan.
             </li>
             <li>
-              <strong>Avatar / logo (URL obrazu)</strong> - adres URL do zdjęcia profilowego lub logo firmy. Obraz powinien być kwadratowy (min. 120x120 px) i publicznie dostępny w internecie. Po wklejeniu
-              adresu URL pojawią się dodatkowe opcje: <strong>Kształt avatara</strong> (okrągły, zaokrąglony lub kwadratowy) oraz <strong>Rozmiar avatara</strong> (mały - 40 px, średni - 56 px, duży - 72 px).
+              <strong>Avatar / logo (URL obrazu)</strong> - adres URL do zdjęcia profilowego lub logo firmy. Obraz powinien być kwadratowy (min. 120x120 px) i publicznie dostępny w internecie. Po
+              wklejeniu adresu URL pojawią się dodatkowe opcje: <strong>Kształt avatara</strong> (okrągły, zaokrąglony lub kwadratowy) oraz <strong>Rozmiar avatara</strong> (mały - 40 px, średni - 56
+              px, duży - 72 px).
             </li>
             <li>
               <strong>Imię i nazwisko</strong> - pole wymagane. Wpisz swoje pełne imię i nazwisko.
@@ -584,8 +585,8 @@ export default function Page() {
 
         <SectionInfo title="Automatyczny zapis i resetowanie ustawień">
           <p className="text-mid">
-            Generator automatycznie zapisuje wszystkie ustawienia w pamięci przeglądarki (localStorage). Po odświeżeniu strony lub ponownym otwarciu narzędzia dane, układ, kolory i wszystkie
-            inne opcje zostaną przywrócone.
+            Generator automatycznie zapisuje wszystkie ustawienia w pamięci przeglądarki (localStorage). Po odświeżeniu strony lub ponownym otwarciu narzędzia dane, układ, kolory i wszystkie inne
+            opcje zostaną przywrócone.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Jak działa automatyczny zapis?</h3>
@@ -599,12 +600,12 @@ export default function Page() {
 
           <h3 className="h5 mt-6 mb-3">Eksport i import konfiguracji</h3>
           <p className="text-mid">
-            Pod podglądem stopki znajdziesz dwa dodatkowe przyciski: <strong>Eksportuj ustawienia</strong> i <strong>Importuj ustawienia</strong>. Eksport zapisuje wszystkie dane, kolory, układ, odstępy
-            i style tekstu do pliku JSON. Import pozwala wczytać wcześniej zapisaną konfigurację z pliku.
+            Pod podglądem stopki znajdziesz dwa dodatkowe przyciski: <strong>Eksportuj ustawienia</strong> i <strong>Importuj ustawienia</strong>. Eksport zapisuje wszystkie dane, kolory, układ,
+            odstępy i style tekstu do pliku JSON. Import pozwala wczytać wcześniej zapisaną konfigurację z pliku.
           </p>
           <p className="text-mid mt-3">
-            Ta funkcja jest szczególnie przydatna, gdy chcesz przenieść konfigurację stopki między komputerami, udostępnić ustawienia współpracownikom lub zachować kopię zapasową swoich ustawień
-            przed resetem.
+            Ta funkcja jest szczególnie przydatna, gdy chcesz przenieść konfigurację stopki między komputerami, udostępnić ustawienia współpracownikom lub zachować kopię zapasową swoich ustawień przed
+            resetem.
           </p>
         </SectionInfo>
 
@@ -637,14 +638,14 @@ export default function Page() {
 
         <SectionInfo title="Podgląd stopki i opcje eksportu">
           <p className="text-mid">
-            Panel podglądu wyświetla się po prawej stronie edytora i automatycznie aktualizuje się przy każdej zmianie. Podgląd jest przypięty do ekranu (sticky), więc widoczny nawet podczas przewijania
-            opcji edycji.
+            Panel podglądu wyświetla się po prawej stronie edytora i automatycznie aktualizuje się przy każdej zmianie. Podgląd jest przypięty do ekranu (sticky), więc widoczny nawet podczas
+            przewijania opcji edycji.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Przełączanie tła podglądu</h3>
           <p className="text-mid">
-            Nad podglądem znajdziesz trzy przyciski zmiany tła: <strong>Jasne</strong> (domyślne szare tło), <strong>Ciemne</strong> (ciemne tło, przydatne do sprawdzenia czytelności na ciemnym tle)
-            i <strong>Szachownica</strong> (wzór szachownicy, pozwala zobaczyć przezroczystość i krawędzie stopki).
+            Nad podglądem znajdziesz trzy przyciski zmiany tła: <strong>Jasne</strong> (domyślne szare tło), <strong>Ciemne</strong> (ciemne tło, przydatne do sprawdzenia czytelności na ciemnym tle) i{' '}
+            <strong>Szachownica</strong> (wzór szachownicy, pozwala zobaczyć przezroczystość i krawędzie stopki).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Przyciski akcji</h3>

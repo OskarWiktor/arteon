@@ -101,8 +101,7 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak sprawdzić długość meta title i description',
-  description:
-    'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160) oraz jak uniknąć obcinania w Google.',
+  description: 'Sprawdź długość meta title i description w pikselach i znakach. Dowiedz się, ile znaków powinien mieć tytuł (50-60) i opis (120-160) oraz jak uniknąć obcinania w Google.',
   url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
   totalTime: 'PT3M',
   step: [
@@ -168,8 +167,8 @@ export default function Page() {
             jako tytuł (niebieski link) i opis (szary tekst pod tytułem).
           </p>
           <p className="text-mid mt-3">
-            Dobrze napisane meta tagi działają jak reklama strony w wynikach wyszukiwania - przyciągają uwagę i zwiększają szansę na kliknięcie. Źle napisane lub obcięte przez Google mogą
-            zniechęcić, nawet jeśli sama strona jest wartościowa.
+            Dobrze napisane meta tagi działają jak reklama strony w wynikach wyszukiwania - przyciągają uwagę i zwiększają szansę na kliknięcie. Źle napisane lub obcięte przez Google mogą zniechęcić,
+            nawet jeśli sama strona jest wartościowa.
           </p>
         </SectionInfo>
 
@@ -224,13 +223,13 @@ export default function Page() {
                   <td className="py-2 pr-4 font-medium">Meta title</td>
                   <td className="py-2 pr-4 whitespace-nowrap">50-60 znaków</td>
                   <td className="py-2 pr-4 whitespace-nowrap">do ~580 px</td>
-                  <td className="py-2 text-sm text-primary-light0">Najważniejsze słowa umieść na początku. Nazwa marki na końcu.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Najważniejsze słowa umieść na początku. Nazwa marki na końcu.</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4 font-medium">Meta description</td>
                   <td className="py-2 pr-4 whitespace-nowrap">120-160 znaków</td>
                   <td className="py-2 pr-4 whitespace-nowrap">do ~920 px</td>
-                  <td className="py-2 text-sm text-primary-light0">Zmieścisz 2-3 krótkie zdania. Zakończ wezwaniem do działania.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Zmieścisz 2-3 krótkie zdania. Zakończ wezwaniem do działania.</td>
                 </tr>
               </tbody>
             </table>
@@ -329,12 +328,12 @@ export default function Page() {
             <div className="space-y-3">
               <div className="rounded-lg border border-neutral-200 bg-white p-3">
                 <p className="text-dark text-sm! font-medium">iiiiiiiiiiiiiiii (16 znaków)</p>
-                <div className="mt-1 h-3 w-1/4 rounded-full bg-success-icon" />
+                <div className="bg-success-icon mt-1 h-3 w-1/4 rounded-full" />
                 <p className="text-light mt-1 text-xs!">~64px szerokości</p>
               </div>
               <div className="rounded-lg border border-neutral-200 bg-white p-3">
                 <p className="text-dark text-sm! font-medium">WWWWWWWWWWWWWWWW (16 znaków)</p>
-                <div className="mt-1 h-3 w-3/4 rounded-full bg-error-icon" />
+                <div className="bg-error-icon mt-1 h-3 w-3/4 rounded-full" />
                 <p className="text-light mt-1 text-xs!">~256px szerokości</p>
               </div>
             </div>
@@ -388,22 +387,21 @@ export default function Page() {
               icon: <RiRulerLine className="h-6 w-6" />,
               title: 'Tytuł jest za długi',
               description: (
-                <p>Skróć tytuł, zachowując najważniejsze słowa na początku. Usuń przymiotniki typu &quot;najlepszy&quot;, &quot;profesjonalny&quot; - rzadko dodają wartości. Nazwa firmy na końcu po separatorze.</p>
+                <p>
+                  Skróć tytuł, zachowując najważniejsze słowa na początku. Usuń przymiotniki typu &quot;najlepszy&quot;, &quot;profesjonalny&quot; - rzadko dodają wartości. Nazwa firmy na końcu po
+                  separatorze.
+                </p>
               ),
             },
             {
               icon: <RiFileTextLine className="h-6 w-6" />,
               title: 'Opis jest za krótki',
-              description: (
-                <p>Dodaj więcej informacji: co użytkownik znajdzie na stronie, jaką korzyść otrzyma, co wyróżnia ofertę. Zakończ wezwaniem do działania.</p>
-              ),
+              description: <p>Dodaj więcej informacji: co użytkownik znajdzie na stronie, jaką korzyść otrzyma, co wyróżnia ofertę. Zakończ wezwaniem do działania.</p>,
             },
             {
               icon: <RiRuler2Line className="h-6 w-6" />,
               title: 'Szerokość w pikselach jest inna niż oczekiwana',
-              description: (
-                <p>Narzędzie mierzy szerokość za pomocą standardowej czcionki zbliżonej do tej, którą używa Google. Wynik może się nieznacznie różnić w zależności od przeglądarki.</p>
-              ),
+              description: <p>Narzędzie mierzy szerokość za pomocą standardowej czcionki zbliżonej do tej, którą używa Google. Wynik może się nieznacznie różnić w zależności od przeglądarki.</p>,
             },
           ]}
         />

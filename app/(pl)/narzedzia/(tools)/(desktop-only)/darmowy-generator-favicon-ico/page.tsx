@@ -97,8 +97,7 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Jak stworzyć favicon dla strony internetowej',
-  description:
-    'Jak wygenerować favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Jakie rozmiary są potrzebne i jak wgrać favicon do WordPress, HTML i Next.js.',
+  description: 'Jak wygenerować favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Jakie rozmiary są potrzebne i jak wgrać favicon do WordPress, HTML i Next.js.',
   url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
   inLanguage: 'pl-PL',
   step: [
@@ -398,15 +397,16 @@ export default function Page() {
             {
               icon: <RiFolderZipLine className="h-6 w-6" />,
               title: 'Pobierz wszystko jako ZIP',
-              description: (
-                <p>Przycisk „Pobierz wszystko” pakuje wszystkie wygenerowane pliki do jednego archiwum ZIP. To najwygodniejsza opcja, gdy potrzebujesz pełnego zestawu ikon.</p>
-              ),
+              description: <p>Przycisk „Pobierz wszystko” pakuje wszystkie wygenerowane pliki do jednego archiwum ZIP. To najwygodniejsza opcja, gdy potrzebujesz pełnego zestawu ikon.</p>,
             },
             {
               icon: <RiFileDownloadLine className="h-6 w-6" />,
               title: 'Pobierz pojedyncze pliki',
               description: (
-                <p>Każda wygenerowana ikona ma własny przycisk pobierania - można pobrać pojedynczy plik bez konieczności pobierania całego zestawu. Przydatne, gdy potrzebna jest aktualizacja tylko jednego rozmiaru.</p>
+                <p>
+                  Każda wygenerowana ikona ma własny przycisk pobierania - można pobrać pojedynczy plik bez konieczności pobierania całego zestawu. Przydatne, gdy potrzebna jest aktualizacja tylko
+                  jednego rozmiaru.
+                </p>
               ),
             },
           ]}
@@ -423,8 +423,13 @@ export default function Page() {
               content: (
                 <div>
                   <p className="text-mid mb-3">Większość motywów WordPress ma wbudowaną opcję ustawiania ikony witryny. Znajdziesz ją w panelu administracyjnym:</p>
-                  <p className="text-mid mb-3"><strong>Wygląd → Dostosuj → Tożsamość witryny → Ikona witryny</strong></p>
-                  <p className="text-light">Wgraj tam plik 512x512 - WordPress automatycznie wygeneruje mniejsze rozmiary. Jeśli chcesz mieć pełną kontrolę nad ikonami, możesz też wgrać pliki bezpośrednio do katalogu głównego strony przez FTP.</p>
+                  <p className="text-mid mb-3">
+                    <strong>Wygląd → Dostosuj → Tożsamość witryny → Ikona witryny</strong>
+                  </p>
+                  <p className="text-light">
+                    Wgraj tam plik 512x512 - WordPress automatycznie wygeneruje mniejsze rozmiary. Jeśli chcesz mieć pełną kontrolę nad ikonami, możesz też wgrać pliki bezpośrednio do katalogu
+                    głównego strony przez FTP.
+                  </p>
                 </div>
               ),
             },
@@ -434,7 +439,7 @@ export default function Page() {
               content: (
                 <div>
                   <p className="text-mid mb-3">Umieść wygenerowane pliki w katalogu głównym strony (tam, gdzie jest plik index.html). Następnie dodaj w sekcji &lt;head&gt; odpowiednie tagi:</p>
-                  <pre className="mb-3 overflow-x-auto rounded-lg bg-primary-light p-4 text-sm">
+                  <pre className="bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm">
                     <code>{`<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/icon-32x32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">`}</code>
@@ -448,13 +453,23 @@ export default function Page() {
               icon: <RiReactjsLine className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">W Next.js (App Router) umieść pliki favicon w katalogu <code>app/</code> lub <code>public/</code>:</p>
+                  <p className="text-mid mb-3">
+                    W Next.js (App Router) umieść pliki favicon w katalogu <code>app/</code> lub <code>public/</code>:
+                  </p>
                   <ul className="text-light mb-3 list-disc pl-5">
-                    <li><code>app/favicon.ico</code> - automatycznie rozpoznawany przez Next.js</li>
-                    <li><code>app/apple-icon.png</code> - ikona dla Apple</li>
-                    <li><code>public/</code> - pozostałe ikony (192x192, 512x512)</li>
+                    <li>
+                      <code>app/favicon.ico</code> - automatycznie rozpoznawany przez Next.js
+                    </li>
+                    <li>
+                      <code>app/apple-icon.png</code> - ikona dla Apple
+                    </li>
+                    <li>
+                      <code>public/</code> - pozostałe ikony (192x192, 512x512)
+                    </li>
                   </ul>
-                  <p className="text-light">Możesz też skonfigurować ikony w pliku <code>layout.tsx</code> przez obiekt <code>metadata.icons</code>.</p>
+                  <p className="text-light">
+                    Możesz też skonfigurować ikony w pliku <code>layout.tsx</code> przez obiekt <code>metadata.icons</code>.
+                  </p>
                 </div>
               ),
             },

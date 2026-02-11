@@ -69,7 +69,9 @@ export function middleware(request: NextRequest) {
     return redirect301(url);
   }
 
-  return NextResponse.next();
+  const response = NextResponse.next();
+  response.headers.set('x-pathname', url.pathname);
+  return response;
 }
 
 export const config = {

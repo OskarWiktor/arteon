@@ -27,13 +27,13 @@ export default function SectionProcess({ title, steps }: SectionProcessProps) {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-1 items-center">
               <div className="flex flex-1 items-center gap-3 rounded-xl bg-white p-4 shadow-sm">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-primary text-white">{step.icon}</div>
+                <div className="bg-primary flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-white">{step.icon}</div>
                 <div>
                   <span className="text-light text-xs uppercase">Krok {step.number}</span>
                   <h3 className="h6 font-semibold">{step.title}</h3>
                 </div>
               </div>
-              {index < steps.length - 1 && <RiArrowRightLine className="mx-2 hidden h-5 w-5 flex-shrink-0 text-primary-light md:block" aria-hidden="true" />}
+              {index < steps.length - 1 && <RiArrowRightLine className="text-primary-light mx-2 hidden h-5 w-5 flex-shrink-0 md:block" aria-hidden="true" />}
             </div>
           ))}
         </div>

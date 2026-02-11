@@ -9,7 +9,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-primary">1 </span>Rozmowa
+        <span className="text-primary font-extrabold">1 </span>Rozmowa
       </>
     ),
     description: <p>Ustalamy cele, odbiorców i priorytety. Zbieramy wszystkie niezbędne informacje, aby stworzyć efekt, na którym Ci zależy.</p>,
@@ -17,7 +17,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-primary">2 </span>Plan
+        <span className="text-primary font-extrabold">2 </span>Plan
       </>
     ),
     description: <p>Tworzymy dokładny plan: ustalamy zakres, termin i tworzymy dedykowaną wycenę.</p>,
@@ -25,7 +25,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-primary">3 </span>Realizacja
+        <span className="text-primary font-extrabold">3 </span>Realizacja
       </>
     ),
     description: <p>Tworzymy to, czego potrzebujesz: stronę, grafiki, treści lub kampanie. Dbamy o widoczność w Google i dostępność (WCAG).</p>,
@@ -33,7 +33,7 @@ const stepsHome = [
   {
     title: (
       <>
-        <span className="font-extrabold text-primary">4 </span>Publikacja i wsparcie
+        <span className="text-primary font-extrabold">4 </span>Publikacja i wsparcie
       </>
     ),
     description: <p>Uruchamiamy i dostarczamy pliki. Tworzymy darmową listę kroków „co dalej”, by Twoja firma rosła szybciej.</p>,

@@ -11,12 +11,14 @@ import ToolInfo from '@/components/ui/tools/ToolInfo';
 import Badge from '@/components/ui/Badge';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
 import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
+import { useLocale } from '@/lib/LocaleContext';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });
 
 const ui = {
   pl: {
+    sampleTextLabel: 'Przykładowy tekst',
     exampleText: 'Przykładowy tekst kontrastu WCAG 2.1',
     exampleTextPlaceholder: 'Wpisz nagłówek, tekst przycisku lub treść akapitu',
     textColorLabel: 'Kolor tekstu (foreground)',
@@ -45,6 +47,44 @@ const ui = {
     exampleLargeText: 'Przykładowy nagłówek / przycisk',
     iconPreview: 'Podgląd ikony na tle',
     resultsLabel: 'Wyniki testu kontrastu i podgląd',
+    badges: {
+      normalAA: 'AA (min. 4.5:1)',
+      normalAAA: 'AAA (min. 7:1)',
+      largeAA: 'AA (min. 3:1)',
+      largeAAA: 'AAA (min. 4.5:1)',
+      iconAA: 'AA (min. 3:1)',
+    },
+  },
+  en: {
+    sampleTextLabel: 'Sample text',
+    exampleText: 'Sample WCAG 2.1 contrast text',
+    exampleTextPlaceholder: 'Enter a heading, button text, or paragraph content',
+    textColorLabel: 'Text color (foreground)',
+    selectTextColor: 'Select text color',
+    textColorPlaceholder: `${DEFAULT_FOREGROUND} or rgba(0,0,0,0.8)`,
+    supportedFormats: 'Supported formats:',
+    backgroundColorLabel: 'Background color',
+    selectBackgroundColor: 'Select background color',
+    backgroundColorPlaceholder: `${DEFAULT_BACKGROUND} or hsl(0, 0%, 100%)`,
+    swapColors: 'Swap colors',
+    resetColors: 'Reset to black on white',
+    matchTargetLabel: 'Match target',
+    matchColor: 'Match',
+    suggestedColor: 'Suggested color',
+    applySuggestedColor: 'Apply',
+    copy: 'Copy',
+    copied: 'Copied',
+    matchError: 'Could not find a variant that meets the selected threshold.',
+    contrastRatio: 'Contrast ratio',
+    colorReadError: 'Could not read the colors. Use format',
+    or: 'or',
+    normalText: 'Normal text',
+    largeText: 'Large / bold text',
+    icon: 'Icon',
+    exampleNormalText: 'Sample normal text',
+    exampleLargeText: 'Sample heading / button',
+    iconPreview: 'Icon preview on background',
+    resultsLabel: 'Contrast test results and preview',
     badges: {
       normalAA: 'AA (min. 4.5:1)',
       normalAAA: 'AAA (min. 7:1)',
@@ -163,7 +203,8 @@ function adjustColorToWcag({ foreground, background, targetRatio }: { foreground
 }
 
 export default function WcagContrastChecker() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
   const [foreground, setForeground] = useState(DEFAULT_FOREGROUND);
   const [background, setBackground] = useState(DEFAULT_BACKGROUND);
   const [textSample, setTextSample] = useState<string>(t.exampleText);
@@ -244,7 +285,7 @@ export default function WcagContrastChecker() {
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <ToolSection className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <ToolFieldRow label={<span className="text-[14px]! font-medium">Przykładowy tekst</span>}>
+            <ToolFieldRow label={<span className="text-[14px]! font-medium">{t.sampleTextLabel}</span>}>
               <input id="text-sample" type="text" value={textSample} onChange={(e) => setTextSample(e.target.value)} className="tool-input h-10" placeholder={t.exampleTextPlaceholder} />
             </ToolFieldRow>
 

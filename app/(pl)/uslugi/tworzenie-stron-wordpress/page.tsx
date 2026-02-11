@@ -186,18 +186,18 @@ export default function TworzenieStronWordPressPage() {
 
         <FeatureGrid
           title="Co dostajesz w ramach strony internetowej WordPress?"
-          variant='centered'
+          variant="centered"
           columns={3}
           items={[
             {
               title: 'Licencja Elementor Pro',
               description: <>Elementor Pro to kreator stron, który daje pełną kontrolę nad wyglądem. Udostępniamy licencję w cenie - nie płacisz za nią ani teraz, ani później.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
+              icon: <RiLayoutLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Projekt w Figma przed realizacją',
               description: <>Zanim zaczniemy kodować, przygotowujemy projekt graficzny strony głównej. Dostajesz link do podglądu i wspólnie ustalamy finalny wygląd.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
+              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wydajność 90+/100 dla telefonów',
@@ -210,37 +210,37 @@ export default function TworzenieStronWordPressPage() {
                   na poziomie minimum 90/100 dla urządzeń mobilnych. Optymalizujemy obrazy, kod i konfigurację serwera.
                 </>
               ),
-              icon: <RiSpeedFill className="h-6 w-6 text-primary" />,
+              icon: <RiSpeedFill className="text-primary h-6 w-6" />,
             },
             {
               title: 'Automatyzacja utrzymania',
               description: <>Konfigurujemy automatyczne aktualizacje wtyczek, kopie zapasowe i optymalizację obrazów. Nie musisz się martwić o techniczne aspekty utrzymania strony.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-primary" />,
+              icon: <RiShieldCheckLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pomoc z treściami i SEO',
               description: <>Doradzamy strukturę strony pod kątem widoczności w Google. Pomagamy w przygotowaniu i redakcji tekstów, które odpowiadają na pytania potencjalnych klientów.</>,
-              icon: <RiArticleLine className="h-6 w-6 text-primary" />,
+              icon: <RiArticleLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Zgodność prawna i dostępność',
               description: <>Przygotowujemy politykę prywatności, obsługę cookies (RODO) i deklarację dostępności. Kolory zgodne z WCAG 2.1 AA - strona czytelna dla każdego.</>,
-              icon: <GoLaw className="h-6 w-6 text-primary" />,
+              icon: <GoLaw className="text-primary h-6 w-6" />,
             },
             {
               title: 'Formularze, mapy i media społecznościowe',
               description: <>Formularz kontaktowy, mapa dojazdu, ikony mediów społecznościowych, przyciski do dzwonienia i pisania maili - wszystko w cenie standardowej.</>,
-              icon: <RiCheckboxCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiCheckboxCircleLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pełna własność i dostępy',
               description: <>Przekazujemy wszystkie hasła i dostępy - do hostingu, domeny, panelu WordPress i Google Search Console. Strona jest Twoja w 100%.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-primary" />,
+              icon: <RiKey2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wsparcie po realizacji',
               description: <>Po uruchomieniu strony nie zostawiamy Cię samego. Odpowiadamy na pytania, doradzamy jak zwiększać widoczność i pomagamy przy kolejnych krokach.</>,
-              icon: <RiCustomerService2Line className="h-6 w-6 text-primary" />,
+              icon: <RiCustomerService2Line className="text-primary h-6 w-6" />,
             },
           ]}
         />

@@ -57,10 +57,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
       <HeroBanner
         title="Projekt graficzny strony"
         description={
-          <>
-            Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Zaprojektujemy layout Twojej strony tak, aby prowadził wzrok od pierwszego wrażenia, przez ofertę, aż po kontakt
-            lub zakup.
-          </>
+          <>Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Zaprojektujemy layout Twojej strony tak, aby prowadził wzrok od pierwszego wrażenia, przez ofertę, aż po kontakt lub zakup.</>
         }
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
@@ -141,27 +138,27 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Przemyślany układ i estetyka',
               description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie - od nagłówka po stopkę.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
+              icon: <RiLayoutLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Responsywność i czytelność',
               description: <>Projekt działa na komputerze, tablecie i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-primary" />,
+              icon: <RiDeviceLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Gotowość do wdrożenia',
               description: <>Dostarczamy pliki i rekomendacje, które przyspieszają pracę dewelopera i skracają czas publikacji.</>,
-              icon: <RiCodeSSlashFill className="h-6 w-6 text-primary" />,
+              icon: <RiCodeSSlashFill className="text-primary h-6 w-6" />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: <>Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji do pełnej akceptacji.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
+              icon: <RiPencilRuler2Line className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

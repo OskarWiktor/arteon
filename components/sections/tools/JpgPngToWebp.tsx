@@ -13,6 +13,7 @@ import { useWebpQueue } from '@/components/sections/tools/JpgPngToWebp/useWebpQu
 import { useWebpConversion } from '@/components/sections/tools/JpgPngToWebp/useWebpConversion';
 import { useWebpDownloads } from '@/components/sections/tools/JpgPngToWebp/useWebpDownloads';
 import { useWebpReportCopy } from '@/components/sections/tools/JpgPngToWebp/useWebpReportCopy';
+import { useLocale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -87,6 +88,89 @@ const ui = {
     usedQuality: 'Użyta jakość WebP:',
     totalInputSize: 'Łączny rozmiar wejściowy:',
     totalOutputSize: 'Łączny rozmiar po konwersji:',
+    demoFiles: [
+      { name: 'zdjecie-produktu.jpg', before: '2.4 MB', after: '890 KB', diff: '63%' },
+      { name: 'logo-firmy.png', before: '180 KB', after: '45 KB', diff: '75%' },
+      { name: 'baner-strony.jpg', before: '500 KB', after: '185 KB', diff: '63%' },
+    ],
+  },
+  en: {
+    fileLoadError: 'Failed to load the file.',
+    imageLoadError: 'Failed to load the image.',
+    canvasNotSupported: 'Canvas is not supported in this browser.',
+    webpGenerationError: 'Failed to generate the WebP file.',
+    addJpgPngOnly: 'Add JPG or PNG files — other formats are skipped.',
+    addAtLeastOne: 'Add at least one JPG or PNG file.',
+    allProcessed: 'All files in the queue have already been processed.',
+    conversionError: 'An unexpected error occurred during conversion.',
+    clipboardNotSupported: 'Clipboard is not supported in this browser.',
+    noCompletedConversions: 'No completed conversions to summarize.',
+    reportCopied: 'Report copied to clipboard.',
+    reportCopyError: 'Failed to copy the report to clipboard.',
+    addFiles: 'Add files',
+    dragDropImages: 'Drag and drop images here',
+    clickToSelect: 'or click to select files from your device',
+    supportedFormats: 'Supported: JPG, PNG',
+    setQuality: 'Set WebP quality',
+    qualityHelper:
+      'Lower value = smaller file size, higher = better quality. 80% is a good compromise for most websites. The tool will automatically lower quality if the output file would be larger than the original.',
+    autoDownloadAll: 'Auto-download after conversion',
+    autoDownloadModeFiles: 'Individual files',
+    autoDownloadModeZip: 'Single ZIP archive',
+    includeCsvReport: 'Include CSV report in ZIP',
+    convertAndDownload: 'Convert and download',
+    inQueue: 'In queue:',
+    files: 'files',
+    convert: 'Convert',
+    converting: 'Converting…',
+    downloadAll: 'Download all',
+    downloadZip: 'Download all (.zip)',
+    zipping: 'Preparing ZIP archive…',
+    zipGenerationError: 'Failed to prepare the ZIP archive.',
+    clearAll: 'Clear all',
+    copySummary: 'Copy summary',
+    conversionReport: 'JPG/PNG → WebP conversion report:',
+    fileCount: 'File count:',
+    totalSizeBefore: 'Total size before:',
+    totalSizeAfter: 'Total size after:',
+    savedWeight: 'Saved weight:',
+    weightDifference: 'Weight difference:',
+    less: 'less',
+    more: 'more',
+    previewAndFiles: 'Preview and files',
+    totalSize: 'Total size:',
+    totalSaved: 'Saved:',
+    totalIncreased: 'Increased:',
+    addFilesToStart: 'Add files on the left to start converting JPG/PNG to WebP.',
+    demoSummary: 'Total saved:',
+    status: {
+      pending: 'Pending',
+      processing: 'Processing…',
+      done: 'Done',
+      error: 'Error',
+    },
+    actions: {
+      download: 'Download',
+      preview: 'Preview',
+      remove: 'Remove',
+      reconvert: 'Reconvert',
+    },
+    queueListAriaLabel: 'File queue list',
+    queueFilesHeading: 'Files in queue',
+    downloaded: 'Downloaded',
+    readyCount: 'Ready',
+    pendingCount: 'In progress / pending',
+    sizeBefore: 'Size before:',
+    sizeAfter: 'Size after:',
+    biggerThanOriginal: '(larger than original — try lower quality)',
+    usedQuality: 'WebP quality used:',
+    totalInputSize: 'Total input size:',
+    totalOutputSize: 'Total output size:',
+    demoFiles: [
+      { name: 'product-photo.jpg', before: '2.4 MB', after: '890 KB', diff: '63%' },
+      { name: 'company-logo.png', before: '180 KB', after: '45 KB', diff: '75%' },
+      { name: 'website-banner.jpg', before: '500 KB', after: '185 KB', diff: '63%' },
+    ],
   },
 } as const;
 
@@ -96,7 +180,8 @@ function triggerDownloadFromUrl(url: string, filename: string) {
 }
 
 export default function JpgPngToWebp() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
 
   const { copy } = useCopyToClipboard();
   const [quality, setQuality] = useState(80); // domyślna jakość 80%
@@ -200,12 +285,7 @@ export default function JpgPngToWebp() {
         <form onSubmit={handleSubmitWithAutoZip} className="space-y-4">
           <div>
             <h2 className="h6 mb-2">{t.addFiles}</h2>
-            <ToolFileDropzone
-              accept="image/jpeg,image/png"
-              multiple
-              onFiles={addFiles}
-              className="tool-upload-area"
-            >
+            <ToolFileDropzone accept="image/jpeg,image/png" multiple onFiles={addFiles} className="tool-upload-area">
               <span className="mb-1 text-sm! font-medium">{t.dragDropImages}</span>
               <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
               <Badge variant="default" size="sm" className="bg-white shadow-sm">
@@ -240,7 +320,7 @@ export default function JpgPngToWebp() {
                   type="button"
                   onClick={() => setAutoDownloadMode('files')}
                   disabled={isConverting}
-                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'files' ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
+                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'files' ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
                 >
                   {t.autoDownloadModeFiles}
                 </button>
@@ -248,7 +328,7 @@ export default function JpgPngToWebp() {
                   type="button"
                   onClick={() => setAutoDownloadMode('zip')}
                   disabled={isConverting}
-                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'zip' ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
+                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'zip' ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
                 >
                   {t.autoDownloadModeZip}
                 </button>
@@ -266,13 +346,13 @@ export default function JpgPngToWebp() {
                   </span>
                   {total > 0 && (
                     <span className="text-light text-xs!">
-                      Zakończone: {completed} / {total}
+                      {locale === 'en' ? 'Completed' : 'Zakończone'}: {completed} / {total}
                     </span>
                   )}
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
                   <div
-                    className="h-full rounded-full bg-primary transition-all"
+                    className="bg-primary h-full rounded-full transition-all"
                     style={{ width: `${visualProgress}%` }}
                     role="progressbar"
                     aria-valuemin={0}
@@ -299,14 +379,7 @@ export default function JpgPngToWebp() {
             </div>
 
             <div className="mt-3 flex items-center">
-              <input
-                id="webp-include-csv"
-                type="checkbox"
-                checked={includeCsvReport}
-                onChange={(e) => setIncludeCsvReport(e.target.checked)}
-                disabled={isZipping}
-                className="tool-checkbox"
-              />
+              <input id="webp-include-csv" type="checkbox" checked={includeCsvReport} onChange={(e) => setIncludeCsvReport(e.target.checked)} disabled={isZipping} className="tool-checkbox" />
               <label htmlFor="webp-include-csv" className="cursor-pointer pl-2">
                 <span className="text-[14px]! font-medium">{t.includeCsvReport}</span>
               </label>
@@ -379,11 +452,7 @@ export default function JpgPngToWebp() {
         {files.length === 0 && (
           <>
             <div className="space-y-2 text-sm!">
-              {[
-                { name: 'zdjecie-produktu.jpg', before: '2.4 MB', after: '890 KB', diff: '63%' },
-                { name: 'logo-firmy.png', before: '180 KB', after: '45 KB', diff: '75%' },
-                { name: 'baner-strony.jpg', before: '500 KB', after: '185 KB', diff: '63%' },
-              ].map((f) => (
+              {t.demoFiles.map((f) => (
                 <div key={f.name} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
                   <div className="min-w-0 flex-1">
                     <p className="text-dark truncate text-[14px]! font-medium">{f.name}</p>
@@ -391,7 +460,9 @@ export default function JpgPngToWebp() {
                       {t.sizeBefore} {f.before} · {t.sizeAfter} {f.after} ({f.diff} {t.less})
                     </p>
                   </div>
-                  <Badge variant="success" size="md">{t.status.done}</Badge>
+                  <Badge variant="success" size="md">
+                    {t.status.done}
+                  </Badge>
                 </div>
               ))}
             </div>
@@ -445,7 +516,7 @@ export default function JpgPngToWebp() {
                                 {')'}
                               </>
                             )}
-                            {isBigger && <span className="ml-1 text-xs! text-warning-text">{t.biggerThanOriginal}</span>}
+                            {isBigger && <span className="text-warning-text ml-1 text-xs!">{t.biggerThanOriginal}</span>}
                           </>
                         )}
                       </p>

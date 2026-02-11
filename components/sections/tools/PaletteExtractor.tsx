@@ -14,6 +14,7 @@ import { getFileFormatLabel } from '@/lib/tools/fileFormat';
 import { getDownscaledImageDataFromUrl } from '@/lib/tools/image/canvas';
 import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/tools/image/uploadTypes';
 import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
+import { useLocale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -32,13 +33,33 @@ const ui = {
     empty: 'Nie udało się wykryć dominujących kolorów. Spróbuj innego obrazu.',
     selectedFile: 'Wybrany plik:',
     copyHint: 'Kliknij „Kopiuj”, aby skopiować kod koloru.',
+    previewAlt: 'Podgląd',
+  },
+  en: {
+    unsupportedFormatsOnly: 'This file is not supported. Upload a PNG, JPG/JPEG or SVG.',
+    unexpectedError: 'Failed to analyze the image. Try again or use a different file.',
+    addImageLabel: 'Add image',
+    dragDropImage: 'Drag and drop an image here',
+    clickToSelect: 'or click to select a file from your device',
+    supportedFormats: 'Supported: PNG, JPG/JPEG, SVG',
+    preview: 'Preview and palette',
+    addImageToStart: 'Upload an image and the tool will show its dominant colors. Copy each code with a single click — perfect for UI, branding, and social media.',
+    processing: 'Analyzing image and creating palette…',
+    colorPreview: 'Color preview',
+    copy: 'Copy',
+    copied: 'Copied',
+    empty: 'Could not detect dominant colors. Try a different image.',
+    selectedFile: 'Selected file:',
+    copyHint: 'Click "Copy" to copy the color code.',
+    previewAlt: 'Preview',
   },
 } as const;
 
 type Status = 'idle' | 'processing' | 'done' | 'error';
 
 export default function PaletteExtractor() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
 
   const [file, setFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -190,7 +211,7 @@ export default function PaletteExtractor() {
             <div className="flex items-center gap-3">
               <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={previewUrl} alt={file?.name || 'Podgląd'} className="h-full w-full object-cover" />
+                <img src={previewUrl} alt={file?.name || t.previewAlt} className="h-full w-full object-cover" />
               </div>
               <div className="min-w-0">
                 <p className="text-dark truncate text-[14px]! font-medium">{file?.name}</p>

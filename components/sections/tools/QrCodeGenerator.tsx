@@ -20,6 +20,7 @@ import {
   type EmailData,
 } from '@/lib/tools/qr/generateQr';
 import { downloadFromUrl } from '@/lib/tools/download';
+import { useLocale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -69,6 +70,53 @@ const ui = {
     },
     printTip: 'Dla materiałów drukowanych zalecamy rozmiar min. 300px i poziom korekcji H.',
   },
+  en: {
+    dataType: 'Data type',
+    types: {
+      url: 'URL address',
+      text: 'Text',
+      vcard: 'Business card (vCard)',
+      email: 'Email',
+      phone: 'Phone',
+    },
+    urlPlaceholder: 'https://www.your-website.com',
+    textPlaceholder: 'Enter any text...',
+    phonePlaceholder: '+1 234 567 890',
+    size: 'Size (px)',
+    margin: 'Margin (quiet zone)',
+    qrColor: 'QR code color',
+    bgColor: 'Background color',
+    errorCorrection: 'Error correction level',
+    errorCorrectionLevels: {
+      L: 'L - Low (7%)',
+      M: 'M - Medium (15%)',
+      Q: 'Q - High (25%)',
+      H: 'H - Maximum (30%)',
+    },
+    preview: 'QR code preview',
+    downloadPng: 'Download PNG',
+    downloadSvg: 'Download SVG',
+    contrastWarning: 'Contrast between colors is too low. The QR code may be difficult to scan.',
+    contrastRatio: 'Contrast ratio',
+    recommended: 'Recommended minimum: 3:1',
+    enterData: 'Enter data to generate a QR code.',
+    vcard: {
+      firstName: 'First name',
+      lastName: 'Last name',
+      organization: 'Company (optional)',
+      title: 'Job title (optional)',
+      phone: 'Phone (optional)',
+      email: 'Email (optional)',
+      website: 'Website (optional)',
+      address: 'Address (optional)',
+    },
+    email: {
+      to: 'Email address',
+      subject: 'Subject (optional)',
+      body: 'Body (optional)',
+    },
+    printTip: 'For printed materials, we recommend a minimum size of 300px and error correction level H.',
+  },
 } as const;
 
 const DEFAULT_SIZE = 300;
@@ -79,7 +127,8 @@ const DEFAULT_LIGHT = '#ffffff';
 type ErrorCorrectionLevel = 'L' | 'M' | 'Q' | 'H';
 
 export default function QrCodeGenerator() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
 
   const [dataType, setDataType] = useState<QrDataType>('url');
   const [urlValue, setUrlValue] = useState('');

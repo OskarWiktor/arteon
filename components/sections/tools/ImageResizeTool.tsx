@@ -16,6 +16,7 @@ import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine, RiImageLine } from 'react-icons/ri';
+import { useLocale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -103,11 +104,100 @@ const ui = {
       hero: 'Hero sekcji (1920x1080)',
       bg: 'Tło sekcji (1920x1280)',
     },
+    previewAlt: 'Podgląd',
+  },
+  en: {
+    imageLoadError: 'Failed to load the image.',
+    canvasNotSupported: 'Your browser does not support 2D canvas.',
+    fileGenerationError: 'Failed to generate the file.',
+    addImageFirst: 'Add an image first.',
+    setValidDimensions: 'Set valid target dimensions.',
+    addImage: 'Add image',
+    dragDropImage: 'Drag and drop an image here',
+    clickToSelect: 'or click to select a file from your device',
+    supportedFormats: 'Supported: JPG, PNG, WebP',
+    currentFile: 'Current file:',
+    imageParams: 'Image parameters',
+    noData: 'No data — add an image.',
+    original: 'Original:',
+    aspectRatio: 'Aspect ratio:',
+    target: 'Target:',
+    inputFormat: 'Input format:',
+    outputFormat: 'Output format:',
+    shape: 'Shape:',
+    sourceFile: 'Source file:',
+    estimatedResult: 'Estimated result:',
+    convertAndDownload: 'Convert and download',
+    quality: 'Quality (JPG/WEBP)',
+    qualityHelper: 'Lower value means smaller file but lower image quality. For social media, the optimal value is 70–85%.',
+    processing: 'Processing…',
+    resizeAndDownload: 'Resize and download',
+    cropTools: 'Crop tools',
+    addImageFirstHelper: 'First add an image on the left. Then crop settings and preview will appear.',
+    demoOriginal: 'Original: 3000 x 2000 px',
+    demoTarget: 'Target: 1080 x 1350 px',
+    demoFormat: 'Format: WebP',
+    demoPreset: 'Instagram portrait post · 4:5',
+    dimensions: 'Dimensions in px',
+    presetsLabel: 'Presets',
+    shapesLabel: 'Crop shapes',
+    zoom: 'Zoom',
+    position: 'Position',
+    gridColor: 'Grid color',
+    width: 'Width (px)',
+    height: 'Height (px)',
+    keepAspectRatio: 'Keep aspect ratio (auto second dimension)',
+    category: 'Category',
+    format: 'Format',
+    selectPreset: 'Select format',
+    rectAspect: 'Rectangle aspect ratio',
+    cropZoom: 'Crop zoom',
+    horizontal: 'Horizontal (X)',
+    vertical: 'Vertical (Y)',
+    centerHorizontal: 'Center horizontally',
+    centerVertical: 'Center vertically',
+    centerCrop: 'Center crop',
+    cropPreview: 'Crop preview',
+    cropPreviewHelper:
+      'The bright area shows the exact crop that will be saved. The saved file will have exactly the size and image fragment you see in the center. For circle shape the file will have a transparent background outside the shape (PNG / WebP).',
+    shapes: {
+      rect: 'Rectangle',
+      square: 'Square',
+      circle: 'Circle',
+    },
+    gridColors: {
+      emerald: 'Green',
+      white: 'White',
+      black: 'Black',
+      red: 'Red',
+      yellow: 'Yellow',
+    },
+    categories: {
+      social: 'social media',
+      web: 'web',
+    },
+    presets: {
+      igSquare: 'Instagram — square post (1080x1080)',
+      igPortrait: 'Instagram — portrait post (1080x1350)',
+      igStory: 'Instagram — story / reels (1080x1920)',
+      fbPost: 'Facebook — post (1200x630)',
+      fbCover: 'Facebook — page cover (820x360)',
+      liPost: 'LinkedIn — post (1200x1200)',
+      liBanner: 'LinkedIn — profile banner (1584x396)',
+      ogImage: 'OG image (1200x630)',
+      cover: 'Article cover (1600x900)',
+      banner: 'Website banner (1920x600)',
+      thumb: 'Article thumbnail (800x600)',
+      hero: 'Hero section (1920x1080)',
+      bg: 'Section background (1920x1280)',
+    },
+    previewAlt: 'Preview',
   },
 } as const;
 
-function getImagePresets() {
-  const t = ui.pl;
+type UiLocale = (typeof ui)['pl'] | (typeof ui)['en'];
+
+function getImagePresets(t: UiLocale) {
   return {
     social: [
       { key: 'ig-square', label: t.presets.igSquare, width: 1080, height: 1080 },
@@ -128,8 +218,6 @@ function getImagePresets() {
     ],
   } as const;
 }
-
-const IMAGE_PRESETS = getImagePresets();
 
 interface ResizeToolState {
   file: File | null;
@@ -168,7 +256,7 @@ function PillButton<T extends string>({ value, current, label, onChange, disable
       type="button"
       disabled={disabled}
       onClick={() => !disabled && onChange(value)}
-      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${isActive ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
+      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${isActive ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
     >
       {label}
     </button>
@@ -210,33 +298,44 @@ function NumberField({ label, suffix, value, min, max, onChange, widthClass = 'w
   );
 }
 
-const GRID_COLOR_OPTIONS: { value: GridColor; label: string }[] = [
-  { value: 'emerald', label: ui.pl.gridColors.emerald },
-  { value: 'white', label: ui.pl.gridColors.white },
-  { value: 'black', label: ui.pl.gridColors.black },
-  { value: 'red', label: ui.pl.gridColors.red },
-  { value: 'yellow', label: ui.pl.gridColors.yellow },
-];
+function getGridColorOptions(t: UiLocale): { value: GridColor; label: string }[] {
+  return [
+    { value: 'emerald', label: t.gridColors.emerald },
+    { value: 'white', label: t.gridColors.white },
+    { value: 'black', label: t.gridColors.black },
+    { value: 'red', label: t.gridColors.red },
+    { value: 'yellow', label: t.gridColors.yellow },
+  ];
+}
 
-const SHAPE_OPTIONS: { value: ShapeType; label: string }[] = [
-  { value: 'rect', label: ui.pl.shapes.rect },
-  { value: 'square', label: ui.pl.shapes.square },
-  { value: 'circle', label: ui.pl.shapes.circle },
-];
+function getShapeOptions(t: UiLocale): { value: ShapeType; label: string }[] {
+  return [
+    { value: 'rect', label: t.shapes.rect },
+    { value: 'square', label: t.shapes.square },
+    { value: 'circle', label: t.shapes.circle },
+  ];
+}
 
 const RECT_ASPECTS: ShapeAspect[] = ['1:1', '4:5', '3:2', '16:9', '9:16'];
 
-const TOOLBAR_ITEMS: { id: ActiveTool; label: string; icon: ReactNode }[] = [
-  { id: 'dimensions', label: ui.pl.dimensions, icon: <RiRulerLine className="text-base" /> },
-  { id: 'presets', label: ui.pl.presetsLabel, icon: <RiLayoutGridLine className="text-base" /> },
-  { id: 'shapes', label: ui.pl.shapesLabel, icon: <RiCropLine className="text-base" /> },
-  { id: 'zoom', label: ui.pl.zoom, icon: <RiZoomInLine className="text-base" /> },
-  { id: 'position', label: ui.pl.position, icon: <RiDragMove2Line className="text-base" /> },
-  { id: 'grid', label: ui.pl.gridColor, icon: <RiGridLine className="text-base" /> },
-];
+function getToolbarItems(t: UiLocale): { id: ActiveTool; label: string; icon: ReactNode }[] {
+  return [
+    { id: 'dimensions', label: t.dimensions, icon: <RiRulerLine className="text-base" /> },
+    { id: 'presets', label: t.presetsLabel, icon: <RiLayoutGridLine className="text-base" /> },
+    { id: 'shapes', label: t.shapesLabel, icon: <RiCropLine className="text-base" /> },
+    { id: 'zoom', label: t.zoom, icon: <RiZoomInLine className="text-base" /> },
+    { id: 'position', label: t.position, icon: <RiDragMove2Line className="text-base" /> },
+    { id: 'grid', label: t.gridColor, icon: <RiGridLine className="text-base" /> },
+  ];
+}
 
 export default function ImageResizeTool() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const t = ui[locale];
+  const IMAGE_PRESETS = useMemo(() => getImagePresets(t), [t]);
+  const GRID_COLOR_OPTIONS = useMemo(() => getGridColorOptions(t), [t]);
+  const SHAPE_OPTIONS = useMemo(() => getShapeOptions(t), [t]);
+  const TOOLBAR_ITEMS = useMemo(() => getToolbarItems(t), [t]);
   const [state, setState] = useState<ResizeToolState>({
     file: null,
     imageUrl: null,
@@ -544,12 +643,7 @@ export default function ImageResizeTool() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <h2 className="h6 mb-2">{t.addImage}</h2>
-            <ToolFileDropzone
-              accept="image/*"
-              dropEffect="copy"
-              onFiles={(files) => handleFileChange(files?.[0] ?? null)}
-              className="tool-upload-area"
-            >
+            <ToolFileDropzone accept="image/*" dropEffect="copy" onFiles={(files) => handleFileChange(files?.[0] ?? null)} className="tool-upload-area">
               <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
               <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
               <Badge variant="default" size="sm" className="bg-white shadow-sm">
@@ -787,11 +881,7 @@ export default function ImageResizeTool() {
                     </div>
                     <div>
                       <label className="text-[14px]! font-medium">{t.format}</label>
-                      <select
-                        className="tool-select mt-1"
-                        value={state.selectedPresetKey ?? ''}
-                        onChange={(e) => handlePresetChange(e.target.value)}
-                      >
+                      <select className="tool-select mt-1" value={state.selectedPresetKey ?? ''} onChange={(e) => handlePresetChange(e.target.value)}>
                         <option value="">{t.selectPreset}</option>
                         {presetList.map((preset) => (
                           <option key={preset.key} value={preset.key}>
@@ -955,10 +1045,10 @@ export default function ImageResizeTool() {
                 )}
               </div>
 
-              <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-primary" style={{ paddingBottom: `${previewPadding}%` }}>
+              <div ref={previewRef} className="bg-primary relative w-full overflow-hidden rounded-2xl border border-neutral-300" style={{ paddingBottom: `${previewPadding}%` }}>
                 <div className="absolute inset-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={state.imageUrl!} alt={state.file?.name || 'Podgląd'} className="h-full w-full object-contain" draggable={false} />
+                  <img src={state.imageUrl!} alt={state.file?.name || t.previewAlt} className="h-full w-full object-contain" draggable={false} />
 
                   {cropRectPreview && (
                     <div

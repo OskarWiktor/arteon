@@ -120,6 +120,21 @@ const ARTICLES = readBlog();
 const SITE_URL = 'https://www.arteonagency.pl';
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 
+const TOOL_SLUG_MAP_PL_TO_EN = {
+  'jpg-png-na-webp-bez-limitu': 'jpg-png-to-webp-unlimited',
+  'edytor-zdjec-online': 'online-image-editor',
+  'darmowy-generator-favicon-ico': 'free-favicon-generator',
+  'licznik-dlugosci-meta-title-i-description': 'meta-title-description-length-checker',
+  'licznik-slow-i-znakow': 'word-and-character-counter',
+  'darmowy-generator-stopki-mailowej': 'free-email-signature-generator',
+  'sprawdz-czytelnosc-kolorow': 'color-contrast-checker',
+  'kontrast-i-czytelnosc-kolorow': 'color-contrast-checker',
+  'ekstraktor-kolorow-z-obrazu': 'image-color-extractor',
+  'generator-palet-kolorow': 'color-palette-generator',
+  'darmowy-generator-kodow-qr': 'free-qr-code-generator',
+};
+const TOOL_SLUG_MAP_EN_TO_PL = Object.fromEntries(Object.entries(TOOL_SLUG_MAP_PL_TO_EN).map(([pl, en]) => [en, pl]));
+
 const ROUTE_IMAGE = new Map();
 
 ROUTE_IMAGE.set('/', '/assets/arteon-logo-on-mockup.webp');
@@ -133,10 +148,16 @@ ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-cennika', '/assets/projects/
 ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-papieru-firmowego', '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp');
 ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-teczki-ofertowej', '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp');
 ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-menu-restauracji', '/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
+  '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
+);
 ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp');
 ROUTE_IMAGE.set('/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe', '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp');
-ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp');
+ROUTE_IMAGE.set(
+  '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
+  '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp',
+);
 ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-odziezy-firmowej', '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp');
 ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-graficzny-strony', '/assets/projects/arteon-baners-msc.webp');
 ROUTE_IMAGE.set('/uslugi/tworzenie-stron-wordpress', '/assets/projects/arteon-baners-msc.webp');
@@ -197,13 +218,47 @@ module.exports = {
     const base = {
       loc,
       changefreq: 'weekly',
-      priority: loc === '/' ? 1.0 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7,
+      priority: loc === '/' ? 1.0 : loc.startsWith('/en/') ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7,
       alternateRefs: [],
     };
     const lastmod = ROUTE_LASTMOD.get(loc);
     if (lastmod) base.lastmod = lastmod;
     const img = ROUTE_IMAGE.get(loc);
     if (img) base.images = sitemapImage(img);
+
+    // hreflang for PL tool pages
+    if (loc === '/narzedzia') {
+      base.alternateRefs = [
+        { href: `${SITE_URL}/narzedzia`, hreflang: 'pl' },
+        { href: `${SITE_URL}/en/tools`, hreflang: 'en' },
+      ];
+    } else if (loc.startsWith('/narzedzia/')) {
+      const plSlug = loc.replace('/narzedzia/', '');
+      const enSlug = TOOL_SLUG_MAP_PL_TO_EN[plSlug];
+      if (enSlug) {
+        base.alternateRefs = [
+          { href: `${SITE_URL}${loc}`, hreflang: 'pl' },
+          { href: `${SITE_URL}/en/tools/${enSlug}`, hreflang: 'en' },
+        ];
+      }
+    }
+    // hreflang for EN tool pages
+    if (loc === '/en/tools') {
+      base.alternateRefs = [
+        { href: `${SITE_URL}/narzedzia`, hreflang: 'pl' },
+        { href: `${SITE_URL}/en/tools`, hreflang: 'en' },
+      ];
+    } else if (loc.startsWith('/en/tools/')) {
+      const enSlug = loc.replace('/en/tools/', '');
+      const plSlug = TOOL_SLUG_MAP_EN_TO_PL[enSlug];
+      if (plSlug) {
+        base.alternateRefs = [
+          { href: `${SITE_URL}/narzedzia/${plSlug}`, hreflang: 'pl' },
+          { href: `${SITE_URL}${loc}`, hreflang: 'en' },
+        ];
+      }
+    }
+
     return base;
   },
 
@@ -211,9 +266,17 @@ module.exports = {
     const add = [];
 
     // Explicitly add all /narzedzia/* routes to ensure they're always in sitemap
-    // (next-sitemap may filter routes with file-extension-like patterns, e.g. "favicon-ico")
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
       if (loc.startsWith('/narzedzia/') && loc !== '/narzedzia') {
+        const entry = { loc, changefreq: 'weekly', priority: 0.7 };
+        if (last) entry.lastmod = last;
+        add.push(entry);
+      }
+    }
+
+    // Explicitly add all /en/tools/* routes
+    for (const [loc, last] of ROUTE_LASTMOD.entries()) {
+      if (loc.startsWith('/en/tools/') && loc !== '/en/tools') {
         const entry = { loc, changefreq: 'weekly', priority: 0.7 };
         if (last) entry.lastmod = last;
         add.push(entry);

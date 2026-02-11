@@ -35,7 +35,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
                   <span className="h3">{metric.value}</span>
                   <span className="text-light text-sm">{metric.unit}</span>
                 </div>
-                <div className="h-2 overflow-hidden rounded-full bg-primary-light">
+                <div className="bg-primary-light h-2 overflow-hidden rounded-full">
                   <div
                     className={`h-full rounded-full ${metric.color}`}
                     style={{ width: `${percentage}%` }}

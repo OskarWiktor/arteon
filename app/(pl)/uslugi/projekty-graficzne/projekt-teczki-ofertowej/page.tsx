@@ -4,15 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import {
-  RiPencilRuler2Line,
-  RiBrushLine,
-  RiBarChart2Fill,
-  RiLightbulbFlashLine,
-  RiFileTextLine,
-  RiFolderOpenLine,
-  RiMoneyDollarCircleLine,
-} from 'react-icons/ri';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
@@ -143,27 +135,27 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Prestiż na każdym spotkaniu',
               description: <>Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie materiałów robi dobre wrażenie.</>,
-              icon: <RiFolderOpenLine className="h-6 w-6 text-primary" />,
+              icon: <RiFolderOpenLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale nawiązują do Twojej identyfikacji wizualnej, aby wszystkie materiały mówiły jednym językiem.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
+              icon: <IoColorPalette className="text-primary h-6 w-6" />,
             },
             {
               title: 'Przemyślane rozwiązania konstrukcyjne',
               description: <>Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka była trwała, wygodna i funkcjonalna w codziennym użyciu.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-primary" />,
+              icon: <RiBrushLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz od razu przekazać je do produkcji.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
+              icon: <RiFileTextLine className="text-primary h-6 w-6" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
+              icon: <RiMoneyDollarCircleLine className="text-primary h-6 w-6" />,
             },
           ]}
         />

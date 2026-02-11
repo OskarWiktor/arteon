@@ -56,13 +56,13 @@ export default function CTABanner({
       <section data-section="cta-split">
         <Wrapper>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="flex flex-col justify-between rounded-2xl bg-primary p-8 text-white">
+            <div className="bg-primary flex flex-col justify-between rounded-2xl p-8 text-white">
               <div>
                 <h3 className="h3 mb-3">{leftColumn?.title}</h3>
                 {leftColumn?.description && <p className="mb-6 text-white/80">{leftColumn.description}</p>}
               </div>
               {leftColumn?.btnLabel && leftColumn?.btnLink && (
-                <AppLink href={leftColumn.btnLink} className="inline-flex w-fit items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium text-primary transition hover:bg-primary-light">
+                <AppLink href={leftColumn.btnLink} className="text-primary hover:bg-primary-light inline-flex w-fit items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium transition">
                   {leftColumn.btnLabel}
                   <RiArrowRightLine className="h-5 w-5" />
                 </AppLink>
@@ -74,10 +74,7 @@ export default function CTABanner({
                 {rightColumn?.description && <p className="text-light mb-6">{rightColumn.description}</p>}
               </div>
               {rightColumn?.btnLabel && rightColumn?.btnLink && (
-                <AppLink
-                  href={rightColumn.btnLink}
-                  className="inline-flex w-fit items-center gap-2 rounded-xl border border-primary px-6 py-3 font-medium text-primary transition hover:bg-neutral-50"
-                >
+                <AppLink href={rightColumn.btnLink} className="border-primary text-primary inline-flex w-fit items-center gap-2 rounded-xl border px-6 py-3 font-medium transition hover:bg-neutral-50">
                   {rightColumn.btnLabel}
                   <RiArrowRightLine className="h-5 w-5" />
                 </AppLink>

@@ -278,15 +278,21 @@ export default function Page() {
           demo={
             <div className="space-y-3">
               <div className="flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3">
-                <Badge variant="success" size="sm">Dobra długość</Badge>
+                <Badge variant="success" size="sm">
+                  Dobra długość
+                </Badge>
                 <span className="text-mid text-sm!">Tekst mieści się w zakresie</span>
               </div>
               <div className="flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3">
-                <Badge variant="warning" size="sm">Poniżej zakresu</Badge>
+                <Badge variant="warning" size="sm">
+                  Poniżej zakresu
+                </Badge>
                 <span className="text-mid text-sm!">Tekst jest krótszy niż typowy</span>
               </div>
               <div className="flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3">
-                <Badge variant="error" size="sm">Powyżej zakresu</Badge>
+                <Badge variant="error" size="sm">
+                  Powyżej zakresu
+                </Badge>
                 <span className="text-mid text-sm!">Tekst jest dłuższy niż typowy</span>
               </div>
               <div className="mt-2 rounded-lg bg-neutral-100 p-3">
@@ -295,7 +301,7 @@ export default function Page() {
                   <span className="text-mid">1200 / 1200-3000</span>
                 </div>
                 <div className="h-2 w-full rounded-full bg-neutral-200">
-                  <div className="h-2 w-2/5 rounded-full bg-success-icon" />
+                  <div className="bg-success-icon h-2 w-2/5 rounded-full" />
                 </div>
               </div>
             </div>
@@ -307,14 +313,16 @@ export default function Page() {
               <strong className="text-success-text">Dobra długość</strong> (zielony) - tekst mieści się w orientacyjnym zakresie dla wybranego typu strony.
             </li>
             <li>
-              <strong className="text-warning-text">Poniżej zakresu</strong> (żółty) - tekst jest krótszy niż typowy dla tego typu strony. Jeśli odpowiada na pytania czytelnika, długość może być odpowiednia.
+              <strong className="text-warning-text">Poniżej zakresu</strong> (żółty) - tekst jest krótszy niż typowy dla tego typu strony. Jeśli odpowiada na pytania czytelnika, długość może być
+              odpowiednia.
             </li>
             <li>
               <strong className="text-error-text">Powyżej zakresu</strong> (czerwony) - tekst jest dłuższy niż typowy. Jeśli każdy akapit wnosi nową informację, długość jest uzasadniona.
             </li>
           </ul>
           <p className="text-mid mt-4">
-            Zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Jeśli tekst odpowiada na pytania czytelnika, długość jest odpowiednia niezależnie od wyniku w liczniku.
+            Zakresy opierają się na analizach treści, które dobrze pozycjonują się w wyszukiwarkach. Jeśli tekst odpowiada na pytania czytelnika, długość jest odpowiednia niezależnie od wyniku w
+            liczniku.
           </p>
         </SectionDemo>
 
@@ -338,32 +346,32 @@ export default function Page() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Opis produktu</td>
                   <td className="py-2 pr-4 whitespace-nowrap">80–400 słów</td>
-                  <td className="py-2 text-sm text-primary-light0">Prosty produkt (np. kubek) - 80-150 słów. Złożony sprzęt (np. laptop) - 300-400 słów, bo kupujący ma więcej pytań.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Prosty produkt (np. kubek) - 80-150 słów. Złożony sprzęt (np. laptop) - 300-400 słów, bo kupujący ma więcej pytań.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona usługi</td>
                   <td className="py-2 pr-4 whitespace-nowrap">500–1500 słów</td>
-                  <td className="py-2 text-sm text-primary-light0">Lokalna usługa (np. hydraulik) - 500-700 słów. Usługa B2B z procesem i FAQ - 1200-1500 słów.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Lokalna usługa (np. hydraulik) - 500-700 słów. Usługa B2B z procesem i FAQ - 1200-1500 słów.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona główna</td>
                   <td className="py-2 pr-4 whitespace-nowrap">400–1000 słów</td>
-                  <td className="py-2 text-sm text-primary-light0">Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej - tekst ma wspierać nawigację, nie zastępować podstrony.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Cel strony głównej to przekazanie głównej wartości i pokierowanie dalej - tekst ma wspierać nawigację, nie zastępować podstrony.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Strona ofertowa</td>
                   <td className="py-2 pr-4 whitespace-nowrap">600–2500 słów</td>
-                  <td className="py-2 text-sm text-primary-light0">Prosta oferta - 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów i odpowiedzi na obiekcje - 1500-2500 słów.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Prosta oferta - 600-1000 słów. Oferta wymagająca wyjaśnienia procesu, wariantów i odpowiedzi na obiekcje - 1500-2500 słów.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Artykuł blogowy</td>
                   <td className="py-2 pr-4 whitespace-nowrap">1200–3000 słów</td>
-                  <td className="py-2 text-sm text-primary-light0">Odpowiedź na proste pytanie - 1200-1800 słów. Kompleksowe zagadnienie z wieloma aspektami - 2000-3000 słów.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Odpowiedź na proste pytanie - 1200-1800 słów. Kompleksowe zagadnienie z wieloma aspektami - 2000-3000 słów.</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4">Poradnik</td>
                   <td className="py-2 pr-4 whitespace-nowrap">2500–6000 słów</td>
-                  <td className="py-2 text-sm text-primary-light0">Wąski temat - 2500-3500 słów. Szeroki temat z wieloma krokami i przykładami - 4000-6000 słów.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Wąski temat - 2500-3500 słów. Szeroki temat z wieloma krokami i przykładami - 4000-6000 słów.</td>
                 </tr>
               </tbody>
             </table>
@@ -427,42 +435,42 @@ export default function Page() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Google - meta title</td>
                   <td className="py-2 pr-4 whitespace-nowrap">50-60 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Dłuższe tytuły są obcinane w wynikach wyszukiwania.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Dłuższe tytuły są obcinane w wynikach wyszukiwania.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Google - meta description</td>
                   <td className="py-2 pr-4 whitespace-nowrap">150-160 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Opis widoczny pod linkiem w wynikach wyszukiwania.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Opis widoczny pod linkiem w wynikach wyszukiwania.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Allegro - tytuł oferty</td>
                   <td className="py-2 pr-4 whitespace-nowrap">50 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Krótki, konkretny tytuł z najważniejszymi słowami kluczowymi.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Krótki, konkretny tytuł z najważniejszymi słowami kluczowymi.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Allegro - opis produktu</td>
                   <td className="py-2 pr-4 whitespace-nowrap">4000 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Opis widoczny na karcie produktu.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Opis widoczny na karcie produktu.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">OLX - tytuł ogłoszenia</td>
                   <td className="py-2 pr-4 whitespace-nowrap">70 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Tytuł widoczny w wynikach wyszukiwania.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Tytuł widoczny w wynikach wyszukiwania.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">OLX - opis ogłoszenia</td>
                   <td className="py-2 pr-4 whitespace-nowrap">9000 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Pełny opis oferty.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Pełny opis oferty.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">X (Twitter) - post</td>
                   <td className="py-2 pr-4 whitespace-nowrap">280 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Standardowy limit dla zwykłych użytkowników.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Standardowy limit dla zwykłych użytkowników.</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4">LinkedIn - post</td>
                   <td className="py-2 pr-4 whitespace-nowrap">3000 znaków</td>
-                  <td className="py-2 text-sm text-primary-light0">Po ~210 znakach pojawia się "zobacz więcej".</td>
+                  <td className="text-primary-light0 py-2 text-sm">Po ~210 znakach pojawia się "zobacz więcej".</td>
                 </tr>
               </tbody>
             </table>

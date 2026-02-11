@@ -40,11 +40,13 @@ import {
 
 export const metadata: Metadata = {
   title: 'Ekstraktor kolorów z obrazu online | Pobierz paletę ze zdjęcia',
-  description: 'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.',
+  description:
+    'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu') },
   openGraph: {
     title: 'Ekstraktor kolorów z obrazu online | Pobierz paletę ze zdjęcia',
-    description: 'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.',
+    description:
+      'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.',
     url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
     type: 'website',
     images: [
@@ -179,8 +181,8 @@ export default function Page() {
 
         <SectionInfo title="Po co wyciągać kolory z obrazu?">
           <p className="mb-4">
-            Każde zdjęcie, logo czy grafika zawiera barwy, które można wykorzystać jako gotową paletę kolorów. Ekstraktor analizuje obraz i pokazuje, które kolory na nim dominują - wraz z kodami HEX
-            i wartościami RGB gotowymi do wklejenia w projekt.
+            Każde zdjęcie, logo czy grafika zawiera barwy, które można wykorzystać jako gotową paletę kolorów. Ekstraktor analizuje obraz i pokazuje, które kolory na nim dominują - wraz z kodami HEX i
+            wartościami RGB gotowymi do wklejenia w projekt.
           </p>
           <p className="mb-4">
             W praktyce oznacza to, że zamiast ręcznie próbkować kolory w programie graficznym (pixel po pikselu), wgrywasz jedno zdjęcie i dostajesz uporządkowaną listę do 12 barw. To przydaje się
@@ -230,8 +232,8 @@ export default function Page() {
           }
         >
           <p className="text-mid mb-4">
-            Po wgraniu obrazu ekstraktor wyświetla listę dominujących barw posortowanych od najczęściej występującej. Przy każdym kolorze widoczny jest kod HEX i wartość RGB - gotowe do wklejenia w CSS,
-            Figmę lub dowolny program graficzny.
+            Po wgraniu obrazu ekstraktor wyświetla listę dominujących barw posortowanych od najczęściej występującej. Przy każdym kolorze widoczny jest kod HEX i wartość RGB - gotowe do wklejenia w
+            CSS, Figmę lub dowolny program graficzny.
           </p>
           <p className="text-mid">
             Liczba wyciągniętych kolorów zależy od zawartości obrazu. Zdjęcie krajobrazowe da bogatszą paletę (8–12 barw), a proste logo w dwóch kolorach - odpowiednio mniej pozycji.
@@ -324,8 +326,7 @@ export default function Page() {
             {
               icon: <RiFileWarningLine className="h-6 w-6" />,
               title: 'Plik nie jest akceptowany przez ekstraktor',
-              description:
-                'Narzędzie obsługuje wyłącznie formaty PNG, JPG i SVG. Pliki w innych formatach (GIF, TIFF, HEIC, PDF) wymagają wcześniejszej konwersji.',
+              description: 'Narzędzie obsługuje wyłącznie formaty PNG, JPG i SVG. Pliki w innych formatach (GIF, TIFF, HEIC, PDF) wymagają wcześniejszej konwersji.',
             },
           ]}
         />
@@ -385,8 +386,8 @@ export default function Page() {
               title: 'Rozbudowa istniejącej palety',
               description: (
                 <p>
-                  Wyciągnięty kolor bazowy możesz wykorzystać w{' '}
-                  <Link href="/narzedzia/generator-palet-kolorow">generatorze palet kolorów</Link>, aby stworzyć pełny zestaw harmonijnych barw na podstawie teorii koloru.
+                  Wyciągnięty kolor bazowy możesz wykorzystać w <Link href="/narzedzia/generator-palet-kolorow">generatorze palet kolorów</Link>, aby stworzyć pełny zestaw harmonijnych barw na
+                  podstawie teorii koloru.
                 </p>
               ),
             },

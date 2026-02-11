@@ -16,7 +16,7 @@ export default function SectionIconBadges({ title, badges }: SectionIconBadgesPr
     <section data-section="icon-badges" aria-labelledby={title ? 'badges-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="badges-title" className="h3 mb-4 md:mb-6 lg:mb-8 text-center">
+          <h2 id="badges-title" className="h3 mb-4 text-center md:mb-6 lg:mb-8">
             {title}
           </h2>
         )}

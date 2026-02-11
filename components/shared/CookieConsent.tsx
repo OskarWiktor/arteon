@@ -35,13 +35,36 @@ const ui = {
     changeDecision: 'W każdej chwili możesz zmienić decyzję',
     save: 'Zapisz',
   },
+  en: {
+    title: 'Cookies and privacy',
+    description: 'We use technologies essential for the site to work, <strong>analytics</strong> to improve the site, and <strong>ads</strong>. We will only enable them with your consent.',
+    setPreferences: 'Set preferences',
+    privacyPolicy: 'Privacy Policy',
+    reject: 'Reject all',
+    settings: 'Settings',
+    accept: 'Accept all',
+    panelTitle: 'Privacy preferences',
+    panelDescription: 'Data processing consent settings.',
+    categoriesLegend: 'Categories',
+    essentialTitle: 'Essential',
+    essentialDescription: 'The site cannot function without these. They do not collect marketing data.',
+    essentialStatus: 'Always active',
+    analyticsTitle: 'Analytics (GA4)',
+    analyticsDescription: 'Visit statistics. Enables Google Analytics 4 with your consent.',
+    analyticsLabel: 'Enable GA4 analytics',
+    adsTitle: 'Ads (Google AdSense)',
+    adsDescription: 'Personalized ads based on your interests.',
+    adsLabel: 'Enable personalized ads',
+    changeDecision: 'You can change your decision at any time',
+    save: 'Save',
+  },
 } as const;
 
 function updateGtag(analytics: boolean, ads: boolean) {
   updateGtagConsent({ analytics, ads });
 }
 
-export default function CookieConsent() {
+export default function CookieConsent({ locale = 'pl' }: { locale?: 'pl' | 'en' }) {
   const [visible, setVisible] = useState(false);
   const [panel, setPanel] = useState(false);
   const [analyticsChoice, setAnalyticsChoice] = useState(false);
@@ -111,7 +134,7 @@ export default function CookieConsent() {
   }
 
   if (!visible) return null;
-  const t = ui.pl;
+  const t = ui[locale];
   const titleId = panel ? 'cookie-panel-title' : 'cookie-title';
   const descId = panel ? 'cookie-panel-desc' : 'cookie-desc';
 
@@ -150,7 +173,7 @@ export default function CookieConsent() {
               <button
                 ref={firstNativeBtnRef}
                 onClick={() => saveAndClose({ analytics: false, ads: false })}
-                className="text-dark inline-flex w-fit items-center rounded-2xl border border-primary-light bg-white px-3 py-1 text-base font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="text-dark border-primary-light focus-visible:ring-primary inline-flex w-fit items-center rounded-2xl border bg-white px-3 py-1 text-base font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2"
               >
                 {t.reject}
               </button>
@@ -180,7 +203,7 @@ export default function CookieConsent() {
                   <span className="text-base font-medium">{t.essentialTitle}</span>
                   <span className="text-dark ml-2 text-sm font-medium">{t.essentialDescription}</span>
                 </div>
-                <span className="text-dark rounded-full bg-primary-light px-3 py-1 text-xs font-semibold">{t.essentialStatus}</span>
+                <span className="text-dark bg-primary-light rounded-full px-3 py-1 text-xs font-semibold">{t.essentialStatus}</span>
               </div>
 
               <div className="flex items-start justify-between gap-4 rounded border border-neutral-200 bg-white px-4 py-2">
@@ -210,7 +233,7 @@ export default function CookieConsent() {
               <div className="flex gap-2">
                 <button
                   onClick={() => saveAndClose({ analytics: false, ads: false })}
-                  className="text-dark inline-flex w-fit items-center rounded-2xl border border-primary-light bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  className="text-dark border-primary-light focus-visible:ring-primary inline-flex w-fit items-center rounded-2xl border bg-white px-3 py-1 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2"
                 >
                   {t.reject}
                 </button>
