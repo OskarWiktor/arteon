@@ -20,7 +20,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
   return (
     <Link
       href={`${t.projectUrlPrefix}/${project.slug}`}
-      className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+      className="group block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
     >
       <article className="surface-card-lift flex h-full flex-col overflow-hidden">
         <div className={`relative ${sizeClass} w-full`}>
@@ -32,7 +32,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
           <p className="text-light mt-2 line-clamp-2">{project.short}</p>
 
           <div className="mt-auto">
-            <div className="mt-4 mb-2 h-px w-full bg-gray-200" aria-hidden="true" />
+            <div className="mt-4 mb-2 h-px w-full bg-neutral-200" aria-hidden="true" />
             <Button variant="normal" size="small" arrow className="border-0 shadow-none hover:translate-y-0 hover:shadow-none">
               {t.projectDetails}
             </Button>

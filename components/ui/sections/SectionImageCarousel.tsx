@@ -44,7 +44,7 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
     <section data-section="image-carousel" aria-labelledby={title ? 'carousel-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="carousel-title" className="h4 reveal-animation mb-6">
+          <h2 id="carousel-title" className="h3 mb-4 md:mb-6 lg:mb-8">
             {title}
           </h2>
         )}
@@ -73,7 +73,7 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
                 className="absolute top-1/2 left-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:bg-white"
                 aria-label="Poprzedni slajd"
               >
-                <RiArrowLeftLine className="h-5 w-5 text-slate-800" />
+                <RiArrowLeftLine className="h-5 w-5 text-primary" />
               </button>
 
               <button
@@ -82,7 +82,7 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
                 className="absolute top-1/2 right-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:bg-white"
                 aria-label="Następny slajd"
               >
-                <RiArrowRightLine className="h-5 w-5 text-slate-800" />
+                <RiArrowRightLine className="h-5 w-5 text-primary" />
               </button>
 
               <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">

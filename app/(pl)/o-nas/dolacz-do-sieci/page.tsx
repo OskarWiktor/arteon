@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Stale rozwijamy sieć partnerów, mając na celu stworzenie przestrzeni, w której można zrealizować wszystko. Sprawdź, kogo szukamy teraz.',
     url: toAbsoluteUrl('/o-nas/dolacz-do-sieci'),
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp') }],
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
   },
 };
 
@@ -64,22 +64,22 @@ export default function JoinNetworkPage() {
           items={[
             {
               title: 'Wideo i montaż',
-              icon: <RiShareForwardLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiShareForwardLine className="h-6 w-6 text-primary" />,
               description: <p>Montaż rolek i krótkich formatów wideo do mediów społecznościowych.</p>,
             },
             {
               title: 'Animacje',
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-primary" />,
               description: <p>Tworzenie animacji do krótkich filmów do mediów społecznościowych.</p>,
             },
             {
               title: 'Grafika 3D i wizualizacje',
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-primary" />,
               description: <p>Tworzenie grafik 3D, w tym głównie wizualizacji produktów.</p>,
             },
             {
               title: 'Aplikacje mobilne',
-              icon: <RiAppsLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiAppsLine className="h-6 w-6 text-primary" />,
               description: <p>Tworzenie dedykowanych rozwiązań biznesowych dla systemów Android i iOS (React Native).</p>,
             },
           ]}

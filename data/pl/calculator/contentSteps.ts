@@ -20,7 +20,7 @@ export const contentSteps: Step[] = [
         icon: 'FiGlobe',
       },
       {
-        label: 'Treści do social mediów',
+        label: 'Treści do mediów społecznościowych',
         value: 'social',
         price: 0,
         icon: 'FiShare2',

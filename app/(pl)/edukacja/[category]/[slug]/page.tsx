@@ -267,7 +267,7 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'ad') {
           return (
             <div key={`grp-ad-${i}`} className="not-prose my-8">
-              <AdSense adClient="ca-pub-7845947936813012" adSlot={b.slot || '9459125335'} adFormat="in-article" />
+              <AdSense variant="in-article" adSlot={b.slot} />
             </div>
           );
         }
@@ -370,7 +370,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
 
           {article.faq?.length ? (
             <>
-              <FaqPanels openByDefault={1} title="Najczęstsze pytania" subtitle="FAQ" items={article.faq} pageUrl={url} />
+              <FaqPanels openByDefault={1} title="Najczęstsze pytania" items={article.faq} pageUrl={url} />
             </>
           ) : null}
 

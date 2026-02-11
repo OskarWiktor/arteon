@@ -4,16 +4,20 @@ import {
   RiAppsLine,
   RiArticleLine,
   RiBookletLine,
+  RiBrushLine,
   RiCodeSSlashFill,
   RiContrast2Line,
   RiCoupon2Line,
   RiCropLine,
+  RiFileEditLine,
   RiFileList2Line,
   RiFileTextLine,
   RiFolderOpenLine,
+  RiGlobalLine,
   RiIdCardLine,
   RiImageEditLine,
   RiLayoutLine,
+  RiLineChartLine,
   RiMailLine,
   RiMegaphoneLine,
   RiPaletteLine,
@@ -99,6 +103,7 @@ export type OfferSection = {
   key: OfferSectionKey;
   title: string;
   hubHref?: string;
+  icon?: IconType;
   items: OfferSectionItem[];
 };
 
@@ -106,11 +111,12 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
   {
     key: 'witryny',
     title: 'Witryny',
+    icon: RiGlobalLine,
     items: [
       {
         key: 'websites',
-        href: '/uslugi/strony-internetowe',
-        title: 'Strony internetowe',
+        href: '/uslugi/tworzenie-stron-wordpress',
+        title: 'Strony WordPress',
         icon: RiCodeSSlashFill,
       },
       {
@@ -131,6 +137,7 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
     key: 'marketing',
     title: 'Marketing',
     hubHref: '/uslugi/marketing',
+    icon: RiLineChartLine,
     items: [
       {
         key: 'auditSeo',
@@ -157,6 +164,7 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
     key: 'grafika',
     title: 'Projekty graficzne',
     hubHref: '/uslugi/projekty-graficzne',
+    icon: RiBrushLine,
     items: [
       { key: 'priceList', href: '/uslugi/projekty-graficzne/projekt-cennika', title: 'Cenniki', icon: RiPriceTag3Line },
       {
@@ -183,6 +191,7 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
     key: 'tresc',
     title: 'Tworzenie treści',
     hubHref: '/uslugi/tworzenie-tresci',
+    icon: RiFileEditLine,
     items: [
       {
         key: 'contentCreation',
@@ -211,6 +220,7 @@ export type ToolSectionItem = {
 export type ToolsSection = {
   key: ToolsSectionKey;
   title: string;
+  icon?: IconType;
   items: ToolSectionItem[];
 };
 
@@ -218,6 +228,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
   {
     key: 'obrazy',
     title: 'Obrazy i favicony',
+    icon: RiImageEditLine,
     items: [
       {
         key: 'jpgToWebp',
@@ -231,7 +242,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
         key: 'imageResize',
         href: '/narzedzia/edytor-zdjec-online',
         title: 'Edytor zdjęć online',
-        description: 'Przygotuj idealny kadr pod social media lub stronę WWW. Wybierz gotowy format lub wpisz własne wymiary.',
+        description: 'Przygotuj idealny kadr pod media społecznościowe lub stronę WWW. Wybierz gotowy format lub wpisz własne wymiary.',
         image: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
         icon: RiCropLine,
       },
@@ -248,6 +259,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
   {
     key: 'seo',
     title: 'Meta i SEO',
+    icon: RiSearchLine,
     items: [
       {
         key: 'metaCounter',
@@ -270,6 +282,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
   {
     key: 'email',
     title: 'E-mail i komunikacja',
+    icon: RiMailLine,
     items: [
       {
         key: 'emailSignature',
@@ -284,11 +297,12 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
   {
     key: 'kolory',
     title: 'Kolory i dostępność',
+    icon: RiPaletteLine,
     items: [
       {
         key: 'contrastChecker',
         href: '/narzedzia/sprawdz-czytelnosc-kolorow',
-        title: 'Sprawdź czytelność kolorów',
+        title: 'Kontrast i czytelność kolorów',
         description: 'Sprawdź czy kolory tekstu i tła są czytelne. Narzędzie oblicza kontrast według WCAG i pomoże dobrać odpowiedni kolor.',
         image: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
         icon: RiContrast2Line,
@@ -314,6 +328,7 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
   {
     key: 'druk',
     title: 'Druk i materiały',
+    icon: RiQrCodeLine,
     items: [
       {
         key: 'qrCode',

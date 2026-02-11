@@ -4,13 +4,9 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
-import TechSteps from '@/components/sections/steps/TechSteps';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import {
-  RiComputerLine,
-  RiPaletteLine,
-  RiPencilLine,
   RiArticleLine,
   RiSearchLine,
   RiShieldCheckLine,
@@ -25,7 +21,7 @@ import {
   RiLifebuoyLine,
   RiMessage2Line,
 } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -36,6 +32,8 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
@@ -46,7 +44,7 @@ export const metadata = {
     description: 'Tworzymy blogi firmowe i eksperckie. Proste zasady, jasna gwarancja i odpowiedzialność po naszej stronie. Wyceń swój projekt już dziś',
     url: 'https://www.arteonagency.pl/uslugi/blogi-internetowe',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-pilkanozna-pl.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-pilkanozna-pl.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -95,6 +93,10 @@ export default function OfferBlogPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje stron internetowych i blogów" category="strona" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz tworząc blog internetowy?">
           <p>
             <strong>Stworzenie bloga internetowego daje Twojej firmie dodatkowe stałe źródło ruchu i zapytań.</strong> Artykuły na blogu internetowym potrafią generować dużą, znaczącą ilość wejść na
@@ -108,7 +110,7 @@ export default function OfferBlogPage() {
           <br />
 
           <p>
-            <strong>Blog internetowy daje więcej odwiedzić przy niskim koszcie.</strong> Marketing skoncentrowany wokół tworzenia treści, generuje ok.
+            <strong>Blog internetowy daje więcej odwiedzin przy niskim koszcie.</strong> Marketing skoncentrowany wokół tworzenia treści, generuje ok.
             <strong> 3x więcej odwiedzin</strong> i kosztuje ok. <strong>62% mniej</strong> niż działania outbound - płatne reklamy, „zimne” maile i telefony sprzedażowe{' '}
             <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.demandsage.com/business-blogging-statistics">
               (źródło)
@@ -119,7 +121,7 @@ export default function OfferBlogPage() {
           <br />
 
           <p>
-            <strong>Klienci wolą pomocne, edukacyjne i ekspreckie treści niż reklamy.</strong> Aż <strong>~70%</strong> odbiorców woli poznawać firmę poprzez artykuły, a nie reklamy - to prosty sposób
+            <strong>Klienci wolą pomocne, edukacyjne i eksperckie treści niż reklamy.</strong> Aż <strong>~70%</strong> odbiorców woli poznawać firmę poprzez artykuły, a nie reklamy - to prosty sposób
             na budowanie zaufania i dodatkowe kontakty{' '}
             <a target="_blank" rel="noopener noreferrer" className="inline-link" href="https://www.demandsage.com/business-blogging-statistics">
               (źródło)
@@ -149,59 +151,55 @@ export default function OfferBlogPage() {
             {
               title: 'Indywidualny projekt graficzny bloga online',
               description: <>Wygląd, który od pierwszych sekund pokazuje profesjonalizm i zachęca do czytania</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dobór i obróbka grafik do wpisów',
               description: <>Pomagamy dobrać spójne grafiki i dopasowujemy je do bloga: kadry, proporcje, waga</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBrushLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wsparcie prawne przy politykach i zgodach',
               description: <>Przeprowadzamy Cię przez wymagania (polityki, pliki cookie, zgody)</>,
-              icon: <GoLaw className="h-6 w-6 text-slate-800" />,
+              icon: <GoLaw className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Blog dostosowany do różnych urządzeń',
               description: <>Czytelność oraz szybkość na każdym urządzeniu</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dedykowane szkolenie PDF z obsługi bloga',
               description: <>Proste instrukcje: jak dodać wpis, zdjęcia i linki</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Dostajesz wycenę z jasnym zakresem, informujemy Cię na bieżąco, ile coś kosztuje</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Transparentna współpraca na bieżąco',
               description: <>Informujemy Cię regularnie o postępach prac nad Twoim blogiem</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pełną własność i dostępy',
               description: <>Przekazujemy Ci wszystkie konta oraz hasła - w trakcie oraz po zakończeniu prac</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiKey2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Proste raporty wyników',
               description: <>Wdrażamy narzędzia analityczne pokazujące skąd jest ruch i które wpisy pracują najlepiej</>,
-              icon: <RiBarChart2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiBarChart2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dalsze wsparcie + 2 miesiące gwarancji',
               description: <>Po publikacji pomagamy w dalszym rozwoju bloga. Ewentualne błędy poprawiamy w ramach gwarancji</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
-
-        <Gap variant="line" />
-
-        <ProjectsCarousel title="Wyróżnione realizacje blogów" category="blog" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -211,7 +209,6 @@ export default function OfferBlogPage() {
 
         <SectionPrices
           id="pricing-blogs"
-          subtitle="Przykładowe pakiety"
           title="Cennik blogów internetowych"
           plans={
             [
@@ -287,12 +284,6 @@ export default function OfferBlogPage() {
         />
 
         <Gap />
-      </Wrapper>
-
-      <TechSteps />
-
-      <Wrapper>
-        <Gap />
 
         <FeesSteps />
 
@@ -302,35 +293,42 @@ export default function OfferBlogPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy Twój blog online" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę bloga internetowego" defaultSubject="Blog" />
+        <SectionContactForm
+          title="Sprawdź koszt realizacji bloga internetowego"
+          description="Napisz o czym ma być Twój blog, czy potrzebujesz pomocy z tworzeniem treści oraz czy posiadasz materiały graficzne (logo oraz zdjęcia) i otrzymaj darmową wycenę realizacji."
+          imageSrc="/assets/projects/arteon-baners-pilkanozna-pl.webp"
+          imageAlt="Realizacja bloga internetowego - PilkaNozna.pl mockup"
+          defaultSubject="Blog"
+        />
 
         <Gap variant="line" />
 
         <FaqPanels
           openByDefault={1}
+          title="Najczęstsze pytania dotyczące blogów internetowych"
           pageUrl="https://www.arteonagency.pl/uslugi/blogi-internetowe"
           items={[
-            { question: 'Ile trwa stworzenie bloga?', answer: 'Standardowo projekt zajmuje od 7 do 20 dni roboczych, w zależności od złożoności i dostępnych materiałów' },
+            { question: 'Ile trwa stworzenie bloga?', answer: 'Standardowo projekt zajmuje od 7 do 20 dni roboczych, w zależności od złożoności i dostępnych materiałów.' },
             {
               question: 'Czy mogę samodzielnie prowadzić bloga po wdrożeniu?',
-              answer: 'Tak, po uruchomieniu bloga otrzymasz szkolenie PDF - abyś mógł/mogła samodzielnie dodawać wpisy, zdjęcia i kategorie',
+              answer: 'Tak, po uruchomieniu bloga otrzymasz szkolenie PDF, dzięki któremu samodzielnie dodasz wpisy, zdjęcia i kategorie.',
             },
             {
               question: 'Czy blog będzie zoptymalizowany pod SEO?',
               answer:
-                'Tak, wdrażamy techniczne podstawy SEO (szybkość, Responsywność, struktura nagłówków, meta tagi) i stosujemy najlepsze praktyki, by Twoje treści miały szansę dobrze pozycjonować się w Google',
+                'Tak, wdrażamy techniczne podstawy SEO (szybkość, responsywność, struktura nagłówków, meta tagi) i stosujemy najlepsze praktyki, aby Twoje treści miały szansę dobrze pozycjonować się w Google.',
             },
             {
               question: 'Czy projektujecie wygląd bloga od zera?',
-              answer: 'Tak, blog może być zaprojektowany indywidualnie - zgodnie z identyfikacją Twojej marki. Możemy też oprzeć go na nowoczesnym, dopracowanym szablonie',
+              answer: 'Tak, blog może być zaprojektowany indywidualnie, zgodnie z identyfikacją Twojej marki. Możemy też oprzeć go na nowoczesnym, dopracowanym szablonie.',
             },
             {
               question: 'Czy dodajecie pierwsze wpisy na start?',
-              answer: 'Tak, możemy przygotować i dodać kilka startowych wpisów, aby blog wyglądał na aktywny i przyciągał ruch od pierwszego dnia',
+              answer: 'Tak, możemy przygotować i dodać kilka startowych wpisów, aby blog wyglądał na aktywny i przyciągał ruch od pierwszego dnia.',
             },
             {
               question: 'Czy mogę liczyć na pomoc w strategii treści?',
-              answer: 'Tak, pomagamy w budowie struktury bloga, tak, aby pojawił się wyżej w Google',
+              answer: 'Tak, pomagamy w budowie struktury bloga tak, aby pojawił się wyżej w Google.',
             },
           ]}
         />
@@ -338,10 +336,9 @@ export default function OfferBlogPage() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
@@ -350,7 +347,6 @@ export default function OfferBlogPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiBarChart2Line className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'medium',
@@ -359,25 +355,27 @@ export default function OfferBlogPage() {
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              icon: <RiPencilLine className="h-6 w-6" />,
               title: 'Tworzenie treści',
               description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-tresci',
             },
             {
-              icon: <RiPaletteLine className="h-6 w-6" />,
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące stron i blogów" categorySlug="strony" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

@@ -203,7 +203,7 @@ export default function QrCodeGenerator() {
       <ToolSection className="space-y-4">
         <div>
           <label className="tool-label mb-2 block">{t.dataType}</label>
-          <select value={dataType} onChange={(e) => setDataType(e.target.value as QrDataType)} className="tool-input w-full">
+          <select value={dataType} onChange={(e) => setDataType(e.target.value as QrDataType)} className="tool-select w-full">
             <option value="url">{t.types.url}</option>
             <option value="text">{t.types.text}</option>
             <option value="vcard">{t.types.vcard}</option>
@@ -237,36 +237,36 @@ export default function QrCodeGenerator() {
           <div className="space-y-3">
             <div className="grid gap-3 sm:grid-cols-2">
               <div>
-                <label className="tool-label mb-1 block text-sm">{t.vcard.firstName} *</label>
+                <label className="tool-label mb-1 block">{t.vcard.firstName} *</label>
                 <input type="text" value={vcardData.firstName} onChange={(e) => updateVcard('firstName', e.target.value)} className="tool-input w-full" />
               </div>
               <div>
-                <label className="tool-label mb-1 block text-sm">{t.vcard.lastName} *</label>
+                <label className="tool-label mb-1 block">{t.vcard.lastName} *</label>
                 <input type="text" value={vcardData.lastName} onChange={(e) => updateVcard('lastName', e.target.value)} className="tool-input w-full" />
               </div>
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.vcard.organization}</label>
+              <label className="tool-label mb-1 block">{t.vcard.organization}</label>
               <input type="text" value={vcardData.organization} onChange={(e) => updateVcard('organization', e.target.value)} className="tool-input w-full" />
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.vcard.title}</label>
+              <label className="tool-label mb-1 block">{t.vcard.title}</label>
               <input type="text" value={vcardData.title} onChange={(e) => updateVcard('title', e.target.value)} className="tool-input w-full" />
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.vcard.phone}</label>
+              <label className="tool-label mb-1 block">{t.vcard.phone}</label>
               <input type="tel" value={vcardData.phone} onChange={(e) => updateVcard('phone', e.target.value)} className="tool-input w-full" />
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.vcard.email}</label>
+              <label className="tool-label mb-1 block">{t.vcard.email}</label>
               <input type="email" value={vcardData.email} onChange={(e) => updateVcard('email', e.target.value)} className="tool-input w-full" />
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.vcard.website}</label>
+              <label className="tool-label mb-1 block">{t.vcard.website}</label>
               <input type="url" value={vcardData.website} onChange={(e) => updateVcard('website', e.target.value)} className="tool-input w-full" />
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.vcard.address}</label>
+              <label className="tool-label mb-1 block">{t.vcard.address}</label>
               <input type="text" value={vcardData.address} onChange={(e) => updateVcard('address', e.target.value)} className="tool-input w-full" />
             </div>
           </div>
@@ -275,15 +275,15 @@ export default function QrCodeGenerator() {
         {dataType === 'email' && (
           <div className="space-y-3">
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.email.to} *</label>
+              <label className="tool-label mb-1 block">{t.email.to} *</label>
               <input type="email" value={emailData.to} onChange={(e) => updateEmail('to', e.target.value)} className="tool-input w-full" />
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.email.subject}</label>
+              <label className="tool-label mb-1 block">{t.email.subject}</label>
               <input type="text" value={emailData.subject} onChange={(e) => updateEmail('subject', e.target.value)} className="tool-input w-full" />
             </div>
             <div>
-              <label className="tool-label mb-1 block text-sm">{t.email.body}</label>
+              <label className="tool-label mb-1 block">{t.email.body}</label>
               <textarea value={emailData.body} onChange={(e) => updateEmail('body', e.target.value)} rows={3} className="tool-input w-full resize-none" />
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function QrCodeGenerator() {
         <div className="grid gap-3 sm:grid-cols-2">
           <div>
             <label className="tool-label mb-2 block">{t.size}</label>
-            <select value={size} onChange={(e) => setSize(Number(e.target.value))} className="tool-input w-full">
+            <select value={size} onChange={(e) => setSize(Number(e.target.value))} className="tool-select w-full">
               <option value={150}>150 px</option>
               <option value={200}>200 px</option>
               <option value={300}>300 px</option>
@@ -305,7 +305,7 @@ export default function QrCodeGenerator() {
           </div>
           <div>
             <label className="tool-label mb-2 block">{t.margin}</label>
-            <select value={margin} onChange={(e) => setMargin(Number(e.target.value))} className="tool-input w-full">
+            <select value={margin} onChange={(e) => setMargin(Number(e.target.value))} className="tool-select w-full">
               <option value={0}>0 (brak)</option>
               <option value={1}>1</option>
               <option value={2}>2</option>
@@ -334,7 +334,7 @@ export default function QrCodeGenerator() {
 
         <div>
           <label className="tool-label mb-2 block">{t.errorCorrection}</label>
-          <select value={errorLevel} onChange={(e) => setErrorLevel(e.target.value as ErrorCorrectionLevel)} className="tool-input w-full">
+          <select value={errorLevel} onChange={(e) => setErrorLevel(e.target.value as ErrorCorrectionLevel)} className="tool-select w-full">
             <option value="L">{t.errorCorrectionLevels.L}</option>
             <option value="M">{t.errorCorrectionLevels.M}</option>
             <option value="Q">{t.errorCorrectionLevels.Q}</option>
@@ -349,7 +349,7 @@ export default function QrCodeGenerator() {
           <ToolAlert variant="warning">
             {t.contrastWarning}
             <br />
-            <span className="text-sm">
+            <span className="text-xs!">
               {t.contrastRatio}: {contrastValue}:1 ({t.recommended})
             </span>
           </ToolAlert>
@@ -371,11 +371,11 @@ export default function QrCodeGenerator() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3">
-          <Button onClick={handleDownloadPng} disabled={!qrDataUrl || isGenerating} variant="accent">
+        <div className="flex flex-wrap gap-3">
+          <Button onClick={handleDownloadPng} disabled={!qrDataUrl || isGenerating} variant="accent" size="small">
             {t.downloadPng}
           </Button>
-          <Button onClick={handleDownloadSvg} disabled={!qrSvg || isGenerating}>
+          <Button onClick={handleDownloadSvg} disabled={!qrSvg || isGenerating} size="small">
             {t.downloadSvg}
           </Button>
         </div>

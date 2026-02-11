@@ -28,7 +28,7 @@ export default function TableBlock({ caption, note, columns, rows, striped = tru
         )}
 
         <table className="w-full text-left">
-          <thead className="bg-[color:var(--surface-dark)] text-white">
+          <thead className="bg-[color:var(--foreground)] text-white">
             <tr>
               {columns.map((c, i) => (
                 <th key={i} scope="col" className={`px-4 ${compact ? 'py-2' : 'py-3'} ${alignCls(c.align)}`}>

@@ -4,8 +4,17 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookletLine, RiFileTextLine, RiImageLine, RiMoneyDollarCircleLine, RiLayoutLine, RiPantoneLine, RiComputerLine, RiIdCardLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiPencilRuler2Line,
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiBookletLine,
+  RiFileTextLine,
+  RiImageLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -16,8 +25,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import Button from '@/components/ui/buttons/Button';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt katalogu | Arteon',
@@ -28,7 +37,7 @@ export const metadata = {
     description: 'Estetyczny i czytelny katalog firmowy. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/gazetka-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/gazetka-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -88,6 +97,10 @@ export default function OfferDesignCatalogPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz zamawiając projekt katalogu?">
           <p>
             <strong>Katalog porządkuje ofertę i prowadzi do kontaktu.</strong> Klient widzi produkty lub usługi w jasnym układzie: sekcje, zdjęcia, najważniejsze dane i ceny. Znika chaos, a pojawia
@@ -113,7 +126,7 @@ export default function OfferDesignCatalogPage() {
           <ul className="ml-5 list-disc">
             <li>Prezentuje produkty lub usługi w logicznym porządku, bez „gubienia się” w szczegółach,</li>
             <li>Ułatwia decyzję dzięki czytelnym kartom, cenom i wyróżnionym rekomendacjom,</li>
-            <li>Skierowuje do zamówienia: kontaktu z handlowcem, strony www lub sklepu online.</li>
+            <li>Kieruje do zamówienia: kontaktu z handlowcem, strony www lub sklepu online.</li>
           </ul>
 
           <br />
@@ -133,27 +146,27 @@ export default function OfferDesignCatalogPage() {
             {
               title: 'Klarowna prezentacja oferty',
               description: <>Układ, który ułatwia odbiorcy zrozumienie produktów, usług i różnic między pakietami - bez zgadywania i szukania drobnego druku.</>,
-              icon: <RiBookletLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookletLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dopracowane zdjęcia i typografia',
               description: <>Dbamy o spójność zdjęć, czytelne podpisy i hierarchię nagłówków, aby katalog był lekki w odbiorze, nawet przy dużej liczbie stron.</>,
-              icon: <RiImageLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiImageLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wersja drukowana i cyfrowa',
               description: <>Dostarczamy katalog gotowy do druku oraz wygodną wersję do udostępniania online - idealną do mailingu i oferty PDF.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: <>W cenie przewidujemy poprawki. Razem ustalamy układ, kolejność sekcji, wyróżniki ofertowe i sposób prezentacji cen.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -183,17 +196,12 @@ export default function OfferDesignCatalogPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt katalogu - przykładowe zakresy"
-          subtitle="Dobieramy zakres do wielkości oferty"
           plans={[
             {
               name: 'Katalog kompaktowy',
@@ -244,9 +252,11 @@ export default function OfferDesignCatalogPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt katalogu"
-          description="Opisz, jaką ofertę chcesz przedstawić w katalogu i jak chcesz, aby on wyglądał. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji katalogu"
+          description="Napisz jaką ofertę chcesz przedstawić, ile stron ma mieć katalog oraz czy posiadasz logo i zdjęcia — otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/gazetka-mockup.webp"
+          imageAlt="Realizacja projektu katalogu firmowego"
           defaultSubject="Projekt katalogu"
         />
 
@@ -255,6 +265,7 @@ export default function OfferDesignCatalogPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-katalogu"
+          title="Najczęstsze pytania dotyczące projektów katalogów"
           items={[
             {
               question: 'Ile kosztuje projekt katalogu?',
@@ -286,57 +297,17 @@ export default function OfferDesignCatalogPage() {
             },
             {
               question: 'Czy mogę zamówić katalog w języku obcym?',
-              answer: 'Tak, wykonujemy katalogi jedno i wielojęzyczne, z zachowaniem spójnej typografii i układu. Możemy też doradzić, jak najlepiej zaprezentować treści w kilku językach.',
+              answer: 'Tak, wykonujemy katalogi jedno- i wielojęzyczne, z zachowaniem spójnej typografii i układu. Możemy też doradzić, jak najlepiej zaprezentować treści w kilku językach.',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <SectionSteps
-          title="Z czym najlepiej połączyć projekt katalogu?"
-          subtitle="Zobacz też"
-          description="Katalog najlepiej działa, gdy wspiera go strona internetowa lub sklep."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Sklep internetowy z ofertą katalogową',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Przy tworzeniu katalogu warto rozważyć stworzenie sklepu internetowego, w którym klienci będą mogli zakupić przedstawione w katalogu produkty</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/sklepy-internetowe">
-                      Zobacz ofertę sklepów internetowych
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Strona internetowa z usługami z katalogu',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli Twój katalog jest skupiony wokół usług, warto rozważyć stronę internetową, przez którą Twoi klienci będą mogli się z Tobą skontaktować</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
-                      Zobacz ofertę stworzenia strony internetowej
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
         />
 
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -345,7 +316,6 @@ export default function OfferDesignCatalogPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
@@ -354,25 +324,27 @@ export default function OfferDesignCatalogPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiLayoutLine className="h-6 w-6" />,
               title: 'Projekt ulotki',
               description: 'Skuteczna promocja Twojej oferty',
               size: 'small',
               backgroundImage: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-ulotki',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

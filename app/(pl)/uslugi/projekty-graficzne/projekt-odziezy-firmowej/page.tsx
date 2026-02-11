@@ -4,8 +4,18 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiImageLine, RiQuillPenLine, RiTShirt2Line, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiIdCardLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiPencilRuler2Line,
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiFileTextLine,
+  RiImageLine,
+  RiQuillPenLine,
+  RiTShirt2Line,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -16,8 +26,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt odzieży firmowej | Arteon',
@@ -30,7 +40,7 @@ export const metadata = {
     description: 'Projekt nadruków i haftów na odzież firmową: koszulki, bluzy, czapki. Pliki techniczne dla drukarni i hafciarni.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -93,6 +103,10 @@ export default function OfferDesignCorporateApparelPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz zamawiając projekt odzieży firmowej?">
           <p>
             <strong>Spójny wygląd odzieży zespołu ułatwia identyfikację firmy.</strong> Klient od razu widzi, kto reprezentuje Twoją firmę. Jednolita odzież firmowa buduje wizerunek i wzmacnia
@@ -120,27 +134,27 @@ export default function OfferDesignCorporateApparelPage() {
             {
               title: 'Spójny wygląd zespołu',
               description: <>Projekt buduje rozpoznawalność marki w terenie, na hali, w salonie i podczas wydarzeń.</>,
-              icon: <RiTShirt2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiTShirt2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wizualizacje i warianty',
               description: <>Przygotowujemy podglądy na koszulkach, bluzach i innych elementach, aby łatwiej było podjąć decyzję.</>,
-              icon: <RiImageLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiImageLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dopasowanie do wybranej technologii',
               description: <>Projekt przygotowujemy tak, aby wyglądał dobrze niezależnie od sposobu naniesienia znaków - sitodruk, haft, DTF.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiQuillPenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pliki gotowe do produkcji',
               description: <>Otrzymujesz materiały, które możesz od razu przekazać wykonawcy odzieży.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -166,17 +180,12 @@ export default function OfferDesignCorporateApparelPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt odzieży firmowej - przykładowe pakiety"
-          subtitle="Zakres dopasowany do zespołu i rodzaju odzieży"
           plans={[
             {
               name: 'Pakiet Start - podstawowy zestaw nadruków',
@@ -229,9 +238,11 @@ export default function OfferDesignCorporateApparelPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt odzieży firmowej"
-          description="Opisz co chcesz umieścić na firmowej odzieży. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji odzieży firmowej"
+          description="Napisz jakie elementy chcesz umieścić na odzieży, ile rodzajów ubrań potrzebujesz oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp"
+          imageAlt="Identyfikacja wizualna i odzież firmowa"
           defaultSubject="Projekt odzieży firmowej"
         />
 
@@ -240,7 +251,7 @@ export default function OfferDesignCorporateApparelPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-odziezy-firmowej"
-          title="Najczęstsze pytania o projekt odzieży firmowej"
+          title="Najczęstsze pytania dotyczące projektów odzieży firmowej"
           items={[
             {
               question: 'Ile kosztuje projekt odzieży firmowej?',
@@ -256,7 +267,7 @@ export default function OfferDesignCorporateApparelPage() {
               answer: 'Dostarczamy pliki wektorowe oraz rastrowe w wysokiej rozdzielczości, z wariantami kolorystycznymi i adaptacjami do różnych elementów odzieży.',
             },
             {
-              question: 'Czy mogę zgłosić poprawki do projektu nadruku na odzieć?',
+              question: 'Czy mogę zgłosić poprawki do projektu nadruku na odzież?',
               answer: 'Tak, w projekcie przewidujemy rundy poprawek. Doprecyzowujemy kolory, umiejscowienie, skalę i szczegóły, aż otrzymasz finalną wersję zgodną z Twoją wizją.',
             },
             {
@@ -273,50 +284,10 @@ export default function OfferDesignCorporateApparelPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Jak jeszcze możesz wzmocnić wizerunek swojej marki?"
-          subtitle="Zobacz też"
-          description="Odzież firmowa działa najlepiej, gdy jest częścią spójnego systemu materiałów - od wizytówek po teczki i papier firmowy."
-          items={[
-            {
-              icon: <RiTShirt2Line className="h-8 w-8" />,
-              title: 'Projekt wizytówki firmowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Połącz odzież z dopracowaną wizytówką. Klient zapamięta nie tylko logo na koszulce, ale też konkretne dane kontaktowe.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt papieru firmowego',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ubierz markę także w dokumentach. Spójne logo, kolory i układ na papierze firmowym domykają cały system wizerunkowy.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-papieru-firmowego">
-                      Zobacz projekt papieru firmowego
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -325,7 +296,6 @@ export default function OfferDesignCorporateApparelPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
@@ -334,25 +304,27 @@ export default function OfferDesignCorporateApparelPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiFileTextLine className="h-6 w-6" />,
               title: 'Projekt papieru firmowego',
               description: 'Profesjonalny wygląd dokumentów',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-papieru-firmowego',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

@@ -1,11 +1,19 @@
-import HeroBanner from '@/components/sections/HeroBanner';
+﻿import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiComputerLine, RiShoppingCartLine, RiPencilLine, RiBarChart2Fill, RiCustomerService2Line, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiCheckLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiBarChart2Fill,
+  RiCustomerService2Line,
+  RiLightbulbFlashLine,
+  RiShieldCheckLine,
+  RiSearchLine,
+  RiFileList2Line,
+  RiCheckLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -18,6 +26,8 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 const BASE = 'https://www.arteonagency.pl';
 
@@ -31,7 +41,7 @@ export const metadata = {
     url: `${BASE}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
-    images: [{ url: `${BASE}/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp` }],
+    images: [{ url: `${BASE}/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp`, width: 1200, height: 630 }],
     //images: [{ url: `${BASE}/assets/og/audyt-seo.webp`, width: 1200, height: 630, alt: 'Audyt SEO - Arteon' }],
   },
   //twitter: {
@@ -112,7 +122,7 @@ export default function OfferMarketingPage() {
           imageAlt="Audyt SEO - analiza widoczności strony w Google Analytics"
           subtitle="Dla kogo"
           title="Kiedy audyt SEO ma największy sens i dla kogo jest?"
-          description="Gdy strona nie wyświetla się tak wysoko, jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Kompleksowy audyt SEO jest najlepszy dla:"
+          description="Gdy strona nie wyświetla się tak wysoko, jakbyś chciał, planujesz przebudowę serwisu lub chcesz bezpiecznie zwiększać ruch i ilość zapytań. Pełny audyt SEO jest najlepszy dla:"
           btnOne="Zamów audyt SEO"
           btnOneLink="#kontakt"
         >
@@ -133,24 +143,24 @@ export default function OfferMarketingPage() {
               description: (
                 <>Weryfikujemy, czy strona pojawia się w Google, które podstrony są pomijane i dlaczego. Sprawdzimy mapę strony i ustawienia, które potrafią ukryć treści przed wyszukiwarką.</>
               ),
-              icon: <RiSearchLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiSearchLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Szybkość ładowania i wygodę korzystania',
               description: (
                 <>Mierzymy, jak szybko wczytuje się strona i jak wygląda ona od strony technicznej. Wskazujemy proste zmiany, które przyspieszą działanie i poprawią wrażenia użytkowników.</>
               ),
-              icon: <RiCheckLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiCheckLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Czy treści są dopasowane do tego, czego szukają klienci',
               description: <>Sprawdzimy, czy Twoje treści odpowiadają na pytania użytkowników i czy nie konkurują ze sobą. Zaproponujemy tematy i układ, który ułatwi zdobywanie wyższych pozycji.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Strukturę strony oraz linki wewnętrzne',
               description: <>Uporządkujemy nawigację i połączenia między podstronami, aby ważne treści były łatwo dostępne dla użytkowników i wyszukiwarki.</>,
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -232,7 +242,6 @@ export default function OfferMarketingPage() {
 
         <SectionPrices
           title="Cennik audytu SEO"
-          subtitle="Przykładowe zakresy i ceny"
           plans={[
             {
               name: 'Audyt SEO: 1+ strona',
@@ -277,7 +286,7 @@ export default function OfferMarketingPage() {
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Ceny orientacyjne brutto. Dokładna wycena zależy od dokładnej wielkości witryny i indywidualnych czynników zależnych od branży."
+          legalNote="Ceny orientacyjne. Dokładna wycena zależy od wielkości witryny i indywidualnych czynników zależnych od branży."
         />
 
         <Gap variant="line" />
@@ -306,7 +315,7 @@ export default function OfferMarketingPage() {
               title: 'Pozycjonowanie stron (abonament)',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Pracujemy nad stałym wzrostem widoczności: tworzymy plan treści, rozbudowujemy ofertę, dodajemy nowe bloki i mierzymy efekt co miesiąc</p>
+                  <p className="mb-3 text-sm">Pracujemy nad stałym wzrostem widoczności: tworzymy plan treści, rozbudowujemy ofertę, dodajemy nowe bloki i mierzymy efekt co miesiąc.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
                       Sprawdź abonament na pozycjonowanie stron
@@ -329,12 +338,19 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <ContactForm title="Zamów audyt SEO" description="Podaj adres swojej strony a my przygotujemy wycenę audytu SEO" defaultSubject="Audyt SEO" />
+        <SectionContactForm
+          title="Sprawdź koszt audytu SEO"
+          description="Podaj adres swojej strony i napisz jakie problemy zauważasz (spadki pozycji, mały ruch, błędy techniczne) - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
+          imageAlt="Audyt SEO - analiza strony w Google Search Console"
+          defaultSubject="Audyt SEO"
+        />
 
         <Gap variant="line" />
 
         <FaqPanels
           openByDefault={1}
+          title="Najczęstsze pytania dotyczące audytu SEO"
           pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
           items={[
             {
@@ -384,10 +400,9 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiBarChart2Fill className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Stałe działania SEO po audycie',
               size: 'large',
@@ -396,7 +411,6 @@ export default function OfferMarketingPage() {
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
@@ -405,25 +419,27 @@ export default function OfferMarketingPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty online',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              icon: <RiPencilLine className="h-6 w-6" />,
               title: 'Tworzenie treści',
               description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-tresci',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące SEO" categorySlug="seo" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

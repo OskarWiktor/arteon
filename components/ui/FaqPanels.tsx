@@ -26,20 +26,10 @@ interface FaqPanelsProps {
 const ui = {
   pl: {
     defaultTitle: 'Najczęstsze pytania',
-    defaultSubtitle: 'FAQ',
   },
 } as const;
 
-export default function FaqPanels({
-  items,
-  title = ui.pl.defaultTitle,
-  subtitle = ui.pl.defaultSubtitle,
-  generateSchema = true,
-  pageUrl,
-  openByDefault = 0,
-  variant = 'default',
-  showIcons = false,
-}: FaqPanelsProps) {
+export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle, generateSchema = true, pageUrl, openByDefault = 0, variant = 'default', showIcons = false }: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();
@@ -107,7 +97,7 @@ export default function FaqPanels({
 
   return (
     <section aria-labelledby="faq-heading">
-      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="reveal-animation h4 mb-8" titleId="faq-heading" />
+      <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName=" h4" titleId="faq-heading" />
 
       <div className={containerClass}>
         {items.map((item, index) => {
@@ -120,8 +110,8 @@ export default function FaqPanels({
               key={index}
               className={[
                 'my-2 overflow-hidden rounded-xl border bg-white transition-shadow',
-                'hover:border-slate-300 hover:shadow-md',
-                isOpen ? 'border-slate-300 shadow-sm' : 'border-gray-200',
+                'hover:border-primary-light hover:shadow-md',
+                isOpen ? 'border-primary-light shadow-sm' : 'border-neutral-200',
               ].join(' ')}
             >
               <button
@@ -134,7 +124,7 @@ export default function FaqPanels({
                 onKeyDown={(e) => onKeyDown(e, index)}
                 className={[
                   'flex w-full cursor-pointer items-center justify-between p-3 text-left transition',
-                  'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-slate-800',
+                  'focus:outline-none focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-neutral-900',
                   'md:p-4',
                   showIcons && item.icon ? 'gap-4' : '',
                 ].join(' ')}
@@ -142,7 +132,7 @@ export default function FaqPanels({
                 aria-controls={panelId}
               >
                 {showIcons && item.icon && (
-                  <div className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl transition ${isOpen ? 'bg-slate-800 text-white' : 'bg-slate-100 text-slate-800'}`}>
+                  <div className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl transition ${isOpen ? 'bg-neutral-900 text-white' : 'bg-primary-light text-neutral-900'}`}>
                     {item.icon}
                   </div>
                 )}
@@ -162,7 +152,7 @@ export default function FaqPanels({
                 transition={{ duration: 0.25, ease: 'easeInOut' }}
                 aria-hidden={!isOpen}
               >
-                <div className="border-t border-slate-100 p-4">
+                <div className="border-t border-primary-light p-4">
                   <div className="text-light leading-relaxed">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
                 </div>
               </motion.div>

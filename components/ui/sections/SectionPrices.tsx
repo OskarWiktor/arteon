@@ -8,7 +8,6 @@ import IconText from '../IconText';
 const ui = {
   pl: {
     defaultTitle: 'Przykładowe ceny',
-    defaultSubtitle: 'Pakiety',
     defaultLegalNote: 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
     featuredPlan: 'Wyróżniony plan',
     planActions: 'Działania planu',
@@ -46,7 +45,7 @@ export type SectionPricesProps = {
   legalNote?: string;
 };
 
-export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTitle, subtitle = ui.pl.defaultSubtitle, plans = [], note, legalNote = ui.pl.defaultLegalNote }: SectionPricesProps) {
+export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTitle, subtitle, plans = [], note, legalNote = ui.pl.defaultLegalNote }: SectionPricesProps) {
   const t = ui.pl;
   const headingId = `${id}-heading`;
   const subtitleId = subtitle ? `${id}-subtitle` : undefined;
@@ -54,14 +53,14 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
 
   return (
     <section id={id} aria-labelledby={headingId} aria-describedby={describedBy} className="w-full">
-      <div className="mb-8">
+      <div className="mb-4 md:mb-6 lg:mb-8">
         {subtitle && (
           <span id={subtitleId} className="text-light text-sm tracking-wider uppercase">
             {subtitle}
           </span>
         )}
         {title && (
-          <h3 className="reveal-animation text-dark mt-1 text-2xl font-semibold tracking-tight" id={headingId}>
+          <h3 className=" text-dark text-2xl font-semibold tracking-tight" id={headingId}>
             {title}
           </h3>
         )}
@@ -92,7 +91,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
               )}
 
               <div>
-                <h4 id={itemHeadingId} className="reveal-animation h5 text-dark text-xl font-semibold">
+                <h4 id={itemHeadingId} className=" h5 text-dark text-xl font-semibold">
                   {plan.name}
                 </h4>
 
@@ -115,7 +114,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
                     <li key={`${itemId}-f-${i}`}>
                       <IconText
                         icon={
-                          <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300 group-hover:ring-neutral-400" title={t.includedInPlan}>
+                          <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300 group-hover:ring-primary8" title={t.includedInPlan}>
                             <RiCheckFill className="h-3.5 w-3.5" />
                           </span>
                         }

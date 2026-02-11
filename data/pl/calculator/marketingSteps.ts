@@ -61,7 +61,7 @@ export const marketingSteps: Step[] = [
           options: [
             { label: 'Artykuły blogowe / eksperckie', value: 'content-articles', price: 0, icon: 'FiFileText' },
             { label: 'Treści na stronę www', value: 'content-website', price: 0, icon: 'FiGlobe' },
-            { label: 'Treści dla postów do social mediów', value: 'content-social', price: 0, icon: 'FiMessageSquare' },
+            { label: 'Treści dla postów do mediów społecznościowych', value: 'content-social', price: 0, icon: 'FiMessageSquare' },
             { label: 'Opisy produktów', value: 'content-products', price: 0, icon: 'FiTag' },
           ],
           branches: {

@@ -36,11 +36,11 @@ const ui = {
 function getStatusClasses(status: LengthStatus): string {
   switch (status) {
     case 'ideal':
-      return 'bg-emerald-100 text-emerald-700 border-emerald-200';
+      return 'bg-success-bg text-success-text border-success-border';
     case 'too-short':
-      return 'bg-amber-100 text-amber-800 border-amber-200';
+      return 'bg-warning-bg text-warning-text border-warning-border';
     case 'too-long':
-      return 'bg-red-100 text-red-700 border-red-200';
+      return 'bg-error-bg text-error-text border-error-border';
     case 'empty':
     default:
       return 'bg-neutral-100 text-mid border-neutral-200';
@@ -65,11 +65,11 @@ function getStatusLabel(status: LengthStatus): string {
 function getProgressBarColor(status: LengthStatus): string {
   switch (status) {
     case 'ideal':
-      return 'bg-emerald-500';
+      return 'bg-crop-green';
     case 'too-short':
-      return 'bg-amber-500';
+      return 'bg-accent0';
     case 'too-long':
-      return 'bg-red-500';
+      return 'bg-error-icon';
     case 'empty':
     default:
       return 'bg-neutral-300';
@@ -103,30 +103,30 @@ export default function WordCountTool() {
 
         <div className="space-y-3">
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-mid text-sm">{t.words}</span>
+            <span className="text-[14px]! font-medium">{t.words}</span>
             <strong className="text-dark text-lg">{metrics.words}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-mid text-sm">{t.charsWithSpaces}</span>
+            <span className="text-[14px]! font-medium">{t.charsWithSpaces}</span>
             <strong className="text-dark">{metrics.charsWithSpaces}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-mid text-sm">{t.charsWithoutSpaces}</span>
+            <span className="text-[14px]! font-medium">{t.charsWithoutSpaces}</span>
             <strong className="text-dark">{metrics.charsWithoutSpaces}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-mid text-sm">{t.paragraphs}</span>
+            <span className="text-[14px]! font-medium">{t.paragraphs}</span>
             <strong className="text-dark">{metrics.paragraphs}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-mid text-sm">{t.readingTime}</span>
+            <span className="text-[14px]! font-medium">{t.readingTime}</span>
             <strong className="text-dark">{formatReadingTime(metrics.readingTimeMinutes)}</strong>
           </div>
         </div>
 
         <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <span className="text-mid text-sm">{t.lengthEvaluation}</span>
+            <span className="text-[14px]! font-medium">{t.lengthEvaluation}</span>
             <span className={`tool-badge ${getStatusClasses(evaluation.status)}`}>{getStatusLabel(evaluation.status)}</span>
           </div>
 
@@ -134,14 +134,14 @@ export default function WordCountTool() {
             <div className={`h-full transition-all duration-300 ${getProgressBarColor(evaluation.status)}`} style={{ width: `${Math.min(evaluation.percentage, 100)}%` }} />
           </div>
 
-          <div className="flex items-center justify-between text-xs">
-            <span className="text-light">{t.recommendedRange}:</span>
-            <span className="text-mid font-medium">
+          <div className="flex items-center justify-between text-xs!">
+            <span className="text-light text-xs!">{t.recommendedRange}:</span>
+            <span className="text-xs! font-medium">
               {pageTypeConfig.minWords}–{pageTypeConfig.maxWords} słów
             </span>
           </div>
 
-          {evaluation.status !== 'empty' && <p className="text-light mt-2 text-sm">{evaluation.message}</p>}
+          {evaluation.status !== 'empty' && <p className="text-light mt-2 text-xs!">{evaluation.message}</p>}
         </div>
 
         <Button variant="normal" size="small" onClick={handleCopyReport} disabled={metrics.words === 0} className="w-full" aria-label={copied ? t.copied : t.copyReport}>
@@ -161,7 +161,7 @@ export default function WordCountTool() {
 
       <ToolSection className="space-y-5">
         <ToolFieldRow label={t.pageType} helper={t.pageTypeHelper}>
-          <select value={selectedPageType} onChange={(e) => setSelectedPageType(e.target.value as PageType)} className="tool-input">
+          <select value={selectedPageType} onChange={(e) => setSelectedPageType(e.target.value as PageType)} className="tool-select">
             {PAGE_TYPES.map((pt) => (
               <option key={pt.key} value={pt.key}>
                 {pt.label} ({pt.minWords}–{pt.maxWords} słów)
@@ -171,7 +171,7 @@ export default function WordCountTool() {
         </ToolFieldRow>
 
         <div className="rounded-lg border border-neutral-200 bg-white p-3">
-          <p className="text-mid text-sm">{pageTypeConfig.description}</p>
+          <p className="text-light text-xs!">{pageTypeConfig.description}</p>
         </div>
 
         <ToolFieldRow label={t.pasteText}>

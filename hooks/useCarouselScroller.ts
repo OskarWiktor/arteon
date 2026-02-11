@@ -1,25 +1,32 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent, RefObject } from 'react';
 
 type Params = {
   itemCount: number;
   scrollRef: RefObject<HTMLDivElement | null>;
   cardRef: RefObject<HTMLElement | null>;
+  autoPlay?: boolean;
+  autoPlayIntervalMs?: number;
 };
 
-export function useCarouselScroller({ itemCount, scrollRef, cardRef }: Params) {
+export function useCarouselScroller({ itemCount, scrollRef, cardRef, autoPlay = false, autoPlayIntervalMs = 5000 }: Params) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [maxSlides, setMaxSlides] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
   const [isScrollable, setIsScrollable] = useState(false);
+  const [autoPlayActive, setAutoPlayActive] = useState(autoPlay);
 
   const currentSlideRef = useRef(0);
 
   useEffect(() => {
     currentSlideRef.current = currentSlide;
   }, [currentSlide]);
+
+  const stopAutoPlay = useCallback(() => {
+    setAutoPlayActive(false);
+  }, []);
 
   useEffect(() => {
     const container = scrollRef.current;
@@ -33,9 +40,8 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef }: Params) {
       const cardWithGap = w + gap;
       setCardWidth(cardWithGap);
 
-      const epsilon = 0.01;
-      const visible = Math.max(1, Math.floor((container.clientWidth + epsilon) / cardWithGap));
-      const slides = Math.max(1, itemCount - visible + 1);
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      const slides = maxScroll > 0 ? Math.round(maxScroll / cardWithGap) + 1 : 1;
 
       setMaxSlides(slides);
       setIsScrollable(slides > 1);
@@ -64,31 +70,91 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef }: Params) {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(() => {
-        const idx = Math.round(el.scrollLeft / cardWidth);
-        setCurrentSlide(idx);
+        const maxScroll = el.scrollWidth - el.clientWidth;
+        const ratio = maxScroll > 0 ? el.scrollLeft / maxScroll : 0;
+        const idx = Math.round(ratio * (maxSlides - 1));
+        setCurrentSlide(Math.max(0, Math.min(idx, maxSlides - 1)));
         ticking = false;
       });
     };
 
     el.addEventListener('scroll', onScroll, { passive: true });
     return () => el.removeEventListener('scroll', onScroll);
-  }, [cardWidth, scrollRef]);
+  }, [cardWidth, maxSlides, scrollRef]);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const onPointerDown = () => stopAutoPlay();
+    const onWheel = () => stopAutoPlay();
+
+    el.addEventListener('pointerdown', onPointerDown, { passive: true });
+    el.addEventListener('wheel', onWheel, { passive: true });
+
+    return () => {
+      el.removeEventListener('pointerdown', onPointerDown);
+      el.removeEventListener('wheel', onWheel);
+    };
+  }, [autoPlay, scrollRef, stopAutoPlay]);
+
+  const maxSlidesRef = useRef(0);
+  useEffect(() => {
+    maxSlidesRef.current = maxSlides;
+  }, [maxSlides]);
+
+  const cardWidthRef = useRef(0);
+  useEffect(() => {
+    cardWidthRef.current = cardWidth;
+  }, [cardWidth]);
+
+  useEffect(() => {
+    if (!autoPlayActive || !isScrollable) return;
+
+    const id = setInterval(() => {
+      const container = scrollRef.current;
+      const cw = cardWidthRef.current;
+      if (!container || !cw) return;
+
+      const curr = currentSlideRef.current;
+      const max = maxSlidesRef.current;
+
+      if (curr >= max - 1) {
+        container.scrollTo({ left: 0, behavior: 'auto' });
+      } else {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        const targetScroll = Math.min((curr + 1) * cw, maxScroll);
+        container.scrollTo({ left: targetScroll, behavior: 'smooth' });
+      }
+    }, autoPlayIntervalMs);
+
+    return () => clearInterval(id);
+  }, [autoPlayActive, autoPlayIntervalMs, isScrollable, scrollRef]);
 
   const scrollByCards = (dir: 'left' | 'right') => {
     if (!scrollRef.current || !cardWidth) return;
+    stopAutoPlay();
+    const container = scrollRef.current;
+    const maxScroll = container.scrollWidth - container.clientWidth;
     const delta = dir === 'left' ? -1 : 1;
-    const next = Math.max(0, Math.min(currentSlide + delta, maxSlides - 1));
-    scrollRef.current.scrollTo({ left: next * cardWidth, behavior: 'smooth' });
+    const targetLeft = Math.max(0, Math.min((currentSlide + delta) * cardWidth, maxScroll));
+    container.scrollTo({ left: targetLeft, behavior: 'smooth' });
   };
 
   const goToSlide = (index: number) => {
     if (!scrollRef.current || !cardWidth) return;
-    const next = Math.max(0, Math.min(index, maxSlides - 1));
-    scrollRef.current.scrollTo({ left: next * cardWidth, behavior: 'smooth' });
+    stopAutoPlay();
+    const container = scrollRef.current;
+    const maxScroll = container.scrollWidth - container.clientWidth;
+    const clamped = Math.max(0, Math.min(index, maxSlides - 1));
+    const targetLeft = Math.min(clamped * cardWidth, maxScroll);
+    container.scrollTo({ left: targetLeft, behavior: 'smooth' });
   };
 
   const onKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
     if (!isScrollable) return;
+    stopAutoPlay();
 
     if (e.key === 'ArrowRight') {
       e.preventDefault();
@@ -102,7 +168,7 @@ export function useCarouselScroller({ itemCount, scrollRef, cardRef }: Params) {
     } else if (e.key === 'End') {
       e.preventDefault();
       scrollRef.current?.scrollTo({
-        left: (maxSlides - 1) * cardWidth,
+        left: scrollRef.current.scrollWidth - scrollRef.current.clientWidth,
         behavior: 'smooth',
       });
     }

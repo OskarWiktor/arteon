@@ -4,8 +4,8 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPantoneLine, RiComputerLine, RiIdCardLine, RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine, RiBookOpenLine, RiArticleLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine, RiBookOpenLine } from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -17,8 +17,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt menu restauracji | Arteon',
@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Projektujemy menu dla restauracji, kawiarni i barów - eleganckie, czytelne i dopasowane do charakteru lokalu. Wersje do druku i online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -91,10 +91,14 @@ export default function OfferDesignMenuPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Dlaczego warto zainwestować w profesjonalne menu?">
           <p>
-            <strong>Menu to najważniejszy materiał sprzedażowy w gastronomii.</strong> Dobrze zaprojektowana karta dań prowadzi gościa krok po kroku - od pierwszego spojrzenia po finalne zamówienie.
-            Estetyczna, czytelna formа ułatwia wybór i ogranicza „paraliż decyzyjny”.
+            <strong>Menu to najważniejszy materiał sprzedażowy w gastronomii.</strong> Dobrze zaprojektowana karta dań prowadzi gościa od pierwszego spojrzenia po finalne zamówienie.
+            Estetyczna, czytelna forma ułatwia wybór i ogranicza „paraliż decyzyjny”.
           </p>
 
           <br />
@@ -125,22 +129,22 @@ export default function OfferDesignMenuPage() {
             {
               title: 'Układ dopasowany do oferty',
               description: <>Projektujemy logiczne sekcje - przystawki, dania główne, napoje, desery - z czytelną hierarchią, która ułatwia podjęcie decyzji i kieruje wzrok na kluczowe pozycje.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Spójność z klimatem lokalu',
               description: <>Kolory, czcionki i styl graficzny dopasowujemy do wnętrza i charakteru restauracji - nowoczesnego, klasycznego, rustykalnego czy street foodowego.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Gotowe pliki do druku i online',
-              description: <>Dostarczamy pliki przygotowane do druku oraz wersje online, które bez problemu dodasz na stronę, do social mediów lub do kodu QR.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              description: <>Dostarczamy pliki przygotowane do druku oraz wersje online, które bez problemu dodasz na stronę, do mediów społecznościowych lub do kodu QR.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Możliwość samodzielnej aktualizacji',
               description: <>Na życzenie przygotowujemy łatwe w edycji pliki źródłowe, dzięki czemu samodzielnie zaktualizujesz sezonowe dania, ceny czy nowe pozycje.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -185,17 +189,12 @@ export default function OfferDesignMenuPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt menu restauracji - przykładowe pakiety"
-          subtitle="Zakres dopasowany do wielkości lokalu i karty"
           plans={[
             {
               name: 'Pakiet Start - pojedyncza karta menu',
@@ -234,7 +233,7 @@ export default function OfferDesignMenuPage() {
                 'Projekt dodatkowych wkładek sezonowych / lunchowych',
                 'Ustalenie zasad dla przyszłych aktualizacji (styl, układ, wyróżnienia)',
                 'Przygotowanie plików źródłowych do dalszej edycji',
-                'Wsparcie przy wdrożeniu wersji online (PDF, grafiki do social mediów)',
+                'Wsparcie przy wdrożeniu wersji online (PDF, grafiki do mediów społecznościowych)',
               ],
               btnOne: 'Porozmawiajmy o pakiecie Pro',
               btnOneLink: '#kontakt',
@@ -249,9 +248,11 @@ export default function OfferDesignMenuPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt menu dla swojego lokalu"
-          description="Opisz, jakie dania są dostępne w Twojej restauracji oraz jaki masz pomysł na swoje menu. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji menu restauracji"
+          description="Napisz jakie dania są w ofercie, czy posiadasz logo oraz zdjęcia dań i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp"
+          imageAlt="Realizacja projektu menu - bar Nocturna"
           defaultSubject="Projekt menu restauracji"
         />
 
@@ -260,7 +261,7 @@ export default function OfferDesignMenuPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-menu-restauracji"
-          title="Najczęstsze pytania dotyczące projektów menu restauracyjnego"
+          title="Najczęstsze pytania dotyczące projektów menu dla restauracji"
           items={[
             {
               question: 'W jakich formatach najczęściej projektujecie menu?',
@@ -287,66 +288,10 @@ export default function OfferDesignMenuPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Jak jeszcze możesz wzmocnić wizerunek swojego lokalu?"
-          subtitle="Zobacz też"
-          description="Menu to centrum komunikacji firm gastronomicznych. Jeszcze lepiej działa, gdy otacza je spójny system materiałów - od ulotek po media społecznościowe i stronę internetową."
-          items={[
-            {
-              icon: <RiArticleLine className="h-8 w-8" />,
-              title: 'Projekt ulotki',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dodaj do menu ulotkę z ofertą sezonową. Goście z chęcią sprawdzą Twoją ofertę sezonową lub promocyjną.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
-                      Zobacz projekt ulotki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Szablony postów do social mediów',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Pokaż swoje menu w mediach społecznościowych w spójnej formie. Szablony przyspieszą publikacje i wzmocnią wizerunek Twojej firmy.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe">
-                      Zobacz szablony postów
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Strony internetowe',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Twoje menu może zawierać kod QR, który odsyła klientów na stronę, na której możesz zamieszczać nowe pozycje w menu czy też wprowadzić system składania zamówień.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
-                      Zobacz ofertę stworzenia strony internetowej
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="three"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -355,7 +300,6 @@ export default function OfferDesignMenuPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
@@ -364,26 +308,27 @@ export default function OfferDesignMenuPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <IoColorPalette className="h-6 w-6" />,
-              title: 'Szablony social media',
+              title: 'Szablony media społecznościowe',
               description: 'Gotowe projekty do Twoich postów',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
             },
           ]}
         />
 
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
         <Gap size="sm" />
       </Wrapper>
 

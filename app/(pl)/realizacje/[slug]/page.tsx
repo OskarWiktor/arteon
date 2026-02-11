@@ -50,7 +50,6 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionMetrics from '@/components/ui/sections/SectionMetrics';
 import SectionFeatureList from '@/components/ui/sections/SectionFeatureList';
 import SectionProcess from '@/components/ui/sections/SectionProcess';
-import SectionInfoBanner from '@/components/ui/sections/SectionInfoBanner';
 
 interface ProjectsData {
   projects: Project[];
@@ -240,7 +239,6 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
 
           return (
             <div key={`imgt-${i}`} className={wrapperClass}>
-              <Gap size="xs" />
               <div className="grid items-start gap-6 md:grid-cols-2">
                 {b.imageSide === 'right' ? (
                   <>
@@ -348,16 +346,6 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           );
         }
 
-        if (b.type === 'infoBanner') {
-          if (!b.btnLabel || !b.btnLink) return null;
-          return (
-            <div key={`banner-${i}`} className={wrapperClass}>
-              <SectionInfoBanner icon={getIcon(b.icon)} text={b.text} highlight={b.highlight} btnLabel={b.btnLabel} btnLink={b.btnLink} />
-              {b.breakAfter && <Gap size="sm" variant="line" />}
-            </div>
-          );
-        }
-
         if (b.type === 'deliverables') {
           return (
             <div key={`deliverables-${i}`} className={wrapperClass}>
@@ -451,6 +439,26 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
           );
         }
 
+        if (b.type === 'imageGrid3') {
+          return (
+            <div key={`grid3-${i}`} className={wrapperClass}>
+              {b.title && <h3 className="h5 mb-2">{b.title}</h3>}
+              {b.description && <p className="text-mid mb-4">{b.description}</p>}
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                {b.images.map((img, idx) => (
+                  <figure key={idx}>
+                    <div className="overflow-hidden rounded-2xl border border-black/10">
+                      <Image src={img.src} alt={img.alt} width={600} height={800} className="h-auto w-full object-cover" sizes="(min-width:640px) 33vw, 100vw" />
+                    </div>
+                    {img.label && <figcaption className="text-light mt-2 text-center text-sm">{img.label}</figcaption>}
+                  </figure>
+                ))}
+              </div>
+              {b.breakAfter && <Gap size="sm" variant="line" />}
+            </div>
+          );
+        }
+
         return null;
       })}
     </>
@@ -509,7 +517,7 @@ export default function ProjectPage({ params }: PageProps) {
               {project.title}
             </h1>
 
-            {project.category?.length ? <span className="text-light mb-4 block text-sm uppercase">{project.category.join(' • ')}</span> : null}
+            {project.category?.length ? <span className="text-light my-4 block text-sm uppercase">{project.category.join(' • ')}</span> : null}
 
             {project.short && (
               <p itemProp="description">
@@ -672,7 +680,7 @@ export default function ProjectPage({ params }: PageProps) {
           {project.faq?.length ? (
             <>
               <Gap size="sm" variant="line" />
-              <FaqPanels openByDefault={1} title="Najczęstsze pytania" subtitle="FAQ" items={project.faq} pageUrl={projectUrl(project.slug)} />
+              <FaqPanels openByDefault={1} title="Najczęstsze pytania dotyczące realizacji" items={project.faq} pageUrl={projectUrl(project.slug)} />
             </>
           ) : null}
 

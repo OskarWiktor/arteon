@@ -5,8 +5,6 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
 import {
-  RiComputerLine,
-  RiShoppingCartLine,
   RiPencilRuler2Line,
   RiBrushLine,
   RiBarChart2Fill,
@@ -15,10 +13,9 @@ import {
   RiKey2Line,
   RiPantoneLine,
   RiQuillPenLine,
-  RiIdCardLine,
   RiMoneyDollarCircleLine,
 } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -29,9 +26,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
-import { IoColorPalette } from 'react-icons/io5';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt logo | Arteon',
@@ -42,7 +38,7 @@ export const metadata = {
     description: 'Profesjonalne logo dopasowane do charakteru marki. Wektory, warianty i mini-księga znaku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/finish-masters/logo-finish-masters-case-study.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -79,7 +75,7 @@ export default function OfferDesignLogoPage() {
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
-        backgroundImage="/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp"
+        backgroundImage="/assets/projects/finish-masters/logo-finish-masters-case-study.webp"
         overlay="black"
       />
 
@@ -101,6 +97,10 @@ export default function OfferDesignLogoPage() {
 
       <Wrapper>
         <Gap size="xs" />
+
+        <ProjectsCarousel title="Wybrane realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Co zyskujesz zamawiając projekt logo?">
           <p>
@@ -144,27 +144,27 @@ export default function OfferDesignLogoPage() {
             {
               title: 'Znak, który prowadzi markę',
               description: <>Tworzymy logo, które jest czytelne, charakterystyczne i łatwe do zapamiętania - również w małych rozmiarach.</>,
-              icon: <RiQuillPenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiQuillPenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Warianty i zastosowania',
               description: <>Otrzymujesz wersje kolorystyczne, monochromatyczne, poziome i pionowe - gotowe do użycia na stronie, w mediach społecznościowych i w druku.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Prosta instrukcja użycia',
               description: <>Dołączamy mini-księgę znaku z podstawowymi wytycznymi, dzięki czemu każdy w firmie wie, jak poprawnie korzystać z logo.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pełna własność i pliki źródłowe',
               description: <>Po zakończeniu projektu masz komplet plików wektorowych i pełnię praw - możesz swobodnie rozwijać identyfikację w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiKey2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -209,17 +209,12 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wybrane realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt logo - przykładowe pakiety"
-          subtitle="Zakres dopasowany do etapu rozwoju Twojej marki"
           plans={[
             {
               name: 'Pakiet Start - logo dla nowej marki',
@@ -273,9 +268,11 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt logo"
-          description="Opisz, czym się zajmujesz i jaki typ znaku Ci się podoba. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji logo"
+          description="Napisz czym zajmuje się Twoja firma i jaki typ znaku Ci się podoba (symbol, logotyp, monogram) - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/finish-masters/logo-finish-masters-case-study.webp"
+          imageAlt="Realizacja projektu logo - Finish Masters"
           defaultSubject="Projekt logo"
         />
 
@@ -283,12 +280,13 @@ export default function OfferDesignLogoPage() {
 
         <FaqPanels
           openByDefault={1}
+          title="Najczęstsze pytania dotyczące projektów logo"
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-logo"
           items={[
             {
               question: 'Ile kosztuje profesjonalne logo?',
               answer:
-                'Cena logo zależy od zakresu pracy: liczby wariantów, wersji kolorystycznych i dodatkowych adaptacji. Dokładną wycenę przygotowujemy po zapoznaniu się z Twoją ofertą, wizją oraz docelowymi klientami',
+                'Cena logo zależy od zakresu pracy: liczby wariantów, wersji kolorystycznych i dodatkowych adaptacji. Dokładną wycenę przygotowujemy po zapoznaniu się z Twoją ofertą, wizją oraz docelowymi klientami.',
             },
             {
               question: 'Jak długo trwa realizacja projektu logo?',
@@ -325,54 +323,10 @@ export default function OfferDesignLogoPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Jak rozwinąć logo w pełną identyfikację?"
-          subtitle="Zobacz też"
-          description="Logo jest fundamentem, ale pełną moc pokazuje dopiero w systemie materiałów. Z nami możesz krok po kroku rozbudować identyfikację, zachowując spójny styl swojej marki."
-          items={[
-            {
-              icon: <RiIdCardLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki firmowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Wykorzystaj nowe logo na eleganckiej wizytówce - to najprostszy sposób, by zostawić po spotkaniu konkretny, fizyczny ślad i zachęcić klienta do ponownego kontaktu.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <IoColorPalette className="h-8 w-8" />,
-              title: 'Projekt identyfikacji wizualnej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: ulotki, katalogi, posty do mediów społecznościowych - wszystko zrealizujesz w jednym miejscu.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Zobacz projekt identyfikacji wizualnej
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -381,7 +335,6 @@ export default function OfferDesignLogoPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
@@ -390,25 +343,27 @@ export default function OfferDesignLogoPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty online',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>
@@ -420,7 +375,7 @@ export default function OfferDesignLogoPage() {
         btnOneLink="#kontakt"
         btnTwo="Poznaj usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
-        backgroundImage="/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp"
+        backgroundImage="/assets/projects/finish-masters/logo-finish-masters-case-study.webp"
         overlay="black"
       />
 

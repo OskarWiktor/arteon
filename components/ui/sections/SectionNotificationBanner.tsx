@@ -19,22 +19,22 @@ export default function SectionNotificationBanner({ icon, text, highlight, varia
 
   const variantClasses = {
     success: {
-      bg: 'bg-emerald-50',
-      icon: 'text-emerald-600',
-      text: 'text-emerald-800',
-      close: 'text-emerald-600 hover:text-emerald-800',
+      bg: 'bg-success-bg',
+      icon: 'text-success-icon',
+      text: 'text-success-text',
+      close: 'text-success-icon hover:text-success-text',
     },
     info: {
-      bg: 'bg-blue-50',
-      icon: 'text-blue-600',
-      text: 'text-blue-800',
-      close: 'text-blue-600 hover:text-blue-800',
+      bg: 'bg-info-bg',
+      icon: 'text-info-icon',
+      text: 'text-info-text',
+      close: 'text-info-icon hover:text-info-text',
     },
     warning: {
-      bg: 'bg-amber-50',
-      icon: 'text-amber-600',
-      text: 'text-amber-800',
-      close: 'text-amber-600 hover:text-amber-800',
+      bg: 'bg-warning-bg',
+      icon: 'text-warning-icon',
+      text: 'text-warning-text',
+      close: 'text-warning-icon hover:text-warning-text',
     },
   };
 

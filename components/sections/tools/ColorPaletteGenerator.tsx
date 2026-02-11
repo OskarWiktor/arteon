@@ -87,8 +87,8 @@ function Swatch({ color, onCopy, copied: _copied }: { color: PaletteColor; onCop
     <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
       <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`${t.colorPreview} ${color.hex}`} />
       <div className="min-w-0 flex-1">
-        <p className="text-dark text-sm leading-tight font-medium">{color.hex}</p>
-        <p className="text-light truncate text-[11px]!">{formatHsl(color.hsl)}</p>
+        <p className="text-dark text-[14px]! leading-tight font-medium">{color.hex}</p>
+        <p className="text-light truncate text-xs!">{formatHsl(color.hsl)}</p>
       </div>
       <CopyButton text={color.hex} label={t.copy} copiedLabel={t.copied} onCopy={() => onCopy(color.hex)} />
     </div>
@@ -156,8 +156,8 @@ export default function ColorPaletteGenerator() {
               <ToolInfo className="flex items-center gap-3">
                 <div className="h-7 w-7 rounded-lg border border-black/10" style={{ backgroundColor: normalizedBase }} aria-label={t.currentBaseColor} />
                 <div className="min-w-0">
-                  <p className="text-dark text-sm leading-tight font-medium">{normalizedBase}</p>
-                  <ToolHelper className="text-[11px]!">{t.baseColorHelper}</ToolHelper>
+                  <p className="text-dark text-[14px]! leading-tight font-medium">{normalizedBase}</p>
+                  <ToolHelper className="text-xs!">{t.baseColorHelper}</ToolHelper>
                 </div>
               </ToolInfo>
             )}
@@ -174,7 +174,7 @@ export default function ColorPaletteGenerator() {
 
         {normalizedBase && palettes.length === 0 && (
           <ToolInfo>
-            <ToolHelper className="text-[11px]!">{t.enterValidColor}</ToolHelper>
+            <ToolHelper className="text-xs!">{t.enterValidColor}</ToolHelper>
           </ToolInfo>
         )}
 
@@ -184,7 +184,7 @@ export default function ColorPaletteGenerator() {
               <ToolInfo key={group.id} className="space-y-2">
                 <div className="flex items-center justify-between gap-2">
                   <div>
-                    <p className="font-semibold!">{group.label}</p>
+                    <p className="text-[14px]! font-medium">{group.label}</p>
                     <ToolHelper>{group.description}</ToolHelper>
                   </div>
                 </div>

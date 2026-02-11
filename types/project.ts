@@ -110,6 +110,14 @@ export type ContentBlock =
       note?: string;
       breakBefore?: boolean;
       breakAfter?: boolean;
+    }
+  | {
+      type: 'imageGrid3';
+      title?: string;
+      description?: string;
+      images: { src: string; alt: string; label?: string }[];
+      breakBefore?: boolean;
+      breakAfter?: boolean;
     };
 
 export type ProjectCTA = {

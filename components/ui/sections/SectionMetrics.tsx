@@ -19,7 +19,7 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
     <section data-section="metrics" aria-labelledby={title ? 'metrics-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="metrics-title" className="h6 reveal-animation mb-6">
+          <h2 id="metrics-title" className="h6 mb-4 md:mb-6 lg:mb-8">
             {title}
           </h2>
         )}
@@ -32,10 +32,10 @@ export default function SectionMetrics({ title, metrics }: SectionMetricsProps) 
               <div key={index} className="surface-card-soft p-5">
                 <p className="text-light mb-2 text-sm">{metric.label}</p>
                 <div className="mb-3 flex items-baseline gap-1">
-                  <span className="h4">{metric.value}</span>
+                  <span className="h3">{metric.value}</span>
                   <span className="text-light text-sm">{metric.unit}</span>
                 </div>
-                <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+                <div className="h-2 overflow-hidden rounded-full bg-primary-light">
                   <div
                     className={`h-full rounded-full ${metric.color}`}
                     style={{ width: `${percentage}%` }}

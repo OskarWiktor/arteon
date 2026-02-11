@@ -15,13 +15,11 @@ import {
   RiFileTextLine,
   RiPencilLine,
   RiShoppingCartLine,
-  RiComputerLine,
-  RiPaletteLine,
 } from 'react-icons/ri';
 
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import ContactForm from '@/components/sections/ContactForm';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import CTABanner from '@/components/sections/CTABanner';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import HeroBanner from '@/components/sections/HeroBanner';
@@ -35,6 +33,8 @@ import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { buildServiceSchema } from '@/lib/serviceSchema';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 const BASE = 'https://www.arteonagency.pl';
 
@@ -64,7 +64,7 @@ export const metadata = {
     description: 'Klarowne teksty dopasowane do odbiorcy. Artykuły blogowe, opisy produktów i treści na strony z redakcją pod SEO.',
     url: `${BASE}/uslugi/tworzenie-tresci`,
     type: 'website',
-    images: [{ url: `${BASE}/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp` }],
+    images: [{ url: `${BASE}/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp`, width: 1200, height: 630 }],
   },
 } as const;
 
@@ -101,35 +101,35 @@ export default function OfferContentPage() {
           items={[
             {
               title: 'Treści pod SEO - widoczność w Google',
-              icon: <RiFileSearchLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileSearchLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Redakcja treści sprzedażowych i marketingowych',
-              icon: <RiArticleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiArticleLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Język marki - spójny ton komunikacji',
-              icon: <RiChatQuoteLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiChatQuoteLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Treści budujące emocje i transformację klienta',
-              icon: <IoSparkles className="h-6 w-6 text-slate-800" />,
+              icon: <IoSparkles className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Artykuły i wpisy eksperckie na bloga',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Scenariusze do rolek i social mediów',
-              icon: <RiShareForwardLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiShareForwardLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Opisy produktów wspierające SEO',
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Treści dopasowane do archetypu i wartości marki',
-              icon: <RiTeamLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiTeamLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -147,7 +147,7 @@ export default function OfferContentPage() {
                 <div className="flex h-full flex-col">
                   <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
                     <li>Piszemy treści, które jasno przedstawiają ofertę</li>
-                    <li>Układamy strukturę, by prowadziła odbiorcę krok po kroku</li>
+                    <li>Układamy strukturę, by prowadziła odbiorcę przez kolejne etapy</li>
                     <li>Dostosowujemy język do Twojej branży i klientów</li>
                   </ul>
                   <div className="mt-auto">
@@ -269,37 +269,44 @@ export default function OfferContentPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Stwórzmy treści, które sprzedają" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę tworzenia treści" defaultSubject="Treści" />
+        <SectionContactForm
+          title="Sprawdź koszt tworzenia treści"
+          description="Napisz czym zajmuje się Twoja firma, jakie treści chcesz tworzyć i na jakich kanałach publikujesz - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp"
+          imageAlt="Content marketing - tworzenie treści dla firm"
+          defaultSubject="Treści"
+        />
 
         <Gap variant="line" />
 
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-tresci"
+          title="Najczęstsze pytania dotyczące tworzenia treści"
           items={[
             {
               question: 'Ile czasu trwa przygotowanie treści?',
-              answer: 'Standardowo od 2 do 10 dni roboczych - zależnie od długości, złożoności i naszej bieżącej dostępności',
+              answer: 'Standardowo od 2 do 10 dni roboczych - zależnie od długości, złożoności i naszej bieżącej dostępności.',
             },
             {
               question: 'Czy treści są unikalne i pisane ręcznie?',
-              answer: 'Tak, wszystkie treści tworzymy indywidualnie',
+              answer: 'Tak, wszystkie treści tworzymy indywidualnie.',
             },
             {
               question: 'Czy możemy mieć wpływ na styl i język treści?',
-              answer: 'Tak. Na początku wspólnie ustalamy ton komunikacji i dostosowujemy treści do Twojej marki oraz grupy docelowej',
+              answer: 'Tak. Na początku wspólnie ustalamy ton komunikacji i dostosowujemy treści do Twojej marki oraz grupy docelowej.',
             },
             {
               question: 'Czy oferujecie też korektę i redakcję istniejących treści?',
-              answer: 'Tak, poprawiamy i przekształcamy obecne treści tak, aby były bardziej przekonujące, poprawne językowo i dopasowane do celów marketingowych',
+              answer: 'Tak, poprawiamy i przekształcamy obecne treści tak, aby były bardziej przekonujące, poprawne językowo i dopasowane do celów marketingowych.',
             },
             {
               question: 'Czy treści są zoptymalizowane pod SEO?',
-              answer: 'Tak, tworzymy je z uwzględnieniem fraz kluczowych, struktury nagłówków i zasad SEO copywritingu - tak, aby dobrze wypadały w Google',
+              answer: 'Tak, tworzymy je z uwzględnieniem fraz kluczowych, struktury nagłówków i zasad SEO copywritingu - tak, aby dobrze wypadały w Google.',
             },
             {
               question: 'Czy mogę zlecić regularne przygotowanie treści (np. co miesiąc)?',
-              answer: 'Tak, możliwa jest stała współpraca abonamentowa - np. comiesięczne artykuły, newslettery lub pakiety treści',
+              answer: 'Tak, możliwa jest stała współpraca abonamentowa - np. comiesięczne artykuły, newslettery lub pakiety treści.',
             },
           ]}
         />
@@ -307,10 +314,9 @@ export default function OfferContentPage() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiBarChart2Fill className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'large',
@@ -319,7 +325,6 @@ export default function OfferContentPage() {
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
@@ -328,27 +333,30 @@ export default function OfferContentPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiArticleLine className="h-6 w-6" />,
               title: 'Blogi internetowe',
               description: 'Buduj autorytet i pozycję w Google',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/blogi-internetowe',
             },
             {
-              icon: <RiPaletteLine className="h-6 w-6" />,
-              title: 'Szablony social media',
+              title: 'Szablony media społecznościowe',
               description: 'Gotowe projekty do Twoich postów',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
             },
           ]}
         />
 
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące tworzenia treści" categorySlug="tresci" articles={getAllArticlePreviews()} />
+
         <Gap size="sm" />
+
       </Wrapper>
 
       <CTABanner

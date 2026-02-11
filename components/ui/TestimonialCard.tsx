@@ -29,7 +29,7 @@ export default function TestimonialCard({ item }: Props) {
   const displayedQuote = getDisplayedQuote(item.quote, MAX_WORDS);
 
   return (
-    <figure className="surface-card-lift flex h-full w-full flex-col justify-between border-gray-300 p-5 text-center md:px-6 md:py-8">
+    <figure className="surface-card-lift flex h-full w-full flex-col justify-between border-neutral-300 p-5 text-center md:px-6 md:py-8">
       <figcaption>
         <span className="text-dark text-xl font-semibold">{item.author}</span>
         {item.role && <p className="text-light text-sm">{item.role}</p>}

@@ -12,7 +12,7 @@ export default function SectionAnimatedLoader({ variant = 'spinner', size = 'med
 
   if (variant === 'spinner') {
     return (
-      <div className={`${sizeClasses[size].container} ${sizeClasses[size].border} animate-spin rounded-full border-slate-200 border-t-slate-800`} role="status" aria-label="Ładowanie...">
+      <div className={`${sizeClasses[size].container} ${sizeClasses[size].border} animate-spin rounded-full border-primary-light border-t-primary`} role="status" aria-label="Ładowanie...">
         <span className="sr-only">Ładowanie...</span>
       </div>
     );
@@ -22,7 +22,7 @@ export default function SectionAnimatedLoader({ variant = 'spinner', size = 'med
     return (
       <div className="flex items-center gap-2" role="status" aria-label="Ładowanie...">
         {[0, 1, 2].map((i) => (
-          <div key={i} className={`${sizeClasses[size].dot} animate-bounce rounded-full bg-slate-800`} style={{ animationDelay: `${i * 150}ms` }} />
+          <div key={i} className={`${sizeClasses[size].dot} animate-bounce rounded-full bg-primary`} style={{ animationDelay: `${i * 150}ms` }} />
         ))}
         <span className="sr-only">Ładowanie...</span>
       </div>
@@ -31,7 +31,7 @@ export default function SectionAnimatedLoader({ variant = 'spinner', size = 'med
 
   if (variant === 'pulse') {
     return (
-      <div className={`${sizeClasses[size].container} animate-pulse rounded-full bg-slate-800`} role="status" aria-label="Ładowanie...">
+      <div className={`${sizeClasses[size].container} animate-pulse rounded-full bg-primary`} role="status" aria-label="Ładowanie...">
         <span className="sr-only">Ładowanie...</span>
       </div>
     );

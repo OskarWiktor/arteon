@@ -1,10 +1,11 @@
-﻿'use client';
+'use client';
 
 import Button from '@/components/ui/buttons/Button';
-import Badge from '@/components/ui/Badge';
-import Eyebrow from '@/components/ui/typography/Eyebrow';
 import { buildSignatureHtml } from '@/components/sections/tools/EmailSignatureGenerator/buildSignatureHtml';
 import { useSignatureCopy } from '@/components/sections/tools/EmailSignatureGenerator/useSignatureCopy';
+import { exportSignatureAsHtml } from '@/lib/tools/email/exportSignature';
+import { copyTextToClipboard } from '@/lib/tools/clipboard';
+import TextStyleRow from '@/components/sections/tools/EmailSignatureGenerator/TextStyleRow';
 import type {
   ActivePanel,
   BorderSides,
@@ -21,10 +22,11 @@ import type {
   TextStyleConfig,
   ThemePreset,
 } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import ToolButton from '@/components/ui/tools/ToolButton';
 import { rgbToHex } from '@/lib/tools/color/convert';
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import ConfirmModal from '@/components/ui/ConfirmModal';
-import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line, RiSpace, RiAddLine, RiSubtractLine, RiFontSize2, RiDeleteBinLine, RiRefreshLine } from 'react-icons/ri';
+import { RiUser3Line, RiMailLine, RiShareLine, RiPaletteLine, RiFileTextLine, RiLayout3Line, RiSpace, RiAddLine, RiSubtractLine, RiFontSize2, RiDeleteBinLine, RiDownloadLine, RiCodeLine, RiSunLine, RiMoonLine, RiGridLine, RiEyeLine, RiCloseLine, RiUploadLine, RiShareForwardLine } from 'react-icons/ri';
 
 const STORAGE_KEY = 'arteon-email-signature-generator';
 
@@ -68,6 +70,14 @@ const ui = {
       avatar: 'Avatar / logo (URL obrazu)',
       avatarPlaceholder: 'https://adrestwojejdomeny.pl/avatar.webp',
       avatarHelper: 'Najlepiej kwadratowy obraz min. 120x120 px, z publicznym adresem URL.',
+      avatarShape: 'Kształt avatara',
+      avatarShapeCircle: 'Okrągły',
+      avatarShapeRounded: 'Zaokrąglony',
+      avatarShapeSquare: 'Kwadrat',
+      avatarSize: 'Rozmiar avatara',
+      avatarSizeSmall: 'Mały (40 px)',
+      avatarSizeMedium: 'Średni (56 px)',
+      avatarSizeLarge: 'Duży (72 px)',
       fullName: 'Imię i nazwisko *',
       fullNamePlaceholder: 'Jan Kowalski',
       nameTag: 'Tag przy imieniu',
@@ -136,6 +146,13 @@ const ui = {
       title: 'Klauzula prawna / RODO',
       placeholder: 'Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość.',
       showDivider: 'Pokaż linię oddzielającą dane od klauzuli',
+      dividerStyle: 'Styl linii',
+      dividerStyleSolid: 'Ciągła',
+      dividerStyleDashed: 'Kreskowana',
+      dividerStyleDotted: 'Kropkowana',
+      dividerWidth: 'Grubość linii',
+      dividerColor: 'Kolor linii',
+      dividerColorDefault: 'Domyślny',
     },
     spacing: {
       title: 'Odstępy między elementami',
@@ -170,10 +187,23 @@ const ui = {
       copySuccess: 'Skopiowano - wklej w Gmailu',
       copyError: 'Błąd kopiowania',
       copyButton: 'Kopiuj stopkę (Gmail / Outlook)',
+      copyRawButton: 'Kopiuj kod HTML',
+      copyRawSuccess: 'Kod HTML skopiowany',
+      downloadButton: 'Pobierz jako HTML',
       requiredFields: 'Aby skopiować stopkę, uzupełnij przynajmniej imię i nazwisko oraz e-mail.',
       resetButton: 'Resetuj wygląd',
       resetModalTitle: 'Zresetować ustawienia?',
       resetModalDescription: 'Wszystkie dane i ustawienia stopki zostaną przywrócone do wartości domyślnych. Tej operacji nie można cofnąć.',
+      bgLight: 'Jasne',
+      bgDark: 'Ciemne',
+      bgChecker: 'Szachownica',
+      viewSourceButton: 'Pokaż kod HTML',
+      viewSourceTitle: 'Kod źródłowy HTML stopki',
+      viewSourceCopy: 'Kopiuj kod',
+      viewSourceCopied: 'Skopiowano',
+      viewSourceClose: 'Zamknij',
+      exportConfig: 'Eksportuj ustawienia',
+      importConfig: 'Importuj ustawienia',
     },
     labels: {
       tel: 'Tel.',
@@ -191,13 +221,6 @@ const ui = {
   },
 } as const;
 
-interface PanelButtonProps {
-  id: ActivePanel;
-  current: ActivePanel;
-  icon: ReactNode;
-  label: string;
-  onClick: (id: ActivePanel) => void;
-}
 
 const SIGNATURE_LABELS = {
   tel: ui.pl.labels.tel,
@@ -227,6 +250,12 @@ const DEFAULT_SIGNATURE: SignatureConfig = {
     tiktok: '',
     youtube: '',
     x: '',
+    github: '',
+    dribbble: '',
+    behance: '',
+    whatsapp: '',
+    telegram: '',
+    pinterest: '',
   },
   legalNote: 'Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość.',
   formalLine: '',
@@ -251,6 +280,11 @@ const DEFAULT_STYLE: StyleConfig = {
   showDivider: true,
   border: { left: false, right: false, top: false, bottom: false },
   socialIcons: { showIcons: false, iconSize: 'medium', colorMode: 'platform' },
+  avatarShape: 'circle',
+  avatarSize: 'medium',
+  dividerStyle: 'solid',
+  dividerWidth: 1,
+  dividerColor: '',
 };
 
 const DEFAULT_SPACING: SpacingConfig = {
@@ -325,19 +359,6 @@ const THEME_PRESETS: ThemePreset[] = [
   },
 ];
 
-function PanelButton({ id, current, icon, label, onClick }: PanelButtonProps) {
-  const isActive = id === current;
-  return (
-    <button
-      type="button"
-      onClick={() => onClick(id)}
-      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-800 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
-    >
-      {icon}
-      <span>{label}</span>
-    </button>
-  );
-}
 
 export default function EmailSignatureGenerator() {
   const t = ui.pl;
@@ -347,10 +368,14 @@ export default function EmailSignatureGenerator() {
   const [textStyleConfig, setTextStyleConfig] = useState<TextStyleConfig>(DEFAULT_TEXT_STYLE);
   const [pendingCustomColor, setPendingCustomColor] = useState<string>('#000000');
   const { copyStatus, copyToGmail } = useSignatureCopy();
+  const [copyRawStatus, setCopyRawStatus] = useState<'idle' | 'success'>('idle');
+  const [previewBg, setPreviewBg] = useState<'light' | 'dark' | 'checker'>('light');
   const [activePanel, setActivePanel] = useState<ActivePanel>('identity');
   const [layout, setLayout] = useState<LayoutType>('standard');
   const [themeId, setThemeId] = useState<string>('classic-dark');
   const [showResetModal, setShowResetModal] = useState(false);
+  const [showSourceModal, setShowSourceModal] = useState(false);
+  const [sourceModalCopyStatus, setSourceModalCopyStatus] = useState<'idle' | 'success'>('idle');
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
@@ -459,6 +484,53 @@ export default function EmailSignatureGenerator() {
     copyToGmail(signatureHtml);
   }
 
+  function handleCopyRawHtml() {
+    copyTextToClipboard(signatureHtml).then(() => {
+      setCopyRawStatus('success');
+      setTimeout(() => setCopyRawStatus('idle'), 3000);
+    });
+  }
+
+  function handleDownloadHtml() {
+    exportSignatureAsHtml(signatureHtml);
+  }
+
+  function handleExportConfig() {
+    const data = JSON.stringify({ config, styleConfig, spacingConfig, textStyleConfig, layout }, null, 2);
+    const blob = new Blob([data], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'email-signature-config.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  function handleImportConfig() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = (e) => {
+      const file = (e.target as HTMLInputElement).files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        try {
+          const data = JSON.parse(ev.target?.result as string);
+          if (data.config) setConfig(data.config);
+          if (data.styleConfig) setStyleConfig(data.styleConfig);
+          if (data.spacingConfig) setSpacingConfig(data.spacingConfig);
+          if (data.textStyleConfig) setTextStyleConfig(data.textStyleConfig);
+          if (data.layout) setLayout(data.layout);
+        } catch { /* ignore invalid JSON */ }
+      };
+      reader.readAsText(file);
+    };
+    input.click();
+  }
+
   function handleReset() {
     setConfig(DEFAULT_SIGNATURE);
     setStyleConfig(DEFAULT_STYLE);
@@ -474,13 +546,18 @@ export default function EmailSignatureGenerator() {
       <section className="tool-section flex flex-wrap items-center justify-between gap-3 p-4!">
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
-            <RiLayout3Line className="text-base text-slate-800" />
-            <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+            <RiLayout3Line className="text-base text-primary" />
+            <span className="text-[14px]! font-medium">
               {t.layoutLabel}
-            </Eyebrow>
+            </span>
             <div className="flex flex-wrap gap-1">
               {(['standard', 'top-banner', 'label-column', 'centered', 'compact', 'two-column', 'minimal', 'bottom-bar'] as LayoutType[]).map((lt) => (
-                <Badge key={lt} as="button" type="button" onClick={() => setLayout(lt)} variant={layout === lt ? 'selected' : 'default'} size="sm">
+                <button
+                  key={lt}
+                  type="button"
+                  onClick={() => setLayout(lt)}
+                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${layout === lt ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                >
                   {lt === 'standard' && t.layouts.standard}
                   {lt === 'top-banner' && t.layouts.topBanner}
                   {lt === 'label-column' && t.layouts.labelColumn}
@@ -489,7 +566,7 @@ export default function EmailSignatureGenerator() {
                   {lt === 'two-column' && t.layouts.twoColumn}
                   {lt === 'minimal' && t.layouts.minimal}
                   {lt === 'bottom-bar' && t.layouts.bottomBar}
-                </Badge>
+                </button>
               ))}
             </div>
           </div>
@@ -499,18 +576,18 @@ export default function EmailSignatureGenerator() {
 
       <section className="tool-section flex flex-wrap items-center gap-3 p-4!">
         <div className="flex items-center gap-2">
-          <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+          <span className="text-[14px]! font-medium">
             {t.editorTitle}
-          </Eyebrow>
+          </span>
         </div>
         <div className="flex flex-wrap gap-2">
-          <PanelButton id="identity" current={activePanel} onClick={setActivePanel} icon={<RiUser3Line className="text-base" />} label={t.panels.identity} />
-          <PanelButton id="buttons" current={activePanel} onClick={setActivePanel} icon={<RiShareLine className="text-base" />} label={t.panels.buttons} />
-          <PanelButton id="social" current={activePanel} onClick={setActivePanel} icon={<RiMailLine className="text-base" />} label={t.panels.social} />
-          <PanelButton id="appearance" current={activePanel} onClick={setActivePanel} icon={<RiPaletteLine className="text-base" />} label={t.panels.appearance} />
-          <PanelButton id="textStyle" current={activePanel} onClick={setActivePanel} icon={<RiFontSize2 className="text-base" />} label={t.panels.textStyle} />
-          <PanelButton id="spacing" current={activePanel} onClick={setActivePanel} icon={<RiSpace className="text-base" />} label={t.panels.spacing} />
-          <PanelButton id="legal" current={activePanel} onClick={setActivePanel} icon={<RiFileTextLine className="text-base" />} label={t.panels.legal} />
+          <ToolButton id="identity" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiUser3Line className="text-base" />} label={t.panels.identity} />
+          <ToolButton id="buttons" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiShareLine className="text-base" />} label={t.panels.buttons} />
+          <ToolButton id="social" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiMailLine className="text-base" />} label={t.panels.social} />
+          <ToolButton id="appearance" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiPaletteLine className="text-base" />} label={t.panels.appearance} />
+          <ToolButton id="textStyle" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiFontSize2 className="text-base" />} label={t.panels.textStyle} />
+          <ToolButton id="spacing" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiSpace className="text-base" />} label={t.panels.spacing} />
+          <ToolButton id="legal" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiFileTextLine className="text-base" />} label={t.panels.legal} />
         </div>
       </section>
 
@@ -519,59 +596,97 @@ export default function EmailSignatureGenerator() {
           <div className="space-y-4 text-sm!">
             {activePanel === 'identity' && (
               <div className="space-y-3">
-                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                <span className="text-[14px]! font-medium">
                   {t.identity.title}
-                </Eyebrow>
+                </span>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.topLine}</span>
+                    <span className="text-light text-xs! font-medium uppercase">{t.identity.topLine}</span>
                   </label>
                   <input
                     type="text"
                     value={config.topLine}
                     onChange={(e) => handleTextChange('topLine', e.target.value)}
-                    className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                    className="tool-input"
                     placeholder={t.identity.topLinePlaceholder}
                   />
                 </div>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.avatar}</span>
+                    <span className="text-light text-xs! font-medium uppercase">{t.identity.avatar}</span>
                   </label>
                   <input
                     type="url"
                     value={config.avatarUrl}
                     onChange={(e) => handleTextChange('avatarUrl', e.target.value)}
-                    className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                    className="tool-input"
                     placeholder={t.identity.avatarPlaceholder}
                   />
                   <p className="text-light mt-1 text-xs!">{t.identity.avatarHelper}</p>
+                  {config.avatarUrl.trim() && (
+                    <div className="mt-3 space-y-3">
+                      <div>
+                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.identity.avatarShape}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {(['circle', 'rounded', 'square'] as const).map((shape) => (
+                            <button
+                              key={shape}
+                              type="button"
+                              onClick={() => handleStyleChange('avatarShape', shape)}
+                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.avatarShape === shape ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                            >
+                              {shape === 'circle' && t.identity.avatarShapeCircle}
+                              {shape === 'rounded' && t.identity.avatarShapeRounded}
+                              {shape === 'square' && t.identity.avatarShapeSquare}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.identity.avatarSize}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {(['small', 'medium', 'large'] as const).map((size) => (
+                            <button
+                              key={size}
+                              type="button"
+                              onClick={() => handleStyleChange('avatarSize', size)}
+                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.avatarSize === size ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                            >
+                              {size === 'small' && t.identity.avatarSizeSmall}
+                              {size === 'medium' && t.identity.avatarSizeMedium}
+                              {size === 'large' && t.identity.avatarSizeLarge}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.fullName}</span>
+                      <span className="text-light text-xs! font-medium uppercase">{t.identity.fullName}</span>
                     </label>
                     <input
                       type="text"
                       value={config.fullName}
                       onChange={(e) => handleTextChange('fullName', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder={t.identity.fullNamePlaceholder}
                     />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.nameTag}</span>
+                      <span className="text-light text-xs! font-medium uppercase">{t.identity.nameTag}</span>
                     </label>
                     <input
                       type="text"
                       value={config.nameTag}
                       onChange={(e) => handleTextChange('nameTag', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder={t.identity.nameTagPlaceholder}
                     />
                   </div>
@@ -579,22 +694,22 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="text-light mb-1 block text-xs! font-semibold uppercase">{t.identity.jobTitle}</label>
+                    <label className="text-light mb-1 block text-xs! font-medium uppercase">{t.identity.jobTitle}</label>
                     <input
                       type="text"
                       value={config.jobTitle}
                       onChange={(e) => handleTextChange('jobTitle', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder={t.identity.jobTitlePlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="text-light mb-1 block text-xs! font-semibold uppercase">{t.identity.company}</label>
+                    <label className="text-light mb-1 block text-xs! font-medium uppercase">{t.identity.company}</label>
                     <input
                       type="text"
                       value={config.company}
                       onChange={(e) => handleTextChange('company', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder={t.identity.companyPlaceholder}
                     />
                   </div>
@@ -602,13 +717,13 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.extraLine}</span>
+                    <span className="text-light text-xs! font-medium uppercase">{t.identity.extraLine}</span>
                   </label>
                   <input
                     type="text"
                     value={config.extraLine}
                     onChange={(e) => handleTextChange('extraLine', e.target.value)}
-                    className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                    className="tool-input"
                     placeholder={t.identity.extraLinePlaceholder}
                   />
                 </div>
@@ -616,25 +731,25 @@ export default function EmailSignatureGenerator() {
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.email}</span>
+                      <span className="text-light text-xs! font-medium uppercase">{t.identity.email}</span>
                     </label>
                     <input
                       type="email"
                       value={config.email}
                       onChange={(e) => handleTextChange('email', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder={t.identity.emailPlaceholder}
                     />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">{t.identity.phone}</span>
+                      <span className="text-light text-xs! font-medium uppercase">{t.identity.phone}</span>
                     </label>
                     <input
                       type="tel"
                       value={config.phone}
                       onChange={(e) => handleTextChange('phone', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder={t.identity.phonePlaceholder}
                     />
                   </div>
@@ -642,25 +757,25 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.website}</span>
+                    <span className="text-light text-xs! font-medium uppercase">{t.identity.website}</span>
                   </label>
                   <input
                     type="url"
                     value={config.website}
                     onChange={(e) => handleTextChange('website', e.target.value)}
-                    className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                    className="tool-input"
                     placeholder={t.identity.websitePlaceholder}
                   />
                 </div>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.address}</span>
+                    <span className="text-light text-xs! font-medium uppercase">{t.identity.address}</span>
                   </label>
                   <textarea
                     value={config.address}
                     onChange={(e) => handleTextChange('address', e.target.value)}
-                    className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                    className="tool-input"
                     rows={2}
                     placeholder={t.identity.addressPlaceholder}
                   />
@@ -668,12 +783,12 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-semibold uppercase">{t.identity.formalLine}</span>
+                    <span className="text-light text-xs! font-medium uppercase">{t.identity.formalLine}</span>
                   </label>
                   <textarea
                     value={config.formalLine}
                     onChange={(e) => handleTextChange('formalLine', e.target.value)}
-                    className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-xs! focus:border-neutral-800 focus:outline-none"
+                    className="tool-input"
                     rows={2}
                     placeholder={t.identity.formalLinePlaceholder}
                   />
@@ -683,34 +798,34 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'buttons' && (
               <div className="space-y-4">
-                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                <span className="text-[14px]! font-medium">
                   {t.buttons.title}
-                </Eyebrow>
+                </span>
 
                 <div>
-                  <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.buttons.cta1Title}</p>
+                  <p className="text-light mb-2 text-xs! font-medium uppercase">{t.buttons.cta1Title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.label}</span>
+                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.label}</span>
                       </label>
                       <input
                         type="text"
                         value={config.ctaLabel}
                         onChange={(e) => handleTextChange('ctaLabel', e.target.value)}
-                        className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                        className="tool-input"
                         placeholder={t.buttons.labelPlaceholder}
                       />
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.url}</span>
+                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.url}</span>
                       </label>
                       <input
                         type="url"
                         value={config.ctaUrl}
                         onChange={(e) => handleTextChange('ctaUrl', e.target.value)}
-                        className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                        className="tool-input"
                         placeholder={t.buttons.urlPlaceholder}
                       />
                     </div>
@@ -719,29 +834,29 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.buttons.cta2Title}</p>
+                  <p className="text-light mb-2 text-xs! font-medium uppercase">{t.buttons.cta2Title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.cta2Label}</span>
+                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.cta2Label}</span>
                       </label>
                       <input
                         type="text"
                         value={config.cta2Label}
                         onChange={(e) => handleTextChange('cta2Label', e.target.value)}
-                        className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                        className="tool-input"
                         placeholder={t.buttons.cta2LabelPlaceholder}
                       />
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-semibold uppercase">{t.buttons.cta2Url}</span>
+                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.cta2Url}</span>
                       </label>
                       <input
                         type="url"
                         value={config.cta2Url}
                         onChange={(e) => handleTextChange('cta2Url', e.target.value)}
-                        className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                        className="tool-input"
                         placeholder={t.buttons.cta2UrlPlaceholder}
                       />
                     </div>
@@ -749,22 +864,19 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.buttons.ctaRadius}</p>
+                  <p className="text-light mb-1 text-xs! font-medium uppercase">{t.buttons.ctaRadius}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
-                      <Badge
+                      <button
                         key={option}
-                        onClick={() => handleStyleChange('ctaRadius', option)}
-                        as="button"
                         type="button"
-                        size="sm"
-                        variant={styleConfig.ctaRadius === option ? 'selected' : 'default'}
-                        className={`px-3 py-1 text-xs! font-medium ${styleConfig.ctaRadius === option ? '' : 'hover:border-neutral-500'}`}
+                        onClick={() => handleStyleChange('ctaRadius', option)}
+                        className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.ctaRadius === option ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                       >
                         {option === 'none' && t.buttons.ctaRadiusNone}
                         {option === 'small' && t.buttons.ctaRadiusSmall}
                         {option === 'full' && t.buttons.ctaRadiusFull}
-                      </Badge>
+                      </button>
                     ))}
                   </div>
                 </div>
@@ -773,31 +885,31 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'social' && (
               <div className="space-y-3">
-                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                <span className="text-[14px]! font-medium">
                   {t.social.title}
-                </Eyebrow>
+                </span>
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">LinkedIn</span>
+                      <span className="text-light text-xs! font-medium uppercase">LinkedIn</span>
                     </label>
                     <input
                       type="url"
                       value={config.socials.linkedin}
                       onChange={(e) => handleSocialChange('linkedin', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder="https://www.linkedin.com/in/..."
                     />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">Instagram</span>
+                      <span className="text-light text-xs! font-medium uppercase">Instagram</span>
                     </label>
                     <input
                       type="url"
                       value={config.socials.instagram}
                       onChange={(e) => handleSocialChange('instagram', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder="https://www.instagram.com/..."
                     />
                   </div>
@@ -805,25 +917,25 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">Facebook</span>
+                      <span className="text-light text-xs! font-medium uppercase">Facebook</span>
                     </label>
                     <input
                       type="url"
                       value={config.socials.facebook}
                       onChange={(e) => handleSocialChange('facebook', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder="https://www.facebook.com/..."
                     />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">TikTok</span>
+                      <span className="text-light text-xs! font-medium uppercase">TikTok</span>
                     </label>
                     <input
                       type="url"
                       value={config.socials.tiktok}
                       onChange={(e) => handleSocialChange('tiktok', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder="https://www.tiktok.com/@..."
                     />
                   </div>
@@ -831,26 +943,104 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">YouTube</span>
+                      <span className="text-light text-xs! font-medium uppercase">YouTube</span>
                     </label>
                     <input
                       type="url"
                       value={config.socials.youtube}
                       onChange={(e) => handleSocialChange('youtube', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder="https://www.youtube.com/@..."
                     />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-semibold uppercase">X (Twitter)</span>
+                      <span className="text-light text-xs! font-medium uppercase">X (Twitter)</span>
                     </label>
                     <input
                       type="url"
                       value={config.socials.x}
                       onChange={(e) => handleSocialChange('x', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-input"
                       placeholder="https://x.com/..."
+                    />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 gap-3">
+                  <div>
+                    <label className="mb-1 block">
+                      <span className="text-light text-xs! font-medium uppercase">GitHub</span>
+                    </label>
+                    <input
+                      type="url"
+                      value={config.socials.github}
+                      onChange={(e) => handleSocialChange('github', e.target.value)}
+                      className="tool-input"
+                      placeholder="https://github.com/..."
+                    />
+                  </div>
+                  <div>
+                    <label className="mb-1 block">
+                      <span className="text-light text-xs! font-medium uppercase">Dribbble</span>
+                    </label>
+                    <input
+                      type="url"
+                      value={config.socials.dribbble}
+                      onChange={(e) => handleSocialChange('dribbble', e.target.value)}
+                      className="tool-input"
+                      placeholder="https://dribbble.com/..."
+                    />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 gap-3">
+                  <div>
+                    <label className="mb-1 block">
+                      <span className="text-light text-xs! font-medium uppercase">Behance</span>
+                    </label>
+                    <input
+                      type="url"
+                      value={config.socials.behance}
+                      onChange={(e) => handleSocialChange('behance', e.target.value)}
+                      className="tool-input"
+                      placeholder="https://www.behance.net/..."
+                    />
+                  </div>
+                  <div>
+                    <label className="mb-1 block">
+                      <span className="text-light text-xs! font-medium uppercase">WhatsApp</span>
+                    </label>
+                    <input
+                      type="url"
+                      value={config.socials.whatsapp}
+                      onChange={(e) => handleSocialChange('whatsapp', e.target.value)}
+                      className="tool-input"
+                      placeholder="https://wa.me/48..."
+                    />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 gap-3">
+                  <div>
+                    <label className="mb-1 block">
+                      <span className="text-light text-xs! font-medium uppercase">Telegram</span>
+                    </label>
+                    <input
+                      type="url"
+                      value={config.socials.telegram}
+                      onChange={(e) => handleSocialChange('telegram', e.target.value)}
+                      className="tool-input"
+                      placeholder="https://t.me/..."
+                    />
+                  </div>
+                  <div>
+                    <label className="mb-1 block">
+                      <span className="text-light text-xs! font-medium uppercase">Pinterest</span>
+                    </label>
+                    <input
+                      type="url"
+                      value={config.socials.pinterest}
+                      onChange={(e) => handleSocialChange('pinterest', e.target.value)}
+                      className="tool-input"
+                      placeholder="https://www.pinterest.com/..."
                     />
                   </div>
                 </div>
@@ -863,9 +1053,9 @@ export default function EmailSignatureGenerator() {
                       type="checkbox"
                       checked={styleConfig.socialIcons.showIcons}
                       onChange={(e) => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, showIcons: e.target.checked })}
-                      className="h-4! w-4! rounded border-neutral-300"
+                      className="tool-checkbox"
                     />
-                    <label htmlFor="social-icons-toggle" className="text-mid text-sm!">
+                    <label htmlFor="social-icons-toggle" className="text-[14px]! font-medium">
                       {t.social.showIcons}
                     </label>
                   </div>
@@ -873,43 +1063,37 @@ export default function EmailSignatureGenerator() {
                   {styleConfig.socialIcons.showIcons && (
                     <>
                       <div>
-                        <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.social.iconSize}</p>
+                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.social.iconSize}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['small', 'medium', 'large'] as const).map((size) => (
-                            <Badge
+                            <button
                               key={size}
-                              onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, iconSize: size })}
-                              as="button"
                               type="button"
-                              size="sm"
-                              variant={styleConfig.socialIcons.iconSize === size ? 'selected' : 'default'}
-                              className="px-3 py-1 text-xs! font-medium"
+                              onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, iconSize: size })}
+                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.socialIcons.iconSize === size ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                             >
                               {size === 'small' && t.social.iconSizeSmall}
                               {size === 'medium' && t.social.iconSizeMedium}
                               {size === 'large' && t.social.iconSizeLarge}
-                            </Badge>
+                            </button>
                           ))}
                         </div>
                       </div>
 
                       <div>
-                        <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.social.iconColor}</p>
+                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.social.iconColor}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['platform', 'accent', 'text'] as const).map((mode) => (
-                            <Badge
+                            <button
                               key={mode}
-                              onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, colorMode: mode })}
-                              as="button"
                               type="button"
-                              size="sm"
-                              variant={styleConfig.socialIcons.colorMode === mode ? 'selected' : 'default'}
-                              className="px-3 py-1 text-xs! font-medium"
+                              onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, colorMode: mode })}
+                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.socialIcons.colorMode === mode ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                             >
                               {mode === 'platform' && t.social.iconColorPlatform}
                               {mode === 'accent' && t.social.iconColorAccent}
                               {mode === 'text' && t.social.iconColorText}
-                            </Badge>
+                            </button>
                           ))}
                         </div>
                       </div>
@@ -922,55 +1106,52 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'appearance' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
+                  <span className="mb-2 text-[14px]! font-medium">
                     {t.appearance.themeTitle}
-                  </Eyebrow>
+                  </span>
                   <div className="flex flex-wrap gap-2">
                     {THEME_PRESETS.map((preset) => (
-                      <Badge
+                      <button
                         key={preset.id}
-                        onClick={() => applyTheme(preset.id)}
-                        as="button"
                         type="button"
-                        size="sm"
-                        variant={themeId === preset.id ? 'selected' : 'default'}
-                        className={`flex items-center gap-2 px-3 py-1 text-xs! ${themeId === preset.id ? '' : 'hover:border-neutral-500'}`}
+                        onClick={() => applyTheme(preset.id)}
+                        className={`inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! font-medium ${themeId === preset.id ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                       >
                         <span className="flex h-4 w-4 items-center justify-center rounded-full border border-neutral-300">
                           <span className="h-3 w-3 rounded-full" style={{ backgroundColor: preset.accentColor }} />
                         </span>
                         {preset.name}
-                      </Badge>
+                      </button>
                     ))}
                   </div>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.accentColor}</p>
+                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.accentColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
                         value={styleConfig.accentColor}
                         onChange={(e) => handleStyleChange('accentColor', e.target.value)}
-                        className="h-9 w-9 cursor-pointer border-none bg-white p-0!"
+                        className="tool-color-picker h-9! w-9!"
                       />
                     </div>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.textColor}</p>
+                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.textColor}</p>
                     <div className="flex items-center gap-2">
-                      <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="h-9 w-9 cursor-pointer border-none bg-white p-0!" />
+                      <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="tool-color-picker h-9! w-9!" />
                     </div>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.backgroundColor}</p>
+                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.backgroundColor}</p>
                     <div className="flex items-center gap-2">
                       <input
                         type="color"
                         value={styleConfig.backgroundColor}
                         onChange={(e) => handleStyleChange('backgroundColor', e.target.value)}
-                        className="h-9 w-9 cursor-pointer border-none bg-white p-0!"
+                        className="tool-color-picker h-9! w-9!"
                       />
                     </div>
                   </div>
@@ -978,11 +1159,11 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.fontFamily}</p>
+                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.fontFamily}</p>
                     <select
                       value={styleConfig.fontFamily}
                       onChange={(e) => handleStyleChange('fontFamily', e.target.value)}
-                      className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-sm! focus:border-neutral-800 focus:outline-none"
+                      className="tool-select"
                     >
                       {FONT_OPTIONS.map((font) => (
                         <option key={font.value} value={font.value}>
@@ -992,29 +1173,26 @@ export default function EmailSignatureGenerator() {
                     </select>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.appearance.fontSize}</p>
+                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.fontSize}</p>
                     <div className="flex flex-wrap gap-2">
                       {(['small', 'normal', 'large'] as FontSizeOption[]).map((size) => (
-                        <Badge
+                        <button
                           key={size}
-                          onClick={() => handleStyleChange('fontSize', size)}
-                          as="button"
                           type="button"
-                          size="sm"
-                          variant={styleConfig.fontSize === size ? 'selected' : 'default'}
-                          className={`px-3 py-1 text-xs! font-medium ${styleConfig.fontSize === size ? '' : 'hover:border-neutral-500'}`}
+                          onClick={() => handleStyleChange('fontSize', size)}
+                          className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.fontSize === size ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                         >
                           {size === 'small' && t.appearance.fontSizeSmall}
                           {size === 'normal' && t.appearance.fontSizeNormal}
                           {size === 'large' && t.appearance.fontSizeLarge}
-                        </Badge>
+                        </button>
                       ))}
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.border.label}</p>
+                  <p className="text-light mb-1 text-xs! font-medium uppercase">{t.border.label}</p>
                   <div className="flex flex-wrap gap-3">
                     {(['left', 'right', 'top', 'bottom'] as (keyof BorderSides)[]).map((side) => (
                       <label key={side} className="flex cursor-pointer items-center gap-1.5">
@@ -1030,9 +1208,9 @@ export default function EmailSignatureGenerator() {
                               handleStyleChange('border', newBorder);
                             }
                           }}
-                          className="h-4! w-4! rounded border-neutral-300"
+                          className="tool-checkbox"
                         />
-                        <span className="text-mid text-sm!">
+                        <span className="text-[14px]! font-medium">
                           {side === 'left' && t.border.left}
                           {side === 'right' && t.border.right}
                           {side === 'top' && t.border.top}
@@ -1042,26 +1220,20 @@ export default function EmailSignatureGenerator() {
                     ))}
                   </div>
                   <div className="mt-2 flex gap-2">
-                    <Badge
-                      onClick={() => handleStyleChange('border', { left: true, right: true, top: true, bottom: true })}
-                      as="button"
+                    <button
                       type="button"
-                      size="sm"
-                      variant={styleConfig.border.left && styleConfig.border.right && styleConfig.border.top && styleConfig.border.bottom ? 'selected' : 'default'}
-                      className="px-3 py-1 text-xs! font-medium"
+                      onClick={() => handleStyleChange('border', { left: true, right: true, top: true, bottom: true })}
+                      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.border.left && styleConfig.border.right && styleConfig.border.top && styleConfig.border.bottom ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                     >
                       {t.border.full}
-                    </Badge>
-                    <Badge
-                      onClick={() => handleStyleChange('border', { left: false, right: false, top: false, bottom: false })}
-                      as="button"
+                    </button>
+                    <button
                       type="button"
-                      size="sm"
-                      variant={!styleConfig.border.left && !styleConfig.border.right && !styleConfig.border.top && !styleConfig.border.bottom ? 'selected' : 'default'}
-                      className="px-3 py-1 text-xs! font-medium"
+                      onClick={() => handleStyleChange('border', { left: false, right: false, top: false, bottom: false })}
+                      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${!styleConfig.border.left && !styleConfig.border.right && !styleConfig.border.top && !styleConfig.border.bottom ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                     >
                       {t.border.none}
-                    </Badge>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1070,28 +1242,28 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'textStyle' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
+                  <span className="mb-2 text-[14px]! font-medium">
                     {t.textStyle.title}
-                  </Eyebrow>
+                  </span>
                   <p className="text-light mb-3 text-xs!">{t.textStyle.helper}</p>
                 </div>
 
                 <div>
-                  <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.textStyle.addColor}</p>
+                  <p className="text-light mb-2 text-xs! font-medium uppercase">{t.textStyle.addColor}</p>
                   <div className="flex items-center gap-2">
                     <div className="relative">
                       <input type="color" value={pendingCustomColor} onChange={(e) => setPendingCustomColor(e.target.value)} className="absolute inset-0 h-full w-full cursor-pointer opacity-0" />
                       <div className="h-8 w-8 cursor-pointer rounded border border-neutral-300" style={{ backgroundColor: pendingCustomColor }} />
                     </div>
-                    <Badge onClick={() => addCustomColor(pendingCustomColor)} as="button" type="button" size="sm" variant="default" className="px-3 py-1 text-xs! font-medium hover:border-neutral-500">
+                    <button type="button" onClick={() => addCustomColor(pendingCustomColor)} className="inline-flex items-center rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! font-medium hover:bg-neutral-100">
                       {t.textStyle.saveColor}
-                    </Badge>
+                    </button>
                   </div>
                 </div>
 
                 {textStyleConfig.customColors.length > 0 && (
                   <div>
-                    <p className="text-light mb-2 text-xs! font-semibold uppercase">{t.textStyle.customColors}</p>
+                    <p className="text-light mb-2 text-xs! font-medium uppercase">{t.textStyle.customColors}</p>
                     <div className="flex flex-wrap gap-2">
                       {textStyleConfig.customColors.map((color) => (
                         <div key={color} className="group relative">
@@ -1099,7 +1271,7 @@ export default function EmailSignatureGenerator() {
                           <button
                             type="button"
                             onClick={() => removeCustomColor(color)}
-                            className="absolute -top-1.5 -right-1.5 hidden h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white group-hover:flex"
+                            className="absolute -top-1.5 -right-1.5 hidden h-5 w-5 items-center justify-center rounded-full bg-error-icon text-white group-hover:flex"
                             aria-label="Usuń kolor"
                           >
                             <RiDeleteBinLine className="h-3 w-3" />
@@ -1111,357 +1283,27 @@ export default function EmailSignatureGenerator() {
                 )}
 
                 {config.fullName.trim() && (
-                  <div className="space-y-2 border-t border-neutral-200 pt-3">
-                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.name}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
-                      <button type="button" onClick={() => handleTextStyleColorChange('name', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <div
-                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.name.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
-                        style={{ backgroundColor: textStyleConfig.name.color || styleConfig.accentColor }}
-                      />
-                      {textStyleConfig.customColors.map((color) => (
-                        <button
-                          key={color}
-                          type="button"
-                          onClick={() => handleTextStyleColorChange('name', color)}
-                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.name.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
-                          style={{ backgroundColor: color }}
-                        />
-                      ))}
-                      <div className="relative">
-                        <input
-                          type="color"
-                          value={textStyleConfig.name.color || styleConfig.accentColor}
-                          onChange={(e) => handleTextStyleColorChange('name', e.target.value)}
-                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-                        />
-                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
-                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('name', -2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zmniejsz rozmiar"
-                      >
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <span className="w-10 text-center text-xs! font-medium">
-                        {textStyleConfig.name.sizeOffset > 0 ? '+' : ''}
-                        {textStyleConfig.name.sizeOffset}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('name', 2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zwiększ rozmiar"
-                      >
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                    </div>
-                  </div>
+                  <TextStyleRow elementKey="name" label={t.textStyle.name} colorLabel={t.textStyle.color} sizeLabel={t.textStyle.size} currentColor={textStyleConfig.name.color} defaultColor={styleConfig.accentColor} sizeOffset={textStyleConfig.name.sizeOffset} customColors={textStyleConfig.customColors} onColorChange={handleTextStyleColorChange} onSizeChange={handleTextStyleSizeChange} />
                 )}
 
                 {config.jobTitle.trim() && (
-                  <div className="space-y-2 border-t border-neutral-200 pt-3">
-                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.jobTitle}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
-                      <button type="button" onClick={() => handleTextStyleColorChange('jobTitle', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <div
-                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.jobTitle.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
-                        style={{ backgroundColor: textStyleConfig.jobTitle.color || styleConfig.textColor }}
-                      />
-                      {textStyleConfig.customColors.map((color) => (
-                        <button
-                          key={color}
-                          type="button"
-                          onClick={() => handleTextStyleColorChange('jobTitle', color)}
-                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.jobTitle.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
-                          style={{ backgroundColor: color }}
-                        />
-                      ))}
-                      <div className="relative">
-                        <input
-                          type="color"
-                          value={textStyleConfig.jobTitle.color || styleConfig.textColor}
-                          onChange={(e) => handleTextStyleColorChange('jobTitle', e.target.value)}
-                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-                        />
-                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
-                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('jobTitle', -2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zmniejsz rozmiar"
-                      >
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <span className="w-10 text-center text-xs! font-medium">
-                        {textStyleConfig.jobTitle.sizeOffset > 0 ? '+' : ''}
-                        {textStyleConfig.jobTitle.sizeOffset}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('jobTitle', 2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zwiększ rozmiar"
-                      >
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                    </div>
-                  </div>
+                  <TextStyleRow elementKey="jobTitle" label={t.textStyle.jobTitle} colorLabel={t.textStyle.color} sizeLabel={t.textStyle.size} currentColor={textStyleConfig.jobTitle.color} defaultColor={styleConfig.textColor} sizeOffset={textStyleConfig.jobTitle.sizeOffset} customColors={textStyleConfig.customColors} onColorChange={handleTextStyleColorChange} onSizeChange={handleTextStyleSizeChange} />
                 )}
 
                 {config.company.trim() && (
-                  <div className="space-y-2 border-t border-neutral-200 pt-3">
-                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.company}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
-                      <button type="button" onClick={() => handleTextStyleColorChange('company', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <div
-                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.company.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
-                        style={{ backgroundColor: textStyleConfig.company.color || styleConfig.textColor }}
-                      />
-                      {textStyleConfig.customColors.map((color) => (
-                        <button
-                          key={color}
-                          type="button"
-                          onClick={() => handleTextStyleColorChange('company', color)}
-                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.company.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
-                          style={{ backgroundColor: color }}
-                        />
-                      ))}
-                      <div className="relative">
-                        <input
-                          type="color"
-                          value={textStyleConfig.company.color || styleConfig.textColor}
-                          onChange={(e) => handleTextStyleColorChange('company', e.target.value)}
-                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-                        />
-                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
-                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('company', -2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zmniejsz rozmiar"
-                      >
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <span className="w-10 text-center text-xs! font-medium">
-                        {textStyleConfig.company.sizeOffset > 0 ? '+' : ''}
-                        {textStyleConfig.company.sizeOffset}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('company', 2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zwiększ rozmiar"
-                      >
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                    </div>
-                  </div>
+                  <TextStyleRow elementKey="company" label={t.textStyle.company} colorLabel={t.textStyle.color} sizeLabel={t.textStyle.size} currentColor={textStyleConfig.company.color} defaultColor={styleConfig.textColor} sizeOffset={textStyleConfig.company.sizeOffset} customColors={textStyleConfig.customColors} onColorChange={handleTextStyleColorChange} onSizeChange={handleTextStyleSizeChange} />
                 )}
 
                 {(config.email.trim() || config.phone.trim() || config.website.trim()) && (
-                  <div className="space-y-2 border-t border-neutral-200 pt-3">
-                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.contact}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
-                      <button type="button" onClick={() => handleTextStyleColorChange('contact', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <div
-                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.contact.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
-                        style={{ backgroundColor: textStyleConfig.contact.color || styleConfig.textColor }}
-                      />
-                      {textStyleConfig.customColors.map((color) => (
-                        <button
-                          key={color}
-                          type="button"
-                          onClick={() => handleTextStyleColorChange('contact', color)}
-                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.contact.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
-                          style={{ backgroundColor: color }}
-                        />
-                      ))}
-                      <div className="relative">
-                        <input
-                          type="color"
-                          value={textStyleConfig.contact.color || styleConfig.textColor}
-                          onChange={(e) => handleTextStyleColorChange('contact', e.target.value)}
-                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-                        />
-                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
-                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('contact', -2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zmniejsz rozmiar"
-                      >
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <span className="w-10 text-center text-xs! font-medium">
-                        {textStyleConfig.contact.sizeOffset > 0 ? '+' : ''}
-                        {textStyleConfig.contact.sizeOffset}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('contact', 2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zwiększ rozmiar"
-                      >
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                    </div>
-                  </div>
+                  <TextStyleRow elementKey="contact" label={t.textStyle.contact} colorLabel={t.textStyle.color} sizeLabel={t.textStyle.size} currentColor={textStyleConfig.contact.color} defaultColor={styleConfig.textColor} sizeOffset={textStyleConfig.contact.sizeOffset} customColors={textStyleConfig.customColors} onColorChange={handleTextStyleColorChange} onSizeChange={handleTextStyleSizeChange} />
                 )}
 
                 {Object.values(config.socials).some((url) => url.trim()) && (
-                  <div className="space-y-2 border-t border-neutral-200 pt-3">
-                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.socials}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
-                      <button type="button" onClick={() => handleTextStyleColorChange('socials', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <div
-                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.socials.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
-                        style={{ backgroundColor: textStyleConfig.socials.color || styleConfig.accentColor }}
-                      />
-                      {textStyleConfig.customColors.map((color) => (
-                        <button
-                          key={color}
-                          type="button"
-                          onClick={() => handleTextStyleColorChange('socials', color)}
-                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.socials.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
-                          style={{ backgroundColor: color }}
-                        />
-                      ))}
-                      <div className="relative">
-                        <input
-                          type="color"
-                          value={textStyleConfig.socials.color || styleConfig.accentColor}
-                          onChange={(e) => handleTextStyleColorChange('socials', e.target.value)}
-                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-                        />
-                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
-                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('socials', -2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zmniejsz rozmiar"
-                      >
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <span className="w-10 text-center text-xs! font-medium">
-                        {textStyleConfig.socials.sizeOffset > 0 ? '+' : ''}
-                        {textStyleConfig.socials.sizeOffset}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('socials', 2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zwiększ rozmiar"
-                      >
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                    </div>
-                  </div>
+                  <TextStyleRow elementKey="socials" label={t.textStyle.socials} colorLabel={t.textStyle.color} sizeLabel={t.textStyle.size} currentColor={textStyleConfig.socials.color} defaultColor={styleConfig.accentColor} sizeOffset={textStyleConfig.socials.sizeOffset} customColors={textStyleConfig.customColors} onColorChange={handleTextStyleColorChange} onSizeChange={handleTextStyleSizeChange} />
                 )}
 
                 {config.legalNote.trim() && (
-                  <div className="space-y-2 border-t border-neutral-200 pt-3">
-                    <p className="text-light text-xs! font-semibold uppercase">{t.textStyle.legal}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.color}:</span>
-                      <button type="button" onClick={() => handleTextStyleColorChange('legal', null)} className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100" title="Reset">
-                        <RiRefreshLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <div
-                        className={`h-7 w-7 rounded border-2 ${textStyleConfig.legal.color === null ? 'border-neutral-800' : 'border-neutral-300'}`}
-                        style={{ backgroundColor: textStyleConfig.legal.color || styleConfig.textColor }}
-                      />
-                      {textStyleConfig.customColors.map((color) => (
-                        <button
-                          key={color}
-                          type="button"
-                          onClick={() => handleTextStyleColorChange('legal', color)}
-                          className={`h-7 w-7 rounded border-2 ${textStyleConfig.legal.color === color ? 'border-neutral-800' : 'border-neutral-300'}`}
-                          style={{ backgroundColor: color }}
-                        />
-                      ))}
-                      <div className="relative">
-                        <input
-                          type="color"
-                          value={textStyleConfig.legal.color || styleConfig.textColor}
-                          onChange={(e) => handleTextStyleColorChange('legal', e.target.value)}
-                          className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-                        />
-                        <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded border border-dashed border-neutral-400 hover:border-neutral-600">
-                          <RiAddLine className="h-3.5 w-3.5 text-neutral-500" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-light w-12 text-xs!">{t.textStyle.size}:</span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('legal', -2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zmniejsz rozmiar"
-                      >
-                        <RiSubtractLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                      <span className="w-10 text-center text-xs! font-medium">
-                        {textStyleConfig.legal.sizeOffset > 0 ? '+' : ''}
-                        {textStyleConfig.legal.sizeOffset}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => handleTextStyleSizeChange('legal', 2)}
-                        className="rounded-md border border-neutral-300 p-1.5 hover:bg-neutral-100"
-                        aria-label="Zwiększ rozmiar"
-                      >
-                        <RiAddLine className="h-3.5 w-3.5 text-slate-800" />
-                      </button>
-                    </div>
-                  </div>
+                  <TextStyleRow elementKey="legal" label={t.textStyle.legal} colorLabel={t.textStyle.color} sizeLabel={t.textStyle.size} currentColor={textStyleConfig.legal.color} defaultColor={styleConfig.textColor} sizeOffset={textStyleConfig.legal.sizeOffset} customColors={textStyleConfig.customColors} onColorChange={handleTextStyleColorChange} onSizeChange={handleTextStyleSizeChange} />
                 )}
               </div>
             )}
@@ -1469,43 +1311,40 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'spacing' && (
               <div className="space-y-4">
                 <div>
-                  <Eyebrow variant="dynamic" className="mb-2 text-xs! font-semibold">
+                  <span className="mb-2 text-[14px]! font-medium">
                     {t.spacing.title}
-                  </Eyebrow>
+                  </span>
                   <p className="text-light mb-3 text-xs!">{t.spacing.helper}</p>
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-semibold uppercase">{t.spacing.padding}</p>
+                  <p className="text-light mb-1 text-xs! font-medium uppercase">{t.spacing.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
-                      <Badge
+                      <button
                         key={option}
-                        onClick={() => handleStyleChange('padding', option)}
-                        as="button"
                         type="button"
-                        size="sm"
-                        variant={styleConfig.padding === option ? 'selected' : 'default'}
-                        className={`px-3 py-1 text-xs! font-medium ${styleConfig.padding === option ? '' : 'hover:border-neutral-500'}`}
+                        onClick={() => handleStyleChange('padding', option)}
+                        className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.padding === option ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
                       >
                         {option === 'small' && '8 px'}
                         {option === 'medium' && '16 px'}
                         {option === 'large' && '24 px'}
-                      </Badge>
+                      </button>
                     ))}
                   </div>
                 </div>
 
                 {config.fullName.trim() && LAYOUT_SPACING_MAP[layout].includes('afterName') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-mid text-sm!">{t.spacing.afterName}</span>
+                    <span className="text-[14px]! font-medium">{t.spacing.afterName}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterName', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
+                        <RiSubtractLine className="h-4 w-4 text-primary" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterName} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterName', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-800" />
+                        <RiAddLine className="h-4 w-4 text-primary" />
                       </button>
                     </div>
                   </div>
@@ -1513,7 +1352,7 @@ export default function EmailSignatureGenerator() {
 
                 {(config.jobTitle.trim() || config.company.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterTitle') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-mid text-sm!">{t.spacing.afterTitle}</span>
+                    <span className="text-[14px]! font-medium">{t.spacing.afterTitle}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1521,11 +1360,11 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
                         aria-label="Zmniejsz odstęp"
                       >
-                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
+                        <RiSubtractLine className="h-4 w-4 text-primary" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterTitle} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterTitle', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-800" />
+                        <RiAddLine className="h-4 w-4 text-primary" />
                       </button>
                     </div>
                   </div>
@@ -1533,7 +1372,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.extraLine.trim() && LAYOUT_SPACING_MAP[layout].includes('afterExtra') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-mid text-sm!">{t.spacing.afterExtra}</span>
+                    <span className="text-[14px]! font-medium">{t.spacing.afterExtra}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1541,11 +1380,11 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
                         aria-label="Zmniejsz odstęp"
                       >
-                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
+                        <RiSubtractLine className="h-4 w-4 text-primary" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterExtra} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterExtra', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-800" />
+                        <RiAddLine className="h-4 w-4 text-primary" />
                       </button>
                     </div>
                   </div>
@@ -1553,7 +1392,7 @@ export default function EmailSignatureGenerator() {
 
                 {(config.email.trim() || config.phone.trim() || config.website.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterContact') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-mid text-sm!">{t.spacing.afterContact}</span>
+                    <span className="text-[14px]! font-medium">{t.spacing.afterContact}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1561,7 +1400,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
                         aria-label="Zmniejsz odstęp"
                       >
-                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
+                        <RiSubtractLine className="h-4 w-4 text-primary" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterContact} px</span>
                       <button
@@ -1570,7 +1409,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
                         aria-label="Zwiększ odstęp"
                       >
-                        <RiAddLine className="h-4 w-4 text-slate-800" />
+                        <RiAddLine className="h-4 w-4 text-primary" />
                       </button>
                     </div>
                   </div>
@@ -1578,7 +1417,7 @@ export default function EmailSignatureGenerator() {
 
                 {Object.values(config.socials).some((url) => url.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterSocials') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-mid text-sm!">{t.spacing.afterSocials}</span>
+                    <span className="text-[14px]! font-medium">{t.spacing.afterSocials}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1586,7 +1425,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
                         aria-label="Zmniejsz odstęp"
                       >
-                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
+                        <RiSubtractLine className="h-4 w-4 text-primary" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterSocials} px</span>
                       <button
@@ -1595,7 +1434,7 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
                         aria-label="Zwiększ odstęp"
                       >
-                        <RiAddLine className="h-4 w-4 text-slate-800" />
+                        <RiAddLine className="h-4 w-4 text-primary" />
                       </button>
                     </div>
                   </div>
@@ -1603,14 +1442,14 @@ export default function EmailSignatureGenerator() {
 
                 {config.ctaLabel.trim() && config.ctaUrl.trim() && LAYOUT_SPACING_MAP[layout].includes('afterCta') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-mid text-sm!">{t.spacing.afterCta}</span>
+                    <span className="text-[14px]! font-medium">{t.spacing.afterCta}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterCta', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
-                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
+                        <RiSubtractLine className="h-4 w-4 text-primary" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.afterCta} px</span>
                       <button type="button" onClick={() => handleSpacingChange('afterCta', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-800" />
+                        <RiAddLine className="h-4 w-4 text-primary" />
                       </button>
                     </div>
                   </div>
@@ -1618,7 +1457,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.legalNote.trim() && LAYOUT_SPACING_MAP[layout].includes('beforeLegal') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-mid text-sm!">{t.spacing.beforeLegal}</span>
+                    <span className="text-[14px]! font-medium">{t.spacing.beforeLegal}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1626,11 +1465,11 @@ export default function EmailSignatureGenerator() {
                         className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100"
                         aria-label="Zmniejsz odstęp"
                       >
-                        <RiSubtractLine className="h-4 w-4 text-slate-800" />
+                        <RiSubtractLine className="h-4 w-4 text-primary" />
                       </button>
                       <span className="w-10 text-center text-xs! font-medium">{spacingConfig.beforeLegal} px</span>
                       <button type="button" onClick={() => handleSpacingChange('beforeLegal', 2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zwiększ odstęp">
-                        <RiAddLine className="h-4 w-4 text-slate-800" />
+                        <RiAddLine className="h-4 w-4 text-primary" />
                       </button>
                     </div>
                   </div>
@@ -1640,13 +1479,13 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'legal' && (
               <div className="space-y-3">
-                <Eyebrow variant="dynamic" className="text-xs! font-semibold">
+                <span className="text-[14px]! font-medium">
                   {t.legal.title}
-                </Eyebrow>
+                </span>
                 <textarea
                   value={config.legalNote}
                   onChange={(e) => handleTextChange('legalNote', e.target.value)}
-                  className="w-full! rounded-xl border border-neutral-300 bg-white px-3! py-2! text-xs! focus:border-neutral-800 focus:outline-none"
+                  className="tool-textarea text-xs!"
                   rows={6}
                   placeholder={t.legal.placeholder}
                 />
@@ -1656,26 +1495,97 @@ export default function EmailSignatureGenerator() {
                     type="checkbox"
                     checked={styleConfig.showDivider}
                     onChange={(e) => handleStyleChange('showDivider', e.target.checked)}
-                    className="h-4! w-4! rounded border-neutral-300"
+                    className="tool-checkbox"
                   />
-                  <label htmlFor="divider-toggle" className="text-mid text-sm!">
+                  <label htmlFor="divider-toggle" className="text-[14px]! font-medium">
                     {t.legal.showDivider}
                   </label>
                 </div>
+                {styleConfig.showDivider && (
+                  <div className="space-y-3 border-t border-neutral-200 pt-3">
+                    <div>
+                      <p className="text-light mb-1 text-xs! font-medium uppercase">{t.legal.dividerStyle}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {(['solid', 'dashed', 'dotted'] as const).map((ds) => (
+                          <button
+                            key={ds}
+                            type="button"
+                            onClick={() => handleStyleChange('dividerStyle', ds)}
+                            className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.dividerStyle === ds ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                          >
+                            {ds === 'solid' && t.legal.dividerStyleSolid}
+                            {ds === 'dashed' && t.legal.dividerStyleDashed}
+                            {ds === 'dotted' && t.legal.dividerStyleDotted}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-light mb-1 text-xs! font-medium uppercase">{t.legal.dividerWidth}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {([1, 2, 3] as const).map((w) => (
+                          <button
+                            key={w}
+                            type="button"
+                            onClick={() => handleStyleChange('dividerWidth', w)}
+                            className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.dividerWidth === w ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                          >
+                            {w} px
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-light mb-1 text-xs! font-medium uppercase">{t.legal.dividerColor}</p>
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={() => handleStyleChange('dividerColor', '')}
+                          className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${!styleConfig.dividerColor ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                        >
+                          {t.legal.dividerColorDefault}
+                        </button>
+                        <div className="relative">
+                          <input
+                            type="color"
+                            value={styleConfig.dividerColor || '#e5e7eb'}
+                            onChange={(e) => handleStyleChange('dividerColor', e.target.value)}
+                            className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                          />
+                          <div
+                            className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded border-2 ${styleConfig.dividerColor ? 'border-mid' : 'border-neutral-300'}`}
+                            style={{ backgroundColor: styleConfig.dividerColor || '#e5e7eb' }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </div>
         </section>
 
-        <section className="tool-section flex min-h-[620px] flex-col space-y-4">
+        <section className="tool-section flex min-h-[620px] flex-col space-y-4 lg:sticky lg:top-24 lg:self-start">
           <div className="flex items-center justify-between gap-2">
             <div>
               <h2 className="h6">{t.preview.title}</h2>
               <p className="text-light text-xs!">{t.preview.helper}</p>
             </div>
+            <div className="flex gap-1">
+              <button type="button" onClick={() => setPreviewBg('light')} className={`rounded-md border p-1.5 ${previewBg === 'light' ? 'border-primary bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`} title={t.preview.bgLight}>
+                <RiSunLine className="h-4 w-4" />
+              </button>
+              <button type="button" onClick={() => setPreviewBg('dark')} className={`rounded-md border p-1.5 ${previewBg === 'dark' ? 'border-primary bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`} title={t.preview.bgDark}>
+                <RiMoonLine className="h-4 w-4" />
+              </button>
+              <button type="button" onClick={() => setPreviewBg('checker')} className={`rounded-md border p-1.5 ${previewBg === 'checker' ? 'border-primary bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`} title={t.preview.bgChecker}>
+                <RiGridLine className="h-4 w-4" />
+              </button>
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
+          <div className={`rounded-2xl border border-neutral-200 p-4 ${previewBg === 'dark' ? 'bg-neutral-800' : previewBg === 'checker' ? 'bg-[length:20px_20px] bg-[image:linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%),linear-gradient(45deg,#e5e7eb_25%,transparent_25%,transparent_75%,#e5e7eb_75%)] bg-[position:0_0,10px_10px] bg-white' : 'bg-neutral-50'}`}>
             <div className="mx-auto max-w-full overflow-x-auto">
               <div className="inline-block rounded-xl border border-neutral-200 bg-white px-4 py-4 text-sm!">
                 <div dangerouslySetInnerHTML={{ __html: signatureHtml }} />
@@ -1683,14 +1593,56 @@ export default function EmailSignatureGenerator() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2">
             <Button type="button" variant="accent" size="small" disabled={!hasRequired} onClick={handleCopyToGmail} className="disabled:opacity-60">
               {copyStatus === 'success' ? t.preview.copySuccess : copyStatus === 'error' ? t.preview.copyError : t.preview.copyButton}
+            </Button>
+            <Button type="button" variant="normal" size="small" disabled={!hasRequired} onClick={handleCopyRawHtml} className="disabled:opacity-60">
+              <RiCodeLine className="mr-1.5 inline-block text-base" />
+              {copyRawStatus === 'success' ? t.preview.copyRawSuccess : t.preview.copyRawButton}
+            </Button>
+            <Button type="button" variant="normal" size="small" disabled={!hasRequired} onClick={handleDownloadHtml} className="disabled:opacity-60">
+              <RiDownloadLine className="mr-1.5 inline-block text-base" />
+              {t.preview.downloadButton}
+            </Button>
+            <Button type="button" variant="normal" size="small" disabled={!hasRequired} onClick={() => setShowSourceModal(true)} className="disabled:opacity-60">
+              <RiEyeLine className="mr-1.5 inline-block text-base" />
+              {t.preview.viewSourceButton}
+            </Button>
+            <Button type="button" variant="normal" size="small" onClick={handleExportConfig}>
+              <RiShareForwardLine className="mr-1.5 inline-block text-base" />
+              {t.preview.exportConfig}
+            </Button>
+            <Button type="button" variant="normal" size="small" onClick={handleImportConfig}>
+              <RiUploadLine className="mr-1.5 inline-block text-base" />
+              {t.preview.importConfig}
             </Button>
             <Button type="button" variant="normal" size="small" onClick={() => setShowResetModal(true)}>
               {t.preview.resetButton}
             </Button>
           </div>
+
+          {showSourceModal && (
+            <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/30 px-4 backdrop-blur-[1px]" onClick={(e) => { if (e.target === e.currentTarget) setShowSourceModal(false); }} role="dialog" aria-modal="true">
+              <div className="w-full max-w-2xl overflow-hidden rounded-2xl bg-white p-6 shadow-xl ring-1 ring-black/5">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="h6">{t.preview.viewSourceTitle}</h3>
+                  <button type="button" onClick={() => setShowSourceModal(false)} className="rounded-md p-1.5 hover:bg-neutral-100">
+                    <RiCloseLine className="h-5 w-5" />
+                  </button>
+                </div>
+                <pre className="max-h-[60vh] overflow-auto rounded-lg bg-neutral-50 p-4 text-xs! leading-relaxed break-all whitespace-pre-wrap">{signatureHtml}</pre>
+                <div className="mt-4 flex gap-2">
+                  <Button type="button" variant="accent" size="small" onClick={() => { copyTextToClipboard(signatureHtml).then(() => { setSourceModalCopyStatus('success'); setTimeout(() => setSourceModalCopyStatus('idle'), 3000); }); }}>
+                    {sourceModalCopyStatus === 'success' ? t.preview.viewSourceCopied : t.preview.viewSourceCopy}
+                  </Button>
+                  <Button type="button" variant="normal" size="small" onClick={() => setShowSourceModal(false)}>
+                    {t.preview.viewSourceClose}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          )}
 
           <ConfirmModal isOpen={showResetModal} onClose={() => setShowResetModal(false)} onConfirm={handleReset} title={t.preview.resetModalTitle} description={t.preview.resetModalDescription} />
 

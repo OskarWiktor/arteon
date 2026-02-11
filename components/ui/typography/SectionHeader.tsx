@@ -33,12 +33,14 @@ export default function SectionHeader({
   return (
     <>
       {subtitle && (
-        <Eyebrow variant={eyebrowVariant} className={eyebrowClassName} id={subtitleId}>
-          {subtitle}
-        </Eyebrow>
+        <div className="mb-2 md:mb-4">
+          <Eyebrow variant={eyebrowVariant} className={eyebrowClassName} id={subtitleId}>
+            {subtitle}
+          </Eyebrow>
+        </div>
       )}
       {title && (
-        <TitleTag className={`${headingClassName} h4 mt-2`} id={titleId}>
+        <TitleTag className={`${headingClassName} h3 mb-4 md:mb-6 lg:mb-8`} id={titleId}>
           {title}
         </TitleTag>
       )}

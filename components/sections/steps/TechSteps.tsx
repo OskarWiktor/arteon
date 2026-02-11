@@ -7,7 +7,7 @@ const TechStepsItems = [
   {
     icon: <FaWordpress className="h-8 w-8" />,
     title: 'WordPress',
-    borderClassName: 'border-b-slate-800',
+    borderClassName: 'border-b-primary',
     description: (
       <>
         Popularne i elastyczne rozwiązanie. Sprawdza się w wizytówkach, małych sklepach i blogach. Łatwa edycja treści, tysiące gotowych wtyczek i motywów. W cenie dodatkowe zabezpieczenia oraz
@@ -18,7 +18,7 @@ const TechStepsItems = [
   {
     icon: <FaWebflow className="h-8 w-8" />,
     title: 'Webflow',
-    borderClassName: 'border-b-slate-800',
+    borderClassName: 'border-b-primary',
     description: (
       <>
         Międzynarodowy standard. Piękne animacje, pełna zgodność z WCAG 2.1 i wygodny panel edycji. Idealne dla marek, które stawiają na wizerunek, estetykę i prostą obsługę bez udziału programisty.
@@ -29,7 +29,7 @@ const TechStepsItems = [
   {
     icon: <SiNextdotjs className="h-8 w-8" />,
     title: 'Next.js',
-    borderClassName: 'border-b-slate-800',
+    borderClassName: 'border-b-primary',
     description: (
       <>
         Technologia klasy premium. Maksymalna wydajność, skalowalność i bezpieczeństwo. Sprawdza się przy niestandardowych funkcjach, integracjach z systemami zewnętrznymi oraz w sklepach i

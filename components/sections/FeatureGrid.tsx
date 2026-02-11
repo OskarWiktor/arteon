@@ -14,14 +14,25 @@ interface FeatureGridProps {
   subtitle?: ReactNode;
   description?: ReactNode;
   items: FeatureItem[];
-  columns?: 2 | 3;
+  columns?: 2 | 3 | 4 | 6 | 8;
+  variant?: 'default' | 'centered';
 }
 
-export default function FeatureGrid({ title, subtitle, description, items, columns = 2 }: FeatureGridProps) {
+const GRID_CLASSES: Record<2 | 3 | 4 | 6 | 8, string> = {
+  2: 'md:grid-cols-2',
+  3: 'md:grid-cols-2 lg:grid-cols-3',
+  4: 'sm:grid-cols-2 lg:grid-cols-4',
+  6: 'sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6',
+  8: 'sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8',
+};
+
+export default function FeatureGrid({ title, subtitle, description, items, columns = 2, variant = 'default' }: FeatureGridProps) {
   const sectionId = `featuregrid-${String(title)
     .toString()
     .toLowerCase()
     .replace(/[^a-z0-9]+/gi, '-')}`;
+
+  const gridClasses = GRID_CLASSES[columns];
 
   return (
     <section id={sectionId} aria-labelledby={`${sectionId}-h`} {...{ itemScope: true, itemType: 'https://schema.org/ItemList' }}>
@@ -32,16 +43,16 @@ export default function FeatureGrid({ title, subtitle, description, items, colum
         headingLevel="h2"
         eyebrowClassName=""
         subtitleId={`${sectionId}-sub`}
-        headingClassName="reveal-animation h4"
+        headingClassName=""
         titleId={`${sectionId}-h`}
-        descriptionClassName="reveal-animation mt-3"
+        descriptionClassName=""
       />
 
-      <ul className={`mt-6 grid gap-4 md:mt-8 lg:mt-10 ${columns === 3 ? 'md:grid-cols-2 lg:grid-cols-3' : 'md:grid-cols-2'}`} role="list">
+      <ul className={`grid gap-4 ${gridClasses}`} role="list">
         {items.map((item, idx) => (
           <li className="h-full" key={idx} {...{ itemProp: 'itemListElement', itemScope: true, itemType: 'https://schema.org/ListItem' }}>
             <meta itemProp="position" content={(idx + 1).toString()} />
-            <FeatureCard idx={idx} {...item} />
+            <FeatureCard idx={idx} {...item} variant={variant} />
           </li>
         ))}
       </ul>

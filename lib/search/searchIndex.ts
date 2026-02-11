@@ -118,25 +118,6 @@ function buildToolsIndex(): SearchItem[] {
   return items;
 }
 
-function buildToolInstructionsIndex(): SearchItem[] {
-  const items: SearchItem[] = [];
-
-  for (const section of TOOLS_SECTIONS_PL) {
-    for (const item of section.items) {
-      items.push({
-        title: `Instrukcja: ${item.title}`,
-        description: `Jak używać narzędzia ${item.title}`,
-        href: `${item.href}/instrukcja`,
-        category: 'narzedzia',
-        categoryLabel: 'Narzędzia',
-        keywords: ['instrukcja', 'jak używać', 'poradnik', section.title.toLowerCase()],
-      });
-    }
-  }
-
-  return items;
-}
-
 function buildAboutIndex(): SearchItem[] {
   return ABOUT_NAV_ITEMS_PL.map((item) => ({
     title: item.title,
@@ -176,7 +157,7 @@ let cachedIndex: SearchItem[] | null = null;
 export function getSearchIndex(): SearchItem[] {
   if (cachedIndex) return cachedIndex;
 
-  cachedIndex = [...STATIC_PAGES, ...buildServicesIndex(), ...buildToolsIndex(), ...buildToolInstructionsIndex(), ...buildAboutIndex(), ...buildBlogIndex(), ...buildProjectsIndex()];
+  cachedIndex = [...STATIC_PAGES, ...buildServicesIndex(), ...buildToolsIndex(), ...buildAboutIndex(), ...buildBlogIndex(), ...buildProjectsIndex()];
 
   return cachedIndex;
 }

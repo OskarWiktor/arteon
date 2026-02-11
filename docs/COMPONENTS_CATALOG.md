@@ -25,7 +25,7 @@ Struktura repo (w uproszczeniu):
 
 ### `RevealObserver` (`components/systems/RevealObserver.tsx`)
 
-- **Co robi**: Obserwuje elementy z klasą `reveal-animation` i przełącza klasę `is-inview` po wejściu do viewport (animacje „reveal”).
+- **Co robi**: Obserwuje elementy z klasą `` i przełącza klasę `is-inview` po wejściu do viewport (animacje „reveal”).
 - **Odpowiedzialności**:
   - **[IntersectionObserver]** obserwuje elementy, dodaje/usuwa klasę `is-inview`.
   - **[reduced motion]** pomija animacje, jeśli użytkownik ma włączone ograniczenie ruchu.

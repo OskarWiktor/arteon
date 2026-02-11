@@ -97,8 +97,11 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
   const sanitizedAvatarUrl = sanitizeSrcUrl(config.avatarUrl);
   const hasAvatar = sanitizedAvatarUrl.length > 0;
 
-  const avatarSize = 56;
-  const avatarImg = hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" />` : '';
+  const AVATAR_SIZE_MAP = { small: 40, medium: 56, large: 72 } as const;
+  const AVATAR_RADIUS_MAP = { circle: '999px', rounded: '8px', square: '0' } as const;
+  const avatarSize = AVATAR_SIZE_MAP[style.avatarSize] || 56;
+  const avatarRadius = AVATAR_RADIUS_MAP[style.avatarShape] || '999px';
+  const avatarImg = hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:${avatarRadius};display:block;" />` : '';
   const avatarCellInline = hasAvatar ? `<td style="padding-right:12px;vertical-align:top;">${avatarImg}</td>` : '';
 
   const telLabel = labels.tel;
@@ -141,6 +144,12 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     { key: 'tiktok', label: 'TikTok' },
     { key: 'youtube', label: 'YouTube' },
     { key: 'x', label: 'X' },
+    { key: 'github', label: 'GitHub' },
+    { key: 'dribbble', label: 'Dribbble' },
+    { key: 'behance', label: 'Behance' },
+    { key: 'whatsapp', label: 'WhatsApp' },
+    { key: 'telegram', label: 'Telegram' },
+    { key: 'pinterest', label: 'Pinterest' },
   ];
 
   const socialKeyToPlatform: Record<SocialKey, SocialPlatform> = {
@@ -150,6 +159,12 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     tiktok: 'tiktok',
     youtube: 'youtube',
     x: 'twitter',
+    github: 'github',
+    dribbble: 'dribbble',
+    behance: 'behance',
+    whatsapp: 'whatsapp',
+    telegram: 'telegram',
+    pinterest: 'pinterest',
   };
 
   const getIconColor = (): string | undefined => {
@@ -206,7 +221,10 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     ? `<tr><td style="padding-top:${spacing.beforeLegal}px;font-size:${legalFontSize};line-height:1.4;color:${legalColor};">${formatMultiline(config.legalNote.trim())}</td></tr>`
     : '';
 
-  const dividerHtml = style.showDivider ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:1px solid ${SIGNATURE_COLOR_DIVIDER};width:100%;"></div></td></tr>` : '';
+  const dividerColor = style.dividerColor || SIGNATURE_COLOR_DIVIDER;
+  const dividerWidth = style.dividerWidth || 1;
+  const dividerStyle = style.dividerStyle || 'solid';
+  const dividerHtml = style.showDivider ? `<tr><td style="padding-top:10px;padding-bottom:10px;"><div style="border-top:${dividerWidth}px ${dividerStyle} ${dividerColor};width:100%;"></div></td></tr>` : '';
 
   const formalHtml = hasFormalLine ? `<tr><td style="padding-top:6px;font-size:11px;line-height:1.4;color:${textColor};">${formatMultiline(config.formalLine.trim())}</td></tr>` : '';
 
@@ -274,7 +292,7 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     const bannerAvatar = hasAvatar
       ? `<td style="text-align:right;vertical-align:middle;"><img src="${escapeHtml(
           sanitizedAvatarUrl,
-        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;border:2px solid ${SIGNATURE_COLOR_WHITE};display:inline-block;" /></td>`
+        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:${avatarRadius};border:2px solid ${SIGNATURE_COLOR_WHITE};display:inline-block;" /></td>`
       : '';
 
     layoutWrapper = `
@@ -360,7 +378,7 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
     const avatarRowCentered = hasAvatar
       ? `<tr><td style="padding:0 0 8px 0;text-align:center;"><img src="${escapeHtml(
           sanitizedAvatarUrl,
-        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:inline-block;" /></td></tr>`
+        )}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:${avatarRadius};display:inline-block;" /></td></tr>`
       : '';
 
     layoutWrapper = `
@@ -413,7 +431,7 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:${fontFamily};font-size:${baseFontSize};color:${textColor};background-color:${backgroundColor};${borderStyle}">
         <tr>
           <td style="padding:${paddingAll};">
-            ${hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="32" height="32" style="border-radius:999px;vertical-align:middle;margin-right:10px;" />` : ''}${compactName}${compactTitle}${compactCompany}${compactContact}
+            ${hasAvatar ? `<img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="32" height="32" style="border-radius:${avatarRadius};vertical-align:middle;margin-right:10px;" />` : ''}${compactName}${compactTitle}${compactCompany}${compactContact}
             ${socialLinks.length ? `<div style="margin-top:${spacing.afterSocials}px;color:${socialsColor};font-size:${socialsFontSize};">${socialLinks.join('')}</div>` : ''}
             ${config.legalNote.trim() ? `<div style="margin-top:${spacing.beforeLegal}px;font-size:${legalFontSize};color:${legalColor};">${formatMultiline(config.legalNote.trim())}</div>` : ''}
           </td>
@@ -423,7 +441,7 @@ export function buildSignatureHtml(config: SignatureConfig, style: StyleConfig, 
   } else if (layout === 'two-column') {
     const leftColumn = `
       <td style="vertical-align:top;padding-right:20px;">
-        ${hasAvatar ? `<div style="margin-bottom:8px;"><img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:999px;display:block;" /></div>` : ''}
+        ${hasAvatar ? `<div style="margin-bottom:8px;"><img src="${escapeHtml(sanitizedAvatarUrl)}" alt="" width="${avatarSize}" height="${avatarSize}" style="border-radius:${avatarRadius};display:block;" /></div>` : ''}
         ${hasTopLine ? `<div style="font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:${textColor};margin-bottom:4px;">${escapeHtml(config.topLine.trim())}</div>` : ''}
         <div style="font-size:${nameFontSize};font-weight:bold;color:${nameColor};margin-bottom:${spacing.afterName}px;">${escapeHtml(config.fullName || '')}${hasNameTag ? `<span style="margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid ${SIGNATURE_COLOR_DIVIDER};font-size:10px;color:${textColor};">${escapeHtml(config.nameTag.trim())}</span>` : ''}</div>
         ${hasJobTitle || hasCompany ? `<div style="margin-bottom:${spacing.afterTitle}px;">${hasJobTitle ? `<span style="color:${jobTitleColor};font-size:${jobTitleFontSize};">${escapeHtml(config.jobTitle.trim())}</span>` : ''}${hasJobTitle && hasCompany ? ' · ' : ''}${hasCompany ? `<span style="color:${companyColor};font-size:${companyFontSize};">${escapeHtml(config.company.trim())}</span>` : ''}</div>` : ''}

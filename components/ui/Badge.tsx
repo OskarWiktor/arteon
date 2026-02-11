@@ -51,18 +51,18 @@ export default function Badge({ children, text, variant, size, as: Component, cl
 
   const variantClasses: Record<BadgeVariant, string> = {
     default: 'border border-neutral-300 bg-white text-mid',
-    selected: 'border border-black bg-slate-800 text-white',
-    success: 'bg-emerald-100 text-emerald-700',
-    error: 'bg-red-100 text-red-700',
-    neutral: 'bg-slate-100 text-slate-800',
+    selected: 'border border-black bg-primary text-white',
+    success: 'bg-success-bg text-success-text',
+    error: 'bg-error-bg text-error-text',
+    neutral: 'bg-primary-light text-primary',
     dark: 'bg-neutral-900 text-white',
-    warning: 'bg-amber-100 text-amber-700',
-    info: 'bg-blue-100 text-blue-700',
-    tech: 'rounded-lg! border border-slate-200 bg-white',
+    warning: 'bg-warning-bg text-warning-text',
+    info: 'bg-info-bg text-info-mid',
+    tech: 'rounded-lg! border border-primary-light bg-white',
   };
 
   const baseClasses = 'inline-flex items-center rounded-full font-medium';
-  const hoverClasses = ResolvedComponent !== 'span' && !disabled ? 'cursor-pointer hover:border-neutral-500' : '';
+  const hoverClasses = ResolvedComponent !== 'span' && !disabled ? 'cursor-pointer hover:border-light' : '';
   const disabledClasses = disabled ? 'cursor-not-allowed opacity-40' : '';
   const classes = `${baseClasses} ${sizeClasses[resolvedSize]} ${variantClasses[resolvedVariant]} ${hoverClasses} ${disabledClasses} ${className}`;
 

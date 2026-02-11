@@ -7,22 +7,29 @@ type EventType = MouseEvent | TouchEvent;
 
 type Handler = (event: EventType) => void;
 
-export function useOutsideClick<T extends HTMLElement>(ref: RefObject<T | null>, handler: Handler, enabled: boolean = true) {
+export function useOutsideClick(ref: RefObject<HTMLElement | null> | RefObject<HTMLElement | null>[], handler: Handler, enabled: boolean = true) {
   const handlerRef = useRef(handler);
+  const refsRef = useRef(ref);
 
   useEffect(() => {
     handlerRef.current = handler;
-  }, [handler]);
+    refsRef.current = ref;
+  });
 
   useEffect(() => {
     if (!enabled) return;
 
     const onPointerDown = (e: EventType) => {
-      const el = ref.current;
-      if (!el) return;
+      const refs = Array.isArray(refsRef.current) ? refsRef.current : [refsRef.current];
       const target = e.target as Node | null;
       if (!target) return;
-      if (!el.contains(target)) handlerRef.current(e);
+
+      for (const r of refs) {
+        const el = r.current;
+        if (el && el.contains(target)) return;
+      }
+
+      handlerRef.current(e);
     };
 
     document.addEventListener('mousedown', onPointerDown);
@@ -31,5 +38,5 @@ export function useOutsideClick<T extends HTMLElement>(ref: RefObject<T | null>,
       document.removeEventListener('mousedown', onPointerDown);
       document.removeEventListener('touchstart', onPointerDown);
     };
-  }, [enabled, ref]);
+  }, [enabled]);
 }

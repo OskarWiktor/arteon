@@ -1,10 +1,10 @@
 User-agent: *
-Disallow: /_next/
+Allow: /_next/static/
 Allow: /_next/image
+Disallow: /_next/data/
 Disallow: /api/
 Disallow: /fonts/
 Disallow: /favicon.ico
-Disallow: /*.json$
 
 Host: https://www.arteonagency.pl
 

@@ -30,7 +30,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
         </div>
         {error.digest && (
           <p className="text-light mt-8 text-xs">
-            Kod błędu: <code className="rounded bg-gray-100 px-2 py-1">{error.digest}</code>
+            Kod błędu: <code className="rounded bg-neutral-100 px-2 py-1">{error.digest}</code>
           </p>
         )}
       </div>

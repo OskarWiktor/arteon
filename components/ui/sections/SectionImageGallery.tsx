@@ -36,7 +36,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
     <section data-section="image-gallery" aria-labelledby={title ? 'gallery-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="gallery-title" className="h4 reveal-animation mb-6">
+          <h2 id="gallery-title" className="h3 mb-4 md:mb-6 lg:mb-8">
             {title}
           </h2>
         )}
@@ -47,7 +47,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
               key={index}
               type="button"
               onClick={() => openLightbox(index)}
-              className="group relative aspect-square overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
+              className="group relative aspect-square overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" />
               {image.title && (
@@ -62,7 +62,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
 
       {lightboxIndex !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onClick={closeLightbox} role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
-          <button type="button" onClick={closeLightbox} className="absolute top-4 right-4 text-white hover:text-gray-300" aria-label="Zamknij">
+          <button type="button" onClick={closeLightbox} className="absolute top-4 right-4 text-white hover:text-neutral-300" aria-label="Zamknij">
             <RiCloseLine className="h-8 w-8" />
           </button>
 
@@ -72,7 +72,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
               e.stopPropagation();
               goToPrev();
             }}
-            className="absolute left-4 text-white hover:text-gray-300"
+            className="absolute left-4 text-white hover:text-neutral-300"
             aria-label="Poprzednie zdjęcie"
           >
             <RiArrowLeftLine className="h-8 w-8" />
@@ -89,7 +89,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
               e.stopPropagation();
               goToNext();
             }}
-            className="absolute right-4 text-white hover:text-gray-300"
+            className="absolute right-4 text-white hover:text-neutral-300"
             aria-label="Następne zdjęcie"
           >
             <RiArrowRightLine className="h-8 w-8" />

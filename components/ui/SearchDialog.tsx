@@ -158,8 +158,8 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
             transition={{ duration: 0.15 }}
             className="w-full max-w-xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5"
           >
-            <div className="flex items-center gap-2 border-b border-gray-200 px-4 py-1">
-              <RiSearchLine className="h-4 w-4 shrink-0 text-slate-800" aria-hidden="true" />
+            <div className="flex items-center gap-2 border-b border-neutral-200 px-4 py-1">
+              <RiSearchLine className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
               <input
                 ref={inputRef}
                 type="text"
@@ -170,7 +170,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
                 className="text-mid placeholder:text-light h-7 flex-1 bg-transparent text-sm placeholder:opacity-80 focus:outline-none"
                 aria-label="Wyszukaj"
               />
-              <button type="button" onClick={onClose} className="rounded p-0.5 text-slate-800 hover:bg-slate-100" aria-label="Zamknij">
+              <button type="button" onClick={onClose} className="rounded p-0.5 text-primary hover:bg-primary-light" aria-label="Zamknij">
                 <RiCloseLine className="h-4 w-4" />
               </button>
             </div>
@@ -203,7 +203,7 @@ function SearchResultItem({ item, isActive, dataIndex, onClick }: SearchResultIt
         <div className="text-dark truncate text-sm font-medium">{item.title}</div>
         {item.description && <div className="text-light truncate text-xs">{item.description}</div>}
       </div>
-      <RiArrowRightLine className={`h-4 w-4 shrink-0 text-slate-800 transition ${isActive ? 'translate-x-0.5 opacity-100' : 'opacity-0 group-hover:opacity-50'}`} aria-hidden="true" />
+      <RiArrowRightLine className={`h-4 w-4 shrink-0 text-primary transition ${isActive ? 'translate-x-0.5 opacity-100' : 'opacity-0 group-hover:opacity-50'}`} aria-hidden="true" />
     </button>
   );
 }

@@ -4,7 +4,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import ContactForm from '@/components/sections/ContactForm';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -26,22 +26,22 @@ export const metadata = {
   title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
   description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed. Szybsze ładowanie, lepsze Core Web Vitals.',
   alternates: {
-    canonical: 'https://www.arteonagency.pl/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
+    canonical: 'https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
   },
   openGraph: {
     title: 'Optymalizacja strony WordPress - wynik 90+/100 lub brak opłaty | Arteon',
     description: 'Optymalizacja stron WordPress z gwarancją wyniku 90+/100 w PageSpeed. Szybsze ładowanie, lepsze Core Web Vitals.',
-    url: `${BASE}/uslugi/strony-internetowe/optymalizacja-strony-wordpress`,
+    url: `${BASE}/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress`,
     type: 'website',
     siteName: 'Arteon',
-    images: [{ url: `${BASE}/assets/projects/arteon-baners-camper-albania-mockup.webp` }],
+    images: [{ url: `${BASE}/assets/projects/arteon-baners-camper-albania-mockup.webp`, width: 1200, height: 630 }],
   },
 } as const;
 
 function ServiceSchema() {
   const json = buildServiceSchema({
     baseUrl: BASE,
-    path: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
+    path: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
     serviceName: 'Optymalizacja strony WordPress',
     description: 'Optymalizacja stron WordPress z naciskiem na wydajność, stabilność i wersję mobilną. Strona zyskuje lepsze wyniki w testach szybkości i solidne podstawy pod SEO.',
     availableLanguages: ['pl'],
@@ -79,15 +79,15 @@ export default function OfferOptimizationWordPressPage() {
           { icon: <RiSpeedFill />, label: 'Wynik 90+/100 w PageSpeed*' },
           { icon: <RiShieldCheckLine />, label: 'Faktura po realizacji' },
           { icon: <RiDeviceLine />, label: 'Lepsza wersja mobilna' },
-          { icon: <RiBarChart2Fill />, label: 'Raport „przed i po”' },
+          { icon: <RiBarChart2Fill />, label: 'Raport „przed i po"' },
         ]}
       />
 
       <Breadcrumbs
         second={{ href: '/uslugi', label: 'Usługi' }}
-        third={{ href: '/uslugi/strony-internetowe', label: 'Strony internetowe' }}
+        third={{ href: '/uslugi/tworzenie-stron-wordpress', label: 'Tworzenie stron WordPress' }}
         fourth={{
-          href: '/uslugi/strony-internetowe/optymalizacja-strony-wordpress',
+          href: '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
           label: 'Optymalizacja strony WordPress',
         }}
         includeJsonLd
@@ -143,7 +143,7 @@ export default function OfferOptimizationWordPressPage() {
                   Google, szczególnie na urządzeniach mobilnych.
                 </>
               ),
-              icon: <RiSpeedFill className="h-6 w-6 text-slate-800" />,
+              icon: <RiSpeedFill className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Porządki we wtyczkach i motywie',
@@ -153,7 +153,7 @@ export default function OfferOptimizationWordPressPage() {
                   przy dalszych aktualizacjach.
                 </>
               ),
-              icon: <RiToolsLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiToolsLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Obrazy dopasowane do urządzeń',
@@ -163,12 +163,12 @@ export default function OfferOptimizationWordPressPage() {
                   witryny.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wersja mobilna i wygoda korzystania',
               description: <>Korygowane są marginesy, czcionki i przyciski na telefonach. Efekt: strona jest czytelna, łatwa w obsłudze i lepiej przygotowana na ruch z urządzeń mobilnych.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -193,7 +193,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionSteps
           title="Jak przebiega optymalizacja strony WordPress?"
-          subtitle="Proces krok po kroku"
+          subtitle="Etapy współpracy"
           items={[
             {
               title: '1. Krótkie rozpoznanie i dostęp do strony',
@@ -218,12 +218,12 @@ export default function OfferOptimizationWordPressPage() {
               ),
             },
             {
-              title: '3. Wdrożenie zmian i testy „przed i po”',
+              title: '3. Wdrożenie zmian i testy „przed i po"',
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3 text-sm">
                     Wprowadzane są uzgodnione zmiany, konfiguracja cache oraz optymalizacja grafik. Następnie wykonywane są testy szybkości i stabilności, a wyniki prezentowane są w formie porównania
-                    „przed i po”.
+                    „przed i po".
                   </p>
                 </div>
               ),
@@ -263,25 +263,24 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionPrices
           title="Cennik optymalizacji strony WordPress"
-          subtitle="Przykładowe zakresy i widełki cenowe"
           plans={[
             {
               name: 'Optymalizacja WordPress: strona firmowa',
-              price: 'od 450 do 650 zł netto',
+              price: 'od 450 do 650 zł',
               description: 'Dla prostych stron firmowych i landing page, gdzie potrzebne jest przyspieszenie ładowania oraz porządki we wtyczkach.',
               features: [
                 'Analiza stanu technicznego WordPressa i hostingu',
                 'Konfiguracja cache i optymalizacja kluczowych zasobów',
                 'Porządki we wtyczkach (usunięcie zbędnych dodatków)',
                 'Optymalizacja wybranych grafik i podstawowe poprawki wersji mobilnej',
-                'Raport „przed i po” z wynikami testów szybkości',
+                'Raport „przed i po" z wynikami testów szybkości',
               ],
               btnOne: 'Poproś o wycenę w tym przedziale',
               btnOneLink: '#kontakt',
             },
             {
               name: 'Optymalizacja WordPress: rozbudowana witryna',
-              price: 'od 650 do 850 zł netto',
+              price: 'od 650 do 850 zł',
               description: 'Dla stron z większą liczbą podstron lub rozbudowaną strukturą, gdzie liczy się wydajność, wersja mobilna i dalszy rozwój.',
               features: [
                 'Wszystko z pakietu dla stron firmowych, a dodatkowo:',
@@ -294,7 +293,7 @@ export default function OfferOptimizationWordPressPage() {
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Większość realizacji mieści się w przedziale 450-850 zł netto. Ostateczna wycena zależy od wielkości strony, hostingu oraz stanu wyjściowego WordPressa. Przed rozpoczęciem prac przedstawiany jest jasny zakres działań, szacowany wynik oraz zasady rozliczenia przy braku możliwości osiągnięcia 90+/100."
+          legalNote="Większość realizacji mieści się w przedziale 450-850 zł. Ostateczna wycena zależy od wielkości strony, hostingu oraz stanu wyjściowego WordPressa. Przed rozpoczęciem prac przedstawiamy jasny zakres działań, szacowany wynik oraz zasady rozliczenia przy braku możliwości osiągnięcia 90+/100."
         />
 
         <Gap variant="line" />
@@ -333,7 +332,7 @@ export default function OfferOptimizationWordPressPage() {
               title: 'Audyt SEO',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Kompleksowa diagnoza widoczności strony w Google oraz plan działań na kolejne miesiące. Dobry krok po optymalizacji technicznej WordPressa.</p>
+                  <p className="mb-3 text-sm">Pełna diagnoza widoczności strony w Google oraz plan działań na kolejne miesiące. Dobry krok po optymalizacji technicznej WordPressa.</p>
                   <div className="mt-auto">
                     <a href="/uslugi/marketing/audyt-seo" className="inline-link text-sm">
                       Zobacz audyt SEO
@@ -348,9 +347,11 @@ export default function OfferOptimizationWordPressPage() {
 
         <Gap size="sm" />
 
-        <ContactForm
-          title="Sprawdź swoją stronę WordPress"
-          description="Podaj adres strony WordPress i krótko opisz, co najbardziej przeszkadza w jej działaniu (szybkość, wersja mobilna, błędy). W odpowiedzi otrzymasz propozycję zakresu prac, widełki cenowe 450-850 zł netto oraz informację, czy przy Twoim hostingu i motywie możliwe jest osiągnięcie wyniku 90+/100."
+        <SectionContactForm
+          title="Sprawdź koszt optymalizacji strony WordPress"
+          description="Podaj adres swojej strony WordPress i napisz co najbardziej przeszkadza w jej działaniu (szybkość, wersja mobilna, błędy) - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-wynik-optymalizacji-witryny-w-pagespeed-dla-urzadzen-mobilnych.webp"
+          imageAlt="Wynik optymalizacji strony WordPress w PageSpeed Insights"
           defaultSubject="Kampania - optymalizacja strony WordPress"
         />
 
@@ -358,8 +359,8 @@ export default function OfferOptimizationWordPressPage() {
 
         <FaqPanels
           openByDefault={1}
-          pageUrl="https://www.arteonagency.pl/uslugi/strony-internetowe/optymalizacja-strony-wordpress"
-          title="Najczęstsze pytania o optymalizację WordPress"
+          pageUrl="https://www.arteonagency.pl/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress"
+          title="Najczęstsze pytania dotyczące optymalizacji stron internetowych w WordPress"
           items={[
             {
               question: 'Czy w każdym przypadku da się osiągnąć wynik 90+/100 w PageSpeed?',
@@ -392,10 +393,9 @@ export default function OfferOptimizationWordPressPage() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiBarChart2Fill className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'large',
@@ -404,30 +404,27 @@ export default function OfferOptimizationWordPressPage() {
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              icon: <RiDeviceLine className="h-6 w-6" />,
-              title: 'Strony internetowe',
-              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
+              title: 'Strony WordPress',
+              description: 'Strona firmowa z gwarancją wydajności 90+/100',
               size: 'medium',
-              backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
+              backgroundImage: '/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-mockup-realizacja-arteon.webp',
               btnLabel: 'Zobacz ofertę',
-              btnLink: '/uslugi/strony-internetowe',
+              btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
-              icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Audyt SEO',
               description: 'Diagnoza stanu optymalizacji witryny',
               size: 'small',
               backgroundImage: '/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/audyt-seo',
             },
             {
-              icon: <RiToolsLine className="h-6 w-6" />,
               title: 'Optymalizacja SEO',
               description: 'Wdrożenia po audycie dla lepszych wyników',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-camper-albania-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/optymalizacja-seo',
             },
           ]}

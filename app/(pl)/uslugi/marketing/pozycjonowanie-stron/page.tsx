@@ -4,8 +4,16 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiComputerLine, RiShoppingCartLine, RiArticleLine, RiPencilLine, RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiLineChartLine, RiSearchLine, RiFileList2Line, RiLinksFill } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiShieldCheckLine,
+  RiLineChartLine,
+  RiSearchLine,
+  RiFileList2Line,
+  RiLinksFill,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -18,6 +26,8 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Pozycjonowanie stron - stały wzrost widoczności i zapytań | Arteon',
@@ -28,7 +38,7 @@ export const metadata = {
     description: 'Budujemy widoczność w Google miesiąc po miesiącu. Strategia treści, uporządkowany on-page i bezpieczne linki. Raport co miesiąc.',
     url: 'https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -86,7 +96,7 @@ export default function OfferSeoSubscription() {
         <SectionInfo title="Na czym polega pozycjonowanie stron i dlaczego działa?">
           <p>
             <strong>Pozycjonowanie SEO stron to praca polegająca na rozwijaniu Twojego serwisu w celu uzyskania jak najwyższej pozycji w wyszukiwarce Google.</strong> Nasza oferta pozycjonowania to
-            kompleksowy system: rozwijamy treści, poprawiamy kluczowe podstrony, pozyskujemy linki, które wzmacniają wiarygodność domeny oraz stale dodajemy nowe strony abyś miał coraz więcej
+            spójny system: rozwijamy treści, poprawiamy kluczowe podstrony, pozyskujemy linki, które wzmacniają wiarygodność domeny oraz stale dodajemy nowe strony abyś miał coraz więcej
             klientów. Dzięki temu Twoja witryna częściej pojawia się tam, gdzie szukają Cię klienci.
           </p>
           <br />
@@ -124,27 +134,27 @@ export default function OfferSeoSubscription() {
             {
               title: 'Strategia treści',
               description: <>Wybieramy tematy, które odpowiadają na pytania klientów i tworzymy odpowiednie treści, budując Twoją widoczność tam, gdzie szukają Cię klienci.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Poprawa kluczowych podstron (on-page)',
               description: (
                 <>
-                  Analizujemy Twoją konkurencję i dopracowujemy istniejące podstrony: nagłówki, tytuły, dodatkowe opisy oraz elementy. Dzięki temu strony są lepiej dopasowane do realnych zapytań
+                  Analizujemy Twoją konkurencję i dopracowujemy istniejące podstrony: nagłówki, tytuły, dodatkowe opisy oraz elementy - tak, by strony były lepiej dopasowane do realnych zapytań
                   użytkowników.
                 </>
               ),
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Bezpieczne linki z wartościowych miejsc',
-              description: <>Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły branżowe, katalogi), dzięki temu autorytet Twojej witryny rośnie</>,
-              icon: <RiLinksFill className="h-6 w-6 text-slate-800" />,
+              description: <>Pozyskujemy odnośniki z miejsc, które mają sens dla Twojej branży (np. artykuły branżowe, katalogi) - to wzmacnia autorytet Twojej witryny</>,
+              icon: <RiLinksFill className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Monitoring i raport co miesiąc',
               description: <>Sprawdzamy widoczność, wejścia z Google i zapytania z WWW. Dostajesz prosty raport i rekomendacje na kolejny miesiąc.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-800" />,
+              icon: <RiBarChart2Fill className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -186,7 +196,7 @@ export default function OfferSeoSubscription() {
               title: '2. Optymalizacja SEO',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby Google uznał ją za wartościową</p>
+                  <p className="mb-3 text-sm">Optymalizujemy prędkość strony i poprawiamy ją od strony technicznej tak, aby Google uznał ją za wartościową.</p>
                 </div>
               ),
             },
@@ -202,7 +212,7 @@ export default function OfferSeoSubscription() {
               title: '4. Raport i plan na kolejny miesiąc',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Omawiamy wyniki i rekomendujemy kolejne kroki. Dzięki temu praca jest przewidywalna i skuteczna.</p>
+                  <p className="mb-3 text-sm">Omawiamy wyniki i rekomendujemy kolejne kroki, żeby praca była przewidywalna i skuteczna.</p>
                 </div>
               ),
             },
@@ -214,7 +224,6 @@ export default function OfferSeoSubscription() {
 
         <SectionPrices
           title="Pakiety pozycjonowania"
-          subtitle="Miesięczne plany"
           plans={[
             {
               name: 'SEO Start',
@@ -272,7 +281,7 @@ export default function OfferSeoSubscription() {
             ctaLabel: 'Skonsultuj potrzeby',
             ctaLink: '#kontakt',
           }}
-          legalNote="Ceny orientacyjne brutto. Zakres oraz intensywność działań dopasowujemy do branży, celów i technologii witryny. Utrzymujemy ceny około 20-30% niższe od średniej rynkowej."
+          legalNote="Ceny orientacyjne. Zakres oraz intensywność działań dopasowujemy do branży, celów i technologii witryny."
         />
 
         <Gap variant="line" />
@@ -324,9 +333,11 @@ export default function OfferSeoSubscription() {
 
         <Gap size="sm" />
 
-        <ContactForm
-          title="Zamów pozycjonowanie strony"
-          description="Podaj adres swojej witryny. Przygotujemy plan działań i wycenę dopasowaną do Twojej branży."
+        <SectionContactForm
+          title="Sprawdź koszt pozycjonowania strony"
+          description="Podaj adres swojej strony i napisz jakie frazy są dla Ciebie kluczowe - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp"
+          imageAlt="Pozycjonowanie stron - widoczność w Google"
           defaultSubject="Pozycjonowanie stron"
         />
 
@@ -334,6 +345,7 @@ export default function OfferSeoSubscription() {
 
         <FaqPanels
           openByDefault={1}
+          title="Najczęstsze pytania dotyczące pozycjonowania stron"
           pageUrl="https://www.arteonagency.pl/uslugi/marketing/pozycjonowanie-stron"
           items={[
             {
@@ -363,10 +375,9 @@ export default function OfferSeoSubscription() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
@@ -375,7 +386,6 @@ export default function OfferSeoSubscription() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
@@ -384,26 +394,28 @@ export default function OfferSeoSubscription() {
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              icon: <RiPencilLine className="h-6 w-6" />,
               title: 'Tworzenie treści',
               description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-tresci',
             },
             {
-              icon: <RiArticleLine className="h-6 w-6" />,
               title: 'Blogi internetowe',
               description: 'Buduj autorytet i pozycję w Google',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/blogi-internetowe',
             },
           ]}
         />
 
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące SEO" categorySlug="seo" articles={getAllArticlePreviews()} />
+        
         <Gap size="sm" />
       </Wrapper>
 

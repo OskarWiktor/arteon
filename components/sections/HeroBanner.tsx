@@ -1,9 +1,9 @@
+import Image from 'next/image';
 import Button from '../ui/buttons/Button';
 import ButtonGroup from '../ui/buttons/ButtonGroup';
 import Eyebrow from '../ui/typography/Eyebrow';
 import type { ReactNode } from 'react';
 import Wrapper from '../ui/Wrapper';
-import { toAbsoluteUrl } from '@/lib/absoluteUrl';
 
 function getFallbackAltFromImagePath(imagePath: string): string | undefined {
   const filename = imagePath.split('/').pop();
@@ -95,24 +95,32 @@ export default function HeroBanner({
     { text: buttonTopFour, link: buttonTopFourLink },
   ].filter(({ text }) => Boolean(text));
 
-  const absoluteImageUrl = backgroundImage ? toAbsoluteUrl(backgroundImage) : undefined;
-  const computedBackgroundAlt = backgroundImageAlt || (typeof title === 'string' ? title : undefined) || (backgroundImage ? getFallbackAltFromImagePath(backgroundImage) : undefined);
+  const computedBackgroundAlt = backgroundImageAlt || (typeof title === 'string' ? title : undefined) || (backgroundImage ? getFallbackAltFromImagePath(backgroundImage) : undefined) || '';
 
   return (
     <div className={baseBg}>
-      {absoluteImageUrl && computedBackgroundAlt && <img className="sr-only" src={absoluteImageUrl} alt={computedBackgroundAlt} itemProp={emitImageMicrodata ? 'image' : undefined} />}
       <section
         id="hero"
         aria-labelledby="hero-title"
         aria-describedby={description ? 'hero-description' : undefined}
-        className={`relative ${hasBg ? 'bg-cover bg-center md:bg-fixed' : ''} ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[480px]`}
-        style={hasBg ? { backgroundImage: `url(${backgroundImage})` } : undefined}
+        className={`relative ${baseBg} flex h-auto min-h-[400px] items-center overflow-hidden py-10 md:min-h-[440px] md:py-0 lg:min-h-[460px]`}
       >
+        {hasBg && backgroundImage && (
+          <Image
+            src={backgroundImage}
+            alt={computedBackgroundAlt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+            itemProp={emitImageMicrodata ? 'image' : undefined}
+          />
+        )}
         {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}
         <Wrapper className="relative flex h-auto items-center">
           <div className={`max-w-[100vw] md:max-w-[65%] ${contentAnchor} ${textAlign} ${toneTextClass} rounded-2xl p-5 pt-4 md:p-7 ${contentBgClass} hyphens-auto`}>
             {subtitle && (
-              <Eyebrow variant="hero" className={`reveal-animation ${toneMutedClass}`}>
+              <Eyebrow variant="hero" className={` ${toneMutedClass}`}>
                 {subtitle}
               </Eyebrow>
             )}
@@ -130,12 +138,12 @@ export default function HeroBanner({
               </nav>
             )}
             {title && (
-              <h1 id="hero-title" className="reveal-animation text-wrap:pretty text-wrap">
+              <h1 id="hero-title" className=" text-wrap:pretty text-wrap">
                 {title}
               </h1>
             )}
             {description && (
-              <p id="hero-description" className={`reveal-animation text-wrap:pretty mt-3 text-base leading-relaxed md:mt-5 ${isDarkOverlay ? 'text-white' : 'text-dark opacity-80'}`}>
+              <p id="hero-description" className={` text-wrap:pretty mt-3 text-base leading-relaxed md:mt-5 ${isDarkOverlay ? 'text-white' : 'text-dark opacity-80'}`}>
                 {description}
               </p>
             )}

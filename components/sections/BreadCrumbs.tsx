@@ -48,19 +48,19 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
       <nav aria-label={t.ariaLabel} className={`py-6 ${className}`}>
         <nav className="flex flex-wrap items-center gap-2 text-sm">
           <AppLink href="/" variant="default" display="inline" aria-label={t.home} className="shrink-0">
-            <RiHomeLine className="text-medium h-4 w-4 text-slate-400" />
+            <RiHomeLine className="text-medium h-4 w-4 text-primary-mid" />
           </AppLink>
           {items.slice(1).map((it, idx) => {
             const isLast = idx === items.slice(1).length - 1;
             return (
-              <span key={`${it.href}-${idx}`} className="!text-medium flex items-center gap-2 text-slate-400">
+              <span key={`${it.href}-${idx}`} className="!text-medium flex items-center gap-2 text-primary-mid">
                 /
                 {isLast ? (
-                  <span className="text-medium text-slate-800" aria-current="page">
+                  <span className="text-medium text-primary" aria-current="page">
                     {it.label}
                   </span>
                 ) : (
-                  <AppLink href={it.href} variant="default" display="inline" className="!text-[14px] !text-slate-400">
+                  <AppLink href={it.href} variant="default" display="inline" className="!text-[14px] !text-primary-mid">
                     {it.label}
                   </AppLink>
                 )}

@@ -2,14 +2,70 @@
 @import '@fontsource-variable/instrument-sans/index.css';
 
 :root {
-  --background: #f1f1f1;
-  --foreground: #080808;
-  --text-light: #5e5e5e;
-  --text-mid: #2b2b2b;
-  --surface-dark: #0b0b0c;
-  --surface-dark-2: #121215;
-  --text-on-dark: #e7e7ea;
   --font-sans: 'Instrument Sans Variable';
+
+  /* ══════════════════════════════════════════════════════════════
+     AKTYWNA PALETA - „Arteon Classic"
+     Granat + złoty/bursztynowy. Profesjonalnie, premium.
+     Aby przełączyć paletę: zakomentuj tę sekcję i odkomentuj
+     jedną z propozycji palet na końcu tego bloku :root.
+     ══════════════════════════════════════════════════════════════ */
+
+  /* --- Brand / Primary (30%) --- */
+  --primary:       #1b2632;
+  --primary-light: #d8e0e9;
+  --primary-mid:   #2c3b4d;
+
+  /* --- Accent (10%) - komplementarny --- */
+  --accent:        #ffb162;
+
+  /* --- Baza (60%) - tła, teksty --- */
+  --background:    #f5f5f5;
+  --foreground:    #0a0a0b;
+  --text-light:    #696969;
+  --text-mid:      #292929;
+  --text-on-dark:  #e7e7ea;
+
+  /* --- Stałe --- */
+  --white:         #ffffff;
+  --black:         #000000;
+
+  /* --- Neutrals --- */
+  --neutral-50:    #fafafa;
+  --neutral-100:   #f5f5f5;
+  --neutral-200:   #e5e5e5;
+  --neutral-300:   #d4d4d4;
+  --neutral-900:   #151517;
+
+  /* --- Statusy --- */
+  --success-bg:     #d1fae5;
+  --success-border: #a7f3d0;
+  --success-icon:   #059669;
+  --success-text:   #047857;
+
+  --warning-bg:     #fef3c7;
+  --warning-border: #fde68a;
+  --warning-icon:   #d97706;
+  --warning-text:   #92400e;
+
+  --error-bg:       #fee2e2;
+  --error-border:   #fecaca;
+  --error-icon:     #ef4444;
+  --error-mid:      #dc2626;
+  --error-text:     #b91c1c;
+
+  --info-bg:        #dbeafe;
+  --info-icon:      #2563eb;
+  --info-mid:       #1d4ed8;
+  --info-text:      #1e40af;
+
+  /* --- Marki zewnętrzne --- */
+  --brand-facebook: #1877f2;
+  --brand-linkedin: #0a66c2;
+
+  /* --- Pomocnicze (rzadko używane) --- */
+  --accent-orange:  #f97316;
+  --crop-green:     #10b981;
 }
 
 @theme inline {
@@ -18,14 +74,48 @@
   --color-dark: var(--foreground);
   --color-mid: var(--text-mid);
   --color-light: var(--text-light);
-}
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+  --color-primary:       var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-mid:   var(--primary-mid);
+  --color-accent:        var(--accent);
+
+  --color-white:         var(--white);
+  --color-black:         var(--black);
+
+  --color-neutral-50:    var(--neutral-50);
+  --color-neutral-100:   var(--neutral-100);
+  --color-neutral-200:   var(--neutral-200);
+  --color-neutral-300:   var(--neutral-300);
+  --color-neutral-900:   var(--neutral-900);
+
+  --color-success-bg:     var(--success-bg);
+  --color-success-border: var(--success-border);
+  --color-success-icon:   var(--success-icon);
+  --color-success-text:   var(--success-text);
+
+  --color-warning-bg:     var(--warning-bg);
+  --color-warning-border: var(--warning-border);
+  --color-warning-icon:   var(--warning-icon);
+  --color-warning-text:   var(--warning-text);
+
+  --color-error-bg:       var(--error-bg);
+  --color-error-border:   var(--error-border);
+  --color-error-icon:     var(--error-icon);
+  --color-error-mid:      var(--error-mid);
+  --color-error-text:     var(--error-text);
+
+  --color-info-bg:        var(--info-bg);
+  --color-info-icon:      var(--info-icon);
+  --color-info-mid:       var(--info-mid);
+  --color-info-text:      var(--info-text);
+
+  --color-brand-facebook: var(--brand-facebook);
+  --color-brand-linkedin: var(--brand-linkedin);
+
+  --color-accent-orange:  var(--accent-orange);
+  --color-crop-green:     var(--crop-green);
+}
 
 .no-scrollbar {
   scrollbar-width: none;
@@ -45,8 +135,6 @@ body {
   color: var(--foreground);
 }
 
-/*    TEXT    */
-
 .text-light {
   color: var(--text-light);
 }
@@ -59,67 +147,64 @@ body {
 
 p,
 li,
-.p {
+.p,
+label {
   @apply leading-relaxed font-normal;
-  font-size: clamp(15px, calc(15px + 1 * ((100vw - 360px) / 1080)), 16px);
+  font-size: clamp(15px, calc(15px + 2 * ((100vw - 360px) / 1080)), 17px);
 }
 
 .text-small {
   @apply leading-relaxed font-normal;
-  font-size: clamp(14px, calc(15px + 3 * ((100vw - 360px) / 1080)), 15px);
+  font-size: clamp(14px, calc(14px + 2 * ((100vw - 360px) / 1080)), 16px);
 }
 
 h1,
 .h1 {
-  font-weight: 600;
-  font-size: clamp(36px, calc(36px + 20 * ((100vw - 360px) / 1080)), 56px);
-  text-wrap: balance;
-  hyphens: none;
-  word-break: normal;
-  overflow-wrap: normal;
-  line-height: 100%;
-  letter-spacing: -1px;
+  font-weight:600;
+  font-size:clamp(42px, calc(42px + 10 * ((100vw - 360px) / 1080)), 52px);
+  line-height:1;
+  letter-spacing:-1px;
+  text-wrap:balance;
 }
 
 h2,
 .h2 {
-  font-weight: 600;
-  font-size: clamp(34px, calc(34px + 10 * ((100vw - 360px) / 1080)), 44px);
-  line-height: 100%;
-  letter-spacing: -2px;
+  font-weight:600;
+  font-size:clamp(35px, calc(35px + 7 * ((100vw - 360px) / 1080)), 42px);
+  line-height:1.03;
+  letter-spacing:-0.9px;
 }
 
 h3,
 .h3 {
-  font-weight: 600;
-  font-size: clamp(32px, calc(32px + 10 * ((100vw - 360px) / 1080)), 42px);
-  line-height: 100%;
-  letter-spacing: -1px;
+  font-weight:600;
+  font-size:clamp(29px, calc(29px + 6 * ((100vw - 360px) / 1080)), 35px);
+  line-height:1.06;
+  letter-spacing:-0.7px;
 }
 
 h4,
 .h4 {
-  font-weight: 600;
-  font-size: clamp(28px, calc(28px + 8 * ((100vw - 360px) / 1080)), 36px);
-  line-height: 110%;
-  letter-spacing: -1px;
+  font-weight:600;
+  font-size:clamp(24px, calc(24px + 5 * ((100vw - 360px) / 1080)), 29px);
+  line-height:1.12;
+  letter-spacing:-0.4px;
 }
 
 h5,
 .h5 {
-  font-weight: 600;
-  font-size: clamp(24px, calc(24px + 2 * ((100vw - 360px) / 1080)), 26px);
-  line-height: 120%;
-  letter-spacing: -1px;
+  font-weight:600;
+  font-size:clamp(20px, calc(20px + 3 * ((100vw - 360px) / 1080)), 23px);
+  line-height:1.2;
+  letter-spacing:-0.2px;
 }
 
 h6,
-.h6,
-label {
-  font-weight: 600;
-  font-size: clamp(16px, calc(16px + 2 * ((100vw - 360px) / 1080)), 18px);
-  line-height: 120%;
-  letter-spacing: 0px;
+.h6 {
+  font-weight:600;
+  font-size:clamp(17px, calc(17px + 2 * ((100vw - 360px) / 1080)), 19px);
+  line-height:1.25;
+  letter-spacing:0;
 }
 
 strong {
@@ -130,16 +215,15 @@ strong {
   @apply underline underline-offset-4 hover:no-underline;
 }
 
-/*    FORMS    */
 input,
 select,
 textarea {
-  @apply w-full rounded-xl border border-gray-300 bg-white px-4 py-6 text-lg transition focus:outline-none;
+  @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-6 text-lg transition focus:outline-none;
   color: var(--text-mid);
 }
 
 textarea {
-  @apply w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-lg transition focus:outline-none;
+  @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-3 text-lg transition focus:outline-none;
   color: var(--text-mid);
 }
 
@@ -147,10 +231,10 @@ textarea {
   input:-webkit-autofill,
   textarea:-webkit-autofill,
   select:-webkit-autofill {
-    @apply bg-slate-100;
+    @apply bg-primary-light;
     color: var(--text-mid);
     -webkit-text-fill-color: var(--text-mid);
-    -webkit-box-shadow: 0 0 0px 1000px theme('colors.slate.100') inset;
+    -webkit-box-shadow: 0 0 0px 1000px var(--primary-light) inset;
     transition: background-color 5000s ease-in-out 0s;
   }
 }
@@ -159,7 +243,7 @@ textarea {
   select option:checked,
   select option:focus,
   select option:hover {
-    @apply bg-slate-100;
+    @apply bg-primary-light;
     color: var(--text-mid);
   }
 }
@@ -185,27 +269,6 @@ textarea {
   width: 100%;
 }
 
-.reveal-animation {
-  opacity: 0;
-  transform: translateY(12px);
-  transition:
-    opacity 500ms ease-out,
-    transform 500ms ease-out;
-  will-change: opacity, transform;
-  transition-delay: calc(var(--reveal-delay, 0ms));
-}
-
-.reveal-animation.is-inview {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal-animation {
-    transform: none !important;
-    transition-duration: 0ms !important;
-  }
-}
 
 @media (pointer: coarse) {
   abbr.cursor-help {
@@ -214,13 +277,13 @@ textarea {
 }
 
 .arteon-crop-area {
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 0 9999px color-mix(in srgb, var(--black) 55%, transparent);
   border-radius: 8px;
-  border: 1px solid var(--crop-grid-color, #10b981);
+  border: 1px solid var(--crop-grid-color, var(--crop-green));
 }
 
 .arteon-cropper .reactEasyCrop_GridLine {
-  background-color: var(--crop-grid-color, #10b981);
+  background-color: var(--crop-grid-color, var(--crop-green));
 }
 
 .surface-panel {
@@ -243,42 +306,36 @@ textarea {
   @apply rounded-2xl bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md;
 }
 
-/*    TOOLS COMPONENTS    */
 
-/* Tool section container */
 .tool-section {
   @apply rounded-2xl border border-black/10 bg-white/80 p-7 shadow-sm;
 }
 
-/* Tool input fields (override global form styles) */
 .tool-input {
-  @apply w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:border-neutral-800 focus:outline-none;
+  @apply w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:border-mid focus:outline-none;
   color: var(--text-mid);
 }
 
 .tool-textarea {
-  @apply w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:border-neutral-800 focus:outline-none;
+  @apply w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:border-mid focus:outline-none;
   color: var(--text-mid);
 }
 
 .tool-select {
-  @apply w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:border-neutral-800 focus:outline-none;
+  @apply w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm! transition focus:border-mid focus:outline-none;
   color: var(--text-mid);
 }
 
-/* Tool labels */
 .tool-label {
-  @apply text-xs! font-semibold uppercase;
+  @apply text-xs! font-medium uppercase;
   color: var(--text-light);
 }
 
-/* Tool helper text */
 .tool-helper {
   @apply text-xs!;
   color: var(--text-light);
 }
 
-/* Tool panel buttons */
 .tool-button {
   @apply flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! transition;
 }
@@ -288,10 +345,9 @@ textarea {
 }
 
 .tool-button-active {
-  @apply bg-slate-800 text-white;
+  @apply bg-primary text-white;
 }
 
-/* Color picker inputs */
 .tool-color-picker {
   @apply cursor-pointer border-none bg-white p-0!;
 }
@@ -304,36 +360,34 @@ textarea {
   @apply h-10! w-10!;
 }
 
-/* File upload areas */
 .tool-upload-area {
-  @apply flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:border-neutral-500 hover:bg-neutral-100;
+  @apply flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center transition hover:border-light hover:bg-neutral-100;
 }
 
-/* Tool checkboxes */
 .tool-checkbox {
   @apply h-4 w-4! rounded border-neutral-300 p-0!;
+  accent-color: var(--primary);
 }
 
-/* Tool range inputs */
 .tool-range {
   @apply w-full! p-0!;
+  accent-color: var(--primary);
 }
 
-/* Tool status badges */
 .tool-badge {
-  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px]! font-medium;
+  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs! font-medium;
 }
 
 .tool-badge-success {
-  @apply border-emerald-200 bg-emerald-100 text-emerald-700;
+  @apply border-success-border bg-success-bg text-success-text;
 }
 
 .tool-badge-warning {
-  @apply border-amber-200 bg-amber-100 text-amber-800;
+  @apply border-warning-border bg-warning-bg text-warning-text;
 }
 
 .tool-badge-error {
-  @apply border-red-200 bg-red-100 text-red-700;
+  @apply border-error-border bg-error-bg text-error-text;
 }
 
 .tool-badge-neutral {
@@ -341,22 +395,20 @@ textarea {
   color: var(--text-mid);
 }
 
-/* Tool info boxes */
 .tool-info-box {
   @apply rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3;
 }
 
-/* Calculator components */
 .calc-option-button {
   @apply relative flex items-start gap-3 rounded-2xl border p-4 text-left transition hover:cursor-pointer;
 }
 
 .calc-option-button-selected {
-  @apply border-slate-400 bg-slate-50;
+  @apply border-primary-mid bg-neutral-50;
 }
 
 .calc-option-button-unselected {
-  @apply border-gray-300 hover:border-slate-300 hover:shadow-lg;
+  @apply border-neutral-300 hover:border-primary-light hover:shadow-lg;
 }
 
 .calc-input-container {
@@ -364,14 +416,14 @@ textarea {
 }
 
 .calc-input-container-filled {
-  @apply border-slate-400;
+  @apply border-primary-mid;
 }
 
 .calc-input-container-empty {
-  @apply border-gray-100 hover:border-slate-300;
+  @apply border-neutral-100 hover:border-primary-light;
 }
 
 .calc-input-field {
-  @apply w-full border-b border-gray-300 bg-transparent px-2 py-1.5 transition focus:outline-none;
+  @apply w-full border-b border-neutral-300 bg-transparent px-2 py-1.5 transition focus:outline-none;
   color: var(--text-mid);
 }

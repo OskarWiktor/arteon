@@ -4,8 +4,17 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiMessage2Line, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiIdCardLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiPencilRuler2Line,
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiBookOpenLine,
+  RiFileTextLine,
+  RiMessage2Line,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -16,8 +25,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',
@@ -30,7 +39,7 @@ export const metadata = {
     description: 'Profesjonalny papier firmowy: szablony i pliki drukarskie zgodne z identyfikacją.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -88,6 +97,10 @@ export default function OfferDesignLetterheadPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz zamawiając projekt papieru firmowego?">
           <p>
             <strong>Własny projekt papieru firmowego sprawia, że dokumenty wyglądają profesjonalnie od pierwszej sekundy.</strong> Oferty, umowy i pisma mają jeden, spójny wzór - logo, układ, dane
@@ -119,27 +132,27 @@ export default function OfferDesignLetterheadPage() {
             {
               title: 'Spójny wygląd korespondencji',
               description: <>Projekt wzmacnia profesjonalny obraz firmy w każdym piśmie i wiadomości.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Szablony do codziennej pracy',
               description: <>Otrzymujesz gotowe do użycia pliki w wersji do druku oraz praktyczne szablony elektroniczne.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dopasowanie danych i układu',
               description: <>Dbamy o czytelność, hierarchię informacji i zgodność z pozostałymi materiałami marki.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Szybka realizacja i poprawki',
               description: <>Ustalamy termin, dostarczamy projekt i wspólnie dopracowujemy szczegóły.</>,
-              icon: <RiMessage2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiMessage2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -184,17 +197,12 @@ export default function OfferDesignLetterheadPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt papieru firmowego - przykładowe pakiety"
-          subtitle="Zakres dopasowany do skali Twojej korespondencji"
           plans={[
             {
               name: 'Pakiet Start - papier firmowy do druku',
@@ -248,9 +256,11 @@ export default function OfferDesignLetterheadPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt papieru firmowego"
-          description="Napisz, czym zajmuje się Twoja firma oraz co powinno znajdować się na Twoim papierze firmowym. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji papieru firmowego"
+          description="Napisz co powinno znajdować się na papierze firmowym oraz czy posiadasz logo i identyfikację wizualną - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp"
+          imageAlt="Realizacja papieru firmowego - kancelaria Luxnova"
           defaultSubject="Projekt papieru firmowego"
         />
 
@@ -259,7 +269,7 @@ export default function OfferDesignLetterheadPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-papieru-firmowego"
-          title="Najczęstsze pytania o projekt papieru firmowego"
+          title="Najczęstsze pytania dotyczące projektów papieru firmowego"
           items={[
             {
               question: 'Ile kosztuje projekt papieru firmowego?',
@@ -291,52 +301,10 @@ export default function OfferDesignLetterheadPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Jak jeszcze możesz wzmocnić wizerunek w korespondencji?"
-          subtitle="Zobacz też"
-          description="Najlepszy efekt daje spójny system: papier firmowy, wizytówki, teczki i oferta, które razem budują doświadczenie klienta."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki firmowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Połącz papier firmowy z wizytówką w tym samym stylu. Klient od razu zauważy spójność co wzbudzi większe zaufanie i stworzy jeszcze bardziej profesjonalny wizerunek.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiBookOpenLine className="h-8 w-8" />,
-              title: 'Projekt teczki ofertowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Umieść dopracowane dokumenty w eleganckiej teczce. Cała oferta - od papieru po oprawę - staje się spójnym doświadczeniem dla klienta.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-teczki-ofertowej">
-                      Zobacz projekt teczki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -345,7 +313,6 @@ export default function OfferDesignLetterheadPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
@@ -354,26 +321,27 @@ export default function OfferDesignLetterheadPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiBookOpenLine className="h-6 w-6" />,
               title: 'Projekt teczki ofertowej',
               description: 'Elegancka oprawa dla dokumentów',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
             },
           ]}
         />
 
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
         <Gap size="sm" />
       </Wrapper>
 

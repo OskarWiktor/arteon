@@ -4,7 +4,7 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import ContactForm from '@/components/sections/ContactForm';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -12,13 +12,13 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
 import { IoColorPalette } from 'react-icons/io5';
 import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Szablony postów do mediów społecznościowych | Arteon',
@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Projektujemy spójne szablony postów do mediów społecznościowych. Gotowe, edytowalne pliki ułatwiające regularną publikację.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -94,6 +94,10 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz dzięki szablonom postów?">
           <p>
             <strong>Stały, rozpoznawalny styl w całej komunikacji.</strong> Szablony utrzymują wspólny charakter postów, dzięki czemu odbiorca szybciej kojarzy Twoją markę, a profil wzbudza większe
@@ -104,7 +108,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
           <p>
             Dzięki przemyślanej strukturze relacji, zaoszczędzisz czas na tworzeniu kolejnych publikacji. Gotowe szablony znacząco ułatwią Ci pracę, dzięki nim będziesz w stanie dodawać więcej relacji
-            co bezpośrednio przełoży sie na szybszy wzrost obserwacji.
+            co bezpośrednio przełoży się na szybszy wzrost obserwacji.
           </p>
 
           <br />
@@ -127,25 +131,25 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
           items={[
             {
               title: 'Spójny system wizualny',
-              description: <>Dopasowujemy kolory, typografię i styl do swojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki lub tworzymy nowy kierunek od zera - zgodnie z grupą odbiorców i charakterem komunikacji.</>,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Edytowalne pliki',
               description: (
                 <>Otrzymujesz pliki, które z łatwością edytujesz (np. w Figmie lub Canvie), wraz z krótką instrukcją. Tekst, zdjęcia czy kolory zmienisz bez znajomości zaawansowanych programów.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'System pod różne typy postów',
               description: <>Projektujemy zestaw układów pod konkretne formaty: post informacyjny, oferta, opinia, poradnik, cytat, karuzela, okładka wideo czy zapowiedź wydarzenia.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -187,17 +191,12 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Szablony postów - przykładowe pakiety"
-          subtitle="Zakresy, które najczęściej wybierają klienci"
           plans={[
             {
               name: 'Pakiet Start - profil solo',
@@ -240,7 +239,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Zakres i liczba szablonów dopasowujemy indywidualnie do TWoich potrzeb Twojej marki i kanałów. Po krótkim briefie przygotujemy konkretną wycenę i harmonogram."
+          legalNote="Zakres i liczba szablonów dopasowujemy indywidualnie do potrzeb Twojej marki i kanałów. Po krótkim briefie przygotujemy konkretną wycenę i harmonogram."
         />
 
         <Gap variant="line" />
@@ -249,9 +248,11 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów szablony postów do mediów społecznościowych"
-          description="Opisz, czym się zajmujesz, na jakich platformach publikujesz treści (Instagram, Facebook, LinkedIn, TikTok) i jakie szablony chciałbyś stworzyć. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji szablonów postów"
+          description="Napisz na jakich platformach publikujesz treści, ile szablonów potrzebujesz oraz czy posiadasz logo i identyfikację wizualną — otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
+          imageAlt="Realizacja szablonów postów do mediów społecznościowych"
           defaultSubject="Szablony postów do mediów społecznościowych"
         />
 
@@ -260,7 +261,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe"
-          title="Najczęstsze pytania o szablony postów"
+          title="Najczęstsze pytania dotyczące projektów szablonów postów na media społecznościowe"
           items={[
             {
               question: 'W jakich programach dostanę szablony postów?',
@@ -280,52 +281,10 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym najlepiej połączyć projekt szablonów do mediów społecznościowych"
-          subtitle="Zobacz też"
-          description="Projekt szablonów najczęściej łączymy z uporządkowaniem identyfikacji wizualnej i stworzeniem własnej strony internetowej."
-          items={[
-            {
-              icon: <RiLayoutLine className="h-8 w-8" />,
-              title: 'Strony internetowe',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Twoje szablony mogą odsyłać klientów do odwiedzenia Twojej witryna na której będą mogli np. przeczytać szczegóły Twojej oferty, zarezerwować spotkanie czy kupić produkt.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-graficzny-strony">
-                      Zobacz ofertę stworzenia strony internetowej
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <IoColorPalette className="h-8 w-8" />,
-              title: 'Projekt identyfikacji wizualnej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, wizytówki, ulotki - wszystko zrealizujesz w jednym miejscu.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Zobacz projekt identyfikacji wizualnej
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPencilRuler2Line className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -334,7 +293,6 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiLayoutLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
@@ -343,25 +301,27 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiLightbulbFlashLine className="h-6 w-6" />,
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
             {
-              icon: <RiBarChart2Fill className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'small',
               backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>
@@ -371,7 +331,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
         description="Dostarczymy szablony, dzięki którym publikacje będą szybsze, prostsze i bardziej spójne."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
-        btnTwo="Poznaj inne inne usługi graficzne"
+        btnTwo="Poznaj inne usługi graficzne"
         btnTwoLink="/uslugi/projekty-graficzne"
         backgroundImage="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
         overlay="black"

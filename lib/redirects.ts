@@ -37,11 +37,20 @@ export const LEGACY_REDIRECTS: Record<string, string> = {
 export const PROJECT_REDIRECTS: Record<string, string> = {
   '/realizacje/cennik-dla-salonu-kosmetycznego': '/realizacje',
   '/realizacje/trilllizo': '/realizacje/sklep-dla-firmy-odziezowej-trilllizo',
-  '/realizacje/pilka-nozna-pl': '/realizacje/blog-sportowy-pilka-nozna-pl',
+  '/realizacje/pilka-nozna-pl': '/realizacje',
   '/realizacje/msc-psychotherapy': '/realizacje/strona-dla-psychologa-msc-psychotherapy',
   '/projects/msc-psychotherapy': '/realizacje/strona-dla-psychologa-msc-psychotherapy',
   '/projects/trilllizo': '/realizacje/sklep-dla-firmy-odziezowej-trilllizo',
   '/realizacje/katalog-produktów-restoquality': '/realizacje/katalog-produktow-restoquality',
+  // Usunięte realizacje - thin content (2026-01-30)
+  '/realizacje/blog-sportowy-pilka-nozna-pl': '/realizacje',
+  '/realizacje/meridol-accessibility': '/realizacje',
+  '/realizacje/elmex-accessibility': '/realizacje',
+  '/realizacje/sanex-accessibility': '/realizacje',
+  '/realizacje/sanex': '/realizacje',
+  '/realizacje/palmolive': '/realizacje',
+  '/realizacje/colgate': '/realizacje',
+  '/realizacje/detergent-regulations': '/realizacje',
 };
 
 /**
@@ -84,21 +93,44 @@ export const PATTERN_REDIRECTS = {
 export const TOOLS_REDIRECTS: Record<string, string> = {
   // Zmiana URL generatora palet kolorów (2026-01-20) - lepsza fraza kluczowa
   '/narzedzia/generator-schematow-kolorow': '/narzedzia/generator-palet-kolorow',
-  '/narzedzia/generator-schematow-kolorow/instrukcja': '/narzedzia/generator-palet-kolorow/instrukcja',
+  '/narzedzia/generator-schematow-kolorow/instrukcja': '/narzedzia/generator-palet-kolorow',
   '/narzedzia/generator-palet-kolorow-online': '/narzedzia/generator-palet-kolorow',
-  '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-palet-kolorow/instrukcja',
+  '/narzedzia/generator-palet-kolorow-online/instrukcja': '/narzedzia/generator-palet-kolorow',
   // Zmiana URL ekstraktora kolorów (2026-01-20)
   '/narzedzia/generator-palety-kolorow-z-obrazu': '/narzedzia/ekstraktor-kolorow-z-obrazu',
-  '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja',
+  '/narzedzia/generator-palety-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu',
   // Zmiana URL edytora zdjęć (2026-01-20) - lepsza fraza kluczowa
   '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia': '/narzedzia/edytor-zdjec-online',
-  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja': '/narzedzia/edytor-zdjec-online/instrukcja',
+  '/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja': '/narzedzia/edytor-zdjec-online',
   // Zmiana URL generatora kodów QR (2026-01-22) - dodanie "darmowy" dla lepszego SEO
   '/narzedzia/generator-kodu-qr': '/narzedzia/darmowy-generator-kodow-qr',
-  '/narzedzia/generator-kodu-qr/instrukcja': '/narzedzia/darmowy-generator-kodow-qr/instrukcja',
+  '/narzedzia/generator-kodu-qr/instrukcja': '/narzedzia/darmowy-generator-kodow-qr',
   // Zmiana URL testera kontrastu (2026-01-22) - szersze pozycjonowanie na "czytelność kolorów"
-  '/narzedzia/tester-kontrastu-kolorow-wcag': '/narzedzia/sprawdz-czytelnosc-kolorow',
-  '/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja': '/narzedzia/sprawdz-czytelnosc-kolorow/instrukcja',
+  // Aktualizacja (2026-01-30) - zmiana na "kontrast-i-czytelnosc-kolorow"
+  '/narzedzia/tester-kontrastu-kolorow-wcag': '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/tester-kontrastu-kolorow-wcag/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/sprawdz-czytelnosc-kolorow': '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/sprawdz-czytelnosc-kolorow/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  // Połączenie stron instrukcji z narzędziami (2026-02) - treść przeniesiona na stronę narzędzia
+  '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja': '/narzedzia/darmowy-generator-stopki-mailowej',
+  '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja': '/narzedzia/jpg-png-na-webp-bez-limitu',
+  '/narzedzia/edytor-zdjec-online/instrukcja': '/narzedzia/edytor-zdjec-online',
+  '/narzedzia/darmowy-generator-favicon-ico/instrukcja': '/narzedzia/darmowy-generator-favicon-ico',
+  '/narzedzia/licznik-slow-i-znakow/instrukcja': '/narzedzia/licznik-slow-i-znakow',
+  '/narzedzia/licznik-dlugosci-meta-title-i-description/instrukcja': '/narzedzia/licznik-dlugosci-meta-title-i-description',
+  '/narzedzia/kontrast-i-czytelnosc-kolorow/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
+  '/narzedzia/generator-palet-kolorow/instrukcja': '/narzedzia/generator-palet-kolorow',
+  '/narzedzia/ekstraktor-kolorow-z-obrazu/instrukcja': '/narzedzia/ekstraktor-kolorow-z-obrazu',
+  '/narzedzia/darmowy-generator-kodow-qr/instrukcja': '/narzedzia/darmowy-generator-kodow-qr',
+};
+
+/**
+ * Redirecty dla usług (zmienione URL-e)
+ */
+export const SERVICES_REDIRECTS: Record<string, string> = {
+  // Zmiana URL strony internetowe → tworzenie stron WordPress (2026-01-24)
+  '/uslugi/strony-internetowe': '/uslugi/tworzenie-stron-wordpress',
+  '/uslugi/strony-internetowe/optymalizacja-strony-wordpress': '/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress',
 };
 
 /**
@@ -111,4 +143,5 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,
   ...TOOLS_REDIRECTS,
+  ...SERVICES_REDIRECTS,
 };

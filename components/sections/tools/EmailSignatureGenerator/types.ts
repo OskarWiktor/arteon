@@ -2,7 +2,11 @@ export type CopyStatus = 'idle' | 'success' | 'error';
 export type FontSizeOption = 'small' | 'normal' | 'large';
 export type MarginOption = 'small' | 'medium' | 'large';
 export type CtaRadiusOption = 'none' | 'small' | 'full';
-export type SocialKey = 'linkedin' | 'instagram' | 'facebook' | 'tiktok' | 'youtube' | 'x';
+export type AvatarShape = 'circle' | 'rounded' | 'square';
+export type AvatarSize = 'small' | 'medium' | 'large';
+export type DividerStyle = 'solid' | 'dashed' | 'dotted';
+export type DividerWidth = 1 | 2 | 3;
+export type SocialKey = 'linkedin' | 'instagram' | 'facebook' | 'tiktok' | 'youtube' | 'x' | 'github' | 'dribbble' | 'behance' | 'whatsapp' | 'telegram' | 'pinterest';
 export type SocialIconSize = 'small' | 'medium' | 'large';
 export type SocialIconColorMode = 'platform' | 'accent' | 'text';
 
@@ -69,6 +73,11 @@ export interface StyleConfig {
   showDivider: boolean;
   border: BorderSides;
   socialIcons: SocialIconSettings;
+  avatarShape: AvatarShape;
+  avatarSize: AvatarSize;
+  dividerStyle: DividerStyle;
+  dividerWidth: DividerWidth;
+  dividerColor: string;
 }
 
 export interface ThemePreset {

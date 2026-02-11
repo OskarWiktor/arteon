@@ -82,7 +82,7 @@ Każdy plik z kodem źródłowym musi mieć nazwę jasno wskazującą jego przez
 - Badge/Tag/Tool pills: konsolidujemy do `Badge` (jeden komponent + warianty); `Tag` docelowo nie istnieje.
 - `Button`: warianty „jednorazowe” nie wchodzą do API; `totop` jest lokalny w `ButtonToTop`.
 - `Tooltip`: zostaje (jedyny wyjątek - może być chwilowo nieużywany).
-- Ikony mają zawsze mieć kolor `text-slate-800`.
+- Ikony mają zawsze mieć kolor `text-[#1b2632]`.
 
 ### SEO (inwarianty)
 
@@ -230,7 +230,7 @@ Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis, FAQ, CTA, metada
   - **Tytuły**: bez prefixów typu „Edukacja:", „Usługi:" itp. - sama nazwa kategorii (np. „Widoczność", „SEO", „Grafika").
   - **Opisy**: krótkie (maks. 2 zdania), ogólne, bez technicznych detali. Wzorzec: „Artykuły o [temat]." lub „Poradniki dotyczące [temat]."
   - **Bez wyjaśnień**: w opisach kategorii NIE wyjaśniaj terminów (np. „WebP to format, który..."). Wyjaśnienia należą do artykułów, nie do opisów hub.
-  - **Bez zawężania kontekstu**: nie ograniczaj opisu do jednego kanału (np. „na stronie"). Usługi Arteon są szerokie (www, sklepy, grafika, marketing), a artykuły mogą dotyczyć różnych zastosowań (strona, social media, druk).
+  - **Bez zawężania kontekstu**: nie ograniczaj opisu do jednego kanału (np. „na stronie"). Usługi Arteon są szerokie (www, sklepy, grafika, marketing), a artykuły mogą dotyczyć różnych zastosowań (strona, media społecznościowe, druk).
   - **Elastyczność**: opisy mają być uniwersalne - treści będą rozbudowywane, więc opis nie może być zbyt konkretny ani zawężający.
   - Przykłady:
     - ✅ „Widoczność" + „Artykuły o widoczności Twojej marki w sieci."
@@ -267,6 +267,8 @@ Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis, FAQ, CTA, metada
   - Lub użyj encji HTML `&quot;` (np. `&quot;pozycjonować&quot;`)
   - Lub użyj apostrofów (np. 'pozycjonować')
   - Dotyczy wszystkich pól HTML w JSON (`html`, `answer`, `description` itp.)
+
+  13. **Hierarchia nagłówków w sekcjach z podtytułami (aktualizacja 2026-02-09)**: Główny tytuł sekcji = `<h2>` z klasą `h3` (np. `<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6'>`). Podtytuł wewnątrz sekcji = `<h3>` z klasą `h5` (np. `<h3 class='h5 mb-3 mt-4'>`). **NIGDY** nie może być sytuacji, gdzie podtytuł ma klasę `h3` lub `h4` - podtytuły zawsze muszą mieć klasę `h5`. Dotyczy artykułów blogowych (HTML w JSON), stron narzędzi (children w SectionInfo), stron usługowych, realizacji i komponentów (SectionDemo, SectionSteps).
 
 - **Cel serii**: zwiększać widoczność SEO ofert, domeny i narzędzi Arteon poprzez edukację w mentorskim tonie, bez żargonu (prowadź czytelnika do zrozumienia i działania, ale bez presji).
 - **Docelowy czytelnik**: MŚP (usługi + e-commerce), często bez wiedzy technicznej. Tekst ma być zrozumiały bez znajomości SEO/UX, ale nie może być infantylny.
@@ -459,7 +461,7 @@ Przed napisaniem jakiejkolwiek treści (artykuł, strona, opis, FAQ, CTA, metada
 
 - **Unikanie duplikacji między artykułami (obowiązkowo)**: Jeśli istnieje powiązany artykuł na zbliżony temat, nie duplikuj jego treści. Odnieś się do niego linkiem.
 
-- **Anglicyzmy a polskie odpowiedniki (obowiązkowo)**: Używaj polskich odpowiedników tam, gdzie brzmią naturalnie. Zamiast „social media" pisz „media społecznościowe" (odmienione odpowiednio do kontekstu). Anglicyzmy dozwolone tylko gdy polski odpowiednik brzmi sztucznie lub jest nieznany.
+- **Anglicyzmy a polskie odpowiedniki (obowiązkowo)**: Używaj polskich odpowiedników tam, gdzie brzmią naturalnie. Zamiast „media społecznościowe" pisz „media społecznościowe" (odmienione odpowiednio do kontekstu). Anglicyzmy dozwolone tylko gdy polski odpowiednik brzmi sztucznie lub jest nieznany.
 
 - **Przykłady z innych branż (obowiązkowo)**: W artykułach edukacyjnych nie używaj przykładów z branży Arteon (grafika, marketing, strony WWW). Podawaj przykłady z innych branż (prawo, medycyna, gastronomia, nieruchomości, e-commerce, produkcja itp.) - to buduje większy autorytet i uniwersalność treści.
 

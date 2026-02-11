@@ -2,7 +2,7 @@ import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
 import Image from 'next/image';
-// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile social media będą gotowe
+// NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
 
@@ -61,7 +61,7 @@ function FooterSchemas() {
 }
 
 const offerLinksOne = [
-  { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
+  { href: '/uslugi/tworzenie-stron-wordpress', title: 'Strony WordPress' },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
 ];
@@ -134,7 +134,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="border-t border-gray-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
+      <footer className="border-t border-neutral-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
         <Wrapper>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-5">
             {/* 1.1 Dane firmy + Logo + Social */}
@@ -157,25 +157,25 @@ export default function Footer() {
                   </a>
                 </p>
               </address>
-              {/* NAV-001: Tymczasowo ukryte linki do social media
+              {/* NAV-001: Tymczasowo ukryte linki do media społecznościowe
               <div className="flex items-center gap-3">
                 <a
                   href="https://www.instagram.com/arteon.pl"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram Arteon"
-                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 >
-                  <RiInstagramLine className="h-6 w-6 text-slate-800" aria-hidden="true" />
+                  <RiInstagramLine className="h-6 w-6 text-primary" aria-hidden="true" />
                 </a>
                 <a
                   href="https://www.facebook.com/people/Arteon/61583260915021/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook Arteon"
-                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2"
+                  className="rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 >
-                  <RiFacebookFill className="h-6 w-6 text-slate-800" aria-hidden="true" />
+                  <RiFacebookFill className="h-6 w-6 text-primary" aria-hidden="true" />
                 </a>
               </div>
               */}
@@ -303,7 +303,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="text-light mt-8 border-t border-gray-200 pt-4">
+          <div className="text-light mt-8 border-t border-neutral-200 pt-4">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
               <span className="text-center text-sm md:text-left">
                 &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {t.copyright}

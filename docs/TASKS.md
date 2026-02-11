@@ -200,21 +200,6 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - Dopisz osobne zadania `COPY-###` per realizacja (slug).
   - Weryfikacja: nie jest wymagana (AUDIT-only).
 
-- ❌ **[PROJECT-001] Realizacje: uzupełnić brakujące `seo.title` i `seo.description`**
-
-  - Plik: `data/pl/projects.json`
-  - Slugi (brak `seo.title` i `seo.description`):
-    - `blog-sportowy-pilka-nozna-pl`
-  - Zakres:
-    - Dodać `seo.title` i `seo.description` (canonical już jest).
-    - Unikalność: `seo.title` nie może duplikować innych realizacji.
-    - Długości (best practice):
-      - `seo.title`: ~35-65 znaków (brand na końcu, np. `- Arteon`).
-      - `seo.description`: ~100-165 znaków (1-2 zdania, konkret: co zrobiono + dla kogo).
-  - Kryteria akceptacji:
-    - `npm run lint` i `npm run build` przechodzą.
-    - `/realizacje/blog-sportowy-pilka-nozna-pl` ma `title` i `meta name="description"` (nie tylko canonical).
-
 - ❌ **[PROJECT-002] Realizacje: dodać `contentBlocks` (galerie) + dopiąć ALT dla projektów bez galerii**
 
   - Pliki:
@@ -223,16 +208,8 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Slugi bez `contentBlocks` (dodać galerie):
     - `strona-internetowa-dla-camper-albania`
     - `strona-dla-psychologa-msc-psychotherapy`
-    - `blog-sportowy-pilka-nozna-pl`
     - `sklep-dla-firmy-odziezowej-trilllizo`
-    - `meridol-accessibility`
     - `wizytowki-dla-gastronomii-restoquality`
-    - `elmex-accessibility`
-    - `sanex-accessibility`
-    - `sanex`
-    - `palmolive`
-    - `colgate`
-    - `detergent-regulations`
   - Slugi z galerią „1 obraz” (rozważyć rozbudowę galerii do min. 2-4, zależnie od typu):
     - `szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc`
     - `bon-walentynkowy-dla-salonu-kosmetycznego-kasia`
@@ -261,16 +238,8 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `bon-walentynkowy-dla-salonu-kosmetycznego-kasia`
     - `katalog-produktow-restoquality`
     - `wizytowka-dla-spa-talia`
-    - `blog-sportowy-pilka-nozna-pl`
     - `sklep-dla-firmy-odziezowej-trilllizo`
-    - `meridol-accessibility`
     - `wizytowki-dla-gastronomii-restoquality`
-    - `elmex-accessibility`
-    - `sanex-accessibility`
-    - `sanex`
-    - `palmolive`
-    - `colgate`
-    - `detergent-regulations`
   - Zakres:
     - Dodać min. 2 wpisy `outcomes` na projekt (format: `{ value, label, note? }`).
     - Web/sklep/WCAG: przynajmniej 1 outcome oparty o weryfikowalną metrykę (np. Lighthouse/PSI/QA checklist) lub konkretny, mierzalny fakt (np. liczba rynków/landingów).
@@ -288,15 +257,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `szablony-postow-na-media-spolecznosciowe-dla-psychologa-msc`
     - `bon-walentynkowy-dla-salonu-kosmetycznego-kasia`
     - `strona-internetowa-dla-camper-albania`
-    - `blog-sportowy-pilka-nozna-pl`
     - `sklep-dla-firmy-odziezowej-trilllizo`
-    - `meridol-accessibility`
-    - `elmex-accessibility`
-    - `sanex-accessibility`
-    - `sanex`
-    - `palmolive`
-    - `colgate`
-    - `detergent-regulations`
   - Zakres:
     - Dodać min. 4 pytania na projekt.
     - Dopasować FAQ do typu realizacji (web/sklep/WCAG/analityka/druk), bez kopiowania odpowiedzi 1:1 między realizacjami.
@@ -309,39 +270,12 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Plik: `data/pl/projects.json`
   - `client` (uzupełnić min. `name` + `sector`):
     - `katalog-produktow-restoquality`
-    - `blog-sportowy-pilka-nozna-pl`
     - `sklep-dla-firmy-odziezowej-trilllizo`
-    - `meridol-accessibility`
     - `wizytowki-dla-gastronomii-restoquality`
-    - `elmex-accessibility`
-    - `sanex-accessibility`
-    - `sanex`
-    - `palmolive`
-    - `colgate`
-    - `detergent-regulations`
   - `deliverables` (uzupełnić):
     - `strona-internetowa-dla-camper-albania`
-    - `meridol-accessibility`
-    - `elmex-accessibility`
-    - `sanex-accessibility`
-    - `sanex`
-    - `palmolive`
-    - `colgate`
-    - `detergent-regulations`
   - `stack` (uzupełnić jako technologie/narzędzia, nie zakres prac):
     - `sklep-dla-firmy-odziezowej-trilllizo`
-    - `meridol-accessibility`
-    - `elmex-accessibility`
-    - `sanex-accessibility`
-    - `sanex`
-    - `palmolive`
-    - `colgate`
-    - `detergent-regulations`
-  - `process_steps` (uzupełnić):
-    - `blog-sportowy-pilka-nozna-pl`
-    - `sanex`
-  - `task` (uzupełnić / naprawić):
-    - `colgate` (linia 972): usunąć placeholder `"task": "test"` i dodać realny opis.
   - Kryteria akceptacji:
     - Powyższe pola są uzupełnione i spójne semantycznie.
     - `npm run lint` i `npm run build` przechodzą.
@@ -1279,7 +1213,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - Kryteria akceptacji:
     - Sticky top lub static w headerze
     - Icon (amber) + text + CTA button
-    - Dark bg (slate-800) + white text
+    - Dark bg ([#1b2632]) + white text
     - Highlight text bold
     - Warunkowe renderowanie (controlled via config/env)
   - Weryfikacja: `npm run lint && npm run build`
@@ -1310,7 +1244,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
   - SEO: Fresh content signals
   - Kryteria akceptacji:
     - Marquee animation smooth 30s
-    - Dark bg (slate-800)
+    - Dark bg ([#1b2632])
     - Ikony opcjonalne dla każdego item
     - Duplicated items dla seamless loop
     - Pause on hover (opcjonalne)
@@ -1608,7 +1542,7 @@ Zrobione zadania: `docs/DONE_TASKS.md`.
     - `app/(pl)/uslugi/marketing/pozycjonowanie-stron/page.tsx` (banner: "Nie masz jeszcze strony?")
   - Kryteria akceptacji:
     - Banner z ikoną, tekstem i CTA
-    - Ciemne tło (slate-800), biały tekst
+    - Ciemne tło ([#1b2632]), biały tekst
     - Responsywny layout
   - Weryfikacja: `npm run lint && npm run build`
 

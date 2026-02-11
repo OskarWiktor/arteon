@@ -5,7 +5,7 @@ import Button from '../buttons/Button';
 interface BentoItem {
   title: string;
   description: string;
-  icon: ReactNode;
+  icon?: ReactNode;
   size: 'small' | 'medium' | 'large';
   backgroundImage: string;
   btnLabel?: string;
@@ -21,7 +21,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
   return (
     <section data-section="bento" aria-labelledby={title ? 'bento-title' : undefined}>
       {title && (
-        <h2 id="bento-title" className="h4 reveal-animation mb-8">
+        <h2 id="bento-title" className="h3 mb-4 md:mb-6 lg:mb-8">
           {title}
         </h2>
       )}
@@ -36,11 +36,13 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10" aria-hidden="true" />
 
               <div className="relative z-10 p-4">
-                <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white">{item.icon}</div>
+                {item.icon && (
+                  <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-white/20 text-white">{item.icon}</div>
+                )}
                 <h3 className={item.size === 'large' ? 'h5 mb-1 text-white' : 'h6 mb-1 text-white'}>{item.title}</h3>
                 <p className="text-sm text-white/80">{item.description}</p>
                 {item.btnLabel && item.btnLink && (
-                  <Button link={item.btnLink} variant="accent" size="small" className="mt-3">
+                  <Button link={item.btnLink} variant="accent" className="mt-3">
                     {item.btnLabel}
                   </Button>
                 )}

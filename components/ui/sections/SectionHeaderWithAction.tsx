@@ -46,7 +46,7 @@ export default function SectionHeaderWithAction({
     ) : null);
 
   return (
-    <div className={`mb-2 flex flex-col gap-3 md:mb-3 md:flex-row md:items-center md:justify-between ${className}`}>
+    <div className={`flex flex-col gap-3 md:flex-row md:items-center md:justify-between ${className}`}>
       <div>
         <SectionHeader
           subtitle={subtitle}

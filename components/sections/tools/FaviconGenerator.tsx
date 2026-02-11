@@ -6,7 +6,6 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
-import Eyebrow from '@/components/ui/typography/Eyebrow';
 import Badge from '@/components/ui/Badge';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { downloadFromUrl } from '@/lib/tools/download';
@@ -264,20 +263,20 @@ export default function FaviconGenerator() {
         <ToolSection className="space-y-4">
           <form onSubmit={handleGenerate} className="space-y-6">
             <div>
-              <p className="mb-2 font-semibold uppercase">{t.addBaseImageLabel}</p>
+              <h2 className="h6 mb-2">{t.addBaseImageLabel}</h2>
               <ToolFileDropzone
                 accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')}
                 onFiles={handleFiles}
-                className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
+                className="tool-upload-area"
               >
-                <span className="mb-1 text-sm font-medium">{t.dragDropImage}</span>
-                <span className="text-light mb-2 text-xs">{t.clickToSelect}</span>
+                <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
+                <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
                 <Badge variant="default" size="sm" className="bg-white shadow-sm">
                   {t.supportedFormats}
                 </Badge>
               </ToolFileDropzone>
               {sourceFile && (
-                <p className="text-light mt-2 text-xs">
+                <p className="text-light mt-2 text-xs!">
                   {t.selectedFile} <strong>{sourceFile.name}</strong> ({formatBytes(sourceFile.size)})
                 </p>
               )}
@@ -289,18 +288,22 @@ export default function FaviconGenerator() {
             </div>
 
             <div>
-              <p className="mt-8 mb-2 font-semibold uppercase">{t.setSizesAndBackground}</p>
+              <h3 className="h6 mt-8 mb-2">{t.setSizesAndBackground}</h3>
 
               <ToolInfo>
-                <p className="text-light mb-2! text-sm font-semibold tracking-wide uppercase">{t.pngSizes}</p>
+                <p className="mb-2! text-[14px]! font-medium">{t.pngSizes}</p>
                 <div className="flex flex-wrap gap-2">
                   {PNG_SIZES.map((size) => {
                     const checked = selectedSizes.includes(size);
                     return (
-                      <Badge key={size} as="label" variant={checked ? 'selected' : 'default'} size="lg" className="flex cursor-pointer items-center justify-between" htmlFor={`size-${size}`}>
-                        <input type="checkbox" id={`size-${size}`} checked={checked} onChange={() => toggleSize(size)} className="mr-1 h-4 w-4! p-0! align-middle" />
+                      <label
+                        key={size}
+                        htmlFor={`size-${size}`}
+                        className={`inline-flex cursor-pointer items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${checked ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                      >
+                        <input type="checkbox" id={`size-${size}`} checked={checked} onChange={() => toggleSize(size)} className="tool-checkbox mr-1.5 align-middle" />
                         {size}x{size}
-                      </Badge>
+                      </label>
                     );
                   })}
                 </div>
@@ -313,29 +316,29 @@ export default function FaviconGenerator() {
                     type="checkbox"
                     checked={transparentBackground}
                     onChange={(e) => setTransparentBackground(e.target.checked)}
-                    className="h-4 w-4! rounded border-neutral-300 p-0!"
+                    className="tool-checkbox"
                   />
-                  <label htmlFor="transparent-bg" className="text-mid text-sm!">
+                  <label htmlFor="transparent-bg" className="text-[14px]! font-medium">
                     {t.transparentBackground}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="text-light text-sm">{t.backgroundColor}</span>
+                  <span className="text-light text-xs!">{t.backgroundColor}</span>
                   <input
                     type="color"
                     value={backgroundColor}
                     onChange={(e) => setBackgroundColor(e.target.value)}
                     disabled={transparentBackground}
-                    className="h-8! w-7! cursor-pointer border-none bg-white p-0!"
+                    className="tool-color-picker h-8! w-7!"
                   />
                 </div>
               </ToolInfo>
 
               <ToolInfo className="mt-4 flex flex-wrap items-center gap-2">
                 <div className="flex items-center gap-2">
-                  <input id="include-ico" type="checkbox" checked={includeIco} onChange={(e) => setIncludeIco(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
-                  <label htmlFor="include-ico" className="text-mid text-sm!">
+                  <input id="include-ico" type="checkbox" checked={includeIco} onChange={(e) => setIncludeIco(e.target.checked)} className="tool-checkbox" />
+                  <label htmlFor="include-ico" className="text-[14px]! font-medium">
                     {t.generateFaviconIco}
                   </label>
                 </div>
@@ -346,16 +349,16 @@ export default function FaviconGenerator() {
                     type="checkbox"
                     checked={includeWebmanifest}
                     onChange={(e) => setIncludeWebmanifest(e.target.checked)}
-                    className="h-4 w-4! rounded border-neutral-300 p-0!"
+                    className="tool-checkbox"
                   />
-                  <label htmlFor="include-webmanifest" className="text-mid text-sm!">
+                  <label htmlFor="include-webmanifest" className="text-[14px]! font-medium">
                     {t.includeWebmanifest}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
-                  <label htmlFor="auto-download" className="text-mid text-sm!">
+                  <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="tool-checkbox" />
+                  <label htmlFor="auto-download" className="text-[14px]! font-medium">
                     {t.autoDownload}
                   </label>
                 </div>
@@ -363,7 +366,7 @@ export default function FaviconGenerator() {
             </div>
 
             <div>
-              <p className="mt-8 mb-2 font-semibold uppercase">{t.generateAndDownload}</p>
+              <h3 className="h6 mt-8 mb-2">{t.generateAndDownload}</h3>
 
               <div className="flex flex-wrap gap-3">
                 <Button type="submit" variant="accent" size="small" disabled={!hasSource || isProcessing} className="disabled:opacity-60">
@@ -403,27 +406,46 @@ export default function FaviconGenerator() {
           <div className="flex items-center justify-between gap-2">
             <h2 className="h6">{t.previewAndFiles}</h2>
             {anyOutputs && (
-              <p className="text-light text-xs">
+              <p className="text-light text-xs!">
                 {t.totalSize} <strong>{formatBytes(totalSize)}</strong>
               </p>
             )}
           </div>
 
-          {!hasSource && !anyOutputs && <p className="text-light text-xs">{t.addImageToGenerate}</p>}
+          {!hasSource && !anyOutputs && (
+            <div className="space-y-2 text-sm!">
+              {[
+                { name: 'favicon.ico', label: 'ICO 32x32', size: '1.1 KB' },
+                { name: 'favicon-16x16.png', label: 'PNG 16x16', size: '0.4 KB' },
+                { name: 'favicon-32x32.png', label: 'PNG 32x32', size: '0.8 KB' },
+                { name: 'apple-touch-icon.png', label: 'PNG 180x180', size: '5.2 KB' },
+                { name: 'android-chrome-192x192.png', label: 'PNG 192x192', size: '6.1 KB' },
+                { name: 'android-chrome-512x512.png', label: 'PNG 512x512', size: '18.7 KB' },
+              ].map((f) => (
+                <div key={f.name} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
+                  <div className="min-w-0 flex-1">
+                    <p className="text-dark truncate text-[14px]! font-medium">{f.name}</p>
+                    <p className="text-light text-xs!">{f.label} · {f.size}</p>
+                  </div>
+                  <Badge variant="success" size="md">{t.done}</Badge>
+                </div>
+              ))}
+            </div>
+          )}
 
           {hasSource && (
             <ToolInfo className="flex flex-wrap items-center gap-4">
               <div>
-                <Eyebrow variant="dynamic" className="mb-2 text-xs font-semibold tracking-wide">
+                <p className="mb-2 text-[14px]! font-medium">
                   {t.previewBaseImage}
-                </Eyebrow>
+                </p>
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.previewFavicon} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-light text-xs">{t.approximatePreview}</span>
+                    <span className="text-light text-xs!">{t.approximatePreview}</span>
                   </div>
 
                   <div className="hidden items-center gap-2 md:flex">
@@ -431,7 +453,7 @@ export default function FaviconGenerator() {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.largeIconPreview} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-light text-xs">{t.largeIconPreview}</span>
+                    <span className="text-light text-xs!">{t.largeIconPreview}</span>
                   </div>
                 </div>
               </div>
@@ -439,7 +461,7 @@ export default function FaviconGenerator() {
           )}
 
           {anyOutputs && (
-            <div className="space-y-2 text-sm">
+            <div className="space-y-2 text-sm!">
               {outputs.map((item) => (
                 <div key={item.id} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
                   <div className="flex min-w-0 flex-1 items-center gap-3">
@@ -455,7 +477,7 @@ export default function FaviconGenerator() {
 
                     <div className="min-w-0 flex-1">
                       <div title={item.fileName}>
-                        <p className="text-dark truncate text-sm font-medium">{item.fileName}</p>
+                        <p className="text-dark truncate text-[14px]! font-medium">{item.fileName}</p>
                       </div>
                       <p className="text-light text-xs!">
                         {item.label} · {formatBytes(item.sizeBytes)}

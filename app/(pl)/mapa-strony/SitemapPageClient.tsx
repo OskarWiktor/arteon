@@ -18,18 +18,18 @@ type SitemapPageClientProps = {
 function SitemapSection({ title, items }: { title: string; items: NavItem[] }) {
   return (
     <section className="mb-8">
-      <h2 className="h4 mb-4">{title}</h2>
+      <h2 className="h3 mb-4">{title}</h2>
       <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <li key={item.href}>
-            <Link href={item.href} className="text-sm text-slate-800 hover:text-slate-900 hover:underline">
+            <Link href={item.href} className="text-sm text-primary hover:text-primary hover:underline">
               {item.title}
             </Link>
             {item.children && item.children.length > 0 && (
               <ul className="mt-1 ml-4 space-y-1">
                 {item.children.map((child) => (
                   <li key={child.href}>
-                    <Link href={child.href} className="text-sm text-slate-800 hover:text-slate-800 hover:underline">
+                    <Link href={child.href} className="text-sm text-primary hover:text-primary hover:underline">
                       {child.title}
                     </Link>
                   </li>
@@ -51,13 +51,13 @@ export default function SitemapPageClient({ services, portfolioIndex, portfolioI
         <nav aria-label="okruszki" className="mb-6">
           <ol className="flex gap-2 text-sm">
             <li>
-              <Link href="/" className="text-slate-800 hover:underline">
+              <Link href="/" className="text-primary hover:underline">
                 Strona główna
               </Link>
-              <span className="ml-2 text-slate-400">/</span>
+              <span className="ml-2 text-primary-mid">/</span>
             </li>
             <li>
-              <span className="text-slate-800" aria-current="page">
+              <span className="text-primary" aria-current="page">
                 Mapa strony
               </span>
             </li>

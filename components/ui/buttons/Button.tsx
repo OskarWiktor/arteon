@@ -27,7 +27,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
 
   switch (size) {
     case 'small':
-      sizeClass = 'px-3 py-1.5 md:px-4 md:py-2';
+      sizeClass = 'px-2 py-1 md:px-3 md:py-1.5';
       break;
     case 'medium':
       sizeClass = 'px-4 py-2 md:px-5 md:py-2.5';
@@ -37,18 +37,18 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
   switch (variant) {
     case 'normal':
       variantClass =
-        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-dark ' + 'focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800';
+        'hover:-translate-y-0.5 shadow-md hover:shadow-xl border border-black/10 bg-white text-dark ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
       break;
     case 'accent':
-      variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-slate-800 text-white ' + 'focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+      variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-primary text-white ' + 'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
       break;
     case 'accent-reverse':
-      variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-white text-slate-800 ' + 'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800';
+      variantClass = 'hover:-translate-y-0.5 shadow-md hover:shadow-xl bg-white text-primary ' + 'focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary';
       break;
     case 'outline':
       variantClass =
-        'hover:-translate-y-0.5 border border-slate-800 bg-transparent text-slate-800 hover:bg-slate-800 hover:text-white ' +
-        'focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+        'hover:-translate-y-0.5 border border-primary bg-transparent text-primary hover:bg-primary hover:text-white ' +
+        'focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
       break;
   }
 

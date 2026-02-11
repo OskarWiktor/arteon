@@ -33,7 +33,7 @@ export default function SectionLikeButton({ initialCount = 0, liked: initialLike
     <button
       type="button"
       onClick={handleClick}
-      className={`group flex items-center gap-2 rounded-full px-4 py-2 transition ${liked ? 'bg-red-50 text-red-500' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
+      className={`group flex items-center gap-2 rounded-full px-4 py-2 transition ${liked ? 'bg-error-bg text-error-icon' : 'bg-primary-light text-primary-mid hover:bg-primary-light'}`}
       aria-label={liked ? 'Usuń polubienie' : 'Polub'}
       aria-pressed={liked}
     >

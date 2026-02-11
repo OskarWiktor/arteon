@@ -4,8 +4,17 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiArticleLine, RiFileTextLine, RiLayoutLine, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiIdCardLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiPencilRuler2Line,
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiArticleLine,
+  RiFileTextLine,
+  RiLayoutLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -16,8 +25,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt ulotki | Arteon',
@@ -30,7 +39,7 @@ export const metadata = {
     description: 'Skuteczna ulotka z jasnym przekazem i mocnym CTA. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -91,6 +100,10 @@ export default function OfferDesignFlyerPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz zamawiając projekt ulotki?">
           <p>
             <strong>Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.</strong> Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania
@@ -133,27 +146,27 @@ export default function OfferDesignFlyerPage() {
             {
               title: 'Jasny przekaz i mocne wezwanie do działania',
               description: <>Tworzymy układy, które przyciągają wzrok, wyjaśniają ofertę i prowadzą prosto do kontaktu lub zakupu.</>,
-              icon: <RiArticleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiArticleLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Format dopasowany do celu',
               description: <>Dobieramy rozmiar i orientację ulotki tak, aby była poręczna, czytelna i wygodna w dystrybucji.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pliki gotowe do druku i wersja cyfrowa',
               description: <>Otrzymujesz pliki przygotowane pod drukarnię oraz wersję do wykorzystania w internecie lub mailingu.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dopracowanie detali',
               description: <>W cenie przewidujemy poprawki. Wspólnie dopieszczamy treści, układ i wyróżniki Twojej oferty.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -198,17 +211,12 @@ export default function OfferDesignFlyerPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt ulotki - przykładowe pakiety"
-          subtitle="Zakres dopasowany do kampanii i budżetu"
           plans={[
             {
               name: 'Pakiet Start - prosta ulotka jednostronna',
@@ -262,9 +270,11 @@ export default function OfferDesignFlyerPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt ulotki"
-          description="Opisz, czym się zajmujesz i co chcesz przedstawić na swojej ulotce. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji ulotki"
+          description="Napisz co chcesz przedstawić na ulotce, czy posiadasz logo oraz zdjęcia i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp"
+          imageAlt="Realizacja projektu ulotki reklamowej - Simba Group"
           defaultSubject="Projekt ulotki"
         />
 
@@ -273,7 +283,7 @@ export default function OfferDesignFlyerPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-ulotki"
-          title="Najczęstsze pytania o projekt ulotki"
+          title="Najczęstsze pytania dotyczące projektów ulotek"
           items={[
             {
               question: 'Ile kosztuje projekt ulotki?',
@@ -303,50 +313,10 @@ export default function OfferDesignFlyerPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym najlepiej połączyć projekt ulotki?"
-          subtitle="Zobacz też"
-          description="Ulotka jest często jednym z kilku materiałów, które pracują na rozpoznawalność Twojej firmy. Najlepszy efekt osiągniesz, budując spójność wszystkich materiałów."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Zadbaj o to, aby osoba, która spotkała się z Tobą osobiście, chętniej skontaktowała się z Tobą ponownie.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Katalog z ofertą',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli Twoje usługi są bardziej rozbudowane, warto rozważyć stworzenie katalogu, w którym pokażesz szczegóły, zdjęcia czy też swoje realizacje.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
-                      Zobacz projekt katalogu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -355,7 +325,6 @@ export default function OfferDesignFlyerPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
@@ -364,25 +333,27 @@ export default function OfferDesignFlyerPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiArticleLine className="h-6 w-6" />,
               title: 'Projekt katalogu',
               description: 'Rozbudowana prezentacja oferty',
               size: 'small',
               backgroundImage: '/assets/projects/gazetka-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-katalogu',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

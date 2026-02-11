@@ -9,6 +9,8 @@ import SectionHeaderWithAction from '../../ui/sections/SectionHeaderWithAction';
 import { useCarouselScroller } from '@/hooks/useCarouselScroller';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
+const AUTO_PLAY_INTERVAL_MS = 4000;
+
 const ui = {
   pl: {
     defaultTitle: 'Nasze Realizacje',
@@ -70,6 +72,8 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = ui.
     itemCount: finalProjects.length,
     scrollRef,
     cardRef,
+    autoPlay: true,
+    autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
   });
 
   if (!finalProjects.length) return null;
@@ -80,7 +84,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = ui.
         subtitle={subtitle}
         title={title}
         headingLevel="h2"
-        headingClassName="reveal-animation md:mb-0"
+        headingClassName=""
         titleId="projects-heading"
         actionLabel={t.seeAllProjects}
         actionLink={t.urls.projects}
@@ -90,7 +94,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = ui.
       <div className="relative">
         <div
           ref={scrollRef}
-          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
           aria-label={t.carouselLabel}

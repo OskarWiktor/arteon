@@ -5,8 +5,17 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBarChart2Fill, RiCustomerService2Line, RiFileList2Line, RiLightbulbFlashLine, RiLineChartLine, RiSearchEyeLine, RiSearchLine, RiShieldCheckLine, RiComputerLine, RiShoppingCartLine, RiPaletteLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiBarChart2Fill,
+  RiCustomerService2Line,
+  RiFileList2Line,
+  RiLightbulbFlashLine,
+  RiLineChartLine,
+  RiSearchEyeLine,
+  RiSearchLine,
+  RiShieldCheckLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FeatureGrid from '@/components/sections/FeatureGrid';
@@ -25,7 +34,7 @@ export const metadata = {
     description: 'Kompletny marketing: od diagnozy i wdrożeń SEO, przez stałe pozycjonowanie, po kampanie płatne, media społecznościowe i spójny branding.',
     url: 'https://www.arteonagency.pl/uslugi/marketing',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -88,44 +97,44 @@ export default function OfferMarketingHubPage() {
             {
               title: 'Jasną strategię działania',
               description: <>Plan działań oparty na psychologii w biznesie z podziałem na szybkie wygrane i strategiczne działania długoterminowe.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Raporty i decyzje oparte na danych',
               description: <>Przed realizacją jakichkolwiek działań, dokładnie badamy Twoją konkurencję, tak, abyś miał pewność, że marketing z nami będzie skuteczny.</>,
-              icon: <IoAnalytics className="h-6 w-6 text-slate-800" />,
+              icon: <IoAnalytics className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pełna własność danych i kont',
               description: <>Masz dostęp do wszystkich narzędzi, z których korzystamy, dzięki czemu w dowolnej chwili możesz sprawdzić wyniki naszych działań.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'SEO techniczne + treściowe',
               description: (
-                <>Prowadzimy kompleksowe działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>
+                <>Prowadzimy pełne działania pozycjonowania stron, dzięki czemu Twoja witryna ma treść, która odpowiada klientom oraz techniczną strukturę, którą lubią wyszukiwarki</>
               ),
-              icon: <RiSearchLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiSearchLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Lokalne lub krajowe SEO',
               description: <>Prowadzimy działania SEO krajowe oraz lokalne, dzięki czemu Twój biznes może rozwijać się w Twoim mieście i jednocześnie za granicą lub w całym kraju</>,
-              icon: <RiSearchEyeLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiSearchEyeLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Reklamy Google i Meta',
               description: <>Tworzymy kampanie oparte na realnych problemach klientów. Testujemy kreacje i słowa kluczowe, a budżet kierujemy w to, co działa.</>,
-              icon: <RiBarChart2Fill className="h-6 w-6 text-slate-800" />,
+              icon: <RiBarChart2Fill className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Na każdym etapie wiesz, ile i za co płacisz. Budżet, zakres i terminy są rozpisane przed startem działań.</>,
-              icon: <RiCustomerService2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiCustomerService2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wsparcie po wdrożeniu',
               description: <>Stale informujemy Cię o wynikach naszych działań, dajemy Ci jasne podsumowanie w mailu oraz prowadzimy konsultacje online</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -202,15 +211,20 @@ export default function OfferMarketingHubPage() {
 
         <Gap variant="line" />
 
-        <ContactForm title="Stwórzmy skuteczny marketing dla Twojej firmy" description="Opisz swoją firmę oraz cele. Przygotujemy plan działania i bezpłatną wycenę." defaultSubject="Marketing" />
+        <SectionContactForm
+          title="Sprawdź koszt usług marketingowych"
+          description="Napisz czym zajmuje się Twoja firma, podaj adres strony i opisz jakie cele chcesz osiągnąć - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp"
+          imageAlt="Pozycjonowanie stron i marketing internetowy"
+          defaultSubject="Marketing"
+        />
 
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
@@ -219,7 +233,6 @@ export default function OfferMarketingHubPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
@@ -228,21 +241,19 @@ export default function OfferMarketingHubPage() {
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              icon: <RiPaletteLine className="h-6 w-6" />,
               title: 'Projekty graficzne',
               description: 'Logo, wizytówki, ulotki i więcej',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne',
             },
             {
-              icon: <RiFileList2Line className="h-6 w-6" />,
               title: 'Tworzenie treści',
               description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-tresci',
             },
           ]}

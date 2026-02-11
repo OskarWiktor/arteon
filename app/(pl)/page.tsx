@@ -120,7 +120,7 @@ export default function HomePage() {
       <HomePageSchemas />
       <HeroBanner
         title="Rozwiń swoją markę z nami"
-        description="Witaj w Arteon - miejscu, które pomoże Ci rozwinąć Twój biznes online oraz offline"
+        description="Arteon to miejsce, które pomoże Ci rozwinąć firmę online i offline"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
         variant="center"
@@ -139,10 +139,14 @@ export default function HomePage() {
       <Wrapper>
         <Gap size="sm" />
 
+        <ProjectsCarousel title="Najnowsze realizacje" />
+
+        <Gap variant="line" />
+
         <SectionSteps
           subtitle="Cztery filary jakości"
           title="Elastyczny partner dla Twojej marki"
-          description="Prowadzimy kompleksowe działania rozwojowe w czterech kluczowych obszarach, dzięki czemu, pracując z nami, masz wszystko w jednym miejscu. Niezależnie od Twojej branży oraz celów, znajdziemy najlepszy sposób, aby rozwinąć Twój biznes, przyciągając właściwych odbiorców i klientów"
+          description="Działamy w czterech kluczowych obszarach, dzięki czemu masz wszystko w jednym miejscu. Niezależnie od branży i celów znajdziemy najlepszy sposób, aby rozwinąć Twój biznes i przyciągnąć właściwych klientów."
           items={[
             {
               topImageAlt: 'Papier firmowy dla kancelarii Lux Nova - mockup',
@@ -179,7 +183,7 @@ export default function HomePage() {
                     się martwić, jeśli nie posiadasz wiedzy technicznej.
                   </p>
                   <div className="mt-auto flex gap-4">
-                    <Button arrow link="/uslugi/strony-internetowe">
+                    <Button arrow link="/uslugi/tworzenie-stron-wordpress">
                       Strony
                     </Button>
                     <Button arrow link="/uslugi/blogi-internetowe">
@@ -193,7 +197,7 @@ export default function HomePage() {
               ),
             },
             {
-              topImageAlt: 'Szablony social media dla MSC Psychotherapy - mockup',
+              topImageAlt: 'Szablony media społecznościowe dla MSC Psychotherapy - mockup',
               topImageSrc: '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp',
               imageSrc: '/assets/ogien.webp',
               imageAlt: 'Ogień - symbol marketingu',
@@ -201,7 +205,7 @@ export default function HomePage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz kompleksowym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci.
+                    Specjalizujemy się w pełnym pozycjonowaniu witryn oraz pełnym marketingu firm w Google i nie tylko. Z nami zyskasz widoczność dokładnie tam, gdzie szukają Cię klienci.
                     Zajmujemy się również tworzeniem kampanii reklamowych oraz prowadzeniem mediów społecznościowych. Przeprowadzamy dokładną analizę Twojej branży oraz konkurencji, aby móc
                     zaproponować działania, które trafiają dokładnie w Twoją grupę odbiorców.
                   </p>
@@ -247,34 +251,30 @@ export default function HomePage() {
           items={[
             {
               title: 'Treści dopasowane do Twojego wymarzonego klienta',
-              icon: <RiArticleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiArticleLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Spójne projekty graficzne online oraz offline',
-              icon: <RiBrushLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBrushLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wsparcie prawne - polityki, regulaminy, WCAG 2.1 AA',
-              icon: <GoLaw className="h-6 w-6 text-slate-800" />,
+              icon: <GoLaw className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Strategie marketingowe odpowiadające na problemy Twoich odbiorców',
-              icon: <RiBarChart2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiBarChart2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dedykowane szkolenia i instrukcje',
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wsparcie w dalszym rozwoju po realizacji',
-              icon: <MdSupportAgent className="h-6 w-6 text-slate-800" />,
+              icon: <MdSupportAgent className="h-6 w-6 text-primary" />,
             },
           ]}
         />
-
-        <Gap variant="line" />
-
-        <ProjectsCarousel title="Najnowsze realizacje" />
 
         <Gap variant="line" />
 
@@ -305,10 +305,10 @@ export default function HomePage() {
 
       <CTABanner
         title="Zacznijmy od rozmowy"
-        description="Z chęcią porozmawiamy o Twoim pomyśle, przejdź do strony kontaktu i opisz swoją wizję rozwoju"
-        btnOne="Kontakt"
+        description="Opisz swoją wizję rozwoju, a przygotujemy propozycję dopasowaną do Twoich celów."
+        btnOne="Skontaktuj się z nami"
         btnOneLink="/kontakt"
-        btnTwo="Poznaj ofertę"
+        btnTwo="Sprawdź pełną ofertę usług"
         btnTwoLink="/uslugi"
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"

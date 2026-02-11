@@ -11,6 +11,8 @@ import type { ArticlePreview } from '@/types/article';
 import { slugify } from '@/utils/slugify';
 import { getPrimaryCategorySlug } from '@/utils/blogCategory';
 
+const AUTO_PLAY_INTERVAL_MS = 6000;
+
 const ui = {
   pl: {
     defaultTitle: 'Edukacja i artykuły',
@@ -77,6 +79,8 @@ export default function ArticlesCarousel({ articles, max = 10, title = ui.pl.def
     itemCount: finalArticles.length,
     scrollRef,
     cardRef,
+    autoPlay: true,
+    autoPlayIntervalMs: AUTO_PLAY_INTERVAL_MS,
   });
 
   if (!finalArticles.length) return null;
@@ -89,7 +93,7 @@ export default function ArticlesCarousel({ articles, max = 10, title = ui.pl.def
         subtitle={subtitle}
         title={title}
         headingLevel="h2"
-        headingClassName="reveal-animation md:mb-0"
+        headingClassName=""
         titleId="articles-heading"
         actionLabel={t.seeAllArticles}
         actionLink={allArticlesHref}
@@ -99,7 +103,7 @@ export default function ArticlesCarousel({ articles, max = 10, title = ui.pl.def
       <div className="relative">
         <div
           ref={scrollRef}
-          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pt-4 pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
           aria-label={t.carouselLabel}

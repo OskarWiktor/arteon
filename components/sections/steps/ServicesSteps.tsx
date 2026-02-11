@@ -27,7 +27,6 @@ function getItems() {
     {
       icon: <RiCodeSSlashFill className="h-8 w-8" />,
       title: 'Strony internetowe',
-      subtitle: 'od 1 600 zł',
       description: (
         <div className="flex h-full flex-col">
           <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
@@ -47,7 +46,6 @@ function getItems() {
     {
       icon: <RiShoppingCartLine className="h-8 w-8" />,
       title: 'Sklepy internetowe',
-      subtitle: 'od 4 000 zł',
       description: (
         <div className="flex h-full flex-col">
           <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
@@ -67,7 +65,6 @@ function getItems() {
     {
       icon: <RiArticleLine className="h-8 w-8" />,
       title: 'Blogi',
-      subtitle: 'od 2 900 zł',
       description: (
         <div className="flex h-full flex-col">
           <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
@@ -87,7 +84,6 @@ function getItems() {
     {
       icon: <RiPaletteLine className="h-8 w-8" />,
       title: 'Projekty graficzne',
-      subtitle: 'od 180 zł',
       description: (
         <div className="flex h-full flex-col">
           <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
@@ -107,13 +103,12 @@ function getItems() {
     {
       icon: <RiFileTextLine className="h-8 w-8" />,
       title: 'Tworzenie treści',
-      subtitle: 'od 300 zł',
       description: (
         <div className="flex h-full flex-col">
           <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">
             <li>Artykuły eksperckie</li>
             <li>Treści do stron i e-commerce</li>
-            <li>Posty i scenariusze do social mediów</li>
+            <li>Posty i scenariusze do mediów społecznościowych</li>
             <li>Język marki dopasowany do odbiorców</li>
           </ul>
           <div className="mt-auto">
@@ -127,7 +122,6 @@ function getItems() {
     {
       icon: <RiMegaphoneLine className="h-8 w-8" />,
       title: 'Marketing',
-      subtitle: 'od 700 zł',
       description: (
         <div className="flex h-full flex-col">
           <ul className="mb-3 list-disc space-y-1 pl-4 text-sm">

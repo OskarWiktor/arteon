@@ -57,10 +57,10 @@ export default function TermsPage() {
             </p>
             <p>
               3.2. <strong>Design:</strong> identyfikacja marki (loga, sygnety, kolory, typografia), materiały drukowane (wizytówki, ulotki, foldery, katalogi, odzież, gadżety), makiety i layouty
-              stron, retusz i optymalizacja grafik, retusz zdjęć, treści do social mediów (posty, stories, karuzele, szablony), montaż krótkich filmów.
+              stron, retusz i optymalizacja grafik, retusz zdjęć, treści do mediów społecznościowych (posty, stories, karuzele, szablony), montaż krótkich filmów.
             </p>
             <p>
-              3.3. <strong>Content:</strong> treści na strony (struktura i język dopasowany do branży), artykuły eksperckie i edukacyjne, opisy e-commerce (short i premium), treści do social mediów,
+              3.3. <strong>Content:</strong> treści na strony (struktura i język dopasowany do branży), artykuły eksperckie i edukacyjne, opisy e-commerce (short i premium), treści do mediów społecznościowych,
               oferty i case studies, redakcja i korekta, dostosowanie do SEO.
             </p>
             <p>

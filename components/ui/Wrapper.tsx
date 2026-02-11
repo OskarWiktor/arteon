@@ -9,7 +9,7 @@ interface WrapperProps extends HTMLAttributes<HTMLElement> {
 
 export default function Wrapper({ children, as: Tag = 'div', className = '', id, ...rest }: WrapperProps) {
   return (
-    <Tag id={id} className={`m-auto w-[90%] max-w-[1280px] ${className}`} {...rest}>
+    <Tag id={id} className={`m-auto w-[94%] max-w-[1420px] ${className}`} {...rest}>
       {children}
     </Tag>
   );

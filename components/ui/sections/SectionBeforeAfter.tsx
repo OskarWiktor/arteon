@@ -20,7 +20,7 @@ export default function SectionBeforeAfter({ title, beforeImage, afterImage, bef
     <section data-section="before-after" aria-labelledby={title ? 'before-after-title' : undefined}>
       <Wrapper>
         {title && (
-          <h2 id="before-after-title" className="h4 reveal-animation mb-6">
+          <h2 id="before-after-title" className="h3 mb-4 md:mb-6 lg:mb-8">
             {title}
           </h2>
         )}
@@ -38,7 +38,7 @@ export default function SectionBeforeAfter({ title, beforeImage, afterImage, bef
             <div className="absolute inset-y-0" style={{ left: `${position}%` }}>
               <div className="absolute top-1/2 left-1/2 h-full w-1 -translate-x-1/2 bg-white shadow-lg" />
               <button type="button" className="absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg">
-                <RiExpandLeftRightLine className="h-5 w-5 text-slate-800" />
+                <RiExpandLeftRightLine className="h-5 w-5 text-primary" />
               </button>
             </div>
 

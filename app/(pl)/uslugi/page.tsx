@@ -7,7 +7,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 const siteUrl = 'https://www.arteonagency.pl';
 
 const SERVICES = [
-  { name: 'Strony internetowe', path: '/uslugi/strony-internetowe' },
+  { name: 'Strony WordPress', path: '/uslugi/tworzenie-stron-wordpress' },
   { name: 'Sklepy internetowe', path: '/uslugi/sklepy-internetowe' },
   { name: 'Blogi internetowe', path: '/uslugi/blogi-internetowe' },
   { name: 'Projekt wizytówki', path: '/uslugi/projekty-graficzne/projekt-wizytowki' },
@@ -42,6 +42,8 @@ export const metadata = {
     images: [
       {
         url: `${siteUrl}/assets/projects/arteon-baners-msc.webp`,
+        width: 1200,
+        height: 630,
       },
     ],
   },
@@ -71,10 +73,10 @@ export default function OfferPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p className="mb-3">
-                    Tworzymy nowoczesne strony internetowe w oparciu o sprawdzone technologie. Tworzymy dedykowany wygląd oraz treści dopasowane do Twoich potrzeb i Twoich klientów.
+                    Tworzymy nowoczesne strony internetowe w oparciu o sprawdzone technologie. Każdy projekt obejmuje dedykowany wygląd oraz treści dopasowane do Twoich potrzeb i oczekiwań Twoich klientów.
                   </p>
                   <div className="mt-auto">
-                    <Button arrow link="/uslugi/strony-internetowe">
+                    <Button arrow link="/uslugi/tworzenie-stron-wordpress">
                       Przejdź do stron
                     </Button>
                   </div>
@@ -120,7 +122,7 @@ export default function OfferPage() {
 
         <SectionSteps
           title="Projekty graficzne"
-          subtitle="Kompleksowa oferta projektowa"
+          subtitle="Pełna oferta projektowa"
           description="Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik."
           grid="two"
           items={[
@@ -211,8 +213,8 @@ export default function OfferPage() {
               ),
             },
             {
-              topImageSrc: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
-              topImageAlt: 'Różne wersje logo firmy - warianty kolorystyczne i monochromatyczne',
+              topImageSrc: '/assets/projects/finish-masters/logo-finish-masters-case-study.webp',
+              topImageAlt: 'Logo dla firmy wykończeniowej Finish Masters - realizacja Arteon',
               title: 'Projekt logo',
               description: (
                 <div className="flex h-full flex-col">
@@ -441,7 +443,7 @@ export default function OfferPage() {
                 <div className="flex h-full flex-col">
                   <ul className="mb-3 list-disc space-y-1 pl-4">
                     <li>Piszemy treści, które jasno przedstawiają ofertę</li>
-                    <li>Układamy strukturę, by prowadziła odbiorcę krok po kroku</li>
+                    <li>Układamy strukturę, by prowadziła odbiorcę przez kolejne etapy</li>
                     <li>Dostosowujemy język do Twojej branży i klientów</li>
                   </ul>
                   <div className="mt-auto">

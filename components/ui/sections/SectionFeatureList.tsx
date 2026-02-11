@@ -12,7 +12,7 @@ export default function SectionFeatureList({ title, features }: SectionFeatureLi
       <Wrapper>
         <div className="mx-auto max-w-2xl rounded-2xl border border-black/10 bg-white p-8">
           {title && (
-            <h2 id="feature-list-title" className="h4 mb-6 text-center">
+            <h2 id="feature-list-title" className="h3 mb-4 md:mb-6 lg:mb-8 text-center">
               {title}
             </h2>
           )}
@@ -20,8 +20,8 @@ export default function SectionFeatureList({ title, features }: SectionFeatureLi
           <ul className="grid gap-3 md:grid-cols-2">
             {features.map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
-                <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-emerald-100">
-                  <RiCheckLine className="h-4 w-4 text-emerald-600" />
+                <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-success-bg">
+                  <RiCheckLine className="h-4 w-4 text-success-icon" />
                 </div>
                 <span className="text-sm">{feature}</span>
               </li>

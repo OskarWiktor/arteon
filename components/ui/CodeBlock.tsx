@@ -27,7 +27,7 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
 
   return (
     <figure
-      className={`group rounded-2xl border border-black/10 bg-gradient-to-b from-[color:var(--surface-dark)] to-[color:var(--surface-dark-2)] text-[color:var(--text-on-dark)] shadow-sm ${className}`}
+      className={`group rounded-2xl border border-black/10 bg-gradient-to-b from-[color:var(--foreground)] to-[color:var(--neutral-900)] text-[color:var(--text-on-dark)] shadow-sm ${className}`}
     >
       <div className="flex items-center justify-between gap-3 rounded-t-xl border-b border-white/10 px-4 py-2">
         <div className="flex items-center gap-2">

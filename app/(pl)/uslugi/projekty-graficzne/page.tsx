@@ -5,7 +5,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import ContactForm from '@/components/sections/ContactForm';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -16,9 +16,6 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Button from '@/components/ui/buttons/Button';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import {
-  RiComputerLine,
-  RiShoppingCartLine,
-  RiFileTextLine as RiContentLine,
   RiPencilRuler2Line,
   RiBrushLine,
   RiBarChart2Fill,
@@ -86,14 +83,14 @@ function ItemListSchema() {
 
 export const metadata = {
   title: 'Projekty graficzne do druku i online | Arteon',
-  description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
+  description: 'Realizujemy projekty graficzne do druku i online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/projekty-graficzne' },
   openGraph: {
     title: 'Projekty graficzne do druku i online | Arteon',
-    description: 'Realizujemy kompleksowe projekty graficzne, do druku oraz użytku online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
+    description: 'Realizujemy projekty graficzne do druku i online: od logo i identyfikacji po katalogi, ulotki, odzież i projekty stron',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -128,6 +125,10 @@ export default function OfferDesignPage() {
 
       <Wrapper>
         <Gap size="xs" />
+
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Co zyskujesz dzięki projektom graficznym?">
           <p>
@@ -170,7 +171,7 @@ export default function OfferDesignPage() {
             <a href="https://www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-link">
               (PrintPower - raport o zaufaniu do druku)
             </a>
-            . Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają sprzedaż w sprzedaży.
+            . Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają sprzedaż.
           </p>
 
           <br />
@@ -195,49 +196,45 @@ export default function OfferDesignPage() {
             {
               title: 'Pełną własność plików i praw',
               description: <>Po zakończeniu projektu przekazujemy komplet plików źródłowych i użytkowych wraz z licencjami. Masz pełną kontrolę nad materiałami firmowymi - dziś i w przyszłości.</>,
-              icon: <RiKey2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiKey2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pliki gotowe do druku i wdrożenia online',
               description: <>Dostarczamy pakiet do druku a także warianty do sieci - wszystko zoptymalizowane i gotowe do użycia.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Konsekwentną identyfikację wizualną',
               description: <>Ustalamy system kolorów i typografii oraz reguły stosowania. Dzięki temu wszystkie materiały firmowe mówią jednym językiem i wzmacniają markę przy każdym kontakcie.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Skład DTP z dbałością o detale',
               description: <>Kontrolujemy hierarchię, kerning i siatki. Przy katalogach i ulotkach pilnujemy czytelności, marginesów bezpieczeństwa oraz logiki łamania treści.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBrushLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dobór i obróbkę zdjęć',
               description: <>Pomagamy w wyborze zdjęć oraz dostosowujemy kadry, tła i kolory. Pliki przygotowujemy w zgodnych profilach barwnych do druku i na stronę internetową.</>,
-              icon: <RiImageLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiImageLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dostępność i czytelność',
               description: <>Projektujemy tak, aby materiały były zrozumiałe i czytelne. Kontrast, wielkości fontów i hierarchia informacji wspierają odbiorcę w szybkim podjęciu decyzji.</>,
-              icon: <IoAccessibilityOutline className="h-6 w-6 text-slate-800" />,
+              icon: <IoAccessibilityOutline className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Gwarancję i wsparcie po wdrożeniu',
               description: <>Po finalizacji masz nasze wsparcie przez 2 miesiące. Ewentualne poprawki techniczne wykonujemy w ramach gwarancji, a na życzenie wprowadzamy płatne zmiany.</>,
-              icon: <RiLifebuoyLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLifebuoyLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Zero ukrytych kosztów',
               description: <>Otrzymujesz ofertę z zakresem i terminami. Informujemy na bieżąco o ewentualnych kosztach dodatkowych, zanim podejmiemy kolejne kroki.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
-
-        <Gap variant="line" />
-
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
 
         <Gap variant="line" />
 
@@ -247,7 +244,7 @@ export default function OfferDesignPage() {
 
         <SectionSteps
           title="Projekty graficzne dla firm"
-          subtitle="Kompleksowa oferta projektowa"
+          subtitle="Pełna oferta projektowa"
           description="Poznaj pełną ofertę projektów graficznych - od wizytówek i ulotek po identyfikację wizualną oraz układy stron internetowych. Każda usługa ma własną stronę, na której zobaczysz szczegóły, przykłady realizacji i cennik."
           grid="two"
           items={[
@@ -494,14 +491,20 @@ export default function OfferDesignPage() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zbudujmy wizerunek Twojej firmy" description="Opisz swoją wizję, potrzeby oraz cele i otrzymaj darmową wycenę projektu graficznego" defaultSubject="Projekty graficzne" />
+        <SectionContactForm
+          title="Sprawdź koszt realizacji projektu graficznego"
+          description="Napisz czym zajmuje się Twoja firma, jaki materiał chcesz stworzyć oraz czy posiadasz logo i identyfikację wizualną - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/luxnova/luxnova-teczka-ofertowa-dla-kancelarii-przod.webp"
+          imageAlt="Realizacja projektu graficznego - teczka ofertowa dla kancelarii"
+          defaultSubject="Projekty graficzne"
+        />
 
         <Gap variant="line" />
 
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne"
-          title="Najczęstsze pytania o projekty graficzne"
+          title="Najczęstsze pytania dotyczące projektów graficznych"
           items={[
             {
               question: 'Ile kosztuje projekt graficzny dla firmy?',
@@ -520,7 +523,7 @@ export default function OfferDesignPage() {
             {
               question: 'Czy mogę zamówić projekt logo i całej identyfikacji wizualnej?',
               answer:
-                'Tak. Oferujemy kompleksowe pakiety identyfikacji wizualnej zawierające logo, kolorystykę, typografię, wzory grafik, szablony do social mediów i materiały drukowane. Każdy system dopasowujemy do archetypu Twojej marki.',
+                'Tak. Oferujemy pełne pakiety identyfikacji wizualnej zawierające logo, kolorystykę, typografię, wzory grafik, szablony do mediów społecznościowych i materiały drukowane. Każdy system dopasowujemy do archetypu Twojej marki.',
             },
             {
               question: 'Czy mogę zgłosić poprawki do projektu graficznego?',
@@ -535,7 +538,7 @@ export default function OfferDesignPage() {
             {
               question: 'Czy mogę zlecić stałą współpracę graficzną?',
               answer:
-                'Ta, oferujemy stałą obsługę graficzną w dopasowanej do indywidualnych potrzeb formie. Dzięki temu zyskujesz regularne wsparcie w tworzeniu materiałów - od postów i ulotek po katalogi czy banery reklamowe.',
+                'Tak, oferujemy stałą obsługę graficzną w dopasowanej do indywidualnych potrzeb formie. Dzięki temu zyskujesz regularne wsparcie w tworzeniu materiałów - od postów i ulotek po katalogi czy banery reklamowe.',
             },
             {
               question: 'Czy projekty są gotowe do druku?',
@@ -553,10 +556,9 @@ export default function OfferDesignPage() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
@@ -565,7 +567,6 @@ export default function OfferDesignPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
@@ -574,21 +575,19 @@ export default function OfferDesignPage() {
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              icon: <RiBarChart2Fill className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google i nie tylko',
               size: 'small',
               backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              icon: <RiContentLine className="h-6 w-6" />,
               title: 'Tworzenie treści',
               description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-tresci',
             },
           ]}

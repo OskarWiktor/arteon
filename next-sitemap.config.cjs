@@ -120,6 +120,42 @@ const ARTICLES = readBlog();
 const SITE_URL = 'https://www.arteonagency.pl';
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 
+const ROUTE_IMAGE = new Map();
+
+ROUTE_IMAGE.set('/', '/assets/arteon-logo-on-mockup.webp');
+ROUTE_IMAGE.set('/uslugi', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne', '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-logo', '/assets/projects/finish-masters/logo-finish-masters-case-study.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-wizytowki', '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-ulotki', '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-katalogu', '/assets/projects/gazetka-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-cennika', '/assets/projects/cennik-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-papieru-firmowego', '/assets/projects/luxnova/papier-firmowy-dla-kancelarii-luxnova.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-teczki-ofertowej', '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-menu-restauracji', '/assets/projects/nocturna/menu-dla-baru-nocturna-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej', '/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera', '/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe', '/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej', '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-odziezy-firmowej', '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp');
+ROUTE_IMAGE.set('/uslugi/projekty-graficzne/projekt-graficzny-strony', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/uslugi/tworzenie-stron-wordpress', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/uslugi/tworzenie-stron-wordpress/optymalizacja-strony-wordpress', '/assets/projects/arteon-baners-camper-albania-mockup.webp');
+ROUTE_IMAGE.set('/uslugi/sklepy-internetowe', '/assets/projects/arteon-baners-trilllizo.webp');
+ROUTE_IMAGE.set('/uslugi/blogi-internetowe', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/uslugi/tworzenie-tresci', '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp');
+ROUTE_IMAGE.set('/uslugi/marketing', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/uslugi/marketing/audyt-seo', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/uslugi/marketing/optymalizacja-seo', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/uslugi/marketing/pozycjonowanie-stron', '/assets/projects/arteon-baners-msc.webp');
+ROUTE_IMAGE.set('/narzedzia', '/assets/arteon-logo-on-mockup.webp');
+
+function sitemapImage(relativePath) {
+  if (!relativePath) return undefined;
+  const abs = relativePath.startsWith('http') ? relativePath : `${SITE_URL}${relativePath.startsWith('/') ? '' : '/'}${relativePath}`;
+  return [{ loc: new URL(abs) }];
+}
+
 (function enrichEducationLastmods() {
   for (const a of ARTICLES) {
     const cat = primaryCategorySlug(a);
@@ -165,7 +201,10 @@ module.exports = {
       alternateRefs: [],
     };
     const lastmod = ROUTE_LASTMOD.get(loc);
-    return lastmod ? { ...base, lastmod } : base;
+    if (lastmod) base.lastmod = lastmod;
+    const img = ROUTE_IMAGE.get(loc);
+    if (img) base.images = sitemapImage(img);
+    return base;
   },
 
   additionalPaths: async () => {
@@ -187,6 +226,7 @@ module.exports = {
 
       const entry = { loc, changefreq: 'weekly', priority: 0.6 };
       if (iso) entry.lastmod = iso;
+      if (p.image) entry.images = sitemapImage(p.image);
       add.push(entry);
     }
 
@@ -209,6 +249,7 @@ module.exports = {
       const lastmod = fromData || fallback;
       const entry = { loc, changefreq: 'weekly', priority: 0.72 };
       if (lastmod) entry.lastmod = lastmod;
+      if (a.cover) entry.images = sitemapImage(a.cover);
       add.push(entry);
     }
 
@@ -219,20 +260,20 @@ module.exports = {
     policies: [
       {
         userAgent: '*',
-        disallow: ['/_next/', '/api/', '/fonts/', '/favicon.ico', '/*.json$'],
-        allow: ['/_next/image'],
+        disallow: ['/_next/data/', '/api/', '/fonts/', '/favicon.ico'],
+        allow: ['/_next/static/', '/_next/image'],
       },
     ],
     additionalSitemaps: [],
     transformRobotsTxt: async () => {
       return [
         'User-agent: *',
-        'Disallow: /_next/',
+        'Allow: /_next/static/',
         'Allow: /_next/image',
+        'Disallow: /_next/data/',
         'Disallow: /api/',
         'Disallow: /fonts/',
         'Disallow: /favicon.ico',
-        'Disallow: /*.json$',
         '',
         `Host: ${SITE_URL}`,
         '',

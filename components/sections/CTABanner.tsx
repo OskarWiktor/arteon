@@ -56,13 +56,13 @@ export default function CTABanner({
       <section data-section="cta-split">
         <Wrapper>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="flex flex-col justify-between rounded-2xl bg-slate-800 p-8 text-white">
+            <div className="flex flex-col justify-between rounded-2xl bg-primary p-8 text-white">
               <div>
-                <h3 className="h4 mb-3">{leftColumn?.title}</h3>
+                <h3 className="h3 mb-3">{leftColumn?.title}</h3>
                 {leftColumn?.description && <p className="mb-6 text-white/80">{leftColumn.description}</p>}
               </div>
               {leftColumn?.btnLabel && leftColumn?.btnLink && (
-                <AppLink href={leftColumn.btnLink} className="inline-flex w-fit items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium text-slate-800 transition hover:bg-slate-100">
+                <AppLink href={leftColumn.btnLink} className="inline-flex w-fit items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium text-primary transition hover:bg-primary-light">
                   {leftColumn.btnLabel}
                   <RiArrowRightLine className="h-5 w-5" />
                 </AppLink>
@@ -70,13 +70,13 @@ export default function CTABanner({
             </div>
             <div className="flex flex-col justify-between rounded-2xl border border-black/10 bg-white p-8">
               <div>
-                <h3 className="h4 mb-3">{rightColumn?.title}</h3>
+                <h3 className="h3 mb-3">{rightColumn?.title}</h3>
                 {rightColumn?.description && <p className="text-light mb-6">{rightColumn.description}</p>}
               </div>
               {rightColumn?.btnLabel && rightColumn?.btnLink && (
                 <AppLink
                   href={rightColumn.btnLink}
-                  className="inline-flex w-fit items-center gap-2 rounded-xl border border-slate-800 px-6 py-3 font-medium text-slate-800 transition hover:bg-slate-50"
+                  className="inline-flex w-fit items-center gap-2 rounded-xl border border-primary px-6 py-3 font-medium text-primary transition hover:bg-neutral-50"
                 >
                   {rightColumn.btnLabel}
                   <RiArrowRightLine className="h-5 w-5" />
@@ -93,7 +93,7 @@ export default function CTABanner({
   const isGradient = backgroundStyle === 'gradient';
   const isSolid = backgroundStyle === 'solid';
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/80' : '';
-  const baseBg = isGradient ? 'bg-gradient-to-r from-slate-800 to-slate-700' : isSolid ? 'bg-slate-800' : overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
+  const baseBg = isGradient ? 'bg-gradient-to-r from-primary to-primary' : isSolid ? 'bg-primary' : overlay === 'black' ? 'bg-neutral-900' : 'bg-white';
 
   const toneTextClass = isGradient || isSolid || overlay === 'black' ? 'text-white' : 'text-dark';
   const toneMutedClass = isGradient || isSolid || overlay === 'black' ? 'text-white/90' : 'text-light';
@@ -117,8 +117,8 @@ export default function CTABanner({
             headingLevel="h3"
             eyebrowVariant="dynamic"
             eyebrowClassName={`text-base tracking-wider uppercase ${overlay === 'black' ? 'text-white' : 'text-dark'}`}
-            headingClassName="reveal-animation"
-            descriptionClassName={`reveal-animation mx-auto mt-3 text-base leading-relaxed md:mt-5 md:text-lg ${toneMutedClass}`}
+            headingClassName=""
+            descriptionClassName={` mx-auto text-base leading-relaxed md:text-lg ${toneMutedClass}`}
           />
 
           <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" align="center" ariaLabel={t.actionsLabel} role="group" />

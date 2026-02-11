@@ -4,8 +4,17 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiBookOpenLine, RiFileTextLine, RiIdCardLine, RiPantoneLine, RiMoneyDollarCircleLine, RiComputerLine, RiShoppingCartLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiBookOpenLine,
+  RiFileTextLine,
+  RiIdCardLine,
+  RiPantoneLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -16,8 +25,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt identyfikacji wizualnej | Arteon',
@@ -28,7 +37,7 @@ export const metadata = {
     description: 'Spójny system identyfikacji wizualnej dla Twojej marki. Od logo po materiały firmowe.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -91,6 +100,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz zamawiając identyfikację wizualną?">
           <p>
             <strong>Spójny system wizualny porządkuje każdy kontakt z Twoją marką.</strong> Firmy, które konsekwentnie trzymają identyfikację, notują średnio
@@ -149,27 +162,27 @@ export default function OfferDesignBrandIdentityDesignPage() {
             {
               title: 'Spójny system marki',
               description: <>Projektujemy logo, kolory i typografię tak, aby wszystkie materiały - online i offline - działały razem.</>,
-              icon: <RiPantoneLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiPantoneLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Materiały do codziennej komunikacji',
               description: <>Przygotowujemy podstawowe wzory: wizytówki, papiery firmowe i grafiki do prezentacji marki.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Proste zasady stosowania',
               description: <>Dostajesz krótkie wytyczne, które ułatwiają wdrożenie identyfikacji w całej firmie - także osobom nietechnicznym.</>,
-              icon: <RiBookOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBookOpenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pełna gotowość do druku i online',
               description: <>Otrzymujesz komplet plików do codziennej pracy: wersje do druku, internetu i mediów społecznościowych.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -196,17 +209,12 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt identyfikacji wizualnej - przykładowe zakresy"
-          subtitle="Dobieramy zakres systemu do etapu rozwoju Twojej marki"
           plans={[
             {
               name: 'Podstawowa identyfikacja dla nowej marki',
@@ -228,7 +236,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
               features: [
                 'Wszystko z pakietu podstawowego, a dodatkowo:',
                 'Rozszerzona paleta barw (kolory pomocnicze, akcentowe)',
-                'Więcej materiałów - np. teczka ofertowa, grafiki do social mediów, slajdy prezentacyjne',
+                'Więcej materiałów - np. teczka ofertowa, grafiki do mediów społecznościowych, slajdy prezentacyjne',
                 'Bardziej rozbudowana mini-księga znaku z przykładami zastosowań',
               ],
               btnOne: 'Porozmawiajmy o identyfikacji dla rosnącej marki',
@@ -257,9 +265,11 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów identyfikację wizualną"
-          description="Opisz, czym się zajmujesz i jakich materiałów potrzebujesz dla swojej firmy. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji identyfikacji wizualnej"
+          description="Napisz czym zajmuje się Twoja firma, jakich materiałów potrzebujesz oraz czy posiadasz już logo — otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/finish-masters/logo-prezentacja-finish-masters-kolory_1.webp"
+          imageAlt="Realizacja identyfikacji wizualnej - Finish Masters"
           defaultSubject="Identyfikacja wizualna"
         />
 
@@ -267,6 +277,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <FaqPanels
           openByDefault={1}
+          title="Najczęstsze pytania dotyczące projektów identyfikacji wizualnej"
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej"
           items={[
             {
@@ -312,53 +323,10 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym warto połączyć identyfikację wizualną?"
-          subtitle="Zobacz też"
-          description="Najwięcej zyskujesz, gdy nowy system wizualny od razu wdrożysz we wszystkich miejscach."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Strona internetowa',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Nowa identyfikacja najlepiej zadziała, gdy od razu przeniesiesz ją na stronę. Projektujemy i wdrażamy strony spójne z Twoim systemem.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/strony-internetowe">
-                      Sprawdź strony internetowe
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiBarChart2Fill className="h-8 w-8" />,
-              title: 'Treści dla strony',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
-                    myślą o SEO i wyższej konwersji.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/tworzenie-tresci">
-                      Zobacz usługi tworzenia treści
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'large',
@@ -367,7 +335,6 @@ export default function OfferDesignBrandIdentityDesignPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
@@ -376,25 +343,27 @@ export default function OfferDesignBrandIdentityDesignPage() {
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'small',
               backgroundImage: '/assets/blog/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow/rozne-wersje-logo-firmy.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

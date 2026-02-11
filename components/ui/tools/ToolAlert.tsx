@@ -10,10 +10,10 @@ interface ToolAlertProps {
 
 export default function ToolAlert({ children, variant = 'info', className = '' }: ToolAlertProps) {
   const variantClasses: Record<AlertVariant, string> = {
-    error: 'border-red-200 bg-red-50 text-red-800',
-    success: 'border-emerald-200 bg-emerald-100 text-emerald-700',
+    error: 'border-error-border bg-error-bg text-error-text',
+    success: 'border-success-border bg-success-bg text-success-text',
     info: 'border-neutral-200 bg-neutral-50 text-mid',
-    warning: 'border-amber-200 bg-amber-50 text-amber-800',
+    warning: 'border-warning-border bg-warning-bg text-warning-text',
   };
 
   return (

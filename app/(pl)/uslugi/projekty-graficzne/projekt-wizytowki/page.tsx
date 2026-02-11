@@ -4,8 +4,8 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiComputerLine, RiShoppingCartLine, RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiIdCardLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiIdCardLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -13,12 +13,12 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import FeatureGrid from '@/components/sections/FeatureGrid';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
 import { IoColorPalette } from 'react-icons/io5';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Profesjonalny projekt wizytówki: czytelność, elegancja i pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -59,7 +59,7 @@ export default function OfferDesignBusinessCardPage() {
     <>
       <HeroBanner
         title="Projekt wizytówki"
-        description={<>Projektujemy wizytówki dopasowane do swojej marki - czytelne, eleganckie, gotowe do druku. Pliki źródłowe i wersje do druku.</>}
+        description={<>Projektujemy wizytówki dopasowane do Twojej marki - czytelne, eleganckie, gotowe do druku. Pliki źródłowe i wersje do druku.</>}
         buttonAccent="Bezpłatna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
@@ -89,9 +89,12 @@ export default function OfferDesignBusinessCardPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
         <SectionInfo title="Co zyskujesz zamawiając projekt wizytówki?">
           <p>
-            <strong>Profesjonalnie zaprojektowana wizytówka </strong> to schludny układ, czytelne dane i spójny styl ułatwiają zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu. Wizytówka
+            <strong>Profesjonalnie zaprojektowana wizytówka</strong> łączy schludny układ, czytelne dane i spójny styl, co ułatwia zapamiętanie firmy oraz szybki powrót do kontaktu po spotkaniu. Wizytówka
             staje się fizycznym śladem rozmowy, który może zamienić się w telefon lub wiadomość po kilku dniach czy tygodniach.
           </p>
 
@@ -99,7 +102,7 @@ export default function OfferDesignBusinessCardPage() {
 
           <p>
             <strong>Estetyka materiałów realnie wpływa na ocenę wiarygodności marki.</strong> Jakość oprawy wizualnej - także na małym formacie - podnosi zaufanie do firmy i ułatwia decyzję o
-            współpracy
+            współpracy.
           </p>
 
           <br />
@@ -123,22 +126,22 @@ export default function OfferDesignBusinessCardPage() {
             {
               title: 'Czytelny układ i profesjonalny wygląd',
               description: <>Projektujemy wizytówki, które w kilka sekund wyjaśniają, czym się zajmujesz.</>,
-              icon: <RiIdCardLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiIdCardLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pliki gotowe do druku',
-              description: <>Otrzymujesz pliki przygotowane do druku</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              description: <>Otrzymujesz pliki przygotowane do druku w standardzie CMYK ze spadami.</>,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
-              description: <>Dopasowujemy kolory, typografię i styl do swojej marki, aby zachować spójność wizerunku.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              description: <>Dopasowujemy kolory, typografię i styl do Twojej marki, aby zachować spójność wizerunku.</>,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -148,7 +151,7 @@ export default function OfferDesignBusinessCardPage() {
         <SectionInfo title="Dla kogo projekt wizytówki ma największy sens?" subtitle="Dla kogo">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Dla specjalistów,</strong> - prawników, terapeutów, doradców, trenerów - którzy często spotykają się z klientami i chcą ułatwić im ponowny kontakt.
+              <strong>Dla specjalistów</strong> - prawników, terapeutów, doradców, trenerów - którzy często spotykają się z klientami i chcą ułatwić im ponowny kontakt.
             </li>
             <li>
               <strong>Dla właścicieli firm lokalnych</strong> - salonów, gabinetów, restauracji, serwisów - gdzie wizytówka jest często pierwszym kontaktem z marką.
@@ -164,17 +167,12 @@ export default function OfferDesignBusinessCardPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt wizytówki - przykładowe pakiety"
-          subtitle="Zakres dopasowany do Twojej marki"
           plans={[
             {
               name: 'Pakiet Start - jedna wizytówka',
@@ -228,9 +226,11 @@ export default function OfferDesignBusinessCardPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt wizytówki"
-          description="Napisz, czym się zajmujesz, jakie dane mają znaleźć się na wizytówce (imię, funkcja, numer, adres strony) oraz czy potrzebujesz jednego czy kilku wariantów. Na tej podstawie przygotujemy wycenę i zaproponujemy termin realizacji."
+        <SectionContactForm
+          title="Sprawdź koszt realizacji wizytówki"
+          description="Napisz jakie dane mają znaleźć się na wizytówce, czy potrzebujesz jednego czy kilku wariantów oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp"
+          imageAlt="Realizacja projektu wizytówki - kancelaria Luxnova"
           defaultSubject="Projekt wizytówki"
         />
 
@@ -239,10 +239,10 @@ export default function OfferDesignBusinessCardPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-wizytowki"
-          title="Najczęstsze pytania o projekt wizytówki"
+          title="Najczęstsze pytania dotyczące projektów wizytówek"
           items={[
             {
-              question: 'Ile trwa trwa realizacja projektu wizytówki?',
+              question: 'Ile trwa realizacja projektu wizytówki?',
               answer:
                 'Standardowo projekt przygotowujemy w około 2-4 dni roboczych od momentu zebrania materiałów. W przypadku większej liczby wariantów lub dodatkowych korekt termin ustalamy indywidualnie.',
             },
@@ -263,55 +263,10 @@ export default function OfferDesignBusinessCardPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym można połączyć projekt wizytówki?"
-          subtitle="Zobacz też"
-          description="Wizytówka jest często pierwszym elementem większej układanki. Najlepszy efekt daje, gdy jest częścią spójnego systemu identyfikacji i promocji Twojej firmy."
-          items={[
-            {
-              icon: <IoColorPalette className="h-8 w-8" />,
-              title: 'Projekt identyfikacji wizualnej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Aby wszystko było spójne, możesz rozważyć stworzenie pełnej identyfikacji wizualnej: logo, ulotki, papier firmowy - wszystko zrealizujesz w jednym miejscu.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Zobacz projekt identyfikacji wizualnej
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Szablony postów do mediów społecznościowych',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Tworzenie treści do mediów społecznościowych bywa męczące lecz jest to jeden z najlepszych sposobów na budowanie profesjonalnego wizerunku firmy. Z nami możesz skrócić czas
-                    tworzenia kolejnych treści - tworząc pakiet szablonów dla dedykowanych platform społecznościowych
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe">
-                      Zobacz szablony do mediów społecznościowych
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPencilRuler2Line className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -320,7 +275,6 @@ export default function OfferDesignBusinessCardPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt logo',
               description: 'Zbuduj rozpoznawalny znak firmowy',
               size: 'medium',
@@ -329,26 +283,28 @@ export default function OfferDesignBusinessCardPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-logo',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty online',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
           ]}
         />
 
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
+      
         <Gap size="sm" />
       </Wrapper>
 

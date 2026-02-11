@@ -4,8 +4,8 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiShoppingCartLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import { RiPencilRuler2Line, RiBarChart2Fill, RiCodeSSlashFill, RiDeviceLine, RiLayoutLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -16,8 +16,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt graficzny strony | Arteon',
@@ -28,7 +28,7 @@ export const metadata = {
     description: 'Layout www dopasowany do Twojej marki i celów biznesowych. Gotowy do wdrożenia.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-msc.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -58,7 +58,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         title="Projekt graficzny strony"
         description={
           <>
-            Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Zaprojektujemy layout Twojej strony tak, aby prowadził wzrok krok po kroku: od pierwszego wrażenia, przez ofertę, aż po kontakt
+            Wygląd, struktura i komfort użytkownika pracują na sprzedaż. Zaprojektujemy layout Twojej strony tak, aby prowadził wzrok od pierwszego wrażenia, przez ofertę, aż po kontakt
             lub zakup.
           </>
         }
@@ -90,6 +90,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
       <Wrapper>
         <Gap size="xs" />
+
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
 
         <SectionInfo title="Co zyskujesz zamawiając projekt graficzny strony?">
           <p>
@@ -137,27 +141,27 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             {
               title: 'Przemyślany układ i estetyka',
               description: <>Tworzymy layouty, które prowadzą wzrok i ułatwiają podjęcie decyzji na stronie - od nagłówka po stopkę.</>,
-              icon: <RiLayoutLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLayoutLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Responsywność i czytelność',
               description: <>Projekt działa na komputerze, tablecie i telefonie, zachowując spójny wygląd i wygodę użycia.</>,
-              icon: <RiDeviceLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiDeviceLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Gotowość do wdrożenia',
               description: <>Dostarczamy pliki i rekomendacje, które przyspieszają pracę dewelopera i skracają czas publikacji.</>,
-              icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-800" />,
+              icon: <RiCodeSSlashFill className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wspólne dopracowanie szczegółów',
               description: <>Uwzględniamy poprawki i dopracowujemy kolory, typografię oraz elementy nawigacji do pełnej akceptacji.</>,
-              icon: <RiPencilRuler2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiPencilRuler2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -173,7 +177,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             <li>Planujesz nową stronę lub redesign i chcesz najpierw zobaczyć gotowy layout, zanim zainwestujesz w wdrożenie.</li>
             <li>Masz rozbudowaną ofertę i potrzebujesz jasnej ścieżki użytkownika: od wejścia na stronę do kontaktu lub zakupu.</li>
             <li>Współpracujesz z deweloperem i chcesz przekazać mu konkretny projekt zamiast ogólnego briefu.</li>
-            <li>Chcesz uporządkować aktualną stronę: poprawić czytelność, nagłówki, sekcje i wezwań do działania.</li>
+            <li>Chcesz uporządkować aktualną stronę: poprawić czytelność, nagłówki, sekcje i wezwania do działania.</li>
             <li>Przygotowujesz landing page pod kampanie reklamowe i zależy Ci na jak najlepszym wykorzystaniu ruchu.</li>
           </ul>
 
@@ -184,17 +188,12 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt graficzny strony - przykładowe zakresy"
-          subtitle="Dobieramy zakres projektu do celu i wielkości serwisu"
           plans={[
             {
               name: 'Projekt layoutu landing page',
@@ -245,9 +244,11 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt graficzny strony"
-          description="Opisz, czym się zajmujesz oraz co chcesz, aby było na Twojej stronie. Na tej podstawie przygotujemy wycenę, termin i rekomendacje."
+        <SectionContactForm
+          title="Sprawdź koszt projektu graficznego strony"
+          description="Napisz co chciałbyś/aś umieścić na swojej stronie, ile podstron potrzebujesz oraz czy posiadasz logo i zdjęcia — otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp"
+          imageAlt="Projekt graficzny strony internetowej w Figma"
           defaultSubject="Projekt graficzny strony"
         />
 
@@ -256,6 +257,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-graficzny-strony"
+          title="Najczęstsze pytania dotyczące projektów graficznych stron"
           items={[
             {
               question: 'Ile kosztuje projekt graficzny strony?',
@@ -281,12 +283,12 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
             },
             {
               question: 'W jakim formacie dostanę projekt?',
-              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy również zająć się realizacją strony, co wpłynie na mniejsze koszty',
+              answer: 'Najczęściej pracujemy w Figmie i w tej formie przekazujemy projekt do wdrożenia. Możemy również zająć się realizacją strony, co wpłynie na mniejsze koszty.',
             },
             {
               question: 'Czy projekt graficzny strony mogę wykorzystać w przyszłości?',
               answer:
-                'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu',
+                'Tak, po finalizacji masz pełne prawa do projektu. Możesz wdrożyć go od razu lub w przyszłości, a także rozwijać swoją stronę o kolejne podstrony na bazie dostarczonego projektu.',
             },
             {
               question: 'Czy mogę zamówić tylko jedną podstronę?',
@@ -297,53 +299,10 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym warto połączyć projekt graficzny strony?"
-          subtitle="Zobacz też"
-          description="Najlepszy efekt uzyskasz, gdy dopracowany układ strony internetowej od razu zamienisz na w pełni działającą stronę z treściami dopasowanymi do Twojej grupy odbiorczej."
-          items={[
-            {
-              icon: <RiCodeSSlashFill className="h-8 w-8" />,
-              title: 'Wdrożenie strony internetowej',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Projekt możemy od razu przełożyć na działającą stronę - z uwzględnieniem szybkości, SEO i panelem ułatwiającym dalszą edycję treści.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/strony-internetowe">
-                      Sprawdź strony internetowe
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiBarChart2Fill className="h-8 w-8" />,
-              title: 'Treści dla strony',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Dobrze zaprojektowany układ strony potrzebuje treści, która podbije widoczność Twojej strony i zachęci potencjalnych klientów do kontaktu. Pomagamy ułożyć teksty i strukturę z
-                    myślą o SEO i wyższej konwersji.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/tworzenie-tresci">
-                      Zobacz usługi tworzenia treści
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Wdrożenie projektu w działającą stronę',
               size: 'large',
@@ -352,7 +311,6 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty we własnym sklepie online',
               size: 'medium',
@@ -361,25 +319,27 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiBarChart2Fill className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Zwiększ widoczność w Google',
               size: 'small',
               backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

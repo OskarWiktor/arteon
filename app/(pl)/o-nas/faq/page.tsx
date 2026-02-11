@@ -127,7 +127,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Czy pomożecie z RODO/cookies i zgodnością witryny z prawem?',
     answer:
-      'Tak, w każdym projekcie witryny przewidujemy pomoc w zakresie dostosowania witryny do standardów, w tym również do WCAG 2.1 AA. Jeśli nie jesteś pewien, co jest potrzebne na Twojej stronie, możesz bez obaw nam to powierzyć - jesteśmy tu, żeby jak najlepiej Ci pomóc.',
+      'Tak, w każdym projekcie witryny przewidujemy pomoc w zakresie dostosowania witryny do standardów, w tym również do WCAG 2.1 AA. Jeśli nie jesteś pewien, co jest potrzebne na swojej stronie, możesz bez obaw nam to powierzyć - jesteśmy tu, żeby jak najlepiej Ci pomóc.',
   },
   {
     question: 'Jak wygląda komunikacja w trakcie projektu?',
@@ -164,7 +164,7 @@ export const metadata: Metadata = {
     description: 'Odpowiadamy na najczęstsze pytania dotyczące współpracy: proces, terminy, wycena, treści, SEO, utrzymanie i odpowiedzialność po wdrożeniu.',
     url: toAbsoluteUrl('/o-nas/faq'),
     type: 'website',
-    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp') }],
+    images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
   },
 };
 
@@ -184,7 +184,7 @@ export default function AboutFaqPage() {
       <Wrapper as="article" itemScope itemType="https://schema.org/FAQPage">
         <Gap size="xs" />
 
-        <FaqPanels items={FAQ_ITEMS} openByDefault={1} generateSchema={false} pageUrl={toAbsoluteUrl('/o-nas/faq')} />
+        <FaqPanels title="Najczęstsze pytania dotyczące współpracy" items={FAQ_ITEMS} openByDefault={1} generateSchema={false} pageUrl={toAbsoluteUrl('/o-nas/faq')} />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }} />
 

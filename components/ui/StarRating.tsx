@@ -39,7 +39,7 @@ export const StarRating = memo(function StarRating({ value, size = 20, className
   );
 
   return (
-    <span className={`text-amber-500 ${className}`} aria-hidden="true">
+    <span className={`text-accent ${className}`} aria-hidden="true">
       {Array.from({ length: full }).map((_, i) => (
         <span key={`f-${i}`}>{FullStar}</span>
       ))}

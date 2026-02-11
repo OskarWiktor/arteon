@@ -46,17 +46,17 @@ export default function SectionPackages({ title, subtitle, description, packages
           description={description}
           headingLevel="h2"
           titleId="packages-title"
-          headingClassName="reveal-animation"
-          descriptionClassName="reveal-animation mt-3"
+          headingClassName=""
+          descriptionClassName=""
         />
 
-        <div className="mt-8 overflow-x-auto md:mt-12">
+        <div className="overflow-x-auto">
           <table className="w-full min-w-[600px] border-collapse">
             <thead>
               <tr className="border-b border-black/10">
                 <th className="text-light p-4 text-left text-sm font-medium">{t.feature}</th>
                 {displayPackages.map((pkg, idx) => (
-                  <th key={idx} className={`p-4 text-center text-sm font-medium ${idx === highlightedIndex ? 'rounded-t-2xl bg-slate-100' : ''}`}>
+                  <th key={idx} className={`p-4 text-center text-sm font-medium ${idx === highlightedIndex ? 'rounded-t-2xl bg-primary-light' : ''}`}>
                     {pkg.name}
                   </th>
                 ))}
@@ -69,8 +69,8 @@ export default function SectionPackages({ title, subtitle, description, packages
                   {displayPackages.map((_, pIdx) => {
                     const hasFeature = feature.values[pIdx] ?? false;
                     return (
-                      <td key={pIdx} className={`p-4 text-center ${pIdx === highlightedIndex ? 'bg-slate-50' : ''}`}>
-                        {hasFeature ? <RiCheckLine className="mx-auto h-5 w-5 text-emerald-600" aria-label="Tak" /> : <RiCloseLine className="mx-auto h-5 w-5 text-slate-300" aria-label="Nie" />}
+                      <td key={pIdx} className={`p-4 text-center ${pIdx === highlightedIndex ? 'bg-neutral-50' : ''}`}>
+                        {hasFeature ? <RiCheckLine className="mx-auto h-5 w-5 text-success-icon" aria-label="Tak" /> : <RiCloseLine className="mx-auto h-5 w-5 text-primary-light" aria-label="Nie" />}
                       </td>
                     );
                   })}
@@ -83,14 +83,14 @@ export default function SectionPackages({ title, subtitle, description, packages
         <div className="mt-6 block md:hidden">
           <div className="space-y-4">
             {displayPackages.map((pkg, pIdx) => (
-              <div key={pIdx} className={`rounded-2xl border p-4 ${pIdx === highlightedIndex ? 'border-slate-400 bg-slate-50' : 'border-black/10 bg-white'}`}>
+              <div key={pIdx} className={`rounded-2xl border p-4 ${pIdx === highlightedIndex ? 'border-primary-mid bg-neutral-50' : 'border-black/10 bg-white'}`}>
                 <h3 className="h5 mb-3">{pkg.name}</h3>
                 <ul className="space-y-2">
                   {features
                     .filter((f) => f.values[pIdx])
                     .map((feature, fIdx) => (
                       <li key={fIdx} className="flex items-center gap-2 text-sm">
-                        <RiCheckLine className="h-4 w-4 text-emerald-600" />
+                        <RiCheckLine className="h-4 w-4 text-success-icon" />
                         {feature.name}
                       </li>
                     ))}

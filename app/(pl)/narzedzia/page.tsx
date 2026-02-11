@@ -8,23 +8,38 @@ import FaqPanels from '@/components/ui/FaqPanels';
 import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import Link from 'next/link';
-import { RiImageEditLine, RiCropLine, RiAppsLine, RiFileTextLine, RiArticleLine, RiMailLine, RiContrast2Line, RiPaletteLine, RiPantoneLine, RiQrCodeLine, RiShieldCheckLine, RiInfinityFill, RiGlobalLine, RiLockLine } from 'react-icons/ri';
+import {
+  RiImageEditLine,
+  RiCropLine,
+  RiAppsLine,
+  RiFileTextLine,
+  RiArticleLine,
+  RiMailLine,
+  RiContrast2Line,
+  RiPaletteLine,
+  RiPantoneLine,
+  RiQrCodeLine,
+  RiShieldCheckLine,
+  RiInfinityFill,
+  RiGlobalLine,
+  RiLockLine,
+} from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
 
 export const metadata = {
   title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
-  description:
-    '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+  description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
   alternates: { canonical: toAbsoluteUrl('/narzedzia') },
   openGraph: {
     title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
-    description:
-      '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+    description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
     url: toAbsoluteUrl('/narzedzia'),
     type: 'website',
     images: [
       {
         url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
+        width: 1200,
+        height: 630,
       },
     ],
   },
@@ -34,8 +49,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Darmowe narzędzia online',
-  description:
-    '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
+  description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
   url: toAbsoluteUrl('/narzedzia'),
   inLanguage: 'pl-PL',
   isPartOf: {
@@ -75,7 +89,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 3,
         name: 'Generator favicon online',
-        description: 'Darmowy generator favicon online. Z jednego obrazu tworzy favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 — zgodne z wymaganiami przeglądarek i Lighthouse.',
+        description: 'Darmowy generator favicon online. Z jednego obrazu tworzy favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.',
         url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -101,9 +115,10 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 6,
-        name: 'Sprawdź czytelność kolorów online',
-        description: 'Sprawdź czy kolory tekstu i tła są czytelne. Narzędzie oblicza współczynnik kontrastu według WCAG i pomoże dobrać odpowiedni kolor za pomocą funkcji automatycznego dopasowania.',
-        url: toAbsoluteUrl('/narzedzia/sprawdz-czytelnosc-kolorow'),
+        name: 'Kontrast i czytelność kolorów online',
+        description:
+          'Sprawdź kontrast i czytelność kolorów tekstu i tła. Narzędzie oblicza współczynnik kontrastu według WCAG i pomoże dobrać odpowiedni kolor za pomocą funkcji automatycznego dopasowania.',
+        url: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
       },
@@ -154,8 +169,7 @@ const faqItems = [
   },
   {
     question: 'Czy moje pliki są wysyłane na serwer?',
-    answer:
-      'Nie. Wszystkie narzędzia działają w całości w przeglądarce. Pliki nie opuszczają komputera i nie są nigdzie przechowywane.',
+    answer: 'Nie. Wszystkie narzędzia działają w całości w przeglądarce. Pliki nie opuszczają komputera i nie są nigdzie przechowywane.',
   },
   {
     question: 'Czy potrzebuję konta?',
@@ -163,7 +177,7 @@ const faqItems = [
   },
   {
     question: 'Czy jest limit użycia?',
-    answer: 'Nie. Korzystasz bez ograniczeń — bez dziennych limitów, bez limitu plików, bez limitu konwersji.',
+    answer: 'Nie. Korzystasz bez ograniczeń - bez dziennych limitów, bez limitu plików, bez limitu konwersji.',
   },
   {
     question: 'Do czego służą te narzędzia?',
@@ -172,8 +186,7 @@ const faqItems = [
   },
   {
     question: 'Czy narzędzia działają na telefonie?',
-    answer:
-      'Tak, ale niektóre (konwerter WebP, generator favicon) działają lepiej na komputerze ze względu na przetwarzanie większych plików.',
+    answer: 'Tak, ale niektóre (konwerter WebP, generator favicon) działają lepiej na komputerze ze względu na przetwarzanie większych plików.',
   },
 ];
 
@@ -182,7 +195,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Darmowe narzędzia online"
-        description="Konwerter obrazów, generator favicon, licznik tekstu, narzędzia do kolorów i kody QR. Bez rejestracji, bez limitu — wszystko działa w przeglądarce."
+        description="Konwerter obrazów, generator favicon, licznik tekstu, narzędzia do kolorów i kody QR. Bez rejestracji, bez limitu - wszystko działa w przeglądarce."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -220,7 +233,10 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-zmiana-rozmiaru-i-kadrowanie-zdjecia.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Przygotuj idealny kadr ze zdjęcia pod social media lub stronę WWW. Wybierz gotowy format albo wpisz własne wymiary w pikselach i pobierz gotowe zdjęcie w PNG, JPG lub WebP.</p>
+                  <p>
+                    Przygotuj idealny kadr ze zdjęcia pod media społecznościowe lub stronę WWW. Wybierz gotowy format albo wpisz własne wymiary w pikselach i pobierz gotowe zdjęcie w PNG, JPG lub
+                    WebP.
+                  </p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/edytor-zdjec-online">
                       Otwórz narzędzie
@@ -356,17 +372,17 @@ export default function ToolsIndexPage() {
           items={[
             {
               icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Sprawdź czytelność kolorów',
-              topImageAlt: 'Sprawdź czytelność kolorów Arteon',
+              title: 'Kontrast i czytelność kolorów',
+              topImageAlt: 'Kontrast i czytelność kolorów Arteon',
               topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Sprawdź czy kolory tekstu i tła są czytelne. Wpisz kody kolorów, zobacz współczynnik kontrastu według <strong>WCAG</strong> i użyj funkcji{' '}
-                    <strong>Dopasuj</strong> do automatycznej korekty.
+                    Sprawdź czy kolory tekstu i tła są czytelne. Wpisz kody kolorów, zobacz współczynnik kontrastu według <strong>WCAG</strong> i użyj funkcji <strong>Dopasuj</strong> do automatycznej
+                    korekty.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/sprawdz-czytelnosc-kolorow">
+                    <Button arrow link="/narzedzia/kontrast-i-czytelnosc-kolorow">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -396,9 +412,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-generator-palet-kolorow-online.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>
-                    Wybierz jeden kolor bazowy i wygeneruj 9 palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową, ciemną i inne. Kopiuj kody HEX jednym kliknięciem.
-                  </p>
+                  <p>Wybierz jeden kolor bazowy i wygeneruj 9 palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową, ciemną i inne. Kopiuj kody HEX jednym kliknięciem.</p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/generator-palet-kolorow">
                       Otwórz narzędzie
@@ -414,12 +428,10 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Czym są narzędzia Arteon?">
           <p className="mb-4">
-            Zestaw 10 darmowych narzędzi online do przygotowania materiałów na stronę internetową, do mediów społecznościowych i do druku. Konwerter obrazów na WebP, generator favicon, licznik długości
-            tekstu, ekstraktor kolorów, generator palet i kody QR.
+            Zestaw 10 darmowych narzędzi online do przygotowania materiałów na stronę internetową, do mediów społecznościowych i do druku. Konwerter obrazów na WebP, generator favicon, licznik
+            długości tekstu, ekstraktor kolorów, generator palet i kody QR.
           </p>
-          <p className="mb-4">
-            Wszystkie narzędzia działają w przeglądarce — pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.
-          </p>
+          <p className="mb-4">Wszystkie narzędzia działają w przeglądarce - pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.</p>
           <p>
             Jeśli potrzebujesz pomocy z projektem strony lub identyfikacji wizualnej, <Link href="/kontakt">skontaktuj się z nami</Link>.
           </p>
@@ -434,12 +446,12 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Pełna prywatność',
-              description: 'Wszystkie narzędzia przetwarzają pliki lokalnie w przeglądarce. Nic nie jest wysyłane na serwer — dane znikają po zamknięciu karty.',
+              description: 'Wszystkie narzędzia przetwarzają pliki lokalnie w przeglądarce. Nic nie jest wysyłane na serwer - dane znikają po zamknięciu karty.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Bez limitu użycia',
-              description: 'Korzystasz bez ograniczeń — bez dziennych limitów, bez limitu plików, bez limitu konwersji. Tyle razy, ile potrzebujesz.',
+              description: 'Korzystasz bez ograniczeń - bez dziennych limitów, bez limitu plików, bez limitu konwersji. Tyle razy, ile potrzebujesz.',
             },
             {
               icon: <RiLockLine className="h-6 w-6" />,
@@ -449,21 +461,21 @@ export default function ToolsIndexPage() {
             {
               icon: <RiGlobalLine className="h-6 w-6" />,
               title: 'Po polsku',
-              description: 'Wszystkie narzędzia są w języku polskim — interfejs, instrukcje i komunikaty. Bez szukania tłumaczeń.',
+              description: 'Wszystkie narzędzia są w języku polskim - interfejs, instrukcje i komunikaty. Bez szukania tłumaczeń.',
             },
           ]}
         />
 
         <Gap variant="line" />
 
-        <FaqPanels items={faqItems} title="Najczęściej zadawane pytania" />
+        <FaqPanels items={faqItems} title="Najczęściej zadawane pytania dotyczące naszych narzędzi" />
 
         <Gap size="sm" />
       </Wrapper>
 
       <CTABanner
         title="Potrzebujesz pomocy z projektem?"
-        description="Jeśli szukasz kompleksowego wsparcia przy stronie, sklepie lub identyfikacji wizualnej — skontaktuj się z nami. Pomożemy dobrać rozwiązanie dopasowane do potrzeb."
+        description="Jeśli szukasz wsparcia przy stronie, sklepie lub identyfikacji wizualnej - skontaktuj się z nami. Pomożemy dobrać rozwiązanie dopasowane do potrzeb."
         btnOne="Skontaktuj się"
         btnOneLink="/kontakt"
         btnTwo="Zobacz usługi"

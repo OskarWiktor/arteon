@@ -259,7 +259,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Co robi**: Generator zestawu favicon.
   - Wspiera wygenerowanie:
     - ikon PNG w wybranych rozmiarach,
-    - opcjonalnie `favicon.ico` (kontener ICO na bazie PNG 32×32).
+    - opcjonalnie `favicon.ico` (kontener ICO na bazie PNG 32x32).
   - Udostępnia:
     - podgląd,
     - pobieranie pojedynczych plików,
@@ -283,7 +283,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Algorytm generowania** (`lib/tools/favicon/generator.ts`):
   - **[core]** `generateFaviconOutputs()`:
     - generuje PNG dla każdego `size` w `pngSizes`,
-    - opcjonalnie generuje `favicon.ico` jako kontener ICO na bazie PNG 32×32,
+    - opcjonalnie generuje `favicon.ico` jako kontener ICO na bazie PNG 32x32,
     - tworzy `URL.createObjectURL(blob)` i zwraca `FaviconOutputFile[]`.
   - **[nazwy plików]** `suggestFaviconFileName()` mapuje:
     - `180` → `apple-touch-icon.png`,
@@ -404,7 +404,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
     - **`cropX` / `cropY`**: pozycja środka kadru w skali 0-1 w dostępnych granicach.
     - **`cropZoom`**: powiększenie (1 = brak zoomu).
   - **Siatka**:
-    - **`gridColor`**: kolor linii 3×3 (np. emerald/white/black).
+    - **`gridColor`**: kolor linii 3x3 (np. emerald/white/black).
   - **Kształt**:
     - **`shape`**: `rect` / `square` / `circle`.
     - **`shapeAspect`**: proporcje prostokąta (np. `4:5`, `16:9`).
@@ -419,8 +419,8 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
   - **[keep aspect ratio]** gdy włączone, zmiana jednego wymiaru automatycznie przelicza drugi (`Math.round(...)`).
   - **[preset]** wybór gotowego formatu (social/web) ustawia wymiary docelowe, resetuje kadr i wymusza `shape: 'rect'`.
 - **Presety** (`getImagePresets()`):
-  - **Social media**: m.in. IG 1080×1080, 1080×1350, 1080×1920; FB 1200×630 i cover 820×360; LI 1200×1200 i banner 1584×396.
-  - **WWW**: OG image 1200×630; grafika do artykułu 1600×900; baner strony 1920×600; miniatura 800×600; hero 1920×1080; tło 1920×1280.
+  - **Social media**: m.in. IG 1080x1080, 1080x1350, 1080x1920; FB 1200x630 i cover 820x360; LI 1200x1200 i banner 1584x396.
+  - **WWW**: OG image 1200x630; grafika do artykułu 1600x900; baner strony 1920x600; miniatura 800x600; hero 1920x1080; tło 1920x1280.
 - **Model kadrowania (matematyka)**:
   - **[getCropRect]** wylicza prostokąt kadru w przestrzeni oryginalnego obrazu:
     - wyznacza maksymalny kadr o docelowych proporcjach, który mieści się w oryginale,
@@ -446,7 +446,7 @@ Narzędzia są używane na podstronach `app/(pl)/narzedzia/(tools)/*` i w więks
 - **Podgląd kadru**:
   - **[overlay]** zaznaczony obszar ma:
     - maskę (ciemne przyciemnienie poza kadrem),
-    - siatkę 3×3 w wybranym kolorze,
+    - siatkę 3x3 w wybranym kolorze,
     - uchwyty narożne do resize.
   - **[shape preview]** dla `circle` nakładany jest `rounded-full`.
 - **Eksport (download)**:

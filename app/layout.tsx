@@ -9,7 +9,6 @@ import Footer from '@/components/shared/Footer';
 import Navigation from '@/components/shared/Navigation';
 import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
-import RevealObserver from '@/components/systems/RevealObserver';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { LocaleProvider, type Locale } from '@/lib/LocaleContext';
 import { getActiveSiteKey } from '@/lib/siteKeyDetection';
@@ -28,7 +27,9 @@ const metadataBase = new URL(siteUrl);
 
 export const metadata: Metadata = {
   metadataBase,
-  robots: IS_PRODUCTION ? { index: true, follow: true } : { index: false, follow: false },
+  robots: IS_PRODUCTION
+    ? { index: true, follow: true, 'max-image-preview': 'large' as const, 'max-snippet': -1, 'max-video-preview': -1 }
+    : { index: false, follow: false },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -163,8 +164,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <FocusManager />
           <RouteAnnouncer />
         </Suspense>
-
-        <RevealObserver />
 
         <SiteProvider siteKey={siteKey}>
           <LocaleProvider value={locale}>

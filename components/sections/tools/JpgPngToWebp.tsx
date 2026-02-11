@@ -63,6 +63,7 @@ const ui = {
     totalSaved: 'Zaoszczędzono:',
     totalIncreased: 'Zwiększono:',
     addFilesToStart: 'Dodaj pliki po lewej stronie, aby rozpocząć konwersję JPG/PNG na WebP.',
+    demoSummary: 'Łącznie zaoszczędzono:',
     status: {
       pending: 'Oczekuje',
       processing: 'Przetwarzanie…',
@@ -198,15 +199,15 @@ export default function JpgPngToWebp() {
       <ToolSection className="space-y-4">
         <form onSubmit={handleSubmitWithAutoZip} className="space-y-4">
           <div>
-            <p className="text-dark mb-2 text-sm font-semibold uppercase">{t.addFiles}</p>
+            <h2 className="h6 mb-2">{t.addFiles}</h2>
             <ToolFileDropzone
               accept="image/jpeg,image/png"
               multiple
               onFiles={addFiles}
-              className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
+              className="tool-upload-area"
             >
-              <span className="text-dark mb-1 text-sm font-medium">{t.dragDropImages}</span>
-              <span className="text-light mb-2 text-xs">{t.clickToSelect}</span>
+              <span className="mb-1 text-sm! font-medium">{t.dragDropImages}</span>
+              <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
               <Badge variant="default" size="sm" className="bg-white shadow-sm">
                 {t.supportedFormats}
               </Badge>
@@ -219,65 +220,59 @@ export default function JpgPngToWebp() {
           </div>
 
           <div>
-            <p className="text-dark mt-8 mb-2 text-sm font-semibold uppercase">{t.setQuality}</p>
+            <h3 className="h6 mt-8 mb-2">{t.setQuality}</h3>
             <div className="flex items-center">
-              <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="p-0!" />
-              <span className="text-mid w-16 text-right text-sm">{quality}%</span>
+              <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="tool-range" />
+              <span className="w-16 text-right text-[14px]! font-medium">{quality}%</span>
             </div>
-            <span className="text-light mt-3 text-sm">{t.qualityHelper}</span>
+            <span className="text-light mt-3 text-xs!">{t.qualityHelper}</span>
 
             <div className="mt-3 flex items-center">
-              <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="h-4 w-4! rounded border-neutral-300 p-0!" />
+              <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="tool-checkbox" />
               <label htmlFor="auto-download" className="cursor-pointer pl-2">
-                <span className="text-mid text-sm">{t.autoDownloadAll}</span>
+                <span className="text-[14px]! font-medium">{t.autoDownloadAll}</span>
               </label>
             </div>
 
             {autoDownload && (
               <div className="mt-3 ml-6 flex flex-wrap items-center gap-2">
-                <Badge
-                  as="button"
+                <button
                   type="button"
                   onClick={() => setAutoDownloadMode('files')}
                   disabled={isConverting}
-                  variant={autoDownloadMode === 'files' ? 'selected' : 'default'}
-                  size="sm"
-                  className="border-black/10"
+                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'files' ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
                 >
                   {t.autoDownloadModeFiles}
-                </Badge>
-                <Badge
-                  as="button"
+                </button>
+                <button
                   type="button"
                   onClick={() => setAutoDownloadMode('zip')}
                   disabled={isConverting}
-                  variant={autoDownloadMode === 'zip' ? 'selected' : 'default'}
-                  size="sm"
-                  className="border-black/10"
+                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'zip' ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
                 >
                   {t.autoDownloadModeZip}
-                </Badge>
+                </button>
               </div>
             )}
           </div>
 
           <div>
-            <p className="text-dark mt-8 mb-2 text-sm font-semibold uppercase">{t.convertAndDownload}</p>
+            <h3 className="h6 mt-8 mb-2">{t.convertAndDownload}</h3>
             {total > 0 && (
               <div className="mb-3 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-light text-sm">
+                  <span className="text-light text-xs!">
                     {t.inQueue} <strong>{total}</strong> {t.files}
                   </span>
                   {total > 0 && (
-                    <span className="text-light text-sm">
+                    <span className="text-light text-xs!">
                       Zakończone: {completed} / {total}
                     </span>
                   )}
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
                   <div
-                    className="h-full rounded-full bg-slate-800 transition-all"
+                    className="h-full rounded-full bg-primary transition-all"
                     style={{ width: `${visualProgress}%` }}
                     role="progressbar"
                     aria-valuemin={0}
@@ -310,10 +305,10 @@ export default function JpgPngToWebp() {
                 checked={includeCsvReport}
                 onChange={(e) => setIncludeCsvReport(e.target.checked)}
                 disabled={isZipping}
-                className="h-4 w-4! rounded border-neutral-300 p-0!"
+                className="tool-checkbox"
               />
               <label htmlFor="webp-include-csv" className="cursor-pointer pl-2">
-                <span className="text-mid text-sm">{t.includeCsvReport}</span>
+                <span className="text-[14px]! font-medium">{t.includeCsvReport}</span>
               </label>
             </div>
 
@@ -330,15 +325,15 @@ export default function JpgPngToWebp() {
 
             {totalInput > 0 && (
               <div className="mt-6">
-                <p className="text-light text-sm">
+                <p className="text-light text-xs!">
                   {t.totalInputSize} <strong>{formatBytes(totalInput)}</strong>
                 </p>
                 {totalOutput > 0 && (
                   <>
-                    <p className="text-light text-sm">
+                    <p className="text-light text-xs!">
                       {t.totalOutputSize} <strong>{formatBytes(totalOutput)}</strong>
                     </p>
-                    <p className="text-light text-sm">
+                    <p className="text-light text-xs!">
                       {totalSaved >= 0 ? (
                         <>
                           {t.totalSaved}:{' '}
@@ -365,7 +360,7 @@ export default function JpgPngToWebp() {
               <Button variant="normal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="border-0 shadow-none hover:translate-y-0 hover:shadow-none disabled:opacity-40">
                 {t.copySummary}
               </Button>
-              {copyInfo && <span className="text-light text-xs">{copyInfo}</span>}
+              {copyInfo && <span className="text-light text-xs!">{copyInfo}</span>}
             </div>
           </div>
         </form>
@@ -375,16 +370,42 @@ export default function JpgPngToWebp() {
         <div className="flex items-center justify-between gap-2">
           <h2 className="h6">{t.queueFilesHeading}</h2>
           {files.length > 0 && (
-            <p className="text-light text-sm">
+            <p className="text-light text-xs!">
               {t.readyCount}: {readyCount} · {t.pendingCount}: {pendingCount}
             </p>
           )}
         </div>
 
-        {files.length === 0 && <p className="text-light text-xs">{t.addFilesToStart}</p>}
+        {files.length === 0 && (
+          <>
+            <div className="space-y-2 text-sm!">
+              {[
+                { name: 'zdjecie-produktu.jpg', before: '2.4 MB', after: '890 KB', diff: '63%' },
+                { name: 'logo-firmy.png', before: '180 KB', after: '45 KB', diff: '75%' },
+                { name: 'baner-strony.jpg', before: '500 KB', after: '185 KB', diff: '63%' },
+              ].map((f) => (
+                <div key={f.name} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
+                  <div className="min-w-0 flex-1">
+                    <p className="text-dark truncate text-[14px]! font-medium">{f.name}</p>
+                    <p className="text-light text-xs!">
+                      {t.sizeBefore} {f.before} · {t.sizeAfter} {f.after} ({f.diff} {t.less})
+                    </p>
+                  </div>
+                  <Badge variant="success" size="md">{t.status.done}</Badge>
+                </div>
+              ))}
+            </div>
+
+            <div className="rounded-xl border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm!">
+              <p className="text-light text-xs!">
+                {t.demoSummary} <strong>1.96 MB (~64% {t.less})</strong>
+              </p>
+            </div>
+          </>
+        )}
 
         {files.length > 0 && (
-          <div className="space-y-2 text-sm">
+          <div className="space-y-2 text-sm!">
             {files.map((item) => {
               const statusLabel = item.status === 'pending' ? t.status.pending : item.status === 'processing' ? t.status.processing : item.status === 'done' ? t.status.done : t.status.error;
 
@@ -409,7 +430,7 @@ export default function JpgPngToWebp() {
 
                     <div className="min-w-0 flex-1">
                       <div title={item.file.name}>
-                        <p className="text-dark truncate text-sm font-medium">{item.file.name}</p>
+                        <p className="text-dark truncate text-[14px]! font-medium">{item.file.name}</p>
                       </div>
                       <p className="text-light text-xs!">
                         {t.sizeBefore} {formatBytes(item.inputSize)}
@@ -424,12 +445,12 @@ export default function JpgPngToWebp() {
                                 {')'}
                               </>
                             )}
-                            {isBigger && <span className="ml-1 text-xs text-amber-700">{t.biggerThanOriginal}</span>}
+                            {isBigger && <span className="ml-1 text-xs! text-warning-text">{t.biggerThanOriginal}</span>}
                           </>
                         )}
                       </p>
                       {item.usedQuality && (
-                        <p className="text-light text-[11px]">
+                        <p className="text-light text-xs!">
                           {t.usedQuality} {item.usedQuality}%
                         </p>
                       )}

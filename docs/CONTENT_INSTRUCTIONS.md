@@ -472,7 +472,7 @@ Tekst przycisku musi jasno komunikować, co się stanie po kliknięciu:
 | ----------------- | ----------------------------------------------------------------------- |
 | "Załóżmy, że..."  | Załóżmy, że masz dwie strony o tym samym temacie.                       |
 | "Przykład:"       | Przykład: kancelaria prawna ma artykuły o rozwodach i prawie rodzinnym. |
-| "W praktyce..."   | W praktyce oznacza to, że Google widzi dwie konkurujące strony.         |
+| "W praktyce..."   | W praktyce wygląda to tak, że Google widzi dwie konkurujące strony.     |
 | "Jak to wygląda?" | Jak to wygląda? Obie strony otrzymują mniej ruchu.                      |
 
 ### ZAKAZANE frazy brzmiące jak AI (KRYTYCZNE)
@@ -489,6 +489,77 @@ Treści muszą brzmieć naturalnie - jak napisane przez człowieka, nie przez AI
 
 **Zasada:** Jeśli fraza brzmi jak mogła być wygenerowana przez ChatGPT - usuń ją lub przeformułuj.
 
+### ZAKAZANE konstrukty AI - łączniki i wypełniacze (KRYTYCZNE)
+
+Frazy, które AI nadużywa jako "klej zdaniowy". Nie wnoszą wartości, a sygnalizują tekst generowany.
+
+| ❌ ZAKAZANE                                | Dlaczego złe                    | ✅ Zamiennik                                  |
+| ------------------------------------------ | ------------------------------- | --------------------------------------------- |
+| „Jest to X" na początku zdania             | AI-filler definiujący           | „To X" / po prostu opisz                      |
+| „Dzięki temu" (nadużywane, >1× na sekcję) | AI uwielbia ten łącznik         | Max 1× na sekcję, reszta: „-", „więc", „to"  |
+| „W praktyce oznacza to, że..."             | Zbędne tłumaczenie oczywistości | Usuń i przejdź do sedna                       |
+| „co sprawia, że..."                        | Sztuczny łącznik                | Napisz wprost skutek                          |
+| „Przekłada się to na..."                   | Korpo-żargon                    | Napisz wprost co z czego wynika               |
+| „właśnie dlatego"                          | Zbędne wzmocnienie              | „dlatego"                                     |
+| „Warto zauważyć/podkreślić/wspomnieć"     | Wstęp o wstępie                 | Usuń ramę, przejdź do treści                  |
+| „Należy pamiętać, że..."                   | Bezosobowy filler               | Usuń, zacznij od treści                       |
+| „w erze cyfrowej/internetu"                | Pusty kontekst czasowy          | Usuń, zacznij od faktu                        |
+| „jest kluczowy/kluczowa/kluczowe"          | Ogólnik zamiast konkretu        | Opisz konkretną rolę                          |
+| „stanowi fundament/podstawę"               | Korpo-pustosłowie               | Napisz wprost co robi                         |
+| „ogromny wpływ/znaczenie/potencjał"        | Przesada, brak konkretu         | „duży", „istotny" lub podaj dane              |
+| „kompleksowy/kompleksowo"                  | Korpo-filler nr 1               | „pełny", „szczegółowy", „w pełnym zakresie"  |
+| „idealne rozwiązanie"                      | Marketingowa przesada           | „sprawdza się najlepiej w..." + konkret       |
+| „aspekt" (nadużywane)                      | AI-ulubieniec                   | „element", „cecha", „część" lub przeformułuj |
+| „z myślą o" (nadużywane, >1× na stronę)   | Powtarzalny wzorzec AI          | Max 1× na stronę                              |
+| „nie tylko X, ale także Y"                | Negative parallelism, sygnał AI | Napisz wprost oba elementy osobno             |
+| „odgrywa kluczową rolę"                   | Puste wzmocnienie               | Opisz konkretnie co robi i jaki ma wpływ      |
+| „niezwykle istotny/ważny"                 | Przesada bez konkretu            | „ważny" + wyjaśnij dlaczego                   |
+| „ma ogromne znaczenie"                    | Przesada, brak danych            | Opisz konkretny wpływ lub podaj dane          |
+| „rewolucjonizuje"                         | Marketingowa hiperbola           | „zmienia sposób" + opisz co konkretnie        |
+| „innowacyjny" (bez konkretu)              | Pusty przymiotnik                | Opisz co dokładnie jest nowe                   |
+| „bezproblemowa integracja"                | Korpo-filler                     | „łatwe połączenie z..." + konkret              |
+| „przełomowy"                              | Hiperbola AI                     | Opisz konkretną zmianę                         |
+| „szeroki wachlarz/zakres"                 | Ogólnik zamiast listy            | Wymień konkretne elementy                      |
+| „doskonale się sprawdza"                  | Przesada bez dowodu              | „sprawdza się w..." + konkretny kontekst       |
+| „nieodzowny element"                      | Korpo-pustosłowie                | Opisz konkretną funkcję                        |
+| „stanowi" / „służy jako" (zamiast „jest") | AI unika prostych kopulatywów   | Używaj „jest/są" tam, gdzie to naturalne       |
+
+### ZAKAZANE wzorce strukturalne AI (KRYTYCZNE)
+
+AI-content ma charakterystyczne wzorce strukturalne, które algorytmy Google wykrywają przez pattern analysis. Źródła: Google Search Quality Guidelines, Wikipedia:Signs of AI writing, SiegeMedia, Stanford 2024.
+
+| Wzorzec | Opis problemu | Jak naprawić |
+|---------|---------------|--------------|
+| **Szablonowe otwarcia** | "W dzisiejszym konkurencyjnym świecie...", "W dobie cyfryzacji..." - AI zaczyna od ogólnika | Zacznij od konkretu, faktu, pytania lub danych |
+| **Wyrównane akapity** | AI tworzy akapity o zbliżonej długości (~3-4 zdania każdy) - sygnał niskiej burstiness | Celowo mieszaj długość: 1 zdanie, 3 zdania, 5 zdań, 1 zdanie |
+| **Formulaiczne podsumowania** | "Wdrażając X, Twoja firma zyska Y" - szablon zakończenia akapitu | Zamień na konkretną rekomendację lub CTA |
+| **Nadużycie trójek (rule of three)** | "szybkość, bezpieczeństwo i niezawodność" - AI lubi trójki przymiotników | Unikaj nadmiernego stosowania; jeśli lista, rozwiń każdy punkt |
+| **Negatywne paralelizmy** | "To nie tylko X, to także Y" - AI buduje efekt przez negację | Napisz wprost co to jest, bez negacji dla efektu |
+| **Podsumowanie bez wartości** | Powtórzenie punktów z artykułu bez nowego insightu | Dodaj konkretną rekomendację, następny krok lub nowy wniosek |
+| **Nadużycie myślników (-)** | AI nadużywa em dashes zamiast przecinków, nawiasów, dwukropków | Max 2 myślniki na sekcję; reszta: przecinki, nawiasy, dwukropki |
+| **Powtarzanie tej samej myśli** | AI lubi powiedzieć to samo 2-3 razy innymi słowami | Każde zdanie musi wnosić nową informację |
+
+### Zasady anty-AI - jakość i E-E-A-T (KRYTYCZNE)
+
+Google ocenia treści przez pryzmat E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). AI-content regularnie zawodzi w tych kategoriach. Źródła: Google E-E-A-T Guidelines 2025/2026, SEO Sherpa, ProductiveShop.
+
+1. **Experience (doświadczenie)** - treść musi zawierać przykłady z własnej praktyki Arteon, konkretne case studies, dane z realizacji. AI nie ma doświadczenia - dlatego ogólnikowe treści bez własnych przykładów sygnalizują AI.
+2. **Głębia, nie szerokość** - lepiej szczegółowo omówić 3 aspekty niż powierzchownie 10. AI daje powierzchowne wyjaśnienia, które brzmią wyczerpująco, ale nie mają głębi.
+3. **Brak powtórzeń** - każde zdanie musi wnosić nową informację. Jeśli czytasz zdanie i myślisz "to już było powiedziane" - usuń je.
+4. **Stanowisko i opinia** - Arteon ma prawo mieć opinię i ją wyrażać. AI pisze neutralnie. Pisz: "Naszym zdaniem lepszym rozwiązaniem jest X, bo..." zamiast "Istnieją różne podejścia do tego tematu."
+5. **Konkretne wprowadzenia** - zamiast "SEO jest ważne dla każdej firmy" zacznij od faktu, danych lub pytania: "73% użytkowników nie scrolluje poza pierwszą stronę Google."
+6. **Brak generycznych wyjaśnień** - AI daje szerokie, ogólnikowe opisy. Podawaj konkrety: nazwy narzędzi, wartości liczbowe, przykłady kodu, screenshoty procesów.
+
+### Stylometria - jak pisać, żeby nie brzmieć jak AI (WAŻNE)
+
+Algorytmy Google analizują stylometrię tekstu - statystyczne wzorce pisania. Źródła: Stanford 2024, Koanthic 2026, Wikipedia:Signs of AI writing.
+
+1. **Burstiness (zróżnicowanie)** - ludzie piszą nierówno: krótkie zdania obok długich, krótkie akapity obok dłuższych. AI ma niską burstiness = równe, przewidywalne zdania. **Celowo mieszaj:** zdanie 3-słowowe obok 20-słowowego.
+2. **Proste kopulatywów** - AI zastępuje "jest/są" wyszukanymi formami ("stanowi", "służy jako", "oferuje"). Używaj prostego "jest/są" tam, gdzie to naturalne.
+3. **Formalność** - AI pisze jak raport korporacyjny. Pisz jak do klienta przy kawie - profesjonalnie, ale bez sztywności. Dopuszczalne: "To działa tak:", "Efekt? Więcej zapytań."
+4. **Zaimki osobowe** - AI unika "ja/my/nasz". Arteon pisze "my", "nasz", "robimy", "nasze doświadczenie pokazuje" - podkreśl osobowość marki.
+5. **Pytania retoryczne** - ludzie zadają pytania w tekście. AI rzadko to robi. Wplataj naturalne pytania: "Jak to wygląda w praktyce?" "Co to oznacza dla Twojej strony?"
+
 ### Zakazane formy stylistyczne i zamienniki
 
 | ❌ Zakazane                       | ✅ Zamiennik                   |
@@ -503,6 +574,19 @@ Treści muszą brzmieć naturalnie - jak napisane przez człowieka, nie przez AI
 | „kompleksowe rozwiązania”         | (konkret zamiast korpo-języka) |
 | Emotki 👉 ✅ ❌                   | (bez emotek w treściach)       |
 | Sekcja „Przydatne linki”          | (wpleć linki w tekst)          |
+| Równoważniki zdań po przecinku    | (pełne zdania z wyjaśnieniem)  |
+
+### Zakaz równoważników zdań po przecinku (KRYTYCZNE)
+
+Nie używaj list elementów oddzielonych przecinkami bez kontekstu. Każdy element powinien być pełnym zdaniem lub mieć wyjaśnienie.
+
+| ❌ Zakazane                                             | ✅ Zamiennik                                   |
+| ------------------------------------------------------- | ---------------------------------------------- |
+| „Widoczność w Google, wydajność, faktura po realizacji" | Rozwinięcie w punkty z opisem każdego elementu |
+| „Responsywność, SEO, formularze, mapy"                  | Lista z opisem korzyści każdego elementu       |
+| „Szybkość, bezpieczeństwo, wsparcie"                    | Pełne zdania wyjaśniające każdy punkt          |
+
+**Zasada:** Jeśli wymieniasz cechy/korzyści po przecinku - rozwiń je w listę punktowaną lub pełne zdania. Czytelnik musi wiedzieć, co każdy element oznacza i dlaczego jest ważny.
 
 ### Zasady tonu
 
@@ -516,7 +600,7 @@ Treści muszą brzmieć naturalnie - jak napisane przez człowieka, nie przez AI
 
 Używaj polskich odpowiedników tam, gdzie brzmią naturalnie:
 
-- „social media” → „media społecznościowe”
+- „media społecznościowe” → „media społecznościowe”
 - Anglicyzmy dozwolone tylko gdy polski odpowiednik brzmi sztucznie
 
 ### Przykłady z innych branż

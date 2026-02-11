@@ -62,7 +62,7 @@ export default function ConfirmModal({ isOpen, onClose, onConfirm, title, descri
             transition={{ duration: 0.15 }}
             className="w-full max-w-md overflow-hidden rounded-2xl bg-white p-6 shadow-xl ring-1 ring-black/5"
           >
-            <h3 id="confirm-modal-title" className="h4 mb-2">
+            <h3 id="confirm-modal-title" className="h3 mb-2">
               {title}
             </h3>
             {description && <p className="text-mid mb-6 text-sm">{description}</p>}

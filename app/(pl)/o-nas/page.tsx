@@ -39,13 +39,13 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroBanner title="O nas" description="Arteon - strategia, kreacja i widoczność, które dowożą wynik" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
+      <HeroBanner title="O nas" description="Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty" backgroundImage="/assets/arteon-logo-on-mockup.webp" overlay="black" variant="center" />
       <BenefitBelt
         items={[
-          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />, label: 'Strategia i plan działania' },
-          { icon: <RiPaletteLine className="h-6 w-6 text-slate-800" />, label: 'Branding i design' },
-          { icon: <RiCodeSSlashFill className="h-6 w-6 text-slate-800" />, label: 'Technologia (strony i sklepy)' },
-          { icon: <RiMegaphoneLine className="h-6 w-6 text-slate-800" />, label: 'Widoczność i marketing' },
+          { icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />, label: 'Strategia i plan działania' },
+          { icon: <RiPaletteLine className="h-6 w-6 text-primary" />, label: 'Branding i design' },
+          { icon: <RiCodeSSlashFill className="h-6 w-6 text-primary" />, label: 'Technologia (strony i sklepy)' },
+          { icon: <RiMegaphoneLine className="h-6 w-6 text-primary" />, label: 'Widoczność i marketing' },
         ]}
       />
       <Wrapper as="article" itemScope itemType="https://schema.org/AboutPage">
@@ -54,7 +54,7 @@ export default function AboutPage() {
         <SectionBasic imageSrc="/assets/arteon-sygnet-01.webp" imageAlt="logo arteon" title="Kim jesteśmy">
           <p>
             W Arteon łączymy strategię, design i technologię w jeden proces. Wdrażamy doświadczenie z pracy dla globalnych marek w małych i średnich biznesach - tak, żeby Twoja marka była spójna, a
-            działania dowoziły wynik.
+            działania przynosiły konkretne rezultaty.
           </p>
           <p className="mt-2">
             Nie sprzedajemy „samej strony”. Zaczynamy od celu (zapytania, sprzedaż, rekrutacja, wizerunek), a dopiero potem dobieramy narzędzia: ofertę, identyfikację, treści, wdrożenie i kanały
@@ -120,7 +120,7 @@ export default function AboutPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wybrane realizacje" subtitle="Portfolio" />
+        <ProjectsCarousel title="Wybrane realizacje" />
 
         <Gap variant="line" />
 
@@ -139,7 +139,7 @@ export default function AboutPage() {
 
       <CTABanner
         title="Zacznijmy od rozmowy"
-        description="Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań - znajdziemy najlepszą drogę do efektu."
+        description="Jasny plan i odpowiedzialność po naszej stronie. Niezależnie od wymagań znajdziemy najlepszą drogę do osiągnięcia zamierzonych celów."
         btnOne="Skontaktuj się"
         btnOneLink="/kontakt"
         btnTwo="Poznaj ofertę"

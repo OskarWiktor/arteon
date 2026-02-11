@@ -86,11 +86,11 @@ function analyzeDescription(text: string): FieldAnalysis {
 function getStatusClasses(status: LengthStatus): string {
   switch (status) {
     case 'ideal':
-      return 'bg-emerald-100 text-emerald-700 border-emerald-200';
+      return 'bg-success-bg text-success-text border-success-border';
     case 'too-short':
-      return 'bg-amber-100 text-amber-800 border-amber-200';
+      return 'bg-warning-bg text-warning-text border-warning-border';
     case 'too-long':
-      return 'bg-red-100 text-red-700 border-red-200';
+      return 'bg-error-bg text-error-text border-error-border';
     case 'empty':
     default:
       return 'bg-neutral-100 text-mid border-neutral-200';
@@ -119,7 +119,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterTitleLabel} className="mt-8" helper={titleAnalysis.helperText}>
             <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="tool-input" placeholder={t.titlePlaceholder} maxLength={180} />
-            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs">
+            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs!">
               <span>
                 {t.chars}: <strong>{titleAnalysis.chars}</strong>
               </span>
@@ -137,7 +137,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterDescriptionLabel} className="mt-8" helper={descriptionAnalysis.helperText}>
             <textarea value={description} onChange={(e) => setDescription(e.target.value)} className="tool-textarea min-h-[110px] resize-y" placeholder={t.descriptionPlaceholder} maxLength={400} />
-            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs">
+            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs!">
               <span>
                 {t.chars}: <strong>{descriptionAnalysis.chars}</strong>
               </span>

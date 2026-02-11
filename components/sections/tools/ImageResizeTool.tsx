@@ -1,19 +1,21 @@
-'use client';
+﻿'use client';
 
 import Button from '@/components/ui/buttons/Button';
 import Badge from '@/components/ui/Badge';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
+import ToolSection from '@/components/ui/tools/ToolSection';
 import { exportCroppedImage } from '@/components/sections/tools/ImageResizeTool/exportCroppedImage';
 import { getCropRect, getGridStroke } from '@/components/sections/tools/ImageResizeTool/cropMath';
 import { useCropDrag } from '@/components/sections/tools/ImageResizeTool/useCropDrag';
 import type { ActiveTool, GridColor, OutputFormat, ResizeMode, ShapeAspect, ShapeType } from '@/components/sections/tools/ImageResizeTool/types';
+import ToolButton from '@/components/ui/tools/ToolButton';
 import { formatBytes } from '@/lib/tools/formatBytes';
 import { getFileFormatLabel } from '@/lib/tools/fileFormat';
 import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
-import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine } from 'react-icons/ri';
+import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine, RiImageLine } from 'react-icons/ri';
 
 const ui = {
   pl: {
@@ -39,11 +41,15 @@ const ui = {
     estimatedResult: 'Szacowany wynik:',
     convertAndDownload: 'Konwertuj i pobierz',
     quality: 'Jakość (JPG/WEBP)',
-    qualityHelper: 'Niższa jakość = mniejszy plik. Dla sociali często 70-85% to dobry kompromis.',
+    qualityHelper: 'Niższa wartość oznacza mniejszy plik, ale słabszą jakość obrazu. Dla mediów społecznościowych optymalna wartość to 70–85%.',
     processing: 'Przetwarzanie…',
     resizeAndDownload: 'Zmień rozmiar i pobierz',
     cropTools: 'Narzędzia kadrowania',
     addImageFirstHelper: 'Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.',
+    demoOriginal: 'Oryginał: 3000 x 2000 px',
+    demoTarget: 'Docelowy: 1080 x 1350 px',
+    demoFormat: 'Format: WebP',
+    demoPreset: 'Instagram post pion · 4:5',
     dimensions: 'Wymiary w px',
     presetsLabel: 'Gotowe formaty',
     shapesLabel: 'Kształty kadru',
@@ -55,7 +61,7 @@ const ui = {
     keepAspectRatio: 'Zachowaj proporcje (automatyczny drugi wymiar)',
     category: 'Kategoria',
     format: 'Format',
-    selectPreset: 'Wybierz preset',
+    selectPreset: 'Wybierz format',
     rectAspect: 'Proporcje prostokąta',
     cropZoom: 'Przybliżenie kadru',
     horizontal: 'Poziom (X)',
@@ -79,7 +85,7 @@ const ui = {
       yellow: 'Żółty',
     },
     categories: {
-      social: 'Social media',
+      social: 'media społecznościowe',
       web: 'WWW',
     },
     presets: {
@@ -146,29 +152,6 @@ interface ResizeToolState {
   shapeAspect: ShapeAspect;
 }
 
-interface ToolButtonProps {
-  id: ActiveTool;
-  activeTool: ActiveTool;
-  onClick: (id: ActiveTool) => void;
-  icon: ReactNode;
-  label: string;
-}
-
-function ToolButton({ id, activeTool, onClick, icon, label }: ToolButtonProps) {
-  const isActive = activeTool === id;
-
-  return (
-    <button
-      type="button"
-      onClick={() => onClick(id)}
-      className={`flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! ${isActive ? 'bg-slate-800 text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
-    >
-      {icon}
-      <span>{label}</span>
-    </button>
-  );
-}
-
 interface PillButtonProps<T extends string> {
   value: T;
   current: T;
@@ -181,17 +164,14 @@ function PillButton<T extends string>({ value, current, label, onChange, disable
   const isActive = value === current;
 
   return (
-    <Badge
-      as="button"
+    <button
       type="button"
-      variant={isActive ? 'selected' : 'default'}
-      size="lg"
       disabled={disabled}
       onClick={() => !disabled && onChange(value)}
-      className={isActive ? '' : 'border-black/10 hover:bg-neutral-100'}
+      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${isActive ? 'border-black bg-primary text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
     >
       {label}
-    </Badge>
+    </button>
   );
 }
 
@@ -218,7 +198,7 @@ function NumberField({ label, suffix, value, min, max, onChange, widthClass = 'w
         type="number"
         min={min}
         max={max}
-        className={`mt-1 ${widthClass} rounded-md border border-neutral-300 bg-white px-3! py-2! text-xs!`}
+        className={`tool-input mt-1 ${widthClass}`}
         value={value}
         onChange={(e) => {
           const raw = Number(e.target.value) || 0;
@@ -560,15 +540,15 @@ export default function ImageResizeTool() {
 
   return (
     <div className="grid gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,2.5fr)]">
-      <section className="tool-section space-y-4">
+      <ToolSection className="space-y-4">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <p className="mb-2 font-semibold uppercase">{t.addImage}</p>
+            <h2 className="h6 mb-2">{t.addImage}</h2>
             <ToolFileDropzone
               accept="image/*"
               dropEffect="copy"
               onFiles={(files) => handleFileChange(files?.[0] ?? null)}
-              className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-6 text-center hover:border-neutral-500 hover:bg-neutral-100"
+              className="tool-upload-area"
             >
               <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
               <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
@@ -633,8 +613,8 @@ export default function ImageResizeTool() {
           </div>
 
           <div>
-            <p className="mt-4 mb-2 font-semibold uppercase">{t.convertAndDownload}</p>
-            <div className="flex flex-wrap gap-3 text-sm">
+            <h3 className="h6 mt-4 mb-2">{t.convertAndDownload}</h3>
+            <div className="flex flex-wrap gap-3 text-sm!">
               {(['jpg', 'png', 'webp'] as OutputFormat[]).map((fmt) => (
                 <PillButton
                   key={fmt}
@@ -669,7 +649,7 @@ export default function ImageResizeTool() {
                       outputQuality: Number(e.target.value) / 100,
                     }))
                   }
-                  className="w-full! p-0!"
+                  className="tool-range"
                 />
                 <p className="text-light text-xs!">{t.qualityHelper}</p>
               </div>
@@ -688,9 +668,9 @@ export default function ImageResizeTool() {
             )}
           </div>
         </form>
-      </section>
+      </ToolSection>
 
-      <section className="tool-section space-y-4">
+      <ToolSection className="space-y-4">
         <div className="mb-2 flex items-center justify-between gap-2">
           <h2 className="h6">{t.cropTools}</h2>
           {dims && (
@@ -703,13 +683,42 @@ export default function ImageResizeTool() {
           )}
         </div>
 
-        {!state.imageUrl && <p className="text-light text-xs!">{t.addImageFirstHelper}</p>}
+        {!state.imageUrl && (
+          <>
+            <div className="flex flex-wrap gap-2">
+              {TOOLBAR_ITEMS.map((item) => (
+                <div key={item.id} className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]!">
+                  <span className="text-neutral-400">{item.icon}</span>
+                  <span className="text-light">{item.label}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="relative mt-4 flex aspect-[4/5] max-h-[340px] items-center justify-center overflow-hidden rounded-2xl border border-neutral-300 bg-neutral-100">
+              <div className="flex flex-col items-center gap-2 text-neutral-400">
+                <RiImageLine className="text-5xl" aria-hidden="true" />
+                <span className="text-sm! font-medium">{t.demoPreset}</span>
+              </div>
+              <div className="pointer-events-none absolute inset-4 grid grid-cols-3 grid-rows-3 rounded-lg border border-dashed border-neutral-300">
+                {Array.from({ length: 9 }).map((_, i) => (
+                  <div key={i} className="border border-dashed border-neutral-300/50" />
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-3 space-y-1 text-xs!">
+              <p className="text-light">{t.demoOriginal}</p>
+              <p className="text-light">{t.demoTarget}</p>
+              <p className="text-light">{t.demoFormat}</p>
+            </div>
+          </>
+        )}
 
         {state.imageUrl && cropEnabled && (
           <>
             <div className="flex flex-wrap gap-2">
               {TOOLBAR_ITEMS.map((item) => (
-                <ToolButton key={item.id} id={item.id} icon={item.icon} label={item.label} activeTool={activeTool} onClick={setActiveTool} />
+                <ToolButton key={item.id} id={item.id} icon={item.icon} label={item.label} active={activeTool} onClick={(id) => setActiveTool(id as ActiveTool)} />
               ))}
             </div>
 
@@ -722,7 +731,7 @@ export default function ImageResizeTool() {
                       <input
                         type="number"
                         min={1}
-                        className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
+                        className="tool-input mt-1"
                         value={state.targetWidth ?? ''}
                         onChange={(e) => handleDimensionChange('width', e.target.value ? Number(e.target.value) : null)}
                       />
@@ -732,7 +741,7 @@ export default function ImageResizeTool() {
                       <input
                         type="number"
                         min={1}
-                        className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
+                        className="tool-input mt-1"
                         value={state.targetHeight ?? ''}
                         onChange={(e) => handleDimensionChange('height', e.target.value ? Number(e.target.value) : null)}
                       />
@@ -749,7 +758,7 @@ export default function ImageResizeTool() {
                           keepAspectRatio: e.target.checked,
                         }))
                       }
-                      className="h-4 w-4! rounded border-neutral-300 p-0!"
+                      className="tool-checkbox"
                     />
                     <span>{t.keepAspectRatio}</span>
                   </label>
@@ -762,7 +771,7 @@ export default function ImageResizeTool() {
                     <div>
                       <label className="text-[14px]! font-medium">{t.category}</label>
                       <select
-                        className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
+                        className="tool-select mt-1"
                         value={state.selectedCategory}
                         onChange={(e) =>
                           setState((prev) => ({
@@ -779,7 +788,7 @@ export default function ImageResizeTool() {
                     <div>
                       <label className="text-[14px]! font-medium">{t.format}</label>
                       <select
-                        className="mt-1 w-full! rounded-md border border-neutral-300 bg-white px-3! py-2! text-sm!"
+                        className="tool-select mt-1"
                         value={state.selectedPresetKey ?? ''}
                         onChange={(e) => handlePresetChange(e.target.value)}
                       >
@@ -946,7 +955,7 @@ export default function ImageResizeTool() {
                 )}
               </div>
 
-              <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-slate-800" style={{ paddingBottom: `${previewPadding}%` }}>
+              <div ref={previewRef} className="relative w-full overflow-hidden rounded-2xl border border-neutral-300 bg-primary" style={{ paddingBottom: `${previewPadding}%` }}>
                 <div className="absolute inset-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={state.imageUrl!} alt={state.file?.name || 'Podgląd'} className="h-full w-full object-contain" draggable={false} />
@@ -998,7 +1007,7 @@ export default function ImageResizeTool() {
             </div>
           </>
         )}
-      </section>
+      </ToolSection>
     </div>
   );
 }

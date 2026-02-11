@@ -38,7 +38,7 @@ const GRAPHIC_SERVICES_SOURCE = [
   { name: 'Projekt katalogu', path: '/uslugi/projekty-graficzne/projekt-katalogu' },
   { name: 'Identyfikacja wizualna', path: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej' },
   { name: 'Projekt graficzny strony', path: '/uslugi/projekty-graficzne/projekt-graficzny-strony' },
-  { name: 'Szablony postów na social media', path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe' },
+  { name: 'Szablony postów na media społecznościowe', path: '/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe' },
   { name: 'Kupony rabatowe i vouchery', path: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera' },
   { name: 'Projekt cennika', path: '/uslugi/projekty-graficzne/projekt-cennika' },
   { name: 'Karty lojalnościowe', path: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej' },
@@ -51,7 +51,7 @@ const GRAPHIC_SERVICES: NavItem[] = GRAPHIC_SERVICES_SOURCE.map((s) => ({
 }));
 
 const services: NavItem[] = [
-  { href: '/uslugi/strony-internetowe', title: 'Strony internetowe' },
+  { href: '/uslugi/tworzenie-stron-wordpress', title: 'Strony WordPress' },
   { href: '/uslugi/sklepy-internetowe', title: 'Sklepy internetowe' },
   { href: '/uslugi/blogi-internetowe', title: 'Blogi internetowe' },
   {

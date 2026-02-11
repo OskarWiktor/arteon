@@ -266,12 +266,12 @@ Ten plik opisuje wszystkie strony (route’y) w katalogu `app/` (Next.js App Rou
 - **[SEO]**
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/edytor-zdjec-online`.
   - **[schema]** JSON-LD: `SoftwareApplication` z alternateName array.
-  - **[uwagi]** Redirect z `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`. Rozbudowana treść z tabelą wymiarów social media i FAQ.
+  - **[uwagi]** Redirect z `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia`. Rozbudowana treść z tabelą wymiarów media społecznościowe i FAQ.
 
 ### `/narzedzia/edytor-zdjec-online/instrukcja` - Instrukcja edytora zdjęć
 
 - **[Plik]** `app/(pl)/narzedzia/(tools)/(desktop-only)/edytor-zdjec-online/instrukcja/page.tsx`
-- **[Cel / content]** Szczegółowa instrukcja edytora zdjęć online. Wyjaśnia jak dodać obraz, tryby ustawiania rozmiaru (pixels vs preset), tabelę presetów z zastosowaniami, jak kadrować (przeciąganie, uchwyty, zoom), siatkę 3×3 i regułę trójpodziału, kształty kadru (prostokąt, kwadrat, koło), formaty eksportu (JPG/PNG/WebP) i proporcje (aspect ratio). Zawiera FAQ.
+- **[Cel / content]** Szczegółowa instrukcja edytora zdjęć online. Wyjaśnia jak dodać obraz, tryby ustawiania rozmiaru (pixels vs preset), tabelę presetów z zastosowaniami, jak kadrować (przeciąganie, uchwyty, zoom), siatkę 3x3 i regułę trójpodziału, kształty kadru (prostokąt, kwadrat, koło), formaty eksportu (JPG/PNG/WebP) i proporcje (aspect ratio). Zawiera FAQ.
 - **[Kluczowe komponenty]** `HeroBanner`, `Breadcrumbs`, `SectionInfo`, `SectionSteps`, `SectionDemo`, `FaqPanels`, `CTABanner`, `ToolsCarousel`, `Wrapper`, `Gap`.
 - **[SEO]**
   - **[metadata]** canonical: `https://www.arteonagency.pl/narzedzia/edytor-zdjec-online/instrukcja`.
@@ -557,7 +557,7 @@ Poniżej lista konkretnych route’ów:
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/projekt-graficzny-strony/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.
 
-### `/uslugi/projekty-graficzne/szablony-postow-social-media` - Szablony social media
+### `/uslugi/projekty-graficzne/szablony-postow-social-media` - Szablony media społecznościowe
 
 - **[Plik]** `app/(pl)/uslugi/projekty-graficzne/szablony-postow-social-media/page.tsx`
 - **[Schema]** `Service` (buildServiceSchema) + breadcrumbs/FAQ.

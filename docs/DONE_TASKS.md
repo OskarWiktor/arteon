@@ -1,5 +1,77 @@
 # Arteon - DONE TASKS
 
+## 2026-02-09
+
+- ✅ **[CLEANUP-COLORS] Konsolidacja palety kolorów - redukcja odcieni szarości**
+
+  - **Cel**: Zmniejszenie liczby odcieni szarości z 17 do 12 (redukcja ~30%) przez połączenie zbliżonych wartości.
+  - **Połączenia**:
+    - `--foreground` (#080808) + `--surface-dark` (#0b0b0c) → `--foreground: #0a0a0b`
+    - `--surface-dark-2` (#121215) + `--neutral-900` (#171717) → `--neutral-900: #151517`
+    - `--neutral-800` (#262626) + `--text-mid` (#2b2b2b) → `--text-mid: #292929`
+    - `--background` (#f5f5f4) + `--neutral-100` (#f5f5f5) → `--background: #f5f5f5`
+    - `--text-light` (#5e5e5e) + `--neutral-500` (#737373) → `--text-light: #696969`
+  - **Usunięte zmienne**: `--surface-dark`, `--surface-dark-2`, `--neutral-800`, `--neutral-500`
+  - **Pliki**: `globals.css`, `CodeBlock.tsx`, `TableBlock.tsx`, `EmailSignatureGenerator.tsx`, `Badge.tsx`, `licznik-dlugosci-meta-title-i-description/page.tsx`
+  - **Weryfikacja**: `npm run lint` ✓, `npm run build` ✓
+
+## 2026-01-30
+
+- ✅ **[PROJECT-007] Realizacje: case study logo dla Finish Masters (firma wykończeniowa)**
+
+  - **Klient**: Finish Masters sp. z o.o. (wykończenia wnętrz i instalacje)
+  - **Zakres**: Logo wektorowe z ikoną (dach z literami F i M), autorska edycja czcionki, slogan, warianty kolorystyczne (wybrana niebieska)
+  - **Zmiany**:
+    - Dodano wpis case study do `data/pl/projects.json` (na początku listy)
+    - Wykorzystano istniejące grafiki z `public/assets/projects/finish-masters/`
+    - Struktura: slug, title, short, description, image, category, client, task, goals, process_steps, deliverables, contentBlocks, outcomes, cta, faq, seo
+  - **URL**: `/realizacje/logo-dla-firmy-wykonczeniowej-finish-masters`
+  - **Weryfikacja**: JSON OK, `npm run lint` ✓, `npm run build` ✓
+
+- ✅ **[NAV-001] Desktop: przeprojektowanie dropdownu usług i narzędzi**
+
+  - **Cel**: Nowy layout nawigacji desktop: kategorie po lewej (1/4), podstrony/narzędzia po prawej (3/4) z animacją hover.
+  - **Zmiany**:
+    - Layout 2-kolumnowy dla usług i narzędzi
+    - Hover na kategorię wyświetla podstrony/narzędzia z animacją fade/slide (150ms)
+    - Ikony przy kategoriach (dodane do `OfferSection` i `ToolsSection`)
+    - Ujednolicony styl hover: białe tło, ciemniejszy tekst
+    - Usunięto ramki z dropdownów (usługi, narzędzia, O nas)
+    - Kategorie usług klikalne jako linki do hub page
+  - **Pliki**:
+    - `components/shared/navigation-types/DesktopNavigation.tsx`
+    - `components/shared/navigation-data/pl.ts`
+  - **Weryfikacja**: `npm run lint` ✓
+
+- ✅ **[CLEANUP-015] Realizacje: usunięcie thin content (8 realizacji)**
+  - **Powód**: Thin content - realizacje bez wystarczającej wartości merytorycznej
+  - **Usunięte realizacje** (slugi):
+    - `blog-sportowy-pilka-nozna-pl` (PiłkaNożna.pl - redesign EURO 2024)
+    - `meridol-accessibility` (Meridol Accessibility)
+    - `elmex-accessibility` (Elmex Accessibility)
+    - `sanex-accessibility` (Sanex Accessibility)
+    - `sanex` (Sanex Lokalizacje)
+    - `palmolive` (Palmolive Lokalizacje)
+    - `colgate` (Colgate Lokalizacje)
+    - `detergent-regulations` (Detergent Regulations)
+  - **Pliki**:
+    - `data/pl/projects.json` - usunięto 8 wpisów
+    - `lib/redirects.ts` - dodano 8 przekierowań 301 → `/realizacje`
+    - `docs/TASKS.md` - usunięto odniesienia do usuniętych slugów z zadań PROJECT-\*
+    - `docs/PROJECTS_CATALOG.md` - usunięto wpisy dla usuniętych realizacji
+  - **Weryfikacja**: `npm run lint` ✓, `npm run build` ✓
+
+## 2026-01-24
+
+- ✅ **[UI-001] Testimonials: przebudowa layoutu karty opinii**
+  - **Plik**: `components/ui/TestimonialCard.tsx`
+  - **Zmiany**:
+    - Nowa kolejność elementów: imię (większa czcionka) → rola → gwiazdki → opinia → link
+    - Wszystko wyśrodkowane (`text-center`)
+    - Usunięto avatar i szary placeholder
+    - Usunięto nieużywany import `Image` z `next/image`
+  - **Weryfikacja**: `npm run lint` ✓, `npm run build` ✓
+
 ## 2026-01-22
 
 - ✅ **[AUDIT-006] Repo: audyt rozwoju witryny - aktualizacja (analiza nieużywanych komponentów)**
@@ -29,7 +101,7 @@
   - **Wpływ**: UI/UX improvement, SEO enhancement, code consistency
   - **Weryfikacja**: nie wymagana (AUDIT-only)
 
-- ✅ **[IDEA-163] SectionBento na stronie usługowej - sekcja "Poznaj pozostałe usługi"**
+- ✅ **[IDEA-163] SectionBento na stronie usługowej - sekcja "Poznaj inne usługi"**
 
   - **Pliki**:
     - `components/ui/sections/SectionBento.tsx` (refaktor komponentu)
@@ -45,7 +117,7 @@
     | Sklepy internetowe | large | `/assets/projects/arteon-baners-msc.webp` |
     | Pozycjonowanie stron | medium | `/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp` |
     | Projekt logo | small | `/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp` |
-    | Szablony do social mediów | small | `/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp` |
+    | Szablony do mediów społecznościowych | small | `/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp` |
   - **Treści zgodne z CONTENT_INSTRUCTIONS** (bez żargonu):
     - ❌ "Sprzedawaj online" → ✅ "Twój własny sklep z koszykiem, płatnościami i wysyłką"
     - ❌ "Zwiększ widoczność" → ✅ "Pomagamy, żeby Twoja strona pojawiała się wyżej w wynikach Google"
@@ -77,14 +149,14 @@
     - Instrukcja: "Po co liczyć słowa na stronie?", "Typy stron i zakresy słów" (6 typów), "Jak interpretować wyniki?", FAQ (5 pytań)
   - **Weryfikacja**: nie wymagana (COPY-only)
 
-- ✅ **[NAV-001] Nawigacja: tymczasowo ukryć linki do social media (Instagram, Facebook)**
+- ✅ **[NAV-001] Nawigacja: tymczasowo ukryć linki do media społecznościowe (Instagram, Facebook)**
 
   - **Pliki**:
     - `components/shared/Footer.tsx`
     - `components/shared/navigation-types/MobileNavigation.tsx`
     - `components/shared/Navigation.tsx` (nawigacja główna desktop)
   - **Zakres**: Zakomentowano linki do Instagram i Facebook w stopce, nawigacji mobilnej i nawigacji desktopowej.
-  - **Powód**: Profile social media nie są jeszcze gotowe.
+  - **Powód**: Profile media społecznościowe nie są jeszcze gotowe.
   - **Przywrócenie**: Odkomentować sekcje oznaczone `NAV-001` we wszystkich 3 plikach.
   - **Weryfikacja**: `npm run lint` ✅ | `npm run build` ✅
 
@@ -430,7 +502,7 @@
   - **Data wykonania:** 2026-01-06
   - **Wykonane zadania:**
     - **COPY-033**: Zamieniono ogólnikowe "buduje zaufanie" na konkretne "zwiększa wiarygodność w oczach klientów" i "zwiększa rozpoznawalność" (3 pliki)
-    - **COPY-034**: Zamieniono wszystkie "social media" na "media społecznościowe" (7 wystąpień w 7 plikach)
+    - **COPY-034**: Zamieniono wszystkie "media społecznościowe" na "media społecznościowe" (7 wystąpień w 7 plikach)
     - **COPY-035**: Usunięto pouczające "nie musisz" z instrukcji narzędzi, zastąpiono opisem funkcji (4 pliki)
     - **COPY-036**: Usunięto nakazowe "musisz" z FAQ generatora stopki (1 plik)
     - **COPY-037**: Zmieniono folder z `szablony-postow-social-media` na `szablony-postow-media-spolecznosciowe` + redirect 301 + aktualizacja wszystkich linków (10 plików)
@@ -447,7 +519,7 @@
     - Redirect 301 dodany w `lib/redirects.ts`
   - **Statystyki zmian:**
     - Usunięto 3 wystąpienia ogólnikowego "buduje zaufanie"
-    - Zamieniono 7 wystąpień anglicyzmu "social media"
+    - Zamieniono 7 wystąpień anglicyzmu "media społecznościowe"
     - Usunięto 5 wystąpień pouczających "nie musisz/musisz"
     - Zaktualizowano 10+ linków wewnętrznych
   - **Zgodność z wytycznymi:**
@@ -468,14 +540,14 @@
   - **Metoda:**
     - Grep search dla zakazanych fraz z INSTRUCTIONS.md:
       - Ogólniki: "buduje zaufanie", "robi wrażenie", "profesjonalnie wygląda"
-      - Anglicyzmy: "social media"
+      - Anglicyzmy: "media społecznościowe"
       - Ton pouczający: "nie musisz", "musisz", "powinieneś"
       - Hasła marketingowe: "kompleksowe rozwiązania", "nowoczesne podejście"
   - **Znalezione problemy (5 kategorii):**
-    - **Ogólniki** (3×): "buduje zaufanie" bez konkretnego wyjaśnienia
-    - **Anglicyzmy** (7×): "social media" zamiast "media społecznościowe"
-    - **Ton pouczający** (5×): "nie musisz" i "musisz" w instrukcjach i FAQ
-    - **URL z anglicyzmem** (1×): folder `szablony-postow-social-media`
+    - **Ogólniki** (3x): "buduje zaufanie" bez konkretnego wyjaśnienia
+    - **Anglicyzmy** (7x): "media społecznościowe" zamiast "media społecznościowe"
+    - **Ton pouczający** (5x): "nie musisz" i "musisz" w instrukcjach i FAQ
+    - **URL z anglicyzmem** (1x): folder `szablony-postow-social-media`
   - **Utworzone zadania follow-up:**
     - **COPY-033**: Zamiana ogólników (3 pliki)
     - **COPY-034**: Zamiana anglicyzmów (7 plików)
@@ -562,7 +634,7 @@
     - **COPY-023**: Poprawiono FAQ "nie chodzi o konkretny kolor" na "kluczowy jest kontrast z resztą strony, nie sam kolor"
     - **COPY-024**: Zastąpiono ogólnikową frazę "buduje zaufanie" konkretnymi sformułowaniami w 9 plikach stron usług ("pokazuje profesjonalizm", "zwiększa wiarygodność firmy", "zwiększa wiarygodność w oczach klientów")
     - **COPY-025**: Przepisano 2 FAQ w `blog.json` bez odwołań do "badań pokazują" (brak możliwości znalezienia konkretnych źródeł)
-    - **COPY-026**: Zamieniono anglicyzm "social media" na "media społecznościowe" w 23+ plikach (strony usług, projects.json, blog.json, calculator/\*.ts)
+    - **COPY-026**: Zamieniono anglicyzm "media społecznościowe" na "media społecznościowe" w 23+ plikach (strony usług, projects.json, blog.json, calculator/\*.ts)
   - **Zmienionych plików:** 23
     - 13 stron usług (tsx)
     - 2 pliki JSON (blog, projects)
@@ -571,7 +643,7 @@
   - **Statystyki zmian:**
     - Usunięto wszystkie zakazane konstrukcje: "To proste", "Wyobraź sobie", "Pomyśl o tym jak", "Nie chodzi o"
     - Zastąpiono 10+ wystąpień ogólnikowej frazy "buduje zaufanie"
-    - Zamieniono 30+ wystąpień anglicyzmu "social media" na polski odpowiednik
+    - Zamieniono 30+ wystąpień anglicyzmu "media społecznościowe" na polski odpowiednik
     - Przepisano 2 FAQ bez niezweryfikowanych odwołań do badań
   - **Zgodność z wytycznymi:**
     - Wszystkie zmiany zgodne z INSTRUCTIONS.md (sekcje: ton, wstawki wyobrażeniowe, chamski ton, ogólniki, źródła, anglicyzmy)
@@ -595,7 +667,7 @@
       - Zakaz chamskiego/pouczającego tonu ("To proste", "To nie jest X, tylko Y", "Nie chodzi o")
       - Zakaz ogólnikowych fraz bez wartości ("buduje zaufanie" bez wyjaśnienia)
       - Wymóg źródeł dla danych i badań ("badania pokazują" bez źródła = zabronione)
-      - Wymóg polskich odpowiedników anglicyzmów ("social media" → "media społecznościowe")
+      - Wymóg polskich odpowiedników anglicyzmów ("media społecznościowe" → "media społecznościowe")
   - **Metoda:**
     - Uruchomienie serwera deweloperskiego i przeglądanie strony live
     - Grep search dla zakazanych konstrukcji językowych
@@ -608,7 +680,7 @@
       - Konstrukcja "Nie chodzi o X, tylko Y" w FAQ (1 wystąpienie)
       - Fraza "buduje zaufanie" bez konkretnego wyjaśnienia (10+ wystąpień)
       - "Badania pokazują" bez źródła w FAQ (2 wystąpienia)
-      - Anglicyzm "social media" zamiast "media społecznościowe" (30+ wystąpień w całym repo)
+      - Anglicyzm "media społecznościowe" zamiast "media społecznościowe" (30+ wystąpień w całym repo)
   - **Utworzone zadania follow-up:**
     - **COPY-020**: Zamienić "To proste narzędzie" na neutralne sformułowanie (1 plik)
     - **COPY-021**: Usunąć "Wyobraź sobie" z instrukcji testera kontrastu (1 plik)
@@ -616,7 +688,7 @@
     - **COPY-023**: Poprawić FAQ "Nie chodzi o konkretny kolor" w blog.json
     - **COPY-024**: Wyjaśnić lub zastąpić frazę "buduje zaufanie" (9 plików)
     - **COPY-025**: Dodać źródła do "Badania pokazują" lub przepisać bez odwołań (blog.json)
-    - **COPY-026**: Zamienić "social media" na "media społecznościowe" w całym repo (20+ plików)
+    - **COPY-026**: Zamienić "media społecznościowe" na "media społecznościowe" w całym repo (20+ plików)
   - **Obserwacje dodatkowe:**
     - Większość tekstów jest zgodna z wytycznymi mentorskiego, prostego tonu
     - Nie znaleziono poważnych błędów ortograficznych ani gramatycznych
@@ -629,8 +701,8 @@
   - **Pliki**: `components/ui/sections/SectionProcess.tsx`, `components/ui/sections/SectionSteps.tsx`
   - **Zmiany**:
     - Zmieniono style ikon na zgodne z FeatureCard (h-12 w-12 rounded-xl)
-    - SectionProcess: ciemne tło ikony (bg-slate-800 text-white)
-    - SectionSteps: jasne tło ikony (bg-slate-100 text-slate-800)
+    - SectionProcess: ciemne tło ikony (bg-[#1b2632] text-white)
+    - SectionSteps: jasne tło ikony (bg-[#d8e0e9] text-[#1b2632])
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[COMPONENT-009] SectionTabs - nowy komponent zakładek (wzór: showcase #19)**
@@ -671,7 +743,7 @@
   - **Plik**: `components/ui/sections/SectionSteps.tsx`
   - **Zmiany**:
     - Nowy prop `theme?: 'light' | 'dark'`
-    - `dark`: ciemnoniebieskie tło (bg-slate-800), biały tekst
+    - `dark`: ciemnoniebieskie tło (bg-[#1b2632]), biały tekst
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[COMPONENT-016] SectionInfoBanner - nowy komponent baneru informacyjnego (wzór: showcase #31)**
@@ -679,7 +751,7 @@
   - **Plik**: `components/ui/sections/SectionInfoBanner.tsx` (nowy)
   - **Zmiany**:
     - Props: `icon`, `text`, `highlight?`, `btnLabel`, `btnLink`
-    - Ciemne tło (slate-800), biały tekst, przycisk po prawej
+    - Ciemne tło ([#1b2632]), biały tekst, przycisk po prawej
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[COMPONENT-017] SectionFeatureList - nowy komponent listy cech (wzór: showcase #32)**
@@ -695,7 +767,7 @@
   - **Plik**: `components/sections/CTABanner.tsx`
   - **Zmiany**:
     - Nowy prop `backgroundStyle?: 'image' | 'gradient' | 'solid'`
-    - `gradient`: tło gradientowe (slate-800 to slate-700)
+    - `gradient`: tło gradientowe ([#1b2632] to [#1b2632])
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[COMPONENT-019] TestimonialsCarousel - variant z gwiazdkami i auto-scroll (wzór: showcase #50)**
@@ -879,7 +951,7 @@
     - Utworzenie komponentu do prezentacji procesu w układzie poziomym
     - Props: `title` (klasa h6), `steps[]` (każdy z `number`, `title`, `icon`)
     - Układ poziomy na desktop z strzałkami między krokami, pionowy na mobile
-    - Ikony w ciemnych okrągłych kontenerach (bg-slate-800)
+    - Ikony w ciemnych okrągłych kontenerach (bg-[#1b2632])
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[COMPONENT-007] SectionSteps - nowy styl ikon i variant contact (wzór: showcase #16)**
@@ -887,7 +959,7 @@
   - **Plik**: `components/ui/sections/SectionSteps.tsx`
   - **Zmiany**:
     - Dodano nowy prop `variant?: 'default' | 'contact'`
-    - Variant `contact`: okrągłe ikony (h-14 w-14 rounded-full bg-slate-100), wycentrowany tekst
+    - Variant `contact`: okrągłe ikony (h-14 w-14 rounded-full bg-[#d8e0e9]), wycentrowany tekst
     - Domyślny variant bez zmian (zachowanie wstecznej kompatybilności)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
@@ -959,7 +1031,7 @@
   - **Plik**: `components/ui/FaqPanels.tsx`
   - **Zmiany**:
     - Nowy prop `variant?: 'default' | 'halfWidth'`
-    - Zaktualizowane style: hover shadow-lg, border-slate-100, transition-shadow
+    - Zaktualizowane style: hover shadow-lg, border-[#d8e0e9], transition-shadow
     - Zachowana animacja framer-motion
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
@@ -968,7 +1040,7 @@
   - **Plik**: `components/sections/CTABanner.tsx`
   - **Zmiany**:
     - Nowy prop `variant?: 'default' | 'split'`
-    - Variant `split`: dwie kolumny (lewa ciemna slate-800, prawa jasna border)
+    - Variant `split`: dwie kolumny (lewa ciemna [#1b2632], prawa jasna border)
     - Props `leftColumn` i `rightColumn` dla oddzielnych CTA
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
@@ -977,7 +1049,7 @@
   - **Pliki**: `components/sections/FeatureGrid.tsx`, `components/ui/FeatureCard.tsx`
   - **Zmiany**:
     - FeatureGrid: nowy prop `columns?: 2 | 3` (domyślnie 2)
-    - FeatureCard: układ horyzontalny z ikoną w kwadratowym kontenerze (12x12, rounded-xl, bg-slate-100)
+    - FeatureCard: układ horyzontalny z ikoną w kwadratowym kontenerze (12x12, rounded-xl, bg-[#d8e0e9])
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **BreadCrumbs - poprawka łamania linii**
@@ -994,7 +1066,7 @@
   - **Plik**: `components/ui/buttons/Button.tsx`
   - **Zmiany**:
     - Zmiana ikony strzałki z `RiArrowRightUpLine` na `RiArrowRightLine`
-    - Dodanie nowego wariantu `outline` (ramka slate-800, hover wypełnienie)
+    - Dodanie nowego wariantu `outline` (ramka [#1b2632], hover wypełnienie)
   - **Weryfikacja**: npm run lint ✓, npm run build ✓
 
 - ✅ **[COMPONENT-025] Breadcrumbs - ikona home na początku**
@@ -1510,7 +1582,7 @@
     - `components/sections/tools/EmailSignatureGenerator/buildSignatureHtml.ts`
   - **Weryfikacja**: `npx tsc --noEmit` przechodzi.
 
-- ✅ **[TOOLS-051] Generator stopki mailowej: ikony social media SVG + przeniesienie linii oddzielającej**
+- ✅ **[TOOLS-051] Generator stopki mailowej: ikony media społecznościowe SVG + przeniesienie linii oddzielającej**
 
   - **Co zrobiono**:
     - Przeniesiono opcję „Pokaż linię oddzielającą" z zakładki Wygląd do zakładki Klauzula/RODO.
@@ -1737,7 +1809,7 @@
 
   - **Co zrobiono**:
     - Usunięto puste hasła marketingowe z description zgodnie z INSTRUCTIONS.md (linia 537).
-    - Zmieniono "social media" na "media społecznościowe" (linia 468).
+    - Zmieniono "media społecznościowe" na "media społecznościowe" (linia 468).
     - Zmieniono "Twojej" na "swojej" gdzie właściwe (linia 476).
   - **Zmienione strony (9 plików)**:
     - `/uslugi/tworzenie-tresci` - usunięto "budują widoczność i zaufanie", "Przyciągnij klientów"
@@ -1748,7 +1820,7 @@
     - `/uslugi/projekty-graficzne/projekt-odziezy-firmowej` - usunięto "lepsza rozpoznawalność", "buduje zaufanie"
     - `/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej` - usunięto "zachęca klientów do powrotu"
     - `/uslugi/projekty-graficzne/projekt-katalogu` - usunięto "podnoszą sprzedaż i wizerunek"
-    - `/uslugi/projekty-graficzne/szablony-postow-social-media` - zmieniono "social media" na "media społecznościowe"
+    - `/uslugi/projekty-graficzne/szablony-postow-social-media` - zmieniono "media społecznościowe" na "media społecznościowe"
     - `/uslugi/strony-internetowe/optymalizacja-strony-wordpress` - usunięto "Przyciągnij nowych klientów"
   - **Weryfikacja**: `npm run build` przechodzi.
 
@@ -1829,7 +1901,7 @@
 - ✅ **[TOOLS-033] Generator stopki mailowej: nowe formaty gotowych szablonów (design variations)**
 
   - **Co zrobiono**:
-    - Dodano 5 gotowych szablonów: Minimalistyczny, Korporacyjny, Kreatywny, Profesjonalny, Social Media.
+    - Dodano 5 gotowych szablonów: Minimalistyczny, Korporacyjny, Kreatywny, Profesjonalny, media społecznościowe.
     - Każdy szablon ma predefiniowany układ, kolory i widoczne pola.
     - UI do wyboru szablonu na górze edytora (najeżdżając kursor widać opis szablonu).
     - Wybór szablonu automatycznie konfiguruje layout i style.
@@ -1855,7 +1927,7 @@
       - **Drugi przycisk CTA** - z obramowaniem (wizualnie różny od pierwszego).
       - **Banner graficzny** - nad lub pod stopką, opcjonalny link.
       - **Kod QR z vCard** - automatycznie generowany z danych stopki, wybór rozmiaru i pozycji.
-    - Kontrolki ikon social media w zakładce "Media społecznościowe" (rozmiar, kolor).
+    - Kontrolki ikon media społecznościowe w zakładce "Media społecznościowe" (rozmiar, kolor).
     - localStorage persistence - dane zapisywane automatycznie w przeglądarce.
     - Przycisk "Pobierz HTML" do eksportu stopki jako plik.
   - **Pliki**: `EmailSignatureGenerator.tsx`, `buildSignatureHtml.ts`, `types.ts`
@@ -1868,7 +1940,7 @@
     - Nowa sekcja "Szablony - szybki start" z opisem 5 szablonów.
     - Aktualizacja opisu pola Avatar o funkcję wgrywania plików.
     - Nowa sekcja "Zakładka Dodatki - elementy rozszerzone" (tagline, CTA2, banner, QR).
-    - Sekcja o ikonach social media z opcjami rozmiaru i koloru.
+    - Sekcja o ikonach media społecznościowe z opcjami rozmiaru i koloru.
     - Rozbudowane FAQ o nowe funkcje (14 pytań).
   - **Plik**: `app/(pl)/narzedzia/(tools)/(desktop-only)/darmowy-generator-stopki-mailowej/instrukcja/page.tsx`
   - **Weryfikacja**: `npm run build` OK
@@ -1974,7 +2046,7 @@
 - ✅ **[TOOLS-043] Generator stopki mailowej: aktualizacja instrukcji**
 
   - **Co zrobiono**:
-    - FAQ zaktualizowane o ikony social media i kod QR.
+    - FAQ zaktualizowane o ikony media społecznościowe i kod QR.
     - Usunięte wzmianki o usuniętych funkcjach (JSON export/import, mobile preview).
   - **Pliki**: `instrukcja/page.tsx`
   - **Weryfikacja**: `npm run build` OK
@@ -1990,10 +2062,10 @@
   - **Pliki**: `types.ts`, `buildSignatureHtml.ts`, `EmailSignatureGenerator.tsx`
   - **Weryfikacja**: `npm run lint` OK, `npm run build` OK
 
-- ✅ **[TOOLS-036] Generator stopki mailowej: ikony social media (SVG inline)**
+- ✅ **[TOOLS-036] Generator stopki mailowej: ikony media społecznościowe (SVG inline)**
 
   - **Co zrobiono**:
-    - Utworzono moduł `lib/tools/email/socialIcons.ts` z ikonami SVG dla platform social media.
+    - Utworzono moduł `lib/tools/email/socialIcons.ts` z ikonami SVG dla platform media społecznościowe.
     - Dodano toggle "Pokaż ikony zamiast nazw" w panelu Social.
     - Dodano wybór rozmiaru ikon (małe/średnie/duże) i koloru (oryginalne/akcent).
     - Ikony SVG inline kompatybilne z Gmail i Outlook.
@@ -2843,7 +2915,7 @@
   - **Co zrobiono**:
     - Utworzono nową stronę instrukcji: `app/(pl)/narzedzia/(tools)/(desktop-only)/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja/page.tsx`.
     - URL: `/narzedzia/zmiana-rozmiaru-i-kadrowanie-zdjecia/instrukcja`, H1: „Jak używać narzędzia do zmiany rozmiaru i kadrowania zdjęcia".
-    - Sekcje instrukcji: Jak dodać obraz (drag&drop, formaty), Tryby ustawiania rozmiaru (pixels vs preset), Presety - który wybrać (12 presetów z opisami zastosowań: IG post/story/reels, FB post/cover, LinkedIn post/baner, OG image, grafika do artykułu, baner strony, miniatura, hero), Jak kadrować obraz (przeciąganie, uchwyty, zoom, pozycja), Siatka 3×3 i reguła trójpodziału, Kształty kadru (prostokąt/kwadrat/koło), Eksport - jaki format wybrać (JPG/PNG/WebP + jakość), Proporcje (aspect ratio) - co to znaczy (1:1, 4:5, 3:2, 16:9, 9:16).
+    - Sekcje instrukcji: Jak dodać obraz (drag&drop, formaty), Tryby ustawiania rozmiaru (pixels vs preset), Presety - który wybrać (12 presetów z opisami zastosowań: IG post/story/reels, FB post/cover, LinkedIn post/baner, OG image, grafika do artykułu, baner strony, miniatura, hero), Jak kadrować obraz (przeciąganie, uchwyty, zoom, pozycja), Siatka 3x3 i reguła trójpodziału, Kształty kadru (prostokąt/kwadrat/koło), Eksport - jaki format wybrać (JPG/PNG/WebP + jakość), Proporcje (aspect ratio) - co to znaczy (1:1, 4:5, 3:2, 16:9, 9:16).
     - FAQ: 5 pytań (prywatność plików, wybór formatu, koło a JPG, proporcje, suwak jakości).
     - Schema JSON-LD: `HowTo` (4 kroki) + `BreadcrumbList` + `FAQPage`.
     - Dodano link do pełnej instrukcji na głównej stronie narzędzia.
@@ -3622,9 +3694,9 @@
     - `components/shared/Navigation.tsx`
   - **Zrobione**:
     - Dopasowano kolory do globalnych klas (`text-dark/text-mid/text-light`) zamiast `text-slate-*`.
-    - Ikony ustawiono na `text-slate-800`.
+    - Ikony ustawiono na `text-[#1b2632]`.
     - Zmniejszono realną wysokość paska inputa (mniej paddingu + mniejsze ikony/przyciski + `py-1` w headerze i `h-7` na inpucie).
-    - Dopasowano kolor lupy w `Navigation` (desktop) do `text-slate-800`.
+    - Dopasowano kolor lupy w `Navigation` (desktop) do `text-[#1b2632]`.
   - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[UI-001] SearchDialog: poprawa UI/UX wyszukiwarki**
@@ -4209,8 +4281,8 @@
     - `components/sections/tools/EmailSignatureGenerator.tsx`
     - `components/ui/buttons/Button.tsx`
   - **Zrobione 2025-12-15**:
-    - Ujednolicono kolor ikon do `text-slate-800` (tylko elementy ikon).
-    - Ustawiono główny button z akcentem na `text-slate-800`.
+    - Ujednolicono kolor ikon do `text-[#1b2632]` (tylko elementy ikon).
+    - Ustawiono główny button z akcentem na `text-[#1b2632]`.
     - Sprawdzone: `npm run lint` (OK), `npm run build` (OK).
 
 - ✅ **[STYLES-002] Kolory: tokenizacja i usunięcie raw hexów**
@@ -4337,7 +4409,7 @@
 
   - Plik: `app/(pl)/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej/page.tsx`
   - **Zrobione 2025-12-15**:
-    - Poprawiono literówki/odmianę/interpunkcję w opisach i FAQ (m.in. `Twoich`, `dzięki temu mam`, `branż, w których`, `Twoją identyfikacją wizualną`, `indywidualnie ustalone rundy korekt`, `(85 × 55 mm)`).
+    - Poprawiono literówki/odmianę/interpunkcję w opisach i FAQ (m.in. `Twoich`, `dzięki temu mam`, `branż, w których`, `Twoją identyfikacją wizualną`, `indywidualnie ustalone rundy korekt`, `(85 x 55 mm)`).
     - Weryfikacja: pominięto `npm run lint` i `npm run build` (COPY-only).
 
 - ✅ **[COPY-018] Katalog: poprawić literówki, odmianę i interpunkcję w opisach CTA/sekcji**
@@ -4624,7 +4696,7 @@
 - ✅ **[COPY-009] Usługi (listy): poprawić „hierarchią” i składnię opisu szablonów postów**
 
   - **Zrobione 2025-12-14**:
-    - Poprawiono opis „Szablony postów na social media” na stronach list usług: `/uslugi` oraz `/uslugi/projekty-graficzne`.
+    - Poprawiono opis „Szablony postów na media społecznościowe” na stronach list usług: `/uslugi` oraz `/uslugi/projekty-graficzne`.
     - Zmieniono składnię zdania (`ułatwiające regularne publikację, tworząc` → `ułatwiające regularne publikowanie i pomagające utrzymać`) oraz poprawiono literówkę `hieratchią` → `hierarchią`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 
@@ -4672,7 +4744,7 @@
 - ✅ **[TOOLS-013] ImageResizeTool: dodać presety WWW (w tym OG image)**
 
   - **Zrobione 2025-12-14**:
-    - Dodano presety `WWW`: `OG image` (1200×630), `Grafika do artykułu` (1600×900), `Baner strony` (1920×600).
+    - Dodano presety `WWW`: `OG image` (1200x630), `Grafika do artykułu` (1600x900), `Baner strony` (1920x600).
     - Zaktualizowano `TOOLS_CATALOG.md`.
     - Sprawdzone: `npm run lint`, `npm run build` (OK).
 

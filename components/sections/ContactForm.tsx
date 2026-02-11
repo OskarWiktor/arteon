@@ -26,9 +26,10 @@ type ContactFormProps = {
   defaultSubject?: string;
   action?: string;
   messagePlaceholder?: string;
+  noSection?: boolean;
 };
 
-export default function ContactForm({ title, description, defaultSubject, action = 'https://formspree.io/f/xldnokbw', messagePlaceholder }: ContactFormProps) {
+export default function ContactForm({ title, description, defaultSubject, action = 'https://formspree.io/f/xldnokbw', messagePlaceholder, noSection }: ContactFormProps) {
   const t = ui.pl;
   const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const formRef = useRef<HTMLFormElement>(null);
@@ -57,14 +58,14 @@ export default function ContactForm({ title, description, defaultSubject, action
   };
 
   const fieldClass =
-    'h-11 w-full rounded-2xl border border-gray-300 bg-transparent px-3 py-2 text-dark transition ' +
-    'focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white';
+    'h-11 w-full rounded-2xl border border-neutral-300 bg-transparent px-3 py-2 text-dark transition ' +
+    'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white';
 
-  return (
-    <section id="kontakt" className="scroll-mt-26">
+  const content = (
+    <>
       {(title || description) && (
         <header className="mb-6">
-          {title && <h2 className="h3 reveal-animation">{title}</h2>}
+          {title && <h2 className="h3 ">{title}</h2>}
           {description && <p className="text-mid pt-3 pb-2">{description}</p>}
         </header>
       )}
@@ -109,6 +110,14 @@ export default function ContactForm({ title, description, defaultSubject, action
           </ToolAlert>
         )}
       </form>
+    </>
+  );
+
+  if (noSection) return content;
+
+  return (
+    <section id="kontakt" className="scroll-mt-26">
+      {content}
     </section>
   );
 }

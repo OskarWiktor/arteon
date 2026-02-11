@@ -1,32 +1,79 @@
-import type { ReactNode } from 'react';
-import Wrapper from '../Wrapper';
-import AppLink from '../AppLink';
+'use client';
 
-interface SectionInfoBannerProps {
-  icon: ReactNode;
+import type { ReactNode } from 'react';
+import Link from 'next/link';
+import Wrapper from '../Wrapper';
+
+interface InfoBannerItem {
+  icon?: ReactNode;
   text: string;
-  highlight?: string;
-  btnLabel: string;
-  btnLink: string;
+  linkText?: string;
+  linkHref?: string;
 }
 
-export default function SectionInfoBanner({ icon, text, highlight, btnLabel, btnLink }: SectionInfoBannerProps) {
-  return (
-    <section data-section="info-banner" className="bg-slate-800 py-4 text-white">
-      <Wrapper>
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <div className="flex items-center gap-3">
-            <span className="text-amber-400">{icon}</span>
-            <p className="text-center md:text-left">
-              {highlight && <strong>{highlight} </strong>}
-              {text}
-            </p>
-          </div>
-          <AppLink href={btnLink} className="flex-shrink-0 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-100">
-            {btnLabel}
-          </AppLink>
+interface SectionInfoBannerProps {
+  items: InfoBannerItem[];
+  animated?: boolean;
+  speed?: number;
+}
+
+export default function SectionInfoBanner({ items, animated = false, speed = 40 }: SectionInfoBannerProps) {
+  if (!items.length) return null;
+
+  const duplicatedItems = animated ? [...items, ...items] : items;
+
+  const renderItem = (item: InfoBannerItem, index: number) => (
+    <span key={index} className="mr-6 flex items-center gap-2 text-sm font-medium text-white">
+      {item.icon && <span className="text-accent">{item.icon}</span>}
+      <span>
+        {item.text}
+        {item.linkText && item.linkHref && (
+          <>
+            {' '}
+            <Link href={item.linkHref} className="underline underline-offset-2 transition-colors hover:text-accent">
+              {item.linkText}
+            </Link>
+          </>
+        )}
+      </span>
+    </span>
+  );
+
+  if (animated) {
+    return (
+      <section data-section="info-banner" className="overflow-hidden bg-primary py-1.5">
+        <div
+          className="flex whitespace-nowrap"
+          style={{
+            animation: `infoBannerMarquee ${speed}s linear infinite`,
+          }}
+        >
+          {duplicatedItems.map((item, index) => renderItem(item, index))}
         </div>
-      </Wrapper>
-    </section>
+
+        <style jsx>{`
+          @keyframes infoBannerMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+        `}</style>
+      </section>
+    );
+  }
+
+  return (
+      <section data-section="info-banner" className="bg-primary py-1.5">
+            <Wrapper>
+
+        <div className="flex flex-wrap items-center gap-x-8 gap-y-1">
+          {items.map((item, index) => renderItem(item, index))}
+        </div>
+            </Wrapper>
+
+      </section>
   );
 }

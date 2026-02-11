@@ -4,8 +4,16 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiFolderOpenLine, RiMoneyDollarCircleLine, RiPantoneLine, RiComputerLine, RiIdCardLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiPencilRuler2Line,
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiFileTextLine,
+  RiFolderOpenLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -17,8 +25,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt teczki ofertowej | Arteon',
@@ -31,7 +39,7 @@ export const metadata = {
     description: 'Elegancka teczka ofertowa dopasowana do identyfikacji marki. Pliki gotowe do druku.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -89,6 +97,10 @@ export default function OfferDesignPresentationFolderPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Co zyskujesz zamawiając projekt teczki ofertowej?">
           <p>
             <strong>Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność materiałów.</strong> Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie marki
@@ -131,27 +143,27 @@ export default function OfferDesignPresentationFolderPage() {
             {
               title: 'Prestiż na każdym spotkaniu',
               description: <>Projekt teczki podkreśla profesjonalizm Twojej firmy - już samo wręczenie materiałów robi dobre wrażenie.</>,
-              icon: <RiFolderOpenLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFolderOpenLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale nawiązują do Twojej identyfikacji wizualnej, aby wszystkie materiały mówiły jednym językiem.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Przemyślane rozwiązania konstrukcyjne',
               description: <>Proponujemy układ kieszeni, bigów i skrzydełek tak, aby teczka była trwała, wygodna i funkcjonalna w codziennym użyciu.</>,
-              icon: <RiBrushLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiBrushLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Pliki gotowe do druku',
               description: <>Dostarczamy finalne pliki z poprawnymi spadami i makietami pod drukarnię - możesz od razu przekazać je do produkcji.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -197,17 +209,12 @@ export default function OfferDesignPresentationFolderPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Wyróżnione realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt teczki ofertowej - przykładowe pakiety"
-          subtitle="Zakres dopasowany do sposobu pracy z klientem"
           plans={[
             {
               name: 'Pakiet Start - klasyczna teczka firmowa',
@@ -261,9 +268,11 @@ export default function OfferDesignPresentationFolderPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt teczki ofertowej"
-          description="Opisz, czym się zajmujesz i jakie informacje chcesz umieścić na swojej teczce ofertowej. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji teczki ofertowej"
+          description="Napisz jakie informacje chcesz umieścić na teczce, czy posiadasz logo oraz materiały graficzne i czy potrzebujesz pomocy z treścią - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/luxnova/teczka-ofertowa-dla-kancelarii-luxnova-mockup.webp"
+          imageAlt="Realizacja teczki ofertowej - kancelaria Luxnova"
           defaultSubject="Projekt teczki ofertowej"
         />
 
@@ -272,7 +281,7 @@ export default function OfferDesignPresentationFolderPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-teczki-ofertowej"
-          title="Najczęstsze pytania o projekt teczki ofertowej"
+          title="Najczęstsze pytania dotyczące projektów teczek ofertowych"
           items={[
             {
               question: 'Jak długo trwa realizacja teczki ofertowej?',
@@ -297,50 +306,10 @@ export default function OfferDesignPresentationFolderPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Jakie materiały warto połączyć z projektem teczki ofertowej?"
-          subtitle="Zobacz też"
-          description="Najlepszy efekt przynosi spójny zestaw materiałów - teczka, wizytówki i strona www."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Projekt wizytówki',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dołącz do teczki wizytówkę w tym samym stylu. Dzięki temu ułatwisz klientowi ponowny kontakt i utrwalisz w jego pamięci swoją firmę.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-wizytowki">
-                      Zobacz projekt wizytówki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFolderOpenLine className="h-8 w-8" />,
-              title: 'Projekt ulotki',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Włóż do teczki własną ulotkę z korzyściami płynącymi z Twoich usług.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
-                      Zobacz projekt ulotki
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -349,7 +318,6 @@ export default function OfferDesignPresentationFolderPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'medium',
@@ -358,25 +326,27 @@ export default function OfferDesignPresentationFolderPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiFolderOpenLine className="h-6 w-6" />,
               title: 'Projekt ulotki',
               description: 'Skuteczna promocja Twojej oferty',
               size: 'small',
               backgroundImage: '/assets/projects/simba-group/folder-reklamowy-simba-group-przod.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-ulotki',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

@@ -4,8 +4,8 @@ import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import FeesSteps from '@/components/sections/steps/FeesSteps';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiToolsLine, RiComputerLine, RiShoppingCartLine, RiPencilLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import { RiBarChart2Fill, RiLightbulbFlashLine, RiShieldCheckLine, RiSearchLine, RiFileList2Line, RiToolsLine } from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -18,6 +18,8 @@ import Button from '@/components/ui/buttons/Button';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Optymalizacja SEO - szybsza strona, lepsza widoczność | Arteon',
@@ -28,7 +30,7 @@ export const metadata = {
     description: 'Optymalizacja witryn internetowych dla lepszej pozycji w wynikach wyszukiwania. Mierzalny efekt przed i po. Zoptymalizuj witrynę już dziś',
     url: 'https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-camper-albania-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baners-camper-albania-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -110,7 +112,7 @@ export default function OfferOptimizationSEO() {
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
             <li>Właścicieli nowych stron, które potrzebują solidnych fundamentów przed skalowaniem treści i stworzeniem reklam.</li>
             <li>Właścicieli sklepów internetowych, którym zależy na szybkiej stronie i lepszej widoczności produktów.</li>
-            <li>Firm usługowych i B2B. które potrzebują stabilnie zwiększać liczbę zapytań od klientów z Google.</li>
+            <li>Firm usługowych i B2B, które potrzebują stabilnie zwiększać liczbę zapytań od klientów z Google.</li>
           </ul>
         </SectionBasic>
 
@@ -123,22 +125,22 @@ export default function OfferOptimizationSEO() {
             {
               title: 'Szybkość ładowania',
               description: <>Skracamy czas wczytywania strony, optymalizujemy grafiki i kod strony. Efekt: strona działa szybciej, a użytkownicy rzadziej rezygnują z przeglądania.</>,
-              icon: <RiSearchLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiSearchLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Tytuły i opisy widoczne w Google',
               description: <>Poprawiamy tytuły i opisy, by lepiej pasowały do zapytań użytkowników. Efekt: więcej trafnych zapytań i więcej wejść z wyników wyszukiwania.</>,
-              icon: <RiLightbulbFlashLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiLightbulbFlashLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Struktura treści i nawigacja',
               description: <>Porządkujemy nagłówki i menu, dodajemy logiczne połączenia między podstronami. Efekt: łatwiejsza nawigacja i lepsze rozumienie strony przez Google.</>,
-              icon: <RiFileList2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileList2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Dodatkowe dane dla Google',
               description: <>Wprowadzamy dodatkowe informacje (np. sekcje pytań i odpowiedzi), które pomagają Google lepiej zrozumieć zawartość i to co dokładnie oferujesz.</>,
-              icon: <RiShieldCheckLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiShieldCheckLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -185,7 +187,7 @@ export default function OfferOptimizationSEO() {
               title: '3. Raport i dalsze działania',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dostajesz krótki raport z efektami optymalizację i listę następnych działań.</p>
+                  <p className="mb-3 text-sm">Dostajesz krótki raport z efektami optymalizacji i listę następnych działań.</p>
                 </div>
               ),
             },
@@ -219,7 +221,6 @@ export default function OfferOptimizationSEO() {
 
         <SectionPrices
           title="Cennik optymalizacji SEO"
-          subtitle="Przykładowe zakresy i ceny"
           plans={[
             {
               name: 'Optymalizacja SEO: 1+ stron',
@@ -261,7 +262,7 @@ export default function OfferOptimizationSEO() {
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Ceny orientacyjne brutto. Ostateczna wycena zależy od technologii, wielkości witryny i tego w jakim tempie chcesz rosnąć. Dopasowujemy ofertę do Twojego budżetu"
+          legalNote="Ceny orientacyjne. Ostateczna wycena zależy od technologii, wielkości witryny i oczekiwanego tempa wzrostu. Dopasowujemy ofertę do Twojego budżetu."
         />
 
         <Gap variant="line" />
@@ -312,12 +313,19 @@ export default function OfferOptimizationSEO() {
 
         <Gap size="sm" />
 
-        <ContactForm title="Zamów optymalizację SEO" description="Podaj adres swojej strony a my przygotujemy wycenę optymalizacji SEO" defaultSubject="Optymalizacja SEO" />
+        <SectionContactForm
+          title="Sprawdź koszt optymalizacji SEO"
+          description="Podaj adres swojej strony i napisz co chciałbyś/aś poprawić (szybkość, widoczność, błędy techniczne) - otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.webp"
+          imageAlt="Optymalizacja SEO - edycja i poprawa widoczności strony"
+          defaultSubject="Optymalizacja SEO"
+        />
 
         <Gap variant="line" />
 
         <FaqPanels
           openByDefault={1}
+          title="Najczęstsze pytania dotyczące optymalizacji SEO"
           pageUrl="https://www.arteonagency.pl/uslugi/marketing/optymalizacja-seo"
           items={[
             {
@@ -328,11 +336,11 @@ export default function OfferOptimizationSEO() {
                   <a href="/uslugi/marketing/audyt-seo" className="inline-link">
                     Audyt SEO
                   </a>{' '}
-                  wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania. Dzięki temu inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.
+                  wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania - inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.
                 </p>
               ),
               answerSchemaText:
-                'Teoretycznie tak, ale nie polecamy takiego rozwiązania. Audyt SEO wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania. Dzięki temu inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.',
+                'Teoretycznie tak, ale nie polecamy takiego rozwiązania. Audyt SEO wskazuje dokładne błędy na Twojej witrynie i pozwala opracować efektywny plan działania - inwestujesz w to, co daje najszybszy efekt i nie marnujesz budżetu.',
             },
             {
               question: 'Kiedy zobaczę efekty optymalizacji SEO?',
@@ -362,10 +370,9 @@ export default function OfferOptimizationSEO() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiBarChart2Fill className="h-6 w-6" />,
               title: 'Pozycjonowanie stron',
               description: 'Stałe działania SEO po optymalizacji',
               size: 'large',
@@ -374,7 +381,6 @@ export default function OfferOptimizationSEO() {
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
@@ -383,25 +389,27 @@ export default function OfferOptimizationSEO() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiShoppingCartLine className="h-6 w-6" />,
               title: 'Sklepy internetowe',
               description: 'Sprzedawaj produkty online',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              icon: <RiPencilLine className="h-6 w-6" />,
               title: 'Tworzenie treści',
               description: 'Teksty, które przyciągają klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/tworzenie-tresci',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące SEO" categorySlug="seo" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

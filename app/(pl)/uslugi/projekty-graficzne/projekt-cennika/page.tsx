@@ -4,8 +4,8 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPantoneLine, RiComputerLine, RiIdCardLine, RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import { RiPencilRuler2Line, RiBarChart2Fill, RiFileTextLine, RiTableLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -17,8 +17,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt cennika | Arteon',
@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Przejrzysty projekt cennika firmowego. Estetyczny układ, typografia, kolory wraz z przygotowaniem do druku oraz wersją online.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-cennika',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/cennik-mockup.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/cennik-mockup.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -91,6 +91,10 @@ export default function OfferDesignPriceListPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Przykładowe realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Dlaczego warto mieć profesjonalny projekt cennika?">
           <p>
             Dobrze zaprojektowany układ cennika porządkuje ofertę, ułatwia porównanie, zachęca do wyboru droższych opcji oraz buduje profesjonalny wizerunek Twojej firmy. Klient widzi jasną i
@@ -125,22 +129,22 @@ export default function OfferDesignPriceListPage() {
             {
               title: 'Przejrzysty układ i hierarchia',
               description: <>Projektujemy logiczne sekcje, wyróżniamy kluczowe usługi i podkreślamy rekomendowane opcje, aby ułatwić wybór klientowi, ułatwiając przy tym rozmowę o cenach.</>,
-              icon: <RiTableLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiTableLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, czcionki i ikony dopasowujemy do stylu Twojej marki oraz branży. Cennik staje się integralną częścią Twojej komunikacji.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wersje do druku i online',
               description: <>Otrzymasz plik PDF gotowy do druku oraz wersję cyfrową do publikacji na stronie czy mediach społecznościowych. Dostajesz gotową paczkę plików.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -159,17 +163,12 @@ export default function OfferDesignPriceListPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt cennika - przykładowe zakresy"
-          subtitle="Dobieramy format i poziom szczegółowości do Twojej indywidualnej oferty"
           plans={[
             {
               name: 'Cennik jednostronicowy',
@@ -194,7 +193,7 @@ export default function OfferDesignPriceListPage() {
                 '2 kierunki i dwie rundy korekt po pierwszej prezentacji',
                 'Realizacja w 3-4 dni',
               ],
-              btnOne: 'Zamów cenniku dwustronicowym',
+              btnOne: 'Zamów cennik dwustronicowy',
               btnOneLink: '#kontakt',
             },
             {
@@ -220,9 +219,11 @@ export default function OfferDesignPriceListPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt cennika"
-          description="Opisz, czym się zajmujesz i jak wygląda Twoja oferta. Na tej podstawie przygotujemy wycenę, termin i rekomendacje"
+        <SectionContactForm
+          title="Sprawdź koszt realizacji cennika"
+          description="Napisz jak wygląda oferta, ile pozycji ma zawierać cennik oraz czy posiadasz logo i zdjęcia — otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/cennik-mockup.webp"
+          imageAlt="Realizacja projektu cennika firmowego"
           defaultSubject="Projekt cennika"
         />
 
@@ -235,7 +236,7 @@ export default function OfferDesignPriceListPage() {
           items={[
             {
               question: 'W jakim formacie przygotujecie cennik?',
-              answer: 'Najczęściej tworzymy cenniki w formacie A4 oraz A5. Na życzenie możemy przygotować cennik w innym formacie',
+              answer: 'Najczęściej tworzymy cenniki w formacie A4 oraz A5. Na życzenie możemy przygotować cennik w innym formacie.',
             },
             {
               question: 'Czy mogę dodać zdjęcia lub ikony do cennika?',
@@ -258,66 +259,10 @@ export default function OfferDesignPriceListPage() {
 
         <Gap variant="line" />
 
-        <SectionSteps
-          title="Z czym warto połączyć projekt cennika?"
-          subtitle="Zobacz też"
-          description="Najlepszy efekt daje cennik, który jest częścią spójnego zestawu materiałów sprzedażowych i wizerunkowych - od logo, przez katalog, po identyfikację wizualną i stronę internetową. Z nami możesz zaplanować cały zestaw materiałów w jednym miejscu, tak, aby każdy element opowiadał tę samą historię i pracował na Twój wynik."
-          items={[
-            {
-              icon: <RiTableLine className="h-8 w-8" />,
-              title: 'Projekt menu restauracji',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli prowadzisz restaurację, kawiarnię lub lokal gastronomiczny, możesz sprawdzić dedykowaną ofertę projektów menu dla lokali gastronomicznych.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-menu-restauracji">
-                      Zobacz projekt menu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Katalog z ofertą',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Jeśli Twoje usługi są bardziej rozbudowane, warto rozważyć stworzenie katalogu, w którym pokażesz szczegóły, zdjęcia czy też swoje realizacje.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-katalogu">
-                      Zobacz projekt katalogu
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiPencilRuler2Line className="h-8 w-8" />,
-              title: 'Identyfikacja wizualna',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">
-                    Cennik najlepiej działa, gdy jest spójny z logo, wizytówkami i resztą materiałów. Jeśli nie masz jeszcze stylu swojej firmy, możesz rozważyć projekt pełnej identyfikacji wizualnej.
-                  </p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej">
-                      Zobacz identyfikację wizualną
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="three"
-        />
-
-        <Gap variant="line" />
-
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -326,7 +271,6 @@ export default function OfferDesignPriceListPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
@@ -335,32 +279,34 @@ export default function OfferDesignPriceListPage() {
               btnLink: '/uslugi/strony-internetowe',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <IoColorPalette className="h-6 w-6" />,
               title: 'Projekt katalogu',
               description: 'Rozbudowana prezentacja oferty',
               size: 'small',
               backgroundImage: '/assets/projects/gazetka-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-katalogu',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>
 
       <CTABanner
         title="Wzmocnij swój wizerunek"
-        description="Zaprojektujemy przejrzysty i profesjonalny cennik, który wzmocni Twój profesjonalny wizerunek"
+        description="Zaprojektujemy przejrzysty cennik, który wzmocni wizerunek Twojej firmy."
         btnOne="Skontaktuj się"
         btnOneLink="#kontakt"
         btnTwo="Poznaj inne usługi graficzne"

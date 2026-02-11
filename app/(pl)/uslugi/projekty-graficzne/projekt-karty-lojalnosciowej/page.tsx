@@ -4,8 +4,16 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPantoneLine, RiComputerLine, RiIdCardLine, RiGiftLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiVipCrownLine, RiCoupon2Line, RiPencilRuler2Line, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiFileTextLine,
+  RiVipCrownLine,
+  RiCoupon2Line,
+  RiPencilRuler2Line,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -17,6 +25,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt karty lojalnościowej | Arteon',
@@ -30,6 +40,8 @@ export const metadata = {
     images: [
       {
         url: 'https://www.arteonagency.pl/assets/blog/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje/czym-jest-social-proof-i-dlaczego-opinie-innych-wplywaja-na-nasze-decyzje.webp',
+        width: 1200,
+        height: 630,
       },
     ],
   },
@@ -89,6 +101,10 @@ export default function OfferDesignLoyaltyCardPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Przykładowe projekty graficzne" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Dlaczego warto zainwestować w karty lojalnościowe?">
           <p>
             <strong>Karty lojalnościowe realnie zwiększają liczbę powracających klientów.</strong> Narzędzie marketingowe, które wzmacnia lojalność klientów: „wracam do tej firmy, bo dzięki temu mam
@@ -131,29 +147,29 @@ export default function OfferDesignLoyaltyCardPage() {
                   Tworzymy karty dopasowane do specyfiki działalności - salonów, kawiarni, siłowni, butików i innych punktów usługowych. Zasady programu są czytelne zarówno dla Ciebie, jak i klientów.
                 </>
               ),
-              icon: <RiVipCrownLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiVipCrownLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Kolory, typografia i detale dopasowujemy do Twojej identyfikacji wizualnej. Karta naturalnie uzupełnia pozostałe materiały i wzmacnia profesjonalny wizerunek firmy.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Gotowość do druku',
               description: (
                 <>Dostarczamy pliki w formacie gotowym do druku, z odpowiednimi spadami i specyfikacją dla drukarni. Możesz od razu zamówić nakład bez dodatkowych przeróbek technicznych.</>
               ),
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Numeracje i pola pieczątek',
               description: <>Projektujemy czytelne pola na pieczątki, podpisy i oznaczenia nagród. Dzięki temu obsługa programu jest prosta dla zespołu i zrozumiała dla klientów.</>,
-              icon: <RiCoupon2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiCoupon2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -163,7 +179,7 @@ export default function OfferDesignLoyaltyCardPage() {
         <SectionInfo title="Dla kogo jest karta lojalnościowa?" subtitle="Kiedy ten projekt szybko się zwraca?">
           <p>
             Projekt karty lojalnościowej szczególnie opłaca się tam, gdzie kluczowe jest, aby klient wracał regularnie - kilka lub kilkanaście razy w roku. Oto kilka branż, w których posiadanie karty
-            lojalnościowej jest niezwykle skuteczne:
+            lojalnościowej przynosi najlepsze efekty:
           </p>
 
           <br />
@@ -179,17 +195,12 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Przykładowe projekty graficzne" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Projekt karty lojalnościowej - przykładowe zakresy"
-          subtitle="Dobieramy zakres do wielkości programu, liczby lokalizacji i indywidualnych potrzeb"
           plans={[
             {
               name: 'Karta lojalnościowa w formie wizytówki',
@@ -243,9 +254,11 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt karty lojalnościowej"
-          description="Opisz, czym się zajmujesz i jak chcesz nagradzać swoich klientów. Przygotujemy propozycję układu, wycenę i termin realizacji."
+        <SectionContactForm
+          title="Sprawdź koszt realizacji karty lojalnościowej"
+          description="Napisz jak chcesz nagradzać klientów, ile wariantów potrzebujesz oraz czy posiadasz logo — otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
+          imageAlt="Realizacja projektu karty lojalnościowej"
           defaultSubject="Projekt karty lojalnościowej"
         />
 
@@ -254,11 +267,11 @@ export default function OfferDesignLoyaltyCardPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej"
-          title="Najczęstsze pytania o karty lojalnościowe"
+          title="Najczęstsze pytania dotyczące projektów kart lojalnościowych"
           items={[
             {
               question: 'W jakich formatach wykonujecie karty?',
-              answer: 'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki (85 × 55 mm). Jeśli potrzebujesz innego formatu, dopasujemy projekt.',
+              answer: 'Najczęściej przygotowujemy karty lojalnościowe w formacie wizytówki (85 x 55 mm). Jeśli potrzebujesz innego formatu, dopasujemy projekt.',
             },
             {
               question: 'Czy mogę dodać logo i kolory marki na kartę lojalnościową?',
@@ -271,58 +284,17 @@ export default function OfferDesignLoyaltyCardPage() {
             {
               question: 'Czy mogę zamówić serię różnych kart lojalnościowych?',
               answer:
-                'Tak, możemy przygotować serię spójną wizualnie dla wielu punktów, lokalizacji lub marek partnerskich. Dzięki temu program jest łatwy do zrozumienia, a jednocześnie dopasowany do konkretnych miejsc.',
+                'Tak, możemy przygotować serię spójną wizualnie dla wielu punktów, lokalizacji lub marek partnerskich - program pozostaje łatwy do zrozumienia, a jednocześnie dopasowany do konkretnych miejsc.',
             },
           ]}
         />
 
-        {/* 
-        <Gap variant="line" />
-
-        <SectionSteps
-          title="Z czym warto połączyć karty lojalnościowe?"
-          subtitle="Zobacz też"
-          description="Karty lojalnościowe działają jeszcze lepiej, gdy klienci widzą je w kilku miejscach: w lokalu, w materiałach promocyjnych i online."
-          items={[
-            {
-              icon: <RiCoupon2Line className="h-8 w-8" />,
-              title: 'Kupony rabatowe i vouchery',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Kupony i vouchery świetnie uzupełniają program lojalnościowy - możesz nagradzać klientów dodatkowymi zaproszeniami lub zniżkami na specjalne okazje.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera">
-                      Zobacz projekty voucherów
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Plakaty i grafiki informujące o programie',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Dobrze widoczna informacja przy ladzie, w recepcji lub w mediach społecznościowych powoduje, że więcej osób pyta o program i zaczyna z niego korzystać.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-plakatu">
-                      Sprawdź projekty plakatów
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
-        /> */}
-
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -331,7 +303,6 @@ export default function OfferDesignLoyaltyCardPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiGiftLine className="h-6 w-6" />,
               title: 'Kupony i vouchery',
               description: 'Nagradzaj lojalnych klientów dodatkowymi bonusami',
               size: 'medium',
@@ -340,25 +311,27 @@ export default function OfferDesignLoyaltyCardPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

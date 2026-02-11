@@ -66,7 +66,7 @@ export default function ProjectsPage() {
       />
 
       <Wrapper>
-        <Gap size="sm" />
+        <Gap size="xs" />
 
         <ProjectWithFilters projects={projects} />
 

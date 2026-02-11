@@ -4,8 +4,17 @@ import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
 import SectionBento from '@/components/ui/sections/SectionBento';
-import { RiPantoneLine, RiComputerLine, RiIdCardLine, RiVipCrownLine, RiPencilRuler2Line, RiBrushLine, RiBarChart2Fill, RiLightbulbFlashLine, RiFileTextLine, RiTicket2Line, RiGiftLine, RiMoneyDollarCircleLine } from 'react-icons/ri';
-import ContactForm from '@/components/sections/ContactForm';
+import {
+  RiPencilRuler2Line,
+  RiBrushLine,
+  RiBarChart2Fill,
+  RiLightbulbFlashLine,
+  RiFileTextLine,
+  RiTicket2Line,
+  RiGiftLine,
+  RiMoneyDollarCircleLine,
+} from 'react-icons/ri';
+import SectionContactForm from '@/components/sections/SectionContactForm';
 import Wrapper from '@/components/ui/Wrapper';
 import ProjectsCarousel from '@/components/sections/projects/ProjectsCarousel';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
@@ -17,8 +26,8 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
-import SectionSteps from '@/components/ui/sections/SectionSteps';
-import Button from '@/components/ui/buttons/Button';
+import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
+import { getAllArticlePreviews } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Kupony rabatowe i vouchery | Arteon',
@@ -31,7 +40,7 @@ export const metadata = {
     description: 'Projektujemy kupony rabatowe i vouchery prezentowe gotowe do druku wraz z wersją online. Zrealizuj z nami swój pomysł.',
     url: 'https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera',
     type: 'website',
-    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp' }],
+    images: [{ url: 'https://www.arteonagency.pl/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp', width: 1200, height: 630 }],
   },
 } as const;
 
@@ -91,6 +100,10 @@ export default function OfferDesignCouponsAndVouchersPage() {
       <Wrapper>
         <Gap size="xs" />
 
+        <ProjectsCarousel title="Przykładowe realizacje projektów graficznych" category="grafika" />
+
+        <Gap variant="line" />
+
         <SectionInfo title="Dlaczego warto inwestować w kupony i vouchery?">
           <p>
             <strong>Kupon oraz voucher to drobny materiał, który potrafi przynieść duży efekt.</strong> Daje pretekst do kontaktu, zakupów i powrotu klienta. Estetyczny projekt buduje pozytywne
@@ -125,27 +138,27 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               title: 'Spójność z identyfikacją marki',
               description: <>Dopasujemy projekt do Twojej kolorystyki, logo i tonu komunikacji, dzięki czemu voucher będzie spójnym elementem Twojej marki.</>,
-              icon: <IoColorPalette className="h-6 w-6 text-slate-800" />,
+              icon: <IoColorPalette className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Wersje do druku i online',
               description: <>Otrzymasz gotowe pliki do druku oraz wersje cyfrowe - do mediów społecznościowych, mailingu lub sklepu internetowego.</>,
-              icon: <RiFileTextLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiFileTextLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Czytelne pola i zasady wykorzystania',
               description: <>Zaprojektujemy odpowiednie pola na datę ważności, kod, podpis czy regulamin tak, aby voucher był piękny i praktyczny.</>,
-              icon: <RiTicket2Line className="h-6 w-6 text-slate-800" />,
+              icon: <RiTicket2Line className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Warianty na różne okazje',
               description: <>Możemy przygotować serię voucherów: urodzinowe, świąteczne, okazjonalne - z zachowaniem jednego spójnego stylu.</>,
-              icon: <RiGiftLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiGiftLine className="h-6 w-6 text-primary" />,
             },
             {
               title: 'Faktura po realizacji',
               description: <>Płacisz dopiero po otrzymaniu gotowego projektu w finalnej formie.</>,
-              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-slate-800" />,
+              icon: <RiMoneyDollarCircleLine className="h-6 w-6 text-primary" />,
             },
           ]}
         />
@@ -155,7 +168,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
         <SectionInfo title="Dla kogo są kupony rabatowe i vouchery?" subtitle="Dla kogo">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>Dla salonów beauty, fryzjerów, SPA,</strong> które chcą zachęcić klientów do kolejnej wizyty lub podarowaniu kuponu bliskim.
+              <strong>Dla salonów beauty, fryzjerów, SPA,</strong> które chcą zachęcić klientów do kolejnej wizyty lub podarowania kuponu bliskim.
             </li>
             <li>
               <strong>Dla sklepów stacjonarnych i online,</strong> które chcą wręczać bony i kupony rabatowe na zakupy.
@@ -187,17 +200,12 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <Gap variant="line" />
 
-        <ProjectsCarousel title="Przykładowe realizacje projektów graficznych" category="grafika" subtitle="Portfolio" />
-
-        <Gap variant="line" />
-
         <TestimonialsCarousel />
 
         <Gap variant="line" />
 
         <SectionPrices
           title="Kupony rabatowe i vouchery - przykładowe pakiety"
-          subtitle="Zakres dobieramy do Twojej oferty, branży i indywidualnych potrzeb"
           plans={[
             {
               name: 'Kupon rabatowy / voucher dwustronicowy',
@@ -228,7 +236,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
             {
               name: 'Pakiet kuponów / voucherów',
               price: 'wycena indywidualna',
-              description: 'Dla marek, które chcą spójnych kuponów na różne okazje np. świeta, urodziny czy walentynki',
+              description: 'Dla marek, które chcą spójnych kuponów na różne okazje np. święta, urodziny czy walentynki',
               features: [
                 'Kilka wariantów kuponów / voucherów w jednej linii stylistycznej na różne okazje',
                 '3 kierunki wyglądu i dwie rundy poprawek po pierwszej prezentacji',
@@ -248,9 +256,11 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <Gap variant="line" />
 
-        <ContactForm
-          title="Zamów projekt voucherów lub kuponów"
-          description="Opisz, czym się zajmujesz i co chcesz przedstawić na swoim kuponie. Przygotujemy propozycję realizacji, wycenę i termin."
+        <SectionContactForm
+          title="Sprawdź koszt realizacji kuponu lub vouchera"
+          description="Napisz co chcesz przedstawić na kuponie, ile wariantów potrzebujesz oraz czy posiadasz logo — otrzymasz darmową wycenę realizacji."
+          imageSrc="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
+          imageAlt="Realizacja projektu kuponu rabatowego"
           defaultSubject="Projekt kuponów i voucherów"
         />
 
@@ -259,7 +269,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
         <FaqPanels
           openByDefault={1}
           pageUrl="https://www.arteonagency.pl/uslugi/projekty-graficzne/projekt-kuponu-rabatowego-i-vouchera"
-          title="Najczęstsze pytania dotyczące kuponów i voucherów"
+          title="Najczęstsze pytania dotyczące projektów kuponów i voucherów"
           items={[
             {
               question: 'W jakich formatach przygotowujecie kupony rabatowe?',
@@ -271,57 +281,17 @@ export default function OfferDesignCouponsAndVouchersPage() {
             },
             {
               question: 'Czy mogę zlecić przygotowanie całej akcji promocyjnej?',
-              answer: 'Tak, możemy zaprojektować kupony oraz materiały wspierające (posty, grafiki na stronę, media społecznościowe czy ulotki)',
+              answer: 'Tak, możemy zaprojektować kupony oraz materiały wspierające (posty, grafiki na stronę, media społecznościowe czy ulotki).',
             },
           ]}
-        />
-
-        <Gap variant="line" />
-
-        <SectionSteps
-          title="Z czym najlepiej połączyć kupony i vouchery?"
-          subtitle="Zobacz też"
-          description="Kupony i vouchery działają jeszcze lepiej, gdy są częścią szerszej komunikacji. Możesz od razu połączyć je z innymi materiałami graficznymi."
-          items={[
-            {
-              icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Ulotki i informujące o promocji',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Ulotki pomagą Ci dotrzeć do jeszcze większej grupy osób, przedstawiając szczegółowy zakres Twoich usług.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/projekt-ulotki">
-                      Zobacz projekty ulotek
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-            {
-              icon: <IoColorPalette className="h-8 w-8" />,
-              title: 'Szablony postów do social mediów',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Spójne grafiki na Instagram i Facebook wzmacniają komunikację - dzięki spójnym szablonom, tworzenie nowych treści będzie łatwiejsze.</p>
-                  <div className="mt-auto">
-                    <Button arrow link="/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe">
-                      Zobacz szablony postów
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
-          ]}
-          grid="two"
         />
 
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj pozostałe usługi Arteon"
+          title="Poznaj inne usługi"
           items={[
             {
-              icon: <RiPantoneLine className="h-6 w-6" />,
               title: 'Identyfikacja wizualna',
               description: 'Spójna tożsamość marki od A do Z',
               size: 'large',
@@ -330,7 +300,6 @@ export default function OfferDesignCouponsAndVouchersPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej',
             },
             {
-              icon: <RiVipCrownLine className="h-6 w-6" />,
               title: 'Karty lojalnościowe',
               description: 'Program lojalności dla stałych klientów',
               size: 'medium',
@@ -339,25 +308,27 @@ export default function OfferDesignCouponsAndVouchersPage() {
               btnLink: '/uslugi/projekty-graficzne/projekt-karty-lojalnosciowej',
             },
             {
-              icon: <RiIdCardLine className="h-6 w-6" />,
               title: 'Projekt wizytówki',
               description: 'Elegancka wizytówka dla Twojej firmy',
               size: 'small',
               backgroundImage: '/assets/projects/luxnova/wizytowka-dla-kancelari-luxnova-mockup.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/projekty-graficzne/projekt-wizytowki',
             },
             {
-              icon: <RiComputerLine className="h-6 w-6" />,
               title: 'Strony internetowe',
               description: 'Profesjonalna wizytówka w sieci',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Sprawdź',
+              btnLabel: 'Sprawdź ofertę',
               btnLink: '/uslugi/strony-internetowe',
             },
           ]}
         />
+
+        <Gap variant="line" />
+
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
 
         <Gap size="sm" />
       </Wrapper>

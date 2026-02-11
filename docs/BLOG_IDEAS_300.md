@@ -161,7 +161,7 @@ Format: Tytuł - Intencja (informacyjna / komercyjna / hybrydowa) - Powiązana u
 
 ## Batch 4/6 (151-200) - Tworzenie treści + blog: język marki + E-E-A-T
 
-151. Tone of voice marki: jak go zdefiniować i przełożyć na stronę i social media (prosta metoda) - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Pomaga uporządkować komunikację i poprawić spójność treści.
+151. Tone of voice marki: jak go zdefiniować i przełożyć na stronę i media społecznościowe (prosta metoda) - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Pomaga uporządkować komunikację i poprawić spójność treści.
 152. Archetyp marki: jak go wybrać i przełożyć na styl treści (bez ezoteryki) - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Wspiera spójny język i wyróżnienie na tle konkurencji.
 153. Brief dla copywritera: jakie informacje zwiększają jakość treści (checklista) - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Skraca czas pracy i zmniejsza liczbę poprawek.
 154. Strona główna: jak pisać headline i subheadline, które od razu wyjaśniają „co robisz” - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Największa dźwignia w komunikacji; wpływa na bounce rate i leady.
@@ -188,7 +188,7 @@ Format: Tytuł - Intencja (informacyjna / komercyjna / hybrydowa) - Powiązana u
 175. Jak pokazywać liczby w case study, gdy nie możesz ujawniać wrażliwych danych - Intencja: informacyjna - Usługa: Tworzenie treści - Uzasadnienie: Pomaga tworzyć dowody bez łamania NDA.
 176. Oferta PDF: co powinna zawierać, żeby skrócić proces sprzedaży - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Wspiera usługę „Oferty i case studies” i domykanie leadów.
 177. Jak pisać ofertę usług bez ogólników: przykłady zdań, które działają - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Konkretny materiał „do wdrożenia”, powiązany z realnymi problemami sprzedaży.
-178. Copy do social media: Facebook/Instagram vs LinkedIn - różnice w stylu i długości - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Pokazuje, jak nie kopiować treści 1:1 między platformami.
+178. Copy do media społecznościowe: Facebook/Instagram vs LinkedIn - różnice w stylu i długości - Intencja: hybrydowa - Usługa: Tworzenie treści - Uzasadnienie: Pokazuje, jak nie kopiować treści 1:1 między platformami.
 179. Scenariusz rolki (Reels): prosty szablon „hook-wartość-CTA” + przykłady - Intencja: informacyjna - Usługa: Tworzenie treści - Uzasadnienie: Wysoki popyt na format wideo; temat praktyczny.
 180. Jak pisać posty edukacyjne, które wspierają SEO pośrednio (brand search) - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Łączy działania social z rozpoznawalnością i późniejszym ruchem organicznym.
 181. Jak przerabiać jeden temat na 5 formatów (artykuł, post, newsletter, FAQ, case) bez duplikowania - Intencja: informacyjna - Usługa: Tworzenie treści - Uzasadnienie: Pomaga skalować treści bez spadku jakości.
@@ -226,7 +226,7 @@ Format: Tytuł - Intencja (informacyjna / komercyjna / hybrydowa) - Powiązana u
 210. Typografia marki: jak dobrać fonty do strony i materiałów, żeby zachować spójność - Intencja: hybrydowa - Usługa: Projekty graficzne - Uzasadnienie: Typografia jest niedoceniana, a mocno wpływa na wizerunek.
 211. Licencje fontów: czego pilnować, gdy używasz fontów w logo, na stronie i w reklamach - Intencja: informacyjna - Usługa: Projekty graficzne - Uzasadnienie: Minimalizuje ryzyko prawne i późniejsze koszty.
 212. Ikony w stylu marki: kiedy wystarczy gotowa biblioteka, a kiedy warto zaprojektować własne - Intencja: hybrydowa - Usługa: Projekty graficzne - Uzasadnienie: Ułatwia decyzję koszt/efekt w UI i marketingu.
-213. Szablony do social mediów: jak je zaprojektować, żeby oszczędzać czas i nie tracić jakości - Intencja: hybrydowa - Usługa: Projekty graficzne - Uzasadnienie: Temat blisko potrzeby biznesowej; prowadzi do projektowania zestawów grafik.
+213. Szablony do mediów społecznościowych: jak je zaprojektować, żeby oszczędzać czas i nie tracić jakości - Intencja: hybrydowa - Usługa: Projekty graficzne - Uzasadnienie: Temat blisko potrzeby biznesowej; prowadzi do projektowania zestawów grafik.
 214. Grafiki do postów vs do reklam: jakie różnice w projekcie (czytelność, hook, CTA) - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Pomaga przestać „wrzucać to samo wszędzie” i poprawia efekty kampanii.
 215. Kreacje reklamowe do Meta Ads: jakie formaty przygotować i jak testować warianty - Intencja: hybrydowa - Usługa: Marketing internetowy - Uzasadnienie: Łączy design i performance; temat pod realne wdrożenia.
 216. Banery Google Display: dlaczego większość banerów nie działa i jak projektować czytelnie - Intencja: informacyjna - Usługa: Projekty graficzne - Uzasadnienie: Materiał edukacyjny, który naturalnie prowadzi do projektu kreacji.
@@ -256,7 +256,7 @@ Format: Tytuł - Intencja (informacyjna / komercyjna / hybrydowa) - Powiązana u
 240. Jak organizować pliki marki (logo, fonty, szablony) - struktura, nazwy, wersjonowanie - Intencja: informacyjna - Usługa: Projekty graficzne - Uzasadnienie: Ułatwia współpracę i przyspiesza wdrożenia.
 241. Checklist assetów dla wykonawcy strony: co przekazać, żeby nie było opóźnień (logo, kolory, zdjęcia, copy) - Intencja: hybrydowa - Usługa: Strony internetowe - Uzasadnienie: Zmniejsza tarcia w projekcie i skraca czas realizacji.
 242. Napisy na Reels/Stories: jak projektować overlay, żeby był czytelny na telefonie - Intencja: informacyjna - Usługa: Projekty graficzne - Uzasadnienie: Wideo rośnie, a czytelność napisów jest częstym błędem.
-243. Social media size guide: jakie formaty i bezpieczne pola warto znać (IG/FB/LinkedIn) - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Pomaga uniknąć ucięć i nieczytelnych kreacji.
+243. media społecznościowe size guide: jakie formaty i bezpieczne pola warto znać (IG/FB/LinkedIn) - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Pomaga uniknąć ucięć i nieczytelnych kreacji.
 244. Minimalizm w identyfikacji: kiedy buduje premium, a kiedy wygląda „tanio” - Intencja: hybrydowa - Usługa: Projekty graficzne - Uzasadnienie: Pomaga podjąć decyzję estetyczną bez ślepego podążania za trendami.
 245. Jak wycenia się projekt graficzny: co wpływa na cenę (warianty, formaty, licencje) - Intencja: hybrydowa - Usługa: Projekty graficzne - Uzasadnienie: Urealnia budżet i ogranicza nieporozumienia.
 246. Prawa autorskie do logo i materiałów: co powinno być jasno ustalone przed startem - Intencja: hybrydowa - Usługa: Projekty graficzne - Uzasadnienie: Buduje zaufanie i zabezpiecza obie strony.
@@ -282,8 +282,8 @@ Format: Tytuł - Intencja (informacyjna / komercyjna / hybrydowa) - Powiązana u
 263. Meta Ads (Facebook/Instagram) dla usług: jakie cele kampanii wybrać na start - Intencja: hybrydowa - Usługa: Marketing internetowy - Uzasadnienie: Pomaga uniknąć ustawień, które „zjadają” budżet.
 264. Kreacja w Meta Ads: jak testować warianty (tekst, grafika, wideo) i nie utknąć w chaosie - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Procesowy temat pod stałą współpracę.
 265. LinkedIn dla B2B: kiedy warto inwestować w profil i treści, a kiedy to strata czasu - Intencja: hybrydowa - Usługa: Marketing internetowy - Uzasadnienie: Decyzja kanałowa pod realny model sprzedaży.
-266. Strategia social media bez „planów postów na rok”: jak dobrać 3 filary treści do marki - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Ułatwia regularną komunikację bez przeciążenia.
-267. Social media a leady: jak ocenić, czy posty realnie wspierają sprzedaż (KPI) - Intencja: hybrydowa - Usługa: Marketing internetowy - Uzasadnienie: Porządkuje metryki i oczekiwania.
+266. Strategia media społecznościowe bez „planów postów na rok”: jak dobrać 3 filary treści do marki - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Ułatwia regularną komunikację bez przeciążenia.
+267. media społecznościowe a leady: jak ocenić, czy posty realnie wspierają sprzedaż (KPI) - Intencja: hybrydowa - Usługa: Marketing internetowy - Uzasadnienie: Porządkuje metryki i oczekiwania.
 268. Jak odpowiadać na komentarze i wiadomości, żeby budować markę (szablony reakcji) - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Wspiera moderację i obsługę społeczności.
 269. Audyt UX / konwersji: co sprawdzamy i jak wygląda wynikowy plan poprawek - Intencja: hybrydowa - Usługa: Marketing internetowy - Uzasadnienie: Transparentność usługi audytu UX z jasnym efektem „co poprawiamy”.
 270. Heatmapy i nagrania sesji: kiedy pomagają, a kiedy wprowadzają w błąd - Intencja: informacyjna - Usługa: Marketing internetowy - Uzasadnienie: Uczy właściwej interpretacji danych UX.

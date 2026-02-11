@@ -1,16 +1,17 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
+import { createPortal } from 'react-dom';
 import Wrapper from '@/components/ui/Wrapper';
 import AppLink from '@/components/ui/Link';
-import { ABOUT_NAV_ITEMS_PL, DESKTOP_NAV_ITEMS_PL, OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
+import { ABOUT_NAV_ITEMS_PL, DESKTOP_NAV_ITEMS_PL, OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL, type OfferSectionKey, type ToolsSectionKey } from '@/components/shared/navigation-data/pl';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import { RiArrowDownSLine, RiArrowRightSLine } from 'react-icons/ri';
 
 const ui = {
   pl: {
@@ -29,6 +30,8 @@ export default function DesktopNavigation() {
   const [isOfferOpen, setIsOfferOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [activeOfferCategory, setActiveOfferCategory] = useState<OfferSectionKey>('witryny');
+  const [activeToolsCategory, setActiveToolsCategory] = useState<ToolsSectionKey>('obrazy');
 
   const offerLiRef = useRef<HTMLLIElement>(null);
   const offerBtnRef = useRef<HTMLButtonElement>(null);
@@ -41,6 +44,13 @@ export default function DesktopNavigation() {
   const aboutLiRef = useRef<HTMLLIElement>(null);
   const aboutBtnRef = useRef<HTMLButtonElement>(null);
   const aboutMenuRef = useRef<HTMLDivElement>(null);
+
+  const offerPanelRef = useRef<HTMLDivElement>(null);
+  const toolsPanelRef = useRef<HTMLDivElement>(null);
+  const aboutPanelRef = useRef<HTMLDivElement>(null);
+
+  const [mounted, setMounted] = useState(false);
+  const [headerBottom, setHeaderBottom] = useState(0);
 
   const offerMenuKeyboard = useMenuKeyboardNavigation(menuRef);
   const toolsMenuKeyboard = useMenuKeyboardNavigation(toolsMenuRef);
@@ -55,9 +65,9 @@ export default function DesktopNavigation() {
   const aboutButtonId = 'about-button';
   const aboutMenuId = 'about-submenu';
 
-  useOutsideClick(offerLiRef, () => setIsOfferOpen(false), isOfferOpen);
-  useOutsideClick(toolsLiRef, () => setIsToolsOpen(false), isToolsOpen);
-  useOutsideClick(aboutLiRef, () => setIsAboutOpen(false), isAboutOpen);
+  useOutsideClick([offerLiRef, offerPanelRef], () => setIsOfferOpen(false), isOfferOpen);
+  useOutsideClick([toolsLiRef, toolsPanelRef], () => setIsToolsOpen(false), isToolsOpen);
+  useOutsideClick([aboutLiRef, aboutPanelRef], () => setIsAboutOpen(false), isAboutOpen);
 
   useEscapeKey(
     () => {
@@ -75,39 +85,43 @@ export default function DesktopNavigation() {
     setIsAboutOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    const header = document.getElementById('navigation');
+    if (!header) return;
+
+    const update = () => {
+      setHeaderBottom(header.getBoundingClientRect().bottom);
+    };
+
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(header);
+
+    return () => ro.disconnect();
+  }, []);
+
+  const handleCategoryHover = useCallback((key: OfferSectionKey) => {
+    setActiveOfferCategory(key);
+  }, []);
+
+  const handleToolsCategoryHover = useCallback((key: ToolsSectionKey) => {
+    setActiveToolsCategory(key);
+  }, []);
+
   const navigationItems = DESKTOP_NAV_ITEMS_PL;
 
-  const offerSections = OFFER_SECTIONS_PL.map((section) => {
-    const iconClassName = section.key === 'grafika' ? 'h-5 w-5 text-slate-800' : 'h-6 w-6 text-slate-800';
-
-    return {
-      ...section,
-      items: section.items.map((item) => {
-        const Icon = item.icon;
-        return {
-          ...item,
-          icon: Icon ? <Icon className={iconClassName} /> : undefined,
-        };
-      }),
-    };
-  });
-
-  const toolsSections = TOOLS_SECTIONS_PL.map((section) => ({
-    ...section,
-    items: section.items.map((item) => {
-      const Icon = item.icon;
-      return {
-        ...item,
-        icon: Icon ? <Icon className="h-5 w-5 text-slate-800" /> : undefined,
-      };
-    }),
-  }));
+  const activeSection = OFFER_SECTIONS_PL.find((s) => s.key === activeOfferCategory) || OFFER_SECTIONS_PL[0];
+  const activeToolsSection = TOOLS_SECTIONS_PL.find((s) => s.key === activeToolsCategory) || TOOLS_SECTIONS_PL[0];
 
   const aboutItems = ABOUT_NAV_ITEMS_PL.map((item) => {
     const Icon = item.icon;
     return {
       ...item,
-      icon: Icon ? <Icon className="h-5 w-5 text-slate-800" /> : undefined,
+      icon: Icon ? <Icon className="h-5 w-5 text-primary" /> : undefined,
     };
   });
 
@@ -165,7 +179,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isOfferOpen}
                     aria-controls={menuId}
                     ref={offerBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-800 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-primary transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -173,54 +187,6 @@ export default function DesktopNavigation() {
                     </motion.span>
                   </button>
 
-                  <AnimatePresence>
-                    {isOfferOpen && (
-                      <motion.div
-                        id={menuId}
-                        role="menu"
-                        aria-labelledby={buttonId}
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.2 }}
-                        className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
-                      >
-                        <Wrapper>
-                          <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="grid gap-6" style={{ gridTemplateColumns: '1fr 1fr 2fr 1fr' }}>
-                            {offerSections.map((section) => (
-                              <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
-                                <div className="mb-3">
-                                  {section.hubHref ? (
-                                    <Link
-                                      href={section.hubHref}
-                                      className="text-dark inline-block rounded px-1 py-0.5 text-sm font-semibold tracking-wide ring-offset-2 ring-offset-white transition outline-none hover:bg-white focus-visible:ring-2 focus-visible:ring-slate-800"
-                                    >
-                                      {section.title}
-                                    </Link>
-                                  ) : (
-                                    <div className="text-dark text-sm font-semibold tracking-wide">{section.title}</div>
-                                  )}
-                                </div>
-
-                                <div className={`grid ${section.key === 'grafika' ? 'grid-cols-2' : 'grid-cols-1'} gap-2`}>
-                                  {section.items.map((item) => (
-                                    <Link
-                                      key={item.href + item.title}
-                                      href={item.href}
-                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
-                                    >
-                                      {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                      <span className="text-mid block text-sm font-medium">{item.title}</span>
-                                    </Link>
-                                  ))}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </Wrapper>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
                 </li>
               );
             }
@@ -242,7 +208,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isToolsOpen}
                     aria-controls={toolsMenuId}
                     ref={toolsBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-800 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-primary transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
                   >
                     <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -250,43 +216,6 @@ export default function DesktopNavigation() {
                     </motion.span>
                   </button>
 
-                  <AnimatePresence>
-                    {isToolsOpen && (
-                      <motion.div
-                        id={toolsMenuId}
-                        role="menu"
-                        aria-labelledby={toolsButtonId}
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.2 }}
-                        className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
-                      >
-                        <Wrapper>
-                          <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-                            {toolsSections.map((section) => (
-                              <div key={section.key} className="rounded-2xl border border-slate-200 p-4">
-                                <div className="text-dark mb-3 text-sm font-semibold tracking-wide">{section.title}</div>
-
-                                <div className="grid grid-cols-1 gap-2">
-                                  {section.items.map((item) => (
-                                    <Link
-                                      key={item.href + item.title}
-                                      href={item.href}
-                                      className="group/link flex items-start gap-3 rounded-xl px-3 py-2 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
-                                    >
-                                      {item.icon ? <span className="mt-0.5 shrink-0">{item.icon}</span> : <span className="mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full bg-slate-300" />}
-                                      <span className="text-mid block text-sm font-medium">{item.title}</span>
-                                    </Link>
-                                  ))}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </Wrapper>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
                 </li>
               );
             }
@@ -308,7 +237,7 @@ export default function DesktopNavigation() {
                     aria-expanded={isAboutOpen}
                     aria-controls={aboutMenuId}
                     ref={aboutBtnRef}
-                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-slate-800 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded text-primary transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     aria-label={isAboutOpen ? t.closeAboutList : t.openAboutList}
                   >
                     <motion.span animate={{ rotate: isAboutOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -316,35 +245,6 @@ export default function DesktopNavigation() {
                     </motion.span>
                   </button>
 
-                  <AnimatePresence>
-                    {isAboutOpen && (
-                      <motion.div
-                        id={aboutMenuId}
-                        role="menu"
-                        aria-labelledby={aboutButtonId}
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.2 }}
-                        className="fixed top-full left-0 z-50 w-full bg-white/95 p-4 shadow-xl backdrop-blur-sm"
-                      >
-                        <Wrapper>
-                          <div ref={aboutMenuRef} onKeyDown={handleAboutMenuKeyDown} className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                            {aboutItems.map((item) => (
-                              <Link
-                                key={item.href}
-                                href={item.href}
-                                className="group/link flex items-start gap-3 rounded-2xl border border-slate-200 px-3 py-3 transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-800"
-                              >
-                                {item.icon ? <span className="mt-0.5 shrink-0 text-slate-800">{item.icon}</span> : null}
-                                <span className="text-mid block text-sm font-medium">{item.title}</span>
-                              </Link>
-                            ))}
-                          </div>
-                        </Wrapper>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
                 </li>
               );
             }
@@ -359,6 +259,212 @@ export default function DesktopNavigation() {
           })}
         </ul>
       </LayoutGroup>
+
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {isOfferOpen && (
+              <motion.div
+                ref={offerPanelRef}
+                id={menuId}
+                role="menu"
+                aria-labelledby={buttonId}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
+                className="fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm"
+                style={{ top: headerBottom }}
+              >
+                <Wrapper>
+                  <div ref={menuRef} onKeyDown={handleMenuKeyDown} className="grid grid-cols-5 gap-0">
+                    <div className="border-r border-primary-light pr-4">
+                      <div className="flex flex-col gap-1">
+                        {OFFER_SECTIONS_PL.map((section) => {
+                          const isActiveCategory = activeOfferCategory === section.key;
+                          const CategoryIcon = section.icon;
+                          return (
+                            <Link
+                              key={section.key}
+                              href={section.hubHref || '#'}
+                              onMouseEnter={() => handleCategoryHover(section.key)}
+                              onFocus={() => handleCategoryHover(section.key)}
+                              className={`group/cat flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                                isActiveCategory ? 'bg-white text-primary' : 'text-primary-mid hover:bg-white hover:text-primary'
+                              }`}
+                            >
+                              <span className="flex items-center gap-3">
+                                {CategoryIcon && (
+                                  <CategoryIcon
+                                    className={`h-5 w-5 transition-colors duration-200 ${isActiveCategory ? 'text-primary' : 'text-primary-mid group-hover/cat:text-primary'}`}
+                                    aria-hidden="true"
+                                  />
+                                )}
+                                <span className="text-sm font-medium">{section.title}</span>
+                              </span>
+                              <RiArrowRightSLine
+                                className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'translate-x-0.5 text-primary' : 'text-primary-mid'}`}
+                                aria-hidden="true"
+                              />
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div className="col-span-4 pl-6">
+                      <AnimatePresence mode="wait">
+                        <motion.div key={activeOfferCategory} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.15 }}>
+                          <div className="grid grid-cols-4 gap-2">
+                            {activeSection.items.map((item) => {
+                              const ItemIcon = item.icon;
+                              return (
+                                <Link
+                                  key={item.href}
+                                  href={item.href}
+                                  className="group/link flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                                >
+                                  {ItemIcon ? (
+                                    <ItemIcon className="h-5 w-5 shrink-0 text-primary-mid transition-colors group-hover/link:text-primary" aria-hidden="true" />
+                                  ) : (
+                                    <span className="h-2 w-2 shrink-0 rounded-full bg-primary-light" />
+                                  )}
+                                  <span className="text-mid text-sm font-medium transition-colors group-hover/link:text-primary">{item.title}</span>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </motion.div>
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                </Wrapper>
+              </motion.div>
+            )}
+          </AnimatePresence>,
+          document.body,
+        )}
+
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {isToolsOpen && (
+              <motion.div
+                ref={toolsPanelRef}
+                id={toolsMenuId}
+                role="menu"
+                aria-labelledby={toolsButtonId}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
+                className="fixed left-0 z-50 w-full bg-white/95 py-6 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm"
+                style={{ top: headerBottom }}
+              >
+                <Wrapper>
+                  <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid grid-cols-5 gap-0">
+                    <div className="border-r border-primary-light pr-4">
+                      <div className="flex flex-col gap-1">
+                        {TOOLS_SECTIONS_PL.map((section) => {
+                          const isActiveCategory = activeToolsCategory === section.key;
+                          const CategoryIcon = section.icon;
+                          return (
+                            <button
+                              key={section.key}
+                              type="button"
+                              onMouseEnter={() => handleToolsCategoryHover(section.key)}
+                              onFocus={() => handleToolsCategoryHover(section.key)}
+                              className={`group/cat flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                                isActiveCategory ? 'bg-white text-primary' : 'text-primary-mid hover:bg-white hover:text-primary'
+                              }`}
+                            >
+                              <span className="flex items-center gap-3">
+                                {CategoryIcon && (
+                                  <CategoryIcon
+                                    className={`h-5 w-5 transition-colors duration-200 ${isActiveCategory ? 'text-primary' : 'text-primary-mid group-hover/cat:text-primary'}`}
+                                    aria-hidden="true"
+                                  />
+                                )}
+                                <span className="text-sm font-medium">{section.title}</span>
+                              </span>
+                              <RiArrowRightSLine
+                                className={`h-4 w-4 transition-all duration-200 ${isActiveCategory ? 'translate-x-0.5 text-primary' : 'text-primary-mid'}`}
+                                aria-hidden="true"
+                              />
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div className="col-span-4 pl-6">
+                      <AnimatePresence mode="wait">
+                        <motion.div key={activeToolsCategory} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.15 }}>
+                          <div className="grid grid-cols-4 gap-2">
+                            {activeToolsSection.items.map((item) => {
+                              const ItemIcon = item.icon;
+                              return (
+                                <Link
+                                  key={item.href}
+                                  href={item.href}
+                                  className="group/link flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                                >
+                                  {ItemIcon ? (
+                                    <ItemIcon className="h-5 w-5 shrink-0 text-primary-mid transition-colors group-hover/link:text-primary" aria-hidden="true" />
+                                  ) : (
+                                    <span className="h-2 w-2 shrink-0 rounded-full bg-primary-light" />
+                                  )}
+                                  <span className="text-sm font-medium text-primary transition-colors group-hover/link:text-primary">{item.title}</span>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </motion.div>
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                </Wrapper>
+              </motion.div>
+            )}
+          </AnimatePresence>,
+          document.body,
+        )}
+
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {isAboutOpen && (
+              <motion.div
+                ref={aboutPanelRef}
+                id={aboutMenuId}
+                role="menu"
+                aria-labelledby={aboutButtonId}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
+                className="fixed left-0 z-50 w-full bg-white/95 p-4 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] backdrop-blur-sm"
+                style={{ top: headerBottom }}
+              >
+                <Wrapper>
+                  <div ref={aboutMenuRef} onKeyDown={handleAboutMenuKeyDown} className="flex gap-2">
+                    {aboutItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="group/link flex items-center gap-3 rounded-xl px-4 py-3 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                      >
+                        {item.icon ? <span className="shrink-0 text-primary-mid transition-colors group-hover/link:text-primary">{item.icon}</span> : null}
+                        <span className="text-sm font-medium text-primary transition-colors group-hover/link:text-primary">{item.title}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </Wrapper>
+              </motion.div>
+            )}
+          </AnimatePresence>,
+          document.body,
+        )}
     </div>
   );
 }

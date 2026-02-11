@@ -9,7 +9,7 @@ interface ToolHelperProps {
 export default function ToolHelper({ children, className = '', variant = 'default' }: ToolHelperProps) {
   const variantClasses = {
     default: '',
-    error: 'text-red-700',
+    error: 'text-error-text',
   };
 
   return <p className={`tool-helper ${variantClasses[variant]} ${className}`}>{children}</p>;

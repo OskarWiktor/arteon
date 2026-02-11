@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, type ReactNode } from 'react';
-import Wrapper from '../Wrapper';
 
 interface Tab {
   title: string;
@@ -19,15 +18,14 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
 
   return (
     <section data-section="tabs" aria-labelledby={title ? 'tabs-title' : undefined}>
-      <Wrapper>
         {title && (
-          <h2 id="tabs-title" className="h4 reveal-animation mb-6">
+          <h2 id="tabs-title" className="h3 mb-4 md:mb-6 lg:mb-8">
             {title}
           </h2>
         )}
 
         <div className="space-y-4">
-          <div className="flex gap-2 rounded-xl bg-slate-100 p-1.5" role="tablist">
+          <div className="flex gap-2 rounded-xl bg-primary-light p-1.5" role="tablist">
             {tabs.map((tab, index) => (
               <button
                 key={index}
@@ -38,7 +36,7 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
                 id={`tab-${index}`}
                 onClick={() => setActiveTab(index)}
                 className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition ${
-                  activeTab === index ? 'bg-white text-slate-800 shadow-sm' : 'text-slate-600 hover:text-slate-800'
+                  activeTab === index ? 'bg-white text-primary shadow-sm' : 'text-primary-mid hover:text-primary'
                 }`}
               >
                 {tab.icon}
@@ -55,7 +53,6 @@ export default function SectionTabs({ title, tabs }: SectionTabsProps) {
             <div className="text-light">{tabs[activeTab].content}</div>
           </div>
         </div>
-      </Wrapper>
     </section>
   );
 }
