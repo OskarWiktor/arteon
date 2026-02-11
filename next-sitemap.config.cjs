@@ -265,22 +265,33 @@ module.exports = {
   additionalPaths: async () => {
     const add = [];
 
-    // Explicitly add all /narzedzia/* routes to ensure they're always in sitemap
+    // Add ALL static routes from ROUTE_LASTMOD so sitemap doesn't depend on
+    // next-sitemap auto-discovery (broken with Next.js 15 App Router — no prerender-manifest.json).
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
-      if (loc.startsWith('/narzedzia/') && loc !== '/narzedzia') {
-        const entry = { loc, changefreq: 'weekly', priority: 0.7 };
-        if (last) entry.lastmod = last;
-        add.push(entry);
-      }
-    }
+      // Skip individual article pages — added from ARTICLES data below with cover images
+      if (loc.startsWith('/edukacja/') && loc.split('/').length > 3) continue;
+      // Skip individual project pages — added from PROJECTS data below with images
+      if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
-    // Explicitly add all /en/tools/* routes
-    for (const [loc, last] of ROUTE_LASTMOD.entries()) {
-      if (loc.startsWith('/en/tools/') && loc !== '/en/tools') {
-        const entry = { loc, changefreq: 'weekly', priority: 0.7 };
-        if (last) entry.lastmod = last;
-        add.push(entry);
-      }
+      const priority =
+        loc === '/'
+          ? 1.0
+          : loc.startsWith('/en/')
+            ? 0.7
+            : loc.startsWith('/uslugi/')
+              ? 0.8
+              : loc.startsWith('/edukacja')
+                ? 0.75
+                : loc.startsWith('/realizacje')
+                  ? 0.6
+                  : 0.7;
+
+      const entry = { loc, changefreq: 'weekly', priority };
+      if (last) entry.lastmod = last;
+      const img = ROUTE_IMAGE.get(loc);
+      if (img) entry.images = sitemapImage(img);
+
+      add.push(entry);
     }
 
     for (const p of PROJECTS) {
@@ -291,17 +302,6 @@ module.exports = {
       if (iso) entry.lastmod = iso;
       if (p.image) entry.images = sitemapImage(p.image);
       add.push(entry);
-    }
-
-    const seenCategories = new Set();
-    for (const [loc, last] of ROUTE_LASTMOD.entries()) {
-      if (loc.startsWith('/edukacja/') && loc.split('/').length === 3) {
-        const category = loc.split('/')[2];
-        if (!seenCategories.has(category)) {
-          seenCategories.add(category);
-          add.push({ loc, changefreq: 'weekly', priority: 0.75, lastmod: last });
-        }
-      }
     }
 
     for (const a of ARTICLES) {
