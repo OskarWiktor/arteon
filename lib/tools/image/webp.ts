@@ -1,6 +1,6 @@
-import { canvasToBlob } from '@/lib/tools/canvasToBlob';
-import { loadImage } from '@/lib/tools/loadImage';
-import { readFileAsDataUrl } from '@/lib/tools/readFileAsDataUrl';
+import { canvasToBlob } from '@/utils/canvasToBlob';
+import { loadImage } from '@/utils/loadImage';
+import { readFileAsDataUrl } from '@/utils/readFileAsDataUrl';
 
 import type { ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions, ConvertImageFileToWebpSmartResult } from '@/types/tools/image';
 export type { ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions, ConvertImageFileToWebpSmartResult } from '@/types/tools/image';

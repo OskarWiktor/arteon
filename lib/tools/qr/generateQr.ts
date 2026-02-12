@@ -1,6 +1,5 @@
 import QRCode from 'qrcode';
 import type { QrOptions, VCardData, EmailData } from '@/types/tools/qr';
-export type { QrDataType, QrOptions, VCardData, EmailData } from '@/types/tools/qr';
 
 export function buildVCardString(data: VCardData): string {
   const lines = ['BEGIN:VCARD', 'VERSION:3.0', `N:${data.lastName};${data.firstName};;;`, `FN:${data.firstName} ${data.lastName}`];

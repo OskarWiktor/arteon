@@ -67,20 +67,7 @@ export type ToolsSection = {
 };
 
 // ---------------------------------------------------------------------------
-// EN-specific tool navigation (mirrors PL but with EN key)
+// EN-specific tool navigation (mirrors PL structure)
 // ---------------------------------------------------------------------------
-export type ToolSectionItemEN = {
-  key: ToolItemKey;
-  href: string;
-  title: string;
-  description: string;
-  image: string;
-  icon?: IconType;
-};
-
-export type ToolsSectionEN = {
-  key: ToolsSectionKey;
-  title: string;
-  icon?: IconType;
-  items: ToolSectionItemEN[];
-};
+export type ToolSectionItemEN = ToolSectionItem;
+export type ToolsSectionEN = ToolsSection;

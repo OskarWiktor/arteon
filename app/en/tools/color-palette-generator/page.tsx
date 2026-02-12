@@ -10,7 +10,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -91,7 +91,7 @@ const howToSchema = {
   url: toAbsoluteUrl('/en/tools/color-palette-generator'),
   step: [
     { '@type': 'HowToStep', name: 'Choose a base color', text: 'Enter a HEX code in the text field or use the color picker to select a color visually.' },
-    { '@type': 'HowToStep', name: 'Confirm the color', text: 'Confirm the selected color with the Update Color button — the tool will generate palettes based on the given base color.' },
+    { '@type': 'HowToStep', name: 'Confirm the color', text: 'Confirm the selected color with the Update Color button — the tool will generate palettes based on your chosen base color.' },
     {
       '@type': 'HowToStep',
       name: 'Browse the palettes',

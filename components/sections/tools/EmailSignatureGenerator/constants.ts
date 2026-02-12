@@ -1,6 +1,6 @@
 import { rgbToHex } from '@/lib/tools/color/convert';
-import type { LayoutType, SignatureConfig, SpacingConfig, SpacingKey, StyleConfig, TextStyleConfig, ThemePreset } from '@/components/sections/tools/EmailSignatureGenerator/types';
-import { ui } from '@/components/sections/tools/EmailSignatureGenerator/ui';
+import type { LayoutType, SignatureConfig, SpacingConfig, SpacingKey, StyleConfig, TextStyleConfig, ThemePreset } from '@/types/tools/email';
+import { ui } from '@/lib/i18n/tools/email-signature';
 
 export const STORAGE_KEY_BASE = 'arteon-email-signature-generator';
 

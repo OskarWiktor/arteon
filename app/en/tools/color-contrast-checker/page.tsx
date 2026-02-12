@@ -12,7 +12,7 @@ import SectionFeatureComparison from '@/components/ui/sections/SectionFeatureCom
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -131,7 +131,7 @@ const faqItems = [
   {
     question: 'Do I need to meet AAA contrast level?',
     answer:
-      'Not always. Level AA (4.5:1 for normal text) is the minimum required by accessibility regulations in the European Union. Level AAA (7:1) provides better readability but is harder to achieve. For critical content — warnings, safety instructions — it is worth aiming for AAA.',
+      'Not always. Level AA (4.5:1 for normal text) is the minimum required by accessibility regulations in the European Union. Level AAA (7:1) provides better readability but is harder to achieve. For critical content — warnings, safety instructions — consider aiming for AAA.',
     answerSchemaText: 'AA is the legal minimum. AAA is recommended for critical content.',
   },
   {

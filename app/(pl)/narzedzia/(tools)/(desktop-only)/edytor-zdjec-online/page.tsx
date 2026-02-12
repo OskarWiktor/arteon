@@ -3,7 +3,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import HeroBanner from '@/components/sections/HeroBanner';
 import ImageResizeTool from '@/components/sections/tools/ImageResizeTool';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';

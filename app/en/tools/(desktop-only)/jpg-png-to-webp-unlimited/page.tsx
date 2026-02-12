@@ -12,7 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/buttons/Button';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {

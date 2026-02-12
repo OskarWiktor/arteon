@@ -7,7 +7,7 @@ import ArticlesList from '@/components/sections/blog/ArticlesList';
 import FilterBar from '@/components/sections/blog/FilterBar';
 import { getAllArticles, getCategoriesWithCount, getPrimaryCategorySlug } from '@/lib/blogDataService';
 import { slugify } from '@/utils/slugify';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 
 const DEFAULT_META_DESCRIPTION = (label: string) => `Artykuły i poradniki: ${label}.`;
 

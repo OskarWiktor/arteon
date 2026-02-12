@@ -10,7 +10,7 @@ import CookieConsent from '@/components/shared/CookieConsent';
 import SkipToContent from '@/components/shared/SkipToContent';
 import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
-import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
+import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import './globals.css';
 

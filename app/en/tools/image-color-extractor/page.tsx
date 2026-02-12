@@ -12,7 +12,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import SectionTimeline from '@/components/ui/sections/SectionTimeline';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -236,7 +236,7 @@ export default function ImageColorExtractorPage() {
             {
               icon: <RiCropLine className="h-6 w-6" />,
               title: 'Images without a large solid-color background',
-              description: 'When the background takes up most of the image area, its color dominates the results. Before uploading, it is worth cropping the image to the area of interest.',
+              description: 'When the background takes up most of the image area, its color dominates the results. Before uploading, consider cropping the image to the area of interest.',
             },
           ]}
         />

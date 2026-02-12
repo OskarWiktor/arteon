@@ -1,4 +1,4 @@
-import { loadImage } from '@/lib/tools/loadImage';
+import { loadImage } from '@/utils/loadImage';
 import type { GetImageDataOptions } from '@/types/tools/image';
 export type { GetImageDataOptions } from '@/types/tools/image';
 

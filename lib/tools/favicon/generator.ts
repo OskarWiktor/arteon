@@ -1,4 +1,4 @@
-import { canvasToBlob } from '@/lib/tools/canvasToBlob';
+import { canvasToBlob } from '@/utils/canvasToBlob';
 import type { FaviconOutputFile } from '@/types/tools/image';
 export type { FaviconOutputFile } from '@/types/tools/image';
 

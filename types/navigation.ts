@@ -77,17 +77,14 @@ export type OfferSection = {
 
 export type LegalLinkKey = 'regulamin' | 'privacy';
 
-export type LegalLinkPL = {
+export type LegalLink = {
   key: LegalLinkKey;
   href: string;
   label: string;
 };
 
-export type LegalLinkEN = {
-  key: LegalLinkKey;
-  href: string;
-  label: string;
-};
+export type LegalLinkPL = LegalLink;
+export type LegalLinkEN = LegalLink;
 
 // ---------------------------------------------------------------------------
 // EN Header navigation

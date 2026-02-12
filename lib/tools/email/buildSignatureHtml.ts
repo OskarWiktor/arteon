@@ -1,4 +1,4 @@
-import { escapeHtml, formatMultiline, formatPhone, sanitizeHrefUrl, sanitizeSrcUrl } from '@/components/sections/tools/EmailSignatureGenerator/sanitize';
+import { escapeHtml, formatMultiline, formatPhone, sanitizeHrefUrl, sanitizeSrcUrl } from '@/lib/tools/email/sanitize';
 import type {
   BorderSides,
   FontSizeOption,
@@ -10,7 +10,7 @@ import type {
   SpacingConfig,
   StyleConfig,
   TextStyleConfig,
-} from '@/components/sections/tools/EmailSignatureGenerator/types';
+} from '@/types/tools/email';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { getSocialIcon, type SocialPlatform, type IconSize } from '@/lib/tools/email/socialIcons';
 

@@ -37,7 +37,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 
 import projectsData from '@/data/pl/projects.json';
 import type { Project, ContentBlock } from '@/types/project';
-import { toAbsoluteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 import TableOfContents from '@/components/sections/TableOfContent';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';

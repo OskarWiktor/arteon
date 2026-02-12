@@ -5,60 +5,14 @@ import { RiFileCopyLine, RiCheckLine } from 'react-icons/ri';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
+import ToolStatRow from '@/components/ui/tools/ToolStatRow';
+import ToolProgressBar from '@/components/ui/tools/ToolProgressBar';
 import Button from '@/components/ui/buttons/Button';
 import { analyzeText, evaluateLength, formatReadingTime, formatReportText, getPageTypes, type PageType, type LengthStatus } from '@/lib/tools/text/wordCount';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { getStatusClasses } from '@/lib/tools/statusClasses';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
-
-const ui = {
-  pl: {
-    pasteText: 'Wklej lub wpisz tekst',
-    textPlaceholder: 'Wklej tutaj tekst, który chcesz przeanalizować...',
-    pageType: 'Typ strony',
-    pageTypeHelper: 'Wybierz typ strony, dla której piszesz tekst. Każdy typ ma inne zalecenia dotyczące długości.',
-    words: 'Słowa',
-    charsWithSpaces: 'Znaki (ze spacjami)',
-    charsWithoutSpaces: 'Znaki (bez spacji)',
-    paragraphs: 'Akapity',
-    readingTime: 'Czas czytania',
-    lengthEvaluation: 'Ocena długości',
-    recommendedRange: 'Zalecany zakres',
-    copyReport: 'Kopiuj raport',
-    copied: 'Skopiowano',
-    statistics: 'Statystyki tekstu',
-    noText: 'Brak tekstu',
-    empty: 'Wpisz tekst, aby zobaczyć statystyki.',
-    tooShort: 'Za krótki',
-    tooLong: 'Za długi',
-    ideal: 'Dobra długość',
-    analysisFor: 'Analiza dla',
-    wordsUnit: 'słów',
-  },
-  en: {
-    pasteText: 'Paste or type text',
-    textPlaceholder: 'Paste the text you want to analyze here...',
-    pageType: 'Page type',
-    pageTypeHelper: 'Select the page type you are writing for. Each type has different length recommendations.',
-    words: 'Words',
-    charsWithSpaces: 'Characters (with spaces)',
-    charsWithoutSpaces: 'Characters (without spaces)',
-    paragraphs: 'Paragraphs',
-    readingTime: 'Reading time',
-    lengthEvaluation: 'Length evaluation',
-    recommendedRange: 'Recommended range',
-    copyReport: 'Copy report',
-    copied: 'Copied',
-    statistics: 'Text statistics',
-    noText: 'No text',
-    empty: 'Type text to see statistics.',
-    tooShort: 'Too short',
-    tooLong: 'Too long',
-    ideal: 'Good length',
-    analysisFor: 'Analysis for',
-    wordsUnit: 'words',
-  },
-} as const satisfies Record<Locale, unknown>;
+import { getStatusClasses } from '@/utils/statusClasses';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/word-count';
 
 function getStatusLabel(status: LengthStatus, t: { noText: string; tooShort: string; tooLong: string; ideal: string }): string {
   switch (status) {
@@ -116,26 +70,11 @@ export default function WordCountTool() {
         </div>
 
         <div className="space-y-3">
-          <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="tool-value">{t.words}</span>
-            <strong className="text-dark text-lg">{metrics.words}</strong>
-          </div>
-          <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="tool-value">{t.charsWithSpaces}</span>
-            <strong className="text-dark">{metrics.charsWithSpaces}</strong>
-          </div>
-          <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="tool-value">{t.charsWithoutSpaces}</span>
-            <strong className="text-dark">{metrics.charsWithoutSpaces}</strong>
-          </div>
-          <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="tool-value">{t.paragraphs}</span>
-            <strong className="text-dark">{metrics.paragraphs}</strong>
-          </div>
-          <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="tool-value">{t.readingTime}</span>
-            <strong className="text-dark">{formatReadingTime(metrics.readingTimeMinutes, locale)}</strong>
-          </div>
+          <ToolStatRow label={t.words} value={<span className="text-lg">{metrics.words}</span>} />
+          <ToolStatRow label={t.charsWithSpaces} value={metrics.charsWithSpaces} />
+          <ToolStatRow label={t.charsWithoutSpaces} value={metrics.charsWithoutSpaces} />
+          <ToolStatRow label={t.paragraphs} value={metrics.paragraphs} />
+          <ToolStatRow label={t.readingTime} value={formatReadingTime(metrics.readingTimeMinutes, locale)} />
         </div>
 
         <div className="space-y-2">
@@ -144,9 +83,7 @@ export default function WordCountTool() {
             <span className={`tool-badge ${getStatusClasses(evaluation.status)}`}>{getStatusLabel(evaluation.status, t)}</span>
           </div>
 
-          <div className="h-2 w-full overflow-hidden rounded-full bg-neutral-200">
-            <div className={`h-full transition-all duration-300 ${getProgressBarColor(evaluation.status)}`} style={{ width: `${Math.min(evaluation.percentage, 100)}%` }} />
-          </div>
+          <ToolProgressBar value={evaluation.percentage} colorClass={getProgressBarColor(evaluation.status)} />
 
           <div className="flex items-center justify-between">
             <span className="tool-meta">{t.recommendedRange}:</span>

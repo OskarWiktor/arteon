@@ -12,7 +12,7 @@ import SectionTabs from '@/components/ui/sections/SectionTabs';
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -225,7 +225,7 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Privacy — files never leave your computer',
-              description: 'All operations are performed locally in the browser. The image is not sent to any server. After closing the page, nothing remains.',
+              description: 'All operations are performed locally in the browser. The image is not sent to any server. After closing the page, all data is cleared.',
             },
             {
               icon: <RiDownloadLine className="h-6 w-6" />,
@@ -406,7 +406,7 @@ export default function FaviconGeneratorPage() {
 
         <SectionSteps
           title="What source image works best?"
-          description="A favicon is a very small graphic — as small as 16×16 pixels. That is why not every image works well as a source:"
+          description="A favicon is a very small graphic — as small as 16×16 pixels. Not every image works well as a source:"
           grid="two"
           items={[
             {
@@ -438,13 +438,13 @@ export default function FaviconGeneratorPage() {
             {
               question: 'Does the favicon display the same in all browsers?',
               answer:
-                'Most modern browsers (Chrome, Firefox, Edge, Safari) recognize the favicon.ico file and PNG icons. Differences may relate to the displayed icon size — Chrome prefers PNG 32×32, while Safari on iOS uses apple-touch-icon 180×180. That is why it is worth generating the full set of sizes.',
+                'Most modern browsers (Chrome, Firefox, Edge, Safari) recognize the favicon.ico file and PNG icons. Differences may occur in the displayed icon size — Chrome prefers PNG 32×32, while Safari on iOS uses apple-touch-icon 180×180. For best compatibility, we recommend generating the full set of sizes.',
               answerSchemaText: 'Mostly yes. Generate the full set of sizes for best compatibility.',
             },
             {
               question: "Why doesn't the favicon change after uploading a new file?",
               answer:
-                'Browsers aggressively cache favicons. After uploading a new icon, it is worth clearing the browser cache or adding a version parameter to the file path (e.g., /favicon.ico?v=2). The change may take several hours to become visible.',
+                'Browsers aggressively cache favicons. After uploading a new icon, try clearing the browser cache or adding a version parameter to the file path (e.g., /favicon.ico?v=2). The change may take several hours to become visible.',
               answerSchemaText: 'Browsers cache favicons aggressively. Clear cache or add a version parameter.',
             },
           ]}

@@ -258,7 +258,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
 
             <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
               {isPl && (
-                <Eyebrow variant="dynamic" className="px-3 pb-1 text-[11px] tracking-wider">
+                <Eyebrow variant="dynamic" className="px-3 pb-1 text-xs tracking-wider">
                   {servicesLabel[locale] ?? 'Services'}
                 </Eyebrow>
               )}
@@ -269,17 +269,17 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     const expanded = openKeys[sec.key];
                     return (
                       <div key={sec.key} className="mb-1">
-                        <div className="flex items-center justify-between rounded-xl px-2 py-1 transition hover:bg-neutral-100">
+                        <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
                           {sec.hubHref ? (
                             <Link
                               href={sec.hubHref}
                               onClick={() => setIsOpen(false)}
-                              className="text-dark focus-visible:ring-primary inline-block rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                              className={`text-dark focus-visible:ring-primary inline-block rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${pathname.startsWith(sec.hubHref) ? 'font-semibold' : ''}`}
                             >
                               {sec.title}
                             </Link>
                           ) : (
-                            <div className="text-dark px-2 py-1 text-[15px] font-semibold">{sec.title}</div>
+                            <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
                           )}
 
                           <button
@@ -356,14 +356,14 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   ) : null}
 
                   {aboutNav ? (
-                    <div className="rounded-xl px-2 py-1 transition hover:bg-neutral-100">
+                    <div className="rounded-xl py-1 transition hover:bg-neutral-100">
                       <div className="flex items-center justify-between">
                         <Link
                           href={aboutNav.href}
                           onClick={() => setIsOpen(false)}
                           aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
-                          className={`focus-visible:ring-primary rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
-                            pathname.startsWith(aboutNav.href) ? 'text-dark' : 'text-dark'
+                          className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
+                            pathname.startsWith(aboutNav.href) ? 'text-dark font-semibold' : 'text-dark'
                           }`}
                         >
                           {aboutNav.label}
@@ -433,14 +433,14 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   ) : null}
 
                   {narzedziaNav && TOOLS_SECTIONS_MOBILE.length > 0 ? (
-                    <div className="rounded-xl px-2 py-1 transition hover:bg-neutral-100">
+                    <div className="rounded-xl py-1 transition hover:bg-neutral-100">
                       <div className="flex items-center justify-between">
                         <Link
                           href={narzedziaNav.href}
                           onClick={() => setIsOpen(false)}
                           aria-current={pathname.startsWith(narzedziaNav.href) ? 'page' : undefined}
-                          className={`focus-visible:ring-primary rounded px-2 py-1 text-[15px] font-semibold outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
-                            pathname.startsWith(narzedziaNav.href) ? 'text-dark' : 'text-dark'
+                          className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
+                            pathname.startsWith(narzedziaNav.href) ? 'text-dark font-semibold' : 'text-dark'
                           }`}
                         >
                           {narzedziaNav.label}
@@ -516,8 +516,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     href={localeConfig.toolsIndexHref}
                     onClick={() => setIsOpen(false)}
                     aria-current={pathname === localeConfig.toolsIndexHref ? 'page' : undefined}
-                    className={`ring-primary mb-2 block rounded-xl px-3 py-[7px] text-[15px] font-semibold ring-offset-2 outline-none focus-visible:ring-2 ${
-                      pathname === localeConfig.toolsIndexHref ? 'text-dark bg-neutral-50' : 'text-dark hover:bg-neutral-100'
+                    className={`ring-primary mb-2 block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                      pathname === localeConfig.toolsIndexHref ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
                     }`}
                   >
                     {navUi.toolsLabel}
@@ -528,8 +528,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       const expanded = !!openToolSections[sec.key];
                       return (
                         <div key={sec.key} className="mb-1">
-                          <div className="flex items-center justify-between rounded-xl px-2 py-1 transition hover:bg-neutral-100">
-                            <div className="text-dark px-2 py-1 text-[15px] font-semibold">{sec.title}</div>
+                          <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
+                            <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
 
                             <button
                               type="button"
@@ -604,8 +604,9 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               </ul>
 
               <div className="mt-auto border-t border-neutral-200 pt-3">
-                <div className="flex items-center justify-end">
-                  {isPl ? (
+                <div className="flex items-center justify-between">
+                  <LanguageSwitcher />
+                  {isPl && (
                     <Link
                       href={contactHref}
                       onClick={() => setIsOpen(false)}
@@ -613,8 +614,6 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     >
                       {contactLabel[locale] ?? 'Contact'}
                     </Link>
-                  ) : (
-                    <LanguageSwitcher />
                   )}
                 </div>
               </div>

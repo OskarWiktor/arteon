@@ -1,4 +1,4 @@
-import type { RGB, RGBA } from '@/lib/tools/color/types';
+import type { RGB, RGBA } from '@/types/tools/color';
 import { hexToRgb, hslToRgb, parseHsl } from '@/lib/tools/color/convert';
 
 export function parseColor(color: string): RGBA | null {

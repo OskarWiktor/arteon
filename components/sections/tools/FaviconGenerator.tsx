@@ -8,16 +8,19 @@ import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import Badge from '@/components/ui/Badge';
 import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
-import type { ToolStatus } from '@/lib/tools/types';
+import ToolFileRow from '@/components/ui/tools/ToolFileRow';
+import ToolCheckbox from '@/components/ui/tools/ToolCheckbox';
+import type { ToolStatus } from '@/types/tools/common';
 import { rgbToHex } from '@/lib/tools/color/convert';
-import { downloadFromUrl } from '@/lib/tools/download';
+import { downloadFromUrl } from '@/utils/download';
 import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/favicon/generator';
-import { formatBytes } from '@/lib/tools/formatBytes';
+import { formatBytes } from '@/utils/formatBytes';
 import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/tools/image/uploadTypes';
-import { loadImage } from '@/lib/tools/loadImage';
-import { revokeObjectUrl } from '@/lib/tools/objectUrl';
-import { createZipBlob, type ZipFileInput } from '@/lib/tools/zip';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
+import { loadImage } from '@/utils/loadImage';
+import { revokeObjectUrl } from '@/utils/objectUrl';
+import { createZipBlob, type ZipFileInput } from '@/utils/zip';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/favicon';
 
 function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string, locale: 'pl' | 'en' = 'pl') {
   const icons = outputs
@@ -39,93 +42,6 @@ function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string
 
   return JSON.stringify(manifest, null, 2);
 }
-
-const ui = {
-  pl: {
-    canvasNotSupported: 'Brak wsparcia dla canvas w przeglądarce.',
-    pngGenerationError: 'Nie udało się wygenerować pliku PNG.',
-    imageLoadError: 'Nie udało się wczytać obrazu. Spróbuj ponownie lub użyj innego pliku.',
-    supportedFormatsOnly: 'Obsługiwane są wyłącznie pliki PNG, JPG/JPEG oraz SVG.',
-    addBaseImage: 'Najpierw dodaj obraz bazowy (PNG, JPG lub SVG).',
-    selectAtLeastOne: 'Zaznacz przynajmniej jeden rozmiar PNG lub opcję favicon.ico.',
-    unexpectedError: 'Wystąpił nieoczekiwany błąd podczas generowania favicon.',
-    addBaseImageLabel: 'Dodaj obraz bazowy',
-    dragDropImage: 'Przeciągnij i upuść obraz tutaj',
-    clickToSelect: 'lub kliknij, aby wybrać plik z dysku',
-    supportedFormats: 'Obsługiwane: PNG, JPG/JPEG, SVG',
-    selectedFile: 'Wybrany plik:',
-    setSizesAndBackground: 'Ustaw rozmiary i tło',
-    pngSizes: 'Rozmiary PNG',
-    transparentBackground: 'Przezroczyste tło (PNG/ICO)',
-    backgroundColor: 'Kolor tła:',
-    generateFaviconIco: 'Wygeneruj plik favicon.ico (bazowo 32x32)',
-    includeWebmanifest: 'Dołącz site.webmanifest (opcjonalnie)',
-    autoDownload: 'Automatycznie pobierz pliki po wygenerowaniu',
-    generateAndDownload: 'Wygeneruj i pobierz favicon',
-    generating: 'Generuję favicon…',
-    generate: 'Generuj favicon',
-    downloadAll: 'Pobierz wszystkie',
-    downloadZip: 'Pobierz paczkę (.zip)',
-    zipping: 'Przygotowuję paczkę ZIP…',
-    zipGenerationError: 'Nie udało się przygotować paczki ZIP.',
-    clear: 'Wyczyść',
-    processing: 'Przetwarzam obraz i generuję pliki favicon…',
-    done: 'Gotowe! Wygenerowano pliki favicon. Niżej znajdziesz listę plików.',
-    previewAndFiles: 'Podgląd i pliki favicon',
-    totalSize: 'Łączny rozmiar:',
-    addImageToGenerate: 'Dodaj obraz po lewej stronie, aby wygenerować favicon.ico oraz zestaw ikon PNG zgodny z aktualnymi wytycznymi.',
-    previewBaseImage: 'Podgląd obrazu bazowego',
-    previewFavicon: 'Podgląd favicon',
-    approximatePreview: 'Przybliżony podgląd favicon w małym rozmiarze',
-    largeIconPreview: 'Ikona w większym rozmiarze (np. PWA)',
-    clickToPreview: 'Kliknij, aby otworzyć podgląd w nowej karcie',
-    download: 'Pobierz',
-    previewAndFilesLabel: 'Podgląd favicon i lista wygenerowanych plików',
-    faviconIcoLabel: 'favicon.ico (32x32 w kontenerze ICO)',
-  },
-  en: {
-    canvasNotSupported: 'Canvas is not supported in this browser.',
-    pngGenerationError: 'Failed to generate the PNG file.',
-    imageLoadError: 'Failed to load the image. Try again or use a different file.',
-    supportedFormatsOnly: 'Only PNG, JPG/JPEG and SVG files are supported.',
-    addBaseImage: 'First add a base image (PNG, JPG or SVG).',
-    selectAtLeastOne: 'Select at least one PNG size or the favicon.ico option.',
-    unexpectedError: 'An unexpected error occurred while generating the favicon.',
-    addBaseImageLabel: 'Add base image',
-    dragDropImage: 'Drag and drop an image here',
-    clickToSelect: 'or click to select a file from your device',
-    supportedFormats: 'Supported: PNG, JPG/JPEG, SVG',
-    selectedFile: 'Selected file:',
-    setSizesAndBackground: 'Set sizes and background',
-    pngSizes: 'PNG sizes',
-    transparentBackground: 'Transparent background (PNG/ICO)',
-    backgroundColor: 'Background color:',
-    generateFaviconIco: 'Generate favicon.ico file (32x32 base)',
-    includeWebmanifest: 'Include site.webmanifest (optional)',
-    autoDownload: 'Auto-download files after generation',
-    generateAndDownload: 'Generate and download favicon',
-    generating: 'Generating favicon\u2026',
-    generate: 'Generate favicon',
-    downloadAll: 'Download all',
-    downloadZip: 'Download package (.zip)',
-    zipping: 'Preparing ZIP archive\u2026',
-    zipGenerationError: 'Failed to prepare the ZIP archive.',
-    clear: 'Clear',
-    processing: 'Processing image and generating favicon files\u2026',
-    done: 'Done! Favicon files generated. See the file list below.',
-    previewAndFiles: 'Preview and favicon files',
-    totalSize: 'Total size:',
-    addImageToGenerate: 'Add an image on the left to generate favicon.ico and a set of PNG icons compliant with current guidelines.',
-    previewBaseImage: 'Base image preview',
-    previewFavicon: 'Favicon preview',
-    approximatePreview: 'Approximate favicon preview at small size',
-    largeIconPreview: 'Large icon (e.g. PWA)',
-    clickToPreview: 'Click to open preview in a new tab',
-    download: 'Download',
-    previewAndFilesLabel: 'Favicon preview and generated file list',
-    faviconIcoLabel: 'favicon.ico (32x32 in ICO container)',
-  },
-} as const satisfies Record<Locale, unknown>;
 
 const PNG_SIZES = [16, 32, 180, 192, 512];
 
@@ -346,12 +262,7 @@ export default function FaviconGenerator() {
               </ToolInfo>
 
               <ToolInfo className="mt-4 gap-2">
-                <div className="flex items-center gap-2">
-                  <input id="transparent-bg" type="checkbox" checked={transparentBackground} onChange={(e) => setTransparentBackground(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="transparent-bg" className="tool-value">
-                    {t.transparentBackground}
-                  </label>
-                </div>
+                <ToolCheckbox id="transparent-bg" checked={transparentBackground} onChange={setTransparentBackground} label={t.transparentBackground} />
 
                 <div className="flex items-center gap-2">
                   <span className="tool-meta">{t.backgroundColor}</span>
@@ -360,26 +271,9 @@ export default function FaviconGenerator() {
               </ToolInfo>
 
               <ToolInfo className="mt-4 flex flex-wrap items-center gap-2">
-                <div className="flex items-center gap-2">
-                  <input id="include-ico" type="checkbox" checked={includeIco} onChange={(e) => setIncludeIco(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="include-ico" className="tool-value">
-                    {t.generateFaviconIco}
-                  </label>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <input id="include-webmanifest" type="checkbox" checked={includeWebmanifest} onChange={(e) => setIncludeWebmanifest(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="include-webmanifest" className="tool-value">
-                    {t.includeWebmanifest}
-                  </label>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="auto-download" className="tool-value">
-                    {t.autoDownload}
-                  </label>
-                </div>
+                <ToolCheckbox id="include-ico" checked={includeIco} onChange={setIncludeIco} label={t.generateFaviconIco} />
+                <ToolCheckbox id="include-webmanifest" checked={includeWebmanifest} onChange={setIncludeWebmanifest} label={t.includeWebmanifest} />
+                <ToolCheckbox id="auto-download" checked={autoDownload} onChange={setAutoDownload} label={t.autoDownload} />
               </ToolInfo>
             </div>
 
@@ -440,17 +334,16 @@ export default function FaviconGenerator() {
                 { name: 'android-chrome-192x192.png', label: 'PNG 192x192', size: '6.1 KB' },
                 { name: 'android-chrome-512x512.png', label: 'PNG 512x512', size: '18.7 KB' },
               ].map((f) => (
-                <div key={f.name} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
-                  <div className="min-w-0 flex-1">
-                    <p className="tool-value text-dark truncate">{f.name}</p>
-                    <p className="tool-meta">
-                      {f.label} · {f.size}
-                    </p>
-                  </div>
-                  <Badge variant="success" size="md">
-                    {t.done}
-                  </Badge>
-                </div>
+                <ToolFileRow
+                  key={f.name}
+                  name={f.name}
+                  meta={<>{f.label} · {f.size}</>}
+                  actions={
+                    <Badge variant="success" size="md">
+                      {t.done}
+                    </Badge>
+                  }
+                />
               ))}
             </div>
           )}
@@ -483,8 +376,11 @@ export default function FaviconGenerator() {
           {anyOutputs && (
             <div className="space-y-2 text-sm!">
               {outputs.map((item) => (
-                <div key={item.id} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
-                  <div className="flex min-w-0 flex-1 items-center gap-3">
+                <ToolFileRow
+                  key={item.id}
+                  name={item.fileName}
+                  meta={<>{item.label} · {formatBytes(item.sizeBytes)}</>}
+                  preview={
                     <button
                       type="button"
                       onClick={() => window.open(item.url, '_blank', 'noopener,noreferrer')}
@@ -494,23 +390,13 @@ export default function FaviconGenerator() {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={item.url} alt={item.fileName} className="h-full w-full object-cover" />
                     </button>
-
-                    <div className="min-w-0 flex-1">
-                      <div title={item.fileName}>
-                        <p className="tool-value text-dark truncate">{item.fileName}</p>
-                      </div>
-                      <p className="tool-meta">
-                        {item.label} · {formatBytes(item.sizeBytes)}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-1">
+                  }
+                  actions={
                     <Badge as="a" href={item.url} download={item.fileName} variant="default" size="md" className="cursor-pointer border-black/15">
                       {t.download}
                     </Badge>
-                  </div>
-                </div>
+                  }
+                />
               ))}
             </div>
           )}

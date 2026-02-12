@@ -11,7 +11,7 @@ import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import FaqPanels from '@/components/ui/FaqPanels';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import AdSense from '@/components/ui/AdSense';
 import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';

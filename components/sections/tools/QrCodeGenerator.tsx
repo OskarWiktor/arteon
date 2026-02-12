@@ -6,6 +6,9 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
+import ToolTextInput from '@/components/ui/tools/ToolTextInput';
+import ToolSelect from '@/components/ui/tools/ToolSelect';
+import ToolColorInput from '@/components/ui/tools/ToolColorInput';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 import {
   generateQrPng,
@@ -15,109 +18,11 @@ import {
   buildPhoneString,
   isContrastSufficient,
   calculateContrast,
-  type QrDataType,
-  type VCardData,
-  type EmailData,
 } from '@/lib/tools/qr/generateQr';
-import { downloadFromUrl } from '@/lib/tools/download';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
-
-const ui = {
-  pl: {
-    dataType: 'Typ danych',
-    types: {
-      url: 'Adres URL',
-      text: 'Tekst',
-      vcard: 'Wizytówka (vCard)',
-      email: 'E-mail',
-      phone: 'Telefon',
-    },
-    urlPlaceholder: 'https://www.twoja-strona.pl',
-    textPlaceholder: 'Wpisz dowolny tekst...',
-    phonePlaceholder: '+48 123 456 789',
-    size: 'Rozmiar (px)',
-    margin: 'Margines (quiet zone)',
-    qrColor: 'Kolor kodu QR',
-    bgColor: 'Kolor tła',
-    errorCorrection: 'Poziom korekcji błędów',
-    errorCorrectionLevels: {
-      L: 'L - Niski (7%)',
-      M: 'M - Średni (15%)',
-      Q: 'Q - Wysoki (25%)',
-      H: 'H - Maksymalny (30%)',
-    },
-    preview: 'Podgląd kodu QR',
-    downloadPng: 'Pobierz PNG',
-    downloadSvg: 'Pobierz SVG',
-    contrastWarning: 'Kontrast między kolorami jest zbyt niski. Kod QR może być trudny do zeskanowania.',
-    contrastRatio: 'Współczynnik kontrastu',
-    recommended: 'Zalecane minimum: 3:1',
-    enterData: 'Wpisz dane, aby wygenerować kod QR.',
-    vcard: {
-      firstName: 'Imię',
-      lastName: 'Nazwisko',
-      organization: 'Firma (opcjonalnie)',
-      title: 'Stanowisko (opcjonalnie)',
-      phone: 'Telefon (opcjonalnie)',
-      email: 'E-mail (opcjonalnie)',
-      website: 'Strona WWW (opcjonalnie)',
-      address: 'Adres (opcjonalnie)',
-    },
-    email: {
-      to: 'Adres e-mail',
-      subject: 'Temat (opcjonalnie)',
-      body: 'Treść (opcjonalnie)',
-    },
-    printTip: 'Dla materiałów drukowanych zalecamy rozmiar min. 300px i poziom korekcji H.',
-  },
-  en: {
-    dataType: 'Data type',
-    types: {
-      url: 'URL address',
-      text: 'Text',
-      vcard: 'Business card (vCard)',
-      email: 'Email',
-      phone: 'Phone',
-    },
-    urlPlaceholder: 'https://www.your-website.com',
-    textPlaceholder: 'Enter any text...',
-    phonePlaceholder: '+1 234 567 890',
-    size: 'Size (px)',
-    margin: 'Margin (quiet zone)',
-    qrColor: 'QR code color',
-    bgColor: 'Background color',
-    errorCorrection: 'Error correction level',
-    errorCorrectionLevels: {
-      L: 'L - Low (7%)',
-      M: 'M - Medium (15%)',
-      Q: 'Q - High (25%)',
-      H: 'H - Maximum (30%)',
-    },
-    preview: 'QR code preview',
-    downloadPng: 'Download PNG',
-    downloadSvg: 'Download SVG',
-    contrastWarning: 'Contrast between colors is too low. The QR code may be difficult to scan.',
-    contrastRatio: 'Contrast ratio',
-    recommended: 'Recommended minimum: 3:1',
-    enterData: 'Enter data to generate a QR code.',
-    vcard: {
-      firstName: 'First name',
-      lastName: 'Last name',
-      organization: 'Company (optional)',
-      title: 'Job title (optional)',
-      phone: 'Phone (optional)',
-      email: 'Email (optional)',
-      website: 'Website (optional)',
-      address: 'Address (optional)',
-    },
-    email: {
-      to: 'Email address',
-      subject: 'Subject (optional)',
-      body: 'Body (optional)',
-    },
-    printTip: 'For printed materials, we recommend a minimum size of 300px and error correction level H.',
-  },
-} as const satisfies Record<Locale, unknown>;
+import type { QrDataType, VCardData, EmailData } from '@/types/tools/qr';
+import { downloadFromUrl } from '@/utils/download';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/qr-code';
 
 const DEFAULT_SIZE = 300;
 const DEFAULT_MARGIN = 2;
@@ -250,22 +155,16 @@ export default function QrCodeGenerator() {
   return (
     <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
       <ToolSection className="space-y-4">
-        <div>
-          <label className="tool-label mb-2 block">{t.dataType}</label>
-          <select value={dataType} onChange={(e) => setDataType(e.target.value as QrDataType)} className="tool-select w-full">
-            <option value="url">{t.types.url}</option>
-            <option value="text">{t.types.text}</option>
-            <option value="vcard">{t.types.vcard}</option>
-            <option value="email">{t.types.email}</option>
-            <option value="phone">{t.types.phone}</option>
-          </select>
-        </div>
+        <ToolSelect label={t.dataType} value={dataType} onChange={(v) => setDataType(v as QrDataType)}>
+          <option value="url">{t.types.url}</option>
+          <option value="text">{t.types.text}</option>
+          <option value="vcard">{t.types.vcard}</option>
+          <option value="email">{t.types.email}</option>
+          <option value="phone">{t.types.phone}</option>
+        </ToolSelect>
 
         {dataType === 'url' && (
-          <div>
-            <label className="tool-label mb-2 block">{t.types.url}</label>
-            <input type="url" value={urlValue} onChange={(e) => setUrlValue(e.target.value)} placeholder={t.urlPlaceholder} className="tool-input w-full" />
-          </div>
+          <ToolTextInput label={t.types.url} value={urlValue} onChange={setUrlValue} type="url" placeholder={t.urlPlaceholder} />
         )}
 
         {dataType === 'text' && (
@@ -276,61 +175,28 @@ export default function QrCodeGenerator() {
         )}
 
         {dataType === 'phone' && (
-          <div>
-            <label className="tool-label mb-2 block">{t.types.phone}</label>
-            <input type="tel" value={phoneValue} onChange={(e) => setPhoneValue(e.target.value)} placeholder={t.phonePlaceholder} className="tool-input w-full" />
-          </div>
+          <ToolTextInput label={t.types.phone} value={phoneValue} onChange={setPhoneValue} type="tel" placeholder={t.phonePlaceholder} />
         )}
 
         {dataType === 'vcard' && (
           <div className="space-y-3">
             <div className="grid gap-3 sm:grid-cols-2">
-              <div>
-                <label className="tool-label mb-1 block">{t.vcard.firstName} *</label>
-                <input type="text" value={vcardData.firstName} onChange={(e) => updateVcard('firstName', e.target.value)} className="tool-input w-full" />
-              </div>
-              <div>
-                <label className="tool-label mb-1 block">{t.vcard.lastName} *</label>
-                <input type="text" value={vcardData.lastName} onChange={(e) => updateVcard('lastName', e.target.value)} className="tool-input w-full" />
-              </div>
+              <ToolTextInput label={t.vcard.firstName} value={vcardData.firstName} onChange={(v) => updateVcard('firstName', v)} required />
+              <ToolTextInput label={t.vcard.lastName} value={vcardData.lastName} onChange={(v) => updateVcard('lastName', v)} required />
             </div>
-            <div>
-              <label className="tool-label mb-1 block">{t.vcard.organization}</label>
-              <input type="text" value={vcardData.organization} onChange={(e) => updateVcard('organization', e.target.value)} className="tool-input w-full" />
-            </div>
-            <div>
-              <label className="tool-label mb-1 block">{t.vcard.title}</label>
-              <input type="text" value={vcardData.title} onChange={(e) => updateVcard('title', e.target.value)} className="tool-input w-full" />
-            </div>
-            <div>
-              <label className="tool-label mb-1 block">{t.vcard.phone}</label>
-              <input type="tel" value={vcardData.phone} onChange={(e) => updateVcard('phone', e.target.value)} className="tool-input w-full" />
-            </div>
-            <div>
-              <label className="tool-label mb-1 block">{t.vcard.email}</label>
-              <input type="email" value={vcardData.email} onChange={(e) => updateVcard('email', e.target.value)} className="tool-input w-full" />
-            </div>
-            <div>
-              <label className="tool-label mb-1 block">{t.vcard.website}</label>
-              <input type="url" value={vcardData.website} onChange={(e) => updateVcard('website', e.target.value)} className="tool-input w-full" />
-            </div>
-            <div>
-              <label className="tool-label mb-1 block">{t.vcard.address}</label>
-              <input type="text" value={vcardData.address} onChange={(e) => updateVcard('address', e.target.value)} className="tool-input w-full" />
-            </div>
+            <ToolTextInput label={t.vcard.organization} value={vcardData.organization ?? ''} onChange={(v) => updateVcard('organization', v)} />
+            <ToolTextInput label={t.vcard.title} value={vcardData.title ?? ''} onChange={(v) => updateVcard('title', v)} />
+            <ToolTextInput label={t.vcard.phone} value={vcardData.phone ?? ''} onChange={(v) => updateVcard('phone', v)} type="tel" />
+            <ToolTextInput label={t.vcard.email} value={vcardData.email ?? ''} onChange={(v) => updateVcard('email', v)} type="email" />
+            <ToolTextInput label={t.vcard.website} value={vcardData.website ?? ''} onChange={(v) => updateVcard('website', v)} type="url" />
+            <ToolTextInput label={t.vcard.address} value={vcardData.address ?? ''} onChange={(v) => updateVcard('address', v)} />
           </div>
         )}
 
         {dataType === 'email' && (
           <div className="space-y-3">
-            <div>
-              <label className="tool-label mb-1 block">{t.email.to} *</label>
-              <input type="email" value={emailData.to} onChange={(e) => updateEmail('to', e.target.value)} className="tool-input w-full" />
-            </div>
-            <div>
-              <label className="tool-label mb-1 block">{t.email.subject}</label>
-              <input type="text" value={emailData.subject} onChange={(e) => updateEmail('subject', e.target.value)} className="tool-input w-full" />
-            </div>
+            <ToolTextInput label={t.email.to} value={emailData.to} onChange={(v) => updateEmail('to', v)} type="email" required />
+            <ToolTextInput label={t.email.subject} value={emailData.subject ?? ''} onChange={(v) => updateEmail('subject', v)} />
             <div>
               <label className="tool-label mb-1 block">{t.email.body}</label>
               <textarea value={emailData.body} onChange={(e) => updateEmail('body', e.target.value)} rows={3} className="tool-input w-full resize-none" />
@@ -339,56 +205,43 @@ export default function QrCodeGenerator() {
         )}
 
         <div className="grid gap-3 sm:grid-cols-2">
-          <div>
-            <label className="tool-label mb-2 block">{t.size}</label>
-            <select value={size} onChange={(e) => setSize(Number(e.target.value))} className="tool-select w-full">
-              <option value={150}>150 px</option>
-              <option value={200}>200 px</option>
-              <option value={300}>300 px</option>
-              <option value={400}>400 px</option>
-              <option value={500}>500 px</option>
-              <option value={600}>600 px</option>
-              <option value={800}>800 px</option>
-              <option value={1000}>1000 px</option>
-            </select>
-          </div>
-          <div>
-            <label className="tool-label mb-2 block">{t.margin}</label>
-            <select value={margin} onChange={(e) => setMargin(Number(e.target.value))} className="tool-select w-full">
-              <option value={0}>0 (brak)</option>
-              <option value={1}>1</option>
-              <option value={2}>2</option>
-              <option value={3}>3</option>
-              <option value={4}>4</option>
-            </select>
-          </div>
+          <ToolSelect label={t.size} value={size} onChange={(v) => setSize(Number(v))}>
+            <option value={150}>150 px</option>
+            <option value={200}>200 px</option>
+            <option value={300}>300 px</option>
+            <option value={400}>400 px</option>
+            <option value={500}>500 px</option>
+            <option value={600}>600 px</option>
+            <option value={800}>800 px</option>
+            <option value={1000}>1000 px</option>
+          </ToolSelect>
+          <ToolSelect label={t.margin} value={margin} onChange={(v) => setMargin(Number(v))}>
+            <option value={0}>0 (brak)</option>
+            <option value={1}>1</option>
+            <option value={2}>2</option>
+            <option value={3}>3</option>
+            <option value={4}>4</option>
+          </ToolSelect>
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2">
           <div>
             <label className="tool-label mb-2 block">{t.qrColor}</label>
-            <div className="flex items-center gap-2">
-              <input type="color" value={darkColor} onChange={(e) => setDarkColor(e.target.value)} className="tool-color-picker h-10! w-12!" />
-              <input type="text" value={darkColor} onChange={(e) => setDarkColor(e.target.value)} className="tool-input h-10 flex-1" />
-            </div>
+            <ToolColorInput value={darkColor} onChange={setDarkColor} />
           </div>
           <div>
             <label className="tool-label mb-2 block">{t.bgColor}</label>
-            <div className="flex items-center gap-2">
-              <input type="color" value={lightColor} onChange={(e) => setLightColor(e.target.value)} className="tool-color-picker h-10! w-12!" />
-              <input type="text" value={lightColor} onChange={(e) => setLightColor(e.target.value)} className="tool-input h-10 flex-1" />
-            </div>
+            <ToolColorInput value={lightColor} onChange={setLightColor} />
           </div>
         </div>
 
         <div>
-          <label className="tool-label mb-2 block">{t.errorCorrection}</label>
-          <select value={errorLevel} onChange={(e) => setErrorLevel(e.target.value as ErrorCorrectionLevel)} className="tool-select w-full">
+          <ToolSelect label={t.errorCorrection} value={errorLevel} onChange={(v) => setErrorLevel(v as ErrorCorrectionLevel)}>
             <option value="L">{t.errorCorrectionLevels.L}</option>
             <option value="M">{t.errorCorrectionLevels.M}</option>
             <option value="Q">{t.errorCorrectionLevels.Q}</option>
             <option value="H">{t.errorCorrectionLevels.H}</option>
-          </select>
+          </ToolSelect>
           <ToolHelper className="mt-1">{t.printTip}</ToolHelper>
         </div>
       </ToolSection>

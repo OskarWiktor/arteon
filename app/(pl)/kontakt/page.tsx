@@ -4,7 +4,7 @@ import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import { RiPhoneLine, RiMailLine, RiMapPinTimeLine } from 'react-icons/ri';
-import { toAbsoluteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Kontakt - wycena Twojego planu - Arteon',

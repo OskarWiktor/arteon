@@ -8,92 +8,15 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
+import ToolColorInput from '@/components/ui/tools/ToolColorInput';
 import Badge from '@/components/ui/Badge';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
 import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/wcag-contrast';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });
-
-const ui = {
-  pl: {
-    sampleTextLabel: 'Przykładowy tekst',
-    exampleText: 'Przykładowy tekst kontrastu WCAG 2.1',
-    exampleTextPlaceholder: 'Wpisz nagłówek, tekst przycisku lub treść akapitu',
-    textColorLabel: 'Kolor tekstu (foreground)',
-    selectTextColor: 'Wybierz kolor tekstu',
-    textColorPlaceholder: `${DEFAULT_FOREGROUND} lub rgba(0,0,0,0.8)`,
-    supportedFormats: 'Obsługiwane formaty:',
-    backgroundColorLabel: 'Kolor tła (background)',
-    selectBackgroundColor: 'Wybierz kolor tła',
-    backgroundColorPlaceholder: `${DEFAULT_BACKGROUND} lub hsl(0, 0%, 100%)`,
-    swapColors: 'Zamień kolory miejscami',
-    resetColors: 'Reset do czarny na białym',
-    matchTargetLabel: 'Cel dopasowania',
-    matchColor: 'Dopasuj',
-    suggestedColor: 'Proponowany kolor',
-    applySuggestedColor: 'Ustaw',
-    copy: 'Kopiuj',
-    copied: 'Skopiowano',
-    matchError: 'Nie udało się znaleźć wariantu spełniającego wybrany próg.',
-    contrastRatio: 'Współczynnik kontrastu',
-    colorReadError: 'Nie udało się odczytać kolorów. Użyj formatu',
-    or: 'lub',
-    normalText: 'Tekst zwykły',
-    largeText: 'Tekst duży / pogrubiony',
-    icon: 'Ikona',
-    exampleNormalText: 'Przykładowy tekst zwykły',
-    exampleLargeText: 'Przykładowy nagłówek / przycisk',
-    iconPreview: 'Podgląd ikony na tle',
-    resultsLabel: 'Wyniki testu kontrastu i podgląd',
-    badges: {
-      normalAA: 'AA (min. 4.5:1)',
-      normalAAA: 'AAA (min. 7:1)',
-      largeAA: 'AA (min. 3:1)',
-      largeAAA: 'AAA (min. 4.5:1)',
-      iconAA: 'AA (min. 3:1)',
-    },
-  },
-  en: {
-    sampleTextLabel: 'Sample text',
-    exampleText: 'Sample WCAG 2.1 contrast text',
-    exampleTextPlaceholder: 'Enter a heading, button text, or paragraph content',
-    textColorLabel: 'Text color (foreground)',
-    selectTextColor: 'Select text color',
-    textColorPlaceholder: `${DEFAULT_FOREGROUND} or rgba(0,0,0,0.8)`,
-    supportedFormats: 'Supported formats:',
-    backgroundColorLabel: 'Background color',
-    selectBackgroundColor: 'Select background color',
-    backgroundColorPlaceholder: `${DEFAULT_BACKGROUND} or hsl(0, 0%, 100%)`,
-    swapColors: 'Swap colors',
-    resetColors: 'Reset to black on white',
-    matchTargetLabel: 'Match target',
-    matchColor: 'Match',
-    suggestedColor: 'Suggested color',
-    applySuggestedColor: 'Apply',
-    copy: 'Copy',
-    copied: 'Copied',
-    matchError: 'Could not find a variant that meets the selected threshold.',
-    contrastRatio: 'Contrast ratio',
-    colorReadError: 'Could not read the colors. Use format',
-    or: 'or',
-    normalText: 'Normal text',
-    largeText: 'Large / bold text',
-    icon: 'Icon',
-    exampleNormalText: 'Sample normal text',
-    exampleLargeText: 'Sample heading / button',
-    iconPreview: 'Icon preview on background',
-    resultsLabel: 'Contrast test results and preview',
-    badges: {
-      normalAA: 'AA (min. 4.5:1)',
-      normalAAA: 'AAA (min. 7:1)',
-      largeAA: 'AA (min. 3:1)',
-      largeAAA: 'AAA (min. 4.5:1)',
-      iconAA: 'AA (min. 3:1)',
-    },
-  },
-} as const satisfies Record<Locale, unknown>;
 
 type WcagResult = {
   ratio: number | null;
@@ -302,19 +225,14 @@ export default function WcagContrastChecker() {
                   }
                   helperClassName="text-xs!"
                 >
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="color"
-                      value={foregroundPicker}
-                      onChange={(e) => {
-                        setForegroundPicker(e.target.value);
-                        setForeground(e.target.value);
-                      }}
-                      aria-label={t.selectTextColor}
-                      className="tool-color-picker tool-color-picker-md"
-                    />
-                    <input type="text" value={foreground} onChange={(e) => setForeground(e.target.value)} className="tool-input h-10" placeholder={t.textColorPlaceholder} />
-                  </div>
+                  <ToolColorInput
+                    value={foreground}
+                    onChange={setForeground}
+                    pickerValue={foregroundPicker}
+                    onPickerChange={setForegroundPicker}
+                    ariaLabel={t.selectTextColor}
+                    placeholder={t.textColorPlaceholder}
+                  />
                 </ToolFieldRow>
 
                 <ToolFieldRow
@@ -328,19 +246,14 @@ export default function WcagContrastChecker() {
                   }
                   helperClassName="text-xs!"
                 >
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="color"
-                      value={backgroundPicker}
-                      onChange={(e) => {
-                        setBackgroundPicker(e.target.value);
-                        setBackground(e.target.value);
-                      }}
-                      aria-label={t.selectBackgroundColor}
-                      className="tool-color-picker tool-color-picker-md"
-                    />
-                    <input type="text" value={background} onChange={(e) => setBackground(e.target.value)} className="tool-input h-10" placeholder={t.backgroundColorPlaceholder} />
-                  </div>
+                  <ToolColorInput
+                    value={background}
+                    onChange={setBackground}
+                    pickerValue={backgroundPicker}
+                    onPickerChange={setBackgroundPicker}
+                    ariaLabel={t.selectBackgroundColor}
+                    placeholder={t.backgroundColorPlaceholder}
+                  />
                 </ToolFieldRow>
               </div>
             </div>

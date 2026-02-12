@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { createWebpQueueItems, type WebpQueueItem } from '@/lib/tools/image/webpQueue';
-import { revokeObjectUrl, revokeObjectUrls } from '@/lib/tools/objectUrl';
+import { revokeObjectUrl, revokeObjectUrls } from '@/utils/objectUrl';
 
 type UseWebpQueueOptions = {
   addJpgPngOnlyError: string;

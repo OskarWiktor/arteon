@@ -1,8 +1,8 @@
-import { canvasToBlob } from '@/lib/tools/canvasToBlob';
-import { downloadFromUrl } from '@/lib/tools/download';
-import { loadImage } from '@/lib/tools/loadImage';
-import { getCropRect } from '@/components/sections/tools/ImageResizeTool/cropMath';
-import type { Dims, OutputFormat, ShapeType } from '@/components/sections/tools/ImageResizeTool/types';
+import { canvasToBlob } from '@/utils/canvasToBlob';
+import { downloadFromUrl } from '@/utils/download';
+import { loadImage } from '@/utils/loadImage';
+import { getCropRect } from '@/lib/tools/image/cropMath';
+import type { Dims, OutputFormat, ShapeType } from '@/types/tools/image';
 
 function getMime(outputFormat: OutputFormat): string {
   switch (outputFormat) {

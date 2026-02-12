@@ -5,19 +5,23 @@ import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
-import { exportCroppedImage } from '@/components/sections/tools/ImageResizeTool/exportCroppedImage';
-import { getCropRect, getGridStroke } from '@/components/sections/tools/ImageResizeTool/cropMath';
+import { exportCroppedImage } from '@/lib/tools/image/exportCroppedImage';
+import { getCropRect, getGridStroke } from '@/lib/tools/image/cropMath';
 import { useCropDrag } from '@/components/sections/tools/ImageResizeTool/useCropDrag';
-import type { ActiveTool, GridColor, OutputFormat, ResizeMode, ShapeAspect, ShapeType } from '@/components/sections/tools/ImageResizeTool/types';
+import type { ActiveTool, GridColor, OutputFormat, ResizeMode, ShapeAspect, ShapeType } from '@/types/tools/image';
 import ToolButton from '@/components/ui/tools/ToolButton';
-import { formatBytes } from '@/lib/tools/formatBytes';
-import { getFileFormatLabel } from '@/lib/tools/fileFormat';
-import { revokeObjectUrl } from '@/lib/tools/objectUrl';
+import { formatBytes } from '@/utils/formatBytes';
+import { getFileFormatLabel } from '@/utils/fileFormat';
+import { revokeObjectUrl } from '@/utils/objectUrl';
 import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine, RiImageLine } from 'react-icons/ri';
 import { useLocale } from '@/lib/LocaleContext';
-import { ui, type UiLocale } from '@/components/sections/tools/ImageResizeTool/ui';
+import { ui, type UiLocale } from '@/lib/i18n/tools/image-resize';
+import PillButton from '@/components/ui/tools/PillButton';
+import NumberField from '@/components/ui/tools/NumberField';
+import ToolRangeInput from '@/components/ui/tools/ToolRangeInput';
+import CropPreview from '@/components/sections/tools/ImageResizeTool/CropPreview';
 
 function getImagePresets(t: UiLocale) {
   return {
@@ -60,64 +64,6 @@ interface ResizeToolState {
   gridColor: GridColor;
   shape: ShapeType;
   shapeAspect: ShapeAspect;
-}
-
-interface PillButtonProps<T extends string> {
-  value: T;
-  current: T;
-  label: ReactNode;
-  onChange: (value: T) => void;
-  disabled?: boolean;
-}
-
-function PillButton<T extends string>({ value, current, label, onChange, disabled }: PillButtonProps<T>) {
-  const isActive = value === current;
-
-  return (
-    <button
-      type="button"
-      disabled={disabled}
-      onClick={() => !disabled && onChange(value)}
-      className={`tool-button ${isActive ? 'tool-button-active' : 'tool-button-inactive'} ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
-    >
-      {label}
-    </button>
-  );
-}
-
-interface NumberFieldProps {
-  label: string;
-  suffix?: string;
-  value: number;
-  min: number;
-  max: number;
-  onChange: (value: number) => void;
-  widthClass?: string;
-}
-
-function NumberField({ label, suffix, value, min, max, onChange, widthClass = 'w-20!' }: NumberFieldProps) {
-  return (
-    <div>
-      <div className="flex items-center justify-between">
-        <span className="font-medium">
-          {label}
-          {suffix ? ` (${suffix})` : ''}
-        </span>
-      </div>
-      <input
-        type="number"
-        min={min}
-        max={max}
-        className={`tool-input mt-1 ${widthClass}`}
-        value={value}
-        onChange={(e) => {
-          const raw = Number(e.target.value) || 0;
-          const clamped = Math.min(max, Math.max(min, raw));
-          onChange(clamped);
-        }}
-      />
-    </div>
-  );
 }
 
 function getGridColorOptions(t: UiLocale): { value: GridColor; label: string }[] {
@@ -545,26 +491,16 @@ export default function ImageResizeTool() {
             </div>
 
             {state.outputFormat !== 'png' && (
-              <div className="mt-4 space-y-1">
-                <label className="tool-value flex items-center justify-between">
-                  <span>{t.quality}</span>
-                  <span>{Math.round(state.outputQuality * 100)}%</span>
-                </label>
-                <input
-                  type="range"
-                  min={60}
-                  max={100}
-                  value={Math.round(state.outputQuality * 100)}
-                  onChange={(e) =>
-                    setState((prev) => ({
-                      ...prev,
-                      outputQuality: Number(e.target.value) / 100,
-                    }))
-                  }
-                  className="tool-range"
-                />
-                <p className="tool-meta">{t.qualityHelper}</p>
-              </div>
+              <ToolRangeInput
+                label={t.quality}
+                value={Math.round(state.outputQuality * 100)}
+                min={60}
+                max={100}
+                onChange={(val) => setState((prev) => ({ ...prev, outputQuality: val / 100 }))}
+                suffix="%"
+                helper={t.qualityHelper}
+                className="mt-4"
+              />
             )}
 
             <div className="mt-5 flex flex-wrap gap-3">
@@ -853,66 +789,23 @@ export default function ImageResizeTool() {
               )}
             </div>
 
-            <div>
-              <div className="mt-4 mb-2 flex items-center justify-between">
-                <h3 className="h6">{t.cropPreview}</h3>
-                {dims && (
-                  <span className="text-light text-xs!">
-                    {dims.width} x {dims.height} px
-                  </span>
-                )}
-              </div>
-
-              <div ref={previewRef} className="bg-primary relative w-full overflow-hidden rounded-2xl border border-neutral-300" style={{ paddingBottom: `${previewPadding}%` }}>
-                <div className="absolute inset-0">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={state.imageUrl!} alt={state.file?.name || t.previewAlt} className="h-full w-full object-contain" draggable={false} />
-
-                  {cropRectPreview && (
-                    <div
-                      onPointerDown={startMoveDrag}
-                      onPointerMove={handlePointerMove}
-                      onPointerUp={handlePointerUp}
-                      onPointerLeave={handlePointerLeave}
-                      className={`absolute box-border ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
-                      style={{ ...cropRectPreview }}
-                    >
-                      <div className="pointer-events-none absolute inset-0">
-                        <div className={`absolute inset-0 shadow-[0_0_0_9999px_rgba(0,0,0,0.55)] ${selectionShapeClass}`} />
-                        <div className={`absolute inset-0 grid grid-cols-3 grid-rows-3 overflow-hidden ${selectionShapeClass}`}>
-                          {Array.from({ length: 9 }).map((_, i) => (
-                            <div key={i} className="border" style={{ borderColor: gridStroke }} />
-                          ))}
-                        </div>
-                      </div>
-
-                      <div
-                        className="absolute -top-1 -left-1 h-4 w-4 cursor-nwse-resize rounded-[2px] border-2 bg-white/80"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={(e) => startResizeDrag(e, 'tl')}
-                      />
-                      <div
-                        className="absolute -top-1 -right-1 h-4 w-4 cursor-nesw-resize rounded-[2px] border-2 bg-white/80"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={(e) => startResizeDrag(e, 'tr')}
-                      />
-                      <div
-                        className="absolute -bottom-1 -left-1 h-4 w-4 cursor-nesw-resize rounded-[2px] border-2 bg-white/80"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={(e) => startResizeDrag(e, 'bl')}
-                      />
-                      <div
-                        className="absolute -right-1 -bottom-1 h-4 w-4 cursor-nwse-resize rounded-[2px] border-2 bg-white/80"
-                        style={{ borderColor: gridStroke }}
-                        onPointerDown={(e) => startResizeDrag(e, 'br')}
-                      />
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              <p className="text-light mt-2 text-xs!">{t.cropPreviewHelper}</p>
-            </div>
+            <CropPreview
+              imageUrl={state.imageUrl!}
+              fileName={state.file?.name || ''}
+              previewPadding={previewPadding}
+              cropRectPreview={cropRectPreview}
+              gridStroke={gridStroke}
+              selectionShapeClass={selectionShapeClass}
+              isDragging={isDragging}
+              previewRef={previewRef}
+              startMoveDrag={startMoveDrag}
+              startResizeDrag={startResizeDrag}
+              handlePointerMove={handlePointerMove}
+              handlePointerUp={handlePointerUp}
+              handlePointerLeave={handlePointerLeave}
+              dims={dims}
+              t={t}
+            />
           </>
         )}
       </ToolSection>

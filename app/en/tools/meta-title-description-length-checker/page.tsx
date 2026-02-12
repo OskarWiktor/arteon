@@ -11,7 +11,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -116,7 +116,7 @@ const faqItems = [
   {
     question: 'Why does the tool show pixel width instead of just character count?',
     answer:
-      'Different letters have different widths. The letter "i" takes much less space than "m" or "W". Google truncates titles and descriptions based on pixel width, not character count. That is why text with many narrow letters can be longer than text with wide letters, even at the same character count.',
+      'Different letters have different widths. The letter "i" takes much less space than "m" or "W". Google truncates titles and descriptions based on pixel width, not character count. This means text with many narrow letters can be longer than text with wide letters, even at the same character count.',
     answerSchemaText: 'Google truncates based on pixel width, not character count. Different letters have different widths.',
   },
   {
@@ -357,7 +357,7 @@ export default function MetaTitleDescriptionPage() {
             pixels, not characters.
           </p>
           <p className="text-mid mt-3">
-            That is why a title with many narrow letters (i, l, t, f) can be longer than a title with wide letters (W, M, O), despite the same character count. The tool shows both values: character
+            This means a title with many narrow letters (i, l, t, f) can be longer than a title with wide letters (W, M, O), despite the same character count. The tool shows both values: character
             count (easier to grasp) and pixel width (more accurate for Google).
           </p>
         </SectionDemo>

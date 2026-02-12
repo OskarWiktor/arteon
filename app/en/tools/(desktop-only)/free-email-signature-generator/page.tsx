@@ -11,7 +11,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -100,7 +100,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Fill in contact details',
-      text: 'In the Data tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo — after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px).',
+      text: 'In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo — after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px).',
     },
     {
       '@type': 'HowToStep',
@@ -165,7 +165,7 @@ export default function EmailSignatureGeneratorPage() {
             website or meeting calendar.
           </p>
           <p className="text-mid mt-3">
-            The recipient does not have to search for the phone number in previous messages — all details are at hand. A professional email signature also shows that you pay attention to details and
+            The recipient does not have to search for the phone number in previous messages — all details are readily available. A professional email signature also shows that you pay attention to details and
             maintain a consistent company image in business correspondence.
           </p>
         </SectionInfo>
@@ -185,13 +185,13 @@ export default function EmailSignatureGeneratorPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="How to fill in signature data">
+        <SectionInfo title="How to fill in signature details">
           <p className="text-mid">
-            In the <strong>Data</strong> tab you will find all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the
+            The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the
             signature only when filled in.
           </p>
 
-          <h3 className="h5 mt-6 mb-3">Fields in the Data tab</h3>
+          <h3 className="h5 mt-6 mb-3">Fields in the Details tab</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
               <strong>Line above name</strong> — additional text displayed above the name. You can enter the company name, tagline, or slogan.
@@ -269,7 +269,7 @@ export default function EmailSignatureGeneratorPage() {
             </div>
           }
         >
-          <p className="text-mid">The generator offers eight ready-made layouts. Each presents the same data in a different way.</p>
+          <p className="text-mid">The generator offers eight ready-made layouts. Each presents the same information in a different way.</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
               <strong>Standard</strong> — classic vertical layout, fits most use cases.
@@ -281,13 +281,13 @@ export default function EmailSignatureGeneratorPage() {
               <strong>Labels left</strong> — two columns: labels and values.
             </li>
             <li>
-              <strong>Centered</strong> — formal character, data in the center.
+              <strong>Centered</strong> — formal appearance, content centered.
             </li>
             <li>
               <strong>Compact</strong> — everything in one line, minimal height.
             </li>
             <li>
-              <strong>Two columns</strong> — data on the left, contact on the right.
+              <strong>Two columns</strong> — details on the left, contact info on the right.
             </li>
             <li>
               <strong>Minimalist</strong> — only the most important information.
@@ -421,7 +421,7 @@ export default function EmailSignatureGeneratorPage() {
           </p>
 
           <h3 className="h5 mt-6 mb-3">Available elements</h3>
-          <p className="text-mid">Only elements that are currently in the signature (have data filled in) are visible. For each element you can set:</p>
+          <p className="text-mid">Only elements that currently have content in the signature are visible. For each element you can set:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
               <strong>Name</strong> — displayed in accent color by default.
@@ -497,7 +497,7 @@ export default function EmailSignatureGeneratorPage() {
               <strong>Before disclaimer</strong> — spacing above the legal disclaimer text.
             </li>
           </ul>
-          <p className="text-mid mt-4">If you remove data from a field (e.g., clear the phone), the corresponding spacing option will automatically disappear from the tab.</p>
+          <p className="text-mid mt-4">If you clear a field (e.g., remove the phone number), the corresponding spacing option will automatically disappear from the tab.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -527,7 +527,7 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Separator line</h3>
           <p className="text-mid">
-            Below the text field you will find the <strong>Show separator line between data and disclaimer</strong> option. Enable it to add a horizontal line between contact details and the legal
+            Below the text field you will find the <strong>Show divider between contact details and disclaimer</strong> option. Enable it to add a horizontal line between contact details and the legal
             disclaimer.
           </p>
           <p className="text-mid mt-3">After enabling the line, additional customization options appear:</p>
@@ -644,7 +644,7 @@ export default function EmailSignatureGeneratorPage() {
           description="The email signature tool is useful for anyone who sends business emails:"
           grid="two"
           items={[
-            { icon: <RiBriefcaseLine className="h-6 w-6" />, title: 'Entrepreneurs and freelancers', description: 'A professional signature in all messages without commissioning design work.' },
+            { icon: <RiBriefcaseLine className="h-6 w-6" />, title: 'Entrepreneurs and freelancers', description: 'A professional signature in every message without hiring a designer.' },
             {
               icon: <RiTeamLine className="h-6 w-6" />,
               title: 'Company teams',
@@ -711,7 +711,7 @@ export default function EmailSignatureGeneratorPage() {
             {
               question: 'Can I add a company logo?',
               answer:
-                'Yes. In the Data tab, paste the URL of an image (logo or profile photo). The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear.',
+                'Yes. In the Details tab, paste the URL of an image (logo or profile photo). The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL, options for shape (round, rounded, square) and size (40, 56, or 72 px) will appear.',
             },
             {
               question: 'How do I copy the signature to an email client?',

@@ -1,4 +1,4 @@
-import { formatBytes } from '@/lib/tools/formatBytes';
+import { formatBytes } from '@/utils/formatBytes';
 import type { WebpConversionReportItem, WebpConversionReportLabels, WebpConversionCsvReportItem } from '@/types/tools/image';
 export type { WebpConversionReportItem, WebpConversionReportLabels, WebpConversionCsvReportItem } from '@/types/tools/image';
 

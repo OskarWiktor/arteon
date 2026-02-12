@@ -6,7 +6,7 @@ import AppLink from '../ui/Link';
 import Image from 'next/image';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
-import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
+import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { useLocale } from '@/lib/LocaleContext';
 import { getToolsList } from '@/lib/i18n/tool-registry';
 import { getLegalLinks, FOOTER_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';

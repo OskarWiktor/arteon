@@ -8,53 +8,15 @@ import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import ToolColorSwatch from '@/components/ui/tools/ToolColorSwatch';
 import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
-import type { ToolStatus } from '@/lib/tools/types';
-import { revokeObjectUrl } from '@/lib/tools/objectUrl';
-import { formatBytes } from '@/lib/tools/formatBytes';
-import { getFileFormatLabel } from '@/lib/tools/fileFormat';
+import type { ToolStatus } from '@/types/tools/common';
+import { revokeObjectUrl } from '@/utils/objectUrl';
+import { formatBytes } from '@/utils/formatBytes';
+import { getFileFormatLabel } from '@/utils/fileFormat';
 import { getDownscaledImageDataFromUrl } from '@/lib/tools/image/canvas';
 import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/tools/image/uploadTypes';
 import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
-import { useLocale, type Locale } from '@/lib/LocaleContext';
-
-const ui = {
-  pl: {
-    unsupportedFormatsOnly: 'Ten plik nie jest obsługiwany. Wgraj PNG, JPG/JPEG lub SVG.',
-    unexpectedError: 'Nie udało się przeanalizować obrazu. Spróbuj ponownie lub użyj innego pliku.',
-    addImageLabel: 'Dodaj obraz',
-    dragDropImage: 'Przeciągnij i upuść obraz tutaj',
-    clickToSelect: 'lub kliknij, aby wybrać plik z dysku',
-    supportedFormats: 'Obsługiwane: PNG, JPG/JPEG, SVG',
-    preview: 'Podgląd i paleta',
-    addImageToStart: 'Wgraj obraz, a narzędzie pokaże jego dominujące kolory. Każdy kod skopiujesz jednym kliknięciem - idealne do UI, brandingu i social mediów.',
-    processing: 'Analizuję obraz i tworzę paletę…',
-    colorPreview: 'Podgląd koloru',
-    copy: 'Kopiuj',
-    copied: 'Skopiowano',
-    empty: 'Nie udało się wykryć dominujących kolorów. Spróbuj innego obrazu.',
-    selectedFile: 'Wybrany plik:',
-    copyHint: 'Kliknij „Kopiuj”, aby skopiować kod koloru.',
-    previewAlt: 'Podgląd',
-  },
-  en: {
-    unsupportedFormatsOnly: 'This file is not supported. Upload a PNG, JPG/JPEG or SVG.',
-    unexpectedError: 'Failed to analyze the image. Try again or use a different file.',
-    addImageLabel: 'Add image',
-    dragDropImage: 'Drag and drop an image here',
-    clickToSelect: 'or click to select a file from your device',
-    supportedFormats: 'Supported: PNG, JPG/JPEG, SVG',
-    preview: 'Preview and palette',
-    addImageToStart: 'Upload an image and the tool will show its dominant colors. Copy each code with a single click — perfect for UI, branding, and social media.',
-    processing: 'Analyzing image and creating palette…',
-    colorPreview: 'Color preview',
-    copy: 'Copy',
-    copied: 'Copied',
-    empty: 'Could not detect dominant colors. Try a different image.',
-    selectedFile: 'Selected file:',
-    copyHint: 'Click "Copy" to copy the color code.',
-    previewAlt: 'Preview',
-  },
-} as const satisfies Record<Locale, unknown>;
+import { useLocale } from '@/lib/LocaleContext';
+import { ui } from '@/lib/i18n/tools/palette-extractor';
 
 export default function PaletteExtractor() {
   const locale = useLocale();

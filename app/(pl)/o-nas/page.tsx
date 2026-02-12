@@ -13,7 +13,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
 import { RiCodeSSlashFill, RiLightbulbFlashLine, RiMegaphoneLine, RiPaletteLine } from 'react-icons/ri';
-import { toAbsoluteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'O nas - strategia, kreacja i widoczność - Arteon',

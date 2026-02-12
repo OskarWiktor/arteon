@@ -24,7 +24,7 @@ import {
   RiGlobalLine,
   RiLockLine,
 } from 'react-icons/ri';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',

@@ -11,7 +11,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import AdSense from '@/components/ui/AdSense';

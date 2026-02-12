@@ -1,5 +1,5 @@
 import { RiRefreshLine, RiAddLine, RiSubtractLine } from 'react-icons/ri';
-import type { TextElementKey } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import type { TextElementKey } from '@/types/tools/email';
 
 interface TextStyleRowProps {
   elementKey: TextElementKey;

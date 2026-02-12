@@ -12,7 +12,7 @@ import SectionFeatureComparison from '@/components/ui/sections/SectionFeatureCom
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -229,14 +229,14 @@ export default function QrCodeGeneratorPage() {
               business cards.
             </li>
             <li>
-              <strong>Reed-Solomon error correction</strong> — a mathematical algorithm that allows reading the code even when part of it is damaged or obscured. Levels: L (7%), M (15%), Q (25%), H
+              <strong>Reed-Solomon error correction</strong> — a mathematical algorithm that enables reading the code even when part of it is damaged or obscured. Levels: L (7%), M (15%), Q (25%), H
               (30%).
             </li>
             <li>
               <strong>Margin</strong> — the white area around the code required for proper scanning. The recommended minimum is 4 modules (code units).
             </li>
             <li>
-              <strong>Minimum print size</strong> — for standard scanning conditions, the code should be at least 2×2 cm. For large format printing (banners, billboards), proportionally more.
+              <strong>Minimum print size</strong> — for standard scanning conditions, the code should be at least 2×2 cm. For large format printing (banners, billboards), scale up accordingly.
             </li>
             <li>
               <strong>Contrast</strong> — the contrast ratio between the code and background should be at least 3:1. The generator automatically warns about too low contrast.
@@ -351,7 +351,7 @@ export default function QrCodeGeneratorPage() {
           }
         >
           <p className="text-mid mb-4">
-            Error correction is a mechanism that allows reading a QR code even when part of it is damaged, dirty, or obscured. The generator uses the Reed-Solomon algorithm, a standard in QR codes.
+            Error correction is a mechanism that enables reading a QR code even when part of it is damaged, dirty, or obscured. The generator uses the Reed-Solomon algorithm, a standard in QR codes.
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>

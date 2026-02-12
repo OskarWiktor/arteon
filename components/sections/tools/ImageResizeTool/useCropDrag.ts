@@ -1,8 +1,8 @@
 'use client';
 
 import { useCallback, useRef, useState, type Dispatch, type PointerEvent as ReactPointerEvent, type RefObject, type SetStateAction } from 'react';
-import { getCropRect } from '@/components/sections/tools/ImageResizeTool/cropMath';
-import type { ActiveTool, Dims } from '@/components/sections/tools/ImageResizeTool/types';
+import { getCropRect } from '@/lib/tools/image/cropMath';
+import type { ActiveTool, Dims } from '@/types/tools/image';
 
 type DragMode = 'none' | 'move' | 'resize';
 

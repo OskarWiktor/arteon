@@ -4,9 +4,9 @@ import { useCallback, useState, type Dispatch, type SetStateAction } from 'react
 import { getWebpFileName } from '@/lib/tools/image/webp';
 import { buildWebpConversionReportCsv } from '@/lib/tools/image/webpReport';
 import type { WebpQueueItem } from '@/lib/tools/image/webpQueue';
-import { downloadBlob } from '@/lib/tools/downloadBlob';
-import { createZipBlob, type ZipFileInput } from '@/lib/tools/zip';
-import { sleep } from '@/lib/tools/sleep';
+import { downloadBlob } from '@/utils/download';
+import { createZipBlob, type ZipFileInput } from '@/utils/zip';
+import { sleep } from '@/utils/sleep';
 
 type UseWebpDownloadsOptions = {
   files: WebpQueueItem[];

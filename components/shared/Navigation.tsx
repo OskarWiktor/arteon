@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { RiMenuLine, RiCloseLine, RiSearchLine, RiMailSettingsLine } from 'react-icons/ri';
 import Image from 'next/image';
 
-import MobileNavigation from './navigation-types/MobileNavigation';
-import DesktopNavigation from './navigation-types/DesktopNavigation';
+import MobileNavigation from './navigation/MobileNavigation';
+import DesktopNavigation from './navigation/DesktopNavigation';
 import Wrapper from '@/components/ui/Wrapper';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
@@ -42,18 +42,23 @@ export default function Navigation() {
 
   return (
     <header id="navigation" className="sticky top-0 z-50 w-full bg-white/95 shadow-xl backdrop-blur-sm">
-      {isPl && (
-        <SectionInfoBanner
-          items={[
-            {
-              icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
-              text: 'Aktualizacja generatora stopki mailowej - sprawdź nowe możliwości',
-              linkText: 'narzędzia',
-              linkHref: '/narzedzia/darmowy-generator-stopki-mailowej',
-            },
-          ]}
-        />
-      )}
+      <SectionInfoBanner
+        items={[
+          isPl
+            ? {
+                icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
+                text: 'Aktualizacja generatora stopki mailowej - sprawdź nowe możliwości',
+                linkText: 'narzędzia',
+                linkHref: '/narzedzia/darmowy-generator-stopki-mailowej',
+              }
+            : {
+                icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
+                text: 'Email signature generator update - check out new features',
+                linkText: 'tools',
+                linkHref: '/en/tools/free-email-signature-generator',
+              },
+        ]}
+      />
 
       <Wrapper>
         <nav className="flex h-14 items-center justify-between md:h-16 lg:h-18" aria-label={t.mainNavigation}>
@@ -83,6 +88,7 @@ export default function Navigation() {
           </div>
 
           <div className="flex items-center gap-1 lg:hidden">
+            <LanguageSwitcher />
             {isPl && (
               <button
                 type="button"

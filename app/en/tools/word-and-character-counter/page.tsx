@@ -10,7 +10,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import AdSense from '@/components/ui/AdSense';
@@ -101,7 +101,7 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to use the word and character counter',
-  description: 'Check the length of your text and evaluate whether it is appropriate for a given page type. Learn how many words a product description, service page, blog post, or guide should have.',
+  description: 'Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.',
   url: toAbsoluteUrl('/en/tools/word-and-character-counter'),
   totalTime: 'PT2M',
   step: [
@@ -161,7 +161,7 @@ const faqItems = [
   {
     question: 'Where do the recommended ranges come from?',
     answer:
-      'The ranges are based on analyses of content that ranks well in search engines and on content creation best practices. They are intentionally broad because the same page type may require different lengths depending on industry, topic complexity, and reader needs. The ranges serve as a starting point for evaluating whether text falls within a typical range for a given page type.',
+      'The ranges are based on analyses of content that ranks well in search engines and on content creation best practices. They are intentionally broad because the same page type may require different lengths depending on industry, topic complexity, and reader needs. The ranges serve as a starting point for evaluating whether text falls within a typical range for a specific page type.',
     answerSchemaText: 'The ranges are based on SEO analyses and content creation best practices.',
   },
   {
@@ -359,7 +359,7 @@ export default function WordCounterPage() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Homepage</td>
                   <td className="py-2 pr-4 whitespace-nowrap">400–1000 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">The homepage conveys the main value and guides visitors further — the text supports navigation, not replace subpages.</td>
+                  <td className="text-primary-light0 py-2 text-sm">The homepage conveys the main value and guides visitors further — the text supports navigation, not to replace subpages.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Landing page</td>
@@ -391,7 +391,7 @@ export default function WordCounterPage() {
             {
               icon: <RiEditLine className="h-6 w-6" />,
               title: 'Copywriters and content creators',
-              description: 'Check whether the text falls within the recommended range for a given page type. The SEO word counter helps evaluate whether an article is developed enough.',
+              description: 'Check whether the text falls within the recommended range for a specific page type. The SEO word counter helps evaluate whether an article is developed enough.',
             },
             {
               icon: <RiBloggerLine className="h-6 w-6" />,

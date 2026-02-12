@@ -1,5 +1,13 @@
-import { downloadFromUrl } from '@/lib/tools/download';
-import { revokeObjectUrl } from '@/lib/tools/objectUrl';
+import { revokeObjectUrl } from '@/utils/objectUrl';
+
+export function downloadFromUrl(url: string, filename: string) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
 
 type DownloadBlobOptions = {
   revokeDelayMs?: number;

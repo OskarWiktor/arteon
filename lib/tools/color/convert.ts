@@ -1,4 +1,4 @@
-import type { HSL, HSLA, RGB } from '@/lib/tools/color/types';
+import type { HSL, HSLA, RGB } from '@/types/tools/color';
 
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));

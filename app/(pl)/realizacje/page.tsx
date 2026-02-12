@@ -6,7 +6,7 @@ import Wrapper from '@/components/ui/Wrapper';
 
 import projectsData from '@/data/pl/projects.json';
 import type { ProjectPreview } from '@/types/project';
-import { toAbsoluteUrl } from '@/lib/absoluteUrl';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 type ProjectsData = {
   projects: ProjectPreview[];
