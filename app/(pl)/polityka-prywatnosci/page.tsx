@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Polityka prywatności</h1>
           <p className="mt-2 text-sm opacity-70">
-            Wersja: <strong>1.10.2025</strong>
+            Wersja: <strong>12.02.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -47,6 +47,7 @@ export default function PrivacyPolicyPage() {
               <li>dane podane w formularzu kontaktowym (imię, nazwisko, e-mail, treść wiadomości),</li>
               <li>dane techniczne zbierane automatycznie (adres IP, informacje o urządzeniu, pliki cookie),</li>
               <li>dane analityczne z Google Analytics 4, Ahrefs Web Analytics i Vercel Analytics,</li>
+              <li>dane zbierane przez Google AdSense w celu wyświetlania reklam (identyfikatory reklamowe, pliki cookie reklamowe, dane o interakcjach z reklamami),</li>
               <li>logi serwera i zdarzeń bezpieczeństwa (np. znaczniki czasu, adres IP, nagłówki żądania).</li>
             </ul>
           </SectionInfo>
@@ -70,6 +71,10 @@ export default function PrivacyPolicyPage() {
               <li>
                 <strong>Bezpieczeństwo i roszczenia</strong> - prowadzenie logów, zapobieganie nadużyciom, ustalenie/dochodzenie/obrona roszczeń (art. 6 ust. 1 lit. f RODO).
               </li>
+              <li>
+                <strong>Wyświetlanie reklam</strong> - wyświetlanie reklam dopasowanych do zainteresowań użytkownika za pośrednictwem Google AdSense (art. 6 ust. 1 lit. a RODO - zgoda użytkownika
+                wyrażona w bannerze cookie).
+              </li>
             </ol>
           </SectionInfo>
 
@@ -80,8 +85,24 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>zapewnienia prawidłowego działania serwisu,</li>
               <li>analizy ruchu (Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics),</li>
-              <li>celów marketingowych.</li>
+              <li>celów marketingowych,</li>
+              <li>wyświetlania reklam dopasowanych do zainteresowań użytkowników (Google AdSense / DoubleClick).</li>
             </ul>
+            <p>
+              Google AdSense może wykorzystywać pliki cookie DoubleClick do wyświetlania reklam opartych na wcześniejszych wizytach użytkownika w naszej witrynie lub innych witrynach. Zewnętrzni
+              dostawcy (w tym Google) używają tych plików cookie do serwowania reklam na podstawie historii odwiedzin.
+            </p>
+            <p>
+              Możesz zrezygnować z personalizacji reklam na stronie{' '}
+              <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
+                Ustawienia reklam Google
+              </a>{' '}
+              lub na stronie{' '}
+              <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="inline-link">
+                aboutads.info
+              </a>
+              .
+            </p>
             <p>Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki. Ograniczenie plików cookie może wpłynąć na niektóre funkcje serwisu.</p>
           </SectionInfo>
 
@@ -92,6 +113,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>dostawcy hostingu/aplikacji (np. Vercel),</li>
               <li>dostawcy narzędzi analitycznych (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc.),</li>
+              <li>dostawcy usług reklamowych (Google Ireland Ltd. — Google AdSense),</li>
               <li>biuro rachunkowe, podmioty obsługujące płatności lub prawo - jeśli zajdzie taka potrzeba.</li>
             </ul>
             <p>Wszyscy odbiorcy przetwarzają dane zgodnie z RODO na podstawie odpowiednich umów.</p>

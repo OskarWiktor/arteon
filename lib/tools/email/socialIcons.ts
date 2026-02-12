@@ -3,9 +3,8 @@
  * Compatible with email clients (Gmail, Outlook, Apple Mail)
  */
 
-export type SocialPlatform = 'linkedin' | 'instagram' | 'facebook' | 'twitter' | 'youtube' | 'tiktok' | 'github' | 'dribbble' | 'behance' | 'whatsapp' | 'telegram' | 'pinterest';
-
-export type IconSize = 'small' | 'medium' | 'large';
+import type { SocialPlatform, IconSize } from '@/types/tools/email';
+export type { SocialPlatform, IconSize } from '@/types/tools/email';
 
 const ICON_SIZES: Record<IconSize, number> = {
   small: 16,

@@ -4,8 +4,9 @@ import { useMemo, useState } from 'react';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolFieldRow from '@/components/ui/tools/ToolFieldRow';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
-import { analyzeMetaDescription, analyzeMetaTitle, truncateForPreview, type FieldMetrics, type LengthStatus } from '@/lib/tools/seo/metaLength';
-import { useLocale } from '@/lib/LocaleContext';
+import { analyzeMetaDescription, analyzeMetaTitle, truncateForPreview, type FieldMetrics } from '@/lib/tools/seo/metaLength';
+import { getStatusClasses } from '@/lib/tools/statusClasses';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -70,7 +71,7 @@ const ui = {
     exampleTitle: 'Example page title - offer / service',
     exampleDescription: 'A preview of your page description will appear here. Write briefly about what you offer, how you help the client, and why this page is worth visiting.',
   },
-} as const;
+} as const satisfies Record<Locale, unknown>;
 
 type UiTexts = { [K in keyof (typeof ui)['pl']]: string };
 
@@ -115,20 +116,6 @@ function analyzeDescription(text: string, t: UiTexts): FieldAnalysis {
   return { ...metrics, statusLabel: t.goodLength, helperText: t.descriptionGoodLength };
 }
 
-function getStatusClasses(status: LengthStatus): string {
-  switch (status) {
-    case 'ideal':
-      return 'bg-success-bg text-success-text border-success-border';
-    case 'too-short':
-      return 'bg-warning-bg text-warning-text border-warning-border';
-    case 'too-long':
-      return 'bg-error-bg text-error-text border-error-border';
-    case 'empty':
-    default:
-      return 'bg-neutral-100 text-mid border-neutral-200';
-  }
-}
-
 export default function MetaTitleDescriptionTool() {
   const locale = useLocale();
   const t = ui[locale];
@@ -152,7 +139,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterTitleLabel} className="mt-8" helper={titleAnalysis.helperText}>
             <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="tool-input" placeholder={t.titlePlaceholder} maxLength={180} />
-            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs!">
+            <div className="tool-meta mt-2 flex flex-wrap items-center gap-2">
               <span>
                 {t.chars}: <strong>{titleAnalysis.chars}</strong>
               </span>
@@ -170,7 +157,7 @@ export default function MetaTitleDescriptionTool() {
 
           <ToolFieldRow label={t.enterDescriptionLabel} className="mt-8" helper={descriptionAnalysis.helperText}>
             <textarea value={description} onChange={(e) => setDescription(e.target.value)} className="tool-textarea min-h-[110px] resize-y" placeholder={t.descriptionPlaceholder} maxLength={400} />
-            <div className="text-light mt-2 flex flex-wrap items-center gap-2 text-xs!">
+            <div className="tool-meta mt-2 flex flex-wrap items-center gap-2">
               <span>
                 {t.chars}: <strong>{descriptionAnalysis.chars}</strong>
               </span>

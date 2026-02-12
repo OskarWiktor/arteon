@@ -20,10 +20,20 @@ import type {
   StyleConfig,
   TextElementKey,
   TextStyleConfig,
-  ThemePreset,
 } from '@/components/sections/tools/EmailSignatureGenerator/types';
+import { ui } from '@/components/sections/tools/EmailSignatureGenerator/ui';
+import {
+  STORAGE_KEY_BASE,
+  DEFAULT_STYLE,
+  DEFAULT_SPACING,
+  DEFAULT_TEXT_STYLE,
+  LAYOUT_SPACING_MAP,
+  FONT_OPTIONS,
+  getSignatureLabels,
+  getDefaultSignature,
+  getThemePresets,
+} from '@/components/sections/tools/EmailSignatureGenerator/constants';
 import ToolButton from '@/components/ui/tools/ToolButton';
-import { rgbToHex } from '@/lib/tools/color/convert';
 import { useEffect, useMemo, useState } from 'react';
 import ConfirmModal from '@/components/ui/ConfirmModal';
 import {
@@ -49,546 +59,6 @@ import {
   RiShareForwardLine,
 } from 'react-icons/ri';
 import { useLocale } from '@/lib/LocaleContext';
-
-const STORAGE_KEY_BASE = 'arteon-email-signature-generator';
-
-const ui = {
-  pl: {
-    layoutLabel: 'Układ stopki',
-    moreLayoutsSoon: 'Wkrótce kolejne gotowe układy.',
-    layouts: {
-      standard: 'Standard',
-      topBanner: 'Pasek u góry',
-      labelColumn: 'Etykiety z lewej',
-      centered: 'Wyśrodkowany',
-      compact: 'Kompaktowy',
-      twoColumn: 'Dwie kolumny',
-      minimal: 'Minimalistyczny',
-      bottomBar: 'Pasek na dole',
-    },
-    border: {
-      label: 'Ramka stopki',
-      none: 'Brak',
-      full: 'Pełna',
-      left: 'Lewa',
-      right: 'Prawa',
-      top: 'Góra',
-      bottom: 'Dół',
-    },
-    editorTitle: 'Edytor stopki HTML',
-    panels: {
-      identity: 'Dane',
-      buttons: 'Przyciski',
-      social: 'Media społecznościowe',
-      appearance: 'Wygląd',
-      textStyle: 'Styl tekstu',
-      spacing: 'Odstępy',
-      legal: 'Klauzula / RODO',
-    },
-    identity: {
-      title: 'Dane w stopce',
-      topLine: 'Linia nad imieniem',
-      topLinePlaceholder: 'Np. nazwa firmy lub claim',
-      avatar: 'Avatar / logo (URL obrazu)',
-      avatarPlaceholder: 'https://adrestwojejdomeny.pl/avatar.webp',
-      avatarHelper: 'Najlepiej kwadratowy obraz min. 120x120 px, z publicznym adresem URL.',
-      avatarShape: 'Kształt avatara',
-      avatarShapeCircle: 'Okrągły',
-      avatarShapeRounded: 'Zaokrąglony',
-      avatarShapeSquare: 'Kwadrat',
-      avatarSize: 'Rozmiar avatara',
-      avatarSizeSmall: 'Mały (40 px)',
-      avatarSizeMedium: 'Średni (56 px)',
-      avatarSizeLarge: 'Duży (72 px)',
-      fullName: 'Imię i nazwisko *',
-      fullNamePlaceholder: 'Jan Kowalski',
-      nameTag: 'Tag przy imieniu',
-      nameTagPlaceholder: 'Np. On/On • Art Director',
-      jobTitle: 'Stanowisko',
-      jobTitlePlaceholder: 'Web Developer',
-      company: 'Nazwa firmy',
-      companyPlaceholder: 'Twoja firma / marka',
-      extraLine: 'Dodatkowa linia (krótki opis)',
-      extraLinePlaceholder: 'Np. projektuję szybkie i funkcjonalne strony WWW.',
-      email: 'E-mail *',
-      emailPlaceholder: 'jan.kowalski@example.com',
-      phone: 'Telefon',
-      phonePlaceholder: '+48 600 000 000',
-      website: 'Strona internetowa',
-      websitePlaceholder: 'https://www.twojastrona.pl',
-      address: 'Adres (opcjonalny)',
-      addressPlaceholder: 'ul. Dobra 3, 30-000 Kraków',
-      formalLine: 'Dane formalne (np. NIP, numer licencji)',
-      formalLinePlaceholder: 'Np. NIP: 0000000000 • REGON: 000000000',
-    },
-    buttons: {
-      title: 'Przyciski CTA',
-      label: 'Tekst przycisku',
-      labelPlaceholder: 'Umów bezpłatną konsultację',
-      url: 'Link CTA',
-      urlPlaceholder: 'https://kalendarz.pl/twoje-spotkania',
-      helper: 'Jeśli pole tekstu lub linku pozostanie puste, przycisk nie pojawi się w stopce.',
-      cta1Title: 'Przycisk główny',
-      cta2Title: 'Przycisk dodatkowy',
-      cta2Label: 'Tekst drugiego przycisku',
-      cta2LabelPlaceholder: 'Pobierz katalog',
-      cta2Url: 'Link drugiego przycisku',
-      cta2UrlPlaceholder: 'https://twojadomena.pl/katalog.pdf',
-      ctaRadius: 'Zaokrąglenie przycisków',
-      ctaRadiusNone: 'Brak',
-      ctaRadiusSmall: 'Lekkie',
-      ctaRadiusFull: 'Pełne',
-    },
-    social: {
-      title: 'Media społecznościowe',
-      helper: 'Linki są opcjonalne - w stopce pojawią się tylko te serwisy, które mają uzupełniony adres URL.',
-      showIcons: 'Pokaż ikony obok nazw serwisów',
-      iconSize: 'Rozmiar ikon',
-      iconSizeSmall: 'Małe',
-      iconSizeMedium: 'Średnie',
-      iconSizeLarge: 'Duże',
-      iconColor: 'Kolor ikon',
-      iconColorPlatform: 'Kolory platform',
-      iconColorAccent: 'Kolor akcentu',
-      iconColorText: 'Kolor tekstu',
-    },
-    appearance: {
-      themeTitle: 'Motyw kolorystyczny',
-      accentColor: 'Kolor akcentu',
-      textColor: 'Kolor tekstu',
-      backgroundColor: 'Kolor tła',
-      fontFamily: 'Czcionka',
-      fontSize: 'Rozmiar tekstu',
-      fontSizeSmall: 'Mały',
-      fontSizeNormal: 'Standard',
-      fontSizeLarge: 'Większy',
-      padding: 'Margines wewnętrzny stopki',
-    },
-    legal: {
-      title: 'Klauzula prawna / RODO',
-      placeholder: 'Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość.',
-      showDivider: 'Pokaż linię oddzielającą dane od klauzuli',
-      dividerStyle: 'Styl linii',
-      dividerStyleSolid: 'Ciągła',
-      dividerStyleDashed: 'Kreskowana',
-      dividerStyleDotted: 'Kropkowana',
-      dividerWidth: 'Grubość linii',
-      dividerColor: 'Kolor linii',
-      dividerColorDefault: 'Domyślny',
-    },
-    spacing: {
-      title: 'Odstępy między elementami',
-      helper: 'Dostosuj odstępy między poszczególnymi elementami stopki. Widoczne są tylko opcje dla elementów aktualnie obecnych w stopce.',
-      padding: 'Margines wewnętrzny stopki',
-      afterName: 'Przed stanowiskiem',
-      afterTitle: 'Przed dodatkową linią',
-      afterExtra: 'Przed danymi kontaktowymi',
-      afterContact: 'Przed mediami społ.',
-      afterSocials: 'Przed przyciskiem CTA',
-      afterCta: 'Przed linią oddzielającą',
-      beforeLegal: 'Przed klauzulą',
-    },
-    textStyle: {
-      title: 'Styl tekstu',
-      helper: 'Dostosuj kolor i rozmiar każdego elementu tekstowego. Widoczne są tylko opcje dla elementów obecnych w stopce.',
-      customColors: 'Własne kolory',
-      addColor: 'Nowy kolor',
-      saveColor: 'Zapisz',
-      name: 'Imię i nazwisko',
-      jobTitle: 'Stanowisko',
-      company: 'Firma',
-      contact: 'Dane kontaktowe',
-      socials: 'Media społecznościowe',
-      legal: 'Klauzula prawna',
-      color: 'Kolor',
-      size: 'Rozmiar',
-    },
-    preview: {
-      title: 'Podgląd stopki mailowej',
-      helper: 'Podgląd techniczny - zgodny z Gmail, Outlook i większością klientów pocztowych.',
-      copySuccess: 'Skopiowano - wklej w Gmailu',
-      copyError: 'Błąd kopiowania',
-      copyButton: 'Kopiuj stopkę (Gmail / Outlook)',
-      copyRawButton: 'Kopiuj kod HTML',
-      copyRawSuccess: 'Kod HTML skopiowany',
-      downloadButton: 'Pobierz jako HTML',
-      requiredFields: 'Aby skopiować stopkę, uzupełnij przynajmniej imię i nazwisko oraz e-mail.',
-      resetButton: 'Resetuj wygląd',
-      resetModalTitle: 'Zresetować ustawienia?',
-      resetModalDescription: 'Wszystkie dane i ustawienia stopki zostaną przywrócone do wartości domyślnych. Tej operacji nie można cofnąć.',
-      resetConfirm: 'Tak',
-      resetCancel: 'Anuluj',
-      bgLight: 'Jasne',
-      bgDark: 'Ciemne',
-      bgChecker: 'Szachownica',
-      viewSourceButton: 'Pokaż kod HTML',
-      viewSourceTitle: 'Kod źródłowy HTML stopki',
-      viewSourceCopy: 'Kopiuj kod',
-      viewSourceCopied: 'Skopiowano',
-      viewSourceClose: 'Zamknij',
-      exportConfig: 'Eksportuj ustawienia',
-      importConfig: 'Importuj ustawienia',
-    },
-    labels: {
-      tel: 'Tel.',
-      email: 'E-mail',
-      website: 'Strona',
-      address: 'Adres',
-    },
-    themes: {
-      dark: 'Ciemny',
-      blue: 'Niebieski',
-      purple: 'Fioletowy',
-      green: 'Zielony',
-      gray: 'Szary',
-    },
-  },
-  en: {
-    layoutLabel: 'Footer layout',
-    moreLayoutsSoon: 'More layouts coming soon.',
-    layouts: {
-      standard: 'Standard',
-      topBanner: 'Top banner',
-      labelColumn: 'Labels on the left',
-      centered: 'Centered',
-      compact: 'Compact',
-      twoColumn: 'Two columns',
-      minimal: 'Minimalist',
-      bottomBar: 'Bottom bar',
-    },
-    border: {
-      label: 'Footer border',
-      none: 'None',
-      full: 'Full',
-      left: 'Left',
-      right: 'Right',
-      top: 'Top',
-      bottom: 'Bottom',
-    },
-    editorTitle: 'HTML footer editor',
-    panels: {
-      identity: 'Data',
-      buttons: 'Buttons',
-      social: 'Social media',
-      appearance: 'Appearance',
-      textStyle: 'Text style',
-      spacing: 'Spacing',
-      legal: 'Disclaimer / GDPR',
-    },
-    identity: {
-      title: 'Footer data',
-      topLine: 'Line above name',
-      topLinePlaceholder: 'E.g. company name or tagline',
-      avatar: 'Avatar / logo (image URL)',
-      avatarPlaceholder: 'https://yourdomain.com/avatar.webp',
-      avatarHelper: 'Best: a square image min. 120x120 px, with a public URL.',
-      avatarShape: 'Avatar shape',
-      avatarShapeCircle: 'Circle',
-      avatarShapeRounded: 'Rounded',
-      avatarShapeSquare: 'Square',
-      avatarSize: 'Avatar size',
-      avatarSizeSmall: 'Small (40 px)',
-      avatarSizeMedium: 'Medium (56 px)',
-      avatarSizeLarge: 'Large (72 px)',
-      fullName: 'Full name *',
-      fullNamePlaceholder: 'John Smith',
-      nameTag: 'Name tag',
-      nameTagPlaceholder: 'E.g. He/Him \u2022 Art Director',
-      jobTitle: 'Job title',
-      jobTitlePlaceholder: 'Web Developer',
-      company: 'Company name',
-      companyPlaceholder: 'Your company / brand',
-      extraLine: 'Extra line (short description)',
-      extraLinePlaceholder: 'E.g. I build fast and functional websites.',
-      email: 'Email *',
-      emailPlaceholder: 'john.smith@example.com',
-      phone: 'Phone',
-      phonePlaceholder: '+1 600 000 000',
-      website: 'Website',
-      websitePlaceholder: 'https://www.yoursite.com',
-      address: 'Address (optional)',
-      addressPlaceholder: '123 Main St, New York, NY 10001',
-      formalLine: 'Formal details (e.g. tax ID, license number)',
-      formalLinePlaceholder: 'E.g. Tax ID: 000000000',
-    },
-    buttons: {
-      title: 'CTA buttons',
-      label: 'Button text',
-      labelPlaceholder: 'Book a free consultation',
-      url: 'CTA link',
-      urlPlaceholder: 'https://calendar.com/your-meetings',
-      helper: 'If the text or link field is empty, the button will not appear in the footer.',
-      cta1Title: 'Primary button',
-      cta2Title: 'Secondary button',
-      cta2Label: 'Second button text',
-      cta2LabelPlaceholder: 'Download catalog',
-      cta2Url: 'Second button link',
-      cta2UrlPlaceholder: 'https://yourdomain.com/catalog.pdf',
-      ctaRadius: 'Button rounding',
-      ctaRadiusNone: 'None',
-      ctaRadiusSmall: 'Slight',
-      ctaRadiusFull: 'Full',
-    },
-    social: {
-      title: 'Social media',
-      helper: 'Links are optional \u2014 only services with a filled URL will appear in the footer.',
-      showIcons: 'Show icons next to service names',
-      iconSize: 'Icon size',
-      iconSizeSmall: 'Small',
-      iconSizeMedium: 'Medium',
-      iconSizeLarge: 'Large',
-      iconColor: 'Icon color',
-      iconColorPlatform: 'Platform colors',
-      iconColorAccent: 'Accent color',
-      iconColorText: 'Text color',
-    },
-    appearance: {
-      themeTitle: 'Color theme',
-      accentColor: 'Accent color',
-      textColor: 'Text color',
-      backgroundColor: 'Background color',
-      fontFamily: 'Font',
-      fontSize: 'Font size',
-      fontSizeSmall: 'Small',
-      fontSizeNormal: 'Standard',
-      fontSizeLarge: 'Larger',
-      padding: 'Footer inner padding',
-    },
-    legal: {
-      title: 'Legal disclaimer / GDPR',
-      placeholder: 'This message may contain confidential information. If you are not the intended recipient, please notify the sender and delete this message.',
-      showDivider: 'Show divider line between data and disclaimer',
-      dividerStyle: 'Line style',
-      dividerStyleSolid: 'Solid',
-      dividerStyleDashed: 'Dashed',
-      dividerStyleDotted: 'Dotted',
-      dividerWidth: 'Line width',
-      dividerColor: 'Line color',
-      dividerColorDefault: 'Default',
-    },
-    spacing: {
-      title: 'Spacing between elements',
-      helper: 'Adjust spacing between individual footer elements. Only options for currently present elements are visible.',
-      padding: 'Footer inner padding',
-      afterName: 'Before job title',
-      afterTitle: 'Before extra line',
-      afterExtra: 'Before contact details',
-      afterContact: 'Before social media',
-      afterSocials: 'Before CTA button',
-      afterCta: 'Before divider line',
-      beforeLegal: 'Before disclaimer',
-    },
-    textStyle: {
-      title: 'Text style',
-      helper: 'Adjust color and size of each text element. Only options for elements present in the footer are visible.',
-      customColors: 'Custom colors',
-      addColor: 'New color',
-      saveColor: 'Save',
-      name: 'Full name',
-      jobTitle: 'Job title',
-      company: 'Company',
-      contact: 'Contact details',
-      socials: 'Social media',
-      legal: 'Legal disclaimer',
-      color: 'Color',
-      size: 'Size',
-    },
-    preview: {
-      title: 'Email footer preview',
-      helper: 'Technical preview \u2014 compatible with Gmail, Outlook, and most email clients.',
-      copySuccess: 'Copied \u2014 paste in Gmail',
-      copyError: 'Copy error',
-      copyButton: 'Copy footer (Gmail / Outlook)',
-      copyRawButton: 'Copy HTML code',
-      copyRawSuccess: 'HTML code copied',
-      downloadButton: 'Download as HTML',
-      requiredFields: 'To copy the footer, fill in at least the full name and email.',
-      resetButton: 'Reset appearance',
-      resetModalTitle: 'Reset settings?',
-      resetModalDescription: 'All footer data and settings will be restored to defaults. This action cannot be undone.',
-      resetConfirm: 'Yes',
-      resetCancel: 'Cancel',
-      bgLight: 'Light',
-      bgDark: 'Dark',
-      bgChecker: 'Checkerboard',
-      viewSourceButton: 'View HTML code',
-      viewSourceTitle: 'Footer HTML source code',
-      viewSourceCopy: 'Copy code',
-      viewSourceCopied: 'Copied',
-      viewSourceClose: 'Close',
-      exportConfig: 'Export settings',
-      importConfig: 'Import settings',
-    },
-    labels: {
-      tel: 'Tel.',
-      email: 'Email',
-      website: 'Website',
-      address: 'Address',
-    },
-    themes: {
-      dark: 'Dark',
-      blue: 'Blue',
-      purple: 'Purple',
-      green: 'Green',
-      gray: 'Gray',
-    },
-  },
-} as const;
-
-function getSignatureLabels(locale: 'pl' | 'en') {
-  const t = ui[locale];
-  return {
-    tel: t.labels.tel,
-    email: t.labels.email,
-    website: t.labels.website,
-  };
-}
-
-function getDefaultSignature(locale: 'pl' | 'en'): SignatureConfig {
-  if (locale === 'en') {
-    return {
-      fullName: 'John Smith',
-      jobTitle: 'Web Developer',
-      company: 'Arteon Agency',
-      topLine: '',
-      nameTag: '',
-      email: 'john.smith@example.com',
-      phone: '+1 600 000 000',
-      website: 'https://www.yoursite.com',
-      address: '123 Main St, New York, NY 10001',
-      extraLine: 'I build fast and functional websites.',
-      ctaLabel: 'Book a free consultation',
-      ctaUrl: 'https://www.yoursite.com',
-      cta2Label: '',
-      cta2Url: '',
-      socials: {
-        linkedin: 'https://www.linkedin.com/in/johnsmith',
-        instagram: '',
-        facebook: '',
-        tiktok: '',
-        youtube: '',
-        x: '',
-        github: '',
-        dribbble: '',
-        behance: '',
-        whatsapp: '',
-        telegram: '',
-        pinterest: '',
-      },
-      legalNote: 'This message may contain confidential information. If you are not the intended recipient, please notify the sender and delete this message.',
-      formalLine: '',
-      avatarUrl: '',
-    };
-  }
-  return {
-    fullName: 'Jan Kowalski',
-    jobTitle: 'Web Developer',
-    company: 'Arteon Agency',
-    topLine: '',
-    nameTag: '',
-    email: 'jan.kowalski@example.com',
-    phone: '+48 000 000 000',
-    website: 'https://www.twojadomena.pl',
-    address: 'ul. Dobra 3, 30-000 Kraków',
-    extraLine: 'Projektuję szybkie i funkcjonalne strony WWW.',
-    ctaLabel: 'Umów bezpłatną konsultację',
-    ctaUrl: 'https://www.twojadomena.pl',
-    cta2Label: '',
-    cta2Url: '',
-    socials: {
-      linkedin: 'https://www.linkedin.com/in/jankowalski',
-      instagram: '',
-      facebook: '',
-      tiktok: '',
-      youtube: '',
-      x: '',
-      github: '',
-      dribbble: '',
-      behance: '',
-      whatsapp: '',
-      telegram: '',
-      pinterest: '',
-    },
-    legalNote: 'Ta wiadomość może zawierać informacje poufne. Jeżeli nie jesteś jej adresatem, poinformuj nadawcę i usuń wiadomość.',
-    formalLine: '',
-    avatarUrl: '',
-  };
-}
-
-const SIGNATURE_COLOR_DARK = rgbToHex({ r: 17, g: 24, b: 39 });
-const SIGNATURE_COLOR_WHITE = rgbToHex({ r: 255, g: 255, b: 255 });
-const SIGNATURE_COLOR_BLUE = rgbToHex({ r: 37, g: 99, b: 235 });
-const SIGNATURE_COLOR_PURPLE = rgbToHex({ r: 124, g: 58, b: 237 });
-const SIGNATURE_COLOR_GREEN = rgbToHex({ r: 22, g: 163, b: 74 });
-const SIGNATURE_COLOR_GRAY = rgbToHex({ r: 75, g: 85, b: 99 });
-
-const DEFAULT_STYLE: StyleConfig = {
-  accentColor: SIGNATURE_COLOR_DARK,
-  textColor: SIGNATURE_COLOR_DARK,
-  backgroundColor: SIGNATURE_COLOR_WHITE,
-  fontFamily: 'Arial, sans-serif',
-  fontSize: 'normal',
-  padding: 'medium',
-  ctaRadius: 'full',
-  showDivider: true,
-  border: { left: false, right: false, top: false, bottom: false },
-  socialIcons: { showIcons: false, iconSize: 'medium', colorMode: 'platform' },
-  avatarShape: 'circle',
-  avatarSize: 'medium',
-  dividerStyle: 'solid',
-  dividerWidth: 1,
-  dividerColor: '',
-};
-
-const DEFAULT_SPACING: SpacingConfig = {
-  afterName: 4,
-  afterTitle: 4,
-  afterExtra: 6,
-  afterContact: 4,
-  afterSocials: 8,
-  afterCta: 10,
-  beforeLegal: 12,
-};
-
-const DEFAULT_TEXT_STYLE: TextStyleConfig = {
-  name: { color: null, sizeOffset: 0 },
-  jobTitle: { color: null, sizeOffset: 0 },
-  company: { color: null, sizeOffset: 0 },
-  contact: { color: null, sizeOffset: 0 },
-  socials: { color: null, sizeOffset: 0 },
-  legal: { color: null, sizeOffset: 0 },
-  customColors: [],
-};
-
-const LAYOUT_SPACING_MAP: Record<LayoutType, SpacingKey[]> = {
-  standard: ['afterName', 'afterTitle', 'afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
-  'top-banner': ['afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
-  'label-column': ['afterName', 'afterTitle', 'afterExtra', 'afterSocials', 'afterCta', 'beforeLegal'],
-  centered: ['afterName', 'afterTitle', 'afterExtra', 'afterContact', 'afterSocials', 'afterCta', 'beforeLegal'],
-  compact: ['afterSocials', 'beforeLegal'],
-  'two-column': ['afterName', 'afterTitle', 'afterExtra', 'afterSocials', 'afterCta', 'beforeLegal'],
-  minimal: ['afterName', 'afterTitle'],
-  'bottom-bar': ['afterName', 'afterTitle', 'afterExtra', 'afterContact', 'afterSocials', 'beforeLegal'],
-};
-
-const FONT_OPTIONS = [
-  { value: 'Arial, sans-serif', label: 'Arial' },
-  { value: 'Verdana, sans-serif', label: 'Verdana' },
-  { value: 'Tahoma, sans-serif', label: 'Tahoma' },
-  { value: '"Trebuchet MS", sans-serif', label: 'Trebuchet MS' },
-  { value: 'Georgia, serif', label: 'Georgia' },
-];
-
-function getThemePresets(locale: 'pl' | 'en'): ThemePreset[] {
-  const t = ui[locale];
-  return [
-    { id: 'classic-dark', name: t.themes.dark, accentColor: SIGNATURE_COLOR_DARK, textColor: SIGNATURE_COLOR_DARK },
-    { id: 'modern-blue', name: t.themes.blue, accentColor: SIGNATURE_COLOR_BLUE, textColor: SIGNATURE_COLOR_DARK },
-    { id: 'creative-purple', name: t.themes.purple, accentColor: SIGNATURE_COLOR_PURPLE, textColor: SIGNATURE_COLOR_DARK },
-    { id: 'eco-green', name: t.themes.green, accentColor: SIGNATURE_COLOR_GREEN, textColor: SIGNATURE_COLOR_DARK },
-    { id: 'minimal', name: t.themes.gray, accentColor: SIGNATURE_COLOR_GRAY, textColor: SIGNATURE_COLOR_DARK },
-  ];
-}
 
 export default function EmailSignatureGenerator() {
   const locale = useLocale();
@@ -627,7 +97,7 @@ export default function EmailSignatureGenerator() {
       // Ignore localStorage errors
     }
     setIsHydrated(true);
-  }, []);
+  }, [locale]);
 
   useEffect(() => {
     if (!isHydrated) return;
@@ -638,7 +108,7 @@ export default function EmailSignatureGenerator() {
     } catch {
       // Ignore localStorage errors
     }
-  }, [config, styleConfig, spacingConfig, textStyleConfig, layout, themeId, isHydrated]);
+  }, [config, styleConfig, spacingConfig, textStyleConfig, layout, themeId, isHydrated, locale]);
 
   const hasRequired = config.fullName.trim().length > 0 && config.email.trim().length > 0;
 
@@ -789,15 +259,10 @@ export default function EmailSignatureGenerator() {
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <RiLayout3Line className="text-primary text-base" />
-            <span className="text-[14px]! font-medium">{t.layoutLabel}</span>
+            <span className="tool-value">{t.layoutLabel}</span>
             <div className="flex flex-wrap gap-1">
               {(['standard', 'top-banner', 'label-column', 'centered', 'compact', 'two-column', 'minimal', 'bottom-bar'] as LayoutType[]).map((lt) => (
-                <button
-                  key={lt}
-                  type="button"
-                  onClick={() => setLayout(lt)}
-                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${layout === lt ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
-                >
+                <button key={lt} type="button" onClick={() => setLayout(lt)} className={`tool-button ${layout === lt ? 'tool-button-active' : 'tool-button-inactive'}`}>
                   {lt === 'standard' && t.layouts.standard}
                   {lt === 'top-banner' && t.layouts.topBanner}
                   {lt === 'label-column' && t.layouts.labelColumn}
@@ -811,12 +276,12 @@ export default function EmailSignatureGenerator() {
             </div>
           </div>
         </div>
-        <p className="text-light text-xs!">{t.moreLayoutsSoon}</p>
+        <p className="tool-meta">{t.moreLayoutsSoon}</p>
       </section>
 
       <section className="tool-section flex flex-wrap items-center gap-3 p-4!">
         <div className="flex items-center gap-2">
-          <span className="text-[14px]! font-medium">{t.editorTitle}</span>
+          <span className="tool-value">{t.editorTitle}</span>
         </div>
         <div className="flex flex-wrap gap-2">
           <ToolButton id="identity" active={activePanel} onClick={(id) => setActivePanel(id as ActivePanel)} icon={<RiUser3Line className="text-base" />} label={t.panels.identity} />
@@ -834,32 +299,32 @@ export default function EmailSignatureGenerator() {
           <div className="space-y-4 text-sm!">
             {activePanel === 'identity' && (
               <div className="space-y-3">
-                <span className="text-[14px]! font-medium">{t.identity.title}</span>
+                <span className="tool-value">{t.identity.title}</span>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-medium uppercase">{t.identity.topLine}</span>
+                    <span className="tool-label">{t.identity.topLine}</span>
                   </label>
                   <input type="text" value={config.topLine} onChange={(e) => handleTextChange('topLine', e.target.value)} className="tool-input" placeholder={t.identity.topLinePlaceholder} />
                 </div>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-medium uppercase">{t.identity.avatar}</span>
+                    <span className="tool-label">{t.identity.avatar}</span>
                   </label>
                   <input type="url" value={config.avatarUrl} onChange={(e) => handleTextChange('avatarUrl', e.target.value)} className="tool-input" placeholder={t.identity.avatarPlaceholder} />
-                  <p className="text-light mt-1 text-xs!">{t.identity.avatarHelper}</p>
+                  <p className="tool-meta mt-1">{t.identity.avatarHelper}</p>
                   {config.avatarUrl.trim() && (
                     <div className="mt-3 space-y-3">
                       <div>
-                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.identity.avatarShape}</p>
+                        <p className="tool-label mb-1">{t.identity.avatarShape}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['circle', 'rounded', 'square'] as const).map((shape) => (
                             <button
                               key={shape}
                               type="button"
                               onClick={() => handleStyleChange('avatarShape', shape)}
-                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.avatarShape === shape ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                              className={`tool-button ${styleConfig.avatarShape === shape ? 'tool-button-active' : 'tool-button-inactive'}`}
                             >
                               {shape === 'circle' && t.identity.avatarShapeCircle}
                               {shape === 'rounded' && t.identity.avatarShapeRounded}
@@ -869,14 +334,14 @@ export default function EmailSignatureGenerator() {
                         </div>
                       </div>
                       <div>
-                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.identity.avatarSize}</p>
+                        <p className="tool-label mb-1">{t.identity.avatarSize}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['small', 'medium', 'large'] as const).map((size) => (
                             <button
                               key={size}
                               type="button"
                               onClick={() => handleStyleChange('avatarSize', size)}
-                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.avatarSize === size ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                              className={`tool-button ${styleConfig.avatarSize === size ? 'tool-button-active' : 'tool-button-inactive'}`}
                             >
                               {size === 'small' && t.identity.avatarSizeSmall}
                               {size === 'medium' && t.identity.avatarSizeMedium}
@@ -892,13 +357,13 @@ export default function EmailSignatureGenerator() {
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">{t.identity.fullName}</span>
+                      <span className="tool-label">{t.identity.fullName}</span>
                     </label>
                     <input type="text" value={config.fullName} onChange={(e) => handleTextChange('fullName', e.target.value)} className="tool-input" placeholder={t.identity.fullNamePlaceholder} />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">{t.identity.nameTag}</span>
+                      <span className="tool-label">{t.identity.nameTag}</span>
                     </label>
                     <input type="text" value={config.nameTag} onChange={(e) => handleTextChange('nameTag', e.target.value)} className="tool-input" placeholder={t.identity.nameTagPlaceholder} />
                   </div>
@@ -906,18 +371,18 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
-                    <label className="text-light mb-1 block text-xs! font-medium uppercase">{t.identity.jobTitle}</label>
+                    <label className="tool-label mb-1 block">{t.identity.jobTitle}</label>
                     <input type="text" value={config.jobTitle} onChange={(e) => handleTextChange('jobTitle', e.target.value)} className="tool-input" placeholder={t.identity.jobTitlePlaceholder} />
                   </div>
                   <div>
-                    <label className="text-light mb-1 block text-xs! font-medium uppercase">{t.identity.company}</label>
+                    <label className="tool-label mb-1 block">{t.identity.company}</label>
                     <input type="text" value={config.company} onChange={(e) => handleTextChange('company', e.target.value)} className="tool-input" placeholder={t.identity.companyPlaceholder} />
                   </div>
                 </div>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-medium uppercase">{t.identity.extraLine}</span>
+                    <span className="tool-label">{t.identity.extraLine}</span>
                   </label>
                   <input type="text" value={config.extraLine} onChange={(e) => handleTextChange('extraLine', e.target.value)} className="tool-input" placeholder={t.identity.extraLinePlaceholder} />
                 </div>
@@ -925,13 +390,13 @@ export default function EmailSignatureGenerator() {
                 <div className="grid gap-3 md:grid-cols-2">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">{t.identity.email}</span>
+                      <span className="tool-label">{t.identity.email}</span>
                     </label>
                     <input type="email" value={config.email} onChange={(e) => handleTextChange('email', e.target.value)} className="tool-input" placeholder={t.identity.emailPlaceholder} />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">{t.identity.phone}</span>
+                      <span className="tool-label">{t.identity.phone}</span>
                     </label>
                     <input type="tel" value={config.phone} onChange={(e) => handleTextChange('phone', e.target.value)} className="tool-input" placeholder={t.identity.phonePlaceholder} />
                   </div>
@@ -939,21 +404,21 @@ export default function EmailSignatureGenerator() {
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-medium uppercase">{t.identity.website}</span>
+                    <span className="tool-label">{t.identity.website}</span>
                   </label>
                   <input type="url" value={config.website} onChange={(e) => handleTextChange('website', e.target.value)} className="tool-input" placeholder={t.identity.websitePlaceholder} />
                 </div>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-medium uppercase">{t.identity.address}</span>
+                    <span className="tool-label">{t.identity.address}</span>
                   </label>
                   <textarea value={config.address} onChange={(e) => handleTextChange('address', e.target.value)} className="tool-input" rows={2} placeholder={t.identity.addressPlaceholder} />
                 </div>
 
                 <div>
                   <label className="mb-1 block">
-                    <span className="text-light text-xs! font-medium uppercase">{t.identity.formalLine}</span>
+                    <span className="tool-label">{t.identity.formalLine}</span>
                   </label>
                   <textarea value={config.formalLine} onChange={(e) => handleTextChange('formalLine', e.target.value)} className="tool-input" rows={2} placeholder={t.identity.formalLinePlaceholder} />
                 </div>
@@ -962,39 +427,39 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'buttons' && (
               <div className="space-y-4">
-                <span className="text-[14px]! font-medium">{t.buttons.title}</span>
+                <span className="tool-value">{t.buttons.title}</span>
 
                 <div>
-                  <p className="text-light mb-2 text-xs! font-medium uppercase">{t.buttons.cta1Title}</p>
+                  <p className="tool-label mb-2">{t.buttons.cta1Title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.label}</span>
+                        <span className="tool-label">{t.buttons.label}</span>
                       </label>
                       <input type="text" value={config.ctaLabel} onChange={(e) => handleTextChange('ctaLabel', e.target.value)} className="tool-input" placeholder={t.buttons.labelPlaceholder} />
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.url}</span>
+                        <span className="tool-label">{t.buttons.url}</span>
                       </label>
                       <input type="url" value={config.ctaUrl} onChange={(e) => handleTextChange('ctaUrl', e.target.value)} className="tool-input" placeholder={t.buttons.urlPlaceholder} />
                     </div>
                   </div>
-                  <p className="text-light mt-1 text-xs!">{t.buttons.helper}</p>
+                  <p className="tool-meta mt-1">{t.buttons.helper}</p>
                 </div>
 
                 <div>
-                  <p className="text-light mb-2 text-xs! font-medium uppercase">{t.buttons.cta2Title}</p>
+                  <p className="tool-label mb-2">{t.buttons.cta2Title}</p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.cta2Label}</span>
+                        <span className="tool-label">{t.buttons.cta2Label}</span>
                       </label>
                       <input type="text" value={config.cta2Label} onChange={(e) => handleTextChange('cta2Label', e.target.value)} className="tool-input" placeholder={t.buttons.cta2LabelPlaceholder} />
                     </div>
                     <div>
                       <label className="mb-1 block">
-                        <span className="text-light text-xs! font-medium uppercase">{t.buttons.cta2Url}</span>
+                        <span className="tool-label">{t.buttons.cta2Url}</span>
                       </label>
                       <input type="url" value={config.cta2Url} onChange={(e) => handleTextChange('cta2Url', e.target.value)} className="tool-input" placeholder={t.buttons.cta2UrlPlaceholder} />
                     </div>
@@ -1002,14 +467,14 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-medium uppercase">{t.buttons.ctaRadius}</p>
+                  <p className="tool-label mb-1">{t.buttons.ctaRadius}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['none', 'small', 'full'] as CtaRadiusOption[]).map((option) => (
                       <button
                         key={option}
                         type="button"
                         onClick={() => handleStyleChange('ctaRadius', option)}
-                        className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.ctaRadius === option ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                        className={`tool-button ${styleConfig.ctaRadius === option ? 'tool-button-active' : 'tool-button-inactive'}`}
                       >
                         {option === 'none' && t.buttons.ctaRadiusNone}
                         {option === 'small' && t.buttons.ctaRadiusSmall}
@@ -1023,11 +488,11 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'social' && (
               <div className="space-y-3">
-                <span className="text-[14px]! font-medium">{t.social.title}</span>
+                <span className="tool-value">{t.social.title}</span>
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">LinkedIn</span>
+                      <span className="tool-label">LinkedIn</span>
                     </label>
                     <input
                       type="url"
@@ -1039,7 +504,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">Instagram</span>
+                      <span className="tool-label">Instagram</span>
                     </label>
                     <input
                       type="url"
@@ -1053,7 +518,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">Facebook</span>
+                      <span className="tool-label">Facebook</span>
                     </label>
                     <input
                       type="url"
@@ -1065,7 +530,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">TikTok</span>
+                      <span className="tool-label">TikTok</span>
                     </label>
                     <input type="url" value={config.socials.tiktok} onChange={(e) => handleSocialChange('tiktok', e.target.value)} className="tool-input" placeholder="https://www.tiktok.com/@..." />
                   </div>
@@ -1073,7 +538,7 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">YouTube</span>
+                      <span className="tool-label">YouTube</span>
                     </label>
                     <input
                       type="url"
@@ -1085,7 +550,7 @@ export default function EmailSignatureGenerator() {
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">X (Twitter)</span>
+                      <span className="tool-label">X (Twitter)</span>
                     </label>
                     <input type="url" value={config.socials.x} onChange={(e) => handleSocialChange('x', e.target.value)} className="tool-input" placeholder="https://x.com/..." />
                   </div>
@@ -1093,13 +558,13 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">GitHub</span>
+                      <span className="tool-label">GitHub</span>
                     </label>
                     <input type="url" value={config.socials.github} onChange={(e) => handleSocialChange('github', e.target.value)} className="tool-input" placeholder="https://github.com/..." />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">Dribbble</span>
+                      <span className="tool-label">Dribbble</span>
                     </label>
                     <input type="url" value={config.socials.dribbble} onChange={(e) => handleSocialChange('dribbble', e.target.value)} className="tool-input" placeholder="https://dribbble.com/..." />
                   </div>
@@ -1107,13 +572,13 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">Behance</span>
+                      <span className="tool-label">Behance</span>
                     </label>
                     <input type="url" value={config.socials.behance} onChange={(e) => handleSocialChange('behance', e.target.value)} className="tool-input" placeholder="https://www.behance.net/..." />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">WhatsApp</span>
+                      <span className="tool-label">WhatsApp</span>
                     </label>
                     <input type="url" value={config.socials.whatsapp} onChange={(e) => handleSocialChange('whatsapp', e.target.value)} className="tool-input" placeholder="https://wa.me/48..." />
                   </div>
@@ -1121,13 +586,13 @@ export default function EmailSignatureGenerator() {
                 <div className="grid grid-cols-1 gap-3">
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">Telegram</span>
+                      <span className="tool-label">Telegram</span>
                     </label>
                     <input type="url" value={config.socials.telegram} onChange={(e) => handleSocialChange('telegram', e.target.value)} className="tool-input" placeholder="https://t.me/..." />
                   </div>
                   <div>
                     <label className="mb-1 block">
-                      <span className="text-light text-xs! font-medium uppercase">Pinterest</span>
+                      <span className="tool-label">Pinterest</span>
                     </label>
                     <input
                       type="url"
@@ -1149,7 +614,7 @@ export default function EmailSignatureGenerator() {
                       onChange={(e) => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, showIcons: e.target.checked })}
                       className="tool-checkbox"
                     />
-                    <label htmlFor="social-icons-toggle" className="text-[14px]! font-medium">
+                    <label htmlFor="social-icons-toggle" className="tool-value">
                       {t.social.showIcons}
                     </label>
                   </div>
@@ -1157,14 +622,14 @@ export default function EmailSignatureGenerator() {
                   {styleConfig.socialIcons.showIcons && (
                     <>
                       <div>
-                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.social.iconSize}</p>
+                        <p className="tool-label mb-1">{t.social.iconSize}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['small', 'medium', 'large'] as const).map((size) => (
                             <button
                               key={size}
                               type="button"
                               onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, iconSize: size })}
-                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.socialIcons.iconSize === size ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                              className={`tool-button ${styleConfig.socialIcons.iconSize === size ? 'tool-button-active' : 'tool-button-inactive'}`}
                             >
                               {size === 'small' && t.social.iconSizeSmall}
                               {size === 'medium' && t.social.iconSizeMedium}
@@ -1175,14 +640,14 @@ export default function EmailSignatureGenerator() {
                       </div>
 
                       <div>
-                        <p className="text-light mb-1 text-xs! font-medium uppercase">{t.social.iconColor}</p>
+                        <p className="tool-label mb-1">{t.social.iconColor}</p>
                         <div className="flex flex-wrap gap-2">
                           {(['platform', 'accent', 'text'] as const).map((mode) => (
                             <button
                               key={mode}
                               type="button"
                               onClick={() => handleStyleChange('socialIcons', { ...styleConfig.socialIcons, colorMode: mode })}
-                              className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.socialIcons.colorMode === mode ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                              className={`tool-button ${styleConfig.socialIcons.colorMode === mode ? 'tool-button-active' : 'tool-button-inactive'}`}
                             >
                               {mode === 'platform' && t.social.iconColorPlatform}
                               {mode === 'accent' && t.social.iconColorAccent}
@@ -1200,14 +665,14 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'appearance' && (
               <div className="space-y-4">
                 <div>
-                  <span className="mb-2 text-[14px]! font-medium">{t.appearance.themeTitle}</span>
+                  <span className="tool-value mb-2">{t.appearance.themeTitle}</span>
                   <div className="flex flex-wrap gap-2">
                     {themePresets.map((preset) => (
                       <button
                         key={preset.id}
                         type="button"
                         onClick={() => applyTheme(preset.id)}
-                        className={`inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-[14px]! font-medium ${themeId === preset.id ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                        className={`tool-button gap-2 ${themeId === preset.id ? 'tool-button-active' : 'tool-button-inactive'}`}
                       >
                         <span className="flex h-4 w-4 items-center justify-center rounded-full border border-neutral-300">
                           <span className="h-3 w-3 rounded-full" style={{ backgroundColor: preset.accentColor }} />
@@ -1220,19 +685,19 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.accentColor}</p>
+                    <p className="tool-label mb-1">{t.appearance.accentColor}</p>
                     <div className="flex items-center gap-2">
                       <input type="color" value={styleConfig.accentColor} onChange={(e) => handleStyleChange('accentColor', e.target.value)} className="tool-color-picker h-9! w-9!" />
                     </div>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.textColor}</p>
+                    <p className="tool-label mb-1">{t.appearance.textColor}</p>
                     <div className="flex items-center gap-2">
                       <input type="color" value={styleConfig.textColor} onChange={(e) => handleStyleChange('textColor', e.target.value)} className="tool-color-picker h-9! w-9!" />
                     </div>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.backgroundColor}</p>
+                    <p className="tool-label mb-1">{t.appearance.backgroundColor}</p>
                     <div className="flex items-center gap-2">
                       <input type="color" value={styleConfig.backgroundColor} onChange={(e) => handleStyleChange('backgroundColor', e.target.value)} className="tool-color-picker h-9! w-9!" />
                     </div>
@@ -1241,7 +706,7 @@ export default function EmailSignatureGenerator() {
 
                 <div className="grid grid-cols-1 gap-3">
                   <div>
-                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.fontFamily}</p>
+                    <p className="tool-label mb-1">{t.appearance.fontFamily}</p>
                     <select value={styleConfig.fontFamily} onChange={(e) => handleStyleChange('fontFamily', e.target.value)} className="tool-select">
                       {FONT_OPTIONS.map((font) => (
                         <option key={font.value} value={font.value}>
@@ -1251,14 +716,14 @@ export default function EmailSignatureGenerator() {
                     </select>
                   </div>
                   <div>
-                    <p className="text-light mb-1 text-xs! font-medium uppercase">{t.appearance.fontSize}</p>
+                    <p className="tool-label mb-1">{t.appearance.fontSize}</p>
                     <div className="flex flex-wrap gap-2">
                       {(['small', 'normal', 'large'] as FontSizeOption[]).map((size) => (
                         <button
                           key={size}
                           type="button"
                           onClick={() => handleStyleChange('fontSize', size)}
-                          className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.fontSize === size ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                          className={`tool-button ${styleConfig.fontSize === size ? 'tool-button-active' : 'tool-button-inactive'}`}
                         >
                           {size === 'small' && t.appearance.fontSizeSmall}
                           {size === 'normal' && t.appearance.fontSizeNormal}
@@ -1270,7 +735,7 @@ export default function EmailSignatureGenerator() {
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-medium uppercase">{t.border.label}</p>
+                  <p className="tool-label mb-1">{t.border.label}</p>
                   <div className="flex flex-wrap gap-3">
                     {(['left', 'right', 'top', 'bottom'] as (keyof BorderSides)[]).map((side) => (
                       <label key={side} className="flex cursor-pointer items-center gap-1.5">
@@ -1288,7 +753,7 @@ export default function EmailSignatureGenerator() {
                           }}
                           className="tool-checkbox"
                         />
-                        <span className="text-[14px]! font-medium">
+                        <span className="tool-value">
                           {side === 'left' && t.border.left}
                           {side === 'right' && t.border.right}
                           {side === 'top' && t.border.top}
@@ -1301,14 +766,14 @@ export default function EmailSignatureGenerator() {
                     <button
                       type="button"
                       onClick={() => handleStyleChange('border', { left: true, right: true, top: true, bottom: true })}
-                      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.border.left && styleConfig.border.right && styleConfig.border.top && styleConfig.border.bottom ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                      className={`tool-button ${styleConfig.border.left && styleConfig.border.right && styleConfig.border.top && styleConfig.border.bottom ? 'tool-button-active' : 'tool-button-inactive'}`}
                     >
                       {t.border.full}
                     </button>
                     <button
                       type="button"
                       onClick={() => handleStyleChange('border', { left: false, right: false, top: false, bottom: false })}
-                      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${!styleConfig.border.left && !styleConfig.border.right && !styleConfig.border.top && !styleConfig.border.bottom ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                      className={`tool-button ${!styleConfig.border.left && !styleConfig.border.right && !styleConfig.border.top && !styleConfig.border.bottom ? 'tool-button-active' : 'tool-button-inactive'}`}
                     >
                       {t.border.none}
                     </button>
@@ -1320,22 +785,18 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'textStyle' && (
               <div className="space-y-4">
                 <div>
-                  <span className="mb-2 text-[14px]! font-medium">{t.textStyle.title}</span>
-                  <p className="text-light mb-3 text-xs!">{t.textStyle.helper}</p>
+                  <span className="tool-value mb-2">{t.textStyle.title}</span>
+                  <p className="tool-meta mb-3">{t.textStyle.helper}</p>
                 </div>
 
                 <div>
-                  <p className="text-light mb-2 text-xs! font-medium uppercase">{t.textStyle.addColor}</p>
+                  <p className="tool-label mb-2">{t.textStyle.addColor}</p>
                   <div className="flex items-center gap-2">
                     <div className="relative">
                       <input type="color" value={pendingCustomColor} onChange={(e) => setPendingCustomColor(e.target.value)} className="absolute inset-0 h-full w-full cursor-pointer opacity-0" />
                       <div className="h-8 w-8 cursor-pointer rounded border border-neutral-300" style={{ backgroundColor: pendingCustomColor }} />
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => addCustomColor(pendingCustomColor)}
-                      className="inline-flex items-center rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]! font-medium hover:bg-neutral-100"
-                    >
+                    <button type="button" onClick={() => addCustomColor(pendingCustomColor)} className="tool-button tool-button-inactive">
                       {t.textStyle.saveColor}
                     </button>
                   </div>
@@ -1343,7 +804,7 @@ export default function EmailSignatureGenerator() {
 
                 {textStyleConfig.customColors.length > 0 && (
                   <div>
-                    <p className="text-light mb-2 text-xs! font-medium uppercase">{t.textStyle.customColors}</p>
+                    <p className="tool-label mb-2">{t.textStyle.customColors}</p>
                     <div className="flex flex-wrap gap-2">
                       {textStyleConfig.customColors.map((color) => (
                         <div key={color} className="group relative">
@@ -1457,19 +918,19 @@ export default function EmailSignatureGenerator() {
             {activePanel === 'spacing' && (
               <div className="space-y-4">
                 <div>
-                  <span className="mb-2 text-[14px]! font-medium">{t.spacing.title}</span>
-                  <p className="text-light mb-3 text-xs!">{t.spacing.helper}</p>
+                  <span className="tool-value mb-2">{t.spacing.title}</span>
+                  <p className="tool-meta mb-3">{t.spacing.helper}</p>
                 </div>
 
                 <div>
-                  <p className="text-light mb-1 text-xs! font-medium uppercase">{t.spacing.padding}</p>
+                  <p className="tool-label mb-1">{t.spacing.padding}</p>
                   <div className="flex flex-wrap gap-2">
                     {(['small', 'medium', 'large'] as MarginOption[]).map((option) => (
                       <button
                         key={option}
                         type="button"
                         onClick={() => handleStyleChange('padding', option)}
-                        className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.padding === option ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                        className={`tool-button ${styleConfig.padding === option ? 'tool-button-active' : 'tool-button-inactive'}`}
                       >
                         {option === 'small' && '8 px'}
                         {option === 'medium' && '16 px'}
@@ -1481,7 +942,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.fullName.trim() && LAYOUT_SPACING_MAP[layout].includes('afterName') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-[14px]! font-medium">{t.spacing.afterName}</span>
+                    <span className="tool-value">{t.spacing.afterName}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterName', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
                         <RiSubtractLine className="text-primary h-4 w-4" />
@@ -1496,7 +957,7 @@ export default function EmailSignatureGenerator() {
 
                 {(config.jobTitle.trim() || config.company.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterTitle') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-[14px]! font-medium">{t.spacing.afterTitle}</span>
+                    <span className="tool-value">{t.spacing.afterTitle}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1516,7 +977,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.extraLine.trim() && LAYOUT_SPACING_MAP[layout].includes('afterExtra') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-[14px]! font-medium">{t.spacing.afterExtra}</span>
+                    <span className="tool-value">{t.spacing.afterExtra}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1536,7 +997,7 @@ export default function EmailSignatureGenerator() {
 
                 {(config.email.trim() || config.phone.trim() || config.website.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterContact') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-[14px]! font-medium">{t.spacing.afterContact}</span>
+                    <span className="tool-value">{t.spacing.afterContact}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1561,7 +1022,7 @@ export default function EmailSignatureGenerator() {
 
                 {Object.values(config.socials).some((url) => url.trim()) && LAYOUT_SPACING_MAP[layout].includes('afterSocials') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-[14px]! font-medium">{t.spacing.afterSocials}</span>
+                    <span className="tool-value">{t.spacing.afterSocials}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1586,7 +1047,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.ctaLabel.trim() && config.ctaUrl.trim() && LAYOUT_SPACING_MAP[layout].includes('afterCta') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-[14px]! font-medium">{t.spacing.afterCta}</span>
+                    <span className="tool-value">{t.spacing.afterCta}</span>
                     <div className="flex items-center gap-1">
                       <button type="button" onClick={() => handleSpacingChange('afterCta', -2)} className="rounded-md border border-neutral-300 p-1 hover:bg-neutral-100" aria-label="Zmniejsz odstęp">
                         <RiSubtractLine className="text-primary h-4 w-4" />
@@ -1601,7 +1062,7 @@ export default function EmailSignatureGenerator() {
 
                 {config.legalNote.trim() && LAYOUT_SPACING_MAP[layout].includes('beforeLegal') && (
                   <div className="flex items-center justify-between gap-2 py-1">
-                    <span className="text-[14px]! font-medium">{t.spacing.beforeLegal}</span>
+                    <span className="tool-value">{t.spacing.beforeLegal}</span>
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
@@ -1623,25 +1084,25 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'legal' && (
               <div className="space-y-3">
-                <span className="text-[14px]! font-medium">{t.legal.title}</span>
+                <span className="tool-value">{t.legal.title}</span>
                 <textarea value={config.legalNote} onChange={(e) => handleTextChange('legalNote', e.target.value)} className="tool-textarea text-xs!" rows={6} placeholder={t.legal.placeholder} />
                 <div className="flex items-center gap-2 pt-2">
                   <input id="divider-toggle" type="checkbox" checked={styleConfig.showDivider} onChange={(e) => handleStyleChange('showDivider', e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="divider-toggle" className="text-[14px]! font-medium">
+                  <label htmlFor="divider-toggle" className="tool-value">
                     {t.legal.showDivider}
                   </label>
                 </div>
                 {styleConfig.showDivider && (
                   <div className="space-y-3 border-t border-neutral-200 pt-3">
                     <div>
-                      <p className="text-light mb-1 text-xs! font-medium uppercase">{t.legal.dividerStyle}</p>
+                      <p className="tool-label mb-1">{t.legal.dividerStyle}</p>
                       <div className="flex flex-wrap gap-2">
                         {(['solid', 'dashed', 'dotted'] as const).map((ds) => (
                           <button
                             key={ds}
                             type="button"
                             onClick={() => handleStyleChange('dividerStyle', ds)}
-                            className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.dividerStyle === ds ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                            className={`tool-button ${styleConfig.dividerStyle === ds ? 'tool-button-active' : 'tool-button-inactive'}`}
                           >
                             {ds === 'solid' && t.legal.dividerStyleSolid}
                             {ds === 'dashed' && t.legal.dividerStyleDashed}
@@ -1651,14 +1112,14 @@ export default function EmailSignatureGenerator() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-light mb-1 text-xs! font-medium uppercase">{t.legal.dividerWidth}</p>
+                      <p className="tool-label mb-1">{t.legal.dividerWidth}</p>
                       <div className="flex flex-wrap gap-2">
                         {([1, 2, 3] as const).map((w) => (
                           <button
                             key={w}
                             type="button"
                             onClick={() => handleStyleChange('dividerWidth', w)}
-                            className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${styleConfig.dividerWidth === w ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                            className={`tool-button ${styleConfig.dividerWidth === w ? 'tool-button-active' : 'tool-button-inactive'}`}
                           >
                             {w} px
                           </button>
@@ -1666,12 +1127,12 @@ export default function EmailSignatureGenerator() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-light mb-1 text-xs! font-medium uppercase">{t.legal.dividerColor}</p>
+                      <p className="tool-label mb-1">{t.legal.dividerColor}</p>
                       <div className="flex items-center gap-2">
                         <button
                           type="button"
                           onClick={() => handleStyleChange('dividerColor', '')}
-                          className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${!styleConfig.dividerColor ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'}`}
+                          className={`tool-button ${!styleConfig.dividerColor ? 'tool-button-active' : 'tool-button-inactive'}`}
                         >
                           {t.legal.dividerColorDefault}
                         </button>

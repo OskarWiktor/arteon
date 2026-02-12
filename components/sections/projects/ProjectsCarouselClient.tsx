@@ -11,24 +11,6 @@ import type { ProjectCategory, ProjectPreview } from '@/types/project';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
-const ui = {
-  pl: {
-    defaultTitle: 'Nasze Realizacje',
-    seeAllProjects: 'Sprawdź wszystkie realizacje',
-    carouselLabel: 'Karuzela projektów',
-    scrollLeft: 'Przewiń w lewo',
-    scrollRight: 'Przewiń w prawo',
-    carouselNavigation: 'Nawigacja karuzeli',
-    goToSlide: 'Przejdź do slajdu',
-    of: 'z',
-    slide: 'Slajd',
-    project: 'Projekt',
-    urls: {
-      projects: '/realizacje',
-    },
-  },
-} as const;
-
 type Props = {
   projects: ProjectPreview[];
   max?: number;
@@ -39,8 +21,7 @@ type Props = {
   excludeSlug?: string;
 };
 
-export default function ProjectsCarouselClient({ projects, max = 10, title = ui.pl.defaultTitle, subtitle, category, slugs, excludeSlug }: Props) {
-  const t = ui.pl;
+export default function ProjectsCarouselClient({ projects, max = 10, title = 'Nasze Realizacje', subtitle, category, slugs, excludeSlug }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
@@ -86,9 +67,9 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = ui.
         headingLevel="h2"
         headingClassName=""
         titleId="projects-heading"
-        actionLabel={t.seeAllProjects}
-        actionLink={t.urls.projects}
-        actionAriaLabel={t.seeAllProjects}
+        actionLabel="Sprawdź wszystkie realizacje"
+        actionLink="/realizacje"
+        actionAriaLabel="Sprawdź wszystkie realizacje"
       />
 
       <div className="relative">
@@ -97,7 +78,7 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = ui.
           className="no-scrollbar focus-visible:ring-primary flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
-          aria-label={t.carouselLabel}
+          aria-label="Karuzela projektów"
           aria-live="polite"
           tabIndex={0}
           onKeyDown={onKeyDown}
@@ -113,14 +94,14 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = ui.
                   : null
               }
               className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
-              aria-label={`${t.project} ${i + 1} ${t.of} ${finalProjects.length}`}
+              aria-label={`Projekt ${i + 1} z ${finalProjects.length}`}
             >
               <CarouselCard variant="project" project={project} />
             </div>
           ))}
         </div>
 
-        <CarouselNavButtons isScrollable={isScrollable} onPrev={() => scrollByCards('left')} onNext={() => scrollByCards('right')} prevLabel={t.scrollLeft} nextLabel={t.scrollRight} />
+        <CarouselNavButtons isScrollable={isScrollable} onPrev={() => scrollByCards('left')} onNext={() => scrollByCards('right')} prevLabel="Przewiń w lewo" nextLabel="Przewiń w prawo" />
       </div>
 
       <CarouselDots
@@ -128,10 +109,10 @@ export default function ProjectsCarouselClient({ projects, max = 10, title = ui.
         currentSlide={currentSlide}
         maxSlides={maxSlides}
         onDotClick={goToSlide}
-        carouselNavigationLabel={t.carouselNavigation}
-        goToSlideLabel={t.goToSlide}
-        ofLabel={t.of}
-        slideLabel={t.slide}
+        carouselNavigationLabel="Nawigacja karuzeli"
+        goToSlideLabel="Przejdź do slajdu"
+        ofLabel="z"
+        slideLabel="Slajd"
       />
     </section>
   );

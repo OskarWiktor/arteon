@@ -11,19 +11,9 @@ type Props = {
   onClear: () => void;
 };
 
-const ui = {
-  pl: {
-    heading: 'Kliknij aby wybrać typ projektu',
-    filtersAriaLabel: 'Filtry realizacji',
-    all: 'Wszystkie',
-  },
-} as const;
-
 const ORDER: readonly ProjectCategory[] = ['strona', 'sklep', 'blog', 'aplikacja', 'grafika', 'treść', 'marketing'] as const;
 
 export default function Filters({ projects, selected, onToggle, onClear }: Props) {
-  const t = ui.pl;
-
   const available = useMemo(() => {
     const present = new Set<ProjectCategory>();
     for (const p of projects) for (const c of p.category ?? []) present.add(c);
@@ -35,11 +25,11 @@ export default function Filters({ projects, selected, onToggle, onClear }: Props
 
   return (
     <section className="w-full">
-      <h2 className="h3 mb-6">{t.heading}</h2>
+      <h2 className="h3 mb-6">Kliknij aby wybrać typ projektu</h2>
 
-      <div role="toolbar" aria-label={t.filtersAriaLabel} className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-2xl pb-6 md:pb-8 lg:pb-10">
+      <div role="toolbar" aria-label="Filtry realizacji" className="flex w-full flex-wrap items-center gap-2 overflow-x-auto rounded-2xl pb-6 md:pb-8 lg:pb-10">
         <Button variant={hasSelection ? 'normal' : 'accent'} size="small" onClick={onClear} aria-pressed={!hasSelection}>
-          {t.all}
+          Wszystkie
         </Button>
 
         {available.map((c) => (

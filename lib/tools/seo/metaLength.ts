@@ -1,11 +1,5 @@
-export type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
-
-export type FieldMetrics = {
-  chars: number;
-  words: number;
-  pixels: number;
-  status: LengthStatus;
-};
+import type { FieldMetrics } from '@/types/tools/text';
+export type { LengthStatus, FieldMetrics } from '@/types/tools/text';
 
 const TITLE_FONT = '400 20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
 const DESCRIPTION_FONT = '300 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';

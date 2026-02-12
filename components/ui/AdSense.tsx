@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import type { AdSenseProps } from '@/types/ui';
+export type { AdVariant, AdSenseProps } from '@/types/ui';
 
 const AD_CLIENT = 'ca-pub-7845947936813012';
 
@@ -10,14 +12,6 @@ const PRESETS = {
   autorelaxed: { slot: '4600483034' },
   vertical: { slot: '7442268796' },
 } as const;
-
-export type AdVariant = keyof typeof PRESETS;
-
-export interface AdSenseProps {
-  variant: AdVariant;
-  adSlot?: string;
-  className?: string;
-}
 
 declare global {
   interface Window {

@@ -2,13 +2,6 @@ import type { ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';
 
-const ui = {
-  pl: {
-    sectionActions: 'Działania sekcji',
-    stepLabel: 'Krok',
-  },
-} as const;
-
 interface TimelineItem {
   icon: ReactNode;
   title: string;
@@ -27,8 +20,6 @@ interface SectionTimelineProps {
 }
 
 export default function SectionTimeline({ title, subtitle, description, items, btnOne, btnOneLink, btnTwo, btnTwoLink }: SectionTimelineProps) {
-  const t = ui.pl;
-
   return (
     <section data-section="timeline" aria-labelledby={title ? 'timeline-title' : undefined}>
       <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" titleId="timeline-title" headingClassName="" descriptionClassName="" />
@@ -58,7 +49,7 @@ export default function SectionTimeline({ title, subtitle, description, items, b
         </ol>
       </div>
 
-      <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" ariaLabel={t.sectionActions} role="group" />
+      <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" ariaLabel="Działania sekcji" role="group" />
     </section>
   );
 }

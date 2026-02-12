@@ -1,20 +1,21 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import CopyButton from '@/components/ui/buttons/CopyButton';
-import Badge from '@/components/ui/Badge';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
+import ToolColorSwatch from '@/components/ui/tools/ToolColorSwatch';
+import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
+import type { ToolStatus } from '@/lib/tools/types';
 import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { formatBytes } from '@/lib/tools/formatBytes';
 import { getFileFormatLabel } from '@/lib/tools/fileFormat';
 import { getDownscaledImageDataFromUrl } from '@/lib/tools/image/canvas';
 import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/tools/image/uploadTypes';
 import { extractPalette, type ExtractedColor } from '@/lib/tools/color/extractPalette';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -53,9 +54,7 @@ const ui = {
     copyHint: 'Click "Copy" to copy the color code.',
     previewAlt: 'Preview',
   },
-} as const;
-
-type Status = 'idle' | 'processing' | 'done' | 'error';
+} as const satisfies Record<Locale, unknown>;
 
 export default function PaletteExtractor() {
   const locale = useLocale();
@@ -64,7 +63,7 @@ export default function PaletteExtractor() {
   const [file, setFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [colors, setColors] = useState<ExtractedColor[]>([]);
-  const [status, setStatus] = useState<Status>('idle');
+  const [status, setStatus] = useState<ToolStatus>('idle');
   const [error, setError] = useState<string | null>(null);
 
   const isProcessing = status === 'processing';
@@ -150,15 +149,11 @@ export default function PaletteExtractor() {
             onFiles={handleFiles}
             className={`tool-upload-area ${isProcessing ? 'cursor-not-allowed opacity-60' : ''}`}
           >
-            <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
-            <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
-            <Badge variant="default" size="sm" className="bg-white shadow-sm">
-              {t.supportedFormats}
-            </Badge>
+            <ToolUploadContent dragLabel={t.dragDropImage} clickLabel={t.clickToSelect} formatsLabel={t.supportedFormats} />
           </ToolFileDropzone>
 
           {file && (
-            <p className="text-light mt-2 text-xs!">
+            <p className="tool-meta mt-2">
               {t.selectedFile} <strong>{file.name}</strong> ({fileSize})
             </p>
           )}
@@ -175,7 +170,7 @@ export default function PaletteExtractor() {
         <div className="flex items-center justify-between gap-2">
           <h2 className="h6">{t.preview}</h2>
           {file && (
-            <p className="text-light text-xs!">
+            <p className="tool-meta">
               {fileSize} · <strong>{inputFormat}</strong>
             </p>
           )}
@@ -191,13 +186,7 @@ export default function PaletteExtractor() {
               { hex: '#6B705C', rgb: '107, 112, 92' },
               { hex: '#A5A58D', rgb: '165, 165, 141' },
             ].map((c) => (
-              <div key={c.hex} className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
-                <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: c.hex }} aria-label={`${t.colorPreview} ${c.hex}`} />
-                <div className="min-w-0 flex-1">
-                  <p className="text-dark text-[14px]! leading-tight font-medium">{c.hex}</p>
-                  <p className="text-light truncate text-xs!">rgb({c.rgb})</p>
-                </div>
-              </div>
+              <ToolColorSwatch key={c.hex} hex={c.hex} secondaryText={`rgb(${c.rgb})`} ariaLabelPrefix={t.colorPreview} />
             ))}
           </div>
         )}
@@ -214,7 +203,7 @@ export default function PaletteExtractor() {
                 <img src={previewUrl} alt={file?.name || t.previewAlt} className="h-full w-full object-cover" />
               </div>
               <div className="min-w-0">
-                <p className="text-dark truncate text-[14px]! font-medium">{file?.name}</p>
+                <p className="tool-value text-dark truncate">{file?.name}</p>
                 <ToolHelper className="text-xs!">{t.copyHint}</ToolHelper>
               </div>
             </div>
@@ -224,21 +213,19 @@ export default function PaletteExtractor() {
         {colors.length > 0 && (
           <div className="grid gap-2 sm:grid-cols-2">
             {colors.map((color) => (
-              <div key={color.hex} className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
-                <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`${t.colorPreview} ${color.hex}`} />
-                <div className="min-w-0 flex-1">
-                  <p className="text-dark text-[14px]! leading-tight font-medium">{color.hex}</p>
-                  <p className="text-light truncate text-xs!">
-                    rgb({color.rgb.r}, {color.rgb.g}, {color.rgb.b})
-                  </p>
-                </div>
-                <CopyButton text={color.hex} label={t.copy} copiedLabel={t.copied} />
-              </div>
+              <ToolColorSwatch
+                key={color.hex}
+                hex={color.hex}
+                secondaryText={`rgb(${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b})`}
+                ariaLabelPrefix={t.colorPreview}
+                copyLabel={t.copy}
+                copiedLabel={t.copied}
+              />
             ))}
           </div>
         )}
 
-        {colors.length === 0 && previewUrl && status === 'done' && <p className="text-light text-xs!">{t.empty}</p>}
+        {colors.length === 0 && previewUrl && status === 'done' && <p className="tool-meta">{t.empty}</p>}
       </ToolSection>
     </div>
   );

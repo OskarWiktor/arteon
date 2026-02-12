@@ -39,15 +39,15 @@ const TechStepsItems = [
   },
 ];
 
-const ui = {
-  pl: {
-    title: 'Technologia służy celowi',
-    subtitle: 'Nasza Technologia',
-    description: 'Dobieramy rozwiązanie dopasowane do Twoich potrzeb, branży i budżetu. Zawsze wybieramy dla Ciebie opcję, która da najlepszy efekt.',
-  },
-} as const;
-
 export default function TechSteps() {
-  const t = ui.pl;
-  return <SectionSteps overlay="black" backgroundImage="/assets/bg/abstract-bg1.webp" items={TechStepsItems} title={t.title} subtitle={t.subtitle} description={t.description} />;
+  return (
+    <SectionSteps
+      overlay="black"
+      backgroundImage="/assets/bg/abstract-bg1.webp"
+      items={TechStepsItems}
+      title="Technologia służy celowi"
+      subtitle="Nasza Technologia"
+      description="Dobieramy rozwiązanie dopasowane do Twoich potrzeb, branży i budżetu. Zawsze wybieramy dla Ciebie opcję, która da najlepszy efekt."
+    />
+  );
 }

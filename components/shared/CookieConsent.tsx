@@ -96,7 +96,7 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: 'pl' | 'en' 
     document.addEventListener('arteon:open-consent', open);
     window.ArteonConsent = { open };
     return () => document.removeEventListener('arteon:open-consent', open);
-  }, []);
+  }, [focusFirstButton]);
 
   useEffect(() => {
     const saved = readConsent();
@@ -114,7 +114,7 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: 'pl' | 'en' 
       setPanel(false);
       focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
     }
-  }, []);
+  }, [focusFirstButton]);
 
   function saveAndClose(next: { analytics: boolean; ads: boolean }) {
     writeConsent({

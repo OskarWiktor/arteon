@@ -1,10 +1,10 @@
 ﻿'use client';
 
 import Button from '@/components/ui/buttons/Button';
-import Badge from '@/components/ui/Badge';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import ToolSection from '@/components/ui/tools/ToolSection';
+import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
 import { exportCroppedImage } from '@/components/sections/tools/ImageResizeTool/exportCroppedImage';
 import { getCropRect, getGridStroke } from '@/components/sections/tools/ImageResizeTool/cropMath';
 import { useCropDrag } from '@/components/sections/tools/ImageResizeTool/useCropDrag';
@@ -17,185 +17,7 @@ import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } 
 import { MdAlignHorizontalCenter, MdAlignVerticalCenter } from 'react-icons/md';
 import { RiZoomInLine, RiDragMove2Line, RiGridLine, RiRulerLine, RiLayoutGridLine, RiCropLine, RiImageLine } from 'react-icons/ri';
 import { useLocale } from '@/lib/LocaleContext';
-
-const ui = {
-  pl: {
-    imageLoadError: 'Nie udało się wczytać obrazu.',
-    canvasNotSupported: 'Twoja przeglądarka nie obsługuje kontekstu 2D.',
-    fileGenerationError: 'Nie udało się wygenerować pliku.',
-    addImageFirst: 'Dodaj najpierw zdjęcie.',
-    setValidDimensions: 'Ustaw poprawne wymiary docelowe.',
-    addImage: 'Dodaj zdjęcie',
-    dragDropImage: 'Przeciągnij i upuść zdjęcie tutaj',
-    clickToSelect: 'lub kliknij, aby wybrać plik z dysku',
-    supportedFormats: 'Obsługiwane: JPG, PNG, WebP',
-    currentFile: 'Aktualny plik:',
-    imageParams: 'Parametry obrazu',
-    noData: 'Brak danych - dodaj zdjęcie.',
-    original: 'Oryginalne:',
-    aspectRatio: 'Proporcje:',
-    target: 'Docelowe:',
-    inputFormat: 'Format wejściowy:',
-    outputFormat: 'Format wyjściowy:',
-    shape: 'Kształt:',
-    sourceFile: 'Plik źródłowy:',
-    estimatedResult: 'Szacowany wynik:',
-    convertAndDownload: 'Konwertuj i pobierz',
-    quality: 'Jakość (JPG/WEBP)',
-    qualityHelper: 'Niższa wartość oznacza mniejszy plik, ale słabszą jakość obrazu. Dla mediów społecznościowych optymalna wartość to 70–85%.',
-    processing: 'Przetwarzanie…',
-    resizeAndDownload: 'Zmień rozmiar i pobierz',
-    cropTools: 'Narzędzia kadrowania',
-    addImageFirstHelper: 'Najpierw dodaj zdjęcie po lewej stronie. Potem pojawią się ustawienia kadru i podgląd.',
-    demoOriginal: 'Oryginał: 3000 x 2000 px',
-    demoTarget: 'Docelowy: 1080 x 1350 px',
-    demoFormat: 'Format: WebP',
-    demoPreset: 'Instagram post pion · 4:5',
-    dimensions: 'Wymiary w px',
-    presetsLabel: 'Gotowe formaty',
-    shapesLabel: 'Kształty kadru',
-    zoom: 'Przybliżenie',
-    position: 'Pozycja',
-    gridColor: 'Kolor siatki',
-    width: 'Szerokość (px)',
-    height: 'Wysokość (px)',
-    keepAspectRatio: 'Zachowaj proporcje (automatyczny drugi wymiar)',
-    category: 'Kategoria',
-    format: 'Format',
-    selectPreset: 'Wybierz format',
-    rectAspect: 'Proporcje prostokąta',
-    cropZoom: 'Przybliżenie kadru',
-    horizontal: 'Poziom (X)',
-    vertical: 'Pion (Y)',
-    centerHorizontal: 'Wyśrodkuj poziomo',
-    centerVertical: 'Wyśrodkuj pionowo',
-    centerCrop: 'Wyśrodkuj kadr',
-    cropPreview: 'Podgląd kadru',
-    cropPreviewHelper:
-      'Jasny obszar pokazuje dokładny kadr, który zostanie zapisany. Zapisany plik będzie miał dokładnie ten rozmiar i fragment obrazu, który widzisz w środku. Dla kształtu koła plik będzie miał przezroczyste tło poza kształtem (PNG / WebP).',
-    shapes: {
-      rect: 'Prostokąt',
-      square: 'Kwadrat',
-      circle: 'Koło',
-    },
-    gridColors: {
-      emerald: 'Zielony',
-      white: 'Biały',
-      black: 'Czarny',
-      red: 'Czerwony',
-      yellow: 'Żółty',
-    },
-    categories: {
-      social: 'media społecznościowe',
-      web: 'WWW',
-    },
-    presets: {
-      igSquare: 'Instagram - post kwadrat (1080x1080)',
-      igPortrait: 'Instagram - post pion (1080x1350)',
-      igStory: 'Instagram - story / reels (1080x1920)',
-      fbPost: 'Facebook - post (1200x630)',
-      fbCover: 'Facebook - cover strony (820x360)',
-      liPost: 'LinkedIn - post (1200x1200)',
-      liBanner: 'LinkedIn - baner profilu (1584x396)',
-      ogImage: 'OG image (1200x630)',
-      cover: 'Grafika do artykułu (1600x900)',
-      banner: 'Baner strony (1920x600)',
-      thumb: 'Miniatura artykułu (800x600)',
-      hero: 'Hero sekcji (1920x1080)',
-      bg: 'Tło sekcji (1920x1280)',
-    },
-    previewAlt: 'Podgląd',
-  },
-  en: {
-    imageLoadError: 'Failed to load the image.',
-    canvasNotSupported: 'Your browser does not support 2D canvas.',
-    fileGenerationError: 'Failed to generate the file.',
-    addImageFirst: 'Add an image first.',
-    setValidDimensions: 'Set valid target dimensions.',
-    addImage: 'Add image',
-    dragDropImage: 'Drag and drop an image here',
-    clickToSelect: 'or click to select a file from your device',
-    supportedFormats: 'Supported: JPG, PNG, WebP',
-    currentFile: 'Current file:',
-    imageParams: 'Image parameters',
-    noData: 'No data — add an image.',
-    original: 'Original:',
-    aspectRatio: 'Aspect ratio:',
-    target: 'Target:',
-    inputFormat: 'Input format:',
-    outputFormat: 'Output format:',
-    shape: 'Shape:',
-    sourceFile: 'Source file:',
-    estimatedResult: 'Estimated result:',
-    convertAndDownload: 'Convert and download',
-    quality: 'Quality (JPG/WEBP)',
-    qualityHelper: 'Lower value means smaller file but lower image quality. For social media, the optimal value is 70–85%.',
-    processing: 'Processing…',
-    resizeAndDownload: 'Resize and download',
-    cropTools: 'Crop tools',
-    addImageFirstHelper: 'First add an image on the left. Then crop settings and preview will appear.',
-    demoOriginal: 'Original: 3000 x 2000 px',
-    demoTarget: 'Target: 1080 x 1350 px',
-    demoFormat: 'Format: WebP',
-    demoPreset: 'Instagram portrait post · 4:5',
-    dimensions: 'Dimensions in px',
-    presetsLabel: 'Presets',
-    shapesLabel: 'Crop shapes',
-    zoom: 'Zoom',
-    position: 'Position',
-    gridColor: 'Grid color',
-    width: 'Width (px)',
-    height: 'Height (px)',
-    keepAspectRatio: 'Keep aspect ratio (auto second dimension)',
-    category: 'Category',
-    format: 'Format',
-    selectPreset: 'Select format',
-    rectAspect: 'Rectangle aspect ratio',
-    cropZoom: 'Crop zoom',
-    horizontal: 'Horizontal (X)',
-    vertical: 'Vertical (Y)',
-    centerHorizontal: 'Center horizontally',
-    centerVertical: 'Center vertically',
-    centerCrop: 'Center crop',
-    cropPreview: 'Crop preview',
-    cropPreviewHelper:
-      'The bright area shows the exact crop that will be saved. The saved file will have exactly the size and image fragment you see in the center. For circle shape the file will have a transparent background outside the shape (PNG / WebP).',
-    shapes: {
-      rect: 'Rectangle',
-      square: 'Square',
-      circle: 'Circle',
-    },
-    gridColors: {
-      emerald: 'Green',
-      white: 'White',
-      black: 'Black',
-      red: 'Red',
-      yellow: 'Yellow',
-    },
-    categories: {
-      social: 'social media',
-      web: 'web',
-    },
-    presets: {
-      igSquare: 'Instagram — square post (1080x1080)',
-      igPortrait: 'Instagram — portrait post (1080x1350)',
-      igStory: 'Instagram — story / reels (1080x1920)',
-      fbPost: 'Facebook — post (1200x630)',
-      fbCover: 'Facebook — page cover (820x360)',
-      liPost: 'LinkedIn — post (1200x1200)',
-      liBanner: 'LinkedIn — profile banner (1584x396)',
-      ogImage: 'OG image (1200x630)',
-      cover: 'Article cover (1600x900)',
-      banner: 'Website banner (1920x600)',
-      thumb: 'Article thumbnail (800x600)',
-      hero: 'Hero section (1920x1080)',
-      bg: 'Section background (1920x1280)',
-    },
-    previewAlt: 'Preview',
-  },
-} as const;
-
-type UiLocale = (typeof ui)['pl'] | (typeof ui)['en'];
+import { ui, type UiLocale } from '@/components/sections/tools/ImageResizeTool/ui';
 
 function getImagePresets(t: UiLocale) {
   return {
@@ -256,7 +78,7 @@ function PillButton<T extends string>({ value, current, label, onChange, disable
       type="button"
       disabled={disabled}
       onClick={() => !disabled && onChange(value)}
-      className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${isActive ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
+      className={`tool-button ${isActive ? 'tool-button-active' : 'tool-button-inactive'} ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
     >
       {label}
     </button>
@@ -644,14 +466,10 @@ export default function ImageResizeTool() {
           <div>
             <h2 className="h6 mb-2">{t.addImage}</h2>
             <ToolFileDropzone accept="image/*" dropEffect="copy" onFiles={(files) => handleFileChange(files?.[0] ?? null)} className="tool-upload-area">
-              <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
-              <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
-              <Badge variant="default" size="sm" className="bg-white shadow-sm">
-                {t.supportedFormats}
-              </Badge>
+              <ToolUploadContent dragLabel={t.dragDropImage} clickLabel={t.clickToSelect} formatsLabel={t.supportedFormats} />
             </ToolFileDropzone>
             {state.file && (
-              <p className="text-light mt-2 text-xs!">
+              <p className="tool-meta mt-2">
                 {t.currentFile} <strong>{state.file.name}</strong>
               </p>
             )}
@@ -728,7 +546,7 @@ export default function ImageResizeTool() {
 
             {state.outputFormat !== 'png' && (
               <div className="mt-4 space-y-1">
-                <label className="flex items-center justify-between text-[14px]! font-medium">
+                <label className="tool-value flex items-center justify-between">
                   <span>{t.quality}</span>
                   <span>{Math.round(state.outputQuality * 100)}%</span>
                 </label>
@@ -745,7 +563,7 @@ export default function ImageResizeTool() {
                   }
                   className="tool-range"
                 />
-                <p className="text-light text-xs!">{t.qualityHelper}</p>
+                <p className="tool-meta">{t.qualityHelper}</p>
               </div>
             )}
 
@@ -768,7 +586,7 @@ export default function ImageResizeTool() {
         <div className="mb-2 flex items-center justify-between gap-2">
           <h2 className="h6">{t.cropTools}</h2>
           {dims && (
-            <span className="text-light text-xs!">
+            <span className="tool-meta">
               {t.target}{' '}
               <strong>
                 {dims.width} x {dims.height} px
@@ -781,7 +599,7 @@ export default function ImageResizeTool() {
           <>
             <div className="flex flex-wrap gap-2">
               {TOOLBAR_ITEMS.map((item) => (
-                <div key={item.id} className="flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-[14px]!">
+                <div key={item.id} className="tool-button tool-button-inactive">
                   <span className="text-neutral-400">{item.icon}</span>
                   <span className="text-light">{item.label}</span>
                 </div>
@@ -821,7 +639,7 @@ export default function ImageResizeTool() {
                 <div className="space-y-3">
                   <div className="grid gap-3 md:grid-cols-2">
                     <div>
-                      <label className="text-[14px]! font-medium">{t.width}</label>
+                      <label className="tool-value">{t.width}</label>
                       <input
                         type="number"
                         min={1}
@@ -831,7 +649,7 @@ export default function ImageResizeTool() {
                       />
                     </div>
                     <div>
-                      <label className="text-[14px]! font-medium">{t.height}</label>
+                      <label className="tool-value">{t.height}</label>
                       <input
                         type="number"
                         min={1}
@@ -842,7 +660,7 @@ export default function ImageResizeTool() {
                     </div>
                   </div>
 
-                  <label className="flex items-center gap-2 text-[14px]! font-medium">
+                  <label className="tool-value flex items-center gap-2">
                     <input
                       type="checkbox"
                       checked={state.keepAspectRatio}
@@ -863,7 +681,7 @@ export default function ImageResizeTool() {
                 <div className="space-y-3">
                   <div className="grid gap-3 md:grid-cols-2">
                     <div>
-                      <label className="text-[14px]! font-medium">{t.category}</label>
+                      <label className="tool-value">{t.category}</label>
                       <select
                         className="tool-select mt-1"
                         value={state.selectedCategory}
@@ -880,7 +698,7 @@ export default function ImageResizeTool() {
                       </select>
                     </div>
                     <div>
-                      <label className="text-[14px]! font-medium">{t.format}</label>
+                      <label className="tool-value">{t.format}</label>
                       <select className="tool-select mt-1" value={state.selectedPresetKey ?? ''} onChange={(e) => handlePresetChange(e.target.value)}>
                         <option value="">{t.selectPreset}</option>
                         {presetList.map((preset) => (
@@ -904,7 +722,7 @@ export default function ImageResizeTool() {
 
                   {state.shape === 'rect' && (
                     <div className="space-y-2">
-                      <p className="text-light text-xs!">{t.rectAspect}</p>
+                      <p className="tool-meta">{t.rectAspect}</p>
                       <div className="flex flex-wrap gap-2">
                         {RECT_ASPECTS.map((aspect) => (
                           <PillButton key={aspect} value={aspect} current={state.shapeAspect} label={aspect} onChange={(val) => handleShapeAspectChange(val as ShapeAspect)} />

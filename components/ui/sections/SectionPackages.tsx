@@ -4,13 +4,6 @@ import Wrapper from '../Wrapper';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';
 
-const ui = {
-  pl: {
-    sectionActions: 'Działania sekcji',
-    feature: 'Funkcja',
-  },
-} as const;
-
 interface PackageFeature {
   name: string;
   values: boolean[];
@@ -34,7 +27,6 @@ interface SectionPackagesProps {
 }
 
 export default function SectionPackages({ title, subtitle, description, packages, features, highlightedIndex = 1, btnOne, btnOneLink, btnTwo, btnTwoLink }: SectionPackagesProps) {
-  const t = ui.pl;
   const displayPackages = packages.slice(0, 3);
 
   return (
@@ -46,7 +38,7 @@ export default function SectionPackages({ title, subtitle, description, packages
           <table className="w-full min-w-[600px] border-collapse">
             <thead>
               <tr className="border-b border-black/10">
-                <th className="text-light p-4 text-left text-sm font-medium">{t.feature}</th>
+                <th className="text-light p-4 text-left text-sm font-medium">Funkcja</th>
                 {displayPackages.map((pkg, idx) => (
                   <th key={idx} className={`p-4 text-center text-sm font-medium ${idx === highlightedIndex ? 'bg-primary-light rounded-t-2xl' : ''}`}>
                     {pkg.name}
@@ -92,7 +84,7 @@ export default function SectionPackages({ title, subtitle, description, packages
           </div>
         </div>
 
-        <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" ariaLabel={t.sectionActions} role="group" />
+        <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" ariaLabel="Działania sekcji" role="group" />
       </Wrapper>
     </section>
   );

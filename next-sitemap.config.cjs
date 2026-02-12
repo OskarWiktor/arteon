@@ -273,18 +273,7 @@ module.exports = {
       // Skip individual project pages — added from PROJECTS data below with images
       if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
-      const priority =
-        loc === '/'
-          ? 1.0
-          : loc.startsWith('/en/')
-            ? 0.7
-            : loc.startsWith('/uslugi/')
-              ? 0.8
-              : loc.startsWith('/edukacja')
-                ? 0.75
-                : loc.startsWith('/realizacje')
-                  ? 0.6
-                  : 0.7;
+      const priority = loc === '/' ? 1.0 : loc.startsWith('/en/') ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7;
 
       const entry = { loc, changefreq: 'weekly', priority };
       if (last) entry.lastmod = last;

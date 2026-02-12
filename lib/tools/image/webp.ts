@@ -2,12 +2,8 @@ import { canvasToBlob } from '@/lib/tools/canvasToBlob';
 import { loadImage } from '@/lib/tools/loadImage';
 import { readFileAsDataUrl } from '@/lib/tools/readFileAsDataUrl';
 
-export type ConvertImageFileToWebpErrorMessages = {
-  fileLoadErrorMessage: string;
-  imageLoadErrorMessage: string;
-  canvasNotSupportedErrorMessage: string;
-  webpGenerationErrorMessage: string;
-};
+import type { ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions, ConvertImageFileToWebpSmartResult } from '@/types/tools/image';
+export type { ConvertImageFileToWebpErrorMessages, ConvertImageFileToWebpSmartOptions, ConvertImageFileToWebpSmartResult } from '@/types/tools/image';
 
 export function getWebpFileName(originalFileName: string): string {
   return originalFileName.replace(/\.[^.]+$/, '.webp');
@@ -30,17 +26,6 @@ export async function convertImageFileToWebp(file: File, quality: number, messag
 
   return canvasToBlob(canvas, 'image/webp', quality / 100, messages.webpGenerationErrorMessage);
 }
-
-export type ConvertImageFileToWebpSmartOptions = ConvertImageFileToWebpErrorMessages & {
-  initialQuality: number;
-  minQuality?: number;
-  step?: number;
-};
-
-export type ConvertImageFileToWebpSmartResult = {
-  blob: Blob;
-  usedQuality: number;
-};
 
 export async function convertImageFileToWebpSmart(file: File, originalSize: number, options: ConvertImageFileToWebpSmartOptions): Promise<ConvertImageFileToWebpSmartResult> {
   const minQuality = options.minQuality ?? 60;

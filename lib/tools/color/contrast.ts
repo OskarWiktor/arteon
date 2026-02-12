@@ -69,6 +69,21 @@ export function relativeLuminance({ r, g, b }: RGB): number {
   return 0.2126 * R + 0.7152 * G + 0.0722 * B;
 }
 
+export function calculateHexContrast(hex1: string, hex2: string): number {
+  const rgb1 = hexToRgb(hex1);
+  const rgb2 = hexToRgb(hex2);
+  if (!rgb1 || !rgb2) return 1;
+  const L1 = relativeLuminance(rgb1);
+  const L2 = relativeLuminance(rgb2);
+  const lighter = Math.max(L1, L2);
+  const darker = Math.min(L1, L2);
+  return (lighter + 0.05) / (darker + 0.05);
+}
+
+export function isHexContrastSufficient(hex1: string, hex2: string, minRatio = 3): boolean {
+  return calculateHexContrast(hex1, hex2) >= minRatio;
+}
+
 export function getContrastRatio(foreground: string, background: string): number | null {
   const fg = parseColor(foreground);
   const bg = parseColor(background);

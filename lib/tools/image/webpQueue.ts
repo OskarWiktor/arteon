@@ -1,18 +1,5 @@
-export type WebpQueueItemStatus = 'pending' | 'processing' | 'done' | 'error';
-
-export type WebpQueueItem = {
-  id: string;
-  file: File;
-  inputSize: number;
-  outputSize?: number;
-  ratio?: number;
-  status: WebpQueueItemStatus;
-  error?: string;
-  downloadUrl?: string;
-  previewUrl?: string;
-  downloaded?: boolean;
-  usedQuality?: number;
-};
+import type { WebpQueueItem } from '@/types/tools/image';
+export type { WebpQueueItemStatus, WebpQueueItem } from '@/types/tools/image';
 
 export function isJpgOrPngFile(file: File): boolean {
   return file.type === 'image/jpeg' || file.type === 'image/png';

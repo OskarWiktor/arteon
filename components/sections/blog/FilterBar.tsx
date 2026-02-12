@@ -9,30 +9,14 @@ import { RiCloseLine, RiCheckLine, RiArrowDownSLine, RiArrowUpSLine } from 'reac
 import Button from '@/components/ui/buttons/Button';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 
-const ui = {
-  pl: {
-    filters: 'Filtry artykułów',
-    categories: 'Kategorie artykułów',
-    all: 'Wszystkie',
-    chooseCategory: 'Wybierz kategorię',
-    close: 'Zamknij',
-    showMore: 'Więcej filtrów',
-    showLess: 'Mniej filtrów',
-    urls: {
-      education: '/edukacja',
-    },
-  },
-} as const;
-
 type Cat = { label: string; slug: string; count: number };
 
 // Height of one row of buttons (button height ~36px + gap 8px + padding for shadow)
 const COLLAPSED_HEIGHT = 48;
 
 export default function FilterBar({ cats, active }: { cats: Cat[]; active?: string }) {
-  const t = ui.pl;
   const pathname = usePathname();
-  const isRoot = pathname === t.urls.education;
+  const isRoot = pathname === '/edukacja';
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -77,11 +61,11 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
 
   // Get active category label for mobile button
   const activeLabel = active ? cats.find((c) => c.slug === active)?.label : null;
-  const mobileButtonLabel = activeLabel || t.all;
+  const mobileButtonLabel = activeLabel || 'Wszystkie';
 
   return (
     <>
-      <h2 className="mb-4">{t.filters}</h2>
+      <h2 className="mb-4">Filtry artykułów</h2>
 
       {/* Mobile: Button that opens modal */}
       <div className="pb-6 md:hidden">
@@ -103,20 +87,20 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
           {/* Filters container with collapse/expand */}
           <motion.nav
             ref={navRef}
-            aria-label={t.categories}
+            aria-label="Kategorie artykułów"
             initial={false}
             animate={{ height: isExpanded ? 'auto' : COLLAPSED_HEIGHT }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
             className="flex flex-1 flex-wrap gap-2 overflow-hidden"
           >
-            <Button variant={isRoot ? 'accent' : 'normal'} link={t.urls.education} size="small" aria-current={isRoot ? 'page' : undefined}>
-              {t.all}
+            <Button variant={isRoot ? 'accent' : 'normal'} link="/edukacja" size="small" aria-current={isRoot ? 'page' : undefined}>
+              Wszystkie
             </Button>
 
             {cats.map((c) => {
               const isActive = active === c.slug;
               return (
-                <Button size="small" key={c.slug} variant={isActive ? 'accent' : 'normal'} link={`${t.urls.education}/${c.slug}`} aria-current={isActive ? 'page' : undefined}>
+                <Button size="small" key={c.slug} variant={isActive ? 'accent' : 'normal'} link={`/edukacja/${c.slug}`} aria-current={isActive ? 'page' : undefined}>
                   {c.label} <span className="opacity-60">({c.count})</span>
                 </Button>
               );
@@ -131,7 +115,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
               className="inline-flex shrink-0 items-center gap-1 rounded-2xl border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
               aria-expanded={isExpanded}
             >
-              <span>{isExpanded ? t.showLess : t.showMore}</span>
+              <span>{isExpanded ? 'Mniej filtrów' : 'Więcej filtrów'}</span>
               {isExpanded ? <RiArrowUpSLine className="h-4 w-4" /> : <RiArrowDownSLine className="h-4 w-4" />}
             </button>
           )}
@@ -139,7 +123,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
       </div>
 
       {/* Mobile Modal */}
-      {mounted && createPortal(<FilterModal isOpen={isModalOpen} onClose={closeModal} cats={cats} active={active} isRoot={isRoot} t={t} />, document.body)}
+      {mounted && createPortal(<FilterModal isOpen={isModalOpen} onClose={closeModal} cats={cats} active={active} isRoot={isRoot} />, document.body)}
     </>
   );
 }
@@ -150,10 +134,9 @@ type FilterModalProps = {
   cats: Cat[];
   active?: string;
   isRoot: boolean;
-  t: typeof ui.pl;
 };
 
-function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalProps) {
+function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps) {
   const listRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -168,7 +151,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalPr
     }
   }, [isOpen]);
 
-  const allItems = [{ label: t.all, slug: '', count: 0, isAll: true }, ...cats.map((c) => ({ ...c, isAll: false }))];
+  const allItems = [{ label: 'Wszystkie', slug: '', count: 0, isAll: true }, ...cats.map((c) => ({ ...c, isAll: false }))];
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent) => {
@@ -209,7 +192,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalPr
           onClick={handleBackdropClick}
           role="dialog"
           aria-modal="true"
-          aria-label={t.chooseCategory}
+          aria-label="Wybierz kategorię"
         >
           <motion.div
             initial={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -221,17 +204,17 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot, t }: FilterModalPr
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
-              <h3 className="text-base font-semibold">{t.chooseCategory}</h3>
-              <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded-full p-1.5" aria-label={t.close}>
+              <h3 className="text-base font-semibold">Wybierz kategorię</h3>
+              <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded-full p-1.5" aria-label="Zamknij">
                 <RiCloseLine className="h-5 w-5" />
               </button>
             </div>
 
             {/* Category list */}
-            <div ref={listRef} className="max-h-[60vh] overflow-y-auto py-2" role="listbox" aria-label={t.categories}>
+            <div ref={listRef} className="max-h-[60vh] overflow-y-auto py-2" role="listbox" aria-label="Kategorie artykułów">
               {allItems.map((item, index) => {
                 const isActive = item.isAll ? isRoot : active === item.slug;
-                const href = item.isAll ? t.urls.education : `${t.urls.education}/${item.slug}`;
+                const href = item.isAll ? '/edukacja' : `/edukacja/${item.slug}`;
 
                 return (
                   <Link

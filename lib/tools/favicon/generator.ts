@@ -1,14 +1,6 @@
 import { canvasToBlob } from '@/lib/tools/canvasToBlob';
-
-export type FaviconOutputFile = {
-  id: string;
-  label: string;
-  size: number | 'ico';
-  type: 'png' | 'ico';
-  fileName: string;
-  sizeBytes: number;
-  url: string;
-};
+import type { FaviconOutputFile } from '@/types/tools/image';
+export type { FaviconOutputFile } from '@/types/tools/image';
 
 export function suggestFaviconFileName(size: number | 'ico', type: 'png' | 'ico'): string {
   if (type === 'ico') return 'favicon.ico';

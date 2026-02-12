@@ -1,14 +1,6 @@
-import type { Locale } from '@/lib/LocaleContext';
-
-export type PageType = 'product' | 'service' | 'homepage' | 'landing' | 'blog' | 'guide';
-
-export interface PageTypeConfig {
-  key: PageType;
-  label: string;
-  minWords: number;
-  maxWords: number;
-  description: string;
-}
+import type { Locale } from '@/types/locale';
+import type { PageTypeConfig, TextMetrics, LengthEvaluation } from '@/types/tools/text';
+export type { PageType, PageTypeConfig, LengthStatus, TextMetrics, LengthEvaluation } from '@/types/tools/text';
 
 const PAGE_TYPES_PL: PageTypeConfig[] = [
   {
@@ -105,22 +97,6 @@ export function getPageTypes(locale: Locale): PageTypeConfig[] {
 }
 
 export const PAGE_TYPES = PAGE_TYPES_PL;
-
-export type LengthStatus = 'empty' | 'too-short' | 'ideal' | 'too-long';
-
-export interface TextMetrics {
-  words: number;
-  charsWithSpaces: number;
-  charsWithoutSpaces: number;
-  paragraphs: number;
-  readingTimeMinutes: number;
-}
-
-export interface LengthEvaluation {
-  status: LengthStatus;
-  percentage: number;
-  message: string;
-}
 
 export function countWords(text: string): number {
   if (!text.trim()) return 0;

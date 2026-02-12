@@ -18,6 +18,7 @@ import './globals.css';
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 const metadataBase = new URL(siteUrl);
@@ -147,7 +148,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
         {/* AdSense - używamy natywnego script zamiast Next.js Script, bo AdSense nie obsługuje data-nscript */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845947936813012" crossOrigin="anonymous" />
+        {ADSENSE_CLIENT && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />}
       </head>
 
       <body className="font-sans antialiased">

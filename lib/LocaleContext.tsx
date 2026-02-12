@@ -2,7 +2,8 @@
 
 import { createContext, useContext, type ReactNode } from 'react';
 
-export type Locale = 'pl' | 'en';
+import type { Locale } from '@/types/locale';
+export type { Locale } from '@/types/locale';
 
 interface LocaleContextType {
   locale: Locale;

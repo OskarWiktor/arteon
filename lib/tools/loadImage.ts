@@ -1,7 +1,5 @@
-export type LoadImageOptions = {
-  crossOrigin?: '' | 'anonymous' | 'use-credentials';
-  errorMessage?: string;
-};
+import type { LoadImageOptions } from '@/types/tools/image';
+export type { LoadImageOptions } from '@/types/tools/image';
 
 export function loadImage(url: string, options?: LoadImageOptions): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {

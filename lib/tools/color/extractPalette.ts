@@ -1,18 +1,7 @@
-import type { RGB } from '@/lib/tools/color/types';
+import type { RGB, ExtractedColor, ExtractPaletteOptions } from '@/types/tools/color';
 import { clamp, rgbToHex } from '@/lib/tools/color/convert';
 
-export type ExtractedColor = {
-  hex: string;
-  rgb: RGB;
-  count: number;
-};
-
-export type ExtractPaletteOptions = {
-  maxColors?: number;
-  bucketSize?: number;
-  alphaThreshold?: number;
-  minDistance?: number;
-};
+export type { ExtractedColor, ExtractPaletteOptions } from '@/types/tools/color';
 
 type Bucket = {
   rgb: RGB;

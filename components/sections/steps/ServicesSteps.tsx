@@ -2,27 +2,7 @@ import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiF
 import Button from '@/components/ui/buttons/Button';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 
-const ui = {
-  pl: {
-    title: 'Poznaj nasze usługi',
-    subtitle: 'Partner',
-    description: 'Posiadamy szeroką ofertę, dzięki czemu niezależnie od Twojej branży, celów i budżetu, jesteśmy w stanie zrealizować Twój plan',
-    btnOne: 'Skontaktuj się',
-    checkOffer: 'Sprawdź ofertę',
-    urls: {
-      websites: '/uslugi/strony-internetowe',
-      shops: '/uslugi/sklepy-internetowe',
-      blogs: '/uslugi/blogi-internetowe',
-      graphicProjects: '/uslugi/projekty-graficzne',
-      contentCreation: '/uslugi/tworzenie-tresci',
-      marketing: '/uslugi/marketing',
-      contact: '/kontakt',
-    },
-  },
-} as const;
-
 function getItems() {
-  const t = ui.pl;
   return [
     {
       icon: <RiCodeSSlashFill className="h-8 w-8" />,
@@ -36,8 +16,8 @@ function getItems() {
             <li>Bezpłatne szkolenie PDF z obsługi strony</li>
           </ul>
           <div className="mt-auto">
-            <Button arrow link={t.urls.websites}>
-              {t.checkOffer}
+            <Button arrow link="/uslugi/strony-internetowe">
+              Sprawdź ofertę
             </Button>
           </div>
         </div>
@@ -55,8 +35,8 @@ function getItems() {
             <li>Bezpłatne szkolenie PDF dla właściciela sklepu</li>
           </ul>
           <div className="mt-auto">
-            <Button arrow link={t.urls.shops}>
-              {t.checkOffer}
+            <Button arrow link="/uslugi/sklepy-internetowe">
+              Sprawdź ofertę
             </Button>
           </div>
         </div>
@@ -74,8 +54,8 @@ function getItems() {
             <li>Bezpłatne szkolenie PDF z obsługi bloga</li>
           </ul>
           <div className="mt-auto">
-            <Button arrow link={t.urls.blogs}>
-              {t.checkOffer}
+            <Button arrow link="/uslugi/blogi-internetowe">
+              Sprawdź ofertę
             </Button>
           </div>
         </div>
@@ -93,8 +73,8 @@ function getItems() {
             <li>Makiety stron</li>
           </ul>
           <div className="mt-auto">
-            <Button arrow link={t.urls.graphicProjects}>
-              {t.checkOffer}
+            <Button arrow link="/uslugi/projekty-graficzne">
+              Sprawdź ofertę
             </Button>
           </div>
         </div>
@@ -112,8 +92,8 @@ function getItems() {
             <li>Język marki dopasowany do odbiorców</li>
           </ul>
           <div className="mt-auto">
-            <Button arrow link={t.urls.contentCreation}>
-              {t.checkOffer}
+            <Button arrow link="/uslugi/tworzenie-tresci">
+              Sprawdź ofertę
             </Button>
           </div>
         </div>
@@ -131,8 +111,8 @@ function getItems() {
             <li>Automatyzacje i raporty efektów</li>
           </ul>
           <div className="mt-auto">
-            <Button arrow link={t.urls.marketing}>
-              {t.checkOffer}
+            <Button arrow link="/uslugi/marketing">
+              Sprawdź ofertę
             </Button>
           </div>
         </div>
@@ -142,7 +122,16 @@ function getItems() {
 }
 
 export default function ServicesSteps() {
-  const t = ui.pl;
   const items = getItems();
-  return <SectionSteps items={items} title={t.title} subtitle={t.subtitle} description={t.description} btnOne={t.btnOne} btnOneVariant="accent" btnOneLink={t.urls.contact} />;
+  return (
+    <SectionSteps
+      items={items}
+      title="Poznaj nasze usługi"
+      subtitle="Partner"
+      description="Posiadamy szeroką ofertę, dzięki czemu niezależnie od Twojej branży, celów i budżetu, jesteśmy w stanie zrealizować Twój plan"
+      btnOne="Skontaktuj się"
+      btnOneVariant="accent"
+      btnOneLink="/kontakt"
+    />
+  );
 }

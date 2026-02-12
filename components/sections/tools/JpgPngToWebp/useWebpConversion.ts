@@ -117,24 +117,7 @@ export function useWebpConversion(options: UseWebpConversionOptions) {
         setIsConverting(false);
       }
     },
-    [
-      options,
-      options.autoDownload,
-      options.autoDownloadMode,
-      options.files,
-      options.labels.addAtLeastOne,
-      options.labels.allProcessed,
-      options.labels.canvasNotSupported,
-      options.labels.conversionError,
-      options.labels.fileLoadError,
-      options.labels.imageLoadError,
-      options.labels.webpGenerationError,
-      options.quality,
-      options.setCopyInfo,
-      options.setFiles,
-      options.setGlobalError,
-      options.triggerDownloadFromUrl,
-    ],
+    [options],
   );
 
   return { isConverting, handleSubmit };

@@ -1,6 +1,7 @@
-const AHREFS_KEY = 'DuFNJGLL9m6id6EZLX+69g';
+const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY;
 
 export function loadAhrefs() {
+  if (!AHREFS_KEY) return;
   if (typeof document === 'undefined') return;
 
   const ahrefsSrc = 'https://analytics.ahrefs.com/analytics.js';

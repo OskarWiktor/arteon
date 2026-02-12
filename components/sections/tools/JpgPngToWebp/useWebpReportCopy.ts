@@ -56,7 +56,7 @@ export function useWebpReportCopy(options: UseWebpReportCopyOptions) {
 
     const ok = await options.copy(text);
     setCopyInfo(ok ? options.labels.reportCopied : options.labels.reportCopyError);
-  }, [options.copy, options.files, options.labels]);
+  }, [options]);
 
   return { copyInfo, setCopyInfo, handleCopySummary };
 }

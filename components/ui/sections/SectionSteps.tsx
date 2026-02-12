@@ -6,12 +6,6 @@ import { RiArrowDownSLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';
 import ButtonGroup from '../buttons/ButtonGroup';
 
-const ui = {
-  pl: {
-    sectionActions: 'Działania sekcji',
-  },
-} as const;
-
 interface SectionStepItem {
   icon?: ReactNode;
   imageSrc?: string;
@@ -64,7 +58,6 @@ export default function SectionSteps({
   showIndex = false,
   variant = 'default',
 }: SectionStepsProps) {
-  const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
   const isDark = overlay === 'black';
   const overlayClass = overlay === 'black' ? 'bg-black/70' : overlay === 'white' ? 'bg-white/70' : '';
@@ -149,7 +142,7 @@ export default function SectionSteps({
           btnTwo={btnTwo}
           btnTwoLink={btnTwoLink}
           spacing="loose"
-          ariaLabel={t.sectionActions}
+          ariaLabel="Działania sekcji"
           role="group"
         />
 

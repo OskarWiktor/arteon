@@ -2,16 +2,8 @@ import { OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/comp
 import blogData from '@/data/pl/blog.json';
 import projectsData from '@/data/pl/projects.json';
 
-export type SearchCategory = 'uslugi' | 'narzedzia' | 'edukacja' | 'realizacje' | 'inne';
-
-export type SearchItem = {
-  title: string;
-  description?: string;
-  href: string;
-  category: SearchCategory;
-  categoryLabel: string;
-  keywords?: string[];
-};
+import type { SearchCategory, SearchItem } from '@/types/search';
+export type { SearchCategory, SearchItem } from '@/types/search';
 
 const STATIC_PAGES: SearchItem[] = [
   {

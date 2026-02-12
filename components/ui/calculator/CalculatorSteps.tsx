@@ -6,15 +6,8 @@ import OptionInput from './OptionInput';
 import Button from '../buttons/Button';
 import type { Step } from '@/types/calculator';
 
-const ui = {
-  pl: {
-    back: 'Wstecz',
-    next: 'Dalej',
-    showEstimate: 'Pokaż wycenę',
-  },
-} as const;
-
-export type Selections = Record<number, string[]>;
+import type { Selections } from '@/types/ui';
+export type { Selections } from '@/types/ui';
 
 interface CalculatorStepsProps {
   step: Step;
@@ -58,9 +51,9 @@ export default function CalculatorSteps({ step, currentStep, activeSteps, select
 
       {(currentStep > 0 || hasSelection) && (
         <div className="mt-8 flex gap-6">
-          {currentStep > 0 && <Button onClick={onPrev}>{ui.pl.back}</Button>}
+          {currentStep > 0 && <Button onClick={onPrev}>Wstecz</Button>}
           <Button variant="accent" disabled={disableNext} onClick={onNext}>
-            {currentStep === activeSteps.length - 1 ? ui.pl.showEstimate : ui.pl.next}
+            {currentStep === activeSteps.length - 1 ? 'Pokaż wycenę' : 'Dalej'}
           </Button>
         </div>
       )}

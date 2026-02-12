@@ -3,13 +3,7 @@ import { RiArrowRightLine } from 'react-icons/ri';
 import Wrapper from '../ui/Wrapper';
 import SectionHeader from '../ui/typography/SectionHeader';
 import ButtonGroup from '../ui/buttons/ButtonGroup';
-import AppLink from '../ui/AppLink';
-
-const ui = {
-  pl: {
-    actionsLabel: 'Działania sekcji',
-  },
-} as const;
+import AppLink from '../ui/Link';
 
 interface CTASplitColumn {
   title: ReactNode;
@@ -49,8 +43,6 @@ export default function CTABanner({
   leftColumn,
   rightColumn,
 }: CTABannerProps) {
-  const t = ui.pl;
-
   if (variant === 'split') {
     return (
       <section data-section="cta-split">
@@ -118,7 +110,7 @@ export default function CTABanner({
             descriptionClassName={` mx-auto text-base leading-relaxed md:text-lg ${toneMutedClass}`}
           />
 
-          <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" align="center" ariaLabel={t.actionsLabel} role="group" />
+          <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} spacing="loose" align="center" ariaLabel="Działania sekcji" role="group" />
         </div>
       </Wrapper>
     </section>

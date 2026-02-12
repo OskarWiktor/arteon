@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Wrapper from '@/components/ui/Wrapper';
 
-type NavItem = { title: string; href: string; children?: NavItem[] };
+import type { NavItem } from '@/types/sitemap';
 
 type SitemapPageClientProps = {
   services: NavItem[];

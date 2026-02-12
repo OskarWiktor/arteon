@@ -1,30 +1,6 @@
 import { formatBytes } from '@/lib/tools/formatBytes';
-
-export type WebpConversionReportItem = {
-  inputSize: number;
-  outputSize?: number;
-};
-
-export type WebpConversionReportLabels = {
-  conversionReport: string;
-  fileCount: string;
-  totalSizeBefore: string;
-  totalSizeAfter: string;
-  savedWeight: string;
-  weightDifference: string;
-  less: string;
-  more: string;
-};
-
-export type WebpConversionCsvReportItem = {
-  name: string;
-  inputSize: number;
-  outputSize?: number;
-  ratio?: number;
-  usedQuality?: number;
-  status: string;
-  error?: string;
-};
+import type { WebpConversionReportItem, WebpConversionReportLabels, WebpConversionCsvReportItem } from '@/types/tools/image';
+export type { WebpConversionReportItem, WebpConversionReportLabels, WebpConversionCsvReportItem } from '@/types/tools/image';
 
 function escapeCsvValue(value: string): string {
   if (/["]/.test(value)) {

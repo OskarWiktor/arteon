@@ -42,7 +42,7 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
 
       await sleep(150);
     }
-  }, [options.files, options.setFiles, options.triggerDownloadFromUrl]);
+  }, [options]);
 
   const handleDownloadZip = useCallback(
     async ({ includeCsvReport }: { includeCsvReport: boolean }) => {
@@ -101,7 +101,7 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
         setIsZipping(false);
       }
     },
-    [options.files, options.setFiles, options.triggerDownloadFromUrl, options.zipGenerationError],
+    [options],
   );
 
   const handleDownloadSingle = useCallback(
@@ -123,7 +123,7 @@ export function useWebpDownloads(options: UseWebpDownloadsOptions) {
         ),
       );
     },
-    [options.files, options.setFiles, options.triggerDownloadFromUrl],
+    [options],
   );
 
   return { handleDownloadAll, handleDownloadZip, handleDownloadSingle, isZipping, zipError, setZipError };

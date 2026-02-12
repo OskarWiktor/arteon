@@ -1,10 +1,6 @@
-import { loadImage, type LoadImageOptions } from '@/lib/tools/loadImage';
-
-export type GetImageDataOptions = {
-  maxDimension?: number;
-  crossOrigin?: LoadImageOptions['crossOrigin'];
-  errorMessage?: string;
-};
+import { loadImage } from '@/lib/tools/loadImage';
+import type { GetImageDataOptions } from '@/types/tools/image';
+export type { GetImageDataOptions } from '@/types/tools/image';
 
 export async function getDownscaledImageDataFromUrl(url: string, options?: GetImageDataOptions): Promise<ImageData> {
   const img = await loadImage(url, {

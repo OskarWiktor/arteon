@@ -1,26 +1,5 @@
-import type { ReactNode } from 'react';
-
-export type BadgeVariant = 'default' | 'selected' | 'success' | 'error' | 'neutral' | 'dark' | 'warning' | 'info' | 'tech';
-export type BadgeSize = 'sm' | 'md' | 'lg';
-export type BadgeElement = 'span' | 'button' | 'label' | 'a';
-
-export interface BadgeProps {
-  children?: ReactNode;
-  text?: string;
-  variant?: BadgeVariant;
-  size?: BadgeSize;
-  as?: BadgeElement;
-  className?: string;
-  onClick?: () => void;
-  htmlFor?: string;
-  type?: 'button' | 'submit' | 'reset';
-  'aria-label'?: string;
-  href?: string;
-  download?: string;
-  target?: string;
-  rel?: string;
-  disabled?: boolean;
-}
+import type { BadgeVariant, BadgeSize, BadgeElement, BadgeProps } from '@/types/ui';
+export type { BadgeVariant, BadgeSize, BadgeElement, BadgeProps } from '@/types/ui';
 
 export default function Badge({ children, text, variant, size, as: Component, className = '', onClick, htmlFor, type, 'aria-label': ariaLabel, href, download, target, rel, disabled }: BadgeProps) {
   const isLegacyTextBadge =

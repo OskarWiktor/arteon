@@ -2,12 +2,6 @@ import type { ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';
 
-const ui = {
-  pl: {
-    sectionActions: 'Działania sekcji',
-  },
-} as const;
-
 interface SectionInfoProps {
   title: string;
   subtitle?: string;
@@ -21,14 +15,13 @@ interface SectionInfoProps {
 }
 
 export default function SectionInfo({ title, subtitle, description, btnOne, btnOneLink, btnTwo, btnTwoLink, children, id }: SectionInfoProps) {
-  const t = ui.pl;
   return (
     <div id={id}>
       <SectionHeader subtitle={subtitle} title={title} description={description} headingLevel="h2" headingClassName=" scroll-mt-26" />
 
       {children}
 
-      <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} ariaLabel={t.sectionActions} />
+      <ButtonGroup btnOne={btnOne} btnOneLink={btnOneLink} btnTwo={btnTwo} btnTwoLink={btnTwoLink} ariaLabel="Działania sekcji" />
     </div>
   );
 }

@@ -2,15 +2,6 @@
 
 import { useEffect, useMemo, useState } from 'react';
 
-const ui = {
-  pl: {
-    tableOfContents: 'Spis treści',
-    collapse: 'Zwiń',
-    showAll: 'Pokaż wszystko',
-    section: 'sekcja',
-  },
-} as const;
-
 type Entry = { id: string; text: string; level: 2 | 3 };
 
 type TableOfContentsProps = {
@@ -20,13 +11,12 @@ type TableOfContentsProps = {
 };
 
 export default function TableOfContents({ rootSelector = '#article-root', size = 'small', levels = 'h2+h3' }: TableOfContentsProps) {
-  const t = ui.pl;
   const [items, setItems] = useState<Entry[]>([]);
   const [activeId, setActiveId] = useState<string>('');
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    const sectionFallback = ui.pl.section;
+    const sectionFallback = 'sekcja';
     const root = (document.querySelector(rootSelector) as Document | Element) || document;
 
     const selector = levels === 'h2' ? 'h2' : 'h2, h3';
@@ -103,14 +93,14 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
         <div className="relative rounded-xl border border-black/10 bg-white/95 shadow-sm backdrop-blur">
           <div className="flex items-center justify-between p-2">
             <p className="text-light text-xs font-medium tracking-wider uppercase">
-              {t.tableOfContents} <span className="opacity-60">({items.length})</span>
+              Spis treści <span className="opacity-60">({items.length})</span>
             </p>
             <button type="button" aria-expanded={expanded} onClick={() => setExpanded((v) => !v)} className="text-xs underline">
-              {expanded ? t.collapse : t.showAll}
+              {expanded ? 'Zwiń' : 'Pokaż wszystko'}
             </button>
           </div>
 
-          <nav aria-label={t.tableOfContents} className="px-2 pb-2">
+          <nav aria-label="Spis treści" className="px-2 pb-2">
             <div className="relative">
               <div className={`overflow-y-auto ${expanded ? 'max-h-[70vh]' : 'max-h-40'} pr-1 pb-6`}>
                 <LinkList dense />
@@ -124,8 +114,8 @@ export default function TableOfContents({ rootSelector = '#article-root', size =
       {/* Desktop */}
       <aside className={`sticky top-24 hidden ${widthClass} self-start lg:block`}>
         <div className="surface-panel-solid p-4">
-          <p className="text-light mb-2 text-xs tracking-wider uppercase">{t.tableOfContents}</p>
-          <nav aria-label={t.tableOfContents}>
+          <p className="text-light mb-2 text-xs tracking-wider uppercase">Spis treści</p>
+          <nav aria-label="Spis treści">
             <LinkList />
           </nav>
         </div>

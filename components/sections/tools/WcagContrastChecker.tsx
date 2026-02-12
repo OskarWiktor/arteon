@@ -11,7 +11,7 @@ import ToolInfo from '@/components/ui/tools/ToolInfo';
 import Badge from '@/components/ui/Badge';
 import { getContrastRatio, parseColor } from '@/lib/tools/color/contrast';
 import { hslToRgb, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 const DEFAULT_FOREGROUND = rgbToHex({ r: 0, g: 0, b: 0 });
 const DEFAULT_BACKGROUND = rgbToHex({ r: 255, g: 255, b: 255 });
@@ -93,7 +93,7 @@ const ui = {
       iconAA: 'AA (min. 3:1)',
     },
   },
-} as const;
+} as const satisfies Record<Locale, unknown>;
 
 type WcagResult = {
   ratio: number | null;
@@ -285,7 +285,7 @@ export default function WcagContrastChecker() {
       <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <ToolSection className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <ToolFieldRow label={<span className="text-[14px]! font-medium">{t.sampleTextLabel}</span>}>
+            <ToolFieldRow label={<span className="tool-value">{t.sampleTextLabel}</span>}>
               <input id="text-sample" type="text" value={textSample} onChange={(e) => setTextSample(e.target.value)} className="tool-input h-10" placeholder={t.exampleTextPlaceholder} />
             </ToolFieldRow>
 
@@ -318,7 +318,7 @@ export default function WcagContrastChecker() {
                 </ToolFieldRow>
 
                 <ToolFieldRow
-                  label={<span className="text-[14px]! font-medium">{t.backgroundColorLabel}</span>}
+                  label={<span className="tool-value">{t.backgroundColorLabel}</span>}
                   helper={
                     <span className="text-xs! text-inherit">
                       {t.supportedFormats} <code className="rounded bg-black/5 px-1">#rrggbb</code>, <code className="rounded bg-black/5 px-1">#rgb</code>,{' '}
@@ -356,7 +356,7 @@ export default function WcagContrastChecker() {
               </div>
             </div>
 
-            <ToolFieldRow label={<span className="text-[14px]! font-medium">{t.matchTargetLabel}</span>}>
+            <ToolFieldRow label={<span className="tool-value">{t.matchTargetLabel}</span>}>
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
                 <select className="tool-select h-10" value={matchTarget} onChange={(e) => setMatchTarget(e.target.value as MatchTarget)}>
                   <option value="normalAA">
@@ -392,8 +392,8 @@ export default function WcagContrastChecker() {
               <ToolInfo className="space-y-2">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex min-w-0 items-center gap-3">
-                    <div className="h-8 w-8 rounded-lg border border-black/10" style={{ backgroundColor: matchedForeground }} aria-hidden="true" />
-                    <p className="text-dark truncate text-[14px]! leading-tight font-medium">{matchedForeground}</p>
+                    <div className="tool-color-swatch h-8 w-8" style={{ backgroundColor: matchedForeground }} aria-hidden="true" />
+                    <p className="tool-value text-dark truncate">{matchedForeground}</p>
                   </div>
 
                   <div className="flex flex-wrap items-center gap-2">
@@ -416,7 +416,7 @@ export default function WcagContrastChecker() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <div className="space-y-1">
-                <p className="text-[14px]! font-medium uppercase">{t.contrastRatio}</p>
+                <p className="tool-value uppercase">{t.contrastRatio}</p>
                 <p className="text-dark text-xl font-semibold">{formatRatio(result.ratio)}</p>
               </div>
               {hasError ? (
@@ -435,7 +435,7 @@ export default function WcagContrastChecker() {
 
           <ToolInfo className="space-y-2">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-[14px]! font-medium uppercase">{t.normalText}</p>
+              <p className="tool-value uppercase">{t.normalText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <ResultBadge ok={!!result.ratio && result.normalText.AA} label={t.badges.normalAA} />
                 <ResultBadge ok={!!result.ratio && result.normalText.AAA} label={t.badges.normalAAA} />
@@ -454,7 +454,7 @@ export default function WcagContrastChecker() {
 
           <ToolInfo className="space-y-2">
             <div className="items_center flex justify-between gap-2">
-              <p className="text-[14px]! font-medium uppercase">{t.largeText}</p>
+              <p className="tool-value uppercase">{t.largeText}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <ResultBadge ok={!!result.ratio && result.largeText.AA} label={t.badges.largeAA} />
                 <ResultBadge ok={!!result.ratio && result.largeText.AAA} label={t.badges.largeAAA} />
@@ -473,7 +473,7 @@ export default function WcagContrastChecker() {
 
           <ToolInfo className="space-y-2">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-[14px]! font-medium uppercase">{t.icon}</p>
+              <p className="tool-value uppercase">{t.icon}</p>
               <div className="flex flex-wrap items-center gap-1.5">
                 <ResultBadge ok={!!result.ratio && result.uiGraphics.AA} label={t.badges.iconAA} />
               </div>

@@ -1,52 +1,19 @@
-import type { ReactNode } from 'react';
 import { RiCheckFill } from 'react-icons/ri';
 import Button from '../buttons/Button';
 import ButtonGroup from '../buttons/ButtonGroup';
 import Badge from '../Badge';
 import IconText from '../IconText';
+import type { SectionPricesProps } from '@/types/ui';
+export type { SectionPricesPlan, Note, SectionPricesProps } from '@/types/ui';
 
-const ui = {
-  pl: {
-    defaultTitle: 'Przykładowe ceny',
-    defaultLegalNote: 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
-    featuredPlan: 'Wyróżniony plan',
-    planActions: 'Działania planu',
-    noteAriaLabel: 'Informacja',
-    includedInPlan: 'Zawarte w planie',
-  },
-} as const;
-
-export type SectionPricesPlan = {
-  name: string;
-  platform?: string;
-  price: string;
-  description: string;
-  features: string[];
-  lastPlan?: boolean;
-  badgeLabel?: string;
-  btnOne?: string;
-  btnOneLink?: string;
-  btnTwo?: string;
-  btnTwoLink?: string;
-};
-
-export type Note = {
-  text: ReactNode;
-  ctaLabel?: string;
-  ctaLink?: string;
-};
-
-export type SectionPricesProps = {
-  id?: string;
-  title?: string;
-  subtitle?: string;
-  plans?: SectionPricesPlan[];
-  note?: Note | null;
-  legalNote?: string;
-};
-
-export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTitle, subtitle, plans = [], note, legalNote = ui.pl.defaultLegalNote }: SectionPricesProps) {
-  const t = ui.pl;
+export default function SectionPrices({
+  id = 'pricing',
+  title = 'Przykładowe ceny',
+  subtitle,
+  plans = [],
+  note,
+  legalNote = 'Dokładne ceny ustalamy po zapoznaniu się z indywidualnymi potrzebami',
+}: SectionPricesProps) {
   const headingId = `${id}-heading`;
   const subtitleId = subtitle ? `${id}-subtitle` : undefined;
   const describedBy = subtitleId || undefined;
@@ -85,7 +52,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
               )}
             >
               {plan.badgeLabel && (
-                <Badge variant="warning" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label={t.featuredPlan}>
+                <Badge variant="warning" size="sm" className="absolute -top-3 left-4 font-semibold tracking-wider shadow-sm" aria-label="Wyróżniony plan">
                   {plan.badgeLabel}
                 </Badge>
               )}
@@ -114,7 +81,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
                     <li key={`${itemId}-f-${i}`}>
                       <IconText
                         icon={
-                          <span className="group-hover:ring-primary8 mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300" title={t.includedInPlan}>
+                          <span className="group-hover:ring-primary8 mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full ring-1 ring-neutral-300" title="Zawarte w planie">
                             <RiCheckFill className="h-3.5 w-3.5" />
                           </span>
                         }
@@ -137,7 +104,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
                   btnTwoLink={plan.btnTwoLink}
                   spacing="default"
                   align="left"
-                  ariaLabel={`${t.planActions}: ${plan.name}`}
+                  ariaLabel={`Działania planu: ${plan.name}`}
                   className="mt-6"
                 />
               ) : null}
@@ -147,7 +114,7 @@ export default function SectionPrices({ id = 'pricing', title = ui.pl.defaultTit
       </div>
 
       {note && (
-        <div className="mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label={t.noteAriaLabel}>
+        <div className="mt-8 rounded-2xl bg-gradient-to-br from-white to-neutral-50 p-6 shadow-sm ring-1 ring-neutral-200" role="note" aria-label="Informacja">
           <div className="text-mid text-[15px] leading-relaxed">{note.text}</div>
           {note.ctaLink && note.ctaLabel && (
             <div className="mt-4">

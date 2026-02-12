@@ -3,28 +3,19 @@ import Link from 'next/link';
 import type { ProjectPreview } from '@/types/project';
 import Button from './buttons/Button';
 
-const ui = {
-  pl: {
-    projectUrlPrefix: '/realizacje',
-    projectDetails: 'Szczegóły projektu',
-    projectImageAlt: 'Zrzut ekranu projektu',
-  },
-} as const;
-
 type Props = { project: ProjectPreview; size?: 'small' | 'normal' };
 
 export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
-  const t = ui.pl;
   const sizeClass = size === 'normal' ? 'aspect-[5/3]' : 'aspect-[2/1]';
 
   return (
     <Link
-      href={`${t.projectUrlPrefix}/${project.slug}`}
+      href={`/realizacje/${project.slug}`}
       className="group focus-visible:ring-primary block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
     >
       <article className="surface-card-lift flex h-full flex-col overflow-hidden">
         <div className={`relative ${sizeClass} w-full`}>
-          <Image src={project.image} alt={`${t.projectImageAlt} ${project.title}`} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" quality={100} />
+          <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" quality={100} />
         </div>
 
         <div className="flex grow flex-col px-6 py-4 md:px-7 md:py-5">
@@ -34,7 +25,7 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
           <div className="mt-auto">
             <div className="mt-4 mb-2 h-px w-full bg-neutral-200" aria-hidden="true" />
             <Button variant="normal" size="small" arrow className="border-0 shadow-none hover:translate-y-0 hover:shadow-none">
-              {t.projectDetails}
+              Szczegóły projektu
             </Button>
           </div>
         </div>

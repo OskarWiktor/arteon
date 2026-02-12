@@ -7,6 +7,8 @@ import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import Badge from '@/components/ui/Badge';
+import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
+import type { ToolStatus } from '@/lib/tools/types';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { downloadFromUrl } from '@/lib/tools/download';
 import { type FaviconOutputFile, generateFaviconOutputs } from '@/lib/tools/favicon/generator';
@@ -15,7 +17,7 @@ import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/
 import { loadImage } from '@/lib/tools/loadImage';
 import { revokeObjectUrl } from '@/lib/tools/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/lib/tools/zip';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string, locale: 'pl' | 'en' = 'pl') {
   const icons = outputs
@@ -123,9 +125,7 @@ const ui = {
     previewAndFilesLabel: 'Favicon preview and generated file list',
     faviconIcoLabel: 'favicon.ico (32x32 in ICO container)',
   },
-} as const;
-
-type FileStatus = 'idle' | 'processing' | 'done' | 'error';
+} as const satisfies Record<Locale, unknown>;
 
 const PNG_SIZES = [16, 32, 180, 192, 512];
 
@@ -136,7 +136,7 @@ export default function FaviconGenerator() {
   const t = ui[locale];
   const [sourceFile, setSourceFile] = useState<File | null>(null);
   const [sourcePreviewUrl, setSourcePreviewUrl] = useState<string | null>(null);
-  const [status, setStatus] = useState<FileStatus>('idle');
+  const [status, setStatus] = useState<ToolStatus>('idle');
   const [error, setError] = useState<string | null>(null);
 
   const [selectedSizes, setSelectedSizes] = useState<number[]>([16, 32, 180, 192, 512]);
@@ -309,14 +309,10 @@ export default function FaviconGenerator() {
             <div>
               <h2 className="h6 mb-2">{t.addBaseImageLabel}</h2>
               <ToolFileDropzone accept={SUPPORTED_IMAGE_UPLOAD_TYPES.join(',')} onFiles={handleFiles} className="tool-upload-area">
-                <span className="mb-1 text-sm! font-medium">{t.dragDropImage}</span>
-                <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
-                <Badge variant="default" size="sm" className="bg-white shadow-sm">
-                  {t.supportedFormats}
-                </Badge>
+                <ToolUploadContent dragLabel={t.dragDropImage} clickLabel={t.clickToSelect} formatsLabel={t.supportedFormats} />
               </ToolFileDropzone>
               {sourceFile && (
-                <p className="text-light mt-2 text-xs!">
+                <p className="tool-meta mt-2">
                   {t.selectedFile} <strong>{sourceFile.name}</strong> ({formatBytes(sourceFile.size)})
                 </p>
               )}
@@ -331,7 +327,7 @@ export default function FaviconGenerator() {
               <h3 className="h6 mt-8 mb-2">{t.setSizesAndBackground}</h3>
 
               <ToolInfo>
-                <p className="mb-2! text-[14px]! font-medium">{t.pngSizes}</p>
+                <p className="tool-value mb-2!">{t.pngSizes}</p>
                 <div className="flex flex-wrap gap-2">
                   {PNG_SIZES.map((size) => {
                     const checked = selectedSizes.includes(size);
@@ -352,13 +348,13 @@ export default function FaviconGenerator() {
               <ToolInfo className="mt-4 gap-2">
                 <div className="flex items-center gap-2">
                   <input id="transparent-bg" type="checkbox" checked={transparentBackground} onChange={(e) => setTransparentBackground(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="transparent-bg" className="text-[14px]! font-medium">
+                  <label htmlFor="transparent-bg" className="tool-value">
                     {t.transparentBackground}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="text-light text-xs!">{t.backgroundColor}</span>
+                  <span className="tool-meta">{t.backgroundColor}</span>
                   <input type="color" value={backgroundColor} onChange={(e) => setBackgroundColor(e.target.value)} disabled={transparentBackground} className="tool-color-picker h-8! w-7!" />
                 </div>
               </ToolInfo>
@@ -366,21 +362,21 @@ export default function FaviconGenerator() {
               <ToolInfo className="mt-4 flex flex-wrap items-center gap-2">
                 <div className="flex items-center gap-2">
                   <input id="include-ico" type="checkbox" checked={includeIco} onChange={(e) => setIncludeIco(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="include-ico" className="text-[14px]! font-medium">
+                  <label htmlFor="include-ico" className="tool-value">
                     {t.generateFaviconIco}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <input id="include-webmanifest" type="checkbox" checked={includeWebmanifest} onChange={(e) => setIncludeWebmanifest(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="include-webmanifest" className="text-[14px]! font-medium">
+                  <label htmlFor="include-webmanifest" className="tool-value">
                     {t.includeWebmanifest}
                   </label>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="tool-checkbox" />
-                  <label htmlFor="auto-download" className="text-[14px]! font-medium">
+                  <label htmlFor="auto-download" className="tool-value">
                     {t.autoDownload}
                   </label>
                 </div>
@@ -428,7 +424,7 @@ export default function FaviconGenerator() {
           <div className="flex items-center justify-between gap-2">
             <h2 className="h6">{t.previewAndFiles}</h2>
             {anyOutputs && (
-              <p className="text-light text-xs!">
+              <p className="tool-meta">
                 {t.totalSize} <strong>{formatBytes(totalSize)}</strong>
               </p>
             )}
@@ -446,8 +442,8 @@ export default function FaviconGenerator() {
               ].map((f) => (
                 <div key={f.name} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
                   <div className="min-w-0 flex-1">
-                    <p className="text-dark truncate text-[14px]! font-medium">{f.name}</p>
-                    <p className="text-light text-xs!">
+                    <p className="tool-value text-dark truncate">{f.name}</p>
+                    <p className="tool-meta">
                       {f.label} · {f.size}
                     </p>
                   </div>
@@ -462,14 +458,14 @@ export default function FaviconGenerator() {
           {hasSource && (
             <ToolInfo className="flex flex-wrap items-center gap-4">
               <div>
-                <p className="mb-2 text-[14px]! font-medium">{t.previewBaseImage}</p>
+                <p className="tool-value mb-2">{t.previewBaseImage}</p>
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded border border-neutral-300 bg-white">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.previewFavicon} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-light text-xs!">{t.approximatePreview}</span>
+                    <span className="tool-meta">{t.approximatePreview}</span>
                   </div>
 
                   <div className="hidden items-center gap-2 md:flex">
@@ -477,7 +473,7 @@ export default function FaviconGenerator() {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {sourcePreviewUrl && <img src={sourcePreviewUrl} alt={t.largeIconPreview} className="h-full w-full object-cover" />}
                     </div>
-                    <span className="text-light text-xs!">{t.largeIconPreview}</span>
+                    <span className="tool-meta">{t.largeIconPreview}</span>
                   </div>
                 </div>
               </div>
@@ -501,9 +497,9 @@ export default function FaviconGenerator() {
 
                     <div className="min-w-0 flex-1">
                       <div title={item.fileName}>
-                        <p className="text-dark truncate text-[14px]! font-medium">{item.fileName}</p>
+                        <p className="tool-value text-dark truncate">{item.fileName}</p>
                       </div>
-                      <p className="text-light text-xs!">
+                      <p className="tool-meta">
                         {item.label} · {formatBytes(item.sizeBytes)}
                       </p>
                     </div>

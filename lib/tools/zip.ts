@@ -1,7 +1,5 @@
-export type ZipFileInput = {
-  path: string;
-  data: Uint8Array;
-};
+import type { ZipFileInput } from '@/types/tools/zip';
+export type { ZipFileInput } from '@/types/tools/zip';
 
 const CRC32_TABLE = (() => {
   const table = new Uint32Array(256);

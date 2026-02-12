@@ -8,7 +8,8 @@ import ToolHelper from '@/components/ui/tools/ToolHelper';
 import Button from '@/components/ui/buttons/Button';
 import { analyzeText, evaluateLength, formatReadingTime, formatReportText, getPageTypes, type PageType, type LengthStatus } from '@/lib/tools/text/wordCount';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { useLocale } from '@/lib/LocaleContext';
+import { getStatusClasses } from '@/lib/tools/statusClasses';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -57,21 +58,7 @@ const ui = {
     analysisFor: 'Analysis for',
     wordsUnit: 'words',
   },
-} as const;
-
-function getStatusClasses(status: LengthStatus): string {
-  switch (status) {
-    case 'ideal':
-      return 'bg-success-bg text-success-text border-success-border';
-    case 'too-short':
-      return 'bg-warning-bg text-warning-text border-warning-border';
-    case 'too-long':
-      return 'bg-error-bg text-error-text border-error-border';
-    case 'empty':
-    default:
-      return 'bg-neutral-100 text-mid border-neutral-200';
-  }
-}
+} as const satisfies Record<Locale, unknown>;
 
 function getStatusLabel(status: LengthStatus, t: { noText: string; tooShort: string; tooLong: string; ideal: string }): string {
   switch (status) {
@@ -130,30 +117,30 @@ export default function WordCountTool() {
 
         <div className="space-y-3">
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-[14px]! font-medium">{t.words}</span>
+            <span className="tool-value">{t.words}</span>
             <strong className="text-dark text-lg">{metrics.words}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-[14px]! font-medium">{t.charsWithSpaces}</span>
+            <span className="tool-value">{t.charsWithSpaces}</span>
             <strong className="text-dark">{metrics.charsWithSpaces}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-[14px]! font-medium">{t.charsWithoutSpaces}</span>
+            <span className="tool-value">{t.charsWithoutSpaces}</span>
             <strong className="text-dark">{metrics.charsWithoutSpaces}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-[14px]! font-medium">{t.paragraphs}</span>
+            <span className="tool-value">{t.paragraphs}</span>
             <strong className="text-dark">{metrics.paragraphs}</strong>
           </div>
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <span className="text-[14px]! font-medium">{t.readingTime}</span>
+            <span className="tool-value">{t.readingTime}</span>
             <strong className="text-dark">{formatReadingTime(metrics.readingTimeMinutes, locale)}</strong>
           </div>
         </div>
 
         <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <span className="text-[14px]! font-medium">{t.lengthEvaluation}</span>
+            <span className="tool-value">{t.lengthEvaluation}</span>
             <span className={`tool-badge ${getStatusClasses(evaluation.status)}`}>{getStatusLabel(evaluation.status, t)}</span>
           </div>
 
@@ -161,14 +148,14 @@ export default function WordCountTool() {
             <div className={`h-full transition-all duration-300 ${getProgressBarColor(evaluation.status)}`} style={{ width: `${Math.min(evaluation.percentage, 100)}%` }} />
           </div>
 
-          <div className="flex items-center justify-between text-xs!">
-            <span className="text-light text-xs!">{t.recommendedRange}:</span>
-            <span className="text-xs! font-medium">
+          <div className="flex items-center justify-between">
+            <span className="tool-meta">{t.recommendedRange}:</span>
+            <span className="tool-meta font-medium">
               {pageTypeConfig.minWords}–{pageTypeConfig.maxWords} {t.wordsUnit}
             </span>
           </div>
 
-          {evaluation.status !== 'empty' && <p className="text-light mt-2 text-xs!">{evaluation.message}</p>}
+          {evaluation.status !== 'empty' && <p className="tool-meta mt-2">{evaluation.message}</p>}
         </div>
 
         <Button variant="normal" size="small" onClick={handleCopyReport} disabled={metrics.words === 0} className="w-full" aria-label={copied ? t.copied : t.copyReport}>
@@ -198,7 +185,7 @@ export default function WordCountTool() {
         </ToolFieldRow>
 
         <div className="rounded-lg border border-neutral-200 bg-white p-3">
-          <p className="text-light text-xs!">{pageTypeConfig.description}</p>
+          <p className="tool-meta">{pageTypeConfig.description}</p>
         </div>
 
         <ToolFieldRow label={t.pasteText}>

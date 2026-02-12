@@ -1,32 +1,6 @@
 import QRCode from 'qrcode';
-
-export type QrDataType = 'url' | 'text' | 'vcard' | 'email' | 'phone';
-
-export type QrOptions = {
-  data: string;
-  size: number;
-  margin: number;
-  darkColor: string;
-  lightColor: string;
-  errorCorrectionLevel: 'L' | 'M' | 'Q' | 'H';
-};
-
-export type VCardData = {
-  firstName: string;
-  lastName: string;
-  organization?: string;
-  title?: string;
-  phone?: string;
-  email?: string;
-  website?: string;
-  address?: string;
-};
-
-export type EmailData = {
-  to: string;
-  subject?: string;
-  body?: string;
-};
+import type { QrOptions, VCardData, EmailData } from '@/types/tools/qr';
+export type { QrDataType, QrOptions, VCardData, EmailData } from '@/types/tools/qr';
 
 export function buildVCardString(data: VCardData): string {
   const lines = ['BEGIN:VCARD', 'VERSION:3.0', `N:${data.lastName};${data.firstName};;;`, `FN:${data.firstName} ${data.lastName}`];
@@ -81,29 +55,4 @@ export async function generateQrSvg(options: QrOptions): Promise<string> {
   return svg;
 }
 
-export function calculateContrast(hex1: string, hex2: string): number {
-  const lum1 = getLuminance(hex1);
-  const lum2 = getLuminance(hex2);
-  const lighter = Math.max(lum1, lum2);
-  const darker = Math.min(lum1, lum2);
-  return (lighter + 0.05) / (darker + 0.05);
-}
-
-function getLuminance(hex: string): number {
-  const rgb = hexToRgb(hex);
-  const [r, g, b] = rgb.map((c) => {
-    const sRGB = c / 255;
-    return sRGB <= 0.03928 ? sRGB / 12.92 : Math.pow((sRGB + 0.055) / 1.055, 2.4);
-  });
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-}
-
-function hexToRgb(hex: string): [number, number, number] {
-  const clean = hex.replace('#', '');
-  const bigint = parseInt(clean, 16);
-  return [(bigint >> 16) & 255, (bigint >> 8) & 255, bigint & 255];
-}
-
-export function isContrastSufficient(hex1: string, hex2: string): boolean {
-  return calculateContrast(hex1, hex2) >= 3;
-}
+export { calculateHexContrast as calculateContrast, isHexContrastSufficient as isContrastSufficient } from '@/lib/tools/color/contrast';

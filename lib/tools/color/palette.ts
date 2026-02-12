@@ -1,17 +1,6 @@
-import type { HSL } from '@/lib/tools/color/types';
+import type { HSL, PaletteColor, PaletteGroup } from '@/types/tools/color';
+export type { PaletteColor, PaletteGroupId, PaletteGroup } from '@/types/tools/color';
 import { clamp, hexToRgb, hslToRgb, normalizeHex, rgbToHex, rgbToHsl } from '@/lib/tools/color/convert';
-
-export type PaletteColor = {
-  hex: string;
-  hsl: HSL;
-};
-
-export type PaletteGroupId = 'monochromatic' | 'analogous' | 'complementary' | 'triadic' | 'split-complementary' | 'soft-pastel' | 'deep-dark' | 'material-tonal' | 'apple-minimal';
-
-export type PaletteGroup = {
-  id: PaletteGroupId;
-  colors: PaletteColor[];
-};
 
 function rotateHue(h: number, delta: number): number {
   const value = (h + delta) % 360;

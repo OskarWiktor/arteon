@@ -2,6 +2,9 @@ import type { ReactNode } from 'react';
 
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
+import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
+
+const t = DESKTOP_ONLY_UI.en;
 
 export default function DesktopOnlyToolsLayout({ children }: { children: ReactNode }) {
   return (
@@ -12,11 +15,11 @@ export default function DesktopOnlyToolsLayout({ children }: { children: ReactNo
         <Wrapper>
           <Gap size="xl" />
           <section className="mx-auto max-w-xl rounded-2xl border border-black/10 bg-white/90 p-6 text-sm shadow-sm">
-            <h2 className="mb-3 text-lg font-semibold">This tool works on a larger screen</h2>
-            <p className="text-mid mb-3">To use this tool comfortably, open it on a laptop, desktop computer, or tablet in landscape mode.</p>
+            <h2 className="mb-3 text-lg font-semibold">{t.title}</h2>
+            <p className="text-mid mb-3">{t.description}</p>
             <div className="text-light rounded-xl bg-neutral-50 px-4 py-3 text-xs">
-              <p className="mb-1 font-medium">Tip</p>
-              <p>If you are using a tablet, switch it to landscape mode — when the window width is large enough, the tool will load automatically.</p>
+              <p className="mb-1 font-medium">{t.tipTitle}</p>
+              <p>{t.tipText}</p>
             </div>
           </section>
           <Gap size="xl" />

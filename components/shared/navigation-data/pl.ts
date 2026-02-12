@@ -1,4 +1,7 @@
-import type { IconType } from 'react-icons';
+import type { HeaderNavItem, AboutNavItem, OfferSection, LegalLinkPL } from '@/types/navigation';
+import type { ToolsSection } from '@/types/tools/common';
+export type { HeaderNavItemKey, HeaderNavItem, AboutItemKey, AboutNavItem, OfferSectionKey, OfferItemKey, OfferSectionItem, OfferSection, LegalLinkKey } from '@/types/navigation';
+export type { ToolsSectionKey, ToolItemKey, ToolSectionItem, ToolsSection } from '@/types/tools/common';
 
 import {
   RiAppsLine,
@@ -32,15 +35,6 @@ import {
   RiTShirt2Line,
 } from 'react-icons/ri';
 
-export type HeaderNavItemKey = 'realizacje' | 'uslugi' | 'oNas' | 'edukacja' | 'narzedzia' | 'kontakt';
-
-export type HeaderNavItem = {
-  key: HeaderNavItemKey;
-  href: string;
-  label: string;
-  exact?: boolean;
-};
-
 export const DESKTOP_NAV_ITEMS_PL: HeaderNavItem[] = [
   { key: 'realizacje', href: '/realizacje', label: 'Realizacje', exact: true },
   { key: 'uslugi', href: '/uslugi', label: 'Usługi' },
@@ -52,60 +46,10 @@ export const DESKTOP_NAV_ITEMS_PL: HeaderNavItem[] = [
 
 export const MOBILE_NAV_ITEMS_PL: HeaderNavItem[] = DESKTOP_NAV_ITEMS_PL.filter((it) => it.key !== 'uslugi');
 
-export type AboutItemKey = 'faq' | 'joinNetwork';
-
-export type AboutNavItem = {
-  key: AboutItemKey;
-  href: string;
-  title: string;
-  icon?: IconType;
-};
-
 export const ABOUT_NAV_ITEMS_PL: AboutNavItem[] = [
   { key: 'faq', href: '/o-nas/faq', title: 'FAQ', icon: RiFileList2Line },
   { key: 'joinNetwork', href: '/o-nas/dolacz-do-sieci', title: 'Dołącz do sieci', icon: RiTeamLine },
 ];
-
-export type OfferSectionKey = 'witryny' | 'marketing' | 'grafika' | 'tresc';
-
-export type OfferItemKey =
-  | 'websites'
-  | 'shops'
-  | 'blogs'
-  | 'auditSeo'
-  | 'optimizationSeo'
-  | 'positioning'
-  | 'priceList'
-  | 'visualIdentity'
-  | 'loyaltyCard'
-  | 'catalogs'
-  | 'coupons'
-  | 'websiteDesign'
-  | 'logo'
-  | 'restaurantMenu'
-  | 'companyClothing'
-  | 'companyPaper'
-  | 'socialTemplates'
-  | 'offerFolder'
-  | 'flyers'
-  | 'businessCards'
-  | 'contentCreation';
-
-export type OfferSectionItem = {
-  key: OfferItemKey;
-  href: string;
-  title: string;
-  desc?: string;
-  icon?: IconType;
-};
-
-export type OfferSection = {
-  key: OfferSectionKey;
-  title: string;
-  hubHref?: string;
-  icon?: IconType;
-  items: OfferSectionItem[];
-};
 
 export const OFFER_SECTIONS_PL: OfferSection[] = [
   {
@@ -203,26 +147,6 @@ export const OFFER_SECTIONS_PL: OfferSection[] = [
     ],
   },
 ];
-
-export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk';
-
-export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'wordCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette' | 'qrCode';
-
-export type ToolSectionItem = {
-  key: ToolItemKey;
-  href: string;
-  title: string;
-  description: string;
-  image: string;
-  icon?: IconType;
-};
-
-export type ToolsSection = {
-  key: ToolsSectionKey;
-  title: string;
-  icon?: IconType;
-  items: ToolSectionItem[];
-};
 
 export const TOOLS_SECTIONS_PL: ToolsSection[] = [
   {
@@ -342,15 +266,9 @@ export const TOOLS_SECTIONS_PL: ToolsSection[] = [
   },
 ];
 
-export type LegalLinkKey = 'regulamin' | 'privacy';
+export type LegalLink = LegalLinkPL;
 
-export type LegalLink = {
-  key: LegalLinkKey;
-  href: string;
-  label: string;
-};
-
-export const LEGAL_LINKS_PL: LegalLink[] = [
+export const LEGAL_LINKS_PL: LegalLinkPL[] = [
   { key: 'regulamin', href: '/regulamin', label: 'Regulamin świadczenia usług' },
   { key: 'privacy', href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
 ];

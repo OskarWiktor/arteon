@@ -2,79 +2,68 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
+import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
+import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
 
-const TOOL_SLUG_MAP: Record<string, string> = {
-  // PL → EN
-  'jpg-png-na-webp-bez-limitu': 'jpg-png-to-webp-unlimited',
-  'edytor-zdjec-online': 'online-image-editor',
-  'darmowy-generator-favicon-ico': 'free-favicon-generator',
-  'licznik-dlugosci-meta-title-i-description': 'meta-title-description-length-checker',
-  'licznik-slow-i-znakow': 'word-and-character-counter',
-  'darmowy-generator-stopki-mailowej': 'free-email-signature-generator',
-  'sprawdz-czytelnosc-kolorow': 'color-contrast-checker',
-  'ekstraktor-kolorow-z-obrazu': 'image-color-extractor',
-  'generator-palet-kolorow': 'color-palette-generator',
-  'darmowy-generator-kodow-qr': 'free-qr-code-generator',
-  // EN → PL (reverse)
-  'jpg-png-to-webp-unlimited': 'jpg-png-na-webp-bez-limitu',
-  'online-image-editor': 'edytor-zdjec-online',
-  'free-favicon-generator': 'darmowy-generator-favicon-ico',
-  'meta-title-description-length-checker': 'licznik-dlugosci-meta-title-i-description',
-  'word-and-character-counter': 'licznik-slow-i-znakow',
-  'free-email-signature-generator': 'darmowy-generator-stopki-mailowej',
-  'color-contrast-checker': 'sprawdz-czytelnosc-kolorow',
-  'image-color-extractor': 'ekstraktor-kolorow-z-obrazu',
-  'color-palette-generator': 'generator-palet-kolorow',
-  'free-qr-code-generator': 'darmowy-generator-kodow-qr',
+type AlternateLink = {
+  locale: Locale;
+  href: string;
+  label: string;
+  hreflang: string;
+  title: string;
 };
 
-function getAlternateHref(pathname: string, currentLocale: 'pl' | 'en'): string | null {
-  if (currentLocale === 'pl') {
-    // /narzedzia → /en/tools
-    if (pathname === '/narzedzia') return '/en/tools';
+const switchTitle: Record<Locale, string> = {
+  pl: 'Przejdź na polski',
+  en: 'Switch to English',
+};
 
-    // /narzedzia/[slug] → /en/tools/[en-slug]
-    const plMatch = pathname.match(/^\/narzedzia\/(.+?)(?:\/instrukcja)?$/);
-    if (plMatch) {
-      const enSlug = TOOL_SLUG_MAP[plMatch[1]];
-      return enSlug ? `/en/tools/${enSlug}` : null;
-    }
+function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLink[] {
+  const links: AlternateLink[] = [];
+
+  for (const targetLocale of SUPPORTED_LOCALES) {
+    if (targetLocale === currentLocale) continue;
+
+    const href = getAlternateToolHref(pathname, currentLocale, targetLocale);
+    if (!href) continue;
+
+    const config = LOCALE_CONFIG[targetLocale];
+    links.push({
+      locale: targetLocale,
+      href,
+      label: config.label,
+      hreflang: config.hreflang,
+      title: switchTitle[targetLocale] ?? `Switch to ${config.name}`,
+    });
   }
 
-  if (currentLocale === 'en') {
-    // /en/tools → /narzedzia
-    if (pathname === '/en/tools') return '/narzedzia';
-
-    // /en/tools/[slug] → /narzedzia/[pl-slug]
-    const enMatch = pathname.match(/^\/en\/tools\/(.+)$/);
-    if (enMatch) {
-      const plSlug = TOOL_SLUG_MAP[enMatch[1]];
-      return plSlug ? `/narzedzia/${plSlug}` : null;
-    }
-  }
-
-  return null;
+  return links;
 }
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
 
-  const alternateHref = getAlternateHref(pathname, locale);
+  const links = getAlternateLinks(pathname, locale);
 
-  if (!alternateHref) return null;
+  if (links.length === 0) return null;
 
-  const targetLabel = locale === 'pl' ? 'EN' : 'PL';
-
+  // For 2 languages: single button (like before)
+  // For 3+ languages: render all buttons inline
   return (
-    <Link
-      href={alternateHref}
-      className="inline-flex items-center rounded-md border border-black/10 bg-white px-2.5 py-1 text-xs font-semibold tracking-wide uppercase transition hover:bg-neutral-100"
-      hrefLang={locale === 'pl' ? 'en' : 'pl'}
-      title={locale === 'pl' ? 'Switch to English' : 'Przejdź na polski'}
-    >
-      {targetLabel}
-    </Link>
+    <div className="flex items-center gap-1">
+      {links.map((link) => (
+        <Link
+          key={link.locale}
+          href={link.href}
+          className="inline-flex items-center rounded-md border border-black/10 bg-white px-2.5 py-1 text-xs font-semibold tracking-wide uppercase transition hover:bg-neutral-100"
+          hrefLang={link.hreflang}
+          title={link.title}
+        >
+          {link.label}
+        </Link>
+      ))}
+    </div>
   );
 }

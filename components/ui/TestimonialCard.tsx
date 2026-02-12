@@ -4,12 +4,6 @@ import Link from 'next/link';
 import type { Testimonial } from '@/types/testimonial';
 import { StarRating } from './StarRating';
 
-const ui = {
-  pl: {
-    viewSource: 'Zobacz opinię u źródła',
-  },
-} as const;
-
 type Props = { item: Testimonial };
 
 const MAX_WORDS = 32;
@@ -45,7 +39,7 @@ export default function TestimonialCard({ item }: Props) {
       {item.link && (
         <p className="mt-5">
           <Link href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm underline underline-offset-4 transition hover:opacity-80">
-            {ui.pl.viewSource}
+            Zobacz opinię u źródła
           </Link>
         </p>
       )}

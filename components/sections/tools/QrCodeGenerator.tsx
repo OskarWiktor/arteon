@@ -20,7 +20,7 @@ import {
   type EmailData,
 } from '@/lib/tools/qr/generateQr';
 import { downloadFromUrl } from '@/lib/tools/download';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -117,7 +117,7 @@ const ui = {
     },
     printTip: 'For printed materials, we recommend a minimum size of 300px and error correction level H.',
   },
-} as const;
+} as const satisfies Record<Locale, unknown>;
 
 const DEFAULT_SIZE = 300;
 const DEFAULT_MARGIN = 2;
@@ -398,7 +398,7 @@ export default function QrCodeGenerator() {
           <ToolAlert variant="warning">
             {t.contrastWarning}
             <br />
-            <span className="text-xs!">
+            <span className="tool-meta">
               {t.contrastRatio}: {contrastValue}:1 ({t.recommended})
             </span>
           </ToolAlert>
@@ -411,6 +411,7 @@ export default function QrCodeGenerator() {
             style={{ backgroundColor: lightColor, minWidth: Math.min(size, 300) + 32, minHeight: Math.min(size, 300) + 32 }}
           >
             {qrDataUrl ? (
+              /* eslint-disable-next-line @next/next/no-img-element -- QR code is a generated data URL, next/image is not applicable */
               <img src={qrDataUrl} alt="QR Code" style={{ width: Math.min(size, 300), height: Math.min(size, 300) }} className="block" />
             ) : (
               <ToolInfo className="text-center">

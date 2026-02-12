@@ -6,6 +6,7 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import Badge from '@/components/ui/Badge';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
+import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { downloadFromUrl } from '@/lib/tools/download';
 import { formatBytes } from '@/lib/tools/formatBytes';
@@ -13,7 +14,7 @@ import { useWebpQueue } from '@/components/sections/tools/JpgPngToWebp/useWebpQu
 import { useWebpConversion } from '@/components/sections/tools/JpgPngToWebp/useWebpConversion';
 import { useWebpDownloads } from '@/components/sections/tools/JpgPngToWebp/useWebpDownloads';
 import { useWebpReportCopy } from '@/components/sections/tools/JpgPngToWebp/useWebpReportCopy';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -172,12 +173,7 @@ const ui = {
       { name: 'website-banner.jpg', before: '500 KB', after: '185 KB', diff: '63%' },
     ],
   },
-} as const;
-
-// helper do faktycznego pobierania (jedno źródło prawdy)
-function triggerDownloadFromUrl(url: string, filename: string) {
-  downloadFromUrl(url, filename);
-}
+} as const satisfies Record<Locale, unknown>;
 
 export default function JpgPngToWebp() {
   const locale = useLocale();
@@ -191,6 +187,8 @@ export default function JpgPngToWebp() {
   const [autoZipRequestId, setAutoZipRequestId] = useState(0);
   const handledAutoZipRequestId = useRef(0);
   const { files, setFiles, globalError, setGlobalError, addFiles, removeFile, reconvertFile, clearAll, previewFile } = useWebpQueue({ addJpgPngOnlyError: t.addJpgPngOnly });
+
+  const triggerDownloadFromUrl = downloadFromUrl;
 
   const { copyInfo, setCopyInfo, handleCopySummary } = useWebpReportCopy({
     files,
@@ -286,11 +284,7 @@ export default function JpgPngToWebp() {
           <div>
             <h2 className="h6 mb-2">{t.addFiles}</h2>
             <ToolFileDropzone accept="image/jpeg,image/png" multiple onFiles={addFiles} className="tool-upload-area">
-              <span className="mb-1 text-sm! font-medium">{t.dragDropImages}</span>
-              <span className="text-light mb-2 text-xs!">{t.clickToSelect}</span>
-              <Badge variant="default" size="sm" className="bg-white shadow-sm">
-                {t.supportedFormats}
-              </Badge>
+              <ToolUploadContent dragLabel={t.dragDropImages} clickLabel={t.clickToSelect} formatsLabel={t.supportedFormats} />
             </ToolFileDropzone>
             {globalError && (
               <ToolAlert variant="error" className="mt-2">
@@ -303,14 +297,14 @@ export default function JpgPngToWebp() {
             <h3 className="h6 mt-8 mb-2">{t.setQuality}</h3>
             <div className="flex items-center">
               <input type="range" min={60} max={95} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="tool-range" />
-              <span className="w-16 text-right text-[14px]! font-medium">{quality}%</span>
+              <span className="tool-value w-16 text-right">{quality}%</span>
             </div>
-            <span className="text-light mt-3 text-xs!">{t.qualityHelper}</span>
+            <span className="tool-meta mt-3">{t.qualityHelper}</span>
 
             <div className="mt-3 flex items-center">
               <input id="auto-download" type="checkbox" checked={autoDownload} onChange={(e) => setAutoDownload(e.target.checked)} className="tool-checkbox" />
               <label htmlFor="auto-download" className="cursor-pointer pl-2">
-                <span className="text-[14px]! font-medium">{t.autoDownloadAll}</span>
+                <span className="tool-value">{t.autoDownloadAll}</span>
               </label>
             </div>
 
@@ -320,7 +314,7 @@ export default function JpgPngToWebp() {
                   type="button"
                   onClick={() => setAutoDownloadMode('files')}
                   disabled={isConverting}
-                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'files' ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
+                  className={`tool-button ${autoDownloadMode === 'files' ? 'tool-button-active' : 'tool-button-inactive'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
                 >
                   {t.autoDownloadModeFiles}
                 </button>
@@ -328,7 +322,7 @@ export default function JpgPngToWebp() {
                   type="button"
                   onClick={() => setAutoDownloadMode('zip')}
                   disabled={isConverting}
-                  className={`inline-flex items-center rounded-md border px-3 py-1.5 text-[14px]! font-medium ${autoDownloadMode === 'zip' ? 'bg-primary border-black text-white' : 'border-black/10 bg-white hover:bg-neutral-100'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
+                  className={`tool-button ${autoDownloadMode === 'zip' ? 'tool-button-active' : 'tool-button-inactive'} ${isConverting ? 'cursor-not-allowed opacity-40' : ''}`}
                 >
                   {t.autoDownloadModeZip}
                 </button>
@@ -341,11 +335,11 @@ export default function JpgPngToWebp() {
             {total > 0 && (
               <div className="mb-3 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-light text-xs!">
+                  <span className="tool-meta">
                     {t.inQueue} <strong>{total}</strong> {t.files}
                   </span>
                   {total > 0 && (
-                    <span className="text-light text-xs!">
+                    <span className="tool-meta">
                       {locale === 'en' ? 'Completed' : 'Zakończone'}: {completed} / {total}
                     </span>
                   )}
@@ -381,7 +375,7 @@ export default function JpgPngToWebp() {
             <div className="mt-3 flex items-center">
               <input id="webp-include-csv" type="checkbox" checked={includeCsvReport} onChange={(e) => setIncludeCsvReport(e.target.checked)} disabled={isZipping} className="tool-checkbox" />
               <label htmlFor="webp-include-csv" className="cursor-pointer pl-2">
-                <span className="text-[14px]! font-medium">{t.includeCsvReport}</span>
+                <span className="tool-value">{t.includeCsvReport}</span>
               </label>
             </div>
 
@@ -398,15 +392,15 @@ export default function JpgPngToWebp() {
 
             {totalInput > 0 && (
               <div className="mt-6">
-                <p className="text-light text-xs!">
+                <p className="tool-meta">
                   {t.totalInputSize} <strong>{formatBytes(totalInput)}</strong>
                 </p>
                 {totalOutput > 0 && (
                   <>
-                    <p className="text-light text-xs!">
+                    <p className="tool-meta">
                       {t.totalOutputSize} <strong>{formatBytes(totalOutput)}</strong>
                     </p>
-                    <p className="text-light text-xs!">
+                    <p className="tool-meta">
                       {totalSaved >= 0 ? (
                         <>
                           {t.totalSaved}:{' '}
@@ -433,7 +427,7 @@ export default function JpgPngToWebp() {
               <Button variant="normal" size="small" onClick={handleCopySummary} disabled={!anyDone} className="border-0 shadow-none hover:translate-y-0 hover:shadow-none disabled:opacity-40">
                 {t.copySummary}
               </Button>
-              {copyInfo && <span className="text-light text-xs!">{copyInfo}</span>}
+              {copyInfo && <span className="tool-meta">{copyInfo}</span>}
             </div>
           </div>
         </form>
@@ -443,7 +437,7 @@ export default function JpgPngToWebp() {
         <div className="flex items-center justify-between gap-2">
           <h2 className="h6">{t.queueFilesHeading}</h2>
           {files.length > 0 && (
-            <p className="text-light text-xs!">
+            <p className="tool-meta">
               {t.readyCount}: {readyCount} · {t.pendingCount}: {pendingCount}
             </p>
           )}
@@ -455,8 +449,8 @@ export default function JpgPngToWebp() {
               {t.demoFiles.map((f) => (
                 <div key={f.name} className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 md:flex-row md:items-center md:justify-between">
                   <div className="min-w-0 flex-1">
-                    <p className="text-dark truncate text-[14px]! font-medium">{f.name}</p>
-                    <p className="text-light text-xs!">
+                    <p className="tool-value text-dark truncate">{f.name}</p>
+                    <p className="tool-meta">
                       {t.sizeBefore} {f.before} · {t.sizeAfter} {f.after} ({f.diff} {t.less})
                     </p>
                   </div>
@@ -468,7 +462,7 @@ export default function JpgPngToWebp() {
             </div>
 
             <div className="rounded-xl border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm!">
-              <p className="text-light text-xs!">
+              <p className="tool-meta">
                 {t.demoSummary} <strong>1.96 MB (~64% {t.less})</strong>
               </p>
             </div>
@@ -501,9 +495,9 @@ export default function JpgPngToWebp() {
 
                     <div className="min-w-0 flex-1">
                       <div title={item.file.name}>
-                        <p className="text-dark truncate text-[14px]! font-medium">{item.file.name}</p>
+                        <p className="tool-value text-dark truncate">{item.file.name}</p>
                       </div>
-                      <p className="text-light text-xs!">
+                      <p className="tool-meta">
                         {t.sizeBefore} {formatBytes(item.inputSize)}
                         {item.outputSize != null && (
                           <>
@@ -521,7 +515,7 @@ export default function JpgPngToWebp() {
                         )}
                       </p>
                       {item.usedQuality && (
-                        <p className="text-light text-xs!">
+                        <p className="tool-meta">
                           {t.usedQuality} {item.usedQuality}%
                         </p>
                       )}

@@ -1,14 +1,5 @@
 import CopyButton from './buttons/CopyButton';
 
-const ui = {
-  pl: {
-    copyCode: 'Skopiuj kod',
-    copied: 'Skopiowano',
-    copy: 'Kopiuj',
-    codeFragment: 'Fragment kodu',
-  },
-} as const;
-
 type CodeBlockProps = {
   code: string;
   language?: string;
@@ -21,8 +12,6 @@ type CodeBlockProps = {
 };
 
 export default function CodeBlock({ code, language, filename, caption, showLineNumbers = true, wrap = false, highlightLines = [], className = '' }: CodeBlockProps) {
-  const t = ui.pl;
-
   const lines = code.replace(/\n$/, '').split('\n');
 
   return (
@@ -34,13 +23,13 @@ export default function CodeBlock({ code, language, filename, caption, showLineN
           {language ? <span className="inline-block rounded bg-white/10 px-2 py-0.5 text-xs text-white/70">{language}</span> : null}
           {filename ? <span className="truncate text-xs text-white/70">{filename}</span> : null}
         </div>
-        <CopyButton text={code} label={t.copy} copiedLabel={t.copied} variant="dark" className="gap-2 rounded-md px-2 py-1 text-xs" />
+        <CopyButton text={code} label="Kopiuj" copiedLabel="Skopiowano" variant="dark" className="gap-2 rounded-md px-2 py-1 text-xs" />
       </div>
 
       <pre
         className={`relative overflow-x-auto rounded-b-xl p-4 text-[13px] leading-relaxed ${wrap ? 'break-words whitespace-pre-wrap' : 'whitespace-pre'}`}
         role="region"
-        aria-label={filename || t.codeFragment}
+        aria-label={filename || 'Fragment kodu'}
       >
         <code className="grid grid-cols-[auto_1fr] gap-x-4">
           {lines.map((ln, i) => {

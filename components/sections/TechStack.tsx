@@ -49,15 +49,7 @@ const techStackItems: TechStackItem[] = [
   { label: 'Wix', icon: SiWix },
 ];
 
-const ui = {
-  pl: {
-    heading: 'Jakiej technologii używamy?',
-    scrollableListAriaLabel: 'Przewijana lista technologii. Ustaw fokus, najedź lub dotknij, aby wstrzymać przewijanie.',
-  },
-} as const;
-
 export default function TechStack() {
-  const t = ui.pl;
   const baseVelocity = 30;
   const x = useMotionValue(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -88,7 +80,7 @@ export default function TechStack() {
       ro.disconnect();
       clearFontMeasure();
     };
-  }, [measure]);
+  }, [measure, startFontMeasure, clearFontMeasure]);
 
   useAnimationFrame((t, delta) => {
     if (isPaused || reduceMotion || loopWidth === 0) return;
@@ -106,13 +98,13 @@ export default function TechStack() {
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
       <h2 id="techstack-heading" className="h4 mb-4 md:mb-6 lg:mb-8">
-        {t.heading}
+        Jakiej technologii używamy?
       </h2>
 
       <div
         ref={containerRef}
         className="focus-visible:ring-primary overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-        aria-label={t.scrollableListAriaLabel}
+        aria-label="Przewijana lista technologii. Ustaw fokus, najedź lub dotknij, aby wstrzymać przewijanie."
         tabIndex={0}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}

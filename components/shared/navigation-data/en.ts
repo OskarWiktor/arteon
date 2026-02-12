@@ -1,37 +1,13 @@
-import type { IconType } from 'react-icons';
-
 import { RiAppsLine, RiArticleLine, RiContrast2Line, RiCropLine, RiFileTextLine, RiImageEditLine, RiMailLine, RiPaletteLine, RiPantoneLine, RiQrCodeLine, RiSearchLine } from 'react-icons/ri';
 
-import type { ToolItemKey, ToolsSectionKey, LegalLinkKey } from '@/components/shared/navigation-data/pl';
-
-export type HeaderNavItemKeyEN = 'tools';
-
-export type HeaderNavItemEN = {
-  key: HeaderNavItemKeyEN;
-  href: string;
-  label: string;
-  exact?: boolean;
-};
+import type { HeaderNavItemEN, LegalLinkEN } from '@/types/navigation';
+import type { ToolsSectionEN } from '@/types/tools/common';
+export type { HeaderNavItemKeyEN, HeaderNavItemEN, LegalLinkEN } from '@/types/navigation';
+export type { ToolSectionItemEN, ToolsSectionEN } from '@/types/tools/common';
 
 export const DESKTOP_NAV_ITEMS_EN: HeaderNavItemEN[] = [{ key: 'tools', href: '/en/tools', label: 'Tools' }];
 
 export const MOBILE_NAV_ITEMS_EN: HeaderNavItemEN[] = DESKTOP_NAV_ITEMS_EN;
-
-export type ToolSectionItemEN = {
-  key: ToolItemKey;
-  href: string;
-  title: string;
-  description: string;
-  image: string;
-  icon?: IconType;
-};
-
-export type ToolsSectionEN = {
-  key: ToolsSectionKey;
-  title: string;
-  icon?: IconType;
-  items: ToolSectionItemEN[];
-};
 
 export const TOOLS_SECTIONS_EN: ToolsSectionEN[] = [
   {
@@ -150,12 +126,6 @@ export const TOOLS_SECTIONS_EN: ToolsSectionEN[] = [
     ],
   },
 ];
-
-export type LegalLinkEN = {
-  key: LegalLinkKey;
-  href: string;
-  label: string;
-};
 
 export const LEGAL_LINKS_EN: LegalLinkEN[] = [
   { key: 'regulamin', href: '/regulamin', label: 'Terms of Service' },

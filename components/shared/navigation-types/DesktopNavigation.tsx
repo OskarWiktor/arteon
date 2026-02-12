@@ -7,25 +7,28 @@ import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 import Wrapper from '@/components/ui/Wrapper';
 import AppLink from '@/components/ui/Link';
-import { ABOUT_NAV_ITEMS_PL, DESKTOP_NAV_ITEMS_PL, OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL, type OfferSectionKey, type ToolsSectionKey } from '@/components/shared/navigation-data/pl';
+import { ABOUT_NAV_ITEMS_PL, DESKTOP_NAV_ITEMS_PL, OFFER_SECTIONS_PL, type OfferSectionKey } from '@/components/shared/navigation-data/pl';
+import { useLocale } from '@/lib/LocaleContext';
+import { getToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
+import { NAVIGATION_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
 import { RiArrowDownSLine, RiArrowRightSLine } from 'react-icons/ri';
 
-const ui = {
-  pl: {
-    closeServicesList: 'Zamknij listę usług',
-    openServicesList: 'Otwórz listę usług',
-    closeToolsList: 'Zamknij listę narzędzi',
-    openToolsList: 'Otwórz listę narzędzi',
-    closeAboutList: 'Zamknij listę O nas',
-    openAboutList: 'Otwórz listę O nas',
-  },
+const plUi = {
+  closeServicesList: 'Zamknij listę usług',
+  openServicesList: 'Otwórz listę usług',
+  closeAboutList: 'Zamknij listę O nas',
+  openAboutList: 'Otwórz listę O nas',
 } as const;
 
 export default function DesktopNavigation() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const isPl = locale === 'pl';
+  const t = NAVIGATION_UI[locale];
+  const localeConfig = LOCALE_CONFIG[locale];
+  const toolsSections = getToolsSections(locale);
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
@@ -112,18 +115,20 @@ export default function DesktopNavigation() {
     setActiveToolsCategory(key);
   }, []);
 
-  const navigationItems = DESKTOP_NAV_ITEMS_PL;
+  const navigationItems = isPl ? DESKTOP_NAV_ITEMS_PL : [];
 
-  const activeSection = OFFER_SECTIONS_PL.find((s) => s.key === activeOfferCategory) || OFFER_SECTIONS_PL[0];
-  const activeToolsSection = TOOLS_SECTIONS_PL.find((s) => s.key === activeToolsCategory) || TOOLS_SECTIONS_PL[0];
+  const activeSection = isPl ? OFFER_SECTIONS_PL.find((s) => s.key === activeOfferCategory) || OFFER_SECTIONS_PL[0] : null;
+  const activeToolsSection = toolsSections.find((s) => s.key === activeToolsCategory) || toolsSections[0];
 
-  const aboutItems = ABOUT_NAV_ITEMS_PL.map((item) => {
-    const Icon = item.icon;
-    return {
-      ...item,
-      icon: Icon ? <Icon className="text-primary h-5 w-5" /> : undefined,
-    };
-  });
+  const aboutItems = isPl
+    ? ABOUT_NAV_ITEMS_PL.map((item) => {
+        const Icon = item.icon;
+        return {
+          ...item,
+          icon: Icon ? <Icon className="text-primary h-5 w-5" /> : undefined,
+        };
+      })
+    : [];
 
   const handleOfferButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
     if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
@@ -155,12 +160,69 @@ export default function DesktopNavigation() {
 
   const handleAboutMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => aboutMenuKeyboard.onKeyDown(e);
 
+  const toolsHref = localeConfig.toolsIndexHref;
+  const isToolsActive = pathname.startsWith(localeConfig.toolsBasePath);
+
   return (
     <div className="hidden lg:flex lg:items-center lg:gap-4">
       <LayoutGroup>
         <ul className="relative flex items-center gap-4 lg:gap-6">
+          {/* Tools link + dropdown rendered at correct position for non-PL (standalone) */}
+          {!isPl && (
+            <li ref={toolsLiRef} className="group relative flex items-center gap-0.5">
+              <AppLink href={toolsHref} variant="navigation" aria-current={isToolsActive ? 'page' : undefined} className={isToolsActive ? 'text-dark font-semibold' : ''}>
+                {t.toolsLabel}
+              </AppLink>
+
+              <button
+                id={toolsButtonId}
+                type="button"
+                onClick={() => setIsToolsOpen((p) => !p)}
+                onKeyDown={handleToolsButtonKeyDown}
+                aria-haspopup="menu"
+                aria-expanded={isToolsOpen}
+                aria-controls={toolsMenuId}
+                ref={toolsBtnRef}
+                className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
+              >
+                <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                  <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
+                </motion.span>
+              </button>
+            </li>
+          )}
+
+          {/* PL nav items (Tools rendered in correct order within the loop) */}
           {navigationItems.map(({ href, label, exact, key: itemKey }) => {
             const isActivePage = exact ? pathname === href : pathname.startsWith(href);
+
+            if (itemKey === 'narzedzia') {
+              return (
+                <li ref={toolsLiRef} className="group relative flex items-center gap-0.5" key={label}>
+                  <AppLink href={toolsHref} variant="navigation" aria-current={isToolsActive ? 'page' : undefined} className={isToolsActive ? 'text-dark font-semibold' : ''}>
+                    {t.toolsLabel}
+                  </AppLink>
+
+                  <button
+                    id={toolsButtonId}
+                    type="button"
+                    onClick={() => setIsToolsOpen((p) => !p)}
+                    onKeyDown={handleToolsButtonKeyDown}
+                    aria-haspopup="menu"
+                    aria-expanded={isToolsOpen}
+                    aria-controls={toolsMenuId}
+                    ref={toolsBtnRef}
+                    className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
+                  >
+                    <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                      <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
+                    </motion.span>
+                  </button>
+                </li>
+              );
+            }
 
             if (itemKey === 'uslugi') {
               const isActive = pathname.startsWith('/uslugi');
@@ -180,37 +242,9 @@ export default function DesktopNavigation() {
                     aria-controls={menuId}
                     ref={offerBtnRef}
                     className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    aria-label={isOfferOpen ? t.closeServicesList : t.openServicesList}
+                    aria-label={isOfferOpen ? plUi.closeServicesList : plUi.openServicesList}
                   >
                     <motion.span animate={{ rotate: isOfferOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                      <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
-                    </motion.span>
-                  </button>
-                </li>
-              );
-            }
-
-            if (itemKey === 'narzedzia') {
-              const isActive = pathname.startsWith('/narzedzia');
-              return (
-                <li ref={toolsLiRef} className="group relative flex items-center gap-0.5" key={label}>
-                  <AppLink href={href} variant="navigation" aria-current={isActive ? 'page' : undefined} className={isActive ? 'text-dark font-semibold' : ''}>
-                    {label}
-                  </AppLink>
-
-                  <button
-                    id={toolsButtonId}
-                    type="button"
-                    onClick={() => setIsToolsOpen((p) => !p)}
-                    onKeyDown={handleToolsButtonKeyDown}
-                    aria-haspopup="menu"
-                    aria-expanded={isToolsOpen}
-                    aria-controls={toolsMenuId}
-                    ref={toolsBtnRef}
-                    className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    aria-label={isToolsOpen ? t.closeToolsList : t.openToolsList}
-                  >
-                    <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
                   </button>
@@ -236,7 +270,7 @@ export default function DesktopNavigation() {
                     aria-controls={aboutMenuId}
                     ref={aboutBtnRef}
                     className="text-primary hover:bg-primary-light focus-visible:ring-primary mr-[-14px] flex h-7 w-7 cursor-pointer items-center justify-center rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    aria-label={isAboutOpen ? t.closeAboutList : t.openAboutList}
+                    aria-label={isAboutOpen ? plUi.closeAboutList : plUi.openAboutList}
                   >
                     <motion.span animate={{ rotate: isAboutOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <RiArrowDownSLine className="h-4 w-4" aria-hidden="true" />
@@ -257,10 +291,11 @@ export default function DesktopNavigation() {
         </ul>
       </LayoutGroup>
 
-      {mounted &&
+      {isPl &&
+        mounted &&
         createPortal(
           <AnimatePresence>
-            {isOfferOpen && (
+            {isOfferOpen && activeSection && (
               <motion.div
                 ref={offerPanelRef}
                 id={menuId}
@@ -359,7 +394,7 @@ export default function DesktopNavigation() {
                   <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid grid-cols-5 gap-0">
                     <div className="border-primary-light border-r pr-4">
                       <div className="flex flex-col gap-1">
-                        {TOOLS_SECTIONS_PL.map((section) => {
+                        {toolsSections.map((section) => {
                           const isActiveCategory = activeToolsCategory === section.key;
                           const CategoryIcon = section.icon;
                           return (
@@ -421,7 +456,8 @@ export default function DesktopNavigation() {
           document.body,
         )}
 
-      {mounted &&
+      {isPl &&
+        mounted &&
         createPortal(
           <AnimatePresence>
             {isAboutOpen && (

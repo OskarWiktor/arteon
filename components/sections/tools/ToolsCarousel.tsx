@@ -2,9 +2,8 @@
 
 import { useMemo, useRef } from 'react';
 
-import { TOOLS_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
-import { TOOLS_SECTIONS_EN } from '@/components/shared/navigation-data/en';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
+import { getToolsSections } from '@/lib/i18n/tool-registry';
 import { CarouselDots } from '@/components/ui/carousel/CarouselDots';
 import { CarouselNavButtons } from '@/components/ui/carousel/CarouselNavButtons';
 import { CarouselCard } from '@/components/ui/carousel/CarouselCard';
@@ -46,7 +45,7 @@ const ui = {
       tools: '/en/tools',
     },
   },
-} as const;
+} as const satisfies Record<Locale, unknown>;
 
 type Props = {
   max?: number;
@@ -61,7 +60,7 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
-  const toolsSections = locale === 'en' ? TOOLS_SECTIONS_EN : TOOLS_SECTIONS_PL;
+  const toolsSections = getToolsSections(locale);
   const items = useMemo(() => {
     return toolsSections.flatMap((section) => section.items).slice(0, max);
   }, [max, toolsSections]);

@@ -23,13 +23,7 @@ interface FaqPanelsProps {
   showIcons?: boolean;
 }
 
-const ui = {
-  pl: {
-    defaultTitle: 'Najczęstsze pytania',
-  },
-} as const;
-
-export default function FaqPanels({ items, title = ui.pl.defaultTitle, subtitle, generateSchema = true, pageUrl, openByDefault = 0, variant = 'default', showIcons = false }: FaqPanelsProps) {
+export default function FaqPanels({ items, title = 'Najczęstsze pytania', subtitle, generateSchema = true, pageUrl, openByDefault = 0, variant = 'default', showIcons = false }: FaqPanelsProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const btnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const scriptId = useId();

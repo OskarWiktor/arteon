@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react';
+import type { GapSize } from '@/types/ui';
 
-export type Size = 'xs' | 'sm' | 'md' | 'xl';
+export type Size = GapSize;
 
 type GapStyle = CSSProperties & { ['--gap-h']?: string };
 

@@ -6,11 +6,11 @@ import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolInfo from '@/components/ui/tools/ToolInfo';
 import ToolHelper from '@/components/ui/tools/ToolHelper';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
-import CopyButton from '@/components/ui/buttons/CopyButton';
+import ToolColorSwatch from '@/components/ui/tools/ToolColorSwatch';
 import { useTimeout } from '@/hooks/useTimeout';
 import { formatHsl, normalizeHex, randomHexColor, rgbToHex } from '@/lib/tools/color/convert';
-import { createPaletteFromHex, type PaletteColor, type PaletteGroupId } from '@/lib/tools/color/palette';
-import { useLocale } from '@/lib/LocaleContext';
+import { createPaletteFromHex, type PaletteGroupId } from '@/lib/tools/color/palette';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 
 const ui = {
   pl: {
@@ -119,7 +119,7 @@ const ui = {
       },
     },
   },
-} as const;
+} as const satisfies Record<Locale, unknown>;
 
 function getPaletteMeta(t: (typeof ui)['pl'] | (typeof ui)['en']): Record<PaletteGroupId, { label: string; description: string }> {
   return {
@@ -137,25 +137,11 @@ function getPaletteMeta(t: (typeof ui)['pl'] | (typeof ui)['en']): Record<Palett
 
 const DEFAULT_BASE_COLOR = rgbToHex({ r: 79, g: 107, b: 245 });
 
-function Swatch({ color, onCopy, copied: _copied, t }: { color: PaletteColor; onCopy: (hex: string) => void; copied: boolean; t: { colorPreview: string; copy: string; copied: string } }) {
-  return (
-    <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white px-3 py-2">
-      <div className="h-9 w-9 rounded-lg border border-black/10" style={{ backgroundColor: color.hex }} aria-label={`${t.colorPreview} ${color.hex}`} />
-      <div className="min-w-0 flex-1">
-        <p className="text-dark text-[14px]! leading-tight font-medium">{color.hex}</p>
-        <p className="text-light truncate text-xs!">{formatHsl(color.hsl)}</p>
-      </div>
-      <CopyButton text={color.hex} label={t.copy} copiedLabel={t.copied} onCopy={() => onCopy(color.hex)} />
-    </div>
-  );
-}
-
 export default function ColorPaletteGenerator() {
   const locale = useLocale();
   const t = ui[locale];
   const [baseColor, setBaseColor] = useState(DEFAULT_BASE_COLOR);
   const [inputColor, setInputColor] = useState(DEFAULT_BASE_COLOR);
-  const [copiedHex, setCopiedHex] = useState<string | null>(null);
   const { start: startCopiedReset } = useTimeout();
 
   const normalizedBase = useMemo(() => normalizeHex(baseColor), [baseColor]);
@@ -185,9 +171,8 @@ export default function ColorPaletteGenerator() {
     setInputColor(random);
   };
 
-  const handleCopy = (hex: string) => {
-    setCopiedHex(hex);
-    startCopiedReset(() => setCopiedHex(null), 1200);
+  const handleCopy = () => {
+    startCopiedReset(() => {}, 1200);
   };
 
   return (
@@ -211,9 +196,9 @@ export default function ColorPaletteGenerator() {
 
             {normalizedBase && (
               <ToolInfo className="flex items-center gap-3">
-                <div className="h-7 w-7 rounded-lg border border-black/10" style={{ backgroundColor: normalizedBase }} aria-label={t.currentBaseColor} />
+                <div className="tool-color-swatch h-7 w-7" style={{ backgroundColor: normalizedBase }} aria-label={t.currentBaseColor} />
                 <div className="min-w-0">
-                  <p className="text-dark text-[14px]! leading-tight font-medium">{normalizedBase}</p>
+                  <p className="tool-value text-dark">{normalizedBase}</p>
                   <ToolHelper className="text-xs!">{t.baseColorHelper}</ToolHelper>
                 </div>
               </ToolInfo>
@@ -241,13 +226,21 @@ export default function ColorPaletteGenerator() {
               <ToolInfo key={group.id} className="space-y-2">
                 <div className="flex items-center justify-between gap-2">
                   <div>
-                    <p className="text-[14px]! font-medium">{group.label}</p>
+                    <p className="tool-value">{group.label}</p>
                     <ToolHelper>{group.description}</ToolHelper>
                   </div>
                 </div>
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
                   {group.colors.map((color) => (
-                    <Swatch key={`${group.id}-${color.hex}-${color.hsl.l}`} color={color} onCopy={handleCopy} copied={copiedHex === color.hex} t={t} />
+                    <ToolColorSwatch
+                      key={`${group.id}-${color.hex}-${color.hsl.l}`}
+                      hex={color.hex}
+                      secondaryText={formatHsl(color.hsl)}
+                      ariaLabelPrefix={t.colorPreview}
+                      copyLabel={t.copy}
+                      copiedLabel={t.copied}
+                      onCopy={handleCopy}
+                    />
                   ))}
                 </div>
               </ToolInfo>

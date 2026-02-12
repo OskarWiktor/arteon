@@ -17,15 +17,6 @@ function getFallbackAltFromImagePath(imagePath: string): string | undefined {
   return cleaned || undefined;
 }
 
-const ui = {
-  pl: {
-    quickLinks: 'Szybkie linki',
-  },
-  en: {
-    quickLinks: 'Quick links',
-  },
-} as const;
-
 interface HeroBannerProps {
   buttonTopOne?: string;
   buttonTopOneLink?: string;
@@ -72,7 +63,6 @@ export default function HeroBanner({
   variant = 'left',
   overlay = 'none',
 }: HeroBannerProps) {
-  const t = ui.pl;
   const hasBg = Boolean(backgroundImage);
 
   const isDarkOverlay = overlay === 'black';
@@ -120,7 +110,7 @@ export default function HeroBanner({
               </Eyebrow>
             )}
             {topButtons.length > 0 && (
-              <nav aria-label={t.quickLinks} className="mt-4">
+              <nav aria-label="Szybkie linki" className="mt-4">
                 <ul className={`max-w-[92vw] ${justify} flex flex-wrap gap-2 md:gap-3`}>
                   {topButtons.map(({ text, link }, i) => (
                     <li key={i}>

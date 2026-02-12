@@ -13,17 +13,8 @@ const ui = {
   },
 } as const;
 
-type Crumb = { href: string; label: string };
-
-export type BreadcrumbsProps = {
-  second: Crumb;
-  third: Crumb;
-  fourth?: Crumb;
-  className?: string;
-  includeJsonLd?: boolean;
-  siteUrl?: string;
-  locale?: 'pl' | 'en';
-};
+import type { Crumb, BreadcrumbsProps } from '@/types/ui';
+export type { Crumb, BreadcrumbsProps } from '@/types/ui';
 
 const DEFAULT_SITE = 'https://www.arteonagency.pl';
 

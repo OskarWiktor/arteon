@@ -13,20 +13,6 @@ import testimonialsPl from '@/data/pl/testimonials.json';
 
 const AUTO_PLAY_INTERVAL_MS = 4000;
 
-const ui = {
-  pl: {
-    defaultTitle: 'Opinie współprac i realizacji',
-    carouselLabel: 'Karuzela opinii',
-    scrollLeft: 'Przewiń w lewo',
-    scrollRight: 'Przewiń w prawo',
-    carouselNavigation: 'Nawigacja karuzeli',
-    goToSlide: 'Przejdź do slajdu',
-    of: 'z',
-    slide: 'Slajd',
-    testimonial: 'Opinia',
-  },
-} as const;
-
 type Props = {
   title?: string;
   subtitle?: string;
@@ -36,8 +22,7 @@ type Props = {
   variant?: 'default' | 'large';
 };
 
-export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subtitle, testimonials, ids, max = 12, variant = 'default' }: Props) {
-  const t = ui.pl;
+export default function TestimonialsCarousel({ title = 'Opinie współprac i realizacji', subtitle, testimonials, ids, max = 12, variant = 'default' }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
 
@@ -97,7 +82,7 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
         <SectionHeader subtitle={subtitle} title={title} headingLevel="h2" headingClassName="" titleId="testimonials-heading" />
 
         <div className="relative px-12 py-8 md:px-16">
-          <div className="mx-auto max-w-3xl text-center" role="region" aria-roledescription="carousel" aria-label={t.carouselLabel} aria-live="polite">
+          <div className="mx-auto max-w-3xl text-center" role="region" aria-roledescription="carousel" aria-label="Karuzela opinii" aria-live="polite">
             <div className="mb-6 flex justify-center gap-1">
               {[...Array(5)].map((_, starIdx) => (
                 <RiStarFill key={starIdx} className="text-accent h-6 w-6" />
@@ -110,10 +95,10 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
 
           {items.length > 1 && (
             <>
-              <button type="button" onClick={handlePrevLarge} className={`${navBtnLarge} left-0`} aria-label={t.scrollLeft}>
+              <button type="button" onClick={handlePrevLarge} className={`${navBtnLarge} left-0`} aria-label="Przewiń w lewo">
                 <RiArrowLeftSLine className="h-6 w-6" aria-hidden="true" />
               </button>
-              <button type="button" onClick={handleNextLarge} className={`${navBtnLarge} right-0`} aria-label={t.scrollRight}>
+              <button type="button" onClick={handleNextLarge} className={`${navBtnLarge} right-0`} aria-label="Przewiń w prawo">
                 <RiArrowRightSLine className="h-6 w-6" aria-hidden="true" />
               </button>
             </>
@@ -125,10 +110,10 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
           currentSlide={largeSlide}
           maxSlides={items.length}
           onDotClick={handleDotClickLarge}
-          carouselNavigationLabel={t.carouselNavigation}
-          goToSlideLabel={t.goToSlide}
-          ofLabel={t.of}
-          slideLabel={t.slide}
+          carouselNavigationLabel="Nawigacja karuzeli"
+          goToSlideLabel="Przejdź do slajdu"
+          ofLabel="z"
+          slideLabel="Slajd"
         />
       </section>
     );
@@ -144,7 +129,7 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
           className="no-scrollbar focus-visible:ring-primary flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           role="region"
           aria-roledescription="carousel"
-          aria-label={t.carouselLabel}
+          aria-label="Karuzela opinii"
           aria-live="polite"
           tabIndex={0}
           onKeyDown={onKeyDown}
@@ -160,14 +145,14 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
                   : null
               }
               className="w-[320px] shrink-0 snap-start md:w-[420px] lg:w-[520px]"
-              aria-label={`${t.testimonial} ${i + 1} ${t.of} ${items.length}`}
+              aria-label={`Opinia ${i + 1} z ${items.length}`}
             >
               <CarouselCard variant="testimonial" item={item} />
             </div>
           ))}
         </div>
 
-        <CarouselNavButtons isScrollable={isScrollable} onPrev={() => scrollByCards('left')} onNext={() => scrollByCards('right')} prevLabel={t.scrollLeft} nextLabel={t.scrollRight} />
+        <CarouselNavButtons isScrollable={isScrollable} onPrev={() => scrollByCards('left')} onNext={() => scrollByCards('right')} prevLabel="Przewiń w lewo" nextLabel="Przewiń w prawo" />
       </div>
 
       <CarouselDots
@@ -175,10 +160,10 @@ export default function TestimonialsCarousel({ title = ui.pl.defaultTitle, subti
         currentSlide={currentSlide}
         maxSlides={maxSlides}
         onDotClick={goToSlide}
-        carouselNavigationLabel={t.carouselNavigation}
-        goToSlideLabel={t.goToSlide}
-        ofLabel={t.of}
-        slideLabel={t.slide}
+        carouselNavigationLabel="Nawigacja karuzeli"
+        goToSlideLabel="Przejdź do slajdu"
+        ofLabel="z"
+        slideLabel="Slajd"
       />
     </section>
   );

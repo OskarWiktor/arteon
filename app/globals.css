@@ -397,6 +397,24 @@ textarea {
   @apply rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3;
 }
 
+.tool-value {
+  @apply text-[14px]! leading-tight font-medium;
+  color: var(--foreground);
+}
+
+.tool-meta {
+  @apply text-xs!;
+  color: var(--text-light);
+}
+
+.tool-row {
+  @apply flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2;
+}
+
+.tool-color-swatch {
+  @apply rounded-lg border border-black/10;
+}
+
 .calc-option-button {
   @apply relative flex items-start gap-3 rounded-2xl border p-4 text-left transition hover:cursor-pointer;
 }

@@ -1,8 +1,9 @@
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
-import AppLink from '@/components/ui/AppLink';
+import AppLink from '@/components/ui/Link';
 import type { Metadata } from 'next';
+import type { NavItem } from '@/types/sitemap';
 
 import blogData from '@/data/pl/blog.json';
 import projectsData from '@/data/pl/projects.json';
@@ -14,8 +15,6 @@ export const metadata: Metadata = {
   description: 'Mapa strony Arteon - przegląd najważniejszych sekcji i podstron: usługi, realizacje, blog, narzędzia, informacje.',
   alternates: { canonical: 'https://www.arteonagency.pl/mapa-strony' },
 };
-
-type NavItem = { title: string; href: string; children?: NavItem[] };
 
 type Article = {
   slug: string;
@@ -107,10 +106,10 @@ const tools: NavItem[] = [
   { title: 'Generator favicon online', href: '/narzedzia/darmowy-generator-favicon-ico' },
   { title: 'Licznik meta title i description', href: '/narzedzia/licznik-dlugosci-meta-title-i-description' },
   { title: 'Generator stopki mailowej HTML', href: '/narzedzia/darmowy-generator-stopki-mailowej' },
-  { title: 'Tester kontrastu WCAG', href: '/narzedzia/tester-kontrastu-kolorow-wcag' },
-  { title: 'Generator schematów kolorów', href: '/narzedzia/generator-schematow-kolorow' },
+  { title: 'Kontrast i czytelność kolorów', href: '/narzedzia/kontrast-i-czytelnosc-kolorow' },
+  { title: 'Generator palet kolorów', href: '/narzedzia/generator-palet-kolorow' },
   { title: 'Ekstraktor kolorów z obrazu', href: '/narzedzia/ekstraktor-kolorow-z-obrazu' },
-  { title: 'Generator kodu QR', href: '/narzedzia/generator-kodu-qr' },
+  { title: 'Generator kodów QR', href: '/narzedzia/darmowy-generator-kodow-qr' },
 ];
 
 const infoPages: NavItem[] = [

@@ -1,3 +1,5 @@
+'use client';
+
 import Wrapper from '../ui/Wrapper';
 import CookieSettingsButton from './CookieSettingsButton';
 import AppLink from '../ui/Link';
@@ -5,30 +7,9 @@ import Image from 'next/image';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import { siteUrl, toAbsoluteUrl } from '@/lib/absoluteUrl';
-
-const ui = {
-  pl: {
-    hours: 'Godziny: pn-pt, 8:00-16:00',
-    graphicProjects: 'Projekty graficzne',
-    websites: 'Witryny',
-    content: 'Treści',
-    marketing: 'Marketing',
-    other: 'Główne strony',
-    otherSecondary: 'Inne',
-    cookieSettings: 'Ustawienia plików cookie',
-    sitemap: 'Mapa strony',
-    copyright: 'Wszelkie prawa zastrzeżone.',
-    description: 'Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.',
-    companyDataLabel: 'Dane firmy i lokalizacja',
-    graphicProjectsLabel: 'Usługi - Projekty graficzne',
-    websitesContentLabel: 'Usługi - Witryny, Treści i Marketing',
-    navigationLabel: 'Nawigacja',
-    navigationSecondaryLabel: 'Nawigacja (cd.)',
-    contactLabel: 'Kontakt',
-    mainNavigationLabel: 'Główne sekcje',
-    legalNavigationLabel: 'Dokumenty i ustawienia',
-  },
-} as const;
+import { useLocale } from '@/lib/LocaleContext';
+import { getToolsList } from '@/lib/i18n/tool-registry';
+import { getLegalLinks, FOOTER_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
 
 const ORG = {
   name: 'Arteon',
@@ -113,32 +94,113 @@ const legalLinks = [
 
 const toolsLinks = [
   { href: '/narzedzia/licznik-dlugosci-meta-title-i-description', label: 'Licznik meta title i description' },
-  { href: '/narzedzia/tester-kontrastu-kolorow-wcag', label: 'Tester kontrastu kolorów WCAG' },
+  { href: '/narzedzia/kontrast-i-czytelnosc-kolorow', label: 'Kontrast i czytelność kolorów' },
   { href: '/narzedzia/ekstraktor-kolorow-z-obrazu', label: 'Ekstraktor kolorów z obrazu' },
-  { href: '/narzedzia/generator-schematow-kolorow', label: 'Generator schematów kolorów' },
+  { href: '/narzedzia/generator-palet-kolorow', label: 'Generator palet kolorów' },
   { href: '/narzedzia/jpg-png-na-webp-bez-limitu', label: 'Konwerter JPG/PNG na WebP' },
   { href: '/narzedzia/edytor-zdjec-online', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
   { href: '/narzedzia/darmowy-generator-favicon-ico', label: 'Generator favicon' },
   { href: '/narzedzia/darmowy-generator-stopki-mailowej', label: 'Generator stopki mailowej HTML' },
-  { href: '/narzedzia/generator-kodu-qr', label: 'Generator kodu QR' },
+  { href: '/narzedzia/darmowy-generator-kodow-qr', label: 'Generator kodów QR' },
 ];
 
 export default function Footer() {
-  const t = ui.pl;
+  const locale = useLocale();
+  const isPl = locale === 'pl';
+  const ft = FOOTER_UI[locale];
+  const localeConfig = LOCALE_CONFIG[locale];
   const midGfx = Math.ceil(offerLinksThree.length / 2);
   const gfxLeft = offerLinksThree.slice(0, midGfx);
   const gfxRight = offerLinksThree.slice(midGfx);
-  const midTools = Math.ceil(toolsLinks.length / 2);
-  const toolsLeft = toolsLinks.slice(0, midTools);
-  const toolsRight = toolsLinks.slice(midTools);
 
+  // For PL: use hardcoded toolsLinks; for other locales: generate from registry
+  const localeToolsLinks = isPl ? toolsLinks : getToolsList(locale).map((tool) => ({ href: tool.href, label: tool.title }));
+  const localeLegalLinks = getLegalLinks(locale);
+
+  const midTools = Math.ceil(localeToolsLinks.length / 2);
+  const toolsLeft = localeToolsLinks.slice(0, midTools);
+  const toolsRight = localeToolsLinks.slice(midTools);
+
+  // Non-PL: simplified footer
+  if (!isPl) {
+    return (
+      <footer className="border-t border-neutral-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Site footer">
+        <Wrapper>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-5">
+            <section aria-label={ft.companyDataLabel} className="lg:col-start-1 lg:row-start-1">
+              <div className="mb-4">
+                <AppLink href={localeConfig.toolsIndexHref}>
+                  <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Arteon logo" />
+                </AppLink>
+              </div>
+              <p className="text-dark text-base">{ft.description}</p>
+            </section>
+
+            <nav aria-label={`${ft.toolsLabel} (1)`} className="lg:col-start-2 lg:row-start-1">
+              <h3 className="h6 mb-3">{ft.toolsLabel}</h3>
+              <ul className="flex flex-col gap-2 text-sm">
+                {toolsLeft.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href} className="text-left">
+                      {label}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <nav aria-label={`${ft.toolsLabel} (2)`} className="lg:col-start-3 lg:row-start-1">
+              <h3 className="sr-only">{ft.toolsLabel}</h3>
+              <ul className="flex flex-col gap-2 text-sm lg:mt-9">
+                {toolsRight.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href} className="text-left">
+                      {label}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <div className="hidden lg:col-start-4 lg:row-start-1 lg:block" />
+
+            <nav aria-label={ft.legalLabel} className="lg:col-start-5 lg:row-start-1">
+              <h3 className="h6 mb-3">{ft.legalLabel}</h3>
+              <ul className="flex flex-col gap-2 text-sm">
+                {localeLegalLinks.map((link) => (
+                  <li key={link.key}>
+                    <AppLink href={link.href} display="inline-block">
+                      {link.label}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+
+          <div className="text-light mt-8 border-t border-neutral-200 pt-4">
+            <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
+              <span className="text-center text-sm md:text-left">
+                &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {ft.copyright}
+              </span>
+              <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
+                #MadeWithNext.js
+              </a>
+            </div>
+          </div>
+        </Wrapper>
+      </footer>
+    );
+  }
+
+  // PL: full footer
   return (
     <>
       <footer className="border-t border-neutral-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Stopka strony">
         <Wrapper>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-5">
             {/* 1.1 Dane firmy + Logo + Social */}
-            <section aria-label={t.companyDataLabel} className="lg:col-start-1 lg:row-start-1">
+            <section aria-label="Dane firmy i lokalizacja" className="lg:col-start-1 lg:row-start-1">
               <div className="mb-4">
                 <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Logo Arteon" />
               </div>
@@ -182,8 +244,8 @@ export default function Footer() {
             </section>
 
             {/* 1.2 Witryny */}
-            <nav aria-label={t.websitesContentLabel} className="lg:col-start-2 lg:row-start-1">
-              <h3 className="h6 mb-3">{t.websites}</h3>
+            <nav aria-label="Usługi - Witryny, Treści i Marketing" className="lg:col-start-2 lg:row-start-1">
+              <h3 className="h6 mb-3">Witryny</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {offerLinksOne.map(({ href, title }) => (
                   <li key={href}>
@@ -206,8 +268,8 @@ export default function Footer() {
             </nav>
 
             {/* 1.4 Projekty graficzne (1) */}
-            <nav aria-label={`${t.graphicProjectsLabel} (1)`} className="lg:col-start-4 lg:row-start-1">
-              <h3 className="h6 mb-3">{t.graphicProjects}</h3>
+            <nav aria-label="Usługi - Projekty graficzne (1)" className="lg:col-start-4 lg:row-start-1">
+              <h3 className="h6 mb-3">Projekty graficzne</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {gfxLeft.map(({ href, title }) => (
                   <li key={href}>
@@ -220,8 +282,8 @@ export default function Footer() {
             </nav>
 
             {/* 1.5 Projekty graficzne (2) */}
-            <nav aria-label={`${t.graphicProjectsLabel} (2)`} className="lg:col-start-5 lg:row-start-1">
-              <h3 className="sr-only">{t.graphicProjects}</h3>
+            <nav aria-label="Usługi - Projekty graficzne (2)" className="lg:col-start-5 lg:row-start-1">
+              <h3 className="sr-only">Projekty graficzne</h3>
               <ul className="flex flex-col gap-2 text-sm lg:mt-9">
                 {gfxRight.map(({ href, title }) => (
                   <li key={href}>
@@ -234,8 +296,8 @@ export default function Footer() {
             </nav>
 
             {/* 2.1 Główne strony */}
-            <nav aria-label={t.mainNavigationLabel} className="lg:col-start-1 lg:row-start-2">
-              <h3 className="h6 mb-3">{t.other}</h3>
+            <nav aria-label="Główne sekcje" className="lg:col-start-1 lg:row-start-2">
+              <h3 className="h6 mb-3">Główne strony</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {navLinksPrimary.map(({ href, label }) => (
                   <li key={href}>
@@ -246,8 +308,8 @@ export default function Footer() {
             </nav>
 
             {/* 2.2 Inne */}
-            <nav aria-label={t.navigationSecondaryLabel} className="lg:col-start-2 lg:row-start-2">
-              <h3 className="h6 mb-3">{t.otherSecondary}</h3>
+            <nav aria-label="Nawigacja (cd.)" className="lg:col-start-2 lg:row-start-2">
+              <h3 className="h6 mb-3">Inne</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {navLinksSecondary.map(({ href, label }) => (
                   <li key={href}>
@@ -258,8 +320,8 @@ export default function Footer() {
             </nav>
 
             {/* 2.3 Dokumenty i ustawienia */}
-            <nav aria-label={t.legalNavigationLabel} className="lg:col-start-3 lg:row-start-2">
-              <h3 className="h6 mb-3">{t.legalNavigationLabel}</h3>
+            <nav aria-label="Dokumenty i ustawienia" className="lg:col-start-3 lg:row-start-2">
+              <h3 className="h6 mb-3">Dokumenty i ustawienia</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {legalLinks.map(({ href, label }) => (
                   <li key={href}>
@@ -269,7 +331,7 @@ export default function Footer() {
                   </li>
                 ))}
                 <li>
-                  <CookieSettingsButton label={t.cookieSettings} />
+                  <CookieSettingsButton label="Ustawienia plików cookie" />
                 </li>
               </ul>
             </nav>
@@ -306,9 +368,9 @@ export default function Footer() {
           <div className="text-light mt-8 border-t border-neutral-200 pt-4">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
               <span className="text-center text-sm md:text-left">
-                &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {t.copyright}
+                &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
               </span>
-              <span className="text-sm">{t.description}</span>
+              <span className="text-sm">Realizujemy projekty dla polskich firm na całym świecie - z siedzibą w Małopolsce, w okolicach Krakowa.</span>
               <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js
               </a>
