@@ -36,7 +36,14 @@ import {
 export const metadata: Metadata = {
   title: 'Darmowy licznik meta title i description online - sprawdź długość w pikselach',
   description: 'Darmowy licznik meta title i meta description online po polsku. Sprawdź długość w znakach i pikselach, zobacz podgląd wyniku w Google. Przetwarzanie lokalne w przeglądarce.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description') },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
+      en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
+      de: toAbsoluteUrl('/de/tools/meta-titel-beschreibung-laengenpruefer'),
+    },
+  },
   openGraph: {
     title: 'Darmowy licznik meta title i description online - sprawdź długość w pikselach',
     description: 'Darmowy licznik meta title i meta description online po polsku. Sprawdź długość w znakach i pikselach, zobacz podgląd wyniku w Google. Przetwarzanie lokalne w przeglądarce.',

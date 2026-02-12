@@ -10,7 +10,7 @@ import IconText from '../../ui/IconText';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import SocialIconLink from '../../ui/SocialIconLink';
 import { ABOUT_NAV_ITEMS_PL, MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { getToolsSections } from '@/lib/i18n/tool-registry';
 import { getLegalLinks, NAVIGATION_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
@@ -24,9 +24,9 @@ import { RiArrowDownSLine } from 'react-icons/ri';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
-const closeLabel: Record<string, string> = { pl: 'Zamknij', en: 'Close' };
-const servicesLabel: Record<string, string> = { pl: 'Usługi', en: 'Services' };
-const contactLabel: Record<string, string> = { pl: 'Skontaktuj się', en: 'Contact' };
+const closeLabel: Record<Locale, string> = { pl: 'Zamknij', en: 'Close', de: 'Schließen' };
+const servicesLabel: Record<Locale, string> = { pl: 'Usługi', en: 'Services', de: 'Dienstleistungen' };
+const contactLabel: Record<Locale, string> = { pl: 'Skontaktuj się', en: 'Contact', de: 'Kontakt' };
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {

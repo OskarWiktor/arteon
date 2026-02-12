@@ -22,7 +22,10 @@ import { RiInstagramLine, RiFacebookLine, RiLinkedinLine, RiImageLine, RiCropLin
 export const metadata: Metadata = {
   title: 'Darmowy edytor zdjęć online - zmiana rozmiaru, kadrowanie, konwersja',
   description: 'Zmień rozmiar zdjęcia online za darmo. Kadruj do Instagram, Facebook, LinkedIn. Konwertuj JPG na WebP. Twórz okrągłe avatary. Przetwarzanie lokalne w przeglądarce.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/edytor-zdjec-online') },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
+    languages: { pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'), en: toAbsoluteUrl('/en/tools/online-image-editor'), de: toAbsoluteUrl('/de/tools/online-bildeditor') },
+  },
   openGraph: {
     title: 'Darmowy edytor zdjęć online - zmiana rozmiaru, kadrowanie, konwersja',
     description: 'Zmień rozmiar zdjęcia online za darmo. Kadruj do Instagram, Facebook, LinkedIn. Konwertuj JPG na WebP. Twórz okrągłe avatary. Przetwarzanie lokalne w przeglądarce.',

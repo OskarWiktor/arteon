@@ -35,14 +35,14 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free favicon generator online — ICO and PNG icons',
+  title: 'Free favicon generator online - ICO and PNG icons',
   description: 'Free online favicon generator. Create favicon.ico and PNG icons (16x16, 32x32, 180x180, 512x512) from a single image. Processing happens locally in the browser.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/free-favicon-generator'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'), en: toAbsoluteUrl('/en/tools/free-favicon-generator') },
+    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'), en: toAbsoluteUrl('/en/tools/free-favicon-generator'), de: toAbsoluteUrl('/de/tools/kostenloser-favicon-generator') },
   },
   openGraph: {
-    title: 'Free favicon generator online — ICO and PNG icons',
+    title: 'Free favicon generator online - ICO and PNG icons',
     description: 'Free online favicon generator. Create favicon.ico and PNG icons from a single image. Compliant with browser and Lighthouse requirements.',
     url: toAbsoluteUrl('/en/tools/free-favicon-generator'),
     type: 'website',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Favicon generator online — free icon creator for websites',
+  name: 'Favicon generator online - free icon creator for websites',
   alternateName: 'Favicon.ico and PNG icon generator',
   url: toAbsoluteUrl('/en/tools/free-favicon-generator'),
   applicationCategory: 'DesignApplication',
@@ -104,12 +104,12 @@ const faqItems = [
   {
     question: 'What size should the source image be for generating favicons?',
     answer:
-      'The recommended size is at least 512×512 pixels in square format (1:1). With such a source, icons in all sizes will be sharp and readable. If you have a logo in SVG format — use it, as vector graphics scale without quality loss.',
+      'The recommended size is at least 512×512 pixels in square format (1:1). With such a source, icons in all sizes will be sharp and readable. If you have a logo in SVG format - use it, as vector graphics scale without quality loss.',
     answerSchemaText: 'At least 512×512 px, square (1:1). SVG is ideal as it scales without quality loss.',
   },
   {
     question: 'Can I generate only favicon.ico without the other icons?',
-    answer: 'Yes. Before generating, you can select exactly which sizes you need — e.g., only favicon.ico or only selected PNG sizes.',
+    answer: 'Yes. Before generating, you can select exactly which sizes you need - e.g., only favicon.ico or only selected PNG sizes.',
     answerSchemaText: 'Yes, you can select individual sizes before generating.',
   },
   {
@@ -120,7 +120,7 @@ const faqItems = [
   {
     question: 'Does a favicon affect Google search ranking?',
     answer:
-      'Not directly — favicon is not a ranking factor. However, it indirectly affects brand recognition: a site with a professional icon is more easily identifiable among many open tabs, which may translate to a higher click-through rate in search results.',
+      'Not directly - favicon is not a ranking factor. However, it indirectly affects brand recognition: a site with a professional icon is more easily identifiable among many open tabs, which may translate to a higher click-through rate in search results.',
     answerSchemaText: 'Not directly. Indirectly improves brand recognition and click-through rate.',
   },
   {
@@ -144,7 +144,7 @@ export default function FaviconGeneratorPage() {
       <Script id="ld-json-favicon-howto-en" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <HeroBanner
-        title="Create a favicon online — free icon generator"
+        title="Create a favicon online - free icon generator"
         description="Generate favicon.ico and a complete set of PNG icons for your website from a single image. All processing happens locally in the browser."
         overlay="black"
         backgroundImage="/assets/tools/narzedzia-darmowy-generator-favicon-ico.webp"
@@ -166,7 +166,7 @@ export default function FaviconGeneratorPage() {
             a shortcut.
           </p>
           <p className="mb-4">
-            This small graphic serves an important function — it helps users quickly recognize a site among many open tabs. When someone has a dozen tabs open in the browser, the favicon is often the
+            This small graphic serves an important function - it helps users quickly recognize a site among many open tabs. When someone has a dozen tabs open in the browser, the favicon is often the
             only visible element identifying the site.
           </p>
           <p>
@@ -224,15 +224,15 @@ export default function FaviconGeneratorPage() {
           items={[
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
-              title: 'Privacy — files never leave your computer',
+              title: 'Privacy - files never leave your computer',
               description: 'All operations are performed locally in the browser. The image is not sent to any server. After closing the page, all data is cleared.',
             },
             {
               icon: <RiDownloadLine className="h-6 w-6" />,
               title: 'Complete set in one place',
-              description: 'Favicon.ico, PNG icons, apple-touch-icon, PWA icons, and manifest — all from one image, in one tool.',
+              description: 'Favicon.ico, PNG icons, apple-touch-icon, PWA icons, and manifest - all from one image, in one tool.',
             },
-            { icon: <RiImageLine className="h-6 w-6" />, title: 'PNG, JPG, and SVG support', description: 'You can use a logo in any format. If you have SVG — icons will be sharp in all sizes.' },
+            { icon: <RiImageLine className="h-6 w-6" />, title: 'PNG, JPG, and SVG support', description: 'You can use a logo in any format. If you have SVG - icons will be sharp in all sizes.' },
             {
               icon: <RiSmartphoneLine className="h-6 w-6" />,
               title: 'Ready for website and PWA use',
@@ -266,7 +266,7 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiDownloadLine className="h-6 w-6" />,
               title: '4. Generate and download files',
-              description: 'After starting generation, the tool processes the image locally — nothing is sent to a server. Download all files as a ZIP archive or individual icons separately.',
+              description: 'After starting generation, the tool processes the image locally - nothing is sent to a server. Download all files as a ZIP archive or individual icons separately.',
             },
           ]}
         />
@@ -274,7 +274,7 @@ export default function FaviconGeneratorPage() {
         <Gap variant="line" />
 
         <SectionDemo
-          title="Generation options — what does each one do?"
+          title="Generation options - what does each one do?"
           demo={
             <div className="tool-section space-y-4">
               <div className="tool-info-box">
@@ -334,7 +334,7 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiFileDownloadLine className="h-6 w-6" />,
               title: 'Download individual files',
-              description: 'Each generated icon has its own download button — you can download a single file without downloading the entire set. Useful when only one size needs updating.',
+              description: 'Each generated icon has its own download button - you can download a single file without downloading the entire set. Useful when only one size needs updating.',
             },
           ]}
         />
@@ -354,7 +354,7 @@ export default function FaviconGeneratorPage() {
                     <strong>Appearance → Customize → Site Identity → Site Icon</strong>
                   </p>
                   <p className="text-light">
-                    Upload the 512×512 file there — WordPress will automatically generate smaller sizes. For full control over icons, you can also upload files directly to the root directory via FTP.
+                    Upload the 512×512 file there - WordPress will automatically generate smaller sizes. For full control over icons, you can also upload files directly to the root directory via FTP.
                   </p>
                 </div>
               ),
@@ -384,13 +384,13 @@ export default function FaviconGeneratorPage() {
                   </p>
                   <ul className="text-light mb-3 list-disc pl-5">
                     <li>
-                      <code>app/favicon.ico</code> — automatically recognized by Next.js
+                      <code>app/favicon.ico</code> - automatically recognized by Next.js
                     </li>
                     <li>
-                      <code>app/apple-icon.png</code> — Apple icon
+                      <code>app/apple-icon.png</code> - Apple icon
                     </li>
                     <li>
-                      <code>public/</code> — remaining icons (192×192, 512×512)
+                      <code>public/</code> - remaining icons (192×192, 512×512)
                     </li>
                   </ul>
                   <p className="text-light">
@@ -406,7 +406,7 @@ export default function FaviconGeneratorPage() {
 
         <SectionSteps
           title="What source image works best?"
-          description="A favicon is a very small graphic — as small as 16×16 pixels. Not every image works well as a source:"
+          description="A favicon is a very small graphic - as small as 16×16 pixels. Not every image works well as a source:"
           grid="two"
           items={[
             {
@@ -438,7 +438,7 @@ export default function FaviconGeneratorPage() {
             {
               question: 'Does the favicon display the same in all browsers?',
               answer:
-                'Most modern browsers (Chrome, Firefox, Edge, Safari) recognize the favicon.ico file and PNG icons. Differences may occur in the displayed icon size — Chrome prefers PNG 32×32, while Safari on iOS uses apple-touch-icon 180×180. For best compatibility, we recommend generating the full set of sizes.',
+                'Most modern browsers (Chrome, Firefox, Edge, Safari) recognize the favicon.ico file and PNG icons. Differences may occur in the displayed icon size - Chrome prefers PNG 32×32, while Safari on iOS uses apple-touch-icon 180×180. For best compatibility, we recommend generating the full set of sizes.',
               answerSchemaText: 'Mostly yes. Generate the full set of sizes for best compatibility.',
             },
             {

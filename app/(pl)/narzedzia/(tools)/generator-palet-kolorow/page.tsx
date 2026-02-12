@@ -38,7 +38,10 @@ export const metadata: Metadata = {
   title: 'Darmowy generator palet kolorów - 9 schematów z jednego koloru',
   description:
     'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX i użyj ich na stronie, w logo lub projekcie graficznym.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow') },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
+    languages: { pl: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'), en: toAbsoluteUrl('/en/tools/color-palette-generator'), de: toAbsoluteUrl('/de/tools/farbpaletten-generator') },
+  },
   openGraph: {
     title: 'Darmowy generator palet kolorów - 9 schematów z jednego koloru',
     description:

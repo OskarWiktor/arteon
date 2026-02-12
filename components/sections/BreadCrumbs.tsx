@@ -11,6 +11,10 @@ const ui = {
     home: 'Home',
     ariaLabel: 'breadcrumbs',
   },
+  de: {
+    home: 'Startseite',
+    ariaLabel: 'Brotkrümel',
+  },
 } as const;
 
 import type { Crumb, BreadcrumbsProps } from '@/types/ui';

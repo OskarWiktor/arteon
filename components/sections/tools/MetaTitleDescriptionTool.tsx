@@ -57,7 +57,7 @@ export default function MetaTitleDescriptionTool() {
   const t = ui[locale];
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [url, setUrl] = useState(locale === 'en' ? 'www.yourdomain.com/page' : 'www.twojadomena.pl/podstrona');
+  const [url, setUrl] = useState(locale === 'pl' ? 'www.twojadomena.pl/podstrona' : locale === 'de' ? 'www.ihredomain.de/seite' : 'www.yourdomain.com/page');
 
   const titleAnalysis = useMemo(() => analyzeTitle(title, t), [title, t]);
   const descriptionAnalysis = useMemo(() => analyzeDescription(description, t), [description, t]);

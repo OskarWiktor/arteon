@@ -249,7 +249,7 @@ export default function OfferDesignCouponsAndVouchersPage() {
 
         <SectionContactForm
           title="Sprawdź koszt realizacji kuponu lub vouchera"
-          description="Napisz co chcesz przedstawić na kuponie, ile wariantów potrzebujesz oraz czy posiadasz logo — otrzymasz darmową wycenę realizacji."
+          description="Napisz co chcesz przedstawić na kuponie, ile wariantów potrzebujesz oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
           imageSrc="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
           imageAlt="Realizacja projektu kuponu rabatowego"
           defaultSubject="Projekt kuponów i voucherów"

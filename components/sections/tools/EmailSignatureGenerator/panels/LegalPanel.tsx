@@ -39,11 +39,7 @@ export default function LegalPanel({ config, styleConfig, onTextChange, onStyleC
           <div>
             <p className="tool-label mb-1">{t.legal.dividerColor}</p>
             <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => onStyleChange('dividerColor', '')}
-                className={`tool-button ${!styleConfig.dividerColor ? 'tool-button-active' : 'tool-button-inactive'}`}
-              >
+              <button type="button" onClick={() => onStyleChange('dividerColor', '')} className={`tool-button ${!styleConfig.dividerColor ? 'tool-button-active' : 'tool-button-inactive'}`}>
                 {t.legal.dividerColorDefault}
               </button>
               <div className="relative">

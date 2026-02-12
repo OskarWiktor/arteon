@@ -34,14 +34,14 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free color contrast checker online — WCAG compliance',
+  title: 'Free color contrast checker online - WCAG compliance',
   description: 'Free online color contrast checker. Test text and background color readability per WCAG 2.1 standards. Auto-match feature helps find accessible color combinations. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/color-contrast-checker'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'), en: toAbsoluteUrl('/en/tools/color-contrast-checker') },
+    languages: { pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'), en: toAbsoluteUrl('/en/tools/color-contrast-checker'), de: toAbsoluteUrl('/de/tools/farbkontrast-checker') },
   },
   openGraph: {
-    title: 'Free color contrast checker online — WCAG compliance',
+    title: 'Free color contrast checker online - WCAG compliance',
     description: 'Free online color contrast checker. Test text and background color readability per WCAG 2.1 standards. Auto-match feature helps find accessible color combinations.',
     url: toAbsoluteUrl('/en/tools/color-contrast-checker'),
     type: 'website',
@@ -95,8 +95,8 @@ const howToSchema = {
   description: 'How to check text and background color readability per WCAG standard. Enter colors, read the contrast ratio, and use the automatic matching feature.',
   url: toAbsoluteUrl('/en/tools/color-contrast-checker'),
   step: [
-    { '@type': 'HowToStep', name: 'Choose the text color', text: 'Enter a color code (e.g., #333333) in HEX, RGB, or HSL format — or pick a color from the color picker.' },
-    { '@type': 'HowToStep', name: 'Choose the background color', text: 'Enter the background color on which the text will be displayed — this can be a section, block, or page background color.' },
+    { '@type': 'HowToStep', name: 'Choose the text color', text: 'Enter a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker.' },
+    { '@type': 'HowToStep', name: 'Choose the background color', text: 'Enter the background color on which the text will be displayed - this can be a section, block, or page background color.' },
     { '@type': 'HowToStep', name: 'Read the result', text: 'The tool will show the contrast ratio and whether the colors meet AA/AAA requirements.' },
     { '@type': 'HowToStep', name: 'Adjust colors', text: 'If contrast is too low, the Match feature automatically suggests a text color variant that meets the selected WCAG threshold.' },
   ],
@@ -107,19 +107,19 @@ const faqItems = [
   {
     question: 'What is a color contrast ratio?',
     answer:
-      'A contrast ratio is a measure of the luminance difference between two colors. The scale ranges from 1:1 (no difference — e.g., white text on white background) to 21:1 (maximum difference — black text on white background). The higher the ratio, the easier it is to distinguish text from the background.',
+      'A contrast ratio is a measure of the luminance difference between two colors. The scale ranges from 1:1 (no difference - e.g., white text on white background) to 21:1 (maximum difference - black text on white background). The higher the ratio, the easier it is to distinguish text from the background.',
     answerSchemaText: 'The contrast ratio measures luminance difference between two colors, ranging from 1:1 to 21:1.',
   },
   {
     question: 'What contrast is sufficient according to WCAG?',
     answer:
-      'For normal text, the minimum is 4.5:1 (Level AA). For large text — headings from 18pt or bold text from 14pt — 3:1 is sufficient. For icons and UI components, 3:1 is also required. These thresholds ensure readability for most users, including those with impaired vision.',
+      'For normal text, the minimum is 4.5:1 (Level AA). For large text - headings from 18pt or bold text from 14pt - 3:1 is sufficient. For icons and UI components, 3:1 is also required. These thresholds ensure readability for most users, including those with impaired vision.',
     answerSchemaText: 'Normal text: 4.5:1 (AA). Large text: 3:1. Icons: 3:1.',
   },
   {
     question: 'Is color contrast important for color-blind users?',
     answer:
-      "The checker tests luminance contrast, which matters for all users, including those with color blindness. However, color blindness is a color perception issue, not a luminance issue — so in addition to contrast, avoid problematic color pairs (e.g., red text on green background) and don't rely solely on color to convey information.",
+      "The checker tests luminance contrast, which matters for all users, including those with color blindness. However, color blindness is a color perception issue, not a luminance issue - so in addition to contrast, avoid problematic color pairs (e.g., red text on green background) and don't rely solely on color to convey information.",
     answerSchemaText: 'Yes, luminance contrast matters for all users. Also avoid problematic color pairs for color-blind users.',
   },
   {
@@ -131,7 +131,7 @@ const faqItems = [
   {
     question: 'Do I need to meet AAA contrast level?',
     answer:
-      'Not always. Level AA (4.5:1 for normal text) is the minimum required by accessibility regulations in the European Union. Level AAA (7:1) provides better readability but is harder to achieve. For critical content — warnings, safety instructions — consider aiming for AAA.',
+      'Not always. Level AA (4.5:1 for normal text) is the minimum required by accessibility regulations in the European Union. Level AAA (7:1) provides better readability but is harder to achieve. For critical content - warnings, safety instructions - consider aiming for AAA.',
     answerSchemaText: 'AA is the legal minimum. AAA is recommended for critical content.',
   },
   {
@@ -180,7 +180,7 @@ export default function ColorContrastCheckerPage() {
         <SectionInfo title="Why does color readability matter?">
           <p className="text-mid">
             Readability is the luminance difference between the text color and the background color. The greater the difference, the easier it is to read the text. Too low contrast makes content hard
-            to read — especially for people with vision impairments, older adults, or in difficult lighting conditions (e.g., on a phone in direct sunlight).
+            to read - especially for people with vision impairments, older adults, or in difficult lighting conditions (e.g., on a phone in direct sunlight).
           </p>
           <p className="text-mid mt-3">
             According to the{' '}
@@ -195,7 +195,7 @@ export default function ColorContrastCheckerPage() {
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank" rel="noopener noreferrer" className="underline">
               WCAG 2.1 (Web Content Accessibility Guidelines)
             </a>{' '}
-            — international digital accessibility guidelines. The result allows an objective assessment of whether colors are readable enough, regardless of monitor settings or individual color
+            - international digital accessibility guidelines. The result allows an objective assessment of whether colors are readable enough, regardless of monitor settings or individual color
             perception.
           </p>
         </SectionInfo>
@@ -210,12 +210,12 @@ export default function ColorContrastCheckerPage() {
             {
               icon: <RiPaletteLine className="h-6 w-6" />,
               title: '1. Enter the text color',
-              description: 'Type a color code (e.g., #333333) in HEX, RGB, or HSL format — or pick a color from the color picker.',
+              description: 'Type a color code (e.g., #333333) in HEX, RGB, or HSL format - or pick a color from the color picker.',
             },
             {
               icon: <RiPaintBrushLine className="h-6 w-6" />,
               title: '2. Enter the background color',
-              description: 'Enter the background color on which the text will be displayed — this can be a section, block, or full page background.',
+              description: 'Enter the background color on which the text will be displayed - this can be a section, block, or full page background.',
             },
             {
               icon: <RiCheckboxCircleLine className="h-6 w-6" />,
@@ -275,13 +275,13 @@ export default function ColorContrastCheckerPage() {
           <p className="text-mid mb-4">After entering colors, the tool displays results in three sections:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Normal text</strong> — requires 4.5:1 contrast (AA) or 7:1 (AAA). Applies to text below 18pt (24px) or below 14pt bold.
+              <strong>Normal text</strong> - requires 4.5:1 contrast (AA) or 7:1 (AAA). Applies to text below 18pt (24px) or below 14pt bold.
             </li>
             <li>
-              <strong>Large / bold text</strong> — requires 3:1 contrast (AA) or 4.5:1 (AAA). Applies to headings, buttons, and highlights.
+              <strong>Large / bold text</strong> - requires 3:1 contrast (AA) or 4.5:1 (AAA). Applies to headings, buttons, and highlights.
             </li>
             <li>
-              <strong>Icons</strong> — requires 3:1 contrast (AA). Applies to icons and graphical UI elements that convey information.
+              <strong>Icons</strong> - requires 3:1 contrast (AA). Applies to icons and graphical UI elements that convey information.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -293,19 +293,19 @@ export default function ColorContrastCheckerPage() {
 
         <SectionInfo title="What do the readability test results mean?">
           <p className="text-mid mb-4">
-            The tool shows the contrast ratio on a scale from 1:1 (no contrast) to 21:1 (maximum contrast — black on white). The result is compared against thresholds defined in the WCAG standard:
+            The tool shows the contrast ratio on a scale from 1:1 (no contrast) to 21:1 (maximum contrast - black on white). The result is compared against thresholds defined in the WCAG standard:
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Normal text</strong> — requires at least 4.5:1 for Level AA (minimum standard) or 7:1 for Level AAA (enhanced standard). Applies to text under 18pt (24px) or under 14pt (18.5px)
+              <strong>Normal text</strong> - requires at least 4.5:1 for Level AA (minimum standard) or 7:1 for Level AAA (enhanced standard). Applies to text under 18pt (24px) or under 14pt (18.5px)
               bold.
             </li>
             <li>
-              <strong>Large / bold text</strong> — requires at least 3:1 for Level AA or 4.5:1 for Level AAA. Applies to text from 18pt (24px) or from 14pt (18.5px) bold — headings, buttons,
+              <strong>Large / bold text</strong> - requires at least 3:1 for Level AA or 4.5:1 for Level AAA. Applies to text from 18pt (24px) or from 14pt (18.5px) bold - headings, buttons,
               highlights.
             </li>
             <li>
-              <strong>Icons and UI elements</strong> — require at least 3:1 for Level AA. Applies to icons, buttons, form fields, and other interface elements that convey information.
+              <strong>Icons and UI elements</strong> - require at least 3:1 for Level AA. Applies to icons, buttons, form fields, and other interface elements that convey information.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -326,7 +326,7 @@ export default function ColorContrastCheckerPage() {
           </p>
           <p className="text-mid mb-4">How matching works:</p>
           <ol className="text-mid list-decimal space-y-2 pl-5">
-            <li>Select the matching target from the list — e.g., AA for normal text or AAA for large text.</li>
+            <li>Select the matching target from the list - e.g., AA for normal text or AAA for large text.</li>
             <li>Click the Match button.</li>
             <li>The tool will search through lightness variants of the text color and suggest the closest one that meets the requirements.</li>
             <li>The suggested color can be copied to the clipboard or immediately set as the new text color.</li>
@@ -346,11 +346,11 @@ export default function ColorContrastCheckerPage() {
             { id: 'aaa', name: 'Level AAA (enhanced)' },
           ]}
           features={[
-            { name: 'Normal text — min. 4.5:1', values: { aa: true, aaa: true } },
-            { name: 'Normal text — min. 7:1', values: { aa: false, aaa: true } },
-            { name: 'Large / bold text — min. 3:1', values: { aa: true, aaa: true } },
-            { name: 'Large / bold text — min. 4.5:1', values: { aa: false, aaa: true } },
-            { name: 'Icons and UI elements — min. 3:1', values: { aa: true, aaa: true } },
+            { name: 'Normal text - min. 4.5:1', values: { aa: true, aaa: true } },
+            { name: 'Normal text - min. 7:1', values: { aa: false, aaa: true } },
+            { name: 'Large / bold text - min. 3:1', values: { aa: true, aaa: true } },
+            { name: 'Large / bold text - min. 4.5:1', values: { aa: false, aaa: true } },
+            { name: 'Icons and UI elements - min. 3:1', values: { aa: true, aaa: true } },
             { name: 'Legally required (EU directive)', values: { aa: true, aaa: false } },
             { name: 'Recommended for key content', values: { aa: true, aaa: true } },
           ]}
@@ -379,7 +379,7 @@ export default function ColorContrastCheckerPage() {
             {
               icon: <RiRestaurantLine className="h-6 w-6" />,
               title: 'Restaurant menus',
-              description: 'Often printed on colored paper or with decorative fonts — easy to end up with too low contrast.',
+              description: 'Often printed on colored paper or with decorative fonts - easy to end up with too low contrast.',
             },
           ]}
         />
@@ -393,18 +393,18 @@ export default function ColorContrastCheckerPage() {
           <p className="text-mid mb-4">Most common types of color blindness:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Deuteranopia</strong> — difficulty distinguishing green and red (most common form)
+              <strong>Deuteranopia</strong> - difficulty distinguishing green and red (most common form)
             </li>
             <li>
-              <strong>Protanopia</strong> — difficulty seeing red
+              <strong>Protanopia</strong> - difficulty seeing red
             </li>
             <li>
-              <strong>Tritanopia</strong> — difficulty seeing blue and yellow (rare)
+              <strong>Tritanopia</strong> - difficulty seeing blue and yellow (rare)
             </li>
           </ul>
           <p className="text-mid mt-3">
             This tool checks luminance contrast, which is important for all users. However, when designing, it is also worth avoiding problematic color combinations (e.g., red text on a green
-            background) and not relying solely on color to convey information — use shapes, icons, and text as well.
+            background) and not relying solely on color to convey information - use shapes, icons, and text as well.
           </p>
         </SectionInfo>
 
@@ -417,7 +417,7 @@ export default function ColorContrastCheckerPage() {
             {
               icon: <RiEyeLine className="h-6 w-6" />,
               title: 'Objective evaluation based on a mathematical formula',
-              description: 'Contrast ratio is calculated using the WCAG formula — the result does not depend on monitor settings or individual color perception.',
+              description: 'Contrast ratio is calculated using the WCAG formula - the result does not depend on monitor settings or individual color perception.',
             },
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
@@ -427,7 +427,7 @@ export default function ColorContrastCheckerPage() {
             {
               icon: <RiMagicLine className="h-6 w-6" />,
               title: 'Automatic color matching to threshold',
-              description: 'The Match feature finds a text color variant that meets the selected contrast threshold — preserves hue, changes only lightness.',
+              description: 'The Match feature finds a text color variant that meets the selected contrast threshold - preserves hue, changes only lightness.',
             },
             {
               icon: <RiStackLine className="h-6 w-6" />,
@@ -437,7 +437,7 @@ export default function ColorContrastCheckerPage() {
             {
               icon: <RiInfinityLine className="h-6 w-6" />,
               title: 'Three content types in one test',
-              description: 'A single check shows the result for normal text, large text (headings, buttons), and icons — no need to test each type separately.',
+              description: 'A single check shows the result for normal text, large text (headings, buttons), and icons - no need to test each type separately.',
             },
           ]}
         />

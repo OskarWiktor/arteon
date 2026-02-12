@@ -4,12 +4,12 @@ import type { Locale } from '@/types/locale';
 export type ToolStatus = 'idle' | 'processing' | 'done' | 'error';
 
 // ---------------------------------------------------------------------------
-// Tool item key — unique identifier for each tool
+// Tool item key - unique identifier for each tool
 // ---------------------------------------------------------------------------
 export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'wordCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette' | 'qrCode';
 
 // ---------------------------------------------------------------------------
-// Tool section key — groups tools in navigation / index page
+// Tool section key - groups tools in navigation / index page
 // ---------------------------------------------------------------------------
 export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk';
 
@@ -23,7 +23,7 @@ export type ToolLocaleText = {
 };
 
 // ---------------------------------------------------------------------------
-// Core tool definition — locale-independent
+// Core tool definition - locale-independent
 // ---------------------------------------------------------------------------
 export type ToolDefinition = {
   key: ToolItemKey;

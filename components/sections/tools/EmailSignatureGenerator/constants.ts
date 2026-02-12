@@ -1,5 +1,6 @@
 import { rgbToHex } from '@/lib/tools/color/convert';
 import type { LayoutType, SignatureConfig, SpacingConfig, SpacingKey, StyleConfig, TextStyleConfig, ThemePreset } from '@/types/tools/email';
+import type { Locale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/email-signature';
 
 export const STORAGE_KEY_BASE = 'arteon-email-signature-generator';
@@ -68,7 +69,7 @@ export const FONT_OPTIONS = [
   { value: 'Georgia, serif', label: 'Georgia' },
 ];
 
-export function getSignatureLabels(locale: 'pl' | 'en') {
+export function getSignatureLabels(locale: Locale) {
   const t = ui[locale];
   return {
     tel: t.labels.tel,
@@ -77,7 +78,7 @@ export function getSignatureLabels(locale: 'pl' | 'en') {
   };
 }
 
-export function getDefaultSignature(locale: 'pl' | 'en'): SignatureConfig {
+export function getDefaultSignature(locale: Locale): SignatureConfig {
   if (locale === 'en') {
     return {
       fullName: 'John Smith',
@@ -109,6 +110,41 @@ export function getDefaultSignature(locale: 'pl' | 'en'): SignatureConfig {
         pinterest: '',
       },
       legalNote: 'This message may contain confidential information. If you are not the intended recipient, please notify the sender and delete this message.',
+      formalLine: '',
+      avatarUrl: '',
+    };
+  }
+  if (locale === 'de') {
+    return {
+      fullName: 'Max Mustermann',
+      jobTitle: 'Web Developer',
+      company: 'Arteon Agency',
+      topLine: '',
+      nameTag: '',
+      email: 'max.mustermann@example.com',
+      phone: '+49 160 000 0000',
+      website: 'https://www.ihreseite.de',
+      address: 'Musterstraße 3, 10115 Berlin',
+      extraLine: 'Ich entwickle schnelle und funktionale Websites.',
+      ctaLabel: 'Kostenlose Beratung buchen',
+      ctaUrl: 'https://www.ihreseite.de',
+      cta2Label: '',
+      cta2Url: '',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/maxmustermann',
+        instagram: '',
+        facebook: '',
+        tiktok: '',
+        youtube: '',
+        x: '',
+        github: '',
+        dribbble: '',
+        behance: '',
+        whatsapp: '',
+        telegram: '',
+        pinterest: '',
+      },
+      legalNote: 'Diese Nachricht kann vertrauliche Informationen enthalten. Wenn Sie nicht der beabsichtigte Empfänger sind, informieren Sie bitte den Absender und löschen Sie diese Nachricht.',
       formalLine: '',
       avatarUrl: '',
     };
@@ -148,7 +184,7 @@ export function getDefaultSignature(locale: 'pl' | 'en'): SignatureConfig {
   };
 }
 
-export function getThemePresets(locale: 'pl' | 'en'): ThemePreset[] {
+export function getThemePresets(locale: Locale): ThemePreset[] {
   const t = ui[locale];
   return [
     { id: 'classic-dark', name: t.themes.dark, accentColor: SIGNATURE_COLOR_DARK, textColor: SIGNATURE_COLOR_DARK },

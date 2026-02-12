@@ -32,6 +32,7 @@ export const metadata = {
     languages: {
       pl: toAbsoluteUrl('/narzedzia'),
       en: toAbsoluteUrl('/en/tools'),
+      de: toAbsoluteUrl('/de/tools'),
     },
   },
   openGraph: {
@@ -94,7 +95,7 @@ const schema = {
         position: 3,
         name: 'Online favicon generator',
         description:
-          'Free online favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 from a single image — compliant with browser and Lighthouse requirements.',
+          'Free online favicon generator. Create favicon.ico and PNG icons 16x16, 32x32, 180x180, 192x192, and 512x512 from a single image - compliant with browser and Lighthouse requirements.',
         url: toAbsoluteUrl('/en/tools/free-favicon-generator'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -181,7 +182,7 @@ const faqItems = [
   },
   {
     question: 'Is there a usage limit?',
-    answer: 'No. Use them without restrictions — no daily limits, no file limits, no conversion limits.',
+    answer: 'No. Use them without restrictions - no daily limits, no file limits, no conversion limits.',
   },
   {
     question: 'What are these tools for?',
@@ -198,7 +199,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Free online tools"
-        description="Image converter, favicon generator, text counter, color tools, and QR codes. No registration, no limits — everything runs in your browser."
+        description="Image converter, favicon generator, text counter, color tools, and QR codes. No registration, no limits - everything runs in your browser."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -253,7 +254,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Generate <strong>favicon.ico</strong> and PNG icons 180x180, 192x192, and 512x512 from a single image — compliant with browser and Lighthouse requirements.
+                    Generate <strong>favicon.ico</strong> and PNG icons 180x180, 192x192, and 512x512 from a single image - compliant with browser and Lighthouse requirements.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/en/tools/free-favicon-generator">
@@ -430,7 +431,7 @@ export default function ToolsIndexPage() {
             A set of 10 free online tools for preparing materials for websites, social media, and print. Image-to-WebP converter, favicon generator, text length counter, color extractor, palette
             generator, and QR codes.
           </p>
-          <p>All tools run in your browser — files are never sent to a server. Use them without registration and without limits.</p>
+          <p>All tools run in your browser - files are never sent to a server. Use them without registration and without limits.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -442,12 +443,12 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Full privacy',
-              description: 'All tools process files locally in your browser. Nothing is sent to a server — data disappears when you close the tab.',
+              description: 'All tools process files locally in your browser. Nothing is sent to a server - data disappears when you close the tab.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'No usage limits',
-              description: 'Use without restrictions — no daily limits, no file limits, no conversion limits. As many times as you need.',
+              description: 'Use without restrictions - no daily limits, no file limits, no conversion limits. As many times as you need.',
             },
             {
               icon: <RiLockLine className="h-6 w-6" />,
@@ -457,7 +458,7 @@ export default function ToolsIndexPage() {
             {
               icon: <RiGlobalLine className="h-6 w-6" />,
               title: 'Available in English',
-              description: 'All tools are available in English — interface, instructions, and messages.',
+              description: 'All tools are available in English - interface, instructions, and messages.',
             },
           ]}
         />

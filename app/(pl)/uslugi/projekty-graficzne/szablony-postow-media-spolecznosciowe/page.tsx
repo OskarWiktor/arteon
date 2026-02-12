@@ -250,7 +250,7 @@ export default function OfferDesignSocialMediaPostTemplatesPage() {
 
         <SectionContactForm
           title="Sprawdź koszt realizacji szablonów postów"
-          description="Napisz na jakich platformach publikujesz treści, ile szablonów potrzebujesz oraz czy posiadasz logo i identyfikację wizualną — otrzymasz darmową wycenę realizacji."
+          description="Napisz na jakich platformach publikujesz treści, ile szablonów potrzebujesz oraz czy posiadasz logo i identyfikację wizualną - otrzymasz darmową wycenę realizacji."
           imageSrc="/assets/projects/arteon-baner-szablon-social-media-msc-mockup.webp"
           imageAlt="Realizacja szablonów postów do mediów społecznościowych"
           defaultSubject="Szablony postów do mediów społecznościowych"

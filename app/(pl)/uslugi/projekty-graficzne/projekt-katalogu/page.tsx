@@ -245,7 +245,7 @@ export default function OfferDesignCatalogPage() {
 
         <SectionContactForm
           title="Sprawdź koszt realizacji katalogu"
-          description="Napisz jaką ofertę chcesz przedstawić, ile stron ma mieć katalog oraz czy posiadasz logo i zdjęcia — otrzymasz darmową wycenę realizacji."
+          description="Napisz jaką ofertę chcesz przedstawić, ile stron ma mieć katalog oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji."
           imageSrc="/assets/projects/gazetka-mockup.webp"
           imageAlt="Realizacja projektu katalogu firmowego"
           defaultSubject="Projekt katalogu"

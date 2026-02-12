@@ -18,14 +18,14 @@ import AdSense from '@/components/ui/AdSense';
 import { RiInstagramLine, RiFacebookLine, RiLinkedinLine, RiImageLine, RiCropLine, RiLayoutGridLine, RiFileImageLine, RiAspectRatioLine } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free online image editor — resize, crop, and convert',
+  title: 'Free online image editor - resize, crop, and convert',
   description: 'Resize images online for free. Crop for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. Local processing in the browser.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/online-image-editor'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'), en: toAbsoluteUrl('/en/tools/online-image-editor') },
+    languages: { pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'), en: toAbsoluteUrl('/en/tools/online-image-editor'), de: toAbsoluteUrl('/de/tools/online-bildeditor') },
   },
   openGraph: {
-    title: 'Free online image editor — resize, crop, and convert',
+    title: 'Free online image editor - resize, crop, and convert',
     description: 'Resize images online for free. Crop for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. Local processing in the browser.',
     url: toAbsoluteUrl('/en/tools/online-image-editor'),
     type: 'website',
@@ -93,13 +93,13 @@ const faqItems = [
   {
     question: 'Does the editor handle very large images?',
     answer:
-      "Yes, though processing may be slower for images above 4000×4000 pixels — this depends on the device's power and available browser memory. All processing happens locally, without sending files to a server.",
+      "Yes, though processing may be slower for images above 4000×4000 pixels - this depends on the device's power and available browser memory. All processing happens locally, without sending files to a server.",
     answerSchemaText: 'Yes. Processing may be slower above 4000×4000 px. All processing is local.',
   },
   {
-    question: 'Which export format to choose — JPG, PNG, or WebP?',
+    question: 'Which export format to choose - JPG, PNG, or WebP?',
     answer:
-      'JPG is a good choice for photos with many colors and gradients — files are small with good quality. PNG preserves the highest quality and supports transparency (e.g., circular avatar). WebP combines the advantages of both — small files with high quality and transparency support.',
+      'JPG is a good choice for photos with many colors and gradients - files are small with good quality. PNG preserves the highest quality and supports transparency (e.g., circular avatar). WebP combines the advantages of both - small files with high quality and transparency support.',
     answerSchemaText: 'JPG for photos, PNG for transparency, WebP combines small files with high quality.',
   },
   {
@@ -145,7 +145,7 @@ export default function OnlineImageEditorPage() {
       <Wrapper>
         <Gap variant="line" />
 
-        <SectionInfo title="Resize images online — crop, convert, and compress in one tool">
+        <SectionInfo title="Resize images online - crop, convert, and compress in one tool">
           <p className="text-mid">
             The online image editor lets you quickly adapt images to specific dimensions. You can resize an image to any pixel dimensions, select a ready-made format for social media, or crop a
             section of the image with precise framing.
@@ -172,10 +172,10 @@ export default function OnlineImageEditorPage() {
           <p className="text-mid">The tool accepts images in JPG, PNG, and WebP formats. You can add an image in two ways:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-5">
             <li>
-              <strong>Drag and drop</strong> — grab a file from a folder on your computer and drop it onto the file upload area (the area with a dashed border).
+              <strong>Drag and drop</strong> - grab a file from a folder on your computer and drop it onto the file upload area (the area with a dashed border).
             </li>
             <li>
-              <strong>Select from device</strong> — clicking the file upload area opens a file selection dialog.
+              <strong>Select from device</strong> - clicking the file upload area opens a file selection dialog.
             </li>
           </ul>
           <p className="text-mid mt-3">After adding an image, the tool automatically reads its original dimensions and displays a preview. You can now proceed to crop settings.</p>
@@ -291,36 +291,36 @@ export default function OnlineImageEditorPage() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="Ready-made formats — which to choose?"
+          title="Ready-made formats - which to choose?"
           description="Each format corresponds to specific platform or use case requirements:"
           grid="two"
           items={[
             {
               icon: <RiInstagramLine className="h-6 w-6" />,
-              title: 'Instagram — square post (1080×1080)',
+              title: 'Instagram - square post (1080×1080)',
               description: 'Standard Instagram post format. 1:1 ratio. Works well in the feed and looks good on both phone and desktop.',
             },
             {
               icon: <RiInstagramLine className="h-6 w-6" />,
-              title: 'Instagram — portrait post (1080×1350)',
+              title: 'Instagram - portrait post (1080×1350)',
               description: 'Vertical post format (4:5 ratio). Takes up more space in the feed than a square, which may increase engagement.',
             },
             {
               icon: <RiInstagramLine className="h-6 w-6" />,
-              title: 'Instagram — story / reels (1080×1920)',
+              title: 'Instagram - story / reels (1080×1920)',
               description: 'Full-screen vertical format (9:16 ratio). Used in stories and reels. Fills the entire phone screen.',
             },
-            { icon: <RiFacebookLine className="h-6 w-6" />, title: 'Facebook — post (1200×630)', description: 'Optimal format for Facebook posts and shared links. Ratio close to 16:9.' },
+            { icon: <RiFacebookLine className="h-6 w-6" />, title: 'Facebook - post (1200×630)', description: 'Optimal format for Facebook posts and shared links. Ratio close to 16:9.' },
             {
               icon: <RiFacebookLine className="h-6 w-6" />,
-              title: 'Facebook — page cover (820×360)',
-              description: 'Background photo for a Facebook business page. Wide, panoramic format — may be cropped differently on various devices.',
+              title: 'Facebook - page cover (820×360)',
+              description: 'Background photo for a Facebook business page. Wide, panoramic format - may be cropped differently on various devices.',
             },
-            { icon: <RiLinkedinLine className="h-6 w-6" />, title: 'LinkedIn — post (1200×1200)', description: 'Square format for LinkedIn posts. Looks good in the feed and on mobile devices.' },
+            { icon: <RiLinkedinLine className="h-6 w-6" />, title: 'LinkedIn - post (1200×1200)', description: 'Square format for LinkedIn posts. Looks good in the feed and on mobile devices.' },
             {
               icon: <RiLinkedinLine className="h-6 w-6" />,
-              title: 'LinkedIn — profile banner (1584×396)',
-              description: 'Background image for a personal or company LinkedIn profile. Very wide format — center the key element in the crop.',
+              title: 'LinkedIn - profile banner (1584×396)',
+              description: 'Background image for a personal or company LinkedIn profile. Very wide format - center the key element in the crop.',
             },
             {
               icon: <RiImageLine className="h-6 w-6" />,
@@ -354,7 +354,7 @@ export default function OnlineImageEditorPage() {
 
         <SectionInfo title="How to crop an image">
           <p className="text-mid">
-            After setting target dimensions, an interactive crop area appears on the preview. The bright part of the image is the section that will be saved — the rest is dimmed.
+            After setting target dimensions, an interactive crop area appears on the preview. The bright part of the image is the section that will be saved - the rest is dimmed.
           </p>
           <div className="mt-4 space-y-4">
             <div>
@@ -364,13 +364,13 @@ export default function OnlineImageEditorPage() {
             <div>
               <p className="text-dark font-semibold">Resizing via handles</p>
               <p className="text-mid mt-1">
-                In the corners of the crop area there are small squares (handles). Dragging them changes the crop size — you can enlarge or shrink it while maintaining the chosen proportions.
+                In the corners of the crop area there are small squares (handles). Dragging them changes the crop size - you can enlarge or shrink it while maintaining the chosen proportions.
               </p>
             </div>
             <div>
               <p className="text-dark font-semibold">Zoom</p>
               <p className="text-mid mt-1">
-                In the <strong>Zoom</strong> tab you will find a slider to adjust zoom (100–300%). A higher value means the crop covers a smaller section of the original image — useful when you want
+                In the <strong>Zoom</strong> tab you will find a slider to adjust zoom (100–300%). A higher value means the crop covers a smaller section of the original image - useful when you want
                 to cut out a specific detail.
               </p>
             </div>
@@ -415,9 +415,9 @@ export default function OnlineImageEditorPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="3×3 grid — what is it for?">
+        <SectionInfo title="3×3 grid - what is it for?">
           <p className="text-mid">
-            A grid dividing the image into 9 equal parts is visible on the crop area. This is a visualization of the <strong>rule of thirds</strong> — one of the fundamental principles of photographic
+            A grid dividing the image into 9 equal parts is visible on the crop area. This is a visualization of the <strong>rule of thirds</strong> - one of the fundamental principles of photographic
             composition.
           </p>
           <p className="text-mid mt-3">
@@ -432,7 +432,7 @@ export default function OnlineImageEditorPage() {
         <Gap variant="line" />
 
         <SectionTabs
-          title="Export — which format to choose?"
+          title="Export - which format to choose?"
           tabs={[
             {
               title: 'JPG',
@@ -440,7 +440,7 @@ export default function OnlineImageEditorPage() {
               content: (
                 <div>
                   <p className="text-mid mb-3">
-                    The most popular format for photos. Good compression while maintaining visual quality. Does not support transparency — the background will always be filled with a color.
+                    The most popular format for photos. Good compression while maintaining visual quality. Does not support transparency - the background will always be filled with a color.
                   </p>
                   <p className="text-mid">A good choice for product photos, portraits, and most website graphics. The quality slider (60–100%) controls compression.</p>
                 </div>
@@ -451,7 +451,7 @@ export default function OnlineImageEditorPage() {
               icon: <RiFileImageLine className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">Lossless format — preserves full quality, but files are larger. Supports transparency (required for the circle shape).</p>
+                  <p className="text-mid mb-3">Lossless format - preserves full quality, but files are larger. Supports transparency (required for the circle shape).</p>
                   <p className="text-mid">A good choice for graphics with text, icons, and images requiring sharp edges.</p>
                 </div>
               ),
@@ -461,8 +461,8 @@ export default function OnlineImageEditorPage() {
               icon: <RiCropLine className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">Modern format combining the advantages of JPG and PNG — small files, good quality, transparency support. Supported by all modern browsers.</p>
-                  <p className="text-mid">Recommended for websites — smaller files mean faster loading.</p>
+                  <p className="text-mid mb-3">Modern format combining the advantages of JPG and PNG - small files, good quality, transparency support. Supported by all modern browsers.</p>
+                  <p className="text-mid">Recommended for websites - smaller files mean faster loading.</p>
                 </div>
               ),
             },
@@ -472,7 +472,7 @@ export default function OnlineImageEditorPage() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="Aspect ratios — what do they mean?"
+          title="Aspect ratios - what do they mean?"
           description="The aspect ratio is the relationship between the width and height of an image. Written as two numbers separated by a colon:"
           grid="two"
           items={[
@@ -480,14 +480,14 @@ export default function OnlineImageEditorPage() {
             {
               icon: <RiAspectRatioLine className="h-6 w-6" />,
               title: '4:5 (portrait)',
-              description: 'Slightly vertical format. Instagram portrait post — takes up more space in the feed than a square.',
+              description: 'Slightly vertical format. Instagram portrait post - takes up more space in the feed than a square.',
             },
             { icon: <RiImageLine className="h-6 w-6" />, title: '3:2 (classic)', description: 'Traditional analog photography proportions. Many digital cameras also use this format.' },
             { icon: <RiCropLine className="h-6 w-6" />, title: '16:9 (widescreen)', description: 'Standard HD video, presentation, and monitor format. YouTube, Facebook video, website banners.' },
             {
               icon: <RiInstagramLine className="h-6 w-6" />,
               title: '9:16 (vertical full-screen)',
-              description: 'Inverted 16:9 — a vertical format filling the entire phone screen. Instagram Stories, TikTok, YouTube Shorts.',
+              description: 'Inverted 16:9 - a vertical format filling the entire phone screen. Instagram Stories, TikTok, YouTube Shorts.',
             },
           ]}
         />
@@ -501,7 +501,7 @@ export default function OnlineImageEditorPage() {
             {
               question: 'Why is JPG format unavailable with the circle shape?',
               answer:
-                'JPG format does not support transparency. The circle shape requires a transparent background outside the circle, so the tool automatically limits the choice to PNG or WebP — formats with an alpha channel.',
+                'JPG format does not support transparency. The circle shape requires a transparent background outside the circle, so the tool automatically limits the choice to PNG or WebP - formats with an alpha channel.',
               answerSchemaText: 'JPG does not support transparency. Circle shape requires PNG or WebP.',
             },
             {

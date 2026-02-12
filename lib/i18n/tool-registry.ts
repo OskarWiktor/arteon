@@ -15,6 +15,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
     locales: {
       pl: { title: 'Obrazy i favicony' },
       en: { title: 'Images & favicons' },
+      de: { title: 'Bilder & Favicons' },
     },
   },
   {
@@ -23,6 +24,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
     locales: {
       pl: { title: 'Meta i SEO' },
       en: { title: 'Meta & SEO' },
+      de: { title: 'Meta & SEO' },
     },
   },
   {
@@ -31,6 +33,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
     locales: {
       pl: { title: 'E-mail i komunikacja' },
       en: { title: 'Email & communication' },
+      de: { title: 'E-Mail & Kommunikation' },
     },
   },
   {
@@ -39,6 +42,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
     locales: {
       pl: { title: 'Kolory i dostępność' },
       en: { title: 'Colors & accessibility' },
+      de: { title: 'Farben & Barrierefreiheit' },
     },
   },
   {
@@ -47,6 +51,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
     locales: {
       pl: { title: 'Druk i materiały' },
       en: { title: 'Print & materials' },
+      de: { title: 'Druck & Materialien' },
     },
   },
 ];
@@ -72,6 +77,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'JPG/PNG to WebP converter',
         description: 'Reduce image file size without losing quality. Convert JPG and PNG to WebP and speed up your website.',
       },
+      de: {
+        slug: 'jpg-png-zu-webp-konverter',
+        title: 'JPG/PNG-zu-WebP-Konverter',
+        description: 'Reduzieren Sie die Dateigröße von Bildern ohne Qualitätsverlust. Konvertieren Sie JPG und PNG in WebP und beschleunigen Sie Ihre Website.',
+      },
     },
   },
   {
@@ -90,6 +100,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'online-image-editor',
         title: 'Online image editor',
         description: 'Prepare the perfect crop for social media or your website. Choose a ready-made format or enter custom dimensions.',
+      },
+      de: {
+        slug: 'online-bildeditor',
+        title: 'Online-Bildeditor',
+        description: 'Bereiten Sie den perfekten Zuschnitt für Social Media oder Ihre Website vor. Wählen Sie ein fertiges Format oder geben Sie eigene Maße ein.',
       },
     },
   },
@@ -110,6 +125,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Favicon generator',
         description: 'Generate favicon.ico and PNG icons from a single image, compliant with browser and Lighthouse requirements.',
       },
+      de: {
+        slug: 'kostenloser-favicon-generator',
+        title: 'Favicon-Generator',
+        description: 'Generieren Sie favicon.ico und PNG-Symbole aus einem einzigen Bild - konform mit Browser- und Lighthouse-Anforderungen.',
+      },
     },
   },
   {
@@ -128,6 +148,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'meta-title-description-length-checker',
         title: 'Meta title & description checker',
         description: 'Check character count and preview how your page looks in Google. Avoid truncated titles and descriptions in search results.',
+      },
+      de: {
+        slug: 'meta-titel-beschreibung-laengenpruefer',
+        title: 'Meta-Titel- & Beschreibungs-Checker',
+        description: 'Prüfen Sie die Zeichenanzahl und sehen Sie eine Vorschau Ihrer Seite in Google. Vermeiden Sie abgeschnittene Titel und Beschreibungen in den Suchergebnissen.',
       },
     },
   },
@@ -148,6 +173,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Word & character counter',
         description: 'Check text length and evaluate whether it fits a homepage, service page, blog post, or product description.',
       },
+      de: {
+        slug: 'wort-und-zeichenzaehler',
+        title: 'Wort- & Zeichenzähler',
+        description: 'Überprüfen Sie die Textlänge und bewerten Sie, ob sie für eine Startseite, Dienstleistungsseite, einen Blogartikel oder eine Produktbeschreibung geeignet ist.',
+      },
     },
   },
   {
@@ -166,6 +196,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'free-email-signature-generator',
         title: 'Email signature generator',
         description: 'Build a professional email signature in minutes. Copy the ready HTML code into Gmail or Outlook.',
+      },
+      de: {
+        slug: 'kostenloser-e-mail-signatur-generator',
+        title: 'E-Mail-Signatur-Generator',
+        description: 'Erstellen Sie in wenigen Minuten eine professionelle E-Mail-Signatur. Kopieren Sie den fertigen HTML-Code in Gmail oder Outlook.',
       },
     },
   },
@@ -186,6 +221,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Color contrast checker',
         description: 'Check if your text and background colors are readable. The tool calculates contrast per WCAG and helps pick the right color.',
       },
+      de: {
+        slug: 'farbkontrast-checker',
+        title: 'Farbkontrast-Checker',
+        description: 'Prüfen Sie, ob Ihre Text- und Hintergrundfarben gut lesbar sind. Das Tool berechnet den Kontrast gemäß WCAG und hilft bei der Farbwahl.',
+      },
     },
   },
   {
@@ -204,6 +244,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'image-color-extractor',
         title: 'Image color extractor',
         description: 'Upload a photo or logo and the tool will extract dominant colors. Copy generated color codes with a single click.',
+      },
+      de: {
+        slug: 'bild-farbextraktor',
+        title: 'Bild-Farbextraktor',
+        description: 'Laden Sie ein Foto oder Logo hoch und das Tool extrahiert die dominanten Farben. Kopieren Sie die Farbcodes mit einem Klick.',
       },
     },
   },
@@ -224,6 +269,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Color palette generator',
         description: 'Pick one color and generate 9 palettes: monochromatic, complementary, triadic, and more.',
       },
+      de: {
+        slug: 'farbpaletten-generator',
+        title: 'Farbpaletten-Generator',
+        description: 'Wählen Sie eine Farbe und generieren Sie 9 Paletten: monochromatisch, komplementär, triadisch und mehr.',
+      },
     },
   },
   {
@@ -242,6 +292,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'free-qr-code-generator',
         title: 'Free QR code generator',
         description: 'Create a QR code for a website, vCard, menu, or flyer. Export to PNG and SVG, no login, no limits.',
+      },
+      de: {
+        slug: 'kostenloser-qr-code-generator',
+        title: 'Kostenloser QR-Code-Generator',
+        description: 'Erstellen Sie einen QR-Code für eine Website, vCard, Speisekarte oder einen Flyer. Export als PNG und SVG, ohne Anmeldung, ohne Limits.',
       },
     },
   },
@@ -287,7 +342,7 @@ export function getAlternateToolHref(currentPath: string, fromLocale: Locale, to
     return toConfig.toolsIndexHref;
   }
 
-  // Individual tool page — extract slug from path
+  // Individual tool page - extract slug from path
   const prefix = fromConfig.toolsBasePath + '/';
   if (currentPath.startsWith(prefix)) {
     const slug = currentPath.slice(prefix.length).split('/')[0];

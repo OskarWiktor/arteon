@@ -153,7 +153,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
       percentage: Math.min(percentage, 99),
       message:
         locale === 'en'
-          ? `Text is below the approximate minimum (${minWords} ${wordsLabel}). If the topic is covered — it may be enough. About ${missing} words short.`
+          ? `Text is below the approximate minimum (${minWords} ${wordsLabel}). If the topic is covered - it may be enough. About ${missing} words short.`
           : `Tekst poniżej orientacyjnego minimum (${minWords} ${wordsLabel}). Jeśli temat jest wyczerpany - to może wystarczyć. Brakuje około ${missing} ${wordsLabel}.`,
     };
   }
@@ -165,7 +165,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
       percentage: 100,
       message:
         locale === 'en'
-          ? `Text exceeds the approximate maximum by ${excess} words. If every sentence adds value — the length is justified.`
+          ? `Text exceeds the approximate maximum by ${excess} words. If every sentence adds value - the length is justified.`
           : `Tekst powyżej orientacyjnego maksimum o ${excess} słów. Jeśli każde zdanie wnosi wartość - długość jest uzasadniona.`,
     };
   }
@@ -178,7 +178,7 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
       percentage: Math.max(percentage, 1),
       message:
         locale === 'en'
-          ? 'Length is within the recommended range. Value for the reader is key — ranges serve as a reference point.'
+          ? 'Length is within the recommended range. Value for the reader is key - ranges serve as a reference point.'
           : 'Długość w zalecanym zakresie. Wartość dla czytelnika jest kluczowa, a zakresy służą jako punkt odniesienia.',
     };
   }

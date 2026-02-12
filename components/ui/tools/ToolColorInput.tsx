@@ -20,20 +20,8 @@ export default function ToolColorInput({ value, onChange, pickerValue, onPickerC
 
   return (
     <div className="flex items-center gap-2">
-      <input
-        type="color"
-        value={pickerVal}
-        onChange={(e) => handlePickerChange(e.target.value)}
-        aria-label={ariaLabel}
-        className="tool-color-picker h-10! w-12!"
-      />
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className={`tool-input ${inputClassName}`}
-        placeholder={placeholder}
-      />
+      <input type="color" value={pickerVal} onChange={(e) => handlePickerChange(e.target.value)} aria-label={ariaLabel} className="tool-color-picker h-10! w-12!" />
+      <input type="text" value={value} onChange={(e) => onChange(e.target.value)} className={`tool-input ${inputClassName}`} placeholder={placeholder} />
     </div>
   );
 }

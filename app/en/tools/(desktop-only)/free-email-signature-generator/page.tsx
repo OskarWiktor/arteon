@@ -34,14 +34,18 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free email signature generator online — HTML for Gmail & Outlook',
+  title: 'Free email signature generator online - HTML for Gmail & Outlook',
   description: 'Free HTML email signature generator. Add contact details, logo, social media links, and copy the ready code into Gmail or Outlook. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'), en: toAbsoluteUrl('/en/tools/free-email-signature-generator') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
+      en: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
+      de: toAbsoluteUrl('/de/tools/kostenloser-e-mail-signatur-generator'),
+    },
   },
   openGraph: {
-    title: 'Free email signature generator online — HTML for Gmail & Outlook',
+    title: 'Free email signature generator online - HTML for Gmail & Outlook',
     description: 'Free HTML email signature generator. Add contact details, CTA buttons, and social media links, then copy the ready code into Gmail or Outlook.',
     url: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
     type: 'website',
@@ -100,7 +104,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Fill in contact details',
-      text: 'In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo — after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px).',
+      text: 'In the Details tab, enter your name, title, company, email, phone, and website URL. Optionally add an avatar or logo - after entering the image URL, you can choose shape (round, rounded, square) and size (40, 56, or 72 px).',
     },
     {
       '@type': 'HowToStep',
@@ -124,7 +128,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 6,
       name: 'Add disclaimer and configure separator',
-      text: 'In the Disclaimer / Legal tab, enter legal text and configure the separator line — choose style (solid, dashed, dotted), thickness (1–3 px), and color.',
+      text: 'In the Disclaimer / Legal tab, enter legal text and configure the separator line - choose style (solid, dashed, dotted), thickness (1–3 px), and color.',
     },
     {
       '@type': 'HowToStep',
@@ -165,8 +169,8 @@ export default function EmailSignatureGeneratorPage() {
             website or meeting calendar.
           </p>
           <p className="text-mid mt-3">
-            The recipient does not have to search for the phone number in previous messages — all details are readily available. A professional email signature also shows that you pay attention to details and
-            maintain a consistent company image in business correspondence.
+            The recipient does not have to search for the phone number in previous messages - all details are readily available. A professional email signature also shows that you pay attention to
+            details and maintain a consistent company image in business correspondence.
           </p>
         </SectionInfo>
 
@@ -187,48 +191,48 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="How to fill in signature details">
           <p className="text-mid">
-            The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the
-            signature only when filled in.
+            The <strong>Details</strong> tab contains all the fields you can fill in. Only two are required: name and email address. The remaining fields are optional and will appear in the signature
+            only when filled in.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Fields in the Details tab</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Line above name</strong> — additional text displayed above the name. You can enter the company name, tagline, or slogan.
+              <strong>Line above name</strong> - additional text displayed above the name. You can enter the company name, tagline, or slogan.
             </li>
             <li>
-              <strong>Avatar / logo (image URL)</strong> — URL to a profile photo or company logo. The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL,
-              additional options appear: <strong>Avatar shape</strong> (round, rounded, or square) and <strong>Avatar size</strong> (small — 40 px, medium — 56 px, large — 72 px).
+              <strong>Avatar / logo (image URL)</strong> - URL to a profile photo or company logo. The image should be square (min. 120×120 px) and publicly accessible online. After pasting the URL,
+              additional options appear: <strong>Avatar shape</strong> (round, rounded, or square) and <strong>Avatar size</strong> (small - 40 px, medium - 56 px, large - 72 px).
             </li>
             <li>
-              <strong>Full name</strong> — required field. Enter your full name.
+              <strong>Full name</strong> - required field. Enter your full name.
             </li>
             <li>
-              <strong>Name tag</strong> — short text next to the name, e.g., pronouns or abbreviated title.
+              <strong>Name tag</strong> - short text next to the name, e.g., pronouns or abbreviated title.
             </li>
             <li>
-              <strong>Job title</strong> — your role in the company, e.g., Sales Manager, Marketing Specialist.
+              <strong>Job title</strong> - your role in the company, e.g., Sales Manager, Marketing Specialist.
             </li>
             <li>
-              <strong>Company name</strong> — the name of the organization you represent.
+              <strong>Company name</strong> - the name of the organization you represent.
             </li>
             <li>
-              <strong>Additional line</strong> — a short description of what you do or what you offer.
+              <strong>Additional line</strong> - a short description of what you do or what you offer.
             </li>
             <li>
-              <strong>Email</strong> — required field. Enter your business email address.
+              <strong>Email</strong> - required field. Enter your business email address.
             </li>
             <li>
-              <strong>Phone</strong> — contact number. Any format, e.g., +1 555 000 000.
+              <strong>Phone</strong> - contact number. Any format, e.g., +1 555 000 000.
             </li>
             <li>
-              <strong>Website</strong> — full URL of your website, starting with https://.
+              <strong>Website</strong> - full URL of your website, starting with https://.
             </li>
             <li>
-              <strong>Address</strong> — physical company address (street, city, postal code).
+              <strong>Address</strong> - physical company address (street, city, postal code).
             </li>
             <li>
-              <strong>Formal details</strong> — tax ID, license number, or other details required in your industry.
+              <strong>Formal details</strong> - tax ID, license number, or other details required in your industry.
             </li>
           </ul>
         </SectionInfo>
@@ -236,7 +240,7 @@ export default function EmailSignatureGeneratorPage() {
         <Gap variant="line" />
 
         <SectionDemo
-          title="Signature layouts — which to choose?"
+          title="Signature layouts - which to choose?"
           demo={
             <div className="space-y-3">
               <p className="text-dark text-sm! font-medium uppercase">Signature layout</p>
@@ -272,28 +276,28 @@ export default function EmailSignatureGeneratorPage() {
           <p className="text-mid">The generator offers eight ready-made layouts. Each presents the same information in a different way.</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Standard</strong> — classic vertical layout, fits most use cases.
+              <strong>Standard</strong> - classic vertical layout, fits most use cases.
             </li>
             <li>
-              <strong>Top bar</strong> — a horizontal bar separates the signature from the content.
+              <strong>Top bar</strong> - a horizontal bar separates the signature from the content.
             </li>
             <li>
-              <strong>Labels left</strong> — two columns: labels and values.
+              <strong>Labels left</strong> - two columns: labels and values.
             </li>
             <li>
-              <strong>Centered</strong> — formal appearance, content centered.
+              <strong>Centered</strong> - formal appearance, content centered.
             </li>
             <li>
-              <strong>Compact</strong> — everything in one line, minimal height.
+              <strong>Compact</strong> - everything in one line, minimal height.
             </li>
             <li>
-              <strong>Two columns</strong> — details on the left, contact info on the right.
+              <strong>Two columns</strong> - details on the left, contact info on the right.
             </li>
             <li>
-              <strong>Minimalist</strong> — only the most important information.
+              <strong>Minimalist</strong> - only the most important information.
             </li>
             <li>
-              <strong>Bottom bar</strong> — colored bar with contact at the bottom of the signature.
+              <strong>Bottom bar</strong> - colored bar with contact at the bottom of the signature.
             </li>
           </ul>
         </SectionDemo>
@@ -332,7 +336,7 @@ export default function EmailSignatureGeneratorPage() {
           </p>
 
           <p className="text-mid mt-4">
-            If you leave both fields empty, the button will not appear in the signature. If you fill in only one field, the button will also not be visible — both text and link are needed.
+            If you leave both fields empty, the button will not appear in the signature. If you fill in only one field, the button will also not be visible - both text and link are needed.
           </p>
         </SectionInfo>
 
@@ -360,10 +364,10 @@ export default function EmailSignatureGeneratorPage() {
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Icon size</strong> — options: Small (16 px), Medium (20 px), or Large (24 px).
+              <strong>Icon size</strong> - options: Small (16 px), Medium (20 px), or Large (24 px).
             </li>
             <li>
-              <strong>Icon color</strong> — Platform colors (default colors for each platform), Accent color (uniform accent color), or Text color.
+              <strong>Icon color</strong> - Platform colors (default colors for each platform), Accent color (uniform accent color), or Text color.
             </li>
           </ul>
         </SectionInfo>
@@ -384,30 +388,30 @@ export default function EmailSignatureGeneratorPage() {
           <h3 className="h5 mt-6 mb-3">Colors</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Accent color</strong> — used in the side/top bar, CTA button, and links. You can choose any color from the palette.
+              <strong>Accent color</strong> - used in the side/top bar, CTA button, and links. You can choose any color from the palette.
             </li>
             <li>
-              <strong>Text color</strong> — color of all text in the signature (name, contact details, disclaimer).
+              <strong>Text color</strong> - color of all text in the signature (name, contact details, disclaimer).
             </li>
             <li>
-              <strong>Background color</strong> — background color of the entire signature. White by default, but you can change it.
+              <strong>Background color</strong> - background color of the entire signature. White by default, but you can change it.
             </li>
           </ul>
 
           <h3 className="h5 mt-6 mb-3">Font and size</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Font</strong> — options: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. All are email-safe and will display correctly for the recipient.
+              <strong>Font</strong> - options: Arial, Verdana, Tahoma, Trebuchet MS, and Georgia. All are email-safe and will display correctly for the recipient.
             </li>
             <li>
-              <strong>Text size</strong> — three options: Small (12 px), Standard (14 px), and Larger (16 px).
+              <strong>Text size</strong> - three options: Small (12 px), Standard (14 px), and Larger (16 px).
             </li>
           </ul>
 
           <h3 className="h5 mt-6 mb-3">Additional settings</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Signature border</strong> — you can add a border to the signature by selecting any combination of sides (left, right, top, bottom). Selecting all sides automatically sets a full
+              <strong>Signature border</strong> - you can add a border to the signature by selecting any combination of sides (left, right, top, bottom). Selecting all sides automatically sets a full
               border. The border uses the accent color.
             </li>
           </ul>
@@ -415,7 +419,7 @@ export default function EmailSignatureGeneratorPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Text style — colors and sizes of individual elements">
+        <SectionInfo title="Text style - colors and sizes of individual elements">
           <p className="text-mid">
             In the <strong>Text Style</strong> tab you can individually customize the color and font size for each text element in the signature.
           </p>
@@ -424,28 +428,28 @@ export default function EmailSignatureGeneratorPage() {
           <p className="text-mid">Only elements that currently have content in the signature are visible. For each element you can set:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Name</strong> — displayed in accent color by default.
+              <strong>Name</strong> - displayed in accent color by default.
             </li>
             <li>
-              <strong>Job title</strong> — role in the company.
+              <strong>Job title</strong> - role in the company.
             </li>
             <li>
-              <strong>Company</strong> — organization name.
+              <strong>Company</strong> - organization name.
             </li>
             <li>
-              <strong>Contact details</strong> — email, phone, website (labels).
+              <strong>Contact details</strong> - email, phone, website (labels).
             </li>
             <li>
-              <strong>Social media</strong> — profile links.
+              <strong>Social media</strong> - profile links.
             </li>
             <li>
-              <strong>Legal disclaimer</strong> — legal text at the bottom of the signature.
+              <strong>Legal disclaimer</strong> - legal text at the bottom of the signature.
             </li>
           </ul>
 
           <h3 className="h5 mt-6 mb-3">How to change color</h3>
           <p className="text-mid">
-            Next to each element you will find a row of color options. Click a color square to select it. You can also add a custom color by clicking the colored square with a plus — choose a color
+            Next to each element you will find a row of color options. Click a color square to select it. You can also add a custom color by clicking the colored square with a plus - choose a color
             and click Save. Custom colors (up to 8) are shared between all elements.
           </p>
           <p className="text-mid mt-3">The reset icon button restores the default color of the element.</p>
@@ -465,7 +469,7 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Inner signature padding</h3>
           <p className="text-mid">
-            At the top of the tab you will find the inner padding option — the distance between the signature content and its edges. Three values are available: 8 px (small), 16 px (medium), and 24 px
+            At the top of the tab you will find the inner padding option - the distance between the signature content and its edges. Three values are available: 8 px (small), 16 px (medium), and 24 px
             (large).
           </p>
 
@@ -476,25 +480,25 @@ export default function EmailSignatureGeneratorPage() {
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>After name</strong> — spacing below the name line.
+              <strong>After name</strong> - spacing below the name line.
             </li>
             <li>
-              <strong>After title / company</strong> — spacing below the title and company name line.
+              <strong>After title / company</strong> - spacing below the title and company name line.
             </li>
             <li>
-              <strong>After additional line</strong> — spacing below the description (if filled in).
+              <strong>After additional line</strong> - spacing below the description (if filled in).
             </li>
             <li>
-              <strong>After contact details</strong> — spacing below email, phone, and website.
+              <strong>After contact details</strong> - spacing below email, phone, and website.
             </li>
             <li>
-              <strong>After social media</strong> — spacing below profile links.
+              <strong>After social media</strong> - spacing below profile links.
             </li>
             <li>
-              <strong>After CTA button</strong> — spacing below the button (if enabled).
+              <strong>After CTA button</strong> - spacing below the button (if enabled).
             </li>
             <li>
-              <strong>Before disclaimer</strong> — spacing above the legal disclaimer text.
+              <strong>Before disclaimer</strong> - spacing above the legal disclaimer text.
             </li>
           </ul>
           <p className="text-mid mt-4">If you clear a field (e.g., remove the phone number), the corresponding spacing option will automatically disappear from the tab.</p>
@@ -502,7 +506,7 @@ export default function EmailSignatureGeneratorPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Legal disclaimer — when to add it">
+        <SectionInfo title="Legal disclaimer - when to add it">
           <p className="text-mid">
             In the <strong>Disclaimer / Legal</strong> tab you can add legal text that will appear at the bottom of the signature in smaller font.
           </p>
@@ -510,13 +514,13 @@ export default function EmailSignatureGeneratorPage() {
           <h3 className="h5 mt-6 mb-3">When to add a disclaimer</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Business correspondence</strong> — confidentiality notice and request to delete in case of incorrect delivery.
+              <strong>Business correspondence</strong> - confidentiality notice and request to delete in case of incorrect delivery.
             </li>
             <li>
-              <strong>Industry requirements</strong> — some industries (e.g., legal, medical, financial) require specific information in every message.
+              <strong>Industry requirements</strong> - some industries (e.g., legal, medical, financial) require specific information in every message.
             </li>
             <li>
-              <strong>GDPR</strong> — information about personal data processing, if the company is a data controller.
+              <strong>GDPR</strong> - information about personal data processing, if the company is a data controller.
             </li>
           </ul>
 
@@ -533,13 +537,13 @@ export default function EmailSignatureGeneratorPage() {
           <p className="text-mid mt-3">After enabling the line, additional customization options appear:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Line style</strong> — options: solid, dashed, or dotted.
+              <strong>Line style</strong> - options: solid, dashed, or dotted.
             </li>
             <li>
-              <strong>Line thickness</strong> — three options: 1 px, 2 px, or 3 px.
+              <strong>Line thickness</strong> - three options: 1 px, 2 px, or 3 px.
             </li>
             <li>
-              <strong>Line color</strong> — default gray (#e5e7eb). You can choose any color from the palette or restore the default by clicking the Default button.
+              <strong>Line color</strong> - default gray (#e5e7eb). You can choose any color from the palette or restore the default by clicking the Default button.
             </li>
           </ul>
         </SectionInfo>
@@ -553,7 +557,7 @@ export default function EmailSignatureGeneratorPage() {
           </p>
 
           <h3 className="h5 mt-6 mb-3">How does auto-save work?</h3>
-          <p className="text-mid">Every change (text, color, layout, spacing) is immediately saved in browser memory. Saving happens automatically in the background — without clicking any buttons.</p>
+          <p className="text-mid">Every change (text, color, layout, spacing) is immediately saved in browser memory. Saving happens automatically in the background - without clicking any buttons.</p>
 
           <h3 className="h5 mt-6 mb-3">How to reset settings</h3>
           <p className="text-mid">
@@ -614,25 +618,25 @@ export default function EmailSignatureGeneratorPage() {
           <p className="text-mid">Below the preview you will find several buttons:</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
-              <strong>Copy signature (Gmail / Outlook)</strong> — copies the signature to clipboard as formatted HTML. Paste it directly in signature settings.
+              <strong>Copy signature (Gmail / Outlook)</strong> - copies the signature to clipboard as formatted HTML. Paste it directly in signature settings.
             </li>
             <li>
-              <strong>Copy HTML code</strong> — copies the raw HTML code of the signature to clipboard. Useful when you want to paste code in an HTML editor or CMS.
+              <strong>Copy HTML code</strong> - copies the raw HTML code of the signature to clipboard. Useful when you want to paste code in an HTML editor or CMS.
             </li>
             <li>
-              <strong>Download as HTML</strong> — saves the signature code as an .html file to disk. Useful for archiving or sharing with a developer.
+              <strong>Download as HTML</strong> - saves the signature code as an .html file to disk. Useful for archiving or sharing with a developer.
             </li>
             <li>
-              <strong>View HTML code</strong> — opens a modal with the full HTML source code of the signature. You can review the code and copy it directly from the modal.
+              <strong>View HTML code</strong> - opens a modal with the full HTML source code of the signature. You can review the code and copy it directly from the modal.
             </li>
             <li>
-              <strong>Export settings</strong> — saves the full signature configuration (data, colors, layout, spacing, styles) to a JSON file.
+              <strong>Export settings</strong> - saves the full signature configuration (data, colors, layout, spacing, styles) to a JSON file.
             </li>
             <li>
-              <strong>Import settings</strong> — loads a configuration from a JSON file. All settings will be automatically applied.
+              <strong>Import settings</strong> - loads a configuration from a JSON file. All settings will be automatically applied.
             </li>
             <li>
-              <strong>Reset appearance</strong> — restores all data and settings to default values (after confirmation).
+              <strong>Reset appearance</strong> - restores all data and settings to default values (after confirmation).
             </li>
           </ul>
         </SectionInfo>
@@ -721,7 +725,7 @@ export default function EmailSignatureGeneratorPage() {
             {
               question: 'Can I use the generator to create signatures for an entire team?',
               answer:
-                'Yes. The generator does not require login or registration. Each person on the team can open the tool, fill in their details, and copy the ready signature. To maintain visual consistency, agree on shared settings: the same layout, color theme, and font. You can also export the configuration as a JSON file and share it with colleagues — they just need to import the file and change only their personal details.',
+                'Yes. The generator does not require login or registration. Each person on the team can open the tool, fill in their details, and copy the ready signature. To maintain visual consistency, agree on shared settings: the same layout, color theme, and font. You can also export the configuration as a JSON file and share it with colleagues - they just need to import the file and change only their personal details.',
             },
             {
               question: 'Can I add custom social media icons?',
@@ -729,21 +733,21 @@ export default function EmailSignatureGeneratorPage() {
                 'The generator offers built-in SVG icons for twelve platforms: LinkedIn, Instagram, Facebook, TikTok, YouTube, X, GitHub, Dribbble, Behance, WhatsApp, Telegram, and Pinterest. Enable the Show icons option in the Social Media tab. You can choose icon size and color (platform colors, accent color, or text color).',
             },
             {
-              question: 'The copy button is inactive — why?',
+              question: 'The copy button is inactive - why?',
               answer: 'To copy the signature, fill in at least two fields: name and email address. Check that both fields are filled in.',
             },
             {
-              question: 'Avatar or logo is not displaying — what to do?',
+              question: 'Avatar or logo is not displaying - what to do?',
               answer:
                 'The image must be publicly accessible online. The URL should point directly to an image file (ending in .jpg, .png, or .webp). Images from Google Drive or Dropbox require a special sharing link.',
             },
             {
-              question: 'The signature looks different for the recipient — why?',
+              question: 'The signature looks different for the recipient - why?',
               answer:
                 'Different email clients (Gmail, Outlook, Apple Mail) may slightly differ in how they render HTML. The generator uses safe styles that work in most programs. If you see major differences, make sure you are pasting the signature using Ctrl+V, not Paste as plain text.',
             },
             {
-              question: 'CTA button is not appearing — what to do?',
+              question: 'CTA button is not appearing - what to do?',
               answer: 'The button requires both fields: text and link. Check that in the Buttons tab both fields are filled in and the URL starts with https://.',
             },
             {
@@ -759,7 +763,7 @@ export default function EmailSignatureGeneratorPage() {
             {
               question: 'Can I change the avatar shape and size?',
               answer:
-                'Yes. After pasting the image URL in the Data tab, additional options appear: Avatar shape (round, rounded, square) and Avatar size (small — 40 px, medium — 56 px, large — 72 px). Settings are applied in all signature layouts.',
+                'Yes. After pasting the image URL in the Data tab, additional options appear: Avatar shape (round, rounded, square) and Avatar size (small - 40 px, medium - 56 px, large - 72 px). Settings are applied in all signature layouts.',
             },
             {
               question: 'How to change the separator line style?',

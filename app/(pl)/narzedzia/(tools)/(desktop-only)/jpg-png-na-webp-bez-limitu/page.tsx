@@ -36,7 +36,10 @@ import {
 export const metadata: Metadata = {
   title: 'Konwerter JPG i PNG na WebP online | Darmowy, bez limitu',
   description: 'Darmowy konwerter JPG i PNG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja odbywa się lokalnie w przeglądarce, pliki nie są wysyłane na serwer.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu') },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
+    languages: { pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'), en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'), de: toAbsoluteUrl('/de/tools/jpg-png-zu-webp-konverter') },
+  },
   openGraph: {
     title: 'Konwerter JPG i PNG na WebP online | Darmowy, bez limitu',
     description: 'Darmowy konwerter JPG i PNG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja odbywa się lokalnie w przeglądarce, pliki nie są wysyłane na serwer.',

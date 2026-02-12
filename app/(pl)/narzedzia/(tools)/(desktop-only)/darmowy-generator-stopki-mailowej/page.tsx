@@ -38,7 +38,14 @@ export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej online - stwórz podpis email HTML',
   description:
     'Darmowy generator stopki mailowej po polsku. Stwórz profesjonalny podpis email HTML bez rejestracji. Dodaj dane kontaktowe, logo, media społecznościowe i skopiuj do Gmail lub Outlook.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej') },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
+      en: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
+      de: toAbsoluteUrl('/de/tools/kostenloser-e-mail-signatur-generator'),
+    },
+  },
   openGraph: {
     title: 'Darmowy generator stopki mailowej online - stwórz podpis email HTML',
     description:

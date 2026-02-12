@@ -42,14 +42,14 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free QR code generator online — PNG and SVG export',
+  title: 'Free QR code generator online - PNG and SVG export',
   description: 'Free online QR code generator. Create QR codes for websites, vCards, emails, phone numbers, menus, and flyers. Export to PNG and SVG. Customize colors and size. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'), en: toAbsoluteUrl('/en/tools/free-qr-code-generator') },
+    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'), en: toAbsoluteUrl('/en/tools/free-qr-code-generator'), de: toAbsoluteUrl('/de/tools/kostenloser-qr-code-generator') },
   },
   openGraph: {
-    title: 'Free QR code generator online — PNG and SVG export',
+    title: 'Free QR code generator online - PNG and SVG export',
     description: 'Free online QR code generator. Create QR codes for websites, vCards, emails, and more. Export to PNG and SVG. No registration.',
     url: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
     type: 'website',
@@ -101,7 +101,7 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to use the free QR code generator',
-  description: 'How to create a QR code for a website, vCard business card, email, or phone — from choosing the data type to downloading the ready file for printing.',
+  description: 'How to create a QR code for a website, vCard business card, email, or phone - from choosing the data type to downloading the ready file for printing.',
   url: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
   step: [
     { '@type': 'HowToStep', name: 'Choose the data type', text: 'Decide what the QR code should contain: URL, text, business card (vCard), email, or phone number.' },
@@ -138,7 +138,7 @@ export default function QrCodeGeneratorPage() {
         <SectionInfo title="What is a QR code and how does it work?">
           <p className="text-mid">
             A QR code (Quick Response) is a two-dimensional barcode that can be scanned with a smartphone camera. Unlike traditional barcodes, QR codes store data both horizontally and vertically,
-            allowing them to encode significantly more information — up to approximately 3,000 alphanumeric characters.
+            allowing them to encode significantly more information - up to approximately 3,000 alphanumeric characters.
           </p>
           <p className="text-mid mt-3">
             The QR code was developed in 1994 by the Japanese company Denso Wave (part of the Toyota group) for tracking car parts. Today, QR codes are widely used in marketing, hospitality,
@@ -154,7 +154,7 @@ export default function QrCodeGeneratorPage() {
           grid="three"
           items={[
             { title: '1. Choose the data type', description: 'Select what you want to encode: URL, text, vCard business card, email, or phone number.' },
-            { title: '2. Enter the data', description: 'Fill in the appropriate fields — website address, contact details, or message content.' },
+            { title: '2. Enter the data', description: 'Fill in the appropriate fields - website address, contact details, or message content.' },
             { title: '3. Download the code', description: 'Customize the appearance (colors, size, margin) and download as PNG or SVG.' },
           ]}
         />
@@ -162,8 +162,8 @@ export default function QrCodeGeneratorPage() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="QR code types — URL, vCard, email, phone, text"
-          description="The free QR code generator supports five data types — each useful in different situations:"
+          title="QR code types - URL, vCard, email, phone, text"
+          description="The free QR code generator supports five data types - each useful in different situations:"
           grid="two"
           items={[
             {
@@ -225,21 +225,21 @@ export default function QrCodeGeneratorPage() {
           <p className="text-mid mb-4">Knowing the technical parameters helps create QR codes that are readable in all conditions:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Data capacity</strong> — a QR code can hold up to 7,089 digits, 4,296 alphanumeric characters, or 2,953 bytes of binary data. In practice, this is more than enough for URLs and
+              <strong>Data capacity</strong> - a QR code can hold up to 7,089 digits, 4,296 alphanumeric characters, or 2,953 bytes of binary data. In practice, this is more than enough for URLs and
               business cards.
             </li>
             <li>
-              <strong>Reed-Solomon error correction</strong> — a mathematical algorithm that enables reading the code even when part of it is damaged or obscured. Levels: L (7%), M (15%), Q (25%), H
+              <strong>Reed-Solomon error correction</strong> - a mathematical algorithm that enables reading the code even when part of it is damaged or obscured. Levels: L (7%), M (15%), Q (25%), H
               (30%).
             </li>
             <li>
-              <strong>Margin</strong> — the white area around the code required for proper scanning. The recommended minimum is 4 modules (code units).
+              <strong>Margin</strong> - the white area around the code required for proper scanning. The recommended minimum is 4 modules (code units).
             </li>
             <li>
-              <strong>Minimum print size</strong> — for standard scanning conditions, the code should be at least 2×2 cm. For large format printing (banners, billboards), scale up accordingly.
+              <strong>Minimum print size</strong> - for standard scanning conditions, the code should be at least 2×2 cm. For large format printing (banners, billboards), scale up accordingly.
             </li>
             <li>
-              <strong>Contrast</strong> — the contrast ratio between the code and background should be at least 3:1. The generator automatically warns about too low contrast.
+              <strong>Contrast</strong> - the contrast ratio between the code and background should be at least 3:1. The generator automatically warns about too low contrast.
             </li>
           </ul>
         </SectionDemo>
@@ -247,7 +247,7 @@ export default function QrCodeGeneratorPage() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="QR code applications — business cards, flyers, restaurant menus"
+          title="QR code applications - business cards, flyers, restaurant menus"
           description="QR codes find use in many industries and scenarios:"
           grid="three"
           items={[
@@ -304,16 +304,16 @@ export default function QrCodeGeneratorPage() {
           <p className="text-mid mb-4">The generator lets you customize several parameters affecting the appearance and readability of the code:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Size (px)</strong> — code dimension in pixels. For standard print (flyers, business cards) choose 300–500 px. For digital use, 150–200 px is sufficient.
+              <strong>Size (px)</strong> - code dimension in pixels. For standard print (flyers, business cards) choose 300–500 px. For digital use, 150–200 px is sufficient.
             </li>
             <li>
-              <strong>Margin</strong> — white area around the code required for proper scanning. Recommended value is 2–4. A value of 0 may make scanning difficult on a dark background.
+              <strong>Margin</strong> - white area around the code required for proper scanning. Recommended value is 2–4. A value of 0 may make scanning difficult on a dark background.
             </li>
             <li>
-              <strong>QR code color</strong> — black by default (#000000). You can change it to any dark color matching your visual identity.
+              <strong>QR code color</strong> - black by default (#000000). You can change it to any dark color matching your visual identity.
             </li>
             <li>
-              <strong>Background color</strong> — white by default (#ffffff). You can change it to any light color. The generator will warn if contrast is too low.
+              <strong>Background color</strong> - white by default (#ffffff). You can change it to any light color. The generator will warn if contrast is too low.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -324,7 +324,7 @@ export default function QrCodeGeneratorPage() {
         <Gap variant="line" />
 
         <SectionDemo
-          title="Error correction levels — L, M, Q, H"
+          title="Error correction levels - L, M, Q, H"
           demo={
             <div className="space-y-2">
               {[
@@ -355,16 +355,16 @@ export default function QrCodeGeneratorPage() {
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>L (Low) — 7%</strong> — least redundancy, code is most compact. Choose when the code will be used in ideal conditions (screen, high-quality print).
+              <strong>L (Low) - 7%</strong> - least redundancy, code is most compact. Choose when the code will be used in ideal conditions (screen, high-quality print).
             </li>
             <li>
-              <strong>M (Medium) — 15%</strong> — default value, a good balance between capacity and resilience. Suitable for most applications.
+              <strong>M (Medium) - 15%</strong> - default value, a good balance between capacity and resilience. Suitable for most applications.
             </li>
             <li>
-              <strong>Q (Quartile) — 25%</strong> — greater resistance to damage. Choose for codes printed on materials prone to getting dirty.
+              <strong>Q (Quartile) - 25%</strong> - greater resistance to damage. Choose for codes printed on materials prone to getting dirty.
             </li>
             <li>
-              <strong>H (High) — 30%</strong> — highest resilience. Recommended for outdoor print materials, packaging, and situations where the code may be partially obscured (e.g., a logo in the
+              <strong>H (High) - 30%</strong> - highest resilience. Recommended for outdoor print materials, packaging, and situations where the code may be partially obscured (e.g., a logo in the
               center).
             </li>
           </ul>
@@ -376,7 +376,7 @@ export default function QrCodeGeneratorPage() {
         <Gap variant="line" />
 
         <SectionFeatureComparison
-          title="PNG vs SVG — which format to choose for printing?"
+          title="PNG vs SVG - which format to choose for printing?"
           plans={[
             { id: 'png', name: 'PNG (raster)' },
             { id: 'svg', name: 'SVG (vector)', highlighted: true },
@@ -408,7 +408,7 @@ export default function QrCodeGeneratorPage() {
             {
               icon: <RiLayoutGridLine className="h-6 w-6" />,
               title: 'Margin around the code',
-              description: 'Keep empty space around the code. Do not place other graphic elements too close — the margin is essential for proper scanning.',
+              description: 'Keep empty space around the code. Do not place other graphic elements too close - the margin is essential for proper scanning.',
             },
             { icon: <RiEyeLine className="h-6 w-6" />, title: 'Testing', description: 'Before mass printing, test the code on different phones and in various lighting conditions.' },
             { icon: <RiShieldCheckLine className="h-6 w-6" />, title: 'Correction level', description: 'For outdoor print and materials prone to damage, choose level Q or H.' },
@@ -424,22 +424,22 @@ export default function QrCodeGeneratorPage() {
             {
               icon: <RiInfinityLine className="h-6 w-6" />,
               title: 'Local generation in the browser',
-              description: 'Data entered into the generator is not sent to any server — all processing happens locally on your device.',
+              description: 'Data entered into the generator is not sent to any server - all processing happens locally on your device.',
             },
             {
               icon: <RiLockLine className="h-6 w-6" />,
               title: 'Five data types in one tool',
-              description: 'URL, text, vCard business card, email, and phone — each type generates a QR code in the appropriate standard.',
+              description: 'URL, text, vCard business card, email, and phone - each type generates a QR code in the appropriate standard.',
             },
             {
               icon: <RiStackLine className="h-6 w-6" />,
               title: 'QR code appearance customization',
-              description: 'Code and background colors, size in pixels, margin, and error correction level — every parameter can be customized.',
+              description: 'Code and background colors, size in pixels, margin, and error correction level - every parameter can be customized.',
             },
             {
               icon: <RiPaletteLine className="h-6 w-6" />,
               title: 'Four error correction levels',
-              description: 'The Reed-Solomon algorithm lets you choose code resilience to damage — from 7% (L) to 30% (H). Higher levels are useful for print on materials prone to getting dirty.',
+              description: 'The Reed-Solomon algorithm lets you choose code resilience to damage - from 7% (L) to 30% (H). Higher levels are useful for print on materials prone to getting dirty.',
             },
             { icon: <RiEyeLine className="h-6 w-6" />, title: 'Live preview', description: 'You see the result immediately after entering data, without clicking "Generate".' },
             { icon: <RiDownloadLine className="h-6 w-6" />, title: 'PNG and SVG export', description: 'Download the code in the format appropriate for your use case.' },
@@ -456,19 +456,19 @@ export default function QrCodeGeneratorPage() {
             {
               question: 'Does a QR code generated with this tool expire?',
               answer:
-                'No. A static QR code (like the one generated by this tool) does not expire. The content — e.g., a URL or business card data — is encoded directly in the code. As long as the target page exists, the code will work.',
+                'No. A static QR code (like the one generated by this tool) does not expire. The content - e.g., a URL or business card data - is encoded directly in the code. As long as the target page exists, the code will work.',
               answerSchemaText: 'No. Static QR codes do not expire. Content is encoded directly in the code.',
             },
             {
               question: 'Can I change the URL in an existing QR code?',
               answer:
-                'With a static QR code, you cannot change the encoded content — you need to generate a new code with a new address. Dynamic QR codes (editable after generation) require external paid services.',
+                'With a static QR code, you cannot change the encoded content - you need to generate a new code with a new address. Dynamic QR codes (editable after generation) require external paid services.',
               answerSchemaText: 'No, static QR codes cannot be edited. Generate a new code for a different URL.',
             },
             {
-              question: 'PNG or SVG — which QR code format should I choose for printing?',
+              question: 'PNG or SVG - which QR code format should I choose for printing?',
               answer:
-                'PNG works for most use cases: websites, social media, printing up to A4 size. SVG is vector-based — it can be scaled to any size without quality loss, making it suitable for banners, billboards, and large advertising formats.',
+                'PNG works for most use cases: websites, social media, printing up to A4 size. SVG is vector-based - it can be scaled to any size without quality loss, making it suitable for banners, billboards, and large advertising formats.',
               answerSchemaText: 'PNG for web and standard print. SVG for large format and lossless scaling.',
             },
             {
@@ -480,7 +480,7 @@ export default function QrCodeGeneratorPage() {
             {
               question: 'Can I add a logo to the center of the QR code?',
               answer:
-                'This tool does not support adding a logo directly. However, you can download the code in SVG format and overlay a logo in a graphics program — in that case, it is necessary to set a high error correction level (H) so the code remains readable despite partial obscuring.',
+                'This tool does not support adding a logo directly. However, you can download the code in SVG format and overlay a logo in a graphics program - in that case, it is necessary to set a high error correction level (H) so the code remains readable despite partial obscuring.',
               answerSchemaText: 'Not directly. Download SVG and add a logo in a graphics program with H error correction.',
             },
             {
@@ -491,13 +491,13 @@ export default function QrCodeGeneratorPage() {
             },
             {
               question: 'Can I use generated QR codes commercially?',
-              answer: 'Yes. Generated QR codes can be freely used in any project — commercial and non-commercial, without licensing restrictions.',
+              answer: 'Yes. Generated QR codes can be freely used in any project - commercial and non-commercial, without licensing restrictions.',
               answerSchemaText: 'Yes, without restrictions in commercial and non-commercial projects.',
             },
             {
               question: 'What is the difference between a vCard business card and a plain text QR code?',
               answer:
-                'A vCard QR code contains contact data in a standardized format (name, company, phone, email, address). After scanning, the phone automatically offers to save the contact in the address book. A text code displays data as plain text — without the option to automatically save it.',
+                'A vCard QR code contains contact data in a standardized format (name, company, phone, email, address). After scanning, the phone automatically offers to save the contact in the address book. A text code displays data as plain text - without the option to automatically save it.',
               answerSchemaText: 'vCard saves contact automatically. Text QR just displays text.',
             },
           ]}

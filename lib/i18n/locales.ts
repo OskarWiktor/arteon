@@ -18,6 +18,14 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     toolsBasePath: '/en/tools',
     toolsIndexHref: '/en/tools',
   },
+  de: {
+    lang: 'de',
+    hreflang: 'de',
+    label: 'DE',
+    name: 'Deutsch',
+    toolsBasePath: '/de/tools',
+    toolsIndexHref: '/de/tools',
+  },
 };
 
 export const SUPPORTED_LOCALES = Object.keys(LOCALE_CONFIG) as Locale[];
@@ -38,6 +46,10 @@ export const LEGAL_LINKS: Record<Locale, LegalLink[]> = {
   en: [
     { key: 'regulamin', href: '/regulamin', label: 'Terms of Service' },
     { key: 'privacy', href: '/polityka-prywatnosci', label: 'Privacy Policy' },
+  ],
+  de: [
+    { key: 'regulamin', href: '/regulamin', label: 'Nutzungsbedingungen' },
+    { key: 'privacy', href: '/polityka-prywatnosci', label: 'Datenschutzrichtlinie' },
   ],
 };
 
@@ -70,6 +82,16 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = {
     toolsLabel: 'Tools',
     mobileMenu: 'Mobile menu',
   },
+  de: {
+    mainNavigation: 'Hauptnavigation',
+    logoAlt: 'Arteon - Firmenlogo',
+    closeMenu: 'Menü schließen',
+    openMenu: 'Menü öffnen',
+    closeToolsList: 'Werkzeugliste schließen',
+    openToolsList: 'Werkzeugliste öffnen',
+    toolsLabel: 'Tools',
+    mobileMenu: 'Mobiles Menü',
+  },
 };
 
 // ---------------------------------------------------------------------------
@@ -91,6 +113,13 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     toolsLabel: 'Tools',
     legalLabel: 'Legal documents',
   },
+  de: {
+    copyright: 'Alle Rechte vorbehalten.',
+    description: 'Kostenlose Online-Tools für Webentwickler, Designer und Marketer.',
+    companyDataLabel: 'Firmeninformationen',
+    toolsLabel: 'Tools',
+    legalLabel: 'Rechtliche Dokumente',
+  },
 };
 
 // ---------------------------------------------------------------------------
@@ -108,6 +137,12 @@ export const DESKTOP_ONLY_UI: Record<Locale, DesktopOnlyUi> = {
     title: 'This tool works on a larger screen',
     description: 'To use this tool comfortably, open it on a laptop, desktop computer, or tablet in landscape mode.',
     tipTitle: 'Tip',
-    tipText: 'If you are using a tablet, switch it to landscape mode — when the window width is large enough, the tool will load automatically.',
+    tipText: 'If you are using a tablet, switch it to landscape mode - when the window width is large enough, the tool will load automatically.',
+  },
+  de: {
+    title: 'Dieses Tool funktioniert auf einem größeren Bildschirm',
+    description: 'Um dieses Tool komfortabel zu nutzen, öffnen Sie es auf einem Laptop, Desktop-Computer oder Tablet im Querformat.',
+    tipTitle: 'Tipp',
+    tipText: 'Falls Sie ein Tablet nutzen, drehen Sie es ins Querformat - sobald die Fensterbreite ausreicht, lädt das Tool automatisch.',
   },
 };

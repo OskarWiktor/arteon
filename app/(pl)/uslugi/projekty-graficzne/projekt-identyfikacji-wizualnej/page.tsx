@@ -260,7 +260,7 @@ export default function OfferDesignBrandIdentityDesignPage() {
 
         <SectionContactForm
           title="Sprawdź koszt realizacji identyfikacji wizualnej"
-          description="Napisz czym zajmuje się Twoja firma, jakich materiałów potrzebujesz oraz czy posiadasz już logo — otrzymasz darmową wycenę realizacji."
+          description="Napisz czym zajmuje się Twoja firma, jakich materiałów potrzebujesz oraz czy posiadasz już logo - otrzymasz darmową wycenę realizacji."
           imageSrc="/assets/projects/finish-masters/logo-prezentacja-finish-masters-kolory_1.webp"
           imageAlt="Realizacja identyfikacji wizualnej - Finish Masters"
           defaultSubject="Identyfikacja wizualna"

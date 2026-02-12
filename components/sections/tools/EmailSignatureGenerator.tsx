@@ -13,17 +13,7 @@ import SocialPanel from '@/components/sections/tools/EmailSignatureGenerator/pan
 import AppearancePanel from '@/components/sections/tools/EmailSignatureGenerator/panels/AppearancePanel';
 import SpacingPanel from '@/components/sections/tools/EmailSignatureGenerator/panels/SpacingPanel';
 import LegalPanel from '@/components/sections/tools/EmailSignatureGenerator/panels/LegalPanel';
-import type {
-  ActivePanel,
-  LayoutType,
-  SignatureConfig,
-  SocialKey,
-  SpacingConfig,
-  SpacingKey,
-  StyleConfig,
-  TextElementKey,
-  TextStyleConfig,
-} from '@/types/tools/email';
+import type { ActivePanel, LayoutType, SignatureConfig, SocialKey, SpacingConfig, SpacingKey, StyleConfig, TextElementKey, TextStyleConfig } from '@/types/tools/email';
 import { ui } from '@/lib/i18n/tools/email-signature';
 import {
   STORAGE_KEY_BASE,
@@ -288,7 +278,9 @@ export default function EmailSignatureGenerator() {
 
             {activePanel === 'social' && <SocialPanel config={config} styleConfig={styleConfig} onSocialChange={handleSocialChange} onStyleChange={handleStyleChange} t={t} />}
 
-            {activePanel === 'appearance' && <AppearancePanel styleConfig={styleConfig} themeId={themeId} themePresets={themePresets} onStyleChange={handleStyleChange} onApplyTheme={applyTheme} t={t} />}
+            {activePanel === 'appearance' && (
+              <AppearancePanel styleConfig={styleConfig} themeId={themeId} themePresets={themePresets} onStyleChange={handleStyleChange} onApplyTheme={applyTheme} t={t} />
+            )}
 
             {activePanel === 'textStyle' && (
               <div className="space-y-4">
@@ -423,7 +415,9 @@ export default function EmailSignatureGenerator() {
               </div>
             )}
 
-            {activePanel === 'spacing' && <SpacingPanel config={config} styleConfig={styleConfig} spacingConfig={spacingConfig} layout={layout} onStyleChange={handleStyleChange} onSpacingChange={handleSpacingChange} t={t} />}
+            {activePanel === 'spacing' && (
+              <SpacingPanel config={config} styleConfig={styleConfig} spacingConfig={spacingConfig} layout={layout} onStyleChange={handleStyleChange} onSpacingChange={handleSpacingChange} t={t} />
+            )}
 
             {activePanel === 'legal' && <LegalPanel config={config} styleConfig={styleConfig} onTextChange={handleTextChange} onStyleChange={handleStyleChange} t={t} />}
           </div>

@@ -221,7 +221,7 @@ export default function OfferDesignPriceListPage() {
 
         <SectionContactForm
           title="Sprawdź koszt realizacji cennika"
-          description="Napisz jak wygląda oferta, ile pozycji ma zawierać cennik oraz czy posiadasz logo i zdjęcia — otrzymasz darmową wycenę realizacji."
+          description="Napisz jak wygląda oferta, ile pozycji ma zawierać cennik oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji."
           imageSrc="/assets/projects/cennik-mockup.webp"
           imageAlt="Realizacja projektu cennika firmowego"
           defaultSubject="Projekt cennika"

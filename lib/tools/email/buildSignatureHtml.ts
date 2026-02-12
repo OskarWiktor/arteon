@@ -1,16 +1,5 @@
 import { escapeHtml, formatMultiline, formatPhone, sanitizeHrefUrl, sanitizeSrcUrl } from '@/lib/tools/email/sanitize';
-import type {
-  BorderSides,
-  FontSizeOption,
-  LayoutType,
-  MarginOption,
-  CtaRadiusOption,
-  SocialKey,
-  SignatureConfig,
-  SpacingConfig,
-  StyleConfig,
-  TextStyleConfig,
-} from '@/types/tools/email';
+import type { BorderSides, FontSizeOption, LayoutType, MarginOption, CtaRadiusOption, SocialKey, SignatureConfig, SpacingConfig, StyleConfig, TextStyleConfig } from '@/types/tools/email';
 import { rgbToHex } from '@/lib/tools/color/convert';
 import { getSocialIcon, type SocialPlatform, type IconSize } from '@/lib/tools/email/socialIcons';
 

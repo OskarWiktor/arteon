@@ -248,7 +248,7 @@ export default function OfferDesignLoyaltyCardPage() {
 
         <SectionContactForm
           title="Sprawdź koszt realizacji karty lojalnościowej"
-          description="Napisz jak chcesz nagradzać klientów, ile wariantów potrzebujesz oraz czy posiadasz logo — otrzymasz darmową wycenę realizacji."
+          description="Napisz jak chcesz nagradzać klientów, ile wariantów potrzebujesz oraz czy posiadasz logo - otrzymasz darmową wycenę realizacji."
           imageSrc="/assets/projects/arteon-baner-voucher-gabinet-kosmetyczny-kasia-mockup-2.webp"
           imageAlt="Realizacja projektu karty lojalnościowej"
           defaultSubject="Projekt karty lojalnościowej"

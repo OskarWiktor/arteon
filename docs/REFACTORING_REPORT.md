@@ -1,10 +1,10 @@
-# RAPORT REFAKTORYZACJI V2 — Dogłębna Analiza
+# RAPORT REFAKTORYZACJI V2 - Dogłębna Analiza
 
 Data: 2026-02-12
 
 ---
 
-## 1. MAPA TŁUMACZEŃ (ui translations) — ROZPROSZONE PO 10 PLIKACH
+## 1. MAPA TŁUMACZEŃ (ui translations) - ROZPROSZONE PO 10 PLIKACH
 
 Każde narzędzie ma inline `const ui = { pl: {...}, en: {...} }` wewnątrz komponentu.
 
@@ -55,13 +55,13 @@ lib/i18n/
 | EmailSignatureGenerator  | 1225 | ✅ 7 plików | ui.ts, constants.ts, types.ts (re-export), buildSignatureHtml.ts, sanitize.ts, TextStyleRow.tsx, useSignatureCopy.ts |
 | ImageResizeTool          | 846  | ✅ 5 plików | ui.ts, types.ts (re-export), cropMath.ts, exportCroppedImage.ts, useCropDrag.ts                                      |
 | JpgPngToWebp             | 519  | ✅ 4 pliki  | useWebpConversion.ts, useWebpDownloads.ts, useWebpQueue.ts, useWebpReportCopy.ts                                     |
-| FaviconGenerator         | 467  | ❌          | —                                                                                                                    |
-| WcagContrastChecker      | 451  | ❌          | —                                                                                                                    |
-| QrCodeGenerator          | 401  | ❌          | —                                                                                                                    |
-| ColorPaletteGenerator    | 238  | ❌          | —                                                                                                                    |
-| PaletteExtractor         | 202  | ❌          | —                                                                                                                    |
-| WordCountTool            | 199  | ❌          | —                                                                                                                    |
-| MetaTitleDescriptionTool | 194  | ❌          | —                                                                                                                    |
+| FaviconGenerator         | 467  | ❌          | -                                                                                                                    |
+| WcagContrastChecker      | 451  | ❌          | -                                                                                                                    |
+| QrCodeGenerator          | 401  | ❌          | -                                                                                                                    |
+| ColorPaletteGenerator    | 238  | ❌          | -                                                                                                                    |
+| PaletteExtractor         | 202  | ❌          | -                                                                                                                    |
+| WordCountTool            | 199  | ❌          | -                                                                                                                    |
+| MetaTitleDescriptionTool | 194  | ❌          | -                                                                                                                    |
 
 ### Co jest w subfolderach (i czy tam powinno być):
 
@@ -94,12 +94,12 @@ lib/i18n/
 
 ## 3. CHAOS: `lib/` vs `utils/`
 
-### utils/ — 2 pliki (prawie pusty)
+### utils/ - 2 pliki (prawie pusty)
 
-- `slugify.ts` — pure utility, 10 LOC
-- `blogCategory.ts` — pure utility, 11 LOC, importuje slugify
+- `slugify.ts` - pure utility, 10 LOC
+- `blogCategory.ts` - pure utility, 11 LOC, importuje slugify
 
-### lib/ — 38+ plików w rozbudowanej strukturze
+### lib/ - 38+ plików w rozbudowanej strukturze
 
 ```
 lib/
@@ -228,23 +228,23 @@ const isProcessing = status === 'processing';
 
 ### Rekomendacja:
 
-Te wzorce NIE muszą być wyciągnięte do hooków — są zbyt różne w szczegółach.
+Te wzorce NIE muszą być wyciągnięte do hooków - są zbyt różne w szczegółach.
 Jednak useToolStatus() hook mógłby zunifikować #5.3.
 
 ---
 
 ## 6. DEAD CODE
 
-### 6.1 components/ui/sections/ — 14 nieużywanych komponentów
+### 6.1 components/ui/sections/ - 14 nieużywanych komponentów
 
 (zachowujemy na życzenie usera)
 
-### 6.2 components/sections/projects/ — 2 nieużywane pliki
+### 6.2 components/sections/projects/ - 2 nieużywane pliki
 
-- `Filters.tsx` — 0 importów, identyczny z ProjectFilters.tsx
-- `ProjectFilters.tsx` — 0 importów, identyczny z Filters.tsx
+- `Filters.tsx` - 0 importów, identyczny z ProjectFilters.tsx
+- `ProjectFilters.tsx` - 0 importów, identyczny z Filters.tsx
 
-### 6.3 lib/config/ — pusty katalog
+### 6.3 lib/config/ - pusty katalog
 
 ---
 
@@ -255,32 +255,32 @@ Jednak useToolStatus() hook mógłby zunifikować #5.3.
 - `DesktopNavigation.tsx` (422 LOC)
 - `MobileNavigation.tsx` (580 LOC)
 
-Nazwa `-types` jest myląca — to pełne komponenty, nie typy.
+Nazwa `-types` jest myląca - to pełne komponenty, nie typy.
 
 ---
 
-## 8. HOOKI — ANALIZA
+## 8. HOOKI - ANALIZA
 
-### 8.1 Hooki w hooks/ (14) — wszystkie używane ✅
+### 8.1 Hooki w hooks/ (14) - wszystkie używane ✅
 
 Każdy hook ma od 2 do 16 importów w projekcie.
 
-### 8.2 Hooki w tool subfolderach (6) — wszystkie specyficzne ✅
+### 8.2 Hooki w tool subfolderach (6) - wszystkie specyficzne ✅
 
-- `useSignatureCopy` — EmailSignatureGenerator
-- `useCropDrag` — ImageResizeTool
-- `useWebpConversion` — JpgPngToWebp
-- `useWebpDownloads` — JpgPngToWebp
-- `useWebpQueue` — JpgPngToWebp
-- `useWebpReportCopy` — JpgPngToWebp
+- `useSignatureCopy` - EmailSignatureGenerator
+- `useCropDrag` - ImageResizeTool
+- `useWebpConversion` - JpgPngToWebp
+- `useWebpDownloads` - JpgPngToWebp
+- `useWebpQueue` - JpgPngToWebp
+- `useWebpReportCopy` - JpgPngToWebp
 
-Te hooki są silnie powiązane z jednym narzędziem — kolokacja w subfolderze jest **akceptowalna** wg Next.js best practices. Nie ma sensu ich przenosić do globalnego `hooks/`.
+Te hooki są silnie powiązane z jednym narzędziem - kolokacja w subfolderze jest **akceptowalna** wg Next.js best practices. Nie ma sensu ich przenosić do globalnego `hooks/`.
 
-### 8.3 Brakujące hooki — potencjał ekstrakcji
+### 8.3 Brakujące hooki - potencjał ekstrakcji
 
 Mały potencjał. Wzorce z pkt 5.1-5.3 są zbyt różne w szczegółach, aby opłacało się tworzyć shared hook. Jedyna sensowna kandydatura:
 
-- `useToolStatus()` — zunifikowanie `[status, setStatus, error, setError, isProcessing]` — ale zysk minimalny.
+- `useToolStatus()` - zunifikowanie `[status, setStatus, error, setError, isProcessing]` - ale zysk minimalny.
 
 ---
 
@@ -306,7 +306,7 @@ Przenieść istniejące:
 - `EmailSignatureGenerator/ui.ts` → `lib/i18n/tools/email-signature.ts`
 - `ImageResizeTool/ui.ts` → `lib/i18n/tools/image-resize.ts`
 
-### FAZA 2: Konsolidacja `utils/` — przeniesienie pure utilities z `lib/tools/`
+### FAZA 2: Konsolidacja `utils/` - przeniesienie pure utilities z `lib/tools/`
 
 | Obecna lokalizacja                          | Nowa lokalizacja              | Typ          |
 | ------------------------------------------- | ----------------------------- | ------------ |

@@ -19,10 +19,10 @@ import { isSupportedImageUploadType, SUPPORTED_IMAGE_UPLOAD_TYPES } from '@/lib/
 import { loadImage } from '@/utils/loadImage';
 import { revokeObjectUrl } from '@/utils/objectUrl';
 import { createZipBlob, type ZipFileInput } from '@/utils/zip';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/favicon';
 
-function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string, locale: 'pl' | 'en' = 'pl') {
+function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string, locale: Locale = 'pl') {
   const icons = outputs
     .filter((o) => o.type === 'png' && typeof o.size === 'number')
     .map((o) => ({
@@ -32,8 +32,8 @@ function createWebmanifest(outputs: FaviconOutputFile[], backgroundColor: string
     }));
 
   const manifest = {
-    name: locale === 'en' ? 'Your website' : 'Twoja strona',
-    short_name: locale === 'en' ? 'Site' : 'Strona',
+    name: locale === 'pl' ? 'Twoja strona' : locale === 'de' ? 'Ihre Website' : 'Your website',
+    short_name: locale === 'pl' ? 'Strona' : locale === 'de' ? 'Seite' : 'Site',
     icons,
     theme_color: backgroundColor,
     background_color: backgroundColor,
@@ -337,7 +337,11 @@ export default function FaviconGenerator() {
                 <ToolFileRow
                   key={f.name}
                   name={f.name}
-                  meta={<>{f.label} · {f.size}</>}
+                  meta={
+                    <>
+                      {f.label} · {f.size}
+                    </>
+                  }
                   actions={
                     <Badge variant="success" size="md">
                       {t.done}
@@ -379,7 +383,11 @@ export default function FaviconGenerator() {
                 <ToolFileRow
                   key={item.id}
                   name={item.fileName}
-                  meta={<>{item.label} · {formatBytes(item.sizeBytes)}</>}
+                  meta={
+                    <>
+                      {item.label} · {formatBytes(item.sizeBytes)}
+                    </>
+                  }
                   preview={
                     <button
                       type="button"

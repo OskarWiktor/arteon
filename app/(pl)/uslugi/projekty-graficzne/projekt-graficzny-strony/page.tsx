@@ -243,7 +243,7 @@ export default function OfferDesignWebsiteGraphicDesignPage() {
 
         <SectionContactForm
           title="Sprawdź koszt projektu graficznego strony"
-          description="Napisz co chciałbyś/aś umieścić na swojej stronie, ile podstron potrzebujesz oraz czy posiadasz logo i zdjęcia — otrzymasz darmową wycenę realizacji."
+          description="Napisz co chciałbyś/aś umieścić na swojej stronie, ile podstron potrzebujesz oraz czy posiadasz logo i zdjęcia - otrzymasz darmową wycenę realizacji."
           imageSrc="/assets/projects/izoluk/strona-internetowa-firma-budowlana-ocieplenia-izoluk-projekt-realizacji-stworzony-w-figma.webp"
           imageAlt="Projekt graficzny strony internetowej w Figma"
           defaultSubject="Projekt graficzny strony"

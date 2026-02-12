@@ -10,15 +10,7 @@ import ToolTextInput from '@/components/ui/tools/ToolTextInput';
 import ToolSelect from '@/components/ui/tools/ToolSelect';
 import ToolColorInput from '@/components/ui/tools/ToolColorInput';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
-import {
-  generateQrPng,
-  generateQrSvg,
-  buildVCardString,
-  buildEmailString,
-  buildPhoneString,
-  isContrastSufficient,
-  calculateContrast,
-} from '@/lib/tools/qr/generateQr';
+import { generateQrPng, generateQrSvg, buildVCardString, buildEmailString, buildPhoneString, isContrastSufficient, calculateContrast } from '@/lib/tools/qr/generateQr';
 import type { QrDataType, VCardData, EmailData } from '@/types/tools/qr';
 import { downloadFromUrl } from '@/utils/download';
 import { useLocale } from '@/lib/LocaleContext';
@@ -163,9 +155,7 @@ export default function QrCodeGenerator() {
           <option value="phone">{t.types.phone}</option>
         </ToolSelect>
 
-        {dataType === 'url' && (
-          <ToolTextInput label={t.types.url} value={urlValue} onChange={setUrlValue} type="url" placeholder={t.urlPlaceholder} />
-        )}
+        {dataType === 'url' && <ToolTextInput label={t.types.url} value={urlValue} onChange={setUrlValue} type="url" placeholder={t.urlPlaceholder} />}
 
         {dataType === 'text' && (
           <div>
@@ -174,9 +164,7 @@ export default function QrCodeGenerator() {
           </div>
         )}
 
-        {dataType === 'phone' && (
-          <ToolTextInput label={t.types.phone} value={phoneValue} onChange={setPhoneValue} type="tel" placeholder={t.phonePlaceholder} />
-        )}
+        {dataType === 'phone' && <ToolTextInput label={t.types.phone} value={phoneValue} onChange={setPhoneValue} type="tel" placeholder={t.phonePlaceholder} />}
 
         {dataType === 'vcard' && (
           <div className="space-y-3">

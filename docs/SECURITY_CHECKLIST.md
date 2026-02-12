@@ -1,4 +1,4 @@
-# Security Checklist — Arteon
+# Security Checklist - Arteon
 
 ## Pre-deployment
 
@@ -15,8 +15,8 @@
 
 ## Miesięcznie
 
-- [ ] `npm audit` — sprawdź nowe vulnerabilities
-- [ ] `npm outdated` — sprawdź aktualizacje paczek
+- [ ] `npm audit` - sprawdź nowe vulnerabilities
+- [ ] `npm outdated` - sprawdź aktualizacje paczek
 - [ ] Przejrzyj logi Vercel pod kątem podejrzanej aktywności (404 na wrażliwych ścieżkach)
 - [ ] Sprawdź czy CSP nie wymaga aktualizacji (nowe integracje zewnętrzne)
 

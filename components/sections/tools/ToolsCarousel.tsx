@@ -45,6 +45,22 @@ const ui = {
       tools: '/en/tools',
     },
   },
+  de: {
+    defaultTitle: 'Kostenlose Online-Tools',
+    seeAllTools: 'Alle Tools anzeigen',
+    carouselLabel: 'Tool-Karussell',
+    scrollLeft: 'Nach links scrollen',
+    scrollRight: 'Nach rechts scrollen',
+    carouselNavigation: 'Karussell-Navigation',
+    goToSlide: 'Zu Folie gehen',
+    of: 'von',
+    slide: 'Folie',
+    tool: 'Tool',
+    openTool: 'Tool öffnen',
+    urls: {
+      tools: '/de/tools',
+    },
+  },
 } as const satisfies Record<Locale, unknown>;
 
 type Props = {

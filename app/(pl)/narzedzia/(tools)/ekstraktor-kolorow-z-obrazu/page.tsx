@@ -42,7 +42,10 @@ export const metadata: Metadata = {
   title: 'Ekstraktor kolorów z obrazu online | Pobierz paletę ze zdjęcia',
   description:
     'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu') },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
+    languages: { pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'), en: toAbsoluteUrl('/en/tools/image-color-extractor'), de: toAbsoluteUrl('/de/tools/bild-farbextraktor') },
+  },
   openGraph: {
     title: 'Ekstraktor kolorów z obrazu online | Pobierz paletę ze zdjęcia',
     description:

@@ -32,14 +32,14 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free JPG/PNG to WebP converter online — no limits',
+  title: 'Free JPG/PNG to WebP converter online - no limits',
   description: 'Free online JPG and PNG to WebP converter. Reduce image file size by up to 35% without losing quality. Conversion happens locally in the browser, files are not sent to a server.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'), en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited') },
+    languages: { pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'), en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'), de: toAbsoluteUrl('/de/tools/jpg-png-zu-webp-konverter') },
   },
   openGraph: {
-    title: 'Free JPG/PNG to WebP converter online — no limits',
+    title: 'Free JPG/PNG to WebP converter online - no limits',
     description: 'Free online JPG and PNG to WebP converter. Reduce image file size by up to 35% without losing quality. No registration, no limits.',
     url: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
     type: 'website',
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'JPG and PNG to WebP converter online — free, no limits',
+  name: 'JPG and PNG to WebP converter online - free, no limits',
   alternateName: 'JPG to WebP and PNG to WebP converter',
   url: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
   applicationCategory: 'MultimediaApplication',
   applicationSubCategory: 'ImageConverter',
   operatingSystem: 'Any',
   description:
-    'Free online JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser — files are not sent to a server.',
+    'Free online JPG and PNG to WebP converter. Reduce image file size by up to 35%, improve page load speed and Core Web Vitals scores. Conversion happens in the browser - files are not sent to a server.',
   featureList: [
     'JPG to WebP conversion',
     'PNG to WebP conversion',
@@ -109,7 +109,7 @@ const faqItems = [
   {
     question: 'Does WebP support transparency like PNG?',
     answer:
-      'Yes. WebP supports the alpha channel (transparency) — PNG files with transparent backgrounds will be converted correctly. However, size savings for PNGs with transparency may be less than for regular JPG photos.',
+      'Yes. WebP supports the alpha channel (transparency) - PNG files with transparent backgrounds will be converted correctly. However, size savings for PNGs with transparency may be less than for regular JPG photos.',
     answerSchemaText: 'Yes, WebP supports alpha transparency. PNG files with transparent backgrounds convert correctly.',
   },
   {
@@ -120,12 +120,12 @@ const faqItems = [
   },
   {
     question: 'How much space can I save?',
-    answer: 'Typical savings are 25–35% compared to JPG. For example, a 500 KB JPG photo after conversion to WebP will be about 325–375 KB. For PNG, savings can be even greater — up to 50–70%.',
+    answer: 'Typical savings are 25–35% compared to JPG. For example, a 500 KB JPG photo after conversion to WebP will be about 325–375 KB. For PNG, savings can be even greater - up to 50–70%.',
     answerSchemaText: '25–35% for JPG, up to 50–70% for PNG.',
   },
   {
     question: 'Can I convert multiple files at once?',
-    answer: 'Yes. You can add any number of files at once — there is no limit. All will be converted, and you can download them individually or as a ZIP archive.',
+    answer: 'Yes. You can add any number of files at once - there is no limit. All will be converted, and you can download them individually or as a ZIP archive.',
     answerSchemaText: 'Yes, unlimited batch conversion with ZIP download.',
   },
   {
@@ -137,7 +137,7 @@ const faqItems = [
   {
     question: 'Does WebP speed up a website?',
     answer:
-      "Yes. Smaller image files mean faster page loading. This directly impacts the LCP (Largest Contentful Paint) metric in Core Web Vitals — one of Google's ranking factors. Tools like PageSpeed Insights often recommend converting images to WebP.",
+      "Yes. Smaller image files mean faster page loading. This directly impacts the LCP (Largest Contentful Paint) metric in Core Web Vitals - one of Google's ranking factors. Tools like PageSpeed Insights often recommend converting images to WebP.",
     answerSchemaText: 'Yes, smaller files improve LCP and Core Web Vitals scores.',
   },
 ];
@@ -167,7 +167,7 @@ export default function JpgPngToWebpPage() {
 
         <SectionInfo title="What is WebP and why convert images?">
           <p className="mb-4">
-            WebP is an image format created by Google that allows reducing image file sizes by up to 25–35% compared to JPG and PNG — while maintaining comparable visual quality. Smaller files mean
+            WebP is an image format created by Google that allows reducing image file sizes by up to 25–35% compared to JPG and PNG - while maintaining comparable visual quality. Smaller files mean
             faster page loading, which translates to better user experience and higher scores in{' '}
             <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">
               PageSpeed Insights
@@ -179,7 +179,7 @@ export default function JpgPngToWebpPage() {
             the simplest ways to improve site performance.
           </p>
           <p>
-            The converter supports both JPG photos and PNG graphics (including those with transparency). You can convert any number of files at once — all are processed locally in the browser, without
+            The converter supports both JPG photos and PNG graphics (including those with transparency). You can convert any number of files at once - all are processed locally in the browser, without
             being sent to a server.
           </p>
         </SectionInfo>
@@ -203,17 +203,17 @@ export default function JpgPngToWebpPage() {
           <p className="text-mid">The tool offers two ways to add files:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>Drag and drop</strong> — grab files from a folder on your computer and drop them onto the area labeled &quot;Drag and drop images here&quot;. You can drag multiple files at once.
+              <strong>Drag and drop</strong> - grab files from a folder on your computer and drop them onto the area labeled &quot;Drag and drop images here&quot;. You can drag multiple files at once.
             </li>
             <li>
-              <strong>Select from device</strong> — clicking the file upload area opens a selection dialog. Holding Ctrl (or Cmd on Mac) lets you select multiple files at once.
+              <strong>Select from device</strong> - clicking the file upload area opens a selection dialog. Holding Ctrl (or Cmd on Mac) lets you select multiple files at once.
             </li>
           </ul>
           <p className="text-mid mt-3">
             The tool only accepts JPG and PNG files. If you accidentally add a file in another format (e.g., GIF or BMP), it will be automatically skipped and you will see an informational message.
           </p>
           <p className="text-mid mt-3">
-            <strong>Privacy:</strong> All files are processed locally in the browser. They are not sent anywhere — they do not go to any server. After closing the tab or browser, files are removed
+            <strong>Privacy:</strong> All files are processed locally in the browser. They are not sent anywhere - they do not go to any server. After closing the tab or browser, files are removed
             from memory.
           </p>
         </SectionInfo>
@@ -266,13 +266,13 @@ export default function JpgPngToWebpPage() {
             The tool automatically selects optimal settings. If you have an image that is already heavily compressed (e.g., a JPG at 60% quality), the parameters will be automatically adjusted to
             still achieve size savings.
           </p>
-          <p className="text-mid mt-3">Next to each file you will see &quot;WebP quality used&quot; — this is the actual quality applied after any Smart Quality adjustment.</p>
+          <p className="text-mid mt-3">Next to each file you will see &quot;WebP quality used&quot; - this is the actual quality applied after any Smart Quality adjustment.</p>
         </SectionInfo>
 
         <Gap variant="line" />
 
         <SectionDemo
-          title="Quality settings — what to choose?"
+          title="Quality settings - what to choose?"
           demo={
             <div className="space-y-4">
               <div>
@@ -301,13 +301,13 @@ export default function JpgPngToWebpPage() {
           <p className="text-mid">The quality slider lets you set a value from 60% to 95%. A higher value means better image quality but also a larger file size.</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>80% (default)</strong> — a good balance for most use cases.
+              <strong>80% (default)</strong> - a good balance for most use cases.
             </li>
             <li>
-              <strong>85–90%</strong> — for product photos and photography portfolios.
+              <strong>85–90%</strong> - for product photos and photography portfolios.
             </li>
             <li>
-              <strong>60–70%</strong> — when minimizing file size is the priority.
+              <strong>60–70%</strong> - when minimizing file size is the priority.
             </li>
           </ul>
         </SectionDemo>
@@ -351,13 +351,13 @@ export default function JpgPngToWebpPage() {
           <p className="text-mid">After conversion is complete, you have several download options:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>Download</strong> (next to each file) — downloads a single WebP file.
+              <strong>Download</strong> (next to each file) - downloads a single WebP file.
             </li>
             <li>
-              <strong>Download all</strong> — downloads all files one by one.
+              <strong>Download all</strong> - downloads all files one by one.
             </li>
             <li>
-              <strong>Download as ZIP</strong> — creates an archive with all files.
+              <strong>Download as ZIP</strong> - creates an archive with all files.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -398,7 +398,7 @@ export default function JpgPngToWebpPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Full privacy',
-              description: 'Files never leave your computer. Conversion happens in the browser — nothing is sent to a server. After closing the page, data is removed.',
+              description: 'Files never leave your computer. Conversion happens in the browser - nothing is sent to a server. After closing the page, data is removed.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
@@ -434,7 +434,7 @@ export default function JpgPngToWebpPage() {
               icon: <RiFlashlightLine className="h-6 w-6" />,
               title: 'Already compressed images',
               description:
-                'If the original JPG was saved at very low quality, converting to WebP may not yield large savings. In extreme cases, the WebP file may be even larger — Smart Quality will then lower quality automatically.',
+                'If the original JPG was saved at very low quality, converting to WebP may not yield large savings. In extreme cases, the WebP file may be even larger - Smart Quality will then lower quality automatically.',
             },
             {
               icon: <RiStackLine className="h-6 w-6" />,

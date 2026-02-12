@@ -266,11 +266,11 @@ module.exports = {
     const add = [];
 
     // Add ALL static routes from ROUTE_LASTMOD so sitemap doesn't depend on
-    // next-sitemap auto-discovery (broken with Next.js 15 App Router — no prerender-manifest.json).
+    // next-sitemap auto-discovery (broken with Next.js 15 App Router - no prerender-manifest.json).
     for (const [loc, last] of ROUTE_LASTMOD.entries()) {
-      // Skip individual article pages — added from ARTICLES data below with cover images
+      // Skip individual article pages - added from ARTICLES data below with cover images
       if (loc.startsWith('/edukacja/') && loc.split('/').length > 3) continue;
-      // Skip individual project pages — added from PROJECTS data below with images
+      // Skip individual project pages - added from PROJECTS data below with images
       if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
       const priority = loc === '/' ? 1.0 : loc.startsWith('/en/') ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7;

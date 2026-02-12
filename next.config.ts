@@ -6,11 +6,11 @@ const IS_PROD = process.env.VERCEL_ENV === 'production';
  * Content-Security-Policy directives
  *
  * Dostosowane do potrzeb strony:
- * - Google Analytics, AdSense, GTM, DoubleClick — reklamy i analityka
- * - Vercel Analytics / Speed Insights — monitoring wydajności
- * - Formspree — formularz kontaktowy
- * - Ahrefs / Metricool — dodatkowa analityka
- * - blob:/data: — narzędzia generujące obrazy/pliki client-side
+ * - Google Analytics, AdSense, GTM, DoubleClick - reklamy i analityka
+ * - Vercel Analytics / Speed Insights - monitoring wydajności
+ * - Formspree - formularz kontaktowy
+ * - Ahrefs / Metricool - dodatkowa analityka
+ * - blob:/data: - narzędzia generujące obrazy/pliki client-side
  */
 const cspDirectives = [
   "default-src 'self'",

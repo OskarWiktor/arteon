@@ -14,7 +14,7 @@ import { createPaletteFromHex, type PaletteGroupId } from '@/lib/tools/color/pal
 import { useLocale } from '@/lib/LocaleContext';
 import { ui } from '@/lib/i18n/tools/color-palette';
 
-function getPaletteMeta(t: (typeof ui)['pl'] | (typeof ui)['en']): Record<PaletteGroupId, { label: string; description: string }> {
+function getPaletteMeta(t: (typeof ui)[keyof typeof ui]): Record<PaletteGroupId, { label: string; description: string }> {
   return {
     monochromatic: t.palettes.monochromatic,
     analogous: t.palettes.analogous,

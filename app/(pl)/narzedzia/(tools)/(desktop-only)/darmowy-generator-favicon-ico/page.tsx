@@ -38,7 +38,10 @@ import {
 export const metadata: Metadata = {
   title: 'Generator favicon online | Stwórz ikonę strony za darmo',
   description: 'Darmowy generator favicon online. Stwórz favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Przetwarzanie odbywa się lokalnie w przeglądarce.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico') },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
+    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'), en: toAbsoluteUrl('/en/tools/free-favicon-generator'), de: toAbsoluteUrl('/de/tools/kostenloser-favicon-generator') },
+  },
   openGraph: {
     title: 'Generator favicon online | Stwórz ikonę strony za darmo',
     description: 'Darmowy generator favicon online. Stwórz favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Przetwarzanie odbywa się lokalnie w przeglądarce.',

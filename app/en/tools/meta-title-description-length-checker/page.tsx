@@ -32,14 +32,18 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free meta title and description length checker online — pixel width',
+  title: 'Free meta title and description length checker online - pixel width',
   description: 'Free online meta title and description length checker. Check character count, pixel width, and preview how your page looks in Google search results. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'), en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
+      en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
+      de: toAbsoluteUrl('/de/tools/meta-titel-beschreibung-laengenpruefer'),
+    },
   },
   openGraph: {
-    title: 'Free meta title and description length checker online — pixel width',
+    title: 'Free meta title and description length checker online - pixel width',
     description: 'Free online meta title and description length checker. Check character count, pixel width, and preview how your page looks in Google search results. No registration.',
     url: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
     type: 'website',
@@ -128,13 +132,13 @@ const faqItems = [
   {
     question: 'What is the optimal length for meta title and meta description?',
     answer:
-      'Meta title should be about 50–60 characters (up to ~580 pixels wide). Meta description works best at 120–160 characters (up to ~920 pixels). These are approximate values — Google does not publish strict limits and may adjust them.',
+      'Meta title should be about 50–60 characters (up to ~580 pixels wide). Meta description works best at 120–160 characters (up to ~920 pixels). These are approximate values - Google does not publish strict limits and may adjust them.',
     answerSchemaText: 'Meta title: 50–60 characters (~580px). Meta description: 120–160 characters (~920px). These are approximate values.',
   },
   {
     question: 'Does meta description affect page ranking in Google?',
     answer:
-      'Meta description is not a direct ranking factor — Google does not use it to determine page position. However, a good description increases the click-through rate from search results, and higher CTR can indirectly affect rankings.',
+      'Meta description is not a direct ranking factor - Google does not use it to determine page position. However, a good description increases the click-through rate from search results, and higher CTR can indirectly affect rankings.',
     answerSchemaText: 'Meta description is not a direct ranking factor, but a good description can increase CTR and indirectly affect rankings.',
   },
   {
@@ -179,7 +183,7 @@ export default function MetaTitleDescriptionPage() {
             (blue link) and description (gray text below the title).
           </p>
           <p className="text-mid mt-3">
-            Well-written meta tags work like an ad for your page in search results — they attract attention and increase the chance of a click. Poorly written or truncated tags can discourage clicks,
+            Well-written meta tags work like an ad for your page in search results - they attract attention and increase the chance of a click. Poorly written or truncated tags can discourage clicks,
             even if the page itself is valuable.
           </p>
         </SectionInfo>
@@ -201,7 +205,7 @@ export default function MetaTitleDescriptionPage() {
               icon: <RiFileTextLine className="h-6 w-6" />,
               title: '2. Enter the page description',
               description:
-                'Add the meta description in the second field. You will see the same metrics. The field is larger because descriptions are longer than titles — you can fit 2–3 short sentences.',
+                'Add the meta description in the second field. You will see the same metrics. The field is larger because descriptions are longer than titles - you can fit 2–3 short sentences.',
             },
             {
               icon: <RiEyeLine className="h-6 w-6" />,
@@ -212,7 +216,7 @@ export default function MetaTitleDescriptionPage() {
             {
               icon: <RiToolsLine className="h-6 w-6" />,
               title: '4. Adjust based on tips',
-              description: 'If the status shows Too short or Too long, adjust the text. Changes are visible instantly — you can experiment until you get optimal length and content.',
+              description: 'If the status shows Too short or Too long, adjust the text. Changes are visible instantly - you can experiment until you get optimal length and content.',
             },
           ]}
         />
@@ -247,7 +251,7 @@ export default function MetaTitleDescriptionPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-mid mt-4 text-sm">These are approximate values — Google does not publish strict limits and may adjust them depending on device and query context.</p>
+          <p className="text-mid mt-4 text-sm">These are approximate values - Google does not publish strict limits and may adjust them depending on device and query context.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -298,29 +302,29 @@ export default function MetaTitleDescriptionPage() {
           <h3 className="h5 mt-6 mb-2">Metrics</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Characters</strong> — total character count (including spaces). Easy to understand but less precise than pixels.
+              <strong>Characters</strong> - total character count (including spaces). Easy to understand but less precise than pixels.
             </li>
             <li>
-              <strong>Words</strong> — word count. Useful for a quick assessment of length.
+              <strong>Words</strong> - word count. Useful for a quick assessment of length.
             </li>
             <li>
-              <strong>Width (px)</strong> — text width in pixels. This is the value Google actually uses when truncating.
+              <strong>Width (px)</strong> - text width in pixels. This is the value Google actually uses when truncating.
             </li>
           </ul>
 
           <h3 className="h5 mt-6 mb-2">Evaluation statuses</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong className="text-success-text">Good length</strong> (green) — text is within the recommended range. Google should display it in full.
+              <strong className="text-success-text">Good length</strong> (green) - text is within the recommended range. Google should display it in full.
             </li>
             <li>
-              <strong className="text-warning-text">Too short</strong> (yellow) — text is very short. You have room for more information that could encourage clicks.
+              <strong className="text-warning-text">Too short</strong> (yellow) - text is very short. You have room for more information that could encourage clicks.
             </li>
             <li>
-              <strong className="text-error-text">Too long</strong> (red) — text exceeds the recommended range. Google will likely truncate it. Consider shortening.
+              <strong className="text-error-text">Too long</strong> (red) - text exceeds the recommended range. Google will likely truncate it. Consider shortening.
             </li>
             <li>
-              <strong className="text-light">No data</strong> (gray) — the field is empty. Enter text to see the analysis.
+              <strong className="text-light">No data</strong> (gray) - the field is empty. Enter text to see the analysis.
             </li>
           </ul>
 
@@ -353,7 +357,7 @@ export default function MetaTitleDescriptionPage() {
           }
         >
           <p className="text-mid">
-            Different letters have different widths. Compare &quot;iiii&quot; and &quot;WWWW&quot; — both have 4 characters, but the visual width is completely different. Google measures text width in
+            Different letters have different widths. Compare &quot;iiii&quot; and &quot;WWWW&quot; - both have 4 characters, but the visual width is completely different. Google measures text width in
             pixels, not characters.
           </p>
           <p className="text-mid mt-3">
@@ -364,22 +368,22 @@ export default function MetaTitleDescriptionPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Snippet preview — what does it show?">
+        <SectionInfo title="Snippet preview - what does it show?">
           <p className="text-mid">
-            The snippet preview simulates how the title and description of your page look in Google search results. It is an approximate visualization — the actual appearance may vary slightly
+            The snippet preview simulates how the title and description of your page look in Google search results. It is an approximate visualization - the actual appearance may vary slightly
             depending on device and browser.
           </p>
 
           <h3 className="h5 mt-6 mb-2">Preview elements</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>URL</strong> — the page address displayed above the title. You can enter it in the optional field to make the preview more realistic.
+              <strong>URL</strong> - the page address displayed above the title. You can enter it in the optional field to make the preview more realistic.
             </li>
             <li>
-              <strong>Title</strong> — the blue heading. If it is too long, the tool automatically truncates it and adds an ellipsis.
+              <strong>Title</strong> - the blue heading. If it is too long, the tool automatically truncates it and adds an ellipsis.
             </li>
             <li>
-              <strong>Description</strong> — the gray text below the title. Also truncated if it exceeds the limit.
+              <strong>Description</strong> - the gray text below the title. Also truncated if it exceeds the limit.
             </li>
           </ul>
 
@@ -399,7 +403,7 @@ export default function MetaTitleDescriptionPage() {
               icon: <RiRulerLine className="h-6 w-6" />,
               title: 'Title is too long',
               description:
-                'Shorten the title while keeping the most important words at the beginning. Remove adjectives like "best" or "professional" — they rarely add value. Place the brand name at the end after a separator.',
+                'Shorten the title while keeping the most important words at the beginning. Remove adjectives like "best" or "professional" - they rarely add value. Place the brand name at the end after a separator.',
             },
             {
               icon: <RiFileTextLine className="h-6 w-6" />,
@@ -443,13 +447,13 @@ export default function MetaTitleDescriptionPage() {
           title="What makes this meta title and description checker special?"
           grid="two"
           items={[
-            { icon: <RiRuler2Line className="h-6 w-6" />, title: 'Pixel measurement', description: "We don't just count characters — we measure actual text width the way Google does." },
+            { icon: <RiRuler2Line className="h-6 w-6" />, title: 'Pixel measurement', description: "We don't just count characters - we measure actual text width the way Google does." },
             { icon: <RiEyeLine className="h-6 w-6" />, title: 'Google preview', description: 'See how the title and description look in search results before publishing your page.' },
             { icon: <RiCheckboxCircleLine className="h-6 w-6" />, title: 'Color-coded evaluation', description: 'Instantly know whether the text is too short, optimal, or too long.' },
             {
               icon: <RiInfinityLine className="h-6 w-6" />,
               title: 'Pixel and character count together',
-              description: 'The tool shows both values at once — you can compare whether the title fits within both the character and pixel limits.',
+              description: 'The tool shows both values at once - you can compare whether the title fits within both the character and pixel limits.',
             },
             {
               icon: <RiUserLine className="h-6 w-6" />,

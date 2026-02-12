@@ -38,14 +38,14 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free image color extractor online — extract palette from photo',
+  title: 'Free image color extractor online - extract palette from photo',
   description: 'Free online image color extractor. Upload a photo or logo and get a palette of up to 12 dominant colors with HEX and RGB codes. Local processing in the browser. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/image-color-extractor'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'), en: toAbsoluteUrl('/en/tools/image-color-extractor') },
+    languages: { pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'), en: toAbsoluteUrl('/en/tools/image-color-extractor'), de: toAbsoluteUrl('/de/tools/bild-farbextraktor') },
   },
   openGraph: {
-    title: 'Free image color extractor online — extract palette from photo',
+    title: 'Free image color extractor online - extract palette from photo',
     description: 'Free online image color extractor. Upload a photo or logo and get a palette of up to 12 dominant colors with HEX and RGB codes.',
     url: toAbsoluteUrl('/en/tools/image-color-extractor'),
     type: 'website',
@@ -56,14 +56,14 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Image color extractor online — free palette generator',
+  name: 'Image color extractor online - free palette generator',
   alternateName: 'Extract color palette from a photo or logo',
   url: toAbsoluteUrl('/en/tools/image-color-extractor'),
   applicationCategory: 'DesignApplication',
   applicationSubCategory: 'ColorExtractor',
   operatingSystem: 'Any',
   description:
-    'Free online image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser — files are not sent to a server.',
+    'Free online image color extractor. Upload a photo, logo, or graphic and get a palette of up to 12 dominant colors with HEX and RGB codes. Processing happens in the browser - files are not sent to a server.',
   featureList: [
     'Automatic extraction of up to 12 dominant colors',
     'Analysis of photos, logos, and vector graphics',
@@ -71,7 +71,7 @@ const schema = {
     'Copy color code to clipboard',
     'Support for PNG, JPG, and SVG files',
     'Ignores transparent pixels in PNG files',
-    'Local processing in the browser — image is not sent to a server',
+    'Local processing in the browser - image is not sent to a server',
   ],
   inLanguage: 'en',
   isAccessibleForFree: true,
@@ -88,7 +88,7 @@ const howToSchema = {
   step: [
     { '@type': 'HowToStep', name: 'Upload an image', text: 'Drag a file onto the designated area or select an image from your device. Supported formats are PNG, JPG, and SVG.' },
     { '@type': 'HowToStep', name: 'Wait for analysis', text: 'The tool will automatically analyze the image and extract dominant colors.' },
-    { '@type': 'HowToStep', name: 'Copy colors', text: 'Next to each color you will find a copy button — the HEX code is copied to your system clipboard.' },
+    { '@type': 'HowToStep', name: 'Copy colors', text: 'Next to each color you will find a copy button - the HEX code is copied to your system clipboard.' },
   ],
   publisher: { '@type': 'Organization', name: 'Arteon Agency', url: siteUrl },
 };
@@ -97,25 +97,25 @@ const faqItems = [
   {
     question: 'Does the image color extractor require registration?',
     answer:
-      'No. The tool is completely free and requires no login or registration. The image is analyzed locally in the browser — it is not sent to any server. After closing the page, all data is removed.',
+      'No. The tool is completely free and requires no login or registration. The image is analyzed locally in the browser - it is not sent to any server. After closing the page, all data is removed.',
     answerSchemaText: 'No. The tool is free and does not require registration. The image is analyzed locally in the browser.',
   },
   {
     question: 'How is the color extractor different from a palette generator?',
     answer:
-      'The extractor pulls colors from an existing image — it analyzes a photo and shows which colors dominate in it. A color palette generator works the other way: you provide one base color, and the tool creates harmonious sets based on color theory. Both tools complement each other — you can extract a color from an image and then use it as a base in the palette generator.',
+      'The extractor pulls colors from an existing image - it analyzes a photo and shows which colors dominate in it. A color palette generator works the other way: you provide one base color, and the tool creates harmonious sets based on color theory. Both tools complement each other - you can extract a color from an image and then use it as a base in the palette generator.',
     answerSchemaText: 'The extractor pulls colors from an image. The generator creates palettes from a base color. Both tools complement each other.',
   },
   {
     question: 'How many colors does the extractor pull from one image?',
     answer:
-      'The tool extracts up to 12 dominant colors. The exact number depends on the image content — if a graphic has only two colors (e.g., a simple logo), the result will contain fewer items. Colors are sorted from most to least prominent.',
+      'The tool extracts up to 12 dominant colors. The exact number depends on the image content - if a graphic has only two colors (e.g., a simple logo), the result will contain fewer items. Colors are sorted from most to least prominent.',
     answerSchemaText: 'Up to 12 dominant colors, sorted from the most to least prominent.',
   },
   {
     question: 'What image formats does the color extractor support?',
     answer:
-      'Supported formats are PNG, JPG (JPEG), and SVG. PNG files with transparent backgrounds give better results because transparent pixels are skipped during analysis — the tool focuses on the colors of the object itself.',
+      'Supported formats are PNG, JPG (JPEG), and SVG. PNG files with transparent backgrounds give better results because transparent pixels are skipped during analysis - the tool focuses on the colors of the object itself.',
     answerSchemaText: 'PNG, JPG, and SVG. PNG with transparent background gives the best results.',
   },
   {
@@ -127,7 +127,7 @@ const faqItems = [
   {
     question: 'Can I copy all palette colors at once?',
     answer:
-      'Currently the tool allows copying colors individually — next to each color there is a button that copies the HEX code to the clipboard. The copied code can be immediately pasted into Figma, Photoshop, CSS, or any other application.',
+      'Currently the tool allows copying colors individually - next to each color there is a button that copies the HEX code to the clipboard. The copied code can be immediately pasted into Figma, Photoshop, CSS, or any other application.',
     answerSchemaText: 'Colors are copied individually via the copy button next to each color.',
   },
 ];
@@ -157,14 +157,14 @@ export default function ImageColorExtractorPage() {
 
         <SectionInfo title="Why extract colors from an image?">
           <p className="mb-4">
-            Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate — along with HEX codes and RGB
+            Every photo, logo, or graphic contains colors that can serve as a ready-made color palette. The extractor analyzes the image and shows which colors dominate - along with HEX codes and RGB
             values ready to paste into your project.
           </p>
           <p className="mb-4">
             In practice, this means that instead of manually sampling colors in a graphics application (pixel by pixel), you upload one image and get an organized list of up to 12 colors. This is
             useful when selecting colors for a website, creating consistent social media graphics, or building a visual identity from existing material.
           </p>
-          <p>All analysis happens locally in the browser — the image is not sent to any server.</p>
+          <p>All analysis happens locally in the browser - the image is not sent to any server.</p>
         </SectionInfo>
 
         <Gap size="xs" />
@@ -178,7 +178,7 @@ export default function ImageColorExtractorPage() {
             { title: '2. Wait for analysis', description: 'The tool will automatically analyze the image and extract up to 12 dominant colors.' },
             {
               title: '3. Copy the colors you need',
-              description: 'Next to each color there is a copy button — the HEX or RGB code goes to the clipboard and can be pasted directly into your project.',
+              description: 'Next to each color there is a copy button - the HEX or RGB code goes to the clipboard and can be pasted directly into your project.',
             },
           ]}
         />
@@ -202,7 +202,7 @@ export default function ImageColorExtractorPage() {
           }
         >
           <p className="text-mid mb-4">
-            After uploading an image, the extractor displays a list of dominant colors sorted from most to least prominent. Each color shows its HEX code and RGB value — ready to paste into CSS,
+            After uploading an image, the extractor displays a list of dominant colors sorted from most to least prominent. Each color shows its HEX code and RGB value - ready to paste into CSS,
             Figma, or any graphics application.
           </p>
           <p className="text-mid">
@@ -221,12 +221,12 @@ export default function ImageColorExtractorPage() {
             {
               icon: <RiImageLine className="h-6 w-6" />,
               title: 'Logos and graphics with a limited palette',
-              description: 'Images with a few clearly separated colors give the most precise results — the extractor accurately identifies each color.',
+              description: 'Images with a few clearly separated colors give the most precise results - the extractor accurately identifies each color.',
             },
             {
               icon: <RiSearchEyeLine className="h-6 w-6" />,
               title: 'Photos with a clear subject',
-              description: 'Product, interior, or landscape photos also produce useful palettes, but they contain more shades — including shadow colors and light reflections.',
+              description: 'Product, interior, or landscape photos also produce useful palettes, but they contain more shades - including shadow colors and light reflections.',
             },
             {
               icon: <RiEraserLine className="h-6 w-6" />,
@@ -245,7 +245,7 @@ export default function ImageColorExtractorPage() {
 
         <SectionTimeline
           title="How does image color extraction work?"
-          description="After uploading a file, the tool performs several steps in the background — all analysis happens locally in the browser:"
+          description="After uploading a file, the tool performs several steps in the background - all analysis happens locally in the browser:"
           items={[
             {
               icon: <RiZoomInLine className="h-5 w-5" />,
@@ -266,7 +266,7 @@ export default function ImageColorExtractorPage() {
               icon: <RiContrastLine className="h-5 w-5" />,
               title: 'Skipping transparent pixels',
               description:
-                'In PNG files with transparent backgrounds, those areas are not included in the analysis — the extractor examines only visible colors. The entire process typically takes under a second.',
+                'In PNG files with transparent backgrounds, those areas are not included in the analysis - the extractor examines only visible colors. The entire process typically takes under a second.',
             },
           ]}
         />
@@ -281,13 +281,13 @@ export default function ImageColorExtractorPage() {
               icon: <RiBarChartLine className="h-6 w-6" />,
               title: 'Extractor returned fewer than 12 colors',
               description:
-                'The number of extracted colors depends on the image content. A simple two-color logo will give 2–3 results — this is correct behavior. The tool does not add artificial colors; it only extracts those that actually appear in the image.',
+                'The number of extracted colors depends on the image content. A simple two-color logo will give 2–3 results - this is correct behavior. The tool does not add artificial colors; it only extracts those that actually appear in the image.',
             },
             {
               icon: <RiAlertLine className="h-6 w-6" />,
               title: 'Unexpected colors appeared in the palette',
               description:
-                'These may be shadow, gradient, or light reflection colors — pixels in those areas have different colors than the object visible at first glance. Using an image with more uniform colors or cropping dark areas will improve results.',
+                'These may be shadow, gradient, or light reflection colors - pixels in those areas have different colors than the object visible at first glance. Using an image with more uniform colors or cropping dark areas will improve results.',
             },
             {
               icon: <RiErrorWarningLine className="h-6 w-6" />,
@@ -311,13 +311,13 @@ export default function ImageColorExtractorPage() {
           items={[
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
-              title: 'Local analysis — the image never leaves your computer',
+              title: 'Local analysis - the image never leaves your computer',
               description: 'All color extraction happens in the browser. The image is not sent to any server, and after closing the page, data is removed from memory.',
             },
             {
               icon: <RiPaletteLine className="h-6 w-6" />,
               title: 'Up to 12 dominant colors from one image',
-              description: 'The tool extracts up to 12 colors sorted from most prominent — enough to build a complete project color palette.',
+              description: 'The tool extracts up to 12 colors sorted from most prominent - enough to build a complete project color palette.',
             },
             {
               icon: <RiFileImageLine className="h-6 w-6" />,
@@ -341,7 +341,7 @@ export default function ImageColorExtractorPage() {
             {
               icon: <RiBrushLine className="h-6 w-6" />,
               title: 'Building visual identity',
-              description: 'Upload a photo that captures the mood of the brand — a landscape, a restaurant interior, a product photo — and extract colors as a starting point for a branding palette.',
+              description: 'Upload a photo that captures the mood of the brand - a landscape, a restaurant interior, a product photo - and extract colors as a starting point for a branding palette.',
             },
             {
               icon: <RiLayoutMasonryLine className="h-6 w-6" />,
@@ -351,7 +351,7 @@ export default function ImageColorExtractorPage() {
             {
               icon: <RiPaintBrushLine className="h-6 w-6" />,
               title: 'Matching colors to a website',
-              description: 'Extract colors from the logo and use them as the website color palette — primary color, accent color, background shades. HEX codes paste straight into CSS.',
+              description: 'Extract colors from the logo and use them as the website color palette - primary color, accent color, background shades. HEX codes paste straight into CSS.',
             },
             {
               icon: <RiSearchEyeLine className="h-6 w-6" />,

@@ -37,17 +37,17 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Free word and character counter online — check text length',
+  title: 'Free word and character counter online - check text length',
   description:
-    'Free online word and character counter. Count words, characters, paragraphs, and reading time. Check optimal text length for SEO — blog post, product description, service page. No registration.',
+    'Free online word and character counter. Count words, characters, paragraphs, and reading time. Check optimal text length for SEO - blog post, product description, service page. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'), en: toAbsoluteUrl('/en/tools/word-and-character-counter') },
+    languages: { pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'), en: toAbsoluteUrl('/en/tools/word-and-character-counter'), de: toAbsoluteUrl('/de/tools/wort-und-zeichenzaehler') },
   },
   openGraph: {
-    title: 'Free word and character counter online — check text length',
+    title: 'Free word and character counter online - check text length',
     description:
-      'Free online word and character counter. Count words, characters, paragraphs, and reading time. Check optimal text length for SEO — blog post, product description, service page. No registration.',
+      'Free online word and character counter. Count words, characters, paragraphs, and reading time. Check optimal text length for SEO - blog post, product description, service page. No registration.',
     url: toAbsoluteUrl('/en/tools/word-and-character-counter'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/tools/narzedzia-licznik-slow-i-znakow.webp'), width: 1200, height: 630 }],
@@ -101,7 +101,8 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to use the word and character counter',
-  description: 'Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.',
+  description:
+    'Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.',
   url: toAbsoluteUrl('/en/tools/word-and-character-counter'),
   totalTime: 'PT2M',
   step: [
@@ -137,25 +138,25 @@ const faqItems = [
   {
     question: 'Does text length affect Google rankings?',
     answer:
-      "Text length by itself is not a ranking factor. Google evaluates whether the content answers the user's question and is valuable to them. Shorter text that comprehensively answers a question can rank well — what matters is value for the reader. The ranges in this tool are based on analyses of content that ranks well in search results.",
+      "Text length by itself is not a ranking factor. Google evaluates whether the content answers the user's question and is valuable to them. Shorter text that comprehensively answers a question can rank well - what matters is value for the reader. The ranges in this tool are based on analyses of content that ranks well in search results.",
     answerSchemaText: 'Text length is not a direct ranking factor. Google evaluates the value of content for the user.',
   },
   {
     question: 'Why are the word ranges so broad?',
     answer:
-      "The same page type may require different lengths depending on topic complexity. A simple product description (e.g., a mug) is 80–150 words — just material, capacity, and use case. A laptop description is 300–400 words because buyers ask about the processor, memory, screen, and battery. Similarly with services: a local plumber's page is 500–700 words, while a comprehensive B2B service implementation page with process steps and FAQ is 1,200–1,500 words.",
-    answerSchemaText: 'The difference comes from topic complexity — a simple product needs fewer words than a complex one.',
+      "The same page type may require different lengths depending on topic complexity. A simple product description (e.g., a mug) is 80–150 words - just material, capacity, and use case. A laptop description is 300–400 words because buyers ask about the processor, memory, screen, and battery. Similarly with services: a local plumber's page is 500–700 words, while a comprehensive B2B service implementation page with process steps and FAQ is 1,200–1,500 words.",
+    answerSchemaText: 'The difference comes from topic complexity - a simple product needs fewer words than a complex one.',
   },
   {
     question: 'How should I interpret "too short" or "too long"?',
     answer:
-      'The evaluation shows where your text falls relative to typical content of that type. If the text is marked "too short" but answers all of the reader\'s questions — the length is fine. If it is "too long" but every paragraph adds new information — the length is justified.',
+      'The evaluation shows where your text falls relative to typical content of that type. If the text is marked "too short" but answers all of the reader\'s questions - the length is fine. If it is "too long" but every paragraph adds new information - the length is justified.',
     answerSchemaText: "The evaluation shows where the text falls relative to typical content. If the text answers the reader's questions, the length is appropriate.",
   },
   {
     question: 'How does the reading time calculator work?',
     answer:
-      'The tool divides the word count by 200 — the average reading speed for typical text. Technical or demanding text (e.g., documentation, terms of service) will be read slower. A light lifestyle article — faster. The result is an approximate value that helps estimate how long a reader will spend with the text.',
+      'The tool divides the word count by 200 - the average reading speed for typical text. Technical or demanding text (e.g., documentation, terms of service) will be read slower. A light lifestyle article - faster. The result is an approximate value that helps estimate how long a reader will spend with the text.',
     answerSchemaText: 'The tool assumes an average reading speed of 200 words per minute. This is an approximate value for typical text.',
   },
   {
@@ -167,7 +168,7 @@ const faqItems = [
   {
     question: 'Can I copy the report with statistics?',
     answer:
-      'Yes. Below the statistics you will find a Copy Report button — it copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard. You can paste it into a document or send it to collaborators.',
+      'Yes. Below the statistics you will find a Copy Report button - it copies a summary with word count, character count, paragraphs, reading time, and length evaluation to your clipboard. You can paste it into a document or send it to collaborators.',
     answerSchemaText: 'Yes. Click the Copy Report button below the statistics. A summary with all metrics and evaluation will be copied to your clipboard.',
   },
 ];
@@ -196,13 +197,13 @@ export default function WordCounterPage() {
       <Wrapper>
         <Gap variant="line" />
 
-        <SectionInfo title="Free word counter online — count and evaluate text length">
+        <SectionInfo title="Free word counter online - count and evaluate text length">
           <p className="text-mid">
             This word counting tool lets you quickly check the length of any text. Paste your content and the counter will tally words, characters, and paragraphs. You will also see how many minutes
             it takes to read and whether the length fits the page type you select.
           </p>
           <p className="text-mid mt-3">
-            Every page type has a different purpose — a product description answers buyer questions, a blog post covers a topic in depth, and a service page explains what the client will receive. The
+            Every page type has a different purpose - a product description answers buyer questions, a blog post covers a topic in depth, and a service page explains what the client will receive. The
             counter shows ranges for each of these types based on analyses of content that ranks well.
           </p>
         </SectionInfo>
@@ -240,7 +241,7 @@ export default function WordCounterPage() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="What the counter measures — words, characters, reading time"
+          title="What the counter measures - words, characters, reading time"
           description="The counter tracks five key metrics:"
           grid="two"
           items={[
@@ -312,14 +313,14 @@ export default function WordCounterPage() {
           <p className="text-mid mb-4">The colored progress bar and status help you quickly assess text length:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong className="text-success-text">Good length</strong> (green) — the text falls within the approximate range for the selected page type.
+              <strong className="text-success-text">Good length</strong> (green) - the text falls within the approximate range for the selected page type.
             </li>
             <li>
-              <strong className="text-warning-text">Below range</strong> (yellow) — the text is shorter than typical for this page type. If it answers all of the reader&apos;s questions, the length
+              <strong className="text-warning-text">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader&apos;s questions, the length
               may be fine.
             </li>
             <li>
-              <strong className="text-error-text">Above range</strong> (red) — the text is longer than typical. If every paragraph adds new information, the length is justified.
+              <strong className="text-error-text">Above range</strong> (red) - the text is longer than typical. If every paragraph adds new information, the length is justified.
             </li>
           </ul>
           <p className="text-mid mt-4">
@@ -329,9 +330,9 @@ export default function WordCounterPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="How many words should a text have — optimal length for SEO">
+        <SectionInfo title="How many words should a text have - optimal length for SEO">
           <p className="text-mid mb-4">
-            The ranges below are based on analyses of content that ranks well in search engines. Text length itself does not affect Google rankings — what matters is whether the content answers the
+            The ranges below are based on analyses of content that ranks well in search engines. Text length itself does not affect Google rankings - what matters is whether the content answers the
             reader&apos;s questions.
           </p>
           <div className="overflow-x-auto">
@@ -348,33 +349,33 @@ export default function WordCounterPage() {
                   <td className="py-2 pr-4">Product description</td>
                   <td className="py-2 pr-4 whitespace-nowrap">80–400 words</td>
                   <td className="text-primary-light0 py-2 text-sm">
-                    Simple product (e.g., a mug) — 80–150 words. Complex equipment (e.g., a laptop) — 300–400 words, because buyers have more questions.
+                    Simple product (e.g., a mug) - 80–150 words. Complex equipment (e.g., a laptop) - 300–400 words, because buyers have more questions.
                   </td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Service page</td>
                   <td className="py-2 pr-4 whitespace-nowrap">500–1500 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">Local service (e.g., plumber) — 500–700 words. B2B service with process and FAQ — 1,200–1,500 words.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Local service (e.g., plumber) - 500–700 words. B2B service with process and FAQ - 1,200–1,500 words.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Homepage</td>
                   <td className="py-2 pr-4 whitespace-nowrap">400–1000 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">The homepage conveys the main value and guides visitors further — the text supports navigation, not to replace subpages.</td>
+                  <td className="text-primary-light0 py-2 text-sm">The homepage conveys the main value and guides visitors further - the text supports navigation, not to replace subpages.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Landing page</td>
                   <td className="py-2 pr-4 whitespace-nowrap">600–2500 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">Simple offer — 600–1,000 words. Offer requiring explanation of process, variants, and objection handling — 1,500–2,500 words.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Blog post</td>
                   <td className="py-2 pr-4 whitespace-nowrap">1200–3000 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">Answer to a simple question — 1,200–1,800 words. Complex topic with many aspects — 2,000–3,000 words.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Answer to a simple question - 1,200–1,800 words. Complex topic with many aspects - 2,000–3,000 words.</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4">Guide</td>
                   <td className="py-2 pr-4 whitespace-nowrap">2500–6000 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">Narrow topic — 2,500–3,500 words. Broad topic with many steps and examples — 4,000–6,000 words.</td>
+                  <td className="text-primary-light0 py-2 text-sm">Narrow topic - 2,500–3,500 words. Broad topic with many steps and examples - 4,000–6,000 words.</td>
                 </tr>
               </tbody>
             </table>
@@ -385,7 +386,7 @@ export default function WordCounterPage() {
 
         <SectionSteps
           title="Who is the online word counter for?"
-          description="A word counting tool for copywriters and beyond — here is who uses the counter most:"
+          description="A word counting tool for copywriters and beyond - here is who uses the counter most:"
           grid="three"
           items={[
             {
@@ -436,32 +437,32 @@ export default function WordCounterPage() {
               </thead>
               <tbody>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">Google — meta title</td>
+                  <td className="py-2 pr-4">Google - meta title</td>
                   <td className="py-2 pr-4 whitespace-nowrap">50–60 characters</td>
                   <td className="text-primary-light0 py-2 text-sm">Longer titles are truncated in search results.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">Google — meta description</td>
+                  <td className="py-2 pr-4">Google - meta description</td>
                   <td className="py-2 pr-4 whitespace-nowrap">150–160 characters</td>
                   <td className="text-primary-light0 py-2 text-sm">The description visible below the link in search results.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">Amazon — product title</td>
+                  <td className="py-2 pr-4">Amazon - product title</td>
                   <td className="py-2 pr-4 whitespace-nowrap">200 characters</td>
                   <td className="text-primary-light0 py-2 text-sm">Short, specific title with the most important keywords.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">Amazon — bullet points</td>
+                  <td className="py-2 pr-4">Amazon - bullet points</td>
                   <td className="py-2 pr-4 whitespace-nowrap">500 characters each</td>
                   <td className="text-primary-light0 py-2 text-sm">Up to 5 bullet points describing key product features.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">X (Twitter) — post</td>
+                  <td className="py-2 pr-4">X (Twitter) - post</td>
                   <td className="py-2 pr-4 whitespace-nowrap">280 characters</td>
                   <td className="text-primary-light0 py-2 text-sm">Standard limit for regular users.</td>
                 </tr>
                 <tr>
-                  <td className="py-2 pr-4">LinkedIn — post</td>
+                  <td className="py-2 pr-4">LinkedIn - post</td>
                   <td className="py-2 pr-4 whitespace-nowrap">3,000 characters</td>
                   <td className="text-primary-light0 py-2 text-sm">After ~210 characters a "see more" link appears.</td>
                 </tr>
@@ -479,17 +480,17 @@ export default function WordCounterPage() {
             {
               icon: <RiInfinityLine className="h-6 w-6" />,
               title: 'Six page types with recommended ranges',
-              description: 'Product description, service page, homepage, landing page, blog post, and guide — each type has its own ranges based on analyses.',
+              description: 'Product description, service page, homepage, landing page, blog post, and guide - each type has its own ranges based on analyses.',
             },
             {
               icon: <RiUserLine className="h-6 w-6" />,
               title: 'Local processing in the browser',
-              description: 'Your text is never sent to any server — all analysis happens locally on your device.',
+              description: 'Your text is never sent to any server - all analysis happens locally on your device.',
             },
             {
               icon: <RiCheckboxCircleLine className="h-6 w-6" />,
               title: 'Text length evaluation',
-              description: "You don't just count words — you get information on whether the length is appropriate for the selected page type.",
+              description: "You don't just count words - you get information on whether the length is appropriate for the selected page type.",
             },
             {
               icon: <RiBarChartLine className="h-6 w-6" />,

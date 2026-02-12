@@ -259,7 +259,11 @@ export default function JpgPngToWebp() {
                 <ToolFileRow
                   key={f.name}
                   name={f.name}
-                  meta={<>{t.sizeBefore} {f.before} · {t.sizeAfter} {f.after} ({f.diff} {t.less})</>}
+                  meta={
+                    <>
+                      {t.sizeBefore} {f.before} · {t.sizeAfter} {f.after} ({f.diff} {t.less})
+                    </>
+                  }
                   actions={
                     <Badge variant="success" size="md">
                       {t.status.done}

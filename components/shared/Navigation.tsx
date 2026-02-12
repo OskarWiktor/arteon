@@ -13,8 +13,9 @@ import { useEscapeKey } from '@/hooks/useEscapeKey';
 import SearchDialog from '@/components/ui/SearchDialog';
 import SectionInfoBanner from '../ui/sections/SectionInfoBanner';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
-import { useLocale } from '@/lib/LocaleContext';
+import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { NAVIGATION_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
+import { getToolHref } from '@/lib/i18n/tool-registry';
 
 export default function Navigation() {
   const locale = useLocale();
@@ -44,19 +45,28 @@ export default function Navigation() {
     <header id="navigation" className="sticky top-0 z-50 w-full bg-white/95 shadow-xl backdrop-blur-sm">
       <SectionInfoBanner
         items={[
-          isPl
-            ? {
-                icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
-                text: 'Aktualizacja generatora stopki mailowej - sprawdź nowe możliwości',
-                linkText: 'narzędzia',
-                linkHref: '/narzedzia/darmowy-generator-stopki-mailowej',
-              }
-            : {
-                icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
-                text: 'Email signature generator update - check out new features',
-                linkText: 'tools',
-                linkHref: '/en/tools/free-email-signature-generator',
-              },
+          {
+            icon: <RiMailSettingsLine className="h-4 w-4" aria-hidden="true" />,
+            ...(
+              {
+                pl: {
+                  text: 'Aktualizacja generatora stopki mailowej - sprawdź nowe możliwości',
+                  linkText: 'narzędzia',
+                  linkHref: '/narzedzia/darmowy-generator-stopki-mailowej',
+                },
+                en: {
+                  text: 'Email signature generator update - check out new features',
+                  linkText: 'tools',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                de: {
+                  text: 'Update des E-Mail-Signatur-Generators – entdecken Sie die neuen Funktionen',
+                  linkText: 'Tools',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+              } satisfies Record<Locale, { text: string; linkText: string; linkHref: string }>
+            )[locale],
+          },
         ]}
       />
 

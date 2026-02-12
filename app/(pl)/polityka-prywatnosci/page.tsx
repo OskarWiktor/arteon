@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>dostawcy hostingu/aplikacji (np. Vercel),</li>
               <li>dostawcy narzędzi analitycznych (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc.),</li>
-              <li>dostawcy usług reklamowych (Google Ireland Ltd. — Google AdSense),</li>
+              <li>dostawcy usług reklamowych (Google Ireland Ltd. - Google AdSense),</li>
               <li>biuro rachunkowe, podmioty obsługujące płatności lub prawo - jeśli zajdzie taka potrzeba.</li>
             </ul>
             <p>Wszyscy odbiorcy przetwarzają dane zgodnie z RODO na podstawie odpowiednich umów.</p>

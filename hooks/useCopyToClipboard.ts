@@ -2,12 +2,7 @@
 
 import { useCallback, useState } from 'react';
 import { useTimeout } from '@/hooks/useTimeout';
-import {
-  copyTextToClipboard,
-  canWriteTextToClipboard,
-  copyHtmlWithExecCommand,
-  writeTextToClipboard,
-} from '@/utils/clipboard';
+import { copyTextToClipboard, canWriteTextToClipboard, copyHtmlWithExecCommand, writeTextToClipboard } from '@/utils/clipboard';
 
 type CopyStatus = 'idle' | 'success' | 'error';
 
