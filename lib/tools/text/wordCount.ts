@@ -47,6 +47,51 @@ const PAGE_TYPES_PL: PageTypeConfig[] = [
   },
 ];
 
+const PAGE_TYPES_DE: PageTypeConfig[] = [
+  {
+    key: 'product',
+    label: 'Produktbeschreibung',
+    minWords: 80,
+    maxWords: 400,
+    description: 'Je einfacher das Produkt, desto kürzer die Beschreibung. Komplexe Produkte (z.\u00a0B. Elektronik) erfordern mehr Erklärungen und Spezifikationen.',
+  },
+  {
+    key: 'service',
+    label: 'Dienstleistungsseite',
+    minWords: 500,
+    maxWords: 1500,
+    description: 'Eine einfache lokale Dienstleistung braucht weniger Text. Ein komplexes Angebot mit mehreren Schritten und häufigen Fragen erfordert mehr.',
+  },
+  {
+    key: 'homepage',
+    label: 'Startseite',
+    minWords: 400,
+    maxWords: 1000,
+    description: 'Die Startseite leitet Besucher zu Unterseiten weiter. Eine klare Botschaft und übersichtliche Struktur erleichtern die Navigation.',
+  },
+  {
+    key: 'landing',
+    label: 'Landingpage',
+    minWords: 600,
+    maxWords: 2500,
+    description: 'Teurere Angebote erfordern mehr Erklärung und Vertrauensaufbau. Ein einfaches Angebot kann kürzer sein.',
+  },
+  {
+    key: 'blog',
+    label: 'Blogartikel',
+    minWords: 1200,
+    maxWords: 3000,
+    description: 'Die Länge hängt von der Komplexität des Themas ab. Der Text sollte die Fragen des Lesers gründlich und konkret beantworten.',
+  },
+  {
+    key: 'guide',
+    label: 'Ratgeber / Leitfaden',
+    minWords: 2500,
+    maxWords: 6000,
+    description: 'Eine ausführliche Behandlung eines Themas mit vielen Aspekten. Die Länge hängt vom Umfang des Themas ab.',
+  },
+];
+
 const PAGE_TYPES_EN: PageTypeConfig[] = [
   {
     key: 'product',
@@ -93,7 +138,9 @@ const PAGE_TYPES_EN: PageTypeConfig[] = [
 ];
 
 export function getPageTypes(locale: Locale): PageTypeConfig[] {
-  return locale === 'en' ? PAGE_TYPES_EN : PAGE_TYPES_PL;
+  if (locale === 'en') return PAGE_TYPES_EN;
+  if (locale === 'de') return PAGE_TYPES_DE;
+  return PAGE_TYPES_PL;
 }
 
 export const PAGE_TYPES = PAGE_TYPES_PL;
@@ -137,13 +184,13 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
     return {
       status: 'empty',
       percentage: 0,
-      message: locale === 'en' ? 'Paste or type text to see the analysis.' : 'Wklej lub wpisz tekst, aby zobaczyć analizę.',
+      message: locale === 'en' ? 'Paste or type text to see the analysis.' : locale === 'de' ? 'Text einfügen oder eingeben, um die Analyse zu sehen.' : 'Wklej lub wpisz tekst, aby zobaczyć analizę.',
     };
   }
 
   const { minWords, maxWords } = pageType;
   const midPoint = (minWords + maxWords) / 2;
-  const wordsLabel = locale === 'en' ? 'words' : 'słów';
+  const wordsLabel = locale === 'en' ? 'words' : locale === 'de' ? 'Wörter' : 'słów';
 
   if (words < minWords) {
     const percentage = Math.round((words / minWords) * 100);
@@ -154,7 +201,9 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
       message:
         locale === 'en'
           ? `Text is below the approximate minimum (${minWords} ${wordsLabel}). If the topic is covered - it may be enough. About ${missing} words short.`
-          : `Tekst poniżej orientacyjnego minimum (${minWords} ${wordsLabel}). Jeśli temat jest wyczerpany - to może wystarczyć. Brakuje około ${missing} ${wordsLabel}.`,
+          : locale === 'de'
+            ? `Text liegt unter dem ungefähren Minimum (${minWords} ${wordsLabel}). Wenn das Thema abgedeckt ist, kann das ausreichen. Es fehlen etwa ${missing} ${wordsLabel}.`
+            : `Tekst poniżej orientacyjnego minimum (${minWords} ${wordsLabel}). Jeśli temat jest wyczerpany - to może wystarczyć. Brakuje około ${missing} ${wordsLabel}.`,
     };
   }
 
@@ -166,7 +215,9 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
       message:
         locale === 'en'
           ? `Text exceeds the approximate maximum by ${excess} words. If every sentence adds value - the length is justified.`
-          : `Tekst powyżej orientacyjnego maksimum o ${excess} słów. Jeśli każde zdanie wnosi wartość - długość jest uzasadniona.`,
+          : locale === 'de'
+            ? `Text überschreitet das ungefähre Maximum um ${excess} Wörter. Wenn jeder Satz einen Mehrwert bietet, ist die Länge gerechtfertigt.`
+            : `Tekst powyżej orientacyjnego maksimum o ${excess} słów. Jeśli każde zdanie wnosi wartość - długość jest uzasadniona.`,
     };
   }
 
@@ -179,7 +230,9 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
       message:
         locale === 'en'
           ? 'Length is within the recommended range. Value for the reader is key - ranges serve as a reference point.'
-          : 'Długość w zalecanym zakresie. Wartość dla czytelnika jest kluczowa, a zakresy służą jako punkt odniesienia.',
+          : locale === 'de'
+            ? 'Länge im empfohlenen Bereich. Der Mehrwert für den Leser ist entscheidend — die Bereiche dienen als Orientierung.'
+            : 'Długość w zalecanym zakresie. Wartość dla czytelnika jest kluczowa, a zakresy służą jako punkt odniesienia.',
     };
   }
 
@@ -189,13 +242,18 @@ export function evaluateLength(words: number, pageType: PageTypeConfig, locale: 
     message:
       locale === 'en'
         ? `Good length for a ${pageType.label.toLowerCase()}. Each paragraph should provide concrete value for the reader.`
-        : `Dobra długość dla ${pageType.label.toLowerCase()}. Każdy akapit powinien wnosić konkretną wartość dla czytelnika.`,
+        : locale === 'de'
+          ? `Gute Länge für ${pageType.label}. Jeder Absatz sollte dem Leser konkreten Mehrwert bieten.`
+          : `Dobra długość dla ${pageType.label.toLowerCase()}. Każdy akapit powinien wnosić konkretną wartość dla czytelnika.`,
   };
 }
 
 export function formatReadingTime(minutes: number, locale: Locale = 'pl'): string {
   if (locale === 'en') {
     return minutes === 1 ? '1 minute' : `${minutes} minutes`;
+  }
+  if (locale === 'de') {
+    return minutes === 1 ? '1 Minute' : `${minutes} Minuten`;
   }
   if (minutes === 1) return '1 minuta';
   if (minutes >= 2 && minutes <= 4) return `${minutes} minuty`;
@@ -223,6 +281,30 @@ export function formatReportText(metrics: TextMetrics, pageType: PageTypeConfig,
       '',
       '─'.repeat(30),
       'Generated by: arteonagency.pl/en/tools/word-and-character-counter',
+    ];
+    return lines.join('\n');
+  }
+
+  if (locale === 'de') {
+    const statusLabel = evaluation.status === 'ideal' ? '✅ Gute Länge' : evaluation.status === 'too-short' ? '⚠️ Zu kurz' : evaluation.status === 'too-long' ? '⚠️ Zu lang' : '-';
+    const lines = [
+      '📊 TEXTLÄNGEN-BERICHT',
+      '─'.repeat(30),
+      `Seitentyp: ${pageType.label}`,
+      `Empfohlener Bereich: ${pageType.minWords}–${pageType.maxWords} Wörter`,
+      '',
+      '📝 STATISTIKEN:',
+      `• Wörter: ${metrics.words}`,
+      `• Zeichen (mit Leerzeichen): ${metrics.charsWithSpaces}`,
+      `• Zeichen (ohne Leerzeichen): ${metrics.charsWithoutSpaces}`,
+      `• Absätze: ${metrics.paragraphs}`,
+      `• Lesezeit: ${formatReadingTime(metrics.readingTimeMinutes, locale)}`,
+      '',
+      `📈 BEWERTUNG: ${statusLabel}`,
+      evaluation.message,
+      '',
+      '─'.repeat(30),
+      'Erstellt mit: arteonagency.pl/de/tools/wort-und-zeichenzaehler',
     ];
     return lines.join('\n');
   }

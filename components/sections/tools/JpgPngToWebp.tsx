@@ -163,7 +163,7 @@ export default function JpgPngToWebp() {
                   </span>
                   {total > 0 && (
                     <span className="tool-meta">
-                      {locale === 'en' ? 'Completed' : 'Zakończone'}: {completed} / {total}
+                      {t.completed}: {completed} / {total}
                     </span>
                   )}
                 </div>
