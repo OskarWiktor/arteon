@@ -42,7 +42,13 @@ export const metadata: Metadata = {
     'Free online word and character counter. Count words, characters, paragraphs, and reading time. Check optimal text length for SEO - blog post, product description, service page. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'), en: toAbsoluteUrl('/en/tools/word-and-character-counter'), de: toAbsoluteUrl('/de/tools/wort-und-zeichenzaehler') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
+      en: toAbsoluteUrl('/en/tools/word-and-character-counter'),
+      de: toAbsoluteUrl('/de/werkzeuge/wort-und-zeichenzaehler'),
+      es: toAbsoluteUrl('/es/herramientas/contador-de-palabras-y-caracteres'),
+      fr: toAbsoluteUrl('/fr/outils/compteur-de-mots-et-caracteres'),
+    },
   },
   openGraph: {
     title: 'Free word and character counter online - check text length',
@@ -301,7 +307,7 @@ export default function WordCounterPage() {
               <div className="mt-2 rounded-lg bg-neutral-100 p-3">
                 <div className="mb-1 flex items-center justify-between text-sm!">
                   <span className="text-dark font-medium">Progress</span>
-                  <span className="text-mid">1200 / 1200-3000</span>
+                  <span className="text-mid">1200 / 1200–3000</span>
                 </div>
                 <div className="h-2 w-full rounded-full bg-neutral-200">
                   <div className="bg-success-icon h-2 w-2/5 rounded-full" />
@@ -316,7 +322,7 @@ export default function WordCounterPage() {
               <strong className="text-success-text">Good length</strong> (green) - the text falls within the approximate range for the selected page type.
             </li>
             <li>
-              <strong className="text-warning-text">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader&apos;s questions, the length
+              <strong className="text-warning-text">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader's questions, the length
               may be fine.
             </li>
             <li>
@@ -324,7 +330,7 @@ export default function WordCounterPage() {
             </li>
           </ul>
           <p className="text-mid mt-4">
-            The ranges are based on analyses of content that ranks well in search engines. If the text answers the reader&apos;s questions, the length is appropriate regardless of the counter result.
+            The ranges are based on analyses of content that ranks well in search engines. If the text answers the reader's questions, the length is appropriate regardless of the counter result.
           </p>
         </SectionDemo>
 
@@ -333,7 +339,7 @@ export default function WordCounterPage() {
         <SectionInfo title="How many words should a text have - optimal length for SEO">
           <p className="text-mid mb-4">
             The ranges below are based on analyses of content that ranks well in search engines. Text length itself does not affect Google rankings - what matters is whether the content answers the
-            reader&apos;s questions.
+            reader's questions.
           </p>
           <div className="overflow-x-auto">
             <table className="text-mid w-full text-left">
@@ -365,7 +371,9 @@ export default function WordCounterPage() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Landing page</td>
                   <td className="py-2 pr-4 whitespace-nowrap">600–2500 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.</td>
+                  <td className="text-primary-light0 py-2 text-sm">
+                    Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.
+                  </td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Blog post</td>

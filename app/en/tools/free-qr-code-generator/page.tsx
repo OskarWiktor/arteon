@@ -46,7 +46,13 @@ export const metadata: Metadata = {
   description: 'Free online QR code generator. Create QR codes for websites, vCards, emails, phone numbers, menus, and flyers. Export to PNG and SVG. Customize colors and size. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'), en: toAbsoluteUrl('/en/tools/free-qr-code-generator'), de: toAbsoluteUrl('/de/tools/kostenloser-qr-code-generator') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
+      en: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
+      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-qr-code-generator'),
+      es: toAbsoluteUrl('/es/herramientas/generador-de-codigos-qr-gratuito'),
+      fr: toAbsoluteUrl('/fr/outils/generateur-de-codes-qr-gratuit'),
+    },
   },
   openGraph: {
     title: 'Free QR code generator online - PNG and SVG export',
@@ -258,7 +264,7 @@ export default function QrCodeGeneratorPage() {
             },
             {
               icon: <RiRestaurantLine className="h-6 w-6" />,
-              title: 'Restaurant and café menus',
+              title: 'Restaurant and cafÉ menus',
               description: 'A QR code on the table directs to a digital menu. A hygienic solution popular since the COVID-19 pandemic.',
             },
             { icon: <RiPrinterLine className="h-6 w-6" />, title: 'Flyers and posters', description: 'QR code with a link to a product page, registration form, or special offer.' },

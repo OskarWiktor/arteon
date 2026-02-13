@@ -29,7 +29,16 @@ import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 export const metadata = {
   title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
   description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',
-  alternates: { canonical: toAbsoluteUrl('/narzedzia'), languages: { pl: toAbsoluteUrl('/narzedzia'), en: toAbsoluteUrl('/en/tools'), de: toAbsoluteUrl('/de/tools') } },
+  alternates: {
+    canonical: toAbsoluteUrl('/narzedzia'),
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia'),
+      en: toAbsoluteUrl('/en/tools'),
+      de: toAbsoluteUrl('/de/werkzeuge'),
+      es: toAbsoluteUrl('/es/herramientas'),
+      fr: toAbsoluteUrl('/fr/outils'),
+    },
+  },
   openGraph: {
     title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
     description: '10 darmowych narzędzi online: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, mediów społecznościowych i druku. Bez rejestracji.',

@@ -36,7 +36,13 @@ export const metadata: Metadata = {
   description: 'Free online JPG and PNG to WebP converter. Reduce image file size by up to 35% without losing quality. Conversion happens locally in the browser, files are not sent to a server.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'), en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'), de: toAbsoluteUrl('/de/tools/jpg-png-zu-webp-konverter') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
+      en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
+      de: toAbsoluteUrl('/de/werkzeuge/jpg-png-zu-webp-konverter'),
+      es: toAbsoluteUrl('/es/herramientas/convertidor-jpg-png-a-webp'),
+      fr: toAbsoluteUrl('/fr/outils/convertisseur-jpg-png-en-webp'),
+    },
   },
   openGraph: {
     title: 'Free JPG/PNG to WebP converter online - no limits',

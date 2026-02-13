@@ -39,7 +39,13 @@ export const metadata: Metadata = {
   description: 'Free online favicon generator. Create favicon.ico and PNG icons (16x16, 32x32, 180x180, 512x512) from a single image. Processing happens locally in the browser.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/free-favicon-generator'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'), en: toAbsoluteUrl('/en/tools/free-favicon-generator'), de: toAbsoluteUrl('/de/tools/kostenloser-favicon-generator') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
+      en: toAbsoluteUrl('/en/tools/free-favicon-generator'),
+      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-favicon-generator'),
+      es: toAbsoluteUrl('/es/herramientas/generador-de-favicon-gratuito'),
+      fr: toAbsoluteUrl('/fr/outils/generateur-de-favicon-gratuit'),
+    },
   },
   openGraph: {
     title: 'Free favicon generator online - ICO and PNG icons',
@@ -187,7 +193,7 @@ export default function FaviconGeneratorPage() {
               description: 'Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. Recommended size: min. 512×512 pixels.',
             },
             { title: '2. Choose sizes', description: 'Select the icon sizes you need. For a regular website: favicon.ico, 32×32, and 180×180. For PWA, add 192×192 and 512×512.' },
-            { title: '3. Download files', description: 'After generating, download all files as a ZIP or each icon individually. The generator also suggests the HTML code to paste into your site.' },
+            { title: '3. Download files', description: 'After generating, download all files as a ZIP or each icon individually. Below the tool you will find instructions on how to add the favicon to your site.' },
           ]}
         />
 
@@ -236,7 +242,7 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiSmartphoneLine className="h-6 w-6" />,
               title: 'Ready for website and PWA use',
-              description: 'The generator suggests HTML code to paste and generates a manifest.json file for web apps.',
+              description: 'The tool generates a manifest.json file for web apps. Below you will find instructions for integrating the icons.',
             },
           ]}
         />
@@ -351,7 +357,7 @@ export default function FaviconGeneratorPage() {
                 <div>
                   <p className="text-mid mb-3">Most WordPress themes have a built-in option for setting the site icon. You will find it in the admin panel:</p>
                   <p className="text-mid mb-3">
-                    <strong>Appearance → Customize → Site Identity → Site Icon</strong>
+                    <strong>Appearance â†’ Customize â†’ Site Identity â†’ Site Icon</strong>
                   </p>
                   <p className="text-light">
                     Upload the 512×512 file there - WordPress will automatically generate smaller sizes. For full control over icons, you can also upload files directly to the root directory via FTP.
@@ -370,7 +376,7 @@ export default function FaviconGeneratorPage() {
 <link rel="icon" href="/icon-32x32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">`}</code>
                   </pre>
-                  <p className="text-light">The generator suggests the exact HTML code to copy after generating the icons.</p>
+                  <p className="text-light">The code above is an example — adjust the paths to match your site structure.</p>
                 </div>
               ),
             },

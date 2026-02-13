@@ -38,7 +38,13 @@ export const metadata: Metadata = {
   description: 'Free online color contrast checker. Test text and background color readability per WCAG 2.1 standards. Auto-match feature helps find accessible color combinations. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/color-contrast-checker'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'), en: toAbsoluteUrl('/en/tools/color-contrast-checker'), de: toAbsoluteUrl('/de/tools/farbkontrast-checker') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
+      en: toAbsoluteUrl('/en/tools/color-contrast-checker'),
+      de: toAbsoluteUrl('/de/werkzeuge/farbkontrast-checker'),
+      es: toAbsoluteUrl('/es/herramientas/comprobador-de-contraste-de-colores'),
+      fr: toAbsoluteUrl('/fr/outils/verificateur-de-contraste-des-couleurs'),
+    },
   },
   openGraph: {
     title: 'Free color contrast checker online - WCAG compliance',
@@ -143,8 +149,8 @@ const faqItems = [
   {
     question: 'Where can I find color codes from my website?',
     answer:
-      'In a browser (Chrome, Firefox, Edge) you can open developer tools (right-click → Inspect). In the Styles tab, you can see the colors used on the page. Alternatively, browser extensions like ColorZilla let you pick the color of any element without digging into code.',
-    answerSchemaText: 'Use browser developer tools (Inspect → Styles) or extensions like ColorZilla.',
+      'In a browser (Chrome, Firefox, Edge) you can open developer tools (right-click â†’ Inspect). In the Styles tab, you can see the colors used on the page. Alternatively, browser extensions like ColorZilla let you pick the color of any element without digging into code.',
+    answerSchemaText: 'Use browser developer tools (Inspect â†’ Styles) or extensions like ColorZilla.',
   },
   {
     question: 'Which color pairs on my site should I check first?',

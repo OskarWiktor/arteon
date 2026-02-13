@@ -15,6 +15,14 @@ const ui = {
     home: 'Startseite',
     ariaLabel: 'Brotkrümel',
   },
+  es: {
+    home: 'Inicio',
+    ariaLabel: 'migas de pan',
+  },
+  fr: {
+    home: 'Accueil',
+    ariaLabel: "fil d'Ariane",
+  },
 } as const;
 
 import type { Crumb, BreadcrumbsProps } from '@/types/ui';

@@ -48,7 +48,13 @@ export const metadata: Metadata = {
   description: 'Darmowy generator kodów QR online po polsku. Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport do PNG i SVG. Personalizacja kolorów i rozmiaru.',
   alternates: {
     canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'), en: toAbsoluteUrl('/en/tools/free-qr-code-generator'), de: toAbsoluteUrl('/de/tools/kostenloser-qr-code-generator') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
+      en: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
+      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-qr-code-generator'),
+      es: toAbsoluteUrl('/es/herramientas/generador-de-codigos-qr-gratuito'),
+      fr: toAbsoluteUrl('/fr/outils/generateur-de-codes-qr-gratuit'),
+    },
   },
   openGraph: {
     title: 'Darmowy generator kodów QR online | Kod QR bez rejestracji',

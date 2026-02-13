@@ -40,7 +40,13 @@ export const metadata: Metadata = {
   description: 'Darmowy generator favicon online. Stwórz favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Przetwarzanie odbywa się lokalnie w przeglądarce.',
   alternates: {
     canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'), en: toAbsoluteUrl('/en/tools/free-favicon-generator'), de: toAbsoluteUrl('/de/tools/kostenloser-favicon-generator') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
+      en: toAbsoluteUrl('/en/tools/free-favicon-generator'),
+      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-favicon-generator'),
+      es: toAbsoluteUrl('/es/herramientas/generador-de-favicon-gratuito'),
+      fr: toAbsoluteUrl('/fr/outils/generateur-de-favicon-gratuit'),
+    },
   },
   openGraph: {
     title: 'Generator favicon online | Stwórz ikonę strony za darmo',
@@ -192,15 +198,15 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Co to jest favicon i dlaczego warto go mieć?">
-          <p className="mb-4">
+          <p className="text-mid mb-4">
             Favicon to mała ikona, która pojawia się na karcie przeglądarki obok tytułu strony. Widzisz ją też w zakładkach, historii przeglądania i na ekranie głównym telefonu, gdy ktoś doda stronę
             jako skrót.
           </p>
-          <p className="mb-4">
+          <p className="text-mid mb-4">
             Ta niepozorna grafika pełni ważną funkcję - pomaga użytkownikom szybko rozpoznać stronę wśród wielu otwartych kart. Gdy ktoś ma kilkanaście kart w przeglądarce, favicon jest często jedynym
             widocznym elementem identyfikującym stronę.
           </p>
-          <p>
+          <p className="text-mid">
             Generator tworzy kompletny zestaw ikon: klasyczny plik favicon.ico dla przeglądarek, ikony PNG w różnych rozmiarach oraz apple-touch-icon dla urządzeń Apple. Jeśli tworzysz aplikację
             webową (PWA), możesz też wygenerować ikony 192x192 i 512x512 wraz z plikiem manifest.
           </p>
@@ -223,7 +229,7 @@ export default function Page() {
             },
             {
               title: '3. Pobierz pliki',
-              description: 'Po wygenerowaniu pobierz wszystkie pliki jako ZIP lub każdą ikonę osobno. Generator podpowie też kod HTML do wklejenia na stronę.',
+              description: 'Po wygenerowaniu pobierz wszystkie pliki jako ZIP lub każdą ikonę osobno. Poniżej narzędzia znajdziesz instrukcję, jak wgrać favicon na stronę.',
             },
           ]}
         />
@@ -231,7 +237,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Jakie rozmiary ikon generuje narzędzie?">
-          <p className="mb-6">Każdy rozmiar ma swoje zastosowanie:</p>
+          <p className="text-mid mb-6">Każdy rozmiar ma swoje zastosowanie:</p>
           <div className="grid gap-4 md:grid-cols-2">
             <div className="rounded-lg border border-neutral-200 p-4">
               <p className="mb-2 font-semibold">favicon.ico (32x32)</p>
@@ -277,7 +283,7 @@ export default function Page() {
             {
               icon: <RiSmartphoneLine className="h-6 w-6" />,
               title: 'Gotowe do użycia na stronie i w PWA',
-              description: 'Generator podpowiada kod HTML do wklejenia i generuje plik manifest.json dla aplikacji webowych.',
+              description: 'Narzędzie generuje plik manifest.json dla aplikacji webowych. Poniżej znajdziesz instrukcję wgrania ikon na stronę.',
             },
           ]}
         />
@@ -447,7 +453,7 @@ export default function Page() {
 <link rel="icon" href="/icon-32x32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">`}</code>
                   </pre>
-                  <p className="text-light">Generator podpowiada dokładny kod HTML do skopiowania po wygenerowaniu ikon.</p>
+                  <p className="text-light">Powyższy kod to przykład - dostosuj ścieżki do struktury swojej strony.</p>
                 </div>
               ),
             },

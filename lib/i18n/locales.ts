@@ -23,8 +23,24 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     hreflang: 'de',
     label: 'DE',
     name: 'Deutsch',
-    toolsBasePath: '/de/tools',
-    toolsIndexHref: '/de/tools',
+    toolsBasePath: '/de/werkzeuge',
+    toolsIndexHref: '/de/werkzeuge',
+  },
+  es: {
+    lang: 'es',
+    hreflang: 'es',
+    label: 'ES',
+    name: 'Español',
+    toolsBasePath: '/es/herramientas',
+    toolsIndexHref: '/es/herramientas',
+  },
+  fr: {
+    lang: 'fr',
+    hreflang: 'fr',
+    label: 'FR',
+    name: 'Français',
+    toolsBasePath: '/fr/outils',
+    toolsIndexHref: '/fr/outils',
   },
 };
 
@@ -50,6 +66,14 @@ export const LEGAL_LINKS: Record<Locale, LegalLink[]> = {
   de: [
     { key: 'regulamin', href: '/regulamin', label: 'Nutzungsbedingungen' },
     { key: 'privacy', href: '/polityka-prywatnosci', label: 'Datenschutzrichtlinie' },
+  ],
+  es: [
+    { key: 'regulamin', href: '/regulamin', label: 'Condiciones del servicio' },
+    { key: 'privacy', href: '/polityka-prywatnosci', label: 'Política de privacidad' },
+  ],
+  fr: [
+    { key: 'regulamin', href: '/regulamin', label: 'Conditions de service' },
+    { key: 'privacy', href: '/polityka-prywatnosci', label: 'Politique de confidentialité' },
   ],
 };
 
@@ -89,8 +113,28 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = {
     openMenu: 'Menü öffnen',
     closeToolsList: 'Werkzeugliste schließen',
     openToolsList: 'Werkzeugliste öffnen',
-    toolsLabel: 'Tools',
+    toolsLabel: 'Werkzeuge',
     mobileMenu: 'Mobiles Menü',
+  },
+  es: {
+    mainNavigation: 'Navegación principal',
+    logoAlt: 'Arteon - logotipo de la empresa',
+    closeMenu: 'Cerrar menú',
+    openMenu: 'Abrir menú',
+    closeToolsList: 'Cerrar lista de herramientas',
+    openToolsList: 'Abrir lista de herramientas',
+    toolsLabel: 'Herramientas',
+    mobileMenu: 'Menú móvil',
+  },
+  fr: {
+    mainNavigation: 'Navigation principale',
+    logoAlt: "Arteon - logo de l'entreprise",
+    closeMenu: 'Fermer le menu',
+    openMenu: 'Ouvrir le menu',
+    closeToolsList: 'Fermer la liste des outils',
+    openToolsList: 'Ouvrir la liste des outils',
+    toolsLabel: 'Outils',
+    mobileMenu: 'Menu mobile',
   },
 };
 
@@ -117,8 +161,22 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     copyright: 'Alle Rechte vorbehalten.',
     description: 'Kostenlose Online-Tools für Webentwickler, Designer und Marketer.',
     companyDataLabel: 'Firmeninformationen',
-    toolsLabel: 'Tools',
+    toolsLabel: 'Werkzeuge',
     legalLabel: 'Rechtliche Dokumente',
+  },
+  es: {
+    copyright: 'Todos los derechos reservados.',
+    description: 'Herramientas en línea gratuitas para desarrolladores web, diseñadores y especialistas en marketing.',
+    companyDataLabel: 'Datos de la empresa',
+    toolsLabel: 'Herramientas',
+    legalLabel: 'Documentos legales',
+  },
+  fr: {
+    copyright: 'Tous droits réservés.',
+    description: 'Outils en ligne gratuits pour développeurs web, designers et spécialistes du marketing.',
+    companyDataLabel: "Informations sur l'entreprise",
+    toolsLabel: 'Outils',
+    legalLabel: 'Documents juridiques',
   },
 };
 
@@ -144,5 +202,17 @@ export const DESKTOP_ONLY_UI: Record<Locale, DesktopOnlyUi> = {
     description: 'Um dieses Tool komfortabel zu nutzen, öffnen Sie es auf einem Laptop, Desktop-Computer oder Tablet im Querformat.',
     tipTitle: 'Tipp',
     tipText: 'Falls Sie ein Tablet nutzen, drehen Sie es ins Querformat - sobald die Fensterbreite ausreicht, lädt das Tool automatisch.',
+  },
+  es: {
+    title: 'Esta herramienta funciona en una pantalla más grande',
+    description: 'Para usar esta herramienta cómodamente, ábrala en un portátil, ordenador de escritorio o tableta en modo horizontal.',
+    tipTitle: 'Consejo',
+    tipText: 'Si usa una tableta, gírela a modo horizontal: cuando el ancho de la ventana sea suficiente, la herramienta se cargará automáticamente.',
+  },
+  fr: {
+    title: 'Cet outil fonctionne sur un écran plus grand',
+    description: 'Pour utiliser cet outil confortablement, ouvrez-le sur un ordinateur portable, un ordinateur de bureau ou une tablette en mode paysage.',
+    tipTitle: 'Conseil',
+    tipText: "Si vous utilisez une tablette, passez en mode paysage\u00a0: lorsque la largeur de la fenêtre sera suffisante, l'outil se chargera automatiquement.",
   },
 };

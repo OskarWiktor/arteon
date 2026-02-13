@@ -44,7 +44,13 @@ export const metadata: Metadata = {
     'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.',
   alternates: {
     canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'), en: toAbsoluteUrl('/en/tools/image-color-extractor'), de: toAbsoluteUrl('/de/tools/bild-farbextraktor') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
+      en: toAbsoluteUrl('/en/tools/image-color-extractor'),
+      de: toAbsoluteUrl('/de/werkzeuge/bild-farbextraktor'),
+      es: toAbsoluteUrl('/es/herramientas/extractor-de-colores-de-imagen'),
+      fr: toAbsoluteUrl('/fr/outils/extracteur-de-couleurs-d-image'),
+    },
   },
   openGraph: {
     title: 'Ekstraktor kolorów z obrazu online | Pobierz paletę ze zdjęcia',
@@ -183,15 +189,15 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Po co wyciągać kolory z obrazu?">
-          <p className="mb-4">
+          <p className="text-mid mb-4">
             Każde zdjęcie, logo czy grafika zawiera barwy, które można wykorzystać jako gotową paletę kolorów. Ekstraktor analizuje obraz i pokazuje, które kolory na nim dominują - wraz z kodami HEX i
             wartościami RGB gotowymi do wklejenia w projekt.
           </p>
-          <p className="mb-4">
+          <p className="text-mid mb-4">
             W praktyce oznacza to, że zamiast ręcznie próbkować kolory w programie graficznym (pixel po pikselu), wgrywasz jedno zdjęcie i dostajesz uporządkowaną listę do 12 barw. To przydaje się
             przy dobieraniu kolorów do strony internetowej, tworzeniu spójnych grafik do mediów społecznościowych lub budowaniu identyfikacji wizualnej na podstawie istniejącego materiału.
           </p>
-          <p>Cała analiza odbywa się lokalnie w przeglądarce - obraz nie jest wysyłany na żaden serwer.</p>
+          <p className="text-mid">Cała analiza odbywa się lokalnie w przeglądarce - obraz nie jest wysyłany na żaden serwer.</p>
         </SectionInfo>
 
         <Gap size="xs" />

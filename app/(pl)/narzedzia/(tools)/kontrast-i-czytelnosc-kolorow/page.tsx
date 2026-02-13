@@ -43,7 +43,13 @@ export const metadata: Metadata = {
     'Sprawdź czy kolory tekstu i tła są czytelne. Wpisz kody kolorów (HEX, RGB, HSL), zobacz współczynnik kontrastu według WCAG i użyj funkcji Dopasuj do automatycznej korekty. Darmowe narzędzie online.',
   alternates: {
     canonical: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'), en: toAbsoluteUrl('/en/tools/color-contrast-checker'), de: toAbsoluteUrl('/de/tools/farbkontrast-checker') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
+      en: toAbsoluteUrl('/en/tools/color-contrast-checker'),
+      de: toAbsoluteUrl('/de/werkzeuge/farbkontrast-checker'),
+      es: toAbsoluteUrl('/es/herramientas/comprobador-de-contraste-de-colores'),
+      fr: toAbsoluteUrl('/fr/outils/verificateur-de-contraste-des-couleurs'),
+    },
   },
   openGraph: {
     title: 'Kontrast i czytelność kolorów online | Sprawdź czy tekst jest czytelny',
@@ -65,7 +71,7 @@ const schema = {
     'Narzędzie do sprawdzania czytelności',
     'Kalkulator kontrastu kolorów',
     'Tester kontrastu WCAG',
-    'Sprawdzanie kolorów dla daltonistów',
+    'Dostępność kolorów na stronie internetowej',
     'Czy kolory są czytelne',
   ],
   url: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),

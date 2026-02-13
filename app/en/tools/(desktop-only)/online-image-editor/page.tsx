@@ -22,7 +22,13 @@ export const metadata: Metadata = {
   description: 'Resize images online for free. Crop for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. Local processing in the browser.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/online-image-editor'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'), en: toAbsoluteUrl('/en/tools/online-image-editor'), de: toAbsoluteUrl('/de/tools/online-bildeditor') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
+      en: toAbsoluteUrl('/en/tools/online-image-editor'),
+      de: toAbsoluteUrl('/de/werkzeuge/online-bildeditor'),
+      es: toAbsoluteUrl('/es/herramientas/editor-de-imagenes-en-linea'),
+      fr: toAbsoluteUrl('/fr/outils/editeur-d-images-en-ligne'),
+    },
   },
   openGraph: {
     title: 'Free online image editor - resize, crop, and convert',
@@ -377,8 +383,8 @@ export default function OnlineImageEditorPage() {
             <div>
               <p className="text-dark font-semibold">Precise position control</p>
               <p className="text-mid mt-1">
-                In the <strong>Position</strong> tab you can set the exact crop position in percentages (0–100% for X and Y axes). Centering buttons let you quickly position the crop at the center of
-                the image.
+                In the <strong>Position</strong> tab you can set the exact crop position in percentages (0–100% for X and Y axes). Centering buttons let you quickly position the crop at the center
+                of the image.
               </p>
             </div>
           </div>

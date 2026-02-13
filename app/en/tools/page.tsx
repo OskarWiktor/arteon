@@ -32,7 +32,9 @@ export const metadata = {
     languages: {
       pl: toAbsoluteUrl('/narzedzia'),
       en: toAbsoluteUrl('/en/tools'),
-      de: toAbsoluteUrl('/de/tools'),
+      de: toAbsoluteUrl('/de/werkzeuge'),
+      es: toAbsoluteUrl('/es/herramientas'),
+      fr: toAbsoluteUrl('/fr/outils'),
     },
   },
   openGraph: {

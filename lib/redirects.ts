@@ -125,6 +125,23 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
 };
 
 /**
+ * Redirecty dla niemieckich narzędzi (zmiana /de/tools/ → /de/werkzeuge/) (2026-02-12)
+ */
+export const DE_TOOLS_REDIRECTS: Record<string, string> = {
+  '/de/tools': '/de/werkzeuge',
+  '/de/tools/jpg-png-zu-webp-konverter': '/de/werkzeuge/jpg-png-zu-webp-konverter',
+  '/de/tools/online-bildeditor': '/de/werkzeuge/online-bildeditor',
+  '/de/tools/kostenloser-favicon-generator': '/de/werkzeuge/kostenloser-favicon-generator',
+  '/de/tools/meta-titel-beschreibung-laengenpruefer': '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer',
+  '/de/tools/wort-und-zeichenzaehler': '/de/werkzeuge/wort-und-zeichenzaehler',
+  '/de/tools/kostenloser-e-mail-signatur-generator': '/de/werkzeuge/kostenloser-e-mail-signatur-generator',
+  '/de/tools/farbkontrast-checker': '/de/werkzeuge/farbkontrast-checker',
+  '/de/tools/bild-farbextraktor': '/de/werkzeuge/bild-farbextraktor',
+  '/de/tools/farbpaletten-generator': '/de/werkzeuge/farbpaletten-generator',
+  '/de/tools/kostenloser-qr-code-generator': '/de/werkzeuge/kostenloser-qr-code-generator',
+};
+
+/**
  * Redirecty dla usług (zmienione URL-e)
  */
 export const SERVICES_REDIRECTS: Record<string, string> = {
@@ -143,5 +160,6 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,
   ...TOOLS_REDIRECTS,
+  ...DE_TOOLS_REDIRECTS,
   ...SERVICES_REDIRECTS,
 };

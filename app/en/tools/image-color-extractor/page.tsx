@@ -42,7 +42,13 @@ export const metadata: Metadata = {
   description: 'Free online image color extractor. Upload a photo or logo and get a palette of up to 12 dominant colors with HEX and RGB codes. Local processing in the browser. No registration.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/image-color-extractor'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'), en: toAbsoluteUrl('/en/tools/image-color-extractor'), de: toAbsoluteUrl('/de/tools/bild-farbextraktor') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
+      en: toAbsoluteUrl('/en/tools/image-color-extractor'),
+      de: toAbsoluteUrl('/de/werkzeuge/bild-farbextraktor'),
+      es: toAbsoluteUrl('/es/herramientas/extractor-de-colores-de-imagen'),
+      fr: toAbsoluteUrl('/fr/outils/extracteur-de-couleurs-d-image'),
+    },
   },
   openGraph: {
     title: 'Free image color extractor online - extract palette from photo',

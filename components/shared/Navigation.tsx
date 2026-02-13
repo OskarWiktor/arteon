@@ -61,7 +61,17 @@ export default function Navigation() {
                 },
                 de: {
                   text: 'Update des E-Mail-Signatur-Generators – entdecken Sie die neuen Funktionen',
-                  linkText: 'Tools',
+                  linkText: 'Werkzeuge',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                es: {
+                  text: 'Actualización del generador de firmas de correo: descubra las nuevas funciones',
+                  linkText: 'herramientas',
+                  linkHref: getToolHref('emailSignature', locale),
+                },
+                fr: {
+                  text: 'Mise à jour du générateur de signature e-mail : découvrez les nouvelles fonctionnalités',
+                  linkText: 'outils',
                   linkHref: getToolHref('emailSignature', locale),
                 },
               } satisfies Record<Locale, { text: string; linkText: string; linkHref: string }>

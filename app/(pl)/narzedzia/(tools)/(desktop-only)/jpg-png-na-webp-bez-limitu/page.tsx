@@ -38,7 +38,13 @@ export const metadata: Metadata = {
   description: 'Darmowy konwerter JPG i PNG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja odbywa się lokalnie w przeglądarce, pliki nie są wysyłane na serwer.',
   alternates: {
     canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'), en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'), de: toAbsoluteUrl('/de/tools/jpg-png-zu-webp-konverter') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
+      en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
+      de: toAbsoluteUrl('/de/werkzeuge/jpg-png-zu-webp-konverter'),
+      es: toAbsoluteUrl('/es/herramientas/convertidor-jpg-png-a-webp'),
+      fr: toAbsoluteUrl('/fr/outils/convertisseur-jpg-png-en-webp'),
+    },
   },
   openGraph: {
     title: 'Konwerter JPG i PNG na WebP online | Darmowy, bez limitu',
@@ -69,7 +75,7 @@ const schema = {
   featureList: [
     'Konwersja JPG do WebP',
     'Konwersja PNG do WebP',
-    'Regulacja poziomu jakości (1-100%)',
+    'Regulacja poziomu jakości (60-95%)',
     'Konwersja wielu plików jednocześnie',
     'Podgląd rozmiaru przed i po konwersji',
     'Pobieranie pojedynczych plików',
@@ -192,7 +198,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Co to jest WebP i dlaczego warto konwertować obrazy?">
-          <p className="mb-4">
+          <p className="text-mid mb-4">
             WebP to format obrazów stworzony przez Google, który pozwala zmniejszyć rozmiar plików graficznych nawet o 25-35% w porównaniu z JPG i PNG - przy zachowaniu porównywalnej jakości
             wizualnej. Mniejsze pliki oznaczają szybsze ładowanie strony, co przekłada się na lepsze doświadczenie użytkowników i wyższe wyniki w{' '}
             <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">
@@ -200,11 +206,11 @@ export default function Page() {
             </a>
             .
           </p>
-          <p className="mb-4">
+          <p className="text-mid mb-4">
             Format WebP jest wspierany przez wszystkie nowoczesne przeglądarki: Chrome, Firefox, Safari (od wersji 14) i Edge. Jeśli prowadzisz stronę internetową, sklep online lub bloga, konwersja
             obrazów do WebP to jeden z najprostszych sposobów na poprawę wydajności witryny.
           </p>
-          <p>
+          <p className="text-mid">
             Konwerter obsługuje zarówno zdjęcia JPG, jak i grafiki PNG (w tym te z przezroczystością). Możesz przekonwertować dowolną liczbę plików naraz - wszystkie zostaną przetworzone lokalnie w
             przeglądarce, bez wysyłania na serwer.
           </p>
@@ -428,7 +434,7 @@ export default function Page() {
         <Gap variant="line" />
 
         <SectionInfo title="Ile można zaoszczędzić konwertując na WebP?">
-          <p className="mb-4">Oszczędności zależą od rodzaju obrazu i jego oryginalnej kompresji. Poniżej przykładowe wyniki dla typowych plików:</p>
+          <p className="text-mid mb-4">Oszczędności zależą od rodzaju obrazu i jego oryginalnej kompresji. Poniżej przykładowe wyniki dla typowych plików:</p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Zdjęcie JPG (aparat)</p>

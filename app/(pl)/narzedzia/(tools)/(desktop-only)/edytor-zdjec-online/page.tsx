@@ -24,7 +24,13 @@ export const metadata: Metadata = {
   description: 'Zmień rozmiar zdjęcia online za darmo. Kadruj do Instagram, Facebook, LinkedIn. Konwertuj JPG na WebP. Twórz okrągłe avatary. Przetwarzanie lokalne w przeglądarce.',
   alternates: {
     canonical: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'), en: toAbsoluteUrl('/en/tools/online-image-editor'), de: toAbsoluteUrl('/de/tools/online-bildeditor') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
+      en: toAbsoluteUrl('/en/tools/online-image-editor'),
+      de: toAbsoluteUrl('/de/werkzeuge/online-bildeditor'),
+      es: toAbsoluteUrl('/es/herramientas/editor-de-imagenes-en-linea'),
+      fr: toAbsoluteUrl('/fr/outils/editeur-d-images-en-ligne'),
+    },
   },
   openGraph: {
     title: 'Darmowy edytor zdjęć online - zmiana rozmiaru, kadrowanie, konwersja',
@@ -580,7 +586,7 @@ export default function ImageEditorPage() {
           pageUrl={toAbsoluteUrl('/narzedzia/edytor-zdjec-online')}
         />
 
-        <Gap size="sm" />
+        <Gap variant="line" />
 
         <ToolsCarousel title="Sprawdź inne narzędzia" />
 

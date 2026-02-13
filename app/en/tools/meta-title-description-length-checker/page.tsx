@@ -39,7 +39,9 @@ export const metadata: Metadata = {
     languages: {
       pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
       en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-      de: toAbsoluteUrl('/de/tools/meta-titel-beschreibung-laengenpruefer'),
+      de: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
+      es: toAbsoluteUrl('/es/herramientas/verificador-de-meta-titulo-y-descripcion'),
+      fr: toAbsoluteUrl('/fr/outils/verificateur-meta-titre-et-description'),
     },
   },
   openGraph: {
@@ -104,7 +106,7 @@ const howToSchema = {
     {
       '@type': 'HowToStep',
       name: 'Enter the meta description',
-      text: 'Add the page description in the Meta description field. You will see length metrics and an evaluation of whether the description falls within the recommended range.',
+      text: 'Add the page description in the Meta description field. You will see the same metrics. The field is larger because descriptions are longer than titles - you can fit 2–3 short sentences.',
     },
     {
       '@type': 'HowToStep',

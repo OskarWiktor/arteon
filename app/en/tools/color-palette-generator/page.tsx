@@ -38,7 +38,13 @@ export const metadata: Metadata = {
   description: 'Free online color palette generator. Pick one base color and generate 9 palettes: monochromatic, complementary, triadic, analogous, pastel, dark, and more. Copy HEX codes instantly.',
   alternates: {
     canonical: toAbsoluteUrl('/en/tools/color-palette-generator'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'), en: toAbsoluteUrl('/en/tools/color-palette-generator'), de: toAbsoluteUrl('/de/tools/farbpaletten-generator') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
+      en: toAbsoluteUrl('/en/tools/color-palette-generator'),
+      de: toAbsoluteUrl('/de/werkzeuge/farbpaletten-generator'),
+      es: toAbsoluteUrl('/es/herramientas/generador-de-paletas-de-colores'),
+      fr: toAbsoluteUrl('/fr/outils/generateur-de-palettes-de-couleurs'),
+    },
   },
   openGraph: {
     title: 'Free color palette generator online - 9 palettes from one color',
@@ -272,8 +278,8 @@ export default function ColorPaletteGeneratorPage() {
           }
         >
           <p className="text-mid">
-            All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel (0°–360°),
-            saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.
+            All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel
+            (0°–360°), saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.
           </p>
           <p className="text-mid mt-3">
             The complementary, triadic, and split-complementary palettes are based on color wheel geometry - colors are placed at equal angular intervals, creating visual balance. The monochromatic,

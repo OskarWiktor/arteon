@@ -22,12 +22,16 @@ const switchTitle: Record<Locale, string> = {
   pl: 'Przejdź na polski',
   en: 'Switch to English',
   de: 'Auf Deutsch wechseln',
+  es: 'Cambiar a español',
+  fr: 'Passer au français',
 };
 
 const toggleLabel: Record<Locale, string> = {
   pl: 'Zmień język',
   en: 'Change language',
   de: 'Sprache ändern',
+  es: 'Cambiar idioma',
+  fr: 'Changer de langue',
 };
 
 function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLink[] {

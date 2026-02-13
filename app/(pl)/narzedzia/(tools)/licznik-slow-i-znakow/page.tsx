@@ -43,7 +43,13 @@ export const metadata: Metadata = {
     'Darmowy licznik słów i znaków online po polsku. Policz słowa, znaki, akapity i czas czytania. Sprawdź optymalną długość tekstu dla SEO - artykuł, opis produktu, strona usługi. Bez rejestracji.',
   alternates: {
     canonical: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
-    languages: { pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'), en: toAbsoluteUrl('/en/tools/word-and-character-counter'), de: toAbsoluteUrl('/de/tools/wort-und-zeichenzaehler') },
+    languages: {
+      pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
+      en: toAbsoluteUrl('/en/tools/word-and-character-counter'),
+      de: toAbsoluteUrl('/de/werkzeuge/wort-und-zeichenzaehler'),
+      es: toAbsoluteUrl('/es/herramientas/contador-de-palabras-y-caracteres'),
+      fr: toAbsoluteUrl('/fr/outils/compteur-de-mots-et-caracteres'),
+    },
   },
   openGraph: {
     title: 'Darmowy licznik słów i znaków online - sprawdź długość tekstu',

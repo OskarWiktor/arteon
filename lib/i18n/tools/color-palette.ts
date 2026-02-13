@@ -162,4 +162,114 @@ export const ui = {
       },
     },
   },
+  es: {
+    selectBaseColor: 'Seleccionar color base',
+    updateColor: 'Actualizar color',
+    randomColor: 'Color aleatorio',
+    currentBaseColor: 'Color base actual',
+    baseColorHelper: 'Todas las paletas de abajo se basan en este color.',
+    colorPreview: 'Vista previa del color',
+    copied: 'Copiado',
+    copy: 'Copiar',
+    generatedPalettes: 'Paletas de colores generadas',
+    colorReadError: 'No se pudo leer el color. Asegúrese de usar el formato',
+    example: 'p. ej.',
+    enterValidColor: 'Introduzca un color HEX válido para generar paletas. Todos los cálculos se realizan localmente en su navegador.',
+    palettes: {
+      monochromatic: {
+        label: 'Paleta monocromática',
+        description: 'Todos los colores comparten el mismo tono (H), variando principalmente en luminosidad (L) en el espacio de color HSL.',
+      },
+      analogous: {
+        label: 'Paleta análoga',
+        description: 'Colores con tonos similares, de aprox. -30° a +30° alrededor del color base en el círculo cromático clásico (p. ej. Itten).',
+      },
+      complementary: {
+        label: 'Paleta complementaria',
+        description: 'El color base y su complemento desplazado 180° en el círculo cromático, uno de los contrastes de color fundamentales descritos por Johannes Itten.',
+      },
+      triadic: {
+        label: 'Paleta triádica',
+        description: 'Tres tonos separados 120° en el círculo cromático (vértices de un triángulo equilátero), una geometría usada frecuentemente en branding y diseños inspirados en la Bauhaus.',
+      },
+      splitComplementary: {
+        label: 'Paleta complementaria dividida',
+        description:
+          'Una variación de la paleta complementaria: en lugar de un complemento (180°), se usan dos colores desplazados aprox. ±30° del complemento, reduciendo la tensión visual y manteniendo un fuerte contraste.',
+      },
+      softPastel: {
+        label: 'Paleta pastel',
+        description: 'El mismo tono con saturación reducida y luminosidad aumentada, un desplazamiento hacia el centro y la parte superior del espacio HSL que produce colores suaves y "cremosos".',
+      },
+      deepDark: {
+        label: 'Paleta oscura',
+        description:
+          'El mismo tono con alta saturación (S) y luminosidad reducida (L), un desplazamiento hacia abajo en el eje de luminosidad que produce colores profundos típicos del modo oscuro y acentos intensos.',
+      },
+      materialTonal: {
+        label: 'Paleta tonal (inspirada en Material Design)',
+        description: 'Varios pasos de luminosidad de un mismo tono, con L variada y S moderada, similar a los rangos tonales de las directrices de Material Design (p. ej. 50-900).',
+      },
+      appleMinimal: {
+        label: 'Paleta minimalista (inspirada en Apple)',
+        description: 'Un acento de color llamativo y varios neutros muy claros y suaves, un diseño típico de interfaces con mucho espacio en blanco y sombras sutiles.',
+      },
+    },
+  },
+  fr: {
+    selectBaseColor: 'Sélectionner la couleur de base',
+    updateColor: 'Mettre à jour la couleur',
+    randomColor: 'Couleur aléatoire',
+    currentBaseColor: 'Couleur de base actuelle',
+    baseColorHelper: 'Toutes les palettes ci-dessous reposent sur cette couleur.',
+    colorPreview: 'Aperçu de la couleur',
+    copied: 'Copié',
+    copy: 'Copier',
+    generatedPalettes: 'Palettes de couleurs générées',
+    colorReadError: "Impossible de lire la couleur. Assurez-vous d'utiliser le format",
+    example: 'ex.',
+    enterValidColor: 'Saisissez une couleur HEX valide pour générer les palettes. Tous les calculs sont effectués localement dans votre navigateur.',
+    palettes: {
+      monochromatic: {
+        label: 'Palette monochromatique',
+        description: "Toutes les couleurs partagent la même teinte (H) et varient principalement en luminosité (L) dans l'espace colorimétrique HSL.",
+      },
+      analogous: {
+        label: 'Palette analogue',
+        description: "Des couleurs de teintes proches, d'environ -30° à +30° autour de la couleur de base sur le cercle chromatique classique (ex.\u00a0: Itten).",
+      },
+      complementary: {
+        label: 'Palette complémentaire',
+        description: "La couleur de base et son complément décalé de 180° sur le cercle chromatique, l'un des contrastes fondamentaux décrits par Johannes Itten.",
+      },
+      triadic: {
+        label: 'Palette triadique',
+        description:
+          "Trois teintes séparées de 120° sur le cercle chromatique (sommets d'un triangle équilatéral), une géométrie fréquemment utilisée en branding et dans les designs inspirés du Bauhaus.",
+      },
+      splitComplementary: {
+        label: 'Palette complémentaire divisée',
+        description:
+          "Une variante de la palette complémentaire\u00a0: au lieu d'un complément (180°), on utilise deux couleurs décalées d'environ ±30° du complément, réduisant la tension visuelle tout en conservant un fort contraste.",
+      },
+      softPastel: {
+        label: 'Palette pastel',
+        description:
+          'La même teinte avec une saturation réduite et une luminosité augmentée, un déplacement vers le centre et le haut de l\'espace HSL qui produit des couleurs douces et "crémeuses".',
+      },
+      deepDark: {
+        label: 'Palette sombre',
+        description:
+          "La même teinte avec une saturation élevée (S) et une luminosité réduite (L) \u2013 un déplacement vers le bas sur l'axe de luminosité, produisant des couleurs profondes typiques du mode sombre et des accents intenses.",
+      },
+      materialTonal: {
+        label: 'Palette tonale (inspirée Material Design)',
+        description: "Plusieurs niveaux de luminosité d'une même teinte \u2013 L variée et S modérée, similaire aux plages tonales des directives Material Design (ex.\u00a0: 50-900).",
+      },
+      appleMinimal: {
+        label: 'Palette minimaliste (inspirée Apple)',
+        description: "Un accent de couleur vif et plusieurs neutres très clairs et doux, un agencement typique des interfaces avec beaucoup d'espace blanc et des ombres subtiles.",
+      },
+    },
+  },
 } as const satisfies Record<Locale, unknown>;

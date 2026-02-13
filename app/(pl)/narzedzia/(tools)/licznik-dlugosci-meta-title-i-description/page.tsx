@@ -41,7 +41,9 @@ export const metadata: Metadata = {
     languages: {
       pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
       en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-      de: toAbsoluteUrl('/de/tools/meta-titel-beschreibung-laengenpruefer'),
+      de: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
+      es: toAbsoluteUrl('/es/herramientas/verificador-de-meta-titulo-y-descripcion'),
+      fr: toAbsoluteUrl('/fr/outils/verificateur-meta-titre-et-description'),
     },
   },
   openGraph: {
@@ -154,7 +156,7 @@ export default function Page() {
       />
 
       <Breadcrumbs
-        second={{ href: '/narzedzia', label: 'Narzędzie' }}
+        second={{ href: '/narzedzia', label: 'Narzędzia' }}
         third={{ href: `/narzedzia/licznik-dlugosci-meta-title-i-description`, label: 'Sprawdź długość tytułu i opisu strony w Google' }}
         includeJsonLd
       />

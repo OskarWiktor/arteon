@@ -43,7 +43,9 @@ export const metadata: Metadata = {
     languages: {
       pl: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
       en: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
-      de: toAbsoluteUrl('/de/tools/kostenloser-e-mail-signatur-generator'),
+      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-e-mail-signatur-generator'),
+      es: toAbsoluteUrl('/es/herramientas/generador-de-firma-de-correo-gratuito'),
+      fr: toAbsoluteUrl('/fr/outils/generateur-de-signature-email-gratuit'),
     },
   },
   openGraph: {
@@ -181,7 +183,7 @@ export default function Page() {
       />
 
       <Breadcrumbs
-        second={{ href: '/narzedzia', label: 'Narzędzie' }}
+        second={{ href: '/narzedzia', label: 'Narzędzia' }}
         third={{ href: `/narzedzia/darmowy-generator-stopki-mailowej`, label: 'Darmowy generator stopki mailowej HTML' }}
         includeJsonLd
       />
