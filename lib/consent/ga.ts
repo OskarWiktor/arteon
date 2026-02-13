@@ -5,21 +5,26 @@ export function loadGA(measurementId?: string) {
   const gtagSrc = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
 
   const alreadyLoaded = Array.from(document.scripts).some((s) => s.src === gtagSrc);
-  if (alreadyLoaded) return;
-  if (document.getElementById('ga4-src')) return;
+  if (!alreadyLoaded && !document.getElementById('ga4-src')) {
+    const s1 = document.createElement('script');
+    s1.id = 'ga4-src';
+    s1.async = true;
+    s1.src = gtagSrc;
+    document.head.appendChild(s1);
+  }
 
-  const s1 = document.createElement('script');
-  s1.id = 'ga4-src';
-  s1.async = true;
-  s1.src = gtagSrc;
-  document.head.appendChild(s1);
+  if (typeof window.gtag === 'function') {
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId, { send_page_view: false });
+  }
+}
 
-  const s2 = document.createElement('script');
-  s2.text = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${measurementId}', { send_page_view: false });
-  `;
-  document.head.appendChild(s2);
+export function sendGAPageView() {
+  if (typeof window === 'undefined') return;
+  if (typeof window.gtag !== 'function') return;
+
+  window.gtag('event', 'page_view', {
+    page_location: window.location.href,
+    page_title: document.title,
+  });
 }

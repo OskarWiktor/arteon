@@ -174,6 +174,9 @@ export default function Footer() {
                     </AppLink>
                   </li>
                 ))}
+                <li>
+                  <CookieSettingsButton label={ft.cookieSettingsLabel} />
+                </li>
               </ul>
             </nav>
           </div>

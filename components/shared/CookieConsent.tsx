@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Button from '../ui/buttons/Button';
 import { loadAhrefs } from '@/lib/consent/ahrefs';
-import { loadGA } from '@/lib/consent/ga';
+import { loadGA, sendGAPageView } from '@/lib/consent/ga';
 import { updateGtagConsent } from '@/lib/consent/gtag';
 import { readConsent, writeConsent } from '@/lib/consent/consentCookie';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
@@ -14,7 +14,7 @@ import { useTimeout } from '@/hooks/useTimeout';
 const ui = {
   pl: {
     title: 'Pliki cookie i prywatność',
-    description: 'Używamy technologii niezbędnych do działania serwisu, <strong>analityki</strong> do ulepszania strony oraz <strong>reklam</strong>. Włączymy je wyłącznie po Twojej zgodzie.',
+    description: 'Używamy plików cookie, aby strona działała prawidłowo, analizować ruch i wyświetlać reklamy. Więcej w naszej',
     setPreferences: 'Ustaw preferencje',
     privacyPolicy: 'Polityka prywatności',
     privacyPolicyHref: '/polityka-prywatnosci',
@@ -38,7 +38,7 @@ const ui = {
   },
   en: {
     title: 'Cookies and privacy',
-    description: 'We use technologies essential for the site to work, <strong>analytics</strong> to improve the site, and <strong>ads</strong>. We will only enable them with your consent.',
+    description: 'We use cookies to keep the site running, analyse traffic, and show ads. Learn more in our',
     setPreferences: 'Set preferences',
     privacyPolicy: 'Privacy Policy',
     privacyPolicyHref: '/en/privacy-policy',
@@ -62,7 +62,7 @@ const ui = {
   },
   de: {
     title: 'Cookies und Datenschutz',
-    description: 'Wir verwenden Technologien, die für den Betrieb der Website erforderlich sind, <strong>Analysen</strong> zur Verbesserung der Website und <strong>Werbung</strong>. Wir aktivieren sie nur mit Ihrer Zustimmung.',
+    description: 'Wir verwenden Cookies für den Betrieb der Website, Analysen und Werbung. Mehr dazu in unserer',
     setPreferences: 'Einstellungen anpassen',
     privacyPolicy: 'Datenschutzrichtlinie',
     privacyPolicyHref: '/de/datenschutzrichtlinie',
@@ -86,7 +86,7 @@ const ui = {
   },
   es: {
     title: 'Cookies y privacidad',
-    description: 'Utilizamos tecnologías esenciales para el funcionamiento del sitio, <strong>análisis</strong> para mejorar la web y <strong>publicidad</strong>. Solo las activaremos con su consentimiento.',
+    description: 'Utilizamos cookies para el funcionamiento del sitio, análisis de tráfico y publicidad. Más información en nuestra',
     setPreferences: 'Configurar preferencias',
     privacyPolicy: 'Política de privacidad',
     privacyPolicyHref: '/es/politica-de-privacidad',
@@ -110,7 +110,7 @@ const ui = {
   },
   fr: {
     title: 'Cookies et confidentialité',
-    description: "Nous utilisons des technologies essentielles au fonctionnement du site, des <strong>analyses</strong> pour améliorer le site et de la <strong>publicité</strong>. Nous ne les activerons qu'avec votre consentement.",
+    description: "Nous utilisons des cookies pour le fonctionnement du site, l'analyse du trafic et la publicité. En savoir plus dans notre",
     setPreferences: 'Définir les préférences',
     privacyPolicy: 'Politique de confidentialité',
     privacyPolicyHref: '/fr/politique-de-confidentialite',
@@ -155,7 +155,12 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: string }) {
 
   useEscapeKey((e) => {
     e.preventDefault();
-    saveAndClose({ analytics: false, ads: false });
+    if (panel) {
+      setPanel(false);
+    } else {
+      setPanel(true);
+      focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
+    }
   }, visible);
 
   useFocusTrap(dialogRef, visible);
@@ -203,6 +208,7 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: string }) {
     if (next.analytics) {
       loadGA(window.__GA_ID);
       loadAhrefs();
+      setTimeout(sendGAPageView, 200);
     }
 
     setVisible(false);
@@ -220,47 +226,36 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: string }) {
       <div className="text-dark mx-auto mb-4 w-[min(92vw,1280px)] rounded bg-white p-5 shadow-xl ring-1 ring-black/5">
         {!panel ? (
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div className="space-y-2">
+            <div className="space-y-1">
               <span id="cookie-title" className="h6">
                 {t.title}
               </span>
               <p id="cookie-desc" className="text-dark text-sm">
-                <span dangerouslySetInnerHTML={{ __html: t.description }} />
-                <span className="ml-1">
-                  <button
-                    className="text-dark underline underline-offset-2"
-                    onClick={() => {
-                      setPanel(true);
-                      focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
-                    }}
-                    aria-haspopup="dialog"
-                    aria-controls="cookie-preferences"
-                  >
-                    {t.setPreferences}
-                  </button>{' '}
-                  •{' '}
-                  <a className="text-dark underline underline-offset-2" href={t.privacyPolicyHref} rel="noopener">
-                    {t.privacyPolicy}
-                  </a>
-                </span>
+                {t.description}{' '}
+                <a className="text-dark underline underline-offset-2" href={t.privacyPolicyHref} rel="noopener">
+                  {t.privacyPolicy}
+                </a>
+                .
               </p>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex shrink-0 gap-2">
               <button
                 ref={firstNativeBtnRef}
-                onClick={() => saveAndClose({ analytics: false, ads: false })}
-                className="text-dark border-primary-light focus-visible:ring-primary inline-flex w-fit items-center rounded-2xl border bg-white px-3 py-1 text-base font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2"
+                onClick={() => saveAndClose({ analytics: true, ads: true })}
+                className="bg-primary focus-visible:ring-primary inline-flex w-fit cursor-pointer items-center rounded-xl px-3 py-1.5 text-sm font-medium text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base"
               >
-                {t.reject}
-              </button>
-
-              <Button size="small" onClick={() => setPanel(true)}>
-                {t.settings}
-              </Button>
-              <Button onClick={() => saveAndClose({ analytics: true, ads: true })} size="small" variant="accent">
                 {t.accept}
-              </Button>
+              </button>
+              <button
+                onClick={() => {
+                  setPanel(true);
+                  focusFirstButton(() => firstNativeBtnRef.current?.focus(), 0);
+                }}
+                className="text-dark focus-visible:ring-primary inline-flex w-fit items-center rounded-xl border border-neutral-200 bg-white px-3 py-1 text-sm font-medium transition hover:bg-neutral-50 focus:outline-none focus-visible:ring-2"
+              >
+                {t.settings}
+              </button>
             </div>
           </div>
         ) : (

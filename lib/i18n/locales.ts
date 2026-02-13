@@ -161,6 +161,7 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     companyDataLabel: 'Dane firmy i lokalizacja',
     toolsLabel: 'Narzędzia',
     legalLabel: 'Dokumenty i ustawienia',
+    cookieSettingsLabel: 'Ustawienia plików cookie',
   },
   en: {
     copyright: 'All rights reserved.',
@@ -168,6 +169,7 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     companyDataLabel: 'Company info',
     toolsLabel: 'Tools',
     legalLabel: 'Legal documents',
+    cookieSettingsLabel: 'Cookie settings',
   },
   de: {
     copyright: 'Alle Rechte vorbehalten.',
@@ -175,6 +177,7 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     companyDataLabel: 'Firmeninformationen',
     toolsLabel: 'Werkzeuge',
     legalLabel: 'Rechtliche Dokumente',
+    cookieSettingsLabel: 'Cookie-Einstellungen',
   },
   es: {
     copyright: 'Todos los derechos reservados.',
@@ -182,6 +185,7 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     companyDataLabel: 'Datos de la empresa',
     toolsLabel: 'Herramientas',
     legalLabel: 'Documentos legales',
+    cookieSettingsLabel: 'Configuración de cookies',
   },
   fr: {
     copyright: 'Tous droits réservés.',
@@ -189,6 +193,7 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     companyDataLabel: "Informations sur l'entreprise",
     toolsLabel: 'Outils',
     legalLabel: 'Documents juridiques',
+    cookieSettingsLabel: 'Paramètres des cookies',
   },
 };
 

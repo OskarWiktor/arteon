@@ -7,16 +7,6 @@ interface Window {
   ArteonConsent?: {
     open: () => void;
   };
-  gtag?: (
-    command: 'consent',
-    action: 'update' | 'default',
-    params: {
-      analytics_storage?: ConsentValue;
-      ad_storage?: ConsentValue;
-      ad_user_data?: ConsentValue;
-      ad_personalization?: ConsentValue;
-      wait_for_update?: number;
-    },
-  ) => void;
+  gtag?: (...args: unknown[]) => void;
   dataLayer?: unknown[];
 }

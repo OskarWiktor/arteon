@@ -42,7 +42,7 @@ function DefaultPanel() {
 
       <SectionBox className="space-y-4">
         <Shimmer className="h-5 w-32 !rounded-md" />
-        <Shimmer className="h-48 w-full" />
+        <Shimmer className="h-48 w-full !bg-neutral-200" />
         <div className="flex gap-2">
           <Shimmer className="h-8 w-20 !rounded-lg" />
           <Shimmer className="h-8 w-20 !rounded-lg" />
@@ -126,7 +126,7 @@ function ImageEditorPanel() {
       </SectionBox>
 
       <SectionBox className="flex flex-col items-center justify-center space-y-4">
-        <Shimmer className="aspect-video w-full max-w-xl" />
+        <Shimmer className="aspect-video w-full max-w-xl !bg-neutral-200" />
         <Shimmer className="h-3.5 w-56 !rounded-md" />
       </SectionBox>
     </div>
@@ -228,7 +228,7 @@ function EmailSignaturePanel() {
               <Shimmer className="h-8 w-8 !rounded-lg" />
             </div>
           </div>
-          <Shimmer className="min-h-[340px] w-full flex-1 !rounded-xl !bg-neutral-50" />
+          <Shimmer className="min-h-[340px] w-full flex-1 !rounded-xl !bg-neutral-200" />
           <div className="flex flex-wrap gap-2">
             <ButtonShimmer width="w-32" />
             <ButtonShimmer width="w-32" />

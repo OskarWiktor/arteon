@@ -99,7 +99,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <Script id="google-consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){dataLayer.push(arguments);};
+            window.gtag = gtag;
             gtag('consent','default',{
               analytics_storage:'denied',
               ad_storage:'denied',
@@ -107,22 +108,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               ad_personalization:'denied',
               wait_for_update: 500
             });
+            ${GA_MEASUREMENT_ID ? `window.__GA_ID = '${GA_MEASUREMENT_ID}';` : ''}
           `}
         </Script>
-
-        {GA_MEASUREMENT_ID && (
-          <>
-            <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
-            <Script id="ga-init">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_MEASUREMENT_ID}');
-              `}
-            </Script>
-          </>
-        )}
 
         {METRICOOL_HASH && (
           <Script id="metricool-tracker" strategy="afterInteractive">

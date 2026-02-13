@@ -18,7 +18,7 @@ export default function ArticlePageSkeleton() {
           <Shimmer className="mt-4 h-4 w-full !rounded-md" />
           <Shimmer className="h-4 w-full !rounded-md" />
           <Shimmer className="h-4 w-3/4 !rounded-md" />
-          <Shimmer className="mt-6 aspect-video w-full !rounded-xl" />
+          <Shimmer className="mt-6 aspect-video w-full !rounded-xl !bg-neutral-300" />
           <Shimmer className="mt-4 h-4 w-full !rounded-md" />
           <Shimmer className="h-4 w-full !rounded-md" />
           <Shimmer className="h-4 w-5/6 !rounded-md" />

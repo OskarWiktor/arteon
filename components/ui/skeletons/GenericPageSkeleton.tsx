@@ -1,8 +1,7 @@
 import HeroBannerSkeleton from './HeroBannerSkeleton';
-import BreadcrumbsSkeleton from './BreadcrumbsSkeleton';
-import SectionInfoSkeleton from './SectionInfoSkeleton';
+import BenefitBeltSkeleton from './BenefitBeltSkeleton';
+import CarouselSkeleton from './CarouselSkeleton';
 import SectionStepsSkeleton from './SectionStepsSkeleton';
-import FaqSkeleton from './FaqSkeleton';
 import GapSkeleton from './GapSkeleton';
 import CTABannerSkeleton from './CTABannerSkeleton';
 
@@ -10,18 +9,19 @@ export default function GenericPageSkeleton() {
   return (
     <>
       <HeroBannerSkeleton />
-      <BreadcrumbsSkeleton />
+      <BenefitBeltSkeleton />
       <div className="m-auto w-[94%] max-w-[1420px]">
-        <GapSkeleton variant="line" />
-        <SectionInfoSkeleton />
         <GapSkeleton variant="space" />
-        <SectionStepsSkeleton cols={3} />
+        <CarouselSkeleton variant="project" />
         <GapSkeleton variant="line" />
-        <FaqSkeleton count={4} />
+        <SectionStepsSkeleton cols={2} />
+        <GapSkeleton variant="line" />
+        <CarouselSkeleton variant="tool" />
+        <GapSkeleton variant="line" />
+        <CarouselSkeleton variant="testimonial" />
         <GapSkeleton variant="space" />
-        <CTABannerSkeleton />
-        <div className="my-20 md:my-32" />
       </div>
+      <CTABannerSkeleton />
     </>
   );
 }

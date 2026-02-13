@@ -36,6 +36,7 @@ export type FooterUi = {
   companyDataLabel: string;
   toolsLabel: string;
   legalLabel: string;
+  cookieSettingsLabel: string;
 };
 
 export type DesktopOnlyUi = {
