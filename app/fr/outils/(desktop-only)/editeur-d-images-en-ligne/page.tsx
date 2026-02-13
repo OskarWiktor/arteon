@@ -104,7 +104,7 @@ const faqItems = [
   {
     question: 'Quels modèles de taille sont disponibles ?',
     answer:
-      'Modèles pour Instagram (carré 1080×1080, portrait 1080×1350, story/reels 1080×1920), Facebook (publication 1200×630, couverture 820×312), LinkedIn (publication 1200×627, bannière 1584×396), OG Image (1200×630), image d’article, bannière de site, section hero et plus.',
+      'Modèles pour Instagram (carré 1080×1080, portrait 1080×1350, story/reels 1080×1920), Facebook (publication 1200×630, couverture 820×360), LinkedIn (publication 1200×1200, bannière 1584×396), OG Image (1200×630), image d’article, bannière de site, section hero et plus.',
     answerSchemaText: 'Instagram, Facebook, LinkedIn, OG Image, image d’article, bannière de site et autres.',
   },
   {
@@ -255,12 +255,12 @@ export default function ImageResizePage() {
                   <tr className="border-b border-neutral-100">
                     <td className="py-2 pr-4">Facebook</td>
                     <td className="py-2 pr-4">Couverture</td>
-                    <td className="py-2">820 × 312</td>
+                    <td className="py-2">820 × 360</td>
                   </tr>
                   <tr className="border-b border-neutral-100">
                     <td className="py-2 pr-4">LinkedIn</td>
                     <td className="py-2 pr-4">Publication</td>
-                    <td className="py-2">1200 × 627</td>
+                    <td className="py-2">1200 × 1200</td>
                   </tr>
                   <tr className="border-b border-neutral-100">
                     <td className="py-2 pr-4">LinkedIn</td>
@@ -301,12 +301,12 @@ export default function ImageResizePage() {
             {
               icon: <RiFacebookLine className="h-6 w-6" />,
               title: 'Facebook',
-              description: 'Publication (1200×630), couverture (820×312), image d’événement et plus.',
+              description: 'Publication (1200×630), couverture (820×360), image d’événement et plus.',
             },
             {
               icon: <RiLinkedinLine className="h-6 w-6" />,
               title: 'LinkedIn',
-              description: 'Publication (1200×627), bannière de profil (1584×396), couverture de page entreprise.',
+              description: 'Publication (1200×1200), bannière de profil (1584×396), couverture de page entreprise.',
             },
             {
               icon: <RiGlobalLine className="h-6 w-6" />,

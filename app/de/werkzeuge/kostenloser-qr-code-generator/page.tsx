@@ -393,19 +393,19 @@ export default function QrCodeGeneratorPage() {
         <Gap variant="line" />
 
         <SectionFeatureComparison
-          title="PNG vs. SVG - welches Format wählen?"
+          title="PNG vs. SVG – welches Format für den Druck wählen?"
           plans={[
-            { id: 'png', name: 'PNG (Raster)', highlighted: true },
-            { id: 'svg', name: 'SVG (Vektor)' },
+            { id: 'png', name: 'PNG (Raster)' },
+            { id: 'svg', name: 'SVG (Vektor)', highlighted: true },
           ]}
           features={[
-            { name: 'Für Web und E-Mail geeignet', values: { png: true, svg: true } },
-            { name: 'Für Druck in jeder Größe', values: { png: false, svg: true } },
-            { name: 'Feste Pixelauflösung', values: { png: true, svg: false } },
-            { name: 'Skalierbar ohne Qualitätsverlust', values: { png: false, svg: true } },
-            { name: 'In jeder Bildbearbeitungssoftware nutzbar', values: { png: true, svg: true } },
-            { name: 'Ideal für Social Media', values: { png: true, svg: false } },
-            { name: 'Ideal für Plakate und Großformat', values: { png: false, svg: true } },
+            { name: 'Websites und soziale Medien', values: { png: true, svg: true } },
+            { name: 'Flyer und Visitenkarten', values: { png: true, svg: true } },
+            { name: 'Plakate und Banner (Großformat)', values: { png: false, svg: true } },
+            { name: 'Skalierung ohne Qualitätsverlust', values: { png: false, svg: true } },
+            { name: 'Bearbeitung in Grafikprogrammen', values: { png: false, svg: true } },
+            { name: 'Kleinere Dateigröße', values: { png: false, svg: true } },
+            { name: 'Präsentationen', values: { png: true, svg: true } },
           ]}
         />
 

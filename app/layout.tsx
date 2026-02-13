@@ -90,7 +90,7 @@ const websiteJsonLd = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const headersList = await headers();
   const pathname = headersList.get('x-pathname') ?? '';
-  const lang = pathname.startsWith('/en') ? 'en' : 'pl';
+  const lang = pathname.startsWith('/en') ? 'en' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/fr') ? 'fr' : 'pl';
 
   return (
     <html lang={lang}>

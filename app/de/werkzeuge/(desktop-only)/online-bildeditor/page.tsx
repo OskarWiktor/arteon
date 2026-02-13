@@ -104,7 +104,7 @@ const faqItems = [
   {
     question: 'Welche fertigen Größenvorlagen gibt es?',
     answer:
-      'Vorlagen für Instagram (Quadrat 1080×1080, Hochformat 1080×1350, Story/Reels 1080×1920), Facebook (Post 1200×630, Cover 820×312), LinkedIn (Post 1200×627, Profilbanner 1584×396), OG Image (1200×630), Artikelbild, Website-Banner, Hero-Bereich und mehr.',
+      'Vorlagen für Instagram (Quadrat 1080×1080, Hochformat 1080×1350, Story/Reels 1080×1920), Facebook (Post 1200×630, Cover 820×360), LinkedIn (Post 1200×1200, Profilbanner 1584×396), OG Image (1200×630), Artikelbild, Website-Banner, Hero-Bereich und mehr.',
     answerSchemaText: 'Instagram, Facebook, LinkedIn, OG Image, Artikelbild, Website-Banner und weitere.',
   },
   {
@@ -244,12 +244,12 @@ export default function ImageResizePage() {
                   <tr className="border-b border-neutral-100">
                     <td className="py-2 pr-4">Facebook</td>
                     <td className="py-2 pr-4">Cover</td>
-                    <td className="py-2">820 × 312</td>
+                    <td className="py-2">820 × 360</td>
                   </tr>
                   <tr className="border-b border-neutral-100">
                     <td className="py-2 pr-4">LinkedIn</td>
                     <td className="py-2 pr-4">Post</td>
-                    <td className="py-2">1200 × 627</td>
+                    <td className="py-2">1200 × 1200</td>
                   </tr>
                   <tr className="border-b border-neutral-100">
                     <td className="py-2 pr-4">LinkedIn</td>
@@ -290,12 +290,12 @@ export default function ImageResizePage() {
             {
               icon: <RiFacebookLine className="h-6 w-6" />,
               title: 'Facebook',
-              description: 'Post (1200×630), Cover (820×312), Veranstaltungsbild und mehr.',
+              description: 'Post (1200×630), Cover (820×360), Veranstaltungsbild und mehr.',
             },
             {
               icon: <RiLinkedinLine className="h-6 w-6" />,
               title: 'LinkedIn',
-              description: 'Post (1200×627), Profilbanner (1584×396), Unternehmensseiten-Cover.',
+              description: 'Post (1200×1200), Profilbanner (1584×396), Unternehmensseiten-Cover.',
             },
             {
               icon: <RiGlobalLine className="h-6 w-6" />,

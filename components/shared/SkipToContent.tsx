@@ -1,14 +1,16 @@
 const ui = {
-  pl: {
-    skipToContent: 'Przejdź do treści',
-  },
-  en: {
-    skipToContent: 'Skip to content',
-  },
+  pl: { skipToContent: 'Przejdź do treści' },
+  en: { skipToContent: 'Skip to content' },
+  de: { skipToContent: 'Zum Inhalt springen' },
+  es: { skipToContent: 'Ir al contenido' },
+  fr: { skipToContent: 'Aller au contenu' },
 } as const;
 
-export default function SkipToContent({ locale = 'pl' }: { locale?: 'pl' | 'en' }) {
-  const t = ui[locale];
+type SkipLocale = keyof typeof ui;
+
+export default function SkipToContent({ locale = 'pl' }: { locale?: string }) {
+  const resolved: SkipLocale = locale in ui ? (locale as SkipLocale) : 'en';
+  const t = ui[resolved];
 
   return (
     <div id="skip-link">

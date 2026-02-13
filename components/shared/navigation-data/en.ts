@@ -128,6 +128,5 @@ export const TOOLS_SECTIONS_EN: ToolsSectionEN[] = [
 ];
 
 export const LEGAL_LINKS_EN: LegalLinkEN[] = [
-  { key: 'regulamin', href: '/regulamin', label: 'Terms of Service' },
-  { key: 'privacy', href: '/polityka-prywatnosci', label: 'Privacy Policy' },
+  { key: 'privacy', href: '/en/privacy-policy', label: 'Privacy Policy' },
 ];

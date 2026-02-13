@@ -432,7 +432,7 @@ export default function QrCodeGeneratorPage() {
             {
               icon: <RiRulerLine className="h-6 w-6" />,
               title: 'Tamaño mínimo',
-              description: 'El código debe tener al menos 22 cm para escaneo a corta distancia. Cuanto mayor sea la distancia de escaneo, más grande debe ser el código.',
+              description: 'El código debe tener al menos 2×2 cm para escaneo a corta distancia. Cuanto mayor sea la distancia de escaneo, más grande debe ser el código.',
             },
             { icon: <RiContrastLine className="h-6 w-6" />, title: 'Contraste', description: 'Código oscuro sobre fondo claro. Evite colores pastel y bajo contraste.' },
             {

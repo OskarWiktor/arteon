@@ -191,7 +191,7 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
       },
       de: {
         slug: 'meta-titel-beschreibung-laengenpruefer',
-        title: 'Meta-Titel- & Beschreibungs-Checker',
+        title: 'Meta-Tag-Checker',
         description: 'Prüfen Sie die Zeichenanzahl und sehen Sie eine Vorschau Ihrer Seite in Google. Vermeiden Sie abgeschnittene Titel und Beschreibungen in den Suchergebnissen.',
       },
       es: {

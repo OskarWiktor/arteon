@@ -105,7 +105,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 4,
-        name: 'Meta-Titel- und Beschreibungs-Längenprüfer',
+        name: 'Meta-Tag-Checker',
         description:
           'Meta-Titel- und Beschreibungs-Checker mit Google-Vorschau. Zeigt Zeichenanzahl und Pixelbreite, damit Titel und Beschreibungen in den Suchergebnissen nicht abgeschnitten werden.',
         url: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
@@ -124,7 +124,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 6,
-        name: 'Farbkontrast- und Lesbarkeits-Checker',
+        name: 'Farbkontrast-Checker',
         description: 'Prüft Kontrast und Lesbarkeit von Text- und Hintergrundfarben gemäß WCAG. Berechnet das Kontrastverhältnis und hilft mit automatischer Farbanpassung.',
         url: toAbsoluteUrl('/de/werkzeuge/farbkontrast-checker'),
         applicationCategory: 'DesignApplication',
@@ -280,7 +280,7 @@ export default function ToolsIndexPage() {
           items={[
             {
               icon: <RiFileTextLine className="h-8 w-8" />,
-              title: 'Meta-Titel- & Beschreibungs-Checker',
+              title: 'Meta-Tag-Checker',
               topImageAlt: 'Meta-Titel- und Beschreibungs-Checker Arteon',
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
@@ -381,7 +381,7 @@ export default function ToolsIndexPage() {
           items={[
             {
               icon: <RiContrast2Line className="h-8 w-8" />,
-              title: 'Farbkontrast- & Lesbarkeits-Checker',
+              title: 'Farbkontrast-Checker',
               topImageAlt: 'Farbkontrast-Checker Arteon',
               topImageSrc: '/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp',
               description: (

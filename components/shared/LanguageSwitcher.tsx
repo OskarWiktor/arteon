@@ -53,7 +53,7 @@ function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLi
     });
   }
 
-  return links;
+  return links.sort((a, b) => a.label.localeCompare(b.label));
 }
 
 export default function LanguageSwitcher() {

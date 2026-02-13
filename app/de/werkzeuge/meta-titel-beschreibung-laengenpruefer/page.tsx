@@ -32,7 +32,7 @@ import {
 } from 'react-icons/ri';
 
 export const metadata: Metadata = {
-  title: 'Kostenloser Meta-Titel- & Beschreibungs-Checker online',
+  title: 'Kostenloser Meta-Tag-Checker online',
   description:
     'Kostenloser Online-Checker für Meta-Titel und Meta-Beschreibung. Prüfen Sie Zeichenanzahl, Pixelbreite und Google-Vorschau. Vermeiden Sie abgeschnittene Titel und Beschreibungen in den Suchergebnissen.',
   alternates: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Kostenloser Meta-Titel- & Beschreibungs-Checker online',
+    title: 'Kostenloser Meta-Tag-Checker online',
     description: 'Prüfen Sie Zeichenanzahl, Pixelbreite und Google-Vorschau. Vermeiden Sie abgeschnittene Titel und Beschreibungen in den Suchergebnissen.',
     url: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
     type: 'website',
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Kostenloser Meta-Titel- und Beschreibungs-Längenprüfer online',
+  name: 'Meta-Tag-Checker online',
   alternateName: [
-    'Meta-Titel- und Beschreibungs-Checker mit Google-Vorschau',
+    'Meta-Titel- und Beschreibungschecker mit Google-Vorschau',
     'Google-Snippet-Vorschau online',
     'SEO-Titellänge in Pixeln prüfen',
     'Meta-Tag-Längenprüfer online',
@@ -108,7 +108,7 @@ const howToSchema = {
     {
       '@type': 'HowToStep',
       name: 'Meta-Beschreibung eingeben',
-      text: 'Fügen Sie die Seitenbeschreibung im Meta-Beschreibungs-Feld hinzu. Sie sehen Längenkennzahlen und eine Bewertung, ob die Beschreibung im empfohlenen Bereich liegt.',
+      text: 'Fügen Sie die Seitenbeschreibung im Beschreibungsfeld hinzu. Sie sehen Längenkennzahlen und eine Bewertung, ob die Beschreibung im empfohlenen Bereich liegt.',
     },
     {
       '@type': 'HowToStep',
@@ -160,7 +160,7 @@ export default function MetaTitleDescriptionPage() {
       <Script id="ld-json-meta-title-howto-de" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <HeroBanner
-        title="Meta-Titel- und Beschreibungs-Checker"
+        title="Meta-Tag-Checker"
         description="Prüfen Sie Zeichenanzahl und Pixelbreite und sehen Sie in der Vorschau, wie Ihre Seite in den Google-Suchergebnissen erscheint. So vermeiden Sie abgeschnittene Titel und Beschreibungen."
         overlay="black"
         backgroundImage="/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp"
@@ -168,7 +168,7 @@ export default function MetaTitleDescriptionPage() {
 
       <Breadcrumbs
         second={{ href: '/de/werkzeuge', label: 'Werkzeuge' }}
-        third={{ href: '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer', label: 'Meta-Titel- & Beschreibungs-Checker' }}
+        third={{ href: '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer', label: 'Meta-Tag-Checker' }}
         includeJsonLd
         locale="de"
       />

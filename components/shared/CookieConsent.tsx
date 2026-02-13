@@ -17,6 +17,7 @@ const ui = {
     description: 'Używamy technologii niezbędnych do działania serwisu, <strong>analityki</strong> do ulepszania strony oraz <strong>reklam</strong>. Włączymy je wyłącznie po Twojej zgodzie.',
     setPreferences: 'Ustaw preferencje',
     privacyPolicy: 'Polityka prywatności',
+    privacyPolicyHref: '/polityka-prywatnosci',
     reject: 'Odrzuć wszystkie',
     settings: 'Ustawienia',
     accept: 'Akceptuj wszystkie',
@@ -40,6 +41,7 @@ const ui = {
     description: 'We use technologies essential for the site to work, <strong>analytics</strong> to improve the site, and <strong>ads</strong>. We will only enable them with your consent.',
     setPreferences: 'Set preferences',
     privacyPolicy: 'Privacy Policy',
+    privacyPolicyHref: '/en/privacy-policy',
     reject: 'Reject all',
     settings: 'Settings',
     accept: 'Accept all',
@@ -58,13 +60,87 @@ const ui = {
     changeDecision: 'You can change your decision at any time',
     save: 'Save',
   },
+  de: {
+    title: 'Cookies und Datenschutz',
+    description: 'Wir verwenden Technologien, die für den Betrieb der Website erforderlich sind, <strong>Analysen</strong> zur Verbesserung der Website und <strong>Werbung</strong>. Wir aktivieren sie nur mit Ihrer Zustimmung.',
+    setPreferences: 'Einstellungen anpassen',
+    privacyPolicy: 'Datenschutzrichtlinie',
+    privacyPolicyHref: '/de/datenschutzrichtlinie',
+    reject: 'Alle ablehnen',
+    settings: 'Einstellungen',
+    accept: 'Alle akzeptieren',
+    panelTitle: 'Datenschutzeinstellungen',
+    panelDescription: 'Einstellungen zur Datenverarbeitung.',
+    categoriesLegend: 'Kategorien',
+    essentialTitle: 'Erforderlich',
+    essentialDescription: 'Ohne diese funktioniert die Website nicht. Sie sammeln keine Marketingdaten.',
+    essentialStatus: 'Immer aktiv',
+    analyticsTitle: 'Analyse (GA4)',
+    analyticsDescription: 'Besuchsstatistiken. Aktiviert Google Analytics 4 mit Ihrer Zustimmung.',
+    analyticsLabel: 'GA4-Analyse aktivieren',
+    adsTitle: 'Werbung (Google AdSense)',
+    adsDescription: 'Personalisierte Werbung basierend auf Ihren Interessen.',
+    adsLabel: 'Personalisierte Werbung aktivieren',
+    changeDecision: 'Sie können Ihre Entscheidung jederzeit ändern',
+    save: 'Speichern',
+  },
+  es: {
+    title: 'Cookies y privacidad',
+    description: 'Utilizamos tecnologías esenciales para el funcionamiento del sitio, <strong>análisis</strong> para mejorar la web y <strong>publicidad</strong>. Solo las activaremos con su consentimiento.',
+    setPreferences: 'Configurar preferencias',
+    privacyPolicy: 'Política de privacidad',
+    privacyPolicyHref: '/es/politica-de-privacidad',
+    reject: 'Rechazar todo',
+    settings: 'Configuración',
+    accept: 'Aceptar todo',
+    panelTitle: 'Preferencias de privacidad',
+    panelDescription: 'Configuración de consentimiento de procesamiento de datos.',
+    categoriesLegend: 'Categorías',
+    essentialTitle: 'Esenciales',
+    essentialDescription: 'Sin ellas el sitio no funciona. No recopilan datos de marketing.',
+    essentialStatus: 'Siempre activas',
+    analyticsTitle: 'Análisis (GA4)',
+    analyticsDescription: 'Estadísticas de visitas. Activa Google Analytics 4 con su consentimiento.',
+    analyticsLabel: 'Activar análisis GA4',
+    adsTitle: 'Publicidad (Google AdSense)',
+    adsDescription: 'Publicidad personalizada según sus intereses.',
+    adsLabel: 'Activar publicidad personalizada',
+    changeDecision: 'Puede cambiar su decisión en cualquier momento',
+    save: 'Guardar',
+  },
+  fr: {
+    title: 'Cookies et confidentialité',
+    description: "Nous utilisons des technologies essentielles au fonctionnement du site, des <strong>analyses</strong> pour améliorer le site et de la <strong>publicité</strong>. Nous ne les activerons qu'avec votre consentement.",
+    setPreferences: 'Définir les préférences',
+    privacyPolicy: 'Politique de confidentialité',
+    privacyPolicyHref: '/fr/politique-de-confidentialite',
+    reject: 'Tout refuser',
+    settings: 'Paramètres',
+    accept: 'Tout accepter',
+    panelTitle: 'Préférences de confidentialité',
+    panelDescription: 'Paramètres de consentement au traitement des données.',
+    categoriesLegend: 'Catégories',
+    essentialTitle: 'Essentiels',
+    essentialDescription: 'Le site ne fonctionne pas sans eux. Ils ne collectent pas de données marketing.',
+    essentialStatus: 'Toujours actifs',
+    analyticsTitle: 'Analyse (GA4)',
+    analyticsDescription: 'Statistiques de visites. Active Google Analytics 4 avec votre consentement.',
+    analyticsLabel: 'Activer l\'analyse GA4',
+    adsTitle: 'Publicité (Google AdSense)',
+    adsDescription: 'Publicité personnalisée selon vos centres d\'intérêt.',
+    adsLabel: 'Activer la publicité personnalisée',
+    changeDecision: 'Vous pouvez modifier votre choix à tout moment',
+    save: 'Enregistrer',
+  },
 } as const;
 
 function updateGtag(analytics: boolean, ads: boolean) {
   updateGtagConsent({ analytics, ads });
 }
 
-export default function CookieConsent({ locale = 'pl' }: { locale?: 'pl' | 'en' }) {
+type ConsentLocale = keyof typeof ui;
+
+export default function CookieConsent({ locale = 'pl' }: { locale?: string }) {
   const [visible, setVisible] = useState(false);
   const [panel, setPanel] = useState(false);
   const [analyticsChoice, setAnalyticsChoice] = useState(false);
@@ -134,7 +210,8 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: 'pl' | 'en' 
   }
 
   if (!visible) return null;
-  const t = ui[locale];
+  const resolvedLocale: ConsentLocale = locale in ui ? (locale as ConsentLocale) : 'en';
+  const t = ui[resolvedLocale];
   const titleId = panel ? 'cookie-panel-title' : 'cookie-title';
   const descId = panel ? 'cookie-panel-desc' : 'cookie-desc';
 
@@ -162,7 +239,7 @@ export default function CookieConsent({ locale = 'pl' }: { locale?: 'pl' | 'en' 
                     {t.setPreferences}
                   </button>{' '}
                   •{' '}
-                  <a className="text-dark underline underline-offset-2" href="/polityka-prywatnosci" rel="noopener">
+                  <a className="text-dark underline underline-offset-2" href={t.privacyPolicyHref} rel="noopener">
                     {t.privacyPolicy}
                   </a>
                 </span>

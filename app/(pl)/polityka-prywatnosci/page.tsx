@@ -8,7 +8,16 @@ import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 export const metadata = {
   title: 'Polityka prywatności - Arteon',
   description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
-  alternates: { canonical: toAbsoluteUrl('/polityka-prywatnosci') },
+  alternates: {
+    canonical: toAbsoluteUrl('/polityka-prywatnosci'),
+    languages: {
+      pl: toAbsoluteUrl('/polityka-prywatnosci'),
+      en: toAbsoluteUrl('/en/privacy-policy'),
+      de: toAbsoluteUrl('/de/datenschutzrichtlinie'),
+      es: toAbsoluteUrl('/es/politica-de-privacidad'),
+      fr: toAbsoluteUrl('/fr/politique-de-confidentialite'),
+    },
+  },
   openGraph: {
     title: 'Polityka prywatności - Arteon',
     description: 'Polityka prywatności strony Arteon - dowiedz się w jaki sposób chronimy Twoje dane osobowe i z jakich narzędzi analitycznych korzystamy',
@@ -25,7 +34,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Polityka prywatności</h1>
           <p className="mt-2 text-sm opacity-70">
-            Wersja: <strong>12.02.2026</strong>
+            Wersja: <strong>13.02.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -46,7 +55,8 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>dane podane w formularzu kontaktowym (imię, nazwisko, e-mail, treść wiadomości),</li>
               <li>dane techniczne zbierane automatycznie (adres IP, informacje o urządzeniu, pliki cookie),</li>
-              <li>dane analityczne z Google Analytics 4, Ahrefs Web Analytics i Vercel Analytics,</li>
+              <li>dane analityczne z Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics i Vercel Speed Insights,</li>
+              <li>dane analityczne z Metricool (statystyki odwiedzin, źródła ruchu),</li>
               <li>dane zbierane przez Google AdSense w celu wyświetlania reklam (identyfikatory reklamowe, pliki cookie reklamowe, dane o interakcjach z reklamami),</li>
               <li>logi serwera i zdarzeń bezpieczeństwa (np. znaczniki czasu, adres IP, nagłówki żądania).</li>
             </ul>
@@ -84,7 +94,7 @@ export default function PrivacyPolicyPage() {
             <p>Strona wykorzystuje pliki cookie w celu:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>zapewnienia prawidłowego działania serwisu,</li>
-              <li>analizy ruchu (Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics),</li>
+              <li>analizy ruchu (Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics, Metricool),</li>
               <li>celów marketingowych,</li>
               <li>wyświetlania reklam dopasowanych do zainteresowań użytkowników (Google AdSense / DoubleClick).</li>
             </ul>
@@ -103,6 +113,10 @@ export default function PrivacyPolicyPage() {
               </a>
               .
             </p>
+            <p>
+              Strona wykorzystuje mechanizm Google Consent Mode v2. Oznacza to, że skrypty analityczne i reklamowe Google nie zbierają danych do czasu wyrażenia zgody przez użytkownika
+              w bannerze cookie.
+            </p>
             <p>Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki. Ograniczenie plików cookie może wpłynąć na niektóre funkcje serwisu.</p>
           </SectionInfo>
 
@@ -112,7 +126,7 @@ export default function PrivacyPolicyPage() {
             <p>Dane mogą być przekazywane podmiotom wspierającym nas w świadczeniu usług, takim jak:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>dostawcy hostingu/aplikacji (np. Vercel),</li>
-              <li>dostawcy narzędzi analitycznych (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc.),</li>
+              <li>dostawcy narzędzi analitycznych (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
               <li>dostawcy usług reklamowych (Google Ireland Ltd. - Google AdSense),</li>
               <li>biuro rachunkowe, podmioty obsługujące płatności lub prawo - jeśli zajdzie taka potrzeba.</li>
             </ul>

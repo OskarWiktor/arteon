@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Farbkontrast- und Lesbarkeits-Checker online',
+  name: 'Farbkontrast-Checker online',
   alternateName: [
     'WCAG-Kontrastprüfer',
     'Online-Lesbarkeitstest für Farben',
@@ -75,7 +75,7 @@ const schema = {
   description:
     'Prüfen Sie, ob Text- und Hintergrundfarben für alle Nutzer lesbar sind. Das Tool berechnet das Kontrastverhältnis gemäß WCAG 2.1 und zeigt, ob die Barrierefreiheitsanforderungen erfüllt sind.',
   featureList: [
-    'Kontrastverhältnis-Berechnung (1:1 bis 21:1)',
+    'Kontrastberechnung (1:1 bis 21:1)',
     'WCAG 2.1 AA- und AAA-Bewertung',
     'Prüfung für normalen Text, großen Text und Symbole',
     'Automatische Farbvorschläge (Auto-Match)',
@@ -161,7 +161,7 @@ export default function ColorContrastCheckerPage() {
       <Script id="ld-json-contrast-howto-de" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <HeroBanner
-        title="Farbkontrast- und Lesbarkeits-Checker"
+        title="Farbkontrast-Checker"
         description="Geben Sie eine Text- und Hintergrundfarbe ein, und das Tool zeigt, ob der Kontrast ausreichend ist. Die Berechnung basiert auf dem internationalen Barrierefreiheitsstandard WCAG 2.1."
         overlay="black"
         backgroundImage="/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
@@ -270,7 +270,7 @@ export default function ColorContrastCheckerPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Was bedeuten die Ergebnisse des Lesbarkeits-Tests?">
+        <SectionInfo title="Was bedeuten die Ergebnisse des Lesbarkeitstests?">
           <p className="text-mid mb-4">
             Das Tool zeigt das Kontrastverhältnis auf einer Skala von 1:1 (kein Kontrast) bis 21:1 (maximaler Kontrast – Schwarz auf Weiß). Das Ergebnis wird mit den im WCAG-Standard definierten Schwellenwerten verglichen:
           </p>
