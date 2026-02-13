@@ -585,6 +585,32 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                     })}
                   </div>
 
+                  {localeConfig.aboutHref && (
+                    <Link
+                      href={localeConfig.aboutHref}
+                      onClick={() => setIsOpen(false)}
+                      aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
+                      className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                        pathname.startsWith(localeConfig.aboutHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                      }`}
+                    >
+                      {navUi.aboutLabel}
+                    </Link>
+                  )}
+
+                  {localeConfig.contactHref && (
+                    <Link
+                      href={localeConfig.contactHref}
+                      onClick={() => setIsOpen(false)}
+                      aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
+                      className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                        pathname.startsWith(localeConfig.contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                      }`}
+                    >
+                      {navUi.contactLabel}
+                    </Link>
+                  )}
+
                   <div className="my-3 h-px w-full bg-neutral-200" />
                 </>
               )}

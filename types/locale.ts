@@ -7,6 +7,8 @@ export type LocaleConfig = {
   name: string;
   toolsBasePath: string;
   toolsIndexHref: string;
+  aboutHref?: string;
+  contactHref?: string;
 };
 
 export type LegalLink = {
@@ -24,6 +26,8 @@ export type NavigationUi = {
   openToolsList: string;
   toolsLabel: string;
   mobileMenu: string;
+  aboutLabel?: string;
+  contactLabel?: string;
 };
 
 export type FooterUi = {

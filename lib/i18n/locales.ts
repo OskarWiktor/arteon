@@ -17,6 +17,8 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     name: 'English',
     toolsBasePath: '/en/tools',
     toolsIndexHref: '/en/tools',
+    aboutHref: '/en/about',
+    contactHref: '/en/contact',
   },
   de: {
     lang: 'de',
@@ -25,6 +27,8 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     name: 'Deutsch',
     toolsBasePath: '/de/werkzeuge',
     toolsIndexHref: '/de/werkzeuge',
+    aboutHref: '/de/ueber-uns',
+    contactHref: '/de/kontakt',
   },
   es: {
     lang: 'es',
@@ -33,6 +37,8 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     name: 'Español',
     toolsBasePath: '/es/herramientas',
     toolsIndexHref: '/es/herramientas',
+    aboutHref: '/es/sobre-nosotros',
+    contactHref: '/es/contacto',
   },
   fr: {
     lang: 'fr',
@@ -41,6 +47,8 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     name: 'Français',
     toolsBasePath: '/fr/outils',
     toolsIndexHref: '/fr/outils',
+    aboutHref: '/fr/a-propos',
+    contactHref: '/fr/contact',
   },
 };
 
@@ -101,6 +109,8 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = {
     openToolsList: 'Open tools list',
     toolsLabel: 'Tools',
     mobileMenu: 'Mobile menu',
+    aboutLabel: 'About',
+    contactLabel: 'Contact',
   },
   de: {
     mainNavigation: 'Hauptnavigation',
@@ -111,6 +121,8 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = {
     openToolsList: 'Werkzeugliste öffnen',
     toolsLabel: 'Werkzeuge',
     mobileMenu: 'Mobiles Menü',
+    aboutLabel: 'Über uns',
+    contactLabel: 'Kontakt',
   },
   es: {
     mainNavigation: 'Navegación principal',
@@ -121,6 +133,8 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = {
     openToolsList: 'Abrir lista de herramientas',
     toolsLabel: 'Herramientas',
     mobileMenu: 'Menú móvil',
+    aboutLabel: 'Sobre nosotros',
+    contactLabel: 'Contacto',
   },
   fr: {
     mainNavigation: 'Navigation principale',
@@ -131,6 +145,8 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = {
     openToolsList: 'Ouvrir la liste des outils',
     toolsLabel: 'Outils',
     mobileMenu: 'Menu mobile',
+    aboutLabel: 'À propos',
+    contactLabel: 'Contact',
   },
 };
 

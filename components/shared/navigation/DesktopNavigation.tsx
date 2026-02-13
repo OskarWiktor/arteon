@@ -193,6 +193,22 @@ export default function DesktopNavigation() {
             </li>
           )}
 
+          {!isPl && localeConfig.aboutHref && (
+            <li className="relative flex items-center">
+              <AppLink href={localeConfig.aboutHref} variant="navigation" aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined} className={pathname.startsWith(localeConfig.aboutHref) ? 'text-dark font-semibold' : ''}>
+                {t.aboutLabel}
+              </AppLink>
+            </li>
+          )}
+
+          {!isPl && localeConfig.contactHref && (
+            <li className="relative flex items-center">
+              <AppLink href={localeConfig.contactHref} variant="navigation" aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined} className={pathname.startsWith(localeConfig.contactHref) ? 'text-dark font-semibold' : ''}>
+                {t.contactLabel}
+              </AppLink>
+            </li>
+          )}
+
           {/* PL nav items (Tools rendered in correct order within the loop) */}
           {navigationItems.map(({ href, label, exact, key: itemKey }) => {
             const isActivePage = exact ? pathname === href : pathname.startsWith(href);
