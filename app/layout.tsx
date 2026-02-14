@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
+import { Instrument_Sans } from 'next/font/google';
 import Script from 'next/script';
 import { Suspense } from 'react';
 
@@ -13,6 +14,13 @@ import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
 import './globals.css';
+
+const instrumentSans = Instrument_Sans({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-sans',
+});
 
 // site scaffold only - no production behavior changes while flag disabled
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
@@ -93,24 +101,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const lang = pathname.startsWith('/en') ? 'en' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/pt') ? 'pt' : 'pl';
 
   return (
-    <html lang={lang}>
+    <html lang={lang} className={instrumentSans.variable}>
       <head>
-        {/* Google Consent Mode v2 - MUSI być PRZED wszystkimi skryptami Google (GA, AdSense) */}
-        <Script id="google-consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);};
-            window.gtag = gtag;
-            gtag('consent','default',{
-              analytics_storage:'denied',
-              ad_storage:'denied',
-              ad_user_data:'denied',
-              ad_personalization:'denied',
-              wait_for_update: 500
-            });
-            ${GA_MEASUREMENT_ID ? `window.__GA_ID = '${GA_MEASUREMENT_ID}';` : ''}
-          `}
-        </Script>
+        {/* Google Consent Mode v2 - inline script, nie blokuje hydracji */}
+        <script
+          id="google-consent-default"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});${GA_MEASUREMENT_ID ? `window.__GA_ID='${GA_MEASUREMENT_ID}';` : ''}`,
+          }}
+        />
 
         {METRICOOL_HASH && (
           <Script id="metricool-tracker" strategy="afterInteractive">
@@ -135,8 +134,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
-        {/* AdSense - używamy natywnego script zamiast Next.js Script, bo AdSense nie obsługuje data-nscript */}
-        {ADSENSE_CLIENT && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />}
+        {ADSENSE_CLIENT && (
+          <Script src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} strategy="lazyOnload" crossOrigin="anonymous" />
+        )}
       </head>
 
       <body className="font-sans antialiased">

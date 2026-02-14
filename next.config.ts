@@ -70,18 +70,31 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   async headers() {
+    const staticCacheHeaders = [
+      {
+        source: '/assets/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+      {
+        source: '/fonts/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+    ];
+
     return IS_PROD
       ? [
           {
             source: '/:path*',
             headers: securityHeaders,
           },
+          ...staticCacheHeaders,
         ]
       : [
           {
             source: '/:path*',
             headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
           },
+          ...staticCacheHeaders,
         ];
   },
   webpack(config, { dev }) {

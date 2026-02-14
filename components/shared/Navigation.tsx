@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { RiMenuLine, RiCloseLine, RiSearchLine, RiMailSettingsLine } from 'react-icons/ri';
 import Image from 'next/image';
 
@@ -10,12 +11,13 @@ import Wrapper from '@/components/ui/Wrapper';
 import IconButton from '@/components/ui/buttons/IconButton';
 import Link from 'next/link';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
-import SearchDialog from '@/components/ui/SearchDialog';
 import SectionInfoBanner from '../ui/sections/SectionInfoBanner';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { NAVIGATION_UI, LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { getToolHref } from '@/lib/i18n/tool-registry';
+
+const SearchDialog = dynamic(() => import('@/components/ui/SearchDialog'), { ssr: false });
 
 export default function Navigation() {
   const locale = useLocale();
@@ -88,7 +90,7 @@ export default function Navigation() {
       <Wrapper>
         <nav className="flex h-14 items-center justify-between md:h-16 lg:h-18" aria-label={t.mainNavigation}>
           <Link href={isPl ? '/' : localeConfig.toolsIndexHref}>
-            <Image src="/assets/arteon-logo.webp" width={140} height={50} alt={t.logoAlt} priority />
+            <Image src="/assets/arteon-logo.webp" width={140} height={50} alt={t.logoAlt} priority sizes="140px" />
           </Link>
 
           <DesktopNavigation />
