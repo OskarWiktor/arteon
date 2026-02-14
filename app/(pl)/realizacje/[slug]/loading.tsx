@@ -1,5 +1,5 @@
-import GenericPageSkeleton from '@/components/ui/skeletons/GenericPageSkeleton';
+import ProjectDetailSkeleton from '@/components/ui/skeletons/ProjectDetailSkeleton';
 
 export default function Loading() {
-  return <GenericPageSkeleton />;
+  return <ProjectDetailSkeleton />;
 }

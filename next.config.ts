@@ -66,6 +66,9 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
   async headers() {
     return IS_PROD
       ? [
