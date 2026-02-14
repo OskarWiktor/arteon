@@ -38,7 +38,10 @@ export default function AboutPageContent({ locale }: { locale: Locale }) {
           grid="two"
           items={data.whyFree.items.map((item, i) => ({
             title: item.title,
-            icon: (() => { const Icon = WHY_FREE_ICONS[i]; return <Icon className="text-primary h-6 w-6" />; })(),
+            icon: (() => {
+              const Icon = WHY_FREE_ICONS[i];
+              return <Icon className="text-primary h-6 w-6" />;
+            })(),
             description: <p>{item.description}</p>,
           }))}
         />
@@ -50,7 +53,10 @@ export default function AboutPageContent({ locale }: { locale: Locale }) {
           grid="three"
           items={data.ourTools.items.map((item, i) => ({
             title: item.title,
-            icon: (() => { const Icon = OUR_TOOLS_ICONS[i]; return <Icon className="text-primary h-6 w-6" />; })(),
+            icon: (() => {
+              const Icon = OUR_TOOLS_ICONS[i];
+              return <Icon className="text-primary h-6 w-6" />;
+            })(),
             description: <p>{item.description}</p>,
           }))}
         />

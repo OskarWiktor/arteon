@@ -300,37 +300,52 @@ export default function MetaTitlePage() {
           demo={
             <div className="space-y-3">
               <div className="rounded-lg border border-neutral-200 bg-white p-3">
-                <p className="text-dark text-sm! font-medium">{"iiiiiiiiiiiiiiii (16 caract\u00e8res)"}</p>
+                <p className="text-dark text-sm! font-medium">{'iiiiiiiiiiiiiiii (16 caract\u00e8res)'}</p>
                 <div className="bg-success-icon mt-1 h-3 w-1/4 rounded-full" />
-                <p className="text-light mt-1 text-xs!">{"~64\u00a0px de largeur"}</p>
+                <p className="text-light mt-1 text-xs!">{'~64\u00a0px de largeur'}</p>
               </div>
               <div className="rounded-lg border border-neutral-200 bg-white p-3">
-                <p className="text-dark text-sm! font-medium">{"WWWWWWWWWWWWWWWW (16 caract\u00e8res)"}</p>
+                <p className="text-dark text-sm! font-medium">{'WWWWWWWWWWWWWWWW (16 caract\u00e8res)'}</p>
                 <div className="bg-error-icon mt-1 h-3 w-3/4 rounded-full" />
-                <p className="text-light mt-1 text-xs!">{"~256\u00a0px de largeur"}</p>
+                <p className="text-light mt-1 text-xs!">{'~256\u00a0px de largeur'}</p>
               </div>
             </div>
           }
         >
           <p className="text-mid">
-            {"Les diff\u00e9rentes lettres ont des largeurs diff\u00e9rentes. Comparez \u00ab\u00a0iiii\u00a0\u00bb et \u00ab\u00a0WWWW\u00a0\u00bb : les deux ont 4 caract\u00e8res, mais la largeur visuelle est compl\u00e8tement diff\u00e9rente. Google mesure la largeur du texte en pixels, pas en caract\u00e8res."}
+            {
+              'Les diff\u00e9rentes lettres ont des largeurs diff\u00e9rentes. Comparez \u00ab\u00a0iiii\u00a0\u00bb et \u00ab\u00a0WWWW\u00a0\u00bb : les deux ont 4 caract\u00e8res, mais la largeur visuelle est compl\u00e8tement diff\u00e9rente. Google mesure la largeur du texte en pixels, pas en caract\u00e8res.'
+            }
           </p>
           <p className="text-mid mt-3">
-            {"C'est pourquoi un titre avec de nombreuses lettres \u00e9troites (i, l, t, f) peut \u00eatre plus long qu'un titre avec des lettres larges (W, M, O), malgr\u00e9 le m\u00eame nombre de caract\u00e8res. L'outil affiche les deux valeurs : le nombre de caract\u00e8res (plus facile \u00e0 comprendre) et la largeur en pixels (plus pr\u00e9cis pour Google)."}
+            {
+              "C'est pourquoi un titre avec de nombreuses lettres \u00e9troites (i, l, t, f) peut \u00eatre plus long qu'un titre avec des lettres larges (W, M, O), malgr\u00e9 le m\u00eame nombre de caract\u00e8res. L'outil affiche les deux valeurs : le nombre de caract\u00e8res (plus facile \u00e0 comprendre) et la largeur en pixels (plus pr\u00e9cis pour Google)."
+            }
           </p>
         </SectionDemo>
 
         <Gap variant="line" />
 
-        <SectionInfo title={"Aper\u00e7u du snippet : que montre-t-il ?"}>
+        <SectionInfo title={'Aper\u00e7u du snippet : que montre-t-il ?'}>
           <p className="text-mid">
-            {"L'aper\u00e7u (snippet preview) simule l'apparence du titre et de la description de la page dans les r\u00e9sultats de recherche Google. C'est une visualisation indicative : l'apparence r\u00e9elle peut varier l\u00e9g\u00e8rement selon l'appareil et le navigateur."}
+            {
+              "L'aper\u00e7u (snippet preview) simule l'apparence du titre et de la description de la page dans les r\u00e9sultats de recherche Google. C'est une visualisation indicative : l'apparence r\u00e9elle peut varier l\u00e9g\u00e8rement selon l'appareil et le navigateur."
+            }
           </p>
           <h3 className="h5 mt-6 mb-2">{"\u00c9l\u00e9ments de l'aper\u00e7u"}</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
-            <li><strong>URL</strong>{" \u2013 l'adresse de la page affich\u00e9e au-dessus du titre. Vous pouvez la saisir dans un champ optionnel pour un r\u00e9sultat plus r\u00e9aliste."}</li>
-            <li><strong>Titre</strong>{" \u2013 l'en-t\u00eate bleu. S'il est trop long, l'outil le tronque automatiquement et ajoute des points de suspension."}</li>
-            <li><strong>Description</strong>{" \u2013 le texte gris sous le titre. Il est \u00e9galement tronqu\u00e9 s'il d\u00e9passe la limite."}</li>
+            <li>
+              <strong>URL</strong>
+              {" \u2013 l'adresse de la page affich\u00e9e au-dessus du titre. Vous pouvez la saisir dans un champ optionnel pour un r\u00e9sultat plus r\u00e9aliste."}
+            </li>
+            <li>
+              <strong>Titre</strong>
+              {" \u2013 l'en-t\u00eate bleu. S'il est trop long, l'outil le tronque automatiquement et ajoute des points de suspension."}
+            </li>
+            <li>
+              <strong>Description</strong>
+              {" \u2013 le texte gris sous le titre. Il est \u00e9galement tronqu\u00e9 s'il d\u00e9passe la limite."}
+            </li>
           </ul>
         </SectionInfo>
 

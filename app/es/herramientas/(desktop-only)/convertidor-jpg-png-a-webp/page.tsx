@@ -225,17 +225,20 @@ export default function JpgPngToWebpPage() {
           <p className="text-mid">La herramienta ofrece dos formas de añadir archivos:</p>
           <ul className="text-mid mt-3 ml-6 list-disc space-y-2">
             <li>
-              <strong>Arrastrar y soltar</strong> – tome los archivos desde una carpeta en su ordenador y suéltelos en el área con el texto &quot;Arrastre y suelte imágenes aquí&quot;. Puede arrastrar varios archivos a la vez.
+              <strong>Arrastrar y soltar</strong> – tome los archivos desde una carpeta en su ordenador y suéltelos en el área con el texto &quot;Arrastre y suelte imágenes aquí&quot;. Puede arrastrar
+              varios archivos a la vez.
             </li>
             <li>
-              <strong>Selección desde el dispositivo</strong> – al hacer clic en el área de añadir archivos se abrirá una ventana de selección. Mantener pulsado Ctrl (o Cmd en Mac) permite seleccionar varios archivos a la vez.
+              <strong>Selección desde el dispositivo</strong> – al hacer clic en el área de añadir archivos se abrirá una ventana de selección. Mantener pulsado Ctrl (o Cmd en Mac) permite seleccionar
+              varios archivos a la vez.
             </li>
           </ul>
           <p className="text-mid mt-3">
             La herramienta solo acepta archivos JPG y PNG. Si añade accidentalmente un archivo en otro formato (p. ej., GIF o BMP), se omitirá automáticamente y verá un mensaje informativo.
           </p>
           <p className="text-mid mt-3">
-            <strong>Privacidad:</strong> Todos los archivos se procesan localmente en el navegador. No se envían a ningún sitio: no llegan a ningún servidor. Al cerrar la pestaña o el navegador, los archivos se eliminan de la memoria.
+            <strong>Privacidad:</strong> Todos los archivos se procesan localmente en el navegador. No se envían a ningún sitio: no llegan a ningún servidor. Al cerrar la pestaña o el navegador, los
+            archivos se eliminan de la memoria.
           </p>
         </SectionInfo>
 
@@ -402,7 +405,8 @@ export default function JpgPngToWebpPage() {
             </li>
           </ul>
           <p className="text-mid mt-3">
-            <strong>Copiar resumen:</strong> El botón copia el informe al portapapeles en formato de texto. Puede pegarlo en notas, un correo electrónico o un documento: útil para documentar la optimización de imágenes.
+            <strong>Copiar resumen:</strong> El botón copia el informe al portapapeles en formato de texto. Puede pegarlo en notas, un correo electrónico o un documento: útil para documentar la
+            optimización de imágenes.
           </p>
         </SectionInfo>
 
@@ -473,7 +477,8 @@ export default function JpgPngToWebpPage() {
             {
               icon: <RiFileImageLine className="h-6 w-6" />,
               title: 'Archivos muy grandes',
-              description: 'La conversión de imágenes superiores a 4000×4000 píxeles puede ser más lenta y exigir más del navegador. Si procesa muchos archivos grandes, considere dividirlos en lotes.',
+              description:
+                'La conversión de imágenes superiores a 4000×4000 píxeles puede ser más lenta y exigir más del navegador. Si procesa muchos archivos grandes, considere dividirlos en lotes.',
             },
             {
               icon: <RiFlashlightLine className="h-6 w-6" />,
@@ -530,8 +535,7 @@ export default function JpgPngToWebpPage() {
             ...faqItems,
             {
               question: '¿Puedo convertir archivos que no sean JPG y PNG?',
-              answer:
-                'La herramienta está optimizada para formatos JPG y PNG. Otros formatos (p. ej., GIF, BMP, TIFF) se omiten automáticamente al añadirlos.',
+              answer: 'La herramienta está optimizada para formatos JPG y PNG. Otros formatos (p. ej., GIF, BMP, TIFF) se omiten automáticamente al añadirlos.',
               answerSchemaText: 'Solo JPG y PNG. Otros formatos se omiten automáticamente.',
             },
             {

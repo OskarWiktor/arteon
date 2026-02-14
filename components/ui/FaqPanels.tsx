@@ -1,8 +1,17 @@
 'use client';
 
 import { useEffect, useRef, useState, useId, useMemo, type ReactNode } from 'react';
-import { motion } from 'framer-motion';
-import { FiPlus, FiMinus } from 'react-icons/fi';
+const FiPlus = (p: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" width="1em" height="1em" {...p}>
+    <line x1="12" y1="5" x2="12" y2="19" />
+    <line x1="5" y1="12" x2="19" y2="12" />
+  </svg>
+);
+const FiMinus = (p: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" width="1em" height="1em" {...p}>
+    <line x1="5" y1="12" x2="19" y2="12" />
+  </svg>
+);
 import SectionHeader from './typography/SectionHeader';
 
 interface FaqPanelsItem {
@@ -136,20 +145,20 @@ export default function FaqPanels({ items, title = 'Najczęstsze pytania', subti
                 </span>
               </button>
 
-              <motion.div
+              <div
                 id={panelId}
                 role="region"
                 aria-labelledby={buttonId}
-                initial={false}
-                animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
-                style={{ overflow: 'hidden' }}
-                transition={{ duration: 0.25, ease: 'easeInOut' }}
                 aria-hidden={!isOpen}
+                className="grid transition-[grid-template-rows,opacity] duration-250 ease-in-out"
+                style={{ gridTemplateRows: isOpen ? '1fr' : '0fr', opacity: isOpen ? 1 : 0 }}
               >
-                <div className="border-primary-light border-t p-4">
-                  <div className="text-light leading-relaxed">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
+                <div className="overflow-hidden">
+                  <div className="border-primary-light border-t p-4">
+                    <div className="text-light leading-relaxed">{typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}</div>
+                  </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           );
         })}

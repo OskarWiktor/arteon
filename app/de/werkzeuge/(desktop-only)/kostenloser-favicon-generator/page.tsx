@@ -312,7 +312,8 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiDownloadLine className="h-6 w-6" />,
               title: 'Einzelne Dateien herunterladen',
-              description: 'Jedes generierte Icon hat einen eigenen Download-Button – Sie können eine einzelne Datei herunterladen, ohne das gesamte Set. Nützlich bei einer Aktualisierung einzelner Größen.',
+              description:
+                'Jedes generierte Icon hat einen eigenen Download-Button – Sie können eine einzelne Datei herunterladen, ohne das gesamte Set. Nützlich bei einer Aktualisierung einzelner Größen.',
             },
           ]}
         />
@@ -320,15 +321,23 @@ export default function FaviconGeneratorPage() {
         <Gap variant="line" />
 
         <SectionInfo title="Welches Quellbild eignet sich am besten?">
-          <p className="text-mid mb-4">
-            Ein Favicon ist eine sehr kleine Grafik – teilweise nur 16×16 Pixel. Daher eignet sich nicht jedes Bild als Quelle:
-          </p>
+          <p className="text-mid mb-4">Ein Favicon ist eine sehr kleine Grafik – teilweise nur 16×16 Pixel. Daher eignet sich nicht jedes Bild als Quelle:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
-            <li><strong>Einfache Formen und lesbare Symbole</strong> – schlichte Logos, einzelne Buchstaben oder Symbole funktionieren am besten. Vermeiden Sie komplexe Grafiken mit vielen Details.</li>
-            <li><strong>Quadratisches Format</strong> – ein Favicon ist quadratisch. Bilder mit anderen Proportionen als 1:1 werden zugeschnitten oder verzerrt.</li>
-            <li><strong>Ausreichende Größe</strong> – wir empfehlen ein Quellbild von mindestens 512×512 Pixeln. Kleinere Bilder werden hochskaliert.</li>
-            <li><strong>SVG als ideale Quelle</strong> – SVG skaliert verlustfrei, sodass Icons in allen Größen scharf sind.</li>
-            <li><strong>Kontrastreiche Farben</strong> – ein Favicon muss auf verschiedenen Hintergründen sichtbar sein (helle Tabs, Dark Mode). Wählen Sie Farben, die die Lesbarkeit bewahren.</li>
+            <li>
+              <strong>Einfache Formen und lesbare Symbole</strong> – schlichte Logos, einzelne Buchstaben oder Symbole funktionieren am besten. Vermeiden Sie komplexe Grafiken mit vielen Details.
+            </li>
+            <li>
+              <strong>Quadratisches Format</strong> – ein Favicon ist quadratisch. Bilder mit anderen Proportionen als 1:1 werden zugeschnitten oder verzerrt.
+            </li>
+            <li>
+              <strong>Ausreichende Größe</strong> – wir empfehlen ein Quellbild von mindestens 512×512 Pixeln. Kleinere Bilder werden hochskaliert.
+            </li>
+            <li>
+              <strong>SVG als ideale Quelle</strong> – SVG skaliert verlustfrei, sodass Icons in allen Größen scharf sind.
+            </li>
+            <li>
+              <strong>Kontrastreiche Farben</strong> – ein Favicon muss auf verschiedenen Hintergründen sichtbar sein (helle Tabs, Dark Mode). Wählen Sie Farben, die die Lesbarkeit bewahren.
+            </li>
           </ul>
         </SectionInfo>
 

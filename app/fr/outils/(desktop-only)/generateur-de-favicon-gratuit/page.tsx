@@ -432,11 +432,11 @@ export default function FaviconGeneratorPage() {
         <SectionInfo title="Options de g&#xe9;n&#xe9;ration : que fait chacune ?">
           <div className="space-y-4">
             <div>
-              <h3 className="h5 mb-2">{"Fond (transparent ou couleur)"}</h3>
-              <p className="text-mid">{"Par d\u00e9faut, le g\u00e9n\u00e9rateur conserve la transparence. Vous pouvez aussi choisir une couleur de fond sp\u00e9cifique."}</p>
+              <h3 className="h5 mb-2">{'Fond (transparent ou couleur)'}</h3>
+              <p className="text-mid">{'Par d\u00e9faut, le g\u00e9n\u00e9rateur conserve la transparence. Vous pouvez aussi choisir une couleur de fond sp\u00e9cifique.'}</p>
             </div>
             <div>
-              <h3 className="h5 mb-2">{"G\u00e9n\u00e9rer le manifest (site.webmanifest)"}</h3>
+              <h3 className="h5 mb-2">{'G\u00e9n\u00e9rer le manifest (site.webmanifest)'}</h3>
               <p className="text-mid">{"Fichier JSON pour les applications web (PWA). Si vous ne cr\u00e9ez pas de PWA, cette option n'est pas n\u00e9cessaire."}</p>
             </div>
           </div>
@@ -451,7 +451,7 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiCodeLine className="h-6 w-6" />,
               title: 'Conforme Lighthouse',
-              description: "Toutes les tailles exig\u00e9es par Lighthouse et les navigateurs modernes \u2013 g\u00e9n\u00e9r\u00e9es en une seule \u00e9tape.",
+              description: 'Toutes les tailles exig\u00e9es par Lighthouse et les navigateurs modernes \u2013 g\u00e9n\u00e9r\u00e9es en une seule \u00e9tape.',
             },
             {
               icon: <RiDownloadLine className="h-6 w-6" />,
@@ -465,8 +465,8 @@ export default function FaviconGeneratorPage() {
             },
             {
               icon: <RiSmartphoneLine className="h-6 w-6" />,
-              title: "Pr\u00eat pour le site et les PWA",
-              description: "L\u2019outil g\u00e9n\u00e8re le fichier manifest.json pour les applications web. Vous trouverez ci-dessous les instructions d\u2019int\u00e9gration des ic\u00f4nes.",
+              title: 'Pr\u00eat pour le site et les PWA',
+              description: 'L\u2019outil g\u00e9n\u00e8re le fichier manifest.json pour les applications web. Vous trouverez ci-dessous les instructions d\u2019int\u00e9gration des ic\u00f4nes.',
             },
           ]}
         />
@@ -480,10 +480,10 @@ export default function FaviconGeneratorPage() {
           items={[
             ...faqItems,
             {
-              question: "Pourquoi le favicon ne change-t-il pas apr\u00e8s avoir import\u00e9 un nouveau fichier ?",
+              question: 'Pourquoi le favicon ne change-t-il pas apr\u00e8s avoir import\u00e9 un nouveau fichier ?',
               answer:
                 "Les navigateurs mettent agressivement en cache les favicons. Apr\u00e8s avoir import\u00e9 une nouvelle ic\u00f4ne, videz le cache du navigateur ou ajoutez un param\u00e8tre de version au chemin du fichier (par ex. /favicon.ico?v=2). Le changement peut ne devenir visible qu'apr\u00e8s quelques heures.",
-              answerSchemaText: "Les navigateurs mettent les favicons en cache. Videz le cache ou ajoutez un param\u00e8tre de version.",
+              answerSchemaText: 'Les navigateurs mettent les favicons en cache. Videz le cache ou ajoutez un param\u00e8tre de version.',
             },
           ]}
         />

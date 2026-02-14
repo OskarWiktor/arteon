@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated search index (built from source data via prebuild)
+/data/pl/search-blog.json
+/data/pl/search-projects.json

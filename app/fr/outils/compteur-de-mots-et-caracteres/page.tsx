@@ -360,42 +360,42 @@ export default function WordCountPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title={"Limites de caract\u00e8res sur les plateformes populaires"}>
-          <p className="text-mid mb-4">{"Le compteur de caract\u00e8res est utile pour cr\u00e9er du contenu sur des plateformes avec des restrictions de longueur\u00a0:"}</p>
+        <SectionInfo title={'Limites de caract\u00e8res sur les plateformes populaires'}>
+          <p className="text-mid mb-4">{'Le compteur de caract\u00e8res est utile pour cr\u00e9er du contenu sur des plateformes avec des restrictions de longueur\u00a0:'}</p>
           <div className="overflow-x-auto">
             <table className="text-mid w-full text-left">
               <thead>
                 <tr className="border-b border-neutral-200">
-                  <th className="py-2 pr-4 font-semibold">{"Plateforme / \u00c9l\u00e9ment"}</th>
-                  <th className="py-2 pr-4 font-semibold">{"Limite de caract\u00e8res"}</th>
+                  <th className="py-2 pr-4 font-semibold">{'Plateforme / \u00c9l\u00e9ment'}</th>
+                  <th className="py-2 pr-4 font-semibold">{'Limite de caract\u00e8res'}</th>
                   <th className="py-2 font-semibold">Remarques</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">{"Google \u2013 m\u00e9ta titre"}</td>
-                  <td className="py-2 pr-4 whitespace-nowrap">{"50\u201360 caract\u00e8res"}</td>
-                  <td className="text-primary-light0 py-2 text-sm">{"Les titres plus longs sont tronqu\u00e9s dans les r\u00e9sultats de recherche."}</td>
+                  <td className="py-2 pr-4">{'Google \u2013 m\u00e9ta titre'}</td>
+                  <td className="py-2 pr-4 whitespace-nowrap">{'50\u201360 caract\u00e8res'}</td>
+                  <td className="text-primary-light0 py-2 text-sm">{'Les titres plus longs sont tronqu\u00e9s dans les r\u00e9sultats de recherche.'}</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">{"Google \u2013 m\u00e9ta description"}</td>
-                  <td className="py-2 pr-4 whitespace-nowrap">{"150\u2013160 caract\u00e8res"}</td>
-                  <td className="text-primary-light0 py-2 text-sm">{"Description visible sous le lien dans les r\u00e9sultats de recherche."}</td>
+                  <td className="py-2 pr-4">{'Google \u2013 m\u00e9ta description'}</td>
+                  <td className="py-2 pr-4 whitespace-nowrap">{'150\u2013160 caract\u00e8res'}</td>
+                  <td className="text-primary-light0 py-2 text-sm">{'Description visible sous le lien dans les r\u00e9sultats de recherche.'}</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">{"Amazon \u2013 titre de produit"}</td>
-                  <td className="py-2 pr-4 whitespace-nowrap">{"200 caract\u00e8res"}</td>
-                  <td className="text-primary-light0 py-2 text-sm">{"Titre concis avec les mots-cl\u00e9s les plus importants."}</td>
+                  <td className="py-2 pr-4">{'Amazon \u2013 titre de produit'}</td>
+                  <td className="py-2 pr-4 whitespace-nowrap">{'200 caract\u00e8res'}</td>
+                  <td className="text-primary-light0 py-2 text-sm">{'Titre concis avec les mots-cl\u00e9s les plus importants.'}</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
-                  <td className="py-2 pr-4">{"X (Twitter) \u2013 publication"}</td>
-                  <td className="py-2 pr-4 whitespace-nowrap">{"280 caract\u00e8res"}</td>
-                  <td className="text-primary-light0 py-2 text-sm">{"Limite standard pour les utilisateurs r\u00e9guliers."}</td>
+                  <td className="py-2 pr-4">{'X (Twitter) \u2013 publication'}</td>
+                  <td className="py-2 pr-4 whitespace-nowrap">{'280 caract\u00e8res'}</td>
+                  <td className="text-primary-light0 py-2 text-sm">{'Limite standard pour les utilisateurs r\u00e9guliers.'}</td>
                 </tr>
                 <tr>
-                  <td className="py-2 pr-4">{"LinkedIn \u2013 publication"}</td>
-                  <td className="py-2 pr-4 whitespace-nowrap">{"3\u00a0000 caract\u00e8res"}</td>
-                  <td className="text-primary-light0 py-2 text-sm">{"Apr\u00e8s ~210 caract\u00e8res, le lien \u00ab\u00a0voir plus\u00a0\u00bb appara\u00eet."}</td>
+                  <td className="py-2 pr-4">{'LinkedIn \u2013 publication'}</td>
+                  <td className="py-2 pr-4 whitespace-nowrap">{'3\u00a0000 caract\u00e8res'}</td>
+                  <td className="text-primary-light0 py-2 text-sm">{'Apr\u00e8s ~210 caract\u00e8res, le lien \u00ab\u00a0voir plus\u00a0\u00bb appara\u00eet.'}</td>
                 </tr>
               </tbody>
             </table>
@@ -450,10 +450,10 @@ export default function WordCountPage() {
           items={[
             ...faqItems,
             {
-              question: "Puis-je copier le rapport avec les statistiques ?",
+              question: 'Puis-je copier le rapport avec les statistiques ?',
               answer:
                 "Oui. Sous les statistiques se trouve un bouton Copier le rapport \u2013 il copie un r\u00e9sum\u00e9 avec le nombre de mots, caract\u00e8res, paragraphes, le temps de lecture et l'\u00e9valuation de longueur dans le presse-papiers. Vous pouvez le coller dans un document ou l'envoyer \u00e0 des collaborateurs.",
-              answerSchemaText: "Oui. Cliquez sur Copier le rapport. Un r\u00e9sum\u00e9 avec toutes les m\u00e9triques est copi\u00e9 dans le presse-papiers.",
+              answerSchemaText: 'Oui. Cliquez sur Copier le rapport. Un r\u00e9sum\u00e9 avec toutes les m\u00e9triques est copi\u00e9 dans le presse-papiers.',
             },
           ]}
         />

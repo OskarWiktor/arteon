@@ -189,17 +189,21 @@ export default function WcagContrastPage() {
 
         <SectionInfo title="Que signifient les résultats du test de lisibilité ?">
           <p className="text-mid mb-4">
-            L'outil affiche le rapport de contraste sur une échelle de 1:1 (aucun contraste) à 21:1 (contraste maximum – noir sur blanc). Le résultat est comparé aux seuils définis dans le standard WCAG :
+            L'outil affiche le rapport de contraste sur une échelle de 1:1 (aucun contraste) à 21:1 (contraste maximum – noir sur blanc). Le résultat est comparé aux seuils définis dans le standard
+            WCAG :
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Texte normal</strong> – nécessite au moins 4,5:1 pour le niveau AA (standard minimum) ou 7:1 pour le niveau AAA (standard amélioré). S'applique au texte inférieur à 18pt (24px) ou inférieur à 14pt (18,5px) en gras.
+              <strong>Texte normal</strong> – nécessite au moins 4,5:1 pour le niveau AA (standard minimum) ou 7:1 pour le niveau AAA (standard amélioré). S'applique au texte inférieur à 18pt (24px)
+              ou inférieur à 14pt (18,5px) en gras.
             </li>
             <li>
-              <strong>Texte grand / gras</strong> – nécessite au moins 3:1 pour le niveau AA ou 4,5:1 pour le niveau AAA. S'applique au texte à partir de 18pt (24px) ou à partir de 14pt (18,5px) en gras – titres, boutons, mises en évidence.
+              <strong>Texte grand / gras</strong> – nécessite au moins 3:1 pour le niveau AA ou 4,5:1 pour le niveau AAA. S'applique au texte à partir de 18pt (24px) ou à partir de 14pt (18,5px) en
+              gras – titres, boutons, mises en évidence.
             </li>
             <li>
-              <strong>Icônes et éléments d'interface</strong> – nécessitent au moins 3:1 pour le niveau AA. S'applique aux icônes, boutons, champs de formulaire et autres éléments d'interface qui transmettent de l'information.
+              <strong>Icônes et éléments d'interface</strong> – nécessitent au moins 3:1 pour le niveau AA. S'applique aux icônes, boutons, champs de formulaire et autres éléments d'interface qui
+              transmettent de l'information.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -255,17 +259,20 @@ export default function WcagContrastPage() {
           <h3 className="h5 mb-2">Message d'erreur de format de couleur</h3>
           <p className="text-mid mb-4">
             Vérifiez le format de la couleur. Un code HEX doit commencer par <code className="rounded bg-black/5 px-1">#</code> et contenir 3 ou 6 caractères (par ex.{' '}
-            <code className="rounded bg-black/5 px-1">#fff</code> ou <code className="rounded bg-black/5 px-1">#ffffff</code>). Pour le format RGB, vérifiez que les valeurs sont séparées par des virgules et comprises entre 0 et 255.
+            <code className="rounded bg-black/5 px-1">#fff</code> ou <code className="rounded bg-black/5 px-1">#ffffff</code>). Pour le format RGB, vérifiez que les valeurs sont séparées par des
+            virgules et comprises entre 0 et 255.
           </p>
 
           <h3 className="h5 mb-2">La fonction Ajustement ne trouve pas de couleur appropriée</h3>
           <p className="text-mid mb-4">
-            Lorsque l'arrière-plan et le texte ont une luminosité similaire dans la même teinte, l'algorithme peut ne pas trouver de variante conforme aux exigences sans changer la teinte. Dans ce cas, envisagez de modifier la couleur d'arrière-plan ou de choisir une couleur de texte complètement différente.
+            Lorsque l'arrière-plan et le texte ont une luminosité similaire dans la même teinte, l'algorithme peut ne pas trouver de variante conforme aux exigences sans changer la teinte. Dans ce
+            cas, envisagez de modifier la couleur d'arrière-plan ou de choisir une couleur de texte complètement différente.
           </p>
 
           <h3 className="h5 mb-2">La couleur dans le sélecteur ne correspond pas au code saisi</h3>
           <p className="text-mid">
-            Le sélecteur de couleurs du navigateur ne prend en charge que le format HEX sans transparence. Si vous saisissez une couleur au format RGBA ou HSLA avec transparence, le sélecteur n'affichera que la partie colorée (sans alpha). Les calculs de contraste continuent de prendre en compte la transparence.
+            Le sélecteur de couleurs du navigateur ne prend en charge que le format HEX sans transparence. Si vous saisissez une couleur au format RGBA ou HSLA avec transparence, le sélecteur
+            n'affichera que la partie colorée (sans alpha). Les calculs de contraste continuent de prendre en compte la transparence.
           </p>
         </SectionInfo>
 
@@ -309,7 +316,8 @@ export default function WcagContrastPage() {
 
         <SectionInfo title="Lisibilité des couleurs pour les personnes daltoniennes">
           <p className="text-mid mb-4">
-            Le daltonisme est un trouble de la perception des couleurs qui touche environ 8{'\u00a0'}% des hommes et 0,5{'\u00a0'}% des femmes. Les personnes daltoniennes peuvent avoir du mal à distinguer certaines paires de couleurs, même si le contraste de luminosité est suffisant.
+            Le daltonisme est un trouble de la perception des couleurs qui touche environ 8{'\u00a0'}% des hommes et 0,5{'\u00a0'}% des femmes. Les personnes daltoniennes peuvent avoir du mal à
+            distinguer certaines paires de couleurs, même si le contraste de luminosité est suffisant.
           </p>
           <p className="text-mid mb-4">Types les plus courants de daltonisme :</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
@@ -324,7 +332,8 @@ export default function WcagContrastPage() {
             </li>
           </ul>
           <p className="text-mid mt-3">
-            Cet outil vérifie le contraste de luminosité, qui est important pour tous les utilisateurs. Cependant, lors de la conception, il convient d'éviter les combinaisons de couleurs problématiques (par ex. texte rouge sur fond vert) et de ne pas se fier uniquement à la couleur pour transmettre de l'information – utilisez aussi des formes, des icônes et du texte.
+            Cet outil vérifie le contraste de luminosité, qui est important pour tous les utilisateurs. Cependant, lors de la conception, il convient d'éviter les combinaisons de couleurs
+            problématiques (par ex. texte rouge sur fond vert) et de ne pas se fier uniquement à la couleur pour transmettre de l'information – utilisez aussi des formes, des icônes et du texte.
           </p>
         </SectionInfo>
 
@@ -371,21 +380,21 @@ export default function WcagContrastPage() {
           items={[
             ...faqItems,
             {
-              question: "Pourquoi ma couleur ne passe pas le test alors que je la vois bien ?",
+              question: 'Pourquoi ma couleur ne passe pas le test alors que je la vois bien ?',
               answer:
                 "La perception personnelle des couleurs d\u00e9pend des r\u00e9glages du moniteur, de l'\u00e9clairage ambiant et des capacit\u00e9s visuelles individuelles. Le standard WCAG repose sur une formule math\u00e9matique objective qui prend en compte diff\u00e9rents troubles de la vision. Une couleur lisible sur un \u00e9cran peut \u00eatre illisible sur un autre ou pour une autre personne.",
               answerSchemaText: "La perception d\u00e9pend du moniteur, de l'\u00e9clairage et de la vision. WCAG utilise une formule objective.",
             },
             {
-              question: "O\u00f9 trouver les codes couleur de mon site web ?",
+              question: 'O\u00f9 trouver les codes couleur de mon site web ?',
               answer:
                 "Dans le navigateur (Chrome, Firefox, Edge), ouvrez les outils de d\u00e9veloppement (clic droit \u2192 Inspecter). Dans l'onglet Styles, vous verrez les couleurs utilis\u00e9es sur la page. Sinon, des extensions comme ColorZilla permettent de r\u00e9cup\u00e9rer la couleur de n'importe quel \u00e9l\u00e9ment sans toucher au code.",
-              answerSchemaText: "Outils de d\u00e9veloppement du navigateur (clic droit \u2192 Inspecter \u2192 Styles) ou extensions comme ColorZilla.",
+              answerSchemaText: 'Outils de d\u00e9veloppement du navigateur (clic droit \u2192 Inspecter \u2192 Styles) ou extensions comme ColorZilla.',
             },
             {
-              question: "Quelles paires de couleurs de mon site v\u00e9rifier en priorit\u00e9 ?",
+              question: 'Quelles paires de couleurs de mon site v\u00e9rifier en priorit\u00e9 ?',
               answer:
-                "Les plus importantes : le texte sur le fond principal, le texte sur les banni\u00e8res et sections color\u00e9es, les boutons (couleur du texte et fond du bouton par rapport au fond de la page), les liens et les ic\u00f4nes. Portez une attention particuli\u00e8re aux \u00e9l\u00e9ments qui apparaissent sur des fonds diff\u00e9rents selon les sections.",
+                'Les plus importantes : le texte sur le fond principal, le texte sur les banni\u00e8res et sections color\u00e9es, les boutons (couleur du texte et fond du bouton par rapport au fond de la page), les liens et les ic\u00f4nes. Portez une attention particuli\u00e8re aux \u00e9l\u00e9ments qui apparaissent sur des fonds diff\u00e9rents selon les sections.',
               answerSchemaText: "V\u00e9rifiez d'abord le texte sur le fond principal, les banni\u00e8res, les boutons, les liens et les ic\u00f4nes.",
             },
           ]}

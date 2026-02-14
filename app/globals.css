@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
 :root {
-
   /* ══════════════════════════════════════════════════════════════
      AKTYWNA PALETA - „Arteon Classic"
      Granat + złoty/bursztynowy. Profesjonalnie, premium.
@@ -67,8 +66,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -116,6 +114,105 @@
 
   --color-accent-orange: var(--accent-orange);
   --color-crop-green: var(--crop-green);
+}
+
+/* ── Animations replacing framer-motion ────────────────────────── */
+
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes modal-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes tooltip-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltip-in-bottom {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-dropdown-in {
+  animation: dropdown-in 0.2s ease-out both;
+}
+.animate-fade-slide-in {
+  animation: fade-slide-in 0.15s ease-out both;
+}
+.animate-modal-backdrop {
+  animation: modal-backdrop-in 0.15s ease-out both;
+}
+.animate-modal-content {
+  animation: modal-content-in 0.15s ease-out both;
+}
+.animate-tooltip {
+  animation: tooltip-in 0.18s ease-out both;
+}
+.animate-tooltip-bottom {
+  animation: tooltip-in-bottom 0.18s ease-out both;
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
 }
 
 .no-scrollbar {

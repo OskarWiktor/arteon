@@ -40,7 +40,8 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
     slug: 'contact',
     metadata: {
       title: 'Contact Arteon – Free Online Tools Support & Feedback',
-      description: 'Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes. We respond within one business day.',
+      description:
+        'Get in touch with the Arteon team. Report a bug, suggest a new tool, or ask a question about our free online tools for images, SEO, colors and QR codes. We respond within one business day.',
     },
     hero: {
       title: 'Get in touch with the Arteon team',
@@ -69,7 +70,8 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
     slug: 'kontakt',
     metadata: {
       title: 'Kontakt – Arteon kostenlose Online-Tools | Support & Feedback',
-      description: 'Nehmen Sie Kontakt mit dem Arteon-Team auf. Melden Sie einen Fehler, schlagen Sie ein neues Tool vor oder stellen Sie eine Frage zu unseren kostenlosen Online-Tools für Bilder, SEO, Farben und QR-Codes. Antwort innerhalb eines Werktags.',
+      description:
+        'Nehmen Sie Kontakt mit dem Arteon-Team auf. Melden Sie einen Fehler, schlagen Sie ein neues Tool vor oder stellen Sie eine Frage zu unseren kostenlosen Online-Tools für Bilder, SEO, Farben und QR-Codes. Antwort innerhalb eines Werktags.',
     },
     hero: {
       title: 'Kontakt zum Arteon-Team aufnehmen',
@@ -98,7 +100,8 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
     slug: 'contacto',
     metadata: {
       title: 'Contacto – Arteon herramientas online gratuitas | Soporte y sugerencias',
-      description: 'Contacte con el equipo de Arteon. Informe de un error, sugiera una nueva herramienta o haga una pregunta sobre nuestras herramientas gratuitas para imágenes, SEO, colores y códigos QR. Respondemos en un día laborable.',
+      description:
+        'Contacte con el equipo de Arteon. Informe de un error, sugiera una nueva herramienta o haga una pregunta sobre nuestras herramientas gratuitas para imágenes, SEO, colores y códigos QR. Respondemos en un día laborable.',
     },
     hero: {
       title: 'Contacte con el equipo de Arteon',
@@ -127,14 +130,15 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
     slug: 'contact',
     metadata: {
       title: 'Contact – Arteon outils en ligne gratuits | Support et suggestions',
-      description: 'Contactez l\u2019équipe Arteon. Signalez un bug, suggérez un nouvel outil ou posez une question sur nos outils gratuits pour les images, le SEO, les couleurs et les codes QR. Réponse sous un jour ouvrable.',
+      description:
+        'Contactez l\u2019équipe Arteon. Signalez un bug, suggérez un nouvel outil ou posez une question sur nos outils gratuits pour les images, le SEO, les couleurs et les codes QR. Réponse sous un jour ouvrable.',
     },
     hero: {
       title: 'Contactez l\u2019équipe Arteon',
       description: 'Signalez un bug, suggérez un nouvel outil ou posez une question — nous répondons sous un jour ouvrable',
     },
     intro: {
-      title: "Une question ou une suggestion\u00a0?",
+      title: 'Une question ou une suggestion\u00a0?',
       textBefore: "Nous sommes ravis de recevoir vos retours sur nos outils. Si vous avez trouvé un bug, avez une idée pour un nouvel outil ou avez besoin d'aide — écrivez-nous à",
       textAfter: '. Nous répondons sous un jour ouvrable.',
     },
@@ -143,7 +147,7 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
       title: 'Coordonnées',
       emailLabel: 'E-mail',
       hoursLabel: 'Horaires',
-      hoursValue: "Lundi – Vendredi\u00a0: 8h00 – 16h00 (CET)",
+      hoursValue: 'Lundi – Vendredi\u00a0: 8h00 – 16h00 (CET)',
     },
     cta: {
       title: 'Retour aux outils',
@@ -156,7 +160,8 @@ const CONTACT_DATA: Partial<Record<Locale, ContactPageData>> = {
     slug: 'contacto',
     metadata: {
       title: 'Contacto – Arteon ferramentas online gratuitas | Suporte e sugestões',
-      description: 'Contacte a equipa Arteon. Reporte um erro, sugira uma nova ferramenta ou faça uma pergunta sobre as nossas ferramentas gratuitas para imagens, SEO, cores e códigos QR. Resposta num dia útil.',
+      description:
+        'Contacte a equipa Arteon. Reporte um erro, sugira uma nova ferramenta ou faça uma pergunta sobre as nossas ferramentas gratuitas para imagens, SEO, cores e códigos QR. Resposta num dia útil.',
     },
     hero: {
       title: 'Contacte a equipa Arteon',

@@ -3,7 +3,6 @@
 import { useEffect, useRef, useCallback, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { AnimatePresence, motion } from 'framer-motion';
 import { RiSearchLine, RiCloseLine, RiArrowRightLine } from 'react-icons/ri';
 import { createPortal } from 'react-dom';
 import { useSearch } from '@/hooks/useSearch';
@@ -137,49 +136,37 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
   if (!mounted) return null;
 
-  return createPortal(
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.15 }}
-          className="fixed inset-0 z-[100] flex items-start justify-center bg-black/30 px-4 pt-[10vh] backdrop-blur-[1px]"
-          onClick={handleBackdropClick}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Wyszukiwarka"
-        >
-          <motion.div
-            initial={{ opacity: 0, y: -20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -20, scale: 0.95 }}
-            transition={{ duration: 0.15 }}
-            className="w-full max-w-xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5"
-          >
-            <div className="flex items-center gap-2 border-b border-neutral-200 px-4 py-1">
-              <RiSearchLine className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
-              <input
-                ref={inputRef}
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="Szukaj usług, narzędzi, artykułów..."
-                className="text-mid placeholder:text-light h-7 flex-1 bg-transparent text-sm placeholder:opacity-80 focus:outline-none"
-                aria-label="Wyszukaj"
-              />
-              <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded p-0.5" aria-label="Zamknij">
-                <RiCloseLine className="h-4 w-4" />
-              </button>
-            </div>
+  if (!isOpen) return null;
 
-            {renderResults()}
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>,
+  return createPortal(
+    <div
+      className="animate-modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-black/30 px-4 pt-[10vh] backdrop-blur-[1px]"
+      onClick={handleBackdropClick}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Wyszukiwarka"
+    >
+      <div className="animate-modal-content w-full max-w-xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5">
+        <div className="flex items-center gap-2 border-b border-neutral-200 px-4 py-1">
+          <RiSearchLine className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
+          <input
+            ref={inputRef}
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="Szukaj usług, narzędzi, artykułów..."
+            className="text-mid placeholder:text-light h-7 flex-1 bg-transparent text-sm placeholder:opacity-80 focus:outline-none"
+            aria-label="Wyszukaj"
+          />
+          <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded p-0.5" aria-label="Zamknij">
+            <RiCloseLine className="h-4 w-4" />
+          </button>
+        </div>
+
+        {renderResults()}
+      </div>
+    </div>,
     document.body,
   );
 }

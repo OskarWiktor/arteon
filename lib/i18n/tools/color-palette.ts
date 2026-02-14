@@ -310,8 +310,7 @@ export const ui = {
       },
       softPastel: {
         label: 'Paleta pastel',
-        description:
-          'A mesma tonalidade com saturação reduzida e luminosidade aumentada, um deslocamento para o centro e o topo do espaço HSL que produz cores suaves e "cremosas".',
+        description: 'A mesma tonalidade com saturação reduzida e luminosidade aumentada, um deslocamento para o centro e o topo do espaço HSL que produz cores suaves e "cremosas".',
       },
       deepDark: {
         label: 'Paleta escura',

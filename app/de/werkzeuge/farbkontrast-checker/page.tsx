@@ -267,14 +267,17 @@ export default function ColorContrastCheckerPage() {
 
         <SectionInfo title="Was bedeuten die Ergebnisse des Lesbarkeitstests?">
           <p className="text-mid mb-4">
-            Das Tool zeigt das Kontrastverhältnis auf einer Skala von 1:1 (kein Kontrast) bis 21:1 (maximaler Kontrast – Schwarz auf Weiß). Das Ergebnis wird mit den im WCAG-Standard definierten Schwellenwerten verglichen:
+            Das Tool zeigt das Kontrastverhältnis auf einer Skala von 1:1 (kein Kontrast) bis 21:1 (maximaler Kontrast – Schwarz auf Weiß). Das Ergebnis wird mit den im WCAG-Standard definierten
+            Schwellenwerten verglichen:
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Normaler Text</strong> – erfordert mindestens 4,5:1 für Level AA (Mindeststandard) oder 7:1 für Level AAA (erweiterter Standard). Gilt für Text unter 18pt (24px) oder unter 14pt (18,5px) fett.
+              <strong>Normaler Text</strong> – erfordert mindestens 4,5:1 für Level AA (Mindeststandard) oder 7:1 für Level AAA (erweiterter Standard). Gilt für Text unter 18pt (24px) oder unter 14pt
+              (18,5px) fett.
             </li>
             <li>
-              <strong>Großer / fetter Text</strong> – erfordert mindestens 3:1 für Level AA oder 4,5:1 für Level AAA. Gilt für Text ab 18pt (24px) oder ab 14pt (18,5px) fett – Überschriften, Buttons, Hervorhebungen.
+              <strong>Großer / fetter Text</strong> – erfordert mindestens 3:1 für Level AA oder 4,5:1 für Level AAA. Gilt für Text ab 18pt (24px) oder ab 14pt (18,5px) fett – Überschriften, Buttons,
+              Hervorhebungen.
             </li>
             <li>
               <strong>Symbole und UI-Elemente</strong> – erfordern mindestens 3:1 für Level AA. Gilt für Icons, Buttons, Formularfelder und andere Oberflächenelemente, die Informationen vermitteln.
@@ -327,17 +330,20 @@ export default function ColorContrastCheckerPage() {
           <h3 className="h5 mb-2">Fehlermeldung zum Farbformat</h3>
           <p className="text-mid mb-4">
             Überprüfen Sie das Farbformat. Ein HEX-Code muss mit <code className="rounded bg-black/5 px-1">#</code> beginnen und 3 oder 6 Zeichen enthalten (z.{'\u00a0'}B.{' '}
-            <code className="rounded bg-black/5 px-1">#fff</code> oder <code className="rounded bg-black/5 px-1">#ffffff</code>). Beim RGB-Format müssen die Werte durch Kommas getrennt sein und im Bereich 0–255 liegen.
+            <code className="rounded bg-black/5 px-1">#fff</code> oder <code className="rounded bg-black/5 px-1">#ffffff</code>). Beim RGB-Format müssen die Werte durch Kommas getrennt sein und im
+            Bereich 0–255 liegen.
           </p>
 
           <h3 className="h5 mb-2">Die Match-Funktion findet keine passende Farbe</h3>
           <p className="text-mid mb-4">
-            Wenn Hintergrund und Text eine ähnliche Helligkeit im gleichen Farbton haben, kann der Algorithmus möglicherweise keine Variante finden, die die Anforderungen erfüllt, ohne den Farbton zu ändern. In diesem Fall sollten Sie die Hintergrundfarbe ändern oder eine ganz andere Textfarbe wählen.
+            Wenn Hintergrund und Text eine ähnliche Helligkeit im gleichen Farbton haben, kann der Algorithmus möglicherweise keine Variante finden, die die Anforderungen erfüllt, ohne den Farbton zu
+            ändern. In diesem Fall sollten Sie die Hintergrundfarbe ändern oder eine ganz andere Textfarbe wählen.
           </p>
 
           <h3 className="h5 mb-2">Farbe im Farbwähler stimmt nicht mit dem eingegebenen Code überein</h3>
           <p className="text-mid">
-            Der Farbwähler des Browsers unterstützt nur das HEX-Format ohne Transparenz. Wenn Sie eine Farbe im RGBA- oder HSLA-Format mit Transparenz eingeben, zeigt der Farbwähler nur den Farbanteil (ohne Alpha). Die Kontrastberechnung berücksichtigt die Transparenz weiterhin.
+            Der Farbwähler des Browsers unterstützt nur das HEX-Format ohne Transparenz. Wenn Sie eine Farbe im RGBA- oder HSLA-Format mit Transparenz eingeben, zeigt der Farbwähler nur den Farbanteil
+            (ohne Alpha). Die Kontrastberechnung berücksichtigt die Transparenz weiterhin.
           </p>
         </SectionInfo>
 

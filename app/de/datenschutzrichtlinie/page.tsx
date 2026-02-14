@@ -108,9 +108,7 @@ export default function DatenschutzrichtliniePage() {
               </a>
               .
             </p>
-            <p>
-              Die Website verwendet Google Consent Mode v2. Das bedeutet, dass Google-Analyse- und Werbeskripte keine Daten erheben, bis der Nutzer im Cookie-Banner seine Einwilligung erteilt.
-            </p>
+            <p>Die Website verwendet Google Consent Mode v2. Das bedeutet, dass Google-Analyse- und Werbeskripte keine Daten erheben, bis der Nutzer im Cookie-Banner seine Einwilligung erteilt.</p>
             <p>Sie können Cookies in Ihren Browsereinstellungen verwalten. Die Einschränkung von Cookies kann einige Funktionen der Website beeinträchtigen.</p>
           </SectionInfo>
 
@@ -186,7 +184,9 @@ export default function DatenschutzrichtliniePage() {
           <Gap variant="line" size="sm" />
 
           <SectionInfo title="12. Änderungen der Richtlinie">
-            <p>Diese Datenschutzrichtlinie kann aktualisiert werden, um Änderungen in der Gesetzgebung oder Technologie zu berücksichtigen. Die aktuelle Version ist stets auf dieser Seite verfügbar.</p>
+            <p>
+              Diese Datenschutzrichtlinie kann aktualisiert werden, um Änderungen in der Gesetzgebung oder Technologie zu berücksichtigen. Die aktuelle Version ist stets auf dieser Seite verfügbar.
+            </p>
           </SectionInfo>
 
           <Gap size="xs" />

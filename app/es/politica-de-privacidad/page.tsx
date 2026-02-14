@@ -95,8 +95,8 @@ export default function PoliticaDePrivacidadPage() {
               <li>visualización de anuncios basados en intereses (Google AdSense / DoubleClick).</li>
             </ul>
             <p>
-              Google AdSense puede utilizar cookies de DoubleClick para mostrar anuncios basados en visitas anteriores del usuario a nuestro sitio web u otros sitios. Los proveedores externos (incluido
-              Google) utilizan estas cookies para ofrecer anuncios basados en el historial de navegación.
+              Google AdSense puede utilizar cookies de DoubleClick para mostrar anuncios basados en visitas anteriores del usuario a nuestro sitio web u otros sitios. Los proveedores externos
+              (incluido Google) utilizan estas cookies para ofrecer anuncios basados en el historial de navegación.
             </p>
             <p>
               Puede desactivar los anuncios personalizados en{' '}
@@ -110,8 +110,8 @@ export default function PoliticaDePrivacidadPage() {
               .
             </p>
             <p>
-              El sitio web utiliza Google Consent Mode v2. Esto significa que los scripts de análisis y publicidad de Google no recopilan datos hasta que el usuario otorga su consentimiento a través del
-              banner de cookies.
+              El sitio web utiliza Google Consent Mode v2. Esto significa que los scripts de análisis y publicidad de Google no recopilan datos hasta que el usuario otorga su consentimiento a través
+              del banner de cookies.
             </p>
             <p>Puede gestionar las cookies en la configuración de su navegador. La restricción de cookies puede afectar a algunas funciones del sitio web.</p>
           </SectionInfo>
@@ -142,8 +142,8 @@ export default function PoliticaDePrivacidadPage() {
 
           <SectionInfo title="7. Transferencias de datos fuera del EEE">
             <p>
-              Google y Vercel pueden tratar datos fuera del Espacio Económico Europeo. Se aplican las garantías jurídicas adecuadas (incluidas las cláusulas contractuales tipo aprobadas por la Comisión
-              Europea) y, cuando es posible, medidas técnicas (seudonimización, minimización).
+              Google y Vercel pueden tratar datos fuera del Espacio Económico Europeo. Se aplican las garantías jurídicas adecuadas (incluidas las cláusulas contractuales tipo aprobadas por la
+              Comisión Europea) y, cuando es posible, medidas técnicas (seudonimización, minimización).
             </p>
           </SectionInfo>
 

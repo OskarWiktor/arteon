@@ -1,6 +1,5 @@
 'use client';
 
-import { motion, useMotionValue, useAnimationFrame, useReducedMotion } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { IconType } from 'react-icons';
 import IconText from '@/components/ui/IconText';
@@ -51,20 +50,35 @@ const techStackItems: TechStackItem[] = [
 
 export default function TechStack() {
   const baseVelocity = 30;
-  const x = useMotionValue(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const xRef = useRef(0);
+  const loopWidthRef = useRef(0);
+  const isPausedRef = useRef(false);
+  const rafRef = useRef<number>(0);
+  const prevTimeRef = useRef<number>(0);
 
   const [isPaused, setIsPaused] = useState(false);
-  const [loopWidth, setLoopWidth] = useState(0);
-  const reduceMotion = useReducedMotion();
+  const [reduceMotion, setReduceMotion] = useState(false);
 
   const { start: startFontMeasure, clear: clearFontMeasure } = useTimeout();
+
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReduceMotion(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setReduceMotion(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  useEffect(() => {
+    isPausedRef.current = isPaused;
+  }, [isPaused]);
 
   const measure = useCallback(() => {
     if (!trackRef.current) return;
     const total = trackRef.current.scrollWidth;
-    setLoopWidth(total / 2);
+    loopWidthRef.current = total / 2;
   }, []);
 
   useEventListener(typeof window !== 'undefined' ? window : null, 'resize', measure);
@@ -82,18 +96,30 @@ export default function TechStack() {
     };
   }, [measure, startFontMeasure, clearFontMeasure]);
 
-  useAnimationFrame((t, delta) => {
-    if (isPaused || reduceMotion || loopWidth === 0) return;
+  useEffect(() => {
+    if (reduceMotion) return;
 
-    const moveBy = (baseVelocity * delta) / 1000;
-    let next = x.get() - moveBy;
+    const animate = (time: number) => {
+      if (prevTimeRef.current) {
+        const delta = time - prevTimeRef.current;
+        if (!isPausedRef.current && loopWidthRef.current > 0) {
+          const moveBy = (baseVelocity * delta) / 1000;
+          xRef.current -= moveBy;
+          if (xRef.current <= -loopWidthRef.current) {
+            xRef.current += loopWidthRef.current;
+          }
+          if (trackRef.current) {
+            trackRef.current.style.transform = `translateX(${xRef.current}px)`;
+          }
+        }
+      }
+      prevTimeRef.current = time;
+      rafRef.current = requestAnimationFrame(animate);
+    };
 
-    if (next <= -loopWidth) {
-      next += loopWidth;
-    }
-
-    x.set(next);
-  });
+    rafRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [reduceMotion]);
 
   return (
     <section className="relative overflow-hidden" aria-labelledby="techstack-heading">
@@ -113,13 +139,13 @@ export default function TechStack() {
         onTouchStart={() => setIsPaused(true)}
         onTouchEnd={() => setIsPaused(false)}
       >
-        <motion.div ref={trackRef} style={{ x, willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
+        <div ref={trackRef} style={{ willChange: 'transform' }} className="flex gap-6 whitespace-nowrap md:gap-10 lg:gap-14">
           {[...techStackItems, ...techStackItems].map(({ label, icon: Icon }, index) => (
             <IconText key={`${label}-${index}`} icon={<Icon className="text-primary h-auto w-6" aria-hidden="true" />} gap="2" className="shrink-0">
               <span className="text-primary text-2xl">{label}</span>
             </IconText>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

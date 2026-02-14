@@ -109,14 +109,12 @@ const faqItems = [
   },
   {
     question: 'Que formatos de transferência estão disponíveis?',
-    answer:
-      'O código QR pode ser transferido em PNG (imagem raster, ideal para a web e apresentações) e em SVG (imagem vetorial, ideal para impressão sem perda de qualidade em qualquer tamanho).',
+    answer: 'O código QR pode ser transferido em PNG (imagem raster, ideal para a web e apresentações) e em SVG (imagem vetorial, ideal para impressão sem perda de qualidade em qualquer tamanho).',
     answerSchemaText: 'PNG (raster, para a web) e SVG (vetorial, para impressão).',
   },
   {
     question: 'Posso personalizar as cores do código QR?',
-    answer:
-      'Sim. Pode modificar a cor de primeiro plano (os módulos) e a cor de fundo do código QR. Certifique-se de manter contraste suficiente para que o código permaneça legível pelos leitores.',
+    answer: 'Sim. Pode modificar a cor de primeiro plano (os módulos) e a cor de fundo do código QR. Certifique-se de manter contraste suficiente para que o código permaneça legível pelos leitores.',
     answerSchemaText: 'Sim. Cor de primeiro plano e de fundo personalizáveis.',
   },
   {
@@ -163,12 +161,12 @@ export default function QrCodeGeneratorPage() {
 
         <SectionInfo title="Porquê utilizar códigos QR?">
           <p className="text-mid">
-            Os códigos QR tornaram-se uma ferramenta essencial para ligar o mundo físico ao mundo digital. Permitem aos utilizadores aceder instantaneamente a um site, adicionar dados de contacto aos seus
-            contactos ou consultar um menu – simplesmente digitalizando o código com o telefone.
+            Os códigos QR tornaram-se uma ferramenta essencial para ligar o mundo físico ao mundo digital. Permitem aos utilizadores aceder instantaneamente a um site, adicionar dados de contacto aos
+            seus contactos ou consultar um menu – simplesmente digitalizando o código com o telefone.
           </p>
           <p className="text-mid mt-3">
-            Esta ferramenta gera códigos QR para diferentes tipos de conteúdo: URL, vCards, texto, e-mail e telefone. Pode personalizar as cores e o tamanho, depois transferir o código em PNG (para a web)
-            ou SVG (para impressão).
+            Esta ferramenta gera códigos QR para diferentes tipos de conteúdo: URL, vCards, texto, e-mail e telefone. Pode personalizar as cores e o tamanho, depois transferir o código em PNG (para a
+            web) ou SVG (para impressão).
           </p>
         </SectionInfo>
 
@@ -308,7 +306,8 @@ export default function QrCodeGeneratorPage() {
               <strong>Tamanho (px)</strong> – dimensão do código em píxeis. Para impressão standard (flyers, cartões de visita), escolha 300-500 px. Para uso digital, 150-200 px são suficientes.
             </li>
             <li>
-              <strong>Margem</strong> – zona branca à volta do código necessária para uma digitalização correta. O valor recomendado é 2-4. Um valor de 0 pode dificultar a digitalização em fundo escuro.
+              <strong>Margem</strong> – zona branca à volta do código necessária para uma digitalização correta. O valor recomendado é 2-4. Um valor de 0 pode dificultar a digitalização em fundo
+              escuro.
             </li>
             <li>
               <strong>Cor do código QR</strong> – preto por predefinição (#000000). Pode alterá-la para qualquer cor escura que corresponda à sua identidade visual.
@@ -352,7 +351,8 @@ export default function QrCodeGeneratorPage() {
           }
         >
           <p className="text-mid mb-4">
-            A correção de erros é um mecanismo que permite ler um código QR mesmo quando uma parte está danificada, suja ou oculta. O gerador utiliza o algoritmo Reed-Solomon, um padrão para códigos QR.
+            A correção de erros é um mecanismo que permite ler um código QR mesmo quando uma parte está danificada, suja ou oculta. O gerador utiliza o algoritmo Reed-Solomon, um padrão para códigos
+            QR.
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
@@ -365,7 +365,8 @@ export default function QrCodeGeneratorPage() {
               <strong>Q (Quartil) – 25 %</strong> – resistência acrescida a danos. A escolher para códigos impressos em materiais suscetíveis de se sujar.
             </li>
             <li>
-              <strong>H (Alto) – 30 %</strong> – resistência máxima. Recomendado para suportes exteriores, embalagens e situações em que o código pode ficar parcialmente oculto (ex.: logótipo ao centro).
+              <strong>H (Alto) – 30 %</strong> – resistência máxima. Recomendado para suportes exteriores, embalagens e situações em que o código pode ficar parcialmente oculto (ex.: logótipo ao
+              centro).
             </li>
           </ul>
           <p className="text-mid mt-3">

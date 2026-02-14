@@ -167,10 +167,8 @@ export const ui = {
     titleGoodLength: 'O título está no intervalo que normalmente é apresentado na íntegra nos resultados do Google (cerca de 450-580 píxeis e 45-60 caracteres).',
     enterDescription: 'Introduza uma meta descrição para ver a análise de comprimento.',
     descriptionTooShort: 'A descrição é muito curta. Adicione mais texto que explique o que o utilizador encontrará na página e por que deve clicar.',
-    descriptionTooLong:
-      'A descrição ultrapassa o intervalo que o Google costuma mostrar na íntegra (cerca de 150-160 caracteres ou ~920 píxeis). Pode ser truncada ou substituída por outro excerto.',
-    descriptionGoodLength:
-      'A descrição está no intervalo típico para resultados de pesquisa (cerca de 120-160 caracteres e até ~920 píxeis), o que geralmente basta para 2-3 frases curtas.',
+    descriptionTooLong: 'A descrição ultrapassa o intervalo que o Google costuma mostrar na íntegra (cerca de 150-160 caracteres ou ~920 píxeis). Pode ser truncada ou substituída por outro excerto.',
+    descriptionGoodLength: 'A descrição está no intervalo típico para resultados de pesquisa (cerca de 120-160 caracteres e até ~920 píxeis), o que geralmente basta para 2-3 frases curtas.',
     addUrl: 'Adicionar URL (opcional)',
     urlPlaceholder: 'www.oseudominio.pt/pagina',
     urlHelper: 'O URL é utilizado apenas na pré-visualização \u2013 não afeta o cálculo do comprimento do meta título nem da descrição.',

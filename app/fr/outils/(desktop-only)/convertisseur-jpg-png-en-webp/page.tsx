@@ -201,14 +201,17 @@ export default function JpgPngToWebpPage() {
               <strong>Glisser-déposer</strong> – prenez les fichiers depuis un dossier sur votre ordinateur et déposez-les dans la zone prévue. Vous pouvez glisser plusieurs fichiers à la fois.
             </li>
             <li>
-              <strong>Sélection depuis l'appareil</strong> – cliquez dans la zone d'ajout de fichiers pour ouvrir la fenêtre de sélection. Maintenez la touche Ctrl (ou Cmd sur Mac) pour sélectionner plusieurs fichiers à la fois.
+              <strong>Sélection depuis l'appareil</strong> – cliquez dans la zone d'ajout de fichiers pour ouvrir la fenêtre de sélection. Maintenez la touche Ctrl (ou Cmd sur Mac) pour sélectionner
+              plusieurs fichiers à la fois.
             </li>
           </ul>
           <p className="text-mid mt-3">
-            L'outil n'accepte que les fichiers JPG et PNG. Si vous ajoutez accidentellement un fichier dans un autre format (par ex. GIF ou BMP), il sera automatiquement ignoré et un message d'information s'affichera.
+            L'outil n'accepte que les fichiers JPG et PNG. Si vous ajoutez accidentellement un fichier dans un autre format (par ex. GIF ou BMP), il sera automatiquement ignoré et un message
+            d'information s'affichera.
           </p>
           <p className="text-mid mt-3">
-            <strong>Confidentialité :</strong> Tous les fichiers sont traités localement dans le navigateur. Ils ne sont envoyés nulle part – ils ne transitent par aucun serveur. À la fermeture de l'onglet ou du navigateur, les fichiers sont supprimés de la mémoire.
+            <strong>Confidentialité :</strong> Tous les fichiers sont traités localement dans le navigateur. Ils ne sont envoyés nulle part – ils ne transitent par aucun serveur. À la fermeture de
+            l'onglet ou du navigateur, les fichiers sont supprimés de la mémoire.
           </p>
         </SectionInfo>
 
@@ -314,9 +317,12 @@ export default function JpgPngToWebpPage() {
             <li>Le processus se répète jusqu'à ce que le fichier de sortie soit plus léger ou que la qualité descende en dessous d'un minimum sûr.</li>
           </ol>
           <p className="text-mid mt-3">
-            L'outil choisit automatiquement les paramètres optimaux. Si une image est déjà très compressée (par ex. un JPG à 60{'\u00a0'}% de qualité), les paramètres seront automatiquement ajustés pour obtenir malgré tout une réduction de taille.
+            L'outil choisit automatiquement les paramètres optimaux. Si une image est déjà très compressée (par ex. un JPG à 60{'\u00a0'}% de qualité), les paramètres seront automatiquement ajustés
+            pour obtenir malgré tout une réduction de taille.
           </p>
-          <p className="text-mid mt-3">Pour chaque fichier, vous verrez l'indication &quot;Qualité WebP utilisée&quot; – c'est la qualité réellement appliquée après un éventuel ajustement par Smart Quality.</p>
+          <p className="text-mid mt-3">
+            Pour chaque fichier, vous verrez l'indication &quot;Qualité WebP utilisée&quot; – c'est la qualité réellement appliquée après un éventuel ajustement par Smart Quality.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -335,7 +341,8 @@ export default function JpgPngToWebpPage() {
             </li>
           </ul>
           <p className="text-mid mt-3">
-            <strong>Copier le résumé :</strong> Le bouton copie le rapport dans le presse-papiers en format texte. Vous pouvez le coller dans des notes, un e-mail ou un document – utile pour documenter l'optimisation des images.
+            <strong>Copier le résumé :</strong> Le bouton copie le rapport dans le presse-papiers en format texte. Vous pouvez le coller dans des notes, un e-mail ou un document – utile pour
+            documenter l'optimisation des images.
           </p>
         </SectionInfo>
 
@@ -346,17 +353,23 @@ export default function JpgPngToWebpPage() {
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Photo JPG (appareil photo)</p>
-              <p className="text-light text-sm">2,4{'\u00a0'}Mo → 890{'\u00a0'}Ko</p>
+              <p className="text-light text-sm">
+                2,4{'\u00a0'}Mo → 890{'\u00a0'}Ko
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Économie : ~63{'\u00a0'}%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Graphique PNG (logo)</p>
-              <p className="text-light text-sm">180{'\u00a0'}Ko → 45{'\u00a0'}Ko</p>
+              <p className="text-light text-sm">
+                180{'\u00a0'}Ko → 45{'\u00a0'}Ko
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Économie : ~75{'\u00a0'}%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Photo de produit</p>
-              <p className="text-light text-sm">500{'\u00a0'}Ko → 185{'\u00a0'}Ko</p>
+              <p className="text-light text-sm">
+                500{'\u00a0'}Ko → 185{'\u00a0'}Ko
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Économie : ~63{'\u00a0'}%</p>
             </div>
           </div>
@@ -464,8 +477,7 @@ export default function JpgPngToWebpPage() {
             ...faqItems,
             {
               question: 'Puis-je convertir des fichiers autres que JPG et PNG ?',
-              answer:
-                "L'outil est optimis\u00e9 pour les formats JPG et PNG. Les autres formats (par ex. GIF, BMP, TIFF) sont automatiquement ignor\u00e9s lors de l'ajout.",
+              answer: "L'outil est optimis\u00e9 pour les formats JPG et PNG. Les autres formats (par ex. GIF, BMP, TIFF) sont automatiquement ignor\u00e9s lors de l'ajout.",
               answerSchemaText: 'Uniquement JPG et PNG. Les autres formats sont automatiquement ignor\u00e9s.',
             },
             {

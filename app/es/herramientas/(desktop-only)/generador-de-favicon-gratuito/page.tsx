@@ -200,7 +200,8 @@ export default function FaviconGeneratorPage() {
             { title: '2. Elija los tamaños', description: 'Seleccione los tamaños de icono que necesita. Para un sitio web normal: favicon.ico, 32×32 y 180×180. Para PWA, añada 192×192 y 512×512.' },
             {
               title: '3. Descargue los archivos',
-              description: 'Después de generar, descargue todos los archivos como ZIP o cada icono individualmente. Debajo de la herramienta encontrará instrucciones para añadir el favicon a su sitio.',
+              description:
+                'Después de generar, descargue todos los archivos como ZIP o cada icono individualmente. Debajo de la herramienta encontrará instrucciones para añadir el favicon a su sitio.',
             },
           ]}
         />
@@ -354,8 +355,7 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiFileDownloadLine className="h-6 w-6" />,
               title: 'Descargar archivos individuales',
-              description:
-                'Cada icono generado tiene su propio botón de descarga: puede descargar un solo archivo sin descargar el conjunto completo. útil cuando solo necesita actualizar un tamaño.',
+              description: 'Cada icono generado tiene su propio botón de descarga: puede descargar un solo archivo sin descargar el conjunto completo. útil cuando solo necesita actualizar un tamaño.',
             },
           ]}
         />

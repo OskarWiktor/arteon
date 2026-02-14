@@ -3,21 +3,10 @@
 import { useMemo } from 'react';
 import type { ProjectCategory, ProjectPreview } from '@/types/project';
 import ProjectCard from '../../ui/ProjectCard';
-import { AnimatePresence, motion } from 'framer-motion';
 
 type Props = {
   projects: ProjectPreview[];
   selectedCategories: ProjectCategory[];
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, delay: i * 0.1 },
-  }),
-  exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
 };
 
 export default function ProjectsGrid({ projects, selectedCategories }: Props) {
@@ -33,18 +22,14 @@ export default function ProjectsGrid({ projects, selectedCategories }: Props) {
     return <p className="text-light mt-6 text-base">Brak projektów dla wybranych filtrów.</p>;
   }
 
-  const animKey = JSON.stringify([...selectedCategories].sort());
-
   return (
     <section className="w-full">
       <div className="grid auto-rows-max grid-cols-1 gap-8 md:grid-cols-2">
-        <AnimatePresence mode="wait" key={animKey}>
-          {filteredProjects.map((project, i) => (
-            <motion.div key={project.slug} variants={cardVariants} initial="hidden" animate="visible" exit="exit" custom={i}>
-              <ProjectCard project={project} />
-            </motion.div>
-          ))}
-        </AnimatePresence>
+        {filteredProjects.map((project, i) => (
+          <div key={project.slug} className="animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
+            <ProjectCard project={project} />
+          </div>
+        ))}
       </div>
     </section>
   );

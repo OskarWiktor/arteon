@@ -526,7 +526,8 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Farbthemen</h3>
           <p className="text-mid">
-            Oben im Tab finden Sie fünf vorgefertigte Themen: Dunkel, Blau, Violett, Grün und Grau. Ein Klick auf ein Thema setzt automatisch die Akzentfarbe und Textfarbe. Das ist der schnellste Weg zu einem einheitlichen Erscheinungsbild.
+            Oben im Tab finden Sie fünf vorgefertigte Themen: Dunkel, Blau, Violett, Grün und Grau. Ein Klick auf ein Thema setzt automatisch die Akzentfarbe und Textfarbe. Das ist der schnellste Weg
+            zu einem einheitlichen Erscheinungsbild.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Farben</h3>
@@ -585,13 +586,15 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Farbe ändern</h3>
           <p className="text-mid">
-            Bei jedem Element finden Sie eine Reihe von Farboptionen. Klicken Sie auf ein Farbquadrat, um es auszuwählen. Sie können auch eine eigene Farbe hinzufügen, indem Sie auf das Farbquadrat mit dem Pluszeichen klicken – Farbe wählen und Speichern klicken. Eigene Farben (bis zu 8) werden zwischen allen Elementen geteilt.
+            Bei jedem Element finden Sie eine Reihe von Farboptionen. Klicken Sie auf ein Farbquadrat, um es auszuwählen. Sie können auch eine eigene Farbe hinzufügen, indem Sie auf das Farbquadrat
+            mit dem Pluszeichen klicken – Farbe wählen und Speichern klicken. Eigene Farben (bis zu 8) werden zwischen allen Elementen geteilt.
           </p>
           <p className="text-mid mt-3">Der Button mit dem Reset-Icon setzt die Standardfarbe des Elements zurück.</p>
 
           <h3 className="h5 mt-6 mb-3">Größe ändern</h3>
           <p className="text-mid">
-            In der zweiten Zeile finden Sie die Größensteuerung mit Buttons - und +. Der Wert zeigt die Abweichung von der Basisschriftgröße (eingestellt im Tab Erscheinungsbild). Bereich: -4 bis +4{'\u00a0'}Pixel.
+            In der zweiten Zeile finden Sie die Größensteuerung mit Buttons - und +. Der Wert zeigt die Abweichung von der Basisschriftgröße (eingestellt im Tab Erscheinungsbild). Bereich: -4 bis +4
+            {'\u00a0'}Pixel.
           </p>
         </SectionInfo>
 
@@ -604,12 +607,14 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Innenabstand der Signatur</h3>
           <p className="text-mid">
-            Oben im Tab finden Sie die Option für den Innenabstand – also den Abstand zwischen dem Inhalt der Signatur und ihren Rändern. Drei Werte stehen zur Verfügung: 8{'\u00a0'}px (klein), 16{'\u00a0'}px (mittel) und 24{'\u00a0'}px (groß).
+            Oben im Tab finden Sie die Option für den Innenabstand – also den Abstand zwischen dem Inhalt der Signatur und ihren Rändern. Drei Werte stehen zur Verfügung: 8{'\u00a0'}px (klein), 16
+            {'\u00a0'}px (mittel) und 24{'\u00a0'}px (groß).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Abstände zwischen Elementen</h3>
           <p className="text-mid">
-            Unterhalb des Innenabstands finden Sie Steuerelemente für die einzelnen Signaturelemente. Jedes Steuerelement hat Buttons + und - zum Vergrößern oder Verkleinern des Abstands. Es werden nur Optionen für Elemente angezeigt, die aktuell in der Signatur vorhanden sind.
+            Unterhalb des Innenabstands finden Sie Steuerelemente für die einzelnen Signaturelemente. Jedes Steuerelement hat Buttons + und - zum Vergrößern oder Verkleinern des Abstands. Es werden
+            nur Optionen für Elemente angezeigt, die aktuell in der Signatur vorhanden sind.
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
@@ -683,12 +688,14 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Vorschau und Exportoptionen">
           <p className="text-mid">
-            Das Vorschau-Panel wird rechts neben dem Editor angezeigt und aktualisiert sich automatisch bei jeder Änderung. Die Vorschau ist am Bildschirm fixiert (sticky) und bleibt auch beim Scrollen durch die Bearbeitungsoptionen sichtbar.
+            Das Vorschau-Panel wird rechts neben dem Editor angezeigt und aktualisiert sich automatisch bei jeder Änderung. Die Vorschau ist am Bildschirm fixiert (sticky) und bleibt auch beim
+            Scrollen durch die Bearbeitungsoptionen sichtbar.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Hintergrund der Vorschau</h3>
           <p className="text-mid">
-            Über der Vorschau finden Sie drei Buttons zur Hintergrundauswahl: <strong>Hell</strong> (Standard-grauer Hintergrund), <strong>Dunkel</strong> (dunkler Hintergrund, nützlich zur Überprüfung der Lesbarkeit) und <strong>Schachbrett</strong> (Schachbrettmuster, zeigt Transparenz und Ränder der Signatur).
+            Über der Vorschau finden Sie drei Buttons zur Hintergrundauswahl: <strong>Hell</strong> (Standard-grauer Hintergrund), <strong>Dunkel</strong> (dunkler Hintergrund, nützlich zur
+            Überprüfung der Lesbarkeit) und <strong>Schachbrett</strong> (Schachbrettmuster, zeigt Transparenz und Ränder der Signatur).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Aktionsbuttons</h3>

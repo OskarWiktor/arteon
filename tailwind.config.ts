@@ -10,14 +10,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/container-queries'),
-    require('tailwindcss-children'),
-    require('tailwind-scrollbar'),
-    require('tailwindcss-fluid-type'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio'), require('tailwindcss-children'), require('tailwind-scrollbar')],
 };
 export default config;

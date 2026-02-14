@@ -279,8 +279,8 @@ export default function WordCounterPage() {
               <strong className="text-success-text">Good length</strong> (green) - the text falls within the approximate range for the selected page type.
             </li>
             <li>
-              <strong className="text-warning-text">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader's questions, the length
-              may be fine.
+              <strong className="text-warning-text">Below range</strong> (yellow) - the text is shorter than typical for this page type. If it answers all of the reader's questions, the length may be
+              fine.
             </li>
             <li>
               <strong className="text-error-text">Above range</strong> (red) - the text is longer than typical. If every paragraph adds new information, the length is justified.
@@ -328,9 +328,7 @@ export default function WordCounterPage() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Landing page</td>
                   <td className="py-2 pr-4 whitespace-nowrap">600–2500 words</td>
-                  <td className="text-primary-light0 py-2 text-sm">
-                    Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.
-                  </td>
+                  <td className="text-primary-light0 py-2 text-sm">Simple offer - 600–1,000 words. Offer requiring explanation of process, variants, and objection handling - 1,500–2,500 words.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Blog post</td>

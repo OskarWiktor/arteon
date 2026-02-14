@@ -197,23 +197,28 @@ export default function ImageResizePage() {
           <p className="text-mid">{"L'outil accepte les images aux formats JPG, PNG et WebP. Vous pouvez ajouter une image de deux fa\u00e7ons :"}</p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-5">
             <li>
-              <strong>Glisser-d\u00e9poser</strong> {"\u2013 prenez un fichier depuis un dossier sur votre ordinateur et d\u00e9posez-le dans la zone pr\u00e9vue (zone avec le cadre en pointill\u00e9s)."}
+              <strong>Glisser-d\u00e9poser</strong>{' '}
+              {'\u2013 prenez un fichier depuis un dossier sur votre ordinateur et d\u00e9posez-le dans la zone pr\u00e9vue (zone avec le cadre en pointill\u00e9s).'}
             </li>
             <li>
               <strong>{"S\u00e9lection depuis l'appareil"}</strong> {"\u2013 cliquez dans la zone d'ajout de fichier pour ouvrir la fen\u00eatre de s\u00e9lection."}
             </li>
           </ul>
-          <p className="text-mid mt-3">{"Apr\u00e8s l'ajout, l'outil lit automatiquement les dimensions originales de l'image et affiche un aper\u00e7u. Vous pouvez maintenant passer aux param\u00e8tres de recadrage."}</p>
+          <p className="text-mid mt-3">
+            {"Apr\u00e8s l'ajout, l'outil lit automatiquement les dimensions originales de l'image et affiche un aper\u00e7u. Vous pouvez maintenant passer aux param\u00e8tres de recadrage."}
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
 
         <SectionInfo title="D\u00e9finir les dimensions cibles">
           <p className="text-mid">
-            {"Dans l'onglet"} <strong>Dimensions en px</strong>{", saisissez la largeur et la hauteur manuellement. L'option"} <strong>Conserver les proportions</strong> {"ajuste automatiquement la seconde dimension."}
+            {"Dans l'onglet"} <strong>Dimensions en px</strong>
+            {", saisissez la largeur et la hauteur manuellement. L'option"} <strong>Conserver les proportions</strong> {'ajuste automatiquement la seconde dimension.'}
           </p>
           <p className="text-mid mt-3">
-            {"Dans l'onglet"} <strong>{"Mod\u00e8les"}</strong>{", s\u00e9lectionnez un format pr\u00e9d\u00e9fini (par ex. publication Instagram, couverture Facebook, image OG). L'outil r\u00e8gle automatiquement les dimensions en pixels."}
+            {"Dans l'onglet"} <strong>{'Mod\u00e8les'}</strong>
+            {", s\u00e9lectionnez un format pr\u00e9d\u00e9fini (par ex. publication Instagram, couverture Facebook, image OG). L'outil r\u00e8gle automatiquement les dimensions en pixels."}
           </p>
         </SectionInfo>
 

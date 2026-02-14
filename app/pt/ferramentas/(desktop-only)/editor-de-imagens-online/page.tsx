@@ -156,8 +156,8 @@ export default function ImageResizePage() {
             banner precisos. O editor oferece modelos prontos para todos os formatos comuns e permite também introduzir dimensões personalizadas.
           </p>
           <p className="text-mid mt-3">
-            A ferramenta funciona inteiramente no seu navegador – nenhuma imagem é enviada para um servidor. Pode ajustar o zoom e a posição do recorte e transferir o resultado em três formatos: PNG (sem
-            perdas, com transparência), JPG (ficheiro mais leve, sem transparência) e WebP (compressão ótima).
+            A ferramenta funciona inteiramente no seu navegador – nenhuma imagem é enviada para um servidor. Pode ajustar o zoom e a posição do recorte e transferir o resultado em três formatos: PNG
+            (sem perdas, com transparência), JPG (ficheiro mais leve, sem transparência) e WebP (compressão ótima).
           </p>
         </SectionInfo>
 
@@ -203,7 +203,9 @@ export default function ImageResizePage() {
               <strong>Seleção a partir do dispositivo</strong> – clique na zona de adição de ficheiro para abrir a janela de seleção.
             </li>
           </ul>
-          <p className="text-mid mt-3">Após adicionar, a ferramenta lê automaticamente as dimensões originais da imagem e apresenta uma pré-visualização. Pode agora passar às definições de recorte.</p>
+          <p className="text-mid mt-3">
+            Após adicionar, a ferramenta lê automaticamente as dimensões originais da imagem e apresenta uma pré-visualização. Pode agora passar às definições de recorte.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -276,9 +278,7 @@ export default function ImageResizePage() {
             Cada plataforma apresenta as imagens em proporções e tamanhos específicos. Se uma imagem não cumprir os requisitos, é automaticamente recortada ou deformada – frequentemente com resultados
             indesejados.
           </p>
-          <p className="text-mid mt-3">
-            O editor oferece modelos prontos para todas as plataformas comuns. Basta selecionar o modelo pretendido e a ferramenta ajusta automaticamente as dimensões.
-          </p>
+          <p className="text-mid mt-3">O editor oferece modelos prontos para todas as plataformas comuns. Basta selecionar o modelo pretendido e a ferramenta ajusta automaticamente as dimensões.</p>
         </SectionDemo>
 
         <Gap variant="line" />
@@ -391,8 +391,8 @@ export default function ImageResizePage() {
             fotográfica.
           </p>
           <p className="text-mid mt-3">
-            A regra indica que os elementos mais importantes de uma foto (rosto, produto, ponto de interesse) devem ser colocados nas interseções das linhas da grelha ou ao longo delas. Esta composição
-            é mais dinâmica e agradável ao olhar do que colocar o sujeito exatamente no centro.
+            A regra indica que os elementos mais importantes de uma foto (rosto, produto, ponto de interesse) devem ser colocados nas interseções das linhas da grelha ou ao longo delas. Esta
+            composição é mais dinâmica e agradável ao olhar do que colocar o sujeito exatamente no centro.
           </p>
           <p className="text-mid mt-3">
             No separador <strong>Cor da grelha</strong>, pode mudar a cor das linhas (verde, branco, preto, vermelho, amarelo) para que a grelha seja claramente visível em diferentes imagens.
@@ -409,9 +409,7 @@ export default function ImageResizePage() {
               icon: <RiImageLine className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">
-                    O formato mais popular para fotos. Boa compressão mantendo a qualidade visual. Não suporta transparência: o fundo será sempre preenchido com uma cor.
-                  </p>
+                  <p className="text-mid mb-3">O formato mais popular para fotos. Boa compressão mantendo a qualidade visual. Não suporta transparência: o fundo será sempre preenchido com uma cor.</p>
                   <p className="text-mid">Uma boa escolha para fotos de produtos, retratos e a maioria dos visuais de sites. O cursor de qualidade (60-100%) controla a compressão.</p>
                 </div>
               ),
@@ -421,9 +419,7 @@ export default function ImageResizePage() {
               icon: <RiFileImageLine className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">
-                    Formato sem perdas: preserva a qualidade total, mas os ficheiros são maiores. Suporta transparência (necessário para a forma círculo).
-                  </p>
+                  <p className="text-mid mb-3">Formato sem perdas: preserva a qualidade total, mas os ficheiros são maiores. Suporta transparência (necessário para a forma círculo).</p>
                   <p className="text-mid">Uma boa escolha para visuais com texto, ícones e imagens que necessitam de bordas nítidas.</p>
                 </div>
               ),

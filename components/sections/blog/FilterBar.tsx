@@ -3,7 +3,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 import { RiCloseLine, RiCheckLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import Button from '@/components/ui/buttons/Button';
@@ -85,13 +84,11 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
       <div className="hidden pb-6 md:block md:pb-8 lg:pb-10">
         <div className="flex flex-wrap items-start gap-2">
           {/* Filters container with collapse/expand */}
-          <motion.nav
+          <nav
             ref={navRef}
             aria-label="Kategorie artykułów"
-            initial={false}
-            animate={{ height: isExpanded ? 'auto' : COLLAPSED_HEIGHT }}
-            transition={{ duration: 0.2, ease: 'easeOut' }}
-            className="flex flex-1 flex-wrap gap-2 overflow-hidden"
+            className="flex flex-1 flex-wrap gap-2 overflow-hidden transition-[max-height] duration-200 ease-out"
+            style={{ maxHeight: isExpanded ? '500px' : `${COLLAPSED_HEIGHT}px` }}
           >
             <Button variant={isRoot ? 'accent' : 'normal'} link="/edukacja" size="small" aria-current={isRoot ? 'page' : undefined}>
               Wszystkie
@@ -105,7 +102,7 @@ export default function FilterBar({ cats, active }: { cats: Cat[]; active?: stri
                 </Button>
               );
             })}
-          </motion.nav>
+          </nav>
 
           {/* Show more/less button - outside animated container, always visible */}
           {needsExpand && (
@@ -180,64 +177,51 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
     [onClose],
   );
 
+  if (!isOpen) return null;
+
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.15 }}
-          className="fixed inset-0 z-[100] flex items-start justify-center bg-black/30 px-4 pt-[10vh] backdrop-blur-[1px]"
-          onClick={handleBackdropClick}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Wybierz kategorię"
-        >
-          <motion.div
-            initial={{ opacity: 0, y: -20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -20, scale: 0.95 }}
-            transition={{ duration: 0.15 }}
-            className="w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-xl"
-            onKeyDown={handleKeyDown}
-          >
-            {/* Header */}
-            <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
-              <h3 className="text-base font-semibold">Wybierz kategorię</h3>
-              <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded-full p-1.5" aria-label="Zamknij">
-                <RiCloseLine className="h-5 w-5" />
-              </button>
-            </div>
+    <div
+      className="animate-modal-backdrop fixed inset-0 z-[100] flex items-start justify-center bg-black/30 px-4 pt-[10vh] backdrop-blur-[1px]"
+      onClick={handleBackdropClick}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Wybierz kategorię"
+    >
+      <div className="animate-modal-content w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-xl" onKeyDown={handleKeyDown}>
+        {/* Header */}
+        <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
+          <h3 className="text-base font-semibold">Wybierz kategorię</h3>
+          <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded-full p-1.5" aria-label="Zamknij">
+            <RiCloseLine className="h-5 w-5" />
+          </button>
+        </div>
 
-            {/* Category list */}
-            <div ref={listRef} className="max-h-[60vh] overflow-y-auto py-2" role="listbox" aria-label="Kategorie artykułów">
-              {allItems.map((item, index) => {
-                const isActive = item.isAll ? isRoot : active === item.slug;
-                const href = item.isAll ? '/edukacja' : `/edukacja/${item.slug}`;
+        {/* Category list */}
+        <div ref={listRef} className="max-h-[60vh] overflow-y-auto py-2" role="listbox" aria-label="Kategorie artykułów">
+          {allItems.map((item, index) => {
+            const isActive = item.isAll ? isRoot : active === item.slug;
+            const href = item.isAll ? '/edukacja' : `/edukacja/${item.slug}`;
 
-                return (
-                  <Link
-                    key={item.slug || 'all'}
-                    href={href}
-                    data-index={index}
-                    onClick={onClose}
-                    role="option"
-                    aria-selected={isActive}
-                    className={`flex w-full items-center justify-between px-4 py-3 text-left transition ${isActive ? 'bg-primary-light' : 'hover:bg-neutral-50'}`}
-                  >
-                    <span className="flex items-center gap-2">
-                      <span className="font-medium">{item.label}</span>
-                      {!item.isAll && <span className="text-light text-sm">({item.count})</span>}
-                    </span>
-                    {isActive && <RiCheckLine className="text-primary h-5 w-5" aria-hidden="true" />}
-                  </Link>
-                );
-              })}
-            </div>
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+            return (
+              <Link
+                key={item.slug || 'all'}
+                href={href}
+                data-index={index}
+                onClick={onClose}
+                role="option"
+                aria-selected={isActive}
+                className={`flex w-full items-center justify-between px-4 py-3 text-left transition ${isActive ? 'bg-primary-light' : 'hover:bg-neutral-50'}`}
+              >
+                <span className="flex items-center gap-2">
+                  <span className="font-medium">{item.label}</span>
+                  {!item.isAll && <span className="text-light text-sm">({item.count})</span>}
+                </span>
+                {isActive && <RiCheckLine className="text-primary h-5 w-5" aria-hidden="true" />}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 }

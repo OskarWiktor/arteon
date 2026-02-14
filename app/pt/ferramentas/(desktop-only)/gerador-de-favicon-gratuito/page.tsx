@@ -161,12 +161,12 @@ export default function FaviconGeneratorPage() {
 
         <SectionInfo title="Porque é que cada site precisa de um favicon?">
           <p className="text-mid">
-            Um favicon é muito mais do que um pequeno ícone – é um elemento essencial da identidade da marca na web. Os navegadores apresentam-no no separador, os utilizadores veem-no nos favoritos e no
-            histórico, e o Lighthouse verifica a sua presença como boa prática. Sem favicon, um site parece incompleto.
+            Um favicon é muito mais do que um pequeno ícone – é um elemento essencial da identidade da marca na web. Os navegadores apresentam-no no separador, os utilizadores veem-no nos favoritos e
+            no histórico, e o Lighthouse verifica a sua presença como boa prática. Sem favicon, um site parece incompleto.
           </p>
           <p className="text-mid mt-3">
-            Os sites modernos precisam de favicons em vários tamanhos: um favicon.ico para navegadores antigos, ícones PNG para navegadores de desktop, um Apple Touch Icon para dispositivos iOS e ícones
-            maiores para instalações PWA no Android. Esta ferramenta gera todos os ficheiros necessários a partir de uma única imagem.
+            Os sites modernos precisam de favicons em vários tamanhos: um favicon.ico para navegadores antigos, ícones PNG para navegadores de desktop, um Apple Touch Icon para dispositivos iOS e
+            ícones maiores para instalações PWA no Android. Esta ferramenta gera todos os ficheiros necessários a partir de uma única imagem.
           </p>
         </SectionInfo>
 
@@ -314,14 +314,12 @@ export default function FaviconGeneratorPage() {
             {
               icon: <RiFolderZipLine className="h-6 w-6" />,
               title: 'Transferir tudo em ZIP',
-              description:
-                'O botão «Transferir tudo» agrupa todos os ficheiros gerados num único arquivo ZIP. A opção mais prática quando precisa do conjunto completo de ícones.',
+              description: 'O botão «Transferir tudo» agrupa todos os ficheiros gerados num único arquivo ZIP. A opção mais prática quando precisa do conjunto completo de ícones.',
             },
             {
               icon: <RiFileDownloadLine className="h-6 w-6" />,
               title: 'Transferir ficheiros individuais',
-              description:
-                'Cada ícone gerado tem o seu próprio botão de transferência: pode transferir um único ficheiro sem o conjunto completo. Útil quando precisa de atualizar apenas um tamanho.',
+              description: 'Cada ícone gerado tem o seu próprio botão de transferência: pode transferir um único ficheiro sem o conjunto completo. Útil quando precisa de atualizar apenas um tamanho.',
             },
           ]}
         />
@@ -352,9 +350,7 @@ export default function FaviconGeneratorPage() {
               icon: <RiHtml5Line className="h-5 w-5" />,
               content: (
                 <div>
-                  <p className="text-mid mb-3">
-                    Coloque os ficheiros gerados no diretório raiz do seu site (onde está o index.html). Depois adicione as tags correspondentes na secção &lt;head&gt;:
-                  </p>
+                  <p className="text-mid mb-3">Coloque os ficheiros gerados no diretório raiz do seu site (onde está o index.html). Depois adicione as tags correspondentes na secção &lt;head&gt;:</p>
                   <pre className="bg-primary-light mb-3 overflow-x-auto rounded-lg p-4 text-sm">
                     <code>{`<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/icon-32x32.png" type="image/png" sizes="32x32">

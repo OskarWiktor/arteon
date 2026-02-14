@@ -66,14 +66,7 @@ const schema = {
   applicationSubCategory: 'ColorTool',
   operatingSystem: 'Any',
   description: 'Extrator de cores gratuito. Importe uma foto ou logótipo e obtenha uma paleta de até 12 cores dominantes (HEX e RGB). Execução local.',
-  featureList: [
-    'Extração de até 12 cores dominantes',
-    'Códigos HEX e RGB',
-    'Cópia com um clique',
-    'Suporte PNG, JPG/JPEG, SVG',
-    'Execução local no navegador',
-    'Sem registo e sem limite',
-  ],
+  featureList: ['Extração de até 12 cores dominantes', 'Códigos HEX e RGB', 'Cópia com um clique', 'Suporte PNG, JPG/JPEG, SVG', 'Execução local no navegador', 'Sem registo e sem limite'],
   inLanguage: 'pt',
   isAccessibleForFree: true,
   offers: { '@type': 'Offer', price: 0, priceCurrency: 'EUR' },
@@ -149,8 +142,8 @@ export default function PaletteExtractorPage() {
 
         <SectionInfo title="Extrair as cores dominantes de uma imagem">
           <p className="text-mid">
-            O extrator de cores analisa a sua imagem e identifica as cores dominantes. O resultado é uma paleta de cores com códigos HEX copiáveis com um clique – pronta a ser utilizada nos seus projetos
-            de design, no seu site ou nas suas publicações nas redes sociais.
+            O extrator de cores analisa a sua imagem e identifica as cores dominantes. O resultado é uma paleta de cores com códigos HEX copiáveis com um clique – pronta a ser utilizada nos seus
+            projetos de design, no seu site ou nas suas publicações nas redes sociais.
           </p>
           <p className="text-mid mt-3">
             A ferramenta é particularmente útil para criar uma paleta de marca a partir de um logótipo, encontrar as cores dominantes de uma foto para um esquema de cores coerente, ou simplesmente
@@ -190,7 +183,8 @@ export default function PaletteExtractorPage() {
           }
         >
           <p className="text-mid mb-4">
-            Após a importação de uma imagem, o extrator apresenta uma lista de cores dominantes ordenadas da mais à menos presente. Cada cor é acompanhada do seu código HEX e do seu valor RGB – prontos a ser colados em CSS, Figma ou qualquer aplicação gráfica.
+            Após a importação de uma imagem, o extrator apresenta uma lista de cores dominantes ordenadas da mais à menos presente. Cada cor é acompanhada do seu código HEX e do seu valor RGB –
+            prontos a ser colados em CSS, Figma ou qualquer aplicação gráfica.
           </p>
           <p className="text-mid">
             O número de cores extraídas depende do conteúdo da imagem. Uma foto de paisagem produzirá uma paleta mais rica (8–12 cores), enquanto um logótipo simples a duas cores dará menos elementos.
@@ -246,8 +240,7 @@ export default function PaletteExtractorPage() {
             {
               icon: <RiStarLine className="h-5 w-5" />,
               title: 'Seleção das cores dominantes',
-              description:
-                'O algoritmo escolhe as cores que cobrem a maior superfície da imagem. O resultado é uma lista de até 12 cores ordenadas da mais à menos dominante.',
+              description: 'O algoritmo escolhe as cores que cobrem a maior superfície da imagem. O resultado é uma lista de até 12 cores ordenadas da mais à menos dominante.',
             },
             {
               icon: <RiContrastLine className="h-5 w-5" />,
@@ -328,20 +321,17 @@ export default function PaletteExtractorPage() {
             {
               icon: <RiBrushLine className="h-6 w-6" />,
               title: 'Construção de identidade visual',
-              description:
-                'Importe uma foto que capte a atmosfera da marca (uma paisagem, um interior, uma foto de produto) e extraia cores como ponto de partida para uma paleta de branding.',
+              description: 'Importe uma foto que capte a atmosfera da marca (uma paisagem, um interior, uma foto de produto) e extraia cores como ponto de partida para uma paleta de branding.',
             },
             {
               icon: <RiLayoutMasonryLine className="h-6 w-6" />,
               title: 'Visuais para redes sociais',
-              description:
-                'Extraia as cores de uma foto de produto e utilize-as como fundos ou acentos. As publicações baseadas nas cores de uma mesma fonte parecem coerentes no perfil.',
+              description: 'Extraia as cores de uma foto de produto e utilize-as como fundos ou acentos. As publicações baseadas nas cores de uma mesma fonte parecem coerentes no perfil.',
             },
             {
               icon: <RiPaintBrushLine className="h-6 w-6" />,
               title: 'Harmonizar as cores com um site',
-              description:
-                'Extraia as cores do logótipo e utilize-as como paleta do site: cor principal, cor de destaque, tons de fundo. Os códigos HEX colam-se diretamente no CSS.',
+              description: 'Extraia as cores do logótipo e utilize-as como paleta do site: cor principal, cor de destaque, tons de fundo. Os códigos HEX colam-se diretamente no CSS.',
             },
             {
               icon: <RiSearchEyeLine className="h-6 w-6" />,

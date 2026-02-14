@@ -114,8 +114,8 @@ export default function PrivacyPolicyPage() {
               .
             </p>
             <p>
-              Strona wykorzystuje mechanizm Google Consent Mode v2. Oznacza to, że skrypty analityczne i reklamowe Google nie zbierają danych do czasu wyrażenia zgody przez użytkownika
-              w bannerze cookie.
+              Strona wykorzystuje mechanizm Google Consent Mode v2. Oznacza to, że skrypty analityczne i reklamowe Google nie zbierają danych do czasu wyrażenia zgody przez użytkownika w bannerze
+              cookie.
             </p>
             <p>Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki. Ograniczenie plików cookie może wpłynąć na niektóre funkcje serwisu.</p>
           </SectionInfo>

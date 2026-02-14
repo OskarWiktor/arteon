@@ -252,7 +252,9 @@ export default function QrCodeGeneratorPage() {
                 </div>
                 <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3">
                   <span className="text-dark text-sm! font-medium">Fehlerkorrektur</span>
-                  <span className="text-mid text-sm!">7{'\u00a0'}% – 30{'\u00a0'}%</span>
+                  <span className="text-mid text-sm!">
+                    7{'\u00a0'}% – 30{'\u00a0'}%
+                  </span>
                 </div>
                 <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white p-3">
                   <span className="text-dark text-sm! font-medium">Min. Druckgröße</span>
@@ -273,10 +275,12 @@ export default function QrCodeGeneratorPage() {
           <p className="text-mid mb-4">Die Kenntnis der technischen Parameter hilft, QR-Codes zu erstellen, die unter allen Bedingungen lesbar sind:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Datenkapazität</strong> – ein QR-Code kann bis zu 7089 Ziffern, 4296 alphanumerische Zeichen oder 2953 Bytes Binärdaten speichern. In der Praxis reicht das für URLs und Visitenkarten mehr als aus.
+              <strong>Datenkapazität</strong> – ein QR-Code kann bis zu 7089 Ziffern, 4296 alphanumerische Zeichen oder 2953 Bytes Binärdaten speichern. In der Praxis reicht das für URLs und
+              Visitenkarten mehr als aus.
             </li>
             <li>
-              <strong>Reed-Solomon-Fehlerkorrektur</strong> – ein mathematischer Algorithmus, der das Lesen des Codes ermöglicht, auch wenn ein Teil beschädigt oder verdeckt ist. Stufen: L (7{'\u00a0'}%), M (15{'\u00a0'}%), Q (25{'\u00a0'}%), H (30{'\u00a0'}%).
+              <strong>Reed-Solomon-Fehlerkorrektur</strong> – ein mathematischer Algorithmus, der das Lesen des Codes ermöglicht, auch wenn ein Teil beschädigt oder verdeckt ist. Stufen: L (7
+              {'\u00a0'}%), M (15{'\u00a0'}%), Q (25{'\u00a0'}%), H (30{'\u00a0'}%).
             </li>
             <li>
               <strong>Rand</strong> – der weiße Bereich um den Code, der für korrektes Scannen erforderlich ist. Empfohlenes Minimum: 4 Module (Code-Einheiten).
@@ -368,10 +372,12 @@ export default function QrCodeGeneratorPage() {
           <p className="text-mid mb-4">Der Generator erlaubt die Anpassung mehrerer Parameter, die das Aussehen und die Lesbarkeit des Codes beeinflussen:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Größe (px)</strong> – die Abmessung des Codes in Pixeln. Für Standarddruck (Flyer, Visitenkarten) wählen Sie 300–500{'\u00a0'}px. Für digitale Nutzung reichen 150–200{'\u00a0'}px.
+              <strong>Größe (px)</strong> – die Abmessung des Codes in Pixeln. Für Standarddruck (Flyer, Visitenkarten) wählen Sie 300–500{'\u00a0'}px. Für digitale Nutzung reichen 150–200{'\u00a0'}
+              px.
             </li>
             <li>
-              <strong>Rand</strong> – der weiße Bereich um den Code, der für korrektes Scannen erforderlich ist. Empfohlener Wert: 2–4. Ein Wert von 0 kann das Scannen bei dunklem Hintergrund erschweren.
+              <strong>Rand</strong> – der weiße Bereich um den Code, der für korrektes Scannen erforderlich ist. Empfohlener Wert: 2–4. Ein Wert von 0 kann das Scannen bei dunklem Hintergrund
+              erschweren.
             </li>
             <li>
               <strong>QR-Code-Farbe</strong> – standardmäßig schwarz (#000000). Sie können eine beliebige dunkle Farbe wählen, die zu Ihrer visuellen Identität passt.

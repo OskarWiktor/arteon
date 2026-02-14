@@ -136,7 +136,12 @@ export default function WordCountPage() {
         backgroundImage="/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
       />
 
-      <Breadcrumbs second={{ href: '/pt/ferramentas', label: 'Ferramentas' }} third={{ href: '/pt/ferramentas/contador-de-palavras-e-caracteres', label: 'Contador de palavras' }} includeJsonLd locale="pt" />
+      <Breadcrumbs
+        second={{ href: '/pt/ferramentas', label: 'Ferramentas' }}
+        third={{ href: '/pt/ferramentas/contador-de-palavras-e-caracteres', label: 'Contador de palavras' }}
+        includeJsonLd
+        locale="pt"
+      />
 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />
@@ -152,8 +157,8 @@ export default function WordCountPage() {
             as páginas excessivamente longas sem estrutura clara podem desencorajar os leitores.
           </p>
           <p className="text-mid mt-3">
-            Esta ferramenta ajuda a verificar se o comprimento do seu texto corresponde às recomendações para diferentes tipos de páginas – artigos de blog, páginas de serviço, páginas iniciais e fichas
-            de produto. Conta as palavras, caracteres, parágrafos e estima o tempo de leitura.
+            Esta ferramenta ajuda a verificar se o comprimento do seu texto corresponde às recomendações para diferentes tipos de páginas – artigos de blog, páginas de serviço, páginas iniciais e
+            fichas de produto. Conta as palavras, caracteres, parágrafos e estima o tempo de leitura.
           </p>
         </SectionInfo>
 
@@ -248,16 +253,16 @@ export default function WordCountPage() {
               <strong className="text-success-text">Bom comprimento</strong> (verde) – o texto situa-se no intervalo aproximado para o tipo de página selecionado.
             </li>
             <li>
-              <strong className="text-warning-text">Abaixo do intervalo</strong> (amarelo) – o texto é mais curto do que a média para este tipo de página. Se responder a todas as perguntas do leitor, o
-              comprimento pode ser adequado.
+              <strong className="text-warning-text">Abaixo do intervalo</strong> (amarelo) – o texto é mais curto do que a média para este tipo de página. Se responder a todas as perguntas do leitor,
+              o comprimento pode ser adequado.
             </li>
             <li>
               <strong className="text-error-text">Acima do intervalo</strong> (vermelho) – o texto é mais longo do que a média. Se cada parágrafo traz informação nova, o comprimento é justificado.
             </li>
           </ul>
           <p className="text-mid mt-4">
-            Os intervalos são baseados na análise de conteúdos bem posicionados nos motores de pesquisa. Se o texto responde às perguntas do leitor, o comprimento é adequado independentemente do resultado
-            do contador.
+            Os intervalos são baseados na análise de conteúdos bem posicionados nos motores de pesquisa. Se o texto responde às perguntas do leitor, o comprimento é adequado independentemente do
+            resultado do contador.
           </p>
         </SectionDemo>
 
@@ -265,8 +270,8 @@ export default function WordCountPage() {
 
         <SectionInfo title="Quantas palavras deve ter um texto: comprimento ideal para SEO">
           <p className="text-mid mb-4">
-            Os intervalos abaixo são baseados na análise de conteúdos bem posicionados nos motores de pesquisa. O comprimento do texto por si só não influencia o posicionamento no Google: o que importa é
-            se o conteúdo responde às perguntas do leitor.
+            Os intervalos abaixo são baseados na análise de conteúdos bem posicionados nos motores de pesquisa. O comprimento do texto por si só não influencia o posicionamento no Google: o que
+            importa é se o conteúdo responde às perguntas do leitor.
           </p>
           <div className="overflow-x-auto">
             <table className="text-mid w-full text-left">
@@ -293,9 +298,7 @@ export default function WordCountPage() {
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Página inicial</td>
                   <td className="py-2 pr-4 whitespace-nowrap">400–1 000 palavras</td>
-                  <td className="text-primary-light0 py-2 text-sm">
-                    A página inicial transmite o valor principal e orienta os visitantes: o texto apoia a navegação, não substitui as subpáginas.
-                  </td>
+                  <td className="text-primary-light0 py-2 text-sm">A página inicial transmite o valor principal e orienta os visitantes: o texto apoia a navegação, não substitui as subpáginas.</td>
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-2 pr-4">Landing page</td>
@@ -327,7 +330,8 @@ export default function WordCountPage() {
             {
               icon: <RiEditLine className="h-6 w-6" />,
               title: 'Redatores e criadores de conteúdo',
-              description: 'Verifique se o texto se situa no intervalo recomendado para um tipo de página específico. O contador de palavras SEO ajuda a avaliar se um artigo está suficientemente desenvolvido.',
+              description:
+                'Verifique se o texto se situa no intervalo recomendado para um tipo de página específico. O contador de palavras SEO ajuda a avaliar se um artigo está suficientemente desenvolvido.',
             },
             {
               icon: <RiBloggerLine className="h-6 w-6" />,

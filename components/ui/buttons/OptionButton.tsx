@@ -1,7 +1,7 @@
 'use client';
 
 import React, { type KeyboardEvent } from 'react';
-import * as FiIcons from 'react-icons/fi';
+import { CALC_ICONS } from '@/components/ui/icons/CalcIcons';
 
 interface OptionButtonProps {
   optValue: string;
@@ -20,7 +20,7 @@ export default function OptionButton({ optValue, label, tooltip, selected, onCli
     }
   };
 
-  const IconComponent = icon && icon in FiIcons ? (FiIcons as Record<string, React.ComponentType<{ className?: string }>>)[icon] : null;
+  const IconComponent = icon && icon in CALC_ICONS ? CALC_ICONS[icon] : null;
 
   return (
     <button key={optValue} onClick={onClick} onKeyDown={handleKey} tabIndex={0} className={`calc-option-button ${selected ? 'calc-option-button-selected' : 'calc-option-button-unselected'}`}>

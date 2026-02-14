@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { RiTranslate2 } from 'react-icons/ri';
+import { NavTranslate2 as RiTranslate2 } from '@/components/ui/icons/NavIcons';
 import { useLocale, type Locale } from '@/lib/LocaleContext';
 import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
 import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';

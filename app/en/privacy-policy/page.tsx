@@ -94,8 +94,8 @@ export default function PrivacyPolicyPage() {
               <li>displaying interest-based ads (Google AdSense / DoubleClick).</li>
             </ul>
             <p>
-              Google AdSense may use DoubleClick cookies to serve ads based on a user&apos;s previous visits to our website or other websites. Third-party providers (including Google) use these cookies
-              to serve ads based on browsing history.
+              Google AdSense may use DoubleClick cookies to serve ads based on a user&apos;s previous visits to our website or other websites. Third-party providers (including Google) use these
+              cookies to serve ads based on browsing history.
             </p>
             <p>
               You can opt out of personalised ads at{' '}
@@ -108,9 +108,7 @@ export default function PrivacyPolicyPage() {
               </a>
               .
             </p>
-            <p>
-              The website uses Google Consent Mode v2. This means that Google analytics and advertising scripts do not collect data until the user gives consent via the cookie banner.
-            </p>
+            <p>The website uses Google Consent Mode v2. This means that Google analytics and advertising scripts do not collect data until the user gives consent via the cookie banner.</p>
             <p>You can manage cookies in your browser settings. Restricting cookies may affect some website features.</p>
           </SectionInfo>
 
@@ -130,17 +128,15 @@ export default function PrivacyPolicyPage() {
           <Gap variant="line" size="sm" />
 
           <SectionInfo title="6. Data Processing Agreement (DPA)">
-            <p>
-              Upon request, we enter into a data processing agreement (DPA) when we process data on behalf of a client (e.g. as part of website maintenance, tool or system configuration).
-            </p>
+            <p>Upon request, we enter into a data processing agreement (DPA) when we process data on behalf of a client (e.g. as part of website maintenance, tool or system configuration).</p>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
 
           <SectionInfo title="7. Data Transfers Outside the EEA">
             <p>
-              Google and Vercel may process data outside the European Economic Area. Appropriate legal safeguards are applied (including Standard Contractual Clauses approved by the European Commission)
-              and, where possible, technical measures (pseudonymisation, minimisation).
+              Google and Vercel may process data outside the European Economic Area. Appropriate legal safeguards are applied (including Standard Contractual Clauses approved by the European
+              Commission) and, where possible, technical measures (pseudonymisation, minimisation).
             </p>
           </SectionInfo>
 

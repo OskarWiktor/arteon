@@ -174,7 +174,7 @@ export default function PaletteExtractorPage() {
         <Gap variant="line" />
 
         <SectionDemo
-          title={"Comment se pr\u00e9sente une palette de couleurs extraite ?"}
+          title={'Comment se pr\u00e9sente une palette de couleurs extraite ?'}
           demo={
             <div className="space-y-3">
               <div className="grid grid-cols-4 gap-2">
@@ -190,10 +190,14 @@ export default function PaletteExtractorPage() {
           }
         >
           <p className="text-mid mb-4">
-            {"Apr\u00e8s l'import d'une image, l'extracteur affiche une liste de couleurs dominantes class\u00e9es de la plus \u00e0 la moins pr\u00e9sente. Chaque couleur est accompagn\u00e9e de son code HEX et de sa valeur RGB \u2013 pr\u00eats \u00e0 \u00eatre coll\u00e9s dans CSS, Figma ou toute application graphique."}
+            {
+              "Apr\u00e8s l'import d'une image, l'extracteur affiche une liste de couleurs dominantes class\u00e9es de la plus \u00e0 la moins pr\u00e9sente. Chaque couleur est accompagn\u00e9e de son code HEX et de sa valeur RGB \u2013 pr\u00eats \u00e0 \u00eatre coll\u00e9s dans CSS, Figma ou toute application graphique."
+            }
           </p>
           <p className="text-mid">
-            {"Le nombre de couleurs extraites d\u00e9pend du contenu de l'image. Une photo de paysage produira une palette plus riche (8\u201312 couleurs), tandis qu'un logo simple \u00e0 deux couleurs donnera moins d'\u00e9l\u00e9ments."}
+            {
+              "Le nombre de couleurs extraites d\u00e9pend du contenu de l'image. Une photo de paysage produira une palette plus riche (8\u201312 couleurs), tandis qu'un logo simple \u00e0 deux couleurs donnera moins d'\u00e9l\u00e9ments."
+            }
           </p>
         </SectionDemo>
 
@@ -365,10 +369,10 @@ export default function PaletteExtractorPage() {
           items={[
             ...faqItems,
             {
-              question: "Puis-je copier toutes les couleurs de la palette en une seule fois ?",
+              question: 'Puis-je copier toutes les couleurs de la palette en une seule fois ?',
               answer:
                 "Actuellement, l'outil permet de copier les couleurs une par une \u2013 chaque couleur dispose d'un bouton qui copie le code HEX dans le presse-papiers. Le code copi\u00e9 peut \u00eatre coll\u00e9 directement dans Figma, Photoshop, CSS ou toute autre application.",
-              answerSchemaText: "Actuellement, les couleurs se copient une par une via le bouton \u00e0 c\u00f4t\u00e9 de chaque couleur.",
+              answerSchemaText: 'Actuellement, les couleurs se copient une par une via le bouton \u00e0 c\u00f4t\u00e9 de chaque couleur.',
             },
           ]}
         />

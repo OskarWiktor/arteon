@@ -116,7 +116,12 @@ export default function WcagContrastPage() {
         backgroundImage="/assets/tools/narzedzia-tester-kontrastu-kolorow-wcag.webp"
       />
 
-      <Breadcrumbs second={{ href: '/pt/ferramentas', label: 'Ferramentas' }} third={{ href: '/pt/ferramentas/verificador-de-contraste-de-cores', label: 'Contraste de cores' }} includeJsonLd locale="pt" />
+      <Breadcrumbs
+        second={{ href: '/pt/ferramentas', label: 'Ferramentas' }}
+        third={{ href: '/pt/ferramentas/verificador-de-contraste-de-cores', label: 'Contraste de cores' }}
+        includeJsonLd
+        locale="pt"
+      />
 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />
@@ -189,17 +194,21 @@ export default function WcagContrastPage() {
 
         <SectionInfo title="O que significam os resultados do teste de legibilidade?">
           <p className="text-mid mb-4">
-            A ferramenta apresenta o rácio de contraste numa escala de 1:1 (nenhum contraste) a 21:1 (contraste máximo – preto sobre branco). O resultado é comparado com os limiares definidos na norma WCAG:
+            A ferramenta apresenta o rácio de contraste numa escala de 1:1 (nenhum contraste) a 21:1 (contraste máximo – preto sobre branco). O resultado é comparado com os limiares definidos na norma
+            WCAG:
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Texto normal</strong> – necessita de pelo menos 4,5:1 para o nível AA (padrão mínimo) ou 7:1 para o nível AAA (padrão melhorado). Aplica-se a texto inferior a 18pt (24px) ou inferior a 14pt (18,5px) a negrito.
+              <strong>Texto normal</strong> – necessita de pelo menos 4,5:1 para o nível AA (padrão mínimo) ou 7:1 para o nível AAA (padrão melhorado). Aplica-se a texto inferior a 18pt (24px) ou
+              inferior a 14pt (18,5px) a negrito.
             </li>
             <li>
-              <strong>Texto grande / negrito</strong> – necessita de pelo menos 3:1 para o nível AA ou 4,5:1 para o nível AAA. Aplica-se a texto a partir de 18pt (24px) ou a partir de 14pt (18,5px) a negrito – títulos, botões, destaques.
+              <strong>Texto grande / negrito</strong> – necessita de pelo menos 3:1 para o nível AA ou 4,5:1 para o nível AAA. Aplica-se a texto a partir de 18pt (24px) ou a partir de 14pt (18,5px) a
+              negrito – títulos, botões, destaques.
             </li>
             <li>
-              <strong>Ícones e elementos de interface</strong> – necessitam de pelo menos 3:1 para o nível AA. Aplica-se a ícones, botões, campos de formulário e outros elementos de interface que transmitem informação.
+              <strong>Ícones e elementos de interface</strong> – necessitam de pelo menos 3:1 para o nível AA. Aplica-se a ícones, botões, campos de formulário e outros elementos de interface que
+              transmitem informação.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -225,7 +234,8 @@ export default function WcagContrastPage() {
             <li>A cor sugerida pode ser copiada para a área de transferência ou definida imediatamente como nova cor de texto.</li>
           </ol>
           <p className="text-mid mt-3">
-            O algoritmo preserva a tonalidade e a saturação da cor original, alterando apenas a luminosidade. A cor sugerida mantém-se coerente com a identidade visual, respeitando a norma de acessibilidade.
+            O algoritmo preserva a tonalidade e a saturação da cor original, alterando apenas a luminosidade. A cor sugerida mantém-se coerente com a identidade visual, respeitando a norma de
+            acessibilidade.
           </p>
         </SectionInfo>
 
@@ -254,17 +264,20 @@ export default function WcagContrastPage() {
           <h3 className="h5 mb-2">Mensagem de erro de formato de cor</h3>
           <p className="text-mid mb-4">
             Verifique o formato da cor. Um código HEX deve começar por <code className="rounded bg-black/5 px-1">#</code> e conter 3 ou 6 caracteres (por ex.{' '}
-            <code className="rounded bg-black/5 px-1">#fff</code> ou <code className="rounded bg-black/5 px-1">#ffffff</code>). Para o formato RGB, verifique se os valores estão separados por vírgulas e compreendidos entre 0 e 255.
+            <code className="rounded bg-black/5 px-1">#fff</code> ou <code className="rounded bg-black/5 px-1">#ffffff</code>). Para o formato RGB, verifique se os valores estão separados por vírgulas
+            e compreendidos entre 0 e 255.
           </p>
 
           <h3 className="h5 mb-2">A função Ajustar não encontra uma cor adequada</h3>
           <p className="text-mid mb-4">
-            Quando o fundo e o texto têm luminosidade semelhante na mesma tonalidade, o algoritmo pode não encontrar uma variante conforme às exigências sem alterar a tonalidade. Neste caso, considere modificar a cor de fundo ou escolher uma cor de texto completamente diferente.
+            Quando o fundo e o texto têm luminosidade semelhante na mesma tonalidade, o algoritmo pode não encontrar uma variante conforme às exigências sem alterar a tonalidade. Neste caso, considere
+            modificar a cor de fundo ou escolher uma cor de texto completamente diferente.
           </p>
 
           <h3 className="h5 mb-2">A cor no seletor não corresponde ao código introduzido</h3>
           <p className="text-mid">
-            O seletor de cores do navegador suporta apenas o formato HEX sem transparência. Se introduzir uma cor no formato RGBA ou HSLA com transparência, o seletor mostrará apenas a parte colorida (sem alfa). Os cálculos de contraste continuam a ter em conta a transparência.
+            O seletor de cores do navegador suporta apenas o formato HEX sem transparência. Se introduzir uma cor no formato RGBA ou HSLA com transparência, o seletor mostrará apenas a parte colorida
+            (sem alfa). Os cálculos de contraste continuam a ter em conta a transparência.
           </p>
         </SectionInfo>
 
@@ -308,7 +321,8 @@ export default function WcagContrastPage() {
 
         <SectionInfo title="Legibilidade das cores para pessoas daltónicas">
           <p className="text-mid mb-4">
-            O daltonismo é uma perturbação da perceção das cores que afeta cerca de 8{'\u00a0'}% dos homens e 0,5{'\u00a0'}% das mulheres. As pessoas daltónicas podem ter dificuldade em distinguir certos pares de cores, mesmo que o contraste de luminosidade seja suficiente.
+            O daltonismo é uma perturbação da perceção das cores que afeta cerca de 8{'\u00a0'}% dos homens e 0,5{'\u00a0'}% das mulheres. As pessoas daltónicas podem ter dificuldade em distinguir
+            certos pares de cores, mesmo que o contraste de luminosidade seja suficiente.
           </p>
           <p className="text-mid mb-4">Tipos mais comuns de daltonismo:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
@@ -323,7 +337,8 @@ export default function WcagContrastPage() {
             </li>
           </ul>
           <p className="text-mid mt-3">
-            Esta ferramenta verifica o contraste de luminosidade, que é importante para todos os utilizadores. No entanto, ao conceber, convém evitar combinações de cores problemáticas (por ex. texto vermelho sobre fundo verde) e não depender apenas da cor para transmitir informação – utilize também formas, ícones e texto.
+            Esta ferramenta verifica o contraste de luminosidade, que é importante para todos os utilizadores. No entanto, ao conceber, convém evitar combinações de cores problemáticas (por ex. texto
+            vermelho sobre fundo verde) e não depender apenas da cor para transmitir informação – utilize também formas, ícones e texto.
           </p>
         </SectionInfo>
 

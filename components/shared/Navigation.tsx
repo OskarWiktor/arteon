@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { RiMenuLine, RiCloseLine, RiSearchLine, RiMailSettingsLine } from 'react-icons/ri';
+import { NavMenuLine as RiMenuLine, NavCloseLine as RiCloseLine, NavSearchLine as RiSearchLine, NavMailSettingsLine as RiMailSettingsLine } from '@/components/ui/icons/NavIcons';
 import Image from 'next/image';
 
 import MobileNavigation from './navigation/MobileNavigation';
@@ -127,7 +127,7 @@ export default function Navigation() {
               </button>
             )}
             <IconButton onClick={toggleMenu} label={isOpen ? t.closeMenu : t.openMenu} aria-expanded={isOpen} size="md" className="block h-auto w-auto p-1">
-              {isOpen ? <RiCloseLine size={28} aria-hidden="true" /> : <RiMenuLine size={28} aria-hidden="true" />}
+              {isOpen ? <RiCloseLine width={28} height={28} aria-hidden="true" /> : <RiMenuLine width={28} height={28} aria-hidden="true" />}
             </IconButton>
           </div>
         </nav>

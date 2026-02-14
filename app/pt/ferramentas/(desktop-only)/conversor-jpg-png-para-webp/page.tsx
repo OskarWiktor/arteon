@@ -59,8 +59,7 @@ const schema = {
   applicationCategory: 'MultimediaApplication',
   applicationSubCategory: 'ImageConverter',
   operatingSystem: 'Any',
-  description:
-    'Conversor online gratuito de JPG e PNG para WebP. Reduza o tamanho dos ficheiros até 35% sem perda de qualidade. Processamento em lote, otimização automática, execução local.',
+  description: 'Conversor online gratuito de JPG e PNG para WebP. Reduza o tamanho dos ficheiros até 35% sem perda de qualidade. Processamento em lote, otimização automática, execução local.',
   featureList: [
     'Converter ficheiros JPG e PNG para WebP',
     'Reduzir o tamanho dos ficheiros até 35%',
@@ -158,8 +157,8 @@ export default function JpgPngToWebpPage() {
 
         <SectionInfo title="Porquê converter JPG e PNG para WebP?">
           <p className="text-mid">
-            O formato WebP oferece ficheiros significativamente mais leves do que JPG e PNG com qualidade visual equivalente. Imagens mais leves significam tempos de carregamento mais rápidos para o seu
-            site, melhores Core Web Vitals e melhor experiência do utilizador. A Google recomenda WebP como formato preferencial para imagens web.
+            O formato WebP oferece ficheiros significativamente mais leves do que JPG e PNG com qualidade visual equivalente. Imagens mais leves significam tempos de carregamento mais rápidos para o
+            seu site, melhores Core Web Vitals e melhor experiência do utilizador. A Google recomenda WebP como formato preferencial para imagens web.
           </p>
           <p className="text-mid mt-3">
             Em comparação com JPG, o WebP produz ficheiros em média 25 a 35% mais leves com qualidade igual. Em comparação com PNG, a poupança pode ser ainda maior em compressão com perdas. O WebP
@@ -306,9 +305,7 @@ export default function JpgPngToWebpPage() {
         <Gap variant="line" />
 
         <SectionInfo title="Como funciona a Smart Quality?">
-          <p className="text-mid">
-            Smart Quality é um mecanismo de otimização automática que garante que o ficheiro WebP convertido nunca será maior que o original. Funciona assim:
-          </p>
+          <p className="text-mid">Smart Quality é um mecanismo de otimização automática que garante que o ficheiro WebP convertido nunca será maior que o original. Funciona assim:</p>
           <ol className="text-mid mt-3 ml-6 list-decimal space-y-2">
             <li>A ferramenta converte a imagem com a qualidade que definiu (ex.: 80{'\u00a0'}%).</li>
             <li>Verifica se o ficheiro de saída é mais leve que o original.</li>
@@ -316,12 +313,10 @@ export default function JpgPngToWebpPage() {
             <li>O processo repete-se até que o ficheiro de saída seja mais leve ou que a qualidade desça abaixo de um mínimo seguro.</li>
           </ol>
           <p className="text-mid mt-3">
-            A ferramenta escolhe automaticamente os parâmetros ideais. Se uma imagem já estiver muito comprimida (ex.: um JPG a 60{'\u00a0'}% de qualidade), os parâmetros serão automaticamente ajustados
-            para conseguir mesmo assim uma redução de tamanho.
+            A ferramenta escolhe automaticamente os parâmetros ideais. Se uma imagem já estiver muito comprimida (ex.: um JPG a 60{'\u00a0'}% de qualidade), os parâmetros serão automaticamente
+            ajustados para conseguir mesmo assim uma redução de tamanho.
           </p>
-          <p className="text-mid mt-3">
-            Para cada ficheiro, verá a indicação &quot;Qualidade WebP utilizada&quot; – é a qualidade efetivamente aplicada após um eventual ajuste pela Smart Quality.
-          </p>
+          <p className="text-mid mt-3">Para cada ficheiro, verá a indicação &quot;Qualidade WebP utilizada&quot; – é a qualidade efetivamente aplicada após um eventual ajuste pela Smart Quality.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -352,17 +347,23 @@ export default function JpgPngToWebpPage() {
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Foto JPG (câmara)</p>
-              <p className="text-light text-sm">2,4{'\u00a0'}MB → 890{'\u00a0'}KB</p>
+              <p className="text-light text-sm">
+                2,4{'\u00a0'}MB → 890{'\u00a0'}KB
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Poupança: ~63{'\u00a0'}%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Gráfico PNG (logótipo)</p>
-              <p className="text-light text-sm">180{'\u00a0'}KB → 45{'\u00a0'}KB</p>
+              <p className="text-light text-sm">
+                180{'\u00a0'}KB → 45{'\u00a0'}KB
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Poupança: ~75{'\u00a0'}%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Foto de produto</p>
-              <p className="text-light text-sm">500{'\u00a0'}KB → 185{'\u00a0'}KB</p>
+              <p className="text-light text-sm">
+                500{'\u00a0'}KB → 185{'\u00a0'}KB
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Poupança: ~63{'\u00a0'}%</p>
             </div>
           </div>
@@ -470,8 +471,7 @@ export default function JpgPngToWebpPage() {
             ...faqItems,
             {
               question: 'Posso converter ficheiros que não sejam JPG e PNG?',
-              answer:
-                'A ferramenta está otimizada para os formatos JPG e PNG. Os outros formatos (ex.: GIF, BMP, TIFF) são automaticamente ignorados ao adicionar.',
+              answer: 'A ferramenta está otimizada para os formatos JPG e PNG. Os outros formatos (ex.: GIF, BMP, TIFF) são automaticamente ignorados ao adicionar.',
               answerSchemaText: 'Apenas JPG e PNG. Os outros formatos são automaticamente ignorados.',
             },
             {

@@ -91,14 +91,7 @@ export function getToolSoftwareSchema(opts: {
 /**
  * Generate JSON-LD HowTo schema for a tool page.
  */
-export function getToolHowToSchema(opts: {
-  toolKey: ToolItemKey;
-  locale: Locale;
-  name: string;
-  description: string;
-  totalTime?: string;
-  steps: { name: string; text: string }[];
-}) {
+export function getToolHowToSchema(opts: { toolKey: ToolItemKey; locale: Locale; name: string; description: string; totalTime?: string; steps: { name: string; text: string }[] }) {
   const href = getToolHref(opts.toolKey, opts.locale);
   return {
     '@context': 'https://schema.org',

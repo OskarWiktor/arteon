@@ -484,13 +484,15 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Cómo cambiar el color</h3>
           <p className="text-mid">
-            Junto a cada elemento encontrará una fila de opciones de color. Haga clic en un cuadrado de color para seleccionarlo. También puede añadir un color personalizado haciendo clic en el cuadrado de color con el signo más: elija un color y haga clic en Guardar. Los colores personalizados (hasta 8) se comparten entre todos los elementos.
+            Junto a cada elemento encontrará una fila de opciones de color. Haga clic en un cuadrado de color para seleccionarlo. También puede añadir un color personalizado haciendo clic en el
+            cuadrado de color con el signo más: elija un color y haga clic en Guardar. Los colores personalizados (hasta 8) se comparten entre todos los elementos.
           </p>
           <p className="text-mid mt-3">El botón con icono de reinicio restaura el color predeterminado del elemento.</p>
 
           <h3 className="h5 mt-6 mb-3">Cómo cambiar el tamaño</h3>
           <p className="text-mid">
-            En la segunda línea encontrará el control de tamaño con botones - y +. El valor muestra el desplazamiento respecto al tamaño de fuente base (configurado en la pestaña Apariencia). Rango: de -4 a +4 píxeles.
+            En la segunda línea encontrará el control de tamaño con botones - y +. El valor muestra el desplazamiento respecto al tamaño de fuente base (configurado en la pestaña Apariencia). Rango:
+            de -4 a +4 píxeles.
           </p>
         </SectionInfo>
 
@@ -503,12 +505,14 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Margen interno de la firma</h3>
           <p className="text-mid">
-            En la parte superior de la pestaña encontrará la opción de margen interno, es decir, la distancia entre el contenido de la firma y sus bordes. Hay tres valores disponibles: 8 px (pequeño), 16 px (mediano) y 24 px (grande).
+            En la parte superior de la pestaña encontrará la opción de margen interno, es decir, la distancia entre el contenido de la firma y sus bordes. Hay tres valores disponibles: 8 px (pequeño),
+            16 px (mediano) y 24 px (grande).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Espaciado entre elementos</h3>
           <p className="text-mid">
-            Debajo del margen encontrará controles para los elementos individuales de la firma. Cada control tiene botones + y - para aumentar o disminuir el espaciado. Solo se muestran las opciones de los elementos que actualmente están en la firma.
+            Debajo del margen encontrará controles para los elementos individuales de la firma. Cada control tiene botones + y - para aumentar o disminuir el espaciado. Solo se muestran las opciones
+            de los elementos que actualmente están en la firma.
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
@@ -540,23 +544,30 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Autoguardado y reinicio de configuración">
           <p className="text-mid">
-            El generador guarda automáticamente todas las configuraciones en la memoria del navegador (localStorage). Después de actualizar la página o volver a abrir la herramienta, los datos, diseño, colores y todas las demás opciones se restaurarán.
+            El generador guarda automáticamente todas las configuraciones en la memoria del navegador (localStorage). Después de actualizar la página o volver a abrir la herramienta, los datos,
+            diseño, colores y todas las demás opciones se restaurarán.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Cómo funciona el autoguardado</h3>
-          <p className="text-mid">Cada cambio (texto, color, diseño, espaciado) se guarda inmediatamente en la memoria del navegador. El guardado ocurre automáticamente en segundo plano, sin necesidad de hacer clic en ningún botón.</p>
+          <p className="text-mid">
+            Cada cambio (texto, color, diseño, espaciado) se guarda inmediatamente en la memoria del navegador. El guardado ocurre automáticamente en segundo plano, sin necesidad de hacer clic en
+            ningún botón.
+          </p>
 
           <h3 className="h5 mt-6 mb-3">Cómo reiniciar la configuración</h3>
           <p className="text-mid">
-            Debajo de la vista previa de la firma encontrará el botón <strong>Reiniciar apariencia</strong>. Al hacer clic aparecerá una ventana de confirmación. Confirmar el reinicio restaurará todos los datos y configuraciones a los valores predeterminados. Esta operación no se puede deshacer.
+            Debajo de la vista previa de la firma encontrará el botón <strong>Reiniciar apariencia</strong>. Al hacer clic aparecerá una ventana de confirmación. Confirmar el reinicio restaurará todos
+            los datos y configuraciones a los valores predeterminados. Esta operación no se puede deshacer.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Exportar e importar configuración</h3>
           <p className="text-mid">
-            Debajo de la vista previa de la firma encontrará dos botones adicionales: <strong>Exportar configuración</strong> e <strong>Importar configuración</strong>. La exportación guarda todos los datos, colores, diseño, espaciado y estilos de texto en un archivo JSON. La importación carga una configuración guardada previamente desde un archivo.
+            Debajo de la vista previa de la firma encontrará dos botones adicionales: <strong>Exportar configuración</strong> e <strong>Importar configuración</strong>. La exportación guarda todos los
+            datos, colores, diseño, espaciado y estilos de texto en un archivo JSON. La importación carga una configuración guardada previamente desde un archivo.
           </p>
           <p className="text-mid mt-3">
-            Esta función es especialmente útil cuando quiere transferir la configuración de la firma entre ordenadores, compartir configuraciones con compañeros o mantener una copia de seguridad de sus ajustes antes de reiniciar.
+            Esta función es especialmente útil cuando quiere transferir la configuración de la firma entre ordenadores, compartir configuraciones con compañeros o mantener una copia de seguridad de
+            sus ajustes antes de reiniciar.
           </p>
         </SectionInfo>
 
@@ -589,12 +600,14 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Vista previa de la firma y opciones de exportación">
           <p className="text-mid">
-            El panel de vista previa se muestra a la derecha del editor y se actualiza automáticamente con cada cambio. La vista previa está fijada a la pantalla (sticky), por lo que permanece visible incluso mientras se desplaza por las opciones de edición.
+            El panel de vista previa se muestra a la derecha del editor y se actualiza automáticamente con cada cambio. La vista previa está fijada a la pantalla (sticky), por lo que permanece visible
+            incluso mientras se desplaza por las opciones de edición.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Cambio de fondo de la vista previa</h3>
           <p className="text-mid">
-            Encima de la vista previa encontrará tres botones de cambio de fondo: <strong>Claro</strong> (fondo gris predeterminado), <strong>Oscuro</strong> (fondo oscuro, útil para comprobar la legibilidad en fondo oscuro) y <strong>Cuadrícula</strong> (patrón de cuadrícula, permite ver la transparencia y los bordes de la firma).
+            Encima de la vista previa encontrará tres botones de cambio de fondo: <strong>Claro</strong> (fondo gris predeterminado), <strong>Oscuro</strong> (fondo oscuro, útil para comprobar la
+            legibilidad en fondo oscuro) y <strong>Cuadrícula</strong> (patrón de cuadrícula, permite ver la transparencia y los bordes de la firma).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Botones de acción</h3>

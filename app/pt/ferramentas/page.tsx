@@ -27,13 +27,11 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Ferramentas online gratuitas | Imagens, SEO, cores, favicon',
-  description:
-    '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
+  description: '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
   alternates: getToolsIndexAlternates('pt'),
   openGraph: {
     title: 'Ferramentas online gratuitas | Imagens, SEO, cores, favicon',
-    description:
-      '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
+    description: '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
     url: toAbsoluteUrl('/pt/ferramentas'),
     type: 'website',
     images: [
@@ -50,8 +48,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ferramentas online gratuitas',
-  description:
-    '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
+  description: '10 ferramentas online gratuitas: conversor WebP, gerador de favicon, contador de texto, extrator de cores e códigos QR. Para sites, redes sociais e impressão. Sem registo.',
   url: toAbsoluteUrl('/pt/ferramentas'),
   inLanguage: 'pt',
   isPartOf: {
@@ -73,8 +70,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'Conversor JPG e PNG para WebP online',
-        description:
-          'Conversor online gratuito de JPG e PNG para WebP. Reduz o peso dos ficheiros até 35 % sem perda de qualidade visível. Sem registo – os ficheiros permanecem no seu navegador.',
+        description: 'Conversor online gratuito de JPG e PNG para WebP. Reduz o peso dos ficheiros até 35 % sem perda de qualidade visível. Sem registo – os ficheiros permanecem no seu navegador.',
         url: toAbsoluteUrl('/pt/ferramentas/conversor-jpg-png-para-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -281,9 +277,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/narzedzia-licznik-dlugosci-meta-title-i-description.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>
-                    Verifique o número de caracteres, palavras e a largura em píxeis – com pré-visualização da aparência da sua página nos resultados Google. Evite títulos e descrições truncados.
-                  </p>
+                  <p>Verifique o número de caracteres, palavras e a largura em píxeis – com pré-visualização da aparência da sua página nos resultados Google. Evite títulos e descrições truncados.</p>
                   <div className="mt-4">
                     <Button arrow link="/pt/ferramentas/verificador-de-meta-titulo-e-descricao">
                       Abrir ferramenta

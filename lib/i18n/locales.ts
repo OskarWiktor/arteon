@@ -82,21 +82,11 @@ export const LEGAL_LINKS: Record<Locale, LegalLink[]> = {
     { key: 'regulamin', href: '/regulamin', label: 'Regulamin świadczenia usług' },
     { key: 'privacy', href: '/polityka-prywatnosci', label: 'Polityka Prywatności' },
   ],
-  en: [
-    { key: 'privacy', href: '/en/privacy-policy', label: 'Privacy Policy' },
-  ],
-  de: [
-    { key: 'privacy', href: '/de/datenschutzrichtlinie', label: 'Datenschutzrichtlinie' },
-  ],
-  es: [
-    { key: 'privacy', href: '/es/politica-de-privacidad', label: 'Política de privacidad' },
-  ],
-  fr: [
-    { key: 'privacy', href: '/fr/politique-de-confidentialite', label: 'Politique de confidentialité' },
-  ],
-  pt: [
-    { key: 'privacy', href: '/pt/politica-de-privacidade', label: 'Política de Privacidade' },
-  ],
+  en: [{ key: 'privacy', href: '/en/privacy-policy', label: 'Privacy Policy' }],
+  de: [{ key: 'privacy', href: '/de/datenschutzrichtlinie', label: 'Datenschutzrichtlinie' }],
+  es: [{ key: 'privacy', href: '/es/politica-de-privacidad', label: 'Política de privacidad' }],
+  fr: [{ key: 'privacy', href: '/fr/politique-de-confidentialite', label: 'Politique de confidentialité' }],
+  pt: [{ key: 'privacy', href: '/pt/politica-de-privacidade', label: 'Política de Privacidade' }],
 };
 
 export function getLegalLinks(locale: Locale): LegalLink[] {

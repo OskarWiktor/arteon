@@ -201,14 +201,17 @@ export default function JpgPngToWebpPage() {
               <strong>Drag &amp; Drop</strong> – ziehen Sie Dateien aus einem Ordner auf Ihrem Computer und legen Sie sie im markierten Bereich ab. Sie können mehrere Dateien gleichzeitig ziehen.
             </li>
             <li>
-              <strong>Auswahl vom Gerät</strong> – klicken Sie in den Bereich zum Hinzufügen von Dateien. Es öffnet sich ein Auswahldialog. Mit gedrückter Strg-Taste (oder Cmd auf Mac) können Sie mehrere Dateien gleichzeitig auswählen.
+              <strong>Auswahl vom Gerät</strong> – klicken Sie in den Bereich zum Hinzufügen von Dateien. Es öffnet sich ein Auswahldialog. Mit gedrückter Strg-Taste (oder Cmd auf Mac) können Sie
+              mehrere Dateien gleichzeitig auswählen.
             </li>
           </ul>
           <p className="text-mid mt-3">
-            Das Tool akzeptiert nur JPG- und PNG-Dateien. Wenn Sie versehentlich eine Datei in einem anderen Format (z.{'\u00a0'}B. GIF oder BMP) hinzufügen, wird sie automatisch übersprungen und Sie sehen eine Informationsmeldung.
+            Das Tool akzeptiert nur JPG- und PNG-Dateien. Wenn Sie versehentlich eine Datei in einem anderen Format (z.{'\u00a0'}B. GIF oder BMP) hinzufügen, wird sie automatisch übersprungen und Sie
+            sehen eine Informationsmeldung.
           </p>
           <p className="text-mid mt-3">
-            <strong>Datenschutz:</strong> Alle Dateien werden lokal im Browser verarbeitet. Sie werden nirgendwohin gesendet – sie gelangen auf keinen Server. Nach dem Schließen des Tabs oder Browsers werden die Dateien aus dem Speicher gelöscht.
+            <strong>Datenschutz:</strong> Alle Dateien werden lokal im Browser verarbeitet. Sie werden nirgendwohin gesendet – sie gelangen auf keinen Server. Nach dem Schließen des Tabs oder Browsers
+            werden die Dateien aus dem Speicher gelöscht.
           </p>
         </SectionInfo>
 
@@ -308,15 +311,20 @@ export default function JpgPngToWebpPage() {
             Smart Quality ist ein automatischer Optimierungsmechanismus, der sicherstellt, dass die konvertierte WebP-Datei nie größer als das Original ist. So funktioniert es:
           </p>
           <ol className="text-mid mt-3 ml-6 list-decimal space-y-2">
-            <li>Das Tool konvertiert das Bild mit der von Ihnen eingestellten Qualität (z.{'\u00a0'}B. 80{'\u00a0'}%).</li>
+            <li>
+              Das Tool konvertiert das Bild mit der von Ihnen eingestellten Qualität (z.{'\u00a0'}B. 80{'\u00a0'}%).
+            </li>
             <li>Es prüft, ob die Ausgabedatei kleiner als das Original ist.</li>
             <li>Falls sie größer ist, wird die Qualität automatisch gesenkt und ein neuer Versuch gestartet.</li>
             <li>Der Vorgang wiederholt sich, bis die Ausgabedatei kleiner ist oder die Qualität unter ein sicheres Minimum fällt.</li>
           </ol>
           <p className="text-mid mt-3">
-            Das Tool wählt automatisch die optimalen Einstellungen. Wenn ein Bild bereits stark komprimiert ist (z.{'\u00a0'}B. ein JPG mit 60{'\u00a0'}% Qualität), werden die Parameter automatisch angepasst, um dennoch eine Größenersparnis zu erzielen.
+            Das Tool wählt automatisch die optimalen Einstellungen. Wenn ein Bild bereits stark komprimiert ist (z.{'\u00a0'}B. ein JPG mit 60{'\u00a0'}% Qualität), werden die Parameter automatisch
+            angepasst, um dennoch eine Größenersparnis zu erzielen.
           </p>
-          <p className="text-mid mt-3">Bei jeder Datei sehen Sie die Information &quot;Verwendete WebP-Qualität&quot; – das ist die tatsächlich angewandte Qualität nach eventueller Anpassung durch Smart Quality.</p>
+          <p className="text-mid mt-3">
+            Bei jeder Datei sehen Sie die Information &quot;Verwendete WebP-Qualität&quot; – das ist die tatsächlich angewandte Qualität nach eventueller Anpassung durch Smart Quality.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -335,7 +343,8 @@ export default function JpgPngToWebpPage() {
             </li>
           </ul>
           <p className="text-mid mt-3">
-            <strong>Zusammenfassung kopieren:</strong> Der Button kopiert den Bericht als Text in die Zwischenablage. Sie können ihn in Notizen, E-Mails oder Dokumente einfügen – nützlich zur Dokumentation der Bildoptimierung.
+            <strong>Zusammenfassung kopieren:</strong> Der Button kopiert den Bericht als Text in die Zwischenablage. Sie können ihn in Notizen, E-Mails oder Dokumente einfügen – nützlich zur
+            Dokumentation der Bildoptimierung.
           </p>
         </SectionInfo>
 
@@ -346,17 +355,23 @@ export default function JpgPngToWebpPage() {
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">JPG-Foto (Kamera)</p>
-              <p className="text-light text-sm">2,4{'\u00a0'}MB → 890{'\u00a0'}KB</p>
+              <p className="text-light text-sm">
+                2,4{'\u00a0'}MB → 890{'\u00a0'}KB
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Ersparnis: ~63{'\u00a0'}%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">PNG-Grafik (Logo)</p>
-              <p className="text-light text-sm">180{'\u00a0'}KB → 45{'\u00a0'}KB</p>
+              <p className="text-light text-sm">
+                180{'\u00a0'}KB → 45{'\u00a0'}KB
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Ersparnis: ~75{'\u00a0'}%</p>
             </div>
             <div className="rounded-lg border border-neutral-200 bg-white p-4">
               <p className="text-dark mb-2 font-semibold">Produktfoto</p>
-              <p className="text-light text-sm">500{'\u00a0'}KB → 185{'\u00a0'}KB</p>
+              <p className="text-light text-sm">
+                500{'\u00a0'}KB → 185{'\u00a0'}KB
+              </p>
               <p className="text-success-icon mt-1 text-sm font-medium">Ersparnis: ~63{'\u00a0'}%</p>
             </div>
           </div>
@@ -464,8 +479,7 @@ export default function JpgPngToWebpPage() {
             ...faqItems,
             {
               question: 'Kann ich auch andere Formate als JPG und PNG konvertieren?',
-              answer:
-                'Das Tool ist für die Formate JPG und PNG optimiert. Andere Formate (z.\u00a0B. GIF, BMP, TIFF) werden beim Hinzufügen automatisch übersprungen.',
+              answer: 'Das Tool ist für die Formate JPG und PNG optimiert. Andere Formate (z.\u00a0B. GIF, BMP, TIFF) werden beim Hinzufügen automatisch übersprungen.',
               answerSchemaText: 'Nur JPG und PNG. Andere Formate werden automatisch übersprungen.',
             },
             {

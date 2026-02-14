@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState, type JSX } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { AnimatePresence, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 import Eyebrow from '../../ui/typography/Eyebrow';
 import IconText from '../../ui/IconText';
@@ -20,7 +19,7 @@ import { useRestoreFocus } from '@/hooks/useRestoreFocus';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { useEventListener } from '@/hooks/useEventListener';
 import { useTimeout } from '@/hooks/useTimeout';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import { NavArrowDownSLine as RiArrowDownSLine } from '@/components/ui/icons/NavIcons';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
@@ -223,430 +222,385 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
     }
   };
 
+  if (!isOpen) return null;
+
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <>
-          <Portal>
-            <motion.div
-              className="fixed inset-y-0 left-0 z-[999] bg-black/30 backdrop-blur-[1px]"
-              style={{ right: `${panelWidth}px` }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsOpen(false)}
-              aria-hidden="true"
-            />
-          </Portal>
+    <>
+      <Portal>
+        <div
+          className="animate-modal-backdrop fixed inset-y-0 left-0 z-[999] bg-black/30 backdrop-blur-[1px]"
+          style={{ right: `${panelWidth}px` }}
+          onClick={() => setIsOpen(false)}
+          aria-hidden="true"
+        />
+      </Portal>
 
-          <motion.nav
-            ref={panelRef}
-            role="dialog"
-            aria-modal="true"
-            aria-label={navUi.mobileMenu}
-            className="z[1000] fixed top-0 right-0 h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-xl"
-            initial={{ x: 24, opacity: 0.98 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: 24, opacity: 0 }}
-            transition={{ type: 'spring', stiffness: 280, damping: 30 }}
-          >
-            <div className="flex items-center justify-end px-4 pt-3">
-              <button onClick={() => setIsOpen(false)} className="ring-primary rounded px-3 pt-1 ring-offset-2 outline-none focus-visible:ring-2">
-                <span className="text-light text-sm font-medium">{closeLabel[locale] ?? 'Close'}</span>
-              </button>
-            </div>
+      <nav
+        ref={panelRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={navUi.mobileMenu}
+        className="z[1000] animate-dropdown-in fixed top-0 right-0 h-[100dvh] w-[88vw] max-w-[300px] bg-white shadow-xl"
+      >
+        <div className="flex items-center justify-end px-4 pt-3">
+          <button onClick={() => setIsOpen(false)} className="ring-primary rounded px-3 pt-1 ring-offset-2 outline-none focus-visible:ring-2">
+            <span className="text-light text-sm font-medium">{closeLabel[locale] ?? 'Close'}</span>
+          </button>
+        </div>
 
-            <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
-              {isPl && (
-                <Eyebrow variant="dynamic" className="px-3 pb-1 text-xs tracking-wider">
-                  {servicesLabel[locale] ?? 'Services'}
-                </Eyebrow>
-              )}
+        <div className="flex h-[calc(100dvh-49px)] flex-col overflow-y-auto px-4 py-3">
+          {isPl && (
+            <Eyebrow variant="dynamic" className="px-3 pb-1 text-xs tracking-wider">
+              {servicesLabel[locale] ?? 'Services'}
+            </Eyebrow>
+          )}
 
-              {isPl && (
-                <div className="flex flex-col">
-                  {SECTIONS.map((sec) => {
-                    const expanded = openKeys[sec.key];
-                    return (
-                      <div key={sec.key} className="mb-1">
-                        <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
-                          {sec.hubHref ? (
-                            <Link
-                              href={sec.hubHref}
-                              onClick={() => setIsOpen(false)}
-                              className={`text-dark focus-visible:ring-primary inline-block rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${pathname.startsWith(sec.hubHref) ? 'font-semibold' : ''}`}
-                            >
-                              {sec.title}
-                            </Link>
-                          ) : (
-                            <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
-                          )}
+          {isPl && (
+            <div className="flex flex-col">
+              {SECTIONS.map((sec) => {
+                const expanded = openKeys[sec.key];
+                return (
+                  <div key={sec.key} className="mb-1">
+                    <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
+                      {sec.hubHref ? (
+                        <Link
+                          href={sec.hubHref}
+                          onClick={() => setIsOpen(false)}
+                          className={`text-dark focus-visible:ring-primary inline-block rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${pathname.startsWith(sec.hubHref) ? 'font-semibold' : ''}`}
+                        >
+                          {sec.title}
+                        </Link>
+                      ) : (
+                        <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
+                      )}
 
-                          <button
-                            type="button"
-                            aria-expanded={expanded}
-                            aria-controls={`sec-${sec.key}`}
-                            onClick={() => toggleKey(sec.key)}
-                            className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                      <button
+                        type="button"
+                        aria-expanded={expanded}
+                        aria-controls={`sec-${sec.key}`}
+                        onClick={() => toggleKey(sec.key)}
+                        className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                      >
+                        <span className="inline-flex transition-transform duration-200" style={{ transform: expanded ? 'rotate(180deg)' : undefined }}>
+                          <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
+                        </span>
+                      </button>
+                    </div>
+
+                    {expanded && (
+                      <div id={`sec-${sec.key}`} className="animate-dropdown-in">
+                        <div className="ml-3 border-l border-neutral-200 pl-3">
+                          <ul
+                            className="flex flex-col gap-1 py-1"
+                            onKeyDown={(e) => {
+                              const container = e.currentTarget as unknown as HTMLElement;
+                              onListKeyDown(container, e);
+                            }}
                           >
-                            <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                              <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
-                            </motion.span>
-                          </button>
-                        </div>
-
-                        <AnimatePresence initial={false}>
-                          {expanded && (
-                            <motion.div
-                              id={`sec-${sec.key}`}
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{ height: 'auto', opacity: 1 }}
-                              exit={{ height: 0, opacity: 0 }}
-                              transition={{ duration: 0.18 }}
-                              className="overflow-hidden"
-                            >
-                              <div className="ml-3 border-l border-neutral-200 pl-3">
-                                <ul
-                                  className="flex flex-col gap-1 py-1"
-                                  onKeyDown={(e) => {
-                                    const container = e.currentTarget as unknown as HTMLElement;
-                                    onListKeyDown(container, e);
-                                  }}
+                            {sec.items.map((it) => (
+                              <li key={it.href}>
+                                <Link
+                                  href={it.href}
+                                  onClick={() => setIsOpen(false)}
+                                  className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                                 >
-                                  {sec.items.map((it) => (
-                                    <li key={it.href}>
-                                      <Link
-                                        href={it.href}
-                                        onClick={() => setIsOpen(false)}
-                                        className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
-                                      >
-                                        <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
-                                          <span className="text-dark text-[15px]">{it.title}</span>
-                                        </IconText>
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {isPl && <div className="my-3 h-px w-full bg-neutral-200" />}
-
-              {isPl ? (
-                <div className="mb-2 flex flex-col gap-1">
-                  {realizacjeNav ? (
-                    <Link
-                      key="realizacje"
-                      href={realizacjeNav.href}
-                      onClick={() => setIsOpen(false)}
-                      aria-current={pathname === realizacjeNav.href ? 'page' : pathname.startsWith(realizacjeNav.href) ? 'page' : undefined}
-                      className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                        pathname.startsWith(realizacjeNav.href) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                      }`}
-                    >
-                      {realizacjeNav.label}
-                    </Link>
-                  ) : null}
-
-                  {aboutNav ? (
-                    <div className="rounded-xl py-1 transition hover:bg-neutral-100">
-                      <div className="flex items-center justify-between">
-                        <Link
-                          href={aboutNav.href}
-                          onClick={() => setIsOpen(false)}
-                          aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
-                          className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
-                            pathname.startsWith(aboutNav.href) ? 'text-dark font-semibold' : 'text-dark'
-                          }`}
-                        >
-                          {aboutNav.label}
-                        </Link>
-
-                        <button
-                          type="button"
-                          aria-expanded={isAboutOpen}
-                          aria-controls="about-submenu-mobile"
-                          onClick={toggleAbout}
-                          className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
-                        >
-                          <motion.span animate={{ rotate: isAboutOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                            <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
-                          </motion.span>
-                        </button>
-                      </div>
-
-                      <AnimatePresence initial={false}>
-                        {isAboutOpen && ABOUT_ITEMS.length > 0 && (
-                          <motion.div
-                            id="about-submenu-mobile"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.18 }}
-                            className="overflow-hidden"
-                          >
-                            <ul className="mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3">
-                              {ABOUT_ITEMS.map((aboutItem) => {
-                                const isSubActive = pathname.startsWith(aboutItem.href);
-                                return (
-                                  <li key={aboutItem.href}>
-                                    <Link
-                                      href={aboutItem.href}
-                                      onClick={() => setIsOpen(false)}
-                                      aria-current={isSubActive ? 'page' : undefined}
-                                      className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                                        isSubActive ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                                      }`}
-                                    >
-                                      {aboutItem.icon ? <span className="text-primary">{aboutItem.icon}</span> : null}
-                                      <span className="min-w-0">{aboutItem.title}</span>
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  ) : null}
-
-                  {edukacjaNav ? (
-                    <Link
-                      key="edukacja"
-                      href={edukacjaNav.href}
-                      onClick={() => setIsOpen(false)}
-                      aria-current={pathname.startsWith(edukacjaNav.href) ? 'page' : undefined}
-                      className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                        pathname.startsWith(edukacjaNav.href) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                      }`}
-                    >
-                      {edukacjaNav.label}
-                    </Link>
-                  ) : null}
-
-                  {narzedziaNav && TOOLS_SECTIONS_MOBILE.length > 0 ? (
-                    <div className="rounded-xl py-1 transition hover:bg-neutral-100">
-                      <div className="flex items-center justify-between">
-                        <Link
-                          href={narzedziaNav.href}
-                          onClick={() => setIsOpen(false)}
-                          aria-current={pathname.startsWith(narzedziaNav.href) ? 'page' : undefined}
-                          className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
-                            pathname.startsWith(narzedziaNav.href) ? 'text-dark font-semibold' : 'text-dark'
-                          }`}
-                        >
-                          {narzedziaNav.label}
-                        </Link>
-
-                        <button
-                          type="button"
-                          aria-expanded={isToolsOpen}
-                          aria-controls="tools-submenu-mobile"
-                          onClick={toggleTools}
-                          className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
-                        >
-                          <motion.span animate={{ rotate: isToolsOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                            <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
-                          </motion.span>
-                        </button>
-                      </div>
-
-                      <AnimatePresence initial={false}>
-                        {isToolsOpen && (
-                          <motion.div
-                            id="tools-submenu-mobile"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.18 }}
-                            className="overflow-hidden"
-                          >
-                            <ul className="mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3">
-                              {TOOLS_SECTIONS_MOBILE.flatMap((section) => section.items).map((tool) => {
-                                const isToolActive = pathname.startsWith(tool.href);
-                                return (
-                                  <li key={tool.href}>
-                                    <Link
-                                      href={tool.href}
-                                      onClick={() => setIsOpen(false)}
-                                      aria-current={isToolActive ? 'page' : undefined}
-                                      className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                                        isToolActive ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                                      }`}
-                                    >
-                                      {tool.icon ? <span className="text-primary">{tool.icon}</span> : null}
-                                      <span className="min-w-0">{tool.title}</span>
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  ) : null}
-
-                  {contactHref ? (
-                    <Link
-                      key="kontakt"
-                      href={contactHref}
-                      onClick={() => setIsOpen(false)}
-                      aria-current={pathname.startsWith(contactHref) ? 'page' : undefined}
-                      className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                        pathname.startsWith(contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                      }`}
-                    >
-                      {contactNav?.label ?? contactLabel[locale] ?? 'Contact'}
-                    </Link>
-                  ) : null}
-                </div>
-              ) : (
-                /* Non-PL: tools-only mobile nav with category sections */
-                <>
-                  <Link
-                    href={localeConfig.toolsIndexHref}
-                    onClick={() => setIsOpen(false)}
-                    aria-current={pathname === localeConfig.toolsIndexHref ? 'page' : undefined}
-                    className={`ring-primary mb-2 block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                      pathname === localeConfig.toolsIndexHref ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                    }`}
-                  >
-                    {navUi.toolsLabel}
-                  </Link>
-
-                  <div className="flex flex-col">
-                    {TOOLS_SECTIONS_MOBILE.map((sec) => {
-                      const expanded = !!openToolSections[sec.key];
-                      return (
-                        <div key={sec.key} className="mb-1">
-                          <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
-                            <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
-
-                            <button
-                              type="button"
-                              aria-expanded={expanded}
-                              aria-controls={`sec-${locale}-${sec.key}`}
-                              onClick={() => toggleToolSection(sec.key)}
-                              className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
-                            >
-                              <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                                <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
-                              </motion.span>
-                            </button>
-                          </div>
-
-                          <AnimatePresence initial={false}>
-                            {expanded && (
-                              <motion.div
-                                id={`sec-${locale}-${sec.key}`}
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: 'auto', opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: 0.18 }}
-                                className="overflow-hidden"
-                              >
-                                <div className="ml-3 border-l border-neutral-200 pl-3">
-                                  <ul
-                                    className="flex flex-col gap-1 py-1"
-                                    onKeyDown={(e) => {
-                                      const container = e.currentTarget as unknown as HTMLElement;
-                                      onListKeyDown(container, e);
-                                    }}
-                                  >
-                                    {sec.items.map((it) => (
-                                      <li key={it.href}>
-                                        <Link
-                                          href={it.href}
-                                          onClick={() => setIsOpen(false)}
-                                          className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
-                                        >
-                                          <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
-                                            <span className="text-dark text-[15px]">{it.title}</span>
-                                          </IconText>
-                                        </Link>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              </motion.div>
-                            )}
-                          </AnimatePresence>
+                                  <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
+                                    <span className="text-dark text-[15px]">{it.title}</span>
+                                  </IconText>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
-                      );
-                    })}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {isPl && <div className="my-3 h-px w-full bg-neutral-200" />}
+
+          {isPl ? (
+            <div className="mb-2 flex flex-col gap-1">
+              {realizacjeNav ? (
+                <Link
+                  key="realizacje"
+                  href={realizacjeNav.href}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={pathname === realizacjeNav.href ? 'page' : pathname.startsWith(realizacjeNav.href) ? 'page' : undefined}
+                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                    pathname.startsWith(realizacjeNav.href) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                  }`}
+                >
+                  {realizacjeNav.label}
+                </Link>
+              ) : null}
+
+              {aboutNav ? (
+                <div className="rounded-xl py-1 transition hover:bg-neutral-100">
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={aboutNav.href}
+                      onClick={() => setIsOpen(false)}
+                      aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
+                      className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
+                        pathname.startsWith(aboutNav.href) ? 'text-dark font-semibold' : 'text-dark'
+                      }`}
+                    >
+                      {aboutNav.label}
+                    </Link>
+
+                    <button
+                      type="button"
+                      aria-expanded={isAboutOpen}
+                      aria-controls="about-submenu-mobile"
+                      onClick={toggleAbout}
+                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                    >
+                      <span className="inline-flex transition-transform duration-200" style={{ transform: isAboutOpen ? 'rotate(180deg)' : undefined }}>
+                        <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
+                      </span>
+                    </button>
                   </div>
 
-                  {localeConfig.aboutHref && (
-                    <Link
-                      href={localeConfig.aboutHref}
-                      onClick={() => setIsOpen(false)}
-                      aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
-                      className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                        pathname.startsWith(localeConfig.aboutHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                      }`}
-                    >
-                      {navUi.aboutLabel}
-                    </Link>
-                  )}
-
-                  {localeConfig.contactHref && (
-                    <Link
-                      href={localeConfig.contactHref}
-                      onClick={() => setIsOpen(false)}
-                      aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
-                      className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
-                        pathname.startsWith(localeConfig.contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
-                      }`}
-                    >
-                      {navUi.contactLabel}
-                    </Link>
-                  )}
-
-                  <div className="my-3 h-px w-full bg-neutral-200" />
-                </>
-              )}
-
-              <ul className="mb-2 flex flex-col gap-1">
-                {legalLinks.map(({ href, label, key: _linkKey }) => (
-                  <li key={_linkKey}>
-                    <Link
-                      href={href}
-                      onClick={() => setIsOpen(false)}
-                      className="text-dark focus-visible:ring-primary block rounded-xl px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-auto border-t border-neutral-200 pt-3">
-                <div className="flex items-center justify-between">
-                  <LanguageSwitcher />
-                  {isPl && (
-                    <Link
-                      href={contactHref}
-                      onClick={() => setIsOpen(false)}
-                      className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
-                    >
-                      {contactLabel[locale] ?? 'Contact'}
-                    </Link>
+                  {isAboutOpen && ABOUT_ITEMS.length > 0 && (
+                    <div id="about-submenu-mobile" className="animate-dropdown-in">
+                      <ul className="mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3">
+                        {ABOUT_ITEMS.map((aboutItem) => {
+                          const isSubActive = pathname.startsWith(aboutItem.href);
+                          return (
+                            <li key={aboutItem.href}>
+                              <Link
+                                href={aboutItem.href}
+                                onClick={() => setIsOpen(false)}
+                                aria-current={isSubActive ? 'page' : undefined}
+                                className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                                  isSubActive ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                                }`}
+                              >
+                                {aboutItem.icon ? <span className="text-primary">{aboutItem.icon}</span> : null}
+                                <span className="min-w-0">{aboutItem.title}</span>
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   )}
                 </div>
-              </div>
+              ) : null}
+
+              {edukacjaNav ? (
+                <Link
+                  key="edukacja"
+                  href={edukacjaNav.href}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={pathname.startsWith(edukacjaNav.href) ? 'page' : undefined}
+                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                    pathname.startsWith(edukacjaNav.href) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                  }`}
+                >
+                  {edukacjaNav.label}
+                </Link>
+              ) : null}
+
+              {narzedziaNav && TOOLS_SECTIONS_MOBILE.length > 0 ? (
+                <div className="rounded-xl py-1 transition hover:bg-neutral-100">
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={narzedziaNav.href}
+                      onClick={() => setIsOpen(false)}
+                      aria-current={pathname.startsWith(narzedziaNav.href) ? 'page' : undefined}
+                      className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
+                        pathname.startsWith(narzedziaNav.href) ? 'text-dark font-semibold' : 'text-dark'
+                      }`}
+                    >
+                      {narzedziaNav.label}
+                    </Link>
+
+                    <button
+                      type="button"
+                      aria-expanded={isToolsOpen}
+                      aria-controls="tools-submenu-mobile"
+                      onClick={toggleTools}
+                      className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                    >
+                      <span className="inline-flex transition-transform duration-200" style={{ transform: isToolsOpen ? 'rotate(180deg)' : undefined }}>
+                        <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
+                      </span>
+                    </button>
+                  </div>
+
+                  {isToolsOpen && (
+                    <div id="tools-submenu-mobile" className="animate-dropdown-in">
+                      <ul className="mt-1 ml-3 flex flex-col gap-1 border-l border-neutral-200 pl-3">
+                        {TOOLS_SECTIONS_MOBILE.flatMap((section) => section.items).map((tool) => {
+                          const isToolActive = pathname.startsWith(tool.href);
+                          return (
+                            <li key={tool.href}>
+                              <Link
+                                href={tool.href}
+                                onClick={() => setIsOpen(false)}
+                                aria-current={isToolActive ? 'page' : undefined}
+                                className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                                  isToolActive ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                                }`}
+                              >
+                                {tool.icon ? <span className="text-primary">{tool.icon}</span> : null}
+                                <span className="min-w-0">{tool.title}</span>
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              ) : null}
+
+              {contactHref ? (
+                <Link
+                  key="kontakt"
+                  href={contactHref}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={pathname.startsWith(contactHref) ? 'page' : undefined}
+                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                    pathname.startsWith(contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                  }`}
+                >
+                  {contactNav?.label ?? contactLabel[locale] ?? 'Contact'}
+                </Link>
+              ) : null}
             </div>
-          </motion.nav>
-        </>
-      )}
-    </AnimatePresence>
+          ) : (
+            /* Non-PL: tools-only mobile nav with category sections */
+            <>
+              <Link
+                href={localeConfig.toolsIndexHref}
+                onClick={() => setIsOpen(false)}
+                aria-current={pathname === localeConfig.toolsIndexHref ? 'page' : undefined}
+                className={`ring-primary mb-2 block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                  pathname === localeConfig.toolsIndexHref ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                }`}
+              >
+                {navUi.toolsLabel}
+              </Link>
+
+              <div className="flex flex-col">
+                {TOOLS_SECTIONS_MOBILE.map((sec) => {
+                  const expanded = !!openToolSections[sec.key];
+                  return (
+                    <div key={sec.key} className="mb-1">
+                      <div className="flex items-center justify-between rounded-xl py-1 transition hover:bg-neutral-100">
+                        <div className="text-dark px-3 py-1 text-[15px]">{sec.title}</div>
+
+                        <button
+                          type="button"
+                          aria-expanded={expanded}
+                          aria-controls={`sec-${locale}-${sec.key}`}
+                          onClick={() => toggleToolSection(sec.key)}
+                          className="text-primary focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-lg transition outline-none hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2"
+                        >
+                          <span className="inline-flex transition-transform duration-200" style={{ transform: expanded ? 'rotate(180deg)' : undefined }}>
+                            <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" />
+                          </span>
+                        </button>
+                      </div>
+
+                      {expanded && (
+                        <div id={`sec-${locale}-${sec.key}`} className="animate-dropdown-in">
+                          <div className="ml-3 border-l border-neutral-200 pl-3">
+                            <ul
+                              className="flex flex-col gap-1 py-1"
+                              onKeyDown={(e) => {
+                                const container = e.currentTarget as unknown as HTMLElement;
+                                onListKeyDown(container, e);
+                              }}
+                            >
+                              {sec.items.map((it) => (
+                                <li key={it.href}>
+                                  <Link
+                                    href={it.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
+                                  >
+                                    <IconText icon={it.icon ? <span className="text-primary">{it.icon}</span> : undefined} gap="3" className="min-w-0">
+                                      <span className="text-dark text-[15px]">{it.title}</span>
+                                    </IconText>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
+              {localeConfig.aboutHref && (
+                <Link
+                  href={localeConfig.aboutHref}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
+                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                    pathname.startsWith(localeConfig.aboutHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                  }`}
+                >
+                  {navUi.aboutLabel}
+                </Link>
+              )}
+
+              {localeConfig.contactHref && (
+                <Link
+                  href={localeConfig.contactHref}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
+                  className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
+                    pathname.startsWith(localeConfig.contactHref) ? 'text-dark bg-neutral-50 font-semibold' : 'text-dark hover:bg-neutral-100'
+                  }`}
+                >
+                  {navUi.contactLabel}
+                </Link>
+              )}
+
+              <div className="my-3 h-px w-full bg-neutral-200" />
+            </>
+          )}
+
+          <ul className="mb-2 flex flex-col gap-1">
+            {legalLinks.map(({ href, label, key: _linkKey }) => (
+              <li key={_linkKey}>
+                <Link
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-dark focus-visible:ring-primary block rounded-xl px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-auto border-t border-neutral-200 pt-3">
+            <div className="flex items-center justify-between">
+              <LanguageSwitcher />
+              {isPl && (
+                <Link
+                  href={contactHref}
+                  onClick={() => setIsOpen(false)}
+                  className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
+                >
+                  {contactLabel[locale] ?? 'Contact'}
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }

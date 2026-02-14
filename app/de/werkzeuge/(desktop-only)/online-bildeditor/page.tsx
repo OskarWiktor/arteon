@@ -203,7 +203,9 @@ export default function ImageResizePage() {
               <strong>Auswahl vom Gerät</strong> – klicken Sie in den Bereich zum Hinzufügen von Dateien, um ein Dateiauswahl-Fenster zu öffnen.
             </li>
           </ul>
-          <p className="text-mid mt-3">Nach dem Hochladen liest das Tool automatisch die Originalmaße des Bildes aus und zeigt eine Vorschau an. Sie können nun mit den Zuschnittseinstellungen fortfahren.</p>
+          <p className="text-mid mt-3">
+            Nach dem Hochladen liest das Tool automatisch die Originalmaße des Bildes aus und zeigt eine Vorschau an. Sie können nun mit den Zuschnittseinstellungen fortfahren.
+          </p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -324,13 +326,15 @@ export default function ImageResizePage() {
             <div>
               <p className="text-dark font-semibold">Zoom</p>
               <p className="text-mid mt-1">
-                Im Reiter <strong>Zoom</strong> finden Sie einen Schieberegler (100–300{'\u00a0'}%). Ein höherer Wert bedeutet, dass der Zuschnitt einen kleineren Ausschnitt des Originalbildes umfasst – nützlich, wenn Sie ein bestimmtes Detail ausschneiden möchten.
+                Im Reiter <strong>Zoom</strong> finden Sie einen Schieberegler (100–300{'\u00a0'}%). Ein höherer Wert bedeutet, dass der Zuschnitt einen kleineren Ausschnitt des Originalbildes umfasst
+                – nützlich, wenn Sie ein bestimmtes Detail ausschneiden möchten.
               </p>
             </div>
             <div>
               <p className="text-dark font-semibold">Präzise Positionierung</p>
               <p className="text-mid mt-1">
-                Im Reiter <strong>Position</strong> können Sie die genaue Position des Zuschnitts in Prozent einstellen (0–100{'\u00a0'}% für X- und Y-Achse). Zentrierungs-Buttons ermöglichen eine schnelle Ausrichtung.
+                Im Reiter <strong>Position</strong> können Sie die genaue Position des Zuschnitts in Prozent einstellen (0–100{'\u00a0'}% für X- und Y-Achse). Zentrierungs-Buttons ermöglichen eine
+                schnelle Ausrichtung.
               </p>
             </div>
           </div>
@@ -357,10 +361,12 @@ export default function ImageResizePage() {
           }
         >
           <p className="text-mid">
-            Im Reiter <strong>Zuschnittsformen</strong> wählen Sie die Form des exportierten Bildes: Rechteck (mit gewählten Proportionen), Quadrat (erzwingt 1:1) oder Kreis (mit transparentem Hintergrund).
+            Im Reiter <strong>Zuschnittsformen</strong> wählen Sie die Form des exportierten Bildes: Rechteck (mit gewählten Proportionen), Quadrat (erzwingt 1:1) oder Kreis (mit transparentem
+            Hintergrund).
           </p>
           <p className="text-mid mt-3">
-            Die Kreisform erstellt einen runden Avatar mit transparentem Hintergrund außerhalb des Kreises. Das Tool wechselt automatisch zum Format PNG oder WebP, da JPG keine Transparenz unterstützt.
+            Die Kreisform erstellt einen runden Avatar mit transparentem Hintergrund außerhalb des Kreises. Das Tool wechselt automatisch zum Format PNG oder WebP, da JPG keine Transparenz
+            unterstützt.
           </p>
         </SectionDemo>
 
@@ -368,10 +374,12 @@ export default function ImageResizePage() {
 
         <SectionInfo title="3×3-Raster – wozu dient es?">
           <p className="text-mid">
-            Im Zuschnittsbereich ist ein Raster sichtbar, das das Bild in 9 gleiche Teile unterteilt. Das ist eine Visualisierung der <strong>Drittelregel</strong> – eines der grundlegenden Prinzipien der fotografischen Komposition.
+            Im Zuschnittsbereich ist ein Raster sichtbar, das das Bild in 9 gleiche Teile unterteilt. Das ist eine Visualisierung der <strong>Drittelregel</strong> – eines der grundlegenden Prinzipien
+            der fotografischen Komposition.
           </p>
           <p className="text-mid mt-3">
-            Die Regel besagt, dass die wichtigsten Bildelemente (Gesicht, Produkt, Blickfang) an den Schnittpunkten der Rasterlinien oder entlang dieser platziert werden sollten. Eine solche Komposition wirkt dynamischer und angenehmer als eine zentrale Platzierung.
+            Die Regel besagt, dass die wichtigsten Bildelemente (Gesicht, Produkt, Blickfang) an den Schnittpunkten der Rasterlinien oder entlang dieser platziert werden sollten. Eine solche
+            Komposition wirkt dynamischer und angenehmer als eine zentrale Platzierung.
           </p>
           <p className="text-mid mt-3">
             Im Reiter <strong>Rasterfarbe</strong> können Sie die Linienfarbe ändern (grün, weiß, schwarz, rot, gelb), damit das Raster auf verschiedenen Bildern gut sichtbar ist.

@@ -462,7 +462,7 @@ export default function QrCodeGeneratorPage() {
           items={[
             ...faqItems,
             {
-              question: "Un code QR g\u00e9n\u00e9r\u00e9 avec cet outil expire-t-il ?",
+              question: 'Un code QR g\u00e9n\u00e9r\u00e9 avec cet outil expire-t-il ?',
               answer:
                 "Non. Un code QR statique (comme celui g\u00e9n\u00e9r\u00e9 par cet outil) n'expire pas. Le contenu \u2013 par ex. une URL ou des donn\u00e9es de carte de visite \u2013 est cod\u00e9 directement dans le code. Tant que la page de destination existe, le code fonctionnera.",
               answerSchemaText: "Non. Les codes QR statiques n'expirent pas. Le contenu est cod\u00e9 directement dans le code.",
@@ -471,7 +471,7 @@ export default function QrCodeGeneratorPage() {
               question: "En quoi une vCard diff\u00e8re-t-elle d'un code QR avec du texte ?",
               answer:
                 "Un code QR vCard contient des donn\u00e9es de contact dans un format standardis\u00e9 (nom, entreprise, t\u00e9l\u00e9phone, e-mail, adresse). Lors du scan, le t\u00e9l\u00e9phone propose automatiquement d'enregistrer le contact dans le r\u00e9pertoire. Un code texte affiche les donn\u00e9es en texte brut \u2013 sans enregistrement automatique.",
-              answerSchemaText: "vCard = format de contact standardis\u00e9 avec enregistrement automatique. Texte = texte brut uniquement.",
+              answerSchemaText: 'vCard = format de contact standardis\u00e9 avec enregistrement automatique. Texte = texte brut uniquement.',
             },
           ]}
         />

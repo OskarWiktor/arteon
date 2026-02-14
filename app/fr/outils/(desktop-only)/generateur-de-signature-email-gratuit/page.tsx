@@ -358,7 +358,8 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Comment remplir les données de la signature">
           <p className="text-mid">
-            Dans l'onglet <strong>Données</strong>, vous trouverez tous les champs à remplir. Seuls deux sont obligatoires : nom et adresse e-mail. Les autres champs sont optionnels et n'apparaîtront dans la signature que s'ils sont remplis.
+            Dans l'onglet <strong>Données</strong>, vous trouverez tous les champs à remplir. Seuls deux sont obligatoires : nom et adresse e-mail. Les autres champs sont optionnels et n'apparaîtront
+            dans la signature que s'ils sont remplis.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Champs de l'onglet Données</h3>
@@ -367,7 +368,9 @@ export default function EmailSignatureGeneratorPage() {
               <strong>Ligne au-dessus du nom</strong> – texte supplémentaire affiché au-dessus du nom. Vous pouvez y inscrire le nom de l'entreprise, un slogan ou une accroche.
             </li>
             <li>
-              <strong>Avatar / logo (URL de l'image)</strong> – URL d'une photo de profil ou d'un logo d'entreprise. L'image doit être carrée (min. 120×120{'\u00a0'}px) et accessible publiquement en ligne. Après avoir collé l'URL, des options supplémentaires apparaissent : <strong>Forme de l'avatar</strong> (rond, arrondi ou carré) et <strong>Taille de l'avatar</strong> (petit – 40{'\u00a0'}px, moyen – 56{'\u00a0'}px, grand – 72{'\u00a0'}px).
+              <strong>Avatar / logo (URL de l'image)</strong> – URL d'une photo de profil ou d'un logo d'entreprise. L'image doit être carrée (min. 120×120{'\u00a0'}px) et accessible publiquement en
+              ligne. Après avoir collé l'URL, des options supplémentaires apparaissent : <strong>Forme de l'avatar</strong> (rond, arrondi ou carré) et <strong>Taille de l'avatar</strong> (petit – 40
+              {'\u00a0'}px, moyen – 56{'\u00a0'}px, grand – 72{'\u00a0'}px).
             </li>
             <li>
               <strong>Nom complet</strong> – champ obligatoire. Saisissez votre nom complet.
@@ -406,7 +409,8 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Comment ajouter des boutons CTA">
           <p className="text-mid">
-            Un bouton CTA (appel à l'action) est un élément cliquable qui redirige le destinataire vers une page de votre choix. Il peut s'agir d'un lien vers un calendrier de rendez-vous, un formulaire de contact ou une offre. Le générateur permet d'ajouter deux boutons CTA.
+            Un bouton CTA (appel à l'action) est un élément cliquable qui redirige le destinataire vers une page de votre choix. Il peut s'agir d'un lien vers un calendrier de rendez-vous, un
+            formulaire de contact ou une offre. Le générateur permet d'ajouter deux boutons CTA.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Bouton principal</h3>
@@ -424,16 +428,19 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Bouton secondaire</h3>
           <p className="text-mid">
-            Vous pouvez ajouter un second bouton CTA en style outline (fond transparent avec bordure). Remplissez les champs de la section <strong>Bouton secondaire</strong> de la même manière que pour le bouton principal.
+            Vous pouvez ajouter un second bouton CTA en style outline (fond transparent avec bordure). Remplissez les champs de la section <strong>Bouton secondaire</strong> de la même manière que
+            pour le bouton principal.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Arrondi des boutons</h3>
           <p className="text-mid">
-            En bas de l'onglet Boutons, vous trouverez l'option <strong>Arrondi des boutons</strong>. Trois variantes sont disponibles : Aucun (coins droits), Léger (légèrement arrondi) ou Complet (bouton ovale).
+            En bas de l'onglet Boutons, vous trouverez l'option <strong>Arrondi des boutons</strong>. Trois variantes sont disponibles : Aucun (coins droits), Léger (légèrement arrondi) ou Complet
+            (bouton ovale).
           </p>
 
           <p className="text-mid mt-4">
-            Si vous laissez les deux champs vides, le bouton n'apparaîtra pas dans la signature. Si vous ne remplissez qu'un seul champ, le bouton ne sera pas non plus visible – les deux sont nécessaires : texte et lien.
+            Si vous laissez les deux champs vides, le bouton n'apparaîtra pas dans la signature. Si vous ne remplissez qu'un seul champ, le bouton ne sera pas non plus visible – les deux sont
+            nécessaires : texte et lien.
           </p>
         </SectionInfo>
 
@@ -504,7 +511,8 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Thèmes de couleurs</h3>
           <p className="text-mid">
-            En haut de l'onglet, vous trouverez cinq thèmes prédéfinis : Sombre, Bleu, Violet, Vert et Gris. Un clic sur un thème définit automatiquement la couleur d'accent et la couleur du texte. C'est le moyen le plus rapide d'obtenir une signature cohérente.
+            En haut de l'onglet, vous trouverez cinq thèmes prédéfinis : Sombre, Bleu, Violet, Vert et Gris. Un clic sur un thème définit automatiquement la couleur d'accent et la couleur du texte.
+            C'est le moyen le plus rapide d'obtenir une signature cohérente.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Couleurs</h3>
@@ -523,7 +531,8 @@ export default function EmailSignatureGeneratorPage() {
           <h3 className="h5 mt-6 mb-3">Police et taille</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Police</strong> – choix : Arial, Verdana, Tahoma, Trebuchet MS et Georgia. Toutes sont compatibles avec les clients de messagerie et s'afficheront correctement chez le destinataire.
+              <strong>Police</strong> – choix : Arial, Verdana, Tahoma, Trebuchet MS et Georgia. Toutes sont compatibles avec les clients de messagerie et s'afficheront correctement chez le
+              destinataire.
             </li>
             <li>
               <strong>Taille du texte</strong> – trois options : Petit (12{'\u00a0'}px), Standard (14{'\u00a0'}px) et Plus grand (16{'\u00a0'}px).
@@ -563,13 +572,15 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Comment changer la couleur</h3>
           <p className="text-mid">
-            À côté de chaque élément, vous trouverez une rangée d'options de couleur. Cliquez sur un carré de couleur pour le sélectionner. Vous pouvez également ajouter une couleur personnalisée en cliquant sur le carré avec le signe plus : choisissez une couleur et cliquez sur Enregistrer. Les couleurs personnalisées (jusqu'à 8) sont partagées entre tous les éléments.
+            À côté de chaque élément, vous trouverez une rangée d'options de couleur. Cliquez sur un carré de couleur pour le sélectionner. Vous pouvez également ajouter une couleur personnalisée en
+            cliquant sur le carré avec le signe plus : choisissez une couleur et cliquez sur Enregistrer. Les couleurs personnalisées (jusqu'à 8) sont partagées entre tous les éléments.
           </p>
           <p className="text-mid mt-3">Le bouton avec l'icône de réinitialisation restaure la couleur par défaut de l'élément.</p>
 
           <h3 className="h5 mt-6 mb-3">Comment changer la taille</h3>
           <p className="text-mid">
-            Sur la deuxième ligne, vous trouverez le contrôle de taille avec les boutons - et +. La valeur indique le décalage par rapport à la taille de police de base (définie dans l'onglet Apparence). Plage : de -4 à +4{'\u00a0'}pixels.
+            Sur la deuxième ligne, vous trouverez le contrôle de taille avec les boutons - et +. La valeur indique le décalage par rapport à la taille de police de base (définie dans l'onglet
+            Apparence). Plage : de -4 à +4{'\u00a0'}pixels.
           </p>
         </SectionInfo>
 
@@ -582,12 +593,14 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Marge intérieure de la signature</h3>
           <p className="text-mid">
-            En haut de l'onglet, vous trouverez l'option de marge intérieure – c'est-à-dire la distance entre le contenu de la signature et ses bords. Trois valeurs sont disponibles : 8{'\u00a0'}px (petit), 16{'\u00a0'}px (moyen) et 24{'\u00a0'}px (grand).
+            En haut de l'onglet, vous trouverez l'option de marge intérieure – c'est-à-dire la distance entre le contenu de la signature et ses bords. Trois valeurs sont disponibles : 8{'\u00a0'}px
+            (petit), 16{'\u00a0'}px (moyen) et 24{'\u00a0'}px (grand).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Espacements entre les éléments</h3>
           <p className="text-mid">
-            En dessous de la marge, vous trouverez des contrôles pour les éléments individuels de la signature. Chaque contrôle a des boutons + et - pour augmenter ou diminuer l'espacement. Seules les options des éléments actuellement présents dans la signature sont affichées.
+            En dessous de la marge, vous trouverez des contrôles pour les éléments individuels de la signature. Chaque contrôle a des boutons + et - pour augmenter ou diminuer l'espacement. Seules les
+            options des éléments actuellement présents dans la signature sont affichées.
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
@@ -619,23 +632,30 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Sauvegarde automatique et réinitialisation">
           <p className="text-mid">
-            Le générateur enregistre automatiquement tous les paramètres dans la mémoire du navigateur (localStorage). Après actualisation de la page ou réouverture de l'outil, les données, la mise en page, les couleurs et toutes les autres options seront restaurées.
+            Le générateur enregistre automatiquement tous les paramètres dans la mémoire du navigateur (localStorage). Après actualisation de la page ou réouverture de l'outil, les données, la mise en
+            page, les couleurs et toutes les autres options seront restaurées.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Comment fonctionne la sauvegarde automatique</h3>
-          <p className="text-mid">Chaque modification (texte, couleur, mise en page, espacement) est immédiatement enregistrée dans la mémoire du navigateur. La sauvegarde se fait automatiquement en arrière-plan, sans cliquer sur aucun bouton.</p>
+          <p className="text-mid">
+            Chaque modification (texte, couleur, mise en page, espacement) est immédiatement enregistrée dans la mémoire du navigateur. La sauvegarde se fait automatiquement en arrière-plan, sans
+            cliquer sur aucun bouton.
+          </p>
 
           <h3 className="h5 mt-6 mb-3">Comment réinitialiser les paramètres</h3>
           <p className="text-mid">
-            Sous l'aperçu de la signature, vous trouverez le bouton <strong>Réinitialiser l'apparence</strong>. Un clic ouvre une fenêtre de confirmation. Confirmer la réinitialisation restaure toutes les données et paramètres aux valeurs par défaut. Cette opération est irréversible.
+            Sous l'aperçu de la signature, vous trouverez le bouton <strong>Réinitialiser l'apparence</strong>. Un clic ouvre une fenêtre de confirmation. Confirmer la réinitialisation restaure toutes
+            les données et paramètres aux valeurs par défaut. Cette opération est irréversible.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Exporter et importer la configuration</h3>
           <p className="text-mid">
-            Sous l'aperçu de la signature, vous trouverez deux boutons supplémentaires : <strong>Exporter les paramètres</strong> et <strong>Importer les paramètres</strong>. L'export enregistre toutes les données, couleurs, mise en page, espacements et styles de texte dans un fichier JSON. L'import charge une configuration précédemment enregistrée depuis un fichier.
+            Sous l'aperçu de la signature, vous trouverez deux boutons supplémentaires : <strong>Exporter les paramètres</strong> et <strong>Importer les paramètres</strong>. L'export enregistre
+            toutes les données, couleurs, mise en page, espacements et styles de texte dans un fichier JSON. L'import charge une configuration précédemment enregistrée depuis un fichier.
           </p>
           <p className="text-mid mt-3">
-            Cette fonction est particulièrement utile pour transférer la configuration de la signature entre ordinateurs, partager les paramètres avec des collègues ou conserver une sauvegarde de vos réglages avant une réinitialisation.
+            Cette fonction est particulièrement utile pour transférer la configuration de la signature entre ordinateurs, partager les paramètres avec des collègues ou conserver une sauvegarde de vos
+            réglages avant une réinitialisation.
           </p>
         </SectionInfo>
 
@@ -668,12 +688,14 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Aperçu de la signature et options d'export">
           <p className="text-mid">
-            Le panneau d'aperçu s'affiche à droite de l'éditeur et se met à jour automatiquement à chaque modification. L'aperçu est fixé à l'écran (sticky) et reste visible même lors du défilement des options d'édition.
+            Le panneau d'aperçu s'affiche à droite de l'éditeur et se met à jour automatiquement à chaque modification. L'aperçu est fixé à l'écran (sticky) et reste visible même lors du défilement
+            des options d'édition.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Changement de fond de l'aperçu</h3>
           <p className="text-mid">
-            Au-dessus de l'aperçu, vous trouverez trois boutons de changement de fond : <strong>Clair</strong> (fond gris par défaut), <strong>Sombre</strong> (fond sombre, utile pour vérifier la lisibilité sur fond foncé) et <strong>Grille</strong> (motif en grille, permet de voir la transparence et les bords de la signature).
+            Au-dessus de l'aperçu, vous trouverez trois boutons de changement de fond : <strong>Clair</strong> (fond gris par défaut), <strong>Sombre</strong> (fond sombre, utile pour vérifier la
+            lisibilité sur fond foncé) et <strong>Grille</strong> (motif en grille, permet de voir la transparence et les bords de la signature).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Boutons d'action</h3>

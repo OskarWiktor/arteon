@@ -188,7 +188,10 @@ export default function FaviconGeneratorPage() {
               description: 'Drag a file onto the designated area or select a graphic from your device. Supported formats: PNG, JPG, SVG. Recommended size: min. 512×512 pixels.',
             },
             { title: '2. Choose sizes', description: 'Select the icon sizes you need. For a regular website: favicon.ico, 32×32, and 180×180. For PWA, add 192×192 and 512×512.' },
-            { title: '3. Download files', description: 'After generating, download all files as a ZIP or each icon individually. Below the tool you will find instructions on how to add the favicon to your site.' },
+            {
+              title: '3. Download files',
+              description: 'After generating, download all files as a ZIP or each icon individually. Below the tool you will find instructions on how to add the favicon to your site.',
+            },
           ]}
         />
 

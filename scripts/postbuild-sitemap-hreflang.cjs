@@ -30,9 +30,21 @@ const TOOLS = [
   { pl: 'jpg-png-na-webp-bez-limitu', en: 'jpg-png-to-webp-unlimited', de: 'jpg-png-zu-webp-konverter', es: 'convertidor-jpg-png-a-webp', fr: 'convertisseur-jpg-png-en-webp' },
   { pl: 'edytor-zdjec-online', en: 'online-image-editor', de: 'online-bildeditor', es: 'editor-de-imagenes-en-linea', fr: 'editeur-d-images-en-ligne' },
   { pl: 'darmowy-generator-favicon-ico', en: 'free-favicon-generator', de: 'kostenloser-favicon-generator', es: 'generador-de-favicon-gratuito', fr: 'generateur-de-favicon-gratuit' },
-  { pl: 'licznik-dlugosci-meta-title-i-description', en: 'meta-title-description-length-checker', de: 'meta-titel-beschreibung-laengenpruefer', es: 'verificador-de-meta-titulo-y-descripcion', fr: 'verificateur-meta-titre-et-description' },
+  {
+    pl: 'licznik-dlugosci-meta-title-i-description',
+    en: 'meta-title-description-length-checker',
+    de: 'meta-titel-beschreibung-laengenpruefer',
+    es: 'verificador-de-meta-titulo-y-descripcion',
+    fr: 'verificateur-meta-titre-et-description',
+  },
   { pl: 'licznik-slow-i-znakow', en: 'word-and-character-counter', de: 'wort-und-zeichenzaehler', es: 'contador-de-palabras-y-caracteres', fr: 'compteur-de-mots-et-caracteres' },
-  { pl: 'darmowy-generator-stopki-mailowej', en: 'free-email-signature-generator', de: 'kostenloser-e-mail-signatur-generator', es: 'generador-de-firma-de-correo-gratuito', fr: 'generateur-de-signature-email-gratuit' },
+  {
+    pl: 'darmowy-generator-stopki-mailowej',
+    en: 'free-email-signature-generator',
+    de: 'kostenloser-e-mail-signatur-generator',
+    es: 'generador-de-firma-de-correo-gratuito',
+    fr: 'generateur-de-signature-email-gratuit',
+  },
   { pl: 'kontrast-i-czytelnosc-kolorow', en: 'color-contrast-checker', de: 'farbkontrast-checker', es: 'comprobador-de-contraste-de-colores', fr: 'verificateur-de-contraste-des-couleurs' },
   { pl: 'ekstraktor-kolorow-z-obrazu', en: 'image-color-extractor', de: 'bild-farbextraktor', es: 'extractor-de-colores-de-imagen', fr: 'extracteur-de-couleurs-d-image' },
   { pl: 'generator-palet-kolorow', en: 'color-palette-generator', de: 'farbpaletten-generator', es: 'generador-de-paletas-de-colores', fr: 'generateur-de-palettes-de-couleurs' },
@@ -95,10 +107,7 @@ let xml = fs.readFileSync(sitemapPath, 'utf8');
 
 // Ensure xmlns:xhtml is declared in the urlset tag
 if (!xml.includes('xmlns:xhtml=')) {
-  xml = xml.replace(
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"',
-  );
+  xml = xml.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"');
 }
 
 let injected = 0;

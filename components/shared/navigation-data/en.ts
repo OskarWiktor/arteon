@@ -1,4 +1,16 @@
-import { RiAppsLine, RiArticleLine, RiContrast2Line, RiCropLine, RiFileTextLine, RiImageEditLine, RiMailLine, RiPaletteLine, RiPantoneLine, RiQrCodeLine, RiSearchLine } from 'react-icons/ri';
+import {
+  NavAppsLine as RiAppsLine,
+  NavArticleLine as RiArticleLine,
+  NavContrast2Line as RiContrast2Line,
+  NavCropLine as RiCropLine,
+  NavFileTextLine as RiFileTextLine,
+  NavImageEditLine as RiImageEditLine,
+  NavMailLine as RiMailLine,
+  NavPaletteLine as RiPaletteLine,
+  NavPantoneLine as RiPantoneLine,
+  NavQrCodeLine as RiQrCodeLine,
+  NavSearchLine as RiSearchLine,
+} from '@/components/ui/icons/NavIcons';
 
 import type { HeaderNavItemEN, LegalLinkEN } from '@/types/navigation';
 import type { ToolsSectionEN } from '@/types/tools/common';
@@ -127,6 +139,4 @@ export const TOOLS_SECTIONS_EN: ToolsSectionEN[] = [
   },
 ];
 
-export const LEGAL_LINKS_EN: LegalLinkEN[] = [
-  { key: 'privacy', href: '/en/privacy-policy', label: 'Privacy Policy' },
-];
+export const LEGAL_LINKS_EN: LegalLinkEN[] = [{ key: 'privacy', href: '/en/privacy-policy', label: 'Privacy Policy' }];

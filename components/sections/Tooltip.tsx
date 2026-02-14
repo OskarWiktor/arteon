@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react';
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEventListener } from '@/hooks/useEventListener';
@@ -27,7 +26,6 @@ export default function Tooltip({ children, title, description, placement = 'top
   const rootRef = useRef<HTMLSpanElement>(null);
   const { start, clear } = useTimeout();
   const [open, setOpen] = useState(false);
-  const r = useReducedMotion();
 
   useEffect(() => {
     const KEY = '__tooltip_dotted_underline_injected__' as const;
@@ -88,29 +86,23 @@ export default function Tooltip({ children, title, description, placement = 'top
         {children}
       </abbr>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            id={bubbleId}
-            role="tooltip"
-            initial={{ opacity: 0, y: r ? 0 : placement === 'top' ? 6 : -6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: r ? 0 : placement === 'top' ? 6 : -6 }}
-            transition={{ duration: 0.18, ease: 'easeOut' }}
-            className={[
-              'absolute z-[60] max-w-xs rounded-xl bg-black px-3 py-2 text-sm text-white shadow-lg',
-              placement === 'top' ? 'top-full left-1/2 mt-2 -translate-x-1/2' : 'bottom-full left-1/2 mb-2 -translate-x-1/2',
-            ].join(' ')}
-            onMouseEnter={() => setOpen(true)}
-            onMouseLeave={hideImmediately}
-          >
-            <strong className="font-medium">{title}</strong>
-            {description ? <div className="mt-1 text-white/90">{description}</div> : null}
+      {open && (
+        <div
+          id={bubbleId}
+          role="tooltip"
+          className={[
+            'absolute z-[60] max-w-xs rounded-xl bg-black px-3 py-2 text-sm text-white shadow-lg',
+            placement === 'top' ? 'animate-tooltip top-full left-1/2 mt-2' : 'animate-tooltip-bottom bottom-full left-1/2 mb-2',
+          ].join(' ')}
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={hideImmediately}
+        >
+          <strong className="font-medium">{title}</strong>
+          {description ? <div className="mt-1 text-white/90">{description}</div> : null}
 
-            <span aria-hidden className={['absolute h-2 w-2 rotate-45 bg-black', placement === 'top' ? '-top-1 left-1/2 -translate-x-1/2' : '-bottom-1 left-1/2 -translate-x-1/2'].join(' ')} />
-          </motion.div>
-        )}
-      </AnimatePresence>
+          <span aria-hidden className={['absolute h-2 w-2 rotate-45 bg-black', placement === 'top' ? '-top-1 left-1/2 -translate-x-1/2' : '-bottom-1 left-1/2 -translate-x-1/2'].join(' ')} />
+        </div>
+      )}
     </span>
   );
 }

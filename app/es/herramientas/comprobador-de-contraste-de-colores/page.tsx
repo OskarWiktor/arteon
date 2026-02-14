@@ -305,17 +305,21 @@ export default function ColorContrastCheckerPage() {
 
         <SectionInfo title="¿Qué significan los resultados de la prueba de legibilidad?">
           <p className="text-mid mb-4">
-            La herramienta muestra la relación de contraste en una escala de 1:1 (sin contraste) a 21:1 (contraste máximo: negro sobre blanco). El resultado se compara con los umbrales definidos en el estándar WCAG:
+            La herramienta muestra la relación de contraste en una escala de 1:1 (sin contraste) a 21:1 (contraste máximo: negro sobre blanco). El resultado se compara con los umbrales definidos en el
+            estándar WCAG:
           </p>
           <ul className="text-mid list-disc space-y-2 pl-5">
             <li>
-              <strong>Texto normal</strong> – requiere al menos 4,5:1 para el nivel AA (estándar mínimo) o 7:1 para el nivel AAA (estándar mejorado). Se aplica al texto menor de 18pt (24px) o menor de 14pt (18,5px) en negrita.
+              <strong>Texto normal</strong> – requiere al menos 4,5:1 para el nivel AA (estándar mínimo) o 7:1 para el nivel AAA (estándar mejorado). Se aplica al texto menor de 18pt (24px) o menor de
+              14pt (18,5px) en negrita.
             </li>
             <li>
-              <strong>Texto grande / negrita</strong> – requiere al menos 3:1 para el nivel AA o 4,5:1 para el nivel AAA. Se aplica al texto desde 18pt (24px) o desde 14pt (18,5px) en negrita: encabezados, botones, resaltados.
+              <strong>Texto grande / negrita</strong> – requiere al menos 3:1 para el nivel AA o 4,5:1 para el nivel AAA. Se aplica al texto desde 18pt (24px) o desde 14pt (18,5px) en negrita:
+              encabezados, botones, resaltados.
             </li>
             <li>
-              <strong>Iconos y elementos de interfaz</strong> – requieren al menos 3:1 para el nivel AA. Se aplica a iconos, botones, campos de formulario y otros elementos de interfaz que transmiten información.
+              <strong>Iconos y elementos de interfaz</strong> – requieren al menos 3:1 para el nivel AA. Se aplica a iconos, botones, campos de formulario y otros elementos de interfaz que transmiten
+              información.
             </li>
           </ul>
           <p className="text-mid mt-3">
@@ -372,17 +376,20 @@ export default function ColorContrastCheckerPage() {
           <h3 className="h5 mb-2">Veo un error de formato de color</h3>
           <p className="text-mid mb-4">
             Compruebe el formato del color. Un código HEX debe empezar con <code className="rounded bg-black/5 px-1">#</code> y contener 3 o 6 caracteres (p. ej.,{' '}
-            <code className="rounded bg-black/5 px-1">#fff</code> o <code className="rounded bg-black/5 px-1">#ffffff</code>). Para formato RGB, compruebe que los valores están separados por comas y en el rango 0–255.
+            <code className="rounded bg-black/5 px-1">#fff</code> o <code className="rounded bg-black/5 px-1">#ffffff</code>). Para formato RGB, compruebe que los valores están separados por comas y
+            en el rango 0–255.
           </p>
 
           <h3 className="h5 mb-2">La función Coincidencia no encuentra un color adecuado</h3>
           <p className="text-mid mb-4">
-            Cuando el fondo y el texto tienen una luminosidad similar en el mismo tono, el algoritmo puede no encontrar una variante que cumpla los requisitos sin cambiar el tono. En este caso, considere cambiar el color de fondo o elegir un color de texto completamente diferente.
+            Cuando el fondo y el texto tienen una luminosidad similar en el mismo tono, el algoritmo puede no encontrar una variante que cumpla los requisitos sin cambiar el tono. En este caso,
+            considere cambiar el color de fondo o elegir un color de texto completamente diferente.
           </p>
 
           <h3 className="h5 mb-2">El color en el selector no corresponde al código introducido</h3>
           <p className="text-mid">
-            El selector de colores del navegador solo admite el formato HEX sin transparencia. Si introduce un color en formato RGBA o HSLA con transparencia, el selector mostrará solo la parte de color (sin alfa). Los cálculos de contraste siguen teniendo en cuenta la transparencia.
+            El selector de colores del navegador solo admite el formato HEX sin transparencia. Si introduce un color en formato RGBA o HSLA con transparencia, el selector mostrará solo la parte de
+            color (sin alfa). Los cálculos de contraste siguen teniendo en cuenta la transparencia.
           </p>
         </SectionInfo>
 
@@ -430,7 +437,8 @@ export default function ColorContrastCheckerPage() {
 
         <SectionInfo title="Legibilidad del color para personas con daltonismo">
           <p className="text-mid mb-4">
-            El daltonismo es un trastorno de la percepción del color que afecta a aproximadamente el 8{'\u00a0'}% de los hombres y el 0,5{'\u00a0'}% de las mujeres. Las personas con daltonismo pueden tener dificultades para distinguir ciertos pares de colores, incluso si el contraste de luminancia es suficiente.
+            El daltonismo es un trastorno de la percepción del color que afecta a aproximadamente el 8{'\u00a0'}% de los hombres y el 0,5{'\u00a0'}% de las mujeres. Las personas con daltonismo pueden
+            tener dificultades para distinguir ciertos pares de colores, incluso si el contraste de luminancia es suficiente.
           </p>
           <p className="text-mid mb-4">Tipos más comunes de daltonismo:</p>
           <ul className="text-mid list-disc space-y-2 pl-5">
@@ -445,7 +453,8 @@ export default function ColorContrastCheckerPage() {
             </li>
           </ul>
           <p className="text-mid mt-3">
-            Esta herramienta comprueba el contraste de luminancia, que es importante para todos los usuarios. Sin embargo, al diseñar, conviene evitar combinaciones de colores problemáticas (p. ej., texto rojo sobre fondo verde) y no depender únicamente del color para transmitir información: use también formas, iconos y texto.
+            Esta herramienta comprueba el contraste de luminancia, que es importante para todos los usuarios. Sin embargo, al diseñar, conviene evitar combinaciones de colores problemáticas (p. ej.,
+            texto rojo sobre fondo verde) y no depender únicamente del color para transmitir información: use también formas, iconos y texto.
           </p>
         </SectionInfo>
 

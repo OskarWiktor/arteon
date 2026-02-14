@@ -133,16 +133,79 @@ const LOCALE_TOOLS_BASE = {
 };
 
 const TOOLS = [
-  { pl: 'jpg-png-na-webp-bez-limitu', en: 'jpg-png-to-webp-unlimited', de: 'jpg-png-zu-webp-konverter', es: 'convertidor-jpg-png-a-webp', fr: 'convertisseur-jpg-png-en-webp', pt: 'conversor-jpg-png-para-webp' },
+  {
+    pl: 'jpg-png-na-webp-bez-limitu',
+    en: 'jpg-png-to-webp-unlimited',
+    de: 'jpg-png-zu-webp-konverter',
+    es: 'convertidor-jpg-png-a-webp',
+    fr: 'convertisseur-jpg-png-en-webp',
+    pt: 'conversor-jpg-png-para-webp',
+  },
   { pl: 'edytor-zdjec-online', en: 'online-image-editor', de: 'online-bildeditor', es: 'editor-de-imagenes-en-linea', fr: 'editeur-d-images-en-ligne', pt: 'editor-de-imagens-online' },
-  { pl: 'darmowy-generator-favicon-ico', en: 'free-favicon-generator', de: 'kostenloser-favicon-generator', es: 'generador-de-favicon-gratuito', fr: 'generateur-de-favicon-gratuit', pt: 'gerador-de-favicon-gratuito' },
-  { pl: 'licznik-dlugosci-meta-title-i-description', en: 'meta-title-description-length-checker', de: 'meta-titel-beschreibung-laengenpruefer', es: 'verificador-de-meta-titulo-y-descripcion', fr: 'verificateur-meta-titre-et-description', pt: 'verificador-de-meta-titulo-e-descricao' },
-  { pl: 'licznik-slow-i-znakow', en: 'word-and-character-counter', de: 'wort-und-zeichenzaehler', es: 'contador-de-palabras-y-caracteres', fr: 'compteur-de-mots-et-caracteres', pt: 'contador-de-palavras-e-caracteres' },
-  { pl: 'darmowy-generator-stopki-mailowej', en: 'free-email-signature-generator', de: 'kostenloser-e-mail-signatur-generator', es: 'generador-de-firma-de-correo-gratuito', fr: 'generateur-de-signature-email-gratuit', pt: 'gerador-de-assinatura-de-email-gratuito' },
-  { pl: 'kontrast-i-czytelnosc-kolorow', en: 'color-contrast-checker', de: 'farbkontrast-checker', es: 'comprobador-de-contraste-de-colores', fr: 'verificateur-de-contraste-des-couleurs', pt: 'verificador-de-contraste-de-cores' },
-  { pl: 'ekstraktor-kolorow-z-obrazu', en: 'image-color-extractor', de: 'bild-farbextraktor', es: 'extractor-de-colores-de-imagen', fr: 'extracteur-de-couleurs-d-image', pt: 'extrator-de-cores-de-imagem' },
-  { pl: 'generator-palet-kolorow', en: 'color-palette-generator', de: 'farbpaletten-generator', es: 'generador-de-paletas-de-colores', fr: 'generateur-de-palettes-de-couleurs', pt: 'gerador-de-paletas-de-cores' },
-  { pl: 'darmowy-generator-kodow-qr', en: 'free-qr-code-generator', de: 'kostenloser-qr-code-generator', es: 'generador-de-codigos-qr-gratuito', fr: 'generateur-de-codes-qr-gratuit', pt: 'gerador-de-codigos-qr-gratuito' },
+  {
+    pl: 'darmowy-generator-favicon-ico',
+    en: 'free-favicon-generator',
+    de: 'kostenloser-favicon-generator',
+    es: 'generador-de-favicon-gratuito',
+    fr: 'generateur-de-favicon-gratuit',
+    pt: 'gerador-de-favicon-gratuito',
+  },
+  {
+    pl: 'licznik-dlugosci-meta-title-i-description',
+    en: 'meta-title-description-length-checker',
+    de: 'meta-titel-beschreibung-laengenpruefer',
+    es: 'verificador-de-meta-titulo-y-descripcion',
+    fr: 'verificateur-meta-titre-et-description',
+    pt: 'verificador-de-meta-titulo-e-descricao',
+  },
+  {
+    pl: 'licznik-slow-i-znakow',
+    en: 'word-and-character-counter',
+    de: 'wort-und-zeichenzaehler',
+    es: 'contador-de-palabras-y-caracteres',
+    fr: 'compteur-de-mots-et-caracteres',
+    pt: 'contador-de-palavras-e-caracteres',
+  },
+  {
+    pl: 'darmowy-generator-stopki-mailowej',
+    en: 'free-email-signature-generator',
+    de: 'kostenloser-e-mail-signatur-generator',
+    es: 'generador-de-firma-de-correo-gratuito',
+    fr: 'generateur-de-signature-email-gratuit',
+    pt: 'gerador-de-assinatura-de-email-gratuito',
+  },
+  {
+    pl: 'kontrast-i-czytelnosc-kolorow',
+    en: 'color-contrast-checker',
+    de: 'farbkontrast-checker',
+    es: 'comprobador-de-contraste-de-colores',
+    fr: 'verificateur-de-contraste-des-couleurs',
+    pt: 'verificador-de-contraste-de-cores',
+  },
+  {
+    pl: 'ekstraktor-kolorow-z-obrazu',
+    en: 'image-color-extractor',
+    de: 'bild-farbextraktor',
+    es: 'extractor-de-colores-de-imagen',
+    fr: 'extracteur-de-couleurs-d-image',
+    pt: 'extrator-de-cores-de-imagem',
+  },
+  {
+    pl: 'generator-palet-kolorow',
+    en: 'color-palette-generator',
+    de: 'farbpaletten-generator',
+    es: 'generador-de-paletas-de-colores',
+    fr: 'generateur-de-palettes-de-couleurs',
+    pt: 'gerador-de-paletas-de-cores',
+  },
+  {
+    pl: 'darmowy-generator-kodow-qr',
+    en: 'free-qr-code-generator',
+    de: 'kostenloser-qr-code-generator',
+    es: 'generador-de-codigos-qr-gratuito',
+    fr: 'generateur-de-codes-qr-gratuit',
+    pt: 'gerador-de-codigos-qr-gratuito',
+  },
 ];
 
 // Non-tool multilingual pages (EN/DE/ES/FR only – PL has its own separate pages)
@@ -274,7 +337,18 @@ module.exports = {
     const base = {
       loc,
       changefreq: 'weekly',
-      priority: loc === '/' ? 1.0 : (loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')) ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7,
+      priority:
+        loc === '/'
+          ? 1.0
+          : loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')
+            ? 0.7
+            : loc.startsWith('/uslugi/')
+              ? 0.8
+              : loc.startsWith('/edukacja')
+                ? 0.75
+                : loc.startsWith('/realizacje')
+                  ? 0.6
+                  : 0.7,
       alternateRefs: [],
     };
     const lastmod = ROUTE_LASTMOD.get(loc);
@@ -298,7 +372,18 @@ module.exports = {
       // Skip individual project pages - added from PROJECTS data below with images
       if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
-      const priority = loc === '/' ? 1.0 : (loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')) ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7;
+      const priority =
+        loc === '/'
+          ? 1.0
+          : loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')
+            ? 0.7
+            : loc.startsWith('/uslugi/')
+              ? 0.8
+              : loc.startsWith('/edukacja')
+                ? 0.75
+                : loc.startsWith('/realizacje')
+                  ? 0.6
+                  : 0.7;
 
       const entry = { loc, changefreq: 'weekly', priority };
       if (last) entry.lastmod = last;

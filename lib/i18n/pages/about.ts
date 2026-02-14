@@ -52,7 +52,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     slug: 'about',
     metadata: {
       title: 'About Arteon – 10 Free Online Tools for Web, SEO & Design',
-      description: 'Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more. No sign-up, no upload — everything runs locally.',
+      description:
+        'Arteon is a creative agency building free browser-based tools: WebP converter, favicon generator, color contrast checker, QR code maker and more. No sign-up, no upload — everything runs locally.',
     },
     hero: {
       title: 'Free online tools built by a creative agency',
@@ -69,7 +70,10 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
         { title: 'No registration, no limits', description: 'Every tool works instantly in your browser. No account required, no login, no payment.' },
         { title: 'Privacy first', description: 'Your files never leave your device. All processing happens locally in your browser — we do not send your data to any server.' },
         { title: 'Built from real needs', description: 'Each tool was born from a real problem we encountered while working on client projects. If we needed it, chances are you do too.' },
-        { title: 'Funded by ads, free for you', description: 'We use Google AdSense banners to cover the costs of development and hosting. Thanks to ad revenue, we can keep all tools free and continue building new ones.' },
+        {
+          title: 'Funded by ads, free for you',
+          description: 'We use Google AdSense banners to cover the costs of development and hosting. Thanks to ad revenue, we can keep all tools free and continue building new ones.',
+        },
       ],
     },
     ourTools: {
@@ -88,7 +92,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     },
     privacy: {
       title: 'Privacy and security',
-      textBefore: 'We respect your privacy. Files you upload to our tools are processed exclusively in your browser and are never sent to any server. We use analytics (Google Analytics 4) and advertising (Google AdSense) only after you give consent via the cookie banner. Full details are available in our',
+      textBefore:
+        'We respect your privacy. Files you upload to our tools are processed exclusively in your browser and are never sent to any server. We use analytics (Google Analytics 4) and advertising (Google AdSense) only after you give consent via the cookie banner. Full details are available in our',
       linkLabel: 'Privacy Policy',
       textAfter: '.',
     },
@@ -104,7 +109,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     slug: 'ueber-uns',
     metadata: {
       title: 'Über Arteon – 10 kostenlose Online-Tools für Web, SEO & Design',
-      description: 'Arteon ist eine Kreativagentur und entwickelt kostenlose Browser-Tools: WebP-Konverter, Favicon-Generator, Farbkontrast-Checker, QR-Code-Generator u.\u00a0v.\u00a0m. Ohne Anmeldung, ohne Upload — alles läuft lokal.',
+      description:
+        'Arteon ist eine Kreativagentur und entwickelt kostenlose Browser-Tools: WebP-Konverter, Favicon-Generator, Farbkontrast-Checker, QR-Code-Generator u.\u00a0v.\u00a0m. Ohne Anmeldung, ohne Upload — alles läuft lokal.',
     },
     hero: {
       title: 'Kostenlose Online-Tools von einer Kreativagentur',
@@ -120,8 +126,15 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
       items: [
         { title: 'Ohne Registrierung, ohne Limits', description: 'Jedes Tool funktioniert sofort im Browser. Kein Konto, keine Anmeldung, keine Zahlung erforderlich.' },
         { title: 'Datenschutz an erster Stelle', description: 'Ihre Dateien verlassen nie Ihr Gerät. Die gesamte Verarbeitung erfolgt lokal im Browser — wir senden Ihre Daten nicht an Server.' },
-        { title: 'Aus echten Bedürfnissen entstanden', description: 'Jedes Tool entstand aus einem realen Problem, das wir bei der Arbeit an Kundenprojekten hatten. Wenn wir es brauchten, brauchen Sie es wahrscheinlich auch.' },
-        { title: 'Durch Werbung finanziert, für Sie kostenlos', description: 'Wir nutzen Google-AdSense-Banner, um die Kosten für Entwicklung und Hosting zu decken. Dank der Werbeeinnahmen können wir alle Tools kostenlos halten und weiter neue entwickeln.' },
+        {
+          title: 'Aus echten Bedürfnissen entstanden',
+          description: 'Jedes Tool entstand aus einem realen Problem, das wir bei der Arbeit an Kundenprojekten hatten. Wenn wir es brauchten, brauchen Sie es wahrscheinlich auch.',
+        },
+        {
+          title: 'Durch Werbung finanziert, für Sie kostenlos',
+          description:
+            'Wir nutzen Google-AdSense-Banner, um die Kosten für Entwicklung und Hosting zu decken. Dank der Werbeeinnahmen können wir alle Tools kostenlos halten und weiter neue entwickeln.',
+        },
       ],
     },
     ourTools: {
@@ -140,7 +153,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     },
     privacy: {
       title: 'Datenschutz und Sicherheit',
-      textBefore: 'Wir respektieren Ihre Privatsphäre. Dateien, die Sie in unsere Tools hochladen, werden ausschließlich in Ihrem Browser verarbeitet und nie an einen Server gesendet. Wir verwenden Analysen (Google Analytics 4) und Werbung (Google AdSense) nur nach Ihrer Zustimmung über das Cookie-Banner. Alle Details finden Sie in unserer',
+      textBefore:
+        'Wir respektieren Ihre Privatsphäre. Dateien, die Sie in unsere Tools hochladen, werden ausschließlich in Ihrem Browser verarbeitet und nie an einen Server gesendet. Wir verwenden Analysen (Google Analytics 4) und Werbung (Google AdSense) nur nach Ihrer Zustimmung über das Cookie-Banner. Alle Details finden Sie in unserer',
       linkLabel: 'Datenschutzrichtlinie',
       textAfter: '.',
     },
@@ -156,7 +170,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     slug: 'sobre-nosotros',
     metadata: {
       title: 'Sobre Arteon – 10 herramientas online gratuitas para web, SEO y diseño',
-      description: 'Arteon es una agencia creativa que desarrolla herramientas gratuitas en el navegador: conversor WebP, generador de favicon, comprobador de contraste, generador de códigos QR y más. Sin registro, sin subida de archivos — todo se ejecuta localmente.',
+      description:
+        'Arteon es una agencia creativa que desarrolla herramientas gratuitas en el navegador: conversor WebP, generador de favicon, comprobador de contraste, generador de códigos QR y más. Sin registro, sin subida de archivos — todo se ejecuta localmente.',
     },
     hero: {
       title: 'Herramientas online gratuitas creadas por una agencia creativa',
@@ -171,9 +186,19 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
       title: 'Por qué ofrecemos herramientas gratuitas',
       items: [
         { title: 'Sin registro, sin límites', description: 'Cada herramienta funciona instantáneamente en su navegador. Sin cuenta, sin inicio de sesión, sin pago.' },
-        { title: 'Privacidad primero', description: 'Sus archivos nunca salen de su dispositivo. Todo el procesamiento se realiza localmente en su navegador — no enviamos sus datos a ningún servidor.' },
-        { title: 'Creadas a partir de necesidades reales', description: 'Cada herramienta nació de un problema real que encontramos al trabajar en proyectos de clientes. Si nosotros lo necesitábamos, es probable que usted también.' },
-        { title: 'Financiadas por publicidad, gratuitas para usted', description: 'Utilizamos banners de Google AdSense para cubrir los costes de desarrollo y alojamiento. Gracias a los ingresos publicitarios, podemos mantener todas las herramientas gratuitas y seguir creando nuevas.' },
+        {
+          title: 'Privacidad primero',
+          description: 'Sus archivos nunca salen de su dispositivo. Todo el procesamiento se realiza localmente en su navegador — no enviamos sus datos a ningún servidor.',
+        },
+        {
+          title: 'Creadas a partir de necesidades reales',
+          description: 'Cada herramienta nació de un problema real que encontramos al trabajar en proyectos de clientes. Si nosotros lo necesitábamos, es probable que usted también.',
+        },
+        {
+          title: 'Financiadas por publicidad, gratuitas para usted',
+          description:
+            'Utilizamos banners de Google AdSense para cubrir los costes de desarrollo y alojamiento. Gracias a los ingresos publicitarios, podemos mantener todas las herramientas gratuitas y seguir creando nuevas.',
+        },
       ],
     },
     ourTools: {
@@ -192,7 +217,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     },
     privacy: {
       title: 'Privacidad y seguridad',
-      textBefore: 'Respetamos su privacidad. Los archivos que sube a nuestras herramientas se procesan exclusivamente en su navegador y nunca se envían a ningún servidor. Utilizamos análisis (Google Analytics 4) y publicidad (Google AdSense) solo después de que usted dé su consentimiento a través del banner de cookies. Los detalles completos están disponibles en nuestra',
+      textBefore:
+        'Respetamos su privacidad. Los archivos que sube a nuestras herramientas se procesan exclusivamente en su navegador y nunca se envían a ningún servidor. Utilizamos análisis (Google Analytics 4) y publicidad (Google AdSense) solo después de que usted dé su consentimiento a través del banner de cookies. Los detalles completos están disponibles en nuestra',
       linkLabel: 'Política de privacidad',
       textAfter: '.',
     },
@@ -208,7 +234,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     slug: 'a-propos',
     metadata: {
       title: 'À propos d\u2019Arteon – 10 outils en ligne gratuits pour le web, le SEO et le design',
-      description: 'Arteon est une agence créative qui développe des outils gratuits dans le navigateur\u00a0: convertisseur WebP, générateur de favicon, vérificateur de contraste, générateur de codes QR et plus. Sans inscription, sans envoi de fichiers — tout fonctionne localement.',
+      description:
+        'Arteon est une agence créative qui développe des outils gratuits dans le navigateur\u00a0: convertisseur WebP, générateur de favicon, vérificateur de contraste, générateur de codes QR et plus. Sans inscription, sans envoi de fichiers — tout fonctionne localement.',
     },
     hero: {
       title: 'Outils en ligne gratuits conçus par une agence créative',
@@ -217,15 +244,25 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     whoWeAre: {
       title: 'Qui sommes-nous',
       p1: "Arteon est une agence créative polonaise. En plus de notre travail commercial, nous développons et maintenons une collection grandissante d'outils en ligne gratuits destinés aux propriétaires d'entreprises, créateurs de sites web, designers, spécialistes du marketing et toute personne travaillant avec du contenu numérique.",
-      p2: "Chaque outil que nous créons résout un problème concret et quotidien\u00a0: convertir des images, vérifier le contraste des couleurs, générer des favicons, créer des codes QR et bien plus. Notre objectif est de construire une boîte à outils complète où vous trouverez tout ce dont vous avez besoin en un seul endroit — sans naviguer entre des dizaines de sites différents.",
+      p2: 'Chaque outil que nous créons résout un problème concret et quotidien\u00a0: convertir des images, vérifier le contraste des couleurs, générer des favicons, créer des codes QR et bien plus. Notre objectif est de construire une boîte à outils complète où vous trouverez tout ce dont vous avez besoin en un seul endroit — sans naviguer entre des dizaines de sites différents.',
     },
     whyFree: {
       title: 'Pourquoi nous proposons des outils gratuits',
       items: [
         { title: 'Sans inscription, sans limites', description: 'Chaque outil fonctionne instantanément dans votre navigateur. Pas de compte, pas de connexion, pas de paiement.' },
-        { title: 'Confidentialité avant tout', description: "Vos fichiers ne quittent jamais votre appareil. Tout le traitement se fait localement dans votre navigateur — nous n'envoyons vos données à aucun serveur." },
-        { title: 'Créés à partir de besoins réels', description: "Chaque outil est né d'un problème réel que nous avons rencontré en travaillant sur des projets clients. Si nous en avions besoin, vous aussi probablement." },
-        { title: 'Financés par la publicité, gratuits pour vous', description: "Nous utilisons des bannières Google AdSense pour couvrir les coûts de développement et d'hébergement. Grâce aux revenus publicitaires, nous pouvons garder tous les outils gratuits et continuer à en créer de nouveaux." },
+        {
+          title: 'Confidentialité avant tout',
+          description: "Vos fichiers ne quittent jamais votre appareil. Tout le traitement se fait localement dans votre navigateur — nous n'envoyons vos données à aucun serveur.",
+        },
+        {
+          title: 'Créés à partir de besoins réels',
+          description: "Chaque outil est né d'un problème réel que nous avons rencontré en travaillant sur des projets clients. Si nous en avions besoin, vous aussi probablement.",
+        },
+        {
+          title: 'Financés par la publicité, gratuits pour vous',
+          description:
+            "Nous utilisons des bannières Google AdSense pour couvrir les coûts de développement et d'hébergement. Grâce aux revenus publicitaires, nous pouvons garder tous les outils gratuits et continuer à en créer de nouveaux.",
+        },
       ],
     },
     ourTools: {
@@ -234,7 +271,10 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
         { title: 'Images et favicons', description: "Convertisseur WebP, éditeur d'images en ligne et générateur de favicon. 3 outils pour le travail quotidien avec les images." },
         { title: 'Méta et SEO', description: 'Vérificateur de méta titre et description plus un compteur de mots et caractères pour évaluer la longueur du texte.' },
         { title: 'E-mail et communication', description: "Générateur de signature e-mail HTML avec code prêt à l'emploi pour Gmail et Outlook." },
-        { title: 'Couleurs et accessibilité', description: "Vérificateur de contraste WCAG, extracteur de couleurs d'image et générateur de palettes de couleurs. 3 outils pour travailler avec la couleur." },
+        {
+          title: 'Couleurs et accessibilité',
+          description: "Vérificateur de contraste WCAG, extracteur de couleurs d'image et générateur de palettes de couleurs. 3 outils pour travailler avec la couleur.",
+        },
         { title: 'Impression et supports', description: 'Générateur de codes QR pour sites web, vCards, menus et dépliants. Export en PNG et SVG.' },
       ],
     },
@@ -244,7 +284,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     },
     privacy: {
       title: 'Confidentialité et sécurité',
-      textBefore: "Nous respectons votre vie privée. Les fichiers que vous importez dans nos outils sont traités exclusivement dans votre navigateur et ne sont jamais envoyés à un serveur. Nous utilisons des analyses (Google Analytics 4) et de la publicité (Google AdSense) uniquement après votre consentement via la bannière de cookies. Tous les détails sont disponibles dans notre",
+      textBefore:
+        'Nous respectons votre vie privée. Les fichiers que vous importez dans nos outils sont traités exclusivement dans votre navigateur et ne sont jamais envoyés à un serveur. Nous utilisons des analyses (Google Analytics 4) et de la publicité (Google AdSense) uniquement après votre consentement via la bannière de cookies. Tous les détails sont disponibles dans notre',
       linkLabel: 'Politique de confidentialité',
       textAfter: '.',
     },
@@ -260,7 +301,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     slug: 'sobre-nos',
     metadata: {
       title: 'Sobre a Arteon – 10 ferramentas online gratuitas para web, SEO e design',
-      description: 'A Arteon é uma agência criativa que desenvolve ferramentas gratuitas no navegador: conversor WebP, gerador de favicon, verificador de contraste, gerador de códigos QR e mais. Sem registo, sem envio de ficheiros — tudo funciona localmente.',
+      description:
+        'A Arteon é uma agência criativa que desenvolve ferramentas gratuitas no navegador: conversor WebP, gerador de favicon, verificador de contraste, gerador de códigos QR e mais. Sem registo, sem envio de ficheiros — tudo funciona localmente.',
     },
     hero: {
       title: 'Ferramentas online gratuitas criadas por uma agência criativa',
@@ -275,9 +317,19 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
       title: 'Porque oferecemos ferramentas gratuitas',
       items: [
         { title: 'Sem registo, sem limites', description: 'Cada ferramenta funciona instantaneamente no seu navegador. Sem conta, sem login, sem pagamento.' },
-        { title: 'Privacidade em primeiro lugar', description: 'Os seus ficheiros nunca saem do seu dispositivo. Todo o processamento é feito localmente no seu navegador — não enviamos os seus dados para nenhum servidor.' },
-        { title: 'Criadas a partir de necessidades reais', description: 'Cada ferramenta nasceu de um problema real que encontrámos ao trabalhar em projetos de clientes. Se nós precisámos, é provável que você também precise.' },
-        { title: 'Financiadas por publicidade, gratuitas para si', description: 'Utilizamos banners do Google AdSense para cobrir os custos de desenvolvimento e alojamento. Graças às receitas publicitárias, podemos manter todas as ferramentas gratuitas e continuar a criar novas.' },
+        {
+          title: 'Privacidade em primeiro lugar',
+          description: 'Os seus ficheiros nunca saem do seu dispositivo. Todo o processamento é feito localmente no seu navegador — não enviamos os seus dados para nenhum servidor.',
+        },
+        {
+          title: 'Criadas a partir de necessidades reais',
+          description: 'Cada ferramenta nasceu de um problema real que encontrámos ao trabalhar em projetos de clientes. Se nós precisámos, é provável que você também precise.',
+        },
+        {
+          title: 'Financiadas por publicidade, gratuitas para si',
+          description:
+            'Utilizamos banners do Google AdSense para cobrir os custos de desenvolvimento e alojamento. Graças às receitas publicitárias, podemos manter todas as ferramentas gratuitas e continuar a criar novas.',
+        },
       ],
     },
     ourTools: {
@@ -296,7 +348,8 @@ const ABOUT_DATA: Partial<Record<Locale, AboutPageData>> = {
     },
     privacy: {
       title: 'Privacidade e segurança',
-      textBefore: 'Respeitamos a sua privacidade. Os ficheiros que carrega nas nossas ferramentas são processados exclusivamente no seu navegador e nunca são enviados para nenhum servidor. Utilizamos análises (Google Analytics 4) e publicidade (Google AdSense) apenas após o seu consentimento através do banner de cookies. Todos os detalhes estão disponíveis na nossa',
+      textBefore:
+        'Respeitamos a sua privacidade. Os ficheiros que carrega nas nossas ferramentas são processados exclusivamente no seu navegador e nunca são enviados para nenhum servidor. Utilizamos análises (Google Analytics 4) e publicidade (Google AdSense) apenas após o seu consentimento através do banner de cookies. Todos os detalhes estão disponíveis na nossa',
       linkLabel: 'Política de Privacidade',
       textAfter: '.',
     },

@@ -155,8 +155,8 @@ export default function MetaTitlePage() {
             cliques e prejudicar o referenciamento da sua página.
           </p>
           <p className="text-mid mt-3">
-            Esta ferramenta verifica o número de caracteres, o número de palavras e a largura em píxeis do seu título e descrição. Mostra uma pré-visualização em tempo real da aparência da sua página nos
-            resultados Google, permitindo otimizar cada elemento antes da publicação.
+            Esta ferramenta verifica o número de caracteres, o número de palavras e a largura em píxeis do seu título e descrição. Mostra uma pré-visualização em tempo real da aparência da sua página
+            nos resultados Google, permitindo otimizar cada elemento antes da publicação.
           </p>
         </SectionInfo>
 
@@ -313,10 +313,12 @@ export default function MetaTitlePage() {
           }
         >
           <p className="text-mid">
-            As diferentes letras têm larguras diferentes. Compare «iiii» e «WWWW»: ambas têm 4 caracteres, mas a largura visual é completamente diferente. O Google mede a largura do texto em píxeis, não em caracteres.
+            As diferentes letras têm larguras diferentes. Compare «iiii» e «WWWW»: ambas têm 4 caracteres, mas a largura visual é completamente diferente. O Google mede a largura do texto em píxeis,
+            não em caracteres.
           </p>
           <p className="text-mid mt-3">
-            Por isso, um título com muitas letras estreitas (i, l, t, f) pode ser mais longo do que um título com letras largas (W, M, O), apesar do mesmo número de caracteres. A ferramenta mostra ambos os valores: o número de caracteres (mais fácil de compreender) e a largura em píxeis (mais preciso para o Google).
+            Por isso, um título com muitas letras estreitas (i, l, t, f) pode ser mais longo do que um título com letras largas (W, M, O), apesar do mesmo número de caracteres. A ferramenta mostra
+            ambos os valores: o número de caracteres (mais fácil de compreender) e a largura em píxeis (mais preciso para o Google).
           </p>
         </SectionDemo>
 
@@ -324,13 +326,20 @@ export default function MetaTitlePage() {
 
         <SectionInfo title="Pré-visualização do snippet: o que mostra?">
           <p className="text-mid">
-            A pré-visualização (snippet preview) simula a aparência do título e da descrição da página nos resultados de pesquisa Google. É uma visualização indicativa: a aparência real pode variar ligeiramente conforme o dispositivo e o navegador.
+            A pré-visualização (snippet preview) simula a aparência do título e da descrição da página nos resultados de pesquisa Google. É uma visualização indicativa: a aparência real pode variar
+            ligeiramente conforme o dispositivo e o navegador.
           </p>
           <h3 className="h5 mt-6 mb-2">Elementos da pré-visualização</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
-            <li><strong>URL</strong> – o endereço da página apresentado acima do título. Pode introduzi-lo num campo opcional para um resultado mais realista.</li>
-            <li><strong>Título</strong> – o cabeçalho azul. Se for demasiado longo, a ferramenta trunca-o automaticamente e adiciona reticências.</li>
-            <li><strong>Descrição</strong> – o texto cinzento sob o título. Também é truncado se exceder o limite.</li>
+            <li>
+              <strong>URL</strong> – o endereço da página apresentado acima do título. Pode introduzi-lo num campo opcional para um resultado mais realista.
+            </li>
+            <li>
+              <strong>Título</strong> – o cabeçalho azul. Se for demasiado longo, a ferramenta trunca-o automaticamente e adiciona reticências.
+            </li>
+            <li>
+              <strong>Descrição</strong> – o texto cinzento sob o título. Também é truncado se exceder o limite.
+            </li>
           </ul>
         </SectionInfo>
 
@@ -366,7 +375,11 @@ export default function MetaTitlePage() {
           description="Um bom meta título influencia a taxa de cliques nos resultados de pesquisa:"
           grid="two"
           items={[
-            { icon: <RiSearchLine className="h-6 w-6" />, title: 'Palavra-chave principal no início', description: 'Coloque a palavra-chave mais importante no início do título para melhor visibilidade.' },
+            {
+              icon: <RiSearchLine className="h-6 w-6" />,
+              title: 'Palavra-chave principal no início',
+              description: 'Coloque a palavra-chave mais importante no início do título para melhor visibilidade.',
+            },
             { icon: <RiRulerLine className="h-6 w-6" />, title: 'Respeitar o intervalo ideal', description: '50–60 caracteres / 450–580 píxeis – o intervalo que geralmente é mostrado na íntegra.' },
             { icon: <RiEditLine className="h-6 w-6" />, title: 'Ser descritivo e único', description: 'Cada página deve ter um título único que descreva com precisão o seu conteúdo.' },
             { icon: <RiMegaphoneLine className="h-6 w-6" />, title: 'Incentivar o clique', description: 'Utilize termos que despertem vontade de clicar – sem cair no clickbait.' },
@@ -416,7 +429,11 @@ export default function MetaTitlePage() {
               title: 'Pré-visualização Google',
               description: 'Veja como o título e a descrição aparecem nos resultados de pesquisa antes de publicar a sua página.',
             },
-            { icon: <RiCheckboxCircleLine className="h-6 w-6" />, title: 'Avaliação codificada por cores', description: 'Saiba instantaneamente se o texto é demasiado curto, ideal ou demasiado longo.' },
+            {
+              icon: <RiCheckboxCircleLine className="h-6 w-6" />,
+              title: 'Avaliação codificada por cores',
+              description: 'Saiba instantaneamente se o texto é demasiado curto, ideal ou demasiado longo.',
+            },
             {
               icon: <RiInfinityLine className="h-6 w-6" />,
               title: 'Píxeis e caracteres em conjunto',
@@ -432,7 +449,12 @@ export default function MetaTitlePage() {
 
         <Gap variant="line" />
 
-        <FaqPanels pageUrl={toAbsoluteUrl('/pt/ferramentas/verificador-de-meta-titulo-e-descricao')} title="Perguntas frequentes sobre o verificador de meta título" openByDefault={1} items={faqItems} />
+        <FaqPanels
+          pageUrl={toAbsoluteUrl('/pt/ferramentas/verificador-de-meta-titulo-e-descricao')}
+          title="Perguntas frequentes sobre o verificador de meta título"
+          openByDefault={1}
+          items={faqItems}
+        />
 
         <Gap variant="line" />
 

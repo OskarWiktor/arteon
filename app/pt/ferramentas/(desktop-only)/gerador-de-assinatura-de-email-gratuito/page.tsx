@@ -46,7 +46,8 @@ const TOOL_KEY = 'emailSignature' as const;
 
 export const metadata: Metadata = {
   title: 'Gerador de assinatura de e-mail gratuito online – HTML para Gmail e Outlook',
-  description: 'Gerador gratuito de assinatura de e-mail HTML. Adicione os seus dados de contacto, link CTA e perfis de redes sociais, depois copie o código HTML para o Gmail ou Outlook. Sem registo.',
+  description:
+    'Gerador gratuito de assinatura de e-mail HTML. Adicione os seus dados de contacto, link CTA e perfis de redes sociais, depois copie o código HTML para o Gmail ou Outlook. Sem registo.',
   alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Gerador de assinatura de e-mail gratuito online',
@@ -144,8 +145,7 @@ const faqItems = [
   },
   {
     question: 'Posso adicionar um aviso legal?',
-    answer:
-      'Sim. A ferramenta inclui um campo para aviso legal (disclaimer). O texto é apresentado em tamanho mais pequeno sob a assinatura – ex.: avisos de confidencialidade ou informações RGPD.',
+    answer: 'Sim. A ferramenta inclui um campo para aviso legal (disclaimer). O texto é apresentado em tamanho mais pequeno sob a assinatura – ex.: avisos de confidencialidade ou informações RGPD.',
     answerSchemaText: 'Sim. Campo dedicado para disclaimer/RGPD sob a assinatura.',
   },
   {
@@ -192,7 +192,12 @@ export default function EmailSignatureGeneratorPage() {
         backgroundImage="/assets/tools/narzedzia-darmowy-generator-stopki-mailowej.webp"
       />
 
-      <Breadcrumbs second={{ href: '/pt/ferramentas', label: 'Ferramentas' }} third={{ href: '/pt/ferramentas/gerador-de-assinatura-de-email-gratuito', label: 'Assinatura de e-mail' }} includeJsonLd locale="pt" />
+      <Breadcrumbs
+        second={{ href: '/pt/ferramentas', label: 'Ferramentas' }}
+        third={{ href: '/pt/ferramentas/gerador-de-assinatura-de-email-gratuito', label: 'Assinatura de e-mail' }}
+        includeJsonLd
+        locale="pt"
+      />
 
       <ToolEditorLayout>
         <AdSense variant="tool-banner" className="my-3" />
@@ -208,8 +213,8 @@ export default function EmailSignatureGeneratorPage() {
             sociais. Uma assinatura coerente e profissional reforça a imagem de marca em cada e-mail enviado.
           </p>
           <p className="text-mid mt-3">
-            Em média, um profissional de escritório envia 30 a 40 e-mails por dia. Cada um desses e-mails é uma oportunidade para apresentar a sua marca, colocar um link CTA e dar ao destinatário acesso
-            direto aos seus perfis de redes sociais. Com esta ferramenta, crie uma assinatura à altura dessas exigências.
+            Em média, um profissional de escritório envia 30 a 40 e-mails por dia. Cada um desses e-mails é uma oportunidade para apresentar a sua marca, colocar um link CTA e dar ao destinatário
+            acesso direto aos seus perfis de redes sociais. Com esta ferramenta, crie uma assinatura à altura dessas exigências.
           </p>
         </SectionInfo>
 
@@ -358,7 +363,8 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Como preencher os dados da assinatura">
           <p className="text-mid">
-            No separador <strong>Dados</strong>, encontra todos os campos a preencher. Apenas dois são obrigatórios: nome e endereço de e-mail. Os restantes campos são opcionais e só aparecem na assinatura se estiverem preenchidos.
+            No separador <strong>Dados</strong>, encontra todos os campos a preencher. Apenas dois são obrigatórios: nome e endereço de e-mail. Os restantes campos são opcionais e só aparecem na
+            assinatura se estiverem preenchidos.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Campos do separador Dados</h3>
@@ -367,7 +373,9 @@ export default function EmailSignatureGeneratorPage() {
               <strong>Linha acima do nome</strong> – texto adicional apresentado acima do nome. Pode inscrever o nome da empresa, um slogan ou uma frase de efeito.
             </li>
             <li>
-              <strong>Avatar / logótipo (URL da imagem)</strong> – URL de uma foto de perfil ou logótipo da empresa. A imagem deve ser quadrada (mín. 120×120{'\u00a0'}px) e acessível publicamente online. Após colar o URL, surgem opções adicionais: <strong>Forma do avatar</strong> (redondo, arredondado ou quadrado) e <strong>Tamanho do avatar</strong> (pequeno – 40{'\u00a0'}px, médio – 56{'\u00a0'}px, grande – 72{'\u00a0'}px).
+              <strong>Avatar / logótipo (URL da imagem)</strong> – URL de uma foto de perfil ou logótipo da empresa. A imagem deve ser quadrada (mín. 120×120{'\u00a0'}px) e acessível publicamente
+              online. Após colar o URL, surgem opções adicionais: <strong>Forma do avatar</strong> (redondo, arredondado ou quadrado) e <strong>Tamanho do avatar</strong> (pequeno – 40{'\u00a0'}px,
+              médio – 56{'\u00a0'}px, grande – 72{'\u00a0'}px).
             </li>
             <li>
               <strong>Nome completo</strong> – campo obrigatório. Introduza o seu nome completo.
@@ -406,7 +414,8 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Como adicionar botões CTA">
           <p className="text-mid">
-            Um botão CTA (apelo à ação) é um elemento clicável que redireciona o destinatário para uma página à sua escolha. Pode ser um link para um calendário de reuniões, um formulário de contacto ou uma oferta. O gerador permite adicionar dois botões CTA.
+            Um botão CTA (apelo à ação) é um elemento clicável que redireciona o destinatário para uma página à sua escolha. Pode ser um link para um calendário de reuniões, um formulário de contacto
+            ou uma oferta. O gerador permite adicionar dois botões CTA.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Botão principal</h3>
@@ -424,12 +433,14 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Botão secundário</h3>
           <p className="text-mid">
-            Pode adicionar um segundo botão CTA em estilo outline (fundo transparente com contorno). Preencha os campos da secção <strong>Botão secundário</strong> da mesma forma que o botão principal.
+            Pode adicionar um segundo botão CTA em estilo outline (fundo transparente com contorno). Preencha os campos da secção <strong>Botão secundário</strong> da mesma forma que o botão
+            principal.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Arredondamento dos botões</h3>
           <p className="text-mid">
-            Na parte inferior do separador Botões, encontra a opção <strong>Arredondamento dos botões</strong>. Três variantes estão disponíveis: Nenhum (cantos retos), Ligeiro (ligeiramente arredondado) ou Completo (botão oval).
+            Na parte inferior do separador Botões, encontra a opção <strong>Arredondamento dos botões</strong>. Três variantes estão disponíveis: Nenhum (cantos retos), Ligeiro (ligeiramente
+            arredondado) ou Completo (botão oval).
           </p>
 
           <p className="text-mid mt-4">
@@ -441,7 +452,8 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Como adicionar os links de redes sociais">
           <p className="text-mid">
-            No separador <strong>Redes sociais</strong>, pode adicionar links para os seus perfis. O gerador suporta doze plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (antigo Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest.
+            No separador <strong>Redes sociais</strong>, pode adicionar links para os seus perfis. O gerador suporta doze plataformas: LinkedIn, Instagram, Facebook, TikTok, YouTube, X (antigo
+            Twitter), GitHub, Dribbble, Behance, WhatsApp, Telegram e Pinterest.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Como fazer</h3>
@@ -455,7 +467,8 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Ícones de redes sociais</h3>
           <p className="text-mid">
-            Na parte inferior do separador Redes sociais, encontra a opção <strong>Mostrar ícones junto aos nomes dos serviços</strong>. Quando ativada, os links são apresentados como ícones SVG a cores em vez de simples nomes.
+            Na parte inferior do separador Redes sociais, encontra a opção <strong>Mostrar ícones junto aos nomes dos serviços</strong>. Quando ativada, os links são apresentados como ícones SVG a
+            cores em vez de simples nomes.
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
@@ -488,7 +501,8 @@ export default function EmailSignatureGeneratorPage() {
           </ul>
 
           <p className="text-mid mt-4">
-            Por predefinição, o campo está preenchido com um texto de confidencialidade de exemplo. Pode modificá-lo, eliminá-lo ou substituí-lo pelo seu próprio aviso. Se o campo estiver vazio, nenhum aviso aparecerá na assinatura.
+            Por predefinição, o campo está preenchido com um texto de confidencialidade de exemplo. Pode modificá-lo, eliminá-lo ou substituí-lo pelo seu próprio aviso. Se o campo estiver vazio,
+            nenhum aviso aparecerá na assinatura.
           </p>
         </SectionInfo>
 
@@ -501,7 +515,8 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Temas de cores</h3>
           <p className="text-mid">
-            No topo do separador, encontra cinco temas predefinidos: Escuro, Azul, Roxo, Verde e Cinzento. Um clique num tema define automaticamente a cor de destaque e a cor do texto. É a forma mais rápida de obter uma assinatura coerente.
+            No topo do separador, encontra cinco temas predefinidos: Escuro, Azul, Roxo, Verde e Cinzento. Um clique num tema define automaticamente a cor de destaque e a cor do texto. É a forma mais
+            rápida de obter uma assinatura coerente.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Cores</h3>
@@ -520,7 +535,8 @@ export default function EmailSignatureGeneratorPage() {
           <h3 className="h5 mt-6 mb-3">Tipo de letra e tamanho</h3>
           <ul className="text-mid list-disc space-y-2 pl-6">
             <li>
-              <strong>Tipo de letra</strong> – opções: Arial, Verdana, Tahoma, Trebuchet MS e Georgia. Todos são compatíveis com os clientes de e-mail e serão apresentados corretamente no destinatário.
+              <strong>Tipo de letra</strong> – opções: Arial, Verdana, Tahoma, Trebuchet MS e Georgia. Todos são compatíveis com os clientes de e-mail e serão apresentados corretamente no
+              destinatário.
             </li>
             <li>
               <strong>Tamanho do texto</strong> – três opções: Pequeno (12{'\u00a0'}px), Standard (14{'\u00a0'}px) e Maior (16{'\u00a0'}px).
@@ -560,13 +576,15 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Como mudar a cor</h3>
           <p className="text-mid">
-            Junto a cada elemento, encontra uma fila de opções de cor. Clique num quadrado de cor para o selecionar. Também pode adicionar uma cor personalizada clicando no quadrado com o sinal de mais: escolha uma cor e clique em Guardar. As cores personalizadas (até 8) são partilhadas entre todos os elementos.
+            Junto a cada elemento, encontra uma fila de opções de cor. Clique num quadrado de cor para o selecionar. Também pode adicionar uma cor personalizada clicando no quadrado com o sinal de
+            mais: escolha uma cor e clique em Guardar. As cores personalizadas (até 8) são partilhadas entre todos os elementos.
           </p>
           <p className="text-mid mt-3">O botão com o ícone de reposição restaura a cor predefinida do elemento.</p>
 
           <h3 className="h5 mt-6 mb-3">Como mudar o tamanho</h3>
           <p className="text-mid">
-            Na segunda linha, encontra o controlo de tamanho com os botões - e +. O valor indica o desvio em relação ao tamanho base do tipo de letra (definido no separador Aparência). Intervalo: de -4 a +4{'\u00a0'}píxeis.
+            Na segunda linha, encontra o controlo de tamanho com os botões - e +. O valor indica o desvio em relação ao tamanho base do tipo de letra (definido no separador Aparência). Intervalo: de
+            -4 a +4{'\u00a0'}píxeis.
           </p>
         </SectionInfo>
 
@@ -579,12 +597,14 @@ export default function EmailSignatureGeneratorPage() {
 
           <h3 className="h5 mt-6 mb-3">Margem interior da assinatura</h3>
           <p className="text-mid">
-            No topo do separador, encontra a opção de margem interior – ou seja, a distância entre o conteúdo da assinatura e os seus limites. Três valores estão disponíveis: 8{'\u00a0'}px (pequeno), 16{'\u00a0'}px (médio) e 24{'\u00a0'}px (grande).
+            No topo do separador, encontra a opção de margem interior – ou seja, a distância entre o conteúdo da assinatura e os seus limites. Três valores estão disponíveis: 8{'\u00a0'}px (pequeno),
+            16{'\u00a0'}px (médio) e 24{'\u00a0'}px (grande).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Espaçamentos entre os elementos</h3>
           <p className="text-mid">
-            Abaixo da margem, encontra controlos para os elementos individuais da assinatura. Cada controlo tem botões + e - para aumentar ou diminuir o espaçamento. Apenas as opções dos elementos atualmente presentes na assinatura são apresentadas.
+            Abaixo da margem, encontra controlos para os elementos individuais da assinatura. Cada controlo tem botões + e - para aumentar ou diminuir o espaçamento. Apenas as opções dos elementos
+            atualmente presentes na assinatura são apresentadas.
           </p>
           <ul className="text-mid mt-3 list-disc space-y-2 pl-6">
             <li>
@@ -616,23 +636,29 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Gravação automática e reposição">
           <p className="text-mid">
-            O gerador grava automaticamente todas as definições na memória do navegador (localStorage). Após atualizar a página ou reabrir a ferramenta, os dados, o layout, as cores e todas as outras opções serão restaurados.
+            O gerador grava automaticamente todas as definições na memória do navegador (localStorage). Após atualizar a página ou reabrir a ferramenta, os dados, o layout, as cores e todas as outras
+            opções serão restaurados.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Como funciona a gravação automática</h3>
-          <p className="text-mid">Cada alteração (texto, cor, layout, espaçamento) é imediatamente gravada na memória do navegador. A gravação faz-se automaticamente em segundo plano, sem clicar em nenhum botão.</p>
+          <p className="text-mid">
+            Cada alteração (texto, cor, layout, espaçamento) é imediatamente gravada na memória do navegador. A gravação faz-se automaticamente em segundo plano, sem clicar em nenhum botão.
+          </p>
 
           <h3 className="h5 mt-6 mb-3">Como repor as definições</h3>
           <p className="text-mid">
-            Abaixo da pré-visualização da assinatura, encontra o botão <strong>Repor aparência</strong>. Um clique abre uma janela de confirmação. Confirmar a reposição restaura todos os dados e definições para os valores predefinidos. Esta operação é irreversível.
+            Abaixo da pré-visualização da assinatura, encontra o botão <strong>Repor aparência</strong>. Um clique abre uma janela de confirmação. Confirmar a reposição restaura todos os dados e
+            definições para os valores predefinidos. Esta operação é irreversível.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Exportar e importar a configuração</h3>
           <p className="text-mid">
-            Abaixo da pré-visualização da assinatura, encontra dois botões adicionais: <strong>Exportar definições</strong> e <strong>Importar definições</strong>. A exportação guarda todos os dados, cores, layout, espaçamentos e estilos de texto num ficheiro JSON. A importação carrega uma configuração previamente guardada a partir de um ficheiro.
+            Abaixo da pré-visualização da assinatura, encontra dois botões adicionais: <strong>Exportar definições</strong> e <strong>Importar definições</strong>. A exportação guarda todos os dados,
+            cores, layout, espaçamentos e estilos de texto num ficheiro JSON. A importação carrega uma configuração previamente guardada a partir de um ficheiro.
           </p>
           <p className="text-mid mt-3">
-            Esta função é particularmente útil para transferir a configuração da assinatura entre computadores, partilhar as definições com colegas ou manter uma cópia de segurança dos seus ajustes antes de uma reposição.
+            Esta função é particularmente útil para transferir a configuração da assinatura entre computadores, partilhar as definições com colegas ou manter uma cópia de segurança dos seus ajustes
+            antes de uma reposição.
           </p>
         </SectionInfo>
 
@@ -665,12 +691,14 @@ export default function EmailSignatureGeneratorPage() {
 
         <SectionInfo title="Pré-visualização da assinatura e opções de exportação">
           <p className="text-mid">
-            O painel de pré-visualização apresenta-se à direita do editor e atualiza-se automaticamente a cada alteração. A pré-visualização é fixa no ecrã (sticky) e permanece visível mesmo ao deslocar as opções de edição.
+            O painel de pré-visualização apresenta-se à direita do editor e atualiza-se automaticamente a cada alteração. A pré-visualização é fixa no ecrã (sticky) e permanece visível mesmo ao
+            deslocar as opções de edição.
           </p>
 
           <h3 className="h5 mt-6 mb-3">Mudança de fundo da pré-visualização</h3>
           <p className="text-mid">
-            Acima da pré-visualização, encontra três botões de mudança de fundo: <strong>Claro</strong> (fundo cinzento predefinido), <strong>Escuro</strong> (fundo escuro, útil para verificar a legibilidade em fundo escuro) e <strong>Grelha</strong> (padrão em grelha, permite ver a transparência e os limites da assinatura).
+            Acima da pré-visualização, encontra três botões de mudança de fundo: <strong>Claro</strong> (fundo cinzento predefinido), <strong>Escuro</strong> (fundo escuro, útil para verificar a
+            legibilidade em fundo escuro) e <strong>Grelha</strong> (padrão em grelha, permite ver a transparência e os limites da assinatura).
           </p>
 
           <h3 className="h5 mt-6 mb-3">Botões de ação</h3>
@@ -770,7 +798,12 @@ export default function EmailSignatureGeneratorPage() {
 
         <Gap variant="line" />
 
-        <FaqPanels pageUrl={toAbsoluteUrl('/pt/ferramentas/gerador-de-assinatura-de-email-gratuito')} title="Perguntas frequentes sobre o gerador de assinatura de e-mail" openByDefault={1} items={faqItems} />
+        <FaqPanels
+          pageUrl={toAbsoluteUrl('/pt/ferramentas/gerador-de-assinatura-de-email-gratuito')}
+          title="Perguntas frequentes sobre o gerador de assinatura de e-mail"
+          openByDefault={1}
+          items={faqItems}
+        />
 
         <Gap variant="line" />
 

@@ -273,8 +273,8 @@ export default function ColorPaletteGeneratorPage() {
           }
         >
           <p className="text-mid">
-            All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel
-            (0°–360°), saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.
+            All palettes are created by mathematically transforming the base color in HSL color space. HSL describes a color with three values: hue (H) is the position on the color wheel (0°–360°),
+            saturation (S) determines color intensity, and lightness (L) - how bright or dark the color is.
           </p>
           <p className="text-mid mt-3">
             The complementary, triadic, and split-complementary palettes are based on color wheel geometry - colors are placed at equal angular intervals, creating visual balance. The monochromatic,

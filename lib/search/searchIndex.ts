@@ -1,9 +1,12 @@
 import { OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/components/shared/navigation-data/pl';
-import blogData from '@/data/pl/blog.json';
-import projectsData from '@/data/pl/projects.json';
+import searchBlog from '@/data/pl/search-blog.json';
+import searchProjects from '@/data/pl/search-projects.json';
 
 import type { SearchCategory, SearchItem } from '@/types/search';
 export type { SearchCategory, SearchItem } from '@/types/search';
+
+type SearchBlogEntry = { s: string; t: string; e: string; c: string; k: string[] };
+type SearchProjectEntry = { s: string; t: string; d: string; k: string[] };
 
 const STATIC_PAGES: SearchItem[] = [
   {
@@ -120,27 +123,24 @@ function buildAboutIndex(): SearchItem[] {
 }
 
 function buildBlogIndex(): SearchItem[] {
-  return blogData.articles.map((article) => {
-    const categorySlug = article.primaryCategory.toLowerCase();
-    return {
-      title: article.title,
-      description: article.excerpt,
-      href: `/edukacja/${categorySlug}/${article.slug}`,
-      category: 'edukacja',
-      categoryLabel: 'Edukacja',
-      keywords: article.tags,
-    };
-  });
+  return (searchBlog as SearchBlogEntry[]).map((a) => ({
+    title: a.t,
+    description: a.e,
+    href: `/edukacja/${a.c.toLowerCase()}/${a.s}`,
+    category: 'edukacja',
+    categoryLabel: 'Edukacja',
+    keywords: a.k,
+  }));
 }
 
 function buildProjectsIndex(): SearchItem[] {
-  return projectsData.projects.map((project) => ({
-    title: project.title,
-    description: project.short,
-    href: `/realizacje/${project.slug}`,
+  return (searchProjects as SearchProjectEntry[]).map((p) => ({
+    title: p.t,
+    description: p.d,
+    href: `/realizacje/${p.s}`,
     category: 'realizacje',
     categoryLabel: 'Realizacje',
-    keywords: project.category,
+    keywords: p.k,
   }));
 }
 

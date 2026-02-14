@@ -27,7 +27,7 @@ function ToolCardSkeleton() {
   return (
     <div className="w-[340px] shrink-0 snap-start md:w-[420px] lg:w-[520px]">
       <div className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm">
-        <Shimmer className="aspect-[16/9] w-full !rounded-none !bg-neutral-250 !bg-neutral-300" />
+        <Shimmer className="!bg-neutral-250 aspect-[16/9] w-full !rounded-none !bg-neutral-300" />
         <div className="space-y-3 p-4 md:p-5">
           <Shimmer className="h-5 w-3/5 !rounded-md" />
           <Shimmer className="h-3.5 w-full !rounded-md" />

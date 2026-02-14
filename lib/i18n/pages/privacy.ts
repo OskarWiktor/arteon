@@ -17,27 +17,32 @@ const PRIVACY_META: Partial<Record<Locale, PrivacyPageMeta>> = {
   en: {
     slug: 'privacy-policy',
     title: 'Privacy Policy – Arteon Free Online Tools | Data Protection & GDPR',
-    description: 'Privacy policy for Arteon free online tools. All files are processed locally in your browser. Learn how we handle cookies, analytics (GA4) and advertising (AdSense) in compliance with GDPR.',
+    description:
+      'Privacy policy for Arteon free online tools. All files are processed locally in your browser. Learn how we handle cookies, analytics (GA4) and advertising (AdSense) in compliance with GDPR.',
   },
   de: {
     slug: 'datenschutzrichtlinie',
     title: 'Datenschutzrichtlinie – Arteon kostenlose Online-Tools | DSGVO',
-    description: 'Datenschutzrichtlinie für die kostenlosen Online-Tools von Arteon. Alle Dateien werden lokal in Ihrem Browser verarbeitet. Erfahren Sie, wie wir Cookies, Analysen (GA4) und Werbung (AdSense) DSGVO-konform handhaben.',
+    description:
+      'Datenschutzrichtlinie für die kostenlosen Online-Tools von Arteon. Alle Dateien werden lokal in Ihrem Browser verarbeitet. Erfahren Sie, wie wir Cookies, Analysen (GA4) und Werbung (AdSense) DSGVO-konform handhaben.',
   },
   es: {
     slug: 'politica-de-privacidad',
     title: 'Política de privacidad – Arteon herramientas online gratuitas | RGPD',
-    description: 'Política de privacidad de las herramientas online gratuitas de Arteon. Todos los archivos se procesan localmente en su navegador. Conozca cómo gestionamos cookies, análisis (GA4) y publicidad (AdSense) conforme al RGPD.',
+    description:
+      'Política de privacidad de las herramientas online gratuitas de Arteon. Todos los archivos se procesan localmente en su navegador. Conozca cómo gestionamos cookies, análisis (GA4) y publicidad (AdSense) conforme al RGPD.',
   },
   fr: {
     slug: 'politique-de-confidentialite',
     title: 'Politique de confidentialité – Arteon outils en ligne gratuits | RGPD',
-    description: 'Politique de confidentialité des outils en ligne gratuits d\u2019Arteon. Tous les fichiers sont traités localement dans votre navigateur. Découvrez comment nous gérons les cookies, les analyses (GA4) et la publicité (AdSense) conformément au RGPD.',
+    description:
+      'Politique de confidentialité des outils en ligne gratuits d\u2019Arteon. Tous les fichiers sont traités localement dans votre navigateur. Découvrez comment nous gérons les cookies, les analyses (GA4) et la publicité (AdSense) conformément au RGPD.',
   },
   pt: {
     slug: 'politica-de-privacidade',
     title: 'Política de Privacidade – Arteon ferramentas online gratuitas | RGPD',
-    description: 'Política de privacidade das ferramentas online gratuitas da Arteon. Todos os ficheiros são processados localmente no seu navegador. Saiba como gerimos cookies, análises (GA4) e publicidade (AdSense) em conformidade com o RGPD.',
+    description:
+      'Política de privacidade das ferramentas online gratuitas da Arteon. Todos os ficheiros são processados localmente no seu navegador. Saiba como gerimos cookies, análises (GA4) e publicidade (AdSense) em conformidade com o RGPD.',
   },
 };
 

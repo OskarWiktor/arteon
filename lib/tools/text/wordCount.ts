@@ -194,7 +194,13 @@ const PAGE_TYPES: Record<Locale, PageTypeConfig[]> = {
       maxWords: 1000,
       description: 'A página inicial direciona os visitantes para as subpáginas. Uma mensagem clara e uma estrutura legível facilitam a navegação.',
     },
-    { key: 'landing', label: 'Landing page', minWords: 600, maxWords: 2500, description: 'Ofertas de preço mais elevado exigem mais explicação e construção de confiança. Uma oferta simples pode ser mais curta.' },
+    {
+      key: 'landing',
+      label: 'Landing page',
+      minWords: 600,
+      maxWords: 2500,
+      description: 'Ofertas de preço mais elevado exigem mais explicação e construção de confiança. Uma oferta simples pode ser mais curta.',
+    },
     {
       key: 'blog',
       label: 'Artigo de blog',

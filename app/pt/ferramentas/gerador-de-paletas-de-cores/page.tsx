@@ -39,8 +39,7 @@ const TOOL_KEY = 'colorPalette' as const;
 
 export const metadata: Metadata = {
   title: 'Gerador de paletas de cores gratuito online – 9 paletas a partir de uma cor',
-  description:
-    'Gerador de paletas de cores gratuito. Escolha uma cor e gere 9 paletas: monocromática, complementar, triádica, pastel, escura e mais. Códigos HEX copiáveis com um clique.',
+  description: 'Gerador de paletas de cores gratuito. Escolha uma cor e gere 9 paletas: monocromática, complementar, triádica, pastel, escura e mais. Códigos HEX copiáveis com um clique.',
   alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Gerador de paletas de cores gratuito online',
@@ -60,8 +59,7 @@ const schema = {
   applicationCategory: 'DesignApplication',
   applicationSubCategory: 'ColorTool',
   operatingSystem: 'Any',
-  description:
-    'Gere paletas de cores a partir de uma única cor de base. 9 tipos: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal e minimalista.',
+  description: 'Gere paletas de cores a partir de uma única cor de base. 9 tipos: monocromática, análoga, complementar, triádica, complementar dividida, pastel, escura, tonal e minimalista.',
   featureList: [
     '9 tipos de paletas a partir de uma cor de base',
     'Monocromática, análoga, complementar, triádica, complementar dividida',
@@ -153,12 +151,12 @@ export default function ColorPalettePage() {
 
         <SectionInfo title="Gerar paletas a partir de uma única cor">
           <p className="text-mid">
-            O gerador de paletas cria 9 paletas diferentes a partir de uma única cor de base, apoiando-se na teoria das cores. Cada paleta tem uma composição diferente – das variações monocromáticas às
-            cores complementares contrastantes.
+            O gerador de paletas cria 9 paletas diferentes a partir de uma única cor de base, apoiando-se na teoria das cores. Cada paleta tem uma composição diferente – das variações monocromáticas
+            às cores complementares contrastantes.
           </p>
           <p className="text-mid mt-3">
-            Todos os cálculos baseiam-se no espaço cromático HSL (Tonalidade, Saturação, Luminosidade). A tonalidade determina a cor de base, a saturação a intensidade e a luminosidade o caráter claro ou
-            escuro. Este modelo corresponde à perceção humana das cores e presta-se perfeitamente à geração de paletas.
+            Todos os cálculos baseiam-se no espaço cromático HSL (Tonalidade, Saturação, Luminosidade). A tonalidade determina a cor de base, a saturação a intensidade e a luminosidade o caráter claro
+            ou escuro. Este modelo corresponde à perceção humana das cores e presta-se perfeitamente à geração de paletas.
           </p>
         </SectionInfo>
 
@@ -266,20 +264,17 @@ export default function ColorPalettePage() {
             {
               icon: <RiGlobalLine className="h-6 w-6" />,
               title: 'Sites',
-              description:
-                'Defina a cor principal, a cor de destaque e os tons de fundo. Os códigos HEX copiados colam-se diretamente nas folhas de estilo CSS ou na configuração de temas.',
+              description: 'Defina a cor principal, a cor de destaque e os tons de fundo. Os códigos HEX copiados colam-se diretamente nas folhas de estilo CSS ou na configuração de temas.',
             },
             {
               icon: <RiSmartphoneLine className="h-6 w-6" />,
               title: 'Interfaces de aplicações',
-              description:
-                'A paleta tonal fornece variantes de luminosidade de uma cor: mais claras para os fundos, mais escuras para o texto, intermédias para bordas e estados interativos.',
+              description: 'A paleta tonal fornece variantes de luminosidade de uma cor: mais claras para os fundos, mais escuras para o texto, intermédias para bordas e estados interativos.',
             },
             {
               icon: <RiImageLine className="h-6 w-6" />,
               title: 'Visuais para redes sociais',
-              description:
-                'Cores coerentes para publicações, stories e capas de perfil. As paletas análogas ou pastel funcionam bem para um estilo uniforme e reconhecível.',
+              description: 'Cores coerentes para publicações, stories e capas de perfil. As paletas análogas ou pastel funcionam bem para um estilo uniforme e reconhecível.',
             },
             {
               icon: <RiSlideshowLine className="h-6 w-6" />,
@@ -304,14 +299,12 @@ export default function ColorPalettePage() {
             {
               icon: <RiErrorWarningLine className="h-6 w-6" />,
               title: 'Mensagem de formato inválido',
-              description:
-                'O gerador aceita apenas o formato HEX com # no início, por ex. #FF5500. Os formatos sem # (por ex. FF5500) ou em notação RGB (por ex. rgb(255,85,0)) não são suportados.',
+              description: 'O gerador aceita apenas o formato HEX com # no início, por ex. #FF5500. Os formatos sem # (por ex. FF5500) ou em notação RGB (por ex. rgb(255,85,0)) não são suportados.',
             },
             {
               icon: <RiCodeLine className="h-6 w-6" />,
               title: 'Formato HEX curto e completo',
-              description:
-                'Ambos os formatos são suportados: completo #RRGGBB (por ex. #FF5500) e curto #RGB (por ex. #F50). O gerador reconhece automaticamente ambos e trata-os de forma idêntica.',
+              description: 'Ambos os formatos são suportados: completo #RRGGBB (por ex. #FF5500) e curto #RGB (por ex. #F50). O gerador reconhece automaticamente ambos e trata-os de forma idêntica.',
             },
           ]}
         />

@@ -353,10 +353,12 @@ export default function MetaTitleDescriptionPage() {
           }
         >
           <p className="text-mid">
-            Las letras diferentes tienen anchos diferentes. Compare &quot;iiii&quot; y &quot;WWWW&quot;: ambas tienen 4 caracteres, pero el ancho visual es completamente diferente. Google mide el ancho del texto en píxeles, no en caracteres.
+            Las letras diferentes tienen anchos diferentes. Compare &quot;iiii&quot; y &quot;WWWW&quot;: ambas tienen 4 caracteres, pero el ancho visual es completamente diferente. Google mide el
+            ancho del texto en píxeles, no en caracteres.
           </p>
           <p className="text-mid mt-3">
-            Por eso, un título con muchas letras estrechas (i, l, t, f) puede ser más largo que un título con letras anchas (W, M, O), a pesar de tener el mismo número de caracteres. La herramienta muestra ambos valores: el número de caracteres (más fácil de entender) y el ancho en píxeles (más preciso para Google).
+            Por eso, un título con muchas letras estrechas (i, l, t, f) puede ser más largo que un título con letras anchas (W, M, O), a pesar de tener el mismo número de caracteres. La herramienta
+            muestra ambos valores: el número de caracteres (más fácil de entender) y el ancho en píxeles (más preciso para Google).
           </p>
         </SectionDemo>
 
@@ -364,13 +366,20 @@ export default function MetaTitleDescriptionPage() {
 
         <SectionInfo title="Vista previa del snippet: ¿qué muestra?">
           <p className="text-mid">
-            La vista previa (snippet preview) simula cómo se ven el título y la descripción de la página en los resultados de búsqueda de Google. Es una visualización orientativa: la apariencia real puede variar ligeramente según el dispositivo y el navegador.
+            La vista previa (snippet preview) simula cómo se ven el título y la descripción de la página en los resultados de búsqueda de Google. Es una visualización orientativa: la apariencia real
+            puede variar ligeramente según el dispositivo y el navegador.
           </p>
           <h3 className="h5 mt-6 mb-2">Elementos de la vista previa</h3>
           <ul className="text-mid list-disc space-y-2 pl-5">
-            <li><strong>URL</strong> - la dirección de la página que se muestra sobre el título. Puede introducirla en un campo opcional para un resultado más realista.</li>
-            <li><strong>Título</strong> - el encabezado azul. Si es demasiado largo, la herramienta lo trunca automáticamente y añade puntos suspensivos.</li>
-            <li><strong>Descripción</strong> - el texto gris debajo del título. También se trunca si supera el límite.</li>
+            <li>
+              <strong>URL</strong> - la dirección de la página que se muestra sobre el título. Puede introducirla en un campo opcional para un resultado más realista.
+            </li>
+            <li>
+              <strong>Título</strong> - el encabezado azul. Si es demasiado largo, la herramienta lo trunca automáticamente y añade puntos suspensivos.
+            </li>
+            <li>
+              <strong>Descripción</strong> - el texto gris debajo del título. También se trunca si supera el límite.
+            </li>
           </ul>
         </SectionInfo>
 
