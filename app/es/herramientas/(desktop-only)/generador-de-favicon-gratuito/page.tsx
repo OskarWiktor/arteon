@@ -13,6 +13,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -34,20 +35,14 @@ import {
   RiContrastLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'es' as const;
+const TOOL_KEY = 'favicon' as const;
+
 export const metadata: Metadata = {
   title: 'Generador gratuito de favicon online - iconos ICO y PNG',
   description:
     'Generador gratuito de favicon online. Cree favicon.ico e iconos PNG (16x16, 32x32, 180x180, 512x512) a partir de una sola imagen. El procesamiento se realiza localmente en el navegador.',
-  alternates: {
-    canonical: toAbsoluteUrl('/es/herramientas/generador-de-favicon-gratuito'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
-      en: toAbsoluteUrl('/en/tools/free-favicon-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-favicon-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-favicon-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-favicon-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Generador gratuito de favicon online - iconos ICO y PNG',
     description: 'Generador gratuito de favicon online. Cree favicon.ico e iconos PNG a partir de una sola imagen. Compatible con los requisitos de navegadores y Lighthouse.',

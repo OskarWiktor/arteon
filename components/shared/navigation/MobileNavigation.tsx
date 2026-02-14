@@ -24,9 +24,9 @@ import { RiArrowDownSLine } from 'react-icons/ri';
 // NAV-001: Tymczasowo zakomentowane - do przywrócenia gdy profile media społecznościowe będą gotowe
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 
-const closeLabel: Record<Locale, string> = { pl: 'Zamknij', en: 'Close', de: 'Schließen', es: 'Cerrar', fr: 'Fermer' };
-const servicesLabel: Record<Locale, string> = { pl: 'Usługi', en: 'Services', de: 'Dienstleistungen', es: 'Servicios', fr: 'Services' };
-const contactLabel: Record<Locale, string> = { pl: 'Skontaktuj się', en: 'Contact', de: 'Kontakt', es: 'Contacto', fr: 'Contact' };
+const closeLabel: Record<Locale, string> = { pl: 'Zamknij', en: 'Close', de: 'Schließen', es: 'Cerrar', fr: 'Fermer', pt: 'Fechar' };
+const servicesLabel: Record<Locale, string> = { pl: 'Usługi', en: 'Services', de: 'Dienstleistungen', es: 'Servicios', fr: 'Services', pt: 'Serviços' };
+const contactLabel: Record<Locale, string> = { pl: 'Skontaktuj się', en: 'Contact', de: 'Kontakt', es: 'Contacto', fr: 'Contact', pt: 'Contacto' };
 
 type SectionLink = { href: string; title: string; icon?: JSX.Element };
 type Section = {

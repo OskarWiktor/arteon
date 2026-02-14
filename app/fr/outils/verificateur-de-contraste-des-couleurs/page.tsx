@@ -13,6 +13,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -30,20 +31,14 @@ import {
   RiStackLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'fr' as const;
+const TOOL_KEY = 'contrastChecker' as const;
+
 export const metadata: Metadata = {
   title: 'Vérificateur de contraste des couleurs gratuit en ligne – conformité WCAG',
   description:
     'Vérificateur de contraste des couleurs gratuit. Testez la lisibilité des couleurs de texte et d’arrière-plan selon WCAG 2.1. Fonction d’ajustement automatique pour trouver des combinaisons accessibles. Sans inscription.',
-  alternates: {
-    canonical: toAbsoluteUrl('/fr/outils/verificateur-de-contraste-des-couleurs'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
-      en: toAbsoluteUrl('/en/tools/color-contrast-checker'),
-      de: toAbsoluteUrl('/de/werkzeuge/farbkontrast-checker'),
-      es: toAbsoluteUrl('/es/herramientas/verificador-de-contraste-de-colores'),
-      fr: toAbsoluteUrl('/fr/outils/verificateur-de-contraste-des-couleurs'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Vérificateur de contraste des couleurs gratuit – WCAG',
     description: 'Testez la lisibilité des couleurs selon WCAG 2.1. Ajustement automatique pour des combinaisons accessibles.',

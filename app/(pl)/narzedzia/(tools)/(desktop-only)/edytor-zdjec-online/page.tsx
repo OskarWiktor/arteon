@@ -4,6 +4,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import ImageResizeTool from '@/components/sections/tools/ImageResizeTool';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
@@ -19,19 +20,13 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import SectionTabs from '@/components/ui/sections/SectionTabs';
 import { RiInstagramLine, RiFacebookLine, RiLinkedinLine, RiImageLine, RiCropLine, RiLayoutGridLine, RiFileImageLine, RiAspectRatioLine } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'imageResize' as const;
+
 export const metadata: Metadata = {
   title: 'Darmowy edytor zdjęć online - zmiana rozmiaru, kadrowanie, konwersja',
   description: 'Zmień rozmiar zdjęcia online za darmo. Kadruj do Instagram, Facebook, LinkedIn. Konwertuj JPG na WebP. Twórz okrągłe avatary. Przetwarzanie lokalne w przeglądarce.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
-      en: toAbsoluteUrl('/en/tools/online-image-editor'),
-      de: toAbsoluteUrl('/de/werkzeuge/online-bildeditor'),
-      es: toAbsoluteUrl('/es/herramientas/editor-de-imagenes-en-linea'),
-      fr: toAbsoluteUrl('/fr/outils/editeur-d-images-en-ligne'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Darmowy edytor zdjęć online - zmiana rozmiaru, kadrowanie, konwersja',
     description: 'Zmień rozmiar zdjęcia online za darmo. Kadruj do Instagram, Facebook, LinkedIn. Konwertuj JPG na WebP. Twórz okrągłe avatary. Przetwarzanie lokalne w przeglądarce.',

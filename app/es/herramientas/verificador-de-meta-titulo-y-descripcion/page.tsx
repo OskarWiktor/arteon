@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -31,20 +32,14 @@ import {
   RiUserLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'es' as const;
+const TOOL_KEY = 'metaCounter' as const;
+
 export const metadata: Metadata = {
   title: 'Verificador gratuito de longitud de meta título y descripción - ancho en píxeles',
   description:
     'Verificador gratuito de longitud de meta título y descripción online. Compruebe el número de caracteres, el ancho en píxeles y vea cómo se muestra su página en los resultados de búsqueda de Google. Sin registro.',
-  alternates: {
-    canonical: toAbsoluteUrl('/es/herramientas/verificador-de-meta-titulo-y-descripcion'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
-      en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-      de: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
-      es: toAbsoluteUrl('/es/herramientas/verificador-de-meta-titulo-y-descripcion'),
-      fr: toAbsoluteUrl('/fr/outils/verificateur-meta-titre-et-description'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Verificador gratuito de longitud de meta título y descripción - ancho en píxeles',
     description:

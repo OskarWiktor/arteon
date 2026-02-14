@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -30,20 +31,14 @@ import {
   RiUserLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'fr' as const;
+const TOOL_KEY = 'metaCounter' as const;
+
 export const metadata: Metadata = {
   title: 'Vérificateur gratuit de méta titre et description en ligne',
   description:
     'Vérificateur gratuit de méta titre et description. Vérifiez le nombre de caractères, la largeur en pixels et l’aperçu Google. Évitez les titres et descriptions tronqués dans les résultats de recherche.',
-  alternates: {
-    canonical: toAbsoluteUrl('/fr/outils/verificateur-meta-titre-et-description'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
-      en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-      de: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
-      es: toAbsoluteUrl('/es/herramientas/verificador-de-meta-titulo-y-descripcion'),
-      fr: toAbsoluteUrl('/fr/outils/verificateur-meta-titre-et-description'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Vérificateur gratuit de méta titre et description en ligne',
     description: 'Vérifiez le nombre de caractères, la largeur en pixels et l’aperçu Google. Évitez les titres et descriptions tronqués.',

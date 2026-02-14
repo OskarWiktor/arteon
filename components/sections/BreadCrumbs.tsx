@@ -23,6 +23,10 @@ const ui = {
     home: 'Accueil',
     ariaLabel: "fil d'Ariane",
   },
+  pt: {
+    home: 'Início',
+    ariaLabel: 'migalhas de pão',
+  },
 } as const;
 
 import type { Crumb, BreadcrumbsProps } from '@/types/ui';

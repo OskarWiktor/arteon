@@ -11,6 +11,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import AdSense from '@/components/ui/AdSense';
@@ -35,20 +36,14 @@ import {
   RiHashtag,
 } from 'react-icons/ri';
 
+const LOCALE = 'fr' as const;
+const TOOL_KEY = 'wordCounter' as const;
+
 export const metadata: Metadata = {
   title: 'Compteur de mots et caractères gratuit en ligne – vérifier la longueur de texte',
   description:
     'Compteur de mots et caractères gratuit en ligne. Comptez mots, caractères, paragraphes et temps de lecture. Vérifiez la longueur optimale pour le SEO – article de blog, page de service, fiche produit. Sans inscription.',
-  alternates: {
-    canonical: toAbsoluteUrl('/fr/outils/compteur-de-mots-et-caracteres'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
-      en: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-      de: toAbsoluteUrl('/de/werkzeuge/wort-und-zeichenzaehler'),
-      es: toAbsoluteUrl('/es/herramientas/contador-de-palabras-y-caracteres'),
-      fr: toAbsoluteUrl('/fr/outils/compteur-de-mots-et-caracteres'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Compteur de mots et caractères gratuit en ligne',
     description: 'Comptez mots, caractères, paragraphes et temps de lecture. Vérifiez la longueur optimale pour le SEO. Sans inscription.',

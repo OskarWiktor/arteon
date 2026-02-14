@@ -10,7 +10,8 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
-import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates, getToolSoftwareSchema, getToolHowToSchema } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import AdSense from '@/components/ui/AdSense';
@@ -36,20 +37,14 @@ import {
   RiTimerLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'en' as const;
+const TOOL_KEY = 'wordCounter' as const;
+
 export const metadata: Metadata = {
   title: 'Free word and character counter online - check text length',
   description:
     'Free online word and character counter. Count words, characters, paragraphs, and reading time. Check optimal text length for SEO - blog post, product description, service page. No registration.',
-  alternates: {
-    canonical: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
-      en: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-      de: toAbsoluteUrl('/de/werkzeuge/wort-und-zeichenzaehler'),
-      es: toAbsoluteUrl('/es/herramientas/contador-de-palabras-y-caracteres'),
-      fr: toAbsoluteUrl('/fr/outils/compteur-de-mots-et-caracteres'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Free word and character counter online - check text length',
     description:
@@ -60,9 +55,9 @@ export const metadata: Metadata = {
   },
 };
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
+const schema = getToolSoftwareSchema({
+  toolKey: TOOL_KEY,
+  locale: LOCALE,
   name: 'Free word and character counter online',
   alternateName: [
     'Word counter with text length evaluation',
@@ -74,14 +69,9 @@ const schema = {
     'Word counter for SEO',
     'Optimal text length for a blog post',
   ],
-  url: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-  applicationCategory: 'UtilitiesApplication',
   applicationSubCategory: 'TextApplication',
-  operatingSystem: 'Any',
   description:
     'Free word and character counter. Checks word count, characters, paragraphs, and estimated reading time. Evaluates text length for different page types: product description, service page, homepage, landing page, blog post, guide.',
-  inLanguage: 'en',
-  isAccessibleForFree: true,
   featureList: [
     'Word count',
     'Character count with and without spaces',
@@ -91,54 +81,21 @@ const schema = {
     'Recommended ranges for: product description, service page, homepage, landing page, blog post, guide',
     'Copy report to clipboard',
   ],
-  offers: {
-    '@type': 'Offer',
-    price: 0,
-    priceCurrency: 'USD',
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Arteon Agency',
-    url: siteUrl,
-  },
-};
+});
 
-const howToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
+const howToSchema = getToolHowToSchema({
+  toolKey: TOOL_KEY,
+  locale: LOCALE,
   name: 'How to use the word and character counter',
   description:
     'Check the length of your text and evaluate whether it is appropriate for a specific page type. Learn how many words a product description, service page, blog post, or guide should have.',
-  url: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-  totalTime: 'PT2M',
-  step: [
-    {
-      '@type': 'HowToStep',
-      name: 'Select a page type',
-      text: 'Choose from the dropdown what type of page you are writing for. Each type has different recommended word count ranges.',
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Paste your text',
-      text: 'Paste or type text into the text field. The tool will automatically count words, characters (with and without spaces), paragraphs, and estimate reading time.',
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Check the evaluation',
-      text: 'Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long.',
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Copy the report',
-      text: 'The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard.',
-    },
+  steps: [
+    { name: 'Select a page type', text: 'Choose from the dropdown what type of page you are writing for. Each type has different recommended word count ranges.' },
+    { name: 'Paste your text', text: 'Paste or type text into the text field. The tool will automatically count words, characters (with and without spaces), paragraphs, and estimate reading time.' },
+    { name: 'Check the evaluation', text: 'Look at the colored progress bar and status. Green means good length, yellow means too short, red means too long.' },
+    { name: 'Copy the report', text: 'The Copy Report button copies a summary with all statistics and the length evaluation to your clipboard.' },
   ],
-  publisher: {
-    '@type': 'Organization',
-    name: 'Arteon Agency',
-    url: siteUrl,
-  },
-};
+});
 
 const faqItems = [
   {

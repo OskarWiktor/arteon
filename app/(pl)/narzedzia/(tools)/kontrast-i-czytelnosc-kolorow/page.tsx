@@ -12,6 +12,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import AdSense from '@/components/ui/AdSense';
 import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
@@ -37,20 +38,14 @@ import {
   RiHashtag,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'contrastChecker' as const;
+
 export const metadata: Metadata = {
   title: 'Kontrast i czytelność kolorów online | Sprawdź czy tekst jest czytelny',
   description:
     'Sprawdź czy kolory tekstu i tła są czytelne. Wpisz kody kolorów (HEX, RGB, HSL), zobacz współczynnik kontrastu według WCAG i użyj funkcji Dopasuj do automatycznej korekty. Darmowe narzędzie online.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
-      en: toAbsoluteUrl('/en/tools/color-contrast-checker'),
-      de: toAbsoluteUrl('/de/werkzeuge/farbkontrast-checker'),
-      es: toAbsoluteUrl('/es/herramientas/comprobador-de-contraste-de-colores'),
-      fr: toAbsoluteUrl('/fr/outils/verificateur-de-contraste-des-couleurs'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Kontrast i czytelność kolorów online | Sprawdź czy tekst jest czytelny',
     description:

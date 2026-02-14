@@ -1,4 +1,4 @@
-export type Locale = 'pl' | 'en' | 'de' | 'es' | 'fr';
+export type Locale = 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt';
 
 export type LocaleConfig = {
   lang: string;
@@ -9,6 +9,7 @@ export type LocaleConfig = {
   toolsIndexHref: string;
   aboutHref?: string;
   contactHref?: string;
+  privacyHref?: string;
 };
 
 export type LegalLink = {

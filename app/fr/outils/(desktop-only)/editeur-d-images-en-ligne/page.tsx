@@ -13,6 +13,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -31,20 +32,14 @@ import {
   RiLayoutGridLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'fr' as const;
+const TOOL_KEY = 'imageResize' as const;
+
 export const metadata: Metadata = {
   title: 'Éditeur d’images en ligne gratuit – recadrer et redimensionner',
   description:
     'Éditeur d’images en ligne gratuit. Recadrez et redimensionnez vos images pour les réseaux sociaux et les sites web. Modèles prêts à l’emploi, dimensions personnalisées, avatars ronds. Export en PNG, JPG, WebP.',
-  alternates: {
-    canonical: toAbsoluteUrl('/fr/outils/editeur-d-images-en-ligne'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
-      en: toAbsoluteUrl('/en/tools/online-image-editor'),
-      de: toAbsoluteUrl('/de/werkzeuge/online-bildeditor'),
-      es: toAbsoluteUrl('/es/herramientas/editor-de-imagenes-en-linea'),
-      fr: toAbsoluteUrl('/fr/outils/editeur-d-images-en-ligne'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Éditeur d’images en ligne gratuit – recadrer et redimensionner',
     description: 'Recadrez et redimensionnez vos images pour les réseaux sociaux et les sites web. Modèles prêts à l’emploi. Export en PNG, JPG, WebP.',

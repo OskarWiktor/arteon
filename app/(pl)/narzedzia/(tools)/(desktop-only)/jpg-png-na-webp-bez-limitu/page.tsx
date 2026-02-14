@@ -4,6 +4,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import JpgPngToWebp from '@/components/sections/tools/JpgPngToWebp';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import Gap from '@/components/ui/Gap';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
@@ -33,19 +34,13 @@ import {
   RiSmartphoneLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'jpgToWebp' as const;
+
 export const metadata: Metadata = {
   title: 'Konwerter JPG i PNG na WebP online | Darmowy, bez limitu',
   description: 'Darmowy konwerter JPG i PNG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja odbywa się lokalnie w przeglądarce, pliki nie są wysyłane na serwer.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
-      en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
-      de: toAbsoluteUrl('/de/werkzeuge/jpg-png-zu-webp-konverter'),
-      es: toAbsoluteUrl('/es/herramientas/convertidor-jpg-png-a-webp'),
-      fr: toAbsoluteUrl('/fr/outils/convertisseur-jpg-png-en-webp'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Konwerter JPG i PNG na WebP online | Darmowy, bez limitu',
     description: 'Darmowy konwerter JPG i PNG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja odbywa się lokalnie w przeglądarce, pliki nie są wysyłane na serwer.',

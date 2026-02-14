@@ -13,23 +13,18 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import { RiInstagramLine, RiFacebookLine, RiLinkedinLine, RiImageLine, RiCropLine, RiLayoutGridLine, RiFileImageLine, RiAspectRatioLine } from 'react-icons/ri';
 
+const LOCALE = 'en' as const;
+const TOOL_KEY = 'imageResize' as const;
+
 export const metadata: Metadata = {
   title: 'Free online image editor - resize, crop, and convert',
   description: 'Resize images online for free. Crop for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. Local processing in the browser.',
-  alternates: {
-    canonical: toAbsoluteUrl('/en/tools/online-image-editor'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
-      en: toAbsoluteUrl('/en/tools/online-image-editor'),
-      de: toAbsoluteUrl('/de/werkzeuge/online-bildeditor'),
-      es: toAbsoluteUrl('/es/herramientas/editor-de-imagenes-en-linea'),
-      fr: toAbsoluteUrl('/fr/outils/editeur-d-images-en-ligne'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Free online image editor - resize, crop, and convert',
     description: 'Resize images online for free. Crop for Instagram, Facebook, LinkedIn. Convert JPG to WebP. Create circular avatars. Local processing in the browser.',

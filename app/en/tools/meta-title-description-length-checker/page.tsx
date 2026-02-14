@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -31,19 +32,13 @@ import {
   RiUserLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'en' as const;
+const TOOL_KEY = 'metaCounter' as const;
+
 export const metadata: Metadata = {
   title: 'Free meta title and description length checker online - pixel width',
   description: 'Free online meta title and description length checker. Check character count, pixel width, and preview how your page looks in Google search results. No registration.',
-  alternates: {
-    canonical: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
-      en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-      de: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
-      es: toAbsoluteUrl('/es/herramientas/verificador-de-meta-titulo-y-descripcion'),
-      fr: toAbsoluteUrl('/fr/outils/verificateur-meta-titre-et-description'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Free meta title and description length checker online - pixel width',
     description: 'Free online meta title and description length checker. Check character count, pixel width, and preview how your page looks in Google search results. No registration.',

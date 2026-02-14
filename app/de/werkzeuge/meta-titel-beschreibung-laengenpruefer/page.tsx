@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -31,20 +32,14 @@ import {
   RiUserLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'de' as const;
+const TOOL_KEY = 'metaCounter' as const;
+
 export const metadata: Metadata = {
   title: 'Kostenloser Meta-Tag-Checker online',
   description:
     'Kostenloser Online-Checker für Meta-Titel und Meta-Beschreibung. Prüfen Sie Zeichenanzahl, Pixelbreite und Google-Vorschau. Vermeiden Sie abgeschnittene Titel und Beschreibungen in den Suchergebnissen.',
-  alternates: {
-    canonical: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
-      en: toAbsoluteUrl('/en/tools/meta-title-description-length-checker'),
-      de: toAbsoluteUrl('/de/werkzeuge/meta-titel-beschreibung-laengenpruefer'),
-      es: toAbsoluteUrl('/es/herramientas/verificador-de-meta-titulo-y-descripcion'),
-      fr: toAbsoluteUrl('/fr/outils/verificateur-meta-titre-et-description'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Kostenloser Meta-Tag-Checker online',
     description: 'Prüfen Sie Zeichenanzahl, Pixelbreite und Google-Vorschau. Vermeiden Sie abgeschnittene Titel und Beschreibungen in den Suchergebnissen.',

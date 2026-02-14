@@ -12,6 +12,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import FaqPanels from '@/components/ui/FaqPanels';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import AdSense from '@/components/ui/AdSense';
 import Badge from '@/components/ui/Badge';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
@@ -35,19 +36,13 @@ import {
   RiContrastLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'favicon' as const;
+
 export const metadata: Metadata = {
   title: 'Generator favicon online | Stwórz ikonę strony za darmo',
   description: 'Darmowy generator favicon online. Stwórz favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Przetwarzanie odbywa się lokalnie w przeglądarce.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
-      en: toAbsoluteUrl('/en/tools/free-favicon-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-favicon-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-favicon-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-favicon-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Generator favicon online | Stwórz ikonę strony za darmo',
     description: 'Darmowy generator favicon online. Stwórz favicon.ico i ikony PNG (16x16, 32x32, 180x180, 512x512) z jednego obrazu. Przetwarzanie odbywa się lokalnie w przeglądarce.',

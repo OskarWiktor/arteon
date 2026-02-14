@@ -3,24 +3,20 @@ import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
+import { getPrivacyPageMeta, getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
+const LOCALE = 'en' as const;
+const meta = getPrivacyPageMeta(LOCALE)!;
+const alternates = getPrivacyAlternates(LOCALE);
+
 export const metadata = {
-  title: 'Privacy Policy - Arteon',
-  description: 'Privacy policy of the Arteon website - learn how we protect your personal data and what analytical and advertising tools we use.',
-  alternates: {
-    canonical: toAbsoluteUrl('/en/privacy-policy'),
-    languages: {
-      pl: toAbsoluteUrl('/polityka-prywatnosci'),
-      en: toAbsoluteUrl('/en/privacy-policy'),
-      de: toAbsoluteUrl('/de/datenschutzrichtlinie'),
-      es: toAbsoluteUrl('/es/politica-de-privacidad'),
-      fr: toAbsoluteUrl('/fr/politique-de-confidentialite'),
-    },
-  },
+  title: meta.title,
+  description: meta.description,
+  alternates,
   openGraph: {
-    title: 'Privacy Policy - Arteon',
-    description: 'Privacy policy of the Arteon website - learn how we protect your personal data and what analytical and advertising tools we use.',
+    title: meta.title,
+    description: meta.description,
     url: toAbsoluteUrl('/en/privacy-policy'),
     type: 'website',
   },

@@ -19,6 +19,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     toolsIndexHref: '/en/tools',
     aboutHref: '/en/about',
     contactHref: '/en/contact',
+    privacyHref: '/en/privacy-policy',
   },
   de: {
     lang: 'de',
@@ -29,6 +30,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     toolsIndexHref: '/de/werkzeuge',
     aboutHref: '/de/ueber-uns',
     contactHref: '/de/kontakt',
+    privacyHref: '/de/datenschutzrichtlinie',
   },
   es: {
     lang: 'es',
@@ -39,6 +41,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     toolsIndexHref: '/es/herramientas',
     aboutHref: '/es/sobre-nosotros',
     contactHref: '/es/contacto',
+    privacyHref: '/es/politica-de-privacidad',
   },
   fr: {
     lang: 'fr',
@@ -49,6 +52,18 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     toolsIndexHref: '/fr/outils',
     aboutHref: '/fr/a-propos',
     contactHref: '/fr/contact',
+    privacyHref: '/fr/politique-de-confidentialite',
+  },
+  pt: {
+    lang: 'pt',
+    hreflang: 'pt',
+    label: 'PT',
+    name: 'Português',
+    toolsBasePath: '/pt/ferramentas',
+    toolsIndexHref: '/pt/ferramentas',
+    aboutHref: '/pt/sobre-nos',
+    contactHref: '/pt/contacto',
+    privacyHref: '/pt/politica-de-privacidade',
   },
 };
 
@@ -78,6 +93,9 @@ export const LEGAL_LINKS: Record<Locale, LegalLink[]> = {
   ],
   fr: [
     { key: 'privacy', href: '/fr/politique-de-confidentialite', label: 'Politique de confidentialité' },
+  ],
+  pt: [
+    { key: 'privacy', href: '/pt/politica-de-privacidade', label: 'Política de Privacidade' },
   ],
 };
 
@@ -148,6 +166,18 @@ export const NAVIGATION_UI: Record<Locale, NavigationUi> = {
     aboutLabel: 'À propos',
     contactLabel: 'Contact',
   },
+  pt: {
+    mainNavigation: 'Navegação principal',
+    logoAlt: 'Arteon - logótipo da empresa',
+    closeMenu: 'Fechar menu',
+    openMenu: 'Abrir menu',
+    closeToolsList: 'Fechar lista de ferramentas',
+    openToolsList: 'Abrir lista de ferramentas',
+    toolsLabel: 'Ferramentas',
+    mobileMenu: 'Menu móvel',
+    aboutLabel: 'Sobre nós',
+    contactLabel: 'Contacto',
+  },
 };
 
 // ---------------------------------------------------------------------------
@@ -195,6 +225,14 @@ export const FOOTER_UI: Record<Locale, FooterUi> = {
     legalLabel: 'Documents juridiques',
     cookieSettingsLabel: 'Paramètres des cookies',
   },
+  pt: {
+    copyright: 'Todos os direitos reservados.',
+    description: 'Ferramentas online gratuitas para programadores web, designers e especialistas em marketing.',
+    companyDataLabel: 'Dados da empresa',
+    toolsLabel: 'Ferramentas',
+    legalLabel: 'Documentos legais',
+    cookieSettingsLabel: 'Definições de cookies',
+  },
 };
 
 // ---------------------------------------------------------------------------
@@ -231,5 +269,11 @@ export const DESKTOP_ONLY_UI: Record<Locale, DesktopOnlyUi> = {
     description: 'Pour utiliser cet outil confortablement, ouvrez-le sur un ordinateur portable, un ordinateur de bureau ou une tablette en mode paysage.',
     tipTitle: 'Conseil',
     tipText: "Si vous utilisez une tablette, passez en mode paysage\u00a0: lorsque la largeur de la fenêtre sera suffisante, l'outil se chargera automatiquement.",
+  },
+  pt: {
+    title: 'Esta ferramenta funciona num ecrã maior',
+    description: 'Para utilizar esta ferramenta confortavelmente, abra-a num portátil, computador de secretária ou tablet em modo paisagem.',
+    tipTitle: 'Dica',
+    tipText: 'Se estiver a utilizar um tablet, mude para o modo paisagem\u00a0: quando a largura da janela for suficiente, a ferramenta carregará automaticamente.',
   },
 };

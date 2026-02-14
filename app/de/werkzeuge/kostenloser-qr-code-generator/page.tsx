@@ -12,6 +12,7 @@ import SectionFeatureComparison from '@/components/ui/sections/SectionFeatureCom
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -33,19 +34,13 @@ import {
   RiSmartphoneLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'de' as const;
+const TOOL_KEY = 'qrCode' as const;
+
 export const metadata: Metadata = {
   title: 'Kostenloser QR-Code-Generator online - PNG und SVG',
   description: 'Kostenloser Online-QR-Code-Generator. Erstellen Sie QR-Codes für Websites, vCards, Speisekarten oder Flyer. Export als PNG und SVG, ohne Anmeldung, ohne Limits.',
-  alternates: {
-    canonical: toAbsoluteUrl('/de/werkzeuge/kostenloser-qr-code-generator'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
-      en: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-qr-code-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-codigos-qr-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-codes-qr-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Kostenloser QR-Code-Generator online',
     description: 'Erstellen Sie QR-Codes für Websites, vCards, Speisekarten oder Flyer. Export als PNG und SVG, ohne Anmeldung.',

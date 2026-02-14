@@ -13,6 +13,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -33,19 +34,13 @@ import {
   RiInfinityLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'en' as const;
+const TOOL_KEY = 'contrastChecker' as const;
+
 export const metadata: Metadata = {
   title: 'Free color contrast checker online - WCAG compliance',
   description: 'Free online color contrast checker. Test text and background color readability per WCAG 2.1 standards. Auto-match feature helps find accessible color combinations. No registration.',
-  alternates: {
-    canonical: toAbsoluteUrl('/en/tools/color-contrast-checker'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
-      en: toAbsoluteUrl('/en/tools/color-contrast-checker'),
-      de: toAbsoluteUrl('/de/werkzeuge/farbkontrast-checker'),
-      es: toAbsoluteUrl('/es/herramientas/comprobador-de-contraste-de-colores'),
-      fr: toAbsoluteUrl('/fr/outils/verificateur-de-contraste-des-couleurs'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Free color contrast checker online - WCAG compliance',
     description: 'Free online color contrast checker. Test text and background color readability per WCAG 2.1 standards. Auto-match feature helps find accessible color combinations.',

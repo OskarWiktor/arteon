@@ -84,7 +84,7 @@ export type BreadcrumbsProps = {
   className?: string;
   includeJsonLd?: boolean;
   siteUrl?: string;
-  locale?: 'pl' | 'en' | 'de' | 'es' | 'fr';
+  locale?: 'pl' | 'en' | 'de' | 'es' | 'fr' | 'pt';
 };
 
 // ---------------------------------------------------------------------------

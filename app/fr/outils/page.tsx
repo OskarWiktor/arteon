@@ -23,21 +23,13 @@ import {
   RiLockLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Outils en ligne gratuits | Images, SEO, couleurs, favicon',
   description:
     '10 outils en ligne gratuits : convertisseur WebP, générateur de favicon, compteur de texte, extracteur de couleurs et codes QR. Pour sites web, réseaux sociaux et impression. Sans inscription.',
-  alternates: {
-    canonical: toAbsoluteUrl('/fr/outils'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia'),
-      en: toAbsoluteUrl('/en/tools'),
-      de: toAbsoluteUrl('/de/werkzeuge'),
-      es: toAbsoluteUrl('/es/herramientas'),
-      fr: toAbsoluteUrl('/fr/outils'),
-    },
-  },
+  alternates: getToolsIndexAlternates('fr'),
   openGraph: {
     title: 'Outils en ligne gratuits | Images, SEO, couleurs, favicon',
     description:

@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import AdSense from '@/components/ui/AdSense';
@@ -37,20 +38,14 @@ import {
   RiTimerLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'wordCounter' as const;
+
 export const metadata: Metadata = {
   title: 'Darmowy licznik słów i znaków online - sprawdź długość tekstu',
   description:
     'Darmowy licznik słów i znaków online po polsku. Policz słowa, znaki, akapity i czas czytania. Sprawdź optymalną długość tekstu dla SEO - artykuł, opis produktu, strona usługi. Bez rejestracji.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
-      en: toAbsoluteUrl('/en/tools/word-and-character-counter'),
-      de: toAbsoluteUrl('/de/werkzeuge/wort-und-zeichenzaehler'),
-      es: toAbsoluteUrl('/es/herramientas/contador-de-palabras-y-caracteres'),
-      fr: toAbsoluteUrl('/fr/outils/compteur-de-mots-et-caracteres'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Darmowy licznik słów i znaków online - sprawdź długość tekstu',
     description:

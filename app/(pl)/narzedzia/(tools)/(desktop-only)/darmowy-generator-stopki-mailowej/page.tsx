@@ -9,6 +9,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -34,20 +35,14 @@ import {
   RiEyeLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'emailSignature' as const;
+
 export const metadata: Metadata = {
   title: 'Darmowy generator stopki mailowej online - stwórz podpis email HTML',
   description:
     'Darmowy generator stopki mailowej po polsku. Stwórz profesjonalny podpis email HTML bez rejestracji. Dodaj dane kontaktowe, logo, media społecznościowe i skopiuj do Gmail lub Outlook.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
-      en: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-e-mail-signatur-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-firma-de-correo-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-signature-email-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Darmowy generator stopki mailowej online - stwórz podpis email HTML',
     description:

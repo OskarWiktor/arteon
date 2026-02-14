@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -32,20 +33,14 @@ import {
   RiArticleLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'de' as const;
+const TOOL_KEY = 'jpgToWebp' as const;
+
 export const metadata: Metadata = {
   title: 'Kostenloser JPG/PNG-zu-WebP-Konverter online - ohne Limits',
   description:
-    'Kostenloser Online-Konverter von JPG und PNG zu WebP. Reduzieren Sie die Dateigröße von Bildern um bis zu 35\u00a0% ohne Qualitätsverlust. Die Konvertierung erfolgt lokal im Browser, Dateien werden nicht an einen Server gesendet.',
-  alternates: {
-    canonical: toAbsoluteUrl('/de/werkzeuge/jpg-png-zu-webp-konverter'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
-      en: toAbsoluteUrl('/en/tools/jpg-png-to-webp-unlimited'),
-      de: toAbsoluteUrl('/de/werkzeuge/jpg-png-zu-webp-konverter'),
-      es: toAbsoluteUrl('/es/herramientas/convertidor-jpg-png-a-webp'),
-      fr: toAbsoluteUrl('/fr/outils/convertisseur-jpg-png-en-webp'),
-    },
-  },
+    'Kostenloser Online-Konverter von JPG und PNG zu WebP. Reduzieren Sie die Dateigröße von Bildern um bis zu 35 % ohne Qualitätsverlust. Die Konvertierung erfolgt lokal im Browser, Dateien werden nicht an einen Server gesendet.',
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Kostenloser JPG/PNG-zu-WebP-Konverter online - ohne Limits',
     description: 'Reduzieren Sie die Dateigröße von Bildern um bis zu 35\u00a0% ohne Qualitätsverlust. Ohne Registrierung, ohne Limits.',

@@ -11,6 +11,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -28,20 +29,14 @@ import {
   RiFileZipLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'de' as const;
+const TOOL_KEY = 'favicon' as const;
+
 export const metadata: Metadata = {
   title: 'Kostenloser Favicon-Generator online - favicon.ico und PNG-Symbole',
   description:
     'Kostenloser Online-Favicon-Generator. Erstellen Sie favicon.ico und PNG-Symbole 16x16, 32x32, 180x180, 192x192 und 512x512 aus einem einzigen Bild - konform mit Browser- und Lighthouse-Anforderungen.',
-  alternates: {
-    canonical: toAbsoluteUrl('/de/werkzeuge/kostenloser-favicon-generator'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
-      en: toAbsoluteUrl('/en/tools/free-favicon-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-favicon-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-favicon-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-favicon-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Kostenloser Favicon-Generator online',
     description: 'Erstellen Sie favicon.ico und PNG-Symbole aus einem einzigen Bild - konform mit Browser- und Lighthouse-Anforderungen.',

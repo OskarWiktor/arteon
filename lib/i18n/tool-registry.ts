@@ -18,6 +18,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       de: { title: 'Bilder & Favicons' },
       es: { title: 'Imágenes y favicons' },
       fr: { title: 'Images et favicons' },
+      pt: { title: 'Imagens e favicons' },
     },
   },
   {
@@ -29,6 +30,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       de: { title: 'Meta & SEO' },
       es: { title: 'Meta y SEO' },
       fr: { title: 'Méta et SEO' },
+      pt: { title: 'Meta e SEO' },
     },
   },
   {
@@ -40,6 +42,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       de: { title: 'E-Mail & Kommunikation' },
       es: { title: 'Correo electrónico y comunicación' },
       fr: { title: 'E-mail et communication' },
+      pt: { title: 'E-mail e comunicação' },
     },
   },
   {
@@ -51,6 +54,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       de: { title: 'Farben & Barrierefreiheit' },
       es: { title: 'Colores y accesibilidad' },
       fr: { title: 'Couleurs et accessibilité' },
+      pt: { title: 'Cores e acessibilidade' },
     },
   },
   {
@@ -62,6 +66,7 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       de: { title: 'Druck & Materialien' },
       es: { title: 'Impresión y materiales' },
       fr: { title: 'Impression et supports' },
+      pt: { title: 'Impressão e materiais' },
     },
   },
 ];
@@ -102,6 +107,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Convertisseur JPG/PNG en WebP',
         description: 'Réduisez le poids des images sans perte de qualité. Convertissez JPG et PNG en WebP pour accélérer votre site.',
       },
+      pt: {
+        slug: 'conversor-jpg-png-para-webp',
+        title: 'Conversor JPG/PNG para WebP',
+        description: 'Reduza o tamanho das imagens sem perda de qualidade. Converta JPG e PNG para WebP e acelere o seu site.',
+      },
     },
   },
   {
@@ -135,6 +145,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'editeur-d-images-en-ligne',
         title: "Éditeur d'images en ligne",
         description: 'Préparez le recadrage parfait pour les réseaux sociaux ou votre site. Choisissez un format prédéfini ou saisissez vos dimensions.',
+      },
+      pt: {
+        slug: 'editor-de-imagens-online',
+        title: 'Editor de imagens online',
+        description: 'Prepare o recorte perfeito para redes sociais ou o seu site. Escolha um formato predefinido ou introduza dimensões personalizadas.',
       },
     },
   },
@@ -170,6 +185,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Générateur de favicon',
         description: "Générez favicon.ico et des icônes PNG à partir d'une seule image, conforme aux exigences des navigateurs et de Lighthouse.",
       },
+      pt: {
+        slug: 'gerador-de-favicon-gratuito',
+        title: 'Gerador de favicon',
+        description: 'Gere favicon.ico e ícones PNG a partir de uma única imagem, em conformidade com os requisitos dos navegadores e do Lighthouse.',
+      },
     },
   },
   {
@@ -203,6 +223,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'verificateur-meta-titre-et-description',
         title: 'Vérificateur de méta titre et description',
         description: 'Vérifiez le nombre de caractères et prévisualisez votre page dans Google. Évitez les titres et descriptions tronqués dans les résultats de recherche.',
+      },
+      pt: {
+        slug: 'verificador-de-meta-titulo-e-descricao',
+        title: 'Verificador de meta título e descrição',
+        description: 'Verifique o número de caracteres e pré-visualize a sua página no Google. Evite títulos e descrições truncados nos resultados de pesquisa.',
       },
     },
   },
@@ -238,6 +263,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Compteur de mots et caractères',
         description: "Vérifiez la longueur du texte et évaluez si elle convient à une page d'accueil, une page de service, un article de blog ou une fiche produit.",
       },
+      pt: {
+        slug: 'contador-de-palavras-e-caracteres',
+        title: 'Contador de palavras e caracteres',
+        description: 'Verifique o comprimento do texto e avalie se é adequado para uma página inicial, página de serviço, artigo de blog ou descrição de produto.',
+      },
     },
   },
   {
@@ -271,6 +301,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'generateur-de-signature-email-gratuit',
         title: 'Générateur de signature e-mail',
         description: 'Créez une signature e-mail professionnelle en quelques minutes. Copiez le code HTML prêt dans Gmail ou Outlook.',
+      },
+      pt: {
+        slug: 'gerador-de-assinatura-de-email-gratuito',
+        title: 'Gerador de assinatura de e-mail',
+        description: 'Crie uma assinatura de e-mail profissional em minutos. Copie o código HTML pronto para o Gmail ou Outlook.',
       },
     },
   },
@@ -306,6 +341,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Vérificateur de contraste des couleurs',
         description: "Vérifiez si vos couleurs de texte et d'arrière-plan sont lisibles. L'outil calcule le contraste selon WCAG et aide à choisir la bonne couleur.",
       },
+      pt: {
+        slug: 'verificador-de-contraste-de-cores',
+        title: 'Verificador de contraste de cores',
+        description: 'Verifique se as cores do texto e do fundo são legíveis. A ferramenta calcula o contraste segundo WCAG e ajuda a escolher a cor certa.',
+      },
     },
   },
   {
@@ -339,6 +379,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'extracteur-de-couleurs-d-image',
         title: "Extracteur de couleurs d'image",
         description: "Importez une photo ou un logo et l'outil extraira les couleurs dominantes. Copiez les codes couleur en un seul clic.",
+      },
+      pt: {
+        slug: 'extrator-de-cores-de-imagem',
+        title: 'Extrator de cores de imagem',
+        description: 'Carregue uma foto ou logótipo e a ferramenta extrairá as cores dominantes. Copie os códigos de cor com um único clique.',
       },
     },
   },
@@ -374,6 +419,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         title: 'Générateur de palettes de couleurs',
         description: 'Choisissez une couleur et générez 9 palettes\u00a0: monochromatique, complémentaire, triadique et plus.',
       },
+      pt: {
+        slug: 'gerador-de-paletas-de-cores',
+        title: 'Gerador de paletas de cores',
+        description: 'Escolha uma cor e gere 9 paletas: monocromática, complementar, triádica e mais.',
+      },
     },
   },
   {
@@ -407,6 +457,11 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
         slug: 'generateur-de-codes-qr-gratuit',
         title: 'Générateur de codes QR gratuit',
         description: 'Créez un code QR pour un site web, une vCard, un menu ou un dépliant. Export en PNG et SVG, sans inscription, sans limite.',
+      },
+      pt: {
+        slug: 'gerador-de-codigos-qr-gratuito',
+        title: 'Gerador de códigos QR gratuito',
+        description: 'Crie um código QR para um site, vCard, menu ou folheto. Exportação em PNG e SVG, sem registo, sem limites.',
       },
     },
   },
@@ -461,6 +516,17 @@ export function getAlternateToolHref(currentPath: string, fromLocale: Locale, to
       const targetSlug = found.tool.locales[toLocale]?.slug;
       if (targetSlug) return `${toConfig.toolsBasePath}/${targetSlug}`;
     }
+  }
+
+  // Non-tool pages: about, contact, privacy
+  if (fromConfig.aboutHref && currentPath === fromConfig.aboutHref && toConfig.aboutHref) {
+    return toConfig.aboutHref;
+  }
+  if (fromConfig.contactHref && currentPath === fromConfig.contactHref && toConfig.contactHref) {
+    return toConfig.contactHref;
+  }
+  if (fromConfig.privacyHref && currentPath === fromConfig.privacyHref && toConfig.privacyHref) {
+    return toConfig.privacyHref;
   }
 
   return null;

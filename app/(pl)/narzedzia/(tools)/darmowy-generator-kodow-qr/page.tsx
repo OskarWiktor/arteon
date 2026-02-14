@@ -9,6 +9,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
@@ -43,19 +44,13 @@ import {
   RiTranslate2,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'qrCode' as const;
+
 export const metadata: Metadata = {
   title: 'Darmowy generator kodów QR online | Kod QR bez rejestracji',
   description: 'Darmowy generator kodów QR online po polsku. Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport do PNG i SVG. Personalizacja kolorów i rozmiaru.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
-      en: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-qr-code-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-codigos-qr-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-codes-qr-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Darmowy generator kodów QR online | Kod QR bez rejestracji',
     description: 'Darmowy generator kodów QR online po polsku. Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport do PNG i SVG. Personalizacja kolorów i rozmiaru.',

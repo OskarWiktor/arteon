@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -33,19 +34,13 @@ import {
   RiEyeLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'es' as const;
+const TOOL_KEY = 'emailSignature' as const;
+
 export const metadata: Metadata = {
   title: 'Generador gratuito de firma de correo online - HTML para Gmail y Outlook',
   description: 'Generador gratuito de firma de correo HTML. Añada datos de contacto, logotipo, enlaces de redes sociales y copie el código listo en Gmail u Outlook. Sin registro.',
-  alternates: {
-    canonical: toAbsoluteUrl('/es/herramientas/generador-de-firma-de-correo-gratuito'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
-      en: toAbsoluteUrl('/en/tools/free-email-signature-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-e-mail-signatur-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-firma-de-correo-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-signature-email-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Generador gratuito de firma de correo online - HTML para Gmail y Outlook',
     description: 'Generador gratuito de firma de correo HTML. Añada datos de contacto, botones CTA y enlaces de redes sociales, luego copie el código listo en Gmail u Outlook.',

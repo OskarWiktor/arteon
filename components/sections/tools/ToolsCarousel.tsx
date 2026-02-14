@@ -93,6 +93,22 @@ const ui = {
       tools: '/fr/outils',
     },
   },
+  pt: {
+    defaultTitle: 'Ferramentas online gratuitas',
+    seeAllTools: 'Ver todas as ferramentas',
+    carouselLabel: 'Carrossel de ferramentas',
+    scrollLeft: 'Deslocar para a esquerda',
+    scrollRight: 'Deslocar para a direita',
+    carouselNavigation: 'Navegação do carrossel',
+    goToSlide: 'Ir para o slide',
+    of: 'de',
+    slide: 'Slide',
+    tool: 'Ferramenta',
+    openTool: 'Abrir ferramenta',
+    urls: {
+      tools: '/pt/ferramentas',
+    },
+  },
 } as const satisfies Record<Locale, unknown>;
 
 type Props = {

@@ -3,24 +3,20 @@ import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
+import { getPrivacyPageMeta, getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
+const LOCALE = 'fr' as const;
+const meta = getPrivacyPageMeta(LOCALE)!;
+const alternates = getPrivacyAlternates(LOCALE);
+
 export const metadata = {
-  title: 'Politique de confidentialité - Arteon',
-  description: "Politique de confidentialité du site Arteon : découvrez comment nous protégeons vos données personnelles et quels outils d'analyse et de publicité nous utilisons.",
-  alternates: {
-    canonical: toAbsoluteUrl('/fr/politique-de-confidentialite'),
-    languages: {
-      pl: toAbsoluteUrl('/polityka-prywatnosci'),
-      en: toAbsoluteUrl('/en/privacy-policy'),
-      de: toAbsoluteUrl('/de/datenschutzrichtlinie'),
-      es: toAbsoluteUrl('/es/politica-de-privacidad'),
-      fr: toAbsoluteUrl('/fr/politique-de-confidentialite'),
-    },
-  },
+  title: meta.title,
+  description: meta.description,
+  alternates,
   openGraph: {
-    title: 'Politique de confidentialité - Arteon',
-    description: "Politique de confidentialité du site Arteon : découvrez comment nous protégeons vos données personnelles et quels outils d'analyse et de publicité nous utilisons.",
+    title: meta.title,
+    description: meta.description,
     url: toAbsoluteUrl('/fr/politique-de-confidentialite'),
     type: 'website',
   },

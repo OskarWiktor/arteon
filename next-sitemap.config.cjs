@@ -120,20 +120,76 @@ const ARTICLES = readBlog();
 const SITE_URL = 'https://www.arteonagency.pl';
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 
-const TOOL_SLUG_MAP_PL_TO_EN = {
-  'jpg-png-na-webp-bez-limitu': 'jpg-png-to-webp-unlimited',
-  'edytor-zdjec-online': 'online-image-editor',
-  'darmowy-generator-favicon-ico': 'free-favicon-generator',
-  'licznik-dlugosci-meta-title-i-description': 'meta-title-description-length-checker',
-  'licznik-slow-i-znakow': 'word-and-character-counter',
-  'darmowy-generator-stopki-mailowej': 'free-email-signature-generator',
-  'sprawdz-czytelnosc-kolorow': 'color-contrast-checker',
-  'kontrast-i-czytelnosc-kolorow': 'color-contrast-checker',
-  'ekstraktor-kolorow-z-obrazu': 'image-color-extractor',
-  'generator-palet-kolorow': 'color-palette-generator',
-  'darmowy-generator-kodow-qr': 'free-qr-code-generator',
+// ---------------------------------------------------------------------------
+// Full 5-locale hreflang data (mirrors lib/i18n/tool-registry.ts + locales.ts)
+// ---------------------------------------------------------------------------
+const LOCALE_TOOLS_BASE = {
+  pl: '/narzedzia',
+  en: '/en/tools',
+  de: '/de/werkzeuge',
+  es: '/es/herramientas',
+  fr: '/fr/outils',
+  pt: '/pt/ferramentas',
 };
-const TOOL_SLUG_MAP_EN_TO_PL = Object.fromEntries(Object.entries(TOOL_SLUG_MAP_PL_TO_EN).map(([pl, en]) => [en, pl]));
+
+const TOOLS = [
+  { pl: 'jpg-png-na-webp-bez-limitu', en: 'jpg-png-to-webp-unlimited', de: 'jpg-png-zu-webp-konverter', es: 'convertidor-jpg-png-a-webp', fr: 'convertisseur-jpg-png-en-webp', pt: 'conversor-jpg-png-para-webp' },
+  { pl: 'edytor-zdjec-online', en: 'online-image-editor', de: 'online-bildeditor', es: 'editor-de-imagenes-en-linea', fr: 'editeur-d-images-en-ligne', pt: 'editor-de-imagens-online' },
+  { pl: 'darmowy-generator-favicon-ico', en: 'free-favicon-generator', de: 'kostenloser-favicon-generator', es: 'generador-de-favicon-gratuito', fr: 'generateur-de-favicon-gratuit', pt: 'gerador-de-favicon-gratuito' },
+  { pl: 'licznik-dlugosci-meta-title-i-description', en: 'meta-title-description-length-checker', de: 'meta-titel-beschreibung-laengenpruefer', es: 'verificador-de-meta-titulo-y-descripcion', fr: 'verificateur-meta-titre-et-description', pt: 'verificador-de-meta-titulo-e-descricao' },
+  { pl: 'licznik-slow-i-znakow', en: 'word-and-character-counter', de: 'wort-und-zeichenzaehler', es: 'contador-de-palabras-y-caracteres', fr: 'compteur-de-mots-et-caracteres', pt: 'contador-de-palavras-e-caracteres' },
+  { pl: 'darmowy-generator-stopki-mailowej', en: 'free-email-signature-generator', de: 'kostenloser-e-mail-signatur-generator', es: 'generador-de-firma-de-correo-gratuito', fr: 'generateur-de-signature-email-gratuit', pt: 'gerador-de-assinatura-de-email-gratuito' },
+  { pl: 'kontrast-i-czytelnosc-kolorow', en: 'color-contrast-checker', de: 'farbkontrast-checker', es: 'comprobador-de-contraste-de-colores', fr: 'verificateur-de-contraste-des-couleurs', pt: 'verificador-de-contraste-de-cores' },
+  { pl: 'ekstraktor-kolorow-z-obrazu', en: 'image-color-extractor', de: 'bild-farbextraktor', es: 'extractor-de-colores-de-imagen', fr: 'extracteur-de-couleurs-d-image', pt: 'extrator-de-cores-de-imagem' },
+  { pl: 'generator-palet-kolorow', en: 'color-palette-generator', de: 'farbpaletten-generator', es: 'generador-de-paletas-de-colores', fr: 'generateur-de-palettes-de-couleurs', pt: 'gerador-de-paletas-de-cores' },
+  { pl: 'darmowy-generator-kodow-qr', en: 'free-qr-code-generator', de: 'kostenloser-qr-code-generator', es: 'generador-de-codigos-qr-gratuito', fr: 'generateur-de-codes-qr-gratuit', pt: 'gerador-de-codigos-qr-gratuito' },
+];
+
+// Non-tool multilingual pages (EN/DE/ES/FR only – PL has its own separate pages)
+const MULTILINGUAL_PAGES = [
+  { en: '/en/about', de: '/de/ueber-uns', es: '/es/sobre-nosotros', fr: '/fr/a-propos', pt: '/pt/sobre-nos' },
+  { en: '/en/contact', de: '/de/kontakt', es: '/es/contacto', fr: '/fr/contact', pt: '/pt/contacto' },
+  { en: '/en/privacy-policy', de: '/de/datenschutzrichtlinie', es: '/es/politica-de-privacidad', fr: '/fr/politique-de-confidentialite', pt: '/pt/politica-de-privacidade' },
+];
+
+// Build a slug→tool lookup for every locale
+const SLUG_TO_TOOL = new Map();
+for (const tool of TOOLS) {
+  for (const [lang, slug] of Object.entries(tool)) {
+    SLUG_TO_TOOL.set(`${LOCALE_TOOLS_BASE[lang]}/${slug}`, tool);
+  }
+}
+
+/** Return alternateRefs (all locales + x-default) for any sitemap loc, or [] if not multilingual */
+function getAlternateRefs(loc) {
+  const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt'];
+
+  // Tool index pages
+  if (Object.values(LOCALE_TOOLS_BASE).includes(loc)) {
+    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}`, hreflang: lang }));
+    refs.push({ href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`, hreflang: 'x-default' });
+    return refs;
+  }
+
+  // Individual tool pages
+  const tool = SLUG_TO_TOOL.get(loc);
+  if (tool) {
+    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}/${tool[lang]}`, hreflang: lang }));
+    refs.push({ href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}/${tool.en}`, hreflang: 'x-default' });
+    return refs;
+  }
+
+  // Non-tool multilingual pages (about, contact, privacy)
+  for (const page of MULTILINGUAL_PAGES) {
+    if (Object.values(page).includes(loc)) {
+      const refs = Object.entries(page).map(([lang, href]) => ({ href: `${SITE_URL}${href}`, hreflang: lang }));
+      refs.push({ href: `${SITE_URL}${page.en}`, hreflang: 'x-default' });
+      return refs;
+    }
+  }
+
+  return [];
+}
 
 const ROUTE_IMAGE = new Map();
 
@@ -218,7 +274,7 @@ module.exports = {
     const base = {
       loc,
       changefreq: 'weekly',
-      priority: loc === '/' ? 1.0 : loc.startsWith('/en/') ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7,
+      priority: loc === '/' ? 1.0 : (loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')) ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7,
       alternateRefs: [],
     };
     const lastmod = ROUTE_LASTMOD.get(loc);
@@ -226,38 +282,7 @@ module.exports = {
     const img = ROUTE_IMAGE.get(loc);
     if (img) base.images = sitemapImage(img);
 
-    // hreflang for PL tool pages
-    if (loc === '/narzedzia') {
-      base.alternateRefs = [
-        { href: `${SITE_URL}/narzedzia`, hreflang: 'pl' },
-        { href: `${SITE_URL}/en/tools`, hreflang: 'en' },
-      ];
-    } else if (loc.startsWith('/narzedzia/')) {
-      const plSlug = loc.replace('/narzedzia/', '');
-      const enSlug = TOOL_SLUG_MAP_PL_TO_EN[plSlug];
-      if (enSlug) {
-        base.alternateRefs = [
-          { href: `${SITE_URL}${loc}`, hreflang: 'pl' },
-          { href: `${SITE_URL}/en/tools/${enSlug}`, hreflang: 'en' },
-        ];
-      }
-    }
-    // hreflang for EN tool pages
-    if (loc === '/en/tools') {
-      base.alternateRefs = [
-        { href: `${SITE_URL}/narzedzia`, hreflang: 'pl' },
-        { href: `${SITE_URL}/en/tools`, hreflang: 'en' },
-      ];
-    } else if (loc.startsWith('/en/tools/')) {
-      const enSlug = loc.replace('/en/tools/', '');
-      const plSlug = TOOL_SLUG_MAP_EN_TO_PL[enSlug];
-      if (plSlug) {
-        base.alternateRefs = [
-          { href: `${SITE_URL}/narzedzia/${plSlug}`, hreflang: 'pl' },
-          { href: `${SITE_URL}${loc}`, hreflang: 'en' },
-        ];
-      }
-    }
+    // hreflang handled by postbuild script (next-sitemap v4 appends loc to alternateRefs.href, incompatible with different slugs per locale)
 
     return base;
   },
@@ -273,7 +298,7 @@ module.exports = {
       // Skip individual project pages - added from PROJECTS data below with images
       if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
-      const priority = loc === '/' ? 1.0 : loc.startsWith('/en/') ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7;
+      const priority = loc === '/' ? 1.0 : (loc.startsWith('/en/') || loc.startsWith('/de/') || loc.startsWith('/es/') || loc.startsWith('/fr/') || loc.startsWith('/pt/')) ? 0.7 : loc.startsWith('/uslugi/') ? 0.8 : loc.startsWith('/edukacja') ? 0.75 : loc.startsWith('/realizacje') ? 0.6 : 0.7;
 
       const entry = { loc, changefreq: 'weekly', priority };
       if (last) entry.lastmod = last;

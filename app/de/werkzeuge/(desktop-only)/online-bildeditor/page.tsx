@@ -12,6 +12,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -31,20 +32,14 @@ import {
   RiZoomInLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'de' as const;
+const TOOL_KEY = 'imageResize' as const;
+
 export const metadata: Metadata = {
   title: 'Kostenloser Online-Bildeditor - Zuschneiden und Größe ändern',
   description:
     'Kostenloser Online-Bildeditor. Bilder zuschneiden und skalieren für Social Media und Websites. Fertige Größenvorlagen, benutzerdefinierte Pixelmaße, runde Avatare. Export als PNG, JPG, WebP.',
-  alternates: {
-    canonical: toAbsoluteUrl('/de/werkzeuge/online-bildeditor'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
-      en: toAbsoluteUrl('/en/tools/online-image-editor'),
-      de: toAbsoluteUrl('/de/werkzeuge/online-bildeditor'),
-      es: toAbsoluteUrl('/es/herramientas/editor-de-imagenes-en-linea'),
-      fr: toAbsoluteUrl('/fr/outils/editeur-d-images-en-ligne'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Kostenloser Online-Bildeditor - Zuschneiden und Größe ändern',
     description: 'Bilder zuschneiden und skalieren für Social Media und Websites. Fertige Größenvorlagen, benutzerdefinierte Pixelmaße. Export als PNG, JPG, WebP.',

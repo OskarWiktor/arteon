@@ -13,6 +13,7 @@ import Badge from '@/components/ui/Badge';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -41,20 +42,14 @@ import {
   RiDownloadLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'es' as const;
+const TOOL_KEY = 'qrCode' as const;
+
 export const metadata: Metadata = {
   title: 'Generador gratuito de códigos QR online - exportación PNG y SVG',
   description:
     'Generador gratuito de códigos QR online. Cree códigos QR para sitios web, vCards, correos electrónicos, números de teléfono, menús y folletos. Exporte a PNG y SVG. Personalice colores y tamaño. Sin registro.',
-  alternates: {
-    canonical: toAbsoluteUrl('/es/herramientas/generador-de-codigos-qr-gratuito'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
-      en: toAbsoluteUrl('/en/tools/free-qr-code-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/kostenloser-qr-code-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-codigos-qr-gratuito'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-codes-qr-gratuit'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Generador gratuito de códigos QR online - exportación PNG y SVG',
     description: 'Generador gratuito de códigos QR online. Cree códigos QR para sitios web, vCards, correos electrónicos y más. Exporte a PNG y SVG. Sin registro.',

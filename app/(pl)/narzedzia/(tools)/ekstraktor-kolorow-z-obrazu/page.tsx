@@ -4,6 +4,7 @@ import HeroBanner from '@/components/sections/HeroBanner';
 import PaletteExtractor from '@/components/sections/tools/PaletteExtractor';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import Gap from '@/components/ui/Gap';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
@@ -38,20 +39,14 @@ import {
   RiBarChartLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'paletteExtractor' as const;
+
 export const metadata: Metadata = {
   title: 'Ekstraktor kolorów z obrazu online | Pobierz paletę ze zdjęcia',
   description:
     'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie, logo lub grafikę i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB. Analiza odbywa się lokalnie w przeglądarce.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
-      en: toAbsoluteUrl('/en/tools/image-color-extractor'),
-      de: toAbsoluteUrl('/de/werkzeuge/bild-farbextraktor'),
-      es: toAbsoluteUrl('/es/herramientas/extractor-de-colores-de-imagen'),
-      fr: toAbsoluteUrl('/fr/outils/extracteur-de-couleurs-d-image'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Ekstraktor kolorów z obrazu online | Pobierz paletę ze zdjęcia',
     description:

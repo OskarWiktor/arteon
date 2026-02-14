@@ -13,6 +13,7 @@ import SectionTimeline from '@/components/ui/sections/SectionTimeline';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -37,19 +38,13 @@ import {
   RiBarChartLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'en' as const;
+const TOOL_KEY = 'paletteExtractor' as const;
+
 export const metadata: Metadata = {
   title: 'Free image color extractor online - extract palette from photo',
   description: 'Free online image color extractor. Upload a photo or logo and get a palette of up to 12 dominant colors with HEX and RGB codes. Local processing in the browser. No registration.',
-  alternates: {
-    canonical: toAbsoluteUrl('/en/tools/image-color-extractor'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
-      en: toAbsoluteUrl('/en/tools/image-color-extractor'),
-      de: toAbsoluteUrl('/de/werkzeuge/bild-farbextraktor'),
-      es: toAbsoluteUrl('/es/herramientas/extractor-de-colores-de-imagen'),
-      fr: toAbsoluteUrl('/fr/outils/extracteur-de-couleurs-d-image'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Free image color extractor online - extract palette from photo',
     description: 'Free online image color extractor. Upload a photo or logo and get a palette of up to 12 dominant colors with HEX and RGB codes.',

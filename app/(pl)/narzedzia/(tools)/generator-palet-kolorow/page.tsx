@@ -9,6 +9,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
 import ToolsCarousel from '@/components/sections/tools/ToolsCarousel';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import SectionSteps from '@/components/ui/sections/SectionSteps';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionDemo from '@/components/ui/sections/SectionDemo';
@@ -34,20 +35,14 @@ import {
   RiCodeLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'pl' as const;
+const TOOL_KEY = 'colorPalette' as const;
+
 export const metadata: Metadata = {
   title: 'Darmowy generator palet kolorów - 9 schematów z jednego koloru',
   description:
     'Wygeneruj 9 palet kolorów z jednego koloru bazowego: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Skopiuj kody HEX i użyj ich na stronie, w logo lub projekcie graficznym.',
-  alternates: {
-    canonical: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
-      en: toAbsoluteUrl('/en/tools/color-palette-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/farbpaletten-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-paletas-de-colores'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-palettes-de-couleurs'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Darmowy generator palet kolorów - 9 schematów z jednego koloru',
     description:

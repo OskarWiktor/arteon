@@ -11,6 +11,7 @@ import SectionDemo from '@/components/ui/sections/SectionDemo';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -30,20 +31,14 @@ import {
   RiSearchLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'de' as const;
+const TOOL_KEY = 'colorPalette' as const;
+
 export const metadata: Metadata = {
   title: 'Kostenloser Farbpaletten-Generator online - 9 Paletten aus einer Farbe',
   description:
     'Kostenloser Online-Farbpaletten-Generator. Wählen Sie eine Farbe und generieren Sie 9 Paletten: monochromatisch, komplementär, triadisch, Pastell, dunkel und mehr. HEX-Codes mit einem Klick kopieren.',
-  alternates: {
-    canonical: toAbsoluteUrl('/de/werkzeuge/farbpaletten-generator'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
-      en: toAbsoluteUrl('/en/tools/color-palette-generator'),
-      de: toAbsoluteUrl('/de/werkzeuge/farbpaletten-generator'),
-      es: toAbsoluteUrl('/es/herramientas/generador-de-paletas-de-colores'),
-      fr: toAbsoluteUrl('/fr/outils/generateur-de-palettes-de-couleurs'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Kostenloser Farbpaletten-Generator online',
     description: 'Wählen Sie eine Farbe und generieren Sie 9 Paletten: monochromatisch, komplementär, triadisch und mehr.',

@@ -13,6 +13,7 @@ import Link from 'next/link';
 import Wrapper from '@/components/ui/Wrapper';
 import ToolEditorLayout from '@/components/ui/ToolEditorLayout';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
+import { getToolAlternates } from '@/lib/i18n/pages/tool-meta';
 import type { Metadata } from 'next';
 import AdSense from '@/components/ui/AdSense';
 import {
@@ -39,19 +40,13 @@ import {
   RiPaintBrushLine,
 } from 'react-icons/ri';
 
+const LOCALE = 'fr' as const;
+const TOOL_KEY = 'paletteExtractor' as const;
+
 export const metadata: Metadata = {
   title: 'Extracteur de couleurs d’image gratuit en ligne – palette à partir d’une photo',
   description: 'Extracteur de couleurs gratuit en ligne. Importez une photo ou un logo et obtenez une palette de jusqu’à 12 couleurs dominantes avec codes HEX et RGB. Sans inscription.',
-  alternates: {
-    canonical: toAbsoluteUrl('/fr/outils/extracteur-de-couleurs-d-image'),
-    languages: {
-      pl: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
-      en: toAbsoluteUrl('/en/tools/image-color-extractor'),
-      de: toAbsoluteUrl('/de/werkzeuge/bild-farbextraktor'),
-      es: toAbsoluteUrl('/es/herramientas/extractor-de-colores-de-imagen'),
-      fr: toAbsoluteUrl('/fr/outils/extracteur-de-couleurs-d-image'),
-    },
-  },
+  alternates: getToolAlternates(TOOL_KEY, LOCALE),
   openGraph: {
     title: 'Extracteur de couleurs d’image gratuit en ligne',
     description: 'Importez une photo ou un logo et obtenez une palette de couleurs dominantes avec codes HEX et RGB.',

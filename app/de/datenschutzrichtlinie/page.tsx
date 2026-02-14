@@ -3,24 +3,20 @@ import ButtonToTop from '@/components/ui/buttons/ButtonToTop';
 import Gap from '@/components/ui/Gap';
 import SectionInfo from '@/components/ui/sections/SectionInfo';
 import Wrapper from '@/components/ui/Wrapper';
+import { getPrivacyPageMeta, getPrivacyAlternates } from '@/lib/i18n/pages/privacy';
 import { toAbsoluteUrl } from '@/utils/absoluteUrl';
 
+const LOCALE = 'de' as const;
+const meta = getPrivacyPageMeta(LOCALE)!;
+const alternates = getPrivacyAlternates(LOCALE);
+
 export const metadata = {
-  title: 'Datenschutzrichtlinie - Arteon',
-  description: 'Datenschutzrichtlinie der Website Arteon - erfahren Sie, wie wir Ihre personenbezogenen Daten schützen und welche Analyse- und Werbemittel wir verwenden.',
-  alternates: {
-    canonical: toAbsoluteUrl('/de/datenschutzrichtlinie'),
-    languages: {
-      pl: toAbsoluteUrl('/polityka-prywatnosci'),
-      en: toAbsoluteUrl('/en/privacy-policy'),
-      de: toAbsoluteUrl('/de/datenschutzrichtlinie'),
-      es: toAbsoluteUrl('/es/politica-de-privacidad'),
-      fr: toAbsoluteUrl('/fr/politique-de-confidentialite'),
-    },
-  },
+  title: meta.title,
+  description: meta.description,
+  alternates,
   openGraph: {
-    title: 'Datenschutzrichtlinie - Arteon',
-    description: 'Datenschutzrichtlinie der Website Arteon - erfahren Sie, wie wir Ihre personenbezogenen Daten schützen und welche Analyse- und Werbemittel wir verwenden.',
+    title: meta.title,
+    description: meta.description,
     url: toAbsoluteUrl('/de/datenschutzrichtlinie'),
     type: 'website',
   },
